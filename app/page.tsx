@@ -32,17 +32,17 @@ export default function LandingPage() {
               </div>
               <span className="font-bold text-xl tracking-tight text-gray-900">SIMO Prep</span>
             </div>
-            
+
             <div className="flex items-center gap-4">
               {!isSignedIn ? (
                 <>
-                  <button 
+                  <button
                     onClick={handleSignIn}
                     className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
                   >
                     Iniciar sesión
                   </button>
-                  <button 
+                  <button
                     onClick={handleSignUp}
                     className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors shadow-sm cursor-pointer"
                   >
@@ -52,7 +52,7 @@ export default function LandingPage() {
               ) : (
                 <div className="flex items-center gap-3">
                   <span className="text-sm text-gray-500 hidden sm:inline">{user?.primaryEmailAddress?.emailAddress}</span>
-                  <button 
+                  <button
                     onClick={handleSignOut}
                     className="text-gray-500 hover:text-red-600 p-2 transition-colors cursor-pointer"
                     title="Cerrar sesión"
@@ -78,17 +78,17 @@ export default function LandingPage() {
                 Prepárate con simulacros reales, obtén retroalimentación potenciada por IA y asegura tu puesto en el sector público con nuestra metodología comprobada.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               {!isSignedIn ? (
-                <button 
+                <button
                   onClick={handleSignUp}
                   className="w-full sm:w-auto text-lg font-medium bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   Empezar ahora <ArrowRight className="w-5 h-5" />
                 </button>
               ) : (
-                <Link 
+                <Link
                   href="/dashboard"
                   className="w-full sm:w-auto text-lg font-medium bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer"
                 >
@@ -99,8 +99,8 @@ export default function LandingPage() {
 
 
             <div className="pt-8 flex justify-center items-center gap-6 text-sm text-gray-500 font-medium">
-              <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-green-500"/> Sin tarjeta requerida</div>
-              <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-green-500"/> Acceso inmediato</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-green-500" /> Sin tarjeta requerida</div>
+              <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-green-500" /> Acceso inmediato</div>
             </div>
           </div>
         </section>
@@ -110,9 +110,9 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">¿Por qué elegir nuestra plataforma?</h2>
-              <p className="mt-4 text-lg text-gray-500">Todo lo que necesitas para dominar la prueba de Estado en un solo lugar.</p>
+              <p className="mt-4 text-lg text-gray-500">Todo lo que necesitas para dominar la prueba de Estado en un solo lugar</p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
               {/* Feature 1 */}
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
