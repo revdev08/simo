@@ -45,7 +45,7 @@ export async function GET(req: Request) {
         body: {
           preapproval_plan_id: planId,
           // payer_email: email,
-          payer_email: randomEmail,
+          payer_email: 'TESTUSER5843247568653894551@testuser.com',
           external_reference: userId,
           back_url: backUrl
         }
