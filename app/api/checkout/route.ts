@@ -29,7 +29,7 @@ export async function GET(req: Request) {
     const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
     const preApproval = new PreApproval(client)
 
-    const planId = '70594e56d69c42a4b454bfdd1f4b192a'
+    const planId = '81dff62e91ff411e8f50bea893d37176'
 
     // Base URL for returning back
     const url = new URL(req.url)
@@ -55,9 +55,9 @@ export async function GET(req: Request) {
       }
     } catch (mpError: any) {
       console.error('[Checkout] MercadoPago API Error:', mpError)
-      
+
       const errorMessage = mpError.message || (mpError.cause && mpError.cause.message) || ''
-      
+
       // Si la API nos obliga a enviar tarjeta (card_token_id), 
       // usamos el "link directo" del plan que ya tiene su propio init_point.
       if (errorMessage.toLowerCase().includes('card_token_id')) {
