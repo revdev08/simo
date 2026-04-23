@@ -29,7 +29,7 @@ export async function GET(req: Request) {
     const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
     const preApproval = new PreApproval(client)
 
-    const planId = '81dff62e91ff411e8f50bea893d37176'
+    const planId = '8345ca821dbf4a1dbc3bc472f8693fa8'
 
     // Base URL for returning back
     const url = new URL(req.url)
