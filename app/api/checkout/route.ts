@@ -37,15 +37,10 @@ export async function GET(req: Request) {
 
     console.log(`[Checkout] Attempting to create subscription for ${email} with plan ${planId}`)
 
-    // Genera un email aleatorio para cada intento de prueba
-    const randomEmail = `test_customer_${Math.random().toString(36).substring(7)}@example.com`;
-
     try {
       const response = await preApproval.create({
         body: {
           preapproval_plan_id: planId,
-          // payer_email: email,
-          payer_email: 'TESTUSER5843247568653894551@testuser.com',
           external_reference: userId,
           back_url: backUrl
         }
