@@ -29,37 +29,49 @@ export async function GET(req: Request) {
     const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
     const preApproval = new PreApproval(client)
 
+    const planId = '70594e56d69c42a4b454bfdd1f4b192a'
+
     // Base URL for returning back
     const url = new URL(req.url)
     const backUrl = `${url.protocol}//${url.host}/dashboard`
 
-    console.log(`[Checkout] Creating subscription for ${email} with plan 9d8a97629def4590b967e1b9042c581c`)
+    console.log(`[Checkout] Attempting to create subscription for ${email} with plan ${planId}`)
 
-    const response = await preApproval.create({
-      body: {
-        preapproval_plan_id: '70594e56d69c42a4b454bfdd1f4b192a',
-        payer_email: email,
-        external_reference: userId,
-        back_url: backUrl,
-        reason: 'Suscripción SIMO Premium',
-        status: 'pending'
+    try {
+      const response = await preApproval.create({
+        body: {
+          preapproval_plan_id: planId,
+          payer_email: email,
+          external_reference: userId,
+          back_url: backUrl
+        }
+      })
+
+      if (response.init_point) {
+        console.log('[Checkout] Subscription created successfully, redirecting to init_point')
+        return NextResponse.redirect(response.init_point)
+      } else {
+        throw new Error('No init_point in MercadoPago response')
       }
-    });
+    } catch (mpError: any) {
+      console.error('[Checkout] MercadoPago API Error:', mpError)
+      
+      const errorMessage = mpError.message || (mpError.cause && mpError.cause.message) || ''
+      
+      // Si la API nos obliga a enviar tarjeta (card_token_id), 
+      // usamos el "link directo" del plan que ya tiene su propio init_point.
+      if (errorMessage.toLowerCase().includes('card_token_id')) {
+        console.log('[Checkout] Falling back to direct plan URL for external_reference tracking')
+        const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
+        return NextResponse.redirect(directUrl)
+      }
 
-    if (response.init_point) {
-      return NextResponse.redirect(response.init_point)
-    } else {
-      console.error('Failed to get init_point from MercadoPago. Full response:', JSON.stringify(response, null, 2))
-      return new NextResponse('Error generating checkout link', { status: 500 })
+      throw mpError
     }
   } catch (error: any) {
-    console.error('Error generating checkout:', error)
-    // If it's a Mercado Pago error, it might have a body
-    if (error.cause) {
-      console.error('Error cause:', error.cause)
-    }
+    console.error('[Checkout] General Error:', error)
     return new NextResponse(JSON.stringify({
-      error: 'Internal Server Error',
+      error: 'Error en el proceso de suscripción',
       details: error.message,
       mp_error: error.cause || error
     }), { status: 500 })
