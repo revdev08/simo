@@ -19,7 +19,7 @@ export async function GET(req: Request) {
     }
 
     const meliAccessToken = process.env.MELI_ACCESS_TOKEN
-    
+
     if (!meliAccessToken) {
       console.error('MELI_ACCESS_TOKEN is missing')
       return new NextResponse('Internal Server Error', { status: 500 })
@@ -37,7 +37,7 @@ export async function GET(req: Request) {
 
     const response = await preApproval.create({
       body: {
-        preapproval_plan_id: '9d8a97629def4590b967e1b9042c581c',
+        preapproval_plan_id: '70594e56d69c42a4b454bfdd1f4b192a',
         payer_email: email,
         external_reference: userId,
         back_url: backUrl,
@@ -58,10 +58,10 @@ export async function GET(req: Request) {
     if (error.cause) {
       console.error('Error cause:', error.cause)
     }
-    return new NextResponse(JSON.stringify({ 
-      error: 'Internal Server Error', 
+    return new NextResponse(JSON.stringify({
+      error: 'Internal Server Error',
       details: error.message,
-      mp_error: error.cause || error 
+      mp_error: error.cause || error
     }), { status: 500 })
   }
 }
