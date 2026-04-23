@@ -2,8 +2,13 @@ import { auth } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
+import { verifyPreapproval } from '@/lib/verify-preapproval'
 
-export default async function DashboardPage() {
+export default async function DashboardPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
   const { userId, getToken } = await auth()
 
   if (!userId) {
@@ -15,6 +20,16 @@ export default async function DashboardPage() {
 
   if (!token) {
     redirect('/')
+  }
+
+  // Si venimos del checkout de Mercado Pago con un preapproval_id,
+  // verificamos y guardamos la suscripción antes de chequear premium.
+  const params = await searchParams
+  const preapprovalId = typeof params.preapproval_id === 'string' ? params.preapproval_id : undefined
+
+  if (preapprovalId) {
+    console.log(`[Dashboard] Received preapproval_id=${preapprovalId}, verifying...`)
+    await verifyPreapproval(preapprovalId, userId)
   }
 
   // Creamos el cliente de Supabase optimizado
