@@ -41,7 +41,8 @@ export async function GET(req: Request) {
       const response = await preApproval.create({
         body: {
           preapproval_plan_id: planId,
-          payer_email: email,
+          // payer_email: email,
+          payer_email: 'TESTUSER5843247568653894551@teardownTraceSubscriber.com',
           external_reference: userId,
           back_url: backUrl
         }
