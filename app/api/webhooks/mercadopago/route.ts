@@ -77,7 +77,7 @@ export async function POST(req: Request) {
            if (mpStatus === 'cancelled') localStatus = 'canceled'
 
            // Fetch a default plan (you can improve this later to map specific prices)
-           const mpPlanId = preapprovalData.preapproval_plan_id
+           const mpPlanId = (preapprovalData as any).preapproval_plan_id || preapprovalData.reason || 'unknown'
 
            if (existingSub) {
              const { error } = await supabase.from('subscriptions')

@@ -33,14 +33,13 @@ export async function GET(req: Request) {
     const planId = url.searchParams.get('planId') || '5c7639be39b5491e9e78c0d58f59d82b'
 
     // Base URL for returning back
-    const url = new URL(req.url)
     const backUrl = `${url.protocol}//${url.host}/dashboard`
 
     console.log(`[Checkout] Attempting to create subscription for ${email} with plan ${planId}`)
 
     // Obtenemos createAdminClient para guardar en Supabase antes del pago
     const { createAdminClient } = await import('@/lib/supabase')
-    
+
     try {
       console.log(`[Checkout] Creating preapproval for external tracking...`)
       const response = await preApproval.create({
@@ -57,24 +56,24 @@ export async function GET(req: Request) {
 
       // Guardamos la intención de compra para enlazar user_id con mp_preapproval_id
       const supabaseAdmin = createAdminClient()
-      
+
       // Usar upsert o update en la tabla de subscriptions base a user_id
       const { data: existingSub } = await supabaseAdmin.from('subscriptions').select('id').eq('user_id', userId).single()
-      
+
       if (existingSub) {
         await supabaseAdmin.from('subscriptions')
-          .update({ 
-            mp_preapproval_id: response.id, 
-            status: 'pending', 
+          .update({
+            mp_preapproval_id: response.id,
+            status: 'pending',
             plan_id: planId // Guardamos el ID de MP directamente
           })
           .eq('id', existingSub.id)
       } else {
         await supabaseAdmin.from('subscriptions')
-          .insert({ 
-            user_id: userId, 
-            mp_preapproval_id: response.id, 
-            status: 'pending', 
+          .insert({
+            user_id: userId,
+            mp_preapproval_id: response.id,
+            status: 'pending',
             plan_id: planId // Guardamos el ID de MP directamente
           })
       }
