@@ -37,6 +37,9 @@ export async function POST(req: Request) {
         const mpStatus = preapprovalData.status // 'authorized', 'paused', 'cancelled', 'pending'
         const userId = preapprovalData.external_reference
         const mpPreapprovalId = preapprovalData.id
+        
+        // Obtener la fecha de cobro siguiente como expiración del servicio
+        const nextPaymentDate = (preapprovalData as any).next_payment_date || null
 
         console.log(`[MercadoPago Webhook] Preapproval parsed: userId=${userId}, status=${mpStatus}`)
 
@@ -79,13 +82,17 @@ export async function POST(req: Request) {
            // Fetch a default plan (you can improve this later to map specific prices)
            const mpPlanId = (preapprovalData as any).preapproval_plan_id || preapprovalData.reason || 'unknown'
 
+           const subscriptionPayload = {
+             user_id: finalUserId,
+             plan_id: mpPlanId,
+             status: localStatus,
+             mp_preapproval_id: mpPreapprovalId,
+             current_period_end: nextPaymentDate
+           }
+
            if (existingSub) {
              const { error } = await supabase.from('subscriptions')
-               .update({
-                 status: localStatus,
-                 mp_preapproval_id: mpPreapprovalId,
-                 plan_id: mpPlanId
-               })
+               .update(subscriptionPayload)
                .eq('id', existingSub.id)
                
              if (error) console.error('[MercadoPago Webhook] Error updating subscription:', error)
@@ -93,18 +100,58 @@ export async function POST(req: Request) {
            } else {
              // Fallback to inserting if not found (shouldn't happen with our new preemptive insert)
              const { error } = await supabase.from('subscriptions')
-               .insert({
-                 user_id: finalUserId,
-                 plan_id: mpPlanId,
-                 status: localStatus,
-                 mp_preapproval_id: mpPreapprovalId
-               })
+               .insert(subscriptionPayload)
                
              if (error) console.error('[MercadoPago Webhook] Error inserting subscription:', error)
              else console.log(`[MercadoPago Webhook] Successfully inserted subscription for user ${finalUserId}`)
            }
         } else {
            console.error('[MercadoPago Webhook] Could not resolve user_id for preapproval', mpPreapprovalId)
+        }
+      }
+    } else if (type === 'payment' && dataId) {
+      // PROCESAMOS PAGOS PARA LA TABLA ORDERS
+      const meliAccessToken = process.env.MELI_ACCESS_TOKEN
+      if (!meliAccessToken) throw new Error('No MELI_ACCESS_TOKEN available')
+
+      const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
+      const { Payment } = await import('mercadopago')
+      const paymentApi = new Payment(client)
+      
+      const paymentData = await paymentApi.get({ id: dataId })
+      
+      if (paymentData) {
+        console.log(`[MercadoPago Webhook] Payment parsed: id=${dataId}, status=${paymentData.status}`)
+        
+        let userId = paymentData.external_reference
+        const supabase = createAdminClient()
+
+        // Si MercadoPago botó el external_reference, intentamos buscar el user por el email del pagaré.
+        if (!userId && paymentData.payer?.email) {
+          const { data: profile } = await supabase
+            .from('profiles')
+            .select('id')
+            .eq('email', paymentData.payer.email)
+            .single()
+            
+          if (profile) {
+            userId = profile.id
+          }
+        }
+
+        // Insertamos el pago en la tabla orders (si es nulo quedará nulo, o si Supabase tira error lo escupirá)
+        const orderPayload = {
+          user_id: userId || null,
+          payment_id: dataId.toString(),
+          status: paymentData.status,
+          amount: paymentData.transaction_amount
+        }
+
+        const { error } = await supabase.from('orders').insert(orderPayload)
+        if (error) {
+           console.error('[MercadoPago Webhook] Error inserting into orders:', error)
+        } else {
+           console.log(`[MercadoPago Webhook] Successfully inserted order ${dataId} for user ${userId || 'unknown'}`)
         }
       }
     }

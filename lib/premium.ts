@@ -7,7 +7,7 @@ export async function isPremium(userId: string): Promise<boolean> {
     const supabase = createAdminClient()
     const { data: subscription, error } = await supabase
       .from('subscriptions')
-      .select('status')
+      .select('status, current_period_end')
       .eq('user_id', userId) // Asegúrate que tu FK sea correcta, puede ser 'user_id' o 'id'
       .single()
 
@@ -15,7 +15,19 @@ export async function isPremium(userId: string): Promise<boolean> {
       return false
     }
 
-    return subscription.status === 'active' || subscription.status === 'trialing'
+    // Validar el status
+    const isActiveStatus = subscription.status === 'active' || subscription.status === 'trialing'
+    
+    // Validar la fecha de fin si existe (dar tolerancia de 1 día por si acaso)
+    let isDateValid = true
+    if (subscription.current_period_end) {
+      const endDate = new Date(subscription.current_period_end)
+      const now = new Date()
+      // Verificamos que la fecha actual sea menor a la de finalización
+      isDateValid = now < endDate
+    }
+
+    return isActiveStatus && isDateValid
   } catch (err) {
     console.error('Error checking premium status', err)
     return false
