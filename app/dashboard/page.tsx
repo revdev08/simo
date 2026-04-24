@@ -3,11 +3,47 @@ import { redirect } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
 
-export default async function DashboardPage() {
+interface DashboardProps {
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export default async function DashboardPage(props: DashboardProps) {
   const { userId, getToken } = await auth()
 
   if (!userId) {
     redirect('/')
+  }
+
+  // Si Mercado Pago nos redirigió de vuelta, enlazamos el preapproval_id al usuario
+  if (props.searchParams) {
+    const sp = await props.searchParams
+    const preapprovalId = sp?.preapproval_id as string
+    
+    if (preapprovalId) {
+      const { createAdminClient } = await import('@/lib/supabase')
+      const adminOptions = createAdminClient()
+      
+      const { data: existingSub } = await adminOptions.from('subscriptions')
+        .select('id, user_id')
+        .eq('mp_preapproval_id', preapprovalId)
+        .single()
+
+      if (!existingSub) {
+        // Enlazar manualmente ya que MP pierde el external_reference
+        const { data: plans } = await adminOptions.from('plans').select('id').limit(1)
+        await adminOptions.from('subscriptions').insert({
+          user_id: userId,
+          mp_preapproval_id: preapprovalId,
+          status: 'active', // asumiendo que acaba de pagar
+          plan_id: plans?.[0]?.id
+        })
+      } else if (existingSub.user_id !== userId) {
+        // Si por alguna razón se enlazó mal, se corrige
+        await adminOptions.from('subscriptions')
+          .update({ user_id: userId })
+          .eq('mp_preapproval_id', preapprovalId)
+      }
+    }
   }
 
   // Obtenemos el token nativo de Clerk

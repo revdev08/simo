@@ -74,7 +74,15 @@ export async function GET(req: Request) {
 
       return NextResponse.redirect(response.init_point)
     } catch (mpError: any) {
-      console.error('[Checkout] Redirect Error:', mpError)
+      console.error('[Checkout] MercadoPago API Error:', mpError)
+
+      const errorMessage = mpError.message || (mpError.cause && mpError.cause.message) || ''
+      if (errorMessage.toLowerCase().includes('card_token_id')) {
+        console.log('[Checkout] Falling back to direct plan URL for checkout (card_token_id logic)')
+        const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
+        return NextResponse.redirect(directUrl)
+      }
+
       throw mpError
     }
   } catch (error: any) {
