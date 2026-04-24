@@ -38,33 +38,11 @@ export async function GET(req: Request) {
     console.log(`[Checkout] Attempting to create subscription for ${email} with plan ${planId}`)
 
     try {
-      const response = await preApproval.create({
-        body: {
-          preapproval_plan_id: planId,
-          external_reference: userId,
-          back_url: backUrl
-        }
-      })
-
-      if (response.init_point) {
-        console.log('[Checkout] Subscription created successfully, redirecting to init_point')
-        return NextResponse.redirect(response.init_point)
-      } else {
-        throw new Error('No init_point in MercadoPago response')
-      }
+      console.log(`[Checkout] Redirecting directly to plan URL for external_reference tracking...`)
+      const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
+      return NextResponse.redirect(directUrl)
     } catch (mpError: any) {
-      console.error('[Checkout] MercadoPago API Error:', mpError)
-
-      const errorMessage = mpError.message || (mpError.cause && mpError.cause.message) || ''
-
-      // Si la API nos obliga a enviar tarjeta (card_token_id), 
-      // usamos el "link directo" del plan que ya tiene su propio init_point.
-      if (errorMessage.toLowerCase().includes('card_token_id')) {
-        console.log('[Checkout] Falling back to direct plan URL for external_reference tracking')
-        const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
-        return NextResponse.redirect(directUrl)
-      }
-
+      console.error('[Checkout] Redirect Error:', mpError)
       throw mpError
     }
   } catch (error: any) {
