@@ -82,10 +82,10 @@ export default function LandingPage() {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               {!isSignedIn ? (
                 <button
-                  onClick={handleSignUp}
+                  onClick={() => document.getElementById('planes')?.scrollIntoView({ behavior: 'smooth' })}
                   className="w-full sm:w-auto text-lg font-medium bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  Empezar ahora <ArrowRight className="w-5 h-5" />
+                  Ver planes y empezar <ArrowRight className="w-5 h-5" />
                 </button>
               ) : (
                 <Link
@@ -98,10 +98,10 @@ export default function LandingPage() {
             </div>
 
 
-            <div className="pt-8 flex justify-center items-center gap-6 text-sm text-gray-500 font-medium">
+            {/* <div className="pt-8 flex justify-center items-center gap-6 text-sm text-gray-500 font-medium">
               <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-green-500" /> Sin tarjeta requerida</div>
               <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-green-500" /> Acceso inmediato</div>
-            </div>
+            </div> */}
           </div>
         </section>
 

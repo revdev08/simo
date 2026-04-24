@@ -66,7 +66,7 @@ export default async function DashboardPage(props: DashboardProps) {
   const isUserPremium = await isPremium(userId)
 
   if (!isUserPremium) {
-    redirect('/api/checkout')
+    redirect('/#planes')
   }
 
   return (
