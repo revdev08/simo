@@ -37,14 +37,44 @@ export async function GET(req: Request) {
 
     console.log(`[Checkout] Attempting to create subscription for ${email} with plan ${planId}`)
 
+    // Obtenemos createAdminClient para guardar en Supabase antes del pago
+    const { createAdminClient } = await import('@/lib/supabase')
+    
     try {
-      console.log(`[Checkout] Redirecting directly to plan URL for external_reference tracking...`)
-      const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
-      return NextResponse.redirect(directUrl)
+      console.log(`[Checkout] Creating preapproval for external tracking...`)
+      const response = await preApproval.create({
+        body: {
+          preapproval_plan_id: planId,
+          back_url: backUrl,
+          external_reference: userId // Lo enviamos por si acaso
+        }
+      })
+
+      if (!response.id || !response.init_point) {
+        throw new Error('MercadoPago no devolvió un init_point ni un ID')
+      }
+
+      // Guardamos la intención de compra para enlazar user_id con mp_preapproval_id
+      const supabaseAdmin = createAdminClient()
+      
+      const { data: plans } = await supabaseAdmin.from('plans').select('id').limit(1)
+      const dbPlanId = plans?.[0]?.id
+
+      // Usar upsert o update en la tabla de subscriptions base a user_id
+      const { data: existingSub } = await supabaseAdmin.from('subscriptions').select('id').eq('user_id', userId).single()
+      
+      if (existingSub) {
+        await supabaseAdmin.from('subscriptions')
+          .update({ mp_preapproval_id: response.id, status: 'pending', plan_id: dbPlanId })
+          .eq('id', existingSub.id)
+      } else {
+        await supabaseAdmin.from('subscriptions')
+          .insert({ user_id: userId, mp_preapproval_id: response.id, status: 'pending', plan_id: dbPlanId })
+      }
+
+      return NextResponse.redirect(response.init_point)
     } catch (mpError: any) {
       console.error('[Checkout] Redirect Error:', mpError)
-      throw mpError
-    }
   } catch (error: any) {
     console.error('[Checkout] General Error:', error)
     return new NextResponse(JSON.stringify({
