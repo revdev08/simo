@@ -29,7 +29,8 @@ export async function GET(req: Request) {
     const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
     const preApproval = new PreApproval(client)
 
-    const planId = '5c7639be39b5491e9e78c0d58f59d82b'
+    const url = new URL(req.url)
+    const planId = url.searchParams.get('planId') || '5c7639be39b5491e9e78c0d58f59d82b'
 
     // Base URL for returning back
     const url = new URL(req.url)
@@ -57,19 +58,25 @@ export async function GET(req: Request) {
       // Guardamos la intención de compra para enlazar user_id con mp_preapproval_id
       const supabaseAdmin = createAdminClient()
       
-      const { data: plans } = await supabaseAdmin.from('plans').select('id').limit(1)
-      const dbPlanId = plans?.[0]?.id
-
       // Usar upsert o update en la tabla de subscriptions base a user_id
       const { data: existingSub } = await supabaseAdmin.from('subscriptions').select('id').eq('user_id', userId).single()
       
       if (existingSub) {
         await supabaseAdmin.from('subscriptions')
-          .update({ mp_preapproval_id: response.id, status: 'pending', plan_id: dbPlanId })
+          .update({ 
+            mp_preapproval_id: response.id, 
+            status: 'pending', 
+            plan_id: planId // Guardamos el ID de MP directamente
+          })
           .eq('id', existingSub.id)
       } else {
         await supabaseAdmin.from('subscriptions')
-          .insert({ user_id: userId, mp_preapproval_id: response.id, status: 'pending', plan_id: dbPlanId })
+          .insert({ 
+            user_id: userId, 
+            mp_preapproval_id: response.id, 
+            status: 'pending', 
+            plan_id: planId // Guardamos el ID de MP directamente
+          })
       }
 
       return NextResponse.redirect(response.init_point)

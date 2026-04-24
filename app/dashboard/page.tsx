@@ -30,12 +30,11 @@ export default async function DashboardPage(props: DashboardProps) {
 
       if (!existingSub) {
         // Enlazar manualmente ya que MP pierde el external_reference
-        const { data: plans } = await adminOptions.from('plans').select('id').limit(1)
         await adminOptions.from('subscriptions').insert({
           user_id: userId,
           mp_preapproval_id: preapprovalId,
           status: 'active', // asumiendo que acaba de pagar
-          plan_id: plans?.[0]?.id
+          plan_id: 'pending_sync' // Se actualizará vía webhook con el ID real de MP
         })
       } else if (existingSub.user_id !== userId) {
         // Si por alguna razón se enlazó mal, se corrige

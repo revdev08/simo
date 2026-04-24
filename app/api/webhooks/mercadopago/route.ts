@@ -77,15 +77,14 @@ export async function POST(req: Request) {
            if (mpStatus === 'cancelled') localStatus = 'canceled'
 
            // Fetch a default plan (you can improve this later to map specific prices)
-           const { data: plans } = await supabase.from('plans').select('id').limit(1)
-           const planId = plans?.[0]?.id
+           const mpPlanId = preapprovalData.preapproval_plan_id
 
            if (existingSub) {
              const { error } = await supabase.from('subscriptions')
                .update({
                  status: localStatus,
                  mp_preapproval_id: mpPreapprovalId,
-                 plan_id: existingSub.plan_id || planId
+                 plan_id: mpPlanId
                })
                .eq('id', existingSub.id)
                
@@ -96,7 +95,7 @@ export async function POST(req: Request) {
              const { error } = await supabase.from('subscriptions')
                .insert({
                  user_id: finalUserId,
-                 plan_id: planId,
+                 plan_id: mpPlanId,
                  status: localStatus,
                  mp_preapproval_id: mpPreapprovalId
                })
