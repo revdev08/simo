@@ -29,14 +29,31 @@ export default async function DashboardPage(props: DashboardProps) {
         .single()
 
       if (!existingSub) {
-        // Enlazar manualmente ya que MP pierde el external_reference
-        await adminOptions.from('subscriptions').insert({
-          user_id: userId,
-          mp_preapproval_id: preapprovalId,
-          status: 'active', // asumiendo que acaba de pagar
-          plan_id: 'pending_sync' // Se actualizará vía webhook con el ID real de MP
-        })
+        // Consultar directamente a MercadoPago API para obtener el preapproval
+        const meliAccessToken = process.env.MELI_ACCESS_TOKEN
+        if (meliAccessToken) {
+           const { MercadoPagoConfig, PreApproval } = await import('mercadopago')
+           const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
+           const preApproval = new PreApproval(client)
+           try {
+             const mpData = await preApproval.get({ id: preapprovalId })
+             const mpPlanId = (mpData as any)?.preapproval_plan_id || mpData?.reason || 'unknown'
+             const nextPaymentDate = (mpData as any)?.next_payment_date || null
+             
+             // Enlazar manualmente y de forma segura
+             await adminOptions.from('subscriptions').insert({
+               user_id: userId,
+               mp_preapproval_id: preapprovalId,
+               status: mpData.status === 'authorized' ? 'active' : 'pending',
+               plan_id: mpPlanId,
+               current_period_end: nextPaymentDate
+             })
+           } catch(e) {
+             console.error('Error fetching preapproval from MP in Dashboard:', e)
+           }
+        }
       } else if (existingSub.user_id !== userId) {
+
         // Si por alguna razón se enlazó mal, se corrige
         await adminOptions.from('subscriptions')
           .update({ user_id: userId })
