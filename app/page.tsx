@@ -149,6 +149,76 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        {/* Pricing / Planes */}
+        <section className="py-24 sm:py-32 bg-white" id="planes">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Elige tu plan</h2>
+              <p className="mt-4 text-lg text-gray-500">Comienza a prepararte hoy mismo y asegura tu futuro.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Plan Semanal */}
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 flex flex-col hover:border-blue-400 transition-colors">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-gray-900">Plan Semanal</h3>
+                  <p className="text-gray-500 mt-2">Para repasos intensivos cortos.</p>
+                </div>
+                <div className="mb-6 flex items-baseline gap-2">
+                  <span className="text-4xl font-extrabold text-gray-900">$5.000</span>
+                  <span className="text-gray-500 font-medium">/semana</span>
+                </div>
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center gap-3 text-gray-600"><CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> Simulacros ilimitados</li>
+                  <li className="flex items-center gap-3 text-gray-600"><CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> Explicaciones básicas</li>
+                  <li className="flex items-center gap-3 text-gray-600"><CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> Acceso por 7 días</li>
+                </ul>
+                <button
+                  onClick={() => {
+                    const planId = '8f3abdafdb5e440380f1f9fefe337969'
+                    if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
+                    else window.location.href = `/api/checkout?planId=${planId}`
+                  }}
+                  className="w-full text-lg font-medium bg-gray-50 text-gray-900 border border-gray-200 px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors cursor-pointer"
+                >
+                  Elegir Semanal
+                </button>
+              </div>
+
+              {/* Plan Mensual (Popular) */}
+              <div className="bg-gray-900 p-8 rounded-3xl shadow-xl border border-gray-800 flex flex-col relative transform md:-translate-y-4">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                  Más Popular
+                </div>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-white">Plan Mensual</h3>
+                  <p className="text-gray-400 mt-2">La preparación recomendada para el SIMO.</p>
+                </div>
+                <div className="mb-6 flex items-baseline gap-2">
+                  <span className="text-4xl font-extrabold text-white">$15.000</span>
+                  <span className="text-gray-400 font-medium">/mes</span>
+                </div>
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center gap-3 text-gray-300"><CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0" /> Simulacros reales de la CNSC</li>
+                  <li className="flex items-center gap-3 text-gray-300"><CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0" /> Retroalimentación con IA en tiempo real</li>
+                  <li className="flex items-center gap-3 text-gray-300"><CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0" /> Seguimiento de progreso detallado</li>
+                  <li className="flex items-center gap-3 text-gray-300"><CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0" /> Soporte prioritario</li>
+                </ul>
+                <button
+                  onClick={() => {
+                    const planId = '5c7639be39b5491e9e78c0d58f59d82b'
+                    if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
+                    else window.location.href = `/api/checkout?planId=${planId}`
+                  }}
+                  className="w-full text-lg font-bold bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-500 transition-colors shadow-lg cursor-pointer"
+                >
+                  Empezar ahora
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
