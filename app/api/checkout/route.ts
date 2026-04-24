@@ -75,6 +75,8 @@ export async function GET(req: Request) {
       return NextResponse.redirect(response.init_point)
     } catch (mpError: any) {
       console.error('[Checkout] Redirect Error:', mpError)
+      throw mpError
+    }
   } catch (error: any) {
     console.error('[Checkout] General Error:', error)
     return new NextResponse(JSON.stringify({
