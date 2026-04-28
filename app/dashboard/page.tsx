@@ -82,8 +82,21 @@ export default async function DashboardPage(props: DashboardProps) {
   // Verificamos estado premium
   const isUserPremium = await isPremium(userId)
 
+  // Verificamos si tiene una suscripción pendiente para no redirigirlo bruscamente
+  let isPending = false
   if (!isUserPremium) {
-    redirect('/#planes')
+    const { createAdminClient } = await import('@/lib/supabase')
+    const adminOptions = createAdminClient()
+    const { data: sub } = await adminOptions.from('subscriptions')
+      .select('status')
+      .eq('user_id', userId)
+      .single()
+      
+    if (sub && sub.status === 'pending') {
+      isPending = true
+    } else {
+      redirect('/#planes')
+    }
   }
 
   return (
@@ -112,12 +125,12 @@ export default async function DashboardPage(props: DashboardProps) {
               Estado de Suscripción
             </h2>
             <div className="flex items-center gap-2 mt-1">
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${isUserPremium ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-700'}`}>
-                {isUserPremium ? 'Plan Premium' : 'Plan Gratuito'}
+              <span className={`px-3 py-1 rounded-full text-sm font-medium ${isUserPremium ? 'bg-green-100 text-green-700' : isPending ? 'bg-yellow-100 text-yellow-700' : 'bg-gray-100 text-gray-700'}`}>
+                {isUserPremium ? 'Plan Premium' : isPending ? 'Pago en Proceso' : 'Plan Gratuito'}
               </span>
             </div>
             <p className="text-sm text-gray-500 mt-2">
-              Temporalmente sin pagos habilitados.
+              {isPending ? 'Tu pago está siendo procesado por Mercado Pago. Esto puede tardar unos minutos.' : 'Temporalmente sin pagos habilitados.'}
             </p>
           </div>
         </div>

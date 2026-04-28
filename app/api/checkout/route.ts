@@ -41,20 +41,8 @@ export async function GET(req: Request) {
     const { createAdminClient } = await import('@/lib/supabase')
 
     try {
-      console.log(`[Checkout] Creating preapproval for external tracking...`)
-      const response = await preApproval.create({
-        body: {
-          preapproval_plan_id: planId,
-          back_url: backUrl,
-          external_reference: userId // Lo enviamos por si acaso
-        }
-      })
-
-      if (!response.id || !response.init_point) {
-        throw new Error('MercadoPago no devolvió un init_point ni un ID')
-      }
-
-      // Guardamos la intención de compra para enlazar user_id con mp_preapproval_id
+      console.log(`[Checkout] Creating pending subscription for external tracking...`)
+      
       const supabaseAdmin = createAdminClient()
 
       // Usar upsert o update en la tabla de subscriptions base a user_id
@@ -63,32 +51,24 @@ export async function GET(req: Request) {
       if (existingSub) {
         await supabaseAdmin.from('subscriptions')
           .update({
-            mp_preapproval_id: response.id,
             status: 'pending',
-            plan_id: planId // Guardamos el ID de MP directamente
+            plan_id: planId
           })
           .eq('id', existingSub.id)
       } else {
         await supabaseAdmin.from('subscriptions')
           .insert({
             user_id: userId,
-            mp_preapproval_id: response.id,
             status: 'pending',
-            plan_id: planId // Guardamos el ID de MP directamente
+            plan_id: planId
           })
       }
 
-      return NextResponse.redirect(response.init_point)
+      const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
+      return NextResponse.redirect(directUrl)
+
     } catch (mpError: any) {
       console.error('[Checkout] MercadoPago API Error:', mpError)
-
-      const errorMessage = mpError.message || (mpError.cause && mpError.cause.message) || ''
-      if (errorMessage.toLowerCase().includes('card_token_id')) {
-        console.log('[Checkout] Falling back to direct plan URL for checkout (card_token_id logic)')
-        const directUrl = `https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=${planId}&external_reference=${userId}`
-        return NextResponse.redirect(directUrl)
-      }
-
       throw mpError
     }
   } catch (error: any) {
