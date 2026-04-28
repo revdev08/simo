@@ -8,8 +8,10 @@ export async function isPremium(userId: string): Promise<boolean> {
     const { data: subscription, error } = await supabase
       .from('subscriptions')
       .select('status, current_period_end')
-      .eq('user_id', userId) // Asegúrate que tu FK sea correcta, puede ser 'user_id' o 'id'
-      .single()
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .maybeSingle()
 
     if (error || !subscription) {
       return false

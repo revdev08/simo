@@ -41,13 +41,22 @@ export default async function DashboardPage(props: DashboardProps) {
              const nextPaymentDate = (mpData as any)?.next_payment_date || null
              
              // Enlazar manualmente y de forma segura
-             await adminOptions.from('subscriptions').insert({
+             // Verificamos si el usuario ya tiene un registro (creado por el checkout)
+             const { data: userSub } = await adminOptions.from('subscriptions').select('id').eq('user_id', userId).maybeSingle()
+             
+             const payload = {
                user_id: userId,
                mp_preapproval_id: preapprovalId,
                status: mpData.status === 'authorized' ? 'active' : 'pending',
                plan_id: mpPlanId,
                current_period_end: nextPaymentDate
-             })
+             }
+
+             if (userSub) {
+               await adminOptions.from('subscriptions').update(payload).eq('id', userSub.id)
+             } else {
+               await adminOptions.from('subscriptions').insert(payload)
+             }
            } catch(e) {
              console.error('Error fetching preapproval from MP in Dashboard:', e)
            }
@@ -90,9 +99,11 @@ export default async function DashboardPage(props: DashboardProps) {
     const { data: sub } = await adminOptions.from('subscriptions')
       .select('status')
       .eq('user_id', userId)
+      .order('created_at', { ascending: false })
+      .limit(1)
       .single()
       
-    if (sub && sub.status === 'pending') {
+    if (sub && (sub.status === 'pending' || sub.status === 'active')) {
       isPending = true
     } else {
       redirect('/#planes')
