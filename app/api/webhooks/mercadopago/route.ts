@@ -5,7 +5,7 @@ import { createAdminClient } from '@/lib/supabase'
 export async function POST(req: Request) {
   try {
     const url = new URL(req.url)
-    
+
     // Mercado Pago often sends data through query parameters for webhooks as well as body
     // "topic" and "id" might be in query format for notifications
     const topicParam = url.searchParams.get('topic') || url.searchParams.get('type')
@@ -17,11 +17,12 @@ export async function POST(req: Request) {
     } catch (e) {
       // Body might be empty or url-encoded form data
     }
-    
+
     const action = body.action || ''
     const type = body.type || topicParam
     const dataId = body.data?.id || idParam || body.id
 
+    console.log("Webhook recibido", body)
     console.log(`[MercadoPago Webhook] Received type=${type}, id=${dataId}, action=${action}`)
 
     if ((type === 'subscription_preapproval' || type === 'preapproval') && dataId) {
@@ -32,12 +33,12 @@ export async function POST(req: Request) {
       const preApproval = new PreApproval(client)
 
       const preapprovalData = await preApproval.get({ id: dataId })
-      
+
       if (preapprovalData) {
         const mpStatus = preapprovalData.status // 'authorized', 'paused', 'cancelled', 'pending'
         const userId = preapprovalData.external_reference
         const mpPreapprovalId = preapprovalData.id
-        
+
         // Obtener la fecha de cobro siguiente como expiración del servicio
         const nextPaymentDate = (preapprovalData as any).next_payment_date || null
 
@@ -48,7 +49,7 @@ export async function POST(req: Request) {
         }
 
         const supabase = createAdminClient()
-        
+
         // Find existing subscription ignoring external_reference, ONLY by mp_preapproval_id
         let { data: existingSub } = await supabase
           .from('subscriptions')
@@ -60,53 +61,53 @@ export async function POST(req: Request) {
 
         // Fallback: Si no lo encontró por preapproval, buscar por userId si existe
         if (!existingSub && userId) {
-           const { data: subByUser } = await supabase
-             .from('subscriptions')
-             .select('*')
-             .eq('user_id', userId)
-             .order('created_at', { ascending: false })
-             .limit(1)
-             .single()
-             
-           existingSub = subByUser
+          const { data: subByUser } = await supabase
+            .from('subscriptions')
+            .select('*')
+            .eq('user_id', userId)
+            .order('created_at', { ascending: false })
+            .limit(1)
+            .single()
+
+          existingSub = subByUser
         }
 
         const finalUserId = existingSub?.user_id || userId
 
         if (finalUserId) {
-           // Determine logical status
-           let localStatus = 'pending'
-           if (mpStatus === 'authorized') localStatus = 'active'
-           if (mpStatus === 'cancelled') localStatus = 'canceled'
+          // Determine logical status
+          let localStatus = 'pending'
+          if (mpStatus === 'authorized') localStatus = 'active'
+          if (mpStatus === 'cancelled') localStatus = 'canceled'
 
-           // Fetch a default plan (you can improve this later to map specific prices)
-           const mpPlanId = (preapprovalData as any).preapproval_plan_id || preapprovalData.reason || 'unknown'
+          // Fetch a default plan (you can improve this later to map specific prices)
+          const mpPlanId = (preapprovalData as any).preapproval_plan_id || preapprovalData.reason || 'unknown'
 
-           const subscriptionPayload = {
-             user_id: finalUserId,
-             plan_id: mpPlanId,
-             status: localStatus,
-             mp_preapproval_id: mpPreapprovalId,
-             current_period_end: nextPaymentDate
-           }
+          const subscriptionPayload = {
+            user_id: finalUserId,
+            plan_id: mpPlanId,
+            status: localStatus,
+            mp_preapproval_id: mpPreapprovalId,
+            current_period_end: nextPaymentDate
+          }
 
-           if (existingSub) {
-             const { error } = await supabase.from('subscriptions')
-               .update(subscriptionPayload)
-               .eq('id', existingSub.id)
-               
-             if (error) console.error('[MercadoPago Webhook] Error updating subscription:', error)
-             else console.log(`[MercadoPago Webhook] Successfully updated subscription for user ${finalUserId}`)
-           } else {
-             // Fallback to inserting if not found (shouldn't happen with our new preemptive insert)
-             const { error } = await supabase.from('subscriptions')
-               .insert(subscriptionPayload)
-               
-             if (error) console.error('[MercadoPago Webhook] Error inserting subscription:', error)
-             else console.log(`[MercadoPago Webhook] Successfully inserted subscription for user ${finalUserId}`)
-           }
+          if (existingSub) {
+            const { error } = await supabase.from('subscriptions')
+              .update(subscriptionPayload)
+              .eq('id', existingSub.id)
+
+            if (error) console.error('[MercadoPago Webhook] Error updating subscription:', error)
+            else console.log(`[MercadoPago Webhook] Successfully updated subscription for user ${finalUserId}`)
+          } else {
+            // Fallback to inserting if not found (shouldn't happen with our new preemptive insert)
+            const { error } = await supabase.from('subscriptions')
+              .insert(subscriptionPayload)
+
+            if (error) console.error('[MercadoPago Webhook] Error inserting subscription:', error)
+            else console.log(`[MercadoPago Webhook] Successfully inserted subscription for user ${finalUserId}`)
+          }
         } else {
-           console.error('[MercadoPago Webhook] Could not resolve user_id for preapproval', mpPreapprovalId)
+          console.error('[MercadoPago Webhook] Could not resolve user_id for preapproval', mpPreapprovalId)
         }
       }
     } else if (type === 'payment' && dataId) {
@@ -117,12 +118,12 @@ export async function POST(req: Request) {
       const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
       const { Payment } = await import('mercadopago')
       const paymentApi = new Payment(client)
-      
+
       const paymentData = await paymentApi.get({ id: dataId })
-      
+
       if (paymentData) {
         console.log(`[MercadoPago Webhook] Payment parsed: id=${dataId}, status=${paymentData.status}`)
-        
+
         let userId = paymentData.external_reference
         const supabase = createAdminClient()
 
@@ -133,7 +134,7 @@ export async function POST(req: Request) {
             .select('id')
             .eq('email', paymentData.payer.email)
             .single()
-            
+
           if (profile) {
             userId = profile.id
           }
@@ -149,13 +150,13 @@ export async function POST(req: Request) {
 
         const { error } = await supabase.from('orders').insert(orderPayload)
         if (error) {
-           console.error('[MercadoPago Webhook] Error inserting into orders:', error)
+          console.error('[MercadoPago Webhook] Error inserting into orders:', error)
         } else {
-           console.log(`[MercadoPago Webhook] Successfully inserted order ${dataId} for user ${userId || 'unknown'}`)
+          console.log(`[MercadoPago Webhook] Successfully inserted order ${dataId} for user ${userId || 'unknown'}`)
         }
       }
     }
-    
+
     // We should always return 200 OK so Mercado Pago doesn't retry infinitely
     return new NextResponse('Webhook Received', { status: 200 })
   } catch (error) {
