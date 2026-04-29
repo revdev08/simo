@@ -2,6 +2,8 @@ import { auth } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
+import questionsData from '@/questions.json'
+import StudyApp from '@/components/study/StudyApp'
 
 interface DashboardProps {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
@@ -112,39 +114,51 @@ export default async function DashboardPage(props: DashboardProps) {
 
   return (
     <div className="min-h-screen bg-gray-50 p-8 font-sans">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Bienvenido de nuevo 👋</h1>
-        <p className="text-gray-500 mb-8">
-          Este es tu panel de control principal para tu preparación del examen SIMO.
-        </p>
+      <div className="max-w-5xl mx-auto space-y-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-purple-50 rounded-xl p-6 border border-purple-100">
-            <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wider mb-1">
-              Perfil Activo
-            </h2>
-            <div className="text-lg font-medium text-gray-900 truncate">
+        {/* Profile & Status Header */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Bienvenido de nuevo 👋</h1>
+            <p className="text-gray-500">
               {profile?.email || 'Cargando email...'}
-            </div>
-            {error && (
-              <p className="text-red-500 text-sm mt-2">Error cargando perfil: {error.message}</p>
-            )}
-          </div>
-
-          <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
-            <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-1">
-              Estado de Suscripción
-            </h2>
-            <div className="flex items-center gap-2 mt-1">
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${isUserPremium ? 'bg-green-100 text-green-700' : isPending ? 'bg-yellow-100 text-yellow-700' : 'bg-gray-100 text-gray-700'}`}>
-                {isUserPremium ? 'Plan Premium' : isPending ? 'Pago en Proceso' : 'Plan Gratuito'}
-              </span>
-            </div>
-            <p className="text-sm text-gray-500 mt-2">
-              {isPending ? 'Tu pago está siendo procesado por Mercado Pago. Esto puede tardar unos minutos.' : 'Temporalmente sin pagos habilitados.'}
             </p>
           </div>
+
+          <div className={`px-4 py-3 rounded-xl border ${isUserPremium ? 'bg-green-50 border-green-100' : 'bg-yellow-50 border-yellow-100'} flex items-center gap-3`}>
+            <div className={`w-3 h-3 rounded-full ${isUserPremium ? 'bg-green-500' : 'bg-yellow-500 animate-pulse'}`}></div>
+            <div>
+              <div className={`text-sm font-bold ${isUserPremium ? 'text-green-800' : 'text-yellow-800'}`}>
+                {isUserPremium ? 'Suscripción Activa' : 'Pago en Proceso'}
+              </div>
+              {!isUserPremium && (
+                <div className="text-xs text-yellow-600 mt-0.5">
+                  Estamos validando tu pago con Mercado Pago.
+                </div>
+              )}
+            </div>
+          </div>
         </div>
+
+        {/* Main Content Area */}
+        {isUserPremium ? (
+          <StudyApp questions={questionsData as any} />
+        ) : (
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 mb-4">
+              <svg className="w-8 h-8 text-yellow-600 animate-spin" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </div>
+            <h2 className="text-xl font-bold text-gray-900 mb-2">Activando tu acceso...</h2>
+            <p className="text-gray-500 max-w-md mx-auto">
+              Tu pago ha sido recibido y está siendo procesado. En unos momentos tu plataforma de estudio se activará automáticamente.
+              Si tarda demasiado, intenta recargar la página.
+            </p>
+          </div>
+        )}
+
       </div>
     </div>
   )
