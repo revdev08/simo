@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SIMO Prep - Aprueba el examen más rápido",
+  title: "SIMO TEST - Aprueba el examen más rápido",
   description: "Plataforma de preparación para el examen SIMO en Colombia.",
 };
 

@@ -30,7 +30,7 @@ export default function LandingPage() {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                 S
               </div>
-              <span className="font-bold text-xl tracking-tight text-gray-900">SIMO Prep</span>
+              <span className="font-bold text-xl tracking-tight text-gray-900">SIMO TEST</span>
             </div>
 
             <div className="flex items-center gap-4">
@@ -224,7 +224,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} SIMO Prep. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} SIMO TEST. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
