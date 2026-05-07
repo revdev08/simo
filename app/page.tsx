@@ -176,7 +176,7 @@ export default function LandingPage() {
                 </ul>
                 <button
                   onClick={() => {
-                    const planId = '8f3abdafdb5e440380f1f9fefe337969'
+                    const planId = 'fa83e5277e8948fcaac00e3a56198db2'
                     if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
                     else window.location.href = `/api/checkout?planId=${planId}`
                   }}
