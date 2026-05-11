@@ -76,6 +76,7 @@ export async function GET(req: Request) {
       directUrl.searchParams.set('preapproval_plan_id', planId)
       directUrl.searchParams.set('external_reference', externalRef)
       directUrl.searchParams.set('back_url', backUrl)
+      directUrl.searchParams.set('notification_url', 'https://www.simotest.com/api/webhooks/mercadopago')
 
       return NextResponse.redirect(directUrl.toString())
 
