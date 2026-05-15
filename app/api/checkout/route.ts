@@ -33,7 +33,7 @@ export async function GET(req: Request) {
     const planId = url.searchParams.get('planId') || '5c7639be39b5491e9e78c0d58f59d82b'
 
     // Base URL for returning back
-    const backUrl = `${url.protocol}//${url.host}/dashboard`
+    const backUrl = `${url.protocol}/${url.host}/dashboard`
 
     console.log(`[Checkout] Attempting to create subscription for ${email} with plan ${planId}`)
 
