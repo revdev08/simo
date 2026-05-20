@@ -166,7 +166,7 @@ export default function LandingPage() {
                   <p className="text-gray-500 mt-2">Para repasos intensivos cortos.</p>
                 </div>
                 <div className="mb-6 flex items-baseline gap-2">
-                  <span className="text-4xl font-extrabold text-gray-900">$5.000</span>
+                  <span className="text-4xl font-extrabold text-gray-900">$19900</span>
                   <span className="text-gray-500 font-medium">/semana</span>
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
@@ -176,7 +176,7 @@ export default function LandingPage() {
                 </ul>
                 <button
                   onClick={() => {
-                    const planId = 'fa83e5277e8948fcaac00e3a56198db2'
+                    const planId = '3fa86370a007428f93d188e30e426653'
                     if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
                     else window.location.href = `/api/checkout?planId=${planId}`
                   }}
@@ -196,7 +196,7 @@ export default function LandingPage() {
                   <p className="text-gray-400 mt-2">La preparación recomendada para el SIMO.</p>
                 </div>
                 <div className="mb-6 flex items-baseline gap-2">
-                  <span className="text-4xl font-extrabold text-white">$2.000</span>
+                  <span className="text-4xl font-extrabold text-white">$39900</span>
                   <span className="text-gray-400 font-medium">/mes</span>
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
@@ -207,7 +207,7 @@ export default function LandingPage() {
                 </ul>
                 <button
                   onClick={() => {
-                    const planId = '03b704596a7049358dba805471d17838'
+                    const planId = 'e9150a4759e7405b9290f1ace43b1fe6'
                     if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
                     else window.location.href = `/api/checkout?planId=${planId}`
                   }}
