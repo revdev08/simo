@@ -4,6 +4,7 @@ import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
 import questionsData from '@/questions.json'
 import StudyApp from '@/components/study/StudyApp'
+import ThemeToggle from '@/components/ThemeToggle'
 
 interface DashboardProps {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
@@ -20,11 +21,11 @@ export default async function DashboardPage(props: DashboardProps) {
   if (props.searchParams) {
     const sp = await props.searchParams
     const preapprovalId = sp?.preapproval_id as string
-    
+
     if (preapprovalId) {
       const { createAdminClient } = await import('@/lib/supabase')
       const adminOptions = createAdminClient()
-      
+
       const { data: existingSub } = await adminOptions.from('subscriptions')
         .select('id, user_id')
         .eq('mp_preapproval_id', preapprovalId)
@@ -34,34 +35,34 @@ export default async function DashboardPage(props: DashboardProps) {
         // Consultar directamente a MercadoPago API para obtener el preapproval
         const meliAccessToken = process.env.MELI_ACCESS_TOKEN
         if (meliAccessToken) {
-           const { MercadoPagoConfig, PreApproval } = await import('mercadopago')
-           const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
-           const preApproval = new PreApproval(client)
-           try {
-             const mpData = await preApproval.get({ id: preapprovalId })
-             const mpPlanId = (mpData as any)?.preapproval_plan_id || mpData?.reason || 'unknown'
-             const nextPaymentDate = (mpData as any)?.next_payment_date || null
-             
-             // Enlazar manualmente y de forma segura
-             // Verificamos si el usuario ya tiene un registro (creado por el checkout)
-             const { data: userSub } = await adminOptions.from('subscriptions').select('id').eq('user_id', userId).maybeSingle()
-             
-             const payload = {
-               user_id: userId,
-               mp_preapproval_id: preapprovalId,
-               status: mpData.status === 'authorized' ? 'active' : 'pending',
-               plan_id: mpPlanId,
-               current_period_end: nextPaymentDate
-             }
+          const { MercadoPagoConfig, PreApproval } = await import('mercadopago')
+          const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
+          const preApproval = new PreApproval(client)
+          try {
+            const mpData = await preApproval.get({ id: preapprovalId })
+            const mpPlanId = (mpData as any)?.preapproval_plan_id || mpData?.reason || 'unknown'
+            const nextPaymentDate = (mpData as any)?.next_payment_date || null
 
-             if (userSub) {
-               await adminOptions.from('subscriptions').update(payload).eq('id', userSub.id)
-             } else {
-               await adminOptions.from('subscriptions').insert(payload)
-             }
-           } catch(e) {
-             console.error('Error fetching preapproval from MP in Dashboard:', e)
-           }
+            // Enlazar manualmente y de forma segura
+            // Verificamos si el usuario ya tiene un registro (creado por el checkout)
+            const { data: userSub } = await adminOptions.from('subscriptions').select('id').eq('user_id', userId).maybeSingle()
+
+            const payload = {
+              user_id: userId,
+              mp_preapproval_id: preapprovalId,
+              status: mpData.status === 'authorized' ? 'active' : 'pending',
+              plan_id: mpPlanId,
+              current_period_end: nextPaymentDate
+            }
+
+            if (userSub) {
+              await adminOptions.from('subscriptions').update(payload).eq('id', userSub.id)
+            } else {
+              await adminOptions.from('subscriptions').insert(payload)
+            }
+          } catch (e) {
+            console.error('Error fetching preapproval from MP in Dashboard:', e)
+          }
         }
       } else if (existingSub.user_id !== userId) {
 
@@ -90,6 +91,8 @@ export default async function DashboardPage(props: DashboardProps) {
     .eq('id', userId)
     .single()
 
+  console.log('user profile', profile)
+
   // Verificamos estado premium
   const isUserPremium = await isPremium(userId)
 
@@ -104,7 +107,7 @@ export default async function DashboardPage(props: DashboardProps) {
       .order('created_at', { ascending: false })
       .limit(1)
       .single()
-      
+
     if (sub && (sub.status === 'pending' || sub.status === 'active')) {
       isPending = true
     } else {
@@ -113,9 +116,9 @@ export default async function DashboardPage(props: DashboardProps) {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 p-8 font-sans">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 p-8 font-sans transition-colors duration-300">
       <div className="max-w-5xl mx-auto space-y-8">
-        
+
         {/* Profile & Status Header */}
         <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
           <div>
@@ -125,17 +128,20 @@ export default async function DashboardPage(props: DashboardProps) {
             </p>
           </div>
 
-          <div className={`px-4 py-3 rounded-xl border ${isUserPremium ? 'bg-emerald-50 border-emerald-100 dark:bg-emerald-500/10 dark:border-emerald-500/20' : 'bg-amber-50 border-amber-100 dark:bg-amber-500/10 dark:border-amber-500/20'} flex items-center gap-3`}>
-            <div className={`w-3 h-3 rounded-full ${isUserPremium ? 'bg-emerald-500' : 'bg-amber-500 animate-pulse'}`}></div>
-            <div>
-              <div className={`text-sm font-bold ${isUserPremium ? 'text-emerald-800 dark:text-emerald-400' : 'text-amber-800 dark:text-amber-400'}`}>
-                {isUserPremium ? 'Suscripción Activa' : 'Pago en Proceso'}
-              </div>
-              {!isUserPremium && (
-                <div className="text-xs text-amber-600 dark:text-amber-500 mt-0.5">
-                  Estamos validando tu pago con Mercado Pago.
+          <div className="flex items-center gap-4 self-stretch md:self-auto justify-between md:justify-end">
+            <ThemeToggle />
+            <div className={`px-4 py-3 rounded-xl border ${isUserPremium ? 'bg-emerald-50 border-emerald-100 dark:bg-emerald-500/10 dark:border-emerald-500/20' : 'bg-amber-50 border-amber-100 dark:bg-amber-500/10 dark:border-amber-500/20'} flex items-center gap-3`}>
+              <div className={`w-3 h-3 rounded-full ${isUserPremium ? 'bg-emerald-500' : 'bg-amber-500 animate-pulse'}`}></div>
+              <div>
+                <div className={`text-sm font-bold ${isUserPremium ? 'text-emerald-800 dark:text-emerald-400' : 'text-amber-800 dark:text-amber-400'}`}>
+                  {isUserPremium ? 'Suscripción Activa' : 'Pago en Proceso'}
                 </div>
-              )}
+                {!isUserPremium && (
+                  <div className="text-xs text-amber-600 dark:text-amber-500 mt-0.5">
+                    Estamos validando tu pago con Mercado Pago.
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

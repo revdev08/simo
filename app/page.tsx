@@ -19,6 +19,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function LandingPage() {
   const { openSignIn, openSignUp, signOut } = useClerk()
@@ -95,6 +96,7 @@ export default function LandingPage() {
             </div>
 
             <div className="flex items-center gap-5">
+              <ThemeToggle />
               {!isSignedIn ? (
                 <>
                   <button
