@@ -1,4 +1,4 @@
-import { auth } from '@clerk/nextjs/server'
+import { auth, currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
@@ -12,6 +12,7 @@ interface DashboardProps {
 
 export default async function DashboardPage(props: DashboardProps) {
   const { userId, getToken } = await auth()
+  const user = await currentUser()
 
   if (!userId) {
     redirect('/')
@@ -124,7 +125,7 @@ export default async function DashboardPage(props: DashboardProps) {
           <div>
             <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Bienvenido de nuevo 👋</h1>
             <p className="text-slate-500 dark:text-slate-400">
-              {profile?.email || 'Cargando email...'}
+              {user?.emailAddresses?.[0]?.emailAddress || profile?.email || 'Cargando email...'}
             </p>
           </div>
 
