@@ -132,7 +132,6 @@ export default async function DashboardPage(props: DashboardProps) {
 
           <div className="flex items-center gap-4 self-stretch md:self-auto justify-between md:justify-end">
             <ThemeToggle />
-            <SignOutButton />
             <div className={`px-4 py-3 rounded-xl border ${isUserPremium ? 'bg-emerald-50 border-emerald-100 dark:bg-emerald-500/10 dark:border-emerald-500/20' : 'bg-amber-50 border-amber-100 dark:bg-amber-500/10 dark:border-amber-500/20'} flex items-center gap-3`}>
               <div className={`w-3 h-3 rounded-full ${isUserPremium ? 'bg-emerald-500' : 'bg-amber-500 animate-pulse'}`}></div>
               <div>
@@ -146,6 +145,7 @@ export default async function DashboardPage(props: DashboardProps) {
                 )}
               </div>
             </div>
+            <SignOutButton />
           </div>
         </div>
 
