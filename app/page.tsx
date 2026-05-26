@@ -87,48 +87,50 @@ export default function LandingPage() {
       {/* Header / Navbar */}
       <header className="sticky top-0 z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="SIMO TEST Logo" className="w-10 h-10 object-contain transform hover:rotate-6 transition-transform" />
-              <span className="font-extrabold text-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-white dark:via-blue-200 dark:to-indigo-200">
+          <div className="flex justify-between items-center h-16 sm:h-20">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <img src="/logo.png" alt="SIMO TEST Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain transform hover:rotate-6 transition-transform" />
+              <span className="font-extrabold text-xl sm:text-2xl tracking-tight whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-white dark:via-blue-200 dark:to-indigo-200">
                 SIMO TEST
               </span>
             </div>
 
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-2.5 sm:gap-5">
               <ThemeToggle />
               {!isSignedIn ? (
                 <>
                   <button
                     onClick={handleSignIn}
-                    className="text-sm font-semibold text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors cursor-pointer"
+                    className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap"
                   >
-                    Iniciar sesión
+                    <span className="sm:hidden">Entrar</span>
+                    <span className="hidden sm:inline">Iniciar sesión</span>
                   </button>
                   <button
                     onClick={handleSignUp}
-                    className="text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer btn-shimmer"
+                    className="text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer btn-shimmer whitespace-nowrap"
                   >
-                    Registrarse Gratis
+                    <span className="sm:hidden">Registrarse</span>
+                    <span className="hidden sm:inline">Registrarse Gratis</span>
                   </button>
                 </>
               ) : (
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 sm:gap-4">
                   <span className="text-sm font-medium text-slate-500 dark:text-slate-400 hidden sm:inline-block bg-slate-100 dark:bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-200/50 dark:border-slate-800">
                     {user?.primaryEmailAddress?.emailAddress}
                   </span>
                   <Link
                     href="/dashboard"
-                    className="flex items-center gap-1.5 text-sm font-bold bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-500 transition-colors cursor-pointer"
+                    className="flex items-center gap-1.5 text-xs sm:text-sm font-bold bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-xl hover:bg-blue-500 transition-colors cursor-pointer whitespace-nowrap"
                   >
-                    <LayoutDashboard className="w-4 h-4" /> Panel
+                    <LayoutDashboard className="w-4 h-4 hidden sm:block" /> Panel
                   </Link>
                   <button
                     onClick={handleSignOut}
                     className="text-slate-400 hover:text-red-500 p-2 transition-colors cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900"
                     title="Cerrar sesión"
                   >
-                    <LogOut className="w-5 h-5" />
+                    <LogOut className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                 </div>
               )}
