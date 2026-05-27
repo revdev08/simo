@@ -311,18 +311,18 @@ function StudySession({
             Has completado <strong>{moduleName}</strong>. Aquí tienes tu desempeño en esta sesión.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto py-8">
-            <div className="p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800">
-              <div className="text-slate-400 text-sm font-bold uppercase tracking-wider mb-2">Puntaje</div>
-              <div className="text-4xl font-black text-indigo-600 dark:text-indigo-400">{score}%</div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto py-6 sm:py-8">
+            <div className="p-4 sm:p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col justify-center">
+              <div className="text-slate-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-1 sm:mb-2 truncate">Puntaje</div>
+              <div className="text-3xl sm:text-4xl font-black text-indigo-600 dark:text-indigo-400">{score}%</div>
             </div>
-            <div className="p-6 bg-emerald-50 dark:bg-emerald-950/30 rounded-2xl border border-emerald-100 dark:border-emerald-900/50">
-              <div className="text-emerald-600 dark:text-emerald-500 text-sm font-bold uppercase tracking-wider mb-2">Correctas</div>
-              <div className="text-4xl font-black text-emerald-600 dark:text-emerald-400">{correctCount}</div>
+            <div className="p-4 sm:p-6 bg-emerald-50 dark:bg-emerald-950/30 rounded-2xl border border-emerald-100 dark:border-emerald-900/50 flex flex-col justify-center">
+              <div className="text-emerald-600 dark:text-emerald-500 text-xs sm:text-sm font-bold uppercase tracking-wider mb-1 sm:mb-2 truncate">Correctas</div>
+              <div className="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400">{correctCount}</div>
             </div>
-            <div className="p-6 bg-red-50 dark:bg-red-950/30 rounded-2xl border border-red-100 dark:border-red-900/50 col-span-2 md:col-span-1">
-              <div className="text-red-600 dark:text-red-500 text-sm font-bold uppercase tracking-wider mb-2">Incorrectas</div>
-              <div className="text-4xl font-black text-red-600 dark:text-red-400">{totalAnswered - correctCount}</div>
+            <div className="p-4 sm:p-6 bg-red-50 dark:bg-red-950/30 rounded-2xl border border-red-100 dark:border-red-900/50 col-span-2 md:col-span-1 flex flex-col justify-center">
+              <div className="text-red-600 dark:text-red-500 text-xs sm:text-sm font-bold uppercase tracking-wider mb-1 sm:mb-2 truncate">Incorrectas</div>
+              <div className="text-3xl sm:text-4xl font-black text-red-600 dark:text-red-400">{totalAnswered - correctCount}</div>
             </div>
           </div>
 
