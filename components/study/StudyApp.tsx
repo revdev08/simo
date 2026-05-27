@@ -26,6 +26,7 @@ interface ProgressData {
 
 export default function StudyApp({ questions }: { questions: Question[] }) {
   const [activeModule, setActiveModule] = useState<string | null>(null)
+  const [activeModuleQuestions, setActiveModuleQuestions] = useState<Question[]>([])
   const [randomExamMode, setRandomExamMode] = useState<{ active: boolean, limit: number } | null>(null)
   const [randomQuestions, setRandomQuestions] = useState<Question[]>([])
   const [progress, setProgress] = useState<ProgressData>({})
@@ -107,12 +108,18 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
     )
   }
 
+  const startModule = (modName: string) => {
+    const modQs = questions.filter(q => q.modulo === modName)
+    const shuffled = [...modQs].sort(() => 0.5 - Math.random())
+    setActiveModuleQuestions(shuffled)
+    setActiveModule(modName)
+  }
+
   if (activeModule) {
-    const moduleQuestions = questions.filter(q => q.modulo === activeModule)
     return (
       <StudySession 
         moduleName={activeModule} 
-        questions={moduleQuestions} 
+        questions={activeModuleQuestions} 
         progress={progress}
         onSaveProgress={handleSaveProgress}
         onBack={() => setActiveModule(null)} 
@@ -206,7 +213,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
         {modulesStats.map(mod => (
           <div 
             key={mod.name}
-            onClick={() => setActiveModule(mod.name)}
+            onClick={() => startModule(mod.name)}
             className="group bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-6 hover:shadow-xl hover:border-indigo-500/50 dark:hover:border-indigo-500/50 transition-all cursor-pointer relative overflow-hidden flex flex-col justify-between"
           >
             <div className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-all translate-x-4 group-hover:translate-x-0">
@@ -268,14 +275,67 @@ function StudySession({
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [showExplanation, setShowExplanation] = useState(false)
+  const [isFinished, setIsFinished] = useState(false)
+  const [sessionProgress, setSessionProgress] = useState<Record<number, 'correct'|'incorrect'>>({})
   
   const question = questions[currentIndex]
-  const currentStatus = progress[question.id]
+  const currentStatus = progress[question?.id]
 
   useEffect(() => {
     setSelectedOption(null)
     setShowExplanation(false)
   }, [currentIndex])
+
+  if (!question && !isFinished) return null;
+
+  if (isFinished) {
+    const correctCount = Object.values(sessionProgress).filter(v => v === 'correct').length
+    const totalAnswered = Object.keys(sessionProgress).length
+    const score = Math.round((correctCount / questions.length) * 100) || 0
+
+    return (
+      <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 space-y-6">
+        <button 
+          onClick={onBack}
+          className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" /> Volver a módulos
+        </button>
+
+        <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-lg border border-slate-200/60 dark:border-slate-800/80 overflow-hidden p-8 sm:p-12 text-center space-y-8">
+          <div className="w-20 h-20 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Award className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">¡Simulacro Finalizado!</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-lg">
+            Has completado <strong>{moduleName}</strong>. Aquí tienes tu desempeño en esta sesión.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto py-8">
+            <div className="p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800">
+              <div className="text-slate-400 text-sm font-bold uppercase tracking-wider mb-2">Puntaje</div>
+              <div className="text-4xl font-black text-indigo-600 dark:text-indigo-400">{score}%</div>
+            </div>
+            <div className="p-6 bg-emerald-50 dark:bg-emerald-950/30 rounded-2xl border border-emerald-100 dark:border-emerald-900/50">
+              <div className="text-emerald-600 dark:text-emerald-500 text-sm font-bold uppercase tracking-wider mb-2">Correctas</div>
+              <div className="text-4xl font-black text-emerald-600 dark:text-emerald-400">{correctCount}</div>
+            </div>
+            <div className="p-6 bg-red-50 dark:bg-red-950/30 rounded-2xl border border-red-100 dark:border-red-900/50 col-span-2 md:col-span-1">
+              <div className="text-red-600 dark:text-red-500 text-sm font-bold uppercase tracking-wider mb-2">Incorrectas</div>
+              <div className="text-4xl font-black text-red-600 dark:text-red-400">{totalAnswered - correctCount}</div>
+            </div>
+          </div>
+
+          <button 
+            onClick={onBack}
+            className="bg-slate-950 dark:bg-white text-white dark:text-slate-950 px-8 py-4 rounded-xl font-extrabold shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2"
+          >
+            Volver al Inicio <ArrowLeft className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   const handleSelect = (optionId: string) => {
     if (selectedOption) return
@@ -285,6 +345,7 @@ function StudySession({
     
     const isCorrect = optionId === question.respuestaCorrecta
     onSaveProgress(question.id, isCorrect ? 'correct' : 'incorrect')
+    setSessionProgress(prev => ({ ...prev, [question.id]: isCorrect ? 'correct' : 'incorrect' }))
   }
 
   const handleNext = () => {
@@ -397,13 +458,23 @@ function StudySession({
             Anterior
           </button>
           
-          <button 
-            onClick={handleNext}
-            disabled={!showExplanation || currentIndex === questions.length - 1}
-            className="flex items-center gap-2 px-7 py-3 bg-slate-950 text-white dark:bg-white dark:text-slate-950 text-sm font-extrabold rounded-xl hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
-          >
-            Siguiente <ChevronRight className="w-4 h-4" />
-          </button>
+          {currentIndex < questions.length - 1 ? (
+            <button 
+              onClick={handleNext}
+              disabled={!showExplanation}
+              className="flex items-center gap-2 px-7 py-3 bg-slate-950 text-white dark:bg-white dark:text-slate-950 text-sm font-extrabold rounded-xl hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            >
+              Siguiente <ChevronRight className="w-4 h-4" />
+            </button>
+          ) : (
+            <button 
+              onClick={() => setIsFinished(true)}
+              disabled={!showExplanation}
+              className="flex items-center gap-2 px-7 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-extrabold rounded-xl hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            >
+              Finalizar <CheckCircle className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
     </div>
