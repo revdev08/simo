@@ -151,7 +151,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
           <div className="space-y-1">
             <span className="text-xs font-bold uppercase tracking-wider text-blue-100">Progreso Total</span>
             <div className="text-3xl font-black">{totalStats.percent}%</div>
-            <p className="text-xs text-blue-100">{totalStats.completed} de {totalStats.total} respondidas</p>
+            <p className="text-xs text-blue-100">{totalStats.completed} respondidas sobre el total</p>
           </div>
           <Award className="w-10 h-10 text-blue-100/50" />
         </div>
