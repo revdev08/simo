@@ -167,20 +167,20 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
           </div>
         </div>
 
-        <Link href="/dashboard/report" className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 rounded-2xl p-5 flex items-center justify-between shadow-sm hover:border-indigo-500/50 hover:shadow-md transition-all group">
+        <Link href="/dashboard/report" className="bg-gradient-to-br from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 rounded-2xl p-5 flex items-center justify-between shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group cursor-pointer">
           <div className="space-y-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-400 group-hover:text-indigo-500 transition-colors">Reporte Detallado</span>
-            <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">Ver Estadísticas</div>
-            <p className="text-xs text-slate-500">Analiza tus puntos débiles</p>
+            <span className="text-xs font-bold uppercase tracking-wider text-indigo-200">Reporte Detallado</span>
+            <div className="text-xl sm:text-2xl font-black text-white">Ver Estadísticas</div>
+            <p className="text-xs text-indigo-200">Analiza tus puntos débiles →</p>
           </div>
-          <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-950/40 group-hover:bg-indigo-600 group-hover:text-white transition-colors rounded-xl flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+          <div className="w-11 h-11 bg-white/20 group-hover:bg-white/30 transition-colors rounded-xl flex items-center justify-center text-white shrink-0">
             <BarChart3 className="w-5 h-5" />
           </div>
         </Link>
       </div>
 
       {/* Global Random Exam Banner */}
-      <div className="bg-slate-950 dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden border border-slate-800/80">
+      <div className="bg-gradient-to-br from-slate-800 to-indigo-950 dark:from-slate-900 dark:to-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden border border-slate-700/60 dark:border-slate-800/80">
         <div className="absolute -top-24 -right-24 w-64 h-64 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full blur-[80px] opacity-30 pointer-events-none" />
         
         <div className="space-y-3 relative z-10 text-center lg:text-left">
