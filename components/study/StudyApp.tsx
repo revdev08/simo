@@ -26,6 +26,8 @@ interface ProgressData {
 
 export default function StudyApp({ questions }: { questions: Question[] }) {
   const [activeModule, setActiveModule] = useState<string | null>(null)
+  const [randomExamMode, setRandomExamMode] = useState<{ active: boolean, limit: number } | null>(null)
+  const [randomQuestions, setRandomQuestions] = useState<Question[]>([])
   const [progress, setProgress] = useState<ProgressData>({})
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -86,6 +88,25 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
 
   if (!isLoaded) return <div className="p-8 text-center text-slate-500 animate-pulse font-semibold">Cargando tu progreso...</div>
 
+  const startRandomExam = (limit: number) => {
+    // Select random questions
+    const shuffled = [...questions].sort(() => 0.5 - Math.random())
+    setRandomQuestions(shuffled.slice(0, limit))
+    setRandomExamMode({ active: true, limit })
+  }
+
+  if (randomExamMode?.active) {
+    return (
+      <StudySession 
+        moduleName={`Simulacro Global Aleatorio (${randomExamMode.limit} Preguntas)`} 
+        questions={randomQuestions} 
+        progress={progress}
+        onSaveProgress={handleSaveProgress}
+        onBack={() => setRandomExamMode(null)} 
+      />
+    )
+  }
+
   if (activeModule) {
     const moduleQuestions = questions.filter(q => q.modulo === activeModule)
     return (
@@ -135,13 +156,49 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
         </div>
       </div>
 
+      {/* Global Random Exam Banner */}
+      <div className="bg-slate-950 dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden border border-slate-800/80">
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full blur-[80px] opacity-30 pointer-events-none" />
+        
+        <div className="space-y-3 relative z-10 text-center lg:text-left">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-300 text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5" /> Nuevo Modo
+          </div>
+          <h3 className="text-2xl sm:text-3xl font-black text-white">Simulacro Global Aleatorio</h3>
+          <p className="text-slate-400 max-w-xl text-sm sm:text-base leading-relaxed">
+            Pon a prueba tus conocimientos mezclando todas las áreas temáticas. Elige la cantidad de preguntas y prepárate para el desafío real.
+          </p>
+        </div>
+        
+        <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto relative z-10 shrink-0">
+          <button 
+            onClick={() => startRandomExam(10)} 
+            className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-lg shadow-black/20"
+          >
+            <Play className="w-4 h-4 fill-white" /> 10 Preguntas
+          </button>
+          <button 
+            onClick={() => startRandomExam(20)} 
+            className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-lg shadow-black/20"
+          >
+            <Play className="w-4 h-4 fill-white" /> 20 Preguntas
+          </button>
+          <button 
+            onClick={() => startRandomExam(30)} 
+            className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-6 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-lg shadow-blue-500/25 btn-shimmer"
+          >
+            <Play className="w-4 h-4 fill-white" /> 30 Preguntas
+          </button>
+        </div>
+      </div>
+
       <div className="flex items-center gap-3.5 mb-6">
         <div className="p-3 bg-indigo-500/10 rounded-2xl text-indigo-600 dark:text-indigo-400">
           <BookOpen className="w-6 h-6" />
         </div>
         <div>
-          <h2 className="text-2xl font-black text-slate-900 dark:text-white">Módulos de Examen</h2>
-          <p className="text-slate-500 dark:text-slate-400 text-sm">Selecciona una de las áreas temáticas oficiales para iniciar.</p>
+          <h2 className="text-2xl font-black text-slate-900 dark:text-white">Módulos de Examen Específicos</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">Selecciona una de las áreas temáticas oficiales para practicar por separado.</p>
         </div>
       </div>
 
