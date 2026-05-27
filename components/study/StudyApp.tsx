@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect, useMemo } from 'react'
-import { BookOpen, CheckCircle, Play, ArrowLeft, Lightbulb, ChevronRight, Sparkles, AlertCircle, Award } from 'lucide-react'
-
+import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3 } from 'lucide-react'
+import Link from 'next/link'
 // Types
 export interface Option {
   id: string
@@ -32,18 +32,34 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   const [progress, setProgress] = useState<ProgressData>({})
   const [isLoaded, setIsLoaded] = useState(false)
 
-  // Load progress from localStorage on mount
+  // Load progress from DB on mount
   useEffect(() => {
-    const saved = localStorage.getItem('simo_study_progress')
-    if (saved) {
+    const fetchProgress = async () => {
       try {
-        setProgress(JSON.parse(saved))
-      } catch (e) {}
+        const res = await fetch('/api/progress')
+        if (res.ok) {
+          const { data } = await res.json()
+          if (data && Object.keys(data).length > 0) {
+            setProgress(data)
+            localStorage.setItem('simo_study_progress', JSON.stringify(data))
+          } else {
+            // Fallback to local storage if DB is empty
+            const saved = localStorage.getItem('simo_study_progress')
+            if (saved) {
+              setProgress(JSON.parse(saved))
+            }
+          }
+        }
+      } catch (e) {
+        console.error('Error fetching progress:', e)
+      } finally {
+        setIsLoaded(true)
+      }
     }
-    setIsLoaded(true)
+    fetchProgress()
   }, [])
 
-  // Save progress to localStorage
+  // Save progress locally (syncing to DB happens at the end of session)
   const handleSaveProgress = (questionId: number, status: 'correct' | 'incorrect') => {
     const newProgress = { ...progress, [questionId]: status }
     setProgress(newProgress)
@@ -74,7 +90,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
 
   // Total user progress metrics
   const totalStats = useMemo(() => {
-    let total = questions.length
+    const total = questions.length
     let correct = 0
     let incorrect = 0
     Object.keys(progress).forEach(k => {
@@ -151,16 +167,16 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 rounded-2xl p-5 flex items-center justify-between shadow-sm">
+        <Link href="/dashboard/report" className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 rounded-2xl p-5 flex items-center justify-between shadow-sm hover:border-indigo-500/50 hover:shadow-md transition-all group">
           <div className="space-y-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Explicaciones de IA</span>
-            <div className="text-3xl font-black text-indigo-600 dark:text-indigo-400">{totalStats.completed}</div>
-            <p className="text-xs text-slate-500">Consultas generadas</p>
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-400 group-hover:text-indigo-500 transition-colors">Reporte Detallado</span>
+            <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">Ver Estadísticas</div>
+            <p className="text-xs text-slate-500">Analiza tus puntos débiles</p>
           </div>
-          <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-950/40 rounded-xl flex items-center justify-center text-indigo-600 dark:text-indigo-400">
-            <Sparkles className="w-6 h-6" />
+          <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-950/40 group-hover:bg-indigo-600 group-hover:text-white transition-colors rounded-xl flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+            <BarChart3 className="w-5 h-5" />
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* Global Random Exam Banner */}
@@ -279,12 +295,21 @@ function StudySession({
   const [sessionProgress, setSessionProgress] = useState<Record<number, 'correct'|'incorrect'>>({})
   
   const question = questions[currentIndex]
-  const currentStatus = progress[question?.id]
 
-  useEffect(() => {
-    setSelectedOption(null)
-    setShowExplanation(false)
-  }, [currentIndex])
+  // Track if we already synced to DB to avoid multiple requests
+  const [hasSynced, setHasSynced] = useState(false)
+
+  const handleFinish = () => {
+    setIsFinished(true)
+    if (!hasSynced && Object.keys(sessionProgress).length > 0) {
+      setHasSynced(true)
+      fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ progress: sessionProgress })
+      }).catch(err => console.error('Error saving progress to DB:', err))
+    }
+  }
 
   if (!question && !isFinished) return null;
 
@@ -351,12 +376,16 @@ function StudySession({
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1)
+      setSelectedOption(null)
+      setShowExplanation(false)
     }
   }
 
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(prev => prev - 1)
+      setSelectedOption(null)
+      setShowExplanation(false)
     }
   }
 
@@ -468,7 +497,7 @@ function StudySession({
             </button>
           ) : (
             <button 
-              onClick={() => setIsFinished(true)}
+              onClick={handleFinish}
               disabled={!showExplanation}
               className="flex items-center gap-2 px-7 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-extrabold rounded-xl hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
             >
