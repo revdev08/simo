@@ -309,7 +309,7 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12 opacity-65 grayscale dark:invert">
               <span className="text-lg font-black tracking-tight text-slate-800">DIAN</span>
-              <span className="text-lg font-black tracking-tight text-slate-850">FISCALÍA</span>
+              <span className="text-lg font-black tracking-tight text-slate-800">FISCALÍA</span>
               <span className="text-lg font-black tracking-tight text-slate-800">ALCALDÍA BOGOTÁ</span>
               <span className="text-lg font-black tracking-tight text-slate-800">ICBF</span>
               <span className="text-lg font-black tracking-tight text-slate-800">MINISTERIOS</span>

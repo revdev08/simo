@@ -2,6 +2,11 @@
 import { createAdminClient } from './supabase'
 
 export async function isPremium(userId: string): Promise<boolean> {
+  // Bypass local de suscripción activa en entorno de desarrollo
+  if (process.env.NODE_ENV === 'development') {
+    return true
+  }
+
   // Simularemos que el usuario es premium si tiene un registro en la tabla subscriptions
   try {
     const supabase = createAdminClient()
