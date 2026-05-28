@@ -180,31 +180,31 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
       </div>
 
       {/* Global Random Exam Banner */}
-      <div className="bg-gradient-to-br from-slate-800 to-indigo-950 dark:from-slate-900 dark:to-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden border border-slate-700/60 dark:border-slate-800/80">
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full blur-[80px] opacity-30 pointer-events-none" />
-        
+      <div className="bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-900 rounded-3xl p-6 sm:p-8 shadow-sm dark:shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden border border-slate-200/60 dark:border-slate-800/80">
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full blur-[80px] opacity-15 dark:opacity-30 pointer-events-none" />
+
         <div className="space-y-3 relative z-10 text-center lg:text-left">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-300 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/30 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" /> Nuevo Modo
           </div>
-          <h3 className="text-2xl sm:text-3xl font-black text-white">Simulacro Global Aleatorio</h3>
-          <p className="text-slate-400 max-w-xl text-sm sm:text-base leading-relaxed">
+          <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">Simulacro Global Aleatorio</h3>
+          <p className="text-slate-500 dark:text-slate-400 max-w-xl text-sm sm:text-base leading-relaxed">
             Pon a prueba tus conocimientos mezclando todas las áreas temáticas. Elige la cantidad de preguntas y prepárate para el desafío real.
           </p>
         </div>
-        
+
         <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto relative z-10 shrink-0">
-          <button 
-            onClick={() => startRandomExam(10)} 
-            className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-lg shadow-black/20"
+          <button
+            onClick={() => startRandomExam(10)}
+            className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 hover:border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:border-slate-700 dark:hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-sm dark:shadow-lg dark:shadow-black/20"
           >
-            <Play className="w-4 h-4 fill-white" /> 10 Preguntas
+            <Play className="w-4 h-4 fill-slate-900 dark:fill-white" /> 10 Preguntas
           </button>
-          <button 
-            onClick={() => startRandomExam(20)} 
-            className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-lg shadow-black/20"
+          <button
+            onClick={() => startRandomExam(20)}
+            className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 hover:border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:border-slate-700 dark:hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-sm dark:shadow-lg dark:shadow-black/20"
           >
-            <Play className="w-4 h-4 fill-white" /> 20 Preguntas
+            <Play className="w-4 h-4 fill-slate-900 dark:fill-white" /> 20 Preguntas
           </button>
           <button 
             onClick={() => startRandomExam(30)} 
