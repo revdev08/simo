@@ -190,7 +190,7 @@ export default function LandingPage() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-500" />
-                <span>Garantía de reembolso de 7 días</span>
+                <span>Multiples Modulos</span>
               </div>
             </div>
 
