@@ -17,13 +17,88 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "SIMO TEST - Aprueba el examen más rápido",
-  description: "Plataforma de preparación para el examen SIMO en Colombia.",
-  icons: {
-    icon: "/logo.png",
+export const metadata = {
+  metadataBase: new URL('https://www.simotest.com'),
+
+  title: {
+    default: 'SIMO Test - Simulacros CNSC y Examen SIMO',
+    template: '%s | SIMO Test',
   },
-};
+
+  description:
+    'Practica con simulacros tipo CNSC y examen SIMO en Colombia. Prepárate para concursos públicos con preguntas y pruebas reales.',
+
+  keywords: [
+    'SIMO',
+    'examen SIMO',
+    'CNSC',
+    'simulacros CNSC',
+    'concursos públicos Colombia',
+    'preguntas CNSC',
+    'pruebas SIMO',
+    'empleo público Colombia',
+    'simulacro SIMO',
+    'preparación CNSC',
+  ],
+
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
+
+  openGraph: {
+    title: 'SIMO Test - Simulacros CNSC y Examen SIMO',
+
+    description:
+      'Prepárate para concursos públicos en Colombia con simulacros tipo CNSC y examen SIMO.',
+
+    url: 'https://www.simotest.com',
+
+    siteName: 'SIMO Test',
+
+    locale: 'es_CO',
+
+    type: 'website',
+
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SIMO Test - Plataforma de simulacros CNSC',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+
+    title: 'SIMO Test - Simulacros CNSC y Examen SIMO',
+
+    description:
+      'Practica simulacros tipo CNSC y examen SIMO en Colombia.',
+
+    images: ['/og-image.jpg'],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+  alternates: {
+    canonical: 'https://www.simotest.com',
+  },
+}
 
 export default function RootLayout({
   children,
