@@ -42,66 +42,78 @@ export async function GET(req: Request) {
 
   const supabase = createAdminClient()
 
-  // Buscamos profiles que aún no estén en email_sequence.
-  // Importante: ajusta el nombre de la columna si tu tabla profiles tiene "email" en otro campo.
-  const { data: pending, error: pendingErr } = await supabase
-    .rpc('profiles_not_in_sequence', { p_limit: limit })
-    .select()
+  // 1. Buscamos profiles que aún NO estén en email_sequence.
+  const { data: profiles, error: profErr } = await supabase
+    .from('profiles')
+    .select('id, email')
+    .not('email', 'is', null)
+    .limit(limit * 3)
 
-  // Fallback si la RPC no existe: hacemos el LEFT JOIN manual.
-  let candidates: { id: string; email: string }[] = []
-
-  if (pendingErr || !pending) {
-    const { data: profiles, error: profErr } = await supabase
-      .from('profiles')
-      .select('id, email')
-      .not('email', 'is', null)
-      .limit(limit * 3)
-
-    if (profErr) {
-      console.error('[Backfill] profiles fetch error:', profErr)
-      return NextResponse.json({ error: 'profiles fetch failed' }, { status: 500 })
-    }
-
-    const ids = (profiles ?? []).map((p) => p.id)
-    const { data: existing, error: existErr } = await supabase
-      .from('email_sequence')
-      .select('user_id')
-      .in('user_id', ids)
-
-    if (existErr) {
-      console.error('[Backfill] sequence check error:', existErr)
-      return NextResponse.json({ error: 'sequence check failed' }, { status: 500 })
-    }
-
-    const existingSet = new Set((existing ?? []).map((e) => e.user_id))
-    candidates = (profiles ?? [])
-      .filter((p) => p.email && !existingSet.has(p.id))
-      .slice(0, limit)
-  } else {
-    candidates = pending as { id: string; email: string }[]
+  if (profErr) {
+    console.error('[Backfill] profiles fetch error:', profErr)
+    return NextResponse.json({ error: 'profiles fetch failed' }, { status: 500 })
   }
+
+  const profileIds = (profiles ?? []).map((p) => p.id)
+
+  const { data: existing, error: existErr } = await supabase
+    .from('email_sequence')
+    .select('user_id')
+    .in('user_id', profileIds)
+
+  if (existErr) {
+    console.error('[Backfill] sequence check error:', existErr)
+    return NextResponse.json({ error: 'sequence check failed' }, { status: 500 })
+  }
+
+  const existingSet = new Set((existing ?? []).map((e) => e.user_id))
+
+  const candidates = (profiles ?? [])
+    .filter((p) => p.email && !existingSet.has(p.id))
+    .slice(0, limit)
 
   if (candidates.length === 0) {
     return NextResponse.json({ success: true, inserted: 0, message: 'Nothing to backfill.' })
   }
 
-  // Distribuye signup_at en las últimas N horas si stagger=true.
-  // Esto evita que el cron diario los procese todos al mismo tiempo y respeta el ritmo
-  // de warm-up del dominio.
+  // 2. De los candidatos, identificamos los que YA tienen suscripción activa.
+  //    A esos los marcamos como `converted` (status=paused, converted_at=NOW)
+  //    para que el cron de envío los salte por completo.
+  const candidateIds = candidates.map((c) => c.id)
+
+  const { data: activeSubs, error: subsErr } = await supabase
+    .from('subscriptions')
+    .select('user_id')
+    .eq('status', 'active')
+    .in('user_id', candidateIds)
+
+  if (subsErr) {
+    // Si falla (ej. tabla subscriptions no existe), seguimos pero sin marcar nada
+    // como paid — más seguro que abortar el backfill completo.
+    console.warn('[Backfill] subscriptions check failed (continuing without sub-filter):', subsErr)
+  }
+
+  const paidSet = new Set((activeSubs ?? []).map((s) => s.user_id))
+
+  // 3. Distribuimos signup_at en las últimas 24h si stagger=true.
   const now = Date.now()
   const spreadMs = stagger ? 24 * 60 * 60 * 1000 : 0
+  const nowIso = new Date(now).toISOString()
 
-  const rows = candidates.map((c, i) => ({
-    user_id: c.id,
-    email: c.email,
-    first_name: null,
-    signup_at: new Date(
-      now - (stagger ? Math.floor((i / candidates.length) * spreadMs) : 0),
-    ).toISOString(),
-    last_step_sent: 0,
-    status: 'active',
-  }))
+  const rows = candidates.map((c, i) => {
+    const hasActiveSub = paidSet.has(c.id)
+    return {
+      user_id: c.id,
+      email: c.email,
+      first_name: null,
+      signup_at: new Date(
+        now - (stagger ? Math.floor((i / candidates.length) * spreadMs) : 0),
+      ).toISOString(),
+      last_step_sent: 0,
+      status: hasActiveSub ? 'paused' : 'active',
+      converted_at: hasActiveSub ? nowIso : null,
+    }
+  })
 
   const { error: insertErr } = await supabase
     .from('email_sequence')
@@ -112,11 +124,19 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: 'insert failed', details: insertErr }, { status: 500 })
   }
 
-  console.log(`[Backfill] Inserted ${rows.length} profiles into email_sequence`)
+  const insertedActive = rows.filter((r) => r.status === 'active').length
+  const insertedPaused = rows.length - insertedActive
+
+  console.log(
+    `[Backfill] Inserted ${rows.length} profiles into email_sequence ` +
+      `(${insertedActive} active, ${insertedPaused} ya suscritos → paused)`,
+  )
 
   return NextResponse.json({
     success: true,
     inserted: rows.length,
+    inserted_active: insertedActive,
+    inserted_already_paid: insertedPaused,
     stagger,
   })
 }

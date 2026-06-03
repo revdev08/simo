@@ -40,3 +40,16 @@ DROP TRIGGER IF EXISTS trg_email_sequence_updated_at ON email_sequence;
 CREATE TRIGGER trg_email_sequence_updated_at
   BEFORE UPDATE ON email_sequence
   FOR EACH ROW EXECUTE FUNCTION touch_email_sequence_updated_at();
+
+-- ============================================================
+-- Row Level Security (RLS)
+--
+-- Habilitamos RLS pero NO creamos políticas. Resultado:
+--   - service_role (backend, crones, webhooks) → acceso total
+--   - anon / authenticated (frontend, usuarios)  → bloqueados
+--
+-- Es la postura más segura para esta tabla porque su contenido
+-- (tracking de email marketing) no debe ser legible por el
+-- frontend bajo ninguna circunstancia.
+-- ============================================================
+ALTER TABLE email_sequence ENABLE ROW LEVEL SECURITY;
