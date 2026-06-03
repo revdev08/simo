@@ -95,6 +95,27 @@ export default function LandingPage() {
               </span>
             </div>
 
+            <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+              <button
+                onClick={() => document.getElementById('planes')?.scrollIntoView({ behavior: 'smooth' })}
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+              >
+                Planes
+              </button>
+              <Link
+                href="/guia"
+                className="relative hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
+              >
+                <span className="flex items-center gap-1.5">
+                  Guía
+                  <span className="text-[9px] font-extrabold uppercase tracking-wider bg-gradient-to-r from-emerald-500 to-green-500 text-white px-1.5 py-0.5 rounded-full">
+                    Free
+                  </span>
+                </span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 group-hover:w-full transition-all duration-300" />
+              </Link>
+            </nav>
+
             <div className="flex items-center gap-2.5 sm:gap-5">
               <ThemeToggle />
               {!isSignedIn ? (
