@@ -103,15 +103,22 @@ export default function LandingPage() {
                 Planes
               </button>
               <Link
-                href="/guia"
+                href="/simulacro-gratis"
                 className="relative hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
               >
                 <span className="flex items-center gap-1.5">
-                  Guía
-                  <span className="text-[9px] font-extrabold uppercase tracking-wider bg-gradient-to-r from-emerald-500 to-green-500 text-white px-1.5 py-0.5 rounded-full">
+                  Simulacro
+                  <span className="text-[9px] font-extrabold uppercase tracking-wider bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-1.5 py-0.5 rounded-full">
                     Free
                   </span>
                 </span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 group-hover:w-full transition-all duration-300" />
+              </Link>
+              <Link
+                href="/guia"
+                className="relative hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
+              >
+                Guía
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 group-hover:w-full transition-all duration-300" />
               </Link>
             </nav>

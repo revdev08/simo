@@ -3,6 +3,14 @@
         {
             "path": "/api/cron/sync-subscriptions",
             "schedule": "0 5 * * *"
+        },
+        {
+            "path": "/api/cron/email-backfill?limit=100&stagger=true",
+            "schedule": "0 13 * * *"
+        },
+        {
+            "path": "/api/cron/email-sequence",
+            "schedule": "0 14 * * *"
         }
     ]
 }

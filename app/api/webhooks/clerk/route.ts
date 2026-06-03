@@ -2,6 +2,7 @@ import { Webhook } from 'svix'
 import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
 import { createAdminClient } from '@/lib/supabase'
+import { sendWelcomeEmail } from '@/lib/resend'
 
 export async function POST(req: Request) {
   // Configuro la clave secreta en el archivo .env
@@ -53,16 +54,16 @@ export async function POST(req: Request) {
 
   // Manejamos el evento user.created
   if (eventType === 'user.created') {
-    const { id, email_addresses } = evt.data
+    const { id, email_addresses, first_name } = evt.data
     const email = email_addresses?.length > 0 ? email_addresses[0].email_address : ''
-    
+
     console.log(`[Webhook] Processing user.created for ID: ${id}, Email: ${email}`);
 
     try {
       const supabase = createAdminClient()
 
       console.log(`[Webhook] Attempting to insert into Supabase...`);
-      const { data, error } = await supabase.from('profiles').insert({
+      const { error } = await supabase.from('profiles').insert({
         id: id,
         email: email,
       })
@@ -71,11 +72,56 @@ export async function POST(req: Request) {
         console.error('[Webhook] Error insertando en Supabase:', error)
         return new Response('Error procesando webhook de Supabase', { status: 500 })
       }
-      
+
       console.log(`[Webhook] Success inserting profile!`);
     } catch (e) {
       console.error('[Webhook] Exception Supabase insert:', e);
       return new Response('Error interno del webhook', { status: 500 });
+    }
+
+    // Registrar en la secuencia + enviar email de bienvenida (step 1).
+    // Si falla, no rompemos el webhook: Clerk no debería reintentar por errores de email.
+    if (email) {
+      try {
+        const supabase = createAdminClient()
+
+        // Insertamos en la secuencia. Si ya existe (re-procesamiento), no duplicamos.
+        const { error: insertErr } = await supabase
+          .from('email_sequence')
+          .upsert(
+            {
+              user_id: id,
+              email,
+              first_name: first_name ?? null,
+              signup_at: new Date().toISOString(),
+              last_step_sent: 0,
+              status: 'active',
+            },
+            { onConflict: 'user_id', ignoreDuplicates: true },
+          )
+
+        if (insertErr) {
+          console.error('[Webhook] email_sequence upsert error:', insertErr)
+        }
+
+        // Disparamos el email 1 inmediatamente.
+        const result = await sendWelcomeEmail({
+          to: email,
+          firstName: first_name ?? undefined,
+        })
+
+        if (!('error' in result && result.error)) {
+          await supabase
+            .from('email_sequence')
+            .update({
+              last_step_sent: 1,
+              last_sent_at: new Date().toISOString(),
+            })
+            .eq('user_id', id)
+        }
+      } catch (e) {
+        console.error('[Webhook] welcome flow exception (non-blocking):', e)
+      }
     }
   }
 
