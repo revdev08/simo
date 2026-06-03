@@ -18,6 +18,7 @@ import {
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
+import MobileMenu from '@/components/MobileMenu'
 import questionsData from './questions.json'
 
 interface Question {
@@ -105,15 +106,18 @@ export default function SimulacroGratisPage() {
               </span>
             </Link>
 
-            <div className="flex items-center gap-2.5 sm:gap-5">
+            <div className="flex items-center gap-2 sm:gap-5">
               <ThemeToggle />
               {!isSignedIn ? (
-                <button
-                  onClick={handleSignUp}
-                  className="text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:scale-105 cursor-pointer"
-                >
-                  Registrarse Gratis
-                </button>
+                <>
+                  <button
+                    onClick={handleSignUp}
+                    className="hidden sm:inline-flex text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:scale-105 cursor-pointer"
+                  >
+                    Registrarse Gratis
+                  </button>
+                  <MobileMenu current="simulacro" />
+                </>
               ) : (
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-medium text-slate-500 dark:text-slate-400 hidden sm:inline-block bg-slate-100 dark:bg-slate-900 px-3 py-1.5 rounded-lg">
@@ -122,9 +126,10 @@ export default function SimulacroGratisPage() {
                   <Link href="/dashboard" className="flex items-center gap-1.5 text-sm font-bold bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-500 transition-colors">
                     <LayoutDashboard className="w-4 h-4 hidden sm:block" /> Panel
                   </Link>
-                  <button onClick={() => signOut()} className="text-slate-400 hover:text-red-500 p-2 transition-colors rounded-lg">
+                  <button onClick={() => signOut()} className="hidden sm:inline-flex text-slate-400 hover:text-red-500 p-2 transition-colors rounded-lg items-center">
                     <LogOut className="w-5 h-5" />
                   </button>
+                  <MobileMenu current="simulacro" />
                 </div>
               )}
             </div>

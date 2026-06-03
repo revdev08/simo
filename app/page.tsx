@@ -20,6 +20,7 @@ import {
 import Link from 'next/link'
 import { useState } from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
+import MobileMenu from '@/components/MobileMenu'
 
 export default function LandingPage() {
   const { openSignIn, openSignUp, signOut } = useClerk()
@@ -123,24 +124,17 @@ export default function LandingPage() {
               </Link>
             </nav>
 
-            <div className="flex items-center gap-2.5 sm:gap-5">
+            <div className="flex items-center gap-2 sm:gap-5">
               <ThemeToggle />
               {!isSignedIn ? (
                 <>
                   <button
-                    onClick={handleSignIn}
-                    className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap"
-                  >
-                    <span className="sm:hidden">Entrar</span>
-                    <span className="hidden sm:inline">Iniciar sesión</span>
-                  </button>
-                  <button
                     onClick={handleSignUp}
-                    className="text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer btn-shimmer whitespace-nowrap"
+                    className="hidden sm:inline-flex text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer btn-shimmer whitespace-nowrap"
                   >
-                    <span className="sm:hidden">Registrarse</span>
-                    <span className="hidden sm:inline">Registrarse Gratis</span>
+                    Registrarse Gratis
                   </button>
+                  <MobileMenu current="home" />
                 </>
               ) : (
                 <div className="flex items-center gap-2 sm:gap-4">
@@ -155,11 +149,12 @@ export default function LandingPage() {
                   </Link>
                   <button
                     onClick={handleSignOut}
-                    className="text-slate-400 hover:text-red-500 p-2 transition-colors cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900"
+                    className="hidden sm:inline-flex text-slate-400 hover:text-red-500 p-2 transition-colors cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 items-center"
                     title="Cerrar sesión"
                   >
-                    <LogOut className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <LogOut className="w-5 h-5" />
                   </button>
+                  <MobileMenu current="home" />
                 </div>
               )}
             </div>

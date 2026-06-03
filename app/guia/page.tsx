@@ -37,6 +37,7 @@ import {
 import Link from 'next/link'
 import { useState } from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
+import MobileMenu from '@/components/MobileMenu'
 
 type PhaseColor = 'blue' | 'purple' | 'rose' | 'emerald'
 
@@ -230,27 +231,21 @@ export default function GuiaPage() {
             <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
               <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Inicio</Link>
               <Link href="/#planes" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Planes</Link>
+              <Link href="/simulacro-gratis" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Simulacro</Link>
               <Link href="/guia" className="text-blue-600 dark:text-blue-400 font-bold">Guía</Link>
             </nav>
 
-            <div className="flex items-center gap-2.5 sm:gap-5">
+            <div className="flex items-center gap-2 sm:gap-5">
               <ThemeToggle />
               {!isSignedIn ? (
                 <>
                   <button
-                    onClick={handleSignIn}
-                    className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap"
-                  >
-                    <span className="sm:hidden">Entrar</span>
-                    <span className="hidden sm:inline">Iniciar sesión</span>
-                  </button>
-                  <button
                     onClick={handleSignUp}
-                    className="text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer btn-shimmer whitespace-nowrap"
+                    className="hidden sm:inline-flex text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer btn-shimmer whitespace-nowrap"
                   >
-                    <span className="sm:hidden">Registrarse</span>
-                    <span className="hidden sm:inline">Registrarse Gratis</span>
+                    Registrarse Gratis
                   </button>
+                  <MobileMenu current="guia" />
                 </>
               ) : (
                 <div className="flex items-center gap-2 sm:gap-4">
@@ -265,11 +260,12 @@ export default function GuiaPage() {
                   </Link>
                   <button
                     onClick={handleSignOut}
-                    className="text-slate-400 hover:text-red-500 p-2 transition-colors cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900"
+                    className="hidden sm:inline-flex text-slate-400 hover:text-red-500 p-2 transition-colors cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 items-center"
                     title="Cerrar sesión"
                   >
-                    <LogOut className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <LogOut className="w-5 h-5" />
                   </button>
+                  <MobileMenu current="guia" />
                 </div>
               )}
             </div>
