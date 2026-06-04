@@ -11,11 +11,11 @@ export default function PriceObjectionEmail({ firstName, recipientEmail }: Price
 
   return (
     <EmailLayout
-      preview="$19.900 vs. 2 años perdidos. Hagamos el cálculo real."
+      preview="$19900 vs. 2 años perdidos. Hagamos el cálculo real."
       recipientEmail={recipientEmail}
     >
       <Text style={styles.subheading}>Día 8 · El costo real</Text>
-      <Text style={styles.heading}>$19.900 vs. 2 años perdidos</Text>
+      <Text style={styles.heading}>$19900 vs. 2 años perdidos</Text>
 
       <Text style={styles.paragraph}>Hola {name},</Text>
 
@@ -57,15 +57,15 @@ export default function PriceObjectionEmail({ firstName, recipientEmail }: Price
           💡 Costo de prepararte con SIMO TEST:
         </Text>
         <Text style={styles.calloutText}>
-          • Plan semanal: <strong>$19.900</strong> (acceso completo 7 días)
+          • Plan semanal: <strong>$19900</strong> (acceso completo 7 días)
         </Text>
         <Text style={styles.calloutText}>
-          • Plan mensual: <strong>$39.900</strong> (simulacros ilimitados + IA + estadísticas)
+          • Plan mensual: <strong>$39900</strong> (simulacros ilimitados + IA + estadísticas)
         </Text>
       </Section>
 
       <Text style={styles.paragraph}>
-        $19.900 es lo que cuesta una pizza familiar. $39.900 es lo que pagas por un mes de Netflix Premium en un par de cuentas. Y ese gasto único <strong>puede traducirse en un cargo público estable por 20+ años</strong>.
+        $19900 es lo que cuesta una pizza familiar. $39900 es lo que pagas por un mes de Netflix Premium en un par de cuentas. Y ese gasto único <strong>puede traducirse en un cargo público estable por 20+ años</strong>.
       </Text>
 
       <Text style={styles.paragraph}>

@@ -413,7 +413,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <div className="mb-8 flex items-baseline gap-1">
-                    <span className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">$19.900</span>
+                    <span className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">$19900</span>
                     <span className="text-slate-500 dark:text-slate-400 font-medium text-sm">/ semana</span>
                   </div>
                   <ul className="space-y-4 mb-10">
@@ -462,7 +462,7 @@ export default function LandingPage() {
                     <p className="text-slate-400 text-sm mt-1.5">La preparación integral para asegurar tu puesto.</p>
                   </div>
                   <div className="mb-8 flex items-baseline gap-1">
-                    <span className="text-5xl font-black tracking-tight text-white">$39.900</span>
+                    <span className="text-5xl font-black tracking-tight text-white">$39900</span>
                     <span className="text-slate-400 font-medium text-sm">/ mes</span>
                   </div>
                   <ul className="space-y-4 mb-10">

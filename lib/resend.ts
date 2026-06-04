@@ -45,7 +45,7 @@ const EMAILS: Record<number, EmailConfig> = {
     build: ({ to, firstName }) => SocialProofEmail({ firstName, recipientEmail: to }),
   },
   4: {
-    subject: '$19.900 vs. 2 años perdidos',
+    subject: '$19900 vs. 2 años perdidos',
     label: '4-price-objection',
     build: ({ to, firstName }) => PriceObjectionEmail({ firstName, recipientEmail: to }),
   },
