@@ -130,21 +130,34 @@ export default async function DashboardPage(props: DashboardProps) {
             </p>
           </div>
 
-          <div className="flex items-center gap-4 self-stretch md:self-auto justify-between md:justify-end">
+          <div className="flex items-center gap-2 sm:gap-4 self-stretch md:self-auto justify-between md:justify-end">
             <ThemeToggle />
-            <div className={`px-4 py-3 rounded-xl border ${isUserPremium ? 'bg-emerald-50 border-emerald-100 dark:bg-emerald-500/10 dark:border-emerald-500/20' : 'bg-amber-50 border-amber-100 dark:bg-amber-500/10 dark:border-amber-500/20'} flex items-center gap-3`}>
+            <a
+              href="https://www.mercadopago.com.co/subscriptions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-2 sm:px-4 py-1 rounded-xl border transition-all duration-200 hover:shadow-sm ${
+                isUserPremium
+                  ? 'bg-emerald-50 border-emerald-100 hover:bg-emerald-100/50 dark:bg-emerald-500/10 dark:border-emerald-500/20 dark:hover:bg-emerald-500/20'
+                  : 'bg-amber-50 border-amber-100 hover:bg-amber-100/50 dark:bg-amber-500/10 dark:border-amber-500/20 dark:hover:bg-amber-500/20'
+              } flex items-center gap-2 sm:gap-3`}
+            >
               <div className={`w-3 h-3 rounded-full ${isUserPremium ? 'bg-emerald-500' : 'bg-amber-500 animate-pulse'}`}></div>
               <div>
                 <div className={`text-sm font-bold ${isUserPremium ? 'text-emerald-800 dark:text-emerald-400' : 'text-amber-800 dark:text-amber-400'}`}>
                   {isUserPremium ? 'Suscripción Activa' : 'Pago en Proceso'}
                 </div>
-                {!isUserPremium && (
+                {isUserPremium ? (
+                  <div className="text-[12px] text-slate-400 dark:text-slate-400">
+                    administrar suscripción
+                  </div>
+                ) : (
                   <div className="text-xs text-amber-600 dark:text-amber-500 mt-0.5">
                     Estamos validando tu pago con Mercado Pago.
                   </div>
                 )}
               </div>
-            </div>
+            </a>
             <SignOutButton />
           </div>
         </div>
