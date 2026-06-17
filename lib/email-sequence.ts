@@ -31,7 +31,7 @@ export const SEQUENCE: SequenceStep[] = [
   { step: 3, dayOffset: 5,  label: 'social-proof',      send: sendSocialProofEmail },
   { step: 4, dayOffset: 8,  label: 'price-objection',   send: sendPriceObjectionEmail },
   { step: 5, dayOffset: 11, label: 'product-demo',      send: sendProductDemoEmail },
-  { step: 6, dayOffset: 14, label: 'discount',          send: sendDiscountEmail },
+  { step: 6, dayOffset: 14, label: 'final-push',          send: sendDiscountEmail },
 ]
 
 export const TOTAL_STEPS = SEQUENCE.length

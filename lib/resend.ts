@@ -55,8 +55,8 @@ const EMAILS: Record<number, EmailConfig> = {
     build: ({ to, firstName }) => ProductDemoEmail({ firstName, recipientEmail: to }),
   },
   6: {
-    subject: 'Solo por 48 horas: 30% off tu primer mes',
-    label: '6-discount',
+    subject: '¿Estás estudiando para pasar, o solo para ver qué pasa?',
+    label: '6-final-push',
     build: ({ to, firstName }) => DiscountEmail({ firstName, recipientEmail: to }),
   },
 }
