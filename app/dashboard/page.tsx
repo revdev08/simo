@@ -6,6 +6,7 @@ import questionsData from '@/questions.json'
 import StudyApp from '@/components/study/StudyApp'
 import ThemeToggle from '@/components/ThemeToggle'
 import SignOutButton from '@/components/SignOutButton'
+import PurchaseTracker from '@/components/PurchaseTracker'
 
 interface DashboardProps {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
@@ -20,9 +21,10 @@ export default async function DashboardPage(props: DashboardProps) {
   }
 
   // Si Mercado Pago nos redirigió de vuelta, enlazamos el preapproval_id al usuario
+  let preapprovalId: string | undefined
   if (props.searchParams) {
     const sp = await props.searchParams
-    const preapprovalId = sp?.preapproval_id as string
+    preapprovalId = sp?.preapproval_id as string
 
     if (preapprovalId) {
       const { createAdminClient } = await import('@/lib/supabase')
@@ -100,25 +102,33 @@ export default async function DashboardPage(props: DashboardProps) {
 
   // Verificamos si tiene una suscripción pendiente para no redirigirlo bruscamente
   let isPending = false
-  if (!isUserPremium) {
+  let planId: string | null = null
+  {
     const { createAdminClient } = await import('@/lib/supabase')
     const adminOptions = createAdminClient()
     const { data: sub } = await adminOptions.from('subscriptions')
-      .select('status')
+      .select('status, plan_id')
       .eq('user_id', userId)
       .order('created_at', { ascending: false })
       .limit(1)
       .single()
 
-    if (sub && (sub.status === 'pending' || sub.status === 'active')) {
-      isPending = true
-    } else {
-      redirect('/#planes')
+    planId = sub?.plan_id || null
+
+    if (!isUserPremium) {
+      if (sub && (sub.status === 'pending' || sub.status === 'active')) {
+        isPending = true
+      } else {
+        redirect('/#planes')
+      }
     }
   }
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 p-8 font-sans transition-colors duration-300">
+      {isUserPremium && preapprovalId && (
+        <PurchaseTracker preapprovalId={preapprovalId} planId={planId} />
+      )}
       <div className="max-w-5xl mx-auto space-y-8">
 
         {/* Profile & Status Header */}

@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import MetaPixel from "@/components/MetaPixel";
+import RegistrationTracker from "@/components/RegistrationTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -128,6 +130,7 @@ export default function RootLayout({
           <ThemeProvider>
             {children}
           </ThemeProvider>
+          <RegistrationTracker />
         </ClerkProvider>
 
         <Analytics />
@@ -138,6 +141,8 @@ export default function RootLayout({
             gaId={process.env.NEXT_PUBLIC_GA_ID}
           />
         )}
+
+        <MetaPixel />
       </body>
     </html>
   );

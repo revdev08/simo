@@ -18,15 +18,40 @@ import {
   Check
 } from 'lucide-react'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
 import MobileMenu from '@/components/MobileMenu'
+import { fbTrack, PLAN_PRICES } from '@/lib/metaPixel'
 
 export default function LandingPage() {
   const { openSignIn, openSignUp, signOut } = useClerk()
   const { isSignedIn, user } = useUser()
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
   const [selectedDemoOption, setSelectedDemoOption] = useState<string | null>(null)
+  const planesViewedRef = useRef(false)
+
+  useEffect(() => {
+    const el = document.getElementById('planes')
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !planesViewedRef.current) {
+          planesViewedRef.current = true
+          fbTrack('ViewContent', {
+            content_name: 'Planes de Precios',
+            content_ids: Object.keys(PLAN_PRICES),
+            currency: 'COP',
+          })
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   const handleSignIn = () => {
     openSignIn({ forceRedirectUrl: '/dashboard' })
@@ -440,6 +465,12 @@ export default function LandingPage() {
                 <button
                   onClick={() => {
                     const planId = '3fa86370a007428f93d188e30e426653'
+                    fbTrack('InitiateCheckout', {
+                      content_name: 'Plan Semanal',
+                      content_ids: [planId],
+                      value: PLAN_PRICES[planId],
+                      currency: 'COP',
+                    })
                     if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
                     else window.location.href = `/api/checkout?planId=${planId}`
                   }}
@@ -496,6 +527,12 @@ export default function LandingPage() {
                 <button
                   onClick={() => {
                     const planId = 'e9150a4759e7405b9290f1ace43b1fe6'
+                    fbTrack('InitiateCheckout', {
+                      content_name: 'Plan Mensual',
+                      content_ids: [planId],
+                      value: PLAN_PRICES[planId],
+                      currency: 'COP',
+                    })
                     if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
                     else window.location.href = `/api/checkout?planId=${planId}`
                   }}
