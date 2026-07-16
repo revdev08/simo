@@ -46,7 +46,12 @@ export async function GET(req: Request) {
       const supabaseAdmin = createAdminClient()
 
       // Usar upsert o update en la tabla de subscriptions base a user_id
-      const { data: existingSub } = await supabaseAdmin.from('subscriptions').select('id').eq('user_id', userId).single()
+      const { data: existingSub } = await supabaseAdmin.from('subscriptions')
+        .select('id')
+        .eq('user_id', userId)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle()
 
       if (existingSub) {
         await supabaseAdmin.from('subscriptions')

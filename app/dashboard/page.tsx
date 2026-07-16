@@ -33,7 +33,7 @@ export default async function DashboardPage(props: DashboardProps) {
       const { data: existingSub } = await adminOptions.from('subscriptions')
         .select('id, user_id')
         .eq('mp_preapproval_id', preapprovalId)
-        .single()
+        .maybeSingle()
 
       if (!existingSub) {
         // Consultar directamente a MercadoPago API para obtener el preapproval
@@ -47,20 +47,36 @@ export default async function DashboardPage(props: DashboardProps) {
             const mpPlanId = (mpData as any)?.preapproval_plan_id || mpData?.reason || 'unknown'
             const nextPaymentDate = (mpData as any)?.next_payment_date || null
 
+            // `external_reference` es la fuente de verdad de a quién pertenece este preapproval,
+            // no la sesión de Clerk que esté de visita en /dashboard en este momento (puede ser
+            // otra persona con un link viejo, una sesión compartida, etc.)
+            const ownerUserId = mpData.external_reference || userId
+
+            if (mpData.external_reference && mpData.external_reference !== userId) {
+              console.warn(
+                `[Dashboard] external_reference (${mpData.external_reference}) no coincide con la sesión actual (${userId}) para preapproval ${preapprovalId}. Se enlaza al dueño real.`
+              )
+            }
+
             // Enlazar manualmente y de forma segura
-            // Verificamos si el usuario ya tiene un registro (creado por el checkout)
-            const { data: userSub } = await adminOptions.from('subscriptions').select('id').eq('user_id', userId).maybeSingle()
+            // Verificamos si el dueño real ya tiene un registro (creado por el checkout)
+            const { data: ownerSub } = await adminOptions.from('subscriptions')
+              .select('id')
+              .eq('user_id', ownerUserId)
+              .order('created_at', { ascending: false })
+              .limit(1)
+              .maybeSingle()
 
             const payload = {
-              user_id: userId,
+              user_id: ownerUserId,
               mp_preapproval_id: preapprovalId,
               status: mpData.status === 'authorized' ? 'active' : 'pending',
               plan_id: mpPlanId,
               current_period_end: nextPaymentDate
             }
 
-            if (userSub) {
-              await adminOptions.from('subscriptions').update(payload).eq('id', userSub.id)
+            if (ownerSub) {
+              await adminOptions.from('subscriptions').update(payload).eq('id', ownerSub.id)
             } else {
               await adminOptions.from('subscriptions').insert(payload)
             }
@@ -69,11 +85,11 @@ export default async function DashboardPage(props: DashboardProps) {
           }
         }
       } else if (existingSub.user_id !== userId) {
-
-        // Si por alguna razón se enlazó mal, se corrige
-        await adminOptions.from('subscriptions')
-          .update({ user_id: userId })
-          .eq('mp_preapproval_id', preapprovalId)
+        // Esta suscripción ya está enlazada a otro usuario (el dueño real, según external_reference).
+        // No se sobrescribe según quién esté de visita en esta URL.
+        console.warn(
+          `[Dashboard] Sesión actual (${userId}) visitó /dashboard con preapproval_id=${preapprovalId}, que pertenece a otro usuario (${existingSub.user_id}). No se modifica el enlace.`
+        )
       }
     }
   }
@@ -111,7 +127,7 @@ export default async function DashboardPage(props: DashboardProps) {
       .eq('user_id', userId)
       .order('created_at', { ascending: false })
       .limit(1)
-      .single()
+      .maybeSingle()
 
     planId = sub?.plan_id || null
 

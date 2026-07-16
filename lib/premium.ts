@@ -24,7 +24,11 @@ export async function isPremium(userId: string): Promise<boolean> {
 
     // Validar el status
     const isActiveStatus = subscription.status === 'active' || subscription.status === 'trialing'
-    
+
+    // Una suscripción cancelada sigue dando acceso hasta el fin del periodo ya pagado
+    // (solo cuenta si de verdad llegó a tener un periodo pagado, no si se canceló antes de autorizarse)
+    const isCanceledButPaid = subscription.status === 'canceled' && !!subscription.current_period_end
+
     // Validar la fecha de fin si existe (dar tolerancia de 1 día por si acaso)
     let isDateValid = true
     if (subscription.current_period_end) {
@@ -34,7 +38,7 @@ export async function isPremium(userId: string): Promise<boolean> {
       isDateValid = now < endDate
     }
 
-    return isActiveStatus && isDateValid
+    return (isActiveStatus || isCanceledButPaid) && isDateValid
   } catch (err) {
     console.error('Error checking premium status', err)
     return false

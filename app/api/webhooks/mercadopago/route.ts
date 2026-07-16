@@ -61,7 +61,7 @@ export async function POST(req: Request) {
           .eq('mp_preapproval_id', mpPreapprovalId)
           .order('created_at', { ascending: false })
           .limit(1)
-          .single()
+          .maybeSingle()
 
         if (!existingSub && userId) {
           const { data: subByUser } = await supabase
@@ -70,7 +70,7 @@ export async function POST(req: Request) {
             .eq('user_id', userId)
             .order('created_at', { ascending: false })
             .limit(1)
-            .single()
+            .maybeSingle()
 
           existingSub = subByUser
         }
