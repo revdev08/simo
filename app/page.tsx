@@ -79,8 +79,8 @@ export default function LandingPage() {
       a: "Totalmente. Nuestro equipo actualiza constantemente la base de datos de preguntas basándose en las guías de orientación y exámenes recientes de la CNSC para procesos del SIMO."
     },
     {
-      q: "¿Puedo cancelar mi plan en cualquier momento?",
-      a: "Claro que sí. El plan mensual es una suscripción recurrente que puedes pausar o cancelar con un solo clic directamente desde tu perfil o panel de Mercado Pago, sin compromisos a largo plazo."
+      q: "¿Puedo cancelar o pausar mi plan en cualquier momento?",
+      a: "Sí, sin compromisos a largo plazo. Tu suscripción se administra directamente desde Mercado Pago: entra a tu Panel y haz clic en 'administrar suscripción', o ingresa a mercadopago.com.co/subscriptions con la cuenta de Mercado Pago que usaste para pagar; ahí puedes pausar o cancelar con un clic, cuando quieras. Te recomendamos usar una cuenta de Mercado Pago asociada al mismo correo con el que te registraste en SIMO Test (o al menos tener alguna cuenta de Mercado Pago activa), para que siempre tengas a la mano desde dónde gestionar tu pago. Y si tienes cualquier inconveniente, con gusto te ayudamos escribiendo a revolutiondev08@gmail.com."
     }
   ]
 
