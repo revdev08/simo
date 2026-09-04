@@ -2,6 +2,8 @@ export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 
 // Precios de referencia por plan (en COP), usados solo para reportar `value` a Meta.
 export const PLAN_PRICES: Record<string, number> = {
+  semanal: 19900,
+  mensual: 39900,
   '3fa86370a007428f93d188e30e426653': 19900, // Plan Semanal
   'e9150a4759e7405b9290f1ace43b1fe6': 39900, // Plan Mensual
 }

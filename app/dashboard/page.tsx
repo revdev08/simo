@@ -3,10 +3,11 @@ import { redirect } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
 import questionsData from '@/questions.json'
-import StudyApp from '@/components/study/StudyApp'
+import StudyApp, { type Question } from '@/components/study/StudyApp'
 import ThemeToggle from '@/components/ThemeToggle'
 import SignOutButton from '@/components/SignOutButton'
 import PurchaseTracker from '@/components/PurchaseTracker'
+import { syncMercadoPagoSubscription } from '@/lib/syncMercadoPagoSubscription'
 
 interface DashboardProps {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
@@ -20,78 +21,27 @@ export default async function DashboardPage(props: DashboardProps) {
     redirect('/')
   }
 
-  // Si Mercado Pago nos redirigió de vuelta, enlazamos el preapproval_id al usuario
-  let preapprovalId: string | undefined
-  if (props.searchParams) {
-    const sp = await props.searchParams
-    preapprovalId = sp?.preapproval_id as string
+  const searchParams = props.searchParams ? await props.searchParams : undefined
+  let preapprovalId = typeof searchParams?.preapproval_id === 'string' ? searchParams.preapproval_id : undefined
 
-    if (preapprovalId) {
-      const { createAdminClient } = await import('@/lib/supabase')
-      const adminOptions = createAdminClient()
+  // Respaldo inmediato del webhook: cuando el cliente vuelve de MP, consultamos directamente
+  // el preapproval que guardamos antes de redirigir. También corrige pending antiguos al recargar.
+  const { createAdminClient } = await import('@/lib/supabase')
+  const initialAdmin = createAdminClient()
+  const { data: pendingSubscription } = await initialAdmin.from('subscriptions')
+    .select('mp_preapproval_id')
+    .eq('user_id', userId)
+    .eq('status', 'pending')
+    .order('created_at', { ascending: false })
+    .limit(1)
+    .maybeSingle()
 
-      const { data: existingSub } = await adminOptions.from('subscriptions')
-        .select('id, user_id')
-        .eq('mp_preapproval_id', preapprovalId)
-        .maybeSingle()
-
-      if (!existingSub) {
-        // Consultar directamente a MercadoPago API para obtener el preapproval
-        const meliAccessToken = process.env.MELI_ACCESS_TOKEN
-        if (meliAccessToken) {
-          const { MercadoPagoConfig, PreApproval } = await import('mercadopago')
-          const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
-          const preApproval = new PreApproval(client)
-          try {
-            const mpData = await preApproval.get({ id: preapprovalId })
-            const mpPlanId = (mpData as any)?.preapproval_plan_id || mpData?.reason || 'unknown'
-            const nextPaymentDate = (mpData as any)?.next_payment_date || null
-
-            // `external_reference` es la fuente de verdad de a quién pertenece este preapproval,
-            // no la sesión de Clerk que esté de visita en /dashboard en este momento (puede ser
-            // otra persona con un link viejo, una sesión compartida, etc.)
-            const ownerUserId = mpData.external_reference || userId
-
-            if (mpData.external_reference && mpData.external_reference !== userId) {
-              console.warn(
-                `[Dashboard] external_reference (${mpData.external_reference}) no coincide con la sesión actual (${userId}) para preapproval ${preapprovalId}. Se enlaza al dueño real.`
-              )
-            }
-
-            // Enlazar manualmente y de forma segura
-            // Verificamos si el dueño real ya tiene un registro (creado por el checkout)
-            const { data: ownerSub } = await adminOptions.from('subscriptions')
-              .select('id')
-              .eq('user_id', ownerUserId)
-              .order('created_at', { ascending: false })
-              .limit(1)
-              .maybeSingle()
-
-            const payload = {
-              user_id: ownerUserId,
-              mp_preapproval_id: preapprovalId,
-              status: mpData.status === 'authorized' ? 'active' : 'pending',
-              plan_id: mpPlanId,
-              current_period_end: nextPaymentDate
-            }
-
-            if (ownerSub) {
-              await adminOptions.from('subscriptions').update(payload).eq('id', ownerSub.id)
-            } else {
-              await adminOptions.from('subscriptions').insert(payload)
-            }
-          } catch (e) {
-            console.error('Error fetching preapproval from MP in Dashboard:', e)
-          }
-        }
-      } else if (existingSub.user_id !== userId) {
-        // Esta suscripción ya está enlazada a otro usuario (el dueño real, según external_reference).
-        // No se sobrescribe según quién esté de visita en esta URL.
-        console.warn(
-          `[Dashboard] Sesión actual (${userId}) visitó /dashboard con preapproval_id=${preapprovalId}, que pertenece a otro usuario (${existingSub.user_id}). No se modifica el enlace.`
-        )
-      }
-    }
+  const pendingPreapprovalId = pendingSubscription?.mp_preapproval_id
+  if (pendingPreapprovalId) {
+    preapprovalId = pendingPreapprovalId
+    await syncMercadoPagoSubscription(pendingPreapprovalId).catch((error: unknown) => {
+      console.error('[Dashboard] No se pudo reconciliar el pago pendiente', error)
+    })
   }
 
   // Obtenemos el token nativo de Clerk
@@ -105,19 +55,18 @@ export default async function DashboardPage(props: DashboardProps) {
   const supabase = createSupabaseClient(token)
 
   // Consultamos el perfil (RLS debe permitir select si id = auth.uid())
-  const { data: profile, error } = await supabase
+  const { data: profile, error: profileError } = await supabase
     .from('profiles')
     .select('*')
     .eq('id', userId)
     .single()
 
-  console.log('user profile', profile)
+  if (profileError) console.error('[Dashboard] Error consultando el perfil', profileError)
 
   // Verificamos estado premium
   const isUserPremium = await isPremium(userId)
 
   // Verificamos si tiene una suscripción pendiente para no redirigirlo bruscamente
-  let isPending = false
   let planId: string | null = null
   {
     const { createAdminClient } = await import('@/lib/supabase')
@@ -132,9 +81,7 @@ export default async function DashboardPage(props: DashboardProps) {
     planId = sub?.plan_id || null
 
     if (!isUserPremium) {
-      if (sub && (sub.status === 'pending' || sub.status === 'active')) {
-        isPending = true
-      } else {
+      if (!sub || (sub.status !== 'pending' && sub.status !== 'active')) {
         redirect('/#planes')
       }
     }
@@ -190,7 +137,7 @@ export default async function DashboardPage(props: DashboardProps) {
 
         {/* Main Content Area */}
         {isUserPremium ? (
-          <StudyApp questions={questionsData as any} />
+          <StudyApp questions={questionsData as Question[]} />
         ) : (
           <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 p-8 text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-500/20 mb-4">

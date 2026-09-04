@@ -464,15 +464,15 @@ export default function LandingPage() {
                 </div>
                 <button
                   onClick={() => {
-                    const planId = '3fa86370a007428f93d188e30e426653'
+                    const planId = 'semanal'
                     fbTrack('InitiateCheckout', {
                       content_name: 'Plan Semanal',
                       content_ids: [planId],
                       value: PLAN_PRICES[planId],
                       currency: 'COP',
                     })
-                    if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
-                    else window.location.href = `/api/checkout?planId=${planId}`
+                    if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?plan=${planId}` })
+                    else window.location.href = `/api/checkout?plan=${planId}`
                   }}
                   className="w-full text-base font-bold bg-white hover:bg-slate-100 text-slate-900 border border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700 px-6 py-4 rounded-2xl transition-all hover:scale-[1.02] cursor-pointer text-center"
                 >
@@ -526,15 +526,15 @@ export default function LandingPage() {
 
                 <button
                   onClick={() => {
-                    const planId = 'e9150a4759e7405b9290f1ace43b1fe6'
+                    const planId = 'mensual'
                     fbTrack('InitiateCheckout', {
                       content_name: 'Plan Mensual',
                       content_ids: [planId],
                       value: PLAN_PRICES[planId],
                       currency: 'COP',
                     })
-                    if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?planId=${planId}` })
-                    else window.location.href = `/api/checkout?planId=${planId}`
+                    if (!isSignedIn) openSignUp({ forceRedirectUrl: `/api/checkout?plan=${planId}` })
+                    else window.location.href = `/api/checkout?plan=${planId}`
                   }}
                   className="w-full text-base font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-6 py-4 rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] cursor-pointer text-center btn-shimmer"
                 >

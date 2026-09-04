@@ -1,167 +1,95 @@
+import { createHmac, timingSafeEqual } from 'node:crypto'
 import { NextResponse } from 'next/server'
-import { MercadoPagoConfig, PreApproval } from 'mercadopago'
+import { syncMercadoPagoSubscription } from '@/lib/syncMercadoPagoSubscription'
 import { createAdminClient } from '@/lib/supabase'
+import { getMpPayment, parseExternalReference } from '@/lib/mercadopago'
 
-export async function GET(req: Request) {
+type WebhookBody = {
+  type?: string
+  topic?: string
+  data?: { id?: string | number }
+  id?: string | number
+}
+
+function isValidSignature(req: Request, dataId: string) {
+  const secret = process.env.MELI_WEBHOOK_SECRET?.trim()
+  if (!secret) return false
+
+  const signature = req.headers.get('x-signature') ?? ''
+  const requestId = req.headers.get('x-request-id') ?? ''
+  const parts = Object.fromEntries(signature.split(',').map((part) => {
+    const [key, ...value] = part.trim().split('=')
+    return [key, value.join('=')]
+  }))
+  if (!requestId || !parts.ts || !parts.v1) return false
+
+  const manifest = `id:${dataId.toLowerCase()};request-id:${requestId};ts:${parts.ts};`
+  const expected = createHmac('sha256', secret).update(manifest).digest('hex')
+  const received = Buffer.from(parts.v1, 'utf8')
+  const expectedBuffer = Buffer.from(expected, 'utf8')
+  return received.length === expectedBuffer.length && timingSafeEqual(received, expectedBuffer)
+}
+
+export async function GET() {
   return new NextResponse('OK', { status: 200 })
 }
 
 export async function POST(req: Request) {
   try {
     const url = new URL(req.url)
+    const body = (await req.json().catch(() => ({}))) as WebhookBody
+    const dataId = String(
+      url.searchParams.get('data.id') ?? url.searchParams.get('data_id') ??
+      url.searchParams.get('id') ?? body.data?.id ?? body.id ?? ''
+    )
+    if (!dataId) return new NextResponse('Falta data.id', { status: 400 })
+    if (!isValidSignature(req, dataId)) return new NextResponse('Firma inválida', { status: 401 })
 
-    const topicParam = url.searchParams.get('topic') || url.searchParams.get('type')
-    const idParam = url.searchParams.get('data.id') || url.searchParams.get('id')
+    const type = url.searchParams.get('type') ?? url.searchParams.get('topic') ?? body.type ?? body.topic
+    if (type === 'payment') {
+      const payment = await getMpPayment(dataId)
+      const reference = parseExternalReference(payment.external_reference)
+      const payerEmail = payment.payer?.email?.toLowerCase() ?? null
+      const supabase = createAdminClient()
 
-    let body = {} as any
-    try {
-      body = await req.json()
-    } catch (e) {
-      // Body might be empty
+      if (reference?.userId && payerEmail) {
+        const query = supabase.from('subscriptions').update({
+          mp_payer_email: payerEmail,
+          updated_at: new Date().toISOString(),
+        }).eq('user_id', reference.userId)
+        if (reference.plan) query.eq('plan_id', reference.plan)
+        const { error } = await query
+        if (error) throw error
+      }
+
+      const paymentId = String(payment.id)
+      const { data: existingOrder, error: orderFindError } = await supabase.from('orders')
+        .select('payment_id').eq('payment_id', paymentId).maybeSingle()
+      if (orderFindError) throw orderFindError
+
+      const orderPayload = {
+        user_id: reference?.userId ?? null,
+        payment_id: paymentId,
+        status: payment.status ?? 'unknown',
+        amount: payment.transaction_amount ?? null,
+      }
+      const orderResult = existingOrder
+        ? await supabase.from('orders').update(orderPayload).eq('payment_id', paymentId)
+        : await supabase.from('orders').insert(orderPayload)
+      if (orderResult.error) throw orderResult.error
+
+      return NextResponse.json({ ok: true })
     }
 
-    const action = body.action || ''
-    const type = body.type || topicParam
-    const dataId = body.data?.id || idParam || body.id
-
-    console.log('[MercadoPago Webhook] Received', { type, dataId, action })
-
-    if ((type === 'subscription_preapproval' || type === 'preapproval') && dataId) {
-      const meliAccessToken = process.env.MELI_ACCESS_TOKEN
-      if (!meliAccessToken) throw new Error('No MELI_ACCESS_TOKEN available')
-
-      const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
-      const preApproval = new PreApproval(client)
-
-      let preapprovalData: any
-      try {
-        preapprovalData = await preApproval.get({ id: dataId })
-      } catch (e: any) {
-        console.warn(`[MercadoPago Webhook] preapproval not found id=${dataId}:`, e.message)
-        return new NextResponse('OK', { status: 200 })
-      }
-
-      if (preapprovalData) {
-        const mpStatus = preapprovalData.status
-        const userId = preapprovalData.external_reference
-        const mpPreapprovalId = preapprovalData.id
-        const nextPaymentDate = preapprovalData.next_payment_date || null
-
-        console.log(`[MercadoPago Webhook] Preapproval parsed: userId=${userId}, status=${mpStatus}`)
-
-        if (!userId) {
-          console.log(`[MercadoPago Webhook] external_reference missing. Searching by mp_preapproval_id=${mpPreapprovalId}...`)
-        }
-
-        const supabase = createAdminClient()
-
-        let { data: existingSub } = await supabase
-          .from('subscriptions')
-          .select('*')
-          .eq('mp_preapproval_id', mpPreapprovalId)
-          .order('created_at', { ascending: false })
-          .limit(1)
-          .maybeSingle()
-
-        if (!existingSub && userId) {
-          const { data: subByUser } = await supabase
-            .from('subscriptions')
-            .select('*')
-            .eq('user_id', userId)
-            .order('created_at', { ascending: false })
-            .limit(1)
-            .maybeSingle()
-
-          existingSub = subByUser
-        }
-
-        const finalUserId = existingSub?.user_id || userId
-
-        if (finalUserId) {
-          let localStatus = 'pending'
-          if (mpStatus === 'authorized') localStatus = 'active'
-          if (mpStatus === 'cancelled') localStatus = 'canceled'
-          if (mpStatus === 'paused') localStatus = 'paused'
-
-          const mpPlanId = preapprovalData.preapproval_plan_id || preapprovalData.reason || 'unknown'
-
-          const subscriptionPayload = {
-            user_id: finalUserId,
-            plan_id: mpPlanId,
-            status: localStatus,
-            mp_preapproval_id: mpPreapprovalId,
-            current_period_end: nextPaymentDate,
-          }
-
-          if (existingSub) {
-            const { error } = await supabase
-              .from('subscriptions')
-              .update(subscriptionPayload)
-              .eq('id', existingSub.id)
-
-            if (error) console.error('[MercadoPago Webhook] Error updating subscription:', error)
-            else console.log(`[MercadoPago Webhook] ✅ Updated subscription for user ${finalUserId}`)
-          } else {
-            const { error } = await supabase
-              .from('subscriptions')
-              .insert(subscriptionPayload)
-
-            if (error) console.error('[MercadoPago Webhook] Error inserting subscription:', error)
-            else console.log(`[MercadoPago Webhook] ✅ Inserted subscription for user ${finalUserId}`)
-          }
-        } else {
-          console.error('[MercadoPago Webhook] Could not resolve user_id for preapproval', mpPreapprovalId)
-        }
-      }
-
-    } else if (type === 'payment' && dataId) {
-      const meliAccessToken = process.env.MELI_ACCESS_TOKEN
-      if (!meliAccessToken) throw new Error('No MELI_ACCESS_TOKEN available')
-
-      const client = new MercadoPagoConfig({ accessToken: meliAccessToken })
-      const { Payment } = await import('mercadopago')
-      const paymentApi = new Payment(client)
-
-      let paymentData: any
-      try {
-        paymentData = await paymentApi.get({ id: dataId })
-      } catch (e: any) {
-        console.warn(`[MercadoPago Webhook] payment not found id=${dataId}:`, e.message)
-        return new NextResponse('OK', { status: 200 })
-      }
-
-      if (paymentData) {
-        console.log(`[MercadoPago Webhook] Payment parsed: id=${dataId}, status=${paymentData.status}`)
-
-        let userId = paymentData.external_reference
-        const supabase = createAdminClient()
-
-        if (!userId && paymentData.payer?.email) {
-          const { data: profile } = await supabase
-            .from('profiles')
-            .select('id')
-            .eq('email', paymentData.payer.email)
-            .single()
-
-          if (profile) userId = profile.id
-        }
-
-        const { error } = await supabase.from('orders').insert({
-          user_id: userId || null,
-          payment_id: dataId.toString(),
-          status: paymentData.status,
-          amount: paymentData.transaction_amount,
-        })
-
-        if (error) console.error('[MercadoPago Webhook] Error inserting order:', error)
-        else console.log(`[MercadoPago Webhook] ✅ Order inserted for user ${userId || 'unknown'}`)
-      }
+    if (type !== 'subscription_preapproval' && type !== 'preapproval') {
+      return NextResponse.json({ ok: true, ignored: true })
     }
-
-    return new NextResponse('OK', { status: 200 })
-
-  } catch (error) {
-    console.error('[MercadoPago Webhook] Fatal error:', error)
-    return new NextResponse('OK', { status: 200 })
+    await syncMercadoPagoSubscription(dataId)
+    return NextResponse.json({ ok: true })
+  } catch (error: unknown) {
+    const detail = error instanceof Error ? error.message : String(error)
+    console.error('[MercadoPago Webhook] Error', detail)
+    // Mercado Pago reintentará los fallos; antes siempre respondíamos 200 y se perdían.
+    return NextResponse.json({ error: 'Error procesando webhook' }, { status: 500 })
   }
 }
