@@ -18,7 +18,9 @@ const DIFICULTADES = ['Baja', 'Media', 'Alta']
 const ESTADOS = ['borrador', 'beta', 'estable', 'en_revision', 'retirada']
 const INACTIVOS = ['borrador', 'en_revision', 'retirada']
 // Formato v2 (docs/banco/GUIA_REDACCION.md): preguntas con campo "version"
-const V2_REQUIRED = ['capa', 'formato', 'nivel', 'norma', 'articulos', 'texto_fuente', 'subtema']
+const V2_REQUIRED = ['capa', 'formato', 'nivel', 'subtema']
+// La capa 2 (aptitud y comportamentales) no siempre tiene norma; las demás sí
+const V2_NORMATIVE = ['norma', 'articulos', 'texto_fuente']
 
 const errors = []
 const warnings = []
@@ -28,7 +30,7 @@ const ABSOLUTAS = /(?<!\p{L})(siempre|nunca|únicamente|solamente|exclusivamente
 
 // Reglas extra para el formato v2: campos de trazabilidad, explicación por opción y sesgos de redacción
 function checkV2(q) {
-  for (const field of V2_REQUIRED) {
+  for (const field of q.capa === 2 ? V2_REQUIRED : [...V2_REQUIRED, ...V2_NORMATIVE]) {
     const v = q[field]
     if (v === undefined || v === null || (typeof v === 'string' && !v.trim()) || (Array.isArray(v) && !v.length)) {
       err(q.id, `v2: falta "${field}"`)

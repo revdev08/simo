@@ -3,10 +3,11 @@ import type { Question, ReportQuestion } from './question-types'
 import bancoOriginal from '@/questions.json'
 import empleoPublico from '@/data/preguntas/empleo-publico.json'
 import disciplinarioAnticorrupcion from '@/data/preguntas/disciplinario-anticorrupcion.json'
+import gestionPublica from '@/data/preguntas/gestion-publica.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
-const BANCO = [...bancoOriginal, ...empleoPublico, ...disciplinarioAnticorrupcion] as unknown as (Question & Record<string, unknown>)[]
+const BANCO = [...bancoOriginal, ...empleoPublico, ...disciplinarioAnticorrupcion, ...gestionPublica] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
 const INACTIVE_STATES = ['borrador', 'en_revision', 'retirada']
