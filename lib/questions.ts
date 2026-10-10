@@ -42,6 +42,7 @@ function toClient(q: Question): Question {
     ...(q.version ? { version: q.version } : {}),
     ...(q.norma ? { norma: q.norma } : {}),
     ...(q.articulos ? { articulos: q.articulos } : {}),
+    ...(q.fundamentos ? { fundamentos: true } : {}),
     ...(q.formato === 'juicio_situacional'
       ? { formato: q.formato, nivel: q.nivel, competencia: q.competencia, subtema: q.subtema }
       : {}),

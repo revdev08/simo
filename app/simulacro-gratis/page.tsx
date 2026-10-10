@@ -22,19 +22,39 @@ import MobileMenu from '@/components/MobileMenu'
 import questionsData from './questions.json'
 
 interface Question {
-  id: number
+  id: number | string
   modulo: string
   tema: string
   dificultad: string
   pregunta: string
-  opciones: { id: string; texto: string }[]
+  opciones: { id: string; texto: string; explicacion?: string }[]
   respuestaCorrecta: string
   explicacionIA: string
+  norma?: string
+  articulos?: string[]
 }
 
-const QUESTIONS = questionsData as Question[]
+// Grupo de preguntas verificadas; cada simulacro toma 10 de módulos variados
+const POOL = questionsData as Question[]
+const PREGUNTAS_POR_SIMULACRO = 10
 
-type AnswerMap = Record<number, string>
+function pickQuestions(): Question[] {
+  const byModule = new Map<string, Question[]>()
+  for (const q of [...POOL].sort(() => Math.random() - 0.5)) {
+    byModule.set(q.modulo, [...(byModule.get(q.modulo) ?? []), q])
+  }
+  // Toma una por módulo en cada vuelta para que la muestra sea variada
+  const picked: Question[] = []
+  while (picked.length < PREGUNTAS_POR_SIMULACRO && [...byModule.values()].some((l) => l.length)) {
+    for (const list of byModule.values()) {
+      const q = list.shift()
+      if (q && picked.length < PREGUNTAS_POR_SIMULACRO) picked.push(q)
+    }
+  }
+  return picked
+}
+
+type AnswerMap = Record<string, string>
 
 export default function SimulacroGratisPage() {
   const { openSignUp, signOut } = useClerk()
@@ -45,20 +65,31 @@ export default function SimulacroGratisPage() {
   const [answers, setAnswers] = useState<AnswerMap>({})
   const [showFeedback, setShowFeedback] = useState(false)
   const [finished, setFinished] = useState(false)
+  // Antes de empezar se muestran las primeras del grupo; al empezar se eligen al azar
+  const [questions, setQuestions] = useState<Question[]>(() => POOL.slice(0, PREGUNTAS_POR_SIMULACRO))
 
-  const total = QUESTIONS.length
-  const current = QUESTIONS[currentIdx]
-  const selected = answers[current?.id]
+  const total = questions.length
+  const current = questions[currentIdx]
+  const selected = current ? answers[String(current.id)] : undefined
 
   const score = useMemo(() => {
-    return QUESTIONS.reduce((acc, q) => acc + (answers[q.id] === q.respuestaCorrecta ? 1 : 0), 0)
-  }, [answers])
+    return questions.reduce((acc, q) => acc + (answers[String(q.id)] === q.respuestaCorrecta ? 1 : 0), 0)
+  }, [answers, questions])
+
+  const start = () => {
+    setQuestions(pickQuestions())
+    setCurrentIdx(0)
+    setAnswers({})
+    setShowFeedback(false)
+    setFinished(false)
+    setStarted(true)
+  }
 
   const percent = Math.round((score / total) * 100)
 
   const handleSelect = (optionId: string) => {
     if (showFeedback) return
-    setAnswers((prev) => ({ ...prev, [current.id]: optionId }))
+    setAnswers((prev) => ({ ...prev, [String(current.id)]: optionId }))
   }
 
   const handleSubmit = () => {
@@ -81,13 +112,7 @@ export default function SimulacroGratisPage() {
     setCurrentIdx((i) => i - 1)
   }
 
-  const handleRestart = () => {
-    setCurrentIdx(0)
-    setAnswers({})
-    setShowFeedback(false)
-    setFinished(false)
-    setStarted(true)
-  }
+  const handleRestart = start
 
   const handleSignUp = () => openSignUp({ forceRedirectUrl: '/dashboard' })
 
@@ -174,7 +199,7 @@ export default function SimulacroGratisPage() {
 
               <div className="pt-4">
                 <button
-                  onClick={() => setStarted(true)}
+                  onClick={start}
                   className="text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-8 py-4 rounded-full transition-all shadow-xl shadow-blue-500/25 hover:shadow-2xl hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 cursor-pointer btn-shimmer group"
                 >
                   Comenzar simulacro <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -286,6 +311,17 @@ export default function SimulacroGratisPage() {
                         <p className="text-sm sm:text-[15px] text-slate-700 dark:text-slate-200 leading-relaxed">
                           {current.explicacionIA}
                         </p>
+                        {selected && selected !== current.respuestaCorrecta && (
+                          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            <strong>Tu respuesta ({selected}):</strong>{' '}
+                            {current.opciones.find((o) => o.id === selected)?.explicacion}
+                          </p>
+                        )}
+                        {current.norma && (
+                          <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+                            Fundamento: {current.norma}{current.articulos?.length ? `, ${current.articulos.join('; ')}` : ''}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>

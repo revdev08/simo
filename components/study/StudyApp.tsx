@@ -1,10 +1,12 @@
 'use client'
 
 import React, { useState, useEffect, useMemo, useRef } from 'react'
-import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3, FlaskConical, Scale, Users } from 'lucide-react'
+import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3, FlaskConical, Scale, Users, Clock, Lightbulb } from 'lucide-react'
 import Link from 'next/link'
-import { NIVELES, isJuicioSituacional, type NivelId, type Question } from '@/lib/question-types'
+import { MODULE_SECTIONS, NIVELES, isJuicioSituacional, sectionOf, type NivelId, type Question, type SectionId } from '@/lib/question-types'
 import ReportQuestion from './ReportQuestion'
+import SimulacroSession, { clearSimulacroState, formatDuration, loadSimulacroState, type SimulacroState } from './SimulacroSession'
+import { clock, saveProgress, sendAttempt, type StudyMode } from './attempts'
 
 export type { Question } from '@/lib/question-types'
 
@@ -71,23 +73,51 @@ interface ProgressData {
   [questionId: string]: 'correct' | 'incorrect'
 }
 
-// Guarda cada respuesta para medir la dificultad real de las preguntas.
-// No bloquea al usuario: si falla, la práctica sigue igual.
-function logAttempt(questionId: QuestionId, selected: string, shownAt: number, mode: 'modulo' | 'simulacro') {
-  const timeMs = Math.round(performance.now() - shownAt)
-  fetch('/api/attempts', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ questionId, selected, timeMs, mode }),
-    keepalive: true,
-  }).catch(() => {})
+// Registra una respuesta del modo estudio con el tiempo desde que se mostró la pregunta
+function logAttempt(questionId: QuestionId, selected: string, shownAt: number, mode: StudyMode) {
+  sendAttempt(questionId, selected, clock() - shownAt, mode)
+}
+
+// Simulacro tipo examen: 2 minutos por pregunta y una mezcla parecida a la de las pruebas reales
+const SIMULACRO_OPCIONES = [
+  { n: 20, label: 'Rápido' },
+  { n: 40, label: 'Estándar' },
+  { n: 80, label: 'Completo' },
+] as const
+const MINUTOS_POR_PREGUNTA = 2
+const PESO_SECCION: Record<SectionId, number> = { generales: 0.6, aptitudes: 0.15, comportamentales: 0.25 }
+const ORDEN_SECCIONES: SectionId[] = ['generales', 'aptitudes', 'comportamentales']
+
+function shuffle<T>(items: T[]): T[] {
+  const a = [...items]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+// Arma el simulacro por secciones (generales, aptitudes y comportamentales), solo con preguntas aptas
+function buildSimulacro(pool: Question[], n: number): Question[] {
+  const bySection = Object.fromEntries(ORDEN_SECCIONES.map((s) => [s, shuffle(pool.filter((q) => sectionOf(q.modulo) === s))])) as Record<SectionId, Question[]>
+  const picked: Question[] = []
+  ORDEN_SECCIONES.forEach((s) => {
+    picked.push(...bySection[s].slice(0, Math.round(n * PESO_SECCION[s])))
+  })
+  // Si a una sección le faltan preguntas, se completa con las de las demás
+  if (picked.length < n) {
+    const used = new Set(picked)
+    picked.push(...shuffle(pool.filter((q) => !used.has(q))).slice(0, n - picked.length))
+  }
+  return picked.slice(0, n).sort((a, b) => ORDEN_SECCIONES.indexOf(sectionOf(a.modulo)) - ORDEN_SECCIONES.indexOf(sectionOf(b.modulo)))
 }
 
 export default function StudyApp({ questions }: { questions: Question[] }) {
   const [activeModule, setActiveModule] = useState<string | null>(null)
   const [activeModuleQuestions, setActiveModuleQuestions] = useState<Question[]>([])
-  const [randomExamMode, setRandomExamMode] = useState<{ active: boolean, limit: number } | null>(null)
-  const [randomQuestions, setRandomQuestions] = useState<Question[]>([])
+  // Simulacro en curso (preguntas + estado) y simulacro guardado que se puede retomar
+  const [simulacro, setSimulacro] = useState<{ questions: Question[]; state: SimulacroState } | null>(null)
+  const [savedSimulacro, setSavedSimulacro] = useState<SimulacroState | null>(loadSimulacroState)
   const [progress, setProgress] = useState<ProgressData>({})
   const [isLoaded, setIsLoaded] = useState(false)
   const [nivel, setNivel] = useState<NivelId | null>(readSavedNivel)
@@ -125,9 +155,17 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
 
   // Save progress locally (syncing to DB happens at the end of session)
   const handleSaveProgress = (questionId: QuestionId, status: 'correct' | 'incorrect') => {
-    const newProgress = { ...progress, [questionId]: status }
-    setProgress(newProgress)
-    localStorage.setItem('simo_study_progress', JSON.stringify(newProgress))
+    handleSaveProgressBatch({ [String(questionId)]: status })
+  }
+
+  const handleSaveProgressBatch = (entries: ProgressData) => {
+    setProgress((prev) => {
+      const next = { ...prev, ...entries }
+      try {
+        localStorage.setItem('simo_study_progress', JSON.stringify(next))
+      } catch {}
+      return next
+    })
   }
 
   // Compute modules and stats
@@ -169,22 +207,54 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
 
   if (!isLoaded) return <div className="p-8 text-center text-slate-500 animate-pulse font-semibold">Cargando tu progreso...</div>
 
-  const startRandomExam = (limit: number) => {
-    // Select random questions
-    const shuffled = [...visibleQuestions].sort(() => 0.5 - Math.random())
-    setRandomQuestions(shuffled.slice(0, limit))
-    setRandomExamMode({ active: true, limit })
+  // Solo entran al simulacro las preguntas verificadas o conservadas (no las de concepto básico)
+  const simulacroPool = visibleQuestions.filter((q) => !q.fundamentos)
+
+  const startSimulacro = (n: number) => {
+    const picked = buildSimulacro(simulacroPool, n)
+    const state: SimulacroState = {
+      ids: picked.map((q) => String(q.id)),
+      answers: {},
+      flags: {},
+      timeSpent: {},
+      current: 0,
+      startedAt: clock(),
+      durationMs: picked.length * MINUTOS_POR_PREGUNTA * 60 * 1000,
+    }
+    clearSimulacroState()
+    setSavedSimulacro(null)
+    setSimulacro({ questions: picked, state })
   }
 
-  if (randomExamMode?.active) {
+  // Retoma el simulacro guardado; si alguna pregunta ya no existe, se descarta
+  const resumeSimulacro = () => {
+    if (!savedSimulacro) return
+    const byId = new Map(questions.map((q) => [String(q.id), q]))
+    const qs = savedSimulacro.ids.map((id) => byId.get(id))
+    if (qs.some((q) => !q)) {
+      clearSimulacroState()
+      setSavedSimulacro(null)
+      return
+    }
+    setSimulacro({ questions: qs as Question[], state: savedSimulacro })
+  }
+
+  const discardSimulacro = () => {
+    clearSimulacroState()
+    setSavedSimulacro(null)
+  }
+
+  if (simulacro) {
     return (
-      <StudySession 
-        moduleName={`Simulacro Global Aleatorio (${randomExamMode.limit} Preguntas)`}
-        mode="simulacro"
-        questions={randomQuestions}
-        progress={progress}
-        onSaveProgress={handleSaveProgress}
-        onBack={() => setRandomExamMode(null)} 
+      <SimulacroSession
+        key={simulacro.state.startedAt}
+        questions={simulacro.questions}
+        initialState={simulacro.state}
+        onSaveProgress={handleSaveProgressBatch}
+        onExit={() => {
+          setSimulacro(null)
+          setSavedSimulacro(loadSimulacroState())
+        }}
       />
     )
   }
@@ -277,56 +347,82 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
         </Link>
       </div>
 
-      {/* Global Random Exam Banner */}
-      <div className="bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-900 rounded-3xl p-6 sm:p-8 shadow-sm dark:shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden border border-slate-200/60 dark:border-slate-800/80">
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full blur-[80px] opacity-15 dark:opacity-30 pointer-events-none" />
-        
-        <div className="space-y-3 relative z-10 text-center lg:text-left">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/30 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" /> Nuevo Modo
+      {/* Simulacro guardado */}
+      {savedSimulacro && (
+        <div className="rounded-2xl border border-amber-500/30 bg-amber-500/10 p-4 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm text-slate-800 dark:text-slate-200">
+            <strong>Tienes un simulacro sin terminar</strong> ({Object.keys(savedSimulacro.answers).length} de {savedSimulacro.ids.length} respondidas).
+            El tiempo sigue corriendo: {savedSimulacro.startedAt + savedSimulacro.durationMs > clock() ? `quedan ${formatDuration(savedSimulacro.startedAt + savedSimulacro.durationMs - clock())}` : 'ya se acabó; al abrirlo verás el resultado'}.
+          </p>
+          <div className="flex gap-2">
+            <button onClick={discardSimulacro} className="px-4 py-2 text-sm font-bold rounded-xl border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+              Descartar
+            </button>
+            <button onClick={resumeSimulacro} className="px-4 py-2 text-sm font-bold rounded-xl bg-amber-500 text-white hover:bg-amber-400">
+              Continuar simulacro
+            </button>
           </div>
-          <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">Simulacro Global Aleatorio</h3>
+        </div>
+      )}
+
+      {/* Simulacro tipo examen */}
+      <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-200/60 dark:border-slate-800/80">
+        <div className="space-y-3 text-center lg:text-left">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/30 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider">
+            <Clock className="w-3.5 h-3.5" /> Condiciones de examen
+          </div>
+          <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">Simulacro tipo examen</h3>
           <p className="text-slate-500 dark:text-slate-400 max-w-xl text-sm sm:text-base leading-relaxed">
-            Pon a prueba tus conocimientos mezclando todas las áreas temáticas. Elige la cantidad de preguntas y prepárate para el desafío real.
+            Con cronómetro ({MINUTOS_POR_PREGUNTA} minutos por pregunta) y sin ver las respuestas hasta el final, como en la prueba real.
+            Mezcla competencias generales, aptitudes y comportamentales{nivel ? ` de tu nivel (${nivelLabel(nivel)})` : ''}, y al terminar te muestra tu resultado por módulo.
           </p>
         </div>
-
-        <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto relative z-10 shrink-0">
-          <button
-            onClick={() => startRandomExam(10)}
-            className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 hover:border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:border-slate-700 dark:hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-sm dark:shadow-lg dark:shadow-black/20"
-          >
-             <Play className="w-4 h-4 fill-slate-900 dark:fill-white" /> 10 Preguntas
-          </button>
-          <button
-            onClick={() => startRandomExam(20)}
-            className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 hover:border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:border-slate-700 dark:hover:border-slate-600 px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-sm dark:shadow-lg dark:shadow-black/20"
-          >
-             <Play className="w-4 h-4 fill-slate-900 dark:fill-white" />  20 Preguntas
-          </button>
-          <button 
-            onClick={() => startRandomExam(30)} 
-            className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-6 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 shadow-lg shadow-blue-500/25 btn-shimmer"
-          >
-            <Play className="w-4 h-4 fill-white" /> 30 Preguntas
-          </button>
+        <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0">
+          {SIMULACRO_OPCIONES.map((op, i) => (
+            <button
+              key={op.n}
+              onClick={() => startSimulacro(op.n)}
+              disabled={simulacroPool.length < op.n}
+              className={`flex flex-col items-center justify-center px-5 py-3 rounded-xl font-bold transition-all hover:-translate-y-0.5 disabled:opacity-40 disabled:cursor-not-allowed ${
+                i === SIMULACRO_OPCIONES.length - 1
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg shadow-blue-500/25'
+                  : 'bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:border-slate-700'
+              }`}
+            >
+              <span className="flex items-center gap-2"><Play className="w-4 h-4" /> {op.label}</span>
+              <span className={`text-xs font-semibold ${i === SIMULACRO_OPCIONES.length - 1 ? 'text-blue-100' : 'text-slate-500 dark:text-slate-400'}`}>
+                {op.n} preguntas · {formatDuration(op.n * MINUTOS_POR_PREGUNTA * 60 * 1000)}
+              </span>
+            </button>
+          ))}
         </div>
       </div>
 
-      <div className="flex items-center gap-3.5 mb-6">
+      <div className="flex items-center gap-3.5">
         <div className="p-3 bg-indigo-500/10 rounded-2xl text-indigo-600 dark:text-indigo-400">
           <BookOpen className="w-6 h-6" />
         </div>
         <div>
-          <h2 className="text-2xl font-black text-slate-900 dark:text-white">Módulos de Examen Específicos</h2>
-          <p className="text-slate-500 dark:text-slate-400 text-sm">Selecciona una de las áreas temáticas oficiales para practicar por separado.</p>
+          <h2 className="text-2xl font-black text-slate-900 dark:text-white">Estudiar por módulo</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">Practica un tema con la explicación de cada respuesta al instante.</p>
         </div>
       </div>
 
       <NivelPicker nivel={nivel} onChoose={chooseNivel} compact />
 
+      {MODULE_SECTIONS.map((section) => {
+        const mods = (section.modulos as readonly string[])
+          .map((name) => modulesStats.find((m) => m.name === name))
+          .filter((m): m is (typeof modulesStats)[number] => !!m)
+        if (!mods.length) return null
+        return (
+          <section key={section.id} className="space-y-4" aria-labelledby={`sec-${section.id}`}>
+            <div>
+              <h3 id={`sec-${section.id}`} className="text-lg font-black text-slate-900 dark:text-white">{section.titulo}</h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400">{section.descripcion}</p>
+            </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {modulesStats.map(mod => (
+        {mods.map(mod => (
           <div 
             key={mod.name}
             onClick={() => startModule(mod.name)}
@@ -370,6 +466,9 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
           </div>
         ))}
       </div>
+          </section>
+        )
+      })}
     </div>
   )
 }
@@ -391,8 +490,8 @@ function StudySession({
   onBack: () => void
 }) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [selectedOption, setSelectedOption] = useState<string | null>(null)
-  const [showExplanation, setShowExplanation] = useState(false)
+  // Respuesta dada en cada pregunta de la sesión: al volver con "Anterior" se ve la misma respuesta, sin poder cambiarla
+  const [answers, setAnswers] = useState<Record<number, string>>({})
   const [isFinished, setIsFinished] = useState(false)
   const [sessionProgress, setSessionProgress] = useState<Record<string, 'correct'|'incorrect'>>({})
   // Puntaje de ajuste (0 a 3) de cada pregunta comportamental respondida en esta sesión
@@ -400,24 +499,29 @@ function StudySession({
   // Momento en que se mostró la pregunta actual, para medir cuánto tarda el usuario en responder
   const shownAtRef = useRef(0)
   useEffect(() => {
-    shownAtRef.current = performance.now()
+    shownAtRef.current = clock()
   }, [currentIndex])
 
   const question = questions[currentIndex]
+  const selectedOption = answers[currentIndex] ?? null
+  const showExplanation = selectedOption !== null
 
-  // Track if we already synced to DB to avoid multiple requests
-  const [hasSynced, setHasSynced] = useState(false)
+  // Lo respondido que aún no se ha guardado en la base de datos
+  const pendingSyncRef = useRef<Record<string, 'correct'|'incorrect'>>({})
+  const syncProgress = () => {
+    saveProgress(pendingSyncRef.current)
+    pendingSyncRef.current = {}
+  }
 
   const handleFinish = () => {
     setIsFinished(true)
-    if (!hasSynced && Object.keys(sessionProgress).length > 0) {
-      setHasSynced(true)
-      fetch('/api/progress', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ progress: sessionProgress })
-      }).catch(err => console.error('Error saving progress to DB:', err))
-    }
+    syncProgress()
+  }
+
+  // Al salir del módulo también se guarda lo respondido, aunque no se haya terminado
+  const handleBack = () => {
+    syncProgress()
+    onBack()
   }
 
   if (!question && !isFinished) return null;
@@ -442,7 +546,7 @@ function StudySession({
           <div className="w-20 h-20 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
             <Award className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">¡Simulacro Finalizado!</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">¡Módulo terminado!</h2>
           <p className="text-slate-500 dark:text-slate-400 text-lg">
             Has completado <strong>{moduleName}</strong>. Aquí tienes tu desempeño en esta sesión.
           </p>
@@ -483,12 +587,12 @@ function StudySession({
   const handleSelect = (optionId: string) => {
     if (selectedOption) return
 
-    setSelectedOption(optionId)
-    setShowExplanation(true)
-    
+    setAnswers(prev => ({ ...prev, [currentIndex]: optionId }))
+
     const status: 'correct' | 'incorrect' = optionId === question.respuestaCorrecta ? 'correct' : 'incorrect'
     logAttempt(question.id, optionId, shownAtRef.current, mode)
     onSaveProgress(question.id, status)
+    pendingSyncRef.current[String(question.id)] = status
     setSessionProgress(prev => ({ ...prev, [String(question.id)]: status }))
     if (isJuicioSituacional(question)) {
       const puntaje = question.opciones.find(o => o.id === optionId)?.puntaje ?? 0
@@ -501,25 +605,17 @@ function StudySession({
   const chosenPuntaje = sjt ? question.opciones.find(o => o.id === selectedOption)?.puntaje ?? null : null
 
   const handleNext = () => {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(prev => prev + 1)
-      setSelectedOption(null)
-      setShowExplanation(false)
-    }
+    if (currentIndex < questions.length - 1) setCurrentIndex(prev => prev + 1)
   }
 
   const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(prev => prev - 1)
-      setSelectedOption(null)
-      setShowExplanation(false)
-    }
+    if (currentIndex > 0) setCurrentIndex(prev => prev - 1)
   }
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 space-y-6">
-      <button 
-        onClick={onBack}
+      <button
+        onClick={handleBack}
         className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" /> Volver a módulos
@@ -539,6 +635,14 @@ function StudySession({
             }`}>
               Dificultad {question.dificultad}
             </span>
+            {question.fundamentos && (
+              <span
+                title="Pregunta de concepto básico: sirve para repasar definiciones. No entra al simulacro tipo examen."
+                className="inline-flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-lg border bg-slate-500/10 text-slate-600 border-slate-500/20 dark:text-slate-300"
+              >
+                <Lightbulb className="w-3.5 h-3.5" /> Concepto básico
+              </span>
+            )}
             {question.estado === 'beta' && (
               <span
                 title="Pregunta nueva: ya pasó la revisión automática y a ciegas, y estamos validándola con las respuestas de los usuarios."

@@ -35,6 +35,43 @@ export interface Question {
   nivel?: string[] // ["todos"] o los niveles a los que aplica
   competencia?: string
   subtema?: string
+  fundamentos?: boolean // pregunta de concepto básico: sirve para estudiar, no entra al simulacro
+}
+
+// Módulos agrupados como las pruebas de la CNSC. El orden de las listas es el orden en pantalla.
+export const MODULE_SECTIONS = [
+  {
+    id: 'generales',
+    titulo: 'Competencias generales',
+    descripcion: 'Lo que se evalúa en casi todas las convocatorias: Estado, empleo público, procedimiento y gestión.',
+    modulos: [
+      'Constitución y Estructura del Estado',
+      'Empleo Público y Carrera Administrativa',
+      'Derecho de Petición y Procedimiento Administrativo',
+      'Transparencia, Datos Personales y Archivo',
+      'Disciplinario y Anticorrupción',
+      'Gestión Pública: MIPG, Presupuesto y Contratación',
+      'Atención al Ciudadano',
+    ],
+  },
+  {
+    id: 'comportamentales',
+    titulo: 'Competencias comportamentales',
+    descripcion: 'Situaciones laborales calificadas según las conductas del Decreto 815 de 2018 para tu nivel.',
+    modulos: ['Competencias Comportamentales'],
+  },
+  {
+    id: 'aptitudes',
+    titulo: 'Aptitudes',
+    descripcion: 'Razonamiento, lectura y herramientas de trabajo.',
+    modulos: ['Razonamiento Lógico y Cuantitativo', 'Comprensión Lectora', 'Herramientas de Oficina y Seguridad Digital'],
+  },
+] as const
+
+export type SectionId = (typeof MODULE_SECTIONS)[number]['id']
+
+export function sectionOf(modulo: string): SectionId {
+  return MODULE_SECTIONS.find((s) => (s.modulos as readonly string[]).includes(modulo))?.id ?? 'generales'
 }
 
 export const isJuicioSituacional = (q: Pick<Question, 'formato'>) => q.formato === 'juicio_situacional'
