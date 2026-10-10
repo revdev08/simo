@@ -1,14 +1,70 @@
 'use client'
 
 import React, { useState, useEffect, useMemo, useRef } from 'react'
-import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3, FlaskConical, Scale } from 'lucide-react'
+import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3, FlaskConical, Scale, Users } from 'lucide-react'
 import Link from 'next/link'
-import type { Question } from '@/lib/question-types'
+import { NIVELES, isJuicioSituacional, type NivelId, type Question } from '@/lib/question-types'
 import ReportQuestion from './ReportQuestion'
 
 export type { Question } from '@/lib/question-types'
 
 type QuestionId = Question['id']
+
+const NIVEL_STORAGE_KEY = 'simo_nivel'
+const AJUSTE_LABEL = ['No alineada', 'Ajuste bajo', 'Ajuste medio', 'Ajuste alto']
+
+function readSavedNivel(): NivelId | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const saved = localStorage.getItem(NIVEL_STORAGE_KEY)
+    return NIVELES.some((n) => n.id === saved) ? (saved as NivelId) : null
+  } catch {
+    return null
+  }
+}
+
+// Las comportamentales de un nivel solo se muestran a quien eligió ese nivel; el resto aplica a todos
+function appliesToNivel(q: Question, nivel: NivelId | null) {
+  if (!q.nivel || q.nivel.includes('todos')) return true
+  return nivel !== null && q.nivel.includes(nivel)
+}
+
+const nivelLabel = (id: string) => NIVELES.find((n) => n.id === id)?.label ?? id
+
+function NivelPicker({ nivel, onChoose, compact = false }: { nivel: NivelId | null, onChoose: (n: NivelId) => void, compact?: boolean }) {
+  return (
+    <div className={`rounded-2xl border border-slate-200/60 dark:border-slate-800 bg-white dark:bg-slate-900 ${compact ? 'p-4 flex flex-wrap items-center justify-between gap-3' : 'p-6 sm:p-8 space-y-5'}`}>
+      <div className="flex items-start gap-3">
+        <div className="p-2 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 shrink-0">
+          <Users className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="font-extrabold text-slate-900 dark:text-white">{compact ? 'Nivel del cargo al que te presentas' : '¿A qué nivel de cargo te presentas?'}</p>
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            Ajusta las preguntas comportamentales a las competencias de tu nivel (Decreto 815 de 2018). Puedes cambiarlo cuando quieras.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {NIVELES.map((n) => (
+          <button
+            key={n.id}
+            type="button"
+            aria-pressed={nivel === n.id}
+            onClick={() => onChoose(n.id)}
+            className={`px-4 py-2 rounded-xl text-sm font-bold border transition-colors ${
+              nivel === n.id
+                ? 'bg-indigo-600 border-indigo-600 text-white'
+                : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-indigo-500'
+            }`}
+          >
+            {n.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 // Las claves son los ids como texto ("34" o "TC-909-001")
 interface ProgressData {
@@ -34,6 +90,11 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   const [randomQuestions, setRandomQuestions] = useState<Question[]>([])
   const [progress, setProgress] = useState<ProgressData>({})
   const [isLoaded, setIsLoaded] = useState(false)
+  const [nivel, setNivel] = useState<NivelId | null>(readSavedNivel)
+  // Módulo que se abrirá cuando el usuario elija su nivel
+  const [pendingModule, setPendingModule] = useState<string | null>(null)
+
+  const visibleQuestions = useMemo(() => questions.filter((q) => appliesToNivel(q, nivel)), [questions, nivel])
 
   // Load progress from DB on mount
   useEffect(() => {
@@ -72,8 +133,8 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   // Compute modules and stats
   const modulesStats = useMemo(() => {
     const stats: Record<string, { total: number; correct: number; incorrect: number }> = {}
-    
-    questions.forEach(q => {
+
+    visibleQuestions.forEach(q => {
       if (!stats[q.modulo]) {
         stats[q.modulo] = { total: 0, correct: 0, incorrect: 0 }
       }
@@ -89,28 +150,28 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
       ...data,
       progress: Math.round(((data.correct + data.incorrect) / data.total) * 100) || 0
     }))
-  }, [questions, progress])
+  }, [visibleQuestions, progress])
 
-  // Total user progress metrics
+  // Total user progress metrics (solo sobre las preguntas que el usuario puede practicar hoy)
   const totalStats = useMemo(() => {
-    const total = questions.length
+    const total = visibleQuestions.length
     let correct = 0
     let incorrect = 0
-    Object.keys(progress).forEach(k => {
-      const status = progress[k]
+    visibleQuestions.forEach(q => {
+      const status = progress[String(q.id)]
       if (status === 'correct') correct++
       if (status === 'incorrect') incorrect++
     })
     const completed = correct + incorrect
     const percent = Math.round((completed / total) * 100) || 0
     return { total, correct, incorrect, completed, percent }
-  }, [questions, progress])
+  }, [visibleQuestions, progress])
 
   if (!isLoaded) return <div className="p-8 text-center text-slate-500 animate-pulse font-semibold">Cargando tu progreso...</div>
 
   const startRandomExam = (limit: number) => {
     // Select random questions
-    const shuffled = [...questions].sort(() => 0.5 - Math.random())
+    const shuffled = [...visibleQuestions].sort(() => 0.5 - Math.random())
     setRandomQuestions(shuffled.slice(0, limit))
     setRandomExamMode({ active: true, limit })
   }
@@ -128,11 +189,43 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
     )
   }
 
-  const startModule = (modName: string) => {
-    const modQs = questions.filter(q => q.modulo === modName)
+  const startModule = (modName: string, nivelForSession: NivelId | null = nivel) => {
+    // Los módulos con preguntas por nivel piden el nivel antes de empezar
+    const hasNivelQuestions = questions.some(q => q.modulo === modName && q.nivel && !q.nivel.includes('todos'))
+    if (hasNivelQuestions && !nivelForSession) {
+      setPendingModule(modName)
+      return
+    }
+    const modQs = questions.filter(q => q.modulo === modName && appliesToNivel(q, nivelForSession))
     const shuffled = [...modQs].sort(() => 0.5 - Math.random())
     setActiveModuleQuestions(shuffled)
     setActiveModule(modName)
+  }
+
+  const chooseNivel = (n: NivelId) => {
+    setNivel(n)
+    try {
+      localStorage.setItem(NIVEL_STORAGE_KEY, n)
+    } catch {}
+    if (pendingModule) {
+      const modName = pendingModule
+      setPendingModule(null)
+      startModule(modName, n)
+    }
+  }
+
+  if (pendingModule) {
+    return (
+      <div className="space-y-6 animate-in fade-in duration-300">
+        <button
+          onClick={() => setPendingModule(null)}
+          className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" /> Volver a módulos
+        </button>
+        <NivelPicker nivel={nivel} onChoose={chooseNivel} />
+      </div>
+    )
   }
 
   if (activeModule) {
@@ -230,6 +323,8 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
         </div>
       </div>
 
+      <NivelPicker nivel={nivel} onChoose={chooseNivel} compact />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {modulesStats.map(mod => (
           <div 
@@ -300,6 +395,8 @@ function StudySession({
   const [showExplanation, setShowExplanation] = useState(false)
   const [isFinished, setIsFinished] = useState(false)
   const [sessionProgress, setSessionProgress] = useState<Record<string, 'correct'|'incorrect'>>({})
+  // Puntaje de ajuste (0 a 3) de cada pregunta comportamental respondida en esta sesión
+  const [sessionAjuste, setSessionAjuste] = useState<Record<string, number>>({})
   // Momento en que se mostró la pregunta actual, para medir cuánto tarda el usuario en responder
   const shownAtRef = useRef(0)
   useEffect(() => {
@@ -329,6 +426,8 @@ function StudySession({
     const correctCount = Object.values(sessionProgress).filter(v => v === 'correct').length
     const totalAnswered = Object.keys(sessionProgress).length
     const score = Math.round((correctCount / questions.length) * 100) || 0
+    const ajustes = Object.values(sessionAjuste)
+    const ajustePromedio = ajustes.length ? Math.round((ajustes.reduce((a, b) => a + b, 0) / (ajustes.length * 3)) * 100) : null
 
     return (
       <div className="animate-in fade-in slide-in-from-bottom-6 duration-500 space-y-6">
@@ -363,6 +462,13 @@ function StudySession({
             </div>
           </div>
 
+          {ajustePromedio !== null && (
+            <p className="text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
+              En las {ajustes.length} situaciones comportamentales, tu ajuste promedio a la conducta esperada fue de <strong>{ajustePromedio}%</strong>.
+              En estas preguntas &quot;correcta&quot; significa que elegiste la mejor opción.
+            </p>
+          )}
+
           <button 
             onClick={onBack}
             className="bg-slate-950 dark:bg-white text-white dark:text-slate-950 px-8 py-4 rounded-xl font-extrabold shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2"
@@ -384,7 +490,15 @@ function StudySession({
     logAttempt(question.id, optionId, shownAtRef.current, mode)
     onSaveProgress(question.id, status)
     setSessionProgress(prev => ({ ...prev, [String(question.id)]: status }))
+    if (isJuicioSituacional(question)) {
+      const puntaje = question.opciones.find(o => o.id === optionId)?.puntaje ?? 0
+      setSessionAjuste(prev => ({ ...prev, [String(question.id)]: puntaje }))
+    }
   }
+
+  // En juicio situacional no hay "incorrecta": cada opción tiene un ajuste de 0 a 3
+  const sjt = isJuicioSituacional(question)
+  const chosenPuntaje = sjt ? question.opciones.find(o => o.id === selectedOption)?.puntaje ?? null : null
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
@@ -433,6 +547,11 @@ function StudySession({
                 <FlaskConical className="w-3.5 h-3.5" /> Nueva · en validación
               </span>
             )}
+            {sjt && question.nivel && !question.nivel.includes('todos') && (
+              <span className="text-xs font-bold px-3 py-1.5 rounded-lg border bg-violet-500/10 text-violet-700 border-violet-500/20 dark:text-violet-300">
+                Nivel {question.nivel.map(nivelLabel).join(', ')}
+              </span>
+            )}
           </div>
           <div className="text-xs sm:text-sm font-extrabold text-slate-400 dark:text-slate-500">
             Pregunta {currentIndex + 1} de {questions.length}
@@ -451,15 +570,21 @@ function StudySession({
               const isCorrectAnswer = opt.id === question.respuestaCorrecta
               const isWrongSelection = isSelected && !isCorrectAnswer
               const showAsCorrect = showExplanation && isCorrectAnswer
+              // En juicio situacional una elección con ajuste parcial (1 o 2) se marca en ámbar, no en rojo
+              const isPartialSelection = sjt && isWrongSelection && (opt.puntaje ?? 0) > 0
 
               let baseClass = "w-full text-left p-5 rounded-2xl border-2 transition-all flex items-start gap-4 "
-              
+
               if (!showExplanation) {
                 baseClass += "border-slate-200/80 dark:border-slate-850 hover:border-indigo-500/50 hover:bg-indigo-500/5 dark:hover:bg-indigo-500/5 cursor-pointer"
               } else if (showAsCorrect) {
                 baseClass += "border-emerald-500 bg-emerald-500/10 text-emerald-950 dark:text-emerald-100 font-semibold"
+              } else if (isPartialSelection) {
+                baseClass += "border-amber-500 bg-amber-500/10 text-amber-950 dark:text-amber-100 font-semibold"
               } else if (isWrongSelection) {
                 baseClass += "border-red-500 bg-red-500/10 text-red-950 dark:text-red-100 font-semibold"
+              } else if (sjt) {
+                baseClass += "border-slate-200/80 dark:border-slate-800 opacity-80"
               } else {
                 baseClass += "border-slate-100 dark:border-slate-900/60 bg-slate-50/50 dark:bg-slate-900/10 opacity-40"
               }
@@ -473,6 +598,7 @@ function StudySession({
                 >
                   <div className={`shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center text-sm font-black transition-all ${
                     showAsCorrect ? 'border-emerald-500 bg-emerald-500 text-white shadow-md shadow-emerald-500/20' :
+                    isPartialSelection ? 'border-amber-500 bg-amber-500 text-white shadow-md shadow-amber-500/20' :
                     isWrongSelection ? 'border-red-500 bg-red-500 text-white shadow-md shadow-red-500/20' :
                     'border-slate-300 dark:border-slate-700 text-slate-500'
                   }`}>
@@ -480,7 +606,12 @@ function StudySession({
                   </div>
                   <span className="pt-0.5 space-y-1.5">
                     <span className="block text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-snug">{opt.texto}</span>
-                    {showExplanation && opt.explicacion && (showAsCorrect || isWrongSelection) && (
+                    {showExplanation && sjt && typeof opt.puntaje === 'number' && (
+                      <span className="inline-block text-xs font-bold px-2 py-0.5 rounded-md bg-slate-900/5 dark:bg-white/10 text-slate-700 dark:text-slate-300">
+                        {AJUSTE_LABEL[opt.puntaje]} · {opt.puntaje}/3
+                      </span>
+                    )}
+                    {showExplanation && opt.explicacion && (sjt || showAsCorrect || isWrongSelection) && (
                       <span className="block text-xs sm:text-sm font-normal text-slate-600 dark:text-slate-400 leading-relaxed">{opt.explicacion}</span>
                     )}
                   </span>
@@ -494,18 +625,28 @@ function StudySession({
             <div className="p-6 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 border border-blue-500/20 rounded-2xl animate-in fade-in slide-in-from-top-4 duration-300 space-y-4">
               <div className="flex items-center gap-2 text-indigo-700 dark:text-indigo-300 font-black text-sm">
                 <Sparkles className="w-5 h-5 text-indigo-600 dark:text-indigo-400 animate-pulse" />
-                <span>EXPLICACIÓN IA EXPERTA</span>
+                <span>
+                  {sjt && chosenPuntaje !== null
+                    ? `TU RESPUESTA: ${AJUSTE_LABEL[chosenPuntaje].toUpperCase()} (${chosenPuntaje}/3)`
+                    : 'EXPLICACIÓN IA EXPERTA'}
+                </span>
               </div>
               <p className="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                 {question.explicacionIA}
               </p>
+              {sjt && question.competencia && (
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                  <strong>Competencia:</strong> {question.competencia}
+                  {question.subtema ? <> · <strong>Conducta evaluada:</strong> {question.subtema}</> : null}
+                </p>
+              )}
               {question.norma && (
                 <p className="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
                   <Scale className="w-4 h-4 shrink-0 mt-0.5" />
                   <span>Fundamento: {question.norma}{question.articulos?.length ? `, ${question.articulos.join('; ')}` : ''}</span>
                 </p>
               )}
-              {question.opciones.some((o) => o.explicacion) && (
+              {!sjt && question.opciones.some((o) => o.explicacion) && (
                 <details className="text-sm text-slate-700 dark:text-slate-300">
                   <summary className="cursor-pointer font-bold text-indigo-700 dark:text-indigo-300">Ver por qué cada opción es correcta o incorrecta</summary>
                   <ul className="mt-3 space-y-2">

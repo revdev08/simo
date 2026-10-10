@@ -137,4 +137,22 @@ En la prueba real no hay una respuesta "correcta": se mide qué tanto se ajusta 
 - La explicación indica qué conducta del decreto refleja cada opción y por qué una se ajusta mejor al nivel.
 - Cubrir las 6 competencias comunes de forma pareja: aprendizaje continuo, orientación a resultados, orientación al usuario y al ciudadano, compromiso con la organización, trabajo en equipo y adaptación al cambio. Después, las de cada nivel.
 
-> Esto requiere un cambio en la app (calificación por puntaje). Hasta entonces, las comportamentales nuevas no se publican.
+**Formato en el banco** (`"formato": "juicio_situacional"`):
+- Cada opción lleva `"puntaje"` (3, 2, 1 y 0, uno de cada uno) y su `"explicacion"`. La explicación dice qué conducta asociada refleja la opción, o por qué se queda corta.
+- `respuestaCorrecta` es la opción de puntaje 3.
+- `competencia` lleva el nombre exacto del decreto, `tema` repite ese mismo nombre y `subtema` es la conducta asociada evaluada.
+- `nivel`: `["todos"]` para las competencias comunes (art. 2.2.4.7) y `["asistencial"]`, `["tecnico"]`, `["profesional"]` o `["asesor"]` para las de cada nivel (art. 2.2.4.8).
+- `texto_fuente` es la definición y las conductas asociadas, copiadas literalmente del decreto.
+
+**Cómo graduar las opciones:**
+- **3:** realiza plenamente la conducta asociada, dentro de las atribuciones del nivel.
+- **2:** la realiza en parte. Por ejemplo, resuelve, pero sin coordinar con los demás.
+- **1:** respuesta pasiva o que traslada el problema a otro.
+- **0:** contraria a la competencia, pero tentadora. Por ejemplo, cumple la regla a costa del usuario, antepone lo personal o se excede de las atribuciones del nivel.
+
+**Lo que no se permite:**
+- Opciones antiéticas obvias, ilegales o absurdas. Nadie las elegiría y no miden nada.
+- Que la mejor opción sea la más larga o la única "proactiva".
+- Para niveles asistencial y técnico, que la mejor opción implique decisiones propias del jefe. Para estos niveles, excederse de las atribuciones puntúa bajo.
+
+**En la app:** el usuario elige su nivel la primera vez que entra a comportamentales. Ve las competencias comunes más las de su nivel. Al responder ve el ajuste de su elección (0 a 3), cuál era la mejor opción y la explicación de cada una.

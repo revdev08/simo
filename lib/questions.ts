@@ -4,10 +4,17 @@ import bancoOriginal from '@/questions.json'
 import empleoPublico from '@/data/preguntas/empleo-publico.json'
 import disciplinarioAnticorrupcion from '@/data/preguntas/disciplinario-anticorrupcion.json'
 import gestionPublica from '@/data/preguntas/gestion-publica.json'
+import comportamentales from '@/data/preguntas/comportamentales.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
-const BANCO = [...bancoOriginal, ...empleoPublico, ...disciplinarioAnticorrupcion, ...gestionPublica] as unknown as (Question & Record<string, unknown>)[]
+const BANCO = [
+  ...bancoOriginal,
+  ...empleoPublico,
+  ...disciplinarioAnticorrupcion,
+  ...gestionPublica,
+  ...comportamentales,
+] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
 const INACTIVE_STATES = ['borrador', 'en_revision', 'retirada']
@@ -23,13 +30,21 @@ function toClient(q: Question): Question {
     tema: q.tema,
     dificultad: q.dificultad,
     pregunta: q.pregunta,
-    opciones: q.opciones.map((o) => (o.explicacion ? { id: o.id, texto: o.texto, explicacion: o.explicacion } : { id: o.id, texto: o.texto })),
+    opciones: q.opciones.map((o) => ({
+      id: o.id,
+      texto: o.texto,
+      ...(o.explicacion ? { explicacion: o.explicacion } : {}),
+      ...(typeof o.puntaje === 'number' ? { puntaje: o.puntaje } : {}),
+    })),
     respuestaCorrecta: q.respuestaCorrecta,
     explicacionIA: q.explicacionIA,
     ...(q.estado ? { estado: q.estado } : {}),
     ...(q.version ? { version: q.version } : {}),
     ...(q.norma ? { norma: q.norma } : {}),
     ...(q.articulos ? { articulos: q.articulos } : {}),
+    ...(q.formato === 'juicio_situacional'
+      ? { formato: q.formato, nivel: q.nivel, competencia: q.competencia, subtema: q.subtema }
+      : {}),
   }
 }
 

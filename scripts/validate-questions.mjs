@@ -28,6 +28,22 @@ const err = (id, msg) => errors.push(`#${id}: ${msg}`)
 // \b no reconoce letras con tilde, así que los bordes se definen con \p{L}
 const ABSOLUTAS = /(?<!\p{L})(siempre|nunca|únicamente|solamente|exclusivamente|en ningún caso|todos los casos)(?!\p{L})/iu
 
+const NIVELES = ['todos', 'asesor', 'profesional', 'tecnico', 'asistencial']
+
+// Comportamentales: cada opción tiene un puntaje de ajuste distinto (3, 2, 1, 0) y la clave es la de 3
+function checkJuicioSituacional(q) {
+  const puntajes = q.opciones.map((o) => o.puntaje)
+  if (!puntajes.every((p) => Number.isInteger(p) && p >= 0 && p <= 3) || new Set(puntajes).size !== 4) {
+    err(q.id, 'juicio situacional: las opciones deben tener puntajes 3, 2, 1 y 0 (uno de cada uno)')
+  } else if (q.opciones.find((o) => o.puntaje === 3).id !== q.respuestaCorrecta) {
+    err(q.id, 'juicio situacional: la clave debe ser la opción con puntaje 3')
+  }
+  if (typeof q.competencia !== 'string' || !q.competencia.trim()) err(q.id, 'juicio situacional: falta "competencia"')
+  if (!Array.isArray(q.nivel) || !q.nivel.length || !q.nivel.every((n) => NIVELES.includes(n))) {
+    err(q.id, `juicio situacional: "nivel" debe ser una lista de ${NIVELES.join(', ')}`)
+  }
+}
+
 // Reglas extra para el formato v2: campos de trazabilidad, explicación por opción y sesgos de redacción
 function checkV2(q) {
   for (const field of q.capa === 2 ? V2_REQUIRED : [...V2_REQUIRED, ...V2_NORMATIVE]) {
@@ -36,8 +52,9 @@ function checkV2(q) {
       err(q.id, `v2: falta "${field}"`)
     }
   }
-  if (!['caso', 'conocimiento_aplicado'].includes(q.formato)) err(q.id, `v2: formato inválido "${q.formato}"`)
+  if (!['caso', 'conocimiento_aplicado', 'juicio_situacional'].includes(q.formato)) err(q.id, `v2: formato inválido "${q.formato}"`)
   if (!Array.isArray(q.opciones)) return
+  if (q.formato === 'juicio_situacional') checkJuicioSituacional(q)
   q.opciones.forEach((o) => {
     if (typeof o.explicacion !== 'string' || !o.explicacion.trim()) err(q.id, `v2: la opción ${o.id} no tiene explicación`)
   })
@@ -50,6 +67,28 @@ function checkV2(q) {
   if (key.texto.length < minOther * 0.7) warnings.push(`#${q.id}: la clave es mucho más corta que los distractores`)
   if (others.some((o) => ABSOLUTAS.test(o.texto)) && !ABSOLUTAS.test(key.texto)) {
     warnings.push(`#${q.id}: palabras absolutas solo en distractores (pista)`)
+  }
+}
+
+// Pistas que solo se ven en el conjunto: en juicio situacional, si los distractores se justifican
+// ("porque…", "para no…") y las claves no, basta descartar las opciones que se justifican
+const JUSTIFICACION = /(?<!\p{L})(porque|pues|ya que|para no)(?!\p{L})/iu
+function checkJustificationBias(items) {
+  const sjt = items.filter((q) => q.formato === 'juicio_situacional' && Array.isArray(q.opciones))
+  if (sjt.length < 10) return
+  let enClaves = 0
+  let enDistractores = 0
+  for (const q of sjt) {
+    for (const o of q.opciones) {
+      if (!JUSTIFICACION.test(String(o.texto))) continue
+      if (o.id === q.respuestaCorrecta) enClaves++
+      else enDistractores++
+    }
+  }
+  // Por azar, las claves serían ~1 de cada 4 opciones justificadas
+  const total = enClaves + enDistractores
+  if (total >= 8 && enClaves / total < 0.12) {
+    warnings.push(`juicio situacional: ${enDistractores} distractores y solo ${enClaves} claves usan "porque/pues/ya que/para no" (pista de conjunto)`)
   }
 }
 
@@ -89,6 +128,8 @@ for (const q of questions) {
   if (seenStems.has(stem)) warnings.push(`#${q.id}: mismo enunciado que #${seenStems.get(stem)}`)
   else seenStems.set(stem, q.id)
 }
+
+checkJustificationBias(questions)
 
 // Señales de calidad (no bloquean)
 const valid = questions.filter((q) => Array.isArray(q.opciones) && q.opciones.every((o) => typeof o.texto === 'string'))

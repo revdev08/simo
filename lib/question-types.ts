@@ -5,7 +5,18 @@ export interface QuestionOption {
   id: string
   texto: string
   explicacion?: string // solo en preguntas v2: por qué la opción es correcta o incorrecta
+  puntaje?: number // solo en juicio situacional: ajuste de 0 a 3 a la conducta esperada
 }
+
+// Niveles jerárquicos para las comportamentales (Decreto 1083 de 2015, art. 2.2.4.8)
+export const NIVELES = [
+  { id: 'asistencial', label: 'Asistencial' },
+  { id: 'tecnico', label: 'Técnico' },
+  { id: 'profesional', label: 'Profesional' },
+  { id: 'asesor', label: 'Asesor' },
+] as const
+
+export type NivelId = (typeof NIVELES)[number]['id']
 
 export interface Question {
   id: number | string // números en el banco original, "TC-909-001" en el formato v2
@@ -20,7 +31,13 @@ export interface Question {
   version?: number
   norma?: string
   articulos?: string[]
+  formato?: string // "juicio_situacional" en las comportamentales con puntaje
+  nivel?: string[] // ["todos"] o los niveles a los que aplica
+  competencia?: string
+  subtema?: string
 }
+
+export const isJuicioSituacional = (q: Pick<Question, 'formato'>) => q.formato === 'juicio_situacional'
 
 // Motivos para reportar un error (deben coincidir con el check de question_reports en lib/question-feedback.sql)
 export const REPORT_REASONS = [
