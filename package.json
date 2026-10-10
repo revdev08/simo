@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:questions": "node scripts/validate-questions.mjs questions.json data/preguntas && node scripts/validate-questions.mjs app/simulacro-gratis/questions.json"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.2.0",
