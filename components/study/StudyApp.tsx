@@ -1,27 +1,30 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
-import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3 } from 'lucide-react'
+import React, { useState, useEffect, useMemo, useRef } from 'react'
+import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3, FlaskConical, Scale } from 'lucide-react'
 import Link from 'next/link'
-// Types
-export interface Option {
-  id: string
-  texto: string
-}
+import type { Question } from '@/lib/question-types'
+import ReportQuestion from './ReportQuestion'
 
-export interface Question {
-  id: number
-  modulo: string
-  tema: string
-  dificultad: string
-  pregunta: string
-  opciones: Option[]
-  respuestaCorrecta: string
-  explicacionIA: string
-}
+export type { Question } from '@/lib/question-types'
 
+type QuestionId = Question['id']
+
+// Las claves son los ids como texto ("34" o "TC-909-001")
 interface ProgressData {
-  [questionId: number]: 'correct' | 'incorrect'
+  [questionId: string]: 'correct' | 'incorrect'
+}
+
+// Guarda cada respuesta para medir la dificultad real de las preguntas.
+// No bloquea al usuario: si falla, la práctica sigue igual.
+function logAttempt(questionId: QuestionId, selected: string, shownAt: number, mode: 'modulo' | 'simulacro') {
+  const timeMs = Math.round(performance.now() - shownAt)
+  fetch('/api/attempts', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ questionId, selected, timeMs, mode }),
+    keepalive: true,
+  }).catch(() => {})
 }
 
 export default function StudyApp({ questions }: { questions: Question[] }) {
@@ -60,7 +63,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   }, [])
 
   // Save progress locally (syncing to DB happens at the end of session)
-  const handleSaveProgress = (questionId: number, status: 'correct' | 'incorrect') => {
+  const handleSaveProgress = (questionId: QuestionId, status: 'correct' | 'incorrect') => {
     const newProgress = { ...progress, [questionId]: status }
     setProgress(newProgress)
     localStorage.setItem('simo_study_progress', JSON.stringify(newProgress))
@@ -94,7 +97,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
     let correct = 0
     let incorrect = 0
     Object.keys(progress).forEach(k => {
-      const status = progress[Number(k)]
+      const status = progress[k]
       if (status === 'correct') correct++
       if (status === 'incorrect') incorrect++
     })
@@ -115,8 +118,9 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   if (randomExamMode?.active) {
     return (
       <StudySession 
-        moduleName={`Simulacro Global Aleatorio (${randomExamMode.limit} Preguntas)`} 
-        questions={randomQuestions} 
+        moduleName={`Simulacro Global Aleatorio (${randomExamMode.limit} Preguntas)`}
+        mode="simulacro"
+        questions={randomQuestions}
         progress={progress}
         onSaveProgress={handleSaveProgress}
         onBack={() => setRandomExamMode(null)} 
@@ -134,8 +138,9 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   if (activeModule) {
     return (
       <StudySession 
-        moduleName={activeModule} 
-        questions={activeModuleQuestions} 
+        moduleName={activeModule}
+        mode="modulo"
+        questions={activeModuleQuestions}
         progress={progress}
         onSaveProgress={handleSaveProgress}
         onBack={() => setActiveModule(null)} 
@@ -275,25 +280,32 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
 }
 
 // Sub-component for the actual study session
-function StudySession({ 
-  moduleName, 
-  questions, 
-  progress, 
+function StudySession({
+  moduleName,
+  mode,
+  questions,
+  progress,
   onSaveProgress,
-  onBack 
-}: { 
-  moduleName: string, 
-  questions: Question[], 
+  onBack
+}: {
+  moduleName: string,
+  mode: 'modulo' | 'simulacro',
+  questions: Question[],
   progress: ProgressData,
-  onSaveProgress: (id: number, status: 'correct'|'incorrect') => void,
-  onBack: () => void 
+  onSaveProgress: (id: QuestionId, status: 'correct'|'incorrect') => void,
+  onBack: () => void
 }) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [showExplanation, setShowExplanation] = useState(false)
   const [isFinished, setIsFinished] = useState(false)
-  const [sessionProgress, setSessionProgress] = useState<Record<number, 'correct'|'incorrect'>>({})
-  
+  const [sessionProgress, setSessionProgress] = useState<Record<string, 'correct'|'incorrect'>>({})
+  // Momento en que se mostró la pregunta actual, para medir cuánto tarda el usuario en responder
+  const shownAtRef = useRef(0)
+  useEffect(() => {
+    shownAtRef.current = performance.now()
+  }, [currentIndex])
+
   const question = questions[currentIndex]
 
   // Track if we already synced to DB to avoid multiple requests
@@ -368,9 +380,10 @@ function StudySession({
     setSelectedOption(optionId)
     setShowExplanation(true)
     
-    const isCorrect = optionId === question.respuestaCorrecta
-    onSaveProgress(question.id, isCorrect ? 'correct' : 'incorrect')
-    setSessionProgress(prev => ({ ...prev, [question.id]: isCorrect ? 'correct' : 'incorrect' }))
+    const status: 'correct' | 'incorrect' = optionId === question.respuestaCorrecta ? 'correct' : 'incorrect'
+    logAttempt(question.id, optionId, shownAtRef.current, mode)
+    onSaveProgress(question.id, status)
+    setSessionProgress(prev => ({ ...prev, [String(question.id)]: status }))
   }
 
   const handleNext = () => {
@@ -412,6 +425,14 @@ function StudySession({
             }`}>
               Dificultad {question.dificultad}
             </span>
+            {question.estado === 'beta' && (
+              <span
+                title="Pregunta nueva: ya pasó la revisión automática y a ciegas, y estamos validándola con las respuestas de los usuarios."
+                className="inline-flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-lg border bg-sky-500/10 text-sky-700 border-sky-500/20 dark:text-sky-300"
+              >
+                <FlaskConical className="w-3.5 h-3.5" /> Nueva · en validación
+              </span>
+            )}
           </div>
           <div className="text-xs sm:text-sm font-extrabold text-slate-400 dark:text-slate-500">
             Pregunta {currentIndex + 1} de {questions.length}
@@ -457,7 +478,12 @@ function StudySession({
                   }`}>
                     {opt.id}
                   </div>
-                  <span className="text-slate-800 dark:text-slate-200 text-sm sm:text-base pt-0.5 leading-snug">{opt.texto}</span>
+                  <span className="pt-0.5 space-y-1.5">
+                    <span className="block text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-snug">{opt.texto}</span>
+                    {showExplanation && opt.explicacion && (showAsCorrect || isWrongSelection) && (
+                      <span className="block text-xs sm:text-sm font-normal text-slate-600 dark:text-slate-400 leading-relaxed">{opt.explicacion}</span>
+                    )}
+                  </span>
                 </button>
               )
             })}
@@ -473,8 +499,28 @@ function StudySession({
               <p className="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                 {question.explicacionIA}
               </p>
+              {question.norma && (
+                <p className="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                  <Scale className="w-4 h-4 shrink-0 mt-0.5" />
+                  <span>Fundamento: {question.norma}{question.articulos?.length ? `, ${question.articulos.join('; ')}` : ''}</span>
+                </p>
+              )}
+              {question.opciones.some((o) => o.explicacion) && (
+                <details className="text-sm text-slate-700 dark:text-slate-300">
+                  <summary className="cursor-pointer font-bold text-indigo-700 dark:text-indigo-300">Ver por qué cada opción es correcta o incorrecta</summary>
+                  <ul className="mt-3 space-y-2">
+                    {question.opciones.map((o) => (
+                      <li key={o.id} className="leading-relaxed">
+                        <strong>{o.id}.</strong> {o.explicacion}
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </div>
           )}
+
+          {showExplanation && <ReportQuestion key={String(question.id)} questionId={question.id} />}
         </div>
 
         {/* Footer Actions */}

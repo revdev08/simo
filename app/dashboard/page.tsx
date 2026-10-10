@@ -2,7 +2,7 @@ import { auth, currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { createSupabaseClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
-import questionsData from '@/questions.json'
+import { getPracticeQuestions } from '@/lib/questions'
 import StudyApp from '@/components/study/StudyApp'
 import ThemeToggle from '@/components/ThemeToggle'
 import SignOutButton from '@/components/SignOutButton'
@@ -190,7 +190,7 @@ export default async function DashboardPage(props: DashboardProps) {
 
         {/* Main Content Area */}
         {isUserPremium ? (
-          <StudyApp questions={questionsData as any} />
+          <StudyApp questions={getPracticeQuestions()} />
         ) : (
           <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800 p-8 text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-500/20 mb-4">

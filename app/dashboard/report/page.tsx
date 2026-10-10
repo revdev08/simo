@@ -2,7 +2,7 @@ import { auth, currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { createSupabaseClient, createAdminClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
-import questionsData from '@/questions.json'
+import { getReportQuestions } from '@/lib/questions'
 import ReportView from '@/components/study/ReportView'
 import ThemeToggle from '@/components/ThemeToggle'
 import SignOutButton from '@/components/SignOutButton'
@@ -73,7 +73,7 @@ export default async function ReportPage() {
         </div>
 
         {/* Main Content Area */}
-        <ReportView questions={questionsData as any} progress={progressData} />
+        <ReportView questions={getReportQuestions()} progress={progressData} />
 
       </div>
     </div>

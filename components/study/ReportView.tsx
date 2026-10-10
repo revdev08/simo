@@ -1,12 +1,12 @@
 'use client'
 
 import React, { useMemo } from 'react'
-import { Question } from './StudyApp'
+import type { ReportQuestion } from '@/lib/question-types'
 import { ArrowLeft, CheckCircle, XCircle, BarChart3, AlertTriangle, TrendingUp, Award } from 'lucide-react'
 import Link from 'next/link'
 
 interface ReportViewProps {
-  questions: Question[]
+  questions: ReportQuestion[]
   progress: Record<string, 'correct' | 'incorrect'>
 }
 
@@ -19,8 +19,8 @@ export default function ReportView({ questions, progress }: ReportViewProps) {
 
     // Initialize stats based on answered questions
     Object.keys(progress).forEach(qIdStr => {
-      const qId = parseInt(qIdStr, 10)
-      const q = questions.find(question => question.id === qId)
+      // Los ids pueden ser números (banco original) o texto (formato v2), así que se comparan como texto
+      const q = questions.find(question => String(question.id) === qIdStr)
       if (!q) return
 
       const isCorrect = progress[qIdStr] === 'correct'
