@@ -19,6 +19,9 @@ export interface SimulacroState {
   current: number
   startedAt: number
   durationMs: number
+  // Solo en el simulacro de una convocatoria: nombre y puntaje mínimo de su prueba eliminatoria
+  titulo?: string
+  minimo?: number
 }
 
 export function loadSimulacroState(): SimulacroState | null {
@@ -340,11 +343,14 @@ export default function SimulacroSession({
             <ScoreRing value={mainPct} size={140} label={results.knowledgePct !== null ? 'Conocimientos' : 'Comportamentales'} />
             <div className="flex-1 text-center sm:text-left">
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Resultado del simulacro</h2>
+              {state.titulo && <p className="mt-1 font-semibold text-brand-700 dark:text-brand-300">{state.titulo}</p>}
               <p className="mt-1 text-slate-600 dark:text-slate-400">
                 {questions.length} preguntas · usaste {formatDuration((finishedAt ?? deadline) - state.startedAt)} de {formatDuration(state.durationMs)}
               </p>
               <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
-                Como referencia, en muchas convocatorias el puntaje mínimo de la prueba eliminatoria está entre 60 y 70 sobre 100. Revisa el acuerdo de tu convocatoria.
+                {state.minimo
+                  ? `En esta convocatoria la prueba eliminatoria exige ${state.minimo} puntos sobre 100. Tu resultado aquí es una referencia: el puntaje oficial se calcula con otra escala.`
+                  : 'Como referencia, en muchas convocatorias el puntaje mínimo de la prueba eliminatoria está entre 60 y 70 sobre 100. Revisa el acuerdo de tu convocatoria.'}
               </p>
             </div>
           </div>
@@ -488,8 +494,9 @@ export default function SimulacroSession({
           </button>
           <div className="min-w-0 flex-1">
             <div className="flex items-baseline justify-between gap-3 text-sm">
-              <span className="font-semibold text-slate-800 dark:text-slate-100">
+              <span className="min-w-0 truncate font-semibold text-slate-800 dark:text-slate-100">
                 Pregunta {state.current + 1} <span className="font-normal text-slate-500">de {questions.length}</span>
+                {state.titulo && <span className="hidden md:inline font-normal text-slate-500"> · {state.titulo}</span>}
               </span>
               <span className="hidden sm:inline tabular-nums text-slate-500 dark:text-slate-400">{answeredCount} respondidas</span>
             </div>

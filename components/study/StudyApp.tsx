@@ -8,6 +8,13 @@ import StudyHome, { type ModuleStat } from './StudyHome'
 import StudySession from './StudySession'
 import { clock } from './attempts'
 import { MINUTOS_POR_PREGUNTA, ORDEN_SECCIONES, PESO_CON_AREA, PESO_SIN_AREA } from './simulacro-config'
+import {
+  armarSimulacroConvocatoria,
+  buscarSeleccion,
+  CONVOCATORIA_STORAGE_KEY,
+  minimoEliminatoria,
+  poolDelPerfil,
+} from './simulacro-convocatoria'
 
 export type { Question } from '@/lib/question-types'
 
@@ -37,6 +44,23 @@ function readSavedArea(): AreaId | null {
   } catch {
     return null
   }
+}
+
+function readSavedConvocatoria(): string | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const saved = localStorage.getItem(CONVOCATORIA_STORAGE_KEY)
+    return buscarSeleccion(saved) ? saved : null
+  } catch {
+    return null
+  }
+}
+
+// Elección que llega por URL desde una página de convocatoria (?convocatoria=…&perfil=…)
+function readConvocatoriaIntent() {
+  if (typeof window === 'undefined') return null
+  const params = new URLSearchParams(window.location.search)
+  return buscarSeleccion(`${params.get('convocatoria')}:${params.get('perfil')}`)
 }
 
 function readLocalProgress(): ProgressData {
@@ -139,12 +163,28 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   const [savedSimulacro, setSavedSimulacro] = useState<SimulacroState | null>(loadSimulacroState)
   const [progress, setProgress] = useState<ProgressData>({})
   const [isLoaded, setIsLoaded] = useState(false)
-  const [nivel, setNivel] = useState<NivelId | null>(readSavedNivel)
-  const [area, setArea] = useState<AreaId | null>(readSavedArea)
+  // Si se llega desde una convocatoria, su perfil define el área y, si aún no hay, el nivel
+  const [nivel, setNivel] = useState<NivelId | null>(() => readSavedNivel() ?? readConvocatoriaIntent()?.perfil.nivel ?? null)
+  const [area, setArea] = useState<AreaId | null>(() => readConvocatoriaIntent()?.perfil.area ?? readSavedArea())
   // Módulo que se abrirá cuando el usuario elija su nivel
   const [pendingModule, setPendingModule] = useState<string | null>(null)
+  // Convocatoria y perfil elegidos ("slug:perfil"): habilitan el simulacro con los pesos de ese proceso
+  const [convocatoriaClave, setConvocatoriaClave] = useState<string | null>(() => readConvocatoriaIntent()?.clave ?? readSavedConvocatoria())
+  const seleccion = useMemo(() => buscarSeleccion(convocatoriaClave), [convocatoriaClave])
 
   const visibleQuestions = useMemo(() => questions.filter((q) => appliesToNivel(q, nivel)), [questions, nivel])
+
+  // Guarda la elección que llegó por URL y limpia la dirección
+  useEffect(() => {
+    const elegida = readConvocatoriaIntent()
+    if (!elegida) return
+    window.history.replaceState(null, '', window.location.pathname)
+    try {
+      localStorage.setItem(CONVOCATORIA_STORAGE_KEY, elegida.clave)
+      if (elegida.perfil.area) localStorage.setItem(AREA_STORAGE_KEY, elegida.perfil.area)
+      if (elegida.perfil.nivel && !localStorage.getItem(NIVEL_STORAGE_KEY)) localStorage.setItem(NIVEL_STORAGE_KEY, elegida.perfil.nivel)
+    } catch {}
+  }, [])
 
   // Carga el progreso de la base de datos; si está vacía o no responde, usa el guardado en el navegador.
   // Si la URL pide una práctica (desde "Mi progreso": ?modulo=… o ?practicar=errores), la abre al cargar.
@@ -262,8 +302,12 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   // Solo entran al simulacro las preguntas verificadas o conservadas (no las de concepto básico)
   const simulacroPool = visibleQuestions.filter((q) => !q.fundamentos)
 
-  const startSimulacro = (n: number) => {
-    const picked = buildSimulacro(simulacroPool, n, area)
+  const convocatoriaPoolSize = seleccion ? poolDelPerfil(simulacroPool, seleccion.perfil).length : 0
+
+  const startSimulacro = (n: number, modo: 'general' | 'convocatoria' = 'general') => {
+    const conv = modo === 'convocatoria' ? seleccion : null
+    const picked = conv ? armarSimulacroConvocatoria(simulacroPool, n, conv.perfil) : buildSimulacro(simulacroPool, n, area)
+    if (!picked.length) return
     const state: SimulacroState = {
       ids: picked.map((q) => String(q.id)),
       answers: {},
@@ -272,6 +316,7 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       current: 0,
       startedAt: clock(),
       durationMs: picked.length * MINUTOS_POR_PREGUNTA * 60 * 1000,
+      ...(conv ? { titulo: `${conv.convocatoria.nombre} · ${conv.perfil.label}`, minimo: minimoEliminatoria(conv.convocatoria) } : {}),
     }
     clearSimulacroState()
     setSavedSimulacro(null)
@@ -327,6 +372,17 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       if (a) localStorage.setItem(AREA_STORAGE_KEY, a)
       else localStorage.removeItem(AREA_STORAGE_KEY)
     } catch {}
+  }
+
+  // Al elegir una convocatoria se sugiere el área de su perfil (el usuario puede cambiarla después)
+  const chooseConvocatoria = (clave: string | null) => {
+    const elegida = buscarSeleccion(clave)
+    setConvocatoriaClave(elegida ? elegida.clave : null)
+    try {
+      if (elegida) localStorage.setItem(CONVOCATORIA_STORAGE_KEY, elegida.clave)
+      else localStorage.removeItem(CONVOCATORIA_STORAGE_KEY)
+    } catch {}
+    if (elegida?.perfil.area) chooseArea(elegida.perfil.area)
   }
 
   const chooseNivel = (n: NivelId) => {
@@ -406,6 +462,9 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       onResumeSimulacro={resumeSimulacro}
       onDiscardSimulacro={discardSimulacro}
       simulacroPoolSize={simulacroPool.length}
+      convocatoria={seleccion}
+      convocatoriaPoolSize={convocatoriaPoolSize}
+      onChooseConvocatoria={chooseConvocatoria}
       onStartSimulacro={startSimulacro}
       onStartModule={(name) => startModule(name)}
       onReviewErrors={startReview}

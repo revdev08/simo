@@ -1,7 +1,7 @@
 'use client'
 
 // Elige el perfil de empleo dentro de la convocatoria y muestra qué estudiar y el plan semanal
-import { ArrowRight, BookOpen, Settings2 } from 'lucide-react'
+import { ArrowRight, BookOpen, Settings2, Timer } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
 import { AREAS_FUNCIONALES, NIVELES } from '@/lib/question-types'
@@ -11,9 +11,13 @@ import PlanBuilder from './PlanBuilder'
 const pct = (n: number, total: number) => `${Math.round((n / total) * 100)}%`
 
 export default function ConvocatoriaPlan({
+  slug,
+  nombre,
   perfiles,
   disponibles,
 }: {
+  slug: string
+  nombre: string
   perfiles: PerfilConvocatoria[]
   disponibles: Record<string, number>
 }) {
@@ -90,32 +94,27 @@ export default function ConvocatoriaPlan({
         </div>
       </section>
 
-      {(nivel || area) && (
-        <section className="rounded-3xl border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/40 p-5 sm:p-6">
-          <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
-            <Settings2 className="w-5 h-5 text-blue-600 dark:text-blue-400" aria-hidden /> Configura tu panel así
-          </h3>
-          <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-sm text-slate-700 dark:text-slate-300">
-            {nivel && (
-              <li>
-                En <strong>Configura tu prueba</strong> (o <strong>Tu prueba → Cambiar</strong>), elige el nivel <strong>{nivel}</strong>: verás las preguntas de tu nivel.
-              </li>
-            )}
-            {area && (
-              <li>
-                En <strong>Área de tu cargo</strong>, elige <strong>{area}</strong>: el simulacro sumará preguntas de esa área.
-              </li>
-            )}
-            <li>Sigue el plan de esta página y, la última semana, haz los simulacros completos.</li>
-          </ol>
+      <section className="rounded-3xl border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/40 p-5 sm:p-6">
+        <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
+          <Timer className="w-5 h-5 text-blue-600 dark:text-blue-400" aria-hidden /> Simulacro de {nombre}
+        </h3>
+        <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
+          En tu panel, el simulacro reparte las preguntas con los pesos de este perfil, con cronómetro y resultado por módulo.
+          {area ? <> Al abrirlo desde aquí también elegimos por ti el área <strong>{area}</strong>.</> : null}
+          {nivel ? <> Si aún no tienes nivel, quedará en <strong>{nivel}</strong>.</> : null}
+        </p>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
           <Link
-            href="/dashboard"
-            className="mt-4 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-500"
+            href={`/dashboard?convocatoria=${encodeURIComponent(slug)}&perfil=${encodeURIComponent(perfil.id)}`}
+            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-500"
           >
-            Ir a mi panel <ArrowRight className="w-4 h-4" aria-hidden />
+            Hacer el simulacro de esta convocatoria <ArrowRight className="w-4 h-4" aria-hidden />
           </Link>
-        </section>
-      )}
+          <span className="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
+            <Settings2 className="w-3.5 h-3.5" aria-hidden /> Puedes cambiar la convocatoria en «Configura tu prueba».
+          </span>
+        </div>
+      </section>
     </div>
   )
 }

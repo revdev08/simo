@@ -113,7 +113,7 @@ export default async function ConvocatoriaPage({ params }: Props) {
           )}
 
           <section className="mt-12" aria-label="Plan de estudio">
-            <ConvocatoriaPlan perfiles={c.perfiles} disponibles={disponibles} />
+            <ConvocatoriaPlan slug={c.slug} nombre={c.nombre} perfiles={c.perfiles} disponibles={disponibles} />
           </section>
 
           <section className="mt-12 grid gap-4 md:grid-cols-2">

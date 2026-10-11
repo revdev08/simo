@@ -6,6 +6,8 @@ import { AREAS_FUNCIONALES, MODULE_SECTIONS, NIVELES, type AreaId, type NivelId,
 import { moduleIcon, SECTION_STYLE } from './module-meta'
 import { MINUTOS_POR_PREGUNTA, PESO_CON_AREA, PESO_SIN_AREA, SIMULACRO_OPCIONES } from './simulacro-config'
 import { formatDuration, type SimulacroState } from './SimulacroSession'
+import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
+import type { SeleccionConvocatoria } from './simulacro-convocatoria'
 import { clock } from './attempts'
 import { ProgressBar } from './ui'
 
@@ -68,13 +70,17 @@ function StatCard({ label, value, hint, children }: { label: string; value: stri
 function ProfileCard({
   nivel,
   area,
+  convocatoria,
   onChooseNivel,
   onChooseArea,
+  onChooseConvocatoria,
 }: {
   nivel: NivelId | null
   area: AreaId | null
+  convocatoria: SeleccionConvocatoria | null
   onChooseNivel: (n: NivelId) => void
   onChooseArea: (a: AreaId | null) => void
+  onChooseConvocatoria: (clave: string | null) => void
 }) {
   const [editing, setEditing] = useState(!nivel)
 
@@ -87,6 +93,11 @@ function ProfileCard({
         <span className="text-sm font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
           {area ? `Área: ${areaInfo(area)?.label}` : 'Sin área funcional'}
         </span>
+        {convocatoria && (
+          <span className="max-w-full truncate text-sm font-semibold px-2.5 py-1 rounded-lg bg-brand-50 text-brand-800 dark:bg-brand-500/15 dark:text-brand-200">
+            {convocatoria.convocatoria.nombre} · {convocatoria.perfil.label}
+          </span>
+        )}
         <button type="button" onClick={() => setEditing(true)} className="ml-auto text-sm font-semibold text-brand-700 hover:text-brand-800 dark:text-brand-300 dark:hover:text-brand-200">
           Cambiar
         </button>
@@ -141,6 +152,29 @@ function ProfileCard({
             ))}
           </select>
         </div>
+        <div className="lg:col-span-2">
+          <label htmlFor="convocatoria-cargo" className="text-sm font-semibold text-slate-900 dark:text-white">
+            Tu convocatoria <span className="font-normal text-slate-500">(opcional)</span>
+          </label>
+          <p className="text-xs text-slate-500 dark:text-slate-400">Habilita un simulacro con los temas y pesos de ese proceso.</p>
+          <select
+            id="convocatoria-cargo"
+            value={convocatoria?.clave ?? ''}
+            onChange={(e) => onChooseConvocatoria(e.target.value || null)}
+            className="mt-2.5 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2.5 text-sm font-medium text-slate-800 dark:text-slate-200 focus:outline-2 focus:outline-brand-500"
+          >
+            <option value="">Ninguna</option>
+            {CONVOCATORIAS.map((c) => (
+              <optgroup key={c.slug} label={c.nombre}>
+                {c.perfiles.map((p) => (
+                  <option key={p.id} value={`${c.slug}:${p.id}`}>
+                    {c.nombre} · {p.label}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </div>
       </div>
       {nivel && (
         <div className="flex justify-end">
@@ -165,6 +199,9 @@ export default function StudyHome({
   onResumeSimulacro,
   onDiscardSimulacro,
   simulacroPoolSize,
+  convocatoria,
+  convocatoriaPoolSize,
+  onChooseConvocatoria,
   onStartSimulacro,
   onStartModule,
   onReviewErrors,
@@ -180,12 +217,31 @@ export default function StudyHome({
   onResumeSimulacro: () => void
   onDiscardSimulacro: () => void
   simulacroPoolSize: number
-  onStartSimulacro: (n: number) => void
+  convocatoria: SeleccionConvocatoria | null
+  convocatoriaPoolSize: number
+  onChooseConvocatoria: (clave: string | null) => void
+  onStartSimulacro: (n: number, modo: 'general' | 'convocatoria') => void
   onStartModule: (name: string) => void
   onReviewErrors: () => void
 }) {
   const [section, setSection] = useState<SectionId>('generales')
   const [size, setSize] = useState<number>(SIMULACRO_OPCIONES[1].n)
+  // Con una convocatoria elegida, el simulacro usa por defecto sus temas y pesos
+  const [modoElegido, setModo] = useState<'general' | 'convocatoria'>('convocatoria')
+  const modo = convocatoria ? modoElegido : 'general'
+  const poolSize = modo === 'convocatoria' ? convocatoriaPoolSize : simulacroPoolSize
+  // Módulos del perfil con más peso, para describir el simulacro de la convocatoria
+  const resumenConvocatoria = (() => {
+    if (!convocatoria) return ''
+    const disponibles = new Set(modulesStats.map((m) => m.name))
+    const mods = convocatoria.perfil.modulos.filter((m) => disponibles.has(m.modulo))
+    const total = mods.reduce((a, m) => a + m.peso, 0)
+    return [...mods]
+      .sort((a, b) => b.peso - a.peso)
+      .slice(0, 3)
+      .map((m) => `${m.modulo} (${Math.round((m.peso / total) * 100)}%)`)
+      .join(', ')
+  })()
 
   const accuracy = accuracyOf(totalStats)
   const rec = recommend(modulesStats, area)
@@ -232,7 +288,14 @@ export default function StudyHome({
         </div>
       </div>
 
-      <ProfileCard nivel={nivel} area={area} onChooseNivel={onChooseNivel} onChooseArea={onChooseArea} />
+      <ProfileCard
+        nivel={nivel}
+        area={area}
+        convocatoria={convocatoria}
+        onChooseNivel={onChooseNivel}
+        onChooseArea={onChooseArea}
+        onChooseConvocatoria={onChooseConvocatoria}
+      />
 
       {/* Acciones principales */}
       <div className="grid lg:grid-cols-5 gap-4 sm:gap-5">
@@ -243,7 +306,13 @@ export default function StudyHome({
               <Timer className="w-4 h-4" aria-hidden /> Simulacro tipo examen
             </p>
             <h2 id="simulacro-title" className="mt-3 text-2xl sm:text-[1.75rem] font-bold leading-tight tracking-tight">
-              Practica en condiciones de examen
+              {savedSimulacro
+                ? savedSimulacro.titulo
+                  ? `Simulacro ${savedSimulacro.titulo.split(' · ')[0]}`
+                  : 'Practica en condiciones de examen'
+                : modo === 'convocatoria' && convocatoria
+                  ? `Simulacro ${convocatoria.convocatoria.nombre}`
+                  : 'Practica en condiciones de examen'}
             </h2>
             <p className="mt-2 text-sm sm:text-base text-brand-100/80 max-w-lg">
               Con cronómetro y sin ver las respuestas hasta el final. Al terminar ves tu resultado por módulo.
@@ -275,6 +344,24 @@ export default function StudyHome({
               </div>
             ) : (
               <>
+                {convocatoria && (
+                  <div role="radiogroup" aria-label="Tipo de simulacro" className="mt-5 inline-flex rounded-xl bg-white/10 p-1">
+                    {(['convocatoria', 'general'] as const).map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        role="radio"
+                        aria-checked={modo === m}
+                        onClick={() => setModo(m)}
+                        className={`rounded-lg px-3.5 py-1.5 text-sm font-semibold transition-colors ${
+                          modo === m ? 'bg-white text-brand-950' : 'text-brand-100 hover:text-white'
+                        }`}
+                      >
+                        {m === 'convocatoria' ? 'Mi convocatoria' : 'General'}
+                      </button>
+                    ))}
+                  </div>
+                )}
                 <div role="radiogroup" aria-label="Tamaño del simulacro" className="mt-6 grid grid-cols-3 gap-2 sm:gap-3">
                   {SIMULACRO_OPCIONES.map((op) => {
                     const selected = size === op.n
@@ -284,7 +371,7 @@ export default function StudyHome({
                         type="button"
                         role="radio"
                         aria-checked={selected}
-                        disabled={simulacroPoolSize < op.n}
+                        disabled={poolSize < op.n}
                         onClick={() => setSize(op.n)}
                         className={`rounded-xl px-3 py-3 text-left border transition-colors disabled:opacity-40 ${
                           selected ? 'bg-white border-white text-brand-950' : 'bg-white/5 border-white/15 text-white hover:bg-white/10'
@@ -299,16 +386,23 @@ export default function StudyHome({
                     )
                   })}
                 </div>
-                <p className="mt-4 text-xs sm:text-sm text-brand-100/80 leading-relaxed">
-                  {humanMinutes(size * MINUTOS_POR_PREGUNTA)} en total. Incluye generales ({pct(pesos.generales)})
-                  {area ? `, ${areaInfo(area)?.frase} (${pct(pesos.funcionales)})` : ''}, aptitudes ({pct(pesos.aptitudes)}) y comportamentales ({pct(pesos.comportamentales)})
-                  {nivel ? ` de nivel ${nivelLabel(nivel).toLowerCase()}` : ''}.
-                  {!area && ' Elige el área de tu cargo para sumar preguntas funcionales.'}
-                </p>
+                {modo === 'convocatoria' && convocatoria ? (
+                  <p className="mt-4 text-xs sm:text-sm text-brand-100/80 leading-relaxed">
+                    {humanMinutes(size * MINUTOS_POR_PREGUNTA)} en total. Perfil: {convocatoria.perfil.label}. Pesa más en {resumenConvocatoria}.
+                    {poolSize < size && ` Por ahora hay ${poolSize} preguntas para este perfil.`}
+                  </p>
+                ) : (
+                  <p className="mt-4 text-xs sm:text-sm text-brand-100/80 leading-relaxed">
+                    {humanMinutes(size * MINUTOS_POR_PREGUNTA)} en total. Incluye generales ({pct(pesos.generales)})
+                    {area ? `, ${areaInfo(area)?.frase} (${pct(pesos.funcionales)})` : ''}, aptitudes ({pct(pesos.aptitudes)}) y comportamentales ({pct(pesos.comportamentales)})
+                    {nivel ? ` de nivel ${nivelLabel(nivel).toLowerCase()}` : ''}.
+                    {!area && ' Elige el área de tu cargo para sumar preguntas funcionales.'}
+                  </p>
+                )}
                 <button
                   type="button"
-                  onClick={() => onStartSimulacro(size)}
-                  disabled={simulacroPoolSize < size}
+                  onClick={() => onStartSimulacro(size, modo)}
+                  disabled={poolSize < size}
                   className="mt-6 w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white text-brand-900 font-semibold px-6 py-3 hover:bg-brand-50 disabled:opacity-50"
                 >
                   Empezar simulacro <ArrowRight className="w-4 h-4" aria-hidden />

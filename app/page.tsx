@@ -196,6 +196,16 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main className="flex-grow">
+        {/* Aviso de la DIAN 2676 (prueba del 8 de noviembre de 2026): quitar después de esa fecha */}
+        <Link
+          href="/mi-convocatoria/dian-2676"
+          className="group block border-b border-blue-200/70 dark:border-blue-900/60 bg-blue-600 text-white"
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-center gap-2 text-center text-sm font-semibold">
+            <span>¿Te presentas a la DIAN el 8 de noviembre? Plan de estudio y simulacro con los pesos de tu perfil</span>
+            <ArrowRight className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden />
+          </div>
+        </Link>
         <section className="relative overflow-hidden pt-12 pb-24 lg:pt-24 lg:pb-32">
           {/* Neon Glow Accents */}
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 blur-[120px] rounded-full pointer-events-none" />
