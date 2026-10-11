@@ -3264,5 +3264,1092 @@
       "fecha": "2026-10-10",
       "p_estimado": 65
     }
+  },
+  {
+    "id": "TC-ADU-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Valoración aduanera",
+    "subtema": "Gastos de transporte, cargue y seguro hasta el lugar de importación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 330, inc. final",
+      "art. 16, num. 1"
+    ],
+    "texto_fuente": "Independientemente del método de valoración utilizado, los gastos de transporte, conexos al transporte, los de carga, descarga y manipulación y el costo del seguro, ocasionados por la entrega de las mercancías importadas hasta el puerto o lugar de importación, deben ser tomados y demostrados documentalmente, para la determinación del valor en aduana determinado. [...] Para los derechos de aduana, se toma como base gravable el valor en aduana de la mercancía importada, determinado conforme lo establecen las disposiciones que rigen la valoración aduanera.",
+    "pregunta": "Una empresa compró en Alemania una máquina empacadora a un precio en fábrica (EXW) de USD 80.000. Según sus soportes, pagó además USD 1.200 por el transporte terrestre de la fábrica al puerto de Hamburgo, USD 300 por el cargue en ese puerto, USD 4.500 de flete marítimo hasta Cartagena y USD 400 por el seguro de la carga. Ya en Colombia pagó USD 600 por el almacenamiento en un depósito de Cartagena y USD 2.000 por el transporte de la máquina hasta su planta en Bogotá, todos discriminados en sus facturas. Una inspectora de la DIAN revisa el valor en aduana declarado. ¿Cuál es el valor en aduana correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "USD 86.400: el precio y todo lo que costó llevar y asegurar la máquina hasta su llegada a Cartagena.",
+        "explicacion": "Correcta. El art. 330 ordena tomar los gastos de transporte, los conexos, los de carga y el seguro causados hasta el puerto o lugar de importación, y el precio se pactó en fábrica: 80.000 + 1.200 + 300 + 4.500 + 400 = USD 86.400. Ese valor en aduana es la base gravable de los derechos de aduana (art. 16, num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "USD 84.900: el precio, el flete marítimo y el seguro; los gastos en Alemania antes del embarque no se suman.",
+        "explicacion": "Incorrecta. Deja por fuera el transporte de la fábrica a Hamburgo (USD 1.200) y el cargue en ese puerto (USD 300). Como el precio es en fábrica, esos gastos de transporte y de carga hasta el lugar de importación también se toman (art. 330): 80.000 + 4.500 + 400."
+      },
+      {
+        "id": "C",
+        "texto": "USD 89.000: el precio y todos los gastos pagados hasta que la máquina quedó instalada en la planta de Bogotá.",
+        "explicacion": "Incorrecta. Suma el almacenamiento en Cartagena (USD 600) y el transporte a Bogotá (USD 2.000), que se causaron después de la llegada al lugar de importación. El art. 330 solo comprende los gastos ocasionados hasta ese lugar."
+      },
+      {
+        "id": "D",
+        "texto": "USD 86.000: el precio y los gastos de transporte hasta Cartagena, sin el seguro, que es un costo opcional.",
+        "explicacion": "Incorrecta. Omite el seguro (USD 400). El art. 330 incluye el costo del seguro hasta el puerto o lugar de importación entre los conceptos que se toman para el valor en aduana: 80.000 + 1.200 + 300 + 4.500."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la compra fue en fábrica (EXW) y la máquina llegó por Cartagena; después hubo almacenamiento y transporte a Bogotá. Regla: el art. 330 del Decreto 1165 exige tomar los gastos de transporte, conexos, de carga y de seguro ocasionados hasta el puerto o lugar de importación; los posteriores a la llegada no entran. Ese valor es la base de los derechos de aduana (art. 16). Cálculo: 80.000 + 1.200 + 300 + 4.500 + 400 = USD 86.400.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-062",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Valoración aduanera",
+    "subtema": "Seguro no contratado: primas habitualmente aplicables y gastos posteriores a la llegada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 330, num. 5 e inc. final",
+      "art. 327, segundo inciso siguiente a los numerales"
+    ],
+    "texto_fuente": "Documento que ampare el seguro de la mercancía, o en su defecto, el documento que sustente las tarifas o primas habitualmente aplicables [...] Independientemente del método de valoración utilizado, los gastos de transporte, conexos al transporte, los de carga, descarga y manipulación y el costo del seguro, ocasionados por la entrega de las mercancías importadas hasta el puerto o lugar de importación, deben ser tomados y demostrados documentalmente, para la determinación del valor en aduana determinado. [...] Tratándose del documento que ampare el seguro de la mercancía o documento que sustente las tarifas o primas habitualmente aplicables, siempre deberá ser presentado como documento soporte de la declaración aduanera de importación.",
+    "pregunta": "Un importador compró unas bobinas de papel por un valor FOB de USD 30.000 y pagó aparte USD 2.000 de flete hasta Buenaventura. No aseguró la carga. Ya en Colombia, pagó USD 400, con factura separada, por llevar las bobinas desde el puerto hasta su planta en Cali. Una compañía de seguros certificó que la prima que cobra habitualmente por un embarque como ese es de USD 150. Un analista de la DIAN revisa la declaración de importación. ¿Cuál es el valor en aduana que debió declararse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "USD 32.000: el precio y el flete; como no hubo póliza, no hay un seguro que sumar.",
+        "explicacion": "Incorrecta. Que no se haya tomado póliza no elimina el concepto: a falta del documento del seguro, se usa el que sustenta las tarifas o primas habitualmente aplicables (art. 330, num. 5), y el costo del seguro hasta el lugar de importación se toma para el valor en aduana (art. 330, inc. final)."
+      },
+      {
+        "id": "B",
+        "texto": "USD 30.150: el precio y la prima certificada; el flete pagado aparte no se suma.",
+        "explicacion": "Incorrecta. Usa bien la prima certificada, pero deja por fuera el flete. Los gastos de transporte hasta el puerto o lugar de importación se toman para el valor en aduana aunque se paguen por separado del precio (art. 330, inc. final)."
+      },
+      {
+        "id": "C",
+        "texto": "USD 32.150: el precio, el flete y la prima que certificó la compañía de seguros.",
+        "explicacion": "Correcta. A falta de póliza, el seguro se sustenta con el documento de las tarifas o primas habitualmente aplicables (art. 330, num. 5), que se presenta como documento soporte de la declaración (art. 327). Se suman el flete y el seguro hasta Buenaventura, no el transporte interno: 30.000 + 2.000 + 150 = USD 32.150."
+      },
+      {
+        "id": "D",
+        "texto": "USD 32.550: el precio, el flete, la prima certificada y el transporte a Cali.",
+        "explicacion": "Incorrecta. Suma el transporte del puerto a la planta. El art. 330 (inc. final) toma los gastos de transporte y el seguro ocasionados por la entrega de la mercancía hasta el puerto o lugar de importación; el traslado posterior a la llegada, facturado por separado, no integra el valor en aduana."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la carga no se aseguró, pero hay certificación de la prima usual (USD 150), y el traslado del puerto a la planta ocurrió después de la llegada. Regla: el flete y el seguro hasta el lugar de importación se toman para el valor en aduana (art. 330, inc. final); si no hay póliza, el seguro se sustenta con el documento de las primas habitualmente aplicables (art. 330, num. 5), que siempre es soporte de la declaración (art. 327). Cálculo: 30.000 + 2.000 + 150 = USD 32.150.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-063",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Base gravable y liquidación de tributos aduaneros",
+    "subtema": "Conversión monetaria: tasa del último día hábil de la semana anterior",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 15, incs. 1, 2 y 4",
+      "art. 16, num. 1"
+    ],
+    "texto_fuente": "El valor en aduana de las mercancías importadas se determinará en dólares de los Estados Unidos de América. [...] El valor de la mercancía o de cualquiera de los elementos conformantes del valor en aduana, negociados en una moneda diferente al dólar de los Estados Unidos de América, será convertido a esta moneda aplicando el tipo de cambio vigente el último día hábil de la semana anterior a la fecha de presentación y aceptación de la declaración aduanera de las mercancías importadas. [...] El valor en aduana expresado en dólares de los Estados Unidos de América se convertirá a pesos colombianos, teniendo en cuenta la tasa de cambio representativa de mercado que informe la Superintendencia Financiera o la entidad que haga sus veces, para el último día hábil de la semana anterior a la fecha de presentación y aceptación de la declaración aduanera. [...] Para los derechos de aduana, se toma como base gravable el valor en aduana de la mercancía importada, determinado conforme lo establecen las disposiciones que rigen la valoración aduanera.",
+    "pregunta": "El martes 7 de abril de 2026 se presentó y aceptó la declaración de importación de unos equipos cuyo valor en aduana, negociado en euros, es de EUR 50.000. Las tasas publicadas para cada fecha fueron estas: viernes 20 de marzo (fecha de la factura), USD 1,08 por euro y TRM de $3.950; miércoles 1 de abril, USD 1,10 por euro y TRM de $4.000; lunes 6 de abril, USD 1,12 por euro y TRM de $4.050; martes 7 de abril, USD 1,13 por euro y TRM de $4.080. Un gestor de la DIAN verifica la conversión. ¿Cuál es el valor en aduana en pesos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$220.000.000, con las tasas del 1 de abril de 2026.",
+        "explicacion": "Correcta. El euro se convierte a dólares con el tipo de cambio del último día hábil de la semana anterior a la presentación y aceptación, y los dólares a pesos con la TRM de ese mismo día (art. 15). La semana anterior fue la del 30 de marzo al 5 de abril; como el jueves 2 y el viernes 3 fueron festivos (Semana Santa), su último día hábil fue el miércoles 1: 50.000 × 1,10 = USD 55.000 × $4.000 = $220.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$226.800.000, con las tasas del 6 de abril de 2026.",
+        "explicacion": "Incorrecta. Toma el último día hábil anterior a la presentación, pero el art. 15 remite al último día hábil de la semana anterior. El lunes 6 está en la misma semana de la presentación."
+      },
+      {
+        "id": "C",
+        "texto": "$230.520.000, con las tasas del 7 de abril de 2026.",
+        "explicacion": "Incorrecta. Usa las tasas del día de la presentación y aceptación. El art. 15 fija las del último día hábil de la semana anterior a esa fecha."
+      },
+      {
+        "id": "D",
+        "texto": "$213.300.000, con las tasas del 20 de marzo de 2026.",
+        "explicacion": "Incorrecta. La fecha de la factura no define la conversión. El art. 15 la ata a la fecha de presentación y aceptación de la declaración, con las tasas del último día hábil de la semana anterior."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la declaración se aceptó el martes 7 de abril de 2026, y en la semana anterior el jueves 2 y el viernes 3 fueron festivos (Semana Santa). Regla: el art. 15 convierte el euro a dólares con el tipo de cambio del último día hábil de la semana anterior a la presentación y aceptación, y los dólares a pesos con la TRM de ese día. Por los festivos, ese día fue el miércoles 1 de abril. Cálculo: 50.000 × 1,10 × $4.000 = $220.000.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ADU-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Base gravable y liquidación de tributos aduaneros",
+    "subtema": "Tipo de cambio fijo pactado en el contrato de venta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 15, incs. 1, 2 y 4",
+      "art. 330, inc. final"
+    ],
+    "texto_fuente": "El valor en aduana de las mercancías importadas se determinará en dólares de los Estados Unidos de América. [...] El valor de la mercancía o de cualquiera de los elementos conformantes del valor en aduana, negociados en una moneda diferente al dólar de los Estados Unidos de América, será convertido a esta moneda aplicando el tipo de cambio vigente el último día hábil de la semana anterior a la fecha de presentación y aceptación de la declaración aduanera de las mercancías importadas. [...] De este tratamiento se exceptúan los casos en los que el contrato de venta de las mercancías importadas estipula un tipo de cambio fijo, de acuerdo con lo establecido en la Opinión Consultiva 20.1 del Comité Técnico de Valoración en Aduana de la Organización Mundial de Aduanas (OMA). [...] El valor en aduana expresado en dólares de los Estados Unidos de América se convertirá a pesos colombianos, teniendo en cuenta la tasa de cambio representativa de mercado que informe la Superintendencia Financiera o la entidad que haga sus veces, para el último día hábil de la semana anterior a la fecha de presentación y aceptación de la declaración aduanera.",
+    "pregunta": "Una importadora compró a un proveedor de España un lote de válvulas por EUR 40.000. El contrato de compraventa fijó que, para todos los efectos del pago, el euro se liquidará a USD 1,10. El flete (USD 3.000) y el seguro (USD 500) se pactaron y pagaron en dólares. Para el último día hábil de la semana anterior a la presentación y aceptación de la declaración, el tipo de cambio publicado fue de USD 1,15 por euro y la TRM, de $4.000. El día en que se firmó el contrato, la TRM era de $3.800. Una analista de la DIAN verifica el valor en aduana en pesos. ¿Cuál es el correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$198.000.000: los euros a la tasa publicada, más el flete y el seguro, a la TRM de esa semana.",
+        "explicacion": "Incorrecta. Aplica a los euros el tipo de cambio publicado, pero el art. 15 exceptúa los contratos que estipulan un tipo de cambio fijo: (40.000 × 1,15 + 3.500) × 4.000."
+      },
+      {
+        "id": "B",
+        "texto": "$188.100.000: los euros a la tasa publicada, más el flete y el seguro, a la TRM del contrato.",
+        "explicacion": "Incorrecta. Combina dos errores: ignora el tipo de cambio fijo del contrato y usa la TRM de la firma, cuando los dólares se pasan a pesos con la TRM del último día hábil de la semana anterior a la declaración: (40.000 × 1,15 + 3.500) × 3.800."
+      },
+      {
+        "id": "C",
+        "texto": "$190.000.000: los euros a la tasa pactada, más el flete y el seguro, a la TRM de esa semana.",
+        "explicacion": "Correcta. Como el contrato estipula un tipo de cambio fijo, los euros se convierten con él (art. 15, inc. 2, excepción de la Opinión Consultiva 20.1). Los dólares se pasan a pesos con la TRM del último día hábil de la semana anterior (art. 15, inc. 4): (40.000 × 1,10 + 3.000 + 500) × 4.000 = 47.500 × 4.000."
+      },
+      {
+        "id": "D",
+        "texto": "$180.500.000: los euros a la tasa pactada, más el flete y el seguro, a la TRM del contrato.",
+        "explicacion": "Incorrecta. El tipo de cambio fijo del contrato solo sustituye la conversión del euro a dólares. El paso a pesos sigue la regla general: TRM del último día hábil de la semana anterior a la presentación y aceptación (art. 15, inc. 4)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el contrato fijó el euro a USD 1,10; el flete y el seguro están en dólares. Regla: el art. 15 convierte a dólares con el tipo de cambio del último día hábil de la semana anterior, salvo cuando el contrato de venta estipula un tipo de cambio fijo; los dólares se pasan a pesos con la TRM de ese último día hábil. Cálculo: (40.000 × 1,10 + 3.500) × $4.000 = $190.000.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ADU-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Base gravable y liquidación de tributos aduaneros",
+    "subtema": "Base gravable del IVA en la importación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario",
+    "articulos": [
+      "art. 459, inc. 1 (modificado por el art. 126 de la Ley 633 de 2000)",
+      "art. 16, nums. 1 y 3, del Decreto 1165 de 2019 (num. 3 modificado por el art. 5 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "La base gravable, sobre la cual se liquida el impuesto sobre las ventas en el caso de las mercancías importadas, será la misma que se tiene en cuenta para liquidar los derechos de aduana, adicionados con el valor de este gravamen. [...] Para los derechos de aduana, se toma como base gravable el valor en aduana de la mercancía importada, determinado conforme lo establecen las disposiciones que rigen la valoración aduanera. [...] Para el impuesto sobre las ventas (IVA) en la importación, la base gravable se establecerá conforme con lo previsto en el artículo 459 del Estatuto Tributario y normas que lo reglamenten.",
+    "pregunta": "En una importación ordinaria de electrodomésticos, el valor en aduana es de $200.000.000 (el valor FOB es de $180.000.000) y el gravamen arancelario liquidado es de $20.000.000. Después del levante, el importador pagó $5.000.000 por llevarlos a su bodega. La mercancía está gravada con la tarifa general del IVA del 19 %. Un analista de la DIAN revisa el IVA liquidado en la declaración. ¿Cuál es el valor correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$38.000.000: el 19 % del valor en aduana, sin tener en cuenta el gravamen arancelario.",
+        "explicacion": "Incorrecta. La base del IVA en la importación no es solo el valor en aduana: se le suma el gravamen arancelario (art. 459 del ET): 19 % × $200.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$41.800.000: el 19 % del valor en aduana con el gravamen arancelario sumado.",
+        "explicacion": "Correcta. La base gravable del IVA en la importación es la de los derechos de aduana, es decir, el valor en aduana (art. 16, num. 1, del Decreto 1165), más el valor del gravamen arancelario (art. 459 del ET, al que remite el art. 16, num. 3): 19 % × ($200.000.000 + $20.000.000)."
+      },
+      {
+        "id": "C",
+        "texto": "$34.200.000: el 19 % del valor FOB de los electrodomésticos importados.",
+        "explicacion": "Incorrecta. Toma el valor FOB, que no incluye el flete ni el seguro. La base parte del valor en aduana, que es la base de los derechos de aduana, y se le suma el arancel."
+      },
+      {
+        "id": "D",
+        "texto": "$42.750.000: el 19 % del valor en aduana, el arancel y el transporte a la bodega.",
+        "explicacion": "Incorrecta. El transporte a la bodega se causó después del levante: no hace parte del valor en aduana ni de la base del IVA en la importación (art. 459 del ET): 19 % × $225.000.000."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: valor en aduana de $200.000.000 y arancel de $20.000.000; el transporte a la bodega es posterior al levante. Regla: el art. 16, num. 3, del Decreto 1165 remite al art. 459 del ET, según el cual la base del IVA en la importación es la misma de los derechos de aduana (el valor en aduana) más el valor del gravamen arancelario. Cálculo: 19 % × $220.000.000 = $41.800.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-066",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Base gravable y liquidación de tributos aduaneros",
+    "subtema": "Tarifas aplicables en la declaración de corrección",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 14, inc. 1 y nums. 1 (modificado por el art. 3 del Decreto 659 de 2024) y 2",
+      "art. 296, inc. 1",
+      "art. 16, num. 1"
+    ],
+    "texto_fuente": "Los tributos aduaneros aplicables a la importación, serán los señalados a continuación, teniendo en cuenta lo previsto en el artículo 15 del presente decreto: [...] Cuando se trate de una declaración anticipada o inicial, serán los vigentes en la fecha de presentación y aceptación de la respectiva declaración de importación. [...] 2. Cuando se trate de una declaración de corrección, serán los vigentes en la fecha de la presentación y aceptación de la Declaración objeto de corrección. [...] La Declaración de Importación se podrá corregir voluntariamente sólo para subsanar los siguientes errores: subpartida arancelaria, tarifas, tasa de cambio [...] valor FOB, fletes, seguros, otros gastos, ajustes y valor en aduana",
+    "pregunta": "Una importadora presentó y le aceptaron el jueves 15 de enero de 2026 una declaración inicial de importación con un valor en aduana de $300.000.000 y un arancel del 15 %. Un decreto vigente desde el domingo 1 de febrero de 2026 bajó ese arancel al 10 %. El viernes 20 de febrero de 2026 la importadora presentó una declaración de corrección para incluir un flete que había omitido, con lo que el valor en aduana subió a $320.000.000. Un gestor de la DIAN revisa la corrección. ¿Qué gravamen arancelario total debe quedar liquidado en ella?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$32.000.000: el 10 % sobre $320.000.000, porque la corrección se presentó cuando ya regía el nuevo arancel.",
+        "explicacion": "Incorrecta. En la declaración de corrección, los tributos son los vigentes en la fecha de presentación y aceptación de la declaración que se corrige, no los de la fecha de la corrección (art. 14, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "$47.000.000: el 15 % sobre los $300.000.000 iniciales y el 10 % sobre los $20.000.000 del flete agregado.",
+        "explicacion": "Incorrecta. No hay una tarifa para la parte inicial y otra para la que se agrega: toda la declaración corregida se liquida con los tributos vigentes cuando se aceptó la declaración objeto de corrección (art. 14, num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "$45.000.000: el 15 % sobre $300.000.000, porque la corrección no puede aumentar la base gravable.",
+        "explicacion": "Incorrecta. La corrección voluntaria procede, entre otros, para subsanar errores en fletes y en el valor en aduana (art. 296), así que la base corregida es de $320.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "$48.000.000: el 15 % sobre $320.000.000, con el arancel que regía al aceptarse la declaración inicial.",
+        "explicacion": "Correcta. En la declaración de corrección, los tributos aplicables son los vigentes en la fecha de presentación y aceptación de la declaración que se corrige (art. 14, num. 2), es decir, el 15 % del 15 de enero. La base es el valor en aduana corregido, que incluye el flete (arts. 16 y 296): 15 % × $320.000.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la declaración inicial se aceptó con arancel del 15 %; la corrección, presentada cuando ya regía el 10 %, agregó un flete omitido. Regla: en la declaración de corrección rigen los tributos vigentes en la fecha de presentación y aceptación de la declaración objeto de corrección (art. 14, num. 2), y la corrección puede subsanar fletes y valor en aduana (art. 296). Cálculo: 15 % × $320.000.000 = $48.000.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ADU-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Valoración aduanera",
+    "subtema": "Excepciones a la Declaración Andina del Valor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 327, inc. 1 y nums. 1, 4, 6 y 8"
+    ],
+    "texto_fuente": "Toda mercancía que se someta a una declaración aduanera de importación está sujeta a una Declaración Andina del Valor, con las excepciones que se presentan a continuación: [...] 1. Importaciones cuyo valor FOB sea inferior a los cinco mil dólares de los Estados Unidos de América (USD 5.000). [...] 4. Importaciones destinadas a cubrir servicios de salud, alimentación, asistencia técnica, beneficencia, educación, investigación científica y cultura, efectuadas por la Nación, los departamentos, los municipios, el Distrito Capital, los Distritos Especiales, los Establecimientos Públicos y las Entidades Oficiales sin ánimo de lucro. [...] 6. Importaciones de equipajes de viajeros y menaje de casa. [...] 8. Declaración de modificación mediante la cual se finaliza la modalidad de transformación y/o ensamble importando el bien final.",
+    "pregunta": "Una analista de la DIAN revisa cuatro declaraciones de importación presentadas sin Declaración Andina del Valor: 1) la de un municipio, por equipos de cocina de USD 60.000 (FOB) para su programa de alimentación escolar; 2) la de una fundación privada sin ánimo de lucro, por microscopios de USD 40.000 (FOB) para sus proyectos de investigación científica; 3) la del menaje doméstico de una familia que regresó a vivir al país, valorado en USD 12.000 (FOB); y 4) la declaración de modificación con la que una ensambladora termina la modalidad de transformación y/o ensamble e importa el bien final. ¿Cuál o cuáles debían presentarse con Declaración Andina del Valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La 1 y la 2, porque en ambas el valor FOB supera los USD 5.000.",
+        "explicacion": "Incorrecta. El valor FOB inferior a USD 5.000 no es la única excepción. La del municipio está exceptuada por ser una importación de una entidad territorial para alimentación (art. 327, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "La 2 y la 4, porque la fundación es privada y la ensambladora también es un particular.",
+        "explicacion": "Incorrecta. La declaración de modificación que termina la transformación y/o ensamble importando el bien final está exceptuada, sin importar quién sea la ensambladora (art. 327, num. 8)."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna, porque cada una encaja en alguna de las excepciones de la norma.",
+        "explicacion": "Incorrecta. La fundación no encaja en el num. 4: aunque importa para investigación científica y no tiene ánimo de lucro, la excepción cubre a la Nación, las entidades territoriales, los establecimientos públicos y las entidades oficiales sin ánimo de lucro."
+      },
+      {
+        "id": "D",
+        "texto": "La 2, porque la fundación que importa los microscopios no es una entidad oficial.",
+        "explicacion": "Correcta. La del municipio (num. 4), la del menaje (num. 6) y la modificación que termina el ensamble (num. 8) están exceptuadas. La de la fundación supera USD 5.000 y no cabe en el num. 4, que solo cubre a entidades públicas y a entidades oficiales sin ánimo de lucro."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: quién importa y para qué. Regla: toda declaración de importación lleva Declaración Andina del Valor, salvo las excepciones del art. 327: valor FOB inferior a USD 5.000 (num. 1), importaciones para salud, alimentación, investigación y otros fines hechas por la Nación, las entidades territoriales, los establecimientos públicos y las entidades oficiales sin ánimo de lucro (num. 4), menajes (num. 6) y la modificación que termina la transformación y/o ensamble (num. 8). Conclusión: solo la fundación privada debía presentarla.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ADU-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Modalidades de importación",
+    "subtema": "Garantía sin exportación previa y paso a importación ordinaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 199, incs. 1, 3, 4 y 5, y par."
+    ],
+    "texto_fuente": "Se podrá importar sin el pago de tributos aduaneros, la mercancía que, en cumplimiento de una garantía del fabricante o proveedor, se haya reparado en el exterior, o reemplace otra previamente exportada, que haya resultado averiada, defectuosa o impropia para el fin para el cual fue importada. [...] La Declaración de Importación en cumplimiento de garantía deberá presentarse dentro del año siguiente a la exportación de la mercancía que sea objeto de reparación o reemplazo. [...] En casos debidamente justificados ante la autoridad aduanera, se podrá autorizar la importación de la mercancía que vaya a sustituir la destruida, averiada, defectuosa o impropia, sin exigir la exportación previa. En estos eventos se deberá constituir una garantía que asegure la exportación o la destrucción, dentro de los seis (6) meses siguientes a la importación en cumplimiento de garantía de la mercancía, en los términos y condiciones que establezca la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). [...] En caso de incumplimiento, se hará efectiva la garantía, a menos que se modifique la modalidad de importación en cumplimiento de garantía a modalidad de importación ordinaria, dentro del mes siguiente al vencimiento del término que tenía para exportar o destruir la mercancía, con el pago de los tributos aduaneros correspondientes. [...] No se exigirá la exportación de la mercancía averiada, defectuosa o impropia para el fin para el cual fue importada, cuando se autorice su destrucción por la autoridad aduanera o se acepte su abandono voluntario.",
+    "pregunta": "El rotor de un molino de una minera se averió. Con base en la garantía del fabricante extranjero, la DIAN autorizó importar el rotor de reemplazo en cumplimiento de garantía sin exportar antes el averiado, y la minera constituyó la garantía exigida. La declaración se aceptó y obtuvo levante el lunes 16 de marzo de 2026. La minera no exportó ni destruyó el rotor averiado, y la DIAN no autorizó su destrucción ni aceptó su abandono. El viernes 2 de octubre de 2026 la minera consulta a un gestor qué puede hacer para que no se haga efectiva la garantía. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede pasar la declaración a importación ordinaria, con pago de los tributos, a más tardar el 16 de octubre de 2026.",
+        "explicacion": "Correcta. Tenía seis meses desde la importación para exportar o destruir el rotor averiado, hasta el 16 de septiembre de 2026. Vencido ese término, la garantía no se hace efectiva si dentro del mes siguiente modifica la modalidad a importación ordinaria con el pago de los tributos (art. 199, inc. 5): hasta el 16 de octubre de 2026."
+      },
+      {
+        "id": "B",
+        "texto": "Que aún puede exportar el rotor averiado hasta el 16 de marzo de 2027, al cumplirse un año de la importación.",
+        "explicacion": "Incorrecta. El plazo de un año del art. 199 es para presentar la declaración cuando la mercancía se exportó antes. Cuando se autoriza importar sin exportación previa, la exportación o destrucción debe hacerse en los seis meses siguientes a la importación."
+      },
+      {
+        "id": "C",
+        "texto": "Que ya no tiene opción: el plazo venció el 16 de septiembre de 2026 y la garantía se hará efectiva.",
+        "explicacion": "Incorrecta. El incumplimiento del plazo de seis meses no lleva sin más a hacer efectiva la garantía: la norma permite evitarlo modificando la modalidad a importación ordinaria dentro del mes siguiente al vencimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede pasar la declaración a importación ordinaria, con pago de los tributos, a más tardar el 16 de marzo de 2027.",
+        "explicacion": "Incorrecta. Confunde el plazo para modificar la modalidad. La norma da un mes, no seis meses, contado desde el vencimiento del término para exportar o destruir (16 de septiembre de 2026)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el reemplazo se importó sin exportación previa el 16 de marzo de 2026 y el averiado no salió ni se destruyó. Regla: en ese evento la garantía asegura la exportación o destrucción dentro de los seis meses siguientes a la importación; si se incumple, se hace efectiva, salvo que dentro del mes siguiente al vencimiento se modifique la modalidad a importación ordinaria con pago de tributos (art. 199). Cálculo: vence el 16 de septiembre; el mes siguiente llega al 16 de octubre de 2026.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-ADU-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Reimportación",
+    "subtema": "Reimportación en el mismo estado dentro de la garantía comercial del producto exportado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 198, inc. 1, inc. final y par. 2 (adicionado por el art. 31 del Decreto 659 de 2024)",
+      "art. 199, inc. 1"
+    ],
+    "texto_fuente": "Se podrá importar sin el pago de los tributos aduaneros, la mercancía exportada temporal o definitivamente que se encuentre en libre disposición, siempre que no haya sufrido modificación en el extranjero y se establezca plenamente que la mercancía que se reimporta es la misma que fue exportada y que se hayan cancelado los impuestos internos exonerados y reintegrado los beneficios obtenidos con la exportación. [...] La Declaración de Importación deberá presentarse dentro del año siguiente a la exportación de la mercancía, salvo que con anterioridad a esta se haya autorizado un plazo mayor, teniendo en cuenta las condiciones de la operación que se realizará en el exterior o que con anterioridad al vencimiento de la exportación temporal para reimportación en el mismo Estado se hayan concedido por la autoridad aduanera prórrogas de permanencia de la mercancía en el exterior [...] Se podrá autorizar la reimportación en el mismo estado de mercancía exportada definitivamente, dentro de la vigencia de la garantía comercial otorgada al producto, siempre que la mercancía no haya sufrido modificación alguna y se establezca plenamente que la mercancía que se reimporta es la misma que fue exportada. En estos eventos la garantía se constituye en un documento soporte de la reimportación. [...] Se podrá importar sin el pago de tributos aduaneros, la mercancía que, en cumplimiento de una garantía del fabricante o proveedor, se haya reparado en el exterior, o reemplace otra previamente exportada, que haya resultado averiada, defectuosa o impropia para el fin para el cual fue importada.",
+    "pregunta": "Una fábrica colombiana exportó en forma definitiva, el lunes 12 de mayo de 2025, un refrigerador industrial a un supermercado de Panamá, con una garantía comercial propia de 24 meses. En octubre de 2026 el comprador lo devolvió, sin que se le hubiera hecho ninguna modificación, para que la fábrica revise en Colombia una falla que reclamó con base en esa garantía. Con la exportación no se obtuvieron beneficios ni se exoneraron impuestos internos. Un inspector de la DIAN debe orientar a la fábrica sobre la modalidad de importación. ¿Cuál corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Importación en cumplimiento de garantía, sin tributos, porque el bien vuelve por un reclamo amparado por la garantía.",
+        "explicacion": "Incorrecta. Esa modalidad es para la mercancía que, por la garantía del fabricante o proveedor, se reparó en el exterior o reemplaza otra exportada (art. 199). El refrigerador no se reparó afuera ni reemplaza a otro: vuelve sin cambios."
+      },
+      {
+        "id": "B",
+        "texto": "Reimportación en el mismo estado, sin tributos, que puede autorizarse por seguir vigente la garantía comercial.",
+        "explicacion": "Correcta. Aunque pasó más de un año desde la exportación definitiva, puede autorizarse la reimportación en el mismo estado dentro de la vigencia de la garantía comercial del producto, si no sufrió modificación y es el mismo bien; la garantía es documento soporte (art. 198, par. 2). La garantía vence en mayo de 2027."
+      },
+      {
+        "id": "C",
+        "texto": "Importación ordinaria con todos los tributos, porque ya pasó más de un año desde la exportación definitiva.",
+        "explicacion": "Incorrecta. El plazo general de un año (art. 198, inc. final) tiene una salida para la mercancía exportada definitivamente que regresa dentro de la vigencia de su garantía comercial (art. 198, par. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Reimportación en el mismo estado, pero solo si la DIAN había prorrogado antes su permanencia en el exterior.",
+        "explicacion": "Incorrecta. Las prórrogas de permanencia en el exterior se conceden antes del vencimiento de una exportación temporal. Esta fue definitiva, y lo que permite la reimportación después del año es la garantía comercial vigente (art. 198, par. 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: exportación definitiva en mayo de 2025, garantía comercial de 24 meses y regreso sin modificación en octubre de 2026. Regla: la reimportación en el mismo estado se presenta, en general, dentro del año siguiente a la exportación, pero el art. 198, par. 2, permite autorizarla dentro de la vigencia de la garantía comercial otorgada al producto, con la garantía como documento soporte. La importación en cumplimiento de garantía (art. 199) es para bienes reparados afuera o de reemplazo.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-ADU-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Modalidades de importación",
+    "subtema": "Importación con franquicia: venta a quien no tiene la exención",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 193, inc. 1",
+      "art. 194",
+      "art. 195, inc. 1"
+    ],
+    "texto_fuente": "Es aquella importación que, en virtud de Tratado, Convenio o ley, goza de exención total o parcial de tributos aduaneros y con base en la cual la mercancía queda en disposición restringida, salvo lo dispuesto en la norma que consagra el beneficio. [...] La autoridad aduanera podrá autorizar la enajenación de la mercancía importada con franquicia, a personas que tengan derecho a gozar de la misma exención, o la destinación a un fin en virtud del cual también se tenga igual derecho, sin que en ninguno de estos eventos se exija el pago de los tributos aduaneros. [...] Cuando se pretenda dejar la mercancía en libre disposición, previamente al cambio de destinación o a la enajenación, el importador o el futuro adquirente, deberá modificar la Declaración de Importación, cancelando los tributos aduaneros exonerados, liquidados sobre el valor aduanero de la mercancía, determinado conforme con las normas que rijan la materia y teniendo en cuenta las tarifas y la tasa de cambio vigentes al momento de presentación y aceptación de la modificación. Este cambio de titular o de destinación no requerirá autorización de la Aduana.",
+    "pregunta": "Una entidad pública importó con franquicia, al amparo de un convenio de cooperación internacional que exime de tributos aduaneros los equipos de un proyecto, un vehículo todoterreno. Tres años después decide venderlo a una empresa privada que no tiene derecho a ninguna exención. Antes de la venta, consulta a una facilitadora de la DIAN cómo debe proceder. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que pida autorización a la DIAN para la venta y pague los tributos con las tarifas y la tasa de cambio del día en que modifique la declaración.",
+        "explicacion": "Incorrecta. La autorización de la DIAN se exige para vender a quien tiene derecho a la misma exención (art. 194). Para dejar el vehículo en libre disposición, el cambio de titular no requiere autorización (art. 195)."
+      },
+      {
+        "id": "B",
+        "texto": "Que modifique la declaración antes de vender, sin pedir autorización, y pague los tributos con las tarifas y la tasa de cambio de ese día.",
+        "explicacion": "Correcta. Para enajenar a quien no tiene la exención, antes de la venta debe modificarse la declaración pagando los tributos exonerados sobre el valor aduanero, con las tarifas y la tasa de cambio vigentes al presentar y aceptar la modificación; ese cambio de titular no requiere autorización (art. 195)."
+      },
+      {
+        "id": "C",
+        "texto": "Que modifique la declaración antes de vender, sin pedir autorización, y pague los tributos con las tarifas y la tasa de cambio de la importación inicial.",
+        "explicacion": "Incorrecta. Los tributos exonerados se liquidan con las tarifas y la tasa de cambio vigentes al momento de presentación y aceptación de la modificación, no las de la importación con franquicia (art. 195)."
+      },
+      {
+        "id": "D",
+        "texto": "Que pida autorización a la DIAN para la venta y pague los tributos con las tarifas y la tasa de cambio de la importación inicial.",
+        "explicacion": "Incorrecta. Combina dos errores: exige una autorización que el art. 195 descarta para este cambio de titular y liquida con las tarifas y la tasa de la importación inicial."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el comprador no tiene derecho a la exención. Regla: la mercancía importada con franquicia queda en disposición restringida (art. 193). Venderla a quien goza de la misma exención exige autorización de la DIAN y no causa tributos (art. 194); para dejarla en libre disposición, antes de venderla se modifica la declaración pagando los tributos exonerados con las tarifas y la tasa de cambio vigentes a la fecha de la modificación, sin autorización (art. 195).",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ADU-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Importación temporal",
+    "subtema": "Ampliación del término en la importación temporal de largo plazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 206",
+      "art. 201, num. 2",
+      "art. 203, inc. 2"
+    ],
+    "texto_fuente": "Si la mercancía se importa temporalmente por un término inferior al máximo establecido, el declarante podrá ampliar por una sola vez el plazo inicialmente declarado, sin exceder el máximo establecido en el artículo 201 del presente Decreto. Para tal efecto se deberá modificar la Declaración de importación en cuanto al término de la misma. Cuando se trate de importaciones a largo plazo, se deberá reliquidar el saldo de los tributos aduaneros, teniendo en cuenta las nuevas cuotas que se generen. En ambos eventos, se deberán ampliar las garantías inicialmente otorgadas. [...] 2. De largo plazo, cuando se trate de bienes de capital, sus piezas y accesorios necesarios para su normal funcionamiento, que vengan en el mismo embarque. El plazo máximo de esta importación será de cinco (5) años contados a partir del levante de la mercancía. [...] Los tributos aduaneros así liquidados se distribuirán en cuotas semestrales iguales por el término de permanencia de la mercancía en el territorio aduanero nacional.",
+    "pregunta": "Una constructora importó temporalmente, a largo plazo, una perforadora con levante del lunes 1 de septiembre de 2025 y un término declarado de dos años. Los tributos aduaneros liquidados fueron USD 48.000, en cuotas semestrales de USD 12.000, y ya pagó las dos primeras. En octubre de 2026 decide ampliar, por primera vez, el término de permanencia hasta el máximo que permite la modalidad. Un gestor de la DIAN revisa la modificación de la declaración. ¿Cuál debe ser el valor de cada cuota semestral desde entonces?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "USD 4.800: los USD 48.000 se reparten de nuevo entre los diez semestres del término total.",
+        "explicacion": "Incorrecta. No se reparte otra vez el total: lo que se reliquida es el saldo pendiente (art. 206), y los USD 24.000 ya pagados no vuelven a dividirse."
+      },
+      {
+        "id": "B",
+        "texto": "USD 4.000: lo pendiente, USD 24.000, se reparte solo en los seis semestres que se agregan.",
+        "explicacion": "Incorrecta. Olvida los dos semestres que aún quedaban del término original. Con el máximo de cinco años desde el levante (art. 201), quedan ocho semestres, no seis."
+      },
+      {
+        "id": "C",
+        "texto": "USD 3.000: lo pendiente, USD 24.000, se reparte en los ocho semestres que quedan hasta el quinto año.",
+        "explicacion": "Correcta. La ampliación procede una sola vez sin exceder cinco años desde el levante (arts. 201 y 206), es decir, hasta el 1 de septiembre de 2030. Se reliquida el saldo (48.000 − 24.000 = USD 24.000) en las nuevas cuotas: los ocho semestres restantes. 24.000 / 8 = USD 3.000. Además, debe ampliarse la garantía."
+      },
+      {
+        "id": "D",
+        "texto": "USD 12.000: siguen las dos cuotas pendientes y en los años agregados no se paga nada.",
+        "explicacion": "Incorrecta. En la importación de largo plazo, la ampliación del término obliga a reliquidar el saldo de los tributos con las nuevas cuotas que se generan (art. 206), que son iguales por todo el término de permanencia (art. 203)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: término inicial de dos años, levante del 1 de septiembre de 2025, USD 24.000 pagados y ampliación al máximo. Regla: el término declarado puede ampliarse por una sola vez sin superar los cinco años desde el levante; en largo plazo se reliquida el saldo de los tributos con las nuevas cuotas y se amplía la garantía (arts. 201, 203 y 206). Cálculo: quedan 8 semestres hasta septiembre de 2030; 24.000 / 8 = USD 3.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ADU-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Importación temporal",
+    "subtema": "Paso de importación temporal de corto plazo a ordinaria: tarifas y tasa aplicables",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 208, incs. 1 y 5 (modificado por el art. 32 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "Cuando en una importación temporal se decida dejar la mercancía en el país, el importador deberá, antes del vencimiento del plazo de la importación temporal, modificar la declaración de importación temporal a importación ordinaria o con franquicia y obtener el correspondiente levante [...] Cuando se trate de cambiar la modalidad de importación temporal de corto plazo a ordinaria, los tributos se deberán liquidar con base en las tarifas y tasas vigentes en la fecha de presentación y aceptación de la modificación.",
+    "pregunta": "Una productora de conciertos importó temporalmente, a corto plazo, equipos de sonido con levante del jueves 5 de marzo de 2026 y un término de seis meses. Al aceptarse esa declaración, el arancel de las consolas era del 10 % y la tasa de cambio aplicable, de $4.100 por dólar. El jueves 20 de agosto de 2026 decidió quedarse con una consola cuyo valor en aduana es de USD 25.000 y ese día presentó la modificación a importación ordinaria. Para esa fecha un decreto había bajado el arancel al 5 % y la tasa de cambio aplicable era de $3.900. Un analista de la DIAN revisa el gravamen arancelario liquidado. ¿Cuál es el correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$10.250.000: con el arancel y la tasa de cambio que regían al aceptarse la importación temporal.",
+        "explicacion": "Incorrecta. Al pasar de corto plazo a ordinaria, los tributos no se liquidan con las condiciones de la declaración temporal: 25.000 × 4.100 × 10 %."
+      },
+      {
+        "id": "B",
+        "texto": "$4.875.000: con el arancel y la tasa de cambio que regían al presentarse la modificación.",
+        "explicacion": "Correcta. Cuando se cambia una importación temporal de corto plazo a ordinaria, los tributos se liquidan con las tarifas y tasas vigentes en la fecha de presentación y aceptación de la modificación (art. 208): 25.000 × $3.900 × 5 % = $4.875.000. La modificación se hizo antes del vencimiento del plazo (5 de septiembre)."
+      },
+      {
+        "id": "C",
+        "texto": "$5.125.000: con el arancel de la modificación y la tasa de cambio de la importación temporal.",
+        "explicacion": "Incorrecta. Aplica bien la tarifa nueva, pero no la tasa: la norma toma las tarifas y también las tasas vigentes al presentar la modificación: 25.000 × 4.100 × 5 %."
+      },
+      {
+        "id": "D",
+        "texto": "$9.750.000: con el arancel de la importación temporal y la tasa de cambio de la modificación.",
+        "explicacion": "Incorrecta. Aplica bien la tasa nueva, pero no la tarifa: el arancel que se usa es el vigente al presentar la modificación: 25.000 × 3.900 × 10 %."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la consola se queda en el país y la modificación se presentó el 20 de agosto de 2026, dentro del término y con arancel y tasa distintos de los iniciales. Regla: para dejar la mercancía, antes del vencimiento se modifica la declaración temporal a ordinaria (art. 208, inc. 1); en el corto plazo, los tributos se liquidan con las tarifas y tasas vigentes en la fecha de presentación y aceptación de la modificación. Cálculo: 25.000 × $3.900 × 5 % = $4.875.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-073",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Exportación temporal para perfeccionamiento pasivo que no pudo realizarse",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 366, inc. 1",
+      "art. 371, inc. 1 y num. 3",
+      "art. 198, inc. 1"
+    ],
+    "texto_fuente": "Es la modalidad de exportación que regula la salida temporal de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser reimportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más. [...] La modalidad de exportación temporal terminará si dentro del plazo fijado se presenta una de las siguientes situaciones: [...] 3. Reimportación en el mismo estado, cuando la mercancía no pudo ser sometida al perfeccionamiento pasivo que motivó la exportación. [...] Se podrá importar sin el pago de los tributos aduaneros, la mercancía exportada temporal o definitivamente que se encuentre en libre disposición, siempre que no haya sufrido modificación en el extranjero y se establezca plenamente que la mercancía que se reimporta es la misma que fue exportada y que se hayan cancelado los impuestos internos exonerados y reintegrado los beneficios obtenidos con la exportación.",
+    "pregunta": "Una textilera exportó temporalmente para perfeccionamiento pasivo 2.000 metros de tela cruda, para que un taller de Ecuador la tiñera. La DIAN fijó un plazo de seis meses, contados desde el miércoles 15 de abril de 2026. Una falla en la maquinaria obligó al taller a cerrar, y la tela regresará sin teñir y sin ninguna transformación el lunes 21 de septiembre de 2026. Una gestora de la DIAN debe indicar cómo se termina la modalidad. ¿Qué debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que se termina con la reimportación por perfeccionamiento pasivo, pagando tributos solo sobre los fletes de ida y regreso.",
+        "explicacion": "Incorrecta. La reimportación por perfeccionamiento pasivo grava el valor agregado en el exterior, y aquí no hubo ninguno. La base de transporte y seguro es una regla especial para soportes de obras cinematográficas (art. 196, par. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que se termina con una importación ordinaria, pagando tributos sobre todo el valor de la tela que regresa del exterior.",
+        "explicacion": "Incorrecta. La tela es mercancía nacional que salió en exportación temporal y vuelve sin cambios dentro del plazo. No hay razón para nacionalizarla de nuevo con todos los tributos."
+      },
+      {
+        "id": "C",
+        "texto": "Que se termina con la reimportación en el mismo estado, sin tributos, porque la tela regresa antes de vencer el plazo.",
+        "explicacion": "Correcta. La exportación temporal para perfeccionamiento pasivo termina, dentro del plazo fijado, con la reimportación en el mismo estado cuando la mercancía no pudo someterse al perfeccionamiento que motivó la exportación (art. 371, num. 3), y esa reimportación no causa tributos si no hubo modificación en el extranjero (art. 198). El plazo de seis meses vence el 15 de octubre de 2026 y la tela regresa el 21 de septiembre."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe pedir la prórroga de un año, porque la modalidad solo termina cuando la tela vuelve ya transformada.",
+        "explicacion": "Incorrecta. La prórroga de un año es una opción para que la mercancía siga en el exterior (art. 366), no una obligación. La modalidad también termina con la reimportación en el mismo estado si el proceso no pudo hacerse (art. 371)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el taller no pudo teñir la tela y esta regresa sin cambios el 21 de septiembre, antes de que venza el plazo de seis meses (15 de octubre de 2026). Regla: la exportación temporal para perfeccionamiento pasivo termina, entre otras, con la reimportación en el mismo estado cuando, dentro del plazo, la mercancía vuelve sin haber podido someterse al perfeccionamiento que motivó la exportación (art. 371, num. 3); esa reimportación no causa tributos si no hubo modificación (art. 198).",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-074",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Reexportación de partes para reparación y reembarque de mercancía en depósito",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 380 y par.",
+      "art. 366, inc. 1",
+      "art. 383, inc. 1",
+      "art. 171, inc. 1 y par. 1, inc. 1",
+      "art. 346, inc. 1"
+    ],
+    "texto_fuente": "Es la modalidad de exportación que regula la salida definitiva del territorio aduanero nacional, de mercancías que estuvieron sometidas a una modalidad de importación temporal o a la modalidad de transformación y/o ensamble. [...] También podrán declararse por esta modalidad los bienes de capital o sus partes, que encontrándose importados temporalmente, deban salir para ser objeto de reparación o reemplazo en el exterior o en una Zona Franca. [...] Es la modalidad de exportación que regula la salida temporal de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser reimportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más. [...] Es la modalidad de exportación que regula la salida efectiva del Territorio Aduanero Nacional de mercancías procedentes del exterior, que se encuentran en lugar de arribo, en almacenamiento en un depósito habilitado, en un depósito franco o en centros de distribución logística internacional, que no han sido sometidas a una modalidad de importación, ni han quedado en abandono. [...] Para efectos aduaneros, la mercancía podrá permanecer almacenada mientras se realizan los trámites para obtener su levante, hasta por el término de un (1) mes, contado desde la fecha de su llegada al territorio aduanero nacional. [...] Vencido el término previsto en este artículo sin que se hubiere obtenido el levante, o sin que se hubiere reembarcado la mercancía, operará el abandono legal. [...] Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo definitivo en otro país.",
+    "pregunta": "Una constructora tiene dos mercancías que deben salir del país. La primera es el motor averiado de una grúa que importó temporalmente a largo plazo y que debe ir a Alemania para que lo reparen. La segunda es un contenedor de repuestos que llegó de China hace dos semanas y sigue en un depósito habilitado; como no eran los repuestos que había pedido, la constructora no presentó la declaración de importación y decidió devolverlos al proveedor. Un analista de la DIAN debe indicar la modalidad de exportación de cada una. ¿Cuál es la correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El motor sale en exportación temporal para perfeccionamiento pasivo y el contenedor, en reembarque.",
+        "explicacion": "Incorrecta en cuanto al motor. La exportación temporal para perfeccionamiento pasivo es para mercancías nacionales o nacionalizadas (art. 366), y el motor está en importación temporal, sin nacionalizar."
+      },
+      {
+        "id": "B",
+        "texto": "El motor sale en reexportación y el contenedor, en exportación definitiva.",
+        "explicacion": "Incorrecta en cuanto al contenedor. La exportación definitiva es para mercancías nacionales o nacionalizadas (art. 346), y los repuestos nunca se declararon en importación."
+      },
+      {
+        "id": "C",
+        "texto": "El motor sale en exportación temporal para perfeccionamiento pasivo y el contenedor, en exportación definitiva.",
+        "explicacion": "Incorrecta. Las dos modalidades exigen mercancía nacional o nacionalizada (arts. 346 y 366), y ninguna de las dos lo es: el motor está en importación temporal y los repuestos no se han importado."
+      },
+      {
+        "id": "D",
+        "texto": "El motor sale en reexportación y el contenedor, en reembarque.",
+        "explicacion": "Correcta. Las partes de bienes de capital importados temporalmente que deben salir para reparación en el exterior pueden declararse en reexportación (art. 380, par.). Los repuestos llegaron hace dos semanas, dentro del mes de almacenamiento (art. 171), así que no han caído en abandono, y nunca se declararon en importación: salen en reembarque (art. 383)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el motor está en importación temporal, sin nacionalizar, y los repuestos siguen en el depósito sin declaración de importación y dentro del mes de almacenamiento. Regla: la reexportación regula la salida de mercancía en importación temporal, incluidas las partes de bienes de capital que salen a reparar (art. 380); el reembarque, la de mercancía extranjera en depósito que no se ha importado ni ha caído en abandono (arts. 383 y 171). Las exportaciones definitiva y temporal exigen mercancía nacional o nacionalizada.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ADU-075",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Importación temporal para perfeccionamiento activo",
+    "subtema": "Procesamiento industrial: usuarios y liquidación al pasar a importación ordinaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 244, inc. 1 (modificado por el art. 64 del Decreto 360 de 2021)",
+      "art. 245, inc. 2 (modificado por el art. 65 del Decreto 360 de 2021)",
+      "art. 249, num. 4, incs. 1 y 2"
+    ],
+    "texto_fuente": "Es la modalidad bajo la cual se importan temporalmente materias primas e insumos que van a ser sometidos a transformación, procesamiento o manufactura industrial, por parte de los Operadores Económicos Autorizados tipo importador o tipo exportador y de los beneficiarios de la condición de usuario aduanero con trámite simplificado, con base en la cual su disposición quedará restringida. [...] Los bienes resultantes de la transformación, procesamiento o manufactura industrial efectuada por los importadores, deberán destinarse por lo menos en el treinta por ciento (30%) a la exportación, en la oportunidad que hubiere señalado la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). [...] 4. Importación ordinaria de los insumos y materias primas importadas temporalmente, o de los productos resultantes de su procesamiento industrial, antes del vencimiento del término fijado por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) para la respectiva operación de procesamiento industrial. Para el efecto se pagarán los tributos aduaneros correspondientes [...] Para la liquidación de los tributos aduaneros de los bienes obtenidos como resultado del procesamiento industrial, se tendrá en cuenta el valor en aduana de los insumos y materias primas de origen extranjero y las tarifas correspondientes a la subpartida por la cual se clasifique el bien final a la tasa de cambio vigente en la fecha de modificación de la declaración.",
+    "pregunta": "Una sociedad que tiene la condición de usuario aduanero con trámite simplificado importador importó temporalmente para procesamiento industrial resina con un valor en aduana de USD 100.000, y con ella fabricó botellas. Dentro del plazo fijado por la DIAN exportó el 40 % de las botellas, y antes del vencimiento modificará la declaración a importación ordinaria para vender en el país el 60 % restante, que incorpora resina extranjera por USD 60.000. El arancel de la resina es del 5 % y el de las botellas, del 15 %, sin cambios desde la importación. La tasa de cambio fue de $3.800 al importar la resina y es de $4.000 en la fecha de la modificación. Un inspector de la DIAN revisa el gravamen arancelario de esa modificación. ¿Cuál es el correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$34.200.000: el 15 % sobre la resina incorporada en las botellas que se venden aquí, a la tasa de la importación.",
+        "explicacion": "Incorrecta. Usa bien la base y la tarifa del bien final, pero no la tasa de cambio: la norma toma la vigente en la fecha de modificación de la declaración: 60.000 × 3.800 × 15 %."
+      },
+      {
+        "id": "B",
+        "texto": "$36.000.000: el 15 % sobre la resina incorporada en las botellas que se venden aquí, a la tasa de la modificación.",
+        "explicacion": "Correcta. La liquidación toma el valor en aduana de las materias primas extranjeras utilizadas, con la tarifa de la subpartida del bien final y la tasa de cambio de la fecha de modificación (art. 249, num. 4): 60.000 × $4.000 × 15 % = $36.000.000. Como importadora, la sociedad debía exportar al menos el 30 % y exportó el 40 % (art. 245)."
+      },
+      {
+        "id": "C",
+        "texto": "$11.400.000: el 5 % sobre la resina incorporada en las botellas que se venden aquí, a la tasa de la importación.",
+        "explicacion": "Incorrecta. Combina dos errores: aplica la tarifa de la resina en vez de la del bien final y la tasa de cambio de la importación inicial: 60.000 × 3.800 × 5 %."
+      },
+      {
+        "id": "D",
+        "texto": "$60.000.000: el 15 % sobre toda la resina importada, a la tasa de cambio vigente en la fecha de la modificación.",
+        "explicacion": "Incorrecta. Incluye la resina que salió del país en las botellas exportadas. Solo se nacionaliza la parte que se queda: 100.000 × 4.000 × 15 %."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: usuario con trámite simplificado importador que exportó el 40 % y vende aquí el resto, con resina extranjera de USD 60.000. Regla: esta modalidad es para OEA y usuarios con trámite simplificado (art. 244); los importadores exportan al menos el 30 % (art. 245); al declarar en importación ordinaria los productos, se liquida sobre el valor en aduana de los insumos extranjeros, con la tarifa del bien final y la tasa de la fecha de modificación (art. 249, num. 4). Cálculo: 60.000 × $4.000 × 15 % = $36.000.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ADU-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Importación para transformación y/o ensamble",
+    "subtema": "Residuos del proceso y partes no utilizadas al vencer el plazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 250, inc. 1",
+      "art. 252, incs. 1, 3 y 4"
+    ],
+    "texto_fuente": "Es la modalidad bajo la cual se importan mercancías que van a ser sometidas a procesos de transformación y/o ensamble, por parte de industrias reconocidas como tales por la autoridad competente, y autorizadas para el efecto por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), y con base en la cual su disposición quedará restringida. [...] La modalidad de importación para transformación y/o ensamble se terminará, en todo o en parte, cuando las mercancías sean declaradas en importación ordinaria o en importación con franquicia, dentro del plazo establecido por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). [...] Los residuos, desperdicios o partes resultantes de la transformación, cuando se sometan a importación ordinaria, pagarán los tributos aduaneros de acuerdo con su clasificación en el Arancel de Aduanas. [...] o cuando dentro del término fijado por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), no se presentó la Declaración de Importación ordinaria o con franquicia, ni la mercancía se exportó o se reexportó, eventos en los cuales se entiende abandonada a favor de la Nación",
+    "pregunta": "Una fábrica de lavadoras, reconocida como industria de ensamble por la autoridad competente y autorizada por la DIAN, importó en la modalidad de transformación y/o ensamble 1.000 kits de partes. Dentro del plazo fijado por la DIAN ensambló 900 lavadoras y las declaró en importación ordinaria. Del proceso quedaron recortes de lámina extranjera que quiere vender en el país como chatarra. Además, 100 kits quedaron sin usar y el plazo venció sin que se declararan en importación ordinaria o con franquicia, ni se exportaran o reexportaran. Una analista de la DIAN debe precisar el tratamiento de los recortes y de los kits. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los recortes pagan tributos según su propia clasificación arancelaria, y los kits pasan a la Nación por tenerse como abandonados.",
+        "explicacion": "Correcta. Los residuos, desperdicios o partes resultantes de la transformación que se someten a importación ordinaria pagan los tributos según su clasificación en el arancel (art. 252, inc. 3). Si en el término de la DIAN no se declaró la mercancía ni se exportó o reexportó, se entiende abandonada a favor de la Nación (art. 252, inc. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Los recortes pagan tributos con la tarifa de la lavadora terminada, y los kits aún pueden declararse en importación ordinaria con intereses.",
+        "explicacion": "Incorrecta. La tarifa de la unidad producida se aplica a las partes incorporadas en el producto final, no a los residuos. Y vencido el término sin declarar, exportar ni reexportar, los kits se entienden abandonados a favor de la Nación."
+      },
+      {
+        "id": "C",
+        "texto": "Los recortes pagan tributos según su propia clasificación arancelaria, y los kits aún pueden declararse en importación ordinaria con intereses.",
+        "explicacion": "Incorrecta en cuanto a los kits. La terminación con importación ordinaria debe hacerse dentro del plazo de la DIAN; vencido sin declarar, exportar ni reexportar, la mercancía se entiende abandonada (art. 252, inc. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Los recortes pagan tributos con la tarifa de la lavadora terminada, y los kits pasan a la Nación por tenerse como abandonados.",
+        "explicacion": "Incorrecta en cuanto a los recortes. Los residuos y desperdicios pagan según su propia clasificación en el arancel (art. 252, inc. 3), no con la tarifa de la unidad producida."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: quedaron recortes que se venderán en el país y 100 kits sin usar cuyo plazo venció sin ninguna declaración ni salida. Regla: la modalidad es para industrias reconocidas y autorizadas (art. 250) y termina, en todo o en parte, con la importación ordinaria o con franquicia dentro del plazo (art. 252). Los residuos pagan según su propia clasificación (inc. 3) y la mercancía no declarada, exportada ni reexportada en el término se entiende abandonada a favor de la Nación (inc. 4).",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ADU-077",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Exportación de servicios e importación de bienes pagada con divisas no canalizadas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.17.1.1, inc. 1 y num. 1",
+      "art. 2.17.1.4, inc. 1 y nums. 1 y 5"
+    ],
+    "texto_fuente": "Defínanse como operaciones de cambio todas las comprendidas dentro de las categorías señaladas en el artículo 4 de la Ley 9ª de 1991, y específicamente las siguientes: [...] 1. Importaciones y exportaciones de bienes y servicios; [...] Únicamente las operaciones de cambio que a continuación se indican, deberán canalizarse a través del mercado cambiario: [...] 1. Importaciones y exportaciones de bienes; [...] 5. Inversiones financieras en títulos emitidos o en activos radicados en el exterior así como los rendimientos asociados a las mismas, salvo cuando las inversiones se efectúen con divisas provenientes de operaciones que no deban canalizarse a través del mercado cambiario;",
+    "pregunta": "Una sociedad con domicilio principal en Medellín hizo tres operaciones en 2026: 1) prestó servicios de desarrollo de software a un cliente de Chile, que le pagó en dólares en una cuenta que la sociedad tiene en un banco del exterior; 2) con esos mismos dólares pagó, desde esa cuenta, unos repuestos que le compró a un proveedor de Estados Unidos y que importó al país; y 3) vendió a un comprador de Perú unas máquinas que fabrica, y recibirá el pago en dólares. Un analista de la División de Control Cambiario de la DIAN revisa cuáles de esas operaciones debían canalizarse por el mercado cambiario. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las tres, porque todas son operaciones de cambio entre una sociedad residente y personas no residentes.",
+        "explicacion": "Incorrecta. Las tres son operaciones de cambio (art. 2.17.1.1), pero solo se canalizan las que enumera el art. 2.17.1.4, y la exportación de servicios no está en esa lista."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo la venta de las máquinas, porque los repuestos se pagaron con divisas que no debían canalizarse.",
+        "explicacion": "Incorrecta. La salvedad por el origen de las divisas solo está prevista para las inversiones financieras en el exterior (art. 2.17.1.4, num. 5). Las importaciones de bienes se canalizan (num. 1) aunque se paguen con divisas de una operación que no debía canalizarse."
+      },
+      {
+        "id": "C",
+        "texto": "Que el pago por el software y la venta de las máquinas, porque ambos son exportaciones de la sociedad.",
+        "explicacion": "Incorrecta. El art. 2.17.1.1 incluye entre las operaciones de cambio las exportaciones de bienes y de servicios, pero el art. 2.17.1.4 solo obliga a canalizar las de bienes."
+      },
+      {
+        "id": "D",
+        "texto": "Que la venta de las máquinas y el pago de los repuestos; el cobro del software no tenía esa obligación.",
+        "explicacion": "Correcta. Se canalizan las importaciones y exportaciones de bienes (art. 2.17.1.4, num. 1): los repuestos importados y las máquinas exportadas. La exportación de servicios es operación de cambio, pero no de canalización obligatoria, y la salvedad del num. 5 sobre divisas no canalizables solo se aplica a las inversiones financieras."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la sociedad es residente; exporta servicios y bienes, e importa repuestos que paga con los dólares del servicio, que no pasaron por el mercado cambiario. Regla: el art. 2.17.1.1 del Decreto 1068 define como operaciones de cambio las importaciones y exportaciones de bienes y servicios, pero el art. 2.17.1.4 solo obliga a canalizar las de bienes (num. 1); la salvedad por el origen de las divisas existe solo para las inversiones financieras (num. 5). Conclusión: la venta de las máquinas y el pago de los repuestos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ADU-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Nacional colombiano no residente y endeudamiento externo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.17.1.2, residentes lit. a y no residentes lit. a (modificado por el art. 1 del Decreto 119 de 2017)",
+      "art. 2.17.1.1, num. 4",
+      "art. 2.17.1.4, num. 2"
+    ],
+    "texto_fuente": "a) Las personas naturales nacionales colombianas que habiten en el territorio nacional o las extranjeras que permanezcan continua o discontinuamente en el país por más de ciento ochenta y tres (183) días calendario, incluyendo los días de entrada y de salida del país, durante un periodo de trescientos sesenta y cinco (365) días calendario consecutivos. [...] a) Las personas naturales nacionales colombianos o extranjeros que no cumplan la condición de permanencia prevista en el literal a) del numeral 1 de este artículo; [...] 4. Operaciones de endeudamiento externo celebradas por residentes en el país; [...] Únicamente las operaciones de cambio que a continuación se indican, deberán canalizarse a través del mercado cambiario: [...] 2. Operaciones de endeudamiento celebradas por residentes en el país, así como los costos financieros inherentes a las mismas;",
+    "pregunta": "Una ingeniera de nacionalidad colombiana se trasladó en 2022 a Madrid, donde vive con su esposo y sus hijos y trabaja para una empresa española; no tiene negocios en Colombia y en los últimos 365 días estuvo en el país 25 días. En septiembre de 2026 tomó con un banco español un crédito hipotecario en euros para comprar su vivienda en Madrid. Un gestor de la División de Control Cambiario de la DIAN debe establecer si ese crédito debe canalizarse por el mercado cambiario. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe canalizarse, porque la nacionalidad colombiana la hace residente para efectos cambiarios.",
+        "explicacion": "Incorrecta. La nacionalidad no basta: los nacionales colombianos son residentes cuando habitan en el territorio nacional, y son no residentes los que no cumplen esa condición (art. 2.17.1.2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe canalizarse, porque todo crédito externo de una persona natural está sujeto al control de la DIAN.",
+        "explicacion": "Incorrecta. La obligación de canalizar recae sobre el endeudamiento celebrado por residentes en el país (art. 2.17.1.4, num. 2), y ella no lo es."
+      },
+      {
+        "id": "C",
+        "texto": "Que no debe canalizarse, porque el crédito es en euros y la canalización se exige para operaciones en dólares.",
+        "explicacion": "Incorrecta. La moneda no es lo que decide: el régimen se refiere a divisas en general. El crédito no se canaliza porque quien lo toma no es residente."
+      },
+      {
+        "id": "D",
+        "texto": "Que no debe canalizarse, porque ella no es residente cambiaria y el crédito no es deuda de un residente.",
+        "explicacion": "Correcta. Para efectos cambiarios, los nacionales colombianos son residentes si habitan en el territorio nacional; ella vive en Madrid y no lo es (art. 2.17.1.2). El crédito es entre no residentes: no es endeudamiento externo de un residente (art. 2.17.1.1, num. 4) ni se canaliza (art. 2.17.1.4, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: es colombiana, pero vive en Madrid con su familia, trabaja allá y estuvo 25 días en el país en el último año. Regla: el art. 2.17.1.2 del Decreto 1068 considera residentes a los nacionales que habitan en el territorio nacional, y no residentes a los que no cumplen esa condición; solo se canaliza el endeudamiento celebrado por residentes (art. 2.17.1.4, num. 2). Conclusión: el crédito no se canaliza.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-079",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Financiación del proveedor en una importación: competencia de la DIAN y canalización del precio y los intereses",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015 y Decreto 1742 de 2020",
+    "articulos": [
+      "art. 2.17.1.4, inc. 1 y nums. 1 y 2 (Decreto 1068 de 2015)",
+      "art. 1, inc. 2 (Decreto 1742 de 2020)"
+    ],
+    "texto_fuente": "Únicamente las operaciones de cambio que a continuación se indican, deberán canalizarse a través del mercado cambiario: 1. Importaciones y exportaciones de bienes; 2. Operaciones de endeudamiento celebradas por residentes en el país, así como los costos financieros inherentes a las mismas; [...] Igualmente, le corresponde el control y vigilancia sobre el cumplimiento del régimen cambiario en materia de importación y exportación de bienes y servicios, gastos asociados a las mismas, financiación en moneda extranjera de importaciones y exportaciones, y subfacturación y sobrefacturación de estas operaciones.",
+    "pregunta": "Una sociedad con domicilio principal en Bucaramanga importó en marzo de 2026 una máquina de USD 120.000. El proveedor alemán le financió el precio a doce meses, con un interés simple del 6% anual, y la sociedad le pagará todo en una sola cuota en marzo de 2027. A un Gestor II de una dirección seccional de la DIAN le llega una denuncia según la cual la sociedad no canalizará ese pago por el mercado cambiario. Debe establecer qué entidad es competente para verificarlo y cuánto debe canalizarse. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la verificación le corresponde a la DIAN y que deben canalizarse USD 127.200, precio e intereses.",
+        "explicacion": "Correcta. El control y vigilancia del régimen cambiario en la financiación en moneda extranjera de importaciones le corresponde a la DIAN (Decreto 1742, art. 1). Se canalizan las importaciones de bienes y las operaciones de endeudamiento de residentes con sus costos financieros (Decreto 1068, art. 2.17.1.4, nums. 1 y 2): 120.000 + 7.200 de intereses = USD 127.200."
+      },
+      {
+        "id": "B",
+        "texto": "Que la verificación le corresponde a la DIAN y que deben canalizarse USD 120.000, solo el precio.",
+        "explicacion": "Incorrecta. Acierta en la competencia de la DIAN, pero deja por fuera los intereses. La financiación del proveedor es una deuda en moneda extranjera de un residente, y sus costos financieros también se canalizan (art. 2.17.1.4, num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe remitir la denuncia al Banco de la República y que deben canalizarse USD 127.200, precio e intereses.",
+        "explicacion": "Incorrecta. Acierta en el monto, pero no hay que remitir la denuncia: el Decreto 1742 (art. 1) asigna a la DIAN el control y vigilancia del régimen cambiario en la financiación en moneda extranjera de importaciones y exportaciones. Confunde a la entidad que vigila esas operaciones con la autoridad que regula el régimen cambiario."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe remitir la denuncia al Banco de la República y que deben canalizarse USD 120.000, solo el precio.",
+        "explicacion": "Incorrecta. Combina dos errores: atribuye al Banco de la República una vigilancia que el Decreto 1742 (art. 1) asigna a la DIAN, y excluye los intereses, que se canalizan como costo financiero de la deuda (art. 2.17.1.4, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el proveedor del exterior financió la importación a doce meses, con un interés del 6% anual. Regla: la DIAN controla y vigila el régimen cambiario en la financiación en moneda extranjera de importaciones (Decreto 1742, art. 1), y deben canalizarse por el mercado cambiario las importaciones de bienes y las operaciones de endeudamiento de residentes con sus costos financieros (Decreto 1068, art. 2.17.1.4, nums. 1 y 2). Cálculo: 120.000 × 6% = 7.200; 120.000 + 7.200 = USD 127.200.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ADU-080",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Residencia cambiaria de la sucursal de sociedad extranjera",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.17.1.2, residentes lit. b y no residentes lit. b (modificado por el art. 1 del Decreto 119 de 2017)",
+      "art. 2.17.1.1, nums. 1 y 5",
+      "art. 2.17.1.4, num. 1"
+    ],
+    "texto_fuente": "b) Las entidades de derecho público, las personas jurídicas, incluidas las entidades sin ánimo de lucro, que tengan su domicilio principal en el país. Igualmente, tienen la condición de residentes para efectos cambiarios las sucursales de sociedades extranjeras establecidas en el país. [...] b) Las personas jurídicas que no tengan su domicilio principal dentro del territorio nacional, incluidas aquellas sin ánimo de lucro, y [...] 1. Importaciones y exportaciones de bienes y servicios; [...] 5. Todas aquellas que impliquen o puedan implicar pagos o transferencias de moneda extranjera entre residentes y no residentes en el país; [...] Únicamente las operaciones de cambio que a continuación se indican, deberán canalizarse a través del mercado cambiario: [...] 1. Importaciones y exportaciones de bienes;",
+    "pregunta": "La sucursal en Colombia de una sociedad mexicana, dedicada a vender repuestos para vehículos, compró a su casa matriz en México un lote de repuestos y le pagará el precio a la vista. La sucursal sostiene que ese pago no es una operación de cambio, porque ella y su casa matriz son la misma persona jurídica. Un inspector de la DIAN debe establecer si el pago debe canalizarse por el mercado cambiario. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no debe canalizarse: la sucursal y su casa matriz son una sola persona jurídica y la operación es interna.",
+        "explicacion": "Incorrecta. Para efectos cambiarios, la sucursal establecida en el país es residente y la sociedad mexicana, sin domicilio principal en Colombia, no lo es (art. 2.17.1.2). El pago es entre un residente y un no residente."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe canalizarse, pero como endeudamiento externo, porque la sucursal le debe el precio a su casa matriz.",
+        "explicacion": "Incorrecta. El precio se paga a la vista: no hay financiación. La operación es una importación de bienes, que se canaliza como tal (art. 2.17.1.4, num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe canalizarse: la sucursal es residente, la casa matriz no lo es y el pago corresponde a una importación de bienes.",
+        "explicacion": "Correcta. Las sucursales de sociedades extranjeras establecidas en el país son residentes para efectos cambiarios, y la sociedad mexicana no lo es (art. 2.17.1.2). El pago de una importación de bienes es operación de cambio de canalización obligatoria (arts. 2.17.1.1 y 2.17.1.4, num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Que no debe canalizarse, porque la sucursal puede registrar ese valor como inversión suplementaria a su capital asignado.",
+        "explicacion": "Incorrecta. La inversión suplementaria al capital asignado se refiere a las disponibilidades de capital de la sucursal con su casa matriz; no convierte el pago de una importación en una operación libre del mercado cambiario."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: quien paga es una sucursal establecida en Colombia y quien cobra es su casa matriz en México, por una compra de repuestos pagada a la vista. Regla: el art. 2.17.1.2 del Decreto 1068 considera residentes a las sucursales de sociedades extranjeras establecidas en el país y no residentes a las personas jurídicas sin domicilio principal aquí; las importaciones de bienes deben canalizarse (art. 2.17.1.4, num. 1). Conclusión: el pago se canaliza.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
   }
 ]
