@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "TC-FIN-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Ejecución presupuestal",
+    "subtema": "Certificado de disponibilidad: saldo libre para expedir nuevas disponibilidades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.1 inc. 1",
+      "art. 2.8.1.7.2"
+    ],
+    "texto_fuente": "Ningún órgano del Presupuesto General de la Nación podrá efectuar gasto público con cargo al Tesoro o transferir crédito alguno que no figure en el presupuesto, o en exceso del saldo disponible, para lo cual, previo a contraer compromisos, se requiere la expedición de un certificado de disponibilidad presupuestal. [...] El certificado de disponibilidad es el documento expedido por el jefe de presupuesto o quien haga sus veces con el cual se garantiza la existencia de apropiación presupuestal disponible y libre de afectación para la asunción de compromisos. Este documento afecta preliminarmente el presupuesto mientras se perfecciona el compromiso y se efectúa el correspondiente registró presupuestal. En consecuencia, los órganos deberán llevar un registro de éstos que permita determinar los saldos de apropiación disponible para expedir nuevas disponibilidades.",
+    "pregunta": "Andrés, técnico del grupo de presupuesto de una superintendencia, lleva el control de los certificados de disponibilidad que firma la coordinadora del grupo. El rubro de mantenimiento de la sede tiene una apropiación vigente de $900 millones, y en el año se han expedido tres certificados con cargo a él: dos, por $300 millones y $250 millones, que ya respaldan contratos firmados y registrados por esos mismos valores, y uno por $180 millones para una licitación que todavía no se ha adjudicado. Hoy, el área de contratos pide un certificado por $200 millones para contratar la impermeabilización de la cubierta. ¿Qué debe informar Andrés a la coordinadora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no alcanza para expedirlo por $200 millones, porque, descontados los tres certificados anteriores, quedan $170 millones.",
+        "explicacion": "Correcta. El certificado de disponibilidad afecta preliminarmente la apropiación mientras se perfecciona el compromiso (art. 2.8.1.7.2), y no se puede gastar en exceso del saldo disponible (art. 2.8.1.7.1). Saldo: 900 − 300 − 250 − 180 = 170, menos que los 200 pedidos."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede expedirse, porque quedan $350 millones: la apropiación solo se afecta con el registro de los contratos firmados.",
+        "explicacion": "Incorrecta. Solo descuenta los contratos registrados (900 − 550 = 350). Olvida que el certificado de la licitación en curso también afecta la apropiación mientras se perfecciona el compromiso."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede expedirse por $200 millones, porque el certificado de la licitación es preliminar y se ajustará al adjudicarla.",
+        "explicacion": "Incorrecta. Que la afectación sea preliminar no permite ignorarla: el certificado de $180 millones sigue garantizando recursos para la licitación, y uno nuevo por $200 millones dejaría sin respaldo suficiente alguno de los dos procesos."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede expedirse ningún certificado hasta que la licitación se adjudique y se registre el contrato que resulte de ella.",
+        "explicacion": "Incorrecta. La licitación en curso no bloquea el rubro: quedan $170 millones libres que sí pueden certificarse. El problema es que no alcanzan para los $200 millones pedidos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: además de los dos contratos registrados, hay un certificado de $180 millones para una licitación que no se ha adjudicado. Regla: el certificado afecta preliminarmente la apropiación mientras se perfecciona el compromiso, y los órganos llevan un registro de los certificados para determinar el saldo disponible (art. 2.8.1.7.2 del Decreto 1068); no se puede gastar en exceso de ese saldo (art. 2.8.1.7.1). Cálculo: 900 − 300 − 250 − 180 = 170. Conclusión: no alcanza para un certificado de $200 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-FIN-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Ejecución presupuestal",
+    "subtema": "Registro de la obligación: exigibilidad del pago con la recepción de los bienes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Decreto 1068 de 2015, art. 2.8.1.7.6 incs. 1 y 2 (modificado por el art. 15 del Decreto 412 de 2018)",
+      "Decreto 111 de 1996, art. 73 inc. 2"
+    ],
+    "texto_fuente": "Los compromisos presupuestales legalmente adquiridos, se cumplen o ejecutan, tratándose de contratos o convenios, con la recepción de los bienes y servicios, y en los demás eventos, con el cumplimiento de los requisitos que hagan exigible su pago. El cumplimiento de la obligación se da cuando se cuente con las exigibilidades correspondientes para su pago. [...] En consecuencia, los pagos se harán teniendo en cuenta el PAC y se sujetarán a los montos aprobados en él.",
+    "pregunta": "Lucía, auxiliar administrativa del área financiera de una unidad administrativa especial del orden nacional, registra en el SIIF las obligaciones de los contratos. Un contrato de suministro de elementos de aseo por $90 millones tiene registro presupuestal por ese valor y pactó cuatro entregas; la primera, de $20 millones, ya se recibió y se pagó. Hoy le llegan dos cuentas: la de la segunda entrega, de $30 millones, con la constancia del supervisor de que los elementos se recibieron a satisfacción, y la de la tercera entrega, de $25 millones, que el proveedor facturó por anticipado aunque todavía no ha despachado los elementos. ¿Por cuánto debe registrar hoy la obligación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Por $55 millones, porque el proveedor ya radicó las facturas de las dos entregas.",
+        "explicacion": "Incorrecta. La factura por sí sola no hace exigible el pago. En un contrato, el compromiso se cumple con la recepción de los bienes (art. 2.8.1.7.6), y los elementos de la tercera entrega no se han recibido."
+      },
+      {
+        "id": "B",
+        "texto": "Por $70 millones, que es el saldo del registro presupuestal pendiente de pago.",
+        "explicacion": "Incorrecta. Confunde el compromiso con la obligación. El registro presupuestal respalda todo el contrato, pero la obligación surge solo por lo que ya se recibió y es exigible."
+      },
+      {
+        "id": "C",
+        "texto": "Por $30 millones, pues solo la segunda cuenta soporta una entrega cumplida.",
+        "explicacion": "Correcta. La obligación existe cuando hay exigibilidad para el pago, y en los contratos el compromiso se cumple con la recepción de los bienes (art. 2.8.1.7.6). De las dos cuentas, solo la segunda entrega se recibió: $30 millones."
+      },
+      {
+        "id": "D",
+        "texto": "Por ningún valor mientras tesorería no tenga PAC disponible para pagar este mes.",
+        "explicacion": "Incorrecta. El PAC limita los pagos (art. 73 del Decreto 111), no el registro de las obligaciones. La obligación de la segunda entrega existe aunque su pago deba ajustarse al PAC."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: de las dos cuentas, solo la segunda entrega tiene constancia de recibo; la tercera se facturó sin despachar los elementos. Regla: en los contratos, el compromiso se cumple con la recepción de los bienes, y la obligación existe cuando hay exigibilidad para el pago (art. 2.8.1.7.6 del Decreto 1068). El PAC limita los pagos, no las obligaciones (art. 73 del Decreto 111). Conclusión: la obligación se registra por $30 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-FIN-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Vigencias futuras",
+    "subtema": "Entregas pactadas para la vigencia siguiente: autorización previa a la apertura del proceso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Decreto 1068 de 2015, art. 2.8.1.7.6 inc. 3 (modificado por el art. 15 del Decreto 412 de 2018)",
+      "Decreto 111 de 1996, art. 23 inc. 1 lit. b (modificado por el art. 10 de la Ley 819 de 2003)"
+    ],
+    "texto_fuente": "Para pactar la recepción de bienes y servicios en vigencias siguientes a la de celebración del compromiso, se debe contar previamente con una autorización por parte de Consejo Nacional de Política Fiscal - Confis o quien este delegue, de acuerdo con lo establecido en la ley, para asumir obligaciones con cargo a presupuestos de vigencias futuras. Para tal efecto, previo a la expedición de los actos administrativos de apertura del proceso de selección de contratistas en los que se Evidencie la provisión de bienes o servicios que superen el 31 de diciembre de la respectiva vigencia fiscal, deberá contarse con dicha autorización. [...] b) Como mínimo, de las vigencias futuras que se soliciten se deberá contar con apropiación del quince por ciento (15%) en la vigencia fiscal en la que estas sean autorizadas;",
+    "pregunta": "En agosto de 2026, el área de talento humano de un ministerio pide iniciar una licitación para comprar la dotación de los servidores por $500 millones. Los pliegos prevén dos entregas: la primera, de $200 millones, en noviembre de 2026, y la segunda, de $300 millones, en marzo de 2027. El rubro de dotación tiene en 2026 una apropiación libre de $600 millones. Antes de que el secretario general, como ordenador del gasto, firme la resolución de apertura, el profesional de presupuesto debe indicarle qué respaldo presupuestal necesita el proceso. ¿Qué debe indicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un certificado de disponibilidad por $500 millones y, al cierre de 2026, una reserva presupuestal por los $300 millones de la segunda entrega.",
+        "explicacion": "Incorrecta. La reserva ampara compromisos que no alcanzaron a cumplirse al cierre; no sirve para pactar desde el principio una entrega en 2027. Para eso se necesita autorización de vigencias futuras antes de la apertura (art. 2.8.1.7.6)."
+      },
+      {
+        "id": "B",
+        "texto": "Un certificado de disponibilidad por $200 millones y una autorización de vigencias futuras por los $300 millones de 2027.",
+        "explicacion": "Correcta. Como los pliegos prevén recibir bienes después del 31 de diciembre, la autorización de vigencias futuras debe existir antes del acto de apertura (art. 2.8.1.7.6). La parte de 2026 se respalda con disponibilidad, y sus $200 millones superan el 15% mínimo de lo solicitado (45)."
+      },
+      {
+        "id": "C",
+        "texto": "Un certificado de disponibilidad por $500 millones y, en enero de 2027, una autorización de vigencias futuras por la segunda entrega.",
+        "explicacion": "Incorrecta. La autorización llega tarde: el art. 2.8.1.7.6 exige tenerla antes de expedir el acto de apertura del proceso, no después de celebrado el contrato."
+      },
+      {
+        "id": "D",
+        "texto": "Un certificado de disponibilidad por $500 millones, que basta: el contrato se firmará en 2026 y la apropiación alcanza.",
+        "explicacion": "Incorrecta. Que el contrato se firme en 2026 no basta. Si se pacta recibir bienes en 2027, se necesita autorización de vigencias futuras, aunque la apropiación de 2026 alcance para todo el valor."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los pliegos prevén recibir $300 millones de dotación en marzo de 2027. Regla: para pactar la recepción de bienes en vigencias siguientes se necesita autorización de vigencias futuras del Confis o su delegado, y debe obtenerse antes del acto de apertura (art. 2.8.1.7.6 del Decreto 1068); en la vigencia de la autorización debe haber apropiación de al menos el 15% de lo solicitado (art. 23 del Decreto 111): 200 ≥ 45. Conclusión: disponibilidad por $200 millones y vigencias futuras por $300 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-FIN-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Vigencias futuras",
+    "subtema": "Prórroga sin aumento de valor que pasa a la vigencia siguiente: sustitución de la apropiación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.1.1 inc. 2",
+      "art. 2.8.1.7.6 inc. 3 (modificado por el art. 15 del Decreto 412 de 2018)"
+    ],
+    "texto_fuente": "Cuando los órganos que hacen parte del Presupuesto General de la Nación requieran ampliar el plazo de los contratos en ejecución, sin aumentar el monto del mismo y ello implique afectación de presupuestos de posteriores vigencias fiscales, podrán solicitar la sustitución de la apropiación presupuestal que respalda el compromiso, por la autorización de vigencias futuras, en este caso las apropiaciones sustituidas quedarán libres y disponibles. [...] Para pactar la recepción de bienes y servicios en vigencias siguientes a la de celebración del compromiso, se debe contar previamente con una autorización por parte de Consejo Nacional de Política Fiscal - Confis o quien este delegue, de acuerdo con lo establecido en la ley, para asumir obligaciones con cargo a presupuestos de vigencias futuras.",
+    "pregunta": "Un departamento administrativo firmó en abril de 2026 un contrato de soporte tecnológico por $480 millones, con registro presupuestal por ese valor y ocho cuotas mensuales de $60 millones, de mayo a diciembre. Después de pagar las cuotas de mayo a agosto, y por retrasos del fabricante en la entrega de unos equipos, las partes acuerdan prorrogar el contrato sin cambiar su valor: los $240 millones pendientes se pagarán en seis cuotas mensuales de $40 millones, de noviembre de 2026 a abril de 2027. ¿Qué debe hacer la entidad antes de firmar la prórroga, según la profesional de presupuesto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener el registro por $480 millones y, al cierre de 2026, constituir una reserva por los $160 millones que se pagarán en 2027.",
+        "explicacion": "Incorrecta. Con la prórroga se pacta recibir servicios en 2027, y para eso se necesita autorización previa de vigencias futuras (art. 2.8.1.7.6). La reserva de cierre no reemplaza esa autorización."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que $160 millones de la apropiación de 2026 se sustituyan por vigencias futuras, y usar ese valor en otros compromisos del año.",
+        "explicacion": "Correcta. Si se amplía el plazo sin aumentar el valor y la ejecución pasa a la vigencia siguiente, se pide sustituir la apropiación que respalda el compromiso por vigencias futuras, y la apropiación sustituida queda libre y disponible (art. 2.8.1.7.1.1). En 2027 se pagan 4 × 40 = 160."
+      },
+      {
+        "id": "C",
+        "texto": "Ajustar en el registro presupuestal el nuevo plazo, sin pedir autorización, porque la prórroga no aumenta el valor del contrato.",
+        "explicacion": "Incorrecta. Aunque el valor no cambie, la prórroga afecta el presupuesto de 2027, y pactar la recepción de servicios en esa vigencia exige autorización previa de vigencias futuras (art. 2.8.1.7.6)."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir vigencias futuras por los $240 millones aún no pagados, y conservar el registro de 2026 como respaldo hasta la liquidación.",
+        "explicacion": "Incorrecta. Equivoca el valor y duplica el respaldo: de lo pendiente, $80 millones se pagan en 2026 con la apropiación del año, y lo que pasa a 2027 se respalda con vigencias futuras que sustituyen la apropiación de 2026, no se suman a ella."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la prórroga no aumenta el valor, pero lleva a 2027 cuatro cuotas de $40 millones. Regla: pactar la recepción de servicios en la vigencia siguiente exige autorización previa de vigencias futuras (art. 2.8.1.7.6 del Decreto 1068), y cuando se amplía el plazo sin aumentar el monto se pide sustituir por esa autorización la apropiación que respalda el compromiso; lo sustituido queda libre (art. 2.8.1.7.1.1). Cálculo: 4 × 40 = 160. Conclusión: sustituir $160 millones por vigencias futuras.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-FIN-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Vigencias futuras",
+    "subtema": "Vigencias futuras excepcionales que superan el período de gobierno: aval fiscal y declaratoria del Conpes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 111 de 1996 y Decreto 1068 de 2015",
+    "articulos": [
+      "Decreto 111 de 1996, art. 24 inc. 1 (modificado por el art. 11 de la Ley 819 de 2003)",
+      "Decreto 111 de 1996, art. 23 inc. 2 (modificado por el art. 10 de la Ley 819 de 2003)",
+      "Decreto 1068 de 2015, art. 2.8.1.7.1.2",
+      "Decreto 1068 de 2015, art. 2.8.1.7.1.3 inc. 1"
+    ],
+    "texto_fuente": "El Consejo Superior de Política Fiscal, Confis, en casos excepcionales para las obras de infraestructura, energía, comunicaciones, aeronáutica, defensa y seguridad, así como para las garantías a las concesiones, podrá autorizar que se asuman obligaciones que afecten el presupuesto de vigencias futuras sin apropiación en el presupuesto del año en que se concede la autorización. [...] La autorización por parte del Confis para comprometer presupuesto con cargo a vigencias futuras no podrá superar el respectivo período de gobierno. Se exceptúan los proyectos de gastos de inversión en aquellos casos en que el Conpes previamente los declare de importancia estratégica. [...] La declaratoria de importancia estratégica por parte del CONPES a que se refiere el artículo 10 de la Ley 819 de 2003, requerirá del concepto previo y favorable del CONFIS, donde se valide la consistencia con el Marco de Gasto de Mediano Plazo y el Marco Fiscal de Mediano Plazo. [...] Los proyectos de inversión que requieran vigencias futuras excepcionales y superen el respectivo período de Gobierno, deben contar con el aval fiscal por parte del CONFIS, antes de su declaratoria de importancia estratégica por parte del CONPES.",
+    "pregunta": "Un ministerio del orden nacional estructura un proyecto de inversión para ampliar la pista de un aeropuerto regional. Las obras se ejecutarán entre 2027 y 2032, dos años más allá del actual período de gobierno, y el presupuesto de 2026 no tiene ninguna apropiación para el proyecto. El viceministro pide a la profesional de la oficina financiera que le explique qué ruta debe seguir el ministerio para comprometer desde este año los presupuestos de esas vigencias. ¿Qué debe explicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Apropiar en 2026 al menos el 15% de lo que se solicite y obtener el concepto favorable del DNP y del ministerio antes de que el Confis lo autorice.",
+        "explicacion": "Incorrecta. Describe las vigencias futuras ordinarias, que exigen apropiación del 15% en el año de la autorización. Para una obra aeronáutica sin apropiación, el Confis puede autorizar vigencias futuras excepcionales. Además, omite la declaratoria del Conpes que exige superar el período de gobierno."
+      },
+      {
+        "id": "B",
+        "texto": "Obtener el aval fiscal del Confis; luego, la declaratoria de importancia estratégica del Conpes, y por último, la autorización del Confis.",
+        "explicacion": "Correcta. Para obras aeronáuticas, el Confis puede autorizar vigencias futuras sin apropiación en el año (art. 24 del Decreto 111). Como el proyecto supera el período de gobierno, necesita la declaratoria de importancia estratégica del Conpes (art. 23), precedida del aval fiscal del Confis (arts. 2.8.1.7.1.2 y 2.8.1.7.1.3 del Decreto 1068)."
+      },
+      {
+        "id": "C",
+        "texto": "Obtener primero la declaratoria de importancia estratégica del Conpes; luego, el aval fiscal del Confis, y por último, la autorización del DNP.",
+        "explicacion": "Incorrecta. Invierte el orden: el aval fiscal del Confis va antes de la declaratoria del Conpes. Además, quien autoriza las vigencias futuras es el Confis, no el DNP."
+      },
+      {
+        "id": "D",
+        "texto": "Tramitar una ley que lo autorice: sin apropiación en 2026 y más allá del período de gobierno, el Confis no tiene competencia.",
+        "explicacion": "Incorrecta. No se necesita ley: el Confis puede autorizar vigencias futuras excepcionales sin apropiación, y el período de gobierno puede superarse con la declaratoria de importancia estratégica del Conpes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: es una obra aeronáutica sin apropiación en 2026 que se extiende más allá del período de gobierno. Regla: para esas obras, el Confis puede autorizar vigencias futuras excepcionales sin apropiación (art. 24 del Decreto 111); para superar el período de gobierno se requiere la declaratoria de importancia estratégica del Conpes (art. 23), precedida del aval fiscal del Confis (arts. 2.8.1.7.1.2 y 2.8.1.7.1.3 del Decreto 1068). Conclusión: aval fiscal, declaratoria del Conpes y autorización del Confis.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-FIN-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Vigencias futuras",
+    "subtema": "Caducidad de los cupos de vigencias futuras no utilizados al 31 de diciembre",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.1.1 inc. 1",
+      "art. 2.8.1.7.1.9",
+      "art. 2.8.1.7.1.10 inc. 1 (modificado por el art. 16 del Decreto 412 de 2018)"
+    ],
+    "texto_fuente": "De conformidad con el artículo 10 de la Ley 819 de 2003, el Confis o su delegado podrá autorizar la asunción de obligaciones que afecten presupuestos de vigencias futuras con el fin de adicionar los contratos que se encuentren en ejecución, sin que se requiera expedir un nuevo certificado de disponibilidad presupuestal. [...] El Consejo Superior de Política Fiscal - CONFIS- cuando lo considere conveniente por razones de coherencia macroeconómica o por cambios en las prioridades sectoriales, podrá reducir o eliminar las autorizaciones de vigencias futuras. En estos casos, el CONFIS no podrá reducir o eliminar las autorizaciones de vigencias futuras que amparen compromisos perfeccionados. [...] Los cupos anuales autorizados para asumir compromisos de vigencias futuras no utilizados a 31 de diciembre de cada año caducan sin excepción. En consecuencia, los órganos deberán registrar en el Sistema Integrado de Información Financiera SIIF Nación a más tardar el 31 de diciembre de cada año la utilización de los cupos autorizados, operación que refleja la utilización de los cupos autorizados dentro de la vigencia.",
+    "pregunta": "En junio de 2026, el delegado del Confis autorizó a una superintendencia vigencias futuras para su contrato de vigilancia: $500 millones para 2027 y $400 millones para 2028. En noviembre se firmó el contrato, que comprometió $420 millones de 2027 y $340 millones de 2028, y su utilización quedó registrada en el SIIF antes del 31 de diciembre. El 12 de enero de 2027, el coordinador administrativo propone adicionar el contrato en $50 millones para 2028 \"con el saldo que quedó de esa autorización\". ¿Qué debe responderle el profesional de presupuesto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que los $140 millones que no se usaron caducaron el 31 de diciembre, y que la adición necesita una nueva autorización.",
+        "explicacion": "Correcta. La autorización servía para asumir compromisos en 2026, y lo no utilizado a 31 de diciembre caduca sin excepción (art. 2.8.1.7.1.10): (500 − 420) + (400 − 340) = 140. Para adicionar un contrato en ejecución con cargo a 2028 hace falta otra autorización del Confis o su delegado (art. 2.8.1.7.1.1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que caducaron los $80 millones no usados de 2027, pero los $60 millones de 2028 siguen disponibles y cubren la adición.",
+        "explicacion": "Incorrecta. La caducidad no depende del año en que se ejecutará el gasto, sino del año en que se autorizó asumir el compromiso: todo el saldo no utilizado a 31 de diciembre de 2026, incluido el de 2028, caducó."
+      },
+      {
+        "id": "C",
+        "texto": "Que el saldo de la autorización puede comprometerse hasta el 20 de enero, plazo de los ajustes del cierre en el SIIF.",
+        "explicacion": "Incorrecta. El 20 de enero es el plazo para constituir reservas y cuentas por pagar, en el que además no pueden registrarse nuevos compromisos. Los cupos de vigencias futuras no usados caducan el 31 de diciembre."
+      },
+      {
+        "id": "D",
+        "texto": "Que el saldo de la autorización sigue vigente: el Confis no puede reducir ni eliminar autorizaciones que ya otorgó.",
+        "explicacion": "Incorrecta. La prohibición de reducir o eliminar autorizaciones protege las que amparan compromisos perfeccionados (art. 2.8.1.7.1.9). El saldo no amparaba ningún compromiso y, además, caducó al cierre."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: al 31 de diciembre de 2026 quedaron sin usar $80 millones de 2027 y $60 millones de 2028. Regla: los cupos autorizados para asumir compromisos de vigencias futuras que no se utilicen a 31 de diciembre caducan sin excepción (art. 2.8.1.7.1.10 del Decreto 1068), y una adición con cargo a vigencias futuras requiere su propia autorización del Confis o su delegado (art. 2.8.1.7.1.1). Conclusión: los $140 millones caducaron y la adición necesita una nueva autorización.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-FIN-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Vigencias futuras",
+    "subtema": "Negocios fiduciarios que cubren varias vigencias: autorización sobre la remuneración",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.7",
+      "art. 2.8.1.7.1.7 inc. 1"
+    ],
+    "texto_fuente": "Los recursos entregados para ser manejados a través de negocios jurídicos que no desarrollen el objeto de la apropiación, no se constituyen en compromisos presupuestales que afecten la apropiación respectiva, con excepción de la remuneración pactada por la prestación de este servicio. [...] Los negocios fiduciarios de administración o manejo de recursos que requieran celebrar los órganos públicos que cubran más de una vigencia fiscal, necesitarán autorización para comprometer vigencias futuras previa a la apertura de la licitación o concurso, de manera general o particular. Esta autorización la dará el Consejo Superior de Política Fiscal - CONFIS, únicamente sobre la remuneración de la entidad fiduciaria.",
+    "pregunta": "Un departamento administrativo del orden nacional prepara la licitación de un encargo fiduciario de administración y pagos para un programa de subsidios. La fiduciaria manejará $6.000 millones, que la entidad le girará en partes iguales en 2026, 2027 y 2028. El contrato irá del 1 de octubre de 2026 al 30 de septiembre de 2028, con una comisión fija de $15 millones mensuales. La profesional de presupuesto prepara la solicitud de autorización de vigencias futuras que debe tramitarse antes de abrir la licitación. ¿Por qué valor debe solicitarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Por $4.315 millones: los giros de 2027 y 2028 y la comisión de esos dos años.",
+        "explicacion": "Incorrecta. Los recursos que se entregan a la fiduciaria para su manejo no son compromisos presupuestales (art. 2.8.1.7.7), y la autorización del Confis recae solo sobre la remuneración de la fiduciaria (art. 2.8.1.7.1.7)."
+      },
+      {
+        "id": "B",
+        "texto": "Por $180 millones: la comisión de 2027, pues la de 2028 se pide el año siguiente.",
+        "explicacion": "Incorrecta. La autorización debe cubrir todas las vigencias futuras que comprometa el contrato y obtenerse antes de abrir la licitación. Si solo se pidiera la de 2027, la comisión de 2028 quedaría sin respaldo."
+      },
+      {
+        "id": "C",
+        "texto": "Por $360 millones: la comisión de los veinticuatro meses que dura el contrato.",
+        "explicacion": "Incorrecta. Incluye los tres meses de 2026 ($45 millones), que se pagan con la apropiación de la vigencia en curso y no afectan presupuestos futuros."
+      },
+      {
+        "id": "D",
+        "texto": "Por $315 millones: la comisión que la fiduciaria causará en 2027 y 2028.",
+        "explicacion": "Correcta. La autorización de vigencias futuras para negocios fiduciarios recae solo sobre la remuneración de la fiduciaria (art. 2.8.1.7.1.7). Comisión de 2027: 12 × 15 = 180; de enero a septiembre de 2028: 9 × 15 = 135. Total: 315."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el contrato cubre tres vigencias y la fiduciaria administrará recursos del programa. Regla: los recursos entregados para su manejo no son compromisos presupuestales, salvo la remuneración (art. 2.8.1.7.7 del Decreto 1068), y la autorización de vigencias futuras para negocios fiduciarios recae solo sobre la remuneración de la fiduciaria (art. 2.8.1.7.1.7). Cálculo: 2027, 12 × 15 = 180; 2028, 9 × 15 = 135. Conclusión: $315 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-FIN-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Reservas presupuestales y cuentas por pagar",
+    "subtema": "Desaparición del compromiso que respalda una reserva: acta y ajuste",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.3.4"
+    ],
+    "texto_fuente": "Si durante el año de la vigencia de la reserva o cuenta por pagar desaparece el compromiso u obligación que las originó, el ordenador del gasto y el jefe de presupuesto elaborarán un acta, la cual será enviada a la Dirección General de Crédito Público y Tesoro Nacional para los ajustes respectivos.",
+    "pregunta": "Camilo, técnico de presupuesto de un ministerio, hace seguimiento a las reservas presupuestales constituidas en enero de 2026. Una de ellas, por $120 millones, respaldaba un contrato de consultoría que las partes terminaron de mutuo acuerdo en mayo, después de que se recibieron y pagaron productos por $80 millones; el acta de liquidación dejó constancia de que no se le deberá nada más al contratista. La jefa de presupuesto le pide preparar lo necesario para ajustar los $40 millones restantes. ¿Qué debe preparar Camilo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una resolución de la jefa de presupuesto que anule el saldo del registro, para que los $40 millones respalden otro contrato del rubro.",
+        "explicacion": "Incorrecta. El saldo de una reserva no puede destinarse a otro contrato: las reservas solo sirven para cancelar los compromisos que les dieron origen. Y el ajuste no se hace por resolución, sino con un acta del ordenador del gasto y el jefe de presupuesto."
+      },
+      {
+        "id": "B",
+        "texto": "Ningún documento por ahora: el saldo de $40 millones se depurará por sí solo cuando la reserva expire, el 31 de diciembre.",
+        "explicacion": "Incorrecta. Cuando el compromiso desaparece durante el año de la reserva, el ajuste se hace en ese momento, con el acta que prevé el art. 2.8.1.7.3.4. No hay que esperar a la expiración."
+      },
+      {
+        "id": "C",
+        "texto": "Un acta del ordenador del gasto y de la jefa de presupuesto, que se envía a la Dirección General de Crédito Público y Tesoro Nacional.",
+        "explicacion": "Correcta. Si durante el año de la reserva desaparece el compromiso que la originó, el ordenador del gasto y el jefe de presupuesto elaboran un acta y la envían a la Dirección General de Crédito Público y Tesoro Nacional para los ajustes (art. 2.8.1.7.3.4). Saldo: 120 − 80 = 40."
+      },
+      {
+        "id": "D",
+        "texto": "Un acta del supervisor y del ordenador del gasto, que se envía a la Dirección General del Presupuesto Público Nacional.",
+        "explicacion": "Incorrecta. Equivoca quiénes la elaboran y a quién se envía: el acta la elaboran el ordenador del gasto y el jefe de presupuesto, y se remite a la Dirección General de Crédito Público y Tesoro Nacional."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el contrato que originó la reserva terminó en mayo con $40 millones que ya no se deberán (120 − 80). Regla: si durante el año de la reserva desaparece el compromiso que la originó, el ordenador del gasto y el jefe de presupuesto elaboran un acta y la envían a la Dirección General de Crédito Público y Tesoro Nacional para los ajustes (art. 2.8.1.7.3.4 del Decreto 1068). Conclusión: Camilo debe preparar esa acta para la firma de ambos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-FIN-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Reservas presupuestales y cuentas por pagar",
+    "subtema": "Constitución con los saldos del SIIF y prohibición de nuevos compromisos en el plazo de ajustes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Decreto 1068 de 2015, art. 2.8.1.7.3.1 inc. 2",
+      "Decreto 1068 de 2015, art. 2.8.1.7.3.2 inc. 1 (modificado por el art. 17 del Decreto 412 de 2018)",
+      "Decreto 111 de 1996, art. 71 inc. 3"
+    ],
+    "texto_fuente": "Las reservas presupuestales corresponderán a la diferencia entre los compromisos y las obligaciones, y las cuentas por pagar a la diferencia entre las obligaciones y los pagos. [...] A más tardar el 20 de enero de cada año, los órganos que conforman el Presupuesto General de la Nación constituirán las reservas presupuestales y cuentas por pagar de la respectiva sección presupuestal correspondientes a la vigencia fiscal anterior, de conformidad con los saldos registrados a 31 de diciembre a través del Sistema Integrado de Información Financiera SIIF Nación. En dicho plazo, solo se podrán efectuar los ajustes a que haya lugar para la constitución de las reserves presupuestales y de las cuentas por pagar, sin que en ningún caso se puedan registrar nuevos compromisos ni obligaciones. [...] Esta operación es un requisito de perfeccionamiento de estos actos administrativos.",
+    "pregunta": "El 8 de enero de 2026, la profesional de presupuesto de un ministerio revisa en el SIIF los saldos a 31 de diciembre de 2025 del rubro de servicios de apoyo, en millones de pesos: apropiación definitiva, 1.000; certificados de disponibilidad expedidos, 940; compromisos, 880; obligaciones, 700, y pagos, 610. El ordenador del gasto le pide, además, registrar con cargo al certificado de 2025 que quedó sin comprometer un contrato de $50 millones que se firmó el 30 de diciembre, pero cuyo registro presupuestal no alcanzó a hacerse, \"porque el plazo del cierre va hasta el 20 de enero\". ¿Qué debe responder la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las reservas son de $180 millones y las cuentas por pagar de $90 millones, y que el contrato no puede registrarse con cargo a 2025.",
+        "explicacion": "Correcta. Reservas = compromisos − obligaciones = 880 − 700 = 180; cuentas por pagar = obligaciones − pagos = 700 − 610 = 90 (art. 2.8.1.7.3.1). Hasta el 20 de enero solo caben ajustes para constituirlas, sin registrar nuevos compromisos (art. 2.8.1.7.3.2), y sin registro el contrato no estaba perfeccionado como compromiso de 2025 (art. 71 del Decreto 111)."
+      },
+      {
+        "id": "B",
+        "texto": "Que las reservas son de $230 millones, con el contrato incluido, y las cuentas por pagar de $90 millones, pues el registro cabe en el plazo.",
+        "explicacion": "Incorrecta. Calcula bien la base, pero le suma un compromiso nuevo. El plazo hasta el 20 de enero es solo para los ajustes de constitución, y en él no pueden registrarse nuevos compromisos."
+      },
+      {
+        "id": "C",
+        "texto": "Que las reservas son de $270 millones, sin cuentas por pagar, y que el contrato no puede registrarse con cargo a 2025.",
+        "explicacion": "Incorrecta. Trata como reserva todo lo comprometido y no pagado (880 − 610). Lo que ya es obligación y no se pagó (90) es cuenta por pagar, no reserva."
+      },
+      {
+        "id": "D",
+        "texto": "Que las reservas son de $90 millones y las cuentas por pagar de $180 millones, y que el registro del contrato cabe en el plazo.",
+        "explicacion": "Incorrecta. Invierte las fórmulas: la reserva es la diferencia entre compromisos y obligaciones (180), y la cuenta por pagar, entre obligaciones y pagos (90). Además, el plazo de ajustes no permite registrar nuevos compromisos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: a 31 de diciembre había compromisos por 880, obligaciones por 700 y pagos por 610, y el contrato de $50 millones no tenía registro. Regla: las reservas son la diferencia entre compromisos y obligaciones, y las cuentas por pagar, entre obligaciones y pagos (art. 2.8.1.7.3.1 del Decreto 1068); hasta el 20 de enero solo caben ajustes, sin nuevos compromisos (art. 2.8.1.7.3.2). Cálculo: 880 − 700 = 180; 700 − 610 = 90. Conclusión: reservas por 180 y cuentas por pagar por 90, sin el contrato.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-FIN-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Reservas presupuestales y cuentas por pagar",
+    "subtema": "Reintegro de reservas expiradas y consignación de rendimientos financieros de recursos de la Nación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.3.2 inc. 3 (modificado por el art. 17 del Decreto 412 de 2018)",
+      "art. 2.8.1.9.8"
+    ],
+    "texto_fuente": "Las cuentas por pagar y las reservas presupuestales que no se hayan ejecutado a 31 de diciembre de la vigencia en la cual se constituyeron, expiran sin excepción. En caso de que la entidad mantenga recursos de la Nación por este concepto deben reintegrarse por el ordenador del gasto y el funcionario de manejo del respectivo órgano a la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público, dentro de los primeros cinco (5) días del mes siguiente a la expiración de estas. [...] Los rendimientos financieros originados con recursos de la Nación, incluidos los negocios fiduciarios, deben ser consignados en la Dirección General de Crédito Público y del Tesoro Nacional en el mes siguiente de su recaudo. Se exceptúan los rendimientos financieros generados con aportes destinados a la seguridad social.",
+    "pregunta": "Natalia, profesional de tesorería de una unidad administrativa especial financiada con recursos de la Nación, prepara en diciembre de 2026 el cronograma de reintegros y consignaciones a la Dirección General de Crédito Público y Tesoro Nacional, que firmarán el ordenador del gasto y la tesorera. Tiene tres partidas: $20 millones de una reserva presupuestal constituida en enero de 2026, que no alcanzarán a ejecutarse antes del 31 de diciembre y siguen en la cuenta de la entidad; $8 millones de rendimientos que generarán en diciembre los recursos de la Nación depositados en esa cuenta, y $5 millones de rendimientos que generarán en diciembre recursos de la Nación administrados en un encargo fiduciario. Ninguna partida proviene de aportes a la seguridad social. ¿Cómo debe programarlas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La reserva, en los primeros cinco días de enero de 2027; los rendimientos de la cuenta y los del encargo fiduciario, en el curso de enero.",
+        "explicacion": "Correcta. La reserva constituida en 2026 expira el 31 de diciembre de ese año, y su dinero se reintegra dentro de los primeros cinco días del mes siguiente (art. 2.8.1.7.3.2). Los rendimientos de recursos de la Nación, incluidos los de negocios fiduciarios, se consignan en el mes siguiente a su recaudo: enero (art. 2.8.1.9.8)."
+      },
+      {
+        "id": "B",
+        "texto": "La reserva, hasta el 20 de enero, junto con el cierre de 2026; los rendimientos de la cuenta, en enero, y los del encargo, al liquidarlo.",
+        "explicacion": "Incorrecta. El 20 de enero es el plazo para constituir las reservas de la vigencia que se cierra; la reserva que expira tiene su propio plazo de reintegro, los primeros cinco días del mes siguiente. Y los rendimientos del encargo no esperan a su liquidación."
+      },
+      {
+        "id": "C",
+        "texto": "La reserva no se reintegra, pues se ejecuta en 2027 como reserva nueva; los rendimientos de la cuenta y los del encargo, en el curso de enero.",
+        "explicacion": "Incorrecta. Las reservas que no se ejecutan en la vigencia en que se constituyeron expiran sin excepción; no pueden volver a constituirse para el año siguiente."
+      },
+      {
+        "id": "D",
+        "texto": "La reserva, en los primeros cinco días de enero de 2027; los rendimientos de la cuenta, en enero, y los del encargo fiduciario, al liquidarlo.",
+        "explicacion": "Incorrecta. Acierta con la reserva y con los rendimientos de la cuenta, pero la norma incluye expresamente los rendimientos de los negocios fiduciarios: también se consignan en el mes siguiente a su recaudo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la reserva se constituyó en enero de 2026 y quedará sin ejecutar al 31 de diciembre; los rendimientos de recursos de la Nación se generan en diciembre, en la cuenta y en un encargo fiduciario. Regla: las reservas no ejecutadas en su vigencia expiran y su dinero se reintegra en los primeros cinco días del mes siguiente (art. 2.8.1.7.3.2 del Decreto 1068); los rendimientos de recursos de la Nación, incluidos los de negocios fiduciarios, se consignan en el mes siguiente a su recaudo (art. 2.8.1.9.8). Conclusión: reserva, primeros cinco días de enero; rendimientos, en enero.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-FIN-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Reservas presupuestales y cuentas por pagar",
+    "subtema": "Reducción del presupuesto por reservas que exceden los límites de funcionamiento e inversión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Decreto 1068 de 2015, art. 2.8.1.7.3.5 inc. 1",
+      "Decreto 111 de 1996, art. 78 inc. 1"
+    ],
+    "texto_fuente": "el Gobierno Nacional reducirá el presupuesto en el 100% del monto de las reservas presupuestales constituidas sobre el presupuesto del año inmediatamente anterior, que excedan el 2% de las apropiaciones de funcionamiento y el 15% de las apropiaciones de inversión del presupuesto de dicho año. [...] En cada vigencia, el Gobierno reducirá el Presupuesto de Gastos de Funcionamiento cuando las reservas constituidas para ellos, superen el 2% del presupuesto del año inmediatamente anterior. Igual operación realizará sobre las apropiaciones de inversión, cuando las reservas para tal fin excedan el 15% del presupuesto de inversión del año anterior.",
+    "pregunta": "La oficina de planeación financiera de un ministerio proyecta el efecto de las reservas presupuestales que constituyó en enero de 2026 sobre su presupuesto de 2025. Ese año tuvo apropiaciones de funcionamiento por $80.000 millones y de inversión por $30.000 millones, y las reservas constituidas fueron de $2.100 millones en funcionamiento y de $4.000 millones en inversión. El jefe de la oficina pide a un profesional calcular la reducción que, por este concepto, hará el Gobierno al presupuesto de 2026 del ministerio. ¿Cuál es el resultado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una reducción de $2.100 millones en funcionamiento, por superar su límite del 2%; la inversión no se reduce.",
+        "explicacion": "Incorrecta. La reducción no recae sobre todo el monto de las reservas, sino sobre la parte que excede el límite: 2.100 − 1.600 = 500."
+      },
+      {
+        "id": "B",
+        "texto": "Una reducción de $3.400 millones en inversión, por superar el límite del 2%; el funcionamiento no se reduce.",
+        "explicacion": "Incorrecta. Intercambia los límites: el 2% se aplica a funcionamiento y el 15% a inversión. Con el límite correcto, las reservas de inversión (4.000) no superan 4.500, y las de funcionamiento sí superan 1.600."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna reducción, porque el total de las reservas no supera el 15% de todo el presupuesto de 2025.",
+        "explicacion": "Incorrecta. Los límites se aplican por separado a las reservas de funcionamiento (2%) y a las de inversión (15%), no al total del presupuesto."
+      },
+      {
+        "id": "D",
+        "texto": "Una reducción de $500 millones en funcionamiento; la inversión no se reduce, porque no supera su límite.",
+        "explicacion": "Correcta. Límite de funcionamiento: 2% de 80.000 = 1.600; exceso: 2.100 − 1.600 = 500. Límite de inversión: 15% de 30.000 = 4.500, que las reservas (4.000) no superan. Se reduce el 100% del exceso (art. 2.8.1.7.3.5 del Decreto 1068 y art. 78 del Decreto 111)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las reservas de funcionamiento (2.100) y de inversión (4.000) frente a las apropiaciones de 2025 (80.000 y 30.000). Regla: el Gobierno reduce el presupuesto en el 100% de las reservas que exceden el 2% de las apropiaciones de funcionamiento y el 15% de las de inversión del año anterior (art. 2.8.1.7.3.5 del Decreto 1068 y art. 78 del Decreto 111). Cálculo: 2.100 − 1.600 = 500; 4.000 < 4.500. Conclusión: se reducen $500 millones de funcionamiento.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-FIN-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Modificaciones presupuestales",
+    "subtema": "Aplazamiento de apropiaciones: efecto sobre nuevas disponibilidades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 111 de 1996 y Decreto 1068 de 2015",
+    "articulos": [
+      "Decreto 111 de 1996, art. 76",
+      "Decreto 111 de 1996, art. 77",
+      "Decreto 1068 de 2015, art. 2.8.1.7.2 inc. 1"
+    ],
+    "texto_fuente": "En cualquier mes del año fiscal, el Gobierno Nacional, previo concepto del Consejo de Ministros, podrá reducir o aplazar total o parcialmente, las apropiaciones presupuestales [...] Cuando, el Gobierno se viere precisado a reducir las apropiaciones presupuestales o aplazar su cumplimiento, señalará, por medio de decreto, las apropiaciones a las que se aplican unas u otras medidas. Expedido el decreto se procederá a reformar, si fuere el caso, el Programa Anual de Caja para eliminar los saldos disponibles para compromisos u obligaciones de las apropiaciones reducidas o aplazadas y las autorizaciones que se expidan con cargo a apropiaciones aplazadas no tendrán valor alguno. [...] El certificado de disponibilidad es el documento expedido por el jefe de presupuesto o quien haga sus veces con el cual se garantiza la existencia de apropiación presupuestal disponible y libre de afectación para la asunción de compromisos.",
+    "pregunta": "Diana, técnica de presupuesto de un ministerio, recibe el 20 de mayo una solicitud de certificado de disponibilidad por $400 millones con cargo al rubro de adquisición de equipos, que tiene una apropiación de $1.000 millones. Con cargo a ese rubro ya hay certificados por $450 millones, que respaldan contratos registrados. El 10 de mayo, por un menor recaudo esperado, el Gobierno expidió un decreto que, previo concepto del Consejo de Ministros, aplazó $300 millones del rubro. ¿Qué debe advertir Diana al jefe de presupuesto antes de que firme el certificado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede expedirse por $400 millones, porque el aplazamiento solo reprograma los pagos en el PAC y no toca la apropiación.",
+        "explicacion": "Incorrecta. El aplazamiento afecta la apropiación misma: tras el decreto se eliminan del PAC los saldos disponibles para compromisos de lo aplazado, y las autorizaciones que se expidan con cargo a ello no tienen valor (art. 77 del Decreto 111)."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede expedirse por $400 millones si el contrato pacta sus pagos para después de que se levante el aplazamiento.",
+        "explicacion": "Incorrecta. Pactar pagos posteriores no resuelve el problema: cualquier autorización expedida con cargo a apropiaciones aplazadas no tiene valor alguno, sin importar cuándo se pague."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede expedirse ningún certificado con cargo al rubro mientras rija el decreto, porque toda la apropiación quedó congelada.",
+        "explicacion": "Incorrecta. El decreto aplazó $300 millones, no toda la apropiación. La parte no aplazada y libre de afectación ($250 millones) sí puede certificarse."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede expedirse hasta por $250 millones, porque la parte aplazada no puede respaldar compromisos mientras dure la medida.",
+        "explicacion": "Correcta. Libre: 1.000 − 450 − 300 = 250. Las autorizaciones expedidas con cargo a apropiaciones aplazadas no tienen valor alguno (art. 77 del Decreto 111), y el certificado solo garantiza apropiación disponible y libre de afectación (art. 2.8.1.7.2 del Decreto 1068)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: de los $1.000 millones del rubro, $450 millones ya están certificados y comprometidos, y $300 millones fueron aplazados por decreto el 10 de mayo. Regla: tras el decreto de aplazamiento, las autorizaciones expedidas con cargo a apropiaciones aplazadas no tienen valor alguno (arts. 76 y 77 del Decreto 111), y el certificado solo garantiza apropiación disponible y libre de afectación (art. 2.8.1.7.2 del Decreto 1068). Cálculo: 1.000 − 450 − 300 = 250. Conclusión: el certificado no puede superar $250 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-FIN-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Modificaciones presupuestales",
+    "subtema": "Traslado entre proyectos de inversión: concepto del DNP e informe al Presidente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.5.6 incs. 1 a 3 (modificado por el art. 8 del Decreto 412 de 2018)",
+      "art. 2.8.1.5.6 parágrafo 3 (adicionado por el art. 1 del Decreto 313 de 2024)"
+    ],
+    "texto_fuente": "Las modificaciones al anexo del decreto de liquidación que no modifiquen en cada sección presupuestal el monto total de sus apropiaciones de funcionamiento, servicio de la deuda o los programas y subprogramas de inversión aprobados por el Congreso de la República, se realizarán mediante resolución expedida por el jefe del órgano respectivo. [...] El Ministerio de Hacienda y Crédito Público - Dirección General del Presupuesto Público Nacional, aprobará las operaciones presupuestales contenidas en las resoluciones o acuerdos una vez se realice el registro de las solicitudes en el Sistema Integrado de Información Financiera SIIF Nación. Si se trata de gastos de inversión, la aprobación requerirá previo concepto favorable del Departamento Nacional de Planeación- Dirección de Inversiones y Finanzas Públicas sobre las operaciones presupuestales contenidas en los proyectos de resoluciones o acuerdos y verificación del registro de las solicitudes en el Sistema Unificado de Inversión y Finanzas Públicas SUIFP. [...] Cuando se trate de proyectos de inversión, los jefes de los órganos que hacen parte del Presupuesto General de la Nación y que pertenecen a la Rama Ejecutiva del poder público del orden nacional, una vez obtengan el concepto previo y favorable del Departamento Nacional de Planeación, deberán informar al Presidente de la República acerca de los ajustes que se realicen al presupuesto, en los casos de autorizaciones de vigencias futuras o su reprogramación y traslados presupuestales",
+    "pregunta": "En julio de 2026, la coordinadora financiera de un ministerio prepara un traslado de $2.000 millones entre dos proyectos de inversión del mismo subprograma, que no altera los montos aprobados por el Congreso. Ya tiene listo el proyecto de resolución del ministro y registró la solicitud en el SIIF. Antes de enviar la operación para que la apruebe la Dirección General del Presupuesto Público Nacional, el secretario general le pregunta qué falta. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que falta informar del ajuste al Presidente de la República y, con su visto bueno, pedir al DNP el concepto sobre la solicitud registrada en el SUIFP.",
+        "explicacion": "Incorrecta. Invierte el orden: primero se obtiene el concepto previo y favorable del DNP, y una vez obtenido se informa al Presidente. La norma no exige un visto bueno presidencial para pedir el concepto."
+      },
+      {
+        "id": "B",
+        "texto": "Que falta la autorización del Confis y el concepto del Consejo de Ministros, porque el traslado cambia la destinación de recursos de inversión.",
+        "explicacion": "Incorrecta. El Confis interviene en las vigencias futuras, y el Consejo de Ministros en las reducciones y aplazamientos. Este traslado no altera lo aprobado por el Congreso y se tramita con concepto del DNP e informe al Presidente."
+      },
+      {
+        "id": "C",
+        "texto": "Que falta el concepto previo favorable del DNP, con la solicitud registrada en el SUIFP, y después informar del ajuste al Presidente de la República.",
+        "explicacion": "Correcta. En gastos de inversión, la aprobación de la DGPPN requiere concepto previo favorable del DNP y verificación del registro en el SUIFP (art. 2.8.1.5.6). Obtenido ese concepto, el jefe de un órgano de la Rama Ejecutiva debe informar al Presidente antes de seguir el trámite ante la DGPPN (parágrafo 3, Decreto 313 de 2024)."
+      },
+      {
+        "id": "D",
+        "texto": "Que no falta nada: como no se alteran los montos aprobados por el Congreso, basta la resolución del ministro registrada en el SIIF.",
+        "explicacion": "Incorrecta. Ese trámite basta para los traslados de funcionamiento, pero en inversión la aprobación exige además el concepto previo del DNP y, en la Rama Ejecutiva, informar al Presidente."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: es un traslado entre proyectos de inversión de un ministerio, que no altera los montos aprobados por el Congreso. Regla: se hace por resolución del jefe del órgano, que la DGPPN aprueba tras el registro en el SIIF; en inversión, la aprobación requiere concepto previo favorable del DNP y verificación del registro en el SUIFP, y obtenido el concepto, el jefe del órgano de la Rama Ejecutiva debe informar al Presidente (art. 2.8.1.5.6 y su parágrafo 3 del Decreto 1068). Conclusión: faltan el concepto del DNP y luego el informe al Presidente.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 30
+    }
+  },
+  {
+    "id": "TC-FIN-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Programa Anual Mensualizado de Caja",
+    "subtema": "Pago transitorio con ingresos propios de obligaciones financiadas con recursos de la Nación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.2.1 inc. 4"
+    ],
+    "texto_fuente": "Los Establecimientos Públicos podrán pagar con sus ingresos propios obligaciones financiadas con recursos de la Nación, mientras la Dirección General de Crédito Público y del Tesoro Nacional del Ministerio de Hacienda y Crédito Público transfiere los dineros respectivos. Igual procedimiento será aplicable a los órganos del Presupuesto General de la Nación cuando administren fondos especiales y a las empresas industriales y comerciales del Estado y sociedades de economía mixta con el régimen de aquellas sobre los recursos de la Nación. Estas operaciones deben contar con la autorización previa de la Dirección General de Crédito Público y del Tesoro Nacional.",
+    "pregunta": "Jorge, técnico de tesorería de un establecimiento público del orden nacional, tiene lista para pago una cuenta de $85 millones de un contrato financiado con aportes de la Nación, con su obligación ya registrada. Los recursos de la Nación para ese pago todavía no han llegado, pero la cuenta de ingresos propios del establecimiento tiene saldo suficiente. La tesorera le pide verificar si pueden pagar con ingresos propios mientras llegan los aportes, y qué se necesita para hacerlo. ¿Qué debe informarle Jorge?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede hacerse si la junta directiva lo aprueba, porque es la que aprueba el PAC de los ingresos propios del establecimiento.",
+        "explicacion": "Incorrecta. La junta aprueba el PAC de ingresos propios, pero este pago transitorio de obligaciones financiadas con recursos de la Nación requiere autorización previa de la Dirección General de Crédito Público y Tesoro Nacional (art. 2.8.1.7.2.1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede hacerse con autorización previa de la Dirección General de Crédito Público y Tesoro Nacional, porque el pago es transitorio.",
+        "explicacion": "Correcta. Los establecimientos públicos pueden pagar con ingresos propios obligaciones financiadas con recursos de la Nación mientras el Tesoro transfiere los dineros, con autorización previa de la Dirección General de Crédito Público y Tesoro Nacional (art. 2.8.1.7.2.1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede hacerse sin autorización alguna, porque con el recaudo de todas las rentas se atiende el pago de todas las apropiaciones.",
+        "explicacion": "Incorrecta. Invoca la unidad de caja, pero para esta operación la norma exige autorización previa de la Dirección General de Crédito Público y Tesoro Nacional. No basta con que haya saldo en la cuenta de ingresos propios."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede hacerse: las obligaciones que se financian con aportes de la Nación deben pagarse con esos mismos aportes.",
+        "explicacion": "Incorrecta. La norma permite expresamente que los establecimientos públicos adelanten estos pagos con ingresos propios mientras llegan los recursos de la Nación."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la obligación está financiada con aportes de la Nación que aún no llegan, y el establecimiento tiene ingresos propios disponibles. Regla: los establecimientos públicos pueden pagar con ingresos propios obligaciones financiadas con recursos de la Nación mientras la Dirección General de Crédito Público y Tesoro Nacional transfiere los dineros, con autorización previa de esa Dirección (art. 2.8.1.7.2.1 del Decreto 1068). Conclusión: puede pagar, pero con esa autorización previa.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-FIN-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Marco fiscal y responsabilidad fiscal",
+    "subtema": "Cálculo del superávit primario de una entidad territorial",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 819 de 2003",
+    "articulos": [
+      "art. 2, inc. 4",
+      "art. 2, parágrafo"
+    ],
+    "texto_fuente": "los departamentos, distritos y municipios de categorías especial, 1 y 2 deberán establecer una meta de superávit primario para cada vigencia con el fin de garantizar la sostenibilidad de su respectiva deuda [...] PARÁGRAFO. Se entiende por superávit primario aquel valor positivo que resulta de la diferencia entre la suma de los ingresos corrientes y los recursos de capital, diferentes a desembolsos de crédito, privatizaciones, capitalizaciones, utilidades del Banco de la República (para el caso de la Nación), y la suma de los gastos de funcionamiento, inversión y gastos de operación comercial.",
+    "pregunta": "Un profesional de la secretaría de hacienda de un municipio de categoría 1 calcula el superávit primario de 2027 para el marco fiscal de mediano plazo. Las cifras proyectadas, en millones de pesos, son: ingresos corrientes, 84.000; desembolsos de un crédito con la banca, 12.000; venta de la participación accionaria del municipio en una empresa de energía, 5.000; rendimientos financieros, 1.500; gastos de funcionamiento, 30.000; gastos de inversión, 52.000; servicio de la deuda (intereses y amortizaciones), 6.000. ¿Cuál es el resultado que debe reportar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un superávit de $8.500 millones.",
+        "explicacion": "Incorrecta. Suma la venta de las acciones de la empresa de energía (5.000), que es una privatización, y la ley la excluye: (84.000 + 5.000 + 1.500) − 82.000 = 8.500."
+      },
+      {
+        "id": "B",
+        "texto": "Un superávit de $3.500 millones.",
+        "explicacion": "Correcta. Se suman los ingresos corrientes (84.000) y los recursos de capital distintos de crédito y privatizaciones, que aquí son solo los rendimientos (1.500): 85.500. Se restan funcionamiento e inversión (82.000). El servicio de la deuda no entra en la fórmula. Resultado: 3.500."
+      },
+      {
+        "id": "C",
+        "texto": "Un superávit de $20.500 millones.",
+        "explicacion": "Incorrecta. Suma el crédito (12.000) y la venta de acciones (5.000). La ley excluye del cálculo los desembolsos de crédito y las privatizaciones."
+      },
+      {
+        "id": "D",
+        "texto": "Un déficit de $2.500 millones.",
+        "explicacion": "Incorrecta. Resta el servicio de la deuda (6.000), pero la fórmula solo resta los gastos de funcionamiento, inversión y operación comercial: 3.500 − 6.000 no es el resultado primario."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: entre los recursos de capital hay un crédito y la venta de acciones de una empresa (privatización). Regla: el parágrafo del art. 2 de la Ley 819 define el superávit primario como ingresos corrientes más recursos de capital, sin crédito ni privatizaciones, menos funcionamiento, inversión y operación comercial. Cálculo: (84.000 + 1.500) − (30.000 + 52.000) = 3.500; el servicio de la deuda no se resta. Conclusión: superávit de $3.500 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-FIN-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Marco fiscal y responsabilidad fiscal",
+    "subtema": "Obligación y oportunidad del marco fiscal de mediano plazo territorial",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": [
+      "art. 1, inc. 1",
+      "art. 2, inc. 4",
+      "art. 5, inc. 1 (modificado por el art. 325 de la Ley 2294 de 2023)",
+      "art. 5, inc. 2",
+      "art. 5, parágrafo (modificado por el art. 325 de la Ley 2294 de 2023)"
+    ],
+    "texto_fuente": "Antes del 15 de junio de cada vigencia fiscal, el Gobierno Nacional, presentará a las Comisiones Económicas del Senado y de la Cámara de Representantes, un Marco Fiscal de Mediano Plazo [...] los departamentos, distritos y municipios de categorías especial, 1 y 2 deberán establecer una meta de superávit primario para cada vigencia [...] La meta de superávit primario que garantiza la sostenibilidad de la deuda será fijada por el Confis o por la Secretaría de Hacienda correspondiente y aprobado y revisado por el Consejo de Gobierno. [...] Anualmente, en los departamentos, en los distritos y municipios de categoría especial, 1 y 2, a partir de la vigencia de la presente ley, y en los municipios de categorías 3, 4, 5 y 6 a partir de la vigencia 2005, el Gobernador o Alcalde deberá presentar a la respectiva Asamblea o Concejo un Marco Fiscal de Mediano Plazo. [...] Dicho Marco se presentará en el mismo período en el cual se deba presentar el proyecto de presupuesto [...] Los concejos municipales y asambleas departamentales al aprobar el presupuesto y el plan de inversiones del plan de desarrollo deberán asegurarse de que estos sean consistentes con el Marco Fiscal de Mediano Plazo de la entidad territorial.",
+    "pregunta": "En un municipio de quinta categoría, la secretaría de hacienda prepara el proyecto de presupuesto de 2027. Un asesor externo recomienda no elaborar el marco fiscal de mediano plazo: según él, la Ley 819 de 2003 solo obliga a fijar metas de superávit primario a los municipios de categorías especial, 1 y 2, y en los demás basta con que el Consejo de Gobierno revise las cifras fiscales. ¿Qué debe hacerse con el marco fiscal?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Puede omitirse: en un municipio de quinta categoría no es obligatorio y basta la revisión del Consejo de Gobierno.",
+        "explicacion": "Incorrecta. Confunde dos reglas. La meta de superávit primario del art. 2 es obligatoria para las categorías especial, 1 y 2, pero el marco fiscal deben presentarlo todos los municipios; los de categorías 3 a 6, desde la vigencia 2005 (art. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "El alcalde debe presentarlo al concejo antes del 15 de junio, en un trámite separado del de presupuesto.",
+        "explicacion": "Incorrecta. El 15 de junio es el plazo del Gobierno Nacional ante las comisiones económicas del Congreso (art. 1). El marco territorial se presenta en el mismo período que el proyecto de presupuesto."
+      },
+      {
+        "id": "C",
+        "texto": "El alcalde debe llevarlo al concejo cada año, en la misma época en que radica el proyecto de rentas y gastos.",
+        "explicacion": "Correcta. El art. 5 (mod. Ley 2294 de 2023) obliga al alcalde de todo municipio, incluidos los de categorías 3 a 6 desde 2005, a presentar cada año al concejo el marco fiscal, en el mismo período en que debe presentar el proyecto de presupuesto."
+      },
+      {
+        "id": "D",
+        "texto": "El secretario de hacienda debe adoptarlo por resolución, con aval del Consejo de Gobierno y sin pasar por el concejo.",
+        "explicacion": "Incorrecta. El Consejo de Gobierno aprueba y revisa la meta de superávit primario (art. 2), pero el marco fiscal lo presenta el alcalde al concejo, que al aprobar el presupuesto debe verificar que sea consistente con él."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: es un municipio de quinta categoría que prepara su presupuesto. Regla: el art. 2 de la Ley 819 exige la meta de superávit primario a las categorías especial, 1 y 2, pero el art. 5 (mod. Ley 2294 de 2023) obliga a todos los alcaldes, en los municipios de categorías 3 a 6 desde 2005, a presentar cada año al concejo el marco fiscal, en el mismo período en que se presenta el proyecto de presupuesto. Conclusión: el alcalde debe presentarlo al concejo junto con el ciclo del presupuesto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-FIN-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Marco fiscal y responsabilidad fiscal",
+    "subtema": "Contenido mínimo del marco fiscal de mediano plazo territorial",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": [
+      "art. 1, lits. b), e) y g)",
+      "art. 5, inc. 2, lits. a) a h) (lit. h modificado por el art. 325 de la Ley 2294 de 2023)",
+      "art. 5, parágrafo (modificado por el art. 325 de la Ley 2294 de 2023)"
+    ],
+    "texto_fuente": "b) Un programa macroeconómico plurianual; [...] e) Una evaluación de las principales actividades cuasifiscales realizadas por el sector público; [...] g) El costo fiscal de las leyes sancionadas en la vigencia fiscal anterior; [...] Dicho Marco se presentará en el mismo período en el cual se deba presentar el proyecto de presupuesto y debe contener como mínimo: a) El Plan Financiero contenido en el artículo 4o de la Ley 38 de 1989, modificado por el inciso 5 de la Ley 179 de 1994; b) Las metas de superávit primario a que hace referencia el artículo 2o de la presente ley, así como el nivel de deuda pública y un análisis de su sostenibilidad; c) Las acciones y medidas específicas en las que se sustenta el cumplimiento de las metas, con sus correspondientes cronogramas de ejecución; d) Un informe de resultados fiscales de la vigencia fiscal anterior. [...] e) Una estimación del costo fiscal de las exenciones tributarias existentes en la vigencia anterior; f) Una relación de los pasivos exigibles y de los pasivos contingentes que pueden afectar la situación financiera de la entidad territorial; g) El costo fiscal de los proyectos de ordenanza o acuerdo sancionados en la vigencia fiscal anterior. h) [...] El análisis de la situación financiera de las entidades del sector descentralizad [...] El Marco Fiscal de Mediano Plazo de las entidades territoriales deberá contener la descripción de las estrategias e instrumentos para garantizar su cumplimiento.",
+    "pregunta": "Un técnico de la secretaría de hacienda de un departamento arma el borrador del marco fiscal de mediano plazo y coteja sus capítulos con la ley. Ya tiene: el plan financiero; las metas de superávit primario, con el nivel de deuda y su análisis de sostenibilidad; el informe de resultados fiscales de la vigencia anterior; el costo fiscal de las exenciones tributarias; la relación de pasivos exigibles y contingentes; el costo fiscal de las ordenanzas sancionadas el año anterior, y el análisis financiero de las entidades descentralizadas. ¿Qué capítulo obligatorio debe reportar como faltante?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las estrategias concretas que sustentan el logro de las metas, con su calendario de ejecución.",
+        "explicacion": "Correcta. El lit. c) del art. 5 exige las acciones y medidas específicas que sustentan el cumplimiento de las metas, con sus cronogramas, y el parágrafo pide describir las estrategias e instrumentos para cumplir el marco. Es el único contenido de la lista territorial que falta en el borrador."
+      },
+      {
+        "id": "B",
+        "texto": "Un programa macroeconómico plurianual, con las proyecciones de la economía del departamento.",
+        "explicacion": "Incorrecta. El programa macroeconómico plurianual es contenido del marco fiscal del Gobierno Nacional (art. 1, lit. b); la lista del art. 5 para las entidades territoriales no lo incluye."
+      },
+      {
+        "id": "C",
+        "texto": "Una evaluación de las principales actividades cuasifiscales realizadas por el sector público.",
+        "explicacion": "Incorrecta. La evaluación de las actividades cuasifiscales está en el marco fiscal nacional (art. 1, lit. e), no en el territorial."
+      },
+      {
+        "id": "D",
+        "texto": "El costo fiscal de las leyes que el Congreso sancionó durante la vigencia fiscal anterior.",
+        "explicacion": "Incorrecta. El costo de las leyes sancionadas es contenido del marco nacional (art. 1, lit. g). En el territorial se mide el de las ordenanzas o acuerdos, que el borrador ya tiene."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el borrador de un departamento tiene siete de los ocho contenidos del art. 5 de la Ley 819 y le falta el del literal c). Regla: el marco fiscal territorial debe incluir las acciones y medidas específicas que sustentan el cumplimiento de las metas, con sus cronogramas, y el parágrafo exige describir las estrategias para cumplirlo. El programa macroeconómico, las actividades cuasifiscales y el costo de las leyes son contenidos del marco nacional (art. 1). Conclusión: falta el capítulo de acciones y cronogramas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-FIN-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Marco fiscal y responsabilidad fiscal",
+    "subtema": "Análisis del impacto fiscal de un proyecto de acuerdo de iniciativa del alcalde",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": [
+      "art. 7, incs. 1 a 5"
+    ],
+    "texto_fuente": "En todo momento, el impacto fiscal de cualquier proyecto de ley, ordenanza o acuerdo, que ordene gasto o que otorgue beneficios tributarios, deberá hacerse explícito y deberá ser compatible con el Marco Fiscal de Mediano Plazo. Para estos propósitos, deberá incluirse expresamente en la exposición de motivos y en las ponencias de trámite respectivas los costos fiscales de la iniciativa y la fuente de ingreso adicional generada para el financiamiento de dicho costo. El Ministerio de Hacienda y Crédito Público, en cualquier tiempo durante el respectivo trámite en el Congreso de la República, deberá rendir su concepto frente a la consistencia de lo dispuesto en el inciso anterior. [...] Los proyectos de ley de iniciativa gubernamental, que planteen un gasto adicional o una reducción de ingresos, deberá contener la correspondiente fuente sustitutiva por disminución de gasto o aumentos de ingresos, lo cual deberá ser analizado y aprobado por el Ministerio de Hacienda y Crédito Público. En las entidades territoriales, el trámite previsto en el inciso anterior será surtido ante la respectiva Secretaría de Hacienda o quien haga sus veces.",
+    "pregunta": "Una profesional de la oficina jurídica de una alcaldía revisa un proyecto de acuerdo que el alcalde presentará al concejo: un descuento del 30% en el impuesto predial, durante tres años, para los inmuebles que se restauren en el centro histórico. La secretaría de desarrollo económico calcula que el municipio dejará de recibir $900 millones por año, pero la exposición de motivos solo describe los beneficios del programa. ¿Qué debe exigir la profesional antes de que se radique?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicitar el costo y su financiación en la exposición de motivos, con una fuente sustitutiva aprobada por la secretaría de hacienda.",
+        "explicacion": "Correcta. El art. 7 exige que el costo fiscal y la fuente de ingreso que lo financia consten en la exposición de motivos y en las ponencias. Como el proyecto es del alcalde y reduce ingresos, debe traer una fuente sustitutiva (menor gasto o más ingresos), que analiza y aprueba la secretaría de hacienda."
+      },
+      {
+        "id": "B",
+        "texto": "Radicarlo así y pedir que el Ministerio de Hacienda rinda concepto sobre su consistencia fiscal durante el trámite en el concejo.",
+        "explicacion": "Incorrecta. El concepto del Ministerio de Hacienda está previsto para los proyectos de ley que se tramitan en el Congreso. En lo territorial, la fuente sustitutiva se tramita ante la secretaría de hacienda, y el costo debe constar desde la exposición de motivos."
+      },
+      {
+        "id": "C",
+        "texto": "Anotar el costo fiscal en la exposición de motivos y definir cómo se financia al elaborar el presupuesto del primer año del descuento.",
+        "explicacion": "Incorrecta. Aplaza un requisito que la ley exige desde el inicio del trámite: la exposición de motivos debe incluir tanto el costo como la fuente que lo financia."
+      },
+      {
+        "id": "D",
+        "texto": "Obtener el aval del Consejo de Gobierno, que reemplaza el análisis de costos y de financiación en la exposición de motivos.",
+        "explicacion": "Incorrecta. El art. 7 no prevé que un aval del Consejo de Gobierno sustituya el análisis de impacto fiscal: el costo y su financiación deben quedar explícitos en la exposición de motivos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: es un proyecto de acuerdo del alcalde que otorga un beneficio tributario y reduce ingresos, y su exposición de motivos no trae cifras. Regla: el art. 7 de la Ley 819 exige incluir en la exposición de motivos y en las ponencias el costo fiscal y la fuente que lo financia; si la iniciativa es del gobierno, debe traer una fuente sustitutiva, que en las entidades territoriales analiza y aprueba la secretaría de hacienda. Conclusión: debe exigir ambos elementos antes de radicar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-FIN-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Marco fiscal y responsabilidad fiscal",
+    "subtema": "Prohibición de aprobar vigencias futuras en el último año de gobierno territorial",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": [
+      "art. 12, incs. 1, 2, 4 y 5"
+    ],
+    "texto_fuente": "En las entidades territoriales, las autorizaciones para comprometer vigencias futuras serán impartidas por la asamblea o concejo respectivo, a iniciativa del gobierno local, previa aprobación por el Confis territorial o el órgano que haga sus veces. [...] b) Como mínimo, de las vigencias futuras que se soliciten se deberá contar con apropiación del quince por ciento (15%) en la vigencia fiscal en la que estas sean autorizadas; c) Cuando se trate de proyectos que conlleven inversión nacional deberá obtenerse el concepto previo y favorable del Departamento Nacional de Planeación. [...] La autorización por parte del Confis para comprometer presupuesto con cargo a vigencias futuras no podrá superar el respectivo período de gobierno. Se exceptúan los proyectos de gastos de inversión en aquellos casos en que el Consejo de Gobierno previamente los declare de importancia estratégica. [...] En las entidades territoriales, queda prohibida la aprobación de cualquier vigencia futura, en el último año de gobierno del respectivo alcalde o gobernador, excepto la celebración de operaciones conexas de crédito público.",
+    "pregunta": "El alcalde de un municipio, elegido para el período 2024-2027, presentó al concejo en marzo de 2027 una solicitud de vigencias futuras ordinarias para contratar con recursos propios, sin cofinanciación de la Nación, la vigilancia de las sedes de la alcaldía en 2027 y 2028. El proyecto está en el plan de desarrollo, el Confis municipal lo aprobó y el municipio tiene apropiado en 2027 el 20% del valor que pide comprometer para 2028. El asesor jurídico del concejo debe recomendar el sentido de la decisión. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobarla, ya que cumple el mínimo de apropiación, cuenta con el aval del Confis y está en el plan de desarrollo.",
+        "explicacion": "Incorrecta. Verifica bien los requisitos ordinarios (15% de apropiación, aval del Confis y plan de desarrollo), pero pasa por alto la prohibición de aprobar vigencias futuras en el último año de gobierno."
+      },
+      {
+        "id": "B",
+        "texto": "Negarla, pues 2027 es el último año del período del alcalde y en ese año no puede aprobarse una autorización así.",
+        "explicacion": "Correcta. En las entidades territoriales está prohibido aprobar cualquier vigencia futura en el último año de gobierno del alcalde, salvo operaciones conexas de crédito público. El período termina en 2027, así que la solicitud no puede aprobarse aunque cumpla los demás requisitos. Las excepciones que agregó después la Ley 1483 de 2011 (proyectos cofinanciados en su mayoría por la Nación y la última doceava del SGP) no se presentan en el caso."
+      },
+      {
+        "id": "C",
+        "texto": "Aprobarla solo si el Consejo de Gobierno declara antes el proyecto de importancia estratégica, por exceder el período.",
+        "explicacion": "Incorrecta. La declaratoria de importancia estratégica permite que la autorización supere el período de gobierno, pero no levanta la prohibición del último año."
+      },
+      {
+        "id": "D",
+        "texto": "Aprobarla, pero sujeta al concepto previo y favorable del Departamento Nacional de Planeación por ser inversión.",
+        "explicacion": "Incorrecta. El concepto del DNP se exige para proyectos que conlleven inversión nacional, y en todo caso no salvaría la prohibición del último año de gobierno."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el período del alcalde es 2024-2027 y la solicitud llega en 2027. Regla: el art. 12 de la Ley 819 fija los requisitos de las vigencias futuras ordinarias territoriales (15% de apropiación, aval del Confis, plan de desarrollo), pero prohíbe aprobar cualquier vigencia futura en el último año de gobierno, salvo operaciones conexas de crédito público. Conclusión: aunque cumpla los requisitos ordinarios, el concejo debe negarla.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-FIN-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Programación y liquidación del presupuesto",
+    "subtema": "Clasificación de la inversión en el proyecto de presupuesto y en el anexo del decreto de liquidación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.4.2 (modificado por el art. 5 del Decreto 412 de 2018)",
+      "art. 2.8.1.5.2 (modificado por el art. 6 del Decreto 412 de 2018)"
+    ],
+    "texto_fuente": "El proyecto de presupuesto de Gastos se presentará al Congreso de la República clasificado en secciones presupuestales distinguiendo entre cada una los gastos de funcionamiento, servicio de la deuda pública y los gastos de inversión. Los gastos de inversión se clasificarán en Programas y subprogramas. [...] El anexo del decreto de liquidación del presupuesto en lo correspondiente a gastos incluirá, además de las clasificaciones contempladas en el artículo 2.8.1.4.2, la desagregación para el caso de inversión, identificando los proyectos asociados a los programas de inversión y para el caso de funcionamiento y servicio de la deuda de acuerdo a las cuentas, subcuentas y objetos de gasto que determine el Catálogo de Clasificación Presupuestal - CCP",
+    "pregunta": "Un técnico del grupo de presupuesto de un ministerio organiza la información de inversión para dos documentos: el proyecto de presupuesto que irá al Congreso y, una vez expedida la ley, el anexo del decreto de liquidación. El coordinador le pide verificar con qué nivel de detalle debe aparecer la inversión en cada uno. ¿Qué debe reportarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En el proyecto, por proyectos; en el anexo, por cuentas, subcuentas y objetos de gasto del catálogo presupuestal.",
+        "explicacion": "Incorrecta. El proyecto no se presenta por proyectos sino por programas y subprogramas. Las cuentas, subcuentas y objetos de gasto del catálogo son la desagregación del anexo para funcionamiento y servicio de la deuda, no para inversión."
+      },
+      {
+        "id": "B",
+        "texto": "En ambos, por programas y subprogramas; los proyectos quedan registrados en el Banco de Proyectos, no en el anexo.",
+        "explicacion": "Incorrecta. Acierta en el proyecto, pero el anexo del decreto de liquidación sí debe identificar los proyectos asociados a cada programa de inversión."
+      },
+      {
+        "id": "C",
+        "texto": "En el proyecto, por programas y subprogramas; en el anexo, con esa misma clasificación y los proyectos de cada programa.",
+        "explicacion": "Correcta. El art. 2.8.1.4.2 ordena presentar la inversión al Congreso en programas y subprogramas. El art. 2.8.1.5.2 dispone que el anexo del decreto de liquidación incluya esas clasificaciones y, para inversión, los proyectos asociados a los programas."
+      },
+      {
+        "id": "D",
+        "texto": "En el proyecto, por cuentas y objetos de gasto; en el anexo, por programas y subprogramas abiertos por dependencias.",
+        "explicacion": "Incorrecta. Invierte los niveles: el proyecto clasifica la inversión en programas y subprogramas, y la clasificación por cuentas y objetos de gasto corresponde, en el anexo, a funcionamiento y servicio de la deuda."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la misma inversión aparece en dos documentos distintos del ciclo. Regla: el art. 2.8.1.4.2 del Decreto 1068 dispone que en el proyecto que va al Congreso la inversión se clasifica en programas y subprogramas; el art. 2.8.1.5.2 agrega que el anexo del decreto de liquidación, además de esas clasificaciones, identifica los proyectos asociados a cada programa (las cuentas y objetos de gasto son para funcionamiento y deuda). Conclusión: programas y subprogramas en el proyecto; además, proyectos en el anexo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-FIN-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Aprobación del presupuesto",
+    "subtema": "Presupuesto que rige cuando el Congreso no lo expide a tiempo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 111 de 1996, Constitución Política y Decreto 1068 de 2015",
+    "articulos": [
+      "Decreto 111 de 1996, art. 59",
+      "Constitución Política, art. 346, inc. 1 (modificado por el art. 3 del Acto Legislativo 3 de 2011)",
+      "Constitución Política, art. 348",
+      "Decreto 1068 de 2015, art. 2.8.1.4.4"
+    ],
+    "texto_fuente": "Si el Congreso no expidiere el Presupuesto General de la Nación antes de la media noche del 20 de octubre del año respectivo, regirá el proyecto presentado por el Gobierno, incluyendo las modificaciones que hayan sido aprobadas en el primer debate [...] El Gobierno formulará anualmente el presupuesto de rentas y ley de apropiaciones, que será presentado al Congreso dentro de los primeros diez días de cada legislatura. [...] Si el Congreso no expidiere el presupuesto, regirá el presentado por el Gobierno dentro de los términos del artículo precedente; si el presupuesto no hubiere sido presentado dentro de dicho plazo, regirá el del año anterior [...] Para los efectos del Estatuto Orgánico del Presupuesto, se entiende por presupuesto presentado por el Gobierno Nacional al Congreso el proyecto inicial y las modificaciones que se hicieren durante el estudio y deliberación conjunta de las comisiones económicas de las dos Cámaras al cierre del primer debate.",
+    "pregunta": "El Gobierno radicó el 22 de julio de 2026 el proyecto de Presupuesto General de la Nación para 2027, por $520 billones. En el primer debate, las comisiones económicas, en sesión conjunta, aprobaron recortes por $2 billones. Después, la plenaria del Senado aprobó un recorte adicional de $1 billón, pero a la medianoche del 20 de octubre la plenaria de la Cámara aún no había votado. Una asesora de la oficina de planeación de un ministerio debe informar qué presupuesto regirá en 2027. ¿Qué debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El presupuesto de 2026, repetido por decreto, dado que el Congreso no alcanzó a expedir la ley de 2027.",
+        "explicacion": "Incorrecta. El presupuesto del año anterior rige cuando el proyecto no se presentó dentro de los primeros diez días de la legislatura (art. 348 de la Constitución). Aquí se radicó el 22 de julio, a tiempo."
+      },
+      {
+        "id": "B",
+        "texto": "El proyecto inicial por $520 billones, sin los recortes, que no alcanzaron a aprobarse en las dos plenarias.",
+        "explicacion": "Incorrecta. Ignora que, si el Congreso no expide el presupuesto, rige el proyecto del Gobierno con las modificaciones aprobadas en el primer debate."
+      },
+      {
+        "id": "C",
+        "texto": "El proyecto con los recortes del primer debate y de la plenaria del Senado, por $517 billones.",
+        "explicacion": "Incorrecta. Suma el recorte de la plenaria del Senado, que no hace parte del primer debate. Solo cuentan los cambios aprobados al cierre del primer debate en las comisiones conjuntas."
+      },
+      {
+        "id": "D",
+        "texto": "El proyecto con los cambios aprobados en las comisiones, sin el de la plenaria, por $518 billones.",
+        "explicacion": "Correcta. Como el Congreso no expidió el presupuesto antes de la medianoche del 20 de octubre, rige el proyecto presentado con las modificaciones del primer debate (art. 59 del Decreto 111 y art. 2.8.1.4.4 del Decreto 1068): 520 − 2 = 518 billones."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el proyecto se radicó a tiempo (22 de julio) y a la medianoche del 20 de octubre no se había expedido la ley; hubo recortes en primer debate y otro en la plenaria del Senado. Regla: el art. 59 del Decreto 111 y el art. 348 de la Constitución disponen que rige el proyecto del Gobierno con las modificaciones aprobadas en primer debate (art. 2.8.1.4.4 del Decreto 1068). Cálculo: 520 − 2 = 518. Conclusión: rige el proyecto por $518 billones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-FIN-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Aprobación del presupuesto",
+    "subtema": "Repetición del presupuesto: base de cálculo del decreto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 111 de 1996 y Constitución Política",
+    "articulos": [
+      "Decreto 111 de 1996, art. 64, nums. 1 a 3",
+      "Constitución Política, art. 346, inc. 1 (modificado por el art. 3 del Acto Legislativo 3 de 2011)",
+      "Constitución Política, art. 348"
+    ],
+    "texto_fuente": "El Gobierno formulará anualmente el presupuesto de rentas y ley de apropiaciones, que será presentado al Congreso dentro de los primeros diez días de cada legislatura. [...] si el presupuesto no hubiere sido presentado dentro de dicho plazo, regirá el del año anterior, pero el Gobierno podrá reducir gastos, y, en consecuencia, suprimir o refundir empleos, cuando así lo aconsejen los cálculos de rentas del nuevo ejercicio. [...] En la preparación del decreto de repetición el Gobierno tomará en cuenta: [...] 1) Por presupuesto del año anterior se entiende, el sancionado o adoptado por el Gobierno y liquidado para el año fiscal en curso. 2) Los créditos adicionales debidamente aprobados para el año fiscal en curso. 3) Los traslados de apropiaciones efectuadas al presupuesto para el año fiscal en curso",
+    "pregunta": "En cierto año, la legislatura se instaló el 20 de julio y el Gobierno radicó el proyecto de Presupuesto General de la Nación el 24 de agosto. Un profesional de presupuesto de un ministerio debe calcular la apropiación de inversión que servirá de base para su sección en el decreto que expedirá el Gobierno para la vigencia siguiente. En la vigencia en curso, el decreto de liquidación le asignó $600.000 millones de inversión; luego, una ley le abrió un crédito adicional de $80.000 millones para inversión, y otra ley trasladó $30.000 millones de su funcionamiento a su inversión. Además, al cierre de la vigencia anterior el ministerio constituyó $50.000 millones de reservas presupuestales de inversión, que se ejecutan en el año en curso. ¿Cuál es esa base?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$710.000 millones: la inversión liquidada con el crédito adicional y el traslado recibido.",
+        "explicacion": "Correcta. El proyecto se radicó después de los primeros diez días de la legislatura, así que rige el presupuesto del año anterior (art. 348 de la Constitución). Para el decreto de repetición se toma el presupuesto liquidado, más los créditos adicionales y los traslados del año (art. 64): 600.000 + 80.000 + 30.000 = 710.000 millones."
+      },
+      {
+        "id": "B",
+        "texto": "$680.000 millones: la inversión liquidada más el crédito adicional abierto en el año.",
+        "explicacion": "Incorrecta. Omite el traslado de apropiaciones, que también debe tenerse en cuenta en el decreto de repetición."
+      },
+      {
+        "id": "C",
+        "texto": "$760.000 millones: la inversión liquidada con el crédito adicional, el traslado y las reservas del año.",
+        "explicacion": "Incorrecta. Las reservas presupuestales respaldan compromisos de la vigencia anterior; el art. 64 no las cuenta entre lo que se toma para el decreto de repetición, que son el presupuesto liquidado, los créditos adicionales y los traslados del año en curso."
+      },
+      {
+        "id": "D",
+        "texto": "La que fije el proyecto radicado en agosto, que regirá si el Congreso no lo aprueba a tiempo.",
+        "explicacion": "Incorrecta. Un proyecto radicado por fuera de los primeros diez días de la legislatura no puede regir por falta de aprobación: en ese caso rige el presupuesto del año anterior, repetido por el Gobierno."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la legislatura empezó el 20 de julio y el proyecto se radicó el 24 de agosto, fuera de los primeros diez días. Regla: el art. 348 de la Constitución ordena que rija el presupuesto del año anterior, y el art. 64 del Decreto 111 dice que para el decreto de repetición se toman el presupuesto liquidado, los créditos adicionales y los traslados del año en curso. Cálculo: 600.000 + 80.000 + 30.000 = 710.000; las reservas de la vigencia anterior no se suman. Conclusión: la base es $710.000 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-FIN-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Aprobación del presupuesto",
+    "subtema": "Objeción del alcalde por ilegalidad y presupuesto que rige mientras decide el tribunal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 111 de 1996",
+    "articulos": [
+      "art. 109, incs. 1 y 2"
+    ],
+    "texto_fuente": "Las entidades territoriales al expedir las normas orgánicas de presupuesto deberán seguir las disposiciones de la Ley Orgánica del Presupuesto, adaptándolas a la organización, normas constitucionales y condiciones de cada entidad territorial. Mientras se expiden estas normas, se aplicará la Ley Orgánica del Presupuesto en lo que fuere pertinente. Si el alcalde objeta por ilegal o inconstitucional el proyecto de presupuesto aprobado por el concejo, deberá enviarlo al tribunal administrativo dentro de los cinco días siguientes al recibo, para su sanción. El tribunal administrativo deberá pronunciarse durante los veinte días hábiles siguientes. Mientras el tribunal decide regirá el proyecto de presupuesto presentado oportunamente por el alcalde, bajo su directa responsabilidad",
+    "pregunta": "El concejo de un municipio aprobó el presupuesto de 2027 con cambios que, a juicio del alcalde, violan la ley orgánica. El alcalde lo objetó por ilegal y lo envió al tribunal administrativo dentro de los cinco días siguientes a su recibo. El estatuto de presupuesto del municipio no trae una regla distinta para este caso. El 2 de enero de 2027 el tribunal aún no había decidido, y el profesional de presupuesto de la alcaldía debe cargar en el sistema financiero el presupuesto con el que empezará la ejecución. ¿Cuál debe cargar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El que aprobó el concejo, que se presume legal y rige mientras el tribunal no lo anule.",
+        "explicacion": "Incorrecta. Mientras el tribunal decide la objeción, el proyecto aprobado por el concejo no rige: la ley ordena aplicar otro."
+      },
+      {
+        "id": "B",
+        "texto": "El que el alcalde había radicado a tiempo en el concejo, sin los cambios introducidos allí.",
+        "explicacion": "Correcta. Según el art. 109 del Decreto 111, mientras el tribunal decide la objeción por ilegalidad rige el proyecto que el alcalde presentó oportunamente, bajo su directa responsabilidad."
+      },
+      {
+        "id": "C",
+        "texto": "El aprobado por el concejo, sin las partidas objetadas, que quedan suspendidas hasta el fallo.",
+        "explicacion": "Incorrecta. La norma no prevé ejecutar en parte lo aprobado por el concejo; ordena que rija, mientras tanto, el proyecto del alcalde."
+      },
+      {
+        "id": "D",
+        "texto": "El de 2026, repetido por decreto del alcalde, hasta que el tribunal resuelva la objeción.",
+        "explicacion": "Incorrecta. Para este caso la ley no ordena repetir el presupuesto anterior: dispone que rija el proyecto que el alcalde presentó oportunamente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el alcalde objetó por ilegal el presupuesto aprobado por el concejo, lo envió a tiempo al tribunal y este no ha decidido. Regla: el art. 109 del Decreto 111, aplicable porque el estatuto municipal no trae una regla distinta, dispone que mientras el tribunal decide rige el proyecto presentado oportunamente por el alcalde, bajo su directa responsabilidad. Conclusión: se carga el proyecto original del alcalde.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-FIN-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Programación y liquidación del presupuesto",
+    "subtema": "Cómputo de las rentas en el proyecto de presupuesto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 111 de 1996",
+    "articulos": [
+      "art. 35"
+    ],
+    "texto_fuente": "El cómputo de las rentas que deban incluirse en el Proyecto de Presupuesto General de la Nación, tendrá como base el recaudo de cada renglón rentístico de acuerdo con la metodología que establezca el Ministerio de Hacienda y Crédito Público, sin tomar en consideración los costos de su recaudo",
+    "pregunta": "Un técnico de presupuesto de un establecimiento público del orden nacional prepara el renglón de tasas por expedición de certificados para el anteproyecto de 2027. Con la metodología del Ministerio de Hacienda proyectó un recaudo de $3.200 millones. Para recaudar, la entidad paga una comisión al banco, estimada en $96 millones, y el contrato del operador de la plataforma de pagos, estimado en $160 millones. ¿Qué valor debe registrar en el renglón?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.944 millones: la proyección menos la comisión bancaria y el contrato del operador.",
+        "explicacion": "Incorrecta. Resta todos los costos de recaudo, y la ley ordena computar la renta sin considerarlos."
+      },
+      {
+        "id": "B",
+        "texto": "$3.104 millones: la proyección menos la comisión del banco, que se descuenta del recaudo.",
+        "explicacion": "Incorrecta. Aunque el banco descuente su comisión, la renta se computa por su recaudo, sin tomar en cuenta lo que cuesta recaudarla."
+      },
+      {
+        "id": "C",
+        "texto": "$3.040 millones: la proyección menos el contrato del operador, que es un costo fijo.",
+        "explicacion": "Incorrecta. Que el costo sea fijo no cambia la regla: ningún costo de recaudo se descuenta del cómputo de la renta."
+      },
+      {
+        "id": "D",
+        "texto": "$3.200 millones: la proyección completa del renglón, sin deducción alguna.",
+        "explicacion": "Correcta. El art. 35 del Decreto 111 dispone que el cómputo de las rentas tiene como base el recaudo de cada renglón, según la metodología del Ministerio de Hacienda, sin tomar en consideración sus costos de recaudo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la proyección del renglón es de $3.200 millones y recaudarla cuesta $256 millones (comisión y operador). Regla: el art. 35 del Decreto 111 dispone que el cómputo de las rentas del proyecto de presupuesto tiene como base el recaudo de cada renglón, con la metodología del Ministerio de Hacienda, sin tomar en consideración los costos de su recaudo. Conclusión: se registran $3.200 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-FIN-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Programación y liquidación del presupuesto",
+    "subtema": "Modificaciones al anexo del decreto de liquidación y traslados que requieren ley",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Decreto 1068 de 2015, art. 2.8.1.5.6, incs. 1 y 2 (modificado por el art. 8 del Decreto 412 de 2018)",
+      "Decreto 111 de 1996, art. 80"
+    ],
+    "texto_fuente": "Las modificaciones al anexo del decreto de liquidación que no modifiquen en cada sección presupuestal el monto total de sus apropiaciones de funcionamiento, servicio de la deuda o los programas y subprogramas de inversión aprobados por el Congreso de la República, se realizarán mediante resolución expedida por el jefe del órgano respectivo. En el caso de los establecimientos públicos del orden nacional, estas modificaciones se harán por resolución o acuerdo de las Juntas o Consejos Directivos, o por resolución del representante legal en caso de no existir aquellas. El Ministerio de Hacienda y Crédito Público - Dirección General del Presupuesto Público Nacional, aprobará las operaciones presupuestales contenidas en las resoluciones o acuerdos una vez se realice el registro de las solicitudes en el Sistema Integrado de Información Financiera SIIF Nación. [...] El Gobierno Nacional presentará al Congreso Nacional, proyectos de ley sobre traslados y créditos adicionales al presupuesto, cuando sea indispensable aumentar la cuantía de las apropiaciones autorizadas inicialmente o no comprendidas en el presupuesto por concepto de gastos de funcionamiento, servicio de la deuda pública e inversión",
+    "pregunta": "Un establecimiento público del orden nacional, que tiene consejo directivo, necesita dos cambios en su presupuesto de 2026: (1) pasar $200 millones de un objeto de gasto a otro, ambos dentro de la adquisición de bienes y servicios de funcionamiento; y (2) pasar $300 millones de su funcionamiento a un proyecto de inversión. En ninguno de los dos casos cambia el total del presupuesto de la entidad. El jefe de presupuesto debe definir el trámite. ¿Qué es lo procedente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hacer los dos por acuerdo del consejo directivo, sin trámite adicional, dado que el total de la entidad no varía.",
+        "explicacion": "Incorrecta. Mira el total de la entidad, pero la regla mira cada agregado: el segundo cambio altera los montos totales de funcionamiento y de inversión aprobados por el Congreso, y eso no se hace por acuerdo. Además, el primero requiere la aprobación de la DGPPN."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer los dos por resolución del director, y el segundo con concepto previo favorable del DNP por tocar inversión.",
+        "explicacion": "Incorrecta. Si hay consejo directivo, la modificación del detalle la hace ese órgano, no el director; y el segundo cambio no se resuelve con un concepto del DNP, porque altera los totales aprobados por el Congreso."
+      },
+      {
+        "id": "C",
+        "texto": "Hacer el primero por acuerdo del consejo directivo, que la DGPPN aprueba tras el registro en el SIIF; el segundo exige ley.",
+        "explicacion": "Correcta. El primer cambio no altera el total de funcionamiento: lo hace el consejo directivo por acuerdo o resolución y la DGPPN lo aprueba tras el registro en el SIIF (art. 2.8.1.5.6). El segundo aumenta la inversión aprobada, así que requiere un proyecto de ley de traslado (art. 80 del Decreto 111)."
+      },
+      {
+        "id": "D",
+        "texto": "Hacer el primero por resolución del director, sin pasar por el Ministerio, y el segundo por acuerdo del consejo directivo.",
+        "explicacion": "Incorrecta. En un establecimiento público con consejo directivo, la modificación del detalle es del consejo y debe aprobarla la DGPPN; y el segundo cambio no puede hacerse por acuerdo, porque altera los totales aprobados por el Congreso."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el primer cambio queda dentro de funcionamiento; el segundo pasa recursos de funcionamiento a inversión. Regla: el art. 2.8.1.5.6 del Decreto 1068 permite modificar el anexo del decreto de liquidación, en un establecimiento público, por acuerdo o resolución de su consejo directivo, con aprobación de la DGPPN tras el registro en el SIIF, siempre que no cambien los totales de funcionamiento, deuda o inversión; si se aumenta una apropiación aprobada, el art. 80 del Decreto 111 exige ley. Conclusión: el primero por acuerdo; el segundo por ley.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-FIN-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Gastos de personal",
+    "subtema": "Viabilidad presupuestal y entrada en vigencia de una modificación de planta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Decreto 1068 de 2015, art. 2.8.1.9.3, incs. 1 a 4",
+      "Decreto 111 de 1996, art. 71, inc. 5"
+    ],
+    "texto_fuente": "Las modificaciones a las plantas de personal que no incrementen sus costos anuales actuales o que no superen las apropiaciones vigentes de gastos de personal entrarán en vigencia una vez se expida el decreto respectivo. En consecuencia, salvo que exista autorización en la Constitución o en la ley, aquellas modificaciones de planta que incrementen los costos anuales actuales y superen las apropiaciones vigentes de gastos de personal, entrarán en vigencia el primero de enero del año siguiente a su aprobación. Se entiende por costos anuales actuales, el valor de la planta de personal del primero de enero al treinta y uno de diciembre del año en que se efectúe la modificación. Requerirán de viabilidad presupuestal expedida por la Dirección General del Presupuesto Público Nacional del Ministerio de Hacienda y Crédito Público las modificaciones a las plantas de personal que incrementen sus costos anuales actuales o cuando sin hacerlo impliquen el pago de indemnizaciones a los servidores públicos. [...] Para las modificaciones a las plantas de personal de los órganos que conforman el Presupuesto General de la Nación, que impliquen incremento en los costos actuales, será requisito esencial y previo la obtención de un certificado de viabilidad presupuestal, expedido por la Dirección General del Presupuesto Nacional en que se garantice la posibilidad de atender estas modificaciones.",
+    "pregunta": "Una superintendencia planea crear tres empleos que costarían en total $12 millones mensuales por todo concepto, y proveerlos desde el 1 de septiembre de 2026. Su planta actual cuesta $7.200 millones entre el 1 de enero y el 31 de diciembre de 2026, y la apropiación vigente de gastos de personal es de $7.400 millones. El cambio no implica indemnizaciones y ninguna ley lo autoriza de manera especial. Una profesional de talento humano debe precisar qué requisito presupuestal exige la modificación y desde cuándo puede regir. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No requiere viabilidad presupuestal, pues no supera la apropiación vigente, y rige desde la expedición del decreto.",
+        "explicacion": "Incorrecta. Acierta en la entrada en vigencia, pero la viabilidad no depende de la apropiación: la exige toda modificación que aumente los costos anuales actuales, como esta (+$48 millones en 2026)."
+      },
+      {
+        "id": "B",
+        "texto": "Requiere viabilidad de la DGPPN y puede regir desde la expedición del decreto, pues cabe en la apropiación vigente.",
+        "explicacion": "Correcta. Con los nuevos empleos, la planta pasa de $7.200 a $7.248 millones en 2026 (4 meses × $12 millones): aumenta los costos anuales actuales, así que requiere viabilidad de la DGPPN. Como no supera la apropiación de $7.400 millones, rige desde la expedición del decreto."
+      },
+      {
+        "id": "C",
+        "texto": "Requiere viabilidad de la DGPPN y solo puede regir desde el 1 de enero de 2027, cuando haya nueva apropiación.",
+        "explicacion": "Incorrecta. Diferir la vigencia al 1 de enero del año siguiente exige dos condiciones a la vez: que la modificación aumente los costos y que supere la apropiación vigente. Aquí no la supera."
+      },
+      {
+        "id": "D",
+        "texto": "No requiere viabilidad presupuestal, pero solo puede regir desde el 1 de enero de 2027, por aumentar los costos.",
+        "explicacion": "Incorrecta. Invierte las reglas: aumentar los costos anuales actuales es lo que obliga a pedir viabilidad, y como no se supera la apropiación no hay razón para diferir la vigencia."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la planta sube de $7.200 a $7.248 millones en 2026 (4 meses × $12 millones; aun anualizado sería $7.344) y la apropiación es de $7.400 millones. Regla: el art. 2.8.1.9.3 del Decreto 1068 exige viabilidad de la DGPPN si la modificación aumenta los costos anuales actuales, y solo difiere la vigencia al 1 de enero siguiente si además supera la apropiación vigente. Conclusión: requiere viabilidad y puede regir desde la expedición del decreto.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-FIN-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Programación y liquidación del presupuesto",
+    "subtema": "Registro en el Banco Nacional de Programas y Proyectos antes de ejecutar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 111 de 1996",
+    "articulos": [
+      "art. 9, inc. 1",
+      "art. 68, inc. 1"
+    ],
+    "texto_fuente": "BANCO NACIONAL DE PROGRAMAS Y PROYECTOS. Es un conjunto de actividades seleccionadas como viables, previamente evaluadas social, técnica, económicamente y registradas sistematizadas en el Departamento Nacional de Planeación. [...] No se podrá ejecutar ningún programa o proyecto que haga parte del Presupuesto General de la Nación hasta tanto se encuentren evaluados por el órgano competente y registrados en el Banco Nacional de Programas y Proyectos.",
+    "pregunta": "Un técnico de la oficina de planeación de un ministerio revisa los proyectos de inversión que las áreas quieren empezar a contratar en febrero. Uno de ellos, para dotar laboratorios regionales, figura con $900 millones en el anexo del decreto de liquidación, pero en el banco de proyectos del DNP aparece solo como formulado: el ministerio no ha terminado de evaluarlo. El área técnica sostiene que basta con que esté en el decreto de liquidación. ¿Qué debe informar el técnico a su jefe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no puede ejecutarse hasta que se complete su evaluación y quede inscrito en el banco de proyectos.",
+        "explicacion": "Correcta. El art. 68 del Decreto 111 prohíbe ejecutar programas o proyectos del Presupuesto General de la Nación hasta que estén evaluados por el órgano competente y registrados en el Banco Nacional de Programas y Proyectos."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede contratarse ya, porque su inclusión en el decreto de liquidación equivale a la inscripción.",
+        "explicacion": "Incorrecta. Tener apropiación en el decreto de liquidación no reemplaza la evaluación y el registro en el banco, que la ley exige antes de ejecutar."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede abrirse el proceso de contratación y completarse la inscripción antes del primer pago.",
+        "explicacion": "Incorrecta. La ley no permite empezar a ejecutar y registrar después: la evaluación y el registro son previos a la ejecución del proyecto."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede ejecutarse si el área de presupuesto expide el certificado de disponibilidad, que suple la inscripción.",
+        "explicacion": "Incorrecta. El certificado de disponibilidad garantiza que hay apropiación, pero no sustituye la evaluación ni el registro del proyecto en el banco."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el proyecto tiene apropiación en el decreto de liquidación, pero en el banco del DNP sigue sin evaluación ni registro. Regla: el art. 68 del Decreto 111 prohíbe ejecutar cualquier programa o proyecto del Presupuesto General de la Nación hasta que esté evaluado por el órgano competente y registrado en el Banco Nacional de Programas y Proyectos. Conclusión: el técnico debe informar que no puede ejecutarse todavía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-FIN-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Programación y liquidación del presupuesto",
+    "subtema": "Proceso de selección en trámite que se perfecciona en la vigencia siguiente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003, Decreto 1068 de 2015 y Decreto 111 de 1996",
+    "articulos": [
+      "Ley 819 de 2003, art. 8, inc. 2",
+      "Decreto 1068 de 2015, art. 2.8.1.7.1.12",
+      "Decreto 111 de 1996, art. 14"
+    ],
+    "texto_fuente": "En los eventos en que se encuentre en trámite una licitación, concurso de méritos o cualquier otro proceso de selección del contratista con todos los requerimientos legales, incluida la disponibilidad presupuestal, y su perfeccionamiento se efectúe en la vigencia fiscal siguiente, se atenderá con el presupuesto de esta última vigencia, previo el cumplimiento de los ajustes presupuestales correspondientes. [...] Lo previsto en el inciso anterior sólo procederá cuando los ajustes presupuestales requeridos para tal fin impliquen modificaciones al anexo del decreto de liquidación que no modifiquen en cada sección presupuestal el monto total de sus apropiaciones de funcionamiento, o los subprogramas de inversión aprobados por el Congreso. [...] Después del 31 de diciembre no podrán asumirse compromisos con cargo a las apropiaciones del año fiscal que se cierra en esa fecha y los saldos de apropiación no afectados por compromisos caducarán sin excepción",
+    "pregunta": "En noviembre de 2026, una entidad nacional abrió una licitación para el mantenimiento de sus sedes, respaldada con un certificado de disponibilidad de 2026. La adjudicación se hizo el 12 de enero de 2027 y el contrato se firmó el 18 de enero. Al día siguiente, el área de contratos le pide a un técnico de presupuesto hacer el registro presupuestal con cargo al certificado de 2026. ¿Qué debe responder el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que lo registrará con el certificado de 2026, pues el proceso se abrió con él y lo respalda hasta su final.",
+        "explicacion": "Incorrecta. Después del 31 de diciembre no pueden asumirse compromisos con cargo a las apropiaciones de 2026. El contrato, perfeccionado en 2027, se atiende con el presupuesto de ese año."
+      },
+      {
+        "id": "B",
+        "texto": "Que lo registrará como reserva presupuestal de 2026, dado que el proceso se inició en esa vigencia.",
+        "explicacion": "Incorrecta. Al cierre de 2026 no había compromiso, solo un proceso en trámite; el saldo no afectado por compromisos caducó y no puede convertirse en reserva."
+      },
+      {
+        "id": "C",
+        "texto": "Que la licitación debe declararse desierta y abrirse otra vez con recursos de la vigencia 2027.",
+        "explicacion": "Incorrecta. La ley permite continuar el proceso y atender el contrato con el presupuesto de la vigencia siguiente; no exige repetir la licitación."
+      },
+      {
+        "id": "D",
+        "texto": "Que el contrato debe atenderse con el presupuesto de 2027, previos los ajustes, sin repetir la licitación.",
+        "explicacion": "Correcta. Si un proceso de selección en trámite, con disponibilidad, se perfecciona en la vigencia siguiente, se atiende con el presupuesto de esa vigencia, previos los ajustes presupuestales (art. 8 de la Ley 819 y art. 2.8.1.7.1.12 del Decreto 1068)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la licitación se abrió en 2026 con disponibilidad de ese año, pero el contrato se perfeccionó en enero de 2027. Regla: el art. 8 de la Ley 819 y el art. 2.8.1.7.1.12 del Decreto 1068 disponen que ese contrato se atiende con el presupuesto de la vigencia siguiente, previos los ajustes presupuestales; las apropiaciones de 2026 ya no admiten compromisos (art. 14 del Decreto 111). Conclusión: se atiende con el presupuesto de 2027, sin repetir el proceso.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  }
+]

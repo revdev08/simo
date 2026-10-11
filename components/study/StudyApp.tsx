@@ -402,7 +402,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
           <p className="text-slate-500 dark:text-slate-400 max-w-xl text-sm sm:text-base leading-relaxed">
             Con cronómetro ({MINUTOS_POR_PREGUNTA} minutos por pregunta) y sin ver las respuestas hasta el final, como en la prueba real.
             Mezcla competencias generales, aptitudes y comportamentales{nivel ? ` de tu nivel (${nivelLabel(nivel)})` : ''}
-            {area ? `, más preguntas del área de ${AREAS_FUNCIONALES.find((a) => a.id === area)?.label.toLowerCase()}` : ''}, y al terminar te muestra tu resultado por módulo.
+            {area ? `, más preguntas del área de ${AREAS_FUNCIONALES.find((a) => a.id === area)?.frase}` : ''}, y al terminar te muestra tu resultado por módulo.
           </p>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1" role="group" aria-label="Área funcional de tu cargo">
             <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Área de tu cargo (opcional):</span>

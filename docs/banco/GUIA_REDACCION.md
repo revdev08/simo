@@ -111,6 +111,12 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 
 **La resolución a ciegas debe tener todas las normas del tema:** la ley y también su reglamento. En la TC-909-025 la clave era correcta según la Ley 909, pero el Decreto 1083 añade un requisito de 3 meses. El resolvedor solo tenía la ley y no lo detectó.
 
+**Las compilaciones también se equivocan; contrasta con la del ministerio:**
+- Los decretos únicos tienen dos compilaciones: el gestor normativo de Función Pública y el normograma del ministerio del sector.
+- En el Decreto 1078 de 2015, el gestor muestra el art. 2.2.9.1.3.3 con el texto del 2.2.9.1.3.4. Según el normograma del MinTIC, el Decreto 767 de 2022 dice algo distinto: el Comité Institucional de Gestión y Desempeño orienta la implementación de la Política de Gobierno Digital, y el jefe de TI la lidera.
+- Con la fuente equivocada, tanto el redactor como el resolvedor a ciegas aprobaron un distractor falso (TC-TIC-005, lote 7).
+- Para el sector TIC usa el normograma del MinTIC. En cualquier decreto único, revisa además la fecha de "última actualización" y la lista de vigencias, para saber si hay decretos posteriores que la compilación no incluye.
+
 **Dónde viven las preguntas:**
 - Los borradores se trabajan en `docs/banco/<lote>/`.
 - Al aprobarse, el lote se mueve a `data/preguntas/<tema>.json` y se agrega a la lista `BANCO` de `lib/questions.ts`. Esa es la única fuente que usa la app.

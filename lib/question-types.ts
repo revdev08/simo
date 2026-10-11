@@ -58,7 +58,15 @@ export const MODULE_SECTIONS = [
     id: 'funcionales',
     titulo: 'Competencias funcionales',
     descripcion: 'Temas propios del área de tu cargo. En el simulacro solo entran si eliges tu área.',
-    modulos: ['Talento Humano', 'Contratación Estatal Aplicada', 'Gestión Jurídica'],
+    modulos: [
+      'Talento Humano',
+      'Contratación Estatal Aplicada',
+      'Gestión Jurídica',
+      'Gestión Financiera y Presupuestal',
+      'Seguridad y Salud en el Trabajo',
+      'Gestión Documental',
+      'TIC y Gobierno Digital',
+    ],
   },
   {
     id: 'comportamentales',
@@ -76,11 +84,16 @@ export const MODULE_SECTIONS = [
 
 export type SectionId = (typeof MODULE_SECTIONS)[number]['id']
 
-// Áreas funcionales (capa 3): cada una corresponde a un módulo de la sección "funcionales"
+// Áreas funcionales (capa 3): cada una corresponde a un módulo de la sección "funcionales".
+// `label` va en el botón; `frase` completa "más preguntas del área de …".
 export const AREAS_FUNCIONALES = [
-  { id: 'talento_humano', label: 'Talento humano', modulo: 'Talento Humano' },
-  { id: 'contratacion', label: 'Contratación', modulo: 'Contratación Estatal Aplicada' },
-  { id: 'juridica', label: 'Jurídica', modulo: 'Gestión Jurídica' },
+  { id: 'talento_humano', label: 'Talento humano', frase: 'talento humano', modulo: 'Talento Humano' },
+  { id: 'contratacion', label: 'Contratación', frase: 'contratación', modulo: 'Contratación Estatal Aplicada' },
+  { id: 'juridica', label: 'Jurídica', frase: 'jurídica', modulo: 'Gestión Jurídica' },
+  { id: 'financiera', label: 'Financiera', frase: 'financiera y presupuestal', modulo: 'Gestión Financiera y Presupuestal' },
+  { id: 'sst', label: 'Seguridad y salud (SST)', frase: 'seguridad y salud en el trabajo', modulo: 'Seguridad y Salud en el Trabajo' },
+  { id: 'gestion_documental', label: 'Gestión documental', frase: 'gestión documental', modulo: 'Gestión Documental' },
+  { id: 'tic', label: 'TIC', frase: 'TIC y gobierno digital', modulo: 'TIC y Gobierno Digital' },
 ] as const
 
 export type AreaId = (typeof AREAS_FUNCIONALES)[number]['id']

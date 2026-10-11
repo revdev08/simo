@@ -531,7 +531,7 @@
   },
   {
     "id": "TC-TDA-011",
-    "version": 1,
+    "version": 2,
     "estado": "beta",
     "capa": 3,
     "eje": "gestion_documental",
@@ -549,7 +549,7 @@
       "art. 20"
     ],
     "texto_fuente": "La documentación de la administración pública es producto y propiedad del Estado, y éste ejercerá el pleno control de sus recursos informativos. Los archivos públicos, por ser un bien de uso público, no son susceptibles de enajenación. PARAGRAFO 1o. La administración pública podrá contratar con personas naturales o jurídicas los servicios de custodia, organización, reprografía y conservación de documentos de archivo. [...] Las entidades públicas que se suprimen o fusionen deberán entregar sus archivos a las entidades que asuman sus funciones o al ministerio o entidad a la cual hayan estado adscritas o vinculadas.",
-    "pregunta": "Una gobernación suprimió su instituto departamental de deportes, cuyas funciones asumió la secretaría departamental de deportes. Para ahorrar costos, el liquidador propone vender los archivos del instituto a una empresa privada de custodia documental: la empresa quedaría como dueña de los documentos y le cobraría a la gobernación cada consulta. ¿Qué debe hacerse con esos archivos?",
+    "pregunta": "Una gobernación suprimió su instituto departamental de deportes, cuyas funciones asumió la secretaría departamental de deportes. Según las tablas de retención del instituto, ninguno de sus documentos es de conservación permanente. Para ahorrar costos, el liquidador propone vender los archivos del instituto a una empresa privada de custodia documental: la empresa quedaría como dueña de los documentos y le cobraría a la gobernación cada consulta. ¿Qué debe hacerse con esos archivos?",
     "opciones": [
       {
         "id": "A",
@@ -573,14 +573,15 @@
       }
     ],
     "respuestaCorrecta": "D",
-    "explicacionIA": "Dato decisivo: el instituto se suprimió, sus funciones las asumió la secretaría de deportes y el liquidador quiere vender los archivos. Regla: según el art. 20 de la Ley 594, las entidades suprimidas entregan sus archivos a la entidad que asume sus funciones; el art. 14 dispone que los archivos públicos no son enajenables, pero permite contratar con particulares su custodia. Conclusión: los archivos van a la secretaría, que puede contratar su custodia sin ceder la propiedad.",
+    "explicacionIA": "Dato decisivo: el instituto se suprimió, sus funciones las asumió la secretaría de deportes y el liquidador quiere vender los archivos. Regla: según el art. 20 de la Ley 594, las entidades suprimidas entregan sus archivos a la entidad que asume sus funciones; el art. 14 dispone que los archivos públicos no son enajenables, pero permite contratar con particulares su custodia. Conclusión: los archivos van a la secretaría, que puede contratar su custodia sin ceder la propiedad. Si hubiera documentos de conservación permanente, esos irían al archivo general territorial y su custodia no podría contratarse (Decreto 1080 de 2015, arts. 2.8.2.9.9 y 2.8.10.12); por eso el caso aclara que no los hay.",
     "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
     "autor": "IA",
     "revision": {
       "resolucion_ciega": "coincide",
       "revisor_humano": null,
       "fecha": "2026-10-10",
-      "p_estimado": 60
+      "p_estimado": 60,
+      "nota": "v2 (2026-10-10): el caso aclara que no hay documentos de conservación permanente, que el Decreto 1080 manda al archivo territorial sin custodia contratada."
     }
   },
   {

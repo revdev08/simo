@@ -13,6 +13,10 @@ import aptitudes from '@/data/preguntas/aptitudes.json'
 import talentoHumano from '@/data/preguntas/talento-humano.json'
 import contratacionAplicada from '@/data/preguntas/contratacion-aplicada.json'
 import gestionJuridica from '@/data/preguntas/gestion-juridica.json'
+import gestionFinanciera from '@/data/preguntas/gestion-financiera.json'
+import sst from '@/data/preguntas/sst.json'
+import gestionDocumental from '@/data/preguntas/gestion-documental.json'
+import ticGobiernoDigital from '@/data/preguntas/tic-gobierno-digital.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -30,6 +34,10 @@ const BANCO = [
   ...talentoHumano,
   ...contratacionAplicada,
   ...gestionJuridica,
+  ...gestionFinanciera,
+  ...sst,
+  ...gestionDocumental,
+  ...ticGobiernoDigital,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
