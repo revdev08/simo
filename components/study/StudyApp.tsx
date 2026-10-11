@@ -218,7 +218,14 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   const [sinConvocatoria, setSinConvocatoria] = useState(() => leerLocal(SIN_CONVOCATORIA_KEY) === '1')
   const [horasSemana, setHorasSemana] = useState(() => readPlanIntent().horas ?? (Number(leerLocal(HORAS_STORAGE_KEY)) || 8))
   // Semanas que eligió en el plan público (solo cuentan si la prueba no tiene fecha)
-  const [planSemanas, setPlanSemanas] = useState<number | null>(() => readPlanIntent().semanas ?? (Number(leerLocal(SEMANAS_STORAGE_KEY)) || null))
+  const [planSemanas, setPlanSemanas] = useState<number | null>(() => {
+    const { semanas } = readPlanIntent()
+    if (semanas) return semanas
+    // Si llega por URL otra convocatoria, las semanas guardadas eran de la anterior
+    const intent = readConvocatoriaIntent()
+    if (intent && intent.clave !== readSavedConvocatoria()) return null
+    return Number(leerLocal(SEMANAS_STORAGE_KEY)) || null
+  })
   // Día en que eligió la convocatoria: desde ahí cuentan las semanas del plan (si llega una nueva por URL, desde hoy)
   const [planInicio, setPlanInicio] = useState<string | null>(() => {
     const intent = readConvocatoriaIntent()
