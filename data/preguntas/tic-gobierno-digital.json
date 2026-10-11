@@ -1511,5 +1511,1103 @@
       "fecha": "2026-10-10",
       "p_estimado": 80
     }
+  },
+  {
+    "id": "TC-TIC-029",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Institucionalidad de la Política de Gobierno Digital",
+    "subtema": "Ubicación de la dependencia de TI: dependencia del nominador o representante legal y asiento en el comité directivo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.9.1.3.4 (capítulo subrogado por el art. 1 del Decreto 767 de 2022)"
+    ],
+    "texto_fuente": "El Director, Jefe de Oficina o Coordinador de Tecnologías y Sistemas de la Información y las Comunicaciones, o quien haga sus veces, del respectivo sujeto obligado, tendrá la responsabilidad de liderar la implementación y la mejora continua de la Política de Gobierno Digital. [...] Cuando la entidad cuente en su estructura con una dependencia encargada del accionar estratégico de las Tecnologías y Sistemas de la Información y las Comunicaciones, hará parte del comité directivo y dependerá del nominador o representante legal",
+    "pregunta": "Un instituto departamental de deportes, establecimiento público, prepara su rediseño institucional. La propuesta crea una oficina de tecnologías de la información que tendrá a cargo la estrategia de TI de toda la entidad, la ubica dentro de la secretaría general, junto con las demás áreas de apoyo, para que su jefe le reporte al secretario, y prevé que ese jefe sea miembro permanente del comité directivo. El director general es el representante legal del instituto. Natalia, profesional de la oficina de planeación, debe emitir concepto sobre la propuesta a la luz del Decreto 1078 de 2015. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener la oficina dentro de la secretaría general y conservar el puesto permanente de su jefe en el comité directivo.",
+        "explicacion": "Incorrecta. Acierta en el puesto permanente en el comité directivo, pero la dependencia que tiene a cargo la estrategia de TI no puede quedar subordinada a la secretaría general: debe depender del nominador o representante legal (art. 2.2.9.1.3.4)."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer que la oficina dependa del director general y conservar el puesto permanente de su jefe en el comité directivo.",
+        "explicacion": "Correcta. La propuesta acierta en el comité, pero no en la ubicación. Cuando la entidad tiene en su estructura una dependencia encargada del accionar estratégico de las TIC, esta hace parte del comité directivo y depende del nominador o representante legal (art. 2.2.9.1.3.4, que remite al art. 2.2.35.4 del Decreto 1083 de 2015). En el instituto, esa autoridad es el director general."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener la oficina dentro de la secretaría general y dejar que su jefe asista al comité directivo cuando lo inviten.",
+        "explicacion": "Incorrecta en los dos puntos. La oficina no puede depender de la secretaría general y su jefe no puede quedar como invitado ocasional: la dependencia de TI hace parte del comité directivo y depende del nominador o representante legal (art. 2.2.9.1.3.4)."
+      },
+      {
+        "id": "D",
+        "texto": "Hacer que la oficina dependa del director general y dejar que su jefe asista al comité directivo cuando lo inviten.",
+        "explicacion": "Incorrecta. Acierta en ubicar la oficina bajo el director general, pero la norma dispone que esa dependencia hace parte del comité directivo: en ese punto la propuesta, que le daba a su jefe un puesto permanente, estaba bien, y no basta con invitarlo a algunas sesiones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la propuesta ubica la oficina que tendrá a cargo la estrategia de TI dentro de la secretaría general, aunque le da a su jefe un puesto permanente en el comité directivo. Regla: el art. 2.2.9.1.3.4 del Decreto 1078 (subrogado por el Decreto 767 de 2022) dispone que esa dependencia hará parte del comité directivo y dependerá del nominador o representante legal. Conclusión: se conserva el puesto en el comité, pero la oficina debe depender del director general.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Política de Gobierno Digital",
+    "subtema": "Innovación pública digital: compra pública para retos sin solución en el mercado y software libre sin excluir las tecnologías cerradas",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.9.1.2.1, nums. 2 y 5 (capítulo subrogado por el art. 1 del Decreto 767 de 2022)"
+    ],
+    "texto_fuente": "2. Innovación pública digital: [...] Con el fin de fortalecer los procesos de innovación pública digital, los sujetos obligados promoverán la implementación de mecanismos de compra pública que faciliten al Estado la adquisición de bienes o servicios de base tecnológica que den respuesta a desafíos públicos respecto de los cuales no se encuentra una solución en el mercado o, si la hay, requiera ajustes o mejoras. Asimismo, promoverán la adopción de tecnologías basadas en software libre o código abierto, sin perjuicio de la inversión en tecnologías cerradas. [...] 5. Iniciativas dinamizadoras: [...] con la implementación de mecanismos de compra pública que promuevan la innovación pública digital.",
+    "pregunta": "La secretaría de movilidad de un distrito quiere una herramienta que cruce en tiempo real los datos de los semáforos y de las ambulancias para despejarles el paso. En un sondeo de mercado no encontró ningún producto que lo haga. En el comité, el jefe jurídico propone adelantar un proceso de compra pública para que los oferentes desarrollen una herramienta que responda a ese reto. El jefe de TI propone, además, una directriz que prohíba en adelante adquirir licencias de software propietario, porque, en su opinión, la Política de Gobierno Digital solo admite el software libre. Marcela, profesional de la oficina de TI, debe conceptuar sobre las dos propuestas. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acoger la compra pública que propone el jefe jurídico y descartar la prohibición que propone el jefe de TI.",
+        "explicacion": "Correcta. Para los desafíos públicos que no tienen solución en el mercado, la política pide promover mecanismos de compra pública que faciliten adquirir bienes o servicios de base tecnológica que respondan a ellos (art. 2.2.9.1.2.1, nums. 2 y 5), y promueve el software libre o de código abierto \"sin perjuicio de la inversión en tecnologías cerradas\" (num. 2), así que no cabe vetar el software propietario."
+      },
+      {
+        "id": "B",
+        "texto": "Acoger la compra pública que propone el jefe jurídico y adoptar también la prohibición que propone el jefe de TI.",
+        "explicacion": "Incorrecta. Acierta en el reto, pero la política no excluye el software propietario: promueve el software libre o de código abierto sin perjuicio de la inversión en tecnologías cerradas (art. 2.2.9.1.2.1, num. 2). La directriz contradice esa regla."
+      },
+      {
+        "id": "C",
+        "texto": "Descartar la compra pública que propone el jefe jurídico y descartar también la prohibición que propone el jefe de TI.",
+        "explicacion": "Incorrecta. Acierta en el software, pero que no exista una solución en el mercado es justamente el supuesto en que la política pide promover mecanismos de compra pública para adquirir bienes o servicios de base tecnológica que respondan al desafío (art. 2.2.9.1.2.1, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Descartar la compra pública que propone el jefe jurídico y adoptar la prohibición que propone el jefe de TI.",
+        "explicacion": "Incorrecta en los dos puntos. La falta de oferta en el mercado no impide atender el reto, pues la política promueve la compra pública para esos casos, y el fomento del software libre no excluye la inversión en tecnologías cerradas (art. 2.2.9.1.2.1, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el reto no tiene solución en el mercado, el jefe jurídico propone una compra pública para que se desarrolle y el jefe de TI quiere vetar el software propietario. Regla: el art. 2.2.9.1.2.1 del Decreto 1078 (subrogado por el Decreto 767 de 2022) pide promover mecanismos de compra pública para adquirir bienes o servicios de base tecnológica que respondan a desafíos sin solución en el mercado (nums. 2 y 5), y promover el software libre sin perjuicio de la inversión en tecnologías cerradas (num. 2). Conclusión: acoger la compra pública y descartar el veto.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-TIC-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Seguimiento y evaluación de la Política de Gobierno Digital",
+    "subtema": "Informes pedidos por organismos de inspección, vigilancia y control: el MinTIC remite la medición alimentada por el FURAG, no el Sello de Excelencia",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.9.1.4.1, inc. 1 y parágrafo 2 (capítulo subrogado por el art. 1 del Decreto 767 de 2022)",
+      "art. 2.2.9.1.4.3 (adicionado por el art. 1 del Decreto 767 de 2022)"
+    ],
+    "texto_fuente": "El Ministerio de Tecnologías de la Información y las Comunicaciones adelantará el seguimiento a la implementación de la Política de Gobierno Digital, con la periodicidad y criterios de medición definidos por el Consejo para la Gestión y Desempeño institucional, o quien haga sus veces, en el marco de la operación estadística de Medición del Desempeño Institucional, o la que se defina en su lugar, y cuya fuente de datos es el Formulario Único de Reporte de Avance en la Gestión (Furag). Para tal efecto, los sujetos obligados deberán suministrar la información que les sea requerida a través del FURAG, o el instrumento que haga sus veces, de acuerdo con lo señalado en el artículo 2.2.22.3.10 del Decreto 1083 de 2015, Decreto Único Reglamentario de Función Pública. [...] PARÁGRAFO 2o. Cuando los organismos que ejercen actividades de inspección, vigilancia y control soliciten informes sobre el grado de implementación de la Política de Gobierno Digital por parte de los sujetos obligados, el Ministerio de Tecnologías de la Información y las Comunicaciones remitirá los resultados de la medición señalada en el inciso primero de este artículo. [...] El Ministerio de Tecnologías de la Información y las Comunicaciones realizará mediciones de calidad a través del Sello de Excelencia de Gobierno Digital, o el que haga sus veces, de los productos, trámites y servicios digitales, y en general de la calidad de uso de tecnologías de la información y las comunicaciones por parte de los sujetos obligados.",
+    "pregunta": "La Superintendencia Nacional de Salud prepara un informe sobre el grado de implementación de la Política de Gobierno Digital en las empresas sociales del Estado que vigila. Para no abrir un requerimiento de información a cada empresa con sus facultades generales de inspección, el superintendente delegado le pide a Hernán, profesional especializado, proyectar la solicitud por la vía que prevé el Decreto 1078 de 2015 para estos informes. Hernán sabe que esas empresas reportan su gestión en el FURAG y que varias tienen trámites con el Sello de Excelencia de Gobierno Digital. Según ese decreto, ¿quién le remite la información a la Superintendencia, y cuál?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Función Pública, con los resultados de la medición del desempeño institucional que se alimenta del FURAG.",
+        "explicacion": "Incorrecta. Acierta en la medición, pero el parágrafo 2 del art. 2.2.9.1.4.1 le asigna la remisión al MinTIC, no a Función Pública. Que los sujetos obligados reporten en el FURAG según el Decreto 1083 de 2015, reglamentario de Función Pública, no traslada esa tarea."
+      },
+      {
+        "id": "B",
+        "texto": "El MinTIC, con los resultados de las mediciones de calidad que hace por medio del Sello de Excelencia.",
+        "explicacion": "Incorrecta. Acierta en que remite el MinTIC, pero se equivoca de medición: el Sello de Excelencia mide la calidad de productos, trámites y servicios digitales (art. 2.2.9.1.4.3). Para el grado de implementación, el MinTIC remite los resultados de la medición del inciso primero del art. 2.2.9.1.4.1."
+      },
+      {
+        "id": "C",
+        "texto": "El MinTIC, con los resultados de la medición del desempeño institucional que se alimenta del FURAG.",
+        "explicacion": "Correcta. Cuando un organismo de inspección, vigilancia y control pide informes sobre el grado de implementación de la política, el MinTIC remite los resultados de la medición del inciso primero (par. 2 del art. 2.2.9.1.4.1): la que se hace en el marco de la Medición del Desempeño Institucional, cuya fuente de datos es el FURAG."
+      },
+      {
+        "id": "D",
+        "texto": "Función Pública, con los resultados de las mediciones de calidad que se hacen por medio del Sello de Excelencia.",
+        "explicacion": "Incorrecta en los dos puntos. La remisión le corresponde al MinTIC (par. 2 del art. 2.2.9.1.4.1), y el Sello de Excelencia mide la calidad de productos, trámites y servicios digitales, no el grado de implementación de la política (art. 2.2.9.1.4.3)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: un organismo de inspección, vigilancia y control pide, por la vía del Decreto 1078, el grado de implementación de la política en sus vigiladas. Regla: el parágrafo 2 del art. 2.2.9.1.4.1 (subrogado por el Decreto 767 de 2022) dispone que el MinTIC remita los resultados de la medición del inciso primero, hecha en el marco de la Medición del Desempeño Institucional con fuente en el FURAG. El Sello de Excelencia (art. 2.2.9.1.4.3) mide la calidad de productos y servicios digitales. Conclusión: el MinTIC remite la medición alimentada por el FURAG.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-032",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Zonas de acceso público a internet inalámbrico",
+    "subtema": "Suspensión de la conexión: aviso con la fecha y hora de reanudación, y nombre obligatorio de la red",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.9.2.4 (adicionado por el art. 1 del Decreto 728 de 2017)",
+      "art. 2.2.9.2.5 (adicionado por el art. 1 del Decreto 728 de 2017)"
+    ],
+    "texto_fuente": "La conexión al servicio de acceso a Internet inalámbrico deberá estar disponible, como mínimo, durante los horarios de atención al público previstos por cada entidad. En caso de que la conexión deba suspenderse, así se indicará a los usuarios, señalando igualmente la fecha y hora a partir de la cual se reanudará la conexión. [...] Sin perjuicio de lo anterior, la red para el acceso a Internet de que trata el presente capítulo deberá denominarse \"Zona Wifi GRATIS para la gente",
+    "pregunta": "Andrés, técnico de sistemas de una superintendencia del orden nacional, administra la zona de internet inalámbrico gratuito de la sala de atención al público, que abre de lunes a viernes de 8 a. m. a 5 p. m. El proveedor le avisó que el jueves cambiará los equipos y que la conexión estará suspendida de 9 a. m. a 2 p. m. Los equipos nuevos traen la red configurada como «Superintendencia - Wifi Visitantes». Andrés debe preparar el aviso para los usuarios de la sala y dejar definido el nombre de la red. Según el Decreto 1078 de 2015, ¿qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Avisar que el jueves la conexión se suspende a las 9 a. m. por cambio de equipos, y nombrar la red «Zona Wifi GRATIS para la gente».",
+        "explicacion": "Incorrecta. Acierta en el nombre de la red (art. 2.2.9.2.5), pero el aviso debe señalar la fecha y la hora a partir de las cuales se reanudará la conexión (art. 2.2.9.2.4); anunciar cuándo empieza la suspensión y su motivo no basta."
+      },
+      {
+        "id": "B",
+        "texto": "Avisar que el jueves la conexión se suspende a las 9 a. m. y se reanuda a las 2 p. m., y nombrar la red «Superintendencia - Wifi Visitantes».",
+        "explicacion": "Incorrecta. Acierta en el contenido del aviso, pero la red de estas zonas debe denominarse «Zona Wifi GRATIS para la gente» (art. 2.2.9.2.5); no puede quedar con el nombre que traen los equipos, aunque identifique a la entidad."
+      },
+      {
+        "id": "C",
+        "texto": "Avisar que el jueves la conexión se suspende a las 9 a. m. por cambio de equipos, y nombrar la red «Superintendencia - Wifi Visitantes».",
+        "explicacion": "Incorrecta en los dos puntos. El aviso debe indicar la fecha y la hora a partir de las cuales se reanudará la conexión (art. 2.2.9.2.4), y la red debe denominarse «Zona Wifi GRATIS para la gente» (art. 2.2.9.2.5)."
+      },
+      {
+        "id": "D",
+        "texto": "Avisar que el jueves la conexión se suspende a las 9 a. m. y se reanuda a las 2 p. m., y nombrar la red «Zona Wifi GRATIS para la gente».",
+        "explicacion": "Correcta. Si la conexión debe suspenderse, se informa a los usuarios señalando la fecha y la hora a partir de las cuales se reanudará (art. 2.2.9.2.4), y la red de estas zonas debe denominarse «Zona Wifi GRATIS para la gente» (art. 2.2.9.2.5), sin importar el nombre con el que vengan configurados los equipos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la conexión de la zona se suspenderá unas horas y los equipos nuevos traen otro nombre para la red. Regla: el art. 2.2.9.2.4 del Decreto 1078 (adicionado por el Decreto 728 de 2017) exige indicar a los usuarios la suspensión con la fecha y hora a partir de las cuales se reanudará la conexión, y el art. 2.2.9.2.5 ordena que la red se denomine «Zona Wifi GRATIS para la gente». Conclusión: aviso con el día y la hora de reanudación, y la red con ese nombre.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-TIC-033",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Zonas de acceso público a internet inalámbrico",
+    "subtema": "Entidad nacional nueva: obligación desde que empieza a prestar el servicio y contratación por acuerdo marco de precios",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.9.2.1 (adicionado por el art. 1 del Decreto 728 de 2017)",
+      "art. 2.2.9.2.2, parágrafos 1, 2 y 3",
+      "art. 2.2.9.2.3, inc. 1"
+    ],
+    "texto_fuente": "El presente capítulo tiene por objeto fortalecer el modelo de Gobierno Digital en Colombia, a través de la regulación de zonas de acceso público y gratuito a Internet inalámbrico en los organismos y entidades que conforman la Rama Ejecutiva del Poder Público en el orden nacional, en los términos del artículo 38 de la Ley 489 de 1998. [...] PARÁGRAFO 1o. La implementación de las zonas de acceso a Internet inalámbrico deberá llevarse a cabo a más tardar dentro de los tres (3) meses siguientes a la expedición de la reglamentación a que se refiere el parágrafo 3o del presente artículo. PARÁGRAFO 2o. Los organismos y entidades del orden nacional que se creen en vigencia de la presente regulación, estarán igualmente sujetos a las disposiciones del presente capítulo, desde la misma fecha en que empiecen a prestar el servicio o función pública para la cual fueron creados. PARÁGRAFO 3o. El Ministerio de Tecnologías de la Información y las Comunicaciones reglamentará los requisitos técnicos, operativos y de seguridad, que deberán cumplir las zonas de acceso a Internet inalámbrico de que trata el presente capítulo. [...] Las entidades Estatales del orden nacional, obligadas a aplicar la Ley 80 de 1993 y la Ley 1150 de 2007, o las normas que las modifiquen, deroguen o subroguen, deberán habilitar el acceso a Internet de que trata el presente capítulo a través de los acuerdos marco de precios vigentes.",
+    "pregunta": "Por un decreto de 2026 se creó una agencia del orden nacional, adscrita a un ministerio y sujeta a la Ley 80 de 1993, que empezará a atender al público en su sede el martes 1 de septiembre de 2026. Para la sala de atención, el secretario general propone tener lista desde ese día la red de internet inalámbrico gratuito para los usuarios y escoger al proveedor con un proceso de selección propio de la agencia, para comparar más ofertas. La jefa financiera objeta las dos cosas: dice que basta con tener la red el martes 1 de diciembre, porque el Decreto 1078 de 2015 da tres meses para implementar estas zonas, y que es mejor contratarla por el acuerdo marco de precios vigente que cubre ese servicio. La reglamentación técnica que el MinTIC debía expedir para estas zonas existe desde hace varios años. Andrea, profesional de la oficina de contratación, debe emitir concepto. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tener la red a más tardar el 1 de diciembre, y contratarla por medio del acuerdo marco de precios vigente.",
+        "explicacion": "Incorrecta. Acierta en la forma de contratar, pero los tres meses del parágrafo 1 del art. 2.2.9.2.2 se contaban desde la expedición de la reglamentación del MinTIC a la que remite el parágrafo 3, que ya se expidió; las entidades nacionales que se crean después quedan sujetas desde que empiezan a prestar el servicio para el que fueron creadas (parágrafo 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Tener la red desde el 1 de septiembre, al empezar a atender, y contratarla por medio del acuerdo marco de precios vigente.",
+        "explicacion": "Correcta. Cada voz acierta en un punto. La agencia nueva del orden nacional queda sujeta al capítulo desde la fecha en que empiece a prestar el servicio para el que fue creada (art. 2.2.9.2.2, par. 2), como propone el secretario; y como está obligada a aplicar la Ley 80 de 1993, debe habilitar el acceso a internet a través de los acuerdos marco de precios vigentes (art. 2.2.9.2.3), como dice la jefa financiera, aunque no por conveniencia sino por obligación."
+      },
+      {
+        "id": "C",
+        "texto": "Tener la red a más tardar el 1 de diciembre, y contratarla con un proceso de selección propio de la agencia.",
+        "explicacion": "Incorrecta en los dos puntos. Los tres meses del parágrafo 1 se contaban desde la reglamentación del MinTIC, no desde la apertura de una entidad nueva, que queda obligada desde que empieza a prestar el servicio (parágrafo 2); y las entidades sujetas a la Ley 80 deben acudir al acuerdo marco de precios vigente (art. 2.2.9.2.3)."
+      },
+      {
+        "id": "D",
+        "texto": "Tener la red desde el 1 de septiembre, al empezar a atender, y contratarla con un proceso de selección propio de la agencia.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero una entidad nacional obligada a aplicar la Ley 80 de 1993 debe habilitar el acceso a internet a través de los acuerdos marco de precios vigentes (art. 2.2.9.2.3); el régimen contractual propio solo aplica a las entidades no obligadas a usar esos acuerdos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: es una agencia nacional nueva, sujeta a la Ley 80, que empieza a atender el 1 de septiembre de 2026; hay un acuerdo marco vigente y la reglamentación del MinTIC se expidió hace años. Regla: las entidades creadas después quedan sujetas al capítulo desde que empiezan a prestar su servicio (art. 2.2.9.2.2, par. 2; los tres meses del par. 1 corrían desde la reglamentación del par. 3), y las obligadas a aplicar la Ley 80 contratan por los acuerdos marco vigentes (art. 2.2.9.2.3). Conclusión: red desde el 1 de septiembre y por acuerdo marco.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TIC-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Comité Nacional de Seguridad Digital: nivel y funciones de los delegados",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.21.1.3.5, num. 12 y parágrafo 1 (título 21, adicionado por el art. 1 del Decreto 338 de 2022)"
+    ],
+    "texto_fuente": "El Comité Nacional de Seguridad digital estará conformado por: [...] 12. El Ministro de Transporte, o su delegado. [...] deberán pertenecer a los niveles directivo o asesor que tengan a su cargo funciones relacionadas con políticas y estrategias en seguridad digital en la respectiva entidad.",
+    "pregunta": "El Ministerio de Transporte integra el Comité Nacional de Seguridad Digital. El ministro no podrá asistir a las sesiones de este año y quiere delegar su participación. Camila, profesional especializada de la oficina jurídica, debe verificar cuáles de estos servidores del ministerio cumplen las condiciones que fija el Decreto 1078 de 2015 para los delegados: (1) la jefa de la oficina de TI, del nivel directivo, que tiene a su cargo las políticas y estrategias de seguridad digital; (2) una asesora del despacho, del nivel asesor, encargada de la estrategia de seguridad digital; (3) el coordinador del grupo de seguridad de la información, profesional especializado, que formula las políticas de seguridad digital; y (4) el secretario general, del nivel directivo, que tiene a su cargo los asuntos administrativos y financieros. ¿En quiénes puede delegar el ministro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la jefa de la oficina de TI o en la asesora del despacho.",
+        "explicacion": "Correcta. Los delegados al Comité Nacional de Seguridad Digital deben pertenecer a los niveles directivo o asesor y tener a su cargo funciones relacionadas con políticas y estrategias en seguridad digital en su entidad (art. 2.2.21.1.3.5, par. 1). La jefa de TI, del nivel directivo, y la asesora del despacho, del nivel asesor, cumplen las dos condiciones."
+      },
+      {
+        "id": "B",
+        "texto": "En la jefa de la oficina de TI o en el coordinador del grupo de seguridad.",
+        "explicacion": "Incorrecta. La jefa de TI cumple, pero el coordinador, aunque formula las políticas de seguridad digital, es profesional especializado, y el parágrafo 1 del art. 2.2.21.1.3.5 exige que el delegado sea del nivel directivo o asesor."
+      },
+      {
+        "id": "C",
+        "texto": "En la asesora del despacho o en el secretario general.",
+        "explicacion": "Incorrecta. La asesora cumple, pero el secretario general, aunque es del nivel directivo, no tiene a su cargo funciones relacionadas con políticas y estrategias en seguridad digital, que es la segunda condición del parágrafo 1 del art. 2.2.21.1.3.5."
+      },
+      {
+        "id": "D",
+        "texto": "En el coordinador del grupo de seguridad o en el secretario general.",
+        "explicacion": "Incorrecta en los dos casos. Al coordinador le falta el nivel (es profesional especializado) y al secretario general le faltan las funciones de seguridad digital; el delegado debe reunir las dos condiciones (art. 2.2.21.1.3.5, par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la jefa de TI (directiva) y la asesora del despacho tienen funciones de seguridad digital; el coordinador también, pero es profesional, y el secretario general es directivo sin esas funciones. Regla: el parágrafo 1 del art. 2.2.21.1.3.5 del Decreto 1078 (título 21, adicionado por el Decreto 338 de 2022) exige que los delegados pertenezcan a los niveles directivo o asesor y tengan a su cargo funciones relacionadas con políticas y estrategias en seguridad digital. Conclusión: puede delegar en la jefa de TI o en la asesora.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-TIC-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Servicios ciudadanos digitales",
+    "subtema": "Portabilidad sin costo, gratuidad de los servicios base y cobro de los servicios adicionales aceptados expresamente",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.17.1.6, nums. 3 y 4 (título 17 subrogado por el art. 1 del Decreto 620 de 2020)",
+      "art. 2.2.17.2.1.1, num. 2",
+      "art. 2.2.17.4.3, num. 1"
+    ],
+    "texto_fuente": "3. Gratuidad: El acceso de los usuarios a los servicios ciudadanos digitales base será gratuito. 4. Libre elección y portabilidad: Los usuarios tendrán el derecho a escoger el prestador de servicios ciudadanos digitales de su preferencia y a trasladarse entre prestadores de servicios, conservando los mismos derechos y las características mínimas de los servicios ciudadanos digitales base definidos en la Guía de lineamientos de los servicios ciudadanos digitales. La migración de datos de los usuarios de un prestador de servicios ciudadanos digitales a otro, en caso de requerirse, no podrá representar costo alguno para los usuarios. [...] 2. Servicios ciudadanos digitales especiales: Son servicios que brindan soluciones que por sus características realizan nuevas ofertas de valor y son adicionales a los servicios ciudadanos digitales base [...] sin imponer o cobrar servicios que no hayan sido aceptados expresamente por el usuario.",
+    "pregunta": "Rosa se acerca a la ventanilla de atención al ciudadano de una alcaldía. Cuenta que está registrada en los servicios ciudadanos digitales con un prestador privado y que quiere cambiarse a otro, pero el primero le dijo que el traslado de sus datos le cuesta $25.000. Agrega que el nuevo prestador, además de los servicios base, le ofrece un servicio adicional de alertas personalizadas con asesoría por una tarifa mensual. Pedro, auxiliar administrativo de la ventanilla, debe orientarla. ¿Qué debe decirle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el traslado de sus datos sí se le puede cobrar, y que el servicio adicional debe ser gratuito, como lo son los servicios base.",
+        "explicacion": "Incorrecta en los dos puntos. La migración de los datos de un prestador a otro no puede representar costo alguno para el usuario (art. 2.2.17.1.6, num. 4), y la gratuidad cubre los servicios base, no los servicios especiales que se ofrecen como adicionales a ellos (num. 3 y art. 2.2.17.2.1.1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que el traslado de sus datos sí se le puede cobrar, y que el servicio adicional solo se le puede cobrar si ella lo acepta expresamente.",
+        "explicacion": "Incorrecta. Acierta en el servicio adicional, pero el principio de libre elección y portabilidad prohíbe que la migración de los datos de un prestador a otro le represente costo alguno al usuario (art. 2.2.17.1.6, num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Que el traslado de sus datos no puede costarle nada, y que el servicio adicional solo se le puede cobrar si ella lo acepta expresamente.",
+        "explicacion": "Correcta. La migración de datos entre prestadores no puede representar costo alguno para el usuario (art. 2.2.17.1.6, num. 4). La gratuidad se predica de los servicios base (num. 3); el servicio de alertas con asesoría es adicional a ellos (art. 2.2.17.2.1.1, num. 2), y el prestador no puede imponer ni cobrar servicios que el usuario no haya aceptado expresamente (art. 2.2.17.4.3, num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el traslado de sus datos no puede costarle nada, y que el servicio adicional debe ser gratuito, como lo son los servicios base.",
+        "explicacion": "Incorrecta. Acierta en el traslado, pero extiende la gratuidad a un servicio adicional: el principio de gratuidad cubre el acceso a los servicios base (art. 2.2.17.1.6, num. 3), y los servicios especiales pueden cobrarse si el usuario los acepta expresamente (art. 2.2.17.4.3, num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el prestador actual quiere cobrar el traslado de los datos y el nuevo ofrece, con tarifa, un servicio adicional a los base. Regla: en el título 17 del Decreto 1078, la migración de datos entre prestadores no puede costarle nada al usuario y la gratuidad cubre los servicios base (art. 2.2.17.1.6, nums. 3 y 4); los servicios especiales son adicionales (art. 2.2.17.2.1.1) y solo pueden cobrarse si el usuario los acepta expresamente (art. 2.2.17.4.3, num. 1). Conclusión: traslado sin costo y servicio adicional cobrable solo si lo acepta expresamente.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-TIC-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Servicios ciudadanos digitales",
+    "subtema": "Obligaciones de la entidad: actualizar el trámite en el SUIT y reclamar ante el Articulador por las fallas del servicio",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.17.1.4, num. 2 (título 17 subrogado por el art. 1 del Decreto 620 de 2020)",
+      "art. 2.2.17.4.7, nums. 1 y 7"
+    ],
+    "texto_fuente": "2. Articulador: Es la Agencia Nacional Digital, que será la encargada de proveer y gestionar de manera integral los servicios ciudadanos digitales [...] 1. Actualizar en el Sistema Único de Información de Trámites (SUIT) del Departamento Administrativo de la Función Pública (DAFP) los trámites [...] en los cuales se haga uso de los servicios ciudadanos digitales, donde se informe claramente a los ciudadanos, usuarios o grupos de interés los pasos que deben adelantar para acceder a estos servicios. [...] 7. Presentar las peticiones, quejas, reclamos y solicitudes de información ante el Articulador, cuando se presenten desviaciones en la calidad o anomalías en los servicios recibidos.",
+    "pregunta": "Laura, técnica de la oficina de planeación de una alcaldía, apoya la puesta en marcha del trámite de certificado de residencia, que desde este mes usa el servicio de autenticación digital de los servicios ciudadanos digitales. Su jefe le encarga dos tareas: dejar registrada la información del trámite con los pasos que debe seguir el ciudadano para usar ese servicio, y presentar un reclamo por las fallas repetidas que ha tenido la autenticación durante la última semana. ¿Cómo debe proceder Laura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Registrar el trámite y sus pasos en la sede electrónica de la alcaldía, y presentar el reclamo ante el MinTIC, como rector de la política de esos servicios.",
+        "explicacion": "Incorrecta en los dos puntos. El trámite que usa los servicios ciudadanos digitales debe actualizarse en el SUIT con los pasos para acceder a ellos (art. 2.2.17.4.7, num. 1), y los reclamos por anomalías en esos servicios se presentan ante el Articulador, que es la Agencia Nacional Digital (num. 7 y art. 2.2.17.1.4, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Registrar el trámite y sus pasos en el SUIT de Función Pública, y presentar el reclamo ante el MinTIC, como rector de la política de esos servicios.",
+        "explicacion": "Incorrecta. Acierta en el SUIT, pero aunque el MinTIC fija la política de uso de esos servicios, las peticiones, quejas y reclamos por desviaciones en la calidad o anomalías se presentan ante el Articulador, la Agencia Nacional Digital (art. 2.2.17.4.7, num. 7)."
+      },
+      {
+        "id": "C",
+        "texto": "Registrar el trámite y sus pasos en la sede electrónica de la alcaldía, y presentar el reclamo ante la Agencia Nacional Digital, como articulador de esos servicios.",
+        "explicacion": "Incorrecta. Acierta en el destinatario del reclamo, pero la entidad debe actualizar en el SUIT de Función Pública los trámites en los que se usan los servicios ciudadanos digitales, informando los pasos para acceder a ellos (art. 2.2.17.4.7, num. 1); la sede electrónica no reemplaza ese registro."
+      },
+      {
+        "id": "D",
+        "texto": "Registrar el trámite y sus pasos en el SUIT de Función Pública, y presentar el reclamo ante la Agencia Nacional Digital, como articulador de esos servicios.",
+        "explicacion": "Correcta. Los sujetos obligados deben actualizar en el SUIT del DAFP los trámites en los que usan los servicios ciudadanos digitales, informando a los ciudadanos los pasos para acceder a ellos (art. 2.2.17.4.7, num. 1), y presentar ante el Articulador los reclamos por desviaciones en la calidad o anomalías del servicio (num. 7). El Articulador es la Agencia Nacional Digital (art. 2.2.17.1.4, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: un trámite empezó a usar la autenticación digital y el servicio ha fallado varias veces. Regla: el art. 2.2.17.4.7 del Decreto 1078 (título 17, subrogado por el Decreto 620 de 2020) obliga a actualizar en el SUIT del DAFP los trámites que usan los servicios ciudadanos digitales, con los pasos para acceder a ellos (num. 1), y a presentar ante el Articulador los reclamos por anomalías en el servicio (num. 7); el Articulador es la Agencia Nacional Digital (art. 2.2.17.1.4, num. 2). Conclusión: SUIT y reclamo ante la Agencia Nacional Digital.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-TIC-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Servicios ciudadanos digitales",
+    "subtema": "Tratamiento de datos por el prestador: responsable de los datos que le entrega el usuario y encargado de los que le dan las entidades",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015 y Ley 1581 de 2012",
+    "articulos": [
+      "Decreto 1078 de 2015, art. 2.2.17.5.1 (título 17 subrogado por el art. 1 del Decreto 620 de 2020)",
+      "Ley 1581 de 2012, art. 3, lits. d y e"
+    ],
+    "texto_fuente": "Los prestadores de servicios ciudadanos digitales serán responsables del tratamiento de los datos personales que los ciudadanos le suministren directamente. Asimismo, serán los encargados del tratamiento de los datos que otras entidades les proporcionen. En cada caso, los prestadores de servicios ciudadanos digitales deberán cumplir los deberes que les corresponden como responsables o encargados, establecidos en la Ley 1581 de 2012 [...] d) Encargado del Tratamiento: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta del Responsable del Tratamiento; e) Responsable del Tratamiento: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos;",
+    "pregunta": "Una empresa privada presta servicios ciudadanos digitales en el esquema que coordina el Articulador. Cuando una persona se registra en su plataforma, le entrega directamente su nombre, su número de celular y su correo electrónico. Además, por medio de la plataforma, la empresa recibe de una gobernación los recibos de pago del impuesto vehicular de esas personas, para mostrárselos en su carpeta ciudadana digital. Como un usuario pidió corregir datos de los dos grupos, la profesional jurídica de la gobernación debe precisar en qué calidad trata la empresa cada grupo de datos. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la empresa es responsable del tratamiento de los dos grupos de datos que maneja en su plataforma.",
+        "explicacion": "Incorrecta. La empresa es responsable de los datos que los usuarios le suministran directamente, pero de los que le proporciona la gobernación es encargada (art. 2.2.17.5.1): los trata por cuenta de la entidad que decide sobre ellos."
+      },
+      {
+        "id": "B",
+        "texto": "Que es responsable de los datos del registro y encargada de los que le entrega la gobernación.",
+        "explicacion": "Correcta. Los prestadores de servicios ciudadanos digitales son responsables del tratamiento de los datos que los ciudadanos les suministran directamente y encargados del tratamiento de los datos que otras entidades les proporcionan (art. 2.2.17.5.1), y en cada calidad deben cumplir los deberes que la Ley 1581 asigna a responsables o encargados (art. 3, lits. d y e)."
+      },
+      {
+        "id": "C",
+        "texto": "Que es encargada de los datos del registro y responsable de los que le entrega la gobernación.",
+        "explicacion": "Incorrecta. Invierte las calidades: el decreto hace al prestador responsable de los datos que el ciudadano le entrega directamente y encargado de los que le proporcionan otras entidades (art. 2.2.17.5.1)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la empresa es encargada del tratamiento de los dos grupos de datos que maneja en su plataforma.",
+        "explicacion": "Incorrecta. Es encargada de los datos que le proporciona la gobernación, pero de los que el usuario le entrega directamente al registrarse es responsable del tratamiento (art. 2.2.17.5.1)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la empresa recibe unos datos directamente de los usuarios al registrarlos y otros de una gobernación. Regla: el art. 2.2.17.5.1 del Decreto 1078 (título 17, subrogado por el Decreto 620 de 2020) hace a los prestadores de servicios ciudadanos digitales responsables del tratamiento de los datos que los ciudadanos les suministran directamente y encargados de los que les proporcionan otras entidades, con los deberes de cada calidad según la Ley 1581 (art. 3, lits. d y e). Conclusión: responsable de los datos del registro y encargada de los de la gobernación.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Servicios ciudadanos digitales",
+    "subtema": "Prohibición de comercializar la información obtenida por el servicio de interoperabilidad, salvo autorización expresa del titular",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1078 de 2015",
+    "articulos": [
+      "art. 2.2.17.5.7 (título 17 subrogado por el art. 1 del Decreto 620 de 2020)"
+    ],
+    "texto_fuente": "Los datos personales y los datos de los usuarios enviados a través del servicio ciudadano digital de interoperabilidad y en general la información generada, producida, almacenada, enviada o compartida en la prestación de los servicios ciudadanos digitales, no podrán ser objeto de comercialización, ni de explotación económica de ningún tipo, salvo autorización expresa del titular de los datos y de conformidad con los límites que impone la Ley de Protección de Datos de Carácter Personal, Ley 1581 de 2012.",
+    "pregunta": "Julián, técnico de la secretaría de hacienda de un municipio, administra las consultas que la secretaría hace a otras entidades por medio del servicio de interoperabilidad de los servicios ciudadanos digitales. Una aseguradora privada ofrece pagarle al municipio por la lista de direcciones y teléfonos de contribuyentes que la secretaría ha obtenido por ese medio, para ofrecerles pólizas. El jefe le pide a Julián revisar si la oferta se puede aceptar. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que podría aceptarse frente a los contribuyentes que, al inscribirse en el impuesto, autorizaron el tratamiento de sus datos.",
+        "explicacion": "Incorrecta. Una autorización general de tratamiento, dada para fines tributarios, no es la autorización expresa del titular que exige el art. 2.2.17.5.7 para comercializar o explotar económicamente los datos que circulan por el servicio de interoperabilidad."
+      },
+      {
+        "id": "B",
+        "texto": "Que podría aceptarse si la secretaría no entrega la lista y es ella la que, por el mismo pago, envía la oferta a los contribuyentes.",
+        "explicacion": "Incorrecta. Aunque los datos no salgan de la secretaría, usarlos a cambio de un pago para hacer llegar la oferta de la aseguradora es explotarlos económicamente, y el art. 2.2.17.5.7 prohíbe la explotación económica de cualquier tipo sin autorización expresa del titular."
+      },
+      {
+        "id": "C",
+        "texto": "Que podría aceptarse frente a los contribuyentes que autoricen de manera expresa ese uso comercial de sus datos.",
+        "explicacion": "Correcta. Los datos enviados por el servicio de interoperabilidad, y en general la información que se maneja en la prestación de los servicios ciudadanos digitales, no pueden ser objeto de comercialización ni de explotación económica de ningún tipo, salvo autorización expresa del titular y dentro de los límites de la Ley 1581 (art. 2.2.17.5.7)."
+      },
+      {
+        "id": "D",
+        "texto": "Que podría aceptarse frente a los contribuyentes que, avisados por la secretaría, no se opongan dentro de los diez días siguientes.",
+        "explicacion": "Incorrecta. El silencio del titular frente a un aviso no equivale a la autorización expresa que exige el art. 2.2.17.5.7 para comercializar o explotar económicamente esos datos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: una aseguradora quiere pagar por datos que la secretaría obtuvo por el servicio de interoperabilidad, para ofrecer pólizas. Regla: el art. 2.2.17.5.7 del Decreto 1078 (título 17, subrogado por el Decreto 620 de 2020) prohíbe comercializar o explotar económicamente, de cualquier forma, esos datos y la información de los servicios ciudadanos digitales, salvo autorización expresa del titular y dentro de los límites de la Ley 1581. Una autorización general, el silencio o enviar la oferta sin entregar la lista no la suplen. Conclusión: solo con autorización expresa.",
+    "fuente_url": "https://normograma.mintic.gov.co/mintic/compilacion/docs/decreto_1078_2015.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TIC-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Mensajes de datos",
+    "subtema": "Mensaje duplicado y momento de la recepción cuando el destinatario no designó un sistema de información",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 527 de 1999",
+    "articulos": [
+      "art. 19",
+      "art. 24, lit. b"
+    ],
+    "texto_fuente": "ARTICULO 19. MENSAJES DE DATOS DUPLICADOS. Se presume que cada mensaje de datos recibido es un mensaje de datos diferente, salvo en la medida en que duplique otro mensaje de datos, y que el destinatario sepa, o debiera saber, de haber actuado con la debida diligencia o de haber aplicado algún método convenido, que el nuevo mensaje de datos era un duplicado. [...] ARTICULO 24. TIEMPO DE LA RECEPCION DE UN MENSAJE DE DATOS. De no convenir otra cosa el iniciador y el destinatario, el momento de la recepción de un mensaje de datos se determinará como sigue: [...] b) Si el destinatario no ha designado un sistema de información, la recepción tendrá lugar cuando el mensaje de datos ingrese a un sistema de información del destinatario.",
+    "pregunta": "Un instituto municipal de cultura no ha señalado un buzón especial para recibir las cuentas de cobro de sus contratistas, ni lo pactó en los contratos. Un contratista envió su cuenta de cobro n.º 9 al correo institucional de la supervisora y, según el registro del servidor, el mensaje entró a ese buzón el sábado 3 de octubre de 2026 a las 7:40 p. m. El jueves 8 de octubre, el contratista mandó otro correo con el asunto «Reenvío la cuenta de cobro n.º 9» y el mismo archivo adjunto. La supervisora abrió los dos correos el viernes 9 de octubre y se los pasó a Felipe, técnico de la oficina de correspondencia, para radicarlos. ¿Qué debe registrar Felipe como recibido, y con qué fecha de recepción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una sola cuenta de cobro, pues el segundo correo la duplica, recibida el sábado 3 de octubre, cuando el primero entró al buzón.",
+        "explicacion": "Correcta. El segundo correo anuncia que reenvía la misma cuenta y trae el mismo archivo, así que con la debida diligencia se sabe que es un duplicado y no un mensaje diferente (art. 19). Como el instituto no designó un sistema de información, la recepción tuvo lugar cuando el primer mensaje ingresó a un sistema del destinatario, el buzón institucional (art. 24, lit. b)."
+      },
+      {
+        "id": "B",
+        "texto": "Una sola cuenta de cobro, pues el segundo correo la duplica, recibida el viernes 9 de octubre, cuando la supervisora la abrió.",
+        "explicacion": "Incorrecta. Acierta en el duplicado, pero cuando el destinatario no ha designado un sistema de información, la recepción ocurre cuando el mensaje ingresa a un sistema del destinatario (art. 24, lit. b), no cuando alguien lo abre. El momento de la recuperación solo cuenta si hay un sistema designado y el mensaje llega a otro (lit. a, num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Dos cuentas de cobro, pues cada correo se presume distinto; la primera recibida el sábado 3 de octubre, cuando entró al buzón.",
+        "explicacion": "Incorrecta. Acierta en la fecha de recepción, pero la presunción de que cada mensaje es diferente cede cuando el destinatario sabe o debiera saber, actuando con la debida diligencia, que el nuevo mensaje es un duplicado (art. 19), como ocurre con un reenvío del mismo archivo que así lo anuncia."
+      },
+      {
+        "id": "D",
+        "texto": "Dos cuentas de cobro, pues cada correo se presume distinto; la primera recibida el viernes 9 de octubre, cuando se abrió.",
+        "explicacion": "Incorrecta en los dos puntos. El reenvío anunciado del mismo archivo es un duplicado (art. 19), y sin sistema designado la recepción ocurre cuando el mensaje ingresa a un sistema del destinatario, el sábado 3 de octubre, y no cuando se abre (art. 24, lit. b)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el instituto no designó un buzón para las cuentas, la cuenta entró al buzón de la supervisora el sábado 3 de octubre y el jueves 8 llegó un reenvío anunciado del mismo archivo. Regla: el art. 19 de la Ley 527 presume distinto cada mensaje, salvo que el destinatario sepa o deba saber con la debida diligencia que es un duplicado; el art. 24, lit. b, fija la recepción, sin sistema designado, cuando el mensaje ingresa a un sistema del destinatario. Conclusión: una sola cuenta, recibida el sábado 3 de octubre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0527_1999.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Mensajes de datos",
+    "subtema": "Atribución del mensaje enviado por un sistema automático y error de transmisión advertible con la debida diligencia",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 527 de 1999",
+    "articulos": [
+      "art. 16, num. 3",
+      "art. 18"
+    ],
+    "texto_fuente": "ARTICULO 16. ATRIBUCION DE UN MENSAJE DE DATOS. Se entenderá que un mensaje de datos proviene del iniciador, cuando éste ha sido enviado por: [...] 3. Por un sistema de información programado por el iniciador o en su nombre para que opere automáticamente. [...] ARTICULO 18. CONCORDANCIA DEL MENSAJE DE DATOS ENVIADO CON EL MENSAJE DE DATOS RECIBIDO. Siempre que un mensaje de datos provenga del iniciador o que se entienda que proviene de él, o siempre que el destinatario tenga derecho a actuar con arreglo a este supuesto, en las relaciones entre el iniciador y el destinatario, este último tendrá derecho a considerar que el mensaje de datos recibido corresponde al que quería enviar el iniciador, y podrá proceder en consecuencia. El destinatario no gozará de este derecho si sabía o hubiera sabido, de haber actuado con la debida diligencia o de haber aplicado algún método convenido, que la transmisión había dado lugar a un error en el mensaje de datos recibido.",
+    "pregunta": "Una alcaldía contrató el suministro de refrigerios escolares, que se pagan por mes según los refrigerios entregados, a $4.000 cada uno. El proveedor programó su software de facturación para que, sin intervención de nadie, envíe cada mes la cuenta de cobro al buzón que la alcaldía señaló. La cuenta de septiembre llegó con una advertencia del servidor de correo de la alcaldía: «el archivo adjunto se recibió dañado; parte del contenido puede no mostrarse». El documento registra 1.200 refrigerios, la cifra que consta en las actas de entrega, y un total de $4.080.000. El representante del proveedor alega que esa cuenta no es de la empresa porque ninguna persona la envió. En la tesorería sostienen que sí es del proveedor, aunque la haya enviado un programa, y proponen pagar los $4.080.000 que dice el documento. Jorge, profesional que supervisa el contrato, debe fijar la posición de la alcaldía. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la cuenta no proviene del proveedor, porque la envió un sistema sin intervención de una persona, y que debe pedirle que la remita de nuevo.",
+        "explicacion": "Incorrecta. Un mensaje enviado por un sistema de información que el iniciador programó para operar automáticamente se entiende proveniente de él (art. 16, num. 3); que ninguna persona lo haya despachado no le quita esa atribución."
+      },
+      {
+        "id": "B",
+        "texto": "Que la cuenta proviene del proveedor, y que la alcaldía puede tramitarla por $4.080.000, porque puede actuar según el mensaje que recibió.",
+        "explicacion": "Incorrecta. La tesorería acierta en la atribución, pero el destinatario pierde el derecho a tener el mensaje recibido como el que quería enviar el iniciador si sabía o debía saber, con la debida diligencia, que la transmisión produjo un error (art. 18, inc. 2). La advertencia del servidor y un total que no corresponde a 1.200 refrigerios a $4.000 ($4.800.000) lo hacían advertible."
+      },
+      {
+        "id": "C",
+        "texto": "Que la cuenta no proviene del proveedor, porque el error muestra que no expresa su voluntad, y que debe tenerse por no recibida.",
+        "explicacion": "Incorrecta. El error de transmisión no cambia la atribución: el mensaje proviene del iniciador porque lo envió el sistema que él programó (art. 16, num. 3). Lo que el error afecta es el derecho del destinatario a dar por cierto el contenido recibido (art. 18)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la cuenta proviene del proveedor, pero que no puede tramitarse por $4.080.000, porque el error en la transmisión era advertible.",
+        "explicacion": "Correcta. El mensaje se entiende enviado por el proveedor, pues lo despachó el sistema que este programó para operar automáticamente (art. 16, num. 3); en eso tiene razón la tesorería. Pero la alcaldía no puede considerar que el contenido recibido es el que el proveedor quería enviar, porque con la debida diligencia sabía que la transmisión había producido un error (art. 18, inc. 2): el servidor advirtió el daño del archivo y 1.200 refrigerios a $4.000 suman $4.800.000, no $4.080.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la cuenta la envió el software del proveedor, llegó con aviso de archivo dañado y su total ($4.080.000) no corresponde a 1.200 refrigerios a $4.000 ($4.800.000). Regla: el art. 16, num. 3, de la Ley 527 atribuye al iniciador el mensaje enviado por un sistema programado por él para operar automáticamente; el art. 18 permite al destinatario tener el mensaje recibido por el que se quería enviar, salvo que supiera o debiera saber, con la debida diligencia, que la transmisión produjo un error. Conclusión: la cuenta es del proveedor, pero no puede tramitarse por $4.080.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0527_1999.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Firma digital y entidades de certificación",
+    "subtema": "Cese de actividades de la entidad de certificación y preaviso del suscriptor para terminar el acuerdo de vinculación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 527 de 1999",
+    "articulos": [
+      "art. 33",
+      "art. 34 (modificado por el art. 163 del Decreto 19 de 2012)"
+    ],
+    "texto_fuente": "ARTICULO 33. TERMINACION UNILATERAL. Salvo acuerdo entre las partes, la entidad de certificación podrá dar por terminado el acuerdo de vinculación con el suscriptor dando un preaviso no menor de noventa (90) días. Vencido este término, la entidad de certificación revocará los certificados que se encuentren pendientes de expiración. Igualmente, el suscriptor podrá dar por terminado el acuerdo de vinculación con la entidad de certificación dando un preaviso no inferior a treinta (30) días. [...] Las entidades de certificación acreditadas por el ONAC pueden cesar en el ejercicio de actividades, siempre y cuando garanticen [...] continuidad del servicio a quienes ya lo hayan contratado, directamente o a través de terceros, sin costos adicionales a los servicios ya cancelados.",
+    "pregunta": "Una gobernación tiene un acuerdo de vinculación con una entidad de certificación acreditada, que expidió los certificados de firma digital de 40 funcionarios por dos años y los cobró por anticipado. El acuerdo no regula su terminación. La entidad anunció que cesará sus actividades y que, para que los certificados sigan funcionando con otra entidad de certificación, la gobernación deberá pagarle una tarifa de traslado. El secretario de TIC propone que, si hay que pagar, mejor se termine el acuerdo y se contrate a otra entidad, y pregunta con cuánta anticipación debe avisar la gobernación. ¿Qué debe conceptuar la profesional de la oficina jurídica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la entidad sí puede cobrar ese traslado, y que la gobernación debe darle un preaviso de al menos noventa días.",
+        "explicacion": "Incorrecta en los dos puntos. La entidad que cesa debe garantizar la continuidad del servicio sin costos adicionales a los ya pagados (art. 34), y los noventa días son el preaviso que debe dar la entidad de certificación; al suscriptor le basta uno no inferior a treinta días (art. 33)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la entidad debe asegurar el servicio sin costos adicionales, y que la gobernación debe darle un preaviso de al menos noventa días.",
+        "explicacion": "Incorrecta. Acierta en la continuidad sin costo, pero confunde los preavisos: los noventa días corresponden a la entidad de certificación cuando termina el acuerdo, y el suscriptor puede terminarlo con un preaviso no inferior a treinta días (art. 33)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la entidad sí puede cobrar ese traslado, y que la gobernación debe darle un preaviso de al menos treinta días.",
+        "explicacion": "Incorrecta. Acierta en el preaviso del suscriptor, pero la entidad de certificación solo puede cesar si garantiza la continuidad del servicio a quienes ya lo contrataron, directamente o por terceros, sin costos adicionales a los servicios ya pagados (art. 34)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la entidad debe asegurar el servicio sin costos adicionales, y que la gobernación debe darle un preaviso de al menos treinta días.",
+        "explicacion": "Correcta. La entidad de certificación puede cesar sus actividades siempre que garantice la continuidad del servicio a quienes ya lo contrataron, directamente o por terceros, sin costos adicionales a los servicios ya pagados (art. 34, modificado por el Decreto 19 de 2012). Y, salvo acuerdo, el suscriptor puede terminar el acuerdo de vinculación con un preaviso no inferior a treinta días (art. 33)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la entidad de certificación que cesa quiere cobrar el traslado de certificados ya pagados, y la gobernación, como suscriptora, evalúa terminar el acuerdo, que nada dice sobre la terminación. Regla: el art. 34 de la Ley 527 (modificado por el Decreto 19 de 2012) condiciona el cese a garantizar la continuidad del servicio sin costos adicionales, y el art. 33 fija el preaviso del suscriptor en no menos de treinta días; los noventa días son para la entidad. Conclusión: continuidad sin costo y preaviso de al menos treinta días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0527_1999.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-TIC-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Consulta gratuita una vez por mes calendario y costos que se pueden cobrar por las consultas adicionales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1074 de 2015",
+    "articulos": [
+      "art. 2.2.2.25.4.2, incs. 2 y 3"
+    ],
+    "texto_fuente": "El Titular podrá consultar de forma gratuita sus datos personales: (i) al menos una vez cada mes calendario, y (ii) cada vez que existan modificaciones sustanciales de las Políticas de Tratamiento de la información que motiven nuevas consultas. Para consultas cuya periodicidad sea mayor a una por cada mes calendario, el responsable sólo podrá cobrar al titular los gastos de envío, reproducción y, en su caso, certificación de documentos. Los costos de reproducción no podrán ser mayores a los costos de recuperación del material correspondiente.",
+    "pregunta": "Gloria, auxiliar de la oficina de atención al ciudadano de una alcaldía, tramita las consultas sobre datos personales. Un ciudadano que nunca había consultado pidió conocer sus datos en la base del programa de vivienda el viernes 18 de septiembre, el jueves 1 de octubre y el jueves 22 de octubre de 2026, y cada vez solicitó una copia certificada enviada a su casa. La política de tratamiento de la alcaldía no ha cambiado. Su jefe le pide indicar cuál de las tres consultas puede generar un cobro y por qué conceptos. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La del 1 de octubre, por ser la segunda en menos de treinta días, y solo por los gastos de envío, reproducción y certificación.",
+        "explicacion": "Incorrecta. Acierta en los conceptos, pero aplica un periodo de treinta días que la norma no fija: la gratuidad se cuenta por mes calendario, y la del 1 de octubre es la primera consulta de ese mes (art. 2.2.2.25.4.2)."
+      },
+      {
+        "id": "B",
+        "texto": "La del 22 de octubre, por ser la segunda del mismo mes, y solo por los gastos de envío, reproducción y certificación.",
+        "explicacion": "Correcta. El titular puede consultar gratis al menos una vez cada mes calendario: la consulta del 18 de septiembre es la de septiembre y la del 1 de octubre, la de octubre. La del 22 de octubre es la segunda de ese mes, y por ella solo pueden cobrarse los gastos de envío, reproducción y certificación, sin superar los costos de recuperación del material (art. 2.2.2.25.4.2)."
+      },
+      {
+        "id": "C",
+        "texto": "La del 1 de octubre, por ser la segunda en menos de treinta días, y por una tarifa de consulta que fije la alcaldía.",
+        "explicacion": "Incorrecta en los dos puntos. La gratuidad se cuenta por mes calendario, de modo que la del 1 de octubre es gratuita, y por las consultas adicionales solo pueden cobrarse los gastos de envío, reproducción y certificación, no una tarifa por consultar."
+      },
+      {
+        "id": "D",
+        "texto": "La del 22 de octubre, por ser la segunda del mismo mes, y por una tarifa de consulta que fije la alcaldía.",
+        "explicacion": "Incorrecta. Acierta en la consulta que puede cobrarse, pero no en el concepto: el responsable solo puede cobrar los gastos de envío, reproducción y, en su caso, certificación de documentos, y los de reproducción no pueden superar los costos de recuperación del material (art. 2.2.2.25.4.2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: tres consultas, el 18 de septiembre, el 1 de octubre y el 22 de octubre de 2026, sin cambios en la política. Regla: el art. 2.2.2.25.4.2 del Decreto 1074 permite consultar gratis al menos una vez cada mes calendario y, para las consultas que superen una por mes, solo autoriza cobrar los gastos de envío, reproducción y certificación. Cálculo: septiembre tiene una consulta (18) y octubre dos (1 y 22); la segunda de octubre es la del 22. Conclusión: solo la del 22 de octubre, y solo por esos gastos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76608",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TIC-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Novedades del responsable al encargado: término de cinco días hábiles para actualizarlas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1581 de 2012",
+    "articulos": [
+      "art. 17, lit. f",
+      "art. 18, lit. d"
+    ],
+    "texto_fuente": "f) Actualizar la información, comunicando de forma oportuna al Encargado del Tratamiento, todas las novedades respecto de los datos que previamente le haya suministrado y adoptar las demás medidas necesarias para que la información suministrada a este se mantenga actualizada; [...] d) Actualizar la información reportada por los Responsables del Tratamiento dentro de los cinco (5) días hábiles contados a partir de su recibo;",
+    "pregunta": "La secretaría de educación de un municipio contrató a una empresa para que opere, por cuenta de la secretaría, el sistema de matrícula en línea. El sábado 10 de octubre de 2026, la secretaría le envió a la empresa por correo electrónico, como novedad, las direcciones corregidas de 300 estudiantes, que ella misma ya había verificado. Mónica, técnica que apoya la supervisión del contrato, debe anotar en su lista de chequeo la fecha máxima en que la empresa debía tener actualizada esa información. El lunes 12 de octubre fue festivo. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El lunes 19 de octubre de 2026.",
+        "explicacion": "Correcta. La empresa opera la base por cuenta de la secretaría, así que es encargada, y debe actualizar la información que le reporta el responsable dentro de los cinco días hábiles siguientes a su recibo (art. 18, lit. d), deber que se corresponde con el del responsable de comunicarle las novedades (art. 17, lit. f). Recibida el sábado 10 y con el lunes 12 festivo, los cinco días hábiles son el 13, 14, 15, 16 y 19 de octubre."
+      },
+      {
+        "id": "B",
+        "texto": "El viernes 16 de octubre de 2026.",
+        "explicacion": "Incorrecta. Cuenta el lunes 12 de octubre como hábil, pero fue festivo. Los cinco días hábiles corren el 13, 14, 15, 16 y 19 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "El jueves 15 de octubre de 2026.",
+        "explicacion": "Incorrecta. Cuenta cinco días calendario desde el sábado 10. El término del encargado es de cinco días hábiles (art. 18, lit. d), sin sábados, domingos ni festivos."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 3 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Aplica los quince días hábiles que la ley da para atender los reclamos de los titulares (art. 15, num. 3). Para actualizar la información que le reporta el responsable, el encargado tiene cinco días hábiles (art. 18, lit. d)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la empresa opera la base por cuenta de la secretaría (encargada) y recibió la novedad el sábado 10 de octubre de 2026; el lunes 12 fue festivo. Regla: el responsable debe comunicar las novedades al encargado (art. 17, lit. f, de la Ley 1581), y este debe actualizar la información reportada dentro de los cinco días hábiles contados a partir de su recibo (art. 18, lit. d). Cálculo: 13, 14, 15, 16 y 19 de octubre. Conclusión: lunes 19 de octubre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-TIC-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Reclamo incompleto: requerimiento para completarlo y plazo de dos meses antes de tenerlo por desistido",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1581 de 2012",
+    "articulos": [
+      "art. 15, num. 1"
+    ],
+    "texto_fuente": "1. El reclamo se formulará mediante solicitud dirigida al Responsable del Tratamiento o al Encargado del Tratamiento, con la identificación del Titular, la descripción de los hechos que dan lugar al reclamo, la dirección, y acompañando los documentos que se quiera hacer valer. Si el reclamo resulta incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes a la recepción del reclamo para que subsane las fallas. Transcurridos dos (2) meses desde la fecha del requerimiento, sin que el solicitante presente la información requerida, se entenderá que ha desistido del reclamo.",
+    "pregunta": "El jueves 9 de julio de 2026, una ciudadana radicó ante la secretaría de salud de un departamento un reclamo para que se corrijan sus datos en la base de un programa de vacunación, pero no describió qué datos están errados ni indicó su dirección. El martes 14 de julio, Diana, auxiliar de la oficina de atención al ciudadano, le envió un requerimiento para que completara el reclamo. Diana debe anotar en el sistema la fecha hasta la cual la ciudadana puede aportar lo que falta; si no lo aporta, el reclamo se archivará. El 20 de julio fue festivo. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El miércoles 22 de julio, cuando se cumplen cinco días hábiles desde el requerimiento.",
+        "explicacion": "Incorrecta. Los cinco días del art. 15, num. 1, son el plazo que tiene la entidad para requerir al interesado después de recibir el reclamo, no el que tiene la ciudadana para completarlo."
+      },
+      {
+        "id": "B",
+        "texto": "El viernes 31 de julio, cuando se cumplen quince días hábiles desde el recibo del reclamo.",
+        "explicacion": "Incorrecta. Los quince días hábiles son el término para atender un reclamo completo (art. 15, num. 3). Para completar un reclamo incompleto, la ley da dos meses contados desde la fecha del requerimiento (num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "El lunes 14 de septiembre, cuando se cumplen dos meses desde el requerimiento.",
+        "explicacion": "Correcta. Si el reclamo está incompleto, la entidad requiere al interesado para que subsane las fallas, y solo cuando transcurren dos meses desde la fecha del requerimiento sin que aporte lo pedido se entiende que desistió (art. 15, num. 1). Dos meses desde el 14 de julio llegan al 14 de septiembre de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "El viernes 14 de agosto, cuando se cumple un mes desde el requerimiento.",
+        "explicacion": "Incorrecta. Aplica el plazo de un mes que el CPACA prevé para completar las peticiones. Para los reclamos sobre datos personales, la Ley 1581 da dos meses desde la fecha del requerimiento (art. 15, num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el reclamo llegó incompleto el 9 de julio de 2026 y el requerimiento se envió el 14 de julio. Regla: el art. 15, num. 1, de la Ley 1581 ordena requerir al interesado dentro de los cinco días siguientes a la recepción para que subsane, y lo tiene por desistido cuando transcurren dos meses desde la fecha del requerimiento sin que aporte lo pedido. Cálculo: 14 de julio + 2 meses = 14 de septiembre de 2026. Conclusión: debe anotar el lunes 14 de septiembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-045",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Requisito de procedibilidad ante la Superintendencia y reclamo por el mismo medio en que se recogieron los datos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1581 de 2012 y Decreto 1074 de 2015",
+    "articulos": [
+      "Ley 1581 de 2012, art. 15, inc. 1",
+      "Ley 1581 de 2012, art. 16",
+      "Decreto 1074 de 2015, art. 2.2.2.26.2.4, inc. 1"
+    ],
+    "texto_fuente": "ARTÍCULO 15. RECLAMOS. El Titular o sus causahabientes que consideren que la información contenida en una base de datos debe ser objeto de corrección, actualización o supresión, o cuando adviertan el presunto incumplimiento de cualquiera de los deberes contenidos en esta ley, podrán presentar un reclamo ante el Responsable del Tratamiento o el Encargado del Tratamiento [...] ARTÍCULO 16. REQUISITO DE PROCEDIBILIDAD. El Titular o causahabiente sólo podrá elevar queja ante la Superintendencia de Industria y Comercio una vez haya agotado el trámite de consulta o reclamo ante el Responsable del Tratamiento o Encargado del Tratamiento. [...] Estos canales deben prever, por lo menos, la posibilidad de que el titular ejerza sus derechos a través del mismo medio por el cuál fue recogida su información, dejando constancia de la recepción y trámite de la respectiva solicitud.",
+    "pregunta": "Un ciudadano llama a la línea de atención de un instituto departamental de tránsito. Dice que el instituto tiene mal escrito su correo electrónico en la base de datos de usuarios, dato que él mismo entregó al inscribirse por el formulario web del instituto, y que quiere quejarse de una vez ante la Superintendencia de Industria y Comercio. Nunca le ha pedido al instituto la corrección. Tomás, auxiliar de la línea de atención, debe orientarlo. ¿Qué debe decirle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede quejarse de una vez ante la Superintendencia, que es la autoridad de protección de datos y le ordenará al instituto corregir.",
+        "explicacion": "Incorrecta. El titular solo puede elevar queja ante la Superintendencia de Industria y Comercio después de agotar el trámite de consulta o reclamo ante el responsable o el encargado (art. 16), y el ciudadano nunca ha reclamado ante el instituto."
+      },
+      {
+        "id": "B",
+        "texto": "Que, por tratarse de una entidad pública, la queja debe presentarla ante la Procuraduría y no ante la Superintendencia.",
+        "explicacion": "Incorrecta. Confunde el régimen sancionatorio con el trámite del titular: es la Superintendencia la que remite a la Procuraduría los presuntos incumplimientos de una autoridad pública (art. 23, par.). El primer paso del ciudadano es reclamar ante el instituto (arts. 15 y 16)."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo después de reclamar ante el instituto puede acudir a la Superintendencia, y que el reclamo debe radicarse por escrito en la sede.",
+        "explicacion": "Incorrecta. Acierta en que primero debe reclamar ante el instituto, pero los canales para ejercer los derechos deben permitir, por lo menos, hacerlo por el mismo medio por el que se recogió la información (art. 2.2.2.26.2.4 del Decreto 1074), que aquí fue el formulario web; exigirle radicar un escrito en la sede desconoce esa regla."
+      },
+      {
+        "id": "D",
+        "texto": "Que solo después de reclamar ante el instituto puede acudir a la Superintendencia, y que puede reclamar en línea, como al inscribirse.",
+        "explicacion": "Correcta. La queja ante la Superintendencia de Industria y Comercio exige agotar antes el reclamo ante el responsable (art. 16 de la Ley 1581), y el titular puede pedir la corrección por medio de un reclamo (art. 15). Los canales del responsable deben permitirle ejercer sus derechos por el mismo medio en que se recogieron sus datos (art. 2.2.2.26.2.4 del Decreto 1074)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el ciudadano nunca ha reclamado ante el instituto y entregó sus datos por el formulario web. Regla: el art. 16 de la Ley 1581 solo permite la queja ante la Superintendencia de Industria y Comercio después de agotar la consulta o el reclamo ante el responsable o el encargado (el reclamo de corrección está en el art. 15), y el art. 2.2.2.26.2.4 del Decreto 1074 exige que los canales permitan ejercer los derechos por el mismo medio en que se recogió la información. Conclusión: reclamar primero al instituto, por el formulario web.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TIC-046",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Limitación temporal del tratamiento: supresión al cumplirse la finalidad y conservación por obligación legal",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1074 de 2015",
+    "articulos": [
+      "art. 2.2.2.25.2.8, inc. 1"
+    ],
+    "texto_fuente": "Los Responsables y Encargados del Tratamiento sólo podrán recolectar, almacenar, usar o circular los datos personales durante el tiempo que sea razonable y necesario, de acuerdo con las finalidades que justificaron el tratamiento, atendiendo a las disposiciones aplicables a la materia de que se trate y a los aspectos administrativos, contables, fiscales, jurídicos e historicos de la información. Una vez cumplida la o las finalidades del tratamiento y sin perjuicio de normas legales que dispongan lo contrario, el Responsable y el Encargado deberán proceder a la supresión de los datos personales en su posesión. No obstante, lo anterior, los datos personales deberán ser conservados cuando así se requiera para el cumplimiento de una obligación legal o contractual.",
+    "pregunta": "Un instituto municipal de deportes cerró en junio de 2026 la convocatoria de un programa de becas deportivas. En la base de datos del programa quedaron dos grupos: los 300 aspirantes que no fueron seleccionados, cuyos datos se recogieron solo para evaluar su postulación, y los 40 becarios, que reciben la beca por cuotas hasta diciembre y cuyos soportes de pago una norma obliga a conservar durante varios años. Para los no seleccionados no hay norma, contrato ni tabla de retención que obligue a conservar sus datos, y ya venció el plazo para reclamar contra los resultados. El jefe le pide a Rubén, técnico de sistemas, proponer cómo depurar la base. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Guardar los de los no seleccionados en una copia cifrada y de acceso restringido, y conservar los de los becarios mientras la norma lo exija.",
+        "explicacion": "Incorrecta. Acierta con los becarios, pero cifrar los datos y restringir el acceso no es suprimirlos: cumplida la finalidad, y sin una obligación legal o contractual de conservarlos, los datos de los no seleccionados deben suprimirse (art. 2.2.2.25.2.8)."
+      },
+      {
+        "id": "B",
+        "texto": "Suprimir los de los no seleccionados, que ya cumplieron su fin, y conservar los de los becarios mientras la norma lo exija.",
+        "explicacion": "Correcta. Los datos se tratan durante el tiempo razonable y necesario según las finalidades que justificaron el tratamiento; cumplidas, el responsable debe suprimirlos, salvo que deban conservarse para cumplir una obligación legal o contractual (art. 2.2.2.25.2.8). Los de los no seleccionados ya cumplieron su finalidad y nada obliga a guardarlos; los de los becarios se conservan por la obligación legal."
+      },
+      {
+        "id": "C",
+        "texto": "Suprimir los de los no seleccionados, que ya cumplieron su fin, y los de los becarios cuando se les pague la última cuota de la beca.",
+        "explicacion": "Incorrecta. Acierta con los no seleccionados, pero pagar la última cuota no permite suprimir los datos de los becarios: deben conservarse cuando lo requiera el cumplimiento de una obligación legal, como la que obliga a guardar los soportes de pago (art. 2.2.2.25.2.8)."
+      },
+      {
+        "id": "D",
+        "texto": "Guardar los de los no seleccionados en una copia cifrada y de acceso restringido, y suprimir los de los becarios al pagarles la última cuota.",
+        "explicacion": "Incorrecta en los dos puntos. Los datos de los no seleccionados ya cumplieron su finalidad y deben suprimirse, no solo protegerse, y los de los becarios deben conservarse mientras lo exija la norma que obliga a guardar los soportes de pago (art. 2.2.2.25.2.8)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los datos de los no seleccionados ya cumplieron su finalidad, venció el plazo para reclamar y nada obliga a guardarlos; los soportes de pago de los becarios deben conservarse por una norma. Regla: el art. 2.2.2.25.2.8 del Decreto 1074 limita el tratamiento al tiempo razonable y necesario según su finalidad, ordena suprimir los datos una vez cumplida y exige conservarlos cuando lo requiera una obligación legal o contractual. Conclusión: suprimir, y no solo restringir, los de los no seleccionados, y conservar los de los becarios mientras lo exija la norma.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76608",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-TIC-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Registro Nacional de Bases de Datos: inscripción por el responsable con los datos de identificación y contacto del encargado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1074 de 2015",
+    "articulos": [
+      "art. 2.2.2.26.1.2, lit. b (modificado por el art. 1 del Decreto 90 de 2018)",
+      "art. 2.2.2.26.1.3",
+      "art. 2.2.2.26.2.3",
+      "art. 2.2.2.26.2.4, inc. 2"
+    ],
+    "texto_fuente": "Serán objeto de inscripción en el Registro Nacional de Bases de Datos, las bases de datos que contengan datos personales cuyo Tratamiento automatizado o manual sea realizado por los Responsables del tratamiento que reúnan las siguientes características: [...] b) Personas jurídicas de naturaleza pública [...] El Responsable del Tratamiento debe inscribir en el Registro Nacional de Bases de Datos, de manera independiente, cada una de las bases de datos que contengan datos personales sujetos a Tratamiento. [...] Cuando el Encargado o los Encargados del Tratamiento de la Base de Datos sean o sea una persona jurídica, el Responsable del Tratamiento deberá indicar en el Registro Nacional de Bases de Datos la denominación o razón social completa y el número de identificación tributaria de dicho Encargado o Encargados, así cómo sus datos de ubicación y contacto. [...] En los casos en los que el Tratamiento de datos lo realice el Encargado, el Responsable del Tratamiento registrara la información de contacto del Encargado para que el titular pueda adelantar ante este el ejercicio de sus derechos, sin perjuicio de la posibilidad que tiene de acudir directamente al Responsable del Tratamiento.",
+    "pregunta": "Una gobernación creó en septiembre de 2026 la base de datos de los beneficiarios de un subsidio de transporte y definió qué datos se recogen y para qué. Contrató a una empresa de software, cuyos activos superan las 100.000 UVT, para que aloje y opere la base por cuenta de la gobernación. Al preparar la inscripción en el Registro Nacional de Bases de Datos, la empresa sostiene que debe hacerla ella, porque es quien maneja la base y, por el monto de sus activos, está obligada a inscribir sus bases. El profesional de la oficina jurídica debe definir quién inscribe la base y qué información de la empresa debe figurar. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La inscribe la gobernación, con la razón social, el NIT, la ubicación y el contacto de la empresa, para que los titulares acudan también a ella.",
+        "explicacion": "Correcta. La gobernación decide sobre la base, así que es la responsable, y por ser persona jurídica de naturaleza pública debe inscribirla (arts. 2.2.2.26.1.2, lit. b, y 2.2.2.26.1.3). Como la empresa la trata como encargada, la gobernación debe indicar en el registro su razón social, NIT y datos de ubicación y contacto (art. 2.2.2.26.2.3), para que los titulares puedan ejercer sus derechos también ante ella (art. 2.2.2.26.2.4, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "La inscribe la gobernación, solo con sus propios datos, para que los titulares acudan a quien decide sobre la base y no a la empresa.",
+        "explicacion": "Incorrecta. Acierta en quién inscribe, pero cuando un encargado persona jurídica trata la base, el responsable debe registrar su razón social, NIT y datos de ubicación y contacto (art. 2.2.2.26.2.3), para que el titular pueda ejercer sus derechos ante él, sin perjuicio de acudir al responsable (art. 2.2.2.26.2.4)."
+      },
+      {
+        "id": "C",
+        "texto": "La inscribe la empresa, que maneja la base y por el monto de sus activos debe inscribir sus bases, con los datos de la gobernación como contratante.",
+        "explicacion": "Incorrecta. El deber de inscribir es del responsable del tratamiento (art. 2.2.2.26.1.3), que aquí es la gobernación porque decide sobre la base. El umbral de activos se refiere a las bases de las que la empresa sea responsable, no a las que opera por cuenta de otro."
+      },
+      {
+        "id": "D",
+        "texto": "La inscribe la empresa, que maneja la base y por el monto de sus activos debe inscribir sus bases, solo con sus propios datos de ubicación y contacto.",
+        "explicacion": "Incorrecta en los dos puntos. La inscripción le corresponde al responsable, la gobernación (art. 2.2.2.26.1.3), y en el registro deben figurar los datos de esta como responsable y los de la empresa como encargada (arts. 2.2.2.26.2.1 a 2.2.2.26.2.3)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la gobernación decidió qué datos se recogen y para qué, y la empresa opera la base por su cuenta. Regla: el Decreto 1074 obliga al responsable del tratamiento a inscribir cada base (art. 2.2.2.26.1.3), incluidas las personas jurídicas públicas (art. 2.2.2.26.1.2, lit. b), y a indicar la razón social, el NIT y los datos de ubicación y contacto del encargado persona jurídica (art. 2.2.2.26.2.3), para que los titulares puedan ejercer sus derechos ante él (art. 2.2.2.26.2.4). Conclusión: inscribe la gobernación, con los datos de la empresa.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76608",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TIC-048",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "tic_ofimatica",
+    "modulo": "TIC y Gobierno Digital",
+    "tema": "Protección de datos personales",
+    "subtema": "Política de tratamiento: la inscripción en el Registro Nacional no releva de darla a conocer, y su contenido mínimo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1074 de 2015",
+    "articulos": [
+      "art. 2.2.2.25.3.1, inc. 2 y num. 6",
+      "art. 2.2.2.26.2.7, inc. 1"
+    ],
+    "texto_fuente": "Las políticas de tratamiento de la información deberán constar en medio fisico o electrónico, en un lenguaje claro y sencillo y ser puestas en conocimiento de los Titulares. Dichas políticas deberán incluir, por lo menos, la siguiente información: [...] 6. Fecha de entrada en vigencia de la política de tratamiento de la información y período de vigencia de la base de datos. [...] La inscripción de la política de Tratamiento de la información en el Registro Nacional de Bases de Datos no exime al Responsable del Tratamiento de su deber de ponerla en conocimiento de los Titulares.",
+    "pregunta": "Una empresa social del Estado del orden departamental inscribió sus bases de datos en el Registro Nacional de Bases de Datos y cargó allí su política de tratamiento de la información. El jefe de comunicaciones propone quitar la política del sitio web del hospital, porque ya quedó en un registro público que administra la Superintendencia de Industria y Comercio. La jefa de atención al usuario se opone: dice que la política debe seguir a la vista de los usuarios y que su texto no necesita cambios, pues la Superintendencia la recibió sin observaciones. Al revisarla, la profesional de la oficina jurídica encuentra que la política identifica al hospital, describe los tratamientos y sus finalidades, enumera los derechos de los titulares y señala el área y el procedimiento para ejercerlos, pero no dice desde cuándo rige ni por cuánto tiempo estarán vigentes las bases. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Quitarla del sitio, pues el registro ya la pone en conocimiento de los titulares, y dejar su contenido como está.",
+        "explicacion": "Incorrecta en los dos puntos. Inscribir la política en el Registro Nacional no exime al responsable de ponerla en conocimiento de los titulares (art. 2.2.2.26.2.7), y la política debe incluir la fecha de su entrada en vigencia y el período de vigencia de la base de datos (art. 2.2.2.25.3.1, num. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "Mantenerla a disposición de los titulares, pues el registro no suple ese deber, y dejar su contenido como está.",
+        "explicacion": "Incorrecta. La jefa de atención al usuario acierta en seguir dándola a conocer, pero a la política le falta un contenido mínimo: la fecha de entrada en vigencia de la política y el período de vigencia de la base de datos (art. 2.2.2.25.3.1, num. 6). Que se haya inscrito en el registro no suple ese vacío."
+      },
+      {
+        "id": "C",
+        "texto": "Mantenerla a disposición de los titulares, pues el registro no suple ese deber, y agregarle las fechas de vigencia que le faltan.",
+        "explicacion": "Correcta. La inscripción de la política en el Registro Nacional de Bases de Datos no exime al responsable de ponerla en conocimiento de los titulares (art. 2.2.2.26.2.7), y la política debe incluir, entre otros, la fecha de su entrada en vigencia y el período de vigencia de la base de datos (art. 2.2.2.25.3.1, num. 6), que es lo que le falta. La jefa de atención al usuario acierta en mantenerla a la vista, pero no en dejarla como está."
+      },
+      {
+        "id": "D",
+        "texto": "Quitarla del sitio, pues el registro ya la pone en conocimiento de los titulares, y agregarle las fechas de vigencia que le faltan.",
+        "explicacion": "Incorrecta. Acierta en completar el contenido, pero la inscripción en el Registro Nacional no releva al responsable de su deber de poner la política en conocimiento de los titulares (art. 2.2.2.26.2.7)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el hospital inscribió su política en el Registro Nacional; una jefatura propone retirarla del sitio web y otra, dejarla como está, aunque no trae su fecha de vigencia ni la de las bases. Regla: el art. 2.2.2.26.2.7 del Decreto 1074 dispone que la inscripción no exime al responsable de poner la política en conocimiento de los titulares, y el art. 2.2.2.25.3.1, num. 6, exige incluir la fecha de entrada en vigencia de la política y el período de vigencia de la base de datos. Conclusión: mantenerla a disposición de los titulares y completarla.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76608",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
   }
 ]
