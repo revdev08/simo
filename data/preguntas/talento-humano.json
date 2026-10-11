@@ -3822,5 +3822,556 @@
       "fecha": "2026-10-10",
       "p_estimado": 45
     }
+  },
+  {
+    "id": "TC-TH-071",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Requisitos de la renuncia: manifestación inequívoca y prohibición de renuncias sin fecha",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.1.3, incs. 2 y 8 (modificado por el art. 2 del Decreto 648 de 2017 y por el art. 2 del Decreto 770 de 2021)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.11.1.3 Renuncia. Toda persona que sirva un empleo de voluntaria aceptación puede renunciarlo libremente en cualquier tiempo. La renuncia se produce cuando el empleado manifiesta por escrito, de forma espontánea e inequívoca, su decisión de separarse del servicio. [...] Quedan terminantemente prohibidas y carecerán en absoluto de valor las renuncias en blanco, o sin fecha determinada, o que mediante cualquiera otra circunstancia pongan con anticipación en manos de la autoridad nominadora la suerte del empleado.",
+    "pregunta": "La auxiliar administrativa de talento humano de una gobernación clasifica los documentos que llegaron esta semana para decisión del gobernador. Dos de ellos parecen renuncias. El primero es un oficio firmado por un técnico que dice: «Si la gobernación no resuelve antes del 30 de octubre mi solicitud de traslado a la sede norte, este escrito valdrá como mi renuncia al cargo; si la resuelve, quedará sin efecto». El segundo es una carta en la que un profesional manifiesta que renuncia a su empleo: la firmó al posesionarse, en 2024, dejó en blanco el espacio de la fecha y se la entregó al secretario de despacho de entonces, que acaba de enviarla a talento humano. ¿Cuál de los dos documentos debe pasar al gobernador como una renuncia para decidir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los dos: ambos son escritos firmados por el propio empleado, y el acto que los acepte será el que fije la fecha del retiro.",
+        "explicacion": "Incorrecta. Que el escrito esté firmado no basta: la renuncia debe ser una manifestación espontánea e inequívoca, y las firmadas sin fecha carecen de valor. El acto de aceptación no puede corregir esos defectos."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguno: el oficio supedita el retiro a que no le resuelvan el traslado, y la carta se suscribió años antes, sin datarla.",
+        "explicacion": "Correcta. El oficio no expresa una decisión inequívoca de retirarse: su efecto depende de lo que la gobernación haga con el traslado, con lo que pone en manos de la administración la suerte del empleado. Y la carta firmada al posesionarse, sin fecha, es de las renuncias prohibidas, que carecen en absoluto de valor."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el oficio del técnico: es un escrito propio y firmado; la carta sin fecha, en cambio, carece de todo valor.",
+        "explicacion": "Incorrecta. Acierta con la carta, pero el oficio tampoco sirve: aunque es escrito y propio, solo valdría como renuncia si la gobernación no resuelve el traslado. Esa condición le quita el carácter inequívoco y deja con anticipación en manos de la administración la suerte del empleado, lo que priva de todo valor a la renuncia."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la carta del profesional: la fecha la fija el acto que la acepta; el oficio, en cambio, está condicionado.",
+        "explicacion": "Incorrecta. Acierta con el oficio, pero no con la carta: la norma prohíbe y priva de todo valor las renuncias en blanco o sin fecha determinada, aunque después el acto de aceptación fije una fecha."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: un oficio que solo valdrá como renuncia si la gobernación no resuelve un traslado, y una carta firmada al posesionarse con la fecha en blanco. Regla: el art. 2.2.11.1.3 del Decreto 1083 exige que la renuncia se manifieste por escrito, de forma espontánea e inequívoca, y priva de todo valor las renuncias en blanco, sin fecha determinada o que por cualquier otra circunstancia pongan con anticipación en manos del nominador la suerte del empleado. Conclusión: ninguno de los dos documentos es una renuncia para decidir.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-TH-072",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Aceptación de la renuncia: autoridad competente y fecha máxima de efectividad",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.1.3, incs. 5 y 7 (modificado por el art. 2 del Decreto 648 de 2017 y por el art. 2 del Decreto 770 de 2021)"
+    ],
+    "texto_fuente": "Presentada la renuncia, su aceptación por la autoridad competente se producirá por escrito, y en el acto administrativo correspondiente deberá determinarse la fecha en que se hará efectiva, que no podrá ser posterior a treinta (30) días de su presentación. [...] La competencia para aceptar renuncias corresponde al jefe del organismo o al empleado en quien éste haya delegado la función nominadora.",
+    "pregunta": "El lunes 5 de octubre de 2026, un técnico administrativo de una alcaldía radicó por escrito su renuncia y pidió que se hiciera efectiva a partir del martes 1 de diciembre de 2026. El alcalde decidió aceptarla y no ha delegado en nadie la función nominadora. El técnico de talento humano que proyecta el acto propone que lo firme la jefe de talento humano, porque es ella quien maneja las novedades de personal. ¿Cómo debe quedar el acto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La jefe de talento humano lo firma, y la renuncia rige desde el 1 de diciembre, como la pidió el técnico.",
+        "explicacion": "Incorrecta. La jefe de talento humano no puede aceptar la renuncia, porque el alcalde no le delegó la función nominadora; además, el 1 de diciembre excede el plazo máximo de 30 días contados desde la presentación."
+      },
+      {
+        "id": "B",
+        "texto": "El alcalde lo firma, y la renuncia rige desde el 1 de diciembre, porque la fecha la escoge quien renuncia.",
+        "explicacion": "Incorrecta. El alcalde es el competente, pero la fecha no la escoge quien renuncia: el acto no puede fijar una fecha posterior a 30 días desde la presentación, y el 1 de diciembre está a 57 días calendario (38 hábiles)."
+      },
+      {
+        "id": "C",
+        "texto": "La jefe de talento humano lo firma, y la renuncia rige desde el 30 de octubre, dentro del plazo de la norma.",
+        "explicacion": "Incorrecta. La fecha cabe en el plazo, pero la firma no: aceptar renuncias corresponde al jefe del organismo o a quien tenga delegada la función nominadora, y aquí no hay delegación."
+      },
+      {
+        "id": "D",
+        "texto": "El alcalde lo firma, y la renuncia rige desde el 30 de octubre, una fecha que cabe dentro de los 30 días.",
+        "explicacion": "Correcta. Firma el alcalde, porque es el jefe del organismo y no delegó la función nominadora. El 30 de octubre no es el límite, sino una fecha válida dentro de los 30 días siguientes a la presentación (está a 25 días calendario, 18 hábiles); el tope sería el 4 de noviembre contando días calendario, o el 19 de noviembre en días hábiles."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: renuncia presentada el 5/10/2026 pidiendo efectos el 1/12/2026; el alcalde no ha delegado la función nominadora. Reglas: según el art. 2.2.11.1.3 del Decreto 1083, aceptar renuncias corresponde al jefe del organismo o a quien tenga delegada la función nominadora, y el acto debe fijar una fecha de efectividad no posterior a 30 días de la presentación. Cálculo: el 1/12 está a 57 días calendario (38 hábiles), fuera del límite con cualquier conteo; el 30/10, a 25 (18 hábiles), queda dentro. Conclusión: firma el alcalde, con efectos el 30/10.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TH-073",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Abandono del cargo: no reasumir al terminar las vacaciones y tres días consecutivos de ausencia",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.1.9, nums. 1 y 2 (modificado por el art. 2 del Decreto 648 de 2017)",
+      "art. 2.2.11.1.10, inc. 1 (modificado por el art. 2 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.11.1.9 Abandono del cargo. El abandono del cargo se produce cuando un empleado público sin justa causa: 1. No reasume sus funciones al vencimiento de una licencia, permiso, vacaciones, comisión, o dentro de los treinta (30) días siguientes al vencimiento de la prestación del servicio militar. 2. Deje de concurrir al trabajo por tres (3) días consecutivos. [...] ARTÍCULO 2.2.11.1.10 Procedimiento para la declaratoria del empleo por abandono del cargo. Con sujeción al procedimiento administrativo regulado por el Código de Procedimiento Administrativo y de lo Contencioso Administrativo y demás normas que la modifiquen, adicionen o sustituyan, el jefe del organismo deberá establecer la ocurrencia o no de cualquiera de las conductas señaladas en el artículo anterior y las decisiones consecuentes.",
+    "pregunta": "El martes 15 de septiembre de 2026, el técnico de talento humano de un establecimiento público revisa el control de asistencia para informar al director los casos en los que podría haberse configurado abandono del cargo. La entidad trabaja de lunes a viernes. Ana, auxiliar, terminó sus vacaciones el viernes 11 de septiembre y no se ha presentado desde entonces, sin aviso ni justificación. Bernardo, técnico, faltó sin justificación el martes 8 y el miércoles 9, y volvió el jueves 10. Camila, profesional, faltó sin justificación el miércoles 9, el jueves 10 y el viernes 11, y volvió el lunes 14. ¿Qué casos debe informar al director?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los de Ana y Camila: una no regresó al acabar sus vacaciones y la otra se ausentó tres días hábiles seguidos.",
+        "explicacion": "Correcta. Ana no reasumió sus funciones al vencer sus vacaciones, causal que no exige un número mínimo de días; Camila dejó de ir tres días hábiles seguidos sin justa causa, aunque luego volviera. Ambos casos van al director para que establezca, con el procedimiento del CPACA, si hubo abandono."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el de Camila: es la única que completó tres días seguidos sin ir; Ana aún no llega a ese número de días.",
+        "explicacion": "Incorrecta. Exige a Ana tres días de ausencia, pero ese número corresponde a quien deja de concurrir al trabajo; no reasumir las funciones al terminar las vacaciones es por sí misma una causal distinta."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el de Ana: Camila ya regresó a su puesto, y su regreso impide que esa ausencia se tenga por abandono.",
+        "explicacion": "Incorrecta. El regreso posterior no borra la ausencia de tres días consecutivos sin justa causa; es el director quien, mediante la actuación administrativa, debe establecer si hubo o no abandono."
+      },
+      {
+        "id": "D",
+        "texto": "Los tres: toda ausencia sin justificación, aunque sea de uno o dos días, configura abandono y debe informarse.",
+        "explicacion": "Incorrecta. Bernardo faltó dos días, no tres consecutivos, y no venía de ninguna situación cuyo vencimiento debiera atender; su falta puede tener otras consecuencias, pero no encaja en las causales de abandono."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: Ana no volvió al terminar sus vacaciones (lunes 14 y martes 15); Bernardo faltó dos días; Camila faltó tres días hábiles seguidos (9 a 11 de septiembre). Reglas: el art. 2.2.11.1.9 del Decreto 1083 configura el abandono cuando, sin justa causa, el empleado no reasume al vencimiento de sus vacaciones (num. 1) o deja de concurrir tres días consecutivos (num. 2); el art. 2.2.11.1.10 encarga al jefe del organismo establecerlo con el procedimiento del CPACA. Conclusión: se informan los casos de Ana y Camila.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TH-074",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Prima de navidad proporcional en el retiro: meses completos y último salario",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 2",
+      "art. 32, incs. 1 y 3"
+    ],
+    "texto_fuente": "ARTÍCULO 2. De las entidades de la administración pública. Para los efectos de este Decreto se entiende por entidades de la administración pública del orden nacional de la Presidencia de la República, los ministerios, departamentos administrativos y superintendencias, los establecimientos públicos y las unidades administrativas especiales. [...] ARTÍCULO 32. De la prima de Navidad. Los empleados públicos y trabajadores oficiales tienen derecho al reconocimiento y pago de una prima de Navidad. [...] Cuando el empleado público o trabajador oficial no hubiere servido durante todo el año civil, tendrá derecho a la mencionada prima de navidad en proporción al tiempo laborado, a razón de una doceava parte por cada mes completo de servicios, que se liquidará y pagará con base en el último salario devengado, o en el último promedio mensual, si fuere variable.",
+    "pregunta": "El técnico de nómina de una superintendencia liquida las prestaciones de una auxiliar administrativa que trabajaba en la entidad desde 2019 y cuyo último día de servicio fue el viernes 18 de septiembre de 2026, por renuncia aceptada. La prima de navidad se liquida en este caso solo con el art. 32 del Decreto Ley 1045 de 1978, y la única remuneración que se tiene en cuenta es su asignación básica: $3.400.000 en enero y febrero, y $3.600.000 desde marzo, por el reajuste anual. ¿Cuánto le corresponde por prima de navidad de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.366.667, que son ocho doceavos del promedio de lo que devengó entre enero y agosto de 2026.",
+        "explicacion": "Incorrecta. Usa el promedio de enero a agosto, pero el salario no era variable: la proporción se liquida con el último salario devengado ($3.600.000); el promedio se usa cuando la remuneración es variable."
+      },
+      {
+        "id": "B",
+        "texto": "$2.400.000, que son ocho doceavos del salario mensual que devengaba en el momento de su retiro.",
+        "explicacion": "Correcta. No sirvió todo el año civil, así que recibe una doceava parte por cada mes completo de servicios: enero a agosto, 8 meses. La base es el salario que devengaba al retirarse: 8/12 × $3.600.000 = $2.400.000."
+      },
+      {
+        "id": "C",
+        "texto": "$2.580.000, que resultan de sumar los ocho meses completos y la fracción de 18 días de septiembre.",
+        "explicacion": "Incorrecta. Suma los 18 días de septiembre, pero el art. 32 reconoce la proporción a razón de una doceava parte por cada mes completo de servicios; la fracción de mes no se liquida."
+      },
+      {
+        "id": "D",
+        "texto": "$2.700.000, que son nueve doceavos, porque septiembre se cuenta aunque no lo haya trabajado entero.",
+        "explicacion": "Incorrecta. Septiembre no se cuenta, porque solo sirvió 18 días de ese mes; la norma reconoce una doceava parte por mes completo de servicios, no por mes iniciado."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: superintendencia (orden nacional); la auxiliar sirvió en 2026 hasta el 18 de septiembre y su último salario fue de $3.600.000. Regla: el art. 32 del Decreto Ley 1045 reconoce a quien no sirvió todo el año civil una doceava parte de la prima por cada mes completo de servicios, liquidada con el último salario devengado (o el último promedio, si es variable). Cálculo: 8 meses completos (enero a agosto) × $3.600.000 / 12 = $2.400.000; los 18 días de septiembre no suman. Conclusión: $2.400.000.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-TH-075",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Compensación de vacaciones en el retiro: periodos prescritos y prima vacacional",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 13",
+      "art. 20, lit. b",
+      "art. 23",
+      "art. 30",
+      "art. 31"
+    ],
+    "texto_fuente": "ARTÍCULO 13. De la acumulación de vacaciones. Solo se podrán acumular vacaciones hasta por dos años, siempre que ello obedezca a aplazamiento por necesidad del servicio. [...] ARTÍCULO 20. De la compensación de vacaciones en dinero. Las vacaciones solo podrán ser compensadas en dinero en los siguientes casos: [...] b) Cuando el empleado público o trabajador oficial quede retirado definitivamente del servicio sin haber disfrutado de las vacaciones causadas hasta entonces. [...] ARTÍCULO 23. De la prescripción. Cuando sin existir aplazamiento no se hiciere uso de vacaciones en la fecha señalada, el derecho a disfrutarlas o a recibir la respectiva compensación en dinero prescribe en cuatro años, que se contarán a partir de la fecha en que se haya causado el derecho. [...] ARTÍCULO 30. Del pago de la prima en caso de retiro. Cuando sin haber disfrutado de sus vacaciones un empleado se retirare del organismo al cual estaba vinculado por motivos distintos de destitución o abandono del cargo, tendrá derecho al pago de la correspondiente prima vacacional. ARTÍCULO 31. De la prescripción de la prima vacacional. El derecho a percibir la prima vacacional prescribe en los mismos términos del derecho a vacaciones.",
+    "pregunta": "Un técnico de una superintendencia ingresó el 1 de marzo de 2020 y se retiró el miércoles 30 de septiembre de 2026, al hacerse efectiva su renuncia. Disfrutó los periodos de vacaciones causados el 1 de marzo de 2021 y el 1 de marzo de 2024. No disfrutó los causados el 1 de marzo de 2022, de 2023, de 2025 y de 2026, y ninguno de ellos fue aplazado mediante resolución. La auxiliar de nómina prepara la liquidación final con el régimen de vacaciones del Decreto Ley 1045 de 1978, incluida la prescripción que ese decreto fija para este derecho. Sin contar la fracción servida después del 1 de marzo de 2026, que se liquida por separado, ¿qué debe reconocerle por esos periodos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tres periodos compensados en dinero, cada uno con su respectiva prima de vacaciones.",
+        "explicacion": "Correcta. Al retirarse se compensan en dinero las vacaciones causadas y no disfrutadas que no hayan prescrito: las de 2023, 2025 y 2026. Las de 2022, sin aplazamiento, prescribieron el 1 de marzo de 2026. Como el retiro fue por renuncia, cada periodo compensado lleva su prima."
+      },
+      {
+        "id": "B",
+        "texto": "Cuatro periodos compensados en dinero, cada uno con su respectiva prima de vacaciones.",
+        "explicacion": "Incorrecta. Incluye el periodo causado el 1 de marzo de 2022: sin aplazamiento que interrumpiera el término, ese derecho prescribió a los cuatro años, el 1 de marzo de 2026, antes del retiro, y con él su prima."
+      },
+      {
+        "id": "C",
+        "texto": "Tres periodos compensados en dinero, sin la prima de vacaciones de ninguno de ellos.",
+        "explicacion": "Incorrecta. La prima de vacaciones se pierde en el retiro por destitución o por abandono del cargo; en el retiro por renuncia se paga la de cada periodo que se compensa."
+      },
+      {
+        "id": "D",
+        "texto": "Dos periodos compensados en dinero, cada uno con su respectiva prima de vacaciones.",
+        "explicacion": "Incorrecta. Deja por fuera el periodo de 2023, como si las vacaciones prescribieran en tres años o como si el tope de dos años para acumular vacaciones aplazadas limitara la compensación. En el Decreto Ley 1045, sin aplazamiento, el derecho prescribe en cuatro años: el periodo de 2023 vence el 1 de marzo de 2027, después del retiro."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: retiro por renuncia el 30/9/2026; periodos no disfrutados ni aplazados: 2022, 2023, 2025 y 2026. Reglas del Decreto Ley 1045: el retiro permite compensar en dinero las vacaciones causadas (art. 20 lit. b); sin aplazamiento, el derecho prescribe a los 4 años de causado (art. 23) y la prima, en el mismo término (art. 31); la prima se paga si el retiro no es por destitución o abandono (art. 30). Cálculo: el periodo de 2022 prescribió el 1/3/2026; el de 2023 vence el 1/3/2027. Conclusión: 3 periodos, cada uno con su prima.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-TH-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Renuncia no decidida a tiempo cuando el empleado continúa en el cargo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.1.3, incs. 5 y 6 (modificado por el art. 2 del Decreto 648 de 2017 y por el art. 2 del Decreto 770 de 2021)"
+    ],
+    "texto_fuente": "Presentada la renuncia, su aceptación por la autoridad competente se producirá por escrito, y en el acto administrativo correspondiente deberá determinarse la fecha en que se hará efectiva, que no podrá ser posterior a treinta (30) días de su presentación. Vencido el término señalado en el presente artículo sin que se haya decidido sobre la renuncia, el servidor dimitente podrá separarse del cargo sin incurrir en abandono del empleo, caso en el cual se generará automáticamente la vacancia definitiva del mismo, o continuar en el desempeño del empleo, caso en el cual la renuncia no producirá efecto alguno.",
+    "pregunta": "El martes 1 de septiembre de 2026, una profesional universitaria de una gobernación presentó por escrito su renuncia. Nadie la resolvió y ella siguió trabajando con normalidad. El viernes 23 de octubre, el gobernador firmó un decreto que acepta la renuncia a partir del viernes 30 de octubre. La profesional reclama: dice que ya no quiere retirarse y que nunca dejó de cumplir sus funciones. El jefe de la oficina jurídica debe conceptuar. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La aceptación es válida: una vez presentada por escrito, la renuncia solo pierde efecto si ella la retira a petición del gobernador.",
+        "explicacion": "Incorrecta. La renuncia no queda en firme por haberse presentado: si la autoridad no la decide a tiempo, el empleado puede separarse del cargo o seguir trabajando, y si sigue, la renuncia no produce efecto."
+      },
+      {
+        "id": "B",
+        "texto": "La aceptación es válida, pero hay que corregir la fecha, porque no puede regir después de 30 días contados desde la presentación.",
+        "explicacion": "Incorrecta. El problema no es la fecha: el término para decidir venció mucho antes (el 1 de octubre en días calendario o el 14 en días hábiles) y, como ella siguió en el cargo, ya no había renuncia que aceptar."
+      },
+      {
+        "id": "C",
+        "texto": "La aceptación no surte efectos: como ella continuó en el cargo después de agotado el término, la renuncia quedó sin ningún valor.",
+        "explicacion": "Correcta. Vencido el término sin decisión, la empleada podía irse o continuar; siguió desempeñando el empleo, y en ese caso la renuncia no produce efecto alguno. Por eso el decreto del 23 de octubre no tiene una renuncia que aceptar."
+      },
+      {
+        "id": "D",
+        "texto": "La aceptación sobra: agotado el término sin respuesta, el empleo quedó vacante en forma definitiva y ella ya estaba retirada.",
+        "explicacion": "Incorrecta. La vacancia automática se produce si, vencido el término, el empleado se separa del cargo; ella siguió trabajando, así que no hubo retiro."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: renuncia del 1/9/2026 sin decisión, la profesional siguió trabajando y la aceptación se firmó el 23/10. Regla: según el art. 2.2.11.1.3 del Decreto 1083, la aceptación debe fijar una fecha no posterior a 30 días de la presentación; vencido ese término sin decisión, el empleado puede separarse (vacancia automática) o continuar, y en este caso la renuncia no produce efecto. Cálculo: el término venció el 1/10 (calendario) o el 14/10 (hábiles), antes del 23/10. Conclusión: la aceptación carece de efectos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TH-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Retiro por pensión: solicitud en nombre del empleado y notificación de la inclusión en nómina",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.1.4, incs. 2 a 4 (modificado por el art. 2 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "De conformidad con lo señalado en elPARÁGRAFO 3 del artículo 9 de la Ley 797 de 2003, que modificó el artículo 33 de la Ley 100 de 1993, se considera justa causa para dar por terminada la relación legal o reglamentaria del empleado público que cumpla con los requisitos establecidos en este artículo para tener derecho a la pensión. El empleador podrá dar por terminado la relación legal o reglamentaria, cuando sea reconocida o notificada la pensión por parte de las administradoras del sistema general de pensiones, siempre y cuando además de la notificación del reconocimiento de la pensión, se le notifique debidamente su inclusión en la nómina de pensionados correspondiente. Transcurridos treinta (30) días después de que el trabajador o servidor público cumpla con los requisitos establecidos en este artículo para tener derecho a la pensión, si éste no la solicita, el empleador podrá solicitar el reconocimiento de la misma en nombre de aquel.",
+    "pregunta": "Un técnico operativo de una gobernación reunió el lunes 2 de marzo de 2026 los requisitos para la pensión de vejez y no ha manifestado que quiera permanecer en el cargo. Como él no la pidió, la gobernación presentó la solicitud en su nombre el lunes 4 de mayo. El martes 15 de septiembre, la administradora de pensiones le notificó la resolución que le reconoce la pensión, y desde entonces no le ha hecho ninguna otra notificación. El viernes 9 de octubre, el secretario general quiere expedir ya el acto de retiro. ¿Qué debe conceptuar el profesional de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede retirarlo ya, porque desde el 15 de septiembre tiene una pensión reconocida y notificada por la administradora.",
+        "explicacion": "Incorrecta. El reconocimiento notificado no basta: el empleador puede terminar el vínculo cuando, además, se notifica al empleado su inclusión en la nómina de pensionados, y eso no ha ocurrido."
+      },
+      {
+        "id": "B",
+        "texto": "Que no puede retirarlo, porque la pensión era un trámite personal del técnico y la solicitud de la gobernación no es válida.",
+        "explicacion": "Incorrecta. Si el servidor no pide la pensión en los 30 días siguientes a cumplir los requisitos, el empleador puede solicitarla en su nombre; la gobernación lo hizo el 4 de mayo, vencido ese plazo."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede retirarlo por esa causa, porque mientras no cumpla 70 años la pensión no permite desvincular al técnico.",
+        "explicacion": "Incorrecta. Los 70 años son otra causal. Reunir los requisitos de pensión es justa causa de retiro, salvo para quien optó por permanecer hasta la edad de retiro forzoso, y el técnico no lo hizo."
+      },
+      {
+        "id": "D",
+        "texto": "Que la gobernación podía pedir la pensión, pero para retirarlo falta que le notifiquen su ingreso al pago de mesadas.",
+        "explicacion": "Correcta. La gobernación podía pedir la pensión porque pasaron más de 30 días sin que él la solicitara; pero el retiro exige, además del reconocimiento notificado, la notificación de su inclusión en la nómina de pensionados, que no ha ocurrido."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: requisitos cumplidos el 2/3/2026, solicitud de la gobernación el 4/5/2026, reconocimiento notificado el 15/9 y ninguna otra notificación. Reglas: según el art. 2.2.11.1.4 del Decreto 1083, pasados 30 días sin que el servidor la pida, el empleador puede solicitar la pensión en su nombre, y puede terminar el vínculo cuando se notifiquen el reconocimiento y la inclusión en la nómina de pensionados. Cálculo: al 4/5 habían pasado 63 días calendario (41 hábiles). Conclusión: la solicitud fue válida, pero el retiro debe esperar.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TH-078",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Permanencia voluntaria del pensionable hasta la edad de retiro forzoso",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.1.4, inc. 5 (modificado por el art. 2 del Decreto 648 de 2017)",
+      "art. 2.2.11.1.7, incs. 1 y 2 (modificado por el art. 2 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Lo anterior, sin perjuicio de lo establecido en el artículo 2 de la Ley 1821 de 2016, para quienes hayan cumplido los requisitos para acceder a la pensión de jubilación y que voluntariamente manifiesten su decisión de permanecer en sus cargos hasta que cumplan la edad de retiro forzoso. A las personas que se acojan a la opción voluntaria de permanecer en el cargo, en los términos de la citada ley, les asiste la obligación de seguir contribuyendo al régimen de seguridad social integral y no les será aplicable lo dispuesto en el parágrafo 3 del artículo 9 de la Ley 797 de 2003. [...] ARTÍCULO 2.2.11.1.7 Edad de retiro forzoso. A partir de la entrada en vigencia de la Ley 1821 de 2016, la edad de setenta (70) años constituye impedimento para desempeñar cargos públicos, salvo las excepciones señaladas en el artículo 2.2.11.1.5. Las personas que antes de la entrada en vigencia de la Ley 1821 de 2016 tuvieren 65 años o más y continúan vinculadas al servicio público, deberán ser retiradas del servicio.",
+    "pregunta": "Un profesional especializado de un ministerio cumplió 60 años el 20 de noviembre de 2016. En 2021 cumplió los requisitos para la pensión de jubilación y manifestó por escrito su decisión de seguir en el cargo; desde entonces sigue cotizando a la seguridad social. En octubre de 2026, el nuevo secretario general propone retirarlo de inmediato, con el argumento de que reunir los requisitos de pensión es justa causa para terminar el vínculo. ¿Qué debe conceptuar el asesor jurídico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede retirarlo de inmediato, pues reunir los requisitos de pensión permite terminar el vínculo en cualquier momento.",
+        "explicacion": "Incorrecta. A quien cumplió los requisitos de la pensión de jubilación y manifestó su decisión de permanecer hasta la edad de retiro forzoso no se le aplica la justa causa del retiro por pensión."
+      },
+      {
+        "id": "B",
+        "texto": "Que esa causa no se le aplica, por haber optado por quedarse, y que deberá desvincularlo el 20 de noviembre de 2026.",
+        "explicacion": "Correcta. Al optar por quedarse, no se le aplica la justa causa del retiro por pensión; pero los 70 años son impedimento para desempeñar cargos públicos, y los cumple el viernes 20 de noviembre de 2026, diez años después de haber cumplido 60."
+      },
+      {
+        "id": "C",
+        "texto": "Que debió retirarlo el 20 de noviembre de 2021, al cumplir 65 años, y que el acto de retiro debe expedirse sin más demora.",
+        "explicacion": "Incorrecta. El retiro a los 65 años alcanzó a quienes ya tenían esa edad cuando entró en vigencia la Ley 1821 de 2016; él tenía 60 en 2016 y cumplió 65 en 2021, años después. Hoy la edad de retiro forzoso es de 70 años."
+      },
+      {
+        "id": "D",
+        "texto": "Que esa causa no se le aplica, por haber optado por quedarse, y que puede seguir en el cargo mientras continúe cotizando.",
+        "explicacion": "Incorrecta. Acierta en que la justa causa por pensión no se le aplica, pero la permanencia voluntaria tiene un límite: la edad de 70 años es impedimento para desempeñar cargos públicos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: cumplió los requisitos de la pensión de jubilación, manifestó su decisión de permanecer y cumplió 60 años el 20/11/2016. Reglas: el art. 2.2.11.1.4 del Decreto 1083 deja a salvo a quienes optan voluntariamente por permanecer hasta la edad de retiro forzoso, a quienes no se aplica la justa causa por pensión; el art. 2.2.11.1.7 fija esa edad en 70 años y solo ordena retirar a quienes ya tenían 65 al entrar en vigencia la Ley 1821. Cálculo: cumple 70 el 20/11/2026. Conclusión: no puede retirarlo ahora por la pensión, pero deberá hacerlo ese día.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-TH-079",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Revocatoria del nombramiento por falta de requisitos cuando el empleado no la consiente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015 y Ley 1437 de 2011",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.11.1.11 (modificado por el art. 2 del Decreto 648 de 2017)",
+      "Ley 1437 de 2011, art. 97, incs. 1 y 2"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.11.1.11 Retiro por revocatoria del nombramiento por no acreditar los requisitos para el desempeño del empleo. Cuando la administración verifique que se produjo un nombramiento o posesión en un cargo o empleo público sin el lleno de los requisitos exigidos, deberá contar con el previo consentimiento expreso del empleado para la revocatoria del acto. El procedimiento se adelantará en el marco del debido proceso y el respeto al principio de buena fe que rige las actuaciones administrativas, y deberá ceñirse al procedimiento previsto en la Ley 1437 de 2011 o en las normas que la modifiquen, adicionen o sustituyan. [...] ARTÍCULO 97. REVOCACIÓN DE ACTOS DE CARÁCTER PARTICULAR Y CONCRETO. Salvo las excepciones establecidas en la ley, cuando un acto administrativo, bien sea expreso o ficto, haya creado o modificado una situación jurídica de carácter particular y concreto o reconocido un derecho de igual categoría, no podrá ser revocado sin el consentimiento previo, expreso y escrito del respectivo titular. Si el titular niega su consentimiento y la autoridad considera que el acto es contrario a la Constitución o a la ley, deberá demandarlo ante la Jurisdicción de lo Contencioso Administrativo.",
+    "pregunta": "En 2025 una profesional universitaria se posesionó en un ministerio, y hoy está inscrita en carrera. Al revisar las historias laborales, talento humano advirtió que la experiencia que se le aceptó no estaba relacionada con las funciones del empleo, de modo que al posesionarse no cumplía los requisitos. Nadie sospecha fraude: el error fue de la entidad al verificar los documentos. Para retirarla del servicio, el ministerio inició el trámite de revocatoria por no acreditar los requisitos del empleo (art. 2.2.11.1.11 del Decreto 1083 de 2015) y le pidió por escrito su consentimiento, que ella negó. ¿Qué debe recomendar el profesional de la oficina jurídica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Revocar el nombramiento con resolución motivada, tras un procedimiento en el que ella pueda defenderse, aunque se oponga.",
+        "explicacion": "Incorrecta. Garantizar la defensa no reemplaza el consentimiento: el art. 2.2.11.1.11 exige la aceptación previa y expresa del empleado para revocar un nombramiento o una posesión sin el lleno de los requisitos, y aquí fue negada. Ese trámite se ciñe a la Ley 1437, que ante la negativa ordena acudir al juez."
+      },
+      {
+        "id": "B",
+        "texto": "Declarar insubsistente el nombramiento mediante acto motivado, por no reunir los requisitos del empleo que ocupa.",
+        "explicacion": "Incorrecta. La insubsistencia de un empleado de carrera procede por calificación no satisfactoria, no por falta de requisitos; para este caso la norma prevé la revocatoria, sujeta al consentimiento del empleado."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir al juez administrativo que anule el nombramiento, porque sin la anuencia de ella el ministerio no puede retirarla.",
+        "explicacion": "Correcta. Como ella negó su consentimiento, el ministerio no puede revocar por sí mismo el nombramiento; si lo considera contrario a la ley, debe demandarlo ante la jurisdicción de lo contencioso administrativo."
+      },
+      {
+        "id": "D",
+        "texto": "Mantenerla en el empleo, porque su inscripción en carrera saneó la falta de requisitos y volvió intocable el nombramiento.",
+        "explicacion": "Incorrecta. Ni la posesión ni la inscripción en carrera sanean la falta de requisitos; lo que cambia es el camino: sin consentimiento, la entidad debe acudir al juez."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: la profesional se posesionó sin cumplir los requisitos, no hubo fraude y negó su consentimiento para la revocatoria. Reglas: el art. 2.2.11.1.11 del Decreto 1083 exige el consentimiento previo y expreso del empleado para revocar un nombramiento hecho sin el lleno de requisitos; el art. 97 del CPACA dispone que, si el titular lo niega y la autoridad considera el acto contrario a la ley, debe demandarlo ante la jurisdicción de lo contencioso administrativo. Conclusión: demandar el nombramiento.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40,
+      "nota": "Una línea jurisprudencial lee el art. 5 de la Ley 190 como excepción al consentimiento del art. 97 del CPACA; el enunciado se rige por el art. 2.2.11.1.11 del Decreto 1083, que exige el consentimiento."
+    }
+  },
+  {
+    "id": "TC-TH-080",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Retiro del servicio",
+    "subtema": "Insubsistencia por desempeño: la evaluación semestral no basta y el acto debe motivarse",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015 y Ley 909 de 2004",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.8.1.5, inc. 1",
+      "Decreto 1083 de 2015, art. 2.2.8.1.10, inc. 1 y parágrafo",
+      "Ley 909 de 2004, art. 41, parágrafo 2"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.8.1.5 Evaluación definitiva, evaluaciones semestrales y evaluaciones eventuales. La calificación definitiva del desempeño de los empleados de carrera será el resultado de ponderar las evaluaciones semestrales previstas en el artículo 38 de la Ley 909 de 2004. [...] ARTÍCULO 2.2.8.1.10 Calificación de servicios no satisfactoria. De acuerdo con lo dispuesto en la Ley 909 de 2004, en firme una calificación de servicios no satisfactoria como resultado del desempeño laboral, de carácter anual o extraordinaria el nombramiento del empleado de carrera así calificado, deberá ser declarado insubsistente, mediante resolución motivada del Jefe de la entidad. [...] PARÁGRAFO . La declaratoria de insubsistencia del nombramiento por calificación no satisfactoria solo se produce con relación a la calificación anual o a la extraordinaria. [...] PARÁGRAFO 2o. Es reglada la competencia para el retiro de los empleos de carrera de conformidad con las causales consagradas por la Constitución Política y la ley y deberá efectuarse mediante acto motivado. La competencia para efectuar la remoción en empleos de libre nombramiento y remoción es discrecional y se efectuará mediante acto no motivado.",
+    "pregunta": "El lunes 10 de agosto de 2026, a un técnico de carrera de una alcaldía le comunicaron su evaluación semestral del periodo comprendido entre el 1 de febrero y el 31 de julio, con resultado no satisfactorio. El alcalde pide al profesional de talento humano proyectar de inmediato el decreto que declare insubsistente su nombramiento, y sugiere no motivarlo, «como se hace con los cargos de libre nombramiento». ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que con esa evaluación no procede: falta la calificación del año o una extraordinaria, en firme, y un acto con sus razones.",
+        "explicacion": "Correcta. La evaluación semestral es un insumo de la calificación definitiva; la insubsistencia por desempeño se produce con una calificación anual o extraordinaria no satisfactoria en firme, mediante resolución motivada del jefe de la entidad."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede proyectarlo ya y sin motivación, porque la facultad de retiro del alcalde es la misma frente a todos sus empleados.",
+        "explicacion": "Incorrecta. El retiro de los empleados de carrera es reglado y exige acto motivado; el acto no motivado es propio de la remoción en los empleos de libre nombramiento y remoción."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede proyectarlo ya, motivado en la evaluación semestral, y advertir que contra él procede el recurso de reposición.",
+        "explicacion": "Incorrecta. Acierta en que el acto debe motivarse, pero la evaluación semestral no basta: la declaratoria de insubsistencia por desempeño se produce con relación a la calificación anual o a la extraordinaria."
+      },
+      {
+        "id": "D",
+        "texto": "Que todavía no procede: debe esperar a que el técnico acumule dos calificaciones anuales no satisfactorias consecutivas.",
+        "explicacion": "Incorrecta. No se exigen dos calificaciones: una calificación anual o extraordinaria no satisfactoria, en firme, obliga a declarar la insubsistencia del nombramiento."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: lo no satisfactorio es una evaluación semestral (1 de febrero a 31 de julio). Reglas: según el Decreto 1083, la calificación definitiva pondera las evaluaciones semestrales (art. 2.2.8.1.5), y la insubsistencia por calificación no satisfactoria se produce con la calificación anual o la extraordinaria en firme, por resolución motivada del jefe de la entidad (art. 2.2.8.1.10 y parágrafo); además, el retiro de carrera exige acto motivado (Ley 909, art. 41, par. 2). Conclusión: todavía no procede.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
   }
 ]

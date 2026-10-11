@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "TC-BOG-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Concejo Distrital: control político",
+    "subtema": "Plazo del funcionario citado para radicar la respuesta al cuestionario",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 14"
+    ],
+    "texto_fuente": "Las citaciones deberán hacerse con anticipación no menor de cinco (5) días hábiles y formularse en cuestionario escrito. [...] El funcionario citado deberá radicar en la Secretaría General la respuesta al cuestionario, dentro del tercer día hábil siguiente al recibo de la citación.",
+    "pregunta": "Gloria es técnica administrativa del despacho de la Secretaría Distrital de Integración Social y lleva el control de los requerimientos del Concejo de Bogotá. El jueves 8 de octubre de 2026 la secretaria recibió una citación del Concejo, con cuestionario escrito, para un debate de control político programado para el martes 20 de octubre. El lunes 12 de octubre de 2026 fue festivo. Gloria debe anotar en el tablero de seguimiento la fecha límite para radicar en la Secretaría General del Concejo la respuesta al cuestionario. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 13 de octubre, contando como primer día el jueves 8 y saltando el festivo del lunes 12.",
+        "explicacion": "Incorrecta. Salta bien el festivo, pero cuenta el día en que llegó la citación. El plazo corre desde el día siguiente al recibo: contando desde el viernes 9, el tercer día hábil es el miércoles 14."
+      },
+      {
+        "id": "B",
+        "texto": "El viernes 16 de octubre, contando cinco días hábiles desde el viernes 9 y saltando el festivo del 12.",
+        "explicacion": "Incorrecta. Salta bien el festivo, pero confunde los dos términos del art. 14: los cinco días hábiles son la anticipación mínima con la que debe hacerse la citación. Para radicar la respuesta, el funcionario tiene hasta el tercer día hábil siguiente al recibo."
+      },
+      {
+        "id": "C",
+        "texto": "El miércoles 14 de octubre, contando desde el viernes 9 y dejando por fuera el festivo del lunes 12.",
+        "explicacion": "Correcta. La respuesta debe radicarse dentro del tercer día hábil siguiente al recibo de la citación (art. 14). Días hábiles después del jueves 8: viernes 9 (1), martes 13 (2) y miércoles 14 (3); el lunes 12 fue festivo."
+      },
+      {
+        "id": "D",
+        "texto": "El lunes 19 de octubre, porque basta con radicarla el día hábil anterior a la fecha del debate.",
+        "explicacion": "Incorrecta. La norma no ata el plazo de la respuesta a la fecha del debate, sino al recibo de la citación: tercer día hábil siguiente, es decir, el miércoles 14 de octubre."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la citación llegó el jueves 8 de octubre de 2026 y el lunes 12 fue festivo. Regla: el art. 14 del Decreto Ley 1421 obliga al funcionario citado a radicar la respuesta al cuestionario en la Secretaría General del Concejo dentro del tercer día hábil siguiente al recibo de la citación; los cinco días hábiles son la anticipación mínima de la citación. Cálculo: viernes 9 (1), martes 13 (2), miércoles 14 (3). Conclusión: la fecha límite es el miércoles 14 de octubre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-BOG-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: control a la gestión local",
+    "subtema": "Periodicidad de la citación al alcalde local y períodos de sesiones de la junta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 69, num. 14 (modificado por el art. 8 de la Ley 2116 de 2021)",
+      "art. 71"
+    ],
+    "texto_fuente": "14. Las Juntas Administradoras Locales podrán citar, una vez cada seis (6) meses al Alcalde Local correspondiente. Los cuestionarios para las sesiones de seguimiento a la gestión e inversión local deberán hacerse con anticipación no menor de cinco (5) días hábiles y formularse en cuestionario escrito. [...] Las juntas administradoras locales se reunirán, ordinariamente, por derecho propio, cuatro veces al año, así: el primero (1o.) de marzo; el primero (1o.) de junio; el primero (1o.) de septiembre, y el primero (1o.) de diciembre.",
+    "pregunta": "Andrés es secretario de la Junta Administradora Local de una localidad de Bogotá. En la sesión del 10 de marzo de 2026 la junta hizo el debate de seguimiento con el alcalde local, citado para hablar de la ejecución de las obras viales. El 3 de junio de 2026, ya en el siguiente período de sesiones ordinarias, varios ediles aprueban citarlo otra vez, ahora sobre los contratos de dotación de los salones comunales, y le piden a Andrés programar el debate en ese mismo período. La junta no ha recibido convocatoria a sesiones extraordinarias. ¿Qué debe informar Andrés?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el debate puede hacerse en junio, si el cuestionario se envía con cinco días hábiles de anticipación.",
+        "explicacion": "Incorrecta. El cuestionario con cinco días hábiles de anticipación es un requisito de forma de la citación, pero no suple el límite de periodicidad: la junta solo puede citar al alcalde local una vez cada seis meses, y el último debate fue el 10 de marzo."
+      },
+      {
+        "id": "B",
+        "texto": "Que en junio no es posible; podrá hacerlo en las sesiones de septiembre, cumplidos los seis meses.",
+        "explicacion": "Correcta. Desde el 10 de marzo, los seis meses se cumplen el 10 de septiembre. Como la junta sesiona ordinariamente desde el 1 de marzo, el 1 de junio, el 1 de septiembre y el 1 de diciembre (art. 71), el primer período en que puede hacer la nueva citación es el de septiembre."
+      },
+      {
+        "id": "C",
+        "texto": "Que en junio no es posible; el debate podrá hacerse en las sesiones de marzo de 2027, cumplido un año.",
+        "explicacion": "Incorrecta. La periodicidad de la citación al alcalde local es de seis meses, no de un año. La rendición de cuentas anual del num. 17 es otra obligación, a cargo de la propia junta."
+      },
+      {
+        "id": "D",
+        "texto": "Que el debate puede hacerse en junio, porque el límite opera solo cuando se cita por el mismo asunto.",
+        "explicacion": "Incorrecta. La norma permite citar al alcalde local una vez cada seis meses sin distinguir el tema del debate. Que el asunto sea distinto no habilita una segunda citación en junio."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el último debate con el alcalde local fue el 10 de marzo de 2026 y se quiere citarlo otra vez en las sesiones de junio. Regla: la JAL solo puede citar al alcalde local una vez cada seis meses (art. 69 num. 14 del Decreto Ley 1421, mod. Ley 2116 de 2021), y sus sesiones ordinarias empiezan el 1 de marzo, junio, septiembre y diciembre (art. 71). Cálculo: seis meses desde el 10 de marzo llegan al 10 de septiembre. Conclusión: no en junio; en las sesiones de septiembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-BOG-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: ediles",
+    "subtema": "Falta absoluta por inasistencia injustificada a sesiones plenarias",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 67",
+      "art. 32, num. 9",
+      "art. 33, num. 1 e inc. final",
+      "art. 34-A, inc. 2 (adicionado por el art. 1 de la Ley 2148 de 2021)"
+    ],
+    "texto_fuente": "Son aplicables a los ediles las normas del presente estatuto relativas a faltas absolutas y temporales de los concejales. [...] 9. La inasistencia injustificada a cinco (5) sesiones plenarias en un período de sesiones. [...] 1. La incapacidad o licencia médica debidamente certificadas. [...] Las faltas temporales de los concejales justifican su inasistencia a las sesiones del Concejo y de sus comisiones. [...] La concejala o la edilesa que entre a gozar de la licencia de maternidad, será reemplazada temporalmente mientras dure la licencia",
+    "pregunta": "Camila es secretaria de una Junta Administradora Local y lleva el registro de asistencia. En el período de sesiones ordinarias de septiembre de 2026, una edilesa dejó de asistir a siete sesiones: cinco plenarias y dos de la comisión permanente a la que pertenece. Para una de las plenarias presentó una incapacidad médica debidamente certificada; las demás ausencias no tienen excusa. En el período de junio ya había faltado sin excusa a dos plenarias. El presidente de la junta le pide a Camila un informe sobre si se configura una falta absoluta de la edilesa. ¿Qué debe concluir el informe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sí se configura, porque entre los períodos de junio y septiembre suma seis plenarias sin excusa.",
+        "explicacion": "Incorrecta. La causal se cuenta dentro de un mismo período de sesiones. Las ausencias de junio no se suman a las de septiembre."
+      },
+      {
+        "id": "B",
+        "texto": "Que sí se configura, porque en el período de septiembre dejó de asistir a siete sesiones de la junta.",
+        "explicacion": "Incorrecta. La causal se refiere a sesiones plenarias: las dos ausencias a la comisión no cuentan, y de las cinco plenarias una está justificada."
+      },
+      {
+        "id": "C",
+        "texto": "Que no se configura, porque en ese período solo cuatro de sus ausencias a plenarias carecen de excusa.",
+        "explicacion": "Correcta. A los ediles se les aplican las faltas absolutas de los concejales (art. 67), entre ellas la inasistencia injustificada a cinco plenarias en un período de sesiones (art. 32 num. 9). La incapacidad médica certificada es falta temporal y justifica la ausencia (art. 33). En septiembre quedan cuatro plenarias sin excusa."
+      },
+      {
+        "id": "D",
+        "texto": "Que no se configura, pero debe llamarse al siguiente de la lista mientras dure la incapacidad médica.",
+        "explicacion": "Incorrecta. La incapacidad médica es una falta temporal que justifica la inasistencia (art. 33), pero el estatuto no prevé por ella un reemplazo con el siguiente de la lista; ese reemplazo temporal está previsto para la licencia de maternidad o paternidad (art. 34-A)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en el período de septiembre la edilesa faltó a cinco plenarias, una con incapacidad médica certificada, y a dos sesiones de comisión. Regla: el art. 67 del Decreto Ley 1421 aplica a los ediles las faltas de los concejales; es falta absoluta la inasistencia injustificada a cinco plenarias en un período de sesiones (art. 32 num. 9), y la incapacidad certificada justifica la ausencia (art. 33). Cálculo: 5 plenarias − 1 justificada = 4; las de comisión y las de junio no cuentan. Conclusión: no hay falta absoluta.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-BOG-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: ediles",
+    "subtema": "Liquidación de honorarios de un edil con el tope mensual",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 72"
+    ],
+    "texto_fuente": "A los ediles se les reconocerán honorarios por su asistencia a sesiones plenarias y a las de las comisiones permanentes que tengan lugar en días distintos a los de aquéllas. Por cada sesión a la que concurran, sus honorarios serán iguales a la remuneración del alcalde local, dividida por veinte (20). [...] En ningún caso los honorarios mensuales de los ediles podrán exceder la remuneración mensual del alcalde local. El pago de los honorarios y de las primas de seguros ordenados estará a cargo del respectivo fondo de desarrollo local.",
+    "pregunta": "Julián es auxiliar administrativo de una alcaldía local y debe liquidar los honorarios de septiembre de 2026 de un edil. La remuneración mensual del alcalde local es de $13.200.000. Según las actas, en septiembre el edil asistió a 17 sesiones plenarias y a 7 sesiones de su comisión permanente; tres de esas sesiones de comisión se hicieron el mismo día de una plenaria. ¿Cuánto debe liquidar Julián por los honorarios de ese mes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$15.840.000",
+        "explicacion": "Incorrecta. Paga las 24 sesiones (17 + 7) a $660.000. Las tres sesiones de comisión celebradas el mismo día de una plenaria no generan honorarios, y además el total supera el tope mensual."
+      },
+      {
+        "id": "B",
+        "texto": "$13.860.000",
+        "explicacion": "Incorrecta. Cuenta bien las 21 sesiones que generan honorarios (21 × $660.000), pero olvida que los honorarios del mes no pueden superar la remuneración mensual del alcalde local."
+      },
+      {
+        "id": "C",
+        "texto": "$11.220.000",
+        "explicacion": "Incorrecta. Paga solo las 17 plenarias (17 × $660.000). Las cuatro sesiones de comisión celebradas en días distintos a los de las plenarias también generan honorarios."
+      },
+      {
+        "id": "D",
+        "texto": "$13.200.000",
+        "explicacion": "Correcta. Cada sesión vale $13.200.000 / 20 = $660.000. Generan pago las 17 plenarias y las 4 sesiones de comisión hechas en otros días: 21 × $660.000 = $13.860.000. Como el tope mensual es la remuneración del alcalde local, se liquidan $13.200.000 (art. 72)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: 17 plenarias y 7 sesiones de comisión, 3 de ellas el mismo día de una plenaria; el alcalde local devenga $13.200.000. Regla: el art. 72 del Decreto Ley 1421 paga por sesión la remuneración del alcalde local dividida por 20, reconoce las sesiones de comisión solo si se celebran en días distintos a los de las plenarias y fija como tope mensual la remuneración del alcalde local. Cálculo: $660.000 × (17 + 4) = $13.860.000, que supera el tope. Conclusión: se liquidan $13.200.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-BOG-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: sesiones",
+    "subtema": "Sesiones extraordinarias de la junta fuera de los períodos ordinarios",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 71",
+      "art. 10, inc. 2"
+    ],
+    "texto_fuente": "Las juntas administradoras locales se reunirán, ordinariamente, por derecho propio, cuatro veces al año, así: el primero (1o.) de marzo; el primero (1o.) de junio; el primero (1o.) de septiembre, y el primero (1o.) de diciembre. Cada vez las sesiones durarán treinta (30) días prorrogables, a juicio de la misma Junta hasta por cinco (5) días más. También se reunirán extraordinariamente por convocatoria que les haga el respectivo alcalde. En este evento sesionarán por el término que señale el alcalde y únicamente se ocuparán de los asuntos que él mismo someta a su consideración. [...] El Concejo Distrital se reunirá ordinariamente, por derecho propio, cuatro veces al año, así: el primero (1o.) de febrero; el primero (1o.) de mayo; el primero (1o.) de agosto; el primero (1o.) de noviembre. Cada vez, las sesiones durarán treinta (30) días prorrogables, a juicio del mismo Concejo, hasta por diez (10) días más.",
+    "pregunta": "Lorena es secretaria de una Junta Administradora Local. El período de sesiones ordinarias de septiembre de 2026 terminó, con su prórroga, el 5 de octubre. El 14 de octubre el presidente de la junta le pide preparar una sesión para dar primer debate a un proyecto de acuerdo local sobre el uso del espacio público en las ferias de fin de año. ¿Qué debe responder Lorena sobre la posibilidad de reunir a la junta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que podrá reunirse solo si el alcalde local la convoca a sesiones extraordinarias e incluye ese proyecto.",
+        "explicacion": "Correcta. Fuera de los períodos ordinarios, la junta se reúne cuando la convoca el alcalde local, por el término que él señale y para los asuntos que él le someta (art. 71). El proyecto solo puede tramitarse si el alcalde lo incluye en la convocatoria."
+      },
+      {
+        "id": "B",
+        "texto": "Que podrá reunirse solo si el presidente de la junta la convoca a sesiones extraordinarias para ese proyecto.",
+        "explicacion": "Incorrecta. La convocatoria a sesiones extraordinarias de la junta corresponde al alcalde local, no al presidente de la corporación."
+      },
+      {
+        "id": "C",
+        "texto": "Que podrá reunirse si la misma junta decide extender por diez días más el período de sesiones de septiembre.",
+        "explicacion": "Incorrecta. La junta puede prorrogar sus sesiones ordinarias hasta por cinco días, no diez (los diez días son la prórroga del Concejo, art. 10), y la prórroga de septiembre ya se agotó el 5 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "Que deberá esperar a las sesiones ordinarias que se instalan el 1 de noviembre para darle primer debate.",
+        "explicacion": "Incorrecta. El 1 de noviembre empieza un período ordinario del Concejo Distrital (art. 10). Las sesiones ordinarias de las juntas comienzan el 1 de marzo, junio, septiembre y diciembre."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el período ordinario de septiembre terminó el 5 de octubre, así que el 14 de octubre la junta no está en sesiones ordinarias. Regla: el art. 71 del Decreto Ley 1421 fija las sesiones ordinarias de las juntas desde el 1 de marzo, junio, septiembre y diciembre, por 30 días prorrogables hasta por 5, y permite sesiones extraordinarias por convocatoria del alcalde local, solo para los asuntos que él someta. Conclusión: la junta puede tramitar el proyecto si el alcalde local la convoca y lo incluye.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-BOG-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: acuerdos locales",
+    "subtema": "Archivo de proyectos de acuerdo local aprobados en primer debate",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 77",
+      "art. 80"
+    ],
+    "texto_fuente": "Para que un proyecto sea acuerdo debe aprobarse en dos debates celebrados en días distintos. [...] Los proyectos de a cuerdo que no recibieren aprobación por lo menos en un debate durante cualquiera de los períodos de sesiones ordinarias o extraordinarias, serán archivados. Para que la junta se pronuncie sobre ellos deberán ser presentados nuevamente.",
+    "pregunta": "Felipe es secretario de una Junta Administradora Local y lleva el control de los proyectos de acuerdo local. Un proyecto que reglamenta el uso de los parques de la localidad para mercados temporales se radicó en el período de sesiones de junio de 2026 y fue aprobado en primer debate el 16 de junio, pero el período terminó sin que la plenaria volviera a discutirlo. Al instalarse las sesiones del 1 de septiembre, la presidencia le pide a Felipe el estado del proyecto. ¿Qué debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sigue vivo y puede pasar a segundo debate en el período que acaba de instalarse.",
+        "explicacion": "Correcta. Solo se archivan los proyectos que no reciben aprobación en al menos un debate durante un período de sesiones (art. 80). Este fue aprobado en primer debate, y la norma exige dos debates en días distintos (art. 77), sin pedir que ambos ocurran en el mismo período."
+      },
+      {
+        "id": "B",
+        "texto": "Que quedó archivado, porque no surtió los dos debates en el período en que se radicó.",
+        "explicacion": "Incorrecta. La causal de archivo de los acuerdos locales no exige completar los dos debates en el mismo período: basta con que el proyecto haya sido aprobado en por lo menos un debate."
+      },
+      {
+        "id": "C",
+        "texto": "Que sigue en trámite, pero debe repetirse el primer debate porque cambió el período.",
+        "explicacion": "Incorrecta. El primer debate ya se surtió y es válido. Ninguna norma obliga a repetirlo por el cambio de período de sesiones."
+      },
+      {
+        "id": "D",
+        "texto": "Que quedó archivado, y solo el alcalde local puede revivirlo en unas extraordinarias.",
+        "explicacion": "Incorrecta. El proyecto no quedó archivado. Además, un proyecto archivado no se revive con una convocatoria: para que la junta se pronuncie, debe presentarse de nuevo (art. 80)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el proyecto fue aprobado en primer debate en el período de junio, pero no alcanzó el segundo. Regla: el art. 80 del Decreto Ley 1421 archiva los proyectos de acuerdo local que no reciben aprobación en al menos un debate durante un período de sesiones, y el art. 77 exige dos debates en días distintos, sin exigir que ocurran en el mismo período. Conclusión: el proyecto no se archivó y puede ir a segundo debate en septiembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: acuerdos locales",
+    "subtema": "Revisión jurídica del acuerdo local por el alcalde mayor",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 81",
+      "art. 83"
+    ],
+    "texto_fuente": "Las objeciones deberán formularse dentro del término improrrogable de los cinco (5) días siguientes a su recibo. [...] Dentro de los tres (3) días siguientes al de la sanción, el alcalde local enviará copia del acuerdo al alcalde mayor para su revisión jurídica. Esta revisión no suspende los efectos del acuerdo local. Si el alcalde mayor encontrara que el acuerdo es ilegal, lo enviará al Tribunal Administrativo competente para su decisión, el cual decidirá aplicando en lo pertinente, el trámite previsto para las objeciones.",
+    "pregunta": "Diana es auxiliar administrativa de una alcaldía local. El jueves 5 de noviembre de 2026 el alcalde local sancionó un acuerdo local y ordenó su publicación en el Registro Distrital. Le pide a Diana preparar el envío del acuerdo para su revisión jurídica y le pregunta si, mientras esa revisión ocurre, la alcaldía puede empezar a aplicarlo. ¿Qué debe responder Diana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Remitirlo al Tribunal Administrativo dentro de los diez días siguientes; queda en suspenso hasta que este decida.",
+        "explicacion": "Incorrecta. La copia se envía al alcalde mayor; el Tribunal Administrativo solo interviene si el alcalde mayor encuentra ilegal el acuerdo. Además, el término es de tres días siguientes a la sanción y la revisión no suspende los efectos del acuerdo local (art. 83)."
+      },
+      {
+        "id": "B",
+        "texto": "Remitirlo al alcalde mayor a más tardar tres días después de la sanción; mientras tanto, puede aplicarse.",
+        "explicacion": "Correcta. El alcalde local debe enviar copia del acuerdo al alcalde mayor dentro de los tres días siguientes a la sanción, y esa revisión no suspende sus efectos (art. 83). Solo si el alcalde mayor lo encuentra ilegal lo envía al Tribunal Administrativo."
+      },
+      {
+        "id": "C",
+        "texto": "Remitirlo al alcalde mayor a más tardar cinco días después de la sanción; queda en suspenso hasta la revisión.",
+        "explicacion": "Incorrecta. Acierta en el destinatario, pero toma el término de cinco días que tiene el alcalde local para objetar el proyecto (art. 81). La copia se envía dentro de los tres días siguientes a la sanción, y la revisión no suspende los efectos del acuerdo (art. 83)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirlo al Concejo Distrital dentro de los diez días siguientes a la sanción; mientras tanto, puede aplicarse.",
+        "explicacion": "Incorrecta. Acierta en que el acuerdo puede aplicarse, pero el Concejo Distrital no hace la revisión jurídica de los acuerdos locales: la copia va al alcalde mayor dentro de los tres días siguientes a la sanción (art. 83)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el acuerdo local ya fue sancionado y se ordenó su publicación. Regla: el art. 83 del Decreto Ley 1421 ordena al alcalde local enviar copia al alcalde mayor dentro de los tres días siguientes a la sanción, para su revisión jurídica, y aclara que esa revisión no suspende los efectos del acuerdo; si el alcalde mayor lo encuentra ilegal, lo envía al Tribunal Administrativo. Los cinco días del art. 81 son para objetar el proyecto. Conclusión: remitir la copia al alcalde mayor en tres días y aplicar el acuerdo mientras tanto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-BOG-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Juntas Administradoras Locales: acuerdos locales",
+    "subtema": "Término del alcalde local para objetar un proyecto de acuerdo local",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 81",
+      "art. 23, inc. 2"
+    ],
+    "texto_fuente": "Aprobado en segundo debate un proyecto de acuerdo, pasará al alcalde local para su sanción, quien podrá objetarle por razones de inconveniencia o por encontrarlo contrario a la Constitución, a la ley, a otras normas nacionales aplicables, a los acuerdos distritales o a los decretos del alcalde mayor. Las objeciones deberán formularse dentro del término improrrogable de los cinco (5) días siguientes a su recibo. Si el alcalde una vez transcurrido el citado término, no hubiere devuelto el proyecto objetado, deberá sancionarlo y promulgarlo. [...] Dentro de los diez (10) días siguientes al recibo del proyecto, el Alcalde podrá objetarle por motivos de inconveniencia inconstitucionalidad o ilegalidad.",
+    "pregunta": "Óscar es técnico administrativo de una alcaldía local y controla los términos de los proyectos que envía la Junta Administradora Local. El martes 3 de noviembre de 2026 la alcaldía recibió un proyecto de acuerdo local aprobado en segundo debate. El jueves 12 de noviembre el alcalde local le pide preparar el oficio para devolverlo a la junta con objeciones por inconveniencia. ¿Qué debe advertirle Óscar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede objetarlo, porque cuenta con diez días desde que recibió el proyecto aprobado.",
+        "explicacion": "Incorrecta. Los diez días son el término del alcalde mayor para objetar los proyectos del Concejo (art. 23). Para los acuerdos locales, el alcalde local tiene un término improrrogable de cinco días."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede objetarlo, porque si se cuentan solo días hábiles el término aún no ha vencido.",
+        "explicacion": "Incorrecta. Aun contando solo días hábiles (4, 5, 6, 9 y 10 de noviembre), el quinto día fue el martes 10; el 12 de noviembre el término ya había vencido."
+      },
+      {
+        "id": "C",
+        "texto": "Que el término ya venció, de modo que debe sancionarlo y ordenar su publicación.",
+        "explicacion": "Correcta. Las objeciones deben formularse dentro de los cinco días siguientes al recibo, término improrrogable; vencido sin devolver el proyecto, el alcalde local debe sancionarlo y promulgarlo (art. 81). Del 3 al 12 de noviembre pasaron nueve días calendario y siete hábiles: en cualquier cuenta, el plazo se agotó."
+      },
+      {
+        "id": "D",
+        "texto": "Que ya no puede objetarlo por inconveniencia, pero sí por ilegalidad, que no tiene término.",
+        "explicacion": "Incorrecta. El término improrrogable de cinco días rige para todas las objeciones del alcalde local, sean de inconveniencia o de legalidad."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el proyecto se recibió el 3 de noviembre de 2026 y el alcalde quiere objetarlo el 12. Regla: el art. 81 del Decreto Ley 1421 da al alcalde local un término improrrogable de cinco días siguientes al recibo para objetar, por inconveniencia o por ilegalidad; si no devuelve el proyecto en ese término, debe sancionarlo y promulgarlo. Cálculo: contando días calendario, el plazo venció el 8 de noviembre; contando días hábiles, el 10. Conclusión: ya no puede objetarlo y debe sancionarlo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Alcaldes locales: designación",
+    "subtema": "Momento y sistema para elaborar la terna de alcalde local",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 84, inc. 1",
+      "art. 71"
+    ],
+    "texto_fuente": "Los alcaldes locales serán nombrados por el alcalde mayor de terna elaborada por la correspondiente junta administradora. Para la integración de la terna se empleará el sistema del cuociente electoral. Su elaboración tendrá lugar dentro de los ocho (8) días iniciales del primer período de sesiones de la correspondiente junta. [...] Las juntas administradoras locales se reunirán, ordinariamente, por derecho propio, cuatro veces al año, así: el primero (1o.) de marzo;",
+    "pregunta": "Natalia es secretaria de una Junta Administradora Local elegida para el período 2028-2031, que empezó el 1 de enero de 2028. La junta no ha sido convocada a sesiones extraordinarias. El presidente le pide incluir en el cronograma de la corporación la elaboración de la terna para alcalde local, y le pregunta cuándo y cómo debe hacerse. ¿Qué debe registrar Natalia en el cronograma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En los primeros ocho días de enero de 2028, al iniciar el período, por mayoría de los asistentes.",
+        "explicacion": "Incorrecta. La terna no se elabora al iniciar el período de los ediles, sino en el primer período de sesiones de la junta, que sin convocatoria a extraordinarias es el ordinario del 1 de marzo. Además, se integra por cuociente electoral, no por mayoría."
+      },
+      {
+        "id": "B",
+        "texto": "En los primeros ocho días de enero de 2028, al iniciar el período, por el sistema de cuociente electoral.",
+        "explicacion": "Incorrecta. Acierta en el sistema, pero no en el momento: el 1 de enero empieza el período de los ediles, no su primer período de sesiones, que se instala el 1 de marzo."
+      },
+      {
+        "id": "C",
+        "texto": "En los primeros ocho días de las sesiones que se instalan el 1 de marzo, por mayoría de votos de los asistentes.",
+        "explicacion": "Incorrecta. Acierta en el momento, pero la terna se integra por el sistema del cuociente electoral, no por mayoría de los asistentes."
+      },
+      {
+        "id": "D",
+        "texto": "En los primeros ocho días de las sesiones que se instalan el 1 de marzo, por el sistema de cuociente electoral.",
+        "explicacion": "Correcta. La terna se elabora dentro de los ocho días iniciales del primer período de sesiones de la junta y se integra por cuociente electoral (art. 84). Sin sesiones extraordinarias, ese primer período es el ordinario que empieza el 1 de marzo (art. 71)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la junta inició su período el 1 de enero de 2028 y no ha sido convocada a extraordinarias. Regla: el art. 84 del Decreto Ley 1421 ordena elaborar la terna de alcalde local por cuociente electoral dentro de los ocho días iniciales del primer período de sesiones de la junta, y el art. 71 fija el primer período ordinario del año el 1 de marzo. Conclusión: la terna se hace en los primeros ocho días de las sesiones de marzo, por cuociente electoral.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-BOG-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Estructura administrativa distrital: Sector Hacienda",
+    "subtema": "Entidad que reconoce y paga las cesantías de los servidores distritales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Acuerdo 257 de 2006 (Concejo de Bogotá)",
+    "articulos": [
+      "art. 60",
+      "art. 61",
+      "art. 62, lit. d",
+      "art. 65, inc. 1 y lit. a",
+      "art. 48, lit. c (modificado por el art. 6 del Acuerdo 638 de 2016)"
+    ],
+    "texto_fuente": "Transfórmese el Fondo de Ahorro y Vivienda Distrital - FAVIDI el cual en adelante se denominará Fondo de Prestaciones Económicas, Cesantías y Pensiones - FONCEP establecimiento público del orden distrital, con personería jurídica, autonomía administrativa y patrimonio propio, adscrito a la Secretaría Distrital de Hacienda. [...] El Sector Hacienda está integrado por la Secretaría Distrital de Hacienda, cabeza del Sector y por las siguientes: [...] Establecimiento Público: Fondo de Prestaciones Económicas, Cesantías y Pensiones - FONCEP. [...] d. Formular, orientar y coordinar las políticas en materia pensional, obligaciones contingentes y de cesantías. [...] El objeto del Fondo de Prestaciones Económicas, Cesantías y Pensiones - FONCEP es reconocer y pagar las cesantías y las obligaciones pensionales a cargo del Distrito Capital, el cual asume la administración del Fondo de Pensiones Públicas de Bogotá. [...] a. Reconocer y pagar las cesantías de las servidoras y servidores públicos del Distrito Capital. [...] c). Dirigir y coordinar la política laboral del Distrito Capital",
+    "pregunta": "Sandra es técnica de la ventanilla de radicación de la Secretaría Distrital de Hacienda. Una exservidora de la Secretaría Distrital de Integración Social, cuyas cesantías están a cargo del Distrito, radica allí una solicitud para que le reconozcan y paguen sus cesantías definitivas. Sandra debe registrar en el sistema la entidad a la que corresponde atender la solicitud. ¿Cuál debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El establecimiento público del Sector Hacienda que administra el Fondo de Pensiones Públicas de Bogotá.",
+        "explicacion": "Correcta. Es el Fondo de Prestaciones Económicas, Cesantías y Pensiones (FONCEP), establecimiento público adscrito a la Secretaría Distrital de Hacienda (arts. 60 y 61). Su objeto es reconocer y pagar las cesantías y las obligaciones pensionales a cargo del Distrito, y asume la administración del Fondo de Pensiones Públicas de Bogotá (art. 65); entre sus funciones está reconocer y pagar las cesantías de los servidores del Distrito (art. 65 lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "La propia Secretaría Distrital de Hacienda, que como cabeza del sector fija la política distrital de cesantías.",
+        "explicacion": "Incorrecta. La Secretaría de Hacienda formula, orienta y coordina la política de cesantías (art. 62 lit. d), pero el reconocimiento y el pago están a cargo del FONCEP, el establecimiento público adscrito que administra el Fondo de Pensiones Públicas de Bogotá (art. 65)."
+      },
+      {
+        "id": "C",
+        "texto": "La Secretaría Distrital de Integración Social, que fue la entidad empleadora de la peticionaria.",
+        "explicacion": "Incorrecta. Haber sido la empleadora no le asigna la función de reconocer y pagar las cesantías, que el Acuerdo 257 atribuye al FONCEP."
+      },
+      {
+        "id": "D",
+        "texto": "La Secretaría General de la Alcaldía Mayor, que dirige y coordina la política laboral del Distrito Capital.",
+        "explicacion": "Incorrecta. La Secretaría General dirige y coordina la política laboral del Distrito (art. 48 lit. c), pero no reconoce ni paga cesantías."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se pide el reconocimiento y pago de cesantías a cargo del Distrito. Regla: el Acuerdo 257 de 2006 integra el Sector Hacienda con la Secretaría de Hacienda como cabeza y el FONCEP como establecimiento público adscrito (arts. 60 y 61); a la Secretaría le corresponde la política de cesantías (art. 62 lit. d) y al FONCEP, que además administra el Fondo de Pensiones Públicas de Bogotá, reconocerlas y pagarlas (art. 65). Conclusión: la solicitud corresponde al FONCEP.",
+    "fuente_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=22307",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Concejo Distrital: control político",
+    "subtema": "Moción de observaciones: firmas, oportunidad de la votación y mayoría requerida",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1421 de 1993 y Constitución Política",
+    "articulos": [
+      "art. 15 (Decreto Ley 1421 de 1993)",
+      "art. 323, inc. 1 (Constitución Política, modificado por el art. 1 del Acto Legislativo 3 de 2019)"
+    ],
+    "texto_fuente": "Al finalizar el debate correspondiente y con la firma de por lo menos la tercera parte de los miembros de la Corporación se podrá proponer que el Concejo observe las decisiones del funcionario citado. La propuesta se votará en plenaria entre el tercero y décimo día siguientes a la terminación del debate. Aprobada la moción, por el voto de la mitad más uno de los miembros de la Corporación, se comunicará al Alcalde. [...] El Concejo Distrital se compondrá de cuarenta y cinco (45) concejales.",
+    "pregunta": "Mauricio es profesional especializado de la oficina asesora jurídica de la Secretaría Distrital de Integración Social. El martes 15 de septiembre de 2026 terminó en el Concejo de Bogotá un debate de control político a la secretaria. Al finalizarlo, 17 concejales firmaron una moción de observaciones, que se votó en plenaria el jueves 24 de septiembre: había 36 concejales presentes, 22 votaron a favor y 14 en contra. La secretaria le pide a Mauricio un concepto sobre el resultado. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la moción fue aprobada, porque obtuvo la mayoría de los votos de los concejales presentes.",
+        "explicacion": "Incorrecta. Aplica la regla general de decisión por mayoría de los asistentes. La moción de observaciones exige el voto de la mitad más uno de los miembros de la corporación, no de los presentes."
+      },
+      {
+        "id": "B",
+        "texto": "Que la moción no fue aprobada, porque 22 votos no alcanzan la mayoría absoluta de los 45 miembros.",
+        "explicacion": "Correcta. El Concejo tiene 45 miembros (art. 323 de la Constitución). La moción se propuso con más de la tercera parte (17 firmas; bastaban 15) y se votó el noveno día después del debate, dentro del lapso del tercero al décimo. Pero aprobarla exigía el voto de la mitad más uno de los miembros: la mitad de 45 es 22,5, así que 22 votos no bastan (art. 15)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la votación no es válida, porque debía hacerse dentro de los tres días siguientes al debate.",
+        "explicacion": "Incorrecta. La votación debe hacerse entre el tercero y el décimo día siguientes a la terminación del debate; el 24 de septiembre es el noveno día, y aun contando solo días hábiles es el séptimo."
+      },
+      {
+        "id": "D",
+        "texto": "Que la moción no es válida, porque para proponerla se requería la firma de la mitad de los concejales.",
+        "explicacion": "Incorrecta. Para proponer la moción basta la firma de la tercera parte de los miembros, es decir, 15 de 45; las 17 firmas eran suficientes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: 17 firmas, votación el 24 de septiembre (noveno día tras el debate del 15) y 22 votos a favor con 36 presentes. Regla: el art. 15 del Decreto Ley 1421 exige la firma de un tercio de los miembros, votación entre el tercero y el décimo día siguientes al debate y aprobación por la mitad más uno de los miembros; el Concejo tiene 45 concejales (art. 323 C.P.). Cálculo: un tercio de 45 = 15 (se cumple); la mitad de 45 = 22,5, así que 22 votos no alcanzan. Conclusión: la moción no fue aprobada.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-BOG-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Concejo Distrital: sanción y objeciones",
+    "subtema": "Trámite cuando el Concejo rechaza objeciones por ilegalidad",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 23, inc. 2",
+      "art. 24",
+      "art. 25"
+    ],
+    "texto_fuente": "Dentro de los diez (10) días siguientes al recibo del proyecto, el Alcalde podrá objetarle por motivos de inconveniencia inconstitucionalidad o ilegalidad. [...] Las objeciones sólo podrán ser rechazadas por el voto de la mitad más uno de los miembros de la Corporación. [...] En caso de que el Concejo las rechazara, el Alcalde deberá sancionar el proyecto, Si no lo hiciere, el Presidente de la Corporación sancionará y promulgará el acuerdo. [...] Si las objeciones fueren por razones de inconstitucionalidad o ilegalidad y el Concejo las rechazara, el proyecto será enviado por el Alcalde al Tribunal Administrativo que tenga jurisdicción en el Distrito Capital, dentro de los diez (10) días siguientes, acompañado de un escrito explicativo de las objeciones y de los documentos que tuvo en cuenta el Concejo para rechazarlas. Si el Tribunal las declarare fundadas, se archivará el proyecto. Si decidiera que son infundadas, el Alcalde lo sancionará dentro de los tres (3) días siguientes al recibo de la comunicación respectiva.",
+    "pregunta": "Patricia es asesora de la Secretaría Jurídica Distrital. El alcalde mayor objetó a tiempo un proyecto de acuerdo aprobado por el Concejo, por considerar que contraría una ley de la República. Con el informe de la comisión ad hoc, la plenaria del Concejo rechazó las objeciones con 27 votos de sus 45 miembros. El alcalde le pide a Patricia indicar el paso siguiente. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El alcalde debe sancionar el proyecto, y si no lo hace, lo sancionará el presidente del Concejo.",
+        "explicacion": "Incorrecta. Es la consecuencia del rechazo de las objeciones por inconveniencia (art. 24). Cuando las objeciones son de ilegalidad o inconstitucionalidad, el rechazo del Concejo lleva el proyecto al Tribunal Administrativo."
+      },
+      {
+        "id": "B",
+        "texto": "El presidente del Concejo debe remitir el proyecto al Tribunal Administrativo en los tres días siguientes.",
+        "explicacion": "Incorrecta. Quien envía el proyecto al Tribunal es el alcalde, no el presidente del Concejo, y lo hace dentro de los diez días siguientes. Los tres días son el plazo para sancionar si el Tribunal declara infundadas las objeciones."
+      },
+      {
+        "id": "C",
+        "texto": "El alcalde debe remitir el proyecto al Consejo de Estado en los tres días siguientes, con sus objeciones.",
+        "explicacion": "Incorrecta. La norma asigna la decisión al Tribunal Administrativo con jurisdicción en el Distrito Capital, no al Consejo de Estado, y el término para enviarlo es de diez días."
+      },
+      {
+        "id": "D",
+        "texto": "El alcalde debe llevarlo al Tribunal Administrativo dentro de diez días, sustentando las objeciones.",
+        "explicacion": "Correcta. Las objeciones se rechazaron válidamente: 27 votos superan la mitad más uno de 45 (art. 23). Como eran de legalidad, el alcalde debe enviar el proyecto al Tribunal Administrativo dentro de los diez días siguientes, con un escrito explicativo y los documentos que tuvo en cuenta el Concejo (art. 25)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las objeciones eran de legalidad y el Concejo las rechazó con 27 de 45 votos. Regla: el art. 23 del Decreto Ley 1421 exige la mitad más uno de los miembros para rechazar objeciones (se cumplió), y el art. 25 ordena que, rechazadas las objeciones de inconstitucionalidad o ilegalidad, el alcalde envíe el proyecto al Tribunal Administrativo dentro de los diez días siguientes, con un escrito explicativo. La sanción obligatoria sigue al rechazo de objeciones por inconveniencia (art. 24). Conclusión: enviar el proyecto al Tribunal.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Concejo Distrital: iniciativa de los acuerdos",
+    "subtema": "Iniciativa de las JAL y reserva del alcalde mayor para crear entidades",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 12, num. 9",
+      "art. 13",
+      "art. 21",
+      "art. 55, inc. 1",
+      "art. 69, num. 8 (modificado por el art. 8 de la Ley 2116 de 2021)"
+    ],
+    "texto_fuente": "9. Crear, suprimir y fusionar establecimientos públicos y empresas industriales y comerciales [...] El personero, el contralor y las juntas administradoras los pueden presentar en materias relacionadas con sus atribuciones. [...] Sólo podrán ser dictados o reformados a iniciativa del alcalde los acuerdos a que se refieren los ordinales 2o., [...] 4o., 5o., 8o., 9o., [...] Todo proyecto de acuerdo debe referirse a una misma materia [...] Los proyectos deben ir acompañados de una exposición de motivos [...] Corresponde al Concejo Distrital, a iniciativa del alcalde mayor, crear, suprimir y fusionar secretarías y departamentos administrativos, establecimientos públicos, empresas industriales o comerciales y entes universitarios autónomos [...] 8. Presentar al Concejo Distrital proyectos de acuerdo relacionados con la localidad que no sean de la iniciativa privativa del Alcalde Mayor.",
+    "pregunta": "Ricardo es profesional de la Secretaría Distrital de Gobierno y presta asesoría jurídica a las juntas administradoras locales. Una junta aprobó presentar ante el Concejo de Bogotá un proyecto de acuerdo para crear un establecimiento público distrital que administre los escenarios culturales de su localidad, y le pide a Ricardo revisar la viabilidad de la iniciativa antes de radicarla. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede presentarlo, porque las juntas tienen iniciativa en los asuntos que conciernen a su localidad.",
+        "explicacion": "Incorrecta. La iniciativa de las juntas ante el Concejo se limita a proyectos sobre la localidad que no sean de iniciativa privativa del alcalde mayor (art. 69 num. 8), y crear establecimientos públicos lo es (arts. 13 y 55)."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede presentarlo, si va acompañado de una exposición de motivos y se refiere a una sola materia.",
+        "explicacion": "Incorrecta. La exposición de motivos y la unidad de materia son requisitos de todo proyecto (art. 21), pero no suplen la falta de iniciativa: este proyecto debe provenir del alcalde mayor."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede presentarlo, porque crear esa clase de entidad solo se tramita si la propone el alcalde mayor.",
+        "explicacion": "Correcta. El Concejo crea establecimientos públicos a iniciativa del alcalde mayor (arts. 13 y 55). Las juntas solo pueden presentar proyectos relacionados con la localidad que no sean de iniciativa privativa del alcalde (art. 69 num. 8)."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede presentarlo, porque ante el Concejo solo tienen iniciativa los concejales y el alcalde mayor.",
+        "explicacion": "Incorrecta. Las juntas administradoras, el personero y el contralor pueden presentar proyectos de acuerdo en materias relacionadas con sus atribuciones (art. 13). Lo que falla aquí es la materia, reservada al alcalde."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: una junta administradora quiere presentar un proyecto para crear un establecimiento público distrital. Regla: los arts. 13 y 55 del Decreto Ley 1421 reservan al alcalde mayor la iniciativa para crear establecimientos públicos; el art. 13 permite a las juntas presentar proyectos en materias de sus atribuciones, y el art. 69 num. 8 (mod. Ley 2116 de 2021) las limita a proyectos sobre la localidad que no sean de iniciativa privativa del alcalde. Conclusión: la junta no puede presentar ese proyecto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Alcalde Mayor: faltas absolutas",
+    "subtema": "Elección o designación del reemplazo según el tiempo que falta del período",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Constitución Política y Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 323, inc. 5 (Constitución Política, modificado por el art. 1 del Acto Legislativo 3 de 2019)",
+      "art. 42, num. 3 (Decreto Ley 1421 de 1993)"
+    ],
+    "texto_fuente": "Siempre que se presente falta absoluta a más de dieciocho (18) meses de la terminación del período, se elegirá alcalde mayor para el tiempo que reste. En caso de que faltare menos de dieciocho (18) meses, el Presidente de la República designará alcalde mayor para lo que reste del período, respetando el partido, grupo político o coalición por el cual fue inscrito el alcalde elegido. [...] Son faltas absolutas del alcalde mayor: [...] 3. La declaratoria de nulidad de su elección.",
+    "pregunta": "Laura es asesora del despacho de la Secretaría Distrital de Gobierno y analiza un caso hipotético: el período del alcalde mayor va del 1 de enero de 2024 al 31 de diciembre de 2027, y el 16 de marzo de 2026 queda en firme la sentencia que declara nula su elección porque se inscribió estando inhabilitado. Le piden un concepto sobre cómo debe proveerse el cargo para el resto del período. ¿Qué debe concluir según el art. 323 de la Constitución vigente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Presidente de la República designa alcalde para lo que resta, porque ya transcurrieron más de 18 meses del período.",
+        "explicacion": "Incorrecta. Cuenta los 18 meses desde el inicio del período, como lo hacía el art. 48 del Decreto Ley 1421. Prevalece el art. 323 de la Constitución, reformado en 2019, que los cuenta hacia la terminación del período: del 16 de marzo de 2026 al 31 de diciembre de 2027 faltan unos 21 meses y medio, más de 18."
+      },
+      {
+        "id": "B",
+        "texto": "Debe hacerse una nueva elección, y quien la gane gobernará durante el tiempo que falta del período.",
+        "explicacion": "Correcta. La nulidad de la elección es falta absoluta (art. 42 num. 3 del Decreto Ley 1421). Según el art. 323 de la Constitución, si la falta absoluta ocurre a más de 18 meses de la terminación del período, se elige alcalde para el tiempo que reste. Del 16 de marzo de 2026 al 31 de diciembre de 2027 faltan unos 21 meses y medio."
+      },
+      {
+        "id": "C",
+        "texto": "Asume el candidato que quedó segundo en la votación, y gobierna hasta que se cumpla el período.",
+        "explicacion": "Incorrecta. La nulidad de la elección es una falta absoluta (art. 42 num. 3 del Decreto Ley 1421) y no lleva al segundo más votado al cargo. Según cuánto falte del período, hay nueva elección o designación del Presidente (art. 323 de la Constitución). La votación entre los dos más votados es la segunda vuelta de la elección ordinaria, no la regla de la falta absoluta."
+      },
+      {
+        "id": "D",
+        "texto": "El Concejo Distrital elige, de una terna del mismo partido, al alcalde que terminará el período.",
+        "explicacion": "Incorrecta. El Concejo no elige alcalde mayor. Según cuánto falte del período, hay nueva elección o designación del Presidente respetando el partido, grupo o coalición del alcalde elegido."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la nulidad de la elección queda en firme el 16 de marzo de 2026 y el período termina el 31 de diciembre de 2027. Regla: la nulidad de la elección es falta absoluta (art. 42 num. 3 del Decreto Ley 1421), y el art. 323 de la Constitución (mod. A.L. 3 de 2019) ordena elegir alcalde para el tiempo restante si la falta ocurre a más de 18 meses de la terminación del período; si faltan menos, designa el Presidente. Cálculo: faltan unos 21,5 meses. Conclusión: nueva elección.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35,
+      "nota": "La opción A aplica el art. 48 del Decreto Ley 1421 (períodos de 3 años), desplazado por el art. 323 de la Constitución reformado; el enunciado pide la regla constitucional vigente."
+    }
+  },
+  {
+    "id": "TC-BOG-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Alcaldes locales: faltas",
+    "subtema": "Provisión de la falta absoluta de un alcalde local cuando faltan menos de 18 meses del período",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 85 (modificado por el art. 10 de la Ley 2116 de 2021)",
+      "art. 84, inc. 2"
+    ],
+    "texto_fuente": "Las faltas absolutas y temporales de los alcaldes locales serán provistas por las personas que designe el alcalde mayor. En el primer caso, solicitará de la junta respectiva la elaboración de una terna, salvo cuando falten 18 meses para la terminación del periodo. Esta terna se conformará por aquellas personas que hubiesen pasado el procesó meritocrático para el respectivo periodo gubernamental, en caso en que dicho listado no cuente con 3 o más personas se deberá cumplir con un nuevo; proceso meritocrático. [...] El alcalde mayor podrá remover en cualquier tiempo los alcaldes locales. En tal caso la respectiva junta integrará nueva terna y la enviará al alcalde mayor para lo de su competencia.",
+    "pregunta": "Jorge es profesional especializado de la Secretaría Distrital de Gobierno. El 14 de septiembre de 2026 el alcalde mayor aceptó la renuncia de una alcaldesa local, lo que dejó el cargo en falta absoluta. El período de gobierno distrital termina el 31 de diciembre de 2027, y de la lista del proceso meritocrático de ese período solo quedan dos personas sin designar. Le piden a Jorge proyectar el trámite para proveer la vacante por el resto del período. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir a la junta una terna con las dos personas de la lista meritocrática y una tercera escogida por ella.",
+        "explicacion": "Incorrecta. Si la terna procediera, solo podría conformarse con personas que superaron el proceso meritocrático, y con menos de tres habría que hacer un nuevo proceso. Pero aquí no procede la terna, porque faltan menos de 18 meses para terminar el período."
+      },
+      {
+        "id": "B",
+        "texto": "Abrir un nuevo proceso meritocrático, porque la lista vigente ya no tiene tres personas disponibles.",
+        "explicacion": "Incorrecta. El nuevo proceso meritocrático se exige para conformar la terna cuando la lista no tiene tres personas. Como faltan menos de 18 meses para terminar el período, no hay que pedir terna."
+      },
+      {
+        "id": "C",
+        "texto": "Que el alcalde mayor designe directamente a quien la reemplace, sin pedir terna a la junta.",
+        "explicacion": "Correcta. Las faltas absolutas de los alcaldes locales las provee el alcalde mayor, que pide terna a la junta salvo cuando falten 18 meses para la terminación del período (art. 85). Del 14 de septiembre de 2026 al 31 de diciembre de 2027 faltan unos 15 meses y medio, así que designa directamente."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir a la junta una nueva terna por cuociente electoral, que elabore en los ocho días siguientes.",
+        "explicacion": "Incorrecta. La nueva terna de la junta corresponde a la remoción del alcalde local (art. 84). La falta absoluta se rige por el art. 85, que excluye la terna cuando faltan 18 meses para terminar el período, como aquí, donde faltan menos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la falta absoluta ocurre el 14 de septiembre de 2026 y el período de gobierno termina el 31 de diciembre de 2027. Regla: el art. 85 del Decreto Ley 1421 (mod. Ley 2116 de 2021) ordena al alcalde mayor proveer las faltas absolutas de los alcaldes locales pidiendo terna a la junta, salvo cuando falten 18 meses para terminar el período; la terna sale de la lista meritocrática o de un nuevo proceso. Cálculo: faltan unos 15,5 meses. Conclusión: el alcalde mayor designa sin terna.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-BOG-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Localidades: recursos",
+    "subtema": "Participación mínima de las localidades en los ingresos corrientes de la administración central",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 89, inc. 1 y 2 (modificado por el art. 12 de la Ley 2116 de 2021)"
+    ],
+    "texto_fuente": "no menos del doce por ciento (12%) de los ingresos corrientes del presupuesto de la administración central del Distrito, se asignará a las localidades teniendo en cuenta las necesidades básicas insatisfechas de la población de cada una de ellas y según los índices que para el efecto establezca la entidad distrital de Planeación. Para los efectos aquí previstos no se tendrán en cuenta los ingresos corrientes de los establecimientos públicos ni las utilidades de las empresas industriales y comerciales que se apropien en el presupuesto distrital. [...] Igualmente el concejo a iniciativa del alcalde podrá reducir en cualquier tiempo esta participación, respetando en todo caso el porcentaje mínimo previsto en el inciso anterior.",
+    "pregunta": "Carolina es profesional de la Dirección Distrital de Presupuesto de la Secretaría Distrital de Hacienda. Para el proyecto de presupuesto de 2027 se estiman ingresos corrientes de la administración central por $15,6 billones, ingresos corrientes de los establecimientos públicos por $2,4 billones y utilidades de empresas industriales y comerciales del Distrito por $0,8 billones, que se apropiarán en el presupuesto. Las localidades reciben hoy el 15%, y el alcalde propone al Concejo bajar esa participación al 10% por la caída del recaudo. ¿Cuál es el monto mínimo que, según el estatuto, debe asignarse a las localidades en 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1,872 billones",
+        "explicacion": "Correcta. El Concejo, a iniciativa del alcalde, puede reducir la participación, pero respetando el mínimo del 12% (art. 89). La base son solo los ingresos corrientes de la administración central, sin los de los establecimientos públicos ni las utilidades de las empresas: 12% × $15,6 billones = $1,872 billones."
+      },
+      {
+        "id": "B",
+        "texto": "$1,560 billones",
+        "explicacion": "Incorrecta. Aplica el 10% propuesto (10% × $15,6 billones), que está por debajo del mínimo del 12% que la norma obliga a respetar."
+      },
+      {
+        "id": "C",
+        "texto": "$2,256 billones",
+        "explicacion": "Incorrecta. Aplica el 12% sobre $18,8 billones: suma a la base los ingresos de los establecimientos públicos y las utilidades de las empresas, que el art. 89 excluye."
+      },
+      {
+        "id": "D",
+        "texto": "$2,340 billones",
+        "explicacion": "Incorrecta. Mantiene el 15% actual (15% × $15,6 billones). La participación sí puede reducirse, a iniciativa del alcalde, siempre que no baje del 12%."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la base de cálculo son $15,6 billones (ingresos corrientes de la administración central) y se propone bajar la participación del 15% al 10%. Regla: el art. 89 del Decreto Ley 1421 (mod. Ley 2116 de 2021) asigna a las localidades no menos del 12% de esos ingresos, excluye los de los establecimientos públicos y las utilidades de las empresas industriales y comerciales, y permite reducir la participación respetando ese mínimo. Cálculo: 12% × 15,6 = 1,872. Conclusión: $1,872 billones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-BOG-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Presupuesto distrital: vigencias futuras",
+    "subtema": "Vigencias futuras ordinarias que superan el período de gobierno",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 2",
+      "art. 143A (adicionado por el art. 14 de la Ley 2116 de 2021)"
+    ],
+    "texto_fuente": "El Distrito Capital como entidad territorial está sujeto al régimen político, administrativo y fiscal que para él establecen expresamente la Constitución, el presente estatuto y las leyes especiales que para su organización y funcionamiento se dicten. En ausencia de las normas anteriores, se somete a las disposiciones constitucionales y legales vigentes para los municipios. [...] El Confis Distrital podrá autorizar la asunción de obligaciones que afectan presupuestos de vigencias futuras de funcionamiento o inversión cuando su ejecución se inicie con el presupuesto de la vigencia en curso y el objeto del compromiso se lleve a cabo en cada una de ellas siempre y cuando se cumpla que: [...] b) Como mínimo, de las vigencias futuras que se soliciten se deberá contar con apropiación del quince por ciento (15%) en la vigencia fiscal en la que estas sean autorizadas; c) Se disponga del concepto favorable de la Secretaría Distrital de Hacienda y de la Secretaría Distrital de Planeación, cuando se trate de proyectos de inversión. d) Cuando se trate de proyectos de inversión con cofinanciación de la nación, deberá obtenerse el concepto previo y favorable del Departamento Nacional de Planeación. La autorización por parte del Confis para comprometer presupuesto con cargo a vigencias futuras no podrá superar el respectivo periodo de gobierno. Se exceptúan los proyectos de gastos de inversión en aquellos casos en que el Consejo de Gobierno previamente los declare de importancia estratégica.",
+    "pregunta": "Esteban es profesional especializado de la Dirección Distrital de Presupuesto. En 2026 una secretaría pide al Confis Distrital autorizar vigencias futuras ordinarias para un proyecto de inversión que empieza a ejecutarse con el presupuesto de 2026: $30.000 millones para 2027 y $18.000 millones para 2028. El proyecto tiene apropiados $8.000 millones en 2026, cuenta con conceptos favorables de las secretarías de Hacienda y de Planeación, no tiene cofinanciación de la Nación y sus montos consultan el Marco Fiscal de Mediano Plazo. El período de gobierno termina el 31 de diciembre de 2027. Según el Decreto Ley 1421 de 1993 (art. 143A), ¿qué falta para que el Confis pueda autorizar las vigencias futuras?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Elevar la apropiación de 2026 a $8.400 millones, equivalentes al 15% del costo total del proyecto.",
+        "explicacion": "Incorrecta. El 15% se calcula sobre las vigencias futuras solicitadas ($48.000 millones), no sobre el costo total del proyecto: se necesitan $7.200 millones y hay $8.000 millones apropiados."
+      },
+      {
+        "id": "B",
+        "texto": "Obtener el concepto previo y favorable del Departamento Nacional de Planeación sobre el proyecto.",
+        "explicacion": "Incorrecta. El concepto del Departamento Nacional de Planeación se exige para proyectos de inversión con cofinanciación de la Nación, y este no la tiene."
+      },
+      {
+        "id": "C",
+        "texto": "Obtener la autorización del Concejo Distrital, porque los compromisos se extienden más allá de 2027.",
+        "explicacion": "Incorrecta. Aplica la regla general de las entidades territoriales (art. 12 de la Ley 819 de 2003), según la cual las vigencias futuras las autoriza el concejo. Pero el Distrito Capital se rige primero por su estatuto especial, y solo a falta de norma especial por las disposiciones de los municipios (art. 2). El art. 143A atribuye la autorización de las vigencias futuras ordinarias al Confis Distrital, y la excepción para superar el período de gobierno es una declaración previa del Consejo de Gobierno, no una autorización del Concejo."
+      },
+      {
+        "id": "D",
+        "texto": "Una declaración anterior del Consejo de Gobierno que califique el proyecto como estratégico.",
+        "explicacion": "Correcta. Se cumplen el 15% (15% × $48.000 millones = $7.200 millones, y hay $8.000 millones), los conceptos de Hacienda y Planeación y la consulta al Marco Fiscal. Pero la vigencia de 2028 supera el período de gobierno, lo que solo se admite en proyectos de inversión que el Consejo de Gobierno haya declarado previamente de importancia estratégica (art. 143A)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se piden $48.000 millones para 2027 y 2028, con $8.000 millones apropiados en 2026, y el período de gobierno termina en 2027. Regla: en el Distrito rige su estatuto especial (art. 2); el art. 143A (adic. Ley 2116 de 2021) exige apropiar al menos el 15% de las vigencias futuras solicitadas y conceptos de Hacienda y Planeación, y no permite superar el período de gobierno salvo en proyectos de inversión declarados antes de importancia estratégica por el Consejo de Gobierno. Cálculo: 15% × 48.000 = 7.200 ≤ 8.000. Conclusión: falta esa declaración.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-BOG-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Personería Distrital",
+    "subtema": "Renuncia del personero cuando el Concejo no está reunido",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 2",
+      "art. 38, num. 11",
+      "art. 16, inc. 2",
+      "art. 98",
+      "art. 42, num. 2",
+      "art. 17"
+    ],
+    "texto_fuente": "El Distrito Capital como entidad territorial está sujeto al régimen político, administrativo y fiscal que para él establecen expresamente la Constitución, el presente estatuto y las leyes especiales que para su organización y funcionamiento se dicten. En ausencia de las normas anteriores, se somete a las disposiciones constitucionales y legales vigentes para los municipios. [...] 11. Conceder licencias y aceptar la renuncia a los funcionarios cuyos nombramientos corresponda al Concejo Distrital, cuando éste no se encuentre reunido, y nombrar interinamente sus reemplazos. [...] En los casos de falta absoluta, la elección podrá hacerse en cualquier época de sesiones ordinarias o extraordinarias. Si el Concejo no se hallare reunido, el Alcalde Mayor proveerá el cargo interinamente. [...] Son faltas y absolutas y temporales del personero las previstas para el alcalde mayor en el presente decreto. En los casos de falta absoluta, el Concejo elegirá personero para el resto del período. En las temporales, desempeñará el cargo el funcionario de la Personería que le siga en jerarquía. [...] 2. La renuncia aceptada. [...] El Contralor y el Personero que ejerzan el cargo en propiedad sólo podrán ser suspendidos o removidos antes del vencimiento de su período por Sentencia judicial o decisión de la Procuraduría General de la Nación.",
+    "pregunta": "Adriana es asesora jurídica del despacho del alcalde mayor. El viernes 18 de diciembre de 2026 el personero distrital presentó su renuncia. Las sesiones ordinarias de noviembre del Concejo, con su prórroga, se clausuraron el 10 de diciembre, y el alcalde no ha convocado a sesiones extraordinarias. Le piden a Adriana indicar, según el Estatuto Orgánico de Bogotá, quién decide sobre la renuncia y cómo se cubre el cargo mientras el Concejo hace la elección. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La mesa directiva del Concejo acepta la renuncia, y asume el funcionario que sigue en jerarquía en la Personería.",
+        "explicacion": "Incorrecta. Traslada al Distrito la regla general de los municipios (art. 172 de la Ley 136 de 1994), que deja la renuncia del personero a la mesa directiva del concejo. Pero el Distrito se rige primero por su estatuto especial, y solo a falta de norma especial por las disposiciones de los municipios (art. 2); el estatuto da esa atribución al alcalde mayor cuando el Concejo no está reunido (art. 38 num. 11). La segunda parte es la regla de las faltas temporales del personero (art. 98), y la renuncia aceptada es falta absoluta (art. 42 num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "El alcalde mayor acepta la renuncia y nombra un personero interino mientras el Concejo hace la elección.",
+        "explicacion": "Correcta. Cuando el Concejo no está reunido, el alcalde mayor acepta la renuncia de los funcionarios que nombra el Concejo y designa interinamente a su reemplazo (art. 38 num. 11; art. 16). Después, el Concejo elegirá personero para el resto del período (art. 98)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el Concejo puede aceptarla en febrero; entre tanto asume el funcionario que sigue en jerarquía en la Personería.",
+        "explicacion": "Incorrecta. La renuncia no tiene que esperar a las sesiones de febrero: en receso del Concejo la acepta el alcalde mayor. Y el reemplazo por el funcionario que sigue en jerarquía es propio de las faltas temporales."
+      },
+      {
+        "id": "D",
+        "texto": "El Procurador General de la Nación acepta la renuncia y designa un reemplazo hasta que se haga la elección.",
+        "explicacion": "Incorrecta. La Procuraduría puede suspender o remover al personero en propiedad (art. 17), pero no acepta su renuncia ni designa su reemplazo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el personero renuncia el 18 de diciembre de 2026, con el Concejo en receso y sin convocatoria a extraordinarias. Regla: en el Distrito prima su estatuto sobre el régimen municipal (art. 2). El art. 38 num. 11 del Decreto Ley 1421 faculta al alcalde mayor para aceptar la renuncia de los funcionarios que nombra el Concejo cuando este no está reunido y nombrar interinamente a su reemplazo; el art. 16 lo reitera, y el art. 98 deja al Concejo la elección para el resto del período. Conclusión: el alcalde mayor acepta y nombra un interino.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-BOG-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Estructura administrativa distrital: instancias de coordinación",
+    "subtema": "Integración del Comité Sectorial de Desarrollo Administrativo del Sector Integración Social",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Acuerdo 257 de 2006 (Concejo de Bogotá)",
+    "articulos": [
+      "art. 37",
+      "art. 88",
+      "art. 34"
+    ],
+    "texto_fuente": "Cada Comité Sectorial de Desarrollo Administrativo estará integrado por la secretaria o secretario, cabeza de sector, y las directoras o directores, gerentes o jefes de organismo o entidad que lo conforman. Así mismo, cuando se considere pertinente, podrán asistir a estos comités los delegados de organismos o entidades distritales de otros Sectores Administrativos de Coordinación. [...] El Sector Integración Social está conformado por la Secretaría Distrital de Integración Social, cabeza de Sector, y el Instituto para la Protección de la Niñez y la Juventud, IDIPRON; que le está adscrito. [...] El Consejo de Gobierno Distrital es la máxima instancia de formulación de políticas, estará conformado por el Alcalde o Alcaldesa Mayor, quien lo preside, las secretarias o secretarios de despacho, cabezas de Sector Administrativo de Coordinación",
+    "pregunta": "Valentina es profesional de la oficina de planeación de la Secretaría Distrital de Integración Social y prepara la sesión del Comité Sectorial de Desarrollo Administrativo del sector, que hará seguimiento a una estrategia para niños y jóvenes en riesgo. Como la estrategia toca asuntos de salud y de educación, la secretaria quiere que esos sectores participen. ¿Cómo debe quedar la citación al comité?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como integrantes, la secretaria de Integración Social y el director del IDIPRON; Salud y Educación pueden asistir mediante delegados.",
+        "explicacion": "Correcta. El comité sectorial lo integran la secretaria cabeza de sector y los directores de las entidades del sector (art. 37), que son la Secretaría de Integración Social y el IDIPRON, adscrito (art. 88). Los delegados de otros sectores pueden asistir cuando se considere pertinente."
+      },
+      {
+        "id": "B",
+        "texto": "Como integrantes, la secretaria de Integración Social y los secretarios de Salud y de Educación, que se suman de forma permanente.",
+        "explicacion": "Incorrecta. Los secretarios de otros sectores no integran el comité sectorial; sus entidades pueden asistir mediante delegados cuando se considere pertinente."
+      },
+      {
+        "id": "C",
+        "texto": "Como integrantes, el alcalde mayor, que lo preside, y los secretarios cabeza de los sectores que intervienen en la estrategia.",
+        "explicacion": "Incorrecta. Describe el Consejo de Gobierno Distrital, presidido por el alcalde mayor y conformado por los secretarios cabeza de sector (art. 34), no el comité sectorial."
+      },
+      {
+        "id": "D",
+        "texto": "Como integrantes, el director del IDIPRON, que lo preside como entidad ejecutora, y los secretarios de Salud y de Educación.",
+        "explicacion": "Incorrecta. El comité es la instancia del sector cuya cabeza es la Secretaría de Integración Social; el IDIPRON lo integra como entidad adscrita, pero no lo encabeza, y Salud y Educación no son miembros."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el comité es el del Sector Integración Social y se quiere la participación de Salud y Educación. Regla: el art. 37 del Acuerdo 257 de 2006 integra cada comité sectorial con la secretaría cabeza de sector y los directores de las entidades que lo conforman, y permite la asistencia de delegados de otros sectores cuando sea pertinente; el art. 88 conforma el sector con la Secretaría de Integración Social y el IDIPRON. Conclusión: integran la secretaria y el director del IDIPRON; Salud y Educación asisten por delegados.",
+    "fuente_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=22307",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Control fiscal distrital",
+    "subtema": "Control posterior y selectivo de la Contraloría Distrital frente a la contratación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Ley 1421 de 1993",
+    "articulos": [
+      "art. 105, inc. 2 (modificado por el art. 164 del Decreto Ley 403 de 2020)",
+      "art. 146"
+    ],
+    "texto_fuente": "Dicho control se ejercerá en forma posterior y selectiva, conforme a las técnicas de auditoría, e incluirá el ejercicio de un control financiero, de gestión y de resultados, fundado en la eficiencia, la economía, la equidad y la valoración de los costos ambientales, en los términos que señalen la ley y el Código Fiscal. [...] Las corporaciones públicas, las juntas directivas, las juntas administradoras y los organismos de control no podrán intervenir ni inmiscuirse en el proceso de selección de los contratistas ni en la adjudicación, celebración, ejecución y liquidación de los contratos.",
+    "pregunta": "Hernán es profesional de la subdirección de contratación de la Secretaría Distrital de Hacienda. Para un proceso de selección de alto valor, el ordenador del gasto quiere enviar a la Contraloría de Bogotá el borrador del contrato, para que conceptúe sobre su legalidad antes de firmarlo, e invitar a un funcionario de la Contraloría a integrar el comité evaluador de las ofertas. ¿Qué debe recomendar Hernán?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enviar el borrador para el concepto de legalidad, pero no invitar al funcionario al comité evaluador.",
+        "explicacion": "Incorrecta. La Contraloría ejerce el control fiscal en forma posterior y selectiva (art. 105); no emite conceptos previos sobre la legalidad de los contratos que la entidad va a firmar."
+      },
+      {
+        "id": "B",
+        "texto": "Invitar al funcionario al comité evaluador, con voz y sin voto, pero no enviar el borrador del contrato.",
+        "explicacion": "Incorrecta. Los organismos de control no pueden intervenir en el proceso de selección de contratistas (art. 146), tampoco con voz y sin voto en el comité evaluador."
+      },
+      {
+        "id": "C",
+        "texto": "Hacer ambas cosas, porque la vigilancia fiscal de la Contraloría cubre todo el proceso contractual.",
+        "explicacion": "Incorrecta. La vigilancia de la gestión fiscal es posterior y selectiva (art. 105), y el art. 146 impide a los organismos de control intervenir en la selección, adjudicación y celebración de los contratos, sin perjuicio de sus funciones de vigilancia."
+      },
+      {
+        "id": "D",
+        "texto": "No hacer ninguna: la Contraloría revisa después, sobre una muestra, y no participa en la selección.",
+        "explicacion": "Correcta. El control fiscal de la Contraloría Distrital se ejerce en forma posterior y selectiva (art. 105, mod. Decreto Ley 403 de 2020), y los organismos de control no pueden intervenir en la selección de contratistas ni en la celebración de los contratos (art. 146)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se quiere un concepto previo de la Contraloría sobre el contrato y la participación de un funcionario suyo en el comité evaluador. Regla: el art. 105 del Decreto Ley 1421 (mod. Decreto Ley 403 de 2020) dispone que el control fiscal se ejerce en forma posterior y selectiva, y el art. 146 prohíbe a los organismos de control intervenir en la selección de contratistas y en la adjudicación, celebración, ejecución y liquidación de los contratos. Conclusión: no debe hacerse ninguna de las dos cosas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1421_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  }
+]

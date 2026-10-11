@@ -79,6 +79,9 @@ export const MODULE_SECTIONS = [
       'Carrera y Gestión Institucional (DIAN)',
       'Pedagogía y Normativa Docente',
       'Gestión Escolar (Directivos Docentes)',
+      'Gestión Ambiental',
+      'Distrito Capital (Bogotá)',
+      'Políticas Sociales y Enfoque Diferencial',
     ],
   },
   {
@@ -120,6 +123,9 @@ export const AREAS_FUNCIONALES = [
   { id: 'dian_institucional', label: 'DIAN: carrera y gestión', frase: 'carrera y gestión de la DIAN', modulo: 'Carrera y Gestión Institucional (DIAN)' },
   { id: 'docente', label: 'Docente', frase: 'pedagogía y normativa docente', modulo: 'Pedagogía y Normativa Docente' },
   { id: 'directivo_docente', label: 'Directivo docente', frase: 'gestión escolar', modulo: 'Gestión Escolar (Directivos Docentes)' },
+  { id: 'ambiental', label: 'Ambiental (CAR)', frase: 'gestión ambiental', modulo: 'Gestión Ambiental' },
+  { id: 'bogota', label: 'Bogotá D.C.', frase: 'régimen del Distrito Capital', modulo: 'Distrito Capital (Bogotá)' },
+  { id: 'social', label: 'Políticas sociales', frase: 'políticas sociales y enfoque diferencial', modulo: 'Políticas Sociales y Enfoque Diferencial' },
 ] as const
 
 export type AreaId = (typeof AREAS_FUNCIONALES)[number]['id']

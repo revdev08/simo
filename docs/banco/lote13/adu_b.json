@@ -57,7 +57,7 @@
   },
   {
     "id": "TC-ADU-023",
-    "version": 1,
+    "version": 2,
     "estado": "beta",
     "capa": 4,
     "eje": "dian_aduanero",
@@ -72,13 +72,13 @@
     "texto_fuente": "4. Poseer y soportar contablemente el patrimonio líquido mínimo exigido para el respectivo nivel de agencia de aduanas, así: [...] 4.2 Agencia de aduanas nivel 2: Diecinueve mil ochocientas sesenta y nueve (19.869) Unidades de Valor Tributario (UVT). [...] El valor de la Unidad de Valor Tributario (UVT) señalada en este artículo, será el vigente al momento de la presentación de la solicitud. [...] El patrimonio líquido a que se refiere el numeral 4 del artículo 36 del presente decreto y el parágrafo 2 del mismo artículo, se determina restando del patrimonio bruto poseído por la persona jurídica el monto de los pasivos a cargo de la misma. Para estos efectos, no se tendrán en cuenta aquellos activos representados en casa o apartamento destinados a vivienda o habitación, inmuebles rurales, cuentas por cobrar a socios o accionistas, obras de arte e intangibles. Así mismo, no se tendrán en cuenta los activos que no estén vinculados a la actividad de agenciamiento aduanero en el desarrollo de su objeto social.",
     "pregunta": "En octubre de 2026, una gestora de la DIAN estudia la solicitud de una sociedad que quiere ser autorizada como agencia de aduanas nivel 2. Según sus estados financieros, el patrimonio bruto es de $1.640 millones y los pasivos suman $490 millones. Entre los activos figuran un apartamento en el que vive el gerente ($120 millones), obras de arte ($50 millones), cuentas por cobrar a los socios ($40 millones), una marca registrada ($40 millones) y la oficina en la que la sociedad atiende a sus clientes ($50 millones). La UVT vigente al presentar la solicitud es de $52.374. Frente al patrimonio líquido mínimo del nivel 2, ¿qué resultado debe registrar la gestora?",
     "opciones": [
-      {"id": "A", "texto": "Que lo cumple y lo supera en $109.380.994.", "explicacion": "Incorrecta. Resta solo los pasivos ($1.640 − $490 = $1.150 millones) y no excluye la vivienda, las obras de arte, las cuentas por cobrar a socios ni la marca, que el art. 40 no tiene en cuenta."},
-      {"id": "B", "texto": "Que no lo cumple y le faltan $100.619.006.", "explicacion": "Incorrecta. Excluye la vivienda, las obras de arte y las cuentas por cobrar a socios, pero deja la marca registrada, que es un intangible y tampoco se tiene en cuenta ($940 millones)."},
-      {"id": "C", "texto": "Que no lo cumple y le faltan $190.619.006.", "explicacion": "Incorrecta. Además de los activos excluidos, descuenta la oficina, que está vinculada a la actividad de agenciamiento y sí se tiene en cuenta ($850 millones)."},
-      {"id": "D", "texto": "Que no lo cumple y le faltan $140.619.006.", "explicacion": "Correcta. Patrimonio líquido: $1.640 − $120 − $50 − $40 − $40 − $490 = $900 millones. Mínimo del nivel 2 con la UVT vigente al presentar la solicitud: 19.869 × $52.374 = $1.040.619.006. Faltan $140.619.006."}
+      {"id": "A", "texto": "Que lo cumple y lo supera en $109.381.000.", "explicacion": "Incorrecta. Resta solo los pasivos ($1.640 − $490 = $1.150 millones) y no excluye la vivienda, las obras de arte, las cuentas por cobrar a socios ni la marca, que el art. 40 no tiene en cuenta."},
+      {"id": "B", "texto": "Que no lo cumple y le faltan $100.619.000.", "explicacion": "Incorrecta. Excluye la vivienda, las obras de arte y las cuentas por cobrar a socios, pero deja la marca registrada, que es un intangible y tampoco se tiene en cuenta ($940 millones)."},
+      {"id": "C", "texto": "Que no lo cumple y le faltan $190.619.000.", "explicacion": "Incorrecta. Además de los activos excluidos, descuenta la oficina, que está vinculada a la actividad de agenciamiento y sí se tiene en cuenta ($850 millones)."},
+      {"id": "D", "texto": "Que no lo cumple y le faltan $140.619.000.", "explicacion": "Correcta. Patrimonio líquido: $1.640 − $120 − $50 − $40 − $40 − $490 = $900 millones. Mínimo del nivel 2 con la UVT vigente al presentar la solicitud: 19.869 × $52.374 = $1.040.619.006, que se aproxima a $1.040.619.000 (art. 868 del ET). Faltan $140.619.000."}
     ],
     "respuestaCorrecta": "D",
-    "explicacionIA": "Dato decisivo: la sociedad pide el nivel 2 en 2026, con UVT de $52.374, y tiene activos que la norma no cuenta. Reglas: el art. 36, num. 4.2, exige al nivel 2 un patrimonio líquido de 19.869 UVT, con la UVT vigente al presentar la solicitud; el art. 40 lo calcula restando los pasivos, sin tener en cuenta la vivienda, las obras de arte, las cuentas por cobrar a socios ni los intangibles. Cálculo: $1.640 − $250 − $490 = $900 millones, frente a $1.040.619.006. Conclusión: faltan $140.619.006.",
+    "explicacionIA": "Dato decisivo: la sociedad pide el nivel 2 en 2026, con UVT de $52.374, y tiene activos que la norma no cuenta. Reglas: el art. 36, num. 4.2, exige al nivel 2 un patrimonio líquido de 19.869 UVT, con la UVT vigente al presentar la solicitud; el art. 40 lo calcula restando los pasivos, sin tener en cuenta la vivienda, las obras de arte, las cuentas por cobrar a socios ni los intangibles. Cálculo: $1.640 − $250 − $490 = $900 millones, frente a $1.040.619.000 (19.869 × $52.374, aproximado al múltiplo de mil por el art. 868 del ET). Conclusión: faltan $140.619.000.",
     "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
     "autor": "IA",
     "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}

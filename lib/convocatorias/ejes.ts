@@ -127,6 +127,20 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
     'ley 715', 'autoevaluacion institucional', 'plan de mejoramiento institucional', 'gestion comunitaria',
     'directivo docente', 'directivos docentes',
   ],
+  'Gestión Ambiental': [
+    'ambiental', 'medio ambiente', 'recursos naturales', 'ley 99', 'decreto 1076', 'licencia ambiental',
+    'licencias ambientales', 'sancionatorio ambiental', 'ley 1333', 'vertimientos', 'concesion de aguas', 'pomca',
+    'tasa retributiva', 'aprovechamiento forestal', 'gestion del riesgo', 'ley 1523', 'cambio climatico', 'sina',
+  ],
+  'Distrito Capital (Bogotá)': [
+    'distrito capital', 'bogota', 'decreto 1421', 'estatuto organico de bogota', 'acuerdo 257', 'localidades',
+    'alcaldias locales', 'juntas administradoras locales', 'concejo de bogota', 'administracion distrital',
+  ],
+  'Políticas Sociales y Enfoque Diferencial': [
+    'enfoque diferencial', 'politica social', 'politicas sociales', 'infancia', 'adolescencia', 'ley 1098',
+    'restablecimiento de derechos', 'adulto mayor', 'persona mayor', 'ley 1251', 'violencia contra la mujer',
+    'ley 1257', 'discapacidad', 'poblacion vulnerable', 'comisaria de familia', 'integracion social', 'genero',
+  ],
   'Herramientas de Oficina y Seguridad Digital': [
     'ofimatica', 'excel', 'word', 'hoja de calculo', 'hojas de calculo', 'procesador de texto', 'office',
     'correo electronico', 'herramientas informaticas', 'herramientas de oficina', 'seguridad digital',

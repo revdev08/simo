@@ -3078,5 +3078,1106 @@
       "fecha": "2026-10-10",
       "p_estimado": 45
     }
+  },
+  {
+    "id": "TC-JUR-057",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Actos administrativos",
+    "subtema": "Publicación de actos generales y de nombramiento frente a la notificación de actos particulares",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 65 inc. 1 y parágrafo (modificado por el art. 15 de la Ley 2080 de 2021)",
+      "art. 66",
+      "art. 73"
+    ],
+    "texto_fuente": "Los actos administrativos de carácter general no serán obligatorios mientras no hayan sido publicados en el Diario Oficial o en las gacetas territoriales, según el caso. [...] PARÁGRAFO. También deberán publicarse los actos de nombramiento y los actos de elección distintos a los de voto popular. [...] Los actos administrativos de carácter particular deberán ser notificados en los términos establecidos en las disposiciones siguientes. [...] Cuando, a juicio de las autoridades, los actos administrativos de carácter particular afecten en forma directa e inmediata a terceros que no intervinieron en la actuación y de quienes se desconozca su domicilio, ordenarán publicar la parte resolutiva en la página electrónica de la entidad y en un medio masivo de comunicación en el territorio donde sea competente quien expidió las decisiones.",
+    "pregunta": "Felipe, técnico de la oficina jurídica de un municipio, prepara el envío de actos a la gaceta municipal. Esta semana se firmaron tres: 1) un decreto que fija el horario de cargue y descargue en todas las vías del centro; 2) un decreto que nombra al nuevo secretario de cultura, y 3) una resolución que niega a una empresa, plenamente identificada y con dirección conocida, la licencia para instalar una valla, decisión que solo le interesa a ella. ¿Cuáles actos debe enviar a la gaceta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el decreto de horarios, porque los otros dos son actos particulares y se dan a conocer por notificación.",
+        "explicacion": "Incorrecta. El nombramiento es un acto particular, pero la ley exige expresamente publicar los actos de nombramiento (art. 65, parágrafo). Solo la resolución de la valla se da a conocer por notificación (art. 66)."
+      },
+      {
+        "id": "B",
+        "texto": "El decreto de horarios y el del nombramiento; la resolución de la valla se le notifica a la empresa.",
+        "explicacion": "Correcta. El decreto de horarios es general y no es obligatorio mientras no se publique en la gaceta (art. 65, inc. 1). El nombramiento también debe publicarse (art. 65, parágrafo). La resolución que niega la licencia es particular y se notifica a la empresa (art. 66)."
+      },
+      {
+        "id": "C",
+        "texto": "Los tres, porque la gaceta es el medio oficial con el que cualquier acto del municipio produce efectos.",
+        "explicacion": "Incorrecta. La publicación es el medio de los actos generales y de los nombramientos. La resolución de la valla es un acto particular y debe notificarse a la empresa (art. 66); publicarla no reemplaza la notificación."
+      },
+      {
+        "id": "D",
+        "texto": "El decreto de horarios y la resolución de la valla; el nombramiento basta comunicárselo al designado.",
+        "explicacion": "Incorrecta. Invierte las reglas: la resolución de la valla se notifica a la empresa (art. 66), y no hay terceros de domicilio desconocido que justifiquen publicar su parte resolutiva (art. 73). El nombramiento, en cambio, debe publicarse (art. 65, parágrafo)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: hay un acto general (horarios), un nombramiento y una resolución particular que solo interesa a una empresa con dirección conocida. Regla: los actos generales no son obligatorios mientras no se publiquen en la gaceta (art. 65, inc. 1, del CPACA, mod. Ley 2080 de 2021); también deben publicarse los actos de nombramiento (parágrafo), y los actos particulares se notifican (art. 66). Conclusión: a la gaceta van el decreto de horarios y el del nombramiento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-JUR-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Causales de nulidad: falta de competencia y falsa motivación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 137 incs. 1 y 2"
+    ],
+    "texto_fuente": "Toda persona podrá solicitar por sí, o por medio de representante, que se declare la nulidad de los actos administrativos de carácter general. [...] Procederá cuando hayan sido expedidos con infracción de las normas en que deberían fundarse, o sin competencia, o en forma irregular, o con desconocimiento del derecho de audiencia y defensa, o mediante falsa motivación, o con desviación de las atribuciones propias de quien los profirió.",
+    "pregunta": "Un acuerdo municipal le asignó al alcalde la función de fijar el horario de los establecimientos que venden licor. Sin que el alcalde le hubiera delegado esa función, el secretario de gobierno firmó una resolución de carácter general que adelanta el cierre de esos establecimientos en todo el municipio. En los considerandos afirma que, según el informe de la policía que cita, las riñas aumentaron 40% en el último año; ese informe, que está en el expediente, reporta en realidad una disminución de 15%. La resolución se expidió con el trámite previsto y se publicó en la gaceta, y nada indica que se buscara un fin distinto del orden público. Tatiana, profesional de la oficina jurídica, analiza la demanda de nulidad que presentó un comerciante. ¿Qué causales tienen sustento en esos hechos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Forma irregular, por el trámite de expedición, y desviación de las atribuciones de quien la firmó.",
+        "explicacion": "Incorrecta. La forma irregular se refiere a vicios del procedimiento o de las formalidades de expedición, y el caso no describe ninguno. Tampoco hay indicios de que se buscara un fin distinto del orden público, que es lo que caracteriza la desviación de atribuciones."
+      },
+      {
+        "id": "B",
+        "texto": "Falta de competencia del secretario y desviación de las atribuciones de quien la firmó.",
+        "explicacion": "Incorrecta. Acierta en la falta de competencia, pero no hay hechos que muestren un fin ajeno al orden público. El vicio de los considerandos es otro: se apoyan en un dato que el propio informe contradice, lo que configura falsa motivación."
+      },
+      {
+        "id": "C",
+        "texto": "Forma irregular, por el trámite de expedición, y falsa motivación de los considerandos.",
+        "explicacion": "Incorrecta. Acierta en la falsa motivación, pero el vicio de quien firmó no es de forma: el acuerdo asignó la función al alcalde y no hubo delegación, de modo que el secretario actuó sin competencia."
+      },
+      {
+        "id": "D",
+        "texto": "Falta de competencia del secretario de gobierno y falsa motivación de los considerandos.",
+        "explicacion": "Correcta. El secretario ejerció una función que el acuerdo asignó al alcalde, sin delegación: falta de competencia. Los considerandos invocan un aumento de riñas que el informe citado desmiente: falsa motivación. Ambas son causales del art. 137, inc. 2."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el secretario firmó, sin delegación, una función asignada al alcalde, y los considerandos citan un dato que el informe contradice. Regla: el art. 137, inc. 2, del CPACA incluye entre las causales de nulidad la expedición sin competencia y la falsa motivación, distintas de la forma irregular (vicios de trámite) y de la desviación de atribuciones (fin ajeno al servicio). Conclusión: tienen sustento la falta de competencia y la falsa motivación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-JUR-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Actos administrativos",
+    "subtema": "Ejecutoriedad: actos en firme, recursos pendientes, suspensión provisional y condición resolutoria",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 79 inc. 1",
+      "art. 88",
+      "art. 89",
+      "art. 91 nums. 1 y 4"
+    ],
+    "texto_fuente": "Los recursos se tramitarán en el efecto suspensivo. [...] Cuando fueren suspendidos, no podrán ejecutarse hasta tanto se resuelva definitivamente sobre su legalidad o se levante dicha medida cautelar. [...] Salvo disposición legal en contrario, los actos en firme serán suficientes para que las autoridades, por sí mismas, puedan ejecutarlos de inmediato. [...] Perderán obligatoriedad y, por lo tanto, no podrán ser ejecutados en los siguientes casos: [...] 1. Cuando sean suspendidos provisionalmente sus efectos por la Jurisdicción de lo Contencioso Administrativo. [...] 4. Cuando se cumpla la condición resolutoria a que se encuentre sometido el acto.",
+    "pregunta": "Óscar, técnico de la secretaría de gobierno de un municipio, programa las diligencias de cierre temporal de establecimientos de la próxima semana. Tiene cuatro resoluciones: 1) una en firme desde febrero de 2026, sin ninguna novedad; 2) una en firme desde marzo de 2026, cuyos efectos suspendió provisionalmente un juez administrativo en septiembre, en un proceso que sigue en curso; 3) una notificada hace seis días, contra la que el propietario interpuso reposición, aún sin resolver, y 4) una que ordenó el cierre con la advertencia de que la orden quedaría sin efecto si el establecimiento presentaba el concepto sanitario favorable, concepto que el propietario ya presentó. ¿Cuáles puede incluir en la programación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo la primera, porque es la única que está en firme y que conserva hoy su fuerza ejecutoria.",
+        "explicacion": "Correcta. La primera está en firme y puede ejecutarse (art. 89). La segunda tiene sus efectos suspendidos (arts. 88 y 91, num. 1); la tercera no está en firme, porque la reposición se tramita en el efecto suspensivo (art. 79), y la cuarta perdió obligatoriedad al cumplirse la condición resolutoria (art. 91, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "La primera y la segunda, porque los actos se presumen legales mientras no sean anulados por un juez.",
+        "explicacion": "Incorrecta. La presunción de legalidad no permite ejecutar un acto suspendido: mientras dure la suspensión provisional, no puede ejecutarse (arts. 88 y 91, num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "La primera y la tercera, porque la reposición pendiente no impide ejecutar lo que ya se notificó.",
+        "explicacion": "Incorrecta. La ejecución procede sobre actos en firme (art. 89), y los recursos se tramitan en el efecto suspensivo (art. 79). Con la reposición sin resolver, la tercera resolución todavía no puede ejecutarse."
+      },
+      {
+        "id": "D",
+        "texto": "La primera y la cuarta, porque la condición solo extingue la orden si un juez la declara cumplida.",
+        "explicacion": "Incorrecta. El acto pierde obligatoriedad cuando se cumple la condición resolutoria a la que está sometido (art. 91, num. 4); la norma no exige que un juez lo declare."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: solo la primera resolución está en firme y sin novedades. Regla: los actos en firme pueden ejecutarse de inmediato (art. 89 del CPACA); los recursos se tramitan en el efecto suspensivo (art. 79); los actos suspendidos provisionalmente no pueden ejecutarse (arts. 88 y 91, num. 1), y los actos pierden obligatoriedad cuando se cumple la condición resolutoria (art. 91, num. 4). Conclusión: solo puede programarse la primera.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-JUR-060",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Actos administrativos",
+    "subtema": "Pérdida de fuerza ejecutoria por desaparición de los fundamentos de derecho (decaimiento)",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 88",
+      "art. 91 inc. 1 y nums. 2 y 3",
+      "art. 92"
+    ],
+    "texto_fuente": "Los actos administrativos se presumen legales mientras no hayan sido anulados por la Jurisdicción de lo Contencioso Administrativo. [...] Salvo norma expresa en contrario, los actos administrativos en firme serán obligatorios mientras no hayan sido anulados por la Jurisdicción de lo Contencioso Administrativo. Perderán obligatoriedad y, por lo tanto, no podrán ser ejecutados en los siguientes casos: [...] 2. Cuando desaparezcan sus fundamentos de hecho o de derecho. 3. Cuando al cabo de cinco (5) años de estar en firme, la autoridad no ha realizado los actos que le correspondan para ejecutarlos. [...] Cuando el interesado se oponga a la ejecución de un acto administrativo alegando que ha perdido fuerza ejecutoria, quien lo produjo podrá suspenderla y deberá resolver dentro de un término de quince (15) días. El acto que decida la excepción no será susceptible de recurso alguno, pero podrá ser impugnado por vía jurisdiccional.",
+    "pregunta": "En abril de 2025, la secretaría de planeación de un municipio ordenó a un comerciante retirar el aviso de su fachada, porque superaba el tamaño máximo que fijaba un artículo del acuerdo municipal de publicidad exterior. La orden quedó en firme en mayo de 2025, pero no se ejecutó. En agosto de 2026, el tribunal administrativo declaró la nulidad de ese artículo del acuerdo, en sentencia ya ejecutoriada; ninguna otra norma limita el tamaño de los avisos. En octubre de 2026, la secretaría programó el retiro, y el comerciante presentó un escrito en el que se opone porque, según él, la orden ya no puede ejecutarse. Ricardo, profesional de la secretaría, proyecta la decisión. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negar la oposición, porque la orden está en firme y se presume legal mientras un juez no la anule a ella misma.",
+        "explicacion": "Incorrecta. Confunde la presunción de legalidad (art. 88) con la ejecutoriedad. Aunque la orden no haya sido anulada, pierde obligatoriedad y no puede ejecutarse cuando desaparecen sus fundamentos de derecho (art. 91, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Negar la oposición, porque la orden solo dejaría de ser ejecutable si pasaran cinco años desde su firmeza.",
+        "explicacion": "Incorrecta. El paso de cinco años sin ejecutar el acto es otra causal (art. 91, num. 3). Aquí opera una distinta: la nulidad del artículo del acuerdo hizo desaparecer el fundamento de derecho de la orden (num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Aceptarla, porque la orden perdió su soporte jurídico, y decidir en quince días, sin recursos contra esa decisión.",
+        "explicacion": "Correcta. Anulado el artículo del acuerdo en que se fundaba, la orden perdió fuerza ejecutoria (art. 91, num. 2). La secretaría debe resolver la oposición dentro de quince días, y esa decisión no tiene recursos, aunque puede demandarse (art. 92)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir la oposición al tribunal, porque solo el juez puede extender a la orden particular la nulidad del acuerdo.",
+        "explicacion": "Incorrecta. La pérdida de fuerza ejecutoria la resuelve la autoridad que expidió el acto al decidir la oposición del interesado (art. 92); no se requiere que el juez se pronuncie sobre la orden particular."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la orden se fundaba en un artículo del acuerdo que el tribunal anuló antes de que se ejecutara. Regla: los actos en firme son obligatorios mientras no se anulen, pero pierden obligatoriedad y no pueden ejecutarse cuando desaparecen sus fundamentos de derecho (art. 91, num. 2, del CPACA). Si el interesado se opone, la autoridad resuelve en quince días y esa decisión no tiene recursos (art. 92). Conclusión: aceptar la oposición dentro de ese plazo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-JUR-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Actos administrativos",
+    "subtema": "Firmeza del acto cuando se desiste de los recursos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 76 inc. 1",
+      "art. 81",
+      "art. 87 nums. 1, 3 y 4"
+    ],
+    "texto_fuente": "Los recursos de reposición y apelación deberán interponerse por escrito en la diligencia de notificación personal, o dentro de los diez (10) días siguientes a ella, o a la notificación por aviso, o al vencimiento del término de publicación, según el caso. [...] De los recursos podrá desistirse en cualquier tiempo. [...] 1. Cuando contra ellos no proceda ningún recurso, desde el día siguiente al de su notificación, comunicación o publicación según el caso. [...] 3. Desde el día siguiente al del vencimiento del término para interponer los recursos, si estos no fueron interpuestos, o se hubiere renunciado expresamente a ellos. 4. Desde el día siguiente al de la notificación de la aceptación del desistimiento de los recursos.",
+    "pregunta": "Natalia, técnica del grupo de cobro coactivo de un municipio, debe anotar en el expediente la fecha desde la cual quedó en firme una multa, para iniciar el cobro. La resolución, contra la que procedían reposición y apelación, se notificó personalmente el lunes 2 de marzo de 2026, y el lunes 9 de marzo la empresa sancionada interpuso reposición y, en subsidio, apelación. El lunes 13 de abril, antes de que se resolvieran, la empresa radicó un escrito en el que desiste de ambos recursos. La secretaría aceptó el desistimiento mediante un auto que se le notificó a la empresa el martes 21 de abril de 2026. Cuente los términos en días hábiles. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 17 de marzo, porque al desistir se entiende que no recurrió, y la firmeza corre desde que venció el plazo para hacerlo.",
+        "explicacion": "Incorrecta. La firmeza desde el vencimiento del plazo para recurrir se aplica cuando no se interponen recursos o se renuncia a ellos (art. 87, num. 3). Aquí la empresa sí recurrió a tiempo y luego desistió, supuesto que tiene su propia regla (num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "El 14 de abril, porque el desistimiento produce sus efectos desde el día siguiente a la radicación del escrito.",
+        "explicacion": "Incorrecta. Se puede desistir en cualquier tiempo (art. 81), pero la firmeza no corre desde la radicación del escrito, sino desde el día siguiente a la notificación del auto que acepta el desistimiento (art. 87, num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "El 22 de abril, porque la firmeza depende de que se le notifique a la empresa que se aceptó su retiro de los recursos.",
+        "explicacion": "Correcta. Cuando se desiste de los recursos, el acto queda en firme desde el día siguiente a la notificación de la aceptación del desistimiento (art. 87, num. 4). Esa notificación se hizo el martes 21 de abril, así que la multa quedó en firme el miércoles 22 de abril de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "El 3 de marzo, porque el desistimiento deja el acto como si contra él no hubiera procedido recurso alguno.",
+        "explicacion": "Incorrecta. La firmeza desde el día siguiente a la notificación corresponde a los actos contra los que no procede ningún recurso (art. 87, num. 1). Contra la multa procedían reposición y apelación, y la empresa las interpuso."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la empresa recurrió a tiempo (el 9 de marzo, dentro de los diez días hábiles que vencían el 16) y después desistió; la aceptación se le notificó el 21 de abril de 2026. Regla: de los recursos puede desistirse en cualquier tiempo (art. 81 del CPACA), y en ese caso el acto queda en firme desde el día siguiente a la notificación de la aceptación del desistimiento (art. 87, num. 4), no desde que vencía el plazo para recurrir (num. 3). Conclusión: 22 de abril de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-JUR-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Nulidad de un acto particular para recuperar un bien de uso público: legitimación y oportunidad",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 137 incs. 1 y 4 y num. 2",
+      "art. 164 num. 1 lit. a"
+    ],
+    "texto_fuente": "Toda persona podrá solicitar por sí, o por medio de representante, que se declare la nulidad de los actos administrativos de carácter general. [...] Excepcionalmente podrá pedirse la nulidad de actos administrativos de contenido particular en los siguientes casos: [...] 2. Cuando se trate de recuperar bienes de uso público. [...] 1. En cualquier tiempo, cuando: a) Se pretenda la nulidad en los términos del artículo 137 de este Código;",
+    "pregunta": "En marzo de 2023, la secretaría de gobierno de un municipio expidió una resolución que permitió a un restaurante ocupar de manera permanente, con mesas y una cubierta fija, la mitad de la plaza principal, que es un bien de uso público. En septiembre de 2026, un ciudadano que no vive cerca de la plaza ni tiene relación alguna con el restaurante presentó demanda de nulidad contra esa resolución; solo pide que se anule para que la plaza vuelva a ser de uso común. Andrés, profesional de la oficina jurídica, prepara la contestación y evalúa qué excepciones proponer. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ni la caducidad ni la falta de legitimación prosperan, dado que la demanda persigue devolver la plaza a la colectividad.",
+        "explicacion": "Correcta. Por excepción, puede pedirse la nulidad de un acto particular cuando se trata de recuperar bienes de uso público (art. 137, inc. 4, num. 2). Esa demanda puede presentarla cualquier persona (art. 137, inc. 1) y en cualquier tiempo (art. 164, num. 1, lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe proponer la caducidad, porque contra un acto particular la vía es la nulidad y restablecimiento, con plazo de cuatro meses.",
+        "explicacion": "Incorrecta. La nulidad y restablecimiento es la vía de quien busca restablecer un derecho propio. El ciudadano no pide restablecimiento, y la ley permite demandar en nulidad un acto particular para recuperar bienes de uso público, en cualquier tiempo (arts. 137, num. 2, y 164, num. 1, lit. a)."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe alegar falta de legitimación, porque un acto particular solo puede demandarlo su titular o un tercero directamente afectado.",
+        "explicacion": "Incorrecta. En la nulidad, toda persona puede demandar (art. 137, inc. 1), también cuando excepcionalmente se dirige contra un acto particular para recuperar bienes de uso público (num. 2). No se exige un interés directo."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe pedir que se rechace la demanda, porque la vía para proteger la plaza era la acción popular y no la nulidad.",
+        "explicacion": "Incorrecta. Que exista otra vía para proteger los derechos colectivos no excluye la nulidad, que la ley autoriza expresamente contra actos particulares cuando se trata de recuperar bienes de uso público (art. 137, inc. 4, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el ciudadano no tiene interés propio y solo busca que la plaza, bien de uso público, vuelva al uso común. Regla: excepcionalmente puede pedirse la nulidad de actos de contenido particular cuando se trata de recuperar bienes de uso público (art. 137, inc. 4, num. 2, del CPACA); la nulidad puede pedirla toda persona (inc. 1) y en cualquier tiempo (art. 164, num. 1, lit. a). Conclusión: no prosperan ni la caducidad ni la falta de legitimación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-063",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medidas cautelares",
+    "subtema": "Traslado de la solicitud de medida cautelar a una entidad pública: inicio y duración del término",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 199 inc. 4 (modificado por el art. 48 de la Ley 2080 de 2021)",
+      "art. 233 incs. 2 a 4"
+    ],
+    "texto_fuente": "El traslado o los términos que conceda el auto notificado solo se empezarán a contabilizar a los dos (2) días hábiles siguientes al del envío del mensaje y el término respectivo empezará a correr a partir del día siguiente. [...] El Juez o Magistrado Ponente al admitir la demanda, en auto separado, ordenará correr traslado de la solicitud de medida cautelar para que el demandado se pronuncie sobre ella en escrito separado dentro del término de cinco (5) días, plazo que correrá en forma independiente al de la contestación de la demanda. Esta decisión, que se notificará simultáneamente con el auto admisorio de la demanda, no será objeto de recursos. [...] El auto que decida las medidas cautelares deberá proferirse dentro de los diez (10) días siguientes al vencimiento del término de que dispone el demandado para pronunciarse sobre ella.",
+    "pregunta": "El lunes 5 de octubre de 2026, un juzgado administrativo envió al buzón de notificaciones judiciales de una gobernación el mensaje con el auto admisorio de una demanda de nulidad y restablecimiento del derecho y con el auto, separado, que corre traslado de la solicitud de suspensión provisional que presentó el demandante. Camilo, técnico de la oficina jurídica, debe registrar en el sistema de control la fecha límite para que el departamento se pronuncie sobre la medida. Cuente en días hábiles; el 12 de octubre de 2026 fue festivo. ¿Qué fecha debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 13 de octubre: cinco días hábiles contados desde el día siguiente al envío, sin incluir el festivo del 12.",
+        "explicacion": "Incorrecta. Descuenta el festivo, pero omite la regla de la notificación electrónica a entidades públicas: los términos que concede el auto solo se empiezan a contar después de los dos días hábiles siguientes al envío del mensaje (art. 199, inc. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "La misma del vencimiento del término para contestar, porque sobre la medida se pronuncia en la contestación.",
+        "explicacion": "Incorrecta. El plazo para pronunciarse sobre la medida cautelar corre en forma independiente al de la contestación, y el pronunciamiento se presenta en escrito separado (art. 233, inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "El 22 de octubre: diez días hábiles que arrancan el 8, pasado el margen de dos días hábiles tras el envío, sin contar el 12.",
+        "explicacion": "Incorrecta. Acierta en el inicio y en el festivo, pero el demandado tiene cinco días para pronunciarse (art. 233, inc. 2). Los diez días son el plazo del juez para decidir la medida, contados desde que vence el término del demandado (art. 233, inc. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "El 15 de octubre: cinco días hábiles que arrancan el 8, pasado el margen de dos días tras el envío, sin contar el 12.",
+        "explicacion": "Correcta. El mensaje se envió el lunes 5; los dos días hábiles siguientes son el 6 y el 7, y el término corre desde el 8 (art. 199, inc. 4). Los cinco días (art. 233, inc. 2) son el 8, 9, 13, 14 y 15 de octubre, porque el 12 fue festivo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el juzgado envió el mensaje al buzón de la gobernación el lunes 5 de octubre de 2026. Regla: los términos que concede el auto notificado a una entidad pública se empiezan a contar tras los dos días hábiles siguientes al envío y corren desde el día siguiente (art. 199, inc. 4, del CPACA, mod. Ley 2080 de 2021); el demandado tiene cinco días para pronunciarse sobre la medida, independientes de la contestación (art. 233, inc. 2). Cálculo: corre desde el 8; con el festivo del 12, vence el jueves 15 de octubre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-JUR-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medidas cautelares",
+    "subtema": "Suspensión provisional con pretensión de indemnización: prueba de los perjuicios y caución",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 231 incs. 1 y 2 y num. 4",
+      "art. 232 inc. 3"
+    ],
+    "texto_fuente": "Cuando se pretenda la nulidad de un acto administrativo, la suspensión provisional de sus efectos procederá por violación de las disposiciones invocadas en la demanda o en la solicitud que se realice en escrito separado, cuando tal violación surja del análisis del acto demandado y su confrontación con las normas superiores invocadas como violadas o del estudio de las pruebas allegadas con la solicitud. Cuando adicionalmente se pretenda el restablecimiento del derecho y la indemnización de perjuicios deberá probarse al menos sumariamente la existencia de los mismos. En los demás casos, las medidas cautelares serán procedentes cuando concurran los siguientes requisitos: [...] 4. Que, adicionalmente, se cumpla una de las siguientes condiciones: a) Que al no otorgarse la medida se cause un perjuicio irremediable, o [...] No se requerirá de caución cuando se trate de la suspensión provisional de los efectos de los actos administrativos,",
+    "pregunta": "Una empresa demandó en nulidad y restablecimiento del derecho la resolución con la que un municipio le impuso una multa de 80 millones de pesos. Además de la nulidad, pide que se le indemnicen los perjuicios que, según afirma, le causó la sanción. En escrito separado solicitó la suspensión provisional de la resolución: explicó por qué, a su juicio, viola las normas que cita, pero no aportó ningún documento sobre los perjuicios ni ofreció caución. Daniela, profesional de la oficina jurídica del municipio, prepara el pronunciamiento sobre la medida. ¿Cuál de estos argumentos tiene sustento en la ley?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la empresa no ofreció caución para garantizar los perjuicios que la suspensión podría causarle al municipio.",
+        "explicacion": "Incorrecta. La ley no exige caución cuando se trata de la suspensión provisional de los efectos de un acto administrativo (art. 232, inc. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la empresa pretende también la indemnización, pero no aportó siquiera una prueba sumaria del daño que alega.",
+        "explicacion": "Correcta. La suspensión procede si la violación surge de confrontar el acto con las normas invocadas o de las pruebas; pero cuando además se pretenden el restablecimiento y la indemnización, deben probarse al menos sumariamente los perjuicios (art. 231, inc. 1). La empresa no aportó nada sobre ellos."
+      },
+      {
+        "id": "C",
+        "texto": "Que la empresa no demostró que, si se niega la suspensión, sufrirá un perjuicio irremediable.",
+        "explicacion": "Incorrecta. El perjuicio irremediable es una de las condiciones de las demás medidas cautelares (art. 231, inc. 2, num. 4). La suspensión provisional de un acto tiene requisitos propios (art. 231, inc. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la suspensión debió pedirse en el texto de la demanda y no en un escrito presentado por separado.",
+        "explicacion": "Incorrecta. La suspensión puede solicitarse en la demanda o en escrito separado (art. 231, inc. 1)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la empresa pide nulidad, restablecimiento e indemnización, pero no aportó prueba de los perjuicios. Regla: la suspensión provisional procede cuando la violación surge de confrontar el acto con las normas invocadas o de las pruebas; si además se pretenden restablecimiento e indemnización, los perjuicios deben probarse al menos sumariamente (art. 231, inc. 1, del CPACA). No se exige caución para suspender actos administrativos (art. 232) ni el perjuicio irremediable de las demás medidas. Conclusión: el argumento válido es la falta de prueba de los perjuicios.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-JUR-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medidas cautelares",
+    "subtema": "Apelación del auto que decreta una medida cautelar: plazo y efecto",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 243 inc. 1, num. 5 y parágrafo 1 (modificado por el art. 62 de la Ley 2080 de 2021)",
+      "art. 244 num. 3 (modificado por el art. 64 de la Ley 2080 de 2021)"
+    ],
+    "texto_fuente": "Son apelables las sentencias de primera instancia y los siguientes autos proferidos en la misma instancia: [...] 5. El que decrete, deniegue o modifique una medida cautelar. [...] PARÁGRAFO 1o. El recurso de apelación contra las sentencias y las providencias listadas en los numerales 1 a 4 de este artículo se concederá en el efecto suspensivo. La apelación de las demás providencias se surtirá en el efecto devolutivo, salvo norma expresa en contrario. [...] 3. Si el auto se notifica por estado, el recurso deberá interponerse y sustentarse por escrito ante quien lo profirió, dentro de los tres (3) días siguientes a su notificación o a la del auto que niega total o parcialmente la reposición.",
+    "pregunta": "En un proceso de primera instancia, un juez administrativo decretó la suspensión provisional de una resolución de un municipio. El auto se notificó por estado el martes 13 de octubre de 2026, y el abogado del municipio decidió apelarlo directamente, sin interponer antes reposición. Laura, técnica de la oficina jurídica, debe registrar en el sistema de control la fecha límite para presentar y sustentar la apelación y el efecto en que se concede. Cuente en días hábiles. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el viernes 16 de octubre, y el recurso se concede en el efecto devolutivo.",
+        "explicacion": "Correcta. El auto que decreta una medida cautelar es apelable (art. 243, num. 5); notificado por estado, la apelación se interpone y sustenta dentro de los tres días siguientes (art. 244, num. 3): 14, 15 y 16 de octubre. Como no está en los numerales 1 a 4, se concede en el efecto devolutivo (art. 243, par. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el viernes 16 de octubre, y el recurso se concede en el efecto suspensivo.",
+        "explicacion": "Incorrecta. El plazo es el correcto, pero el efecto suspensivo se reserva para las sentencias y los autos de los numerales 1 a 4 del art. 243; el que decreta una medida cautelar (num. 5) se apela en el efecto devolutivo (par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el martes 27 de octubre, y el recurso se concede en el efecto devolutivo.",
+        "explicacion": "Incorrecta. El efecto es el correcto, pero aplica el plazo de diez días de los recursos contra actos administrativos. Para apelar un auto notificado por estado hay tres días (art. 244, num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el martes 27 de octubre, y el recurso se concede en el efecto suspensivo.",
+        "explicacion": "Incorrecta. Combina dos errores: el plazo de diez días, que no es el de la apelación de autos (tres días, art. 244, num. 3), y el efecto suspensivo, que no corresponde al auto de medidas cautelares (art. 243, par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el auto que decretó la suspensión provisional se notificó por estado el martes 13 de octubre de 2026. Regla: es apelable el auto que decreta una medida cautelar (art. 243, num. 5, del CPACA, mod. Ley 2080 de 2021), y la apelación de autos distintos de los de los numerales 1 a 4 se concede en el efecto devolutivo (par. 1); si el auto se notifica por estado, se interpone y sustenta dentro de los tres días siguientes (art. 244, num. 3). Cálculo: 14, 15 y 16 de octubre. Conclusión: hasta el 16, en el efecto devolutivo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-066",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medidas cautelares",
+    "subtema": "Prohibición de reproducir el acto suspendido y trámite para suspender el nuevo acto",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 237",
+      "art. 238 inc. 1"
+    ],
+    "texto_fuente": "Ningún acto anulado o suspendido podrá ser reproducido si conserva en esencia las mismas disposiciones anuladas o suspendidas, a menos que con posterioridad a la sentencia o al auto, hayan desaparecido los fundamentos legales de la anulación o suspensión. [...] Si se trata de la reproducción del acto suspendido, bastará solicitar la suspensión de los efectos del nuevo acto, acompañando al proceso copia de este. Esta solicitud se decidirá inmediatamente, cualquiera que sea el estado del proceso y en la sentencia definitiva se resolverá si se declara o no la nulidad de ambos actos.",
+    "pregunta": "Un tribunal administrativo suspendió provisionalmente un decreto de un alcalde que creó un cobro por el uso de las ciclovías, porque ninguna norma superior autoriza ese cobro. Desde entonces la normativa no ha cambiado. El alcalde propone expedir un decreto nuevo, con otro número, considerandos más extensos y una tarifa algo menor, pero con el mismo cobro, y sostiene que la suspensión solo recae sobre el decreto demandado. Gustavo, asesor jurídico del despacho del alcalde, debe darle su concepto. ¿Qué debe advertirle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede expedirlo, porque la suspensión solo afecta al decreto demandado y el nuevo tendría que demandarse en otro proceso.",
+        "explicacion": "Incorrecta. La prohibición recae sobre cualquier acto que reproduzca en esencia el suspendido (art. 237), y para suspenderlo basta pedirlo en el mismo proceso, con copia del nuevo acto (art. 238)."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede expedirlo, porque con la tarifa menor y los nuevos considerandos ya no se trata del mismo acto.",
+        "explicacion": "Incorrecta. Cambiar el número, los considerandos o el monto no altera la esencia: el nuevo decreto crea el mismo cobro sin la autorización cuya falta motivó la suspensión (art. 237)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no debe: el cobro sigue siendo en esencia el mismo y bastaría pedir, en ese proceso, que se suspenda el nuevo decreto.",
+        "explicacion": "Correcta. El nuevo decreto conserva en esencia lo suspendido y no han desaparecido los fundamentos legales de la suspensión (art. 237). Al demandante le bastaría pedir en ese proceso la suspensión del nuevo acto, con copia de él, y el tribunal la decidiría de inmediato (art. 238)."
+      },
+      {
+        "id": "D",
+        "texto": "Que no debe antes de la sentencia; si lo hace, el demandante tendrá que presentar una nueva demanda contra el nuevo decreto.",
+        "explicacion": "Incorrecta. No se requiere una nueva demanda: la suspensión del acto reproducido se pide en el mismo proceso y se decide de inmediato, y en la sentencia se resuelve sobre la nulidad de ambos actos (art. 238)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el nuevo decreto mantiene el mismo cobro y la normativa no ha cambiado desde la suspensión. Regla: ningún acto suspendido puede reproducirse si conserva en esencia sus disposiciones, salvo que después del auto desaparezcan los fundamentos legales de la suspensión (art. 237 del CPACA); si se reproduce, basta pedir en el mismo proceso la suspensión del nuevo acto, que se decide de inmediato (art. 238). Conclusión: advertir que no debe expedirlo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-JUR-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medidas cautelares",
+    "subtema": "Desacato de una medida cautelar: monto máximo de las multas y recurso contra la sanción",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 241 inc. 1",
+      "art. 241 inc. 2 (modificado por el art. 60 de la Ley 2080 de 2021)"
+    ],
+    "texto_fuente": "El incumplimiento de una medida cautelar dará lugar a la apertura de un incidente de desacato como consecuencia del cual se podrán imponer multas sucesivas por cada día de retardo en el cumplimiento hasta por el monto de dos (2) salarios mínimos mensuales legales vigentes a cargo del renuente, sin que sobrepase cincuenta (50) salarios mínimos mensuales legales vigentes. [...] La sanción será impuesta por la misma autoridad judicial que profirió la orden en contra del representante legal o director de la entidad pública, o del particular responsable del cumplimiento de la medida cautelar. Esta se impondrá mediante trámite incidental y será susceptible del recurso de reposición, el cual se decidirá en el término de cinco (5) días.",
+    "pregunta": "Un juez administrativo ordenó, como medida cautelar, que un municipio reabriera el paso peatonal de un puente que había cerrado. El municipio cumplió con 35 días de retraso, y el juez abrió incidente de desacato contra el alcalde. Paula, técnica de la oficina jurídica, diligencia la ficha de riesgo del incidente: debe anotar el monto máximo que podría sumar la multa por todo el retraso y el recurso que procedería contra la sanción. ¿Qué debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "70 salarios mínimos mensuales, y contra la sanción procedería el recurso de apelación.",
+        "explicacion": "Incorrecta. Multiplica los 35 días por dos salarios sin aplicar el tope de cincuenta (art. 241, inc. 1), y supone que la sanción se apela, cuando lo que procede es la reposición (inc. 2, mod. Ley 2080 de 2021)."
+      },
+      {
+        "id": "B",
+        "texto": "50 salarios mínimos mensuales, y contra la sanción procedería el recurso de reposición.",
+        "explicacion": "Correcta. Las multas pueden ser de hasta dos salarios mínimos por cada día de retardo, sin sobrepasar cincuenta (art. 241, inc. 1): 35 × 2 = 70, que se reduce al tope de 50. Contra la sanción procede la reposición, que se decide en cinco días (inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "70 salarios mínimos mensuales, y contra la sanción procedería el recurso de reposición.",
+        "explicacion": "Incorrecta. Acierta en el recurso, pero no aplica el tope: aunque 35 días a dos salarios darían 70, las multas no pueden sobrepasar cincuenta salarios mínimos (art. 241, inc. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "50 salarios mínimos mensuales, y contra la sanción procedería el recurso de apelación.",
+        "explicacion": "Incorrecta. Acierta en el tope, pero tras la reforma de la Ley 2080 de 2021 la sanción por el incumplimiento de una medida cautelar es susceptible de reposición, no de apelación (art. 241, inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el municipio cumplió la medida cautelar con 35 días de retraso. Regla: el incumplimiento da lugar a multas sucesivas de hasta dos salarios mínimos mensuales por cada día de retardo, sin que superen cincuenta (art. 241, inc. 1, del CPACA), y la sanción es susceptible de reposición, que se decide en cinco días (inc. 2, mod. Ley 2080 de 2021). Cálculo: 35 × 2 = 70, limitado a 50. Conclusión: cincuenta salarios mínimos y reposición.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-068",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medidas cautelares",
+    "subtema": "Responsabilidad del solicitante de la medida cautelar cuando la sentencia es desestimatoria",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 230 num. 3",
+      "art. 240 inc. 1"
+    ],
+    "texto_fuente": "3. Suspender provisionalmente los efectos de un acto administrativo. [...] Salvo los casos de suspensión provisional de actos administrativos de carácter general, cuando la medida cautelar sea revocada en el curso del proceso por considerar que su decreto era improcedente o cuando la sentencia sea desestimatoria, el solicitante responderá patrimonialmente por los perjuicios que se hayan causado, los cuales se liquidarán mediante incidente promovido dentro de los treinta (30) días siguientes a la ejecutoria de la providencia.",
+    "pregunta": "Un municipio sufrió perjuicios por dos medidas cautelares. En la primera, dentro de un proceso de nulidad contra el decreto general que reglamentó el estacionamiento en vía, un ciudadano obtuvo la suspensión provisional del decreto, y durante ocho meses el municipio no pudo cobrar las zonas de parqueo. En la segunda, un proponente vencido demandó la resolución que adjudicó a otro la licitación de un puente, que es un acto de carácter particular, y obtuvo la suspensión provisional de sus efectos; el retraso de la obra le generó al municipio mayores costos. En ambos procesos las sentencias negaron las pretensiones y quedaron ejecutoriadas el 1 de octubre de 2026. Mónica, profesional de la oficina jurídica, debe recomendar cómo recuperar esos perjuicios. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reclamar por las dos medidas, mediante un incidente promovido en los treinta días posteriores a la ejecutoria de cada fallo.",
+        "explicacion": "Incorrecta. Acierta en la vía y el plazo, pero la responsabilidad del solicitante no cubre la suspensión provisional de actos de carácter general, como el decreto de estacionamiento (art. 240, inc. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Reclamar por las dos medidas, con una demanda de reparación directa presentada dentro de los dos años siguientes.",
+        "explicacion": "Incorrecta. Incluye la suspensión del decreto general, que la ley excluye, y acude a la reparación directa, cuando los perjuicios causados por la medida se liquidan mediante incidente (art. 240, inc. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Reclamar solo por la adjudicación suspendida, con una demanda de reparación directa dentro de los dos años siguientes.",
+        "explicacion": "Incorrecta. Acierta en que solo procede por la adjudicación, pero esos perjuicios se liquidan mediante incidente promovido dentro de los treinta días siguientes a la ejecutoria (art. 240, inc. 1), no con una nueva demanda."
+      },
+      {
+        "id": "D",
+        "texto": "Reclamar solo por la adjudicación suspendida, mediante incidente promovido en los treinta días posteriores a la ejecutoria.",
+        "explicacion": "Correcta. Como la sentencia fue desestimatoria, el proponente responde por los perjuicios de la suspensión de la resolución de adjudicación, un acto particular (arts. 230, num. 3, y 240), que se liquidan por incidente dentro de los treinta días siguientes a la ejecutoria. La suspensión del decreto general está excluida de esa responsabilidad."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: una medida suspendió un decreto general y la otra la resolución de adjudicación, un acto particular; ambas sentencias fueron desestimatorias. Regla: cuando la sentencia es desestimatoria, el solicitante responde por los perjuicios de la medida, que se liquidan por incidente promovido dentro de los treinta días siguientes a la ejecutoria, salvo en la suspensión provisional de actos de carácter general (art. 240 del CPACA). Conclusión: reclamar solo por la adjudicación, por incidente y dentro de ese plazo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-JUR-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cumplimiento de sentencias y conciliaciones",
+    "subtema": "Plazos para cumplir condenas de hacer y condenas de pagar sumas de dinero",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 192 incs. 1 y 2"
+    ],
+    "texto_fuente": "Cuando la sentencia imponga una condena que no implique el pago o devolución de una cantidad líquida de dinero, la autoridad a quien corresponda su ejecución dentro del término de treinta (30) días contados desde su comunicación, adoptará las medidas necesarias para su cumplimiento. Las condenas impuestas a entidades públicas consistentes en el pago o devolución de una suma de dinero serán cumplidas en un plazo máximo de diez (10) meses, contados a partir de la fecha de la ejecutoria de la sentencia. Para tal efecto, el beneficiario deberá presentar la solicitud de pago correspondiente a la entidad obligada.",
+    "pregunta": "Una sentencia de nulidad y restablecimiento del derecho, dictada en un proceso iniciado en 2023, ordenó a un municipio: 1) restituir a un comerciante el local de la plaza de mercado del que fue retirado, y 2) pagarle 45 millones de pesos. La sentencia quedó ejecutoriada el viernes 14 de agosto de 2026 y se le comunicó al municipio el martes 1 de septiembre de 2026. Jorge, técnico de la oficina jurídica, debe registrar en el sistema de seguimiento los plazos para cumplir cada orden. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Para las dos órdenes, hasta el 14 de junio de 2027, plazo que se cuenta desde la ejecutoria de la sentencia.",
+        "explicacion": "Incorrecta. El plazo de diez meses desde la ejecutoria es para las condenas de pagar dinero. La restitución del local no implica pagar una suma líquida: para ella, el municipio tiene treinta días desde la comunicación (art. 192, inc. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Para las dos órdenes, treinta días contados desde que la sentencia se le comunicó al municipio.",
+        "explicacion": "Incorrecta. Los treinta días desde la comunicación son para las condenas que no implican pagar dinero. El pago tiene un plazo máximo de diez meses desde la ejecutoria (art. 192, inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Restituir: 30 días desde la comunicación. Pagar: hasta el 14 de junio de 2027, previa solicitud del beneficiario.",
+        "explicacion": "Correcta. La restitución no implica pagar dinero: treinta días desde la comunicación (art. 192, inc. 1). El pago debe hacerse en máximo diez meses desde la ejecutoria (14 de agosto de 2026), es decir, a más tardar el 14 de junio de 2027, y el beneficiario debe presentar la solicitud de pago (inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Restituir: 30 días desde la ejecutoria. Pagar: diez meses contados desde que el beneficiario presente la solicitud.",
+        "explicacion": "Incorrecta. Cambia el punto de partida de ambos plazos: los treinta días corren desde la comunicación, y los diez meses, desde la ejecutoria, no desde la solicitud de pago (art. 192, incs. 1 y 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la sentencia impone una orden de hacer (restituir el local) y una de pagar dinero; quedó ejecutoriada el 14 de agosto de 2026 y se comunicó el 1 de septiembre. Regla: las condenas que no implican pagar dinero se cumplen dentro de treinta días desde su comunicación, y las de pagar sumas de dinero, en máximo diez meses desde la ejecutoria, previa solicitud del beneficiario (art. 192, incs. 1 y 2, del CPACA). Cálculo: diez meses desde el 14 de agosto de 2026 llegan al 14 de junio de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cumplimiento de sentencias y conciliaciones",
+    "subtema": "Cesación de los intereses moratorios cuando el beneficiario no presenta a tiempo la solicitud de pago",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 192 incs. 2, 3 y 5"
+    ],
+    "texto_fuente": "Para tal efecto, el beneficiario deberá presentar la solicitud de pago correspondiente a la entidad obligada. [...] Las cantidades líquidas reconocidas en providencias que impongan o liquiden una condena o que aprueben una conciliación devengarán intereses moratorios a partir de la ejecutoria de la respectiva sentencia o del auto, según lo previsto en este Código. [...] Cumplidos tres (3) meses desde la ejecutoria de la providencia que imponga o liquide una condena o de la que apruebe una conciliación, sin que los beneficiarios hayan acudido ante la entidad responsable para hacerla efectiva, cesará la causación de intereses desde entonces hasta cuando se presente la solicitud.",
+    "pregunta": "Una sentencia que condenó a un departamento a pagar 60 millones de pesos quedó ejecutoriada el lunes 2 de febrero de 2026. El beneficiario presentó la solicitud de pago el lunes 15 de junio de 2026, y el departamento pagó el martes 30 de junio. Karen, técnica de la oficina jurídica, prepara para la tesorería la liquidación de los intereses moratorios. ¿Por qué períodos deben liquidarse intereses?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Del 2 de febrero al 2 de mayo y del 15 al 30 de junio; en el lapso intermedio no se causan.",
+        "explicacion": "Correcta. Los intereses corren desde la ejecutoria (art. 192, inc. 3). Cumplidos tres meses (2 de mayo de 2026) sin que el beneficiario pidiera el pago, dejaron de causarse hasta que presentó la solicitud, el 15 de junio, y desde entonces se causan hasta el pago (inc. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo del 15 al 30 de junio, porque antes de que se presente la solicitud de pago no se causan.",
+        "explicacion": "Incorrecta. Los intereses se causan desde la ejecutoria (art. 192, inc. 3). La falta de solicitud solo interrumpe su causación después de cumplidos tres meses y hasta que se presente (inc. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "Del 2 de febrero al 30 de junio, porque la demora del beneficiario en pedir el pago no los afecta.",
+        "explicacion": "Incorrecta. Si en tres meses desde la ejecutoria el beneficiario no acude a la entidad, la causación cesa hasta que presente la solicitud (art. 192, inc. 5). Aquí no hubo intereses entre el 2 de mayo y el 15 de junio."
+      },
+      {
+        "id": "D",
+        "texto": "Del 2 de mayo al 30 de junio, porque en los tres meses siguientes a la ejecutoria no se causan.",
+        "explicacion": "Incorrecta. Invierte la regla: los primeros tres meses sí causan intereses, porque corren desde la ejecutoria (art. 192, inc. 3); lo que se interrumpe es el período posterior, hasta la solicitud (inc. 5)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la sentencia quedó ejecutoriada el 2 de febrero de 2026 y la solicitud se presentó el 15 de junio. Regla: las condenas devengan intereses moratorios desde la ejecutoria (art. 192, inc. 3, del CPACA), pero si en tres meses el beneficiario no acude a la entidad, la causación cesa desde entonces hasta que presente la solicitud (inc. 5). Cálculo: los tres meses se cumplen el 2 de mayo de 2026. Conclusión: hay intereses del 2 de febrero al 2 de mayo y del 15 al 30 de junio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cumplimiento de sentencias y conciliaciones",
+    "subtema": "Tasa de los intereses moratorios en condenas provisionadas en el Fondo de Contingencias",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 192 inc. 2",
+      "art. 195 nums. 1, 3 y 4"
+    ],
+    "texto_fuente": "Las condenas impuestas a entidades públicas consistentes en el pago o devolución de una suma de dinero serán cumplidas en un plazo máximo de diez (10) meses, contados a partir de la fecha de la ejecutoria de la sentencia. [...] 1. Ejecutoriada la providencia que imponga una condena o apruebe una conciliación cuya contingencia haya sido provisionada en el Fondo de Contingencias, la entidad obligada, en un plazo máximo de diez (10) días, requerirá al Fondo el giro de los recursos para el respectivo pago. [...] 3. La entidad obligada deberá realizar el pago efectivo de la condena al beneficiario, dentro de los cinco (5) días siguientes a la recepción de los recursos. 4. Las sumas de dinero reconocidas en providencias que impongan o liquiden una condena o que aprueben una conciliación, devengarán intereses moratorios a una tasa equivalente al DTF desde su ejecutoria. No obstante, una vez vencido el término de los diez (10) meses de que trata el inciso segundo del artículo 192 de este Código o el de los cinco (5) días establecidos en el numeral anterior, lo que ocurra primero, sin que la entidad obligada hubiese realizado el pago efectivo del crédito judicialmente reconocido, las cantidades líquidas adeudadas causarán un interés moratoria a la tasa comercial.",
+    "pregunta": "Una sentencia condenó a un establecimiento público del orden nacional a pagar 300 millones de pesos; la contingencia estaba provisionada en el Fondo de Contingencias. La sentencia quedó ejecutoriada el martes 3 de febrero de 2026, el beneficiario pidió el pago el jueves 5 de febrero y la entidad requirió al Fondo el giro el martes 10 de febrero. La entidad recibió los recursos el miércoles 20 de mayo de 2026, pero por demoras internas de su tesorería el pago solo se hizo el martes 30 de junio. Sergio, profesional de la oficina jurídica, debe definir cómo se liquidan los intereses moratorios. ¿A qué tasa deben liquidarse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al DTF hasta el día del pago, porque este se hizo antes de cumplirse diez meses desde la ejecutoria.",
+        "explicacion": "Incorrecta. Los diez meses son solo uno de los dos plazos: la tasa comercial empieza con el que venza primero, y aquí venció antes el de cinco días siguientes a la recepción de los recursos (art. 195, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "A la tasa comercial desde la ejecutoria, porque el pago no se hizo a tiempo con los recursos recibidos.",
+        "explicacion": "Incorrecta. Desde la ejecutoria y hasta que vence el primero de los dos plazos, los intereses se liquidan al DTF; la tasa comercial solo se aplica después (art. 195, num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Sin intereses hasta que llegaron los recursos del Fondo, y desde entonces al DTF hasta el pago.",
+        "explicacion": "Incorrecta. Los intereses corren desde la ejecutoria, no desde la llegada de los recursos, y vencidos los cinco días para pagar ya no se liquidan al DTF sino a la tasa comercial (art. 195, num. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Al DTF hasta que venció el plazo de pago tras recibir los recursos, y luego a la tasa comercial.",
+        "explicacion": "Correcta. Desde la ejecutoria se causan intereses al DTF. La entidad debía pagar dentro de los cinco días siguientes a la recepción de los recursos (num. 3), plazo que venció en mayo, mucho antes de cumplirse los diez meses (3 de diciembre de 2026). Desde ese vencimiento y hasta el pago rige la tasa comercial (num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la entidad recibió los recursos del Fondo el 20 de mayo de 2026 y pagó el 30 de junio. Regla: las condenas provisionadas devengan intereses al DTF desde la ejecutoria; vencido el plazo de diez meses (art. 192) o el de cinco días siguientes a la recepción de los recursos (art. 195, num. 3), lo que ocurra primero, sin que se haya pagado, se causa la tasa comercial (art. 195, num. 4). Cálculo: los cinco días vencieron a finales de mayo; los diez meses, el 3 de diciembre. Conclusión: DTF hasta finales de mayo y tasa comercial hasta el pago.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-JUR-072",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Reserva del acta del comité de conciliación que revela la estrategia de defensa",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 129 incs. 1, 2 y 4"
+    ],
+    "texto_fuente": "Si la decisión de no conciliar implica señalar total o parcialmente la estrategia de defensa jurídica de la entidad, el documento en el que conste la decisión gozará de reserva conforme lo dispuesto en los literales e) y h) y el parágrafo del artículo 19 de la Ley 1712 de 2014, o la norma que los modifique, adicione o sustituya. La reserva no podrá ser oponible al agente del Ministerio Público. [...] En este evento, el documento en el que consten la decisión de no conciliar no se agregará al expediente y será devuelto por el agente del Ministerio Público al finalizar la audiencia de conciliación.",
+    "pregunta": "El comité de conciliación de una gobernación decidió no conciliar la reclamación de una contratista. El acta explica la decisión con la estrategia de defensa que usará el departamento si lo demandan: los testigos que pedirá y los argumentos que planteará. Antes de la audiencia, el procurador judicial pide el acta completa, y el abogado de la contratista, mediante un derecho de petición, solicita una copia. Esteban, técnico que apoya a la secretaría técnica del comité, debe proyectar las dos respuestas. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar copia a los dos, porque las actas del comité son documentos públicos que cualquier persona puede consultar.",
+        "explicacion": "Incorrecta. Cuando la decisión de no conciliar revela la estrategia de defensa, el documento goza de reserva (art. 129, inc. 1), y por eso no debe entregarse a la contraparte."
+      },
+      {
+        "id": "B",
+        "texto": "Remitir el acta íntegra al procurador y negar la copia al abogado, porque a la contraparte se le opone la reserva.",
+        "explicacion": "Correcta. El acta revela la estrategia de defensa y goza de reserva (art. 129, inc. 1), que no puede oponerse al agente del Ministerio Público (inc. 2). El procurador recibe el documento completo, que no se agrega al expediente y que él devuelve al terminar la audiencia (inc. 4); al abogado de la contratista se le niega la copia."
+      },
+      {
+        "id": "C",
+        "texto": "Negar el acta a los dos, porque la reserva de la estrategia de defensa se aplica frente a cualquier solicitante.",
+        "explicacion": "Incorrecta. La reserva no puede oponerse al agente del Ministerio Público (art. 129, inc. 2): el procurador debe recibir el acta."
+      },
+      {
+        "id": "D",
+        "texto": "Entregar copia al abogado y enviar al procurador solo la parte resolutiva del acta, sin los fundamentos.",
+        "explicacion": "Incorrecta. Invierte la regla: a la contraparte se le opone la reserva, y al procurador no se le puede oponer, de modo que debe recibir el documento con sus fundamentos (art. 129, incs. 1 y 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el acta de no conciliar expone la estrategia de defensa del departamento. Regla: en ese caso el documento goza de reserva conforme al art. 19 de la Ley 1712 de 2014 (art. 129, inc. 1, de la Ley 2220 de 2022); la reserva no es oponible al agente del Ministerio Público, y el documento no se agrega al expediente: el agente lo devuelve al terminar la audiencia (incs. 2 y 4). Conclusión: remitirlo al procurador y negar la copia al abogado de la contratista.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-JUR-073",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de repetición",
+    "subtema": "Medidas cautelares en la acción de repetición: embargo antes de notificar el auto admisorio",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 678 de 2001 y Ley 1437 de 2011",
+    "articulos": [
+      "Ley 678 de 2001, art. 23 inc. 1 (modificado por el art. 45 de la Ley 2195 de 2022)",
+      "Ley 678 de 2001, art. 24 (modificado por el art. 46 de la Ley 2195 de 2022)",
+      "Ley 678 de 2001, art. 25 (modificado por el art. 47 de la Ley 2195 de 2022)",
+      "Ley 1437 de 2011, art. 233 inc. 2",
+      "Ley 1437 de 2011, art. 234 inc. 1"
+    ],
+    "texto_fuente": "En los procesos de acción repetición son procedentes las medidas de embargo y secuestro de los bienes del demandado según las reglas del Código General del Proceso. [...] La autoridad judicial que conozca de la acción de repetición o del llamamiento en garantía, antes de la notificación del auto admisorio de la demanda o del llamamiento en garantía, decretará las medidas cautelares que se hubieren solicitado conforme el artículo anterior. [...] A solicitud de la entidad que interponga la acción de repetición o que solicite el llamamiento en garantía, la autoridad judicial decretara el embargo de bienes y salarios y podrá decretar el secuestro de bienes sujetos a registro [...] El secuestro de los bienes sujetos a registro se practicará una vez se haya inscrito el embargo [...] El Juez o Magistrado Ponente al admitir la demanda, en auto separado, ordenará correr traslado de la solicitud de medida cautelar para que el demandado se pronuncie sobre ella en escrito separado dentro del término de cinco (5) días, plazo que correrá en forma independiente al de la contestación de la demanda. [...] Desde la presentación de la solicitud y sin previa notificación a la otra parte, el Juez o Magistrado Ponente podrá adoptar una medida cautelar, cuando cumplidos los requisitos para su adopción, se evidencie que por su urgencia, no es posible agotar el trámite previsto en el artículo anterior.",
+    "pregunta": "El comité de conciliación de un municipio decidió demandar en repetición a un exsecretario de obras, cuya culpa grave originó una condena que el municipio ya pagó. Mientras prepara la demanda, Alejandra, profesional de la oficina jurídica, se entera de que el exsecretario puso en venta un apartamento a su nombre, que es su único bien de valor. Quiere asegurar ese bien sin alertarlo antes de tiempo. ¿Cómo debe proceder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir el embargo en la demanda y prever que el juez, antes de decidirlo, le corra traslado de cinco días al exsecretario.",
+        "explicacion": "Incorrecta. El traslado de cinco días es el trámite general de las medidas cautelares en el contencioso (art. 233 del CPACA). En la repetición hay una regla especial: las medidas solicitadas se decretan antes de notificar el auto admisorio (art. 24 de la Ley 678)."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir el embargo como medida de urgencia, pues solo así el juez puede decretarlo sin oír antes al exsecretario.",
+        "explicacion": "Incorrecta. La medida de urgencia del art. 234 del CPACA no es la única vía para decretar el embargo sin oír antes al demandado: en la repetición, la ley ordena al juez decretar las medidas solicitadas antes de notificar el auto admisorio (art. 24 de la Ley 678), sin que haya que acreditar urgencia."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir en la demanda el embargo del apartamento, que el juez decretará antes de notificarle el auto admisorio.",
+        "explicacion": "Correcta. En la repetición procede el embargo de los bienes del demandado (arts. 23 y 25 de la Ley 678, mod. Ley 2195 de 2022), y el juez debe decretar las medidas solicitadas antes de la notificación del auto admisorio (art. 24), de modo que el exsecretario no conocerá la demanda antes del embargo. El secuestro de un bien sujeto a registro es facultativo y solo se practica después de inscrito el embargo (art. 25)."
+      },
+      {
+        "id": "D",
+        "texto": "Esperar la sentencia de repetición y pedir el embargo dentro del proceso ejecutivo que se adelante para cobrarla.",
+        "explicacion": "Incorrecta. Las medidas cautelares proceden en el propio proceso de repetición (arts. 23 y 24 de la Ley 678); esperar la sentencia dejaría al exsecretario en libertad de vender el apartamento."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el exsecretario está vendiendo su único bien y la entidad quiere asegurarlo sin alertarlo. Regla: en la repetición procede el embargo de los bienes del demandado (arts. 23 y 25 de la Ley 678, mod. Ley 2195 de 2022), y el juez decreta las medidas solicitadas antes de notificar el auto admisorio (art. 24): regla especial frente al traslado previo del art. 233 del CPACA, sin necesidad de acreditar la urgencia del art. 234. Conclusión: pedir el embargo del apartamento en la demanda.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0678_2001.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-JUR-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de repetición",
+    "subtema": "Acuerdo de pago en el cobro coactivo de la condena por llamamiento en garantía: condonación de intereses",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 678 de 2001",
+    "articulos": [
+      "art. 13-1 inc. 1, lit. a y parágrafo (adicionado por el art. 49 de la Ley 2195 de 2022)"
+    ],
+    "texto_fuente": "Una vez ejecutoriada la decisión y en el marco del proceso ejecutivo debido a la condena obtenida en virtud de la acción de repetición o en el proceso por jurisdicción coactiva, cuando la condena se obtuvo por el llamamiento en garantía con fines de repetición, se podrán realizar acuerdos de pago en los cuales se podrá condonar parte del capital conforme a los siguientes preceptos: [...] a) Si el sujeto de repetición devenga entre 0 y 10 SMLMV y tiene un patrimonio igual o inferior a 150 SMLMV podrá llegarse a un acuerdo en el cual este se comprometa a realizar un pago mínimo correspondiente al 65% del capital de la condena. [...] PARÁGRAFO. Se podrá realizar una condonación de intereses del 100% si el sujeto de repetición realiza el pago en un término máximo de un año después de la ejecutoria de la sentencia, hasta en un 50% si realiza el pago en un término máximo de 2 años, y hasta en un 30% si realiza el pago dentro de un término máximo de 3 años. Esta condonación se podrá aplicar a las conciliaciones judiciales y extrajudiciales dispuestas en los artículos 12 y 13 de esta ley.",
+    "pregunta": "En un proceso de reparación directa contra un municipio, el juez aceptó el llamamiento en garantía con fines de repetición y, en la sentencia, declaró que un exfuncionario actuó con culpa grave y debe reembolsar lo que el municipio pague. La sentencia quedó ejecutoriada el 15 de abril de 2025, y el municipio pagó a las víctimas el 10 de febrero de 2026. En el cobro coactivo, el exfuncionario, que devenga 6 salarios mínimos y tiene un patrimonio de 90 salarios mínimos, ofrece pagar de contado el 30 de junio de 2026 si se le condonan intereses. Diana, técnica del grupo de cobro coactivo, debe calcular el máximo de intereses que puede condonarse. ¿Qué debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta la mitad de ellos, porque pagaría pasado el primer año y antes del segundo, contados desde la ejecutoria del fallo.",
+        "explicacion": "Correcta. Los plazos de la condonación se cuentan desde la ejecutoria de la sentencia (15 de abril de 2025). El 30 de junio de 2026 ya pasó el primer año (15 de abril de 2026), pero no el segundo (15 de abril de 2027), así que la condonación puede llegar al 50% (art. 13-1, parágrafo)."
+      },
+      {
+        "id": "B",
+        "texto": "La totalidad de los intereses, porque el pago llegaría antes de cumplirse un año desde que el municipio pagó a las víctimas.",
+        "explicacion": "Incorrecta. El año para condonar el 100% de los intereses se cuenta desde la ejecutoria de la sentencia, no desde el pago que hizo el municipio (art. 13-1, parágrafo). Desde la ejecutoria ya había pasado más de un año."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 35% de los intereses, por el pago mínimo del 65% previsto para quien devenga menos de 10 salarios mínimos.",
+        "explicacion": "Incorrecta. El pago mínimo del 65% se refiere al capital de la condena y depende de los ingresos y el patrimonio (art. 13-1, lit. a). La condonación de intereses depende del momento del pago (parágrafo)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna parte de los intereses, porque esa condonación está prevista para las conciliaciones en la acción de repetición.",
+        "explicacion": "Incorrecta. La condonación de intereses se prevé en el artículo que regula los acuerdos de pago en el cobro, incluido el coactivo de la condena por llamamiento en garantía, y la ley la extiende además a las conciliaciones (art. 13-1, inc. 1 y parágrafo)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la sentencia quedó ejecutoriada el 15 de abril de 2025 y el pago se haría el 30 de junio de 2026. Regla: en el cobro coactivo de la condena obtenida por llamamiento en garantía pueden celebrarse acuerdos de pago, y los intereses pueden condonarse en 100% si se paga dentro del año siguiente a la ejecutoria, hasta en 50% dentro de dos años y hasta en 30% dentro de tres (art. 13-1 de la Ley 678, adicionado por la Ley 2195 de 2022). Cálculo: el pago cae entre el primer y el segundo año. Conclusión: hasta el 50%.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0678_2001.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-JUR-075",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Inhabilidades e incompatibilidades",
+    "subtema": "Inhabilidad para ser designado por haber dado lugar, con culpa grave, a una condena contra el Estado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Constitución Política de 1991",
+    "articulos": [
+      "art. 122 incs. 5 y 6 (modificados por el art. 4 del Acto Legislativo 1 de 2009)"
+    ],
+    "texto_fuente": "Sin perjuicio de las demás sanciones que establezca la ley, no podrán ser inscritos como candidatos a cargos de elección popular, ni elegidos, ni designados como servidores públicos, ni celebrar personalmente, o por interpuesta persona, contratos con el Estado, quienes hayan sido condenados, en cualquier tiempo, por la comisión de delitos que afecten el patrimonio del Estado [...] Tampoco quien haya dado lugar, como servidores públicos, con su conducta dolosa o gravemente culposa, así calificada por sentencia ejecutoriada, a que el Estado sea condenado a una reparación patrimonial, salvo que asuma con cargo a su patrimonio el valor del daño.",
+    "pregunta": "En septiembre de 2024 quedó ejecutoriada la sentencia de repetición que declaró que Hernán, exdirector de un instituto departamental, actuó con culpa grave al ordenar el cierre de un establecimiento sin procedimiento previo, lo que llevó a que el departamento fuera condenado a indemnizar a su dueño. La sentencia le ordenó reembolsar 140 millones de pesos, que no ha pagado. Hernán no tiene condenas penales. El gobernador quiere nombrarlo secretario de infraestructura y pide un concepto a la oficina jurídica. ¿Qué debe conceptuar Lucía, la profesional encargada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede ser nombrado, porque la inhabilidad constitucional alcanza a quienes tienen condenas penales por delitos contra el patrimonio del Estado.",
+        "explicacion": "Incorrecta. Además de la condena penal por delitos contra el patrimonio del Estado (art. 122, inc. 5), la Constitución inhabilita a quien, con conducta dolosa o gravemente culposa calificada por sentencia ejecutoriada, dio lugar a una condena patrimonial contra el Estado (inc. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no puede ser nombrado, porque esa inhabilidad es permanente y no admite excepción alguna.",
+        "explicacion": "Incorrecta. La inhabilidad del inc. 6 del art. 122 tiene una salvedad expresa: no se aplica si el servidor asume con su patrimonio el valor del daño."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede ser nombrado cuando se cumplan cinco años desde la ejecutoria de la sentencia de repetición.",
+        "explicacion": "Incorrecta. La Constitución no fija un plazo de cinco años para esta inhabilidad; la levanta solo si el responsable asume con su patrimonio el valor del daño (art. 122, inc. 6)."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede ser nombrado mientras no cubra con sus propios bienes el valor del daño por el que se condenó al departamento.",
+        "explicacion": "Correcta. La sentencia de repetición calificó su conducta como gravemente culposa, y esa conducta dio lugar a la condena contra el departamento. Por eso no puede ser designado servidor público, salvo que asuma con su patrimonio el valor del daño (art. 122, inc. 6)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: una sentencia ejecutoriada calificó de gravemente culposa la conducta de Hernán, que dio lugar a la condena del departamento, y él no ha reembolsado. Regla: no pueden ser designados servidores públicos quienes, con conducta dolosa o gravemente culposa así calificada por sentencia ejecutoriada, hayan dado lugar a que el Estado fuera condenado a una reparación patrimonial, salvo que asuman con su patrimonio el valor del daño (art. 122, inc. 6, de la Constitución, mod. A. L. 1 de 2009). Conclusión: no puede nombrarse mientras no pague.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-JUR-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Inhabilidades e incompatibilidades",
+    "subtema": "Prohibición de nombrar parientes propios y de quienes intervinieron en la designación, y excepción del mérito",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Constitución Política de 1991",
+    "articulos": [
+      "art. 126 incs. 1 a 3 (modificado por el art. 2 del Acto Legislativo 2 de 2015)"
+    ],
+    "texto_fuente": "Los servidores públicos no podrán en ejercicio de sus funciones, nombrar, postular, ni contratar con personas con las cuales tengan parentesco hasta el cuarto grado de consanguinidad, segundo de afinidad, primero civil, o con quien estén ligados por matrimonio o unión permanente. Tampoco podrán nombrar ni postular como servidores públicos, ni celebrar contratos estatales, con quienes hubieren intervenido en su postulación o designación, ni con personas que tengan con estas los mismos vínculos señalados en el inciso anterior. [...] Se exceptúan de lo previsto en este artículo los nombramientos que se hagan en aplicación de las normas vigentes sobre ingreso o ascenso por méritos en cargos de carrera.",
+    "pregunta": "El contralor de un municipio, elegido por el concejo municipal, va a hacer tres nombramientos: 1) como asesora de su despacho, cargo de libre nombramiento y remoción, a la hermana de un concejal que votó por su elección (pariente del concejal en segundo grado de consanguinidad); 2) como jefe de una oficina, también de libre nombramiento y remoción, al primo hermano de su esposa (pariente del contralor en cuarto grado de afinidad), y 3) en un cargo de carrera, a su propio sobrino (tercer grado de consanguinidad), que ocupó el primer lugar en la lista de elegibles del concurso de méritos. Ana, profesional de la oficina jurídica de la contraloría, revisa los proyectos de decreto. ¿Cuáles nombramientos están prohibidos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El primero y el segundo, porque la prohibición alcanza a los parientes por afinidad hasta el cuarto grado.",
+        "explicacion": "Incorrecta. Para la afinidad, la prohibición llega solo hasta el segundo grado (art. 126, inc. 1). El primo hermano de la esposa está en cuarto grado de afinidad, fuera del límite."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el primero, porque esa persona tiene vínculo con quien participó en la elección del contralor.",
+        "explicacion": "Correcta. El contralor no puede nombrar a personas que tengan los vínculos del inc. 1 con quienes intervinieron en su designación (art. 126, inc. 2), y la hermana del concejal está en segundo grado de consanguinidad con él. El segundo está fuera del límite de afinidad (segundo grado), y el tercero se hace por mérito en un cargo de carrera (inc. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "El primero y el tercero, porque el sobrino está dentro del tercer grado aunque haya ganado el concurso.",
+        "explicacion": "Incorrecta. El sobrino sí está dentro del cuarto grado de consanguinidad, pero los nombramientos por méritos en cargos de carrera están exceptuados de la prohibición (art. 126, inc. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque la hermana del concejal no es pariente del contralor y los otros dos están permitidos.",
+        "explicacion": "Incorrecta. La prohibición no se limita a los parientes del propio contralor: también cubre a quienes tengan esos vínculos con quienes intervinieron en su designación, como el concejal que votó por él (art. 126, inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la asesora es hermana de un concejal que votó por la elección del contralor; el primo de la esposa está en cuarto grado de afinidad, y el sobrino ganó un concurso de carrera. Regla: los servidores no pueden nombrar a sus parientes hasta el cuarto grado de consanguinidad o el segundo de afinidad (art. 126, inc. 1, de la Constitución), ni a quienes tengan esos vínculos con quienes intervinieron en su designación (inc. 2), salvo los nombramientos por méritos en carrera (inc. 3). Conclusión: solo el primero está prohibido.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
   }
 ]

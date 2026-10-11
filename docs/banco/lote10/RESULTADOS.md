@@ -1,7 +1,7 @@
-# Partes 10 a 14: paquetes por convocatoria, áreas por nivel, docentes y aptitudes
+# Partes 10 a 15: paquetes por convocatoria, áreas por nivel, docentes, aptitudes y sectores
 
 **Fecha:** 11 de octubre de 2026
-**Estado:** 559 preguntas nuevas en `beta` y 1 en revisión.
+**Estado:** 709 preguntas nuevas en `beta` y 1 en revisión.
 
 ## Por qué estas partes
 
@@ -33,13 +33,20 @@ La investigación completa con fuentes quedó en el scratchpad de la sesión. Lo
 | 13 | Gestión Territorial (nuevo) | TC-TER-001 a 040 | 40 | Leyes 136, 1551, 617, 2200 y 715; Constitución |
 | 14 | Comprensión Lectora (lectura crítica) | TC-LEC-025 a 064 | 40 | Textos originales |
 | 14 | Razonamiento Lógico y Cuantitativo | TC-RAZ-017 a 036 | 20 | — |
+| 15 | Contratación Estatal Aplicada | TC-CAP-057 a 076 | 20 | Decreto 1082 (mínima cuantía, contratación directa, estudios previos, SECOP, PAA); Leyes 80 y 1474 |
+| 15 | Gestión Jurídica | TC-JUR-057 a 076 | 20 | CPACA (actos, medidas cautelares, condenas); Ley 2220; Ley 678; Constitución |
+| 15 | Talento Humano (retiro del servicio) | TC-TH-071 a 080 | 10 | Decreto 1083 (Título 11); Ley 909; Decreto Ley 1045 |
+| 15 | Gestión Tributaria (DIAN) | TC-TRI-061 a 080 | 20 | Estatuto Tributario (IVA, retención, renta, ganancias ocasionales, anticipo) |
+| 15 | Gestión Ambiental (nuevo) | TC-AMB-001 a 040 | 40 | Ley 99; Decreto 1076 de 2015; Ley 1333 con la Ley 2387 de 2024; Ley 1523 |
+| 15 | Distrito Capital (Bogotá) (nuevo) | TC-BOG-001 a 020 | 20 | Decreto Ley 1421 de 1993; Acuerdo 257 de 2006; Constitución art. 323 |
+| 15 | Políticas Sociales y Enfoque Diferencial (nuevo) | TC-SOC-001 a 020 | 20 | Leyes 1098, 1251, 1257 y 1618 |
 
 **Diferencia por nivel (Parte 11, salud y territorial):** la mitad de las preguntas son casos operativos (`nivel: ["asistencial","tecnico"]`) y la otra mitad de análisis (`["profesional","asesor"]`). La app ya envía el nivel de estas preguntas al navegador, y cada aspirante ve las de su nivel más las comunes.
 
 ## Proceso y resultados
 
-- **Primera resolución a ciegas (560):** ninguna clave difirió.
-- **Correcciones (unas 200 preguntas):**
+- **Primera resolución a ciegas (710):** ninguna clave difirió.
+- **Correcciones (unas 230 preguntas):**
   - otras opciones defendibles;
   - supuestos que faltaban en el enunciado;
   - claves que copiaban la norma;
@@ -55,14 +62,16 @@ La investigación completa con fuentes quedó en el scratchpad de la sesión. Lo
 3. **Resolución DIAN 165 de 2023: compilada y derogada** por la Resolución 227 de 2025 (Resolución Única). Las 20 preguntas de factura electrónica citan ahora la 227; el texto de las reglas evaluadas es idéntico.
 4. **Ley 610 de 2000: la caducidad sigue en 5 años.** El Decreto Ley 403 de 2020 la había subido a 10, pero la Corte declaró inexequibles esas modificaciones (C-090 de 2022). Las notas del Senado están en `basedoc/js/<norma>.js`.
 5. **Decreto 1072 frente al CST reformado:** el decreto todavía pide autorización para horas extras y la Ley 2466 de 2025 la eliminó. Prevalece la ley.
-6. **Normogramas de Avance Jurídico (DIAN, Supersalud):** después del texto vigente vienen "Notas de Vigencia" y "Legislación Anterior"; a veces ese encabezado está vacío y lo sigue texto vigente. Se revisó caso por caso.
+6. **UVT a pesos sin el redondeo del art. 868 del ET.** Cinco preguntas DIAN usaban, por ejemplo, $523.740 como sanción mínima; con el redondeo al múltiplo de mil es $524.000, la cifra que publica la DIAN. Se corrigieron (TC-TRI-022, 025, 041, 046 y TC-ADU-023), y la cifra sin redondear quedó como distractor. Tres preguntas de ganancia ocasional aplican además el art. 577 (valores del formulario al múltiplo de mil).
+7. **La lista de tachados de la Ley 80 estaba incompleta:** faltaban los segmentos "o concurso(s)" del art. 8. Ninguna pregunta publicada los cita.
+8. **Normogramas de Avance Jurídico (DIAN, Supersalud):** después del texto vigente vienen "Notas de Vigencia" y "Legislación Anterior"; a veces ese encabezado está vacío y lo sigue texto vigente. Se revisó caso por caso.
 
 ## Cómo queda el banco
 
-**1.596 preguntas activas · 1.412 aptas para simulacro · 1.275 verificadas a ciegas.** Antes de estas partes eran 1.037, 853 y 837.
-- Aptas por sección: generales 360, funcionales 757, aptitudes 175, comportamentales 120.
-- Módulos nuevos: Gestión Tributaria (60), Aduanero y Cambiario (40), Carrera y Gestión Institucional DIAN (20), Derecho Laboral (40), Inspección del Trabajo (19 activas), Almacén e Inventarios (20), Sistema de Salud y ESE (40), Gestión Territorial (40), Pedagogía y Normativa Docente (40) y Gestión Escolar (40).
-- Módulos ampliados: Talento Humano (70), Contratación Estatal Aplicada (56), Gestión Jurídica (56), Gestión Financiera (48), Comprensión Lectora (96) y Razonamiento (85).
+**1.746 preguntas activas · 1.562 aptas para simulacro · 1.425 verificadas a ciegas.** Antes de estas partes eran 1.037, 853 y 837.
+- Aptas por sección: generales 360, funcionales 907, aptitudes 175, comportamentales 120.
+- Módulos nuevos: Gestión Tributaria (80), Aduanero y Cambiario (40), Carrera y Gestión Institucional DIAN (20), Derecho Laboral (40), Inspección del Trabajo (19 activas), Almacén e Inventarios (20), Sistema de Salud y ESE (40), Gestión Territorial (40), Pedagogía y Normativa Docente (40), Gestión Escolar (40), Gestión Ambiental (40), Distrito Capital (20) y Políticas Sociales (20).
+- Módulos ampliados: Talento Humano (80), Contratación Estatal Aplicada (76), Gestión Jurídica (76), Gestión Financiera (48), Comprensión Lectora (96) y Razonamiento (85).
 
 ## Pendientes para revisión humana
 
@@ -72,3 +81,5 @@ La investigación completa con fuentes quedó en el scratchpad de la sesión. Lo
 - [ ] **TC-SAL-007 y 017:** régimen de gerentes en ESE de primer nivel (Ley 1438 art. 70 frente al Decreto 780). La designación y el período de gerentes se dejaron fuera porque la Ley 1797 de 2016 no estaba entre las fuentes.
 - [ ] **Concurso docente:** la compilación del Decreto 1075 de Función Pública dice "última actualización: 29 de abril de 2024". Conviene contrastar con el normograma del MinEducación los artículos del concurso, la evaluación y la provisión.
 - [ ] **TC-DGI-008:** vigencia de la lista de elegibles de 1 año (art. 36 del Decreto Ley 927); la Sentencia C-197 de 2025 solo tocó un inciso del parágrafo transitorio.
+- [ ] **TC-AMB (ambiental):** la compilación del Decreto 1076 de Función Pública declara su última actualización el 24 de abril de 2024, aunque trae modificaciones de 2025. Las preguntas evitan los umbrales del sector eléctrico (Decreto 1156 de 2025).
+- [ ] **TC-SOC:** las competencias de las comisarías de familia cambiaron con la Ley 2126 de 2021. Las preguntas usan defensoras de familia para el trámite del restablecimiento de derechos y solo lo que el texto vigente confirma.

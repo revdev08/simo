@@ -53,7 +53,7 @@
   },
   {
     "id": "TC-TRI-022",
-    "version": 1,
+    "version": 2,
     "estado": "beta",
     "capa": 4,
     "eje": "dian_tributario",
@@ -68,34 +68,35 @@
     "norma": "Estatuto Tributario (Decreto 624 de 1989)",
     "articulos": [
       "art. 658-3 num. 3 (adicionado por el art. 49 de la Ley 1111 de 2006)",
-      "art. 639 (inciso 2 modificado por el art. 280 de la Ley 1819 de 2016)"
+      "art. 639 (inciso 2 modificado por el art. 280 de la Ley 1819 de 2016)",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
     ],
-    "texto_fuente": "3. Sanción por no actualizar la información dentro del mes siguiente al hecho que genera la actualización, por parte de las personas o entidades inscritas en el Registro Unico Tributario, RUT. Se impondrá una multa equivalente a una (1) UVT por cada día de retraso en la actualización de la información. Cuando la desactualización del RUT se refiera a la dirección o a la actividad económica del obligado, la sanción será de dos (2) UVT por cada día de retraso en la actualización de la información. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] Lo dispuesto en este artículo no será aplicable a los intereses de mora, a las sanciones contenidas en los numerales 1 y 3 del artículo 658-3 de este Estatuto ni a las sanciones relativas a la declaración del monotributo.",
-    "pregunta": "Un gestor de la División de Fiscalización revisa el caso de una sociedad que el viernes 14 de agosto de 2026 cambió su actividad económica principal y solo actualizó el RUT el viernes 18 de septiembre de 2026. Para el cálculo, la UVT es de $52.374. ¿Cuál es el valor de la sanción que prevé la ley, antes de cualquier reducción por gradualidad?",
+    "texto_fuente": "3. Sanción por no actualizar la información dentro del mes siguiente al hecho que genera la actualización, por parte de las personas o entidades inscritas en el Registro Unico Tributario, RUT. Se impondrá una multa equivalente a una (1) UVT por cada día de retraso en la actualización de la información. Cuando la desactualización del RUT se refiera a la dirección o a la actividad económica del obligado, la sanción será de dos (2) UVT por cada día de retraso en la actualización de la información. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] Lo dispuesto en este artículo no será aplicable a los intereses de mora, a las sanciones contenidas en los numerales 1 y 3 del artículo 658-3 de este Estatuto ni a las sanciones relativas a la declaración del monotributo. [...] Cuando las normas tributarias expresadas en UVT se conviertan en valores absolutos, se empleará el procedimiento de aproximaciones que se señala a continúación, a fin de obtener cifras enteras y de fácil operación: [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
+    "pregunta": "Un gestor de la División de Fiscalización revisa el caso de una sociedad que el viernes 14 de agosto de 2026 cambió su actividad económica principal y solo actualizó el RUT el viernes 18 de septiembre de 2026. Para el cálculo, la UVT es de $52.374, y la sanción se convierte a pesos sobre su total en UVT. ¿Cuál es el valor de la sanción que prevé la ley, antes de cualquier reducción por gradualidad?",
     "opciones": [
       {
         "id": "A",
-        "texto": "$209.496",
-        "explicacion": "Incorrecta. Aplica 1 UVT por día (4 × $52.374). Cuando la desactualización se refiere a la actividad económica, la sanción es de 2 UVT por día."
+        "texto": "$209.000",
+        "explicacion": "Incorrecta. Aplica 1 UVT por día (4 UVT × $52.374 = $209.496, aproximado a $209.000). Cuando la desactualización se refiere a la actividad económica, la sanción es de 2 UVT por día."
       },
       {
         "id": "B",
-        "texto": "$523.740",
-        "explicacion": "Incorrecta. Sube el resultado a la sanción mínima de 10 UVT, pero el art. 639 excluye de ese mínimo la sanción del num. 3 del art. 658-3."
+        "texto": "$524.000",
+        "explicacion": "Incorrecta. Sube el resultado a la sanción mínima de 10 UVT ($523.740, aproximado a $524.000), pero el art. 639 excluye de ese mínimo la sanción del num. 3 del art. 658-3."
       },
       {
         "id": "C",
-        "texto": "$3.666.180",
-        "explicacion": "Incorrecta. Cuenta los 35 días desde el cambio de actividad (2 × 35 × $52.374). El retraso solo se cuenta después de vencido el mes que la ley da para actualizar."
+        "texto": "$3.666.000",
+        "explicacion": "Incorrecta. Cuenta los 35 días desde el cambio de actividad (70 UVT × $52.374 = $3.666.180, aproximado a $3.666.000). El retraso solo se cuenta después de vencido el mes que la ley da para actualizar."
       },
       {
         "id": "D",
-        "texto": "$418.992",
-        "explicacion": "Correcta. El plazo para actualizar vencía el lunes 14 de septiembre de 2026; hubo 4 días de retraso (15 al 18 de septiembre). Por tratarse de la actividad económica: 2 UVT × 4 días × $52.374 = $418.992, sin ajuste al mínimo."
+        "texto": "$419.000",
+        "explicacion": "Correcta. El plazo para actualizar vencía el lunes 14 de septiembre de 2026; hubo 4 días de retraso (15 al 18 de septiembre). Por tratarse de la actividad económica: 2 UVT × 4 días = 8 UVT; 8 × $52.374 = $418.992, que el art. 868 aproxima al múltiplo de mil más cercano: $419.000, sin ajuste al mínimo."
       }
     ],
     "respuestaCorrecta": "D",
-    "explicacionIA": "Dato decisivo: el cambio de actividad fue el 14 de agosto de 2026, así que el plazo para actualizar vencía el 14 de septiembre; la actualización del 18 de septiembre tuvo 4 días de retraso. Regla: el art. 658-3 num. 3 fija 2 UVT por día cuando la desactualización se refiere a la actividad económica, y el art. 639 excluye esta sanción del mínimo de 10 UVT. Cálculo: 2 × 4 × $52.374 = $418.992.",
+    "explicacionIA": "Dato decisivo: el cambio de actividad fue el 14 de agosto de 2026, así que el plazo para actualizar vencía el 14 de septiembre; la actualización del 18 de septiembre tuvo 4 días de retraso. Regla: el art. 658-3 num. 3 fija 2 UVT por día cuando la desactualización se refiere a la actividad económica, y el art. 639 excluye esta sanción del mínimo de 10 UVT. Cálculo: 2 × 4 = 8 UVT; 8 × $52.374 = $418.992, que el art. 868 aproxima al múltiplo de mil: $419.000.",
     "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
     "autor": "IA",
     "revision": {
@@ -211,7 +212,7 @@
   },
   {
     "id": "TC-TRI-025",
-    "version": 1,
+    "version": 2,
     "estado": "beta",
     "capa": 4,
     "eje": "dian_tributario",
@@ -227,25 +228,26 @@
     "articulos": [
       "art. 644 num. 1 (modificado por el art. 285 de la Ley 1819 de 2016)",
       "art. 640 num. 1 (modificado por el art. 282 de la Ley 1819 de 2016)",
-      "art. 639"
+      "art. 639",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
     ],
-    "texto_fuente": "El diez por ciento (10%) del mayor valor a pagar o del menor saldo a su favor, según el caso, que se genere entre la corrección y la declaración inmediatamente anterior a aquella, cuando la corrección se realice después del vencimiento del plazo para declarar y antes de que se produzca emplazamiento para corregir de que trata el artículo 685, o auto que ordene visita de inspección tributaria. [...] 1. La sanción se reducirá al cincuenta por ciento (50%) del monto previsto en la ley, en tanto concurran las siguientes condiciones: a) Que dentro de los dos (2) años anteriores a la fecha de la comisión de la conducta sancionable no se hubiere cometido la misma; y b) Siempre que la Administración Tributaria no haya proferido pliego de cargos, requerimiento especial o emplazamiento previo por no declarar, según el caso. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt.",
+    "texto_fuente": "El diez por ciento (10%) del mayor valor a pagar o del menor saldo a su favor, según el caso, que se genere entre la corrección y la declaración inmediatamente anterior a aquella, cuando la corrección se realice después del vencimiento del plazo para declarar y antes de que se produzca emplazamiento para corregir de que trata el artículo 685, o auto que ordene visita de inspección tributaria. [...] 1. La sanción se reducirá al cincuenta por ciento (50%) del monto previsto en la ley, en tanto concurran las siguientes condiciones: a) Que dentro de los dos (2) años anteriores a la fecha de la comisión de la conducta sancionable no se hubiere cometido la misma; y b) Siempre que la Administración Tributaria no haya proferido pliego de cargos, requerimiento especial o emplazamiento previo por no declarar, según el caso. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] Cuando las normas tributarias expresadas en UVT se conviertan en valores absolutos, se empleará el procedimiento de aproximaciones que se señala a continúación, a fin de obtener cifras enteras y de fácil operación: [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
     "pregunta": "Un gestor de servicio al ciudadano de la DIAN orienta a una sociedad que en octubre de 2026 corregirá su declaración de renta del año gravable 2024, presentada a tiempo, porque omitió unos ingresos. La corrección aumenta el saldo a pagar en $4.200.000. La DIAN no le ha enviado emplazamiento, auto de inspección ni requerimiento alguno, y la sociedad no ha corregido declaraciones con sanción en los últimos cinco años. Para 2026, la UVT es de $52.374. ¿Qué valor de sanción por corrección debe liquidar?",
     "opciones": [
       {
         "id": "A",
-        "texto": "$420.000",
-        "explicacion": "Incorrecta. Es el 10% del mayor valor a pagar sin la reducción por gradualidad, y además queda por debajo del mínimo de 10 UVT."
+        "texto": "$523.740",
+        "explicacion": "Incorrecta. Llega bien a la sanción mínima de 10 UVT, pero deja la conversión sin aproximar: por el art. 868, todo resultado superior a $10.000 se lleva al múltiplo de mil más cercano."
       },
       {
         "id": "B",
         "texto": "$210.000",
-        "explicacion": "Incorrecta. Aplica bien el 10% y la reducción al 50%, pero olvida que ninguna sanción, aun reducida, puede ser inferior a 10 UVT ($523.740)."
+        "explicacion": "Incorrecta. Aplica bien el 10% y la reducción al 50%, pero olvida que ninguna sanción, aun reducida, puede ser inferior a 10 UVT ($524.000)."
       },
       {
         "id": "C",
-        "texto": "$523.740",
-        "explicacion": "Correcta. 10% de $4.200.000 = $420.000; con la reducción al 50% queda en $210.000, que es inferior a la sanción mínima de 10 UVT (10 × $52.374). Se liquida el mínimo."
+        "texto": "$524.000",
+        "explicacion": "Correcta. 10% de $4.200.000 = $420.000; con la reducción al 50% queda en $210.000, que es inferior a la sanción mínima de 10 UVT (10 × $52.374 = $523.740, que el art. 868 aproxima a $524.000). Se liquida el mínimo."
       },
       {
         "id": "D",
@@ -254,7 +256,7 @@
       }
     ],
     "respuestaCorrecta": "C",
-    "explicacionIA": "Dato decisivo: la corrección es voluntaria (sin emplazamiento ni auto de inspección), aumenta el saldo a pagar en $4.200.000 y la sociedad no ha incurrido en esa conducta en los dos años anteriores. Reglas: art. 644 num. 1, 10% ($420.000); art. 640 num. 1, reducción al 50% ($210.000); art. 639, ninguna sanción, aun reducida, es inferior a 10 UVT. Cálculo: 10 × $52.374 = $523.740. Conclusión: debe liquidar $523.740.",
+    "explicacionIA": "Dato decisivo: la corrección es voluntaria (sin emplazamiento ni auto de inspección), aumenta el saldo a pagar en $4.200.000 y la sociedad no ha incurrido en esa conducta en los dos años anteriores. Reglas: art. 644 num. 1, 10% ($420.000); art. 640 num. 1, reducción al 50% ($210.000); art. 639, ninguna sanción, aun reducida, es inferior a 10 UVT; art. 868, la conversión a pesos se aproxima al múltiplo de mil. Cálculo: 10 × $52.374 = $523.740, que se aproxima a $524.000. Conclusión: debe liquidar $524.000.",
     "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
     "autor": "IA",
     "revision": {

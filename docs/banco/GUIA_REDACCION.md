@@ -131,6 +131,16 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 - **Corte de la prueba:** la DIAN 2676 solo evalúa normas expedidas antes del 19 de junio de 2026. Cada convocatoria puede fijar su propio corte.
 - **Régimen sancionatorio aduanero:** el Decreto Ley 920 de 2023 se declaró inexequible con efectos diferidos hasta el 20 de junio de 2026 (Sentencia C-072 de 2025). Lo derogó la Ley 2586 de 2026, del 19 de junio, que queda justo fuera del corte de la DIAN 2676. Por eso no escribimos preguntas de sanciones aduaneras para esa prueba.
 
+**UVT a pesos: siempre con el redondeo del art. 868 del Estatuto Tributario.**
+- La regla:
+  - por encima de $10.000, al múltiplo de mil más cercano;
+  - entre $100 y $10.000, al múltiplo de cien;
+  - de $100 o menos, al peso entero.
+- Ejemplo: la sanción mínima de 10 UVT con UVT de $52.374 es $524.000, no $523.740.
+- Varias preguntas de la DIAN usaban la cifra sin redondear y ni el redactor ni el resolvedor lo notaron. La cifra sin redondear sirve como distractor.
+
+**La lista de tachados también puede estar incompleta.** En la Ley 80, art. 8, faltaban los segmentos tachados "o concurso(s)". Ante la duda, revisa el HTML original del Senado (etiquetas `<s>` y `<strike>`).
+
 **Formato de la prueba real (investigación del 11 de octubre de 2026):**
 - En el sistema general de la CNSC no hay prueba de "competencias generales". Las funcionales pesan 60% (son eliminatorias con 65) y evalúan los ejes temáticos de cada empleo, que incluyen los temas del Estado.
 - Con el operador actual (FUAA), las funcionales son de juicio situacional: un caso y **tres opciones**. Nuestro banco usa cuatro. Cambiar a tres es una decisión de producto pendiente.

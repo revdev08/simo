@@ -244,23 +244,36 @@ export const CONVOCATORIAS: Convocatoria[] = [
     pruebasNota: NOTA_SISTEMA_GENERAL,
     perfiles: [
       {
-        id: 'territorial',
-        label: 'Gobernaciones y alcaldías',
-        area: 'territorial',
-        modulos: con([{ modulo: 'Gestión Territorial', peso: 5 }, { modulo: 'Planeación y Proyectos de Inversión', peso: 1 }], TRONCO),
+        id: 'integracion-social',
+        label: 'Integración Social (Bogotá)',
+        area: 'social',
+        modulos: con(
+          [
+            { modulo: 'Políticas Sociales y Enfoque Diferencial', peso: 5 },
+            { modulo: 'Distrito Capital (Bogotá)', peso: 2 },
+          ],
+          TRONCO,
+        ),
       },
       {
         id: 'hacienda',
-        label: 'Hacienda y finanzas',
+        label: 'Hacienda (Bogotá y territorios)',
         area: 'financiera',
         modulos: con(
           [
             { modulo: 'Gestión Financiera y Presupuestal', peso: 4 },
             { modulo: 'Contabilidad Pública', peso: 2.5 },
-            { modulo: 'Gestión Territorial', peso: 1.5 },
+            { modulo: 'Distrito Capital (Bogotá)', peso: 1.5 },
+            { modulo: 'Gestión Territorial', peso: 1 },
           ],
           TRONCO,
         ),
+      },
+      {
+        id: 'territorial',
+        label: 'Gobernaciones y alcaldías',
+        area: 'territorial',
+        modulos: con([{ modulo: 'Gestión Territorial', peso: 5 }, { modulo: 'Planeación y Proyectos de Inversión', peso: 1 }], TRONCO),
       },
       {
         id: 'asistencial',
@@ -271,9 +284,8 @@ export const CONVOCATORIAS: Convocatoria[] = [
       },
     ],
     cobertura:
-      'Régimen municipal y departamental, recursos del SGP, presupuesto, tesorería y contabilidad pública, planeación, y el tronco común de procedimiento, atención al ciudadano y Estado.',
-    faltantes:
-      'No cubrimos todavía el Estatuto Orgánico de Bogotá, los tributos distritales ni las políticas sociales (infancia, vejez, discapacidad) de la Secretaría de Integración Social.',
+      'Estatuto Orgánico y estructura de Bogotá, políticas sociales con enfoque diferencial (infancia, vejez, mujer, discapacidad), régimen municipal y departamental, recursos del SGP, presupuesto, tesorería y contabilidad pública, más el tronco común de procedimiento, atención al ciudadano y Estado.',
+    faltantes: 'No cubrimos los tributos distritales (predial, ICA) ni los temas técnicos de Bomberos.',
     fuentes: [
       { label: 'Resolución 10583 de 2026: aplazamiento de inscripciones', url: 'https://www.cnsc.gov.co/sites/default/files/2026-09/resolucion-no-10583-del-17.09.2026-dc7-t14.pdf' },
       {
@@ -331,6 +343,62 @@ export const CONVOCATORIAS: Convocatoria[] = [
     fuentes: [
       { label: 'Resolución 10556 de 2026', url: 'https://www.cnsc.gov.co/sites/default/files/2026-09/resolucion-no-10556-de-2026-21.pdf' },
       { label: 'Acuerdo 81 de 2026 (UNP)', url: 'https://www.cnsc.gov.co/sites/default/files/2026-04/acuerdo-no-81-unp.pdf' },
+    ],
+  },
+  {
+    slug: 'corporaciones-autonomas-regionales',
+    nombre: 'Corporaciones Autónomas Regionales',
+    titulo: 'Concurso CAR (CNSC): qué estudiar para las corporaciones autónomas',
+    entidad: '33 Corporaciones Autónomas Regionales',
+    vacantes: 1700,
+    vacantesAprox: true,
+    vacantesNota: 'Cifra anunciada por la CNSC en agosto de 2026; luego se sumó la CDMB.',
+    niveles: 'Profesional, técnico y asistencial',
+    estado: 'Convocatoria publicada. Las inscripciones se aplazaron y aún no hay fecha nueva.',
+    revisado: REVISADO,
+    resumen:
+      'Las autoridades ambientales regionales de todo el país en un solo proceso. Como las inscripciones están aplazadas, hay tiempo para preparar el componente ambiental desde ya.',
+    pruebas: PRUEBAS_SISTEMA_GENERAL,
+    pruebasNota: NOTA_SISTEMA_GENERAL,
+    perfiles: [
+      {
+        id: 'ambiental-profesional',
+        label: 'Profesional ambiental o jurídico',
+        nivel: 'profesional',
+        area: 'ambiental',
+        modulos: con([{ modulo: 'Gestión Ambiental', peso: 6 }, { modulo: 'Planeación y Proyectos de Inversión', peso: 1 }], TRONCO),
+      },
+      {
+        id: 'ambiental-tecnico',
+        label: 'Técnico o asistencial',
+        nivel: 'tecnico',
+        area: 'ambiental',
+        modulos: con([{ modulo: 'Gestión Ambiental', peso: 5 }], TRONCO, OPERATIVO),
+      },
+      {
+        id: 'apoyo',
+        label: 'Áreas administrativas',
+        modulos: con(
+          [
+            { modulo: 'Gestión Ambiental', peso: 2 },
+            { modulo: 'Contratación Estatal Aplicada', peso: 2 },
+            { modulo: 'Talento Humano', peso: 1.5 },
+            { modulo: 'Gestión Financiera y Presupuestal', peso: 1.5 },
+          ],
+          TRONCO,
+        ),
+      },
+    ],
+    cobertura:
+      'SINA y régimen de las CAR, licencias y permisos ambientales, tasas, POMCA, procedimiento sancionatorio ambiental (Ley 1333 de 2009 reformada por la Ley 2387 de 2024) y gestión del riesgo de desastres, más el tronco común de procedimiento, atención al ciudadano y Estado.',
+    faltantes:
+      'No cubrimos los conocimientos técnicos de cada disciplina (hidrología, calidad del aire, biodiversidad, SIG) ni el ordenamiento territorial (POT).',
+    fuentes: [
+      {
+        label: 'Acuerdos y anexos del proceso (CNSC)',
+        url: 'https://www.cnsc.gov.co/la-cnsc-publico-el-acuerdo-y-los-anexos-tecnicos-del-proceso-de-seleccion-corporaciones-autonomas',
+      },
+      { label: 'Resolución 10567 de 2026: aplazamiento', url: 'https://www.cnsc.gov.co/sites/default/files/2026-09/resolucion-no-10567-car-1.pdf' },
     ],
   },
   {

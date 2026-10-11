@@ -1,7 +1,7 @@
 [
   {
     "id": "TC-TRI-041",
-    "version": 2,
+    "version": 3,
     "estado": "beta",
     "capa": 4,
     "eje": "dian_tributario",
@@ -23,7 +23,7 @@
       {
         "id": "A",
         "texto": "No, porque lo que recibe por sus ventas, tanto en 2025 como en lo corrido de 2026, está por debajo de 3.500 UVT.",
-        "explicacion": "Correcta. Para este grupo de no obligados solo cuentan los ingresos de la venta de bienes excluidos: $160.000.000 en 2025, por debajo de 3.500 × $49.799 = $174.296.500, y $130.000.000 en 2026, por debajo de 3.500 × $52.374 = $183.309.000. El salario y la ganancia ocasional no se suman."
+        "explicacion": "Correcta. Para este grupo de no obligados solo cuentan los ingresos de la venta de bienes excluidos: $160.000.000 en 2025, por debajo de 3.500 × $49.799 = $174.296.500, que el art. 868 del ET aproxima a $174.297.000, y $130.000.000 en 2026, por debajo de 3.500 × $52.374 = $183.309.000. El salario y la ganancia ocasional no se suman."
       },
       {
         "id": "B",
@@ -42,7 +42,7 @@
       }
     ],
     "respuestaCorrecta": "A",
-    "explicacionIA": "Dato decisivo: Rosa solo vende bienes excluidos y sus ventas fueron de $160.000.000 en 2025 y de $130.000.000 en lo corrido de 2026. Regla: el art. 1.5.1.1.3.4 num. 7 de la Resolución DIAN 227 de 2025 (antes art. 8 de la Res. 165 de 2023) libera de facturar a esas personas naturales si sus ingresos por esa actividad son inferiores a 3.500 UVT en el año anterior o en el año en curso, sin contar salarios, pensiones ni ganancias ocasionales. Cálculo: topes de $174.296.500 (2025) y $183.309.000 (2026). Conclusión: no está obligada.",
+    "explicacionIA": "Dato decisivo: Rosa solo vende bienes excluidos y sus ventas fueron de $160.000.000 en 2025 y de $130.000.000 en lo corrido de 2026. Regla: el art. 1.5.1.1.3.4 num. 7 de la Resolución DIAN 227 de 2025 (antes art. 8 de la Res. 165 de 2023) libera de facturar a esas personas naturales si sus ingresos por esa actividad son inferiores a 3.500 UVT en el año anterior o en el año en curso, sin contar salarios, pensiones ni ganancias ocasionales. Cálculo, con la aproximación del art. 868 del ET: topes de $174.297.000 (2025) y $183.309.000 (2026). Conclusión: no está obligada.",
     "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
     "autor": "IA",
     "revision": {
@@ -266,7 +266,7 @@
   },
   {
     "id": "TC-TRI-046",
-    "version": 1,
+    "version": 2,
     "estado": "beta",
     "capa": 4,
     "eje": "dian_tributario",
@@ -283,9 +283,10 @@
       "art. 652 inc. 1 (modificado por el art. 44 de la Ley 223 de 1995; cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
       "art. 617 lit. h (modificado por el art. 40 de la Ley 223 de 1995)",
       "art. 639 inc. 1 (cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
-      "art. 657 num. 1 (modificado por el art. 290 de la Ley 1819 de 2016)"
+      "art. 657 num. 1 (modificado por el art. 290 de la Ley 1819 de 2016)",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
     ],
-    "texto_fuente": "Quienes estando obligados a expedir facturas, lo hagan sin el cumplimiento de los requisitos establecidos en los literales a), h), e i) del artículo 617 del Estatuto Tributario, incurrirán en una sanción del uno por ciento (1%) del valor de las operaciones facturadas sin el cumplimiento de los requisitos legales, sin exceder de 950 UVT. [...] h. El nombre o razón social y el NIT del impresor de la factura. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] 1. Por un término de tres (3) días, cuando no se expida factura o documento equivalente estando obligado a ello, o se expida sin los requisitos establecidos en los literales b), c), d), e), f), o g) del artículo 617 del Estatuto Tributario, o se reincida en la expedición sin el cumplimiento de los requisitos señalados en los literales a), h), o i) del citado artículo.",
+    "texto_fuente": "Quienes estando obligados a expedir facturas, lo hagan sin el cumplimiento de los requisitos establecidos en los literales a), h), e i) del artículo 617 del Estatuto Tributario, incurrirán en una sanción del uno por ciento (1%) del valor de las operaciones facturadas sin el cumplimiento de los requisitos legales, sin exceder de 950 UVT. [...] h. El nombre o razón social y el NIT del impresor de la factura. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] 1. Por un término de tres (3) días, cuando no se expida factura o documento equivalente estando obligado a ello, o se expida sin los requisitos establecidos en los literales b), c), d), e), f), o g) del artículo 617 del Estatuto Tributario, o se reincida en la expedición sin el cumplimiento de los requisitos señalados en los literales a), h), o i) del citado artículo. [...] Cuando las normas tributarias expresadas en UVT se conviertan en valores absolutos, se empleará el procedimiento de aproximaciones que se señala a continúación, a fin de obtener cifras enteras y de fácil operación: [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
     "pregunta": "Un gestor de la División de Fiscalización revisa las ventas de agosto de 2026 de una SAS facturadora electrónica, que ese mes facturó $85.000.000 en total. Durante una falla de su software, la SAS expidió seis facturas de talonario, impresas por una litografía, por $9.600.000 en total; en ellas no aparecen el nombre ni el NIT de la litografía. Las demás facturas del mes cumplen todos los requisitos, y la SAS no había sido sancionada antes por hechos similares. La UVT de 2026 es de $52.374. ¿Qué sanción corresponde por esas seis facturas?",
     "opciones": [
       {
@@ -300,8 +301,8 @@
       },
       {
         "id": "C",
-        "texto": "Multa de $523.740",
-        "explicacion": "Correcta. El 1% de $9.600.000 da $96.000, que es inferior a la sanción mínima de 10 UVT (10 × $52.374 = $523.740); por eso la multa sube a $523.740."
+        "texto": "Multa de $524.000",
+        "explicacion": "Correcta. El 1% de $9.600.000 da $96.000, que es inferior a la sanción mínima de 10 UVT (10 × $52.374 = $523.740, que el art. 868 aproxima a $524.000); por eso la multa sube a $524.000."
       },
       {
         "id": "D",
@@ -310,7 +311,7 @@
       }
     ],
     "respuestaCorrecta": "C",
-    "explicacionIA": "Dato decisivo: a seis facturas por $9.600.000 les falta el nombre y el NIT del impresor, requisito del literal h del art. 617 del ET. Regla: el art. 652 sanciona con el 1% de las operaciones facturadas sin los requisitos de los literales a), h) o i), sin exceder 950 UVT, y el art. 639 fija un mínimo de 10 UVT para cualquier sanción. Cálculo: 1% × $9.600.000 = $96.000, menor que $523.740 (10 × $52.374). Conclusión: multa de $523.740.",
+    "explicacionIA": "Dato decisivo: a seis facturas por $9.600.000 les falta el nombre y el NIT del impresor, requisito del literal h del art. 617 del ET. Regla: el art. 652 sanciona con el 1% de las operaciones facturadas sin los requisitos de los literales a), h) o i), sin exceder 950 UVT, y el art. 639 fija un mínimo de 10 UVT para cualquier sanción. Cálculo: 1% × $9.600.000 = $96.000, menor que 10 UVT (10 × $52.374 = $523.740, que el art. 868 aproxima a $524.000). Conclusión: multa de $524.000.",
     "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
     "autor": "IA",
     "revision": {
