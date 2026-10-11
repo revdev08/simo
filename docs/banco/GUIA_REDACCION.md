@@ -91,11 +91,14 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 - No usar "todas las anteriores", "ninguna de las anteriores" ni "A y B son correctas".
 - Evitar palabras absolutas ("siempre", "nunca", "únicamente") que delaten un distractor. Si se usan, que también aparezcan en opciones correctas de otras preguntas.
 - Las claves se reparten de forma pareja entre A, B, C y D.
+- **Rejillas 2×2:** cuando las opciones combinan dos elementos, cada uno aparece en el mismo número de opciones. La clave nunca debe ser la opción que reúne los elementos más repetidos.
+- **La persona que objeta en el caso no puede estar siempre equivocada.** En al menos un tercio de los casos con objeción, la objeción es correcta total o parcialmente. Si no, el ítem se responde yendo "contra el que objeta".
+- **Ítems didácticos (docentes):** al menos dos distractores deben ser intervenciones activas y razonables que fallen en un punto concreto, o un diagnóstico correcto con una intervención equivocada. Si solo la clave es activa, el ítem se adivina sin saber del área.
 
 **Explicaciones**
 - La explicación general señala el dato decisivo del caso, la regla (artículo) y la conclusión.
 - Cada opción tiene su propia explicación. Las incorrectas dicen **qué error representan**.
-- Nunca se justifica una clave con una regla que no esté en `texto_fuente`.
+- Nunca se justifica una clave con una regla que no esté en `texto_fuente`. Excepción: en los módulos de saber disciplinar docente, el `texto_fuente` es el estándar del MEN, y la regla del área (ortográfica, matemática, científica) puede venir del conocimiento consolidado, enunciada con precisión en la explicación.
 
 ## 4. Proceso de producción
 

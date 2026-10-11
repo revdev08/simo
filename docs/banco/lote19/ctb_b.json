@@ -1,0 +1,1083 @@
+[
+  {
+    "id": "TC-CTB-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Ingresos de transacciones sin contraprestación",
+    "subtema": "Clasificación de derechos de tránsito, multas, arrendamientos e intereses",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. IV, num. 1.1",
+      "Normas, Cap. IV, num. 1.4.1",
+      "Normas, Cap. IV, num. 2.1"
+    ],
+    "texto_fuente": "Hacen parte de los ingresos de transacciones sin contraprestación, aquellos que obtiene la entidad dada su facultad legal para exigir cobros a cambio de bienes, derechos o servicios, que no tienen valor de mercado y que son suministrados únicamente por el Gobierno. [...] Son típicos ingresos de transacciones sin contraprestación, los impuestos, las transferencias, las retribuciones (tasas, derechos de explotación, derechos de tránsito, entre otros), los aportes sobre la nómina y las rentas parafiscales. [...] Las multas y sanciones se reconocerán como ingreso en el resultado del periodo cuando se presente la decisión de una autoridad competente, como consecuencia de la infracción a requerimientos legales, y contra esta decisión no proceda ningún recurso. [...] Se reconocerán como ingresos de transacciones con contraprestación, aquellos que se originan por la venta de bienes, la prestación de servicios o el uso que terceros hacen de activos, los cuales producen intereses, derechos de explotación, arrendamientos, dividendos, participaciones o excedentes financieros, entre otros. Lo anterior, con independencia de que la transacción se realice a precios de mercado o a un precio menor a este.",
+    "pregunta": "Un técnico contable de un instituto municipal de tránsito, entidad de gobierno, clasifica los ingresos de 2026 para el estado de resultados. Los conceptos son: (1) $900.000.000 por los derechos que cobra como organismo de tránsito del municipio por matrículas de vehículos, traspasos y expedición de licencias de conducción; (2) $300.000.000 de multas impuestas mediante resoluciones sancionatorias en firme; (3) $60.000.000 por el arriendo de un local del instituto a una cooperativa de transportadores, con un canon inferior al del mercado que aprobó la junta directiva; y (4) $40.000.000 de intereses de las cuentas de ahorro. ¿Cómo debe clasificar estos valores?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sin contraprestación, $300.000.000; con contraprestación, $1.000.000.000.",
+        "explicacion": "Incorrecta. Trata los trámites como venta de servicios porque el usuario paga por ellos. Son derechos de tránsito: cobros que el instituto exige por su facultad legal, sin valor de mercado, y la norma los incluye entre las retribuciones, que son ingresos sin contraprestación."
+      },
+      {
+        "id": "B",
+        "texto": "Sin contraprestación, $1.260.000.000; con contraprestación, $40.000.000.",
+        "explicacion": "Incorrecta. Clasifica bien los trámites, pero lleva el arriendo a los ingresos sin contraprestación por el canon inferior al del mercado. El arrendamiento es uso de activos por parte de terceros y es un ingreso con contraprestación aunque el precio sea menor al de mercado."
+      },
+      {
+        "id": "C",
+        "texto": "Sin contraprestación, $1.200.000.000; con contraprestación, $100.000.000.",
+        "explicacion": "Correcta. Sin contraprestación: derechos de trámite (retribuciones) 900.000.000 + multas en firme 300.000.000 = 1.200.000.000. Con contraprestación: arriendo 60.000.000 + intereses 40.000.000 = 100.000.000; el canon bajo no cambia la clasificación del arriendo."
+      },
+      {
+        "id": "D",
+        "texto": "Sin contraprestación, $360.000.000; con contraprestación, $940.000.000.",
+        "explicacion": "Incorrecta. Comete los dos errores: pasa los trámites a los ingresos con contraprestación y el arriendo a los ingresos sin contraprestación. Solo las multas y los intereses quedarían bien clasificados."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los trámites son cobros que solo el organismo de tránsito puede exigir y el arriendo se pactó por debajo del mercado. Regla: las retribuciones (entre ellas, los derechos de tránsito) y las multas en firme son ingresos sin contraprestación; el uso de activos por terceros (arrendamientos e intereses) es con contraprestación aunque el precio sea menor al de mercado (Cap. IV, num. 1.1, 1.4.1 y 2.1). Cálculo: 900 + 300 = 1.200 millones sin contraprestación; 60 + 40 = 100 millones con contraprestación.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Cuentas por cobrar",
+    "subtema": "Restricciones frente a condiciones y momento de reconocimiento de transferencias en efectivo por cobrar",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 2.1",
+      "Normas, Cap. IV, num. 1.3.1"
+    ],
+    "texto_fuente": "Se reconocerán como cuentas por cobrar, los derechos adquiridos por la entidad en desarrollo de sus actividades, de los cuales se espere, a futuro, la entrada de un flujo financiero fijo o determinable, a través de efectivo, equivalentes al efectivo u otro instrumento. [...] Existirán restricciones cuando se requiera que la entidad receptora use o consuma el beneficio económico futuro o el potencial de servicio del activo transferido para un propósito concreto, sin que se requiera su devolución al transferidor cuando este no se use o consuma como se especifica. En este caso, si la entidad receptora del activo transferido evalúa que la transferencia le impone restricciones, reconocerá un ingreso en el resultado del periodo cuando surja el derecho de recibir el activo monetario o la entidad obtenga el control del activo no monetario. [...] Por consiguiente, cuando la entidad receptora reconozca inicialmente un activo sujeto a una condición, también reconocerá un pasivo diferido por la obligación presente de consumir el beneficio económico futuro o el potencial de servicio del activo transferido como se especifica o de devolverlo al transferidor. [...] Las transferencias en efectivo se reconocerán como ingreso en el resultado del periodo o como pasivo diferido si están sujetas a condiciones. Esto, cuando la entidad receptora tenga el derecho de recibir los recursos conforme a lo establecido en el acto administrativo, o en el contrato o convenio.",
+    "pregunta": "Al 31 de diciembre de 2026, un técnico contable de un municipio revisa dos transferencias en efectivo de las que aún no ha recibido dinero: (1) una resolución del departamento, expedida el 10 de diciembre, le asignó $150.000.000 para dotar las bibliotecas escolares, que se girarán en febrero de 2027; si el municipio los usa en otro fin, no tendrá que devolverlos; y (2) un convenio con un ministerio por $400.000.000 para construir un polideportivo, que fija las obras, el plazo, informes de avance y el reintegro de lo no ejecutado; el ministerio girará $200.000.000 dentro de los 10 días siguientes al acta de inicio, firmada el 21 de diciembre, y $200.000.000 en 2027, cuando el municipio acredite un avance de obra del 50 %. ¿Qué debe registrar el técnico al cierre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cuentas por cobrar de $550.000.000, ingreso de $150.000.000 y pasivo diferido de $400.000.000.",
+        "explicacion": "Incorrecta. Acierta en la resolución, pero registra todo el convenio. El segundo giro depende de acreditar un avance del 50 % que aún no existe: el derecho a recibirlo no ha surgido, así que no hay cuenta por cobrar ni pasivo diferido por ese valor."
+      },
+      {
+        "id": "B",
+        "texto": "Cuentas por cobrar de $350.000.000, ingreso de $150.000.000 y pasivo diferido de $200.000.000.",
+        "explicacion": "Correcta. La resolución da derecho a $150.000.000 con una restricción, pues no obliga a devolverlos si se usan en otro fin: cuenta por cobrar e ingreso. Con el acta de inicio surgió el derecho al primer giro del convenio, que está sujeto a condiciones: cuenta por cobrar de $200.000.000 contra pasivo diferido. El segundo giro aún no es un derecho. Por cobrar: 150 + 200 = 350 millones."
+      },
+      {
+        "id": "C",
+        "texto": "Cuentas por cobrar de $350.000.000, ningún ingreso y pasivo diferido de $350.000.000.",
+        "explicacion": "Incorrecta. Acierta en el convenio, pero trata la resolución como si tuviera condiciones. Como no exige devolver los recursos si se usan en otro fin, solo impone una restricción: se reconoce como ingreso cuando surge el derecho a recibirlos, no como pasivo diferido."
+      },
+      {
+        "id": "D",
+        "texto": "Cuentas por cobrar de $550.000.000, ningún ingreso y pasivo diferido de $550.000.000.",
+        "explicacion": "Incorrecta. Falla en las dos transferencias: trata como condicionada la resolución, que no obliga a devolver los recursos, y registra el segundo giro del convenio, cuyo derecho depende de un avance de obra que aún no se acredita."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la resolución no obliga a devolver los recursos, el acta de inicio activó el primer giro del convenio y el segundo depende de un avance que no existe. Regla: la transferencia en efectivo se reconoce cuando surge el derecho a recibirla según el acto o el convenio; si solo tiene restricciones va al ingreso y si tiene condiciones, a pasivo diferido (Cap. IV, num. 1.3.1). Resultado: cuentas por cobrar de 350 millones, ingreso de 150 millones y pasivo diferido de 200 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Cuentas por cobrar",
+    "subtema": "Deterioro individual: pérdidas crediticias esperadas con escenarios y valor presente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 2.4",
+      "Normas, Cap. I, num. 2.4.1"
+    ],
+    "texto_fuente": "Con posterioridad al reconocimiento, las cuentas por cobrar se medirán por el valor de la transacción menos el deterioro de valor. [...] Las pérdidas crediticias esperadas corresponden al promedio ponderado de las pérdidas crediticias utilizando como ponderador los riesgos respectivos de que ocurra un incumplimiento de los pagos. A su vez, la pérdida crediticia corresponde al exceso del valor en libros sin considerar el deterioro de la cuenta por cobrar sobre el valor presente de todos los flujos de efectivo que la entidad espera recibir descontados a la tasa de interés extraída de la curva cero cupón de los TES en pesos, emitidos por el Gobierno nacional, más cercana a los plazos estimados para la recuperación de los recursos. [...] El deterioro se reconocerá de forma separada como un menor valor de las cuentas por cobrar, afectando el gasto en el resultado del periodo. [...] se afectará el resultado del periodo por la diferencia entre el deterioro acumulado previamente reconocido y el nuevo cálculo de las pérdidas crediticias esperadas.",
+    "pregunta": "La profesional de contabilidad de un municipio estima de manera individual, al 31 de diciembre de 2026, el deterioro de la cuenta por cobrar del impuesto predial a cargo de una sociedad que está en un proceso de reorganización empresarial. El saldo es de $440.000.000 y el deterioro acumulado al cierre de 2025 es de $50.000.000. Con el análisis de la oficina de cobro, definió dos escenarios: con un 70 % de probabilidad, la sociedad cumple el acuerdo de reorganización y paga todo el saldo en diciembre de 2027; con un 30 % de probabilidad, la sociedad entra en liquidación y el municipio recupera $110.000.000, también en diciembre de 2027. La tasa de la curva cero cupón de los TES en pesos a un año es del 10 %. ¿Qué debe registrar al cierre de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Deterioro acumulado de $99.000.000 y un gasto de $49.000.000 en 2026.",
+        "explicacion": "Incorrecta. Pondera las pérdidas sin descontar los flujos: 30 % × (440 − 110) = 99 millones. La pérdida crediticia se mide contra el valor presente de los flujos esperados, a la tasa de los TES, de modo que incluso el escenario de pago total genera pérdida por el año de espera."
+      },
+      {
+        "id": "B",
+        "texto": "Deterioro acumulado de $40.000.000 y una reversión de $10.000.000 en 2026.",
+        "explicacion": "Incorrecta. Toma solo el escenario más probable (pérdida de 440 − 400 = 40 millones). Las pérdidas crediticias esperadas son el promedio ponderado de las pérdidas de todos los escenarios según su probabilidad."
+      },
+      {
+        "id": "C",
+        "texto": "Deterioro acumulado de $340.000.000 y un gasto de $290.000.000 en 2026.",
+        "explicacion": "Incorrecta. Toma solo el peor escenario (440 − 100 = 340 millones). Ese desenlace tiene un 30 % de probabilidad y debe ponderarse junto con el otro."
+      },
+      {
+        "id": "D",
+        "texto": "Deterioro acumulado de $130.000.000 y un gasto de $80.000.000 en 2026.",
+        "explicacion": "Correcta. Valor presente al 10 %: 440/1,1 = 400 y 110/1,1 = 100 millones. Pérdidas: 40 y 340 millones. Promedio ponderado: 0,7 × 40 + 0,3 × 340 = 130 millones. Como ya había 50 millones de deterioro, se reconoce la diferencia: un gasto de 80 millones."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: dos escenarios con probabilidades, recuperación a un año y tasa TES del 10 %. Regla: la pérdida crediticia es el exceso del valor en libros sobre el valor presente de los flujos esperados, las pérdidas esperadas son su promedio ponderado por probabilidad y el resultado se afecta por la diferencia con el deterioro acumulado (Cap. I, num. 2.4.1). Cálculo: 0,7 × (440 − 400) + 0,3 × (440 − 100) = 130 millones; gasto = 130 − 50 = 80 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Inventarios",
+    "subtema": "Medición posterior de inventarios para la venta: valor neto de realización por partida y materias primas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Marco Conceptual y Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.3",
+      "Marco Conceptual, num. 6.3.4.7, párr. 114"
+    ],
+    "texto_fuente": "Con posterioridad al reconocimiento inicial, los inventarios que se espera vender a precios de mercado se medirán al menor valor entre el costo y el valor neto de realización. Por su parte, las materias primas y otros suministros mantenidos para su uso en la producción de inventarios que se espera vender a precios de mercado se medirán al menor entre el costo y el costo de reposición cuando la disminución en el valor de la materia prima indique que el valor neto de realización de los productos terminados va a ser inferior a su costo. En caso contrario, el valor de las materias primas y suministros no se ajustará. [...] Si el valor neto de realización o el costo de reposición, según corresponda, es inferior al costo del inventario, la diferencia corresponderá al deterioro. [...] El ajuste del inventario al valor neto de realización o al costo de reposición, según corresponda, se calculará para cada partida, aunque la entidad podrá agrupar partidas similares o relacionadas. [...] El valor neto de realización es el valor que la entidad puede obtener por la venta de los activos menos los costos estimados para terminar su producción y los necesarios para llevar a cabo su venta.",
+    "pregunta": "El técnico de almacén de la imprenta de un departamento, que vende sus productos a precios de mercado, valora los inventarios al 31 de diciembre de 2026: (1) 2.000 agendas 2027, con un costo de $18.000 cada una, que se venden a $26.000 con gastos de venta de $1.000 por unidad; (2) 1.500 calendarios de escritorio de 2026, con un costo de $6.000 cada uno, que en enero se liquidarán a $3.500 con gastos de venta de $500 por unidad; y (3) 400 resmas de papel compradas a $15.000 cada una, que hoy se consiguen a $12.000 y que se usarán para imprimir más agendas 2027. ¿Por qué valor deben quedar estos inventarios al cierre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$46.500.000",
+        "explicacion": "Correcta. Agendas al costo (36.000.000), porque su valor neto de realización (25.000) supera el costo. Calendarios a su valor neto de realización: 3.500 − 500 = 3.000; 1.500 × 3.000 = 4.500.000. Papel al costo (6.000.000): su precio bajó, pero las agendas que se harán con él se venden por encima del costo. Total: 46.500.000."
+      },
+      {
+        "id": "B",
+        "texto": "$51.000.000",
+        "explicacion": "Incorrecta. Compara el costo total con el valor neto de realización total de los productos y, como este es mayor, no ajusta nada. El ajuste se calcula por partida, no sobre todos los productos terminados en conjunto, y los calendarios sí están deteriorados."
+      },
+      {
+        "id": "C",
+        "texto": "$45.300.000",
+        "explicacion": "Incorrecta. Además de los calendarios, rebaja el papel a su costo de reposición (400 × 12.000 = 4.800.000). La materia prima se ajusta cuando su baja indica que los productos terminados se venderán por debajo del costo, y las agendas se venden por encima."
+      },
+      {
+        "id": "D",
+        "texto": "$47.250.000",
+        "explicacion": "Incorrecta. Mide los calendarios por el precio de venta (3.500) sin restar los gastos de venta. El valor neto de realización descuenta los costos necesarios para vender: 3.500 − 500 = 3.000."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los calendarios se liquidarán por debajo del costo, las agendas no, y el papel bajó de precio pero se usará en agendas que dejan margen. Regla: los inventarios para la venta se miden al menor entre el costo y el valor neto de realización, partida por partida; las materias primas solo se ajustan si su baja anticipa pérdidas en los productos terminados (Normas, Cap. I, num. 9.3). Cálculo: 36.000.000 + 1.500 × (3.500 − 500) + 6.000.000 = 46.500.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Inventarios",
+    "subtema": "Costo de transformación de bienes producidos: qué se incluye y qué va al gasto",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.2.2.1"
+    ],
+    "texto_fuente": "El costo de transformación de los bienes estará determinado por el valor de los inventarios utilizados y de los cargos asociados con la transformación de las materias primas en productos terminados. También harán parte del costo, el mantenimiento, las depreciaciones y amortizaciones de activos directamente relacionados con la elaboración de bienes, las cuales se calcularán de acuerdo con lo previsto en las normas de Propiedades, planta y equipo o de Activos intangibles, según corresponda. [...] No se incluirán en los costos de transformación y, por ende, se reconocerán como gasto en el resultado del periodo, los siguientes: las cantidades anormales de desperdicio de materiales, de mano de obra o de otros costos de transformación; los costos de almacenamiento, a menos que sean necesarios para el proceso de fabricación; los costos indirectos de administración que no hayan contribuido a la condición y ubicación actuales de los inventarios; y los costos de disposición.",
+    "pregunta": "Un técnico de costos de una imprenta departamental, que vende sus productos a precios de mercado, calcula el costo de 4.000 cartillas producidas en noviembre de 2026. Las erogaciones del mes fueron: papel y tintas consumidos, $26.000.000, de los cuales $2.000.000 corresponden a un lote que se dañó por un error en la configuración de la máquina, algo que no es habitual en el proceso; mano de obra de los operarios de impresión, $9.000.000; depreciación de la impresora, $3.000.000; mantenimiento de la impresora, $1.000.000; una parte de los sueldos de la oficina jurídica y de la gerencia, $4.000.000; y bodegaje de las cartillas ya terminadas mientras se venden, $1.500.000. ¿Cuál es el costo unitario de las cartillas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$9.750",
+        "explicacion": "Incorrecta. Incluye los $2.000.000 del lote dañado: (26 + 9 + 3 + 1) millones / 4.000 = 9.750. Ese desperdicio es anormal y se excluye del costo para llevarlo al gasto."
+      },
+      {
+        "id": "B",
+        "texto": "$9.250",
+        "explicacion": "Correcta. Papel y tintas sin el desperdicio anormal (24.000.000) + mano de obra (9.000.000) + depreciación (3.000.000) + mantenimiento de la impresora (1.000.000) = 37.000.000; 37.000.000 / 4.000 = 9.250. Los sueldos de jurídica y gerencia, el bodegaje del producto terminado y el lote dañado van al gasto."
+      },
+      {
+        "id": "C",
+        "texto": "$11.125",
+        "explicacion": "Incorrecta. Suma todas las erogaciones del mes (44.500.000). Los costos de administración que no contribuyen a la producción y el almacenamiento de los productos ya terminados no forman parte del costo de transformación."
+      },
+      {
+        "id": "D",
+        "texto": "$8.250",
+        "explicacion": "Incorrecta. Deja por fuera la depreciación y el mantenimiento de la impresora: 33.000.000 / 4.000 = 8.250. Como están directamente relacionados con la elaboración de las cartillas, hacen parte del costo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: hay un lote dañado por un error que no es habitual, sueldos administrativos y bodegaje de producto terminado. Regla: el costo de transformación incluye materiales, mano de obra, mantenimiento y depreciación de los activos de producción, y excluye el desperdicio anormal, el almacenamiento que no es necesario para fabricar y la administración que no contribuye a la producción (Cap. I, num. 9.2.2.1). Cálculo: (24 + 9 + 3 + 1) millones / 4.000 = $9.250.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Costo de retiro y rehabilitación del lugar: mayor valor del activo y provisión a valor presente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.2",
+      "Normas, Cap. II, num. 6.1",
+      "Normas, Cap. II, num. 6.2"
+    ],
+    "texto_fuente": "Las erogaciones en que incurrirá la entidad para desmantelar o retirar un elemento de propiedades, planta y equipo, o rehabilitar el lugar sobre el que este se asiente se reconocerán como un mayor valor de las propiedades, planta y equipo y como una provisión. La medición se efectuará de acuerdo con lo establecido en la Norma de provisiones. [...] No obstante, las provisiones por desmantelamientos se reconocerán como un pasivo y como un mayor valor del activo al cual se asocie el desmantelamiento. [...] Cuando el efecto del valor del dinero en el tiempo resulte significativo, el valor de la provisión será el valor presente de los valores que se espera sean requeridos para liquidar la obligación. Un efecto significativo del valor del dinero en el tiempo se presenta cuando el plazo para cancelar la obligación se estima mayor a los 12 meses siguientes a la fecha de reconocimiento de la provisión. La tasa de descuento utilizada para el cálculo del valor presente será la tasa de interés extraída de la curva cero cupón de los TES en pesos, emitidos por el Gobierno nacional, más cercana a los plazos estimados para el pago de dicho pasivo. [...] La provisión por costos de desmantelamiento se medirá por el valor presente de los costos estimados en los que incurrirá la entidad para llevar a cabo el desmantelamiento, de acuerdo con las normas de Propiedades, planta y equipo o de Bienes de uso público, según corresponda.",
+    "pregunta": "En enero de 2026, una gobernación instaló una sede administrativa prefabricada en un lote que tomó en arriendo por tres años. La compra, el transporte y el montaje de la estructura costaron $290.000.000. El contrato de arrendamiento obliga a la gobernación a retirar la estructura y a dejar el lote en su estado original al terminar los tres años; los ingenieros estiman que eso costará $13.310.000 en enero de 2029. La tasa de la curva cero cupón de los TES en pesos a tres años es del 10 %. El profesional de contabilidad debe definir la medición inicial. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Activo de $290.000.000 y ningún pasivo hasta que se ejecute el retiro, en 2029.",
+        "explicacion": "Incorrecta. Trata el retiro como un gasto futuro. La obligación nace del contrato al instalar la estructura, así que hoy se reconoce una provisión y su valor se suma al costo del activo."
+      },
+      {
+        "id": "B",
+        "texto": "Activo de $303.310.000 y provisión de $13.310.000 por el retiro.",
+        "explicacion": "Incorrecta. Mide la provisión por el valor nominal. Como el pago ocurrirá en más de 12 meses, se mide a valor presente con la tasa de los TES: 13.310.000 / 1,1³ = 10.000.000."
+      },
+      {
+        "id": "C",
+        "texto": "Activo de $300.000.000 y provisión de $10.000.000 por el retiro.",
+        "explicacion": "Correcta. Valor presente: 13.310.000 / 1,331 = 10.000.000. Ese valor se reconoce como provisión y como mayor valor de la estructura: 290.000.000 + 10.000.000 = 300.000.000, que se depreciará en los tres años."
+      },
+      {
+        "id": "D",
+        "texto": "Activo de $290.000.000 y provisión de $10.000.000, con cargo al gasto.",
+        "explicacion": "Incorrecta. Mide bien la provisión, pero la carga al gasto. Las provisiones por desmantelamiento se reconocen como pasivo y como mayor valor del activo al que se asocian, no en el resultado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el contrato obliga a retirar la estructura y restaurar el lote en tres años, y la tasa TES a ese plazo es del 10 %. Regla: los costos de desmantelamiento y rehabilitación se reconocen como mayor valor del activo y como provisión, medida a valor presente cuando el pago supera 12 meses (Cap. I, num. 10.2; Cap. II, num. 6.1 y 6.2). Cálculo: 13.310.000 / 1,1³ = 10.000.000; activo = 290.000.000 + 10.000.000 = 300.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Depreciación por componentes con vidas útiles y valores residuales distintos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.3"
+    ],
+    "texto_fuente": "El valor depreciable corresponde al costo del activo o de sus componentes menos el valor residual. [...] Para las partidas de propiedades, planta y equipo que se consideren materiales, la entidad distribuirá el valor inicialmente reconocido entre las partes significativas, con relación al costo total de dichas partidas, y las depreciará en forma separada.",
+    "pregunta": "Un técnico contable de una gobernación calcula la depreciación de 2026 de una motoniveladora que quedó disponible para su uso en enero de 2026, con un costo total de $700.000.000. Según la política contable, la máquina es un activo material y su motor es una parte significativa. El costo se distribuyó así: estructura y demás partes, $520.000.000, con vida útil de 12 años y valor residual de $40.000.000; motor, $180.000.000, con vida útil de 6 años y sin valor residual. La entidad usa el método lineal y deprecia por meses completos desde el mes en que el activo queda disponible. ¿Cuál es la depreciación de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$55.000.000",
+        "explicacion": "Incorrecta. Deprecia toda la máquina como un solo elemento a 12 años: (700 − 40)/12 = 55 millones. El motor, como parte significativa con una vida útil distinta, se deprecia por separado en 6 años."
+      },
+      {
+        "id": "B",
+        "texto": "$110.000.000",
+        "explicacion": "Incorrecta. Aplica a toda la máquina la vida útil del motor: (700 − 40)/6 = 110 millones. Cada componente se deprecia con su propia vida útil."
+      },
+      {
+        "id": "C",
+        "texto": "$73.333.333",
+        "explicacion": "Incorrecta. Separa bien los componentes, pero no resta el valor residual de la estructura: 520/12 + 180/6 = 73,3 millones. El valor depreciable es el costo menos el valor residual."
+      },
+      {
+        "id": "D",
+        "texto": "$70.000.000",
+        "explicacion": "Correcta. Estructura: (520 − 40)/12 = 40 millones. Motor: 180/6 = 30 millones. Total: 70 millones por los doce meses de 2026."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el motor es una parte significativa con vida útil de 6 años, distinta de la del resto de la máquina. Regla: en las partidas materiales, las partes significativas se deprecian por separado, y el valor depreciable de cada una es su costo menos su valor residual (Cap. I, num. 10.3). Cálculo: (520 − 40)/12 + 180/6 = 40 + 30 = 70 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Revisión de la vida útil y del valor residual como cambio en una estimación contable",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.3",
+      "Normas, Cap. VI, num. 4.2"
+    ],
+    "texto_fuente": "El valor residual, la vida útil y el método de depreciación serán revisados, como mínimo, al término de cada periodo contable y si existe un cambio significativo en estas variables, se ajustarán para reflejar el nuevo patrón de consumo de los beneficios económicos futuros o del potencial de servicio. El efecto en la depreciación por el ajuste de dichas variables se contabilizará como un cambio en una estimación contable, de conformidad con la Norma de políticas contables, cambios en las estimaciones contables y corrección de errores. [...] Los efectos que se deriven de un cambio en una estimación contable se aplicarán de manera prospectiva afectando a) el resultado del periodo en el que tenga lugar el cambio, si afecta solamente este periodo, b) el resultado del periodo del cambio y de los periodos futuros que afecte o c) el patrimonio cuando la norma así lo establezca.",
+    "pregunta": "Un municipio puso en servicio el 1 de enero de 2023 su sistema de cámaras de videovigilancia, con un costo de $480.000.000, una vida útil de 10 años y un valor residual de $30.000.000, y lo deprecia por el método lineal. En la revisión de estimaciones del cierre de 2025, hecha después de registrar la depreciación de ese año, un estudio técnico concluyó que, por obsolescencia tecnológica, el sistema se usará solo cinco años más, hasta el 31 de diciembre de 2030, y que al final podrá venderse por $15.000.000. El profesional de contabilidad debe definir el efecto de esta revisión. ¿Qué corresponde para la depreciación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$66.000.000 en 2026; lo depreciado entre 2023 y 2025 no se modifica.",
+        "explicacion": "Correcta. Depreciación anual inicial: (480 − 30)/10 = 45 millones; acumulada a 2025: 135 millones; valor en libros: 345 millones. Con las nuevas estimaciones: (345 − 15)/5 = 66 millones por año. Es un cambio en una estimación contable y se aplica de forma prospectiva."
+      },
+      {
+        "id": "B",
+        "texto": "$58.125.000 en 2026; lo depreciado entre 2023 y 2025 se reexpresa.",
+        "explicacion": "Incorrecta. Rehace la depreciación desde 2023 con una vida total de 8 años, (480 − 15)/8 = 58,125 millones, y reexpresa los años anteriores. Ese tratamiento es propio de la corrección de errores o de un cambio de política, no de un cambio de estimación."
+      },
+      {
+        "id": "C",
+        "texto": "$63.000.000 en 2026; lo depreciado entre 2023 y 2025 no se modifica.",
+        "explicacion": "Incorrecta. Aplica bien el tratamiento prospectivo, pero conserva el valor residual inicial: (345 − 30)/5 = 63 millones. La revisión también cambió el valor residual a 15 millones."
+      },
+      {
+        "id": "D",
+        "texto": "$97.500.000 en 2026, que incluye lo que faltó depreciar entre 2023 y 2025.",
+        "explicacion": "Incorrecta. Suma a una cuota de 58,125 millones lo que, con la nueva vida útil, habría faltado depreciar entre 2023 y 2025 (39,375 millones). Un cambio de estimación no recalcula los años anteriores: el valor en libros pendiente se distribuye en la vida útil restante."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: al cierre de 2025 se revisaron la vida útil restante (5 años) y el valor residual (15 millones). Regla: la revisión de esas variables es un cambio en una estimación contable y se aplica de forma prospectiva (Cap. I, num. 10.3; Cap. VI, num. 4.2). Cálculo: valor en libros al cierre de 2025 = 480 − 3 × 45 = 345 millones; depreciación anual desde 2026 = (345 − 15)/5 = 66 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Sustitución de un componente: baja del componente reemplazado y reconocimiento del nuevo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.4"
+    ],
+    "texto_fuente": "La pérdida o ganancia originada en la baja en cuentas de un elemento de propiedades, planta y equipo se calculará como la diferencia entre el valor de la contraprestación recibida, si existiere, y su valor en libros, y se reconocerá como ingreso o gasto en el resultado del periodo. Cuando un elemento de propiedades, planta y equipo esté conformado por componentes y sea necesaria la sustitución de uno de estos o la realización de una nueva inspección general, la entidad reconocerá, en el activo, el costo en que se incurra para la sustitución o inspección general, previa baja en cuentas del componente sustituido o de la inspección general previamente incorporada.",
+    "pregunta": "Un instituto departamental de deportes tiene un bus para transportar a los deportistas, cuyo motor se identificó y se deprecia como componente: costo de $90.000.000, vida útil de 6 años, método lineal y sin valor residual. En enero de 2026, después de cuatro años completos de uso, el motor se reemplazó por uno nuevo que costó $110.000.000, y el motor viejo se vendió como chatarra por $5.000.000. El auxiliar contable debe registrar la operación. ¿Cómo debe hacerlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Suma $110.000.000 al bus, conserva el motor viejo en libros y reconoce un ingreso de $5.000.000.",
+        "explicacion": "Incorrecta. Incorpora el motor nuevo sin dar de baja el sustituido, con lo que el bus quedaría con dos motores en libros. El componente reemplazado debe retirarse antes de reconocer el nuevo."
+      },
+      {
+        "id": "B",
+        "texto": "Reconoce un gasto de $110.000.000 por reparación y un ingreso de $5.000.000 por la chatarra.",
+        "explicacion": "Incorrecta. Trata el cambio de motor como una reparación. La sustitución de un componente se reconoce en el activo, previa baja del componente sustituido."
+      },
+      {
+        "id": "C",
+        "texto": "Retira el motor viejo y su depreciación, reconoce una pérdida de $25.000.000 y suma $110.000.000 al bus.",
+        "explicacion": "Correcta. El motor viejo tenía una depreciación acumulada de 90/6 × 4 = 60 millones y un valor en libros de 30 millones. Se retiran el costo y la depreciación, y la pérdida es 30 − 5 = 25 millones. El motor nuevo se reconoce en el activo por 110 millones."
+      },
+      {
+        "id": "D",
+        "texto": "Retira el motor viejo por su costo de $90.000.000, reconoce una pérdida de $85.000.000 y suma $110.000.000 al bus.",
+        "explicacion": "Incorrecta. Calcula la pérdida con el costo del motor viejo (90 − 5 = 85 millones) sin restar la depreciación acumulada. La pérdida se mide contra el valor en libros, que es de 30 millones."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el motor sustituido era un componente identificado, con 60 millones de depreciación acumulada, y se vendió como chatarra. Regla: al sustituir un componente se da de baja el anterior, la pérdida o ganancia es la diferencia entre lo recibido y su valor en libros, y el costo del nuevo se reconoce en el activo (Cap. I, num. 10.4). Cálculo: valor en libros 90 − 60 = 30 millones; pérdida 30 − 5 = 25 millones; nuevo componente, 110 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Deterioro del valor de los activos no generadores de efectivo",
+    "subtema": "Valor del servicio recuperable con costo de reposición ajustado por depreciación y rehabilitación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 20",
+      "Normas, Cap. I, num. 20.3",
+      "Normas, Cap. I, num. 20.4.2.2"
+    ],
+    "texto_fuente": "Los activos no generadores de efectivo son aquellos que la entidad mantiene con el propósito fundamental de suministrar bienes o prestar servicios en forma gratuita o a precios de no mercado. [...] La entidad reconocerá el deterioro del valor de un activo no generador de efectivo cuando su valor en libros supere el valor del servicio recuperable. El valor del servicio recuperable es el mayor entre: a) el valor de mercado, si existiere, menos los costos de disposición; y b) el costo de reposición. [...] Este costo se ajustará por la depreciación de acuerdo con la vida útil ya consumida del activo que es objeto de cálculo de deterioro y por el costo en que incurriría para devolver el potencial de servicio que se perdió por el daño físico del activo. Este enfoque se privilegia cuando el deterioro del valor se origina por un daño físico del activo.",
+    "pregunta": "Un municipio presta gratis el servicio de hogar de paso para adultos mayores en una edificación propia, que la política contable incluye entre los activos materiales sujetos a la evaluación de deterioro. Al 31 de diciembre de 2026, la edificación (sin el terreno) tiene un costo de $1.500.000.000 y una depreciación acumulada de $600.000.000, es decir, ha consumido el 40 % de su vida útil. Un sismo de septiembre le causó daños estructurales. Para el cierre, la profesional de contabilidad reúne estos datos: un comprador pagaría hoy $540.000.000 por el inmueble en su estado actual y los costos de venderlo serían de $20.000.000; construir hoy una edificación nueva con la misma capacidad de servicio costaría $2.000.000.000; y reparar los daños del sismo costaría $450.000.000. ¿Qué deterioro debe reconocer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$380.000.000",
+        "explicacion": "Incorrecta. Usa como valor del servicio recuperable el valor de mercado menos los costos de disposición (520 millones). El valor del servicio recuperable es el mayor entre ese valor y el costo de reposición, que aquí es de 750 millones."
+      },
+      {
+        "id": "B",
+        "texto": "$150.000.000",
+        "explicacion": "Correcta. Como el deterioro viene de un daño físico, el costo de reposición se ajusta por depreciación y por rehabilitación: 2.000 × 60 % − 450 = 750 millones. Es mayor que el valor de mercado menos los costos de disposición (520 millones), así que el valor del servicio recuperable es 750 y el deterioro es 900 − 750 = 150 millones."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno",
+        "explicacion": "Incorrecta. Ajusta el costo de reposición por la depreciación (1.200 millones), pero no resta lo que costaría reparar el daño físico. Con ese ajuste incompleto, el valor recuperable superaría el valor en libros y no se vería el deterioro."
+      },
+      {
+        "id": "D",
+        "texto": "$450.000.000",
+        "explicacion": "Incorrecta. Toma como deterioro el costo de reparar los daños. Ese costo es un ajuste al costo de reposición; el deterioro es el exceso del valor en libros sobre el valor del servicio recuperable."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el activo presta un servicio gratuito y la pérdida de potencial se debe a un daño físico. Regla: el deterioro es el exceso del valor en libros sobre el valor del servicio recuperable, que es el mayor entre el valor de mercado menos los costos de disposición y el costo de reposición; ante un daño físico, este se ajusta por depreciación y rehabilitación (Cap. I, num. 20.3 y 20.4.2.2). Cálculo: 2.000 × 0,6 − 450 = 750; máx(520; 750) = 750; deterioro = 900 − 750 = 150 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Bienes históricos y culturales",
+    "subtema": "Clasificación de un inmueble declarado de interés cultural que se usa como sede y de una obra de arte",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.1",
+      "Normas, Cap. I, num. 12.1"
+    ],
+    "texto_fuente": "Se reconocerán como propiedades, planta y equipo, a) los activos tangibles empleados por la entidad para la producción o suministro de bienes, para la prestación de servicios o para propósitos administrativos; [...] Los bienes históricos y culturales, que cumplan con la definición de propiedades, planta y equipo, se reconocerán como tal; en caso contrario, se aplicará lo establecido en la Norma de bienes históricos y culturales. [...] Para que un bien pueda ser reconocido como histórico y cultural, debe existir el acto administrativo que lo declare como tal y su medición monetaria debe ser fiable. No obstante, aquellos bienes que habiendo sido declarados como históricos y culturales, cumplan con las condiciones para ser clasificados como propiedades, planta y equipo, propiedades de inversión o bienes de uso público se reconocerán en estas clasificaciones de activos y se les aplicará la norma que corresponda. [...] Son ejemplos de bienes históricos y culturales, los monumentos históricos, los lugares arqueológicos y las obras de arte.",
+    "pregunta": "Una técnica de la oficina de bienes de un municipio actualiza la clasificación contable de dos bienes, ambos declarados de interés cultural mediante acto administrativo y con una medición monetaria fiable: (1) una casona colonial en la que funcionan las oficinas de la secretaría de hacienda; y (2) un óleo del siglo XVIII que se guarda en la reserva de la casa de la cultura y se exhibe al público en fechas especiales. ¿Cómo debe clasificarlos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La casona, como bien histórico y cultural, y el óleo, como propiedades, planta y equipo.",
+        "explicacion": "Incorrecta. Invierte la clasificación. La casona se usa para propósitos administrativos, así que cumple la definición de propiedades, planta y equipo; el óleo no se usa en la operación y es una obra de arte declarada."
+      },
+      {
+        "id": "B",
+        "texto": "La casona, como propiedades, planta y equipo, y el óleo, como propiedades, planta y equipo.",
+        "explicacion": "Incorrecta. Acierta con la casona, pero lleva el óleo a propiedades, planta y equipo. El óleo no se emplea para prestar servicios ni para fines administrativos: es una obra de arte declarada, ejemplo típico de bien histórico y cultural."
+      },
+      {
+        "id": "C",
+        "texto": "La casona, como bien histórico y cultural, y el óleo, como bien histórico y cultural.",
+        "explicacion": "Incorrecta. Acierta con el óleo, pero clasifica la casona por su declaratoria. Un bien declarado que cumple la definición de propiedades, planta y equipo, como una sede de oficinas, se reconoce en esa clase."
+      },
+      {
+        "id": "D",
+        "texto": "La casona, como propiedades, planta y equipo, y el óleo, como bien histórico y cultural.",
+        "explicacion": "Correcta. La casona, aunque declarada, se usa para propósitos administrativos y se reconoce como propiedades, planta y equipo. El óleo, declarado y medible con fiabilidad, no cumple esa definición y es una obra de arte: bien histórico y cultural."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la casona alberga oficinas y el óleo solo se conserva y se exhibe. Regla: los bienes declarados históricos y culturales que cumplen la definición de propiedades, planta y equipo se reconocen en esa clase; los demás, con acto administrativo y medición fiable, son bienes históricos y culturales, como las obras de arte (Cap. I, num. 10.1 y 12.1). Conclusión: casona, propiedades, planta y equipo; óleo, bien histórico y cultural.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Bienes de uso público",
+    "subtema": "Deterioro por daño físico medido por la proporción de la parte dañada y depreciación posterior",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 11.3"
+    ],
+    "texto_fuente": "Para los elementos de los bienes de uso público que se consideren materiales, la entidad evaluará, como mínimo al final del periodo contable, si se dispone de evidencia de deterioro de estos activos, originado por daños físicos que disminuyan significativamente la capacidad del activo para prestar servicios. [...] El deterioro se medirá por el valor en libros de la parte del activo que presente daño físico. Si el valor en libros de la parte dañada no está identificado de manera separada, la entidad podrá estimarla tomando como referente a) la proporción del costo histórico que razonablemente pueda ser asignado a la parte dañada con relación al costo total del activo ajustado por la depreciación acumulada o b) la proporción física de la parte dañada con relación al activo total. Luego de reconocer el deterioro del valor, los cargos por depreciación del activo se determinarán, para los periodos futuros, teniendo en cuenta el valor en libros [...] ajustado por dicha pérdida. Esto permitirá distribuir el valor en libros ajustado del activo de una forma sistemática a lo largo de su vida útil restante.",
+    "pregunta": "Un municipio tiene una vía terciaria pavimentada de 8 kilómetros, reconocida como bien de uso público e incluida por la política contable entre los activos materiales que se evalúan por deterioro. Al 31 de diciembre de 2026, ya registrada la depreciación del año, la vía tiene un costo de $2.400.000.000 y una depreciación acumulada de $880.000.000; se deprecia por el método lineal y le quedan 19 años de vida útil. En noviembre, un derrumbe destruyó 2 de los 8 kilómetros, que quedaron intransitables; el valor en libros de ese tramo no está identificado por separado y el resto de la vía conserva su vida útil. El profesional de contabilidad debe medir el deterioro y la depreciación anual que se aplicará desde 2027. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Deterioro de $380.000.000 y depreciación anual de $60.000.000 desde 2027.",
+        "explicacion": "Correcta. Valor en libros: 2.400 − 880 = 1.520 millones. El tramo destruido es 2/8 = 25 % de la vía: deterioro = 25 % × 1.520 = 380 millones. Desde 2027, la depreciación distribuye el valor en libros ajustado (1.140 millones) en los 19 años restantes: 60 millones por año."
+      },
+      {
+        "id": "B",
+        "texto": "Deterioro de $600.000.000 y depreciación anual de $60.000.000 desde 2027.",
+        "explicacion": "Incorrecta. Mide todo sobre el costo: deterioro de 25 % × 2.400 = 600 millones y cuota de (2.400 − 600)/30 = 60 millones. El deterioro es el valor en libros de la parte dañada (25 % × 1.520 = 380 millones). La cuota coincide con la correcta, que sale del valor en libros ajustado (1.140/19 = 60), pero el deterioro está mal medido."
+      },
+      {
+        "id": "C",
+        "texto": "Deterioro de $380.000.000 y depreciación anual de $80.000.000 desde 2027.",
+        "explicacion": "Incorrecta. Mide bien el deterioro, pero mantiene la cuota anterior (2.400/30 = 80 millones). Después del deterioro, la depreciación se calcula sobre el valor en libros ajustado: 1.140/19 = 60 millones."
+      },
+      {
+        "id": "D",
+        "texto": "Deterioro de $600.000.000 y depreciación anual de $80.000.000 desde 2027.",
+        "explicacion": "Incorrecta. Falla en las dos cifras: mide el deterioro sobre el costo (25 % × 2.400 = 600 millones) y no sobre el valor en libros de la parte dañada (380 millones), y conserva la cuota anterior de 80 millones, cuando la depreciación debe recalcularse sobre el valor en libros ajustado: 1.140/19 = 60 millones."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el derrumbe destruyó 2 de los 8 km y el tramo no tiene un valor en libros propio. Regla: en los bienes de uso público, el deterioro por daño físico es el valor en libros de la parte dañada, que puede estimarse por su proporción física; luego, la depreciación se calcula sobre el valor en libros ajustado en la vida útil restante (Cap. I, num. 11.3). Cálculo: 25 % × 1.520 = 380 millones; (1.520 − 380)/19 = 60 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Activos intangibles",
+    "subtema": "Software desarrollado internamente: fase de investigación, fase de desarrollo y erogaciones excluidas",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 15.2.2"
+    ],
+    "texto_fuente": "Los desembolsos que se realicen en la fase de investigación se separarán de aquellos que se realicen en la fase de desarrollo. Los primeros se reconocerán como gastos en el resultado del periodo en el momento en que se produzcan y los segundos formarán parte de los componentes del costo de los activos intangibles desarrollados internamente siempre y cuando cumplan con los criterios de reconocimiento para la fase de desarrollo. Si no es posible separar los desembolsos en las fases de investigación y desarrollo, estos se tratarán como si se hubieran realizado en la fase de investigación. [...] No formarán parte del costo de los activos intangibles generados internamente los gastos administrativos de venta u otros gastos indirectos de carácter general no atribuibles a la preparación del activo para su uso; las cantidades que excedan los rangos normales de consumo de materiales, mano de obra u otros factores empleados; las pérdidas operativas; ni los desembolsos para formación del personal que trabaje con el activo.",
+    "pregunta": "Una gobernación desarrolló con su propio equipo un software para liquidar y recaudar el impuesto sobre vehículos. En 2026 hizo estas erogaciones: $80.000.000 en el estudio de alternativas tecnológicas y en pruebas de concepto para obtener conocimiento nuevo; $240.000.000 en el diseño, la programación y las pruebas del sistema, etapa en la que documentó el cumplimiento de todos los requisitos exigidos para la fase de desarrollo; $30.000.000 de las semanas de transición entre ambas etapas, que no fue posible asignar a ninguna de ellas; $15.000.000 en la capacitación de los funcionarios que usarán el sistema; y $12.000.000 de arriendo y aseo de la sede, prorrateados al proyecto. La profesional de contabilidad debe definir la medición. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Activo intangible de $270.000.000 y gasto de $107.000.000.",
+        "explicacion": "Incorrecta. Lleva al activo los 30 millones que no se pudieron asignar a una fase. Cuando no es posible separar los desembolsos, se tratan como de la fase de investigación y van al gasto."
+      },
+      {
+        "id": "B",
+        "texto": "Activo intangible de $240.000.000 y gasto de $137.000.000.",
+        "explicacion": "Correcta. Forman el costo los desembolsos de la fase de desarrollo que cumplen los requisitos: 240 millones. Van al gasto la investigación (80), lo no separable (30), la capacitación (15) y los gastos generales prorrateados (12): 137 millones."
+      },
+      {
+        "id": "C",
+        "texto": "Activo intangible de $267.000.000 y gasto de $110.000.000.",
+        "explicacion": "Incorrecta. Incluye en el costo la capacitación y los gastos generales. La formación del personal y los gastos indirectos de carácter general no atribuibles a la preparación del activo se excluyen del costo."
+      },
+      {
+        "id": "D",
+        "texto": "Activo intangible de $377.000.000 y ningún gasto en 2026.",
+        "explicacion": "Incorrecta. Capitaliza todas las erogaciones del proyecto. La fase de investigación se reconoce como gasto cuando se produce, y la capacitación y los gastos generales tampoco hacen parte del costo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: hay erogaciones de investigación, de desarrollo con requisitos cumplidos, de transición no separables, de capacitación y de gastos generales. Regla: el costo lo forma la fase de desarrollo que cumple los requisitos; la investigación y lo no separable van al gasto, igual que la formación del personal y los gastos generales no atribuibles (Cap. I, num. 15.2.2). Cálculo: activo, 240 millones; gasto, 80 + 30 + 15 + 12 = 137 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Activos intangibles",
+    "subtema": "Amortización: vida útil limitada por el plazo contractual y vida útil indefinida",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 15.3"
+    ],
+    "texto_fuente": "La amortización iniciará cuando el activo esté disponible para su utilización, es decir, cuando se encuentre en la ubicación y condiciones necesarias para que pueda iniciar la operación de la forma prevista por la administración de la entidad. [...] Se asumirá que el valor residual del activo intangible es nulo o igual a cero si no existe un compromiso, por parte de un tercero, de comprar el activo al final de su vida útil o si no existe un mercado activo para el intangible que permita determinar, con referencia al mismo, el valor residual al final de la vida útil. [...] Si no es posible hacer una estimación fiable de la vida útil de un activo intangible, se considerará que este tiene vida útil indefinida y no será objeto de amortización. La vida útil de los activos intangibles estará dada por el menor periodo entre el tiempo en que se obtendrían los beneficios económicos o el potencial de servicio esperados y el plazo establecido conforme a los términos contractuales, siempre y cuando el activo intangible se encuentre asociado a un derecho contractual o legal.",
+    "pregunta": "Un técnico contable de una entidad calcula la amortización de 2026 de dos licencias de software, que la política contable amortiza por el método lineal y por meses completos: (1) una licencia de gestión documental por $90.000.000, disponible para su uso desde el 1 de julio de 2026, con un contrato de tres años sin opción de renovación, aunque la entidad calcula que necesitará ese tipo de herramienta durante cinco años; y (2) una licencia a perpetuidad de un programa de información geográfica por $72.000.000, disponible desde el 1 de abril de 2026, para la cual el área de tecnología no ha podido determinar por cuánto tiempo la usará, porque depende de cambios tecnológicos que no puede prever. Ninguna tiene comprador comprometido ni mercado activo. ¿Cuál es la amortización de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$9.000.000",
+        "explicacion": "Incorrecta. Amortiza la primera licencia en cinco años (90/60 × 6 = 9 millones). Cuando el intangible está asociado a un derecho contractual, la vida útil es el menor periodo entre el de los beneficios esperados y el plazo del contrato: tres años."
+      },
+      {
+        "id": "B",
+        "texto": "$25.800.000",
+        "explicacion": "Incorrecta. Además de la primera licencia (15 millones), amortiza la licencia a perpetuidad en cinco años (72/60 × 9 = 10,8 millones). Si la vida útil no puede estimarse con fiabilidad, es indefinida y el activo no se amortiza."
+      },
+      {
+        "id": "C",
+        "texto": "$15.000.000",
+        "explicacion": "Correcta. Licencia de gestión documental: vida útil de tres años (el plazo del contrato), valor residual cero y seis meses de 2026: 90/36 × 6 = 15 millones. La licencia a perpetuidad tiene vida útil indefinida y no se amortiza."
+      },
+      {
+        "id": "D",
+        "texto": "$30.000.000",
+        "explicacion": "Incorrecta. Amortiza un año completo de la primera licencia (90/3 = 30 millones). La amortización inicia cuando el activo está disponible para su uso, el 1 de julio, así que en 2026 corresponden seis meses."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la primera licencia vence en tres años y estuvo disponible desde julio; para la segunda no es posible estimar la vida útil. Regla: la vida útil de un intangible contractual es el menor periodo entre el de los beneficios y el del contrato; sin comprador ni mercado activo, el valor residual es cero; si la vida útil no se puede estimar con fiabilidad, es indefinida y no se amortiza (Cap. I, num. 15.3). Cálculo: 90/36 × 6 = 15 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Beneficios a los empleados",
+    "subtema": "Reconocimiento mensual por alícuotas de un beneficio a corto plazo de pago anual",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. II, num. 5",
+      "Normas, Cap. II, num. 5.1.1"
+    ],
+    "texto_fuente": "Los beneficios a los empleados podrán originarse por lo siguiente: a) acuerdos formales, legalmente exigibles, celebrados entre la entidad y sus empleados; o b) requerimientos legales, en virtud de los cuales la entidad se obliga a efectuar aportes o asumir obligaciones. [...] Se reconocerán como beneficios a los empleados a corto plazo, aquellos beneficios cuya obligación de pago venza dentro de los 12 meses siguientes al cierre del periodo contable en el que los empleados hayan prestado sus servicios. [...] La entidad reconocerá un pasivo por beneficios a los empleados a corto plazo, junto con su gasto o costo asociado, cuando consuma el beneficio económico o el potencial de servicio procedente del servicio prestado por el empleado a cambio del beneficio otorgado. Los beneficios a empleados a corto plazo que no se paguen mensualmente se reconocerán en cada mes por el valor de la alícuota correspondiente al porcentaje del servicio prestado durante el mes.",
+    "pregunta": "Un técnico de nómina de un instituto prepara el cierre de 2026. El decreto salarial que rige para los servidores del instituto les reconoce una bonificación de $3.600.000 por cada año continuo de servicio, que se paga en un solo contado el mes siguiente a cumplirlo. Ocho servidores se vincularon el 1 de mayo de 2026 y seguían vinculados al 31 de diciembre; su bonificación se pagará en mayo de 2027. ¿Qué debe reflejar la contabilidad de 2026 por esta bonificación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ningún valor: el gasto se reconocerá en mayo de 2027, cuando se pague la bonificación.",
+        "explicacion": "Incorrecta. Espera al pago para reconocer el beneficio. El pasivo y el gasto se reconocen a medida que el servidor presta el servicio, por alícuotas mensuales."
+      },
+      {
+        "id": "B",
+        "texto": "Un pasivo y un gasto de $28.800.000, por el año completo de cada servidor.",
+        "explicacion": "Incorrecta. Reconoce el año completo (8 × 3.600.000), aunque en 2026 se prestaron ocho meses de servicio. Los cuatro meses restantes se reconocerán en 2027."
+      },
+      {
+        "id": "C",
+        "texto": "Un pasivo y un gasto de $16.800.000, por siete meses de servicio en 2026.",
+        "explicacion": "Incorrecta. Deja por fuera mayo, el mes de vinculación. De mayo a diciembre hay ocho meses de servicio prestado."
+      },
+      {
+        "id": "D",
+        "texto": "Un pasivo y un gasto de $19.200.000, por ocho meses de servicio en 2026.",
+        "explicacion": "Correcta. Alícuota mensual por servidor: 3.600.000/12 = 300.000. De mayo a diciembre hay ocho meses: 8 servidores × 300.000 × 8 = 19.200.000, como pasivo y gasto de 2026."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la bonificación es anual, pero los servidores prestaron ocho meses de servicio en 2026 y se les pagará en mayo de 2027. Regla: los beneficios a corto plazo, que pueden originarse en requerimientos legales como un decreto salarial, se reconocen cada mes por la alícuota del servicio prestado cuando no se pagan mensualmente, como pasivo y gasto (Cap. II, num. 5 y 5.1.1). Cálculo: 8 × 3.600.000 × 8/12 = 19.200.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Provisiones, activos y pasivos contingentes",
+    "subtema": "Provisión para una población de demandas: valor esperado y valor presente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. II, num. 6.1",
+      "Normas, Cap. II, num. 6.2"
+    ],
+    "texto_fuente": "Una obligación es probable cuando la probabilidad de ocurrencia es mayor que la probabilidad de no ocurrencia, lo cual conlleva al reconocimiento de una provisión. [...] En caso de que la provisión que se esté midiendo se refiera a una población importante de casos individuales, la obligación presente se estimará aplicando el método estadístico del Valor Esperado, el cual consiste en promediar todos los posibles desenlaces por sus probabilidades asociadas. [...] Cuando el efecto del valor del dinero en el tiempo resulte significativo, el valor de la provisión será el valor presente de los valores que se espera sean requeridos para liquidar la obligación. Un efecto significativo del valor del dinero en el tiempo se presenta cuando el plazo para cancelar la obligación se estima mayor a los 12 meses siguientes a la fecha de reconocimiento de la provisión. La tasa de descuento utilizada para el cálculo del valor presente será la tasa de interés extraída de la curva cero cupón de los TES en pesos, emitidos por el Gobierno nacional, más cercana a los plazos estimados para el pago de dicho pasivo.",
+    "pregunta": "Al cierre de 2026, una gobernación enfrenta 200 demandas casi idénticas de exservidores que piden la reliquidación de una bonificación; cada demandante pretende $12.100.000. Con base en los fallos de procesos similares, la oficina jurídica estima que la entidad perderá el 55 % de los casos, que en cada caso perdido pagará lo pretendido y que los pagos se harán en diciembre de 2028. La tasa de la curva cero cupón de los TES en pesos a dos años es del 10 %. El profesional de contabilidad debe medir la obligación. ¿Por qué valor reconoce la provisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.100.000.000",
+        "explicacion": "Correcta. Valor esperado: 200 × 55 % × 12.100.000 = 1.331.000.000. Como se pagará en dos años, se descuenta a la tasa de los TES: 1.331.000.000 / 1,1² = 1.100.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$1.331.000.000",
+        "explicacion": "Incorrecta. Aplica el valor esperado, pero no descuenta. El pago se hará en más de 12 meses, así que la provisión se mide a valor presente."
+      },
+      {
+        "id": "C",
+        "texto": "$2.000.000.000",
+        "explicacion": "Incorrecta. Descuenta, pero toma todas las pretensiones: (200 × 12.100.000) / 1,21 = 2.000.000.000. Con una población de casos se promedian los desenlaces por su probabilidad, y se espera condena en el 55 % de ellos."
+      },
+      {
+        "id": "D",
+        "texto": "$2.420.000.000",
+        "explicacion": "Incorrecta. Provisiona todas las pretensiones sin ponderar ni descontar. No refleja la probabilidad de ganar el 45 % de los casos ni el plazo de dos años."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: son 200 casos homogéneos, con 55 % de condenas esperadas y pago en dos años. Regla: para una población importante de casos, la provisión se estima por el valor esperado y, si el pago supera 12 meses, se mide a valor presente con la tasa de los TES (Cap. II, num. 6.2). Cálculo: 200 × 0,55 × 12.100.000 = 1.331.000.000; 1.331.000.000 / 1,21 = 1.100.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Provisiones, activos y pasivos contingentes",
+    "subtema": "Pasivo contingente resuelto después del cierre y nuevo litigio: hechos posteriores con y sin ajuste",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. III, num. 2.1",
+      "Normas, Cap. VI, num. 5.1",
+      "Normas, Cap. VI, num. 5.2"
+    ],
+    "texto_fuente": "Los hechos ocurridos después del periodo contable que implican ajuste son aquellos que proporcionan evidencias de las condiciones existentes al final de dicho periodo. La entidad ajustará los valores en sus estados financieros para reflejar la incidencia de los hechos ocurridos después del periodo contable que impliquen ajuste. Algunos de los eventos que proporcionan evidencia de las condiciones existentes al final del periodo contable y que implican el reconocimiento o el ajuste de los activos, pasivos, patrimonio, ingresos, gastos y costos son los siguientes: a) la resolución de un litigio judicial que confirme que la entidad tenía una obligación presente al final del periodo contable; [...] Los hechos ocurridos después del periodo contable que no implican ajuste son aquellos que indican condiciones surgidas después de este y que, por su materialidad, serán objeto de revelación. [...] i) el otorgamiento de garantías; j) el inicio de litigios y k) el comienzo de una combinación o un traslado de operaciones.",
+    "pregunta": "Al 31 de diciembre de 2026, la oficina jurídica de un departamento calificó como posible, con una probabilidad de pérdida del 40 %, una demanda de un contratista por $180.000.000 por hechos de 2025, y la contadora la reveló como pasivo contingente. El 22 de enero de 2027 quedó en firme la sentencia que condenó al departamento a pagar $150.000.000. Además, el 5 de febrero de 2027 un particular demandó al departamento por $300.000.000, una cuantía significativa para la entidad, por un accidente ocurrido el 12 de enero de 2027 en una vía departamental. Los estados financieros de 2026 se autorizarán el 20 de febrero de 2027. ¿Qué debe decidir el profesional de contabilidad para esos estados?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener la primera demanda como pasivo contingente revelado en notas, y revelar también la nueva demanda.",
+        "explicacion": "Incorrecta. La sentencia en firme, conocida antes de autorizar los estados, confirma que al cierre ya existía la obligación por hechos de 2025: es un hecho que implica ajuste, y la calificación inicial de posible debe actualizarse."
+      },
+      {
+        "id": "B",
+        "texto": "Reconocer un pasivo y un gasto de $150.000.000 por la condena, sin revelar la nueva demanda en notas.",
+        "explicacion": "Incorrecta. Ajusta bien la condena, pero omite la nueva demanda. Aunque surge de un hecho de 2027 y no implica ajuste, el inicio de un litigio de cuantía significativa se revela en las notas."
+      },
+      {
+        "id": "C",
+        "texto": "Reconocer un pasivo y un gasto de $150.000.000 por la condena, y revelar la nueva demanda en las notas.",
+        "explicacion": "Correcta. La condena confirma una obligación presente al cierre: se reconocen el pasivo y el gasto por los $150.000.000 fijados en la sentencia. La nueva demanda indica una condición surgida después del cierre: no se ajusta, pero, por su materialidad, se revela."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener la primera demanda como pasivo contingente revelado en notas, sin revelar la nueva demanda.",
+        "explicacion": "Incorrecta. Comete los dos errores: no ajusta por la sentencia, que aporta evidencia de la obligación al cierre, y no revela el nuevo litigio, que es material."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: antes de autorizar los estados quedó en firme una condena por hechos de 2025, y surgió una demanda por un accidente de 2027. Regla: la resolución de un litigio que confirma una obligación existente al cierre implica ajuste; el inicio de litigios por hechos posteriores no implica ajuste y se revela si es material (Cap. VI, num. 5.1 y 5.2). Conclusión: pasivo y gasto de $150.000.000 y revelación de la nueva demanda.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Ingresos de transacciones con contraprestación",
+    "subtema": "Entidad que actúa como agente en la venta de boletería: ingreso por la comisión",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. IV, num. 2.1",
+      "Normas, Cap. IV, num. 2.1.2"
+    ],
+    "texto_fuente": "La entidad actúa como principal si está obligada a vender los bienes al comprador, prestar los servicios al usuario o entregar el uso de activos a terceros. Esto ocurre, entre otros, cuando la entidad controla los bienes que venderá o los activos cuyo uso cederá, es la responsable principal del cumplimiento del compromiso de proporcionar el bien o servicio especificado, o tiene la responsabilidad de la aceptación del bien o servicio especificado antes de transferirlo. La entidad actúa como agente si su única obligación es organizar las condiciones para que se produzca la venta de los bienes, la prestación de servicios o la entrega del uso de activos. [...] Si la entidad actúa como principal, reconocerá el ingreso por la venta de bienes al comprador, por la prestación de servicios al usuario o por la entrega del uso de activos a terceros. Por su parte, si la entidad actúa como agente, reconocerá un ingreso por la comisión o el pago por la prestación del servicio de gestión. [...] Los ingresos por prestación de servicios se reconocerán cuando el resultado de una transacción pueda estimarse con fiabilidad, considerando el grado de avance en la prestación del servicio al final del periodo contable.",
+    "pregunta": "Entre octubre y noviembre de 2026, un instituto departamental de cultura vendió en su taquilla $250.000.000 en boletas para un concierto organizado por un empresario privado, que se realizó el 28 de noviembre. El empresario fijó los precios, contrató a los artistas, respondía por la realización del concierto y asumía la pérdida si las boletas no se vendían. El instituto se limitó a vender las boletas, con una comisión del 8 % sobre lo vendido, que descontará al girarle el saldo al empresario en la liquidación prevista para febrero de 2027. La profesional de contabilidad debe definir el ingreso del instituto. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un ingreso de $250.000.000, reconocido en 2026, cuando se realizó el concierto.",
+        "explicacion": "Incorrecta. Trata al instituto como principal. El empresario controla el servicio, fija los precios y asume los riesgos; el instituto solo organiza la venta, así que es agente y su ingreso es la comisión."
+      },
+      {
+        "id": "B",
+        "texto": "Un ingreso de $20.000.000, reconocido en 2026, a medida que se vendieron las boletas.",
+        "explicacion": "Correcta. El instituto actúa como agente: su ingreso es la comisión, 8 % × 250.000.000 = 20.000.000. Su servicio, vender las boletas, se prestó en 2026, así que el ingreso es de ese año; los 230.000.000 restantes son un pasivo con el empresario."
+      },
+      {
+        "id": "C",
+        "texto": "Un ingreso de $20.000.000, reconocido en 2027, cuando se liquide la cuenta con el empresario.",
+        "explicacion": "Incorrecta. Identifica bien la comisión, pero la aplaza hasta la liquidación. El servicio de venta se prestó en 2026; la fecha del giro no determina cuándo se reconoce el ingreso."
+      },
+      {
+        "id": "D",
+        "texto": "Un ingreso de $250.000.000, reconocido en 2027, cuando se liquide la cuenta con el empresario.",
+        "explicacion": "Incorrecta. Comete dos errores: reconoce toda la boletería, aunque el instituto es agente, y la aplaza hasta la liquidación, aunque el servicio se prestó en 2026."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el empresario fija los precios, contrata a los artistas y asume los riesgos; el instituto solo vende boletas por una comisión, y la venta terminó en 2026. Regla: si la entidad actúa como agente, reconoce como ingreso la comisión, a medida que presta el servicio (Cap. IV, num. 2.1 y 2.1.2). Cálculo: 8 % × 250.000.000 = 20.000.000, ingreso de 2026.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Presentación de estados financieros",
+    "subtema": "Notas y presentación: partidas extraordinarias, declaración de cumplimiento y errores que no se corrigen con revelaciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. VI, num. 1.3.3.1",
+      "Normas, Cap. VI, num. 1.3.3.2",
+      "Normas, Cap. VI, num. 1.3.5.2",
+      "Normas, Cap. VI, num. 1.3.7 (texto actualizado con la Resolución 339 de 2025)",
+      "Normas, Cap. VI, num. 4.1"
+    ],
+    "texto_fuente": "La entidad no presentará ni revelará ninguna partida de ingreso o gasto como partidas extraordinarias en el estado de resultados o en las notas. [...] Cuando las partidas de ingreso o gasto sean materiales, la entidad revelará de forma separada, información sobre su naturaleza e importe. [...] b) La declaración explícita y sin reservas del cumplimiento del Marco Normativo para Entidades de Gobierno, el cual hace parte integral del Régimen de Contabilidad Pública. [...] Las entidades de gobierno no están obligadas a preparar y presentar el estado de flujos de efectivo. [...] La entidad no puede rectificar políticas contables seleccionadas o aplicadas inapropiadamente mediante la revelación de las políticas contables utilizadas, ni mediante la utilización de notas u otro material explicativo. Si la entidad ha seleccionado o aplicado inapropiadamente una política contable, seguirá lo establecido en esta Norma, para la corrección de errores.",
+    "pregunta": "La profesional de contabilidad de una gobernación revisa el borrador de los estados financieros de 2026, que no incluye el estado de flujos de efectivo, y encuentra tres asuntos: (1) la pérdida por el incendio de una bodega, que es material, aparece en el estado de resultados como «partida extraordinaria»; (2) el jefe de control interno sugiere que, por no presentar el estado de flujos de efectivo, la declaración de cumplimiento del marco normativo se haga con salvedad; y (3) desde 2024 la entidad no ha depreciado las vías, y el borrador propone explicar esa omisión en una nota en lugar de calcular la depreciación. ¿Qué debe decidir la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mostrar el incendio entre las partidas ordinarias y revelar su naturaleza e importe; declarar el cumplimiento con salvedad; y conservar la nota que explica la omisión en las vías.",
+        "explicacion": "Incorrecta. Acierta con el incendio, pero acepta una salvedad que no procede, pues el estado de flujos de efectivo no es obligatorio para las entidades de gobierno, y pretende resolver la falta de depreciación con una nota, cuando una política mal aplicada no se rectifica revelándola."
+      },
+      {
+        "id": "B",
+        "texto": "Mantener el incendio como partida extraordinaria y detallarlo en las notas; declarar el cumplimiento sin reservas; y conservar la nota que explica la omisión en las vías.",
+        "explicacion": "Incorrecta. Acierta con la declaración sin reservas, pero conserva la partida extraordinaria, que no puede presentarse ni revelarse como tal, y deja la nota sobre las vías en lugar de corregir el error."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener el incendio como partida extraordinaria y detallarlo en las notas; declarar el cumplimiento con salvedad; y corregir la depreciación como error.",
+        "explicacion": "Incorrecta. Acierta al corregir la depreciación, pero conserva la partida extraordinaria y acepta una salvedad por un estado que las entidades de gobierno no están obligadas a presentar."
+      },
+      {
+        "id": "D",
+        "texto": "Mostrar el incendio entre las partidas ordinarias y revelar su naturaleza e importe; declarar el cumplimiento sin reservas; y corregir la depreciación como error.",
+        "explicacion": "Correcta. Ninguna partida se presenta como extraordinaria; la pérdida material se revela por separado con su naturaleza e importe. El juego completo no exige el estado de flujos de efectivo, así que la declaración de cumplimiento va sin reservas. Y la depreciación omitida es un error que se corrige: las notas no rectifican una política mal aplicada."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el borrador usa una partida extraordinaria, propone una salvedad por no presentar flujos de efectivo y explica en notas la falta de depreciación. Regla: no hay partidas extraordinarias y las materiales se revelan por separado; el estado de flujos de efectivo no es obligatorio y la declaración de cumplimiento es sin reservas; una política mal aplicada no se rectifica con notas, sino como error (Cap. VI, num. 1.3.3, 1.3.5.2, 1.3.7 y 4.1).",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CTB-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contabilidad",
+    "modulo": "Contabilidad Pública",
+    "tema": "Presentación de estados financieros",
+    "subtema": "Clasificación de pasivos en corrientes y no corrientes",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. VI, num. 1.3.2.2",
+      "Normas, Cap. VI, num. 1.3.2.2.2"
+    ],
+    "texto_fuente": "La entidad presentará sus activos corrientes y no corrientes, así como sus pasivos corrientes y no corrientes, como categorías separadas en su estado de situación financiera. [...] La entidad clasificará un pasivo como corriente cuando a) espere liquidar el pasivo en el ciclo normal de su operación; b) liquide el pasivo dentro de los 12 meses siguientes a la fecha de los estados financieros; o c) no tenga derecho a aplazar la cancelación del pasivo durante, al menos, los 12 meses siguientes a la fecha de presentación de los estados financieros. La entidad clasificará todos los demás pasivos como no corrientes.",
+    "pregunta": "Un técnico contable de un municipio prepara el estado de situación financiera al 31 de diciembre de 2026 con estos pasivos: (1) un préstamo del banco A por $1.200.000.000, del cual $300.000.000 vencen en 2027 y $900.000.000 entre 2028 y 2030; (2) un préstamo del banco B por $200.000.000, pactado hasta 2029, en el que el municipio incumplió dos cuotas en noviembre, por lo que el contrato le permite al banco exigir todo el saldo, sin que este haya concedido plazo alguno; (3) cuentas por pagar a proveedores por $180.000.000, que vencen en enero de 2027; (4) beneficios a los empleados a corto plazo por $90.000.000; y (5) una provisión de $250.000.000 por un litigio cuyo pago se estima para 2029. ¿Cómo debe presentar los pasivos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pasivos corrientes, $770.000.000; pasivos no corrientes, $1.150.000.000.",
+        "explicacion": "Correcta. Corrientes: 300 (cuotas de 2027 del banco A) + 200 (banco B, exigible en cualquier momento) + 180 + 90 = 770 millones. No corrientes: 900 (banco A, 2028 a 2030) + 250 (provisión que se pagará en 2029) = 1.150 millones."
+      },
+      {
+        "id": "B",
+        "texto": "Pasivos corrientes, $570.000.000; pasivos no corrientes, $1.350.000.000.",
+        "explicacion": "Incorrecta. Deja el préstamo del banco B como no corriente por su vencimiento pactado en 2029. Tras el incumplimiento, el municipio no tiene derecho a aplazar el pago durante 12 meses, así que es corriente."
+      },
+      {
+        "id": "C",
+        "texto": "Pasivos corrientes, $1.020.000.000; pasivos no corrientes, $900.000.000.",
+        "explicacion": "Incorrecta. Clasifica bien el banco B, pero lleva la provisión al corriente. Su pago se estima para 2029, después de los 12 meses siguientes al cierre, así que es no corriente."
+      },
+      {
+        "id": "D",
+        "texto": "Pasivos corrientes, $820.000.000; pasivos no corrientes, $1.100.000.000.",
+        "explicacion": "Incorrecta. Comete los dos errores: deja el banco B como no corriente aunque ya puede exigirse, y pasa al corriente la provisión que se pagará en 2029."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el préstamo del banco B puede exigirse en su totalidad por el incumplimiento, y la provisión se pagará en 2029. Regla: un pasivo es corriente si se liquida dentro de los 12 meses siguientes o si la entidad no tiene derecho a aplazar su pago al menos 12 meses; los demás son no corrientes (Cap. VI, num. 1.3.2.2.2). Cálculo: 300 + 200 + 180 + 90 = 770 millones corrientes; 900 + 250 = 1.150 millones no corrientes.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]
