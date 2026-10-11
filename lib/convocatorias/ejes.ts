@@ -133,6 +133,14 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
     'lengua castellana', 'humanidades', 'literatura', 'produccion textual', 'comprension e interpretacion textual',
     'didactica del lenguaje', 'lectura y escritura', 'linguistica', 'medios de comunicacion y otros sistemas simbolicos',
   ],
+  'Saber Disciplinar: Ciencias Naturales': [
+    'ciencias naturales', 'biologia', 'quimica', 'fisica', 'educacion ambiental', 'entorno vivo', 'entorno fisico',
+    'ciencia, tecnologia y sociedad', 'didactica de las ciencias',
+  ],
+  'Saber Disciplinar: Ciencias Sociales': [
+    'ciencias sociales', 'historia', 'geografia', 'constitucion politica y democracia', 'competencias ciudadanas',
+    'relaciones etico-politicas', 'relaciones espaciales y ambientales', 'didactica de las ciencias sociales',
+  ],
   'Saber Disciplinar: Primaria': [
     'basica primaria', 'primaria', 'docente de primaria', 'primero a quinto', 'escuela nueva', 'multigrado',
     'lectoescritura', 'alfabetizacion inicial',

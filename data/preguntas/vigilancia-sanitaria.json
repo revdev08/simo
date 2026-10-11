@@ -1091,5 +1091,1102 @@
       "fecha": "2026-10-10",
       "p_estimado": 55
     }
+  },
+  {
+    "id": "TC-SAN-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Abastecimiento de agua: capacidad y rotulado del tanque y uso de agua no potable",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 6, num. 3.3",
+      "art. 6, nums. 3.5 y 3.5.4"
+    ],
+    "texto_fuente": "3.3. Solamente se permite el uso de agua no potable, cuando la misma no ocasione riesgos de contaminación del alimento; como en los casos de generación de vapor indirecto, lucha contra incendios, o refrigeración indirecta. En estos casos, el agua no potable debe distribuirse por un sistema de tuberías completamente separados e identificados por colores, sin que existan conexiones cruzadas ni sifonaje de retroceso con las tuberías de agua potable. [...] 3.5. El establecimiento debe disponer de un tanque de almacenamiento de agua con capacidad suficiente para un día de trabajo, garantizando la potabilidad de la misma. [...] 3.5.4. Deben estar debidamente identificados e indicada su capacidad.",
+    "pregunta": "Una técnica de inspección del Invima visita una fábrica de bocadillo de guayaba que opera de lunes a viernes. En la semana del 3 al 7 de agosto de 2026, la planta no trabajó el viernes por ser festivo, y el medidor de agua potable registró un consumo de 84 m³. El único tanque de almacenamiento de agua potable tiene 18 m³ y lleva pintada la leyenda «Agua potable», sin ningún dato sobre su volumen. La caldera, cuyo vapor calienta las marmitas a través de una chaqueta sin tocar el producto, se alimenta con agua de pozo sin tratar que llega por una tubería propia, pintada de otro color y sin conexión con la red de agua potable. ¿Qué debe registrar en el acta como incumplimientos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El volumen del tanque, inferior al consumo de un día, y el uso de agua de pozo en la caldera.",
+        "explicacion": "Incorrecta. Acierta en el volumen, pero la caldera produce vapor indirecto con agua que va por una red separada e identificada por color, un uso que el num. 3.3 permite. Además, omite que el rótulo del tanque debe indicar su capacidad (num. 3.5.4)."
+      },
+      {
+        "id": "B",
+        "texto": "La falta de la capacidad en el rótulo del tanque y el uso de agua de pozo en la caldera.",
+        "explicacion": "Incorrecta. Divide el consumo entre cinco días (16,8 m³) y no entre los cuatro trabajados (21 m³), por lo que da por bueno el volumen del tanque. Y el agua de pozo para el vapor indirecto, con red separada, está permitida (num. 3.3)."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno, porque el tanque cubre el consumo diario promedio y la caldera tiene red propia.",
+        "explicacion": "Incorrecta. El consumo de un día de trabajo es de 21 m³ (84 m³ en cuatro días), más que los 18 m³ del tanque (num. 3.5), y el rótulo no indica la capacidad (num. 3.5.4)."
+      },
+      {
+        "id": "D",
+        "texto": "El volumen del tanque, inferior al consumo de un día, y la falta de su capacidad en el rótulo.",
+        "explicacion": "Correcta. El consumo diario es de 84 m³ ÷ 4 días trabajados = 21 m³, más que los 18 m³ del tanque, que debe alcanzar para un día de trabajo (art. 6, num. 3.5). El tanque debe estar identificado e indicar su capacidad (num. 3.5.4). El agua no potable se admite para generar vapor indirecto si va por tuberías separadas, identificadas por colores y sin conexiones cruzadas (num. 3.3)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: 84 m³ en una semana con cuatro días trabajados (el 7 de agosto de 2026 fue festivo), tanque de 18 m³ rotulado sin capacidad y caldera de vapor indirecto con agua de pozo en red separada. Reglas: el tanque debe cubrir un día de trabajo e indicar su capacidad (Res. 2674, art. 6, nums. 3.5 y 3.5.4); el agua no potable se admite para vapor indirecto con tuberías separadas e identificadas por colores (num. 3.3). Cálculo: 84 ÷ 4 = 21 m³ > 18 m³. Conclusión: incumplen el volumen y el rótulo del tanque.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAN-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Instalaciones sanitarias y lavamanos del personal",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 6, nums. 6.1 y 6.3"
+    ],
+    "texto_fuente": "6.1. Deben disponer de instalaciones sanitarias en cantidad suficiente tales como servicios sanitarios y vestidores, independientes para hombres y mujeres, separados de las áreas de elaboración. Para el caso de microempresas que tienen un reducido número de operarios (no más de 6 operarios), se podrá disponer de un baño para el servicio de hombres y mujeres. [...] 6.3. Se deben instalar lavamanos con grifos de accionamiento no manual dotados con dispensador de jabón desinfectante, implementos desechables o equipos automáticos para el secado de manos, en las áreas de elaboración o próximos a estas para la higiene del personal que participe en la manipulación de los alimentos y para facilitar la supervisión de estas prácticas. Estas áreas deben ser de uso exclusivo para este propósito.",
+    "pregunta": "Un técnico de inspección del Invima visita dos microempresas. En la panadería, que elabora pan empacado para tiendas y tiene 6 operarios, hay un solo baño para hombres y mujeres, separado de la zona de hornos, y el lavamanos de pedal del personal, con jabón desinfectante y toallas desechables, está en el pasillo contiguo a esa zona. En la fábrica de empanadas congeladas, que tiene 7 operarios, también hay un solo baño para hombres y mujeres, y el lavamanos de sensor, con jabón desinfectante y secador automático, está dentro del área de elaboración; allí los operarios lavan también los moldes y las bandejas. ¿Qué debe registrar como incumplimientos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El baño compartido de la fábrica de empanadas y el uso que se le da a su lavamanos.",
+        "explicacion": "Correcta. Un solo baño para hombres y mujeres se admite en microempresas de no más de 6 operarios (art. 6, num. 6.1): la panadería, con 6, cumple; la fábrica de empanadas, con 7, no. Los lavamanos deben ser de uso exclusivo para la higiene del personal (num. 6.3), y en la fábrica de empanadas se usa para lavar moldes y bandejas. El de la panadería puede estar próximo al área de elaboración."
+      },
+      {
+        "id": "B",
+        "texto": "Los baños compartidos de ambas empresas y la ubicación del lavamanos de la panadería.",
+        "explicacion": "Incorrecta. La panadería tiene 6 operarios, dentro del límite que permite un solo baño (num. 6.1), y su lavamanos puede estar próximo a la zona de elaboración (num. 6.3). Además, omite el uso indebido del lavamanos de la fábrica de empanadas."
+      },
+      {
+        "id": "C",
+        "texto": "El baño compartido de la fábrica de empanadas y la ubicación del lavamanos de la panadería.",
+        "explicacion": "Incorrecta. Acierta con el baño de la fábrica de empanadas, pero el num. 6.3 admite lavamanos en las áreas de elaboración o próximos a ellas. La falla está en que el de la fábrica de empanadas no es de uso exclusivo para la higiene del personal."
+      },
+      {
+        "id": "D",
+        "texto": "Los baños compartidos de ambas empresas y el uso que la fábrica de empanadas da a su lavamanos.",
+        "explicacion": "Incorrecta. Acierta con el lavamanos, pero la excepción del num. 6.1 cubre a las microempresas de hasta 6 operarios, como la panadería."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: la panadería tiene 6 operarios y la fábrica de empanadas 7; el lavamanos de la panadería está fuera pero junto al área, y el de las empanadas se usa para lavar moldes. Reglas: un solo baño para ambos sexos solo en microempresas de no más de 6 operarios (Res. 2674, art. 6, num. 6.1); los lavamanos van en las áreas de elaboración o próximos a ellas y son de uso exclusivo para la higiene del personal (num. 6.3). Conclusión: incumplen el baño y el uso del lavamanos de la fábrica de empanadas.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Personal manipulador de alimentos",
+    "subtema": "Prácticas higiénicas y medidas de protección",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 14, nums. 2, 3, 4, 8 y 10"
+    ],
+    "texto_fuente": "2. Usar vestimenta de trabajo que cumpla los siguientes requisitos: De color claro que permita visualizar fácilmente su limpieza; [...] En ningún caso se podrán aceptar colores grises o aquellos que impidan evidenciar su limpieza, en la dotación de los manipuladores de alimentos. 3. El manipulador de alimentos no podrá salir e ingresar al establecimiento con la vestimenta de trabajo. 4. Lavarse las manos con agua y jabón desinfectante, antes de comenzar su trabajo, cada vez que salga y regrese al área asignada y después de manipular cualquier material u objeto que pudiese representar un riesgo de contaminación para el alimento. [...] 8. No se permite utilizar reloj, anillos, aretes, joyas u otros accesorios mientras el personal realice sus labores. En caso de usar lentes, deben asegurarse a la cabeza mediante bandas, cadenas u otros medios ajustables. [...] El uso de guantes no exime al operario de la obligación de lavarse las manos, según lo contempla el numeral 4 del presente artículo.",
+    "pregunta": "En una fábrica de quesos, una técnica de inspección del Invima observa a cuatro manipuladores durante el turno. Ana viste una dotación gris perla, con cremallera y sin bolsillos. Beto usa gafas formuladas sujetas a la cabeza con una banda elástica. Carla, que trabaja con guantes de nitrilo, regresa del baño y se pone un par nuevo sin lavarse las manos. Darío sale en su descanso, con la dotación puesta, a la cafetería de la esquina y regresa con ella a la línea. ¿Qué debe concluir la técnica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo la conducta de Ana es aceptable; las de Beto, Carla y Darío son incumplimientos.",
+        "explicacion": "Incorrecta. La dotación debe ser de color claro, y la norma excluye expresamente los colores grises (art. 14, num. 2). En cambio, las gafas de Beto están permitidas porque van aseguradas a la cabeza (num. 8)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la conducta de Beto es aceptable; las de Ana, Carla y Darío son incumplimientos.",
+        "explicacion": "Correcta. Los lentes se permiten si van asegurados a la cabeza con bandas u otros medios ajustables (art. 14, num. 8). En cambio, la dotación gris está excluida (num. 2), los guantes no eximen de lavarse las manos al regresar al área (nums. 4 y 10) y no se puede salir e ingresar al establecimiento con la vestimenta de trabajo (num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la conducta de Carla es aceptable; las de Ana, Beto y Darío son incumplimientos.",
+        "explicacion": "Incorrecta. El uso de guantes no exime de lavarse las manos (art. 14, num. 10), y el lavado es obligatorio cada vez que se sale y se regresa al área asignada (num. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la conducta de Darío es aceptable; las de Ana, Beto y Carla son incumplimientos.",
+        "explicacion": "Incorrecta. El manipulador no puede salir del establecimiento y volver a ingresar con la vestimenta de trabajo (art. 14, num. 3), aunque lo haga en su descanso."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: dotación gris, gafas sujetas con banda, cambio de guantes sin lavado de manos y salida a la calle con la dotación. Reglas (Res. 2674, art. 14): no se aceptan colores grises en la dotación (num. 2); no se sale ni se ingresa con la vestimenta de trabajo (num. 3); hay que lavarse las manos cada vez que se sale y se regresa al área, y los guantes no eximen de hacerlo (nums. 4 y 10); los lentes se admiten asegurados a la cabeza (num. 8). Conclusión: solo Beto cumple.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAN-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Saneamiento",
+    "subtema": "Contenido mínimo de los programas del plan de saneamiento",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 26, nums. 1, 3 y 4"
+    ],
+    "texto_fuente": "Este plan debe estar escrito y a disposición de la autoridad sanitaria competente; este debe incluir como mínimo los procedimientos, cronogramas, registros, listas de chequeo y responsables de los siguientes programas: 1. Limpieza y desinfección. [...] Cada establecimiento debe tener por escrito todos los procedimientos, incluyendo los agentes y sustancias utilizadas, así como las concentraciones o formas de uso, tiempos de contacto y los equipos e implementos requeridos para efectuar las operaciones y periodicidad de limpieza y desinfección. [...] 3. Control de plagas. Las plagas deben ser objeto de un programa de control específico, el cual debe involucrar el concepto de control integral, apelando a la aplicación armónica de las diferentes medidas de control conocidas, con especial énfasis en las radicales y de orden preventivo. 4. Abastecimiento o suministro de agua potable. Todos los establecimientos de que trata la presente resolución deben tener documentado el proceso de abastecimiento de agua que incluye claramente: fuente de captación o suministro, tratamientos realizados, manejo, diseño y capacidad del tanque de almacenamiento, distribución; mantenimiento, limpieza y desinfección de redes y tanque de almacenamiento; controles realizados para garantizar el cumplimiento de los requisitos fisicoquímicos y microbiológicos establecidos en la normatividad vigente, así como los registros que soporten el cumplimiento de los mismos.",
+    "pregunta": "Un técnico de inspección del Invima revisa el plan de saneamiento escrito de una fábrica de jugos. El programa de limpieza y desinfección señala las áreas, los responsables, la frecuencia y el desinfectante que se usa, pero no dice a qué concentración se prepara ni cuánto tiempo debe actuar. El de desechos sólidos está completo. El de plagas, con cronograma, responsables y registros, se basa en mallas, sellado de grietas y estaciones de monitoreo, sin fumigaciones programadas. El de agua solo indica que la fuente es el acueducto municipal. ¿Qué debe registrar como incumplimientos del plan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Lo que falta en el programa de limpieza y desinfección y la ausencia de fumigaciones.",
+        "explicacion": "Incorrecta. El control de plagas debe ser integral, con énfasis en las medidas radicales y preventivas (art. 26, num. 3); la norma no exige fumigaciones programadas. Además, omite lo que falta en el programa de agua (num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Lo que falta en el programa de agua y la ausencia de fumigaciones en el de plagas.",
+        "explicacion": "Incorrecta. Acierta con el programa de agua, pero el de plagas cumple con medidas preventivas (num. 3), y omite las concentraciones y tiempos de contacto que faltan en el de limpieza y desinfección (num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Lo que falta en los programas de limpieza y desinfección y de abastecimiento de agua.",
+        "explicacion": "Correcta. El programa de limpieza y desinfección debe indicar las concentraciones o formas de uso y los tiempos de contacto (art. 26, num. 1). El de agua debe documentar, además de la fuente, el tanque, su limpieza y desinfección, los controles fisicoquímicos y microbiológicos y sus registros (num. 4). El de plagas, integral y preventivo, cumple (num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque cada programa nombra lo esencial y el de plagas es preventivo.",
+        "explicacion": "Incorrecta. El programa de limpieza y desinfección debe incluir las concentraciones o formas de uso y los tiempos de contacto (art. 26, num. 1), y el de agua debe documentar mucho más que la fuente (num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: el programa de limpieza no tiene concentraciones ni tiempos de contacto; el de plagas es preventivo y sin fumigaciones; el de agua solo menciona la fuente. Reglas (Res. 2674, art. 26): limpieza y desinfección con concentraciones y tiempos de contacto (num. 1); control integral de plagas con énfasis preventivo (num. 3); programa de agua con fuente, tratamiento, tanque, limpieza de redes y tanque, controles y registros (num. 4). Conclusión: incumplen los programas de limpieza y de agua.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Almacenamiento, distribución y comercialización",
+    "subtema": "Productos devueltos o vencidos y sustancias peligrosas en la bodega",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 28, nums. 6 y 7"
+    ],
+    "texto_fuente": "6. El almacenamiento de los alimentos y materias primas devueltos a la empresa o que se encuentren dentro de sus instalaciones con fecha de vencimiento caducada, debe realizarse en un área o depósito exclusivo para tal fin; este lugar debe identificarse claramente, se llevará un libro de registro en el cual se consigne la fecha y la cantidad de producto, las salidas parciales o totales y su destino final. [...] 7. Los plaguicidas, detergentes, desinfectantes y otras sustancias peligrosas que por necesidades de uso se encuentren dentro de la fábrica, deben etiquetarse adecuadamente con un rótulo en que se informe sobre su toxicidad y empleo. Estos productos deben almacenarse en áreas independientes con separación física y su manipulación sólo podrá hacerla el personal idóneo, evitando la contaminación de otros productos. Estas áreas deben estar debidamente identificadas, organizadas, señalizadas y aireadas.",
+    "pregunta": "En la bodega de producto terminado de una fábrica de galletas, una técnica de inspección del Invima encuentra cajas de galletas vencidas que devolvieron las tiendas, puestas en los niveles inferiores de la misma estantería del producto que está para la venta, marcadas con cinta roja y anotadas en una planilla. También encuentra los detergentes y desinfectantes de la fábrica en sus envases originales rotulados, dentro de un cuarto cerrado, señalizado y ventilado, al que solo entra el encargado del aseo. ¿Qué debe anotar en el acta como incumplimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las galletas vencidas, por compartir el mueble con el producto que está a la venta.",
+        "explicacion": "Correcta. Los alimentos devueltos o vencidos deben guardarse en un área o depósito exclusivo, identificado y con libro de registro (art. 28, num. 6); los niveles bajos de la estantería de venta no lo son. Los detergentes y desinfectantes pueden estar en la fábrica si van rotulados, en áreas independientes y separadas, señalizadas y aireadas, y los maneja personal idóneo (num. 7)."
+      },
+      {
+        "id": "B",
+        "texto": "Los detergentes, por estar dentro de la misma fábrica donde se guardan los alimentos.",
+        "explicacion": "Incorrecta. La norma admite estas sustancias en la fábrica por necesidades de uso, rotuladas y en áreas independientes con separación física (art. 28, num. 7), como el cuarto cerrado. Además, omite la falla con las galletas vencidas (num. 6)."
+      },
+      {
+        "id": "C",
+        "texto": "Las galletas vencidas y los detergentes, por estar ambos dentro de la zona de alimentos.",
+        "explicacion": "Incorrecta. Acierta con las galletas, pero el cuarto cerrado, señalizado y ventilado cumple las condiciones del num. 7 para los detergentes y desinfectantes."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque las galletas están identificadas y registradas y los químicos, aislados.",
+        "explicacion": "Incorrecta. Marcar y registrar las galletas no basta: deben estar en un área o depósito exclusivo para ese fin (art. 28, num. 6), no en la estantería del producto para la venta."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: las galletas vencidas están en la misma estantería del producto para la venta; los detergentes, rotulados, en un cuarto separado, señalizado y ventilado. Reglas (Res. 2674, art. 28): los devueltos o vencidos van en un área o depósito exclusivo, identificado y con libro de registro (num. 6); las sustancias peligrosas, rotuladas y en áreas independientes con separación física (num. 7). Conclusión: solo incumple la ubicación de las galletas vencidas.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAN-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Almacenamiento, distribución y comercialización",
+    "subtema": "Condiciones del expendio de alimentos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 31, num. 3",
+      "art. 31, par. 2"
+    ],
+    "texto_fuente": "3. Disponer de los equipos necesarios para la conservación, como neveras y congeladores adecuados para aquellos alimentos que requieran condiciones especiales de refrigeración y/o congelación, los cuales deben contar con instrumentos para la medición de la temperatura, mantenerse en operación permanentemente mientras contenga el alimento y ser utilizados de acuerdo con la capacidad de su diseño, así como contar con procedimientos definidos para limpieza, desinfección y mantenimiento. En los equipos de refrigeración y/o congelación, debe evitarse el almacenamiento conjunto de alimentos y materias crudas con procesados o entre aquellos que representen riesgo de contaminación cruzada. [...] Se prohíbe la exhibición y venta de alimentos o materias primas que se encuentren alterados, adulterados, contaminados, fraudulentos o con fecha de vencimiento caducada.",
+    "pregunta": "Un técnico de inspección de la secretaría de salud visita un minimercado y anota cuatro situaciones: (1) en una canasta de «oferta» hay yogures cuya fecha de vencimiento fue el día anterior; (2) la nevera de lácteos se desconecta de 10 p. m. a 6 a. m. para ahorrar energía, con los productos adentro; (3) en un mismo congelador se guardan pollo crudo en bolsas y empanadas precocidas congeladas en cajas, y (4) las neveras tienen termómetros de aguja y no registradores digitales; el encargado anota cada mañana la lectura en una planilla. ¿Cuál de las situaciones NO debe registrar como incumplimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La de los yogures, porque están separados del resto y se venden con descuento.",
+        "explicacion": "Incorrecta. Se prohíbe exhibir y vender alimentos con fecha de vencimiento caducada, aunque se separen o se ofrezcan con descuento (art. 31, par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "La de la nevera, porque conserva el frío durante las horas en que se desconecta.",
+        "explicacion": "Incorrecta. Las neveras y congeladores deben mantenerse en operación permanente mientras contengan alimentos (art. 31, num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "La del congelador, porque el pollo y las empanadas van empacados por separado.",
+        "explicacion": "Incorrecta. En los equipos de refrigeración o congelación debe evitarse guardar juntos alimentos crudos y procesados (art. 31, num. 3, inc. 2), aunque vayan en empaques distintos."
+      },
+      {
+        "id": "D",
+        "texto": "La de los termómetros, porque con ellos se puede leer la temperatura del equipo.",
+        "explicacion": "Correcta. La norma exige que neveras y congeladores cuenten con instrumentos para medir la temperatura (art. 31, num. 3), y los termómetros de aguja lo son. Las otras tres situaciones están prohibidas por el art. 31."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: yogures vencidos en oferta, nevera apagada de noche con productos, pollo crudo junto a empanadas precocidas y termómetros de aguja. Reglas (Res. 2674, art. 31): equipos con instrumentos de medición de temperatura, en operación permanente mientras contengan alimentos y sin guardar juntos crudos y procesados (num. 3); prohibición de exhibir y vender alimentos vencidos (par. 2). Conclusión: solo los termómetros de aguja no son un incumplimiento.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAN-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Restaurantes y establecimientos gastronómicos",
+    "subtema": "Operaciones de preparación y servido de alimentos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 35, nums. 3, 5, 6 y 10"
+    ],
+    "texto_fuente": "3. Las hortalizas y frutas que se consuman deben someterse a lavado y desinfección con sustancias autorizadas por el Ministerio de Salud y Protección Social. [...] 5. El personal que está directamente vinculado a la preparación o servido de los alimentos no debe manipular dinero simultáneamente. 6. Los alimentos y bebidas expuestos para la venta deben mantenerse en vitrinas, campanas plásticas, mallas metálicas o plásticas o cualquier sistema apropiado que los proteja del ambiente exterior. [...] 10. Cuando los establecimientos no cuenten con agua y equipos en cantidad y calidad suficientes para el lavado y desinfección, los utensilios que se utilicen deben ser desechables con el primer uso.",
+    "pregunta": "Una técnica de inspección de la secretaría de salud visita un restaurante de almuerzos ejecutivos y observa cuatro prácticas: (1) en la hora pico, la cajera cobra en efectivo y, entre un cobro y otro, sirve los jugos en la barra; (2) la lechuga y el tomate de las ensaladas se lavan con agua potable corriente y pasan directamente al plato; (3) como el lavaplatos no da abasto en la hora pico, en ese horario los almuerzos se sirven en platos y cubiertos desechables que se botan después de usarlos, y (4) los postres se exhiben sin cubrir, en bandejas sobre el mostrador. ¿Cuál de las prácticas se ajusta a la Resolución 2674 de 2013?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La de la cajera, porque solo sirve bebidas y no participa en la preparación.",
+        "explicacion": "Incorrecta. El personal vinculado a la preparación o al servido de los alimentos no debe manipular dinero simultáneamente (art. 35, num. 5); servir jugos es una labor de servido."
+      },
+      {
+        "id": "B",
+        "texto": "La de las hortalizas, porque el agua potable corriente basta para dejarlas aptas.",
+        "explicacion": "Incorrecta. Las hortalizas y frutas que se consumen deben lavarse y además desinfectarse con sustancias autorizadas (art. 35, num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "La de los desechables, porque suple la falta de capacidad de lavado del restaurante.",
+        "explicacion": "Correcta. Cuando el establecimiento no cuenta con agua y equipos suficientes para el lavado y la desinfección, los utensilios deben ser desechables con el primer uso (art. 35, num. 10). Las otras tres prácticas incumplen los nums. 5, 3 y 6."
+      },
+      {
+        "id": "D",
+        "texto": "La de los postres, porque son productos listos que no se manipulan al exhibirlos.",
+        "explicacion": "Incorrecta. Los alimentos expuestos para la venta deben protegerse en vitrinas, campanas, mallas u otro sistema apropiado (art. 35, num. 6)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: la cajera sirve jugos mientras cobra, las hortalizas solo se lavan, se usan desechables cuando el lavaplatos no alcanza y los postres están sin cubrir. Reglas (Res. 2674, art. 35): no manipular dinero y servir a la vez (num. 5); lavar y desinfectar frutas y hortalizas (num. 3); proteger los alimentos expuestos (num. 6); usar desechables si no hay agua y equipos suficientes para lavar (num. 10). Conclusión: solo la práctica de los desechables se ajusta.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Acciones de inspección, vigilancia y control",
+    "subtema": "Toma de muestras en el comercio y firma del acta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 677 de 1995 y Ley 9 de 1979",
+    "articulos": [
+      "Decreto 677 de 1995, art. 92",
+      "Ley 9 de 1979, art. 573, parágrafo"
+    ],
+    "texto_fuente": "La presentación de muestras del producto al Invima, no será requisito para la expedición de registro sanitario. Sin embargo la autoridad sanitaria podrá exigirlas en cualquier momento o tomarlas del mercado para los análisis pertinentes. [...] De toda toma de muestras se levantará un acta firmada por las partes que intervengan, en la cual conste la forma de muestreo y la cantidad de muestras tomadas. En caso de negativa del dueño o encargado del establecimiento para firmar el acta respectiva, en su lugar, ésta será firmada por un testigo.",
+    "pregunta": "Una técnica de la secretaría departamental de salud visita una droguería para tomar muestras de un jarabe para la tos y enviarlas a análisis. El administrador se opone: dice que esas muestras solo se le entregan al Invima cuando el laboratorio tramita el registro sanitario del producto, y se niega a firmar el acta. ¿Qué debe hacer la técnica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tomar las muestras y firmar sola el acta, con una nota sobre la negativa del administrador.",
+        "explicacion": "Incorrecta. Acierta en tomar las muestras, pero ante la negativa del dueño o encargado la norma prevé que firme un testigo en su lugar (Ley 9 de 1979, art. 573, parágrafo), no una nota del funcionario."
+      },
+      {
+        "id": "B",
+        "texto": "Tomar las muestras y pedir a un testigo que firme el acta en lugar del administrador.",
+        "explicacion": "Correcta. La autoridad sanitaria puede exigir muestras en cualquier momento o tomarlas del mercado (Decreto 677 de 1995, art. 92). De toda toma de muestras se levanta un acta con la forma de muestreo y la cantidad tomada, y si el dueño o encargado se niega a firmarla, la firma un testigo (Ley 9 de 1979, art. 573, parágrafo)."
+      },
+      {
+        "id": "C",
+        "texto": "Suspender la toma hasta que el Invima las pida y pedir a un testigo que firme el acta de visita.",
+        "explicacion": "Incorrecta. Las muestras no se limitan al trámite del registro sanitario: la autoridad sanitaria puede tomarlas del mercado en cualquier momento (Decreto 677 de 1995, art. 92)."
+      },
+      {
+        "id": "D",
+        "texto": "Suspender la toma hasta que el Invima las pida y firmar sola el acta, con una nota de la negativa.",
+        "explicacion": "Incorrecta. Acepta el argumento del administrador, que contradice el art. 92 del Decreto 677 de 1995, y omite que ante la negativa a firmar el acta debe firmarla un testigo (Ley 9 de 1979, art. 573, parágrafo)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: el administrador sostiene que las muestras solo se entregan al Invima durante el trámite del registro y se niega a firmar. Reglas: la autoridad sanitaria puede exigir muestras en cualquier momento o tomarlas del mercado (Decreto 677 de 1995, art. 92); de toda toma de muestras se levanta acta, y si el dueño o encargado no la firma, firma un testigo (Ley 9 de 1979, art. 573, parágrafo). Conclusión: toma las muestras y hace firmar el acta por un testigo.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-029",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Vigilancia de medicamentos",
+    "subtema": "Fecha de vencimiento, indicaciones en el empaque y muestras médicas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 677 de 1995",
+    "articulos": [
+      "art. 72, lit. d, y par. 1",
+      "art. 76, par."
+    ],
+    "texto_fuente": "d) La fecha de vencimiento, expiración o caducidad, que en ningún caso podrá ser superior a cinco (5) años contados a partir de la f echa de su elaboración; [...] PARAGRAFO 1o. En etiquetas y empaques de los medicamentos de venta bajo formula médica u odontológica, salvo los casos excepcionales determinados por el Invima, no deben aparecer las indicaciones del producto, pero si la posología, advertencias y las contraindicaciones. [...] PARAGRAFO. Las muestra médicas solo podrán usarse para la promoción de los medicamentos dentro del cuerpo médico y, por lo tanto, se encuentra prohibida su comercialización.",
+    "pregunta": "En octubre de 2026, un técnico de la secretaría departamental de salud revisa en una droguería las cajas de cuatro productos: (1) un jarabe de venta libre, fabricado en abril de 2023, con vencimiento en marzo de 2028, que trae impresas sus indicaciones; (2) unas tabletas de venta bajo fórmula médica, fabricadas en septiembre de 2021, con vencimiento en noviembre de 2026; (3) unas cápsulas de venta bajo fórmula médica cuya caja dice «Indicado para el tratamiento de infecciones urinarias», además de la posología y las contraindicaciones, y (4) unas cajas rotuladas «Muestra médica – prohibida su venta», exhibidas en la vitrina con su precio. Para las cápsulas no hay ningún caso excepcional determinado por el Invima en materia de rotulado. ¿Cuál de los cuatro productos NO da lugar a un hallazgo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las tabletas, porque su fecha de vencimiento todavía no se ha cumplido.",
+        "explicacion": "Incorrecta. De septiembre de 2021 a noviembre de 2026 hay 62 meses: la fecha de vencimiento supera los cinco años desde la elaboración que permite el art. 72, lit. d, aunque todavía no haya llegado."
+      },
+      {
+        "id": "B",
+        "texto": "Las cápsulas, porque su caja también informa la posología y las contraindicaciones.",
+        "explicacion": "Incorrecta. En los medicamentos de venta bajo fórmula médica deben aparecer la posología, las advertencias y las contraindicaciones, pero no las indicaciones (art. 72, par. 1), y para estas cápsulas no hay ninguna excepción determinada por el Invima."
+      },
+      {
+        "id": "C",
+        "texto": "El jarabe, porque es de venta libre y su vida útil no supera los cinco años.",
+        "explicacion": "Correcta. De abril de 2023 a marzo de 2028 hay 59 meses, dentro del máximo de cinco años desde la elaboración (art. 72, lit. d). La prohibición de imprimir las indicaciones rige para los medicamentos de venta bajo fórmula médica, no para los de venta libre (art. 72, par. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Las muestras médicas, porque su rótulo advierte con claridad que no se pueden vender.",
+        "explicacion": "Incorrecta. Las muestras médicas solo pueden usarse para la promoción dentro del cuerpo médico y su comercialización está prohibida (art. 76, par.); exhibirlas con precio es un hallazgo, aunque el rótulo sea correcto."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: el jarabe es de venta libre y tiene 59 meses entre fabricación y vencimiento; las tabletas, 62 meses; las cápsulas, de fórmula médica y sin excepción del Invima, declaran indicaciones; las muestras médicas están a la venta. Reglas (Decreto 677 de 1995): vencimiento no superior a cinco años desde la elaboración (art. 72, lit. d); sin indicaciones en los medicamentos de venta bajo fórmula (art. 72, par. 1); prohibida la comercialización de muestras médicas (art. 76, par.). Conclusión: solo el jarabe no genera hallazgo.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Identificación de lotes, registros de producción y rotulado al salir de planta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 19, nums. 2, 3 y 4"
+    ],
+    "texto_fuente": "2. Identificación de lotes. Cada envase y embalaje debe llevar marcado o grabado la identificación de la fábrica productora y el lote de fabricación, la cual se debe hacer en clave o en lenguaje claro, de forma visible, legible e indeleble (Números, alfanumérico, ranuras, barras, perforaciones, fecha de producción, fecha de fabricación, fecha de vencimiento), [...] 3. Registros de elaboración, procesamiento y producción. De cada lote debe llevarse un registro, legible y con fecha de los detalles pertinentes de elaboración, procesamiento y producción. Estos registros se conservarán durante un período que exceda el de la vida útil del producto, salvo en caso de necesidad específica, no se conservarán más de dos años. 4. Todo producto al momento de salir de una planta de proceso, independiente de su destino debe encontrarse debidamente rotulado, de conformidad con lo establecido en la reglamentación sanitaria vigente.",
+    "pregunta": "Un técnico de inspección del Invima revisa el área de envasado de una fábrica de salsas y encuentra tres prácticas: (1) los baldes de salsa base que se despachan a otra planta de la misma empresa para su envasado final salen sin rótulo, acompañados solo de una orden interna; (2) el código de la planta y el lote se imprimen con tinta indeleble en la tapa de cada frasco, en una clave alfanumérica que se descifra con una tabla del manual de calidad, junto a la fecha de vencimiento en día, mes y año, y (3) los registros de producción de cada lote se guardan durante seis meses, y la salsa tiene una vida útil de cuatro meses. Sobre la tercera, el técnico le dice al jefe de calidad que esos registros deben guardarse dos años; el jefe le objeta que basta conservarlos por más tiempo que la vida útil de la salsa. ¿Qué debe registrar como incumplimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el despacho de los baldes hacia la otra planta de la empresa sin rotularlos.",
+        "explicacion": "Correcta. Todo producto que sale de una planta de proceso debe ir rotulado, cualquiera que sea su destino (art. 19, num. 4). El lote puede marcarse en clave o en lenguaje claro, de forma visible, legible e indeleble (num. 2), y los registros se conservan por un período que exceda la vida útil, sin pasar de dos años salvo necesidad específica (num. 3): seis meses superan los cuatro de vida útil, así que el jefe de calidad tiene razón."
+      },
+      {
+        "id": "B",
+        "texto": "El despacho de los baldes sin rotularlos y la marcación del lote en una clave cifrada.",
+        "explicacion": "Incorrecta. Acierta con los baldes, pero la identificación del lote puede hacerse en clave, siempre que sea visible, legible e indeleble (art. 19, num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "La marcación del lote en una clave cifrada y el tiempo de conservación de los registros.",
+        "explicacion": "Incorrecta. La clave es una forma admitida de marcar el lote (num. 2), y seis meses exceden la vida útil de cuatro meses (num. 3). Además, omite el despacho sin rótulo (num. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo el tiempo de conservación de los registros, que deben guardarse por dos años.",
+        "explicacion": "Incorrecta. Es la idea inicial del técnico, pero dos años es el máximo de conservación, no el mínimo: basta un período que exceda la vida útil del producto (art. 19, num. 3), como objetó el jefe de calidad. Además, omite el despacho sin rótulo (num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: baldes sin rótulo despachados a otra planta de la empresa, lote impreso en clave indeleble y registros guardados seis meses para una vida útil de cuatro. Reglas (Res. 2674, art. 19): el lote se marca en clave o en lenguaje claro, visible, legible e indeleble (num. 2); los registros se conservan más que la vida útil y no más de dos años salvo necesidad específica (num. 3), como sostiene el jefe de calidad; todo producto sale rotulado, sea cual sea su destino (num. 4). Conclusión: solo incumple el despacho sin rótulo.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAN-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Depósitos de materias primas y producto terminado, y almacenamiento de envases",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 16, num. 7",
+      "art. 17, num. 5"
+    ],
+    "texto_fuente": "7. Los depósitos de materias primas y productos terminados ocuparán espacios independientes, salvo en aquellos casos en que a juicio de la autoridad sanitaria competente no se presenten peligros de contaminación para los alimentos. [...] 5. Los envases y embalajes deben almacenarse en un sitio exclusivo para este fin en condiciones de limpieza y debidamente protegidos.",
+    "pregunta": "Una pequeña envasadora de panela pulverizada le pide al Invima dos autorizaciones: (1) guardar en un mismo depósito, en estibas distintas, los sacos de panela que recibe como materia prima y las bolsas de producto terminado, y (2) apilar los rollos de película plástica para el empaque sobre las estibas de los sacos de materia prima. En la visita, la profesional de inspección, vigilancia y control del Invima constató que los sacos y las bolsas están cerrados, sin roturas ni humedad, y que el depósito está limpio y sin rastros de plagas. ¿Qué debe decidir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Autorizar las dos, porque todos los productos y materiales se mantienen cerrados en el depósito.",
+        "explicacion": "Incorrecta. Los envases y embalajes deben almacenarse en un sitio exclusivo para ese fin (art. 17, num. 5), regla que no prevé excepciones; apilarlos sobre la materia prima la incumple."
+      },
+      {
+        "id": "B",
+        "texto": "Autorizar la 1, porque está en sus manos eximir de separar esos depósitos, y negar la 2.",
+        "explicacion": "Correcta. Los depósitos de materias primas y productos terminados deben ser independientes, salvo que a juicio de la autoridad sanitaria no haya peligro de contaminación (art. 16, num. 7), como lo constató la visita. Los envases y embalajes, en cambio, deben guardarse en un sitio exclusivo para ese fin (art. 17, num. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "Negar la 1, porque esos depósitos deben ser independientes sin excepción, y autorizar la 2.",
+        "explicacion": "Incorrecta. La separación entre materias primas y producto terminado admite la excepción que decide la autoridad sanitaria (art. 16, num. 7); en cambio, el material de empaque requiere un sitio exclusivo (art. 17, num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Negar las dos, porque cada uno de esos materiales debe guardarse en un espacio independiente.",
+        "explicacion": "Incorrecta. Para materias primas y producto terminado, la autoridad sanitaria puede aceptar un depósito común cuando no hay peligro de contaminación (art. 16, num. 7), como en este caso."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: la visita no encontró riesgo de contaminación en el depósito compartido, y los rollos de empaque irían sobre la materia prima. Reglas (Res. 2674): materias primas y productos terminados en espacios independientes, salvo que a juicio de la autoridad sanitaria no haya peligro de contaminación (art. 16, num. 7); envases y embalajes en un sitio exclusivo (art. 17, num. 5). Conclusión: puede autorizar la 1 y debe negar la 2.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-032",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Aseguramiento y control de la calidad e inocuidad",
+    "subtema": "Sistema de aseguramiento, laboratorio y calibración de instrumentos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 22, par. 1",
+      "art. 23",
+      "art. 25"
+    ],
+    "texto_fuente": "PARÁGRAFO 1o. El responsable del establecimiento podrá aplicar el sistema de aseguramiento de la inocuidad mediante el Análisis de Peligros y Puntos de Control Crítico (APPCC) o de otro sistema que garantice resultados similares, el cual debe ser sustentado y estar disponible para su verificación por la autoridad sanitaria competente. [...] ARTÍCULO 23. LABORATORIOS. Todas las fábricas de alimentos que procesen, elaboren o envasen alimentos deben tener acceso a un laboratorio de pruebas y ensayos, propio o externo. [...] ARTÍCULO 25. GARANTÍA DE LA CONFIABILIDAD DE LAS MEDICIONES. Toda persona natural o jurídica propietaria del establecimiento de que trata esta resolución deben garantizar la confiabilidad de las mediciones que se realizan para el control de puntos o variables críticas del proceso, para lo cual deben tener implementado un programa de calibración de los equipos e instrumentos de medición, que se encuentren relacionados con la inocuidad del producto procesado.",
+    "pregunta": "Un profesional de inspección, vigilancia y control del Invima consolida los hallazgos de una fábrica de conservas. Un técnico del equipo anotó como hallazgo que la empresa no ha implementado HACCP; el gerente lo objeta: aplica un sistema preventivo propio, escrito y con soportes técnicos a disposición de la autoridad, que cubre desde la recepción de materias primas hasta la distribución. Para esas conservas no hay un reglamento técnico específico que haga obligatorio el HACCP. La fábrica no tiene laboratorio propio: contrata los análisis de cada lote con un laboratorio externo que cumple la reglamentación. Los termómetros del autoclave y el pHmetro no se han calibrado desde que se compraron; el jefe de producción los reemplaza cuando se dañan. ¿Qué debe concluir el profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que incumple por no aplicar HACCP y por no tener un programa que asegure sus mediciones.",
+        "explicacion": "Incorrecta. Mantiene el hallazgo del técnico, pero el HACCP es una opción: la empresa puede aplicar otro sistema que garantice resultados similares, sustentado y disponible para verificación (art. 22, par. 1), y ningún reglamento técnico se lo exige para esas conservas. Sí incumple en el aseguramiento de sus mediciones (art. 25)."
+      },
+      {
+        "id": "B",
+        "texto": "Que incumple por no aplicar HACCP y por no tener un laboratorio en sus instalaciones.",
+        "explicacion": "Incorrecta. Ni el HACCP es obligatorio (art. 22, par. 1) ni el laboratorio debe ser propio: basta tener acceso a uno propio o externo (art. 23). Además, omite la falta de calibración de los instrumentos (art. 25)."
+      },
+      {
+        "id": "C",
+        "texto": "Que incumple solo por no tener un laboratorio dentro de sus propias instalaciones.",
+        "explicacion": "Incorrecta. El art. 23 admite que el laboratorio sea externo. La falla está en la falta de un programa de calibración de los instrumentos de medición (art. 25)."
+      },
+      {
+        "id": "D",
+        "texto": "Que incumple solo por no tener un programa que asegure la exactitud de sus mediciones.",
+        "explicacion": "Correcta. Puede usar un sistema distinto del HACCP si garantiza resultados similares y está sustentado (art. 22, par. 1), así que la objeción del gerente es fundada, y puede usar un laboratorio externo (art. 23). Pero debe tener un programa de calibración de los equipos e instrumentos de medición relacionados con la inocuidad (art. 25), como los termómetros del autoclave y el pHmetro."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: sistema preventivo propio documentado en lugar de HACCP, sin reglamento técnico que lo haga obligatorio para ese producto; laboratorio externo; termómetros y pHmetro sin calibrar. Reglas (Res. 2674): el HACCP puede reemplazarse por otro sistema que garantice resultados similares y esté sustentado (art. 22, par. 1); basta el acceso a un laboratorio propio o externo (art. 23); es obligatorio un programa de calibración de los instrumentos relacionados con la inocuidad (art. 25). Conclusión: el gerente tiene razón y solo se incumple el art. 25.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAN-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Agua para consumo humano",
+    "subtema": "Responsabilidad por la calidad del agua en la instalación interna",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 9 de 1979 y Resolución 2674 de 2013",
+    "articulos": [
+      "Ley 9 de 1979, arts. 182 y 585",
+      "Resolución 2674 de 2013, art. 26, num. 4"
+    ],
+    "texto_fuente": "La conservación de la instalación sanitaria interna, a partir del registro o dispositivo de regulación, corresponde al usuario de la misma. [...] Es responsable de la calidad del agua, conforme a lo establecido en esta Ley, la persona natural o jurídica que la entregue al usuario. [...] 4. Abastecimiento o suministro de agua potable. Todos los establecimientos de que trata la presente resolución deben tener documentado el proceso de abastecimiento de agua que incluye claramente: fuente de captación o suministro, tratamientos realizados, manejo, diseño y capacidad del tanque de almacenamiento, distribución; mantenimiento, limpieza y desinfección de redes y tanque de almacenamiento;",
+    "pregunta": "Por quejas de los comensales, una profesional de la secretaría de salud revisa el muestreo de agua de un restaurante. La muestra tomada en el registro de entrada del acueducto cumple los requisitos de potabilidad; la tomada en el grifo de la cocina, después del tanque elevado del restaurante, tiene coliformes. El tanque no se ha lavado en dos años. El propietario sostiene que la calidad del agua es asunto del acueducto, que es quien se la suministra. ¿A quién debe dirigir la profesional las exigencias para corregir la calidad del agua de la cocina?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al acueducto, porque responde por la calidad del agua que entrega a sus usuarios.",
+        "explicacion": "Incorrecta. El acueducto responde por la calidad del agua que entrega al usuario (Ley 9 de 1979, art. 585), y la muestra del registro de entrada cumple. El deterioro ocurre en la instalación interna, cuya conservación corresponde al usuario (art. 182)."
+      },
+      {
+        "id": "B",
+        "texto": "Al propietario del restaurante, porque responde por la red y el tanque desde el registro.",
+        "explicacion": "Correcta. El acueducto responde por el agua que entrega (Ley 9 de 1979, art. 585), y la entregó potable en el registro. Desde allí, la conservación de la instalación sanitaria interna corresponde al usuario (art. 182), y el restaurante debe mantener, limpiar y desinfectar sus redes y su tanque como parte de su programa de agua (Res. 2674 de 2013, art. 26, num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "A ambos, porque el agua debe ser potable en el punto de consumo y no solo en la entrada.",
+        "explicacion": "Incorrecta. Aunque el agua debe llegar potable al consumo, la responsabilidad del acueducto recae sobre el agua que entrega (art. 585), y esa agua cumplía; la red interna y el tanque son responsabilidad del usuario (art. 182)."
+      },
+      {
+        "id": "D",
+        "texto": "A ninguno por ahora, porque el acueducto debe repetir primero el muestreo en la red pública.",
+        "explicacion": "Incorrecta. La muestra del registro ya mostró que el agua llega potable; no hace falta un nuevo muestreo de la red pública para exigir al restaurante que corrija su instalación interna (art. 182)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: el agua cumple en el registro de entrada y falla en el grifo, después de un tanque sin lavar desde hace dos años. Reglas: responde por la calidad del agua quien la entrega al usuario (Ley 9 de 1979, art. 585); desde el registro, la conservación de la instalación interna corresponde al usuario (art. 182); el establecimiento debe mantener, limpiar y desinfectar redes y tanque (Res. 2674, art. 26, num. 4). Conclusión: las exigencias van al propietario del restaurante.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0009_1979.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAN-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Procedimiento sancionatorio sanitario",
+    "subtema": "Término de descargos y período probatorio con varios investigados",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013 y Ley 1437 de 2011",
+    "articulos": [
+      "Resolución 2674 de 2013, art. 52",
+      "Ley 1437 de 2011, art. 47, inc. 3",
+      "Ley 1437 de 2011, art. 48, inc. 1"
+    ],
+    "texto_fuente": "Las autoridades sanitarias podrán adoptar medidas de seguridad e imponer las sanciones correspondientes, de conformidad con lo establecido en la Ley 09 de 1979, siguiendo el procedimiento contemplado en la Ley 1437 de 2011 y las normas que lo modifiquen, adicionen o sustituyan. [...] Los investigados podrán, dentro de los quince (15) días siguientes a la notificación de la formulación de cargos, presentar los descargos y solicitar o aportar las pruebas que pretendan hacer valer. [...] Cuando deban practicarse pruebas se señalará un término no mayor a treinta (30) días. Cuando sean tres (3) o más investigados o se deban practicar en el exterior el término probatorio podrá ser hasta de sesenta (60) días.",
+    "pregunta": "Un profesional jurídico de la secretaría de salud departamental adelanta un proceso sancionatorio por la venta de salsas contaminadas contra tres investigados: el distribuidor mayorista, la empresa que las transportó y el supermercado que las vendió. El acto de formulación de cargos se les notificó personalmente a los tres el martes 13 de octubre de 2026. Los términos se cuentan en días hábiles, y el 2 y el 16 de noviembre de 2026 son festivos. ¿Hasta qué día pueden presentar descargos y cuál es el término máximo que el profesional puede fijar para practicar pruebas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 4 de noviembre de 2026, y hasta 30 días para practicar las pruebas.",
+        "explicacion": "Incorrecta. La fecha es correcta, pero cuando hay tres o más investigados el término probatorio puede ser hasta de 60 días (Ley 1437 de 2011, art. 48)."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 27 de octubre de 2026, y hasta 60 días para practicar las pruebas.",
+        "explicacion": "Incorrecta. Cuenta 10 días hábiles, como el término de descargos del art. 118 del Decreto 677 de 1995; el procedimiento aplicable por remisión del art. 52 de la Resolución 2674 es el de la Ley 1437 de 2011, que da 15 días (art. 47)."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 4 de noviembre de 2026, y hasta 60 días para practicar las pruebas.",
+        "explicacion": "Correcta. Por remisión del art. 52 de la Resolución 2674 de 2013 se aplica la Ley 1437 de 2011: 15 días para descargos desde el día siguiente a la notificación (art. 47), del 14 de octubre al 4 de noviembre, descontando el festivo del 2 de noviembre, y hasta 60 días de pruebas porque son tres investigados (art. 48)."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 27 de octubre de 2026, y hasta 30 días para practicar las pruebas.",
+        "explicacion": "Incorrecta. Aplica 10 días para descargos y el término probatorio general de 30 días; con tres investigados, son 15 días para descargos y hasta 60 para pruebas (Ley 1437 de 2011, arts. 47 y 48)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: tres investigados y notificación de cargos el martes 13 de octubre de 2026. Reglas: el procedimiento sancionatorio sanitario de alimentos es el de la Ley 1437 de 2011 (Res. 2674, art. 52); descargos dentro de los 15 días siguientes a la notificación (art. 47); pruebas hasta 30 días, o hasta 60 si son tres o más investigados (art. 48). Cálculo: 15 días hábiles desde el 14 de octubre, sin el festivo del 2 de noviembre, terminan el miércoles 4 de noviembre de 2026. Conclusión: 4 de noviembre y 60 días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-035",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Procedimiento sancionatorio sanitario",
+    "subtema": "Caducidad de la facultad sancionatoria: expedición y notificación del acto en una conducta continuada, y término para decidir recursos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013 y Ley 1437 de 2011",
+    "articulos": [
+      "Resolución 2674 de 2013, art. 52",
+      "Ley 1437 de 2011, art. 52, incs. 1 y 2"
+    ],
+    "texto_fuente": "Las autoridades sanitarias podrán adoptar medidas de seguridad e imponer las sanciones correspondientes, de conformidad con lo establecido en la Ley 09 de 1979, siguiendo el procedimiento contemplado en la Ley 1437 de 2011 [...] Salvo lo dispuesto en leyes especiales, la facultad que tienen las autoridades para imponer sanciones caduca a los tres (3) años de ocurrido el hecho, la conducta u omisión que pudiere ocasionarlas, término dentro del cual el acto administrativo que impone la sanción debe haber sido expedido y notificado. Dicho acto sancionatorio es diferente de los actos que resuelven los recursos, los cuales deberán ser decididos, so pena de pérdida de competencia, en un término de un (1) año contado a partir de su debida y oportuna interposición. [...] Cuando se trate de un hecho o conducta continuada, este término se contará desde el día siguiente a aquel en que cesó la infracción y/o la ejecución.",
+    "pregunta": "Una profesional jurídica del Invima revisa un expediente sancionatorio. Desde el 10 de febrero hasta el 30 de junio de 2023, fecha en que instaló una planta de potabilización, una fábrica de bebidas usó agua de pozo sin tratar en la preparación de sus productos. La resolución que la sanciona se expidió el 22 de junio de 2026 y se notificó personalmente el 13 de julio de 2026. El 23 de julio de 2026, dentro del término, la empresa interpuso recurso de reposición: alega que la facultad sancionatoria caducó porque la resolución se le notificó cuando ya habían pasado más de tres años desde que dejó de usar esa agua. ¿Qué debe concluir la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la facultad no caducó, y que el recurso debe resolverse a más tardar el 23 de julio de 2027.",
+        "explicacion": "Incorrecta. Da por suficiente que la resolución se expidiera dentro de los tres años, pero el acto que impone la sanción debe haber sido expedido y también notificado dentro de ese término (Ley 1437 de 2011, art. 52). Contados desde el 1 de julio de 2023, día siguiente al cese, los tres años ya habían vencido el 13 de julio de 2026. El plazo del recurso sí es correcto."
+      },
+      {
+        "id": "B",
+        "texto": "Que la facultad caducó, y que el recurso debe resolverse a más tardar el 23 de julio de 2027.",
+        "explicacion": "Correcta. El uso del agua sin tratar fue una conducta continuada que cesó el 30 de junio de 2023; los tres años se cuentan desde el día siguiente y se cumplieron a más tardar el 1 de julio de 2026 (Ley 1437 de 2011, art. 52). Dentro de ese término la resolución debía expedirse y notificarse, y se notificó el 13 de julio de 2026: la empresa tiene razón. El recurso, interpuesto el 23 de julio de 2026, debe decidirse dentro del año siguiente, so pena de pérdida de competencia."
+      },
+      {
+        "id": "C",
+        "texto": "Que la facultad no caducó, y que el recurso debe resolverse a más tardar el 13 de julio de 2027.",
+        "explicacion": "Incorrecta. Falla en las dos reglas: la notificación del 13 de julio de 2026 llegó vencidos los tres años contados desde el cese de la conducta, y el año para decidir el recurso se cuenta desde su interposición (23 de julio de 2026), no desde la notificación de la sanción (Ley 1437 de 2011, art. 52)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la facultad caducó, y que el recurso debe resolverse a más tardar el 13 de julio de 2027.",
+        "explicacion": "Incorrecta. Acierta en que la facultad caducó, pero el año para decidir el recurso se cuenta a partir de su debida y oportuna interposición, el 23 de julio de 2026, y no desde la notificación de la sanción (Ley 1437 de 2011, art. 52)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: la conducta cesó el 30 de junio de 2023; la sanción se expidió el 22 de junio de 2026, pero se notificó el 13 de julio de 2026; el recurso se interpuso el 23 de julio de 2026. Reglas (Ley 1437, art. 52, aplicable por la Res. 2674, art. 52): la facultad caduca a los tres años, contados en las conductas continuadas desde el día siguiente al cese, y en ese término el acto debe expedirse y notificarse; los recursos se deciden en un año desde su interposición. Conclusión: caducó, como alega la empresa, y el recurso vence el 23 de julio de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAN-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Medidas sanitarias y sanciones",
+    "subtema": "Publicidad del riesgo y responsabilidad civil o penal del sancionado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 9 de 1979",
+    "articulos": [
+      "art. 578",
+      "art. 580"
+    ],
+    "texto_fuente": "ARTICULO 578. Cuando del incumplimiento de las disposiciones de la presente Ley, se deriven riesgos para la salud de las personas, deberá darse publicidad a tal hecho para prevenir a los usuarios. [...] ARTICULO 580. Las sanciones administrativas impuestas por las autoridades sanitarias, no eximen de la responsabilidad civil o penal a que haya lugar por las violaciones a los preceptos de la Ley.",
+    "pregunta": "El Invima comprobó que un lote de queso fresco contaminado con Listeria se distribuyó en varios supermercados y abrió un proceso sancionatorio contra la fábrica. El apoderado de la empresa le pide a la profesional que proyecta las actuaciones dos cosas: que no se publique ninguna alerta mientras el proceso no termine, para no desconocer la presunción de inocencia, y que se deje constancia de que, si se le impone una multa, ya no podrá perseguírsela en otro escenario por esos mismos hechos, porque nadie puede ser castigado dos veces por lo mismo. ¿Qué debe responder la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la alerta se divulga ya, para advertir a los consumidores, y que la multa no la libra de una demanda civil ni de una causa penal.",
+        "explicacion": "Correcta. Cuando del incumplimiento se derivan riesgos para la salud, debe darse publicidad al hecho para prevenir a los usuarios (Ley 9 de 1979, art. 578): es una medida para proteger a los consumidores, no una sanción, y no espera el fallo. Y las sanciones administrativas no eximen de la responsabilidad civil o penal a que haya lugar (art. 580)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la alerta se divulga ya, para advertir a los consumidores, pero que la multa sí impide abrirle otro proceso por los mismos hechos.",
+        "explicacion": "Incorrecta. Acierta en la alerta, pero la prohibición de doble castigo no impide que, además de la sanción administrativa, haya responsabilidad civil o penal por los mismos hechos: la ley lo dice expresamente (art. 580)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la alerta espera a que la sanción quede en firme, y que la multa no la libra de una demanda civil ni de una causa penal.",
+        "explicacion": "Incorrecta. La publicidad del riesgo no es una sanción: la ley la ordena cuando del incumplimiento se deriva un riesgo para la salud, con el fin de prevenir a los usuarios, sin condicionarla al resultado del proceso (art. 578)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la alerta espera a que la sanción quede en firme, y que la multa sí impide abrirle otro proceso por los mismos hechos.",
+        "explicacion": "Incorrecta. Acoge las dos peticiones de la empresa: la alerta no se condiciona al fallo, porque su fin es prevenir a los usuarios (art. 578), y la multa no excluye la responsabilidad civil o penal por los mismos hechos (art. 580)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: un queso contaminado ya está en el mercado, y la empresa pide aplazar la alerta hasta el fallo y que la multa cierre cualquier otra responsabilidad. Reglas (Ley 9 de 1979): si el incumplimiento genera riesgos para la salud, debe darse publicidad al hecho para prevenir a los usuarios (art. 578); las sanciones administrativas no eximen de la responsabilidad civil o penal (art. 580). Conclusión: la alerta se publica sin esperar el fallo y la multa no extingue esas responsabilidades.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0009_1979.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAN-037",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Almacenamiento, distribución y comercialización",
+    "subtema": "Responsabilidad solidaria del expendio por las condiciones sanitarias",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 30",
+      "art. 31, par. 1",
+      "art. 47"
+    ],
+    "texto_fuente": "Toda persona natural o jurídica que se dedique a la distribución o comercialización de alimentos y materias primas será responsable del mantenimiento de las condiciones sanitarias de los mismos. [...] PARÁGRAFO 1o. La persona natural o jurídica propietaria del establecimiento será el responsable solidario con el fabricante y distribuidor del mantenimiento de las condiciones sanitarias de los productos alimenticios que se expendan en ese lugar.",
+    "pregunta": "Una técnica de la secretaría de salud encontró en un supermercado yogures alterados porque la nevera de exhibición se dañó durante un fin de semana y nadie lo advirtió. El abogado del supermercado le escribe al profesional de inspección, vigilancia y control que solo el fabricante, como titular del registro sanitario, responde por las condiciones sanitarias del producto, de modo que el supermercado no puede ser investigado. ¿Qué debe responderle el profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sí puede investigarse al supermercado, pues quien vende alimentos también responde por conservarlos en buen estado.",
+        "explicacion": "Correcta. Quien comercializa alimentos responde por el mantenimiento de sus condiciones sanitarias (Res. 2674 de 2013, art. 30), y el propietario del expendio es responsable solidario con el fabricante y el distribuidor por las condiciones sanitarias de los productos que vende (art. 31, par. 1). La responsabilidad del titular del registro (art. 47) no excluye la del supermercado."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede investigarse al supermercado, pero solo después de descartar con análisis que el defecto venía de la planta.",
+        "explicacion": "Incorrecta. La norma no condiciona la responsabilidad del expendio a que antes se descarte un defecto de fábrica: quien comercializa responde por mantener las condiciones sanitarias (art. 30) y el propietario del expendio es responsable solidario con el fabricante y el distribuidor (art. 31, par. 1). Aquí, además, la causa fue la nevera del propio supermercado."
+      },
+      {
+        "id": "C",
+        "texto": "Que al supermercado pueden aplicársele medidas de seguridad, pero solo al titular del registro puede imponérsele sanción.",
+        "explicacion": "Incorrecta. Confunde las medidas con las sanciones: el expendio no solo puede ser objeto de medidas de seguridad; como responsable del mantenimiento de las condiciones sanitarias de lo que vende (arts. 30 y 31, par. 1), también puede ser investigado y sancionado."
+      },
+      {
+        "id": "D",
+        "texto": "Que tiene razón, porque el titular del registro responde por el producto en todo momento, hasta el consumidor final.",
+        "explicacion": "Incorrecta. El titular del registro debe cumplir en todo momento la reglamentación (art. 47), pero esa responsabilidad no excluye la del expendio: el propietario del establecimiento responde solidariamente con el fabricante y el distribuidor (art. 31, par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: el yogur se alteró por una falla de la nevera del supermercado, que alega que solo responde el titular del registro. Reglas (Res. 2674): quien distribuye o comercializa alimentos responde por mantener sus condiciones sanitarias (art. 30); el propietario del expendio es responsable solidario con el fabricante y el distribuidor (art. 31, par. 1); la responsabilidad del titular no excluye la de ellos (art. 47). Nada condiciona la investigación del expendio a descartar antes un defecto de fábrica. Conclusión: el supermercado puede ser investigado.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-SAN-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Reproceso de devoluciones y uso de equipos para productos de consumo animal",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 18, nums. 9 y 11"
+    ],
+    "texto_fuente": "9. Las áreas y equipos usados en la fabricación de alimentos para consumo humano no deben ser utilizados para la elaboración de alimentos o productos de consumo animal o destinados a otros fines. [...] 11. Los productos devueltos a la empresa por defectos de fabricación, que tengan incidencia sobre la inocuidad y calidad del alimento no podrán someterse a procesos de reenvase, reelaboración, reproceso, corrección o reesterilización bajo ninguna justificación.",
+    "pregunta": "Una fábrica de galletas presenta a la profesional de inspección, vigilancia y control del Invima tres propuestas para reducir pérdidas: (1) moler las galletas que le devolvieron por un defecto de sellado de las bolsas, que dejó entrar humedad, e incorporarlas como harina en nuevos lotes; (2) usar la línea de horneado los sábados, después de lavarla y desinfectarla, para elaborar galletas para perros, y (3) cambiar la caja exterior de cartón de unas galletas que devolvieron las tiendas porque esa caja se les mojó en su bodega; las bolsas, que son el empaque en contacto directo con las galletas, llegaron selladas e intactas y no se abrirían. ¿Qué propuestas puede aceptar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La 1 y la 3.",
+        "explicacion": "Incorrecta. Los productos devueltos por defectos de fabricación que inciden en la inocuidad y la calidad no pueden reelaborarse ni reprocesarse bajo ninguna justificación (art. 18, num. 11); el sellado defectuoso que dejó entrar humedad es uno de esos defectos."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la 2.",
+        "explicacion": "Incorrecta. Las áreas y equipos de fabricación de alimentos para consumo humano no pueden usarse para productos de consumo animal (art. 18, num. 9), aunque se laven y desinfecten. Además, la propuesta 3 sí es aceptable."
+      },
+      {
+        "id": "C",
+        "texto": "La 1 y la 2.",
+        "explicacion": "Incorrecta. Las dos están prohibidas: la 1 por el art. 18, num. 11, y la 2 por el num. 9. La 3, en cambio, no recae sobre un defecto de fabricación."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la 3.",
+        "explicacion": "Correcta. La 1 reprocesa productos devueltos por un defecto de fabricación que afecta la inocuidad y la calidad, lo que prohíbe el art. 18, num. 11; la 2 usa la línea de alimentos para consumo humano en productos para animales, lo que prohíbe el num. 9. La 3 solo cambia el embalaje exterior: el empaque en contacto con las galletas sigue sellado e intacto y el daño ocurrió fuera de la fábrica, así que no hay reproceso ni reenvase de un producto con defecto de fabricación."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: la propuesta 1 reprocesa galletas con un defecto de sellado; la 2 usa la línea para productos de consumo animal; la 3 solo cambia la caja exterior mojada fuera de la fábrica, con las bolsas en contacto con el alimento selladas e intactas. Reglas (Res. 2674, art. 18): las áreas y equipos de alimentos para consumo humano no se usan para productos de consumo animal (num. 9); los devueltos por defectos de fabricación que afectan la inocuidad y la calidad no se reprocesan (num. 11). Conclusión: solo es aceptable la propuesta 3.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Agua para consumo humano",
+    "subtema": "Agua potable en el proceso: agua lluvia, hielo y limpieza de superficies",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 9 de 1979 y Resolución 2674 de 2013",
+    "articulos": [
+      "Ley 9 de 1979, arts. 63 y 69",
+      "Resolución 2674 de 2013, art. 6, nums. 3.2 y 3.3",
+      "Resolución 2674 de 2013, art. 18, num. 7"
+    ],
+    "texto_fuente": "Cuando se utilice agua lluvia para consumo humano, esta deberá cumplir los requisitos de potabilidad [...] Toda agua para consumo humano debe ser potable cualesquiera que sea su procedencia. [...] 3.2. Se debe disponer de agua potable a la temperatura y presión requeridas en las diferentes actividades que se realizan en el establecimiento, así como para una limpieza y desinfección efectiva. 3.3. Solamente se permite el uso de agua no potable, cuando la misma no ocasione riesgos de contaminación del alimento; como en los casos de generación de vapor indirecto, lucha contra incendios, o refrigeración indirecta. [...] 7. Cuando en los procesos de fabricación se requiera el uso de hielo en contacto con los alimentos y materias primas, este debe ser fabricado con agua potable y manipulado en condiciones que garanticen su inocuidad.",
+    "pregunta": "Una procesadora de pescado presenta un plan de ahorro de agua al profesional de inspección, vigilancia y control del Invima: (1) recoger agua lluvia, potabilizarla en la planta y, con análisis que confirmen que cumple los requisitos de potabilidad, usarla para lavar el pescado; (2) fabricar con agua de pozo sin tratar el hielo con el que se conserva el pescado en las cavas, porque ese hielo no se consume, y (3) lavar las mesas de fileteo con agua de pozo sin tratar y desinfectarlas después con agua potable clorada. ¿Qué propuestas puede aceptar el profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La 2 y la 3.",
+        "explicacion": "Incorrecta. El hielo que entra en contacto con los alimentos debe fabricarse con agua potable (Res. 2674 de 2013, art. 18, num. 7), y la limpieza de las superficies que tocan el alimento requiere agua potable (art. 6, num. 3.2); el agua no potable solo se admite en usos sin riesgo de contaminación (num. 3.3)."
+      },
+      {
+        "id": "B",
+        "texto": "La 1 y la 2.",
+        "explicacion": "Incorrecta. Acierta con el agua lluvia, pero el hielo en contacto con el pescado debe fabricarse con agua potable (art. 18, num. 7), aunque no se consuma directamente."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la 1.",
+        "explicacion": "Correcta. El agua lluvia puede usarse si cumple los requisitos de potabilidad (Ley 9 de 1979, art. 63), pues toda agua para consumo humano debe ser potable, cualquiera que sea su procedencia (art. 69). El hielo en contacto con el pescado debe fabricarse con agua potable (Res. 2674, art. 18, num. 7), y la limpieza de las mesas también exige agua potable (art. 6, nums. 3.2 y 3.3)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la 3.",
+        "explicacion": "Incorrecta. Lavar con agua no potable una superficie que toca el alimento crea riesgo de contaminación; ese uso no se admite (art. 6, nums. 3.2 y 3.3), aunque después se desinfecte. Además, descarta el agua lluvia potabilizada, que la Ley 9 permite (art. 63)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: agua lluvia potabilizada y analizada para lavar el pescado, hielo de agua de pozo sin tratar y lavado de las mesas de fileteo con esa agua. Reglas: el agua lluvia debe cumplir los requisitos de potabilidad y toda agua para consumo humano debe ser potable (Ley 9 de 1979, arts. 63 y 69); el hielo en contacto con alimentos se fabrica con agua potable (Res. 2674, art. 18, num. 7); la limpieza exige agua potable y la no potable solo se usa sin riesgo de contaminación (art. 6, nums. 3.2 y 3.3). Conclusión: solo es aceptable la propuesta 1.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAN-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Acciones de inspección, vigilancia y control",
+    "subtema": "Validez de los análisis de laboratorio para el control sanitario",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 9 de 1979 y Resolución 2674 de 2013",
+    "articulos": [
+      "Ley 9 de 1979, art. 575, inc. 2",
+      "Resolución 2674 de 2013, art. 23"
+    ],
+    "texto_fuente": "Sólo tendrán validez, para el control del cumplimiento de las disposiciones de la presente Ley, los análisis de laboratorio efectuados por los organismos encargados del control o aquellos a los cuales de les dé carácter oficial por el Ministerio de Salud [...] Todas las fábricas de alimentos que procesen, elaboren o envasen alimentos deben tener acceso a un laboratorio de pruebas y ensayos, propio o externo.",
+    "pregunta": "En un proceso sancionatorio contra una procesadora de leche UHT, el laboratorio del Invima reportó un lote no conforme. Con los descargos, la empresa aporta dos resultados favorables del mismo lote: uno de su laboratorio interno de control de calidad y otro de un laboratorio privado que contrata, acreditado en el exterior y sin ningún reconocimiento del Ministerio de Salud. ¿Qué resultados tienen validez para establecer si el lote cumple las normas sanitarias?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los tres, y se decide según lo que muestre la mayoría de los análisis hechos al mismo lote.",
+        "explicacion": "Incorrecta. Para controlar el cumplimiento de las normas sanitarias solo valen los análisis de los organismos encargados del control o de los laboratorios a los que el Ministerio de Salud dé carácter oficial (Ley 9 de 1979, art. 575); no se decide por mayoría."
+      },
+      {
+        "id": "B",
+        "texto": "El del laboratorio interno, porque la empresa está obligada a tener acceso a un laboratorio.",
+        "explicacion": "Incorrecta. El acceso a un laboratorio propio o externo es un requisito del control de calidad de la fábrica (Res. 2674 de 2013, art. 23), pero esos análisis no sirven para el control oficial (Ley 9 de 1979, art. 575)."
+      },
+      {
+        "id": "C",
+        "texto": "El del laboratorio privado, porque su acreditación en el exterior respalda su confiabilidad.",
+        "explicacion": "Incorrecta. La acreditación en el exterior no reemplaza el carácter oficial que solo puede darle el Ministerio de Salud (Ley 9 de 1979, art. 575)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo el del laboratorio del Invima, por ser el de la autoridad que ejerce el control.",
+        "explicacion": "Correcta. Solo tienen validez para el control del cumplimiento los análisis de los organismos encargados del control o de los laboratorios a los que el Ministerio de Salud dé carácter oficial (Ley 9 de 1979, art. 575, inc. 2). Los laboratorios propios o contratados sirven para el control de calidad interno que exige el art. 23 de la Resolución 2674 de 2013."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: el resultado no conforme viene del laboratorio del Invima, autoridad que ejerce el control; los favorables, del laboratorio interno y de uno privado sin reconocimiento del Ministerio. Reglas: solo valen para el control los análisis de los organismos encargados del control o de laboratorios con carácter oficial dado por el Ministerio de Salud (Ley 9 de 1979, art. 575); el laboratorio propio o externo de la fábrica sirve a su control de calidad (Res. 2674, art. 23). Conclusión: solo vale el análisis del laboratorio del Invima.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0009_1979.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
   }
 ]

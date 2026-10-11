@@ -6375,5 +6375,1070 @@
       "fecha": "2026-10-10",
       "p_estimado": 72
     }
+  },
+  {
+    "id": "TC-CNA-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Saber: probabilidad condicional en la herencia de un rasgo autosómico recesivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo: procesos biológicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre mutación, selección natural y herencia.",
+    "pregunta": "Para una clase de 11.° sobre herencia, el docente de biología prepara la clave de este problema: «Una pareja en la que ninguno de los dos tiene fibrosis quística, enfermedad autosómica recesiva, tiene un primer hijo con la enfermedad. Después nace una niña que no la presenta. ¿Cuál es la probabilidad de que la niña sea portadora del alelo de la enfermedad?». ¿Qué respuesta debe tomar como correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1/2, porque al cruzar dos portadores la mitad de las combinaciones del cuadro de Punnett resultan heterocigotas.",
+        "explicacion": "Incorrecta. Es la probabilidad de que un hijo cualquiera de la pareja sea portador, antes de saber si tiene la enfermedad. El problema informa que la niña no la tiene, lo que elimina la combinación aa y cambia el total de casos posibles."
+      },
+      {
+        "id": "B",
+        "texto": "2/3, porque entre las combinaciones que dan una hija sin la enfermedad, dos de cada tres son heterocigotas.",
+        "explicacion": "Correcta. El hijo enfermo (aa) muestra que los dos padres son heterocigotos (Aa). El cruce Aa × Aa da AA, Aa, aA y aa con igual probabilidad. Como la niña no tiene la enfermedad, se descarta aa y quedan tres combinaciones, de las cuales dos son portadoras: (1/2) ÷ (3/4) = 2/3."
+      },
+      {
+        "id": "C",
+        "texto": "3/4, porque tres de las cuatro combinaciones del cruce llevan por lo menos un alelo dominante del gen.",
+        "explicacion": "Incorrecta. 3/4 es la probabilidad de que un hijo no tenga la enfermedad, no la de que sea portador: cuenta también la combinación AA, que no lleva el alelo recesivo."
+      },
+      {
+        "id": "D",
+        "texto": "1/4, porque solo una de las cuatro combinaciones del cruce reúne los dos alelos recesivos del gen.",
+        "explicacion": "Incorrecta. 1/4 es la probabilidad de que un hijo tenga la enfermedad (aa). Confunde ser portador con estar enfermo, y además la niña no tiene la enfermedad."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el primer hijo tiene la enfermedad y los padres no, así que ambos son heterocigotos (Aa); la niña no la tiene. Concepto: en Aa × Aa las combinaciones son AA, Aa, aA y aa; saber que la niña está sana elimina aa, y la probabilidad se calcula sobre las tres restantes. Cálculo: P(portadora | sana) = (1/2) ÷ (3/4) = 2/3. Los distractores ignoran ese dato (1/2) o confunden portador con sano (3/4) o con enfermo (1/4).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CNA-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: reactivo limitante en la combustión del metano",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Realizo cálculos cuantitativos en cambios químicos.",
+    "pregunta": "Para un taller de 11.°, la docente de química plantea la combustión completa del metano, CH₄ + 2 O₂ → CO₂ + 2 H₂O, en un recipiente cerrado con 32 g de metano y 96 g de oxígeno; la reacción continúa hasta que se agota uno de los reactivos. Con las masas atómicas C = 12, H = 1 y O = 16, ¿qué masa de dióxido de carbono se obtiene como máximo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "88 g",
+        "explicacion": "Incorrecta. Toma el metano como reactivo limitante, sea porque hay menos masa de él o porque aplica la proporción 1:2 a los gramos (32 g de metano con 64 g de oxígeno). En moles, 2 mol de metano necesitan 4 mol de O₂ y solo hay 3."
+      },
+      {
+        "id": "B",
+        "texto": "132 g",
+        "explicacion": "Incorrecta. Reconoce que el oxígeno se agota, pero toma un mol de CO₂ por cada mol de O₂ (3 × 44 = 132 g) e ignora el coeficiente 2 del oxígeno en la ecuación balanceada."
+      },
+      {
+        "id": "C",
+        "texto": "48 g",
+        "explicacion": "Incorrecta. Aplica los coeficientes a las masas («de cada 2 de oxígeno sale 1 de CO₂») y divide 96 g entre 2. Los coeficientes de la ecuación relacionan moles, no gramos."
+      },
+      {
+        "id": "D",
+        "texto": "66 g",
+        "explicacion": "Correcta. Metano: 32/16 = 2 mol; oxígeno: 96/32 = 3 mol. Para 2 mol de metano harían falta 4 mol de O₂, así que el oxígeno es el reactivo limitante. Los 3 mol de O₂ forman 3/2 = 1,5 mol de CO₂, es decir, 1,5 × 44 = 66 g, y sobran 0,5 mol (8 g) de metano."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay 2 mol de CH₄ (32/16) y 3 mol de O₂ (96/32). Concepto: los coeficientes relacionan moles; 2 mol de CH₄ requieren 4 mol de O₂, así que el oxígeno es el limitante. Cálculo: 3 mol de O₂ × (1 mol de CO₂ / 2 mol de O₂) = 1,5 mol × 44 g/mol = 66 g. Los distractores toman como limitante al metano (88 g), ignoran el coeficiente 2 (132 g) o aplican los coeficientes a los gramos (48 g).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CNA-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: escala logarítmica del pH y concentración de iones hidrógeno",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Ciencia, tecnología y sociedad, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones cuantitativas entre los componentes de una solución. [...] Identifico productos que pueden tener diferentes niveles de pH y explico algunos de sus usos en actividades cotidianas.",
+    "pregunta": "En una práctica de 9.°, la docente mide con un pH-metro un jugo de limón, que marca pH 2, y un jugo de tomate, que marca pH 4. Un estudiante comenta que el limón es «el doble de ácido» que el tomate. Antes de discutirlo con el grupo, la docente compara la concentración de iones hidrógeno de los dos jugos. ¿Cuál es la comparación correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La del limón es 100 veces la del tomate, porque cada unidad menos de pH multiplica esa concentración por diez.",
+        "explicacion": "Correcta. Como pH = −log[H⁺], el jugo de limón tiene [H⁺] = 10⁻² mol/L y el de tomate 10⁻⁴ mol/L. La razón es 10⁻² ÷ 10⁻⁴ = 10² = 100."
+      },
+      {
+        "id": "B",
+        "texto": "La del limón es el doble de la del tomate, porque el valor de pH del tomate es el doble del valor del limón.",
+        "explicacion": "Incorrecta. Es la idea del estudiante: trata el pH como una escala lineal y compara los valores de pH en lugar de las concentraciones que representan."
+      },
+      {
+        "id": "C",
+        "texto": "La del limón es 20 veces la del tomate, porque cada una de las dos unidades de diferencia aporta un factor de diez.",
+        "explicacion": "Incorrecta. Suma los factores (10 + 10) en lugar de multiplicarlos: dos unidades de pH equivalen a 10 × 10 = 100."
+      },
+      {
+        "id": "D",
+        "texto": "La del limón es la mitad de la del tomate, porque un pH más bajo corresponde a menos iones hidrógeno en solución.",
+        "explicacion": "Incorrecta. Invierte la relación: a menor pH, mayor concentración de iones hidrógeno y mayor acidez."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los jugos tienen pH 2 y pH 4. Concepto: pH = −log[H⁺], así que cada unidad de pH corresponde a un factor de 10 en la concentración de iones hidrógeno, y una diferencia de dos unidades, a un factor de 10² = 100. Conclusión: el limón tiene 100 veces más iones hidrógeno que el tomate. «El doble» trata la escala como lineal, «20 veces» suma los factores y «la mitad» invierte la relación.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-CNA-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: relación entre frecuencia, longitud de onda y rapidez de propagación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre frecuencia, amplitud, velocidad de propagación y longitud de onda en diversos tipos de ondas mecánicas.",
+    "pregunta": "En 9.°, dos estudiantes estiran un resorte largo sobre el piso del laboratorio. Uno de ellos mueve un extremo de lado a lado con una frecuencia de 2 Hz y el grupo mide una longitud de onda de 1,5 m. Luego, sin cambiar la tensión del resorte, aumenta la frecuencia a 4 Hz. Antes de que midan de nuevo, el docente calcula los valores que deberían obtener. ¿Cuáles son?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las ondas avanzan a 6 m/s y su longitud de onda es de 1,5 m.",
+        "explicacion": "Incorrecta. Supone que la rapidez de propagación aumenta con la frecuencia con que se agita el resorte. Esa rapidez la fija el medio, que no cambió."
+      },
+      {
+        "id": "B",
+        "texto": "Las ondas avanzan a 3 m/s y su longitud de onda es de 1,5 m.",
+        "explicacion": "Incorrecta. Es incoherente con v = λ·f: 1,5 m × 4 Hz = 6 m/s, no 3 m/s. Si la rapidez se mantiene y la frecuencia se duplica, la longitud de onda no puede seguir igual."
+      },
+      {
+        "id": "C",
+        "texto": "Las ondas avanzan a 3 m/s y su longitud de onda es de 0,75 m.",
+        "explicacion": "Correcta. Al principio, v = λ·f = 1,5 m × 2 Hz = 3 m/s. La rapidez de propagación depende del medio (la tensión y la masa por unidad de longitud del resorte), que no cambió; con 4 Hz, la longitud de onda es 3 ÷ 4 = 0,75 m."
+      },
+      {
+        "id": "D",
+        "texto": "Las ondas avanzan a 6 m/s y su longitud de onda es de 0,75 m.",
+        "explicacion": "Incorrecta. También es incoherente: 0,75 m × 4 Hz = 3 m/s, no 6 m/s. Mezcla la idea de que la rapidez crece con la frecuencia con la reducción de la longitud de onda."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el medio (el mismo resorte con la misma tensión) no cambia; solo cambia la frecuencia. Concepto: la rapidez de una onda mecánica la determina el medio, y se cumple v = λ·f. Cálculo: v = 1,5 m × 2 Hz = 3 m/s; con 4 Hz, λ = 3 ÷ 4 = 0,75 m. Conclusión: las ondas avanzan igual de rápido y son más cortas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CNA-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: corriente en una rama de un circuito mixto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Relaciono voltaje y corriente con los diferentes elementos de un circuito eléctrico complejo y para todo el sistema.",
+    "pregunta": "Para una práctica de 11.°, el docente arma un circuito con una fuente de 12 V y tres resistencias: una de 2 Ω, conectada en serie con un par de resistencias en paralelo, de 6 Ω y de 3 Ω. Antes de que los estudiantes midan, calcula lo que debe marcar un amperímetro conectado en la rama de la resistencia de 6 Ω. Si la fuente, los cables y el amperímetro son ideales, ¿qué valor debe marcar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1 A",
+        "explicacion": "Correcta. El paralelo equivale a (6 × 3) ÷ (6 + 3) = 2 Ω; la resistencia total es 2 + 2 = 4 Ω y la corriente total, 12 ÷ 4 = 3 A. La resistencia de 2 Ω en serie toma 3 × 2 = 6 V, así que el paralelo queda con 6 V, y por la de 6 Ω pasan 6 ÷ 6 = 1 A (por la de 3 Ω, 2 A)."
+      },
+      {
+        "id": "B",
+        "texto": "2 A",
+        "explicacion": "Incorrecta. Aplica los 12 V completos a la resistencia de 6 Ω (12 ÷ 6 = 2 A) sin descontar la caída de tensión en la resistencia de 2 Ω. Ese valor corresponde, en realidad, a la rama de 3 Ω."
+      },
+      {
+        "id": "C",
+        "texto": "1,5 A",
+        "explicacion": "Incorrecta. Reparte la corriente total de 3 A por partes iguales entre las dos ramas. En un paralelo, la rama de menor resistencia lleva más corriente."
+      },
+      {
+        "id": "D",
+        "texto": "3 A",
+        "explicacion": "Incorrecta. Supone que la corriente es la misma en todo el circuito, como si las tres resistencias estuvieran en serie. 3 A es la corriente total, que se divide en el paralelo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la resistencia de 6 Ω está en paralelo con la de 3 Ω, y ese par está en serie con la de 2 Ω. Cálculo: R paralelo = 18 ÷ 9 = 2 Ω; R total = 4 Ω; I total = 12 ÷ 4 = 3 A; tensión en el paralelo = 12 − 3 × 2 = 6 V; corriente en la rama de 6 Ω = 6 ÷ 6 = 1 A. Los distractores aplican los 12 V a la rama (2 A), reparten la corriente por igual (1,5 A) o la toman igual en todo el circuito (3 A).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CNA-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: transformación de energía mecánica en energía térmica en un rodadero",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Explico la transformación de energía mecánica en energía térmica. [...] establezco condiciones para conservar la energía mecánica.",
+    "pregunta": "En una salida con su grupo de 10.°, la docente de física propone analizar un rodadero del parque. Una niña de 40 kg parte del reposo desde la parte alta, que está 3,2 m por encima del final, y un sensor registra que llega abajo con una rapidez de 6 m/s. Con g = 10 m/s², ¿cuánta energía mecánica se transformó en otras formas, principalmente térmica, durante el descenso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1280 J",
+        "explicacion": "Incorrecta. Es toda la energía potencial inicial. Supone que, al llegar abajo, toda se convirtió en térmica y olvida la energía cinética que la niña tiene al final."
+      },
+      {
+        "id": "B",
+        "texto": "0 J",
+        "explicacion": "Incorrecta. Confunde la conservación de la energía total con la de la energía mecánica, que solo se conserva sin rozamiento. Si así fuera, la niña llegaría a √(2 × 10 × 3,2) = 8 m/s, no a 6 m/s."
+      },
+      {
+        "id": "C",
+        "texto": "560 J",
+        "explicacion": "Correcta. Energía potencial inicial: 40 × 10 × 3,2 = 1280 J. Energía cinética al final: ½ × 40 × 6² = 720 J. La diferencia, 1280 − 720 = 560 J, se transformó por el rozamiento en energía térmica (y una pequeña parte en sonido)."
+      },
+      {
+        "id": "D",
+        "texto": "1160 J",
+        "explicacion": "Incorrecta. Calcula la energía cinética sin elevar al cuadrado la rapidez (½ × 40 × 6 = 120 J) y resta 1280 − 120 = 1160 J."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la niña llega a 6 m/s, menos que los 8 m/s que tendría sin rozamiento. Concepto: la energía total se conserva; la energía mecánica que falta al final se transformó en térmica. Cálculo: Ep = 40 × 10 × 3,2 = 1280 J; Ec = ½ × 40 × 6² = 720 J; diferencia = 560 J. Los distractores toman toda la potencial (1280 J), suponen que la mecánica se conserva (0 J) u olvidan elevar al cuadrado la rapidez (1160 J).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CNA-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Saber: flujo de energía y ciclo de la materia en las cadenas alimentarias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo: procesos biológicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Explico las relaciones entre materia y energía en las cadenas alimentarias.",
+    "pregunta": "En una clase de 10.° sobre la red trófica de una laguna, la docente explica que el carbono circula en ciclo: la respiración y los descomponedores lo devuelven al agua y al aire como CO₂, y los productores lo fijan de nuevo. Un estudiante pregunta por qué la energía no circula de la misma manera y hay que reponerla de forma continua con la luz del Sol. ¿Cuál es la explicación correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los descomponedores devuelven a los productores solo una parte de la energía de los restos, y la luz repone la que queda en los restos sin descomponer.",
+        "explicacion": "Incorrecta. La energía no circula: los descomponedores también la usan en su respiración y la liberan como calor. Lo que devuelven a los productores son nutrientes y CO₂ (materia), no energía aprovechable."
+      },
+      {
+        "id": "B",
+        "texto": "La energía que no pasa al nivel siguiente se destruye en la respiración de los organismos, y la luz debe reponer la que se destruye en cada nivel.",
+        "explicacion": "Incorrecta. La energía no se destruye: se transforma. En la respiración, la energía química se convierte en trabajo y, finalmente, en calor que sale del ecosistema."
+      },
+      {
+        "id": "C",
+        "texto": "Los niveles altos reciben menos energía porque tienen menos organismos que la requieran, y la que sobra se pierde con los restos que nadie consume.",
+        "explicacion": "Incorrecta. Invierte causa y efecto: hay menos organismos en los niveles altos porque les llega menos energía, no al revés. Además, los restos sí los aprovechan los descomponedores, y la explicación no dice por qué la energía no vuelve a los productores."
+      },
+      {
+        "id": "D",
+        "texto": "Casi toda la energía de cada nivel termina como calor, que se disipa en el ambiente y que los productores no pueden transformar en energía química.",
+        "explicacion": "Correcta. En cada transferencia, gran parte de la energía química se usa en la respiración y termina como calor, que se disipa y que los productores no pueden convertir en energía química; por eso el ecosistema necesita luz solar de forma continua. El carbono, en cambio, sí vuelve a los productores como CO₂."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante contrasta el carbono, que la respiración y los descomponedores devuelven como CO₂, con la energía, que hay que reponer. Concepto: en cada nivel trófico gran parte de la energía química se usa en la respiración y termina como calor, que se disipa y que los productores no pueden aprovechar; la energía fluye en un solo sentido y la materia circula. Conclusión: la luz repone la energía que sale como calor. Los distractores la reciclan por medio de los descomponedores, la destruyen o invierten causa y efecto.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CNA-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Saber: ósmosis en tejido vegetal y estimación de la concentración sin cambio de masa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Verifico y explico los procesos de ósmosis y difusión.",
+    "pregunta": "En una práctica de 7.°, el docente sumerge durante 24 horas cilindros iguales de papa en soluciones de sacarosa y registra el cambio de masa de cada uno: 0,0 M, +9 %; 0,2 M, +2 %; 0,4 M, −6 %; 0,6 M, −11 %. Para la discusión final, prepara la interpretación correcta de los datos. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La masa no cambiaría con una solución cercana a 0,30 M, y en la de 0,6 M las células perdieron agua por ósmosis.",
+        "explicacion": "Incorrecta. Explica bien lo ocurrido en 0,6 M, pero toma el punto medio entre 0,2 y 0,4 M sin tener en cuenta los valores: la masa pasa de +2 % a −6 %, así que el cero está más cerca de 0,2 M."
+      },
+      {
+        "id": "B",
+        "texto": "La masa no cambiaría con una solución cercana a 0,25 M, y en la de 0,6 M las células perdieron agua por ósmosis.",
+        "explicacion": "Correcta. Entre 0,2 y 0,4 M el cambio pasa de +2 % a −6 % (8 puntos); el cero está a 2/8 del intervalo: 0,2 + 0,2 × 2/8 = 0,25 M. En 0,6 M la solución es más concentrada que el contenido de las células, y el agua sale de ellas por ósmosis; por eso pierden masa."
+      },
+      {
+        "id": "C",
+        "texto": "La masa no cambiaría con una solución cercana a 0,25 M, y en la de 0,6 M las células perdieron azúcares por difusión.",
+        "explicacion": "Incorrecta. La estimación es correcta, pero confunde la ósmosis con la difusión del soluto: en 0,6 M hay más sacarosa afuera que adentro, así que los azúcares no tenderían a salir. Lo que sale es agua."
+      },
+      {
+        "id": "D",
+        "texto": "La masa no cambiaría con una solución cercana a 0,30 M, y en la de 0,6 M las células perdieron azúcares por difusión.",
+        "explicacion": "Incorrecta. Combina el punto medio sin interpolar con la confusión entre ósmosis y difusión del soluto."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el cambio de masa pasa de +2 % (0,2 M) a −6 % (0,4 M). Cálculo: por interpolación, el cambio nulo está en 0,2 + 0,2 × 2/8 = 0,25 M, la concentración equivalente a la de las células. Concepto: en una solución más concentrada que el citoplasma, el agua sale de las células por ósmosis a través de la membrana, que casi no deja pasar la sacarosa. Conclusión: cerca de 0,25 M y pérdida de agua por ósmosis.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CNA-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Saber: regulación hormonal de la glucosa en la sangre",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo, octavo a noveno grado"
+    ],
+    "texto_fuente": "Explico la importancia de las hormonas en la regulación de las funciones en el ser humano.",
+    "pregunta": "En 9.°, la docente muestra la gráfica de una persona sana que toma una bebida azucarada en ayunas: su glucosa en sangre sube de 90 a 140 mg/dL en media hora y, dos horas después, vuelve a unos 95 mg/dL. Los estudiantes deben explicar por qué baja el nivel. ¿Qué explicación debe tomar la docente como referencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El páncreas liberó insulina, que llevó a las células a tomar glucosa de la sangre y al hígado a guardarla como glucógeno.",
+        "explicacion": "Correcta. Al subir la glucosa, las células beta del páncreas secretan insulina, que facilita la entrada de glucosa en los músculos y el tejido adiposo y su almacenamiento en el hígado como glucógeno. La glucosa baja y, con ella, la secreción de insulina: es una retroalimentación negativa."
+      },
+      {
+        "id": "B",
+        "texto": "El hígado liberó insulina, que llevó a las células a tomar glucosa de la sangre y al hígado a guardarla como glucógeno.",
+        "explicacion": "Incorrecta. El hígado responde a la insulina almacenando glucógeno, pero no la produce: la secretan los islotes del páncreas."
+      },
+      {
+        "id": "C",
+        "texto": "El páncreas liberó glucagón, que llevó a las células a tomar glucosa de la sangre y al hígado a guardarla como glucógeno.",
+        "explicacion": "Incorrecta. El glucagón, también pancreático, actúa en sentido contrario: en ayuno lleva al hígado a descomponer el glucógeno y liberar glucosa, lo que la haría subir."
+      },
+      {
+        "id": "D",
+        "texto": "El hígado liberó glucagón, que llevó a las células a tomar glucosa de la sangre y al hígado a guardarla como glucógeno.",
+        "explicacion": "Incorrecta. Confunde el órgano y la hormona: el glucagón lo secreta el páncreas, no el hígado, y eleva la glucosa en lugar de bajarla."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la glucosa sube después de la bebida y luego vuelve a su nivel normal. Concepto: cuando la glucosa aumenta, el páncreas secreta insulina, que hace que las células tomen glucosa y que el hígado la almacene como glucógeno (retroalimentación negativa); el glucagón, también del páncreas, la eleva en ayuno. Conclusión: páncreas e insulina. El hígado responde a las hormonas, no las produce.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-CNA-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: relación entre volumen y temperatura absoluta de un gas a presión constante",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre las variables de estado en un sistema termodinámico para predecir cambios físicos y químicos y las expreso matemáticamente.",
+    "pregunta": "Para una práctica de 9.°, el docente tapa la punta de una jeringa que contiene 60 mL de aire a 27 °C y la sumerge en agua a 77 °C. El émbolo se desliza sin fricción, de modo que la presión del aire se mantiene igual a la exterior. Antes del experimento, calcula el volumen que ocupará el aire cuando alcance la temperatura del agua. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "171 mL",
+        "explicacion": "Incorrecta. Aplica la proporción entre volumen y temperatura con grados Celsius: 60 × 77 ÷ 27 ≈ 171 mL. Esa proporcionalidad solo vale con la temperatura absoluta (kelvin)."
+      },
+      {
+        "id": "B",
+        "texto": "60 mL",
+        "explicacion": "Incorrecta. Supone que el volumen no cambia porque la cantidad de aire es la misma. A presión constante, el gas se dilata al calentarse."
+      },
+      {
+        "id": "C",
+        "texto": "51 mL",
+        "explicacion": "Incorrecta. Usa una relación inversa, como la de la presión y el volumen en la ley de Boyle: 60 × 300 ÷ 350 ≈ 51 mL. A presión constante, el volumen y la temperatura absoluta son directamente proporcionales."
+      },
+      {
+        "id": "D",
+        "texto": "70 mL",
+        "explicacion": "Correcta. En kelvin, T₁ = 27 + 273 = 300 K y T₂ = 77 + 273 = 350 K. A presión constante, V₂ = V₁ × T₂ ÷ T₁ = 60 × 350 ÷ 300 = 70 mL."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la presión no cambia y la temperatura pasa de 27 °C a 77 °C. Concepto: a presión constante, el volumen de un gas es proporcional a su temperatura absoluta (V₁/T₁ = V₂/T₂, ley de Charles). Cálculo: 60 mL × 350 K ÷ 300 K = 70 mL. Los distractores usan grados Celsius (171 mL), ignoran la dilatación (60 mL) o invierten la relación (51 mL).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CNA-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que un movimiento uniforme exige una fuerza neta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre las diferentes fuerzas que actúan sobre los cuerpos en reposo o en movimiento rectilíneo uniforme",
+    "pregunta": "En 10.°, un estudiante arrastra una caja por el piso del salón a ritmo constante, halándola con un dinamómetro que marca 30 N. Casi todo el grupo concluye que la fuerza de la mano tiene que ser mayor que el rozamiento, «porque si fueran iguales la caja se quedaría quieta». ¿Qué actividad debe proponer el docente para trabajar esta idea?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir que halen la caja cada vez con más fuerza, observen que avanza más rápido y registren en una tabla cómo cambia el movimiento con la fuerza aplicada.",
+        "explicacion": "Incorrecta. Es una actividad activa, pero lo que se observa al aumentar la fuerza es una aceleración; el grupo la leerá como «más fuerza, más velocidad» y reforzará la idea de que el movimiento necesita una fuerza neta."
+      },
+      {
+        "id": "B",
+        "texto": "Lanzar un mismo bloque sobre superficies cada vez más lisas, hasta una mesa de aire, medir cuánto recorre en cada una y discutir qué pasaría sin rozamiento.",
+        "explicacion": "Correcta. Al disminuir el rozamiento, el bloque recorre cada vez más distancia; extrapolando, como hizo Galileo, sin rozamiento seguiría con la misma velocidad sin que nada lo empuje. Así se construye que velocidad constante significa fuerza neta nula y que la mano solo compensa el rozamiento: este también vale 30 N."
+      },
+      {
+        "id": "C",
+        "texto": "Arrastrar a ritmo constante la caja vacía y luego cargada con libros, y comparar las lecturas del dinamómetro para ver cómo cambia el rozamiento con el peso.",
+        "explicacion": "Incorrecta. Es activa, pero trabaja otra relación: muestra que el rozamiento crece con el peso de la caja. En los dos arrastres la caja va a ritmo constante y nada pone a prueba la idea de que la mano supera al rozamiento; la lectura mayor con la caja cargada puede leerse incluso como «más fuerza para seguir avanzando»."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que la idea corresponde a la física aristotélica, enunciar la primera ley de Newton y resolver con el grupo ejercicios de diagramas de cuerpo libre.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero enunciar la ley y resolver ejercicios no confronta la idea con una experiencia; la concepción suele mantenerse fuera de los ejercicios."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la caja avanza sin acelerar y el grupo cree que la fuerza aplicada supera al rozamiento. Concepto: según la primera ley de Newton, la velocidad constante corresponde a una fuerza neta nula; la mano solo compensa el rozamiento. Didáctica: reducir el rozamiento poco a poco y extrapolar al caso ideal confronta la idea con evidencia. Los distractores refuerzan la concepción (más fuerza, más rapidez), trabajan otra relación (el rozamiento según el peso) o la exponen sin confrontarla.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CNA-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que la corriente se gasta a lo largo de un circuito",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Propongo modelos para predecir los resultados de mis experimentos y simulaciones. [...] Relaciono voltaje y corriente con los diferentes elementos de un circuito eléctrico complejo y para todo el sistema.",
+    "pregunta": "En 11.°, un grupo arma un circuito con una pila y dos bombillos iguales en serie. Al explicarlo, los estudiantes dicen que la corriente sale de la pila, que el primer bombillo «gasta» una parte y que al segundo le llega menos, y que por eso la pila se agota con el tiempo. ¿Qué debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Medir la tensión de la pila al comenzar y después de dos horas con los bombillos encendidos, y relacionar su caída con lo que consumieron los bombillos.",
+        "explicacion": "Incorrecta. Es activa, pero la caída de tensión muestra que algo se agota (la energía química de la pila) y el grupo la leerá como prueba de que la corriente se gasta; no distingue la carga de la energía."
+      },
+      {
+        "id": "B",
+        "texto": "Medir con un amperímetro la corriente que sale de la pila con uno, dos y tres bombillos en serie, y comparar cómo cambia al agregar cada bombillo.",
+        "explicacion": "Incorrecta. Mide en un solo punto: la corriente baja al agregar bombillos porque aumenta la resistencia total, no porque se consuma a lo largo del circuito. El resultado parece confirmar la idea en lugar de ponerla a prueba."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que predigan y luego midan con un amperímetro a la salida de la pila, entre los bombillos y al regreso, y discutir qué es lo que la pila entrega.",
+        "explicacion": "Correcta. La predicción hace explícita la idea, y tres lecturas iguales la contradicen con datos. La discusión lleva a que la corriente es la misma en todo un circuito en serie (la carga se conserva) y a que lo que la pila entrega y los bombillos transforman en luz y calor es energía."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que la carga eléctrica se conserva y que lo que se transforma en los bombillos es energía, y resolver luego ejercicios de circuitos en serie.",
+        "explicacion": "Incorrecta. Diagnostica bien la confusión entre corriente y energía, pero la explica sin que los estudiantes contrasten su predicción con mediciones; la idea previa suele persistir."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el grupo cree que el primer bombillo consume parte de la corriente y que por eso la pila se agota. Concepto: en un circuito en serie la corriente es la misma en todos los puntos; lo que se transforma es energía. Didáctica: predecir y medir en varios puntos del circuito pone la idea a prueba; luego se distingue carga de energía. Los distractores dan resultados que parecen confirmar la idea (tensión de la pila, medición en un solo punto) o la explican sin contraste.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CNA-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: masa y peso en distintos puntos del sistema solar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Comparo masa, peso y densidad de diferentes materiales mediante experimentos. [...] Relaciono masa, peso y densidad con la aceleración de la gravedad en distintos puntos del sistema solar.",
+    "pregunta": "En 7.°, al estudiar la gravedad en el sistema solar, una estudiante afirma: «Peso 48 kg; si me subiera a la báscula del baño en la Luna, marcaría unos 8 kg, porque allá tengo menos masa». ¿Qué debe hacer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Corregirla: en la Luna la báscula seguiría marcando 48 kg, porque la masa de una persona es la misma en cualquier lugar del sistema solar.",
+        "explicacion": "Incorrecta. La báscula de resorte mide la fuerza con que la persona la presiona (su peso) y la expresa en kilogramos calibrados para la Tierra; en la Luna marcaría cerca de la sexta parte (unos 8 kg). El error de la estudiante no está en la lectura, sino en atribuirla a un cambio de masa."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que cada estudiante se suba a la báscula y calcule su peso en la Luna dividiendo entre seis los kilogramos que marca, y comparar los resultados.",
+        "explicacion": "Incorrecta. Es activa, pero el resultado se expresa en kilogramos y se llama peso: refuerza la confusión entre masa (kg) y peso (N) que la docente debe trabajar."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que midan la masa y el volumen de bloques de distintos materiales y calculen la densidad de cada uno, para comparar materiales entre sí.",
+        "explicacion": "Incorrecta. Trabaja la densidad, que también está en el estándar, pero no distingue la masa del peso ni relaciona el peso con la gravedad del lugar, que es lo que la estudiante confunde."
+      },
+      {
+        "id": "D",
+        "texto": "Medir un mismo objeto con una balanza de platos y con un dinamómetro, y discutir con el grupo qué marcaría cada instrumento si se llevara a la Luna.",
+        "explicacion": "Correcta. La balanza de platos compara masas y seguiría equilibrada en la Luna, porque la gravedad actúa igual sobre los dos platos; el dinamómetro mide el peso en newtons y marcaría cerca de la sexta parte. El contraste muestra que la masa no cambia y que el peso depende de la gravedad del lugar."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la estudiante predice bien la lectura de la báscula en la Luna, pero la atribuye a un cambio de masa. Concepto: la masa (kg) no cambia; el peso es la fuerza de gravedad (N) y en la Luna es cerca de la sexta parte. Didáctica: contrastar una balanza de platos, que compara masas, con un dinamómetro, que mide fuerzas, permite construir la diferencia. Los distractores corrigen con un error, refuerzan el uso de kg como peso o trabajan otra magnitud.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CNA-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Didáctica: la idea de que los organismos se acostumbran y heredan la resistencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo, octavo a noveno grado"
+    ],
+    "texto_fuente": "Explico la variabilidad en las poblaciones y la diversidad biológica como consecuencia de estrategias de reproducción, cambios genéticos y selección natural.",
+    "pregunta": "En 9.°, a propósito de una noticia sobre zancudos resistentes a un insecticida en el municipio, varios estudiantes explican: «Los zancudos se fueron acostumbrando al veneno y les heredaron esa resistencia a sus crías». ¿Qué actividad debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Simular con fichas una población en la que pocas ya son resistentes, retirar en cada «fumigación» casi todas las demás, multiplicar las que quedan y graficar las generaciones.",
+        "explicacion": "Correcta. La simulación parte de una variación que ya existe en la población (originada por mutaciones al azar) y muestra cómo la selección aumenta la frecuencia de los resistentes a lo largo de las generaciones. Los estudiantes ven que ningún individuo cambia: cambia la composición de la población."
+      },
+      {
+        "id": "B",
+        "texto": "Simular con fichas una población en la que cada ficha que sobrevive a una «fumigación» gana un punto de resistencia, que reciben sus descendientes, y graficar varias generaciones.",
+        "explicacion": "Incorrecta. Es activa, pero modela justamente la idea errada: que el individuo adquiere la resistencia por la exposición y la transmite. La simulación confirmaría la concepción de los estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "Proponer que rieguen una planta con cada vez menos agua durante un mes y registren cómo se va adaptando a la sequía, para luego compararla con los zancudos.",
+        "explicacion": "Incorrecta. Lo que se observaría es la respuesta de un solo individuo (aclimatación), que no se hereda; equipararla con el cambio de la población refuerza la idea de que los organismos cambian porque lo necesitan."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que esa idea corresponde a la teoría de Lamarck y contrastarla con la de Darwin mediante el ejemplo clásico del cuello largo de las jirafas.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto (herencia de caracteres adquiridos), pero exponer las dos teorías con otro ejemplo no pone a prueba la explicación que los estudiantes dieron para el caso que les interesa."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los estudiantes atribuyen la resistencia a que cada zancudo se acostumbró al veneno y la heredó. Concepto: la resistencia surge por mutaciones al azar que ya existían; el insecticida selecciona a los portadores, que se reproducen más, y cambia la frecuencia en la población. Didáctica: una simulación con variación previa y selección muestra el mecanismo. Los distractores modelan la herencia de lo adquirido, confunden aclimatación con evolución o exponen sin confrontar.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-CNA-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Me aproximo al conocimiento como científico(a) natural",
+    "subtema": "Didáctica: conclusiones a la luz del error experimental en un péndulo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto los resultados teniendo en cuenta el orden de magnitud del error experimental.",
+    "pregunta": "En 10.°, un grupo investiga si la masa de un péndulo influye en su período. Con un cronómetro de mano que muestra centésimas, mide una sola oscilación con cada masa: obtiene 1,42 s con 50 g y 1,36 s con 200 g, y concluye que «a mayor masa, menor período». El docente sabe que al iniciar y detener un cronómetro a mano se cometen errores de una a dos décimas de segundo. ¿Qué debe proponer al grupo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Medir de nuevo una oscilación con un cronómetro electrónico de milésimas de segundo, para obtener datos más precisos con cada masa.",
+        "explicacion": "Incorrecta. La resolución del cronómetro no es el problema: el error lo pone la reacción de quien lo opera (una a dos décimas), mucho mayor que una milésima. Más cifras darían una falsa precisión."
+      },
+      {
+        "id": "B",
+        "texto": "Agregar dos masas más, de 100 g y de 300 g, medir una oscilación con cada una y verificar si la tendencia observada se mantiene.",
+        "explicacion": "Incorrecta. Más masas con una sola medición cada una arrastran el mismo error de una a dos décimas, mayor que la diferencia de 0,06 s; una «tendencia» con esos datos puede ser solo ruido."
+      },
+      {
+        "id": "C",
+        "texto": "Medir varias veces el tiempo de diez oscilaciones con cada masa, calcular el período y comparar la diferencia con la dispersión de las medidas.",
+        "explicacion": "Correcta. Al medir diez oscilaciones, el error de reacción (unas 0,2 s) se reparte entre diez períodos (unas 0,02 s por período), y al repetir se conoce la dispersión. Solo si la diferencia entre masas supera esa dispersión habría base para concluir; en un péndulo simple no la superará."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que la diferencia se debe al error de medición, porque el período depende de la longitud y no de la masa, y pasar a estudiar la longitud.",
+        "explicacion": "Incorrecta. El contenido es correcto, pero dar la respuesta reemplaza la evaluación del error que pide el estándar: el grupo no aprende a decidir cuándo una diferencia es significativa."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la diferencia entre masas (1,42 − 1,36 = 0,06 s) es menor que el error de cronometrar a mano una oscilación (0,1 a 0,2 s). Concepto: una conclusión solo es válida si la diferencia supera el error experimental. Didáctica: medir diez oscilaciones reduce el error por período a unas 0,02 s y repetir permite estimar la dispersión. Los distractores mejoran la resolución sin reducir el error, añaden datos con el mismo error o dan la respuesta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CNA-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: conservación de la masa en un sistema abierto y en uno cerrado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Explico condiciones de cambio y conservación en diversos sistemas, teniendo en cuenta transferencia y transporte de energía y su interacción con la materia. [...] Verifico las diferencias entre cambios químicos y mezclas.",
+    "pregunta": "En 9.°, un grupo pone sobre una balanza un vaso con agua y, a su lado, una pastilla efervescente: la balanza marca 215,4 g. Echan la pastilla al agua y, cuando deja de burbujear, la balanza marca 214,6 g. El grupo concluye que «en las reacciones químicas se pierde masa». ¿Qué debe proponer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Repetir el ensayo cinco veces en el vaso abierto y promediar los resultados, para reducir el efecto de los errores de lectura de la balanza.",
+        "explicacion": "Incorrecta. Es activa, pero la pérdida no es un error al azar: se repetirá en cada ensayo porque el gas escapa. Promediar no cambia la conclusión equivocada."
+      },
+      {
+        "id": "B",
+        "texto": "Repetir el ensayo en una botella de gaseosa bien tapada, con la pastilla separada del agua hasta después de cerrarla, y pesar todo antes y después.",
+        "explicacion": "Correcta. En el sistema cerrado, el gas que se forma (dióxido de carbono) no escapa y la balanza marca lo mismo antes y después. Al compararlo con el vaso abierto, el grupo ve que los 0,8 g que faltaban eran el gas que salió al aire: la masa se conserva."
+      },
+      {
+        "id": "C",
+        "texto": "Pesar por separado la pastilla y el vaso con agua antes de mezclarlos, y verificar que la suma de las dos masas coincide con la primera lectura.",
+        "explicacion": "Incorrecta. Revisa el momento equivocado: la suma antes de mezclar ya es la primera lectura (215,4 g). No examina qué pasa con la masa durante la reacción."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que los 0,8 g de diferencia corresponden al gas que escapó al aire y pedir que lo escriban así en la conclusión del informe de la práctica.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero los estudiantes no lo comprueban: reciben la explicación en lugar de obtener la evidencia con un sistema cerrado."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la masa baja 0,8 g (215,4 − 214,6) en un vaso abierto, mientras se desprende gas. Concepto: en un sistema cerrado la masa se conserva; en uno abierto, el gas producido escapa. Didáctica: repetir la reacción en un recipiente cerrado y comparar con el abierto permite que el grupo obtenga la evidencia. Los distractores tratan la pérdida como error al azar, revisan el momento equivocado o dan la explicación sin comprobarla.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-CNA-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Ciencia, tecnología y sociedad",
+    "subtema": "Didáctica: tarea para analizar las fuentes de energía disponibles en la vereda",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Ciencia, tecnología y sociedad, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Analizo el potencial de los recursos naturales de mi entorno para la obtención de energía e indico sus posibles usos.",
+    "pregunta": "Un docente de 7.° de un colegio rural de zona cafetera, cerca de una quebrada, quiere que sus estudiantes analicen qué recursos naturales de la vereda podrían servir para obtener energía y para qué podría usarse cada uno. ¿Qué tarea debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construir con material reciclado una pequeña rueda hidráulica, instalarla en la quebrada y comprobar si logra encender un bombillo LED con un pequeño generador.",
+        "explicacion": "Incorrecta. Es activa, pero se queda en una sola fuente y en un prototipo: no compara las fuentes de la vereda ni estima cuánto podría aportar cada una ni para qué usarla."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicar en las casas de la vereda una encuesta sobre las fuentes de energía que usan para cocinar y alumbrar, y graficar los resultados en el salón de clase.",
+        "explicacion": "Incorrecta. Es activa, pero describe el consumo actual de las familias, no lo que las fuentes del lugar podrían aportar ni sus usos posibles."
+      },
+      {
+        "id": "C",
+        "texto": "Elaborar una cartelera que clasifique las fuentes de energía en renovables y no renovables, con ejemplos de Colombia y del mundo, y exponerla al curso.",
+        "explicacion": "Incorrecta. Clasificar fuentes en general corresponde a otro estándar (identificar recursos renovables y no renovables) y no analiza las fuentes de la vereda ni sus usos."
+      },
+      {
+        "id": "D",
+        "texto": "Medir el caudal de la quebrada, las horas de sol y la pulpa de café desechada, y estimar cuánto aportaría cada fuente frente al consumo del colegio.",
+        "explicacion": "Correcta. Los estudiantes obtienen datos de varias fuentes del lugar (agua, sol, biomasa), estiman lo que cada una podría aportar y lo comparan con una necesidad concreta, lo que les permite proponer usos posibles para cada fuente con argumentos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el docente quiere analizar las fuentes de energía de la vereda y sus usos posibles. Concepto: analizar el potencial exige datos del lugar (caudal, radiación solar, biomasa disponible), una estimación de lo que aporta cada fuente y una comparación con necesidades reales. Conclusión: la tarea de medir, estimar y comparar con el consumo del colegio. Los distractores se quedan en un prototipo de una sola fuente, describen el consumo actual o clasifican fuentes en general.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CNA-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Didáctica: respiración de las plantas y diseño experimental con controles",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo, sexto a séptimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Comparo mecanismos de obtención de energía en los seres vivos. [...] Diseño y realizo experimentos y verifico el efecto de modificar diversas variables para dar respuesta a preguntas.",
+    "pregunta": "En 7.°, al comparar cómo obtienen energía los seres vivos, varios estudiantes afirman que las plantas no respiran, «porque en lugar de respirar hacen fotosíntesis». La docente quiere que lo pongan a prueba con ramitas de elodea y azul de bromotimol, un indicador que pasa de azul a amarillo cuando aumenta el dióxido de carbono disuelto. ¿Qué montaje debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cuatro tubos con agua e indicador, dos con elodea y dos sin ella; de cada par, uno a la luz y otro en la oscuridad, y comparar los colores después de unas horas.",
+        "explicacion": "Correcta. A la luz, la planta hace fotosíntesis y respira, y el indicador no se vuelve amarillo porque toma más CO₂ del que libera; en la oscuridad solo respira y el indicador se vuelve amarillo. Los tubos sin planta, a la luz y a oscuras, descartan que el cambio de color se deba a la luz, a la temperatura o al aire."
+      },
+      {
+        "id": "B",
+        "texto": "Un tubo con agua, indicador y elodea, dejado a la luz durante unas horas, para observar si el color cambia por el dióxido de carbono que toma la planta.",
+        "explicacion": "Incorrecta. Solo muestra el efecto neto de la fotosíntesis: como a la luz la planta toma más CO₂ del que produce al respirar, el resultado parece confirmar que no respira."
+      },
+      {
+        "id": "C",
+        "texto": "Un tubo con agua, indicador y elodea, dejado en la oscuridad durante unas horas, para observar si el color cambia por el dióxido de carbono que libera la planta.",
+        "explicacion": "Incorrecta. Es la condición que revela la respiración, pero sin tubos de control no se puede descartar que el color cambie por otra causa, como el CO₂ que entra del aire; con un solo tubo, la conclusión queda sin respaldo."
+      },
+      {
+        "id": "D",
+        "texto": "Una elodea en agua con indicador, iluminada con una lámpara a distintas distancias, para contar en cada caso las burbujas que libera por minuto.",
+        "explicacion": "Incorrecta. Mide la rapidez de la fotosíntesis según la intensidad de la luz; no dice nada sobre la respiración, que es lo que se discute."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los estudiantes creen que la fotosíntesis reemplaza la respiración. Concepto: las plantas respiran siempre; a la luz, la fotosíntesis consume más CO₂ del que la respiración produce, y en la oscuridad solo se ve la respiración. Didáctica: comparar luz y oscuridad, con tubos sin planta como control, permite atribuir el cambio de color a la planta. Los distractores solo muestran la fotosíntesis, omiten los controles o miden otra variable.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CNA-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno vivo",
+    "subtema": "Didáctica: genoma común y expresión diferencial de los genes en las células",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno vivo, octavo a noveno grado",
+      "Ciencia, tecnología y sociedad, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre los genes, las proteínas y las funciones celulares. [...] Identifico la utilidad del ADN como herramienta de análisis genético.",
+    "pregunta": "En 9.°, después de estudiar la síntesis de proteínas, un estudiante escribe: «Una neurona y una célula del músculo de una misma persona tienen ADN distinto, porque cada una fabrica proteínas diferentes». ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confunde la mitosis con la división meiótica; conviene extraer ADN de células de la mejilla y de fresas para que vean que aparece en ambos casos.",
+        "explicacion": "Incorrecta. Falla en los dos puntos: el estudiante no habla de cómo se dividen las células, sino que deduce el ADN a partir de las proteínas; y la extracción de la mejilla y de fresas muestra que hay ADN, no que dos tipos de célula de una persona tengan el mismo."
+      },
+      {
+        "id": "B",
+        "texto": "Confunde tener un gen con expresarlo; conviene extraer ADN de células de la mejilla y de fresas para que vean que aparece en ambos casos.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la evidencia no sirve: extraer ADN de la mejilla y de fresas solo muestra que hay ADN en ambos; no compara dos tipos de célula de la misma persona ni trabaja la expresión de los genes."
+      },
+      {
+        "id": "C",
+        "texto": "Confunde tener un gen con expresarlo; conviene mostrar que la prueba de ADN da el mismo perfil con sangre o saliva y contrastarlo con las proteínas de cada célula.",
+        "explicacion": "Correcta. Todas las células con núcleo de una persona provienen del cigoto por mitosis y conservan el mismo genoma; lo que cambia es qué genes se expresan. La prueba forense, que identifica a una persona con cualquier tejido, es evidencia de ese genoma común, y el contraste con proteínas propias de cada célula (como la insulina en el páncreas) muestra la expresión diferencial."
+      },
+      {
+        "id": "D",
+        "texto": "Confunde la mitosis con la división meiótica; conviene mostrar que la prueba de ADN da el mismo perfil con sangre o saliva y contrastarlo con las proteínas de cada célula.",
+        "explicacion": "Incorrecta. La evidencia es adecuada, pero el diagnóstico no corresponde: el estudiante no confunde los tipos de división celular; su razón es que las células fabrican proteínas distintas, es decir, supone que tener un gen equivale a usarlo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el estudiante deduce que el ADN es distinto porque las proteínas son distintas. Concepto: todas las células somáticas de una persona tienen el mismo genoma; cada tipo celular expresa genes diferentes. Didáctica: la prueba de ADN que da el mismo perfil con distintos tejidos es evidencia del genoma común, y el contraste con las proteínas de cada célula explica la diferencia. Los distractores atribuyen la idea a una confusión entre mitosis y meiosis, que el estudiante no plantea, o usan una extracción de ADN que no compara tejidos de una misma persona.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CNA-020",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Ciencia, tecnología y sociedad",
+    "subtema": "Didáctica: argumentación sobre la manipulación genética",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Ciencia, tecnología y sociedad, octavo a noveno grado",
+      "Desarrollo compromisos personales y sociales, octavo a noveno grado"
+    ],
+    "texto_fuente": "Argumento las ventajas y desventajas de la manipulación genética. [...] Escucho activamente a mis compañeros y compañeras, reconozco otros puntos de vista, los comparo con los míos y puedo modificar lo que pienso ante argumentos más sólidos.",
+    "pregunta": "En 9.°, el docente quiere usar el caso de un maíz transgénico resistente a insectos para que los estudiantes argumenten ventajas y desventajas de la manipulación genética y estén dispuestos a cambiar de opinión ante mejores argumentos. ¿Qué actividad debe escoger?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Votar a favor o en contra al inicio, ver un documental sobre el maíz transgénico y votar de nuevo para contar cuántos estudiantes cambiaron de postura.",
+        "explicacion": "Incorrecta. Es activa, pero mide opiniones sin argumentos: un solo documental, sin valorar su calidad ni contrastarlo con otras fuentes, puede cambiar el voto sin que nadie argumente."
+      },
+      {
+        "id": "B",
+        "texto": "Asignar a cada uno la postura contraria a la suya, prepararla con fuentes de ambos lados y, tras el debate, escribir qué argumento ajeno le pesó más.",
+        "explicacion": "Correcta. Defender la postura contraria obliga a construir los argumentos del otro lado; preparar con fuentes de ambas posturas lleva a sopesar ventajas y desventajas, y escribir qué argumento de otros pesó más hace que cada estudiante examine si debe modificar lo que piensa."
+      },
+      {
+        "id": "C",
+        "texto": "Organizar un debate en el que cada grupo defienda la postura que eligió al comienzo y declarar ganador al grupo que logre presentar más argumentos.",
+        "explicacion": "Incorrecta. Es activa, pero premia la cantidad de argumentos y no su calidad ni su evidencia; además, fija a cada grupo en su postura inicial, lo contrario de estar dispuesto a modificarla."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir que cada estudiante reúna tres artículos que respalden su opinión sobre el maíz transgénico y la sustente ante el curso con los datos que halló.",
+        "explicacion": "Incorrecta. Es activa y usa fuentes, pero solo busca lo que confirma la opinión previa: el estudiante argumenta un solo lado (ventajas o desventajas) y no confronta los argumentos contrarios."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el docente busca argumentación sobre ventajas y desventajas y apertura a cambiar de opinión. Concepto: argumentar exige razones apoyadas en fuentes de las distintas posturas; la apertura se trabaja al ponerse en el lugar del otro y examinar qué argumentos ajenos son más sólidos. Conclusión: la actividad de defender la postura contraria con fuentes de ambos lados y reflexionar por escrito. Los distractores miden opiniones sin argumentos, premian la cantidad y fijan posturas, o buscan solo fuentes que confirman la opinión previa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
   }
 ]
