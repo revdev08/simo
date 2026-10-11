@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "TC-MAT-021",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento métrico y sistemas de medidas",
+    "subtema": "Saber: conversión de unidades de área en una superficie compuesta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Identifico relaciones entre distintas unidades utilizadas para medir cantidades de la misma magnitud.",
+    "pregunta": "Para una clase de grado séptimo sobre unidades de área, un docente de matemáticas prepara este problema: el piso de un aula rectangular mide 6 m de largo y 4,5 m de ancho; en una esquina hay un mueble fijo cuya base rectangular mide 120 cm por 90 cm, y esa parte del piso no se cubre. El resto se va a cubrir con baldosas cuadradas de 30 cm de lado, colocadas sin espacios entre ellas y sin cortes. Antes de llevarlo al aula, el docente lo resuelve para tener la respuesta de referencia. ¿Cuántas baldosas se necesitan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "293 baldosas",
+        "explicacion": "Incorrecta. Calcula bien las 300 baldosas del piso completo, pero bajo el mueble cuenta 4 baldosas a lo largo (120 ÷ 30) y 3 a lo ancho (90 ÷ 30) y las suma en lugar de multiplicarlas: resta 7 y no 12. Cuenta una fila y una columna, pero no la superficie."
+      },
+      {
+        "id": "B",
+        "texto": "286 baldosas",
+        "explicacion": "Incorrecta. Resta las baldosas que caben a lo largo del contorno del mueble: su perímetro es 2 × (120 + 90) = 420 cm, y 420 ÷ 30 = 14. Confunde el perímetro de la base con su área."
+      },
+      {
+        "id": "C",
+        "texto": "288 baldosas",
+        "explicacion": "Correcta. El piso mide 600 × 450 = 270.000 cm² y el mueble ocupa 120 × 90 = 10.800 cm²; quedan 259.200 cm², y cada baldosa mide 30 × 30 = 900 cm²: 259.200 ÷ 900 = 288. Por filas: el piso completo lleva 20 × 15 = 300 baldosas y bajo el mueble caben 4 × 3 = 12."
+      },
+      {
+        "id": "D",
+        "texto": "180 baldosas",
+        "explicacion": "Incorrecta. Convierte los 10.800 cm² del mueble en 10,8 m² dividiendo entre 1.000. Como 1 m = 100 cm, 1 m² = 100² cm² = 10.000 cm², así que el mueble ocupa 1,08 m². Con el error queda (27 − 10,8) ÷ 0,09 = 180."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: hay que descontar la base del mueble, dada en centímetros, de un piso dado en metros. Regla: para comparar superficies hay que expresarlas en la misma unidad de área, y el factor lineal 100 se eleva al cuadrado: 1 m² = 10.000 cm². Cálculo: 27 m² − 1,08 m² = 25,92 m², y 25,92 ÷ 0,09 = 288; por filas, 20 × 15 − 4 × 3 = 288. Conclusión: se necesitan 288 baldosas. Los distractores suman en vez de multiplicar, restan el perímetro o convierten las unidades de área con el factor 1.000.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Didáctica: razonamiento aditivo en problemas de semejanza",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
+    "pregunta": "En una clase de grado séptimo, una docente de matemáticas propone calcular la altura del asta de la bandera del colegio. A la misma hora, un estudiante de 1,60 m de estatura proyecta una sombra de 2,40 m, y el asta, una sombra de 9,00 m. Camila responde que el asta mide 8,20 m y explica: «La sombra del estudiante es 0,80 m más larga que él, así que el asta mide 0,80 m menos que su sombra». ¿Qué interpretación del error de Camila y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantuvo constante la diferencia y no la razón; conviene que mida las sombras de compañeros de estatura parecida a la suya y las compare.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero los datos no discriminan: entre personas de estatura parecida, la regla aditiva y la proporcional predicen casi lo mismo. Con un compañero de 1,55 m, Camila esperaría una sombra de 2,35 m y la razón da 2,325 m: 2,5 cm de diferencia, menos que el error de medición. Hacen falta objetos de tamaños muy distintos."
+      },
+      {
+        "id": "B",
+        "texto": "Mantuvo fija una diferencia donde lo fijo es un cociente; conviene que mida alturas y sombras de objetos de distinto tamaño y compare ambas relaciones.",
+        "explicacion": "Correcta. Camila usa un razonamiento aditivo, error típico en problemas de semejanza. Los triángulos que forman cada objeto y su sombra a la misma hora son semejantes, así que se conserva la razón altura/sombra: 1,60/2,40 = 2/3, y el asta mide 9 × 2/3 = 6 m. Al medir varios objetos verá que la diferencia cambia y el cociente no: con su regla, un objeto de 0,40 m tendría una sombra de 1,20 m, pero la real es de 0,60 m."
+      },
+      {
+        "id": "C",
+        "texto": "Usó una diferencia en vez de un cociente; conviene mostrarle en el tablero la proporción 1,60/2,40 = h/9 y pedirle que la resuelva con otros datos.",
+        "explicacion": "Incorrecta. El diagnóstico es acertado, pero la intervención es expositiva: Camila recibe la proporción hecha y la aplica, sin ver por qué su diferencia constante falla. La idea aditiva queda en pie y reaparecerá en otros problemas de proporcionalidad."
+      },
+      {
+        "id": "D",
+        "texto": "Planteó la semejanza, pero invirtió la razón entre alturas y sombras; conviene que mida varios objetos y verifique cuál de las dos razones se mantiene constante.",
+        "explicacion": "Incorrecta. Invertir la razón daría 9 × 2,40/1,60 = 13,5 m, no 8,20 m: Camila no planteó ninguna razón, sino una diferencia. La tarea parte de una lectura equivocada de su error y la pone a elegir entre dos razones, sin confrontar la idea aditiva."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Camila mantiene constante la diferencia de 0,80 m entre altura y sombra. Regla: los triángulos que forman los objetos y sus sombras a la misma hora son semejantes, de modo que se conserva la razón altura/sombra (1,60/2,40 = 2/3). Cálculo: 9,00 × 2/3 = 6,00 m, no 8,20 m. Conclusión: es un error de razonamiento aditivo, y la intervención debe contrastar la diferencia con el cociente midiendo objetos de tamaños muy distintos. Los distractores miden objetos que no distinguen las dos reglas, exponen la proporción o diagnostican una razón invertida.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Saber: homotecia de razón negativa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
+    "pregunta": "Una docente de grado séptimo prepara la clave de una actividad sobre homotecias. En el plano cartesiano, el triángulo ABC tiene vértices A(1, 1), B(3, 1) y C(1, 2), y se le aplica una homotecia con centro en el origen O(0, 0) y razón −2. ¿Qué afirmación sobre la imagen A'B'C' es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "B' queda en (−6, 2) y el área de A'B'C' es de 4 unidades cuadradas, porque la razón negativa refleja la figura sobre el eje y y la amplía.",
+        "explicacion": "Incorrecta. Acierta en que el área se multiplica por (−2)² = 4, pero interpreta el signo de la razón como una reflexión sobre un eje. Con razón negativa, cada imagen queda al otro lado del centro O, sobre la recta que une O con el punto: B(3, 1) va a (−6, −2), no a (−6, 2)."
+      },
+      {
+        "id": "B",
+        "texto": "B' queda en (−6, −2) y el área de A'B'C' es de 2 unidades cuadradas, porque cada lado de la imagen mide el doble del lado original.",
+        "explicacion": "Incorrecta. Ubica bien los vértices, pero escala el área con el mismo factor que las longitudes. Si las longitudes se multiplican por |k| = 2, el área se multiplica por k² = 4 y pasa de 1 a 4 unidades cuadradas. Es el error típico de confundir el escalamiento lineal con el de superficie."
+      },
+      {
+        "id": "C",
+        "texto": "B' queda en (−6, 2) y el área de A'B'C' es de 2 unidades cuadradas, porque la figura se refleja sobre el eje y y sus medidas se duplican.",
+        "explicacion": "Incorrecta. Combina dos errores: toma el signo negativo como una reflexión sobre el eje y y aplica a la superficie el factor de las longitudes. La imagen tiene B' en (−6, −2) y área de 4 unidades cuadradas."
+      },
+      {
+        "id": "D",
+        "texto": "B' queda en (−6, −2) y el área de A'B'C' es de 4 unidades cuadradas, porque equivale a girar ABC 180° alrededor de O y ampliarlo.",
+        "explicacion": "Correcta. Cada punto P va a −2·P: A'(−2, −2), B'(−6, −2) y C'(−2, −4). Una homotecia de razón negativa equivale a la de razón |k| compuesta con un giro de 180° alrededor del centro. El área de ABC es (2 × 1)/2 = 1 y la de la imagen es 1 × (−2)² = 4."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: centro O(0, 0) y razón −2. Regla: la homotecia lleva cada punto P a k·P; con k negativo la imagen queda al otro lado del centro (equivale a un giro de 180° y una ampliación de factor |k|); las longitudes se multiplican por |k| y las áreas por k². Cálculo: B(3, 1) → (−6, −2); el área pasa de 1 a 4 unidades cuadradas. Conclusión: B' en (−6, −2) y área de 4 unidades cuadradas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-024",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento métrico y sistemas de medidas",
+    "subtema": "Didáctica: factor de escala en volúmenes (maquetas)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas que involucren factores escalares (diseño de maquetas, mapas).",
+    "pregunta": "En grado séptimo, los estudiantes construyen una maqueta del tanque de agua del colegio a escala 1:20, es decir, cada longitud de la maqueta es 1/20 de la longitud real. El tanque real tiene una capacidad de 8.000 litros. Andrés concluye que la maqueta tendrá una capacidad de 400 litros, «porque en una escala todo se divide entre 20». ¿Qué interpretación del error y qué tarea son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aplica a la capacidad un factor que vale para las longitudes; conviene que arme cubos de arista 1 y 2 con cubitos y compare cuántos usa, antes de volver al tanque.",
+        "explicacion": "Correcta. Andrés extiende a un volumen el factor lineal 1/20. Si las longitudes se dividen entre 20, los volúmenes se dividen entre 20³ = 8.000: a la maqueta le cabe 8.000 ÷ 8.000 = 1 litro. Con cubos de arista 1 y 2 (1 y 8 cubitos) descubre que al duplicar las aristas el volumen se multiplica por 8, y puede generalizar al cubo del factor de escala."
+      },
+      {
+        "id": "B",
+        "texto": "Aplica a la capacidad el factor de las longitudes; conviene corregirlo con la regla de dividir la capacidad entre 20², pues el agua se reparte sobre la base del tanque.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la corrección enseña otra regla errada: el cuadrado del factor corresponde a las áreas, no a los volúmenes. Con 20² la maqueta tendría 20 litros, cuando le cabe 1 litro. Además, dar una regla hecha no ataca la idea de fondo."
+      },
+      {
+        "id": "C",
+        "texto": "Aplica a la capacidad el factor lineal; conviene que compare dos vasos de igual base, uno con el doble de altura, y vea cuánta agua cabe en cada uno.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero los recipientes no son semejantes: solo cambia la altura, y entonces la capacidad sí se duplica. La experiencia confirma la idea de Andrés de que el volumen cambia en el mismo factor que una longitud. En cuerpos semejantes cambian todas las dimensiones a la vez, y el volumen se multiplica por el cubo del factor."
+      },
+      {
+        "id": "D",
+        "texto": "Confunde los litros con los decímetros cúbicos; conviene que llene con agua un cubo de 1 dm de arista y mida su capacidad con una jarra graduada.",
+        "explicacion": "Incorrecta. La experiencia sirve para ver que 1 dm³ = 1 L, pero esa no es la fuente del error: Andrés no cambió de unidad, sino que aplicó a un volumen el factor de las longitudes. Llenar el cubo no le muestra por qué la capacidad no se divide entre 20."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: una escala lineal de 1:20 aplicada a una capacidad de 8.000 L. Regla: en cuerpos semejantes, si las longitudes se multiplican por k, las áreas se multiplican por k² y los volúmenes por k³. Cálculo: 8.000 ÷ 20³ = 8.000 ÷ 8.000 = 1 L, no 400 L. Conclusión: el error es aplicar el factor lineal a un volumen; la tarea con cubitos permite construir la relación con k³. Las demás opciones enseñan una regla errada (k²), usan recipientes que no son semejantes o atienden un problema de unidades que no existe.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Saber: teorema de Pitágoras en el espacio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Reconozco y contrasto propiedades y relaciones geométricas utilizadas en demostración de teoremas básicos (Pitágoras y Tales). [...] Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
+    "pregunta": "Para una clase de grado noveno, un docente lleva una caja de cartón con forma de prisma rectangular de 30 cm de ancho, 40 cm de fondo y 120 cm de alto, y pregunta cuál es la varilla recta y delgada más larga que cabe completamente dentro de la caja cerrada. Antes de la clase, verifica la respuesta. ¿Cuál es esa longitud?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unos 126,5 cm",
+        "explicacion": "Incorrecta. Es la diagonal de la cara de 40 cm × 120 cm: √(40² + 120²) = √16.000 ≈ 126,5 cm. Quien la elige razona en el plano y no ve que la varilla puede ir de un vértice al opuesto atravesando el interior de la caja."
+      },
+      {
+        "id": "B",
+        "texto": "130 cm",
+        "explicacion": "Correcta. La diagonal de la base mide √(30² + 40²) = 50 cm; con la altura forma un triángulo rectángulo cuya hipotenusa es la diagonal del prisma: √(50² + 120²) = √16.900 = 130 cm. Equivale a √(30² + 40² + 120²)."
+      },
+      {
+        "id": "C",
+        "texto": "170 cm",
+        "explicacion": "Incorrecta. Suma la diagonal de la base (50 cm) y la altura (120 cm): es la longitud de un recorrido quebrado por el fondo y una arista, no la de un segmento recto. Esos dos tramos son los catetos de un triángulo rectángulo, y la varilla es su hipotenusa."
+      },
+      {
+        "id": "D",
+        "texto": "Unos 123,7 cm",
+        "explicacion": "Incorrecta. Es la diagonal de la cara de 30 cm × 120 cm: √(30² + 120²) = √15.300 ≈ 123,7 cm. Además de quedarse en una cara, toma la de menor diagonal."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la varilla más larga une dos vértices opuestos de la caja (diagonal del prisma). Regla: aplicando dos veces el teorema de Pitágoras, d² = a² + b² + c². Cálculo: diagonal de la base √(30² + 40²) = 50 cm; diagonal del prisma √(50² + 120²) = 130 cm. Conclusión: 130 cm.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Didáctica: criterios de congruencia y caso ambiguo (LLA)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Aplico y justifico criterios de congruencias y semejanza entre triángulos en la resolución y formulación de problemas.",
+    "pregunta": "En grado noveno, un docente pide decidir si dos triángulos son congruentes con estos datos: en ABC y DEF, AB = DE = 7 cm, BC = EF = 5 cm, y el ángulo A y el ángulo D miden 40°. Julián afirma: «Son congruentes por el criterio lado-ángulo-lado, porque tienen dos lados y un ángulo iguales». ¿Cuál es la valoración correcta de la respuesta de Julián y la intervención más pertinente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acierta en la conclusión, aunque nombra mal el criterio: dos lados y un ángulo iguales bastan; conviene que aprenda a llamarlo lado-lado-ángulo.",
+        "explicacion": "Incorrecta. Dos lados y un ángulo no comprendido entre ellos (LLA) no son un criterio de congruencia. Con BC = 5, AB = 7 y A = 40°, sen C = 7 · sen 40° / 5 ≈ 0,90, de donde C ≈ 64° o C ≈ 116°: hay dos triángulos posibles, con el tercer lado de unos 7,5 cm o de unos 3,2 cm."
+      },
+      {
+        "id": "B",
+        "texto": "Acierta en la conclusión, aunque nombra mal el criterio: el ángulo dado se opone al lado menor, y eso asegura un único triángulo; conviene formalizar esa condición.",
+        "explicacion": "Incorrecta. La condición está invertida: dos lados y un ángulo no comprendido determinan un único triángulo cuando el ángulo se opone al mayor de los dos lados. Aquí el ángulo de 40° se opone a BC = 5 cm, el menor, y por eso aparece el caso ambiguo."
+      },
+      {
+        "id": "C",
+        "texto": "Se equivoca: el ángulo de 40° no está comprendido entre esos lados y los datos admiten dos triángulos distintos; conviene que construya ambos con regla y compás.",
+        "explicacion": "Correcta. En el criterio LAL el ángulo debe estar formado por los dos lados; el comprendido entre AB y BC es B, no A. Con los datos, sen C = 7 · sen 40° / 5 ≈ 0,90 admite C ≈ 64° y C ≈ 116° (y 40° + 116° < 180°), así que hay dos triángulos no congruentes, con el tercer lado de unos 7,5 cm o de unos 3,2 cm. Construirlos con regla y compás hace visible el caso ambiguo."
+      },
+      {
+        "id": "D",
+        "texto": "Se equivoca: la congruencia exige comparar los tres lados, pues solo el criterio lado-lado-lado la garantiza; conviene que mida el tercer lado de cada triángulo.",
+        "explicacion": "Incorrecta. Acierta en que Julián se equivoca, pero cambia un error por otro: LAL y ALA también son criterios válidos, así que no hace falta conocer los tres lados. El problema está en que el ángulo dado no es el comprendido entre los lados iguales."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el ángulo de 40° (A = D) no está entre los lados AB y BC, sino opuesto a BC, el menor de los dos. Regla: el criterio LAL exige el ángulo comprendido; con dos lados y un ángulo no comprendido puede haber dos triángulos. Cálculo: sen C = 7 · sen 40° / 5 ≈ 0,90, C ≈ 64° o 116°, ambos posibles. Conclusión: no puede afirmarse la congruencia, y construir los dos triángulos con regla y compás muestra por qué.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento métrico y sistemas de medidas",
+    "subtema": "Saber: volumen de cuerpos compuestos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, octavo a noveno grado"
+    ],
+    "texto_fuente": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+    "pregunta": "En una salida de campo, una docente de grado noveno toma las medidas de un silo para plantear un problema: está formado por un cilindro de 3 m de diámetro y 4 m de altura, rematado por un cono de la misma base y 2 m de altura. Antes de proponerlo, la docente calcula el volumen total del silo. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "13,5π m³, unos 42,4 m³",
+        "explicacion": "Incorrecta. Calcula el cono como si fuera un cilindro de 2 m de altura (π · 1,5² · 2 = 4,5π) y omite el factor 1/3. Es el error de no distinguir el volumen del cono del de un cilindro de igual base y altura."
+      },
+      {
+        "id": "B",
+        "texto": "42π m³, unos 131,9 m³",
+        "explicacion": "Incorrecta. Usa el diámetro (3 m) como radio: π · 3² · 4 + (1/3) · π · 3² · 2 = 36π + 6π = 42π. La composición del cuerpo está bien planteada, pero el radio mal tomado cuadruplica el volumen."
+      },
+      {
+        "id": "C",
+        "texto": "11,25π m³, unos 35,3 m³",
+        "explicacion": "Incorrecta. Toma el cono como la mitad del cilindro de igual base y altura (2,25π) en lugar de un tercio. Es un error frecuente cuando la fórmula del cono se recuerda de forma aproximada y no se justifica."
+      },
+      {
+        "id": "D",
+        "texto": "10,5π m³, unos 33,0 m³",
+        "explicacion": "Correcta. El radio es 1,5 m. Cilindro: π · 1,5² · 4 = 9π m³. Cono: (1/3) · π · 1,5² · 2 = 1,5π m³. Total: 10,5π m³ ≈ 33,0 m³."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: diámetro de 3 m (radio de 1,5 m), cilindro de 4 m y cono de 2 m de altura. Regla: el volumen de un cuerpo compuesto es la suma de los volúmenes de sus partes; el del cilindro es πr²h y el del cono, (1/3)πr²h. Cálculo: 9π + 1,5π = 10,5π ≈ 33,0 m³. Conclusión: 10,5π m³.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-028",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento métrico y sistemas de medidas",
+    "subtema": "Didáctica: relación entre perímetro y área",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Utilizo técnicas y herramientas para la construcción de figuras planas y cuerpos con medidas dadas.",
+    "pregunta": "En grado sexto, varios estudiantes sostienen que «si dos rectángulos tienen el mismo perímetro, también tienen la misma área». El docente de matemáticas quiere partir de esa creencia para avanzar en la relación entre las dos medidas. ¿Qué tarea es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Formar con una cuerda de 24 cm, o en el geoplano, todos los rectángulos de lados enteros con ese contorno y comparar sus áreas en una tabla.",
+        "explicacion": "Correcta. Con un perímetro fijo de 24 cm, los rectángulos de lados enteros son 1 × 11, 2 × 10, 3 × 9, 4 × 8, 5 × 7 y 6 × 6, con áreas de 11, 20, 27, 32, 35 y 36 cm². La tabla refuta la idea con evidencia que producen los propios estudiantes y les permite conjeturar que el área crece a medida que el rectángulo se acerca al cuadrado."
+      },
+      {
+        "id": "B",
+        "texto": "Medir el largo y el ancho del cuaderno, del pupitre, de la puerta y del tablero, y calcular en una tabla el perímetro y el área de cada uno de ellos.",
+        "explicacion": "Incorrecta. Es una tarea activa de medición, pero los objetos tienen perímetros distintos, así que no pone a prueba la creencia: para refutarla hay que comparar figuras de igual perímetro. Además, en objetos así el más grande suele ganar en las dos medidas, lo que puede reforzar la idea."
+      },
+      {
+        "id": "C",
+        "texto": "Formar en el geoplano un rectángulo de 2 × 3, ampliarlo a 4 × 6 y anotar en una tabla cómo cambian el perímetro y el área al duplicar los lados.",
+        "explicacion": "Incorrecta. Trabaja otra relación valiosa (al duplicar los lados, el perímetro se duplica, de 10 a 20, y el área se cuadruplica, de 6 a 24), pero cambia el perímetro: no compara rectángulos de igual contorno, que es lo que afirma la creencia."
+      },
+      {
+        "id": "D",
+        "texto": "Medir el perímetro y el área del salón y de la cancha del colegio y comparar cuál de los dos espacios es mayor en cada una de las dos medidas.",
+        "explicacion": "Incorrecta. Compara dos espacios en los que el mayor gana en perímetro y en área, de modo que la tarea apoya la idea de que las dos medidas van juntas en lugar de ponerla a prueba con un perímetro fijo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la creencia habla de rectángulos con el mismo perímetro. Regla didáctica: una creencia se confronta con una tarea que mantenga fija una medida y registre la otra, de modo que los estudiantes produzcan la evidencia. Con perímetro de 24 cm, las áreas van de 11 a 36 cm². Conclusión: construir los rectángulos de perímetro 24 y comparar sus áreas en una tabla. Las demás tareas son activas, pero comparan figuras de perímetros distintos o estudian otra relación.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Saber: ecuación de la circunferencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Resuelvo problemas en los que se usen las propiedades geométricas de figuras cónicas por medio de transformaciones de las representaciones algebraicas de esas figuras.",
+    "pregunta": "En grado décimo, una docente propone ubicar en un plano cartesiano, con unidades en metros, la zona que moja un aspersor de la huerta escolar. El borde de esa zona está descrito por la ecuación x² + y² − 6x + 4y − 12 = 0. Antes de revisar los trabajos, la docente resuelve el ejercicio. ¿En qué punto está el aspersor y cuál es su alcance?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En (−3, 2), con un alcance de 5 metros",
+        "explicacion": "Incorrecta. Calcula bien el radio, pero lee el centro con los signos que aparecen dentro de los paréntesis: de (x − 3)² + (y + 2)² = 25 el centro es (3, −2), no (−3, 2)."
+      },
+      {
+        "id": "B",
+        "texto": "En (3, −2), con un alcance de unos 3,46 metros",
+        "explicacion": "Incorrecta. Ubica bien el centro, pero al completar cuadrados no suma 9 y 4 al lado derecho y deja (x − 3)² + (y + 2)² = 12, de donde r = √12 ≈ 3,46. Lo que se agrega a la izquierda debe agregarse a la derecha: 12 + 9 + 4 = 25."
+      },
+      {
+        "id": "C",
+        "texto": "En (3, −2), con un alcance de 5 metros",
+        "explicacion": "Correcta. Completando cuadrados: (x² − 6x + 9) + (y² + 4y + 4) = 12 + 9 + 4, es decir, (x − 3)² + (y + 2)² = 25. El centro es (3, −2) y el radio, √25 = 5 m. Por ejemplo, (8, −2) y (3, 3) satisfacen la ecuación."
+      },
+      {
+        "id": "D",
+        "texto": "En (−3, 2), con un alcance de unos 3,46 metros",
+        "explicacion": "Incorrecta. Combina los dos errores típicos: lee el centro con los signos de los paréntesis y no compensa en el lado derecho los términos que agregó al completar cuadrados."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ecuación general x² + y² − 6x + 4y − 12 = 0. Regla: completando cuadrados se llega a la forma (x − h)² + (y − k)² = r², con centro (h, k) y radio r. Cálculo: (x − 3)² + (y + 2)² = 12 + 9 + 4 = 25. Conclusión: el aspersor está en (3, −2) y su alcance es de 5 m.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Didáctica: elección de la razón trigonométrica",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+    "pregunta": "En grado décimo, un docente plantea: desde un punto del patio situado a 20 m de la base de la torre de la iglesia, la punta de la torre se ve con un ángulo de elevación de 35°. Se desprecia la estatura del observador y se dan los valores sen 35° ≈ 0,57; cos 35° ≈ 0,82 y tan 35° ≈ 0,70. Sofía responde que la torre mide 11,4 m. ¿Qué error cometió Sofía y cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Usó el coseno en lugar de la tangente del ángulo; conviene que dibuje el triángulo, rotule cada lado según su posición respecto del ángulo y elija la razón que relaciona los datos.",
+        "explicacion": "Incorrecta. Con el coseno habría obtenido 20 × 0,82 = 16,4 m, no 11,4 m: el diagnóstico no corresponde a su respuesta. La intervención es adecuada, pero parte de una lectura equivocada del error."
+      },
+      {
+        "id": "B",
+        "texto": "Tomó los 20 m como hipotenusa y usó el seno; conviene que verifique con el teorema de Pitágoras que los tres lados de su triángulo sean coherentes entre sí.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto (20 × 0,57 = 11,4), pero la comprobación no detecta el error: en el triángulo que ella imaginó, con hipotenusa de 20 m, los catetos miden unos 11,4 m y 16,4 m, y 11,4² + 16,4² ≈ 400 = 20². Pitágoras confirma que su triángulo es coherente, no que corresponda a la situación."
+      },
+      {
+        "id": "C",
+        "texto": "Usó el coseno en lugar de la tangente del ángulo; conviene que verifique con el teorema de Pitágoras que los tres lados de su triángulo sean coherentes entre sí.",
+        "explicacion": "Incorrecta. Con el coseno habría obtenido 20 × 0,82 = 16,4 m, no 11,4 m: el diagnóstico no corresponde a su respuesta. Además, Pitágoras solo prueba la coherencia interna del triángulo que ella dibujó y no revela que la distancia horizontal no es la hipotenusa."
+      },
+      {
+        "id": "D",
+        "texto": "Tomó los 20 m como hipotenusa y usó el seno; conviene que dibuje el triángulo, rotule cada lado según su posición respecto del ángulo y elija la razón que relaciona los datos.",
+        "explicacion": "Correcta. 20 × 0,57 = 11,4: Sofía usó el seno, tratando la distancia horizontal como hipotenusa. Esa distancia es el cateto adyacente al ángulo y la altura es el cateto opuesto, así que la razón que los relaciona es la tangente: 20 × 0,70 = 14 m. Rotular los lados respecto del ángulo ataca la causa del error y sirve en cualquier configuración."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: 11,4 = 20 × 0,57, es decir, Sofía usó el seno con los 20 m como hipotenusa. Regla: en el triángulo rectángulo, la distancia horizontal es el cateto adyacente al ángulo de elevación y la altura es el cateto opuesto; los relaciona la tangente. Cálculo: 20 × 0,70 = 14 m. Conclusión: el error está en identificar los lados, y la intervención es rotularlos respecto del ángulo antes de elegir la razón. Comprobar con Pitágoras no sirve, porque su triángulo es coherente aunque no sea el de la situación.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Saber: mediatriz como lugar geométrico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Reconozco y describo curvas y o lugares geométricos.",
+    "pregunta": "Un docente de grado décimo plantea esta situación: en un plano cartesiano con unidades en hectómetros, dos veredas están ubicadas en A(−1, 1) y B(3, 9). La junta de acción comunal quiere instalar un tanque de agua que quede a la misma distancia de las dos veredas. Antes de la clase, el docente determina la ecuación del conjunto de todas las ubicaciones posibles del tanque. ¿Cuál es esa ecuación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "x + 2y = 11",
+        "explicacion": "Correcta. Los puntos que equidistan de A y B forman la mediatriz del segmento AB: pasa por el punto medio M(1, 5) y es perpendicular a AB, cuya pendiente es 8/4 = 2, así que su pendiente es −1/2. Entonces y − 5 = −(1/2)(x − 1), es decir, x + 2y = 11. Por ejemplo, el punto (11, 0) está a √145 hm de A y de B."
+      },
+      {
+        "id": "B",
+        "texto": "2x + y = 7",
+        "explicacion": "Incorrecta. Pasa por el punto medio, pero con pendiente −2: cambia el signo de la pendiente de AB sin tomar el recíproco. Es el error de recordar a medias la condición de perpendicularidad m₁ · m₂ = −1."
+      },
+      {
+        "id": "C",
+        "texto": "x − 2y = −9",
+        "explicacion": "Incorrecta. Pasa por el punto medio, pero con pendiente 1/2: toma el recíproco sin cambiar el signo. La recta no es perpendicular a AB y, salvo M, sus puntos no equidistan de A y B; por ejemplo, (−9, 0) está a √65 hm de A y a 15 hm de B."
+      },
+      {
+        "id": "D",
+        "texto": "x + 2y = 10",
+        "explicacion": "Incorrecta. Tiene la pendiente correcta, −1/2, pero pasa por (2, 4), que resulta de calcular el punto medio como la mitad de las diferencias, ((3 − (−1))/2, (9 − 1)/2), en lugar del promedio de las coordenadas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el tanque debe equidistar de A(−1, 1) y B(3, 9). Regla: el lugar geométrico de los puntos que equidistan de dos puntos es la mediatriz del segmento que los une, perpendicular a él por su punto medio. Cálculo: M = (1, 5); pendiente de AB = 2; pendiente perpendicular = −1/2; y − 5 = −(1/2)(x − 1), de donde x + 2y = 11. Conclusión: x + 2y = 11.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-032",
+    "version": 3,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento métrico y sistemas de medidas",
+    "subtema": "Didáctica: rapidez media como razón",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
+    "pregunta": "En grado once, un docente plantea: un bus va de un municipio a otro a una rapidez constante de 60 km/h y regresa por la misma vía a 40 km/h. ¿Cuál fue su rapidez media en el viaje de ida y regreso? La mayoría del curso responde 50 km/h. ¿Qué interpretación de esa respuesta y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La respuesta es correcta, pues se promedian las dos rapideces del viaje; conviene que la comprueben con una hora de ida y una hora de regreso.",
+        "explicacion": "Incorrecta. Valida el error con una comprobación que lo confirma: si cada trayecto durara una hora, el bus recorrería 60 km de ida y 40 km de regreso, algo imposible por la misma vía. Tiempos iguales es justo el caso en que el promedio simple coincide con la rapidez media; con distancias iguales, la media es 48 km/h."
+      },
+      {
+        "id": "B",
+        "texto": "Promediaron como si el bus viajara igual tiempo a cada rapidez; conviene que fijen una distancia, hallen la duración de cada trayecto y usen los totales.",
+        "explicacion": "Correcta. La rapidez media es la distancia total dividida entre el tiempo total, y el promedio simple de las rapideces solo coincide con ella si los tiempos son iguales. Con 120 km por trayecto, los estudiantes obtienen 2 h y 3 h, y 240 ÷ 5 = 48 km/h; el resultado no depende de la distancia elegida (es la media armónica de 60 y 40)."
+      },
+      {
+        "id": "C",
+        "texto": "Faltó ponderar cada rapidez por el trayecto recorrido; conviene que calculen una media ponderada que use como pesos las distancias de ida y de regreso.",
+        "explicacion": "Incorrecta. Ponderar por distancias iguales devuelve el mismo 50 km/h: la ponderación correcta es por los tiempos, no por las distancias. La intervención reproduce el error con un procedimiento más elaborado."
+      },
+      {
+        "id": "D",
+        "texto": "Les faltó representar el viaje; conviene que tracen la gráfica de la rapidez en función del tiempo y promedien las alturas de los dos tramos horizontales.",
+        "explicacion": "Incorrecta. La gráfica rapidez-tiempo es una buena representación, pero promediar las alturas de los tramos sin atender a su duración vuelve a dar 50 km/h. En esa gráfica la distancia es el área bajo cada tramo, y la rapidez media es el área total (240 km, con 120 km por trayecto) dividida entre el tiempo total (5 h): 48 km/h."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: distancias iguales recorridas a 60 y a 40 km/h. Regla: la rapidez media es la razón entre la distancia total y el tiempo total, no el promedio de las rapideces. Cálculo con 120 km por trayecto: 2 h + 3 h = 5 h; 240 ÷ 5 = 48 km/h. Conclusión: los estudiantes promediaron como si los tiempos fueran iguales; la intervención es fijar una distancia y razonar con los tiempos. Los distractores vuelven a 50 km/h: suponen tiempos iguales, ponderan por distancias o promedian alturas en la gráfica sin atender a la duración.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-033",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: gráficas engañosas y puntos porcentuales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Reconozco cómo diferentes maneras de presentación de información pueden originar distintas interpretaciones.",
+    "pregunta": "Un docente de grado noveno lleva a clase una gráfica de barras publicada por una empresa de servicios públicos. La gráfica muestra que la satisfacción de los usuarios pasó de 84 % en 2025 a 91 % en 2026, y su eje vertical empieza en 80 % y termina en 92 %. Antes de la discusión, el docente prepara la lectura correcta de la gráfica. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las barras reflejan bien el cambio, porque ambas parten del mismo valor del eje: la satisfacción de los usuarios creció un 175 % de un año a otro.",
+        "explicacion": "Incorrecta. Que ambas barras partan del mismo valor no basta: al empezar el eje en 80 %, cada barra representa solo el exceso sobre 80 (4 y 11 unidades). El 175 % es el crecimiento de la barra, (11 − 4)/4, no el de la satisfacción."
+      },
+      {
+        "id": "B",
+        "texto": "Las barras exageran el cambio; frente a 2025, la satisfacción de los usuarios aumentó un 7 %, la diferencia entre los dos porcentajes publicados.",
+        "explicacion": "Incorrecta. Acierta en que la gráfica exagera, pero confunde puntos porcentuales con porcentaje: 91 − 84 = 7 son puntos porcentuales. El aumento relativo frente a 2025 es 7/84 ≈ 8,3 %, no 7 %."
+      },
+      {
+        "id": "C",
+        "texto": "Las barras reflejan bien el cambio, pues el eje está rotulado y se leen los valores; la satisfacción subió 7 puntos porcentuales, cerca de un 8,3 %.",
+        "explicacion": "Incorrecta. Las cifras son correctas, pero la lectura de la gráfica no: un eje rotulado permite leer los valores, pero en un diagrama de barras la impresión la da la longitud de las barras, y al empezar el eje en 80 % la barra de 2026 mide 2,75 veces la de 2025. Confunde una escala legible con una representación proporcional."
+      },
+      {
+        "id": "D",
+        "texto": "Las barras exageran el cambio, pues una mide casi el triple que la otra; la satisfacción subió 7 puntos porcentuales, cerca de un 8,3 %.",
+        "explicacion": "Correcta. Con el eje desde 80 %, las barras miden 4 y 11 unidades (razón 2,75), lo que sugiere casi una triplicación. La satisfacción subió 91 − 84 = 7 puntos porcentuales, que respecto del 84 % inicial es un aumento relativo de 7/84 ≈ 8,3 %."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el eje vertical empieza en 80 %, no en 0. Regla: en una gráfica de barras la longitud debe ser proporcional al valor; si el eje se trunca, la razón entre las barras (11/4 = 2,75) exagera la diferencia, aunque el eje esté rotulado. Cálculo: 91 − 84 = 7 puntos porcentuales; 7/84 ≈ 8,3 % de aumento relativo. Conclusión: la gráfica exagera el cambio, que fue de 7 puntos porcentuales. Los distractores toman la gráfica por fiel o confunden puntos porcentuales con porcentaje.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: mediana y asimetría",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
+    "pregunta": "En grado octavo, un docente pide hallar la media y la mediana de los tiempos, en minutos, que diez estudiantes tardan en llegar al colegio: 15, 12, 58, 20, 15, 10, 25, 12, 18, 15. Valentina responde: «La media es 20 y la mediana es 12,5; entonces el tiempo típico está entre 12,5 y 20 minutos». ¿Qué interpretación del trabajo de Valentina y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No ordenó los datos antes de buscar el centro; conviene que retire el 58 por ser un dato atípico, ordene los nueve datos restantes y halle la mediana.",
+        "explicacion": "Incorrecta. Acierta en el diagnóstico, pero descarta un dato real sin justificación: el 58 es un tiempo válido y es justo lo que explica la diferencia entre la media (20) y la mediana (15). Sin él, la mediana sigue en 15 y la media baja a unos 15,8, y se pierde la discusión sobre el tiempo típico."
+      },
+      {
+        "id": "B",
+        "texto": "Buscó el valor central sin ordenar los datos; conviene que ubique los diez tiempos en una recta numérica y marque el punto medio entre el menor y el mayor.",
+        "explicacion": "Incorrecta. La recta ordena los datos, pero el punto medio entre el menor y el mayor es el rango medio, (10 + 58)/2 = 34, no la mediana. Cambia un error por otro, y el resultado depende todavía más del dato extremo."
+      },
+      {
+        "id": "C",
+        "texto": "Ubicó el centro de la lista sin ordenarla; conviene que ordene los tiempos, halle otra vez el valor central y explique por qué el 58 aleja la media de él.",
+        "explicacion": "Correcta. 12,5 es el promedio del quinto y el sexto dato de la lista sin ordenar (15 y 10). Ordenados (10, 12, 12, 15, 15, 15, 18, 20, 25, 58), los centrales son 15 y 15, y la mediana es 15. La media (20) es mayor porque el dato de 58 la arrastra: en una distribución asimétrica, la mediana describe mejor el tiempo típico."
+      },
+      {
+        "id": "D",
+        "texto": "Promedió los dos datos centrales, cuando con diez datos debía tomar el quinto; conviene repasar con ella la regla para hallar la mediana cuando n es par.",
+        "explicacion": "Incorrecta. Con un número par de datos la mediana es el promedio de los dos centrales; Valentina aplicó bien esa regla, pero sobre la lista sin ordenar. La intervención le enseñaría una regla falsa."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 12,5 = (15 + 10)/2, el quinto y el sexto dato en el orden en que se dieron. Regla: la mediana se calcula sobre los datos ordenados; con n par es el promedio de los dos centrales. Cálculo: ordenados, los centrales son 15 y 15; la mediana es 15 y la media es 20, desplazada por el dato de 58. Conclusión: el error es no ordenar; la intervención es ordenar y discutir el efecto del dato extremo sobre la media. Los distractores descartan el dato que explica la asimetría, confunden la mediana con el rango medio o enseñan una regla falsa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: medidas de dispersión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+    "pregunta": "Una docente de grado once compara los resultados de dos grupos en una prueba calificada de 0 a 10, para decidir en cuál conviene un refuerzo más diferenciado. Notas del grupo 11A: 1, 5, 5, 5, 5, 5, 9. Notas del grupo 11B: 1, 2, 3, 5, 7, 8, 9. ¿Qué conclusión sobre la dispersión de las notas es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los dos grupos tienen la misma dispersión, porque coinciden su rango, su media y su mediana.",
+        "explicacion": "Incorrecta. El rango solo usa los dos valores extremos y no describe cómo se distribuyen los demás; tener igual media y mediana tampoco implica igual dispersión. En 11A cinco notas coinciden con la media; en 11B, solo una."
+      },
+      {
+        "id": "B",
+        "texto": "11A es más homogéneo: con el mismo rango, su desviación estándar es menor que la de 11B.",
+        "explicacion": "Correcta. Ambos grupos tienen media 5, mediana 5 y rango 8, pero la suma de los cuadrados de las desviaciones es 32 en 11A y 58 en 11B: desviaciones estándar de √(32/7) ≈ 2,14 y √(58/7) ≈ 2,88. La desviación media confirma la conclusión (≈ 1,14 frente a ≈ 2,57)."
+      },
+      {
+        "id": "C",
+        "texto": "11B es más homogéneo, porque sus notas se reparten de manera pareja a lo largo del rango.",
+        "explicacion": "Incorrecta. Que las notas cubran todo el rango de forma pareja indica más dispersión, no menos: en 11B los datos se alejan más de la media (suma de cuadrados de 58 frente a 32 en 11A)."
+      },
+      {
+        "id": "D",
+        "texto": "11A es más disperso, porque sus notas extremas se alejan cuatro puntos del resto del grupo.",
+        "explicacion": "Incorrecta. Dos datos alejados llaman la atención, pero la dispersión depende de todas las distancias a la media: en 11A cinco de las siete notas están exactamente en la media, y su desviación estándar es menor."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: ambos grupos tienen el mismo rango (8), la misma media (5) y la misma mediana (5). Regla: el rango solo considera los extremos; la varianza y la desviación estándar consideran la distancia de cada dato a la media. Cálculo: suma de cuadrados de 32 en 11A y de 58 en 11B; desviaciones estándar de ≈ 2,14 y ≈ 2,88. Conclusión: 11A es más homogéneo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: espacio muestral de dos dados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Uso modelos (diagramas de árbol, por ejemplo) para discutir y predecir posibilidad de ocurrencia de un evento. [...] Conjeturo acerca del resultado de un experimento aleatorio usando proporcionalidad y nociones básicas de probabilidad.",
+    "pregunta": "En grado séptimo, al lanzar dos dados y sumar los puntos, varios estudiantes afirman que obtener 7 y obtener 12 son igual de probables, «porque cada suma es uno de los once resultados posibles». La docente de matemáticas quiere una tarea que les permita revisar esa idea. ¿Cuál es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construir la tabla de doble entrada de los 36 resultados, contar las casillas de cada suma y contrastar ese conteo con muchos lanzamientos del curso.",
+        "explicacion": "Correcta. La tabla de 6 × 6 muestra 36 resultados equiprobables: la suma 7 aparece en 6 casillas (probabilidad 6/36 = 1/6) y la suma 12 en una sola (1/36). Contrastar ese modelo con las frecuencias de muchos lanzamientos une el enfoque teórico y el frecuencial."
+      },
+      {
+        "id": "B",
+        "texto": "Lanzar los dados diez veces en cada grupo y concluir, a partir de esos resultados, cuál de las sumas es más probable y cuál es menos probable.",
+        "explicacion": "Incorrecta. Diez lanzamientos por grupo son muy pocos para estabilizar las frecuencias y, sin un modelo del espacio muestral, la conclusión puede confirmar o contradecir la idea por azar. La simulación sirve si se acumulan muchos lanzamientos y se contrasta con un modelo."
+      },
+      {
+        "id": "C",
+        "texto": "Simular en una hoja de cálculo 1.000 lanzamientos con un número entero aleatorio entre 2 y 12 y comparar la frecuencia de la suma 7 con la de la suma 12.",
+        "explicacion": "Incorrecta. Usa muchos datos, pero simula el modelo de los estudiantes: un número al azar entre 2 y 12 hace equiprobables las once sumas, y las frecuencias confirmarán el error. Hay que simular dos dados, de 1 a 6 cada uno, y sumar sus resultados."
+      },
+      {
+        "id": "D",
+        "texto": "Listar los 21 pares de caras que pueden salir sin tener en cuenta el orden, como 1-6 o 3-4, y contar cuántos de esos pares producen cada una de las sumas.",
+        "explicacion": "Incorrecta. Construye un espacio muestral, pero con resultados que no son equiprobables: el par 6-6 sale de una sola forma y el par 1-6, de dos (1-6 y 6-1). Con los 21 pares, el 7 tendría 3 casos y el 12, uno: una razón de 3 a 1, cuando la real es de 6 a 1 (6/36 frente a 1/36)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los estudiantes toman las 11 sumas como resultados igualmente probables. Regla: los resultados equiprobables son los 36 pares ordenados, y la probabilidad de cada suma depende de cuántos pares la producen. Cálculo: P(7) = 6/36 = 1/6; P(12) = 1/36. Conclusión: la tarea adecuada es construir la tabla de 36 resultados y contrastarla con muchos lanzamientos. Las demás tareas usan pocos lanzamientos, simulan el modelo equivocado o cuentan pares no ordenados, que no son equiprobables.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: probabilidad condicional y probabilidad total",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto conceptos de probabilidad condicional e independencia de eventos.",
+    "pregunta": "Para una clase de grado once, una docente plantea un problema con datos de su institución: el 60 % de los estudiantes llega en la ruta escolar y el 40 % por otros medios. Llega tarde el 10 % de quienes usan la ruta y el 25 % de quienes llegan por otros medios. Si se escoge al azar un estudiante entre los que llegaron tarde, ¿cuál es la probabilidad de que haya usado la ruta escolar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "0,100",
+        "explicacion": "Incorrecta. Es P(tarde | ruta), la probabilidad condicional invertida. Se pide P(ruta | tarde): la condición es haber llegado tarde, no haber usado la ruta. Confundir P(A | B) con P(B | A) es el error más común con la probabilidad condicional."
+      },
+      {
+        "id": "B",
+        "texto": "0,060",
+        "explicacion": "Incorrecta. Es P(ruta y tarde) = 0,6 × 0,10, la probabilidad de la intersección sobre todos los estudiantes. Falta dividir entre la probabilidad de llegar tarde (0,16), porque el estudiante se escoge entre los que llegaron tarde."
+      },
+      {
+        "id": "C",
+        "texto": "0,375",
+        "explicacion": "Correcta. P(tarde) = 0,6 × 0,10 + 0,4 × 0,25 = 0,06 + 0,10 = 0,16. Entonces P(ruta | tarde) = 0,06/0,16 = 0,375."
+      },
+      {
+        "id": "D",
+        "texto": "0,286",
+        "explicacion": "Incorrecta. Resulta de 0,10/(0,10 + 0,25): compara las tasas de retraso e ignora que el 60 % usa la ruta y el 40 % no. Es el error de descuidar las probabilidades previas, es decir, el peso de cada grupo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el estudiante se escoge entre los que llegaron tarde. Regla: P(ruta | tarde) = P(ruta ∩ tarde)/P(tarde), y P(tarde) se obtiene por probabilidad total (diagrama de árbol). Cálculo: P(tarde) = 0,06 + 0,10 = 0,16; 0,06/0,16 = 0,375. Conclusión: 0,375.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: independencia de eventos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Uso conceptos básicos de probabilidad (espacio muestral, evento, independencia, etc.).",
+    "pregunta": "En grado noveno, una docente presenta los resultados de una encuesta a 200 estudiantes: 80 juegan fútbol, 50 juegan baloncesto y 30 juegan los dos deportes. Pregunta cuál es la probabilidad de que un estudiante elegido al azar juegue ambos. Mateo responde: «P(fútbol) = 0,4 y P(baloncesto) = 0,25, entonces la probabilidad de los dos es 0,4 × 0,25 = 0,10». ¿Qué valoración y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Multiplicó sin comprobar que los eventos fueran independientes; conviene que lo verifique comparando P(fútbol) con P(baloncesto): si difieren, no son independientes.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero el criterio es falso: la independencia no exige probabilidades iguales. Dos eventos son independientes si P(A ∩ B) = P(A) · P(B), o si P(B | A) = P(B); que 0,4 y 0,25 sean distintos no dice nada sobre la relación entre los dos deportes."
+      },
+      {
+        "id": "B",
+        "texto": "Le faltó organizar la información; conviene que arme un árbol con 0,4 para fútbol y 0,25 para baloncesto en cada rama, y que lea el producto.",
+        "explicacion": "Incorrecta. El árbol es una buena herramienta, pero con 0,25 en todas las ramas de baloncesto supone que jugarlo no depende del fútbol, que es justo lo que está en duda: el árbol reproduce el 0,10. En la rama de fútbol corresponde P(baloncesto | fútbol) = 30/80 = 0,375, y 0,4 × 0,375 = 0,15."
+      },
+      {
+        "id": "C",
+        "texto": "Su respuesta es correcta si los estudiantes se eligen con reposición; conviene aclarar en el enunciado que el muestreo es con reemplazo para validar el producto.",
+        "explicacion": "Incorrecta. El muestreo con reposición hace independientes las extracciones sucesivas, pero no vuelve independientes dos características de un mismo estudiante. Jugar fútbol y jugar baloncesto siguen relacionados: P(baloncesto | fútbol) = 0,375, no 0,25."
+      },
+      {
+        "id": "D",
+        "texto": "Multiplicó sin comprobar que los eventos fueran independientes; conviene que compare P(baloncesto | fútbol) con P(baloncesto) y lea en los datos el valor pedido.",
+        "explicacion": "Correcta. Mateo aplica la regla del producto sin verificar la independencia. P(baloncesto | fútbol) = 30/80 = 0,375, mayor que P(baloncesto) = 0,25: los eventos son dependientes. La probabilidad pedida se lee en los datos: 30/200 = 0,15, distinta de 0,4 × 0,25 = 0,10."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la encuesta informa cuántos juegan los dos deportes (30 de 200). Regla: P(A ∩ B) = P(A) · P(B) solo si A y B son independientes; en general, P(A ∩ B) = P(A) · P(B | A). Cálculo: P(baloncesto | fútbol) = 30/80 = 0,375 ≠ 0,25; P(ambos) = 0,4 × 0,375 = 0,15. Conclusión: Mateo multiplicó sin verificar la independencia; la respuesta es 0,15. Los distractores validan el producto, lo reproducen con un árbol que supone la independencia o la comprueban con un criterio falso.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: conteo con combinaciones y probabilidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+    "pregunta": "Para una clase de grado once sobre técnicas de conteo, un docente plantea: de los 10 integrantes del consejo estudiantil se escogerán al azar 3 para asistir a un foro, sin cargos ni orden entre ellos. Pregunta por la probabilidad de que queden escogidos Ana y Luis, dos de los integrantes. Antes de la clase, el docente resuelve el problema. ¿Cuál es esa probabilidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1/15",
+        "explicacion": "Correcta. Hay C(10, 3) = 120 grupos posibles, todos igual de probables. Los que incluyen a Ana y a Luis se completan con uno de los 8 restantes: 8 grupos. P = 8/120 = 1/15. También: P(Ana) · P(Luis | Ana) = 3/10 · 2/9 = 1/15."
+      },
+      {
+        "id": "B",
+        "texto": "9/100",
+        "explicacion": "Incorrecta. Multiplica 3/10 · 3/10 como si la elección de Ana y la de Luis fueran independientes, como en un muestreo con reemplazo. Escogida Ana, quedan 2 cupos entre 9 personas, así que P(Luis | Ana) = 2/9."
+      },
+      {
+        "id": "C",
+        "texto": "1/90",
+        "explicacion": "Incorrecta. Cuenta los casos favorables sin orden (8) y los posibles con orden (10 · 9 · 8 = 720). Mezclar combinaciones y permutaciones subestima la probabilidad; con orden, los favorables serían 8 · 3! = 48, y 48/720 = 1/15."
+      },
+      {
+        "id": "D",
+        "texto": "1/45",
+        "explicacion": "Incorrecta. 1/45 = 1/C(10, 2) sería la probabilidad si se escogieran solo 2 integrantes. Ignora que el tercer cupo puede ocuparlo cualquiera de los otros 8."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se escogen 3 de 10 sin orden y se pide que estén dos personas determinadas. Regla: con resultados equiprobables, P = casos favorables/casos posibles, contados ambos con el mismo criterio (combinaciones). Cálculo: favorables C(8, 1) = 8; posibles C(10, 3) = 120; 8/120 = 1/15. Conclusión: 1/15.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: sesgo de selección en estudios publicados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar. [...] Propongo inferencias a partir del estudio de muestras probabilísticas.",
+    "pregunta": "Un docente de grado once quiere que sus estudiantes evalúen con argumentos estadísticos las conclusiones de estudios que circulan en los medios. Lleva una noticia que afirma: «El 85 % de los jóvenes del municipio prefiere estudiar de manera virtual». La nota explica que el dato proviene de una encuesta respondida de forma voluntaria por 400 seguidores de la página de una plataforma de cursos en línea. ¿Qué tarea es la más adecuada para ese propósito?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aplicar la misma pregunta a los estudiantes de grado once del colegio y comparar el porcentaje obtenido con el 85 % que publicó la noticia.",
+        "explicacion": "Incorrecta. Es una tarea activa y escolar, pero cambia una muestra no probabilística por otra: los estudiantes de grado once de un colegio no representan a los jóvenes del municipio (edad, institución, zona). Comparar dos muestras sesgadas no permite decidir cuál se acerca al valor real."
+      },
+      {
+        "id": "B",
+        "texto": "Analizar quiénes respondieron y cómo llegaron a la muestra, decidir si el resultado vale para la población juvenil y proponer un muestreo aleatorio.",
+        "explicacion": "Correcta. La muestra es voluntaria y está formada por seguidores de una plataforma virtual, de modo que sobrerrepresenta a quienes ya prefieren esa modalidad: no es una muestra probabilística de los jóvenes del municipio. Analizar el diseño y proponer un muestreo aleatorio es refutar la inferencia con razonamiento estadístico."
+      },
+      {
+        "id": "C",
+        "texto": "Repetir la encuesta en la misma página con 800 seguidores, para comprobar si el porcentaje se mantiene cuando la muestra es más grande y más confiable.",
+        "explicacion": "Incorrecta. Aumentar el tamaño de una muestra sesgada no corrige el sesgo: 800 seguidores de la misma página siguen sin representar a los jóvenes del municipio. Es la idea errada de que una muestra grande es representativa por su tamaño."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir a la plataforma la edad y el municipio de los 400 encuestados, para comprobar que todos son jóvenes del municipio y validar el dato.",
+        "explicacion": "Incorrecta. Comprobar la edad y el municipio no corrige el sesgo: aunque todos sean jóvenes del municipio, son seguidores de una plataforma de cursos en línea que decidieron responder, y sobrerrepresentan a quienes ya prefieren esa modalidad. El problema está en cómo se formó la muestra."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la encuesta fue voluntaria y la respondieron seguidores de una plataforma de cursos en línea. Regla: una inferencia sobre una población requiere una muestra que la represente, idealmente probabilística, y el sesgo de selección no se corrige con más datos ni verificando a los encuestados. Conclusión: la tarea adecuada es analizar el diseño de la muestra, decidir si la conclusión se puede generalizar y proponer un muestreo aleatorio. Las demás cambian una muestra sesgada por otra, la agrandan o revisan datos que no corrigen la autoselección.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

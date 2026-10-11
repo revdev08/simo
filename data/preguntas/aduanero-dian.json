@@ -2180,5 +2180,1089 @@
       "fecha": "2026-10-10",
       "p_estimado": 55
     }
+  },
+  {
+    "id": "TC-ADU-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Llegada y descargue de la mercancía",
+    "subtema": "Oportunidad para entregar el manifiesto y los documentos consolidadores en trayectos cortos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 147, incs. 1, 2, 3 y 4 (inc. 4 modificado por el art. 49 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "En el caso del modo de transporte aéreo, el transportador, deberá entregar a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), a través de los Servicios Informáticos Electrónicos, la información del manifiesto de carga, de los documentos de transporte, de los documentos consolidadores, y de los documentos hijos, con una anticipación mínima de tres (3) horas antes de la llegada del medio de transporte. En el caso del modo de transporte marítimo, el transportador, deberá entregar a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), a través de los Servicios Informáticos Electrónicos, la información del manifiesto de carga y de los documentos de transporte por él expedidos, con una anticipación mínima de doce (12) horas a la llegada del medio de transporte. Cuando se trate de carga consolidada en el modo marítimo el agente de carga internacional, deberá entregar a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), a través de los Servicios Informáticos Electrónicos, la información de los documentos consolidadores y de los documentos de transporte hijos con una anticipación mínima de doce (12) horas a la llegada del medio de transporte al territorio nacional. [...] Cuando se trate de trayectos cortos señalados por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), la entrega de la información a que se refiere el presente artículo por parte del transportador o agente de carga deberá realizarse con una anticipación mínima de seis (6) horas a la llegada del medio de transporte, en el caso del modo de transporte marítimo y, treinta (30) minutos, antes de la llegada del medio de transporte en el caso del modo de transporte aéreo.",
+    "pregunta": "Un buque procedente de un puerto que la DIAN señaló como trayecto corto llega a Cartagena el lunes 9 de marzo de 2026 a las 18:00. El transportador entregó la información del manifiesto de carga y de sus documentos de transporte a las 13:00 de ese día, y el agente de carga internacional entregó la de los documentos consolidadores y de los documentos hijos a las 10:30. Una analista de la Dirección Seccional revisa la oportunidad de ambas entregas. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambas fueron oportunas: en un trayecto corto, la anticipación mínima que se exige es apenas de tres horas.",
+        "explicacion": "Incorrecta. Las tres horas son la regla general del modo aéreo (art. 147, inc. 1). En un trayecto corto marítimo se exigen seis horas, y el transportador entregó con solo cinco."
+      },
+      {
+        "id": "B",
+        "texto": "Ambas fueron tardías: en el modo marítimo se exigen doce horas, aunque se trate de un trayecto corto.",
+        "explicacion": "Incorrecta. Las doce horas son la regla general del modo marítimo para el transportador y el agente de carga (incs. 2 y 3). En los trayectos cortos señalados por la DIAN, el inc. 4 la reduce a seis horas, y el agente de carga entregó con siete horas y media."
+      },
+      {
+        "id": "C",
+        "texto": "Tardía la del transportador y oportuna la del agente: en ese trayecto ambos debían entregar con seis horas o más.",
+        "explicacion": "Correcta. En un trayecto corto marítimo, el transportador y el agente de carga deben entregar la información con una anticipación mínima de seis horas (art. 147, inc. 4). El transportador entregó a las 13:00, cinco horas antes de las 18:00; el agente de carga, a las 10:30, siete horas y media antes."
+      },
+      {
+        "id": "D",
+        "texto": "Oportuna la del transportador y tardía la del agente de carga, porque a este se le siguen exigiendo doce horas.",
+        "explicacion": "Incorrecta. La reducción a seis horas del inc. 4 cubre al transportador y también al agente de carga. Además, el transportador entregó con apenas cinco horas de anticipación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: trayecto corto marítimo, llegada a las 18:00 y entregas a las 13:00 (transportador) y a las 10:30 (agente de carga). Regla: por regla general, en el modo marítimo el manifiesto y los documentos consolidadores se entregan con doce horas de anticipación (art. 147, incs. 2 y 3); en los trayectos cortos señalados por la DIAN, el transportador o el agente de carga deben hacerlo con al menos seis horas (inc. 4). Cálculo: 5 horas y 7,5 horas. Conclusión: la entrega del transportador fue tardía y la del agente, oportuna.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Llegada y descargue de la mercancía",
+    "subtema": "Plazos del informe de descargue e inconsistencias en carga consolidada marítima",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 150, inc. 1",
+      "art. 151, incs. 1, 2 y 4"
+    ],
+    "texto_fuente": "Descargada la totalidad de la carga del medio de transporte, el transportador en el modo de transporte aéreo o el responsable del puerto o muelle en el modo de transporte marítimo, deberán informar en forma inmediata este hecho a través de los Servicios Informáticos Electrónicos de la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), señalando hora y fecha del mismo. [...] El transportador respecto de la carga relacionada en el manifiesto de carga, deberá informar a la autoridad aduanera, a través de los Servicios Informáticos Electrónicos los datos relacionados con la carga efectivamente descargada. [...] En el modo de transporte aéreo, la obligación a que hace referencia el inciso anterior, debe cumplirse a más tardar dentro de las doce (12) horas siguientes a la presentación del aviso de finalización de descargue; para el modo de transporte marítimo dicha obligación deberá cumplirse dentro de las veinticuatro (24) horas siguientes a dicho aviso. [...] Cuando se trate de carga consolidada en el modo de transporte marítimo, los Agentes de Carga Internacional que intervengan en la operación deberán informar a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), a través de los Servicios Informáticos Electrónicos los datos relacionados con la carga efectivamente descargada, dentro de los cinco (5) días calendario siguientes a la presentación del aviso de finalización del descargue de que trata el artículo 150 del presente Decreto.",
+    "pregunta": "En Buenaventura terminó el descargue de un buque con carga consolidada, y el puerto presentó el aviso de finalización del descargue el jueves 30 de julio de 2026 a las 15:00. El transportador entregó el informe de descargue e inconsistencias el viernes 31 de julio a las 11:00. El agente de carga internacional entregó el miércoles 5 de agosto su informe sobre la carga consolidada efectivamente descargada. Un analista de la Dirección Seccional revisa la oportunidad de ambos informes. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Oportuno el del transportador y tardío el del agente de carga, cuyo plazo terminó el martes 4 de agosto.",
+        "explicacion": "Correcta. En el modo marítimo, el transportador tiene 24 horas desde el aviso de finalización del descargue (art. 151, inc. 2): hasta las 15:00 del 31 de julio, y entregó a las 11:00. El agente de carga, para la carga consolidada, tiene cinco días calendario (inc. 4): del 31 de julio al 4 de agosto. Su informe del 5 de agosto fue tardío."
+      },
+      {
+        "id": "B",
+        "texto": "Ambos oportunos: el plazo del agente de carga se cuenta en días hábiles y por eso terminaba el 6 de agosto.",
+        "explicacion": "Incorrecta. El inc. 4 del art. 151 fija cinco días calendario, no hábiles. Contados en días hábiles, el plazo llegaría al 6 de agosto y el informe parecería oportuno."
+      },
+      {
+        "id": "C",
+        "texto": "Tardío el del transportador, que en el modo marítimo tenía doce horas, y oportuno el del agente de carga.",
+        "explicacion": "Incorrecta. Las doce horas son el plazo del modo aéreo. En el marítimo el transportador tiene 24 horas, y entregó 20 horas después del aviso. Además, el informe del agente de carga sí fue tardío."
+      },
+      {
+        "id": "D",
+        "texto": "Ambos tardíos: el agente de carga también debía informar dentro de las veinticuatro horas siguientes al aviso.",
+        "explicacion": "Incorrecta. Las 24 horas son el plazo del transportador marítimo, que lo cumplió. El agente de carga, para la carga consolidada, tiene un plazo propio de cinco días calendario."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el puerto presentó el aviso de finalización del descargue el jueves 30 de julio a las 15:00; el transportador entregó su informe el 31 a las 11:00 y el agente de carga, el 5 de agosto. Regla: en el modo marítimo, el transportador entrega el informe de descargue e inconsistencias dentro de las 24 horas siguientes al aviso, y el agente de carga, para la carga consolidada, dentro de los cinco días calendario siguientes (art. 151, incs. 2 y 4). Cálculo: 20 horas para el transportador; el plazo del agente terminó el 4 de agosto. Conclusión: solo el informe del agente fue tardío.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Llegada y descargue de la mercancía",
+    "subtema": "Reconocimiento de carga y suspensión del plazo de entrega al depósito",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 156, inc. 1 y par. 3 (parágrafo adicionado por el art. 53 del Decreto 360 de 2021)",
+      "art. 169, inc. 2 (texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)",
+      "art. 170, inc. 2 (texto vigente hasta la misma certificación)"
+    ],
+    "texto_fuente": "La diligencia de reconocimiento de la carga deberá realizarse para los modos aéreo y terrestre dentro de las veinticuatro (24) horas siguientes al momento en que se ordene su práctica y dentro de las cuarenta y ocho (48) horas siguientes, en el modo marítimo, verificando peso, número de bultos y estado de los mismos, sin que para ello sea procedente su apertura, sin perjuicio de que se pueda examinar la mercancía cuando por perfiles de riesgo resulte necesario. El término previsto en el presente inciso podrá ser ampliado por la autoridad aduanera hasta por doce (12) horas en los eventos en que se requiera efectuar inventario de la carga. [...] Los términos señalados para la entrega de la carga o de la mercancía previstos en el artículo 169 de este decreto, se suspenderán desde la determinación del reconocimiento de carga y hasta que finalice esta diligencia. [...] Una vez descargada la mercancía se entregará al depósito o al usuario operador de zona franca, a más tardar dentro de los dos (2) días hábiles siguientes a la presentación del informe de descargue e inconsistencias en el aeropuerto, o dentro de los cinco (5) días hábiles siguientes a la presentación del mismo, cuando el descargue se efectúe en puerto. [...] Si se presentan inconsistencias entre los datos consignados en la planilla de envío y la carga recibida, o si se detectan posibles adulteraciones en dicho documento, o irregularidades en los empaques, embalajes y precintos aduaneros de la carga que es objeto de entrega, o esta se produce por fuera de los términos previstos en el artículo anterior, el depósito o usuario operador de la zona franca consignará estos datos en la planilla de recepción.",
+    "pregunta": "En Cartagena, el transportador presentó el martes 3 de noviembre de 2026 el informe de descargue e inconsistencias de un buque, sin reportar inconsistencias. El miércoles 4 de noviembre a las 10:00, la DIAN ordenó el reconocimiento de uno de los contenedores y, como había que inventariar la carga, amplió en 12 horas el término de la diligencia. El reconocimiento terminó el viernes 6 de noviembre a las 21:00, con conformidad. El contenedor llegó al depósito habilitado el miércoles 11 de noviembre. Una inspectora revisa si el depósito debía dejar constancia de entrega extemporánea en la planilla de recepción. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí debía: el plazo de cinco días hábiles para entregar al depósito vencía el 10 de noviembre, y el reconocimiento no lo afecta.",
+        "explicacion": "Incorrecta. Sin el reconocimiento, los cinco días hábiles contados desde el informe del martes 3 habrían vencido el 10 de noviembre. Pero el par. 3 del art. 156 suspende los términos de entrega del art. 169 desde que se determina el reconocimiento hasta que termina."
+      },
+      {
+        "id": "B",
+        "texto": "Sí debía: la diligencia pasó de las 48 horas del modo marítimo, y por eso el plazo de entrega corrió sin suspensión.",
+        "explicacion": "Incorrecta. En el modo marítimo el reconocimiento se hace en 48 horas, ampliables hasta en 12 cuando hay que inventariar la carga (art. 156, inc. 1). La diligencia terminó a las 59 horas, dentro de las 60 permitidas, y la suspensión operó."
+      },
+      {
+        "id": "C",
+        "texto": "No debía: el puerto tenía diez días hábiles, contados desde el aviso de finalización del descargue, para entregarlo.",
+        "explicacion": "Incorrecta. En puerto el plazo de entrega al depósito es de cinco días hábiles, no diez, y se cuenta desde la presentación del informe de descargue e inconsistencias, no desde el aviso de finalización del descargue (art. 169, inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "No debía: el plazo de entrega dejó de correr mientras duró el reconocimiento, así que el 11 de noviembre aún no vencía.",
+        "explicacion": "Correcta. En puerto, la carga se entrega al depósito dentro de los cinco días hábiles siguientes al informe de descargue (art. 169, inc. 2). Ese plazo se suspendió desde la orden de reconocimiento, el miércoles 4, hasta que la diligencia terminó, el viernes 6 (art. 156, par. 3). Al reanudarse el lunes 9, el plazo no había vencido el 11, así que la entrega fue oportuna y no procedía la constancia del art. 170."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: informe de descargue el 3 de noviembre; reconocimiento ordenado el miércoles 4 a las 10:00, ampliado 12 horas por inventario y terminado el viernes 6 a las 21:00; entrega al depósito el 11. Regla: en puerto, la carga se entrega al depósito dentro de los cinco días hábiles siguientes al informe (art. 169); el reconocimiento marítimo se hace en 48 horas, ampliables 12 por inventario, y suspende ese plazo hasta que termina (art. 156). Cálculo: sin suspensión vencía el 10; con ella, la entrega del 11 está en tiempo. Conclusión: no procedía constancia de entrega extemporánea.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Llegada y descargue de la mercancía",
+    "subtema": "Permanencia del medio de transporte extranjero averiado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 142, inc. 1 y par."
+    ],
+    "texto_fuente": "El medio de transporte de matrícula extranjera que arribe al territorio aduanero nacional con el cumplimiento de los requisitos, así como el material propio para el cargue, descargue, manipulación y protección de las mercancías que se transporten en el mismo, se entenderá importado temporalmente por el tiempo normal para las operaciones de descargue, cargue o mantenimiento del medio de transporte, sin la exigencia de garantía o documentación alguna, pero con la obligación de su reexportación. [...] Cuando el medio de transporte de matrícula extranjera que arribe al territorio aduanero nacional para realizar operaciones de cargue y descargue, sufra daños o averías que imposibiliten su movilización, la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), previa comprobación de este hecho, podrá autorizar su permanencia en el territorio nacional por el término de treinta (30) días, prorrogables hasta por el mismo término por una (1) sola vez. Si la reparación del daño o avería requiere un término mayor, el medio de transporte deberá ser declarado bajo la modalidad de importación que corresponda",
+    "pregunta": "Un buque de matrícula extranjera que llegó a Barranquilla a descargar sufrió una avería en sus motores que le impide zarpar. Comprobada la avería, la DIAN autorizó su permanencia por 30 días a partir del 1 de septiembre de 2026 y después la prorrogó por otros 30 días. Ahora el astillero informa que la reparación terminará el 15 de diciembre. Un inspector debe definir qué procede con el buque. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir que el buque se someta a una modalidad de importación, pues la reparación excede la permanencia autorizable.",
+        "explicacion": "Correcta. Para un medio de transporte averiado, la DIAN puede autorizar 30 días de permanencia, prorrogables una sola vez por el mismo término (art. 142, par.): del 1 de septiembre al 31 de octubre. Como la reparación terminará el 15 de diciembre, el buque debe declararse en la modalidad de importación que corresponda."
+      },
+      {
+        "id": "B",
+        "texto": "Conceder una segunda prórroga de treinta días, porque la avería está comprobada y la reparación sigue en curso.",
+        "explicacion": "Incorrecta. La prórroga de 30 días procede por una sola vez, y ya se concedió. El parágrafo no admite una segunda."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir que siga en el país sin trámite, porque el buque se entiende importado temporalmente mientras lo reparan.",
+        "explicacion": "Incorrecta. La importación temporal automática del inc. 1 cubre el tiempo normal de descargue, cargue o mantenimiento. Para una avería que impide zarpar rige el parágrafo, con sus plazos."
+      },
+      {
+        "id": "D",
+        "texto": "Ordenar su reexportación inmediata al vencer la prórroga, aunque la reparación del motor no haya terminado.",
+        "explicacion": "Incorrecta. Cuando la reparación requiere más tiempo del que puede autorizarse, la norma no ordena reexportar el buque averiado: exige declararlo en la modalidad de importación que corresponda."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: permanencia de 30 días desde el 1 de septiembre, ya prorrogada por 30 días, y reparación que terminará el 15 de diciembre. Regla: si un medio de transporte extranjero sufre averías que le impiden moverse, la DIAN puede autorizar su permanencia por 30 días, prorrogables una sola vez por el mismo término; si la reparación requiere más, debe declararse en la modalidad de importación que corresponda (art. 142, par.). Cálculo: los 60 días llegan al 31 de octubre. Conclusión: el buque debe someterse a una modalidad de importación.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-045",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Declarantes y agencias de aduanas",
+    "subtema": "Consorcio como declarante: NIT, firma y garantía global",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 9",
+      "art. 174, inc. 2"
+    ],
+    "texto_fuente": "Cuando los documentos de transporte y demás documentos soporte de la operación de comercio exterior se consignen, endosen o expidan, según corresponda, a nombre de un consorcio o unión temporal, los trámites de importación, exportación, tránsito aduanero, deberán adelantarse utilizando el Número de Identificación Tributaria (NIT), asignado al mismo. Las actuaciones que se surtan ante la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), deberán ser suscritas por el administrador designado por el consorcio o unión temporal para representarlo ante la entidad contratante. Las actuaciones realizadas por un consorcio o unión temporal en desarrollo de lo previsto en el presente decreto deberán ampararse con una garantía global, constituida antes de la presentación de las declaraciones aduaneras de importación, exportación o tránsito aduanero. El monto será equivalente al uno por ciento (1%) del valor FOB de la mercancía que se pretenda someter a las operaciones de comercio exterior durante el primer año de ejecución de las operaciones de comercio exterior dentro del contrato a desarrollar, sin que en ningún caso el valor a asegurar sea superior a cien mil (100.000) Unidades de Valor Tributario (UVT), cuando sea exigida para respaldar el cumplimiento de sus obligaciones aduaneras. [...] Cuando el documento de transporte llegue consignado a nombre de un Consorcio o Unión Temporal constituido para celebrar contratos con las entidades estatales en desarrollo de la Ley 80 de 1993, los obligados a declarar serán las personas jurídicas y/o naturales que lo conforman, quienes podrán hacerlo a través del Administrador designado por el Consorcio o la Unión Temporal para representarlas.",
+    "pregunta": "Un consorcio formado por dos sociedades, una de ellas con el 70% de participación, se constituyó para construir un hospital público e importará directamente los equipos del proyecto, con documentos de transporte consignados a su nombre. Estima que en el primer año de ejecución importará mercancía por un valor FOB equivalente a $600.000 millones, y la DIAN le exigió la garantía global para respaldar sus obligaciones aduaneras. Una gestora revisa el monto de la garantía y la forma en que deben presentarse las declaraciones. La UVT de 2026 es de $52.374. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Garantía de $6.000 millones (1% del FOB) y declaraciones con el NIT y la firma de la sociedad con mayor participación.",
+        "explicacion": "Incorrecta en ambos puntos. Omite el tope de 100.000 UVT, y los trámites no se adelantan con el NIT de un consorciado: el art. 9 exige el NIT asignado al consorcio y la firma de su administrador. El art. 174 tampoco radica la obligación en el socio mayoritario: los obligados son todos los consorciados, que actúan por medio de ese administrador."
+      },
+      {
+        "id": "B",
+        "texto": "Garantía de $6.000 millones (1% del FOB) y declaraciones con el NIT del consorcio y la firma de su administrador.",
+        "explicacion": "Incorrecta. Acierta en el NIT y en la firma, pero el 1% del FOB ($6.000 millones) supera el tope de 100.000 UVT, que con la UVT de 2026 es de $5.237.400.000. La garantía no puede exceder ese tope (art. 9)."
+      },
+      {
+        "id": "C",
+        "texto": "Garantía de $5.237.400.000 (tope en UVT) y declaraciones con el NIT del consorcio y la firma de su administrador.",
+        "explicacion": "Correcta. El 1% de $600.000 millones es $6.000 millones, pero la garantía no puede superar 100.000 UVT: 100.000 × $52.374 = $5.237.400.000 (art. 9). Los consorciados son los obligados a declarar, pero lo hacen por medio del administrador designado (art. 174, inc. 2); por eso los trámites se adelantan con el NIT del consorcio y las actuaciones las suscribe ese administrador (art. 9)."
+      },
+      {
+        "id": "D",
+        "texto": "Garantía de $5.237.400.000 (tope en UVT) y declaraciones con el NIT y la firma de la sociedad con mayor participación.",
+        "explicacion": "Incorrecta. El monto con el tope es correcto, pero el art. 9 exige usar el NIT asignado al consorcio y que las actuaciones las suscriba su administrador. Que los consorciados sean los obligados (art. 174, inc. 2) no autoriza a uno solo a declarar con su NIT: todos actúan por medio del administrador."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: documentos de transporte consignados al consorcio, FOB del primer año de $600.000 millones y UVT de $52.374. Regla: la garantía global es el 1% del FOB del primer año, sin superar 100.000 UVT, y los trámites se adelantan con el NIT del consorcio y los suscribe su administrador (art. 9); los consorciados son los obligados a declarar, pero actúan por medio de ese administrador (art. 174, inc. 2). Cálculo: 1% = $6.000 millones, más que 100.000 × $52.374 = $5.237.400.000. Conclusión: garantía de $5.237.400.000 y declaraciones con el NIT del consorcio, firmadas por el administrador.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Entrega de la mercancía al importador en el lugar de arribo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 169, incs. 2 y 4 (texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "Una vez descargada la mercancía se entregará al depósito o al usuario operador de zona franca, a más tardar dentro de los dos (2) días hábiles siguientes a la presentación del informe de descargue e inconsistencias en el aeropuerto, o dentro de los cinco (5) días hábiles siguientes a la presentación del mismo, cuando el descargue se efectúe en puerto. [...] Dentro del día hábil siguiente a la presentación del informe de descargue e inconsistencias de la mercancía en el aeropuerto, o dentro de los cuatro (4) días hábiles siguientes a la presentación del informe de descargue e inconsistencias de la mercancía en el puerto, el transportador o el Agente de Carga Internacional o el puerto podrá entregar la mercancía al declarante o importador, en el respectivo aeropuerto o puerto, cuando haya procedido el levante respecto de una Declaración Inicial o Anticipada, o cuando así lo determine la autoridad aduanera en los casos de entregas urgentes. Vencidos estos términos, el importador o declarante solo podrá obtener el levante de la mercancía en el depósito habilitado.",
+    "pregunta": "Una importadora obtuvo levante sobre una declaración anticipada para una carga aérea que llegó a Bogotá. El transportador presentó el informe de descargue e inconsistencias el viernes 17 de julio de 2026. La importadora quiere recibir la carga directamente en el aeropuerto, sin que pase por un depósito, y un facilitador de la DIAN le explica hasta qué día puede el transportador entregársela allí. ¿Qué fecha debe indicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El lunes 20 de julio de 2026.",
+        "explicacion": "Incorrecta. Cuenta el lunes 20 de julio como día hábil, pero ese día es festivo en 2026."
+      },
+      {
+        "id": "B",
+        "texto": "El martes 21 de julio de 2026.",
+        "explicacion": "Correcta. En el aeropuerto, la entrega directa al importador con levante sobre una declaración anticipada procede dentro del día hábil siguiente al informe de descargue e inconsistencias (art. 169, inc. 4). El informe fue el viernes 17 y el lunes 20 es festivo, así que el día hábil siguiente es el martes 21. Después, el levante solo se obtiene en el depósito habilitado."
+      },
+      {
+        "id": "C",
+        "texto": "El miércoles 22 de julio de 2026.",
+        "explicacion": "Incorrecta. Aplica los dos días hábiles con que cuenta el transportador para entregar la carga al depósito en el aeropuerto (art. 169, inc. 2), no el plazo para entregarla al importador en el lugar de arribo."
+      },
+      {
+        "id": "D",
+        "texto": "El viernes 24 de julio de 2026.",
+        "explicacion": "Incorrecta. Aplica los cuatro días hábiles que rigen para la entrega directa en puerto. En el aeropuerto el plazo es el día hábil siguiente al informe."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: carga aérea con levante sobre una declaración anticipada; informe de descargue e inconsistencias el viernes 17 de julio de 2026. Regla: el transportador puede entregar la mercancía al importador en el aeropuerto dentro del día hábil siguiente al informe (en puerto, dentro de los cuatro días hábiles siguientes); vencido ese término, el levante solo se obtiene en el depósito habilitado (art. 169, inc. 4). Cálculo: el lunes 20 de julio es festivo, así que el plazo va hasta el martes 21. Conclusión: puede recibirla en el aeropuerto hasta el 21 de julio.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Declaración presentada ante una seccional sin jurisdicción y término de permanencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 157",
+      "art. 171, inc. 1 y par. 1",
+      "art. 176",
+      "art. 178, nums. 1 y 2",
+      "art. 179, inc. 2"
+    ],
+    "texto_fuente": "Para efectos aduaneros, la fecha y hora de acuse de recibo del aviso de llegada a través de los Servicios Informáticos Electrónicos, se tendrá como fecha de llegada de la mercancía al territorio aduanero nacional. [...] Para efectos aduaneros, la mercancía podrá permanecer almacenada mientras se realizan los trámites para obtener su levante, hasta por el término de un (1) mes, contado desde la fecha de su llegada al territorio aduanero nacional. [...] Vencido el término previsto en este artículo sin que se hubiere obtenido el levante, o sin que se hubiere reembarcado la mercancía, operará el abandono legal. [...] La Declaración de Importación deberá presentarse ante la Dirección Seccional de Aduanas o de Impuestos y Aduanas con jurisdicción en el lugar donde se encuentre la mercancía, a través de los Servicios Informáticos Electrónicos, en la forma que determine la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). [...] 1. Cuando la Declaración de Importación se haya presentado con posterioridad al término establecido en el artículo 171 de este decreto. 2. Cuando la Declaración de Importación se presente ante una Dirección Seccional de Aduanas o de Impuestos y Aduanas diferente a la que tenga jurisdicción en el lugar donde se encuentre la mercancía. [...] La no aceptación de la Declaración no suspende el término de permanencia de la mercancía en depósito, establecido en el artículo 171 del presente decreto.",
+    "pregunta": "Una carga llegó a Buenaventura: el acuse de recibo del aviso de llegada del buque se registró el martes 5 de mayo de 2026, y la carga ingresó a un depósito habilitado de ese puerto el lunes 11 de mayo. El viernes 29 de mayo, la agencia de aduanas transmitió la declaración de importación ante la Dirección Seccional de Cali, donde la importadora tiene su domicilio, y los servicios informáticos no la aceptaron. El martes 9 de junio la transmitió ante la Dirección Seccional de Buenaventura. No hubo tránsito, prórroga ni inspección. Un inspector debe pronunciarse sobre esta última transmisión. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debe aceptarse: el intento ante Cali suspendió el término de permanencia hasta que la agencia volvió a transmitir.",
+        "explicacion": "Incorrecta. La no aceptación de la declaración no suspende el término de permanencia de la mercancía en depósito (art. 179, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Debe aceptarse: el mes de permanencia se cuenta desde el ingreso de la carga al depósito, y vence el 11 de junio.",
+        "explicacion": "Incorrecta. El mes se cuenta desde la llegada al territorio aduanero nacional, que es la fecha del acuse del aviso de llegada (arts. 157 y 171), no desde el ingreso al depósito."
+      },
+      {
+        "id": "C",
+        "texto": "Debió aceptarse la del 29 de mayo en Cali, seccional del domicilio de la importadora, y esa es la que vale.",
+        "explicacion": "Incorrecta. La declaración se presenta ante la seccional con jurisdicción en el lugar donde está la mercancía (art. 176). Presentada ante otra, no se acepta (art. 178, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "No puede aceptarse: el mes contado desde la llegada terminó el 5 de junio, y el rechazo no detuvo ese conteo.",
+        "explicacion": "Correcta. La llegada fue el 5 de mayo (art. 157) y el mes de permanencia venció el 5 de junio (art. 171). El rechazo ante Cali, por falta de jurisdicción (arts. 176 y 178, num. 2), no suspendió ese término (art. 179, inc. 2). La transmisión del 9 de junio es posterior al término y no puede aceptarse (art. 178, num. 1); la mercancía quedó en abandono legal (art. 171, par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: llegada el 5 de mayo; transmisión rechazada en Cali el 29 de mayo; nueva transmisión en Buenaventura el 9 de junio. Regla: la declaración se presenta ante la seccional con jurisdicción donde está la mercancía (art. 176); no se acepta la presentada ante otra seccional ni la presentada después del mes de permanencia (art. 178, nums. 1 y 2), y la no aceptación no suspende ese término (art. 179). Cálculo: 5 de mayo + 1 mes = 5 de junio. Conclusión: la declaración del 9 de junio no puede aceptarse y la mercancía quedó en abandono legal.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Vistos buenos sanitarios en la declaración anticipada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 177, inc. 1, num. 5, y par. 2 (modificado por el art. 57 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "Para efectos aduaneros, el declarante está obligado a obtener antes de la presentación y aceptación de la declaración, el original de los siguientes documentos en medio físico o electrónico: [...] 5. Certificado de sanidad y aquellos otros documentos exigidos por normas especiales, cuando hubiere lugar. [...] PARÁGRAFO 2o. Las autorizaciones o vistos buenos de carácter sanitario que se requieran como documento soporte de la declaración de importación anticipada, los registros o licencias de importación que se deriven de estos vistos buenos, así como la certificación de marcación expedida por el sistema técnico de control vigente (SUNIR), sea en medio físico o electrónico, deberán obtenerse previamente a la inspección física o documental o a la determinación de levante automático de las mercancías.",
+    "pregunta": "Una agencia de aduanas presentó, diez días antes de la llegada de la carga, una declaración anticipada de importación de alimentos que requieren visto bueno sanitario del INVIMA. El visto bueno aún no estaba expedido cuando se presentó la declaración, y los servicios informáticos la aceptaron. Un gestor revisa si la declaración pudo aceptarse y hasta cuándo debe obtenerse el visto bueno. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pudo aceptarse; el visto bueno debe tenerse antes de la inspección o de que se defina el levante automático.",
+        "explicacion": "Correcta. La regla general obliga a obtener los documentos soporte antes de presentar y aceptar la declaración (art. 177, inc. 1). Pero el par. 2 permite que, en la declaración anticipada, los vistos buenos sanitarios se obtengan antes de la inspección física o documental o de la determinación de levante automático."
+      },
+      {
+        "id": "B",
+        "texto": "Debió rechazarse, porque todo documento soporte debe obtenerse antes de presentar y aceptar la declaración.",
+        "explicacion": "Incorrecta. Aplica la regla general del inc. 1 sin la excepción del par. 2 para los vistos buenos sanitarios de la declaración anticipada."
+      },
+      {
+        "id": "C",
+        "texto": "Pudo aceptarse, y el visto bueno puede obtenerse en cualquier momento antes de retirar la carga del depósito.",
+        "explicacion": "Incorrecta. El par. 2 fija un momento preciso: antes de la inspección física o documental o de la determinación de levante automático. No basta con obtenerlo antes del retiro."
+      },
+      {
+        "id": "D",
+        "texto": "Debe sustituirse por una declaración inicial, que podrá presentarse cuando el visto bueno ya esté expedido.",
+        "explicacion": "Incorrecta. La declaración anticipada es válida aunque el visto bueno sanitario se obtenga después de presentarla, siempre que se tenga antes de la inspección o del levante automático. No hay que sustituirla."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: declaración anticipada presentada sin el visto bueno sanitario del INVIMA. Regla: por regla general, los documentos soporte, entre ellos los certificados de sanidad, se obtienen antes de presentar y aceptar la declaración (art. 177, inc. 1 y num. 5); en la declaración anticipada, los vistos buenos sanitarios deben obtenerse antes de la inspección física o documental o de la determinación de levante automático (par. 2). Conclusión: la declaración pudo aceptarse, y el visto bueno debe estar antes de esa determinación.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Pago de tributos en la declaración anticipada y determinación de levante o inspección",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 175, inc. 3 (modificado por el art. 3 del Decreto 572 de 2021; texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)",
+      "art. 181 (texto vigente hasta la misma certificación)"
+    ],
+    "texto_fuente": "Los tributos aduaneros deberán ser pagados dentro del plazo señalado en el artículo 171 de este decreto, salvo que se presente declaración anticipada, evento en el cual podrán ser pagados desde el momento de la presentación de la declaración y hasta antes de la obtención del levante, sin que se genere el pago de intereses. [...] Efectuado y acreditado el pago a través de los Servicios Informáticos Electrónicos, se procederá de manera inmediata a determinar una de las siguientes situaciones: 1. Autorizar el levante automático de la mercancía. 2. La inspección documental, o 3. La inspección física de la mercancía El levante deberá obtenerse dentro del término previsto en el artículo 171 del presente decreto.",
+    "pregunta": "Una importadora presentó una declaración anticipada el martes 1 de septiembre de 2026, y su mercancía llegó el martes 8 de septiembre. El viernes 11 de septiembre aún no ha pagado los tributos aduaneros y consulta a un facilitador de la DIAN por qué el sistema no le ha asignado levante automático ni inspección, y si ya le corren intereses. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debe pagar con intereses desde la llegada, y el levante o la inspección ya debían definirse aunque no hubiera pagado.",
+        "explicacion": "Incorrecta en ambos puntos. En la declaración anticipada, el pago puede hacerse hasta antes del levante sin intereses (art. 175, inc. 3), y la determinación de levante o inspección exige el pago acreditado (art. 181)."
+      },
+      {
+        "id": "B",
+        "texto": "Puede pagar sin intereses mientras no tenga levante, pero el levante o la inspección ya debían definirse sin el pago.",
+        "explicacion": "Incorrecta. Acierta en que no hay intereses, pero la determinación de levante automático o de inspección se produce después de efectuado y acreditado el pago (art. 181), no antes."
+      },
+      {
+        "id": "C",
+        "texto": "Debe pagar con intereses desde la llegada, y el levante o la inspección se definirán cuando el pago quede acreditado.",
+        "explicacion": "Incorrecta. Acierta en que la determinación espera el pago, pero en la declaración anticipada los tributos pueden pagarse desde su presentación y hasta antes del levante, sin que se generen intereses (art. 175, inc. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Puede pagar sin intereses mientras no tenga levante, y el levante o la inspección se definirán al acreditar el pago.",
+        "explicacion": "Correcta. Con declaración anticipada, los tributos pueden pagarse desde la presentación y hasta antes del levante, sin intereses (art. 175, inc. 3). Y el sistema determina levante automático, inspección documental o inspección física una vez el pago está efectuado y acreditado (art. 181). El levante debe obtenerse, en todo caso, dentro del término del art. 171."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: declaración anticipada presentada el 1 de septiembre, mercancía llegada el 8 y tributos sin pagar el 11. Regla: en la declaración anticipada, los tributos pueden pagarse desde la presentación y hasta antes del levante, sin intereses (art. 175, inc. 3); efectuado y acreditado el pago, el sistema determina levante automático, inspección documental o inspección física, y el levante debe obtenerse dentro del término del art. 171 (art. 181). Conclusión: puede pagar sin intereses, y la determinación llegará cuando acredite el pago.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-050",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Inspección previa sin aviso y con declaración anticipada ya seleccionada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 3 (definición de inspección previa de la mercancía)",
+      "art. 52, inc. 1 (modificado por el art. 8 del Decreto 659 de 2024)",
+      "art. 51, num. 26"
+    ],
+    "texto_fuente": "Inspección previa de la mercancía. Es la que efectúa el importador o agente de aduanas, previo aviso a la autoridad aduanera, de las mercancías importadas al Territorio Aduanero Nacional, una vez presentado el informe de descargue e inconsistencias y con anterioridad a la presentación y aceptación de la declaración aduanera de importación. El declarante o agencia de aduanas podrá efectuar la inspección previa, después de presentada una declaración anticipada y antes de que se active la selectividad como resultado de la aplicación del sistema de gestión del riesgo. [...] Previo aviso a la autoridad aduanera, el declarante podrá efectuar la inspección previa de las mercancías ingresadas al territorio aduanero nacional, una vez presentado el informe de descargue e inconsistencias de que trata el artículo 151 del presente decreto. Posteriormente a esa diligencia podrá actualizar la declaración anticipada, cuando haya lugar a ello o presentar la declaración inicial según corresponda. [...] 26. Informar a la autoridad aduanera sobre la inspección previa de las mercancías que vaya a realizar y asistir a la misma.",
+    "pregunta": "Una agencia de aduanas presentó una declaración anticipada y pagó los tributos; antes de que llegara la carga, el sistema de gestión del riesgo determinó inspección física. Ya presentado el informe de descargue e inconsistencias, dos auxiliares de la agencia fueron al depósito, abrieron los bultos y contaron la mercancía; la DIAN se enteró de esa revisión días después, por el registro de ingreso del depósito. La agencia pide que ese conteo se tenga como inspección previa y que se le permita actualizar con él la declaración anticipada antes de la diligencia oficial. Un inspector debe responderle. ¿Qué debe decidir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptarlo: se hizo ya presentado el informe de descargue, y tras esa revisión la anticipada puede actualizarse.",
+        "explicacion": "Incorrecta. Presentar el informe de descargue es una condición, pero no la única: la inspección previa exige aviso previo a la autoridad aduanera (art. 52, inc. 1, y art. 3), y la agencia debe informarla y asistir (art. 51, num. 26). Además, con declaración anticipada procede antes de que se active la selectividad (art. 3), y aquí ya se había activado."
+      },
+      {
+        "id": "B",
+        "texto": "Negarlo: se hizo sin aviso a la DIAN y cuando la selectividad ya había ordenado la inspección física.",
+        "explicacion": "Correcta. La revisión falla por las dos reglas. La inspección previa exige aviso previo a la autoridad aduanera, una vez presentado el informe de descargue (art. 52, inc. 1, y art. 3), y la agencia debe informarla y asistir (art. 51, num. 26). Con declaración anticipada, además, procede antes de que se active la selectividad (art. 3). Aquí no hubo aviso y el sistema ya había determinado inspección física, así que la agencia debe atender esa diligencia."
+      },
+      {
+        "id": "C",
+        "texto": "Aceptarlo: la anticipada ya le informó a la DIAN la carga, y la inspección física todavía no se ha hecho.",
+        "explicacion": "Incorrecta. La declaración anticipada no reemplaza el aviso previo de la inspección previa (art. 52, inc. 1; art. 51, num. 26). Además, el límite no es la práctica de la inspección física, sino la activación de la selectividad (art. 3), que ya ocurrió."
+      },
+      {
+        "id": "D",
+        "texto": "Negarlo: con declaración anticipada no cabe inspección previa, y la carga solo puede revisarse en la física.",
+        "explicacion": "Incorrecta. Con declaración anticipada sí cabe la inspección previa: después de presentarla y antes de que se active la selectividad (art. 3), y luego puede actualizarse la anticipada (art. 52, inc. 1). Aquí no procede por otras razones: no hubo aviso previo y la selectividad ya se había activado."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: anticipada con la selectividad ya activada (inspección física) y un conteo hecho sin aviso a la DIAN. Regla: la inspección previa exige aviso previo y el informe de descargue presentado, y luego permite actualizar la anticipada (art. 52, inc. 1, mod. Decreto 659 de 2024); con anticipada, procede antes de que se active la selectividad (art. 3); la agencia debe avisar y asistir (art. 51, num. 26). Aun leyendo solo el art. 52, faltó el aviso. Conclusión: ese conteo no vale como inspección previa y debe atenderse la inspección física ordenada.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Suspensión del término de permanencia durante la inspección aduanera",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 171, inc. 1",
+      "art. 183, incs. 1 y 2 (texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)",
+      "art. 185, num. 6 (modificado por el art. 58 del Decreto 360 de 2021; texto vigente hasta la misma certificación)"
+    ],
+    "texto_fuente": "Para efectos aduaneros, la mercancía podrá permanecer almacenada mientras se realizan los trámites para obtener su levante, hasta por el término de un (1) mes, contado desde la fecha de su llegada al territorio aduanero nacional. [...] La inspección aduanera deberá realizarse en forma continua y concluirse a más tardar el día siguiente en que se ordene su práctica, salvo cuando por razones justificadas se requiera de un período mayor, caso en el cual se podrá autorizar su ampliación. El término previsto en el artículo 171 del presente decreto se suspenderá desde la determinación de la inspección aduanera y hasta que esta finalice con el levante o cuando se venzan los términos establecidos en los numerales 4, 5, 6, 7 y 8 del artículo 185 del presente decreto, según corresponda. Esta suspensión no procede cuando el declarante no asista a la diligencia de inspección. [...] Cuando practicada inspección aduanera física o documental, se detecten errores en la subpartida arancelaria, tarifas, tasa de cambio, sanciones, operación aritmética, modalidad, tratamientos preferenciales y el declarante, dentro de los cinco (5) días siguientes a la práctica de dicha diligencia, solicite el levante de la mercancía con la declaración de corrección en la cual subsane los errores que impiden el levante y que constan en acta de inspección elaborada por el funcionario competente",
+    "pregunta": "Una mercancía llegó el lunes 10 de agosto de 2026, fecha del acuse del aviso de llegada. La declaración de importación se aceptó y se pagó el martes 8 de septiembre, y ese mismo día el sistema determinó inspección física. La diligencia se practicó el miércoles 9, con asistencia de la agencia de aduanas, y el inspector encontró un error en la subpartida arancelaria que no implica restricciones. El lunes 14 de septiembre la agencia presentó la declaración de corrección y ese día se autorizó el levante. Al revisar el expediente, una gestora debe establecer si el levante se obtuvo dentro del término de permanencia. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fue tardío: el mes contado desde la llegada venció el 10 de septiembre y la inspección no altera el término.",
+        "explicacion": "Incorrecta. Sin la inspección, el término habría vencido el 10 de septiembre, pero el art. 183 lo suspende desde la determinación de la inspección hasta que esta termina con el levante."
+      },
+      {
+        "id": "B",
+        "texto": "Fue oportuno: el término dejó de correr desde que se ordenó la inspección hasta que se autorizó el levante.",
+        "explicacion": "Correcta. El mes de permanencia vencía el 10 de septiembre (art. 171). La inspección se determinó el 8 y la agencia asistió, así que el término quedó suspendido hasta el levante del 14 (art. 183, inc. 2). La corrección se presentó dentro de los cinco días siguientes a la diligencia (art. 185, num. 6). El levante fue oportuno."
+      },
+      {
+        "id": "C",
+        "texto": "Fue oportuno, porque el mes para obtener el levante se cuenta desde la aceptación de la declaración.",
+        "explicacion": "Incorrecta. Llega a la misma conclusión con una regla equivocada: el término de permanencia se cuenta desde la llegada de la mercancía, no desde la aceptación de la declaración."
+      },
+      {
+        "id": "D",
+        "texto": "Fue tardío: la suspensión cubrió apenas los días 8 y 9 de la diligencia, y luego el término se reanudó.",
+        "explicacion": "Incorrecta. La suspensión no termina con la diligencia: dura hasta que la inspección finaliza con el levante o hasta que vencen los plazos del art. 185 para subsanar. Aquí la corrección se presentó a tiempo y el levante se dio el 14."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: llegada el 10 de agosto; inspección física determinada el 8 de septiembre y practicada el 9 con asistencia de la agencia; corrección y levante el 14. Regla: la mercancía puede permanecer un mes desde la llegada (art. 171); ese término se suspende desde la determinación de la inspección hasta que finaliza con el levante, salvo que el declarante no asista (art. 183); el error de subpartida se subsana con declaración de corrección dentro de los cinco días siguientes a la diligencia (art. 185, num. 6). Conclusión: el levante del 14 fue oportuno.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ADU-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Firmeza de la declaración corregida y corrección voluntaria por una sola vez",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 188, incs. 1 y 2 (inc. 2: texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)",
+      "art. 296, incs. 1, 2 y 3"
+    ],
+    "texto_fuente": "La Declaración de Importación quedará en firme transcurridos tres (3) años contados a partir de la fecha de su presentación y aceptación, salvo que se haya notificado Requerimiento Especial Aduanero. [...] Cuando se ha corregido o modificado la Declaración de Importación inicial, el término previsto en el inciso anterior se contará a partir de la fecha de presentación y aceptación de la Declaración de Corrección o de la modificación de la Declaración. [...] La Declaración de Importación se podrá corregir voluntariamente sólo para subsanar los siguientes errores: subpartida arancelaria, tarifas, tasa de cambio, sanciones, operación aritmética, modalidad, tratamientos preferenciales, valor FOB, fletes, seguros, otros gastos, ajustes y valor en aduana, y sólo procederá dentro del término previsto en el artículo 188 del presente decreto. [...] Sin perjuicio de lo dispuesto en el artículo 338 de este decreto, la Declaración de Corrección voluntaria procederá por una sola vez. [...] o a solicitud del declarante o del importador, cuando se pretenda corregir errores en el diligenciamiento de la Declaración de Importación, diferentes a los contemplados en el inciso primero del presente artículo, en cuyo caso, deberá mediar autorización previa por parte de la autoridad aduanera.",
+    "pregunta": "El 16 de marzo de 2023 se aceptó una declaración de importación. El 9 de febrero de 2024 el importador presentó una declaración de corrección voluntaria para subsanar la tasa de cambio. El 13 de octubre de 2026, sin que se le haya notificado requerimiento especial aduanero, advierte un error en la subpartida arancelaria y pregunta a una gestora si puede presentar otra corrección voluntaria. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí puede: como la firmeza corre desde la corrección de 2024, la declaración no queda en firme hasta febrero de 2027.",
+        "explicacion": "Incorrecta. Acierta en la firmeza: corre desde la corrección del 9 de febrero de 2024 y llega al 9 de febrero de 2027 (art. 188, inc. 2). Pero la corrección voluntaria procede por una sola vez (art. 296, inc. 2), y ya se usó."
+      },
+      {
+        "id": "B",
+        "texto": "No puede: la declaración quedó en firme el 16 de marzo de 2026, tres años después de su presentación y aceptación.",
+        "explicacion": "Incorrecta. Cuando la declaración se corrige, los tres años de firmeza se cuentan desde la presentación y aceptación de la corrección (art. 188, inc. 2), es decir, hasta el 9 de febrero de 2027."
+      },
+      {
+        "id": "C",
+        "texto": "No puede: ya agotó la única corrección voluntaria, aunque la declaración todavía no ha quedado en firme.",
+        "explicacion": "Correcta. La declaración no está en firme: los tres años corren desde la corrección de 2024 y llegan a febrero de 2027 (art. 188). Pero la corrección voluntaria procede por una sola vez (art. 296, inc. 2), y el importador ya la usó para la tasa de cambio."
+      },
+      {
+        "id": "D",
+        "texto": "Sí puede, con autorización previa de la DIAN, que procede para corregir cualquier error de la declaración.",
+        "explicacion": "Incorrecta. La corrección a solicitud del declarante con autorización previa procede para errores distintos de los del inc. 1 del art. 296. La subpartida arancelaria está en esa lista, así que no cabe por esa vía."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: declaración aceptada el 16 de marzo de 2023 y corregida voluntariamente el 9 de febrero de 2024, sin requerimiento especial aduanero. Regla: la declaración queda en firme a los tres años, contados desde la corrección cuando la hubo (art. 188); la corrección voluntaria procede dentro de ese término y por una sola vez, y la autorizada a solicitud del declarante es para errores distintos de los del inc. 1 (art. 296). Cálculo: firmeza el 9 de febrero de 2027. Conclusión: no puede volver a corregir voluntariamente.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Vistos buenos del ICA en la solicitud de autorización de embarque",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 349, inc. 1, num. 2, y par. 1 (parágrafo modificado por el art. 87 del Decreto 360 de 2021)",
+      "art. 350, num. 3"
+    ],
+    "texto_fuente": "El declarante está obligado a conservar por un período de cinco (5) años contados a partir de la fecha de presentación y aceptación de la Solicitud de Autorización de Embarque, el original de los siguientes documentos, los cuales deberá poner a disposición de la autoridad aduanera cuando esta así lo requiera: [...] 2. Vistos buenos o autorizaciones cuando a ello hubiere lugar. [...] Cuando los vistos buenos, autorizaciones o certificaciones de que trata el numeral 2 del presente artículo, correspondan a los expedidos por el Instituto Colombiano Agropecuario (ICA), el Instituto Nacional de Vigilancia de Medicamentos y Alimentos (Invima), la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), o la entidad que haga sus veces, el declarante estará obligado a presentarlos al momento del embarque de las mercancías y a conservarlos durante el término previsto en este artículo. [...] 3. Cuando no se incorpore la información relativa a los documentos soporte de que trata el artículo anterior, salvo cuando estos correspondan a vistos buenos expedidos por el ICA o Invima o por la entidad que haga sus veces.",
+    "pregunta": "Una floricultora presentó la solicitud de autorización de embarque de una exportación definitiva por vía aérea. Las flores requieren certificado fitosanitario del ICA, que se expedirá el día del despacho, y la solicitud no relacionó ese documento. Los servicios informáticos aceptaron la solicitud. Un inspector revisa si la aceptación fue correcta y en qué momento debe exigir el certificado. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debió rechazarse, porque la solicitud no se acepta sin la información de todos sus documentos soporte.",
+        "explicacion": "Incorrecta. La falta de información de los documentos soporte impide aceptar la solicitud, salvo cuando se trata de vistos buenos del ICA o del INVIMA (art. 350, num. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Fue correcta, y el certificado puede aportarse con la declaración de exportación, después de embarcar las flores.",
+        "explicacion": "Incorrecta. Los vistos buenos del ICA se presentan al momento del embarque (art. 349, par. 1), no con la declaración de exportación posterior."
+      },
+      {
+        "id": "C",
+        "texto": "Debió rechazarse, salvo que la floricultora fuera OEA, caso en el cual el certificado se aportaría al embarcar.",
+        "explicacion": "Incorrecta. La excepción para los vistos buenos del ICA o del INVIMA no depende de que el exportador sea OEA: aplica a cualquier declarante (art. 350, num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Fue correcta; el certificado debe exhibirse cuando se carguen las flores en la aeronave y guardarse cinco años.",
+        "explicacion": "Correcta. La solicitud puede aceptarse sin la información de los vistos buenos del ICA o del INVIMA (art. 350, num. 3). El declarante debe presentarlos al momento del embarque y conservarlos cinco años contados desde la aceptación de la solicitud (art. 349, inc. 1 y par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: solicitud de autorización de embarque aceptada sin relacionar el certificado fitosanitario del ICA. Regla: no se acepta la solicitud que omite la información de los documentos soporte, salvo los vistos buenos del ICA o del INVIMA (art. 350, num. 3); estos se presentan al momento del embarque y se conservan cinco años desde la aceptación de la solicitud (art. 349, inc. 1 y par. 1). Conclusión: la aceptación fue correcta, y el certificado se exige al embarcar las flores.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-054",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Inspección de exportación fuera de la zona primaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 356",
+      "art. 358"
+    ],
+    "texto_fuente": "La autoridad aduanera, con fundamento en criterios técnicos de análisis de riesgo, podrá determinar la práctica de la inspección documental, física o no intrusiva a las mercancías en trámite de exportación. [...] El exportador podrá solicitar a la autoridad aduanera, autorización para que la inspección se realice en lugar diferente a la zona primaria aduanera, cuando así lo requiera la naturaleza de las mercancías, o en razón de su embalaje, peligrosidad u otra circunstancia que lo amerite. En todos los casos, los usuarios altamente exportadores y los Operadores Económicos Autorizados tendrán derecho al tratamiento aquí previsto, para lo cual se deberá señalar el lugar de inspección en la Solicitud de Autorización de Embarque.",
+    "pregunta": "Dos exportadoras piden que la inspección física de su carga se haga en sus plantas y no en el puerto, y las dos escribieron la dirección de su planta en la solicitud de autorización de embarque. La primera es Operador Económico Autorizado. La segunda no tiene ninguna autorización especial y exporta transformadores eléctricos de gran tamaño y peso. Un inspector debe resolver ambos pedidos. ¿Qué debe decidir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La OEA tiene derecho a la inspección en planta; la otra queda sujeta a autorización justificada por su carga.",
+        "explicacion": "Correcta. Cualquier exportador puede pedir autorización para que la inspección se haga fuera de la zona primaria cuando lo requieran la naturaleza, el embalaje, la peligrosidad u otra circunstancia de la mercancía, como el tamaño y el peso de los transformadores. Los OEA, en cambio, tienen derecho a ese tratamiento señalando el lugar en la solicitud de autorización de embarque (art. 358)."
+      },
+      {
+        "id": "B",
+        "texto": "Ambas tienen derecho a la inspección en planta: basta señalar el lugar en la solicitud de autorización de embarque.",
+        "explicacion": "Incorrecta. Señalar el lugar en la solicitud basta solo para quienes tienen el derecho: los OEA y los usuarios altamente exportadores. La segunda exportadora, aunque haya escrito la dirección, debe obtener autorización, justificada en la naturaleza de su carga (art. 358)."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna puede: la inspección de exportación debe practicarse en la zona primaria aduanera por donde sale la carga.",
+        "explicacion": "Incorrecta. El art. 358 permite la inspección en un lugar diferente a la zona primaria, por solicitud justificada o, para los OEA, por derecho propio."
+      },
+      {
+        "id": "D",
+        "texto": "La OEA debe pedir autorización justificada, y la otra exportadora tiene que llevar su carga a la zona primaria.",
+        "explicacion": "Incorrecta. Invierte las reglas: la OEA no necesita justificar su pedido, y la otra exportadora puede pedir autorización por el tamaño y el peso de su carga."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las dos exportadoras indicaron su planta en la solicitud de autorización de embarque, pero solo una es OEA; la otra exporta carga de gran tamaño y peso. Regla: el exportador puede solicitar que la inspección se haga fuera de la zona primaria cuando lo exijan la naturaleza, el embalaje, la peligrosidad u otra circunstancia de la mercancía; los OEA y los usuarios altamente exportadores tienen derecho a ese tratamiento señalando el lugar en la solicitud (art. 358). Conclusión: la OEA tiene derecho a la inspección en planta; la otra necesita autorización justificada.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Certificación de embarque, inconsistencias y exportaciones a zona franca",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 347",
+      "art. 362, inc. 2 y par.",
+      "art. 479, inc. 1"
+    ],
+    "texto_fuente": "El trámite de una exportación se inicia con la presentación y aceptación, de una solicitud de autorización de embarque, a través de los Servicios Informáticos Electrónicos, y en la forma y con los procedimientos previstos en este Capítulo. Autorizado el embarque, embarcada la mercancía y certificado el embarque por parte del transportador, el declarante deberá presentar la declaración de exportación correspondiente, en la forma y condiciones que establezca la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). [...] En el evento en que se presenten inconsistencias, frente a lo amparado en la solicitud de autorización de embarque y la carga embarcada, la autoridad aduanera, a través de los Servicios Informáticos Electrónicos emitirá el reporte de inconsistencias, las cuales deberán ser corregidas por el transportador, dentro de las veinticuatro (24) horas siguientes a dicho reporte. PARÁGRAFO. Para los eventos de las exportaciones hacia Zona Franca, no hay lugar a la certificación de embarque de que trata el presente artículo. En estos casos será suficiente con la procedencia de la autorización de embarque para finalizar el trámite con la declaración de exportación. [...] Se considera exportación definitiva, la introducción a Zona Franca desde el Territorio Aduanero Nacional, de materias primas, partes, insumos y bienes terminados nacionales o en libre disposición, necesarios para el normal desarrollo de su objeto social a favor del Usuario Operador o Industrial de Bienes y de Servicios, siempre y cuando dicha mercancía sea efectivamente recibida por ellos.",
+    "pregunta": "Una gestora revisa dos exportaciones definitivas de una misma empresa. En la primera, por vía marítima, el sistema emitió el martes a las 10:00 un reporte de inconsistencias, porque el manifiesto relaciona dos contenedores y la solicitud de autorización de embarque ampara tres. En la segunda, la empresa vendió insumos nacionales a un usuario industrial de bienes de una zona franca, que ya los recibió; la autorización de embarque procedió y la empresa espera la certificación de embarque para presentar la declaración de exportación. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la marítima, la exportadora corrige con una declaración de corrección; en la de zona franca, debe esperar la certificación.",
+        "explicacion": "Incorrecta en ambos puntos. Las inconsistencias del reporte las corrige el transportador dentro de las 24 horas (art. 362, inc. 2), y en las exportaciones a zona franca no hay certificación de embarque (par.)."
+      },
+      {
+        "id": "B",
+        "texto": "En la marítima, el transportador corrige dentro de las 24 horas; en la de zona franca, ya puede presentar la declaración.",
+        "explicacion": "Correcta. Las inconsistencias entre la solicitud de embarque y la carga embarcada las corrige el transportador dentro de las 24 horas siguientes al reporte (art. 362, inc. 2). En la exportación a zona franca no hay certificación de embarque: basta la autorización de embarque para presentar la declaración de exportación (art. 362, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "En la marítima, el transportador corrige dentro de las 24 horas; en la de zona franca, debe esperar la certificación.",
+        "explicacion": "Incorrecta. Acierta en la corrección a cargo del transportador, pero en las exportaciones hacia zona franca no hay lugar a certificación de embarque (art. 362, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "En la marítima, la exportadora corrige con una declaración de corrección; en la de zona franca, ya puede presentar la declaración.",
+        "explicacion": "Incorrecta. Acierta en la zona franca, pero las inconsistencias del reporte de la certificación de embarque las corrige el transportador, no la exportadora (art. 362, inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: reporte de inconsistencias en una exportación marítima, y exportación a un usuario industrial de zona franca con autorización de embarque. Regla: autorizado el embarque, embarcada la mercancía y certificado el embarque, se presenta la declaración de exportación (art. 347); las inconsistencias del reporte las corrige el transportador dentro de las 24 horas (art. 362, inc. 2); en las exportaciones a zona franca no hay certificación y basta la autorización de embarque (par.). Conclusión: corrige el transportador, y la de zona franca ya puede declararse.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Declaración con datos definitivos en el embarque único con datos provisionales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 364",
+      "art. 365, inc. 1 y par."
+    ],
+    "texto_fuente": "Es la operación de cargue como embarque único de mercancías, que, por su naturaleza, características físicas o químicas o circunstancias inherentes a su comercialización, no permiten que el exportador disponga de la información definitiva al momento del embarque. [...] Cuando la exportación se hubiere tramitado como embarque único con datos provisionales, el declarante deberá presentar, dentro de los tres (3) meses siguientes al embarque, a través de los Servicios Informáticos Electrónicos, la declaración correspondiente con datos definitivos, y en la forma y condiciones que establezca la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). [...] En casos debidamente justificados, la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá prorrogar el término previsto en el inciso 1 del presente artículo, para presentar la declaración de exportación con datos definitivos.",
+    "pregunta": "Una empresa minera exportó carbón como embarque único con datos provisionales, porque el peso y la calidad definitivos se establecen en el puerto de destino. El embarque se hizo el martes 14 de abril de 2026, y la DIAN no ha concedido prórroga. Un facilitador le indica la fecha límite para presentar la declaración de exportación con datos definitivos. ¿Cuál es esa fecha?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El domingo 10 de mayo de 2026.",
+        "explicacion": "Incorrecta. Los diez primeros días del mes siguiente al primer embarque son el plazo de la declaración de consolidación de embarques fraccionados con datos definitivos, no el de un embarque único con datos provisionales."
+      },
+      {
+        "id": "B",
+        "texto": "El jueves 14 de mayo de 2026.",
+        "explicacion": "Incorrecta. Aplica un mes, que es la vigencia de la solicitud de autorización de embarque. El plazo para la declaración con datos definitivos se cuenta en meses desde el embarque, pero es mayor."
+      },
+      {
+        "id": "C",
+        "texto": "El martes 14 de julio de 2026.",
+        "explicacion": "Correcta. En el embarque único con datos provisionales, la declaración con datos definitivos se presenta dentro de los tres meses siguientes al embarque (art. 365, inc. 1): del 14 de abril al 14 de julio de 2026. La DIAN puede prorrogar ese término en casos justificados, pero aquí no lo hizo."
+      },
+      {
+        "id": "D",
+        "texto": "El miércoles 14 de octubre de 2026.",
+        "explicacion": "Incorrecta. Aplica seis meses, un plazo que la norma no prevé para esta declaración. Sin prórroga de la DIAN, el término es menor."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: embarque único con datos provisionales realizado el 14 de abril de 2026, sin prórroga. Regla: esta forma de embarque aplica a mercancías cuya información definitiva no está disponible al embarcar (art. 364), y la declaración con datos definitivos se presenta dentro de los tres meses siguientes al embarque, término que la DIAN puede prorrogar en casos justificados (art. 365). Cálculo: 14 de abril + 3 meses = martes 14 de julio de 2026. Conclusión: esa es la fecha límite.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-057",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Tránsito aduanero",
+    "subtema": "Oportunidad para solicitar el tránsito y carga ya ingresada a depósito",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 433, inc. 1",
+      "art. 438",
+      "art. 169, inc. 2 (texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "La modalidad de tránsito aduanero solo podrá solicitarse y autorizarse para las mercancías que estén consignadas o se endosen a la Nación, las entidades territoriales y las entidades descentralizadas, a un usuario de una Zona Franca, a un titular de un depósito privado, o cuando las mercancías vayan a ser sometidas a una de las siguientes modalidades de importación: [...] De conformidad con lo previsto en el artículo 169 del presente Decreto, una vez sea descargada la mercancía y sin haberla ingresado a depósito, deberá solicitarse y autorizarse la modalidad de tránsito aduanero, cuando proceda. [...] Una vez descargada la mercancía se entregará al depósito o al usuario operador de zona franca, a más tardar dentro de los dos (2) días hábiles siguientes a la presentación del informe de descargue e inconsistencias en el aeropuerto, o dentro de los cinco (5) días hábiles siguientes a la presentación del mismo, cuando el descargue se efectúe en puerto. Dentro de los términos previstos en el presente artículo y sin que la mercancía ingrese a depósito, se podrá solicitar y autorizar el régimen de tránsito, cuando este proceda.",
+    "pregunta": "Un buque descargó en Cartagena dos contenedores consignados al titular de un depósito privado ubicado en Bogotá. El informe de descargue e inconsistencias se presentó el miércoles 7 de octubre de 2026. El martes 13 de octubre, el agente de carga entregó uno de los contenedores a un depósito habilitado de Cartagena; el otro siguió en el puerto. El jueves 15 de octubre, el declarante solicitó tránsito aduanero hacia Bogotá para los dos contenedores, y un inspector debe resolver la solicitud ese mismo día. ¿Qué procede?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Autorizar el tránsito del contenedor que no ha salido del puerto y negarlo para el que ya ingresó al depósito.",
+        "explicacion": "Correcta. El tránsito procede porque la carga está consignada al titular de un depósito privado (art. 433). Debe solicitarse y autorizarse después del descargue, dentro de los cinco días hábiles siguientes al informe y sin que la mercancía haya ingresado a depósito (arts. 169 y 438). Con el festivo del 12 de octubre, el plazo iba hasta el jueves 15. El contenedor del puerto cumple; el que ingresó al depósito el 13, no."
+      },
+      {
+        "id": "B",
+        "texto": "Autorizarlo para ambos, porque el 15 de octubre todavía no había vencido el plazo de cinco días hábiles para pedirlo.",
+        "explicacion": "Incorrecta. El plazo seguía corriendo, pero el tránsito exige además que la mercancía no haya ingresado a depósito (art. 438), y uno de los contenedores ya ingresó."
+      },
+      {
+        "id": "C",
+        "texto": "Negarlo para ambos, porque el plazo de cinco días hábiles para pedir el tránsito terminó el 14 de octubre.",
+        "explicacion": "Incorrecta. Olvida el festivo del lunes 12 de octubre. Los cinco días hábiles siguientes al informe del 7 son el 8, el 9, el 13, el 14 y el 15 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "Negarlo para el que está en el puerto, porque el tránsito exige que antes la carga ingrese a un depósito habilitado.",
+        "explicacion": "Incorrecta. Invierte la regla: el tránsito se solicita y autoriza sin que la mercancía haya ingresado a depósito (arts. 169 y 438)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: informe de descargue el miércoles 7 de octubre de 2026; un contenedor ingresó a depósito el 13 y el otro sigue en el puerto; solicitud el 15. Regla: el tránsito procede para mercancía consignada al titular de un depósito privado (art. 433) y debe solicitarse y autorizarse después del descargue, sin que la mercancía haya ingresado a depósito y, en puerto, dentro de los cinco días hábiles siguientes al informe (arts. 169 y 438). Cálculo: con el festivo del 12, el plazo llega al 15. Conclusión: procede solo para el contenedor que sigue en el puerto.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ADU-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Tránsito aduanero",
+    "subtema": "Continuación de viaje en el transporte multimodal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 450 y par.",
+      "art. 453"
+    ],
+    "texto_fuente": "Para movilizar mercancías de procedencia extranjera con suspensión de tributos aduaneros por el territorio aduanero nacional, al amparo de un documento de transporte multimodal, se requiere que el Operador de Transporte Multimodal se encuentre debidamente inscrito en el Registro de Operadores de Transporte Multimodal a cargo del Ministerio de Transporte. PARÁGRAFO. La inscripción de los Operadores de Transporte Multimodal ante la autoridad aduanera, se entenderá surtida con la homologación del registro efectuado ante el Ministerio de Transporte. [...] Para la autorización de la Continuación de Viaje por el territorio aduanero nacional al amparo de un contrato de transporte multimodal, o cualquier documento que haga sus veces, deberá presentarse copia del documento de transporte en el que se especifique el destino final de las mercancías. La ejecución del transporte multimodal deberá realizarse en un medio de transporte perteneciente a los Operadores de Transporte Multimodal, cuyo control está a cargo del Ministerio de Transporte o subcontratados con empresas transportadoras legalmente constituidas. La subcontratación que realice el Operador de Transporte Multimodal para la ejecución de la operación, no lo exonera de su responsabilidad de finalizar la operación en el término autorizado por la Aduana de Partida y por el pago de los tributos aduaneros suspendidos en caso de pérdida de la mercancía. En este caso, la Aduana autorizará la Continuación de Viaje verificando que el Operador de Transporte Multimodal se encuentre con su inscripción vigente en el respectivo registro de la Aduana y que la empresa transportadora subcontratada se encuentre inscrita ante la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), para realizar operaciones de tránsito o cabotaje, firmará los documentos de viaje y establecerá el plazo para la finalización de la operación. Este procedimiento deberá surtirse dentro del mismo día en que se efectúe la solicitud para la Continuación de Viaje.",
+    "pregunta": "Un operador de transporte multimodal inscrito en el registro del Ministerio de Transporte trae a Buenaventura contenedores amparados en un documento de transporte multimodal con destino final Bogotá. Para el trayecto terrestre subcontrató una empresa de camiones que no está inscrita ante la DIAN para operaciones de tránsito ni de cabotaje. El lunes a las 9:00 solicita la autorización de continuación de viaje. Una inspectora debe decidir. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Autorizarla, porque con la subcontratación la empresa de camiones asume la responsabilidad de finalizar la operación.",
+        "explicacion": "Incorrecta. La subcontratación no exonera al operador de transporte multimodal de su responsabilidad por finalizar la operación en el término autorizado ni por los tributos suspendidos en caso de pérdida (art. 453)."
+      },
+      {
+        "id": "B",
+        "texto": "Dejar abierta la solicitud cinco días hábiles y autorizarla cuando la empresa de camiones obtenga la inscripción.",
+        "explicacion": "Incorrecta. El procedimiento de autorización de la continuación de viaje debe surtirse el mismo día de la solicitud (art. 453, último inciso); no se deja abierto a la espera de una inscripción."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir una declaración de tránsito aduanero con garantía específica del 40% del valor FOB, en lugar de la continuación.",
+        "explicacion": "Incorrecta. La carga amparada en un documento de transporte multimodal con destino final en el país se moviliza con la autorización de continuación de viaje. Cambiar la operación a otra modalidad no resuelve el requisito incumplido."
+      },
+      {
+        "id": "D",
+        "texto": "No autorizarla con esa empresa: la transportadora que el operador subcontrate debe estar inscrita ante la DIAN.",
+        "explicacion": "Correcta. Para autorizar la continuación de viaje, la aduana verifica que el operador tenga inscripción vigente, que se entiende surtida con la homologación del registro del Ministerio de Transporte, y que la empresa subcontratada esté inscrita ante la DIAN para tránsito o cabotaje (arts. 450 y 453). La empresa de camiones no lo está."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: operador multimodal inscrito ante el Ministerio de Transporte que subcontrató una empresa no inscrita ante la DIAN para tránsito ni cabotaje. Regla: la inscripción del operador ante la aduana se entiende surtida con la homologación del registro del Ministerio (art. 450, par.); la aduana autoriza la continuación de viaje si el operador tiene inscripción vigente y la empresa subcontratada está inscrita ante la DIAN, el mismo día de la solicitud, y la subcontratación no exonera al operador (art. 453). Conclusión: no puede autorizarse con esa empresa.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Zonas francas",
+    "subtema": "Traslado de mercancías entre zonas francas de distinta jurisdicción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 492, inc. 4 y par. (inc. 4: texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "Cuando estas operaciones impliquen el traslado de bienes de una zona franca a otra que se encuentre en una jurisdicción aduanera diferente, el usuario industrial, o comercial deberá presentar una declaración de tránsito aduanero. Cuando el traslado de mercancías no implique cambio de jurisdicción aduanera, el usuario operador trasladará la mercancía al amparo de una planilla de envío. [...] Tratándose de mercancías nacionales, en libre disposición o producidas en zona franca con componentes nacionales, el traslado de las mercancías a otra zona franca, al depósito franco o al depósito de provisiones para consumo y para llevar en la aduana de destino, no será sometido al procedimiento establecido en el presente artículo. En este caso, el usuario operador o administrador de la zona franca autorizará la operación mediante formulario de movimiento de mercancías correspondiente.",
+    "pregunta": "Un usuario industrial de bienes de una zona franca de Bogotá vende dos lotes a un usuario industrial de una zona franca de Barranquilla, que está en otra jurisdicción aduanera: insumos de origen extranjero que mantiene bajo control aduanero, y repuestos de fabricación nacional que compró en el mercado colombiano. Un inspector revisa con qué documento debe ampararse cada traslado. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambos lotes, con declaración de tránsito aduanero del usuario industrial, porque los dos cambian de jurisdicción aduanera.",
+        "explicacion": "Incorrecta. Las mercancías nacionales no se someten al procedimiento del art. 492: basta el formulario de movimiento de mercancías autorizado por el usuario operador (par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Los insumos extranjeros, con planilla de envío del usuario operador; los repuestos nacionales, con formulario de movimiento.",
+        "explicacion": "Incorrecta. La planilla de envío del usuario operador sirve cuando el traslado no implica cambio de jurisdicción. Entre Bogotá y Barranquilla, los insumos extranjeros requieren declaración de tránsito aduanero (inc. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Los insumos extranjeros, con declaración de tránsito aduanero; los repuestos nacionales, con formulario de movimiento.",
+        "explicacion": "Correcta. Los insumos extranjeros que pasan a una zona franca de otra jurisdicción se trasladan con declaración de tránsito aduanero presentada por el usuario industrial (art. 492, inc. 4). Los repuestos nacionales no se someten a ese procedimiento: el usuario operador autoriza el traslado con formulario de movimiento de mercancías (par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Los insumos extranjeros, con planilla de envío del usuario operador; los repuestos nacionales, con declaración de tránsito.",
+        "explicacion": "Incorrecta en ambos puntos. Invierte las reglas: la planilla de envío es para traslados sin cambio de jurisdicción, y las mercancías nacionales no requieren declaración de tránsito."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: traslado entre zonas francas de distinta jurisdicción de insumos extranjeros y de repuestos nacionales. Regla: si el traslado implica cambio de jurisdicción, el usuario industrial o comercial presenta declaración de tránsito aduanero; sin cambio de jurisdicción, basta la planilla de envío del usuario operador (art. 492, inc. 4). Las mercancías nacionales o en libre disposición no se someten a ese procedimiento: el usuario operador autoriza el traslado con formulario de movimiento de mercancías (par.). Conclusión: tránsito para los insumos y formulario para los repuestos.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-060",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Zonas francas",
+    "subtema": "Salida temporal de bienes de capital para reparación fuera de la zona franca",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 490, incs. 1 y 2",
+      "art. 494, num. 15",
+      "art. 489, par."
+    ],
+    "texto_fuente": "El usuario operador podrá autorizar la salida temporal de bienes de capital, equipos, herramientas, partes o sus repuestos, y demás mercancías de la zona franca que lo requieran, con destino al resto del territorio aduanero nacional, para su reparación, revisión, mantenimiento, pruebas técnicas, análisis o procesos de certificación. El término de permanencia de los bienes fuera de la zona franca será hasta de tres (3) meses y podrá ser prorrogado por una sola vez y por término igual, sólo en causas claramente justificadas. El usuario operador informará a la autoridad aduanera de la jurisdicción de la zona franca sobre dichas autorizaciones en el momento en que estas se produzcan. [...] 15. Informar a la autoridad aduanera sobre el incumplimiento del término otorgado a los usuarios calificados para el reingreso de los bienes que salieron para procesamiento parcial, reparación, revisión o mantenimiento. [...] El usuario operador establecerá el término durante el cual estas mercancías podrán permanecer por fuera de la zona franca, que no podrá exceder de seis (6) meses e informará a la autoridad aduanera de la jurisdicción de la zona franca sobre dichas autorizaciones en el momento en que se produzca. Previa justificación debidamente aceptada por el usuario operador, este plazo se podrá prorrogar hasta por tres (3) meses.",
+    "pregunta": "Un usuario industrial de bienes de una zona franca sacó una fresadora CNC, bien de capital de su planta, hacia un taller de Medellín para repararla. El usuario operador autorizó la salida temporal el lunes 2 de marzo de 2026 por tres meses y, el 1 de junio, como el taller esperaba un repuesto importado, la prorrogó por tres meses más. El 25 de agosto, el taller pide ampliar el plazo hasta octubre. Un inspector de la Dirección Seccional revisa el caso. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Puede ampliarse hasta octubre: estas salidas admiten seis meses de permanencia y una prórroga de tres meses más.",
+        "explicacion": "Incorrecta. Seis meses más tres de prórroga es el régimen del procesamiento parcial fuera de la zona franca (art. 489, par.). Para reparación, revisión o mantenimiento, la permanencia es de hasta tres meses, prorrogable una vez por igual término (art. 490)."
+      },
+      {
+        "id": "B",
+        "texto": "No cabe ampliarlo: el plazo máximo vence el 2 de septiembre y, si no reingresa, el operador lo informa a la DIAN.",
+        "explicacion": "Correcta. La salida para reparación permite hasta tres meses fuera de la zona franca, prorrogables por una sola vez y por igual término (art. 490): del 2 de marzo al 2 de junio y, con la prórroga, hasta el 2 de septiembre. No cabe otra ampliación, y si la máquina no reingresa a tiempo, el usuario operador debe informar el incumplimiento a la autoridad aduanera (art. 494, num. 15)."
+      },
+      {
+        "id": "C",
+        "texto": "Puede ampliarse otros tres meses, con tal de que el taller justifique claramente la nueva demora de la reparación.",
+        "explicacion": "Incorrecta. La prórroga procede por una sola vez, y ya se concedió el 1 de junio. Una nueva justificación no habilita una segunda."
+      },
+      {
+        "id": "D",
+        "texto": "No cabe ampliarlo, y el plazo ya había vencido el 2 de junio, porque la prórroga no podía pasar de un mes.",
+        "explicacion": "Incorrecta. La prórroga es por un término igual al inicial, es decir, de tres meses. Por eso el plazo llega hasta el 2 de septiembre."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: salida temporal para reparación autorizada el 2 de marzo por tres meses y prorrogada por tres más; el taller pide ampliar hasta octubre. Regla: los bienes de capital pueden salir de la zona franca para reparación hasta por tres meses, prorrogables por una sola vez y por igual término en causas justificadas (art. 490); el usuario operador informa a la DIAN el incumplimiento del término de reingreso (art. 494, num. 15). Cálculo: 2 de junio + 3 meses = 2 de septiembre. Conclusión: no cabe otra ampliación.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
   }
 ]

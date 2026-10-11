@@ -213,9 +213,9 @@ export const CONVOCATORIAS: Convocatoria[] = [
       },
     ],
     cobertura:
-      'Casos sobre evaluación de los aprendizajes (SIEE), educación inclusiva (PIAR y ajustes razonables), convivencia escolar, Estatuto de Profesionalización Docente, concurso, jornada y traslados. Para directivos, gobierno escolar, PEI, Fondos de Servicios Educativos y comité de convivencia. Además, lectura crítica y razonamiento cuantitativo.',
+      'Pedagogía y normativa: evaluación de los aprendizajes (SIEE), educación inclusiva, convivencia escolar, competencias del manual de funciones (Resolución 3842 de 2022), primaria, preescolar y orientación, y la carrera del Decreto Ley 1278. Saber disciplinar con los Estándares Básicos del MEN: primaria (matemáticas, lenguaje y ciencias), matemáticas y lengua castellana de secundaria. Para directivos, gestión escolar. Además, lectura crítica y razonamiento cuantitativo.',
     faltantes:
-      'No cubrimos los conocimientos disciplinares de cada área de enseñanza (matemáticas, lenguaje, ciencias, etc.) ni la prueba psicotécnica.',
+      'Aún no cubrimos el saber disciplinar de inglés, educación física, artística, tecnología ni preescolar como área, ni la prueba psicotécnica. Ciencias naturales y sociales de secundaria están en preparación.',
     fuentes: [
       {
         label: 'Proyectos de acuerdo y OPEC preliminar (CNSC)',

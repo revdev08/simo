@@ -1,0 +1,1044 @@
+[
+  {
+    "id": "TC-MAT-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: proporcionalidad inversa en dos tramos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Justifico el uso de representaciones y procedimientos en situaciones de proporcionalidad directa e inversa.",
+    "pregunta": "Un docente de matemáticas de séptimo grado prepara la clave de este problema para una evaluación: «Seis obreros, trabajando al mismo ritmo, terminarían el enchape de un colegio en 20 días. Al cabo de 8 días de trabajo se suman 3 obreros más, que rinden igual que los primeros». Antes de aplicar la prueba quiere tener la respuesta correcta y anticipar los errores de sus estudiantes. ¿En cuántos días, contados desde el inicio de la obra, queda terminado el enchape?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En 13 1/3 días: con nueve obreros, la obra completa tarda 20 × 6 ÷ 9 días.",
+        "explicacion": "Incorrecta. Aplica bien la proporcionalidad inversa, pero a la obra completa, como si los nueve obreros hubieran trabajado desde el primer día. Olvida que los primeros 8 días se trabajaron con seis."
+      },
+      {
+        "id": "B",
+        "texto": "En 14 días: los obreros aumentan un 50 %, así que los 12 días restantes bajan a la mitad.",
+        "explicacion": "Incorrecta. Supone que si los obreros aumentan un 50 %, el tiempo disminuye un 50 %. En la proporcionalidad inversa el tiempo se multiplica por 6/9 = 2/3, es decir, baja un tercio y no la mitad."
+      },
+      {
+        "id": "C",
+        "texto": "En 16 días: lo que falta equivale a 12 días de seis obreros, y nueve obreros lo hacen en 8 días.",
+        "explicacion": "Correcta. La obra equivale a 6 × 20 = 120 jornadas de obrero; en 8 días se hicieron 48 y faltan 72. Nueve obreros las hacen en 72 ÷ 9 = 8 días, y el total es 8 + 8 = 16 días."
+      },
+      {
+        "id": "D",
+        "texto": "En 26 días: los 12 días que faltan se multiplican por 9 ÷ 6, al haber ahora más obreros.",
+        "explicacion": "Incorrecta. Trata la relación entre número de obreros y tiempo como proporcionalidad directa (más obreros, más días): 12 × 9/6 = 18 y 8 + 18 = 26. A más obreros, menos días."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la obra tiene dos tramos, 8 días con seis obreros y el resto con nueve. Regla: obreros y tiempo son inversamente proporcionales, así que se conserva el producto obreros × días (120 jornadas). Cálculo: faltan 120 − 48 = 72 jornadas y 72 ÷ 9 = 8 días. Conclusión: la obra termina a los 16 días. Los distractores salen de aplicar la regla a toda la obra, de restar el mismo porcentaje o de usar proporcionalidad directa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: porcentajes sucesivos (IVA y descuento)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
+    "pregunta": "En una clase de séptimo grado sobre porcentajes, una docente presenta dos cotizaciones de un mismo televisor cuyo precio sin IVA es $1.200.000. La tienda P descuenta primero el 10 % y después liquida el IVA del 19 % sobre el valor rebajado. La tienda Q liquida primero el IVA del 19 % y después descuenta el 10 % sobre el total con IVA. Los estudiantes discuten cuál de las dos cobra menos. ¿Qué conclusión debe validar la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "P cobra $1.285.200 y Q cobra $1.308.000; conviene que el descuento se haga antes del IVA.",
+        "explicacion": "Incorrecta. Calcula el descuento de Q sobre el precio sin IVA ($120.000) y no sobre el total con IVA, como dice el caso. Así llega a $1.428.000 − $120.000 = $1.308.000 y cree que el orden de las operaciones cambia el precio."
+      },
+      {
+        "id": "B",
+        "texto": "Las dos cobran $1.285.200; el precio final es el precio sin IVA multiplicado por 1,071.",
+        "explicacion": "Correcta. Cada cambio porcentual es un factor: 0,90 y 1,19. P cobra 1.200.000 × 0,90 × 1,19 y Q cobra 1.200.000 × 1,19 × 0,90; como el producto es conmutativo, ambas cobran $1.285.200, que es 1,071 veces el precio sin IVA (un aumento neto del 7,1 %)."
+      },
+      {
+        "id": "C",
+        "texto": "Las dos cobran $1.308.000; el precio final equivale a aumentar en un 9 % el precio sin IVA.",
+        "explicacion": "Incorrecta. Combina los porcentajes sumándolos (19 % − 10 % = 9 %), como si ambos se aplicaran sobre la misma base. Los cambios porcentuales sucesivos se componen multiplicando: 1,19 × 0,90 = 1,071."
+      },
+      {
+        "id": "D",
+        "texto": "Q cobra menos que P: su descuento de $142.800 supera el descuento de $120.000 de P.",
+        "explicacion": "Incorrecta. Se fija solo en el monto del descuento. Es cierto que Q descuenta más dinero, pero lo hace sobre un valor que ya incluye un IVA mayor; al final, los dos precios coinciden."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: cada cambio porcentual se aplica sobre el resultado del anterior. Regla: aumentar un 19 % es multiplicar por 1,19 y descontar un 10 % es multiplicar por 0,90; la multiplicación es conmutativa. Cálculo: 1.200.000 × 1,19 × 0,90 = 1.285.200 en ambas tiendas. Conclusión: pagan lo mismo, un 7,1 % más que el precio sin IVA. Los errores típicos son sumar los porcentajes (9 %) o descontar sobre la base equivocada.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: justificación en teoría de números (divisibilidad por 6)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
+    "pregunta": "En undécimo grado, un docente pide a sus estudiantes justificar que el producto de tres números naturales consecutivos es múltiplo de 6, cualquiera que sea el primero de ellos. Recibe los cuatro argumentos que aparecen abajo y debe señalar al grupo cuál es válido como demostración. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se comprobó con 1·2·3, 2·3·4, 3·4·5, 7·8·9 y 10·11·12, y cada uno de los productos obtenidos resultó múltiplo de 6.",
+        "explicacion": "Incorrecta. Verificar casos particulares sirve para formular la conjetura, pero no la demuestra: ninguna cantidad finita de ejemplos cubre todos los naturales. Es el error de tomar la evidencia inductiva por prueba."
+      },
+      {
+        "id": "B",
+        "texto": "La suma n + (n + 1) + (n + 2) = 3(n + 1) es múltiplo de 3; por eso el producto de esos tres números es múltiplo de 6.",
+        "explicacion": "Incorrecta. La igualdad de la suma es cierta, pero de una propiedad de la suma no se deduce una del producto; además, ser múltiplo de 3 no implica ser múltiplo de 6. Confunde operaciones y salta a una conclusión que no se sigue."
+      },
+      {
+        "id": "C",
+        "texto": "El producto es n³ + 3n² + 2n; como 3n² es múltiplo de 3 y 2n es múltiplo de 2, la expresión completa es múltiplo de 6.",
+        "explicacion": "Incorrecta. El desarrollo algebraico es correcto, pero que un sumando sea múltiplo de 3 y otro de 2 no hace que la suma sea múltiplo de 6, y el término n³ queda sin analizar. Es el error de aplicar la divisibilidad término a término."
+      },
+      {
+        "id": "D",
+        "texto": "Entre tres consecutivos hay un par y un múltiplo de 3; como 2 y 3 son primos entre sí, el producto es múltiplo de 6.",
+        "explicacion": "Correcta. De dos consecutivos uno es par, y de tres consecutivos uno es múltiplo de 3. El producto es entonces divisible por 2 y por 3, y como mcd(2, 3) = 1, es divisible por 2 × 3 = 6. El argumento vale para cualquier n."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se pide una justificación para cualquier natural, no una verificación con ejemplos. Regla: si un número es divisible por dos números primos entre sí, es divisible por su producto. Entre tres consecutivos hay un par y un múltiplo de 3, luego el producto es múltiplo de 6. Los demás argumentos confunden ejemplos con prueba, suma con producto o la divisibilidad de los sumandos con la de la suma.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: racionales e irracionales (raíces y expansiones decimales)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Analizo representaciones decimales de los números reales para diferenciar entre racionales e irracionales.",
+    "pregunta": "Para una actividad de clasificación de números reales en décimo grado, un docente prepara cuatro tarjetas y quiere que exactamente una de ellas muestre un número irracional, para discutir con el grupo por qué lo es. ¿Cuál es esa tarjeta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "√0,9, la raíz cuadrada de un número decimal positivo menor que la unidad.",
+        "explicacion": "Correcta. √0,9 no es 0,3, porque 0,3² = 0,09. Como 0,9 = 90/100, √0,9 = √90/10, y 90 no es un cuadrado perfecto, así que √90 es irracional. Su expansión decimal, 0,9486832…, es infinita y no periódica."
+      },
+      {
+        "id": "B",
+        "texto": "√2 · √18, el producto de dos raíces cuadradas de números que no son cuadrados perfectos.",
+        "explicacion": "Incorrecta. Supone que el producto de dos irracionales es irracional. √2 · √18 = √36 = 6, un número natural."
+      },
+      {
+        "id": "C",
+        "texto": "√2,25, la raíz cuadrada de un número decimal positivo mayor que la unidad.",
+        "explicacion": "Incorrecta. Supone que la raíz cuadrada de un decimal no entero es irracional. 2,25 = 9/4 es el cuadrado de 3/2, así que √2,25 = 1,5."
+      },
+      {
+        "id": "D",
+        "texto": "0,1666…, un decimal en el que solo la cifra 6 se repite de manera indefinida.",
+        "explicacion": "Incorrecta. Supone que solo es periódico el decimal cuyo bloque se repite desde la primera cifra después de la coma. 0,1666… es periódico mixto y vale 1/6: es racional."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay que analizar cada tarjeta, no su apariencia. Regla: un número es racional si es cociente de enteros, es decir, si su expansión decimal es finita o periódica. √2 · √18 = 6, √2,25 = 1,5 y 0,1666… = 1/6 son racionales. En cambio, √0,9 = √90/10 y 90 no es cuadrado perfecto: su expansión 0,9486… es infinita y no periódica. El error típico es creer que √0,9 = 0,3, cuando 0,3² = 0,09. Los distractores reflejan tres creencias: que el producto de irracionales es irracional, que toda raíz de un decimal es irracional y que un periódico mixto no es periódico.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-005",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: logaritmos en una escala (Richter) con diferencia no entera",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico y utilizo la potenciación, la radicación y la logaritmación para representar situaciones matemáticas y no matemáticas y para resolver problemas.",
+    "pregunta": "Para una clase de noveno grado sobre logaritmos, una docente usa el modelo M = log(A/A₀), con logaritmo en base 10, donde M es la magnitud de un sismo en la escala de Richter, A es la amplitud máxima de la onda registrada por el sismógrafo y A₀ es una amplitud de referencia fija. En la misma estación se registran dos sismos: uno de magnitud 4,5 y otro de magnitud 6. ¿Cuántas veces mayor es, aproximadamente, la amplitud registrada del segundo que la del primero?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unas 15 veces: cada unidad de magnitud multiplica la amplitud por 10 y la diferencia es de 1,5 unidades.",
+        "explicacion": "Incorrecta. Multiplica el factor 10 por la diferencia de magnitudes (10 × 1,5 = 15), como si el exponente fuera un factor. La diferencia de magnitudes es un exponente: la razón de amplitudes es 10^1,5, no 10 × 1,5."
+      },
+      {
+        "id": "B",
+        "texto": "Unas 22 veces: es 10 elevado al cociente entre las dos magnitudes, 6 ÷ 4,5.",
+        "explicacion": "Incorrecta. Confunde el logaritmo de un cociente con el cociente de los logaritmos: log(A₂/A₁) = M₂ − M₁, no M₂ ÷ M₁. Así obtiene 10^(6 ÷ 4,5) = 10^(4/3) ≈ 21,5."
+      },
+      {
+        "id": "C",
+        "texto": "Unas 50 veces: la primera unidad multiplica la amplitud por 10 y la media unidad restante, por 5.",
+        "explicacion": "Incorrecta. Descompone bien 10^1,5 = 10 × 10^0,5, pero toma 10^0,5 como la mitad de 10. En realidad 10^0,5 = √10 ≈ 3,16, y 10 × 3,16 ≈ 31,6."
+      },
+      {
+        "id": "D",
+        "texto": "Unas 32 veces: es 10 elevado a la diferencia entre las dos magnitudes, 6 − 4,5.",
+        "explicacion": "Correcta. De M = log(A/A₀) se sigue A = A₀ · 10^M, así que A₂/A₁ = 10^6 ÷ 10^4,5 = 10^1,5 = 10 · √10 ≈ 31,6. La diferencia de logaritmos es el logaritmo del cociente."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: M es el logaritmo decimal de A/A₀, es decir, A = A₀ · 10^M. Regla: log A₂ − log A₁ = log(A₂/A₁). Cálculo: A₂/A₁ = 10^(6 − 4,5) = 10^1,5 = 10 · √10 ≈ 31,6. Conclusión: la amplitud del segundo sismo es unas 32 veces la del primero. Los errores típicos son multiplicar 10 por la diferencia (15), dividir las magnitudes en lugar de restarlas (unas 22) o tomar 10^0,5 como 5 (50).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: interés compuesto y logaritmos (tiempo de duplicación)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, octavo a noveno grado",
+      "Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Identifico y utilizo la potenciación, la radicación y la logaritmación para representar situaciones matemáticas y no matemáticas y para resolver problemas. [...] Justifico la pertinencia de un cálculo exacto o aproximado en la solución de un problema y lo razonable o no de las respuestas obtenidas.",
+    "pregunta": "En un proyecto de educación financiera de décimo grado, un docente modela un ahorro de $2.000.000 que gana un interés compuesto del 3 % mensual, sin retiros ni nuevos depósitos. Pide a los estudiantes el número del primer mes al final del cual el saldo supera $4.000.000, y quiere que justifiquen la respuesta con logaritmos. ¿Cuál es la respuesta correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al final del mes 23",
+        "explicacion": "Incorrecta. Plantea bien la ecuación 1,03ⁿ = 2 (n ≈ 23,45), pero redondea al entero más cercano. Al final del mes 23 el saldo es de unos $3.947.000, que aún no llega a $4.000.000: en este contexto se toma el entero siguiente."
+      },
+      {
+        "id": "B",
+        "texto": "Al final del mes 24",
+        "explicacion": "Correcta. El saldo al final del mes n es 2.000.000 × 1,03ⁿ. De 1,03ⁿ = 2 resulta n = log 2 / log 1,03 ≈ 23,45. Al final del mes 23 hay unos $3.947.000 y al final del mes 24, unos $4.066.000; el primer mes que supera el doble es el 24."
+      },
+      {
+        "id": "C",
+        "texto": "Al final del mes 25",
+        "explicacion": "Incorrecta. Es un error de indexación: usar 2.000.000 × 1,03ⁿ⁻¹ para el saldo al final del mes n deja el primer mes sin intereses y retrasa el resultado un mes. En el caso, el saldo al final del mes n ya incluye n meses de interés."
+      },
+      {
+        "id": "D",
+        "texto": "Al final del mes 34",
+        "explicacion": "Incorrecta. Calcula el interés sobre el capital inicial en todos los meses (interés simple): 3 % de $2.000.000 son $60.000 al mes, y harían falta más de 33,3 meses para ganar otros $2.000.000. En el interés compuesto, el interés de cada mes se calcula sobre el saldo acumulado y el doble se alcanza antes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el interés es compuesto y se pregunta por el primer mes completo en que el saldo supera el doble. Regla: 2.000.000 × 1,03ⁿ > 4.000.000 equivale a n > log 2 / log 1,03 ≈ 23,45; como n cuenta meses completos, se toma el entero siguiente. Conclusión: mes 24. Los distractores salen de redondear hacia abajo (23), de un error de indexación (25) y de usar interés simple (34).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: expresión general de la suma de una progresión aritmética",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Uso procesos inductivos y lenguaje algebraico para formular y poner a prueba conjeturas.",
+    "pregunta": "Un docente de noveno grado prepara un problema con el auditorio del colegio, que tiene 15 filas de sillas: la primera fila tiene 20 sillas y cada fila tiene 3 sillas más que la anterior. Pedirá a sus estudiantes una expresión para el total de sillas de las primeras n filas, con la que luego calcularán el total del auditorio. Antes de la clase prepara la clave. ¿Cuál es la expresión correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sₙ = n(3n + 37)/2",
+        "explicacion": "Correcta. La fila n tiene aₙ = 20 + 3(n − 1) = 3n + 17 sillas, y la suma de una progresión aritmética es Sₙ = n(a₁ + aₙ)/2 = n(20 + 3n + 17)/2 = n(3n + 37)/2. Da 20, 43 y 69 sillas para 1, 2 y 3 filas, y 615 para las 15 filas."
+      },
+      {
+        "id": "B",
+        "texto": "Sₙ = 20n + 3(n − 1)",
+        "explicacion": "Incorrecta. Suma una sola vez el aumento de la última fila, 3(n − 1), en lugar de los aumentos de todas las filas. Coincide con los datos para 1 y 2 filas (20 y 43), pero para 3 filas da 66 en lugar de 69: es una conjetura validada con muy pocos casos."
+      },
+      {
+        "id": "C",
+        "texto": "Sₙ = n(3n + 40)/2",
+        "explicacion": "Incorrecta. Usa aₙ = 20 + 3n, con un incremento de más, como si la primera fila ya tuviera 3 sillas extra. Para una fila daría 43/2 = 21,5 sillas, lo que la descarta al ponerla a prueba con n = 1."
+      },
+      {
+        "id": "D",
+        "texto": "Sₙ = 20n + 3n(n − 1)",
+        "explicacion": "Incorrecta. Las sillas extra suman 3 × (0 + 1 + … + (n − 1)) = 3n(n − 1)/2, y esta expresión olvida dividir entre 2. Acierta con una fila, pero con dos da 46 sillas en lugar de 43."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las filas forman una progresión aritmética con a₁ = 20 y d = 3. Regla: aₙ = a₁ + (n − 1)d y Sₙ = n(a₁ + aₙ)/2. Cálculo: aₙ = 3n + 17 y Sₙ = n(3n + 37)/2, que da 20, 43 y 69 para las tres primeras filas y 615 para las 15. Conclusión: la expresión correcta es n(3n + 37)/2. Los distractores salen de sumar un solo aumento, contar un incremento de más u olvidar dividir entre 2; probarlos con n = 3 los descarta a todos, aunque uno de ellos acierta con 1 y 2 filas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: modelación con función cuadrática (área máxima)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Modelo situaciones de variación con funciones polinómicas.",
+    "pregunta": "Para un proyecto de huerta escolar, una docente de noveno grado plantea: hay 60 m de malla para cercar un terreno rectangular que se apoya en un muro largo del colegio, de modo que el lado pegado al muro no lleva malla. Antes de la clase verifica qué dimensiones dan la mayor área posible. ¿Cuáles son esas dimensiones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dos lados de 15 m perpendiculares al muro y uno de 30 m paralelo a ese muro; área de 450 m².",
+        "explicacion": "Correcta. Si x es cada lado perpendicular al muro, el lado paralelo mide 60 − 2x y el área es A(x) = x(60 − 2x) = −2x² + 60x. El vértice está en x = 60/4 = 15, así que las dimensiones son 15 m y 30 m, con 450 m²."
+      },
+      {
+        "id": "B",
+        "texto": "Tres lados de 20 m, uno paralelo al muro y dos perpendiculares a él; área de 400 m².",
+        "explicacion": "Incorrecta. Generaliza que el cuadrado es el rectángulo de mayor área. Eso vale cuando la malla rodea los cuatro lados; aquí se cercan tres y 20 × 20 = 400 m² < 450 m²."
+      },
+      {
+        "id": "C",
+        "texto": "Un cuadrado de 15 m de lado, con la malla repartida en sus cuatro lados; área de 225 m².",
+        "explicacion": "Incorrecta. Ignora el muro y reparte la malla en los cuatro lados. Resuelve otro problema y obtiene un área mucho menor."
+      },
+      {
+        "id": "D",
+        "texto": "Dos lados de 12 m perpendiculares al muro y uno de 36 m paralelo a él; área de 432 m².",
+        "explicacion": "Incorrecta. Sale de tabular x de 6 en 6 (6, 12, 18, 24) y tomar el mayor valor de la tabla. El máximo de una muestra no es el máximo de la función: está en x = 15, entre 12 y 18, que dan el mismo valor (432 m²)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: solo se cercan tres lados, porque el cuarto es el muro. Regla: el área A(x) = x(60 − 2x) es una función cuadrática con máximo en el vértice, x = −b/(2a) = 15. Cálculo: lados de 15 m y 30 m, con A = 450 m². Conclusión: dos lados de 15 m y uno de 30 m. Los distractores salen de suponer que el cuadrado es el óptimo en cualquier caso, de ignorar el muro o de tomar el máximo de una tabla con saltos grandes.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: sistema de ecuaciones lineales 2 × 2 con un dato que no entra en el sistema",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico diferentes métodos para solucionar sistemas de ecuaciones lineales.",
+    "pregunta": "Una docente de octavo grado prepara un problema con datos de una función de teatro del colegio: se entregaron 126 boletas, de las cuales 6 fueron de cortesía y no se cobraron; las demás se vendieron, unas para adultos a $8.000 y otras para estudiantes a $5.000, y se recaudaron $750.000 en total. Antes de la clase verifica la solución del sistema de ecuaciones que plantearán sus estudiantes. ¿Cuántas boletas de cada tipo se vendieron?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "40 boletas de adulto y 86 boletas de estudiante.",
+        "explicacion": "Incorrecta. Plantea x + y = 126 e incluye las 6 boletas de cortesía entre las vendidas. La pareja cumple la ecuación del dinero (320.000 + 430.000 = 750.000), pero suma 126 boletas, no las 120 que se vendieron."
+      },
+      {
+        "id": "B",
+        "texto": "70 boletas de adulto y 50 boletas de estudiante.",
+        "explicacion": "Incorrecta. Suma 120 boletas, pero intercambia las variables al interpretar la solución: con 70 boletas de adulto se recaudarían $810.000."
+      },
+      {
+        "id": "C",
+        "texto": "50 boletas de adulto y 70 boletas de estudiante.",
+        "explicacion": "Correcta. Se vendieron 126 − 6 = 120 boletas. Con x + y = 120 y 8.000x + 5.000y = 750.000, al sustituir y = 120 − x queda 3.000x = 150.000, de donde x = 50 y y = 70. Verificación: 400.000 + 350.000 = 750.000."
+      },
+      {
+        "id": "D",
+        "texto": "40 boletas de adulto y 80 boletas de estudiante.",
+        "explicacion": "Incorrecta. Resuelve el sistema con las 126 boletas y al final resta las 6 de cortesía de las de estudiante. La pareja suma 120, pero recauda $720.000: el ajuste hecho después de resolver rompe la ecuación del dinero."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: de las 126 boletas, 6 no se cobraron, así que se vendieron 120. Regla: la solución de un sistema debe satisfacer todas sus ecuaciones, y cada ecuación debe describir la situación. Cálculo: x + y = 120 y 8.000x + 5.000y = 750.000 dan x = 50 (adultos) y y = 70 (estudiantes). Conclusión: 50 y 70. Los distractores incluyen las cortesías en el total, las restan después de resolver o intercambian las variables; todos se detectan al verificar las dos condiciones.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: tasa de cambio media (pendiente de la secante) de una función decreciente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico y utilizo diferentes maneras de definir y medir la pendiente de una curva que representa en el plano cartesiano situaciones de variación.",
+    "pregunta": "En noveno grado, un docente modela la altura de una pelota que se deja caer desde la terraza de un edificio con h(t) = 44,1 − 4,9t², donde h es la altura sobre el suelo en metros y t el tiempo en segundos desde que se suelta. Pide calcular la tasa de cambio media de h entre t = 1 s y t = 3 s. ¿Cuál es el resultado correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "19,6 m/s",
+        "explicacion": "Incorrecta. El valor absoluto es correcto, pero omite el signo: la altura disminuye, así que su tasa de cambio media es negativa. Confunde la tasa de cambio de la altura con la rapidez de la pelota."
+      },
+      {
+        "id": "B",
+        "texto": "−14,7 m/s",
+        "explicacion": "Incorrecta. Calcula [h(3) − h(0)] / (3 − 0) = (0 − 44,1)/3 = −14,7, la tasa media entre 0 s y 3 s. Toma como punto de partida el instante en que se suelta la pelota y no t = 1 s."
+      },
+      {
+        "id": "C",
+        "texto": "−19,6 m/s",
+        "explicacion": "Correcta. La tasa de cambio media es [h(3) − h(1)] / (3 − 1) = (0 − 39,2)/2 = −19,6 m/s: la pendiente de la recta secante a la gráfica entre los puntos (1; 39,2) y (3; 0). El signo negativo indica que la altura disminuye."
+      },
+      {
+        "id": "D",
+        "texto": "39,2 m/s",
+        "explicacion": "Incorrecta. Calcula cuánto bajó la pelota entre 1 s y 3 s, 39,2 m, y no lo divide entre el tiempo transcurrido. Confunde el incremento de la función, tomado además sin signo, con su tasa de cambio."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: se pide la tasa de cambio media de la altura en el intervalo [1, 3]. Regla: es el cociente entre el cambio de la variable dependiente y el de la independiente, es decir, la pendiente de la secante. Cálculo: h(1) = 39,2 y h(3) = 0, luego (0 − 39,2)/(3 − 1) = −19,6 m/s. Conclusión: −19,6 m/s; el signo indica que la altura disminuye. Los errores típicos son omitir el signo, medir desde t = 0 o no dividir entre el cambio de tiempo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-011",
+    "version": 3,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: error al ordenar números decimales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Justifico la extensión de la representación polinomial decimal usual de los números naturales a la representación decimal usual de los números racionales, utilizando las propiedades del sistema de numeración decimal.",
+    "pregunta": "En sexto grado, al ordenar de menor a mayor los números 0,3; 0,25 y 0,125, varios estudiantes escriben 0,3 < 0,25 < 0,125. Al preguntarles por qué, responden que «3 es menor que 25 y 25 es menor que 125». ¿Qué interpretación del error y qué intervención son las más adecuadas para el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Leen la parte decimal como un número natural; conviene que los representen con bloques de base diez, con el cubito como unidad.",
+        "explicacion": "Incorrecta. El diagnóstico es acertado, pero el modelo reproduce el error: si el cubito vale 1, no hay pieza para 0,3 ni para 0,25, y los estudiantes tienden a formar 3, 25 y 125 cubitos. Para llegar a las milésimas, la unidad debe ser el bloque grande: 0,3 son 3 placas y 0,125 es 1 placa, 2 barras y 5 cubitos."
+      },
+      {
+        "id": "B",
+        "texto": "Comparan las cifras decimales como naturales; conviene que sombreen cada número en una tira de diez casillas que vale 1.",
+        "explicacion": "Incorrecta. Acierta en el diagnóstico, pero una tira de diez casillas solo representa décimas: 0,25 y 0,125 no se pueden sombrear con exactitud, justo los números que más confunden a los estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "Creen que más cifras decimales dan un número mayor; conviene enseñar que el de menos cifras decimales es el mayor.",
+        "explicacion": "Incorrecta. Describe el síntoma, pero la intervención enseña otra regla falsa: 0,5 tiene menos cifras que 0,75 y es menor. Sustituye un error por otro."
+      },
+      {
+        "id": "D",
+        "texto": "Leen la parte decimal como un número natural; conviene escribirlos en milésimas y ubicarlos en una cinta de un metro.",
+        "explicacion": "Correcta. Los estudiantes extienden el orden de los naturales a la parte decimal. En una cinta de un metro, 0,3 m; 0,25 m y 0,125 m son 300, 250 y 125 milímetros: la medida hace visible el valor de posición de cada cifra y llega hasta las milésimas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la justificación de los estudiantes («3 es menor que 25») muestra que leen la parte decimal como un número natural. Regla: la representación decimal de los racionales extiende el valor posicional (décimas, centésimas, milésimas). Intervención: llevar los números a una misma unidad (milésimas) y apoyarse en una medida que llegue a esa precisión. Las demás opciones usan un modelo que reproduce el error (el cubito como unidad), uno que no llega a las milésimas (la cuadrícula de cien) o enseñan una regla falsa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: confusión entre variación lineal y proporcionalidad directa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Analizo las propiedades de correlación positiva y negativa entre variables, de variación lineal o de proporcionalidad directa y de proporcionalidad inversa en contextos aritméticos y geométricos.",
+    "pregunta": "En séptimo grado, un docente presenta la tarifa de un plomero: cobra $40.000 por la visita más $25.000 por cada hora de trabajo, de modo que un trabajo de 2 horas cuesta $90.000. Para un trabajo de 4 horas, un estudiante plantea una regla de tres: «si 2 horas cuestan $90.000, 4 horas cuestan $180.000». ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Trató como proporcional una relación con cobro fijo; conviene tabular, ver que el cociente cambia y preguntar el costo de 0 horas.",
+        "explicacion": "Correcta. La relación es lineal (costo = 40.000 + 25.000h), pero no proporcional: el cociente costo/horas cambia (45.000 con 2 h y 35.000 con 4 h) y la gráfica no pasa por el origen. Cuatro horas cuestan $140.000. Tabular y preguntar por 0 horas hace visible el cobro fijo."
+      },
+      {
+        "id": "B",
+        "texto": "Trató como proporcional una relación con cobro fijo; conviene que ubique en el plano los puntos de 2 y 4 horas que obtuvo y vea si están alineados.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la comprobación no sirve: dos puntos cualesquiera están siempre alineados, y estos salen del propio modelo del estudiante. La recta que une (2; 90.000) y (4; 180.000) pasa por el origen y confirma la proporcionalidad que se quiere cuestionar."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicó bien la proporcionalidad, pero sin pasar por la unidad; conviene que halle el valor de una hora, $45.000, y tabule de 1 a 4 horas.",
+        "explicacion": "Incorrecta. Reducir a la unidad dividiendo 90.000 entre 2 supone la misma proporcionalidad: la tabla de 45.000, 90.000, 135.000 y 180.000 reproduce el error. La hora vale $25.000 y la visita $40.000, así que cuatro horas cuestan $140.000."
+      },
+      {
+        "id": "D",
+        "texto": "Su modelo es correcto, pero olvidó el cobro fijo; conviene enseñarle a sumar los $40.000 al resultado que da la regla de tres.",
+        "explicacion": "Incorrecta. Parchea el procedimiento sin cambiar el modelo: 180.000 + 40.000 = 220.000, porque el cobro fijo ya estaba dentro de los $90.000. Agrega un paso mecánico en vez de distinguir lo lineal de lo proporcional."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la tarifa tiene un cobro fijo de $40.000, así que el costo no es cero con 0 horas. Regla: una variación lineal con término independiente no es una proporcionalidad directa; el cociente entre las variables no es constante. Cálculo: 40.000 + 25.000 × 4 = 140.000, no 180.000. Intervención: tabular, comparar cocientes y analizar el valor en 0. Los distractores validan el modelo con datos que salen de él (dos puntos propios o el valor de una hora sacado de la misma regla de tres) o parchean el procedimiento.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-013",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: error en el cuadrado de un binomio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Construyo expresiones algebraicas equivalentes a una expresión algebraica dada.",
+    "pregunta": "En octavo grado, varios estudiantes simplifican (x + 3)² como x² + 9, y el docente nota que cometen el mismo error en otros ejercicios, por ejemplo (a + 5)² = a² + 25. ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Generalizan a la suma la regla (ab)² = a²b²; conviene que comprueben la igualdad sustituyendo x = 0 en las dos expresiones.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero el valor elegido no discrimina: con x = 0 el término que falta, 6x, vale cero, y las dos expresiones dan 9. La comprobación confirma el error; cualquier x distinto de 0 lo refuta (con x = 1: 16 frente a 10)."
+      },
+      {
+        "id": "B",
+        "texto": "Extienden a la suma una propiedad del producto; conviene armar un cuadrado de lado x + 3 por regiones y comparar áreas.",
+        "explicacion": "Correcta. El error es sistemático: generalizan (ab)² = a²b² a la suma. El modelo de área muestra que el cuadrado de lado x + 3 tiene las regiones x², 3x, 3x y 9, es decir, x² + 6x + 9, y un caso numérico (x = 1: 16 frente a 10) confirma la diferencia."
+      },
+      {
+        "id": "C",
+        "texto": "Distribuyen el cuadrado sobre los términos de la suma; conviene que representen x² y 9 con dos cuadrados, de lados x y 3, y los junten.",
+        "explicacion": "Incorrecta. Acierta en el diagnóstico, pero el modelo reproduce el error: dos cuadrados de lados x y 3 suman x² + 9 y no forman el cuadrado de lado x + 3. Faltan los dos rectángulos de área 3x, que solo aparecen al construir el cuadrado completo."
+      },
+      {
+        "id": "D",
+        "texto": "Confunden elevar al cuadrado con multiplicar por 2; conviene contrastar x² con 2x en una tabla de valores antes de seguir.",
+        "explicacion": "Incorrecta. Diagnostica un error que no aparece: los estudiantes elevan bien al cuadrado x y 3 (x² y 9). Lo que falta es el término 6x."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el error es sistemático (también (a + 5)² = a² + 25) y los cuadrados de cada término están bien calculados; falta el doble producto. Regla: (a + b)² = a² + 2ab + b², y la potencia no se distribuye en la suma. Intervención: un modelo de área que muestre las cuatro regiones del cuadrado de lado x + 3. Las demás opciones comprueban con un valor que oculta el error (x = 0), usan un modelo que lo reproduce (dos cuadrados sueltos) o diagnostican una confusión que no aparece.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: de la regla recursiva a la expresión general de un patrón",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, sexto a séptimo grado",
+      "Pensamiento variacional y sistemas algebraicos y analíticos, texto introductorio (p. 67)"
+    ],
+    "texto_fuente": "Describo y represento situaciones de variación relacionando diferentes representaciones (diagramas, expresiones verbales generalizadas y tablas). [...] Estas actividades preparan a los estudiantes para la construcción de la expresión algebraica a través de la formulación verbal de una regla recursiva que muestre cómo construir los términos siguientes a partir de los precedentes y el hallazgo de un patrón que los guíe más o menos directamente a la expresión algebraica.",
+    "pregunta": "En séptimo grado, los estudiantes forman con palillos una fila de cuadrados unidos: 1 cuadrado usa 4 palillos, 2 cuadrados usan 7 y 3 cuadrados usan 10. Cuando el docente pide una expresión para el número de palillos con n cuadrados, una estudiante escribe «n + 3» y explica: «es que cada vez se agregan 3». ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Toma la regla de paso por la expresión general; conviene que pruebe «n + 3» con la figura de un cuadrado y vea si da los 4 palillos.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero el caso elegido no refuta la conjetura: con un cuadrado, n + 3 da 4, igual que la figura. La prueba la confirma; hace falta un caso como n = 2, en el que da 5 en lugar de 7."
+      },
+      {
+        "id": "B",
+        "texto": "Toma el aumento por la expresión general; conviene sugerirle que el 3 multiplique a n, ya que cada cuadrado agrega 3 palillos.",
+        "explicacion": "Incorrecta. Acierta en el diagnóstico, pero cambia un error por otro y le entrega una expresión hecha: 3n da 3, 6 y 9 palillos, cuando son 4, 7 y 10. Falta el palillo inicial, que solo se ve al relacionar la expresión con el dibujo."
+      },
+      {
+        "id": "C",
+        "texto": "Describe el paso de un término al siguiente; conviene tabular, probar n + 3 con n = 2 y ver en el dibujo de dónde sale cada palillo.",
+        "explicacion": "Correcta. «Se agregan 3» es la regla recursiva (aₙ = aₙ₋₁ + 3) escrita como si fuera la expresión general. En la tabla, n + 3 coincide con n = 1 (4 palillos) pero falla con n = 2 (5 frente a 7); el dibujo muestra 3 palillos por cuadrado más 1 inicial: 3n + 1."
+      },
+      {
+        "id": "D",
+        "texto": "Describe bien el crecimiento del patrón; conviene que cuente los palillos de 10 cuadrados y duplique ese número para hallar los de 20.",
+        "explicacion": "Incorrecta. La regla recursiva describe bien el crecimiento, pero la intervención no toca la confusión e introduce un razonamiento proporcional que no vale aquí: 10 cuadrados usan 31 palillos y 20 usan 61, no 62. El patrón es lineal, pero no proporcional."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la estudiante justifica «n + 3» con «cada vez se agregan 3», es decir, con la regla de paso de un término al siguiente. Regla: la expresión general relaciona la posición n con el término (3n + 1), mientras que la recursiva relaciona cada término con el anterior. Intervención: tabla posición-término, prueba de la conjetura con un caso que la refute y conexión con el diagrama. Las demás opciones prueban con el único caso que coincide (n = 1), sugieren otra expresión errada (3n) o escalan el patrón como si fuera proporcional.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-015",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: lectura icónica de una gráfica cartesiana",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Identifico las características de las diversas gráficas cartesianas (de puntos, continuas, formadas por segmentos, etc.) en relación con la situación que representan.",
+    "pregunta": "En séptimo grado, una docente muestra una gráfica de la distancia entre un ciclista y su casa (eje vertical) en función del tiempo (eje horizontal). La gráfica sube en línea recta durante 20 minutos, sigue horizontal durante 10 minutos y luego baja en línea recta hasta cero. Un estudiante la describe así: «el ciclista subió una loma, anduvo por una parte plana y después bajó la loma». ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Lee la gráfica como un dibujo del recorrido; conviene que la represente en el patio subiendo una rampa, siguiendo un tramo plano y bajando.",
+        "explicacion": "Incorrecta. El diagnóstico es acertado, pero la representación reproduce el error: subir una rampa, andar en plano y bajar es justo el paisaje que el estudiante imagina. Para confrontar su lectura, la recreación debe mostrar la distancia a la casa: alejarse, quedarse quieto y regresar."
+      },
+      {
+        "id": "B",
+        "texto": "No sabe ubicar puntos en el plano; conviene practicar la lectura de coordenadas de puntos aislados antes de volver a la gráfica del ciclista.",
+        "explicacion": "Incorrecta. El estudiante no tiene un problema para ubicar puntos, sino para interpretar globalmente la relación entre las variables. Practicar coordenadas aisladas no aborda la lectura icónica."
+      },
+      {
+        "id": "C",
+        "texto": "Toma la gráfica por un dibujo del terreno; conviene preguntarle a qué distancia de su casa está el ciclista al salir y al terminar el viaje.",
+        "explicacion": "Incorrecta. El diagnóstico es acertado, pero las preguntas no discriminan: al salir y al terminar la distancia es cero, lo que también encaja con su historia (empieza y termina al pie de la loma). Las preguntas útiles son las de cada tramo, en especial el horizontal."
+      },
+      {
+        "id": "D",
+        "texto": "Lee la gráfica como si fuera el paisaje; conviene preguntarle cómo cambia la distancia a la casa en cada tramo y recrear el viaje.",
+        "explicacion": "Correcta. Es la confusión clásica de la gráfica con una imagen del recorrido. Preguntar qué ocurre con la distancia en cada tramo y representar el movimiento hace ver que subir es alejarse, que el tramo horizontal es una pausa de 10 minutos y que bajar es regresar a casa."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante describe una loma y un terreno plano, es decir, lee la gráfica como un dibujo del paisaje y no como la relación entre el tiempo y la distancia a la casa. Regla: en una gráfica cartesiana cada punto relaciona dos variables; el tramo horizontal indica distancia constante (ciclista detenido). Intervención: preguntar cómo cambia la distancia en cada tramo y simular el movimiento para confrontar su lectura. Las demás opciones recrean el paisaje que el estudiante imagina, hacen preguntas que no distinguen las dos lecturas o diagnostican mal.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: tarea para relacionar parámetros y gráficas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico la relación entre los cambios en los parámetros de la representación algebraica de una familia de funciones y los cambios en las gráficas que las representan.",
+    "pregunta": "Un docente de noveno grado prepara una unidad sobre funciones cuadráticas. Al final, sus estudiantes deberán decir, sin hacer tablas de valores, dónde queda el vértice de y = −2(x − 1)² + 3, hacia dónde abre la parábola y si es más estrecha o más ancha que la de y = x². ¿Cuál de las siguientes tareas prepara mejor ese logro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Graficar a mano diez parábolas escogidas al azar, cada una a partir de su tabla de valores, y entregarlas en una guía.",
+        "explicacion": "Incorrecta. Practica la construcción de gráficas, pero al escoger las funciones al azar y cambiar varios números a la vez no permite aislar el efecto de cada parámetro, y la tabla de valores es justo lo que se quiere dejar de necesitar."
+      },
+      {
+        "id": "B",
+        "texto": "En un programa de geometría dinámica, mover de a uno los deslizadores a, b y c de la forma y = ax² + bx + c, predecir la curva y comprobarla.",
+        "explicacion": "Incorrecta. Usa una buena estrategia con la representación equivocada: en la forma general, los coeficientes no dan el vértice. Al cambiar b, el vértice se mueve en las dos direcciones a la vez (su abscisa es −b/2a), y al cambiar a, si b ≠ 0, también se desplaza. Así no se prepara la lectura de y = −2(x − 1)² + 3."
+      },
+      {
+        "id": "C",
+        "texto": "En un programa de geometría dinámica, mover de a uno los deslizadores a, h y k de y = a(x − h)² + k, predecir la curva y comprobarla.",
+        "explicacion": "Correcta. Variar un parámetro por vez, predecir y verificar relaciona cada número de la forma canónica con su efecto: a da la abertura y el sentido, h el desplazamiento horizontal y k el vertical. Con eso se lee que y = −2(x − 1)² + 3 tiene vértice en (1, 3), abre hacia abajo y es más estrecha que y = x², porque |−2| > 1."
+      },
+      {
+        "id": "D",
+        "texto": "Graficar con tablas de valores y = ax² para a = 1, 2, 3 y 4 en un mismo plano y describir cómo cambia la abertura de la parábola.",
+        "explicacion": "Incorrecta. Aísla un parámetro, pero solo a y solo con valores positivos: los estudiantes verían la abertura, pero no el efecto del signo de a ni los desplazamientos que dan h y k, que se necesitan para ubicar el vértice."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la meta es leer en y = −2(x − 1)² + 3 la posición del vértice, el sentido y la abertura sin tabular. Regla: el estándar pide relacionar los cambios en los parámetros de una familia de funciones con los cambios en sus gráficas, lo que exige variarlos de forma controlada y en la representación en que se leen, la forma canónica. Decisión: geometría dinámica con a, h y k, uno a la vez, anticipando y comprobando. Las demás tareas varían sin control, usan la forma general o se quedan en un solo parámetro.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: exponentes negativos y exponente cero",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+    "pregunta": "En octavo grado, al calcular 2⁻³ varios estudiantes responden −8, y al calcular 5⁰ responden 0. ¿Qué interpretación del error y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Le ponen al resultado el signo del exponente; conviene que comprueben en la calculadora que 2⁻³ = 0,125 y 5⁰ = 1 y anoten los resultados.",
+        "explicacion": "Incorrecta. Describe solo el error con 2⁻³ (el signo no explica que 5⁰ dé 0), y la calculadora muestra los valores correctos sin decir por qué: los estudiantes cambian una respuesta por otra que deben creer, y pueden volver a mezclar las reglas en el siguiente ejercicio."
+      },
+      {
+        "id": "B",
+        "texto": "Aplican «multiplicar n veces» donde esa idea no tiene sentido; conviene prolongar 2³, 2², 2¹ dividiendo por 2 y contrastarlo con 2² ÷ 2⁵.",
+        "explicacion": "Correcta. Para exponentes negativos o cero, «multiplicar la base n veces» pierde sentido y los estudiantes improvisan (signo al resultado; «cero veces» da 0). Prolongar 8, 4, 2, 1, 1/2, 1/4, 1/8 y verificar que 2² ÷ 2⁵ = 4/32 = 1/8 = 2⁻³ justifica las definiciones desde las propiedades."
+      },
+      {
+        "id": "C",
+        "texto": "Extienden «multiplicar n veces» a exponentes donde no aplica; conviene que hallen 2⁻³ con la igualdad 2³ · 2⁻³ = 2⁰ y luego justifiquen 5⁰.",
+        "explicacion": "Incorrecta. El diagnóstico es acertado, pero el camino es circular: para despejar 2⁻³ de 2³ · 2⁻³ = 2⁰ hace falta saber cuánto vale 2⁰, uno de los valores en duda. Con su idea de que el exponente cero da 0, concluirían que 2⁻³ = 0. Primero hay que dar sentido a a⁰ = 1."
+      },
+      {
+        "id": "D",
+        "texto": "No dominan la ley de los signos; conviene que calculen en una tabla las potencias de −2 y comparen el signo de cada uno de los resultados.",
+        "explicacion": "Incorrecta. No hay bases negativas en juego: el signo menos está en el exponente, no en la base. Las potencias de −2 trabajan otro contenido y no tocan el significado del exponente negativo ni del exponente cero."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los estudiantes calculan bien 2³ = 8, pero le ponen al resultado el signo del exponente y leen 5⁰ como «cero veces», es decir, 0. Regla: las definiciones a⁰ = 1 y a⁻ⁿ = 1/aⁿ se justifican porque conservan la regularidad (bajar un exponente es dividir por la base) y la propiedad aᵐ ÷ aⁿ = aᵐ⁻ⁿ. Intervención: prolongar la secuencia y contrastar con un cociente de potencias conocidas. Las demás opciones dan los valores sin justificarlos, siguen un camino circular o diagnostican un problema de signos que no existe.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: procesos infinitos en la notación decimal (0,999… = 1)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Analizo los procesos infinitos que subyacen en las notaciones decimales.",
+    "pregunta": "En noveno grado surge una discusión: un estudiante sostiene que 0,999… (con infinitos nueves) es «el número que está justo antes de 1» y que, por tanto, es menor que 1. Varios compañeros lo apoyan. ¿Cuál es la actuación más adecuada del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar que 0,999… es menor que 1 por una cantidad infinitamente pequeña, ya que a la expresión le falta un último nueve para llegar a 1.",
+        "explicacion": "Incorrecta. Valida la concepción del estudiante: trata el proceso infinito como si terminara («un último nueve») y supone que entre los reales hay cantidades infinitamente pequeñas distintas de cero."
+      },
+      {
+        "id": "B",
+        "texto": "Retarlos a hallar un número entre 0,999… y 1; si no existe, son iguales, pues entre dos reales distintos siempre hay otro.",
+        "explicacion": "Correcta. Usa la densidad: si 0,999… y 1 fueran distintos, su promedio estaría entre ellos. Al intentar escribirlo, los estudiantes ven que ningún decimal cabe entre ambos, porque la diferencia es menor que 0,1; 0,01; 0,001… Por tanto, son el mismo número escrito de dos formas."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar que 0,999… y 1 son iguales solo de forma aproximada, como ocurre cuando un número se redondea a dos cifras decimales.",
+        "explicacion": "Incorrecta. Confunde igualdad con aproximación. 0,999… no es un redondeo de 1, sino otra representación decimal del mismo número; la igualdad es exacta."
+      },
+      {
+        "id": "D",
+        "texto": "Aplazar la discusión hasta grado once, cuando el grupo estudie límites, y no tomar partido por ahora para no generar confusión.",
+        "explicacion": "Incorrecta. Evita el conflicto en lugar de aprovecharlo y deja en pie la concepción errada. La igualdad puede trabajarse en noveno grado con argumentos de densidad o con 1/3 = 0,333…, y el estándar ubica en octavo y noveno el análisis de los procesos infinitos de las notaciones decimales."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el estudiante imagina 0,999… como un proceso que termina justo antes de 1. Regla: 0,999… representa el límite de 0,9; 0,99; 0,999…, que es 1, y entre dos reales distintos siempre hay otro (densidad). Intervención: retar al grupo a encontrar un número entre ambos y concluir la igualdad. Los distractores validan la concepción, la reducen a un redondeo o aplazan el tema, aunque el estándar lo ubica en octavo y noveno grado.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: crecimiento exponencial tratado como lineal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+    "pregunta": "En noveno grado, un cultivo tiene 500 bacterias a las 0 horas y su población se duplica cada 2 horas. Un estudiante completa la tabla así: 0 h, 500; 2 h, 1.000; 4 h, 1.500; 6 h, 2.000, y une los puntos con una recta. ¿Qué debe concluir el docente sobre esta producción y cómo debe intervenir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sumó una cantidad fija donde debía multiplicar; conviene que ubique sus puntos en el plano y compruebe si quedan sobre una misma recta.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la comprobación no lo revela: los puntos se calcularon sumando 500, así que quedan alineados por construcción y la recta confirma el modelo errado. Hay que contrastar con lo que dice la situación (duplicarse), no con los datos que produjo el estudiante."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicó un crecimiento aditivo; conviene que simule el cultivo con fichas, agregando cada 2 horas tantas fichas como había al comienzo.",
+        "explicacion": "Incorrecta. La simulación reproduce el error: agregar cada 2 horas lo que había al comienzo es sumar siempre 500 (500, 1.000, 1.500, 2.000). Duplicarse es agregar tantas fichas como hay en ese momento: 500, 1.000, 2.000, 4.000."
+      },
+      {
+        "id": "C",
+        "texto": "Su modelo lineal sirve como aproximación en las primeras horas; conviene validarlo y pedirle que extienda la tabla hasta las 12 horas.",
+        "explicacion": "Incorrecta. A las 6 horas el modelo lineal da 2.000 en lugar de 4.000 (la mitad), y el error crece con el tiempo: a las 12 horas daría 3.500 frente a 32.000. No es una aproximación aceptable."
+      },
+      {
+        "id": "D",
+        "texto": "Sumó una cantidad fija cuando debía multiplicar por 2; conviene comparar en la tabla diferencias y cocientes de valores sucesivos.",
+        "explicacion": "Correcta. Confundió el crecimiento lineal (diferencias constantes) con el exponencial (cocientes constantes). Comparar diferencias (500) y cocientes (2) muestra que la situación exige un cociente constante: 500, 1.000, 2.000, 4.000, y que la gráfica es una curva exponencial, no una recta."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante pasó de 1.000 a 1.500 y a 2.000, es decir, sumó 500 en cada paso, cuando la población debía multiplicarse por 2. Regla: en un modelo lineal son constantes las diferencias sucesivas y en uno exponencial, los cocientes. Cálculo: 500 · 2^(t/2) da 2.000 a las 4 h y 4.000 a las 6 h. Intervención: comparar diferencias y cocientes en la tabla. Los distractores comprueban el modelo con sus propios puntos, lo simulan con la misma regla aditiva o lo validan como aproximación.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: sistema inconsistente y rectas paralelas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
+    "pregunta": "En noveno grado, una estudiante resuelve por reducción el sistema 2x + 3y = 7 y 4x + 6y = 9. Multiplica la primera ecuación por 2, le resta la segunda y obtiene 0 = 5. Concluye: «me equivoqué en algo, porque se me borraron las dos incógnitas». ¿Cuál es la intervención más adecuada del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle que grafique las dos rectas, note que tienen igual pendiente y distinto corte con el eje y, y lo relacione con la igualdad imposible.",
+        "explicacion": "Correcta. Su procedimiento es correcto y el resultado indica que el sistema no tiene solución. Al despejar y: y = −(2/3)x + 7/3 y y = −(2/3)x + 3/2; las rectas son paralelas y distintas. Relacionar la contradicción algebraica con el paralelismo conecta propiedades de las ecuaciones y de las gráficas."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que repita la reducción con otro multiplicador y que revise los signos, hasta lograr que las dos incógnitas no se cancelen.",
+        "explicacion": "Incorrecta. Supone que la contradicción delata un error de cálculo. Con cualquier multiplicador válido el resultado seguirá siendo una igualdad falsa, porque el sistema es inconsistente."
+      },
+      {
+        "id": "C",
+        "texto": "Explicarle que el sistema tiene infinitas soluciones y que le sirve cualquier pareja (x, y) que cumpla la primera de las dos ecuaciones.",
+        "explicacion": "Incorrecta. Confunde el sistema inconsistente (igualdad falsa, como 0 = 5, rectas paralelas) con el dependiente (igualdad verdadera, como 0 = 0, rectas coincidentes)."
+      },
+      {
+        "id": "D",
+        "texto": "Indicarle que use el método de sustitución, que funciona mejor cuando los coeficientes de las dos ecuaciones son proporcionales.",
+        "explicacion": "Incorrecta. El resultado no depende del método: por sustitución también se llega a una igualdad falsa (14 = 9). Coeficientes proporcionales con términos independientes no proporcionales indican rectas paralelas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la reducción está bien hecha y produce una igualdad falsa (0 = 5). Regla: si los coeficientes de las incógnitas son proporcionales (2/4 = 3/6) y los términos independientes no lo son (7/9), las rectas son paralelas y el sistema no tiene solución. Intervención: graficar ambas rectas y vincular el paralelismo con la contradicción. Los distractores tratan la contradicción como error de cálculo, la confunden con infinitas soluciones o la atribuyen al método.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]
