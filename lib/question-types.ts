@@ -69,6 +69,16 @@ export const MODULE_SECTIONS = [
       'Control Interno',
       'Planeación y Proyectos de Inversión',
       'Contabilidad Pública',
+      'Almacén e Inventarios',
+      'Sistema de Salud y ESE',
+      'Gestión Territorial',
+      'Derecho Laboral',
+      'Inspección, Vigilancia y Control del Trabajo',
+      'Gestión Tributaria (DIAN)',
+      'Aduanero y Cambiario (DIAN)',
+      'Carrera y Gestión Institucional (DIAN)',
+      'Pedagogía y Normativa Docente',
+      'Gestión Escolar (Directivos Docentes)',
     ],
   },
   {
@@ -100,6 +110,16 @@ export const AREAS_FUNCIONALES = [
   { id: 'control_interno', label: 'Control interno', frase: 'control interno', modulo: 'Control Interno' },
   { id: 'planeacion', label: 'Planeación', frase: 'planeación y proyectos de inversión', modulo: 'Planeación y Proyectos de Inversión' },
   { id: 'contabilidad', label: 'Contabilidad', frase: 'contabilidad pública', modulo: 'Contabilidad Pública' },
+  { id: 'almacen', label: 'Almacén e inventarios', frase: 'almacén e inventarios', modulo: 'Almacén e Inventarios' },
+  { id: 'salud', label: 'Salud (ESE)', frase: 'sistema de salud y ESE', modulo: 'Sistema de Salud y ESE' },
+  { id: 'territorial', label: 'Gestión territorial', frase: 'gestión territorial', modulo: 'Gestión Territorial' },
+  { id: 'laboral', label: 'Derecho laboral', frase: 'derecho laboral', modulo: 'Derecho Laboral' },
+  { id: 'ivc_trabajo', label: 'Inspección del trabajo', frase: 'inspección del trabajo', modulo: 'Inspección, Vigilancia y Control del Trabajo' },
+  { id: 'dian_tributaria', label: 'DIAN: tributaria', frase: 'gestión tributaria', modulo: 'Gestión Tributaria (DIAN)' },
+  { id: 'dian_aduanera', label: 'DIAN: aduanera y cambiaria', frase: 'aduanas y cambios', modulo: 'Aduanero y Cambiario (DIAN)' },
+  { id: 'dian_institucional', label: 'DIAN: carrera y gestión', frase: 'carrera y gestión de la DIAN', modulo: 'Carrera y Gestión Institucional (DIAN)' },
+  { id: 'docente', label: 'Docente', frase: 'pedagogía y normativa docente', modulo: 'Pedagogía y Normativa Docente' },
+  { id: 'directivo_docente', label: 'Directivo docente', frase: 'gestión escolar', modulo: 'Gestión Escolar (Directivos Docentes)' },
 ] as const
 
 export type AreaId = (typeof AREAS_FUNCIONALES)[number]['id']

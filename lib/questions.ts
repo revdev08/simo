@@ -20,6 +20,16 @@ import ticGobiernoDigital from '@/data/preguntas/tic-gobierno-digital.json'
 import controlInterno from '@/data/preguntas/control-interno.json'
 import planeacion from '@/data/preguntas/planeacion.json'
 import contabilidad from '@/data/preguntas/contabilidad.json'
+import almacenInventarios from '@/data/preguntas/almacen-inventarios.json'
+import docentes from '@/data/preguntas/docentes.json'
+import directivosDocentes from '@/data/preguntas/directivos-docentes.json'
+import tributarioDian from '@/data/preguntas/tributario-dian.json'
+import aduaneroDian from '@/data/preguntas/aduanero-dian.json'
+import dianInstitucional from '@/data/preguntas/dian-institucional.json'
+import derechoLaboral from '@/data/preguntas/derecho-laboral.json'
+import inspeccionTrabajo from '@/data/preguntas/inspeccion-trabajo.json'
+import gestionTerritorial from '@/data/preguntas/gestion-territorial.json'
+import saludEse from '@/data/preguntas/salud-ese.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -44,6 +54,16 @@ const BANCO = [
   ...controlInterno,
   ...planeacion,
   ...contabilidad,
+  ...almacenInventarios,
+  ...docentes,
+  ...directivosDocentes,
+  ...tributarioDian,
+  ...aduaneroDian,
+  ...dianInstitucional,
+  ...derechoLaboral,
+  ...inspeccionTrabajo,
+  ...gestionTerritorial,
+  ...saludEse,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
@@ -75,7 +95,10 @@ function toClient(q: Question): Question {
     ...(q.fundamentos ? { fundamentos: true } : {}),
     ...(q.formato === 'juicio_situacional'
       ? { formato: q.formato, nivel: q.nivel, competencia: q.competencia, subtema: q.subtema }
-      : {}),
+      : // Funcionales con caso operativo o profesional: el panel muestra a cada aspirante las de su nivel
+        q.nivel && !q.nivel.includes('todos')
+        ? { nivel: q.nivel }
+        : {}),
   }
 }
 
@@ -85,6 +108,13 @@ export function getPracticeQuestions(): Question[] {
 
 export function getReportQuestions(): ReportQuestion[] {
   return BANCO.map((q) => ({ id: q.id, modulo: q.modulo, tema: q.tema, activa: isActive(q) }))
+}
+
+// Preguntas activas por módulo: las páginas públicas muestran cifras, nunca las preguntas
+export function getModuleCounts(): Record<string, number> {
+  const counts: Record<string, number> = {}
+  for (const q of BANCO) if (isActive(q)) counts[q.modulo] = (counts[q.modulo] ?? 0) + 1
+  return counts
 }
 
 // Busca una pregunta activa por id (los ids llegan como texto desde el navegador)

@@ -122,6 +122,19 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 - Con la fuente equivocada, tanto el redactor como el resolvedor a ciegas aprobaron un distractor falso (TC-TIC-005, lote 7).
 - Para el sector TIC usa el normograma del MinTIC. En cualquier decreto único, revisa además la fecha de "última actualización" y la lista de vigencias, para saber si hay decretos posteriores que la compilación no incluye.
 
+**Las notas de vigencia cambian la respuesta: léelas, no solo el texto:**
+- **Ley 610 de 2000:** el Decreto Ley 403 de 2020 subió a 10 años la caducidad de la acción fiscal (art. 127), y muchas fuentes secundarias siguen diciendo "10 años". La Corte declaró inexequibles esas modificaciones (Sentencia C-090 de 2022), así que rige el texto original: 5 años.
+  - **Dónde verlo:** las notas del Senado no están en la página; vienen en un archivo aparte (`basedoc/js/<norma>.js`).
+- **Decreto Ley 71 de 2020 (carrera de la DIAN):** lo derogó en su totalidad el Decreto Ley 927 de 2023 (art. 152). Una fuente vieja en la carpeta no significa que la norma siga vigente.
+- **Normogramas de Avance Jurídico (DIAN, Supersalud):** después del texto vigente vienen "Notas de Vigencia" y "Legislación Anterior". Lo que sigue a "Legislación Anterior" es texto viejo.
+- **Reglamento contra ley:** el Decreto 1072 todavía pide autorización del Ministerio para trabajar horas extras, pero el art. 162 del CST, reformado por la Ley 2466 de 2025, la eliminó. Prevalece la ley.
+- **Corte de la prueba:** la DIAN 2676 solo evalúa normas expedidas antes del 19 de junio de 2026. Cada convocatoria puede fijar su propio corte.
+- **Régimen sancionatorio aduanero:** el Decreto Ley 920 de 2023 se declaró inexequible con efectos diferidos hasta el 20 de junio de 2026 (Sentencia C-072 de 2025). Lo derogó la Ley 2586 de 2026, del 19 de junio, que queda justo fuera del corte de la DIAN 2676. Por eso no escribimos preguntas de sanciones aduaneras para esa prueba.
+
+**Formato de la prueba real (investigación del 11 de octubre de 2026):**
+- En el sistema general de la CNSC no hay prueba de "competencias generales". Las funcionales pesan 60% (son eliminatorias con 65) y evalúan los ejes temáticos de cada empleo, que incluyen los temas del Estado.
+- Con el operador actual (FUAA), las funcionales son de juicio situacional: un caso y **tres opciones**. Nuestro banco usa cuatro. Cambiar a tres es una decisión de producto pendiente.
+
 **Dónde viven las preguntas:**
 - Los borradores se trabajan en `docs/banco/<lote>/`.
 - Al aprobarse, el lote se mueve a `data/preguntas/<tema>.json` y se agrega a la lista `BANCO` de `lib/questions.ts`. Esa es la única fuente que usa la app.

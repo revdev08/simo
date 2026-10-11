@@ -1,0 +1,1065 @@
+[
+  {
+    "id": "TC-DIR-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Gobierno escolar",
+    "subtema": "Plazos para elegir al personero e integrar el consejo directivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.5.4, parágrafo 2",
+      "art. 2.3.3.1.5.11"
+    ],
+    "texto_fuente": "PARÁGRAFO 2. Dentro de los primeros sesenta días calendario siguientes al de la iniciación de clases de cada período lectivo anual, deberá quedar integrado el Consejo Directivo y entrar en ejercicio de sus funciones. Con tal fin el rector convocará con la debida anticipación, a los diferentes estamentos para efectuar las elecciones correspondientes. [...] El personero de los estudiantes será elegido dentro de los treinta días calendario siguientes al de la iniciación de clases de un período lectivo anual. Para tal efecto el rector convocará a todos los estudiantes matriculados con el fin de elegirlo por el sistema de mayoría simple y mediante voto secreto.",
+    "pregunta": "El rector de una institución educativa oficial prepara el cronograma del gobierno escolar para 2027. Las clases comenzarán el lunes 1 de febrero. Su propuesta fija la votación para elegir al personero de los estudiantes el viernes 5 de marzo y la instalación del consejo directivo, con todos sus miembros ya elegidos, el martes 30 de marzo. ¿Cómo debe valorarse ese cronograma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos fechas son oportunas, porque el término para elegir al personero se cuenta en días hábiles y llega hasta mediados de marzo.",
+        "explicacion": "Incorrecta. El término del personero es de 30 días calendario, no hábiles, siguientes al inicio de clases: vence el 3 de marzo de 2027. El 5 de marzo ya está por fuera."
+      },
+      {
+        "id": "B",
+        "texto": "La elección del personero es oportuna, pero la instalación del consejo directivo quedaría por fuera del término que fija la norma.",
+        "explicacion": "Incorrecta. Invierte los plazos. El consejo directivo tiene 60 días calendario (hasta el 2 de abril), así que el 30 de marzo está a tiempo. Es la elección del personero la que queda por fuera, porque su término de 30 días vence el 3 de marzo."
+      },
+      {
+        "id": "C",
+        "texto": "La elección del personero quedaría por fuera del término, mientras que la instalación del consejo directivo está a tiempo.",
+        "explicacion": "Correcta. Desde el 1 de febrero, los 30 días calendario para elegir al personero vencen el 3 de marzo, de modo que el 5 de marzo es tardío. Los 60 días calendario para integrar el consejo directivo vencen el 2 de abril, así que el 30 de marzo cumple."
+      },
+      {
+        "id": "D",
+        "texto": "Las dos fechas son tardías, porque tanto el personero como el consejo directivo deben estar listos en el primer mes de clases.",
+        "explicacion": "Incorrecta. Aplica al consejo directivo el término del personero. El consejo directivo tiene 60 días calendario desde el inicio de clases, que vencen el 2 de abril."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las clases empiezan el 1 de febrero de 2027. Regla: el personero se elige dentro de los 30 días calendario siguientes al inicio de clases (Decreto 1075, art. 2.3.3.1.5.11) y el consejo directivo debe quedar integrado dentro de los primeros 60 días calendario (art. 2.3.3.1.5.4, par. 2). Cálculo: el plazo del personero vence el 3 de marzo y el del consejo, el 2 de abril. Conclusión: el 5 de marzo es tardío; el 30 de marzo sirve.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-002",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Gobierno escolar",
+    "subtema": "Incompatibilidad entre personero y representante estudiantil ante el consejo directivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.5.4, num. 3",
+      "art. 2.3.3.1.5.11",
+      "art. 2.3.3.1.5.12, lit. b"
+    ],
+    "texto_fuente": "3. Un representante de los estudiantes elegido por el Consejo de Estudiantes, entre los alumnos que se encuentren cursando el último grado de educación ofrecido por la Institución. [...] Para tal efecto el rector convocará a todos los estudiantes matriculados con el fin de elegirlo por el sistema de mayoría simple y mediante voto secreto. El ejercicio del cargo de personero de los estudiantes es incompatible con el de representante de los estudiantes ante el Consejo Directivo. [...] b) Elegir el representante de los estudiantes ante el Consejo Directivo del establecimiento y asesorar lo en el cumplimiento de su representación;",
+    "pregunta": "En marzo, los estudiantes de una institución educativa oficial eligieron como personero a Julián, alumno de grado 11. Días después, Julián fue escogido también como representante de los estudiantes ante el consejo directivo, por ser el líder más reconocido del grado. Él quiere conservar la personería y aceptó la nueva designación. Antes de la primera sesión del consejo directivo, la coordinadora consulta al rector. ¿Qué debe hacer el rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicar que las dos dignidades son incompatibles y pedir al consejo directivo que designe a otro alumno como representante de los estudiantes.",
+        "explicacion": "Incorrecta. Acierta en la incompatibilidad, pero confunde el órgano que elige: al representante de los estudiantes ante el consejo directivo lo elige el consejo de estudiantes, no el consejo directivo."
+      },
+      {
+        "id": "B",
+        "texto": "Explicar que las dos dignidades son incompatibles y convocar a todos los matriculados para que elijan, por voto secreto, a otro representante.",
+        "explicacion": "Incorrecta. Aplica el mecanismo de elección del personero: la votación de todos los matriculados, convocada por el rector, por mayoría simple y voto secreto. Al representante ante el consejo directivo lo elige el consejo de estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar que las dos dignidades son incompatibles y pedir al consejo de estudiantes que elija un nuevo personero entre los alumnos de grado 11.",
+        "explicacion": "Incorrecta. El consejo de estudiantes no elige al personero: a este lo eligen todos los estudiantes matriculados, convocados por el rector, por mayoría simple y voto secreto. Además, Julián conserva la personería; lo que debe proveerse de nuevo es la representación ante el consejo directivo."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que las dos dignidades son incompatibles y pedir al consejo de estudiantes que elija a otro alumno para esa representación.",
+        "explicacion": "Correcta. El cargo de personero es incompatible con el de representante de los estudiantes ante el consejo directivo. Como Julián conserva la personería, el consejo de estudiantes, que es el órgano que elige a ese representante entre los alumnos del último grado, debe escoger a otro."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el personero electo fue escogido también como representante estudiantil ante el consejo directivo y quiere seguir como personero. Regla: el art. 2.3.3.1.5.11 del Decreto 1075 hace incompatibles ambos cargos; el art. 2.3.3.1.5.4, num. 3, y el art. 2.3.3.1.5.12, lit. b, asignan al consejo de estudiantes la elección del representante, mientras que al personero lo eligen todos los matriculados. Conclusión: el rector advierte la incompatibilidad y pide al consejo de estudiantes que elija a otro alumno.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Gobierno escolar",
+    "subtema": "Integración y convocatoria del consejo de estudiantes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.5.12"
+    ],
+    "texto_fuente": "Estará integrado por un vocero de cada uno de los grados ofrecidos por el establecimiento o establecimientos que comparten un mismo Consejo Directivo. El Consejo Directivo deberá convocar en una fecha dentro de las cuatro primeras semanas del calendario académico, sendas asambleas integradas por los alumnos que cursen cada grado, con el fin de que elijan de su seno mediante votación secreta, un vocero estudiantil para el año lectivo en curso. Los alumnos del nivel preescolar y de los tres primeros grados del ciclo de primaria, serán convocados a una asamblea conjunta para elegir un vocero único entre los estudiantes que cursan el tercer grado.",
+    "pregunta": "Una institución educativa oficial ofrece el grado de transición y los grados 1.° a 11.°, con tres grupos en cada grado. El coordinador redacta, para firma del rector, la convocatoria a las asambleas que integrarán el consejo de estudiantes: prevé una asamblea por cada grupo, para elegir 36 voceros, y fija la votación en la sexta semana de clases. ¿Cómo debe corregirse la convocatoria?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La expide el consejo directivo, con votaciones antes de terminar la cuarta semana del calendario, para 9 voceros: uno por grado de 4.° a 11.° y uno elegido entre los de 3.°.",
+        "explicacion": "Correcta. Hay un vocero por grado, no por grupo: de 4.° a 11.° son 8 voceros, y transición, 1.°, 2.° y 3.° eligen en asamblea conjunta un vocero único que debe cursar 3.°. Total: 9. La convocatoria corresponde al consejo directivo, dentro de las cuatro primeras semanas del calendario académico."
+      },
+      {
+        "id": "B",
+        "texto": "La expide el rector, con votaciones dentro de los 30 días calendario desde el inicio de clases, para 12 voceros: uno por cada grado, de transición a 11.°.",
+        "explicacion": "Incorrecta. Confunde esta convocatoria con la del personero, que hace el rector dentro de los 30 días calendario. Además, preescolar y los tres primeros grados no eligen un vocero cada uno, sino uno común."
+      },
+      {
+        "id": "C",
+        "texto": "La expide el consejo directivo, con votaciones antes de terminar la cuarta semana del calendario, para 12 voceros: uno por cada grado, de transición a 11.°.",
+        "explicacion": "Incorrecta. Acierta en quién convoca y en el plazo, pero olvida que transición, 1.°, 2.° y 3.° se reúnen en una asamblea conjunta y eligen un solo vocero entre los alumnos de 3.°."
+      },
+      {
+        "id": "D",
+        "texto": "La expide el rector, con votaciones dentro de los 30 días calendario desde el inicio de clases, para 9 voceros: uno por grado de 4.° a 11.° y uno elegido entre los de 3.°.",
+        "explicacion": "Incorrecta. Acierta en el número de voceros, pero la convocatoria no es del rector: la hace el consejo directivo, dentro de las cuatro primeras semanas del calendario académico."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se ofrecen 12 grados (transición a 11.°) con tres grupos cada uno. Regla: el art. 2.3.3.1.5.12 del Decreto 1075 dispone un vocero por grado, una asamblea conjunta de preescolar y los tres primeros grados que elige un vocero único de 3.°, y que el consejo directivo convoque dentro de las cuatro primeras semanas del calendario. Cálculo: 8 voceros (4.° a 11.°) + 1 = 9. Conclusión: convoca el consejo directivo, dentro de ese plazo, para 9 voceros.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Participación de los padres de familia",
+    "subtema": "Elección de los integrantes del consejo de padres",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.4.5"
+    ],
+    "texto_fuente": "Estará integrado por mínimo un (1) y máximo tres (3) padres de familia por cada uno de los grados que ofrezca el establecimiento educativo, de conformidad con lo que establezca el Proyecto Educativo Institucional, PEI. [...] La elección de los representantes de los padres para el correspondiente año lectivo se efectuará en reunión por grados, por mayoría, con la presencia de, al menos, el cincuenta por ciento (50%) de los padres o de los padres presentes después de transcurrida la primera hora de iniciada la reunión.",
+    "pregunta": "El rector convocó a los padres de grado 8.° de una institución educativa oficial para elegir a sus representantes en el consejo de padres. La reunión empezó a las 6:00 p. m. con el 30% de los padres del grado. La coordinadora esperó y, a las 7:15 p. m., con el 42% de los padres en el salón, se votó: por mayoría resultaron elegidos cuatro padres, uno por cada grupo del grado. Un padre que llegó tarde pide anular la elección. ¿Qué debe concluir el rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe repetirse la reunión, porque la elección solo es válida si está presente al menos la mitad de los padres del grado.",
+        "explicacion": "Incorrecta. El 50% no es la única vía: si no se reúne, votan válidamente los padres presentes después de transcurrida la primera hora. Aquí se votó una hora y quince minutos después del inicio."
+      },
+      {
+        "id": "B",
+        "texto": "Que la votación con los asistentes es válida, pero el grado solo puede tener hasta tres integrantes en el consejo de padres.",
+        "explicacion": "Correcta. Pasada la primera hora, la mayoría de los presentes puede elegir aunque no esté la mitad de los padres. Pero el consejo de padres admite entre uno y tres padres por grado, de modo que el grado 8.° no puede tener cuatro."
+      },
+      {
+        "id": "C",
+        "texto": "Que la elección es válida en su totalidad, porque el PEI puede reconocer en el consejo un padre por cada grupo del grado.",
+        "explicacion": "Incorrecta. El PEI define el número dentro del rango que fija el decreto: mínimo uno y máximo tres padres por grado. No puede ampliarlo para tener uno por grupo."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe repetirse la reunión, porque los integrantes del consejo de padres se eligen en la asamblea general y no por grados.",
+        "explicacion": "Incorrecta. La elección de los integrantes del consejo de padres se hace en reunión por grados. La asamblea general de padres es otra instancia."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se votó a la hora y quince minutos de iniciada la reunión, con el 42% de los padres, y se eligieron cuatro. Regla: el art. 2.3.4.5 del Decreto 1075 permite elegir con el 50% de los padres o con los presentes después de la primera hora, y fija entre uno y tres padres por grado. Conclusión: la votación es válida, pero el grado solo puede tener hasta tres integrantes.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Participación de los padres de familia",
+    "subtema": "Elección de los representantes de los padres ante el consejo directivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.4.8",
+      "art. 2.3.4.9, parágrafo 2"
+    ],
+    "texto_fuente": "El consejo de padres de familia, en una reunión convocada para tal fin por el rector o, director del establecimiento educativo, elegirá dentro de los primeros treinta (30) días del año lectivo a los dos representantes de los padres de familia en el consejo directivo del establecimiento educativo. Los representantes de los padres de familia solo podrán ser reelegidos por un período adicional. [...] PARÁGRAFO 2. Cuando el número de afiliados a la asociación de padres alcance la mitad más uno de los padres de familia de los estudiantes del establecimiento educativo, la asamblea de la asociación elegirá uno de los dos representantes de los padres ante el consejo directivo, caso en el cual el consejo de padres elegirá solamente a un padre de familia como miembro del consejo directivo.",
+    "pregunta": "Una institución educativa oficial tiene 900 estudiantes matriculados y 1.180 padres de familia registrados. La asociación de padres, inscrita en la Cámara de Comercio, tiene 589 afiliados y pide al rector que su asamblea elija a uno de los representantes de los padres ante el consejo directivo de 2027. Además, el consejo de padres quiere volver a elegir a la señora Rojas, que fue representante en 2025 y reelegida en 2026. ¿Cómo deben elegirse los representantes de los padres para 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La asamblea de la asociación elige a uno y el consejo de padres al otro, y la señora Rojas puede ser reelegida para 2027.",
+        "explicacion": "Incorrecta. La asociación no alcanza la mitad más uno de los padres (591 de 1.180) y por eso no elige representante. Además, la señora Rojas ya fue reelegida una vez."
+      },
+      {
+        "id": "B",
+        "texto": "La asamblea de la asociación elige a uno y el consejo de padres al otro, pero la señora Rojas no puede ser escogida para 2027.",
+        "explicacion": "Incorrecta. Acierta en que la señora Rojas no puede ser reelegida, pero la asociación, con 589 afiliados, no llega a la mitad más uno de los 1.180 padres (591). Toma como referencia a los 900 estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "El consejo de padres elige a ambos, y la señora Rojas puede ser reelegida para 2027, porque cada período es anual.",
+        "explicacion": "Incorrecta. Acierta en que el consejo de padres elige a los dos, pero los representantes solo pueden ser reelegidos por un período adicional, y la señora Rojas ya lo fue en 2026."
+      },
+      {
+        "id": "D",
+        "texto": "El consejo de padres elige a ambos, pero la señora Rojas no puede ser escogida para 2027, porque ya repitió un período.",
+        "explicacion": "Correcta. La mitad más uno de 1.180 padres es 591; con 589 afiliados la asociación no alcanza el umbral, así que el consejo de padres elige a los dos representantes. La señora Rojas ya usó su único período adicional de reelección."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: 589 afiliados frente a 1.180 padres, y una representante elegida en 2025 y reelegida en 2026. Regla: según el Decreto 1075, la asamblea de la asociación elige un representante solo si sus afiliados alcanzan la mitad más uno de los padres (art. 2.3.4.9, par. 2); si no, el consejo de padres elige a los dos, que solo pueden ser reelegidos por un período adicional (art. 2.3.4.8). Cálculo: 1.180 / 2 + 1 = 591 > 589. Conclusión: el consejo de padres elige a ambos y no puede escoger otra vez a la señora Rojas.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Participación de los padres de familia",
+    "subtema": "Prohibición de que los docentes representen a los padres en el consejo directivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.4.8",
+      "art. 2.3.3.1.5.4, parágrafo 1"
+    ],
+    "texto_fuente": "En todo caso, los representantes de los padres ante el consejo directivo deben ser padres de alumnos del establecimiento educativo. Los docentes, directivos o administrativos del establecimiento educativo no podrán ser representantes de los padres de familia en el consejo directivo del mismo establecimiento en que laboran. [...] PARÁGRAFO 1. Los administradores escolares podrán participar en las deliberaciones del Consejo Directivo con voz pero sin voto, cuando éste les formule invitación, a solicitud de cualquiera de sus miembros.",
+    "pregunta": "El consejo de padres de una institución educativa oficial eligió como uno de sus dos representantes ante el consejo directivo a la señora Pardo, madre de un estudiante de grado 9.° y docente de primaria en la sede rural de la misma institución. El rector debe convocar la primera sesión del consejo directivo. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Informar al consejo de padres que debe elegir a otra persona, ya que la señora Pardo labora en ese mismo plantel.",
+        "explicacion": "Correcta. Aunque sea madre de un alumno, la señora Pardo es docente del mismo establecimiento, y quienes laboran allí no pueden representar a los padres en su consejo directivo. El consejo de padres debe elegir a otra persona."
+      },
+      {
+        "id": "B",
+        "texto": "Convocarla como representante de los padres, ya que cumple la condición de ser madre de un alumno del establecimiento.",
+        "explicacion": "Incorrecta. Ser padre o madre de un alumno es un requisito, pero no basta: la norma excluye a los docentes, directivos y administrativos del mismo establecimiento."
+      },
+      {
+        "id": "C",
+        "texto": "Convocarla solo con voz y sin voto, ya que los empleados de la institución participan así en el consejo directivo.",
+        "explicacion": "Incorrecta. Confunde la prohibición con la participación de los administradores escolares, que pueden asistir con voz y sin voto cuando el consejo los invita. Eso no habilita a una docente para representar a los padres."
+      },
+      {
+        "id": "D",
+        "texto": "Convocarla si renuncia a votar en la asamblea de docentes, ya que así no tendría doble representación en el consejo.",
+        "explicacion": "Incorrecta. Renunciar a votar en la asamblea de docentes no elimina la prohibición, que se basa en que trabaja en el mismo establecimiento."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la elegida es madre de un estudiante, pero también docente de la misma institución. Regla: el art. 2.3.4.8 del Decreto 1075 exige que los representantes de los padres sean padres de alumnos y prohíbe que lo sean los docentes, directivos o administrativos del establecimiento donde laboran. Conclusión: el consejo de padres debe elegir a otra persona.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Gobierno escolar",
+    "subtema": "Competencias del consejo directivo y del consejo académico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.5.6, lits. d y f",
+      "art. 2.3.3.1.5.7, lit. c"
+    ],
+    "texto_fuente": "d) Fijar los criterios para la asignación de cupos disponibles para la admisión de nuevos alumnos; [...] f) Aprobar el plan anual de actualización académica del personal docente presentado por el Rector. [...] ARTÍCULO 2.3.3.1.5.7. Consejo Académico. El Consejo Académico está integrado por el Rector quien lo preside, los directivos docentes y un docente por cada área definida en el plan de estudios. Cumplirá las siguientes funciones: [...] c) Organizar el plan de estudios y orientar su ejecución;",
+    "pregunta": "En la misma semana llegan a la rectoría de una institución educativa oficial tres asuntos: 1) la organización, dentro del PEI vigente, del plan de estudios de 6.° a 9.° para el próximo año; 2) la necesidad de definir con qué criterios se asignarán los cupos que quedaron libres para estudiantes nuevos, y 3) el plan anual de actualización académica de los docentes, que preparó el propio rector. ¿Qué instancia debe ocuparse de cada asunto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1) El consejo directivo; 2) el consejo directivo; 3) el consejo académico.",
+        "explicacion": "Incorrecta. Organizar el plan de estudios es función del consejo académico, y aprobar el plan anual de actualización docente corresponde al consejo directivo, no al académico."
+      },
+      {
+        "id": "B",
+        "texto": "1) El consejo académico; 2) el rector, por resolución; 3) el consejo directivo.",
+        "explicacion": "Incorrecta. Los criterios para asignar los cupos disponibles los fija el consejo directivo; no son una decisión que el rector tome por resolución."
+      },
+      {
+        "id": "C",
+        "texto": "1) El consejo académico; 2) el consejo directivo; 3) el consejo directivo.",
+        "explicacion": "Correcta. El consejo académico organiza el plan de estudios y orienta su ejecución. El consejo directivo fija los criterios para asignar los cupos disponibles y aprueba el plan anual de actualización académica que le presenta el rector."
+      },
+      {
+        "id": "D",
+        "texto": "1) El consejo directivo; 2) el consejo académico; 3) el rector, que lo adopta.",
+        "explicacion": "Incorrecta. Invierte las competencias de los consejos y, además, supone que el rector aprueba su propio plan de actualización, cuando debe presentarlo para que lo apruebe el consejo directivo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: son tres asuntos distintos: plan de estudios, cupos y plan de actualización docente. Regla: el Decreto 1075 asigna al consejo directivo fijar los criterios de asignación de cupos y aprobar el plan anual de actualización académica presentado por el rector (art. 2.3.3.1.5.6, lits. d y f), y al consejo académico organizar el plan de estudios (art. 2.3.3.1.5.7, lit. c). Conclusión: académico, directivo y directivo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Proyecto educativo institucional",
+    "subtema": "Segunda votación de las propuestas de modificación no aceptadas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.4.1, num. 7",
+      "art. 2.3.3.1.4.2, num. 3",
+      "art. 2.3.4.7, lit. j"
+    ],
+    "texto_fuente": "7. El reglamento o manual de convivencia y el reglamento para docentes. [...] 3. Las modificaciones. Las modificaciones al proyecto educativo institucional podrán ser solicitadas al rector por cualquiera de los estamentos de la comunidad educativa. Este procederá a someterlas a discusión de los demás estamentos y concluida esta etapa, el consejo Directivo procederá a decidir sobre las propuestas, previa consulta con el Consejo Académico. Si se trata de materias relacionadas con los numerales 1, 3, 5, 7 y 8 del ARTÍCULO anterior del presente Decreto, las propuestas de modificación que no hayan sido aceptadas por el Consejo Directivo deberán ser sometidas a una segunda votación, dentro de un plazo que permita la consulta a los estamentos representados en el Consejo y, en caso de ser respaldadas por la mayoría que fije su reglamento, se procederá a adoptarlas. [...] j) Presentar las propuestas de modificación del proyecto educativo institucional que surjan de los padres de familia de conformidad con lo previsto en los artículos 2.3.3.1.4.1., 2.3.3.1.4.2., y 2.3.3.1.4.3 del presente Decreto.",
+    "pregunta": "El consejo de padres de una institución educativa oficial presentó al rector una propuesta para cambiar las pautas de presentación personal del manual de convivencia. El rector la puso a discusión de los demás estamentos y luego el consejo directivo, previa consulta al consejo académico, la rechazó por un voto. Los representantes de los padres preguntan si el trámite terminó. ¿Qué debe responder el rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el trámite terminó y la propuesta solo podrá presentarse de nuevo en la revisión anual del plan operativo del proyecto educativo.",
+        "explicacion": "Incorrecta. La revisión anual del plan operativo es otra cosa. Para las propuestas no aceptadas sobre ciertas materias, entre ellas el manual de convivencia, la norma exige una segunda votación."
+      },
+      {
+        "id": "B",
+        "texto": "Que, por la materia de que se trata, el mismo órgano debe votarla otra vez, en un término que facilite oír a los sectores que lo integran.",
+        "explicacion": "Correcta. El manual de convivencia es el numeral 7 del contenido del PEI. Para las materias de los numerales 1, 3, 5, 7 y 8, las propuestas no aceptadas por el consejo directivo se someten a una segunda votación, en un plazo que permita consultar a los estamentos, y se adoptan si las respalda la mayoría que fije su reglamento."
+      },
+      {
+        "id": "C",
+        "texto": "Que los padres pueden apelar la decisión ante la secretaría de educación, que es la que registra el PEI y verifica sus ajustes anuales.",
+        "explicacion": "Incorrecta. La secretaría registra los avances del PEI y asesora a los establecimientos, pero no resuelve apelaciones contra las decisiones del consejo directivo sobre sus modificaciones."
+      },
+      {
+        "id": "D",
+        "texto": "Que la propuesta pasa al consejo académico, que como órgano consultor en asuntos del PEI la decide en segunda instancia.",
+        "explicacion": "Incorrecta. El consejo académico es consultado antes de la decisión, pero no decide en segunda instancia: la segunda votación es del consejo directivo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la propuesta rechazada modifica el manual de convivencia. Regla: el Decreto 1075 permite al consejo de padres proponer modificaciones al PEI (art. 2.3.4.7, lit. j) y, cuando la propuesta no aceptada versa sobre los numerales 1, 3, 5, 7 u 8 del art. 2.3.3.1.4.1 (el 7 es el manual de convivencia), ordena una segunda votación del consejo directivo (art. 2.3.3.1.4.2, num. 3). Conclusión: el trámite continúa con una nueva votación.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Proyecto educativo institucional",
+    "subtema": "Plazo para presentar y revisar el plan operativo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.4.2, num. 5"
+    ],
+    "texto_fuente": "El rector presentará al Consejo Directivo, dentro de los tres meses siguientes a la adopción del proyecto educativo institucional, el plan operativo correspondiente que contenga entre otros, las metas, estrategias, recursos y cronograma de las actividades necesarias para alcanzar los objetivos del proyecto. Periódicamente y por lo menos cada año, el plan operativo será revisado y constituirá un punto de referencia para la evaluación institucional.",
+    "pregunta": "El consejo directivo de una institución educativa oficial adoptó el jueves 20 de agosto de 2026 la nueva versión del PEI. En la misma sesión, el rector anunció que llevará el plan operativo del proyecto a la primera sesión del consejo en febrero de 2027 y que lo revisará cada dos años, para no recargar al equipo. ¿Qué debe ajustar el rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Presentarlo a más tardar el 20 de noviembre de 2026, porque tiene tres meses desde la adopción, y revisarlo al menos una vez al año.",
+        "explicacion": "Correcta. El rector debe presentar el plan operativo al consejo directivo dentro de los tres meses siguientes a la adopción del PEI: desde el 20 de agosto, vence el 20 de noviembre de 2026. Además, el plan se revisa por lo menos cada año."
+      },
+      {
+        "id": "B",
+        "texto": "Presentarlo a más tardar el 18 de noviembre de 2026, porque tiene 90 días desde la adopción, y mantener la revisión cada dos años.",
+        "explicacion": "Incorrecta. El plazo se cuenta en meses, no en 90 días, y la revisión cada dos años incumple la exigencia de revisar el plan por lo menos cada año."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener la fecha de febrero, porque el plazo corre desde el inicio del siguiente año lectivo, y revisarlo al menos una vez al año.",
+        "explicacion": "Incorrecta. El plazo corre desde la adopción del PEI, no desde el siguiente año lectivo. Febrero de 2027 supera los tres meses."
+      },
+      {
+        "id": "D",
+        "texto": "Presentarlo a más tardar el 20 de febrero de 2027, porque tiene seis meses desde la adopción, y mantener la revisión cada dos años.",
+        "explicacion": "Incorrecta. El plazo es de tres meses, no de seis, y la revisión debe hacerse por lo menos cada año."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el PEI se adoptó el 20 de agosto de 2026. Regla: el art. 2.3.3.1.4.2, num. 5, del Decreto 1075 ordena al rector presentar el plan operativo al consejo directivo dentro de los tres meses siguientes a la adopción y revisarlo por lo menos cada año. Cálculo: 20 de agosto + 3 meses = 20 de noviembre de 2026. Conclusión: debe presentarlo a más tardar ese día y revisarlo cada año.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Proyecto educativo institucional",
+    "subtema": "Contenido del manual de convivencia",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.1.4.1, nums. 5, 9 y 13",
+      "art. 2.3.3.1.4.4, num. 8"
+    ],
+    "texto_fuente": "5. La organización de los planes de estudio y la definición de los criterios para la evaluación del rendimiento del educando. [...] 9. El sistema de matrículas y pensiones que incluya la definición de los pagos que corresponda hacer a los usuarios del servicio [...] 13. Los criterios de organización administrativa y de evaluación de la gestión. [...] 8. Reglas para la elección de representantes al Consejo Directivo y para la escogencia de voceros en los demás consejos previstos en el presente Capítulo. Debe incluir el proceso de elección del personero de los estudiantes.",
+    "pregunta": "Una coordinadora revisa el borrador del nuevo manual de convivencia de una institución educativa oficial y debe verificar que incluya los aspectos que el Decreto 1075 de 2015 exige para ese documento. ¿Cuál de los siguientes debe figurar en el manual?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La organización de los planes de estudio y la definición de los criterios para evaluar el rendimiento de los estudiantes.",
+        "explicacion": "Incorrecta. La organización de los planes de estudio y los criterios de evaluación son contenidos del PEI (num. 5 del art. 2.3.3.1.4.1), no del manual de convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "El sistema de matrículas y pensiones, con la definición de los pagos que deben hacer los usuarios.",
+        "explicacion": "Incorrecta. El sistema de matrículas y pensiones es contenido del PEI (num. 9 del art. 2.3.3.1.4.1), no uno de los aspectos que debe contemplar el manual."
+      },
+      {
+        "id": "C",
+        "texto": "Los criterios de organización administrativa de la institución y de evaluación de su gestión.",
+        "explicacion": "Incorrecta. Los criterios de organización administrativa y de evaluación de la gestión hacen parte del PEI (num. 13 del art. 2.3.3.1.4.1), no del manual."
+      },
+      {
+        "id": "D",
+        "texto": "El procedimiento para escoger al personero y a los representantes y voceros ante los consejos de la institución.",
+        "explicacion": "Correcta. El manual debe contener las reglas para elegir a los representantes al consejo directivo y a los voceros de los demás consejos, incluido el proceso de elección del personero de los estudiantes (art. 2.3.3.1.4.4, num. 8)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se pregunta por el contenido propio del manual de convivencia, que es una parte del PEI. Regla: el art. 2.3.3.1.4.4, num. 8, del Decreto 1075 exige que el manual incluya las reglas de elección de representantes y voceros y el proceso de elección del personero; los planes de estudio, las matrículas y los criterios administrativos son otros contenidos del PEI (art. 2.3.3.1.4.1). Conclusión: el manual debe incluir el procedimiento electoral.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Funciones del rector",
+    "subtema": "Publicación de la carga docente e informe al consejo directivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 715 de 2001",
+    "articulos": [
+      "art. 10, nums. 10.15 y 10.17"
+    ],
+    "texto_fuente": "10.15. Rendir un informe al Consejo Directivo de la Institución Educativa al menos cada seis meses. [...] 10.17. Publicar una vez al semestre en lugares públicos y comunicar por escrito a los padres de familia, los docentes a cargo de cada asignatura, los horarios y la carga docente de cada uno de ellos.",
+    "pregunta": "Un rector nuevo encuentra que en su institución educativa oficial la costumbre es subir a la página web, en febrero, la lista de los docentes de cada asignatura con sus horarios y su carga, sin volver a publicarla ni enviarla a las familias, y presentar al consejo directivo un solo informe de gestión, en diciembre. ¿Qué debe cambiar para cumplir las funciones que le asigna la Ley 715 de 2001?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Publicar la lista cada semestre en lugares públicos y comunicarla por escrito a los padres; el informe anual al consejo puede mantenerse.",
+        "explicacion": "Incorrecta. Corrige la publicación, pero un solo informe al año no basta: el rector debe rendir informe al consejo directivo al menos cada seis meses (num. 10.15)."
+      },
+      {
+        "id": "B",
+        "texto": "Actualizar la lista en la página web cada semestre, lo que reemplaza el aviso escrito a los padres, e informar al consejo al menos cada seis meses.",
+        "explicacion": "Incorrecta. Acierta en la periodicidad del informe, pero la página web no sustituye la publicación en lugares públicos ni la comunicación escrita a los padres de familia, que la ley exige cada semestre (num. 10.17)."
+      },
+      {
+        "id": "C",
+        "texto": "Publicar la lista cada semestre en lugares públicos, comunicarla por escrito a los padres e informar al consejo al menos cada seis meses.",
+        "explicacion": "Correcta. El rector debe publicar una vez al semestre, en lugares públicos, los docentes a cargo de cada asignatura, sus horarios y su carga, y comunicarlo por escrito a los padres (num. 10.17). También debe rendir informe al consejo directivo al menos cada seis meses (num. 10.15)."
+      },
+      {
+        "id": "D",
+        "texto": "Actualizar la lista en la página web cada semestre, lo que reemplaza el aviso escrito a los padres; el informe anual al consejo puede mantenerse.",
+        "explicacion": "Incorrecta. Falla en los dos puntos: la web no reemplaza la publicación en lugares públicos ni la comunicación escrita a los padres (num. 10.17), y el informe al consejo directivo debe rendirse al menos cada seis meses, no una vez al año (num. 10.15)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: hoy hay una publicación anual en la web, sin aviso escrito a las familias, y un solo informe anual al consejo directivo. Regla: el art. 10 de la Ley 715 de 2001 ordena al rector publicar una vez al semestre en lugares públicos y comunicar por escrito a los padres los docentes, horarios y carga (num. 10.17), y rendir informe al consejo directivo al menos cada seis meses (num. 10.15). Conclusión: debe cambiar las dos prácticas; la web no sustituye el aviso escrito.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0715_2001.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Establecimientos y cargos directivos",
+    "subtema": "Centro educativo y cargo de director rural",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 715 de 2001, Decreto Ley 1278 de 2002 y Decreto 1075 de 2015",
+    "articulos": [
+      "art. 9 (Ley 715 de 2001)",
+      "art. 6 (Decreto Ley 1278 de 2002)",
+      "art. 2.4.6.1.2.2 (Decreto 1075 de 2015)"
+    ],
+    "texto_fuente": "Institución educativa es un conjunto de personas y bienes promovida por las autoridades públicas o por particulares, cuya finalidad será prestar un año de educación preescolar y nueve grados de educación básica como mínimo, y la media. Las que no ofrecen la totalidad de dichos grados se denominarán centros educativos y deberán asociarse con otras instituciones con el fin de ofrecer el ciclo de educación básica completa a los estudiantes. [...] Los cargos de directivos docentes estatales serán: director rural de preescolar y básica primaria; rector de institución educativa en educación preescolar y básica completa y/o educación media; y coordinador. [...] Para cada centro educativo rural que cuente al menos con 150 estudiantes, la autoridad competente de la entidad territorial certificada podrá designar un director sin asignación académica.",
+    "pregunta": "En una vereda funciona un establecimiento oficial que atiende el grado de transición y de 1.° a 5.° de primaria, con 168 estudiantes y siete docentes. La secretaría de educación va a proveer el cargo directivo que lo dirigirá, y un aspirante pregunta qué tipo de establecimiento es y qué cargo le corresponde. ¿Qué se le debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es una institución educativa, porque ofrece preescolar y primaria, y la dirige un rector con el apoyo de un coordinador.",
+        "explicacion": "Incorrecta. Ofrecer preescolar y primaria no basta para ser institución educativa: esta debe prestar un año de preescolar, nueve grados de básica y la media. Tampoco corresponde el cargo de rector."
+      },
+      {
+        "id": "B",
+        "texto": "Es un centro educativo, que debe asociarse con otros planteles para garantizar toda la básica, y lo dirige un director rural.",
+        "explicacion": "Correcta. Como no ofrece la totalidad de los grados, es un centro educativo y debe asociarse con otras instituciones para garantizar la básica completa. El cargo directivo previsto para preescolar y básica primaria es el de director rural, y como el centro rural tiene al menos 150 estudiantes, la entidad territorial puede designar un director sin asignación académica."
+      },
+      {
+        "id": "C",
+        "texto": "Es un centro educativo, que puede funcionar de manera independiente de otros planteles, y lo dirige un rector nombrado por concurso.",
+        "explicacion": "Incorrecta. Acierta en la denominación, pero el centro educativo debe asociarse para ofrecer la básica completa, y el cargo de rector corresponde a instituciones con preescolar y básica completa o media."
+      },
+      {
+        "id": "D",
+        "texto": "Es una institución educativa rural, que no está obligada a asociarse con otras, y la dirige un director rural.",
+        "explicacion": "Incorrecta. Acierta en el cargo, pero el establecimiento no es una institución educativa, porque no ofrece todos los grados exigidos, y sí debe asociarse con otras."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el establecimiento rural solo ofrece transición y 1.° a 5.°, y tiene 168 estudiantes. Regla: el art. 9 de la Ley 715 de 2001 denomina centros educativos a los que no ofrecen preescolar, nueve grados de básica y la media, y les exige asociarse para ofrecer la básica completa; el art. 6 del Decreto Ley 1278 de 2002 prevé el cargo de director rural de preescolar y básica primaria, y el art. 2.4.6.1.2.2 del Decreto 1075 permite designarlo en centros rurales con al menos 150 estudiantes. Conclusión: es un centro educativo dirigido por un director rural.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0715_2001.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Jornada escolar",
+    "subtema": "Períodos de clase y horas efectivas en secundaria y media",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.3.1.2 (modificado por el art. 1 del Decreto 277 de 2025)",
+      "art. 2.4.3.1.3"
+    ],
+    "texto_fuente": "El horario de la jornada escolar será definido por el rector o director, al comienzo de cada año lectivo, de conformidad con las normas vigentes, el proyecto educativo institucional y el plan de estudios, y debe cumplirse durante las cuarenta (40) semanas lectivas establecidas por la Ley 115 de 1994 y fijadas por el calendario académico de la respectiva entidad territorial certificada. El horario de la jornada escolar debe permitir a los estudiantes el cumplimiento de las siguientes intensidades horarias mínimas, semanales y anuales, de actividades pedagógicas relacionadas con las áreas obligatorias y fundamentales y con las asignaturas optativas, para cada uno de los niveles de la educación básica y media, las cuales se contabilizarán en horas efectivas de sesenta (60) minutos, así: [...] BASICA PRIMARIA 25 1000 BASICA SECUNDARIA Y MEDIA ACADEMICA 30 1200 [...] Parágrafo 3º. El tiempo de la jornada escolar incluirá el descanso pedagógico estudiantil [...] Los períodos de clase serán definidos por el rector o director del establecimiento educativo al comienzo de cada año lectivo y pueden tener duraciones diferentes de acuerdo con el plan de estudios, siempre y cuando el total semanal y anual, contabilizado en horas efectivas, sea igual a la intensidad mínima definida en el artículo anterior.",
+    "pregunta": "El rector de una institución educativa oficial que no tiene jornada única define, al comenzar el año lectivo, períodos de clase de 45 minutos para la básica secundaria y la media académica. Cada período ya incluye el descanso pedagógico que prevé la norma. Quiere saber cuántos períodos semanales necesita, como mínimo, para cumplir la intensidad exigida en esos niveles. ¿Cuál es la cifra correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "30 períodos, porque cada período de clase cuenta como una de las horas de la intensidad semanal exigida.",
+        "explicacion": "Incorrecta. Confunde período de clase con hora efectiva. La intensidad se cuenta en horas de 60 minutos: 30 períodos de 45 minutos dan 22,5 horas."
+      },
+      {
+        "id": "B",
+        "texto": "34 períodos, porque la intensidad semanal mínima de esos niveles es de 25 horas de 60 minutos.",
+        "explicacion": "Incorrecta. Las 25 horas semanales son las de la básica primaria. Para secundaria y media académica el mínimo es de 30 horas."
+      },
+      {
+        "id": "C",
+        "texto": "36 períodos, porque las 1.200 horas anuales pueden repartirse entre las 45 semanas del calendario.",
+        "explicacion": "Incorrecta. La intensidad se cumple en las 40 semanas lectivas; las 5 semanas de desarrollo institucional no son de trabajo con estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "40 períodos, porque se requieren 1.800 minutos efectivos a la semana, es decir, 30 horas de 60 minutos.",
+        "explicacion": "Correcta. La básica secundaria y la media académica exigen 30 horas semanales de 60 minutos, es decir, 1.800 minutos. Con períodos de 45 minutos se necesitan 1.800 / 45 = 40 períodos a la semana."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los períodos duran 45 minutos y el establecimiento no tiene jornada única. Regla: el art. 2.4.3.1.2 del Decreto 1075 fija para secundaria y media académica 30 horas semanales y 1.200 anuales, contadas en horas efectivas de 60 minutos durante las 40 semanas lectivas, y el art. 2.4.3.1.3 permite períodos de otra duración si se completa ese total. Cálculo: 30 × 60 = 1.800 minutos; 1.800 / 45 = 40 períodos. Conclusión: mínimo 40 períodos semanales.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Jornada escolar",
+    "subtema": "Porcentaje mínimo de la intensidad para las áreas obligatorias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.3.1.2, parágrafo 1 (modificado por el art. 1 del Decreto 277 de 2025)",
+      "art. 2.3.3.1.6.1"
+    ],
+    "texto_fuente": "BASICA PRIMARIA 25 1000 [...] Parágrafo 1°. En concordancia con los artículos 23 y 31 de la Ley 115 de 1994, como mínimo el 80% de las intensidades semanales y anuales señaladas en el presente artículo serán dedicadas por el establecimiento educativo al desarrollo de las áreas obligatorias y fundamentales. [...] Además, incluirá grupos de áreas o asignaturas que adicionalmente podrá seleccionar el establecimiento educativo para lograr los objetivos del proyecto educativo institucional, sin sobrepasar el veinte por ciento de las áreas establecidas en el plan de estudios.",
+    "pregunta": "La coordinadora académica de una institución educativa oficial sin jornada única presenta al rector el horario de 4.° y 5.° de primaria: 25 horas efectivas semanales, de las cuales 19 se dedican a las áreas obligatorias de la básica y 6 a ajedrez, una asignatura optativa prevista en el PEI. ¿Qué debe decidir el rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobarlo, porque el horario completa las 25 horas semanales que se exigen como mínimo para la básica primaria.",
+        "explicacion": "Incorrecta. Completar el total semanal no basta: además, como mínimo el 80% de esas horas debe destinarse a las áreas obligatorias y fundamentales."
+      },
+      {
+        "id": "B",
+        "texto": "Ajustarlo, porque de las 25 horas semanales al menos 20 deben destinarse a esas áreas, y la optativa no puede pasar de 5.",
+        "explicacion": "Correcta. Como mínimo el 80% de la intensidad semanal debe dedicarse a las áreas obligatorias y fundamentales: 80% de 25 = 20 horas. Con 19 no se cumple; la optativa puede ocupar como máximo 5 horas."
+      },
+      {
+        "id": "C",
+        "texto": "Aprobarlo, porque el límite del 20% para lo optativo se refiere al número de áreas del plan de estudios y no a las horas.",
+        "explicacion": "Incorrecta. El límite del 20% de las áreas del plan de estudios existe, pero el parágrafo 1 del art. 2.4.3.1.2 añade una regla sobre las horas: como mínimo el 80% de la intensidad debe ir a las áreas obligatorias y fundamentales."
+      },
+      {
+        "id": "D",
+        "texto": "Ajustarlo, porque en la básica primaria las asignaturas optativas no pueden ocupar horas de la jornada escolar.",
+        "explicacion": "Incorrecta. La intensidad mínima de cada nivel de básica y media incluye las asignaturas optativas; lo que se limita es su proporción frente a las áreas obligatorias."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: de 25 horas semanales, 19 son de áreas obligatorias y 6 de una optativa. Regla: el art. 2.4.3.1.2 del Decreto 1075 fija 25 horas semanales para la básica primaria, y su parágrafo 1 exige destinar como mínimo el 80% a las áreas obligatorias y fundamentales. Cálculo: 0,8 × 25 = 20 horas, y 19 < 20. Conclusión: el horario debe ajustarse.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Jornada escolar",
+    "subtema": "Distribución de la asignación académica en secundaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015 y Ley 715 de 2001",
+    "articulos": [
+      "art. 2.4.3.2.1 (modificado por el art. 2 del Decreto 277 de 2025) (Decreto 1075 de 2015)",
+      "art. 2.4.3.2.2 (Decreto 1075 de 2015)",
+      "art. 10, num. 10.9 (Ley 715 de 2001)"
+    ],
+    "texto_fuente": "PREESCOLAR 20 BASICA PRIMARIA 25 BASICA SECUNDARIA Y MEDIA 22 [...] Todos los directivos docentes y los docentes deben brindar orientación a sus estudiantes, en forma grupal o individual, con el propósito de contribuir a su formación integral, sin que la dirección de grupo implique para el docente de educación básica secundaria y educación media una disminución de su asignación académica de veintidós (22) horas efectivas semanales. [...] 10.9. Distribuir las asignaciones académicas, y demás funciones de docentes, directivos docentes y administrativos a su cargo, de conformidad con las normas sobre la materia.",
+    "pregunta": "Al preparar la distribución de la asignación académica de una institución educativa oficial, el coordinador le asigna a un docente de matemáticas de secundaria 20 horas semanales de clase y le cuenta 2 horas por la dirección de grupo de 7.°B, para completar su carga. Luego pide al rector que firme la distribución. ¿Qué debe hacer el rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Firmarla, porque la dirección de grupo forma parte de la asignación académica y completa las horas que se exigen en secundaria.",
+        "explicacion": "Incorrecta. La dirección de grupo hace parte de la orientación estudiantil y, por norma expresa, no disminuye la asignación académica de 22 horas del docente de secundaria."
+      },
+      {
+        "id": "B",
+        "texto": "Firmarla, porque en secundaria la asignación académica es de 20 horas y la dirección de grupo es un tiempo adicional.",
+        "explicacion": "Incorrecta. En básica secundaria y media la asignación académica es de 22 horas semanales; las 20 horas corresponden al preescolar."
+      },
+      {
+        "id": "C",
+        "texto": "Devolverla, porque esa tarea no reduce la carga de clase de un docente de secundaria y a este todavía le faltan 2 horas.",
+        "explicacion": "Correcta. La asignación académica en secundaria y media es de 22 horas semanales y la dirección de grupo no la reduce. Con 20 horas de clase, al docente le faltan 2, que el rector debe completar al distribuir las asignaciones."
+      },
+      {
+        "id": "D",
+        "texto": "Devolverla, porque en secundaria la asignación académica es de 25 horas y a ese docente todavía le faltan 5 horas.",
+        "explicacion": "Incorrecta. Las 25 horas son la asignación de la básica primaria. En secundaria son 22, así que faltan 2 horas, no 5."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el docente de secundaria tiene 20 horas de clase y 2 de dirección de grupo. Regla: el art. 2.4.3.2.1 del Decreto 1075 fija 22 horas semanales de asignación académica en secundaria y media; el art. 2.4.3.2.2 dice que la dirección de grupo no la disminuye, y el rector distribuye las asignaciones (Ley 715, num. 10.9). Cálculo: 22 − 20 = 2. Conclusión: debe devolver la distribución para completar 2 horas de clase.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Calendario académico",
+    "subtema": "Incompetencia del plantel para autorizar la reposición de clases",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.3.4.2",
+      "art. 2.4.3.2.4",
+      "art. 2.3.3.1.5.6, lit. a"
+    ],
+    "texto_fuente": "La competencia para modificar el calendario académico es del Gobierno Nacional, los ajustes del calendario deberán ser solicitados previamente por la autoridad competente de la respectiva entidad certificada mediante petición debidamente motivada, salvo cuando sobrevengan hechos que alteren el orden público, en cuyo caso la autoridad competente de la entidad territorial certificada podrá realizar los ajustes del calendario académico que sean necesarios. Las autoridades territoriales, los consejos directivos, los rectores o directores de los establecimientos educativos no son competentes para autorizar variaciones en la distribución de los días fijados para el cumplimiento del calendario académico y la jornada escolar, ni para autorizar la reposición de ciases por días no trabajados por cese de actividades académicas. [...] Estas actividades deberán realizarse durante cinco (5) semanas del calendario académico y serán distintas a las cuarenta (40) semanas lectivas de trabajo académico con los estudiantes, establecidas en el calendario. [...] a) Tomar las decisiones que afecten el funcionamiento de la institución, excepto las que sean competencia de otra autoridad",
+    "pregunta": "Tras cuatro días de cese de actividades de los docentes de una institución educativa oficial, el consejo directivo aprobó, a propuesta del rector, recuperar esas clases en cuatro sábados de junio y pidió al rector expedir el horario. Un docente sostiene que el consejo podía decidirlo porque toma las decisiones que afectan el funcionamiento de la institución. ¿Qué es lo correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La decisión es válida, porque el consejo directivo decide sobre el funcionamiento del plantel y el rector la ejecuta.",
+        "explicacion": "Incorrecta. El consejo directivo decide sobre el funcionamiento, excepto en lo que es competencia de otra autoridad. La norma niega expresamente a consejos directivos y rectores la facultad de autorizar la reposición de clases por cese de actividades."
+      },
+      {
+        "id": "B",
+        "texto": "La decisión no es válida, porque esas clases deben recuperarse en una de las cinco semanas de desarrollo institucional.",
+        "explicacion": "Incorrecta. Las semanas de desarrollo institucional son distintas de las 40 semanas lectivas y se dedican a otras actividades. Además, ni el rector ni el consejo pueden autorizar la reposición."
+      },
+      {
+        "id": "C",
+        "texto": "La decisión es válida si la secretaría de educación la avala, porque la entidad territorial puede ajustar su calendario.",
+        "explicacion": "Incorrecta. La entidad territorial solo puede ajustar por sí misma el calendario ante hechos que alteren el orden público; los demás ajustes los decide el Gobierno Nacional, previa solicitud motivada. Además, la norma niega a las autoridades territoriales la facultad de autorizar reposiciones por cese."
+      },
+      {
+        "id": "D",
+        "texto": "La decisión no es válida, porque los órganos del plantel carecen de facultad para autorizar que se repongan días de paro.",
+        "explicacion": "Correcta. Ni los consejos directivos ni los rectores son competentes para autorizar variaciones del calendario ni la reposición de clases por días no trabajados por cese de actividades académicas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el consejo directivo aprobó reponer clases perdidas por un cese de actividades. Regla: el art. 2.4.3.4.2 del Decreto 1075 atribuye al Gobierno Nacional la modificación del calendario y niega a las autoridades territoriales, consejos directivos y rectores la competencia para autorizar la reposición de clases por cese; el consejo directivo no decide lo que es competencia de otra autoridad (art. 2.3.3.1.5.6, lit. a). Conclusión: la decisión no es válida.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Evaluación anual de desempeño",
+    "subtema": "Evaluador de los docentes de un centro educativo rural e impedimento del evaluador",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.1.5.1.6",
+      "art. 2.4.1.5.3.3",
+      "art. 2.4.1.5.1.10, lits. a y b",
+      "art. 2.3.3.1.5.6, lit. j"
+    ],
+    "texto_fuente": "El rector o el director rural, según el caso, evaluará a los coordinadores y docentes del establecimiento educativo que dirige. Cada rector o director rural será evaluado por su superior jerárquico, definido de acuerdo con la estructura organizacional adoptada por cada entidad territorial certificada. [...] El evaluador deberá declararse impedido para realizar la evaluación de desempeño laboral de un docente o directivo docente, cuando se encuentre incurso en una o varias de las causales de recusación previstas en la ley, en particular en el Código General del Proceso y el Código Único Disciplinario. El evaluador expresará por escrito, a su superior jerárquico, la causal aducida explicando las razones en que se fundamenta. El superior jerárquico adoptará la decisión a que haya lugar, mediante acto administrativo motivado, dentro de los cinco (5) días hábiles siguientes. El docente o directivo docente podrá recusar al evaluador ante el superior jerárquico de este, a quien le expresará por escrito la causal aducida, explicando las razones en que se fundamenta. La decisión será adoptada mediante acto administrativo motivado, dentro de los diez (10) días hábiles siguientes. [...] a) Organizar y divulgar el proceso de evaluación anual de desempeño laboral en su jurisdicción; b) Prestar asistencia técnica a los evaluadores en el desarrollo del proceso y orientar su aplicación con un enfoque de mejoramiento continuo; [...] j) Participar en la evaluación de los docentes, directivos docentes y personal administrativo de la institución.",
+    "pregunta": "Un director rural dirige un centro educativo oficial con seis docentes regidos por el Decreto Ley 1278 de 2002, que superaron hace años su período de prueba y han laborado allí todo el año. Una de ellas es su hermana, parentesco que configura una causal de recusación del Código General del Proceso. En noviembre, otro docente le dice que, como en el centro no hay rector, la evaluación anual de desempeño debe hacerla la secretaría de educación. ¿Cómo debe proceder el director rural?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Evaluar a los otros cinco y exponer por escrito a su superior jerárquico la causal frente a su hermana, para que la decida en cinco días hábiles.",
+        "explicacion": "Correcta. El director rural evalúa a los docentes del centro que dirige. Frente a su hermana está incurso en una causal de recusación, así que debe declararse impedido y expresar por escrito la causal a su superior jerárquico, que decide mediante acto motivado dentro de los cinco días hábiles siguientes."
+      },
+      {
+        "id": "B",
+        "texto": "Evaluar a los otros cinco docentes y declararse impedido ante el consejo directivo, que en diez días hábiles designará quién evalúa a su hermana.",
+        "explicacion": "Incorrecta. El impedimento se expresa al superior jerárquico del evaluador, no al consejo directivo, que solo participa en la evaluación de los docentes. Además, el impedimento se decide en cinco días hábiles; el plazo de diez corresponde a la recusación."
+      },
+      {
+        "id": "C",
+        "texto": "Remitir las seis evaluaciones a la secretaría de educación, porque en un centro sin rector y con un impedimento el director rural no puede evaluar.",
+        "explicacion": "Incorrecta. El director rural es el evaluador de los docentes del centro que dirige, igual que el rector en una institución, y el impedimento solo lo aparta de la evaluación de su hermana. La secretaría organiza el proceso y presta asistencia técnica a los evaluadores, pero no evalúa a los docentes."
+      },
+      {
+        "id": "D",
+        "texto": "Evaluar a los seis docentes y advertir a su hermana que, si lo considera, puede recusarlo ante el superior jerárquico, que decide en diez días hábiles.",
+        "explicacion": "Incorrecta. Confunde el impedimento con la recusación. Recusar es una facultad del evaluado, pero el evaluador incurso en una causal tiene el deber de declararse impedido; no puede evaluar a su hermana a la espera de que ella lo recuse."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el centro lo dirige un director rural, y una de las docentes es su hermana, con causal de recusación. Regla: el art. 2.4.1.5.1.6 del Decreto 1075 hace evaluador al rector o al director rural del establecimiento que dirige, y el art. 2.4.1.5.3.3 le ordena declararse impedido y expresar por escrito la causal a su superior jerárquico, que decide en cinco días hábiles (la recusación del evaluado se decide en diez). Conclusión: evalúa a los otros cinco y declara el impedimento frente a su hermana.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Evaluación anual de desempeño",
+    "subtema": "Docentes a quienes se aplica la evaluación anual",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.1.5.1.5",
+      "art. 2.4.1.5.1.6"
+    ],
+    "texto_fuente": "La evaluación anual de desempeño laboral comprende el año escolar y se aplica al docente o directivo docente que haya superado el período de prueba y laborado en el establecimiento educativo, en forma continua o discontinua, un término igual o superior a tres (3) meses. [...] El rector o el director rural, según el caso, evaluará a los coordinadores y docentes del establecimiento educativo que dirige.",
+    "pregunta": "El año escolar 2026 de una institución educativa oficial termina el 27 de noviembre, y el rector prepara la evaluación anual de desempeño de tres docentes regidos por el Decreto Ley 1278 de 2002: Ana, nombrada en período de prueba el 13 de abril de 2026, que ha laborado allí desde entonces; Bruno, docente con derechos de carrera, que llegó trasladado el 14 de septiembre de 2026, y Carla, también de carrera, que laboró del 2 de febrero al 31 de marzo y, tras una licencia, desde el 1 de septiembre. ¿A quiénes debe aplicar el rector esa evaluación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo a Carla, porque al sumar sus dos lapsos supera el tiempo mínimo de servicio y ya está en carrera.",
+        "explicacion": "Correcta. Carla trabajó del 2 de febrero al 31 de marzo (58 días) y del 1 de septiembre al 27 de noviembre (88 días): casi cinco meses, en forma discontinua. Ana sigue en período de prueba, que tiene su propia evaluación, y Bruno solo suma 2 meses y 13 días."
+      },
+      {
+        "id": "B",
+        "texto": "A Ana y a Carla, porque las dos laboraron en el establecimiento más de tres meses durante el año escolar 2026.",
+        "explicacion": "Incorrecta. Ana supera los tres meses, pero no ha superado el período de prueba, y la evaluación anual solo se aplica a quien ya lo superó."
+      },
+      {
+        "id": "C",
+        "texto": "A Ana y a Bruno, porque los dos laboran allí de forma continua, mientras que Carla interrumpió su servicio.",
+        "explicacion": "Incorrecta. El tiempo puede ser continuo o discontinuo, así que la licencia no excluye a Carla. Ana está en período de prueba y Bruno no completa tres meses en el establecimiento."
+      },
+      {
+        "id": "D",
+        "texto": "A los tres, porque todos laboraron en la institución durante el año escolar 2026 y siguen vinculados a ella.",
+        "explicacion": "Incorrecta. No basta con haber laborado en el año: se exige haber superado el período de prueba y haber trabajado en el establecimiento al menos tres meses."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Ana está en período de prueba; Bruno laboró del 14 de septiembre al 27 de noviembre; Carla, en dos lapsos. Regla: el art. 2.4.1.5.1.5 del Decreto 1075 aplica la evaluación anual a quien superó el período de prueba y laboró en el establecimiento, en forma continua o discontinua, tres meses o más. Cálculo: Bruno, 2 meses y 13 días; Carla, 58 + 88 = 146 días, casi cinco meses. Conclusión: solo Carla.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Evaluación anual de desempeño",
+    "subtema": "Ponderación de competencias y consecuencias para un coordinador",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.1.5.2.1",
+      "art. 2.4.1.5.2.6",
+      "art. 2.4.1.5.3.4"
+    ],
+    "texto_fuente": "Las funcionales representan el 70% de la evaluación y las comportamentales el 30%. [...] a. Sobresaliente: entre 90 y 100 puntos. b. Satisfactorio: entre 60 y 89 puntos. c. No Satisfactorio: entre 1 y 59 puntos. [...] Cuando un directivo docente proveniente de la docencia estatal obtenga una calificación no satisfactoria en la evaluación anual de desempeño laboral, en dos años consecutivos, será regresado al cargo docente para el cual concursó antes de ser directivo docente. Si el directivo docente no proviene de la docencia estatal, será excluido del escalafón y retirado del servicio.",
+    "pregunta": "Un rector evalúa al coordinador de su institución educativa oficial, regido por el Decreto Ley 1278 de 2002, que llegó al cargo por concurso después de ser docente oficial y cuya evaluación anual de 2025 fue no satisfactoria. En la de 2026 obtiene 50 puntos en las competencias funcionales y 70 en las comportamentales. ¿Cuál es el resultado y qué consecuencia tiene una vez quede en firme?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Satisfactorio, con 60 puntos, porque las dos clases de competencias pesan lo mismo; por eso no hay consecuencias.",
+        "explicacion": "Incorrecta. No es un promedio simple: las competencias funcionales pesan el 70% y las comportamentales el 30%. Así, 0,7 × 50 + 0,3 × 70 = 56."
+      },
+      {
+        "id": "B",
+        "texto": "Satisfactorio, con 64 puntos, porque las comportamentales pesan el 70%; por eso no hay consecuencias.",
+        "explicacion": "Incorrecta. Invierte los pesos: las funcionales representan el 70% y las comportamentales el 30%."
+      },
+      {
+        "id": "C",
+        "texto": "No satisfactorio, con 56 puntos; como es el segundo año seguido, el coordinador vuelve al cargo docente.",
+        "explicacion": "Correcta. 0,7 × 50 + 0,3 × 70 = 35 + 21 = 56, en el rango no satisfactorio (1 a 59). Por ser el segundo año consecutivo y venir de la docencia estatal, el coordinador regresa al cargo docente por el que concursó antes de ser directivo."
+      },
+      {
+        "id": "D",
+        "texto": "No satisfactorio, con 56 puntos; como es el segundo año seguido, sale del escalafón y es retirado del servicio.",
+        "explicacion": "Incorrecta. La exclusión del escalafón y el retiro aplican al directivo que no proviene de la docencia estatal. Este coordinador sí viene de ella, así que regresa al cargo docente."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 50 puntos en funcionales y 70 en comportamentales, segunda evaluación no satisfactoria y origen en la docencia estatal. Regla: según el Decreto 1075, las funcionales pesan 70% y las comportamentales 30% (art. 2.4.1.5.2.1), de 1 a 59 es no satisfactorio (art. 2.4.1.5.2.6) y el directivo que viene de la docencia estatal con dos no satisfactorias consecutivas regresa al cargo docente (art. 2.4.1.5.3.4). Cálculo: 35 + 21 = 56. Conclusión: no satisfactorio y regreso a la docencia.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DIR-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "directivos_docentes",
+    "modulo": "Gestión Escolar (Directivos Docentes)",
+    "tema": "Establecimientos y cargos directivos",
+    "subtema": "Experiencia exigida para el cargo de director rural",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.4.6.3.7, num. 2"
+    ],
+    "texto_fuente": "2. Director Rural: los aspirantes a cargo de director rural deberán acreditar, como mínimo, cuatro (4) años de experiencia profesional con reconocida trayectoria en materia educativa, de las cuales, mínima, tres (3) anos deben ser en cargos docentes de tiempo complete, en cualquier nivel educativo y tipo de institución educativa, oficial o privada. Los aspirantes podrán acreditar máximo un aria de experiencia en otro tipo de cargos, siempre y cuando en estos hayan cumplido funciones de administración de personal, de finanzas o de planeación en instituciones educativas oficiales o privadas de cualquier nivel educativo.",
+    "pregunta": "Una licenciada que trabajó cuatro años como docente de tiempo completo en un colegio privado, y que nunca ha ocupado cargos directivos, pregunta a la rectora de la institución oficial de su municipio si esa experiencia le permite aspirar al cargo de director rural en el próximo concurso. ¿Qué debe responderle la rectora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no le sirve, porque para ese cargo se exigen seis años de experiencia profesional con trayectoria en educación.",
+        "explicacion": "Incorrecta. Seis años es la experiencia exigida para el cargo de rector. Para director rural se exigen cuatro."
+      },
+      {
+        "id": "B",
+        "texto": "Que sí le sirve, porque cumple el tiempo mínimo y los años de docencia pueden haberse prestado en un plantel privado.",
+        "explicacion": "Correcta. Para director rural se exigen como mínimo cuatro años de experiencia profesional, de los cuales al menos tres en cargos docentes de tiempo completo, en cualquier nivel y tipo de institución, oficial o privada. Sus cuatro años de docencia en un colegio privado cumplen."
+      },
+      {
+        "id": "C",
+        "texto": "Que no le sirve, porque al menos tres de esos años deben haberse prestado como docente en establecimientos oficiales.",
+        "explicacion": "Incorrecta. La norma admite la docencia en cualquier tipo de institución educativa, oficial o privada."
+      },
+      {
+        "id": "D",
+        "texto": "Que sí le sirve, con tal de que acredite además un año en funciones de administración de personal, finanzas o planeación.",
+        "explicacion": "Incorrecta. La experiencia en administración de personal, finanzas o planeación es una opción que se puede acreditar hasta por un año, no un requisito adicional."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: cuatro años como docente de tiempo completo en un colegio privado, sin cargos directivos. Regla: el art. 2.4.6.3.7, num. 2, del Decreto 1075 exige al director rural cuatro años de experiencia profesional, al menos tres en cargos docentes de tiempo completo en instituciones oficiales o privadas, y permite acreditar hasta un año en otros cargos. Conclusión: su experiencia le sirve.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

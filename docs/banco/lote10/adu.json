@@ -1,0 +1,965 @@
+[
+  {
+    "id": "TC-ADU-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Conceptos básicos del régimen aduanero",
+    "subtema": "Levante y disposición restringida en la importación temporal",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 3 (definiciones de levante, mercancía en libre disposición, mercancía de disposición restringida y mercancía nacionalizada)",
+      "art. 172, inc. final",
+      "art. 200",
+      "art. 208, incs. 1 y 2 (modificado por el art. 32 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "Levante. Es el acto por el cual la autoridad aduanera permite a los interesados la disposición de la mercancía, previo el cumplimiento de los requisitos legales o el otorgamiento de garantía, cuando a ello haya lugar. [...] Mercancía en libre disposición. Es la mercancía que no se encuentra sometida a restricción aduanera alguna. [...] Mercancía de disposición restringida. Es aquella mercancía cuya circulación, enajenación o destinación está sometida a condiciones o restricciones aduaneras. [...] Mercancía nacionalizada. Es la mercancía de origen extranjero que se encuentra en libre disposición por haberse cumplido todos los trámites exigidos por las normas aduaneras. [...] Según la modalidad de la importación, la mercancía quedará en libre o en restringida disposición. [...] Es la importación al territorio aduanero nacional, con suspensión de tributos aduaneros, de determinadas mercancías destinadas a la reexportación en un plazo señalado, sin haber experimentado modificación alguna, con excepción de la depreciación normal originada en el uso que de ellas se haga, y con base en la cual su disposición quedará restringida. [...] Cuando en una importación temporal se decida dejar la mercancía en el país, el importador deberá, antes del vencimiento del plazo de la importación temporal, modificar la declaración de importación temporal a importación ordinaria o con franquicia y obtener el correspondiente levante o reexportar la mercancía [...] Ante el incumplimiento de esta obligación, tratándose de importaciones temporales de corto plazo, se aprehenderá la mercancía",
+    "pregunta": "Una productora importó temporalmente, a corto plazo, consolas y pantallas para un festival de música, y el 2 de marzo de 2026 la DIAN autorizó su levante. Un técnico de la Dirección Seccional debe registrar en la base de seguimiento la situación aduanera en que quedaron esos equipos desde esa fecha. ¿Cómo debe calificarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mercancía en libre disposición, porque el levante es el acto que permite disponer de ella sin limitación alguna.",
+        "explicacion": "Incorrecta. Confunde el levante con la libre disposición. El levante permite a los interesados disponer de la mercancía, pero solo está en libre disposición la que no tiene restricción aduanera alguna, y la importación temporal deja la disposición restringida (art. 200)."
+      },
+      {
+        "id": "B",
+        "texto": "Mercancía nacionalizada, porque con el levante concluyeron los trámites que exigía su ingreso al país.",
+        "explicacion": "Incorrecta. Mercancía nacionalizada es la que queda en libre disposición por haberse cumplido todos los trámites (art. 3). En la importación temporal los tributos solo se suspenden y la disposición sigue restringida."
+      },
+      {
+        "id": "C",
+        "texto": "Mercancía que puede usarse en el festival, pero cuya destinación sigue condicionada por la modalidad temporal.",
+        "explicacion": "Correcta. El levante permite disponer de los equipos para el fin de la importación, pero según la modalidad la mercancía queda en libre o en restringida disposición (art. 172), y en la importación temporal queda restringida (art. 200): su destinación está sometida a condiciones aduaneras (art. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Mercancía en libre disposición, aunque con la obligación de reexportarla antes de que venza el plazo.",
+        "explicacion": "Incorrecta. La obligación de reexportar, o de modificar antes del vencimiento la declaración a importación ordinaria o con franquicia (art. 208), es justamente lo que hace restringida la disposición. Libre disposición significa que no hay restricción aduanera alguna (art. 3)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los equipos entraron en importación temporal de corto plazo y obtuvieron levante. Regla: el levante es el acto que permite disponer de la mercancía (art. 3), pero según la modalidad la mercancía queda en libre o en restringida disposición (art. 172), y la importación temporal deja la disposición restringida (art. 200), con la obligación de reexportar o cambiar de modalidad dentro del plazo (art. 208). Libre disposición significa que no hay restricción aduanera alguna. Conclusión: los equipos están en disposición restringida.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-002",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Declarantes y agencias de aduanas",
+    "subtema": "Endoso aduanero y mandato como condición para aceptar la declaración",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 178, num. 6",
+      "art. 177, num. 7 (modificado por el art. 57 del Decreto 360 de 2021)",
+      "art. 3 (definición de endoso aduanero)",
+      "art. 32, num. 1"
+    ],
+    "texto_fuente": "No se aceptará la Declaración de Importación, respecto de la cual se configure alguna de las siguientes situaciones: [...] 6. Cuando el nombre del declarante sea diferente al del consignatario del documento de transporte y no se acredite el endoso, poder o mandato correspondiente [...] Para efectos aduaneros, el declarante está obligado a obtener antes de la presentación y aceptación de la declaración, el original de los siguientes documentos en medio físico o electrónico: [...] 7. Mandato, cuando no exista endoso aduanero y la declaración de importación se presente a través de una agencia de aduanas o apoderado. [...] Endoso aduanero. Es aquel que realiza el último consignatario del documento de transporte a nombre de una agencia de aduanas, para adelantar trámites necesarios para el cumplimiento de un régimen aduanero o modalidad o actividades conexas con los mismos, ante la autoridad aduanera. [...] El endoso aduanero no transfiere el dominio o propiedad sobre las mercancías. [...] 1. Las agencias de aduanas, quienes actúan a nombre y por encargo de los importadores y exportadores.",
+    "pregunta": "Un técnico de una Dirección Seccional revisa por qué los servicios informáticos de la DIAN no aceptaron una declaración de importación transmitida por una agencia de aduanas autorizada para actuar en esa jurisdicción. El proveedor del exterior le envió a la agencia la factura y la guía, y le pidió nacionalizar la carga. La guía está a nombre de la sociedad compradora, que no ha tenido trato con la agencia ni le ha firmado documento alguno. ¿Qué debe concluir el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no aceptarla fue procedente, porque la agencia no contaba con un título otorgado por la compradora para actuar en su nombre.",
+        "explicacion": "Correcta. No se acepta la declaración cuando el declarante es distinto del consignatario del documento de transporte y no se acredita el endoso, poder o mandato (art. 178, num. 6). La agencia actúa a nombre y por encargo del importador (art. 32), así que necesitaba el endoso aduanero o el mandato de la compradora."
+      },
+      {
+        "id": "B",
+        "texto": "Que debió aceptarse, y el mandato de la compradora puede aportarse después, cuando la DIAN lo pida en el control posterior.",
+        "explicacion": "Incorrecta. Cuando no hay endoso aduanero, el mandato es un documento soporte que el declarante debe obtener antes de presentar la declaración (art. 177, num. 7). Su falta impide la aceptación; no se suple después."
+      },
+      {
+        "id": "C",
+        "texto": "Que debió aceptarse, porque el proveedor que despachó la carga y remitió los documentos podía encargarle el trámite a la agencia.",
+        "explicacion": "Incorrecta. Las agencias de aduanas actúan a nombre y por encargo de los importadores y exportadores (art. 32). El proveedor del exterior no es el importador ni el consignatario de la guía, así que su pedido no suple el endoso, poder o mandato de la compradora."
+      },
+      {
+        "id": "D",
+        "texto": "Que no aceptarla fue procedente, porque la agencia solo podía declarar si la compradora le endosaba en propiedad la guía.",
+        "explicacion": "Incorrecta. Acierta en que la declaración no podía aceptarse, pero exige un endoso en propiedad. Bastaba el endoso aduanero, que no transfiere el dominio de las mercancías, o el mandato (arts. 3 y 177, num. 7)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la guía está a nombre de la compradora, que no endosó el documento ni otorgó poder o mandato; solo hubo un pedido del proveedor. Regla: el art. 178, num. 6, impide aceptar la declaración cuando el declarante es distinto del consignatario y no acredita endoso, poder o mandato; la agencia actúa por encargo del importador (art. 32), el mandato es documento soporte previo (art. 177, num. 7) y el endoso aduanero no transfiere la propiedad (art. 3). Conclusión: no aceptarla fue procedente.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Obligación aduanera y responsables",
+    "subtema": "Responsabilidad del importador que actúa por agencia y de la agencia de aduanas",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 8, incs. 3, 4 y 6 (modificado por el art. 2 del Decreto 659 de 2024)",
+      "art. 51, num. 4",
+      "art. 53, inc. 2"
+    ],
+    "texto_fuente": "Cuando el importador actúe de manera directa, será responsable por la exactitud y veracidad de los datos contenidos en la declaración aduanera [...] Cuando el importador actúe a través de una agencia de aduanas, responderá por la autenticidad de los documentos soporte que sean obtenidos y suministrados por él, así como por la entrega de la totalidad de la información sobre los elementos de hecho y circunstancias comerciales de la negociación respecto de la valoración aduanera, de acuerdo con lo solicitado por la agencia de aduanas. [...] En el caso de un consorcio o unión temporal o una asociación empresarial, la responsabilidad por el pago de los tributos aduaneros será solidaria [...] 4. Responder por la veracidad y exactitud de los datos consignados en las declaraciones de importación, exportación, tránsito aduanero y demás documentos transmitidos electrónicamente o suscritos en desarrollo de su actividad, en los términos establecidos en el artículo 53 del presente decreto. [...] Igualmente, serán responsables por la exactitud y veracidad de la información contenida en los documentos que suscriban sus agentes de aduanas acreditados ante la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN)",
+    "pregunta": "En un control posterior, una analista de fiscalización aduanera encuentra dos problemas en una importación que la sociedad Alfa tramitó por medio de una agencia de aduanas. Alfa le envió a la agencia la factura comercial del proveedor, que resultó adulterada, y la agencia anotó en la declaración una subpartida arancelaria que no corresponde a la mercancía descrita en esa misma factura. ¿Cómo se distribuye la responsabilidad por esos dos hechos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La agencia responde por los dos hechos, porque firmó la declaración y debía comprobar que la factura fuera auténtica.",
+        "explicacion": "Incorrecta. La agencia responde por la exactitud y veracidad de lo que suscriben sus agentes (art. 53), pero la autenticidad de los documentos soporte que obtiene y suministra el importador es responsabilidad de este (art. 8)."
+      },
+      {
+        "id": "B",
+        "texto": "Alfa y la agencia responden en forma solidaria por los dos hechos, como ocurre con los miembros de un consorcio.",
+        "explicacion": "Incorrecta. La solidaridad que prevé el art. 8 se refiere al pago de tributos en consorcios, uniones temporales o asociaciones empresariales. Aquí cada uno responde por su propia intervención."
+      },
+      {
+        "id": "C",
+        "texto": "Alfa responde por la subpartida, como importadora que es, y la agencia, por no advertir que la factura era adulterada.",
+        "explicacion": "Incorrecta. Invierte el reparto. El importador responde por la exactitud de los datos de la declaración cuando actúa de manera directa; si actúa por agencia, responde por la autenticidad de los documentos que aporta (art. 8), y los datos consignados son responsabilidad de la agencia (arts. 51, num. 4, y 53)."
+      },
+      {
+        "id": "D",
+        "texto": "Alfa responde por la falsedad del documento que aportó, y la agencia, por el dato inexacto que consignó.",
+        "explicacion": "Correcta. Cuando el importador actúa por medio de una agencia, responde por la autenticidad de los documentos soporte que obtiene y suministra (art. 8). La agencia responde por la exactitud y veracidad de la información de los documentos que suscriben sus agentes (arts. 51, num. 4, y 53)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Alfa actuó por medio de una agencia, le suministró una factura adulterada y la agencia consignó una subpartida errada. Regla: el importador responde por la exactitud de la declaración cuando actúa de manera directa; si actúa por agencia, responde por la autenticidad de los documentos soporte que obtiene y suministra (art. 8, mod. Decreto 659 de 2024), y la agencia responde por la exactitud y veracidad de lo que suscriben sus agentes (arts. 51, num. 4, y 53). Conclusión: cada uno responde por su propio hecho.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Término de permanencia en depósito y suspensión por tránsito",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 157",
+      "art. 171, incs. 1 y 2",
+      "art. 178, num. 1"
+    ],
+    "texto_fuente": "Para efectos aduaneros, la fecha y hora de acuse de recibo del aviso de llegada a través de los Servicios Informáticos Electrónicos, se tendrá como fecha de llegada de la mercancía al territorio aduanero nacional. [...] Para efectos aduaneros, la mercancía podrá permanecer almacenada mientras se realizan los trámites para obtener su levante, hasta por el término de un (1) mes, contado desde la fecha de su llegada al territorio aduanero nacional. Cuando la mercancía se haya sometido a la modalidad de tránsito, la duración de este suspende el término aquí señalado hasta la cancelación de dicho régimen. [...] El término establecido en este artículo podrá ser prorrogado hasta por un (1) mes adicional en los casos autorizados por la autoridad aduanera y se suspenderá en los eventos señalados en el presente decreto. [...] 1. Cuando la Declaración de Importación se haya presentado con posterioridad al término establecido en el artículo 171 de este decreto.",
+    "pregunta": "El acuse de recibo del aviso de llegada de un buque a Cartagena se registró el martes 10 de febrero de 2026. Parte de su carga salió en tránsito aduanero hacia Bogotá: el régimen se autorizó el jueves 12 de febrero y terminó el viernes 20 de febrero, cuando el depósito habilitado recibió la carga. No hubo prórroga, inspección ni otra causal de suspensión. El lunes 16 de marzo de 2026 el importador presentó la declaración de importación, y un técnico debe establecer si se presentó a tiempo. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fue tardía: el mes se cuenta desde la llegada, venció el 10 de marzo y la declaración ya no podía aceptarse.",
+        "explicacion": "Incorrecta. Ignora la suspensión. La duración del tránsito suspende el término de un mes contado desde la llegada (art. 171), así que el vencimiento no fue el 10 de marzo."
+      },
+      {
+        "id": "B",
+        "texto": "Fue oportuna: los días que duró el tránsito no corren en el mes de permanencia, que por eso no había vencido.",
+        "explicacion": "Correcta. La llegada es la fecha del acuse del aviso (art. 157): 10 de febrero. El mes vencería el 10 de marzo, pero el tránsito, del 12 al 20 de febrero, suspendió el término unos ocho días, lo que lleva el vencimiento hasta el 18 de marzo. El 16 de marzo la declaración estaba en tiempo."
+      },
+      {
+        "id": "C",
+        "texto": "Fue oportuna: el mes se cuenta desde que el depósito de destino recibió la carga, el 20 de febrero de 2026.",
+        "explicacion": "Incorrecta. Llega al mismo resultado con una regla equivocada. El término se cuenta desde la llegada al territorio aduanero nacional, no desde el ingreso al depósito; el tránsito solo lo suspende."
+      },
+      {
+        "id": "D",
+        "texto": "Fue tardía, aunque podía aceptarse durante el mes adicional de prórroga, que opera sin necesidad de solicitud.",
+        "explicacion": "Incorrecta. La prórroga de hasta un mes adicional procede en los casos que autorice la autoridad aduanera; no es automática. Además, la declaración sí estaba en tiempo por la suspensión."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el acuse del aviso de llegada fue el 10 de febrero y el tránsito duró del 12 al 20 de febrero. Regla: la fecha de llegada es la del acuse (art. 157); la mercancía puede permanecer un mes desde la llegada y la duración del tránsito suspende ese término (art. 171); la declaración presentada después del término no se acepta (art. 178, num. 1). Cálculo: 10 de marzo + 8 días de suspensión = 18 de marzo. Conclusión: la declaración del 16 de marzo fue oportuna.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Abandono legal y rescate",
+    "subtema": "Rescate de mercancía en abandono legal",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 171, inc. 1 y par. 1",
+      "art. 293, num. 1, inc. 1, y num. 2 (modificado por el art. 73 del Decreto 360 de 2021)",
+      "art. 178, num. 1"
+    ],
+    "texto_fuente": "hasta por el término de un (1) mes, contado desde la fecha de su llegada al territorio aduanero nacional. [...] Vencido el término previsto en este artículo sin que se hubiere obtenido el levante, o sin que se hubiere reembarcado la mercancía, operará el abandono legal. El interesado podrá rescatar la mercancía de conformidad con lo dispuesto en el inciso primero del numeral 1 del artículo 293 del presente decreto dentro del mes siguiente a la fecha en que se produzca el abandono. [...] Transcurrido el término establecido para rescatar la mercancía, sin que se hubiere presentado la respectiva declaración de legalización, la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá disponer de la mercancía por ser esta de propiedad de la Nación. [...] La mercancía que se encuentre en abandono legal podrá ser rescatada presentando Declaración de Legalización, dentro del plazo previsto en el parágrafo 1 del artículo 171 del presente decreto en la cual se cancele, además de los tributos aduaneros, por concepto de rescate, el diez por ciento (10%) del valor en aduana de la mercancía. También deberá acreditarse el pago de los gastos de almacenamiento que se hayan causado. [...] Después de aprehendida la mercancía se podrá rescatar mediante la presentación de la declaración de legalización, en la cual se cancele, por concepto de rescate, el cincuenta por ciento (50%) del valor en aduana de la mercancía, sin perjuicio del pago de los tributos aduaneros correspondientes. [...] 1. Cuando la Declaración de Importación se haya presentado con posterioridad al término establecido en el artículo 171 de este decreto.",
+    "pregunta": "Una mercancía llegó al territorio aduanero nacional el lunes 6 de abril de 2026, según el acuse de recibo del aviso de llegada, y quedó en un depósito habilitado. El importador no pidió prórroga, no la reembarcó ni obtuvo levante. El miércoles 20 de mayo de 2026 consulta a un gestor de la Dirección Seccional cómo recuperarla. El valor en aduana de la mercancía es de $80.000.000 y el depósito le cobra $3.000.000 de almacenamiento. ¿Qué debe indicarle el gestor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que presente declaración de legalización con los tributos y un rescate de $8.000.000, y acredite el pago del bodegaje.",
+        "explicacion": "Correcta. El mes de permanencia venció el 6 de mayo y operó el abandono legal. Dentro del mes siguiente (hasta el 6 de junio) la mercancía puede rescatarse con declaración de legalización, pagando los tributos, un rescate del 10 % del valor en aduana ($8.000.000) y los gastos de almacenamiento (arts. 171 y 293, num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que presente declaración de legalización con los tributos y un rescate de $40.000.000, y acredite el pago del bodegaje.",
+        "explicacion": "Incorrecta. El 50 % del valor en aduana es el rescate de la mercancía ya aprehendida (art. 293, num. 2). Para la mercancía en abandono legal el rescate es del 10 %."
+      },
+      {
+        "id": "C",
+        "texto": "Que presente una declaración de importación ordinaria con los tributos, sin rescate, porque no ha habido aprehensión.",
+        "explicacion": "Incorrecta. Vencido el mes sin levante ni reembarque, opera el abandono legal, y la declaración presentada después del término del art. 171 no se acepta (art. 178, num. 1). La vía es la legalización con rescate."
+      },
+      {
+        "id": "D",
+        "texto": "Que ya no puede recuperarla, porque pasó a ser propiedad de la Nación cuando venció el mes de permanencia.",
+        "explicacion": "Incorrecta. Al vencer el mes opera el abandono legal, pero el interesado tiene un mes más para rescatar la mercancía. Solo después de ese mes la DIAN puede disponer de ella como propiedad de la Nación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la mercancía llegó el 6 de abril, sin prórroga ni levante, y la consulta es del 20 de mayo. Regla: vencido el mes del art. 171 opera el abandono legal, y la mercancía puede rescatarse dentro del mes siguiente con declaración de legalización, pagando tributos, un rescate del 10 % del valor en aduana y el almacenamiento causado (art. 293, num. 1). Cálculo: abandono desde el 6 de mayo; rescate posible hasta el 6 de junio; 10 % de $80.000.000 = $8.000.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-006",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de importación",
+    "subtema": "Oportunidad de la declaración anticipada obligatoria",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 175, incs. 1 y 2 (modificado por el art. 3 del Decreto 572 de 2021; texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "La declaración de importación deberá ser presentada dentro del término previsto en el artículo 171 del presente decreto, o en forma anticipada a la llegada de la mercancía. En el caso de la declaración anticipada obligatoria, la misma se presentará, por regla general, con una antelación mínima de 5 días calendario. [...] No obstante lo previsto en el inciso anterior, para las mercancías que arriben al territorio aduanero nacional bajo los modos marítimo y aéreo, cuyo transporte desde el país de procedencia hacia Colombia sea considerado para efectos aduaneros como trayecto corto, la declaración anticipada obligatoria deberá ser presentada con una antelación no inferiora un (1) día calendario a la llegada de las mismas.",
+    "pregunta": "Un importador debe presentar declaración anticipada obligatoria para un cargamento que llegará por vía marítima el martes 20 de octubre de 2026. La ruta desde el país de procedencia no se considera trayecto corto. En el punto de atención de la DIAN, un auxiliar le informa cuál es el último día en que puede presentarla. ¿Qué fecha debe indicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 13 de octubre, cinco días hábiles antes de la llegada, sin contar el festivo del 12 de octubre.",
+        "explicacion": "Incorrecta. La antelación mínima se cuenta en días calendario, no hábiles. Contar días hábiles adelanta sin razón el último día al 13 de octubre."
+      },
+      {
+        "id": "B",
+        "texto": "El jueves 15 de octubre, cinco días calendario antes de la llegada del cargamento al país.",
+        "explicacion": "Correcta. La declaración anticipada obligatoria se presenta, por regla general, con una antelación mínima de 5 días calendario (art. 175). Cinco días antes del 20 de octubre es el jueves 15 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "El lunes 19 de octubre, un día calendario antes de la llegada del cargamento al país.",
+        "explicacion": "Incorrecta. La antelación de 1 día calendario aplica a las mercancías que llegan por vía marítima o aérea desde un trayecto corto, y esta ruta no lo es."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 20 de octubre, con tal de que la transmita antes de que se presente el aviso de llegada.",
+        "explicacion": "Incorrecta. La declaración anticipada obligatoria exige una antelación mínima respecto de la llegada; presentarla el mismo día del arribo no la cumple."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: llegada el 20 de octubre de 2026 por una ruta que no es trayecto corto. Regla: el art. 175 exige presentar la declaración anticipada obligatoria con una antelación mínima de 5 días calendario; en los trayectos cortos marítimos o aéreos basta 1 día. Cálculo: 20 de octubre − 5 días = jueves 15 de octubre; el festivo del 12 no influye. Nota: la pregunta usa el texto vigente del art. 175 (mod. Decreto 572 de 2021), que cambiará cuando la DIAN certifique los servicios informáticos previstos en el Decreto 659 de 2024.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Modalidades de importación",
+    "subtema": "Importación en cumplimiento de garantía",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 199",
+      "art. 196, inc. 1",
+      "art. 198, inc. 1"
+    ],
+    "texto_fuente": "Se podrá importar sin el pago de tributos aduaneros, la mercancía que, en cumplimiento de una garantía del fabricante o proveedor, se haya reparado en el exterior, o reemplace otra previamente exportada, que haya resultado averiada, defectuosa o impropia para el fin para el cual fue importada. La mercancía así importada quedará en libre disposición. [...] 1. Copia de la Declaración de Exportación Definitiva o temporal para perfeccionamiento pasivo, según el caso, que contenga los datos que permitan determinar las características de la mercancía exportada [...] 2. Original de la garantía expedida por el fabricante o proveedor de la mercancía, la cual deberá encontrarse vigente en la fecha de su exportación. [...] La Declaración de Importación en cumplimiento de garantía deberá presentarse dentro del año siguiente a la exportación de la mercancía que sea objeto de reparación o reemplazo. [...] La reimportación de mercancía exportada temporalmente para elaboración, reparación o transformación, causará tributos aduaneros sobre el valor agregado en el exterior [...] Se podrá importar sin el pago de los tributos aduaneros, la mercancía exportada temporal o definitivamente que se encuentre en libre disposición, siempre que no haya sufrido modificación en el extranjero",
+    "pregunta": "En enero de 2026 una clínica exportó en forma definitiva un módulo averiado de un equipo de imágenes diagnósticas para que el fabricante lo reparara. El fabricante lo reparó sin costo, porque el daño estaba cubierto por el compromiso de calidad que otorgó al venderlo, y ese compromiso estaba vigente cuando el módulo salió del país. El módulo regresará en octubre de 2026 y un técnico de aduanas debe orientar a la clínica sobre la modalidad de importación. ¿Cuál corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reimportación por perfeccionamiento pasivo, con tributos aduaneros sobre el valor agregado en el exterior.",
+        "explicacion": "Incorrecta. La reimportación por perfeccionamiento pasivo es para mercancía exportada temporalmente para elaboración, reparación o transformación, y causa tributos sobre el valor agregado. Aquí el módulo salió en exportación definitiva y la reparación la cubrió la garantía del fabricante."
+      },
+      {
+        "id": "B",
+        "texto": "Reimportación en el mismo estado, sin tributos aduaneros, porque regresa el mismo módulo que salió del país.",
+        "explicacion": "Incorrecta. La reimportación en el mismo estado exige que la mercancía no haya sufrido modificación en el extranjero, y el módulo fue reparado."
+      },
+      {
+        "id": "C",
+        "texto": "Importación ordinaria con la totalidad de los tributos, porque el módulo salió en una exportación definitiva.",
+        "explicacion": "Incorrecta. Que la salida haya sido definitiva no obliga a la importación ordinaria: el art. 199 admite como soporte la declaración de exportación definitiva."
+      },
+      {
+        "id": "D",
+        "texto": "Importación en cumplimiento de garantía, sin tributos aduaneros, y el módulo queda en libre disposición.",
+        "explicacion": "Correcta. Se puede importar sin tributos la mercancía reparada en el exterior en cumplimiento de una garantía del fabricante, y queda en libre disposición (art. 199). La garantía estaba vigente al exportar y el módulo regresará dentro del año siguiente a la exportación."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el módulo salió en enero de 2026, el fabricante lo reparó por la garantía vigente al exportarlo y regresa en octubre de 2026. Regla: el art. 199 permite importar sin tributos la mercancía reparada en el exterior en cumplimiento de una garantía del fabricante, dentro del año siguiente a la exportación, y la deja en libre disposición. El perfeccionamiento pasivo exige exportación temporal y la reimportación en el mismo estado exige que no haya modificación. Conclusión: importación en cumplimiento de garantía.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Importación temporal",
+    "subtema": "Garantía y plazo de la importación temporal de corto plazo",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 201, num. 1",
+      "art. 205, incs. 1 y 6, y par. 2"
+    ],
+    "texto_fuente": "1. De corto plazo, cuando la mercancía se importa para atender una finalidad específica que determine su corta permanencia en el país. El plazo máximo de la importación será de seis (6) meses contados a partir del levante de la mercancía, prorrogables por la autoridad aduanera por tres (3) meses más [...] La autoridad aduanera exigirá la constitución de una garantía a favor de la Nación, por el ciento cincuenta por ciento (150%) de los tributos aduaneros [...] Para la importación temporal de mercancías que vengan destinadas a eventos científicos, culturales, deportivos o recreativos no se exigirá la constitución de garantía. [...] PARÁGRAFO 2. Sin perjuicio de las demás condiciones establecidas en el presente artículo, cuando se trate de importaciones temporales de corto plazo para la reexportación en el mismo Estado la garantía se constituirá por el cien por ciento (100%) de los tributos aduaneros que se hubieren causado en caso de introducción para importación ordinaria.",
+    "pregunta": "Una empresa importará temporalmente, a corto plazo, maquinaria agrícola para exhibirla en una feria comercial de ventas. Los tributos aduaneros que se causarían si la maquinaria se importara en forma ordinaria suman $48.000.000, y no hay exención. El levante se obtuvo el martes 3 de febrero de 2026 y la empresa anunció que pedirá la prórroga máxima. Un analista debe revisar el monto de la garantía y la fecha límite de permanencia si la autoridad concede esa prórroga. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Garantía de $72.000.000 y permanencia máxima hasta el 3 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero aplica el 150 % de los tributos de la regla general. En la importación temporal de corto plazo la garantía es del 100 % de los tributos que causaría la importación ordinaria."
+      },
+      {
+        "id": "B",
+        "texto": "Garantía de $48.000.000 y permanencia máxima hasta el 3 de febrero de 2027.",
+        "explicacion": "Incorrecta. Acierta en el monto, pero la prórroga es de 3 meses, no de 6. El plazo máximo es de 6 meses desde el levante más 3 de prórroga."
+      },
+      {
+        "id": "C",
+        "texto": "Garantía de $48.000.000 y permanencia máxima hasta el 3 de noviembre de 2026.",
+        "explicacion": "Correcta. En la importación temporal de corto plazo la garantía es del 100 % de los tributos de una importación ordinaria: $48.000.000 (art. 205, par. 2). El plazo es de 6 meses desde el levante, prorrogables 3 meses más (art. 201): del 3 de febrero al 3 de noviembre de 2026. Una feria comercial no está entre los eventos exentos de garantía."
+      },
+      {
+        "id": "D",
+        "texto": "Garantía de $72.000.000 y permanencia máxima hasta el 3 de febrero de 2027.",
+        "explicacion": "Incorrecta. Combina dos errores: aplica el 150 % de la regla general y una prórroga de 6 meses, cuando la de corto plazo es de 3."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: importación temporal de corto plazo para una feria comercial, tributos de $48.000.000 y levante el 3 de febrero de 2026. Regla: la garantía de corto plazo es del 100 % de los tributos de la importación ordinaria (art. 205, par. 2), y la exención de garantía es solo para eventos científicos, culturales, deportivos o recreativos. El plazo es de 6 meses desde el levante, prorrogables por 3 (art. 201). Cálculo: garantía de $48.000.000; 3 de febrero + 9 meses = 3 de noviembre de 2026.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Importación temporal",
+    "subtema": "Cuotas de la importación temporal de largo plazo y reexportación anticipada",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 203, inc. 2",
+      "art. 201, num. 2",
+      "art. 215"
+    ],
+    "texto_fuente": "Los tributos aduaneros así liquidados se distribuirán en cuotas semestrales iguales por el término de permanencia de la mercancía en el territorio aduanero nacional. Las cuotas se pagarán por semestres vencidos, para lo cual se convertirán a pesos colombianos a la tasa de cambio vigente, para efectos aduaneros en el momento de su pago. [...] El plazo máximo de esta importación será de cinco (5) años contados a partir del levante de la mercancía. [...] La mercancía importada temporalmente a largo plazo podrá ser reexportada en cualquier momento durante la vigencia del plazo señalado en la Declaración de Importación de que trata el artículo 203 de este Decreto, siempre que no haya sido aprehendida, y el declarante se encuentre al día en las cuotas correspondientes al término que efectivamente haya permanecido en el territorio nacional. En ningún caso la reexportación antes del vencimiento del plazo señalado, generará el pago de las cuotas semestrales futuras liquidadas en la Declaración de Importación, ni dará derecho a devolución de los tributos aduaneros que se hubieren cancelado.",
+    "pregunta": "Una constructora importó temporalmente, a largo plazo, una grúa torre con levante del lunes 4 de marzo de 2024 y un término de permanencia declarado de tres años. Los tributos aduaneros liquidados en la declaración fueron USD 60.000. La empresa pagó a tiempo las cuotas causadas y el miércoles 4 de marzo de 2026, después de pagar la que vencía ese día, reexportó la grúa. Un gestor debe responder su consulta sobre las cuotas. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pagó cuatro cuotas de USD 10.000 y, antes de reexportar, debía pagar también las dos restantes, por USD 20.000.",
+        "explicacion": "Incorrecta. La reexportación antes del vencimiento del plazo no genera el pago de las cuotas semestrales futuras (art. 215)."
+      },
+      {
+        "id": "B",
+        "texto": "Pagó cuatro cuotas de USD 10.000; las dos restantes no se pagan y lo que ya pagó no se le devuelve.",
+        "explicacion": "Correcta. Los USD 60.000 se reparten en cuotas semestrales iguales durante los tres años: 6 cuotas de USD 10.000, pagadas por semestres vencidos (art. 203). Al 4 de marzo de 2026 se habían causado 4 (USD 40.000). La reexportación anticipada no genera el pago de las 2 futuras ni da derecho a devolución (art. 215)."
+      },
+      {
+        "id": "C",
+        "texto": "Pagó cuatro cuotas de USD 6.000, calculadas sobre el máximo de cinco años, y debía pagar las seis restantes.",
+        "explicacion": "Incorrecta. Las cuotas se calculan sobre el término de permanencia declarado (tres años), no sobre el máximo legal de cinco, y las cuotas futuras no se pagan al reexportar."
+      },
+      {
+        "id": "D",
+        "texto": "Pagó dos cuotas anuales de USD 20.000; las restantes no se pagan y lo que ya pagó no se le devuelve.",
+        "explicacion": "Incorrecta. Acierta en el efecto de la reexportación, pero las cuotas son semestrales, no anuales: 6 cuotas de USD 10.000."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: tres años declarados, USD 60.000 de tributos y reexportación a los dos años, al día en las cuotas. Regla: los tributos se dividen en cuotas semestrales iguales por el término de permanencia y se pagan por semestres vencidos (art. 203); la reexportación anticipada no genera el pago de las cuotas futuras ni da derecho a devolución (art. 215). Cálculo: 60.000 / 6 = USD 10.000; 4 cuotas pagadas (USD 40.000) y 2 no causadas (USD 20.000).",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Vigencia de la solicitud de autorización de embarque y suspensión por inspección",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 352",
+      "art. 357"
+    ],
+    "texto_fuente": "La solicitud de autorización de embarque tendrá una vigencia de un mes (1) contado a partir de la fecha de su aceptación. Vencido este término, deberá tramitarse una nueva solicitud de autorización de embarque para realizar la exportación. [...] Dentro del término de vigencia, se deberá producir el traslado e ingreso de la mercancía a zona primaria, y el embarque de la misma. [...] La diligencia de inspección aduanera deberá realizarse en forma continua y concluirse a más tardar el día hábil siguiente en que se ordene su práctica. Cuando por razones justificadas se requiera de un período mayor, se podrá autorizar su ampliación. [...] El término previsto en el artículo 352 del presente decreto se suspenderá desde la determinación de inspección aduanera y hasta que esta finalice con la obtención o rechazo de la autorización del embarque por parte del inspector.",
+    "pregunta": "La solicitud de autorización de embarque de una exportación definitiva se aceptó el martes 8 de septiembre de 2026. La carga ingresó a zona primaria el lunes 5 de octubre y ese mismo día se ordenó inspección física; por la complejidad de la carga se autorizó ampliar la diligencia, que terminó el viernes 9 de octubre con la autorización de embarque. La mercancía se embarcó el sábado 10 de octubre. Al revisar el expediente, una inspectora debe determinar si se necesitaba una nueva solicitud. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No se necesitaba: el mes de vigencia no corrió durante la diligencia y el embarque quedó dentro del término.",
+        "explicacion": "Correcta. La solicitud rige un mes desde su aceptación (art. 352): hasta el 8 de octubre. Ese término se suspende desde que se ordena la inspección hasta que termina con la autorización (art. 357): del 5 al 9 de octubre, 4 días. La vigencia se extendió hasta el 12 de octubre y el embarque del 10 fue oportuno."
+      },
+      {
+        "id": "B",
+        "texto": "Sí se necesitaba: el mes corrió sin interrupción desde la aceptación y venció el 8 de octubre de 2026.",
+        "explicacion": "Incorrecta. Olvida que la vigencia de la solicitud se suspende mientras dura la inspección aduanera (art. 357)."
+      },
+      {
+        "id": "C",
+        "texto": "No se necesitaba, porque el mes de vigencia se cuenta desde que la carga ingresó a la zona primaria.",
+        "explicacion": "Incorrecta. Llega al mismo resultado con una regla equivocada. La vigencia se cuenta desde la aceptación de la solicitud, y dentro de ella deben producirse el ingreso a zona primaria y el embarque."
+      },
+      {
+        "id": "D",
+        "texto": "Sí se necesitaba, porque la diligencia debía concluir al día hábil siguiente y su ampliación anuló la solicitud.",
+        "explicacion": "Incorrecta. La inspección debe concluir a más tardar el día hábil siguiente, pero el art. 357 permite autorizar su ampliación por razones justificadas. La ampliación no anula la solicitud."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: solicitud aceptada el 8 de septiembre, inspección del 5 al 9 de octubre y embarque el 10 de octubre. Regla: la solicitud de autorización de embarque rige un mes desde su aceptación y dentro de él debe embarcarse la mercancía (art. 352); ese término se suspende desde que se determina la inspección hasta que esta finaliza (art. 357). Cálculo: 8 de octubre + 4 días = 12 de octubre. Conclusión: no hacía falta una nueva solicitud.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen de exportación",
+    "subtema": "Terminación de la exportación temporal para reimportación en el mismo estado",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 374",
+      "art. 378",
+      "art. 373"
+    ],
+    "texto_fuente": "Es la modalidad de exportación que regula la salida temporal de mercancías nacionales o nacionalizadas del territorio aduanero nacional, para atender una finalidad específica en el exterior, en un plazo determinado, durante el cual deberán ser reimportadas sin haber experimentado modificación alguna [...] La modalidad de exportación temporal para reimportación en el mismo estado, terminará si dentro del plazo fijado se presenta una de las siguientes situaciones: 1. Reimportación en el mismo estado. 2. Exportación definitiva, o 3. Destrucción de la mercancía debidamente acreditada ante la Administración Aduanera. [...] Las mercancías que se encuentren en el exterior bajo esta modalidad de exportación podrán cederse, previo aviso a la Dirección Seccional de Aduanas donde se tramitó su exportación. El cesionario será considerado para todos los efectos como exportador inicial.",
+    "pregunta": "Una fábrica exportó temporalmente para reimportación en el mismo estado cinco máquinas empacadoras, para exhibirlas en una feria en Lima. En la feria vendió dos a un cliente peruano, y las otras tres volverán al país sin cambios. El plazo fijado para la exportación temporal aún no ha vencido. El auxiliar de la agencia de aduanas que lleva la operación consulta a un técnico de la DIAN cómo terminar la modalidad. ¿Qué debe responderle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe reimportar primero las cinco máquinas y luego tramitar la exportación definitiva de las dos vendidas.",
+        "explicacion": "Incorrecta. No hace falta reimportar las máquinas vendidas: la exportación definitiva es, por sí misma, una de las formas de terminar la modalidad (art. 378)."
+      },
+      {
+        "id": "B",
+        "texto": "Que las dos vendidas quedarán exportadas en definitiva por sí solas cuando venza el plazo fijado por la aduana.",
+        "explicacion": "Incorrecta. La modalidad termina si dentro del plazo fijado ocurre alguna de las situaciones del art. 378; el vencimiento del plazo no convierte por sí solo la exportación temporal en definitiva."
+      },
+      {
+        "id": "C",
+        "texto": "Que las dos vendidas se terminan con su cesión al comprador peruano, previo aviso a la Dirección Seccional.",
+        "explicacion": "Incorrecta. La cesión con aviso previo está prevista para la exportación temporal para perfeccionamiento pasivo (art. 373), y con ella el cesionario pasa a ser el exportador inicial; no termina la modalidad."
+      },
+      {
+        "id": "D",
+        "texto": "Que reimporte las tres que regresan y pase las dos vendidas a exportación definitiva antes del vencimiento.",
+        "explicacion": "Correcta. Esta modalidad termina, dentro del plazo fijado, con la reimportación en el mismo estado, la exportación definitiva o la destrucción acreditada (art. 378). Cada grupo de máquinas se termina por la vía que le corresponde."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: tres máquinas regresan sin cambios y dos se vendieron en el exterior antes de vencer el plazo. Regla: el art. 378 dispone que la exportación temporal para reimportación en el mismo estado termina, dentro del plazo fijado, con la reimportación en el mismo estado, la exportación definitiva o la destrucción acreditada. Conclusión: se reimportan las tres y se tramita la exportación definitiva de las dos vendidas dentro del plazo.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Tránsito aduanero",
+    "subtema": "Procedencia del tránsito y garantía específica del declarante",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 433, inc. 1, num. 4, e inc. 3 (modificado por el art. 91 del Decreto 360 de 2021)",
+      "art. 436, nums. 1 y 2"
+    ],
+    "texto_fuente": "La modalidad de tránsito aduanero solo podrá solicitarse y autorizarse para las mercancías que estén consignadas o se endosen a la Nación, las entidades territoriales y las entidades descentralizadas, a un usuario de una Zona Franca, a un titular de un depósito privado, o cuando las mercancías vayan a ser sometidas a una de las siguientes modalidades de importación: [...] 4. Importación temporal para procesamiento industrial. [...] También procederá la autorización de la modalidad de tránsito aduanero para las unidades funcionales, para las mercancías consignadas en el documento de transporte a los Usuarios Aduaneros Permanentes (UAP), a los usuarios altamente exportadores - ALTEX, a los Operadores Económicos Autorizados (OEA) tipo importador o tipo exportador o a los usuarios aduaneros con trámite simplificado, para cualquier modalidad de importación [...] 1. Garantía a cargo del declarante, para respaldar el pago de tributos aduaneros y sanciones a que haya lugar. [...] En los demás casos, el declarante deberá otorgar garantía específica equivalente al cuarenta por ciento (40%) del valor FOB de la mercancía. [...] 2. Garantía por la finalización de la modalidad, a cargo del transportador, para respaldar las obligaciones de finalización del régimen dentro de los plazos autorizados y por la correcta ejecución de la operación de tránsito aduanero. [...] Las empresas transportadoras inscritas y autorizadas para realizar tránsitos aduaneros, deberán garantizar sus operaciones mediante la constitución de una garantía global, bancaria o de compañía de seguros, equivalente a veinticuatro mil ciento sesenta y cuatro (24.164) Unidades de Valor Tributario (UVT).",
+    "pregunta": "Una sociedad que actúa directamente como declarante, y que no es OEA, UAP, ALTEX ni usuario con trámite simplificado, pide tránsito aduanero desde Buenaventura hasta Bogotá para unas materias primas que someterá a importación temporal para procesamiento industrial. El valor FOB de la mercancía es de USD 75.000 y el transporte lo hará una empresa inscrita ante la DIAN. Un técnico de la aduana de partida debe pronunciarse sobre la solicitud y sobre la garantía a cargo de la sociedad. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No procede, porque en importación solo pueden pedir tránsito los OEA, los UAP, los ALTEX y los usuarios con trámite simplificado.",
+        "explicacion": "Incorrecta. Esos usuarios pueden pedir tránsito para cualquier modalidad, pero el art. 433 también lo permite cuando la mercancía se someterá a ciertas modalidades, entre ellas la importación temporal para procesamiento industrial."
+      },
+      {
+        "id": "B",
+        "texto": "Procede, y basta la garantía global de 24.164 UVT de la transportadora, sin otra garantía a cargo de la sociedad.",
+        "explicacion": "Incorrecta. La garantía global de la transportadora respalda la finalización del régimen. El declarante debe garantizar aparte el pago de tributos y sanciones (art. 436, num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Procede, y la sociedad debe otorgar una garantía específica del 40 % del valor FOB, es decir, USD 30.000.",
+        "explicacion": "Correcta. El tránsito procede porque la mercancía irá a importación temporal para procesamiento industrial (art. 433, num. 4). Como el declarante no es agencia de aduanas, UAP ni ALTEX, otorga garantía específica del 40 % del valor FOB (art. 436, num. 1): 40 % de USD 75.000 = USD 30.000."
+      },
+      {
+        "id": "D",
+        "texto": "Procede, y la sociedad debe otorgar una garantía específica del 100 % del valor FOB, es decir, USD 75.000.",
+        "explicacion": "Incorrecta. La garantía específica del declarante no se constituye por el valor FOB total, sino por el 40 % de ese valor."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la sociedad declara directamente, no tiene garantía global y la mercancía irá a importación temporal para procesamiento industrial. Regla: el tránsito procede para mercancías que se someterán a esa modalidad (art. 433, num. 4); el declarante que no es agencia de aduanas, UAP ni ALTEX otorga garantía específica del 40 % del valor FOB, además de la garantía de finalización a cargo del transportador (art. 436). Cálculo: 40 % de USD 75.000 = USD 30.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-013",
+    "version": 3,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Aprehensión y rescate",
+    "subtema": "Mercancía en exceso hallada en la inspección física",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 183, inc. 4 (texto vigente hasta que la DIAN certifique los servicios informáticos del art. 67 del Decreto 659 de 2024)",
+      "art. 294, num. 5",
+      "art. 295, num. 3 e inc. siguiente a los numerales",
+      "art. 290, inc. 1",
+      "art. 293, num. 1, inc. 1, y num. 2 (modificado por el art. 73 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "Siempre que se practique inspección aduanera el levante solo procederá respecto de la mercancía conforme con la declaración de importación o cuando se establezca en inspección documental la conformidad entre lo declarado y la información contenida en los documentos soporte. Cuando se encuentren cantidades superiores o mercancías diferentes a las declaradas, estas se aprehenderán para que, con respecto a ellas, se adelante el proceso de definición de su situación jurídica de manera independiente. [...] 5. No sean informados los sobrantes en el número de bultos, o los excesos en el peso de la mercancía a granel, respecto de lo consignado en el manifiesto de carga [...] 3. La cantidad encontrada sea superior a la señalada en la Declaración de Importación; [...] Cuando la cantidad encontrada sea superior a la señalada en la declaración de importación o factura de nacionalización, la aprehensión procederá sólo respecto de las mercancías encontradas en exceso. [...] Las mercancías de procedencia extranjera, presentadas a la Aduana en el momento de su importación, respecto de las cuales se hubiere incumplido alguna obligación aduanera que dé lugar a su aprehensión, podrán ser declaradas en la modalidad de importación que corresponda a la naturaleza y condiciones de la operación [...] Después de aprehendida la mercancía se podrá rescatar mediante la presentación de la declaración de legalización, en la cual se cancele, por concepto de rescate, el cincuenta por ciento (50%) del valor en aduana de la mercancía, sin perjuicio del pago de los tributos aduaneros correspondientes. [...] La mercancía que se encuentre en abandono legal podrá ser rescatada presentando Declaración de Legalización, dentro del plazo previsto en el parágrafo 1 del artículo 171 del presente decreto en la cual se cancele, además de los tributos aduaneros, por concepto de rescate, el diez por ciento (10%) del valor en aduana de la mercancía.",
+    "pregunta": "En la inspección física de una importación ordinaria, un inspector abre las 10 estibas que llegaron, el mismo número de bultos que relacionan el manifiesto de carga y el documento de transporte, y encuentra en ellas 450 cajas de un mismo repuesto, aunque la declaración de importación y la factura comercial se refieren a 400. Todo lo demás coincide con lo declarado y el valor en aduana de cada caja es de $500.000. ¿Qué procede frente a la carga y cuál sería el rescate de lo que se aprehenda, si el importador lo legaliza después?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Levante de 400 cajas y aprehensión de 50, cuyo rescate sería de $12.500.000, más los tributos.",
+        "explicacion": "Correcta. El levante procede para la mercancía conforme con la declaración y las cantidades superiores se aprehenden (art. 183); la aprehensión recae solo sobre el exceso (art. 295). Como los bultos coinciden con el manifiesto, la mercancía fue presentada y el exceso puede legalizarse (art. 290): ya aprehendido, se rescata pagando el 50 % de su valor en aduana (art. 293, num. 2). 50 × $500.000 = $25.000.000; el 50 % es $12.500.000."
+      },
+      {
+        "id": "B",
+        "texto": "Aprehensión de las 450 cajas, cuyo rescate sería de $112.500.000, más los tributos.",
+        "explicacion": "Incorrecta. Aplica bien el porcentaje, pero la aprehensión no recae sobre toda la carga: cuando la cantidad encontrada supera la declarada, se aprehende solo el exceso (art. 295)."
+      },
+      {
+        "id": "C",
+        "texto": "Levante de 400 cajas y aprehensión de 50, cuyo rescate sería de $2.500.000, más los tributos.",
+        "explicacion": "Incorrecta. Delimita bien la aprehensión, pero el 10 % es el rescate de otros eventos, como la mercancía en abandono legal. Después de la aprehensión el rescate es del 50 %."
+      },
+      {
+        "id": "D",
+        "texto": "Aprehensión de las 450 cajas, cuyo rescate sería de $22.500.000, más los tributos.",
+        "explicacion": "Incorrecta. Combina dos errores: aprehende toda la carga y aplica el 10 % en lugar del 50 %."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las 10 estibas coinciden con el manifiesto, pero traen 450 cajas de $500.000 y se declararon 400. Regla: no hay sobrante de bultos sin informar (art. 294, num. 5), así que la mercancía fue presentada; el levante procede para lo conforme y el exceso, no declarado, se aprehende (arts. 183 y 295); lo aprehendido se legaliza (art. 290) pagando de rescate el 50 % de su valor en aduana más los tributos (art. 293, num. 2). Cálculo: 50 × $500.000 = $25.000.000; 50 % = $12.500.000. Nota: el art. 183 cambiará con el Decreto 659 de 2024.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Llegada y descargue de la mercancía",
+    "subtema": "Documento de transporte no manifestado e informe de descargue e inconsistencias",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 294, num. 3 e inc. final",
+      "art. 151, incs. 1 y 2, y par. 5 (adicionado por el art. 16 del Decreto 659 de 2024)",
+      "art. 383, inc. 2, num. 3"
+    ],
+    "texto_fuente": "Se entenderá que la mercancía no ha sido presentada a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), cuando: [...] 3. Se encuentre amparada en documentos de transporte no relacionados en el manifiesto de carga o los documentos que lo adicionen, modifiquen o corrijan; [...] En los eventos previstos en los numerales 2, 3 y 4, la mercancía se entenderá como no presentada, salvo que se haya realizado el informe de inconsistencias a que se refiere el artículo 151 del presente decreto. [...] Si se detectan inconsistencias entre la carga manifestada y la efectivamente descargada que impliquen sobrantes o faltantes en el número de bultos, exceso o defecto en el peso si se trata de mercancía a granel, o documentos de transporte no relacionados en el manifiesto de carga; el transportador deberá registrarlas en este mismo informe. [...] En el modo de transporte aéreo, la obligación a que hace referencia el inciso anterior, debe cumplirse a más tardar dentro de las doce (12) horas siguientes a la presentación del aviso de finalización de descargue [...] La presentación del informe de descargue e inconsistencias de que trata este artículo solo evita la causal de aprehensión de las mercancías, no la sanción. [...] El reembarque será obligatorio en los siguientes casos: [...] 3. Cuando por error de despacho del transportador internacional, se envía mercancía al Territorio Aduanero Nacional, sin que este país sea su destino.",
+    "pregunta": "Tras el aviso de finalización del descargue de un vuelo de carga, el transportador presentó dentro de las 12 horas siguientes el informe de descargue e inconsistencias, y en él reportó una guía aérea de 12 bultos que no estaba relacionada en el manifiesto de carga. Un analista de la Dirección Seccional debe definir la situación de esos bultos y la del transportador. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los bultos deben aprehenderse, porque la guía no figuraba en el manifiesto entregado antes del aviso de llegada.",
+        "explicacion": "Incorrecta. La mercancía amparada en documentos de transporte no relacionados en el manifiesto se entiende no presentada, salvo que se haya hecho el informe de inconsistencias (art. 294). Aquí se reportó a tiempo."
+      },
+      {
+        "id": "B",
+        "texto": "Los bultos se consideran presentados y no se aprehenden, aunque el transportador puede ser sancionado.",
+        "explicacion": "Correcta. La guía no manifestada se reportó en el informe de descargue e inconsistencias dentro de las 12 horas, por lo que no se configura la mercancía no presentada (art. 294). Pero ese informe solo evita la causal de aprehensión, no la sanción (art. 151, par. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "Los bultos no se aprehenden, y el informe libera al transportador de cualquier sanción por la inconsistencia.",
+        "explicacion": "Incorrecta. Acierta en que no hay aprehensión, pero el par. 5 del art. 151 aclara que el informe evita la causal de aprehensión, no la sanción."
+      },
+      {
+        "id": "D",
+        "texto": "Los bultos deben reembarcarse en forma obligatoria, por haber llegado sin estar relacionados en el manifiesto.",
+        "explicacion": "Incorrecta. El reembarque obligatorio procede en los casos del art. 383, como el error de despacho cuando el país no es el destino de la mercancía. Reportar una guía no manifestada no lo hace obligatorio."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la guía no manifestada se reportó en el informe de descargue e inconsistencias dentro de las 12 horas. Regla: la mercancía amparada en documentos de transporte no relacionados en el manifiesto se entiende no presentada, salvo que se haya hecho el informe de inconsistencias (art. 294); ese informe solo evita la causal de aprehensión, no la sanción (art. 151, par. 5, adicionado por el Decreto 659 de 2024). Conclusión: no hay aprehensión, pero puede haber sanción para el transportador.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-015",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Modalidades de importación",
+    "subtema": "Viajeros: franquicia, tributo único y cupo de los menores de edad",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 267, incs. 1 y 3",
+      "art. 268, incs. 1, 2 y 5",
+      "art. 269, inc. 1 y pars. 1 y 3",
+      "art. 270, inc. 1",
+      "art. 272",
+      "art. 274",
+      "art. 3 (definición de efectos personales, modificada por el art. 1 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "Todo viajero que ingrese a territorio aduanero nacional, estará en la obligación de presentar su equipaje a la autoridad aduanera, para lo cual, se debe diligenciar y presentar una declaración de equipaje por viajero o por unidad familiar [...] Para estos efectos, se entenderá por unidad familiar, el grupo de personas naturales que viajen de manera conjunta y tengan entre sí vínculos de carácter civil, de consanguinidad o de afinidad; independiente de lo establecido en los artículos 268 y 269 del presente decreto, para cada uno de los miembros. [...] Los viajeros que ingresen al país, tendrán derecho a traer equipaje acompañado, sin registro o licencia de importación, hasta por un valor total de dos mil dólares de los Estados Unidos de América (USD 2.000) o su equivalente y con franquicia del tributo único. [...] Los efectos personales que ingrese el viajero no se tendrán en cuenta para la determinación del cupo de mercancías de que trata este artículo. [...] Cuando el viajero sea un menor de edad, el cupo para el ingreso de estas mercancías estará determinado por el porcentaje señalado en el artículo 274 de este decreto. [...] Los viajeros que ingresen al país y acrediten una permanencia mínima en el exterior de cinco (5) días calendario, tendrán derecho a traer como equipaje acompañado o no acompañado, sin registro o licencia de importación y con el pago del tributo único de que trata el artículo 270 del presente decreto, hasta tres (3) unidades de cada uno de los siguientes bienes: [...] hasta diez (10) unidades de la misma clase de los demás artículos para el uso personal o familiar, hasta por un valor total de tres mil dólares (USD 3.000) de los Estados Unidos de América o su equivalente en la moneda que corresponda. [...] PARÁGRAFO 1o. Los viajeros que se acojan a lo dispuesto en el presente artículo, mantienen el derecho a la franquicia contemplada en el artículo anterior en la cuantía allí establecida. [...] PARÁGRAFO 3o. La introducción de las mercancías señaladas en este artículo solo podrá efectuarse por una misma persona, una sola vez cada año. [...] las mercancías que vengan en el equipaje de los viajeros provenientes del exterior y que no gocen de franquicia de gravámenes pagarán un tributo único del quince por ciento (15%) ad valórem. [...] Los cupos previstos en los artículos 268 y 269 del presente decreto tienen carácter personal e intransferible. [...] Los viajeros menores de edad solo podrán importar mercancías hasta por un valor equivalente al cincuenta por ciento (50%) de los cupos establecidos en los artículos 268 y 269 del presente decreto. [...] Los efectos personales son todos los artículos nuevos o usados que un viajero pueda necesitar para su uso personal en el transcurso del viaje",
+    "pregunta": "Una pareja y su hijo de 15 años salieron del país el jueves 2 de julio de 2026 y regresan a Bogotá el domingo 12 de julio, con una sola declaración de equipaje para los tres. El hijo trae como equipaje acompañado una consola de videojuegos nueva, aún en su caja, con sus accesorios, por USD 2.200 según la factura; los padres solo traen ropa y artículos de aseo que usaron en el viaje. Ninguno de los tres ha ingresado mercancías con pago de tributo único en el último año. Los padres piden que el cupo que ellos no usaron cubra la compra del hijo. ¿Qué tributo único debe liquidar el técnico de la DIAN que revisa el equipaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguno, porque en la declaración familiar los USD 4.000 de franquicia que no usaron los padres cubren la consola.",
+        "explicacion": "Incorrecta. La declaración puede presentarse por unidad familiar, pero los cupos de los arts. 268 y 269 se aplican a cada uno de sus miembros (art. 267) y son personales e intransferibles (art. 272). La franquicia que no usaron los padres no cubre la compra del hijo."
+      },
+      {
+        "id": "B",
+        "texto": "USD 30, porque el hijo tiene la franquicia de USD 2.000 de cualquier viajero y el 15 % recae sobre los USD 200 restantes.",
+        "explicacion": "Incorrecta. Ignora el cupo de los menores de edad: solo pueden importar hasta el 50 % de los cupos de los arts. 268 y 269 (arts. 268, inc. 5, y 274). La franquicia del hijo es de USD 1.000, no de USD 2.000."
+      },
+      {
+        "id": "C",
+        "texto": "USD 330, porque al superar su franquicia el hijo la pierde y el 15 % recae sobre los USD 2.200 que vale la consola.",
+        "explicacion": "Incorrecta. Quien trae mercancías con pago de tributo único mantiene el derecho a la franquicia en la cuantía que le corresponde (art. 269, par. 1). El 15 % se liquida sobre lo que excede la franquicia del hijo, no sobre el valor total."
+      },
+      {
+        "id": "D",
+        "texto": "USD 180, porque al hijo le corresponden USD 1.000 libres de tributo y el 15 % recae sobre los USD 1.200 restantes.",
+        "explicacion": "Correcta. Estuvieron más de 5 días calendario en el exterior y nadie usó el cupo en el último año (art. 269). Como menor de edad, el hijo tiene el 50 % de los cupos (art. 274): USD 1.000 con franquicia y hasta USD 1.500 con tributo único, y conserva la franquicia (art. 269, par. 1). Paga el 15 % (art. 270) sobre USD 1.200, que caben en su cupo: USD 180."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el hijo de 15 años trae una consola de USD 2.200, el viaje superó 5 días y los padres quieren cederle su cupo. Regla: los cupos se aplican a cada miembro de la unidad familiar y son personales e intransferibles (arts. 267 y 272); el menor tiene el 50 % de los cupos (art. 274), conserva la franquicia al traer mercancías con tributo único (art. 269, par. 1) y lo que la excede paga 15 % (art. 270). Cálculo: franquicia de USD 1.000; 2.200 − 1.000 = 1.200 (dentro del cupo de 1.500); 15 % = USD 180.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Operaciones de canalización obligatoria por el mercado cambiario",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.17.1.1, num. 1",
+      "art. 2.17.1.2, lit. b (modificado por el art. 1 del Decreto 119 de 2017)",
+      "art. 2.17.1.4, nums. 1 y 2"
+    ],
+    "texto_fuente": "Defínanse como operaciones de cambio todas las comprendidas dentro de las categorías señaladas en el artículo 4 de la Ley 9ª de 1991, y específicamente las siguientes: 1. Importaciones y exportaciones de bienes y servicios; [...] b) Las entidades de derecho público, las personas jurídicas, incluidas las entidades sin ánimo de lucro, que tengan su domicilio principal en el país. [...] Únicamente las operaciones de cambio que a continuación se indican, deberán canalizarse a través del mercado cambiario: 1. Importaciones y exportaciones de bienes; 2. Operaciones de endeudamiento celebradas por residentes en el país, así como los costos financieros inherentes a las mismas;",
+    "pregunta": "La contadora de una sociedad con domicilio principal en Colombia prepara las instrucciones para la tesorería sobre tres pagos al exterior que la empresa hará en 2026: el precio de unas materias primas importadas, los honorarios de un consultor del exterior por una asesoría técnica, y las cuotas e intereses de un préstamo en dólares que le otorgó un banco extranjero. ¿Cuáles de esos pagos deben canalizarse obligatoriamente a través del mercado cambiario?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los tres, porque todos son operaciones de cambio entre un residente y personas que no residen en el país.",
+        "explicacion": "Incorrecta. Las tres son operaciones de cambio (el art. 2.17.1.1 incluye la importación de servicios), pero solo deben canalizarse las que enumera el art. 2.17.1.4, y la importación de servicios no está entre ellas."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el de las materias primas, porque es el único que corresponde a una importación o exportación.",
+        "explicacion": "Incorrecta. El art. 2.17.1.4 también exige canalizar el endeudamiento de residentes y sus costos financieros. Además, la asesoría también es una importación, pero de servicios, que no está en la lista."
+      },
+      {
+        "id": "C",
+        "texto": "El de las materias primas y el del préstamo con sus intereses; el de la asesoría no tiene esa obligación.",
+        "explicacion": "Correcta. Deben canalizarse las importaciones de bienes y las operaciones de endeudamiento de residentes con sus costos financieros (art. 2.17.1.4, nums. 1 y 2). La asesoría es importación de servicios: es operación de cambio, pero no está entre las de canalización obligatoria."
+      },
+      {
+        "id": "D",
+        "texto": "El del préstamo y el de la asesoría, porque pagan servicios y costos financieros a quienes no residen aquí.",
+        "explicacion": "Incorrecta. El préstamo sí debe canalizarse, pero la asesoría no; además, deja por fuera la importación de bienes, que es la primera operación de canalización obligatoria."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: una sociedad residente pagará una importación de bienes, una asesoría del exterior y un crédito externo con intereses. Regla: el art. 2.17.1.1 del Decreto 1068 define como operaciones de cambio las importaciones de bienes y de servicios, pero el art. 2.17.1.4 dispone que solo deben canalizarse, entre otras, las importaciones y exportaciones de bienes y el endeudamiento de residentes con sus costos financieros. Conclusión: deben canalizarse la importación y el préstamo; la asesoría no.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Residencia para fines cambiarios y endeudamiento externo de personas naturales",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015 y Decreto 1742 de 2020",
+    "articulos": [
+      "art. 2.17.1.2, lit. a (Decreto 1068 de 2015, modificado por el art. 1 del Decreto 119 de 2017)",
+      "art. 2.17.1.4, num. 2 (Decreto 1068 de 2015)",
+      "art. 31, num. 2 (Decreto 1742 de 2020)"
+    ],
+    "texto_fuente": "Se consideran como residentes: [...] a) Las personas naturales nacionales colombianas que habiten en el territorio nacional o las extranjeras que permanezcan continua o discontinuamente en el país por más de ciento ochenta y tres (183) días calendario, incluyendo los días de entrada y de salida del país, durante un periodo de trescientos sesenta y cinco (365) días calendario consecutivos. [...] Únicamente las operaciones de cambio que a continuación se indican, deberán canalizarse a través del mercado cambiario: [...] 2. Operaciones de endeudamiento celebradas por residentes en el país, así como los costos financieros inherentes a las mismas; [...] endeudamiento externo de personas naturales y demás operaciones derivadas del régimen cambiario, cuya vigilancia y control no sea competencia de otras entidades.",
+    "pregunta": "Una ingeniera de nacionalidad mexicana estuvo en Colombia del 1 al 15 de febrero de 2026, salió del país y volvió a ingresar el 1 de marzo de 2026; desde entonces no ha salido. El 18 de agosto de 2026 firmó a su nombre un préstamo en dólares con un banco de México. Un técnico de fiscalización cambiaria de la DIAN debe establecer si ella es residente para efectos cambiarios y qué implica eso para el préstamo. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es residente, pues ha estado 186 días en el país, y el préstamo debe canalizarse por el mercado cambiario.",
+        "explicacion": "Correcta. Las extranjeras son residentes si permanecen en el país, continua o discontinuamente, más de 183 días calendario en 365, incluidos los días de entrada y salida (art. 2.17.1.2). Suma 15 días (1 al 15 de febrero) y 171 (1 de marzo al 18 de agosto): 186. Como residente, su endeudamiento externo debe canalizarse (art. 2.17.1.4, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "No es residente, pues solo cuenta su estadía continua más reciente, de 171 días, y el préstamo no se canaliza.",
+        "explicacion": "Incorrecta. La norma cuenta la permanencia continua o discontinua dentro de 365 días, así que también se suman los 15 días de febrero."
+      },
+      {
+        "id": "C",
+        "texto": "No es residente, pues sin los días de entrada y salida suma 183 días, y el préstamo no se canaliza.",
+        "explicacion": "Incorrecta. La norma ordena incluir los días de entrada y de salida. Sin ellos se llega a 183, que no supera el umbral; con ellos, a 186."
+      },
+      {
+        "id": "D",
+        "texto": "Es residente, pero el préstamo no se canaliza, porque esa obligación es solo para deudas de personas jurídicas.",
+        "explicacion": "Incorrecta. El art. 2.17.1.4 exige canalizar las operaciones de endeudamiento celebradas por residentes, sin limitarlas a las personas jurídicas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: estuvo en el país del 1 al 15 de febrero y del 1 de marzo al 18 de agosto de 2026. Regla: es residente la extranjera que permanece más de 183 días calendario, continuos o discontinuos, en 365, incluidos los días de entrada y salida (art. 2.17.1.2, Decreto 1068); el endeudamiento de residentes debe canalizarse (art. 2.17.1.4); la DIAN controla el endeudamiento externo de personas naturales (Decreto 1742, art. 31). Cálculo: 15 + 171 = 186 > 183.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Operaciones internas entre residentes",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.17.1.2, lit. b (modificado por el art. 1 del Decreto 119 de 2017)",
+      "art. 2.17.1.3"
+    ],
+    "texto_fuente": "b) Las entidades de derecho público, las personas jurídicas, incluidas las entidades sin ánimo de lucro, que tengan su domicilio principal en el país. [...] Salvo autorización expresa en contrario, ningún contrato, convenio u operación que se celebre entre residentes se considerará operación de cambio. En consecuencia, las obligaciones que se deriven de tales contratos, convenios u operaciones, deberán cumplirse en moneda legal colombiana.",
+    "pregunta": "Dos sociedades con domicilio principal en Medellín firmaron la compraventa de una bodega ubicada en Rionegro y fijaron el precio en dólares, pagadero en esa moneda. Un auxiliar de la División de Control Cambiario debe responder la consulta de una de ellas sobre el tratamiento cambiario de esa operación, para la cual no existe ninguna autorización especial. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que es una operación de cambio y que el pago en dólares debe canalizarse a través del mercado cambiario.",
+        "explicacion": "Incorrecta. Las dos sociedades son residentes y, salvo autorización expresa en contrario, ningún contrato entre residentes se considera operación de cambio (art. 2.17.1.3)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no se considera operación de cambio y que las obligaciones del contrato deben cumplirse en pesos colombianos.",
+        "explicacion": "Correcta. Las personas jurídicas con domicilio principal en el país son residentes (art. 2.17.1.2). Entre residentes, salvo autorización expresa, el contrato no es operación de cambio y sus obligaciones deben cumplirse en moneda legal colombiana (art. 2.17.1.3)."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede pagarse en dólares si el pago se hace por medio de un intermediario autorizado del mercado cambiario.",
+        "explicacion": "Incorrecta. Usar un intermediario del mercado cambiario no cambia la regla: entre residentes las obligaciones se cumplen en moneda legal colombiana, salvo autorización expresa."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede pagarse en dólares, porque entre residentes la moneda del contrato se deja al libre acuerdo de las partes.",
+        "explicacion": "Incorrecta. La norma no deja la moneda al libre acuerdo: ordena cumplir en moneda legal colombiana las obligaciones de los contratos entre residentes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: comprador y vendedor tienen domicilio principal en Colombia y pactaron el precio en dólares, sin autorización especial. Regla: son residentes las personas jurídicas con domicilio principal en el país (art. 2.17.1.2) y, salvo autorización expresa, ningún contrato entre residentes es operación de cambio; sus obligaciones deben cumplirse en moneda legal colombiana (art. 2.17.1.3 del Decreto 1068). Conclusión: no es operación de cambio y se paga en pesos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-019",
+    "version": 3,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Bonos opcionalmente convertibles: endeudamiento externo declarado como inversión extranjera",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.17.2.2.1.2, lit. a, ord. i, lit. b, ord. i, y par. 1 (Título 2 modificado por el art. 2 del Decreto 119 de 2017)",
+      "art. 2.17.2.2.1.3",
+      "art. 2.17.2.5.1.2"
+    ],
+    "texto_fuente": "a) Se considera inversión directa la que se realice sobre cualquiera de los siguientes activos: i) Las participaciones, en cualquier proporción, en el capital de una empresa residente en Colombia, en acciones, cuotas sociales, aportes representativos de capital, o bonos obligatoriamente convertibles en acciones, siempre y cuando estos no se encuentren inscritos en el Registro Nacional de Valores y Emisores (RNVE), o en un Sistema de Cotización de Valores del Extranjero [...] b) Se considera inversión de portafolio la que se realice sobre cualquiera de los siguientes activos: i) Los valores inscritos en el Registro Nacional de Valores y Emisores (RNVE), o listados en Sistemas de Cotización de Valores del Extranjero [...] PARÁGRAFO 1. No constituyen inversión extranjera los créditos y operaciones que impliquen endeudamiento. Constituye infracción cambiaria la realización por residentes en el país de operaciones de endeudamiento externo con divisas que hayan sido declaradas como inversión extranjera. [...] Las sucursales de sociedades extranjeras podrán registrar como inversión extranjera directa las disponibilidades de capital en forma de divisas que permanezcan en la cuenta corriente contable que mantengan con la casa matriz [...] Los inversionistas, sus apoderados o los representantes legales de las empresas receptoras de inversión de capitales del exterior en el país podrán en cualquier tiempo modificar la información contenida en el registro, conforme con el procedimiento que establezca el Banco de la República",
+    "pregunta": "Una sociedad colombiana emitió bonos por USD 500.000, que suscribió y pagó en divisas su matriz de Panamá. Los bonos no están inscritos en el Registro Nacional de Valores y Emisores ni listados en sistemas de cotización del exterior, pagan un interés del 6 % anual y vencen en tres años; al vencimiento, la matriz podrá escoger entre recibir el reembolso en dinero o convertirlos en acciones. La sociedad declaró esas divisas como inversión extranjera directa. Al preparar su informe, el revisor fiscal de la sociedad debe calificar la operación. ¿Cómo debe calificarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como inversión directa, porque los bonos convertibles en acciones que no están en el RNVE equivalen a participar en el capital.",
+        "explicacion": "Incorrecta. Solo son inversión directa los bonos obligatoriamente convertibles en acciones (lit. a, ord. i). Estos pagan intereses y la matriz puede exigir el reembolso en dinero: la conversión es opcional y la operación implica endeudamiento, que no constituye inversión extranjera (par. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Como deuda externa de la sociedad, y basta modificar el registro, lo que puede hacerse en cualquier tiempo y sin infracción.",
+        "explicacion": "Incorrecta. Acierta en que es endeudamiento, pero la facultad general de modificar el registro en cualquier tiempo (art. 2.17.2.5.1.2) no borra la infracción: el par. 1 del art. 2.17.2.2.1.2 dispone expresamente que constituye infracción cambiaria el endeudamiento externo de residentes con divisas declaradas como inversión extranjera, y esa regla especial prevalece."
+      },
+      {
+        "id": "C",
+        "texto": "Como deuda externa de la sociedad, y haberla presentado como inversión del exterior constituye una infracción cambiaria.",
+        "explicacion": "Correcta. Los bonos no son obligatoriamente convertibles: pagan intereses y la matriz puede exigir el reembolso, así que implican endeudamiento. Los créditos y operaciones que impliquen endeudamiento no constituyen inversión extranjera, y realizar endeudamiento externo con divisas declaradas como inversión extranjera constituye infracción cambiaria (art. 2.17.2.2.1.2, par. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Como inversión suplementaria al capital asignado, porque las divisas las aportó la casa matriz de la sociedad emisora.",
+        "explicacion": "Incorrecta. La inversión suplementaria al capital asignado es propia de las sucursales de sociedades extranjeras (art. 2.17.2.2.1.3), no de una sociedad colombiana filial, y tampoco convierte un crédito en inversión."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los bonos pagan intereses y la matriz puede escoger entre el reembolso en dinero y la conversión en acciones. Regla: solo los bonos obligatoriamente convertibles en acciones son inversión directa (art. 2.17.2.2.1.2, lit. a). El par. 1 de ese artículo excluye el endeudamiento de la inversión extranjera y califica expresamente como infracción cambiaria el endeudamiento externo de residentes con divisas declaradas como inversión; modificar el registro (art. 2.17.2.5.1.2) no la borra. Conclusión: es deuda externa mal declarada e infracción cambiaria.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-ADU-020",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Régimen cambiario",
+    "subtema": "Competencia de la DIAN en el control cambiario",
+    "formato": "conocimiento_aplicado",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1742 de 2020 y Decreto 1068 de 2015",
+    "articulos": [
+      "art. 1, inc. 2 (Decreto 1742 de 2020)",
+      "art. 2.17.2.7.2, inc. 1 (Decreto 1068 de 2015)",
+      "art. 2.17.2.2.5.1 (Decreto 1068 de 2015)",
+      "art. 2.17.2.2.5.2, par. 1 (Decreto 1068 de 2015)"
+    ],
+    "texto_fuente": "Igualmente, le corresponde el control y vigilancia sobre el cumplimiento del régimen cambiario en materia de importación y exportación de bienes y servicios, gastos asociados a las mismas, financiación en moneda extranjera de importaciones y exportaciones, y subfacturación y sobrefacturación de estas operaciones. [...] El Banco de la República podrá solicitar a los inversionistas o a las empresas receptoras de la inversión, la información adicional que considere necesaria sobre las inversiones internacionales para efectos estadísticos. [...] Corresponde al Banco de la República, calificar como inversionistas nacionales a las personas naturales extranjeras que así lo soliciten, cuando demuestren su calidad de residentes [...] PARÁGRAFO 1. Para los efectos de la calificación de la empresa como nacional, mixta o extranjera, el organismo competente será el Ministerio de Comercio, Industria y Turismo.",
+    "pregunta": "A la División de Control Cambiario de una Dirección Seccional llegan cuatro solicitudes de revisión. De acuerdo con la competencia cambiaria que el Decreto 1742 de 2020 asigna a la DIAN y con las funciones que el Decreto 1068 de 2015 atribuye a otras entidades, ¿cuál de ellas le corresponde atender a la DIAN?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle a una sociedad receptora de inversión del exterior información adicional sobre esa inversión, con fines estadísticos.",
+        "explicacion": "Incorrecta. Solicitar a los inversionistas o a las empresas receptoras información adicional sobre las inversiones internacionales para efectos estadísticos le corresponde al Banco de la República (art. 2.17.2.7.2 del Decreto 1068)."
+      },
+      {
+        "id": "B",
+        "texto": "Verificar si un extranjero que pide ser tratado como inversionista nacional acreditó de verdad su residencia en el país.",
+        "explicacion": "Incorrecta. Calificar como inversionistas nacionales a las personas naturales extranjeras que demuestran su calidad de residentes corresponde al Banco de la República (art. 2.17.2.2.5.1 del Decreto 1068)."
+      },
+      {
+        "id": "C",
+        "texto": "Revisar la composición del capital de una empresa con socios del exterior para establecer si es nacional, mixta o extranjera.",
+        "explicacion": "Incorrecta. Para calificar una empresa como nacional, mixta o extranjera, el organismo competente es el Ministerio de Comercio, Industria y Turismo (art. 2.17.2.2.5.2, par. 1, del Decreto 1068)."
+      },
+      {
+        "id": "D",
+        "texto": "Revisar si el valor declarado en una exportación de flores supera el que en realidad pagó el comprador del exterior.",
+        "explicacion": "Correcta. A la DIAN le corresponde el control y vigilancia del régimen cambiario en las importaciones y exportaciones de bienes y servicios, incluidas su subfacturación y sobrefacturación (Decreto 1742 de 2020, art. 1). Declarar una exportación por un valor mayor al real es sobrefacturarla."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la opción D trata del valor de una exportación. Regla: el art. 1 del Decreto 1742 de 2020 asigna a la DIAN el control y vigilancia del régimen cambiario en importaciones y exportaciones, su financiación en moneda extranjera y su subfacturación o sobrefacturación; el Decreto 1068 asigna al Banco de la República la solicitud de información estadística sobre inversiones internacionales y la calificación de inversionistas nacionales, y al Ministerio de Comercio la calificación de empresas. Conclusión: la DIAN atiende la posible sobrefacturación.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1742_2020.htm",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  }
+]

@@ -1,0 +1,1092 @@
+[
+  {
+    "id": "TC-SAL-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Atención inicial de urgencias sin contrato, documento ni pago previo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 100 de 1993 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 100 de 1993, art. 168 inc. 1",
+      "Ley 1751 de 2015, art. 10 inc. 1 lit. b",
+      "Ley 1751 de 2015, art. 14 inc. 1"
+    ],
+    "texto_fuente": "La atención inicial de urgencias debe ser prestada en forma obligatoria por todas las entidades públicas y privadas que presten servicios de salud, a todas las personas, independientemente de la capacidad de pago. Su prestación no requiere contrato ni orden previa. El costo de estos servicios será pagado por el Fondo de Solidaridad y Garantía en los casos previstos en el artículo anterior, o por la Entidad Promotora de Salud al cual esté afiliado, en cualquier otro evento. [...] b) Recibir la atención de urgencias que sea requerida con la oportunidad que su condición amerite sin que sea exigible documento o cancelación de pago previo alguno; [...] Para acceder a servicios y tecnologías de salud no se requerirá ningún tipo de autorización administrativa entre el prestador de servicios y la entidad que cumpla la función de gestión de servicios de salud cuando se trate de atención de urgencia.",
+    "pregunta": "Un domingo en la noche llega por sus propios medios al servicio de urgencias de una ESE de segundo nivel un hombre de 58 años con dolor en el pecho desde hace una hora. No trae cédula y su acompañante no lleva dinero. Dice estar afiliado al régimen contributivo en una EPS con la que la ESE no tiene ningún contrato vigente. No se trata de un accidente de tránsito ni de otro evento catastrófico. La auxiliar de admisiones debe abrir el registro de ingreso. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir a la EPS una autorización de ingreso antes del triaje, ya que entre la EPS y la ESE no hay contrato.",
+        "explicacion": "Incorrecta. Trata la urgencia como si fuera un servicio programado. Para la atención de urgencia no se requiere ninguna autorización administrativa entre el prestador y la EPS (Ley 1751, art. 14), y la atención inicial no requiere contrato ni orden previa (Ley 100, art. 168)."
+      },
+      {
+        "id": "B",
+        "texto": "Abrir el ingreso como paciente particular y cobrarle a él la atención, pues su EPS no tiene contrato con la ESE.",
+        "explicacion": "Incorrecta. La falta de contrato no traslada el costo al paciente: según el art. 168 de la Ley 100, la atención inicial de urgencias la paga la EPS a la que esté afiliado, salvo los eventos catastróficos y de tránsito del art. 167. Además, no puede exigirse pago previo (Ley 1751, art. 10 lit. b)."
+      },
+      {
+        "id": "C",
+        "texto": "Abrir el ingreso sin exigir documentos ni pagos, ya que la atención inicial la pagará la EPS del paciente.",
+        "explicacion": "Correcta. La atención inicial de urgencias es obligatoria para toda entidad que preste servicios de salud, sin contrato ni orden previa, y su costo lo paga la EPS de afiliación (Ley 100, art. 168). No se puede exigir documento ni pago previo (Ley 1751, art. 10 lit. b)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirlo a la IPS más cercana de la red de su EPS, ya que con esa EPS la ESE no tiene ningún contrato vigente.",
+        "explicacion": "Incorrecta. La ESE está obligada a prestar la atención inicial de urgencias a todas las personas, haya o no contrato con su EPS (Ley 100, art. 168). Remitirlo sin atenderlo desconoce esa obligación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: es una urgencia de un afiliado a una EPS sin contrato con la ESE, que no trae documento ni dinero. Regla: el art. 168 de la Ley 100 obliga a toda entidad que preste servicios de salud a dar la atención inicial de urgencias sin contrato ni orden previa, y pone su costo a cargo de la EPS de afiliación (fuera de los eventos del art. 167). La Ley 1751 prohíbe exigir documento, pago previo o autorización administrativa en la urgencia (arts. 10 lit. b y 14). Conclusión: se abre el ingreso y la atención se cobra a la EPS.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Prohibición de multas por inasistencia y efectos del incumplimiento de deberes",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1438 de 2011 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 1438 de 2011, art. 55",
+      "Ley 1438 de 2011, art. 139 num. 139.8",
+      "Ley 1751 de 2015, art. 10 par. 1"
+    ],
+    "texto_fuente": "Entrada en vigencia esta ley queda prohibido el cobro de cualquier tipo de multas a los cotizantes y beneficiarios de los regímenes contributivo y subsidiado, así como la población vinculada, en lo establecido para citas médicas programadas [...] 139.8 Cumplir las citas y atender los requerimientos del personal administrativo y asistencial de salud [...] Los efectos del incumplimiento de estos deberes solo podrán ser determinados por el legislador. En ningún caso su incumplimiento podrá ser invocado para impedir o restringir el acceso oportuno a servicios de salud requeridos.",
+    "pregunta": "Un usuario del régimen contributivo faltó sin avisar a dos citas de medicina general en una ESE. La coordinadora de consulta externa dispuso dos medidas: cobrarle, antes de darle una nueva cita, un valor por inasistencia igual al de una cuota moderadora, y no asignarle citas durante 30 días por no cumplir sus deberes como usuario. El usuario presenta una queja en la oficina de atención al usuario. ¿Qué debe responderle el técnico que tramita la queja?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La multa no procede, pero el bloqueo de 30 días sí, porque cumplir las citas es un deber legal del usuario.",
+        "explicacion": "Incorrecta. Acierta en la multa, pero olvida que el incumplimiento de un deber no puede invocarse para impedir o restringir el acceso a los servicios (Ley 1751, art. 10 par. 1). Cumplir las citas sí es un deber (Ley 1438, art. 139.8), pero sus efectos solo los define el legislador."
+      },
+      {
+        "id": "B",
+        "texto": "La multa procede si no supera el valor de una cuota moderadora, pero el bloqueo de citas no procede.",
+        "explicacion": "Incorrecta. El art. 55 de la Ley 1438 prohíbe cualquier tipo de multa por inasistencia a citas programadas, sin importar su valor."
+      },
+      {
+        "id": "C",
+        "texto": "Ambas proceden, con tal de que la EPS haya aprobado el reglamento interno de inasistencias de la ESE.",
+        "explicacion": "Incorrecta. Ningún reglamento de la EPS o de la ESE puede autorizar lo que la ley prohíbe: las multas por inasistencia están prohibidas y el incumplimiento de deberes no puede restringir el acceso."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna procede: las multas por faltar a citas están prohibidas y un deber incumplido no limita el acceso.",
+        "explicacion": "Correcta. El art. 55 de la Ley 1438 prohíbe cobrar cualquier tipo de multa por inasistencia a citas programadas, en ambos regímenes. Y el parágrafo 1 del art. 10 de la Ley 1751 impide invocar el incumplimiento de los deberes para impedir o restringir el acceso a los servicios."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ESE quiere cobrar un valor por faltar a citas y, además, bloquear la asignación de citas. Regla: el art. 55 de la Ley 1438 prohíbe cobrar cualquier tipo de multa a los afiliados de ambos regímenes por las citas programadas, y el art. 10 par. 1 de la Ley 1751 dice que el incumplimiento de los deberes no puede invocarse para impedir o restringir el acceso a los servicios. Conclusión: ninguna de las dos medidas procede.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Cobro al SOAT y prueba del accidente de tránsito",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 100 de 1993, Ley 1438 de 2011 y Decreto 780 de 2016",
+    "articulos": [
+      "Ley 100 de 1993, art. 167 par. 1",
+      "Ley 1438 de 2011, art. 143 inc. 1",
+      "Decreto 780 de 2016, art. 2.6.1.4.2.20 num. 1",
+      "Decreto 780 de 2016, art. 2.6.1.4.3.4"
+    ],
+    "texto_fuente": "PARÁGRAFO 1o. En los casos de accidentes de tránsito, el cubrimiento de los servicios médico-quirúrgicos y demás prestaciones continuará a cargo de las aseguradoras autorizadas para administrar los recursos del Seguro Obligatorio de Accidentes de Tránsito con las modificaciones de esta Ley. [...] Para la prueba del accidente de tránsito ante la aseguradora del SOAT, será suficiente la declaración del médico de urgencias sobre este hecho, en el formato que se establezca para el efecto por parte del Ministerio de la Protección Social, sin perjuicio de la intervención de la autoridad de tránsito y de la posibilidad de que la aseguradora del SOAT realice auditorías posteriores. [...] 1. Formulario de reclamación que para el efecto adopte la Dirección de Administración de Fondos de la Protección Social del Ministerio de Salud y de Protección Social, debidamente diligenciado. [...] Ni el Fosyga, ni las aseguradoras autorizadas para operar el SOAT podrán solicitar a los reclamantes documentos adicionales a los establecidos en el presente Capítulo ni en la resolución que emita el Ministerio de Salud y Protección Social para tramitar y pagar los servicios de salud, indemnizaciones y gastos de que trata el presente Capítulo.",
+    "pregunta": "Un peatón atropellado por un automóvil particular con SOAT vigente fue atendido en el servicio de urgencias de una ESE. Está afiliado a una EPS del régimen subsidiado, y el valor de la atención está muy por debajo del tope de cobertura de la póliza. Ninguna autoridad de tránsito acudió al lugar del accidente. Al recibir la reclamación de la ESE, la aseguradora del SOAT respondió que no la tramitará mientras no se le entregue el informe policial del accidente. ¿Qué debe hacer la auxiliar de facturación de la ESE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Insistir en el cobro ante la aseguradora y probar el accidente con lo que declare el médico que atendió al paciente.",
+        "explicacion": "Correcta. Dentro de la cobertura de la póliza, la atención la paga la aseguradora del SOAT (Ley 100, art. 167 par. 1), y para probarle el accidente basta la declaración del médico de urgencias, en el formato que fije el Ministerio, sin perjuicio de la intervención de la autoridad de tránsito (Ley 1438, art. 143). El informe policial no figura entre los documentos de la solicitud de pago (Decreto 780, art. 2.6.1.4.2.20), y la aseguradora no puede pedir documentos adicionales (art. 2.6.1.4.3.4)."
+      },
+      {
+        "id": "B",
+        "texto": "Facturar la atención a la EPS del paciente, porque sin el informe policial no hay cómo probar el accidente.",
+        "explicacion": "Incorrecta. La ley no exige el informe policial: basta la declaración del médico de urgencias. Y mientras la atención esté dentro de la cobertura de la póliza, la paga la aseguradora del SOAT, no la EPS."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir al paciente que consiga el informe ante la autoridad de tránsito y suspender el cobro hasta que lo entregue en la ESE.",
+        "explicacion": "Incorrecta. El informe policial no es necesario para probar el accidente ni puede exigirse como documento adicional (Decreto 780, art. 2.6.1.4.3.4), y encargar ese trámite al paciente le traslada una carga administrativa que corresponde a la ESE."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar la atención a la ADRES, porque sin un informe de la autoridad el accidente se trata como de vehículo no identificado.",
+        "explicacion": "Incorrecta. El vehículo está identificado y tiene SOAT vigente; la falta de informe de tránsito no cambia eso, y el accidente se prueba con la declaración del médico de urgencias."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el vehículo tenía SOAT vigente, la atención está dentro de la cobertura y no hay informe de tránsito. Regla: la atención la cubre la aseguradora del SOAT (Ley 100, art. 167 par. 1); para probarle el accidente basta la declaración del médico de urgencias, sin perjuicio de la intervención de la autoridad de tránsito (Ley 1438, art. 143), y la aseguradora no puede pedir documentos adicionales a los del reglamento, que no incluye el informe policial (Decreto 780, arts. 2.6.1.4.2.20 y 2.6.1.4.3.4). Conclusión: la ESE insiste ante la aseguradora con esa declaración.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derecho fundamental a la salud",
+    "subtema": "Principio de continuidad ante el vencimiento de un contrato",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 6 inc. 2 lit. d"
+    ],
+    "texto_fuente": "d) Continuidad. Las personas tienen derecho a recibir los servicios de salud de manera continua. Una vez la provisión de un servicio ha sido iniciada, este no podrá ser interrumpido por razones administrativas o económicas;",
+    "pregunta": "El 30 de septiembre de 2026 venció el contrato entre una ESE y una EPS, y la renovación sigue en negociación. Una afiliada de esa EPS había empezado en la ESE un tratamiento de 20 sesiones de fisioterapia, ordenado tras una fractura de cadera, y lleva 8. La ESE es el único prestador de fisioterapia del municipio, y el más cercano de la red de la EPS queda a cuatro horas por carretera. El área de contratación de la ESE pidió suspender las 12 sesiones restantes hasta que se firme el nuevo contrato. La paciente acude a la oficina de atención al usuario. ¿Qué debe hacer el técnico que atiende el caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Orientar a la paciente para que pida a su EPS otra IPS de su red y haga allí las 12 sesiones pendientes.",
+        "explicacion": "Incorrecta. La ESE ya inició el tratamiento y no puede interrumpirlo por el vencimiento del contrato, que es una razón administrativa (Ley 1751, art. 6 lit. d). Enviar a la paciente a mitad del tratamiento a otra IPS, a cuatro horas, lo corta en la práctica y le traslada un asunto contractual entre la ESE y la EPS."
+      },
+      {
+        "id": "B",
+        "texto": "Reportar a la gerencia que las 12 sesiones deben darse aunque el nuevo contrato con la EPS no esté firmado.",
+        "explicacion": "Correcta. Según el principio de continuidad (Ley 1751, art. 6 lit. d), una vez iniciada la provisión de un servicio, no puede interrumpirse por razones administrativas o económicas, y el vencimiento del contrato es una razón de ese tipo. La ESE debe terminar el tratamiento que empezó, y el técnico reporta el caso a quien decide, dentro de su rol."
+      },
+      {
+        "id": "C",
+        "texto": "Registrar la queja y reprogramar las sesiones para cuando la ESE y la EPS firmen el nuevo contrato.",
+        "explicacion": "Incorrecta. Aplazar las sesiones hasta que haya contrato es interrumpir el servicio por una razón administrativa, lo que el principio de continuidad no permite."
+      },
+      {
+        "id": "D",
+        "texto": "Seguir con las sesiones si la paciente firma un compromiso de pagarlas en caso de que la EPS no las reconozca.",
+        "explicacion": "Incorrecta. Condicionar el tratamiento a que la paciente asuma el costo es interrumpirlo por una razón económica y trasladarle una carga que no le corresponde."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el tratamiento ya había empezado en la ESE (8 de 20 sesiones), se quiere suspender porque venció el contrato con la EPS y no hay otro prestador cercano. Regla: el principio de continuidad (Ley 1751, art. 6 lit. d) prohíbe interrumpir un servicio ya iniciado por razones administrativas o económicas. Conclusión: el técnico debe reportar a la gerencia que las sesiones deben continuar; la falta de contrato es un asunto entre la ESE y la EPS que no puede afectar a la paciente.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Plazo del gerente para presentar el proyecto de plan de gestión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 73 num. 73.1"
+    ],
+    "texto_fuente": "73.1 El Director o Gerente de la Empresa Social del Estado deberá presentar a la Junta Directiva el proyecto de plan de gestión de la misma, dentro de los treinta (30) días hábiles siguientes a su posesión en el cargo",
+    "pregunta": "El nuevo gerente de una ESE departamental se posesionó el lunes 16 de febrero de 2026. La auxiliar administrativa que apoya a la junta directiva debe anotar en el cronograma de la junta la fecha máxima en que el gerente tiene que entregarle el proyecto de plan de gestión. En ese lapso el único festivo es el lunes 23 de marzo. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El lunes 9 de marzo de 2026.",
+        "explicacion": "Incorrecta. Corresponde a 15 días hábiles, que es el plazo de la junta para aprobar el plan, no el del gerente para presentarlo."
+      },
+      {
+        "id": "B",
+        "texto": "El miércoles 18 de marzo de 2026.",
+        "explicacion": "Incorrecta. Cuenta 30 días calendario, pero la ley habla de días hábiles."
+      },
+      {
+        "id": "C",
+        "texto": "El lunes 30 de marzo de 2026.",
+        "explicacion": "Incorrecta. Cuenta 30 días hábiles, pero toma como hábil el festivo del 23 de marzo."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 31 de marzo de 2026.",
+        "explicacion": "Correcta. Son 30 días hábiles contados desde el 17 de febrero, sin sábados, domingos ni el festivo del 23 de marzo (Ley 1438, art. 73.1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el gerente se posesionó el 16 de febrero de 2026. Regla: el art. 73.1 de la Ley 1438 le da 30 días hábiles siguientes a su posesión para presentar a la junta el proyecto de plan de gestión. Cálculo: contando desde el 17 de febrero, sin fines de semana ni el festivo del 23 de marzo, el día 30 es el martes 31 de marzo; si no se descuenta el festivo, se llega por error al 30 de marzo. Conclusión: 31 de marzo de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Plazo de la junta para evaluar el informe anual del plan de gestión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 74 num. 74.1",
+      "art. 74 num. 74.2"
+    ],
+    "texto_fuente": "74.1 El Director o Gerente de la Empresa Social del Estado del orden territorial deberá presentar a la Junta Directiva un informe anual sobre el cumplimiento del plan de gestión, el cual deberá ser presentado a más tardar el 1o de abril de cada año con corte al 31 de diciembre del año inmediatamente anterior. [...] 74.2 La Junta Directiva deberá evaluar el cumplimiento del plan de gestión del Director o Gerente, dentro de los quince (15) días hábiles siguientes a la presentación del informe de gestión.",
+    "pregunta": "La gerente de una ESE municipal radicó ante la junta directiva, el lunes 30 de marzo de 2026, el informe anual de cumplimiento de su plan de gestión con corte al 31 de diciembre de 2025. El técnico administrativo que lleva la secretaría de la junta debe programar la sesión de evaluación y avisar a los miembros cuál es el último día que tienen para evaluar. El 2 y el 3 de abril de 2026 son festivos. ¿Qué día debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 14 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días calendario, pero el plazo de la junta es de días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "El lunes 20 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días hábiles, pero toma como hábiles los festivos del 2 y el 3 de abril."
+      },
+      {
+        "id": "C",
+        "texto": "El miércoles 22 de abril de 2026.",
+        "explicacion": "Correcta. El plazo corre desde la presentación del informe (30 de marzo). Quince días hábiles contados desde el 31 de marzo, sin fines de semana ni los festivos del 2 y 3 de abril, terminan el 22 de abril (Ley 1438, art. 74.2)."
+      },
+      {
+        "id": "D",
+        "texto": "El viernes 24 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta los 15 días hábiles desde el 1 de abril, que es el límite para presentar el informe, y no desde la fecha en que se presentó."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el informe se presentó el 30 de marzo, antes del límite legal del 1 de abril. Regla: el art. 74.2 de la Ley 1438 da a la junta 15 días hábiles siguientes a la presentación del informe para evaluar el plan de gestión. Cálculo: desde el 31 de marzo, sin fines de semana ni los festivos del 2 y 3 de abril, el día 15 es el miércoles 22 de abril; si se ignoran los festivos se llega al 20, y si se cuenta desde el 1 de abril, al 24. Conclusión: 22 de abril de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Junta directiva de las ESE",
+    "subtema": "Repetición y número de periodos de los representantes de los usuarios",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 70 num. 70.3",
+      "art. 70 par. 1"
+    ],
+    "texto_fuente": "70.3 Un representante de los usuarios, designado por las alianzas o asociaciones de usuarios legalmente establecidas, mediante convocatoria realizada por parte de la dirección departamental, distrital o municipal de salud. [...] PARÁGRAFO 1o. Los representantes de los usuarios y de los servidores públicos de la entidad tendrán un periodo de dos (2) años y no podrán ser reelegidos para periodos consecutivos, ni podrán ser parte de las Juntas Directivas de las Empresas Sociales del Estado en más de dos ocasiones. En los municipios de 6ª categoría, los representantes de los usuarios y los empleados públicos tendrán un periodo de 4 años.",
+    "pregunta": "Una ESE de primer nivel funciona en un municipio de sexta categoría. La representante de los usuarios en su junta directiva es Marta, designada para el periodo de febrero de 2023 a enero de 2027. Para el periodo que empieza en febrero de 2027, las asociaciones de usuarios postulan a tres personas: la propia Marta; Jorge, que fue representante de los usuarios en esa junta de 2011 a 2015 y de 2019 a 2023; y Pedro, que lo fue de 2015 a 2019. El auxiliar administrativo que lleva el archivo de la junta debe informar a la dirección municipal de salud quiénes pueden ser designados. ¿Qué debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Marta y Pedro, porque quien termina su primer periodo puede ser designado una vez más.",
+        "explicacion": "Incorrecta. Los representantes no pueden ser reelegidos para periodos consecutivos, así que Marta no puede seguir en el periodo que sigue al suyo."
+      },
+      {
+        "id": "B",
+        "texto": "Jorge y Pedro, porque ninguno de los dos ocupa el cargo en el periodo que está por terminar.",
+        "explicacion": "Incorrecta. Acierta en que ninguno repetiría en periodos seguidos, pero Jorge ya integró la junta dos veces y la ley impide hacerlo en más de dos ocasiones."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno, porque quien ya integró la junta en algún periodo no puede volver a ser designado.",
+        "explicacion": "Incorrecta. La ley no prohíbe volver a la junta: prohíbe la reelección para periodos consecutivos y la participación en más de dos ocasiones. Pedro no está en ninguno de esos casos."
+      },
+      {
+        "id": "D",
+        "texto": "Solo Pedro, porque Marta repetiría en periodos seguidos y Jorge ya estuvo dos veces.",
+        "explicacion": "Correcta. Marta no puede ser reelegida para un periodo consecutivo y Jorge ya integró la junta en dos ocasiones, el máximo permitido (Ley 1438, art. 70 par. 1). Pedro estuvo una sola vez y su periodo no es el inmediatamente anterior."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: en esta ESE de primer nivel, Marta está en el periodo inmediatamente anterior, Jorge ya fue representante dos veces y Pedro una sola, en un periodo no consecutivo. Regla: el art. 70 par. 1 de la Ley 1438 prohíbe reelegir a los representantes para periodos consecutivos y les impide integrar juntas de ESE en más de dos ocasiones; en los municipios de sexta categoría el periodo es de 4 años. Conclusión: solo Pedro puede ser designado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Plazo del prestador para responder las glosas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 57 inc. 1",
+      "art. 57 inc. 2"
+    ],
+    "texto_fuente": "Las entidades responsables del pago de servicios de salud dentro de los veinte (20) días hábiles siguientes a la presentación de la factura con todos sus soportes, formularán y comunicarán a los prestadores de servicios de salud las glosas a cada factura, con base en la codificación y alcance definidos en la normatividad vigente. [...] El prestador de servicios de salud deberá dar respuesta a las glosas presentadas por las entidades responsables del pago de servicios de salud, dentro de los quince (15) días hábiles siguientes a su recepción, indicando su aceptación o justificando la no aceptación. La entidad responsable del pago, dentro de los diez (10) días hábiles siguientes a la recepción de la respuesta, decidirá si levanta total o parcialmente las glosas o las deja como definitivas.",
+    "pregunta": "Una ESE radicó ante una EPS, el lunes 7 de septiembre de 2026, una factura con todos sus soportes. La EPS le comunicó las glosas el viernes 2 de octubre de 2026, y la ESE las recibió ese mismo día. La auxiliar de facturación debe registrar en el sistema el último día que tiene la ESE para contestarlas, aceptándolas o explicando por qué no las acepta. El 12 de octubre y el 2 de noviembre de 2026 son festivos. ¿Qué día debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El lunes 19 de octubre de 2026.",
+        "explicacion": "Incorrecta. Corresponde a 10 días hábiles, que es el plazo de la EPS para decidir sobre la respuesta, no el de la ESE para responder."
+      },
+      {
+        "id": "B",
+        "texto": "El viernes 23 de octubre de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días hábiles, pero toma como hábil el festivo del 12 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "El lunes 26 de octubre de 2026.",
+        "explicacion": "Correcta. El prestador tiene 15 días hábiles siguientes a la recepción de las glosas (Ley 1438, art. 57). Contados desde el 5 de octubre, sin fines de semana ni el festivo del 12 de octubre, terminan el 26 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 3 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Aplica 20 días hábiles, que es el plazo de la EPS para formular las glosas, no el de la ESE para responderlas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ESE recibió las glosas el viernes 2 de octubre de 2026 (la EPS las formuló a tiempo: sus 20 días hábiles desde la radicación vencían el 5 de octubre). Regla: el art. 57 de la Ley 1438 da al prestador 15 días hábiles siguientes a la recepción para responder. Cálculo: desde el 5 de octubre, sin fines de semana ni el festivo del 12 de octubre, el día 15 es el lunes 26 de octubre; sin descontar el festivo saldría el 23. Conclusión: 26 de octubre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención primaria en salud",
+    "subtema": "Funciones de los equipos básicos de salud frente a personas no afiliadas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1438 de 2011 y Ley 100 de 1993",
+    "articulos": [
+      "Ley 1438 de 2011, art. 16 num. 16.3",
+      "Ley 1438 de 2011, art. 16 num. 16.4",
+      "Ley 1438 de 2011, art. 32 inc. 2",
+      "Ley 100 de 1993, art. 213 inc. 3"
+    ],
+    "texto_fuente": "16.3 Informar sobre el portafolio de servicios de la protección social en salud a las familias de acuerdo a sus necesidades y a las políticas y reglamentación de dichos servicios. 16.4 Promover la afiliación al sistema, la identificación plena de las familias, de manera que al identificar una persona no afiliada al sistema se inicie el trámite de afiliación para que puedan acceder a los servicios de protección social. [...] Cuando una persona requiera atención en salud y no esté afiliado, se procederá de la siguiente forma: [...] se inscribirán ante la Dirección de Salud correspondiente, la cual calificará su condición de beneficiario del subsidio, de acuerdo con la reglamentación que se expida para el efecto.",
+    "pregunta": "Un auxiliar de enfermería que integra el equipo básico de salud de una ESE visita una vereda para diligenciar la ficha familiar. En una de las viviendas encuentra que el abuelo, de 70 años, no figura en ningún régimen desde hace dos años y hoy no tiene síntomas. Según las funciones que la Ley 1438 de 2011 asigna a los equipos básicos de salud, ¿qué debe hacer el auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Poner en marcha la gestión para afiliarlo al sistema con la información recogida en la visita familiar.",
+        "explicacion": "Correcta. Entre las funciones de los equipos básicos está promover la afiliación: cuando identifican a una persona no afiliada, debe iniciarse el trámite para que acceda a los servicios de protección social (Ley 1438, art. 16.4)."
+      },
+      {
+        "id": "B",
+        "texto": "Calificarlo como beneficiario del subsidio con la ficha familiar, para que la EPS lo reciba sin otro trámite.",
+        "explicacion": "Incorrecta. La calificación de la condición de beneficiario del subsidio la hace la dirección de salud correspondiente (Ley 100, art. 213), no el equipo básico."
+      },
+      {
+        "id": "C",
+        "texto": "Anotarlo en la ficha y esperar a que consulte por alguna enfermedad, pues entonces la ESE lo afiliará.",
+        "explicacion": "Incorrecta. Confunde la función del equipo con la regla del art. 32 de la Ley 1438 para quien pide atención sin estar afiliado. El equipo debe iniciar el trámite cuando identifica a la persona, sin esperar a que enferme."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar a la familia el portafolio de servicios de protección social y dejar en sus manos la afiliación.",
+        "explicacion": "Incorrecta. Informar a las familias sobre el portafolio de servicios es otra función del equipo (art. 16.3), pero no reemplaza la de iniciar el trámite de afiliación cuando identifica a una persona no afiliada (art. 16.4)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: en la visita familiar, el equipo básico identifica a una persona sin afiliación. Regla: el art. 16.4 de la Ley 1438 asigna a los equipos básicos promover la afiliación, de manera que al identificar a una persona no afiliada se inicie el trámite; informar el portafolio (art. 16.3) no basta, y calificar a alguien como beneficiario del subsidio corresponde a la dirección de salud (Ley 100, art. 213). Conclusión: el auxiliar debe poner en marcha la afiliación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Sujetos de especial protección y prohibición de trasladar cargas administrativas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 10 inc. 1 lit. p",
+      "art. 11 inc. 1"
+    ],
+    "texto_fuente": "p) A que no se le trasladen las cargas administrativas y burocráticas que les corresponde asumir a los encargados o intervinientes en la prestación del servicio; [...] La atención de niños, niñas y adolescentes, mujeres en estado de embarazo, desplazados, víctimas de violencia y del conflicto armado, la población adulta mayor, personas que sufren de enfermedades huérfanas y personas en condición de discapacidad, gozarán de especial protección por parte del Estado. Su atención en salud no estará limitada por ningún tipo de restricción administrativa o económica.",
+    "pregunta": "Una mujer con 30 semanas de embarazo llega a una ESE para la ecografía obstétrica que su médico ordenó y que la ESE le había agendado para ese día. En el sistema, la autorización de su EPS aparece «en trámite» por un error de digitación en el código del procedimiento; la EPS tarda hasta tres días hábiles en corregir estos errores, y el contrato le permite glosar los servicios prestados sin autorización. El procedimiento interno dice que, en esos casos, la usuaria debe ir a la oficina de la EPS a corregir la orden. ¿Qué debe hacer el auxiliar de admisiones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Admitirla para la ecografía de hoy y encargarse, desde la ESE, de que la EPS corrija el código de la autorización.",
+        "explicacion": "Correcta. La atención de una mujer embarazada no puede limitarse por restricciones administrativas o económicas (Ley 1751, art. 11), así que el error en la autorización no aplaza la ecografía. Y la corrección es una carga administrativa de la ESE y la EPS, que no se traslada a la usuaria (art. 10 lit. p). El riesgo de glosa se resuelve entre la ESE y la EPS."
+      },
+      {
+        "id": "B",
+        "texto": "Darle una nueva cita prioritaria y pedirle que lleve la orden a la EPS para que corrijan el código de la autorización.",
+        "explicacion": "Incorrecta en los dos puntos: aplaza la atención de una gestante por un problema administrativo (art. 11) y le traslada el trámite de corrección (art. 10 lit. p). La prioridad en la nueva cita no compensa ninguno de los dos errores."
+      },
+      {
+        "id": "C",
+        "texto": "Admitirla para la ecografía de hoy y pedirle que lleve después la orden a la EPS para que corrijan el código errado.",
+        "explicacion": "Incorrecta. Acierta en no aplazar la ecografía, pero sigue trasladando a la usuaria la corrección de la orden, una carga administrativa que corresponde a la ESE y a la EPS (art. 10 lit. p)."
+      },
+      {
+        "id": "D",
+        "texto": "Encargarse, desde la ESE, de que la EPS corrija el código y darle una nueva cita prioritaria cuando llegue la autorización.",
+        "explicacion": "Incorrecta. Acierta en que la ESE asume el trámite, pero aplaza la ecografía de una gestante hasta que llegue la autorización. El riesgo de glosa no justifica limitar su atención por una restricción administrativa (art. 11)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la usuaria es una gestante y el problema es un error administrativo en la autorización. Regla: la atención de las mujeres embarazadas no puede limitarse por restricciones administrativas o económicas (Ley 1751, art. 11), y al usuario no se le trasladan las cargas administrativas que corresponden a quienes intervienen en la prestación (art. 10 lit. p). Conclusión: se practica la ecografía y la ESE gestiona la corrección con la EPS; aplazar la cita o enviar a la usuaria a la EPS incumple una de las dos reglas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Régimen jurídico de las ESE",
+    "subtema": "Régimen de contratación, estatuto de la junta y cláusulas exorbitantes",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 100 de 1993, Ley 1438 de 2011 y Ley 80 de 1993",
+    "articulos": [
+      "Ley 100 de 1993, art. 194",
+      "Ley 100 de 1993, art. 195 num. 6",
+      "Ley 1438 de 2011, art. 76 inc. 1",
+      "Ley 80 de 1993, art. 18 inc. 1"
+    ],
+    "texto_fuente": "constituyen una categoría especial de entidad pública descentralizada, con personería jurídica, patrimonio propio y autonomía administrativa [...] 6. En materia contractual se regirá por el derecho privado, pero podrá discrecionalmente utilizar las cláusulas exorbitantes previstas en el estatuto general de contratación de la administración pública. [...] respetando los principios de la actuación administrativa y la contratación pública. Para lo anterior la Junta Directiva deberá adoptar un estatuto de contratación de acuerdo con los lineamientos que defina el Ministerio de la Protección Social. [...] La caducidad es la estipulación en virtud de la cual si se presenta alguno de los hechos constitutivos de incumplimiento de las obligaciones a cargo del contratista, que afecte de manera grave y directa la ejecución del contrato y evidencie que puede conducir a su paralización, la entidad por medio de acto administrativo debidamente motivado lo dará por terminado y ordenará su liquidación en el estado en que se encuentre.",
+    "pregunta": "El gerente de una ESE departamental va a contratar el suministro de medicamentos para 2027 y quiere incluir la cláusula de caducidad, para poder darlo por terminado mediante acto administrativo si el proveedor incumple de forma grave. Pide al asesor jurídico un concepto sobre las reglas de selección aplicables y sobre si puede pactar esa cláusula. ¿Qué debe conceptuar el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debe usar las modalidades de selección de la Ley 1150, por ser una entidad pública descentralizada, y la cláusula es obligatoria.",
+        "explicacion": "Incorrecta. Aunque la ESE es una entidad pública descentralizada, la Ley 100 la somete en materia contractual al derecho privado (art. 195 num. 6), y las cláusulas exorbitantes, como la caducidad, son para ella discrecionales, no obligatorias."
+      },
+      {
+        "id": "B",
+        "texto": "Aplica el derecho privado según el manual que expida el gerente por resolución, y no puede pactar cláusulas exorbitantes.",
+        "explicacion": "Incorrecta en dos puntos: el estatuto de contratación lo adopta la junta directiva (Ley 1438, art. 76), y la ESE sí puede usar discrecionalmente las cláusulas exorbitantes del estatuto general (Ley 100, art. 195 num. 6), entre ellas la caducidad."
+      },
+      {
+        "id": "C",
+        "texto": "Aplica el derecho privado según el estatuto que adopte la junta directiva, y puede incluir esa cláusula si la juzga conveniente.",
+        "explicacion": "Correcta. La ESE se rige por el derecho privado en materia contractual y puede utilizar discrecionalmente las cláusulas exorbitantes del estatuto general (Ley 100, art. 195 num. 6), entre ellas la caducidad, que permite terminar el contrato por un incumplimiento grave del contratista (Ley 80, art. 18). Sus reglas internas están en el estatuto de contratación que adopta la junta directiva según los lineamientos del Ministerio (Ley 1438, art. 76)."
+      },
+      {
+        "id": "D",
+        "texto": "Debe usar las modalidades de la Ley 1150 para comprar medicamentos, aunque las cláusulas exorbitantes quedan a su discreción.",
+        "explicacion": "Incorrecta. Mezcla los dos regímenes: la facultad discrecional de pactar cláusulas exorbitantes es propia del régimen de derecho privado de las ESE, que seleccionan a sus contratistas según el estatuto de contratación de la junta."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: una ESE va a contratar un suministro y quiere pactar la caducidad, cláusula exorbitante que permite terminar el contrato por un incumplimiento grave del contratista (Ley 80, art. 18). Regla: la ESE es una entidad pública descentralizada (Ley 100, art. 194), pero en materia contractual se rige por el derecho privado y puede usar discrecionalmente las cláusulas exorbitantes del estatuto general (art. 195 num. 6); su estatuto de contratación lo adopta la junta directiva (Ley 1438, art. 76). Conclusión: derecho privado con el estatuto de la junta, y la cláusula es opcional.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Riesgo financiero de las ESE",
+    "subtema": "Categorización en riesgo alto por información no corregida",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 80 inc. 1",
+      "art. 80 inc. 3"
+    ],
+    "texto_fuente": "El Ministerio de la Protección Social determinará y comunicará a las direcciones departamentales, municipales y distritales de salud, a más tardar el 30 de mayo de cada año, el riesgo de las Empresas Sociales del Estado teniendo en cuenta sus condiciones de mercado, de equilibrio y viabilidad financiero, a partir de sus indicadores financieros [...] Cuando no se reciba la información utilizada para la categorización del riesgo de una Empresa Social del Estado o se detecte alguna imprecisión en esta y no sea corregida o entregada oportunamente, dicha empresa quedará categorizada en riesgo alto y deberá adoptar un programa de saneamiento fiscal y financiero, sin perjuicio de las investigaciones que se deban adelantar por parte de los organismos de vigilancia y control.",
+    "pregunta": "Al revisar la información financiera de una ESE municipal para la categorización anual del riesgo, el Ministerio de Salud encontró inconsistencias en los ingresos reportados y pidió corregirlas; la ESE no envió la corrección a tiempo. La gerente sostiene que, con sus estados financieros reales, la entidad tendría riesgo bajo, y pide al profesional de planeación un concepto sobre la situación en que queda la ESE. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Queda en riesgo alto y debe adoptar un programa de saneamiento fiscal y financiero, aunque sus cifras reales sean sanas.",
+        "explicacion": "Correcta. Cuando una imprecisión en la información para la categorización no se corrige oportunamente, la ESE queda en riesgo alto y debe adoptar un programa de saneamiento fiscal y financiero, sin perjuicio de las investigaciones (Ley 1438, art. 80)."
+      },
+      {
+        "id": "B",
+        "texto": "Conserva la categoría de riesgo del año anterior hasta que corrija la información y el Ministerio la vuelva a evaluar.",
+        "explicacion": "Incorrecta. La ley no prevé mantener la categoría anterior: la consecuencia de no corregir a tiempo es quedar en riesgo alto."
+      },
+      {
+        "id": "C",
+        "texto": "Queda en riesgo medio, porque una inconsistencia no corregida no demuestra por sí sola un desequilibrio financiero.",
+        "explicacion": "Incorrecta. La ley no exige probar el desequilibrio: la falta de corrección oportuna lleva directamente a la categoría de riesgo alto."
+      },
+      {
+        "id": "D",
+        "texto": "La categoriza la Superintendencia con los estados financieros reales, porque el Ministerio no cuenta con datos válidos.",
+        "explicacion": "Incorrecta. La categorización del riesgo la determina el Ministerio, y la ley regula expresamente qué pasa si la información no se corrige: la ESE queda en riesgo alto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el Ministerio detectó imprecisiones en la información y la ESE no las corrigió a tiempo. Regla: el art. 80 de la Ley 1438 dispone que, cuando no se recibe la información para categorizar el riesgo o una imprecisión no se corrige oportunamente, la ESE queda categorizada en riesgo alto y debe adoptar un programa de saneamiento fiscal y financiero, sin perjuicio de las investigaciones. Conclusión: riesgo alto y programa de saneamiento; las cifras reales no reemplazan la información no corregida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-013",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derecho fundamental a la salud",
+    "subtema": "Criterios de exclusión y prohibición de fraccionar servicios cubiertos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 15 inc. 2 lits. a, b, d y f",
+      "art. 15 inc. 3",
+      "art. 6 inc. 2 lit. a",
+      "art. 17 inc. 1"
+    ],
+    "texto_fuente": "En todo caso, los recursos públicos asignados a la salud no podrán destinarse a financiar servicios y tecnologías en los que se advierta alguno de los siguientes criterios: a) Que tengan como finalidad principal un propósito cosmético o suntuario no relacionado con la recuperación o mantenimiento de la capacidad funcional o vital de las personas; b) Que no exista evidencia científica sobre su seguridad y eficacia clínica; [...] d) Que su uso no haya sido autorizado por la autoridad competente; [...] f) Que tengan que ser prestados en el exterior. [...] Las decisiones de exclusión no podrán resultar en el fraccionamiento de un servicio de salud previamente cubierto, y ser contrarias al principio de integralidad e interculturalidad. [...] a) Universalidad. Los residentes en el territorio colombiano gozarán efectivamente del derecho fundamental a la salud en todas las etapas de la vida; [...] Se garantiza la autonomía de los profesionales de la salud para adoptar decisiones sobre el diagnóstico y tratamiento de los pacientes que tienen a su cargo. Esta autonomía será ejercida en el marco de esquemas de autorregulación, la ética, la racionalidad y la evidencia científica.",
+    "pregunta": "El Ministerio de Salud publicó para participación un borrador con cuatro exclusiones: (1) el blanqueamiento dental con fines solo estéticos; (2) un medicamento en una indicación para la que el Invima no ha autorizado su uso; (3) la anestesia general en la cirugía de hernia inguinal, cirugía que seguirá cubierta; y (4) un tratamiento que solo se presta en el exterior. El asesor de planeación de una ESE departamental debe enviar observaciones y señalar cuál de las exclusiones contraría la Ley 1751 de 2015. ¿Cuál debe señalar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La del blanqueamiento, porque solo pueden excluirse los servicios sin evidencia científica sobre su seguridad y eficacia.",
+        "explicacion": "Incorrecta. La falta de evidencia científica sobre seguridad y eficacia es solo uno de los criterios (art. 15 lit. b). Que la finalidad principal sea cosmética o suntuaria, sin relación con la capacidad funcional o vital, también lo es (lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "La del medicamento, porque la ley garantiza la autonomía del médico tratante para decidir el tratamiento de su paciente.",
+        "explicacion": "Incorrecta. La autonomía profesional se ejerce en el marco de la racionalidad y la evidencia científica (art. 17), y no obliga a financiar con recursos públicos un uso que la autoridad competente no ha autorizado, que es un criterio de exclusión (art. 15 lit. d)."
+      },
+      {
+        "id": "C",
+        "texto": "La del tratamiento en el exterior, porque los residentes en Colombia gozan del derecho a la salud de manera universal.",
+        "explicacion": "Incorrecta. La universalidad se refiere a los residentes en el territorio colombiano (art. 6 lit. a), y la ley prevé como criterio de exclusión que el servicio tenga que prestarse en el exterior (art. 15 lit. f)."
+      },
+      {
+        "id": "D",
+        "texto": "La de la anestesia, porque la cirugía que el plan mantiene no podría practicarse de forma completa sin ella.",
+        "explicacion": "Correcta. Las decisiones de exclusión no pueden fraccionar un servicio previamente cubierto ni ser contrarias a la integralidad (art. 15 inc. 3). Excluir la anestesia de una cirugía que sigue cubierta la deja incompleta."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: tres exclusiones encajan en criterios de la ley y una quita un elemento de una cirugía que sigue cubierta. Regla: el art. 15 de la Ley 1751 permite excluir, entre otros, lo cosmético o suntuario (lit. a), lo no autorizado por la autoridad competente (lit. d) y lo que deba prestarse en el exterior (lit. f), pero prohíbe que una exclusión fraccione un servicio previamente cubierto. La autonomía médica (art. 17) y la universalidad (art. 6) no anulan esos criterios. Conclusión: la exclusión contraria a la ley es la de la anestesia.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Plazos para la remoción del gerente por evaluación insatisfactoria",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 74 num. 74.4",
+      "art. 74 num. 74.5"
+    ],
+    "texto_fuente": "74.4 La decisión de la Junta Directiva tendrá recurso de reposición ante la misma junta y de apelación en el efecto suspensivo, ante el Superintendente Nacional de Salud, para resolver dichos recursos se contará con un término de quince días (15) hábiles. 74.5 Una vez cumplido el proceso establecido en el presente artículo y en firme el resultado de la evaluación y esta fuere insatisfactorio dicho resultado será causal de retiro del servicio del Director o Gerente, para lo cual la Junta Directiva dentro de los cinco (5) días hábiles siguientes a haber quedado en firme el resultado de la evaluación, deberá solicitar al nominador con carácter obligatorio para este, la remoción del Director o Gerente aun sin terminar su período, para lo cual el nominador deberá expedir el acto administrativo correspondiente dentro de los cinco (5) días hábiles siguientes, contra este acto procederán los recursos de ley.",
+    "pregunta": "La junta directiva de una ESE municipal calificó como insatisfactorio el cumplimiento del plan de gestión del gerente. El gerente interpuso los recursos y el Superintendente Nacional de Salud confirmó la calificación en apelación; con la notificación de esa decisión, el resultado quedó en firme el miércoles 3 de junio de 2026. La junta envió al alcalde la solicitud de remoción el último día del plazo legal, que se cuenta desde la firmeza; el plazo del alcalde para expedir el acto se cuenta desde esa solicitud. El asesor jurídico de la alcaldía debe indicar el último día para expedir el acto de remoción. En junio de 2026 son festivos los lunes 8, 15 y 29. ¿Cuál es ese día?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 16 de junio de 2026.",
+        "explicacion": "Incorrecta. Cuenta en días calendario los cinco días del alcalde (del 12 al 16 de junio). La ley habla de días hábiles: sin el fin de semana ni el festivo del 15, vencen el 19 de junio."
+      },
+      {
+        "id": "B",
+        "texto": "El miércoles 17 de junio de 2026.",
+        "explicacion": "Incorrecta. Suma bien los dos plazos de cinco días hábiles, pero toma como hábiles los festivos del 8 y el 15 de junio."
+      },
+      {
+        "id": "C",
+        "texto": "El viernes 19 de junio de 2026.",
+        "explicacion": "Correcta. La junta tenía cinco días hábiles desde la firmeza, hasta el jueves 11 de junio (el 8 es festivo). Desde su solicitud, el alcalde tiene los cinco días hábiles siguientes para expedir el acto: sin el festivo del 15, vencen el viernes 19 de junio (Ley 1438, art. 74.5)."
+      },
+      {
+        "id": "D",
+        "texto": "El lunes 6 de julio de 2026.",
+        "explicacion": "Incorrecta. Aplica 15 días hábiles desde la solicitud, que es el término para resolver los recursos contra la evaluación (art. 74.4), no el plazo del nominador para expedir el acto de remoción."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el resultado insatisfactorio quedó en firme el 3 de junio de 2026 y la junta pidió la remoción el último día de su plazo. Regla: el art. 74.5 de la Ley 1438 da a la junta 5 días hábiles desde la firmeza para pedir la remoción, que es obligatoria para el nominador, y a este los 5 días hábiles siguientes a la solicitud para expedir el acto. Cálculo: la junta tenía hasta el jueves 11 de junio (festivo el 8); desde ahí, 5 días hábiles sin el festivo del 15 llegan al viernes 19 de junio. Conclusión: 19 de junio de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-015",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Redes integradas de servicios de salud",
+    "subtema": "Articulación de la red en municipios no certificados",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 61 inc. 3",
+      "art. 62 inc. 1",
+      "art. 64 inc. 1"
+    ],
+    "texto_fuente": "Las Entidades Promotoras de Salud deberán garantizar, y ofrecer los servicios a sus afiliados de manera integral, continua, coordinada y eficiente, con portabilidad, calidad y oportunidad, a través de las redes. [...] Las entidades territoriales, municipios, distritos, departamentos y la Nación, según corresponda, en coordinación con las Entidades Promotoras de Salud a través de los Consejos Territoriales de Seguridad Social en Salud, organizarán y conformarán las redes integradas incluyendo prestadores públicos, privados y mixtos que presten los servicios de acuerdo con el Plan de Beneficios a su cargo. Las redes se habilitarán de acuerdo con la reglamentación que expida el Ministerio de la Protección Social, quien podrá delegar en los departamentos y distritos. [...] La articulación de la red estará a cargo de las entidades territoriales en coordinación con las Entidades Promotoras de Salud, a través de los Consejos Territoriales de la Seguridad Social en Salud; en el caso de los municipios no certificados la entidad territorial será el departamento",
+    "pregunta": "Una ESE de primer nivel atiende a la población de un municipio que no está certificado en salud. El alcalde ofreció que su secretaría de salud asuma la articulación de la ESE con los demás prestadores de la red integrada de servicios de salud de la zona. Antes de responder, el gerente pide a la profesional de planeación un concepto sobre a quién corresponde esa articulación. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al municipio, por medio de su secretaría de salud y en coordinación con las EPS que operan en su territorio.",
+        "explicacion": "Incorrecta. La articulación corresponde a las entidades territoriales, pero la ley precisa que, en los municipios no certificados, esa entidad territorial es el departamento (art. 64)."
+      },
+      {
+        "id": "B",
+        "texto": "Al departamento, en coordinación con las EPS y por medio del consejo territorial de seguridad social en salud.",
+        "explicacion": "Correcta. El art. 64 de la Ley 1438 asigna la articulación de la red a las entidades territoriales en coordinación con las EPS, a través de los consejos territoriales de seguridad social en salud, y dispone que en los municipios no certificados la entidad territorial es el departamento."
+      },
+      {
+        "id": "C",
+        "texto": "A cada EPS, que debe garantizar a sus afiliados los servicios de manera integral y continua a través de las redes.",
+        "explicacion": "Incorrecta. Las EPS deben garantizar los servicios a sus afiliados a través de las redes (art. 61), pero la articulación de la red está a cargo de la entidad territorial; las EPS participan en coordinación con ella (art. 64)."
+      },
+      {
+        "id": "D",
+        "texto": "Al Ministerio de Salud, que expide la reglamentación con la que se habilitan las redes integradas de servicios.",
+        "explicacion": "Incorrecta. El Ministerio reglamenta la habilitación de las redes y puede delegarla en departamentos y distritos (art. 62), pero la ley asigna la articulación de la red a las entidades territoriales (art. 64)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el municipio no está certificado en salud. Regla: el art. 64 de la Ley 1438 asigna la articulación de la red integrada a las entidades territoriales, en coordinación con las EPS a través de los consejos territoriales de seguridad social en salud, y precisa que en los municipios no certificados esa entidad territorial es el departamento. Que las EPS garanticen los servicios por medio de las redes (art. 61) y que el Ministerio reglamente su habilitación (art. 62) no les da la articulación. Conclusión: corresponde al departamento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Aprobación del plan de gestión por vencimiento del plazo de la junta",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 73 num. 73.2",
+      "art. 73 num. 73.3",
+      "art. 73 num. 73.4"
+    ],
+    "texto_fuente": "73.2 La Junta Directiva de la respectiva Empresa Social del Estado deberá aprobar, el plan de gestión dentro de los quince (15) días hábiles siguientes a la presentación del plan de gestión. 73.3 El gerente podrá presentar observaciones al plan de gestión aprobado en los 5 días hábiles siguientes a su aprobación, y se resolverá dentro de los diez (10) días hábiles siguientes. 73.4 En caso de que la Junta Directiva no apruebe el proyecto de plan de gestión durante el término aquí establecido, el plan de gestión inicialmente presentado por el Director o Gerente se entenderá aprobado.",
+    "pregunta": "El gerente de una ESE departamental presentó a la junta directiva su proyecto de plan de gestión el martes 10 de marzo de 2026. La junta lo estudió en una sesión del lunes 6 de abril de 2026 y aprobó una versión con metas financieras más exigentes que las propuestas. El gerente pide al asesor jurídico un concepto sobre cuál es el plan con el que será evaluado. Entre el 10 de marzo y el 6 de abril de 2026 fueron festivos el 23 de marzo y el 2 y 3 de abril. ¿Qué debe conceptuar el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La versión de la junta, porque los días de Semana Santa no se cuentan y su plazo vencía el 8 de abril.",
+        "explicacion": "Incorrecta. Para la junta no hay vacancia de Semana Santa: solo se descuentan los fines de semana y los festivos. Su plazo vencía el 1 de abril."
+      },
+      {
+        "id": "B",
+        "texto": "El proyecto del gerente, porque el término de la junta terminó el 1 de abril sin que ella se pronunciara.",
+        "explicacion": "Correcta. La junta tenía 15 días hábiles desde la presentación (Ley 1438, art. 73.2). Contados desde el 11 de marzo, sin fines de semana ni el festivo del 23 de marzo, vencieron el 1 de abril. Como no aprobó en ese término, se entiende aprobado el plan inicialmente presentado por el gerente (art. 73.4)."
+      },
+      {
+        "id": "C",
+        "texto": "La versión de la junta, porque una aprobación tardía es válida y el gerente aún puede presentarle observaciones.",
+        "explicacion": "Incorrecta. Las observaciones del art. 73.3 se refieren a un plan aprobado en término. Vencido el plazo sin aprobación, la ley da por aprobado el plan presentado por el gerente."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno hasta que la Superintendencia Nacional de Salud evalúe el plan, porque la junta no decidió a tiempo.",
+        "explicacion": "Incorrecta. Confunde esta regla con la del art. 74.6, que da intervención a la Superintendencia cuando el gerente no presenta el plan o el informe. Si la junta no aprueba a tiempo, se entiende aprobado el plan del gerente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el proyecto se presentó el 10 de marzo de 2026 y la junta solo se pronunció el 6 de abril. Regla: el art. 73 de la Ley 1438 da a la junta 15 días hábiles siguientes a la presentación para aprobar el plan, y si no lo aprueba en ese término se entiende aprobado el plan presentado por el gerente (73.4). Cálculo: sin fines de semana ni el festivo del 23 de marzo, el término venció el miércoles 1 de abril. Conclusión: rige el proyecto del gerente.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Junta directiva de las ESE",
+    "subtema": "Participación del gobernador y desempate de las votaciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 70 num. 70.1",
+      "art. 70 par. 2",
+      "art. 70 par. 3"
+    ],
+    "texto_fuente": "70.1 El jefe de la administración departamental, distrital o municipal o su delegado, quien la presidirá. [...] PARÁGRAFO 2o. La Junta Directiva de las Empresas Sociales del Estado del nivel municipal que hagan parte de convenios o planes de desempeño suscritos o que se llegaren a suscribir entre el departamento y la Nación, tendrá además de los miembros ya definidos en el presente artículo, tendrán como miembro de la Junta Directiva al gobernador del departamento o su delegado. PARÁGRAFO 3o. Cuando en una sesión de Junta Directiva exista empate para la toma de decisiones, el mismo se resolverá con el voto de quien preside la Junta Directiva.",
+    "pregunta": "Una ESE municipal de primer nivel hace parte de un convenio de desempeño suscrito entre el departamento y la Nación, por lo que su junta directiva tiene seis miembros. En la sesión en que se votó el estatuto de contratación, votaron en contra el delegado del alcalde, el director local de salud y uno de los representantes de los empleados; votaron a favor el delegado del gobernador, el representante de los usuarios y el otro representante de los empleados. La profesional que actúa como secretaria de la junta debe dejar en el acta el resultado de la votación. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobado, porque en las ESE con convenio de desempeño el voto del delegado del gobernador define los empates.",
+        "explicacion": "Incorrecta. El gobernador o su delegado es un miembro adicional de la junta, pero no la preside. El empate lo resuelve el voto de quien preside, que es el alcalde o su delegado."
+      },
+      {
+        "id": "B",
+        "texto": "No aprobado, porque en el empate pesa el voto del delegado del alcalde, que es quien dirige la junta directiva.",
+        "explicacion": "Correcta. La junta de una ESE municipal la preside el jefe de la administración municipal o su delegado (Ley 1438, art. 70.1), y los empates se resuelven con el voto de quien preside (par. 3). El delegado del alcalde votó en contra."
+      },
+      {
+        "id": "C",
+        "texto": "Sin decisión, porque ninguna postura obtuvo la mayoría y la votación debe repetirse en una nueva sesión.",
+        "explicacion": "Incorrecta. La ley resuelve el empate en la misma sesión con el voto de quien preside la junta; no ordena repetir la votación."
+      },
+      {
+        "id": "D",
+        "texto": "Aprobado, porque cuando la junta no logra decidir se entiende aprobada la propuesta presentada por el gerente.",
+        "explicacion": "Incorrecta. Traslada a la votación la regla del plan de gestión (art. 73.4), que se aplica cuando la junta no lo aprueba dentro del término. En un empate decide el voto de quien preside."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la votación quedó 3 a 3 y el delegado del alcalde votó en contra. Regla: en las ESE municipales con convenio de desempeño entre el departamento y la Nación, el gobernador o su delegado es miembro adicional (Ley 1438, art. 70 par. 2), pero la junta la preside el jefe de la administración municipal o su delegado (70.1), y los empates se resuelven con el voto de quien preside (par. 3). Conclusión: el estatuto no fue aprobado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Junta directiva de las ESE",
+    "subtema": "Inhabilidad por participación de parientes en entidades del sector salud",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 71"
+    ],
+    "texto_fuente": "Los miembros de las juntas directivas de las Empresas Sociales del Estado no podrán ser representante legal, miembros de los organismos directivos, directores, socios, o administradores de entidades del sector salud, ni tener participación en el capital de estas en forma directa o a través de su cónyuge, compañero o compañera permanente o parientes hasta el cuarto grado de consanguinidad, segundo de afinidad o único civil o participar a través de interpuesta persona",
+    "pregunta": "Para la designación del representante de los usuarios en la junta directiva de una ESE, la asesora jurídica revisa a tres aspirantes. Ninguno de ellos es directivo, socio ni accionista de entidades del sector salud, pero algunos parientes suyos sí lo son, a título propio: un primo hermano de Luis (cuarto grado de consanguinidad) tiene a su nombre el 10% de las acciones de una IPS privada; una cuñada de Sandra (segundo grado de afinidad) es socia, con aportes propios, de una IPS privada de laboratorio clínico; y un tío de la esposa de Hernán (tercer grado de afinidad) es el socio mayoritario de una clínica privada. ¿Quién puede integrar la junta sin incurrir en inhabilidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo Hernán, porque el tercer grado de afinidad queda por fuera del límite que fija la ley.",
+        "explicacion": "Correcta. La inhabilidad cubre la participación en el capital a través de parientes hasta el cuarto grado de consanguinidad y el segundo de afinidad (Ley 1438, art. 71). Quedan inhabilitados Luis (cuarto de consanguinidad) y Sandra (segundo de afinidad); Hernán no, porque su pariente está en tercer grado de afinidad."
+      },
+      {
+        "id": "B",
+        "texto": "Luis y Hernán, porque la inhabilidad por consanguinidad solo llega hasta el segundo grado.",
+        "explicacion": "Incorrecta. Confunde este límite con el de otras inhabilidades. Para los miembros de la junta de una ESE, la consanguinidad cuenta hasta el cuarto grado, así que el primo hermano de Luis lo inhabilita."
+      },
+      {
+        "id": "C",
+        "texto": "Sandra y Hernán, porque por afinidad la inhabilidad solo alcanza a los parientes en primer grado.",
+        "explicacion": "Incorrecta. Para la afinidad, la ley llega hasta el segundo grado, no solo al primero, así que la cuñada de Sandra la inhabilita."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque el límite del cuarto grado se aplica también a los parientes por afinidad.",
+        "explicacion": "Incorrecta. Extiende a la afinidad el límite de la consanguinidad. La ley distingue: cuarto grado de consanguinidad y segundo de afinidad, así que el tío de la esposa de Hernán, en tercer grado de afinidad, no lo inhabilita."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los parientes con participación propia en entidades del sector salud son un primo hermano (cuarto grado de consanguinidad), una cuñada (segundo de afinidad) y un tío de la esposa (tercero de afinidad). Regla: el art. 71 de la Ley 1438 impide a los miembros de la junta tener participación en el capital de entidades del sector salud, directamente o a través de parientes hasta el cuarto grado de consanguinidad, segundo de afinidad o único civil. Conclusión: Luis y Sandra están inhabilitados; Hernán no.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Régimen jurídico de las ESE",
+    "subtema": "Prestación pública de servicios de salud solo a través de ESE",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1122 de 2007",
+    "articulos": [
+      "art. 26 inc. 1",
+      "art. 31"
+    ],
+    "texto_fuente": "La prestación de servicios de salud por parte de las instituciones públicas solo se hará a través de Empresas Sociales del Estado (ESE) que podrán estar constituidas por una o varias sedes o unidades prestadoras de servicios de salud. En todo caso, toda unidad prestadora de servicios de salud de carácter público deberá hacer parte de una Empresa Social del Estado [...] En ningún caso se podrán prestar servicios asistenciales de salud directamente por parte de los Entes Territoriales.",
+    "pregunta": "El alcalde de un municipio quiere abrir un centro de salud en un corregimiento alejado y propone que lo administre directamente la secretaría municipal de salud, con médicos y enfermeras de la planta del municipio y recursos del presupuesto municipal. Pide a la profesional jurídica de la secretaría un concepto sobre la viabilidad de ese esquema. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es viable si la secretaría departamental de salud habilita los servicios del centro antes de que empiece a funcionar.",
+        "explicacion": "Incorrecta. La habilitación no remedia el problema de fondo: los entes territoriales no pueden prestar directamente servicios asistenciales (Ley 1122, art. 31)."
+      },
+      {
+        "id": "B",
+        "texto": "No es viable así: el centro debe ser sede o unidad de una ESE, pues el municipio no puede atender por sí mismo.",
+        "explicacion": "Correcta. La prestación pública de servicios de salud solo se hace a través de ESE, y toda unidad prestadora pública debe hacer parte de una (Ley 1122, art. 26). Además, los entes territoriales no pueden prestar directamente servicios asistenciales (art. 31)."
+      },
+      {
+        "id": "C",
+        "texto": "Es viable de forma transitoria, mientras el concejo crea una ESE municipal que asuma después el centro de salud.",
+        "explicacion": "Incorrecta. La prohibición de prestar servicios asistenciales directamente no tiene excepciones transitorias: el centro debe hacer parte de una ESE desde el comienzo."
+      },
+      {
+        "id": "D",
+        "texto": "Es viable si el municipio firma un contrato con una EPS para atender en el centro de salud a sus afiliados.",
+        "explicacion": "Incorrecta. El contrato con una EPS no cambia quién presta el servicio: seguiría siendo el municipio, lo que la ley prohíbe."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el municipio quiere prestar servicios de salud directamente desde su secretaría. Regla: la Ley 1122 dispone que la prestación pública de servicios de salud solo se hace a través de ESE y que toda unidad prestadora pública debe hacer parte de una ESE (art. 26), y prohíbe a los entes territoriales prestar directamente servicios asistenciales (art. 31). Conclusión: el centro debe funcionar como sede o unidad de una ESE.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1122_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-SAL-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derecho fundamental a la salud",
+    "subtema": "Integralidad: alcance de un servicio cubierto en caso de duda",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 8 incs. 1 y 2",
+      "art. 16"
+    ],
+    "texto_fuente": "Los servicios y tecnologías de salud deberán ser suministrados de manera completa para prevenir, paliar o curar la enfermedad, con independencia del origen de la enfermedad o condición de salud, del sistema de provisión, cubrimiento o financiación definido por el legislador. [...] En los casos en los que exista duda sobre el alcance de un servicio o tecnología de salud cubierto por el Estado, se entenderá que este comprende todos los elementos esenciales para lograr su objetivo médico respecto de la necesidad específica de salud diagnosticada. [...] Los conflictos o discrepancias en diagnósticos y/o alternativas terapéuticas generadas a partir de la atención, serán dirimidos por las juntas médicas de los prestadores de servicios de salud",
+    "pregunta": "Una ESE facturó a una EPS la cirugía de catarata de un afiliado, servicio que la EPS reconoce como cubierto. La EPS pagó la cirugía, pero glosó el lente intraocular implantado, que tiene registro sanitario vigente, con el argumento de que el lente no aparece mencionado por separado en el listado de cobertura. La profesional de auditoría de cuentas médicas de la ESE debe proyectar la respuesta a la glosa. ¿Qué debe sostener?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la glosa procede y el lente debe cobrarse al paciente, porque lo que no está listado se entiende excluido.",
+        "explicacion": "Incorrecta. Invierte la regla: cuando hay duda sobre el alcance de un servicio cubierto, la ley ordena entender que comprende todos los elementos esenciales para lograr su objetivo (Ley 1751, art. 8)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la diferencia debe resolverla la junta médica de la ESE, porque es una discrepancia sobre la alternativa terapéutica.",
+        "explicacion": "Incorrecta. Las juntas médicas dirimen discrepancias sobre diagnósticos o alternativas terapéuticas (art. 16). Aquí no se discute el tratamiento, sino el alcance de la cobertura de un servicio."
+      },
+      {
+        "id": "C",
+        "texto": "Que la glosa procede, y que la ESE debe pedir al Ministerio que incluya el lente por el mecanismo de ampliación.",
+        "explicacion": "Incorrecta. No hace falta ampliar los beneficios: el lente ya está comprendido en la cirugía cubierta, porque sin él no se logra el objetivo de esta."
+      },
+      {
+        "id": "D",
+        "texto": "Que la glosa no procede, porque sin el lente la cirugía no cumpliría su propósito para el paciente que fue operado.",
+        "explicacion": "Correcta. Según el principio de integralidad, los servicios deben suministrarse de manera completa y, si hay duda sobre el alcance de uno cubierto, se entiende que comprende todos los elementos esenciales para lograr su objetivo médico (Ley 1751, art. 8). El lente es uno de ellos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la cirugía está cubierta y la duda es si incluye el lente, que no aparece listado por separado. Regla: el art. 8 de la Ley 1751 (integralidad) ordena suministrar los servicios de manera completa y dispone que, si hay duda sobre el alcance de un servicio cubierto, se entiende que comprende todos los elementos esenciales para lograr su objetivo médico. Conclusión: el lente hace parte de la cirugía cubierta y la glosa no procede.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

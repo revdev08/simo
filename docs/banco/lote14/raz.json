@@ -1,0 +1,902 @@
+[
+  {
+    "id": "TC-RAZ-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Promedio ponderado: nota mínima para aprobar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "En una institución educativa, la nota final de cada área se calcula con los cuatro períodos del año, que pesan así:\n\nPeríodo | Peso en la nota final\nPrimero | 20%\nSegundo | 20%\nTercero | 30%\nCuarto | 30%\n\nLas notas de cada período van de 1,0 a 5,0 y se registran con un decimal. La nota final se calcula con todos sus decimales, sin redondear, y el área se aprueba si es de 3,0 o más. Una estudiante lleva 2,4 en el primer período, 3,0 en el segundo y 2,8 en el tercero. ¿Cuál es la nota mínima que necesita en el cuarto período para aprobar el área?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1,1",
+        "explicacion": "Incorrecta. Calcula lo que le falta a la nota final (3,0 − 1,92 = 1,08), pero no lo divide entre el peso del cuarto período. Esos 1,08 puntos de la nota final exigen una nota de 1,08 ÷ 0,30 = 3,6 en el período."
+      },
+      {
+        "id": "B",
+        "texto": "3,3",
+        "explicacion": "Incorrecta. Compensa como si el cuarto período pesara lo mismo que los tres anteriores juntos: el promedio ponderado de los tres primeros es 1,92 ÷ 0,70 ≈ 2,74, le faltan 0,26 para 3,0 y suma esos 0,26 a 3,0. Con 3,3, la nota final sería 1,92 + 0,99 = 2,91."
+      },
+      {
+        "id": "C",
+        "texto": "3,6",
+        "explicacion": "Correcta. Lo acumulado vale 0,20 × 2,4 + 0,20 × 3,0 + 0,30 × 2,8 = 0,48 + 0,60 + 0,84 = 1,92. Faltan 3,0 − 1,92 = 1,08 puntos, que con un peso de 0,30 exigen 1,08 ÷ 0,30 = 3,6. Con esa nota, la final queda exactamente en 3,0; con 3,5 sería 1,92 + 1,05 = 2,97, y como no se redondea, no alcanza."
+      },
+      {
+        "id": "D",
+        "texto": "3,8",
+        "explicacion": "Incorrecta. Supone que los cuatro períodos pesan lo mismo: 4 × 3,0 − (2,4 + 3,0 + 2,8) = 3,8. Como el cuarto período pesa 30% y no 25%, la nota que necesita es menor."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los períodos no pesan lo mismo (el cuarto vale 30%) y la nota final no se redondea. Regla: la nota final es la suma de cada nota multiplicada por su peso. Cálculo: acumulado = 0,48 + 0,60 + 0,84 = 1,92; faltan 1,08 puntos de nota final; 1,08 ÷ 0,30 = 3,6 (con 3,5 la final sería 2,97). Conclusión: necesita 3,6. Promediar sin pesos da 3,8, y olvidar dividir entre el peso da 1,1.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Puntos porcentuales frente a variación de una tasa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "La secretaría de educación de un municipio publicó estos datos de deserción en sus colegios oficiales:\n\nAño | Matrícula | Estudiantes que desertaron\n2024 | 12.500 | 1.000\n2025 | 13.000 | 780\n\nUn periodista quiere resumir cómo cambió la tasa de deserción (desertores ÷ matrícula) entre 2024 y 2025. ¿Cuál de estas afirmaciones es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La tasa bajó 2 puntos porcentuales, lo que equivale a una reducción del 25%.",
+        "explicacion": "Correcta. La tasa pasó de 1.000 ÷ 12.500 = 8% a 780 ÷ 13.000 = 6%. La resta da 2 puntos porcentuales y, frente al 8% de partida, esa caída es 2 ÷ 8 = 25%."
+      },
+      {
+        "id": "B",
+        "texto": "La tasa bajó un 2%, ya que pasó del 8% en 2024 al 6% en 2025.",
+        "explicacion": "Incorrecta. Confunde puntos porcentuales con porcentaje. Del 8% al 6% hay 2 puntos; una caída del 2% habría dejado la tasa en 7,84% (8 × 0,98)."
+      },
+      {
+        "id": "C",
+        "texto": "La tasa bajó un 22%, lo mismo que el número de estudiantes que desertaron.",
+        "explicacion": "Incorrecta. Los desertores sí bajaron un 22% (de 1.000 a 780), pero la matrícula creció de 12.500 a 13.000. Una tasa depende también del denominador, así que no cambia en la misma proporción que el numerador."
+      },
+      {
+        "id": "D",
+        "texto": "La tasa bajó 2 puntos porcentuales, es decir, un 33,3% frente al 6% de 2025.",
+        "explicacion": "Incorrecta. Los 2 puntos porcentuales están bien calculados, pero la variación relativa se mide frente al valor de partida, el 8% de 2024 (2 ÷ 8 = 25%), no frente a la tasa final (2 ÷ 6 ≈ 33,3%)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la matrícula cambió entre los dos años, así que hay que calcular las tasas. Cálculo: 2024, 1.000 ÷ 12.500 = 8%; 2025, 780 ÷ 13.000 = 6%. Regla: la diferencia entre dos porcentajes se expresa en puntos porcentuales (2 puntos); la variación relativa se calcula sobre el valor inicial (2 ÷ 8 = 25%). Conclusión: A. Decir «bajó un 2%» confunde puntos con porcentaje, el 22% es la caída de los desertores y no de la tasa, y el 33,3% toma como base la tasa final.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Media frente a mediana con un dato extremo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Una inspección de policía registró el tiempo de espera, en minutos, de los nueve usuarios que atendió una mañana:\n\n6, 7, 7, 8, 9, 10, 11, 12 y 92\n\nEl caso de 92 minutos fue el de un usuario que tuvo que esperar a que llegara un intérprete. El informe del día dice: «La espera promedio fue de 18 minutos, así que un usuario típico esperó cerca de 18 minutos». ¿Qué se puede concluir de esa afirmación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es válida: como la media usa los nueve datos, es el mejor resumen de la espera de un usuario.",
+        "explicacion": "Incorrecta. Que la media use todos los datos es justamente lo que la vuelve sensible a un valor extremo: el caso de 92 minutos la lleva a 18, por encima de lo que esperaron 8 de los 9 usuarios."
+      },
+      {
+        "id": "B",
+        "texto": "Es errada en el cálculo: el promedio de los nueve tiempos es 9 minutos y no 18 minutos.",
+        "explicacion": "Incorrecta. Confunde la media con la mediana. Los nueve tiempos suman 162 y 162 ÷ 9 = 18: el cálculo del informe es correcto; lo errado es leerlo como la espera típica."
+      },
+      {
+        "id": "C",
+        "texto": "Es engañosa: si se quita el caso de 92 minutos, los otros ocho tiempos promedian 7,8 minutos.",
+        "explicacion": "Incorrecta. Divide entre un número de datos equivocado: los ocho tiempos restantes suman 70 y 70 ÷ 8 = 8,75 minutos. El 7,8 sale de dividir 70 entre 9, como si el dato excluido siguiera contando."
+      },
+      {
+        "id": "D",
+        "texto": "Es engañosa: un dato extremo infla la media; la mediana, de 9 minutos, describe mejor lo típico.",
+        "explicacion": "Correcta. Ocho de los nueve usuarios esperaron 12 minutos o menos. La mediana (el quinto valor de la lista ordenada) es 9 minutos y no se altera por el caso de 92; la media de 18, sí."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: un solo tiempo (92 minutos) es muy distinto de los demás, que van de 6 a 12. Regla: la media es sensible a los valores extremos; la mediana, no. Cálculo: media = 162 ÷ 9 = 18; mediana = 9 (quinto valor ordenado). Conclusión: la cifra de 18 es correcta como media, pero no describe la espera de un usuario típico; la mediana de 9 minutos lo hace mejor.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Probabilidad condicional en una tabla de doble entrada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "La coordinación académica de un colegio cruzó la asistencia a las tutorías de refuerzo de matemáticas con el resultado del primer semestre de los 120 estudiantes de noveno grado:\n\nResultado | Asistió a tutorías | No asistió | Total\nAprobó | 52 | 36 | 88\nReprobó | 8 | 24 | 32\nTotal | 60 | 60 | 120\n\nSi se escoge al azar a uno de los estudiantes que reprobaron, ¿cuál es la probabilidad de que NO haya asistido a las tutorías?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "20%",
+        "explicacion": "Incorrecta. Divide los 24 estudiantes que reprobaron sin asistir entre los 120 del grado. Esa es la probabilidad de que un estudiante cualquiera cumpla las dos condiciones; la pregunta parte de que el escogido ya está entre los que reprobaron."
+      },
+      {
+        "id": "B",
+        "texto": "40%",
+        "explicacion": "Incorrecta. Invierte la condición: 24 ÷ 60 es la probabilidad de reprobar entre quienes no asistieron. Aquí el grupo de referencia son los 32 que reprobaron."
+      },
+      {
+        "id": "C",
+        "texto": "50%",
+        "explicacion": "Incorrecta. Ignora la condición: 60 de 120 es la proporción de todo el grado que no asistió. Entre los que reprobaron, la proporción de quienes no asistieron es mayor."
+      },
+      {
+        "id": "D",
+        "texto": "75%",
+        "explicacion": "Correcta. El grupo de referencia son los 32 estudiantes que reprobaron, y de ellos 24 no asistieron: 24 ÷ 32 = 0,75."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la escogencia se hace solo entre los que reprobaron, así que el denominador es la fila «Reprobó» (32). Regla: probabilidad condicional = casos favorables dentro del grupo ÷ total del grupo. Cálculo: 24 ÷ 32 = 75%. Errores típicos: dividir entre el total del grado (20%), invertir la condición (24 ÷ 60 = 40%) o ignorarla (60 ÷ 120 = 50%).",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Asociación frente a causalidad (variable de confusión)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Una secretaría de educación comparó el puntaje promedio de 40 colegios en una prueba externa, agrupados por su dotación de computadores y por su tipo de jornada:\n\nDotación | Jornada | Colegios | Puntaje promedio\nBaja | Regular | 15 | 240\nBaja | Única | 5 | 262\nAlta | Regular | 5 | 241\nAlta | Única | 15 | 263\n\nUn concejal afirma que, como los colegios con dotación alta superan en 12 puntos a los de dotación baja, entregar computadores a estos últimos les subiría el puntaje unos 12 puntos. ¿Qué se puede concluir de los datos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se sigue: con dotación alta el promedio es 257,5 y con dotación baja es 245,5, es decir, 12 puntos más.",
+        "explicacion": "Incorrecta. Las cuentas son correctas, pero esa diferencia mezcla dos factores: 15 de los 20 colegios con dotación alta tienen jornada única, y 15 de los 20 con dotación baja tienen jornada regular. Una diferencia entre grupos no muestra por sí sola el efecto de una de sus características."
+      },
+      {
+        "id": "B",
+        "texto": "Se sigue en parte: el aumento de 12 puntos se lograría en los colegios que tienen jornada única.",
+        "explicacion": "Incorrecta. En la jornada única, la dotación alta supera a la baja por 1 punto (263 frente a 262), no por 12. Aplica la diferencia global a un subgrupo en el que no se observa."
+      },
+      {
+        "id": "C",
+        "texto": "No se sigue: el efecto sería mayor, de 23 puntos, que es la distancia entre el mejor y el peor grupo.",
+        "explicacion": "Incorrecta. Compara dotación alta con jornada única (263) contra dotación baja con jornada regular (240): esos grupos difieren en dotación y en jornada a la vez, así que la brecha de 23 puntos no se le puede atribuir a la dotación."
+      },
+      {
+        "id": "D",
+        "texto": "No se sigue: a igual jornada difieren en 1 punto; la mayoría con dotación alta tiene jornada única.",
+        "explicacion": "Correcta. Entre colegios de jornada regular la diferencia es 241 − 240 = 1 punto, y entre los de jornada única, 263 − 262 = 1 punto. La brecha de 12 aparece porque la mayoría de los colegios con dotación alta tiene jornada única, que es la de puntajes más altos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los colegios con dotación alta son, en su mayoría, de jornada única, y los de dotación baja, de jornada regular. Cálculo: promedios por dotación, ponderados por colegios: 257,5 (alta) y 245,5 (baja), 12 puntos. Pero a igual jornada la diferencia es de 1 punto (241 − 240 y 263 − 262). Regla: una asociación entre grupos no prueba un efecto si los grupos difieren en otro factor. Conclusión: los datos no sostienen un aumento de 12 puntos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Tamaño de la muestra",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Un colegio probó una plataforma de lectura con un grupo piloto. De los 10 estudiantes que la usaron, 8 mejoraron su puntaje en la prueba de comprensión del período; de los 100 estudiantes del mismo grado que no la usaron, mejoraron 75. Con estos datos, el rector concluye que la plataforma funciona y propone comprarla para los 600 estudiantes del colegio. ¿Qué tan sólida es esa conclusión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es débil: con 10 estudiantes, cada uno pesa 10 puntos, el doble de la ventaja de 5 puntos del piloto.",
+        "explicacion": "Correcta. En el piloto, un solo estudiante equivale a 10 puntos porcentuales: si hubieran mejorado 7 en lugar de 8, el grupo quedaría en 70%, por debajo del 75% del resto. Una ventaja menor que el peso de un estudiante no permite concluir que la plataforma funciona."
+      },
+      {
+        "id": "B",
+        "texto": "Es sólida: el 80% de quienes usaron la plataforma mejoró, frente al 75% de quienes no la usaron.",
+        "explicacion": "Incorrecta. Compara bien las proporciones (8 ÷ 10 y 75 ÷ 100), pero ignora que una de ellas sale de solo 10 estudiantes; con una muestra tan pequeña, la diferencia de 5 puntos puede deberse al azar."
+      },
+      {
+        "id": "C",
+        "texto": "Es débil: 2 de los 10 estudiantes que usaron la plataforma no mejoraron su puntaje.",
+        "explicacion": "Incorrecta. Llega a «débil» por una razón equivocada. Para que un método funcione no hace falta que todos mejoren; lo que cuenta es la comparación con el otro grupo, en el que tampoco mejoró el 25%. La debilidad está en que la ventaja de 5 puntos sale de un grupo de solo 10 estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "Es débil: mejoraron 8 estudiantes con la plataforma y 75 sin ella, así que les fue mejor sin usarla.",
+        "explicacion": "Incorrecta. Compara cantidades de grupos de distinto tamaño (10 y 100). En proporción, el piloto mejoró más (80% frente a 75%); la debilidad está en el tamaño del piloto, no en que le haya ido peor."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el grupo piloto tiene solo 10 estudiantes. Cálculo: 8 ÷ 10 = 80% frente a 75 ÷ 100 = 75%, una ventaja de 5 puntos. Regla: en un grupo de 10, cada estudiante mueve el resultado 10 puntos porcentuales; con 7 mejoras en lugar de 8, el piloto quedaría por debajo del otro grupo. Conclusión: la diferencia es demasiado pequeña para el tamaño de la muestra y no sostiene que la plataforma funcione. Que 2 de los 10 no mejoraran o que 8 sea menos que 75 no son razones válidas para calificarla de débil.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Tasa base en una prueba de tamizaje",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Un colegio de 1.000 estudiantes aplicará una prueba de tamizaje para detectar dificultades lectoras. La orientadora reunió estos datos:\n\n- El 5% de los estudiantes del colegio tiene la dificultad.\n- De los estudiantes que la tienen, la prueba señala al 90%.\n- De los que no la tienen, la prueba señala por error al 10%.\n\n¿Qué porcentaje de los estudiantes señalados por la prueba tendrá realmente la dificultad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "32,1%",
+        "explicacion": "Correcta. Tienen la dificultad 50 estudiantes (5% de 1.000) y la prueba señala a 45 de ellos (90%). De los 950 restantes señala por error a 95 (10%). En total señala a 140, y de ellos 45 la tienen: 45 ÷ 140 ≈ 32,1%."
+      },
+      {
+        "id": "B",
+        "texto": "35,7%",
+        "explicacion": "Incorrecta. Pone en el numerador a los 50 estudiantes con la dificultad, incluidos los 5 que la prueba no señala. Solo cuentan los 45 que están entre los señalados: 45 ÷ 140."
+      },
+      {
+        "id": "C",
+        "texto": "47,4%",
+        "explicacion": "Incorrecta. Divide los 45 señalados que tienen la dificultad entre los 95 señalados por error. La proporción pedida compara esos 45 con el total de señalados (140), no con los señalados por error."
+      },
+      {
+        "id": "D",
+        "texto": "90,0%",
+        "explicacion": "Incorrecta. Es el porcentaje de estudiantes con la dificultad que la prueba detecta, no el de señalados que la tienen. Ignora que los estudiantes sin la dificultad son muchos más (950) y aportan más señalados por error (95) que aciertos (45)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la dificultad es poco frecuente (5%), así que los señalados por error pesan mucho. Cálculo sobre 1.000 estudiantes: con dificultad 50, señalados 45; sin dificultad 950, señalados por error 95; total de señalados 140. Regla: la proporción pedida es aciertos ÷ total de señalados. Conclusión: 45 ÷ 140 ≈ 32,1%. Responder 90% es ignorar la tasa base.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Conversión de unidades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Una sede educativa entrega a cada estudiante 250 ml de leche al día como parte del Programa de Alimentación Escolar. Esta semana atenderá a 384 estudiantes durante 5 días, y la leche le llega en bolsas de 1,2 litros. ¿Cuántas bolsas necesita la sede para la semana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "400 bolsas",
+        "explicacion": "Correcta. Cada día se reparten 384 × 0,25 = 96 litros y, en 5 días, 480 litros. Como cada bolsa trae 1,2 litros, se necesitan 480 ÷ 1,2 = 400 bolsas."
+      },
+      {
+        "id": "B",
+        "texto": "480 bolsas",
+        "explicacion": "Incorrecta. Confunde litros con bolsas: 480 es el total de litros de la semana. Falta dividirlo entre los 1,2 litros que trae cada bolsa."
+      },
+      {
+        "id": "C",
+        "texto": "576 bolsas",
+        "explicacion": "Incorrecta. Multiplica los 480 litros por 1,2 en lugar de dividirlos. Si cada bolsa trae más de un litro, se necesitan menos bolsas que litros, no más."
+      },
+      {
+        "id": "D",
+        "texto": "4.000 bolsas",
+        "explicacion": "Incorrecta. Convierte mal los mililitros: toma 250 ml como 2,5 litros (divide entre 100 y no entre 1.000). Así obtiene 4.800 litros y 4.000 bolsas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la ración está en mililitros y la bolsa en litros. Regla: 1 litro = 1.000 ml, así que 250 ml = 0,25 litros. Cálculo: 384 × 0,25 × 5 = 480 litros; 480 ÷ 1,2 = 400 bolsas. Conclusión: 400 bolsas.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Lectura de una ejecución presupuestal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "La oficina financiera de una secretaría de cultura presentó este corte de la ejecución presupuestal (cifras en millones de pesos):\n\nRubro | Apropiación definitiva | Compromisos | Pagos\nFormación artística | 40 | 36 | 30\nMantenimiento de escenarios | 60 | 45 | 27\nEventos culturales | 20 | 8 | 8\nServicios públicos | 30 | 30 | 25\n\n¿Qué porcentaje del total comprometido se había pagado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "60,0%",
+        "explicacion": "Incorrecta. Divide los pagos (90) entre la apropiación (150). Esa es la ejecución de pagos frente al presupuesto; la pregunta toma como base lo comprometido (119)."
+      },
+      {
+        "id": "B",
+        "texto": "75,6%",
+        "explicacion": "Correcta. Los compromisos suman 36 + 45 + 8 + 30 = 119 y los pagos, 30 + 27 + 8 + 25 = 90. Sobre el total comprometido: 90 ÷ 119 ≈ 75,6%."
+      },
+      {
+        "id": "C",
+        "texto": "79,3%",
+        "explicacion": "Incorrecta. Es la proporción de la apropiación que está comprometida (119 ÷ 150). Mide otra etapa de la ejecución: no dice cuánto de lo comprometido ya se pagó."
+      },
+      {
+        "id": "D",
+        "texto": "81,7%",
+        "explicacion": "Incorrecta. Promedia los porcentajes de cada rubro (83,3%, 60%, 100% y 83,3%) como si pesaran igual. Así, Eventos culturales, con 8 millones comprometidos, cuenta lo mismo que Mantenimiento de escenarios, con 45."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la base pedida es lo comprometido, no la apropiación. Regla: el porcentaje global se calcula con los totales, no promediando los porcentajes de cada rubro. Cálculo: pagos 90 ÷ compromisos 119 ≈ 75,6%. Conclusión: B. Dividir entre la apropiación da 60%, y promediar los rubros da 81,7%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Conteo con conjuntos que se traslapan",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "En una encuesta a los 60 docentes de un colegio, 24 dijeron que usan una plataforma de tareas, 21 que usan un aula virtual y 12 que usan las dos herramientas. ¿Cuántos docentes no usan ninguna de las dos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3 docentes",
+        "explicacion": "Incorrecta. Resta también los 12 que usan las dos herramientas: 60 − 24 − 21 − 12 = 3. Esos 12 ya se descontaron dos veces al restar 24 y 21; lo correcto es devolverlos una vez, no restarlos de nuevo."
+      },
+      {
+        "id": "B",
+        "texto": "15 docentes",
+        "explicacion": "Incorrecta. Suma 24 + 21 = 45 sin descontar a los 12 que usan las dos, que así quedan contados dos veces: 60 − 45 = 15."
+      },
+      {
+        "id": "C",
+        "texto": "27 docentes",
+        "explicacion": "Correcta. Usan al menos una herramienta 24 + 21 − 12 = 33 docentes (los 12 que usan las dos se cuentan una sola vez). No usan ninguna 60 − 33 = 27."
+      },
+      {
+        "id": "D",
+        "texto": "33 docentes",
+        "explicacion": "Incorrecta. Es el número de docentes que usan al menos una herramienta. La pregunta pide los que no usan ninguna: 60 − 33 = 27."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 12 docentes están en los dos grupos. Regla: para contar a quienes están en al menos uno de dos grupos se suman los grupos y se resta una vez la parte común. Cálculo: 24 + 21 − 12 = 33 usan al menos una; 60 − 33 = 27 no usan ninguna. Conclusión: 27 docentes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Conteo de parejas sin orden",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "El grupo de 8 monitores de un grado debe escoger a 2 de sus integrantes para que asistan juntos, con las mismas funciones, a una mesa de trabajo de la alcaldía. ¿Cuántas parejas distintas se pueden formar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "16 parejas",
+        "explicacion": "Incorrecta. Multiplica los 8 monitores por los 2 cupos. Ese producto no cuenta parejas: cada monitor puede ir con cualquiera de los otros 7."
+      },
+      {
+        "id": "B",
+        "texto": "28 parejas",
+        "explicacion": "Correcta. Hay 8 × 7 = 56 elecciones ordenadas, pero cada pareja aparece dos veces (Ana con Luis y Luis con Ana). Como los dos tienen las mismas funciones, el orden no importa: 56 ÷ 2 = 28."
+      },
+      {
+        "id": "C",
+        "texto": "56 parejas",
+        "explicacion": "Incorrecta. Cuenta el orden: 8 × 7 trata como distintas la pareja Ana-Luis y la pareja Luis-Ana. Ese conteo serviría si hubiera dos cargos distintos, como principal y suplente."
+      },
+      {
+        "id": "D",
+        "texto": "64 parejas",
+        "explicacion": "Incorrecta. Calcula 8 × 8, lo que permite escoger dos veces al mismo monitor y, además, cuenta el orden."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los dos escogidos tienen las mismas funciones, así que el orden no importa. Regla: el número de parejas que se forman con n personas es n × (n − 1) ÷ 2. Cálculo: 8 × 7 ÷ 2 = 28. Conclusión: 28 parejas; 56 sería el conteo si los dos cargos fueran distintos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Ritmo de trabajo y conversión de tiempo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Un auxiliar de archivo digitaliza 45 folios cada 18 minutos. Debe digitalizar un fondo documental de 1.200 folios y mantiene ese ritmo sin interrupciones. ¿Cuánto tiempo necesita para terminar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4 horas y 48 minutos",
+        "explicacion": "Incorrecta. Llega bien a 480 minutos, pero los lee como 4,8 horas (divide entre 100) y luego pasa 0,8 horas a 48 minutos. Una hora tiene 60 minutos: 480 ÷ 60 = 8 horas."
+      },
+      {
+        "id": "B",
+        "texto": "8 horas",
+        "explicacion": "Correcta. El ritmo es 45 ÷ 18 = 2,5 folios por minuto. Para 1.200 folios: 1.200 ÷ 2,5 = 480 minutos, y 480 ÷ 60 = 8 horas."
+      },
+      {
+        "id": "C",
+        "texto": "26 horas y 40 minutos",
+        "explicacion": "Incorrecta. Divide 1.200 entre 45 y obtiene unas 26,7 tandas de trabajo, pero las toma como horas. Cada tanda dura 18 minutos: 26,7 × 18 ≈ 480 minutos."
+      },
+      {
+        "id": "D",
+        "texto": "50 horas",
+        "explicacion": "Incorrecta. Multiplica los folios por el ritmo (1.200 × 2,5 = 3.000) en lugar de dividir, y toma el resultado como minutos. Con 2,5 folios por minuto, el tiempo es folios ÷ ritmo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el ritmo viene en folios por cada 18 minutos y la respuesta se pide en horas. Regla: tiempo = cantidad ÷ ritmo, y 1 hora = 60 minutos. Cálculo: 45 ÷ 18 = 2,5 folios por minuto; 1.200 ÷ 2,5 = 480 minutos = 8 horas. Conclusión: 8 horas.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Gráfico con eje truncado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "El informe de gestión de un colegio incluye un gráfico de barras con la matrícula de los últimos tres años. El eje vertical empieza en 900 estudiantes, no en cero, y las barras muestran estos valores:\n\nAño | Matrícula\n2023 | 950\n2024 | 1.000\n2025 | 1.050\n\nEn el gráfico, la barra de 2025 se ve tres veces más alta que la de 2023, y un docente concluye que la matrícula se triplicó en dos años. ¿Qué se puede concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es correcta: si la barra de 2025 triplica a la de 2023, la matrícula también se triplicó.",
+        "explicacion": "Incorrecta. La altura visible de cada barra es lo que pasa de 900: 50 en 2023 y 150 en 2025. Esas alturas sí están en razón de 3 a 1, pero las matrículas son 950 y 1.050."
+      },
+      {
+        "id": "B",
+        "texto": "Es errada: la matrícula creció un 9,5% entre 2023 y 2025.",
+        "explicacion": "Incorrecta. Divide el aumento (100) entre la matrícula de 2025 (1.050). La variación se calcula sobre el año de partida, 2023."
+      },
+      {
+        "id": "C",
+        "texto": "Es errada: la matrícula creció un 10,3% entre 2023 y 2025.",
+        "explicacion": "Incorrecta. Suma las variaciones de cada año (5,3% y 5,0%). Cada una se calcula sobre una base distinta, así que no se pueden sumar: hay que comparar directamente 2025 con 2023."
+      },
+      {
+        "id": "D",
+        "texto": "Es errada: la matrícula creció un 10,5% entre 2023 y 2025.",
+        "explicacion": "Correcta. El aumento fue de 1.050 − 950 = 100 estudiantes, y frente a los 950 de 2023 equivale a 100 ÷ 950 ≈ 10,5%. La barra parece el triple porque el eje empieza en 900."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el eje vertical empieza en 900, así que las barras solo muestran lo que excede esa cifra (50 y 150). Regla: la variación se calcula con los valores reales y sobre el valor inicial. Cálculo: (1.050 − 950) ÷ 950 ≈ 10,5%. Conclusión: la matrícula no se triplicó; creció un 10,5%. Sumar las variaciones anuales (10,3%) o dividir entre 2025 (9,5%) son errores de base.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Razón de estudiantes por docente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Una sede educativa tiene 640 estudiantes y 20 docentes. La secretaría de educación quiere que la sede tenga, como máximo, 25 estudiantes por docente, sin cambiar la matrícula. ¿Cuántos docentes adicionales necesita la sede, como mínimo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "5 docentes",
+        "explicacion": "Incorrecta. Redondea hacia abajo: 640 ÷ 25 = 25,6 y lo deja en 25 docentes, 5 más. Con 25 docentes quedarían 25,6 estudiantes por docente, por encima del máximo."
+      },
+      {
+        "id": "B",
+        "texto": "6 docentes",
+        "explicacion": "Correcta. Se necesitan al menos 640 ÷ 25 = 25,6 docentes, es decir, 26 (25 no alcanzan y no se puede vincular una fracción de docente). Como ya hay 20, faltan 6. Con 26 quedan unos 24,6 estudiantes por docente."
+      },
+      {
+        "id": "C",
+        "texto": "7 docentes",
+        "explicacion": "Incorrecta. Resta las razones: hoy hay 640 ÷ 20 = 32 estudiantes por docente y la meta es 25. La diferencia de 7 son estudiantes por docente, no docentes."
+      },
+      {
+        "id": "D",
+        "texto": "26 docentes",
+        "explicacion": "Incorrecta. Es el número total de docentes que debe tener la sede. La pregunta pide los adicionales: 26 − 20 = 6."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la razón máxima es de 25 estudiantes por docente y la sede ya tiene 20 docentes. Regla: docentes necesarios = estudiantes ÷ razón máxima, redondeado hacia arriba. Cálculo: 640 ÷ 25 = 25,6, es decir, 26 docentes; 26 − 20 = 6. Conclusión: 6 docentes adicionales.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Porcentaje inverso: valor antes de un aumento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "El presupuesto de ingresos del Fondo de Servicios Educativos de un colegio para 2026 es de $138 millones, un 15% más que el de 2025. ¿Cuál fue el presupuesto de 2025?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$117,3 millones",
+        "explicacion": "Incorrecta. Le quita el 15% a la cifra de 2026 (138 × 0,85). El 15% se calculó sobre el presupuesto de 2025, que es menor, así que restarlo sobre 138 quita de más."
+      },
+      {
+        "id": "B",
+        "texto": "$120,0 millones",
+        "explicacion": "Correcta. Si 2026 es un 15% más que 2025, entonces 138 = 1,15 × P. Despejando, P = 138 ÷ 1,15 = 120. Comprobación: 120 + 15% de 120 = 120 + 18 = 138."
+      },
+      {
+        "id": "C",
+        "texto": "$123,0 millones",
+        "explicacion": "Incorrecta. Resta 15 millones, como si el 15% fueran 15 millones de pesos. Un porcentaje es una parte de una base, no una cantidad fija."
+      },
+      {
+        "id": "D",
+        "texto": "$158,7 millones",
+        "explicacion": "Incorrecta. Aplica el aumento hacia adelante: 138 × 1,15 sería el presupuesto de 2027 si se repitiera el crecimiento, no el valor anterior."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el 15% de aumento se calcula sobre el presupuesto de 2025, que es la incógnita. Regla: si un valor creció un 15%, el nuevo es 1,15 veces el anterior; para volver atrás se divide entre 1,15. Cálculo: 138 ÷ 1,15 = 120. Conclusión: $120 millones; restar el 15% de 138 ($117,3 millones) es el error más común.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Porcentaje de un remanente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Un colegio cuenta con $200 millones para inversión. El consejo directivo aprobó destinar el 40% a mantenimiento de la planta física y, de lo que quede después de eso, el 25% a material pedagógico. ¿Cuánto dinero queda para los demás proyectos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$30 millones",
+        "explicacion": "Incorrecta. Es lo que se asigna a material pedagógico (25% de 120). La pregunta pide lo que queda después de las dos asignaciones."
+      },
+      {
+        "id": "B",
+        "texto": "$70 millones",
+        "explicacion": "Incorrecta. Calcula el 25% sobre los 200 millones (50) y no sobre lo que quedaba (120), lo que equivale a sumar 40% + 25% = 65% del total. El 25% se aplica al remanente."
+      },
+      {
+        "id": "C",
+        "texto": "$90 millones",
+        "explicacion": "Correcta. Mantenimiento: 40% de 200 = 80, y quedan 120. Material pedagógico: 25% de 120 = 30. Para los demás proyectos: 120 − 30 = 90."
+      },
+      {
+        "id": "D",
+        "texto": "$120 millones",
+        "explicacion": "Incorrecta. Descuenta solo el mantenimiento y olvida restar la asignación de material pedagógico."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el 25% se aplica a «lo que quede» después del mantenimiento, no al total. Regla: porcentajes con bases distintas no se suman. Cálculo: 200 − 80 = 120; 25% de 120 = 30; 120 − 30 = 90. Conclusión: $90 millones (el 45% del total), no $70 millones.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Composición del total frente a tasa de cada grupo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "En un colegio, el 60% de los estudiantes que reprobaron el año pertenece a la jornada de la tarde. La matrícula y los resultados por jornada fueron:\n\nJornada | Matriculados | Reprobaron\nMañana | 300 | 40\nTarde | 700 | 60\n\nUn directivo concluye que los estudiantes de la tarde reprueban más que los de la mañana. ¿Qué se puede concluir de los datos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se sigue: la tarde aporta 60 de los 100 reprobados, más que los 40 de la mañana.",
+        "explicacion": "Incorrecta. Compara cantidades de reprobados entre jornadas de distinto tamaño. La tarde tiene más reprobados porque tiene más del doble de estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Se sigue: en la tarde reprueba el 60% de los estudiantes y en la mañana el 40%.",
+        "explicacion": "Incorrecta. Confunde la composición de los reprobados (el 60% son de la tarde) con la tasa de reprobación de cada jornada. En la tarde no reprueba el 60% de sus estudiantes, sino 60 de 700."
+      },
+      {
+        "id": "C",
+        "texto": "No se sigue: en las dos jornadas reprueba el 10% de los estudiantes matriculados.",
+        "explicacion": "Incorrecta. El 10% es la tasa del colegio entero (100 de 1.000). Aplicarla a cada jornada ignora las filas de la tabla, que muestran tasas distintas."
+      },
+      {
+        "id": "D",
+        "texto": "No se sigue: en la tarde reprueba el 8,6% y en la mañana el 13,3% de los matriculados.",
+        "explicacion": "Correcta. Mañana: 40 ÷ 300 ≈ 13,3%; tarde: 60 ÷ 700 ≈ 8,6%. La tarde aporta más reprobados solo porque tiene más estudiantes; en proporción, reprueba menos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la jornada de la tarde tiene 700 de los 1.000 estudiantes. Regla: para comparar grupos de distinto tamaño se usan tasas (reprobados ÷ matriculados de cada grupo), no la composición del total. Cálculo: mañana 40 ÷ 300 ≈ 13,3%; tarde 60 ÷ 700 ≈ 8,6%. Conclusión: la afirmación del directivo no se sigue; la tarde reprueba en menor proporción.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Estimación para verificar una cifra",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "El informe mensual de la línea telefónica de atención de una entidad afirma que en el mes se atendieron 12.000 llamadas. La línea tiene 3 operadores con jornada de 8 horas, funcionó 22 días y cada llamada dura en promedio 6 minutos. Cada operador atiende una sola llamada a la vez y no hay otro canal que las conteste. ¿Qué se puede concluir de la cifra del informe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No es posible: aun sin pausas, en el mes caben como máximo 5.280 llamadas.",
+        "explicacion": "Correcta. Los 3 operadores disponen de 3 × 8 × 60 = 1.440 minutos por día; a 6 minutos por llamada son 240 llamadas diarias y, en 22 días, 5.280. Atender 12.000 exigiría 72.000 minutos, más del doble del tiempo disponible."
+      },
+      {
+        "id": "B",
+        "texto": "No es posible: la capacidad máxima del mes es de 1.760 llamadas, muy lejos de las 12.000.",
+        "explicacion": "Incorrecta. Llega a la misma conclusión con un cálculo que omite a dos de los tres operadores: 8 × 60 ÷ 6 × 22 = 1.760 es la capacidad de uno solo."
+      },
+      {
+        "id": "C",
+        "texto": "Es posible: son unas 545 llamadas al día, una cantidad que cabe en tres jornadas de 8 horas.",
+        "explicacion": "Incorrecta. Reparte las llamadas por día (12.000 ÷ 22 ≈ 545), pero no comprueba el tiempo: 545 llamadas de 6 minutos ocupan unos 3.270 minutos diarios, frente a los 1.440 que suman los tres operadores."
+      },
+      {
+        "id": "D",
+        "texto": "Es posible: los 3 operadores suman 31.680 minutos en el mes, más que las 12.000 llamadas.",
+        "explicacion": "Incorrecta. Compara minutos con número de llamadas. Cada llamada ocupa 6 minutos, así que 12.000 llamadas requieren 72.000 minutos, más del doble de los 31.680 disponibles."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: cada llamada ocupa en promedio 6 minutos de un operador, y hay 3 operadores de 8 horas durante 22 días. Cálculo: tiempo disponible = 3 × 480 × 22 = 31.680 minutos; capacidad = 31.680 ÷ 6 = 5.280 llamadas. Regla: una cifra reportada debe caber en la capacidad del servicio. Conclusión: 12.000 llamadas (72.000 minutos) no son posibles con esos recursos, así que la cifra debe revisarse.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Cálculo de horarios",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Un docente aplicará una prueba de tres secciones que duran 35, 40 y 25 minutos. Entre una sección y la siguiente habrá una pausa de 10 minutos. Si la prueba empieza a las 7:50 a. m., ¿a qué hora termina?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "9:10 a. m.",
+        "explicacion": "Incorrecta. Suma bien 120 minutos, pero los toma como 1 hora y 20 minutos. 120 minutos son 2 horas."
+      },
+      {
+        "id": "B",
+        "texto": "9:30 a. m.",
+        "explicacion": "Incorrecta. Suma solo la duración de las secciones (100 minutos) y olvida las pausas."
+      },
+      {
+        "id": "C",
+        "texto": "9:50 a. m.",
+        "explicacion": "Correcta. Las secciones suman 35 + 40 + 25 = 100 minutos y hay 2 pausas (entre la primera y la segunda, y entre la segunda y la tercera), que suman 20 minutos. En total, 120 minutos = 2 horas: de 7:50 a 9:50 a. m."
+      },
+      {
+        "id": "D",
+        "texto": "10:00 a. m.",
+        "explicacion": "Incorrecta. Cuenta tres pausas, una por sección. Con tres secciones solo hay dos espacios entre ellas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las pausas van entre secciones, así que con tres secciones hay dos pausas. Cálculo: 100 minutos de secciones + 20 minutos de pausas = 120 minutos = 2 horas. Conclusión: si empieza a las 7:50 a. m., termina a las 9:50 a. m.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RAZ-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Razonamiento Lógico y Cuantitativo",
+    "tema": "Razonamiento Cuantitativo",
+    "subtema": "Probabilidad simple",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "En una actividad de bienestar, la coordinación sorteará un premio entre los 45 estudiantes de un curso, y todos tienen la misma probabilidad de ganar. De esos 45 estudiantes, 18 practican algún deporte en el colegio. ¿Cuál es la probabilidad de que el ganador NO practique deporte en el colegio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "40%",
+        "explicacion": "Incorrecta. Es la probabilidad de que el ganador sí practique deporte (18 ÷ 45). La pregunta es por el caso contrario."
+      },
+      {
+        "id": "B",
+        "texto": "50%",
+        "explicacion": "Incorrecta. Supone que, como hay dos posibilidades (practica o no practica), cada una tiene la misma probabilidad. Los dos grupos no son del mismo tamaño: 27 estudiantes no practican deporte y 18 sí."
+      },
+      {
+        "id": "C",
+        "texto": "60%",
+        "explicacion": "Correcta. No practican deporte 45 − 18 = 27 estudiantes. La probabilidad es 27 ÷ 45 = 0,6, es decir, 60%."
+      },
+      {
+        "id": "D",
+        "texto": "66,7%",
+        "explicacion": "Incorrecta. Divide los 18 que practican entre los 27 que no practican. Esa es una razón entre dos grupos; la probabilidad compara los casos favorables con el total de estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: hay 45 estudiantes con la misma probabilidad de ganar; 18 practican deporte, así que 27 no lo practican. Regla: probabilidad = casos favorables ÷ casos posibles; los dos resultados (practica o no) no son igual de probables, porque los grupos tienen distinto tamaño. Cálculo: 27 ÷ 45 = 0,6. Conclusión: 60%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

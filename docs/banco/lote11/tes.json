@@ -1,0 +1,1091 @@
+[
+  {
+    "id": "TC-TES-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Clasificación del PAC con recursos de la Nación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.7.2.4"
+    ],
+    "texto_fuente": "El programa anual mensualizado de caja con recursos de la Nación se clasificará así: a) Funcionamiento: Gastos de personal, gastos generales, transferencias corrientes y transferencias de capital. b) Servicio de la deuda pública: Deuda interna y externa. c) Gastos de inversión.",
+    "pregunta": "Mónica, técnica de tesorería de un departamento administrativo del orden nacional, consolida la solicitud de PAC con recursos de la Nación para marzo. Las áreas le reportaron estas necesidades de pago, en millones de pesos: sueldos y contribuciones de la planta, 820; vigilancia, aseo y servicios públicos, 140; transferencias corrientes a una entidad del sector, 60; una transferencia de capital a un fondo, 30; intereses de un crédito externo, 90, y pagos de un proyecto de inversión, 400. ¿Qué valor debe registrar en el renglón de funcionamiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$960 millones, porque las transferencias corrientes y las de capital se programan en un renglón aparte.",
+        "explicacion": "Incorrecta. Deja por fuera las transferencias, pero el reglamento las ubica dentro del funcionamiento, tanto las corrientes como las de capital. El PAC con recursos de la Nación tiene tres renglones: funcionamiento, servicio de la deuda e inversión."
+      },
+      {
+        "id": "B",
+        "texto": "$1.020 millones, porque la transferencia de capital se programa junto con los gastos de inversión.",
+        "explicacion": "Incorrecta. Confunde la transferencia de capital con la inversión. El art. 2.8.1.7.2.4 incluye las transferencias de capital en el funcionamiento."
+      },
+      {
+        "id": "C",
+        "texto": "$1.050 millones, porque abarca el personal, los gastos generales y las dos clases de transferencias.",
+        "explicacion": "Correcta. El funcionamiento comprende gastos de personal (820), gastos generales (140), transferencias corrientes (60) y transferencias de capital (30): 1.050. Los intereses del crédito externo van a servicio de la deuda y el proyecto, a inversión."
+      },
+      {
+        "id": "D",
+        "texto": "$1.140 millones, porque los intereses del crédito externo también se pagan como funcionamiento.",
+        "explicacion": "Incorrecta. Los intereses de un crédito externo son servicio de la deuda pública (deuda externa), que en el PAC es un renglón distinto del funcionamiento."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la solicitud mezcla personal, gastos generales, transferencias corrientes y de capital, intereses de deuda externa e inversión. Regla: el art. 2.8.1.7.2.4 del Decreto 1068 clasifica el PAC con recursos de la Nación en funcionamiento (gastos de personal, gastos generales, transferencias corrientes y de capital), servicio de la deuda (interna y externa) y gastos de inversión. Cálculo: 820 + 140 + 60 + 30 = 1.050. Conclusión: funcionamiento, $1.050 millones; los $90 millones van a deuda y los $400 millones a inversión.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-002",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Pago a beneficiarios por abono en cuenta en el Sistema de Cuenta Única Nacional",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.1.9",
+      "art. 2.3.1.10",
+      "art. 2.3.2.3"
+    ],
+    "texto_fuente": "El Banco de la República actuará como único banco agente para la implementación de la Cuenta Única Nacional, de acuerdo con la relación contractual que para el efecto se establezca. [...] Todos los pagos a beneficiarios originados en los órganos con cargo a los recursos del Presupuesto General de la Nación, deberán ser realizados por la Dirección General de Crédito Público y Tesoro Nacional mediante abono en cuenta, a través del sistema ACH del banco agente. [...] La Dirección General de Crédito Público y Tesoro Nacional hará la programación diaria de giros con base en la información registrada por las Unidades Ejecutoras en el Sistema Integrado de Información Financiera - SIIF.",
+    "pregunta": "Pedro, auxiliar administrativo de la tesorería de un ministerio, atiende en la ventanilla a un contratista, persona natural. Su cuenta de cobro ya tiene la obligación registrada en el SIIF y hay PAC disponible para pagarla. El contratista pide que le entreguen un cheque, porque no quiere esperar la transferencia, y pregunta quién le hará el pago. ¿Qué debe explicarle Pedro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la Dirección General de Crédito Público y Tesoro Nacional puede girarle un cheque, si el ordenador del gasto lo pide por escrito.",
+        "explicacion": "Incorrecta. Los pagos a beneficiarios con cargo al Presupuesto General de la Nación los hace la Dirección General de Crédito Público y Tesoro Nacional mediante abono en cuenta (art. 2.3.1.10). No se giran en cheque, aunque lo pida el ordenador del gasto."
+      },
+      {
+        "id": "B",
+        "texto": "Que la Dirección General de Crédito Público y Tesoro Nacional se lo abona en su cuenta, a través del ACH del Banco de la República.",
+        "explicacion": "Correcta. Todos los pagos a beneficiarios con cargo al Presupuesto General de la Nación los hace la Dirección General de Crédito Público y Tesoro Nacional mediante abono en cuenta, a través del sistema ACH del banco agente (art. 2.3.1.10), que es el Banco de la República (art. 2.3.1.9). El giro se programa con lo que el ministerio registró en el SIIF (art. 2.3.2.3)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la tesorería del ministerio se lo transfiere por ACH desde su cuenta autorizada en el banco comercial que maneja sus pagos.",
+        "explicacion": "Incorrecta. El pago no lo hace la tesorería del ministerio ni pasa por un banco comercial: lo hace la Dirección General de Crédito Público y Tesoro Nacional a través del sistema ACH del banco agente (art. 2.3.1.10), que es el Banco de la República (art. 2.3.1.9)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el ministerio le consigna desde su cuenta de recaudo, porque los giros del Tesoro por ACH se reservan para la nómina de planta.",
+        "explicacion": "Incorrecta. El abono en cuenta a cargo de la Dirección General de Crédito Público y Tesoro Nacional cubre todos los pagos a beneficiarios con cargo al Presupuesto General de la Nación, no solo la nómina; el ministerio no paga desde sus propias cuentas."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la obligación está registrada en el SIIF y el pago es con cargo al Presupuesto General de la Nación. Regla: todos los pagos a beneficiarios con cargo a esos recursos los hace la Dirección General de Crédito Público y Tesoro Nacional mediante abono en cuenta, a través del sistema ACH del banco agente (art. 2.3.1.10 del Decreto 1068), que es el Banco de la República (art. 2.3.1.9); los giros se programan con lo registrado en el SIIF (art. 2.3.2.3). Conclusión: no hay cheque; el pago llega por abono en su cuenta.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Giro de la oficina central a las seccionales y prohibición de invertir los recursos de la Nación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.2.7",
+      "art. 2.3.2.8 incs. 1 y 2"
+    ],
+    "texto_fuente": "los recursos de la Nación que entregue el Ministerio de Hacienda y Crédito Público, - Dirección General de Crédito Público y Tesoro Nacional-, a las entidades ejecutoras, no podrán utilizarse para la constitución de depósitos de ahorro y a término, ni a la suscripción de ningún tipo de activos financieros. [...] Los recursos que formen parte del Presupuesto Nacional, girados por la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público, no podrán mantenerse en cuentas corrientes AUTORIZADAS por más de cinco (5) días promedio mensual, contados a partir de la fecha de los giros respectivos, sin perjuicio de aquellos recursos correspondientes a cheques entregados al beneficiario y no cobrados. En el caso de aquellos órganos que hacen giros a sus oficinas regionales, los cinco (5) días de que trata el inciso anterior se contarán de la siguiente manera: La oficina central deberá hacer el giro a las seccionales a más tardar el día hábil siguiente a aquel en que recibió la transferencia de los recursos de la Dirección General de Crédito Público y Tesoro Nacional.",
+    "pregunta": "Laura, técnica de tesorería de la oficina central de una entidad nacional con seccionales, maneja la cuenta corriente autorizada que recibe los recursos de la Nación. El viernes 9 de octubre de 2026, la Dirección General de Crédito Público y Tesoro Nacional transfirió a esa cuenta los recursos para los pagos que las seccionales harán entre el 20 y el 23 de octubre. La tesorera le propone constituir con ellos un depósito a término de diez días y girarlos a las seccionales al vencimiento. El lunes 12 de octubre de 2026 es festivo. ¿Qué debe responder Laura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe girarlos a las seccionales a más tardar el lunes 19 de octubre, sin constituir el depósito a término.",
+        "explicacion": "Incorrecta. Cuenta cinco días hábiles por el límite de permanencia de los recursos en la cuenta autorizada (inc. 1 del art. 2.3.2.8). Pero cuando hay seccionales, la oficina central debe girarles a más tardar el día hábil siguiente al recibo."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe girarlos a las seccionales a más tardar el martes 13 de octubre, sin constituir el depósito a término.",
+        "explicacion": "Correcta. La oficina central debe girar a las seccionales a más tardar el día hábil siguiente a aquel en que recibió la transferencia (art. 2.3.2.8 inc. 2). Recibió el viernes 9; el sábado, el domingo y el lunes 12 (festivo) no son hábiles, así que el plazo vence el martes 13. Además, los recursos de la Nación no pueden usarse para constituir depósitos a término (art. 2.3.2.7)."
+      },
+      {
+        "id": "C",
+        "texto": "Que el depósito es viable si vence antes de los pagos de las seccionales, y que debe girarles los recursos al vencimiento.",
+        "explicacion": "Incorrecta. Los recursos de la Nación no pueden destinarse a depósitos de ahorro o a término, aunque el dinero esté disponible cuando las seccionales lo necesiten (art. 2.3.2.7). Además, el giro a las seccionales no puede esperar diez días."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede constituir el depósito hasta el martes 13 de octubre y ese día girarles los recursos con sus rendimientos.",
+        "explicacion": "Incorrecta. Acierta en la fecha del giro, pero la prohibición de constituir depósitos a término con recursos de la Nación no depende del plazo del depósito (art. 2.3.2.7)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la oficina central recibió los recursos el viernes 9 de octubre de 2026, y el lunes 12 es festivo. Regla: la oficina central debe girar a las seccionales a más tardar el día hábil siguiente al recibo (art. 2.3.2.8 inc. 2 del Decreto 1068), y los recursos de la Nación no pueden usarse para depósitos de ahorro o a término (art. 2.3.2.7). Cálculo: después del viernes 9 vienen el sábado, el domingo y el festivo del 12; el siguiente día hábil es el martes 13. Conclusión: girar a más tardar el 13, sin depósito.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Cuentas exceptuadas de autorización y registro: caja menor y cuentas en el exterior",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.2.5"
+    ],
+    "texto_fuente": "Se denominan CUENTAS AUTORIZADAS las cuentas en las que los órganos del orden nacional de la Administración Pública manejan recursos del Presupuesto General de la Nación excluyendo los ingresos propios de los establecimientos públicos. La autorización correspondiente será impartida por la Dirección General de Crédito Público y Tesoro Nacional. [...] Se exceptúan de la autorización y registro establecidos en el presente artículo las siguientes cuentas, que serán responsabilidad de los funcionarios encargados de su manejo: [...] 3. Las cuentas en que se manejen recursos de caja menor. 4. Las cuentas radicadas en el exterior. En este caso, el órgano titular deberá mantener informada a la Dirección General de Crédito Público y Tesoro Nacional sobre las aperturas y cancelaciones de cuentas.",
+    "pregunta": "Sergio, técnico de tesorería de un ministerio, debe abrir dos cuentas bancarias: una para manejar la caja menor de una nueva dirección territorial y otra en un banco del exterior, para los gastos de una oficina comercial que el ministerio abrirá fuera del país. El coordinador le pide preparar para ambas la solicitud de autorización ante la Dirección General de Crédito Público y Tesoro Nacional, firmada por el ordenador del gasto y el tesorero. ¿Qué debe advertirle Sergio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las dos necesitan esa autorización y que, después, su apertura y su cierre se informan a esa Dirección.",
+        "explicacion": "Incorrecta. Aunque manejen recursos del presupuesto, las cuentas de caja menor y las radicadas en el exterior están exceptuadas de la autorización y el registro (art. 2.3.2.5). El deber de informar aperturas y cancelaciones es solo para las del exterior."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo la del exterior la necesita y que, de la de caja menor, la apertura y el cierre se informan a esa Dirección.",
+        "explicacion": "Incorrecta. Invierte la regla: la cuenta en el exterior también está exceptuada de autorización, y el deber de mantener informada a la Dirección sobre aperturas y cancelaciones es de las cuentas en el exterior, no de las de caja menor."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo la de caja menor la necesita y que, de la del exterior, la apertura y el cierre se informan a esa Dirección.",
+        "explicacion": "Incorrecta. Acierta en el aviso sobre la cuenta del exterior, pero las cuentas en que se manejan recursos de caja menor también están exceptuadas de autorización y registro, y quedan bajo la responsabilidad de los funcionarios encargados de su manejo."
+      },
+      {
+        "id": "D",
+        "texto": "Que ninguna de las dos la necesita y que, de la del exterior, la apertura y el cierre se informan a esa Dirección.",
+        "explicacion": "Correcta. El art. 2.3.2.5 exceptúa de la autorización y el registro las cuentas de caja menor y las radicadas en el exterior, que quedan bajo la responsabilidad de quienes las manejan. De las cuentas en el exterior, el órgano debe mantener informada a la Dirección General de Crédito Público y Tesoro Nacional sobre aperturas y cancelaciones."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: una cuenta es de caja menor y la otra está radicada en el exterior. Regla: el art. 2.3.2.5 del Decreto 1068 exceptúa de la autorización y el registro ante la Dirección General de Crédito Público y Tesoro Nacional las cuentas de rentas parafiscales, las de devoluciones de la DIAN, las de caja menor y las radicadas en el exterior; de estas últimas, el órgano debe informar a esa Dirección las aperturas y cancelaciones. Conclusión: ninguna necesita autorización, pero la del exterior debe reportarse.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Terminación de la cuenta autorizada por hurto de la chequera",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.2.14 inc. 1",
+      "art. 2.3.2.15 num. 1"
+    ],
+    "texto_fuente": "El órgano que desee dar por terminado un contrato de cuenta autorizada deberá remitir a la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público, la solicitud correspondiente debidamente diligenciada y suscrita por el ordenador del gasto y el tesorero o pagador respectivo. [...] 1. Pérdida, destrucción o hurto de la respectiva chequera, talonario o similar. En este evento, la cuenta que la sustituya deberá abrirse en la misma sucursal o agencia y entidad financiera en que se manejaba la cuenta cuyo contrato se autoriza terminar;",
+    "pregunta": "Diana, técnica de pagaduría de una superintendencia, reporta que hurtaron la chequera de la cuenta corriente autorizada en la que la entidad maneja recursos de la Nación. El coordinador financiero quiere aprovechar para terminar ese contrato de cuenta y abrir la nueva en otro banco que le ofrece mejor servicio, y le pide preparar el trámite. ¿Cómo debe prepararlo Diana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solicitud de terminación a la Dirección General de Crédito Público y Tesoro Nacional, firmada por el ordenador y el tesorero, y nueva cuenta en la misma sucursal y banco.",
+        "explicacion": "Correcta. El hurto de la chequera es causal para pedir la terminación, pero la cuenta que la sustituya debe abrirse en la misma sucursal o agencia y entidad financiera (art. 2.3.2.15 num. 1). La solicitud va a la Dirección General de Crédito Público y Tesoro Nacional, suscrita por el ordenador del gasto y el tesorero o pagador (art. 2.3.2.14)."
+      },
+      {
+        "id": "B",
+        "texto": "Solicitud de terminación a la Dirección General de Crédito Público y Tesoro Nacional, firmada solo por el tesorero, y nueva cuenta en el banco que la entidad prefiera.",
+        "explicacion": "Incorrecta. La solicitud debe firmarla también el ordenador del gasto, y por esta causal la nueva cuenta no puede abrirse en otro banco."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitud de terminación dirigida directamente al banco, firmada por el ordenador del gasto, y nueva cuenta en la entidad financiera con la mejor oferta del mercado.",
+        "explicacion": "Incorrecta. La terminación de una cuenta autorizada se pide a la Dirección General de Crédito Público y Tesoro Nacional, no directamente al banco, y la cuenta sustituta debe quedar en la misma sucursal y entidad financiera."
+      },
+      {
+        "id": "D",
+        "texto": "Ningún trámite por ahora: el hurto no es causal de terminación, y la cuenta solo puede sustituirse en marzo o abril de un año impar.",
+        "explicacion": "Incorrecta. El hurto de la chequera sí es causal para pedir la terminación (art. 2.3.2.15 num. 1). La ventana de marzo y abril de los años impares rige para las sustituciones por iniciativa de la entidad, que no es este caso."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la causa de la terminación es el hurto de la chequera, y el coordinador quiere cambiar de banco. Regla: el hurto es causal para pedir la terminación, pero la cuenta sustituta debe abrirse en la misma sucursal o agencia y entidad financiera (art. 2.3.2.15 num. 1 del Decreto 1068); la solicitud se envía a la Dirección General de Crédito Público y Tesoro Nacional, suscrita por el ordenador del gasto y el tesorero o pagador (art. 2.3.2.14). Conclusión: se tramita la terminación, pero sin cambiar de banco.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Informe mensual de los recursos de la Nación ejecutados mediante patrimonios autónomos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.1.1.4 incs. 1 y 3, y parágrafo"
+    ],
+    "texto_fuente": "La entidad ejecutora presentará al Ministerio de Hacienda y Crédito Público un informe mensual del estado de la ejecución de recursos públicos a través de patrimonios autónomos, con corte al mes anterior. [...] Dicha información deberá ser remitida dentro de los primeros diez (10) días hábiles de cada mes, con fecha de corte del mes anterior. [...] La entidad ejecutora pública será la única responsable de la veracidad de los reportes contables remitidos.",
+    "pregunta": "Andrés, técnico financiero de un ministerio, prepara el informe mensual sobre los recursos de la Nación que el ministerio ejecuta por medio de un patrimonio autónomo, con corte al 31 de octubre de 2026. La fiduciaria que administra el patrimonio le ofrece enviarlo ella misma con sus cifras, para ahorrarle el trabajo. En noviembre de 2026 son festivos los lunes 2 y 16. ¿Qué debe tener en cuenta Andrés?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede enviarlo la fiduciaria, como administradora del patrimonio, al Ministerio de Hacienda a más tardar el martes 17 de noviembre.",
+        "explicacion": "Incorrecta. El informe lo presenta la entidad ejecutora, que es la única responsable de la veracidad de los reportes. La fiduciaria le suministra la información, pero no la reemplaza."
+      },
+      {
+        "id": "B",
+        "texto": "Que lo envía el ministerio al Ministerio de Hacienda a más tardar el viernes 13 de noviembre, y que responde por la veracidad de las cifras.",
+        "explicacion": "Incorrecta. Cuenta los diez días hábiles como si el lunes 2 de noviembre fuera hábil. Sin los festivos del 2 y del 16, el décimo día hábil es el martes 17."
+      },
+      {
+        "id": "C",
+        "texto": "Que lo envía el ministerio al Ministerio de Hacienda a más tardar el martes 17 de noviembre, y que responde por la veracidad de las cifras.",
+        "explicacion": "Correcta. La entidad ejecutora presenta el informe al Ministerio de Hacienda dentro de los primeros diez días hábiles del mes, con corte al mes anterior, y es la única responsable de la veracidad de los reportes (art. 2.3.1.1.4). Días hábiles de noviembre: 3, 4, 5, 6, 9, 10, 11, 12, 13 y 17."
+      },
+      {
+        "id": "D",
+        "texto": "Que lo envía el ministerio a la Contraloría a más tardar el martes 17 de noviembre, y que la veracidad de las cifras es de la fiduciaria.",
+        "explicacion": "Incorrecta. El destinatario es el Ministerio de Hacienda y Crédito Público, no la Contraloría, y la responsabilidad por la veracidad es de la entidad ejecutora, no de la fiduciaria."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el corte es el 31 de octubre de 2026 y en noviembre son festivos los lunes 2 y 16. Regla: la entidad ejecutora presenta al Ministerio de Hacienda un informe mensual sobre los recursos ejecutados por patrimonios autónomos dentro de los primeros diez días hábiles de cada mes, y es la única responsable de la veracidad de los reportes (art. 2.3.1.1.4 del Decreto 1068). Cálculo: días hábiles 3, 4, 5, 6, 9, 10, 11, 12, 13 y 17 de noviembre. Conclusión: lo envía el ministerio a más tardar el martes 17.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Embargo de recursos del Sistema General de Participaciones: plazo y contenido de la solicitud de constancia de inembargabilidad",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.6.6.2 inc. 2",
+      "art. 2.6.6.3",
+      "art. 2.6.6.5"
+    ],
+    "texto_fuente": "En caso de que se llegare a efectuar un embargo de los recursos del Sistema General de Participaciones el servidor público, que reciba una orden de embargo sobre los recursos incorporados en el Presupuesto General de la Nación, incluidas las transferencias que hace la Nación a las Entidades Territoriales por concepto de participación para educación, participación para salud y para participación para propósito general, está obligado a efectuar los trámites, dentro de los tres días siguientes a su recibo, para solicitar su desembargo. [...] El servidor público una vez recibida la orden de embargo sobre los recursos de transferencias que hace la Nación a las Entidades Territoriales, solicitará a la Dirección General del Presupuesto Público Nacional del Ministerio de Hacienda y Crédito Público, la constancia sobre la naturaleza de estos recursos; la constancia de inembargables de los recursos, será solicitada a más tardar dentro de los tres (3) días siguientes a su recibo. [...] La solicitud de constancia de inembargabilidad debe indicar el tipo de proceso, las partes involucradas, el despacho judicial que profirió las medidas cautelares y el origen de los recursos que fueron embargados.",
+    "pregunta": "Carolina, técnica de la tesorería de un municipio, recibió hoy la orden de embargo que un juzgado civil decretó sobre la cuenta en la que el municipio maneja los recursos del Sistema General de Participaciones para educación. El tesorero le pide proyectar de inmediato la solicitud de la constancia de inembargabilidad de esos recursos. ¿Qué plazo rige para pedirla y qué debe indicar la solicitud?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tres días desde que se recibió la orden; el tipo de proceso, las partes, el despacho que decretó la medida y el origen de los recursos embargados.",
+        "explicacion": "Correcta. Quien recibe la orden de embargo sobre recursos del Sistema General de Participaciones debe adelantar los trámites de desembargo y pedir la constancia de inembargabilidad dentro de los tres días siguientes a su recibo (arts. 2.6.6.2 y 2.6.6.3). La solicitud debe indicar el tipo de proceso, las partes, el despacho que profirió la medida y el origen de los recursos (art. 2.6.6.5)."
+      },
+      {
+        "id": "B",
+        "texto": "Tres días desde que se recibió la orden; el número y el saldo de la cuenta, el banco que aplicó la medida y la copia de la demanda presentada.",
+        "explicacion": "Incorrecta. Acierta en el plazo, pero no en el contenido: la norma exige el tipo de proceso, las partes, el despacho judicial y el origen de los recursos embargados, no los datos bancarios ni la demanda."
+      },
+      {
+        "id": "C",
+        "texto": "Diez días hábiles desde que se recibió la orden; el tipo de proceso, las partes, el despacho que decretó la medida y el origen de los recursos embargados.",
+        "explicacion": "Incorrecta. Acierta en el contenido, pero el plazo es de tres días desde el recibo de la orden, no de diez días hábiles."
+      },
+      {
+        "id": "D",
+        "texto": "Diez días hábiles desde la ejecutoria del auto; el número y el saldo de la cuenta, el banco que aplicó la medida y la copia de la demanda.",
+        "explicacion": "Incorrecta. El plazo es de tres días y corre desde el recibo de la orden, y el contenido de la solicitud no es el que fija el reglamento."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la orden de embargo recae sobre recursos del Sistema General de Participaciones y se recibió hoy. Regla: el servidor que recibe la orden debe adelantar los trámites de desembargo dentro de los tres días siguientes (art. 2.6.6.2 del Decreto 1068) y pedir la constancia de inembargabilidad a más tardar dentro de esos tres días (art. 2.6.6.3); la solicitud indica el tipo de proceso, las partes, el despacho que profirió la medida y el origen de los recursos (art. 2.6.6.5). Conclusión: tres días y esos cuatro datos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-008",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Retención en la fuente por servicios pagados a un no declarante",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 103 inc. 1 (modificado por el art. 21 de la Ley 633 de 2000)",
+      "art. 368 inc. 1",
+      "art. 383 par. 2 (modificado por el art. 8 de la Ley 2277 de 2022)",
+      "art. 392 inc. 1",
+      "art. 392 inc. 3 (modificado por el art. 45 de la Ley 633 de 2000)",
+      "art. 392 inc. 4 (adicionado por el art. 45 de la Ley 633 de 2000)"
+    ],
+    "texto_fuente": "Se consideran rentas exclusivas de trabajo, las obtenidas por personas naturales por concepto de salarios, [...] y, en general, las compensaciones por servicios personales. [...] Son agentes de retención o de percepción, las entidades de derecho público, [...] que por sus funciones intervengan en actos u operaciones en los cuales deben, por expresa disposición legal, efectuar la retención o percepción del tributo correspondiente. [...] La retención en la fuente establecida en el presente artículo será aplicable a los pagos o abonos en cuenta por concepto de rentas de trabajo que no provengan de una relación laboral o legal y reglamentaria. [...] Están sujetos a retención en la fuente los pagos o abonos en cuenta que hagan las personas jurídicas y sociedades de hecho por concepto de honorarios, comisiones, servicios y arrendamientos. [...] La tarifa de retención en la fuente para los honorarios y comisiones, percibidos por los contribuyentes no obligados a presentar declaración de renta y complementarios, es el diez por ciento (10%) del valor del correspondiente pago o abono en cuenta. [...] La tarifa de retención en la fuente para los servicios percibidos por los contribuyentes no obligados a presentar declaración de renta y complementarios, es del seis por ciento (6%) del valor del correspondiente pago o abono en cuenta.",
+    "pregunta": "Felipe, auxiliar de la tesorería de una alcaldía, liquida un pago de $3.800.000 a una persona natural por el mantenimiento de las zonas verdes de un parque. El contratista presta el servicio con su propia organización empresarial: aporta la maquinaria y tiene contratados cuatro trabajadores para esa labor. No es responsable de IVA y certificó que no está obligado a declarar renta. El pago supera la base mínima de retención, y el aplicativo de la tesorería ofrece las tarifas del 4%, 6%, 10% y 11%. Un compañero le dice que la alcaldía no retiene, porque el municipio no es contribuyente del impuesto de renta. ¿Cuánto debe girarle Felipe al contratista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$3.800.000, porque el municipio, al no ser contribuyente del impuesto de renta, no actúa como agente de retención.",
+        "explicacion": "Incorrecta. Las entidades de derecho público son agentes de retención aunque no sean contribuyentes del impuesto (art. 368), y los pagos por servicios están sujetos a retención (art. 392). Tampoco cabe la tabla del art. 383, propia de las rentas de trabajo: el pago no es una compensación por servicios personales del contratista (art. 103), porque el servicio lo prestan su organización y sus trabajadores."
+      },
+      {
+        "id": "B",
+        "texto": "$3.420.000, porque la ley fija una retención del 10% para los pagos a quienes no declaran renta.",
+        "explicacion": "Incorrecta. El 10% es la tarifa para honorarios y comisiones de quienes no declaran (art. 392 inc. 3). Para servicios, la ley fija el 6%."
+      },
+      {
+        "id": "C",
+        "texto": "$3.648.000, porque a los pagos por servicios se les aplica la tarifa del 4% que fija el Gobierno.",
+        "explicacion": "Incorrecta. La ley deja al Gobierno la tarifa de los contribuyentes obligados a declarar. Para quien no está obligado a declarar, la propia ley fija el 6% en servicios (art. 392 inc. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "$3.572.000, porque la ley fija una retención del 6% sobre los servicios pagados a quien no declara.",
+        "explicacion": "Correcta. La alcaldía es agente de retención (art. 368) y el pago por servicios está sujeto a retención (art. 392 inc. 1). Como el servicio lo presta una organización con trabajadores, no es renta de trabajo del contratista y no se aplica la tabla del art. 383. Para no declarantes, la tarifa en servicios es del 6% (art. 392 inc. 4): 3.800.000 × 6% = 228.000, y se giran 3.572.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el contratista no está obligado a declarar y presta el servicio con su organización y cuatro trabajadores, así que el pago no es una compensación por servicios personales (art. 103) a la que se aplique la tabla del art. 383 par. 2. Regla: las entidades de derecho público son agentes de retención (art. 368 del Estatuto Tributario); los pagos por servicios están sujetos a retención (art. 392 inc. 1), y para no declarantes la tarifa en servicios es del 6% (art. 392 inc. 4). Cálculo: 3.800.000 × 6% = 228.000; 3.800.000 − 228.000 = 3.572.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Retención de IVA: tarifa general y compras a un gran contribuyente",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 437-1 inc. 1 (modificado por el art. 42 de la Ley 1607 de 2012)",
+      "art. 437-1 inc. 2 (modificado por el art. 5 de la Ley 2010 de 2019)",
+      "art. 437-2 nums. 1 y 2 (num. 2 modificado por el art. 49 de la Ley 488 de 1998)",
+      "art. 437-2 parágrafo 1 (modificado por el art. 25 de la Ley 633 de 2000)"
+    ],
+    "texto_fuente": "se establece la retención en la fuente en este impuesto, la cual deberá practicarse en el momento en que se realice el pago o abono en cuenta, lo que ocurra primero. [...] La retención podrá ser hasta del cincuenta por ciento (50%) del valor del impuesto, de acuerdo con lo que determine el Gobierno nacional. En aquellos pagos en los que no exista una retención en la fuente especial establecida mediante decreto reglamentario, será aplicable la tarifa del quince por ciento (15%). [...] Actuarán como agentes retenedores del impuesto sobre las ventas en la adquisición de bienes y servicios gravados: 1. Las siguientes entidades estatales: La Nación, los departamentos, [...] Quienes se encuentren catalogados como grandes contribuyentes por la Dirección de Impuestos y Aduanas Nacionales, sean o no responsables del IVA, y los que mediante resolución de la DIAN se designen como agentes de retención en el impuesto sobre las ventas. [...] La venta de bienes o prestación de servicios que se realicen entre agentes de retención del impuesto sobre las ventas de que tratan los numerales 1, 2 y 5 de este artículo no se regirá por lo previsto en este artículo.",
+    "pregunta": "Óscar, técnico de tesorería de una gobernación, liquida en septiembre de 2026 dos facturas por compras gravadas con IVA. La primera es de una papelería responsable de IVA, que no es gran contribuyente ni agente de retención de IVA: $20.000.000 más IVA de $3.800.000. La segunda es de una empresa de mantenimiento de ascensores que la DIAN tiene catalogada como gran contribuyente: $15.000.000 más IVA de $2.850.000. Para estas compras no hay una tarifa especial de retención de IVA fijada por decreto. ¿Cuánto debe retener por IVA en total?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$570.000, que corresponden al 15% del IVA de la papelería, sin retener a la otra empresa.",
+        "explicacion": "Correcta. La gobernación es agente de retención de IVA (art. 437-2 num. 1) y, sin tarifa especial, retiene el 15% del impuesto (art. 437-1): 3.800.000 × 15% = 570.000. La compra al gran contribuyente es una operación entre agentes de retención de los numerales 1 y 2, que no se somete a esta retención (art. 437-2 par. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "$997.500, que corresponden al 15% del IVA facturado por las dos empresas durante el mes.",
+        "explicacion": "Incorrecta. Retiene también al gran contribuyente, pero las operaciones entre agentes de retención de IVA de los numerales 1 y 2 del art. 437-2 no se rigen por esta retención."
+      },
+      {
+        "id": "C",
+        "texto": "$1.900.000, que corresponden a la mitad del IVA que facturó la papelería en el mes.",
+        "explicacion": "Incorrecta. El 50% es el tope que puede fijar el Gobierno. Cuando no hay una tarifa especial fijada por decreto, se aplica el 15% del impuesto."
+      },
+      {
+        "id": "D",
+        "texto": "$3.000.000, que corresponden al 15% del valor antes de IVA de la compra de papelería.",
+        "explicacion": "Incorrecta. La tarifa se aplica sobre el valor del IVA, no sobre el valor de la compra antes del impuesto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: una factura es de un responsable de IVA que no es agente retenedor y la otra, de un gran contribuyente; no hay tarifa especial. Regla: los departamentos son agentes de retención de IVA (art. 437-2 num. 1 del Estatuto Tributario) y la tarifa general es el 15% del impuesto (art. 437-1); las operaciones entre agentes de los numerales 1, 2 y 5 no se someten a esta retención (art. 437-2 par. 1). Cálculo: 3.800.000 × 15% = 570.000. Conclusión: retiene $570.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Demora sin justa causa de pagos con fondos disponibles y compromisos legalizados",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 111 de 1996 y Decreto 1068 de 2015",
+    "articulos": [
+      "Decreto 111 de 1996, art. 112 parágrafo",
+      "Decreto 1068 de 2015, art. 2.8.1.7.2.1 inc. 1"
+    ],
+    "texto_fuente": "El Programa Anual Mensualizado de Caja (PAC) define el monto máximo mensual de pagos para el Presupuesto General la Nación con el fin de cancelar las obligaciones exigibles de pago. [...] PARÁGRAFO. Los ordenadores, pagadores, auditores y demás funcionarios responsables que estando disponibles los fondos y legalizados los compromisos demoren sin justa causa cancelación o pago, incurrirán en causal de mala conducta",
+    "pregunta": "Rosa, pagadora de una unidad administrativa especial del orden nacional (empleo del nivel técnico), tiene listas doce cuentas de contratistas por $310 millones: las obligaciones están registradas, hay PAC aprobado para el mes y los recursos están disponibles. La coordinadora financiera le ordena retener esos pagos hasta el 5 del mes siguiente, para que el informe de cierre muestre un saldo de caja más alto. ¿Qué debe advertirle Rosa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede retenerlos si, antes del cierre, pide trasladar al mes siguiente el PAC que no va a utilizar.",
+        "explicacion": "Incorrecta. Reprogramar el PAC no convierte en justa causa la razón de la demora. Con fondos disponibles y compromisos legalizados, demorar el pago sin justa causa es causal de mala conducta (art. 112 par. del Decreto 111)."
+      },
+      {
+        "id": "B",
+        "texto": "Que aplazar sin justa causa pagos con fondos y compromisos en regla es causal de mala conducta, aun para ella.",
+        "explicacion": "Correcta. El PAC fija el máximo mensual de pagos para cancelar las obligaciones exigibles (art. 2.8.1.7.2.1 del Decreto 1068). Si los fondos están disponibles y los compromisos legalizados, los ordenadores, pagadores y demás responsables que demoren sin justa causa el pago incurren en causal de mala conducta (art. 112 par. del Decreto 111). Mostrar un saldo más alto no es justa causa."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede retenerlos si la orden le llega por escrito, porque así la responsabilidad recae en quien la firmó.",
+        "explicacion": "Incorrecta. Que la orden conste por escrito no la convierte en justa causa ni traslada la responsabilidad: la norma alcanza a los pagadores que, con fondos disponibles y compromisos legalizados, demoren el pago sin justa causa, y mostrar un saldo más alto no lo es."
+      },
+      {
+        "id": "D",
+        "texto": "Que esa decisión le corresponde al ordenador del gasto, y que solo él puede aplazar los pagos ya obligados del mes.",
+        "explicacion": "Incorrecta. No es un asunto de competencia: la norma alcanza también a los ordenadores. Con fondos disponibles y compromisos legalizados, ningún funcionario puede demorar el pago sin justa causa, y mostrar más saldo en el cierre no lo es."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: las obligaciones están registradas, hay PAC y los recursos están disponibles; la única razón para demorar es mostrar más saldo. Regla: el PAC fija el monto máximo mensual de pagos para cancelar las obligaciones exigibles (art. 2.8.1.7.2.1 del Decreto 1068), y los ordenadores, pagadores y demás responsables que, con fondos disponibles y compromisos legalizados, demoren sin justa causa el pago incurren en causal de mala conducta (art. 112 par. del Decreto 111). Conclusión: debe advertir esa consecuencia, que también la alcanza.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Recursos propios en el Sistema de Cuenta Única Nacional: naturaleza, ejecución y abono de rendimientos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.1.2 inc. 2",
+      "art. 2.3.1.3",
+      "art. 2.3.1.8"
+    ],
+    "texto_fuente": "Los recursos del Sistema de Cuenta Única Nacional seguirán conservando la naturaleza, propiedad y fines de la ley que los creó. [...] Las respectivas entidades estatales y sus correspondientes órganos de administración o dirección serán los responsables del recaudo, clasificación y ejecución de sus recursos propios, administrados y de los fondos especiales que sean trasladados al Sistema de Cuenta Única Nacional. [...] La Dirección General de Crédito Público y Tesoro Nacional abonará una vez al año, máximo hasta el último día hábil bancario de la vigencia fiscal, el valor de los rendimientos generados por los recursos administrados en el SCUN de acuerdo a los recursos manejados y a las inversiones realizadas en el lapso en que permanecieron los saldos disponibles.",
+    "pregunta": "Un establecimiento público del orden nacional, que financia buena parte de su funcionamiento con las tasas que cobra por sus servicios, trasladó sus recursos propios al Sistema de Cuenta Única Nacional (SCUN), que administra la Dirección General de Crédito Público y Tesoro Nacional (DGCPTN). En el consejo directivo surgen dos dudas que debe resolver la profesional especializada de la subdirección financiera: si esos recursos siguen siendo del establecimiento y quién decide su ejecución, y cuándo recibirá el establecimiento los rendimientos que generen en el SCUN. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que siguen siendo del establecimiento, que los ejecuta; la DGCPTN le abona los rendimientos una vez al año, hasta el último día hábil bancario.",
+        "explicacion": "Correcta. Los recursos trasladados al SCUN conservan su naturaleza, propiedad y fines (art. 2.3.1.2), y el establecimiento sigue siendo responsable de su recaudo, clasificación y ejecución (art. 2.3.1.3). La DGCPTN abona los rendimientos una vez al año, máximo hasta el último día hábil bancario de la vigencia (art. 2.3.1.8)."
+      },
+      {
+        "id": "B",
+        "texto": "Que siguen siendo del establecimiento, que los ejecuta; la DGCPTN le abona los rendimientos cada mes, hasta el décimo día hábil del mes siguiente.",
+        "explicacion": "Incorrecta. Acierta en que los recursos siguen siendo del establecimiento, pero los rendimientos del SCUN se abonan una vez al año, no cada mes. Confunde esta regla con el traslado mensual de rendimientos de recursos de la Nación que hacen sus administradores."
+      },
+      {
+        "id": "C",
+        "texto": "Que pasan a ser recursos de la Nación, que la DGCPTN ejecuta a solicitud del establecimiento; los rendimientos se le abonan una vez al año.",
+        "explicacion": "Incorrecta. El traslado al SCUN no cambia la naturaleza ni la propiedad de los recursos, y su ejecución sigue en cabeza del establecimiento (arts. 2.3.1.2 y 2.3.1.3)."
+      },
+      {
+        "id": "D",
+        "texto": "Que pasan a ser recursos de la Nación administrados por la DGCPTN; los rendimientos se abonan cuando el consejo los incorpore al presupuesto.",
+        "explicacion": "Incorrecta. Los recursos no pasan a la Nación, y el abono de los rendimientos no depende de una decisión del consejo directivo: lo hace la DGCPTN una vez al año (art. 2.3.1.8)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: son recursos propios de un establecimiento público trasladados al SCUN. Regla: los recursos del SCUN conservan su naturaleza, propiedad y fines (art. 2.3.1.2 del Decreto 1068); las entidades siguen siendo responsables de su recaudo, clasificación y ejecución (art. 2.3.1.3), y la DGCPTN abona los rendimientos una vez al año, máximo hasta el último día hábil bancario de la vigencia (art. 2.3.1.8). Conclusión: siguen siendo del establecimiento, que los ejecuta, y los rendimientos se abonan una vez al año.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Compromisos y PAC financiados con recursos del crédito no perfeccionado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 111 de 1996",
+    "articulos": [
+      "art. 71 inc. 4",
+      "art. 72",
+      "art. 73 inc. 7"
+    ],
+    "texto_fuente": "En consecuencia, ninguna autoridad podrá contraer obligaciones sobre apropiaciones inexistentes, o en exceso del saldo disponible, o sin la autorización previa del Confis o por quien éste delegue, para comprometer vigencias futuras y la adquisición de compromisos con cargo a los recursos del crédito autorizados. [...] El Confis autorizará la celebración de contratos, compromisos u obligaciones, con cargo a los recursos del crédito autorizados, mientras se perfeccionan los respectivos empréstitos [...] Las apropiaciones suspendidas, incluidas las que se financien con los recursos adicionales a que hace referencia el artículo 347 de la Constitución Política, lo mismo que aquellas financiadas con recursos del crédito no perfeccionados, sólo se incluirán en el Programa Anual de Caja PAC, cuando cese en sus efectos la suspensión o cuando lo autorice el Confis mientras se perfeccionan los contratos de empréstito.",
+    "pregunta": "En el presupuesto de 2026 de un ministerio hay una apropiación de inversión financiada con un crédito externo ya autorizado, cuyo contrato de empréstito todavía no se ha perfeccionado. El área técnica quiere firmar en mayo un contrato de $1.800 millones con cargo a esa apropiación y empezar a pagarlo en julio. El profesional de la subdirección financiera debe indicar qué se necesita para asumir ese compromiso y programar sus pagos en el PAC. ¿Qué debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que basta el certificado de disponibilidad para firmar, y que la Dirección del Tesoro aprueba los pagos en el PAC como una modificación ordinaria.",
+        "explicacion": "Incorrecta. Mientras el empréstito no se perfeccione, comprometer esos recursos requiere autorización previa del Confis (arts. 71 y 72), y su inclusión en el PAC también depende de esa autorización (art. 73), no de una modificación ordinaria."
+      },
+      {
+        "id": "B",
+        "texto": "Que se requiere autorización del Confis para firmar el contrato, pero que los pagos entran al PAC solo cuando el banco desembolse el crédito.",
+        "explicacion": "Incorrecta. Acierta en la autorización para contratar, pero el Confis también puede autorizar la inclusión en el PAC mientras se perfecciona el empréstito; no hay que esperar el desembolso."
+      },
+      {
+        "id": "C",
+        "texto": "Que no se requiere autorización adicional, porque la apropiación ya figura en el presupuesto y el crédito externo ya está autorizado.",
+        "explicacion": "Incorrecta. Que el crédito esté autorizado no basta: ninguna autoridad puede asumir compromisos con cargo a recursos del crédito sin autorización previa del Confis mientras no se perfeccione el empréstito."
+      },
+      {
+        "id": "D",
+        "texto": "Que se requiere autorización del Confis, tanto para asumir el compromiso como para incluir sus pagos en el PAC mientras se perfecciona el crédito.",
+        "explicacion": "Correcta. El Confis autoriza los contratos con cargo a recursos del crédito mientras se perfeccionan los empréstitos (arts. 71 inc. 4 y 72), y las apropiaciones financiadas con crédito no perfeccionado solo entran al PAC cuando lo autorice el Confis (art. 73 inc. 7)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la apropiación se financia con un crédito autorizado cuyo empréstito no se ha perfeccionado. Regla: sin autorización previa del Confis no pueden adquirirse compromisos con cargo a recursos del crédito (art. 71 inc. 4 del Decreto 111); el Confis autoriza los contratos mientras se perfeccionan los empréstitos (art. 72), y esas apropiaciones solo se incluyen en el PAC cuando lo autorice el Confis mientras se perfecciona el empréstito (art. 73 inc. 7). Conclusión: se necesita la autorización del Confis para ambas cosas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-013",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Sustitución de cuentas corrientes autorizadas: ventana de los años impares y antigüedad mínima",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.2.17 incs. 1 a 3"
+    ],
+    "texto_fuente": "Durante los meses de marzo y abril de los años impares, la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público autorizará, a solicitud de los Órganos Ejecutores del Presupuesto Nacional, la sustitución de las cuentas corrientes autorizadas. Dichas sustituciones, se realizarán por iniciativa del Órgano Ejecutor, siempre y cuando las respectivas cuentas corrientes a sustituir tengan como mínimo un (1) año de apertura, y no se presente cualquiera de los presupuestos jurídicos establecidos en el Artículo 2.3.2.13. Sin perjuicio de lo anterior, la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público podrá por solicitud de los Órganos Ejecutores del Presupuesto Nacional, de acuerdo con los procedimientos internos que esta defina, efectuar la sustitución de cuentas corrientes autorizadas a otra entidad financiera, en caso de que la entidad financiera no preste un servicio adecuado, en términos de calidad, costos, seguridad y eficiencia.",
+    "pregunta": "En octubre de 2026, la coordinadora financiera de una superintendencia quiere trasladar a otro banco la cuenta corriente autorizada que la entidad abrió el 10 de marzo de 2026, porque otro banco le ofrece tarifas más bajas. Una evaluación interna concluyó que el banco actual presta un servicio adecuado en calidad, costos, seguridad y eficiencia. El profesional de tesorería debe indicarle en qué periodo puede la Dirección General de Crédito Público y Tesoro Nacional autorizar esa sustitución, si la entidad la solicita. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Desde ya, porque una oferta con menores costos para la entidad basta para que la autorice en cualquier mes del año.",
+        "explicacion": "Incorrecta. Por fuera de la ventana, la Dirección puede autorizar la sustitución cuando el banco no presta un servicio adecuado en calidad, costos, seguridad y eficiencia. Aquí el servicio es adecuado; solo hay una oferta mejor."
+      },
+      {
+        "id": "B",
+        "texto": "Entre el 1 de marzo y el 30 de abril de 2027, porque esos meses de los años impares están abiertos a cualquier cuenta.",
+        "explicacion": "Incorrecta. Acierta en la ventana, pero la cuenta debe tener como mínimo un año de apertura, y antes del 10 de marzo de 2027 no lo cumple."
+      },
+      {
+        "id": "C",
+        "texto": "Entre el 10 de marzo y el 30 de abril de 2027, porque la cuenta ya tendrá un año y estará dentro de la ventana.",
+        "explicacion": "Correcta. Por iniciativa de la entidad, la Dirección autoriza la sustitución en marzo y abril de los años impares, siempre que la cuenta tenga como mínimo un año de apertura (art. 2.3.2.17). La próxima ventana es marzo-abril de 2027, y la cuenta cumple un año el 10 de marzo de 2027."
+      },
+      {
+        "id": "D",
+        "texto": "Desde el 10 de marzo de 2027, en cualquier mes, porque basta con que la cuenta tenga un año de apertura para autorizarla.",
+        "explicacion": "Incorrecta. El año de apertura es necesario, pero no suficiente: la sustitución por iniciativa de la entidad solo se autoriza en marzo o abril de un año impar."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la cuenta se abrió el 10 de marzo de 2026, el banco presta un servicio adecuado y la razón del cambio es una mejor oferta. Regla: por iniciativa de la entidad, la DGCPTN autoriza la sustitución de cuentas autorizadas en marzo y abril de los años impares, si la cuenta tiene como mínimo un año de apertura; por fuera de esa ventana, solo si el banco no presta un servicio adecuado (art. 2.3.2.17 del Decreto 1068). Cálculo: la ventana es marzo-abril de 2027 y el año se cumple el 10 de marzo. Conclusión: la autorización cabe entre el 10 de marzo y el 30 de abril de 2027.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Responsabilidad del agente que no practica la retención y solidaridad en las sanciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 370",
+      "art. 371 lit. a"
+    ],
+    "texto_fuente": "No realizada la retención o percepción, el agente responderá por la suma que está obligado a retener o percibir, sin perjuicio de su derecho de reembolso contra el contribuyente, cuando aquél satisfaga la obligación. Las sanciones o multas impuestas al agente por el incumplimiento de sus deberes serán de su exclusiva responsabilidad. [...] Para el pago de las sanciones pecuniarias correspondientes, establécese la siguiente responsabilidad solidaria: a. Entre la persona natural encargada de hacer las retenciones y la persona jurídica que tenga legalmente el carácter de retenedor;",
+    "pregunta": "En una revisión de la DIAN se encontró que la tesorería de un establecimiento público no practicó en marzo la retención de $2.400.000 que correspondía al pago de un contrato de consultoría, y la DIAN anunció además una sanción por ese incumplimiento. El director pide a la profesional de la oficina jurídica un concepto: quién responde por la retención no practicada y por la sanción, y si algo de ello puede cobrarse al contratista. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que por la retención responde el contratista, que es el contribuyente, y que el establecimiento paga la sanción y luego puede repetirla contra él.",
+        "explicacion": "Incorrecta. Si el agente no retiene, es él quien responde por la suma que debía retener (art. 370). Además, la sanción es de su exclusiva responsabilidad y no puede trasladarse al contratista."
+      },
+      {
+        "id": "B",
+        "texto": "Que la retención la asume el establecimiento, que puede recobrarla al contratista si la paga, y que la sanción la asume con el funcionario a cargo.",
+        "explicacion": "Correcta. El agente que no retiene responde por la suma que debía retener, sin perjuicio de su derecho de reembolso contra el contribuyente cuando la pague, y las sanciones son de su exclusiva responsabilidad (art. 370). Por ellas responden solidariamente la persona jurídica retenedora y la persona natural encargada de retener (art. 371 lit. a)."
+      },
+      {
+        "id": "C",
+        "texto": "Que el establecimiento responde por la retención y por la sanción, y que puede cobrarle ambas al contratista, que fue quien recibió el pago completo.",
+        "explicacion": "Incorrecta. La retención sí puede recobrarse al contratista una vez pagada, pero la sanción es de exclusiva responsabilidad del agente y no puede cobrársele."
+      },
+      {
+        "id": "D",
+        "texto": "Que responde en forma exclusiva el funcionario que debía retener, por la retención y la sanción, y no el establecimiento ante la DIAN.",
+        "explicacion": "Incorrecta. El agente de retención es el establecimiento. El funcionario encargado responde solidariamente por las sanciones, pero no desplaza la responsabilidad de la entidad."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el establecimiento, agente de retención, no retuvo $2.400.000 y la DIAN anuncia una sanción. Regla: el agente que no retiene responde por la suma que debía retener, con derecho de reembolso contra el contribuyente cuando la pague, y las sanciones son de su exclusiva responsabilidad (art. 370 del Estatuto Tributario); por ellas responden solidariamente la persona jurídica retenedora y la persona natural encargada (art. 371 lit. a). Conclusión: la retención puede recobrarse al contratista; la sanción no.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Inversión de excedentes de liquidez de las entidades territoriales: instrumentos y calificaciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.3.5.1 inc. 1",
+      "art. 2.3.3.5.1 parágrafo 1 lits. a) y b)",
+      "art. 2.3.3.5.1 parágrafo 3 inc. 2"
+    ],
+    "texto_fuente": "las entidades a que hace referencia el presente capítulo deberán invertir sus excedentes de liquidez, así: i. En Títulos de Tesorería (TES) Clase “B”, tasa fija o indexados a la UVR, del mercado primario directamente ante la Dirección General de Crédito Público y Tesoro Nacional o en el mercado secundario en condiciones de mercado, y, ii. En certificados de depósitos a término, depósitos en cuenta corriente, de ahorros o a término en condiciones de mercado en establecimientos bancarios vigilados por la Superintendencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del Estatuto Orgánico del Sistema Financiero. [...] a) Para inversiones con plazo igual o inferior a un (1) año, el establecimiento bancario deberá contar con una calificación vigente correspondiente a la máxima categoría para el corto plazo, de acuerdo con las escalas usadas por las sociedades calificadoras que la otorgan y contar como mínimo con la segunda mejor calificación vigente para el largo plazo utilizada por las respectivas sociedades; b) Para inversiones con plazo superior a un (1) año, el establecimiento bancario deberá contar con la segunda mejor calificación vigente para el largo plazo, según la escala utilizada por las sociedades calificadoras y la máxima calificación para el corto plazo de acuerdo con la escala utilizada para este plazo. [...] Igualmente, las entidades territoriales y sus descentralizadas, podrán invertir los recursos a que se refiere el presente parágrafo, en carteras colectivas del mercado monetario o abiertas sin pacto de permanencia, en ambos casos siempre y cuando la sociedad fiduciaria administradora de las mismas, cuente con la calificación prevista en el presente parágrafo",
+    "pregunta": "El comité financiero de un departamento revisa cuatro propuestas para invertir excedentes de liquidez, y la profesional especializada de tesorería debe señalar cuáles se ajustan al reglamento: (1) comprar TES Clase B a tasa fija en el mercado secundario, en condiciones de mercado; (2) un CDT a 18 meses en un banco vigilado por la Superintendencia Financiera, con la segunda mejor calificación de largo plazo y la máxima de corto plazo; (3) un CDT a 6 meses en un banco vigilado, con la máxima calificación de corto plazo y la tercera mejor de largo plazo; (4) participaciones en una cartera colectiva abierta, que no es del mercado monetario y tiene pacto de permanencia de 90 días, administrada por una fiduciaria con la segunda mejor calificación en administración de portafolios. ¿Cuáles proceden?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las propuestas (1), (2) y (4), porque la fiduciaria tiene la calificación que se exige para administrar esos portafolios.",
+        "explicacion": "Incorrecta. La fiduciaria cumple la calificación, pero las entidades territoriales solo pueden invertir en carteras colectivas del mercado monetario o abiertas sin pacto de permanencia (parágrafo 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Las propuestas (1), (2) y (3), porque en los plazos de hasta un año basta con la máxima calificación de corto plazo.",
+        "explicacion": "Incorrecta. Para plazos de hasta un año, además de la máxima calificación de corto plazo, el banco debe tener como mínimo la segunda mejor de largo plazo (parágrafo 1 lit. a). La tercera no alcanza."
+      },
+      {
+        "id": "C",
+        "texto": "Las propuestas (1) y (3), porque en los plazos de más de un año el banco necesita la máxima calificación de largo plazo.",
+        "explicacion": "Incorrecta. Para plazos de más de un año basta la segunda mejor calificación de largo plazo con la máxima de corto plazo (parágrafo 1 lit. b), así que la (2) procede. Y la (3) no cumple el mínimo de largo plazo."
+      },
+      {
+        "id": "D",
+        "texto": "Las propuestas (1) y (2), porque la (3) no alcanza la calificación de largo plazo y la (4) tiene pacto de permanencia.",
+        "explicacion": "Correcta. Los TES Clase B en el mercado secundario y en condiciones de mercado están permitidos (num. i). El CDT a 18 meses cumple el lit. b del parágrafo 1. El CDT a 6 meses falla porque el lit. a exige como mínimo la segunda mejor calificación de largo plazo. La cartera colectiva con pacto de permanencia no está permitida (parágrafo 3)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las calificaciones de cada banco, el plazo de cada CDT y el pacto de permanencia de la cartera. Regla: las entidades territoriales invierten en TES Clase B o en depósitos en bancos vigilados (art. 2.3.3.5.1 del Decreto 1068). Hasta un año, el banco necesita la máxima calificación de corto plazo y al menos la segunda mejor de largo; a más de un año, la segunda mejor de largo y la máxima de corto (par. 1). Las carteras colectivas deben ser del mercado monetario o abiertas sin pacto de permanencia (par. 3). Conclusión: (1) y (2).",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Liquidación de los rendimientos financieros de recursos de la Nación entregados en administración",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.5.3 inc. 1 y parágrafo 2",
+      "art. 2.3.5.4 num. 1 lit. b",
+      "art. 2.3.5.5",
+      "art. 2.3.5.6 inc. 1"
+    ],
+    "texto_fuente": "Los rendimientos financieros al día t (RFt) se obtendrán de restar al Portafolio de inversiones admisibles, valorado al día t (Pt), el valor del saldo del capital entregado en administración al día t (Kt), así: [...] Se entiende por saldo de capital de los recursos entregados en administración al día t (Kt), el valor resultante de sumar los recursos inicialmente entregados (K0) más los aportes de capital realizados hasta el día t (AKt) menos los retiros de capital realizados hasta el día t (RKt), así: [...] b. La variación en el precio de mercado de los títulos que componen el portafolio de inversión, [...] La entidad administradora deberá aplicar la metodología de liquidación para el cálculo de los rendimientos financieros descrita en el artículo 2.3.5.3. al cierre de cada mes [...] La entidad administradora procederá a trasladar a favor de la Nación el resultado positivo de la metodología liquidación descrita en el artículo 2.3.5.3.",
+    "pregunta": "El 1 de octubre de 2026, una agencia nacional entregó a una fiduciaria, mediante un encargo fiduciario, $8.000 millones de recursos de la Nación para un programa de subsidios. Durante octubre hizo un aporte adicional de capital por $2.500 millones, y la fiduciaria hizo retiros de capital por $4.300 millones para pagar a los beneficiarios. Al 31 de octubre, el portafolio de inversiones admisibles, valorado a precios de mercado, vale $6.320 millones; ese valor incluye $85 millones de intereses que la fiduciaria cobró en el mes. El profesional que supervisa el encargo debe verificar el valor de los rendimientos de octubre que se trasladarán a la Nación. ¿Cuál es ese valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$120 millones, que es lo que excede el portafolio al capital entregado, neto de aportes y retiros.",
+        "explicacion": "Correcta. Los rendimientos son el portafolio valorado a precios de mercado menos el saldo de capital (art. 2.3.5.3). Saldo de capital = 8.000 + 2.500 − 4.300 = 6.200. Rendimientos = 6.320 − 6.200 = 120, resultado positivo que se traslada a la Nación (art. 2.3.5.6)."
+      },
+      {
+        "id": "B",
+        "texto": "$85 millones, que son los intereses que la fiduciaria cobró efectivamente durante el mes de octubre.",
+        "explicacion": "Incorrecta. Los intereses cobrados son solo una de las fuentes de rendimiento. La metodología también recoge la variación en el precio de mercado de los títulos, porque compara el portafolio valorado con el saldo de capital (arts. 2.3.5.3 y 2.3.5.4)."
+      },
+      {
+        "id": "C",
+        "texto": "$2.620 millones, que resultan de comparar el portafolio con el capital inicial menos los retiros.",
+        "explicacion": "Incorrecta. Omite el aporte adicional de $2.500 millones, que hace parte del saldo de capital (8.000 + 2.500 − 4.300)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, ya que el portafolio quedó por debajo de los $8.000 millones entregados al comienzo.",
+        "explicacion": "Incorrecta. Compara el portafolio con el capital inicial, sin sumar el aporte ni restar los retiros de capital, que cambian el saldo de capital entregado."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: capital inicial de 8.000, aporte de 2.500, retiros de capital de 4.300 y portafolio de 6.320 al cierre de octubre. Regla: los rendimientos son el portafolio de inversiones admisibles valorado menos el saldo de capital, que es el capital inicial más los aportes menos los retiros (art. 2.3.5.3 del Decreto 1068); se calculan al cierre de cada mes (art. 2.3.5.5) y se traslada a la Nación el resultado positivo (art. 2.3.5.6). Cálculo: 8.000 + 2.500 − 4.300 = 6.200; 6.320 − 6.200 = 120. Conclusión: $120 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Embargo de recursos del Presupuesto General de la Nación para el cumplimiento de condenas (art. 192 del CPACA)",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.6.1.1 y parágrafo",
+      "art. 2.8.1.6.1.2"
+    ],
+    "texto_fuente": "Cuando un embargo de recursos incorporados en el Presupuesto General de la Nación sea ordenado con fundamento en lo dispuesto por el artículo 192 del Código de Procedimiento Administrativo y de lo Contencioso Administrativo, sólo se podrá practicar sobre la cuenta o cuentas corrientes que reciban recursos del presupuesto nacional, abiertas a favor de la entidad u organismo condenado en la sentencia respectiva. [...] En ningún caso procederá el embargo de los recursos depositados por la Nación en cuentas abiertas exclusivamente a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público en el Banco de la República o en cualquier otro establecimiento de crédito. [...] El establecimiento de crédito que reciba una orden de embargo en contravención a lo dispuesto por el presente capítulo, deberá informar inmediatamente a la Contraloría General de la República para que inicie un juicio fiscal contra el funcionario judicial que ordenó el embargo.",
+    "pregunta": "Para el cumplimiento de una condena en los términos del artículo 192 del CPACA, un juzgado administrativo decretó el embargo de recursos del ministerio condenado y ordenó aplicarlo sobre dos cuentas: la cuenta corriente abierta a favor del ministerio, en la que este recibe recursos del presupuesto nacional, y una cuenta abierta exclusivamente a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional en un banco comercial. El asesor de la secretaría general debe conceptuar sobre la procedencia de la medida en cada cuenta. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que procede en las dos cuentas, porque la condena levanta la inembargabilidad, y que los bancos deben poner ambos saldos a disposición del juzgado.",
+        "explicacion": "Incorrecta. El embargo para el cumplimiento de la condena solo puede practicarse sobre las cuentas corrientes que reciben recursos del presupuesto abiertas a favor de la entidad condenada; nunca sobre las abiertas exclusivamente a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional, cuyo saldo no puede ponerse a disposición del juzgado."
+      },
+      {
+        "id": "B",
+        "texto": "Que no procede en ninguna, porque el presupuesto nacional es inembargable aun con sentencia, y que el ministerio debe pedir el desembargo de ambas.",
+        "explicacion": "Incorrecta. El reglamento admite el embargo ordenado con base en el art. 192 del CPACA, pero lo limita a las cuentas corrientes que reciben recursos del presupuesto nacional abiertas a favor de la entidad condenada (art. 2.8.1.6.1.1). La cuenta del ministerio sí es embargable."
+      },
+      {
+        "id": "C",
+        "texto": "Que procede solo en la del ministerio, y que el banco que recibió la orden sobre la cuenta del Tesoro debe informar de inmediato a la Contraloría.",
+        "explicacion": "Correcta. El embargo ordenado con base en el art. 192 del CPACA solo se puede practicar sobre las cuentas corrientes que reciben recursos del presupuesto nacional abiertas a favor de la entidad condenada (art. 2.8.1.6.1.1). Nunca procede sobre cuentas abiertas exclusivamente a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional (parágrafo), y el banco que reciba una orden así debe informar de inmediato a la Contraloría (art. 2.8.1.6.1.2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que procede en la del Tesoro, que concentra los recursos de la Nación, y no en la del ministerio, que debe pedir al juzgado el desembargo de su cuenta.",
+        "explicacion": "Incorrecta. Invierte la regla: la cuenta embargable es la del ministerio condenado, y la abierta exclusivamente a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional no lo es. No hay desembargo que pedir sobre la cuenta del ministerio."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el embargo busca cumplir una condena en los términos del art. 192 del CPACA y recae sobre una cuenta del ministerio condenado y otra exclusiva de la Nación - DGCPTN. Regla: solo puede practicarse sobre las cuentas corrientes que reciben recursos del presupuesto nacional abiertas a favor de la entidad condenada, nunca sobre las abiertas exclusivamente a favor de la Nación - DGCPTN (art. 2.8.1.6.1.1 del Decreto 1068); el banco que reciba una orden en contravención debe informar de inmediato a la Contraloría (art. 2.8.1.6.1.2). Conclusión: procede solo en la cuenta del ministerio.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Declaración de retención presentada sin pago total: eficacia con pago dentro de los dos meses siguientes al vencimiento",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 580-1 inc. 1 (adicionado por el art. 15 de la Ley 1430 de 2010)",
+      "art. 580-1 inc. 5 (modificado por el art. 101 de la Ley 2010 de 2019)",
+      "art. 377"
+    ],
+    "texto_fuente": "Las declaraciones de retención en la fuente presentadas sin pago total no producirán efecto legal alguno, sin necesidad de acto administrativo que así lo declare. [...] La declaración de retención en la fuente que se haya presentado sin pago total antes del vencimiento del plazo para declarar producirá efectos legales, siempre y cuando el pago total de la retención se efectúe o se haya efectuado a más tardar dentro de los dos (2) meses siguientes contados a partir de la fecha del vencimiento del plazo para declarar. Lo anterior sin perjuicio de la liquidación de los intereses moratorios a que haya lugar. [...] La no consignación de la retención en la fuente, dentro de los plazos que indique el Gobierno, causará intereses de mora, los cuales se liquidarán y pagarán por cada mes o fracción de mes calendario de retardo en el pago, de acuerdo con lo previsto en el artículo 634.",
+    "pregunta": "Un establecimiento público nacional, agente de retención, debía declarar las retenciones de septiembre de 2026 a más tardar el miércoles 14 de octubre. Por falta de liquidez, presentó la declaración el viernes 9 de octubre sin pago, y pagó la totalidad de lo retenido el viernes 11 de diciembre de 2026. No tiene saldos a favor para compensar. La profesional de tesorería debe establecer qué efecto tiene esa declaración. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es ineficaz, porque toda declaración de retención presentada sin el pago total carece de efectos y debe presentarse otra vez.",
+        "explicacion": "Incorrecta. Aplica la regla general del inc. 1 del art. 580-1, pero la ley exceptúa la declaración presentada sin pago antes del vencimiento cuando el pago total se hace dentro de los dos meses siguientes al vencimiento del plazo para declarar."
+      },
+      {
+        "id": "B",
+        "texto": "Es ineficaz, porque el pago total se hizo cuando ya habían pasado más de dos meses contados desde la presentación de la declaración.",
+        "explicacion": "Incorrecta. Los dos meses se cuentan desde el vencimiento del plazo para declarar (14 de octubre), no desde la presentación (9 de octubre). El plazo llegaba hasta el 14 de diciembre."
+      },
+      {
+        "id": "C",
+        "texto": "Produce efectos, porque el pago total se hizo dentro de los dos meses siguientes al vencimiento, y se deben intereses moratorios.",
+        "explicacion": "Correcta. La declaración se presentó antes del vencimiento y el pago total se hizo el 11 de diciembre, dentro de los dos meses siguientes al 14 de octubre (hasta el 14 de diciembre). Por eso produce efectos legales, sin perjuicio de los intereses moratorios (art. 580-1 inc. 5), que causa la consignación tardía (art. 377)."
+      },
+      {
+        "id": "D",
+        "texto": "Produce efectos y no causa intereses, porque el pago total se hizo dentro del término de dos meses que concede la ley.",
+        "explicacion": "Incorrecta. Acierta en que la declaración produce efectos, pero el art. 580-1 aclara que ello no impide liquidar los intereses moratorios por el pago tardío."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la declaración se presentó el 9 de octubre, antes del vencimiento (14 de octubre), sin pago, y el pago total llegó el 11 de diciembre. Regla: la declaración de retención presentada sin pago total antes del vencimiento produce efectos si el pago total se hace dentro de los dos meses siguientes al vencimiento del plazo para declarar, sin perjuicio de los intereses moratorios (art. 580-1 inc. 5 del Estatuto Tributario; art. 377). Cálculo: 14 de octubre + 2 meses = 14 de diciembre. Conclusión: es eficaz, con intereses.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Reintegro de saldos de recursos de la Nación en patrimonios autónomos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.3.1.1.1 incs. 1 y 3",
+      "art. 2.3.1.1.1 parágrafos 1 y 2"
+    ],
+    "texto_fuente": "Las entidades ejecutoras del Presupuesto General de la Nación que hayan recibido aportes de la Nación destinados a la ejecución de recursos a través de patrimonios autónomos deben ordenar a los administradores de los patrimonios autónomos, siempre que el contrato lo permita, el reintegro a la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público de los saldos disponibles en dichos patrimonios que no estén amparando obligaciones cuyo giro se haya realizado con más de dos años de anterioridad. [...] Por saldos públicos disponibles en patrimonios autónomos se entenderán los saldos de la cuenta contable de la entidad ejecutora de presupuesto respecto de recursos de la Nación girados al patrimonio autónomo, que no se encuentren amparando obligaciones, deduciendo el valor de los aportes efectuados con recursos de la Nación que se hayan girado en los últimos dos (2) años calendario. PARÁGRAFO 1. Exceptúese de la obligación de reintegro de que trata el presente artículo a los patrimonios autónomos constituidos con recursos públicos para atender proyectos de agua potable y saneamiento básico, y los recursos de previsión y seguridad social que administren prestaciones sociales de carácter económico. PARÁGRAFO 2. En el marco de este capítulo entiéndase por recursos de la Nación girados a patrimonios autónomos que se encuentren amparando obligaciones, aquellos recursos que amparen obligaciones exigibles soportadas en cuentas por pagar con ocasión de la adquisición de bienes o servicios por parte del patrimonio autónomo.",
+    "pregunta": "Un ministerio ejecuta recursos de la Nación por medio de dos patrimonios autónomos, y los contratos de fiducia le permiten ordenar reintegros. Con corte al 30 de septiembre de 2026, el profesional especializado de la subdirección financiera tiene estos datos, en millones de pesos. Patrimonio del programa de vivienda: saldo contable de recursos de la Nación girados, 12.400; obligaciones exigibles soportadas en cuentas por pagar por compras del patrimonio, 1.900; aportes de la Nación girados en los últimos dos años calendario, 4.000. Patrimonio de un programa de acueductos veredales: saldo que no ampara obligaciones, girado hace más de dos años, 3.000. ¿Cuánto debe ordenar reintegrar a la Dirección General de Crédito Público y Tesoro Nacional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$9.500 millones, que suman el saldo neto del patrimonio de vivienda y el saldo libre del de acueductos.",
+        "explicacion": "Incorrecta. Incluye el patrimonio de acueductos, pero los patrimonios constituidos para proyectos de agua potable y saneamiento básico están exceptuados del reintegro (parágrafo 1)."
+      },
+      {
+        "id": "B",
+        "texto": "$8.400 millones, que es el saldo del patrimonio de vivienda menos los aportes girados en los dos últimos años.",
+        "explicacion": "Incorrecta. No descuenta los $1.900 millones que amparan obligaciones exigibles soportadas en cuentas por pagar, que no son saldo disponible (parágrafo 2)."
+      },
+      {
+        "id": "C",
+        "texto": "$10.500 millones, que es el saldo del patrimonio de vivienda menos las obligaciones exigibles que ampara.",
+        "explicacion": "Incorrecta. No descuenta los $4.000 millones de aportes girados en los últimos dos años calendario, que la definición de saldo disponible excluye."
+      },
+      {
+        "id": "D",
+        "texto": "$6.500 millones, que es el saldo del patrimonio de vivienda menos las obligaciones y los aportes recientes.",
+        "explicacion": "Correcta. Saldo disponible = saldo contable de recursos de la Nación (12.400) menos lo que ampara obligaciones exigibles (1.900) menos los aportes girados en los últimos dos años calendario (4.000) = 6.500 (art. 2.3.1.1.1). El patrimonio de acueductos está exceptuado por ser de agua potable (parágrafo 1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el patrimonio de vivienda tiene 12.400 de saldo, 1.900 en obligaciones exigibles y 4.000 de aportes recientes; el otro es de agua potable. Regla: se reintegran los saldos disponibles, que son el saldo contable de recursos de la Nación que no ampara obligaciones, descontados los aportes girados en los últimos dos años calendario; se exceptúan los patrimonios de agua potable y saneamiento básico (art. 2.3.1.1.1 del Decreto 1068). Cálculo: 12.400 − 1.900 − 4.000 = 6.500. Conclusión: $6.500 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TES-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "presupuesto_finanzas",
+    "modulo": "Gestión Financiera y Presupuestal",
+    "tema": "Tesorería",
+    "subtema": "Cancelación del embargo de una cuenta a favor de la Nación tras la liquidación del crédito",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1068 de 2015",
+    "articulos": [
+      "art. 2.8.1.6.1.4 nums. 1 a 3"
+    ],
+    "texto_fuente": "Una vez ejecutoriada la providencia judicial que apruebe la liquidación final del crédito correspondiente a embargos decretados sobre cuentas abiertas a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público, por cuenta de procesos en que hayan sido sujetos demandados órganos ejecutores del Presupuesto General de la Nación, la entidad demandada deberá: 1. Adelantar, conforme a las normas presupuestales, los trámites necesarios para obtener de la Dirección General del Presupuesto Público Nacional del Ministerio de Hacienda y Crédito Público, la apropiación sin situación de fondos en el rubro Sentencias y Conciliaciones, por el valor efectivamente pagado al beneficiario del título que representa el depósito judicial por concepto del embargo. 2. Reintegrar los remanentes a que hubiere lugar, de manera inmediata, en la cuenta que para el efecto indique la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público. 3. Para cancelar la obligación con la Dirección General de Crédito Público y Tesoro Nacional del Ministerio de Hacienda y Crédito Público la entidad deberá expedir un acto administrativo, en el que se reconozca y ordene el gasto, con indicación del reintegro de remanentes efectuados cuando a ello hubiere lugar",
+    "pregunta": "En un proceso ejecutivo contra un departamento administrativo del orden nacional se embargaron $900 millones de una cuenta abierta a favor de la Nación - Dirección General de Crédito Público y Tesoro Nacional, que quedaron en un depósito judicial. Ya quedó ejecutoriada la providencia que aprobó la liquidación final del crédito; al demandante se le pagaron $760 millones con el depósito y el resto se le devolvió a la entidad. La profesional financiera debe proponer el valor de la apropiación que se tramitará y qué hacer con el remanente. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una apropiación con situación de fondos por $900 millones en sentencias y conciliaciones, y conservar el remanente para otras condenas.",
+        "explicacion": "Incorrecta. La apropiación es sin situación de fondos y por el valor efectivamente pagado al beneficiario, y el remanente debe reintegrarse de inmediato a la cuenta que indique la Dirección General de Crédito Público y Tesoro Nacional."
+      },
+      {
+        "id": "B",
+        "texto": "Una apropiación sin situación de fondos por $760 millones en sentencias y conciliaciones, y reintegrar de inmediato el remanente al Tesoro.",
+        "explicacion": "Correcta. La entidad tramita ante la Dirección General del Presupuesto Público Nacional la apropiación sin situación de fondos en el rubro Sentencias y Conciliaciones por el valor efectivamente pagado al beneficiario (760), y reintegra de inmediato el remanente (900 − 760 = 140) en la cuenta que indique la Dirección General de Crédito Público y Tesoro Nacional (art. 2.8.1.6.1.4 nums. 1 y 2). Luego expide el acto que reconoce y ordena el gasto (num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Una apropiación sin situación de fondos por $900 millones en sentencias y conciliaciones, y reintegrar de inmediato el remanente al Tesoro.",
+        "explicacion": "Incorrecta. La apropiación se tramita por lo efectivamente pagado al beneficiario ($760 millones), no por todo lo embargado; los $140 millones restantes se reintegran."
+      },
+      {
+        "id": "D",
+        "texto": "Una apropiación sin situación de fondos por $760 millones en sentencias y conciliaciones, y reintegrar el remanente en el mes siguiente.",
+        "explicacion": "Incorrecta. Acierta en la apropiación, pero el remanente se reintegra de manera inmediata, no en el mes siguiente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se embargaron 900, se pagaron 760 al demandante y la providencia de liquidación está ejecutoriada. Regla: la entidad demandada debe obtener la apropiación sin situación de fondos en el rubro Sentencias y Conciliaciones por el valor efectivamente pagado al beneficiario, reintegrar de inmediato los remanentes en la cuenta que indique la DGCPTN y expedir el acto que reconoce y ordena el gasto (art. 2.8.1.6.1.4 del Decreto 1068). Cálculo: 900 − 760 = 140. Conclusión: apropiación por 760 y reintegro inmediato de 140.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72893",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

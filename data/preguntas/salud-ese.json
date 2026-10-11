@@ -1,0 +1,2223 @@
+[
+  {
+    "id": "TC-SAL-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Atención inicial de urgencias sin contrato, documento ni pago previo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 100 de 1993 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 100 de 1993, art. 168 inc. 1",
+      "Ley 1751 de 2015, art. 10 inc. 1 lit. b",
+      "Ley 1751 de 2015, art. 14 inc. 1"
+    ],
+    "texto_fuente": "La atención inicial de urgencias debe ser prestada en forma obligatoria por todas las entidades públicas y privadas que presten servicios de salud, a todas las personas, independientemente de la capacidad de pago. Su prestación no requiere contrato ni orden previa. El costo de estos servicios será pagado por el Fondo de Solidaridad y Garantía en los casos previstos en el artículo anterior, o por la Entidad Promotora de Salud al cual esté afiliado, en cualquier otro evento. [...] b) Recibir la atención de urgencias que sea requerida con la oportunidad que su condición amerite sin que sea exigible documento o cancelación de pago previo alguno; [...] Para acceder a servicios y tecnologías de salud no se requerirá ningún tipo de autorización administrativa entre el prestador de servicios y la entidad que cumpla la función de gestión de servicios de salud cuando se trate de atención de urgencia.",
+    "pregunta": "Un domingo en la noche llega por sus propios medios al servicio de urgencias de una ESE de segundo nivel un hombre de 58 años con dolor en el pecho desde hace una hora. No trae cédula y su acompañante no lleva dinero. Dice estar afiliado al régimen contributivo en una EPS con la que la ESE no tiene ningún contrato vigente. No se trata de un accidente de tránsito ni de otro evento catastrófico. La auxiliar de admisiones debe abrir el registro de ingreso. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir a la EPS una autorización de ingreso antes del triaje, ya que entre la EPS y la ESE no hay contrato.",
+        "explicacion": "Incorrecta. Trata la urgencia como si fuera un servicio programado. Para la atención de urgencia no se requiere ninguna autorización administrativa entre el prestador y la EPS (Ley 1751, art. 14), y la atención inicial no requiere contrato ni orden previa (Ley 100, art. 168)."
+      },
+      {
+        "id": "B",
+        "texto": "Abrir el ingreso como paciente particular y cobrarle a él la atención, pues su EPS no tiene contrato con la ESE.",
+        "explicacion": "Incorrecta. La falta de contrato no traslada el costo al paciente: según el art. 168 de la Ley 100, la atención inicial de urgencias la paga la EPS a la que esté afiliado, salvo los eventos catastróficos y de tránsito del art. 167. Además, no puede exigirse pago previo (Ley 1751, art. 10 lit. b)."
+      },
+      {
+        "id": "C",
+        "texto": "Abrir el ingreso sin exigir documentos ni pagos, ya que la atención inicial la pagará la EPS del paciente.",
+        "explicacion": "Correcta. La atención inicial de urgencias es obligatoria para toda entidad que preste servicios de salud, sin contrato ni orden previa, y su costo lo paga la EPS de afiliación (Ley 100, art. 168). No se puede exigir documento ni pago previo (Ley 1751, art. 10 lit. b)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirlo a la IPS más cercana de la red de su EPS, ya que con esa EPS la ESE no tiene ningún contrato vigente.",
+        "explicacion": "Incorrecta. La ESE está obligada a prestar la atención inicial de urgencias a todas las personas, haya o no contrato con su EPS (Ley 100, art. 168). Remitirlo sin atenderlo desconoce esa obligación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: es una urgencia de un afiliado a una EPS sin contrato con la ESE, que no trae documento ni dinero. Regla: el art. 168 de la Ley 100 obliga a toda entidad que preste servicios de salud a dar la atención inicial de urgencias sin contrato ni orden previa, y pone su costo a cargo de la EPS de afiliación (fuera de los eventos del art. 167). La Ley 1751 prohíbe exigir documento, pago previo o autorización administrativa en la urgencia (arts. 10 lit. b y 14). Conclusión: se abre el ingreso y la atención se cobra a la EPS.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-SAL-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Prohibición de multas por inasistencia y efectos del incumplimiento de deberes",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1438 de 2011 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 1438 de 2011, art. 55",
+      "Ley 1438 de 2011, art. 139 num. 139.8",
+      "Ley 1751 de 2015, art. 10 par. 1"
+    ],
+    "texto_fuente": "Entrada en vigencia esta ley queda prohibido el cobro de cualquier tipo de multas a los cotizantes y beneficiarios de los regímenes contributivo y subsidiado, así como la población vinculada, en lo establecido para citas médicas programadas [...] 139.8 Cumplir las citas y atender los requerimientos del personal administrativo y asistencial de salud [...] Los efectos del incumplimiento de estos deberes solo podrán ser determinados por el legislador. En ningún caso su incumplimiento podrá ser invocado para impedir o restringir el acceso oportuno a servicios de salud requeridos.",
+    "pregunta": "Un usuario del régimen contributivo faltó sin avisar a dos citas de medicina general en una ESE. La coordinadora de consulta externa dispuso dos medidas: cobrarle, antes de darle una nueva cita, un valor por inasistencia igual al de una cuota moderadora, y no asignarle citas durante 30 días por no cumplir sus deberes como usuario. El usuario presenta una queja en la oficina de atención al usuario. ¿Qué debe responderle el técnico que tramita la queja?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La multa no procede, pero el bloqueo de 30 días sí, porque cumplir las citas es un deber legal del usuario.",
+        "explicacion": "Incorrecta. Acierta en la multa, pero olvida que el incumplimiento de un deber no puede invocarse para impedir o restringir el acceso a los servicios (Ley 1751, art. 10 par. 1). Cumplir las citas sí es un deber (Ley 1438, art. 139.8), pero sus efectos solo los define el legislador."
+      },
+      {
+        "id": "B",
+        "texto": "La multa procede si no supera el valor de una cuota moderadora, pero el bloqueo de citas no procede.",
+        "explicacion": "Incorrecta. El art. 55 de la Ley 1438 prohíbe cualquier tipo de multa por inasistencia a citas programadas, sin importar su valor."
+      },
+      {
+        "id": "C",
+        "texto": "Ambas proceden, con tal de que la EPS haya aprobado el reglamento interno de inasistencias de la ESE.",
+        "explicacion": "Incorrecta. Ningún reglamento de la EPS o de la ESE puede autorizar lo que la ley prohíbe: las multas por inasistencia están prohibidas y el incumplimiento de deberes no puede restringir el acceso."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna procede: las multas por faltar a citas están prohibidas y un deber incumplido no limita el acceso.",
+        "explicacion": "Correcta. El art. 55 de la Ley 1438 prohíbe cobrar cualquier tipo de multa por inasistencia a citas programadas, en ambos regímenes. Y el parágrafo 1 del art. 10 de la Ley 1751 impide invocar el incumplimiento de los deberes para impedir o restringir el acceso a los servicios."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ESE quiere cobrar un valor por faltar a citas y, además, bloquear la asignación de citas. Regla: el art. 55 de la Ley 1438 prohíbe cobrar cualquier tipo de multa a los afiliados de ambos regímenes por las citas programadas, y el art. 10 par. 1 de la Ley 1751 dice que el incumplimiento de los deberes no puede invocarse para impedir o restringir el acceso a los servicios. Conclusión: ninguna de las dos medidas procede.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Cobro al SOAT y prueba del accidente de tránsito",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 100 de 1993, Ley 1438 de 2011 y Decreto 780 de 2016",
+    "articulos": [
+      "Ley 100 de 1993, art. 167 par. 1",
+      "Ley 1438 de 2011, art. 143 inc. 1",
+      "Decreto 780 de 2016, art. 2.6.1.4.2.20 num. 1",
+      "Decreto 780 de 2016, art. 2.6.1.4.3.4"
+    ],
+    "texto_fuente": "PARÁGRAFO 1o. En los casos de accidentes de tránsito, el cubrimiento de los servicios médico-quirúrgicos y demás prestaciones continuará a cargo de las aseguradoras autorizadas para administrar los recursos del Seguro Obligatorio de Accidentes de Tránsito con las modificaciones de esta Ley. [...] Para la prueba del accidente de tránsito ante la aseguradora del SOAT, será suficiente la declaración del médico de urgencias sobre este hecho, en el formato que se establezca para el efecto por parte del Ministerio de la Protección Social, sin perjuicio de la intervención de la autoridad de tránsito y de la posibilidad de que la aseguradora del SOAT realice auditorías posteriores. [...] 1. Formulario de reclamación que para el efecto adopte la Dirección de Administración de Fondos de la Protección Social del Ministerio de Salud y de Protección Social, debidamente diligenciado. [...] Ni el Fosyga, ni las aseguradoras autorizadas para operar el SOAT podrán solicitar a los reclamantes documentos adicionales a los establecidos en el presente Capítulo ni en la resolución que emita el Ministerio de Salud y Protección Social para tramitar y pagar los servicios de salud, indemnizaciones y gastos de que trata el presente Capítulo.",
+    "pregunta": "Un peatón atropellado por un automóvil particular con SOAT vigente fue atendido en el servicio de urgencias de una ESE. Está afiliado a una EPS del régimen subsidiado, y el valor de la atención está muy por debajo del tope de cobertura de la póliza. Ninguna autoridad de tránsito acudió al lugar del accidente. Al recibir la reclamación de la ESE, la aseguradora del SOAT respondió que no la tramitará mientras no se le entregue el informe policial del accidente. ¿Qué debe hacer la auxiliar de facturación de la ESE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Insistir en el cobro ante la aseguradora y probar el accidente con lo que declare el médico que atendió al paciente.",
+        "explicacion": "Correcta. Dentro de la cobertura de la póliza, la atención la paga la aseguradora del SOAT (Ley 100, art. 167 par. 1), y para probarle el accidente basta la declaración del médico de urgencias, en el formato que fije el Ministerio, sin perjuicio de la intervención de la autoridad de tránsito (Ley 1438, art. 143). El informe policial no figura entre los documentos de la solicitud de pago (Decreto 780, art. 2.6.1.4.2.20), y la aseguradora no puede pedir documentos adicionales (art. 2.6.1.4.3.4)."
+      },
+      {
+        "id": "B",
+        "texto": "Facturar la atención a la EPS del paciente, porque sin el informe policial no hay cómo probar el accidente.",
+        "explicacion": "Incorrecta. La ley no exige el informe policial: basta la declaración del médico de urgencias. Y mientras la atención esté dentro de la cobertura de la póliza, la paga la aseguradora del SOAT, no la EPS."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir al paciente que consiga el informe ante la autoridad de tránsito y suspender el cobro hasta que lo entregue en la ESE.",
+        "explicacion": "Incorrecta. El informe policial no es necesario para probar el accidente ni puede exigirse como documento adicional (Decreto 780, art. 2.6.1.4.3.4), y encargar ese trámite al paciente le traslada una carga administrativa que corresponde a la ESE."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar la atención a la ADRES, porque sin un informe de la autoridad el accidente se trata como de vehículo no identificado.",
+        "explicacion": "Incorrecta. El vehículo está identificado y tiene SOAT vigente; la falta de informe de tránsito no cambia eso, y el accidente se prueba con la declaración del médico de urgencias."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el vehículo tenía SOAT vigente, la atención está dentro de la cobertura y no hay informe de tránsito. Regla: la atención la cubre la aseguradora del SOAT (Ley 100, art. 167 par. 1); para probarle el accidente basta la declaración del médico de urgencias, sin perjuicio de la intervención de la autoridad de tránsito (Ley 1438, art. 143), y la aseguradora no puede pedir documentos adicionales a los del reglamento, que no incluye el informe policial (Decreto 780, arts. 2.6.1.4.2.20 y 2.6.1.4.3.4). Conclusión: la ESE insiste ante la aseguradora con esa declaración.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derecho fundamental a la salud",
+    "subtema": "Principio de continuidad ante el vencimiento de un contrato",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 6 inc. 2 lit. d"
+    ],
+    "texto_fuente": "d) Continuidad. Las personas tienen derecho a recibir los servicios de salud de manera continua. Una vez la provisión de un servicio ha sido iniciada, este no podrá ser interrumpido por razones administrativas o económicas;",
+    "pregunta": "El 30 de septiembre de 2026 venció el contrato entre una ESE y una EPS, y la renovación sigue en negociación. Una afiliada de esa EPS había empezado en la ESE un tratamiento de 20 sesiones de fisioterapia, ordenado tras una fractura de cadera, y lleva 8. La ESE es el único prestador de fisioterapia del municipio, y el más cercano de la red de la EPS queda a cuatro horas por carretera. El área de contratación de la ESE pidió suspender las 12 sesiones restantes hasta que se firme el nuevo contrato. La paciente acude a la oficina de atención al usuario. ¿Qué debe hacer el técnico que atiende el caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Orientar a la paciente para que pida a su EPS otra IPS de su red y haga allí las 12 sesiones pendientes.",
+        "explicacion": "Incorrecta. La ESE ya inició el tratamiento y no puede interrumpirlo por el vencimiento del contrato, que es una razón administrativa (Ley 1751, art. 6 lit. d). Enviar a la paciente a mitad del tratamiento a otra IPS, a cuatro horas, lo corta en la práctica y le traslada un asunto contractual entre la ESE y la EPS."
+      },
+      {
+        "id": "B",
+        "texto": "Reportar a la gerencia que las 12 sesiones deben darse aunque el nuevo contrato con la EPS no esté firmado.",
+        "explicacion": "Correcta. Según el principio de continuidad (Ley 1751, art. 6 lit. d), una vez iniciada la provisión de un servicio, no puede interrumpirse por razones administrativas o económicas, y el vencimiento del contrato es una razón de ese tipo. La ESE debe terminar el tratamiento que empezó, y el técnico reporta el caso a quien decide, dentro de su rol."
+      },
+      {
+        "id": "C",
+        "texto": "Registrar la queja y reprogramar las sesiones para cuando la ESE y la EPS firmen el nuevo contrato.",
+        "explicacion": "Incorrecta. Aplazar las sesiones hasta que haya contrato es interrumpir el servicio por una razón administrativa, lo que el principio de continuidad no permite."
+      },
+      {
+        "id": "D",
+        "texto": "Seguir con las sesiones si la paciente firma un compromiso de pagarlas en caso de que la EPS no las reconozca.",
+        "explicacion": "Incorrecta. Condicionar el tratamiento a que la paciente asuma el costo es interrumpirlo por una razón económica y trasladarle una carga que no le corresponde."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el tratamiento ya había empezado en la ESE (8 de 20 sesiones), se quiere suspender porque venció el contrato con la EPS y no hay otro prestador cercano. Regla: el principio de continuidad (Ley 1751, art. 6 lit. d) prohíbe interrumpir un servicio ya iniciado por razones administrativas o económicas. Conclusión: el técnico debe reportar a la gerencia que las sesiones deben continuar; la falta de contrato es un asunto entre la ESE y la EPS que no puede afectar a la paciente.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Plazo del gerente para presentar el proyecto de plan de gestión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 73 num. 73.1"
+    ],
+    "texto_fuente": "73.1 El Director o Gerente de la Empresa Social del Estado deberá presentar a la Junta Directiva el proyecto de plan de gestión de la misma, dentro de los treinta (30) días hábiles siguientes a su posesión en el cargo",
+    "pregunta": "El nuevo gerente de una ESE departamental se posesionó el lunes 16 de febrero de 2026. La auxiliar administrativa que apoya a la junta directiva debe anotar en el cronograma de la junta la fecha máxima en que el gerente tiene que entregarle el proyecto de plan de gestión. En ese lapso el único festivo es el lunes 23 de marzo. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El lunes 9 de marzo de 2026.",
+        "explicacion": "Incorrecta. Corresponde a 15 días hábiles, que es el plazo de la junta para aprobar el plan, no el del gerente para presentarlo."
+      },
+      {
+        "id": "B",
+        "texto": "El miércoles 18 de marzo de 2026.",
+        "explicacion": "Incorrecta. Cuenta 30 días calendario, pero la ley habla de días hábiles."
+      },
+      {
+        "id": "C",
+        "texto": "El lunes 30 de marzo de 2026.",
+        "explicacion": "Incorrecta. Cuenta 30 días hábiles, pero toma como hábil el festivo del 23 de marzo."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 31 de marzo de 2026.",
+        "explicacion": "Correcta. Son 30 días hábiles contados desde el 17 de febrero, sin sábados, domingos ni el festivo del 23 de marzo (Ley 1438, art. 73.1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el gerente se posesionó el 16 de febrero de 2026. Regla: el art. 73.1 de la Ley 1438 le da 30 días hábiles siguientes a su posesión para presentar a la junta el proyecto de plan de gestión. Cálculo: contando desde el 17 de febrero, sin fines de semana ni el festivo del 23 de marzo, el día 30 es el martes 31 de marzo; si no se descuenta el festivo, se llega por error al 30 de marzo. Conclusión: 31 de marzo de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Plazo de la junta para evaluar el informe anual del plan de gestión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 74 num. 74.1",
+      "art. 74 num. 74.2"
+    ],
+    "texto_fuente": "74.1 El Director o Gerente de la Empresa Social del Estado del orden territorial deberá presentar a la Junta Directiva un informe anual sobre el cumplimiento del plan de gestión, el cual deberá ser presentado a más tardar el 1o de abril de cada año con corte al 31 de diciembre del año inmediatamente anterior. [...] 74.2 La Junta Directiva deberá evaluar el cumplimiento del plan de gestión del Director o Gerente, dentro de los quince (15) días hábiles siguientes a la presentación del informe de gestión.",
+    "pregunta": "La gerente de una ESE municipal radicó ante la junta directiva, el lunes 30 de marzo de 2026, el informe anual de cumplimiento de su plan de gestión con corte al 31 de diciembre de 2025. El técnico administrativo que lleva la secretaría de la junta debe programar la sesión de evaluación y avisar a los miembros cuál es el último día que tienen para evaluar. El 2 y el 3 de abril de 2026 son festivos. ¿Qué día debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 14 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días calendario, pero el plazo de la junta es de días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "El lunes 20 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días hábiles, pero toma como hábiles los festivos del 2 y el 3 de abril."
+      },
+      {
+        "id": "C",
+        "texto": "El miércoles 22 de abril de 2026.",
+        "explicacion": "Correcta. El plazo corre desde la presentación del informe (30 de marzo). Quince días hábiles contados desde el 31 de marzo, sin fines de semana ni los festivos del 2 y 3 de abril, terminan el 22 de abril (Ley 1438, art. 74.2)."
+      },
+      {
+        "id": "D",
+        "texto": "El viernes 24 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta los 15 días hábiles desde el 1 de abril, que es el límite para presentar el informe, y no desde la fecha en que se presentó."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el informe se presentó el 30 de marzo, antes del límite legal del 1 de abril. Regla: el art. 74.2 de la Ley 1438 da a la junta 15 días hábiles siguientes a la presentación del informe para evaluar el plan de gestión. Cálculo: desde el 31 de marzo, sin fines de semana ni los festivos del 2 y 3 de abril, el día 15 es el miércoles 22 de abril; si se ignoran los festivos se llega al 20, y si se cuenta desde el 1 de abril, al 24. Conclusión: 22 de abril de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Junta directiva de las ESE",
+    "subtema": "Repetición y número de periodos de los representantes de los usuarios",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 70 num. 70.3",
+      "art. 70 par. 1"
+    ],
+    "texto_fuente": "70.3 Un representante de los usuarios, designado por las alianzas o asociaciones de usuarios legalmente establecidas, mediante convocatoria realizada por parte de la dirección departamental, distrital o municipal de salud. [...] PARÁGRAFO 1o. Los representantes de los usuarios y de los servidores públicos de la entidad tendrán un periodo de dos (2) años y no podrán ser reelegidos para periodos consecutivos, ni podrán ser parte de las Juntas Directivas de las Empresas Sociales del Estado en más de dos ocasiones. En los municipios de 6ª categoría, los representantes de los usuarios y los empleados públicos tendrán un periodo de 4 años.",
+    "pregunta": "Una ESE de primer nivel funciona en un municipio de sexta categoría. La representante de los usuarios en su junta directiva es Marta, designada para el periodo de febrero de 2023 a enero de 2027. Para el periodo que empieza en febrero de 2027, las asociaciones de usuarios postulan a tres personas: la propia Marta; Jorge, que fue representante de los usuarios en esa junta de 2011 a 2015 y de 2019 a 2023; y Pedro, que lo fue de 2015 a 2019. El auxiliar administrativo que lleva el archivo de la junta debe informar a la dirección municipal de salud quiénes pueden ser designados. ¿Qué debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Marta y Pedro, porque quien termina su primer periodo puede ser designado una vez más.",
+        "explicacion": "Incorrecta. Los representantes no pueden ser reelegidos para periodos consecutivos, así que Marta no puede seguir en el periodo que sigue al suyo."
+      },
+      {
+        "id": "B",
+        "texto": "Jorge y Pedro, porque ninguno de los dos ocupa el cargo en el periodo que está por terminar.",
+        "explicacion": "Incorrecta. Acierta en que ninguno repetiría en periodos seguidos, pero Jorge ya integró la junta dos veces y la ley impide hacerlo en más de dos ocasiones."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno, porque quien ya integró la junta en algún periodo no puede volver a ser designado.",
+        "explicacion": "Incorrecta. La ley no prohíbe volver a la junta: prohíbe la reelección para periodos consecutivos y la participación en más de dos ocasiones. Pedro no está en ninguno de esos casos."
+      },
+      {
+        "id": "D",
+        "texto": "Solo Pedro, porque Marta repetiría en periodos seguidos y Jorge ya estuvo dos veces.",
+        "explicacion": "Correcta. Marta no puede ser reelegida para un periodo consecutivo y Jorge ya integró la junta en dos ocasiones, el máximo permitido (Ley 1438, art. 70 par. 1). Pedro estuvo una sola vez y su periodo no es el inmediatamente anterior."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: en esta ESE de primer nivel, Marta está en el periodo inmediatamente anterior, Jorge ya fue representante dos veces y Pedro una sola, en un periodo no consecutivo. Regla: el art. 70 par. 1 de la Ley 1438 prohíbe reelegir a los representantes para periodos consecutivos y les impide integrar juntas de ESE en más de dos ocasiones; en los municipios de sexta categoría el periodo es de 4 años. Conclusión: solo Pedro puede ser designado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Plazo del prestador para responder las glosas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 57 inc. 1",
+      "art. 57 inc. 2"
+    ],
+    "texto_fuente": "Las entidades responsables del pago de servicios de salud dentro de los veinte (20) días hábiles siguientes a la presentación de la factura con todos sus soportes, formularán y comunicarán a los prestadores de servicios de salud las glosas a cada factura, con base en la codificación y alcance definidos en la normatividad vigente. [...] El prestador de servicios de salud deberá dar respuesta a las glosas presentadas por las entidades responsables del pago de servicios de salud, dentro de los quince (15) días hábiles siguientes a su recepción, indicando su aceptación o justificando la no aceptación. La entidad responsable del pago, dentro de los diez (10) días hábiles siguientes a la recepción de la respuesta, decidirá si levanta total o parcialmente las glosas o las deja como definitivas.",
+    "pregunta": "Una ESE radicó ante una EPS, el lunes 7 de septiembre de 2026, una factura con todos sus soportes. La EPS le comunicó las glosas el viernes 2 de octubre de 2026, y la ESE las recibió ese mismo día. La auxiliar de facturación debe registrar en el sistema el último día que tiene la ESE para contestarlas, aceptándolas o explicando por qué no las acepta. El 12 de octubre y el 2 de noviembre de 2026 son festivos. ¿Qué día debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El lunes 19 de octubre de 2026.",
+        "explicacion": "Incorrecta. Corresponde a 10 días hábiles, que es el plazo de la EPS para decidir sobre la respuesta, no el de la ESE para responder."
+      },
+      {
+        "id": "B",
+        "texto": "El viernes 23 de octubre de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días hábiles, pero toma como hábil el festivo del 12 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "El lunes 26 de octubre de 2026.",
+        "explicacion": "Correcta. El prestador tiene 15 días hábiles siguientes a la recepción de las glosas (Ley 1438, art. 57). Contados desde el 5 de octubre, sin fines de semana ni el festivo del 12 de octubre, terminan el 26 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 3 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Aplica 20 días hábiles, que es el plazo de la EPS para formular las glosas, no el de la ESE para responderlas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ESE recibió las glosas el viernes 2 de octubre de 2026 (la EPS las formuló a tiempo: sus 20 días hábiles desde la radicación vencían el 5 de octubre). Regla: el art. 57 de la Ley 1438 da al prestador 15 días hábiles siguientes a la recepción para responder. Cálculo: desde el 5 de octubre, sin fines de semana ni el festivo del 12 de octubre, el día 15 es el lunes 26 de octubre; sin descontar el festivo saldría el 23. Conclusión: 26 de octubre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención primaria en salud",
+    "subtema": "Funciones de los equipos básicos de salud frente a personas no afiliadas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1438 de 2011 y Ley 100 de 1993",
+    "articulos": [
+      "Ley 1438 de 2011, art. 16 num. 16.3",
+      "Ley 1438 de 2011, art. 16 num. 16.4",
+      "Ley 1438 de 2011, art. 32 inc. 2",
+      "Ley 100 de 1993, art. 213 inc. 3"
+    ],
+    "texto_fuente": "16.3 Informar sobre el portafolio de servicios de la protección social en salud a las familias de acuerdo a sus necesidades y a las políticas y reglamentación de dichos servicios. 16.4 Promover la afiliación al sistema, la identificación plena de las familias, de manera que al identificar una persona no afiliada al sistema se inicie el trámite de afiliación para que puedan acceder a los servicios de protección social. [...] Cuando una persona requiera atención en salud y no esté afiliado, se procederá de la siguiente forma: [...] se inscribirán ante la Dirección de Salud correspondiente, la cual calificará su condición de beneficiario del subsidio, de acuerdo con la reglamentación que se expida para el efecto.",
+    "pregunta": "Un auxiliar de enfermería que integra el equipo básico de salud de una ESE visita una vereda para diligenciar la ficha familiar. En una de las viviendas encuentra que el abuelo, de 70 años, no figura en ningún régimen desde hace dos años y hoy no tiene síntomas. Según las funciones que la Ley 1438 de 2011 asigna a los equipos básicos de salud, ¿qué debe hacer el auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Poner en marcha la gestión para afiliarlo al sistema con la información recogida en la visita familiar.",
+        "explicacion": "Correcta. Entre las funciones de los equipos básicos está promover la afiliación: cuando identifican a una persona no afiliada, debe iniciarse el trámite para que acceda a los servicios de protección social (Ley 1438, art. 16.4)."
+      },
+      {
+        "id": "B",
+        "texto": "Calificarlo como beneficiario del subsidio con la ficha familiar, para que la EPS lo reciba sin otro trámite.",
+        "explicacion": "Incorrecta. La calificación de la condición de beneficiario del subsidio la hace la dirección de salud correspondiente (Ley 100, art. 213), no el equipo básico."
+      },
+      {
+        "id": "C",
+        "texto": "Anotarlo en la ficha y esperar a que consulte por alguna enfermedad, pues entonces la ESE lo afiliará.",
+        "explicacion": "Incorrecta. Confunde la función del equipo con la regla del art. 32 de la Ley 1438 para quien pide atención sin estar afiliado. El equipo debe iniciar el trámite cuando identifica a la persona, sin esperar a que enferme."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar a la familia el portafolio de servicios de protección social y dejar en sus manos la afiliación.",
+        "explicacion": "Incorrecta. Informar a las familias sobre el portafolio de servicios es otra función del equipo (art. 16.3), pero no reemplaza la de iniciar el trámite de afiliación cuando identifica a una persona no afiliada (art. 16.4)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: en la visita familiar, el equipo básico identifica a una persona sin afiliación. Regla: el art. 16.4 de la Ley 1438 asigna a los equipos básicos promover la afiliación, de manera que al identificar a una persona no afiliada se inicie el trámite; informar el portafolio (art. 16.3) no basta, y calificar a alguien como beneficiario del subsidio corresponde a la dirección de salud (Ley 100, art. 213). Conclusión: el auxiliar debe poner en marcha la afiliación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-SAL-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Sujetos de especial protección y prohibición de trasladar cargas administrativas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 10 inc. 1 lit. p",
+      "art. 11 inc. 1"
+    ],
+    "texto_fuente": "p) A que no se le trasladen las cargas administrativas y burocráticas que les corresponde asumir a los encargados o intervinientes en la prestación del servicio; [...] La atención de niños, niñas y adolescentes, mujeres en estado de embarazo, desplazados, víctimas de violencia y del conflicto armado, la población adulta mayor, personas que sufren de enfermedades huérfanas y personas en condición de discapacidad, gozarán de especial protección por parte del Estado. Su atención en salud no estará limitada por ningún tipo de restricción administrativa o económica.",
+    "pregunta": "Una mujer con 30 semanas de embarazo llega a una ESE para la ecografía obstétrica que su médico ordenó y que la ESE le había agendado para ese día. En el sistema, la autorización de su EPS aparece «en trámite» por un error de digitación en el código del procedimiento; la EPS tarda hasta tres días hábiles en corregir estos errores, y el contrato le permite glosar los servicios prestados sin autorización. El procedimiento interno dice que, en esos casos, la usuaria debe ir a la oficina de la EPS a corregir la orden. ¿Qué debe hacer el auxiliar de admisiones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Admitirla para la ecografía de hoy y encargarse, desde la ESE, de que la EPS corrija el código de la autorización.",
+        "explicacion": "Correcta. La atención de una mujer embarazada no puede limitarse por restricciones administrativas o económicas (Ley 1751, art. 11), así que el error en la autorización no aplaza la ecografía. Y la corrección es una carga administrativa de la ESE y la EPS, que no se traslada a la usuaria (art. 10 lit. p). El riesgo de glosa se resuelve entre la ESE y la EPS."
+      },
+      {
+        "id": "B",
+        "texto": "Darle una nueva cita prioritaria y pedirle que lleve la orden a la EPS para que corrijan el código de la autorización.",
+        "explicacion": "Incorrecta en los dos puntos: aplaza la atención de una gestante por un problema administrativo (art. 11) y le traslada el trámite de corrección (art. 10 lit. p). La prioridad en la nueva cita no compensa ninguno de los dos errores."
+      },
+      {
+        "id": "C",
+        "texto": "Admitirla para la ecografía de hoy y pedirle que lleve después la orden a la EPS para que corrijan el código errado.",
+        "explicacion": "Incorrecta. Acierta en no aplazar la ecografía, pero sigue trasladando a la usuaria la corrección de la orden, una carga administrativa que corresponde a la ESE y a la EPS (art. 10 lit. p)."
+      },
+      {
+        "id": "D",
+        "texto": "Encargarse, desde la ESE, de que la EPS corrija el código y darle una nueva cita prioritaria cuando llegue la autorización.",
+        "explicacion": "Incorrecta. Acierta en que la ESE asume el trámite, pero aplaza la ecografía de una gestante hasta que llegue la autorización. El riesgo de glosa no justifica limitar su atención por una restricción administrativa (art. 11)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la usuaria es una gestante y el problema es un error administrativo en la autorización. Regla: la atención de las mujeres embarazadas no puede limitarse por restricciones administrativas o económicas (Ley 1751, art. 11), y al usuario no se le trasladan las cargas administrativas que corresponden a quienes intervienen en la prestación (art. 10 lit. p). Conclusión: se practica la ecografía y la ESE gestiona la corrección con la EPS; aplazar la cita o enviar a la usuaria a la EPS incumple una de las dos reglas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65,
+      "nota": "La opción D solo es defendible ignorando el art. 11 de la Ley 1751: la atención de la gestante no puede quedar supeditada a trámites administrativos."
+    }
+  },
+  {
+    "id": "TC-SAL-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Régimen jurídico de las ESE",
+    "subtema": "Régimen de contratación, estatuto de la junta y cláusulas exorbitantes",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 100 de 1993, Ley 1438 de 2011 y Ley 80 de 1993",
+    "articulos": [
+      "Ley 100 de 1993, art. 194",
+      "Ley 100 de 1993, art. 195 num. 6",
+      "Ley 1438 de 2011, art. 76 inc. 1",
+      "Ley 80 de 1993, art. 18 inc. 1"
+    ],
+    "texto_fuente": "constituyen una categoría especial de entidad pública descentralizada, con personería jurídica, patrimonio propio y autonomía administrativa [...] 6. En materia contractual se regirá por el derecho privado, pero podrá discrecionalmente utilizar las cláusulas exorbitantes previstas en el estatuto general de contratación de la administración pública. [...] respetando los principios de la actuación administrativa y la contratación pública. Para lo anterior la Junta Directiva deberá adoptar un estatuto de contratación de acuerdo con los lineamientos que defina el Ministerio de la Protección Social. [...] La caducidad es la estipulación en virtud de la cual si se presenta alguno de los hechos constitutivos de incumplimiento de las obligaciones a cargo del contratista, que afecte de manera grave y directa la ejecución del contrato y evidencie que puede conducir a su paralización, la entidad por medio de acto administrativo debidamente motivado lo dará por terminado y ordenará su liquidación en el estado en que se encuentre.",
+    "pregunta": "El gerente de una ESE departamental va a contratar el suministro de medicamentos para 2027 y quiere incluir la cláusula de caducidad, para poder darlo por terminado mediante acto administrativo si el proveedor incumple de forma grave. Pide al asesor jurídico un concepto sobre las reglas de selección aplicables y sobre si puede pactar esa cláusula. ¿Qué debe conceptuar el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debe usar las modalidades de selección de la Ley 1150, por ser una entidad pública descentralizada, y la cláusula es obligatoria.",
+        "explicacion": "Incorrecta. Aunque la ESE es una entidad pública descentralizada, la Ley 100 la somete en materia contractual al derecho privado (art. 195 num. 6), y las cláusulas exorbitantes, como la caducidad, son para ella discrecionales, no obligatorias."
+      },
+      {
+        "id": "B",
+        "texto": "Aplica el derecho privado según el manual que expida el gerente por resolución, y no puede pactar cláusulas exorbitantes.",
+        "explicacion": "Incorrecta en dos puntos: el estatuto de contratación lo adopta la junta directiva (Ley 1438, art. 76), y la ESE sí puede usar discrecionalmente las cláusulas exorbitantes del estatuto general (Ley 100, art. 195 num. 6), entre ellas la caducidad."
+      },
+      {
+        "id": "C",
+        "texto": "Aplica el derecho privado según el estatuto que adopte la junta directiva, y puede incluir esa cláusula si la juzga conveniente.",
+        "explicacion": "Correcta. La ESE se rige por el derecho privado en materia contractual y puede utilizar discrecionalmente las cláusulas exorbitantes del estatuto general (Ley 100, art. 195 num. 6), entre ellas la caducidad, que permite terminar el contrato por un incumplimiento grave del contratista (Ley 80, art. 18). Sus reglas internas están en el estatuto de contratación que adopta la junta directiva según los lineamientos del Ministerio (Ley 1438, art. 76)."
+      },
+      {
+        "id": "D",
+        "texto": "Debe usar las modalidades de la Ley 1150 para comprar medicamentos, aunque las cláusulas exorbitantes quedan a su discreción.",
+        "explicacion": "Incorrecta. Mezcla los dos regímenes: la facultad discrecional de pactar cláusulas exorbitantes es propia del régimen de derecho privado de las ESE, que seleccionan a sus contratistas según el estatuto de contratación de la junta."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: una ESE va a contratar un suministro y quiere pactar la caducidad, cláusula exorbitante que permite terminar el contrato por un incumplimiento grave del contratista (Ley 80, art. 18). Regla: la ESE es una entidad pública descentralizada (Ley 100, art. 194), pero en materia contractual se rige por el derecho privado y puede usar discrecionalmente las cláusulas exorbitantes del estatuto general (art. 195 num. 6); su estatuto de contratación lo adopta la junta directiva (Ley 1438, art. 76). Conclusión: derecho privado con el estatuto de la junta, y la cláusula es opcional.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Riesgo financiero de las ESE",
+    "subtema": "Categorización en riesgo alto por información no corregida",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 80 inc. 1",
+      "art. 80 inc. 3"
+    ],
+    "texto_fuente": "El Ministerio de la Protección Social determinará y comunicará a las direcciones departamentales, municipales y distritales de salud, a más tardar el 30 de mayo de cada año, el riesgo de las Empresas Sociales del Estado teniendo en cuenta sus condiciones de mercado, de equilibrio y viabilidad financiero, a partir de sus indicadores financieros [...] Cuando no se reciba la información utilizada para la categorización del riesgo de una Empresa Social del Estado o se detecte alguna imprecisión en esta y no sea corregida o entregada oportunamente, dicha empresa quedará categorizada en riesgo alto y deberá adoptar un programa de saneamiento fiscal y financiero, sin perjuicio de las investigaciones que se deban adelantar por parte de los organismos de vigilancia y control.",
+    "pregunta": "Al revisar la información financiera de una ESE municipal para la categorización anual del riesgo, el Ministerio de Salud encontró inconsistencias en los ingresos reportados y pidió corregirlas; la ESE no envió la corrección a tiempo. La gerente sostiene que, con sus estados financieros reales, la entidad tendría riesgo bajo, y pide al profesional de planeación un concepto sobre la situación en que queda la ESE. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Queda en riesgo alto y debe adoptar un programa de saneamiento fiscal y financiero, aunque sus cifras reales sean sanas.",
+        "explicacion": "Correcta. Cuando una imprecisión en la información para la categorización no se corrige oportunamente, la ESE queda en riesgo alto y debe adoptar un programa de saneamiento fiscal y financiero, sin perjuicio de las investigaciones (Ley 1438, art. 80)."
+      },
+      {
+        "id": "B",
+        "texto": "Conserva la categoría de riesgo del año anterior hasta que corrija la información y el Ministerio la vuelva a evaluar.",
+        "explicacion": "Incorrecta. La ley no prevé mantener la categoría anterior: la consecuencia de no corregir a tiempo es quedar en riesgo alto."
+      },
+      {
+        "id": "C",
+        "texto": "Queda en riesgo medio, porque una inconsistencia no corregida no demuestra por sí sola un desequilibrio financiero.",
+        "explicacion": "Incorrecta. La ley no exige probar el desequilibrio: la falta de corrección oportuna lleva directamente a la categoría de riesgo alto."
+      },
+      {
+        "id": "D",
+        "texto": "La categoriza la Superintendencia con los estados financieros reales, porque el Ministerio no cuenta con datos válidos.",
+        "explicacion": "Incorrecta. La categorización del riesgo la determina el Ministerio, y la ley regula expresamente qué pasa si la información no se corrige: la ESE queda en riesgo alto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el Ministerio detectó imprecisiones en la información y la ESE no las corrigió a tiempo. Regla: el art. 80 de la Ley 1438 dispone que, cuando no se recibe la información para categorizar el riesgo o una imprecisión no se corrige oportunamente, la ESE queda categorizada en riesgo alto y debe adoptar un programa de saneamiento fiscal y financiero, sin perjuicio de las investigaciones. Conclusión: riesgo alto y programa de saneamiento; las cifras reales no reemplazan la información no corregida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-013",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derecho fundamental a la salud",
+    "subtema": "Criterios de exclusión y prohibición de fraccionar servicios cubiertos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 15 inc. 2 lits. a, b, d y f",
+      "art. 15 inc. 3",
+      "art. 6 inc. 2 lit. a",
+      "art. 17 inc. 1"
+    ],
+    "texto_fuente": "En todo caso, los recursos públicos asignados a la salud no podrán destinarse a financiar servicios y tecnologías en los que se advierta alguno de los siguientes criterios: a) Que tengan como finalidad principal un propósito cosmético o suntuario no relacionado con la recuperación o mantenimiento de la capacidad funcional o vital de las personas; b) Que no exista evidencia científica sobre su seguridad y eficacia clínica; [...] d) Que su uso no haya sido autorizado por la autoridad competente; [...] f) Que tengan que ser prestados en el exterior. [...] Las decisiones de exclusión no podrán resultar en el fraccionamiento de un servicio de salud previamente cubierto, y ser contrarias al principio de integralidad e interculturalidad. [...] a) Universalidad. Los residentes en el territorio colombiano gozarán efectivamente del derecho fundamental a la salud en todas las etapas de la vida; [...] Se garantiza la autonomía de los profesionales de la salud para adoptar decisiones sobre el diagnóstico y tratamiento de los pacientes que tienen a su cargo. Esta autonomía será ejercida en el marco de esquemas de autorregulación, la ética, la racionalidad y la evidencia científica.",
+    "pregunta": "El Ministerio de Salud publicó para participación un borrador con cuatro exclusiones: (1) el blanqueamiento dental con fines solo estéticos; (2) un medicamento en una indicación para la que el Invima no ha autorizado su uso; (3) la anestesia general en la cirugía de hernia inguinal, cirugía que seguirá cubierta; y (4) un tratamiento que solo se presta en el exterior. El asesor de planeación de una ESE departamental debe enviar observaciones y señalar cuál de las exclusiones contraría la Ley 1751 de 2015. ¿Cuál debe señalar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La del blanqueamiento, porque solo pueden excluirse los servicios sin evidencia científica sobre su seguridad y eficacia.",
+        "explicacion": "Incorrecta. La falta de evidencia científica sobre seguridad y eficacia es solo uno de los criterios (art. 15 lit. b). Que la finalidad principal sea cosmética o suntuaria, sin relación con la capacidad funcional o vital, también lo es (lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "La del medicamento, porque la ley garantiza la autonomía del médico tratante para decidir el tratamiento de su paciente.",
+        "explicacion": "Incorrecta. La autonomía profesional se ejerce en el marco de la racionalidad y la evidencia científica (art. 17), y no obliga a financiar con recursos públicos un uso que la autoridad competente no ha autorizado, que es un criterio de exclusión (art. 15 lit. d)."
+      },
+      {
+        "id": "C",
+        "texto": "La del tratamiento en el exterior, porque los residentes en Colombia gozan del derecho a la salud de manera universal.",
+        "explicacion": "Incorrecta. La universalidad se refiere a los residentes en el territorio colombiano (art. 6 lit. a), y la ley prevé como criterio de exclusión que el servicio tenga que prestarse en el exterior (art. 15 lit. f)."
+      },
+      {
+        "id": "D",
+        "texto": "La de la anestesia, porque la cirugía que el plan mantiene no podría practicarse de forma completa sin ella.",
+        "explicacion": "Correcta. Las decisiones de exclusión no pueden fraccionar un servicio previamente cubierto ni ser contrarias a la integralidad (art. 15 inc. 3). Excluir la anestesia de una cirugía que sigue cubierta la deja incompleta."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: tres exclusiones encajan en criterios de la ley y una quita un elemento de una cirugía que sigue cubierta. Regla: el art. 15 de la Ley 1751 permite excluir, entre otros, lo cosmético o suntuario (lit. a), lo no autorizado por la autoridad competente (lit. d) y lo que deba prestarse en el exterior (lit. f), pero prohíbe que una exclusión fraccione un servicio previamente cubierto. La autonomía médica (art. 17) y la universalidad (art. 6) no anulan esos criterios. Conclusión: la exclusión contraria a la ley es la de la anestesia.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Plazos para la remoción del gerente por evaluación insatisfactoria",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 74 num. 74.4",
+      "art. 74 num. 74.5"
+    ],
+    "texto_fuente": "74.4 La decisión de la Junta Directiva tendrá recurso de reposición ante la misma junta y de apelación en el efecto suspensivo, ante el Superintendente Nacional de Salud, para resolver dichos recursos se contará con un término de quince días (15) hábiles. 74.5 Una vez cumplido el proceso establecido en el presente artículo y en firme el resultado de la evaluación y esta fuere insatisfactorio dicho resultado será causal de retiro del servicio del Director o Gerente, para lo cual la Junta Directiva dentro de los cinco (5) días hábiles siguientes a haber quedado en firme el resultado de la evaluación, deberá solicitar al nominador con carácter obligatorio para este, la remoción del Director o Gerente aun sin terminar su período, para lo cual el nominador deberá expedir el acto administrativo correspondiente dentro de los cinco (5) días hábiles siguientes, contra este acto procederán los recursos de ley.",
+    "pregunta": "La junta directiva de una ESE municipal calificó como insatisfactorio el cumplimiento del plan de gestión del gerente. El gerente interpuso los recursos y el Superintendente Nacional de Salud confirmó la calificación en apelación; con la notificación de esa decisión, el resultado quedó en firme el miércoles 3 de junio de 2026. La junta envió al alcalde la solicitud de remoción el último día del plazo legal, que se cuenta desde la firmeza; el plazo del alcalde para expedir el acto se cuenta desde esa solicitud. El asesor jurídico de la alcaldía debe indicar el último día para expedir el acto de remoción. En junio de 2026 son festivos los lunes 8, 15 y 29. ¿Cuál es ese día?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 16 de junio de 2026.",
+        "explicacion": "Incorrecta. Cuenta en días calendario los cinco días del alcalde (del 12 al 16 de junio). La ley habla de días hábiles: sin el fin de semana ni el festivo del 15, vencen el 19 de junio."
+      },
+      {
+        "id": "B",
+        "texto": "El miércoles 17 de junio de 2026.",
+        "explicacion": "Incorrecta. Suma bien los dos plazos de cinco días hábiles, pero toma como hábiles los festivos del 8 y el 15 de junio."
+      },
+      {
+        "id": "C",
+        "texto": "El viernes 19 de junio de 2026.",
+        "explicacion": "Correcta. La junta tenía cinco días hábiles desde la firmeza, hasta el jueves 11 de junio (el 8 es festivo). Desde su solicitud, el alcalde tiene los cinco días hábiles siguientes para expedir el acto: sin el festivo del 15, vencen el viernes 19 de junio (Ley 1438, art. 74.5)."
+      },
+      {
+        "id": "D",
+        "texto": "El lunes 6 de julio de 2026.",
+        "explicacion": "Incorrecta. Aplica 15 días hábiles desde la solicitud, que es el término para resolver los recursos contra la evaluación (art. 74.4), no el plazo del nominador para expedir el acto de remoción."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el resultado insatisfactorio quedó en firme el 3 de junio de 2026 y la junta pidió la remoción el último día de su plazo. Regla: el art. 74.5 de la Ley 1438 da a la junta 5 días hábiles desde la firmeza para pedir la remoción, que es obligatoria para el nominador, y a este los 5 días hábiles siguientes a la solicitud para expedir el acto. Cálculo: la junta tenía hasta el jueves 11 de junio (festivo el 8); desde ahí, 5 días hábiles sin el festivo del 15 llegan al viernes 19 de junio. Conclusión: 19 de junio de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-015",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Redes integradas de servicios de salud",
+    "subtema": "Articulación de la red en municipios no certificados",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 61 inc. 3",
+      "art. 62 inc. 1",
+      "art. 64 inc. 1"
+    ],
+    "texto_fuente": "Las Entidades Promotoras de Salud deberán garantizar, y ofrecer los servicios a sus afiliados de manera integral, continua, coordinada y eficiente, con portabilidad, calidad y oportunidad, a través de las redes. [...] Las entidades territoriales, municipios, distritos, departamentos y la Nación, según corresponda, en coordinación con las Entidades Promotoras de Salud a través de los Consejos Territoriales de Seguridad Social en Salud, organizarán y conformarán las redes integradas incluyendo prestadores públicos, privados y mixtos que presten los servicios de acuerdo con el Plan de Beneficios a su cargo. Las redes se habilitarán de acuerdo con la reglamentación que expida el Ministerio de la Protección Social, quien podrá delegar en los departamentos y distritos. [...] La articulación de la red estará a cargo de las entidades territoriales en coordinación con las Entidades Promotoras de Salud, a través de los Consejos Territoriales de la Seguridad Social en Salud; en el caso de los municipios no certificados la entidad territorial será el departamento",
+    "pregunta": "Una ESE de primer nivel atiende a la población de un municipio que no está certificado en salud. El alcalde ofreció que su secretaría de salud asuma la articulación de la ESE con los demás prestadores de la red integrada de servicios de salud de la zona. Antes de responder, el gerente pide a la profesional de planeación un concepto sobre a quién corresponde esa articulación. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al municipio, por medio de su secretaría de salud y en coordinación con las EPS que operan en su territorio.",
+        "explicacion": "Incorrecta. La articulación corresponde a las entidades territoriales, pero la ley precisa que, en los municipios no certificados, esa entidad territorial es el departamento (art. 64)."
+      },
+      {
+        "id": "B",
+        "texto": "Al departamento, en coordinación con las EPS y por medio del consejo territorial de seguridad social en salud.",
+        "explicacion": "Correcta. El art. 64 de la Ley 1438 asigna la articulación de la red a las entidades territoriales en coordinación con las EPS, a través de los consejos territoriales de seguridad social en salud, y dispone que en los municipios no certificados la entidad territorial es el departamento."
+      },
+      {
+        "id": "C",
+        "texto": "A cada EPS, que debe garantizar a sus afiliados los servicios de manera integral y continua a través de las redes.",
+        "explicacion": "Incorrecta. Las EPS deben garantizar los servicios a sus afiliados a través de las redes (art. 61), pero la articulación de la red está a cargo de la entidad territorial; las EPS participan en coordinación con ella (art. 64)."
+      },
+      {
+        "id": "D",
+        "texto": "Al Ministerio de Salud, que expide la reglamentación con la que se habilitan las redes integradas de servicios.",
+        "explicacion": "Incorrecta. El Ministerio reglamenta la habilitación de las redes y puede delegarla en departamentos y distritos (art. 62), pero la ley asigna la articulación de la red a las entidades territoriales (art. 64)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el municipio no está certificado en salud. Regla: el art. 64 de la Ley 1438 asigna la articulación de la red integrada a las entidades territoriales, en coordinación con las EPS a través de los consejos territoriales de seguridad social en salud, y precisa que en los municipios no certificados esa entidad territorial es el departamento. Que las EPS garanticen los servicios por medio de las redes (art. 61) y que el Ministerio reglamente su habilitación (art. 62) no les da la articulación. Conclusión: corresponde al departamento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Gerencia de las ESE",
+    "subtema": "Aprobación del plan de gestión por vencimiento del plazo de la junta",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 73 num. 73.2",
+      "art. 73 num. 73.3",
+      "art. 73 num. 73.4"
+    ],
+    "texto_fuente": "73.2 La Junta Directiva de la respectiva Empresa Social del Estado deberá aprobar, el plan de gestión dentro de los quince (15) días hábiles siguientes a la presentación del plan de gestión. 73.3 El gerente podrá presentar observaciones al plan de gestión aprobado en los 5 días hábiles siguientes a su aprobación, y se resolverá dentro de los diez (10) días hábiles siguientes. 73.4 En caso de que la Junta Directiva no apruebe el proyecto de plan de gestión durante el término aquí establecido, el plan de gestión inicialmente presentado por el Director o Gerente se entenderá aprobado.",
+    "pregunta": "El gerente de una ESE departamental presentó a la junta directiva su proyecto de plan de gestión el martes 10 de marzo de 2026. La junta lo estudió en una sesión del lunes 6 de abril de 2026 y aprobó una versión con metas financieras más exigentes que las propuestas. El gerente pide al asesor jurídico un concepto sobre cuál es el plan con el que será evaluado. Entre el 10 de marzo y el 6 de abril de 2026 fueron festivos el 23 de marzo y el 2 y 3 de abril. ¿Qué debe conceptuar el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La versión de la junta, porque los días de Semana Santa no se cuentan y su plazo vencía el 8 de abril.",
+        "explicacion": "Incorrecta. Para la junta no hay vacancia de Semana Santa: solo se descuentan los fines de semana y los festivos. Su plazo vencía el 1 de abril."
+      },
+      {
+        "id": "B",
+        "texto": "El proyecto del gerente, porque el término de la junta terminó el 1 de abril sin que ella se pronunciara.",
+        "explicacion": "Correcta. La junta tenía 15 días hábiles desde la presentación (Ley 1438, art. 73.2). Contados desde el 11 de marzo, sin fines de semana ni el festivo del 23 de marzo, vencieron el 1 de abril. Como no aprobó en ese término, se entiende aprobado el plan inicialmente presentado por el gerente (art. 73.4)."
+      },
+      {
+        "id": "C",
+        "texto": "La versión de la junta, porque una aprobación tardía es válida y el gerente aún puede presentarle observaciones.",
+        "explicacion": "Incorrecta. Las observaciones del art. 73.3 se refieren a un plan aprobado en término. Vencido el plazo sin aprobación, la ley da por aprobado el plan presentado por el gerente."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno hasta que la Superintendencia Nacional de Salud evalúe el plan, porque la junta no decidió a tiempo.",
+        "explicacion": "Incorrecta. Confunde esta regla con la del art. 74.6, que da intervención a la Superintendencia cuando el gerente no presenta el plan o el informe. Si la junta no aprueba a tiempo, se entiende aprobado el plan del gerente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el proyecto se presentó el 10 de marzo de 2026 y la junta solo se pronunció el 6 de abril. Regla: el art. 73 de la Ley 1438 da a la junta 15 días hábiles siguientes a la presentación para aprobar el plan, y si no lo aprueba en ese término se entiende aprobado el plan presentado por el gerente (73.4). Cálculo: sin fines de semana ni el festivo del 23 de marzo, el término venció el miércoles 1 de abril. Conclusión: rige el proyecto del gerente.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Junta directiva de las ESE",
+    "subtema": "Participación del gobernador y desempate de las votaciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 70 num. 70.1",
+      "art. 70 par. 2",
+      "art. 70 par. 3"
+    ],
+    "texto_fuente": "70.1 El jefe de la administración departamental, distrital o municipal o su delegado, quien la presidirá. [...] PARÁGRAFO 2o. La Junta Directiva de las Empresas Sociales del Estado del nivel municipal que hagan parte de convenios o planes de desempeño suscritos o que se llegaren a suscribir entre el departamento y la Nación, tendrá además de los miembros ya definidos en el presente artículo, tendrán como miembro de la Junta Directiva al gobernador del departamento o su delegado. PARÁGRAFO 3o. Cuando en una sesión de Junta Directiva exista empate para la toma de decisiones, el mismo se resolverá con el voto de quien preside la Junta Directiva.",
+    "pregunta": "Una ESE municipal de primer nivel hace parte de un convenio de desempeño suscrito entre el departamento y la Nación, por lo que su junta directiva tiene seis miembros. En la sesión en que se votó el estatuto de contratación, votaron en contra el delegado del alcalde, el director local de salud y uno de los representantes de los empleados; votaron a favor el delegado del gobernador, el representante de los usuarios y el otro representante de los empleados. La profesional que actúa como secretaria de la junta debe dejar en el acta el resultado de la votación. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobado, porque en las ESE con convenio de desempeño el voto del delegado del gobernador define los empates.",
+        "explicacion": "Incorrecta. El gobernador o su delegado es un miembro adicional de la junta, pero no la preside. El empate lo resuelve el voto de quien preside, que es el alcalde o su delegado."
+      },
+      {
+        "id": "B",
+        "texto": "No aprobado, porque en el empate pesa el voto del delegado del alcalde, que es quien dirige la junta directiva.",
+        "explicacion": "Correcta. La junta de una ESE municipal la preside el jefe de la administración municipal o su delegado (Ley 1438, art. 70.1), y los empates se resuelven con el voto de quien preside (par. 3). El delegado del alcalde votó en contra."
+      },
+      {
+        "id": "C",
+        "texto": "Sin decisión, porque ninguna postura obtuvo la mayoría y la votación debe repetirse en una nueva sesión.",
+        "explicacion": "Incorrecta. La ley resuelve el empate en la misma sesión con el voto de quien preside la junta; no ordena repetir la votación."
+      },
+      {
+        "id": "D",
+        "texto": "Aprobado, porque cuando la junta no logra decidir se entiende aprobada la propuesta presentada por el gerente.",
+        "explicacion": "Incorrecta. Traslada a la votación la regla del plan de gestión (art. 73.4), que se aplica cuando la junta no lo aprueba dentro del término. En un empate decide el voto de quien preside."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la votación quedó 3 a 3 y el delegado del alcalde votó en contra. Regla: en las ESE municipales con convenio de desempeño entre el departamento y la Nación, el gobernador o su delegado es miembro adicional (Ley 1438, art. 70 par. 2), pero la junta la preside el jefe de la administración municipal o su delegado (70.1), y los empates se resuelven con el voto de quien preside (par. 3). Conclusión: el estatuto no fue aprobado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Junta directiva de las ESE",
+    "subtema": "Inhabilidad por participación de parientes en entidades del sector salud",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 71"
+    ],
+    "texto_fuente": "Los miembros de las juntas directivas de las Empresas Sociales del Estado no podrán ser representante legal, miembros de los organismos directivos, directores, socios, o administradores de entidades del sector salud, ni tener participación en el capital de estas en forma directa o a través de su cónyuge, compañero o compañera permanente o parientes hasta el cuarto grado de consanguinidad, segundo de afinidad o único civil o participar a través de interpuesta persona",
+    "pregunta": "Para la designación del representante de los usuarios en la junta directiva de una ESE, la asesora jurídica revisa a tres aspirantes. Ninguno de ellos es directivo, socio ni accionista de entidades del sector salud, pero algunos parientes suyos sí lo son, a título propio: un primo hermano de Luis (cuarto grado de consanguinidad) tiene a su nombre el 10% de las acciones de una IPS privada; una cuñada de Sandra (segundo grado de afinidad) es socia, con aportes propios, de una IPS privada de laboratorio clínico; y un tío de la esposa de Hernán (tercer grado de afinidad) es el socio mayoritario de una clínica privada. ¿Quién puede integrar la junta sin incurrir en inhabilidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo Hernán, porque el tercer grado de afinidad queda por fuera del límite que fija la ley.",
+        "explicacion": "Correcta. La inhabilidad cubre la participación en el capital a través de parientes hasta el cuarto grado de consanguinidad y el segundo de afinidad (Ley 1438, art. 71). Quedan inhabilitados Luis (cuarto de consanguinidad) y Sandra (segundo de afinidad); Hernán no, porque su pariente está en tercer grado de afinidad."
+      },
+      {
+        "id": "B",
+        "texto": "Luis y Hernán, porque la inhabilidad por consanguinidad solo llega hasta el segundo grado.",
+        "explicacion": "Incorrecta. Confunde este límite con el de otras inhabilidades. Para los miembros de la junta de una ESE, la consanguinidad cuenta hasta el cuarto grado, así que el primo hermano de Luis lo inhabilita."
+      },
+      {
+        "id": "C",
+        "texto": "Sandra y Hernán, porque por afinidad la inhabilidad solo alcanza a los parientes en primer grado.",
+        "explicacion": "Incorrecta. Para la afinidad, la ley llega hasta el segundo grado, no solo al primero, así que la cuñada de Sandra la inhabilita."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque el límite del cuarto grado se aplica también a los parientes por afinidad.",
+        "explicacion": "Incorrecta. Extiende a la afinidad el límite de la consanguinidad. La ley distingue: cuarto grado de consanguinidad y segundo de afinidad, así que el tío de la esposa de Hernán, en tercer grado de afinidad, no lo inhabilita."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los parientes con participación propia en entidades del sector salud son un primo hermano (cuarto grado de consanguinidad), una cuñada (segundo de afinidad) y un tío de la esposa (tercero de afinidad). Regla: el art. 71 de la Ley 1438 impide a los miembros de la junta tener participación en el capital de entidades del sector salud, directamente o a través de parientes hasta el cuarto grado de consanguinidad, segundo de afinidad o único civil. Conclusión: Luis y Sandra están inhabilitados; Hernán no.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Régimen jurídico de las ESE",
+    "subtema": "Prestación pública de servicios de salud solo a través de ESE",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1122 de 2007",
+    "articulos": [
+      "art. 26 inc. 1",
+      "art. 31"
+    ],
+    "texto_fuente": "La prestación de servicios de salud por parte de las instituciones públicas solo se hará a través de Empresas Sociales del Estado (ESE) que podrán estar constituidas por una o varias sedes o unidades prestadoras de servicios de salud. En todo caso, toda unidad prestadora de servicios de salud de carácter público deberá hacer parte de una Empresa Social del Estado [...] En ningún caso se podrán prestar servicios asistenciales de salud directamente por parte de los Entes Territoriales.",
+    "pregunta": "El alcalde de un municipio quiere abrir un centro de salud en un corregimiento alejado y propone que lo administre directamente la secretaría municipal de salud, con médicos y enfermeras de la planta del municipio y recursos del presupuesto municipal. Pide a la profesional jurídica de la secretaría un concepto sobre la viabilidad de ese esquema. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es viable si la secretaría departamental de salud habilita los servicios del centro antes de que empiece a funcionar.",
+        "explicacion": "Incorrecta. La habilitación no remedia el problema de fondo: los entes territoriales no pueden prestar directamente servicios asistenciales (Ley 1122, art. 31)."
+      },
+      {
+        "id": "B",
+        "texto": "No es viable así: el centro debe ser sede o unidad de una ESE, pues el municipio no puede atender por sí mismo.",
+        "explicacion": "Correcta. La prestación pública de servicios de salud solo se hace a través de ESE, y toda unidad prestadora pública debe hacer parte de una (Ley 1122, art. 26). Además, los entes territoriales no pueden prestar directamente servicios asistenciales (art. 31)."
+      },
+      {
+        "id": "C",
+        "texto": "Es viable de forma transitoria, mientras el concejo crea una ESE municipal que asuma después el centro de salud.",
+        "explicacion": "Incorrecta. La prohibición de prestar servicios asistenciales directamente no tiene excepciones transitorias: el centro debe hacer parte de una ESE desde el comienzo."
+      },
+      {
+        "id": "D",
+        "texto": "Es viable si el municipio firma un contrato con una EPS para atender en el centro de salud a sus afiliados.",
+        "explicacion": "Incorrecta. El contrato con una EPS no cambia quién presta el servicio: seguiría siendo el municipio, lo que la ley prohíbe."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el municipio quiere prestar servicios de salud directamente desde su secretaría. Regla: la Ley 1122 dispone que la prestación pública de servicios de salud solo se hace a través de ESE y que toda unidad prestadora pública debe hacer parte de una ESE (art. 26), y prohíbe a los entes territoriales prestar directamente servicios asistenciales (art. 31). Conclusión: el centro debe funcionar como sede o unidad de una ESE.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1122_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derecho fundamental a la salud",
+    "subtema": "Integralidad: alcance de un servicio cubierto en caso de duda",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 8 incs. 1 y 2",
+      "art. 16"
+    ],
+    "texto_fuente": "Los servicios y tecnologías de salud deberán ser suministrados de manera completa para prevenir, paliar o curar la enfermedad, con independencia del origen de la enfermedad o condición de salud, del sistema de provisión, cubrimiento o financiación definido por el legislador. [...] En los casos en los que exista duda sobre el alcance de un servicio o tecnología de salud cubierto por el Estado, se entenderá que este comprende todos los elementos esenciales para lograr su objetivo médico respecto de la necesidad específica de salud diagnosticada. [...] Los conflictos o discrepancias en diagnósticos y/o alternativas terapéuticas generadas a partir de la atención, serán dirimidos por las juntas médicas de los prestadores de servicios de salud",
+    "pregunta": "Una ESE facturó a una EPS la cirugía de catarata de un afiliado, servicio que la EPS reconoce como cubierto. La EPS pagó la cirugía, pero glosó el lente intraocular implantado, que tiene registro sanitario vigente, con el argumento de que el lente no aparece mencionado por separado en el listado de cobertura. La profesional de auditoría de cuentas médicas de la ESE debe proyectar la respuesta a la glosa. ¿Qué debe sostener?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la glosa procede y el lente debe cobrarse al paciente, porque lo que no está listado se entiende excluido.",
+        "explicacion": "Incorrecta. Invierte la regla: cuando hay duda sobre el alcance de un servicio cubierto, la ley ordena entender que comprende todos los elementos esenciales para lograr su objetivo (Ley 1751, art. 8)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la diferencia debe resolverla la junta médica de la ESE, porque es una discrepancia sobre la alternativa terapéutica.",
+        "explicacion": "Incorrecta. Las juntas médicas dirimen discrepancias sobre diagnósticos o alternativas terapéuticas (art. 16). Aquí no se discute el tratamiento, sino el alcance de la cobertura de un servicio."
+      },
+      {
+        "id": "C",
+        "texto": "Que la glosa procede, y que la ESE debe pedir al Ministerio que incluya el lente por el mecanismo de ampliación.",
+        "explicacion": "Incorrecta. No hace falta ampliar los beneficios: el lente ya está comprendido en la cirugía cubierta, porque sin él no se logra el objetivo de esta."
+      },
+      {
+        "id": "D",
+        "texto": "Que la glosa no procede, porque sin el lente la cirugía no cumpliría su propósito para el paciente que fue operado.",
+        "explicacion": "Correcta. Según el principio de integralidad, los servicios deben suministrarse de manera completa y, si hay duda sobre el alcance de uno cubierto, se entiende que comprende todos los elementos esenciales para lograr su objetivo médico (Ley 1751, art. 8). El lente es uno de ellos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la cirugía está cubierta y la duda es si incluye el lente, que no aparece listado por separado. Regla: el art. 8 de la Ley 1751 (integralidad) ordena suministrar los servicios de manera completa y dispone que, si hay duda sobre el alcance de un servicio cubierto, se entiende que comprende todos los elementos esenciales para lograr su objetivo médico. Conclusión: el lente hace parte de la cirugía cubierta y la glosa no procede.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Estándar de procesos prioritarios: identificación correcta del paciente",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "Manual de Inscripción de Prestadores y Habilitación, num. 11.1.5, criterio 4.1"
+    ],
+    "texto_fuente": "4. El prestador de servicios de salud adopta y realiza las siguientes prácticas seguras, según aplique a su servicio de salud y cuenta con información documentada para: 4.1. Asegurar la correcta identificación del paciente en los procesos asistenciales. (que incluya como mínimo dos identificadores: nombre completo y número de identificación)",
+    "pregunta": "En la admisión de urgencias de una ESE, una auxiliar de enfermería que apoya las tareas administrativas elabora las manillas de los pacientes y los rótulos de los tubos para las muestras de laboratorio. La coordinadora le pide ceñirse al procedimiento documentado que la ESE adoptó para cumplir la práctica segura correspondiente del estándar de procesos prioritarios. Según el Manual de habilitación de la Resolución 3100 de 2019, ¿qué datos deben ir, como mínimo, en las manillas y los rótulos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El nombre completo del paciente y el número de la cama o camilla que ocupa en el servicio.",
+        "explicacion": "Incorrecta. El número de cama no es uno de los dos identificadores mínimos que exige el criterio: nombre completo y número de identificación."
+      },
+      {
+        "id": "B",
+        "texto": "El nombre completo del paciente y el número de su documento de identidad.",
+        "explicacion": "Correcta. El criterio 4.1 del estándar de procesos prioritarios exige que la identificación del paciente incluya como mínimo dos identificadores: el nombre completo y el número de identificación."
+      },
+      {
+        "id": "C",
+        "texto": "El número de la historia clínica del paciente y su fecha de nacimiento completa.",
+        "explicacion": "Incorrecta. Ninguno de esos dos datos es uno de los identificadores mínimos que fija el criterio: nombre completo y número de identificación."
+      },
+      {
+        "id": "D",
+        "texto": "Los dos apellidos del paciente y el nombre de la EPS a la que está afiliado.",
+        "explicacion": "Incorrecta. Los apellidos no equivalen al nombre completo y la EPS no identifica al paciente. El criterio exige nombre completo y número de identificación."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la auxiliar rotula manillas y muestras según la práctica segura de identificación del paciente. Regla: el num. 11.1.5, criterio 4.1, del Manual adoptado por la Resolución 3100 de 2019 exige información documentada para asegurar la correcta identificación del paciente, con como mínimo dos identificadores: nombre completo y número de identificación. Conclusión: manillas y rótulos deben llevar al menos el nombre completo y el número del documento de identidad.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Historia clínica",
+    "subtema": "Corrección de un dato ya guardado en la historia clínica electrónica",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2015 de 2020 y Resolución 3100 de 2019",
+    "articulos": [
+      "Ley 2015 de 2020, art. 8, parágrafo 1",
+      "Resolución 3100 de 2019, Manual, num. 11.1.6, criterio 3"
+    ],
+    "texto_fuente": "PARÁGRAFO 1o. La información suministrada en la Historia Clínica Electrónica no podrá ser modificada sin que quede registrada la modificación de que se trate, aún en el caso de que ella tuviera por objeto subsanar un error. En caso de ser necesaria la corrección de una información de Historia Clínica Electrónica, se agregará el nuevo dato con la fecha, hora, nombre e identificación de quien hizo la corrección, sin suprimir lo corregido y haciendo referencia al error que subsana. [...] 3. Los medios electrónicos para la gestión de la historia clínica garantizan la confidencialidad y seguridad, así como el carácter permanente de registrar en esta y en otros registros asistenciales, sin que se puedan modificar los datos una vez se guarden los registros.",
+    "pregunta": "Una auxiliar de enfermería de una ESE, que además registra los signos vitales en la historia clínica electrónica, se da cuenta el martes de que el lunes anotó y guardó en la nota de un paciente un peso de 87 kg, cuando el valor medido fue 78 kg. ¿Cómo debe corregir el error?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir a sistemas que cambie el 87 por el 78 en la nota del lunes y que el programa guarde en su bitácora quién hizo el cambio.",
+        "explicacion": "Incorrecta. Aunque la bitácora deje rastro, el 87 desaparece de la nota. La ley ordena corregir agregando el nuevo dato, sin suprimir lo corregido, y el estándar de historia clínica impide modificar los datos una vez se guardan."
+      },
+      {
+        "id": "B",
+        "texto": "Anular la nota del lunes indicando el motivo y crear otra con la misma fecha y hora, firmada por ella, que traiga el 78.",
+        "explicacion": "Incorrecta. Anular la nota y rehacerla con la fecha original suprime lo corregido y oculta cuándo se hizo la corrección. La ley ordena agregar el nuevo dato, con la fecha y la hora de la corrección, sin suprimir el anterior."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir a la jefe de enfermería que, con su usuario y firma, reemplace el 87 en la nota original y deje constancia del error.",
+        "explicacion": "Incorrecta. El aval de un superior no cambia la regla: reemplazar el 87 suprime lo corregido. La corrección se agrega, con los datos de quien la hace, y el dato erróneo queda visible."
+      },
+      {
+        "id": "D",
+        "texto": "Agregar una anotación nueva con el 78, la fecha, la hora y sus datos, que remita al error del lunes y conserve lo escrito.",
+        "explicacion": "Correcta. Según el parágrafo 1 del art. 8 de la Ley 2015 de 2020, la corrección se hace agregando el nuevo dato con fecha, hora, nombre e identificación de quien corrige, sin suprimir lo corregido y haciendo referencia al error que subsana."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el dato erróneo ya estaba guardado en la historia clínica electrónica. Regla: el art. 8, par. 1, de la Ley 2015 de 2020 prohíbe modificar la información sin que quede registrada la modificación y ordena corregir agregando el nuevo dato con fecha, hora, nombre e identificación de quien corrige, sin suprimir lo corregido y citando el error; el criterio 3 del estándar de historia clínica (Res. 3100 de 2019) impide modificar los datos ya guardados. Una bitácora, una anulación o el aval de un superior no suplen esa forma de corregir. Conclusión: se agrega la corrección y el 87 queda visible.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2015_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-SAL-023",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Historia clínica",
+    "subtema": "Entrega de la historia clínica electrónica al titular y a terceros",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2015 de 2020",
+    "articulos": [
+      "art. 7",
+      "art. 9",
+      "art. 12, parágrafo 2"
+    ],
+    "texto_fuente": "ARTÍCULO 7o. AUTORIZACIÓN A TERCEROS. Solo la persona titular de la Historia Clínica Electrónica podrá autorizar el uso por terceros de la información total o parcial en ella contenida de acuerdo con la normatividad vigente, salvo en los casos que por ley no sea requerido el otorgamiento de dicha autorización. [...] ARTÍCULO 9o. GRATUIDAD. Todo paciente tendrá derecho a que le suministren su historia clínica por cualquier medio electrónico por parte de los prestadores de servicios de salud de forma gratuita, completa y rápida. [...] PARÁGRAFO 2o. Las EPS y las IPS responsables del manejo de la información no podrán divulgar los datos por ellos administrados sin autorización expresa de la persona.",
+    "pregunta": "En la oficina de atención al usuario de una ESE, un auxiliar recibe el mismo día dos solicitudes sobre la historia clínica electrónica de don Julio, un adulto de 52 años en pleno uso de sus facultades: (1) el propio don Julio pide por correo electrónico una copia completa de su historia; (2) su hermano se presenta en la ventanilla con una autorización escrita y firmada por don Julio, y pide una copia para un trámite ante una aseguradora. La ESE cobra a los usuarios el costo de reproducción de los documentos que expide. ¿Cómo debe tramitar el auxiliar las dos solicitudes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enviar a don Julio la copia completa por correo y sin costo, y entregar otra al hermano, porque lo autorizó el titular.",
+        "explicacion": "Correcta. El paciente tiene derecho a recibir su historia clínica por cualquier medio electrónico, de forma gratuita, completa y rápida (art. 9). El titular puede autorizar a terceros el uso total o parcial de la información (art. 7), y con su autorización expresa la IPS puede entregar los datos (art. 12 par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Cobrar a don Julio el valor de reproducción de la copia, como en toda petición, y entregar otra al hermano con la autorización.",
+        "explicacion": "Incorrecta. Acierta con el hermano, pero aplica la regla general de cobro de copias a un caso que la ley especial resuelve distinto: el paciente recibe su historia clínica en forma gratuita (art. 9)."
+      },
+      {
+        "id": "C",
+        "texto": "Enviar a don Julio la copia completa por correo y sin costo, y negársela al hermano, porque la reserva solo cede ante un juez.",
+        "explicacion": "Incorrecta. Acierta con don Julio, pero los casos en que la ley no exige autorización no son la única vía de acceso: el titular puede autorizar a terceros (art. 7), y don Julio lo hizo por escrito."
+      },
+      {
+        "id": "D",
+        "texto": "Citar a don Julio para que reciba la copia impresa en la ventanilla, y negársela al hermano mientras no traiga orden judicial.",
+        "explicacion": "Incorrecta en los dos puntos: el paciente tiene derecho a recibir su historia por cualquier medio electrónico, sin ir a la ventanilla (art. 9), y el hermano trae la autorización del titular, que basta según el art. 7."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el titular es un adulto capaz que pide su propia historia por correo y que autorizó por escrito a su hermano. Regla: el art. 9 de la Ley 2015 de 2020 da al paciente derecho a recibir su historia por cualquier medio electrónico, en forma gratuita, completa y rápida, aunque la ESE cobre otras copias; el art. 7 permite al titular autorizar el uso de la información por terceros, y con esa autorización expresa la IPS puede entregar los datos (art. 12 par. 2). Conclusión: copia gratuita y electrónica para don Julio, y copia para el hermano autorizado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2015_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Historia clínica",
+    "subtema": "Divulgación de datos de la historia clínica electrónica por un servidor público",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 2015 de 2020",
+    "articulos": [
+      "art. 12",
+      "art. 12, parágrafo 1"
+    ],
+    "texto_fuente": "ARTÍCULO 12. PROHIBICIÓN DE DIVULGAR DATOS. Está prohibida la divulgación de los datos de cualquier persona consignados en la Historia Clínica Electrónica por parte de quien hubiere tenido acceso a esta información, teniendo en cuenta la normatividad vigente. PARÁGRAFO 1o. Para los profesionales de la salud y los servidores públicos, la divulgación de la información de que trata el presente artículo constituirá falta gravísima de acuerdo con la Ley 1952 de 2019 y la Ley 23 de 1981, o normas que la modifiquen, complementen o sustituyan.",
+    "pregunta": "Un auxiliar administrativo del archivo clínico de una ESE, empleado público de carrera, consultó por razón de su cargo la historia clínica electrónica de un concejal del municipio y envió por WhatsApp a un amigo una foto de la pantalla en la que se ve el diagnóstico. Una hora después borró el mensaje y la foto no circuló más. En el proceso disciplinario, ¿cómo debe calificarse la conducta según la Ley 2015 de 2020?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como falta leve, porque borró pronto el mensaje y el dato no llegó a más personas.",
+        "explicacion": "Incorrecta. La ley no gradúa la falta según el tiempo que circuló el dato: para un servidor público, divulgar datos de la historia clínica electrónica es falta gravísima."
+      },
+      {
+        "id": "B",
+        "texto": "Como falta grave, porque la calificación de gravísima está prevista para los profesionales de la salud.",
+        "explicacion": "Incorrecta. El parágrafo 1 del art. 12 incluye a los profesionales de la salud y también a los servidores públicos, y el auxiliar es servidor público."
+      },
+      {
+        "id": "C",
+        "texto": "Como falta gravísima, porque quien divulgó los datos de esa historia es un servidor público.",
+        "explicacion": "Correcta. El art. 12 prohíbe divulgar los datos de la historia clínica electrónica, y su parágrafo 1 dispone que, para los servidores públicos, esa divulgación constituye falta gravísima de acuerdo con la Ley 1952 de 2019."
+      },
+      {
+        "id": "D",
+        "texto": "No es falta disciplinaria, porque solo puede investigarla el tribunal de ética de la respectiva profesión.",
+        "explicacion": "Incorrecta. La ley remite expresamente a la Ley 1952 de 2019, el régimen disciplinario de los servidores públicos, y el auxiliar es servidor público."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: quien divulgó el diagnóstico es un empleado público de la ESE. Regla: el art. 12 de la Ley 2015 de 2020 prohíbe divulgar los datos consignados en la historia clínica electrónica a quien haya tenido acceso a ellos, y su parágrafo 1 establece que, para los profesionales de la salud y los servidores públicos, esa divulgación constituye falta gravísima de acuerdo con la Ley 1952 de 2019. Conclusión: falta gravísima, aunque haya borrado el mensaje.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2015_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-025",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Renovación de la inscripción en el REPS mediante autoevaluación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 3100 de 2019 y Decreto 780 de 2016",
+    "articulos": [
+      "Resolución 3100 de 2019, art. 5, nums. 5.2 y 5.3 (modificado por el art. 2 de la Resolución 465 de 2025)",
+      "Resolución 3100 de 2019, art. 10, incs. 1 a 3",
+      "Decreto 780 de 2016, art. 2.5.1.3.2.8"
+    ],
+    "texto_fuente": "5.2 Durante el cuarto año de la vigencia de la inscripción inicial del prestador de servicios de salud y antes de su vencimiento. 5.3 Antes del vencimiento del término de renovación anual de la inscripción de que trata el artículo 10 de la presente resolución. [...] La inscripción inicial de cada prestador de servicios de salud en el REPS tendrá una vigencia de cuatro (4) años contados a partir de la fecha en que la Secretaría de Salud Departamental o Distrital, o la entidad que tenga a cargo dichas competencias, haya realizado la inscripción del prestador conforme a lo definido en el numeral 8.5 del artículo 8o de la presente resolución. La inscripción inicial del prestador podrá ser renovada por el término de un (1) año siempre y cuando haya realizado la autoevaluación y esta haya sido declarada en el REPS durante el cuarto año de inscripción inicial y antes de su vencimiento. Las renovaciones posteriores tendrán vigencia de un (1) año, previa autoevaluación de las condiciones de habilitación y declaración en el REPS, antes del vencimiento de cada año. [...] La inscripción de cada Prestador en el Registro Especial de Prestadores de Servicios de Salud, tendrá un término de vigencia de cuatro (4) años, contados a partir de la fecha de su radicación ante la Entidad Departamental o Distrital de Salud correspondiente. Los prestadores de servicios de salud una vez se cumpla la vigencia de su habilitación podrán renovarla, de acuerdo con los lineamientos que defina el Ministerio de Protección Social.",
+    "pregunta": "Una ESE creada en 2023 ingresó por primera vez al REPS: la secretaría de salud departamental registró su inscripción el 14 de abril de ese año. El técnico administrativo encargado de la habilitación planea hacer la autoevaluación de todos los servicios y declararla en el REPS en febrero de 2027. La gerente le pregunta qué efecto tendrá esa declaración según la Resolución 3100 de 2019 y qué deberá hacer la ESE después. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La inscripción quedará renovada por otros cuatro años, y la siguiente autoevaluación se hará durante el último de ellos.",
+        "explicacion": "Incorrecta según la Res. 3100: los cuatro años son solo la vigencia de la inscripción inicial, y la renovación es por un año. El Decreto 780 (art. 2.5.1.3.2.8) fija cuatro años de vigencia, contados desde la radicación, pero deja la renovación a los lineamientos del Ministerio, que son los de esta resolución."
+      },
+      {
+        "id": "B",
+        "texto": "La inscripción quedará renovada por un año, y antes de que ese año venza deberá repetir la autoevaluación y declararla.",
+        "explicacion": "Correcta. Febrero de 2027 está dentro del cuarto año de la inscripción inicial (desde el 14 de abril de 2026) y antes de su vencimiento (14 de abril de 2027). Con esa declaración la inscripción se renueva por un año, y cada renovación posterior exige autoevaluar y declarar antes de que venza el año (Res. 3100, arts. 5 y 10)."
+      },
+      {
+        "id": "C",
+        "texto": "La declaración será extemporánea, porque en febrero de 2027 ya habrán vencido los cuatro años de la inscripción inicial.",
+        "explicacion": "Incorrecta. Los cuatro años se cuentan desde que la secretaría registró la inscripción (14 de abril de 2023), no por años calendario: vencen el 14 de abril de 2027, así que febrero de 2027 está dentro del cuarto año y antes del vencimiento."
+      },
+      {
+        "id": "D",
+        "texto": "La inscripción se renueva sola al cumplir los cuatro años, y la declaración solo sirve para actualizar el portafolio.",
+        "explicacion": "Incorrecta. La renovación no es automática: depende de que el prestador haya hecho la autoevaluación y la haya declarado en el REPS durante el cuarto año."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la secretaría registró la inscripción inicial el 14 de abril de 2023, así que el cuarto año va del 14 de abril de 2026 al 14 de abril de 2027, y la declaración se hará en febrero de 2027. Regla: según la Res. 3100 de 2019, la inscripción inicial dura 4 años desde ese registro y se renueva por un año si la autoevaluación se declara en el cuarto año, antes del vencimiento; las renovaciones siguientes son anuales (arts. 5 y 10). El Decreto 780 (art. 2.5.1.3.2.8) cuenta los 4 años desde la radicación, pero deja la renovación a los lineamientos del Ministerio. Conclusión: renovación por un año.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAL-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Cierre temporal de un servicio: aviso previo y plazo máximo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "art. 13, incs. 1 y 4 (modificado por el art. 6 de la Resolución 544 de 2023)"
+    ],
+    "texto_fuente": "El prestador de servicios de salud podrá cerrar temporalmente los servicios por un periodo máximo de un (1) año contado a partir del reporte de la novedad “Cierre temporal de servicio”; no obstante, si vencido dicho plazo no reporta la novedad “reactivación de servicio”, este se inactivará en el REPS. Para su apertura, el prestador de servicios de salud debe realizar nuevamente el procedimiento para la habilitación del servicio. [...] Los prestadores de servicios de salud que vayan a reportar novedades relacionadas con el cierre de uno o más de los servicios de urgencias, atención del parto, hospitalización pediátrica y cuidado intensivo, deben informar por escrito de tal situación a la secretaría de salud departamental o distrital, o la entidad que tenga a cargo dichas competencias, y a las entidades responsables de pago con las cuales tengan contrato, mínimo veinte (20) días calendario antes de reportar el registro de la novedad de cierre en el formato de novedades",
+    "pregunta": "Una ESE decidió cerrar temporalmente su servicio de hospitalización pediátrica por obras de reforzamiento. El miércoles 5 de agosto de 2026 envió por escrito el aviso del cierre a la secretaría de salud departamental y a las dos EPS con las que tiene contrato. El técnico encargado del REPS registrará la novedad de cierre temporal el primer día en que la norma se lo permita. ¿Hasta qué fecha podrá la ESE reportar la reactivación del servicio sin tener que habilitarlo de nuevo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 5 de agosto de 2027.",
+        "explicacion": "Incorrecta. Supone que la novedad podía registrarse el mismo día del aviso y cuenta el año desde allí. Para la hospitalización pediátrica, el registro solo puede hacerse 20 días calendario después del aviso, y el año se cuenta desde ese reporte."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 25 de febrero de 2027.",
+        "explicacion": "Incorrecta. Aplica un máximo de seis meses que la norma no prevé: el cierre temporal puede durar hasta un año contado desde el reporte de la novedad."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 4 de septiembre de 2027.",
+        "explicacion": "Incorrecta. Cuenta los 20 días de antelación como hábiles (hasta el 4 de septiembre de 2026). La norma los fija en días calendario, por lo que el registro podía hacerse desde el 25 de agosto de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 25 de agosto de 2027.",
+        "explicacion": "Correcta. El aviso del 5 de agosto permite registrar la novedad desde el 25 de agosto de 2026 (20 días calendario después). El cierre temporal dura como máximo un año desde ese reporte, hasta el 25 de agosto de 2027; si para entonces no se reporta la reactivación, el servicio se inactiva y debe habilitarse de nuevo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se cierra la hospitalización pediátrica, uno de los servicios que exigen aviso previo, y el aviso se dio el 5 de agosto de 2026. Regla: el art. 13 de la Res. 3100 de 2019 (mod. Res. 544 de 2023) exige avisar por escrito a la secretaría y a las EPS mínimo 20 días calendario antes de reportar la novedad, y permite el cierre temporal por máximo un año desde ese reporte; vencido sin reactivación, el servicio se inactiva. Cálculo: 5 ago + 20 días = 25 ago 2026; + 1 año = 25 ago 2027.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-SAL-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Novedades después de comunicada una visita de verificación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "art. 17, inciso sobre la comunicación de las visitas (modificado por el art. 1 de la Resolución 1138 de 2022)",
+      "Manual, num. 10, inc. 2"
+    ],
+    "texto_fuente": "Las visitas de verificación de condiciones de habilitación deben ser comunicadas al prestador como mínimo con un (1) día hábil de antelación y por medios físicos o electrónicos. Comunicada la visita de verificación, el prestador de servicios de salud no podrá presentar novedades mientras esta no haya concluido. [...] El trámite en línea de las novedades se realiza mediante el enlace de novedades del REPS y queda registrado en forma inmediata, no requiere radicación en la secretaría de salud departamental o distrital, o la entidad que tenga a cargo dichas competencias.",
+    "pregunta": "El jueves 22 de octubre de 2026 la secretaría de salud departamental comunicó por correo electrónico a una ESE que el lunes 26 de octubre iniciará la visita de verificación de sus condiciones de habilitación. El viernes 23, el subgerente le pide al técnico de calidad que registre ese día, por el enlace en línea del REPS, la apertura de cinco camas nuevas de hospitalización, «para que los verificadores las encuentren reportadas». ¿Qué debe hacer el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No registrarla todavía, porque desde el aviso de la visita y hasta que esta termine no pueden reportarse novedades en el REPS.",
+        "explicacion": "Correcta. Una vez comunicada la visita de verificación, el prestador no puede presentar novedades mientras la visita no haya concluido (art. 17). La comunicación del jueves para el lunes respetó el mínimo de un día hábil de antelación."
+      },
+      {
+        "id": "B",
+        "texto": "Registrarla el viernes, porque la novedad hecha en línea queda aplicada de inmediato y la visita todavía no ha empezado.",
+        "explicacion": "Incorrecta. Es cierto que el trámite en línea queda registrado de inmediato, pero la prohibición empieza cuando se comunica la visita, no cuando esta comienza."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir el aplazamiento de la visita, porque debía comunicarse con tres días hábiles de antelación, y registrar las camas.",
+        "explicacion": "Incorrecta. La antelación mínima es de un día hábil, y el viernes 23 lo es. La visita fue bien comunicada y la novedad no puede registrarse hasta que concluya."
+      },
+      {
+        "id": "D",
+        "texto": "Registrarla solo si la comisión verificadora lo autoriza por escrito antes de la reunión de apertura de la visita del lunes.",
+        "explicacion": "Incorrecta. La norma no prevé que la comisión verificadora autorice novedades; la prohibición rige desde que se comunica la visita hasta que concluye."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la visita se comunicó el jueves 22 y el subgerente quiere registrar la novedad el viernes 23, antes de que la visita concluya. Regla: el art. 17 de la Res. 3100 de 2019 (mod. Res. 1138 de 2022) exige comunicar las visitas con mínimo un día hábil de antelación y prohíbe al prestador presentar novedades desde que se comunica la visita hasta que concluye. Que el trámite en línea quede registrado de inmediato (num. 10 del Manual) no levanta esa prohibición. Conclusión: no registrar la apertura de camas hasta el cierre de la visita.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Distintivo de habilitación y efectos del cierre temporal de un servicio",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "Manual, num. 9.3.2.1",
+      "Manual, num. 10.3 (cierre temporal de servicio)"
+    ],
+    "texto_fuente": "El prestador de servicios de salud que ostente el distintivo de habilitación en un servicio de salud se obliga a: [...] - Retirar el distintivo de habilitación en caso de deterioro, cierre temporal, cierre definitivo e inactivación de los servicios habilitados. [...] Registro en el REPS del cierre temporal de un servicio de salud habilitado, por un periodo máximo de un (1) año desde el reporte de esta novedad. A partir del registro de la novedad no puede continuar prestando el servicio de salud.",
+    "pregunta": "El lunes a las 8:00 a. m. una ESE registró en el REPS el cierre temporal de su servicio de consulta odontológica, que estará en remodelación tres meses. Esa tarde llegan dos pacientes con cita asignada desde la semana anterior. La coordinadora le pide a la auxiliar administrativa de la sala de espera que los haga pasar «por última vez» y que deje el distintivo pegado en la pared, porque el servicio sigue habilitado. ¿Qué debe hacer la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dejar el distintivo y hacer pasar a los pacientes, porque el cierre temporal produce efectos desde el día hábil siguiente a su registro.",
+        "explicacion": "Incorrecta. La norma no aplaza los efectos del cierre: a partir del registro de la novedad no puede continuar prestándose el servicio."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer pasar a los dos pacientes ya citados y tapar el distintivo con un aviso de cierre, porque debe conservarse mientras dure el cierre.",
+        "explicacion": "Incorrecta. Las citas ya asignadas no son una excepción, y el distintivo no se tapa: el prestador debe retirarlo en caso de cierre temporal."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar a la coordinadora que no se puede atender, porque el cierre ya se registró, y retirar el distintivo y reprogramar las citas.",
+        "explicacion": "Correcta. Desde el registro de la novedad de cierre temporal no puede seguir prestándose el servicio (num. 10.3 del Manual), y el prestador debe retirar el distintivo de habilitación en caso de cierre temporal (num. 9.3.2.1). Por eso las dos citas deben reprogramarse o remitirse."
+      },
+      {
+        "id": "D",
+        "texto": "Hacer pasar a los pacientes y devolver el distintivo a la secretaría de salud, que es la encargada de recogerlo en los cierres temporales.",
+        "explicacion": "Incorrecta. Retirar el distintivo es una obligación del propio prestador cuando cierra temporalmente un servicio, y después del registro de la novedad el servicio ya no puede prestarse."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la novedad de cierre temporal ya se había registrado esa mañana. Regla: según el Manual adoptado por la Res. 3100 de 2019, a partir del registro de la novedad de cierre temporal no puede continuar prestándose el servicio (num. 10.3), y el prestador que ostenta el distintivo se obliga a retirarlo, entre otros casos, por cierre temporal (num. 9.3.2.1). Conclusión: no se atiende en ese servicio, se retira el distintivo y se reprograman o remiten las citas.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-029",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Talento humano en salud",
+    "subtema": "Requisitos para ejercer como auxiliar de enfermería",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1164 de 2007",
+    "articulos": [
+      "art. 18, num. 1, lit. b",
+      "art. 21",
+      "art. 23 (modificado por el art. 100 del Decreto Ley 2106 de 2019)",
+      "art. 24 (modificado por el art. 101 del Decreto Ley 2106 de 2019)",
+      "art. 33, inc. 1"
+    ],
+    "texto_fuente": "1. Acreditar una de las siguientes condiciones académicas: [...] b) Certificado otorgado por una institución de educación no formal, legalmente reconocida, para el personal auxiliar en el área de la salud, en los términos establecidos en la Ley 115 de 1994 y sus reglamentarios; [...] Para el ejercicio de las profesiones y de las ocupaciones del área de la salud no se requieren registros, inscripciones, licencias, autorizaciones, tarjetas, o cualquier otro requisito diferente a los exigidos en la presente ley. [...] El personal de salud que cumpla con los requisitos establecidos para ejercer como lo señala la presente ley, deberá inscribirse en el Registro Único Nacional del Talento Humano en Salud (Rethus) [...] la información acerca del cumplimiento del servicio social obligatorio, cuando haya lugar a ello [...] En los términos aquí previstos, entiéndase desmaterializada la tarjeta profesional para las profesiones del área de la salud. [...] El cumplimiento de los requisitos para ejercer el nivel técnico profesional, tecnológico, profesión u ocupación, se verificará a través del Registro Único Nacional del Talento Humano en Salud (Rethus) [...] Créase el Servicio Social Obligatorio para los egresados de los programas de educación superior del área de la salud",
+    "pregunta": "Una auxiliar administrativa de talento humano de una ESE revisa la hoja de vida de una aspirante a un cargo de auxiliar de enfermería. La aspirante aportó su certificado de aptitud ocupacional, expedido por una institución de educación no formal legalmente reconocida, y la consulta que muestra su inscripción en el ReTHUS. El jefe de enfermería pide que, además, presente una tarjeta profesional física y una licencia de ejercicio expedida por la secretaría de salud departamental. ¿Qué debe concluir la auxiliar de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe acreditar además el servicio social obligatorio, pues el ReTHUS registra su cumplimiento antes de ejercer.",
+        "explicacion": "Incorrecta. El servicio social obligatorio es para los egresados de programas de educación superior del área de la salud (art. 33), no para el personal auxiliar; por eso el ReTHUS registra su cumplimiento solo cuando hay lugar a ello (art. 23)."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe aportar la tarjeta física, porque la desmaterialización del ReTHUS solo cobija a las profesiones de la salud.",
+        "explicacion": "Incorrecta. Es cierto que la ley desmaterializó la tarjeta de las profesiones, pero de ahí no surge una tarjeta física para las ocupaciones: los requisitos de todo el personal se verifican en el ReTHUS (art. 24), y la ley prohíbe exigir tarjetas no previstas en ella (art. 21)."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe tramitar la licencia departamental, porque la inscripción en el ReTHUS no reemplaza la autorización para ejercer.",
+        "explicacion": "Incorrecta. La ley prohíbe exigir para ejercer registros, licencias o autorizaciones distintos de los que ella fija (art. 21), y el cumplimiento de los requisitos de una ocupación se verifica en el ReTHUS (art. 24)."
+      },
+      {
+        "id": "D",
+        "texto": "Que con el certificado de formación y la inscripción en el ReTHUS acredita lo que se exige para ejercer el cargo.",
+        "explicacion": "Correcta. El certificado de educación no formal es la condición académica del personal auxiliar (art. 18, num. 1, lit. b); el personal de salud se inscribe en el ReTHUS (art. 23), a través del cual se verifican los requisitos para ejercer (art. 24), y no pueden exigirse registros, licencias, tarjetas ni otros requisitos distintos de los de la ley (art. 21)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la aspirante es auxiliar (una ocupación), tiene certificado de educación no formal y está inscrita en el ReTHUS. Regla: la Ley 1164 de 2007 exige al personal auxiliar un certificado de una institución de educación no formal legalmente reconocida (art. 18, num. 1, lit. b), ordena inscribirse en el ReTHUS, a través del cual se verifican los requisitos (arts. 23 y 24, mod. DL 2106 de 2019), y prohíbe exigir registros, licencias o tarjetas distintos (art. 21). El servicio social obligatorio es para egresados de educación superior (art. 33). Conclusión: cumple.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1164_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60,
+      "nota": "La opción C se apoya débilmente en el parágrafo transitorio del art. 2.7.2.1.2.1 del Decreto 780; el acto que autoriza el ejercicio va unido a la inscripción en el ReTHUS, que la aspirante ya tiene."
+    }
+  },
+  {
+    "id": "TC-SAL-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Sistema Obligatorio de Garantía de Calidad",
+    "subtema": "Componentes del SOGCS",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.1.2.1",
+      "art. 2.5.1.2.2",
+      "art. 2.5.1.3.2.4 inc. 1",
+      "art. 2.5.1.4.2",
+      "art. 2.5.1.4.3"
+    ],
+    "texto_fuente": "Para efectos de evaluar y mejorar la Calidad de la Atención de Salud, el SOGCS deberá cumplir con las siguientes características: 1. Accesibilidad. [...] ARTÍCULO 2.5.1.2.2. COMPONENTES DEL SOGCS. Tendrá como componentes los siguientes: 1. El Sistema Único de Habilitación. 2. La Auditoría para el Mejoramiento de la Calidad de la Atención de Salud. 3. El Sistema Único de Acreditación. [...] 4. El Sistema de Información para la Calidad. [...] REGISTRO ESPECIAL DE PRESTADORES DE SERVICIOS DE SALUD. Es la base de datos de las Entidades Departamentales y Distritales de Salud, en la cual se efectúa el registro de los Prestadores de Servicios de Salud que se encuentren habilitados [...] el modelo que se aplique operará en los siguientes niveles: 1. Autocontrol. [...] El modelo de Auditoría para el Mejoramiento de la Calidad de la Atención de Salud se lleva a cabo a través de tres tipos de acciones:",
+    "pregunta": "Un técnico del área de calidad de una ESE prepara la inducción del personal nuevo. El borrador de la diapositiva sobre el Sistema Obligatorio de Garantía de Calidad de la Atención de Salud (SOGCS) trae cuatro listas, y él debe conservar solo la que corresponde a los componentes del sistema según el Decreto 780 de 2016. ¿Cuál debe conservar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sistema Único de Habilitación, auditoría para el mejoramiento de la calidad, Sistema Único de Acreditación y Sistema de Información para la Calidad.",
+        "explicacion": "Correcta. El art. 2.5.1.2.2 enumera cuatro componentes: Sistema Único de Habilitación, Auditoría para el Mejoramiento de la Calidad de la Atención de Salud, Sistema Único de Acreditación y Sistema de Información para la Calidad."
+      },
+      {
+        "id": "B",
+        "texto": "Sistema Único de Habilitación, Registro Especial de Prestadores de Servicios de Salud, Sistema Único de Acreditación y auditoría para el mejoramiento.",
+        "explicacion": "Incorrecta. El REPS es la base de datos en la que se registran los prestadores habilitados (art. 2.5.1.3.2.4): una herramienta del Sistema Único de Habilitación, no un componente aparte. Falta el Sistema de Información para la Calidad."
+      },
+      {
+        "id": "C",
+        "texto": "Accesibilidad, oportunidad, seguridad, pertinencia y continuidad, que orientan la evaluación y el mejoramiento de la calidad de la atención.",
+        "explicacion": "Incorrecta. Son las características que debe cumplir el SOGCS para evaluar y mejorar la calidad de la atención (art. 2.5.1.2.1), no sus componentes."
+      },
+      {
+        "id": "D",
+        "texto": "Autocontrol, auditoría interna y auditoría externa, con acciones preventivas, de seguimiento y coyunturales sobre los procesos prioritarios.",
+        "explicacion": "Incorrecta. Son los niveles de operación y los tipos de acciones de la auditoría para el mejoramiento de la calidad (arts. 2.5.1.4.2 y 2.5.1.4.3), que es uno solo de los componentes del sistema."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se piden los componentes del SOGCS, no sus características ni las herramientas o niveles de uno de ellos. Regla: el art. 2.5.1.2.2 del Decreto 780 de 2016 fija cuatro componentes: Sistema Único de Habilitación, Auditoría para el Mejoramiento de la Calidad de la Atención de Salud, Sistema Único de Acreditación y Sistema de Información para la Calidad. Accesibilidad, oportunidad y las demás son características (art. 2.5.1.2.1); el REPS sirve a la habilitación, y el autocontrol y las auditorías interna y externa son niveles de la auditoría. Conclusión: la lista de esos cuatro sistemas.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-SAL-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Auditoría para el mejoramiento de la calidad (PAMEC)",
+    "subtema": "Niveles de operación: supresión de la auditoría interna",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.1.4.2"
+    ],
+    "texto_fuente": "1. Autocontrol. Cada miembro de la entidad planea, ejecuta, verifica y ajusta los procedimientos en los cuales participa, para que estos sean realizados de acuerdo con los estándares de calidad definidos por la normatividad vigente y por la organización. 2. Auditoría Interna. Consiste en una evaluación sistemática realizada en la misma institución, por una instancia externa al proceso que se audita. Su propósito es contribuir a que la institución adquiera la cultura del autocontrol. Este nivel puede estar ausente en aquellas entidades que hayan alcanzado un alto grado de desarrollo del autocontrol, de manera que este sustituya la totalidad de las acciones que debe realizar la auditoría interna. 3. Auditoría Externa. Es la evaluación sistemática llevada a cabo por un ente externo a la institución evaluada. Su propósito es verificar la realización de los procesos de auditoría interna y autocontrol, implementando el modelo de auditoria de segundo orden.",
+    "pregunta": "Para reducir costos, el gerente de una ESE de segundo nivel propone suprimir el equipo de auditoría interna del Programa de Auditoría para el Mejoramiento de la Calidad (PAMEC). Argumenta que cada servicio ya revisa sus propios procedimientos y que las EPS contratantes auditan a la ESE varias veces al año. Antes de decidir, pide concepto a la profesional de calidad. ¿Qué debe conceptuar ella según el Decreto 780 de 2016?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No es posible: la auditoría interna es el único de los tres niveles de operación que la norma exige a todas las instituciones.",
+        "explicacion": "Incorrecta. La norma permite que el nivel de auditoría interna esté ausente en las entidades que alcanzaron un alto grado de desarrollo del autocontrol."
+      },
+      {
+        "id": "B",
+        "texto": "Es posible: la auditoría externa de las EPS contratantes reemplaza la auditoría interna que haría la propia institución.",
+        "explicacion": "Incorrecta. La auditoría externa tiene otro propósito: verificar que se realicen la auditoría interna y el autocontrol (auditoría de segundo orden). No la reemplaza."
+      },
+      {
+        "id": "C",
+        "texto": "Es posible solo si el autocontrol de la ESE está tan desarrollado que cubre la totalidad de las acciones de la auditoría interna.",
+        "explicacion": "Correcta. El art. 2.5.1.4.2 dice que el nivel de auditoría interna puede estar ausente en las entidades que hayan alcanzado un alto grado de desarrollo del autocontrol, de manera que este sustituya la totalidad de las acciones de la auditoría interna."
+      },
+      {
+        "id": "D",
+        "texto": "Es posible solo cuando la ESE obtenga la acreditación, porque desde ese momento la auditoría interna deja de ser obligatoria.",
+        "explicacion": "Incorrecta. La norma no condiciona la ausencia de la auditoría interna a la acreditación, sino al grado de desarrollo del autocontrol."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el gerente quiere suprimir la auditoría interna apoyándose en la revisión que hace cada servicio y en las auditorías de las EPS. Regla: el art. 2.5.1.4.2 del Decreto 780 de 2016 fija tres niveles (autocontrol, auditoría interna y auditoría externa); la interna puede faltar solo si el autocontrol sustituye la totalidad de sus acciones, y la externa sirve para verificar la interna y el autocontrol. Conclusión: solo es posible con ese grado de autocontrol; las auditorías de las EPS no la reemplazan.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Historia clínica",
+    "subtema": "Guarda y custodia en el marco de la interoperabilidad",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 2015 de 2020",
+    "articulos": [
+      "art. 4",
+      "art. 5"
+    ],
+    "texto_fuente": "El Ministerio de Salud y Protección Social administrará el modelo de Interoperabilidad de la Historia Clínica Electrónica (IHCE) y el Ministerio de Tecnologías de la Información y las Comunicaciones será el responsable de la administración de la herramienta tecnológica de la plataforma de interoperabilidad. [...] ARTÍCULO 5o. GUARDA Y CUSTODIA. Todos los prestadores de servicios de salud, públicos o privados, seguirán teniendo la responsabilidad de la guarda y custodia de las historias clínicas de las personas en sus propios sistemas tecnológicos de acuerdo con las leyes vigentes sobre la materia. En todo caso, también serán responsables de la guarda y custodia los demás actores de salud involucrados en el marco de interoperabilidad de la historia clínica electrónica.",
+    "pregunta": "El profesional de gestión de la información de una ESE propone que, una vez se envíen a la plataforma nacional de interoperabilidad los datos clínicos relevantes de cada paciente, se apaguen los servidores donde la ESE guarda sus historias clínicas electrónicas, porque «desde ese momento el custodio es el Gobierno». El gerente pide concepto al asesor jurídico. ¿Qué debe responder el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la custodia pasa al Ministerio TIC, que administra la herramienta tecnológica, y la ESE solo debe guardar una copia de respaldo.",
+        "explicacion": "Incorrecta. El Ministerio TIC administra la herramienta tecnológica de la plataforma, pero eso no traslada la custodia: la ESE sigue respondiendo por ella en sus propios sistemas."
+      },
+      {
+        "id": "B",
+        "texto": "Que la ESE sigue respondiendo por la guarda y custodia de las historias en sus propios sistemas, aunque otros actores también respondan.",
+        "explicacion": "Correcta. El art. 5 de la Ley 2015 de 2020 dispone que los prestadores, públicos o privados, siguen siendo responsables de la guarda y custodia de las historias clínicas en sus propios sistemas tecnológicos, y que también lo son los demás actores involucrados en la interoperabilidad."
+      },
+      {
+        "id": "C",
+        "texto": "Que la custodia pasa al Ministerio de Salud, que administra el modelo de interoperabilidad, desde el momento en que recibe los datos.",
+        "explicacion": "Incorrecta. Administrar el modelo de interoperabilidad no convierte al Ministerio de Salud en el único custodio. La ley mantiene la responsabilidad de los prestadores."
+      },
+      {
+        "id": "D",
+        "texto": "Que la ESE puede apagar los servidores si cada paciente lo autoriza, porque toda persona es la titular de su historia clínica electrónica.",
+        "explicacion": "Incorrecta. La titularidad del paciente no exonera al prestador de la guarda y custodia que le impone el art. 5."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la propuesta supone que, al enviar los datos a la plataforma nacional, la ESE deja de ser custodia. Regla: el art. 5 de la Ley 2015 de 2020 dice que todos los prestadores, públicos o privados, siguen teniendo la responsabilidad de la guarda y custodia de las historias clínicas en sus propios sistemas tecnológicos, junto con los demás actores de la interoperabilidad; según el art. 4, los ministerios administran el modelo y la herramienta, no la custodia. Conclusión: la ESE no puede desentenderse de sus historias.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2015_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-SAL-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Sistema Único de Acreditación",
+    "subtema": "Certificación de habilitación como condición y selección de la entidad acreditadora",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016 y Resolución 3100 de 2019",
+    "articulos": [
+      "Decreto 780 de 2016, art. 2.5.1.6.5, parágrafo",
+      "Decreto 780 de 2016, art. 2.5.1.6.10",
+      "Resolución 3100 de 2019, art. 17, num. 17.7 (modificado por el art. 1 de la Resolución 1138 de 2022)"
+    ],
+    "texto_fuente": "PARÁGRAFO. Las entidades a que se refiere el artículo 2.5.1.6.2 del presente Capítulo, deberán contar con la certificación que expida la entidad competente, del cumplimiento de los requisitos mínimos obligatorios que les aplican, como condición para acceder a la acreditación. [...] (i) la selección por parte de las entidades a que refiere el artículo 2.5.1.6.2 del presente Capítulo de la entidad acreditadora, la cual deberá escogerse de aquellas que se encuentren inscritas en el Registro Especial de Acreditadores en Salud; [...] 17.7 Los prestadores de servicios que se postulen ante el ente acreditador y no cuenten con certificación de habilitación. La visita de verificación se realizará en un término no mayor a tres (3) meses contados a partir de la solicitud presentada a la secretaría de salud departamental, distrital o la entidad que tenga a cargo dichas competencias.",
+    "pregunta": "Una ESE de mediana complejidad decidió buscar la acreditación en salud. Tiene sus servicios habilitados desde 2023, pero la secretaría de salud departamental nunca le ha hecho visita de verificación y, por eso, no tiene certificación de habilitación. El jueves 15 de octubre de 2026 la ESE radicó ante la secretaría la solicitud de esa visita para poder postularse. La asesora de calidad debe orientar a la gerencia sobre los pasos siguientes. ¿Qué debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la secretaría debe hacer la visita a más tardar el 15 de enero de 2027, y que la acreditadora se elige entre las inscritas en el registro del Ministerio.",
+        "explicacion": "Correcta. La certificación de los requisitos mínimos es condición para acceder a la acreditación (art. 2.5.1.6.5, par.). Para quien se postula sin ella, la visita se hace en máximo tres meses desde la solicitud (Res. 3100, art. 17.7): hasta el 15 de enero de 2027. La acreditadora se escoge entre las inscritas en el Registro Especial de Acreditadores en Salud (art. 2.5.1.6.10)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la secretaría tiene hasta el 15 de abril de 2027 para la visita, y que puede escogerse cualquier entidad acreditada por ISQua aunque no tenga registro en Colombia.",
+        "explicacion": "Incorrecta. El plazo es de tres meses, no de seis, y la acreditadora debe escogerse entre las inscritas en el Registro Especial de Acreditadores en Salud del Ministerio."
+      },
+      {
+        "id": "C",
+        "texto": "Que no necesita esperar la visita: la entidad acreditadora verifica las condiciones de habilitación durante su evaluación externa de los estándares.",
+        "explicacion": "Incorrecta. La certificación de cumplimiento de los requisitos mínimos obligatorios, que expide la entidad competente, es condición previa para acceder a la acreditación."
+      },
+      {
+        "id": "D",
+        "texto": "Que la visita la hace la Superintendencia Nacional de Salud en veinte días hábiles, y que el Ministerio de Salud le asigna a la ESE la entidad acreditadora.",
+        "explicacion": "Incorrecta. La visita la hace la secretaría de salud departamental en máximo tres meses, y es la ESE la que selecciona la acreditadora entre las inscritas en el registro especial."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la ESE quiere acreditarse sin certificación de habilitación y pidió la visita el 15 de octubre de 2026. Regla: la certificación de los requisitos mínimos es condición para acceder a la acreditación (D. 780, art. 2.5.1.6.5, par.); a quien se postula sin ella, la secretaría le hace la visita en máximo tres meses desde la solicitud (Res. 3100, art. 17.7, mod. Res. 1138 de 2022); la acreditadora se escoge entre las inscritas en el Registro Especial de Acreditadores (art. 2.5.1.6.10). Cálculo: 15 oct 2026 + 3 meses = 15 ene 2027.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Visita previa en una institución acreditada",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 3100 de 2019 y Ley 1438 de 2011",
+    "articulos": [
+      "Resolución 3100 de 2019, art. 14, nums. 14.1 y 14.3",
+      "Resolución 3100 de 2019, art. 17, último inciso (modificado por el art. 1 de la Resolución 1138 de 2022)",
+      "Ley 1438 de 2011, art. 58, parágrafo (modificado por el art. 92 del Decreto Ley 2106 de 2019)"
+    ],
+    "texto_fuente": "14.1 Para habilitar nuevos servicios oncológicos, de urgencias, atención del parto, transporte asistencial y todos los servicios de alta complejidad, esta visita se realiza por parte de la Secretaría de Salud Departamental o Distrital, o la entidad que tenga a cargo dichas competencias. [...] 14.3 Para cambiar la complejidad de un servicio de baja o mediana complejidad a alta complejidad; [...] Las instituciones prestadoras de servicios de salud acreditadas, durante la vigencia de dicha acreditación, no requerirán visita de verificación de sus condiciones de habilitación salvo aquellas que vayan a realizar la apertura de nuevos servicios de urgencias, oncología, alta complejidad, atención del parto o transporte asistencial, las que deberán contar con visita de verificación previa, de acuerdo con lo establecido en la presente resolución. [...] Toda nueva institución prestadora de servicios de salud, los nuevos servicios de urgencias, alta complejidad y oncología, para el inicio de actividades y para que el prestador de servicios de salud pueda ofertarlos y contratar, deberán contar con verificación previa del cumplimiento de condiciones de habilitación expedida por la secretaría de salud departamental o distrital, o la entidad que tenga a cargo dichas competencias",
+    "pregunta": "Una ESE con acreditación vigente prepara para 2027 cuatro cambios en su portafolio: (1) abrir el servicio de consulta externa de dermatología; (2) pasar su servicio de hospitalización de adultos de baja a mediana complejidad; (3) abrir el servicio de atención del parto, y (4) aumentar en diez el número de camas de hospitalización. El profesional de calidad debe identificar cuáles de esos cambios requieren, según la Resolución 3100 de 2019, visita de verificación previa de la secretaría de salud. ¿Cuáles son?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguno, porque una institución acreditada no requiere visitas de verificación de habilitación mientras su acreditación siga vigente.",
+        "explicacion": "Incorrecta. Según la Res. 3100, la exención de las instituciones acreditadas tiene una salvedad: la apertura de nuevos servicios de urgencias, oncología, alta complejidad, atención del parto o transporte asistencial exige visita previa (art. 17). Nota: la Ley 1438 (art. 58 par.) solo exige verificación previa a las nuevas IPS y a los nuevos servicios de urgencias, alta complejidad y oncología; la atención del parto la añade la resolución, que es la que pide aplicar el enunciado."
+      },
+      {
+        "id": "B",
+        "texto": "La apertura del servicio de atención del parto y el paso de la hospitalización de adultos a mediana complejidad.",
+        "explicacion": "Incorrecta. El cambio de complejidad exige visita previa solo cuando el servicio pasa a alta complejidad; pasar de baja a mediana no la requiere."
+      },
+      {
+        "id": "C",
+        "texto": "Los cuatro, porque toda apertura de servicio, cambio de complejidad o ampliación de capacidad instalada exige visita previa.",
+        "explicacion": "Incorrecta. La visita previa se exige solo en los casos que fija la norma. La consulta de dermatología, el paso a mediana complejidad y las camas adicionales no están entre ellos."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la apertura del servicio de atención del parto, porque es de los servicios nuevos que la norma somete a esa visita.",
+        "explicacion": "Correcta. Según la Res. 3100, las instituciones acreditadas no requieren visita de verificación durante la vigencia de la acreditación, salvo para abrir nuevos servicios de urgencias, oncología, alta complejidad, atención del parto o transporte asistencial (art. 17), y el cambio de complejidad solo la exige cuando se pasa a alta (art. 14.3). De los cuatro cambios, solo la atención del parto está en esa lista."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ESE está acreditada, se pregunta según la Res. 3100 y solo uno de los cambios abre un servicio de la lista especial. Regla: según el art. 17 de la Res. 3100 (mod. Res. 1138 de 2022), las acreditadas no requieren visita de verificación, salvo para abrir nuevos servicios de urgencias, oncología, alta complejidad, atención del parto o transporte asistencial; el cambio de complejidad la exige solo hacia alta (art. 14.3). La Ley 1438 (art. 58 par.) lista menos casos y no incluye la atención del parto. Conclusión: según la resolución, solo la atención del parto.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAL-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Indicadores de suficiencia patrimonial y financiera",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "Manual, num. 8.2.1",
+      "Manual, num. 8.2.2",
+      "Manual, num. 8.2.3"
+    ],
+    "texto_fuente": "Que el patrimonio total se encuentre por encima del cincuenta por ciento (50%) del capital social, capital fiscal o aportes sociales, según corresponda de acuerdo con la naturaleza jurídica de la Institución Prestadora de Servicios de Salud [...] En caso de incumplimiento de obligaciones mercantiles vencidas en más de 360 días, su valor acumulado no debe superar el 50% del pasivo corriente. [...] En caso de incumplimiento de obligaciones laborales vencidas en más de 360 días, su valor acumulado no debe superar el 50% del pasivo corriente.",
+    "pregunta": "El profesional financiero de una ESE prepara la autoevaluación de la suficiencia patrimonial y financiera. Los estados financieros certificados muestran: capital fiscal, $6.000 millones; patrimonio total, $3.540 millones; pasivo corriente, $2.400 millones. Las obligaciones mercantiles incumplidas suman $1.900 millones, de las cuales $1.000 millones llevan más de 360 días vencidas. Las obligaciones laborales vencidas hace más de 360 días suman $1.320 millones. ¿Qué debe concluir el profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que incumple el indicador de patrimonio, porque el patrimonio total es inferior al capital fiscal de la ESE.",
+        "explicacion": "Incorrecta. El indicador no exige que el patrimonio iguale el capital fiscal, sino que supere el 50% de él. Aquí es el 59% ($3.540 de $6.000 millones), así que se cumple."
+      },
+      {
+        "id": "B",
+        "texto": "Que cumple los tres indicadores, porque la norma tolera obligaciones vencidas hasta por el 60% del pasivo corriente.",
+        "explicacion": "Incorrecta. El tope es el 50% del pasivo corriente, no el 60%. Las obligaciones laborales vencidas hace más de 360 días equivalen al 55%."
+      },
+      {
+        "id": "C",
+        "texto": "Que incumple solo el indicador de obligaciones laborales, porque estas equivalen al 55% del pasivo corriente.",
+        "explicacion": "Correcta. Patrimonio: 3.540 / 6.000 = 59% (>50%, cumple). Mercantiles vencidas a más de 360 días: 1.000 / 2.400 = 41,7% (≤50%, cumple). Laborales vencidas a más de 360 días: 1.320 / 2.400 = 55% (>50%, incumple)."
+      },
+      {
+        "id": "D",
+        "texto": "Que incumple los indicadores de obligaciones mercantiles y laborales, porque ambas superan la mitad del pasivo corriente.",
+        "explicacion": "Incorrecta. Para las mercantiles toma los $1.900 millones (79%), pero solo cuentan las vencidas en más de 360 días: $1.000 millones, el 41,7% del pasivo corriente."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: de las obligaciones mercantiles solo $1.000 millones superan los 360 días de vencidas. Regla: el num. 8.2 del Manual de la Res. 3100 de 2019 exige que el patrimonio total supere el 50% del capital fiscal y que las obligaciones mercantiles y las laborales vencidas en más de 360 días no superen, cada una, el 50% del pasivo corriente. Cálculo: 3.540/6.000 = 59%; 1.000/2.400 = 41,7%; 1.320/2.400 = 55%. Conclusión: solo falla el indicador de obligaciones laborales.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Interdependencia contratada y prohibición de doble habilitación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "art. 9",
+      "Manual, num. 8.3.1.7",
+      "Manual, num. 11.1.7, criterio 1"
+    ],
+    "texto_fuente": "El servicio debe ser habilitado únicamente por el prestador de servicios de salud responsable del mismo. No se permite la doble habilitación de un servicio. [...] Los servicios definidos en la interdependencia de cada servicio pueden ser propios o contratados, en cualquier caso, cuando se trate de servicios de salud deben estar habilitados por una de las partes, no se permite la doble habilitación de un servicio. [...] 1. Cuando el servicio interdependiente sea contratado, debe mediar un contrato o un acuerdo escrito entre las dos partes, en el que se establezca que el servicio interdependiente apoya el servicio principal, estableciendo como mínimo: 1.1 Calidad en la entrega de los productos. 1.2 Procedimientos documentados de atención en cada servicio interdependiente. 1.3 Tiempos de entrega de los productos. 1.4 Supervisión al contratista que garantice la seguridad del resultado del producto contratado.",
+    "pregunta": "Una ESE de segundo nivel no tiene laboratorio clínico propio y contrató ese servicio, que sus servicios de hospitalización requieren como interdependiente, con una IPS privada que lo tiene habilitado en su propia sede. El coordinador administrativo propone que la ESE también inscriba el laboratorio clínico en su portafolio del REPS, para que figure como servicio propio ante las EPS. La profesional de calidad debe conceptuar. ¿Qué debe decir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que procede, porque quien habilita un servicio responde por todos sus estándares aunque concurran otras organizaciones a prestarlo.",
+        "explicacion": "Incorrecta. El prestador que habilita un servicio responde por sus estándares aunque concurran otros (art. 9), pero eso no lo obliga a habilitar los interdependientes que contrata: estos deben estar habilitados por una sola de las partes (num. 8.3.1.7)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no procede, porque el laboratorio ya lo habilitó quien lo presta; lo exigible es un acuerdo escrito con contenidos mínimos.",
+        "explicacion": "Correcta. El servicio lo habilita solo el prestador responsable y no se permite la doble habilitación (art. 9; num. 8.3.1.7). Como el interdependiente es contratado, debe mediar un contrato o acuerdo escrito que fije como mínimo calidad en la entrega, procedimientos documentados, tiempos de entrega y supervisión (num. 11.1.7)."
+      },
+      {
+        "id": "C",
+        "texto": "Que procede solo si la IPS reporta en el REPS el cierre de su laboratorio, para que el servicio figure en un solo portafolio.",
+        "explicacion": "Incorrecta. El servicio debe habilitarlo el prestador responsable de él, que es la IPS que lo opera en su sede. La ESE no puede habilitar un laboratorio que no presta, aunque la IPS lo cierre en el REPS."
+      },
+      {
+        "id": "D",
+        "texto": "Que no procede, y que basta con que la IPS acredite su distintivo de habilitación vigente, sin necesidad de un acuerdo escrito.",
+        "explicacion": "Incorrecta. Acierta en que no hay doble habilitación, pero cuando el servicio interdependiente es contratado debe mediar un contrato o acuerdo escrito con unos contenidos mínimos (num. 11.1.7)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el laboratorio lo presta y lo tiene habilitado la IPS privada, y la ESE solo lo contrata. Regla: el art. 9 de la Res. 3100 de 2019 ordena que el servicio sea habilitado únicamente por el prestador responsable y prohíbe la doble habilitación; el Manual permite que los interdependientes sean propios o contratados, habilitados por una de las partes (num. 8.3.1.7), y exige un contrato con calidad, procedimientos, tiempos y supervisión (num. 11.1.7). Conclusión: no se inscribe en el REPS de la ESE; se asegura el acuerdo escrito.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAL-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Talento humano en salud",
+    "subtema": "Servicio social obligatorio: duración y forma de vinculación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1164 de 2007",
+    "articulos": [
+      "art. 33, inc. 2",
+      "art. 33, parágrafo 3"
+    ],
+    "texto_fuente": "El servicio social debe prestarse, por un término no inferior a seis (6) meses, ni superior a un (1) año. [...] PARÁGRAFO 3o. La vinculación de los profesionales que presten el servicio debe garantizar la remuneración de acuerdo al nivel académico de los profesionales y a los estándares fijados en cada institución o por la entidad territorial y la afiliación al Sistema General de Seguridad Social en Salud y a Riesgos Profesionales. En ningún caso podrán ser vinculados a través de terceras personas jurídicas o naturales.",
+    "pregunta": "El coordinador médico de una ESE rural propone cubrir dos plazas de servicio social obligatorio con médicos recién graduados que serían contratados por una empresa de servicios temporales, por cuatro meses cada uno, con salario igual al de los médicos generales de planta y afiliación a salud y riesgos laborales. El gerente pide concepto al asesor jurídico. ¿Qué debe advertir el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que falla en dos puntos: la plaza no puede durar menos de seis meses y los médicos no pueden vincularse por medio de un tercero.",
+        "explicacion": "Correcta. El servicio social debe prestarse por un término no inferior a seis meses ni superior a un año (art. 33), y los profesionales que lo presten en ningún caso pueden vincularse a través de terceras personas jurídicas o naturales (par. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la propuesta es viable: garantiza la remuneración según el nivel académico y la afiliación a salud y riesgos laborales.",
+        "explicacion": "Incorrecta. La remuneración y la afiliación son exigencias, pero no bastan: la duración de cuatro meses es inferior al mínimo y la vinculación por un tercero está prohibida."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo falla la duración, porque el servicio social debe prestarse por un año completo, y que la vinculación por un tercero es válida.",
+        "explicacion": "Incorrecta. La ley admite plazas desde seis meses hasta un año, no solo de un año, y prohíbe vincular a estos profesionales por medio de terceros."
+      },
+      {
+        "id": "D",
+        "texto": "Que solo falla la vinculación por un tercero, y que la duración de cuatro meses es válida si la plaza está en una zona de difícil acceso.",
+        "explicacion": "Incorrecta. La ley no prevé una duración menor para las zonas de difícil acceso: el servicio social no puede ser inferior a seis meses."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las plazas durarían cuatro meses y los médicos serían contratados por una empresa de servicios temporales. Regla: el art. 33 de la Ley 1164 de 2007 fija para el servicio social un término no inferior a seis meses ni superior a un año, y su parágrafo 3 exige remuneración según el nivel académico y afiliación a la seguridad social, y prohíbe vincular a estos profesionales a través de terceras personas jurídicas o naturales. Conclusión: la propuesta incumple tanto la duración como la forma de vinculación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1164_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Incumplimiento de las condiciones de habilitación detectado por el contratante",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.1.3.2.20"
+    ],
+    "texto_fuente": "Para efectos de contratar la prestación de servicios de salud el contratante verificará que el prestador esté inscrito en el registro especial de prestadores de servicios de salud. [...] Si durante la ejecución del contrato se detecta el incumplimiento de las condiciones de habilitación, el Contratante deberá informar a la Dirección Departamental o Distrital de Salud quien contará con un plazo de sesenta (60) días calendario para adoptar las medidas correspondientes. En el evento en que no se pueda mantener la habilitación la Entidad Departamental o Distrital de Salud lo informará al contratante, quien deberá abstenerse de prestar los servicios de salud con entidades no habilitadas.",
+    "pregunta": "Una ESE contrató con una IPS privada las ecografías de sus pacientes. El lunes 14 de septiembre de 2026, el profesional de auditoría que supervisa el contrato comprobó que la IPS ya no cumple una de las condiciones de habilitación de ese servicio, y ese mismo día la ESE informó el hallazgo a la secretaría de salud departamental. ¿Qué sigue según el Decreto 780 de 2016?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La secretaría tiene hasta el 14 de octubre de 2026 para adoptar medidas, y mientras tanto la ESE debe suspender todos los pagos a la IPS contratada.",
+        "explicacion": "Incorrecta. El plazo de la entidad departamental es de 60 días calendario, no de 30, y la norma no ordena suspender pagos; prevé que la ESE se abstenga de prestar servicios con la IPS si esta no puede mantener la habilitación."
+      },
+      {
+        "id": "B",
+        "texto": "La secretaría tiene hasta el 11 de diciembre de 2026 para adoptar medidas, porque su plazo se cuenta en días hábiles, y la ESE espera su decisión.",
+        "explicacion": "Incorrecta. El plazo se fija en días calendario. Contado en días hábiles llegaría al 11 de diciembre, pero la norma no lo dispone así."
+      },
+      {
+        "id": "C",
+        "texto": "La ESE debe terminar el contrato de inmediato y remitir el caso a la Superintendencia Nacional de Salud, que decide en un plazo de treinta días.",
+        "explicacion": "Incorrecta. La norma ordena informar a la entidad departamental o distrital de salud, que es la que adopta las medidas. La Superintendencia no es la destinataria del aviso."
+      },
+      {
+        "id": "D",
+        "texto": "La secretaría tiene hasta el 13 de noviembre de 2026 para actuar; si la IPS no puede mantener la habilitación, la ESE debe dejar de contratarla.",
+        "explicacion": "Correcta. Detectado el incumplimiento durante la ejecución, el contratante informa a la entidad departamental, que tiene 60 días calendario para adoptar medidas: del 14 de septiembre al 13 de noviembre de 2026. Si la habilitación no puede mantenerse, el contratante debe abstenerse de prestar servicios con esa entidad."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el incumplimiento se detectó durante la ejecución del contrato y se informó a la secretaría el 14 de septiembre de 2026. Regla: el art. 2.5.1.3.2.20 del Decreto 780 de 2016 ordena al contratante informar a la entidad departamental o distrital de salud, que tiene 60 días calendario para adoptar medidas; si la habilitación no puede mantenerse, se lo informa al contratante, que debe abstenerse de prestar servicios con entidades no habilitadas. Cálculo: 14 sep 2026 + 60 días = 13 nov 2026.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-039",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Visita previa: documento faltante subsanable y prohibición de planes de cumplimiento",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 3100 de 2019 y Decreto 780 de 2016",
+    "articulos": [
+      "Resolución 3100 de 2019, Manual, num. 9.3.4.1",
+      "Resolución 3100 de 2019, art. 14, último inciso",
+      "Decreto 780 de 2016, art. 2.5.1.3.2.16"
+    ],
+    "texto_fuente": "Cuando el prestador de servicios de salud no cumple las condiciones de habilitación del o los servicios de salud verificados o no presenta el plan hospitalario para emergencias o el plan de mantenimiento de la planta física, la secretaría de salud departamental o distrital, o la entidad que tenga a cargo dichas competencias, analiza las causas del incumplimiento y de ser subsanables le informará al prestador para que en término no mayor a ocho (8) días hábiles posteriores al recibo de la comunicación, adelante las acciones pertinentes y cuando sea del caso, entregue los documentos respectivos. En caso de seguir incumpliendo debe iniciar nuevamente el proceso ante la respectiva secretaría de salud departamental o distrital, o la entidad que tenga a cargo dichas competencias. [...] Si al realizar la visita de verificación previa, el prestador de servicios de salud o el servicio no cumple con las condiciones de habilitación establecidas en el Manual de Inscripción de Prestadores y Habilitación de los Servicios de Salud, la entidad a cargo de la visita registrará en el REPS los resultados y el prestador de servicios de salud deberá iniciar nuevamente el trámite de inscripción del prestador o habilitación del servicio en los términos definidos en la presente resolución. [...] Los Prestadores de Servicios de Salud deben cumplir con los estándares de habilitación y no se aceptará la suscripción de planes de cumplimiento para dichos efectos.",
+    "pregunta": "En la visita previa para habilitar un nuevo servicio de urgencias de una ESE, la comisión verificadora encontró que la ESE no tenía el plan hospitalario para emergencias. La secretaría de salud analizó las causas y, conforme al Manual de Inscripción de Prestadores y Habilitación de Servicios de Salud de la Resolución 3100 de 2019, declaró subsanable la falla; la ESE recibió la comunicación respectiva el jueves 8 de octubre de 2026. El lunes 12 de octubre fue festivo. El gerente propone pedir a la secretaría la firma de un plan de cumplimiento a seis meses. ¿Qué debe recomendarle la asesora de calidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Firmar el plan de cumplimiento a seis meses y abrir el servicio de urgencias mientras lo ejecuta, porque la falla es subsanable.",
+        "explicacion": "Incorrecta. No se acepta la suscripción de planes de cumplimiento en materia de habilitación (Decreto 780, art. 2.5.1.3.2.16), y que la falla sea subsanable solo da el plazo corto del Manual para corregirla (num. 9.3.4.1)."
+      },
+      {
+        "id": "B",
+        "texto": "No firmarlo, porque no se aceptan planes de cumplimiento de los estándares de habilitación, y entregar el plan a más tardar el 21 de octubre de 2026.",
+        "explicacion": "Correcta. No se aceptan planes de cumplimiento para la habilitación (Decreto 780, art. 2.5.1.3.2.16). Como la secretaría declaró subsanable la falla, el Manual de la Res. 3100 (num. 9.3.4.1) da a la ESE un término no mayor a 8 días hábiles desde el recibo de la comunicación para corregir y entregar los documentos: del 9 al 21 de octubre, sin contar el fin de semana ni el festivo del 12."
+      },
+      {
+        "id": "C",
+        "texto": "No firmarlo, porque no se aceptan planes de cumplimiento de los estándares de habilitación, y entregar el plan a más tardar el 16 de octubre de 2026.",
+        "explicacion": "Incorrecta. Acierta sobre el plan de cumplimiento, pero la fecha corresponde a 8 días calendario (o a 5 hábiles). El plazo del Manual (num. 9.3.4.1) es de 8 días hábiles y vence el 21 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "Firmarlo solo por el tiempo que falta para la visita de certificación, y entregar el plan hospitalario a más tardar el 20 de octubre de 2026.",
+        "explicacion": "Incorrecta. No se aceptan planes de cumplimiento por ningún término (Decreto 780, art. 2.5.1.3.2.16), y la fecha cuenta como hábil el festivo del 12 de octubre: el plazo del Manual vence el 21."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la falla se declaró subsanable conforme al Manual y la comunicación se recibió el jueves 8 de octubre de 2026. Regla: el num. 9.3.4.1 del Manual de la Res. 3100 de 2019 da máximo 8 días hábiles desde el recibo para corregir y entregar los documentos, y solo si la falla persiste se inicia de nuevo el trámite (art. 14); el art. 2.5.1.3.2.16 del Decreto 780 de 2016 prohíbe aceptar planes de cumplimiento. Cálculo: 9, 13, 14, 15, 16, 19, 20 y 21 de octubre (el 12 fue festivo). Conclusión: sin plan de cumplimiento, entrega a más tardar el 21 de octubre.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Habilitación de servicios de salud",
+    "subtema": "Servicios no autoevaluados: inactivación y visita de reactivación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 3100 de 2019",
+    "articulos": [
+      "art. 11, inc. 2",
+      "art. 16, num. 16.2"
+    ],
+    "texto_fuente": "Cuando el prestador de servicios de salud no autoevalúe uno o varios de los servicios habilitados y no realice la declaración en el REPS, se inactivarán los servicios no autoevaluados. Para la habilitación de dichos servicios deberá realizar la autoevaluación y declaración del servicio en el REPS. Para los casos de servicios de alta complejidad, urgencias, hospitalización obstétrica, transporte asistencial y oncológicos, requerirá visita de reactivación por parte de la respectiva Secretaría de Salud Departamental o Distrital, o la entidad que tenga a cargo dichas competencias, quien tendrá seis (6) meses de plazo para la ejecución de la visita a partir del momento de la radicación de la solicitud. [...] 16.2 Cuando un prestador de servicios de salud tenga inactivos los servicios de alta complejidad, urgencias, hospitalización obstétrica, transporte asistencial y oncológico, como consecuencia de no haber realizado la autoevaluación de estos y requiera reactivar su habilitación.",
+    "pregunta": "Una ESE tiene habilitados, entre otros, los servicios de urgencias, consulta externa de psicología y hospitalización de baja complejidad. En la autoevaluación anual, hecha y declarada en el REPS antes del vencimiento, la ESE omitió por error los servicios de urgencias y de psicología. El subgerente científico pide al profesional de calidad un concepto sobre las consecuencias y la forma de recuperar esos servicios. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que se inactiva la inscripción de toda la ESE, que deberá inscribirse de nuevo y pedir visita de reactivación para la totalidad de sus servicios.",
+        "explicacion": "Incorrecta. La inactivación del prestador ocurre cuando no autoevalúa la totalidad de sus servicios. Si omite solo algunos, se inactivan únicamente los omitidos."
+      },
+      {
+        "id": "B",
+        "texto": "Que se inactivan los dos servicios, y que para recuperar cualquiera de ellos se necesita una visita de reactivación de la secretaría de salud.",
+        "explicacion": "Incorrecta. La visita de reactivación solo se exige para alta complejidad, urgencias, hospitalización obstétrica, transporte asistencial y oncológicos. Psicología se recupera con la autoevaluación y su declaración."
+      },
+      {
+        "id": "C",
+        "texto": "Que se inactivan los dos servicios; psicología se recupera autoevaluándolo y declarándolo, y urgencias además exige visita de reactivación.",
+        "explicacion": "Correcta. Los servicios no autoevaluados se inactivan, y para habilitarlos de nuevo hay que autoevaluarlos y declararlos en el REPS. En urgencias se requiere además visita de reactivación, que la secretaría debe hacer en máximo seis meses desde la radicación de la solicitud (arts. 11 y 16.2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que ningún servicio se inactiva, porque la ESE sí declaró la autoevaluación a tiempo, y que basta corregir la omisión en la siguiente.",
+        "explicacion": "Incorrecta. Declarar a tiempo la autoevaluación de unos servicios no cubre los omitidos: los servicios no autoevaluados se inactivan."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ESE autoevaluó a tiempo, pero omitió dos servicios, uno de ellos urgencias. Regla: el art. 11, inc. 2, de la Res. 3100 de 2019 inactiva los servicios no autoevaluados; para habilitarlos de nuevo se autoevalúan y declaran en el REPS, y en alta complejidad, urgencias, hospitalización obstétrica, transporte asistencial y oncológicos se requiere además visita de reactivación (art. 16.2), que la secretaría hace en máximo seis meses desde la solicitud. Conclusión: psicología vuelve con la declaración; urgencias, además, con visita.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/resolucion_minsaludps_3100_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  }
+]
