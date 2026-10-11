@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "TC-CNA-021",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: fórmulas de compuestos iónicos con iones poliatómicos y metales de transición",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Explico la relación entre la estructura de los átomos y los enlaces que realiza.",
+    "pregunta": "En 10.°, cada grupo escribe en una tarjeta la fórmula de un compuesto iónico a partir de su nombre. Antes de socializar las tarjetas con el curso, la docente las revisa. ¿Cuál de estas tarjetas es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sulfato de aluminio: Al₃(SO₄)₂",
+        "explicacion": "Incorrecta. Pone a cada ion su propia carga como subíndice. El aluminio forma iones Al³⁺ y el sulfato es SO₄²⁻; para que el compuesto sea neutro se necesitan 2 × (+3) + 3 × (−2) = 0: la fórmula es Al₂(SO₄)₃."
+      },
+      {
+        "id": "B",
+        "texto": "Fosfato de calcio: Ca₃(PO₄)₂",
+        "explicacion": "Correcta. El calcio, del grupo 2, forma iones Ca²⁺, y el fosfato es PO₄³⁻. La neutralidad exige 3 × (+2) + 2 × (−3) = 0: Ca₃(PO₄)₂, con paréntesis porque se repite el ion poliatómico completo."
+      },
+      {
+        "id": "C",
+        "texto": "Óxido de cobre(II): Cu₂O",
+        "explicacion": "Incorrecta. Lee el numeral romano como un subíndice. «(II)» indica la carga del ion, Cu²⁺, que con el O²⁻ se combina 1:1: CuO. La fórmula Cu₂O corresponde al óxido de cobre(I), otra sustancia."
+      },
+      {
+        "id": "D",
+        "texto": "Nitrato de magnesio: Mg₃(NO₃)₂",
+        "explicacion": "Incorrecta. Toma el subíndice del nitrato como si fuera su carga. El nitrato es NO₃⁻, con carga 1−, así que cada Mg²⁺ necesita dos: Mg(NO₃)₂. Con las cargas reales, Mg₃(NO₃)₂ sumaría +6 y −2."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: cada nombre indica los iones del compuesto, y el numeral romano da la carga del metal de transición. Concepto: un compuesto iónico es neutro; su fórmula es la proporción mínima de iones que anula las cargas, y el ion poliatómico va entre paréntesis cuando se repite. Aplicación: Ca²⁺ y PO₄³⁻ se combinan 3:2, Ca₃(PO₄)₂. Errores: no cruzar las cargas (Al₃(SO₄)₂ por Al₂(SO₄)₃), leer «(II)» como subíndice (Cu₂O por CuO) y tomar el subíndice del nitrato como su carga (Mg₃(NO₃)₂ por Mg(NO₃)₂).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: electrización por frotamiento y conservación de la carga",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Verifico la acción de fuerzas electrostáticas y magnéticas y explico su relación con la carga eléctrica.",
+    "pregunta": "En 6.°, el docente frota una barra de PVC con un paño de lana, y la barra queda cargada negativamente. Antes de pedir a los estudiantes que expliquen lo ocurrido, escribe en su planeación la explicación de referencia. ¿Cuál debe escribir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pasaron protones de la barra a la lana, y el paño quedó con una carga positiva del mismo valor que la de la barra.",
+        "explicacion": "Incorrecta. Acierta en la carga del paño, pero supone que se mueven las cargas positivas. Los protones están en los núcleos y no pasan de un cuerpo a otro al frotar; la barra queda negativa porque gana electrones."
+      },
+      {
+        "id": "B",
+        "texto": "Pasaron electrones de la lana a la barra, y el paño quedó sin carga neta, tal como estaba antes de frotarlo con la barra.",
+        "explicacion": "Incorrecta. Acierta en lo que se transfiere, pero olvida que la lana perdió electrones: queda con más protones que electrones, es decir, con carga positiva. Al frotar no se crea carga; se separa."
+      },
+      {
+        "id": "C",
+        "texto": "Pasaron electrones de la lana a la barra, y el paño quedó con una carga positiva del mismo valor que la de la barra.",
+        "explicacion": "Correcta. Al frotar, la lana cede electrones a la barra: la barra queda negativa y el paño, positivo. Como la carga se conserva, el paño queda con una carga de igual valor y signo contrario a la de la barra."
+      },
+      {
+        "id": "D",
+        "texto": "Pasaron protones de la barra a la lana, y el paño quedó sin carga neta, tal como estaba antes de frotarlo con la barra.",
+        "explicacion": "Incorrecta. Supone que se mueven los protones y, además, que el paño queda neutro. Si hubiera recibido protones, quedaría positivo; en realidad, la lana pierde electrones y queda con carga positiva."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la barra queda negativa después de frotarla con lana. Concepto: en la electrización por frotamiento se transfieren electrones, no protones, que permanecen en los núcleos; la carga no se crea, se conserva. Aplicación: la lana cede electrones a la barra; la barra queda con exceso de electrones (negativa) y el paño, con defecto de electrones, es decir, con carga positiva de igual valor. Los distractores mueven protones o dejan neutro al paño.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que los objetos más pesados caen más rápido",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, sexto a séptimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Verifico relaciones entre distancia recorrida, velocidad y fuerza involucrada en diversos tipos de movimiento. [...] Identifico condiciones que influyen en los resultados de un experimento y que pueden permanecer constantes o cambiar (variables).",
+    "pregunta": "En 6.°, la docente suelta al mismo tiempo, desde la misma altura, un borrador de tablero y una hoja de papel extendida. El borrador llega primero al piso y casi todo el grupo concluye que «los objetos más pesados caen más rápido». ¿Qué debe proponer la docente a continuación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Soltar a la vez dos hojas iguales, una extendida y otra arrugada en bola, y luego la bola de papel junto al borrador, y comparar qué cambió en cada caso.",
+        "explicacion": "Correcta. Las dos hojas tienen la misma masa y caen distinto: la diferencia la produce la resistencia del aire, que depende de la forma. Luego, la bola de papel y el borrador, de masas muy distintas, llegan casi juntos. Así se separa el efecto de la masa del efecto del aire."
+      },
+      {
+        "id": "B",
+        "texto": "Soltar varias veces una moneda y una pluma desde la misma altura, registrar en una tabla cuál llega primero y comparar los resultados de los grupos.",
+        "explicacion": "Incorrecta. Es activa, pero repite la misma confusión: la pluma es más liviana y también la frena mucho más el aire. Los datos volverán a «confirmar» la idea del grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Soltar el borrador y la hoja extendida desde alturas cada vez mayores y medir con el cronómetro del celular cuánto se adelanta el borrador en cada altura.",
+        "explicacion": "Incorrecta. Es activa y mide, pero conserva la variable que confunde: la forma de la hoja. Con más altura la diferencia crece, y el grupo la leerá como prueba de que el peso acelera la caída."
+      },
+      {
+        "id": "D",
+        "texto": "Mostrar el video del martillo y la pluma que un astronauta soltó en la Luna, y concluir con el grupo que la masa no influye en la rapidez de la caída.",
+        "explicacion": "Incorrecta. La conclusión es correcta, pero el video muestra una caída sin aire y no explica lo que el grupo vio en el salón; los estudiantes pueden pensar que en la Luna las cosas caen distinto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el borrador y la hoja difieren a la vez en masa y en forma, y la forma determina cuánto los frena el aire. Concepto: sin resistencia del aire, todos los cuerpos caen con la misma aceleración; en el aire, la diferencia la produce la resistencia, no la masa. Didáctica: cambiar una sola variable (la misma hoja extendida y arrugada) y luego igualar las formas (bola de papel y borrador) permite que el grupo separe los dos efectos con evidencia propia.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-024",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que las burbujas del agua hirviendo son aire o hidrógeno y oxígeno",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) natural, sexto a séptimo grado",
+      "Entorno físico, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Formulo explicaciones posibles, con base en el conocimiento cotidiano, teorías y modelos científicos, para contestar preguntas. [...] Explico la formación de moléculas y los estados de la materia a partir de fuerzas electrostáticas.",
+    "pregunta": "En 7.°, mientras observan agua hirviendo en un matraz, unos estudiantes dicen que las burbujas grandes que suben son aire que estaba disuelto en el agua, y otros, que son hidrógeno y oxígeno que se separan de las moléculas de agua. ¿Qué debe proponer el docente para que el grupo ponga a prueba estas explicaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sostener con una pinza de madera un vidrio frío sobre la boca del matraz mientras el agua hierve con fuerza, y observar si en él se forman gotas de agua.",
+        "explicacion": "Incorrecta. Es activa y segura, pero no decide entre las explicaciones: el vidrio se empañaría aunque las burbujas fueran aire, o hidrógeno y oxígeno, porque del agua caliente siempre sube vapor. Mostrar que hay vapor no descarta que haya también otros gases."
+      },
+      {
+        "id": "B",
+        "texto": "Pesar el matraz con el agua antes y después de diez minutos de hervor, y calcular con la diferencia la masa del gas que salió en forma de burbujas.",
+        "explicacion": "Incorrecta. Es activa, pero la pérdida de masa no distingue entre las explicaciones: si las burbujas fueran hidrógeno y oxígeno, o si fueran vapor, el gas que escapa saldría del agua y se llevaría su masa en los dos casos."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que ubiquen las burbujas que observaron en un dibujo del modelo de partículas del agua en los tres estados, y que justifiquen su ubicación.",
+        "explicacion": "Incorrecta. Parte del modelo correcto, pero lo da por sentado: ubicar las burbujas en un dibujo del agua no confronta ninguna de las dos explicaciones del grupo con evidencia."
+      },
+      {
+        "id": "D",
+        "texto": "Tras unos minutos de hervor, llevar el gas con una manguera a un tubo invertido lleno de agua fría, ver si se acumula y sacar la manguera antes de apagar.",
+        "explicacion": "Correcta. Tras unos minutos de hervor ya salió el aire que había en el matraz. Si las burbujas fueran aire disuelto, o hidrógeno y oxígeno, el gas se acumularía en el tubo; como son vapor de agua, se condensan al tocar el agua fría y en el tubo no se junta gas. La prueba descarta las dos hipótesis a la vez. Sacar la manguera del agua antes de apagar el mechero evita que, al enfriarse el matraz, el agua fría retroceda hacia el vidrio caliente."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay dos explicaciones en competencia (aire disuelto; hidrógeno y oxígeno) y ambas predicen un gas que no se condensa. Concepto: al hervir, el agua pasa a vapor: sus moléculas se separan entre sí sin romperse. Didáctica: recoger el gas sobre agua fría distingue las hipótesis, porque el vapor se condensa y no se acumula; la manguera se saca antes de apagar para que el agua no retroceda. Las otras actividades muestran vapor sin descartar otros gases, miden algo que no distingue las hipótesis o dan por sentada la respuesta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que solo un modelo atómico es verdadero y los anteriores son errores",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, sexto a séptimo grado",
+      "Desarrollo compromisos personales y sociales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Describo el desarrollo de modelos que explican la estructura de la materia. [...] Reconozco que los modelos de la ciencia cambian con el tiempo y que varios pueden ser válidos simultáneamente.",
+    "pregunta": "En 7.°, después de estudiar los modelos atómicos de Dalton, Thomson, Rutherford y Bohr, varios estudiantes preguntan cuál es «el verdadero» y afirman que los anteriores «fueron errores que ya no sirven para nada». ¿Qué debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Modelar en plastilina los cuatro átomos, exponerlos en una feria de la ciencia y votar con el curso cuál representa mejor al átomo real.",
+        "explicacion": "Incorrecta. Es activa, pero trata los modelos como retratos del átomo, y la votación refuerza la idea de que solo uno es «el verdadero»."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que expliquen la conservación de la masa, la electrización por frotamiento y los colores de un aviso de neón con el modelo más sencillo que baste.",
+        "explicacion": "Correcta. El modelo de Dalton basta para explicar la conservación de la masa (los átomos se reordenan); el de Thomson, la electrización (hay electrones que pasan de un cuerpo a otro), y el de Bohr, los colores definidos de la luz del neón (niveles de energía). Así los estudiantes ven que un modelo anterior sigue siendo útil para ciertos fenómenos y que varios pueden ser válidos a la vez."
+      },
+      {
+        "id": "C",
+        "texto": "Elaborar una línea de tiempo con los cuatro modelos, señalar en cada uno el error que corrigió el siguiente y destacar cuál es el modelo vigente.",
+        "explicacion": "Incorrecta. Es activa, pero presenta cada modelo como un error corregido y cierra con uno «vigente»: refuerza justo la idea que el grupo debe revisar."
+      },
+      {
+        "id": "D",
+        "texto": "Entregar cajas cerradas con un objeto oculto, pedir que lo describan solo haciendo rodar una canica adentro y, al final, abrirlas y ver qué grupo acertó.",
+        "explicacion": "Incorrecta. La caja negra sirve para mostrar cómo se infiere un modelo a partir de evidencia indirecta, pero abrirla al final sugiere que siempre se puede comprobar cuál es el modelo real y que los demás eran errores, que es la idea del grupo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo cree que hay un modelo verdadero y que los anteriores no sirven. Concepto: los modelos científicos cambian con el tiempo y varios pueden ser válidos a la vez, cada uno para los fenómenos que explica. Didáctica: pedir el modelo más sencillo que baste para fenómenos distintos (masa, electrización, colores del neón) muestra que los de Dalton, Thomson y Bohr siguen siendo útiles. Las otras actividades refuerzan la idea de un único modelo correcto.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-026",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que en órbita no hay gravedad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Explico el modelo planetario desde las fuerzas gravitacionales.",
+    "pregunta": "En 7.°, después de ver un video de astronautas que flotan dentro de la Estación Espacial Internacional, que orbita a unos 400 km de altura, los estudiantes concluyen que flotan «porque allá arriba no hay gravedad». ¿Qué debe hacer el docente para que el grupo entienda por qué flotan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicar que a 400 km de altura la gravedad es casi el 90 % de la de la superficie, y pedir que calculen cuánto pesaría allá cada estudiante.",
+        "explicacion": "Incorrecta. El dato es correcto y desmiente que no haya gravedad, pero no responde a lo que el grupo necesita entender: con un peso casi igual al de la superficie, la flotación de los astronautas queda sin explicación."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer flotar un huevo en agua con sal y relacionarlo con los astronautas, que practican bajo el agua cómo moverse sin sentir su propio peso.",
+        "explicacion": "Incorrecta. Es activa, pero confunde la flotación por el empuje del agua con la ingravidez aparente de la órbita, que no se debe a ningún empuje."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar que la estación y los astronautas caen juntos alrededor de la Tierra, y mostrar que una botella perforada no chorrea agua mientras cae.",
+        "explicacion": "Correcta. Los astronautas flotan porque ellos y la estación caen libremente con la misma aceleración: la gravedad los mantiene en órbita, curvando su trayectoria alrededor de la Tierra. La botella que cae muestra el mismo efecto: agua y botella caen juntas y el agua deja de salir."
+      },
+      {
+        "id": "D",
+        "texto": "Girar en un círculo vertical un balde con agua, que no se derrama, y concluir que la rapidez de la estación evita que los astronautas caigan.",
+        "explicacion": "Incorrecta. La demostración es real, pero lleva a una conclusión equivocada: en órbita los astronautas sí caen, con la aceleración de la gravedad, y la rapidez de la estación solo hace que esa caída rodee la Tierra. Además, en el balde el fondo empuja el agua hacia el centro del círculo, mientras que a los astronautas nada los sostiene."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: a 400 km la gravedad es casi el 90 % de la de la superficie y, aun así, los astronautas flotan. Concepto: en órbita, la estación y sus ocupantes están en caída libre alrededor de la Tierra; como todo cae con la misma aceleración, nada presiona el piso y se produce la ingravidez aparente. Didáctica: explicar la órbita como una caída y mostrar el efecto con una botella perforada en caída libre. Los distractores dejan sin explicar la flotación, la confunden con el empuje o la atribuyen a que la rapidez impide la caída.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: secuencia de métodos para separar una mezcla de arena, sal y limaduras de hierro",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Clasifico materiales en sustancias puras o mezclas. [...] Verifico diferentes métodos de separación de mezclas.",
+    "pregunta": "Para una práctica de 6.°, el docente prepara una mezcla seca de arena, sal de cocina y limaduras de hierro, y quiere que cada grupo recupere por separado los tres componentes. ¿Qué secuencia debe tomar como referencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pasar un imán por la mezcla seca; agregar agua a lo que queda y agitar; filtrar; evaporar el líquido filtrado.",
+        "explicacion": "Correcta. El imán retira el hierro; el agua disuelve la sal; el filtro retiene la arena y deja pasar la solución, y al evaporar el líquido filtrado queda la sal. Cada paso aprovecha una propiedad distinta: el magnetismo, la solubilidad y el tamaño de las partículas."
+      },
+      {
+        "id": "B",
+        "texto": "Agregar agua a la mezcla y agitar; evaporar toda el agua; pasar un imán por el residuo; filtrar el sólido que queda.",
+        "explicacion": "Incorrecta. Al evaporar el agua antes de separar, la sal vuelve a cristalizar mezclada con la arena; después, filtrar un sólido seco no separa nada."
+      },
+      {
+        "id": "C",
+        "texto": "Pasar un imán por la mezcla seca; agregar agua a lo que queda y agitar; decantar el agua; secar la arena al sol.",
+        "explicacion": "Incorrecta. La decantación separa la arena, pero la sal disuelta se va con el agua decantada y no se recupera, porque falta evaporarla."
+      },
+      {
+        "id": "D",
+        "texto": "Agregar agua a la mezcla y agitar; filtrar; pasar un imán por el líquido filtrado; evaporar ese líquido.",
+        "explicacion": "Incorrecta. Las limaduras de hierro no se disuelven: quedan en el papel de filtro con la arena, así que el imán no encuentra nada en el líquido y el hierro sigue mezclado con la arena."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los tres componentes tienen propiedades distintas: el hierro es atraído por el imán, la sal se disuelve en agua y la arena no. Concepto: cada método separa por una propiedad (imantación, filtración por tamaño, evaporación del solvente). Aplicación: imán, disolución, filtración y evaporación del filtrado. Errores: evaporar antes de filtrar, decantar sin recuperar la sal o buscar el hierro en el líquido filtrado.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-028",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: temperatura de equilibrio en una mezcla calorimétrica",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre energía interna de un sistema termodinámico, trabajo y transferencia de energía térmica, y las expreso matemáticamente.",
+    "pregunta": "Para una práctica de 9.°, el docente calienta un bloque de hierro de 200 g hasta 100 °C y lo pasa enseguida a un vaso de icopor con 400 g de agua a 20 °C. El calor específico del hierro es 0,45 J/(g·°C) y el del agua, 4,2 J/(g·°C). Si no hay pérdidas hacia el ambiente, ¿qué temperatura marcará el termómetro cuando el bloque y el agua lleguen al equilibrio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unos 47 °C",
+        "explicacion": "Incorrecta. Promedia las temperaturas ponderando solo por la masa: (200 × 100 + 400 × 20) / 600 ≈ 46,7 °C. Olvida que, por gramo, el agua necesita más de nueve veces la energía que necesita el hierro para cambiar un grado."
+      },
+      {
+        "id": "B",
+        "texto": "Unos 86 °C",
+        "explicacion": "Incorrecta. Intercambia los calores específicos (4,2 para el hierro y 0,45 para el agua): (200 × 4,2 × 100 + 400 × 0,45 × 20) / (840 + 180) ≈ 85,9 °C."
+      },
+      {
+        "id": "C",
+        "texto": "60 °C",
+        "explicacion": "Incorrecta. Es el promedio simple de 100 °C y 20 °C; solo sería válido si los dos cuerpos tuvieran la misma capacidad calorífica (masa × calor específico)."
+      },
+      {
+        "id": "D",
+        "texto": "Unos 24 °C",
+        "explicacion": "Correcta. La energía que cede el hierro es igual a la que gana el agua: 200 × 0,45 × (100 − T) = 400 × 4,2 × (T − 20), es decir, 90(100 − T) = 1680(T − 20). Entonces T = 42 600 / 1770 ≈ 24,1 °C. El hierro cede unos 6834 J y el agua los recibe."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la capacidad calorífica del agua (400 × 4,2 = 1680 J/°C) es casi 19 veces la del bloque (200 × 0,45 = 90 J/°C). Concepto: sin pérdidas, la energía que cede el cuerpo caliente es igual a la que gana el frío (m·c·ΔT). Cálculo: 90(100 − T) = 1680(T − 20), de donde T ≈ 24,1 °C. Los distractores ignoran el calor específico (47 °C), lo intercambian (86 °C) o promedian sin ponderar (60 °C).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: modo fundamental de una cuerda y paso del sonido al aire",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Ciencia, tecnología y sociedad, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre frecuencia, amplitud, velocidad de propagación y longitud de onda en diversos tipos de ondas mecánicas. [...] Explico las aplicaciones de las ondas estacionarias en el desarrollo de instrumentos musicales.",
+    "pregunta": "En 9.°, el docente usa un monocordio: una cuerda de 60 cm sujeta en sus dos extremos, en la que las ondas viajan a 240 m/s. Al pulsarla, la cuerda vibra en su modo fundamental. Si el sonido viaja en el aire a 340 m/s, ¿qué frecuencia y qué longitud de onda tiene el sonido que llega a los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "283 Hz y 1,2 m",
+        "explicacion": "Incorrecta. Supone que la longitud de onda de la cuerda (1,2 m) pasa al aire y calcula la frecuencia con la rapidez del sonido: 340 / 1,2 ≈ 283 Hz. Al cambiar de medio se conserva la frecuencia, no la longitud de onda."
+      },
+      {
+        "id": "B",
+        "texto": "200 Hz y 1,7 m",
+        "explicacion": "Correcta. En el modo fundamental, entre los extremos de la cuerda cabe media longitud de onda: λ = 2 × 0,6 = 1,2 m, y f = 240 / 1,2 = 200 Hz. El aire vibra con esa misma frecuencia, pero el sonido viaja a 340 m/s: λ = 340 / 200 = 1,7 m."
+      },
+      {
+        "id": "C",
+        "texto": "400 Hz y 0,85 m",
+        "explicacion": "Incorrecta. Toma la longitud de la cuerda como una longitud de onda completa (λ = 0,6 m), lo que da 400 Hz, el segundo armónico, y en el aire 340 / 400 = 0,85 m."
+      },
+      {
+        "id": "D",
+        "texto": "200 Hz y 1,2 m",
+        "explicacion": "Incorrecta. La frecuencia es correcta, pero supone que el sonido conserva en el aire la longitud de onda de la cuerda; como viaja más rápido que la onda en la cuerda, su longitud de onda es mayor."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la cuerda vibra en su modo fundamental y el sonido pasa a otro medio. Conceptos: en una cuerda fija en los dos extremos, el modo fundamental tiene λ = 2L; al cambiar de medio, la frecuencia se mantiene y cambia la longitud de onda (v = λ·f). Cálculo: λ = 1,2 m y f = 240 / 1,2 = 200 Hz; en el aire, λ = 340 / 200 = 1,7 m. Errores: tomar λ = L (400 Hz) o conservar la longitud de onda al cambiar de medio.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: molaridad y dilución de una solución",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones cuantitativas entre los componentes de una solución.",
+    "pregunta": "Para una práctica de 9.°, la docente disuelve 5,85 g de cloruro de sodio (masa molar 58,5 g/mol) en agua hasta completar 250 mL de solución. Luego toma 50 mL de esa solución, los pasa a un balón aforado y agrega agua hasta completar 200 mL. ¿Cuál es la concentración molar de la solución final?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "0,5 M",
+        "explicacion": "Incorrecta. Reparte en 200 mL todo el soluto (0,1 mol / 0,2 L), como si se hubiera diluido la solución completa y no solo los 50 mL que se tomaron."
+      },
+      {
+        "id": "B",
+        "texto": "1,6 M",
+        "explicacion": "Incorrecta. Invierte el factor de dilución: 0,4 × 200 / 50. Al agregar solvente, la concentración debe bajar, no subir."
+      },
+      {
+        "id": "C",
+        "texto": "0,1 M",
+        "explicacion": "Correcta. n = 5,85 / 58,5 = 0,1 mol y C₁ = 0,1 mol / 0,25 L = 0,4 M. En la dilución se conservan los moles: C₁V₁ = C₂V₂, así que C₂ = 0,4 × 50 / 200 = 0,1 M."
+      },
+      {
+        "id": "D",
+        "texto": "0,08 M",
+        "explicacion": "Incorrecta. Suma 200 mL de agua a los 50 mL (0,4 × 50 / 250); el balón se completó hasta 200 mL de solución, no se le agregaron 200 mL."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: solo se diluyen 50 mL de la solución inicial y el volumen final es de 200 mL. Conceptos: molaridad = moles de soluto / litros de solución; al diluir, los moles se conservan (C₁V₁ = C₂V₂). Cálculo: 0,1 mol / 0,25 L = 0,4 M; 0,4 × 50 / 200 = 0,1 M. Errores: diluir todo el soluto (0,5 M), invertir el factor (1,6 M) o sumar los volúmenes (0,08 M).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la confusión entre temperatura y sensación térmica en el metal y la madera",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) natural, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre energía interna de un sistema termodinámico, trabajo y transferencia de energía térmica, y las expreso matemáticamente. [...] Realizo mediciones con instrumentos adecuados a las características y magnitudes de los objetos de estudio y las expreso en las unidades correspondientes.",
+    "pregunta": "En 8.°, en una mañana fría, los estudiantes tocan la pata metálica y el espaldar de madera de un pupitre que pasó la noche en el salón, y afirman que «el metal está más frío que la madera». ¿Qué debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir que toquen las dos superficies con los ojos vendados, califiquen de 1 a 5 qué tan fría se siente cada una y grafiquen las respuestas de todo el curso.",
+        "explicacion": "Incorrecta. Es activa y reúne más datos, pero todos vienen del tacto, el mismo instrumento que produjo la idea: la encuesta solo confirmará que el metal «se siente» más frío."
+      },
+      {
+        "id": "B",
+        "texto": "Dejar el pupitre al sol durante una hora y pedir que vuelvan a tocar las dos partes y registren cuál de ellas se calentó más en ese tiempo.",
+        "explicacion": "Incorrecta. Es activa, pero vuelve a usar el tacto como termómetro; al sol, el metal se sentirá más caliente por la misma razón por la que antes se sentía más frío: transfiere energía más rápido."
+      },
+      {
+        "id": "C",
+        "texto": "Medir con un termómetro digital la temperatura de la palma de cada estudiante antes y después de apoyarla un minuto en el metal y en la madera.",
+        "explicacion": "Incorrecta. Es activa y usa un instrumento, pero mide la mano y no el pupitre: que la palma se enfríe más sobre el metal es justo lo que produce la sensación, y el grupo puede leerlo como prueba de que el metal está más frío."
+      },
+      {
+        "id": "D",
+        "texto": "Medir las dos superficies con un termómetro de contacto y después poner hielo sobre una lámina de aluminio y sobre una tabla, y ver en cuál se derrite antes.",
+        "explicacion": "Correcta. El termómetro muestra que las dos superficies están a la misma temperatura, la del salón; el hielo se derrite antes sobre el aluminio porque este le transfiere energía más rápido. Así el grupo distingue la temperatura de la rapidez con que se transfiere la energía, que es lo que siente la mano."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el pupitre pasó la noche en el salón, así que sus partes están a la misma temperatura. Concepto: la sensación de frío depende de la rapidez con que un material conduce la energía térmica desde la mano, no de su temperatura. Didáctica: medir las superficies con un instrumento confronta la percepción, y el hielo sobre aluminio y sobre madera hace visible la diferencia de conducción. Los distractores siguen usando el tacto o miden el enfriamiento de la mano, no la temperatura del pupitre.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que disolver sal en agua es un cambio químico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Verifico las diferencias entre cambios químicos y mezclas.",
+    "pregunta": "En 8.°, al disolver una cucharada de sal de cocina en un vaso con agua, varios estudiantes afirman que ocurrió un cambio químico, «porque la sal desapareció y se formó una sustancia nueva, el agua salada». ¿Qué actividad debe proponer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dejar el agua salada en un plato extendido hasta que se evapore el agua, y comparar con lupa los cristales que quedan con la sal original.",
+        "explicacion": "Correcta. Al evaporarse el agua reaparece la misma sustancia, con cristales cúbicos como los originales: la sal se recupera por un método físico, lo que muestra que el agua salada es una mezcla (una solución) y no una sustancia nueva."
+      },
+      {
+        "id": "B",
+        "texto": "Comprobar con la balanza si la masa total se conserva, pesando por separado la sal y el vaso con agua y después la mezcla ya disuelta.",
+        "explicacion": "Incorrecta. Es activa, pero no discrimina: la masa se conserva tanto en una disolución como en una reacción química en un sistema cerrado, así que el resultado no decide si hubo cambio químico."
+      },
+      {
+        "id": "C",
+        "texto": "Medir la temperatura del agua antes y después de disolver la sal, y usar el cambio de temperatura como criterio para decidir si hubo reacción.",
+        "explicacion": "Incorrecta. Es activa, pero el criterio es falso: muchas disoluciones liberan o absorben energía (la del hidróxido de sodio calienta el agua) y algunas reacciones casi no cambian la temperatura."
+      },
+      {
+        "id": "D",
+        "texto": "Observar una gota del agua salada en el microscopio del colegio y buscar en ella las partículas de sal que quedaron disueltas en el agua.",
+        "explicacion": "Incorrecta. Es activa, pero los iones disueltos son demasiado pequeños para un microscopio óptico: el grupo no verá nada y reforzará la idea de que la sal «desapareció»."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el grupo toma la desaparición visible de la sal como prueba de una sustancia nueva. Concepto: en una mezcla, los componentes conservan su identidad y se separan por métodos físicos; en un cambio químico se forman sustancias distintas. Didáctica: evaporar el agua y recuperar la misma sal es la evidencia decisiva. Los distractores usan criterios que no distinguen: la masa se conserva en ambos casos, el cambio de temperatura no es exclusivo de las reacciones y el microscopio no resuelve los iones.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-033",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que las partículas de un gas se dilatan al calentarlo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) natural, octavo a noveno grado"
+    ],
+    "texto_fuente": "Comparo sólidos, líquidos y gases teniendo en cuenta el movimiento de sus moléculas y las fuerzas electroestáticas. [...] Propongo modelos para predecir los resultados de mis experimentos.",
+    "pregunta": "En 8.°, la docente pone un globo desinflado en la boca de una botella vacía y sumerge la botella en agua caliente: el globo se infla. Al explicarlo con dibujos de partículas, varios estudiantes dibujan las mismas partículas del aire, pero más grandes, «porque el calor dilata las partículas». ¿Qué debe proponer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sumergir la botella en agua con hielo para que el globo se desinfle, y pedir que dibujen las partículas en el frío, en el ambiente y en el calor.",
+        "explicacion": "Incorrecta. Trabaja con el modelo de partículas, pero la nueva observación encaja igual de bien en la idea del grupo: dibujarán partículas más pequeñas en el frío, y nada en la actividad pone a prueba el tamaño de las partículas."
+      },
+      {
+        "id": "B",
+        "texto": "Repetir el montaje con agua a 40, 60 y 80 °C, medir el perímetro del globo en cada caso y graficarlo contra la temperatura del agua.",
+        "explicacion": "Incorrecta. Es activa y cuantitativa, pero se queda en la relación entre temperatura y volumen; no examina el modelo de partículas, que es donde está el error."
+      },
+      {
+        "id": "C",
+        "texto": "Modelar el montaje en una simulación de gases que solo cambie la temperatura, observar rapidez, choques y tamaño de las partículas y rehacer los dibujos.",
+        "explicacion": "Correcta. En la simulación, al subir la temperatura las partículas se mueven más rápido y chocan más y con más fuerza contra las paredes, mientras su tamaño no cambia. Con esa evidencia, los estudiantes pueden explicar el globo por los choques del gas y corregir su propio modelo."
+      },
+      {
+        "id": "D",
+        "texto": "Organizar un juego de roles en el que cada estudiante es una partícula del aire y, al «calentarse», abre los brazos para ocupar más espacio.",
+        "explicacion": "Incorrecta. Es activa y trabaja con partículas, pero representa el calentamiento como un aumento del espacio que ocupa cada partícula: confirma la idea de que crecen. En el modelo cinético, las partículas se mueven más rápido y se separan más, sin cambiar de tamaño."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los estudiantes atribuyen a cada partícula una propiedad del material, la dilatación. Concepto: en el modelo cinético, al calentar un gas sus partículas no crecen: se mueven más rápido y chocan con más fuerza y frecuencia contra las paredes, de modo que el gas ocupa más volumen a presión constante. Didáctica: una simulación en la que solo cambia la temperatura permite observar qué cambia y qué no en las partículas. Los distractores se quedan en lo macroscópico, suman observaciones que encajan en la idea errónea o la representan como si fuera correcta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que las ondas transportan el agua",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) natural, octavo a noveno grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre frecuencia, amplitud, velocidad de propagación y longitud de onda en diversos tipos de ondas mecánicas. [...] Establezco diferencias entre descripción, explicación y evidencia.",
+    "pregunta": "En 8.°, al lanzar una piedra a un estanque, los estudiantes ven que las ondas avanzan hacia la orilla y concluyen que «las ondas van empujando el agua hasta el borde». ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Echar papelitos en una cubeta con agua, soplar sobre la superficie con un pitillo hasta formar ondas y observar hacia dónde se desplazan los papelitos.",
+        "explicacion": "Incorrecta. Es activa, pero el soplo arrastra los papelitos por sí mismo: el desplazamiento observado se deberá al viento y no a las ondas, y el grupo lo leerá como prueba de su idea."
+      },
+      {
+        "id": "B",
+        "texto": "Explicar que, al pasar la onda, el agua sube y baja sin viajar con ella, y pedir que lo comprueben marcando la posición de un corcho que flota en una cubeta.",
+        "explicacion": "Correcta. La explicación va acompañada de una prueba que hacen los estudiantes: el corcho sube y baja (y oscila un poco adelante y atrás) a medida que pasan las ondas, pero vuelve casi al mismo lugar. Así comprueban que la perturbación y la energía avanzan, mientras el agua oscila alrededor de su posición."
+      },
+      {
+        "id": "C",
+        "texto": "Generar en una cubeta olas grandes con una tabla hasta que el agua se desborde por el extremo opuesto, y comentar con el grupo la fuerza que llevan las ondas.",
+        "explicacion": "Incorrecta. Es activa, pero las olas grandes que rompen y se desbordan sí arrastran agua: la actividad produce justamente el fenómeno que confunde al grupo."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que la onda lleva energía y no agua, y cronometrar con el grupo cuánto tarda una cresta en ir del centro de la cubeta hasta el borde.",
+        "explicacion": "Incorrecta. La idea es correcta, pero la medición sigue a la cresta, que sí avanza, y no a una porción de agua: el resultado no distingue si el agua viaja con la onda y no pone a prueba lo que el grupo cree."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo confunde el avance de la onda con el desplazamiento del agua. Concepto: una onda mecánica transporta energía sin transportar la materia del medio; cada porción de agua oscila alrededor de su posición. Didáctica: la explicación sirve si se pone a prueba siguiendo un objeto que flota mientras pasan ondas pequeñas. Los distractores introducen otra causa de movimiento (el soplo), generan olas que rompen y sí arrastran agua, o miden el avance de la cresta, que no dice nada sobre el agua.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: distancia de detención con tiempo de reacción y frenado uniformemente desacelerado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Modelo matemáticamente el movimiento de objetos cotidianos a partir de las fuerzas que actúan sobre ellos.",
+    "pregunta": "Para un proyecto de seguridad vial en 10.°, la docente de física toma estos datos de un carro: a 36 km/h, el conductor tarda 0,8 s en reaccionar y, desde que pisa el freno, el carro recorre 10 m hasta detenerse. Con el mismo tiempo de reacción y la misma desaceleración de frenado, ¿qué distancia recorre el carro a 72 km/h desde que el conductor ve el peligro hasta que se detiene?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "36 m",
+        "explicacion": "Incorrecta. Duplica toda la distancia (18 m × 2), como si las dos partes fueran proporcionales a la rapidez; eso solo vale para el tramo de reacción."
+      },
+      {
+        "id": "B",
+        "texto": "72 m",
+        "explicacion": "Incorrecta. Cuadruplica toda la distancia (18 m × 4); el factor 4 solo se aplica al tramo de frenado, no al de reacción."
+      },
+      {
+        "id": "C",
+        "texto": "48 m",
+        "explicacion": "Incorrecta. Cuadruplica bien el frenado (40 m), pero deja el tramo de reacción en 8 m; a 20 m/s, en 0,8 s el carro recorre 16 m antes de que el conductor frene."
+      },
+      {
+        "id": "D",
+        "texto": "56 m",
+        "explicacion": "Correcta. A 36 km/h (10 m/s), la reacción ocupa 10 × 0,8 = 8 m, y el frenado, con v² = 2ad, implica a = 100 / 20 = 5 m/s². A 72 km/h (20 m/s): reacción, 20 × 0,8 = 16 m; frenado, 400 / (2 × 5) = 40 m; total, 56 m."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la distancia de detención tiene dos tramos que dependen distinto de la rapidez. Conceptos: durante la reacción el carro va a velocidad constante (d = v·t, proporcional a v); en el frenado con desaceleración constante, d = v²/2a (proporcional a v²). Cálculo: a 20 m/s, 16 m + 40 m = 56 m. Los distractores multiplican todo por 2 (36 m) o por 4 (72 m), o dejan fijo el tramo de reacción (48 m).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: conservación del momento lineal y pérdida de energía cinética en un choque inelástico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre la conservación del momento lineal y el impulso en sistemas de objetos.",
+    "pregunta": "En un riel de aire de 10.°, un carrito de 0,4 kg que avanza a 0,6 m/s choca con otro de 0,2 kg que está en reposo, y un velcro hace que sigan unidos. El docente afirma que en el choque disminuyó la energía cinética del sistema; un estudiante le objeta que, como no hay rozamiento, esa energía tiene que conservarse. ¿Con qué rapidez se mueven juntos los carritos y quién tiene razón?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A 0,4 m/s, y tiene razón el docente.",
+        "explicacion": "Correcta. El momento lineal se conserva: 0,4 × 0,6 = 0,24 kg·m/s = (0,4 + 0,2) × v, así que v = 0,4 m/s. La energía cinética pasa de ½ × 0,4 × 0,6² = 0,072 J a ½ × 0,6 × 0,4² = 0,048 J: se pierde un tercio, que se transforma en el choque (deformación del velcro, sonido y calor)."
+      },
+      {
+        "id": "B",
+        "texto": "A 0,3 m/s, y tiene razón el docente.",
+        "explicacion": "Incorrecta. Acierta en la energía, pero promedia las velocidades sin ponderarlas por las masas: (0,6 + 0) / 2 = 0,3 m/s. Con esa rapidez, el momento lineal final (0,18 kg·m/s) no sería igual al inicial."
+      },
+      {
+        "id": "C",
+        "texto": "A 0,4 m/s, y tiene razón el estudiante.",
+        "explicacion": "Incorrecta. La rapidez es correcta, pero la ausencia de rozamiento externo no garantiza que se conserve la energía cinética: en un choque en el que los cuerpos quedan unidos, parte de ella se transforma en otras formas."
+      },
+      {
+        "id": "D",
+        "texto": "A 0,3 m/s, y tiene razón el estudiante.",
+        "explicacion": "Incorrecta. Promedia las velocidades sin tener en cuenta las masas y, además, supone que la energía cinética se conserva en un choque en el que los carritos quedan unidos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los carritos quedan unidos y no hay fuerzas externas horizontales. Conceptos: el momento lineal se conserva en todo choque sin fuerza externa neta; la energía cinética solo se conserva en los choques elásticos. Cálculo: v = 0,24 / 0,6 = 0,4 m/s; la energía cinética baja de 0,072 J a 0,048 J. El docente tiene razón: la falta de rozamiento con el riel no impide que el choque transforme energía. El valor de 0,3 m/s promedia velocidades sin ponderar las masas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: potencia de dos bombillos de distinta potencia nominal conectados en serie",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado",
+      "Ciencia, tecnología y sociedad, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Relaciono voltaje y corriente con los diferentes elementos de un circuito eléctrico complejo y para todo el sistema. [...] Analizo el desarrollo de los componentes de los circuitos eléctricos y su impacto en la vida diaria.",
+    "pregunta": "En la clave de un taller de 11.°, el docente escribió que, si se conectan en serie a 120 V un bombillo de 60 W y uno de 100 W, ambos fabricados para 120 V, brilla más el de 100 W. Una colega le objeta que brilla más el de 60 W. Si la resistencia de cada bombillo no cambia con la temperatura, ¿qué potencia disipa cada uno?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de 60 W, unos 15 W, y el de 100 W, unos 25 W.",
+        "explicacion": "Incorrecta. Supone que la tensión se reparte por igual (60 V para cada uno) y aplica P = V²/R. En serie, la tensión se reparte en proporción a la resistencia: 75 V para el de 60 W y 45 V para el de 100 W."
+      },
+      {
+        "id": "B",
+        "texto": "Los dos disipan unos 19 W cada uno, y brillan igual.",
+        "explicacion": "Incorrecta. Es cierto que por los dos pasa la misma corriente, pero como P = I²R, disipa más el de mayor resistencia; repartir por igual la potencia total ignora esa diferencia."
+      },
+      {
+        "id": "C",
+        "texto": "El de 60 W, unos 23 W, y el de 100 W, unos 14 W.",
+        "explicacion": "Correcta. Con R = V²/P, el de 60 W tiene 120²/60 = 240 Ω y el de 100 W, 120²/100 = 144 Ω. En serie, I = 120 / 384 = 0,3125 A. Con P = I²R: 0,3125² × 240 ≈ 23,4 W y 0,3125² × 144 ≈ 14,1 W. Brilla más el de 60 W: la colega tiene razón."
+      },
+      {
+        "id": "D",
+        "texto": "El de 60 W, unos 14 W, y el de 100 W, unos 23 W.",
+        "explicacion": "Incorrecta. Invierte la relación: usa la del circuito en paralelo, donde disipa más el de menor resistencia. En serie, con la misma corriente, disipa más el de mayor resistencia, que es el de 60 W."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los bombillos están en serie, así que los recorre la misma corriente. Conceptos: la resistencia de cada bombillo sale de sus datos nominales (R = V²/P); en serie, P = I²R, de modo que disipa más el de mayor resistencia. Cálculo: 240 Ω y 144 Ω; I = 0,3125 A; 23,4 W y 14,1 W. La colega tiene razón. Errores: repartir la tensión por igual, aplicar la relación del paralelo o suponer que la misma corriente implica la misma potencia.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: pureza del reactivo y rendimiento en un cálculo estequiométrico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Ciencia, tecnología y sociedad, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Realizo cálculos cuantitativos en cambios químicos. [...] Explico cambios químicos en la cocina, la industria y el ambiente.",
+    "pregunta": "En 11.°, la docente plantea la producción de cal viva en un horno artesanal de la región: CaCO₃ → CaO + CO₂. Se calcinan 200 kg de piedra caliza que contiene 75 % de carbonato de calcio, y el proceso tiene un rendimiento del 80 %. Con las masas molares CaCO₃ = 100 g/mol y CaO = 56 g/mol, ¿cuánta cal viva se obtiene?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "84 kg",
+        "explicacion": "Incorrecta. Aplica la pureza, pero no el rendimiento: 84 kg es la cantidad teórica, la que se obtendría si reaccionara todo el carbonato."
+      },
+      {
+        "id": "B",
+        "texto": "67,2 kg",
+        "explicacion": "Correcta. Carbonato puro: 200 × 0,75 = 150 kg, es decir, 1,5 kmol. La relación es 1:1, así que en teoría se forman 1,5 kmol de CaO, que son 1,5 × 56 = 84 kg. Con un rendimiento del 80 %: 84 × 0,8 = 67,2 kg."
+      },
+      {
+        "id": "C",
+        "texto": "105 kg",
+        "explicacion": "Incorrecta. Divide entre el rendimiento en lugar de multiplicar (84 / 0,8); así obtiene más producto que el máximo teórico, lo que es imposible."
+      },
+      {
+        "id": "D",
+        "texto": "89,6 kg",
+        "explicacion": "Incorrecta. Aplica el rendimiento, pero toma los 200 kg de caliza como carbonato puro: 2 kmol × 56 × 0,8 = 89,6 kg."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la caliza no es carbonato puro y la reacción no rinde el 100 %. Conceptos: la estequiometría se aplica solo a la sustancia que reacciona, y el rendimiento real es una fracción del teórico. Cálculo: 150 kg de CaCO₃ = 1,5 kmol, que dan 1,5 kmol de CaO = 84 kg teóricos; 84 × 0,8 = 67,2 kg. Errores: omitir el rendimiento (84 kg), dividir entre él (105 kg) u omitir la pureza (89,6 kg).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-039",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que en el equilibrio químico la reacción se detiene y las cantidades se igualan",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Caracterizo cambios químicos en condiciones de equilibrio. [...] Propongo modelos para predecir los resultados de mis experimentos y simulaciones.",
+    "pregunta": "En 11.°, después de estudiar la síntesis del amoníaco, N₂ + 3 H₂ ⇌ 2 NH₃, varios estudiantes escriben que, al llegar al equilibrio, «la reacción se detiene y quedan iguales las cantidades de reactivos y de productos». ¿Qué debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hacer que dos estudiantes pasen agua entre dos probetas con pitillos iguales, uno en cada sentido, hasta que los volúmenes dejen de cambiar.",
+        "explicacion": "Incorrecta. Es activa y muestra que el traspaso sigue cuando los volúmenes se estabilizan, pero con pitillos iguales los volúmenes terminan iguales: refuerza la idea de que en el equilibrio hay la misma cantidad de reactivos y de productos."
+      },
+      {
+        "id": "B",
+        "texto": "Simular con fichas de dos colores la conversión de reactivos en productos, lanzando un dado en cada ronda, hasta que todas las fichas sean de producto.",
+        "explicacion": "Incorrecta. Es activa, pero solo modela la reacción directa: al final no quedan reactivos y el proceso se detiene, que es justo la idea que el grupo debe revisar."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar el equilibrio con una gráfica de concentración contra tiempo en la que las curvas se vuelven horizontales, y pedir que señalen dónde empieza.",
+        "explicacion": "Incorrecta. La gráfica muestra que las cantidades finales son distintas, pero no que las reacciones sigan ocurriendo: unas curvas horizontales también describirían una reacción que se detuvo, así que la primera idea del grupo queda en pie."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que en el equilibrio las dos reacciones siguen a igual velocidad, y pedir que lo comprueben trasvasando agua con pitillos de distinto grosor.",
+        "explicacion": "Correcta. La explicación se pone a prueba con un modelo: al principio los volúmenes cambian rápido; luego se estabilizan aunque el agua sigue pasando en los dos sentidos, y los volúmenes finales son distintos. Así se ven las dos ideas por revisar: el equilibrio es dinámico (la reacción no se detiene) y las cantidades no tienen por qué ser iguales; lo que se iguala son las velocidades."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el grupo cree que en el equilibrio la reacción se detiene y que las cantidades se igualan. Concepto: el equilibrio químico es dinámico: las reacciones directa e inversa siguen ocurriendo con la misma velocidad, y las concentraciones se vuelven constantes, pero en general distintas. Didáctica: explicarlo y ponerlo a prueba con probetas y pitillos de distinto grosor muestra a la vez el traspaso continuo y los volúmenes desiguales. Los distractores refuerzan una de las dos ideas o dejan la otra en pie.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: balancear ecuaciones cambiando subíndices en lugar de coeficientes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Explico los cambios químicos desde diferentes modelos.",
+    "pregunta": "En 10.°, para balancear la ecuación de formación del agua, H₂ + O₂ → H₂O, un estudiante escribe H₂ + O₂ → H₂O₂ y comenta: «Así ya quedan dos oxígenos a cada lado». ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarle con bolitas de plastilina que H₂O₂ es otra sustancia, y pedirle que arme las moléculas y forme agua cambiando solo cuántas moléculas usa.",
+        "explicacion": "Correcta. Al construir las moléculas, el estudiante ve que H₂O₂ (agua oxigenada) es una sustancia distinta del agua: el subíndice define la composición de la sustancia. Para conservar los átomos sin cambiarla, debe agregar moléculas, es decir, coeficientes: 2 H₂ + O₂ → 2 H₂O."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que balancee por tanteo diez ecuaciones más y que, en cada una, verifique que haya el mismo número de átomos de cada elemento a ambos lados.",
+        "explicacion": "Incorrecta. Es activa, pero la verificación que propone no detecta el error: H₂ + O₂ → H₂O₂ tiene el mismo número de átomos a cada lado. El estudiante puede seguir cambiando subíndices y pasar la comprobación."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que pese los reactivos y los productos de una reacción efervescente en un frasco cerrado y que compruebe la conservación de la masa.",
+        "explicacion": "Incorrecta. Es activa, pero trabaja un principio que el estudiante ya aplica (quiere conservar los oxígenos); su error está en cambiar la sustancia, no en la conservación."
+      },
+      {
+        "id": "D",
+        "texto": "Reconocer que su ecuación está balanceada y mostrarle que la forma que usan los textos es 2 H₂ + O₂ → 2 H₂O, para que la prefiera.",
+        "explicacion": "Incorrecta. Valida el error: H₂ + O₂ → H₂O₂ tiene los mismos átomos a cada lado, pero describe otra reacción, la que forma agua oxigenada. Presentar 2 H₂ + O₂ → 2 H₂O como la forma preferida le confirma al estudiante que cambiar subíndices es una manera válida de balancear."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el estudiante conserva los átomos, pero lo hace cambiando la fórmula del producto. Concepto: los subíndices indican la composición de cada sustancia (H₂O es agua; H₂O₂, agua oxigenada); los coeficientes indican cuántas moléculas participan. Didáctica: representar las moléculas con modelos físicos hace visible que H₂O₂ es otra sustancia y que el balanceo se logra con coeficientes: 2 H₂ + O₂ → 2 H₂O. Los distractores verifican lo que no falla, trabajan otro principio o validan el cambio de subíndice como otra forma de balancear.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

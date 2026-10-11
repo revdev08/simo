@@ -1,0 +1,1048 @@
+[
+  {
+    "id": "TC-CSO-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Coordenadas geográficas: cálculo del antípoda de un punto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Utilizo coordenadas, convenciones y escalas para trabajar con mapas y planos de representación.",
+    "pregunta": "En 6.°, al trabajar con coordenadas geográficas, una docente propone hallar el antípoda de un punto del territorio colombiano situado a 5° de latitud norte y 75° de longitud oeste. ¿Cuáles son las coordenadas de ese antípoda?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "5° de latitud sur y 75° de longitud este.",
+        "explicacion": "Incorrecta. Pasa bien la latitud al hemisferio sur, pero en la longitud solo cambia el hemisferio: un punto a 75° E está a 150° de longitud del original, no a 180°. La longitud del antípoda es 180° − 75° = 105° E."
+      },
+      {
+        "id": "B",
+        "texto": "5° de latitud norte y 105° de longitud este.",
+        "explicacion": "Incorrecta. Calcula bien la longitud (180° − 75° = 105° E), pero conserva la latitud norte. Ese punto está en el meridiano opuesto, pero en el mismo hemisferio; el antípoda de un punto del hemisferio norte está en el hemisferio sur."
+      },
+      {
+        "id": "C",
+        "texto": "5° de latitud sur y 105° de longitud este.",
+        "explicacion": "Correcta. El antípoda está en el otro extremo de un diámetro de la Tierra. Conserva el valor de la latitud, pero en el otro hemisferio (5° S), y su longitud es 180° menos la original, también en el otro hemisferio: 180° − 75° = 105° E."
+      },
+      {
+        "id": "D",
+        "texto": "5° de latitud norte y 75° de longitud este.",
+        "explicacion": "Incorrecta. Comete los dos errores: deja la latitud en el hemisferio norte y, en la longitud, solo cambia el hemisferio sin restar de 180°. Ese punto está en el mismo paralelo, a 150° de longitud del original."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el punto está a 5° N y 75° O. Concepto: el antípoda es el punto diametralmente opuesto; tiene el mismo valor de latitud en el otro hemisferio, y una longitud igual a 180° menos la original, también en el otro hemisferio. Cálculo: 180° − 75° = 105°. Conclusión: el antípoda está a 5° S y 105° E, en el sureste asiático.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Cronología: duración entre un año antes de Cristo y otro después de Cristo, y siglo de cada fecha",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Describo características de la organización social, política o económica en algunas culturas y épocas [...] Establezco relaciones entre estas culturas y sus épocas.",
+    "pregunta": "Para una línea de tiempo de Roma en 6.°, un docente toma del libro de texto dos fechas: 509 a. C., comienzo de la república, y 476 d. C., fin del Imperio romano de Occidente. Antes de la clase calcula cuántos años transcurrieron entre los dos hechos e identifica el siglo de cada uno. ¿Qué resultados debe obtener?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Transcurrieron 984 años; el primer hecho es del siglo VI a. C., y el segundo, del siglo V d. C.",
+        "explicacion": "Correcta. En la cronología histórica no existe el año 0: al 1 a. C. le sigue el 1 d. C. Por eso, al sumar 509 + 476 se cuenta un año de más: 509 + 476 − 1 = 984. El siglo VI a. C. va del 600 al 501 a. C., y el siglo V d. C., del 401 al 500."
+      },
+      {
+        "id": "B",
+        "texto": "Transcurrieron 985 años; el primer hecho es del siglo VI a. C., y el segundo, del siglo V d. C.",
+        "explicacion": "Incorrecta. Ubica bien los siglos, pero suma 509 + 476 = 985 como si existiera un año 0. Entre el 1 a. C. y el 1 d. C. pasa un solo año, así que hay que restar uno: 984."
+      },
+      {
+        "id": "C",
+        "texto": "Transcurrieron 984 años; el primer hecho es del siglo V a. C., y el segundo, del siglo IV d. C.",
+        "explicacion": "Incorrecta. Calcula bien la duración, pero toma la cifra de las centenas como número del siglo. El año 509 a. C. pertenece al siglo VI a. C. (del 600 al 501 a. C.), y el 476 d. C., al siglo V (del 401 al 500)."
+      },
+      {
+        "id": "D",
+        "texto": "Transcurrieron 985 años; el primer hecho es del siglo V a. C., y el segundo, del siglo IV d. C.",
+        "explicacion": "Incorrecta. Comete los dos errores: suma los años como si existiera un año 0 (985 en lugar de 984) y nombra el siglo por la cifra de las centenas, cuando 509 a. C. es del siglo VI a. C. y 476 d. C., del siglo V."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: una fecha es anterior y la otra posterior al comienzo de la era. Concepto: en la cronología histórica no hay año 0, así que entre un año a. C. y otro d. C. transcurre la suma de los dos menos uno; un año pertenece al siglo que resulta de sumar uno a sus centenas completas (salvo los terminados en 00). Cálculo: 509 + 476 − 1 = 984; 509 a. C. está entre el 600 y el 501 a. C. (siglo VI a. C.), y 476 d. C., entre el 401 y el 500 (siglo V). Conclusión: 984 años; siglos VI a. C. y V d. C.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-023",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Sistemas de producción inca: ayllu, trabajo por turnos para el Estado y redistribución",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, sexto a séptimo grado",
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Describo características de la organización social, política o económica en algunas culturas y épocas (la democracia en los griegos, los sistemas de producción de la civilización inca, el feudalismo en el medioevo, el surgimiento del Estado en el Renacimiento...). [...] Identifico sistemas de producción en diferentes culturas y períodos históricos y establezco relaciones entre ellos.",
+    "pregunta": "En 6.°, un estudiante afirma que la economía del Imperio inca «funcionaba como la de ahora, pero sin máquinas». La docente prepara una síntesis para mostrarle cómo se organizaba la producción en esa sociedad. ¿Qué síntesis es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cada ayllu repartía tierras entre sus familias, que entregaban al Estado parte de lo que cosechaban en ellas; lo recogido se guardaba en depósitos y se redistribuía.",
+        "explicacion": "Incorrecta. Acierta en el papel del ayllu y de los depósitos, pero no en la forma del tributo: el Estado inca no se quedaba con una parte de lo que cada familia cosechaba en su parcela. El tributo era en trabajo: las comunidades cultivaban por turnos las tierras del Estado y del culto, y lo producido allí llenaba los depósitos. El tributo en productos de las propias cosechas fue, en cambio, un rasgo del tributo colonial."
+      },
+      {
+        "id": "B",
+        "texto": "Los curacas eran dueños de las tierras de su región y cobraban a las familias una parte de la cosecha, de la que entregaban una porción al Inca como tributo.",
+        "explicacion": "Incorrecta. Traslada a los Andes el modelo del señor que es dueño de la tierra y cobra una renta en productos. Los curacas eran autoridades de las comunidades y recibían trabajo por reciprocidad, pero la tierra la tenía el ayllu, que la repartía entre sus familias, y el tributo al Estado se pagaba con trabajo, no con una parte de la cosecha."
+      },
+      {
+        "id": "C",
+        "texto": "Los curacas eran dueños de las tierras de su región y las arrendaban a las familias, que además trabajaban por turnos en las tierras y obras del Estado.",
+        "explicacion": "Incorrecta. Acierta en el trabajo por turnos para el Estado, pero no en la tenencia de la tierra: en el mundo inca no había propietarios privados ni arriendos. El acceso a la tierra dependía de pertenecer a un ayllu, que la repartía entre sus familias según sus necesidades; los curacas tenían privilegios, pero no eran dueños de la tierra de su región."
+      },
+      {
+        "id": "D",
+        "texto": "Cada ayllu repartía tierras entre sus familias, que además trabajaban por turnos las tierras del Estado; lo cosechado en ellas se guardaba en depósitos y se redistribuía.",
+        "explicacion": "Correcta. La base era el ayllu, una comunidad de parentesco que repartía la tierra entre sus familias según sus necesidades. El tributo al Estado era en trabajo: cada comunidad aportaba turnos (la mita) para cultivar las tierras del Estado y del culto, construir caminos y obras o servir en el ejército. Lo producido en esas tierras se guardaba en depósitos (las colcas) y se redistribuía, sin moneda ni grandes mercados."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay que describir cómo se organizaba la producción inca sin trasladarle modelos de otras sociedades. Concepto: la tierra la tenía el ayllu, que la repartía entre sus familias; el tributo al Estado era en trabajo por turnos (mita) en sus tierras y obras, no una parte de las cosechas familiares, y lo producido se almacenaba y redistribuía. Conclusión: la síntesis que une ayllu, trabajo por turnos y redistribución; las demás suponen dueños de la tierra que cobran renta o un tributo en productos.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-024",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Encomienda y resguardo: tributo indígena frente a tierra comunal, y naturaleza actual del resguardo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Explico el impacto de las culturas involucradas en el encuentro Europa-América-África sobre los sistemas de producción tradicionales (tenencia de la tierra, uso de la mano de obra, tipos de explotación).",
+    "pregunta": "En 7.°, al estudiar el impacto de la colonización española en la Nueva Granada, un estudiante escribe: «La encomienda y el resguardo fueron dos formas de repartir la tierra: la primera, entre los españoles, y la segunda, entre los indígenas. Hoy no existe ninguna de las dos». ¿Qué debe precisarle el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la encomienda no daba tierras, sino el derecho a cobrar tributo a un grupo de indígenas, y que los resguardos existen hoy como tierras de la Nación cedidas en uso a las comunidades.",
+        "explicacion": "Incorrecta. Acierta sobre la encomienda, pero no sobre la naturaleza actual del resguardo: no es tierra del Estado prestada a las comunidades, sino propiedad de ellas. La Constitución dispone que «Los resguardos son de propiedad colectiva y no enajenable» (art. 329), y que las tierras de resguardo son inalienables, imprescriptibles e inembargables (art. 63)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la encomienda no daba tierras, sino el derecho a cobrar tributo a un grupo de indígenas, y que los resguardos existen hoy como propiedad colectiva que no se puede vender.",
+        "explicacion": "Correcta. La encomienda era una concesión de la Corona a un español, que recibía el tributo (en productos, dinero o trabajo) de un grupo de indígenas con la obligación de protegerlos y evangelizarlos, pero no la propiedad de sus tierras; fue decayendo, y la Corona la suprimió en lo esencial a comienzos del siglo XVIII. El resguardo era tierra comunal asignada a los pueblos indígenas. Muchos se disolvieron en el siglo XIX, pero otros subsistieron, y hoy la Constitución dispone que «Los resguardos son de propiedad colectiva y no enajenable» (art. 329)."
+      },
+      {
+        "id": "C",
+        "texto": "Que acierta en que la encomienda repartía tierras entre los españoles, pero que los resguardos existen hoy como propiedad colectiva que no se puede vender.",
+        "explicacion": "Incorrecta. Acierta sobre el resguardo, pero acepta el error sobre la encomienda: esta no daba la propiedad de la tierra, sino el derecho a recibir el tributo de los indígenas encomendados. Las tierras de los españoles provenían de otros títulos, como las mercedes de tierras, que dieron origen a las haciendas."
+      },
+      {
+        "id": "D",
+        "texto": "Que acierta en que la encomienda repartía tierras entre los españoles, pero que los resguardos existen hoy como tierras de la Nación cedidas en uso a las comunidades.",
+        "explicacion": "Incorrecta. Deja en pie el error sobre la encomienda, que no repartía tierras sino el tributo de los indígenas, y añade otro sobre el resguardo: no es tierra de la Nación prestada a las comunidades, sino propiedad colectiva de ellas, inalienable, imprescriptible e inembargable (arts. 63 y 329 de la Constitución)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el estudiante trata la encomienda como un reparto de tierras y da por desaparecidos los resguardos. Concepto: la encomienda daba a un español el derecho a recibir el tributo de un grupo de indígenas, no sus tierras; el resguardo era tierra comunal indígena, y hoy la Constitución dispone que «Los resguardos son de propiedad colectiva y no enajenable» (art. 329). Conclusión: corregir la idea sobre la encomienda y precisar que el resguardo subsiste como propiedad de las comunidades, no del Estado.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-025",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Relación con el medio en sociedades prehispánicas: canales zenúes y terrazas taironas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, octavo a noveno grado"
+    ],
+    "texto_fuente": "Comparo las maneras como distintas comunidades, etnias y culturas se han relacionado económicamente con el medio ambiente en Colombia a lo largo de la historia (pesca de subienda, cultivo en terrazas...).",
+    "pregunta": "Un docente de 8.° compara cómo dos sociedades prehispánicas del actual territorio colombiano, los zenúes y los taironas, adaptaron en épocas distintas su producción al medio en que vivían. ¿Qué comparación es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los zenúes construyeron terrazas de piedra para cultivar en las laderas, y los taironas, canales y camellones para manejar las inundaciones.",
+        "explicacion": "Incorrecta. Intercambia las técnicas: la depresión momposina es una llanura inundable, sin laderas que aterrazar, y la Sierra Nevada es un macizo montañoso, donde el problema es la pendiente y no las inundaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Los zenúes desecaron las ciénagas para criar ganado en las sabanas, y los taironas talaron los bosques de montaña para sembrar trigo.",
+        "explicacion": "Incorrecta. Es un anacronismo: el ganado vacuno y el trigo llegaron con los europeos. Las dos sociedades transformaron el medio con obras adaptadas a cultivos americanos, como el maíz, y a las condiciones de cada territorio."
+      },
+      {
+        "id": "C",
+        "texto": "Los zenúes construyeron canales y camellones para manejar las inundaciones, y los taironas, terrazas de piedra para cultivar en las laderas.",
+        "explicacion": "Correcta. En las tierras bajas del río San Jorge, que se inundan cada año, los zenúes construyeron un extenso sistema de canales y camellones (franjas de tierra elevada) que distribuía el agua de las crecientes y permitía cultivar y habitar; tuvo su mayor desarrollo en el primer milenio de nuestra era, y buena parte estaba abandonado cuando llegaron los españoles. En las laderas de la Sierra Nevada, los taironas construyeron, en su mayoría siglos después, terrazas sostenidas con muros de piedra, que daban superficies planas para cultivos y viviendas y frenaban la erosión."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna de las dos hizo obras permanentes: vivían de la caza, la pesca y la recolección, y se desplazaban según la temporada.",
+        "explicacion": "Incorrecta. Las dos eran sociedades agrícolas y sedentarias, que dejaron obras permanentes: los canales y camellones zenúes, y las terrazas, caminos y poblados de piedra de los taironas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los zenúes ocuparon la depresión momposina, una llanura que se inunda periódicamente, y los taironas, las laderas de la Sierra Nevada. Concepto: las sociedades transforman el medio con técnicas adaptadas a sus condiciones físicas. Las dos obras no son contemporáneas: el sistema hidráulico zenú es sobre todo del primer milenio de nuestra era, y las terrazas taironas, en su mayoría, posteriores. Conclusión: los zenúes manejaron las inundaciones con canales y camellones, y los taironas cultivaron en pendiente con terrazas de piedra.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-026",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Fronteras geométricas en África: trazado colonial sin atender a la distribución de los pueblos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones ético-políticas, octavo a noveno grado",
+      "Relaciones ético-políticas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Identifico y comparo algunos de los procesos políticos que tuvieron lugar en el mundo en el siglo XIX y primera mitad del siglo XX (procesos coloniales en África y Asia; Revolución Rusa y Revolución China; Primera y Segunda Guerra Mundial...). [...] Identifico criterios que permiten establecer la división política de un territorio.",
+    "pregunta": "En 9.°, al comparar mapas políticos actuales de varios continentes, los estudiantes notan que muchas fronteras africanas son líneas rectas, mientras que muchas de Europa y América siguen ríos o cordilleras. ¿Qué explicación del origen de esas líneas rectas es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las trazaron las potencias europeas en el reparto colonial, entre finales del siglo XIX y comienzos del XX, sin atender a dónde vivía cada pueblo, y muchos quedaron divididos.",
+        "explicacion": "Correcta. Muchas fronteras africanas se fijaron en tratados entre las potencias europeas durante el reparto de África, que se aceleró tras la Conferencia de Berlín (1884-1885) y se prolongó hasta comienzos del siglo XX. A menudo se trazaron con paralelos, meridianos o rectas entre dos puntos, con poco conocimiento del terreno y sin atender a dónde vivía cada pueblo: muchos quedaron repartidos entre dos o más colonias, o reunidos con pueblos rivales. Al independizarse, los nuevos Estados las conservaron en general."
+      },
+      {
+        "id": "B",
+        "texto": "Las trazaron las potencias europeas en el reparto colonial, entre finales del siglo XIX y comienzos del XX, sobre desiertos casi deshabitados, y por eso pocos pueblos quedaron divididos.",
+        "explicacion": "Incorrecta. Acierta en quiénes las trazaron y cuándo, pero no en el efecto. Muchas rectas cruzan el Sahara, pero aun allí dividieron a pueblos nómadas, como los tuaregs, hoy repartidos entre Argelia, Libia, Malí y Níger; y otras atraviesan zonas pobladas, como la que separa a Kenia de Tanzania, que dejó a los masáis a ambos lados."
+      },
+      {
+        "id": "C",
+        "texto": "Las trazaron los Estados africanos al independizarse, en la segunda mitad del siglo XX, sin atender a dónde vivía cada pueblo, y muchos quedaron divididos.",
+        "explicacion": "Incorrecta. Describe bien el efecto, pero no el origen: los Estados africanos que se independizaron en el siglo XX heredaron las fronteras coloniales y, en general, las conservaron; la Organización para la Unidad Africana acordó en 1964 respetarlas."
+      },
+      {
+        "id": "D",
+        "texto": "Las trazaron los Estados africanos al independizarse, en la segunda mitad del siglo XX, sobre desiertos casi deshabitados, y por eso pocos pueblos quedaron divididos.",
+        "explicacion": "Incorrecta. Se equivoca en el origen y en el efecto: las líneas rectas vienen del reparto colonial, y los nuevos Estados las heredaron; además, no evitaron dividir pueblos: aun en el Sahara partieron a pueblos nómadas como los tuaregs, y fuera de él, a pueblos como los masáis."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las fronteras son líneas rectas, es decir, geométricas, no naturales ni culturales. Concepto: en África, muchas las trazaron las potencias europeas en tratados del reparto colonial, entre finales del siglo XIX y comienzos del XX, sin atender a la distribución de los pueblos, y los nuevos Estados las heredaron. No solo cruzan desiertos: dividieron a pueblos como los tuaregs, los masáis o los somalíes. Conclusión: origen colonial y pueblos divididos o agrupados.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Crisis de 1929 y economía colombiana: escasez de divisas, protección arancelaria e impulso a la industria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico algunos de los procesos que condujeron a la modernización en Colombia en el siglo XIX y primera mitad del siglo XX (bonanzas agrícolas, procesos de industrialización, urbanización...). [...] Explico las políticas que orientaron la economía colombiana a lo largo del siglo XIX y primera mitad del XX (proteccionismo, liberalismo económico...).",
+    "pregunta": "Un docente de 9.° quiere que el grupo relacione la crisis mundial que comenzó en 1929 con la economía colombiana. Les entrega dos datos de los años siguientes: el precio internacional del café cayó con fuerza y se suspendieron los préstamos extranjeros al país. ¿Qué efecto de esa situación en Colombia se explica correctamente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con menos divisas, el Estado bajó los aranceles para abaratar las importaciones y reactivar el consumo, lo que dejó sin mercado a las pocas fábricas nacionales.",
+        "explicacion": "Incorrecta. Invierte la política: con pocas divisas, abaratar las importaciones habría agravado la falta de dólares. El gobierno hizo lo contrario: subió los aranceles y controló el uso de las divisas, lo que protegió a la industria nacional."
+      },
+      {
+        "id": "B",
+        "texto": "Con la caída del precio, el país abandonó el cultivo del café y pasó a exportar petróleo, que desde entonces se convirtió en el principal producto de exportación del país.",
+        "explicacion": "Incorrecta. El café siguió siendo el principal producto de exportación de Colombia durante varias décadas más; incluso el volumen exportado creció en los años treinta. El petróleo lo superó mucho después, a finales del siglo XX."
+      },
+      {
+        "id": "C",
+        "texto": "Como la economía era sobre todo agrícola y de autoconsumo, la crisis casi no afectó al país, que siguió importando como antes las manufacturas que necesitaba.",
+        "explicacion": "Incorrecta. Desde comienzos del siglo XX la economía colombiana dependía de las exportaciones de café y de los préstamos externos, así que la crisis la golpeó: cayeron los ingresos por exportaciones y la capacidad de importar."
+      },
+      {
+        "id": "D",
+        "texto": "Con menos divisas, importar manufacturas se volvió difícil y caro, y el Estado subió los aranceles; eso favoreció a las fábricas que abastecían el mercado interno.",
+        "explicacion": "Correcta. Al caer el precio del café, principal exportación, y cortarse los préstamos, el país tuvo menos divisas para pagar importaciones. Las manufacturas extranjeras escasearon y se encarecieron, y el gobierno elevó la protección arancelaria y controló las divisas. Así se amplió el mercado para la industria nacional, que creció en los años treinta: fue un impulso a la sustitución de importaciones."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: cayeron el precio del café y los préstamos externos, las dos fuentes de divisas del país. Concepto: con menos divisas se reduce la capacidad de importar; si además suben los aranceles, la producción nacional gana el mercado interno. Conclusión: la crisis encareció las importaciones, llevó a más protección y favoreció a la industria nacional en los años treinta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Integración económica: mercado común, arancel externo común y política comercial frente a terceros",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico algunos factores que han dado origen a las nuevas formas de organización de la economía mundial (bloques económicos, tratados de libre comercio, áreas de libre comercio...). [...] Analizo consecuencias de estas nuevas formas de organización sobre las relaciones económicas, políticas y sociales entre los Estados.",
+    "pregunta": "En 11.°, una docente describe un acuerdo hipotético entre cuatro países: eliminan los aranceles al comercio entre ellos, aplican un mismo arancel a lo que importan de países de fuera y permiten que trabajadores y capitales circulen libremente entre los cuatro; cada uno conserva su propia moneda. Luego pregunta qué pasaría si uno de ellos quisiera rebajar, por su cuenta, el arancel a los productos de un país de fuera del acuerdo. ¿Qué respuesta es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es un mercado común, y ese país sí podría rebajarlo por su cuenta: al conservar su propia moneda, cada miembro conserva también su política comercial externa.",
+        "explicacion": "Incorrecta. Clasifica bien el acuerdo, pero confunde la política monetaria con la comercial: conservar la moneda no devuelve a cada país el manejo de sus aranceles frente a terceros, que en este acuerdo son comunes."
+      },
+      {
+        "id": "B",
+        "texto": "Es un mercado común, y ese país no podría rebajarlo por su cuenta: rompería el arancel común frente a terceros y debería negociarlo con los otros tres.",
+        "explicacion": "Correcta. Por etapas: la zona de libre comercio elimina los aranceles entre los miembros; la unión aduanera agrega un arancel externo común; el mercado común agrega la libre circulación de trabajadores y capitales, y la unión económica, la coordinación de políticas y a veces una moneda común. El acuerdo tiene los rasgos del mercado común. Con un arancel externo común, la política comercial frente a terceros se decide en conjunto: si un miembro rebajara el suyo, los productos de fuera entrarían por él y circularían sin aranceles por los demás."
+      },
+      {
+        "id": "C",
+        "texto": "No pasa de unión aduanera, pues falta una moneda común, y ese país no podría rebajarlo por su cuenta: rompería el arancel común frente a terceros.",
+        "explicacion": "Incorrecta. Acierta en la consecuencia, pero no en la etapa: la moneda común no es requisito del mercado común, sino un rasgo de etapas posteriores. Lo que distingue al mercado común de la unión aduanera es la libre circulación de trabajadores y capitales, que el acuerdo sí tiene."
+      },
+      {
+        "id": "D",
+        "texto": "No pasa de unión aduanera, pues falta una moneda común, y ese país sí podría rebajarlo por su cuenta: conserva su moneda y su política comercial.",
+        "explicacion": "Incorrecta. Se equivoca en la etapa, porque la moneda común no es requisito del mercado común, y en la consecuencia, porque con un arancel externo común ningún miembro puede fijar por su cuenta los aranceles frente a terceros."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el acuerdo suma libre comercio interno, arancel externo común y libre circulación de trabajadores y capitales, sin moneda común. Concepto: esos rasgos corresponden, en orden, a la zona de libre comercio, la unión aduanera y el mercado común; la moneda común es propia de etapas posteriores. Con un arancel externo común, la política comercial frente a terceros es conjunta. Conclusión: es un mercado común, y la rebaja tendría que negociarse entre todos.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Crecimiento de la población: crecimiento natural y saldo migratorio en un municipio rural",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) social, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico y analizo las consecuencias sociales, económicas, políticas y culturales de los procesos de concentración de la población en los centros urbanos y abandono del campo. [...] Clasifico, comparo e interpreto la información obtenida en las diversas fuentes.",
+    "pregunta": "Un docente de 10.° analiza con su grupo las estadísticas de un año en un municipio rural: población a mitad de año, 40.000 habitantes; 720 nacimientos y 280 defunciones; 300 personas llegaron a vivir al municipio y 1.100 se fueron a otros lugares. Les pide calcular la tasa de crecimiento total de la población en ese año. ¿Qué resultado es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un aumento del 1,1%, que resulta de restar las 280 defunciones a los 720 nacimientos que hubo en el municipio durante ese año.",
+        "explicacion": "Incorrecta. Calcula solo el crecimiento natural (440 ÷ 40.000 × 100 = 1,1%) y deja por fuera la migración, que en este municipio pesa más y cambia el signo del resultado."
+      },
+      {
+        "id": "B",
+        "texto": "Una disminución del 1,65%, que resulta de restar las 1.100 salidas del año al crecimiento natural del municipio, de 440 personas.",
+        "explicacion": "Incorrecta. Resta las salidas, pero olvida sumar las 300 personas que llegaron: 440 − 1.100 = −660, es decir, −1,65%. El saldo migratorio es la diferencia entre llegadas y salidas: −800."
+      },
+      {
+        "id": "C",
+        "texto": "Una disminución del 0,9%, que resulta de sumar el crecimiento natural, de 440 personas, y el saldo migratorio, de −800 personas.",
+        "explicacion": "Correcta. Crecimiento total = crecimiento natural + saldo migratorio. Natural: 720 − 280 = 440. Migratorio: 300 − 1.100 = −800. Total: 440 − 800 = −360 personas; −360 ÷ 40.000 × 100 = −0,9%. Aunque nacen más personas de las que mueren, la emigración hace que la población disminuya."
+      },
+      {
+        "id": "D",
+        "texto": "Una disminución del 2%, que resulta de restar las 1.100 personas que se fueron a las 300 que llegaron a vivir al municipio.",
+        "explicacion": "Incorrecta. Calcula solo el saldo migratorio (−800 ÷ 40.000 × 100 = −2%) y olvida el crecimiento natural, que compensa en parte la emigración."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en el municipio nacen más personas de las que mueren, pero se van más de las que llegan. Concepto: el crecimiento total suma el crecimiento natural (nacimientos − defunciones) y el saldo migratorio (inmigrantes − emigrantes), y la tasa se calcula sobre la población a mitad de año. Cálculo: (720 − 280) + (300 − 1.100) = −360; −360 ÷ 40.000 × 100 = −0,9%. Conclusión: la población disminuyó un 0,9%.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Frente Nacional: alternación presidencial y paridad, y lo que muestra una fuente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, décimo a undécimo grado",
+      "Relaciones ético-políticas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico las causas, características y consecuencias del Frente Nacional. [...] Describo el impacto de hechos políticos de mediados del siglo XX (9 de abril, Frente Nacional…) en las organizaciones sociales, políticas y económicas del país.",
+    "pregunta": "En 11.°, la docente entrega la lista de los presidentes de Colombia entre 1958 y 1974, con su partido: Alberto Lleras Camargo (liberal), Guillermo León Valencia (conservador), Carlos Lleras Restrepo (liberal) y Misael Pastrana Borrero (conservador). Pide identificar un rasgo del Frente Nacional que la lista deja ver y otro que la lista NO muestra. ¿Qué respuesta es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Deja ver la alternación de los dos partidos en la presidencia; no muestra que en esos años se suspendieron por acuerdo las elecciones presidenciales.",
+        "explicacion": "Incorrecta. Identifica bien lo que muestra la lista, pero lo que dice que no muestra es falso: hubo elecciones presidenciales en 1958, 1962, 1966 y 1970; desde 1962, por la reforma de 1959, solo podían ser elegidos candidatos del partido al que le correspondía el turno."
+      },
+      {
+        "id": "B",
+        "texto": "Deja ver que los votantes, en cada elección, dieron el triunfo por turnos a cada partido; no muestra que los escaños del Congreso y los ministerios se repartían por mitades entre ellos.",
+        "explicacion": "Incorrecta. Acierta en lo que la lista no muestra, pero la interpreta mal: la alternación no resultó de que los votantes cambiaran de partido, sino de una regla que pactaron los partidos y que el Acto Legislativo 1 de 1959 llevó a la Constitución; desde 1962, solo podían ser elegidos candidatos del partido al que le tocaba el turno."
+      },
+      {
+        "id": "C",
+        "texto": "Deja ver que los votantes, en cada elección, dieron el triunfo por turnos a cada partido; no muestra que en esos años se suspendieron por acuerdo las elecciones presidenciales.",
+        "explicacion": "Incorrecta. Interpreta la alternación como una decisión de los votantes, cuando era una regla constitucional, y afirma que se suspendieron las elecciones, cuando hubo elecciones presidenciales cada cuatro años."
+      },
+      {
+        "id": "D",
+        "texto": "Deja ver la alternación de los dos partidos en la presidencia; no muestra que los escaños del Congreso y los ministerios se repartían por mitades entre ellos.",
+        "explicacion": "Correcta. El Frente Nacional fue un acuerdo entre liberales y conservadores con dos reglas centrales. La paridad, que empezó con el plebiscito de 1957, repartía por mitades entre los dos partidos el Congreso y las demás corporaciones públicas, el gabinete y buena parte de los cargos públicos. La alternación en la presidencia la pactaron los partidos y la estableció el Acto Legislativo 1 de 1959, hasta 1974. La lista muestra la alternación, pero no la paridad."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la lista muestra presidentes de los dos partidos turnándose cada cuatro años. Concepto: el Frente Nacional (1958-1974) combinó la paridad, que desde el plebiscito de 1957 repartía por mitades el Congreso, el gabinete y buena parte de los cargos públicos, y la alternación en la presidencia, que estableció el Acto Legislativo 1 de 1959; hubo elecciones, pero desde 1962 solo podían ganarlas candidatos del partido al que le tocaba el turno. Conclusión: la lista deja ver la alternación, no la paridad.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Lectura del mapa físico: la dirección de los ríos depende del relieve, no de la orientación del mapa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Utilizo coordenadas, convenciones y escalas para trabajar con mapas y planos de representación. [...] Describo las características que permiten dividir a Colombia en regiones naturales.",
+    "pregunta": "En 6.°, al ubicar el río Magdalena en el mapa físico de Colombia, un estudiante afirma que el río corre de norte a sur, «porque los ríos bajan, y en el mapa el sur está abajo». Varios compañeros están de acuerdo. ¿Cómo debe intervenir la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Girar con el grupo el mapa para dejar el sur arriba y hacerles notar que, así orientado, el Magdalena sí corre hacia abajo, es decir, hacia el norte del país.",
+        "explicacion": "Incorrecta. Usa la idea de que la orientación es una convención, pero la pone al servicio del mismo error: sugiere que el río corre «hacia abajo» en el mapa, ahora girado. La coincidencia refuerza la idea de que los ríos bajan por el papel, cuando lo que determina su dirección es el relieve."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que ubiquen el nacimiento y la desembocadura del Magdalena, que lean su altitud en los colores del mapa y que revisen otros ríos con distinta dirección.",
+        "explicacion": "Correcta. Ataca la causa del error: el estudiante confunde la parte de abajo del mapa con las tierras bajas. Al leer en los colores del mapa físico que el Magdalena nace en el macizo Colombiano, a gran altura, y desemboca en el mar Caribe, el grupo comprueba que corre hacia el norte; al revisar ríos como el Meta, que corre hacia el oriente, o el Caquetá, hacia el sureste, ve que la dirección depende del relieve y no de la orientación del mapa."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que ubiquen el nacimiento y la desembocadura del Magdalena, del Atrato y del Sinú, para que concluyan que los ríos del país corren de sur a norte, hacia el Caribe.",
+        "explicacion": "Incorrecta. Es activa y corrige la dirección del Magdalena, pero generaliza a partir de tres ríos de la misma vertiente y cambia un error por otro: en Colombia hay ríos que corren hacia el oriente, como el Meta; hacia el sureste, como el Caquetá y el Putumayo, o hacia el occidente, como el Patía. Además, no lleva a leer la altitud en el mapa físico, que es lo que explica la dirección de cada río."
+      },
+      {
+        "id": "D",
+        "texto": "Llevar al grupo a una quebrada cercana para que observen hacia dónde corre el agua y, con una brújula, determinen si va hacia el norte o hacia el sur.",
+        "explicacion": "Incorrecta. Es activa, pero la dirección de una quebrada cercana no dice nada sobre la del Magdalena, y la brújula no ayuda a leer el relieve en el mapa, que es donde está el error de los estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el estudiante confunde «abajo» en el mapa con las tierras bajas. Concepto: los ríos corren de las zonas altas a las bajas; en el mapa físico la altitud se lee en las convenciones de color, y poner el norte arriba es una convención. Conclusión: que el grupo lea en el mapa el nacimiento, la desembocadura y la altitud del Magdalena y de ríos con otras direcciones; las demás opciones refuerzan el error, generalizan a partir de ríos con la misma dirección o buscan la evidencia donde no está.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Estaciones y zona intertropical: el error de atribuirlas a la distancia al Sol",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Reconozco características de la Tierra que la hacen un planeta vivo. [...] Establezco relaciones entre la ubicación geoespacial y las características climáticas del entorno de diferentes culturas.",
+    "pregunta": "En 7.°, mientras estudian la relación entre la ubicación de los lugares y su clima, una estudiante explica que en Colombia no hay invierno ni verano como en Europa «porque estamos más cerca del Sol». ¿Cómo debe intervenir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mostrar con una lámpara y un globo terráqueo inclinado cómo cambian en el año la inclinación de los rayos y la duración del día en Colombia y en Europa, y pedirle que compare.",
+        "explicacion": "Correcta. Pone a prueba la causa que propone la estudiante con un modelo de la causa real. Las estaciones de las latitudes medias se deben a la inclinación del eje terrestre: a lo largo del año cambian el ángulo con que llegan los rayos del Sol y la duración del día. Cerca del ecuador los rayos llegan casi perpendiculares todo el año y el día dura unas doce horas, así que la temperatura varía poco. La distancia no es la causa: la Tierra está más cerca del Sol a comienzos de enero, en pleno invierno del hemisferio norte."
+      },
+      {
+        "id": "B",
+        "texto": "Mostrar con un climograma que en Colombia también hay estaciones, de lluvias y secas, y pedirle que compare el calendario de lluvias de su municipio con el de una ciudad europea.",
+        "explicacion": "Incorrecta. El dato es cierto (en Colombia las «estaciones» son épocas de lluvias y épocas secas), pero no examina la causa que da la estudiante: la idea de que la distancia al Sol explica el clima queda intacta."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que mida durante una semana la temperatura del patio a distintas horas, para comprobar si el Sol calienta más al mediodía, cuando está más cerca.",
+        "explicacion": "Incorrecta. Es activa, pero parte del mismo error: al mediodía el Sol no calienta más por estar más cerca (la diferencia de distancia es insignificante), sino porque está más alto y sus rayos llegan más perpendiculares. La actividad confirmaría la idea equivocada."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarle que la temperatura en Colombia depende sobre todo de la altitud, y pedirle que ubique en el mapa ciudades cálidas y frías del país para comprobarlo.",
+        "explicacion": "Incorrecta. La altitud explica las diferencias de temperatura entre lugares del país, pero no por qué en Colombia no hay estaciones térmicas marcadas; la explicación de la estudiante, la distancia al Sol, queda sin examinar."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la estudiante atribuye la falta de estaciones a la cercanía al Sol. Concepto: las estaciones se deben a la inclinación del eje terrestre, que cambia en el año el ángulo de los rayos y la duración del día; en la zona intertropical esos cambios son pequeños. La distancia no es la causa: la Tierra está más cerca del Sol en enero, durante el invierno del norte. Conclusión: modelar la inclinación y comparar Colombia con Europa; las demás opciones dejan intacta la idea o la refuerzan.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-033",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Comparación de las colonias españolas, portuguesas e inglesas: criterios comunes para comparar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, sexto a séptimo grado",
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Identifico y comparo las características de la organización social en las colonias españolas, portuguesas e inglesas en América. [...] Comparo características de la organización económica (tenencia de la tierra, uso de la mano de obra, tipos de explotación) de las colonias españolas, portuguesas e inglesas en América.",
+    "pregunta": "Un docente de 7.° quiere que el grupo compare la organización social y económica de las colonias españolas, portuguesas e inglesas en América. Una colega le sugiere dividir el curso en tres grupos, uno por cada colonia, para que investiguen y expongan lo que encuentren. ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acoger la división en tres grupos, pero pedir a cada uno una línea de tiempo con las fechas de fundación y de independencia de su colonia, para luego compararlas entre sí.",
+        "explicacion": "Incorrecta. Introduce un criterio común, pero no el que pide el estándar: las fechas de fundación e independencia ordenan los hechos en el tiempo, pero no dicen cómo se organizaban la tierra, el trabajo y la sociedad en cada colonia."
+      },
+      {
+        "id": "B",
+        "texto": "Acoger la división en tres grupos, con criterios comunes como la tierra y la mano de obra, y que tomen los datos de censos agropecuarios recientes de Colombia, Brasil y Estados Unidos.",
+        "explicacion": "Incorrecta. Acierta en los criterios, pero no en la fuente: los censos agropecuarios recientes describen la tenencia de la tierra y el trabajo de hoy, después de dos siglos de cambios, no la organización colonial. Atribuir esos datos a las colonias es un anacronismo; hay que buscar fuentes del periodo colonial o estudios sobre él."
+      },
+      {
+        "id": "C",
+        "texto": "Acoger la división en tres grupos, pero acordar antes criterios comunes, como quién poseía la tierra y quién la trabajaba, para cruzar luego los hallazgos en un cuadro comparativo.",
+        "explicacion": "Correcta. Investigar por grupos es útil, pero solo se puede comparar si los tres grupos examinan los mismos aspectos, en fuentes sobre el periodo colonial. Acordar los criterios del estándar (tenencia de la tierra, uso de la mano de obra, tipos de explotación, organización social) y cruzar los hallazgos permite ver, por ejemplo, la encomienda y la mita en las colonias españolas, los ingenios azucareros con mano de obra esclavizada en Brasil, y las granjas familiares del norte y las plantaciones del sur en las colonias inglesas."
+      },
+      {
+        "id": "D",
+        "texto": "Acoger la división en tres grupos, pero asignar a cada uno un aspecto distinto: la tierra en las colonias españolas, la mano de obra en las portuguesas y la sociedad en las inglesas.",
+        "explicacion": "Incorrecta. Parece cubrir todos los aspectos del estándar, pero cada colonia queda descrita desde un aspecto distinto, y así no hay con qué comparar: el cuadro final no puede contrastar la tenencia de la tierra en las tres colonias, ni la mano de obra, ni la organización social."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la propuesta de la colega organiza la investigación, pero no la comparación. Concepto: comparar exige examinar los mismos aspectos en todos los casos y con fuentes del periodo estudiado; los estándares proponen la tenencia de la tierra, el uso de la mano de obra, los tipos de explotación y la organización social. Conclusión: aprovechar los grupos con criterios comunes y un cuadro que cruce los hallazgos; las demás opciones comparan con un criterio ajeno, con fuentes de otra época o sin aspectos comunes.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Fuentes orales: precisar las fechas con fuentes escritas y aprovechar los testimonios sobre la vida cotidiana",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Hago planes de búsqueda que incluyan posibles fuentes primarias y secundarias (orales, escritas, iconográficas, virtuales…) y diferentes términos para encontrar información que conteste mis preguntas. [...] Recolecto y registro la información que obtengo de diferentes fuentes.",
+    "pregunta": "En 9.°, para estudiar cómo cambió la vida en su municipio con la carretera que lo comunicó con la capital del departamento, en la década de 1970, los estudiantes entrevistan a varios adultos mayores. Los relatos coinciden en cómo cambiaron el comercio y las costumbres, pero dan años distintos para la apertura de la vía. Un estudiante propone descartar las entrevistas «porque la gente no recuerda bien». ¿Qué debe hacer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Darle la razón en cuanto a la fecha, que conviene precisar con actas del concejo o periódicos, y conservar solo las entrevistas que coincidan con el año que estos registren.",
+        "explicacion": "Incorrecta. Acierta en precisar la fecha con documentos de la época, pero usa ese dato para depurar los testimonios: equivocarse en el año no invalida lo que una persona cuenta sobre cómo cambiaron el comercio y las costumbres. Descartar esos relatos deja por fuera evidencia valiosa y puede sesgar lo que se concluya sobre la vida diaria."
+      },
+      {
+        "id": "B",
+        "texto": "Darle la razón en cuanto a la fecha, que conviene precisar con actas del concejo o periódicos, y conservar las entrevistas para estudiar los cambios en la vida diaria.",
+        "explicacion": "Correcta. La objeción del estudiante es correcta en parte: la memoria es poco precisa para las fechas, que deben establecerse con fuentes escritas de la época. Pero los testimonios coinciden en lo que vivieron (los cambios en el comercio y las costumbres), y para eso las fuentes orales son valiosas y a veces las únicas; un error en el año no invalida el resto del relato. Contrastar unas fuentes con otras y usar cada una para lo que puede mostrar es lo que piden los estándares."
+      },
+      {
+        "id": "C",
+        "texto": "No darle la razón: conservar todas las entrevistas para estudiar los cambios en la vida diaria y tomar como fecha de apertura la que mencione la mayoría de los entrevistados.",
+        "explicacion": "Incorrecta. Valora bien las entrevistas para estudiar la vida diaria, pero fija la fecha por mayoría: varios testimonios pueden repetir el mismo error, y una fecha se establece contrastando con documentos de la época, no por votación."
+      },
+      {
+        "id": "D",
+        "texto": "No darle la razón: tomar como fecha la del entrevistado de más edad, que vivió la obra siendo adulto, y conservar solo los relatos que coincidan con ella.",
+        "explicacion": "Incorrecta. Fija la fecha con un criterio que no la garantiza, la edad del testigo, en lugar de contrastarla con documentos de la época, y además descarta los relatos que no coinciden con ella, aunque lo que cuentan sobre la vida diaria siga siendo valioso."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los relatos coinciden en los cambios vividos, pero no en el año. Concepto: cada fuente sirve para unas preguntas; la memoria es valiosa para la experiencia y poco precisa para las fechas, que se contrastan con documentos de la época, y un error de fecha no invalida el resto del testimonio. Conclusión: aceptar en parte la objeción, precisar la fecha con actas o prensa y conservar todas las entrevistas; las demás opciones depuran los relatos por la fecha o la fijan por mayoría o por la edad del testigo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Hipótesis y conclusiones: presentar una hipótesis que la evidencia no sostuvo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Planteo hipótesis que respondan provisionalmente estas preguntas. [...] Comparo las conclusiones a las que llego después de hacer la investigación con las hipótesis iniciales.",
+    "pregunta": "En 9.°, un grupo investiga por qué decayó, en la segunda mitad del siglo XX, el puerto fluvial de su municipio. Su hipótesis era que la sedimentación volvió innavegable el río. En las fuentes encuentran que la carga pasó a una carretera troncal construida en esos años y que el río siguió siendo navegable varios años después de que el puerto empezara a decaer. Antes de presentar, una estudiante propone reescribir la hipótesis para que coincida con lo hallado. ¿Qué debe orientar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que reescriban la hipótesis, como propone la estudiante, para que el informe sea coherente y la conclusión responda a la pregunta de investigación.",
+        "explicacion": "Incorrecta. Busca coherencia, pero oculta el proceso: si la hipótesis se ajusta después a los resultados, desaparece la comparación entre la conjetura inicial y lo que mostraron las fuentes, que es justamente lo que el estándar pide hacer."
+      },
+      {
+        "id": "B",
+        "texto": "Que busquen más fuentes sobre la sedimentación del río hasta reunir evidencia suficiente para sostener la hipótesis que se plantearon al comienzo.",
+        "explicacion": "Incorrecta. Es activa, pero orienta la búsqueda a confirmar una idea que la evidencia ya contradijo: buscar solo lo que apoya la hipótesis es un sesgo de confirmación."
+      },
+      {
+        "id": "C",
+        "texto": "Que presenten las dos explicaciones como igualmente probables, porque una investigación escolar no reúne evidencia suficiente para descartar una hipótesis.",
+        "explicacion": "Incorrecta. Las fuentes que encontraron sí permiten descartar la hipótesis: si el río siguió siendo navegable cuando el puerto ya decaía, la sedimentación no explica el comienzo de la decadencia. Ponerlas en pie de igualdad desconoce la evidencia."
+      },
+      {
+        "id": "D",
+        "texto": "Que mantengan la hipótesis inicial en el informe, expongan las evidencias que la contradicen y presenten la explicación que surgió de las fuentes.",
+        "explicacion": "Correcta. Una hipótesis es una respuesta provisional que se pone a prueba; que la evidencia no la sostenga es un resultado de la investigación, no un fracaso. Presentarla junto con las evidencias que la contradicen (el río siguió siendo navegable cuando el puerto ya decaía) y con la nueva explicación es lo que pide el estándar: comparar las conclusiones con las hipótesis iniciales."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la evidencia contradice la hipótesis del grupo. Concepto: la hipótesis responde de manera provisional a la pregunta y se contrasta con la información; las conclusiones se comparan con ella, la confirmen o no. Conclusión: mantener la hipótesis, mostrar por qué no se sostuvo y presentar la explicación que surgió; reescribirla, buscar solo lo que la confirma o igualar las dos explicaciones desconoce la evidencia.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Evaluar un mapa temático: densidad de población frente a población total",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Utilizo mapas, cuadros, tablas, gráficas y cálculos estadísticos para analizar información.",
+    "pregunta": "En 8.°, un estudiante elabora un mapa de tres municipios vecinos con el título «Densidad de población», y colorea con el tono más oscuro el que tiene más habitantes. Sus datos son: municipio A, 60.000 habitantes y 1.200 km²; B, 45.000 habitantes y 300 km²; C, 20.000 habitantes y 250 km². ¿Qué retroalimentación debe darle la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el tono más oscuro le corresponde a B, con 150 hab/km², seguido de C, con 80, y de A, con 50, porque la densidad relaciona los habitantes con la superficie.",
+        "explicacion": "Correcta. La densidad es el número de habitantes por unidad de superficie: A, 60.000 ÷ 1.200 = 50 hab/km²; B, 45.000 ÷ 300 = 150; C, 20.000 ÷ 250 = 80. El municipio más poblado es el menos denso, porque su territorio es mucho más extenso. El mapa, tal como está, representa la población total con un título equivocado."
+      },
+      {
+        "id": "B",
+        "texto": "Que el tono más oscuro le corresponde a A, con 20 km² por cada mil habitantes, seguido de C, con 12,5, y de B, con 6,7, porque la densidad relaciona la superficie con los habitantes.",
+        "explicacion": "Incorrecta. Invierte la razón: divide la superficie entre los habitantes (km² por cada mil habitantes) y luego lee el valor más alto como el más denso. Cuantos más km² le corresponden a cada persona, menos densa es la población."
+      },
+      {
+        "id": "C",
+        "texto": "Que el mapa está bien coloreado, porque A tiene más habitantes y, por tanto, la mayor densidad, y que le falta una leyenda que indique qué representa cada tono.",
+        "explicacion": "Incorrecta. Confunde población total con densidad: A tiene más habitantes, pero también mucha más superficie, y es el menos denso (50 hab/km²)."
+      },
+      {
+        "id": "D",
+        "texto": "Que los tres municipios deben llevar el mismo tono, porque la densidad se obtiene dividiendo el total de habitantes entre la superficie total: unos 71 hab/km².",
+        "explicacion": "Incorrecta. Calcula la densidad del conjunto (125.000 ÷ 1.750 ≈ 71 hab/km²), que borra las diferencias entre municipios. Un mapa de densidad compara la de cada unidad: 50, 150 y 80 hab/km²."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el municipio con más habitantes tiene también la mayor superficie. Concepto: la densidad de población es habitantes ÷ superficie, y en un mapa temático se calcula para cada unidad. Cálculo: A, 60.000 ÷ 1.200 = 50; B, 45.000 ÷ 300 = 150; C, 20.000 ÷ 250 = 80 hab/km². Conclusión: el tono más oscuro va en B, luego C y por último A; el mapa del estudiante muestra la población total con el título de densidad.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-037",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Lluvias del Pacífico colombiano: el contraejemplo de La Guajira y el papel del relieve y los vientos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, octavo a noveno grado"
+    ],
+    "texto_fuente": "Describo las principales características físicas de los diversos ecosistemas.",
+    "pregunta": "En 8.°, al estudiar la selva húmeda del Pacífico colombiano, una de las zonas más lluviosas del planeta, un estudiante explica que allí llueve tanto «porque está al lado del mar». La docente quiere que sean los estudiantes quienes construyan una explicación más completa. ¿Cómo debe intervenir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicar que el aire húmedo del océano se enfría al subir por la cordillera Occidental y deja casi toda su lluvia en esas laderas, y pedir que dibujen ese proceso.",
+        "explicacion": "Incorrecta. Falla en dos puntos. Entrega el mecanismo ya hecho, cuando la docente busca que el grupo construya la explicación. Y el mecanismo es incompleto: el ascenso por la cordillera es solo uno de los factores, y buena parte de la lluvia cae sobre la llanura costera y aun sobre el mar, por los vientos húmedos del oeste (el chorro del Chocó) y la convergencia de vientos en la zona de convergencia intertropical; lugares de los más lluviosos, como Quibdó o Lloró, están en tierras bajas."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que comparen la lluvia anual del litoral Pacífico con la de La Guajira, costera pero árida, y que busquen en mapas de relieve y vientos qué las diferencia.",
+        "explicacion": "Correcta. La Guajira también está junto al mar y es árida: el contraejemplo muestra que la cercanía al océano no basta y lleva a buscar en los mapas de relieve y de vientos los factores que faltan. En el Pacífico, vientos del oeste cargados de humedad (el chorro del Chocó) llegan a una zona donde convergen los vientos (la zona de convergencia intertropical), y el aire asciende sobre la llanura y contra la cordillera Occidental, lo que produce lluvias muy abundantes. En La Guajira, de relieve bajo, los alisios soplan casi paralelos a la costa y el aire no asciende lo suficiente para producir lluvia."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que consulten la temperatura del mar frente al Chocó y la relacionen con la cantidad de agua que se evapora, para comprobar la explicación del estudiante.",
+        "explicacion": "Incorrecta. Es activa, pero está diseñada para confirmar la explicación del estudiante: la evaporación aporta humedad al aire, pero no explica por qué esa humedad se convierte en lluvia en unas costas y no en otras."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir que comparen la lluvia anual de dos municipios del litoral Pacífico, uno de Chocó y otro de Nariño, para verificar si llueve igual en toda la costa.",
+        "explicacion": "Incorrecta. Es activa, pero compara dos lugares que comparten el factor que se quiere poner a prueba: los dos están junto al mar, así que la comparación no puede mostrar si la cercanía al océano explica la lluvia."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el estudiante atribuye la lluvia solo a la cercanía al mar, y la docente quiere que el grupo construya la explicación. Concepto: el mar aporta humedad, pero la lluvia depende también de los vientos y del relieve, que hacen ascender el aire; en el Pacífico intervienen el chorro del Chocó, la convergencia de vientos y la cordillera Occidental. Conclusión: confrontar la idea con un contraejemplo costero y árido, La Guajira, y buscar los factores que faltan; las demás opciones dan un mecanismo hecho e incompleto, confirman la idea o comparan casos que no la ponen a prueba.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Voto femenino en Colombia: corregir la idea de que llegó con la Constitución de 1991",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Reconozco el cambio en la posición de la mujer en el mundo y en Colombia a lo largo del siglo XX y su incidencia en el desarrollo político, económico, social, cultural, familiar y personal.",
+    "pregunta": "En 11.°, mientras estudian los cambios en la situación de las mujeres en Colombia durante el siglo XX, un estudiante afirma que las colombianas votaron por primera vez gracias a la Constitución de 1991. ¿Cómo debe intervenir la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarle que el voto femenino se aprobó en 1954 y se ejerció por primera vez en 1957, y que la Constitución de 1991 solo lo ratificó, sin otros cambios para las mujeres.",
+        "explicacion": "Incorrecta. Corrige bien el dato del voto, pero añade un error: la Constitución de 1991 sí trajo cambios para las mujeres. Dispone que «La mujer y el hombre tienen iguales derechos y oportunidades» (art. 43) y que «Las autoridades garantizarán la adecuada y efectiva participación de la mujer en los niveles decisorios de la Administración Pública» (art. 40). Además, cierra la reflexión en lugar de abrirla."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que compare los textos originales de las constituciones de 1886 y 1991 y que identifique en cuál de las dos se reconoció a las mujeres el derecho a votar.",
+        "explicacion": "Incorrecta. Es activa, pero la comparación no sirve para corregir el error: el texto original de 1886 reservaba la ciudadanía a los varones, y el de 1991 reconoce los derechos políticos a todos los ciudadanos. Al comparar solo esos dos textos, el estudiante confirmaría que el voto femenino apareció en 1991, cuando llegó con una reforma intermedia, el Acto Legislativo 3 de 1954, que no figura en ninguno de los dos textos originales."
+      },
+      {
+        "id": "C",
+        "texto": "Organizar un debate sobre si la Constitución de 1991 fue la norma que más avanzó en los derechos de las mujeres en Colombia durante el siglo XX.",
+        "explicacion": "Incorrecta. Propone discutir una valoración antes de corregir el dato: el debate puede reforzar la idea de que el voto femenino llegó en 1991, porque no lleva al estudiante a revisar la cronología."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarle que el voto femenino se aprobó en 1954 y se ejerció por primera vez en el plebiscito de 1957, y preguntarle qué aportó a las mujeres la Constitución de 1991.",
+        "explicacion": "Correcta. Corrige el dato con precisión y lo pone en relación con otros cambios: las mujeres obtuvieron el derecho al voto con el Acto Legislativo 3 de 1954, una reforma de la Constitución de 1886, y votaron por primera vez en el plebiscito de 1957. La Constitución de 1991 no creó ese derecho, pero consagró la igualdad entre mujeres y hombres (art. 43) y ordenó garantizar «la adecuada y efectiva participación de la mujer en los niveles decisorios de la Administración Pública» (art. 40)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante atribuye el primer voto de las mujeres a la Constitución de 1991. Hechos: el voto femenino se aprobó con el Acto Legislativo 3 de 1954 y se ejerció por primera vez en el plebiscito de 1957; la Constitución de 1991 consagró la igualdad de derechos (art. 43) y la participación de la mujer en los niveles decisorios (art. 40). Conclusión: corregir el dato y llevarlo a precisar el aporte de 1991; las demás opciones niegan ese aporte, proponen una comparación que confirmaría el error o debaten sin corregir.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-039",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Prensa partidista como fuente: contrastar cifras contradictorias y usar cada periódico como testimonio de su posición",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Analizo críticamente los documentos (qué tipo de documento es, quién es el autor, a quién está dirigido, de qué habla, por qué se produjo, desde qué posición ideológica está hablando, qué significa para mí…). [...] Recojo información de otras fuentes pertinentes según mi plan.",
+    "pregunta": "En 10.°, para estudiar una manifestación política ocurrida en Bogotá en la década de 1940, los estudiantes consultan dos periódicos de la época, cada uno cercano a uno de los partidos tradicionales. Uno informa que asistieron más de cien mil personas, y el otro, que fueron unos pocos miles. ¿Qué orientación debe darles el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contrastar la cifra con fuentes ajenas a los dos partidos, como fotografías o diarios extranjeros, y descartar después los dos periódicos, cuya versión quedará desmentida.",
+        "explicacion": "Incorrecta. Acierta en contrastar con fuentes ajenas a los partidos, pero desecha dos fuentes primarias valiosas: aunque su cifra no sea confiable, cada periódico muestra cómo su partido presentó el hecho, y analizar esa posición es lo que pide el estándar."
+      },
+      {
+        "id": "B",
+        "texto": "Contrastar la cifra con las memorias que escribió años después quien convocó la manifestación, y conservar ambos periódicos para estudiar cómo presentó el hecho cada partido.",
+        "explicacion": "Incorrecta. Conserva bien los periódicos como testimonio, pero contrasta la cifra con una fuente que no es independiente: quien convocó la manifestación tenía tanto interés como su periódico en agrandarla, y escribió sus memorias años después. Corroborar exige fuentes de otro origen."
+      },
+      {
+        "id": "C",
+        "texto": "Contrastar la cifra con fuentes ajenas a los dos partidos, como fotografías o diarios extranjeros, y conservar ambos periódicos para estudiar cómo presentó el hecho cada partido.",
+        "explicacion": "Correcta. Las cifras dependen del interés de cada periódico en agrandar o reducir el hecho, así que deben contrastarse con fuentes que no dependan de ninguno de los dos partidos, como fotografías o la prensa extranjera. Y los periódicos no se desechan: son fuentes primarias valiosas sobre cómo cada partido presentó y vivió la manifestación, que es lo que pide el estándar al preguntar desde qué posición ideológica habla cada documento."
+      },
+      {
+        "id": "D",
+        "texto": "Contrastar la cifra con las memorias que escribió años después quien convocó la manifestación, y descartar después los dos periódicos, cuya versión quedará desmentida.",
+        "explicacion": "Incorrecta. Comete los dos errores: contrasta la cifra con una fuente interesada, las memorias tardías de quien convocó la manifestación, y luego desecha los periódicos, que son testimonio valioso de cómo cada partido presentó el hecho."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: dos periódicos de partidos opuestos dan cifras muy distintas del mismo hecho. Concepto: el análisis crítico de una fuente incluye la posición ideológica desde la que habla; una cifra sesgada se corrobora con fuentes independientes, no con otra fuente interesada, y la fuente sesgada sigue siendo testimonio de su posición. Conclusión: contrastar con fuentes ajenas a los partidos y conservar ambos periódicos para estudiar las visiones partidistas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Guerra Fría: rivalidad sin enfrentamiento militar directo entre las superpotencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, décimo a undécimo grado",
+      "Relaciones ético-políticas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico y analizo las diferentes formas del orden mundial en el siglo XX (Guerra Fría, globalización, enfrentamiento Oriente-Occidente...). [...] Analizo las tensiones que los hechos históricos mundiales del siglo XX han generado en las relaciones internacionales (Guerra Fría, globalización, bloques económicos...)",
+    "pregunta": "En una evaluación de 11.°, un estudiante escribe: «La Guerra Fría fue la guerra entre Estados Unidos y la Unión Soviética que empezó al terminar la Segunda Guerra Mundial y acabó con la caída del muro de Berlín». ¿Cómo debe intervenir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle que ubique en un mapa conflictos de la época, como Corea y Vietnam, e identifique cómo intervino cada potencia y si sus fuerzas se enfrentaron abiertamente.",
+        "explicacion": "Correcta. Ataca el error central: Estados Unidos y la Unión Soviética no se declararon la guerra ni sus ejércitos se enfrentaron abiertamente. Hubo choques encubiertos, como el de los pilotos soviéticos que combatieron en secreto en Corea, pero los dos gobiernos los ocultaron justamente para evitar una guerra directa. Su rivalidad se expresó en alianzas militares, carrera armamentista y espacial, propaganda y apoyo a bandos opuestos en conflictos de otros países. Al revisar esos casos, el estudiante descubre por qué se la llamó «fría»."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que complete una línea de tiempo de 1945 a 1989 con las principales batallas entre las dos potencias y el número de bajas que sufrió cada una en esos combates.",
+        "explicacion": "Incorrecta. Es activa, pero parte del mismo error: no hubo batallas abiertas entre las dos potencias, y la tarea lo llevaría a buscar algo que no existió o a atribuirles directamente las guerras de otros países."
+      },
+      {
+        "id": "C",
+        "texto": "Explicarle que su respuesta es correcta en lo esencial y pedirle que la amplíe con la carrera armamentista y la carrera espacial entre las dos potencias.",
+        "explicacion": "Incorrecta. Da por correcto el error de fondo, la idea de una guerra directa entre las dos potencias, y solo agrega rasgos; el estudiante conserva su concepto equivocado."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle que corrija la fecha final, porque la Guerra Fría terminó en 1991 con la disolución de la Unión Soviética y no en 1989 con la caída del muro.",
+        "explicacion": "Incorrecta. Trata como error una fecha que también se acepta (1989 y 1991 son cierres defendibles) y deja intacto el error principal: la Guerra Fría no fue un enfrentamiento armado directo entre las dos potencias."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el estudiante define la Guerra Fría como una guerra entre Estados Unidos y la Unión Soviética; la fecha de cierre que da es una de las aceptadas. Concepto: fue una rivalidad global entre dos bloques, sin guerra declarada ni combate abierto entre las superpotencias (choques como el de los pilotos soviéticos en Corea se mantuvieron en secreto), que se expresó en alianzas, carrera armamentista, propaganda y conflictos en otros países. Conclusión: llevarlo a revisar conflictos como Corea y Vietnam; las demás opciones refuerzan, validan o desvían la atención del error.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

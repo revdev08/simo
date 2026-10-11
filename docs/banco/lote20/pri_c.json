@@ -1,0 +1,1044 @@
+[
+  {
+    "id": "TC-PRI-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Significados de la división: agrupamiento (cuántos grupos) frente a reparto y comparación multiplicativa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas en situaciones de variación proporcional. [...] Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+    "pregunta": "En la sede rural donde trabaja, la docente de 3.º usa este problema para introducir la división: «En la granja escolar se recogieron 24 huevos. Si se empacan 6 en cada cubeta, ¿cuántas cubetas se llenan?». Para que los niños reconozcan la misma situación en otro contexto, quiere proponer enseguida un problema que también se resuelva con 24 ÷ 6 y en el que la división tenga el mismo significado. ¿Cuál debe escoger?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "«Con 24 huevos se llenaron 6 cubetas con la misma cantidad. ¿Cuántos huevos quedaron en cada cubeta?»",
+        "explicacion": "Incorrecta. Conserva el contexto de los huevos y las cubetas, pero aquí se conoce el número de grupos (6 cubetas) y se busca cuántos huevos van en cada uno: es división como reparto (partición). En el modelo se conoce cuántos van en cada grupo y se busca el número de grupos."
+      },
+      {
+        "id": "B",
+        "texto": "«Una cuerda de 24 metros se corta en trozos de 6 metros cada uno. ¿Cuántos trozos se obtienen?»",
+        "explicacion": "Correcta. Como en el modelo, se conoce el tamaño de cada grupo (6 m por trozo, como 6 huevos por cubeta) y se busca cuántos grupos se forman: 24 ÷ 6 = 4 trozos. Es división como agrupamiento (medida o cuotición), aunque el contexto sea de longitud."
+      },
+      {
+        "id": "C",
+        "texto": "«Una cuerda de 24 metros se corta en 6 trozos de igual longitud. ¿Cuántos metros mide cada trozo?»",
+        "explicacion": "Incorrecta. Se conoce el número de partes (6 trozos) y se busca la medida de cada una: es división como reparto (partición). El resultado, 4 m, es la longitud de un trozo, no un número de grupos."
+      },
+      {
+        "id": "D",
+        "texto": "«Hoy se recogieron 24 huevos, que son 6 veces los que se recogieron el lunes. ¿Cuántos se recogieron el lunes?»",
+        "explicacion": "Incorrecta. Es una comparación multiplicativa: 24 es 6 veces la cantidad del lunes, y se busca la cantidad de referencia (24 ÷ 6 = 4 huevos). El 6 no es el tamaño de un grupo, sino el número de veces que se repite la cantidad desconocida."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en el modelo se sabe cuántos huevos van en cada cubeta (6) y se pregunta cuántas cubetas se llenan; el cociente es un número de grupos. Concepto: en las situaciones multiplicativas, la división puede ser agrupamiento o medida (se conoce el tamaño de cada grupo y se busca cuántos hay), reparto o partición (se conoce el número de grupos y se busca cuánto le toca a cada uno) o el paso inverso de una comparación («6 veces»). Conclusión: solo el problema de la cuerda cortada en trozos de 6 m tiene el mismo significado que el modelo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento métrico",
+    "subtema": "Duración de un evento: tiempo transcurrido entre dos horas (canje de 1 hora por 60 minutos)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, primero a tercer grado"
+    ],
+    "texto_fuente": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración. [...] Reconozco el uso de las magnitudes y sus unidades de medida en situaciones aditivas y multiplicativas.",
+    "pregunta": "Para una evaluación de 3.º sobre la duración de los eventos, una docente prepara la clave de este problema: «El bus de la salida pedagógica sale de la escuela a las 8:45 de la mañana y llega a la granja experimental a las 11:20 de la mañana. ¿Cuánto tiempo dura el viaje?». ¿Qué respuesta debe aparecer en la clave?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3 horas y 15 minutos.",
+        "explicacion": "Incorrecta. Resta las horas como si fueran números decimales (11,20 − 8,45 = 2,75), lee «2 horas y 75 minutos» y convierte 75 minutos en 1 hora y 15 minutos. Una hora tiene 60 minutos, no 100."
+      },
+      {
+        "id": "B",
+        "texto": "2 horas y 15 minutos.",
+        "explicacion": "Incorrecta. Cuenta hacia adelante, pero olvida un tramo: de 8:45 a 9:00 hay 15 minutos y de 9:00 a 11:00, 2 horas; falta sumar los 20 minutos de 11:00 a 11:20."
+      },
+      {
+        "id": "C",
+        "texto": "3 horas y 25 minutos.",
+        "explicacion": "Incorrecta. Resta las horas (11 − 8 = 3) y, en los minutos, resta el menor del mayor (45 − 20 = 25), sin notar que a las 11:20 aún no se completan 3 horas desde las 8:45."
+      },
+      {
+        "id": "D",
+        "texto": "2 horas y 35 minutos.",
+        "explicacion": "Correcta. De 8:45 a 9:00 hay 15 minutos; de 9:00 a 11:00, 2 horas, y de 11:00 a 11:20, 20 minutos: 2 h 35 min. Restando, se canjea 1 hora por 60 minutos: 10 h 80 min − 8 h 45 min = 2 h 35 min."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los minutos de llegada (20) son menos que los de salida (45), así que hay que canjear una hora por 60 minutos. Regla: el tiempo se mide en un sistema sexagesimal (1 h = 60 min), no decimal. Cálculo: 11:20 − 8:45 = 10 h 80 min − 8 h 45 min = 2 h 35 min; contando hacia adelante, 15 min + 2 h + 20 min = 2 h 35 min. Los errores típicos son restar como decimales (3 h 15 min), invertir la resta de los minutos (3 h 25 min) u olvidar un tramo (2 h 15 min).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Propiedades de los números: paridad de sumas, restas y productos (conjeturas y contraejemplos)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Reconozco propiedades de los números (ser par, ser impar, etc.) y relaciones entre ellos (ser mayor que, ser menor que, ser múltiplo de, ser divisible por, etc.) en diferentes contextos.",
+    "pregunta": "En 3.º, después de explorar con fichas qué ocurre al operar números pares e impares, cada grupo escribe una conjetura en el tablero. Mateo objeta la del grupo 4 con un ejemplo: 2 + 3 + 5 = 10. La docente quiere pasar a la cartelera del salón solo la conjetura que se cumple con cualesquiera números naturales que se escojan. ¿Cuál debe pasar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Grupo 1: «Si sumamos tres números impares, el resultado es un número impar».",
+        "explicacion": "Correcta. Impar + impar da par, y par + impar da impar: la suma de tres impares es impar (3 + 5 + 7 = 15; 1 + 1 + 1 = 3). Con las fichas: cada impar es un grupo de parejas con una ficha sola; dos fichas solas forman pareja y queda una sin pareja."
+      },
+      {
+        "id": "B",
+        "texto": "Grupo 2: «Si multiplicamos un número par por uno impar, el resultado es impar».",
+        "explicacion": "Incorrecta. Un número par está formado por parejas; al repetirlo cualquier número de veces se obtienen solo parejas: el producto es par (4 × 3 = 12)."
+      },
+      {
+        "id": "C",
+        "texto": "Grupo 3: «Si a un número impar le restamos otro impar menor, el resultado es impar».",
+        "explicacion": "Incorrecta. La diferencia entre dos impares es par (9 − 3 = 6; 7 − 5 = 2): al quitar un impar de otro, la ficha sola de uno se compensa con la del otro."
+      },
+      {
+        "id": "D",
+        "texto": "Grupo 4: «Si sumamos un número par y dos impares, el resultado es un número impar».",
+        "explicacion": "Incorrecta. Mateo tiene razón: su ejemplo es un contraejemplo. Los dos impares suman un número par, y par + par es par."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la cartelera debe recoger solo conjeturas que se cumplen para cualquier número, y basta un contraejemplo para descartar una, como el de Mateo para el grupo 4. Propiedades: impar + impar = par; par + impar = impar; par × cualquier natural = par; impar − impar = par. Conclusión: solo la conjetura del grupo 1 es verdadera, porque impar + impar + impar = par + impar = impar.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento aleatorio",
+    "subtema": "Comparar la posibilidad de un evento: proporción de casos favorables y no cantidad de casos favorables",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, primero a tercer grado"
+    ],
+    "texto_fuente": "Explico –desde mi experiencia– la posibilidad o imposibilidad de ocurrencia de eventos cotidianos. [...] Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+    "pregunta": "Para un juego en 3.º, el docente prepara cuatro bolsas con bolitas rojas y azules del mismo tamaño y textura. Cada niño escogerá una bolsa y sacará una bolita sin mirar; si sale roja, gana un punto. Antes del juego, el docente quiere saber en cuál de las bolsas es mayor la posibilidad de ganar. ¿Cuál es esa bolsa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La bolsa que tiene 12 bolitas rojas y 8 azules.",
+        "explicacion": "Incorrecta. Es la que tiene más rojas y la mayor diferencia entre rojas y azules (4), pero las rojas son 12 de 20, es decir, 3/5 = 0,6: la menor posibilidad de las cuatro bolsas."
+      },
+      {
+        "id": "B",
+        "texto": "La bolsa que tiene 2 bolitas rojas y 1 azul.",
+        "explicacion": "Incorrecta. Es la que tiene menos azules, pero las rojas son 2 de 3 (cerca de 0,67), menos que 5 de 7."
+      },
+      {
+        "id": "C",
+        "texto": "La bolsa que tiene 5 bolitas rojas y 2 azules.",
+        "explicacion": "Correcta. Las rojas son 5 de 7 bolitas (cerca de 0,71), la mayor proporción de rojas entre las cuatro bolsas."
+      },
+      {
+        "id": "D",
+        "texto": "La bolsa que tiene 7 bolitas rojas y 4 azules.",
+        "explicacion": "Incorrecta. Las rojas son 7 de 11 (cerca de 0,64), una proporción menor que 5 de 7."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las bolsas tienen distinto número total de bolitas, así que no basta con comparar cuántas rojas o cuántas azules hay. Concepto: la posibilidad de sacar roja depende de la proporción de rojas en el total de la bolsa (casos favorables entre casos posibles). Cálculo: 12/20 = 0,6; 2/3 ≈ 0,67; 5/7 ≈ 0,71; 7/11 ≈ 0,64. Conclusión: la bolsa de 5 rojas y 2 azules ofrece la mayor posibilidad de ganar.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-045",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Cálculo mental de restas: compensación que conserva la diferencia frente a la compensación propia de la suma",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado",
+      "Pensamiento variacional y sistemas algebraicos y analíticos, primero a tercer grado"
+    ],
+    "texto_fuente": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas. [...] Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
+    "pregunta": "En una sede multigrado, la docente pide a los niños de 3.º calcular mentalmente 63 − 28 y anota en el tablero cómo lo hizo cada uno. Ana: «Le sumé 2 al 28 y le quité 2 al 63, y calculé 61 − 30». Juan: «Les sumé 2 a los dos números y calculé 65 − 30». Luis: «Calculé 63 − 30 y, como al 28 le había sumado 2, al resultado le quité 2». Sofía: «Hice 60 − 20 = 40. Después tenía que quitar 8 unidades: 3 se las quité a las 3 unidades del 63 y las otras 5 se las quité al 40». Un colega que la visita sostiene que el procedimiento de Ana sirve para cualquier resta, porque «compensar así no altera el resultado». ¿Cuáles procedimientos son válidos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los de Ana y Luis.",
+        "explicacion": "Incorrecta. Los dos fallan. Ana compensa como en la suma: sumar a un término y restar al otro conserva una suma, pero en una resta cambia la diferencia en 4 (61 − 30 = 31). Luis resta 30, es decir, 2 más de lo debido, y en lugar de devolverlos los vuelve a quitar (33 − 2 = 31)."
+      },
+      {
+        "id": "B",
+        "texto": "Los de Juan y Ana.",
+        "explicacion": "Incorrecta. El de Juan es válido, pero el de Ana no: el colega confunde la compensación de la suma con la de la resta; 61 − 30 = 31, no 35."
+      },
+      {
+        "id": "C",
+        "texto": "Los de Juan y Sofía.",
+        "explicacion": "Correcta. Juan suma lo mismo al minuendo y al sustraendo, y eso conserva la diferencia: 65 − 30 = 35. Sofía resta las decenas (60 − 20 = 40) y reparte las 8 unidades que debe quitar: 3 las quita de las 3 unidades del 63 y las otras 5 del 40, así que obtiene 40 − 5 = 35. Los dos razonamientos sirven para cualquier resta."
+      },
+      {
+        "id": "D",
+        "texto": "Los de Sofía y Luis.",
+        "explicacion": "Incorrecta. El de Sofía es válido (40 − 5 = 35), pero el de Luis no: al restar 30 quita 2 de más, así que debe sumarlos al resultado (33 + 2 = 35), no restarlos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 63 − 28 = 35, y hay que ver qué procedimientos llegan a ese resultado con un razonamiento que sirva en general. Propiedad: si se suma o se resta la misma cantidad al minuendo y al sustraendo, la diferencia no cambia (63 − 28 = 65 − 30); sumar a un término y restar al otro conserva la suma, no la diferencia. Conclusión: son válidos los de Juan y Sofía, que quita las 8 unidades en dos partes (3 y 5); Ana y Luis obtienen 31. El colega se equivoca: aplica a la resta la compensación de la suma.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-046",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento variacional",
+    "subtema": "El signo igual como equivalencia y no como anuncio del resultado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, primero a tercer grado"
+    ],
+    "texto_fuente": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
+    "pregunta": "En 2.º, la docente propone completar 8 + 4 = __ + 5. La mayoría escribe 12, y algunos, 17. Cuando les pide explicar, dicen que «después del igual se escribe el resultado», y los que escribieron 17 cuentan que «sumaron todo». En ejercicios como 8 + 4 = __ no se equivocan. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mostrarles en una balanza de platos que 8 + 4 cubos equilibran 12 cubos, y repetirlo con otras sumas y sus resultados.",
+        "explicacion": "Incorrecta. La balanza es un buen modelo de la equivalencia, pero aquí solo muestra igualdades del tipo «operación = resultado», como 8 + 4 = 12, que los niños ya aceptan. No aparecen dos expresiones a los lados del igual, así que pueden seguir leyéndolo como «aquí va el resultado» y escribir 12 en 8 + 4 = __ + 5."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que decidan si igualdades como 8 + 4 = 7 + 5 y 8 + 4 = 12 + 5 son verdaderas o falsas, y comprobarlo con cubos.",
+        "explicacion": "Correcta. Juzgar igualdades con operaciones a los dos lados obliga a comparar el valor de cada lado: 8 + 4 = 7 + 5 es verdadera aunque después del igual no esté el resultado, y 8 + 4 = 12 + 5 es falsa (12 frente a 17). Los cubos permiten verificarlo. Así el igual pasa a significar «vale lo mismo que», y el número que falta es 7."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que resuelvan 8 + 4 con la calculadora y observen qué número aparece en la pantalla al oprimir la tecla del igual.",
+        "explicacion": "Incorrecta. Es activa, pero la tecla del igual de la calculadora funciona justamente como una orden de calcular: refuerza la idea de que el igual anuncia el resultado."
+      },
+      {
+        "id": "D",
+        "texto": "Proponerles ejercicios del tipo __ = 8 + 4, con el espacio a la izquierda, para que vean el resultado en otra posición.",
+        "explicacion": "Incorrecta. Variar la posición es útil, pero en __ = 8 + 4 sigue habiendo un solo número frente a una operación: los niños pueden aceptar que «el resultado también va a la izquierda» sin comparar dos expresiones, que es lo que exige 8 + 4 = __ + 5."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los niños escriben 12 (o 17) porque leen el igual como «aquí va el resultado»; no comparan el valor de las dos expresiones. Concepto: el signo igual expresa una relación de equivalencia entre expresiones numéricas. Regla: el estándar de primero a tercero pide reconocer y generar equivalencias entre expresiones numéricas. Conclusión: decidir si igualdades con operaciones a ambos lados son verdaderas y comprobarlo con material; como 8 + 4 = 7 + 5, el número que falta es 7. Mostrar solo igualdades «suma = resultado», aunque sea en una balanza, no confronta la idea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-047",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento métrico",
+    "subtema": "Comparación de capacidades: la altura del recipiente frente a la medición con una misma unidad arbitraria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, primero a tercer grado"
+    ],
+    "texto_fuente": "Comparo y ordeno objetos respecto a atributos medibles. [...] Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+    "pregunta": "En una sede rural, la docente de 1.º y 2.º pone sobre la mesa dos recipientes vacíos: una botella alta y delgada y un tarro bajo y ancho. Casi todos los niños dicen que en la botella cabe más «porque es más alta». ¿Cuál es la actividad más adecuada para trabajar esta idea?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Echar un vaso de agua en cada recipiente, marcar hasta dónde llega en cada uno y comparar la altura de las dos marcas.",
+        "explicacion": "Incorrecta. Trabaja con agua, pero compara alturas: la misma cantidad sube más en la botella delgada, así que la marca más alta parece confirmar la idea de los niños. Además, un vaso de agua no dice cuánto cabe en cada recipiente lleno."
+      },
+      {
+        "id": "B",
+        "texto": "Llenar el tarro con un pocillo y la botella con un vaso, contar cuántas veces se usó cada uno y comparar los dos conteos.",
+        "explicacion": "Incorrecta. Mide la capacidad con patrones arbitrarios, pero no con el mismo: el pocillo y el vaso no tienen igual capacidad, así que los dos conteos no se pueden comparar. Para comparar dos medidas, la unidad debe ser la misma en los dos recipientes."
+      },
+      {
+        "id": "C",
+        "texto": "Medir con una cinta la altura y el contorno de cada recipiente, sumar las dos medidas y ver cuál da más.",
+        "explicacion": "Incorrecta. Tiene en cuenta el ancho, no solo la altura, pero sigue midiendo longitudes: sumar dos longitudes no da la capacidad, y los niños no comprueban cuánto cabe en cada recipiente."
+      },
+      {
+        "id": "D",
+        "texto": "Llenar el tarro con agua usando vasitos iguales, contar cuántos se necesitan y repetir el conteo con la botella.",
+        "explicacion": "Correcta. Un mismo patrón arbitrario, el vasito, permite medir la capacidad de cada recipiente y comparar los dos conteos: los niños verifican con datos si la altura decide cuánto cabe."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los niños comparan la capacidad por la altura, un solo rasgo visible del recipiente. Concepto: la capacidad se compara trasvasando el contenido de un recipiente al otro o midiendo los dos con la misma unidad. Regla: el estándar de primero a tercero pide comparar objetos por atributos medibles y medir con patrones arbitrarios. Conclusión: contar cuántos vasitos iguales caben en cada recipiente. Comparar el nivel de una misma cantidad de agua, contar con recipientes distintos o sumar longitudes no mide cuánto cabe.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-048",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Escritura de números de cuatro cifras según la numeración hablada (200045 por 2.045)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Uso representaciones –principalmente concretas y pictóricas– para explicar el valor de posición en el sistema de numeración decimal. [...] Identifico regularidades y propiedades de los números utilizando diferentes instrumentos de cálculo (calculadoras, ábacos, bloques multibase, etc.).",
+    "pregunta": "En un dictado de números en una escuela multigrado, Camila, de 3.º, escribe 200045 cuando la docente dice «dos mil cuarenta y cinco» y 1000300 cuando dice «mil trescientos». Los números de dos y de tres cifras los escribe sin errores. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle que arme cada número en el ábaco, escriba lo que indican las varillas y lo compare con su escritura.",
+        "explicacion": "Correcta. Camila escribe los números como suenan: junta 2000 y 45. En el ábaco cada varilla es una posición, y 2.045 queda con 2 cuentas en los millares, ninguna en las centenas, 4 en las decenas y 5 en las unidades. Al escribir lo que ve y compararlo con su escritura, construye el valor de posición."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que cuente de mil en mil hasta 9.000 mientras escribe cada número en una tira numérica de cartulina.",
+        "explicacion": "Incorrecta. Trabaja los miles, pero solo los exactos, que Camila ya escribe bien (en 200045 aparece 2000 correcto). Su error surge al combinar los miles con el resto del número, y la actividad no la pone a escribir números como 2.045 ni a confrontar su escritura."
+      },
+      {
+        "id": "C",
+        "texto": "Dictarle otra vez los mismos números, más despacio y con una pausa entre los miles y el resto de cada número.",
+        "explicacion": "Incorrecta. Separar «dos mil» de «cuarenta y cinco» refuerza la estrategia de escribir por aparte cada parte del nombre, que es justamente la que produce 200045."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle que ordene de menor a mayor tarjetas con números de cuatro cifras y que lea en voz alta cada número.",
+        "explicacion": "Incorrecta. Leer y ordenar números ya escritos es útil, pero no la confronta con su propia escritura: puede leer bien 2.045 y seguir escribiéndolo como lo oye."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Camila escribe por separado cada parte del nombre («dos mil» = 2000 y «cuarenta y cinco» = 45) y las yuxtapone; con números de dos y tres cifras no falla. Concepto: en la numeración escrita cada cifra vale según su posición, mientras que la numeración hablada nombra sumas y productos («dos mil» = 2 × 1.000). Regla: el estándar de primero a tercero pide usar representaciones concretas para explicar el valor de posición. Conclusión: representar en el ábaco y comparar con su escritura. Contar miles exactos, dictar más despacio u ordenar números ya escritos no la confronta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-049",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento aleatorio",
+    "subtema": "Pictograma construido con dibujos de distinto tamaño: cada símbolo debe ocupar el mismo espacio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, primero a tercer grado"
+    ],
+    "texto_fuente": "Clasifico y organizo datos de acuerdo a cualidades y atributos y los presento en tablas. [...] Represento datos relativos a mi entorno usando objetos concretos, pictogramas y diagramas de barras.",
+    "pregunta": "En una escuela rural, los niños de 2.º arman en la pared un pictograma con los animales de sus fincas: cada uno dibuja sus animales en hojas que recorta a su gusto y las pega, una encima de otra, en la columna correspondiente. Las vacas quedaron en hojas grandes y las gallinas en hojas pequeñas, así que la columna de las 8 vacas resulta más alta que la de las 12 gallinas, y el grupo concluye que hay más vacas. El pictograma va a quedar expuesto en el corredor para que lo lean los demás cursos. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Despegar con ellos los dibujos, pegarlos en filas, uno al lado del otro, y comparar el largo de cada fila.",
+        "explicacion": "Incorrecta. Cambia la orientación, pero no el defecto: el largo de cada fila sigue dependiendo del tamaño de las hojas y no del número de animales, así que las 8 hojas grandes de las vacas pueden seguir ocupando más que las 12 pequeñas de las gallinas."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que cuenten los dibujos de cada columna y escriban ese número encima antes de comparar las columnas.",
+        "explicacion": "Incorrecta. Contar corrige la conclusión, pero el pictograma que verán los demás cursos sigue mostrando más alta la columna de la cantidad menor: el número escrito contradice al dibujo, y los niños no trabajan por qué la representación engaña ni cómo debe construirse."
+      },
+      {
+        "id": "C",
+        "texto": "Repartirles tarjetas iguales para que copien un animal en cada una y vuelvan a armar las dos columnas.",
+        "explicacion": "Correcta. Si cada animal ocupa una tarjeta igual y las columnas parten de la misma línea, la altura de cada columna corresponde a la cantidad: la de gallinas (12 tarjetas) queda más alta que la de vacas (8). Los niños corrigen la representación y no solo la conclusión."
+      },
+      {
+        "id": "D",
+        "texto": "Pasar con ellos los datos a una tabla de conteo con palitos y responder la pregunta a partir de esa tabla.",
+        "explicacion": "Incorrecta. La tabla de conteo da la respuesta correcta, pero deja el pictograma como estaba en lugar de corregirlo: los demás cursos leerían un gráfico engañoso, y los niños no aprenden qué condiciones debe cumplir esa representación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los dibujos están en hojas de distinto tamaño, así que la altura de las columnas no corresponde al número de animales (8 vacas frente a 12 gallinas), y el gráfico se va a exhibir. Concepto: en un pictograma cada símbolo representa la misma cantidad y ocupa el mismo espacio, y las columnas parten de una base común. Regla: el estándar de primero a tercero pide representar datos con pictogramas. Conclusión: rehacer el pictograma con tarjetas iguales. Rotular las columnas, pasar los dibujos a filas o a una tabla deja la representación engañosa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-050",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento espacial",
+    "subtema": "Ejes de simetría del rectángulo: la diagonal lo divide en partes congruentes, pero no es eje",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Reconozco y valoro simetrías en distintos aspectos del arte y el diseño. [...] Reconozco congruencia y semejanza entre figuras (ampliar, reducir).",
+    "pregunta": "En 3.º, la docente entrega a cada niño un rectángulo de papel de 8 cm por 14 cm y les pide trazar sus ejes de simetría. Casi todos trazan las dos rectas que unen los puntos medios de los lados opuestos y, además, las dos diagonales. Explican que cada diagonal «parte el rectángulo en dos triángulos iguales». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que corten el rectángulo por una diagonal y comprueben si, al girar uno de los triángulos, queda justo encima del otro.",
+        "explicacion": "Incorrecta. Es una comprobación activa, pero confirma el error: los dos triángulos son congruentes y coinciden si se gira uno de ellos 180°. Lo que se pone a prueba es la congruencia, no la simetría respecto de la diagonal."
+      },
+      {
+        "id": "B",
+        "texto": "Explicarles que una recta es eje si al doblar por ella las dos mitades coinciden, y pedirles que lo prueben con cada recta.",
+        "explicacion": "Correcta. La docente no da la conclusión, sino el criterio que les falta: una recta es eje de simetría si, al doblar por ella, cada parte cae exactamente sobre la otra. Al probarlo, los niños ven que con las rectas que unen los puntos medios las mitades coinciden y que con la diagonal sobresalen las puntas de los triángulos."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que dibujen el rectángulo en papel cuadriculado y comparen el área de los dos triángulos que forma la diagonal.",
+        "explicacion": "Incorrecta. También confirma el error: los dos triángulos tienen la misma área (56 cm² cada uno), y que dos partes tengan igual área no implica que sean simétricas respecto de la recta que las separa."
+      },
+      {
+        "id": "D",
+        "texto": "Darles un cuadrado de papel, pedirles que tracen sus ejes y que los comparen con las rectas que trazaron en el rectángulo.",
+        "explicacion": "Incorrecta. En el cuadrado las diagonales sí son ejes, así que al comparar los niños encuentran las mismas cuatro rectas que trazaron en el rectángulo: la actividad parece confirmar su idea en lugar de ponerla a prueba."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los niños confunden «dividir en dos partes iguales» con «ser eje de simetría». Concepto: una recta es eje si, al reflejar la figura respecto de ella (doblar por la recta), cada parte cae exactamente sobre la otra. La diagonal de un rectángulo que no es cuadrado lo divide en triángulos congruentes, pero uno es imagen del otro por un giro de 180°, no por una reflexión en la diagonal. Conclusión: darles el criterio del doblez y que lo prueben. Girar los triángulos, comparar áreas o mirar un cuadrado, cuyas diagonales sí son ejes, confirma la idea errónea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-051",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Fracciones, decimales y porcentajes: llevar a una misma notación para comparar y ordenar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Identifico y uso medidas relativas en distintos contextos. [...] Utilizo la notación decimal para expresar fracciones en diferentes contextos y relaciono estas dos notaciones con la de los porcentajes.",
+    "pregunta": "En 5.º, cuatro estudiantes leen el mismo cuento para el plan lector y cada uno informa, en la notación que prefiere, qué parte del cuento ha leído: Andrés, 3/8; Bibiana, 0,4; Carlos, el 35 %, y Diana, 9/25. La docente va a anotarlos en la cartelera ordenados de menor a mayor avance. ¿Cuál es el orden correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Bibiana, Carlos, Diana y Andrés.",
+        "explicacion": "Incorrecta. Pone a Bibiana de primera porque lee 0,4 como si fuera 4 % o compara «4» con «35» como números naturales. En realidad, 0,4 = 40/100 = 40 %, el mayor avance de los cuatro."
+      },
+      {
+        "id": "B",
+        "texto": "Andrés, Carlos, Diana y Bibiana.",
+        "explicacion": "Incorrecta. Detiene la división 3 ÷ 8 en las décimas y toma 3/8 como 0,3, el menor valor. La división completa da 0,375 = 37,5 %, más que el 35 % de Carlos y que el 36 % de Diana."
+      },
+      {
+        "id": "C",
+        "texto": "Carlos, Andrés, Bibiana y Diana.",
+        "explicacion": "Incorrecta. Escribe cada fracción juntando sus cifras después de la coma (3/8 como 0,38 y 9/25 como 0,925), y así Diana queda de última. En realidad, 9/25 = 36/100 = 0,36."
+      },
+      {
+        "id": "D",
+        "texto": "Carlos, Diana, Andrés y Bibiana.",
+        "explicacion": "Correcta. En una misma notación: Carlos, 35 % = 0,35; Diana, 9/25 = 36/100 = 0,36; Andrés, 3/8 = 3 ÷ 8 = 0,375; Bibiana, 0,4. De menor a mayor: 0,35 < 0,36 < 0,375 < 0,4."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los cuatro avances se refieren al mismo cuento, pero están en notaciones distintas y con valores muy cercanos. Concepto: la fracción a/b equivale al cociente a ÷ b, y un decimal en centésimos se lee como porcentaje; para comparar hay que llevarlos a una misma notación. Cálculo: 35 % = 0,35; 9/25 = 36/100 = 0,36; 3/8 = 3 ÷ 8 = 0,375; 0,4 = 0,40. Conclusión: Carlos, Diana, Andrés y Bibiana. Errores típicos: leer 0,4 como 4 %, cortar 3 ÷ 8 en 0,3 o escribir 3/8 como 0,38.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento métrico",
+    "subtema": "Volumen de un prisma rectangular y capacidad en litros (1 dm³ = 1 L) en un problema de consumo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos. [...] Reconozco el uso de algunas magnitudes (longitud, área, volumen, capacidad, peso y masa, duración, rapidez, temperatura) y de algunas de las unidades que se usan para medir cantidades de la magnitud respectiva en situaciones aditivas y multiplicativas.",
+    "pregunta": "Una sede rural almacena agua lluvia en un tanque con forma de prisma rectangular que por dentro mide 1,5 m de largo, 1,2 m de ancho y 1 m de alto. Hoy el agua llega a 0,8 m de altura. La docente de 4.º y 5.º plantea a sus estudiantes este problema: si la sede gasta 45 litros diarios y no llueve, ¿para cuántos días alcanza el agua que hay? ¿Qué respuesta debe aparecer en su clave?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Para 32 días, pues en el tanque hay 1.440 litros.",
+        "explicacion": "Correcta. El agua ocupa 1,5 × 1,2 × 0,8 = 1,44 m³. Como 1 m³ = 1.000 dm³ y 1 dm³ = 1 L, hay 1.440 L, y 1.440 ÷ 45 = 32 días."
+      },
+      {
+        "id": "B",
+        "texto": "Para 40 días, pues en el tanque hay 1.800 litros.",
+        "explicacion": "Incorrecta. Calcula el volumen del tanque lleno (1,5 × 1,2 × 1 = 1,8 m³ = 1.800 L), pero el agua solo llega a 0,8 m de altura."
+      },
+      {
+        "id": "C",
+        "texto": "Para 8 días, pues en el tanque hay 360 litros.",
+        "explicacion": "Incorrecta. 1,5 × 1,2 × 0,2 = 0,36 m³ = 360 L es el volumen de la parte vacía del tanque, no el del agua."
+      },
+      {
+        "id": "D",
+        "texto": "Para 320 días, pues en el tanque hay 14.400 litros.",
+        "explicacion": "Incorrecta. Toma 1 m³ como 10.000 L, la equivalencia de 1 m² en cm². En realidad, 1 m³ = 1.000 dm³ = 1.000 L."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el agua no llena el tanque, sino que llega a 0,8 m de altura. Regla: el volumen de un prisma rectangular es largo × ancho × alto, y 1 m³ = 1.000 dm³ = 1.000 L. Cálculo: 1,5 × 1,2 × 0,8 = 1,44 m³ = 1.440 L; 1.440 ÷ 45 = 32 días. Errores típicos: usar la altura total (1.800 L, 40 días), la parte vacía (360 L, 8 días) o 10.000 L por m³ (14.400 L, 320 días).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento espacial",
+    "subtema": "Ángulos en situaciones dinámicas: ángulo entre las agujas del reloj con el avance de la aguja horaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Identifico, represento y utilizo ángulos en giros, aberturas, inclinaciones, figuras, puntas y esquinas en situaciones estáticas y dinámicas.",
+    "pregunta": "Un docente de 5.º prepara una actividad con el reloj de agujas del salón y escribe en la clave que a las 3:30 las agujas forman un ángulo de 90°. Una colega le objeta que a esa hora el ángulo no es recto. ¿Cuánto mide el ángulo menor que forman las agujas a las 3:30?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "90°: la aguja horaria señala el 3 y el minutero el 6, y entre ellos hay tres espacios de 30°.",
+        "explicacion": "Incorrecta. Es el valor del docente: supone que la aguja horaria sigue sobre el 3, pero en 30 minutos avanza la mitad del espacio entre el 3 y el 4."
+      },
+      {
+        "id": "B",
+        "texto": "75°: a los 90° que hay del 3 al 6 se les restan los 15° que ya avanzó la aguja horaria.",
+        "explicacion": "Correcta. La aguja horaria recorre 30° por hora, es decir, 0,5° por minuto: a las 3:30 está a 90° + 15° = 105° del 12. El minutero está a 180°. El ángulo entre ellas es 180° − 105° = 75°. La colega tiene razón."
+      },
+      {
+        "id": "C",
+        "texto": "60°: la aguja horaria ya llegó al 4, y del 4 al 6 hay dos espacios de 30°.",
+        "explicacion": "Incorrecta. La aguja horaria solo llega al 4 a las 4:00; a las 3:30 está a mitad de camino entre el 3 y el 4."
+      },
+      {
+        "id": "D",
+        "texto": "105°: a los 90° que hay del 3 al 6 se les suman los 15° que ya avanzó la aguja horaria.",
+        "explicacion": "Incorrecta. Al avanzar, la aguja horaria se acerca al minutero, que está en el 6; por eso los 15° se restan de los 90°. 105° es la posición de la aguja horaria medida desde el 12."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: a las 3:30 la aguja horaria no está sobre el 3: ha recorrido la mitad del espacio hasta el 4. Regla: cada espacio entre dos números del reloj mide 360° ÷ 12 = 30°, y la aguja horaria avanza 30° por hora (0,5° por minuto). Cálculo: la aguja horaria está a 90° + 15° = 105° del 12 y el minutero a 180°; el ángulo entre ellas es 180° − 105° = 75°. Conclusión: la objeción de la colega es correcta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento espacial",
+    "subtema": "Componentes de los sólidos: aristas y vértices de una pirámide de base hexagonal frente a un prisma hexagonal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Comparo y clasifico objetos tridimensionales de acuerdo con componentes (caras, lados) y propiedades. [...] Construyo y descompongo figuras y sólidos a partir de condiciones dadas.",
+    "pregunta": "Un docente de 4.º va a construir con 5 grupos el esqueleto de una pirámide de base hexagonal: cada grupo hará una, con palillos para las aristas y bolitas de plastilina para los vértices. ¿Cuántos palillos y cuántas bolitas debe preparar en total?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "90 palillos y 35 bolitas.",
+        "explicacion": "Incorrecta. Los vértices están bien (7 por pirámide), pero cuenta 18 aristas por pirámide, las de un prisma hexagonal. La pirámide tiene 12: 6 en la base y 6 que suben hasta la cúspide."
+      },
+      {
+        "id": "B",
+        "texto": "60 palillos y 60 bolitas.",
+        "explicacion": "Incorrecta. Las aristas están bien (12 por pirámide), pero cuenta 12 vértices por pirámide, como si tuviera dos hexágonos; tiene 7: los 6 de la base y la cúspide."
+      },
+      {
+        "id": "C",
+        "texto": "90 palillos y 60 bolitas.",
+        "explicacion": "Incorrecta. Son los componentes de 5 prismas de base hexagonal (18 aristas y 12 vértices cada uno), no de 5 pirámides."
+      },
+      {
+        "id": "D",
+        "texto": "60 palillos y 35 bolitas.",
+        "explicacion": "Correcta. Cada pirámide de base hexagonal tiene 12 aristas (6 de la base y 6 laterales) y 7 vértices (6 de la base y la cúspide): 5 × 12 = 60 palillos y 5 × 7 = 35 bolitas. Se cumple la relación de Euler: 7 caras − 12 aristas + 7 vértices = 2."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el sólido es una pirámide, no un prisma: tiene una sola base hexagonal y todas las caras laterales se unen en un vértice, la cúspide. Concepto: una pirámide de base de n lados tiene 2n aristas y n + 1 vértices; un prisma de base de n lados, 3n aristas y 2n vértices. Cálculo: con n = 6, cada pirámide tiene 12 aristas y 7 vértices; para 5 grupos, 60 palillos y 35 bolitas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento aleatorio",
+    "subtema": "Media y mediana: dato que falta para obtener una media dada y efecto de ese dato sobre la mediana",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Uso e interpreto la media (o promedio) y la mediana y comparo lo que indican.",
+    "pregunta": "En una vereda cafetera, los estudiantes de 5.º registran los kilos de café que recogieron cuatro recolectores en una mañana: 7, 12, 8 y 9 kg. Más tarde llega el dato de un quinto recolector y, con él, el promedio de los cinco queda en 10 kg. ¿Cuántos kilos recogió el quinto recolector y cuál es la mediana de los cinco datos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "14 kg; la mediana es 9 kg.",
+        "explicacion": "Correcta. Para un promedio de 10 kg, los cinco datos deben sumar 5 × 10 = 50 kg; los cuatro primeros suman 36, así que el quinto es 50 − 36 = 14 kg. Ordenados (7, 8, 9, 12, 14), el dato central es 9: la media sube a 10, pero la mediana queda en 9."
+      },
+      {
+        "id": "B",
+        "texto": "10 kg; la mediana es 10 kg.",
+        "explicacion": "Incorrecta. Supone que el nuevo dato es igual al nuevo promedio y que la mediana coincide con la media. Con un quinto dato de 10 kg, la media sería 46 ÷ 5 = 9,2 kg y la mediana, 9 kg."
+      },
+      {
+        "id": "C",
+        "texto": "14 kg; la mediana es 10 kg.",
+        "explicacion": "Incorrecta. El quinto dato es correcto, pero toma la media como si fuera la mediana; el valor central de 7, 8, 9, 12 y 14 es 9."
+      },
+      {
+        "id": "D",
+        "texto": "10 kg; la mediana es 9 kg.",
+        "explicacion": "Incorrecta. La mediana de 7, 8, 9, 10 y 12 sería 9, pero el quinto dato no puede ser 10 kg: los cinco sumarían 46 y el promedio sería 9,2 kg, no 10."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el promedio de los cinco datos es 10 kg y los cuatro conocidos suman 36 kg. Concepto: la media es la suma de los datos dividida entre su número; la mediana es el valor central de los datos ordenados y no depende de cuán grande sea el valor mayor. Cálculo: 5 × 10 − 36 = 14 kg; datos ordenados 7, 8, 9, 12, 14, mediana 9 kg. Conclusión: el dato alto sube la media, pero la mediana no lo sigue.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-056",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Interpretación del residuo de una división según el contexto del problema",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Identifico, en el contexto de una situación, la necesidad de un cálculo exacto o aproximado y lo razonable de los resultados obtenidos.",
+    "pregunta": "En 4.º, el docente plantea: «A la salida pedagógica van 130 personas y cada buseta lleva 25 pasajeros. ¿Cuántas busetas hay que contratar?». Casi todos dividen bien, obtienen 5 con residuo 5 y responden «5 busetas». Otros escriben «5,2 busetas». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Plantearles otros problemas de división con residuo y pedirles que aproximen cada cociente al número entero siguiente.",
+        "explicacion": "Incorrecta. Es activa y en este problema daría 6 busetas, pero generaliza una regla falsa: si se pregunta cuántas cajas de 25 huevos se llenan con 130 huevos, la respuesta es 5, no 6. El sentido del residuo depende de la situación, y la regla les evita interpretarlo."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que comprueben la división multiplicando 5 × 25 y sumando el residuo, para verificar que da 130.",
+        "explicacion": "Incorrecta. La prueba confirma un cálculo que ya estaba bien (5 × 25 + 5 = 130); el error no está en la división, sino en la interpretación del resultado."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que dibujen busetas de 25 puestos y ubiquen a las 130 personas para decidir qué hacer con las que sobran.",
+        "explicacion": "Correcta. Al representar la situación, los estudiantes ven que con 5 busetas quedan 5 personas sin puesto y que se necesita una sexta buseta, aunque lleve 20 puestos libres. Así deciden qué significa el residuo en este contexto."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que hagan la división en la calculadora, para que vean que el resultado exacto es 5,2 busetas.",
+        "explicacion": "Incorrecta. La calculadora da 5,2, el cociente exacto, pero no se contratan 0,2 busetas; la actividad refuerza la idea de que la respuesta es el número que arroja el cálculo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el cálculo está bien (130 = 5 × 25 + 5); el error es responder con el cociente sin interpretar el residuo: 5 personas quedarían sin puesto. Regla: el estándar de cuarto a quinto pide identificar, en el contexto de una situación, lo razonable de los resultados obtenidos. Conclusión: representar la situación para decidir qué hacer con el residuo; se necesitan 6 busetas. Practicar la regla de aproximar siempre al entero siguiente falla en otros problemas, como el de las cajas que se llenan.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-057",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Suma de fracciones: sumar numeradores y denominadores (1/2 + 1/3 = 2/5) al tratar las fracciones como razones entre colecciones distintas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte todo, cociente, razones y proporciones. [...] Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+    "pregunta": "En 5.º, varios estudiantes escriben 1/2 + 1/3 = 2/5. Uno de ellos defiende el resultado con un dibujo: en una canasta hay 1 mango maduro de 2, en otra hay 1 maduro de 3 y, al juntarlas, «hay 2 maduros de 5». La docente quiere que el grupo vea por qué ese dibujo no representa la suma de las dos fracciones. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mostrarles en el tablero cómo se pasan 1/2 y 1/3 a sextos, y pedirles que resuelvan así esa suma y otras parecidas.",
+        "explicacion": "Incorrecta. El procedimiento es correcto, pero llega como técnica y no responde al argumento del estudiante: el grupo aprende a obtener 5/6 sin ver por qué el dibujo de las canastas no representa la suma, y puede creer que hay dos respuestas válidas."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que comparen 2/5 con 1/2 y que expliquen cómo una suma puede dar menos que uno de sus sumandos.",
+        "explicacion": "Incorrecta. La estimación es útil, pero no rompe el modelo del estudiante: en sus canastas es coherente que, al juntarlas, la proporción de maduros (2 de 5) quede entre 1 de 3 y 1 de 2. Puede responder que «al juntar, baja» y seguir defendiendo el dibujo, porque nada le muestra que cada canasta es un todo distinto."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que repitan la suma con dos arepas de distinto tamaño, partiendo una en 2 y otra en 3, y que junten un pedazo de cada una.",
+        "explicacion": "Incorrecta. Es activa, pero repite el problema de fondo: con unidades de distinto tamaño, los pedazos no son medios ni tercios de una misma unidad y no se pueden sumar como fracciones de ella."
+      },
+      {
+        "id": "D",
+        "texto": "Mostrarles que cada canasta es un todo distinto y pedirles que coloreen 1/2 y 1/3 de un mismo rectángulo de 6 cuadritos.",
+        "explicacion": "Correcta. La docente señala lo que falla en el dibujo: 1/2 y 1/3 son partes de todos distintos (2 y 3 mangos), que al juntarse forman un tercer todo de 5. En un mismo rectángulo de 6 cuadritos, 1/2 son 3 cuadritos y 1/3 son 2: quedan coloreados 5 de 6, es decir, 5/6. Así ven que 2/5 describía la mezcla de las canastas, no la suma."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante trata las fracciones como razones entre colecciones distintas (1 de 2 y 1 de 3) y, al juntarlas, obtiene otra razón (2 de 5); eso no es sumar partes de una misma unidad. Concepto: se suman fracciones de un mismo todo, expresadas en una unidad común (1/2 = 3/6 y 1/3 = 2/6). Conclusión: señalar que cada canasta es un todo distinto y representar las dos fracciones en un mismo rectángulo de 6 partes: 1/2 + 1/3 = 5/6. Un procedimiento sin sentido, la sola estimación o unidades de distinto tamaño no rompen el modelo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-058",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Multiplicación por un decimal menor que 1: la idea de que multiplicar da un resultado mayor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Utilizo la notación decimal para expresar fracciones en diferentes contextos y relaciono estas dos notaciones con la de los porcentajes. [...] Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+    "pregunta": "En 5.º, el docente pregunta cuánto cuestan 0,5 kg de queso si el kilo vale $18.000. Varios estudiantes multiplican 18.000 × 0,5, obtienen 9.000 y lo borran: aseguran que «al multiplicar, el resultado tiene que salir más grande». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construir con ellos una tabla del precio de 3, 2, 1 y 0,5 kg y pedirles que digan cómo cambia el valor entre filas.",
+        "explicacion": "Correcta. La tabla muestra que el valor disminuye cuando disminuye la cantidad: $54.000, $36.000, $18.000 y, para 0,5 kg, que es medio kilo, $9.000. Multiplicar por 0,5 es tomar la mitad: el producto puede ser menor que el otro factor."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que estimen el resultado redondeando 0,5 kg a 1 kg y que comparen esa estimación con los 9.000 que borraron.",
+        "explicacion": "Incorrecta. Estimar es útil, pero redondear 0,5 a 1 duplica la cantidad: la estimación da $18.000 y hace que 9.000 parezca demasiado poco, lo que refuerza la idea de que el producto debía salir mayor."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que hagan la multiplicación en la calculadora, para que comprueben que 9.000 es el resultado correcto.",
+        "explicacion": "Incorrecta. Es activa, pero solo confirma el número; los estudiantes pueden aceptarlo sin revisar su idea, construida con los números naturales, donde multiplicar por un número mayor que 1 da un resultado mayor."
+      },
+      {
+        "id": "D",
+        "texto": "Proponerles primero multiplicaciones por decimales mayores que 1, como 18.000 × 1,5, y dejar para después las de 0,5.",
+        "explicacion": "Incorrecta. Evita el conflicto: con factores mayores que 1 el producto crece, así que esas multiplicaciones refuerzan la idea que hay que revisar."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los estudiantes calculan bien, pero rechazan 9.000 porque generalizan una propiedad de los naturales: multiplicar por un natural mayor que 1 da un resultado mayor. Concepto: 0,5 = 5/10 = 1/2, así que multiplicar por 0,5 es tomar la mitad; si un factor es menor que 1, el producto es menor que el otro factor. Regla: el estándar de cuarto a quinto pide usar la notación decimal para expresar fracciones en distintos contextos. Conclusión: relacionar, en una tabla de precios, 0,5 kg con medio kilo. Redondear 0,5 a 1 o usar la calculadora no revisa la idea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-059",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento espacial",
+    "subtema": "Amplitud de un ángulo: la idea de que el ángulo con lados más largos es mayor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, cuarto a quinto grado",
+      "Pensamiento métrico y sistemas de medidas, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Identifico, represento y utilizo ángulos en giros, aberturas, inclinaciones, figuras, puntas y esquinas en situaciones estáticas y dinámicas. [...] Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir (longitudes, distancias, áreas de superficies, volúmenes de cuerpos sólidos, volúmenes de líquidos y capacidades de recipientes; pesos y masa de cuerpos sólidos; duración de eventos o procesos; amplitud de ángulos).",
+    "pregunta": "En 4.º, la docente dibuja en el tablero dos ángulos: uno de 50°, con lados de 40 cm, y otro de 70°, con lados de 10 cm. La mayoría afirma que el primero es el mayor «porque es más grande». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Medir con ellos la distancia entre las puntas de los lados de cada ángulo y comparar las dos distancias.",
+        "explicacion": "Incorrecta. Intenta medir la abertura, pero la distancia entre las puntas depende también del largo de los lados: en el ángulo de 50° es de unos 34 cm y en el de 70°, de unos 11 cm, así que la medición parece confirmar que el primero es mayor."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que midan con la regla los lados de los dos ángulos y comparen cuál de los dos tiene los lados más largos.",
+        "explicacion": "Incorrecta. Mide el atributo que causa el error: confirmaría que el primer ángulo tiene lados más largos, no que sea mayor."
+      },
+      {
+        "id": "C",
+        "texto": "Mostrarles cómo superponer dos ángulos con vértice y un lado comunes, y pedirles que lo hagan con los del tablero.",
+        "explicacion": "Correcta. La docente modela una técnica de comparación directa y los niños la aplican: al calcar el ángulo de lados cortos y ponerlo sobre el otro, con vértice y un lado comunes, su segundo lado queda por fuera, es decir, se abre más. Si prolongan los lados cortos, la abertura no cambia: la medida del ángulo no depende del largo de los lados."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que construyan con tiras del mismo largo ángulos de distintas aberturas y los ordenen de menor a mayor.",
+        "explicacion": "Incorrecta. Es activa y trabaja la abertura, pero con tiras del mismo largo deja fija la variable que causa el error: los niños ordenan bien esos ángulos y pueden seguir creyendo que, cuando los lados son más largos, el ángulo es mayor. Nunca comparan ángulos con lados de distinto largo, como los del tablero."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los niños comparan los ángulos por la longitud de los lados (40 cm frente a 10 cm), no por su abertura (50° frente a 70°). Concepto: la amplitud de un ángulo es la abertura entre sus lados; los lados son semirrectas y prolongarlos no cambia la medida. Regla: el estándar de cuarto a quinto pide diferenciar y ordenar atributos medibles, entre ellos la amplitud de ángulos. Conclusión: superponer los ángulos del tablero con vértice y un lado comunes. Medir los lados o la distancia entre sus puntas, o usar solo lados iguales, no enfrenta la idea errónea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-060",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento aleatorio",
+    "subtema": "Independencia de lanzamientos sucesivos: la idea de que tras una racha «le toca» al otro resultado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos. [...] Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
+    "pregunta": "En un 5.º de 30 estudiantes, el docente lanza una moneda frente al grupo y sale cara cuatro veces seguidas. Casi todos dicen que en el próximo lanzamiento saldrá sello, «porque ya le toca». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarles que, en muchos lanzamientos, caras y sellos tienden a igualarse, así que la racha se irá compensando con sellos.",
+        "explicacion": "Incorrecta. Parte de un hecho cierto (en muchos lanzamientos la proporción de caras se acerca a la mitad), pero lo explica con una compensación que no existe: la moneda no produce más sellos para equilibrar. La proporción se acerca a 1/2 porque los nuevos lanzamientos diluyen la racha, no porque la corrijan; así, la explicación refuerza la idea de que «le toca» al sello."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir 20 lanzamientos a cada estudiante, reunir los registros del curso y contar qué salió tras cada racha de cuatro caras.",
+        "explicacion": "Correcta. Con 30 estudiantes que lanzan 20 veces se esperan unas 30 rachas de cuatro caras seguidas de otro lanzamiento, suficientes para ver que después de ellas sale cara más o menos la mitad de las veces: la racha no cambia la posibilidad del lanzamiento siguiente. Es la misma racha que originó la predicción, puesta a prueba con datos del curso."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle a cada estudiante que lance la moneda cinco veces y anote cuántas veces salió sello justo después de una cara.",
+        "explicacion": "Incorrecta. Es un experimento, pero mira lo que pasa después de una sola cara, no de una racha, y cada estudiante analiza solo sus cinco lanzamientos: con tan pocos datos los resultados varían mucho y no confirman ni refutan la predicción."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que calculen qué tan raro es sacar cinco caras seguidas, para que decidan si conviene apostar por sello ahora.",
+        "explicacion": "Incorrecta. Confunde dos preguntas: que cinco caras seguidas sean poco probables antes de empezar (1 de 32) no hace más probable el sello cuando ya salieron cuatro caras; el cálculo parece respaldar la idea errónea."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los estudiantes creen que, tras una racha de caras, el sello «se compensa»; es la llamada falacia del jugador. Concepto: los lanzamientos de una moneda son independientes: después de cualquier racha, cara y sello conservan cada uno la posibilidad 1/2; la proporción se acerca a 1/2 en muchos lanzamientos sin que haya compensación. Regla: el estándar de cuarto a quinto pide conjeturar y poner a prueba predicciones sobre la posibilidad de los eventos. Conclusión: reunir los 600 lanzamientos del curso y examinar qué ocurre después de cada racha de cuatro caras.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

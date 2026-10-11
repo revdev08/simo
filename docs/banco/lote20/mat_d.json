@@ -1,0 +1,1043 @@
+[
+  {
+    "id": "TC-MAT-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: modelo exponencial con factor por unidad obtenido por radicación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico y utilizo la potenciación, la radicación y la logaritmación para representar situaciones matemáticas y no matemáticas y para resolver problemas.",
+    "pregunta": "En un proyecto conjunto con física, una docente de décimo grado y sus estudiantes sumergen un sensor de luz en un tanque con agua turbia. El sensor marca 648 lux a 2 m de profundidad y 524,88 lux a 4 m. La docente indica que, en este modelo, por cada metro adicional de profundidad la intensidad se reduce en el mismo porcentaje. ¿Qué intensidad debería marcar el sensor a 7 m de profundidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unos 340 lux",
+        "explicacion": "Incorrecta. Supone una disminución lineal: entre 2 m y 4 m la intensidad baja 123,12 lux, es decir, 61,56 lux por metro, y resta 3 × 61,56 a 524,88 (≈ 340,2). Pero el enunciado fija una reducción porcentual constante por metro, que corresponde a un modelo exponencial, no a uno lineal."
+      },
+      {
+        "id": "B",
+        "texto": "Unos 389 lux",
+        "explicacion": "Incorrecta. Halla bien que en 2 m la intensidad se multiplica por 524,88/648 = 0,81 (una reducción del 19 %), pero reparte ese porcentaje por partes iguales: 9,5 % por metro. Los porcentajes sucesivos se componen: dos reducciones del 9,5 % dejan 0,905² ≈ 0,819, no 0,81. Con 0,905 por metro se obtiene 524,88 × 0,905³ ≈ 389."
+      },
+      {
+        "id": "C",
+        "texto": "Unos 383 lux",
+        "explicacion": "Correcta. En 2 m el factor es 524,88/648 = 0,81, así que el factor por metro es √0,81 = 0,9 (un 10 % menos por cada metro). De 4 m a 7 m hay 3 m: 524,88 × 0,9³ = 524,88 × 0,729 ≈ 382,6 lux."
+      },
+      {
+        "id": "D",
+        "texto": "Unos 279 lux",
+        "explicacion": "Incorrecta. Toma 0,81, que es el factor de dos metros, como si fuera el de cada metro: 524,88 × 0,81³ ≈ 278,9. Con ese factor, la lectura a 4 m tendría que haber sido 648 × 0,81² ≈ 425, no 524,88."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la intensidad baja el mismo porcentaje por cada metro, así que el modelo es exponencial, I(d) = I₀ · bᵈ. Cálculo: de 2 m a 4 m el factor es 524,88/648 = 0,81 = b², luego b = √0,81 = 0,9. A 7 m: 524,88 × 0,9³ ≈ 382,6 lux, unos 383. Los distractores salen de suponer una variación lineal (340), de repartir el 19 % en partes iguales (389) o de usar como factor por metro el de dos metros (279).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: crecimiento exponencial frente a potencial (generalizar desde un tramo finito)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas. [...] Uso procesos inductivos y lenguaje algebraico para formular y poner a prueba conjeturas.",
+    "pregunta": "En grado décimo, un estudiante compara f(x) = x² y g(x) = 1,1ˣ con una tabla para x = 2, 3, …, 20. Como en todas las filas f(x) es mucho mayor (por ejemplo, f(20) = 400 y g(20) ≈ 6,7), concluye que de ahí en adelante x² siempre superará a 1,1ˣ. ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle que extienda la tabla hasta x = 100 y que compare, fila a fila, el factor por el que se multiplica cada función cuando x aumenta en 1.",
+        "explicacion": "Correcta. El error es generalizar a partir de un tramo finito. Al extender la tabla, g supera a f desde x = 96 (1,1⁹⁶ ≈ 9.412 frente a 96² = 9.216), y la comparación de factores explica por qué: g se multiplica siempre por 1,1, mientras que el factor de f, ((x + 1)/x)², se acerca a 1 y desde x = 21 ya es menor que 1,1."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que grafique las dos funciones con un programa, en la ventana 0 ≤ x ≤ 20, para observar con más precisión la distancia entre ellas.",
+        "explicacion": "Incorrecta. Es una intervención activa, pero la ventana coincide con el tramo de la tabla: la gráfica mostrará otra vez a f muy por encima de g y reforzará la conjetura. El cruce ocurre cerca de x = 96, fuera de esa ventana."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que agregue a su tabla las diferencias entre valores consecutivos de cada función y que compare cuál crece más en cada fila.",
+        "explicacion": "Incorrecta. Entre x = 2 y x = 20 las diferencias de f (de 5 a 39) son mucho mayores que las de g (menos de 1), así que la comparación confirma la conjetura. Las diferencias de g superan a las de f solo desde x = 78, muy lejos de la tabla."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarle que toda exponencial de base mayor que 1 termina superando a cualquier potencia de x, aunque en su tabla no se alcance a ver.",
+        "explicacion": "Incorrecta. La propiedad es cierta, pero enunciarla no le permite al estudiante ver dónde falló su razonamiento ni comprobarla en su propio caso: la conjetura queda refutada por autoridad, no con evidencia."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la conclusión se apoya solo en x ≤ 20. Concepto: una exponencial de base mayor que 1 se multiplica por un factor constante, mientras que el factor de crecimiento de x² tiende a 1; por eso 1,1ˣ termina superando a x² (desde x = 96). Intervención: ampliar el rango y comparar factores. Graficar en la misma ventana o comparar diferencias en ese tramo refuerzan la conjetura, y enunciar la propiedad no la pone a prueba.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-063",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: ecuación logarítmica y raíz extraña por el dominio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
+    "pregunta": "Un docente de grado once prepara la clave de un taller. Uno de los ejercicios pide resolver en los números reales la ecuación log(x) + log(x − 3) = 1, con logaritmos en base 10. ¿Cuál es la respuesta correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "x = −2 y x = 5, porque ambos valores son raíces de la ecuación x² − 3x − 10 = 0.",
+        "explicacion": "Incorrecta. Transforma bien la ecuación: log[x(x − 3)] = 1 lleva a x(x − 3) = 10, es decir, x² − 3x − 10 = 0, con raíces 5 y −2. Pero no revisa el dominio: con x = −2 los argumentos x y x − 3 son negativos y los logaritmos no existen en los reales."
+      },
+      {
+        "id": "B",
+        "texto": "x = 6,5, porque la suma de los dos logaritmos equivale a log(2x − 3) = 1.",
+        "explicacion": "Incorrecta. Aplica una propiedad falsa: la suma de logaritmos es el logaritmo del producto, no el de la suma. Con x = 6,5 se obtiene log 6,5 + log 3,5 = log 22,75 ≈ 1,36, no 1."
+      },
+      {
+        "id": "C",
+        "texto": "x = (3 + √13)/2, porque el producto x(x − 3) debe ser igual a 1.",
+        "explicacion": "Incorrecta. Confunde log(A) = 1 con log(A) = 0: en base 10, log(A) = 1 significa A = 10¹ = 10, no A = 1. Con x = (3 + √13)/2 ≈ 3,30 la suma de los logaritmos da log 1 = 0."
+      },
+      {
+        "id": "D",
+        "texto": "Solo x = 5, porque con x = −2 no están definidos log(x) ni log(x − 3).",
+        "explicacion": "Correcta. log(x) + log(x − 3) = log[x(x − 3)] = 1 implica x(x − 3) = 10, con raíces 5 y −2. Solo x = 5 cumple x > 3, condición para que existan ambos logaritmos (la gráfica de y = log x solo existe para x > 0): log 5 + log 2 = log 10 = 1."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ecuación tiene logaritmos de x y de x − 3, que solo existen si x > 3. Regla: log A + log B = log(AB), y log(A) = 1 equivale a A = 10. Cálculo: x² − 3x − 10 = 0 da x = 5 o x = −2; se descarta −2. Conclusión: la única solución es x = 5. Los distractores aceptan la raíz extraña (−2), convierten la suma de logaritmos en el logaritmo de la suma (6,5) o igualan el argumento a 1 en vez de a 10.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: el logaritmo de una suma tratado como suma de logaritmos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+    "pregunta": "En grado once, al simplificar expresiones, varios estudiantes escriben log(100 + 1.000) = log 100 + log 1.000 = 5, y algunos aplican la misma regla en otros ejercicios, por ejemplo log(x + 10) = log x + 1. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que comprueben con la calculadora, en varios ejemplos, que log(ab) = log a + log b, y que anoten esa propiedad en su lista de fórmulas.",
+        "explicacion": "Incorrecta. Es una tarea activa, pero refuerza la propiedad del producto, que los estudiantes ya conocen, sin confrontar el error: nada en ella muestra que el logaritmo de una suma no se descompone."
+      },
+      {
+        "id": "B",
+        "texto": "Explicarles, con log 1.100 ≈ 3,04 frente a log 100 + log 1.000 = 5 = log 100.000, que la propiedad verdadera viene de 10ᵐ · 10ⁿ = 10ᵐ⁺ⁿ.",
+        "explicacion": "Correcta. El contraejemplo numérico (3,04 frente a 5) muestra que la regla falla, y la ley de los exponentes explica de dónde sale la propiedad verdadera: log a y log b son exponentes de 10, y los exponentes se suman cuando se multiplican las potencias, es decir, cuando se multiplican a y b, no cuando se suman."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que verifiquen su regla con a = b = 2, pues log 4 = log 2 + log 2, y que la reserven para los casos en que los sumandos sean iguales.",
+        "explicacion": "Incorrecta. Con a = b = 2 la regla parece funcionar solo porque 2 + 2 = 2 · 2. La conclusión es falsa: con 3 + 3, log 6 ≈ 0,78, mientras que log 3 + log 3 = log 9 ≈ 0,95. La tarea es activa, pero valida el error con un caso particular."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarles que el logaritmo no se distribuye sobre la suma y proponerles una serie de ejercicios para practicar las propiedades correctas.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero enunciar la regla y practicar las propiedades correctas no les da a los estudiantes una razón para abandonar la regla falsa: sin contraejemplo ni conexión con las potencias, el error tiende a reaparecer."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los estudiantes tratan el logaritmo como si se distribuyera sobre la suma. Concepto: log a + log b = log(ab), porque 10ᵐ · 10ⁿ = 10ᵐ⁺ⁿ. Intervención: un contraejemplo numérico (log 1.100 ≈ 3,04, no 5) unido a la ley de los exponentes. Comprobar la propiedad del producto no toca el error, el caso a = b = 2 lo valida por coincidencia y la regla enunciada con práctica repetida no lo confronta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento espacial y sistemas geométricos",
+    "subtema": "Saber: inecuación trigonométrica en un modelo periódico (mareas)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Describo y modelo fenómenos periódicos del mundo real usando relaciones y funciones trigonométricas.",
+    "pregunta": "En grado once, una docente modela la profundidad del agua en la entrada de un puerto con P(t) = 3 + 2 cos(πt/6), donde P está en metros y t es el número de horas transcurridas desde la medianoche. Un barco pesquero necesita al menos 4 m de profundidad para entrar. Entre las 0 y las 24 horas de un mismo día, ¿durante cuánto tiempo, en total, puede entrar el barco?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4 horas",
+        "explicacion": "Incorrecta. Cuenta una sola ventana, la de la marea alta del mediodía (de las 10 a las 14 horas), y olvida que el período es de 12 horas: también hay marea alta a la medianoche, que aporta los tramos de 0 a 2 y de 22 a 24 horas."
+      },
+      {
+        "id": "B",
+        "texto": "8 horas",
+        "explicacion": "Correcta. P(t) ≥ 4 equivale a cos(πt/6) ≥ 1/2, que se cumple cuando πt/6 está a π/3 o menos de un múltiplo de 2π, es decir, para t en [12k − 2, 12k + 2]. En el día: de 0 a 2, de 10 a 14 y de 22 a 24 horas, que suman 2 + 4 + 2 = 8 horas."
+      },
+      {
+        "id": "C",
+        "texto": "6 horas",
+        "explicacion": "Incorrecta. Supone que la profundidad baja y sube de manera lineal entre 5 m y 1 m: 4 m quedaría a un cuarto del recorrido y el barco podría entrar la cuarta parte del tiempo. Pero el coseno cambia despacio cerca de sus máximos, y la profundidad permanece por encima de 4 m un tercio del período."
+      },
+      {
+        "id": "D",
+        "texto": "16 horas",
+        "explicacion": "Incorrecta. Resuelve bien cos(πt/6) = 1/2 (t = 2, 10, 14 y 22), pero toma los intervalos equivocados, de 2 a 10 y de 14 a 22 horas, en los que la profundidad es menor o igual que 4 m."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el período de P es 2π ÷ (π/6) = 12 horas, así que en el día hay marea alta a las 0, a las 12 y a las 24 horas. Regla: 3 + 2 cos(πt/6) ≥ 4 equivale a cos(πt/6) ≥ 1/2, que se cumple a 2 horas o menos de cada máximo. Cálculo: [0, 2], [10, 14] y [22, 24] suman 8 horas. Errores: contar una sola marea alta (4), suponer una variación lineal (6) o tomar los intervalos complementarios (16).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-066",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: desfase y máximo de una función sinusoidal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
+    "pregunta": "En grado once, un docente modela la temperatura de un municipio con T(h) = 18 + 6 sen(π(h − 9)/12), donde T está en grados Celsius y h es la hora del día, de 0 a 24. Al preguntar a qué hora se alcanza la temperatura máxima, varios estudiantes responden «a las 9 de la mañana», y argumentan que es el número que aparece dentro del paréntesis. ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que tabulen T a las 0, 6, 12, 18 y 24 horas y que escojan como hora del máximo la que tenga el mayor valor en la tabla.",
+        "explicacion": "Incorrecta. Es una tarea activa, pero la tabla salta de las 12 a las 18 horas: da el mismo valor en ambas (≈ 22,2 °C), no contiene el máximo de 24 °C, que ocurre a las 15 horas, y tampoco incluye las 9 horas, así que no confronta la respuesta de los estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que grafiquen T con un programa en la ventana de 0 a 12 horas y que ubiquen en ella el punto más alto de la curva.",
+        "explicacion": "Incorrecta. La ventana corta la curva antes del máximo: el punto más alto que se ve está en el borde, a las 12 horas (≈ 22,2 °C), y los estudiantes cambiarían un error por otro. El máximo de 24 °C ocurre a las 15 horas."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que calculen T(9), lo comparen con el máximo posible, 18 + 6, y busquen la hora en que el argumento del seno vale π/2.",
+        "explicacion": "Correcta. T(9) = 18 + 6 sen 0 = 18 °C, lejos del máximo de 24 °C: así ven que a las 9 el seno vale 0 y la temperatura va subiendo. El máximo se da cuando π(h − 9)/12 = π/2, es decir, h − 9 = 6: a las 15 horas."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que calculen el período, 2π ÷ (π/12) = 24 horas, y que comprueben que el valor máximo de T se repite cada 24 horas.",
+        "explicacion": "Incorrecta. El cálculo del período es correcto, pero no dice en qué momento del día ocurre el máximo; los estudiantes pueden hacerlo bien y seguir pensando que el máximo está a las 9."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los estudiantes toman el desfase (h − 9) como la hora del máximo. Concepto: en a + b sen(c(h − d)), con b y c positivos, en h = d el seno vale 0 y está creciendo; el máximo ocurre cuando el argumento vale π/2. Cálculo: T(9) = 18 °C, y el máximo, 24 °C, se alcanza a las 15 horas. Intervención: evaluar T(9) frente al máximo posible y resolver argumento = π/2. La tabla cada 6 horas y la ventana de 0 a 12 horas no muestran el máximo, y el período no dice dónde está.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: serie geométrica y valor límite en dosis repetidas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Utilizo las técnicas de aproximación en procesos infinitos numéricos.",
+    "pregunta": "En grado once, una docente plantea un problema de modelación: un paciente toma 100 mg de un medicamento cada 24 horas, y en cada período de 24 horas su organismo elimina el 60 % de la cantidad de medicamento presente al comienzo del período. Si el tratamiento se prolonga muchos días, ¿a qué valor se acerca la cantidad de medicamento en el organismo justo después de cada dosis?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se acerca a unos 166,7 mg.",
+        "explicacion": "Correcta. Justo después de la dosis n hay 100 + 100(0,4) + 100(0,4)² + … + 100(0,4)ⁿ⁻¹ mg, una suma geométrica de razón 0,4 que tiende a 100/(1 − 0,4) ≈ 166,7 mg. También se obtiene del equilibrio: L = 0,4L + 100, de donde L ≈ 166,7."
+      },
+      {
+        "id": "B",
+        "texto": "Se acerca a unos 140 mg.",
+        "explicacion": "Incorrecta. Suma a la dosis nueva solo el remanente de la anterior (40 mg) y olvida que siguen quedando restos de las dosis previas (16 mg, 6,4 mg, …). 140 mg es la cantidad después de la segunda dosis, no el valor al que se acerca."
+      },
+      {
+        "id": "C",
+        "texto": "Se acerca a unos 250 mg.",
+        "explicacion": "Incorrecta. Divide los 100 mg entre 0,4, la fracción que conserva el organismo, en lugar de dividir entre 1 − 0,4: confunde la razón de la serie con 1 menos la razón. 250 mg sería el límite si el organismo conservara el 60 % y eliminara el 40 %."
+      },
+      {
+        "id": "D",
+        "texto": "No se acerca a ningún valor: crece sin límite.",
+        "explicacion": "Incorrecta. Supone que, como cada día se agregan otros 100 mg, la cantidad crece sin límite. Pero una suma de infinitos términos positivos puede tener un valor finito cuando los términos decrecen geométricamente: aquí cada aporte es 0,4 del anterior. A medida que crece la cantidad presente, también crece lo que se elimina, y el proceso se estabiliza."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: de un día a otro se conserva el 40 % y se suman 100 mg. Regla: la cantidad después de la dosis n es la suma de una progresión geométrica de razón 0,4, que converge a 100/(1 − 0,4). Cálculo: 100/0,6 ≈ 166,7 mg (justo antes de cada dosis quedarían unos 66,7 mg). Errores: tomar solo un remanente (140), dividir entre la razón en lugar de entre 1 menos la razón (250) o creer que toda suma infinita de positivos crece sin límite.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: término general de una sucesión geométrica (a · rⁿ⁻¹ frente a (a · r)ⁿ⁻¹)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"
+    ],
+    "texto_fuente": "Construyo expresiones algebraicas equivalentes a una expresión algebraica dada.",
+    "pregunta": "En grado décimo, una docente pide el término general de la sucesión 3, 6, 12, 24, … Un estudiante identifica bien el primer término, 3, y la razón, 2, pero escribe aₙ = 6ⁿ⁻¹, porque «3 por 2 da 6». ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle que compruebe su fórmula con el segundo término de la sucesión y, si coincide, que la use para calcular el décimo término.",
+        "explicacion": "Incorrecta. La comprobación es activa pero mal escogida: para n = 2 la fórmula errada coincide por casualidad (6¹ = 6), así que el estudiante la daría por buena y calcularía 6⁹ en lugar de 3 · 2⁹ = 1.536."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que calcule las diferencias entre términos consecutivos, para que reconozca que la sucesión es geométrica y no aritmética.",
+        "explicacion": "Incorrecta. Parte de un diagnóstico equivocado: el estudiante ya reconoció que la sucesión es geométrica (identificó la razón 2). Su error está en el orden de las operaciones al escribir la expresión."
+      },
+      {
+        "id": "C",
+        "texto": "Recordarle la jerarquía de las operaciones y escribir en el tablero la fórmula general aₙ = a₁ · rⁿ⁻¹ para que la aplique de nuevo.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero recordar la regla y dar otra vez la fórmula no le permite ver por qué 3 · 2ⁿ⁻¹ y 6ⁿ⁻¹ son distintas; puede volver a «simplificar» del mismo modo."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle que evalúe su fórmula para n = 1, 2 y 3, la compare con 3, 6 y 12, y luego contraste el valor de 3 · 2² con el de (3 · 2)².",
+        "explicacion": "Correcta. Con n = 1 su fórmula da 1 y con n = 3 da 36, en lugar de 3 y 12: el contraste revela el error. Comparar 3 · 2² = 12 con (3 · 2)² = 36 muestra que el exponente afecta solo a la base 2, no al producto 3 · 2."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante convierte 3 · 2ⁿ⁻¹ en 6ⁿ⁻¹, como si el exponente afectara también al coeficiente. Regla: en a · bᵏ la potencia se calcula antes que el producto, y (a · b)ᵏ = aᵏ · bᵏ es distinto de a · bᵏ. Intervención: evaluar la fórmula en varios términos (1, 6, 36 frente a 3, 6, 12) y contrastar 3 · 2² con (3 · 2)². Comprobar solo con n = 2 valida el error por coincidencia.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: capitalización cada vez más frecuente y el límite (1 + r/n)ⁿ",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Utilizo las técnicas de aproximación en procesos infinitos numéricos.",
+    "pregunta": "En una clase de grado once sobre el número e, un docente calcula el saldo al cabo de un año de $1.000.000 invertidos al 12 % nominal anual, capitalizable n veces en el año: con n = 12 (mensual) el saldo es de unos $1.126.825 y con n = 365 (diaria), de unos $1.127.475. Un estudiante sostiene que, si la capitalización se hiciera cada segundo o con más frecuencia aún, el saldo al final del año crecería sin límite. ¿Qué es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El saldo crece sin límite, aunque cada vez más despacio, porque el número de capitalizaciones también aumenta sin límite.",
+        "explicacion": "Incorrecta. Es la conjetura del estudiante. El saldo sí aumenta con n, pero está acotado: los valores (1.126.825; 1.127.475; unos 1.127.497 con capitalización cada segundo) se acercan a un número fijo. Una sucesión creciente no tiene por qué crecer sin límite."
+      },
+      {
+        "id": "B",
+        "texto": "El saldo se acerca a $1.000.000, porque la tasa de cada período, 0,12/n, tiende a 0 y 1 elevado a cualquier exponente da 1.",
+        "explicacion": "Incorrecta. Trata la base y el exponente por separado: aunque 1 + 0,12/n tiende a 1, el exponente n crece al mismo tiempo, y la expresión no tiende a 1 (es una forma indeterminada del tipo 1^∞). Además, contradice los saldos calculados, que crecen con n."
+      },
+      {
+        "id": "C",
+        "texto": "El saldo se acerca a 1.000.000 · e^0,12, unos $1.127.497, porque (1 + 0,12/n)ⁿ tiende a e^0,12 a medida que n crece sin límite.",
+        "explicacion": "Correcta. (1 + 0,12/n)ⁿ tiende a e^0,12 ≈ 1,1275 cuando n crece sin límite (capitalización continua). El saldo se acerca a 1.000.000 · e^0,12 ≈ $1.127.497; con capitalización cada segundo ya se obtiene ese valor redondeado al peso."
+      },
+      {
+        "id": "D",
+        "texto": "El saldo se queda en unos $1.127.475, porque a partir de la capitalización diaria el resultado ya no aumenta.",
+        "explicacion": "Incorrecta. Confunde una diferencia pequeña con ninguna diferencia: entre la capitalización diaria y la continua hay unos $22. El valor límite no se alcanza con n = 365; los saldos siguen creciendo, cada vez menos, hacia 1.000.000 · e^0,12."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: al aumentar n, el saldo 1.000.000 · (1 + 0,12/n)ⁿ crece cada vez menos (1.126.825 con n = 12; 1.127.475 con n = 365). Regla: (1 + r/n)ⁿ tiende a eʳ cuando n crece sin límite. Cálculo: 1.000.000 · e^0,12 ≈ 1.127.497. Conclusión: el saldo se acerca a ese valor y no crece sin límite, así que la afirmación del estudiante es falsa. Errores: creer que toda sucesión creciente diverge, tratar 1^∞ como 1 o creer que el límite ya se alcanzó con la capitalización diaria.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: límite al infinito de una función racional (costo promedio)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+    "pregunta": "Para la feria empresarial, los estudiantes de grado once estampan camisetas. El montaje del taller cuesta $1.200.000 y cada camiseta, $9.000, de modo que el costo promedio por camiseta cuando se producen x camisetas es C(x) = (1.200.000 + 9.000x)/x. El docente de matemáticas les pregunta qué ocurre con C(x) cuando x crece cada vez más. ¿Cuál es la respuesta correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se acerca a $9.000 por camiseta, porque el costo del montaje se reparte entre más unidades.",
+        "explicacion": "Correcta. C(x) = 1.200.000/x + 9.000. El primer término tiende a 0 cuando x crece, así que C(x) se acerca a 9.000 por encima, sin alcanzarlo: con 1.000 camisetas es $10.200 y con 10.000, $9.120. La recta y = 9.000 es la asíntota horizontal de C."
+      },
+      {
+        "id": "B",
+        "texto": "Se acerca a $0 por camiseta, porque el numerador se divide entre un número cada vez más grande.",
+        "explicacion": "Incorrecta. Aplica la idea de «dividir entre algo muy grande» a toda la fracción, pero el numerador también crece con x. Solo el costo fijo dividido entre x tiende a 0; el término 9.000x/x vale 9.000 para cualquier x."
+      },
+      {
+        "id": "C",
+        "texto": "Disminuye sin acercarse a ningún valor, porque cada camiseta adicional hace bajar el promedio.",
+        "explicacion": "Incorrecta. Es cierto que C(x) disminuye, pero una función decreciente puede estar acotada: C(x) no baja de 9.000, porque cada camiseta cuesta por lo menos eso. Decrecer no implica decrecer sin límite."
+      },
+      {
+        "id": "D",
+        "texto": "Aumenta con cada camiseta, porque el costo total de producción crece a medida que crece x.",
+        "explicacion": "Incorrecta. Confunde el costo total, 1.200.000 + 9.000x, que sí crece con x, con el costo promedio por camiseta, que es ese total dividido entre x y disminuye."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: C(x) = 1.200.000/x + 9.000. Regla: k/x tiende a 0 cuando x crece sin límite, así que C(x) tiende a 9.000 (asíntota horizontal y = 9.000). Conclusión: el costo promedio se acerca a $9.000 sin llegar a él. Errores: hacer tender a 0 toda la fracción, confundir decreciente con no acotada y confundir el costo total con el costo promedio.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: una gráfica puede cortar su asíntota horizontal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+    "pregunta": "En grado once, después de estudiar f(x) = 1/x y g(x) = 2ˣ, varios estudiantes afirman que «una gráfica nunca puede cortar su asíntota horizontal». El docente quiere que el grupo revise esa afirmación. ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que tracen con un programa las gráficas de 1/x, 2ˣ y 3⁻ˣ, y que verifiquen si alguna de ellas llega a tocar su asíntota horizontal.",
+        "explicacion": "Incorrecta. Es activa, pero suma ejemplos del mismo tipo (funciones monótonas que se acercan a la asíntota sin alcanzarla), así que confirma la generalización en lugar de ponerla a prueba."
+      },
+      {
+        "id": "B",
+        "texto": "Mostrarles h(x) = (2x² + 4x)/(x² + 1), cuya asíntota es y = 2, y pedirles que resuelvan h(x) = 2 y miren qué ocurre lejos del origen.",
+        "explicacion": "Correcta. h(x) = 2 lleva a 2x² + 4x = 2x² + 2, es decir, x = 1/2: la gráfica corta su asíntota. Al comparar ese corte con el comportamiento para x muy grande, los estudiantes ven que la asíntota describe lo que pasa lejos (el límite en el infinito) y no prohíbe cortes en un tramo finito."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que calculen h(x) = (2x² + 4x)/(x² + 1) para x = 10, 100 y 1.000 y que observen cómo sus valores se aproximan a 2.",
+        "explicacion": "Incorrecta. Usa una función adecuada, pero solo mira valores grandes de x, donde h(x) se acerca a 2 por encima (≈ 2,38; 2,04; 2,004) sin tocarlo. Esa tabla refuerza la creencia, porque el corte ocurre en x = 1/2."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarles que la asíntota horizontal se define con el límite de f cuando x tiende a infinito y pedirles que escriban esa definición.",
+        "explicacion": "Incorrecta. La definición es correcta, pero enunciarla no confronta la creencia: sin un ejemplo que corte la asíntota, los estudiantes pueden repetir la definición y seguir pensando que el corte es imposible."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la creencia se apoya en dos funciones monótonas que nunca alcanzan su asíntota. Concepto: y = L es asíntota horizontal si f(x) tiende a L cuando x tiende a ±∞; nada impide que f(x) = L para algún x. Intervención: un contraejemplo como h(x) = (2x² + 4x)/(x² + 1), que vale 2 en x = 1/2, comparado con su comportamiento lejano. Más ejemplos monótonos o una tabla con valores grandes de x confirman la creencia, y la definición sola no la confronta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: razón de cambio instantánea frente a razón de cambio media",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva y desarrollo métodos para hallar las derivadas de algunas funciones básicas en contextos matemáticos y no matemáticos.",
+    "pregunta": "En una práctica conjunta con biología, un docente de grado once modela el área de una mancha de moho en un cultivo con A(t) = 20 + 3t + 0,25t², donde A está en milímetros cuadrados y t en horas desde el inicio del registro. Pregunta con qué rapidez crece el área exactamente a las 4 horas. ¿Cuál es la respuesta correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4 mm² por hora",
+        "explicacion": "Incorrecta. Es la rapidez media entre t = 0 y t = 4: (36 − 20)/4 = 4. Como el crecimiento se acelera, la rapidez media de ese intervalo es menor que la rapidez a las 4 horas."
+      },
+      {
+        "id": "B",
+        "texto": "9 mm² por hora",
+        "explicacion": "Incorrecta. Divide el área a las 4 horas entre el tiempo: 36/4 = 9. Ese cociente no es una razón de cambio: incluye los 20 mm² iniciales y no compara cambios del área con cambios del tiempo."
+      },
+      {
+        "id": "C",
+        "texto": "5,25 mm² por hora",
+        "explicacion": "Incorrecta. Es la pendiente de la secante entre t = 4 y t = 5: A(5) − A(4) = 41,25 − 36 = 5,25. Aproxima la rapidez a las 4 horas por exceso; para el valor instantáneo hay que hacer tender a 0 la amplitud del intervalo."
+      },
+      {
+        "id": "D",
+        "texto": "5 mm² por hora",
+        "explicacion": "Correcta. La rapidez instantánea es la derivada: A′(t) = 3 + 0,5t, y A′(4) = 3 + 2 = 5 mm² por hora. Es la pendiente de la tangente en t = 4: las secantes entre 4 y 4 + h tienen pendiente 5 + 0,25h, que tiende a 5."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se pide la rapidez exactamente a las 4 horas, no en un intervalo. Regla: la razón de cambio instantánea es la derivada, límite de las razones de cambio medias. Cálculo: A′(t) = 3 + 0,5t, A′(4) = 5 mm²/h. Los distractores dan la rapidez media de 0 a 4 horas (4), la de 4 a 5 horas (5,25) o el cociente A(4)/4 (9), que no es una razón de cambio.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-073",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: confusión entre el valor de una función y su razón de cambio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva y desarrollo métodos para hallar las derivadas de algunas funciones básicas en contextos matemáticos y no matemáticos.",
+    "pregunta": "En grado once, un docente presenta el número de aves de una población registrado al comienzo de cada año: año 0, 100; año 1, 180; año 2, 310; año 3, 480; año 4, 620; año 5, 700; año 6, 740. Pregunta en qué período fue mayor la rapidez de crecimiento, en aves por año, y una estudiante responde «al final, en el año 6, porque ahí hay más aves». ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle que agregue a la tabla el cambio de un año al siguiente, ubique el mayor y lo relacione con el tramo más empinado de la gráfica.",
+        "explicacion": "Correcta. La estudiante confunde el valor de la función con su razón de cambio. Los cambios anuales son 80, 130, 170, 140, 80 y 40: el mayor, 170 aves por año, ocurre entre los años 2 y 3 y coincide con el tramo de mayor pendiente; al final la población crece cada vez más despacio."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que grafique los siete puntos y que identifique el punto más alto de la curva como el momento de mayor crecimiento.",
+        "explicacion": "Incorrecta. Refuerza el error: el punto más alto de la gráfica indica el mayor número de aves, no el mayor crecimiento. La rapidez se lee en la inclinación de la curva, que al final es casi horizontal."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que calcule la rapidez media de todo el período, (740 − 100)/6 ≈ 107 aves por año, y la use como rapidez de cada año.",
+        "explicacion": "Incorrecta. La rapidez media del período borra justamente lo que se pregunta: cómo cambia la rapidez de un año a otro. Con un solo valor no se puede decir en qué período fue mayor."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle que calcule el porcentaje de aumento de cada año respecto al anterior y que escoja el año con el mayor porcentaje.",
+        "explicacion": "Incorrecta. Mide el crecimiento relativo, no la rapidez en aves por año. Los porcentajes (80 %, 72 %, 55 %, …) señalan el primer año porque la población era pequeña, aunque ese año solo aumentó en 80 aves."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la estudiante elige el año con más aves, es decir, confunde el valor de la población con su rapidez de cambio. Concepto: la rapidez de crecimiento es el cambio por unidad de tiempo, que en la gráfica se ve como pendiente. Cálculo: los cambios anuales son 80, 130, 170, 140, 80 y 40; el mayor ocurre entre los años 2 y 3. Intervención: agregar la columna de cambios y relacionarla con la pendiente. Las demás tareas leen la altura, promedian todo el período o miden el cambio relativo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: la recta tangente como posición límite de las secantes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento variacional y sistemas algebraicos y analíticos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva y desarrollo métodos para hallar las derivadas de algunas funciones básicas en contextos matemáticos y no matemáticos.",
+    "pregunta": "En grado once, al iniciar el tema de la derivada, un docente pide a sus estudiantes definir la recta tangente a una curva en un punto. La mayoría responde que es «la recta que toca la curva en un solo punto», como la aprendieron con la circunferencia. ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que tracen con un programa la tangente a y = x² en varios puntos y que comprueben si cada una de ellas toca la parábola en un único punto.",
+        "explicacion": "Incorrecta. En la parábola cada tangente toca la curva una sola vez, así que la actividad confirma la idea en lugar de ponerla a prueba. La generalización falla en curvas como y = x³."
+      },
+      {
+        "id": "B",
+        "texto": "Mostrarles que la tangente a y = x³ en (1, 1), y = 3x − 2, vuelve a cortarla en (−2, −8), y construirla como límite de secantes por (1, 1).",
+        "explicacion": "Correcta. El contraejemplo muestra que una tangente puede cortar la curva en otro punto (x³ − 3x + 2 = (x − 1)²(x + 2)), y la construcción con secantes cuyo segundo punto se acerca a (1, 1) da la noción que sirve para la derivada: sus pendientes, (x³ − 1)/(x − 1) = x² + x + 1, tienden a 3."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que tracen secantes por (1, 1) y por los puntos de y = x³ con x = 2, 3, 4, …, y que observen a qué recta se van acercando.",
+        "explicacion": "Incorrecta. Es activa y usa secantes, pero aleja el segundo punto: con x = 2, 3, 4… las pendientes (7, 13, 21…) crecen sin acercarse a la de la tangente. La tangente es el límite cuando el segundo punto se acerca a (1, 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Mostrarles en el tablero la definición de tangente como la recta que pasa por (a, f(a)) con pendiente f′(a), y aplicarla a varias curvas.",
+        "explicacion": "Incorrecta. Al comenzar el tema, definir la tangente con f′(a) es circular, porque la derivada se introduce justamente como la pendiente de la tangente. Además, cambia una definición por otra sin mostrar por qué falla la idea de los estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la idea de los estudiantes viene de la circunferencia, donde la tangente toca la curva en un solo punto. Concepto: la tangente en un punto es la posición límite de las secantes que pasan por él cuando el otro punto se acerca; puede cortar la curva en otros puntos. Ejemplo: en y = x³, la tangente en (1, 1), y = 3x − 2, vuelve a cortarla en (−2, −8). Las otras opciones confirman la idea con la parábola, alejan el segundo punto o definen la tangente con la derivada, que aún no se ha construido.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-075",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: margen de error y tamaño de la muestra",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
+    "pregunta": "En grado once, un docente acompaña una encuesta de sus estudiantes: con una muestra aleatoria de 625 de los cerca de 60.000 jóvenes del municipio, estiman la proporción que usa la biblioteca pública, con un margen de error de unos ±4 puntos porcentuales al 95 % de confianza. La secretaría de cultura quiere repetir el estudio con un margen de ±3 puntos y el mismo nivel de confianza. ¿Aproximadamente cuántos jóvenes debería tener la nueva muestra aleatoria?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unos 830, porque el margen de error es inversamente proporcional a n, el tamaño de la muestra.",
+        "explicacion": "Incorrecta. Supone que el margen es inversamente proporcional a n: 625 × 4/3 ≈ 833. Con esa muestra el margen sería de unos 1/√833 ≈ 3,5 puntos, no de 3."
+      },
+      {
+        "id": "B",
+        "texto": "Unos 720, porque n es inversamente proporcional a la raíz cuadrada del margen de error.",
+        "explicacion": "Incorrecta. Invierte la relación: pone la raíz sobre el margen y no sobre el tamaño de la muestra (625 × √(4/3) ≈ 722). Con 722 jóvenes el margen sería de unos 1/√722 ≈ 3,7 puntos."
+      },
+      {
+        "id": "C",
+        "texto": "Unos 1.110, porque el margen de error es inversamente proporcional a la raíz cuadrada de n.",
+        "explicacion": "Correcta. Para una proporción con 95 % de confianza, el margen es aproximadamente 1/√n (1/√625 = 0,04). Para 0,03 se necesita n ≈ 1/0,03² ≈ 1.111, es decir, multiplicar 625 por (4/3)²."
+      },
+      {
+        "id": "D",
+        "texto": "Unos 6.000, porque para ese margen hay que encuestar al menos al 10 % de los jóvenes del municipio.",
+        "explicacion": "Incorrecta. Con una población grande, el margen de error depende del tamaño de la muestra y casi nada de la fracción encuestada. Una muestra aleatoria de unos 1.110 jóvenes da ±3 puntos, sea la población de 60.000 o de 600.000."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el margen pasa de 4 a 3 puntos con el mismo nivel de confianza. Regla: el margen de error de una proporción es inversamente proporcional a √n (al 95 %, aproximadamente 1/√n). Cálculo: n₂ = 625 × (4/3)² ≈ 1.111, unos 1.110 jóvenes. Errores: tratar la relación como proporcional (830), poner la raíz en el lugar equivocado (720) o creer que se debe encuestar una fracción fija de la población (6.000).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: interpretación de un intervalo de confianza para una media",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos",
+    "pregunta": "Para un proyecto de aula, estudiantes de grado once toman una muestra aleatoria de 400 de los 2.800 estudiantes de los colegios oficiales del municipio. Estiman que el tiempo medio diario frente a pantallas es de 4,2 horas, con un intervalo de confianza del 95 % que va de 3,9 a 4,5 horas. Al revisar el informe, el docente les pide escribir la interpretación correcta del intervalo. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cerca del 95 % de los 2.800 estudiantes pasa cada día entre 3,9 y 4,5 horas frente a una pantalla, y el resto pasa más o menos tiempo.",
+        "explicacion": "Incorrecta. Confunde un intervalo para la media con un intervalo para los datos individuales. Los tiempos de cada estudiante varían mucho más que el promedio: el intervalo informa sobre la media de la población, no sobre dónde está el 95 % de las personas."
+      },
+      {
+        "id": "B",
+        "texto": "Si se tomaran muchas otras muestras aleatorias de 400 estudiantes, cerca del 95 % de sus medias quedaría entre 3,9 y 4,5 horas.",
+        "explicacion": "Incorrecta. Las medias de muchas muestras se reparten alrededor de la media de la población, que es desconocida, y no alrededor de 4,2, que es la media de esta muestra. Si la media poblacional fuera 4,0 horas, por ejemplo, cerca de una cuarta parte de las medias muestrales caería por debajo de 3,9."
+      },
+      {
+        "id": "C",
+        "texto": "La media de los 2.800 estudiantes es de 4,2 horas, con un error que no supera el 5 % de ese valor, es decir, unas 0,2 horas.",
+        "explicacion": "Incorrecta. El 95 % es el nivel de confianza del procedimiento, no un porcentaje de error sobre la estimación. El margen es de 0,3 horas (cerca del 7 % de 4,2), y no hay certeza de que la media poblacional sea 4,2."
+      },
+      {
+        "id": "D",
+        "texto": "Si se repitiera muchas veces el muestreo, cerca del 95 % de los intervalos construidos de ese modo contendría la media de los 2.800.",
+        "explicacion": "Correcta. El nivel de confianza describe el método: si se repitiera el muestreo aleatorio muchas veces y con cada muestra se construyera un intervalo igual, alrededor del 95 % de ellos contendría la media de la población. El intervalo obtenido es uno de esos intervalos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el intervalo [3,9; 4,5] se calculó con una sola muestra y está centrado en la media muestral, 4,2. Concepto: el 95 % de confianza se refiere al procedimiento: alrededor del 95 % de los intervalos construidos así en muestras repetidas contienen la media poblacional (el parámetro). Errores: leerlo como un rango para los individuos, como el rango de las medias muestrales futuras o como un error relativo del 5 %.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Saber: regla empírica de la distribución normal en un intervalo asimétrico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+    "pregunta": "Una docente de grado once usa datos de una secretaría de salud: la estatura de 1.600 jóvenes de 16 años de un municipio sigue aproximadamente una distribución normal con media de 164 cm y desviación estándar de 8 cm. Pide estimar, con la regla empírica (68 %, 95 % y 99,7 %), cuántos de esos jóvenes miden entre 156 cm y 180 cm. ¿Cuál es la estimación correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unos 1.090 jóvenes",
+        "explicacion": "Incorrecta. Usa solo el 68 %, que corresponde al intervalo de una desviación a cada lado de la media (156 a 172 cm). El intervalo pedido llega hasta 180 cm, dos desviaciones por encima de la media."
+      },
+      {
+        "id": "B",
+        "texto": "Unos 1.300 jóvenes",
+        "explicacion": "Correcta. 156 = 164 − 8 (una desviación por debajo) y 180 = 164 + 16 (dos por encima). Por la simetría, entre 156 y 164 está la mitad del 68 % (34 %) y entre 164 y 180, la mitad del 95 % (47,5 %): en total, 81,5 %, y 0,815 × 1.600 ≈ 1.304."
+      },
+      {
+        "id": "C",
+        "texto": "Unos 1.520 jóvenes",
+        "explicacion": "Incorrecta. Usa el 95 %, que corresponde a dos desviaciones a cada lado (148 a 180 cm). Por debajo de la media, el intervalo pedido solo llega a una desviación (156 cm)."
+      },
+      {
+        "id": "D",
+        "texto": "Unos 760 jóvenes",
+        "explicacion": "Incorrecta. Cuenta solo el tramo de 164 a 180 cm (47,5 %, unos 760 jóvenes) y olvida el de 156 a 164 cm, que aporta otro 34 %."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el intervalo es asimétrico respecto de la media: va de una desviación por debajo (156) a dos por encima (180). Regla: en una distribución normal, cerca del 68 % de los datos está a menos de una desviación de la media y el 95 %, a menos de dos; por simetría, cada lado aporta la mitad. Cálculo: 34 % + 47,5 % = 81,5 %; 0,815 × 1.600 ≈ 1.300 (con la tabla normal, 81,9 %). Errores: usar solo el 68 %, solo el 95 % o solo la mitad superior.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: margen de error y ventaja en una encuesta electoral",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+    "pregunta": "En grado once, un docente analiza con su curso una noticia titulada «La candidata A gana la alcaldía». La nota informa que, en una encuesta a 600 personas escogidas al azar, la candidata A obtuvo el 52 % de la intención de voto y su único rival, el candidato B, el 48 %, con un margen de error de ±4 puntos al 95 % de confianza. Un estudiante objeta que esos datos no permiten afirmar quién va ganando. ¿Qué tarea es la más adecuada para que el curso evalúe la objeción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que construyan el intervalo de la intención de voto de A, de 48 % a 56 %, y que vean si incluye valores de 50 % o menos.",
+        "explicacion": "Correcta. Con dos candidatos, A gana si su apoyo en la población supera el 50 %. El intervalo 52 % ± 4 va de 48 % a 56 % e incluye valores menores que 50 %, así que la encuesta es compatible con que gane B: la objeción del estudiante es correcta."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que comprueben con 1/√600 que el margen de error de la nota está bien calculado y, si es así, que den por válido el titular.",
+        "explicacion": "Incorrecta. Verificar el margen (1/√600 ≈ 0,041) es útil, pero que esté bien calculado no dice nada sobre si la ventaja es concluyente; la tarea termina aceptando el titular sin usar el margen para juzgarlo."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que calculen cuántos encuestados prefirieron a cada candidato, 312 y 288, y que verifiquen si la diferencia a favor de A es positiva.",
+        "explicacion": "Incorrecta. Describe la muestra, en la que A sí supera a B, pero ignora la variabilidad del muestreo: otra muestra de 600 personas podría dar el resultado contrario. La pregunta es sobre la población, no sobre los encuestados."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarles que una ventaja es significativa cuando iguala o supera el margen de error y que, por eso, en este caso el titular se sostiene.",
+        "explicacion": "Incorrecta. La regla es falsa: en una contienda de dos candidatos, la diferencia entre ambos porcentajes tiene un margen de unos ±8 puntos, el doble del de cada porcentaje. Una ventaja de 4 puntos no es concluyente."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay solo dos candidatos y la ventaja de A (4 puntos) se compara con un margen de ±4 puntos en cada porcentaje. Regla: A va ganando en la población si su proporción supera el 50 %, y el intervalo 48 %–56 % incluye valores menores. Conclusión: la objeción del estudiante es correcta; el resultado es un empate técnico. Las demás tareas validan el margen sin usarlo, se quedan en la muestra o aplican una regla falsa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: asignación aleatoria en el diseño de un experimento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Diseño experimentos aleatorios (de las ciencias físicas, naturales o sociales) para estudiar un problema o pregunta.",
+    "pregunta": "En grado once, un grupo quiere averiguar si estudiar con música de fondo mejora la memorización. Su plan es comparar los puntajes en una prueba de memoria de 30 estudiantes que dicen estudiar habitualmente con música y de 30 que dicen estudiar en silencio. El docente debe orientar el diseño. ¿Qué recomendación es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener los dos grupos, pero ampliarlos a 120 estudiantes cada uno, para que la diferencia entre los dos promedios sea más confiable.",
+        "explicacion": "Incorrecta. Más datos reducen la variación por azar, pero no el sesgo: quienes eligen estudiar con música pueden diferir en otros aspectos (hábitos, rendimiento previo), y esa diferencia seguiría mezclada con el efecto de la música."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir a cada estudiante que informe cuántas horas a la semana estudia con música y relacionar esas horas con sus notas del período.",
+        "explicacion": "Incorrecta. Es un estudio observacional: aunque aparezca una relación entre horas con música y notas, no permite atribuirla a la música, porque las notas dependen de muchos otros factores que nadie controla."
+      },
+      {
+        "id": "C",
+        "texto": "Formar los grupos con el mismo número de hombres y de mujeres de cada curso, pero dejar que cada estudiante elija si estudia con música.",
+        "explicacion": "Incorrecta. Equilibra dos variables conocidas, pero al dejar que cada uno elija su condición conserva la autoselección: las diferencias no medidas entre los grupos siguen confundidas con el efecto de la música."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar por sorteo a los 60 estudiantes a memorizar una misma lista con música o en silencio, y comparar después sus puntajes en la misma prueba.",
+        "explicacion": "Correcta. La asignación aleatoria reparte entre los dos grupos, en promedio, todas las características de los estudiantes, medidas o no; con la misma lista y la misma prueba, una diferencia clara en los puntajes puede atribuirse a la condición de estudio."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: en el plan, cada estudiante llega a su grupo por su propio hábito, de modo que el efecto de la música se confunde con otras diferencias entre quienes la usan y quienes no. Concepto: en un experimento, la asignación aleatoria de los tratamientos controla las variables de confusión. Conclusión: asignar al azar las dos condiciones, con el mismo material y la misma prueba. Ampliar la muestra, observar hábitos o equilibrar solo algunas variables no elimina la autoselección.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-MAT-080",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento aleatorio y sistemas de datos",
+    "subtema": "Didáctica: evaluar un resultado con un modelo de azar (simulación)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, octavo a noveno grado",
+      "Pensamiento aleatorio y sistemas de datos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Comparo resultados de experimentos aleatorios con los resultados previstos por un modelo matemático probabilístico. [...] Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+    "pregunta": "En grado once, una estudiante afirma que distingue por el sabor dos marcas de gaseosa. En una prueba a ciegas con 10 vasos, en cada uno de los cuales la marca se escoge al azar, acierta 7. Varios compañeros concluyen que la habilidad quedó demostrada, porque 70 % es mucho más que el 50 % que se acertaría adivinando. ¿Qué actividad es la más adecuada para que el curso evalúe esa conclusión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Calcular la probabilidad de acertar exactamente 7 de 10 vasos adivinando, C(10, 7)/2¹⁰ ≈ 11,7 %, y aceptar la conclusión porque es baja.",
+        "explicacion": "Incorrecta. La probabilidad pertinente es la de un resultado tan extremo o más, es decir, 7 o más aciertos: (120 + 45 + 10 + 1)/1.024 ≈ 17,2 %. Además, ni 11,7 % ni 17,2 % son tan bajas como para descartar el azar: cerca de uno de cada seis adivinadores lograría 7 o más."
+      },
+      {
+        "id": "B",
+        "texto": "Repetir la prueba con solo 4 vasos, para evitar que el cansancio del gusto altere los aciertos, y ver si vuelve a acertar la mayoría.",
+        "explicacion": "Incorrecta. Reducir el número de vasos aumenta el peso del azar: adivinando, acertar 3 o más de 4 vasos tiene probabilidad 5/16 ≈ 31 %. La prueba sería todavía menos capaz de distinguir la habilidad de la suerte."
+      },
+      {
+        "id": "C",
+        "texto": "Simular muchas series de 10 lanzamientos de una moneda, como si se adivinara cada vaso, y ver con qué frecuencia salen 7 o más aciertos.",
+        "explicacion": "Correcta. La simulación construye el modelo de «adivinar» y permite comparar con él el resultado observado: 7 o más aciertos de 10 aparecen en cerca del 17 % de las series (176/1.024), algo frecuente, así que la prueba no basta para afirmar la habilidad."
+      },
+      {
+        "id": "D",
+        "texto": "Aplicar la misma prueba a otros cinco compañeros y aceptar la conclusión si ninguno de ellos supera los 7 aciertos de la estudiante.",
+        "explicacion": "Incorrecta. Compara a la estudiante con unos pocos compañeros en lugar de compararla con el modelo de azar. Si todos adivinan, cada uno tiene solo un 5,5 % de probabilidad de lograr 8 o más, así que lo más probable (cerca del 75 %) es que ninguno la supere y la conclusión se acepte aunque ella también haya adivinado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 7 aciertos de 10 se comparan con el 50 % esperado al azar sin tener en cuenta la variabilidad de una serie corta. Concepto: para juzgar un resultado se calcula con qué frecuencia el modelo de azar produce uno igual o más extremo. Cálculo: P(X ≥ 7), con X binomial de parámetros 10 y 0,5, es 176/1.024 ≈ 17 %. Conclusión: la simulación con monedas muestra que el resultado es frecuente adivinando. Las demás actividades usan una probabilidad puntual, reducen los datos o comparan con pocos compañeros.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

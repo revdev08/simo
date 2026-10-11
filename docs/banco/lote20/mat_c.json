@@ -1,0 +1,882 @@
+[
+  {
+    "id": "TC-MAT-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: operaciones con enteros en contexto (promedio y diferencia de temperaturas bajo cero)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Formulo y resuelvo problemas en situaciones aditivas y multiplicativas, en diferentes contextos y dominios numéricos.",
+    "pregunta": "Para una clase de sexto grado sobre números enteros, una docente de matemáticas registra las temperaturas mínimas de cinco madrugadas en una estación meteorológica de páramo: −3 °C, 2 °C, −5 °C, 0 °C y −4 °C. Pedirá al grupo el promedio de esas cinco temperaturas y la diferencia entre la más alta y la más baja. Antes de la clase, prepara la clave. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un promedio de −2,5 °C y una diferencia de 7 °C.",
+        "explicacion": "Incorrecta. La diferencia es correcta, 2 − (−5) = 7, pero el promedio deja por fuera la madrugada de 0 °C y divide −10 entre 4. El 0 es un dato más y cuenta en el número de valores."
+      },
+      {
+        "id": "B",
+        "texto": "Un promedio de −2 °C y una diferencia de 3 °C.",
+        "explicacion": "Incorrecta. El promedio es correcto, −10 ÷ 5 = −2, pero la diferencia resta los valores sin signo, 5 − 2 = 3. De −5 °C a 0 °C hay 5 grados y de 0 °C a 2 °C, 2 más: 2 − (−5) = 7."
+      },
+      {
+        "id": "C",
+        "texto": "Un promedio de −2 °C y una diferencia de 7 °C.",
+        "explicacion": "Correcta. Suma: −3 + 2 − 5 + 0 − 4 = −10; promedio: −10 ÷ 5 = −2 °C. Diferencia: 2 − (−5) = 2 + 5 = 7 °C."
+      },
+      {
+        "id": "D",
+        "texto": "Un promedio de −2,5 °C y una diferencia de 3 °C.",
+        "explicacion": "Incorrecta. Junta los dos errores: excluye el 0 del promedio (−10 ÷ 4 = −2,5) y resta los valores sin signo (5 − 2 = 3) en lugar de calcular 2 − (−5)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: hay cinco registros, uno de ellos de 0 °C, y la temperatura más baja es negativa. Regla: el promedio divide la suma entre el número de datos, incluido el 0; la diferencia entre dos enteros es a − b, y restar un negativo equivale a sumar su opuesto. Cálculo: (−3 + 2 − 5 + 0 − 4) ÷ 5 = −2 °C y 2 − (−5) = 7 °C. Los distractores excluyen el 0 o restan los valores sin signo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: residuo de una división entre una fracción (sobrante en metros frente a parte de un trozo)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Utilizo números racionales, en sus distintas expresiones (fracciones, razones, decimales o porcentajes) para resolver problemas en contextos de medida. [...] Justifico la pertinencia de un cálculo exacto o aproximado en la solución de un problema y lo razonable o no de las respuestas obtenidas.",
+    "pregunta": "Un docente de séptimo grado escribe la clave de un problema de su taller: «Con una cinta de 8 m se cortan trozos de 3/4 m cada uno. Se obtienen 10 trozos completos y sobran 2/3 m de cinta». Un colega revisa la clave, está de acuerdo con los 10 trozos, pero le objeta el sobrante. ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener la clave, pues la parte fraccionaria del cociente 8 ÷ 3/4 = 10 2/3 es la cinta que sobra, medida en metros.",
+        "explicacion": "Incorrecta. El cociente 10 2/3 cuenta trozos, no metros: su parte fraccionaria dice que lo que queda alcanza para 2/3 de un trozo. Leerla en metros cambia de unidad sin justificación."
+      },
+      {
+        "id": "B",
+        "texto": "Corregir la clave: sobra 1/2 m, pues el 2/3 es la parte de un trozo de 3/4 m que se forma con lo que queda.",
+        "explicacion": "Correcta. Los 10 trozos usan 10 × 3/4 = 7,5 m, y 8 − 7,5 = 0,5 m. Coincide con 2/3 de un trozo: 2/3 × 3/4 = 1/2 m. El colega tiene razón."
+      },
+      {
+        "id": "C",
+        "texto": "Corregir la clave: sobran 2 m, pues al expresar los 8 m en cuartos, 32 ÷ 3 da 10 trozos con residuo 2.",
+        "explicacion": "Incorrecta. La división 32 ÷ 3 es correcta, pero el residuo 2 está en cuartos de metro, la unidad en que se expresaron los 8 m: 2/4 = 1/2 m, no 2 m."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener la clave, pues al comprobar, los 10 trozos de 3/4 m y el sobrante de 2/3 m suman los 8 m de la cinta.",
+        "explicacion": "Incorrecta. La comprobación no cierra: 10 × 3/4 + 2/3 = 7,5 + 0,666… ≈ 8,17 m, más de lo que mide la cinta. Al hacer la suma se ve que el sobrante de 2/3 m es imposible."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el cociente 8 ÷ 3/4 = 32/3 = 10 2/3 se mide en trozos de 3/4 m, no en metros. Regla: en una división de medida, la parte entera da los trozos completos y la parte fraccionaria es una fracción del divisor; el sobrante en metros es esa fracción por la longitud del trozo, o el dividendo menos lo usado. Cálculo: 8 − 10 × 3/4 = 1/2 m = 2/3 × 3/4 m. La objeción del colega es correcta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: reparto inversamente proporcional",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Justifico el uso de representaciones y procedimientos en situaciones de proporcionalidad directa e inversa.",
+    "pregunta": "Para una clase de séptimo grado, una docente plantea: «El colegio entregará $620.000 en materiales a tres cursos, repartidos en forma inversamente proporcional al número de llegadas tarde que acumuló cada uno en el mes: el curso A tuvo 2, el curso B tuvo 3 y el curso C tuvo 5». Antes de la clase, la docente calcula lo que corresponde al curso B. ¿Cuánto es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$186.000, pues al curso B le corresponden 3 de las 10 partes en que se divide el monto.",
+        "explicacion": "Incorrecta. Reparte en forma directamente proporcional: 2 + 3 + 5 = 10 partes y 620.000 × 3/10 = 186.000. Así, el curso con más llegadas tarde recibiría más."
+      },
+      {
+        "id": "B",
+        "texto": "$206.667, pues al curso B le corresponde el monto dividido entre sus 3 llegadas tarde.",
+        "explicacion": "Incorrecta. Usa el inverso de 3 sin normalizar: 620.000 ÷ 3 ≈ 206.667. Si se hace lo mismo con A (310.000) y con C (124.000), el total, unos $640.667, supera el monto que se reparte."
+      },
+      {
+        "id": "C",
+        "texto": "$217.000, pues al curso B le corresponden 7 de las 20 partes en que se divide el monto.",
+        "explicacion": "Incorrecta. Cambia la proporcionalidad inversa por una complementaria: resta cada dato de 10 (8, 7 y 5 partes, 20 en total). Esas partes no son inversamente proporcionales a 2, 3 y 5: el producto parte × dato no es constante (8 × 2 = 16, pero 7 × 3 = 21)."
+      },
+      {
+        "id": "D",
+        "texto": "$200.000, pues al curso B le corresponden 10 de las 31 partes en que se divide el monto.",
+        "explicacion": "Correcta. Las partes son proporcionales a 1/2, 1/3 y 1/5, es decir, a 15/30, 10/30 y 6/30: 15, 10 y 6 partes, 31 en total. Cada parte vale 620.000 ÷ 31 = 20.000 y B recibe 10 × 20.000 = 200.000 (A, 300.000; C, 120.000)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el reparto es inversamente proporcional a 2, 3 y 5. Regla: repartir en forma inversamente proporcional a unos números es repartir en forma directamente proporcional a sus inversos; el producto parte × dato queda constante. Cálculo: 1/2, 1/3 y 1/5 equivalen a 15/30, 10/30 y 6/30; 620.000 ÷ 31 = 20.000; B recibe 200.000. Comprobación: 300.000 × 2 = 200.000 × 3 = 120.000 × 5 = 600.000.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: porcentajes sucesivos e inversos (precio antes de dos aumentos)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
+    "pregunta": "En séptimo grado, un docente prepara la clave de este problema: «El precio de un par de tenis subió un 10 % en marzo y, sobre ese nuevo precio, subió un 20 % en agosto. Ahora cuestan $264.000. ¿Cuánto costaban antes de marzo?». ¿Cuál es la respuesta correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$200.000, pues el valor de partida quedó multiplicado por 1,1 y luego por 1,2, es decir, por 1,32.",
+        "explicacion": "Correcta. Cada subida multiplica por su factor: P × 1,1 × 1,2 = 1,32P = 264.000, así que P = 264.000 ÷ 1,32 = 200.000. Comprobación: 200.000 → 220.000 → 264.000."
+      },
+      {
+        "id": "B",
+        "texto": "$203.077, pues las dos subidas suman un 30 % y el precio de ahora es el 130 % del de antes.",
+        "explicacion": "Incorrecta. Suma los porcentajes como si se aplicaran sobre la misma base: 264.000 ÷ 1,3 ≈ 203.077. La segunda subida se aplica sobre un precio ya aumentado, así que el aumento total es del 32 %, no del 30 %."
+      },
+      {
+        "id": "C",
+        "texto": "$190.080, pues al precio de ahora se le resta primero el 20 % y al resultado se le resta el 10 %.",
+        "explicacion": "Incorrecta. Deshace cada subida restando el mismo porcentaje sobre el precio de llegada: 264.000 × 0,8 × 0,9 = 190.080. Restar el 20 % no deshace un aumento del 20 %, porque las bases son distintas: hay que dividir entre 1,2."
+      },
+      {
+        "id": "D",
+        "texto": "$184.800, pues las dos subidas suman un 30 %, que se le descuenta al precio de ahora.",
+        "explicacion": "Incorrecta. Junta los dos errores: suma los porcentajes y los descuenta del precio final: 264.000 × 0,7 = 184.800."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el segundo aumento se calcula sobre el precio ya aumentado y se conoce el precio final. Regla: aumentos sucesivos del a % y del b % equivalen a multiplicar por (1 + a/100)(1 + b/100); para volver al precio de partida se divide entre ese factor. Cálculo: 1,1 × 1,2 = 1,32 y 264.000 ÷ 1,32 = 200.000. Sumar los porcentajes o restarlos sobre el precio final da 203.077, 190.080 o 184.800.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: propiedades de la desigualdad en los racionales (lo que vale con positivos y falla con negativos)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Reconozco y generalizo propiedades de las relaciones entre números racionales (simétrica, transitiva, etc.) y de las operaciones entre ellos (conmutativa, asociativa, etc.) en diferentes contextos. [...] Resuelvo y formulo problemas utilizando propiedades básicas de la teoría de números, como las de la igualdad, las de las distintas formas de la desigualdad y las de la adición, sustracción, multiplicación, división y potenciación.",
+    "pregunta": "Para cerrar una unidad sobre el orden en los números racionales, un docente de séptimo grado prepara cuatro tarjetas con afirmaciones sobre dos racionales a y b tales que a < b. Quiere que exactamente una de ellas se cumpla con cualquier pareja de racionales que cumpla esa condición, y que cada una de las otras tres falle con al menos una pareja. ¿Cuál es la tarjeta que se cumple con cualquier pareja?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "a² < b²",
+        "explicacion": "Incorrecta. Se cumple si a y b no son negativos, pero falla con negativos: −3 < 1 y, sin embargo, (−3)² = 9 no es menor que 1² = 1."
+      },
+      {
+        "id": "B",
+        "texto": "1/b < 1/a, si a y b son distintos de cero",
+        "explicacion": "Incorrecta. Se cumple si a y b tienen el mismo signo, pero falla si tienen signos distintos: −2 < 1 y 1/1 = 1 no es menor que 1/(−2) = −0,5."
+      },
+      {
+        "id": "C",
+        "texto": "a < (a + b)/2",
+        "explicacion": "Correcta. De a < b, al sumar a en los dos lados, se obtiene 2a < a + b, y al dividir entre 2, que es positivo, se conserva el orden: a < (a + b)/2. Solo se usan propiedades válidas para todos los racionales."
+      },
+      {
+        "id": "D",
+        "texto": "ab < b²",
+        "explicacion": "Incorrecta. Equivale a multiplicar a < b por b, lo que conserva el orden solo si b es positivo. Con a = −3 y b = −1: ab = 3 y b² = 1, y 3 no es menor que 1."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: a y b son racionales cualesquiera, también negativos o de distinto signo. Regla: sumar un mismo número a los dos lados de una desigualdad, o multiplicarlos o dividirlos por un positivo, conserva el orden; multiplicar por un número de signo desconocido, elevar al cuadrado o tomar inversos no lo conservan en todos los casos. Contraejemplos: (−3, 1) para a² < b²; (−2, 1) para 1/b < 1/a; (−3, −1) para ab < b². En cambio, 2a < a + b da a < (a + b)/2.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: justificar el producto de dos enteros negativos (más allá de la regla de los signos)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Justifico procedimientos aritméticos utilizando las relaciones y propiedades de las operaciones.",
+    "pregunta": "En séptimo grado, los estudiantes aplican sin error la regla «menos por menos da más», pero cuando el docente pregunta por qué (−3) × (−4) es 12 y no −12, todos responden: «porque así es la regla». El docente quiere que el resultado deje de ser un acto de fe para el grupo. ¿Qué actividad es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Representar (−3) × (−4) en la recta numérica como tres saltos de 4 unidades hacia la izquierda desde el cero y leer el punto de llegada.",
+        "explicacion": "Incorrecta. Es activa, pero el modelo está mal aplicado: tres saltos de −4 representan 3 × (−4) y llegan a −12. No muestra qué significa multiplicar por −3 y contradice el resultado que se quiere justificar."
+      },
+      {
+        "id": "B",
+        "texto": "Mostrar en el tablero 3 × (−4) = −12, 2 × (−4) = −8, 1 × (−4) = −4 y 0 × (−4) = 0, y pedir que continúen la serie con −1, −2 y −3.",
+        "explicacion": "Correcta. Cada vez que el primer factor baja en 1, el producto aumenta en 4. Mantener esa regularidad, que es la que exige la propiedad distributiva, lleva a (−1)(−4) = 4, (−2)(−4) = 8 y (−3)(−4) = 12. El resultado se apoya en relaciones que el grupo ya conoce."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que comprueben con la calculadora veinte productos de dos números negativos y registren en una tabla que todos los resultados son positivos.",
+        "explicacion": "Incorrecta. Es activa y sirve para confirmar una conjetura, pero no la justifica: la calculadora aplica la misma regla, y veinte casos muestran qué pasa, no por qué pasa."
+      },
+      {
+        "id": "D",
+        "texto": "Mostrar la analogía con la doble negación: así como «no es cierto que no llovió» significa que llovió, dos signos menos se anulan.",
+        "explicacion": "Incorrecta. La analogía es lingüística, no matemática: la doble negación no tiene relación con las propiedades de las operaciones y, además, sugiere que (−3) + (−4) también debería dar un resultado positivo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo ya aplica la regla; lo que falta es entender por qué. Regla del área: el producto de dos negativos es positivo para que se conserven las propiedades de las operaciones, en especial la distributiva; la serie 3 × (−4), 2 × (−4), 1 × (−4), 0 × (−4) crece de 4 en 4 y su continuación da (−3)(−4) = 12. La recta con tres saltos de −4 da −12, la calculadora solo confirma casos y la doble negación es una analogía sin base matemática.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: comparación de razones (concentración de dos mezclas)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Utilizo números racionales, en sus distintas expresiones (fracciones, razones, decimales o porcentajes) para resolver problemas en contextos de medida. [...] Justifico el uso de representaciones y procedimientos en situaciones de proporcionalidad directa e inversa.",
+    "pregunta": "En séptimo grado, una docente prepara dos jarras de jugo: en la jarra 1 mezcla 2 vasos de concentrado de naranja con 3 vasos de agua, y en la jarra 2, 3 vasos de concentrado con 5 de agua. Pregunta en cuál el jugo sabe más a naranja, y casi todo el grupo elige la jarra 2 «porque tiene más concentrado». ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir que agreguen a la jarra 1 un vaso de concentrado y dos de agua, para que quede con las mismas cantidades de la jarra 2, y comparen el sabor de ambas.",
+        "explicacion": "Incorrecta. Es activa, pero lo que se agrega (1 de concentrado por 2 de agua) está más diluido que la jarra 1 y cambia su sabor: la comparación final ya no dice nada de las jarras originales. Refuerza la idea de igualar cantidades en vez de comparar relaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Organizar una prueba a ciegas en la que cada estudiante pruebe los dos jugos, y contar luego los votos por el que sabe más a naranja.",
+        "explicacion": "Incorrecta. Es activa, pero la diferencia es pequeña (2/5 = 40 % frente a 3/8 = 37,5 % de concentrado) y el gusto no la detecta con seguridad. Una votación no cuestiona la idea de mirar una sola cantidad ni construye la comparación de razones."
+      },
+      {
+        "id": "C",
+        "texto": "Mostrarles que la jarra 2 tiene 2 vasos más de agua que de concentrado y la jarra 1 solo uno, y que por eso la 1 sabe más a naranja.",
+        "explicacion": "Incorrecta. Llega a la jarra correcta con un razonamiento aditivo: compara diferencias y no razones. Ese criterio falla, por ejemplo, con 2:3 y 4:6, que saben igual aunque las diferencias sean 1 y 2."
+      },
+      {
+        "id": "D",
+        "texto": "Construir con ellos una tabla de mezclas que saben igual a cada jarra, duplicando y triplicando, hasta igualar el concentrado, y comparar el agua.",
+        "explicacion": "Correcta. Las mezclas 2:3, 4:6 y 6:9 saben igual a la jarra 1, y 3:5 y 6:10, igual a la jarra 2. Con 6 vasos de concentrado en las dos, la jarra 2 lleva más agua (10 frente a 9), así que la 1 sabe más a naranja. Se compara la relación entre las cantidades, no una sola de ellas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el grupo compara solo los vasos de concentrado. Regla: la concentración es una razón (concentrado por agua, o concentrado sobre el total); dos mezclas se comparan con razones equivalentes o con fracciones: 2/5 = 0,4 > 3/8 = 0,375. La tabla de mezclas equivalentes iguala una cantidad y deja ver la otra. Igualar cantidades agregando líquido, votar por el sabor o comparar diferencias no construyen la idea de razón.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: aumento y rebaja sucesivos del mismo porcentaje",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
+    "pregunta": "En séptimo grado, un docente cuenta que una tienda subió un 20 % el precio de unos audífonos y, un mes después, lo bajó un 20 %. Casi todo el grupo afirma que los audífonos volvieron a costar lo mismo que al comienzo. ¿Qué intervención es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proponer un precio inicial, como $50.000, y pedir que calculen cada cambio sobre el precio de ese momento y comparen el final con el inicial.",
+        "explicacion": "Correcta. Con $50.000, el aumento lleva el precio a $60.000, y la rebaja del 20 % se calcula sobre $60.000 ($12.000), así que el precio final es $48.000. Calcular paso a paso con la base de cada momento muestra que los dos 20 % no son la misma cantidad."
+      },
+      {
+        "id": "B",
+        "texto": "Proponer un precio inicial, como $100.000, y pedir que calculen el aumento y la rebaja sobre ese mismo precio y verifiquen si el resultado coincide.",
+        "explicacion": "Incorrecta. Es activa, pero calcular las dos variaciones sobre el precio inicial reproduce el error: +$20.000 y −$20.000 devuelven $100.000. La rebaja se aplica sobre el precio ya aumentado."
+      },
+      {
+        "id": "C",
+        "texto": "Representar el +20 % y el −20 % en una recta de porcentajes como dos saltos de igual longitud, uno hacia adelante y otro hacia atrás.",
+        "explicacion": "Incorrecta. Es activa, pero dibujar los dos porcentajes como saltos iguales trata el 20 % como una cantidad fija, que es justamente la idea equivocada: el segundo 20 % se toma de una base mayor."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarles que los porcentajes sucesivos no se suman y que el precio final es el 96 % del inicial, para que lo apliquen en otros ejercicios.",
+        "explicacion": "Incorrecta. El dato es correcto (1,2 × 0,8 = 0,96), pero entregado como regla no permite que el grupo vea por qué falla su idea; queda como una regla más para memorizar."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la rebaja se calcula sobre el precio ya aumentado. Regla: cada variación porcentual multiplica el valor vigente por su factor; subir y bajar el 20 % equivale a multiplicar por 1,2 × 0,8 = 0,96, es decir, a perder el 4 %. Con un precio concreto, calculado paso a paso, el grupo ve el cambio de base. Calcular las dos variaciones sobre el precio inicial o dibujarlas como saltos iguales refuerza el error.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: límites del modelo de la balanza en ecuaciones con solución negativa",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, texto introductorio (p. 60)", "Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "Este paso de los números naturales a los números enteros positivos y negativos (con el cero como entero) y a los números racionales positivos y negativos (con el cero como racional) no sólo amplía el concepto de número, sino que también obliga a cambios conceptuales en las operaciones y las relaciones entre ellos, configurando así sistemas numéricos diferentes. [...] Resuelvo y formulo problemas utilizando propiedades básicas de la teoría de números, como las de la igualdad, las de las distintas formas de la desigualdad y las de la adición, sustracción, multiplicación, división y potenciación.",
+    "pregunta": "En séptimo grado, un docente usó una balanza de dos platos, con bolsas cerradas de igual peso desconocido y pesas de 1 kg, para que el grupo resolviera ecuaciones como 3x + 2 = x + 8 quitando lo mismo de los dos platos. Ahora quiere que resuelvan 2x + 9 = 3, cuya solución es x = −3, y que el método siga teniendo sentido para el grupo. ¿Qué decisión es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Modelar la ecuación en la balanza, con 2 bolsas y 9 pesas en un plato y 3 pesas en el otro, y quitar 3 pesas de cada plato para despejar x.",
+        "explicacion": "Incorrecta. La balanza no puede quedar equilibrada: 2 bolsas y 9 kg pesan más que 3 kg, cualquiera que sea el peso de las bolsas. Quitar 3 pesas deja 2 bolsas y 6 kg frente a un plato vacío. Ese modelo solo representa cantidades positivas."
+      },
+      {
+        "id": "B",
+        "texto": "Pasar pesas de un plato al otro para que la balanza muestre 2 bolsas y 3 pesas frente a 9 pesas, y resolver 2x + 3 = 9 como antes.",
+        "explicacion": "Incorrecta. Es activa, pero cambia la ecuación: mover pesas de un plato al otro sin cambiar el signo convierte 2x + 9 = 3 en 2x + 3 = 9, cuya solución es 3 y no −3. Refuerza un error de transposición."
+      },
+      {
+        "id": "C",
+        "texto": "Modelar la ecuación con fichas de dos colores, positivas y negativas, en las que una de cada color forma un cero, y operar igual en ambos lados.",
+        "explicacion": "Correcta. Las fichas con pares que se anulan representan enteros. Se agregan 9 fichas negativas a cada lado: a la izquierda, 9 positivas y 9 negativas forman cero; a la derecha, 3 positivas y 9 negativas dejan 6 negativas. Queda 2x = −6 y x = −3, y se conserva la idea de hacer lo mismo en los dos lados."
+      },
+      {
+        "id": "D",
+        "texto": "Presentar la regla «lo que está sumando pasa a restar al otro lado» y resolver con ella varias ecuaciones con soluciones negativas.",
+        "explicacion": "Incorrecta. La regla da el resultado, pero reemplaza la comprensión por un procedimiento sin justificación y abandona la idea de igualdad que el grupo había construido con la balanza."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 2x + 9 = 3 lleva a 2x = −6, una cantidad que no puede representarse con pesos. Regla: la balanza solo modela cantidades positivas; para ecuaciones con enteros hace falta un modelo con opuestos, como fichas de dos colores en el que un positivo y un negativo forman cero, y sobre él se aplican las propiedades de la igualdad. Forzar la balanza, mover pesas sin cambiar el signo o dar la regla de transposición no extienden el método con sentido.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-050",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: orden de racionales negativos (comparar por el valor absoluto)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, texto introductorio (p. 60)", "Pensamiento numérico y sistemas numéricos, sexto a séptimo grado"],
+    "texto_fuente": "El concepto de número negativo es el resultado de la cuantificación de ciertos cambios en las medidas de una magnitud, o de la medida relativa de una magnitud con respecto a un punto de referencia, identificado con el cero. [...] Reconozco y generalizo propiedades de las relaciones entre números racionales (simétrica, transitiva, etc.) y de las operaciones entre ellos (conmutativa, asociativa, etc.) en diferentes contextos.",
+    "pregunta": "En séptimo grado, al ordenar de menor a mayor los números −1/2, −3/4 y 1/4, varios estudiantes escriben −1/2 < −3/4 < 1/4. Al preguntarles por qué, responden que «3/4 es más que 1/2». ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ordenan los negativos por su valor absoluto, como si fueran positivos; conviene que los pasen a decimales, −0,5 y −0,75, y comparen las cifras.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero cambiar de representación no toca el error: al comparar 0,75 con 0,5 siguen viendo que el primero «es más» y mantienen el orden por valor absoluto."
+      },
+      {
+        "id": "B",
+        "texto": "Ordenan bien los números, pero leen el signo «<» al revés; conviene que repasen el significado de los símbolos < y > con números naturales.",
+        "explicacion": "Incorrecta. Su explicación muestra que comparan las cantidades sin signo, no que lean mal el símbolo. Además, con el símbolo invertido 1/4 sería el menor de los tres, lo que no corresponde a lo que dicen."
+      },
+      {
+        "id": "C",
+        "texto": "Ordenan los negativos por su valor absoluto, como si fueran positivos; conviene darles la regla de que, entre negativos, es menor el de mayor valor absoluto.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la regla dada de antemano no se apoya en ninguna representación del número negativo; queda como otra regla de signos para memorizar."
+      },
+      {
+        "id": "D",
+        "texto": "Ordenan los negativos por su valor absoluto, como si fueran positivos; conviene ubicarlos en una recta graduada en cuartos y leerlos de izquierda a derecha.",
+        "explicacion": "Correcta. En la recta, −3/4 queda a la izquierda de −1/2: está más lejos del cero, pero del lado negativo. Leer de izquierda a derecha da −3/4 < −1/2 < 1/4 y le da sentido al orden de los negativos como posiciones respecto del cero."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los estudiantes justifican el orden con «3/4 es más que 1/2», es decir, comparan los valores absolutos. Regla: en los racionales, a < b si a está a la izquierda de b en la recta; entre dos negativos es menor el de mayor valor absoluto: −3/4 < −1/2. La recta graduada da sentido a ese orden; pasar a decimales mantiene el error y la regla dicha de antemano no lo explica.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: ecuación con fracciones sucesivas (fracción de lo que queda)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, octavo a noveno grado"],
+    "texto_fuente": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
+    "pregunta": "Una docente de octavo grado prepara la clave de este problema: «Del dinero que recogió el curso para la salida pedagógica, 1/3 se gastó en el transporte y 1/4 de lo que quedó, en la alimentación. Los $450.000 restantes se usaron en las entradas al museo. ¿Cuánto dinero se recogió?». ¿Cuál es la respuesta correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.080.000, pues los gastos suman 1/3 + 1/4 = 7/12 del dinero recogido y los $450.000 son los 5/12.",
+        "explicacion": "Incorrecta. Calcula los dos gastos sobre el total, pero la alimentación es 1/4 de lo que quedó, no del total: equivale a 1/4 × 2/3 = 1/6 del dinero recogido."
+      },
+      {
+        "id": "B",
+        "texto": "$900.000, pues tras el transporte quedan 2/3 del dinero, la comida se lleva 1/4 de eso y los $450.000 son la mitad.",
+        "explicacion": "Correcta. Si x es el dinero recogido, tras el transporte quedan 2/3 x; la alimentación se lleva 1/4 de eso y quedan 3/4 × 2/3 x = x/2. Entonces x/2 = 450.000 y x = 900.000. Comprobación: 900.000 − 300.000 = 600.000 y 600.000 − 150.000 = 450.000."
+      },
+      {
+        "id": "C",
+        "texto": "$750.000, pues a los $450.000 se les suma su cuarta parte y, al resultado obtenido, se le suma su tercera parte.",
+        "explicacion": "Incorrecta. Deshace cada gasto sumando la misma fracción de lo que hay al final: 450.000 + 112.500 = 562.500 y 562.500 + 187.500 = 750.000. Para deshacer «quitar 1/4» hay que dividir entre 3/4, no sumar 1/4."
+      },
+      {
+        "id": "D",
+        "texto": "$600.000, pues los $450.000 son las 3/4 partes de lo que quedó después de pagar el transporte.",
+        "explicacion": "Incorrecta. Deshace bien la alimentación (450.000 ÷ 3/4 = 600.000), pero se detiene: 600.000 es lo que quedó tras el transporte, es decir, 2/3 del total, y no el dinero recogido."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la alimentación es una fracción de lo que quedó, no del total. Regla: aplicar fracciones sucesivas equivale a multiplicar las fracciones que van quedando: (1 − 1/3)(1 − 1/4) = 2/3 × 3/4 = 1/2. Ecuación: x/2 = 450.000, x = 900.000. Sumar las fracciones sobre el total da 1.080.000; deshacer sumando fracciones da 750.000, y deshacer un solo paso, 600.000.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: simplificación de una expresión racional y valores excluidos",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"],
+    "texto_fuente": "Construyo expresiones algebraicas equivalentes a una expresión algebraica dada.",
+    "pregunta": "Un docente de noveno grado prepara la clave de un ejercicio: simplificar la expresión (x² − 4)/(x² + x − 6) e indicar para qué valores de x la expresión simplificada y la original toman el mismo valor. ¿Cuál es la clave correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "(x + 2)/(x + 3), para todo x distinto de 2 y de −3",
+        "explicacion": "Correcta. x² − 4 = (x − 2)(x + 2) y x² + x − 6 = (x − 2)(x + 3). Al cancelar el factor x − 2 queda (x + 2)/(x + 3). La original no está definida en x = 2 ni en x = −3, así que solo fuera de esos dos valores las dos expresiones coinciden; en x = 2 la simplificada vale 4/5 y la original no existe."
+      },
+      {
+        "id": "B",
+        "texto": "(x + 2)/(x + 3), para todo x distinto de −3",
+        "explicacion": "Incorrecta. Excluye solo el cero del denominador simplificado y olvida el factor cancelado: en x = 2 la original da 0/0 y no está definida, mientras que la simplificada vale 4/5."
+      },
+      {
+        "id": "C",
+        "texto": "(x + 2)/(x + 3), para todo x distinto de −2 y de −3",
+        "explicacion": "Incorrecta. Excluye x = −2, donde se anula el numerador; ahí las dos expresiones valen 0 y coinciden. El valor que debía excluirse es x = 2, la raíz del factor cancelado."
+      },
+      {
+        "id": "D",
+        "texto": "(x − 2)/(x − 3), para todo x distinto de 3 y de −2",
+        "explicacion": "Incorrecta. Factoriza mal el denominador: (x − 3)(x + 2) = x² − x − 6, no x² + x − 6. Con x = 1, la original vale −3/−4 = 3/4 y esta expresión, −1/−2 = 1/2."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el factor que se cancela, x − 2, se anula en x = 2. Regla: dos expresiones racionales son equivalentes solo en los valores donde ambas están definidas; al simplificar se conservan las restricciones de la expresión original. Cálculo: (x − 2)(x + 2)/[(x − 2)(x + 3)] = (x + 2)/(x + 3), con x ≠ 2 y x ≠ −3. Olvidar el factor cancelado, excluir la raíz del numerador o factorizar con el signo cambiado lleva a los distractores.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Saber: inecuación lineal en contexto (nota mínima con pesos porcentuales)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento variacional y sistemas algebraicos y analíticos, texto introductorio (p. 68)"],
+    "texto_fuente": "Esto se logra a través de la elaboración e interpretación de ciertas representaciones matemáticas –gráficas, tablas, ecuaciones, inecuaciones o desigualdades, etc.– que permiten tratar con situaciones de variación y dependencia en la resolución de problemas.",
+    "pregunta": "En un colegio, la nota de matemáticas de cada período se calcula así: tres evaluaciones parciales valen el 20 % cada una y la prueba final vale el 40 %, en una escala de 1,0 a 5,0. Una estudiante de noveno grado obtuvo 3,0; 2,5 y 3,5 en las parciales y quiere saber con qué notas en la prueba final terminaría el período con al menos 3,5. Su docente le ayuda a plantear y resolver la inecuación. ¿Cuál es la respuesta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguna, pues para que la prueba final aporte 3,5 necesitaría un 8,75, que supera el máximo de la escala.",
+        "explicacion": "Incorrecta. Plantea 0,4x ≥ 3,5 y olvida lo que ya aportan las parciales: 0,2 × (3,0 + 2,5 + 3,5) = 1,8."
+      },
+      {
+        "id": "B",
+        "texto": "Solo un 5,0, pues el promedio de las cuatro notas debe llegar a 3,5 y eso exige la nota máxima.",
+        "explicacion": "Incorrecta. Promedia las cuatro notas con el mismo peso, (9 + x)/4 ≥ 3,5, cuando la prueba final vale el doble que cada parcial."
+      },
+      {
+        "id": "C",
+        "texto": "Cualquier nota desde 4,0, pues el promedio de las parciales, 3,0, y la final deben promediar 3,5.",
+        "explicacion": "Incorrecta. Da a las parciales y a la final el mismo peso, 50 % y 50 %: (3,0 + x)/2 ≥ 3,5. Las parciales pesan en conjunto el 60 % y la final el 40 %."
+      },
+      {
+        "id": "D",
+        "texto": "Cualquier nota desde 4,25, pues las parciales aportan 1,8 y a la final le corresponde aportar 1,7 o más.",
+        "explicacion": "Correcta. 0,2 × 9 + 0,4x ≥ 3,5 → 1,8 + 0,4x ≥ 3,5 → 0,4x ≥ 1,7 → x ≥ 4,25. Con la escala, las notas posibles van de 4,25 a 5,0. Comprobación: 1,8 + 0,4 × 4,25 = 3,5."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las parciales pesan 20 % cada una y la final 40 %. Regla: la nota es un promedio ponderado y la condición «al menos 3,5» se traduce en una inecuación lineal, que se resuelve con las propiedades de la desigualdad (dividir entre 0,4, que es positivo, conserva el sentido). Cálculo: 1,8 + 0,4x ≥ 3,5, de donde x ≥ 4,25. Los distractores olvidan el aporte de las parciales o cambian los pesos.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: disminución porcentual compuesta (depreciación) frente a disminución simple",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, octavo a noveno grado"],
+    "texto_fuente": "Identifico y utilizo la potenciación, la radicación y la logaritmación para representar situaciones matemáticas y no matemáticas y para resolver problemas.",
+    "pregunta": "Un docente de noveno grado modela la depreciación de un computador de $2.500.000 que pierde cada año el 20 % del valor que tenía al comenzar ese año. En la clave escribe: «Al cabo de 3 años vale $1.280.000 y ha perdido el 48,8 % de su valor inicial». Un colega objeta: «Si pierde el 20 % cada año, en 3 años pierde el 60 % y debe valer $1.000.000». ¿Qué debe concluir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el colega tiene razón, pues el porcentaje que se pierde es el mismo cada año y por eso las pérdidas de los tres años se suman.",
+        "explicacion": "Incorrecta. El porcentaje es el mismo, pero la base cambia: el 20 % del segundo año se calcula sobre $2.000.000 y el del tercero sobre $1.600.000. Las pérdidas son 500.000, 400.000 y 320.000, que suman 1.220.000, no 1.500.000."
+      },
+      {
+        "id": "B",
+        "texto": "Que la clave acierta en el valor de $1.280.000, pero no en el porcentaje: la pérdida es del 51,2 %, que corresponde a 0,8³.",
+        "explicacion": "Incorrecta. El valor es correcto, pero 0,8³ = 0,512 es la fracción del valor que se conserva, no la que se pierde: la pérdida es 1 − 0,512 = 0,488, es decir, el 48,8 %."
+      },
+      {
+        "id": "C",
+        "texto": "Que la clave es correcta, pues el valor queda multiplicado por 0,8 cada año, y 0,8³ = 0,512 del valor inicial.",
+        "explicacion": "Correcta. Cada año el valor se multiplica por 1 − 0,20 = 0,8: 2.500.000 × 0,8³ = 2.500.000 × 0,512 = 1.280.000. La pérdida es 1 − 0,512 = 0,488 = 48,8 %. La objeción del colega no procede."
+      },
+      {
+        "id": "D",
+        "texto": "Que los dos se equivocan, pues el valor es 2.500.000 ÷ 1,2³, unos $1.446.759, y la pérdida es del 42,1 %.",
+        "explicacion": "Incorrecta. Dividir entre 1,2 deshace un aumento del 20 %; no aplica una pérdida del 20 %. Perder el 20 % es multiplicar por 0,8, y 0,8 no es igual a 1/1,2 ≈ 0,833."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: cada pérdida del 20 % se calcula sobre el valor del año anterior. Regla: una disminución porcentual del r % repetida n veces multiplica el valor por (1 − r/100)ⁿ. Cálculo: 0,8³ = 0,512; 2.500.000 × 0,512 = 1.280.000; pérdida total: 48,8 %. El colega suma los porcentajes como si la base no cambiara; leer 0,512 como pérdida o dividir entre 1,2³ son los otros errores.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Saber: ecuación lineal en un problema de mezclas",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, octavo a noveno grado"],
+    "texto_fuente": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+    "pregunta": "Para una clase de noveno grado, una docente plantea: «Un tostador tiene 12 kg de café de $18.000 el kilo y quiere mezclarlos con café de $26.000 el kilo para vender la mezcla a $21.000 el kilo, de modo que el valor de la mezcla sea igual al de los dos cafés que la forman. ¿Cuántos kilos del café de $26.000 debe usar?». Antes de la clase, resuelve el problema. ¿Cuál es la respuesta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "7,2 kg, pues los $3.000 de menos por kilo del café barato se compensan con los $5.000 de más por kilo del caro.",
+        "explicacion": "Correcta. Valor: 12 × 18.000 + 26.000x = 21.000(12 + x) → 216.000 + 26.000x = 252.000 + 21.000x → 5.000x = 36.000 → x = 7,2. Equivale a 12 × 3.000 = 5.000x. Comprobación: (216.000 + 187.200) ÷ 19,2 = 21.000."
+      },
+      {
+        "id": "B",
+        "texto": "20 kg, pues por cada 3 kg del café barato se necesitan 5 kg del caro para llegar al precio de la mezcla.",
+        "explicacion": "Incorrecta. Invierte la razón: las cantidades son inversamente proporcionales a la distancia de cada precio al de la mezcla, así que van 5 kg del barato por cada 3 kg del caro, no al revés. Con 20 kg del caro, la mezcla valdría (216.000 + 520.000) ÷ 32 = 23.000 el kilo."
+      },
+      {
+        "id": "C",
+        "texto": "4,5 kg, pues la distancia de $3.000 entre la mezcla y el barato es 3/8 de los $8.000 que separan a los dos cafés.",
+        "explicacion": "Incorrecta. Es cierto que 3.000 es 3/8 de 8.000, y por eso el café caro es 3/8 de la mezcla total, no de los 12 kg del barato: x = 3/8 (12 + x) da 7,2. Con 4,5 kg, la mezcla valdría unos $20.182 el kilo."
+      },
+      {
+        "id": "D",
+        "texto": "7,5 kg, pues la distancia de $5.000 entre el caro y la mezcla es 5/8 de los $8.000 que separan a los dos cafés.",
+        "explicacion": "Incorrecta. 5/8 es la fracción que el café barato ocupa en la mezcla total; aplicarla a los 12 kg no da los kilos del caro. Con 7,5 kg, la mezcla valdría (216.000 + 195.000) ÷ 19,5 ≈ $21.077 el kilo, no $21.000."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el valor total de la mezcla debe ser igual a la suma de los valores de los dos cafés. Ecuación: 12 × 18.000 + 26.000x = 21.000(12 + x), de donde 5.000x = 36.000 y x = 7,2 kg. Equivale a compensar 12 kg × $3.000 de menos con x kg × $5.000 de más. Invertir la razón da 20 kg; aplicar 3/8 o 5/8 a los 12 kg, en lugar de a la mezcla, da 4,5 o 7,5 kg.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: tarea para pasar de casos observados a una generalización algebraica (cuadros del calendario)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"],
+    "texto_fuente": "Uso procesos inductivos y lenguaje algebraico para formular y poner a prueba conjeturas.",
+    "pregunta": "Un docente de noveno grado quiere que sus estudiantes pasen de observar una regularidad en algunos casos a sostenerla para todos. Escoge esta situación: en un cuadro de 2 × 2 días de cualquier mes del calendario se multiplican los números de cada diagonal y se comparan los dos productos. ¿Cuál de estas tareas es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Revisar 30 cuadros de distintos meses, registrar la diferencia entre los productos y dar por cierta la regularidad para todos los cuadros si ninguno la contradice.",
+        "explicacion": "Incorrecta. Es activa y produce una conjetura (la diferencia es 7), pero muchos casos no la prueban: no explican por qué ocurre ni garantizan que valga en todos los cuadros."
+      },
+      {
+        "id": "B",
+        "texto": "Revisar varios cuadros, enunciar lo que observan y escribir los cuatro números como n, n + 1, n + 7 y n + 8 para comparar los productos de las diagonales.",
+        "explicacion": "Correcta. Si n es el número de arriba a la izquierda, los otros son n + 1, n + 7 y n + 8, porque una semana tiene 7 días. Entonces (n + 1)(n + 7) − n(n + 8) = n² + 8n + 7 − n² − 8n = 7 para cualquier n, y la conjetura queda probada en general."
+      },
+      {
+        "id": "C",
+        "texto": "Revisar varios cuadros, enunciar lo que observan y escribir los cuatro números como a, b, c y d para probar que ad − bc da el mismo valor en cualquier cuadro.",
+        "explicacion": "Incorrecta. Es activa, pero con cuatro letras independientes se pierde la relación entre los números del cuadro: ad − bc no tiene un valor fijo y la prueba no puede hacerse."
+      },
+      {
+        "id": "D",
+        "texto": "Presentar en el tablero la igualdad (n + 1)(n + 7) − n(n + 8) = 7 y pedir que la verifiquen con tres cuadros de meses diferentes.",
+        "explicacion": "Incorrecta. Entrega la conjetura y su forma algebraica: los estudiantes no la formulan ni construyen la representación, y verificar tres casos solo confirma lo que ya se les dijo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el docente quiere pasar de casos observados a una afirmación válida para todos. Regla: la generalización algebraica representa los datos con una variable que conserva sus relaciones (n, n + 1, n + 7, n + 8) y prueba la conjetura con expresiones equivalentes: (n + 1)(n + 7) − n(n + 8) = 7. Los ejemplos, por muchos que sean, no la prueban; las letras independientes pierden la estructura, y entregar la fórmula salta el proceso.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-057",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: traducción al lenguaje algebraico (error de inversión por usar las letras como etiquetas)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento variacional y sistemas algebraicos y analíticos, texto introductorio (p. 68)"],
+    "texto_fuente": "Un aspecto importante en el aprendizaje del álgebra corresponde a la utilización con sentido y al estudio formal de los objetos algebraicos (variables, constantes, parámetros, términos, fórmulas y otras expresiones algebraicas como las ecuaciones e inecuaciones, los sistemas de ecuaciones o de inecuaciones, por ejemplo)",
+    "pregunta": "En octavo grado, un docente pide escribir una ecuación para este enunciado: «En el colegio hay 25 estudiantes por cada docente», con E como el número de estudiantes y D como el número de docentes. La mayoría escribe 25E = D. ¿Qué interpretación del error y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Usan E y D como abreviaturas de «estudiantes» y «docentes», no como números; conviene que, con 4 docentes, calculen los estudiantes y prueben esos valores en su ecuación.",
+        "explicacion": "Correcta. La ecuación correcta es E = 25D. Con 4 docentes hay 100 estudiantes, y en 25E = D daría 2.500 = 4, que es falso. Probar valores obliga a leer E y D como cantidades y muestra que el 25 multiplica al número de docentes, que es el menor."
+      },
+      {
+        "id": "B",
+        "texto": "Usan E y D como abreviaturas de «estudiantes» y «docentes», no como números; conviene que traduzcan el enunciado palabra por palabra, respetando el orden en que aparece cada término.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero traducir palabra por palabra produce justamente «25 E por cada D», es decir, 25E = D: es el origen del error, no su remedio."
+      },
+      {
+        "id": "C",
+        "texto": "Confunden la multiplicación con la división; conviene que escriban la relación como el cociente D/E = 25 y la comparen con la ecuación que escribieron.",
+        "explicacion": "Incorrecta. No hay una confusión entre operaciones, y D/E = 25 también invierte la relación (equivale a D = 25E). La razón correcta es E/D = 25."
+      },
+      {
+        "id": "D",
+        "texto": "No aplican la propiedad simétrica de la igualdad; conviene mostrarles que 25E = D equivale a D = 25E y pedirles que despejen E.",
+        "explicacion": "Incorrecta. La propiedad simétrica no está en juego: escribir 25E = D como D = 25E y despejar E = D/25 conserva la relación invertida."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los estudiantes escriben 25E = D, con el 25 junto a la letra de los estudiantes, como en el enunciado. Regla del área: en una ecuación las letras representan cantidades (variables), no objetos; si hay 25 estudiantes por cada docente, el número de estudiantes es 25 veces el de docentes: E = 25D. Sustituir valores razonables (4 docentes, 100 estudiantes) obliga a leer las letras como números. Traducir palabra por palabra, invertir la razón o despejar no corrigen el error.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento numérico y sistemas numéricos",
+    "subtema": "Didáctica: evaluar una expresión algebraica con un valor negativo (−3² frente a (−3)²)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, octavo a noveno grado"],
+    "texto_fuente": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+    "pregunta": "En octavo grado, para evaluar 2x² − 5x con x = −3, varios estudiantes escriben: 2 · −3² − 5 · −3 = 2 · (−9) + 15 = −3. ¿Qué interpretación del error y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sustituyen sin paréntesis y el cuadrado afecta solo al 3; conviene que repitan el cálculo en una calculadora científica, digitando la expresión tal como la escribieron.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la calculadora aplica la convención de que la potencia va antes que el signo: −3² da −9 y confirma el error en lugar de mostrarlo."
+      },
+      {
+        "id": "B",
+        "texto": "No dominan la ley de los signos; conviene que completen una tabla de productos de enteros, como (−5)(−3) y (−2)(4), y vuelvan a evaluar la expresión.",
+        "explicacion": "Incorrecta. El trabajo muestra que sí dominan la ley de los signos: calcularon bien −5 · −3 = 15. Practicar productos no toca el problema, que está en la sustitución."
+      },
+      {
+        "id": "C",
+        "texto": "No dominan la ley de los signos; conviene que evalúen primero con x = 3 y luego cambien el signo de cada término que contiene la x.",
+        "explicacion": "Incorrecta. El diagnóstico no corresponde a lo que hicieron, y el procedimiento reproduce el error: cambiar el signo de 2x² ignora que una potencia par no cambia de signo al cambiar el de x; da −18 + 15 = −3 otra vez."
+      },
+      {
+        "id": "D",
+        "texto": "Sustituyen sin paréntesis y el cuadrado afecta solo al 3; conviene explicar que x² es x · x, reemplazar cada x por (−3) y comparar con lo que obtuvieron.",
+        "explicacion": "Correcta. Con x² = x · x se ve que 2 · (−3)(−3) = 18, y el valor es 18 + 15 = 33. Escribir (−3) entre paréntesis al sustituir muestra que todo el número se eleva al cuadrado, y distingue (−3)² = 9 de −3² = −9."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el producto −5 · −3 = 15 está bien, así que el error no es de signos sino de sustitución: el cuadrado se aplicó solo al 3. Regla: al sustituir una variable por un número negativo, este va entre paréntesis; (−3)² = 9, mientras que −3² = −(3²) = −9 por la convención de prioridad. Cálculo: 2(−3)² − 5(−3) = 18 + 15 = 33. La calculadora con la misma escritura y el cambio de signo de los términos repiten el error.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: inecuaciones lineales (dividir entre un negativo sin invertir el sentido)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento variacional y sistemas algebraicos y analíticos, texto introductorio (p. 68)", "Pensamiento numérico y sistemas numéricos, octavo a noveno grado"],
+    "texto_fuente": "para lo cual es necesario ampliar la notación del lenguaje aritmético y utilizar las propiedades características de los sistemas numéricos (como la conmutativa y la asociativa de la adición y la multiplicación y la distributiva de la multiplicación respecto de la adición, o el carácter simétrico y transitivo de la igualdad y el carácter antisimétrico y transitivo de la desigualdad). [...] Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+    "pregunta": "En noveno grado, un estudiante resuelve la inecuación 5 − 2x > 11 así: −2x > 6, de donde x > −3. Al revisar, la docente nota que hizo los mismos pasos que en una ecuación. ¿Qué interpretación y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Trata la desigualdad como una igualdad al dividir entre −2; conviene que reemplace x = −3 en la inecuación original para comprobar su respuesta.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero −3 es el extremo del conjunto: 5 − 2(−3) = 11 no es mayor que 11, lo que pasa tanto si la solución es x > −3 como si es x < −3. La prueba no distingue el sentido de la desigualdad."
+      },
+      {
+        "id": "B",
+        "texto": "Trata la desigualdad como una igualdad al dividir entre −2; conviene mostrarle que x = 0, de su conjunto, no cumple la inecuación, y que 2 < 5 pero −2 > −5.",
+        "explicacion": "Correcta. x = 0 está en el conjunto que obtuvo, pero 5 − 0 = 5 no es mayor que 11: la respuesta falla. Al ver que 2 < 5 y, sin embargo, −2 > −5, el estudiante entiende por qué multiplicar o dividir entre un negativo invierte el sentido: x < −3."
+      },
+      {
+        "id": "C",
+        "texto": "Se equivoca al restar 11 − 5; conviene que rehaga esa resta en la recta numérica y vuelva a despejar x con el resultado que obtenga.",
+        "explicacion": "Incorrecta. La resta está bien: 11 − 5 = 6. El error aparece en el paso siguiente, al dividir entre −2 sin invertir el sentido de la desigualdad."
+      },
+      {
+        "id": "D",
+        "texto": "Trata la desigualdad como una igualdad al dividir entre −2; conviene mostrarle la regla de invertir el sentido al multiplicar o dividir entre un negativo.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero dar la regla sin que el estudiante vea que su respuesta falla, ni por qué, la deja como un paso más que puede olvidar."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el estudiante dividió entre −2 sin cambiar el sentido y obtuvo x > −3. Regla: multiplicar o dividir los dos lados de una desigualdad por un número negativo invierte el sentido; la solución es x < −3. Probar un valor interior del conjunto obtenido (x = 0) muestra el error, y comparar 2 < 5 con −2 > −5 lo explica. El extremo x = −3 no sirve para decidir el sentido.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-MAT-060",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Matemáticas",
+    "tema": "Pensamiento variacional y sistemas algebraicos y analíticos",
+    "subtema": "Didáctica: pérdida de soluciones al dividir entre una expresión que puede valer cero (objeción correcta)",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": ["Pensamiento numérico y sistemas numéricos, octavo a noveno grado", "Pensamiento variacional y sistemas algebraicos y analíticos, octavo a noveno grado"],
+    "texto_fuente": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos. [...] Construyo expresiones algebraicas equivalentes a una expresión algebraica dada.",
+    "pregunta": "En noveno grado, una estudiante resuelve x² = 5x dividiendo los dos lados entre x y concluye que la ecuación tiene una sola solución, x = 5. Un compañero objeta: «x = 0 también sirve, porque 0² = 5 · 0». ¿Qué valoración y qué intervención son las más adecuadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La objeción es válida; conviene que, al terminar cada ecuación, comprueben también x = 0, por si esa solución quedó por fuera.",
+        "explicacion": "Incorrecta. La valoración es correcta, pero la intervención es un parche: no explica por qué se perdió la solución y falla en otros casos. Por ejemplo, al dividir (x − 2)² = 3(x − 2) entre x − 2 se pierde x = 2, no x = 0."
+      },
+      {
+        "id": "B",
+        "texto": "La objeción no es válida, pues x = 0 anula los dos lados; conviene que comprueben x = 5 en la ecuación original y validen la respuesta.",
+        "explicacion": "Incorrecta. Que x = 0 anule los dos lados es justamente lo que la hace solución: 0 = 0 es una igualdad verdadera. Comprobar x = 5 confirma esa solución, pero no descarta otras."
+      },
+      {
+        "id": "C",
+        "texto": "La objeción es válida; conviene pasar todo a un lado, x² − 5x = 0, factorizar como x(x − 5) = 0 y discutir cuándo un producto vale cero.",
+        "explicacion": "Correcta. Dividir entre x supone que x no es 0, así que esa solución queda por fuera. Con x(x − 5) = 0 y la propiedad de que un producto es cero si y solo si alguno de sus factores lo es, se obtienen x = 0 y x = 5, y se entiende por qué no se divide entre una expresión que puede valer cero."
+      },
+      {
+        "id": "D",
+        "texto": "La objeción no es válida, pues dividir entre lo mismo conserva la igualdad; conviene resolver con ese método otras ecuaciones parecidas.",
+        "explicacion": "Incorrecta. Dividir los dos lados entre un mismo número conserva la igualdad solo si ese número no es cero; dividir entre x excluye el caso x = 0. Repetir el método en otras ecuaciones repite la pérdida de soluciones."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la estudiante dividió entre x, que puede valer 0, y el compañero muestra que x = 0 cumple la ecuación. Regla: dividir los dos lados entre una expresión es válido solo donde esta no se anula; lo seguro es llevar a x² − 5x = 0, factorizar y usar que un producto es cero si y solo si uno de sus factores es cero: x = 0 o x = 5. La objeción es correcta; probar x = 0 en cada ecuación es un parche que falla con otros factores.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  }
+]

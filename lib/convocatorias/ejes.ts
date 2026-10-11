@@ -145,6 +145,38 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
     'basica primaria', 'primaria', 'docente de primaria', 'primero a quinto', 'escuela nueva', 'multigrado',
     'lectoescritura', 'alfabetizacion inicial',
   ],
+  'Saber Disciplinar: Preescolar': [
+    'preescolar', 'educacion inicial', 'transicion', 'primera infancia', 'jardin', 'prejardin',
+    'bases curriculares', 'actividades rectoras', 'desarrollo infantil',
+  ],
+  'Saber Disciplinar: Inglés': [
+    'ingles', 'idioma extranjero', 'lengua extranjera', 'humanidades: idioma extranjero', 'guia 22', 'bilinguismo',
+    'english', 'didactica del ingles',
+  ],
+  'Saber Disciplinar: Tecnología e Informática': [
+    'tecnologia e informatica', 'educacion en tecnologia', 'guia 30', 'informatica', 'pensamiento computacional',
+    'programacion', 'diseno tecnologico',
+  ],
+  'Saber Disciplinar: Educación Física': [
+    'educacion fisica', 'recreacion y deporte', 'deporte escolar', 'motricidad', 'competencia motriz',
+    'expresion corporal',
+  ],
+  'Saber Disciplinar: Educación Artística': [
+    'educacion artistica', 'artistica', 'musica', 'danza', 'danzas', 'artes plasticas', 'artes visuales',
+    'artes escenicas', 'teatro',
+  ],
+  'Saber Disciplinar: Filosofía y Ética': [
+    'filosofia', 'etica y valores', 'valores humanos', 'educacion etica', 'educacion religiosa',
+  ],
+  'Orientación Escolar': [
+    'docente orientador', 'orientacion escolar', 'orientador escolar', 'orientacion socio ocupacional',
+    'orientacion vocacional', 'proyecto de vida', 'salud mental', 'ruta de atencion integral',
+    'plan nacional de orientacion escolar',
+  ],
+  'Competencias Blandas del Docente': [
+    'competencias blandas', 'competencias comportamentales docentes', 'psicotecnica', 'liderazgo',
+    'trabajo en equipo', 'negociacion y mediacion', 'compromiso social e institucional', 'orientacion al logro',
+  ],
   'Gestión Escolar (Directivos Docentes)': [
     'gestion escolar', 'gestion directiva', 'gestion educativa', 'gobierno escolar', 'consejo directivo',
     'consejo academico', 'fondo de servicios educativos', 'fondos de servicios educativos', 'rector', 'coordinador',

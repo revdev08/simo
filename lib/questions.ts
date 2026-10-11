@@ -37,6 +37,8 @@ import politicasSociales from '@/data/preguntas/politicas-sociales.json'
 import proteccionUnp from '@/data/preguntas/proteccion-unp.json'
 import vigilanciaSanitaria from '@/data/preguntas/vigilancia-sanitaria.json'
 import procuraduria from '@/data/preguntas/procuraduria.json'
+import orientacionEscolar from '@/data/preguntas/orientacion-escolar.json'
+import competenciasBlandasDocente from '@/data/preguntas/competencias-blandas-docente.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -78,6 +80,8 @@ const BANCO = [
   ...proteccionUnp,
   ...vigilanciaSanitaria,
   ...procuraduria,
+  ...orientacionEscolar,
+  ...competenciasBlandasDocente,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados

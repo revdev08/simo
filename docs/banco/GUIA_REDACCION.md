@@ -94,6 +94,9 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 - **Rejillas 2×2:** cuando las opciones combinan dos elementos, cada uno aparece en el mismo número de opciones. La clave nunca debe ser la opción que reúne los elementos más repetidos.
 - **La persona que objeta en el caso no puede estar siempre equivocada.** En al menos un tercio de los casos con objeción, la objeción es correcta total o parcialmente. Si no, el ítem se responde yendo "contra el que objeta".
 - **Ítems didácticos (docentes):** al menos dos distractores deben ser intervenciones activas y razonables que fallen en un punto concreto, o un diagnóstico correcto con una intervención equivocada. Si solo la clave es activa, el ítem se adivina sin saber del área.
+- **La opción más protectora, incluyente o conciliadora no puede ganar siempre** (lección del lote 20). En casos de inclusión, convivencia, orientación y competencias blandas, al menos dos distractores deben ser igual de protectores que la clave y fallar en un punto concreto: la entidad o el responsable, el orden de los pasos, el plazo, el instrumento, el rol del cargo o una medida que la norma no permite. En algunos ítems la clave es la acción firme o la que acude a la instancia debida.
+- **Ningún verbo inicial reservado a los distractores** («Explicar…», «Remitir…», «Votar…»). Tampoco un repertorio fijo de distractores (exponer, imponer, votar, confrontar, trasladar).
+- **Longitud en los dos sentidos:** la clave es la opción más larga en el 20 al 30 % de los ítems y la más corta en no más del 25 %.
 
 **Explicaciones**
 - La explicación general señala el dato decisivo del caso, la regla (artículo) y la conclusión.
