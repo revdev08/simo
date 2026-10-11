@@ -7,6 +7,7 @@ import { moduleIcon, SECTION_STYLE } from './module-meta'
 import { MINUTOS_POR_PREGUNTA, PESO_CON_AREA, PESO_SIN_AREA, SIMULACRO_OPCIONES } from './simulacro-config'
 import { formatDuration, type SimulacroState } from './SimulacroSession'
 import { clock } from './attempts'
+import { ProgressBar } from './ui'
 
 export interface ModuleStat {
   name: string
@@ -50,21 +51,6 @@ function recommend(stats: ModuleStat[], area: AreaId | null) {
   if (fresh) return { mod: fresh, reason: fresh.name === areaModulo ? 'Es el área de tu cargo.' : 'Un buen punto de partida.' }
   const weakest = [...list].sort((a, b) => (accuracyOf(a) ?? 100) - (accuracyOf(b) ?? 100))[0]
   return weakest ? { mod: weakest, reason: `Aciertas el ${accuracyOf(weakest)}%. Vale la pena repasarlo.` } : null
-}
-
-function ProgressBar({ value, className = '', barClass = 'bg-brand-600 dark:bg-brand-500', label }: { value: number; className?: string; barClass?: string; label?: string }) {
-  return (
-    <div
-      role="progressbar"
-      aria-valuenow={value}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      aria-label={label}
-      className={`h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden ${className}`}
-    >
-      <div className={`h-full rounded-full transition-[width] duration-700 ${barClass}`} style={{ width: `${value}%` }} />
-    </div>
-  )
 }
 
 function StatCard({ label, value, hint, children }: { label: string; value: string | number; hint: string; children?: React.ReactNode }) {
@@ -250,7 +236,7 @@ export default function StudyHome({
 
       {/* Acciones principales */}
       <div className="grid lg:grid-cols-5 gap-4 sm:gap-5">
-        <section aria-labelledby="simulacro-title" className="lg:col-span-3 relative overflow-hidden rounded-3xl bg-brand-950 text-white p-6 sm:p-8">
+        <section aria-labelledby="simulacro-title" className="min-w-0 lg:col-span-3 relative overflow-hidden rounded-3xl bg-brand-950 text-white p-6 sm:p-8">
           <div aria-hidden className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-brand-600/30 blur-3xl" />
           <div className="relative">
             <p className="inline-flex items-center gap-2 text-sm font-semibold text-brand-200">
@@ -332,7 +318,7 @@ export default function StudyHome({
           </div>
         </section>
 
-        <section aria-labelledby="sigue-title" className="lg:col-span-2 rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-7 flex flex-col">
+        <section aria-labelledby="sigue-title" className="min-w-0 lg:col-span-2 rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-7 flex flex-col">
           <p id="sigue-title" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 dark:text-slate-400">
             <Target className="w-4 h-4" aria-hidden /> Sigue estudiando
           </p>
