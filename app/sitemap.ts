@@ -1,12 +1,20 @@
 import { MetadataRoute } from 'next'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
-
-const BASE = 'https://www.simotest.com'
+import { AREAS_DOCENTES, REVISADO_DOCENTE } from '@/lib/concurso-docente'
+import { SITE_URL as BASE } from '@/lib/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const ahora = new Date()
+  const docente = new Date(REVISADO_DOCENTE)
   return [
     { url: BASE, lastModified: ahora, changeFrequency: 'weekly', priority: 1 },
+    { url: `${BASE}/concurso-docente`, lastModified: docente, changeFrequency: 'weekly', priority: 0.9 },
+    ...AREAS_DOCENTES.map((a) => ({
+      url: `${BASE}/concurso-docente/${a.slug}`,
+      lastModified: docente,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    })),
     { url: `${BASE}/simulacro-gratis`, lastModified: ahora, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/mi-convocatoria`, lastModified: ahora, changeFrequency: 'weekly', priority: 0.9 },
     ...CONVOCATORIAS.map((c) => ({

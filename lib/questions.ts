@@ -39,6 +39,7 @@ import vigilanciaSanitaria from '@/data/preguntas/vigilancia-sanitaria.json'
 import procuraduria from '@/data/preguntas/procuraduria.json'
 import orientacionEscolar from '@/data/preguntas/orientacion-escolar.json'
 import competenciasBlandasDocente from '@/data/preguntas/competencias-blandas-docente.json'
+import aptitudesDocente from '@/data/preguntas/aptitudes-docente.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -82,6 +83,7 @@ const BANCO = [
   ...procuraduria,
   ...orientacionEscolar,
   ...competenciasBlandasDocente,
+  ...aptitudesDocente,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
@@ -135,11 +137,32 @@ export function getReportQuestions(): ReportQuestion[] {
   }))
 }
 
-// Preguntas activas por módulo: las páginas públicas muestran cifras, nunca las preguntas
+// Preguntas activas por módulo: las páginas públicas muestran cifras y, a lo sumo, un ejemplo sin clave
 export function getModuleCounts(): Record<string, number> {
   const counts: Record<string, number> = {}
   for (const q of BANCO) if (isActive(q)) counts[q.modulo] = (counts[q.modulo] ?? 0) + 1
   return counts
+}
+
+// Temario de un módulo para las páginas públicas: los temas con más preguntas primero
+export function getModuleTopics(modulo: string, limite = 12): { tema: string; preguntas: number }[] {
+  const counts = new Map<string, number>()
+  for (const q of BANCO) if (isActive(q) && q.modulo === modulo) counts.set(q.tema, (counts.get(q.tema) ?? 0) + 1)
+  return [...counts]
+    .map(([tema, preguntas]) => ({ tema, preguntas }))
+    .sort((a, b) => b.preguntas - a.preguntas || a.tema.localeCompare(b.tema))
+    .slice(0, limite)
+}
+
+// Ejemplos públicos de un módulo: solo enunciado y opciones, sin clave ni explicaciones.
+// Se eligen preguntas de dificultad media, cortas y sin tablas, siempre las mismas para que la página sea estable.
+export function getPublicExamples(modulo: string, n = 1): { pregunta: string; opciones: string[] }[] {
+  return BANCO.filter(
+    (q) => isActive(q) && q.modulo === modulo && q.dificultad === 'Media' && q.pregunta.length < 700 && !q.pregunta.includes('|') && !q.pregunta.includes('←'),
+  )
+    .sort((a, b) => String(a.id).localeCompare(String(b.id)))
+    .slice(0, n)
+    .map((q) => ({ pregunta: q.pregunta, opciones: q.opciones.map((o) => `${o.id}) ${o.texto}`) }))
 }
 
 // Busca una pregunta activa por id (los ids llegan como texto desde el navegador)

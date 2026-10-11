@@ -1,11 +1,13 @@
 import { ArrowLeft, ShieldCheck } from 'lucide-react'
 import Link from 'next/link'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Política de Tratamiento de Datos Personales',
   description:
     'Política de tratamiento de datos personales de SIMO TEST conforme a la Ley 1581 de 2012 y Decreto 1377 de 2013.',
-}
+  path: '/politica-datos',
+})
 
 export default function PoliticaDatosPage() {
   return (

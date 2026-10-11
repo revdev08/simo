@@ -4,8 +4,11 @@ import React from 'react'
 // Los enunciados largos (textos de lectura, casos extensos) se muestran en letra normal para que se lean bien.
 const LARGO = 400
 
-function isTableLine(line: string) {
-  return line.includes('|') && line.split('|').length >= 3
+// Fila de tabla: tres o más celdas, o dos celdas si la línea vecina también es fila (tablas de dos columnas)
+function isTableLine(lines: string[], i: number) {
+  const celdas = (l: string | undefined) => (l?.includes('|') ? l.trim().replace(/^\||\|$/g, '').split('|').length : 0)
+  const n = celdas(lines[i])
+  return n >= 3 || (n === 2 && (celdas(lines[i - 1]) >= 2 || celdas(lines[i + 1]) >= 2))
 }
 
 // Pseudocódigo: líneas numeradas ("1. racha ← 0"). Se sangran según los bloques si/para/mientras.
@@ -42,7 +45,7 @@ export default function QuestionText({ text, className = '' }: { text: string; c
         continue
       }
     }
-    if (isTableLine(line)) {
+    if (isTableLine(lines, i)) {
       const cells = line.replace(/^\||\|$/g, '').split('|').map((c) => c.trim())
       // Las filas separadoras tipo "---|---" no se muestran
       if (cells.every((c) => /^:?-{2,}:?$/.test(c))) continue

@@ -7,6 +7,9 @@ import PublicFooter from '@/components/public/PublicFooter'
 import ConvocatoriaPlan from '@/components/convocatorias/ConvocatoriaPlan'
 import { getModuleCounts } from '@/lib/questions'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
+import JsonLd from '@/components/seo/JsonLd'
+import { SLUG_CONVOCATORIA_DOCENTE } from '@/lib/concurso-docente'
+import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -20,11 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const c = CONVOCATORIAS.find((x) => x.slug === slug)
   if (!c) return {}
-  return {
-    title: c.titulo,
-    description: c.resumen,
-    alternates: { canonical: `https://www.simotest.com/mi-convocatoria/${c.slug}` },
-  }
+  return pageMetadata({ title: c.titulo, description: c.resumen, path: `/mi-convocatoria/${c.slug}` })
 }
 
 const formato = new Intl.NumberFormat('es-CO')
@@ -39,6 +38,13 @@ export default async function ConvocatoriaPage({ params }: Props) {
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Inicio', path: '/' },
+          { name: 'Mi convocatoria', path: '/mi-convocatoria' },
+          { name: c.nombre, path: `/mi-convocatoria/${c.slug}` },
+        ])}
+      />
       <PublicHeader current="convocatorias" />
 
       <main className="flex-grow">
@@ -79,6 +85,16 @@ export default async function ConvocatoriaPage({ params }: Props) {
               </div>
             </dl>
           </header>
+
+          {c.slug === SLUG_CONVOCATORIA_DOCENTE && (
+            <Link
+              href="/concurso-docente"
+              className="group mt-6 flex items-center justify-between gap-3 rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/30 px-5 py-4 text-sm font-semibold text-blue-700 dark:text-blue-300 hover:border-blue-300"
+            >
+              <span>Qué evalúa cada área, temario, documentos del MEN y vacantes por cargo</span>
+              <ChevronRight className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden />
+            </Link>
+          )}
 
           {c.pruebas && c.pruebas.length > 0 && (
             <section className="mt-12" aria-labelledby="pruebas">

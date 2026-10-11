@@ -5,6 +5,7 @@ import {
   ArrowRight,
   BookOpen,
   CreditCard,
+  GraduationCap,
   Home,
   LayoutDashboard,
   LogOut,
@@ -18,7 +19,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 
-type Page = 'home' | 'guia' | 'simulacro' | 'convocatorias' | 'other'
+type Page = 'home' | 'guia' | 'simulacro' | 'convocatorias' | 'docentes' | 'other'
 
 interface MobileMenuProps {
   current?: Page
@@ -77,6 +78,7 @@ export default function MobileMenu({ current = 'other' }: MobileMenuProps) {
     { href: '/#planes', label: 'Planes', icon: <CreditCard className="w-5 h-5" />, key: 'planes' },
     { href: '/simulacro-gratis', label: 'Simulacro', icon: <Zap className="w-5 h-5" />, key: 'simulacro', badge: 'Free' },
     { href: '/mi-convocatoria', label: 'Mi convocatoria', icon: <Target className="w-5 h-5" />, key: 'convocatorias' },
+    { href: '/concurso-docente', label: 'Concurso docente', icon: <GraduationCap className="w-5 h-5" />, key: 'docentes' },
     { href: '/guia', label: 'Guía CNSC', icon: <BookOpen className="w-5 h-5" />, key: 'guia' },
   ]
 

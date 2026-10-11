@@ -8,13 +8,14 @@ import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
 import MobileMenu from '@/components/MobileMenu'
 
-type Actual = 'convocatorias' | 'other'
+type Actual = 'convocatorias' | 'docentes' | 'other'
 
 // Sin "Inicio": el logo ya lleva a la portada
 const LINKS: { href: string; label: string; key?: Actual }[] = [
   { href: '/#planes', label: 'Planes' },
   { href: '/simulacro-gratis', label: 'Simulacro' },
   { href: '/mi-convocatoria', label: 'Mi convocatoria', key: 'convocatorias' },
+  { href: '/concurso-docente', label: 'Concurso docente', key: 'docentes' },
   { href: '/guia', label: 'Guía' },
 ]
 

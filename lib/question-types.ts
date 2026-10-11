@@ -110,7 +110,13 @@ export const MODULE_SECTIONS = [
     id: 'aptitudes',
     titulo: 'Aptitudes',
     descripcion: 'Razonamiento, lectura y herramientas de trabajo.',
-    modulos: ['Razonamiento Lógico y Cuantitativo', 'Comprensión Lectora', 'Herramientas de Oficina y Seguridad Digital'],
+    modulos: [
+      'Razonamiento Lógico y Cuantitativo',
+      'Comprensión Lectora',
+      'Lectura Crítica (Prueba Docente)',
+      'Razonamiento Cuantitativo (Prueba Docente)',
+      'Herramientas de Oficina y Seguridad Digital',
+    ],
   },
 ] as const
 

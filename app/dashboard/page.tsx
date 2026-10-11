@@ -7,6 +7,9 @@ import StudyApp from '@/components/study/StudyApp'
 import PurchaseTracker from '@/components/PurchaseTracker'
 import DashboardShell from '@/components/dashboard/DashboardShell'
 
+// El panel es privado: los buscadores no deben indexarlo
+export const metadata = { title: 'Panel', robots: { index: false, follow: false } }
+
 interface DashboardProps {
   searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
 }

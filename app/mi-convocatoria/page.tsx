@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Building2, ClipboardList, Users } from 'lucide-react'
 import PublicHeader from '@/components/public/PublicHeader'
@@ -6,13 +5,14 @@ import PublicFooter from '@/components/public/PublicFooter'
 import EjesTool from '@/components/convocatorias/EjesTool'
 import { getModuleCounts } from '@/lib/questions'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Mi convocatoria: plan de estudio para tu concurso CNSC',
   description:
     'Elige tu convocatoria (DIAN, docentes, hospitales ESE, Bogotá, CAR, Nación, territoriales y Procuraduría) o pega los ejes temáticos de tu empleo y recibe un plan de estudio semana a semana.',
-  alternates: { canonical: 'https://www.simotest.com/mi-convocatoria' },
-}
+  path: '/mi-convocatoria',
+})
 
 const formato = new Intl.NumberFormat('es-CO')
 

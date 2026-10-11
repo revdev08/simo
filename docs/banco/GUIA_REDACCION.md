@@ -97,6 +97,8 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 - **La opción más protectora, incluyente o conciliadora no puede ganar siempre** (lección del lote 20). En casos de inclusión, convivencia, orientación y competencias blandas, al menos dos distractores deben ser igual de protectores que la clave y fallar en un punto concreto: la entidad o el responsable, el orden de los pasos, el plazo, el instrumento, el rol del cargo o una medida que la norma no permite. En algunos ítems la clave es la acción firme o la que acude a la instancia debida.
 - **Ningún verbo inicial reservado a los distractores** («Explicar…», «Remitir…», «Votar…»). Tampoco un repertorio fijo de distractores (exponer, imponer, votar, confrontar, trasladar).
 - **Longitud en los dos sentidos:** la clave es la opción más larga en el 20 al 30 % de los ítems y la más corta en no más del 25 %.
+- **Distractor con el veredicto correcto** (lección del lote 22, razonamiento y lectura crítica): cuando las opciones son «Se sostiene / No se sostiene, porque…», el distractor que acierta el veredicto debe apoyarse en una razón claramente inválida (un dato falso o un cálculo errado), no en una razón débil pero aceptable. En los ítems de «quién tiene razón», al menos dos opciones van del lado de la clave.
+- **Cifras en los textos:** si el texto da un total y una parte, dice qué incluye la diferencia; si no, la resta se vuelve una segunda respuesta. Los porcentajes de una tabla deben salir de números enteros de personas sobre el total del grupo.
 
 **Explicaciones**
 - La explicación general señala el dato decisivo del caso, la regla (artículo) y la conclusión.

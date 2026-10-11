@@ -12,6 +12,7 @@ import {
   Building2,
   Globe,
   Calculator,
+  ChartColumn,
   ClipboardCheck,
   Coins,
   Compass,
@@ -38,6 +39,7 @@ import {
   Palette,
   PenLine,
   Receipt,
+  ScanText,
   Scale,
   School,
   ScrollText,
@@ -104,6 +106,8 @@ const MODULE_ICONS: Record<string, LucideIcon> = {
   'Competencias Comportamentales': HeartHandshake,
   'Razonamiento Lógico y Cuantitativo': Calculator,
   'Comprensión Lectora': BookOpenText,
+  'Lectura Crítica (Prueba Docente)': ScanText,
+  'Razonamiento Cuantitativo (Prueba Docente)': ChartColumn,
   'Herramientas de Oficina y Seguridad Digital': Laptop,
 }
 
