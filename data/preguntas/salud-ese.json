@@ -3316,5 +3316,1108 @@
       "fecha": "2026-10-10",
       "p_estimado": 60
     }
+  },
+  {
+    "id": "TC-SAL-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Verificación de derechos después del triage y prohibición de exigir fotocopias",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.1.1, incs. 2 y 3",
+      "art. 2.5.3.1.1, parágrafo 1"
+    ],
+    "texto_fuente": "Dicha verificación, podrá hacerse a través del documento de identidad o cualquier otro mecanismo tecnológico que permita demostrarla. No podrán exigirse al usuario copias, fotocopias o autenticaciones de ningún documento. [...] PARÁGRAFO 1o. El procedimiento de verificación de derechos será posterior a la selección y clasificación del paciente, \"triage\" y no podrá ser causa bajo ninguna circunstancia para posponer la atención inicial de urgencias.",
+    "pregunta": "La coordinadora de urgencias de una ESE entregó a la auxiliar de admisiones el nuevo procedimiento de ingreso, que dice: «1. El paciente o su acompañante entrega fotocopia de la cédula y del carné de la EPS. 2. La auxiliar consulta la base de datos de afiliados para establecer quién paga la atención. 3. Hecho lo anterior, el paciente pasa a la clasificación de triage». Antes de aplicarlo, la auxiliar lo compara con el Decreto 780 de 2016. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la afiliación debe consultarse después del triage y que al paciente no pueden pedírsele fotocopias.",
+        "explicacion": "Correcta. Según el art. 2.5.3.1.1 del Decreto 780, la verificación de derechos es posterior al triage y no puede servir para posponer la atención inicial de urgencias; además, al usuario no pueden exigírsele copias, fotocopias ni autenticaciones. El procedimiento falla en el orden y en las fotocopias."
+      },
+      {
+        "id": "B",
+        "texto": "Que el triage debe ir primero, pero que las fotocopias pueden pedirse después, para el archivo de la ESE.",
+        "explicacion": "Incorrecta. Corrige el orden, pero mantiene las fotocopias: el decreto prohíbe exigirle al usuario copias o fotocopias de cualquier documento, también después del triage. La verificación puede hacerse con el documento de identidad o con otro mecanismo tecnológico."
+      },
+      {
+        "id": "C",
+        "texto": "Que el orden puede mantenerse, con tal de que se consulte con la cédula original y no se pidan fotocopias.",
+        "explicacion": "Incorrecta. Elimina las fotocopias, pero deja la verificación antes del triage. El decreto la ubica después de la clasificación, para que no retrase la atención inicial de urgencias."
+      },
+      {
+        "id": "D",
+        "texto": "Que el orden y las fotocopias pueden mantenerse, con tal de que no se demore a los pacientes que lleguen graves.",
+        "explicacion": "Incorrecta. El decreto no hace esa distinción: en todos los casos la verificación va después del triage y no puede posponer la atención, y a ningún usuario se le pueden exigir fotocopias."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el procedimiento pide fotocopias y pone la consulta de afiliación antes del triage. Regla: según el art. 2.5.3.1.1 del Decreto 780 de 2016, al usuario no se le pueden exigir copias, fotocopias ni autenticaciones, y la verificación de derechos es posterior al triage y no puede posponer la atención inicial de urgencias. Conclusión: hay que invertir el orden y suprimir las fotocopias.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-062",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Plazo del informe de la atención inicial de urgencias",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.2.6"
+    ],
+    "texto_fuente": "Todo prestador de servicios de salud deberá informar obligatoriamente a la entidad responsable del pago, el ingreso de los pacientes al servicio de urgencias dentro de las veinticuatro (24) horas siguientes al inicio de la atención. El informe de atención inicial de urgencias se realizará mediante el diligenciamiento y envío del formato correspondiente, el cual será definido por el Ministerio de Salud y Protección Social.",
+    "pregunta": "El domingo 11 de octubre de 2026, un hombre llega a las 9:40 p. m. al servicio de urgencias de una ESE y espera en la sala hasta las 10:20 p. m., cuando es clasificado en triage, su primer contacto con el personal de salud. El lunes 12 de octubre es festivo. La auxiliar de enfermería que apoya la admisión debe enviar a la EPS del paciente el informe de la atención inicial de urgencias. ¿Hasta cuándo tiene plazo para enviarlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta las 9:40 p. m. del lunes 12 de octubre, porque las 24 horas corren desde que el paciente llegó al servicio.",
+        "explicacion": "Incorrecta. Toma como punto de partida la llegada del paciente. El decreto cuenta las 24 horas desde el inicio de la atención, que empezó con la clasificación en triage a las 10:20 p. m."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta las 9:40 p. m. del martes 13 de octubre, porque el plazo corre desde la llegada y el festivo no se cuenta.",
+        "explicacion": "Incorrecta. Comete dos errores: cuenta desde la llegada y no desde el inicio de la atención, y excluye el festivo de un plazo que se cuenta en horas."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta las 10:20 p. m. del martes 13 de octubre, porque el plazo corre desde el triage y el festivo no se cuenta.",
+        "explicacion": "Incorrecta. Acierta en el punto de partida, pero excluye el festivo. El plazo es de 24 horas siguientes al inicio de la atención, no de días hábiles."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta las 10:20 p. m. del lunes 12 de octubre, porque las 24 horas corren desde que empezó a ser atendido.",
+        "explicacion": "Correcta. El informe se envía dentro de las 24 horas siguientes al inicio de la atención (Decreto 780, art. 2.5.3.2.6). La atención empezó con la clasificación en triage, el domingo a las 10:20 p. m., así que el plazo vence el lunes a la misma hora. Es un plazo en horas: el festivo no lo extiende."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la atención empezó con el triage, el domingo 11 de octubre a las 10:20 p. m.; la hora de llegada (9:40 p. m.) no cuenta. Regla: el prestador informa a la entidad responsable del pago el ingreso a urgencias dentro de las 24 horas siguientes al inicio de la atención (Decreto 780 de 2016, art. 2.5.3.2.6). Cálculo: 10:20 p. m. del domingo + 24 horas = 10:20 p. m. del lunes 12. El festivo no cambia un plazo que se cuenta en horas.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-063",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Afiliado del régimen contributivo con empleador en mora: prueba del descuento",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.1.1, incs. 3 y 4"
+    ],
+    "texto_fuente": "No podrán exigirse al usuario copias, fotocopias o autenticaciones de ningún documento. En el caso de afiliados al régimen contributivo a los que se les haya realizado el descuento de la cotización, y el empleador no haya efectuado el pago a la entidad promotora de salud del régimen contributivo, el afiliado acreditará su derecho mediante la presentación del comprobante del descuento por parte del empleador, así como la fotocopia de ser necesaria.",
+    "pregunta": "En consulta externa de una ESE, el auxiliar de admisiones consulta la base de datos de afiliados y encuentra que un usuario del régimen contributivo aparece sin derecho a servicios: su empleador no le ha pagado a la EPS los aportes de agosto y septiembre de 2026. El usuario, que tiene cita de control de hipertensión, presenta sus recibos de nómina de esos dos meses, en los que figura la deducción de su aporte a salud. ¿Qué debe hacer el auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Atenderlo como particular y entregarle la factura, para que él pida el reembolso a su EPS cuando se normalice el pago.",
+        "explicacion": "Incorrecta. Le traslada al usuario la consecuencia de la mora del empleador. El decreto le permite demostrar su derecho con el comprobante del descuento, sin pagar como particular."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle una certificación del empleador, autenticada en notaría, en la que conste que pagará los aportes atrasados.",
+        "explicacion": "Incorrecta. Exige un documento que la norma no pide y una autenticación que está prohibida: al usuario no pueden exigírsele autenticaciones. Basta el comprobante del descuento."
+      },
+      {
+        "id": "C",
+        "texto": "Admitirlo para la cita, porque la prueba de la retención hecha en su salario basta para demostrar que sí tiene derecho.",
+        "explicacion": "Correcta. Si al afiliado del régimen contributivo le descontaron la cotización y el empleador no pagó a la EPS, el afiliado acredita su derecho con el comprobante del descuento (Decreto 780, art. 2.5.3.1.1, inc. 4). Los recibos de nómina lo prueban."
+      },
+      {
+        "id": "D",
+        "texto": "Reprogramarle la cita para cuando la EPS registre el pago del empleador y vuelva a activar su afiliación.",
+        "explicacion": "Incorrecta. Condiciona la atención a un pago que depende del empleador y no del usuario. Con el comprobante del descuento, el usuario ya acredita su derecho."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el usuario aparece sin derecho solo porque el empleador no pagó, y sus recibos de nómina muestran que le descontaron el aporte a salud. Regla: el afiliado del régimen contributivo al que se le descontó la cotización acredita su derecho con el comprobante del descuento, aunque el empleador no haya pagado a la EPS; además, no pueden exigírsele autenticaciones (Decreto 780 de 2016, art. 2.5.3.1.1, incs. 3 y 4). Conclusión: se le admite para la cita.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-064",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Tarifa máxima a un afiliado por un servicio que su plan no cubre",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.1.2, inc. 1"
+    ],
+    "texto_fuente": "Las entidades prestadoras de servicios de salud se abstendrán de discriminar al usuario afiliado al sistema de seguridad social en salud, en especial, cuando se trate de procedimientos o medicamentos excluidos del Plan Obligatorio de Salud. Bajo este principio, las tarifas que le apliquen deberán ser notificadas previamente al usuario y no podrán ser superiores en más de un treinta por ciento (30%) de aquellas que la institución aplica en promedio ponderado a las entidades aseguradoras que den cobertura a esta clase de servicios.",
+    "pregunta": "Un afiliado a una EPS del régimen contributivo pide a una ESE un procedimiento que su plan de beneficios no cubre y que él pagará de su bolsillo. El año pasado, la ESE facturó ese mismo procedimiento a tres aseguradoras que sí lo cubren: 50 veces a una empresa de medicina prepagada, a $400.000 cada una; 30 veces a una compañía de pólizas de salud, a $500.000; y 20 veces a otra prepagada, a $600.000. El técnico de facturación debe establecer el valor máximo que puede cobrarle al afiliado. ¿Cuál es ese valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$470.000, porque al afiliado no puede cobrársele más de lo que la ESE les cobra en promedio a las aseguradoras.",
+        "explicacion": "Incorrecta. Confunde la prohibición de discriminar con un tope igual al de las aseguradoras. La norma permite cobrar hasta un 30% por encima de lo que la ESE aplica en promedio ponderado; $470.000 es ese promedio sin el margen permitido."
+      },
+      {
+        "id": "B",
+        "texto": "$650.000, porque el recargo del 30% se calcula sobre el promedio de las tres tarifas que maneja la ESE.",
+        "explicacion": "Incorrecta. Usa el promedio simple ((400.000 + 500.000 + 600.000) / 3 = $500.000). La norma toma el promedio ponderado, que da más peso a la tarifa que más se factura."
+      },
+      {
+        "id": "C",
+        "texto": "$780.000, porque el recargo del 30% se calcula sobre la tarifa más alta que la ESE cobra hoy por el servicio.",
+        "explicacion": "Incorrecta. Aplica el 30% sobre la tarifa más alta ($600.000 × 1,3). El tope se calcula sobre el promedio ponderado de lo que la ESE cobra a las aseguradoras."
+      },
+      {
+        "id": "D",
+        "texto": "$611.000, porque el recargo del 30% va sobre un promedio en que cada tarifa pesa según las veces que se cobró.",
+        "explicacion": "Correcta. El promedio ponderado es (50 × 400.000 + 30 × 500.000 + 20 × 600.000) / 100 = $470.000, y el tope es un 30% más: $611.000 (Decreto 780, art. 2.5.3.1.2). Además, la tarifa debe notificarse al usuario antes de prestarle el servicio."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ESE facturó el procedimiento 50 veces a $400.000, 30 a $500.000 y 20 a $600.000. Regla: las tarifas que se aplican al afiliado se le notifican antes y no pueden superar en más del 30% las que la institución aplica en promedio ponderado a las aseguradoras (Decreto 780 de 2016, art. 2.5.3.1.2). Cálculo: 47.000.000 / 100 = $470.000; $470.000 × 1,3 = $611.000.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Gratuidad de la atención de mujeres y menores víctimas de violencia",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 1438 de 2011, art. 19",
+      "Ley 1438 de 2011, art. 54, inc. 1",
+      "Ley 1751 de 2015, art. 11, inc. 1"
+    ],
+    "texto_fuente": "Los servicios para la rehabilitación física y mental de los niños, niñas y adolescentes víctimas de violencia física o sexual y todas las formas de maltrato, que estén certificados por la autoridad competente, serán totalmente gratuitos para las víctimas, sin importar el régimen de afiliación. [...] La prestación de los servicios de salud física y mental para todas las mujeres víctimas de la violencia física o sexual, que estén certificados por la autoridad competente, no generará cobro por concepto de cuotas moderadoras, copagos u otros pagos para el acceso sin importar el régimen de afiliación. [...] La atención de niños, niñas y adolescentes, mujeres en estado de embarazo, desplazados, víctimas de violencia y del conflicto armado, la población adulta mayor, personas que sufren de enfermedades huérfanas y personas en condición de discapacidad, gozarán de especial protección por parte del Estado. Su atención en salud no estará limitada por ningún tipo de restricción administrativa o económica.",
+    "pregunta": "A la admisión de consulta externa de una ESE llegan dos usuarias con la certificación de la autoridad competente sobre los hechos de violencia que sufrieron: una mujer de 34 años, afiliada al régimen contributivo, agredida físicamente por su pareja, que viene a consulta de psicología; y una niña de 11 años, del régimen subsidiado, víctima de maltrato, que viene a una sesión de terapia física de rehabilitación. El sistema le muestra a la auxiliar de admisiones una cuota moderadora para la mujer y un copago para la niña. ¿Qué debe cobrar la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo la cuota moderadora de la mujer, porque la gratuidad total está prevista para los menores maltratados.",
+        "explicacion": "Incorrecta. Desconoce el art. 54 de la Ley 1438: la atención en salud mental de la mujer víctima de violencia física no genera cuotas moderadoras ni copagos, aunque esté en el régimen contributivo."
+      },
+      {
+        "id": "B",
+        "texto": "Nada a ninguna de las dos, porque la ley libera de esos pagos la atención que cada una viene a recibir.",
+        "explicacion": "Correcta. La atención física y mental de las mujeres víctimas de violencia física o sexual, certificada por la autoridad competente, no genera cuotas moderadoras, copagos ni otros pagos (Ley 1438, art. 54), y la rehabilitación física y mental de los menores víctimas de maltrato es totalmente gratuita (art. 19), en ambos casos sin importar el régimen. Su atención no puede limitarse por restricciones económicas (Ley 1751, art. 11)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el copago de la niña, porque en el régimen subsidiado la gratuidad depende de su clasificación en el Sisbén.",
+        "explicacion": "Incorrecta. La gratuidad de la rehabilitación de los menores víctimas de maltrato se aplica sin importar el régimen de afiliación y no está condicionada al Sisbén."
+      },
+      {
+        "id": "D",
+        "texto": "Los dos valores, porque la exención de pagos solo cubre la atención de urgencias por los hechos de violencia.",
+        "explicacion": "Incorrecta. La exención no se limita a urgencias: cubre la atención en salud física y mental de la mujer y la rehabilitación física y mental de la niña."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: ambas tienen la certificación de la autoridad competente; la mujer viene a psicología por violencia física y la niña, a rehabilitación por maltrato. Regla: la atención física y mental de las mujeres víctimas de violencia física o sexual no genera cuotas moderadoras ni copagos (Ley 1438 de 2011, art. 54), y la rehabilitación de los menores víctimas de maltrato es totalmente gratuita (art. 19), sin importar el régimen. Conclusión: no se cobra nada.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-066",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Peticiones, quejas y reclamos (PQRS)",
+    "subtema": "Queja verbal por trato indigno: forma y término de la respuesta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 1437 de 2011, art. 14, inc. 1 y num. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "Ley 1437 de 2011, art. 15, inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "Ley 1751 de 2015, art. 10, inc. 1, lit. l"
+    ],
+    "texto_fuente": "Salvo norma legal especial y so pena de sanción disciplinaria, toda petición deberá resolverse dentro de los quince (15) días siguientes a su recepción. [...] 1. Las peticiones de documentos y de información deberán resolverse dentro de los diez (10) días siguientes a su recepción. [...] Las peticiones podrán presentarse verbalmente y deberá quedar constancia de la misma, o por escrito, y a través de cualquier medio idóneo para la comunicación o transferencia de datos. [...] l) A recibir información sobre los canales formales para presentar reclamaciones, quejas, sugerencias y en general, para comunicarse con la administración de las instituciones, así como a recibir una respuesta por escrito;",
+    "pregunta": "El martes 27 de octubre de 2026, una usuaria presenta de forma verbal, en la ventanilla de la oficina de atención al usuario de una ESE, una queja por el trato grosero que le dio un vigilante, y pide que le contesten por escrito. El técnico del SIAU deja constancia de la queja en el sistema. Cuente los términos en días hábiles (de lunes a viernes); el 2 y el 16 de noviembre son festivos. ¿Cómo y hasta cuándo debe responderse la queja?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Por escrito, a más tardar el 17 de noviembre, dentro de los quince días que rigen para las peticiones en general.",
+        "explicacion": "Incorrecta. Acierta en la forma y en el término de quince días, pero cuenta como hábiles los festivos del 2 y el 16 de noviembre. Sin ellos, el plazo vence el 19 de noviembre."
+      },
+      {
+        "id": "B",
+        "texto": "Por escrito, a más tardar el 19 de noviembre, dentro de los quince días que rigen para las peticiones en general.",
+        "explicacion": "Correcta. La queja se rige por el término general de quince días (CPACA, art. 14, sustituido por la Ley 1755 de 2015). Contados desde el 28 de octubre y sin los festivos del 2 y el 16 de noviembre, vencen el jueves 19 de noviembre. La usuaria tiene derecho a recibir respuesta por escrito (Ley 1751, art. 10, lit. l)."
+      },
+      {
+        "id": "C",
+        "texto": "De forma verbal en la ventanilla, como se presentó la queja, a más tardar el 11 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Aunque una petición verbal puede responderse de forma verbal, en salud el usuario tiene derecho a una respuesta escrita, y esta usuaria la pidió. Además, aplica un término de diez días que no corresponde a las quejas."
+      },
+      {
+        "id": "D",
+        "texto": "Por escrito, a más tardar el 11 de noviembre, dentro de los diez días que rigen para las quejas de los usuarios.",
+        "explicacion": "Incorrecta. El término de diez días es para las peticiones de documentos y de información. Las quejas siguen el término general de quince días."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: queja verbal del martes 27 de octubre, con solicitud de respuesta escrita. Regla: toda petición se resuelve dentro de los quince días siguientes a su recepción (CPACA, art. 14, sustituido por la Ley 1755 de 2015), y el usuario de salud tiene derecho a una respuesta escrita a sus quejas (Ley 1751 de 2015, art. 10, lit. l). Cálculo: quince días hábiles desde el 28 de octubre, sin el 2 ni el 16 de noviembre, vencen el jueves 19 de noviembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Peticiones, quejas y reclamos (PQRS)",
+    "subtema": "Queja escrita sobre un asunto de la EPS: remisión al competente",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 14, inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 21 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Salvo norma legal especial y so pena de sanción disciplinaria, toda petición deberá resolverse dentro de los quince (15) días siguientes a su recepción. [...] Si la autoridad a quien se dirige la petición no es la competente, se informará de inmediato al interesado si este actúa verbalmente, o dentro de los cinco (5) días siguientes al de la recepción, si obró por escrito. Dentro del término señalado remitirá la petición al competente y enviará copia del oficio remisorio al peticionario o en caso de no existir funcionario competente así se lo comunicará.",
+    "pregunta": "El jueves 12 de noviembre de 2026, una usuaria envió al correo electrónico de la oficina de atención al usuario de una ESE una queja contra su EPS, porque la droguería contratada por esa EPS no le ha entregado un medicamento. La ESE no dispensa medicamentos a los afiliados de esa EPS ni tiene relación con la droguería. Cuente los términos en días hábiles (de lunes a viernes); el 16 de noviembre es festivo. ¿Qué debe hacer el técnico del SIAU?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contestarle, dentro de los quince días siguientes, que la ESE no responde por esa entrega de medicamentos, y archivar la queja.",
+        "explicacion": "Incorrecta. La ESE no puede limitarse a declarar que no es competente y archivar: debe remitir la queja a quien sí lo es."
+      },
+      {
+        "id": "B",
+        "texto": "Devolverle la queja ese mismo día por correo, para que ella la presente directamente ante la EPS que debe resolverla.",
+        "explicacion": "Incorrecta. Devolver la queja le traslada a la usuaria un trámite que la ley asigna a la entidad que la recibió: esta debe remitirla al competente."
+      },
+      {
+        "id": "C",
+        "texto": "Enviar la queja a la EPS a más tardar el 20 de noviembre y mandarle a la usuaria copia del oficio con que se envió.",
+        "explicacion": "Correcta. Si la entidad que recibe una petición escrita no es la competente, dentro de los cinco días siguientes debe remitirla al competente y enviar copia del oficio remisorio al peticionario (CPACA, art. 21, sustituido por la Ley 1755 de 2015). Cinco días hábiles desde el 13 de noviembre, sin el festivo del 16, vencen el viernes 20."
+      },
+      {
+        "id": "D",
+        "texto": "Enviar la queja a la EPS a más tardar el 4 de diciembre y mandarle a la usuaria copia del oficio con que se envió.",
+        "explicacion": "Incorrecta. Aplica a la remisión el término general de quince días para resolver. Para remitir al competente una petición escrita hay cinco días."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la queja llegó por escrito (correo electrónico) el jueves 12 de noviembre y trata de un asunto de la EPS, no de la ESE. Regla: la autoridad que no es competente remite la petición escrita al competente dentro de los cinco días siguientes a su recepción y envía copia del oficio remisorio al peticionario (CPACA, art. 21, sustituido por la Ley 1755 de 2015). Cálculo: 13, 17, 18, 19 y 20 de noviembre (el 16 es festivo); vence el viernes 20.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Referencia y contrarreferencia",
+    "subtema": "Remisión ambulatoria no urgente: la gestión es de la EPS",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016 y Ley 1751 de 2015",
+    "articulos": [
+      "Decreto 780 de 2016, art. 2.5.3.2.16, incs. 1 y 2",
+      "Decreto 780 de 2016, art. 2.5.3.4.7.5 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Ley 1751 de 2015, art. 10, inc. 1, lit. p"
+    ],
+    "texto_fuente": "El diseño, organización y documentación del proceso de referencia y contrarreferencia y la operación del sistema de referencia y contrarreferencia es obligación de las entidades responsables del pago de servicios de salud [...] Con el fin de garantizar la calidad, continuidad e integralidad en la atención, es obligación de las entidades responsables del pago de servicios de salud la consecución de institución prestadora de servicios de salud receptora que garantice los recursos humanos, físicos o tecnológicos así como los insumos y medicamentos requeridos para la atención de pacientes. [...] la operación del sistema de referencia y contrarreferencia debe atender a la integralidad del proceso de atención en salud, sin limitarse a los casos de urgencias. [...] p) A que no se le trasladen las cargas administrativas y burocráticas que les corresponde asumir a los encargados o intervinientes en la prestación del servicio;",
+    "pregunta": "Un médico de una ESE de primer nivel ordenó para un paciente una consulta ambulatoria, no urgente, con un especialista en medicina interna, servicio que la ESE no presta. El técnico de referencia y contrarreferencia envió la solicitud a la EPS del paciente, que contestó: «Nuestro proceso de referencia solo opera para urgencias. Entréguele la orden al paciente para que él consiga la cita en alguna IPS de nuestra red». ¿Qué debe hacer el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Insistir en que la EPS debe conseguir la institución que reciba al paciente, sin pasarle a él esa gestión.",
+        "explicacion": "Correcta. La operación del sistema de referencia y contrarreferencia y la consecución de la institución receptora son obligación de la entidad responsable del pago (Decreto 780, art. 2.5.3.2.16); ese sistema no se limita a las urgencias (art. 2.5.3.4.7.5), y al usuario no se le trasladan cargas administrativas (Ley 1751, art. 10, lit. p)."
+      },
+      {
+        "id": "B",
+        "texto": "Entregarle la orden al paciente con el directorio de la red de la EPS y explicarle cómo pedir la cita en cada IPS.",
+        "explicacion": "Incorrecta. Acepta la respuesta de la EPS y le traslada al paciente una carga administrativa que le corresponde a la EPS. Además, la referencia no se limita a las urgencias."
+      },
+      {
+        "id": "C",
+        "texto": "Conseguir él mismo la cita con un internista de cualquier IPS, porque la ESE que remite responde por el paciente.",
+        "explicacion": "Incorrecta. Conseguir la institución receptora es obligación de la entidad responsable del pago, no del prestador que remite. La responsabilidad del remisor se refiere al manejo y cuidado del paciente, no a esa gestión."
+      },
+      {
+        "id": "D",
+        "texto": "Tramitar la remisión a través del servicio de urgencias, para que la EPS quede obligada a activar su proceso.",
+        "explicacion": "Incorrecta. Desvía a urgencias un servicio que no lo es. La referencia y contrarreferencia debe atender la integralidad de la atención sin limitarse a las urgencias, así que ese rodeo no hace falta."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la EPS dice que su referencia solo opera en urgencias y pide que el paciente consiga la cita. Regla: la operación del sistema de referencia y la consecución de la IPS receptora son obligación de la entidad responsable del pago (Decreto 780 de 2016, art. 2.5.3.2.16); ese sistema atiende la integralidad de la atención sin limitarse a urgencias (art. 2.5.3.4.7.5), y al usuario no se le trasladan cargas administrativas (Ley 1751, art. 10, lit. p). Conclusión: la gestión es de la EPS.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAL-069",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Talento humano en salud",
+    "subtema": "Estudiante de auxiliar de enfermería sin certificado: actividades de atención en salud",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1164 de 2007 y Ley 1751 de 2015",
+    "articulos": [
+      "Ley 1164 de 2007, art. 18, num. 1, lit. b",
+      "Ley 1164 de 2007, art. 22",
+      "Ley 1164 de 2007, art. 13, inc. 2 (modificado por el art. 99 de la Ley 1438 de 2011)",
+      "Ley 1164 de 2007, art. 37 (del ejercicio competente)",
+      "Ley 1751 de 2015, art. 10, inc. 1, lit. h"
+    ],
+    "texto_fuente": "1. Acreditar una de las siguientes condiciones académicas: [...] b) Certificado otorgado por una institución de educación no formal, legalmente reconocida, para el personal auxiliar en el área de la salud, en los términos establecidos en la Ley 115 de 1994 y sus reglamentarios; [...] Ninguna persona podrá realizar actividades de atención en salud o ejercer competencias para las cuales no esta autorizada sin los requisitos establecidos en la presente ley. [...] Los programas que requieran adelantar prácticas formativas en servicios asistenciales deberán contar con escenarios de prácticas conformados en el marco de la relación docencia servicio. [...] Del ejercicio competente: El Talento Humano en Salud debe ser ubicado de acuerdo a sus competencias correspondientes a sus títulos o certificados expedidos por la entidad educativa. No se comprometerán a realizar labores que excedan su capacidad. [...] h) A que se le preste durante todo el proceso de la enfermedad, asistencia de calidad por trabajadores de la salud debidamente capacitados y autorizados para ejercer;",
+    "pregunta": "Una noche de mucha demanda en urgencias de una ESE, la coordinadora le pide a Julián, auxiliar administrativo de admisiones, que mientras llega el enfermero del turno siguiente tome los signos vitales de los pacientes que esperan y les asigne la prioridad con la que serán vistos. Julián estudia auxiliar de enfermería en un instituto, ya aprobó el módulo de signos vitales y le faltan seis meses para terminar; en la ESE no hace prácticas, sino que trabaja como administrativo. ¿Qué debe hacer Julián?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No asumir ninguna de las dos tareas, pues mientras no se gradúe como auxiliar no puede realizar labores asistenciales.",
+        "explicacion": "Correcta. Nadie puede realizar actividades de atención en salud sin los requisitos de la Ley 1164 (art. 22), que para el personal auxiliar incluyen el certificado de una institución de educación no formal legalmente reconocida (art. 18). Julián aún no lo tiene, y el personal se ubica según las competencias de sus títulos o certificados (art. 37)."
+      },
+      {
+        "id": "B",
+        "texto": "Tomar solo los signos vitales, que ya aprobó en el instituto, y dejar al médico de turno la asignación de prioridades.",
+        "explicacion": "Incorrecta. Tomar signos vitales también es una actividad de atención en salud. Haber aprobado un módulo del programa no equivale al certificado que la ley exige al personal auxiliar."
+      },
+      {
+        "id": "C",
+        "texto": "Hacer las dos tareas bajo la supervisión directa de la enfermera jefe del servicio, que revisará y firmará sus registros.",
+        "explicacion": "Incorrecta. La supervisión no suple los requisitos para ejercer. Las prácticas formativas de quien estudia se hacen en escenarios de la relación docencia servicio, y Julián no está en práctica: trabaja como administrativo."
+      },
+      {
+        "id": "D",
+        "texto": "Hacer las dos tareas mientras dure la congestión, porque la atención de urgencias no puede esperar a que llegue el relevo.",
+        "explicacion": "Incorrecta. La congestión no habilita a quien no cumple los requisitos: la Ley 1751 garantiza que la asistencia la presten trabajadores de la salud debidamente capacitados y autorizados para ejercer."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Julián estudia auxiliar de enfermería, pero aún no tiene el certificado y no está en práctica formativa. Regla: nadie puede realizar actividades de atención en salud sin los requisitos de la Ley 1164 de 2007 (art. 22), que para el personal auxiliar exigen el certificado de una institución legalmente reconocida (art. 18, num. 1, lit. b); la asistencia la presta personal capacitado y autorizado (Ley 1751, art. 10, lit. h). Conclusión: no debe asumir ninguna de las dos tareas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1164_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAL-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Historia clínica",
+    "subtema": "Solicitudes de copia de una autoridad administrativa y de un empleador",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 24, num. 3 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 25, inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 27 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 30 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Solo tendrán carácter reservado las informaciones y documentos expresamente sometidos a reserva por la Constitución Política o la ley, y en especial: [...] 3. Los que involucren derechos a la privacidad e intimidad de las personas, incluidas en las hojas de vida, la historia laboral y los expedientes pensionales y demás registros de personal que obren en los archivos de las instituciones públicas o privadas, así como la historia clínica. [...] Toda decisión que rechace la petición de informaciones o documentos será motivada, indicará en forma precisa las disposiciones legales que impiden la entrega de información o documentos pertinentes y deberá notificarse al peticionario. [...] El carácter reservado de una información o de determinados documentos, no será oponible a las autoridades judiciales, legislativas, ni a las autoridades administrativas que siendo constitucional o legalmente competentes para ello, los soliciten para el debido ejercicio de sus funciones. Corresponde a dichas autoridades asegurar la reserva de las informaciones y documentos que lleguen a conocer en desarrollo de lo previsto en este artículo. [...] Cuando una autoridad formule una petición de información o de documentos a otra, esta deberá resolverla en un término no mayor de diez (10) días.",
+    "pregunta": "El jueves 3 de diciembre de 2026, el archivo clínico de una ESE recibió dos solicitudes escritas de copia de la historia clínica de un mismo paciente adulto, que no ha autorizado a nadie para conocerla: (1) la de la secretaría de salud departamental, que la pide para una investigación de su competencia sobre la calidad de la atención; (2) la de la empresa donde trabaja el paciente, que quiere revisar el diagnóstico que originó su incapacidad. Cuente los términos en días hábiles (de lunes a viernes); el 8 de diciembre es festivo. ¿Cómo debe tramitar las solicitudes el auxiliar de archivo clínico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar la copia a la secretaría a más tardar el 17 de diciembre y negar la de la empresa con una respuesta motivada.",
+        "explicacion": "Incorrecta. Acierta en la decisión, pero cuenta como hábil el festivo del 8 de diciembre. Diez días hábiles contados desde el 4 de diciembre vencen el 18."
+      },
+      {
+        "id": "B",
+        "texto": "Entregar la copia a la secretaría a más tardar el 18 de diciembre y negar la de la empresa con una respuesta motivada.",
+        "explicacion": "Correcta. La reserva de la historia clínica no es oponible a la autoridad administrativa competente que la pide para ejercer sus funciones, y esa autoridad debe asegurar la reserva (CPACA, art. 27); entre autoridades, la petición de documentos se resuelve en diez días (art. 30), que vencen el viernes 18 de diciembre, sin el festivo del 8. A la empresa se le niega con una decisión motivada, porque la historia es reservada (arts. 24 y 25)."
+      },
+      {
+        "id": "C",
+        "texto": "Entregar la copia a la secretaría a más tardar el 28 de diciembre, en el plazo de quince días, y negar la de la empresa.",
+        "explicacion": "Incorrecta. Aplica el término general de quince días. Cuando una autoridad le pide documentos a otra, esta debe resolver en un término no mayor de diez días."
+      },
+      {
+        "id": "D",
+        "texto": "Negar las dos solicitudes con respuestas motivadas, porque la historia es reservada y el paciente no autorizó la entrega.",
+        "explicacion": "Incorrecta. La reserva protege la historia frente a la empresa, pero no puede oponerse a una autoridad administrativa que, siendo competente, la pide para ejercer sus funciones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la secretaría pide la historia para una investigación de su competencia; la empresa, para conocer un diagnóstico sin autorización del paciente. Regla: la historia clínica es reservada (CPACA, art. 24, num. 3), pero la reserva no es oponible a las autoridades administrativas competentes (art. 27); entre autoridades se responde en diez días (art. 30), y el rechazo por reserva se motiva (art. 25). Cálculo: diez días hábiles desde el 4 de diciembre, sin el 8, vencen el 18.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAL-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Referencia y contrarreferencia",
+    "subtema": "Consecución de la institución receptora y responsabilidad por el paciente durante la remisión",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.2.16, incs. 2 y 3"
+    ],
+    "texto_fuente": "Con el fin de garantizar la calidad, continuidad e integralidad en la atención, es obligación de las entidades responsables del pago de servicios de salud la consecución de institución prestadora de servicios de salud receptora que garantice los recursos humanos, físicos o tecnológicos así como los insumos y medicamentos requeridos para la atención de pacientes. [...] La responsabilidad del manejo y cuidado del paciente es del prestador remisor hasta que ingrese en la institución receptora. Cuando el transporte se realice en una ambulancia debidamente habilitada, que no dependa de la IPS remisora, la entidad que tiene habilitado el servicio de transporte será responsable de la atención durante el mismo, con la tecnología disponible de acuerdo con el servicio de ambulancia habilitado, hasta la entrega del paciente en la entidad receptora definida por la entidad responsable del pago.",
+    "pregunta": "En el servicio de urgencias de una ESE de primer nivel, un paciente estabilizado necesita remisión a una institución de tercer nivel. Seis horas después, la EPS del paciente no ha conseguido quién lo reciba y le pide a la ESE que llame ella misma a las clínicas de la región. El traslado se hará en una ambulancia habilitada de una empresa contratada por la EPS, que no depende de la ESE. Para el informe a la gerencia, el jefe de urgencias debe precisar a quién le corresponde conseguir la institución receptora y quién responde por la atención del paciente en cada etapa. ¿Qué debe precisar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la búsqueda de la receptora le corresponde a la EPS y que la ESE responde por el paciente hasta que ingrese allí, traslado incluido.",
+        "explicacion": "Incorrecta. Acierta en que la EPS consigue la receptora, pero ignora la regla del traslado: si se hace en una ambulancia habilitada que no depende de la IPS remisora, durante el trayecto responde la entidad que tiene habilitado ese transporte."
+      },
+      {
+        "id": "B",
+        "texto": "Que la búsqueda de la receptora le corresponde a la ESE, porque es la que remite, y que responde hasta subir al paciente a la ambulancia.",
+        "explicacion": "Incorrecta. La consecución de la receptora es obligación de la entidad responsable del pago. Además, la responsabilidad del remisor no termina cuando el paciente sube a la ambulancia."
+      },
+      {
+        "id": "C",
+        "texto": "Que la búsqueda de la receptora le corresponde a la EPS; la ESE responde mientras el paciente espera, y la empresa de ambulancias, en el trayecto.",
+        "explicacion": "Correcta. La EPS debe conseguir la institución receptora (Decreto 780, art. 2.5.3.2.16, inc. 2). El prestador remisor responde por el manejo y cuidado del paciente hasta que ingrese a la receptora, salvo durante el traslado en una ambulancia habilitada que no dependa de él: en ese tramo responde la entidad que tiene habilitado el transporte (inc. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la búsqueda de la receptora le corresponde a la ESE, porque es la que remite, y que la EPS responde por el paciente desde que se pidió la remisión.",
+        "explicacion": "Incorrecta. Invierte las obligaciones: la EPS consigue la receptora y, mientras el paciente espera en la ESE, es la ESE la que responde por su manejo y cuidado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la EPS no ha conseguido cama y el traslado será en una ambulancia habilitada que no depende de la ESE. Regla: la consecución de la institución receptora es obligación de la entidad responsable del pago; el prestador remisor responde por el paciente hasta que ingrese a la receptora, pero durante el traslado en una ambulancia habilitada que no dependa de él responde la entidad del transporte (Decreto 780 de 2016, art. 2.5.3.2.16, incs. 2 y 3). Conclusión: la EPS busca; la ESE responde en la espera y la empresa, en el trayecto.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAL-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención de urgencias",
+    "subtema": "Atención posterior a la de urgencias en la misma institución: excepciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.2.7, parágrafo 2"
+    ],
+    "texto_fuente": "PARÁGRAFO 2o. Si el prestador de servicios de salud que brindó la atención inicial de urgencias hace parte de la red de prestadores de servicios de salud de la entidad responsable del pago, la atención posterior deberá continuarse prestando en la institución que realizó la atención inicial de urgencias, si el servicio requerido está contratado por la entidad responsable del pago, sin que la institución prestadora de servicios de salud pueda negarse a prestar el servicio, salvo en los casos en que por requerimientos del servicio se justifique que deba prestarse en mejores condiciones por parte de otro prestador de servicios de salud, no exista disponibilidad para la prestación de servicio, o exista solicitud expresa del usuario de escoger otro prestador de la red definida por la entidad responsable del pago.",
+    "pregunta": "Una ESE de segundo nivel hace parte de la red de una EPS, que le tiene contratado el servicio de hospitalización. Tres afiliados de esa EPS, atendidos y estabilizados en urgencias de la ESE, necesitan hospitalizarse: (1) para el primero, la EPS pide trasladarlo a otra IPS de su red, donde paga una tarifa menor; (2) para el segundo, la ESE no tiene camas disponibles en hospitalización; (3) el tercero pide por escrito que lo trasladen a otra IPS de la red de la EPS, cercana a su familia. La profesional de referencia debe definir en qué casos la hospitalización puede darse en otra institución. ¿Cuáles son?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el 2, porque la falta de camas es la única razón para que el paciente no siga en la ESE.",
+        "explicacion": "Incorrecta. Además de la falta de disponibilidad, el decreto admite que el usuario pida expresamente otro prestador de la red de la EPS, como en el caso 3."
+      },
+      {
+        "id": "B",
+        "texto": "El 1 y el 2, porque la EPS decide en qué institución de su red sigue la atención de sus afiliados.",
+        "explicacion": "Incorrecta. La tarifa menor no es una de las excepciones. Si la ESE es de la red y tiene contratado el servicio, la atención posterior debe continuar en ella, salvo las causas que fija el decreto."
+      },
+      {
+        "id": "C",
+        "texto": "Los tres, porque cualquier institución de la red puede continuar la atención iniciada en urgencias.",
+        "explicacion": "Incorrecta. La regla es la contraria: la atención posterior debe seguir en la institución que hizo la atención inicial de urgencias, salvo causas precisas, entre las que no está el menor costo para la EPS."
+      },
+      {
+        "id": "D",
+        "texto": "El 2 y el 3, porque cuentan la falta de camas y la elección del paciente de otra IPS de la red.",
+        "explicacion": "Correcta. Si quien hizo la atención inicial de urgencias es de la red de la EPS y el servicio está contratado, la atención posterior sigue en esa institución, salvo que deba prestarse en mejores condiciones en otra, no haya disponibilidad o el usuario pida expresamente otro prestador de la red (Decreto 780, art. 2.5.3.2.7, par. 2). Encajan los casos 2 y 3."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ESE es de la red de la EPS y tiene contratada la hospitalización; un traslado se pide por tarifa, otro por falta de camas y otro por solicitud escrita del paciente. Regla: la atención posterior a la de urgencias sigue en la institución que la inició, salvo mejores condiciones en otro prestador, falta de disponibilidad o solicitud expresa del usuario de escoger otro prestador de la red (Decreto 780 de 2016, art. 2.5.3.2.7, par. 2). Conclusión: casos 2 y 3.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-073",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Historia clínica",
+    "subtema": "Acceso de otros prestadores a la historia clínica electrónica interoperable",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2015 de 2020",
+    "articulos": [
+      "art. 3, inc. 1",
+      "art. 6",
+      "art. 7",
+      "art. 12, parágrafo 2"
+    ],
+    "texto_fuente": "Los Prestadores de Servicios de Salud estarán obligados a diligenciar y disponer los datos, documentos y expedientes de la historia clínica en la plataforma de interoperabilidad que disponga el Gobierno nacional. [...] Cada persona será titular de su Historia Clínica Electrónica, a la cual tendrán acceso, además del titular, los sujetos obligados en el artículo 3o de la presente ley, con el previo y expreso consentimiento de la persona o paciente de acuerdo con la normatividad vigente. [...] Solo la persona titular de la Historia Clínica Electrónica podrá autorizar el uso por terceros de la información total o parcial en ella contenida de acuerdo con la normatividad vigente, salvo en los casos que por ley no sea requerido el otorgamiento de dicha autorización. [...] PARÁGRAFO 2o. Las EPS y las IPS responsables del manejo de la información no podrán divulgar los datos por ellos administrados sin autorización expresa de la persona.",
+    "pregunta": "Una ESE prepara la conexión de su historia clínica electrónica con la plataforma de interoperabilidad. El profesional de sistemas propone que cualquier prestador de la red departamental pueda consultar en línea la historia completa de los pacientes de la ESE, sin otro requisito, «porque todos los prestadores son sujetos obligados de la Ley 2015 de 2020». El gerente pide concepto a la asesora jurídica. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no es viable así: los demás prestadores solo pueden consultarla si cada paciente lo acepta antes y de manera explícita.",
+        "explicacion": "Correcta. Cada persona es titular de su historia clínica electrónica, y los sujetos obligados, como los prestadores, acceden a ella con el previo y expreso consentimiento del paciente (Ley 2015 de 2020, art. 6). Además, las IPS no pueden divulgar los datos que administran sin autorización expresa de la persona (art. 12, par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que es viable, porque la ley les da acceso a la historia a los prestadores obligados a disponer los datos en la plataforma.",
+        "explicacion": "Incorrecta. Estar obligado a disponer los datos en la plataforma no da acceso libre a la historia: la ley condiciona ese acceso al consentimiento previo y expreso del paciente."
+      },
+      {
+        "id": "C",
+        "texto": "Que es viable solo frente a los datos clínicos relevantes, porque los demás documentos de la historia no se intercambian.",
+        "explicacion": "Incorrecta. El consentimiento se exige para el acceso a la historia, sin distinguir entre datos clínicos relevantes y demás documentos; el intercambio de datos no elimina ese requisito."
+      },
+      {
+        "id": "D",
+        "texto": "Que no es viable mientras la EPS de cada paciente no autorice el intercambio de su historia con los demás prestadores.",
+        "explicacion": "Incorrecta. Quien autoriza es el titular de la historia, no su EPS: solo la persona titular puede autorizar el uso de su información por terceros."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la propuesta abre la historia completa a cualquier prestador sin intervención del paciente. Regla: la persona es titular de su historia clínica electrónica, y los sujetos obligados acceden a ella con su previo y expreso consentimiento (Ley 2015 de 2020, art. 6); solo el titular autoriza su uso por terceros (art. 7), y las IPS no divulgan los datos sin su autorización expresa (art. 12, par. 2). Conclusión: el acceso exige el consentimiento de cada paciente.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2015_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Atención al usuario (SIAU)",
+    "subtema": "Sistema de información y atención al usuario: línea permanente, centralización y medios alternos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.10.1.1.5, nums. 1 y 2",
+      "art. 2.10.1.1.5, parágrafos 1 y 2"
+    ],
+    "texto_fuente": "Las Instituciones Prestadoras de Servicios Salud, sean públicas, mixtas o privadas, garantizarán: 1. Un sistema de información y atención a los usuarios a través de una atención personalizada que contará con una línea telefónica abierta con atención permanente de veinticuatro (24) horas y garantizarán, según los requerimientos de ese servicio, el recurso humano necesario para que atienda sistematice y canalice tales requerimientos. 2. Implantar articulado al sistema de información sectorial, un control de calidad del servicio, basado en el usuario. PARÁGRAFO 1o. El Servicio de Atención al usuario de los centros y puestos de salud podrá estar centralizado en el Hospital de Primer Nivel de Atención del Municipio o Distrito, con el cual se establecerán los mecanismos de retroalimentación y control que sean del caso. PARÁGRAFO 2o. Cuando las condiciones locales impidan disponer del servicio telefónico como un medio idóneo para el sistema de información de que trata el presente artículo, se deberá establecer un sistema de información permanente, consultando los medios más idóneos de los cuales se disponga en la localidad o la región.",
+    "pregunta": "Una ESE de primer nivel tiene un hospital en la cabecera municipal y cinco puestos de salud rurales. La profesional del Servicio de Información y Atención al Usuario (SIAU) presenta al comité directivo esta propuesta: (1) centralizar en el hospital la atención al usuario de los cinco puestos, con mecanismos de retroalimentación y control; (2) atender la línea telefónica del SIAU de lunes a viernes, de 7:00 a. m. a 5:00 p. m.; (3) en dos veredas sin señal telefónica, mantener un sistema permanente de información por la emisora comunitaria y los promotores de salud; (4) medir la satisfacción con un control de calidad del servicio basado en los usuarios y articulado al sistema de información del sector. ¿Qué punto de la propuesta debe ajustarse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 1, porque cada puesto de salud debe contar con su propio servicio de atención a los usuarios.",
+        "explicacion": "Incorrecta. El decreto permite centralizar el servicio de atención al usuario de los centros y puestos de salud en el hospital de primer nivel del municipio, con mecanismos de retroalimentación y control."
+      },
+      {
+        "id": "B",
+        "texto": "El 2, porque la línea del servicio debe atender de forma permanente, a cualquier hora del día.",
+        "explicacion": "Correcta. Las IPS deben garantizar un sistema de información y atención a los usuarios con una línea telefónica abierta con atención permanente de 24 horas (Decreto 780, art. 2.10.1.1.5, num. 1). Un horario de oficina no cumple. Los demás puntos se ajustan a la norma."
+      },
+      {
+        "id": "C",
+        "texto": "El 3, porque el sistema de información a los usuarios tiene que funcionar por vía telefónica.",
+        "explicacion": "Incorrecta. Si las condiciones locales impiden usar el teléfono, el decreto ordena establecer un sistema de información permanente con los medios más idóneos de la localidad, como propone el punto 3."
+      },
+      {
+        "id": "D",
+        "texto": "El 4, porque medir la satisfacción de los usuarios le corresponde a la EPS y no al prestador.",
+        "explicacion": "Incorrecta. El mismo artículo obliga a las IPS a implantar un control de calidad del servicio basado en el usuario y articulado al sistema de información sectorial."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la línea telefónica del SIAU solo atendería en horario de oficina. Regla: las IPS garantizan un sistema de información y atención con línea telefónica de atención permanente de 24 horas; el servicio de los puestos de salud puede centralizarse en el hospital de primer nivel, y donde no haya teléfono se usa otro medio idóneo permanente (Decreto 780 de 2016, art. 2.10.1.1.5). Conclusión: debe ajustarse el punto 2.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-075",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Talento humano en salud",
+    "subtema": "Permiso transitorio a personal extranjero y autorización de ejercicio en emergencia sanitaria",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1164 de 2007",
+    "articulos": [
+      "art. 18, parágrafo 3",
+      "art. 18, parágrafo 4"
+    ],
+    "texto_fuente": "PARÁGRAFO 3o. Al personal extranjero de salud que ingrese al país en misiones científicas o de prestación de servicios con carácter humanitario, social o investigativo, se le otorgará permiso transitorio para ejercer, por el término de duración de la misión, la cual no debe superar los seis (6) meses. [...] En casos excepcionales y debidamente demostrados el término señalado en el presente artículo podrá ser prorrogado de acuerdo con el programa a desarrollar y la reglamentación que para tal efecto se expida. Este permiso será expedido directamente por el Ministerio de la Protección Social o a través de los colegios de profesionales que tengan funciones públicas delegadas de acuerdo a la reglamentación que para el efecto expida el Ministerio de la Protección Social. PARÁGRAFO 4o. En casos de estado de emergencia sanitaria legalmente declarada, el Ministerio de la Protección Social, podrá autorizar en forma transitoria, el ejercicio de las profesiones, especialidades y ocupaciones, teniendo en cuenta para este caso las necesidades del país y la suficiencia del talento humano que se requiere para garantizar un adecuado acceso a los servicios de salud.",
+    "pregunta": "El gerente de una ESE departamental plantea dos medidas: (1) recibir durante diez meses a una brigada de cirujanos extranjeros de una organización humanitaria, que operaría en la ESE con un solo permiso para toda la misión; (2) si el Gobierno declara legalmente la emergencia sanitaria que se anuncia, que la propia ESE expida autorizaciones transitorias de ejercicio a personal que no cumple todos los requisitos ordinarios. La profesional de talento humano debe emitir concepto. ¿Qué debe decir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que los cirujanos deben convalidar sus títulos e inscribirse en el ReTHUS, y que la ESE sí puede expedir esas autorizaciones.",
+        "explicacion": "Incorrecta. Para las misiones humanitarias, la Ley 1164 prevé un permiso transitorio, no la convalidación ni la inscripción ordinaria. Y la autorización transitoria en la emergencia sanitaria no la da la ESE, sino el Ministerio."
+      },
+      {
+        "id": "B",
+        "texto": "Que la brigada no necesita permiso por ser humanitaria, y que en la emergencia esas autorizaciones las da el Ministerio de Salud.",
+        "explicacion": "Incorrecta. El carácter humanitario no exime del permiso: la ley lo prevé precisamente para esas misiones. Acierta en que la autorización en la emergencia es del Ministerio."
+      },
+      {
+        "id": "C",
+        "texto": "Que el permiso de la brigada no pasa de seis meses salvo prórroga excepcional, y que esas autorizaciones las da el Ministerio de Salud.",
+        "explicacion": "Correcta. Al personal extranjero en misiones humanitarias se le otorga un permiso transitorio por la duración de la misión, que no debe superar seis meses y solo se prorroga en casos excepcionales y demostrados; lo expide el Ministerio o los colegios con funciones públicas delegadas (Ley 1164, art. 18, par. 3). En una emergencia sanitaria declarada, la autorización transitoria de ejercicio es del Ministerio (par. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el permiso de la brigada cubre los diez meses si lo expide la secretaría de salud, y que la ESE puede dar esas autorizaciones.",
+        "explicacion": "Incorrecta. El permiso no lo expide la secretaría de salud, sino el Ministerio o los colegios con funciones públicas delegadas, y no supera seis meses salvo prórroga excepcional. Tampoco la ESE autoriza el ejercicio en la emergencia."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la misión duraría diez meses con un solo permiso, y la ESE quiere autorizar ella misma el ejercicio en la emergencia. Regla: el personal extranjero en misiones humanitarias recibe un permiso transitorio que no debe superar seis meses, prorrogable solo en casos excepcionales, expedido por el Ministerio o los colegios con funciones delegadas; en emergencia sanitaria declarada, la autorización transitoria es del Ministerio (Ley 1164 de 2007, art. 18, pars. 3 y 4).",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1164_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-076",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Talento humano en salud",
+    "subtema": "Sanción ética extinta registrada en el ReTHUS y acceso al empleo público",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1164 de 2007",
+    "articulos": [
+      "art. 23, inc. 2 (modificado por el art. 100 del Decreto Ley 2106 de 2019)",
+      "art. 37 (de la protección laboral)"
+    ],
+    "texto_fuente": "Además, allí deberá registrarse la información sobre las sanciones al personal de salud que reporten los tribunales de ética, según el caso, las autoridades competentes o los particulares a quienes se les deleguen funciones públicas. [...] No será causal de inhabilidad para el ejercicio laboral en administración pública la sanción que haya sido declarada extinta por cualquiera de las causales señaladas en la ley.",
+    "pregunta": "Para proveer en provisionalidad un empleo de enfermera en una ESE municipal, la profesional de talento humano consulta el ReTHUS de la aspirante y encuentra registrada una suspensión de seis meses que le impuso en 2023 el tribunal de ética de enfermería. La aspirante aporta la resolución de 2024 con la que ese tribunal dio por terminada la sanción, al verificar que la había cumplido. El jefe de enfermería sostiene que la anotación le impide ocupar un empleo público. ¿Qué debe concluir la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no puede nombrarla mientras la suspensión siga anotada en el ReTHUS, que refleja la situación actual de cada profesional.",
+        "explicacion": "Incorrecta. El ReTHUS registra las sanciones que reportan los tribunales de ética (art. 23), pero que la anotación siga allí no la convierte en inhabilidad: la ley excluye expresamente la sanción declarada extinta, como esta."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo puede nombrarla en un cargo sin atención directa de pacientes, en razón del antecedente ético registrado.",
+        "explicacion": "Incorrecta. La Ley 1164 no restringe el tipo de cargo por una sanción ética ya extinta: dispone que no es causal de inhabilidad para el ejercicio laboral en la administración pública."
+      },
+      {
+        "id": "C",
+        "texto": "Que antes de decidir debe pedir al tribunal de ética un concepto sobre la idoneidad actual de la aspirante para el cargo.",
+        "explicacion": "Incorrecta. Ningún concepto del tribunal es requisito para el nombramiento. La sanción ya fue declarada extinta, y en ese caso la ley dice que no es causal de inhabilidad."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede nombrarla, porque una sanción ética que ya perdió sus efectos no le impide trabajar en una entidad pública.",
+        "explicacion": "Correcta. El ReTHUS registra las sanciones que reportan los tribunales de ética (Ley 1164, art. 23, modificado por el Decreto Ley 2106 de 2019), pero la sanción declarada extinta, como la que el tribunal dio por terminada por cumplimiento, no es causal de inhabilidad para el ejercicio laboral en la administración pública (art. 37)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el tribunal de ética dio por terminada la suspensión por cumplimiento, es decir, la declaró extinta, aunque siga anotada en el ReTHUS. Regla: el ReTHUS registra las sanciones que reportan los tribunales de ética (Ley 1164 de 2007, art. 23), pero la sanción declarada extinta no es causal de inhabilidad para el ejercicio laboral en la administración pública (art. 37). Conclusión: la anotación no impide el nombramiento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1164_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Talento humano en salud",
+    "subtema": "Prohibición de vincular el personal misional permanente por intermediación laboral",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 103, inc. 1"
+    ],
+    "texto_fuente": "El personal misional permanente de las Instituciones públicas Prestadoras de Salud no podrá estar vinculado mediante la modalidad de cooperativas de trabajo asociado que hagan intermediación laboral, o bajo ninguna otra modalidad de vinculación que afecte sus derechos constitucionales, legales y prestacionales consagrados en las normas laborales vigentes.",
+    "pregunta": "Para bajar costos, el gerente de una ESE propone que los 30 auxiliares de enfermería del servicio de hospitalización, que cumplen funciones permanentes propias de la misión de la entidad, pasen a vincularse por medio de una cooperativa de trabajo asociado que haría la intermediación laboral. Pide concepto al profesional jurídico. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no es viable: la ley veda esa forma de vinculación para el personal misional estable de una IPS pública.",
+        "explicacion": "Correcta. El personal misional permanente de las IPS públicas no puede vincularse mediante cooperativas de trabajo asociado que hagan intermediación laboral, ni por otra modalidad que afecte sus derechos constitucionales, legales y prestacionales (Ley 1438 de 2011, art. 103)."
+      },
+      {
+        "id": "B",
+        "texto": "Que es viable si la cooperativa garantiza la afiliación a la seguridad social y el pago de las compensaciones.",
+        "explicacion": "Incorrecta. La prohibición no depende de que la cooperativa pague la seguridad social: la ley veda esa modalidad para el personal misional permanente de las IPS públicas."
+      },
+      {
+        "id": "C",
+        "texto": "Que es viable por un año, mientras se aprueba la ampliación de la planta de personal de la ESE.",
+        "explicacion": "Incorrecta. El artículo no permite usar esa modalidad de manera transitoria mientras se ajusta la planta: la prohibición rige para el personal misional permanente."
+      },
+      {
+        "id": "D",
+        "texto": "Que no es viable, porque una ESE no puede celebrar contratos de ninguna clase con cooperativas de trabajo asociado.",
+        "explicacion": "Incorrecta. Generaliza en exceso: la ley no prohíbe cualquier contrato con cooperativas, sino vincular por medio de ellas, con intermediación laboral, al personal misional permanente."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los auxiliares de enfermería de hospitalización cumplen funciones permanentes de la misión de la ESE y se vincularían por una cooperativa que hace intermediación laboral. Regla: el personal misional permanente de las IPS públicas no puede vincularse mediante cooperativas de trabajo asociado que hagan intermediación laboral ni por otra modalidad que afecte sus derechos (Ley 1438 de 2011, art. 103). Conclusión: la propuesta no es viable.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Inspección, vigilancia y control",
+    "subtema": "Multas de la Superintendencia por obstaculizar la atención de urgencias: sujetos y forma de pago",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 130, num. 4 (modificado por el art. 3 de la Ley 1949 de 2019)",
+      "art. 130A (adicionado por el art. 4 de la Ley 1949 de 2019)",
+      "art. 131, num. 2 y parágrafo 1 (modificado por el art. 2 de la Ley 1949 de 2019)"
+    ],
+    "texto_fuente": "La Superintendencia Nacional de Salud impondrá sanciones de acuerdo con la conducta o infracción investigada, sin perjuicio de lo dispuesto en otras disposiciones del Sistema General de Seguridad Social en Salud, así: [...] 4. Impedir u obstaculizar la atención de urgencias. [...] serán sujetos de las sanciones administrativas que imponga la Superintendencia Nacional de Salud entre otros los siguientes: Las personas jurídicas sujetas a la inspección, vigilancia y control de la Superintendencia Nacional de Salud. Los representantes legales de las entidades públicas y privadas, directores o secretarios de salud o quienes hagan sus veces [...] 2. Multas entre doscientos (200) y hasta ocho mil (8.000) salarios mínimos legales mensuales vigentes para personas jurídicas, y entre (50) y hasta (2.000) salarios mínimos legales mensuales vigentes para las personas naturales. [...] el pago de aquellas que se impongan a título personal debe hacerse con recursos diferentes a los de la entidad. En el caso de que las sanciones se impongan a personas jurídicas, deberán ser asumidas con su patrimonio y en ningún caso para su pago se podrá acudir a los recursos del Sistema General de Seguridad Social en Salud.",
+    "pregunta": "Durante tres días, por orden escrita del gerente de una ESE, el servicio de urgencias se negó a recibir a los afiliados de una EPS que le debe a la ESE más de mil millones de pesos, y los envió a otras instituciones sin atenderlos. La Superintendencia Nacional de Salud abrió una investigación por esos hechos. La junta directiva le pide al asesor jurídico que explique a quiénes puede multar la Superintendencia y con qué recursos se pagarían las multas. ¿Qué debe explicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que solo puede multar a la ESE, como persona jurídica vigilada, y que esta puede pagar la multa con su presupuesto de servicios de salud.",
+        "explicacion": "Incorrecta. También son sujetos de sanción los representantes legales de las entidades públicas, como el gerente. Y la ESE no puede pagar sus multas con recursos del Sistema General de Seguridad Social en Salud."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede multar a la ESE y al gerente; él paga con recursos ajenos a la ESE, y ella no puede usar recursos del sistema de salud.",
+        "explicacion": "Correcta. Impedir u obstaculizar la atención de urgencias es una infracción sancionable (Ley 1438, art. 130, num. 4), y son sujetos de sanción las personas jurídicas vigiladas y los representantes legales de las entidades públicas (art. 130A). Las multas impuestas a título personal se pagan con recursos distintos a los de la entidad, y las de las personas jurídicas se asumen con su patrimonio, sin acudir a recursos del sistema (art. 131, par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo puede multar al gerente, porque la conducta se originó en una orden suya, y que él debe pagar la multa con sus propios recursos.",
+        "explicacion": "Incorrecta. Que la orden haya sido del gerente no excluye a la ESE: la persona jurídica vigilada también es sujeto de sanción. Acierta en que el gerente paga con recursos distintos a los de la entidad."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede multar a la ESE y al gerente, y que la ESE puede pagar las dos multas si el gerente dio la orden en ejercicio de su cargo.",
+        "explicacion": "Incorrecta. La multa impuesta a título personal al gerente debe pagarse con recursos diferentes a los de la entidad, aunque haya actuado en ejercicio del cargo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el gerente ordenó por escrito no recibir en urgencias a los afiliados de una EPS deudora. Regla: impedir u obstaculizar la atención de urgencias es infracción (Ley 1438 de 2011, art. 130, num. 4); son sujetos de sanción las personas jurídicas vigiladas y los representantes legales de entidades públicas (art. 130A); la multa personal se paga con recursos distintos a los de la entidad, y la de la persona jurídica, con su patrimonio y sin recursos del sistema (art. 131, par. 1).",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Derechos y deberes de los usuarios",
+    "subtema": "Notificación de posible negligencia y denuncia de violencia sexual contra menores",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 21"
+    ],
+    "texto_fuente": "Las Entidades Promotoras de Salud e Instituciones Prestadoras de Salud deberán notificar al Instituto Colombiano de Bienestar Familiar (ICBF), a las comisarías de familia o, en su defecto, a los inspectores de policía o a las personerías municipales o distritales, los casos en que pueda existir negligencia de los padres o adultos responsables en la atención de los niños, niñas y adolescentes, y además denunciar ante la Fiscalía General de la Nación cuando detecten indicios de maltratos físicos, psicológicos o violencia sexual.",
+    "pregunta": "En una misma semana, la trabajadora social de una ESE conoce dos casos atendidos en urgencias pediátricas: (1) un niño de 4 años al que sus padres trajeron cinco días después de que se quemó la mano en la casa, sin haberle dado ningún cuidado y sin que haya indicios de que la quemadura fuera intencional; (2) una niña de 9 años en cuya valoración el médico encontró indicios de violencia sexual. ¿Qué debe hacer la ESE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Notificar los dos casos al ICBF o a la comisaría de familia, que son las autoridades que deciden si deben denunciarse.",
+        "explicacion": "Incorrecta. Ante indicios de violencia sexual, la ley obliga a la propia IPS a denunciar ante la Fiscalía; no le deja esa decisión al ICBF ni a la comisaría."
+      },
+      {
+        "id": "B",
+        "texto": "Denunciar los dos casos ante la Fiscalía, porque en ambos existe una posible vulneración de los derechos de un menor.",
+        "explicacion": "Incorrecta. La denuncia ante la Fiscalía es para los indicios de maltrato o de violencia sexual. La posible negligencia de los padres se notifica al ICBF o a la comisaría de familia."
+      },
+      {
+        "id": "C",
+        "texto": "Informar el primer caso al ICBF o a la comisaría de familia y poner el segundo en conocimiento de la Fiscalía.",
+        "explicacion": "Correcta. Las IPS deben notificar al ICBF o a las comisarías de familia (en su defecto, a los inspectores de policía o las personerías) los casos de posible negligencia de los padres, y denunciar ante la Fiscalía cuando detecten indicios de maltrato o de violencia sexual (Ley 1438 de 2011, art. 21)."
+      },
+      {
+        "id": "D",
+        "texto": "Informar el primer caso a la personería y denunciar el segundo solo cuando Medicina Legal confirme los indicios.",
+        "explicacion": "Incorrecta. La personería recibe la notificación solo en defecto del ICBF y de la comisaría, y la denuncia procede ante los indicios: no exige una confirmación previa de Medicina Legal."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en el primer caso hay posible negligencia de los padres sin indicios de maltrato; en el segundo, indicios de violencia sexual. Regla: las IPS notifican al ICBF o a la comisaría de familia (en su defecto, a inspectores de policía o personerías) la posible negligencia, y denuncian ante la Fiscalía los indicios de maltrato o violencia sexual (Ley 1438 de 2011, art. 21). Conclusión: notificación en el primero y denuncia en el segundo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-080",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Humanización y trato digno",
+    "subtema": "Reglas internas de hospitalización frente a los derechos del paciente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1751 de 2015",
+    "articulos": [
+      "art. 10, inc. 1, lits. c, f, j y k"
+    ],
+    "texto_fuente": "c) A mantener una comunicación plena, permanente, expresa y clara con el profesional de la salud tratante; [...] f) A recibir un trato digno, respetando sus creencias y costumbres, así como las opiniones personales que tengan sobre los procedimientos; [...] j) A recibir los servicios de salud en condiciones de higiene, seguridad y respeto a su intimidad; k) A la intimidad. Se garantiza la confidencialidad de toda la información que sea suministrada en el ámbito del acceso a los servicios de salud y de las condiciones de salud y enfermedad de la persona, sin perjuicio de la posibilidad, de acceso a la misma por los familiares en los eventos autorizados por la ley o las autoridades en las condiciones que esta determine;",
+    "pregunta": "Para «mantener el orden», la coordinadora administrativa de hospitalización de una ESE expidió una circular con cuatro reglas: 1) solo podrá ingresar el capellán de la ESE, no los ministros de otros cultos que pidan los pacientes; 2) para agilizar la ronda, las curaciones en la sala general se harán sin correr las cortinas entre camas; 3) para no interrumpir a los médicos, los pacientes plantearán sus dudas sobre el tratamiento a la jefe de enfermería, que se las transmitirá; 4) no se informará a los familiares el diagnóstico de un paciente adulto y consciente sin la autorización de este. El gerente pide concepto a la profesional del SIAU. ¿Qué reglas debe recomendar ajustar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las reglas 1, 2 y 4; la 3 puede seguir, pues la ESE organiza cómo circula la información entre el paciente y el equipo.",
+        "explicacion": "Incorrecta. La regla 3 desconoce el derecho del paciente a una comunicación plena, permanente, expresa y clara con el profesional tratante (lit. c), que no puede reemplazarse por un intermediario. Y la regla 4 es válida: la información del paciente es confidencial, y los familiares acceden a ella en los eventos que autoriza la ley (lit. k)."
+      },
+      {
+        "id": "B",
+        "texto": "Las reglas 2, 3 y 4; la 1 puede seguir, pues la ESE puede limitar la asistencia religiosa a su propia capellanía.",
+        "explicacion": "Incorrecta. La regla 1 desconoce el derecho a un trato digno que respete las creencias y costumbres del paciente (lit. f): la asistencia religiosa que pide no puede limitarse al culto de la capellanía. Y la regla 4 es válida, por la confidencialidad de la información (lit. k)."
+      },
+      {
+        "id": "C",
+        "texto": "Las reglas 1, 3 y 4; la 2 puede seguir, pues el resguardo de la intimidad se exige en habitaciones y no en salas comunes.",
+        "explicacion": "Incorrecta. La regla 2 desconoce el derecho a recibir los servicios en condiciones de respeto a la intimidad (lit. j), que no depende del tipo de sala. Y la regla 4 es válida, por la confidencialidad de la información (lit. k)."
+      },
+      {
+        "id": "D",
+        "texto": "Las reglas 1, 2 y 3; la 4 puede seguir, pues el diagnóstico de un adulto consciente es reservado aun ante su familia.",
+        "explicacion": "Correcta. Las reglas 1, 2 y 3 desconocen, en su orden, el trato digno que respeta las creencias del paciente (lit. f), el respeto a su intimidad al prestarle el servicio (lit. j) y su comunicación plena y directa con el profesional tratante (lit. c). La regla 4 aplica la confidencialidad de la información, a la que los familiares acceden en los eventos que autoriza la ley (lit. k)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la circular limita la asistencia religiosa a un culto, hace curaciones a la vista de otros pacientes, pone un intermediario entre el paciente y su médico y reserva frente a la familia el diagnóstico de un adulto consciente. Regla: la Ley 1751 de 2015, art. 10, garantiza la comunicación con el profesional tratante (lit. c), un trato digno que respete las creencias (lit. f), el respeto a la intimidad (lit. j) y la confidencialidad de la información (lit. k). Conclusión: se ajustan las reglas 1, 2 y 3.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
   }
 ]

@@ -5426,5 +5426,1096 @@
       "fecha": "2026-10-10",
       "p_estimado": 60
     }
+  },
+  {
+    "id": "TC-TRI-101",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Registro Único Tributario (RUT)",
+    "subtema": "Inscripción posterior al inicio de la actividad con establecimiento abierto al público",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 658-3 num. 1 (adicionado por el art. 49 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "1. Sanción por no inscribirse en el Registro Unico Tributario, RUT, antes del inicio de la actividad, por parte de quien esté obligado a hacerlo. Se impondrá la clausura del establecimiento, sede, local, negocio u oficina, por el término de un (1) día por cada mes o fracción de mes de retraso en la inscripción, o una multa equivalente a una (1) UVT por cada día de retraso en la inscripción, para quienes no tengan establecimiento, sede, local, negocio u oficina.",
+    "pregunta": "Un inspector de la División de Fiscalización establece que Héctor, comerciante persona natural obligado a inscribirse en el RUT, abrió al público su ferretería el lunes 3 de agosto de 2026, en un local que toma en arriendo, y solo se inscribió el martes 20 de octubre de 2026. ¿Qué sanción prevé la ley para este caso, antes de cualquier reducción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Multa de 78 UVT, una por cada día de retraso, porque el local donde vende no es de su propiedad.",
+        "explicacion": "Incorrecta. La multa de una UVT por día de retraso es para quien no tiene establecimiento, sede, local, negocio u oficina. La norma no exige que el local sea propio: Héctor atiende al público en un local arrendado, así que la sanción es la clausura."
+      },
+      {
+        "id": "B",
+        "texto": "Clausura de la ferretería por dos días, porque solo cuentan los meses de retraso ya cumplidos.",
+        "explicacion": "Incorrecta. La clausura es de un día por cada mes o fracción de mes de retraso. Del 3 de agosto al 20 de octubre hay dos meses completos y 17 días más, y esa fracción también se cuenta."
+      },
+      {
+        "id": "C",
+        "texto": "Clausura de la ferretería por tres días, porque los 17 días sobrantes se computan como otro mes.",
+        "explicacion": "Correcta. Héctor tiene establecimiento, aunque sea arrendado, así que se le impone la clausura de un día por cada mes o fracción de mes de retraso. Del 3 de agosto al 3 de octubre van dos meses, y del 3 al 20 de octubre corre una fracción: tres días."
+      },
+      {
+        "id": "D",
+        "texto": "Multa de 156 UVT, dos por cada día de retraso, porque tampoco informó a tiempo la dirección del local.",
+        "explicacion": "Incorrecta. Las dos UVT diarias corresponden a la actualización tardía del RUT cuando el cambio se refiere a la dirección o a la actividad económica (art. 658-3 num. 3). Aquí la falta es la inscripción tardía de quien tiene establecimiento, que se sanciona con clausura."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Héctor abrió su ferretería, en un local arrendado, el 3 de agosto de 2026 y se inscribió en el RUT el 20 de octubre. Regla: el art. 658-3 num. 1 sanciona no inscribirse antes del inicio de la actividad con la clausura del establecimiento por un día por cada mes o fracción de mes de retraso; la multa de una UVT por día es para quien no tiene establecimiento, y la norma no exige que sea propio. Cálculo: dos meses (al 3 de octubre) más 17 días = tres meses o fracción. Conclusión: clausura por tres días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-TRI-102",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Correcciones de las declaraciones",
+    "subtema": "Corrección que no cambia el valor a pagar ni el saldo a favor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 588 inc. 1 (modificado por el art. 107 de la Ley 2010 de 2019)",
+      "art. 588 inc. 4 (adicionado por el art. 63 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "los contribuyentes, responsables o agentes retenedores, podrán corregir sus declaraciones tributarias dentro de los tres (3) años siguientes al vencimiento del plazo para declarar y antes de que se les haya notificado requerimiento especial o pliego de cargos, en relación con la declaración tributaria que se corrige, y se liquide la correspondiente sanción por corrección. [...] La corrección prevista en este artículo también procede cuando no se varíe el valor a pagar o el saldo a favor. En este caso no será necesario liquidar sanción por corrección.",
+    "pregunta": "Una SAS presentó a tiempo, el martes 12 de mayo de 2026, su declaración de renta del año gravable 2025. En septiembre de 2026, su contadora advierte que anotó $40.000.000 de intereses ganados en el renglón de ingresos de la actividad ordinaria, cuando correspondían al renglón de ingresos financieros. El total de ingresos, la renta líquida, el impuesto y el saldo a pagar quedan iguales. La DIAN no le ha notificado ningún acto. La contadora pregunta a un facilitador de servicio al ciudadano si puede arreglar el error y con qué costo. ¿Qué debe responderle el facilitador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede corregirla, pero debe liquidar la sanción mínima de 10 UVT por corregir tras el vencimiento.",
+        "explicacion": "Incorrecta. La sanción mínima rige cuando hay una sanción que liquidar. Aquí no la hay: la corrección no varía el valor a pagar ni el saldo a favor."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede corregirla presentando una nueva declaración, sin pagar ninguna sanción por hacerlo.",
+        "explicacion": "Correcta. La corrección del art. 588 procede también cuando no varía el valor a pagar o el saldo a favor, y en ese caso no se liquida sanción. La SAS está dentro de los tres años y no ha recibido requerimiento especial ni pliego de cargos."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede corregirla, pues la corrección exige que varíe el impuesto o el saldo de la declaración.",
+        "explicacion": "Incorrecta. El art. 588 permite expresamente corregir aunque no varíe el valor a pagar o el saldo a favor."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede corregirla, pero debe liquidar como sanción el 10% de los $40.000.000 mal clasificados.",
+        "explicacion": "Incorrecta. La sanción por corrección se calcula sobre el mayor valor a pagar o el menor saldo a favor (art. 644), no sobre las cifras reclasificadas. Como no hay mayor valor, no hay sanción."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el error solo cambia el renglón de unos ingresos; el impuesto y el saldo a pagar siguen iguales, y la DIAN no ha notificado ningún acto. Regla: el art. 588 permite corregir dentro de los tres años siguientes al vencimiento del plazo y antes del requerimiento especial o del pliego de cargos, y aclara que la corrección también procede cuando no varía el valor a pagar o el saldo a favor, caso en el cual no se liquida sanción. Conclusión: la SAS puede corregir sin sanción.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-TRI-103",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Declaraciones tributarias",
+    "subtema": "Declaración de retención presentada antes del vencimiento sin pago total",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 580-1 inc. 1 (adicionado por el art. 15 de la Ley 1430 de 2010)",
+      "art. 580-1 inc. 5 (modificado por el art. 101 de la Ley 2010 de 2019)",
+      "art. 580-1 par. 3 (adicionado por el art. 78 de la Ley 2277 de 2022)"
+    ],
+    "texto_fuente": "Las declaraciones de retención en la fuente presentadas sin pago total no producirán efecto legal alguno, sin necesidad de acto administrativo que así lo declare. [...] La declaración de retención en la fuente que se haya presentado sin pago total antes del vencimiento del plazo para declarar producirá efectos legales, siempre y cuando el pago total de la retención se efectúe o se haya efectuado a más tardar dentro de los dos (2) meses siguientes contados a partir de la fecha del vencimiento del plazo para declarar. Lo anterior sin perjuicio de la liquidación de los intereses moratorios a que haya lugar. [...] La declaración de retención en la fuente que se haya presentado sin pago total producirá efectos legales, siempre y cuando el valor dejado de pagar no supere diez (10) UVT y este se cancele a más tardar dentro del año uno (1) siguiente contado a partir de la fecha de vencimiento del plazo para declarar.",
+    "pregunta": "Una SAS debía declarar y pagar la retención en la fuente de agosto de 2026 a más tardar el jueves 10 de septiembre de 2026. Presentó la declaración el martes 8 de septiembre, con una retención a cargo de $15.000.000, pero ese día solo pagó $9.000.000. Los $6.000.000 restantes los pagó el viernes 6 de noviembre de 2026. Para 2026, la UVT es de $52.374. Una analista de la División de Recaudo debe establecer la situación de esa declaración. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no produce efecto legal, pues lo que quedó sin pagar superó las 10 UVT que la ley tolera.",
+        "explicacion": "Incorrecta. El límite de 10 UVT es de otra regla (art. 580-1 par. 3), que permite completar el pago hasta un año después. Para la declaración presentada antes del vencimiento, la ley admite completar el pago, sin límite de monto, dentro de los dos meses siguientes al vencimiento."
+      },
+      {
+        "id": "B",
+        "texto": "Que no produce efecto legal, y la SAS debe presentarla otra vez con el pago y la sanción por extemporaneidad.",
+        "explicacion": "Incorrecta. Esa sería la consecuencia si el pago no se hubiera completado a tiempo. La declaración se presentó antes del vencimiento y el pago se completó el 6 de noviembre, antes del 10 de noviembre."
+      },
+      {
+        "id": "C",
+        "texto": "Que produce efectos legales y no causa intereses, porque el saldo se pagó dentro del término legal.",
+        "explicacion": "Incorrecta. La ley salva los efectos de la declaración sin perjuicio de los intereses moratorios: los $6.000.000 se pagaron 57 días después del vencimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Que produce efectos legales, aunque la SAS debe intereses de mora sobre los $6.000.000 pagados tarde.",
+        "explicacion": "Correcta. La declaración se presentó antes del vencimiento (8 de septiembre) y el pago total se completó el 6 de noviembre, dentro de los dos meses siguientes al 10 de septiembre, que llegaban al 10 de noviembre. Produce efectos legales, sin perjuicio de los intereses moratorios por lo pagado tarde."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la SAS presentó la declaración de retención el 8 de septiembre, antes del vencimiento del 10 de septiembre, y completó el pago el 6 de noviembre de 2026. Regla: el art. 580-1, en el inciso modificado por la Ley 2010 de 2019, da efectos a la declaración presentada sin pago total antes del vencimiento si el pago total se hace dentro de los dos meses siguientes al vencimiento, sin perjuicio de los intereses de mora. Cálculo: los dos meses llegaban al 10 de noviembre. Conclusión: produce efectos y causa intereses.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TRI-104",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Sanción por no declarar retención en la fuente: base superior",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 643 inc. 1 y num. 3 (modificado por el art. 284 de la Ley 1819 de 2016)",
+      "art. 716"
+    ],
+    "texto_fuente": "Los contribuyentes, agentes retenedores o responsables obligados a declarar, que omitan la presentación de las declaraciones tributarias, serán objeto de una sanción equivalente a: [...] 3. En el caso de que la omisión se refiera a la declaración de retenciones, al diez por ciento (10%) de los cheques girados u otros medios de pago canalizados a través del sistema financiero, o costos y gastos de quien persiste en su incumplimiento, que determine la Administración Tributaria por el período al cual corresponda la declaración no presentada, o al ciento por ciento (100%) de las retenciones que figuren en la última declaración de retenciones presentada, el que fuere superior. [...] Vencido el término que otorga el emplazamiento de que trata el artículo anterior, sin que se hubiere presentado la declaración respectiva, la Administración de Impuestos procederá a aplicar la sanción por no declarar prevista en el artículo 643.",
+    "pregunta": "Una SAS agente de retención no presentó la declaración de retención en la fuente de marzo de 2026, y venció el plazo del emplazamiento previo por no declarar sin que la presentara. Un gestor de fiscalización proyecta la resolución sanción. Con la información de los bancos, establece que en marzo de 2026 la SAS hizo pagos por transferencias y cheques por $180.000.000. La última declaración de retención que la SAS presentó, la de febrero de 2026, registra retenciones por $21.500.000. ¿Por qué valor debe proponerse la sanción por no declarar, antes de cualquier reducción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$21.500.000",
+        "explicacion": "Correcta. Se comparan las dos bases: 10% de los pagos canalizados por el sistema financiero en marzo ($18.000.000) y 100% de las retenciones de la última declaración presentada ($21.500.000). La ley ordena aplicar la superior."
+      },
+      {
+        "id": "B",
+        "texto": "$18.000.000",
+        "explicacion": "Incorrecta. Es el 10% de los pagos de marzo, pero la ley ordena comparar ese valor con el 100% de las retenciones de la última declaración presentada y aplicar el superior."
+      },
+      {
+        "id": "C",
+        "texto": "$39.500.000",
+        "explicacion": "Incorrecta. Suma las dos bases. La ley no las acumula: aplica la que resulte superior."
+      },
+      {
+        "id": "D",
+        "texto": "$2.150.000",
+        "explicacion": "Incorrecta. Aplica el 10% a las retenciones de la última declaración. Sobre esa base la sanción es del 100%."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la SAS persistió en no declarar después del emplazamiento; en marzo pagó $180.000.000 a través del sistema financiero, y su última declaración de retención registra $21.500.000. Regla: el art. 643 num. 3 fija la sanción por no declarar retenciones en el 10% de los cheques u otros pagos canalizados por el sistema financiero, o en el 100% de las retenciones de la última declaración presentada, el que fuere superior. Cálculo: $18.000.000 frente a $21.500.000. Conclusión: $21.500.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TRI-105",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Reducción de la sanción por no declarar y su límite inferior",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 643 par. 2 (modificado por el art. 284 de la Ley 1819 de 2016)",
+      "art. 642 inc. 1",
+      "art. 720 inc. 2 (modificado por el art. 67 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "Si dentro del término para interponer el recurso contra la resolución que impone la sanción por no declarar, el contribuyente, responsable o agente retenedor presenta la declaración, la sanción por no declarar se reducirá al cincuenta por ciento (50%) del valor de la sanción inicialmente impuesta por la Administración Tributaria, en cuyo caso, el contribuyente, responsable o agente retenedor deberá liquidarla y pagarla al presentar la declaración tributaria. En todo caso, esta sanción no podrá ser inferior al valor de la sanción por extemporaneidad que se debe liquidar con posterioridad al emplazamiento previo por no declarar. [...] El contribuyente, responsable, agente retenedor o declarante, que presente la declaración con posterioridad al emplazamiento, deberá liquidar y pagar una sanción por extemporaneidad por cada mes o fracción de mes calendario de retardo, equivalente al diez por ciento (10%) del total del impuesto a cargo o retención objeto de la declaración tributaria, sin exceder del doscientos por ciento (200%) del impuesto o retención, según el caso. [...] dentro de los dos meses siguientes a la notificación del mismo.",
+    "pregunta": "Un responsable del IVA no presentó la declaración del bimestre enero-febrero de 2025, cuyo plazo venció el martes 11 de marzo de 2025. Tras emplazarlo sin respuesta, la DIAN le notificó el lunes 3 de agosto de 2026 la resolución que le impuso una sanción por no declarar de $30.000.000. El lunes 14 de septiembre de 2026, sin haber recurrido, el responsable presenta la declaración, con un impuesto a cargo de $9.000.000, y un gestor de servicio al ciudadano lo orienta para obtener la rebaja de la sanción. Para el ejercicio, no aplica la gradualidad del artículo 640. ¿Qué valor de sanción por no declarar debe liquidar y pagar con la declaración?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$15.000.000",
+        "explicacion": "Incorrecta. Es el 50% de la sanción impuesta, pero la sanción reducida no puede ser inferior a la de extemporaneidad posterior al emplazamiento, que aquí es de $17.100.000."
+      },
+      {
+        "id": "B",
+        "texto": "$30.000.000",
+        "explicacion": "Incorrecta. Es la sanción sin rebaja. Como el responsable declaró dentro de los dos meses para recurrir la resolución, procede la reducción, con el límite inferior que fija la ley."
+      },
+      {
+        "id": "C",
+        "texto": "$17.100.000",
+        "explicacion": "Correcta. El 50% de $30.000.000 es $15.000.000. La extemporaneidad posterior al emplazamiento es del 10% del impuesto por mes o fracción: del 11 de marzo de 2025 al 14 de septiembre de 2026 van 18 meses y 3 días, es decir, 19 meses; 19 × 10% × $9.000.000 = $17.100.000, bajo el tope del 200% ($18.000.000). Como supera $15.000.000, ese es el valor a pagar."
+      },
+      {
+        "id": "D",
+        "texto": "$18.000.000",
+        "explicacion": "Incorrecta. Es el tope del 200% del impuesto. Con 19 meses o fracción de retardo, la sanción por extemporaneidad llega al 190% y no alcanza ese tope."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la sanción por no declarar fue de $30.000.000 y el responsable declaró dentro del término para recurrir, con impuesto de $9.000.000 y 19 meses o fracción de retardo. Reglas: el art. 643 par. 2 reduce la sanción al 50%, sin que pueda ser inferior a la extemporaneidad posterior al emplazamiento; el art. 642 la fija en el 10% del impuesto por mes o fracción, hasta el 200%. Cálculo: 50% = $15.000.000; 19 × 10% × $9.000.000 = $17.100.000. Conclusión: $17.100.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-TRI-106",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Extemporaneidad sin impuesto a cargo, con saldo a favor y gradualidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 641 inc. 3 (modificado por el art. 53 de la Ley 49 de 1990; cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 640 num. 1 (modificado por el art. 282 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Cuando en la declaración tributaria no resulte impuesto a cargo, la sanción por cada mes o fracción de mes calendario de retardo, será equivalente al medio por ciento (0.5%) de los ingresos brutos percibidos por el declarante en el período objeto de declaración, sin exceder la cifra menor resultante de aplicar el cinco por ciento (5%) a dichos ingresos, o del doble del saldo a favor si lo hubiere, o de la suma de 2.500 uvt cuando no existiere saldo a favor. [...] 1. La sanción se reducirá al cincuenta por ciento (50%) del monto previsto en la ley, en tanto concurran las siguientes condiciones: a) Que dentro de los dos (2) años anteriores a la fecha de la comisión de la conducta sancionable no se hubiere cometido la misma; y b) Siempre que la Administración Tributaria no haya proferido pliego de cargos, requerimiento especial o emplazamiento previo por no declarar, según el caso.",
+    "pregunta": "Una SAS presentó el miércoles 2 de septiembre de 2026 su declaración de renta del año gravable 2025, cuyo plazo había vencido el miércoles 13 de mayo de 2026. La declaración no arroja impuesto a cargo; registra ingresos brutos de $1.800.000.000 y un saldo a favor de $12.000.000. La DIAN no le había enviado emplazamiento y la SAS no cometió la misma falta en los dos años anteriores, de modo que sí aplica la gradualidad del artículo 640. Un gestor de servicio al ciudadano revisa con la contadora la sanción por extemporaneidad que debía liquidar. ¿Cuál es su valor, ya aplicada la gradualidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$12.000.000",
+        "explicacion": "Correcta. Retardo: 3 meses y 20 días, es decir, 4 meses. 0,5% × $1.800.000.000 × 4 = $36.000.000, que no puede exceder la menor cifra entre el 5% de los ingresos ($90.000.000) y el doble del saldo a favor ($24.000.000). Con la rebaja al 50% del art. 640, que el caso indica que aplica, queda en $12.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$24.000.000",
+        "explicacion": "Incorrecta. Aplica bien el tope del doble del saldo a favor, pero se queda en la sanción prevista en la ley: omite la rebaja al 50% por gradualidad, que el caso indica que aplica."
+      },
+      {
+        "id": "C",
+        "texto": "$18.000.000",
+        "explicacion": "Incorrecta. Aplica la rebaja del 50% sobre $36.000.000. La rebaja recae sobre la sanción que prevé la ley, que ya está limitada al doble del saldo a favor ($24.000.000): el 50% de esa cifra es $12.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "$36.000.000",
+        "explicacion": "Incorrecta. Es la sanción bruta de 4 meses al 0,5% de los ingresos, sin el tope del doble del saldo a favor y sin la rebaja por gradualidad."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: declaración sin impuesto a cargo, presentada con 4 meses o fracción de retardo, con ingresos brutos de $1.800.000.000 y saldo a favor de $12.000.000; aplica la gradualidad. Reglas: art. 641 inc. 3, 0,5% de los ingresos brutos por mes o fracción, sin exceder la menor cifra entre el 5% de los ingresos y el doble del saldo a favor; art. 640 num. 1, rebaja al 50% del monto previsto en la ley. Cálculo: $36.000.000, con tope de $24.000.000; al 50%, $12.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-TRI-107",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Sanción por corrección cuando la declaración inicial se presentó tarde",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 644 num. 1 (modificado por el art. 285 de la Ley 1819 de 2016)",
+      "art. 644 par. 1"
+    ],
+    "texto_fuente": "El diez por ciento (10%) del mayor valor a pagar o del menor saldo a su favor, según el caso, que se genere entre la corrección y la declaración inmediatamente anterior a aquella, cuando la corrección se realice después del vencimiento del plazo para declarar y antes de que se produzca emplazamiento para corregir de que trata el artículo 685, o auto que ordene visita de inspección tributaria. [...] Cuando la declaración inicial se haya presentado en forma extemporánea, el monto obtenido en cualquiera de los casos previstos en los numerales anteriores, se aumentará en una suma igual al cinco por ciento (5%) del mayor valor a pagar o del menor saldo a su favor, según el caso, por cada mes o fracción de mes calendario transcurrido entre la fecha de presentación de la declaración inicial y la fecha del vencimiento del plazo para declarar por el respectivo período, sin que la sanción total exceda del ciento por ciento (100%) del mayor valor a pagar o del menor saldo a favor.",
+    "pregunta": "Una SAS presentó el jueves 3 de julio de 2025 su declaración de renta del año gravable 2024, cuyo plazo había vencido el jueves 15 de mayo de 2025. El miércoles 14 de octubre de 2026, sin haber recibido emplazamiento para corregir ni auto de inspección tributaria, la corrige porque omitió unos ingresos, y el saldo a pagar aumenta en $10.000.000. Para el ejercicio, no aplica la reducción por gradualidad del artículo 640. Un gestor de servicio al ciudadano le ayuda a liquidar la sanción por corrección. ¿Cuál es su valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.000.000",
+        "explicacion": "Incorrecta. Es solo el 10% del mayor valor a pagar. Como la declaración inicial se presentó tarde, la sanción aumenta en 5% por cada mes o fracción entre el vencimiento y esa presentación."
+      },
+      {
+        "id": "B",
+        "texto": "$9.500.000",
+        "explicacion": "Incorrecta. Cuenta los meses hasta la corrección (17). El aumento se calcula con el tiempo transcurrido entre el vencimiento del plazo y la presentación de la declaración inicial."
+      },
+      {
+        "id": "C",
+        "texto": "$1.500.000",
+        "explicacion": "Incorrecta. Cuenta un solo mes de retardo de la declaración inicial. Del 15 de mayo al 3 de julio hay un mes y 18 días, es decir, dos meses, porque la fracción cuenta como mes."
+      },
+      {
+        "id": "D",
+        "texto": "$2.000.000",
+        "explicacion": "Correcta. 10% de $10.000.000 = $1.000.000 por corregir antes del emplazamiento. La declaración inicial se presentó con un mes y 18 días de retardo (2 meses o fracción), así que se suma 5% × 2 × $10.000.000 = $1.000.000. Total: $2.000.000, bajo el tope del 100%."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la corrección voluntaria aumenta el saldo a pagar en $10.000.000, y la declaración inicial se presentó el 3 de julio de 2025, con el plazo vencido el 15 de mayo. Reglas: art. 644 num. 1, 10% del mayor valor; par. 1, aumento del 5% por mes o fracción entre el vencimiento y la presentación de la declaración inicial, sin superar el 100%. Cálculo: $1.000.000 + (2 × 5% × $10.000.000) = $2.000.000. Conclusión: $2.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-TRI-108",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Sanción por no enviar información subsanada después del pliego de cargos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 651 num. 1 lits. a y b, inc. 5 y par. 1 (modificado por el art. 80 de la Ley 2277 de 2022)"
+    ],
+    "texto_fuente": "1. Una multa que no supere siete mil quinientas (7.500) UVT, la cual será fijada teniendo en cuenta los siguientes criterios: a) El uno por ciento (1%) de las sumas respecto de las cuales no se suministró la información exigida; [...] b) El cero coma siete por ciento (0,7%) de las sumas respecto de las cuales se suministró en forma errónea; [...] La sanción a que se refiere el presente Artículo se reducirá al cincuenta por ciento (50%) de la suma determinada, según lo previsto en el numeral 1), si la omisión es subsanada antes de que se notifique la imposición de la sanción; o al setenta por ciento (70%) de tal suma, si la omisión es subsanada dentro de los dos (2) meses siguientes a la fecha en que se notifique la sanción. [...] El obligado a informar podrá subsanar de manera voluntaria las faltas de que trata el presente Artículo, antes de que la Administración Tributaria profiera pliego de cargos, en cuyo caso deberá liquidar y pagar la sanción correspondiente de que trata el numeral 1) del presente Artículo reducida al diez por ciento (10%).",
+    "pregunta": "Una SAS estaba obligada a reportar la información exógena del año gravable 2024. No reportó pagos a terceros por $900.000.000 y reportó con errores otros pagos por $300.000.000. El martes 1 de septiembre de 2026, la DIAN le notificó pliego de cargos. El lunes 21 de septiembre de 2026, cuando aún no se había proferido la resolución sanción, la SAS envió la información completa y correcta y presentó el memorial de aceptación con el pago de la sanción reducida. Para 2026, la UVT es de $52.374, y no aplica la gradualidad del artículo 640. Un analista de fiscalización verifica el pago. ¿Qué valor debía pagar la SAS?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.110.000",
+        "explicacion": "Incorrecta. La rebaja al 10% es para quien subsana de manera voluntaria antes de que se profiera el pliego de cargos. La SAS subsanó después de notificado el pliego."
+      },
+      {
+        "id": "B",
+        "texto": "$5.550.000",
+        "explicacion": "Correcta. Sanción: 1% de $900.000.000 ($9.000.000) más 0,7% de $300.000.000 ($2.100.000) = $11.100.000, muy por debajo del tope de 7.500 UVT ($392.805.000). Como subsanó después del pliego pero antes de notificarse la sanción, se reduce al 50%: $5.550.000."
+      },
+      {
+        "id": "C",
+        "texto": "$7.770.000",
+        "explicacion": "Incorrecta. La rebaja al 70% corresponde a quien subsana dentro de los dos meses siguientes a la notificación de la sanción. Aquí la sanción aún no se había impuesto."
+      },
+      {
+        "id": "D",
+        "texto": "$11.100.000",
+        "explicacion": "Incorrecta. Es la sanción sin rebaja. Subsanar con memorial de aceptación y pago antes de que se notifique la sanción da derecho a reducirla al 50%."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la SAS omitió información por $900.000.000, la reportó con errores por $300.000.000 y subsanó después del pliego de cargos, antes de la resolución sanción. Reglas: art. 651 num. 1, 1% de lo no suministrado y 0,7% de lo suministrado con errores, sin superar 7.500 UVT; la sanción se reduce al 50% si se subsana antes de notificarse la sanción (la rebaja al 10% es para lo voluntario antes del pliego). Cálculo: $11.100.000 × 50% = $5.550.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TRI-109",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Rebaja de la inexactitud al aceptar hechos de la liquidación de revisión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 713",
+      "art. 648 inc. 1 (modificado por el art. 288 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Si dentro del término para interponer el recurso de reconsideración contra la liquidación de revisión, el contribuyente, responsable o agente retenedor, acepta total o parcialmente los hechos planteados en la liquidación, la sanción por inexactitud se reducirá a la mitad de la sanción inicialmente propuesta por la Administración, en relación con los hechos aceptados. [...] La sanción por inexactitud será equivalente al ciento por ciento (100%) de la diferencia entre el saldo a pagar o saldo a favor, según el caso, determinado en la liquidación oficial y el declarado por el contribuyente, agente retenedor o responsable",
+    "pregunta": "El lunes 7 de septiembre de 2026 se notificó a una SAS una liquidación oficial de revisión de su declaración de renta, que determina un mayor impuesto de $50.000.000: $30.000.000 por costos rechazados y $20.000.000 por ingresos omitidos, con una sanción por inexactitud del 100% de la diferencia. El viernes 30 de octubre de 2026, la SAS acepta los hechos de los ingresos omitidos, corrige su declaración, paga y presenta el memorial ante la oficina de recursos; sobre los costos, interpone el recurso de reconsideración. No hay lugar a gradualidad ni a reincidencia. Un gestor de la división de recursos jurídicos revisa la corrección. ¿Qué valor de sanción por inexactitud debía incluir la SAS?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$10.000.000",
+        "explicacion": "Correcta. La SAS aceptó, dentro de los dos meses para recurrir, los hechos que generan $20.000.000 de mayor impuesto. Sobre esos hechos la inexactitud propuesta era de $20.000.000 (100%), y la ley la reduce a la mitad: $10.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$5.000.000",
+        "explicacion": "Incorrecta. Reduce a la cuarta parte, que es la rebaja por aceptar hechos al responder el requerimiento especial (art. 709). Frente a la liquidación de revisión, la rebaja es a la mitad."
+      },
+      {
+        "id": "C",
+        "texto": "$25.000.000",
+        "explicacion": "Incorrecta. Reduce a la mitad la sanción de toda la liquidación ($50.000.000). La rebaja opera en relación con los hechos aceptados, no con los que se siguen discutiendo."
+      },
+      {
+        "id": "D",
+        "texto": "$20.000.000",
+        "explicacion": "Incorrecta. Es la sanción propuesta sobre los hechos aceptados, sin la rebaja a la mitad que concede la ley por aceptarlos dentro del término para recurrir."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la SAS aceptó, dentro del término para recurrir la liquidación de revisión, los hechos que generan $20.000.000 de mayor impuesto. Reglas: art. 648, inexactitud del 100% de la diferencia; art. 713, si se aceptan hechos de la liquidación de revisión dentro del término para interponer la reconsideración, la sanción se reduce a la mitad de la propuesta, en relación con esos hechos. Cálculo: 100% × $20.000.000 = $20.000.000; a la mitad, $10.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TRI-110",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Intereses moratorios",
+    "subtema": "Liquidación de intereses por el pago tardío del IVA",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 634 inc. 1 (modificado por el art. 278 de la Ley 1819 de 2016)",
+      "art. 635 inc. 1 (modificado por el art. 279 de la Ley 1819 de 2016) e inc. 3 (adicionado por el art. 49 del Decreto Ley 2106 de 2019)",
+      "art. 590 par. (modificado por el art. 48 del Decreto Ley 2106 de 2019)"
+    ],
+    "texto_fuente": "los contribuyentes, agentes retenedores o responsables de los impuestos administrados por la Dirección de Impuestos y Aduanas Nacionales, que no cancelen oportunamente los impuestos, anticipos y retenciones a su cargo, deberán liquidar y pagar intereses moratorios por cada día calendario de retardo en el pago. [...] el interés moratorio se liquidará diariamente a la tasa de interés diario que sea equivalente a la tasa de usura vigente determinada por la Superintendencia Financiera de Colombia para las modalidades de crédito de consumo, menos dos (2) puntos. [...] Para liquidar los intereses moratorios de que trata este artículo aplicará la fórmula establecida en el parágrafo del artículo 590 del Estatuto Tributario. [...] (K x T x t). [...] K: valor insoluto de la obligación [...] T: factor de la tasa de interés (corresponde a la tasa de interés establecida en el parágrafo del artículo 590, o artículo 635 del Estatuto Tributario, según corresponda dividida en 365, o 366 días según el caso). [...] t: número de días calendario de mora desde la fecha en que se debió realizar el pago.",
+    "pregunta": "Una SAS responsable del IVA presentó a tiempo su declaración del bimestre mayo-junio de 2026, cuyo plazo venció el martes 14 de julio de 2026, pero pagó el impuesto a cargo, de $36.500.000, el jueves 13 de agosto de 2026. Para el ejercicio, suponga que durante todo ese lapso la tasa de usura certificada por la Superintendencia Financiera para el crédito de consumo fue del 26% anual. Un facilitador de la División de Recaudo verifica el valor de los intereses moratorios que la SAS debió pagar. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$780.000",
+        "explicacion": "Incorrecta. Aplica la tasa de usura completa (26%). La tasa de mora tributaria es la de usura para crédito de consumo menos dos puntos: 24%."
+      },
+      {
+        "id": "B",
+        "texto": "$744.000",
+        "explicacion": "Incorrecta. Cuenta 31 días, incluido el día del vencimiento. La mora corre desde el día siguiente: del 15 de julio al 13 de agosto hay 30 días."
+      },
+      {
+        "id": "C",
+        "texto": "$840.000",
+        "explicacion": "Incorrecta. Suma dos puntos a la tasa de usura (28%). La ley los resta."
+      },
+      {
+        "id": "D",
+        "texto": "$720.000",
+        "explicacion": "Correcta. Tasa: 26% − 2 = 24% anual, dividida entre 365. Días de mora: 30 (del 15 de julio al 13 de agosto). Intereses: $36.500.000 × 24% / 365 × 30 = $720.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el IVA de $36.500.000 venció el 14 de julio de 2026 y se pagó el 13 de agosto, con una tasa de usura de consumo del 26%. Reglas: art. 634, intereses por cada día calendario de retardo; art. 635, tasa de usura de consumo menos dos puntos; art. 590 par., fórmula K × T × t, con T igual a la tasa dividida en 365. Cálculo: $36.500.000 × (24% / 365) × 30 = $720.000. Conclusión: $720.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-TRI-111",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Determinación oficial",
+    "subtema": "Hechos nuevos después del requerimiento especial: ampliación y su término",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 703",
+      "art. 707",
+      "art. 708",
+      "art. 711"
+    ],
+    "texto_fuente": "Antes de efectuar la liquidación de revisión, la Administración enviará al contribuyente, responsable, agente retenedor o declarante, por una sola vez, un requerimiento especial que contenga todos los puntos que se proponga modificar, con explicación de las razones en que se sustenta. [...] Dentro de los tres (3) meses siguientes, contados a partir de la fecha de notificación del requerimiento especial, el contribuyente, responsable, agente retenedor o declarante, deberá formular por escrito sus objeciones [...] El funcionario que conozca de la respuesta al requerimiento especial podrá, dentro de los tres (3) meses siguientes a la fecha del vencimiento del plazo para responderlo, ordenar su ampliación, por una sola vez, y decretar las pruebas que estime necesarias. La ampliación podrá incluir hechos y conceptos no contemplados en el requerimiento inicial, así como proponer una nueva determinación oficial de los impuestos, anticipos, retenciones y sanciones. [...] La liquidación de revisión deberá contraerse exclusivamente a la declaración del contribuyente y a los hechos que hubieren sido contemplados en el requerimiento especial o en su ampliación si la hubiere.",
+    "pregunta": "El miércoles 4 de marzo de 2026, un gestor de fiscalización notificó a una SAS un requerimiento especial sobre su declaración de renta del año gravable 2022, en el que propone rechazar unos costos. La SAS lo respondió el lunes 1 de junio de 2026. El jueves 20 de agosto de 2026, al analizar información de terceros, el gestor encuentra ingresos de ese año que la SAS no declaró y que el requerimiento no mencionó. ¿Qué debe hacer para que esos ingresos puedan incluirse en la determinación oficial?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Incluirlos en la liquidación de revisión, que puede notificarse hasta el 4 de diciembre de 2026.",
+        "explicacion": "Incorrecta. La liquidación de revisión debe contraerse a los hechos del requerimiento especial o de su ampliación (art. 711). Si incluye hechos nuevos sin ampliación, desconoce esa correspondencia."
+      },
+      {
+        "id": "B",
+        "texto": "Ampliar el requerimiento con esos ingresos, a más tardar el viernes 4 de septiembre de 2026.",
+        "explicacion": "Correcta. El plazo para responder el requerimiento venció el 4 de junio de 2026 (tres meses desde su notificación). Dentro de los tres meses siguientes, hasta el 4 de septiembre, puede ordenarse la ampliación, que admite hechos no contemplados en el requerimiento inicial."
+      },
+      {
+        "id": "C",
+        "texto": "Ampliar el requerimiento con esos ingresos, a más tardar el martes 1 de septiembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta los tres meses desde el día en que la SAS respondió. El plazo para ampliar corre desde el vencimiento del término para responder (4 de junio), no desde la respuesta."
+      },
+      {
+        "id": "D",
+        "texto": "Notificar un segundo requerimiento especial, dedicado a los ingresos, antes de la firmeza.",
+        "explicacion": "Incorrecta. El requerimiento especial se envía por una sola vez y debe contener todos los puntos que se propone modificar (art. 703). Los hechos nuevos entran por la ampliación."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el requerimiento se notificó el 4 de marzo de 2026, y los ingresos omitidos aparecieron el 20 de agosto sin haber sido mencionados en él. Reglas: el requerimiento especial es uno solo (art. 703); la respuesta vence a los tres meses (art. 707); la ampliación, que admite hechos nuevos, se ordena dentro de los tres meses siguientes a ese vencimiento (art. 708); la liquidación se limita a lo planteado en ambos (art. 711). Cálculo: 4 de junio + 3 meses = 4 de septiembre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-TRI-112",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Determinación oficial",
+    "subtema": "Término para la liquidación de aforo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 715 inc. 1",
+      "art. 716",
+      "art. 717"
+    ],
+    "texto_fuente": "Quienes incumplan con la obligación de presentar las declaraciones tributarias, estando obligados a ello, serán emplazados por la Administración de Impuestos, previa comprobación de su obligación, para que lo hagan en el término perentorio de un (1) mes [...] Vencido el término que otorga el emplazamiento de que trata el artículo anterior, sin que se hubiere presentado la declaración respectiva, la Administración de Impuestos procederá a aplicar la sanción por no declarar prevista en el artículo 643. [...] Agotado el procedimiento previsto en los artículos 643, 715 y 716, la Administración podrá, dentro de los cinco (5) años siguientes al vencimiento del plazo señalado para declarar, determinar mediante una liquidación de aforo, la obligación tributaria al contribuyente, responsable, agente retenedor o declarante, que no haya declarado.",
+    "pregunta": "En octubre de 2026, una analista de fiscalización tramita el expediente de Rodrigo, comerciante que estaba obligado a declarar renta por el año gravable 2022, con plazo vencido el jueves 24 de agosto de 2023. Rodrigo nunca declaró. El martes 3 de marzo de 2026 se le notificó el emplazamiento previo por no declarar, que no atendió, y el viernes 10 de julio de 2026 se le notificó la resolución que le impuso la sanción por no declarar. ¿Hasta cuándo puede la DIAN determinar el impuesto de Rodrigo mediante liquidación de aforo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 24 de agosto de 2026.",
+        "explicacion": "Incorrecta. Aplica tres años, que es el término general de firmeza de las declaraciones presentadas. Para quien no declaró, la ley da cinco años para el aforo."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 3 de marzo de 2031.",
+        "explicacion": "Incorrecta. Cuenta cinco años desde el emplazamiento. El término corre desde el vencimiento del plazo para declarar."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 24 de agosto de 2028.",
+        "explicacion": "Correcta. Agotados el emplazamiento y la sanción por no declarar, la DIAN puede proferir la liquidación de aforo dentro de los cinco años siguientes al vencimiento del plazo para declarar: del 24 de agosto de 2023 al 24 de agosto de 2028."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 10 de julio de 2031.",
+        "explicacion": "Incorrecta. Cuenta cinco años desde la resolución sanción. El término de la liquidación de aforo corre desde el vencimiento del plazo para declarar."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el plazo para declarar venció el 24 de agosto de 2023, y Rodrigo fue emplazado y sancionado por no declarar. Regla: agotado el procedimiento de los arts. 643, 715 y 716, el art. 717 permite determinar la obligación mediante liquidación de aforo dentro de los cinco años siguientes al vencimiento del plazo para declarar. Conclusión: hasta el 24 de agosto de 2028.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TRI-113",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Determinación oficial",
+    "subtema": "Liquidación de corrección aritmética: sanción reducida y sanción mínima",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 697 num. 3",
+      "art. 699",
+      "art. 646",
+      "art. 639 inc. 1 (cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "3. Al efectuar cualquier operación aritmética, resulte un valor equivocado que implique un menor valor a pagar por concepto de impuestos, anticipos o retenciones a cargo del declarante, o un mayor saldo a su favor para compensar o devolver. [...] La liquidación prevista en el artículo anterior, se entiende sin perjuicio de la facultad de revisión y deberá proferirse dentro de los dos años siguientes a la fecha de presentación de la respectiva declaración. [...] se aplicará una sanción equivalente al treinta por ciento (30%) del mayor valor a pagar o menor saldo a favor determinado, según el caso, sin perjuicio de los intereses moratorios a que haya lugar. La sanción de que trata el presente artículo, se reducirá a la mitad de su valor, si el contribuyente, responsable, agente retenedor o declarante, dentro del término establecido para interponer el recurso respectivo, acepta los hechos de la liquidación de corrección, renuncia al mismo y cancela el mayor valor de la liquidación de corrección, junto con la sanción reducida. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
+    "pregunta": "Una analista de la División de Fiscalización revisa la declaración de IVA del bimestre enero-febrero de 2025 de una SAS, presentada a tiempo el miércoles 12 de marzo de 2025. Las bases y la tarifa están bien declaradas, pero al restar los impuestos descontables del impuesto generado la SAS anotó un saldo a pagar $2.400.000 menor que el correcto. El lunes 5 de octubre de 2026, la DIAN le notifica la liquidación de corrección aritmética. Dentro del término para recurrirla, la SAS acepta los hechos, renuncia al recurso y paga el mayor valor con la sanción reducida. Para 2026, la UVT es de $52.374, y no aplica la gradualidad del artículo 640. ¿Qué valor de sanción debe pagar la SAS?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$720.000",
+        "explicacion": "Incorrecta. Es la sanción del 30% sin la rebaja a la mitad, que procede porque la SAS aceptó los hechos, renunció al recurso y pagó dentro del término."
+      },
+      {
+        "id": "B",
+        "texto": "$2.400.000",
+        "explicacion": "Incorrecta. Aplica una sanción del 100%, propia de la inexactitud. Un error en una operación aritmética se corrige con liquidación de corrección y se sanciona con el 30% del mayor valor."
+      },
+      {
+        "id": "C",
+        "texto": "$360.000",
+        "explicacion": "Incorrecta. Aplica bien el 30% y la rebaja a la mitad, pero olvida que ninguna sanción, aun reducida, puede ser inferior a 10 UVT."
+      },
+      {
+        "id": "D",
+        "texto": "$524.000",
+        "explicacion": "Correcta. La liquidación se notificó dentro de los dos años siguientes a la presentación (hasta el 12 de marzo de 2027). Sanción: 30% de $2.400.000 = $720.000; reducida a la mitad, $360.000. Como es inferior al mínimo de 10 UVT (10 × $52.374 = $523.740, aproximado a $524.000), se paga $524.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: un error en la resta redujo el saldo a pagar en $2.400.000; la liquidación de corrección se notificó dentro de los dos años, y la SAS aceptó y pagó dentro del término para recurrir. Reglas: art. 646, sanción del 30%, reducida a la mitad si se aceptan los hechos y se paga; art. 639, mínimo de 10 UVT aun para sanciones reducidas; art. 868, aproximación al múltiplo de mil. Cálculo: $720.000 → $360.000, inferior a $524.000. Conclusión: $524.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 30
+    }
+  },
+  {
+    "id": "TC-TRI-114",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Término para formular pliego de cargos por la entrega tardía de información solicitada por la DIAN",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 638 (modificado por el art. 64 de la Ley 6 de 1992)",
+      "art. 651 inc. 1 y num. 1 lit. c (modificado por el art. 80 de la Ley 2277 de 2022)"
+    ],
+    "texto_fuente": "Cuando las sanciones se impongan en resolución independiente, deberá formularse el pliego de cargos correspondiente, dentro de los dos años siguientes a la fecha en que se presentó la declaración de renta y complementarios o de ingresos y patrimonio, del período durante el cual ocurrió la irregularidad sancionable o cesó la irregularidad, para el caso de las infracciones continúadas. Salvo en el caso de la sanción por no declarar, de los intereses de mora, y de las sanciones previstas en los artículos 659, 659-1 y 660 del Estatuto Tributario, las cuales prescriben en el término de cinco años. [...] Las personas y entidades obligadas a suministrar información tributaria, así como aquellas a quienes se les haya solicitado informaciones o pruebas, que no la suministren, que no la suministren dentro del plazo establecido para ello o cuyo contenido presente errores o no corresponda a lo solicitado, incurrirán en la siguiente sanción. [...] c) El cero coma cinco por ciento (0,5%) de las sumas respecto de las cuales se suministró de forma extemporánea;",
+    "pregunta": "El lunes 4 de marzo de 2024, la DIAN envió a una SAS un requerimiento ordinario en el que le pedía información sobre sus compras a proveedores de enero y febrero de ese año, con plazo hasta el miércoles 3 de abril de 2024. La SAS la entregó el martes 24 de septiembre de 2024. Presentó su declaración de renta del año gravable 2023 el miércoles 15 de mayo de 2024, y la del año gravable 2024 el miércoles 14 de mayo de 2025. En octubre de 2026, un gestor de fiscalización prepara la actuación para sancionar la entrega tardía mediante resolución independiente. ¿Hasta qué fecha puede la DIAN formular el pliego de cargos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 15 de mayo de 2026, dos años después de la declaración de renta que la SAS presentó en 2024.",
+        "explicacion": "Incorrecta. Toma la declaración que la SAS presentó durante 2024, que es la del año gravable 2023. La ley cuenta desde la declaración de renta del período durante el cual ocurrió la irregularidad: la entrega tardía ocurrió en 2024, así que es la del año gravable 2024."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 14 de mayo de 2027, dos años después de la declaración de renta del año gravable 2024.",
+        "explicacion": "Correcta. El plazo para responder venció el 3 de abril de 2024 y la información se entregó el 24 de septiembre de 2024: la irregularidad ocurrió y cesó en 2024, el mismo año al que se refiere la información. El pliego debe formularse dentro de los dos años siguientes a la presentación de la renta de ese período, la del año gravable 2024, presentada el 14 de mayo de 2025: hasta el 14 de mayo de 2027."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 24 de septiembre de 2026, dos años después del día en que entregó tarde la información.",
+        "explicacion": "Incorrecta. Cuenta los dos años desde la entrega extemporánea. La ley los cuenta desde la presentación de la declaración de renta del período en que ocurrió la irregularidad."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 3 de abril de 2029, cinco años después del vencimiento del plazo para responder.",
+        "explicacion": "Incorrecta. Los cinco años rigen para la sanción por no declarar, los intereses de mora y las sanciones de los arts. 659, 659-1 y 660. Para la sanción por no enviar a tiempo la información solicitada rige la regla de los dos años."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la información pedida por requerimiento, sobre compras de 2024, debía entregarse el 3 de abril de 2024 y se entregó el 24 de septiembre de 2024; la sanción del art. 651 se impondrá en resolución independiente. Regla: el art. 638 exige formular el pliego dentro de los dos años siguientes a la presentación de la declaración de renta del período durante el cual ocurrió la irregularidad. Aplicación: la falta ocurrió en 2024, y la renta de ese año gravable se presentó el 14 de mayo de 2025. Conclusión: hasta el 14 de mayo de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TRI-115",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Recursos",
+    "subtema": "Saneamiento de la falta de motivos concretos en el recurso de reconsideración",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 720 inc. 2 (modificado por el art. 67 de la Ley 6 de 1992)",
+      "art. 722 lit. a",
+      "art. 728 inc. 2"
+    ],
+    "texto_fuente": "El recurso de reconsideración, salvo norma expresa en contrario, deberá interponerse ante la oficina competente, para conocer los recursos tributarios, de la Administración de Impuestos que hubiere practicado el acto respectivo, dentro de los dos meses siguientes a la notificación del mismo. [...] a. Que se formule por escrito, con expresión concreta de los motivos de inconformidad. [...] La omisión de los requisitos de que tratan los literales a) y c) del artículo 722, podrán sanearse dentro del término de interposición. [...] La interposición extemporánea no es saneable.",
+    "pregunta": "El jueves 9 de julio de 2026 se notificó personalmente a una SAS una liquidación oficial de revisión. El martes 25 de agosto de 2026, su representante legal radicó un recurso de reconsideración que se limitaba a afirmar que la SAS no estaba de acuerdo con la liquidación. La DIAN inadmitió el recurso por falta de motivos concretos, con auto del jueves 3 de septiembre de 2026 que se notificó el martes 15 de septiembre. El viernes 18 de septiembre, la SAS presentó un escrito con argumentos detallados contra cada glosa. Un gestor de la división de recursos jurídicos debe pronunciarse. ¿Qué efecto tiene ese escrito sobre el defecto del recurso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No lo subsana, porque el plazo para corregir esa omisión venció el miércoles 9 de septiembre de 2026.",
+        "explicacion": "Correcta. La falta de expresión concreta de los motivos (art. 722 lit. a) puede sanearse, pero dentro del término de interposición: dos meses desde el 9 de julio, es decir, hasta el 9 de septiembre de 2026. El escrito del 18 de septiembre llegó tarde."
+      },
+      {
+        "id": "B",
+        "texto": "Lo subsana, porque se presentó dentro de los diez días siguientes a la notificación del auto inadmisorio.",
+        "explicacion": "Incorrecta. Los diez días son el plazo de la reposición contra el auto inadmisorio (art. 726), no un nuevo plazo para sanear requisitos: estos se sanean dentro del término de interposición."
+      },
+      {
+        "id": "C",
+        "texto": "Lo subsana, porque la falta de motivos puede corregirse mientras se decide sobre la admisión del recurso.",
+        "explicacion": "Incorrecta. La ley no extiende el saneamiento hasta la decisión sobre la admisión: lo limita al término de interposición del recurso."
+      },
+      {
+        "id": "D",
+        "texto": "No lo subsana, porque la falta de motivos concretos no es saneable, igual que la interposición tardía.",
+        "explicacion": "Incorrecta. La falta de motivos concretos sí es saneable dentro del término de interposición; lo que no es saneable es la interposición extemporánea."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la liquidación se notificó el 9 de julio de 2026; el recurso del 25 de agosto carecía de motivos concretos, y el escrito con argumentos llegó el 18 de septiembre. Reglas: el recurso se interpone dentro de los dos meses siguientes a la notificación (art. 720); debe expresar motivos concretos de inconformidad (art. 722 lit. a); esa omisión puede sanearse dentro del término de interposición (art. 728). Cálculo: el término venció el 9 de septiembre. Conclusión: el defecto no quedó subsanado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-TRI-116",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Recursos",
+    "subtema": "Silencio administrativo positivo y suspensión por inspección tributaria de oficio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 732",
+      "art. 733",
+      "art. 734 inc. 1"
+    ],
+    "texto_fuente": "La Administración de Impuestos tendrá un (1) año para resolver los recursos de reconsideración o reposición, contado a partir de su interposición en debida forma. [...] Cuando se practique inspección tributaria, el término para fallar los recursos, se suspenderá mientras dure la inspección, si ésta se practica a solicitud del contribuyente, responsable, agente retenedor o declarante, y hasta por tres (3) meses cuando se practica de oficio. [...] Si transcurrido el término señalado en el artículo 732, sin perjuicio de lo dispuesto en el artículo anterior, el recurso no se ha resuelto, se entenderá fallado a favor del recurrente, en cuyo caso, la Administración, de oficio o a petición de parte, así lo declarará.",
+    "pregunta": "Una SAS interpuso en debida forma, el martes 14 de octubre de 2025, un recurso de reconsideración contra una liquidación oficial de revisión; el auto admisorio se le notificó el miércoles 5 de noviembre de 2025. La DIAN decretó de oficio una inspección tributaria, con auto notificado el lunes 2 de marzo de 2026, y la diligencia se prolongó hasta el martes 30 de junio de 2026. El martes 20 de octubre de 2026, sin que se le haya notificado el fallo, la SAS pide que se declare el silencio administrativo positivo. ¿Qué debe concluir el gestor de la división de recursos jurídicos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que procede, porque el año para resolver se cumplió el 14 de octubre de 2026 sin que hubiera fallo.",
+        "explicacion": "Incorrecta. Desconoce la suspensión: la inspección tributaria de oficio suspende el término para fallar hasta por tres meses."
+      },
+      {
+        "id": "B",
+        "texto": "Que no procede, porque el año corre desde la admisión y, con la suspensión, vence el 5 de febrero de 2027.",
+        "explicacion": "Incorrecta. El año se cuenta desde la interposición del recurso en debida forma (14 de octubre de 2025), no desde el auto admisorio."
+      },
+      {
+        "id": "C",
+        "texto": "Que no procede, porque la inspección suspendió el plazo tres meses y este vence el 14 de enero de 2027.",
+        "explicacion": "Correcta. El año para resolver corre desde la interposición (14 de octubre de 2025) y vencería el 14 de octubre de 2026, pero la inspección de oficio lo suspendió hasta por tres meses; como duró más, la suspensión es de tres meses y el plazo llega al 14 de enero de 2027. Todavía no hay silencio positivo."
+      },
+      {
+        "id": "D",
+        "texto": "Que no procede, porque la inspección suspendió el plazo los 120 días que duró y vence el 11 de febrero de 2027.",
+        "explicacion": "Incorrecta. La suspensión por toda la duración de la inspección aplica cuando esta se practica a solicitud del contribuyente. Si es de oficio, la suspensión es hasta por tres meses."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: recurso interpuesto en debida forma el 14 de octubre de 2025; inspección de oficio del 2 de marzo al 30 de junio de 2026, casi cuatro meses. Reglas: art. 732, un año para resolver desde la interposición; art. 733, la inspección de oficio suspende el término hasta por tres meses; art. 734, vencido el término sin resolver, opera el silencio positivo. Cálculo: 14 de octubre de 2026 + 3 meses = 14 de enero de 2027. Conclusión: aún no opera el silencio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TRI-117",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Devoluciones y compensaciones",
+    "subtema": "Nueva solicitud tras la inadmisión, vencido el término para pedir la devolución",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 854 inc. 1",
+      "art. 857, causal 2 de inadmisión y par. 1 (modificado por el art. 141 de la Ley 223 de 1995)"
+    ],
+    "texto_fuente": "La solicitud de devolución de impuestos deberá presentarse a más tardar dos años después de la fecha de vencimiento del término para declarar. [...] Las solicitudes de devolución o compensación deberán inadmitirse cuando dentro del proceso para resolverlas se dé alguna de las siguientes causales: [...] 2. Cuando la solicitud se presente sin el lleno de los requisitos formales que exigen las normas pertinentes. [...] Cuando se inadmita la solicitud, deberá presentarse dentro del mes siguiente una nueva solicitud en que se subsanen las causales que dieron lugar a su inadmisión. Vencido el término para solicitar la devolución o compensación la nueva solicitud se entenderá presentada oportunamente, siempre y cuando su presentación se efectúe dentro del plazo señalado en el inciso anterior.",
+    "pregunta": "Una SAS pidió el jueves 30 de abril de 2026 la devolución del saldo a favor de su declaración de renta del año gravable 2023, cuyo plazo para declarar había vencido el martes 14 de mayo de 2024. La DIAN inadmitió la solicitud porque le faltaban requisitos formales, con auto del viernes 8 de mayo de 2026 notificado el martes 12 de mayo. El viernes 5 de junio de 2026, la SAS radicó una nueva solicitud con las fallas corregidas. ¿Cómo debe tratarla la analista de devoluciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazarla en forma definitiva, porque se radicó después del 14 de mayo de 2026, cuando vencían los dos años.",
+        "explicacion": "Incorrecta. Los dos años vencieron el 14 de mayo de 2026, pero la ley tiene por oportuna la nueva solicitud presentada dentro del mes siguiente a la inadmisión, aunque ese término ya haya vencido."
+      },
+      {
+        "id": "B",
+        "texto": "Inadmitirla otra vez, porque las fallas debían corregirse con recurso de reposición contra el auto inadmisorio.",
+        "explicacion": "Incorrecta. La ley prevé que la inadmisión se supere con una nueva solicitud que subsane las causales, dentro del mes siguiente."
+      },
+      {
+        "id": "C",
+        "texto": "Tramitarla como oportuna, porque la primera solicitud interrumpió el término y este volvió a empezar.",
+        "explicacion": "Incorrecta. La primera solicitud no reinicia el término de dos años. La nueva es oportuna por la regla especial del mes siguiente a la inadmisión, no por una interrupción."
+      },
+      {
+        "id": "D",
+        "texto": "Tramitarla como oportuna, porque llegó antes de cumplirse un mes desde la inadmisión de la primera.",
+        "explicacion": "Correcta. La primera solicitud se inadmitió por falta de requisitos formales. La nueva, con las fallas corregidas, se radicó el 5 de junio, dentro del mes siguiente al auto (8 de mayo) y a su notificación (12 de mayo), así que se entiende presentada oportunamente aunque los dos años vencieron el 14 de mayo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la solicitud se inadmitió en mayo de 2026 y la nueva se radicó el 5 de junio, después del 14 de mayo de 2026, cuando vencían los dos años para pedir la devolución. Reglas: art. 854, dos años desde el vencimiento del plazo para declarar; art. 857 par. 1, la nueva solicitud que subsana la inadmisión, presentada dentro del mes siguiente, se entiende oportuna aunque ese término haya vencido. Conclusión: debe tramitarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TRI-118",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Devoluciones y compensaciones",
+    "subtema": "Término para devolver cuando la solicitud se presenta con garantía",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 860 inc. 1 (modificado por el art. 18 de la Ley 1430 de 2010)",
+      "art. 855 inc. 1 (modificado por el art. 19 de la Ley 1430 de 2010), par. 3 (modificado por el art. 140 de la Ley 223 de 1995) y par. 4 (adicionado por el art. 68 de la Ley 1607 de 2012)"
+    ],
+    "texto_fuente": "Cuando el contribuyente o responsable presente con la solicitud de devolución una garantía a favor de la Nación, otorgada por entidades bancarias o de compañías de seguros, por valor equivalente al monto objeto de devolución [...] la Administración de Impuestos, dentro de los veinte (20) días siguientes deberá hacer entrega del cheque, título o giro. [...] La Administración de Impuestos deberá devolver, previa las compensaciones a que haya lugar, los saldos a favor originados en los impuestos sobre la renta y complementarios y sobre las ventas, dentro de los cincuenta (50) días siguientes a la fecha de la solicitud de devolución presentada oportunamente y en debida forma. [...] Cuando la solicitud de devolución se formule dentro de los dos (2) meses siguientes a la presentación de la declaración o de su corrección, la Administración Tributaria dispondrá de un término adicional de un (1) mes para devolver. [...] que ostenten la calidad de operador económico autorizado de conformidad con el decreto 3568 de 2011, la Dirección de Impuestos y Aduanas Nacionales deberá devolver previas las compensaciones a que haya lugar dentro de los treinta (30) días siguientes a la fecha de solicitud presentada oportunamente y en debida forma.",
+    "pregunta": "Una SAS exportadora, que no es operador económico autorizado, presentó el martes 11 de agosto de 2026 su declaración de IVA con saldo a favor y pidió la devolución el martes 8 de septiembre de 2026. Con la solicitud entregó una póliza de una compañía de seguros a favor de la Nación por el valor total a devolver. La SAS no pertenece a ningún sector que la DIAN haya sujetado, por resolución, al término general. Un facilitador del área de devoluciones debe programar el trámite. ¿De qué término dispone la DIAN para devolver?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "De veinte días siguientes a la solicitud, por haberla acompañado de la póliza.",
+        "explicacion": "Correcta. Cuando la solicitud se presenta con garantía bancaria o de compañía de seguros a favor de la Nación, por el monto a devolver, la DIAN debe entregar el cheque, título o giro dentro de los veinte días siguientes (art. 860)."
+      },
+      {
+        "id": "B",
+        "texto": "De cincuenta días siguientes a la solicitud, pues la póliza no modifica ese término.",
+        "explicacion": "Incorrecta. Los cincuenta días son el término general para devolver (art. 855). La garantía lo reduce a veinte días."
+      },
+      {
+        "id": "C",
+        "texto": "De cincuenta días más un mes, pues pidió la devolución a menos de dos meses de declarar.",
+        "explicacion": "Incorrecta. El mes adicional amplía el término general de cincuenta días cuando la solicitud se presenta dentro de los dos meses siguientes a la declaración. Con garantía, la ley fija un término especial de veinte días."
+      },
+      {
+        "id": "D",
+        "texto": "De treinta días siguientes a la solicitud, pues es el término propio de los exportadores.",
+        "explicacion": "Incorrecta. Los treinta días son para los productores y exportadores que tienen la calidad de operador económico autorizado (art. 855 par. 4), y la SAS no la tiene."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la SAS acompañó la solicitud de devolución con una póliza de seguros a favor de la Nación por el valor a devolver, y no es operador económico autorizado. Regla: el art. 860 obliga a la DIAN a entregar el cheque, título o giro dentro de los veinte días siguientes cuando la solicitud se presenta con garantía; los cincuenta días del art. 855, con su mes adicional, son el término general sin garantía. Conclusión: veinte días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-TRI-119",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Cobro coactivo",
+    "subtema": "Facilidades de pago: garantías y plazos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 814 inc. 1 y 2 (modificados por el art. 81 de la Ley 2277 de 2022)",
+      "art. 814 inc. 5 (adicionado por el art. 114 de la Ley 488 de 1998)"
+    ],
+    "texto_fuente": "podrán mediante resolución conceder facilidades para el pago al deudor o a un tercero a su nombre, hasta por cinco (5) años, para el pago de los impuestos de timbre, de renta y complementarios, sobre las ventas y la retención en la fuente [...] Se podrán aceptar garantías personales cuando la cuantía de la deuda no sea superior a tres mil (3.000) UVT. [...] Igualmente se concederán facilidades para el pago, sin garantías, cuando el término no sea superior a un (1) año y el contribuyente no haya incumplido facilidades para el pago durante el año anterior a la fecha de presentación de la solicitud. [...] En casos especiales y solamente bajo la competencia del Director de Impuestos Nacionales [...] podrá concederse un plazo adicional de dos (2) años, al establecido en el inciso primero de este artículo.",
+    "pregunta": "En octubre de 2026, una analista de cobranzas de una dirección seccional estudia la solicitud de facilidad de pago de Teresa, persona natural que debe $210.000.000 por impuesto de renta, sanciones e intereses. En marzo de 2025, la DIAN dejó sin efecto, por incumplimiento, una facilidad que Teresa tenía; desde entonces ella ha estado al día en sus demás obligaciones. Para 2026, la UVT es de $52.374. Teresa propone cuatro alternativas. ¿Cuál puede aprobar la dirección seccional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un plazo de 36 meses respaldado con la garantía personal de su hermano, comerciante solvente.",
+        "explicacion": "Incorrecta. Las garantías personales se aceptan cuando la deuda no supera 3.000 UVT (3.000 × $52.374 = $157.122.000). La deuda de Teresa, de $210.000.000, supera ese límite."
+      },
+      {
+        "id": "B",
+        "texto": "Un plazo de 10 meses sin garantía, dado que su último incumplimiento ocurrió hace más de un año.",
+        "explicacion": "Correcta. Se conceden facilidades sin garantía cuando el plazo no supera un año y el deudor no incumplió facilidades durante el año anterior a la solicitud. El incumplimiento de Teresa fue en marzo de 2025, más de un año antes de octubre de 2026, y el plazo pedido es de 10 meses."
+      },
+      {
+        "id": "C",
+        "texto": "Un plazo de 6 años respaldado con una póliza de seguros que cubra la deuda y sus intereses.",
+        "explicacion": "Incorrecta. El plazo es de hasta cinco años. Los dos años adicionales solo puede concederlos, en casos especiales, el director general, no una dirección seccional."
+      },
+      {
+        "id": "D",
+        "texto": "Un plazo de 24 meses sin garantía, dado que su último incumplimiento ocurrió hace más de un año.",
+        "explicacion": "Incorrecta. La facilidad sin garantía exige un plazo no superior a un año. Para 24 meses, Teresa debe ofrecer una garantía que respalde suficientemente la deuda."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la deuda es de $210.000.000 (unas 4.010 UVT), y el último incumplimiento de Teresa fue en marzo de 2025. Reglas del art. 814: facilidades hasta por cinco años con garantía; garantías personales solo si la deuda no supera 3.000 UVT ($157.122.000); sin garantía, si el plazo no supera un año y no hubo incumplimientos en el año anterior a la solicitud; dos años adicionales solo por el director general. Conclusión: procede el plazo de 10 meses sin garantía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-TRI-120",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Cobro coactivo",
+    "subtema": "Recurso contra la orden de ejecución cuando no se propusieron excepciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 830",
+      "art. 836",
+      "art. 834 (modificado por el art. 80 de la Ley 6 de 1992)",
+      "art. 829-1 inc. 1 (adicionado por el art. 105 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "Dentro de los quince (15) días siguientes a la notificación del mandamiento de pago, el deudor deberá cancelar el monto de la deuda con sus respectivos intereses. Dentro del mismo término, podrán proponerse mediante escrito las excepciones contempladas en el artículo siguiente. [...] Si vencido el término para excepcionar no se hubieren propuesto excepciones, o el deudor no hubiere pagado, el funcionario competente proferirá resolución ordenando la ejecución y el remate de los bienes embargados y secuestrados. Contra esta resolución no procede recurso alguno. [...] En el procedimiento administrativo de cobro, no podrán debatirse cuestiones que debieron ser objeto de discusión en la vía gubernativa.",
+    "pregunta": "A un deudor se le notificó el mandamiento de pago de una liquidación oficial ejecutoriada. Vencido el término legal, no pagó ni propuso excepciones, y la DIAN profirió la resolución que ordena la ejecución y el remate de los bienes embargados, notificada el lunes 7 de septiembre de 2026. El lunes 21 de septiembre, el deudor radica contra esa resolución un recurso de reposición en el que sostiene que la liquidación oficial tenía errores de cálculo. ¿Cómo debe tramitar ese escrito el gestor de cobranzas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como reposición ante el jefe de cobranzas, pues se presentó dentro del mes siguiente a la notificación.",
+        "explicacion": "Incorrecta. La reposición dentro del mes siguiente procede contra la resolución que rechaza las excepciones propuestas (art. 834). Aquí no se propusieron excepciones."
+      },
+      {
+        "id": "B",
+        "texto": "Como reconsideración, pues se presentó dentro de los dos meses siguientes a la notificación.",
+        "explicacion": "Incorrecta. La reconsideración procede contra los actos de determinación y sanción (art. 720). Las actuaciones del cobro coactivo tienen sus propias reglas."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazándolo, porque la orden de ejecución dictada en estas condiciones no admite recursos.",
+        "explicacion": "Correcta. Como el deudor no pagó ni propuso excepciones dentro de los quince días, la resolución que ordena la ejecución y el remate no admite recurso (art. 836). Además, en el cobro no pueden debatirse cuestiones que debieron discutirse en la vía gubernativa (art. 829-1)."
+      },
+      {
+        "id": "D",
+        "texto": "Como escrito de excepciones, pues los errores de cálculo de la liquidación afectan el título.",
+        "explicacion": "Incorrecta. Las excepciones debían proponerse dentro de los quince días siguientes a la notificación del mandamiento (art. 830), y los errores de la liquidación correspondían a la vía gubernativa: no pueden debatirse en el cobro (art. 829-1)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el deudor no pagó ni propuso excepciones dentro del término, y la DIAN dictó la orden de ejecución y remate. Reglas: art. 830, quince días para pagar o excepcionar; art. 836, vencido ese término sin excepciones ni pago, se ordena la ejecución, y contra esa resolución no procede recurso; art. 829-1, en el cobro no se debaten asuntos que correspondían a la vía gubernativa. Conclusión: el escrito debe rechazarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
   }
 ]
