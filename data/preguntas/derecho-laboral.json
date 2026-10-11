@@ -2147,5 +2147,1107 @@
       "fecha": "2026-10-10",
       "p_estimado": 55
     }
+  },
+  {
+    "id": "TC-LAB-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Jornada de trabajo",
+    "subtema": "Jornada máxima y franja diurna de los adolescentes de 15 a 17 años",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 160 num. 1 (modificado por el art. 10 de la Ley 2466 de 2025)",
+      "art. 161 lit. c (modificado por el art. 11 de la Ley 2466 de 2025)",
+      "art. 167"
+    ],
+    "texto_fuente": "1. Trabajo diurno es el que se realiza en el período comprendido entre las seis horas (6:00 a. m.) y las diecinueve horas (7:00 p. m.). [...] c) La duración máxima de la jornada laboral de los menores de edad, autorizados para trabajar, se sujetará a las siguientes reglas: 1. Los menores de edad entre los 15 y los 17 años, solo podrán trabajar en jornada diurna máxima de seis (6) horas diarias y treinta (30) horas a la semana. 2. Los menores de edad, mayores de diecisiete (17) años, solo podrán trabajar en una jornada máxima de ocho (8) horas diarias y cuarenta (40) horas a la semana. [...] Las horas de trabajo durante cada jornada deben distribuirse al menos en dos secciones, con un intermedio de descanso que se adapte racionalmente a la naturaleza del trabajo y a las necesidades de los trabajadores. El tiempo de este descanso no se computa en la jornada.",
+    "pregunta": "En noviembre de 2026, la técnica de talento humano de una fábrica de calzado prepara el horario de Valentina, de 16 años, quien ya cuenta con la autorización para trabajar. La planta opera de lunes a sábado entre las 6:00 a. m. y las 10:00 p. m., y cada horario incluye un descanso de 30 minutos que no se cuenta como tiempo de trabajo. ¿Cuál de estos horarios puede asignarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "De lunes a sábado, de 7:00 a. m. a 1:30 p. m.",
+        "explicacion": "Incorrecta. Da 6 horas diarias de trabajo efectivo (6,5 horas menos el descanso), pero en seis días suma 36 horas semanales. Para un adolescente de 15 a 17 años el tope semanal es de 30 horas (art. 161 lit. c num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "De lunes a viernes, de 1:30 p. m. a 8:00 p. m.",
+        "explicacion": "Incorrecta. Respeta las 6 horas diarias y las 30 semanales, pero termina a las 8:00 p. m. Desde las 7:00 p. m. el trabajo es nocturno (art. 160, mod. Ley 2466 de 2025), y a esta edad solo se permite la jornada diurna."
+      },
+      {
+        "id": "C",
+        "texto": "De lunes a viernes, de 11:00 a. m. a 5:30 p. m.",
+        "explicacion": "Correcta. Cada día hay 6 horas de trabajo efectivo (6,5 horas menos los 30 minutos de descanso, que no se computan según el art. 167), 30 a la semana, y la salida a las 5:30 p. m. queda dentro de la franja diurna, que va hasta las 7:00 p. m."
+      },
+      {
+        "id": "D",
+        "texto": "De lunes a viernes, de 7:00 a. m. a 3:30 p. m.",
+        "explicacion": "Incorrecta. Da 8 horas diarias y 40 semanales, que es el límite para los menores de edad mayores de 17 años. Para Valentina, de 16, el máximo es de 6 horas diarias y 30 semanales."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Valentina tiene 16 años y cada horario incluye 30 minutos de descanso no computable. Regla: el art. 161 lit. c num. 1 del CST (mod. Ley 2466 de 2025) limita a los adolescentes de 15 a 17 años a jornada diurna de 6 horas diarias y 30 semanales; el art. 160 fija la franja diurna entre las 6:00 a. m. y las 7:00 p. m., y el art. 167 excluye el descanso de la jornada. Conclusión: solo el horario de lunes a viernes de 11:00 a. m. a 5:30 p. m. cumple las tres condiciones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-LAB-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Jornada de trabajo",
+    "subtema": "Jornada flexible de 42 horas: horas que exceden el promedio semanal",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 159",
+      "art. 161 lit. a (modificado por el art. 11 de la Ley 2466 de 2025)",
+      "art. 168 num. 2 (modificado por el art. 24 de la Ley 50 de 1990)"
+    ],
+    "texto_fuente": "Trabajo suplementario o de horas extras es el que excede de la jornada ordinaria, y en todo caso el que excede de la máxima legal. [...] a) El empleador y el trabajador o la trabajadora podrán acordar que la jornada semanal de cuarenta y dos (42) horas se realice mediante jornadas diarias flexibles de trabajo, distribuidas en máximo seis días a la semana con un día de descanso obligatorio, que podrá coincidir con el día domingo. Así, el número de horas de trabajo diario podrá distribuirse de manera variable durante la respectiva semana, teniendo como mínimo cuatro (4) horas continuas y máximo hasta nueve (9) horas diarias sin lugar a ningún recargo por trabajo suplementario, cuando el número de horas de trabajo no exceda el promedio de cuarenta y dos (42) horas semanales dentro de la Jornada Ordinaria. [...] 2. El trabajo extra diurno se remunera con un recargo del veinticinco por ciento (25%) sobre el valor del trabajo ordinario diurno.",
+    "pregunta": "Desde agosto de 2026, una empresa de logística y un auxiliar de bodega acordaron por escrito que las horas de cada día variarían según la carga de trabajo, de lunes a sábado, con el domingo como día de descanso. En octubre de 2026 ya rige la jornada máxima legal de 42 horas semanales. En la semana del 19 al 24 de octubre, el auxiliar trabajó, siempre en horario diurno, 9 horas el lunes, el martes, el miércoles y el jueves, y 4 horas el viernes y el sábado; en las demás semanas del mes trabajó exactamente 42 horas. El valor de su hora ordinaria es de $10.000. ¿Cuánto debe liquidarle la técnica de nómina por trabajo suplementario de esa semana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$25.000, por dos horas extras diurnas: las que exceden las 42 horas de la semana.",
+        "explicacion": "Correcta. En la jornada flexible del art. 161 lit. a (mod. Ley 2466 de 2025), los días de hasta 9 horas no generan recargo mientras no se supere el promedio de 42 horas semanales. Esa semana sumó 44 horas: las 2 que exceden las 42 son extras diurnas y se pagan con el valor de la hora más el 25 % (art. 168 num. 2): 2 × $10.000 × 1,25 = $25.000."
+      },
+      {
+        "id": "B",
+        "texto": "$50.000, por cuatro horas extras diurnas: las que exceden ocho horas en cada día.",
+        "explicacion": "Incorrecta. Aplica el tope general de 8 horas diarias. Con el acuerdo de jornada flexible, el día puede llegar a 9 horas sin recargo; lo que se paga como extra es lo que excede las 42 horas semanales."
+      },
+      {
+        "id": "C",
+        "texto": "$5.000, que es el recargo del 25 % sobre las dos horas que exceden las 42 semanales.",
+        "explicacion": "Incorrecta. Paga solo el recargo. Las horas extras están por fuera de la jornada ordinaria que cubre el salario, así que cada una se paga completa más el 25 %: $12.500 por hora, no $2.500."
+      },
+      {
+        "id": "D",
+        "texto": "Nada, porque ningún día superó el máximo de nueve horas que admite este acuerdo.",
+        "explicacion": "Incorrecta. El límite de 9 horas diarias es solo una de las condiciones. El acuerdo tampoco permite superar el promedio de 42 horas semanales, y esa semana sumó 44 sin que las demás semanas lo compensaran."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: con jornada flexible pactada por escrito, la semana sumó 44 horas diurnas, ningún día pasó de 9 y las demás semanas fueron de 42. Regla: el art. 161 lit. a del CST (mod. Ley 2466 de 2025) admite días de 4 a 9 horas sin recargo si no se excede el promedio de 42 horas semanales; el exceso es trabajo suplementario (art. 159) y la hora extra diurna lleva un recargo del 25 % (art. 168 num. 2). Cálculo: 2 × $10.000 × 1,25 = $25.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-LAB-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Jornada de trabajo",
+    "subtema": "Turnos sucesivos de 6 horas diarias y 36 semanales: recargos y descanso compensatorio",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 161 lit. d (modificado por el art. 11 de la Ley 2466 de 2025)",
+      "art. 168 num. 1 (modificado por el art. 24 de la Ley 50 de 1990)",
+      "art. 181 inc. 2 (modificado por el art. 31 de la Ley 50 de 1990)"
+    ],
+    "texto_fuente": "d) El empleador y el trabajador o la trabajadora pueden acordar, temporal o indefinidamente, la organización de turnos de trabajo sucesivos, que permitan operar a la empresa o secciones de esta, sin solución de continuidad durante todos los días de la semana, siempre y cuando el respectivo turno no exceda de seis (6) horas al día y treinta y seis (36) a la semana. En este caso no habrá lugar a recargo nocturno ni al previsto para el trabajo dominical o festivo, pero el trabajador devengará el salario correspondiente a la jornada ordinaria de trabajo, respetando siempre el mínimo legal o convencional y tendrá derecho a un día de descanso remunerado. [...] 1. El trabajo nocturno por el solo hecho de ser nocturno se remunera con un recargo del treinta y cinco por ciento (35%) sobre el valor del trabajo diurno, con excepción del caso de la jornada de treinta y seis (36) horas semanales [...] En el caso de la jornada de treinta y seis (36) horas semanales previstas en el artículo 20 literal c) de esta ley [...] el trabajador solo tendrá derecho a un descanso compensatorio remunerado cuando labore en domingo.",
+    "pregunta": "Una planta de producción que funciona sin interrupción todos los días organizó, mediante acuerdo escrito con sus operarios, cuatro turnos de seis horas que se suceden durante las 24 horas, sin que nadie trabaje más de 36 horas a la semana. En la semana del 18 al 24 de octubre de 2026, un operario cubrió el turno de 12:00 a. m. a 6:00 a. m. de domingo a viernes y descansó el sábado. El técnico de nómina liquida esa semana. ¿Qué le corresponde al operario por haber trabajado de noche y por el turno del domingo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El recargo nocturno del 35 %, pero no el del domingo, que se compensa con un día de descanso remunerado.",
+        "explicacion": "Incorrecta. En los turnos de 6 horas diarias y 36 semanales del art. 161 lit. d no hay recargo nocturno; el propio art. 168 num. 1 excluye del recargo del 35 % la jornada de 36 horas semanales."
+      },
+      {
+        "id": "B",
+        "texto": "El recargo por el trabajo del domingo, pero no el nocturno, que se entiende compensado con los turnos cortos.",
+        "explicacion": "Incorrecta. Esa modalidad también excluye el recargo por trabajo dominical o festivo. Por el domingo solo procede un descanso compensatorio remunerado (art. 181 inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Los dos recargos, porque este sistema de turnos solo exime al empleador de pagar las horas extras que se causen.",
+        "explicacion": "Incorrecta. El art. 161 lit. d dice expresamente que en esta modalidad no hay lugar a recargo nocturno ni al del trabajo dominical o festivo; no se limita a las horas extras."
+      },
+      {
+        "id": "D",
+        "texto": "Ningún recargo: recibe el salario de su jornada ordinaria y un día de descanso remunerado en la semana.",
+        "explicacion": "Correcta. En los turnos sucesivos de hasta 6 horas diarias y 36 semanales no hay recargo nocturno ni dominical: el trabajador devenga el salario de la jornada ordinaria y tiene derecho a un día de descanso remunerado en la semana (art. 161 lit. d); en este caso, el sábado."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el operario trabaja en un sistema pactado de turnos sucesivos de 6 horas diarias y 36 semanales, y laboró de noche y en domingo. Regla: el art. 161 lit. d del CST (mod. Ley 2466 de 2025) excluye en esa modalidad el recargo nocturno y el dominical, con el salario de la jornada ordinaria; el art. 168 num. 1 lo confirma para el nocturno, y el art. 181 inc. 2 da solo un descanso compensatorio remunerado por el domingo. Conclusión: no hay recargos; procede el descanso compensatorio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-LAB-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Jornada de trabajo",
+    "subtema": "Solicitud de jornada flexible por responsabilidades de cuidado: plazo y sentido de la respuesta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 2466 de 2025",
+    "articulos": [
+      "art. 46"
+    ],
+    "texto_fuente": "Las partes podrán acordar horarios o jornadas flexibles de trabajo o modalidades de trabajo apoyadas por las tecnologías de la información y las comunicaciones sin desmedro del cumplimiento de sus funciones, enfocadas en armonizar la vida familiar del trabajador o trabajadora que tenga responsabilidades de cuidado sobre personas mayores, hijos e hijas menores de edad, personas con discapacidad [...] El trabajador o trabajadora podrá solicitar y proponer el acuerdo para la distribución de la jornada flexible o la modalidad de trabajo a desarrollar, proponiendo la distribución de los tiempos de trabajo y descanso, y deberá acreditar la responsabilidad de cuidado a su cargo. Esta solicitud deberá ser evaluada por el empleador y este estará obligado a otorgar una respuesta en un término máximo de quince (15) días hábiles, caso en el cual de ser aceptada deberá indicar el proceso de implementación a seguir, proponiendo una distribución nueva y organizando lo pertinente para acordar e implementar esta opción, o negándola con la justificación que impide la aceptación de la misma o planteando una propuesta alternativa al trabajador.",
+    "pregunta": "El jueves 1 de octubre de 2026, una auxiliar contable de una empresa privada radicó en talento humano una propuesta escrita para cambiar la distribución de su horario, de modo que pueda atender a su madre, que tiene una discapacidad y depende de ella. Adjuntó la certificación de su condición de cuidadora. El técnico de talento humano debe registrar en el sistema de seguimiento la fecha límite de la respuesta y el sentido que esta puede tener. Considere los festivos de 2026. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fecha límite: 22 de octubre; la empresa puede aceptar la propuesta, negarla con justificación o plantear otra.",
+        "explicacion": "Incorrecta. El sentido de la respuesta es correcto, pero el conteo omite el festivo del lunes 12 de octubre. Los 15 días hábiles, contados desde el viernes 2 de octubre, vencen el viernes 23."
+      },
+      {
+        "id": "B",
+        "texto": "Fecha límite: 23 de octubre; la empresa puede aceptar la propuesta, negarla con justificación o plantear otra.",
+        "explicacion": "Correcta. El art. 46 de la Ley 2466 de 2025 obliga al empleador a responder en máximo 15 días hábiles: contados desde el viernes 2 de octubre y sin el festivo del 12, vencen el viernes 23 de octubre. La respuesta puede aceptar la propuesta con su plan de implementación, negarla con justificación o plantear una alternativa."
+      },
+      {
+        "id": "C",
+        "texto": "Fecha límite: 23 de octubre; la empresa debe aceptar la propuesta, pues la trabajadora acreditó ser cuidadora.",
+        "explicacion": "Incorrecta. La fecha es correcta, pero la ley no obliga a aceptar: el empleador evalúa la solicitud y puede negarla con justificación o proponer una alternativa."
+      },
+      {
+        "id": "D",
+        "texto": "Fecha límite: 22 de octubre; la empresa debe aceptar la propuesta, pues la trabajadora acreditó ser cuidadora.",
+        "explicacion": "Incorrecta. Omite el festivo del 12 de octubre en el conteo y, además, vuelve obligatoria la aceptación, que la ley deja a la evaluación del empleador."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la solicitud, con la certificación de cuidadora, se radicó el jueves 1 de octubre de 2026. Regla: el art. 46 de la Ley 2466 de 2025 obliga al empleador a responder en máximo 15 días hábiles, aceptando con un plan de implementación, negando con justificación o proponiendo una alternativa. Cálculo: desde el 2 de octubre, sin fines de semana ni el festivo del 12, el día 15 es el viernes 23 de octubre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2466_2025.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-LAB-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Suspensión del contrato",
+    "subtema": "Suspensión por razones económicas sin autorización previa del Ministerio y derecho al salario",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 51 nums. 1 y 3 (subrogado por el art. 4 de la Ley 50 de 1990)",
+      "art. 140"
+    ],
+    "texto_fuente": "El contrato de trabajo se suspende: 1. Por fuerza mayor o caso fortuito que temporalmente impida su ejecución. [...] 3. Por suspensión de actividades o clausura temporal de la empresa, establecimiento o negocio, en todo o en parte, hasta por ciento veinte (120) días por razones técnicas o económicas u otras independientes de la voluntad del empleador, mediante autorización previa del Ministerio de Trabajo y Seguridad Social. De la solicitud que se eleve al respecto el empleador deberá informar en forma simultánea, por escrito, a sus trabajadores. [...] Durante la vigencia del contrato el trabajador tiene derecho a percibir el salario aun cuando no haya prestación del servicio por disposición o culpa del {empleador}.",
+    "pregunta": "Por una caída de los pedidos y un exceso de inventario, el gerente de una fábrica de muebles ordenó que 30 operarios no se presentaran a trabajar entre el 1 y el 15 de octubre de 2026 y que esos días no se les pagaran, «por suspensión de los contratos». Les avisó por escrito, pero no tramitó ningún permiso ante el Ministerio del Trabajo. La profesional del área jurídica debe conceptuar sobre el pago de esos 15 días. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no hay pago: la caída de los pedidos es un caso fortuito que suspende los contratos sin ningún requisito previo.",
+        "explicacion": "Incorrecta. La caída de pedidos y el exceso de inventario son razones económicas, que encajan en el num. 3 del art. 51 (con autorización previa), no una fuerza mayor o caso fortuito que impida temporalmente ejecutar el contrato (num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe pagarlos: sin la autorización previa del Ministerio no hubo suspensión y la inactividad es imputable a la empresa.",
+        "explicacion": "Correcta. La suspensión por razones técnicas o económicas exige autorización previa del Ministerio del Trabajo (art. 51 num. 3). Sin ella, los contratos siguieron vigentes y los operarios no trabajaron por disposición del empleador, de modo que conservan el derecho al salario (art. 140)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no hay pago: la suspensión fue inferior a 120 días y la empresa avisó por escrito a los trabajadores.",
+        "explicacion": "Incorrecta. El límite de 120 días y el aviso escrito a los trabajadores son condiciones adicionales; no reemplazan la autorización previa del Ministerio que exige el num. 3 del art. 51."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe pagarlos solo si el Ministerio niega la autorización que la empresa pida ahora para convalidar la medida.",
+        "explicacion": "Incorrecta. La norma exige autorización previa: un permiso pedido después no cubre los días ya transcurridos, en los que la falta de trabajo se debió a la decisión del empleador."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la empresa suspendió labores por razones económicas sin autorización del Ministerio del Trabajo. Regla: el art. 51 num. 3 del CST (subrogado por la Ley 50 de 1990) solo permite suspender por razones técnicas o económicas, hasta 120 días, con autorización previa del Ministerio; el art. 140 da derecho al salario cuando no hay prestación del servicio por disposición del empleador. Conclusión: la empresa debe pagar los 15 días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-LAB-046",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Suspensión del contrato",
+    "subtema": "Descuento de los periodos de suspensión al liquidar cesantías",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 51 num. 4 (subrogado por el art. 4 de la Ley 50 de 1990)",
+      "art. 53",
+      "art. 249"
+    ],
+    "texto_fuente": "4. Por licencia o permiso temporal concedido por el empleador al trabajador o por suspensión disciplinaria. [...] Durante el período de las suspensiones contempladas en el artículo 51 se interrumpe para el trabajador la obligación de prestar el servicio prometido, y para el {empleador} la de pagar los salarios de esos lapsos, pero durante la suspensión corren a cargo del {empleador}, además de las obligaciones ya surgidas con anterioridad, las que le correspondan por muerte o por enfermedad de los trabajadores. Estos períodos de suspensión pueden descontarse por el {empleador} al liquidar vacaciones, cesantías y jubilaciones. [...] un mes de salario por cada año de servicios y proporcionalmente por fracción de año.",
+    "pregunta": "La técnica de nómina de una empresa liquida las cesantías de 2026 de un trabajador vinculado desde 2023, con contrato vigente y salario fijo de $2.700.000 mensuales durante todo el año; como devenga más de dos salarios mínimos, no tiene derecho a auxilio de transporte. En 2026 el trabajador tuvo estas novedades: una licencia no remunerada de 20 días que pidió y la empresa le concedió; una suspensión disciplinaria de 3 días, impuesta según el reglamento; una incapacidad por enfermedad general de 12 días, y 15 días hábiles de vacaciones. La empresa descuenta todo el tiempo que la ley le permite descontar. ¿Cuál es el valor de las cesantías de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.700.000, porque ninguna de esas novedades se descuenta del tiempo de servicio.",
+        "explicacion": "Incorrecta. La licencia concedida y la suspensión disciplinaria suspenden el contrato (art. 51 num. 4), y el art. 53 permite descontar esos periodos al liquidar cesantías."
+      },
+      {
+        "id": "B",
+        "texto": "$2.550.000, porque solo se descuentan los 20 días de la licencia no remunerada.",
+        "explicacion": "Incorrecta. La suspensión disciplinaria también suspende el contrato (art. 51 num. 4) y puede descontarse: 360 − 20 − 3 = 337 días, no 340."
+      },
+      {
+        "id": "C",
+        "texto": "$2.527.500, porque se descuentan la licencia no remunerada y la suspensión disciplinaria.",
+        "explicacion": "Correcta. La licencia no remunerada y la suspensión disciplinaria suspenden el contrato (art. 51 num. 4), y esos 23 días pueden descontarse (art. 53). La incapacidad y las vacaciones no son suspensiones. Cálculo: $2.700.000 × 337 / 360 = $2.527.500."
+      },
+      {
+        "id": "D",
+        "texto": "$2.437.500, porque se descuentan la licencia, la suspensión disciplinaria y la incapacidad.",
+        "explicacion": "Incorrecta. La incapacidad por enfermedad no está entre las causales de suspensión del art. 51, así que no se descuenta. Restar también sus 12 días deja 325 días y un valor inferior al debido."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en 2026 hubo 20 días de licencia no remunerada, 3 de suspensión disciplinaria, 12 de incapacidad y vacaciones. Regla: el art. 51 num. 4 del CST suspende el contrato por licencia o permiso concedido y por suspensión disciplinaria; el art. 53 permite descontar esos periodos al liquidar cesantías, y el art. 249 da un mes de salario por año, proporcional por fracción. Cálculo: 360 − 23 = 337 días; $2.700.000 × 337/360 = $2.527.500.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-LAB-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Auxilio de conectividad del teletrabajador y base de la prima de servicios",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2466 de 2025 y Código Sustantivo del Trabajo",
+    "articulos": [
+      "Ley 2466 de 2025, art. 53 (adiciona el art. 6A a la Ley 1221 de 2008)",
+      "CST, art. 306 (modificado por el art. 1 de la Ley 1788 de 2016)"
+    ],
+    "texto_fuente": "El empleador deberá otorgar el reconocimiento de un auxilio de conectividad para teletrabajadores y teletrabajadoras que devenguen menos de dos (2) salarios mínimos legales mensuales vigentes, en reemplazo del auxilio de transporte. En todo caso, los teletrabajadores y teletrabajadoras, solo tendrán derecho a recibir uno de estos auxilios, independientemente de la modalidad de teletrabajo otorgado. [...] El auxilio de conectividad será equivalente al auxilio de transporte vigente [...] El auxilio de conectividad no es constitutivo de salario, sin embargo, el auxilio de conectividad será base de liquidación de prestaciones sociales para aquellos trabajadores que devenguen hasta dos (2) salarios mínimos legales mensuales vigentes. [...] la prestación social denominada prima de servicios que corresponderá a 30 días de salario por año, el cual se reconocerá en dos pagos, así: la mitad máximo el 30 de junio y la otra mitad a más tardar los primeros veinte días de diciembre.",
+    "pregunta": "En diciembre de 2026, el técnico de nómina de una empresa liquida la prima de servicios del segundo semestre de una analista que trabaja todo el tiempo desde su casa, como teletrabajadora autónoma, con un salario de $2.600.000 mensuales. Laboró el semestre completo. Para el ejercicio, tome como salario mínimo mensual $1.800.000 y como auxilio de transporte $200.000. ¿Qué auxilio mensual le corresponde y cuál es el valor de su prima?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ningún auxilio, porque no se desplaza a la sede de la empresa; prima de $1.300.000.",
+        "explicacion": "Incorrecta. La analista gana menos de dos salarios mínimos ($3.600.000), así que tiene derecho al auxilio de conectividad en reemplazo del de transporte, cualquiera que sea la modalidad de teletrabajo."
+      },
+      {
+        "id": "B",
+        "texto": "Auxilios de conectividad y de transporte, $400.000 al mes; prima de $1.500.000.",
+        "explicacion": "Incorrecta. El teletrabajador solo puede recibir uno de los dos auxilios: el de conectividad reemplaza al de transporte."
+      },
+      {
+        "id": "C",
+        "texto": "Auxilio de conectividad de $200.000 al mes; prima de $1.300.000, sin él en la base.",
+        "explicacion": "Incorrecta. Aunque el auxilio de conectividad no es salario, la ley lo hace base de liquidación de las prestaciones de quienes devengan hasta dos salarios mínimos. Excluirlo deja la prima en $1.300.000."
+      },
+      {
+        "id": "D",
+        "texto": "Auxilio de conectividad de $200.000 al mes; prima de $1.400.000, con él en la base.",
+        "explicacion": "Correcta. Con salario inferior a dos mínimos recibe auxilio de conectividad igual al de transporte ($200.000), que entra en la base de las prestaciones. Prima (30 días por año): ($2.600.000 + $200.000) × 180 / 360 = $1.400.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: teletrabajadora con salario de $2.600.000, inferior a dos mínimos ($3.600.000), que trabajó el semestre completo. Regla: el art. 6A de la Ley 1221 de 2008 (adicionado por el art. 53 de la Ley 2466 de 2025) da un auxilio de conectividad igual al de transporte, en reemplazo de este, que es base de las prestaciones hasta dos mínimos; el art. 306 del CST fija la prima en 30 días de salario por año. Cálculo: $2.800.000 × 180/360 = $1.400.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2466_2025.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-LAB-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Consignación anticipada de cesantías e intereses mensualizados (Ley 2466 de 2025)",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2466 de 2025",
+    "articulos": [
+      "art. 64 (adiciona los parágrafos 1 y 2 al art. 99 de la Ley 50 de 1990)"
+    ],
+    "texto_fuente": "El empleador podrá aportar mensualmente con destino al fondo de cesantías el 8.33% del salario base de liquidación compuesto por el salario mensual sumado al auxilio de transporte en los casos en que a este hubiere lugar, como consignación anticipada de cesantías. [...] Las partes podrán acordar por escrito la mensualización de los intereses sobre las cesantías, pagando al trabajador el 1% del salario base de liquidación compuesto por el salario mensual sumado al auxilio de transporte en los casos en que a este hubiere lugar.",
+    "pregunta": "Una empresa decidió usar las dos opciones que la Ley 2466 de 2025 añadió al régimen de cesantías de la Ley 50 de 1990: cada mes hará la consignación anticipada al fondo y, con los trabajadores que lo firmaron por escrito, pagará los intereses de forma mensual. La auxiliar de nómina calcula los valores de octubre de 2026 de un operario que firmó ese acuerdo, con salario de $1.900.000 y derecho a auxilio de transporte. Para el ejercicio, tome el auxilio de transporte en $200.000. ¿Qué valores debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$174.930 de consignación al fondo y $21.000 de intereses para el trabajador.",
+        "explicacion": "Correcta. La base es el salario más el auxilio de transporte: $2.100.000. Consignación anticipada: 8,33 % × $2.100.000 = $174.930. Intereses mensuales: 1 % × $2.100.000 = $21.000 (parágrafos 1 y 2 del art. 99 de la Ley 50, adicionados por el art. 64 de la Ley 2466)."
+      },
+      {
+        "id": "B",
+        "texto": "$158.270 de consignación al fondo y $19.000 de intereses para el trabajador.",
+        "explicacion": "Incorrecta. Deja por fuera el auxilio de transporte, cuando la ley define la base como el salario mensual sumado a ese auxilio en los casos en que se paga."
+      },
+      {
+        "id": "C",
+        "texto": "$174.930 de consignación al fondo y $1.749 de intereses para el trabajador.",
+        "explicacion": "Incorrecta. La consignación está bien, pero calcula los intereses como el 1 % de lo consignado. La ley fija el 1 % sobre la misma base de liquidación (salario más auxilio): $21.000."
+      },
+      {
+        "id": "D",
+        "texto": "$158.270 de consignación al fondo y $1.583 de intereses para el trabajador.",
+        "explicacion": "Incorrecta. Comete dos errores: excluye el auxilio de transporte de la base y calcula los intereses sobre lo consignado y no sobre la base de liquidación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: salario de $1.900.000 más auxilio de transporte de $200.000, con acuerdo escrito de intereses mensuales. Regla: los parágrafos 1 y 2 del art. 99 de la Ley 50 de 1990 (adicionados por el art. 64 de la Ley 2466 de 2025) permiten consignar cada mes el 8,33 % y pagar el 1 % de intereses, ambos sobre el salario más el auxilio de transporte. Cálculo: 8,33 % × $2.100.000 = $174.930; 1 % × $2.100.000 = $21.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2466_2025.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-LAB-049",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Pago parcial de cesantías para vivienda en el régimen tradicional: responsable y plazo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 256 num. 1 (modificado por el art. 18 del Decreto 2351 de 1965)",
+      "art. 256 num. 3 (modificado por el art. 21 de la Ley 1429 de 2010)"
+    ],
+    "texto_fuente": "1. Los trabajadores individualmente, podrán exigir el pago parcial de su auxilio de cesantía para la adquisición, construcción, mejora o liberación de bienes raíces destinados a su vivienda, siempre que dicho pago se efectúe por un valor no mayor del requerido para tales efectos. [...] Los préstamos, anticipos y pagos a que se refieren los numerales anteriores se aprobarán y pagarán directamente por el empleador cuando el trabajador pertenezca al régimen tradicional de cesantías, y por los fondos cuando el trabajador pertenezca al régimen de cesantía previsto en la Ley 50 de 1990 [...] Formulada la solicitud de pago parcial de cesantías por el trabajador con el lleno de los requisitos legales exigidos, el empleador o el fondo privado de cesantías, según el caso, deberá aprobar y pagar el valor solicitado dentro del término máximo de cinco (5) días hábiles.",
+    "pregunta": "El jueves 12 de noviembre de 2026, un operario vinculado a una empresa desde 1988, que nunca se trasladó al régimen de cesantías de la Ley 50 de 1990, radicó por escrito una solicitud de pago parcial de su cesantía para comprar vivienda, con la promesa de compraventa y los demás soportes exigidos. La técnica de nómina debe darle trámite. La empresa labora de lunes a viernes; considere los festivos de 2026. ¿Quién debe aprobar y pagar la solicitud, y cuál es la fecha límite?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El fondo de cesantías, a más tardar el jueves 19 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Los fondos aprueban y pagan cuando el trabajador está en el régimen de la Ley 50 de 1990. Además, el conteo trata como hábil el lunes 16 de noviembre, que es festivo."
+      },
+      {
+        "id": "B",
+        "texto": "La empresa, a más tardar el viernes 20 de noviembre de 2026.",
+        "explicacion": "Correcta. El operario sigue en el régimen tradicional, así que la solicitud la aprueba y paga directamente el empleador (art. 256 num. 3). El plazo es de 5 días hábiles: 13, 17, 18, 19 y 20 de noviembre (el 16 es festivo). Vence el viernes 20."
+      },
+      {
+        "id": "C",
+        "texto": "El fondo de cesantías, a más tardar el viernes 20 de noviembre de 2026.",
+        "explicacion": "Incorrecta. La fecha es correcta, pero en el régimen tradicional el pago parcial lo aprueba y lo paga el empleador, no un fondo."
+      },
+      {
+        "id": "D",
+        "texto": "La empresa, a más tardar el jueves 19 de noviembre de 2026.",
+        "explicacion": "Incorrecta. El responsable es correcto, pero el conteo trata como hábil el lunes 16 de noviembre, que es festivo; el quinto día hábil es el viernes 20."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el operario está en el régimen tradicional (vinculado en 1988, nunca se trasladó) y presentó la solicitud completa el jueves 12 de noviembre de 2026. Regla: el art. 256 num. 3 del CST (mod. Ley 1429 de 2010) asigna la aprobación y el pago al empleador en el régimen tradicional, dentro de un máximo de 5 días hábiles. Cálculo: 13, 17, 18, 19 y 20 de noviembre (el 16 es festivo). Conclusión: la empresa, a más tardar el viernes 20.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55,
+      "nota": "Revisada y corregida (v2): el enunciado dice que la empresa labora de lunes a viernes, así que el plazo de 5 días hábiles vence el viernes 20 de noviembre."
+    }
+  },
+  {
+    "id": "TC-LAB-050",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Vacaciones",
+    "subtema": "Salario base de las vacaciones con salario variable",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 192 nums. 1 y 2 (modificado por el art. 8 del Decreto 617 de 1954)"
+    ],
+    "texto_fuente": "1. Durante el período de vacaciones el trabajador recibirá el salario ordinario que esté devengando el día en que comience a disfrutar de ellas. En consecuencia, sólo se excluirán para la liquidación de vacaciones el valor del trabajo en días de descanso obligatorio y el valor del trabajo suplementario en horas extras. 2. Cuando el salario sea variable las vacaciones se liquidaran con el promedio de lo devengado por el trabajador en el año inmediatamente anterior a la fecha en que se concedan.",
+    "pregunta": "La técnica de nómina de una empresa privada liquida las vacaciones de un asesor comercial que devenga solo comisiones por ventas. En el año inmediatamente anterior a sus vacaciones, el asesor recibió $28.800.000 en comisiones, $1.440.000 por horas extras y $960.000 por trabajar en domingos, su día de descanso obligatorio. En el último mes, el mejor del año, sus comisiones sumaron $3.100.000. ¿Qué salario mensual debe tomar como base para liquidar las vacaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$3.100.000, que son las comisiones del último mes antes de salir a vacaciones.",
+        "explicacion": "Incorrecta. Tomar el salario del día en que empiezan las vacaciones es la regla del salario fijo (art. 192 num. 1). Con salario variable se usa el promedio del último año (num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "$2.600.000, que es el promedio mensual de todo lo recibido en el último año.",
+        "explicacion": "Incorrecta. Incluye las horas extras y el trabajo en domingos, que el art. 192 num. 1 excluye de la liquidación de las vacaciones."
+      },
+      {
+        "id": "C",
+        "texto": "$2.520.000, que es el promedio mensual de comisiones y horas extras del año.",
+        "explicacion": "Incorrecta. Excluye bien el trabajo en domingos, pero suma las horas extras, que también están excluidas de la base de las vacaciones."
+      },
+      {
+        "id": "D",
+        "texto": "$2.400.000, que es el promedio mensual de las comisiones del último año.",
+        "explicacion": "Correcta. Con salario variable, la base es el promedio de lo devengado en el año anterior (art. 192 num. 2), sin el trabajo en días de descanso obligatorio ni las horas extras (num. 1): $28.800.000 / 12 = $2.400.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el asesor tiene salario variable (solo comisiones) y en el último año recibió además horas extras y pagos por trabajo dominical. Regla: el art. 192 del CST (mod. Decreto 617 de 1954) ordena liquidar las vacaciones con salario variable por el promedio del año anterior y excluye el trabajo en días de descanso obligatorio y las horas extras. Cálculo: $28.800.000 / 12 = $2.400.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-LAB-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Contrato individual de trabajo",
+    "subtema": "Solidaridad del beneficiario de la obra con los trabajadores del contratista",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 34 num. 2 (modificado por el art. 44 de la Ley 2466 de 2025)"
+    ],
+    "texto_fuente": "2. Las personas naturales o jurídicas que contraten o subcontraten la realización de obras o servicios, serán solidariamente responsables con el contratista por el valor de los salarios y de las prestaciones e indemnizaciones a que tengan derecho los trabajadores, a menos que se trate de labores extrañas a las actividades normales de su empresa o negocio. Solidaridad que no obsta para que el beneficiario estipule con el contratista las garantías del caso o para que repita contra él lo pagado a esos trabajadores.",
+    "pregunta": "Una empresa de alimentos celebró dos contratos con contratistas independientes: uno con una firma que, con su propio personal, opera la línea de empaque de los productos dentro de la planta, y otro con una firma de pintura para renovar la fachada de las oficinas. Ambas firmas dejaron de pagar salarios y prestaciones a sus trabajadores, que ahora le reclaman a la empresa de alimentos. ¿Qué debe conceptuar la profesional jurídica sobre la responsabilidad de la empresa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que responde solidariamente ante los trabajadores del empaque, pero no ante los de la pintura de la fachada.",
+        "explicacion": "Correcta. El beneficiario responde solidariamente con el contratista por salarios, prestaciones e indemnizaciones, salvo en labores extrañas a las actividades normales de su negocio (art. 34 num. 2, mod. Ley 2466 de 2025). Empacar los productos hace parte de la actividad normal de una empresa de alimentos; pintar la fachada, no."
+      },
+      {
+        "id": "B",
+        "texto": "Que responde solidariamente ante los trabajadores de ambas firmas, porque todos trabajaron en sus instalaciones.",
+        "explicacion": "Incorrecta. El criterio no es el lugar de trabajo, sino la relación de la labor con las actividades normales del negocio. La pintura de la fachada es una labor extraña a la producción de alimentos."
+      },
+      {
+        "id": "C",
+        "texto": "Que no responde ante ninguno, porque la solidaridad solo existe si el contrato con la firma la pacta.",
+        "explicacion": "Incorrecta. La solidaridad la impone la ley. Lo que el beneficiario puede pactar con el contratista son garantías, y además puede repetir contra él lo que pague."
+      },
+      {
+        "id": "D",
+        "texto": "Que responde ante los trabajadores del empaque, pero solo por los salarios; las prestaciones son del contratista.",
+        "explicacion": "Incorrecta. La solidaridad cubre el valor de los salarios y también el de las prestaciones e indemnizaciones a que tengan derecho los trabajadores."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el empaque de los productos es parte de la actividad normal de la empresa de alimentos; la pintura de la fachada no. Regla: el art. 34 num. 2 del CST (mod. art. 44 de la Ley 2466 de 2025) hace al beneficiario solidariamente responsable con el contratista por salarios, prestaciones e indemnizaciones, salvo en labores extrañas a sus actividades normales. Conclusión: responde ante los trabajadores del empaque, no ante los de la pintura.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-LAB-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Obligaciones del empleador",
+    "subtema": "Cuota mínima de trabajadores con discapacidad y su entrada en vigor (Ley 2466 de 2025)",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo y Ley 2466 de 2025",
+    "articulos": [
+      "CST, art. 57 num. 17 y par. 3 (adicionados por el art. 15 de la Ley 2466 de 2025)",
+      "Ley 2466 de 2025, art. 70"
+    ],
+    "texto_fuente": "Las empresas que cuenten con hasta 500 trabajadores deberán contratar o mantener contratados, según corresponda, al menos dos (2) trabajadores con discapacidad por cada 100 trabajadores. A partir de 501 trabajadores en adelante, deberán contratar o mantener contratados, según corresponda, al menos un (1) trabajador con discapacidad adicional por cada tramo de 100 trabajadores. Esta obligación aplicará sobre el total de trabajadores de carácter permanente. [...] La aplicación de los valores y/o porcentajes indicados en el numeral 17 de este artículo será optativa en el primer año de entrada en vigencia de la presente ley, tiempo durante el cual las empresas iniciarán un plan de revisión técnica para la implementación de los ajustes razonables que se requieran. A partir del segundo año los valores y/o indicadores serán de obligatorio cumplimiento. [...] LEY 2466 DE 2025 (junio 25) [...] La presente ley rige a partir de su promulgación",
+    "pregunta": "En octubre de 2026, la profesional de talento humano de una empresa privada revisa el cumplimiento de la contratación de personas con discapacidad. La empresa tiene 700 trabajadores permanentes y 100 trabajadores vinculados solo para la temporada de fin de año. ¿Cuántos trabajadores con discapacidad, como mínimo, debe tener contratados la empresa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "14, porque la cuota es de dos por cada 100 de los 700 trabajadores permanentes.",
+        "explicacion": "Incorrecta. La proporción de dos por cada 100 rige hasta 500 trabajadores. Desde el trabajador 501 se suma solo uno por cada tramo de 100."
+      },
+      {
+        "id": "B",
+        "texto": "13, porque el cálculo se hace sobre los 800 trabajadores, incluidos los de temporada.",
+        "explicacion": "Incorrecta. La obligación se aplica sobre el total de trabajadores de carácter permanente; los 100 de temporada no cuentan."
+      },
+      {
+        "id": "C",
+        "texto": "12: diez por los primeros 500 trabajadores permanentes y uno por cada 100 adicionales.",
+        "explicacion": "Correcta. Hasta 500 trabajadores permanentes la cuota es de dos por cada 100 (10); desde el 501 se agrega uno por cada tramo de 100 (501 a 600 y 601 a 700). Total: 12. La Ley 2466 se promulgó el 25 de junio de 2025, y desde el segundo año de vigencia la cuota es obligatoria."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno todavía, porque la cuota es optativa durante los dos primeros años de vigencia.",
+        "explicacion": "Incorrecta. Solo el primer año de vigencia de la Ley 2466 fue optativo. Desde el 25 de junio de 2026, inicio del segundo año, los valores son de obligatorio cumplimiento."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 700 trabajadores permanentes y 100 de temporada, en octubre de 2026. Regla: el art. 57 num. 17 del CST (adicionado por el art. 15 de la Ley 2466 de 2025) exige dos trabajadores con discapacidad por cada 100 hasta 500 y uno adicional por cada tramo de 100 desde el 501, sobre los permanentes; el parágrafo 3 la hace obligatoria desde el segundo año de vigencia de la ley (desde el 25 de junio de 2026). Cálculo: 10 + 2 = 12.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-LAB-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Indemnización por despido sin justa causa en el contrato por obra o labor: mínimo de 15 días",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 64 incs. 2, 3 y 4 (modificado por el art. 28 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "En caso de terminación unilateral del contrato de trabajo sin justa causa comprobada, por parte del empleador o si éste da lugar a la terminación unilateral por parte del trabajador por alguna de las justas causas contempladas en la ley, el primero deberá al segundo una indemnización en los términos que a continuación se señalan: En los contratos a término fijo, el valor de los salarios correspondientes al tiempo que faltare para cumplir el plazo estipulado del contrato; o el del lapso determinado por la duración de la obra o la labor contratada, caso en el cual la indemnización no será inferior a quince (15) días. En los contratos a término indefinido la indemnización se pagará así: a) Para trabajadores que devenguen un salario inferior a diez (10) salarios mínimos mensuales legales: 1. Treinta (30) días de salario cuando el trabajador tuviere un tiempo de servicio no mayor de un (1) año.",
+    "pregunta": "Una constructora vinculó por escrito a un oficial de obra «por el tiempo que dure la instalación de la cubierta metálica de la bodega 3», con un salario de $2.400.000 mensuales. Según el cronograma, la cubierta debía quedar terminada el viernes 30 de octubre de 2026, y así ocurrió. La empresa le terminó el contrato sin justa causa, y su último día de trabajo fue el sábado 24 de octubre. La profesional de talento humano revisa la liquidación. ¿Qué valor debe incluirse por la terminación, además de salarios y prestaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$480.000, por los seis días que faltaban para terminar la cubierta.",
+        "explicacion": "Incorrecta. El lucro cesante se mide por el tiempo que faltaba de la obra (25 a 30 de octubre: 6 días, $480.000), pero en este contrato la indemnización no puede ser inferior a 15 días de salario."
+      },
+      {
+        "id": "B",
+        "texto": "$1.200.000, equivalentes a quince días de salario.",
+        "explicacion": "Correcta. En el contrato por obra o labor, la indemnización es el salario del lapso que faltaba para terminar la obra, sin ser inferior a 15 días (art. 64). Faltaban 6 días, así que se aplica el mínimo: 15 × $80.000 = $1.200.000."
+      },
+      {
+        "id": "C",
+        "texto": "$2.400.000, equivalentes a treinta días de salario.",
+        "explicacion": "Incorrecta. Aplica los 30 días de la tabla de los contratos a término indefinido para el primer año de servicio, que no rige en el contrato por obra o labor."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque en este contrato solo se deben los salarios y prestaciones causados.",
+        "explicacion": "Incorrecta. La terminación sin justa causa también se indemniza en el contrato por obra o labor; el art. 64 fija un mínimo de 15 días de salario."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: contrato por obra terminado sin justa causa cuando faltaban 6 días para concluir la cubierta. Regla: el art. 64 del CST (mod. Ley 789 de 2002) indemniza en la obra o labor con el salario del lapso que faltaba para terminarla, sin que sea inferior a 15 días. Cálculo: 6 × $80.000 = $480.000, inferior al mínimo; 15 × $80.000 = $1.200.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-LAB-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Causal invocada al terminar y prohibición de alegar después causales distintas",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 62 lit. A num. 1, inc. final del lit. A y parágrafo (modificado por el art. 7 del Decreto 2351 de 1965)",
+      "art. 64 inc. 2 (modificado por el art. 28 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "1. El haber sufrido engaño por parte del trabajador, mediante la presentación de certificados falsos para su admisión o tendientes a obtener un provecho indebido. [...] En los casos de los numerales 9 a 15 de este artículo, para la terminación del contrato, el {empleador} deberá dar aviso al trabajador con anticipación no menor de quince (15) días. [...] PARAGRAFO. La parte que termina unilateralmente el contrato de trabajo debe manifestar a la otra, en el momento de la extinción, la causal o motivo de esa determinación. Posteriormente no pueden alegarse válidamente causales o motivos distintos. [...] En caso de terminación unilateral del contrato de trabajo sin justa causa comprobada, por parte del empleador o si éste da lugar a la terminación unilateral por parte del trabajador por alguna de las justas causas contempladas en la ley, el primero deberá al segundo una indemnización en los términos que a continuación se señalan",
+    "pregunta": "El 15 de julio de 2026, una empresa terminó el contrato a término indefinido de un analista de compras. En la carta invocó una sola causal: haber presentado un diploma falso al ingresar. En el proceso, la universidad certificó que el diploma era auténtico. La empresa propone entonces demostrar que en mayo el analista insultó a su jefe, hecho que ya conocía cuando lo despidió pero que no incluyó en la carta. La profesional jurídica de la empresa debe evaluar esa estrategia. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede probar el insulto, porque basta con que la justa causa existiera cuando terminó el contrato.",
+        "explicacion": "Incorrecta. Quien termina el contrato debe expresar la causal en ese momento; después no pueden alegarse válidamente causales o motivos distintos (parágrafo del art. 62), aunque hubieran existido."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede alegar el insulto si paga los quince días de aviso previo que omitió al terminar el contrato.",
+        "explicacion": "Incorrecta. El aviso de 15 días es un requisito de las causales de los numerales 9 a 15 del art. 62; pagarlo no habilita una causal que no se expresó al terminar el contrato."
+      },
+      {
+        "id": "C",
+        "texto": "Que, fallida la causal de la carta, debe reintegrar al analista y pagarle todos los salarios dejados de percibir.",
+        "explicacion": "Incorrecta. La consecuencia que prevé el art. 64 para la terminación sin justa causa es la indemnización; el caso no plantea ningún fuero o estabilidad reforzada que lleve al reintegro."
+      },
+      {
+        "id": "D",
+        "texto": "Que solo puede defenderse con la causal de la carta; sin probarla, el despido fue sin justa causa e indemnizable.",
+        "explicacion": "Correcta. La carta solo invocó el engaño con certificados falsos (art. 62 lit. A num. 1). Como no se probó y después no pueden alegarse causales distintas (parágrafo del art. 62), la terminación quedó sin justa causa comprobada y procede la indemnización del art. 64."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la carta invocó solo el diploma falso, que resultó auténtico; el insulto no se mencionó. Regla: el parágrafo del art. 62 del CST (mod. Decreto 2351 de 1965) exige manifestar la causal al terminar y prohíbe alegar después causales distintas; el art. 64 ordena indemnizar la terminación sin justa causa comprobada. Conclusión: la defensa no puede usar el insulto y el despido debe indemnizarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-LAB-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Consignación de la suma que se confiesa deber para evitar la indemnización moratoria",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 65 nums. 1 y 2 (modificado por el art. 29 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "Si a la terminación del contrato, el empleador no paga al trabajador los salarios y prestaciones debidas, salvo los casos de retención autorizados por la ley o convenidos por las partes, debe pagar al asalariado, como indemnización, una suma igual al último salario diario por cada día de retardo, hasta por veinticuatro (24) meses, o hasta cuando el pago se verifique si el período es menor. [...] 2. Si no hay acuerdo respecto del monto de la deuda, o si el trabajador se niega a recibir, el empleador cumple con sus obligaciones consignando ante el juez de trabajo y, en su defecto, ante la primera autoridad política del lugar, la suma que confiese deber, mientras la justicia de trabajo decide la controversia.",
+    "pregunta": "Al terminar el contrato de una coordinadora de ventas que devengaba $5.000.000 mensuales, la empresa liquidó salarios y prestaciones por $9.000.000. La trabajadora sostiene que las comisiones debían incluirse en la base y que le deben $12.000.000; por eso no acepta el pago y anuncia una demanda. La gerencia pide a la profesional jurídica una forma de cumplir que evite la indemnización por falta de pago mientras un juez define quién tiene la razón. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Consignar ante el juez del trabajo los $9.000.000 que la empresa reconoce deber.",
+        "explicacion": "Correcta. Si no hay acuerdo sobre el monto o el trabajador se niega a recibir, el empleador cumple consignando ante el juez del trabajo (y, en su defecto, ante la primera autoridad política del lugar) la suma que confiese deber (art. 65 num. 2). Así se cubre frente a la indemnización moratoria del num. 1."
+      },
+      {
+        "id": "B",
+        "texto": "Consignar ante el inspector del trabajo los $12.000.000 que reclama la trabajadora.",
+        "explicacion": "Incorrecta. La norma no exige consignar lo que reclama el trabajador, y la consignación no se hace ante el inspector del trabajo sino ante el juez."
+      },
+      {
+        "id": "C",
+        "texto": "Consignar ante el juez del trabajo los $12.000.000 que reclama la trabajadora.",
+        "explicacion": "Incorrecta. La autoridad es la correcta, pero la ley solo exige consignar la suma que el empleador confiesa deber; la diferencia la decide el juez."
+      },
+      {
+        "id": "D",
+        "texto": "Consignar ante el inspector del trabajo los $9.000.000 que la empresa reconoce deber.",
+        "explicacion": "Incorrecta. La suma es la correcta, pero la consignación se hace ante el juez del trabajo o, en su defecto, ante la primera autoridad política del lugar, no ante el inspector."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay desacuerdo sobre el monto ($9.000.000 frente a $12.000.000) y la trabajadora no recibe el pago. Regla: el art. 65 num. 2 del CST dice que, en ese caso, el empleador cumple consignando ante el juez del trabajo (o, en su defecto, ante la primera autoridad política del lugar) la suma que confiese deber, mientras la justicia decide. Conclusión: consignar los $9.000.000 ante el juez.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-LAB-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prescripción",
+    "subtema": "Prescripción de las primas desde su exigibilidad e interrupción por reclamo escrito",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 488 (modificado por el art. 62 de la Ley 2466 de 2025)",
+      "art. 489",
+      "art. 306 (modificado por el art. 1 de la Ley 1788 de 2016)"
+    ],
+    "texto_fuente": "Las acciones correspondientes a los derechos regulados en este Código prescriben en tres (3) años, salvo en los casos de prescripciones especiales establecidas en el Código Procesal del Trabajo y de la Seguridad Social o en el presente estatuto. En el evento en que se reclamen derechos emanados de una relación de trabajo, dicho término se contará desde que la respectiva obligación se hace exigible [...] El simple reclamo escrito del trabajador, recibido por el {empleador}, acerca de un derecho debidamente determinado, interrumpe la prescripción por una sola vez, la cual principia a contarse de nuevo a partir del reclamo y por un lapso igual al señalado para la prescripción correspondiente. [...] la mitad máximo el 30 de junio y la otra mitad a más tardar los primeros veinte días de diciembre.",
+    "pregunta": "Un profesional del grupo de atención al ciudadano de una Dirección Territorial del Ministerio del Trabajo orienta a un trabajador con contrato vigente. El 15 de octubre de 2026, el trabajador entregó a su empleador una reclamación escrita, que la empresa recibió, por las primas de servicios que nunca le pagaron: las de los dos semestres de 2023 y las de los dos semestres de 2024. Quiere saber frente a cuáles de esas primas la reclamación interrumpió la prescripción. ¿Qué debe explicarle el profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Frente a las cuatro, porque la prescripción de tres años solo empieza a correr cuando termina el contrato.",
+        "explicacion": "Incorrecta. Los derechos de la relación laboral prescriben en tres años contados desde que cada obligación se hace exigible (art. 488, mod. Ley 2466 de 2025), no desde la terminación del contrato."
+      },
+      {
+        "id": "B",
+        "texto": "Solo frente a las dos de 2024, porque las de 2023 prescribieron a los tres años de iniciado cada semestre.",
+        "explicacion": "Incorrecta. El término se cuenta desde la exigibilidad, no desde el inicio del semestre. La prima del segundo semestre de 2023 era exigible desde el 20 de diciembre de 2023 y su prescripción vencería en diciembre de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "Frente a la del segundo semestre de 2023 y las dos de 2024; la del primer semestre de 2023 ya había prescrito.",
+        "explicacion": "Correcta. La prima del primer semestre de 2023 era exigible desde el 30 de junio de 2023 y prescribió en junio de 2026. La del segundo semestre de 2023 (exigible desde el 20 de diciembre de 2023) y las de 2024 seguían vigentes el 15 de octubre de 2026, y el reclamo escrito interrumpió su prescripción (art. 489)."
+      },
+      {
+        "id": "D",
+        "texto": "Frente a ninguna, porque la prescripción solo se interrumpe cuando el trabajador presenta la demanda.",
+        "explicacion": "Incorrecta. El simple reclamo escrito del trabajador, recibido por el empleador, sobre un derecho determinado interrumpe la prescripción por una sola vez (art. 489)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el reclamo escrito se recibió el 15 de octubre de 2026. Regla: el art. 488 del CST (mod. Ley 2466 de 2025) fija tres años desde la exigibilidad; la prima se paga a más tardar el 30 de junio y el 20 de diciembre (art. 306), y el art. 489 da efecto interruptor al reclamo escrito. Cálculo: la del 1.er semestre de 2023 prescribió en junio de 2026; la del 2.º de 2023 vence en diciembre de 2026 y las de 2024, en 2027. Conclusión: interrumpe las tres últimas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-LAB-057",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Derecho colectivo del trabajo",
+    "subtema": "Retención de cuotas sindicales ordinarias y extraordinarias y renuncia del afiliado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 400 nums. 1 y 2 (subrogado por el art. 23 del Decreto 2351 de 1965)"
+    ],
+    "texto_fuente": "La retención de las cuotas extraordinarias requiere copia autenticada del acta de la asamblea sindical en que fueron aprobadas. Para la retención de las cuotas ordinarias bastará que el secretario y el fiscal del sindicato comuniquen certificadamente al (empleador) su valor y la nómina de sus afiliados. [...] 2. Cesará la retención de cuotas sindicales a un trabajador a partir del momento en que aquél, o el sindicato, comunique por escrito al {empleador} el hecho de la renuncia o expulsión; quedando a salvo el derecho del sindicato en caso de información falsa del trabajador.",
+    "pregunta": "La auxiliar de nómina de una empresa retiene cada mes la cuota sindical ordinaria, con base en la comunicación certificada en la que el secretario y el fiscal del sindicato informaron su valor y la lista de afiliados. El 9 de octubre de 2026, un afiliado le entregó copia de su carta de renuncia al sindicato. Ese mismo día, el presidente del sindicato le pidió por correo electrónico retener a todos los afiliados una cuota extraordinaria aprobada en asamblea, sin adjuntar el acta. ¿Qué debe hacer en la nómina de octubre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Seguir con la cuota ordinaria del afiliado que renunció hasta que el sindicato lo confirme, y retener la extraordinaria.",
+        "explicacion": "Incorrecta. La retención cesa desde que el trabajador o el sindicato comunican por escrito la renuncia; no hay que esperar confirmación. Y la cuota extraordinaria requiere copia autenticada del acta de la asamblea."
+      },
+      {
+        "id": "B",
+        "texto": "Suspender la cuota ordinaria del afiliado que renunció y esperar copia autenticada del acta para retener la extraordinaria.",
+        "explicacion": "Correcta. La retención cesa desde que el trabajador comunica por escrito su renuncia (art. 400 num. 2). La cuota extraordinaria solo se retiene con copia autenticada del acta de la asamblea que la aprobó (num. 1), que el presidente no envió."
+      },
+      {
+        "id": "C",
+        "texto": "Suspender la cuota ordinaria del afiliado que renunció y retener la extraordinaria con la sola solicitud del presidente.",
+        "explicacion": "Incorrecta. Acierta con la renuncia, pero la solicitud del presidente no basta: la retención de cuotas extraordinarias exige copia autenticada del acta de la asamblea."
+      },
+      {
+        "id": "D",
+        "texto": "Seguir con la cuota ordinaria del afiliado que renunció hasta que el sindicato lo confirme, y no retener la extraordinaria.",
+        "explicacion": "Incorrecta. Acierta con la cuota extraordinaria, pero la renuncia comunicada por escrito por el trabajador basta para dejar de retenerle la cuota; no se requiere confirmación del sindicato."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el afiliado entregó por escrito su renuncia y el presidente pidió la cuota extraordinaria sin el acta. Regla: el art. 400 del CST (subrogado por el art. 23 del Decreto 2351 de 1965) hace cesar la retención desde que el trabajador o el sindicato comunican por escrito la renuncia (num. 2) y exige copia autenticada del acta para retener cuotas extraordinarias (num. 1). Conclusión: suspender la cuota ordinaria del renunciante y no retener aún la extraordinaria.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-LAB-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Fuero sindical",
+    "subtema": "Fuero de la comisión estatutaria de reclamos: traslado y sanciones disciplinarias del aforado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 405 (modificado por el art. 1 del Decreto Legislativo 204 de 1957)",
+      "art. 406 lit. d (modificado por el art. 12 de la Ley 584 de 2000)",
+      "art. 413"
+    ],
+    "texto_fuente": "Se denomina \"fuero sindical\" la garantía de que gozan algunos trabajadores de no ser despedidos, ni desmejorados en sus condiciones de trabajo, ni trasladados a otros establecimientos de la misma empresa o a un municipio distinto, sin justa causa, previamente calificada por el juez del trabajo. [...] Dos (2) de los miembros de la comisión estatutaria de reclamos, que designen los sindicatos, las federaciones o confederaciones sindicales, por el mismo período de la junta directiva y por seis (6) meses más, sin que pueda existir en una empresa más de una (1) comisión estatutaria de reclamos. [...] El fuero sindical no impide aplicar al trabajador que de él goce, las sanciones disciplinarias distintas del despido en los términos del respectivo reglamento de trabajo.",
+    "pregunta": "Un sindicato de empresa notificó al empleador su junta directiva, de cinco principales y cinco suplentes, y su comisión estatutaria de reclamos, integrada por Lucía y Jorge. La empresa quiere: (1) imponer a Rubén, principal de la junta, la suspensión de tres días que el reglamento de trabajo prevé para la falta que cometió, después de adelantar el procedimiento disciplinario, y (2) trasladar a Lucía a la sede de la empresa en otro municipio. El profesional jurídico debe indicar cuál de esas medidas exige obtener antes la calificación de la justa causa por el juez del trabajo. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambas: los dos tienen fuero, y toda sanción o cambio en sus condiciones debe pasar antes por el juez.",
+        "explicacion": "Incorrecta. El fuero no impide aplicar al aforado sanciones disciplinarias distintas del despido, según el reglamento (art. 413). Solo el traslado requiere la calificación judicial."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguna: la suspensión sigue el reglamento, y la comisión de reclamos no tiene la protección del fuero.",
+        "explicacion": "Incorrecta. Dos miembros de la comisión estatutaria de reclamos gozan de fuero por el mismo período de la junta directiva y seis meses más (art. 406 lit. d). Como la comisión tiene dos integrantes, Lucía está amparada."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la suspensión de Rubén; el traslado a otra sede de la misma empresa no desmejora a Lucía.",
+        "explicacion": "Incorrecta. El fuero protege expresamente contra el traslado a otro establecimiento de la misma empresa o a un municipio distinto sin justa causa calificada por el juez (art. 405), haya o no desmejora."
+      },
+      {
+        "id": "D",
+        "texto": "Solo el traslado de Lucía; para la suspensión de Rubén basta seguir el procedimiento del reglamento.",
+        "explicacion": "Correcta. Lucía, como integrante de la comisión estatutaria de reclamos, tiene fuero (art. 406 lit. d), y el fuero impide trasladarla a otro municipio sin justa causa previamente calificada por el juez (art. 405). La suspensión de Rubén es una sanción distinta del despido, que puede aplicarse según el reglamento (art. 413)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Lucía integra la comisión estatutaria de reclamos (dos miembros) y a Rubén se le impondría una suspensión disciplinaria. Regla: el art. 406 lit. d del CST ampara con fuero a dos miembros de esa comisión; el art. 405 impide trasladar al aforado a otro municipio sin justa causa calificada por el juez, y el art. 413 permite aplicarle sanciones disciplinarias distintas del despido. Conclusión: solo el traslado requiere calificación judicial previa.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50,
+      "nota": "Revisada: la tesis mayoritaria exige calificación judicial solo para despido, desmejora o traslado del aforado (art. 405 CST); la suspensión disciplinaria prevista en el reglamento no la requiere. D es la clave; A es minoritaria."
+    }
+  },
+  {
+    "id": "TC-LAB-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Negociación colectiva",
+    "subtema": "Extensión de la convención a los no sindicalizados y prohibición de prorrogar pactos colectivos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 470 (modificado por el art. 37 del Decreto 2351 de 1965)",
+      "art. 471 num. 1 (modificado por el art. 38 del Decreto 2351 de 1965)",
+      "artículo adicionado al CST por el art. 70 de la Ley 50 de 1990 (prohibición de pactos colectivos)"
+    ],
+    "texto_fuente": "Las convenciones colectivas entre {empleadores} y sindicatos cuyo número de afiliados no exceda de la tercera parte del total de los trabajadores de la empresa, solamente son aplicables a los miembros del sindicato que las haya celebrado, y a quienes adhieran a ellas o ingresen posteriormente al sindicato. [...] 1. Cuando en la convención colectiva sea parte un sindicato cuyos afiliados excedan de la tercera parte del total de los trabajadores de la empresa, las normas de la convención se extienden a todos los trabajadores de la misma, sean o no sindicalizados. [...] Cuando el sindicato o sindicatos agrupe más de la tercera parte de los trabajadores de una empresa, ésta no podrá suscribir pactos colectivos o prorrogar los que tenga vigentes.",
+    "pregunta": "Una empresa tiene 270 trabajadores. El sindicato de empresa, que tiene 95 afiliados, firmó con ella una convención colectiva en septiembre de 2026. Además, desde 2024 rige un pacto colectivo firmado con 80 trabajadores no sindicalizados, que vence el 31 de diciembre de 2026, y la gerencia quiere prorrogarlo por un año. La profesional jurídica debe conceptuar sobre los dos asuntos. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La convención rige para todos los trabajadores de la empresa, y el pacto colectivo no puede prorrogarse.",
+        "explicacion": "Correcta. Los 95 afiliados superan la tercera parte de los 270 trabajadores (90). Por eso la convención se extiende a todos, sindicalizados o no (art. 471 num. 1), y la empresa no puede suscribir pactos colectivos ni prorrogar los vigentes (art. 70 de la Ley 50 de 1990, incorporado al CST)."
+      },
+      {
+        "id": "B",
+        "texto": "La convención rige para todos los trabajadores de la empresa, y el pacto colectivo puede prorrogarse.",
+        "explicacion": "Incorrecta. Acierta con la extensión de la convención, pero la misma situación (un sindicato con más de la tercera parte de los trabajadores) le prohíbe a la empresa prorrogar el pacto colectivo."
+      },
+      {
+        "id": "C",
+        "texto": "La convención rige solo para los afiliados y quienes adhieran, y el pacto colectivo no puede prorrogarse.",
+        "explicacion": "Incorrecta. La aplicación limitada a afiliados y adherentes rige cuando el sindicato no excede la tercera parte de los trabajadores (art. 470). Aquí la excede: 95 > 90."
+      },
+      {
+        "id": "D",
+        "texto": "La convención rige solo para los afiliados y quienes adhieran, y el pacto colectivo puede prorrogarse.",
+        "explicacion": "Incorrecta. Usa como umbral la mitad de los trabajadores (135). La ley fija la tercera parte (90), que el sindicato supera, con dos efectos: la convención se extiende a todos y el pacto no puede prorrogarse."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el sindicato tiene 95 afiliados de 270 trabajadores, más de la tercera parte (90). Regla: el art. 471 num. 1 del CST extiende la convención a todos los trabajadores cuando el sindicato supera la tercera parte, y el artículo adicionado por el art. 70 de la Ley 50 de 1990 prohíbe en ese caso suscribir pactos colectivos o prorrogar los vigentes. Conclusión: la convención rige para todos y el pacto no puede prorrogarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-LAB-060",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Negociación colectiva",
+    "subtema": "Forma de la denuncia de la convención colectiva y prórroga automática",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 478",
+      "art. 479 (modificado por el art. 14 del Decreto 616 de 1954)"
+    ],
+    "texto_fuente": "A menos que se hayan pactado normas diferentes en la convención colectiva, si dentro de los sesenta (60) días inmediatamente anteriores a la expiración de su término, las partes o una de ellas no hubieren hecho manifestación escrita de su expresa voluntad de darla por terminada, la convención se entiende prorrogada por períodos sucesivos de seis en seis meses, que se contarán desde la fecha señalada para su terminación. [...] 1. Para que sea válida la manifestación escrita de dar por terminada una convención colectiva de trabajo, si se hace por una de las partes, o por ambas separadamente, debe presentarse por triplicado ante el Inspector del Trabajo del lugar, y en su defecto, ante el Alcalde, funcionarios que le pondrán la nota respectiva de presentación, señalando el lugar, la fecha y la hora de la misma. [...] 2. Formulada así la denuncia de la convención colectiva, ésta continuará vigente hasta tanto se firme una nueva convención.",
+    "pregunta": "La convención colectiva de una empresa vence el 31 de diciembre de 2026 y no trae reglas propias sobre su prórroga. El 20 de noviembre de 2026, el sindicato envió al gerente, por correo electrónico, una carta de denuncia de la convención; no la presentó ante el inspector del trabajo ni ante el alcalde. Ninguna de las partes hizo otra manifestación. En enero de 2027, el profesional jurídico de la empresa debe establecer la situación de la convención. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sigue rigiendo hasta que se firme una nueva, porque la denuncia se hizo dentro de los 60 días previos al vencimiento.",
+        "explicacion": "Incorrecta. La carta se envió a tiempo (el 20 de noviembre está dentro de los 60 días previos), pero la denuncia solo es válida si se presenta por triplicado ante el inspector del trabajo o, en su defecto, ante el alcalde (art. 479 num. 1). Un correo electrónico al gerente no cumple ese requisito."
+      },
+      {
+        "id": "B",
+        "texto": "Que terminó el 31 de diciembre de 2026, porque el sindicato expresó por escrito y a tiempo que no quería continuarla.",
+        "explicacion": "Incorrecta. Ni siquiera una denuncia válida termina la convención al vencimiento: la mantiene vigente hasta que se firme una nueva (art. 479 num. 2). Y esta denuncia no es válida por su forma."
+      },
+      {
+        "id": "C",
+        "texto": "Que se prorrogó hasta el 30 de junio de 2027, porque la denuncia no se presentó en la forma que exige la ley.",
+        "explicacion": "Correcta. Sin una denuncia válida dentro de los 60 días anteriores al vencimiento, la convención se prorroga por seis meses contados desde la fecha de terminación (art. 478): del 1 de enero al 30 de junio de 2027."
+      },
+      {
+        "id": "D",
+        "texto": "Que se prorrogó hasta el 31 de diciembre de 2027, porque la denuncia no se presentó en la forma que exige la ley.",
+        "explicacion": "Incorrecta. Acierta en que la denuncia no fue válida, pero la prórroga automática es por periodos sucesivos de seis meses, no de un año."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la denuncia se envió por correo electrónico al gerente, sin presentarla ante el inspector ni el alcalde. Regla: el art. 479 num. 1 del CST (mod. Decreto 616 de 1954) exige presentar la denuncia por triplicado ante el inspector o, en su defecto, el alcalde; sin manifestación válida en los 60 días previos, el art. 478 prorroga la convención por seis meses desde su vencimiento. Conclusión: rige hasta el 30 de junio de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
   }
 ]

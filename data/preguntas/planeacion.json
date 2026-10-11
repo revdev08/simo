@@ -1516,5 +1516,1100 @@
       "fecha": "2026-10-10",
       "p_estimado": 60
     }
+  },
+  {
+    "id": "TC-PLA-029",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Sistema Unificado de Inversión Pública",
+    "subtema": "Responsabilidad de la entidad por la calidad de la información que registra en la PIIP",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.1.4, principio de responsabilidad (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.1.8, inc. 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Responsabilidad. Cada entidad y actor será responsable por la información de los proyectos de inversión pública que ingrese a la herramienta informática que soporta el SUIP; por lo tanto, gestionará lo requerido para asegurar su completitud, precisión, actualización y calidad, de conformidad con los lineamientos metodológicos definidos por el DNP para el efecto, la normativa aplicable al proyecto que se esté gestionando, y lo establecido en el presente Título. [...] La administración funcional y técnica de la PIIP estará a cargo del DNP, en el marco de sus funciones.",
+    "pregunta": "Camilo, técnico de la secretaría de planeación de un municipio, revisa en la Plataforma Integrada de Inversión Pública (PIIP) el reporte de seguimiento de agosto que la secretaría de obras cargó para un proyecto de alumbrado público financiado con recursos propios del municipio. Encuentra que el valor pagado en el mes quedó registrado como $480 millones, cuando según la tesorería fue de $48 millones. El tesorero le sugiere dejar el reporte de agosto como está y descontar la diferencia en el de septiembre. El secretario de obras objeta que el dato de agosto sí hay que corregirlo, pero que eso le toca al DNP, que es el dueño de la plataforma. ¿Qué debe hacer Camilo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir al DNP que, como administrador de la plataforma, corrija el valor que quedó registrado en el reporte de agosto.",
+        "explicacion": "Incorrecta. Es la posición del secretario de obras: acierta en que el dato de agosto debe corregirse, pero confunde la administración funcional y técnica de la PIIP, que está a cargo del DNP, con la responsabilidad por la información de cada proyecto, que es de la entidad que la ingresa."
+      },
+      {
+        "id": "B",
+        "texto": "Remitir el caso a la secretaría de planeación del departamento, que evalúa la gestión de los planes municipales.",
+        "explicacion": "Incorrecta. La evaluación de gestión y resultados que hace el departamento sobre los planes municipales no lo vuelve responsable de los datos que el municipio registra en la PIIP."
+      },
+      {
+        "id": "C",
+        "texto": "Gestionar que la secretaría de obras corrija en la PIIP el valor de agosto con la cifra que reportó la tesorería.",
+        "explicacion": "Correcta. Por el principio de responsabilidad, cada entidad responde por la información de los proyectos que ingresa a la herramienta del SUIP y debe asegurar su completitud, precisión, actualización y calidad, conforme a los lineamientos del DNP. El dato lo cargó la secretaría de obras del municipio, así que el municipio gestiona su corrección; al DNP le corresponde administrar la plataforma, no responder por ese dato."
+      },
+      {
+        "id": "D",
+        "texto": "Dejar el reporte de agosto como está y descontar los $432 millones de más en el valor que se reporte en septiembre.",
+        "explicacion": "Incorrecta. Es la sugerencia del tesorero. Compensar el error en el mes siguiente deja dos reportes equivocados, el de agosto y el de septiembre, y afecta la precisión de la información, que es justamente lo que la entidad debe asegurar. En esto acierta el secretario de obras: el dato de agosto debe corregirse."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el valor equivocado lo cargó la secretaría de obras del propio municipio. Regla: según el art. 2.2.6.1.4 del Decreto 1082 (principio de responsabilidad), cada entidad responde por la información de sus proyectos en la herramienta del SUIP y debe asegurar su completitud, precisión, actualización y calidad; el art. 2.2.6.1.8 deja al DNP la administración funcional y técnica de la PIIP. Conclusión: el secretario acierta en que el dato de agosto debe corregirse, pero la corrección la gestiona el municipio, no el DNP.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-PLA-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Ciclo de los proyectos de inversión",
+    "subtema": "Qué gasto se gestiona como proyecto de inversión: actividades limitadas en el tiempo y recursos parcialmente públicos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.1.5, inc. 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.1.7 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Los gastos de inversión se soportan y materializan a través de proyectos de inversión pública. [...] Los proyectos de inversión pública contemplan actividades limitadas en el tiempo, que utilizan total o parcialmente recursos públicos, con el fin de crear, ampliar, mejorar o recuperar la capacidad de producción o de provisión de bienes o servicios por parte del Estado",
+    "pregunta": "La secretaría de ambiente de un departamento pide a la oficina de planeación registrar dos iniciativas como proyectos de inversión pública: (1) montar y dotar, entre 2027 y 2028, un laboratorio departamental de calidad del agua que costará $2.000 millones, de los cuales una empresa privada aportará el 40% mediante un convenio; y (2) pagar cada año, sin fecha de terminación, el arriendo y la vigilancia de la sede de la secretaría. Isabel, profesional de planeación, debe emitir concepto. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el laboratorio sí es un proyecto de inversión, y el arriendo y la vigilancia no, porque son pagos recurrentes que solo sostienen la sede.",
+        "explicacion": "Correcta. El laboratorio reúne las características de un proyecto: actividades limitadas en el tiempo (2027-2028), financiadas total o parcialmente con recursos públicos, que crean capacidad para prestar un servicio. El arriendo y la vigilancia son pagos permanentes, sin término, que no crean, amplían, mejoran ni recuperan capacidad: no se gestionan como proyecto de inversión."
+      },
+      {
+        "id": "B",
+        "texto": "Que ninguno lo es: el laboratorio no, porque lo cofinancia un particular, y el arriendo y la vigilancia tampoco, por ser pagos recurrentes.",
+        "explicacion": "Incorrecta. Acierta sobre el arriendo y la vigilancia, pero el aporte privado no le quita al laboratorio la condición de proyecto de inversión pública: basta con que use total o parcialmente recursos públicos."
+      },
+      {
+        "id": "C",
+        "texto": "Que los dos lo son, porque ambos se pagan con recursos públicos y apoyan los servicios que presta la secretaría de ambiente.",
+        "explicacion": "Incorrecta. Acierta sobre el laboratorio, pero usar recursos públicos no basta: el arriendo y la vigilancia no son actividades limitadas en el tiempo ni crean o amplían la capacidad del Estado."
+      },
+      {
+        "id": "D",
+        "texto": "Que el laboratorio no lo es, porque lo cofinancia un particular, y el arriendo y la vigilancia sí, porque apoyan los servicios de la secretaría.",
+        "explicacion": "Incorrecta. Invierte la conclusión: el laboratorio es proyecto aunque lo cofinancie un particular, y un pago permanente para sostener la sede no lo es."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el laboratorio se ejecuta entre 2027 y 2028, con 60% de recursos públicos, y crea una capacidad nueva; el arriendo y la vigilancia se pagan cada año sin fecha de terminación. Regla: según el art. 2.2.6.1.7 del Decreto 1082, los proyectos de inversión contemplan actividades limitadas en el tiempo, que usan total o parcialmente recursos públicos, para crear, ampliar, mejorar o recuperar capacidad de producción o provisión de bienes o servicios. Conclusión: solo el laboratorio es proyecto de inversión.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 78
+    }
+  },
+  {
+    "id": "TC-PLA-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Ciclo de los proyectos de inversión",
+    "subtema": "Etapas de inversión y de operación: inicio con recursos disponibles y fin con el cierre de la ejecución financiera",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.1.11, etapas de inversión y de operación (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.4.3, inc. 1 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Etapa de inversión. La etapa de inversión corresponde al proceso de ejecución del que trata el Capítulo 4 del presente Título, por medio del cual se desarrollan las actividades que permiten entregar los bienes y servicios definidos en el alcance del proyecto; inicia en el momento en que el proyecto de inversión cuenta con recursos disponibles y se extiende hasta el cierre de la ejecución financiera del proyecto. Etapa de Operación. La etapa de operación comprende el período en que los productos del proyecto entran en funcionamiento y se generan los beneficios estimados de acuerdo con los objetivos definidos para el proyecto. [...] El cierre de la ejecución financiera de los proyectos de inversión pública corresponde a la finalización de la ejecución del presupuesto, lo cual deberá ser certificado por el ordenador del gasto y reportado en la PIIP con posterioridad a la terminación del proyecto",
+    "pregunta": "El 15 de marzo de 2027, Rocío, técnica de la oficina de planeación de una gobernación, actualiza el tablero de proyectos de inversión y debe indicar en qué etapa está cada uno. El proyecto 1, de dotación de bibliotecas, ya está registrado en el banco de proyectos, y el presupuesto de 2027 le asignó una apropiación que ya puede comprometerse, aunque el contrato de compra aún no se ha firmado. El proyecto 2 construyó un centro de acopio que se entregó en noviembre de 2026; el ordenador del gasto certificó en febrero de 2027 el cierre de su ejecución financiera, que se reportó en la PIIP, y el centro ya recibe la cosecha de los productores. ¿Qué debe indicar Rocío?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proyecto 1 en preinversión, porque la inversión empieza al firmar el contrato; proyecto 2 en operación, porque ya se cerró.",
+        "explicacion": "Incorrecta. Acierta en el proyecto 2, pero la etapa de inversión no empieza con la firma del contrato: empieza cuando el proyecto cuenta con recursos disponibles, como la apropiación de 2027 del proyecto 1."
+      },
+      {
+        "id": "B",
+        "texto": "Proyecto 1 en inversión, porque ya tiene recursos para comprometer; proyecto 2 en inversión, hasta su evaluación posterior.",
+        "explicacion": "Incorrecta. Acierta en el proyecto 1, pero la etapa de inversión se extiende solo hasta el cierre de la ejecución financiera. La evaluación posterior, cuando se requiere, hace parte de la etapa de operación."
+      },
+      {
+        "id": "C",
+        "texto": "Proyecto 1 en preinversión, porque la inversión empieza al firmar el contrato; proyecto 2 en inversión, hasta su evaluación posterior.",
+        "explicacion": "Incorrecta. Comete los dos errores: ata el inicio de la inversión a la firma del contrato y prolonga esa etapa hasta la evaluación posterior, cuando termina con el cierre de la ejecución financiera."
+      },
+      {
+        "id": "D",
+        "texto": "Proyecto 1 en inversión, porque ya tiene recursos para comprometer; proyecto 2 en operación, porque ya se cerró.",
+        "explicacion": "Correcta. El proyecto 1 cuenta con recursos disponibles (una apropiación que ya puede comprometerse), y en ese momento inicia la etapa de inversión. El proyecto 2 entregó su producto, y el cierre de su ejecución financiera quedó certificado por el ordenador del gasto y reportado en la PIIP, con lo que terminó la inversión; el centro funciona y genera beneficios: etapa de operación."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el proyecto 1 ya tiene una apropiación que puede comprometerse, aunque no haya contrato; el proyecto 2 tiene certificado y reportado en la PIIP el cierre de su ejecución financiera, y el centro funciona. Regla: según el art. 2.2.6.1.11 del Decreto 1082, la etapa de inversión inicia cuando el proyecto cuenta con recursos disponibles y se extiende hasta el cierre de la ejecución financiera (art. 2.2.6.4.3); la de operación es el período en que los productos funcionan y generan beneficios. Conclusión: proyecto 1 en inversión y proyecto 2 en operación.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-PLA-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Formulación y estructuración de proyectos",
+    "subtema": "Proyectos tipo del DNP en la preinversión y Documentos Tipo para contratar la ejecución",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.2.4, inc. 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Siempre que el DNP disponga de proyectos tipo de inversión pública, estos podrán ser utilizados para adelantar la etapa de preinversión. Una vez el proyecto cuente con recursos disponibles, de existir pliegos de condiciones y Documentos Tipo diseñados por la Agencia Nacional de Contratación Pública -Colombia Compra Eficiente-, éstos deberán ser utilizados para iniciar la etapa de inversión, cuando así corresponda conforme a lo previsto en la Ley 1150 de 2007 o la norma que la modifique o sustituya.",
+    "pregunta": "Un municipio construirá 6 km de placa huella en sus veredas con recursos propios. El DNP tiene un proyecto tipo para esa clase de obra, y Colombia Compra Eficiente adoptó Documentos Tipo para los procesos de selección de obra pública de infraestructura de transporte. El secretario de infraestructura quiere formular el proyecto con estudios y diseños propios y, cuando tenga los recursos, contratar la obra con un pliego elaborado por su secretaría. Andrés, profesional de la secretaría de planeación, revisa la propuesta. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que en la preinversión debe usar el proyecto tipo del DNP, y que puede contratar la obra con el pliego de su secretaría.",
+        "explicacion": "Incorrecta. Invierte las dos reglas: el proyecto tipo es una herramienta que puede usarse en la preinversión, no una obligación; y, si existen Documentos Tipo para el proceso, deben usarse al iniciar la etapa de inversión."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede formularlo con sus propios estudios y diseños, pero debe contratar la obra con los Documentos Tipo.",
+        "explicacion": "Correcta. El reglamento dice que los proyectos tipo del DNP «podrán» utilizarse en la preinversión, de modo que el municipio puede formular con sus propios estudios. En cambio, una vez el proyecto tenga recursos, los pliegos y Documentos Tipo de Colombia Compra Eficiente «deberán» utilizarse para iniciar la inversión, cuando corresponda según la Ley 1150 de 2007."
+      },
+      {
+        "id": "C",
+        "texto": "Que en la preinversión debe usar el proyecto tipo del DNP, y que también debe contratar la obra con los Documentos Tipo.",
+        "explicacion": "Incorrecta. Acierta sobre los Documentos Tipo, pero el texto vigente no obliga a usar el proyecto tipo en la preinversión: dice que «podrán» utilizarse."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede formularlo con sus propios estudios y diseños, y también contratar la obra con el pliego de su secretaría.",
+        "explicacion": "Incorrecta. Acierta sobre la preinversión, pero si existen Documentos Tipo para ese proceso de selección, deben usarse al iniciar la etapa de inversión; un pliego propio no puede reemplazarlos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: existe un proyecto tipo del DNP y existen Documentos Tipo de Colombia Compra Eficiente aplicables al proceso de selección de la obra. Regla: el art. 2.2.6.2.4 del Decreto 1082 dice que los proyectos tipo «podrán» usarse en la preinversión, pero que, una vez haya recursos disponibles, los pliegos y Documentos Tipo «deberán» utilizarse para iniciar la inversión, cuando corresponda según la Ley 1150 de 2007. Conclusión: puede formular con diseños propios, pero debe contratar con los Documentos Tipo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-PLA-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Gestión de recursos para proyectos de inversión",
+    "subtema": "Orden indicativo de priorización en la PIIP y autonomía de la entidad para priorizar",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.3.1 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.3.2, inc. 1 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "los proyectos de inversión pública registrados en el Banco Único de Proyectos de Inversión Pública se visualizarán en la PIIP en el orden indicativo que resulte de aplicar las variables para la priorización de proyectos, según la normativa aplicable a cada fuente de financiación. En todo caso, el orden que se defina conforme a lo señalado en el inciso anterior no afectará la autonomía de las entidades competentes para priorizar los proyectos de inversión pública. [...] Los proyectos de inversión pública registrados en el Banco Único de Proyectos de Inversión Pública, que han sido priorizados por la entidad o actor competente, podrán postularse para solicitar recursos de las diferentes fuentes de financiación disponibles atendiendo la normativa aplicable a la respectiva fuente.",
+    "pregunta": "Una gobernación tiene registrados en el Banco Único dos proyectos que podrían presentarse a una convocatoria de cofinanciación: un acueducto veredal, que la PIIP muestra en el primer lugar según sus variables, y una vía terciaria, que aparece en el tercer lugar. El gobernador, con su consejo de gobierno, decidió presentar la vía. Felipe, técnico de la oficina de planeación, debe cargar la postulación, pero duda si puede apartarse del orden que muestra la plataforma. ¿Qué debe hacer Felipe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Postular la vía, porque el orden de la plataforma sirve de guía y la decisión de priorizar le corresponde a la gobernación.",
+        "explicacion": "Correcta. La PIIP muestra los proyectos registrados en un orden indicativo, que resulta de aplicar variables de priorización, y ese orden no afecta la autonomía de la entidad para priorizar. Los proyectos registrados y priorizados por la entidad competente pueden postularse."
+      },
+      {
+        "id": "B",
+        "texto": "Postular el acueducto, porque la gobernación debe seguir el orden en que la plataforma ubica sus proyectos registrados.",
+        "explicacion": "Incorrecta. Trata como obligatorio un orden que el reglamento califica de indicativo y que no afecta la autonomía de la entidad para priorizar."
+      },
+      {
+        "id": "C",
+        "texto": "Postular la vía solo después de que el DNP autorice apartarse del orden en que la plataforma ubica ese proyecto.",
+        "explicacion": "Incorrecta. Exige una autorización del DNP que el reglamento no prevé: la decisión de priorizar corresponde a la entidad competente."
+      },
+      {
+        "id": "D",
+        "texto": "Postular los dos proyectos y dejar que la entidad que cofinancia escoja uno según el orden que muestra la plataforma.",
+        "explicacion": "Incorrecta. Traslada a la entidad cofinanciadora una decisión que ya tomó la gobernación y supone que el orden de la plataforma obliga, cuando es solo indicativo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la gobernación decidió presentar la vía, aunque la PIIP muestra primero el acueducto. Regla: según el art. 2.2.6.3.1 del Decreto 1082, el orden en que la PIIP muestra los proyectos registrados es indicativo y no afecta la autonomía de las entidades para priorizarlos; según el art. 2.2.6.3.2, los proyectos registrados y priorizados por la entidad competente pueden postularse. Conclusión: debe postular la vía.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 82
+    }
+  },
+  {
+    "id": "TC-PLA-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Gestión de recursos para proyectos de inversión",
+    "subtema": "Proyectos ejecutados mediante patrimonios autónomos: gestión en la PIIP y verificación del registro",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.3.5 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Los proyectos de inversión pública que se ejecuten a través del mecanismo de fiducias, encargos fiduciarios o patrimonios autónomos y sus derivados , cuando apliquen, deberán ser gestionados a través de la PIIP por la entidad pública responsable del proyecto de inversión del cual se programan los recursos, quien deberá verificar que todos los proyectos que se financien con los recursos dispuestos en dicho patrimonio estén registrados en la PIIP, conforme a las reglas del presente título, los lineamientos que establezca el DNP para tal fin, y las demás normas aplicables en la materia.",
+    "pregunta": "Un ministerio programó en su proyecto de inversión de vivienda rural $30.000 millones que transferirá a un patrimonio autónomo administrado por una fiduciaria. Con esos recursos se pagarán 25 subproyectos de mejoramiento de vivienda en distintos municipios. La fiduciaria propone llevar el listado de los subproyectos en su propio sistema y enviar un informe trimestral al ministerio; el coordinador del programa sugiere que cada municipio beneficiario registre su subproyecto si lo desea. Lucía, profesional de la oficina de planeación del ministerio, debe recomendar cómo gestionarlos. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la fiduciaria, como administradora del patrimonio, gestione el proyecto en la PIIP y verifique que los 25 subproyectos estén registrados.",
+        "explicacion": "Incorrecta. Las dos tareas existen, pero no son de la fiduciaria: el reglamento asigna la gestión en la PIIP y la verificación del registro a la entidad pública responsable del proyecto del cual se programan los recursos, que aquí es el ministerio. La fiduciaria solo administra el patrimonio."
+      },
+      {
+        "id": "B",
+        "texto": "Que cada municipio registre su subproyecto en su banco territorial, y que el ministerio reporte en la PIIP solo la transferencia.",
+        "explicacion": "Incorrecta. El registro de los subproyectos no es opcional ni basta con reportar la transferencia: la entidad responsable debe verificar que todos los proyectos financiados con el patrimonio estén registrados en la PIIP."
+      },
+      {
+        "id": "C",
+        "texto": "Que el ministerio maneje el proyecto en la plataforma y compruebe que cada uno de los 25 subproyectos tenga allí su propio registro.",
+        "explicacion": "Correcta. Cuando un proyecto se ejecuta mediante un patrimonio autónomo, la entidad pública responsable del proyecto del cual se programan los recursos (el ministerio) lo gestiona en la PIIP y debe verificar que todos los proyectos que se financien con ese patrimonio estén registrados en la plataforma: aquí, los 25 subproyectos."
+      },
+      {
+        "id": "D",
+        "texto": "Que el ministerio reporte la transferencia en la PIIP y que el DNP, como administrador de la plataforma, revise los subproyectos.",
+        "explicacion": "Incorrecta. El DNP administra la plataforma, pero verificar que los proyectos financiados con el patrimonio estén registrados le corresponde a la entidad responsable del proyecto."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los $30.000 millones salen del proyecto de inversión del ministerio y se ejecutan mediante un patrimonio autónomo que pagará 25 subproyectos. Regla: el art. 2.2.6.3.5 del Decreto 1082 dispone que esos proyectos los gestiona en la PIIP la entidad pública responsable del proyecto del cual se programan los recursos, la cual debe verificar que todos los proyectos financiados con el patrimonio estén registrados en la PIIP. Conclusión: el ministerio gestiona el proyecto y verifica el registro de los 25 subproyectos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-PLA-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Programación de la inversión",
+    "subtema": "Proyectos que pueden incluirse en el POAI: concepto definitivo con condicionamientos y proyecto devuelto por el DNP",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.7.4, incs. 3 y 4 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.7.6, incs. 1 y 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "En caso de considerar que no se cumplen los parámetros definidos en el presente artículo, el DNP se abstendrá de emitir dicho concepto y devolverá el proyecto al formulador, señalando de forma precisa aquellos aspectos que requieren subsanarse o las razones por las cuales se declara no viable. En aquellos eventos en que se requiera subsanar componentes del proyecto de inversión que no afectan su identificación y alcance, entendiendo por alcance el objetivo general y los específicos, los productos y la localización, las direcciones técnicas competentes del DNP podrán emitir conceptos definitivos de viabilidad con condicionamientos, marcando el proyecto con la leyenda \"Previo concepto DNP\". [...] Una vez el proyecto de inversión obtenga el concepto definitivo de viabilidad, conforme a lo señalado en el presente Título, este quedará registrado en el Banco Único de Proyectos de Inversión Pública y será susceptible de ser financiado con recursos del Presupuesto General de la Nación. El Plan Operativo Anual de Inversiones -POAI- se elaborará con los proyectos de inversión que tengan concepto definitivo de viabilidad y que cuenten con información sobre los recursos solicitados para la vigencia de programación.",
+    "pregunta": "El 10 de junio de 2027, Tomás, técnico del banco de proyectos de un establecimiento público del orden nacional, prepara para su jefe la lista de proyectos que pueden incluirse en el Plan Operativo Anual de Inversiones (POAI) de 2028. Los cuatro tienen cargados en la PIIP los recursos que solicitan para 2028. P1 obtuvo el concepto sectorial el 20 de abril y el concepto definitivo del DNP, sin observaciones, el 25 de mayo. P2 obtuvo el concepto sectorial el 28 de abril, pero el 28 de mayo el DNP se abstuvo de emitir concepto y lo devolvió para corregir sus indicadores. P3 obtuvo el concepto sectorial el 22 de abril y, el 27 de mayo, concepto definitivo con la leyenda «Previo concepto DNP», porque el costo de una actividad no coincide con las cotizaciones. P4 solo tiene la verificación de requisitos de la oficina de planeación de la entidad, hecha el 3 de mayo. ¿Qué proyectos debe incluir Tomás en la lista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo P1, porque P3 no puede entrar al POAI mientras el DNP no levante la leyenda que le impuso en su concepto.",
+        "explicacion": "Incorrecta. La leyenda «Previo concepto DNP» acompaña un concepto definitivo con condicionamientos: P3 quedó registrado y puede programarse. Lo que la leyenda impide, mientras no se levante, es ejecutar los recursos, no entrar al POAI."
+      },
+      {
+        "id": "B",
+        "texto": "P1 y P3, porque los dos ya quedaron registrados en el Banco Único; la leyenda de P3 no lo deja por fuera del POAI.",
+        "explicacion": "Correcta. El POAI se elabora con los proyectos que tengan concepto definitivo de viabilidad y la información de los recursos solicitados. P1 lo tiene sin condiciones; P3 lo tiene con condicionamientos, porque el costo de una actividad no afecta su alcance, y con ese concepto quedó registrado. P2 fue devuelto sin concepto y P4 ni siquiera tiene concepto sectorial."
+      },
+      {
+        "id": "C",
+        "texto": "P1, P2 y P3, porque los tres obtuvieron su concepto sectorial antes del 30 de abril de 2027, que era el límite.",
+        "explicacion": "Incorrecta. Obtener el concepto sectorial dentro del plazo no basta: el POAI se elabora con proyectos que tengan concepto definitivo del DNP, y P2 fue devuelto sin él."
+      },
+      {
+        "id": "D",
+        "texto": "P1 y P2, porque P2 puede corregirse hasta el 15 de julio y P3 debe esperar a que el DNP levante su leyenda.",
+        "explicacion": "Incorrecta. P2 no tiene concepto definitivo, y el 15 de julio es la fecha límite para someter el POAI al Conpes, no un plazo para subsanar. P3, en cambio, sí puede incluirse."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: P1 y P3 tienen concepto definitivo del DNP (P3 con la leyenda por una inconsistencia de costos); P2 fue devuelto y P4 no llegó al concepto sectorial. Regla: según el art. 2.2.6.7.4 del Decreto 1082, el DNP puede emitir concepto definitivo con condicionamientos cuando lo que falta no afecta el alcance; según el art. 2.2.6.7.6, con ese concepto el proyecto queda registrado, y el POAI se elabora con los proyectos que lo tengan. Conclusión: P1 y P3.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "ambigua",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-PLA-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Viabilidad y registro de proyectos",
+    "subtema": "Quién emite el concepto sectorial de viabilidad: entidad adscrita y ministerio que ejecuta directamente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.7.2, inc. 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.7.3, incs. 1 y final (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Verificados los requisitos enumerados en este artículo, el jefe de planeación, o quien haga sus veces en la entidad responsable del proyecto, lo remitirá, a través de la PIIP, a la entidad a la cual se encuentre adscrita o vinculada. [...] Cumplida la verificación de requisitos, el proceso continuará para análisis de la oficina de planeación, o quien haga sus veces, en el respectivo ministerio o departamento administrativo al cual se encuentre adscrita o vinculada la entidad ejecutora, o de la instancia designada en aquellas entidades que no hagan parte de la rama ejecutiva del poder público del orden nacional. [...] Tratándose de proyectos de inversión cuyos ejecutores sean los ministerios y departamentos administrativos, se podrá cumplir lo dispuesto en este artículo a través del funcionario designado por el jefe de la entidad para tal propósito.",
+    "pregunta": "La jefa de planeación de una superintendencia adscrita a un ministerio terminó la verificación de requisitos de un proyecto de inversión que se financiará con el Presupuesto General de la Nación. Para ganar tiempo, el superintendente propone que esa misma oficina emita también el concepto sectorial de viabilidad, pues es la que mejor conoce el proyecto. Al mismo tiempo, el ministerio tiene un proyecto que ejecuta directamente, y su secretaría general pregunta quién puede emitir el concepto sectorial en ese caso. Mariana, asesora de la oficina de planeación del ministerio, debe responder las dos consultas. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El concepto del proyecto de la superintendencia lo emite su propia oficina de planeación, y el del proyecto del ministerio, la dirección técnica del DNP.",
+        "explicacion": "Incorrecta. Tiene los dos errores: la entidad adscrita no emite su propio concepto sectorial, y el DNP no reemplaza al sector en ese paso; al DNP le corresponde después el concepto definitivo."
+      },
+      {
+        "id": "B",
+        "texto": "El concepto del proyecto de la superintendencia lo emite la oficina de planeación del ministerio, y el del proyecto del ministerio, la dirección técnica del DNP.",
+        "explicacion": "Incorrecta. Acierta en el proyecto de la superintendencia, pero confunde el concepto sectorial con el concepto definitivo del DNP. Cuando el ejecutor es el ministerio, el concepto sectorial puede emitirlo el funcionario que designe el jefe de la entidad."
+      },
+      {
+        "id": "C",
+        "texto": "El concepto del proyecto de la superintendencia lo emite su propia oficina de planeación, y el del ministerio puede emitirlo el funcionario que designe el ministro.",
+        "explicacion": "Incorrecta. Acierta en el proyecto del ministerio, pero la superintendencia solo verifica requisitos y remite el proyecto; el concepto sectorial lo emite la oficina de planeación del ministerio al que está adscrita."
+      },
+      {
+        "id": "D",
+        "texto": "El concepto del proyecto de la superintendencia lo emite la oficina de planeación del ministerio, y el del ministerio puede emitirlo el funcionario que designe el ministro.",
+        "explicacion": "Correcta. Verificados los requisitos, la jefa de planeación de la superintendencia remite el proyecto, por la PIIP, al ministerio al que está adscrita, cuya oficina de planeación emite el concepto sectorial. Cuando el ejecutor es el propio ministerio, ese paso puede cumplirse por medio del funcionario que designe el jefe de la entidad."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la superintendencia está adscrita al ministerio, y el segundo proyecto lo ejecuta directamente el ministerio. Regla: según los arts. 2.2.6.7.2 y 2.2.6.7.3 del Decreto 1082, tras la verificación de requisitos el proyecto pasa a la oficina de planeación del ministerio al que está adscrita la entidad ejecutora, que emite el concepto sectorial; si el ejecutor es un ministerio, puede hacerlo el funcionario que designe el jefe de la entidad. Conclusión: planeación del ministerio para la superintendencia y funcionario designado para el proyecto propio.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-PLA-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Ajustes a los proyectos de inversión",
+    "subtema": "Ajuste obligatorio por extender la ejecución a otras vigencias y ajustes después del cierre",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.4.4, inc. 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.4.5, evento 3 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Con posterioridad a su registro y hasta antes de su cierre, los proyectos de inversión podrán ser susceptibles de ajustes, que se gestionarán a través de la PIIP, de acuerdo con los lineamientos que para el efecto defina el DNP y conforme a las normas especiales que reglamenten la respectiva fuente de financiación. [...] Los proyectos de inversión pública deberán ajustarse en los siguientes eventos, teniendo en cuenta la normativa aplicable a cada fuente de financiación y de acuerdo con los lineamientos que para el efecto expida el DNP: [...] Cuando la ejecución del proyecto de inversión se extienda a otras vigencias fiscales no contempladas en el horizonte inicial del mismo, y se requiera contar con el respectivo respaldo presupuestal para el cumplimiento de las metas y para el cierre del proyecto.",
+    "pregunta": "En octubre de 2026, Natalia, técnica del banco de proyectos de un ministerio, recibe dos solicitudes. La primera es del proyecto X, cuyo horizonte registrado va de 2024 a 2026: la obra terminará en junio de 2027 y necesitará recursos del Presupuesto General de la Nación ese año para cumplir sus metas y cerrarse; el área técnica pide no tocar el proyecto y solo solicitar la apropiación de 2027. La segunda es del proyecto Y, cuya terminación ya se registró y cuyo cierre de la ejecución financiera certificó el ordenador del gasto y se reportó en la PIIP en agosto de 2026: el área quiere ajustarlo para agregar una dotación con recursos de 2027, sin cambiar sus objetivos, sus productos ni el lugar de la obra. ¿Qué debe responder Natalia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "X debe ajustarse para incluir 2027 en su horizonte; Y ya no admite ajustes, porque su ejecución financiera está cerrada.",
+        "explicacion": "Correcta. El ajuste es obligatorio cuando la ejecución se extiende a vigencias no contempladas en el horizonte inicial y se requiere respaldo presupuestal para cumplir metas y cerrar, como ocurre con X en 2027. Y, en cambio, ya está cerrado, y los ajustes solo proceden después del registro y hasta antes del cierre."
+      },
+      {
+        "id": "B",
+        "texto": "X no requiere ajuste, porque basta con pedir la apropiación de 2027; Y ya no admite ajustes, porque su ejecución financiera está cerrada.",
+        "explicacion": "Incorrecta. Acierta en Y, pero en X la extensión a 2027 con necesidad de recursos es uno de los eventos de ajuste obligatorio; no basta con pedir la apropiación."
+      },
+      {
+        "id": "C",
+        "texto": "X debe ajustarse para incluir 2027 en su horizonte; Y puede ajustarse, porque la dotación no cambia sus objetivos ni productos.",
+        "explicacion": "Incorrecta. Acierta en X, pero en Y no importa que la dotación conserve el alcance: los ajustes solo caben hasta antes del cierre, y su ejecución financiera ya se cerró."
+      },
+      {
+        "id": "D",
+        "texto": "X no requiere ajuste, porque basta con pedir la apropiación de 2027; Y puede ajustarse, porque la dotación no cambia sus objetivos ni productos.",
+        "explicacion": "Incorrecta. Comete los dos errores: omite el ajuste obligatorio de X por extenderse a 2027 y permite ajustar Y después de su cierre."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: X necesita recursos en 2027, fuera de su horizonte 2024-2026; Y ya tiene certificado y reportado el cierre de su ejecución financiera. Regla: según el art. 2.2.6.4.5 del Decreto 1082, el proyecto debe ajustarse cuando su ejecución se extiende a vigencias no contempladas y requiere respaldo presupuestal; según el art. 2.2.6.4.4, los ajustes proceden después del registro y hasta antes del cierre. Conclusión: X debe ajustarse; Y ya no admite ajustes.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-PLA-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Programación de la inversión",
+    "subtema": "Modificaciones al componente de inversión del proyecto de ley de presupuesto y actualizaciones posteriores",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.7.11, incs. 1 y 2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "Sin perjuicio de lo previsto en el artículo 60 del Estatuto Orgánico del Presupuesto, las propuestas de modificación que realicen las entidades al componente de inversión del proyecto de Ley Anual de Presupuesto serán tramitadas en la PIIP por el representante legal o por quien este delegue, para la evaluación y concepto del DNP y su posterior trámite ante el Ministerio de Hacienda y Crédito Público. Las entidades deberán actualizar la focalización en políticas transversales y la regionalización del presupuesto de inversión de acuerdo con las propuestas de modificación aceptadas. Los proyectos de inversión pública que requieran ajustes en virtud de la propuesta de modificación al componente de inversión del proyecto de Ley Anual de Presupuesto, de que trata el presente artículo, deberán ser actualizados por la entidad solicitante en la PIIP para poder iniciar su ejecución en la respectiva vigencia fiscal.",
+    "pregunta": "En septiembre de 2026, mientras el Congreso estudia el proyecto de ley de presupuesto de 2027, una agencia nacional quiere trasladar $3.000 millones de su proyecto de catastro rural a su proyecto de titulación de baldíos, dentro del componente de inversión del proyecto de ley. El jefe de planeación preparó un oficio firmado por él para radicarlo directamente en el Ministerio de Hacienda, y anuncia que, si la propuesta se acepta, la ley fijará los nuevos montos y no habrá que hacer nada más en la plataforma. Esteban, asesor de planeación, revisa el plan. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Radicar en Hacienda el oficio del jefe de planeación y, si se acepta, actualizar regionalización, focalización y los dos proyectos en la PIIP antes de ejecutarlos.",
+        "explicacion": "Incorrecta. Acierta en lo que sigue a la aceptación, pero la propuesta no se radica directamente en Hacienda con la firma del jefe de planeación: la tramita en la PIIP el representante legal o su delegado, para evaluación y concepto del DNP, y luego pasa a Hacienda."
+      },
+      {
+        "id": "B",
+        "texto": "Radicar en Hacienda el oficio del jefe de planeación y, si se acepta, no hacer más trámites, porque la ley de presupuesto fijará los nuevos montos de cada proyecto.",
+        "explicacion": "Incorrecta. Equivoca el trámite, que va por la PIIP con el representante legal o su delegado y concepto del DNP, y omite las actualizaciones que deben hacerse si la propuesta se acepta."
+      },
+      {
+        "id": "C",
+        "texto": "Que el representante legal o su delegado la tramite en la PIIP para concepto del DNP y, si se acepta, actualizar regionalización, focalización y los dos proyectos.",
+        "explicacion": "Correcta. Las propuestas de modificación al componente de inversión del proyecto de ley se tramitan en la PIIP por el representante legal o su delegado, para evaluación y concepto del DNP y posterior trámite ante Hacienda. Si se aceptan, la entidad actualiza la focalización y la regionalización, y los proyectos que requieran ajustes deben actualizarse en la PIIP para poder iniciar su ejecución."
+      },
+      {
+        "id": "D",
+        "texto": "Que el representante legal o su delegado la tramite en la PIIP para concepto del DNP y, si se acepta, no hacer más trámites, porque la ley fijará los nuevos montos.",
+        "explicacion": "Incorrecta. Acierta en el trámite, pero la aceptación no cierra el asunto: hay que actualizar la focalización, la regionalización y los proyectos afectados, sin lo cual no pueden empezar a ejecutarse en 2027."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la agencia quiere mover $3.000 millones entre dos proyectos dentro del componente de inversión del proyecto de ley de presupuesto. Regla: el art. 2.2.6.7.11 del Decreto 1082 exige tramitar la propuesta en la PIIP por el representante legal o su delegado, para concepto del DNP y posterior trámite ante Hacienda; aceptada, se actualizan la focalización y la regionalización, y los proyectos que requieran ajustes deben actualizarse en la PIIP para iniciar su ejecución. Conclusión: trámite por el representante legal y actualización posterior.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-PLA-039",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Seguimiento y evaluación de proyectos",
+    "subtema": "Indicadores de producto en el reporte mensual frente a indicadores de resultado del programa",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.5.2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.1.6, inc. 1 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "El seguimiento a los proyectos de inversión pública se basa en el reporte del avance físico y financiero de las actividades e indicadores de producto, en la focalización en políticas transversales, y en la regionalización del presupuesto de inversión, cuando corresponda; con el fin de determinar las posibles desviaciones en tiempo, alcance, costo o calidad durante la ejecución de los proyectos de inversión. [...] Los programas de los que trata el artículo 148 de la Ley 1753 de 2015 corresponden a los Programas orientados a resultados, los cuales son un instrumento de clasificación del gasto público que articula la planeación de largo plazo con la presupuestación, con lo cual se establece la relación entre el gasto, los bienes y servicios entregados a la ciudadanía, y la medición del cumplimiento de indicadores de resultado.",
+    "pregunta": "Óscar, técnico de la oficina de planeación de un departamento, prepara el primer reporte mensual en la PIIP de un proyecto que construye cuatro centros de salud. Su jefe le pide que, como indicador del proyecto, reporte cada mes la tasa de mortalidad infantil del departamento, que es la meta del programa al que pertenece el proyecto. ¿Qué debe incluir Óscar en el reporte mensual del proyecto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La tasa de mortalidad infantil como indicador del proyecto, junto con el valor pagado y el presupuesto ejecutado en el mes.",
+        "explicacion": "Incorrecta. Comete los dos errores: la mortalidad infantil es un indicador de resultado del programa, no un indicador de producto del proyecto; y el seguimiento no se limita a lo financiero: incluye el avance físico de las actividades y de los productos."
+      },
+      {
+        "id": "B",
+        "texto": "El avance físico y financiero de actividades y centros construidos, sin la mortalidad infantil, que mide el programa.",
+        "explicacion": "Correcta. El seguimiento de los proyectos de inversión se basa en el avance físico y financiero de las actividades y de los indicadores de producto (aquí, los centros de salud construidos). La medición de indicadores de resultado, como la mortalidad infantil, corresponde a los programas orientados a resultados, no al reporte del proyecto."
+      },
+      {
+        "id": "C",
+        "texto": "El avance físico y financiero de actividades y centros construidos, y además la tasa de mortalidad infantil del mes.",
+        "explicacion": "Incorrecta. Incluye bien el avance físico y financiero, pero agrega como indicador del proyecto uno de resultado del programa, que no mide lo que el proyecto entrega."
+      },
+      {
+        "id": "D",
+        "texto": "El valor pagado y el porcentaje del presupuesto ejecutado en el mes, sin la mortalidad infantil, que mide el programa.",
+        "explicacion": "Incorrecta. Acierta en dejar la mortalidad infantil para el programa, pero reduce el seguimiento a lo financiero: el reporte debe mostrar también el avance físico de las actividades y del indicador de producto."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el proyecto entrega centros de salud; la mortalidad infantil es la meta del programa. Regla: según el art. 2.2.6.5.2 del Decreto 1082, el seguimiento se basa en el avance físico y financiero de las actividades e indicadores de producto (con focalización y regionalización cuando corresponda); según el art. 2.2.6.1.6, los programas orientados a resultados miden los indicadores de resultado. Conclusión: avance físico y financiero de actividades y del indicador de producto, sin la mortalidad infantil.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-PLA-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Seguimiento y evaluación de proyectos",
+    "subtema": "Eficacia, eficiencia y efectividad: productos entregados frente al cambio en el indicador de resultado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.4.2 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.6.1 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.1.6, inc. 1 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "La terminación del proyecto de inversión pública se entiende como la entrega de los bienes o servicios definidos en el alcance del proyecto, dando lugar al registro del reporte final de los indicadores de producto del proyecto de inversión pública en la PIIP. [...] La evaluación posterior es un instrumento que permite realizar análisis de objetivos sobre el cumplimiento de las metas y los resultados generados por los proyectos de inversión pública, previamente seleccionados y con posterioridad a su cierre. [...] bajo los criterios de pertinencia, eficiencia, eficacia, economía, calidad y sostenibilidad. [...] con lo cual se establece la relación entre el gasto, los bienes y servicios entregados a la ciudadanía, y la medición del cumplimiento de indicadores de resultado.",
+    "pregunta": "Un ministerio ejecutó un proyecto para conectar a internet 150 sedes educativas rurales, con un costo programado de $4.500 millones. Se conectaron las 150 sedes y se gastaron $4.200 millones: eficacia del 100% y un costo de $28 millones por sede frente a $30 millones programados. El programa al que pertenece el proyecto mide el porcentaje de estudiantes rurales con acceso a internet en su sede: la línea base era 40% y la meta, 70%; al entregar las sedes, el indicador llegó a 58%. La guía de evaluación del ministerio mide la efectividad como la parte lograda del cambio que se esperaba en ese indicador. La directora del programa propone no reportar el proyecto como terminado en la PIIP hasta que el indicador llegue al 70%; el viceministro objeta que no hay por qué esperar el resultado del programa para hacerlo. Sara, asesora de planeación, debe conceptuar. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Efectividad del 82,9%, y el proyecto no puede reportarse como terminado mientras el indicador del programa no llegue al 70%.",
+        "explicacion": "Incorrecta. Calcula 58/70, que compara niveles y no el cambio logrado, y condiciona la terminación a un resultado del programa, cuando la terminación depende de la entrega de los productos."
+      },
+      {
+        "id": "B",
+        "texto": "Efectividad del 60,0%, y el proyecto no puede reportarse como terminado mientras el indicador del programa no llegue al 70%.",
+        "explicacion": "Incorrecta. El cálculo es correcto, pero la terminación del proyecto se da con la entrega de los bienes o servicios de su alcance, no con el logro de la meta de resultado del programa. En esto acierta el viceministro."
+      },
+      {
+        "id": "C",
+        "texto": "Efectividad del 82,9%, y el proyecto debe reportarse como terminado, con el reporte final de sus indicadores de producto.",
+        "explicacion": "Incorrecta. Acierta en la terminación, pero la efectividad no es 58/70: el cambio esperado era de 30 puntos (de 40% a 70%) y el logrado, de 18 (de 40% a 58%)."
+      },
+      {
+        "id": "D",
+        "texto": "Efectividad del 60,0%, y el proyecto debe reportarse como terminado, con el reporte final de sus indicadores de producto.",
+        "explicacion": "Correcta. Efectividad: (58 − 40) / (70 − 40) = 18/30 = 60%. Como se entregaron las 150 sedes, el proyecto está terminado y debe registrarse el reporte final de sus indicadores de producto, como sostiene el viceministro. Que el resultado del programa no se haya alcanzado se analiza en el seguimiento del programa y, si el proyecto es seleccionado, en la evaluación posterior, después del cierre."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se entregaron las 150 sedes; el indicador del programa pasó de 40% a 58% frente a una meta de 70%. Regla: según el art. 2.2.6.4.2 del Decreto 1082, la terminación es la entrega de los bienes o servicios del alcance y da lugar al reporte final de los indicadores de producto; los resultados se miden en los programas (art. 2.2.6.1.6) y en la evaluación posterior (art. 2.2.6.6.1). Cálculo: (58 − 40)/(70 − 40) = 60%. Conclusión: efectividad del 60% y proyecto terminado, como objeta el viceministro.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-PLA-041",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Formulación y estructuración de proyectos",
+    "subtema": "Estructuración financiada por medio de entidades públicas de carácter financiero: título de gasto y ejecución posterior",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.6.8.1, incs. 1 y 3 (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.8.2, inc. final (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)",
+      "art. 2.2.6.8.5, parágrafo (Título 6 sustituido por el art. 1 del Decreto 2104 de 2023)"
+    ],
+    "texto_fuente": "La Nación y las entidades descentralizadas del orden nacional podrán destinar y asignar recursos para la formulación y estructuración de proyectos estratégicos del orden nacional y territorial, necesarios para dar cumplimiento al Plan Nacional de Desarrollo [...] Los recursos para estas inversiones podrán ser canalizados a través de entidades públicas de carácter financiero del orden nacional definidas por el DNP, de reconocida capacidad técnica, administrativa y operativa. [...] El acuerdo suscrito constituirá el título de gasto con fundamento en el cual se efectuará el desembolso de los recursos y el pago de las prestaciones acordadas. [...] Los aportantes de recursos y las entidades públicas de carácter financiero del orden nacional, en cuanto no concurran causales de incompatibilidad, inhabilidad o conflictos de interés, podrán ejecutar los proyectos que fueron estructurados en los términos del presente Capítulo, de conformidad con su objeto social, la normativa aplicable y el respectivo título de gasto.",
+    "pregunta": "Una agencia nacional destinará $2.500 millones de su presupuesto de inversión para que una entidad pública de carácter financiero del orden nacional, de las definidas por el DNP, estructure un distrito de riego que el Plan Nacional de Desarrollo considera estratégico. El ordenador del gasto pregunta con base en qué documento podrá desembolsar esos recursos, y la entidad financiera manifestó interés en ejecutar después las obras. El director jurídico sostiene que el desembolso debe apoyarse en el acuerdo que firmen las dos entidades, pero que quien estructura un proyecto no puede ejecutarlo. Diego, asesor de planeación de la agencia, debe responder. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el desembolso se soporta en el acuerdo suscrito, y que la entidad financiera podrá ejecutar las obras si no tiene inhabilidad, incompatibilidad ni conflicto de interés.",
+        "explicacion": "Correcta. Para canalizar los recursos por medio de una entidad pública de carácter financiero, la agencia suscribe un acuerdo, y ese acuerdo constituye el título de gasto para desembolsar y pagar: en eso acierta el director jurídico. Se equivoca en lo segundo: los aportantes y la entidad financiera pueden ejecutar los proyectos estructurados si no concurren causales de incompatibilidad, inhabilidad o conflicto de interés, según su objeto social, la normativa aplicable y el título de gasto."
+      },
+      {
+        "id": "B",
+        "texto": "Que el desembolso se soporta en el acuerdo suscrito, pero que la entidad financiera no podrá ejecutar las obras, porque fue la que estructuró el proyecto.",
+        "explicacion": "Incorrecta. Es la posición del director jurídico: acierta en el título de gasto, pero el reglamento no prohíbe que la entidad que estructuró ejecute; lo permite si no concurren incompatibilidades, inhabilidades ni conflictos de interés."
+      },
+      {
+        "id": "C",
+        "texto": "Que el desembolso se soporta en el acto del DNP que habilitó a la entidad financiera, y que esta podrá ejecutar las obras si no tiene inhabilidad, incompatibilidad ni conflicto de interés.",
+        "explicacion": "Incorrecta. Acierta en la posibilidad de ejecutar, pero el título de gasto para el desembolso es el acuerdo suscrito, no el acto con el que el DNP define cuáles entidades financieras pueden canalizar los recursos."
+      },
+      {
+        "id": "D",
+        "texto": "Que el desembolso se soporta en el acto del DNP que habilitó a la entidad financiera, pero que esta no podrá ejecutar las obras, porque fue la que estructuró el proyecto.",
+        "explicacion": "Incorrecta. Comete los dos errores: toma como título de gasto el acto del DNP y prohíbe una ejecución que el reglamento permite si no hay inhabilidades, incompatibilidades ni conflictos de interés."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la agencia canalizará $2.500 millones por una entidad pública de carácter financiero para estructurar un proyecto estratégico, y esa entidad quiere ejecutar las obras. Regla: según el art. 2.2.6.8.2 del Decreto 1082, el acuerdo suscrito constituye el título de gasto para el desembolso; según el parágrafo del art. 2.2.6.8.5, los aportantes y la entidad financiera pueden ejecutar los proyectos estructurados si no concurren incompatibilidades, inhabilidades ni conflictos de interés. Conclusión: el director jurídico acierta en el título de gasto, pero no en la prohibición.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-PLA-042",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Plan indicativo y plan de acción",
+    "subtema": "Avance acumulado frente a la meta cuatrienal y publicación del plan de acción con el informe de gestión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 152 de 1994 y Ley 1474 de 2011",
+    "articulos": [
+      "Ley 152 de 1994, art. 29, inc. 2",
+      "Ley 1474 de 2011, art. 74, incs. 1 y 2"
+    ],
+    "texto_fuente": "todos los organismos de la administración pública nacional deberán elaborar, con base en los lineamientos del Plan Nacional de Desarrollo y de las funciones que le señale la ley, un plan indicativo cuatrienal con planes de acción anuales que se constituirá en la base para la posterior evaluación de resultados. [...] todas las entidades del Estado a más tardar el 31 de enero de cada año, deberán publicar en su respectiva página web el Plan de Acción para el año siguiente, en el cual se especificarán los objetivos, las estrategias, los proyectos, las metas, los responsables, los planes generales de compras y la distribución presupuestal de sus proyectos de inversión junto a los indicadores de gestión. A partir del año siguiente, el Plan de Acción deberá estar acompañado del informe de gestión del año inmediatamente anterior.",
+    "pregunta": "Ana, técnica de planeación de un establecimiento público del orden nacional, alista el plan de acción que la entidad publicará en su página web a más tardar el 31 de enero de 2030. El plan indicativo 2027-2030 de la entidad fija la meta de brindar asistencia técnica a 2.000 familias rurales en el cuatrienio, con 500 familias programadas en cada plan de acción anual. Se atendieron 430 familias en 2027, 515 en 2028 y 505 en 2029. Ana debe informar qué porcentaje de la meta del cuatrienio se había alcanzado al cierre de 2029 y precisar si con ese plan de acción debe publicarse algún informe de gestión. ¿Qué debe consignar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un avance del 96,7%, y con el plan de acción debe publicarse el informe de gestión de 2029.",
+        "explicacion": "Incorrecta. Acierta en el informe de gestión, pero 96,7% es el cumplimiento frente a lo programado en los tres planes anuales (1.450 de 1.500 familias), no el porcentaje alcanzado de la meta del cuatrienio, que es de 2.000 familias."
+      },
+      {
+        "id": "B",
+        "texto": "Un avance del 72,5%, y el informe de gestión se publica al cerrar el cuatrienio, en enero de 2031.",
+        "explicacion": "Incorrecta. Acierta en el porcentaje, pero el plan de acción debe publicarse acompañado del informe de gestión del año inmediatamente anterior: en enero de 2030, el de 2029."
+      },
+      {
+        "id": "C",
+        "texto": "Un avance del 72,5%, y con el plan de acción debe publicarse el informe de gestión de 2029.",
+        "explicacion": "Correcta. El plan indicativo es cuatrienal y es la base de la evaluación de resultados: al cierre de 2029 se han atendido 430 + 515 + 505 = 1.450 familias, el 72,5% de las 2.000 de la meta (faltan 550). Y el plan de acción que se publica a más tardar el 31 de enero de 2030 debe ir acompañado del informe de gestión del año inmediatamente anterior, el de 2029."
+      },
+      {
+        "id": "D",
+        "texto": "Un avance del 96,7%, y el informe de gestión se publica al cerrar el cuatrienio, en enero de 2031.",
+        "explicacion": "Incorrecta. Comete los dos errores: mide el avance frente a lo programado en los planes anuales y no frente a la meta del cuatrienio, y aplaza el informe de gestión, que debe acompañar el plan de acción publicado en enero de 2030."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: meta cuatrienal de 2.000 familias, 1.450 atendidas entre 2027 y 2029 y publicación en enero de 2030. Regla: según el art. 29 de la Ley 152, los organismos nacionales elaboran un plan indicativo cuatrienal con planes de acción anuales, base de la evaluación de resultados; según el art. 74 de la Ley 1474, el plan de acción se publica a más tardar el 31 de enero, acompañado del informe de gestión del año inmediatamente anterior. Cálculo: 1.450/2.000 = 72,5%. Conclusión: 72,5% e informe de gestión de 2029.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0152_1994.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-PLA-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Plan indicativo y plan de acción",
+    "subtema": "Publicación del plan de acción por una empresa industrial y comercial del Estado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1474 de 2011",
+    "articulos": [
+      "art. 74, inc. 1 y parágrafo"
+    ],
+    "texto_fuente": "todas las entidades del Estado a más tardar el 31 de enero de cada año, deberán publicar en su respectiva página web el Plan de Acción para el año siguiente, en el cual se especificarán los objetivos, las estrategias, los proyectos, las metas, los responsables, los planes generales de compras y la distribución presupuestal de sus proyectos de inversión junto a los indicadores de gestión. [...] PARÁGRAFO. Las empresas industriales y comerciales del Estado y las Sociedades de Economía Mixta estarán exentas de publicar la información relacionada con sus proyectos de inversión.",
+    "pregunta": "En diciembre de 2026, Julián, técnico de la oficina de planeación de una empresa industrial y comercial del Estado del orden nacional, alista la publicación del plan de acción de la empresa. La gerente sostiene que, por ser una empresa que compite en el mercado, no tiene que publicar ese plan. El jefe de planeación sostiene lo contrario y agrega que debe publicarse completo, con el detalle de los proyectos de inversión, porque la ley no hace distinciones. Julián debe dejar claro en su informe qué exige la ley. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la empresa está exenta de publicar el plan de acción, pero que, si decide publicarlo, debe incluir sus proyectos de inversión.",
+        "explicacion": "Incorrecta. La obligación de publicar el plan de acción cobija a todas las entidades del Estado; la exención de las empresas industriales y comerciales se limita a la información de sus proyectos de inversión."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe publicarlo a más tardar el 31 de enero de 2027, y que no está obligada a incluir lo de sus proyectos de inversión.",
+        "explicacion": "Correcta. Todas las entidades del Estado deben publicar en su página web el plan de acción a más tardar el 31 de enero. Las empresas industriales y comerciales del Estado y las sociedades de economía mixta solo están exentas de publicar la información de sus proyectos de inversión."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe publicarlo a más tardar el 31 de enero de 2027, con toda la información de sus proyectos de inversión.",
+        "explicacion": "Incorrecta. Acierta en la obligación de publicar, pero la ley sí distingue: exime a las empresas industriales y comerciales del Estado de publicar la información de sus proyectos de inversión."
+      },
+      {
+        "id": "D",
+        "texto": "Que la empresa está exenta de publicar el plan de acción y también la información de sus proyectos de inversión.",
+        "explicacion": "Incorrecta. Extiende a todo el plan una exención que la ley limita a la información de los proyectos de inversión."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la entidad es una empresa industrial y comercial del Estado. Regla: el art. 74 de la Ley 1474 obliga a todas las entidades del Estado a publicar en su página web el plan de acción a más tardar el 31 de enero, y su parágrafo exime a las empresas industriales y comerciales del Estado y a las sociedades de economía mixta de publicar la información de sus proyectos de inversión. Conclusión: debe publicar el plan, pero no está obligada a incluir sus proyectos de inversión.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1474_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-PLA-044",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Plan indicativo y plan de acción",
+    "subtema": "Plan de acción de una entidad nacional con sede en un departamento: base en el Plan Nacional y consulta previa a las autoridades de planeación del territorio",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 152 de 1994",
+    "articulos": [
+      "art. 26, incs. 1 y 3"
+    ],
+    "texto_fuente": "Con base en el Plan Nacional de Desarrollo aprobado cada uno de los organismos públicos de todo orden a los que se aplica esta Ley preparará su correspondiente plan de acción. [...] Los planes que ejecuten las entidades nacionales con asiento en las entidades territoriales deberán ser consultados previamente con las respectivas autoridades de planeación, de acuerdo con sus competencias.",
+    "pregunta": "Valeria, profesional de la dirección regional que un establecimiento público del orden nacional tiene en un departamento, prepara el plan de acción regional de 2027 del programa de agua para zonas rurales. El director regional propone construirlo a partir del Plan Nacional de Desarrollo y luego llevarlo a la aprobación del consejo de gobierno departamental, como hacen las secretarías de la gobernación. ¿Qué debe recomendar Valeria?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construirlo a partir del plan de desarrollo departamental y, antes de adoptarlo, consultarlo con las autoridades de planeación del departamento.",
+        "explicacion": "Incorrecta. Acierta en la consulta, pero el plan de acción de un organismo nacional se prepara con base en el Plan Nacional de Desarrollo aprobado, no en el plan del departamento."
+      },
+      {
+        "id": "B",
+        "texto": "Construirlo a partir del plan de desarrollo departamental y someterlo a la aprobación del consejo de gobierno del departamento.",
+        "explicacion": "Incorrecta. Aplica a una entidad nacional las reglas de las secretarías departamentales, cuyos planes de acción se basan en el plan territorial y los aprueba el consejo de gobierno."
+      },
+      {
+        "id": "C",
+        "texto": "Construirlo a partir del Plan Nacional de Desarrollo y someterlo a la aprobación del consejo de gobierno del departamento.",
+        "explicacion": "Incorrecta. Es la propuesta del director regional: acierta en la base, pero el consejo de gobierno departamental no aprueba los planes de las entidades nacionales; la ley exige consultarlos previamente con las autoridades de planeación del territorio."
+      },
+      {
+        "id": "D",
+        "texto": "Construirlo a partir del Plan Nacional de Desarrollo y, antes de adoptarlo, consultarlo con las autoridades de planeación del departamento.",
+        "explicacion": "Correcta. Cada organismo público prepara su plan de acción con base en el Plan Nacional de Desarrollo aprobado, como propone el director, y los planes que ejecuten las entidades nacionales con asiento en las entidades territoriales deben consultarse previamente con las respectivas autoridades de planeación, no someterse a la aprobación del consejo de gobierno."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el plan lo prepara la dirección regional de una entidad del orden nacional con asiento en un departamento. Regla: según el art. 26 de la Ley 152, cada organismo público prepara su plan de acción con base en el Plan Nacional de Desarrollo, y los planes que ejecuten entidades nacionales con asiento en las entidades territoriales deben consultarse previamente con las autoridades de planeación respectivas. Conclusión: el director acierta en la base, pero corresponde la consulta previa, no la aprobación del consejo de gobierno.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0152_1994.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-PLA-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Modelo Integrado de Planeación y Gestión (MIPG)",
+    "subtema": "Comité municipal de gestión y desempeño: integración y secretaría técnica",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.22.3.7, inc. 1 y parágrafo (Título 22 sustituido por el art. 1 del Decreto 1499 de 2017)"
+    ],
+    "texto_fuente": "Comités Departamentales, Distritales y Municipales de Gestión y Desempeño los cuales estarán integrados por el gobernador o alcalde, quienes los presidirán, los miembros de los consejos de gobierno y por los gerentes, presidentes o directores de las entidades descentralizadas de la respectiva jurisdicción territorial. [...] La secretaría técnica será ejercida por el jefe de planeación o quien haga sus veces en la gobernación, distrito o municipio correspondiente.",
+    "pregunta": "Sebastián, técnico de la secretaría de planeación de un municipio, prepara la citación a la primera sesión del comité municipal de gestión y desempeño, que es distinto del comité institucional de la alcaldía. En el municipio funcionan una empresa social del Estado, un instituto de deportes y una empresa de servicios públicos, todos descentralizados del orden municipal. El borrador que recibió cita al alcalde, a los secretarios de despacho que integran el consejo de gobierno y al jefe de control interno con voz y voto, y asigna la secretaría técnica al secretario general. ¿Cómo debe quedar la citación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Alcalde, miembros del consejo de gobierno y gerentes o directores de las tres entidades descentralizadas; secretaría técnica a cargo del jefe de planeación.",
+        "explicacion": "Correcta. El comité municipal de gestión y desempeño lo integran el alcalde, que lo preside, los miembros del consejo de gobierno y los gerentes, presidentes o directores de las entidades descentralizadas del municipio. Su secretaría técnica la ejerce el jefe de planeación o quien haga sus veces en el municipio."
+      },
+      {
+        "id": "B",
+        "texto": "Alcalde, miembros del consejo de gobierno y jefe de control interno con voz y voto; secretaría técnica a cargo del jefe de planeación.",
+        "explicacion": "Incorrecta. Acierta en la secretaría técnica, pero omite a los directores de las entidades descentralizadas e incluye como miembro con voto al jefe de control interno, que no integra este comité (en el comité institucional es invitado permanente, sin voto)."
+      },
+      {
+        "id": "C",
+        "texto": "Alcalde, miembros del consejo de gobierno y gerentes o directores de las tres entidades descentralizadas; secretaría técnica a cargo del secretario general.",
+        "explicacion": "Incorrecta. Acierta en la integración, pero la secretaría técnica del comité municipal le corresponde al jefe de planeación del municipio, no al secretario general."
+      },
+      {
+        "id": "D",
+        "texto": "Alcalde, miembros del consejo de gobierno y jefe de control interno con voz y voto; secretaría técnica a cargo del secretario general.",
+        "explicacion": "Incorrecta. Comete los dos errores: deja por fuera a las entidades descentralizadas, agrega al jefe de control interno con voto y entrega la secretaría técnica al secretario general."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se cita el comité municipal (no el institucional) y en el municipio hay tres entidades descentralizadas. Regla: el art. 2.2.22.3.7 del Decreto 1083 (Título 22 sustituido por el Decreto 1499 de 2017) dispone que estos comités los integran el alcalde, que los preside, los miembros del consejo de gobierno y los gerentes, presidentes o directores de las entidades descentralizadas, y que la secretaría técnica la ejerce el jefe de planeación. Conclusión: citar a los directores de las tres entidades y asignar la secretaría a planeación.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=83433",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-PLA-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Programación de la inversión",
+    "subtema": "Presupuestos plurianuales y financiación garantizada de los proyectos de largo plazo ya iniciados",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 152 de 1994",
+    "articulos": [
+      "art. 7, incs. 1 y 2"
+    ],
+    "texto_fuente": "Se entiende por presupuestos plurianuales la proyección de los costos y fuentes de financiación de los principales programas y proyectos de inversión pública, cuando éstos requieran para su ejecución más de una vigencia fiscal. Cuando en un sector o sectores de inversión pública se hubiere iniciado la ejecución de proyectos de largo plazo, antes de iniciarse otros, se procurará que los primeros tengan garantizada la financiación hasta su culminación.",
+    "pregunta": "La oficina de planeación de un ministerio distribuye el cupo de inversión del sector para 2028, que es de $18.000 millones. Hay dos proyectos de largo plazo en ejecución. El A empezó en 2025, cuesta $40.000 millones y lleva ejecutados $29.500 millones; su presupuesto plurianual le asignaba $8.000 millones para 2028, pero por mayores costos necesita ese año todo lo que le falta para terminar. El B empezó en 2026, cuesta $12.000 millones, lleva ejecutados $7.000 millones, y su presupuesto plurianual prevé $3.000 millones para 2028 y $2.000 millones para 2029, que el sector ya contempla para ese año. El ministro quiere iniciar en 2028 el proyecto C, que pide $9.000 millones. Si se aplica la regla de la Ley 152 de 1994 sobre los proyectos de largo plazo ya iniciados, ¿cuánto queda como máximo para C en 2028?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$7.000 millones, porque se reservan los $8.000 millones del plurianual de A y los $3.000 millones previstos para B en 2028.",
+        "explicacion": "Incorrecta. Reserva para A el monto de su plurianual original, que ya no alcanza: a A le faltan $40.000 − $29.500 = $10.500 millones para terminar en 2028."
+      },
+      {
+        "id": "B",
+        "texto": "$5.000 millones, porque se reservan los $8.000 millones del plurianual de A y los $5.000 millones que le faltan a B.",
+        "explicacion": "Incorrecta. Tiene los dos errores: reserva para A una cifra que no alcanza para culminarlo y le carga al cupo de 2028 los $2.000 millones que B tiene previstos para 2029."
+      },
+      {
+        "id": "C",
+        "texto": "$4.500 millones, porque se reservan los $10.500 millones que le faltan a A y los $3.000 millones previstos para B en 2028.",
+        "explicacion": "Correcta. Antes de iniciar otros proyectos, debe procurarse que los de largo plazo ya iniciados tengan garantizada su financiación hasta culminar. A necesita $10.500 millones en 2028 ($40.000 − $29.500); B necesita $3.000 millones en 2028, y su cuota de 2029 ya está prevista para esa vigencia en su presupuesto plurianual. Quedan $18.000 − $10.500 − $3.000 = $4.500 millones para C."
+      },
+      {
+        "id": "D",
+        "texto": "$2.500 millones, porque se reservan los $10.500 millones que le faltan a A y los $5.000 millones que le faltan a B.",
+        "explicacion": "Incorrecta. Acierta con A, pero le carga al cupo de 2028 toda la financiación pendiente de B, incluidos los $2.000 millones que su presupuesto plurianual prevé para 2029."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: cupo de $18.000 millones; A necesita $10.500 millones para terminar en 2028, y B tiene $3.000 millones previstos para 2028 y $2.000 millones para 2029. Regla: según el art. 7 de la Ley 152, los presupuestos plurianuales proyectan costos y fuentes de los proyectos de varias vigencias, y antes de iniciar otros se procura garantizar la financiación de los de largo plazo ya iniciados. Cálculo: 18.000 − 10.500 − 3.000 = 4.500. Conclusión: $4.500 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0152_1994.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-PLA-047",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Planes de desarrollo",
+    "subtema": "Plan Nacional de Desarrollo: silencio del Consejo Nacional de Planeación y presentación del proyecto al Congreso",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 152 de 1994",
+    "articulos": [
+      "art. 13",
+      "art. 18",
+      "art. 19"
+    ],
+    "texto_fuente": "La elaboración del proyecto del Plan Nacional de Desarrollo, que debe ser sometido por el Gobierno al Congreso Nacional durante los seis meses siguientes a la iniciación del período presidencial [...] El proyecto del plan, como documento consolidado en sus diferentes componentes, será sometido por el Presidente de la República a la consideración del Consejo Nacional de Planeación a más tardar el 15 de noviembre, para análisis y discusión del mismo, para que rinda su concepto y formule las recomendaciones que considere convenientes, antes del 10 de enero. Si llegado el 10 de enero, el Consejo no se hubiere pronunciado sobre la totalidad o parte del plan, se considerará surtido este requisito en esa fecha. [...] Oída la opinión del Consejo, el Conpes efectuará las enmiendas que considere pertinentes luego de lo cual, el Gobierno a través del Ministerio de Hacienda y Crédito Público presentará el proyecto a consideración del Congreso antes del 7 de febrero, para lo cual lo convocará a sesiones extraordinarias.",
+    "pregunta": "El período presidencial 2026-2030 empezó el 7 de agosto de 2026. El 13 de noviembre de 2026, el Gobierno sometió el proyecto consolidado del Plan Nacional de Desarrollo al Consejo Nacional de Planeación. Al 10 de enero de 2027, el Consejo se había pronunciado sobre la parte general, pero no sobre el plan de inversiones. El 12 de enero, su presidenta pide que el Gobierno espere hasta el 15 de febrero para recibir ese concepto. El director del DNP objeta que el Gobierno no tiene por qué esperar más y anuncia que él mismo radicará el proyecto en el Congreso el 5 de febrero. Un asesor de la oficina de planeación de un ministerio, que participa en la mesa de coordinación del plan, debe proyectar la posición del sector. ¿Qué debe sostener?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe esperarse el concepto pendiente, y que luego el Director del DNP presentará el proyecto ante el Congreso.",
+        "explicacion": "Incorrecta. Tiene los dos errores: el silencio del Consejo al 10 de enero da por surtido el requisito, de modo que no hay que esperar; y quien presenta el proyecto al Congreso es el Gobierno por medio del Ministerio de Hacienda. El Director del DNP asesora al Congreso en el análisis del plan, pero no lo radica."
+      },
+      {
+        "id": "B",
+        "texto": "Que el requisito se tiene por cumplido desde el 10 de enero, y que el Director del DNP debe presentar el proyecto al Congreso antes del 7 de febrero.",
+        "explicacion": "Incorrecta. Es la posición del director del DNP: acierta en que no hay que esperar y en el plazo, pero la ley encarga la presentación al Gobierno por medio del Ministerio de Hacienda, no al Director del DNP."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe esperarse el concepto pendiente, y que luego el Gobierno, por medio del Ministerio de Hacienda, presentará el proyecto.",
+        "explicacion": "Incorrecta. Acierta en quién presenta, pero esperar hasta el 15 de febrero, como pide la presidenta del Consejo, desconoce que el requisito quedó surtido el 10 de enero y llevaría la presentación más allá del 7 de febrero, fuera de los seis meses siguientes al inicio del período presidencial."
+      },
+      {
+        "id": "D",
+        "texto": "Que el requisito se tiene por cumplido desde el 10 de enero, y que el Gobierno, por medio de Hacienda, debe presentarlo antes del 7 de febrero.",
+        "explicacion": "Correcta. Si llegado el 10 de enero el Consejo no se ha pronunciado sobre todo o parte del plan, el requisito se considera surtido en esa fecha: en eso acierta el director del DNP. Oída su opinión, el Conpes hace las enmiendas pertinentes y el Gobierno, por medio del Ministerio de Hacienda, presenta el proyecto al Congreso antes del 7 de febrero, para lo cual lo convoca a sesiones extraordinarias."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: al 10 de enero de 2027 el Consejo no se había pronunciado sobre el plan de inversiones, y el período empezó el 7 de agosto de 2026. Regla: según el art. 18 de la Ley 152, si llegado el 10 de enero el Consejo no se ha pronunciado sobre todo o parte del plan, el requisito se considera surtido; según el art. 19, el Gobierno, por medio del Ministerio de Hacienda, presenta el proyecto al Congreso antes del 7 de febrero (art. 13). Conclusión: el director del DNP acierta en no esperar, pero la presentación le corresponde a Hacienda.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0152_1994.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-PLA-048",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "planeacion",
+    "modulo": "Planeación y Proyectos de Inversión",
+    "tema": "Planes de desarrollo",
+    "subtema": "Principios de viabilidad y coherencia en los programas y proyectos del plan",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 152 de 1994",
+    "articulos": [
+      "art. 3, lits. l y m"
+    ],
+    "texto_fuente": "l) Viabilidad. Las estrategias programas y proyectos del plan de desarrollo deben ser factibles de realizar, según, las metas propuestas y el tiempo disponible para alcanzarlas, teniendo en cuenta la capacidad de administración, ejecución y los recursos financieros a los que es posible acceder; m) Coherencia. Los programas y proyectos del plan de desarrollo deben tener una relación efectiva con las estrategias y objetivos establecidos en éste;",
+    "pregunta": "Gloria, técnica de la oficina de planeación de un departamento, revisa el capítulo de infraestructura del borrador del plan de desarrollo, que busca reducir los tiempos de viaje entre las veredas y las cabeceras municipales con vías terciarias, puentes y caminos veredales. Anota dos hallazgos. El primero: la meta de pavimentar 160 km de vías terciarias en el cuatrienio, cuando la secretaría de infraestructura interviene unos 12 km al año con sus equipos y las fuentes proyectadas solo cubren unos 50 km. El segundo: un estadio para fútbol profesional en la capital, incluido en ese capítulo a última hora a pedido de un club; en ninguna parte del plan hay metas de deporte ni de recreación. Su jefe le pide anotar qué principio de la Ley 152 de 1994 desatiende cada hallazgo. ¿Qué debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El primero desatiende el principio de eficiencia, y el segundo, el de coherencia.",
+        "explicacion": "Incorrecta. Acierta en el segundo hallazgo, pero el primero no trata de optimizar recursos ni de la relación entre beneficios y costos (eficiencia): la meta no es factible con la capacidad de ejecución y los recursos disponibles, lo que corresponde a la viabilidad."
+      },
+      {
+        "id": "B",
+        "texto": "El primero desatiende el principio de viabilidad, y el segundo, el de coherencia.",
+        "explicacion": "Correcta. Una meta de 160 km frente a una capacidad de unos 48 km en el cuatrienio y recursos para unos 50 km no es factible con la capacidad de ejecución y los recursos a los que se puede acceder: desatiende la viabilidad. Un estadio que no sirve al propósito del capítulo (acercar las veredas a las cabeceras) ni a ninguna otra meta del plan no tiene relación efectiva con sus estrategias y objetivos: desatiende la coherencia."
+      },
+      {
+        "id": "C",
+        "texto": "El primero desatiende el principio de viabilidad, y el segundo, el de prioridad del gasto público social.",
+        "explicacion": "Incorrecta. Acierta en el primero, pero el problema del estadio no es la prioridad del gasto público social, sino que no guarda relación con las estrategias ni con los objetivos del plan, que no incluye nada de deporte ni de recreación (coherencia)."
+      },
+      {
+        "id": "D",
+        "texto": "El primero desatiende el principio de eficiencia, y el segundo, el de prioridad del gasto público social.",
+        "explicacion": "Incorrecta. Comete los dos errores: el primer hallazgo es de viabilidad, porque la meta no es factible, y el segundo es de coherencia, porque el proyecto no se relaciona con las estrategias ni con los objetivos del plan."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la meta (160 km) supera la capacidad de ejecución (unos 48 km en cuatro años) y los recursos (unos 50 km); el estadio no sirve al propósito del capítulo ni a ninguna meta del plan. Regla: el art. 3 de la Ley 152 exige que los programas y proyectos sean factibles según las metas, el tiempo, la capacidad de ejecución y los recursos (lit. l, viabilidad) y que tengan relación efectiva con las estrategias y objetivos del plan (lit. m, coherencia). Conclusión: viabilidad y coherencia.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0152_1994.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
   }
 ]
