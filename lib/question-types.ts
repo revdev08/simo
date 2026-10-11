@@ -55,6 +55,12 @@ export const MODULE_SECTIONS = [
     ],
   },
   {
+    id: 'funcionales',
+    titulo: 'Competencias funcionales',
+    descripcion: 'Temas propios del área de tu cargo. En el simulacro solo entran si eliges tu área.',
+    modulos: ['Talento Humano', 'Contratación Estatal Aplicada', 'Gestión Jurídica'],
+  },
+  {
     id: 'comportamentales',
     titulo: 'Competencias comportamentales',
     descripcion: 'Situaciones laborales calificadas según las conductas del Decreto 815 de 2018 para tu nivel.',
@@ -69,6 +75,15 @@ export const MODULE_SECTIONS = [
 ] as const
 
 export type SectionId = (typeof MODULE_SECTIONS)[number]['id']
+
+// Áreas funcionales (capa 3): cada una corresponde a un módulo de la sección "funcionales"
+export const AREAS_FUNCIONALES = [
+  { id: 'talento_humano', label: 'Talento humano', modulo: 'Talento Humano' },
+  { id: 'contratacion', label: 'Contratación', modulo: 'Contratación Estatal Aplicada' },
+  { id: 'juridica', label: 'Jurídica', modulo: 'Gestión Jurídica' },
+] as const
+
+export type AreaId = (typeof AREAS_FUNCIONALES)[number]['id']
 
 export function sectionOf(modulo: string): SectionId {
   return MODULE_SECTIONS.find((s) => (s.modulos as readonly string[]).includes(modulo))?.id ?? 'generales'

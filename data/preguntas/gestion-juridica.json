@@ -1,0 +1,874 @@
+[
+  {
+    "id": "TC-JUR-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de tutela",
+    "subtema": "Informe del accionado y presunción de veracidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 2591 de 1991",
+    "articulos": [
+      "art. 15",
+      "art. 19",
+      "art. 20"
+    ],
+    "texto_fuente": "Los plazos son perentorios o improrrogables. [...] ARTICULO 19. INFORMES. El juez podrá requerir informes al órgano o a la autoridad contra quien se hubiere hecho la solicitud y pedir el expediente administrativo o la documentación donde consten los antecedentes del asunto. La omisión injustificada de enviar esas pruebas al juez acarreará responsabilidad. El plazo para informar será de uno a tres días, y se fijará según sea la índole del asunto, la distancia y la rapidez de los medios de comunicación. [...] ARTICULO 20. PRESUNCION DE VERACIDAD. Si el informe no fuere rendido dentro del plazo correspondiente, se tendrán por ciertos los hechos y se entrará a resolver de plano, salvo que el juez estime necesaria otra averiguación previa.",
+    "pregunta": "Un juez admitió una tutela contra la secretaría de educación de un municipio y le ordenó rendir un informe sobre los hechos en el término de dos días. El técnico de la oficina jurídica que atiende el caso no ha podido reunir los antecedentes, porque están en el archivo central, y propone pedirle al juez cinco días más. ¿Qué debe advertirle el jefe de la oficina?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el término no admite ampliación y, si el informe no llega a tiempo, el juez puede dar por probado lo narrado y decidir.",
+        "explicacion": "Correcta. Los plazos de la tutela son perentorios o improrrogables (art. 15). Si el informe no se rinde dentro del plazo, se tienen por ciertos los hechos y se resuelve de plano, salvo que el juez estime necesaria otra averiguación (art. 20)."
+      },
+      {
+        "id": "B",
+        "texto": "Que el juez puede ampliarlo hasta completar tres días, que es el máximo legal, y que no podrá fallar sin recibir el informe.",
+        "explicacion": "Incorrecta. El plazo para informar va de uno a tres días, pero el juez lo fija desde el comienzo y no lo prorroga. Además, la falta del informe no impide fallar: el juez resuelve de plano."
+      },
+      {
+        "id": "C",
+        "texto": "Que el juez puede concederle los cinco días si se le explica la complejidad del asunto y la distancia del archivo.",
+        "explicacion": "Incorrecta. La índole del asunto, la distancia y la rapidez de las comunicaciones sirven para fijar el plazo inicial, que va de uno a tres días; no permiten prorrogarlo, y cinco días superan ese máximo."
+      },
+      {
+        "id": "D",
+        "texto": "Que, si el informe no llega a tiempo, el juez tendrá que negar la tutela por falta de prueba de lo que afirma el accionante.",
+        "explicacion": "Incorrecta. Ocurre lo contrario: si el informe no se rinde a tiempo, se tienen por ciertos los hechos de la solicitud, lo que favorece al accionante (art. 20)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el juez fijó dos días para el informe y la oficina quiere cinco más. Regla: el plazo para informar es de uno a tres días (art. 19 del Decreto 2591 de 1991), los plazos de la tutela son perentorios o improrrogables (art. 15) y, si el informe no se rinde a tiempo, se tienen por ciertos los hechos y se resuelve de plano (art. 20). Conclusión: no hay prórroga, y la demora expone a la entidad a que el juez dé por ciertos los hechos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_2591_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-JUR-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de tutela",
+    "subtema": "Impugnación del fallo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 2591 de 1991",
+    "articulos": [
+      "art. 29 num. 5",
+      "art. 31",
+      "art. 32 inc. 1"
+    ],
+    "texto_fuente": "5. El plazo perentorio para el cumplimiento de lo resuelto, que en ningún caso podrá exceder de 48 horas. [...] ARTÍCULO 31. IMPUGNACION DEL FALLO. Dentro de los tres días siguientes a su notificación el fallo podrá ser impugnado por el Defensor del Pueblo, el solicitante, la autoridad pública o el representante del órgano correspondiente, sin perjuicio de su cumplimiento inmediato. Los fallos que no sean impugnados serán enviados al día siguiente a la Corte Constitucional para su revisión. ARTICULO 32. TRAMITE DE LA IMPUGNACION. Presentada debidamente la impugnación el juez remitirá el expediente dentro de los dos días siguientes al superior jerárquico correspondiente.",
+    "pregunta": "El lunes 9 de marzo de 2026, un juez profirió un fallo de tutela contra una gobernación y se lo notificó por correo electrónico el martes 10 de marzo. La oficina jurídica no comparte la decisión y radicó el escrito de impugnación el viernes 13 de marzo. En esa semana no hubo festivos. ¿Qué debe ocurrir con la impugnación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debe rechazarse por extemporánea, porque los tres días se cuentan desde que se profirió el fallo y no desde su notificación.",
+        "explicacion": "Incorrecta. El art. 31 cuenta los tres días desde la notificación del fallo, no desde que se profirió. Contados desde el martes 10, el tercer día es el viernes 13."
+      },
+      {
+        "id": "B",
+        "texto": "Debe tramitarse, y el juez tiene que enviar el expediente al superior jerárquico dentro de los dos días siguientes.",
+        "explicacion": "Correcta. Notificado el fallo el martes 10, los tres días fueron el miércoles 11, el jueves 12 y el viernes 13, así que la impugnación es oportuna. Presentada debidamente, el juez remite el expediente al superior dentro de los dos días siguientes (art. 32)."
+      },
+      {
+        "id": "C",
+        "texto": "Debe tramitarse, y el juez tiene que enviar el expediente a la Corte Constitucional al día siguiente para su revisión.",
+        "explicacion": "Incorrecta. Al día siguiente se envían a la Corte Constitucional los fallos que no se impugnan (art. 31). Este sí se impugnó, así que el expediente va al superior jerárquico."
+      },
+      {
+        "id": "D",
+        "texto": "Debe rechazarse por extemporánea, porque la impugnación debía presentarse en las 48 horas siguientes a la notificación.",
+        "explicacion": "Incorrecta. Las 48 horas son el plazo máximo para cumplir lo resuelto en el fallo (art. 29 num. 5), no el término para impugnarlo, que es de tres días."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el fallo se notificó el martes 10 de marzo y la impugnación se radicó el viernes 13. Regla: el fallo puede impugnarse dentro de los tres días siguientes a su notificación (art. 31 del Decreto 2591 de 1991), y presentada la impugnación el juez remite el expediente al superior dentro de los dos días siguientes (art. 32). Cálculo: miércoles 11, jueves 12 y viernes 13. Conclusión: es oportuna y el expediente debe ir al superior.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_2591_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-JUR-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de tutela",
+    "subtema": "Cumplimiento del fallo y desacato",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 2591 de 1991",
+    "articulos": [
+      "art. 27"
+    ],
+    "texto_fuente": "ARTICULO 27. CUMPLIMIENTO DEL FALLO. Proferido el fallo que conceda la tutela, la autoridad responsable del agravio deberá cumplirla sin demora. Si no lo hiciere dentro de las cuarenta y ocho horas siguientes, el juez se dirigirá al superior del responsable y le requerirá para que lo haga cumplir y abra el correspondiente procedimiento disciplinario contra aquél. Pasadas otras cuarenta y ocho horas, ordenará abrir proceso contra el superior que no hubiere procedido conforme a lo ordenado y adoptará directamente todas las medidas para el cabal cumplimiento del mismo. El juez podrá sancionar por desacato al responsable y al superior hasta que cumplan su sentencia. [...] En todo caso, el juez establecerá los demás efectos del fallo para el caso concreto y mantendrá la competencia hasta que esté completamente restablecido el derecho o eliminadas las causas de la amenaza.",
+    "pregunta": "El lunes 4 de mayo de 2026 a las 8:00 a. m., un juez notificó a la secretaría de salud de un departamento un fallo de tutela que le ordenó entregar un medicamento a un paciente dentro de las 48 horas siguientes. La secretaría no lo entregó, y el miércoles 6 de mayo a las 10:00 a. m. el juez requirió al gobernador, superior de la secretaria de salud, para que hiciera cumplir el fallo y abriera el procedimiento disciplinario contra ella. El lunes 11 de mayo a las 9:00 a. m., el paciente sigue sin el medicamento y el gobernador no ha hecho nada. ¿Qué corresponde hacer al juez en ese momento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Requerir de nuevo al gobernador y concederle otras 48 horas antes de adoptar cualquier otra medida de cumplimiento.",
+        "explicacion": "Incorrecta. El requerimiento al superior ya se hizo el miércoles 6. Pasadas otras 48 horas sin que actuara (el viernes 8 a las 10:00 a. m.), la ley no prevé un nuevo requerimiento, sino actuar contra el superior."
+      },
+      {
+        "id": "B",
+        "texto": "Sancionar por desacato solo a la secretaria de salud, que es la única que fue vinculada al proceso de tutela.",
+        "explicacion": "Incorrecta. Que el gobernador no haya sido vinculado desde el inicio no lo excluye: el art. 27 permite sancionar por desacato tanto al responsable como al superior, hasta que cumplan la sentencia."
+      },
+      {
+        "id": "C",
+        "texto": "Ordenar abrir proceso contra el gobernador y tomar él mismo las medidas para que se entregue el medicamento.",
+        "explicacion": "Correcta. Las primeras 48 horas vencieron el miércoles 6 a las 8:00 a. m., y ese día el juez requirió al superior. Pasadas otras 48 horas (el viernes 8 a las 10:00 a. m.), el juez ordena abrir proceso contra el superior y adopta directamente las medidas para el cumplimiento (art. 27)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir el caso al juez de segunda instancia, que es quien debe hacer cumplir la orden cuando la entidad se resiste.",
+        "explicacion": "Incorrecta. El juez que profirió el fallo mantiene la competencia hasta que el derecho esté completamente restablecido (art. 27)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el fallo se notificó el lunes 4 a las 8:00 a. m., el juez requirió al gobernador el miércoles 6 a las 10:00 a. m. y el lunes 11 el incumplimiento seguía. Regla: si el fallo no se cumple en 48 horas, el juez requiere al superior; pasadas otras 48 horas, ordena abrir proceso contra el superior, adopta directamente las medidas para el cumplimiento y puede sancionar por desacato a ambos (art. 27 del Decreto 2591 de 1991). Conclusión: procede actuar contra el gobernador y tomar las medidas directamente.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_2591_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-JUR-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de tutela",
+    "subtema": "Medidas provisionales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 2591 de 1991",
+    "articulos": [
+      "art. 7 incs. 1, 2 y 5",
+      "art. 31 inc. 1",
+      "art. 39"
+    ],
+    "texto_fuente": "Desde la presentación de la solicitud, cuando el juez expresamente lo considere necesario y urgente para proteger el derecho, suspenderá la aplicación del acto concreto que lo amenace o vulnere. Sin embargo, a petición de parte o de oficio, se podrá disponer la ejecución o la continuidad de la ejecución, para evitar perjuicios ciertos e inminentes al interés público. [...] El juez podrá, de oficio o a petición de parte, por resolución debidamente fundada, hacer cesar en cualquier momento la autorización de ejecución o las otras medidas cautelares que hubiere dictado. [...] Dentro de los tres días siguientes a su notificación el fallo podrá ser impugnado [...] ARTICULO 39. RECUSACION. En ningún caso será procedente la recusación. El juez deberá declararse impedido cuando concurran las causales de impedimento del Código de Procedimiento Penal so pena de incurrir en la sanción disciplinaria correspondiente.",
+    "pregunta": "Una alcaldía ordenó a un particular demoler un muro de su predio que, según el concepto técnico de la oficina de gestión del riesgo, puede caer en cualquier momento sobre la acera por la que pasan a diario los estudiantes de un colegio. El propietario presentó una tutela y, al admitirla, el juez suspendió la orden de demolición mientras decide. La oficina jurídica de la alcaldía considera que la suspensión pone en peligro a los estudiantes y sabe, además, que el juez es amigo cercano del propietario. ¿Qué puede hacer la oficina jurídica según el Decreto 2591 de 1991?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Recusar al juez por su amistad con el propietario y, mientras se resuelve la recusación, ejecutar la demolición.",
+        "explicacion": "Incorrecta. En el trámite de tutela no procede la recusación (art. 39); es el juez quien debe declararse impedido si hay causal. Además, ejecutar la demolición desconocería la medida que está vigente."
+      },
+      {
+        "id": "B",
+        "texto": "Impugnar la suspensión ante el superior del juez dentro de los tres días siguientes a su notificación.",
+        "explicacion": "Incorrecta. La impugnación dentro de los tres días procede contra el fallo (art. 31), no contra la medida provisional. Frente a la medida, se acude al mismo juez para que disponga la ejecución del acto."
+      },
+      {
+        "id": "C",
+        "texto": "Esperar el fallo, porque la suspensión decretada al admitir la tutela solo puede levantarse al decidir de fondo.",
+        "explicacion": "Incorrecta. El juez puede disponer la ejecución del acto a petición de parte y hacer cesar las medidas en cualquier momento, sin esperar el fallo (art. 7)."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle al mismo juez que permita ejecutar la demolición, por el peligro real y próximo para los estudiantes.",
+        "explicacion": "Correcta. Aunque el juez haya suspendido el acto, a petición de parte o de oficio puede disponer su ejecución para evitar perjuicios ciertos e inminentes al interés público (art. 7, inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el juez suspendió la orden de demolición y el muro amenaza a los estudiantes. Regla: desde la presentación de la tutela el juez puede suspender el acto, pero a petición de parte o de oficio puede disponer su ejecución para evitar perjuicios ciertos e inminentes al interés público, y puede hacer cesar las medidas en cualquier momento (art. 7 del Decreto 2591 de 1991). La recusación no procede (art. 39). Conclusión: la alcaldía debe pedirle al juez que autorice la demolición.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_2591_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-JUR-005",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Acción de tutela",
+    "subtema": "Actuación temeraria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 2591 de 1991",
+    "articulos": [
+      "art. 38"
+    ],
+    "texto_fuente": "ARTICULO 38. ACTUACION TEMERARIA. Cuando, sin motivo expresamente justificado, la misma acción de tutela sea presentada por la misma persona o su representante ante varios jueces o tribunales, se rechazarán o decidirán desfavorablemente todas las solicitudes. [...] El abogado que promoviere la presentación de varias acciones de tutela respecto de los mismos hechos y derechos, será sancionado con la suspensión de la tarjeta profesional al menos por dos años. En caso de reincidencia, se le cancelará su tarjeta profesional, sin perjuicio de las demás sanciones a que haya lugar.",
+    "pregunta": "Un inspector de tránsito negó a una ciudadana la entrega de su vehículo inmovilizado. Por medio de su abogado, ella presentó contra el inspector una tutela ante un juzgado civil municipal. Dos días después, el mismo abogado presentó ante un juzgado laboral otra tutela contra el mismo inspector, por los mismos hechos y derechos, sin dar ninguna explicación. La oficina jurídica de la alcaldía debe responder ambas. ¿Qué prevé el Decreto 2591 de 1991 para esta situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las dos sigan su curso, porque cada una se presentó ante un juez de una especialidad distinta.",
+        "explicacion": "Incorrecta. La norma se refiere a la misma tutela presentada ante varios jueces o tribunales, sin importar su especialidad. Aquí coinciden la persona, el accionado, los hechos y los derechos, y no se dio ningún motivo que lo justificara (art. 38)."
+      },
+      {
+        "id": "B",
+        "texto": "Que se rechacen o nieguen ambas, y que al abogado se le pueda suspender la tarjeta al menos dos años.",
+        "explicacion": "Correcta. La misma persona, por medio de su abogado, presentó contra el mismo inspector dos tutelas por los mismos hechos y derechos ante jueces distintos, sin motivo justificado. En ese caso se rechazan o se deciden desfavorablemente todas las solicitudes, y el abogado puede ser suspendido al menos dos años (art. 38)."
+      },
+      {
+        "id": "C",
+        "texto": "Que se rechace solo la segunda, y que la primera continúe ante el juzgado que la recibió primero.",
+        "explicacion": "Incorrecta. La consecuencia de la actuación temeraria alcanza a todas las solicitudes, no solo a la que se presentó después (art. 38)."
+      },
+      {
+        "id": "D",
+        "texto": "Que ambas se rechacen, y que al abogado se le cancele la tarjeta profesional desde esta primera vez.",
+        "explicacion": "Incorrecta. La cancelación de la tarjeta profesional procede en caso de reincidencia. La primera vez, la sanción es la suspensión por al menos dos años (art. 38)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el mismo abogado presentó, sin explicación, dos tutelas de la misma persona contra el mismo inspector, por los mismos hechos y derechos, ante dos jueces distintos. Regla: cuando la misma tutela se presenta ante varios jueces sin motivo expresamente justificado, se rechazan o se deciden desfavorablemente todas las solicitudes, y el abogado que lo promueve es suspendido al menos dos años; la cancelación de la tarjeta queda para la reincidencia (art. 38 del Decreto 2591 de 1991). Conclusión: ambas se rechazan o se niegan.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_2591_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-JUR-006",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Reparación directa por trabajos públicos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 140 incs. 1 y 2",
+      "art. 141 inc. 1",
+      "art. 164 num. 2 lit. i",
+      "art. 164 num. 2 lit. j num. iii"
+    ],
+    "texto_fuente": "En los términos del artículo 90 de la Constitución Política, la persona interesada podrá demandar directamente la reparación del daño antijurídico producido por la acción u omisión de los agentes del Estado. [...] De conformidad con el inciso anterior, el Estado responderá, entre otras, cuando la causa del daño sea un hecho, una omisión, una operación administrativa o la ocupación temporal o permanente de inmueble por causa de trabajos públicos o por cualquiera otra causa imputable a una entidad pública o a un particular que haya obrado siguiendo una expresa instrucción de la misma. [...] Cualquiera de las partes de un contrato del Estado podrá pedir que se declare su existencia o su nulidad, que se ordene su revisión, que se declare su incumplimiento [...] Cuando se pretenda la reparación directa, la demanda deberá presentarse dentro del término de dos (2) años, contados a partir del día siguiente al de la ocurrencia de la acción u omisión causante del daño [...] En los que requieran de liquidación y esta sea efectuada de común acuerdo por las partes, desde el día siguiente al de la firma del acta;",
+    "pregunta": "Un contratista de un municipio construye un colector de aguas lluvias con los diseños y bajo las instrucciones de la secretaría de infraestructura. En agosto de 2025, las vibraciones de la maquinaria agrietaron las paredes de la casa de Elena, vecina de la obra. Elena quiere que le paguen la reparación de su vivienda. ¿Qué medio de control le corresponde y desde cuándo se cuenta el término de dos años para presentar la demanda?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Controversias contractuales, porque el daño surgió al ejecutar un contrato estatal; desde el día siguiente a su liquidación.",
+        "explicacion": "Incorrecta. Las controversias contractuales las promueven las partes del contrato (art. 141), y Elena es una tercera ajena a él. Además, contar el término desde la liquidación es una regla de los litigios sobre contratos que requieren liquidación (art. 164, num. 2, lit. j), no de la reparación de un daño."
+      },
+      {
+        "id": "B",
+        "texto": "Reparación directa, porque el daño lo causó la ejecución material de la obra; desde el día siguiente a la liquidación.",
+        "explicacion": "Incorrecta. Acierta en el medio de control, pero en la reparación directa los dos años se cuentan desde el día siguiente a la acción u omisión que causó el daño (art. 164, num. 2, lit. i), no desde la liquidación del contrato, que es una regla de los litigios contractuales."
+      },
+      {
+        "id": "C",
+        "texto": "Reparación directa, porque el daño lo causó la ejecución material de la obra; desde el día siguiente a las vibraciones.",
+        "explicacion": "Correcta. El daño lo causó un hecho de unos trabajos públicos que ejecutó un particular siguiendo instrucciones de la entidad, lo que se reclama por reparación directa (art. 140). Los dos años se cuentan desde el día siguiente a la acción que causó el daño, las vibraciones de agosto de 2025 (art. 164, num. 2, lit. i)."
+      },
+      {
+        "id": "D",
+        "texto": "Controversias contractuales, porque el daño surgió al ejecutar un contrato estatal; desde el día siguiente a las vibraciones.",
+        "explicacion": "Incorrecta. Acierta en el momento desde el que se cuenta el término, pero Elena no es parte del contrato: las controversias contractuales las promueven las partes (art. 141), no los terceros que sufren un daño por la obra."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las vibraciones de una obra pública, hecha por un contratista que seguía instrucciones del municipio, dañaron la casa de Elena, vecina ajena al contrato. Regla: el Estado responde por reparación directa cuando el daño lo causa un hecho imputable a un particular que obró por instrucción de la entidad (art. 140 de la Ley 1437 de 2011); las controversias contractuales son de las partes (art. 141), y la reparación directa se demanda en dos años desde el día siguiente a la acción causante del daño (art. 164, num. 2, lit. i). Conclusión: reparación directa, desde las vibraciones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-JUR-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Nulidad y restablecimiento contra un acto general con acto de ejecución",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 137 inc. 1 y parágrafo",
+      "art. 138",
+      "art. 164 num. 2 lit. d"
+    ],
+    "texto_fuente": "Toda persona podrá solicitar por sí, o por medio de representante, que se declare la nulidad de los actos administrativos de carácter general. [...] PARÁGRAFO. Si de la demanda se desprendiere que se persigue el restablecimiento automático de un derecho, se tramitará conforme a las reglas del artículo siguiente. [...] Toda persona que se crea lesionada en un derecho subjetivo amparado en una norma jurídica, podrá pedir que se declare la nulidad del acto administrativo particular, expreso o presunto, y se le restablezca el derecho; también podrá solicitar que se le repare el daño. [...] Igualmente podrá pretenderse la nulidad del acto administrativo general y pedirse el restablecimiento del derecho directamente violado por este al particular demandante o la reparación del daño causado a dicho particular por el mismo, siempre y cuando la demanda se presente en tiempo, esto es, dentro de los cuatro (4) meses siguientes a su publicación. Si existe un acto intermedio, de ejecución o cumplimiento del acto general, el término anterior se contará a partir de la notificación de aquel.",
+    "pregunta": "El 2 de febrero de 2026, una alcaldía publicó un decreto que prohibió la venta de comidas en un sector del centro. Con base en ese decreto, el 6 de abril de 2026 la secretaría de gobierno le notificó a Laura una resolución que ordenó el cierre de su restaurante. Laura cree que el decreto es ilegal y quiere que el juez lo anule y que le paguen lo que ha dejado de ganar por el cierre. ¿Qué medio de control corresponde y desde cuándo se cuenta el término para demandar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Nulidad y restablecimiento, y los cuatro meses corren desde la notificación del cierre, porque este ejecuta el decreto.",
+        "explicacion": "Correcta. Laura pide la nulidad del decreto general y el restablecimiento de su derecho, lo que se tramita como nulidad y restablecimiento (art. 138, inc. 2). Como existe un acto de ejecución del decreto, la orden de cierre, los cuatro meses se cuentan desde la notificación de ese acto, el 6 de abril."
+      },
+      {
+        "id": "B",
+        "texto": "Nulidad simple, que puede presentar en cualquier tiempo, porque lo que se cuestiona es un decreto de carácter general.",
+        "explicacion": "Incorrecta. La nulidad simple no lleva restablecimiento del derecho. Si la demanda persigue un restablecimiento, se tramita con las reglas de la nulidad y restablecimiento (art. 137, parágrafo)."
+      },
+      {
+        "id": "C",
+        "texto": "Nulidad y restablecimiento, y los cuatro meses corren desde la publicación del decreto, porque es un acto general.",
+        "explicacion": "Incorrecta. Los cuatro meses se cuentan desde la publicación solo si no hay un acto intermedio. Aquí existe la orden de cierre, que ejecuta el decreto, y el término corre desde su notificación (art. 138, inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Reparación directa, con dos años de término, porque el perjuicio lo causó la operación administrativa del cierre.",
+        "explicacion": "Incorrecta. El perjuicio proviene de actos administrativos cuya legalidad Laura discute. La anulación del acto con la reparación del daño se pide por nulidad y restablecimiento (art. 138), no por reparación directa."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Laura quiere anular un decreto general y obtener el pago de sus perjuicios, y el decreto se le aplicó con una orden de cierre notificada el 6 de abril de 2026. Regla: puede pedirse la nulidad del acto general con el restablecimiento del derecho dentro de los cuatro meses siguientes a su publicación, pero si hay un acto de ejecución, el término se cuenta desde la notificación de este (art. 138, inc. 2, de la Ley 1437 de 2011). Conclusión: nulidad y restablecimiento, con cuatro meses desde la notificación del cierre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-JUR-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Caducidad en controversias contractuales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 141 inc. 1",
+      "art. 164 num. 2 lit. j"
+    ],
+    "texto_fuente": "Así mismo, el interesado podrá solicitar la liquidación judicial del contrato cuando esta no se haya logrado de mutuo acuerdo y la entidad estatal no lo haya liquidado unilateralmente dentro de los dos (2) meses siguientes al vencimiento del plazo convenido para liquidar de mutuo acuerdo o, en su defecto, del término establecido por la ley. [...] j) En las relativas a contratos el término para demandar será de dos (2) años que se contarán a partir del día siguiente a la ocurrencia de los motivos de hecho o de derecho que les sirvan de fundamento. [...] En los siguientes contratos, el término de dos (2) años se contará así: [...] ii) En los que no requieran de liquidación, desde el día siguiente al de la terminación del contrato por cualquier causa; [...] v) En los que requieran de liquidación y esta no se logre por mutuo acuerdo o no se practique por la administración unilateralmente, una vez cumplido el término de dos (2) meses contados a partir del vencimiento del plazo convenido para hacerlo bilateralmente o, en su defecto, del término de los cuatro (4) meses siguientes a la terminación del contrato o la expedición del acto que lo ordene o del acuerdo que la disponga;",
+    "pregunta": "Un contrato de obra de una gobernación, que requería liquidación, terminó el 15 de enero de 2024. El contrato no fijó un plazo para liquidarlo de mutuo acuerdo; las partes no lograron hacerlo y la gobernación tampoco lo liquidó de manera unilateral. El 10 de junio de 2026, el contratista presentó una demanda para que el juez liquide el contrato y le reconozca un saldo a su favor. El abogado de la gobernación evalúa si propone la excepción de caducidad. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que caducó en enero de 2026, porque los dos años se cuentan desde el día siguiente a la terminación del contrato.",
+        "explicacion": "Incorrecta. Contar desde la terminación aplica a los contratos que no requieren liquidación (art. 164, num. 2, lit. j, ap. ii). Este sí la requería y no se liquidó."
+      },
+      {
+        "id": "B",
+        "texto": "Que caducó en mayo de 2026, porque los dos años corren desde que vencieron los cuatro meses para liquidarlo.",
+        "explicacion": "Incorrecta. Vencidos los cuatro meses siguientes a la terminación, la ley añade dos meses más antes de que empiecen a correr los dos años (ap. v)."
+      },
+      {
+        "id": "C",
+        "texto": "Que está a tiempo, porque mientras el contrato no se liquide no corre ningún término para demandar.",
+        "explicacion": "Incorrecta. La falta de liquidación no deja abierta indefinidamente la demanda: la ley fija desde cuándo corren los dos años en ese caso (ap. v)."
+      },
+      {
+        "id": "D",
+        "texto": "Que está a tiempo, porque los dos años empezaron a contarse a mediados de julio de 2024 y no han vencido.",
+        "explicacion": "Correcta. Sin plazo convenido, el término para liquidar fue de cuatro meses desde la terminación (hasta el 15 de mayo de 2024). Luego corrieron dos meses (hasta el 15 de julio de 2024) y desde ahí los dos años, que vencen a mediados de julio de 2026."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el contrato requería liquidación, terminó el 15 de enero de 2024, no tenía plazo convenido para liquidarlo y nunca se liquidó. Regla: en ese caso los dos años se cuentan una vez cumplidos dos meses desde el vencimiento de los cuatro meses siguientes a la terminación (art. 164, num. 2, lit. j, ap. v, de la Ley 1437 de 2011). Cálculo: 15/1/2024 + 4 meses = 15/5/2024; + 2 meses = 15/7/2024; + 2 años = julio de 2026. Conclusión: la demanda del 10 de junio de 2026 está a tiempo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-JUR-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Nulidad electoral de actos de nombramiento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 139 inc. 1",
+      "art. 164 num. 2 lit. a"
+    ],
+    "texto_fuente": "Cualquier persona podrá pedir la nulidad de los actos de elección por voto popular o por cuerpos electorales, así como de los actos de nombramiento que expidan las entidades y autoridades públicas de todo orden. [...] a) Cuando se pretenda la nulidad de un acto administrativo electoral, el término será de treinta (30) días. Si la elección se declara en audiencia pública el término se contará a partir del día siguiente; en los demás casos de elección y en los de nombramientos se cuenta a partir del día siguiente al de su publicación efectuada en la forma prevista en el inciso 1o del artículo 65 de este Código.",
+    "pregunta": "El 2 de febrero de 2026, un municipio publicó en la gaceta municipal el decreto con el que el alcalde nombró al jefe de la oficina asesora de planeación. El nombrado tomó posesión el 20 de abril. El 12 de mayo de 2026, un ciudadano consulta a la personería si todavía puede pedir que un juez anule ese nombramiento, porque considera que el nombrado no cumple los requisitos del cargo. ¿Qué debe responderle el abogado de la personería?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede demandar en nulidad y restablecimiento del derecho, porque tiene cuatro meses desde la publicación.",
+        "explicacion": "Incorrecta. Los actos de nombramiento se demandan por nulidad electoral (art. 139), con su propio término de treinta días, no por nulidad y restablecimiento con cuatro meses."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede demandar en nulidad simple, porque un acto de nombramiento se puede demandar en cualquier tiempo.",
+        "explicacion": "Incorrecta. Los actos de nombramiento tienen un medio y un término propios: la nulidad electoral, en treinta días. No se demandan en cualquier tiempo."
+      },
+      {
+        "id": "C",
+        "texto": "Que ya no puede, porque el medio que procede es la nulidad electoral y sus treinta días vencieron en marzo.",
+        "explicacion": "Correcta. La nulidad electoral procede contra los actos de nombramiento (art. 139) y su término es de treinta días contados desde el día siguiente a la publicación (art. 164, num. 2, lit. a). Publicado el decreto el 2 de febrero, ese término venció en marzo de 2026, mucho antes del 12 de mayo."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede demandar en nulidad electoral, porque los treinta días se cuentan desde la posesión del nombrado.",
+        "explicacion": "Incorrecta. En los nombramientos, el término se cuenta desde el día siguiente a la publicación, no desde la posesión."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el decreto de nombramiento se publicó el 2 de febrero de 2026 y la consulta es del 12 de mayo. Regla: cualquier persona puede pedir la nulidad de los actos de nombramiento por nulidad electoral (art. 139 de la Ley 1437 de 2011), dentro de los treinta días contados desde el día siguiente a su publicación (art. 164, num. 2, lit. a). Conclusión: el término venció en marzo de 2026 y la demanda ya no es oportuna.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-JUR-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Repetición y llamamiento en garantía",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 140 inc. 3",
+      "art. 142 incs. 1 y 2",
+      "art. 161 num. 5"
+    ],
+    "texto_fuente": "Las entidades públicas deberán promover la misma pretensión cuando resulten perjudicadas por la actuación de un particular o de otra entidad pública. [...] Cuando el Estado haya debido hacer un reconocimiento indemnizatorio con ocasión de una condena, conciliación u otra forma de terminación de conflictos que sean consecuencia de la conducta dolosa o gravemente culposa del servidor o ex servidor público o del particular en ejercicio de funciones públicas, la entidad respectiva deberá repetir contra estos por lo pagado. La pretensión de repetición también podrá intentarse mediante el llamamiento en garantía del servidor o ex servidor público o del particular en ejercicio de funciones públicas, dentro del proceso de responsabilidad contra la entidad pública. [...] 5. Cuando el Estado pretenda recuperar lo pagado por una condena, conciliación u otra forma de terminación de un conflicto, se requiere que previamente haya realizado dicho pago.",
+    "pregunta": "Un departamento fue demandado en reparación directa por un accidente que causó una volqueta oficial. Según el informe de tránsito, el conductor, servidor de la secretaría de infraestructura, iba con exceso de velocidad y en estado de embriaguez. El proceso apenas empieza y no hay condena. El jefe de la oficina jurídica quiere asegurar que, si el departamento llega a ser condenado, el conductor responda por lo que se pague. ¿Qué vía prevé el CPACA para lograrlo desde ahora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Llamar en garantía al conductor en ese mismo proceso, pues la repetición puede intentarse sin esperar condena.",
+        "explicacion": "Correcta. La pretensión de repetición también puede intentarse llamando en garantía al servidor dentro del proceso de responsabilidad contra la entidad (art. 142, inc. 2), sin esperar la condena ni el pago."
+      },
+      {
+        "id": "B",
+        "texto": "Presentar ya la demanda de repetición contra el conductor, porque su culpa grave consta en el informe de tránsito.",
+        "explicacion": "Incorrecta. La demanda autónoma de repetición exige que la entidad haya pagado antes la condena, la conciliación u otra forma de terminación del conflicto (art. 161, num. 5). Aquí no hay condena ni pago."
+      },
+      {
+        "id": "C",
+        "texto": "Esperar la sentencia y demandar en repetición con la sola condena ejecutoriada, aunque todavía no haya pagado.",
+        "explicacion": "Incorrecta. Para demandar en repetición se requiere que la entidad haya realizado el pago; no basta la sentencia ejecutoriada (art. 161, num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Demandar al conductor en reparación directa, pues la entidad debe promoverla cuando la perjudica un tercero.",
+        "explicacion": "Incorrecta. Esa regla (art. 140, inc. 3) se refiere a daños que sufre la entidad por la actuación de un particular o de otra entidad pública. Aquí el daño lo sufrió un tercero, y la vía para que el servidor responda es la repetición."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el proceso contra el departamento apenas comienza, no hay condena ni pago, y la conducta del conductor parece gravemente culposa. Regla: la repetición exige el pago previo (art. 161, num. 5, de la Ley 1437 de 2011), pero también puede intentarse llamando en garantía al servidor dentro del proceso de responsabilidad contra la entidad (art. 142, inc. 2). Conclusión: desde ahora, la entidad puede llamar en garantía al conductor en el mismo proceso.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-JUR-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Demanda de actos previos al contrato",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 141 inc. 2",
+      "art. 164 num. 2 lit. c"
+    ],
+    "texto_fuente": "Los actos proferidos antes de la celebración del contrato, con ocasión de la actividad contractual, podrán demandarse en los términos de los artículos 137 y 138 de este Código, según el caso. [...] c) Cuando se pretenda la nulidad o la nulidad y restablecimiento del derecho de los actos previos a la celebración del contrato, el término será de cuatro (4) meses contados a partir del día siguiente a su comunicación, notificación, ejecución o publicación, según el caso;",
+    "pregunta": "En una licitación de una gobernación, la resolución de adjudicación se notificó en la audiencia pública del 3 de febrero de 2026, y el contrato se firmó el 10 de febrero. El 22 de junio de 2026, el oferente que quedó en segundo lugar, convencido de que debió ganar, le pide a su abogado demandar para que se anule la adjudicación y se le paguen los perjuicios. ¿Qué debe concluir el abogado sobre la demanda contra la adjudicación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede pedir su nulidad por controversias contractuales, porque tiene dos años desde la firma del contrato.",
+        "explicacion": "Incorrecta. Los actos anteriores a la celebración del contrato, como la adjudicación, se demandan por nulidad o por nulidad y restablecimiento (art. 141, inc. 2), no por controversias contractuales."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede demandar en reparación directa, porque tiene dos años desde que se le causó el perjuicio.",
+        "explicacion": "Incorrecta. El perjuicio proviene de la adjudicación, cuya legalidad discute el oferente; se reclama por nulidad y restablecimiento, cuyo término para los actos previos es de cuatro meses."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede pedir la nulidad simple de la adjudicación, porque contra ella no corre término de caducidad.",
+        "explicacion": "Incorrecta. El término de cuatro meses aplica tanto a la nulidad como a la nulidad y restablecimiento de los actos previos al contrato (art. 164, num. 2, lit. c). Además, el oferente pide perjuicios."
+      },
+      {
+        "id": "D",
+        "texto": "Que ya no es posible, porque tenía cuatro meses desde su notificación para hacerlo y ese plazo venció.",
+        "explicacion": "Correcta. La adjudicación es un acto previo al contrato, que se demanda por nulidad y restablecimiento (art. 141, inc. 2) dentro de los cuatro meses siguientes a su notificación (art. 164, num. 2, lit. c). Notificada el 3 de febrero de 2026, el término venció a comienzos de junio, antes del 22 de junio."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la adjudicación se notificó el 3 de febrero de 2026 y el oferente quiere demandar el 22 de junio. Regla: los actos previos a la celebración del contrato se demandan por nulidad o nulidad y restablecimiento (art. 141, inc. 2, de la Ley 1437 de 2011), con un término de cuatro meses desde el día siguiente a su notificación (art. 164, num. 2, lit. c). Cálculo: los cuatro meses vencieron a comienzos de junio de 2026. Conclusión: la demanda contra la adjudicación ya no es oportuna.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Requisito de procedibilidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 87 inc. 1",
+      "art. 92 inc. 1 y parágrafo",
+      "art. 93 inc. 1",
+      "art. 145",
+      "art. 146 inc. 1"
+    ],
+    "texto_fuente": "La conciliación extrajudicial en asuntos de lo contencioso administrativo se regulará por las disposiciones de la presente ley, en especial por lo previsto en el presente título. [...] Cuando los asuntos sean conciliables, el trámite de la conciliación extrajudicial constituirá requisito de procedibilidad de toda demanda en que se formulen pretensiones relativas a nulidad con restablecimiento del derecho, reparación directa y controversias contractuales. [...] PARÁGRAFO. La conciliación será requisito de procedibilidad en los eventos en que ambas partes sean entidades públicas. [...] Será facultativo agotar la conciliación extrajudicial en materia contencioso administrativa, en los procesos ejecutivos diferentes a los regulados en la Ley 1551 de 2012, o la norma que la modifique o sustituya, en los procesos en que el demandante pida medidas cautelares de carácter patrimonial, en relación con el medio de control de repetición o cuando quien demande sea una entidad pública, salvo cuando sea obligatorio de acuerdo con el parágrafo del artículo 92 de la presente ley. [...] Esta ley rige íntegramente la materia de conciliación y entra en vigencia seis (6) meses después de su promulgación. [...] La presente ley deroga todas las disposiciones que le sean contrarias",
+    "pregunta": "La oficina jurídica de una gobernación prepara tres demandas: una de controversias contractuales contra una empresa privada que incumplió un contrato de suministro; otra de reparación directa contra un municipio, cuyas obras de alcantarillado inundaron una sede educativa del departamento, y una de repetición contra un exfuncionario, por una condena que el departamento ya pagó. Ninguna incluye solicitud de medidas cautelares. Según la Ley 2220 de 2022, ¿en cuáles debe agotar antes la conciliación extrajudicial como requisito para demandar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la de controversias contractuales y en la de reparación directa, porque son medios en los que la ley la exige.",
+        "explicacion": "Incorrecta. Aunque son medios en los que la conciliación es requisito, la ley la hace facultativa cuando quien demanda es una entidad pública, salvo que ambas partes lo sean. La demanda contractual es contra una empresa privada."
+      },
+      {
+        "id": "B",
+        "texto": "Únicamente en la demanda contra el municipio, porque las dos partes del conflicto son entidades públicas.",
+        "explicacion": "Correcta. Según la Ley 2220 de 2022, la conciliación es facultativa cuando demanda una entidad pública y en la repetición (art. 93), pero es requisito de procedibilidad cuando ambas partes son entidades públicas (art. 92, parágrafo). Solo la reparación directa contra el municipio cumple esa condición."
+      },
+      {
+        "id": "C",
+        "texto": "En ninguna, porque cuando quien demanda es una entidad pública agotar la conciliación es facultativo.",
+        "explicacion": "Incorrecta. Es la regla del art. 161, num. 1, del CPACA (modificado por la Ley 2080 de 2021), que hace facultativa la conciliación cuando demanda una entidad pública. Pero la Ley 2220 de 2022 es especial y posterior: regula la conciliación en lo contencioso administrativo (art. 87), rige íntegramente esa materia (art. 145) y deroga lo que le sea contrario (art. 146). Su art. 93 mantiene la regla, salvo cuando ambas partes son entidades públicas: entonces la conciliación es requisito de procedibilidad (art. 92, parágrafo)."
+      },
+      {
+        "id": "D",
+        "texto": "En la de repetición y en la del municipio, porque en ambas se busca recuperar recursos públicos.",
+        "explicacion": "Incorrecta. En la repetición, agotar la conciliación es facultativo (art. 93); el propósito de recuperar recursos públicos no la vuelve obligatoria."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la demandante es una entidad pública, y solo en una de las tres demandas la contraparte también lo es (el municipio). Regla: según la Ley 2220 de 2022, la conciliación es requisito en la nulidad y restablecimiento, la reparación directa y las controversias contractuales (art. 92), pero es facultativa en la repetición y cuando demanda una entidad pública, salvo que ambas partes lo sean (arts. 92, parágrafo, y 93). Esa salvedad, de una ley especial y posterior al CPACA modificado, prevalece (arts. 87 y 145). Conclusión: solo es obligatoria contra el municipio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-JUR-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Asuntos no conciliables",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 89 inc. 1",
+      "art. 90 nums. 1, 3 y 4"
+    ],
+    "texto_fuente": "En materia de lo contencioso administrativo serán conciliables todos los conflictos que puedan ser conocidos por la Jurisdicción de lo Contencioso Administrativo, siempre que la conciliación no esté expresamente prohibida por la ley. [...] 1. Los que versen sobre conflictos de carácter tributario. [...] 3. En los que haya caducado la acción. 4. Cuando se pretenda la nulidad y restablecimiento del derecho, y aún procedan recursos en el procedimiento administrativo o este no estuviere debidamente agotado.",
+    "pregunta": "Al comité de conciliación de un municipio capital de departamento llegan cuatro solicitudes de conciliación extrajudicial en asuntos de lo contencioso administrativo. Por ninguno de esos hechos se ha presentado antes una demanda ni otra solicitud de conciliación. ¿Cuál de estas solicitudes versa sobre un asunto conciliable?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La de la empresa que pide conciliar el impuesto de industria y comercio que el municipio le liquidó.",
+        "explicacion": "Incorrecta. Los conflictos de carácter tributario no son susceptibles de conciliación (art. 90, num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "La del ciudadano que pide conciliar la multa que se le impuso, mientras está pendiente su apelación.",
+        "explicacion": "Incorrecta. No se concilia la nulidad y restablecimiento mientras aún procedan recursos o el procedimiento administrativo no esté agotado (art. 90, num. 4), y la apelación sigue pendiente."
+      },
+      {
+        "id": "C",
+        "texto": "La de quien pide conciliar los perjuicios de un choque con un vehículo oficial ocurrido hace tres años.",
+        "explicacion": "Incorrecta. No son conciliables los asuntos en los que la acción ya caducó (art. 90, num. 3). La reparación directa caduca a los dos años del hecho (art. 164, num. 2, lit. i, de la Ley 1437 de 2011), y el choque ocurrió hace tres."
+      },
+      {
+        "id": "D",
+        "texto": "La del contratista que pide restablecer el equilibrio económico de su contrato de obra en ejecución.",
+        "explicacion": "Correcta. La controversia sobre el equilibrio económico de un contrato estatal puede ser conocida por la jurisdicción de lo contencioso administrativo y no está entre los asuntos que la ley excluye de la conciliación (arts. 89 y 90)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: cada solicitud tiene una condición distinta: un tributo, un recurso pendiente, un hecho de hace tres años y una controversia contractual vigente. Regla: son conciliables los conflictos de la jurisdicción contenciosa que la ley no prohíba (art. 89 de la Ley 2220 de 2022); no lo son los tributarios, aquellos en que la acción caducó ni la nulidad y restablecimiento con recursos pendientes (art. 90). Conclusión: solo la del equilibrio económico del contrato es conciliable.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-JUR-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Suspensión del término de caducidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 87 inc. 1",
+      "art. 96"
+    ],
+    "texto_fuente": "La conciliación extrajudicial en asuntos de lo contencioso administrativo se regulará por las disposiciones de la presente ley, en especial por lo previsto en el presente título. [...] ARTÍCULO 96. SUSPENSIÓN DEL TÉRMINO DE CADUCIDAD DEL MEDIO DE CONTROL. La presentación de la petición de convocatoria de conciliación extrajudicial ante los agentes del Ministerio Público suspende el término de caducidad del medio de control contencioso administrativo, según el caso, hasta: 1. La ejecutoria de la providencia que imprueba del acuerdo conciliatorio por el juez de lo contencioso administrativo. 2. La expedición de las constancias a que se refiere la presente ley; o 3. El vencimiento del término de tres (3) meses contados a partir de la presentación de la solicitud. Lo primero que ocurra. PARÁGRAFO. Las partes por mutuo acuerdo podrán prorrogar el término de tres (3) meses consagrado para el trámite conciliatorio extrajudicial, pero en dicho lapso no operará la suspensión del término de caducidad o prescripción.",
+    "pregunta": "El 2 de marzo de 2026, cuando le faltaban 15 días para que caducara el medio de control de reparación directa, una empresa de transporte radicó ante la Procuraduría una solicitud de conciliación extrajudicial contra un municipio. Como se acercaban los tres meses sin que se hubiera hecho la audiencia, las partes acordaron prorrogar el trámite. La audiencia se celebró el 1 de julio de 2026, sin acuerdo, y ese día se expidió la constancia. La empresa presentó la demanda el 6 de julio de 2026. ¿Cómo debe calificarse la oportunidad de la demanda?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fue oportuna, porque la caducidad estuvo suspendida hasta la constancia del 1 de julio y aún quedaban 15 días.",
+        "explicacion": "Incorrecta. En lo contencioso administrativo rige la regla especial del art. 96 (art. 87): la suspensión dura hasta lo primero que ocurra entre la constancia y el vencimiento de tres meses desde la solicitud, y durante la prórroga acordada por las partes no hay suspensión (parágrafo). La regla general del art. 56, que sí cubre la prórroga, no se aplica aquí."
+      },
+      {
+        "id": "B",
+        "texto": "Fue oportuna, porque con la expedición de la constancia el término de caducidad volvió a correr desde cero.",
+        "explicacion": "Incorrecta. La solicitud de conciliación suspende el término de caducidad, no lo reinicia. Al terminar la suspensión, solo corre lo que faltaba: 15 días."
+      },
+      {
+        "id": "C",
+        "texto": "Fue tardía, porque la suspensión acabó a los tres meses de la solicitud y los 15 días restantes vencieron en junio.",
+        "explicacion": "Correcta. La solicitud del 2 de marzo suspendió la caducidad hasta el 2 de junio, cuando se cumplieron tres meses, que fue lo primero que ocurrió. En la prórroga no hay suspensión, así que los 15 días restantes corrieron desde el 3 de junio y vencieron en junio (el 17), mucho antes del 6 de julio."
+      },
+      {
+        "id": "D",
+        "texto": "Fue tardía, porque la solicitud de conciliación no suspende la caducidad, así que los 15 días vencieron en marzo.",
+        "explicacion": "Incorrecta. La presentación de la solicitud ante el agente del Ministerio Público sí suspende el término de caducidad (art. 96)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la solicitud se radicó el 2 de marzo, cuando faltaban 15 días; las partes prorrogaron el trámite y la constancia se expidió el 1 de julio. Regla: en lo contencioso administrativo, la solicitud suspende la caducidad hasta lo primero que ocurra entre la constancia y el vencimiento de tres meses, y durante la prórroga acordada no hay suspensión (art. 96 de la Ley 2220 de 2022, regla especial según el art. 87). Cálculo: la suspensión terminó el 2 de junio; los 15 días corrieron del 3 al 17 de junio. Conclusión: la demanda del 6 de julio es tardía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-JUR-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Comité de conciliación: integración y quórum",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 118 y parágrafo 1",
+      "art. 119 inc. 4"
+    ],
+    "texto_fuente": "ARTÍCULO 118. INTEGRACIÓN. Los Comités de Conciliación estarán conformados por los siguientes funcionarios, quienes concurrirán con voz y voto y serán miembros permanentes: 1. El jefe, director, gerente, presidente o representante legal del ente respectivo o su delegado. 2. El ordenador del gasto o quien haga sus veces. 3. El Jefe de la Oficina Jurídica o de la dependencia que tenga a su cargo la defensa de los intereses litigiosos de la entidad. [...] 4. Dos (2) funcionarios de dirección o de confianza que se designen conforme a la estructura orgánica de cada ente. La participación de los integrantes será indelegable, salvo las excepciones previstas en los numerales 1 y 3 del presente artículo. PARÁGRAFO 1o. Concurrirán solo con derecho a voz los funcionarios que por su condición jerárquica y funcional deban asistir según el caso concreto, el apoderado que represente los intereses del ente en cada proceso, el Jefe de la Oficina de Control Interno o quien haga sus veces y el Secretario Técnico del Comité. [...] El Comité podrá sesionar con un mínimo de tres de sus miembros permanentes y adoptará las decisiones por mayoría simple.",
+    "pregunta": "A una sesión del comité de conciliación de una gobernación asistieron el secretario general, como delegado del gobernador; una profesional de la secretaría de hacienda, enviada por el secretario de hacienda, que es el ordenador del gasto; el jefe de la oficina jurídica; la jefa de control interno; el apoderado del proceso que se va a estudiar y la secretaria técnica del comité. Los dos directivos designados como miembros no asistieron. ¿Puede el comité sesionar y decidir si concilia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No, porque solo dos de los asistentes son miembros permanentes habilitados para votar, y se necesitan tres.",
+        "explicacion": "Correcta. Solo cuentan como miembros permanentes el delegado del gobernador (el numeral 1 admite delegación) y el jefe jurídico. La participación del ordenador del gasto es indelegable, y la jefa de control interno, el apoderado y la secretaria técnica solo tienen voz. Sin tres miembros permanentes, no hay sesión válida."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, porque asisten seis personas y las decisiones se adoptan por mayoría simple de quienes están presentes.",
+        "explicacion": "Incorrecta. El mínimo para sesionar se cuenta con miembros permanentes (art. 119), no con todos los asistentes. Quienes concurren solo con voz no cuentan para sesionar ni para votar (art. 118, parágrafo 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Sí, porque están tres miembros permanentes: el jefe jurídico y los delegados del gobernador y del ordenador del gasto.",
+        "explicacion": "Incorrecta. La participación de los integrantes es indelegable, salvo en los numerales 1 y 3 del art. 118. El ordenador del gasto (numeral 2) no puede enviar a otra persona en su lugar."
+      },
+      {
+        "id": "D",
+        "texto": "No, porque el comité requiere la presencia de la totalidad de sus miembros permanentes para poder sesionar.",
+        "explicacion": "Incorrecta. No se exige la totalidad: el comité puede sesionar con un mínimo de tres miembros permanentes y decide por mayoría simple (art. 119)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: de los seis asistentes, solo el delegado del gobernador y el jefe jurídico son miembros permanentes válidamente presentes; el ordenador del gasto envió a otra persona. Regla: la participación es indelegable salvo en los numerales 1 y 3; control interno, el apoderado y el secretario técnico solo tienen voz (art. 118 de la Ley 2220 de 2022), y el comité sesiona con un mínimo de tres miembros permanentes (art. 119). Conclusión: el comité no puede sesionar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-JUR-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Comité de conciliación y acción de repetición",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 120 num. 7",
+      "art. 125 y parágrafo"
+    ],
+    "texto_fuente": "7. Evaluar los procesos que hayan sido fallados en contra de la entidad con el fin de determinar la procedencia de la acción de repetición e informar al Coordinador de los agentes del Ministerio Público ante la Jurisdicción en lo Contencioso Administrativo las correspondientes decisiones anexando copia de la providencia condenatoria, de la prueba de su pago y señalando el fundamento de la decisión en los casos en que se decida no instaurar la acción de repetición. [...] ARTÍCULO 125. DE LA ACCIÓN DE REPETICIÓN. Los Comités de Conciliación de las entidades públicas deberán realizar los estudios pertinentes para determinar la procedencia de la acción de repetición. Para ello, el ordenador del gasto, al día siguiente al pago total o al pago de la última cuota efectuado por la entidad pública, de una conciliación, condena o de cualquier otro crédito surgido por concepto de la responsabilidad patrimonial de la entidad, o al vencimiento del plazo con que cuenta la administración para el pago de condenas conforme lo establece la Ley 1437 de 2011, o la norma que la sustituya o modifique, lo que suceda primero, deberá remitir el acto administrativo y sus antecedentes al Comité de Conciliación, para que en un término no superior a cuatro (4) meses se adopte la decisión motivada de iniciar o no el proceso de repetición y se presente la correspondiente demanda, cuando la misma resulte procedente, dentro de los dos (2) meses siguientes a la decisión. PARÁGRAFO. La Oficina de Control Interno de las entidades o quien haga sus veces, deberá verificar el cumplimiento de las obligaciones contenidas en este artículo.",
+    "pregunta": "Un municipio capital de departamento pagó en dos cuotas, dentro del plazo legal para el pago de condenas, la condena por un accidente que causó un vehículo oficial. La última cuota se pagó el 16 de marzo de 2026. Al día siguiente, el ordenador del gasto remitió al comité de conciliación la resolución de pago y sus antecedentes. El 10 de junio de 2026, el comité concluyó que el conductor no actuó con dolo ni con culpa grave y decidió no iniciar el proceso de repetición. ¿Qué debe concluirse sobre esa decisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que fue oportuna y basta con dejarla en el acta, porque no repetir es una facultad discrecional del comité.",
+        "explicacion": "Incorrecta. Cuando el comité decide no instaurar la repetición, debe informar al coordinador de los agentes del Ministerio Público con los anexos y el fundamento (art. 120, num. 7). No basta con el acta."
+      },
+      {
+        "id": "B",
+        "texto": "Que fue oportuna, pues tenía cuatro meses, y debe informarla al coordinador de agentes del Ministerio Público.",
+        "explicacion": "Correcta. Como el pago se hizo dentro del plazo legal, lo primero que ocurrió fue el pago de la última cuota. Recibidos los antecedentes el 17 de marzo, el comité tenía hasta cuatro meses (hasta el 17 de julio) para decidir (art. 125), y decidió el 10 de junio. Como decidió no repetir, debe informar al coordinador de los agentes del Ministerio Público, con copia de la condena, la prueba del pago y el fundamento (art. 120, num. 7)."
+      },
+      {
+        "id": "C",
+        "texto": "Que fue tardía, porque el comité tenía dos meses desde el pago, y además debe informarse a control interno.",
+        "explicacion": "Incorrecta. Los dos meses son el plazo para presentar la demanda después de decidir iniciarla. Para decidir, el comité tiene hasta cuatro meses desde que recibe los antecedentes (art. 125)."
+      },
+      {
+        "id": "D",
+        "texto": "Que fue oportuna, pero solo queda en firme cuando la revise y apruebe la oficina de control interno de la entidad.",
+        "explicacion": "Incorrecta. La oficina de control interno verifica que se cumplan estas obligaciones (art. 125, parágrafo), pero no aprueba las decisiones del comité."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la condena se pagó dentro del plazo legal, el comité recibió los antecedentes el 17 de marzo de 2026 y decidió no repetir el 10 de junio. Regla: el comité tiene hasta cuatro meses desde la remisión para decidir si inicia la repetición (art. 125 de la Ley 2220 de 2022) y, cuando decide no instaurarla, debe informar al coordinador de los agentes del Ministerio Público, con copia de la condena, la prueba del pago y el fundamento (art. 120, num. 7). Conclusión: decidió a tiempo y debe informar con esos soportes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  }
+]

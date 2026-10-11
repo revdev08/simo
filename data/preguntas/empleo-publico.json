@@ -1230,7 +1230,7 @@
   },
   {
     "id": "TC-909-025",
-    "version": 1,
+    "version": 2,
     "estado": "beta",
     "capa": 1,
     "modulo": "Empleo Público y Carrera Administrativa",
@@ -1243,15 +1243,16 @@
     "dificultad": "Media",
     "norma": "Ley 909 de 2004",
     "articulos": [
-      "art. 38, inciso 2"
+      "Ley 909 de 2004, art. 38, inciso 2",
+      "Decreto 1083 de 2015, art. 2.2.8.1.4, num. 2"
     ],
-    "texto_fuente": "El resultado de la evaluación será la calificación correspondiente al período anual, establecido en las disposiciones reglamentarias, que deberán incluir dos (2) evaluaciones parciales al año. No obstante, si durante este período el jefe del organismo recibe información debidamente soportada de que el desempeño laboral de un empleado es deficiente podrá ordenar, por escrito, que se le evalúen y califiquen sus servicios en forma inmediata.",
-    "pregunta": "En el mes de marzo, el director de un establecimiento público recibe un informe con soportes que demuestran que el desempeño laboral de un empleado de carrera es deficiente. El período anual de evaluación apenas comenzó el 1 de febrero. Según la Ley 909 de 2004, ¿qué puede hacer el director?",
+    "texto_fuente": "El resultado de la evaluación será la calificación correspondiente al período anual, establecido en las disposiciones reglamentarias, que deberán incluir dos (2) evaluaciones parciales al año. No obstante, si durante este período el jefe del organismo recibe información debidamente soportada de que el desempeño laboral de un empleado es deficiente podrá ordenar, por escrito, que se le evalúen y califiquen sus servicios en forma inmediata. [...] Esta calificación no podrá ordenarse antes de transcurridos tres (3) meses de efectuada la última calificación y deberá comprender todo el período no calificado hasta el momento de la orden",
+    "pregunta": "En el mes de junio, el director de un establecimiento público recibe un informe con soportes que demuestran que el desempeño laboral de un empleado de carrera es deficiente. El período anual de evaluación comenzó el 1 de febrero y la última calificación del empleado se produjo el 10 de febrero. Según la Ley 909 de 2004 y su reglamento, ¿qué puede hacer el director?",
     "opciones": [
       {
         "id": "A",
         "texto": "Ordenar por escrito que los servicios del empleado se evalúen y califiquen en forma inmediata.",
-        "explicacion": "Correcta. El art. 38 permite al jefe del organismo que recibe información debidamente soportada de un desempeño deficiente ordenar por escrito la evaluación y calificación inmediata."
+        "explicacion": "Correcta. El art. 38 de la Ley 909 permite al jefe del organismo que recibe información debidamente soportada de un desempeño deficiente ordenar por escrito la evaluación y calificación inmediata. El Decreto 1083 (art. 2.2.8.1.4 num. 2) exige que hayan pasado al menos tres meses desde la última calificación: aquí van casi cuatro (10 de febrero a junio)."
       },
       {
         "id": "B",
@@ -1261,7 +1262,7 @@
       {
         "id": "C",
         "texto": "Esperar al cierre del período anual, porque antes de esa fecha no puede calificarse al empleado.",
-        "explicacion": "Incorrecta. La ley prevé una excepción expresa: ante información soportada de desempeño deficiente, puede ordenarse la evaluación inmediata dentro del período."
+        "explicacion": "Incorrecta. La ley prevé una excepción expresa: ante información soportada de desempeño deficiente, puede ordenarse la evaluación inmediata dentro del período, siempre que hayan pasado tres meses desde la última calificación."
       },
       {
         "id": "D",
@@ -1270,13 +1271,14 @@
       }
     ],
     "respuestaCorrecta": "A",
-    "explicacionIA": "Dato decisivo: el jefe del organismo recibe, en medio del período anual, información debidamente soportada de que el desempeño de un empleado de carrera es deficiente. Regla: el art. 38 de la Ley 909 establece la calificación anual, pero permite que en ese caso el jefe ordene, por escrito, la evaluación y calificación inmediata de los servicios del empleado. Conclusión: puede ordenar por escrito la evaluación inmediata; no debe esperar al cierre del período ni declarar la insubsistencia sin evaluación.",
+    "explicacionIA": "Dato decisivo: hay información soportada de desempeño deficiente y ya pasaron más de tres meses desde la última calificación (10 de febrero). Regla: el art. 38 de la Ley 909 permite al jefe del organismo ordenar por escrito la evaluación y calificación inmediata, y el Decreto 1083 (art. 2.2.8.1.4) solo exige que hayan transcurrido tres meses desde la última calificación. Conclusión: el director puede ordenarla en junio.",
     "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
     "autor": "IA",
     "revision": {
       "resolucion_ciega": "coincide",
       "revisor_humano": null,
-      "fecha": "2026-10-10"
+      "fecha": "2026-10-10",
+      "nota": "v2: corregida tras detectar que en marzo no habían pasado los 3 meses que exige el art. 2.2.8.1.4 del Decreto 1083."
     }
   },
   {

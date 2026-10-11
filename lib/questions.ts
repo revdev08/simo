@@ -10,6 +10,9 @@ import procedimientoAdministrativo from '@/data/preguntas/procedimiento-administ
 import atencionCiudadano from '@/data/preguntas/atencion-ciudadano.json'
 import transparenciaArchivo from '@/data/preguntas/transparencia-archivo.json'
 import aptitudes from '@/data/preguntas/aptitudes.json'
+import talentoHumano from '@/data/preguntas/talento-humano.json'
+import contratacionAplicada from '@/data/preguntas/contratacion-aplicada.json'
+import gestionJuridica from '@/data/preguntas/gestion-juridica.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -24,6 +27,9 @@ const BANCO = [
   ...atencionCiudadano,
   ...transparenciaArchivo,
   ...aptitudes,
+  ...talentoHumano,
+  ...contratacionAplicada,
+  ...gestionJuridica,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados

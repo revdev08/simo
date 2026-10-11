@@ -1,0 +1,867 @@
+[
+  {
+    "id": "TC-CAP-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Planeación contractual",
+    "subtema": "Actualización y publicación del Plan Anual de Adquisiciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.1.4.2",
+      "art. 2.2.1.1.1.4.3",
+      "art. 2.2.1.1.1.4.4"
+    ],
+    "texto_fuente": "El Plan Anual de Adquisiciones no obliga a las Entidades Estatales a efectuar los procesos de adquisición que en él se enumeran. [...] La Entidad Estatal debe publicar su Plan Anual de Adquisiciones y las actualizaciones del mismo en su página web y en el SECOP, en la forma que para el efecto disponga Colombia Compra Eficiente. [...] La Entidad Estatal debe actualizar el Plan Anual de Adquisiciones cuando: (i) haya ajustes en los cronogramas de adquisición, valores, modalidad de selección, origen de los recursos; (ii) para incluir nuevas obras, bienes y/o servicios; (iii) excluir obras, bienes y/o servicios; o (iv) modificar el presupuesto anual de adquisiciones.",
+    "pregunta": "En julio de 2026, la Secretaría General de una alcaldía revisa sus compras del año y encuentra dos cambios: ya no necesita el servicio de cafetería, que figuraba en el Plan Anual de Adquisiciones, y debe comprar unos equipos de medición que no estaban en él. Un concejal sostiene que la cafetería debe contratarse de todos modos, porque quedó en el plan. ¿Cómo debe proceder la alcaldía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Puede desistir de la cafetería; actualiza el plan para excluirla e incluir los equipos, y publica el ajuste en la web y en el SECOP.",
+        "explicacion": "Correcta. El plan no obliga a adelantar las compras que enumera (art. 2.2.1.1.1.4.2). Incluir y excluir bienes o servicios obliga a actualizarlo (art. 2.2.1.1.1.4.4), y las actualizaciones se publican en la página web de la entidad y en el SECOP (art. 2.2.1.1.1.4.3)."
+      },
+      {
+        "id": "B",
+        "texto": "Debe contratar la cafetería por estar en el plan; incluye los equipos en el plan del año siguiente, que publica en la web y en el SECOP.",
+        "explicacion": "Incorrecta. El plan no obliga a la entidad a contratar lo que contiene (art. 2.2.1.1.1.4.2). Además, para incluir bienes nuevos no hay que esperar al plan del año siguiente: el plan vigente se actualiza durante el año."
+      },
+      {
+        "id": "C",
+        "texto": "Puede desistir de la cafetería; actualiza el plan solo si cambia el presupuesto total, y publica ese ajuste en la web y en el SECOP.",
+        "explicacion": "Incorrecta. Modificar el presupuesto es solo uno de los supuestos de actualización. Incluir o excluir bienes y servicios también obliga a actualizar el plan (art. 2.2.1.1.1.4.4), aunque el valor total no cambie."
+      },
+      {
+        "id": "D",
+        "texto": "Debe contratar la cafetería por estar en el plan; actualiza el plan para incluir los equipos, y publica el ajuste en la web y en el SECOP.",
+        "explicacion": "Incorrecta. Acierta en que el plan debe actualizarse para incluir los equipos y en dónde se publica el ajuste, pero se equivoca al exigir la contratación de la cafetería: el plan no obliga a hacer las compras que enumera (art. 2.2.1.1.1.4.2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la alcaldía quiere excluir un servicio previsto en el plan e incluir un bien nuevo. Regla: el Plan Anual de Adquisiciones no obliga a hacer las compras que enumera (art. 2.2.1.1.1.4.2); debe actualizarse para incluir o excluir bienes y servicios (art. 2.2.1.1.1.4.4), y las actualizaciones se publican en la página web y en el SECOP (art. 2.2.1.1.1.4.3). Conclusión: puede desistir de la cafetería, pero debe actualizar el plan y publicarlo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-CAP-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Planeación contractual",
+    "subtema": "Contenido mínimo de los estudios previos en la mínima cuantía",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.2.1.1 (modificado por el art. 1 del Decreto 399 de 2021)",
+      "art. 2.2.1.2.1.5.1 (modificado por el art. 5 del Decreto 142 de 2023)"
+    ],
+    "texto_fuente": "6. El análisis de Riesgo y la forma de mitigarlo. 7. Las garantías que la Entidad Estatal contempla exigir en el proceso de contratación. 8. La indicación de sí el proceso de contratación está cobijado por un acuerdo comercial. El presente artículo no es aplicable a la contratación por mínima cuantía [...] La Entidad Estatal debe elaborar unos estudios previos que deben contener, como mínimo, lo siguiente: 1. La descripción de la necesidad que pretende satisfacer con la contratación. 2. La descripción del objeto a contratar identificado con el cuarto nivel del Clasificador de Bienes y Servicios, de ser posible, o de lo contrario con el tercer nivel. 3. Las condiciones técnicas exigidas. 4. El valor estimado del contrato y su justificación. 5. El plazo de ejecución del contrato. 6. El certificado de disponibilidad [...] que respalda la contratación.",
+    "pregunta": "Una profesional de una gobernación elabora los estudios previos de una contratación de mínima cuantía. Para no omitir nada, quiere usar como modelo la lista de contenidos que la entidad aplica a los estudios previos de sus licitaciones. Su jefe le pide ceñirse al contenido mínimo que la norma fija para esta modalidad. ¿Cuál de los siguientes pares hace parte, completo, de ese contenido mínimo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El valor estimado del contrato y el análisis de los riesgos con la forma de mitigarlos.",
+        "explicacion": "Incorrecta. El valor estimado sí es contenido mínimo, pero el análisis de riesgos pertenece a la lista general de estudios previos (art. 2.2.1.1.2.1.1), que no se aplica a la mínima cuantía."
+      },
+      {
+        "id": "B",
+        "texto": "El plazo de ejecución del contrato y el certificado de disponibilidad presupuestal.",
+        "explicacion": "Correcta. El plazo de ejecución y el certificado de disponibilidad presupuestal son los numerales 5 y 6 del art. 2.2.1.2.1.5.1, que fija el contenido mínimo de los estudios previos de la mínima cuantía."
+      },
+      {
+        "id": "C",
+        "texto": "Las condiciones técnicas exigidas y las garantías que la entidad contempla exigir.",
+        "explicacion": "Incorrecta. Las condiciones técnicas sí son contenido mínimo, pero las garantías que se contempla exigir pertenecen a la lista general, que no rige para la mínima cuantía."
+      },
+      {
+        "id": "D",
+        "texto": "La descripción de la necesidad y la indicación de si la cobija un acuerdo comercial.",
+        "explicacion": "Incorrecta. La descripción de la necesidad sí es contenido mínimo, pero la mención de los acuerdos comerciales pertenece a la lista general, que no rige para la mínima cuantía."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la contratación es de mínima cuantía y la profesional quiere usar el modelo de las licitaciones. Regla: la lista general de estudios previos (art. 2.2.1.1.2.1.1, mod. Decreto 399 de 2021) no se aplica a la mínima cuantía; para esta, el art. 2.2.1.2.1.5.1 exige como mínimo la necesidad, el objeto, las condiciones técnicas, el valor estimado, el plazo de ejecución y el certificado de disponibilidad presupuestal. Conclusión: solo el par plazo de ejecución y CDP está completo dentro de ese mínimo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CAP-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Publicidad del proceso",
+    "subtema": "Plazo para publicar en el SECOP los Documentos del Proceso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.1.7.1 inc. 1",
+      "art. 2.2.1.1.1.3.1 (definición de Documentos del Proceso)"
+    ],
+    "texto_fuente": "Documentos del Proceso son: (a) los estudios y documentos previos; (b) el aviso de convocatoria; (c) los pliegos de condiciones o la invitación; (d) las Adendas; (e) la oferta; (f) el informe de evaluación; (g) el contrato; y cualquier otro documento expedido por la Entidad Estatal durante el Proceso de Contratación. [...] La Entidad Estatal está obligada a publicar en el SECOP los Documentos del Proceso y los actos administrativos del Proceso de Contratación, dentro de los tres (3) días siguientes a su expedición.",
+    "pregunta": "Una gobernación adelanta una selección abreviada de menor cuantía para el mantenimiento preventivo de sus sedes. El informe de evaluación de las ofertas se expidió el martes 6 de octubre de 2026, y el contrato con la empresa mejor calificada se firmó el martes 20 de octubre. Para no subir los documentos por partes, la contratista de apoyo que maneja el SECOP propone publicar el informe y el contrato al mismo tiempo. ¿Qué debe responderle el abogado del área?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede publicar los dos juntos, con tal de hacerlo dentro de los tres días siguientes a la firma del contrato.",
+        "explicacion": "Incorrecta. El plazo de tres días no se cuenta para todos los documentos desde la firma del contrato, sino desde la expedición de cada uno. Esperar a la firma haría que el informe del 6 de octubre se publicara dos semanas después de expedido."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede publicar los dos juntos cuando se liquide el contrato, con el informe final de la supervisión.",
+        "explicacion": "Incorrecta. Los Documentos del Proceso se publican dentro de los tres días siguientes a su expedición, no al liquidar el contrato (art. 2.2.1.1.1.7.1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que cada uno se publica dentro de los tres días siguientes a la fecha en que se emitió o se firmó.",
+        "explicacion": "Correcta. El informe de evaluación y el contrato son Documentos del Proceso (art. 2.2.1.1.1.3.1), y cada uno debe publicarse en el SECOP dentro de los tres días siguientes a su expedición (art. 2.2.1.1.1.7.1): el informe, a partir del 6 de octubre, y el contrato, a partir del 20 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "Que publica el informe al expedirlo y el contrato cuando se aprueben la garantía y el registro presupuestal.",
+        "explicacion": "Incorrecta. Confunde la publicación con los requisitos para ejecutar el contrato. El contrato es un Documento del Proceso y se publica dentro de los tres días siguientes a su expedición, sin esperar la aprobación de la garantía ni el registro presupuestal."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el informe de evaluación se expidió el 6 de octubre y el contrato se firmó el 20 de octubre. Regla: el informe de evaluación y el contrato son Documentos del Proceso (art. 2.2.1.1.1.3.1), y la entidad debe publicarlos en el SECOP dentro de los tres días siguientes a su expedición (art. 2.2.1.1.1.7.1). El plazo corre para cada documento desde su propia fecha. Conclusión: no puede esperar para publicarlos juntos; cada uno se publica dentro de los tres días siguientes a su expedición.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CAP-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Publicidad del proceso",
+    "subtema": "Procesos que requieren aviso de convocatoria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.2.1.2",
+      "art. 2.2.1.1.1.7.1 inc. 2"
+    ],
+    "texto_fuente": "En los Procesos de Contratación adelantados bajo las modalidades de selección de mínima cuantía y contratación directa, no es necesaria la expedición y publicación del aviso de convocatoria en el SECOP. [...] La Entidad Estatal está obligada a publicar oportunamente el aviso de convocatoria o la invitación en los Procesos de Contratación de mínima cuantía y el proyecto de pliegos de condiciones en el SECOP",
+    "pregunta": "Una secretaría departamental tiene en preparación cuatro procesos: (1) una licitación para construir un puente; (2) una selección abreviada de menor cuantía para adecuar una sede; (3) una contratación de mínima cuantía para reparar una cubierta; y (4) la contratación directa de un abogado por prestación de servicios profesionales. ¿En cuáles debe expedir y publicar en el SECOP un aviso de convocatoria?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En los cuatro: todo proceso de contratación estatal debe convocarse públicamente en el SECOP.",
+        "explicacion": "Incorrecta. La norma exceptúa del aviso de convocatoria a la mínima cuantía y a la contratación directa."
+      },
+      {
+        "id": "B",
+        "texto": "En el 1, el 2 y el 3; en la contratación directa basta con publicar el contrato que se firme.",
+        "explicacion": "Incorrecta. Acierta en que la contratación directa no lleva aviso, pero la mínima cuantía tampoco: en ella se publica la invitación."
+      },
+      {
+        "id": "C",
+        "texto": "En el 1 y el 3; la selección abreviada se convoca con la sola publicación del pliego de condiciones.",
+        "explicacion": "Incorrecta. La selección abreviada sí requiere aviso de convocatoria. La excepción es para la mínima cuantía y la contratación directa."
+      },
+      {
+        "id": "D",
+        "texto": "En el 1 y el 2; en el 3 se publica la invitación a participar, y en el 4 no hay convocatoria pública.",
+        "explicacion": "Correcta. El aviso de convocatoria no es necesario en la mínima cuantía ni en la contratación directa (art. 2.2.1.1.2.1.2). En la mínima cuantía lo que se publica es la invitación (art. 2.2.1.1.1.7.1). La licitación y la selección abreviada sí lo requieren."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los procesos son de cuatro modalidades distintas. Regla: no es necesario expedir ni publicar aviso de convocatoria en la mínima cuantía ni en la contratación directa (art. 2.2.1.1.2.1.2); en la mínima cuantía se publica la invitación (art. 2.2.1.1.1.7.1). Conclusión: el aviso se publica en la licitación y en la selección abreviada.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CAP-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Pliegos y adendas",
+    "subtema": "Término para observar el proyecto de pliego en la selección abreviada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.2.1.4",
+      "Ley 1150 de 2007, art. 8"
+    ],
+    "texto_fuente": "Los interesados pueden hacer comentarios al proyecto de pliegos de condiciones a partir de la fecha de publicación de los mismos: (a) durante un término de diez (10) días hábiles en la licitación pública; y (b) durante un término de cinco (5) días hábiles en la selección abreviada y el concurso de méritos. [...] Las Entidades deberán publicar las razones por las cuales se acogen o rechazan las observaciones a los proyectos de pliegos.",
+    "pregunta": "El jueves 19 de marzo de 2026, un municipio publicó en el SECOP el proyecto de pliego de condiciones de una selección abreviada de menor cuantía para el mantenimiento de las redes eléctricas de sus sedes. Una empresa envió una observación sobre las especificaciones técnicas el jueves 26 de marzo. El lunes 23 de marzo fue festivo. El comité estructurador propone archivar la observación sin responderla y publicar el pliego definitivo. ¿Qué debe hacer el municipio con la observación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Archivarla, porque el término de cinco días calendario para observar el proyecto venció el 24 de marzo.",
+        "explicacion": "Incorrecta. El término es de días hábiles, no calendario. Contados desde la publicación y sin el festivo del 23 de marzo, los cinco días hábiles no habían vencido el 26."
+      },
+      {
+        "id": "B",
+        "texto": "Estudiarla, porque llegó a tiempo, y publicar las razones por las que la acoge o la rechaza.",
+        "explicacion": "Correcta. En la selección abreviada el proyecto de pliego se puede observar durante cinco días hábiles (art. 2.2.1.1.2.1.4); sin el festivo del 23, el 26 de marzo está dentro del término. Y la entidad debe publicar las razones por las que acoge o rechaza las observaciones (Ley 1150, art. 8)."
+      },
+      {
+        "id": "C",
+        "texto": "Archivarla, porque en esta modalidad las observaciones se reciben dentro de los tres días hábiles siguientes.",
+        "explicacion": "Incorrecta. Tres días hábiles es el término para manifestar interés en la selección abreviada de menor cuantía, no para observar el proyecto de pliego, que es de cinco días hábiles."
+      },
+      {
+        "id": "D",
+        "texto": "Estudiarla, porque llegó a tiempo, y publicar una respuesta motivada solo en caso de acogerla.",
+        "explicacion": "Incorrecta. Acierta en que la observación es oportuna, pero la entidad debe publicar sus razones tanto si acoge como si rechaza las observaciones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: proyecto publicado el jueves 19 de marzo, observación del jueves 26 y festivo el lunes 23. Regla: en la selección abreviada el proyecto de pliego puede observarse durante cinco días hábiles (art. 2.2.1.1.2.1.4), y la entidad debe publicar las razones por las que acoge o rechaza cada observación (Ley 1150, art. 8). Cálculo: el 20, 24, 25 y 26 de marzo son los cuatro primeros días hábiles después de la publicación, así que el término no había vencido. Conclusión: debe estudiarla y publicar una respuesta motivada.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CAP-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Pliegos y adendas",
+    "subtema": "Plazo para publicar adendas fuera de la licitación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.2.2.1"
+    ],
+    "texto_fuente": "La Entidad Estatal puede modificar los pliegos de condiciones a través de Adendas expedidas antes del vencimiento del plazo para presentar ofertas. [...] La Entidad Estatal debe publicar las Adendas en los días hábiles, entre las 7:00 a. m. y las 7:00 p. m., a más tardar el día hábil anterior al vencimiento del plazo para presentar ofertas a la hora fijada para tal presentación, salvo en la licitación pública pues de conformidad con la ley la publicación debe hacerse con tres (3) días de anticipación.",
+    "pregunta": "En una selección abreviada de menor cuantía para adecuar las instalaciones de un colegio, el pliego definitivo de una gobernación fijó el cierre para presentar ofertas el martes 24 de marzo de 2026 a las 3:00 p. m. El lunes 23 de marzo de 2026 fue festivo. El comité técnico debe corregir una especificación del pliego mediante adenda, sin mover la fecha de cierre. ¿Hasta qué momento podía publicar válidamente la adenda?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el viernes 20 de marzo a las 3:00 p. m.",
+        "explicacion": "Correcta. Fuera de la licitación, la adenda se publica a más tardar el día hábil anterior al cierre, a la hora fijada para presentar ofertas. Como el lunes 23 fue festivo, el día hábil anterior al martes 24 es el viernes 20, y la hora límite son las 3:00 p. m."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el viernes 20 de marzo a las 7:00 p. m.",
+        "explicacion": "Incorrecta. Las 7:00 p. m. marcan el horario general de publicación, pero el último día el límite es la hora fijada para el cierre: las 3:00 p. m."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el lunes 23 de marzo a las 3:00 p. m.",
+        "explicacion": "Incorrecta. Toma el lunes 23 como día hábil, pero fue festivo. El día hábil anterior al cierre es el viernes 20."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el miércoles 18 de marzo a las 3:00 p. m.",
+        "explicacion": "Incorrecta. Aplica la anticipación de tres días que la norma reserva para la licitación pública. En la selección abreviada basta con el día hábil anterior al cierre."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el cierre es el martes 24 de marzo a las 3:00 p. m., el lunes 23 fue festivo y el proceso es una selección abreviada. Regla: fuera de la licitación, las adendas se publican en días hábiles, entre las 7:00 a. m. y las 7:00 p. m., a más tardar el día hábil anterior al cierre y a la hora fijada para este (art. 2.2.1.1.2.2.1). Cálculo: el día hábil anterior al 24 es el viernes 20. Conclusión: hasta el viernes 20 de marzo a las 3:00 p. m.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CAP-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Licitación pública",
+    "subtema": "Audiencia de asignación de riesgos y aclaración del pliego",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.1.1.2"
+    ],
+    "texto_fuente": "En la etapa de selección de la licitación son obligatorias las audiencias de: a) asignación de Riesgos, y b) adjudicación. Si a solicitud de un interesado es necesario adelantar una audiencia para precisar el contenido y alcance de los pliegos de condiciones, este tema se tratará en la audiencia de asignación de Riesgos. En la audiencia de asignación de Riesgos, la Entidad Estatal debe presentar el análisis de Riesgos efectuado y hacer la asignación de Riesgos definitiva.",
+    "pregunta": "En una licitación para construir un acueducto veredal, un interesado pidió por escrito a la alcaldía una audiencia para que precise el alcance de las obligaciones ambientales que el pliego impone al contratista. ¿Cómo debe atender la alcaldía esa solicitud?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Convocar una audiencia de aclaración aparte; en la de riesgos hará la asignación definitiva de estos.",
+        "explicacion": "Incorrecta. Acierta en que la asignación definitiva de los riesgos se hace en su audiencia, pero la aclaración del pliego no va en una audiencia aparte: se trata en la de asignación de riesgos."
+      },
+      {
+        "id": "B",
+        "texto": "Tratar el tema en la audiencia de riesgos, en la que se discute una asignación que se fija al adjudicar.",
+        "explicacion": "Incorrecta. Acierta en dónde se trata la aclaración, pero en la audiencia de riesgos la entidad no deja la asignación para después: presenta su análisis y hace la asignación definitiva."
+      },
+      {
+        "id": "C",
+        "texto": "Tratar el tema en la audiencia de riesgos, en la que además hará la asignación definitiva de estos.",
+        "explicacion": "Correcta. Si un interesado pide precisar el contenido y alcance del pliego, el tema se trata en la audiencia de asignación de riesgos, en la que la entidad presenta el análisis de riesgos y hace la asignación definitiva (art. 2.2.1.2.1.1.2)."
+      },
+      {
+        "id": "D",
+        "texto": "Convocar una audiencia de aclaración aparte; la asignación de los riesgos se fijará al adjudicar.",
+        "explicacion": "Incorrecta. No hay una audiencia de aclaración aparte, y la asignación definitiva de los riesgos se hace en su propia audiencia, no en la de adjudicación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en una licitación, un interesado pide una audiencia para precisar el alcance del pliego. Regla: en la licitación son obligatorias las audiencias de asignación de riesgos y de adjudicación; la solicitud de precisar el contenido y alcance del pliego se trata en la audiencia de asignación de riesgos, donde la entidad presenta su análisis y hace la asignación definitiva (art. 2.2.1.2.1.1.2). Conclusión: se atiende en esa audiencia, que además fija la asignación definitiva.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CAP-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Selección abreviada de menor cuantía",
+    "subtema": "Manifestación de interés y sorteo de interesados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.1.2.20 nums. 1 y 2"
+    ],
+    "texto_fuente": "1. En un término no mayor a tres (3) días hábiles contados a partir de la fecha de apertura del Proceso de Contratación los interesados deben manifestar su intención de participar, a través del mecanismo establecido para el efecto en los pliegos de condiciones. 2. Si la Entidad Estatal recibe más de diez (10) manifestaciones de interés puede continuar el proceso o hacer un sorteo para seleccionar máximo diez (10) interesados con quienes continuará el Proceso de Contratación. La Entidad Estatal debe establecer en los pliegos de condiciones si hay lugar a sorteo y la forma en la cual lo hará.",
+    "pregunta": "Una alcaldía abrió el martes 31 de marzo de 2026 una selección abreviada de menor cuantía para el mantenimiento de su parque automotor. El pliego prevé que, si hay lugar a ello, se hará un sorteo por balotas electrónicas. Doce empresas manifestaron su interés el miércoles 1 de abril, y otra lo hizo el lunes 6 de abril a las 9:00 a. m. El jueves 2 y el viernes 3 de abril fueron festivos. ¿Cómo debe continuar el proceso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con sorteo entre doce interesados para escoger a diez, pues la manifestación del 6 de abril fue extemporánea.",
+        "explicacion": "Incorrecta. Cuenta el plazo en días calendario. Los tres días hábiles para manifestar interés no incluyen los festivos del 2 y 3 de abril, así que la manifestación del lunes 6 llegó a tiempo."
+      },
+      {
+        "id": "B",
+        "texto": "Con los trece interesados y sin sorteo, pues este procede cuando hay más de quince manifestaciones.",
+        "explicacion": "Incorrecta. El sorteo procede cuando hay más de diez manifestaciones de interés, y el pliego lo previó. No existe un umbral de quince."
+      },
+      {
+        "id": "C",
+        "texto": "Con sorteo entre doce interesados para escoger a cinco, pues la manifestación del 6 de abril fue extemporánea.",
+        "explicacion": "Incorrecta. Descarta una manifestación oportuna y, además, el sorteo selecciona hasta diez interesados, no cinco."
+      },
+      {
+        "id": "D",
+        "texto": "Con sorteo entre los trece interesados para escoger a diez, pues la manifestación del 6 de abril fue oportuna.",
+        "explicacion": "Correcta. Desde la apertura del 31 de marzo, y sin los festivos del 2 y 3 de abril, el lunes 6 está dentro de los tres días hábiles. Con trece manifestaciones (más de diez) y el sorteo previsto en el pliego, se sortean hasta diez interesados (art. 2.2.1.2.1.2.20)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: apertura el martes 31 de marzo, festivos el 2 y 3 de abril, trece manifestaciones y sorteo previsto en el pliego. Regla: los interesados manifiestan su intención dentro de los tres días hábiles contados desde la apertura, y si hay más de diez manifestaciones la entidad puede sortear máximo diez, según lo que diga el pliego (art. 2.2.1.2.1.2.20). Cálculo: el 1 y el 6 de abril son hábiles, así que el 6 está en término. Conclusión: sorteo entre los trece para escoger a diez.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CAP-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Garantías",
+    "subtema": "Vigencia de los amparos en un contrato de obra",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.3.1.12",
+      "art. 2.2.1.2.3.1.13",
+      "art. 2.2.1.2.3.1.14 (modificado por el art. 3 del Decreto 399 de 2021)",
+      "art. 2.2.1.2.3.1.17"
+    ],
+    "texto_fuente": "La garantía de cumplimiento del contrato debe tener una vigencia mínima hasta la liquidación del contrato. [...] Esta garantía debe estar vigente por el plazo del contrato y tres (3) años más. [...] Esta garantía debe estar vigente por un término no inferior a cinco (5) años contados a partir de la fecha en la cual la Entidad Estatal recibe a satisfacción la obra. [...] La vigencia de esta garantía deberá ser igual al período de ejecución del contrato.",
+    "pregunta": "Un departamento celebró un contrato de obra para construir un aula escolar, con plazo de ejecución del 2 de febrero al 30 de noviembre de 2026, y recibió la obra a satisfacción el 15 de diciembre de 2026. El pliego exigió para cada amparo la vigencia general del reglamento. La supervisora revisa la garantía y encuentra estas vigencias: cumplimiento, hasta la liquidación del contrato; salarios y prestaciones sociales, hasta el 30 de noviembre de 2029; estabilidad y calidad de la obra, hasta el 30 de noviembre de 2031; y responsabilidad civil extracontractual, hasta el 30 de noviembre de 2026. ¿Qué amparo tiene una vigencia insuficiente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de salarios y prestaciones sociales, que debía extenderse hasta el 30 de noviembre de 2031.",
+        "explicacion": "Incorrecta. Aplica a este amparo los cinco años de la estabilidad. El de salarios dura el plazo del contrato y tres años más: hasta el 30 de noviembre de 2029, como figura en la póliza."
+      },
+      {
+        "id": "B",
+        "texto": "El de responsabilidad civil extracontractual, que debía extenderse hasta la liquidación.",
+        "explicacion": "Incorrecta. El seguro de responsabilidad civil extracontractual debe estar vigente por el período de ejecución del contrato, que terminó el 30 de noviembre de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "El de estabilidad y calidad de la obra, que debía extenderse hasta el 15 de diciembre de 2031.",
+        "explicacion": "Correcta. La estabilidad se cuenta desde el recibo a satisfacción, no desde el fin del plazo. Cinco años desde el 15 de diciembre de 2026 llegan al 15 de diciembre de 2031, así que la póliza se queda corta en quince días."
+      },
+      {
+        "id": "D",
+        "texto": "El de cumplimiento, que debía extenderse hasta tres años después de la liquidación del contrato.",
+        "explicacion": "Incorrecta. El amparo de cumplimiento debe estar vigente como mínimo hasta la liquidación, y así figura. Los tres años adicionales corresponden al amparo de salarios y se suman al plazo del contrato."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el plazo terminó el 30 de noviembre de 2026, pero la obra se recibió a satisfacción el 15 de diciembre. Regla: cumplimiento, hasta la liquidación (art. 2.2.1.2.3.1.12); salarios, el plazo más tres años (art. 2.2.1.2.3.1.13); estabilidad, mínimo cinco años desde el recibo a satisfacción (art. 2.2.1.2.3.1.14); responsabilidad extracontractual, el período de ejecución (art. 2.2.1.2.3.1.17). Cálculo: la estabilidad debía llegar al 15 de diciembre de 2031. Conclusión: ese amparo es insuficiente.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CAP-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Mínima cuantía",
+    "subtema": "Cronograma de la invitación y aceptación de la oferta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.1.5.2 nums. 3, 4 y 6 (modificado por el art. 2 del Decreto 1860 de 2021)"
+    ],
+    "texto_fuente": "3. La invitación se publicará por un término no inferior a un (1) día hábil para que los interesados se informen de su contenido y formulen observaciones o comentarios, los cuales serán contestados por la Entidad Estatal antes del inicio del plazo para presentar ofertas. [...] iii) El momento en que publicará un aviso en el SECOP precisando si el proceso efectivamente se limitó a Mipyme o si podrá participar cualquier otro interesado. iv) Finalmente, se dispondrá un término adicional dentro del cual los proponentes podrán presentar sus ofertas, el cual será de mínimo un (1) día hábil luego de publicado el aviso en que se informe si el proceso se limita o no a Mipyme. [...] 6. La Entidad Estatal debe publicar el informe de evaluación durante mínimo un (1) día hábil, para que durante este término los oferentes presenten las observaciones que deberán ser respondidas por la Entidad Estatal antes de realizar la aceptación de la oferta seleccionada.",
+    "pregunta": "Una personería municipal adelanta una contratación de mínima cuantía para reparar el cielo raso de su sede, con este cronograma: publicación de la invitación, lunes 4 de mayo de 2026; observaciones a la invitación, hasta el martes 5 de mayo; respuestas y aviso sobre la limitación a Mipyme, miércoles 6 de mayo; cierre para presentar ofertas, viernes 8 de mayo a las 10:00 a. m.; publicación del informe de evaluación, lunes 11 de mayo a las 8:00 a. m.; y aceptación de la oferta, lunes 11 de mayo a las 4:00 p. m. En esas fechas no hubo festivos. ¿Qué etapa del cronograma incumple las reglas de la mínima cuantía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La invitación, porque debía quedar publicada al menos cinco días hábiles antes del cierre.",
+        "explicacion": "Incorrecta. En la mínima cuantía la invitación se publica por un término no inferior a un día hábil para observaciones. Los cinco días hábiles corresponden al proyecto de pliego en la selección abreviada y el concurso de méritos."
+      },
+      {
+        "id": "B",
+        "texto": "El cierre, porque entre el aviso sobre Mipyme y el cierre debían mediar tres días hábiles.",
+        "explicacion": "Incorrecta. Entre el aviso sobre Mipyme y el cierre debe haber mínimo un día hábil, y lo hay: el jueves 7 de mayo."
+      },
+      {
+        "id": "C",
+        "texto": "El aviso sobre Mipyme, porque debía publicarse con la invitación y no después de las observaciones.",
+        "explicacion": "Incorrecta. Las solicitudes para limitar el proceso a Mipyme se reciben durante el término de observaciones, y después se publica el aviso que informa si el proceso se limitó o no."
+      },
+      {
+        "id": "D",
+        "texto": "La aceptación, porque el informe debía estar publicado un día hábil completo antes de ella.",
+        "explicacion": "Correcta. El informe de evaluación se publica durante mínimo un día hábil, y las observaciones a él se responden antes de aceptar la oferta. Publicarlo a las 8:00 a. m. y aceptar la oferta a las 4:00 p. m. del mismo día no cumple ese término."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el informe de evaluación se publicó y la oferta se aceptó el mismo lunes 11 de mayo. Regla: la invitación se publica por no menos de un día hábil; entre el aviso sobre Mipyme y el cierre debe haber mínimo un día hábil; y el informe de evaluación se publica durante mínimo un día hábil, y sus observaciones se responden antes de aceptar la oferta (art. 2.2.1.2.1.5.2, mod. Decreto 1860 de 2021). Conclusión: falla la aceptación.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CAP-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Mínima cuantía",
+    "subtema": "Verificación de la oferta de menor precio y oportunidad para subsanar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.1.5.2 nums. 5 y 7 (modificado por el art. 2 del Decreto 1860 de 2021)"
+    ],
+    "texto_fuente": "5. La Entidad Estatal debe revisar las ofertas económicas y verificar que la de menor precio cumple con las condiciones de la invitación. Si esta no cumple, la Entidad Estatal debe verificar el cumplimento de los requisitos de la invitación de la oferta con el segundo mejor precio, y así sucesivamente. Lo anterior sin perjuicio de la oportunidad que deberán otorgar las Entidades Estatales para subsanar las ofertas, en los términos del artículo 5 de la Ley 1150 de 2007, para lo cual establecerán un término preclusivo en la invitación para recibir los documentos subsanables, frente a cada uno de los requerimientos. En caso de que no se establezca este término, los proponentes podrán subsanar sus ofertas hasta antes de que finalice el traslado del informe de evaluación. [...] 7. La Entidad Estatal debe aceptar la oferta de menor precio, siempre que cumpla con las condiciones establecidas en la invitación a participar en procesos de mínima cuantía.",
+    "pregunta": "Una contraloría departamental adelanta una contratación de mínima cuantía para el mantenimiento de sus aires acondicionados y recibe tres ofertas: $18,9 millones, $19,6 millones y $21,4 millones. La invitación no fijó un término para subsanar. El informe de evaluación, publicado el martes con traslado hasta el miércoles a las 5:00 p. m., señaló que a la oferta de $18,9 millones le faltaba el certificado de existencia y representación legal y que la de $19,6 millones cumplía todo. El miércoles a las 9:00 a. m., el oferente de $18,9 millones envió el certificado, expedido antes del cierre. ¿Qué debe hacer la contraloría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Revisar el certificado, porque llegó dentro del traslado, y aceptar la oferta de $18,9 millones si con él cumple.",
+        "explicacion": "Correcta. Como la invitación no fijó un término para subsanar, el oferente podía hacerlo hasta antes de que terminara el traslado del informe, y lo hizo. Si con el certificado cumple, su oferta es la de menor precio que cumple las condiciones y debe aceptarse."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptar la oferta de $19,6 millones, porque los documentos faltantes podían aportarse hasta el cierre.",
+        "explicacion": "Incorrecta. En la mínima cuantía se debe dar oportunidad de subsanar. Si la invitación no fija término, se puede subsanar hasta antes de que termine el traslado del informe, no solo hasta el cierre."
+      },
+      {
+        "id": "C",
+        "texto": "Revisar el certificado y luego comparar las tres ofertas por calidad y precio para escoger la más favorable.",
+        "explicacion": "Incorrecta. En la mínima cuantía no se ponderan calidad y precio: se acepta la oferta de menor precio que cumpla las condiciones de la invitación."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazar el certificado, porque sin un término fijado en la invitación no había oportunidad de subsanar.",
+        "explicacion": "Incorrecta. La falta de un término en la invitación no elimina la oportunidad de subsanar: en ese caso se puede subsanar hasta antes de que termine el traslado del informe de evaluación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la invitación no fijó término para subsanar y el oferente de menor precio entregó el documento faltante durante el traslado del informe. Regla: en la mínima cuantía se verifica primero la oferta de menor precio; si la invitación no fija término, se puede subsanar hasta antes de que termine el traslado del informe; y se acepta la oferta de menor precio que cumpla (art. 2.2.1.2.1.5.2 nums. 5 y 7). Conclusión: debe revisar el certificado y, si la oferta cumple, aceptar la de $18,9 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CAP-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Garantías",
+    "subtema": "Garantía de seriedad en el concurso de méritos y su efectividad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.3.1.6 num. 3",
+      "art. 2.2.1.2.3.1.9 inc. 3",
+      "art. 2.2.1.2.3.2.8"
+    ],
+    "texto_fuente": "3. La no suscripción del contrato sin justa causa por parte del adjudicatario. [...] El valor de la garantía de seriedad de la oferta que presenten los proponentes en la subasta inversa y en el concurso de méritos debe ser equivalente al diez por ciento (10%) del presupuesto oficial estimado del Proceso de Contratación. [...] En caso de siniestro en la garantía de la seriedad de la oferta, la compañía de seguros debe responder por el total del valor asegurado a título de sanción.",
+    "pregunta": "Un departamento abrió un concurso de méritos para contratar la interventoría de una vía, con un presupuesto oficial estimado de $850 millones. La firma X ofreció $790 millones y aportó una póliza de seriedad por $79 millones; la firma Y ofreció $840 millones y aportó una por $85 millones. Y resultó adjudicataria, pero no firmó el contrato ni dio justificación alguna. Los perjuicios que el departamento logró probar suman $30 millones. ¿Cuál de las pólizas tenía el valor exigido y cuánto debe pagar la aseguradora de Y?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambas, al cubrir el 10% de cada oferta; la aseguradora debe pagar los $30 millones de perjuicios probados.",
+        "explicacion": "Incorrecta. En el concurso de méritos la seriedad se calcula sobre el presupuesto oficial, no sobre la oferta. Y en el siniestro de esta garantía la aseguradora no se limita a pagar los perjuicios probados."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la de Y; la aseguradora debe pagar los $85 millones asegurados, a título de sanción.",
+        "explicacion": "Correcta. En el concurso de méritos la seriedad equivale al 10% del presupuesto oficial: $85 millones, y la póliza de X ($79 millones) no alcanza. No firmar sin justa causa es un riesgo cubierto, y la aseguradora responde por el total asegurado a título de sanción."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la de Y; la aseguradora debe pagar los $30 millones de perjuicios probados, no más.",
+        "explicacion": "Incorrecta. Acierta en la suficiencia, pero en el siniestro de la seriedad la aseguradora paga el total del valor asegurado como sanción, no solo los perjuicios probados."
+      },
+      {
+        "id": "D",
+        "texto": "Ambas, al cubrir el 10% de cada oferta; la aseguradora debe pagar los $85 millones asegurados.",
+        "explicacion": "Incorrecta. Acierta en lo que paga la aseguradora, pero la póliza de X es insuficiente: en el concurso de méritos el 10% se calcula sobre el presupuesto oficial ($85 millones), no sobre la oferta."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: es un concurso de méritos con presupuesto oficial de $850 millones, y el adjudicatario no firmó sin justa causa. Regla: en el concurso de méritos la seriedad equivale al 10% del presupuesto oficial (art. 2.2.1.2.3.1.9); la no suscripción sin justa causa es un riesgo cubierto (art. 2.2.1.2.3.1.6 num. 3), y en el siniestro la aseguradora responde por el total asegurado a título de sanción (art. 2.2.1.2.3.2.8). Cálculo: 10% de $850 millones = $85 millones. Conclusión: solo la póliza de Y es suficiente, y su aseguradora paga $85 millones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CAP-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Contratación directa",
+    "subtema": "Acto administrativo de justificación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.1.4.1",
+      "art. 2.2.1.2.1.4.4"
+    ],
+    "texto_fuente": "La Entidad Estatal debe señalar en un acto administrativo la justificación para contratar bajo la modalidad de contratación directa, el cual debe contener: 1. La causal que invoca para contratar directamente. [...] Este acto administrativo no es necesario cuando el contrato a celebrar es de prestación de servicios profesionales y de apoyo a la gestión, y para los contratos de que tratan los literales (a) y (b) del artículo 2.2.1.2.1.4.3 del presente decreto. [...] La modalidad de selección para la contratación entre Entidades Estatales es la contratación directa; y en consecuencia, le es aplicable lo establecido en el artículo 2.2.1.2.1.4.1 del presente decreto.",
+    "pregunta": "Una gobernación prepara cuatro contratos por contratación directa: (1) un convenio interadministrativo con una universidad pública para capacitar a sus docentes; (2) la compra de licencias de un software a la única empresa titular de sus derechos de autor; (3) un contrato con un abogado para apoyar a la oficina jurídica en la sustanciación de respuestas a tutelas; y (4) el arrendamiento de una bodega para el archivo. ¿Para cuál de ellos NO debe expedir el acto administrativo de justificación de la contratación directa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 1, porque entre entidades estatales ese acto de justificación se omite.",
+        "explicacion": "Incorrecta. La norma dice expresamente que a la contratación entre entidades estatales se le aplica el artículo del acto de justificación."
+      },
+      {
+        "id": "B",
+        "texto": "El 2, porque basta con que la exclusividad conste en el estudio previo.",
+        "explicacion": "Incorrecta. La exclusividad debe constar en el estudio previo, pero eso no reemplaza el acto de justificación, que sigue siendo necesario."
+      },
+      {
+        "id": "C",
+        "texto": "El 4, porque al arrendar basta con verificar el mercado inmobiliario.",
+        "explicacion": "Incorrecta. Verificar las condiciones del mercado inmobiliario es una regla adicional para arrendar, no una excepción al acto de justificación."
+      },
+      {
+        "id": "D",
+        "texto": "El 3, porque es un contrato de prestación de servicios profesionales.",
+        "explicacion": "Correcta. El acto administrativo de justificación no es necesario en los contratos de prestación de servicios profesionales y de apoyo a la gestión (art. 2.2.1.2.1.4.1). Los demás contratos directos lo requieren, incluido el convenio interadministrativo (art. 2.2.1.2.1.4.4)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el contrato 3 es de apoyo profesional a la oficina jurídica. Regla: la contratación directa exige un acto administrativo de justificación, salvo en la prestación de servicios profesionales y de apoyo a la gestión y en los casos de los literales a y b del art. 2.2.1.2.1.4.3 (art. 2.2.1.2.1.4.1); la contratación entre entidades estatales sí lo requiere (art. 2.2.1.2.1.4.4). Conclusión: solo el contrato 3 puede celebrarse sin ese acto.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CAP-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Contratación directa",
+    "subtema": "Prestación de servicios profesionales: idoneidad y garantías",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.1.4.9",
+      "art. 2.2.1.2.1.4.5"
+    ],
+    "texto_fuente": "Las Entidades Estatales pueden contratar bajo la modalidad de contratación directa la prestación de servicios profesionales y de apoyo a la gestión con la persona natural o jurídica que esté en capacidad de ejecutar el objeto del contrato, siempre y cuando la Entidad Estatal verifique la idoneidad o experiencia requerida y relacionada con el área de que se trate. En este caso, no es necesario que la Entidad Estatal haya obtenido previamente varias ofertas, de lo cual el ordenador del gasto debe dejar constancia escrita. [...] En la contratación directa la exigencia de garantías establecidas en la Sección 3, que comprende los artículos 2.2.1.2.3.1.1 al 2.2.1.2.3.5.1.del presente decreto no es obligatoria y la justificación para exigirlas o no debe estar en los estudios y documentos previos.",
+    "pregunta": "La Secretaría de Salud de un municipio necesita una psicóloga durante seis meses para apoyar un programa de salud mental. La jefe de contratación propone pedir cotizaciones a tres psicólogas para contratar a la que cobre menos, y exigir póliza de cumplimiento porque, según ella, ningún contrato puede firmarse sin garantía. ¿Qué debe responderle la oficina jurídica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No necesita cotizaciones, pero sí verificar su idoneidad; la póliza es opcional y se justifica en los estudios previos.",
+        "explicacion": "Correcta. En la prestación de servicios profesionales no hace falta obtener varias ofertas, pero sí verificar la idoneidad o experiencia relacionada con el área (art. 2.2.1.2.1.4.9). En la contratación directa las garantías no son obligatorias, y la decisión de exigirlas o no se justifica en los estudios previos (art. 2.2.1.2.1.4.5)."
+      },
+      {
+        "id": "B",
+        "texto": "Necesita las tres cotizaciones para elegir el menor precio; la póliza es opcional y se justifica en los estudios previos.",
+        "explicacion": "Incorrecta. Acierta sobre la póliza, pero la norma no exige obtener varias ofertas: el criterio es la idoneidad o experiencia, y el ordenador del gasto deja constancia escrita de ello."
+      },
+      {
+        "id": "C",
+        "texto": "No necesita cotizaciones, pero sí verificar su idoneidad; la póliza de cumplimiento es obligatoria en cualquier contrato.",
+        "explicacion": "Incorrecta. Acierta sobre las cotizaciones, pero en la contratación directa las garantías no son obligatorias: la entidad decide y lo justifica en los estudios previos."
+      },
+      {
+        "id": "D",
+        "texto": "Necesita las tres cotizaciones para elegir el menor precio; la póliza de cumplimiento es obligatoria en cualquier contrato.",
+        "explicacion": "Incorrecta. En esta contratación no hacen falta varias ofertas, y en la contratación directa la póliza no es obligatoria."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se contratará directamente a una profesional para apoyar un programa de la secretaría. Regla: en la prestación de servicios profesionales basta verificar la idoneidad o experiencia, sin obtener varias ofertas, con constancia escrita del ordenador del gasto (art. 2.2.1.2.1.4.9); y en la contratación directa las garantías no son obligatorias, y la decisión de exigirlas se justifica en los estudios previos (art. 2.2.1.2.1.4.5). Conclusión: no se requieren cotizaciones y la póliza es opcional.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-CAP-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Garantías",
+    "subtema": "Suficiencia de los amparos de un contrato de obra",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.3.1.10",
+      "art. 2.2.1.2.3.1.12",
+      "art. 2.2.1.2.3.1.13",
+      "art. 2.2.1.2.3.1.17 nums. 2 y 3"
+    ],
+    "texto_fuente": "El valor de esta garantía debe ser el ciento por ciento (100%) de la suma establecida como anticipo, ya sea este en dinero o en especie. [...] El valor de esta garantía debe ser de por lo menos el diez por ciento (10%) del valor del contrato a menos que el valor del contrato sea superior a un millón (1.000.000) de SMMLV [...] El valor de la garantía no puede ser inferior al cinco por ciento (5%) del valor total del contrato. [...] 2. Trescientos (300) SMMLV para contratos cuyo valor sea superior a mil quinientos (1.500) SMMLV e inferior o igual a dos mil quinientos (2.500) SMMLV. 3. Cuatrocientos (400) SMMLV para contratos cuyo valor sea superior a dos mil quinientos (2.500) SMMLV e inferior o igual a cinco mil (5.000) SMMLV.",
+    "pregunta": "Un distrito adjudicó un contrato de obra por $3.600 millones, con un anticipo del 20% del valor del contrato. Para el caso, tome un SMMLV de $1.800.000. El contratista presentó estos valores asegurados: cumplimiento, $360 millones; buen manejo y correcta inversión del anticipo, $720 millones; pago de salarios y prestaciones sociales, $180 millones; y responsabilidad civil extracontractual, $360 millones. ¿Cuál de esos valores es insuficiente y cuál es el mínimo exigido?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de salarios y prestaciones sociales, que debía ser de al menos $360 millones.",
+        "explicacion": "Incorrecta. El amparo de salarios no puede ser inferior al 5% del valor total del contrato: $180 millones, que es lo presentado. El 10% es el mínimo del amparo de cumplimiento."
+      },
+      {
+        "id": "B",
+        "texto": "El de responsabilidad civil extracontractual, que debía ser de por lo menos $540 millones.",
+        "explicacion": "Correcta. El contrato equivale a 2.000 SMMLV ($3.600 millones / $1.800.000). Está entre 1.500 y 2.500 SMMLV, así que el seguro de responsabilidad extracontractual debe ser de al menos 300 SMMLV: $540 millones. Los $360 millones presentados equivalen a 200 SMMLV."
+      },
+      {
+        "id": "C",
+        "texto": "El del anticipo, que debía cubrir el valor total del contrato: $3.600 millones.",
+        "explicacion": "Incorrecta. El amparo del anticipo debe ser el 100% de la suma entregada como anticipo ($720 millones, que es lo presentado), no el 100% del valor del contrato."
+      },
+      {
+        "id": "D",
+        "texto": "El de responsabilidad civil extracontractual, que debía ser de al menos $720 millones.",
+        "explicacion": "Incorrecta. Identifica el amparo insuficiente, pero aplica el tramo de 400 SMMLV, que corresponde a contratos de más de 2.500 y hasta 5.000 SMMLV. Este contrato vale 2.000 SMMLV."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el contrato vale $3.600 millones, equivalentes a 2.000 SMMLV, con un anticipo de $720 millones. Regla: anticipo, el 100% de lo anticipado (art. 2.2.1.2.3.1.10); cumplimiento, mínimo el 10% del contrato (art. 2.2.1.2.3.1.12); salarios, mínimo el 5% (art. 2.2.1.2.3.1.13); responsabilidad extracontractual, mínimo 300 SMMLV para contratos de más de 1.500 y hasta 2.500 SMMLV (art. 2.2.1.2.3.1.17). Cálculo: $360, $720 y $180 millones cumplen; la responsabilidad extracontractual debía ser 300 × $1.800.000 = $540 millones. Conclusión: ese valor es insuficiente.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CAP-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "contratacion",
+    "modulo": "Contratación Estatal Aplicada",
+    "tema": "Registro Único de Proponentes",
+    "subtema": "Renovación del RUP y permanencia de las multas en el certificado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.1.5.1 inc. 2",
+      "art. 2.2.1.1.1.5.7"
+    ],
+    "texto_fuente": "La persona inscrita en el RUP debe presentar la información para renovar su registro a más tardar el quinto día hábil del mes de abril de cada año. De lo contrario cesan los efectos del RUP. [...] La información relativa a multas debe permanecer en el certificado del RUP por un año, contado a partir de la publicación de la misma.",
+    "pregunta": "El 4 de mayo de 2026, el comité evaluador de una licitación revisa los documentos de una sociedad proponente. La sociedad radicó la renovación de su RUP el miércoles 8 de abril de 2026; el jueves 2 y el viernes 3 de abril fueron festivos. Además, la información de una multa que le impuso un municipio se publicó en el RUP el 15 de febrero de 2025, y el comité advierte que ya no aparece en el certificado. ¿Qué debe concluir el comité sobre el RUP y sobre la multa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El RUP perdió efectos, pues el plazo vencía el martes 7 de abril; la multa debía figurar por tres años.",
+        "explicacion": "Incorrecta en ambos puntos. Cuenta como hábiles el 2 y el 3 de abril, que fueron festivos, y atribuye a la multa una permanencia de tres años: la norma fija un año desde su publicación."
+      },
+      {
+        "id": "B",
+        "texto": "El RUP perdió efectos, pues el plazo vencía el martes 7 de abril; la multa debía figurar por un año.",
+        "explicacion": "Incorrecta. Acierta sobre la multa, pero no sobre el RUP: sin los festivos del 2 y 3 de abril, el quinto día hábil fue el jueves 9, así que la renovación del miércoles 8 fue oportuna."
+      },
+      {
+        "id": "C",
+        "texto": "El RUP conserva efectos, pues el plazo vencía el jueves 9 de abril; la multa debía figurar por un año.",
+        "explicacion": "Correcta. Los días hábiles de abril de 2026 fueron el 1, 6, 7, 8 y 9, así que el plazo para renovar vencía el jueves 9 y la renovación del 8 fue oportuna. La multa permanece en el certificado un año desde su publicación, es decir, hasta el 15 de febrero de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "El RUP conserva efectos, pues el plazo vencía el jueves 9 de abril; la multa debía figurar por tres años.",
+        "explicacion": "Incorrecta. Acierta sobre el RUP, pero la información de multas permanece en el certificado un año desde su publicación, no tres. En mayo de 2026 ya no tenía que figurar."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la sociedad renovó el 8 de abril de 2026, con festivos el 2 y el 3, y la multa se publicó el 15 de febrero de 2025. Regla: el RUP se renueva a más tardar el quinto día hábil de abril, o cesan sus efectos (art. 2.2.1.1.1.5.1); la información de multas permanece un año desde su publicación (art. 2.2.1.1.1.5.7). Cálculo: el quinto día hábil fue el jueves 9 de abril, y la multa debía figurar hasta el 15 de febrero de 2026. Conclusión: el RUP conserva sus efectos y la multa ya no debe aparecer.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  }
+]

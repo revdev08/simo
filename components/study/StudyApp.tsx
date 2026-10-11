@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, BarChart3, FlaskConical, Scale, Users, Clock, Lightbulb } from 'lucide-react'
 import Link from 'next/link'
-import { MODULE_SECTIONS, NIVELES, isJuicioSituacional, sectionOf, type NivelId, type Question, type SectionId } from '@/lib/question-types'
+import { AREAS_FUNCIONALES, MODULE_SECTIONS, NIVELES, isJuicioSituacional, sectionOf, type AreaId, type NivelId, type Question, type SectionId } from '@/lib/question-types'
 import ReportQuestion from './ReportQuestion'
 import QuestionText from './QuestionText'
 import SimulacroSession, { clearSimulacroState, formatDuration, loadSimulacroState, type SimulacroState } from './SimulacroSession'
@@ -86,8 +86,21 @@ const SIMULACRO_OPCIONES = [
   { n: 80, label: 'Completo' },
 ] as const
 const MINUTOS_POR_PREGUNTA = 2
-const PESO_SECCION: Record<SectionId, number> = { generales: 0.6, aptitudes: 0.15, comportamentales: 0.25 }
-const ORDEN_SECCIONES: SectionId[] = ['generales', 'aptitudes', 'comportamentales']
+// Sin área funcional el simulacro no incluye preguntas funcionales; con área, entran las de esa área
+const PESO_SIN_AREA: Record<SectionId, number> = { generales: 0.6, funcionales: 0, aptitudes: 0.15, comportamentales: 0.25 }
+const PESO_CON_AREA: Record<SectionId, number> = { generales: 0.45, funcionales: 0.2, aptitudes: 0.15, comportamentales: 0.2 }
+const ORDEN_SECCIONES: SectionId[] = ['generales', 'funcionales', 'aptitudes', 'comportamentales']
+const AREA_STORAGE_KEY = 'simo_area'
+
+function readSavedArea(): AreaId | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const saved = localStorage.getItem(AREA_STORAGE_KEY)
+    return AREAS_FUNCIONALES.some((a) => a.id === saved) ? (saved as AreaId) : null
+  } catch {
+    return null
+  }
+}
 
 function shuffle<T>(items: T[]): T[] {
   const a = [...items]
@@ -99,11 +112,15 @@ function shuffle<T>(items: T[]): T[] {
 }
 
 // Arma el simulacro por secciones (generales, aptitudes y comportamentales), solo con preguntas aptas
-function buildSimulacro(pool: Question[], n: number): Question[] {
+function buildSimulacro(allPool: Question[], n: number, area: AreaId | null): Question[] {
+  const areaModulo = AREAS_FUNCIONALES.find((a) => a.id === area)?.modulo
+  // Las funcionales solo entran si son del área elegida
+  const pool = allPool.filter((q) => sectionOf(q.modulo) !== 'funcionales' || q.modulo === areaModulo)
+  const pesos = areaModulo ? PESO_CON_AREA : PESO_SIN_AREA
   const bySection = Object.fromEntries(ORDEN_SECCIONES.map((s) => [s, shuffle(pool.filter((q) => sectionOf(q.modulo) === s))])) as Record<SectionId, Question[]>
   const picked: Question[] = []
   ORDEN_SECCIONES.forEach((s) => {
-    picked.push(...bySection[s].slice(0, Math.round(n * PESO_SECCION[s])))
+    picked.push(...bySection[s].slice(0, Math.round(n * pesos[s])))
   })
   // Si a una sección le faltan preguntas, se completa con las de las demás
   if (picked.length < n) {
@@ -122,6 +139,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   const [progress, setProgress] = useState<ProgressData>({})
   const [isLoaded, setIsLoaded] = useState(false)
   const [nivel, setNivel] = useState<NivelId | null>(readSavedNivel)
+  const [area, setArea] = useState<AreaId | null>(readSavedArea)
   // Módulo que se abrirá cuando el usuario elija su nivel
   const [pendingModule, setPendingModule] = useState<string | null>(null)
 
@@ -212,7 +230,7 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
   const simulacroPool = visibleQuestions.filter((q) => !q.fundamentos)
 
   const startSimulacro = (n: number) => {
-    const picked = buildSimulacro(simulacroPool, n)
+    const picked = buildSimulacro(simulacroPool, n, area)
     const state: SimulacroState = {
       ids: picked.map((q) => String(q.id)),
       answers: {},
@@ -271,6 +289,14 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
     const shuffled = [...modQs].sort(() => 0.5 - Math.random())
     setActiveModuleQuestions(shuffled)
     setActiveModule(modName)
+  }
+
+  const chooseArea = (a: AreaId | null) => {
+    setArea(a)
+    try {
+      if (a) localStorage.setItem(AREA_STORAGE_KEY, a)
+      else localStorage.removeItem(AREA_STORAGE_KEY)
+    } catch {}
   }
 
   const chooseNivel = (n: NivelId) => {
@@ -375,8 +401,27 @@ export default function StudyApp({ questions }: { questions: Question[] }) {
           <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">Simulacro tipo examen</h3>
           <p className="text-slate-500 dark:text-slate-400 max-w-xl text-sm sm:text-base leading-relaxed">
             Con cronómetro ({MINUTOS_POR_PREGUNTA} minutos por pregunta) y sin ver las respuestas hasta el final, como en la prueba real.
-            Mezcla competencias generales, aptitudes y comportamentales{nivel ? ` de tu nivel (${nivelLabel(nivel)})` : ''}, y al terminar te muestra tu resultado por módulo.
+            Mezcla competencias generales, aptitudes y comportamentales{nivel ? ` de tu nivel (${nivelLabel(nivel)})` : ''}
+            {area ? `, más preguntas del área de ${AREAS_FUNCIONALES.find((a) => a.id === area)?.label.toLowerCase()}` : ''}, y al terminar te muestra tu resultado por módulo.
           </p>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1" role="group" aria-label="Área funcional de tu cargo">
+            <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Área de tu cargo (opcional):</span>
+            {[{ id: null, label: 'Ninguna' }, ...AREAS_FUNCIONALES].map((a) => (
+              <button
+                key={a.id ?? 'ninguna'}
+                type="button"
+                aria-pressed={area === a.id}
+                onClick={() => chooseArea(a.id as AreaId | null)}
+                className={`px-3 py-1 rounded-lg text-xs font-bold border transition-colors ${
+                  area === a.id
+                    ? 'bg-indigo-600 border-indigo-600 text-white'
+                    : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-indigo-500'
+                }`}
+              >
+                {a.label}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0">
           {SIMULACRO_OPCIONES.map((op, i) => (
