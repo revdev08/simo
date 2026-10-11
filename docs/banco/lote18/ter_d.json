@@ -1,0 +1,907 @@
+[
+  {
+    "id": "TC-TER-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Presupuesto territorial",
+    "subtema": "Incorporación por decreto de recursos de cofinanciación y aviso al concejo",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994 y Decreto 111 de 1996",
+    "articulos": [
+      "Ley 136 de 1994, art. 91 lit. g (modificado por el art. 29 de la Ley 1551 de 2012)",
+      "Decreto 111 de 1996, art. 15 inc. 2",
+      "Decreto 111 de 1996, art. 109 inc. 1"
+    ],
+    "texto_fuente": "g) Incorporar dentro del presupuesto municipal, mediante decreto, los recursos que haya recibido el tesoro municipal como cofinanciación de proyectos provenientes de las entidades nacionales o departamentales, o de cooperación internacional y adelantar su respectiva ejecución. [...] Una vez el ejecutivo incorpore estos recursos deberá informar al Concejo Municipal dentro de los diez (10) días siguientes. [...] En consecuencia, ninguna autoridad podrá efectuar gastos públicos, erogaciones con cargo al Tesoro o transferir crédito alguno, que no figuren en el presupuesto [...] Mientras se expiden estas normas, se aplicará la Ley Orgánica del Presupuesto en lo que fuere pertinente.",
+    "pregunta": "El 3 de agosto de 2026 entraron a la tesorería de un municipio $450 millones que la gobernación giró para cofinanciar la construcción de una placa huella en una vereda, según un convenio ya firmado. Esos recursos no estaban en el presupuesto municipal de 2026, y el estatuto de presupuesto del municipio no trae una regla especial para ellos. El secretario de Infraestructura le pide a la técnica de presupuesto que expida ese mismo día el certificado de disponibilidad para abrir el proceso de contratación. ¿Qué debe hacer la técnica antes de expedir el certificado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proyectar el decreto con el que el alcalde los suma al presupuesto, con la comunicación al concejo dentro de los diez días siguientes.",
+        "explicacion": "Correcta. El art. 91, lit. g, de la Ley 136 (mod. art. 29 de la Ley 1551 de 2012) faculta al alcalde para incorporar mediante decreto los recursos recibidos como cofinanciación de entidades nacionales o departamentales, y le ordena informar al concejo dentro de los 10 días siguientes. Mientras no estén en el presupuesto, no hay apropiación que certificar (art. 15 del Decreto 111)."
+      },
+      {
+        "id": "B",
+        "texto": "Proyectar el decreto con el que el alcalde los suma al presupuesto, y reportarlos al concejo en el informe de ejecución de fin de año.",
+        "explicacion": "Incorrecta. Acierta en el instrumento (decreto del alcalde), pero el informe al concejo no puede esperar al cierre: la ley exige hacerlo dentro de los 10 días siguientes a la incorporación."
+      },
+      {
+        "id": "C",
+        "texto": "Proyectar un acuerdo de adición para que el concejo los incorpore, y expedir el certificado solo cuando el acuerdo se sancione.",
+        "explicacion": "Incorrecta. Aplica la regla general de las adiciones presupuestales, pero para los recursos de cofinanciación ya recibidos la ley da al alcalde la facultad de incorporarlos por decreto, sin acuerdo previo del concejo."
+      },
+      {
+        "id": "D",
+        "texto": "Proyectar un acuerdo de adición y pedir que el concejo lo apruebe dentro de los diez días siguientes a su radicación.",
+        "explicacion": "Incorrecta. No se necesita acuerdo, y los 10 días no son un plazo para que el concejo apruebe nada: son el término que tiene el alcalde para informarle la incorporación que hizo por decreto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los $450 millones son cofinanciación de la gobernación, ya están en la tesorería y no figuran en el presupuesto. Regla: el art. 91, lit. g, de la Ley 136 (mod. Ley 1551 de 2012) permite al alcalde incorporarlos mediante decreto y le exige informar al concejo dentro de los 10 días siguientes; antes de eso no puede comprometerse gasto con ellos (art. 15 del Decreto 111, aplicable por el art. 109). Conclusión: proyectar el decreto de incorporación y prever el aviso al concejo; después, expedir el certificado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Endeudamiento territorial (Ley 819 de 2003)",
+    "subtema": "Crédito otorgado a una entidad en mora con la Nación: invalidez y devolución del capital",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 819 de 2003",
+    "articulos": ["art. 20", "art. 21"],
+    "texto_fuente": "Ninguna entidad territorial podrá realizar operaciones de crédito público que aumenten su endeudamiento neto cuando se encuentren en mora por operaciones de crédito público contratadas con el Gobierno Central Nacional o garantizadas por este. [...] Las instituciones financieras y los institutos de fomento y desarrollo territorial para otorgar créditos a las entidades territoriales, exigirán el cumplimiento de las condiciones y límites que establecen la Ley 358 de 1997, la Ley 617 de 2000 y la presente ley. Los créditos concedidos a partir de la vigencia de la presente ley, en infracción de lo dispuesto, no tendrán validez y las entidades territoriales beneficiarias procederán a su cancelación mediante devolución del capital, quedando prohibido el pago de intereses y demás cargos financieros al acreedor.",
+    "pregunta": "Desde marzo de 2026, un municipio está atrasado en las cuotas de un crédito que le otorgó un banco comercial con garantía de la Nación. En junio de 2026, el instituto de fomento y desarrollo del departamento le desembolsó un préstamo nuevo de $2.000 millones para pavimentar vías, que se sumó a la deuda que ya tenía. En agosto, la contraloría territorial advierte la situación, y el secretario de Hacienda pide a la asesora jurídica de la secretaría un concepto sobre qué hacer con el préstamo del instituto. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Conservar el préstamo y ponerse al día con la Nación; al normalizar los pagos atrasados, la operación queda saneada.",
+        "explicacion": "Incorrecta. La ley no prevé que el préstamo se sanee con el pago posterior de la mora: el crédito otorgado en infracción no tiene validez y debe cancelarse."
+      },
+      {
+        "id": "B",
+        "texto": "Devolver el capital con los intereses causados hasta la fecha de pago, para no causarle un perjuicio al instituto.",
+        "explicacion": "Incorrecta. Acierta en la devolución del capital, pero el art. 21 prohíbe pagar intereses y demás cargos financieros al acreedor que prestó en infracción."
+      },
+      {
+        "id": "C",
+        "texto": "Devolver el capital recibido, sin reconocerle al instituto intereses ni otros cargos financieros por el préstamo.",
+        "explicacion": "Correcta. En mora con un crédito garantizado por la Nación, el municipio no podía aumentar su endeudamiento neto (art. 20). El instituto debía exigir el cumplimiento de esos límites; como prestó en infracción, el crédito no tiene validez y se cancela devolviendo el capital, sin intereses ni cargos (art. 21)."
+      },
+      {
+        "id": "D",
+        "texto": "Conservar el préstamo, pero suspender el pago de intereses al instituto mientras persista la mora con la Nación.",
+        "explicacion": "Incorrecta. Acierta en que no se pagan intereses, pero el préstamo no puede conservarse: la ley ordena cancelarlo mediante la devolución del capital."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el municipio estaba en mora con un crédito garantizado por la Nación cuando el instituto de fomento le prestó $2.000 millones que aumentaron su deuda. Regla: el art. 20 de la Ley 819 prohíbe en esa situación operaciones que aumenten el endeudamiento neto, y el art. 21 obliga a los institutos de fomento a exigir esos límites y dispone que los créditos concedidos en infracción no tienen validez, se cancelan devolviendo el capital y no se pagan intereses ni cargos. Conclusión: devolver el capital sin intereses.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-063",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Vigencias futuras territoriales",
+    "subtema": "Quién autoriza las vigencias futuras ordinarias de un municipio",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Ley 819 de 2003",
+    "articulos": ["art. 12 inc. 1"],
+    "texto_fuente": "En las entidades territoriales, las autorizaciones para comprometer vigencias futuras serán impartidas por la asamblea o concejo respectivo, a iniciativa del gobierno local, previa aprobación por el Confis territorial o el órgano que haga sus veces.",
+    "pregunta": "Un técnico de la secretaría de Hacienda de un municipio arma el expediente de una solicitud para comprometer recursos de 2027 en el contrato de mantenimiento del alumbrado público, que empezará a ejecutarse en noviembre de 2026 con presupuesto de ese año. El secretario le dice que la autorización la da el concejo, a iniciativa del alcalde, y que el Confis municipal la revisará después, antes de que se firme el contrato. Antes de enviar el expediente, el técnico verifica el trámite que exige la ley para los municipios. ¿Cuál es ese trámite?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Confis municipal la autoriza, a solicitud del alcalde, y el concejo la conoce después en el informe de ejecución.",
+        "explicacion": "Incorrecta. Traslada al municipio el esquema de la Nación, donde autoriza el Confis (art. 23 del Decreto 111). En las entidades territoriales la autorización la imparte la corporación de elección popular."
+      },
+      {
+        "id": "B",
+        "texto": "El concejo la autoriza, a iniciativa del alcalde, después de que el Confis municipal le dé su aprobación.",
+        "explicacion": "Correcta. En las entidades territoriales, las autorizaciones para comprometer vigencias futuras las imparte el concejo, a iniciativa del gobierno local y previa aprobación del Confis territorial o del órgano que haga sus veces (art. 12 de la Ley 819)."
+      },
+      {
+        "id": "C",
+        "texto": "El concejo la autoriza, a iniciativa del alcalde, y el Confis municipal la revisa después, antes de firmar el contrato.",
+        "explicacion": "Incorrecta. Es lo que dice el secretario: acierta en que autoriza el concejo a iniciativa del alcalde, pero invierte el orden: la aprobación del Confis territorial es previa a la autorización del concejo, no posterior."
+      },
+      {
+        "id": "D",
+        "texto": "El alcalde la autoriza mediante decreto, después de que el Confis municipal le dé su aprobación.",
+        "explicacion": "Incorrecta. El alcalde tiene la iniciativa, pero no puede autorizarse a sí mismo para comprometer presupuestos futuros: esa autorización corresponde al concejo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se trata de comprometer recursos de 2027 de un municipio, y el secretario ubica la revisión del Confis después de la autorización del concejo. Regla: el art. 12 de la Ley 819 dispone que en las entidades territoriales las autorizaciones para comprometer vigencias futuras las imparte la asamblea o el concejo, a iniciativa del gobierno local y previa aprobación del Confis territorial. Conclusión: el secretario acierta en quién autoriza, pero el Confis municipal debe aprobar antes de que el concejo decida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Vigencias futuras territoriales",
+    "subtema": "Vigencias futuras para gastos de funcionamiento que superan el período de gobierno",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": ["art. 12 incs. 2 y 4"],
+    "texto_fuente": "Se podrá autorizar la asunción de obligaciones que afecten presupuestos de vigencias futuras cuando su ejecución se inicie con presupuesto de la vigencia en curso y el objeto del compromiso se lleve a cabo en cada una de ellas siempre y cuando se cumpla que: [...] La autorización por parte del Confis para comprometer presupuesto con cargo a vigencias futuras no podrá superar el respectivo período de gobierno. Se exceptúan los proyectos de gastos de inversión en aquellos casos en que el Consejo de Gobierno previamente los declare de importancia estratégica.",
+    "pregunta": "El alcalde de un municipio fue elegido para el período 2024-2027. En abril de 2026 presentó al concejo una solicitud de vigencias futuras ordinarias para contratar el aseo y la cafetería de las sedes de la alcaldía desde el 1 de julio de 2026 hasta el 30 de junio de 2028. La solicitud cumple los demás requisitos de la ley (apropiación mínima, aprobación del Confis municipal y consistencia con el marco fiscal), y el Consejo de Gobierno declaró el contrato de importancia estratégica para no interrumpir el servicio. El asesor de la comisión de presupuesto del concejo debe conceptuar hasta qué fecha puede autorizarse el compromiso. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 30 de junio de 2028, porque el Consejo de Gobierno ya hizo la declaratoria que permite pasar del período.",
+        "explicacion": "Incorrecta. La declaratoria del Consejo de Gobierno solo habilita a exceder el período de gobierno a los proyectos de gastos de inversión. El aseo y la cafetería de las sedes son gastos de funcionamiento."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 30 de junio de 2028, si antes el Conpes declara la importancia estratégica del contrato.",
+        "explicacion": "Incorrecta. Confunde la regla nacional, en la que declara la importancia estratégica el Conpes, con la territorial, en la que lo hace el Consejo de Gobierno; y en ningún caso la excepción alcanza a gastos de funcionamiento."
+      },
+      {
+        "id": "C",
+        "texto": "No puede autorizarse: las vigencias futuras ordinarias solo pueden respaldar gastos de inversión, no de funcionamiento.",
+        "explicacion": "Incorrecta. El art. 12 permite vigencias futuras ordinarias para cualquier compromiso que se inicie con presupuesto de la vigencia en curso y se ejecute en cada una de las siguientes; lo que reserva a la inversión es la posibilidad de superar el período de gobierno."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 31 de diciembre de 2027, porque la salvedad para pasar del período solo cobija los gastos de inversión.",
+        "explicacion": "Correcta. La autorización no puede superar el período de gobierno, que termina el 31 de diciembre de 2027. La excepción con declaratoria del Consejo de Gobierno solo cobija proyectos de gastos de inversión, y el aseo y la cafetería son gastos de funcionamiento (art. 12 de la Ley 819)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el contrato es de aseo y cafetería (funcionamiento) y se extiende hasta junio de 2028, después del período del alcalde (2024-2027). Regla: el art. 12 de la Ley 819 permite vigencias futuras ordinarias para compromisos que se inician en la vigencia en curso, pero la autorización no puede superar el período de gobierno, salvo proyectos de gastos de inversión declarados de importancia estratégica por el Consejo de Gobierno. Conclusión: puede autorizarse solo hasta el 31 de diciembre de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Endeudamiento territorial (Ley 819 de 2003)",
+    "subtema": "Monto máximo y plazo de pago de un crédito de tesorería",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": ["art. 15 lits. a) a d)"],
+    "texto_fuente": "Los créditos de tesorería otorgados por entidades financieras a las entidades territoriales se destinarán exclusivamente a atender insuficiencia de caja de carácter temporal durante la vigencia fiscal y deberán cumplir con las siguientes exigencias: a) Los créditos de tesorería no podrán exceder la doceava de los ingresos corrientes del año fiscal; b) Serán pagados con recursos diferentes del crédito; c) Deben ser pagados con intereses y otros cargos financieros antes del 20 de diciembre de la misma vigencia en que se contraten; d) No podrán contraerse en cuanto existan créditos de tesorería en mora o sobregiros.",
+    "pregunta": "En marzo de 2027, la tesorería de un municipio prevé un faltante temporal de caja mientras llega el recaudo del impuesto predial, que se concentra entre abril y junio. Un técnico de la tesorería revisa la propuesta de un banco: un crédito de tesorería de $7.600 millones, pagadero con el recaudo del predial en diez cuotas mensuales, de abril de 2027 a enero de 2028. El presupuesto de 2027 estima ingresos corrientes por $84.000 millones, de los cuales $66.000 millones son de libre destinación. El municipio no tiene créditos de tesorería en mora ni sobregiros. ¿Qué debe informar el técnico sobre el monto y el plazo de pago que puede tener el crédito?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta $5.500 millones, la doceava parte de los ingresos de libre destinación, pagados antes del 20 de diciembre de 2027.",
+        "explicacion": "Incorrecta. Acierta en la fecha de pago, pero calcula el tope sobre los ingresos de libre destinación. La ley lo fija sobre los ingresos corrientes del año fiscal: $84.000 ÷ 12 = $7.000 millones."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta $7.000 millones, la doceava parte de los ingresos corrientes, pagados en las cuotas mensuales que propone el banco.",
+        "explicacion": "Incorrecta. Acierta en el tope, pero el plan del banco termina en enero de 2028. El crédito de tesorería debe pagarse, con intereses y cargos, antes del 20 de diciembre de la misma vigencia en que se contrata."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta $7.000 millones, la doceava parte de los ingresos corrientes, pagados antes del 20 de diciembre de 2027.",
+        "explicacion": "Correcta. El crédito de tesorería no puede exceder la doceava parte de los ingresos corrientes del año fiscal ($84.000 ÷ 12 = $7.000 millones) y debe pagarse, con intereses y otros cargos, antes del 20 de diciembre de 2027, con recursos distintos del crédito (art. 15 de la Ley 819)."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta $5.500 millones, la doceava parte de los ingresos de libre destinación, pagados en las cuotas mensuales que propone el banco.",
+        "explicacion": "Incorrecta. Equivoca la base del tope (debe ser el total de los ingresos corrientes) y acepta un plan de pagos que se extiende a 2028, cuando el crédito debe cancelarse antes del 20 de diciembre de 2027."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: ingresos corrientes de 2027 por $84.000 millones y un plan de pagos que llega a enero de 2028. Regla: el art. 15 de la Ley 819 limita los créditos de tesorería a la doceava parte de los ingresos corrientes del año fiscal y exige pagarlos, con intereses y cargos, antes del 20 de diciembre de la misma vigencia, con recursos distintos del crédito. Cálculo: 84.000 ÷ 12 = 7.000. Conclusión: hasta $7.000 millones, pagados antes del 20 de diciembre de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-066",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Vigencias futuras territoriales",
+    "subtema": "Capacidad de endeudamiento con los costos futuros de mantenimiento y administración",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 819 de 2003",
+    "articulos": ["art. 12 inc. 2 lit. b) e inc. 3"],
+    "texto_fuente": "b) Como mínimo, de las vigencias futuras que se soliciten se deberá contar con apropiación del quince por ciento (15%) en la vigencia fiscal en la que estas sean autorizadas; [...] La corporación de elección popular se abstendrá de otorgar la autorización si los proyectos objeto de la vigencia futura no están consignados en el Plan de Desarrollo respectivo y si sumados todos los compromisos que se pretendan adquirir por esta modalidad y sus costos futuros de mantenimiento y/o administración, se excede su capacidad de endeudamiento.",
+    "pregunta": "En mayo de 2026, el alcalde de un municipio, elegido para el período 2024-2027, pide al concejo autorizar vigencias futuras ordinarias por $6.000 millones de 2027 para terminar un centro de salud cuya construcción se inicia con $1.000 millones apropiados en 2026. El Confis municipal aprobó la solicitud, que consulta las metas del marco fiscal y no tiene recursos de la Nación, pero el centro no figura en el plan de desarrollo: la administración piensa incluirlo en una modificación del plan que presentará en 2027. Es la única solicitud de este tipo en el año. La secretaría de Hacienda estima que el centro, una vez construido, costará $900 millones en mantenimiento y administración en sus dos primeros años de operación, y certifica una capacidad de endeudamiento disponible de $6.500 millones. Una profesional de la comisión de presupuesto del concejo debe recomendar el sentido de la decisión. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negarla: el centro no está en el plan de desarrollo y, con su sostenimiento, los compromisos suman $6.900 millones y exceden la capacidad.",
+        "explicacion": "Correcta. El concejo debe abstenerse de autorizar si los proyectos no están consignados en el plan de desarrollo y si, sumados los compromisos y sus costos futuros de mantenimiento y administración, se excede la capacidad de endeudamiento (art. 12 de la Ley 819). Aquí se dan las dos condiciones: el centro no está en el plan, y 6.000 + 900 = 6.900 > 6.500. Por eso la recomendación es la misma con cualquier lectura del inciso."
+      },
+      {
+        "id": "B",
+        "texto": "Aprobarla: el plan puede ajustarse en 2027, y los $6.000 millones de vigencias futuras caben en la capacidad de $6.500 millones.",
+        "explicacion": "Incorrecta. El proyecto debe estar consignado en el plan de desarrollo cuando se autoriza, no después. Además, compara con la capacidad solo el valor de las vigencias futuras y omite sus costos futuros de mantenimiento y administración, que la ley obliga a sumar: 6.900 > 6.500."
+      },
+      {
+        "id": "C",
+        "texto": "Aprobarla: el plan puede ajustarse en 2027, y la capacidad de endeudamiento solo limita las operaciones de crédito, no las vigencias futuras.",
+        "explicacion": "Incorrecta. El art. 12 de la Ley 819 ordena expresamente al concejo comparar los compromisos por vigencias futuras, con sus costos futuros, con la capacidad de endeudamiento; y el proyecto debe estar en el plan de desarrollo cuando se autoriza."
+      },
+      {
+        "id": "D",
+        "texto": "Negarla: el centro no está en el plan de desarrollo, y lo apropiado en 2026 no cubre el 15 % de los $6.900 millones de obra y sostenimiento.",
+        "explicacion": "Incorrecta. Acierta en que el centro no está en el plan, pero el 15 % se calcula sobre las vigencias futuras que se solicitan ($6.000 millones), lo que exige $900 millones; los $1.000 millones apropiados lo cumplen. La otra razón para negarla es que se excede la capacidad de endeudamiento."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el centro no figura en el plan de desarrollo; las vigencias futuras son $6.000 millones, el sostenimiento $900 millones y la capacidad $6.500 millones. Regla: el art. 12 de la Ley 819 exige apropiar al menos el 15 % de lo solicitado y ordena al concejo abstenerse si el proyecto no está en el plan y si los compromisos, con sus costos futuros de mantenimiento o administración, exceden la capacidad de endeudamiento. Cálculo: 15 % × 6.000 = 900 ≤ 1.000; 6.000 + 900 = 6.900 > 6.500. Se dan las dos condiciones: debe negarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Endeudamiento territorial (Ley 819 de 2003)",
+    "subtema": "Análisis de capacidad de pago por todo el plazo y calificación de riesgos según la categoría",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": ["art. 14 inc. 1", "art. 16 inc. 1"],
+    "texto_fuente": "La capacidad de pago de las entidades territoriales se analizará para todo el período de vigencia del crédito que se contrate y si al hacerlo, cualquiera de los dos indicadores consagrados en el artículo 6o de la Ley 358 de 1997 se ubica por encima de los límites allí previstos, la entidad territorial seguirá los procedimientos establecidos en la citada ley. [...] Sin perjuicio de lo establecido en los artículos anteriores, y de las disposiciones contenidas en las normas de endeudamiento territorial, para la contratación de nuevos créditos por parte de los departamentos, distritos y municipios de categorías especial, 1 y 2 será requisito la presentación de una evaluación elaborada por una calificadora de riesgos, vigiladas por la Superintendencia en la que se acredita la capacidad de contraer el nuevo endeudamiento.",
+    "pregunta": "Un municipio de cuarta categoría va a contratar con un banco un crédito de $6.000 millones a siete años, de 2027 a 2033, para obras viales. La técnica de la secretaría de Hacienda que arma la carpeta encuentra un análisis de capacidad de pago con los indicadores de la Ley 358 de 1997 calculados solo para 2027, año del desembolso, y ningún documento de una calificadora de riesgos. Antes de pasar la carpeta al profesional de crédito público, debe anotar qué hay que corregir según la Ley 819 de 2003. ¿Qué debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Extender el análisis a los siete años del crédito y anexar la evaluación de una calificadora de riesgos.",
+        "explicacion": "Incorrecta. Acierta en extender el análisis, pero la evaluación de una calificadora solo se exige para nuevos créditos de departamentos, distritos y municipios de categorías especial, 1 y 2."
+      },
+      {
+        "id": "B",
+        "texto": "Dejar el análisis del año del desembolso y anexar la evaluación de una calificadora de riesgos.",
+        "explicacion": "Incorrecta. La capacidad de pago se analiza por todo el período de vigencia del crédito, no solo para el año del desembolso; y la calificación no se le exige a un municipio de cuarta categoría."
+      },
+      {
+        "id": "C",
+        "texto": "Dejar el análisis del año del desembolso; la evaluación de una calificadora no se le exige por su categoría.",
+        "explicacion": "Incorrecta. Acierta sobre la calificación, pero deja un análisis incompleto: la ley exige analizar la capacidad de pago por los siete años de vigencia del crédito."
+      },
+      {
+        "id": "D",
+        "texto": "Extender el análisis a los siete años del crédito; la evaluación de una calificadora no se le exige por su categoría.",
+        "explicacion": "Correcta. La capacidad de pago se analiza para todo el período de vigencia del crédito (art. 14), y la evaluación de una calificadora de riesgos solo es requisito para los departamentos, distritos y municipios de categorías especial, 1 y 2 (art. 16); el municipio es de cuarta."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: municipio de cuarta categoría, crédito a siete años y análisis de capacidad de pago solo para el primer año. Regla: el art. 14 de la Ley 819 exige analizar la capacidad de pago por todo el período de vigencia del crédito, y el art. 16 exige la evaluación de una calificadora de riesgos solo a departamentos, distritos y municipios de categorías especial, 1 y 2. Conclusión: hay que extender el análisis a 2027-2033; la calificación no es requisito para este municipio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Endeudamiento territorial (Ley 819 de 2003)",
+    "subtema": "Recursos de la Nación que siguen llegando a una entidad que incumple las normas de endeudamiento",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003 y Ley 715 de 2001",
+    "articulos": ["Ley 819 de 2003, art. 19", "Ley 715 de 2001, art. 85 inc. 2"],
+    "texto_fuente": "Sin perjuicio de las restricciones establecidas en otras normas, se prohíbe a la Nación otorgar apoyos financieros directos o indirectos a las entidades territoriales que no cumplan las disposiciones de la Ley 358 de 1997 y de la presente ley. En consecuencia, la Nación no podrá prestar recursos, cofinanciar proyectos, garantizar operaciones de crédito público o transferir cualquier clase de recursos, distintos de los señalados en la Constitución Política. [...] El Ministerio de Hacienda y Crédito Público calculará los montos totales correspondientes a la vigencia siguiente del Sistema General de Participaciones, de que tratan los artículos 356 y 357 de la Constitución Política",
+    "pregunta": "El Ministerio de Hacienda le informó a un municipio que no cumple las disposiciones de la Ley 358 de 1997 sobre endeudamiento. El municipio recibe cada mes los giros del Sistema General de Participaciones (SGP) y tiene firmado con un ministerio un convenio para ampliar el acueducto, en el que la Nación aporta la mitad del costo; el primer desembolso de la Nación está previsto para el mes siguiente. El alcalde pide a la asesora de la secretaría de Planeación un concepto sobre qué recursos de la Nación seguirá recibiendo mientras no se ajuste. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se le suspenden los giros del SGP y el aporte para el acueducto hasta que vuelva a cumplir las normas de endeudamiento.",
+        "explicacion": "Incorrecta. Acierta sobre el aporte para el acueducto, pero el SGP es una transferencia ordenada por los arts. 356 y 357 de la Constitución, y la restricción del art. 19 no alcanza a los recursos señalados en la Constitución."
+      },
+      {
+        "id": "B",
+        "texto": "Seguirá recibiendo los giros del SGP, pero no el aporte de la Nación para el acueducto mientras no cumpla.",
+        "explicacion": "Correcta. Mientras incumpla la Ley 358, la Nación no puede cofinanciarle proyectos ni transferirle recursos distintos de los señalados en la Constitución (art. 19 de la Ley 819). El SGP es de origen constitucional (arts. 356 y 357), así que sigue llegando; el aporte al acueducto es cofinanciación y se detiene."
+      },
+      {
+        "id": "C",
+        "texto": "Seguirá recibiendo los giros del SGP y el aporte para el acueducto, porque este no es un préstamo de la Nación.",
+        "explicacion": "Incorrecta. La prohibición no se limita a los préstamos: incluye cofinanciar proyectos, garantizar créditos y transferir cualquier recurso distinto de los constitucionales."
+      },
+      {
+        "id": "D",
+        "texto": "Se le suspenden los giros del SGP, pero puede recibir el aporte para el acueducto porque el convenio ya estaba firmado.",
+        "explicacion": "Incorrecta. Invierte la regla: el SGP, que es constitucional, no se suspende; la cofinanciación sí, aunque el convenio esté firmado, porque la Nación no puede cofinanciar proyectos de la entidad que incumple."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el municipio incumple la Ley 358 y espera dos clases de recursos de la Nación: el SGP y un aporte de cofinanciación. Regla: el art. 19 de la Ley 819 prohíbe a la Nación prestar, cofinanciar proyectos, garantizar créditos o transferir recursos distintos de los señalados en la Constitución a las entidades que incumplen; el SGP es la transferencia de los arts. 356 y 357 de la Constitución (art. 85 de la Ley 715). Conclusión: el SGP sigue; la cofinanciación del acueducto no.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Límites de gasto de concejos y personerías (Ley 617 de 2000)",
+    "subtema": "Tope de gastos del concejo en un municipio de primera categoría",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Alta",
+    "norma": "Ley 617 de 2000 y Ley 136 de 1994",
+    "articulos": [
+      "Ley 617 de 2000, art. 10 inc. 1 (modificado por el art. 3 de la Ley 2422 de 2024)",
+      "Ley 136 de 1994, art. 66 inc. 3 (modificado por el art. 2 de la Ley 2461 de 2025)"
+    ],
+    "texto_fuente": "Durante cada vigencia fiscal, los gastos de los concejos no podrán superar el valor correspondiente al total de los honorarios que se causen por el número de sesiones autorizado en el artículo 66 de la Ley 136 de 1994, más el uno punto cinco por ciento (1.5%) de los ingresos corrientes de libre destinación. [...] En los municipios de categoría especial, primera y segunda, se pagarán anualmente ciento cincuenta (150) sesiones ordinarias y hasta cuarenta (40) extraordinarias al año.",
+    "pregunta": "Una técnica de presupuesto de la secretaría de Hacienda de un municipio de primera categoría calcula el monto máximo de gastos del concejo para 2027, que irá en el proyecto de presupuesto. El concejo tiene 17 concejales, el valor de los honorarios por sesión para 2027 es de $660.000 y los ingresos corrientes de libre destinación (ICLD) proyectados para 2027 suman $140.000 millones. ¿Cuál es el tope que debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$4.231,8 millones: honorarios de 190 sesiones por concejal, más el 1,5 % de los ICLD.",
+        "explicacion": "Correcta. En primera categoría se pagan hasta 150 sesiones ordinarias y 40 extraordinarias al año (art. 66 de la Ley 136): 17 × 190 × $660.000 = $2.131,8 millones. A eso se suma el 1,5 % de los ICLD (art. 10 de la Ley 617): $2.100 millones. Total: $4.231,8 millones."
+      },
+      {
+        "id": "B",
+        "texto": "$3.783 millones: honorarios de 150 sesiones por concejal, más el 1,5 % de los ICLD.",
+        "explicacion": "Incorrecta. Cuenta solo las 150 sesiones ordinarias. El tope incluye los honorarios de todas las sesiones autorizadas, también las 40 extraordinarias."
+      },
+      {
+        "id": "C",
+        "texto": "$4.511,8 millones: honorarios de 190 sesiones por concejal, más el 1,7 % de los ICLD.",
+        "explicacion": "Incorrecta. Acierta en las sesiones, pero el 1,7 % es el límite de las personerías de primera categoría. Para el concejo, la suma adicional es el 1,5 % de los ICLD en cualquier categoría."
+      },
+      {
+        "id": "D",
+        "texto": "$4.063 millones: honorarios de 150 sesiones por concejal, más el 1,7 % de los ICLD.",
+        "explicacion": "Incorrecta. Omite las 40 sesiones extraordinarias y usa el porcentaje de las personerías de primera categoría en lugar del 1,5 % que corresponde al concejo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: municipio de primera categoría, 17 concejales, honorarios de $660.000 por sesión e ICLD de $140.000 millones. Regla: el art. 10 de la Ley 617 (mod. Ley 2422 de 2024) limita los gastos del concejo a los honorarios de las sesiones autorizadas más el 1,5 % de los ICLD, y el art. 66 de la Ley 136 (mod. Ley 2461 de 2025) autoriza en primera categoría 150 sesiones ordinarias y hasta 40 extraordinarias. Cálculo: 17 × 190 × 0,66 = 2.131,8; 1,5 % × 140.000 = 2.100; total 4.231,8. Conclusión: $4.231,8 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0617_2000.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Saneamiento fiscal (Ley 617 de 2000)",
+    "subtema": "Contratos de apoyo administrativo y transporte de concejales en el indicador de gastos de funcionamiento",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 617 de 2000 y Ley 136 de 1994",
+    "articulos": [
+      "Ley 617 de 2000, art. 3 par. 4",
+      "Ley 617 de 2000, art. 6",
+      "Ley 136 de 1994, art. 67 inc. 1 (modificado por el art. 2 de la Ley 1368 de 2009)"
+    ],
+    "texto_fuente": "PARAGRAFO 4o. Los contratos de prestación de servicios para la realización de actividades administrativas se clasificarán para los efectos de la presente ley como gastos de funcionamiento. [...] Durante cada vigencia fiscal los gastos de funcionamiento de los distritos y municipios no podrán superar como proporción de sus ingresos corrientes de libre destinación, los siguientes límites: CategoríaLímite Especial50% Primera65% Segunda y tercera70% Cuarta, quinta y sexta80% [...] Reconócese el valor de transporte, durante las sesiones plenarias y de comisión, a los concejales que residan en zonas rurales y deban desplazarse desde y hasta la cabecera municipal, sede principal del funcionamiento de las corporaciones municipales. Estos gastos de transporte serán asumidos, en el caso de los municipios pertenecientes a categorías cuarta, quinta y sexta con cargo a la sección presupuestal del sector central del municipio, y no se tendrán en cuenta como gasto de funcionamiento de la administración, para el cálculo de los indicadores de límite de gastos de funcionamiento fijados por la Ley 617 de 2000.",
+    "pregunta": "La profesional de la secretaría de Hacienda de un municipio de quinta categoría revisa el indicador de gastos de funcionamiento de 2026 que preparó un técnico. Datos, en millones de pesos: ingresos corrientes de libre destinación (ICLD), 12.400; gastos de funcionamiento de la administración central registrados por el técnico, 9.756, cifra que incluye 186 pagados por el transporte de los concejales que viven en veredas. Además, la alcaldía pagó 420 en contratos de prestación de servicios para archivo, digitalización y ventanilla de correspondencia, que se imputaron al presupuesto de inversión y que el técnico no sumó. ¿Qué debe concluir la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que cumple: los gastos que registró el técnico equivalen al 78,7 % de los ICLD, por debajo del 80 %.",
+        "explicacion": "Incorrecta. Deja dentro el transporte de los concejales, que la ley excluye del indicador en las categorías cuarta a sexta, y deja fuera los contratos de apoyo administrativo, que la ley clasifica como gastos de funcionamiento."
+      },
+      {
+        "id": "B",
+        "texto": "Que incumple: con los contratos y con el transporte de los concejales, los gastos llegan al 82,1 % de los ICLD.",
+        "explicacion": "Incorrecta. Acierta en sumar los contratos, pero el transporte de los concejales no se tiene en cuenta como gasto de funcionamiento para el indicador en un municipio de quinta categoría: (9.756 + 420) ÷ 12.400 = 82,1 % es un cálculo errado."
+      },
+      {
+        "id": "C",
+        "texto": "Que incumple: con los contratos y sin el transporte de los concejales, los gastos llegan al 80,6 % de los ICLD.",
+        "explicacion": "Correcta. Los contratos de prestación de servicios para actividades administrativas son gastos de funcionamiento (art. 3, par. 4, Ley 617), y el transporte de los concejales no cuenta en el indicador en categorías cuarta a sexta (art. 67, Ley 136): 9.756 − 186 + 420 = 9.990; 9.990 ÷ 12.400 = 80,6 %, más que el 80 % de quinta categoría (art. 6)."
+      },
+      {
+        "id": "D",
+        "texto": "Que cumple: sin el transporte de los concejales, los gastos equivalen al 77,2 % de los ICLD, por debajo del 80 %.",
+        "explicacion": "Incorrecta. Excluye bien el transporte, pero olvida los $420 millones en contratos de apoyo administrativo, que se clasifican como gastos de funcionamiento aunque se hayan imputado a inversión."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: municipio de quinta categoría con ICLD de 12.400, gastos registrados de 9.756 (con 186 de transporte de concejales) y 420 en contratos de apoyo administrativo imputados a inversión. Regla: esos contratos son gastos de funcionamiento (art. 3, par. 4, Ley 617); el transporte de los concejales no cuenta en el indicador en categorías 4.ª a 6.ª (art. 67, Ley 136), y el límite es el 80 % (art. 6, Ley 617). Cálculo: 9.756 − 186 + 420 = 9.990; 9.990 ÷ 12.400 = 80,6 %. Conclusión: incumple.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0617_2000.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-071",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Límites de gasto de concejos y personerías (Ley 617 de 2000)",
+    "subtema": "Asignación mensual del personero en un municipio de quinta categoría",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Ley 136 de 1994",
+    "articulos": [
+      "art. 159 (modificado por el art. 22 de la Ley 617 de 2000)",
+      "art. 177 inc. 1"
+    ],
+    "texto_fuente": "El monto de los salarios asignados a los Contralores y Personeros de los municipios y distritos, en ningún caso podrá superar el ciento por ciento (100%) del salario del alcalde. [...] La asignación mensual de los personeros, [...] será igual al cien por ciento (100%) del salario mensual aprobado por el Concejo para el alcalde.",
+    "pregunta": "El técnico de talento humano de la alcaldía de un municipio de quinta categoría prepara el anexo de salarios del proyecto de presupuesto de 2027. El concejo fijó la asignación mensual del alcalde en $8.500.000 para 2026 y en $8.900.000 para 2027, y no ha expedido ninguna otra regla sobre el salario del personero. En la hoja de cálculo heredada del año anterior, la asignación del personero aparece liquidada al 70 % de la del alcalde, con la nota «por ser un municipio de categoría inferior a la segunda». ¿Qué asignación mensual debe registrar para el personero en 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$6.230.000, el 70 % de la asignación del alcalde, que es la regla para los municipios de quinta categoría.",
+        "explicacion": "Incorrecta. La regla del 70 % para los municipios de categorías distintas de especial, primera y segunda fue declarada inexequible; el texto vigente del art. 177 fija la asignación del personero en el 100 % del salario aprobado para el alcalde, sin distinguir categorías."
+      },
+      {
+        "id": "B",
+        "texto": "$8.500.000, el 100 % de la asignación del alcalde en 2026, que es la base para liquidar el año siguiente.",
+        "explicacion": "Incorrecta. El art. 177 iguala la asignación del personero al salario mensual que el concejo aprobó para el alcalde, y para 2027 ese salario es de $8.900.000. La asignación de 2026 no es la base de la de 2027."
+      },
+      {
+        "id": "C",
+        "texto": "Una mayor que $8.900.000, si el tope de gastos de la personería en salarios mínimos alcanza para pagarla.",
+        "explicacion": "Incorrecta. El tope de gastos de la personería (art. 10 de la Ley 617) limita el total de gastos de la entidad; no autoriza a pagar al personero más que al alcalde, lo que el art. 159 prohíbe."
+      },
+      {
+        "id": "D",
+        "texto": "$8.900.000, la misma asignación mensual que tendrá el alcalde de ese municipio durante 2027.",
+        "explicacion": "Correcta. El salario del personero no puede superar el del alcalde (art. 159, mod. art. 22 de la Ley 617) y su asignación mensual será igual al 100 % del salario aprobado por el concejo para el alcalde (art. 177, en su texto vigente). Para 2027, $8.900.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el concejo aprobó para el alcalde $8.900.000 en 2027, no fijó otra regla para el personero, y la hoja heredada aplica el 70 % por la categoría del municipio. Regla: el art. 159 de la Ley 136 (mod. art. 22 de la Ley 617) impide que el salario del personero supere el del alcalde, y el art. 177, en su texto vigente, fija la asignación del personero en el 100 % del salario aprobado para el alcalde; la regla del 70 % para las categorías menores fue declarada inexequible. Conclusión: $8.900.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Saneamiento fiscal (Ley 617 de 2000)",
+    "subtema": "Ajuste del presupuesto cuando el recaudo de ICLD resulta inferior al programado",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 617 de 2000",
+    "articulos": ["art. 13 (texto vigente)", "art. 6"],
+    "texto_fuente": "Si durante la vigencia fiscal, el recaudo efectivo de ingresos corrientes de libre destinación resulta inferior a la programación en que se fundamentó el presupuesto de rentas del departamento, distrito o municipio, los recortes, aplazamientos o supresiones que deba hacer el Ejecutivo afectarán [...] el presupuesto anual, de manera que en la ejecución efectiva del gasto de la respectiva vigencia se respeten los límites establecidos en la presente ley. [...] Durante cada vigencia fiscal los gastos de funcionamiento de los distritos y municipios no podrán superar como proporción de sus ingresos corrientes de libre destinación, los siguientes límites: CategoríaLímite Especial50% Primera65% Segunda y tercera70% Cuarta, quinta y sexta80%",
+    "pregunta": "Un municipio de tercera categoría aprobó para 2026 un presupuesto con ingresos corrientes de libre destinación (ICLD) de $20.000 millones y gastos de funcionamiento de $13.800 millones. En septiembre, la secretaría de Hacienda proyecta que el recaudo de ICLD del año cerrará en $18.000 millones; las demás rentas se recaudan según lo previsto y la administración planea ejecutar toda la apropiación de funcionamiento. El alcalde pide al asesor de la secretaría que le diga qué ajuste debe hacer. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguno: el presupuesto se aprobó con gastos del 69 % de los ICLD programados, dentro del límite legal.",
+        "explicacion": "Incorrecta. El límite se mide sobre la ejecución efectiva del gasto frente al recaudo real. Si el recaudo cae, el Ejecutivo debe hacer recortes o aplazamientos para respetar el límite en esa ejecución."
+      },
+      {
+        "id": "B",
+        "texto": "Reducir o aplazar al menos $1.200 millones de funcionamiento, para no pasar del 70 % del recaudo esperado.",
+        "explicacion": "Correcta. Si el recaudo efectivo de ICLD es inferior al programado, el Ejecutivo debe recortar o aplazar de modo que la ejecución respete los límites (art. 13). En tercera categoría el límite es el 70 % (art. 6): 70 % × 18.000 = 12.600; 13.800 − 12.600 = 1.200."
+      },
+      {
+        "id": "C",
+        "texto": "Recortar el 10 % de todas las secciones del presupuesto, en la misma proporción en que cayó el recaudo.",
+        "explicacion": "Incorrecta. Aplica la regla de recortes proporcionales en todas las secciones, que la Corte Constitucional declaró inexequible. Lo que exige el texto vigente es que la ejecución respete los límites de la ley, no un recorte proporcional general."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno: con el recaudo esperado, los gastos equivalen al 76,7 % de los ICLD, por debajo del límite del 80 %.",
+        "explicacion": "Incorrecta. El 80 % es el límite de las categorías cuarta a sexta. En tercera categoría el límite es el 70 %, y 76,7 % lo supera."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: municipio de tercera categoría con funcionamiento de $13.800 millones y un recaudo de ICLD que caerá de $20.000 a $18.000 millones. Regla: el art. 13 de la Ley 617, en su texto vigente, obliga al Ejecutivo a hacer los recortes o aplazamientos necesarios para que la ejecución efectiva respete los límites, y el art. 6 fija el 70 % para tercera categoría. Cálculo: 70 % × 18.000 = 12.600; 13.800 − 12.600 = 1.200. Conclusión: reducir o aplazar al menos $1.200 millones de funcionamiento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0617_2000.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-073",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Sistema General de Participaciones",
+    "subtema": "Pago de una conciliación judicial relacionada con un proyecto financiado con el SGP",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 715 de 2001",
+    "articulos": [
+      "art. 84A num. 3 (adicionado por el art. 190 de la Ley 2294 de 2023)",
+      "art. 92 inc. 2"
+    ],
+    "texto_fuente": "Está prohibido financiar con recursos del Sistema General de Participaciones: [...] 3. Fallos judiciales y conciliaciones. Cada sección presupuestal debe contar con el rubro de sentencias y conciliaciones, el mismo debe provisionarse con recursos propios de libre destinación para el pago inmediato de sentencias ejecutoriadas. [...] Solo podrán pagarse las obligaciones de un sector con los recursos del mismo sector.",
+    "pregunta": "Un juez aprobó una conciliación por la que un municipio debe pagar $180 millones al contratista que construyó la ampliación del acueducto, obra financiada con recursos del Sistema General de Participaciones (SGP) para agua potable. El secretario de Infraestructura le pide a la técnica de presupuesto que expida el certificado de disponibilidad con cargo al proyecto del acueducto, financiado con esa participación, porque «la deuda nació en ese sector». El jefe de presupuesto objeta que el SGP no puede pagar conciliaciones y propone usar recursos propios de libre destinación, pero imputados al rubro del proyecto del acueducto. ¿Con cargo a qué debe expedirse el certificado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al SGP de agua potable, en el rubro del proyecto del acueducto que dio origen a la obligación.",
+        "explicacion": "Incorrecta. Aplica la regla de que cada sector paga sus obligaciones con sus propios recursos, pero la ley prohíbe expresamente financiar con el SGP fallos judiciales y conciliaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Al SGP de agua potable, pero en el rubro de sentencias y conciliaciones de la sección presupuestal.",
+        "explicacion": "Incorrecta. Acierta en el rubro, pero no en la fuente: el rubro de sentencias y conciliaciones debe provisionarse con recursos propios de libre destinación, no con el SGP."
+      },
+      {
+        "id": "C",
+        "texto": "A recursos propios de libre destinación, en el rubro de sentencias y conciliaciones de la sección.",
+        "explicacion": "Correcta. Está prohibido financiar con el SGP fallos judiciales y conciliaciones; cada sección debe tener el rubro de sentencias y conciliaciones, provisionado con recursos propios de libre destinación (art. 84A, num. 3, de la Ley 715, adicionado por la Ley 2294 de 2023)."
+      },
+      {
+        "id": "D",
+        "texto": "A recursos propios de libre destinación, en el rubro del proyecto del acueducto que originó la obligación.",
+        "explicacion": "Incorrecta. Es la propuesta del jefe de presupuesto: acierta en la fuente, pero la conciliación debe pagarse por el rubro de sentencias y conciliaciones de la sección, que la ley ordena tener para ese fin, y no por el del proyecto."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la obligación nace de una conciliación aprobada por un juez, aunque se relacione con una obra del SGP de agua potable. Regla: el art. 84A, num. 3, de la Ley 715 (adicionado por el art. 190 de la Ley 2294 de 2023) prohíbe financiar con el SGP fallos judiciales y conciliaciones, y ordena pagarlos por el rubro de sentencias y conciliaciones, provisionado con recursos propios de libre destinación; el art. 92 no levanta esa prohibición. Conclusión: el jefe de presupuesto acierta en la fuente, pero no en el rubro.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0715_2001.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-074",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Sistema General de Participaciones",
+    "subtema": "Déficit de vigencias anteriores que puede pagarse con el SGP: aportes al Fomag y devolución al Fonpet",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 715 de 2001",
+    "articulos": [
+      "art. 84A inc. 1 y num. 4 (adicionado por el art. 190 de la Ley 2294 de 2023)"
+    ],
+    "texto_fuente": "Los recursos del Sistema General de Participaciones (SGP) son rentas de destinación específica, se asignan para inversión y gasto corriente del sector y deben destinarse de forma exclusiva a conceptos de gasto que tengan fundamento legal y constitucional. Está prohibido financiar con recursos del Sistema General de Participaciones: [...] 4. Déficit generado en vigencias anteriores, a excepción de: a) las obligaciones laborales causadas y pendientes de pago que correspondan a contribuciones de nómina, aportes patronales con destino al Fomag y parafiscales, y, b) la devolución de los recursos prestados al sector desde el Fonpet en vigencias anteriores.",
+    "pregunta": "Un departamento cerró 2025 con un déficit en el sector educativo. Para 2027, el secretario de Educación propone cubrir con la participación para educación del Sistema General de Participaciones (SGP) tres obligaciones de vigencias anteriores: (1) los aportes patronales al Fomag de la nómina docente de noviembre y diciembre de 2025, causados y no pagados; (2) la prima de navidad de 2025 de los docentes, causada y no pagada; y (3) la devolución al Fonpet de los recursos que en 2024 le prestó al sector. El secretario de Hacienda objeta que ninguna puede pagarse con el SGP, porque con esos recursos no se financia el déficit de vigencias anteriores. El asesor jurídico de la gobernación debe conceptuar. ¿Cuáles pueden pagarse con el SGP?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La 1 y la 3; la 2 no, aunque sea una deuda laboral del sector educativo.",
+        "explicacion": "Correcta. Está prohibido financiar con el SGP el déficit de vigencias anteriores, salvo las obligaciones laborales causadas y pendientes de pago que correspondan a contribuciones de nómina, aportes patronales al Fomag y parafiscales, y la devolución de los recursos prestados al sector desde el Fonpet (art. 84A, num. 4, de la Ley 715). La prima de navidad es una deuda laboral, pero no es contribución de nómina, aporte al Fomag ni parafiscal."
+      },
+      {
+        "id": "B",
+        "texto": "La 1 y la 2, por ser deudas laborales del sector; la 3 no, por ser un préstamo.",
+        "explicacion": "Incorrecta. La excepción laboral no cubre cualquier deuda laboral: solo las contribuciones de nómina, los aportes patronales al Fomag y los parafiscales, así que la prima de navidad queda por fuera. Y la devolución al Fonpet de los recursos prestados al sector está exceptuada expresamente."
+      },
+      {
+        "id": "C",
+        "texto": "Las tres, porque la prohibición no alcanza las deudas laborales ni las del Fonpet.",
+        "explicacion": "Incorrecta. Acierta con los aportes al Fomag y con el Fonpet, pero la excepción laboral se limita a contribuciones de nómina, aportes patronales al Fomag y parafiscales: la prima de navidad de 2025 es déficit que no puede pagarse con el SGP."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna, porque las tres son déficit generado en vigencias anteriores.",
+        "explicacion": "Incorrecta. Es la objeción del secretario de Hacienda: acierta con la regla general, pero ignora sus dos excepciones, los aportes patronales al Fomag causados y no pagados y la devolución al Fonpet de los recursos prestados al sector (art. 84A, num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las tres obligaciones vienen de vigencias anteriores, pero son de distinta clase. Regla: el art. 84A, num. 4, de la Ley 715 (adicionado por el art. 190 de la Ley 2294 de 2023) prohíbe financiar con el SGP el déficit de vigencias anteriores, salvo las obligaciones laborales causadas y pendientes que correspondan a contribuciones de nómina, aportes patronales al Fomag y parafiscales, y la devolución de recursos prestados al sector desde el Fonpet. Conclusión: la objeción acierta solo con la prima; pueden pagarse la 1 y la 3.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0715_2001.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-075",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Sistema General de Participaciones",
+    "subtema": "Gravamen a los movimientos financieros sobre pagos hechos con recursos del SGP",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Ley 715 de 2001",
+    "articulos": ["art. 97 inc. 2"],
+    "texto_fuente": "Los recursos transferidos a las entidades territoriales por concepto del Sistema General de Participaciones y los gastos que realicen las entidades territoriales con ellos, están exentos para dichas entidades del Gravamen a las transacciones financieras.",
+    "pregunta": "Al conciliar la cuenta bancaria en la que un municipio maneja los recursos del Sistema General de Participaciones (SGP) para agua potable, una técnica de tesorería encuentra que el banco descontó el gravamen a los movimientos financieros (cuatro por mil) sobre los pagos hechos desde esa cuenta al contratista de la planta de tratamiento. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Registrar el descuento como gasto bancario con cargo a la misma cuenta del SGP para agua potable.",
+        "explicacion": "Incorrecta. Da por bueno un cobro que no procede: los gastos que el municipio hace con recursos del SGP están exentos del gravamen para la entidad."
+      },
+      {
+        "id": "B",
+        "texto": "Registrar el descuento como gasto de funcionamiento, pagado con ingresos de libre destinación del municipio.",
+        "explicacion": "Incorrecta. Cambia la fuente que asume el cobro, pero el problema es que el cobro no procede: esos pagos están exentos del gravamen."
+      },
+      {
+        "id": "C",
+        "texto": "Aceptarlo: la exención cubre el giro que la Nación hace al municipio, pero no los pagos que este hace después.",
+        "explicacion": "Incorrecta. La exención comprende tanto los recursos transferidos como los gastos que la entidad territorial realiza con ellos."
+      },
+      {
+        "id": "D",
+        "texto": "Informar al tesorero para que pida al banco reversar el cobro, porque esos pagos están exentos del gravamen.",
+        "explicacion": "Correcta. Los recursos del SGP transferidos a las entidades territoriales y los gastos que estas hacen con ellos están exentos, para dichas entidades, del gravamen a las transacciones financieras (art. 97 de la Ley 715). La técnica debe reportarlo al tesorero para que gestione la corrección con el banco."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el banco cobró el cuatro por mil sobre pagos hechos por el municipio con recursos del SGP para agua potable. Regla: el art. 97 de la Ley 715 dispone que los recursos del SGP transferidos a las entidades territoriales y los gastos que estas realicen con ellos están exentos, para esas entidades, del gravamen a las transacciones financieras. Conclusión: el cobro no procede y la técnica debe reportarlo al tesorero para que pida al banco corregirlo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0715_2001.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-076",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Saneamiento fiscal (Ley 617 de 2000)",
+    "subtema": "Aportes del departamento a una empresa de licores con pérdidas tres años seguidos",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 617 de 2000",
+    "articulos": [
+      "art. 14 incs. 1 y 2 (texto vigente)",
+      "art. 14 par. (adicionado por el art. 58 de la Ley 1955 de 2019)"
+    ],
+    "texto_fuente": "Prohíbese al sector central departamental, distrital o municipal efectuar transferencias a las empresas de licores, a las loterías, [...] y a las instituciones de naturaleza financiera de propiedad de las entidades territoriales o con participación mayoritaria de ellas, distintas de las ordenadas por la ley o de las necesarias para la constitución de ellas y efectuar aportes o créditos, directos o indirectos bajo cualquier modalidad. Cuando una Empresa Industrial y Comercial del Estado o sociedad de economía mixta, de aquellas a que se refiere el presente artículo genere pérdidas durante tres (3) años seguidos, se presume de pleno derecho que no es viable y deberá liquidarse o enajenarse la participación estatal en ella, en ese caso sólo procederán las transferencias, aportes o créditos necesarios para la liquidación. [...] Las entidades territoriales podrán incluir dentro de sus planes de inversión, partidas destinadas a fortalecer la reserva técnica de las empresas operadoras de juegos de lotería tradicional o de billetes. También podrán hacerlo para el desarrollo e implementación de un plan de desempeño y/o estrategia comercial; el cual deberá contar con la aprobación previa del Consejo Nacional de juegos de Suerte y Azar, en el que se determinará la viabilidad de la empresa y la rentabilidad de la inversión.",
+    "pregunta": "La empresa de licores de un departamento, empresa industrial y comercial del Estado de propiedad exclusiva del departamento, registró pérdidas en 2023, 2024 y 2025. Su gerente pide incluir en el presupuesto departamental de 2027 un aporte de capital de $15.000 millones para modernizar la planta y recuperar el mercado. El profesional de la secretaría de Hacienda debe emitir concepto sobre la solicitud. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Incluir el aporte si la empresa adopta un plan de desempeño aprobado por el Consejo Nacional de Juegos de Suerte y Azar.",
+        "explicacion": "Incorrecta. Esa posibilidad, con aprobación del Consejo Nacional de Juegos de Suerte y Azar, solo existe para las empresas operadoras de loterías, no para las de licores."
+      },
+      {
+        "id": "B",
+        "texto": "No incluirlo: la empresa debe liquidarse o enajenarse la participación, y solo caben recursos para liquidarla.",
+        "explicacion": "Correcta. El sector central no puede hacer transferencias, aportes ni créditos a las empresas de licores, y una empresa industrial y comercial con pérdidas tres años seguidos se presume no viable: debe liquidarse o enajenarse la participación, y solo proceden los recursos necesarios para la liquidación (art. 14 de la Ley 617)."
+      },
+      {
+        "id": "C",
+        "texto": "Cambiar el aporte por un préstamo del departamento, que no es una transferencia y se recupera con intereses.",
+        "explicacion": "Incorrecta. La prohibición incluye aportes o créditos, directos o indirectos, bajo cualquier modalidad; el préstamo no evade la regla."
+      },
+      {
+        "id": "D",
+        "texto": "Incluir el aporte si la asamblea lo autoriza por ordenanza, como capitalización de una empresa propia.",
+        "explicacion": "Incorrecta. Una ordenanza no puede levantar una prohibición legal. Además, con tres años seguidos de pérdidas, la ley presume de pleno derecho que la empresa no es viable."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la empresa de licores es una empresa industrial y comercial del departamento con pérdidas en 2023, 2024 y 2025, y pide un aporte de capital. Regla: el art. 14 de la Ley 617 prohíbe al sector central hacer transferencias, aportes o créditos a las empresas de licores, salvo los ordenados por la ley o los de su constitución, y presume de pleno derecho no viable a la empresa con pérdidas tres años seguidos, que debe liquidarse o enajenarse. Conclusión: el aporte no procede; solo caben recursos para la liquidación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0617_2000.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Presupuesto territorial",
+    "subtema": "Creación de empleos frente al monto global de gastos de personal del presupuesto inicial",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 91 lit. d) num. 4 (modificado por el art. 29 de la Ley 1551 de 2012)"],
+    "texto_fuente": "4. Crear, suprimir o fusionar los empleos de sus dependencias, señalarles funciones especiales y fijarles sus emolumentos con arreglo a los acuerdos correspondientes. No podrá crear obligaciones que excedan el monto global fijado para gastos de personal en el presupuesto inicialmente aprobado.",
+    "pregunta": "El presupuesto de 2026 de un municipio, tal como lo aprobó el concejo en diciembre de 2025, fijó $6.800 millones para gastos de personal. En mayo de 2026, el concejo adicionó $350 millones a ese rubro. La planta actual costará $6.550 millones en el año. Con arreglo a los acuerdos vigentes, el alcalde quiere crear por decreto, desde agosto, cinco empleos cuyo costo hasta diciembre es de $420 millones, y pide al técnico de talento humano el estudio de costos. ¿Qué debe informar el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que caben: el costo total, $6.970 millones, queda dentro de los $7.150 millones que resultan con la adición.",
+        "explicacion": "Incorrecta. Mide el costo contra el presupuesto adicionado. El alcalde no puede crear obligaciones que excedan el monto global de gastos de personal del presupuesto inicialmente aprobado ($6.800 millones)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no puede crear empleos en el año, porque la planta solo se modifica con el presupuesto de la vigencia siguiente.",
+        "explicacion": "Incorrecta. El alcalde puede crear empleos durante la vigencia, con arreglo a los acuerdos; lo que la ley limita es el costo, que no puede exceder el monto global de personal del presupuesto inicial."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo caben empleos por $250 millones, porque el tope es el monto de personal con el que arrancó la vigencia.",
+        "explicacion": "Correcta. El alcalde no puede crear obligaciones que excedan el monto global de gastos de personal del presupuesto inicialmente aprobado (art. 91, lit. d, num. 4, de la Ley 136): $6.800 − $6.550 = $250 millones. Los $420 millones lo exceden en $170 millones."
+      },
+      {
+        "id": "D",
+        "texto": "Que caben, porque el límite se mide frente a los ingresos de libre destinación de la Ley 617 y no frente al rubro de personal.",
+        "explicacion": "Incorrecta. El indicador de la Ley 617 es otro límite, que también debe cumplirse, pero no reemplaza la regla según la cual la creación de empleos no puede exceder el monto global de personal del presupuesto inicial."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el presupuesto inicial fijó $6.800 millones para personal, la planta actual cuesta $6.550 millones y los nuevos empleos, $420 millones; hubo una adición posterior de $350 millones. Regla: el art. 91, lit. d, num. 4, de la Ley 136 (mod. Ley 1551 de 2012) prohíbe al alcalde crear obligaciones que excedan el monto global de gastos de personal del presupuesto inicialmente aprobado. Cálculo: 6.800 − 6.550 = 250 < 420. Conclusión: solo caben empleos por $250 millones; la adición no amplía ese tope.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Saneamiento fiscal (Ley 617 de 2000)",
+    "subtema": "Creación de contralorías municipales y prohibición de la cuota de fiscalización departamental",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 156 inc. 1 y par. (modificado por el art. 21 de la Ley 617 de 2000)"],
+    "texto_fuente": "Unicamente los municipios y distritos clasificados en categoría especial y primera y aquellos de segunda categoría que tengan más de cien mil (100.000) habitantes, podrán crear y organizar sus propias Contralorías. [...] PARÁGRAFO. En los municipios o distritos en los cuales no haya Contraloría municipal, la vigilancia de la gestión fiscal corresponderá a la respectiva Contraloría departamental. En estos casos no podrá cobrarse cuota de fiscalización u otra modalidad de imposición similar a los municipios o distritos.",
+    "pregunta": "Un municipio de segunda categoría, con 98.000 habitantes, no tiene contraloría propia. La contraloría departamental le envió a la secretaría de Hacienda una cuenta de cobro por una «cuota de fiscalización» de 2026, calculada sobre los ingresos del municipio. El alcalde propone crear una contraloría municipal para dejar de pagar esa cuota y pide concepto a la asesora jurídica de la alcaldía. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede crearla, por ser de segunda categoría, y que mientras tanto debe pagar la cuota a la contraloría departamental.",
+        "explicacion": "Incorrecta. En segunda categoría solo pueden crear contraloría los municipios de más de 100.000 habitantes, y la contraloría departamental no puede cobrar cuota de fiscalización al municipio que vigila."
+      },
+      {
+        "id": "B",
+        "texto": "Que no puede crearla, y que debe seguir pagando la cuota a la contraloría departamental, que es la que lo vigila.",
+        "explicacion": "Incorrecta. Acierta en que no puede crear la contraloría, pero el municipio no debe pagar: cuando no hay contraloría municipal, la departamental vigila sin poder cobrarle cuota de fiscalización."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede crearla, por ser de segunda categoría, y que mientras tanto la contraloría departamental no puede cobrarle cuota.",
+        "explicacion": "Incorrecta. Acierta sobre la cuota, pero un municipio de segunda categoría necesita más de 100.000 habitantes para crear su contraloría, y este tiene 98.000."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede crearla, y que la contraloría departamental, que es la que lo vigila, tampoco puede cobrarle cuota.",
+        "explicacion": "Correcta. Solo pueden crear contraloría los municipios de categoría especial y primera, y los de segunda con más de 100.000 habitantes. Donde no hay contraloría municipal, vigila la departamental, pero no puede cobrar cuota de fiscalización al municipio (art. 156 de la Ley 136, mod. art. 21 de la Ley 617)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: municipio de segunda categoría con 98.000 habitantes, sin contraloría propia, al que la contraloría departamental le cobra una cuota de fiscalización. Regla: el art. 156 de la Ley 136 (mod. art. 21 de la Ley 617) solo permite crear contralorías a los municipios de categoría especial y primera y a los de segunda con más de 100.000 habitantes; donde no hay contraloría municipal, vigila la departamental y no puede cobrar cuota de fiscalización al municipio. Conclusión: no puede crearla y tampoco debe pagar la cuota.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Presupuesto territorial",
+    "subtema": "Incorporación al presupuesto del producto de la venta de acciones del municipio",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Decreto 111 de 1996",
+    "articulos": ["art. 124", "art. 15 inc. 2", "art. 109 inc. 1"],
+    "texto_fuente": "En cualquier evento, las rentas que obtenga el Estado, como consecuencia de la enajenación de acciones, bonos u otros activos, deberán incorporarse en los presupuestos de la Nación o la entidad territorial correspondiente [...] En consecuencia, ninguna autoridad podrá efectuar gastos públicos, erogaciones con cargo al Tesoro o transferir crédito alguno, que no figuren en el presupuesto [...] Mientras se expiden estas normas, se aplicará la Ley Orgánica del Presupuesto en lo que fuere pertinente.",
+    "pregunta": "Un municipio vendió las acciones que tenía en una empresa de servicios públicos y recibió $3.200 millones en su cuenta bancaria. El estatuto de presupuesto del municipio no regula el tema. El secretario de Infraestructura le pide a la técnica de presupuesto que destine ese dinero directamente a la repavimentación del centro, «porque es un ingreso extraordinario que no estaba previsto». ¿Qué debe responderle la técnica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ese valor debe incorporarse primero al presupuesto municipal, y solo después puede comprometerse en la obra.",
+        "explicacion": "Correcta. Las rentas que obtiene una entidad territorial por la enajenación de acciones deben incorporarse en su presupuesto (art. 124 del Decreto 111), y ninguna autoridad puede hacer gastos que no figuren en él (art. 15), normas aplicables al municipio por el art. 109."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede manejarse en una cuenta aparte, como recursos de terceros, y girarse con orden del alcalde.",
+        "explicacion": "Incorrecta. El producto de la venta de acciones es del municipio, no de terceros, y la ley exige incorporarlo al presupuesto."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo debe incorporarse la utilidad sobre el valor en libros, y el resto se maneja como un activo.",
+        "explicacion": "Incorrecta. La ley ordena incorporar las rentas obtenidas por la enajenación, sin distinguir entre utilidad y valor en libros."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede usarse directamente en la obra, porque un ingreso no previsto no requiere pasar por el presupuesto.",
+        "explicacion": "Incorrecta. Precisamente por no estar previsto, el ingreso debe incorporarse al presupuesto antes de gastarse; ninguna autoridad puede hacer gastos que no figuren en él."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el municipio recibió $3.200 millones por la venta de sus acciones y quiere gastarlos sin pasar por el presupuesto. Regla: el art. 124 del Decreto 111 ordena incorporar en el presupuesto de la entidad territorial las rentas obtenidas por la enajenación de acciones, y el art. 15 prohíbe hacer gastos que no figuren en el presupuesto; ambas normas se aplican al municipio porque su estatuto no regula el tema (art. 109). Conclusión: primero se incorporan los recursos; después se comprometen.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-080",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Marco fiscal de mediano plazo",
+    "subtema": "Consistencia del presupuesto con el marco fiscal al aprobarlo en la asamblea",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 819 de 2003",
+    "articulos": [
+      "art. 5 inc. 2 lit. b) y par. (par. modificado por el art. 325 de la Ley 2294 de 2023)",
+      "art. 6"
+    ],
+    "texto_fuente": "Dicho Marco se presentará en el mismo período en el cual se deba presentar el proyecto de presupuesto y debe contener como mínimo: [...] b) Las metas de superávit primario a que hace referencia el artículo 2o de la presente ley, así como el nivel de deuda pública y un análisis de su sostenibilidad; [...] El Marco Fiscal de Mediano Plazo de las entidades territoriales deberá contener la descripción de las estrategias e instrumentos para garantizar su cumplimiento. Los concejos municipales y asambleas departamentales al aprobar el presupuesto y el plan de inversiones del plan de desarrollo deberán asegurarse de que estos sean consistentes con el Marco Fiscal de Mediano Plazo de la entidad territorial. El control al cumplimiento de lo referido en el presente artículo estará a cargo de las Contralorías del orden territorial en el marco de las auditorías de control regular. [...] El proyecto de Presupuesto General de la entidad territorial y los proyectos de presupuesto de las entidades del orden territorial con régimen presupuestal de empresas industriales y comerciales del Estado y sociedades de economía mixta asimiladas a estas deberán ser consistentes con lo establecido en los literales a, b y c del artículo anterior.",
+    "pregunta": "El proyecto de presupuesto de 2027 de un departamento incluye $40.000 millones de un crédito nuevo para construir un estadio. El marco fiscal de mediano plazo, presentado a la asamblea en el mismo período, no prevé deuda nueva en 2027 y calcula con ese supuesto sus metas de superávit primario y de deuda. El secretario de Hacienda sostiene que el marco es solo una referencia y que la contraloría departamental revisará después su cumplimiento; una diputada le objeta que el proyecto no puede aprobarse así. El asesor de la comisión de presupuesto de la asamblea debe recomendar cómo proceder. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar el proyecto como viene, porque la contraloría departamental verificará después, en su auditoría regular, si se ajusta al marco.",
+        "explicacion": "Incorrecta. La contraloría controla el cumplimiento en sus auditorías, pero eso no releva a la asamblea de su deber: al aprobar el presupuesto, debe asegurarse de que sea consistente con el marco fiscal."
+      },
+      {
+        "id": "B",
+        "texto": "No aprobarlo como viene: la asamblea, al aprobar el presupuesto, debe asegurarse de que guarde coherencia con el marco fiscal.",
+        "explicacion": "Correcta. El proyecto de presupuesto de la entidad territorial debe ser consistente con el plan financiero, las metas de superávit primario y deuda, y las acciones del marco (art. 6), y la asamblea, al aprobarlo, debe asegurarse de esa consistencia (art. 5, par., mod. Ley 2294 de 2023). Un crédito no previsto en el marco rompe sus metas: la objeción de la diputada es correcta."
+      },
+      {
+        "id": "C",
+        "texto": "No aprobarlo hasta que el Ministerio de Hacienda rinda concepto sobre la consistencia de la nueva deuda con el marco fiscal.",
+        "explicacion": "Incorrecta. Acierta en que el proyecto no puede aprobarse como viene, pero el concepto del Ministerio de Hacienda sobre la consistencia fiscal está previsto para el trámite de los proyectos de ley en el Congreso (art. 7); en el departamento, la verificación al aprobar el presupuesto le corresponde a la propia asamblea (art. 5, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Aprobarlo, porque la consistencia con el marco solo se exige a los presupuestos de las empresas industriales y comerciales.",
+        "explicacion": "Incorrecta. El art. 6 de la Ley 819 exige la consistencia tanto al proyecto de presupuesto general de la entidad territorial como al de sus empresas industriales y comerciales."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el presupuesto incluye un crédito de $40.000 millones que el marco fiscal, presentado en el mismo período, no contempla en sus metas de superávit primario y deuda. Regla: el art. 6 de la Ley 819 exige que el proyecto de presupuesto territorial sea consistente con el plan financiero, las metas y las acciones del marco, y el par. del art. 5 (mod. Ley 2294 de 2023) obliga a la asamblea a asegurarse de esa consistencia al aprobarlo; el control posterior de la contraloría no la reemplaza. Conclusión: la diputada tiene razón; no debe aprobarse como viene.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0819_2003.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  }
+]
