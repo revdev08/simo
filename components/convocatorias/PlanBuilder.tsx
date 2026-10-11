@@ -1,12 +1,12 @@
 'use client'
 
 // Plan de estudio semanal: el aspirante elige cuántas semanas y horas tiene, y el plan reparte los módulos.
-import { CalendarDays, Clock, Flag, Printer, Repeat, Target } from 'lucide-react'
+import { ArrowRight, CalendarDays, Clock, Flag, LayoutDashboard, Printer, Repeat, Target } from 'lucide-react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { armarPlan, type ModuloPlan } from '@/lib/convocatorias/plan'
 
-const HORAS = [3, 5, 8, 10, 15, 20]
+export const HORAS_PLAN = [3, 5, 8, 10, 15, 20]
 
 const practicarHref = (modulo: string) => `/dashboard?modulo=${encodeURIComponent(modulo)}`
 
@@ -14,10 +14,13 @@ export default function PlanBuilder({
   modulos,
   disponibles,
   semanasIniciales = 8,
+  panelHref,
 }: {
   modulos: ModuloPlan[]
   disponibles: Record<string, number>
   semanasIniciales?: number
+  // Enlace al panel con este mismo plan (semanas y horas), cuando el plan es de una convocatoria
+  panelHref?: (semanas: number, horas: number) => string
 }) {
   const [semanas, setSemanas] = useState(semanasIniciales)
   const [horas, setHoras] = useState(8)
@@ -53,7 +56,7 @@ export default function PlanBuilder({
             Horas de estudio por semana
           </span>
           <div role="radiogroup" aria-labelledby="horas-label" className="mt-3 flex flex-wrap gap-2">
-            {HORAS.map((h) => (
+            {HORAS_PLAN.map((h) => (
               <button
                 key={h}
                 type="button"
@@ -72,6 +75,21 @@ export default function PlanBuilder({
           </div>
         </div>
       </div>
+
+      {panelHref && (
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/40 p-4 print:hidden">
+          <LayoutDashboard className="hidden sm:block w-5 h-5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden />
+          <p className="flex-1 text-sm text-slate-700 dark:text-slate-300">
+            En tu panel este plan te dice qué toca cada semana, cuánto llevas de cada tema y cómo vas frente al mínimo de la prueba.
+          </p>
+          <Link
+            href={panelHref(semanas, horas)}
+            className="shrink-0 inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-blue-500"
+          >
+            Llevar este plan a mi panel <ArrowRight className="w-4 h-4" aria-hidden />
+          </Link>
+        </div>
+      )}
 
       <ol className="grid gap-4 md:grid-cols-2">
         {plan.map((s) => (

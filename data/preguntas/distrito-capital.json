@@ -1110,5 +1110,1109 @@
       "fecha": "2026-10-10",
       "p_estimado": 65
     }
+  },
+  {
+    "id": "TC-BOG-021",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Tributos distritales: principios y no sujeciones",
+    "subtema": "Órganos de control distritales como no contribuyentes del impuesto predial",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 9, inc. 4",
+      "art. 8, inc. 3"
+    ],
+    "texto_fuente": "Finalmente de acuerdo con lo previsto en el artículo 1 del Acuerdo 16 de 1999 y el artículo 26 del Acuerdo 65 de 2002, los sujetos signatarios de la Convención de Viena, la Sociedad Nacional de la Cruz Roja Colombiana, y el Distrito Capital entendido como tal, la Administración Central, la Alcaldía Mayor, los Fondos de Desarrollo Local, las Secretarías, los Departamentos Administrativos, los Establecimientos Públicos, las Empresas Sociales del Estado del orden distrital y los órganos de control distritales, no son contribuyentes, esto es, no sujetos de los impuestos predial unificado, industria y comercio, avisos y tableros, unificado de vehículos y delineación urbana. [...] continuarán vigentes, incluso a partir del 31 de diciembre de 1994, las exenciones y tratamientos preferenciales aplicables a las siguientes entidades nacionales: Universidades públicas, colegios, museos, hospitales pertenecientes a los organismos y entidades nacionales y el Instituto de Cancerología.",
+    "pregunta": "Martha es técnica de atención al contribuyente de la Secretaría Distrital de Hacienda. En una misma mañana atiende cuatro consultas sobre el impuesto predial unificado de 2026. Cada una se refiere a un inmueble ubicado en Bogotá, que no es bien de uso público ni parque, y cuyo propietario es una entidad distinta. ¿Cuál de los siguientes propietarios NO es contribuyente del impuesto predial por su inmueble?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una empresa industrial y comercial del Estado del orden distrital, por el edificio de sus oficinas.",
+        "explicacion": "Incorrecta. El art. 9 enumera como no contribuyentes a la administración central, los fondos de desarrollo local, las secretarías, los departamentos administrativos, los establecimientos públicos, las ESE distritales y los órganos de control distritales. Las empresas industriales y comerciales del Estado no están en esa lista, así que pagan el predial."
+      },
+      {
+        "id": "B",
+        "texto": "La Contraloría General de la República, por el edificio de su gerencia departamental en la ciudad.",
+        "explicacion": "Incorrecta. El art. 9 excluye como contribuyentes a los órganos de control distritales, no a los nacionales. La Contraloría General de la República es un órgano de control del orden nacional y tampoco está entre las entidades nacionales cuyas exenciones conserva el art. 8 (universidades públicas, colegios, museos, hospitales, instalaciones militares y de policía, inmuebles de la rama judicial, entre otros)."
+      },
+      {
+        "id": "C",
+        "texto": "La Personería de Bogotá, por el inmueble en el que funciona su sede principal de atención.",
+        "explicacion": "Correcta. La Personería es un órgano de control del Distrito, y el art. 9 dispone que los órganos de control distritales no son contribuyentes del predial (tampoco de industria y comercio, avisos y tableros, vehículos ni delineación urbana)."
+      },
+      {
+        "id": "D",
+        "texto": "Una universidad privada sin ánimo de lucro, por el campus donde dicta sus programas de pregrado.",
+        "explicacion": "Incorrecta. El art. 9 no incluye a las instituciones educativas privadas, y el art. 8 solo conserva las exenciones de las universidades públicas pertenecientes a entidades nacionales. Una universidad privada paga el predial como cualquier particular."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el propietario es la Personería de Bogotá, órgano de control del Distrito. Regla: según el art. 9 del Decreto 352 de 2002, no son contribuyentes del predial, entre otros, la administración central, los fondos de desarrollo local, los establecimientos públicos, las ESE distritales y los órganos de control distritales. La lista no incluye a los órganos de control nacionales, a las empresas industriales y comerciales ni a los particulares, y el art. 8 solo conserva exenciones de ciertas entidades nacionales. Conclusión: solo la Personería queda por fuera.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-BOG-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto predial unificado",
+    "subtema": "Bienes comunes de una copropiedad sometida a propiedad horizontal",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 24"
+    ],
+    "texto_fuente": "En los términos de la Ley 675 de 2001 y de conformidad con lo establecido en el inciso 2º del artículo 16 de la misma, el impuesto predial sobre cada bien privado incorpora el correspondiente a los bienes comunes del edificio o conjunto, en proporción al coeficiente de copropiedad respectivo.",
+    "pregunta": "Rodrigo es técnico de atención al contribuyente de la Secretaría Distrital de Hacienda. La administradora de un conjunto residencial sometido al régimen de propiedad horizontal le pide un recibo del impuesto predial de 2026, a nombre de la persona jurídica del conjunto, solo para las zonas comunes (piscina, salón social y parqueaderos de visitantes), porque la asamblea quiere pagarlo con el presupuesto de administración. ¿Qué debe explicarle Rodrigo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ese impuesto ya va dentro del predial de cada apartamento, según la participación de cada uno en la copropiedad.",
+        "explicacion": "Correcta. El art. 24 dispone que el predial de cada bien privado incorpora el de los bienes comunes del conjunto, en proporción al coeficiente de copropiedad. No hay un recibo aparte para las zonas comunes."
+      },
+      {
+        "id": "B",
+        "texto": "Que la persona jurídica del conjunto debe declarar las zonas comunes como un predio aparte, con su propio avalúo.",
+        "explicacion": "Incorrecta. Las zonas comunes no se declaran como un predio independiente: su impuesto está incorporado en el de cada unidad privada (art. 24)."
+      },
+      {
+        "id": "C",
+        "texto": "Que las zonas comunes no pagan predial, porque se asimilan a los bienes de uso público, como las vías y los parques.",
+        "explicacion": "Incorrecta. La exclusión del art. 19, lit. f, cobija los bienes de uso público del art. 674 del Código Civil, no los bienes comunes de una copropiedad, que son privados. Su impuesto se paga dentro del de cada unidad."
+      },
+      {
+        "id": "D",
+        "texto": "Que el valor de las zonas comunes se reparte en partes iguales entre las unidades, sin importar su área ni su uso.",
+        "explicacion": "Incorrecta. El reparto no es por partes iguales: el impuesto de los bienes comunes va en el de cada bien privado, en proporción a su coeficiente de copropiedad (art. 24)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se pide un recibo aparte para las zonas comunes de un conjunto en propiedad horizontal. Regla: según el art. 24 del Decreto 352 de 2002, en concordancia con la Ley 675 de 2001, el predial de cada bien privado incorpora el de los bienes comunes, en proporción al coeficiente de copropiedad. Conclusión: no se expide recibo para las zonas comunes; su impuesto ya está en el de cada unidad privada.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-BOG-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto predial unificado",
+    "subtema": "Autoavalúo superior al avalúo catastral: corrección por menor valor",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 20, incs. 1 y 2"
+    ],
+    "texto_fuente": "A partir del año fiscal 2000 la base gravable del impuesto predial unificado para cada año será el valor que mediante autoavalúo establezca el contribuyente, que deberá corresponder, como mínimo, al avalúo catastral vigente al momento de causación del impuesto. Sin embargo, el contribuyente propietario o poseedor podrá determinar la base gravable en un valor superior al avalúo catastral, caso en el cual no procede corrección por menor valor de la declaración inicialmente presentada por ese año gravable.",
+    "pregunta": "Luisa es técnica de la ventanilla de atención al contribuyente de la Secretaría Distrital de Hacienda. En abril de 2026, un propietario presentó la declaración del impuesto predial de ese año con un autoavalúo de $650.000.000, aunque el avalúo catastral vigente de su casa era de $520.000.000. Lo hizo porque piensa venderla y quería que ese valor le sirviera como costo fiscal en el impuesto sobre la renta. En junio cambió de idea y pregunta si puede corregir la declaración de 2026 para declarar $520.000.000 y recuperar lo que pagó de más. ¿Qué debe responderle Luisa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sí puede, porque la base mínima es el avalúo catastral y el exceso declarado se trata como un error corregible.",
+        "explicacion": "Incorrecta. El avalúo catastral es el mínimo, pero quien declara voluntariamente un valor superior no puede después corregir por menor valor la declaración de ese año (art. 20, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que sí puede, con tal de que presente la corrección antes del 31 de diciembre de 2026, cuando termina el período gravable.",
+        "explicacion": "Incorrecta. El art. 20 no condiciona la corrección a una fecha: la excluye cuando el contribuyente declaró una base superior al avalúo catastral."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede corregir, pero la diferencia pagada se le abonará de oficio como saldo a favor en el predial de 2027.",
+        "explicacion": "Incorrecta. El Decreto 352 no prevé ese abono automático. La consecuencia de haber escogido una base superior es que la declaración de ese año se mantiene."
+      },
+      {
+        "id": "D",
+        "texto": "Que no es posible: al escoger un valor mayor que el catastral, ya no puede rebajar por corrección la base de ese año.",
+        "explicacion": "Correcta. El art. 20, inc. 2, permite al propietario o poseedor declarar una base superior al avalúo catastral, pero en ese caso no procede la corrección por menor valor de la declaración de ese año gravable."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el propietario declaró $650.000.000, más que el avalúo catastral de $520.000.000, y ahora quiere corregir hacia abajo. Regla: el art. 20 del Decreto 352 de 2002 fija el avalúo catastral como base mínima y permite declarar un valor superior, pero en ese caso no procede la corrección por menor valor de la declaración de ese año. Conclusión: no puede corregir la declaración de 2026 para bajar la base.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-BOG-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Sobretasa a la gasolina motor",
+    "subtema": "Plazo del distribuidor minorista para pagar la sobretasa al mayorista",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 124, inc. 1",
+      "art. 127, inc. 1 y par. 1"
+    ],
+    "texto_fuente": "La sobretasa se causa en el momento en que el distribuidor mayorista, productor o importador enajena la gasolina motor extra o corriente o ACPM, al distribuidor minorista o al consumidor final. [...] Los responsables cumplirán mensualmente con la obligación de declarar y pagar las sobretasas, en las entidades financieras autorizadas para tal fin, dentro de los dieciocho (18) primeros días calendario del mes siguiente al de causación. [...] PARÁGRAFO PRIMERO. Los distribuidores minoristas deberán cancelar la sobretasa a la gasolina motor corriente o extra y al ACPM al responsable mayorista, dentro de los siete (7) primeros días calendario del mes siguiente al de la causación.",
+    "pregunta": "Pedro es auxiliar de recaudo de la Secretaría Distrital de Hacienda. El administrador de una estación de servicio de Bogotá, que es distribuidor minorista, compró gasolina corriente a un distribuidor mayorista durante todo agosto de 2026. Pregunta hasta qué día tiene plazo para entregarle al mayorista la sobretasa correspondiente a esas compras. ¿Qué debe indicarle Pedro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el viernes 18 de septiembre de 2026, el mismo plazo que tiene el mayorista para declarar.",
+        "explicacion": "Incorrecta. Los 18 primeros días calendario del mes siguiente son el plazo del responsable (mayorista, productor o importador) para declarar y pagar al Distrito (art. 127, inc. 1), no el del minorista para pagarle al mayorista."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el lunes 7 de septiembre de 2026, séptimo día calendario del mes siguiente al de la compra.",
+        "explicacion": "Correcta. La sobretasa se causó en agosto, cuando el mayorista le vendió el combustible (art. 124). El minorista debe pagarla al mayorista dentro de los siete primeros días calendario del mes siguiente al de causación (art. 127, par. 1): el último día es el lunes 7 de septiembre."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el martes 15 de septiembre de 2026, dentro de los quince días calendario del mes siguiente.",
+        "explicacion": "Incorrecta. El plazo de quince días calendario aparece en el Decreto 352 para otros tributos, como el impuesto al consumo de cervezas (art. 105). El minorista tiene siete días calendario para pagar la sobretasa al mayorista."
+      },
+      {
+        "id": "D",
+        "texto": "En el momento de cada compra, porque la sobretasa se paga cuando se causa en cada venta del mayorista.",
+        "explicacion": "Incorrecta. El pago en el momento de la causación es para las ventas que no se hacen directamente a estaciones de servicio (art. 127, par. 2). La estación de servicio tiene hasta el séptimo día calendario del mes siguiente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: una estación de servicio (minorista) compró gasolina al mayorista en agosto de 2026. Regla: la sobretasa se causa cuando el mayorista vende al minorista (art. 124 del Decreto 352 de 2002), y el minorista debe pagarla al mayorista dentro de los siete primeros días calendario del mes siguiente (art. 127, par. 1). Los 18 días son el plazo del mayorista para declarar. Conclusión: hasta el lunes 7 de septiembre de 2026.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-025",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto predial unificado",
+    "subtema": "Avalúo catastral que sirve de base mínima cuando la actualización se incorpora durante el año",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 15",
+      "art. 20, inc. 1",
+      "art. 21, inc. 1"
+    ],
+    "texto_fuente": "El impuesto predial unificado se causa el 1° de enero del respectivo año gravable. [...] la base gravable del impuesto predial unificado para cada año será el valor que mediante autoavalúo establezca el contribuyente, que deberá corresponder, como mínimo, al avalúo catastral vigente al momento de causación del impuesto. [...] Los avalúos catastrales determinados en los procesos de formación y/o actualización catastral se entenderán notificados una vez publique el acto administrativo de clausura, y se incorpore en los archivos de los catastros. Su vigencia será a partir del primero de enero del año siguiente a aquel en que se efectuó la publicación e incorporación.",
+    "pregunta": "Camilo es técnico de atención al contribuyente de la Secretaría Distrital de Hacienda. Una propietaria va a presentar en mayo de 2026 la declaración del impuesto predial de 2026 de su apartamento. El avalúo catastral que regía para el apartamento el 1 de enero de 2026 era de $310.000.000. Dentro de un proceso de actualización catastral, el 16 de marzo de 2026 Catastro Distrital publicó el acto de clausura e incorporó a sus archivos el nuevo avalúo, de $365.000.000. La propietaria quiere declarar el mínimo permitido. ¿Qué base gravable mínima debe usar para 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$365.000.000, porque el nuevo avalúo ya estaba publicado e incorporado cuando ella presenta la declaración.",
+        "explicacion": "Incorrecta. El avalúo de la actualización se entiende notificado al publicarse e incorporarse, pero su vigencia empieza el 1 de enero del año siguiente (art. 21). Para 2026 la base mínima es el avalúo vigente al causarse el impuesto."
+      },
+      {
+        "id": "B",
+        "texto": "$310.000.000, porque el valor de la actualización solo surtirá efectos a partir del 1 de enero de 2027.",
+        "explicacion": "Correcta. El predial se causa el 1 de enero (art. 15) y su base mínima es el avalúo vigente en ese momento (art. 20). El avalúo publicado e incorporado en marzo de 2026 rige desde el 1 de enero de 2027 (art. 21)."
+      },
+      {
+        "id": "C",
+        "texto": "$351.250.000, al ponderar tres meses con el avalúo anterior y nueve meses con el avalúo actualizado.",
+        "explicacion": "Incorrecta. El predial no se prorratea entre avalúos: se causa una sola vez, el 1 de enero (art. 15), con el avalúo vigente en esa fecha como base mínima (art. 20)."
+      },
+      {
+        "id": "D",
+        "texto": "$353.849.315, al prorratear por días: 74 con el avalúo anterior y 291 con el actualizado.",
+        "explicacion": "Incorrecta. El predial no se liquida por fracciones del año: se causa una sola vez, el 1 de enero (art. 15), y su base mínima es el avalúo vigente en esa fecha (art. 20). El avalúo publicado e incorporado en marzo rige desde el 1 de enero de 2027 (art. 21), así que no se combina con el anterior."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el avalúo actualizado se publicó e incorporó el 16 de marzo de 2026. Reglas: el predial se causa el 1 de enero (art. 15 del Decreto 352 de 2002); la base mínima es el avalúo vigente al momento de la causación (art. 20); y los avalúos de formación o actualización rigen desde el 1 de enero del año siguiente a su publicación e incorporación (art. 21). Conclusión: para 2026 la base mínima es $310.000.000; el nuevo avalúo se aplica desde 2027.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-BOG-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto predial unificado",
+    "subtema": "Exclusión de los inmuebles de las iglesias y gravamen de sus demás propiedades",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 19, inc. 1, lit. d y parágrafo"
+    ],
+    "texto_fuente": "No declararán ni pagarán impuesto predial unificado, los siguientes inmuebles: [...] d) Los inmuebles de propiedad de la iglesia católica, destinados al culto y vivienda de las comunidades religiosas, a las curias diocesanas y arquidiocesanas, casas episcopales y curales, y seminarios conciliares. [...] PARÁGRAFO. Las demás propiedades de las iglesias serán gravadas en la misma forma que las de los particulares.",
+    "pregunta": "Sofía es técnica de atención al contribuyente de la Secretaría Distrital de Hacienda. El ecónomo de una parroquia católica de Bogotá le presenta la lista de inmuebles de la parroquia y pregunta cuáles deben declarar y pagar el impuesto predial de 2026: (1) el templo donde se celebra la misa; (2) la casa cural donde vive el párroco; (3) un local comercial contiguo al templo, arrendado a una droguería; y (4) un lote vacío que la parroquia compró para construir en el futuro un salón social y que hoy no tiene ningún uso. ¿Qué debe responderle Sofía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguno, porque los inmuebles de propiedad de la Iglesia católica están por fuera del impuesto predial.",
+        "explicacion": "Incorrecta. La exclusión del art. 19, lit. d, cubre solo los inmuebles destinados al culto, a la vivienda de las comunidades religiosas, a las curias, las casas episcopales y curales y los seminarios. El parágrafo grava las demás propiedades de las iglesias como las de los particulares."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el local arrendado, porque es el único inmueble de la parroquia que le produce una renta.",
+        "explicacion": "Incorrecta. El criterio no es que el inmueble produzca renta, sino su destinación. El lote, aunque no genere ingresos, no está destinado al culto ni a vivienda religiosa, así que también paga."
+      },
+      {
+        "id": "C",
+        "texto": "El local, el lote y la casa cural; solo el templo queda por fuera, por ser el lugar donde se celebra el culto.",
+        "explicacion": "Incorrecta. Las casas curales también están expresamente excluidas por el art. 19, lit. d."
+      },
+      {
+        "id": "D",
+        "texto": "El local arrendado y el lote sin uso; el templo y la vivienda del párroco no deben declarar ni pagar.",
+        "explicacion": "Correcta. El templo (culto) y la casa cural están excluidos por el art. 19, lit. d. El local arrendado y el lote no tienen esa destinación, y según el parágrafo las demás propiedades de las iglesias se gravan como las de los particulares."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la parroquia tiene un templo, una casa cural, un local arrendado y un lote sin uso. Regla: el art. 19, lit. d, del Decreto 352 de 2002 excluye del predial los inmuebles de la Iglesia católica destinados al culto y las casas curales, entre otros; su parágrafo grava las demás propiedades de las iglesias como las de los particulares. Conclusión: declaran y pagan el local y el lote; el templo y la casa cural no.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-BOG-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Depuración de la base gravable bimestral: activos fijos, devoluciones y rendimientos financieros",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 42, incs. 1 y 2"
+    ],
+    "texto_fuente": "El impuesto de industria y comercio correspondiente a cada bimestre, se liquidará con base en los ingresos netos del contribuyente obtenidos durante el período. Para determinarlos, se restará de la totalidad de los ingresos ordinarios y extraordinarios, los correspondientes a actividades exentas y no sujetas, así como las devoluciones, rebajas y descuentos, las exportaciones y la venta de activos fijos. Hacen parte de la base gravable, los ingresos obtenidos por rendimientos financieros, comisiones y en general todos los que no estén expresamente excluidos en este artículo.",
+    "pregunta": "Diana es técnica de la Secretaría Distrital de Hacienda y revisa con un contribuyente el borrador de su declaración de industria y comercio de un bimestre de 2026. La empresa vende electrodomésticos solo en Bogotá. En el bimestre registró estos ingresos: ventas de electrodomésticos por $180.000.000; rendimientos financieros de una cuenta de ahorros por $4.000.000; y $60.000.000 por la venta de un camión de reparto que formaba parte de sus activos fijos. En el mismo bimestre concedió devoluciones y descuentos a clientes por $12.000.000. No tiene exportaciones ni actividades exentas o no sujetas. ¿Cuál es la base gravable del bimestre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$172.000.000",
+        "explicacion": "Correcta. Ingresos totales: $180.000.000 + $4.000.000 + $60.000.000 = $244.000.000. Se restan la venta del activo fijo ($60.000.000) y las devoluciones y descuentos ($12.000.000): $172.000.000. Los rendimientos financieros se quedan en la base (art. 42, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "$168.000.000",
+        "explicacion": "Incorrecta. Resta también los rendimientos financieros ($180.000.000 − $12.000.000), pero el art. 42, inc. 2, dice que hacen parte de la base gravable."
+      },
+      {
+        "id": "C",
+        "texto": "$232.000.000",
+        "explicacion": "Incorrecta. Solo resta las devoluciones y descuentos. La venta de activos fijos también se excluye de la base (art. 42, inc. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "$184.000.000",
+        "explicacion": "Incorrecta. Excluye bien la venta del camión e incluye los rendimientos, pero olvida restar las devoluciones y descuentos de $12.000.000."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos: ventas $180.000.000, rendimientos $4.000.000, venta de activo fijo $60.000.000 y devoluciones $12.000.000. Regla: el art. 42 del Decreto 352 de 2002 resta de los ingresos ordinarios y extraordinarios las devoluciones, rebajas y descuentos, las exportaciones y la venta de activos fijos, y deja en la base los rendimientos financieros. Cálculo: $244.000.000 − $60.000.000 − $12.000.000 = $172.000.000.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto complementario de avisos y tableros",
+    "subtema": "Avisos en vehículos y liquidación sobre el impuesto de industria y comercio a cargo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 57, num. 2",
+      "art. 58",
+      "art. 59"
+    ],
+    "texto_fuente": "Son hechos generadores del impuesto complementario de avisos y tableros, los siguientes hechos realizados en la jurisdicción del Distrito Capital de Bogotá: [...] 2. La colocación de avisos en cualquier clase de vehículos. [...] Son sujetos pasivos del impuesto complementario de avisos y tableros los contribuyentes del impuesto de industria y comercio que realicen cualquiera de los hechos generadores del artículo anterior. [...] Se liquidará como complemento del impuesto de industria y comercio, tomando como base el impuesto a cargo total de industria y comercio a la cual se aplicará una tarifa fija del 15%.",
+    "pregunta": "Hernán es técnico de la Secretaría Distrital de Hacienda y ayuda a un contribuyente a diligenciar su declaración bimestral de industria y comercio, avisos y tableros. La empresa vende materiales para construcción desde una bodega en Bogotá que no tiene ningún aviso, pero sus tres camionetas de reparto llevan pintados el nombre y el logo de la empresa. En el bimestre, sus ingresos netos fueron de $200.000.000 y la tarifa de industria y comercio de su actividad es de 6,9 por mil. Además, sus clientes le practicaron retenciones de industria y comercio por $300.000. ¿Qué valor debe liquidar por avisos y tableros?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$0, porque sin un aviso en la bodega no se configura el hecho generador del impuesto.",
+        "explicacion": "Incorrecta. La colocación de avisos en cualquier clase de vehículos también es hecho generador (art. 57, num. 2). No hace falta que el establecimiento tenga aviso."
+      },
+      {
+        "id": "B",
+        "texto": "$3.000.000, al aplicar una tarifa de 15 por mil sobre los ingresos netos del bimestre.",
+        "explicacion": "Incorrecta. La tarifa no es por mil ni se aplica sobre los ingresos: es del 15% sobre el impuesto de industria y comercio a cargo (art. 59)."
+      },
+      {
+        "id": "C",
+        "texto": "$207.000, que corresponden al 15% del impuesto de industria y comercio del bimestre.",
+        "explicacion": "Correcta. La empresa es contribuyente de industria y comercio y tiene avisos en sus vehículos (arts. 57 y 58). El impuesto de industria y comercio es $200.000.000 × 6,9/1.000 = $1.380.000, y avisos y tableros es el 15% de ese valor: $207.000 (art. 59)."
+      },
+      {
+        "id": "D",
+        "texto": "$162.000, al aplicar el 15% al impuesto que queda después de descontar las retenciones.",
+        "explicacion": "Incorrecta. La base es el impuesto a cargo total de industria y comercio ($1.380.000), no el saldo que queda después de las retenciones."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos: no hay aviso en la bodega, pero sí en las camionetas; ingresos netos de $200.000.000 y tarifa de 6,9 por mil. Reglas: los avisos en vehículos son hecho generador (art. 57, num. 2, del Decreto 352 de 2002); el sujeto pasivo es el contribuyente de industria y comercio (art. 58); y la base es el impuesto a cargo total de industria y comercio, con tarifa del 15% (art. 59). Cálculo: $1.380.000 × 15% = $207.000. Las retenciones no reducen la base.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-BOG-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto sobre vehículos automotores",
+    "subtema": "Vehículo nuevo: base gravable sin IVA y liquidación proporcional a los meses",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 65, inc. 2",
+      "art. 66",
+      "art. 67, par. 2"
+    ],
+    "texto_fuente": "La base gravable para los vehículos que entran en circulación por primera vez está constituida por el valor total registrado en la factura de venta sin incluir el IVA, o cuando son importados directamente por el usuario propietario o poseedor, por el valor total registrado en la declaración de importación. [...] El impuesto se causa el 1º de enero de cada año. En el caso de los vehículos automotores nuevos, el impuesto se causa en la fecha de solicitud de la inscripción en el registro terrestre automotor, que deberá corresponder con la fecha de la factura de venta, o en la fecha de la solicitud de internación. [...] Cuando el vehículo automotor entre en circulación por primera vez, el impuesto se liquidará en proporción al número de meses que reste del respectivo año gravable. La fracción de mes se tomará como un mes completo.",
+    "pregunta": "Andrea es técnica de atención al contribuyente de la Secretaría Distrital de Hacienda. Un ciudadano compró un automóvil particular nuevo. La factura de venta, del lunes 10 de agosto de 2026, registra un valor de $95.000.000 más IVA de $18.050.000, para un total de $113.050.000. Ese mismo día se solicitó la inscripción del vehículo en el registro terrestre automotor en Bogotá. El ciudadano pregunta con qué base y por qué parte del año debe liquidar el impuesto sobre vehículos automotores de 2026. ¿Qué debe responderle Andrea?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Base de $113.050.000 y liquidación por cinco meses, de agosto a diciembre.",
+        "explicacion": "Incorrecta. El número de meses está bien, pero la base de un vehículo nuevo es el valor de la factura sin incluir el IVA (art. 65, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Base de $95.000.000 y liquidación por cuatro meses, de septiembre a diciembre.",
+        "explicacion": "Incorrecta. La base está bien, pero la fracción de agosto se toma como mes completo (art. 67, par. 2), así que son cinco meses."
+      },
+      {
+        "id": "C",
+        "texto": "Base de $113.050.000 y liquidación por cuatro meses, de septiembre a diciembre.",
+        "explicacion": "Incorrecta. Incluye el IVA en la base, cuando la norma lo excluye (art. 65, inc. 2), y no cuenta la fracción de agosto como mes completo (art. 67, par. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Base de $95.000.000 y liquidación por cinco meses, de agosto a diciembre.",
+        "explicacion": "Correcta. La base es el valor de la factura sin IVA (art. 65, inc. 2). El impuesto se causa en la fecha de la solicitud de inscripción, el 10 de agosto (art. 66), y se liquida por los meses que restan del año, contando la fracción de agosto como mes completo: agosto a diciembre, cinco meses (art. 67, par. 2)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos: factura del 10 de agosto de 2026 por $95.000.000 más IVA, e inscripción solicitada ese mismo día. Reglas: la base de un vehículo nuevo es el valor de la factura sin IVA (art. 65, inc. 2, del Decreto 352 de 2002); el impuesto se causa en la fecha de solicitud de la inscripción (art. 66); y se liquida en proporción a los meses que restan del año, con la fracción de mes como mes completo (art. 67, par. 2). Conclusión: base de $95.000.000 y cinco meses.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-BOG-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de azar y espectáculos",
+    "subtema": "Espectáculo ocasional: mes que se declara y base gravable de la boletería",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 85, lit. h",
+      "art. 86",
+      "art. 87",
+      "art. 91"
+    ],
+    "texto_fuente": "Constituirán espectáculos públicos para efectos del impuesto de azar y espectáculos, entre otros los siguientes: [...] h) Las ferias exposiciones. [...] La base gravable será el valor de los ingresos brutos, obtenidos sobre el monto total de: Las boletas de entrada a los espectáculos públicos. [...] La causación del impuesto de azar y espectáculos se da en el momento en que se efectúe el respectivo espectáculo, se realice la apuesta sobre los juegos permitidos, la rifa, el sorteo, el concurso o similar. PARÁGRAFO. Este impuesto se causa sin perjuicio del impuesto de industria y comercio a que hubiere lugar. [...] La declaración y pago del impuesto de azar y espectáculos es mensual. Si el impuesto es generado por la presentación o la realización de espectáculos, apuestas sobre juegos, rifas, sorteos, concursos o eventos similares, en forma ocasional, sólo se deberá presentar declaración del impuesto por el mes en que se realice la respectiva actividad.",
+    "pregunta": "Jaime es técnico de atención al contribuyente de la Secretaría Distrital de Hacienda. Una empresa que no organiza eventos de forma habitual realizará en Bogotá una feria exposición de artesanías del 12 al 15 de noviembre de 2026, y empezó a vender las boletas de entrada en octubre. En total recaudará $80.000.000 por boletería, de los cuales $30.000.000 corresponden a boletas vendidas en octubre. Además, cobrará $40.000.000 a los expositores por el alquiler de los stands. El gerente pregunta cómo debe declarar el impuesto de azar y espectáculos. ¿Qué debe responderle Jaime?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Declarar octubre por $30.000.000 y noviembre por $50.000.000, según el mes en que se vendió cada boleta.",
+        "explicacion": "Incorrecta. El impuesto no se causa al vender la boleta, sino cuando se realiza el espectáculo (art. 87). Como la feria es ocasional, solo se declara el mes en que se realiza (art. 91)."
+      },
+      {
+        "id": "B",
+        "texto": "Presentar una sola declaración, la de noviembre, sobre los $80.000.000 recaudados por boletería.",
+        "explicacion": "Correcta. La feria exposición es un espectáculo público (art. 85, lit. h). El impuesto se causa cuando se realiza el espectáculo (art. 87) y, por ser ocasional, solo se declara el mes en que se efectúa (art. 91). La base es el valor de las boletas de entrada (art. 86). El alquiler de stands no es boletería y tributa por industria y comercio (art. 87, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Declarar octubre y noviembre, por $120.000.000 en total, sumando la boletería y el alquiler de stands.",
+        "explicacion": "Incorrecta. La base son las boletas de entrada (art. 86), no el alquiler de stands, que se grava con industria y comercio. Además, por ser ocasional, solo se declara noviembre (arts. 87 y 91)."
+      },
+      {
+        "id": "D",
+        "texto": "Declarar cada mes de octubre a diciembre, aunque alguno quede en ceros, porque el impuesto es mensual.",
+        "explicacion": "Incorrecta. La declaración mensual es la regla para quienes realizan estas actividades de forma permanente. Quien las realiza de forma ocasional solo declara el mes en que se realiza el espectáculo (art. 91)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos: feria exposición ocasional del 12 al 15 de noviembre, con boletas vendidas desde octubre por $80.000.000 y $40.000.000 por stands. Reglas: la feria exposición es espectáculo público (art. 85 del Decreto 352 de 2002); la base son las boletas de entrada (art. 86); el impuesto se causa al realizarse el espectáculo (art. 87); y si es ocasional, solo se declara el mes en que se realiza (art. 91). Conclusión: una sola declaración por noviembre, sobre $80.000.000.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-BOG-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Tributos distritales: principios y no sujeciones",
+    "subtema": "Competencia para conceder exenciones sobre tributos distritales y plazo máximo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 4, inc. 2",
+      "art. 8, inc. 1",
+      "art. 10"
+    ],
+    "texto_fuente": "Corresponde al Concejo Distrital, de conformidad con la Constitución y la ley, establecer, reformar o eliminar tributos, impuestos y sobretasas; ordenar exenciones tributarias y establecer sistemas de retención y anticipos con el fin de garantizar el efectivo recaudo de aquellos. [...] La Ley no podrá conceder exenciones ni tratamientos preferenciales en relación con los tributos de propiedad del Distrito Capital de Bogotá. [...] El Concejo Distrital sólo podrá otorgar exenciones por plazo limitado, que ningún caso excederán de diez (10) años, todo de conformidad con los planes de desarrollo del Distrito Capital.",
+    "pregunta": "Natalia es profesional especializada de la Dirección Distrital de Impuestos y debe conceptuar sobre dos iniciativas. La primera es un proyecto de ley, en trámite en el Congreso, que exonera del impuesto predial de Bogotá durante cinco años los inmuebles de las empresas que contraten jóvenes. La segunda es un proyecto de acuerdo distrital que exonera del mismo impuesto, durante quince años, las nuevas sedes de empresas de base tecnológica que se instalen en una zona de renovación urbana, con sustento en un programa del plan de desarrollo distrital. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ambas son viables tal como están, porque el Congreso y el Concejo pueden conceder exenciones con término.",
+        "explicacion": "Incorrecta. La ley no puede conceder exenciones sobre los tributos de propiedad del Distrito (art. 8, inc. 1), aunque tengan término; y el Concejo solo puede otorgarlas por un máximo de diez años (art. 10), no por quince."
+      },
+      {
+        "id": "B",
+        "texto": "Que la del proyecto de ley es viable; la del acuerdo también, siempre que reduzca su plazo a diez años o menos.",
+        "explicacion": "Incorrecta. Acierta en el tope de diez años para el acuerdo (art. 10), pero la ley no puede conceder exenciones ni tratamientos preferenciales sobre los tributos de propiedad del Distrito (art. 8, inc. 1): ordenar exenciones de esos tributos corresponde al Concejo (art. 4, inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la del proyecto de ley no es viable; la del acuerdo sí, con sus quince años, porque está atada al plan de desarrollo.",
+        "explicacion": "Incorrecta. Estar de acuerdo con el plan de desarrollo es un requisito, pero no permite superar el límite: las exenciones del Concejo no pueden exceder de diez años (art. 10)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la del proyecto de ley no es viable; la del acuerdo sí, siempre que reduzca su plazo a diez años o menos.",
+        "explicacion": "Correcta. La ley no puede conceder exenciones sobre tributos distritales (art. 8, inc. 1). El Concejo sí puede ordenarlas (art. 4, inc. 2), pero solo por plazo limitado, de no más de diez años, y conforme al plan de desarrollo (art. 10), así que el acuerdo debe reducir su duración."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos: un proyecto de ley que exonera del predial de Bogotá por cinco años y un proyecto de acuerdo que lo hace por quince. Reglas: la ley no puede conceder exenciones sobre los tributos de propiedad del Distrito (art. 8 del Decreto 352 de 2002); el Concejo puede ordenarlas (art. 4), pero por plazo limitado de máximo diez años y conforme al plan de desarrollo (art. 10). Conclusión: la del proyecto de ley no es viable; la del acuerdo sí, si reduce su plazo a diez años o menos.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-BOG-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto predial unificado",
+    "subtema": "Valor de adquisición de un predio por el Distrito con base en el autoavalúo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 30"
+    ],
+    "texto_fuente": "El Distrito Capital de Bogotá, podrá adquirir los predios que hayan sido objeto de autoavalúo, por un valor equivalente al declarado por el propietario para efectos del impuesto predial unificado, incrementado en un veinticinco por ciento (25%). Al valor así obtenido, se le sumarán las adiciones y mejoras que se demuestre haber efectuado, durante el lapso transcurrido entre la fecha a la cual se refiere el avalúo y la fecha en la cual se pretende efectuar la adquisición por parte del Distrito Capital. Igualmente se sumará el valor que resulte de aplicar al autoavalúo, la variación de índice de precios al consumidor para empleados, registrada en el mismo período, según las cifras publicadas por el DANE.",
+    "pregunta": "Gustavo es profesional de la Secretaría Distrital de Hacienda y apoya a una entidad distrital que quiere adquirir un predio con base en el autoavalúo. Para el impuesto predial de 2024, el propietario declaró un autoavalúo de $400.000.000. Entre la fecha a la que se refiere ese avalúo y la fecha prevista para la adquisición, en 2026, el propietario demostró mejoras por $35.000.000, y la variación del índice de precios al consumidor para empleados publicada por el DANE para ese mismo lapso fue del 9%. ¿Por qué valor puede el Distrito adquirir el predio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$571.000.000",
+        "explicacion": "Correcta. $400.000.000 × 1,25 = $500.000.000; más las mejoras, $535.000.000; más el 9% aplicado al autoavalúo ($36.000.000): $571.000.000 (art. 30)."
+      },
+      {
+        "id": "B",
+        "texto": "$535.000.000",
+        "explicacion": "Incorrecta. Incrementa el autoavalúo en el 25% y suma las mejoras, pero olvida sumar la variación del índice de precios aplicada al autoavalúo."
+      },
+      {
+        "id": "C",
+        "texto": "$580.000.000",
+        "explicacion": "Incorrecta. Aplica el 9% sobre el valor ya incrementado ($500.000.000 × 9% = $45.000.000). La norma aplica la variación del índice al autoavalúo declarado ($400.000.000)."
+      },
+      {
+        "id": "D",
+        "texto": "$471.000.000",
+        "explicacion": "Incorrecta. Suma las mejoras y la variación del índice, pero omite el incremento del 25% sobre el valor declarado."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos: autoavalúo de $400.000.000, mejoras de $35.000.000 y variación del IPC para empleados del 9%. Regla: el art. 30 del Decreto 352 de 2002 fija el valor de adquisición en el autoavalúo incrementado en 25%, más las mejoras demostradas, más el resultado de aplicar al autoavalúo la variación del índice. Cálculo: $500.000.000 + $35.000.000 + $36.000.000 = $571.000.000.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-BOG-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Varias actividades con tarifas distintas y liquidación de avisos y tableros",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 54",
+      "art. 57, num. 1",
+      "art. 59"
+    ],
+    "texto_fuente": "Cuando un mismo contribuyente realice varias actividades, ya sean varias comerciales, varias industriales, varias de servicios o industriales con comerciales, industriales con servicios, comerciales con servicios o cualquier otra combinación, a las que de conformidad con lo previsto en el presente decreto correspondan diversas tarifas, determinará la base gravable de cada una de ellas y aplicará la tarifa correspondiente. El resultado de cada operación se sumará para determinar el impuesto a cargo del contribuyente. La administración no podrá exigir la aplicación de tarifas sobre la base del sistema de actividad predominante. [...] 1. La colocación de vallas, avisos, tableros y emblemas en la vía pública, en lugares públicos o privados visibles desde el espacio público. [...] Se liquidará como complemento del impuesto de industria y comercio, tomando como base el impuesto a cargo total de industria y comercio a la cual se aplicará una tarifa fija del 15%.",
+    "pregunta": "Liliana es profesional de fiscalización de la Dirección Distrital de Impuestos y revisa la declaración bimestral de una sociedad que en Bogotá presta servicios de diseño de interiores y además fabrica muebles. En el bimestre, sus ingresos netos fueron de $300.000.000 por diseño y de $100.000.000 por fabricación. La sociedad liquidó todos sus ingresos con la tarifa del diseño, que es su actividad principal. Las tarifas aplicables son de 9,66 por mil para el diseño y de 11,04 por mil para la fabricación de muebles. La sociedad tiene un aviso en la fachada de su sede. Sin redondeos, ¿cuál es el total que debió liquidar por industria y comercio y por avisos y tableros?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$4.443.600",
+        "explicacion": "Incorrecta. Es la liquidación de la sociedad: aplica 9,66 por mil a los $400.000.000 ($3.864.000) más el 15% de avisos. El sistema de actividad predominante no es válido: cada actividad lleva su tarifa (art. 54)."
+      },
+      {
+        "id": "B",
+        "texto": "$4.002.000",
+        "explicacion": "Incorrecta. Liquida bien el impuesto de industria y comercio de cada actividad, pero omite avisos y tableros, que se causa por el aviso de la fachada."
+      },
+      {
+        "id": "C",
+        "texto": "$4.602.300",
+        "explicacion": "Correcta. Diseño: $300.000.000 × 9,66/1.000 = $2.898.000. Fabricación: $100.000.000 × 11,04/1.000 = $1.104.000. Industria y comercio: $4.002.000 (art. 54). Avisos: 15% × $4.002.000 = $600.300 (art. 59). Total: $4.602.300."
+      },
+      {
+        "id": "D",
+        "texto": "$5.078.400",
+        "explicacion": "Incorrecta. Aplica la tarifa más alta (11,04 por mil) a todos los ingresos. Cada actividad debe liquidarse con su propia base y su propia tarifa (art. 54)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos: diseño $300.000.000 (9,66 por mil) y fabricación $100.000.000 (11,04 por mil), con aviso en la fachada. Reglas: con varias actividades se liquida cada base con su tarifa y se suman los resultados, sin aplicar el sistema de actividad predominante (art. 54 del Decreto 352 de 2002); avisos y tableros es el 15% del impuesto a cargo total (art. 59). Cálculo: $2.898.000 + $1.104.000 = $4.002.000; más $600.300 de avisos: $4.602.300.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-BOG-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Ingresos presuntivos mínimos de un parqueadero en el bimestre",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 50",
+      "art. 51 (parqueaderos)"
+    ],
+    "texto_fuente": "En el caso de las actividades desarrolladas por los moteles, residencias y hostales, así como parqueaderos, bares y establecimientos que se dediquen a la explotación de juegos de máquinas electrónicas, los ingresos netos mínimos a declarar en el impuesto de industria y comercio se determinarán con base en el promedio diario de las unidades de actividad. El valor del ingreso promedio diario por unidad de actividad, deberá ser multiplicado por el número de unidades del establecimiento, para obtener el monto mínimo de ingresos netos diarios del respectivo establecimiento. El valor así obtenido se multiplicará por sesenta (60) y se le descontará el número de días correspondiente a sábados o domingos, cuando ordinariamente se encuentre cerrado el establecimiento en dichos días. De esta manera se determinará la base gravable mínima de la declaración bimestral sobre la que deberá tributar, si los ingresos registrados por el procedimiento ordinario resultaren inferiores. [...] Son clase A, aquellos cuya tarifa por vehículo - hora es superior a 0.25 salarios mínimos diarios. Son clase B, aquellos cuya tarifa por vehículo - hora es superior a 0.10 salarios mínimos diarios e inferior 0.25.",
+    "pregunta": "Tatiana es profesional de fiscalización de la Dirección Distrital de Impuestos y revisa la declaración de industria y comercio del bimestre marzo-abril de 2026 de un parqueadero de 800 metros cuadrados. El parqueadero cobra $7.000 por vehículo-hora y cierra todos los domingos; ese bimestre tuvo nueve domingos. En la declaración registró ingresos netos de $14.000.000. Para el caso, suponga un salario mínimo diario de $58.000 y que los promedios diarios mínimos por metro cuadrado, ya ajustados para 2026, son: clase A, $490; clase B, $400; clase C, $370. ¿Cuál es la base gravable mínima que debe tener la declaración del bimestre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$19.200.000",
+        "explicacion": "Incorrecta. Multiplica el ingreso diario mínimo ($320.000) por 60 sin descontar los nueve domingos en que el parqueadero cierra."
+      },
+      {
+        "id": "B",
+        "texto": "$16.320.000",
+        "explicacion": "Correcta. $7.000 está entre 0,10 SMD ($5.800) y 0,25 SMD ($14.500): clase B. Ingreso diario mínimo: 800 × $400 = $320.000. Días: 60 − 9 domingos = 51. Base mínima: $320.000 × 51 = $16.320.000, que supera los $14.000.000 declarados (arts. 50 y 51)."
+      },
+      {
+        "id": "C",
+        "texto": "$16.640.000",
+        "explicacion": "Incorrecta. Usa los 61 días calendario del bimestre (61 − 9 = 52). La norma ordena multiplicar por 60, sin importar los días calendario del bimestre."
+      },
+      {
+        "id": "D",
+        "texto": "$15.096.000",
+        "explicacion": "Incorrecta. Clasifica el parqueadero en la clase C ($370), pero esa clase es para tarifas inferiores a 0,10 salarios mínimos diarios ($5.800). Con $7.000 por hora es clase B."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos: 800 m², $7.000 por vehículo-hora, nueve domingos cerrados e ingresos declarados de $14.000.000. Reglas: la clase B corresponde a tarifas entre 0,10 y 0,25 salarios mínimos diarios (art. 51 del Decreto 352 de 2002); el ingreso diario mínimo por unidad se multiplica por las unidades y por 60, descontando los días de cierre ordinario (art. 50). Cálculo: 800 × $400 × (60 − 9) = $16.320.000. Como lo declarado es inferior, esa es la base mínima.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-BOG-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Base gravable especial de los bancos: rubros que la integran",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 46, num. 1"
+    ],
+    "texto_fuente": "1. Para los bancos, los ingresos operacionales del bimestre representados en los siguientes rubros: a) Cambios: posición y certificado de cambio. b) Comisiones: de operaciones en moneda nacional, de operaciones en moneda extranjera. c) Intereses: de operaciones con entidades públicas, de operaciones en moneda nacional, de operaciones en moneda extranjera. d) Rendimiento de inversiones de la sección de ahorros. e) Ingresos en operaciones con tarjeta de crédito. f) Ingresos varios, no integran la base, por la exclusión que de ellos hace el Decreto Ley 1333 de 1986.",
+    "pregunta": "Óscar es profesional de fiscalización de la Dirección Distrital de Impuestos y verifica la base gravable de industria y comercio de un banco en un bimestre de 2026. Los ingresos operacionales del bimestre en Bogotá fueron: cambios (posición y certificados de cambio), $1.200 millones; comisiones de operaciones en moneda nacional, $2.300 millones; intereses de operaciones en moneda nacional, $15.000 millones; rendimientos de inversiones de la sección de ahorros, $900 millones; ingresos por operaciones con tarjeta de crédito, $1.600 millones; e ingresos varios, $700 millones. ¿Cuál es la base gravable del bimestre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$21.700 millones",
+        "explicacion": "Incorrecta. Suma los ingresos varios. Para los bancos, la norma los saca de la base (art. 46, num. 1, lit. f); solo para otras entidades, como las corporaciones financieras, hacen parte de ella."
+      },
+      {
+        "id": "B",
+        "texto": "$20.100 millones",
+        "explicacion": "Incorrecta. Excluye los rendimientos de inversiones de la sección de ahorros, que sí integran la base de los bancos (art. 46, num. 1, lit. d)."
+      },
+      {
+        "id": "C",
+        "texto": "$21.000 millones",
+        "explicacion": "Correcta. Se suman cambios ($1.200), comisiones ($2.300), intereses ($15.000), rendimientos de la sección de ahorros ($900) y tarjeta de crédito ($1.600): $21.000 millones. Los ingresos varios no integran la base de los bancos (art. 46, num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "$19.400 millones",
+        "explicacion": "Incorrecta. Excluye los ingresos por operaciones con tarjeta de crédito, que sí integran la base de los bancos (art. 46, num. 1, lit. e)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos: rubros operacionales del bimestre de un banco, incluidos $700 millones de ingresos varios. Regla: el art. 46, num. 1, del Decreto 352 de 2002 integra la base de los bancos con cambios, comisiones, intereses, rendimientos de inversiones de la sección de ahorros e ingresos por tarjeta de crédito, y dice que los ingresos varios no la integran. Cálculo: 1.200 + 2.300 + 15.000 + 900 + 1.600 = $21.000 millones.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-BOG-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Margen bruto de comercialización de un distribuidor minorista de combustibles",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 48"
+    ],
+    "texto_fuente": "Para efectos del impuesto de industria y comercio, los distribuidores de derivados del petróleo y demás combustibles, liquidarán dicho impuesto, tomando como base gravable el margen bruto de comercialización de los combustibles. [...] Para el distribuidor minorista, se entiende por margen bruto de comercialización, la diferencia entre el precio de compra al distribuidor mayorista o al intermediario distribuidor y el precio de venta al público. En ambos casos se descontará la sobretasa y otros gravámenes adicionales que se establezcan sobre la venta de los combustibles. Lo anterior se entiende sin perjuicio de la determinación de la base gravable respectiva, de conformidad con las normas generales, cuando los distribuidores desarrollen paralelamente otras actividades sometidas al impuesto.",
+    "pregunta": "Carolina es profesional de fiscalización de la Dirección Distrital de Impuestos y revisa la declaración bimestral de industria y comercio de una estación de servicio de Bogotá, que es distribuidor minorista. En el bimestre vendió al público 100.000 galones de gasolina corriente. La compró al distribuidor mayorista a $14.000 por galón, precio que no incluye la sobretasa, y la vendió al público a $16.500 por galón, precio que sí incluye $1.900 de sobretasa por galón. No hay otros gravámenes sobre la venta. Además, el servicio de lavado de vehículos le generó ingresos netos de $20.000.000. ¿Cuál es la base gravable del bimestre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$80.000.000",
+        "explicacion": "Correcta. Margen por galón: $16.500 − $14.000 − $1.900 de sobretasa = $600. Por 100.000 galones: $60.000.000. Se suman los $20.000.000 del lavado, que tributa por las reglas generales: $80.000.000 (art. 48)."
+      },
+      {
+        "id": "B",
+        "texto": "$270.000.000",
+        "explicacion": "Incorrecta. Calcula el margen sin descontar la sobretasa ($2.500 por galón). El art. 48 ordena descontarla."
+      },
+      {
+        "id": "C",
+        "texto": "$60.000.000",
+        "explicacion": "Incorrecta. Calcula bien el margen de la gasolina, pero deja por fuera el lavado de vehículos, que es otra actividad gravada con base en las reglas generales (art. 48, inc. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "$1.670.000.000",
+        "explicacion": "Incorrecta. Toma el total de las ventas de combustible como si fuera un contribuyente común. Para los distribuidores de combustibles la base es el margen bruto de comercialización (art. 48)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos: 100.000 galones comprados a $14.000 y vendidos a $16.500, con $1.900 de sobretasa incluida en el precio de venta, y $20.000.000 por lavado. Regla: para el minorista, la base es el margen bruto (precio de venta al público menos precio de compra al mayorista), descontando la sobretasa; las demás actividades se gravan por las reglas generales (art. 48 del Decreto 352 de 2002). Cálculo: $600 × 100.000 + $20.000.000 = $80.000.000.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-BOG-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Lugar de causación en la comercialización de energía eléctrica",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 38, inc. 1 y num. 3"
+    ],
+    "texto_fuente": "Para efectos del artículo 24-1 de la Ley 142 de 1994, el impuesto de industria y comercio en la prestación de los servicios públicos domiciliarios, se causa en el municipio en donde se preste el servicio al usuario final sobre el valor promedio mensual facturado. [...] 3- En la compraventa de energía eléctrica realizada por empresas no generadoras y cuyos destinatarios no sean usuarios finales, el impuesto se causa en el municipio que corresponda al domicilio del vendedor, sobre el valor promedio mensual facturado.",
+    "pregunta": "Felipe es profesional de la Dirección Distrital de Impuestos y analiza a una empresa comercializadora de energía eléctrica que no genera energía y tiene su domicilio en Bogotá. En 2026 obtuvo tres clases de ingresos: (1) venta de energía a usuarios finales residenciales de Soacha; (2) venta de energía a otras empresas comercializadoras domiciliadas en Medellín, que no son usuarias finales; y (3) venta de energía a usuarios finales de Bogotá. ¿Qué ingresos causan el impuesto de industria y comercio en Bogotá?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo los de usuarios finales de Bogotá, porque la energía vendida fuera de la ciudad tributa en el municipio del comprador.",
+        "explicacion": "Incorrecta. Acierta en (3) y en (1), pero la venta a comercializadoras que no son usuarias finales, hecha por una empresa no generadora, tributa en el domicilio del vendedor, que es Bogotá (art. 38, num. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Los de usuarios finales de Bogotá y los de las comercializadoras de Medellín, pero no los de Soacha.",
+        "explicacion": "Correcta. La venta a usuarios finales tributa donde se presta el servicio (art. 38, inc. 1): (3) en Bogotá y (1) en Soacha. La venta de una empresa no generadora a destinatarios que no son usuarios finales tributa en el domicilio del vendedor (art. 38, num. 3): (2) en Bogotá."
+      },
+      {
+        "id": "C",
+        "texto": "Los tres, porque la empresa tiene su domicilio en Bogotá y desde allí factura todas sus ventas de energía.",
+        "explicacion": "Incorrecta. El domicilio del vendedor solo define el lugar para las ventas a quienes no son usuarios finales. La venta a usuarios finales de Soacha tributa en Soacha (art. 38, inc. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo los de las comercializadoras de Medellín, porque la venta a usuarios finales tributa donde está la subestación.",
+        "explicacion": "Incorrecta. La regla de la subestación es para la transmisión y conexión de energía (art. 38, num. 2). La venta a usuarios finales tributa donde se presta el servicio, y para (3) ese lugar es Bogotá."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos: comercializadora no generadora, domiciliada en Bogotá, que vende a usuarios finales de Soacha y de Bogotá y a comercializadoras de Medellín. Reglas: en los servicios públicos domiciliarios el impuesto se causa donde se presta el servicio al usuario final (art. 38, inc. 1, del Decreto 352 de 2002); en la compraventa de energía de una empresa no generadora a quien no es usuario final, en el domicilio del vendedor (num. 3). Conclusión: tributan en Bogotá (2) y (3).",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-BOG-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de industria y comercio",
+    "subtema": "Asociación gremial sin ánimo de lucro con actividad comercial: industria y comercio y avisos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 39, lit. c y pars. 1 y 2",
+      "art. 42, par. 2",
+      "art. 57, num. 1",
+      "art. 58"
+    ],
+    "texto_fuente": "No están sujetas al impuesto de industria y comercio las siguientes actividades: [...] c) La educación pública, las actividades de beneficencia, culturales y/o deportivas, las actividades desarrolladas por los sindicatos, por las asociaciones de profesionales y gremiales sin ánimo de lucro, por los partidos políticos y los servicios prestados por los hospitales adscritos o vinculados al sistema nacional de salud. [...] PARÁGRAFO PRIMERO. Cuando las entidades a que se refiere el literal c) de este artículo, realicen actividades industriales o comerciales, serán sujetos del impuesto de industria y comercio respecto de tales actividades. PARÁGRAFO SEGUNDO. Quienes realicen las actividades no sujetas de que trata el presente artículo no estarán obligados a registrarse, ni a presentar declaración del impuesto de industria y comercio. [...] Los contribuyentes que desarrollen actividades parcialmente exentas o no sujetas, deducirán de la base gravable de sus declaraciones, el monto de sus ingresos correspondiente con la parte exenta o no sujeta. [...] 1. La colocación de vallas, avisos, tableros y emblemas en la vía pública, en lugares públicos o privados visibles desde el espacio público. [...] Son sujetos pasivos del impuesto complementario de avisos y tableros los contribuyentes del impuesto de industria y comercio que realicen cualquiera de los hechos generadores del artículo anterior.",
+    "pregunta": "Mónica es profesional de fiscalización de la Dirección Distrital de Impuestos. Una asociación gremial sin ánimo de lucro con sede en Bogotá recibe cuotas de sus afiliados para representar al gremio. Desde este año, además, vende al público libros y artículos promocionales en una tienda dentro de su sede; en el último bimestre esas ventas sumaron $25.000.000. En la fachada tiene un aviso, visible desde la calle, con su nombre. La asociación no figura en el registro de industria y comercio ni ha presentado declaraciones. ¿Qué debe concluir Mónica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no debe inscribirse ni declarar, pues por ser gremial y sin ánimo de lucro sus actividades no están sujetas.",
+        "explicacion": "Incorrecta. La no sujeción de las asociaciones gremiales cubre sus actividades gremiales, no las comerciales: por las ventas de la tienda es sujeto del impuesto (art. 39, par. 1), y la exoneración de registrarse y declarar solo ampara a quienes realizan actividades no sujetas (par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe inscribirse y tributar industria y comercio sobre todos sus ingresos, cuotas incluidas, y avisos y tableros.",
+        "explicacion": "Incorrecta. Acierta en la inscripción y en avisos y tableros, pero las cuotas para la actividad gremial siguen siendo no sujetas y se restan de la base (art. 42, par. 2). Solo las ventas de la tienda se gravan."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe inscribirse y tributar industria y comercio por la tienda, pero no avisos, que solo identifican la sede.",
+        "explicacion": "Incorrecta. Acierta en la base, pero como por la tienda la asociación pasa a ser contribuyente de industria y comercio, el aviso de la fachada, visible desde la calle, la hace sujeto pasivo de avisos y tableros (arts. 57, num. 1, y 58), aunque solo muestre su nombre."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe inscribirse y tributar industria y comercio por las ventas de la tienda y, además, avisos y tableros.",
+        "explicacion": "Correcta. Las actividades gremiales no están sujetas (art. 39, lit. c), pero la venta de libros y artículos es comercial y la hace sujeto del impuesto por esas ventas (par. 1). Deja de estar en el supuesto que la exime de registrarse y declarar (par. 2). Como contribuyente de industria y comercio con aviso visible, también es sujeto de avisos y tableros (art. 58)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos: asociación gremial sin ánimo de lucro que cobra cuotas a sus afiliados, vende libros y artículos en una tienda y tiene un aviso en la fachada. Reglas: sus actividades gremiales no están sujetas, pero si realiza actividades comerciales es sujeto del impuesto por ellas (art. 39, lit. c y par. 1, del Decreto 352 de 2002); los ingresos no sujetos se restan (art. 42, par. 2); y el contribuyente de industria y comercio con avisos es sujeto de avisos y tableros (art. 58). Conclusión: tributa por la tienda y por el aviso.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 68
+    }
+  },
+  {
+    "id": "TC-BOG-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Sobretasa a la gasolina motor",
+    "subtema": "Operaciones que causan la sobretasa y base gravable mensual de un mayorista",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 122, incs. 1 y 3 y par. (inc. 3)",
+      "art. 124",
+      "art. 125"
+    ],
+    "texto_fuente": "Está constituido por el consumo de gasolina motor extra o corriente nacional o importada, en la jurisdicción del Distrito Capital de Bogotá. [...] No generarán sobretasa las exportaciones de gasolina motor extra y corriente o de ACPM. [...] Igualmente, para todos los efectos de esta ley, se entiende por gasolina, la gasolina corriente, la gasolina extra, la nafta o cualquier otro combustible o líquido derivado del petróleo, que se pueda utilizar como carburante en motores de combustión interna diseñados para ser utilizados con gasolina. Se exceptúan las gasolinas del tipo 100/130 utilizadas en aeronaves. [...] La sobretasa se causa en el momento en que el distribuidor mayorista, productor o importador enajena la gasolina motor extra o corriente o ACPM, al distribuidor minorista o al consumidor final. Igualmente se causa en el momento en que el distribuidor mayorista, productor o importador retira el bien para su propio consumo. [...] Está constituida por el valor de referencia de venta al público de la gasolina motor tanto extra como corriente y del ACPM, por galón, que certifique mensualmente el Ministerio de Minas y Energía.",
+    "pregunta": "Ricardo es profesional de la Dirección Distrital de Impuestos y revisa la declaración de la sobretasa a la gasolina de agosto de 2026 de un distribuidor mayorista con operación en Bogotá. En ese mes el mayorista: (1) vendió 80.000 galones de gasolina corriente a estaciones de servicio de Bogotá; (2) retiró 5.000 galones de gasolina corriente para los camiones de su propia flota en Bogotá; (3) exportó 20.000 galones de gasolina corriente; y (4) vendió en Bogotá 3.000 galones de gasolina tipo 100/130 para aeronaves. El valor de referencia de venta al público certificado por el Ministerio de Minas y Energía para ese mes es de $15.000 por galón. ¿Cuál es la base gravable total de la sobretasa del mes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.200.000.000",
+        "explicacion": "Incorrecta. Solo toma las ventas a las estaciones de servicio. El retiro para consumo propio también causa la sobretasa (art. 124, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "$1.320.000.000",
+        "explicacion": "Incorrecta. Incluye los 3.000 galones de gasolina 100/130 para aeronaves, que no se consideran gasolina para efectos de la sobretasa (art. 122, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "$1.275.000.000",
+        "explicacion": "Correcta. Causan la sobretasa las ventas a minoristas (80.000 galones) y el retiro para consumo propio (5.000), es decir, 85.000 galones (art. 124). No la causan las exportaciones ni la gasolina de aviación 100/130 (art. 122). Base: 85.000 × $15.000 = $1.275.000.000 (art. 125)."
+      },
+      {
+        "id": "D",
+        "texto": "$1.575.000.000",
+        "explicacion": "Incorrecta. Incluye los 20.000 galones exportados, que no generan sobretasa (art. 122, inc. 3)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos: 80.000 galones vendidos a estaciones, 5.000 retirados para consumo propio, 20.000 exportados y 3.000 de gasolina 100/130 para aeronaves. Reglas: la sobretasa se causa con la venta al minorista o al consumidor final y con el retiro para consumo propio (art. 124 del Decreto 352 de 2002); las exportaciones no la generan y la gasolina 100/130 de aviación no es gasolina para estos efectos (art. 122); la base es el valor de referencia por galón (art. 125). Cálculo: 85.000 × $15.000 = $1.275.000.000.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-BOG-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "bogota",
+    "modulo": "Distrito Capital (Bogotá)",
+    "tema": "Impuesto de delineación urbana",
+    "subtema": "Sujeto pasivo y liquidación sobre el presupuesto de obra de una ampliación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Distrital 352 de 2002 (compilación de los impuestos distritales de Bogotá)",
+    "articulos": [
+      "art. 71",
+      "art. 74",
+      "art. 75, inc. 1",
+      "art. 77"
+    ],
+    "texto_fuente": "El hecho generador del impuesto de delineación urbana es la expedición de la licencia para la construcción, ampliación, modificación, adecuación y reparación de obras y urbanización de terrenos en el Distrito Capital de Bogotá. [...] Son sujetos pasivos del impuesto de delineación urbana los propietarios de los predios en los cuales se realiza el hecho generador del impuesto. [...] La base gravable del impuesto de delineación urbana es el monto total del presupuesto de obra o construcción. [...] En desarrollo de lo dispuesto en el artículo 158 del Decreto Ley 1421 de 1993, la tarifa del impuesto de delineación urbana es del 2,6% del monto total del presupuesto de obra o construcción.",
+    "pregunta": "Paula es profesional de la Dirección Distrital de Impuestos. Una sociedad constructora fue contratada por el dueño de una casa en Bogotá para ampliarla. El presupuesto total de la obra es de $250.000.000 y la licencia de ampliación se expedirá en octubre de 2026. La casa no está declarada de conservación, la obra no es de vivienda de interés social y el inmueble no fue afectado por actos terroristas ni por catástrofes naturales. La constructora pregunta quién debe declarar y pagar el impuesto de delineación urbana y por qué valor. ¿Qué debe responder Paula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El dueño de la casa, por $6.500.000.",
+        "explicacion": "Correcta. El hecho generador es la expedición de la licencia de ampliación (art. 71). El sujeto pasivo es el propietario del predio, no el constructor (art. 74). La base es el presupuesto total de la obra (art. 75) y la tarifa es del 2,6%: $250.000.000 × 2,6% = $6.500.000 (art. 77)."
+      },
+      {
+        "id": "B",
+        "texto": "La sociedad constructora, por $6.500.000.",
+        "explicacion": "Incorrecta. El valor está bien calculado, pero el sujeto pasivo es el propietario del predio (art. 74), no la empresa que ejecuta la obra."
+      },
+      {
+        "id": "C",
+        "texto": "El dueño de la casa, por $650.000.",
+        "explicacion": "Incorrecta. El sujeto pasivo es correcto, pero aplica la tarifa como 2,6 por mil. La tarifa es del 2,6% del presupuesto de obra (art. 77)."
+      },
+      {
+        "id": "D",
+        "texto": "La sociedad constructora, por $650.000.",
+        "explicacion": "Incorrecta. Se equivoca en el sujeto pasivo, que es el propietario (art. 74), y en la tarifa, que es del 2,6% y no del 2,6 por mil (art. 77)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos: ampliación con licencia, presupuesto de obra de $250.000.000, constructora contratada por el propietario y sin causales de exención. Reglas: el hecho generador es la expedición de la licencia (art. 71 del Decreto 352 de 2002); el sujeto pasivo es el propietario del predio (art. 74); la base es el presupuesto total de la obra (art. 75) y la tarifa es del 2,6% (art. 77). Cálculo: $250.000.000 × 2,6% = $6.500.000, a cargo del propietario.",
+    "fuente_url": "https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/d_alcabog_0352_2002.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
   }
 ]

@@ -38,6 +38,7 @@ const PROGRESS_STORAGE_KEY = 'simo_study_progress'
 const HORAS_STORAGE_KEY = 'simo_horas_semana'
 const SIN_CONVOCATORIA_KEY = 'simo_sin_convocatoria'
 const INICIO_STORAGE_KEY = 'simo_plan_inicio'
+const SEMANAS_STORAGE_KEY = 'simo_plan_semanas'
 
 // Lee y escribe preferencias del navegador sin romper si el almacenamiento no está disponible
 function leerLocal(clave: string): string | null {
@@ -92,6 +93,17 @@ function readConvocatoriaIntent() {
   if (typeof window === 'undefined') return null
   const params = new URLSearchParams(window.location.search)
   return buscarSeleccion(`${params.get('convocatoria')}:${params.get('perfil')}`)
+}
+
+// Semanas y horas del plan que armó en la página pública (?semanas=…&horas=…)
+function readPlanIntent(): { semanas: number | null; horas: number | null } {
+  if (typeof window === 'undefined') return { semanas: null, horas: null }
+  const params = new URLSearchParams(window.location.search)
+  const num = (v: string | null, max: number) => {
+    const n = Number(v)
+    return Number.isInteger(n) && n >= 1 && n <= max ? n : null
+  }
+  return { semanas: num(params.get('semanas'), 26), horas: num(params.get('horas'), 40) }
 }
 
 function readLocalProgress(): unknown {
@@ -204,9 +216,14 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   const seleccion = useMemo(() => buscarSeleccion(convocatoriaClave), [convocatoriaClave])
   // Eligió estudiar sin convocatoria (no se le vuelve a preguntar)
   const [sinConvocatoria, setSinConvocatoria] = useState(() => leerLocal(SIN_CONVOCATORIA_KEY) === '1')
-  const [horasSemana, setHorasSemana] = useState(() => Number(leerLocal(HORAS_STORAGE_KEY)) || 6)
-  // Día en que eligió la convocatoria: desde ahí cuentan las semanas del plan
-  const [planInicio, setPlanInicio] = useState<string | null>(() => leerLocal(INICIO_STORAGE_KEY))
+  const [horasSemana, setHorasSemana] = useState(() => readPlanIntent().horas ?? (Number(leerLocal(HORAS_STORAGE_KEY)) || 8))
+  // Semanas que eligió en el plan público (solo cuentan si la prueba no tiene fecha)
+  const [planSemanas, setPlanSemanas] = useState<number | null>(() => readPlanIntent().semanas ?? (Number(leerLocal(SEMANAS_STORAGE_KEY)) || null))
+  // Día en que eligió la convocatoria: desde ahí cuentan las semanas del plan (si llega una nueva por URL, desde hoy)
+  const [planInicio, setPlanInicio] = useState<string | null>(() => {
+    const intent = readConvocatoriaIntent()
+    return intent && intent.clave !== readSavedConvocatoria() ? hoyISO() : leerLocal(INICIO_STORAGE_KEY)
+  })
   // Constancia (preguntas por día) e historial de simulacros: se guardan junto al progreso
   const [actividad, setActividad] = useState<Record<string, number>>({})
   const [simulacros, setSimulacros] = useState<ResumenSimulacro[]>([])
@@ -219,8 +236,14 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   useEffect(() => {
     const elegida = readConvocatoriaIntent()
     if (!elegida) return
+    const nueva = elegida.clave !== readSavedConvocatoria()
+    const { semanas, horas } = readPlanIntent()
     window.history.replaceState(null, '', window.location.pathname)
     try {
+      if (nueva) localStorage.setItem(INICIO_STORAGE_KEY, hoyISO())
+      if (horas) localStorage.setItem(HORAS_STORAGE_KEY, String(horas))
+      if (semanas) localStorage.setItem(SEMANAS_STORAGE_KEY, String(semanas))
+      else if (nueva) localStorage.removeItem(SEMANAS_STORAGE_KEY)
       localStorage.setItem(CONVOCATORIA_STORAGE_KEY, elegida.clave)
       if (elegida.perfil.area) localStorage.setItem(AREA_STORAGE_KEY, elegida.perfil.area)
       if (elegida.perfil.nivel && !localStorage.getItem(NIVEL_STORAGE_KEY)) localStorage.setItem(NIVEL_STORAGE_KEY, elegida.perfil.nivel)
@@ -514,6 +537,9 @@ export default function StudyApp({ questions, userName }: { questions: Question[
     if (elegida && cambia) {
       setPlanInicio(inicio)
       escribirLocal(INICIO_STORAGE_KEY, inicio)
+      // Las semanas elegidas en el plan público eran de la convocatoria anterior
+      setPlanSemanas(null)
+      escribirLocal(SEMANAS_STORAGE_KEY, null)
     }
     if (elegida) {
       setSinConvocatoria(false)
@@ -620,6 +646,7 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       horasSemana={horasSemana}
       onHorasSemana={chooseHoras}
       planInicio={planInicio ?? undefined}
+      planSemanas={planSemanas ?? undefined}
       onStartSimulacro={startSimulacro}
       onStartModule={(name) => startModule(name)}
       onReviewErrors={startReview}

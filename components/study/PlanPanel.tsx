@@ -10,6 +10,7 @@ import { ESTADO_LABEL, estimacionConfiable, type AvancePlan, type EstadoModulo, 
 import type { SeleccionConvocatoria } from './simulacro-convocatoria'
 import type { ResumenSimulacro } from './meta-progreso'
 import { ProgressBar } from './ui'
+import { HORAS_PLAN } from '@/components/convocatorias/PlanBuilder'
 
 const ESTADO_TONO: Record<EstadoModulo, string> = {
   sin_empezar: 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300',
@@ -236,7 +237,7 @@ export function SemanaCard({
             onChange={(e) => onHoras(Number(e.target.value))}
             className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-2 py-1 text-sm font-semibold text-slate-800 dark:text-slate-200"
           >
-            {[3, 6, 10, 15].map((h) => (
+            {HORAS_PLAN.map((h) => (
               <option key={h} value={h}>
                 {h} h
               </option>

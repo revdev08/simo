@@ -90,7 +90,14 @@ export default function ConvocatoriaPlan({
       <section>
         <h3 className="text-xl font-bold text-slate-900 dark:text-white">Tu plan semana a semana</h3>
         <div className="mt-4">
-          <PlanBuilder key={perfil.id} modulos={modulos} disponibles={disponibles} />
+          <PlanBuilder
+            key={perfil.id}
+            modulos={modulos}
+            disponibles={disponibles}
+            panelHref={(semanas, horas) =>
+              `/dashboard?convocatoria=${encodeURIComponent(slug)}&perfil=${encodeURIComponent(perfil.id)}&semanas=${semanas}&horas=${horas}`
+            }
+          />
         </div>
       </section>
 
@@ -99,7 +106,7 @@ export default function ConvocatoriaPlan({
           <Timer className="w-5 h-5 text-blue-600 dark:text-blue-400" aria-hidden /> Simulacro de {nombre}
         </h3>
         <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
-          En tu panel, el simulacro reparte las preguntas con los pesos de este perfil, con cronómetro y resultado por módulo.
+          En tu panel, el simulacro reparte las preguntas con los pesos de este perfil, con cronómetro y resultado por módulo. Al entrar desde aquí, el panel queda organizado con el plan de esta convocatoria.
           {area ? <> Al abrirlo desde aquí también elegimos por ti el área <strong>{area}</strong>.</> : null}
           {nivel ? <> Si aún no tienes nivel, quedará en <strong>{nivel}</strong>.</> : null}
         </p>
@@ -111,7 +118,7 @@ export default function ConvocatoriaPlan({
             Hacer el simulacro de esta convocatoria <ArrowRight className="w-4 h-4" aria-hidden />
           </Link>
           <span className="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-            <Settings2 className="w-3.5 h-3.5" aria-hidden /> Puedes cambiar la convocatoria en «Configura tu prueba».
+            <Settings2 className="w-3.5 h-3.5" aria-hidden /> Puedes cambiar de concurso en el panel cuando quieras.
           </span>
         </div>
       </section>

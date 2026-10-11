@@ -2219,5 +2219,1102 @@
       "fecha": "2026-10-10",
       "p_estimado": 50
     }
+  },
+  {
+    "id": "TC-SAL-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Radicación: prohibición de auditoría previa y envío por correo certificado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 56 inc. 3",
+      "art. 56 inc. 5"
+    ],
+    "texto_fuente": "Se prohíbe el establecimiento de la obligatoriedad de procesos de auditoría previa a la presentación de las facturas por prestación de servicios o cualquier práctica tendiente a impedir la recepción. [...] También se entienden por recibidas las facturas que hayan sido enviadas por los prestadores de servicios de salud a las Entidades Promotoras de Salud a través de correo certificado, de acuerdo a lo establecido en la Ley 1122 de 2007",
+    "pregunta": "El lunes 5 de octubre de 2026, la auxiliar de facturación de una ESE lleva a la oficina de una EPS las facturas de septiembre, con todos sus soportes. La funcionaria de la ventanilla se niega a recibirlas: según una nueva política de la EPS, ninguna factura se recibe hasta que el auditor de la EPS la revise y la apruebe, y la primera cita para esa revisión es en noviembre. ¿Qué debe hacer la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir la cita con el auditor y radicar las facturas en noviembre, cuando la EPS las haya revisado y aprobado.",
+        "explicacion": "Incorrecta. La Ley 1438 (art. 56) prohíbe imponer una auditoría previa a la presentación de las facturas o cualquier práctica que impida recibirlas. Aceptar la cita retrasaría la radicación y, con ella, los plazos de la EPS para glosar y pagar."
+      },
+      {
+        "id": "B",
+        "texto": "Enviar las facturas a la EPS por correo certificado, que vale como radicación, y reportar la negativa a su jefe.",
+        "explicacion": "Correcta. La exigencia de la EPS es una práctica prohibida (art. 56, inc. 3), y las facturas enviadas por correo certificado se entienden recibidas (art. 56, inc. 5). Así la ESE asegura la fecha de presentación, y el reporte permite a la ESE actuar frente a la EPS."
+      },
+      {
+        "id": "C",
+        "texto": "Dejar las facturas en la ventanilla sin sello de recibido y anotar el 5 de octubre como su fecha de radicación.",
+        "explicacion": "Incorrecta. Dejar las facturas sin constancia de recibo no prueba su presentación. La ley prevé el correo certificado para que se tengan por recibidas cuando la EPS se niega."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir a la Superintendencia de Salud una conciliación para que la EPS reciba las facturas sin la revisión previa.",
+        "explicacion": "Incorrecta. No hace falta un trámite ante la Superintendencia para radicar: la ley ya da a la ESE un medio directo, el correo certificado, para que las facturas se tengan por recibidas."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la EPS se niega a recibir las facturas hasta que su auditor las revise. Regla: el art. 56 de la Ley 1438 prohíbe exigir una auditoría previa a la presentación de las facturas o cualquier práctica que impida recibirlas, y dispone que las facturas enviadas por correo certificado se entienden recibidas. Conclusión: la auxiliar las envía por correo certificado y reporta la negativa.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-042",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Auditoría de cuentas médicas: acceso a la historia clínica y soportes de cobro",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.3.4 inc. 1 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "art. 2.5.3.4.4.1 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "el prestador de servicios de salud o proveedor de tecnologías en salud deberá garantizar a la entidad responsable de pago el acceso a la historia clínica del usuario a través de medios electrónicos o digitales, con el fin de facilitar los procesos de auditoría y seguimiento. La entidad responsable de pago deberá cumplir con las condiciones de seguridad adoptadas por el prestador o proveedor para la guarda y custodia de los datos personales y datos sensibles contenidos en esta. [...] Los prestadores de servicios de salud y proveedores de tecnologías en salud deberán presentar a las entidades responsables de pago las facturas de venta con los soportes definidos por el Ministerio de Salud y Protección Social, sin que haya lugar a exigir soportes adicionales.",
+    "pregunta": "El auditor de cuentas médicas de una EPS va a revisar las facturas de hospitalización que una ESE le radicó en agosto de 2026. Le pide al técnico de cuentas médicas de la ESE que en cinco días le lleve a la oficina de la EPS fotocopias completas de las 40 historias clínicas de esos pacientes y que, en adelante, las anexe en papel a cada factura. ¿Cómo debe proceder el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Llevar las fotocopias a la EPS y anexarlas desde ahora a cada factura, como soporte para la auditoría.",
+        "explicacion": "Incorrecta. La ESE debe facilitar la auditoría, pero por medios electrónicos o digitales (art. 2.5.3.4.3.4). Anexar copias de la historia a cada factura es exigir un soporte adicional a los definidos por el Ministerio, lo que el art. 2.5.3.4.4.1 no permite."
+      },
+      {
+        "id": "B",
+        "texto": "Negar el acceso a las historias hasta que la EPS presente la autorización escrita de cada paciente.",
+        "explicacion": "Incorrecta. La reserva de la historia clínica no impide esta auditoría: el decreto obliga al prestador a garantizar a la EPS el acceso para auditoría y seguimiento, y obliga a la EPS a respetar las condiciones de seguridad del prestador para los datos sensibles."
+      },
+      {
+        "id": "C",
+        "texto": "Dar al auditor acceso digital a las historias, sin anexarlas a las facturas que se radiquen.",
+        "explicacion": "Correcta. El prestador debe garantizar a la EPS el acceso a la historia clínica por medios electrónicos o digitales para la auditoría, y la EPS debe cumplir las condiciones de seguridad del prestador (art. 2.5.3.4.3.4). Las facturas solo llevan los soportes definidos por el Ministerio, sin soportes adicionales (art. 2.5.3.4.4.1)."
+      },
+      {
+        "id": "D",
+        "texto": "Enviar en archivo digital las 40 historias y anexarlas así, en lugar del papel, a cada factura futura.",
+        "explicacion": "Incorrecta. Acierta en usar medios digitales, pero convierte la historia clínica en un anexo de cada factura. Las facturas se presentan solo con los soportes definidos por el Ministerio de Salud, sin que haya lugar a exigir soportes adicionales (art. 2.5.3.4.4.1); la historia se consulta mediante el acceso que garantiza el prestador (art. 2.5.3.4.3.4)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la EPS pide fotocopias de 40 historias y que en adelante se anexen a cada factura. Regla: el art. 2.5.3.4.3.4 del Decreto 780 obliga al prestador a dar a la EPS acceso a la historia clínica por medios electrónicos o digitales, con las condiciones de seguridad del prestador, y el art. 2.5.3.4.4.1 prohíbe exigir soportes adicionales a los definidos por el Ministerio. Conclusión: acceso por medios digitales, sin anexar las historias a las facturas.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-SAL-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Glosas fuera de término tras exigir un soporte adicional: aceptación de la factura",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1438 de 2011 y Decreto 780 de 2016",
+    "articulos": [
+      "Ley 1438 de 2011, art. 57 inc. 1",
+      "Decreto 780 de 2016, art. 2.5.3.4.4.1 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Decreto 780 de 2016, art. 2.5.3.4.4.3 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Decreto 780 de 2016, art. 2.5.3.4.4.4 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "Las entidades responsables del pago de servicios de salud dentro de los veinte (20) días hábiles siguientes a la presentación de la factura con todos sus soportes, formularán y comunicarán a los prestadores de servicios de salud las glosas a cada factura, con base en la codificación y alcance definidos en la normatividad vigente. [...] Los prestadores de servicios de salud y proveedores de tecnologías en salud deberán presentar a las entidades responsables de pago las facturas de venta con los soportes definidos por el Ministerio de Salud y Protección Social, sin que haya lugar a exigir soportes adicionales. [...] La aceptación de la factura de venta por parte de la entidad responsable de pago es expresa cuando dicha entidad informa de ello al prestador o proveedor, o tácita, si vencidos los plazos establecidos en el artículo 57 de la Ley 1438 de 2011, la entidad no formula y comunica al prestador o proveedor las glosas o no se pronuncia sobre el levantamiento total o parcial de estas. [...] A partir del momento en que la factura de venta sea aceptada expresa o tácitamente, se genera la obligación de pago contenida en ella y constituirá un título valor exigible por los valores aceptados",
+    "pregunta": "El martes 1 de septiembre de 2026, una ESE radicó ante una EPS una factura de cirugía con todos los soportes definidos por el Ministerio de Salud, incluido el RIPS validado. El martes 8 de septiembre, la EPS le pidió además una certificación del cirujano sobre la técnica quirúrgica usada, que no está entre esos soportes, y la ESE la envió el martes 15 de septiembre. El viernes 9 de octubre, la EPS comunicó glosas a la factura y sostuvo que su plazo para glosar empezó a correr el 15 de septiembre. ¿Qué debe registrar el técnico de cuentas médicas de la ESE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las glosas son oportunas y deben responderse, porque el plazo de la EPS empezó con la entrega de la certificación.",
+        "explicacion": "Incorrecta. Acepta el conteo de la EPS. El plazo de 20 días hábiles corre desde la presentación de la factura con sus soportes, y la certificación no era uno de ellos: la EPS no podía exigir soportes adicionales (Decreto 780, art. 2.5.3.4.4.1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la factura quedó aceptada por la EPS y debe pasar a cobro, porque las glosas llegaron con el plazo ya vencido.",
+        "explicacion": "Correcta. La factura se presentó completa el 1 de septiembre. Los 20 días hábiles para glosar (Ley 1438, art. 57) vencieron el martes 29 de septiembre, y las glosas llegaron el 9 de octubre. Sin glosas oportunas, la factura queda aceptada en forma tácita (art. 2.5.3.4.4.3) y es exigible por lo aceptado (art. 2.5.3.4.4.4)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la factura debe radicarse de nuevo con la certificación, porque la primera radicación quedó incompleta.",
+        "explicacion": "Incorrecta. La radicación del 1 de septiembre estaba completa: tenía todos los soportes definidos por el Ministerio. La certificación es un soporte adicional que la EPS no podía exigir."
+      },
+      {
+        "id": "D",
+        "texto": "Que las glosas son oportunas y deben responderse, porque la EPS tiene 30 días hábiles desde la radicación para glosar.",
+        "explicacion": "Incorrecta. El plazo para formular y comunicar glosas es de 20 días hábiles (Ley 1438, art. 57). Con 30 días hábiles, contados desde el 1 de septiembre, las glosas habrían llegado a tiempo (hasta el 14 de octubre), pero ese no es el plazo legal."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la factura se radicó el 1 de septiembre con todos los soportes definidos por el Ministerio; la certificación pedida después no era exigible (Decreto 780, art. 2.5.3.4.4.1). Regla: la EPS tiene 20 días hábiles desde la presentación con soportes para glosar (Ley 1438, art. 57); si no lo hace, la factura queda aceptada tácitamente (art. 2.5.3.4.4.3). Cálculo: el plazo venció el 29 de septiembre y las glosas llegaron el 9 de octubre. Conclusión: factura aceptada y a cobro.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Plazo de la entidad responsable de pago para decidir sobre la respuesta a las glosas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011 y Decreto 780 de 2016",
+    "articulos": [
+      "Ley 1438 de 2011, art. 57 incs. 2, 3 y 5",
+      "Decreto 780 de 2016, art. 2.5.3.4.4.3 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "La entidad responsable del pago, dentro de los diez (10) días hábiles siguientes a la recepción de la respuesta, decidirá si levanta total o parcialmente las glosas o las deja como definitivas. [...] Si cumplidos los quince (15) días hábiles, el prestador de servicios de salud considera que la glosa es subsanable, tendrá un plazo máximo de siete (7) días hábiles para subsanar la causa de las glosas no levantadas y enviar las facturas enviadas nuevamente a la entidad responsable del pago. [...] Una vez vencidos los términos, y en el caso de que persista el desacuerdo se acudirá a la Superintendencia Nacional de Salud, bien sea en uso de la facultad de conciliación o jurisdiccional a elección del prestador, en los términos establecidos por la ley. [...] La aceptación de la factura de venta por parte de la entidad responsable de pago es expresa cuando dicha entidad informa de ello al prestador o proveedor, o tácita, si vencidos los plazos establecidos en el artículo 57 de la Ley 1438 de 2011, la entidad no formula y comunica al prestador o proveedor las glosas o no se pronuncia sobre el levantamiento total o parcial de estas.",
+    "pregunta": "Una EPS recibió el lunes 28 de septiembre de 2026 la respuesta de una ESE a las glosas de una factura: la ESE no aceptó ninguna y sustentó cada una. El martes 13 de octubre, la EPS le comunicó que levantaba parte de las glosas y que mantenía las demás. El 12 de octubre de 2026 es festivo. La auxiliar de facturación de la ESE debe actualizar el estado de la factura en el sistema. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la factura quedó aceptada por la EPS, porque esta se pronunció un día después de vencido su plazo.",
+        "explicacion": "Incorrecta. Cuenta como hábil el festivo del 12 de octubre. Sin él, el décimo día hábil después del 28 de septiembre es el martes 13 de octubre, así que la EPS decidió a tiempo y no hubo aceptación tácita de la factura."
+      },
+      {
+        "id": "B",
+        "texto": "Que la ESE puede volver a responder, dentro de los 15 días hábiles siguientes, las glosas que la EPS mantuvo.",
+        "explicacion": "Incorrecta. El art. 57 no prevé una segunda respuesta. Frente a las glosas no levantadas, la ESE puede subsanar en máximo siete días hábiles las que considere subsanables o acudir a la Superintendencia Nacional de Salud si persiste el desacuerdo."
+      },
+      {
+        "id": "C",
+        "texto": "Que las glosas mantenidas deben descontarse de la factura, porque contra la decisión de la EPS no cabe ningún trámite.",
+        "explicacion": "Incorrecta. La decisión de la EPS no cierra el asunto: la ESE puede subsanar y reenviar la factura si considera subsanables las glosas, o acudir a la Superintendencia Nacional de Salud si persiste el desacuerdo (art. 57, incs. 3 y 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Que siguen en pie las glosas que la EPS no retiró, porque esta decidió el último día hábil de su plazo.",
+        "explicacion": "Correcta. La EPS tiene 10 días hábiles desde que recibe la respuesta para decidir (Ley 1438, art. 57). Contados desde el 29 de septiembre y sin el festivo del 12 de octubre, vencen el martes 13 de octubre. La decisión fue oportuna, así que las glosas que no levantó se mantienen."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la EPS recibió la respuesta el lunes 28 de septiembre y decidió el martes 13 de octubre. Regla: tiene 10 días hábiles para levantar las glosas o dejarlas como definitivas (Ley 1438, art. 57); si no se pronuncia a tiempo, la factura se acepta tácitamente (Decreto 780, art. 2.5.3.4.4.3). Cálculo: sin fines de semana ni el festivo del 12 de octubre, el día 10 es el 13 de octubre; si se cuenta el festivo, saldría el 12. Conclusión: decisión oportuna; siguen las glosas no levantadas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Plazo para pagar el valor de las glosas levantadas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 57 inc. 2",
+      "art. 57 inc. 4"
+    ],
+    "texto_fuente": "La entidad responsable del pago, dentro de los diez (10) días hábiles siguientes a la recepción de la respuesta, decidirá si levanta total o parcialmente las glosas o las deja como definitivas. [...] Los valores por las glosas levantadas total o parcialmente deberán ser cancelados dentro del mismo plazo de los cinco (5) días hábiles siguientes, a su levantamiento",
+    "pregunta": "El jueves 29 de octubre de 2026, una EPS comunicó a una ESE su decisión sobre la respuesta a las glosas de una factura: de $9.000.000 glosados, levantó $6.300.000 y mantuvo el resto. El técnico de cuentas médicas de la ESE debe programar en el sistema una alerta con el último día que tiene la EPS para pagar el valor levantado. El 2 de noviembre de 2026 es festivo. ¿Qué fecha debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 3 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta cinco días calendario. El plazo para pagar lo levantado es de cinco días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "El jueves 5 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta cinco días hábiles, pero toma como hábil el festivo del 2 de noviembre."
+      },
+      {
+        "id": "C",
+        "texto": "El viernes 6 de noviembre de 2026.",
+        "explicacion": "Correcta. Lo levantado debe pagarse dentro de los cinco días hábiles siguientes al levantamiento (Ley 1438, art. 57, inc. 4). Desde el 30 de octubre, sin fines de semana ni el festivo del 2 de noviembre, el quinto día hábil es el 6 de noviembre."
+      },
+      {
+        "id": "D",
+        "texto": "El viernes 13 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Aplica diez días hábiles, que es el plazo de la EPS para decidir sobre la respuesta a las glosas, no el plazo para pagar lo que levantó."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la EPS levantó $6.300.000 el jueves 29 de octubre de 2026. Regla: los valores de las glosas levantadas total o parcialmente se pagan dentro de los cinco días hábiles siguientes al levantamiento (Ley 1438, art. 57). Cálculo: 30 de octubre (1), 3 (2), 4 (3), 5 (4) y 6 de noviembre (5); el 2 de noviembre es festivo, y si no se descuenta saldría el 5. Conclusión: viernes 6 de noviembre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAL-046",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Prohibición de nuevas glosas y excepción por hechos nuevos detectados en la respuesta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 57 inc. 1"
+    ],
+    "texto_fuente": "Las entidades responsables del pago de servicios de salud dentro de los veinte (20) días hábiles siguientes a la presentación de la factura con todos sus soportes, formularán y comunicarán a los prestadores de servicios de salud las glosas a cada factura, con base en la codificación y alcance definidos en la normatividad vigente. [...] Una vez formuladas las glosas a una factura no se podrán formular nuevas glosas a la misma factura, salvo las que surjan de hechos nuevos detectados en la respuesta dada a la glosa inicial.",
+    "pregunta": "Una ESE radicó el martes 1 de septiembre de 2026 una factura por una cirugía de cadera, con todos sus soportes. El jueves 10 de septiembre, la EPS glosó un medicamento por falta de pertinencia. El jueves 17 de septiembre, la ESE respondió y, para sustentar el uso del medicamento, anexó la hoja de gastos de la cirugía, que no hacía parte de los soportes; en ella se ve que un material de osteosíntesis quedó cobrado dos veces. El jueves 24 de septiembre, la EPS formuló dos glosas más a esa factura: una por el material cobrado dos veces y otra por la consulta preanestésica, cuyo registro estaba en los soportes desde la radicación. El técnico de cuentas médicas de la ESE las revisa. ¿Qué glosas nuevas son procedentes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos, porque llegaron antes de que vencieran los 20 días hábiles que tenía la EPS para glosar la factura.",
+        "explicacion": "Incorrecta. Es cierto que el 24 de septiembre la EPS seguía dentro de sus 20 días hábiles, pero eso no la habilita para volver a glosar: una vez formuladas las glosas, solo caben nuevas por hechos nuevos detectados en la respuesta (Ley 1438, art. 57)."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguna, porque la EPS ya había glosado la factura y después de eso no puede volver a glosarla.",
+        "explicacion": "Incorrecta. La prohibición de nuevas glosas tiene una excepción: las que surgen de hechos nuevos detectados en la respuesta a la glosa inicial, como el material cobrado dos veces."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la del material cobrado dos veces, porque ese error se conoció con lo que la ESE aportó al responder.",
+        "explicacion": "Correcta. Formuladas las glosas, la EPS no puede formular otras a la misma factura, salvo las que surjan de hechos nuevos detectados en la respuesta (Ley 1438, art. 57). El cobro doble apareció en la hoja de gastos anexada a la respuesta, así que esa glosa procede; la consulta preanestésica, en cambio, pudo glosarse desde el principio y su glosa es improcedente."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la de la consulta preanestésica, porque la del material debió incluirse desde la primera glosa.",
+        "explicacion": "Incorrecta. Invierte la regla. La consulta preanestésica estaba en los soportes desde la radicación, así que no es un hecho nuevo; el cobro doble del material sí lo es, porque se conoció con la respuesta."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la EPS ya había glosado la factura y después formuló dos glosas más: una por un cobro doble que se vio en la hoja anexada a la respuesta de la ESE y otra por una consulta que estaba en los soportes desde el inicio. Regla: una vez formuladas las glosas, no se pueden formular nuevas a la misma factura, salvo las que surjan de hechos nuevos detectados en la respuesta (Ley 1438, art. 57), aunque no hayan vencido los 20 días hábiles. Conclusión: solo es procedente la del material.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-SAL-047",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Reconocimiento y pago",
+    "subtema": "Recaudo de cuotas moderadoras pactado con el prestador",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.5.3 incs. 1 y 2 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "Las entidades promotoras de salud y las entidades adaptadas son responsables del recaudo de los copagos y cuotas moderadoras [...] En los acuerdos de voluntades se puede pactar el recaudo de copagos, cuotas moderadoras y de recuperación por parte de los prestadores de servicios de salud o proveedores de tecnologías en salud, el que solo podrá considerarse como parte del pago a estas cuando exista un recaudo efectivo de su valor. Igualmente, deberá establecerse el mecanismo a través del cual el prestador o proveedor notifique a la EPS, entidad adaptada o entidad territorial del no pago por parte del usuario, evento en el cual corresponderá a estas reconocer y pagar dicha suma y adelantar el cobro al usuario.",
+    "pregunta": "En el acuerdo de voluntades por evento entre una ESE y una EPS se pactó que la ESE recauda en la admisión las cuotas moderadoras de consulta externa, de $5.000 cada una, y que avisa a la EPS, por el canal acordado, cuando un usuario no paga. En septiembre de 2026 la ESE prestó 40 consultas, cada una con una tarifa pactada de $60.000, de la cual hace parte la cuota moderadora. En la admisión, 34 usuarios pagaron la cuota y 6 no la pagaron, y la auxiliar de admisiones reportó esos 6 casos por el canal acordado. ¿Cuánto debe pagar la EPS a la ESE por esas 40 consultas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.200.000.",
+        "explicacion": "Incorrecta. Descuenta las 40 cuotas, como si todas se hubieran recaudado. Las 6 que no se pagaron no cuentan como pago a la ESE: la EPS debe reconocerlas y cobrarlas a los usuarios."
+      },
+      {
+        "id": "B",
+        "texto": "$2.230.000.",
+        "explicacion": "Correcta. Las 40 consultas valen $2.400.000. Solo las cuotas recaudadas efectivamente (34 × $5.000 = $170.000) cuentan como parte del pago (Decreto 780, art. 2.5.3.4.5.3). Las 6 no pagadas, reportadas por el canal pactado, las reconoce la EPS, que luego las cobra a los usuarios: $2.400.000 − $170.000 = $2.230.000."
+      },
+      {
+        "id": "C",
+        "texto": "$2.370.000.",
+        "explicacion": "Incorrecta. Invierte la regla: descuenta las 6 cuotas que no se pagaron ($30.000) en lugar de las 34 que la ESE sí recaudó."
+      },
+      {
+        "id": "D",
+        "texto": "$2.400.000.",
+        "explicacion": "Incorrecta. No descuenta las 34 cuotas que la ESE recaudó. Como la cuota hace parte de la tarifa de $60.000, lo recaudado efectivamente es parte del pago a la ESE; cobrarlo también a la EPS sería cobrarlo dos veces."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la ESE recaudó 34 cuotas de $5.000 y reportó por el canal pactado las 6 que no se pagaron. Regla: el recaudo de cuotas a cargo del prestador solo cuenta como parte del pago cuando es efectivo, y por las no pagadas la EPS reconoce el valor y lo cobra al usuario (Decreto 780, art. 2.5.3.4.5.3). Cálculo: 40 × $60.000 = $2.400.000, menos 34 × $5.000 = $170.000. Conclusión: la EPS paga $2.230.000.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-048",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Glosa por ausencia en la BDUA de usuarios incluidos en la base entregada por la EPS",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.5.4, parágrafo (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "En los acuerdos de voluntades que incluyan modalidades de pago prospectivas y en los casos que se describen a continuación, se deberán realizar devoluciones y descuentos de los recursos: [...] PARÁGRAFO. El cobro de los servicios y tecnologías en salud que hayan sido prestados o provistos a la población acorde con la base de datos suministrada por la entidad responsable de pago, no podrá ser objeto de devolución o glosa, teniendo como fundamento que el usuario al momento de la atención no está incluido en la BDUA.",
+    "pregunta": "Una ESE tiene con una EPS un acuerdo por capitación para la baja complejidad, y la EPS le entrega cada mes la base de datos de la población asignada. La EPS glosó la factura de capitación de agosto de 2026 en lo que corresponde a 12 usuarios atendidos ese mes, porque el día de la atención no figuraban en la Base de Datos Única de Afiliados (BDUA). El técnico de cuentas médicas de la ESE comprueba que los 12 estaban en el listado de agosto. ¿Qué respuesta a esa glosa debe proyectar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptarla, porque correspondía a la ESE verificar a cada usuario en la BDUA antes de atenderlo.",
+        "explicacion": "Incorrecta. Traslada a la ESE una carga que el decreto no le impone: si la atención se hizo con la base de datos que la EPS entregó, la ausencia en la BDUA no permite glosar ni devolver el cobro (art. 2.5.3.4.5.4, parágrafo)."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptarla solo para los usuarios que tampoco figuren hoy en la BDUA, y rechazarla para los demás.",
+        "explicacion": "Incorrecta. Lo que importa es que los usuarios estaban en la base que entregó la EPS cuando se los atendió. Ninguno puede glosarse por no figurar en la BDUA, sin importar lo que esta muestre hoy."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazarla y, además, cobrar a la EPS por evento las atenciones de esos 12 usuarios, por fuera de la capitación.",
+        "explicacion": "Incorrecta. Acierta en que la glosa no procede, pero esos usuarios hacen parte de la población capitada: su atención está cubierta por la capitación y no se cobra aparte por evento."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazarla en su totalidad y mantener a los 12 usuarios dentro del cobro de la capitación de agosto.",
+        "explicacion": "Correcta. El cobro de servicios prestados a la población de la base de datos que entregó la entidad responsable de pago no puede devolverse ni glosarse con el argumento de que el usuario no estaba en la BDUA al momento de la atención (Decreto 780, art. 2.5.3.4.5.4, parágrafo). Como los 12 estaban en el listado de agosto, la glosa se rechaza por completo y su atención sigue cubierta por la capitación."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los 12 usuarios estaban en el listado que la EPS entregó para agosto, en un acuerdo por capitación. Regla: el parágrafo del art. 2.5.3.4.5.4 del Decreto 780 prohíbe devolver o glosar el cobro de servicios prestados a la población de la base suministrada por la entidad responsable de pago con el argumento de que el usuario no estaba en la BDUA al momento de la atención. Conclusión: la glosa se rechaza y los 12 siguen dentro de la capitación.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAL-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Acuerdos de voluntades",
+    "subtema": "Capitación: identificación de la modalidad y oportunidad del pago",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016 y Ley 1122 de 2007",
+    "articulos": [
+      "Decreto 780 de 2016, art. 2.5.3.4.2.3, nums. 2 y 3 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Decreto 780 de 2016, art. 2.5.3.4.2.2, num. 18 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Ley 1122 de 2007, art. 13, lit. d"
+    ],
+    "texto_fuente": "2. Pago global prospectivo: Modalidad de pago por grupo de personas determinadas, mediante la cual se pacta por anticipado el pago de una suma fija global para la prestación de servicios o el suministro de tecnologías en salud a esa población durante un periodo de tiempo definido, cuya frecuencia de uso es ajustada por el nivel de riesgo en salud y el cambio de los volúmenes de la población estimados en el acuerdo de voluntades. [...] 3. Pago por capitación: Modalidad de pago prospectiva que aplica para la prestación o provisión de la demanda potencial de un conjunto de servicios y tecnologías en salud, que se prestan o proveen en los servicios de baja complejidad, mediante la cual las partes establecen el pago anticipado de una suma fija por usuario, dentro de una población asignada y previamente identificada, durante un período de tiempo determinado. [...] 18. Los plazos de pago, los cuales no pueden exceder lo establecido en los artículos 13 de la Ley 1122 de 2007, 57 de la Ley 1438 de 2011 y 3o de la Ley 2024 de 2020, según el caso. [...] pagarán los servicios a los Prestadores de Servicios de salud habilitados, mes anticipado en un 100% si los contratos son por capitación. Si fuesen por otra modalidad, como pago por evento, global prospectivo o grupo diagnóstico se hará como mínimo un pago anticipado del 50% del valor de la factura, dentro de los cinco días posteriores a su presentación. En caso de no presentarse objeción o glosa alguna, el saldo se pagará dentro de los treinta días (30) siguientes a la presentación de la factura",
+    "pregunta": "La auxiliar de facturación de una ESE carga en el sistema un nuevo acuerdo de voluntades con una EPS. Para consulta, laboratorio básico y demás servicios de baja complejidad, el acuerdo fija un valor por persona y por mes por cada uno de los 18.000 afiliados que la EPS le asignó, que aparecen con nombre y documento en una base de datos, sin importar cuántas veces usen los servicios. La auxiliar debe escoger en el sistema la modalidad de pago y la regla de giro que debe cumplir la EPS. ¿Qué debe escoger?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pago global prospectivo, con giro anticipado del valor total de cada mes.",
+        "explicacion": "Incorrecta. El giro anticipado del total es la regla de la capitación, pero la modalidad está mal: el pago global prospectivo se pacta como una suma fija global por un grupo de personas, no como un valor por cada usuario asignado para la baja complejidad."
+      },
+      {
+        "id": "B",
+        "texto": "Capitación, con giro del valor de cada mes dentro de los 30 días siguientes a la presentación de la factura.",
+        "explicacion": "Incorrecta. Identifica bien la capitación, pero le aplica el plazo de 30 días que la Ley 1122 da para el saldo de las facturas de otras modalidades. En la capitación el pago es mes anticipado y por el 100%."
+      },
+      {
+        "id": "C",
+        "texto": "Pago global prospectivo, con un giro mínimo del 50% dentro de los cinco días siguientes a la factura.",
+        "explicacion": "Incorrecta. Confunde la modalidad y aplica el anticipo mínimo del 50% en cinco días, que la Ley 1122 prevé para modalidades distintas de la capitación, como el evento o el pago global prospectivo."
+      },
+      {
+        "id": "D",
+        "texto": "Capitación, con giro anticipado del valor total de cada mes.",
+        "explicacion": "Correcta. Un valor fijo por cada usuario de una población asignada e identificada, para servicios de baja complejidad, es pago por capitación (Decreto 780, art. 2.5.3.4.2.3, num. 3). En los contratos por capitación, la EPS paga mes anticipado y en un 100% (Ley 1122, art. 13, lit. d), y el acuerdo no puede pactar un plazo mayor (art. 2.5.3.4.2.2, num. 18)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el acuerdo paga un valor fijo por persona y por mes por cada afiliado asignado e identificado, para servicios de baja complejidad. Regla: esa es la definición del pago por capitación (Decreto 780, art. 2.5.3.4.2.3, num. 3), y en la capitación la EPS paga mes anticipado en un 100% (Ley 1122, art. 13, lit. d); el acuerdo no puede pactar plazos mayores (art. 2.5.3.4.2.2, num. 18). Conclusión: capitación, con giro anticipado del total de cada mes.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-050",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Silencio de la EPS ante solicitudes de autorización posteriores a la atención de urgencias",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.2.7, inc. 2, nums. 1 y 2, e inc. 3"
+    ],
+    "texto_fuente": "La respuesta a la solicitud de autorización de servicios posteriores a la atención de urgencias, deberá darse por parte de la entidad responsable del pago, dentro de los siguientes términos: 1. Para atención subsiguiente a la atención de urgencias: Dentro de las dos (2) horas siguientes al recibo de la solicitud. 2. Para atención de servicios adicionales: Dentro de las seis (6) horas siguientes al recibo de la solicitud. [...] de no obtenerse respuesta por parte de la entidad responsable del pago dentro de los términos aquí establecidos, se entenderá como autorizado el servicio y no será causal de glosa, devolución y/o no pago de la factura.",
+    "pregunta": "En el servicio de urgencias de una ESE, la auxiliar de admisiones tramitó ante una EPS dos solicitudes de autorización para un mismo paciente, ya estabilizado. A las 9:00 a. m. pidió autorizar su hospitalización, como atención subsiguiente a la de urgencias, y la EPS contestó negándola a las 12:30 p. m. A las 2:00 p. m. pidió autorizar una resonancia magnética, como servicio adicional, y la EPS la negó a las 7:00 p. m. La ESE prestó los dos servicios y la EPS glosó ambos por falta de autorización. La auxiliar debe informar a cuentas médicas qué glosas pueden rechazarse porque la EPS no respondió a tiempo. ¿Qué debe informar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos, porque la EPS se demoró más de dos horas en contestar cada una de las solicitudes.",
+        "explicacion": "Incorrecta. Aplica a las dos solicitudes el término de dos horas, que es solo para la atención subsiguiente. Para los servicios adicionales, como la resonancia, la EPS tenía seis horas y respondió en cinco."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la de la resonancia, porque para un servicio adicional la EPS tenía dos horas y tardó cinco.",
+        "explicacion": "Incorrecta. Invierte los términos: dos horas son para la atención subsiguiente y seis para los servicios adicionales. La negativa de la resonancia llegó dentro de las seis horas."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la de la hospitalización, porque para esa atención la EPS tenía dos horas y tardó tres y media.",
+        "explicacion": "Correcta. Para la atención subsiguiente a la de urgencias, la EPS debe responder dentro de las dos horas siguientes al recibo de la solicitud, y para servicios adicionales, dentro de las seis (Decreto 780, art. 2.5.3.2.7). Sobre la hospitalización respondió a las tres horas y media, así que el servicio se entiende autorizado y no es causal de glosa. La negativa de la resonancia llegó a tiempo."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna, porque la EPS tenía seis horas para contestar cada solicitud y respondió antes de ese límite.",
+        "explicacion": "Incorrecta. Aplica a las dos solicitudes el término de seis horas, que es solo para los servicios adicionales. Para la hospitalización, como atención subsiguiente, la EPS tenía dos horas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la hospitalización (atención subsiguiente) se pidió a las 9:00 a. m. y se respondió a las 12:30 p. m.; la resonancia (servicio adicional) se pidió a las 2:00 p. m. y se respondió a las 7:00 p. m. Regla: la EPS responde en dos horas en el primer caso y en seis en el segundo; si no responde a tiempo, el servicio se entiende autorizado y no es causal de glosa (Decreto 780, art. 2.5.3.2.7). Conclusión: solo se rechaza la glosa de la hospitalización.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-051",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Glosa por falta de autorización en la atención del cáncer infantil",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.7.4 inc. 2 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "art. 2.5.3.4.2.2 num. 13 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "No habrá lugar a la solicitud de autorización para la atención integral del cáncer infantil, en cumplimiento de lo dispuesto por el artículo 4o de la Ley 2026 de 2020 [...] 13. Identificación de los servicios y tecnologías de salud que requieren autorización para su prestación o provisión y mecanismo expedito para su trámite.",
+    "pregunta": "Una EPS glosó por falta de autorización dos cobros de una ESE: las sesiones de quimioterapia de un niño de 8 años con leucemia y una cirugía programada de rodilla de un adulto. El acuerdo de voluntades incluye esa cirugía en la lista de servicios que requieren autorización, y la ESE la realizó sin pedirla. El técnico de cuentas médicas debe proyectar la respuesta a las glosas. ¿Qué glosas puede rechazar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos, porque desde 2022 la norma eliminó la autorización previa para todos los servicios contratados.",
+        "explicacion": "Incorrecta. El decreto no suprimió todas las autorizaciones: los acuerdos deben identificar los servicios que la requieren y un mecanismo expedito para tramitarla (art. 2.5.3.4.2.2, num. 13). La cirugía de rodilla estaba en esa lista."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguna, porque todo servicio distinto de la atención de urgencias necesita la autorización de la EPS.",
+        "explicacion": "Incorrecta. El decreto exime de autorización, entre otras, la atención integral del cáncer infantil, aunque no sea una urgencia (art. 2.5.3.4.7.4)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la de la cirugía, porque los tratamientos de alto costo, como la quimioterapia, exigen autorización previa.",
+        "explicacion": "Incorrecta. Invierte el caso: la quimioterapia del niño hace parte de la atención integral del cáncer infantil, que no requiere autorización, mientras que la cirugía de rodilla sí la requería según el acuerdo."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la de la quimioterapia del niño, porque la cirugía sí figuraba en la lista pactada del acuerdo.",
+        "explicacion": "Correcta. No hay lugar a pedir autorización para la atención integral del cáncer infantil (Decreto 780, art. 2.5.3.4.7.4), así que esa glosa no procede. La cirugía de rodilla figuraba en el acuerdo entre los servicios que requieren autorización (art. 2.5.3.4.2.2, num. 13), y la ESE no la pidió."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: una glosa recae sobre la quimioterapia de un niño con leucemia y la otra sobre una cirugía que el acuerdo somete a autorización. Regla: el art. 2.5.3.4.7.4 del Decreto 780 dispone que no hay lugar a solicitar autorización para la atención integral del cáncer infantil; los demás servicios que la requieran se identifican en el acuerdo (art. 2.5.3.4.2.2, num. 13). Conclusión: solo se rechaza la glosa de la quimioterapia.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-SAL-052",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Acuerdos de voluntades",
+    "subtema": "Asignación de afiliados sin acuerdo con la EPS receptora",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.7.9 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "En los casos de asignación de afiliados, hasta tanto sea contratada la red integral de la entidad promotora de salud receptora en el municipio donde le fueron asignados los afiliados, se podrá continuar la prestación de los servicios y tecnologías en salud con el prestador de servicios de salud o proveedor de tecnologías de salud que atendía a los usuarios antes de la fecha en que se haga efectiva la asignación, sin que se requiera la suscripción de un acuerdo de voluntades con este. Salvo pacto en contrario, la EPS receptora le reconocerá al prestador o proveedor las atenciones bajo la modalidad de pago por evento. [...] En todo caso, se deberá garantizar que la prestación se realice, como mínimo, en las mismas condiciones de acceso, oportunidad y calidad en las que se prestaba antes de la asignación y no podrá ser interrumpida por razones administrativas o económicas.",
+    "pregunta": "La Superintendencia de Salud ordenó liquidar una EPS, y sus afiliados de un municipio fueron asignados a otra EPS. La ESE local era la que atendía a esos usuarios antes de que la asignación se hiciera efectiva, y ellos siguen llegando a ella. La EPS receptora todavía no ha contratado su red en ese municipio ni ha firmado acuerdo alguno con la ESE, y tampoco le ha propuesto condiciones especiales. La auxiliar de admisiones debe registrar en el sistema cómo se cobrarán sus atenciones. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que se atienden y se cobran a la EPS receptora servicio por servicio, sin esperar a que firme un acuerdo.",
+        "explicacion": "Correcta. En la asignación de afiliados, mientras la EPS receptora no contrate su red, el prestador que atendía a los usuarios antes de la asignación puede seguir haciéndolo sin acuerdo de voluntades y, salvo pacto en contrario, la receptora le reconoce las atenciones por evento (Decreto 780, art. 2.5.3.4.7.9)."
+      },
+      {
+        "id": "B",
+        "texto": "Que se atienden y se cobran a la EPS en liquidación hasta que la receptora firme un acuerdo con la ESE.",
+        "explicacion": "Incorrecta. Desde que la asignación se hace efectiva, los usuarios son de la EPS receptora, y es ella la que reconoce las atenciones."
+      },
+      {
+        "id": "C",
+        "texto": "Que se atienden y se cobran a la EPS receptora por capitación, con el valor del contrato de la EPS anterior.",
+        "explicacion": "Incorrecta. A falta de pacto, la regla es el pago por evento, no la capitación del contrato anterior. Otra modalidad solo aplicaría si las partes la acuerdan."
+      },
+      {
+        "id": "D",
+        "texto": "Que solo se atienden urgencias hasta que la EPS receptora firme un acuerdo de voluntades con la ESE.",
+        "explicacion": "Incorrecta. El decreto permite seguir prestando los servicios sin que se firme un acuerdo y exige que la atención no se interrumpa por razones administrativas o económicas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la ESE atendía a los usuarios antes de la asignación, y la EPS receptora no ha contratado red, ni firmado acuerdo con la ESE, ni propuesto otra modalidad. Regla: el art. 2.5.3.4.7.9 del Decreto 780 permite que el prestador que los atendía siga haciéndolo sin acuerdo de voluntades y, salvo pacto en contrario, la EPS receptora reconoce las atenciones por evento, sin interrumpirlas por razones administrativas. Conclusión: se atienden y se cobran a la receptora servicio por servicio.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-SAL-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Reconocimiento y pago",
+    "subtema": "Glosa aceptada sobre valores ya pagados, sin facturas pendientes de pago",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.5.6 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "Cuando la glosa formulada haya sido aceptada y se ha pagado previamente un valor por los servicios glosados, dicha suma será descontada de las facturas de venta aceptadas que se encuentren pendientes de pago. [...] De no presentarse facturas de venta pendientes de pago, la entidad responsable de pago tendrá derecho a la devolución del valor pagado correspondiente a la glosa aceptada y al reconocimiento de intereses moratorias, liquidados de conformidad con lo establecido en el artículo 4o del Decreto ley 1281 de 2002, desde la fecha en que se realizó el giro al prestador o proveedor.",
+    "pregunta": "El 10 de julio de 2026, una EPS giró a una ESE un anticipo sobre una factura de hospitalización. En el trámite de glosas de esa factura, la ESE aceptó por escrito una glosa de $4.200.000 por servicios que ya estaban cubiertos con ese anticipo. La ESE no tiene ninguna otra factura pendiente de pago con esa EPS: todas las demás ya fueron pagadas. El profesional de cartera debe proponer cómo se resuelve el valor de la glosa aceptada. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Descontar el valor de la próxima factura que la ESE radique a esa EPS, sin reconocer intereses.",
+        "explicacion": "Incorrecta. El descuento solo procede sobre facturas aceptadas que estén pendientes de pago, y una factura futura todavía no está radicada ni aceptada. Sin facturas pendientes, la regla es la devolución con intereses."
+      },
+      {
+        "id": "B",
+        "texto": "Devolver el valor a la EPS, con intereses de mora contados desde el 10 de julio de 2026.",
+        "explicacion": "Correcta. Si la glosa aceptada recae sobre valores ya pagados y no hay facturas pendientes de pago de donde descontarlos, la EPS tiene derecho a la devolución del valor y a intereses moratorios desde la fecha en que hizo el giro, el 10 de julio (Decreto 780, art. 2.5.3.4.5.6, inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Devolver el valor a la EPS, sin intereses, porque la ESE aceptó la glosa por su propia voluntad.",
+        "explicacion": "Incorrecta. Que la aceptación sea voluntaria no elimina los intereses: el decreto se los reconoce a la EPS desde la fecha del giro."
+      },
+      {
+        "id": "D",
+        "texto": "Devolver el valor a la EPS, con intereses de mora contados desde el día en que la ESE aceptó la glosa.",
+        "explicacion": "Incorrecta. Acierta en devolver con intereses, pero cambia el punto de partida: los intereses corren desde la fecha del giro (10 de julio), no desde la aceptación de la glosa."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la glosa aceptada ($4.200.000) recae sobre valores girados el 10 de julio y la ESE no tiene facturas pendientes de pago con la EPS. Regla: el art. 2.5.3.4.5.6 del Decreto 780 ordena descontar esas sumas de facturas aceptadas pendientes de pago; si no las hay, la EPS tiene derecho a la devolución del valor y a intereses moratorios desde la fecha del giro. Conclusión: devolver $4.200.000 con intereses desde el 10 de julio de 2026.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAL-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Reconocimiento y pago",
+    "subtema": "Giro sin detalle de facturas: aplicación del pago por el prestador",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.5.1 incs. 1 y 2 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "Dentro de los tres (3) días hábiles siguientes a la fecha en que se efectúe el giro de los recursos por parte de la entidad responsable de pago o a través de la ADRES, la entidad responsable de pago deberá informar al prestador de servicios de salud o proveedor de tecnologías en salud el detalle de las facturas de venta a las cuales les será aplicado este valor. [...] En los casos en que la entidad responsable de pago no atienda esta obligación en el término establecido en el inciso anterior, el prestador de servicios de salud o proveedor de tecnologías en salud podrá aplicar los valores del giro a las facturas aceptadas expresa o tácitamente que no se encuentren pagadas por la entidad responsable de pago; la información de la aplicación de estos pagos deberá ser suministrada por el prestador o proveedor a la entidad responsable de pago dentro de los quince (15) días hábiles siguientes al vencimiento del término previsto en el inciso anterior",
+    "pregunta": "El lunes 28 de septiembre de 2026, una EPS giró a una ESE $35.000.000 sin indicar a qué facturas correspondían. La ESE tiene con esa EPS facturas aceptadas y sin pagar por $38.000.000, y otras, por $30.000.000, con glosas en trámite. El martes 6 de octubre, la EPS sigue sin enviar el detalle del giro. El 12 de octubre de 2026 es festivo. ¿Qué debe hacer el profesional de cartera de la ESE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aplicar el giro a facturas aceptadas sin pagar e informar a la EPS esa aplicación a más tardar el 23 de octubre.",
+        "explicacion": "Correcta. La EPS debía informar el detalle dentro de los tres días hábiles siguientes al giro, es decir, hasta el jueves 1 de octubre. Como no lo hizo, la ESE puede aplicar el giro a facturas aceptadas no pagadas e informarlo dentro de los 15 días hábiles siguientes a ese vencimiento (Decreto 780, art. 2.5.3.4.5.1): sin el festivo del 12 de octubre, hasta el viernes 23 de octubre."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicar el giro a facturas aceptadas sin pagar e informar a la EPS esa aplicación a más tardar el 20 de octubre.",
+        "explicacion": "Incorrecta. Cuenta los 15 días hábiles desde el giro. Se cuentan desde el vencimiento de los tres días hábiles que tenía la EPS (1 de octubre), y así llegan al 23 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicar el giro a las facturas más antiguas, aceptadas o glosadas, e informarlo a la EPS a más tardar el 23 de octubre.",
+        "explicacion": "Incorrecta. La ESE solo puede aplicar el giro a facturas aceptadas, expresa o tácitamente, que no estén pagadas. Las facturas con glosas en trámite no están aceptadas."
+      },
+      {
+        "id": "D",
+        "texto": "Abstenerse de aplicar el giro y requerir el detalle a la EPS, porque solo ella puede escoger las facturas que paga.",
+        "explicacion": "Incorrecta. Vencidos los tres días hábiles sin que la EPS informe el detalle, el decreto autoriza a la ESE para aplicar el giro por su cuenta, sin requerimiento previo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la EPS giró el lunes 28 de septiembre sin detalle y no lo envió en los tres días hábiles siguientes, que vencieron el 1 de octubre. Regla: el art. 2.5.3.4.5.1 del Decreto 780 permite entonces a la ESE aplicar el giro a facturas aceptadas no pagadas e informarlo dentro de los 15 días hábiles siguientes a ese vencimiento. Cálculo: desde el 2 de octubre, sin fines de semana ni el festivo del 12 de octubre, el día 15 es el 23 de octubre (sin descontar el festivo, el 22). Conclusión: aplicar a facturas aceptadas e informar a más tardar el 23 de octubre.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Facturación y glosas",
+    "subtema": "Glosas no levantadas: subsanación o acudir a la Superintendencia Nacional de Salud",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1438 de 2011",
+    "articulos": [
+      "art. 57 inc. 3",
+      "art. 57 inc. 5"
+    ],
+    "texto_fuente": "Si cumplidos los quince (15) días hábiles, el prestador de servicios de salud considera que la glosa es subsanable, tendrá un plazo máximo de siete (7) días hábiles para subsanar la causa de las glosas no levantadas y enviar las facturas enviadas nuevamente a la entidad responsable del pago. [...] Una vez vencidos los términos, y en el caso de que persista el desacuerdo se acudirá a la Superintendencia Nacional de Salud, bien sea en uso de la facultad de conciliación o jurisdiccional a elección del prestador, en los términos establecidos por la ley.",
+    "pregunta": "Una EPS decidió a tiempo sobre la respuesta de una ESE a las glosas de una factura y mantuvo dos. La primera, porque faltaba la hoja de administración de medicamentos de un paciente, que la ESE sí tiene y puede enviar. La segunda, porque la EPS liquidó una cirugía con una tarifa inferior a la del acuerdo de voluntades, punto en el que las dos partes sostienen posiciones opuestas. El auditor de cuentas médicas de la ESE debe definir el camino para cada glosa. ¿Cuál es el correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Corregir la primera y reenviar la factura en máximo siete días hábiles; llevar la segunda a la Supersalud, por conciliación o por su función jurisdiccional, como prefiera la ESE.",
+        "explicacion": "Correcta. Si el prestador considera subsanable una glosa no levantada, tiene un plazo máximo de siete días hábiles para subsanar la causa y reenviar la factura (Ley 1438, art. 57, inc. 3). Si persiste el desacuerdo, se acude a la Superintendencia Nacional de Salud, en conciliación o en ejercicio de su facultad jurisdiccional, a elección del prestador (inc. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Corregir la primera y reenviar la factura en máximo quince días hábiles; llevar la segunda a la Supersalud, primero a conciliación y solo después a la vía judicial.",
+        "explicacion": "Incorrecta. Confunde el plazo para subsanar (siete días hábiles) con el de respuesta a las glosas (quince) y convierte la conciliación en un paso previo obligatorio, cuando la ley deja la escogencia al prestador."
+      },
+      {
+        "id": "C",
+        "texto": "Llevar las dos a la Supersalud, para que primero defina cuál es subsanable y después concilie o falle la que siga en discusión con la EPS.",
+        "explicacion": "Incorrecta. La primera glosa no necesita a la Superintendencia: la ESE puede subsanarla por su cuenta y reenviar la factura. La Superintendencia interviene cuando el desacuerdo persiste."
+      },
+      {
+        "id": "D",
+        "texto": "Corregir la primera y reenviar la factura en máximo siete días hábiles; aceptar la segunda, porque la decisión de la EPS sobre la tarifa ya quedó en firme.",
+        "explicacion": "Incorrecta. Acierta con la primera glosa, pero que la EPS mantenga una glosa no obliga a la ESE a aceptarla: si el desacuerdo persiste, puede acudir a la Superintendencia Nacional de Salud (art. 57, inc. 5)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: una glosa mantenida se corrige con un documento que la ESE tiene; en la otra hay un desacuerdo de fondo sobre la tarifa. Regla: el art. 57 de la Ley 1438 da al prestador un máximo de siete días hábiles para subsanar las glosas no levantadas que considere subsanables y reenviar la factura; si persiste el desacuerdo, se acude a la Superintendencia Nacional de Salud, por conciliación o por su facultad jurisdiccional, a elección del prestador. Conclusión: subsanar la primera y llevar la segunda a la Supersalud por la vía que escoja la ESE.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1438_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Reconocimiento y pago",
+    "subtema": "Intereses moratorios y reconocimientos económicos por glosas injustificadas",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016 y Ley 1438 de 2011",
+    "articulos": [
+      "Decreto 780 de 2016, art. 2.5.3.4.5.7 inc. 1 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Decreto 780 de 2016, art. 2.5.3.4.5.8 inc. 1 y num. 1 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Ley 1438 de 2011, art. 56 inc. 2"
+    ],
+    "texto_fuente": "La entidad responsable de pago que no cumpla con los plazos de pago establecidos en los artículos 13 de la Ley 1122 de 2007, 56 y 57 de la Ley 1438 de 2011 y 3o de la Ley 2024 de 2020 o formule glosas infundadas o inexistentes, estará obligada a reconocer intereses moratorios al prestador de servicios de salud o proveedor de tecnologías en salud desde el vencimiento de los plazos, liquidados de conformidad con lo establecido en los artículos 4o del Decreto ley 1281 de 2002 y el inciso 2 del artículo 56 de la Ley 1438 de 2011. [...] En los acuerdos de voluntades se podrán incluir cláusulas que permitan efectuar reconocimientos económicos ante acciones dilatorias frente al flujo de recursos, en los casos que ocurra cualquiera de los eventos enunciados a continuación [...] 1. Cuando se evidencien devoluciones o glosas injustificadas o inexistentes, formuladas por la entidad responsable de pago en aplicación del artículo 57 de la Ley 1438 de 2011, el reconocimiento económico se liquidará con base en el valor devuelto o glosado sobre el cual se presentó dicha situación [...] El no pago dentro de los plazos causará intereses moratorios a la tasa establecida para los impuestos administrados por la Dirección de Impuestos y Aduanas Nacionales (DIAN).",
+    "pregunta": "Una EPS glosó en su totalidad una factura de $20.000.000 de una ESE con el argumento de que los servicios no estaban contratados, aunque figuraban en el acuerdo de voluntades. Tras la respuesta de la ESE, la EPS levantó la glosa, pero pagó dos meses después de vencidos los plazos legales. El acuerdo no tiene cláusulas sobre reconocimientos económicos ni cláusula penal. El profesional de cartera prepara la reclamación por la demora. ¿Qué debe reclamar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo un reconocimiento económico por glosa injustificada, liquidado sobre lo glosado desde que se comunicó la glosa.",
+        "explicacion": "Incorrecta. El reconocimiento económico por glosas injustificadas solo existe si el acuerdo incluye una cláusula que lo prevea (art. 2.5.3.4.5.8), y este no la tiene. Lo que procede sin necesidad de pacto son los intereses moratorios."
+      },
+      {
+        "id": "B",
+        "texto": "Intereses de mora y, además, el reconocimiento económico por glosa injustificada, que opera aunque no se haya pactado.",
+        "explicacion": "Incorrecta. El decreto dice que esas cláusulas «se podrán incluir» en los acuerdos: son opcionales. Sin cláusula, solo proceden los intereses moratorios."
+      },
+      {
+        "id": "C",
+        "texto": "Solo intereses de mora, liquidados a la tasa legal de las obligaciones financieras, desde que vencieron los plazos de pago.",
+        "explicacion": "Incorrecta. Acierta en que solo proceden intereses, pero no en la tasa: el reglamento remite al inciso 2 del art. 56 de la Ley 1438, que fija la tasa de los impuestos administrados por la DIAN."
+      },
+      {
+        "id": "D",
+        "texto": "Solo intereses de mora, liquidados a la tasa de los impuestos que administra la DIAN, desde que vencieron los plazos de pago.",
+        "explicacion": "Correcta. La EPS que formula glosas infundadas o no paga en los plazos debe reconocer intereses moratorios desde el vencimiento de los plazos, liquidados según el inciso 2 del art. 56 de la Ley 1438, que remite a la tasa de los impuestos administrados por la DIAN (Decreto 780, art. 2.5.3.4.5.7). El reconocimiento económico del art. 2.5.3.4.5.8 requiere una cláusula pactada."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la glosa era infundada, el pago llegó tarde y el acuerdo no pactó reconocimientos económicos. Regla: el art. 2.5.3.4.5.7 del Decreto 780 obliga a la EPS a reconocer intereses moratorios desde el vencimiento de los plazos, liquidados según el art. 56, inc. 2, de la Ley 1438 (tasa de los impuestos administrados por la DIAN); el reconocimiento económico del art. 2.5.3.4.5.8 solo procede si se pactó. Conclusión: solo intereses, a la tasa de la DIAN.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-057",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Reconocimiento y pago",
+    "subtema": "Descuento por incumplimiento de frecuencias mínimas en una modalidad prospectiva",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.5.5 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "En los acuerdos de voluntades que incluyan modalidades de pago prospectivas, en los que, producto de su seguimiento se determine que el prestador o proveedor incumplió de forma injustificada las disposiciones normativas o contractuales que se describen a continuación, la entidad responsable de pago podrá realizar los descuentos, para garantizar su cumplimiento a través de otro prestador o proveedor de su red: [...] 1. Servicios y tecnologías en salud que requieren un mínimo de frecuencias o periodicidad per cápita, destinadas a la valoración integral, la detección temprana, la protección específica y la educación para la salud [...] La suma que la entidad responsable de pago podrá descontar al prestador o proveedor corresponderá al valor establecido en la nota técnica para los servicios y tecnologías en salud que fueron prestados por otro prestador o proveedor de su red. La entidad responsable de pago deberá informar al prestador o proveedor del descuento a realizar.",
+    "pregunta": "Una ESE tiene con una EPS un acuerdo por pago global prospectivo para 2026. Su nota técnica fija un mínimo de 1.200 citologías de tamización en la población asignada, con un valor de $18.000 cada una. Al cierre del año, la ESE solo hizo 900, sin justificación. Durante el seguimiento, la EPS garantizó 220 de las citologías faltantes con otro prestador de su red, que le cobró $25.000 por cada una, y le informó a la ESE que haría un descuento. El auditor de cuentas médicas de la ESE debe verificar el valor máximo que la EPS puede descontar. ¿Cuál es?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$3.960.000.",
+        "explicacion": "Correcta. En las modalidades prospectivas, si el prestador incumple sin justificación las frecuencias mínimas de detección temprana, la EPS puede descontar el valor que fija la nota técnica para los servicios que prestó otro prestador de su red (Decreto 780, art. 2.5.3.4.5.5): 220 × $18.000 = $3.960.000."
+      },
+      {
+        "id": "B",
+        "texto": "$5.400.000.",
+        "explicacion": "Incorrecta. Descuenta las 300 citologías que faltaron (300 × $18.000). El descuento solo cubre las que la EPS garantizó con otro prestador: 220."
+      },
+      {
+        "id": "C",
+        "texto": "$5.500.000.",
+        "explicacion": "Incorrecta. Usa la tarifa que cobró el otro prestador (220 × $25.000). El descuento se liquida con el valor de la nota técnica, $18.000."
+      },
+      {
+        "id": "D",
+        "texto": "$7.500.000.",
+        "explicacion": "Incorrecta. Suma los dos errores: toma las 300 citologías faltantes y la tarifa del otro prestador (300 × $25.000)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: faltaron 300 citologías, pero la EPS solo garantizó 220 con otro prestador; la nota técnica las valora en $18.000 y el otro prestador cobró $25.000. Regla: el art. 2.5.3.4.5.5 del Decreto 780 permite descontar el valor establecido en la nota técnica para los servicios que prestó otro prestador de la red, previa información al prestador. Cálculo: 220 × $18.000 = $3.960.000. Conclusión: ese es el máximo.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAL-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Reconocimiento y pago",
+    "subtema": "Devolución de recursos de capitación por afiliados fallecidos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.5.4 inc. 1 y num. 1 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "En los acuerdos de voluntades que incluyan modalidades de pago prospectivas y en los casos que se describen a continuación, se deberán realizar devoluciones y descuentos de los recursos: [...] 1. Cuando la Administradora de los Recursos del Sistema General de Seguridad Social en Salud (ADRES) ordene el reintegro de recursos por parte de la entidad promotora de salud o entidad adaptada por afiliados fallecidos, el prestador de servicios de salud o proveedor de tecnologías en salud deberá devolver proporcionalmente, a la EPS o a las entidades adaptadas, los recursos que por cuenta de tales afiliados recibió desde su fallecimiento.",
+    "pregunta": "Una ESE atiende por capitación a la población que le asignó una EPS, que le paga $21.500 por afiliado al comienzo de cada mes. El 14 de agosto de 2026, la ADRES ordenó a la EPS reintegrar los recursos de dos afiliados fallecidos de esa población: uno murió el 30 de abril y el otro el 31 de julio de 2026. La EPS ya le había pagado a la ESE la capitación de enero a septiembre de 2026. El profesional de cartera de la ESE debe liquidar la devolución. ¿Cuánto debe devolver la ESE a la EPS por esos dos afiliados?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$0.",
+        "explicacion": "Incorrecta. Aunque la capitación es una suma fija por usuario, el decreto ordena al prestador devolver lo que recibió por los afiliados fallecidos desde su muerte cuando la ADRES ordena el reintegro."
+      },
+      {
+        "id": "B",
+        "texto": "$43.000.",
+        "explicacion": "Incorrecta. Cuenta solo lo pagado después de la orden de la ADRES (la capitación de septiembre de los dos afiliados: 2 × $21.500). La devolución se cuenta desde el fallecimiento de cada afiliado."
+      },
+      {
+        "id": "C",
+        "texto": "$150.500.",
+        "explicacion": "Correcta. La ESE devuelve proporcionalmente lo que recibió por cada afiliado desde su fallecimiento (Decreto 780, art. 2.5.3.4.5.4, num. 1): de mayo a septiembre por el primero (5 meses) y agosto y septiembre por el segundo (2 meses). 7 × $21.500 = $150.500."
+      },
+      {
+        "id": "D",
+        "texto": "$193.500.",
+        "explicacion": "Incorrecta. Incluye el mes en que murió cada afiliado (abril y julio), cuya capitación se pagó al comienzo del mes, cuando aún vivían: 9 × $21.500."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la capitación se paga al comienzo de cada mes; un afiliado murió el 30 de abril y el otro el 31 de julio, y la EPS pagó hasta septiembre. Regla: cuando la ADRES ordena el reintegro por afiliados fallecidos, el prestador devuelve proporcionalmente lo que recibió por ellos desde su fallecimiento (Decreto 780, art. 2.5.3.4.5.4, num. 1). Cálculo: 5 meses (mayo a septiembre) + 2 meses (agosto y septiembre) = 7 × $21.500 = $150.500.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-SAL-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Acuerdos de voluntades",
+    "subtema": "Plazos de pago pactados frente a los límites legales",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016 y Ley 1122 de 2007",
+    "articulos": [
+      "Decreto 780 de 2016, art. 2.5.3.4.2.2, num. 18 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Decreto 780 de 2016, art. 2.5.3.4.2.3 inc. 1 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Decreto 780 de 2016, art. 2.5.3.4.5.3 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "Ley 1122 de 2007, art. 13, lit. d"
+    ],
+    "texto_fuente": "18. Los plazos de pago, los cuales no pueden exceder lo establecido en los artículos 13 de la Ley 1122 de 2007, 57 de la Ley 1438 de 2011 y 3o de la Ley 2024 de 2020, según el caso. [...] pagarán los servicios a los Prestadores de Servicios de salud habilitados, mes anticipado en un 100% si los contratos son por capitación. Si fuesen por otra modalidad, como pago por evento, global prospectivo o grupo diagnóstico se hará como mínimo un pago anticipado del 50% del valor de la factura, dentro de los cinco días posteriores a su presentación. En caso de no presentarse objeción o glosa alguna, el saldo se pagará dentro de los treinta días (30) siguientes a la presentación de la factura [...] En los acuerdos de voluntades se podrá escoger y pactar libremente una o varias modalidades de pago, de acuerdo con el objeto contractual y las obligaciones a cargo de las partes [...] Las entidades promotoras de salud y las entidades adaptadas son responsables del recaudo de los copagos y cuotas moderadoras",
+    "pregunta": "El jefe de facturación de una ESE revisa la minuta de un acuerdo de voluntades que le propone una EPS. Tiene tres cláusulas sobre pagos: (1) la baja complejidad se paga por capitación, mes vencido, dentro de los 20 días siguientes a la presentación de la factura; (2) la mediana complejidad se paga por evento, con un anticipo del 50% de cada factura dentro de los cinco días siguientes a su presentación y el saldo, si no hay glosas, dentro de los 30 días siguientes a la presentación; (3) las cuotas moderadoras las recauda directamente la EPS. ¿Qué cláusula debe pedir que se corrija?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La primera, porque en la capitación la EPS debe pagar por anticipado el total de cada mes.",
+        "explicacion": "Correcta. Los plazos de pago pactados no pueden exceder, entre otros, los del art. 13 de la Ley 1122 (Decreto 780, art. 2.5.3.4.2.2, num. 18). Esa norma ordena pagar la capitación mes anticipado y en un 100%; pactarla mes vencido, a 20 días de la factura, excede el límite."
+      },
+      {
+        "id": "B",
+        "texto": "La segunda, porque en el pago por evento la EPS debe pagar el total de cada factura en cinco días.",
+        "explicacion": "Incorrecta. Para el pago por evento, la Ley 1122 exige como mínimo un anticipo del 50% en los cinco días siguientes a la presentación y el saldo en 30 días si no hay glosas, que es justo lo que pacta la cláusula."
+      },
+      {
+        "id": "C",
+        "texto": "La tercera, porque el recaudo de las cuotas moderadoras le corresponde a la ESE que presta el servicio.",
+        "explicacion": "Incorrecta. El recaudo de copagos y cuotas moderadoras es responsabilidad de la EPS; solo pasa al prestador si se pacta (Decreto 780, art. 2.5.3.4.5.3). La cláusula sigue la regla general."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna, porque las partes pueden escoger libremente las modalidades de pago y fijar sus plazos.",
+        "explicacion": "Incorrecta. Las modalidades se escogen libremente, pero los plazos de pago tienen un tope legal que el acuerdo no puede superar (art. 2.5.3.4.2.2, num. 18)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la minuta pacta la capitación mes vencido, a 20 días de la factura. Regla: los plazos de pago del acuerdo no pueden exceder, entre otros, los del art. 13 de la Ley 1122 (Decreto 780, art. 2.5.3.4.2.2, num. 18), que ordena pagar la capitación mes anticipado en un 100%; la cláusula del evento reproduce los mínimos legales y la de las cuotas moderadoras sigue la regla general del art. 2.5.3.4.5.3. Conclusión: debe corregirse la primera.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAL-060",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "salud",
+    "modulo": "Sistema de Salud y ESE",
+    "tema": "Acuerdos de voluntades",
+    "subtema": "Renovación automática: actualización de valores y de la nota técnica",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 780 de 2016",
+    "articulos": [
+      "art. 2.5.3.4.6.1 incs. 1 y 3 (subrogado por el art. 1 del Decreto 441 de 2022)",
+      "art. 2.5.3.4.2.4 num. 4 (subrogado por el art. 1 del Decreto 441 de 2022)"
+    ],
+    "texto_fuente": "En los acuerdos de voluntades se deberá acordar e identificar plenamente su plazo de duración y se podrá pactar su renovación automática; sin embargo, los valores pactados deberán ser actualizados para cada vigencia. [...] En caso de prórrogas o renovaciones automáticas de los acuerdos de voluntades, antes del inicio del periodo de prórroga o renovación, se deberá actualizar la nota técnica, teniendo en cuenta su monitoreo y evaluación, de acuerdo con el periodo contractual. [...] 4. Periodicidad con que será monitoreada y evaluada, la que, en ningún caso, podrá ser igual o superior al plazo del acuerdo.",
+    "pregunta": "Una ESE y una EPS firmaron para 2026 un acuerdo de voluntades por pago global prospectivo, de 12 meses y con renovación automática. En noviembre, la EPS propone que en 2027 el acuerdo se renueve con los mismos valores y la misma nota técnica de 2026, y que la nota técnica se evalúe una sola vez, al terminar 2027. ¿Qué debe responder el jefe de facturación de la ESE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la renovación automática mantiene los valores y la nota técnica mientras ninguna de las partes pida revisarlos.",
+        "explicacion": "Incorrecta. La renovación automática no congela el acuerdo: los valores deben actualizarse para cada vigencia y la nota técnica antes de que empiece la renovación (Decreto 780, art. 2.5.3.4.6.1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que antes de renovar deben ajustarse los valores y la nota técnica, y que esta debe revisarse varias veces durante el año.",
+        "explicacion": "Correcta. En la renovación automática, los valores deben actualizarse para cada vigencia y la nota técnica antes de que empiece el nuevo periodo (art. 2.5.3.4.6.1). Además, su periodicidad de monitoreo y evaluación no puede ser igual ni superior al plazo del acuerdo (art. 2.5.3.4.2.4, num. 4): una sola evaluación al cabo de 12 meses no cumple."
+      },
+      {
+        "id": "C",
+        "texto": "Que un pago global prospectivo no admite renovación automática, de modo que para 2027 debe firmarse un acuerdo nuevo.",
+        "explicacion": "Incorrecta. El decreto permite pactar la renovación automática en los acuerdos de voluntades, sin excluir las modalidades prospectivas; lo que exige es actualizar los valores y la nota técnica."
+      },
+      {
+        "id": "D",
+        "texto": "Que pueden mantenerse los valores de 2026, con la condición de que la nota técnica se revise cada trimestre en 2027.",
+        "explicacion": "Incorrecta. Acierta en evaluar la nota técnica con más frecuencia, pero los valores pactados deben actualizarse para cada vigencia, aun con renovación automática."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la EPS quiere renovar para 2027 con los valores y la nota técnica de 2026 y evaluarla solo al final del año. Regla: en la renovación automática los valores se actualizan para cada vigencia y la nota técnica antes del nuevo periodo (Decreto 780, art. 2.5.3.4.6.1), y su evaluación no puede tener una periodicidad igual o superior al plazo del acuerdo (art. 2.5.3.4.2.4, num. 4). Conclusión: actualizar ambos y evaluar la nota técnica varias veces en el año.",
+    "fuente_url": "https://normograma.supersalud.gov.co/compilacion/docs/decreto_0780_2016.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
   }
 ]

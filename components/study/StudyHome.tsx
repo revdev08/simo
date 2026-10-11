@@ -180,6 +180,7 @@ export default function StudyHome({
   horasSemana,
   onHorasSemana,
   planInicio,
+  planSemanas,
   onStartSimulacro,
   onStartModule,
   onReviewErrors,
@@ -205,6 +206,7 @@ export default function StudyHome({
   horasSemana: number
   onHorasSemana: (h: number) => void
   planInicio?: string
+  planSemanas?: number
   onStartSimulacro: (n: number, modo: 'general' | 'convocatoria') => void
   onStartModule: (name: string) => void
   onReviewErrors: () => void
@@ -233,7 +235,7 @@ export default function StudyHome({
   const avance = convocatoria ? avanceDelPlan(convocatoria.perfil, modulesStats) : null
   const siguiente = avance ? siguientePaso(avance) : null
   const disponibles = Object.fromEntries(modulesStats.map((m) => [m.name, m.total]))
-  const semanal = convocatoria ? planSemanal(convocatoria.convocatoria, convocatoria.perfil, disponibles, horasSemana, planInicio) : null
+  const semanal = convocatoria ? planSemanal(convocatoria.convocatoria, convocatoria.perfil, disponibles, horasSemana, planInicio, planSemanas) : null
   const semana = semanal ? semanaDelPlan(semanal.plan, semanal.semanaActual) : null
   const ultimoSimulacro = convocatoria ? [...simulacros].reverse().find((x) => x.convocatoria === convocatoria.clave) ?? null : null
   const modulosPlan = new Set(avance?.modulos.map((m) => m.modulo))

@@ -1,1 +1,1095 @@
-[]
+[
+  {
+    "id": "TC-SAN-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro, permiso y notificación sanitaria de alimentos",
+    "subtema": "Alimentos que no requieren NSA, PSA o RSA",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 37, inc. 1 y nums. 1 y 2 (modificado por el art. 1 de la Resolución 3168 de 2015)"
+    ],
+    "texto_fuente": "Todo alimento que se expenda directamente al consumidor deberá obtener, de acuerdo con el riesgo en salud pública y a los requisitos establecidos en la presente resolución, la correspondiente Notificación Sanitaria (NSA), Permiso Sanitario (PSA) o Registro Sanitario (RSA), expedido por el Instituto Nacional de Vigilancia de Medicamentos y Alimentos (Invima) [...] Los siguientes productos alimenticios no requerirán NSA, PSA o RSA: 1. Los alimentos naturales que no sean sometidos a ningún proceso de transformación, tales como granos, frutas y hortalizas frescas, miel de abejas, y los otros productos apícolas. 2. Los alimentos de origen animal crudos refrigerados o congelados que no hayan sido sometidos a ningún proceso de transformación.",
+    "pregunta": "Un técnico de inspección de una secretaría de salud municipal revisa la góndola de un supermercado. Encuentra cuatro productos que se venden al consumidor sin ningún código NSA, PSA o RSA en el rótulo: frascos de miel de abejas pura envasada por el apicultor, bolsas de camarón crudo congelado sin pelar ni adobar, frascos de mermelada de guayaba de la marca propia del supermercado y fríjol seco que se vende a granel. ¿Qué debe registrar en el acta como producto comercializado sin la autorización sanitaria que le corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La miel y la mermelada, porque envasar y rotular el producto ya es un proceso que lo transforma.",
+        "explicacion": "Incorrecta. Envasar y rotular no transforma el alimento. La miel de abejas es uno de los alimentos naturales que la norma exime de NSA, PSA o RSA (art. 37, num. 1); la mermelada, en cambio, sí la requiere."
+      },
+      {
+        "id": "B",
+        "texto": "El camarón y la mermelada, porque congelar y cocinar son procesos que transforman el alimento.",
+        "explicacion": "Incorrecta. Congelar no es transformar. La norma exime los alimentos de origen animal crudos, refrigerados o congelados, que no han sufrido transformación (art. 37, num. 2), como el camarón sin pelar ni adobar."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la mermelada, pues la miel, el camarón y el fríjol entran en las excepciones de la norma.",
+        "explicacion": "Correcta. La mermelada es un alimento elaborado que se vende al consumidor, así que necesita NSA, PSA o RSA según su riesgo (art. 37, inc. 1). La miel y el fríjol son alimentos naturales sin transformación (num. 1), y el camarón crudo congelado sin pelar ni adobar es un alimento de origen animal sin transformación (num. 2): los tres están exentos."
+      },
+      {
+        "id": "D",
+        "texto": "La miel, el camarón y la mermelada, pues la excepción solo cubre granos, frutas y hortalizas frescas.",
+        "explicacion": "Incorrecta. Reduce la exención a los granos, frutas y hortalizas. La norma también exime la miel de abejas y los otros productos apícolas (num. 1) y los alimentos de origen animal crudos, refrigerados o congelados, sin transformación (num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: de los cuatro productos, solo la mermelada es un alimento elaborado. Regla: todo alimento que se expende al consumidor necesita NSA, PSA o RSA, salvo, entre otros, los alimentos naturales sin transformación (granos, miel de abejas) y los de origen animal crudos refrigerados o congelados sin transformación (art. 37 de la Resolución 2674, mod. Resolución 3168 de 2015). Conclusión: solo la mermelada se vende sin la autorización que le corresponde.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-SAN-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro, permiso y notificación sanitaria de alimentos",
+    "subtema": "Modalidades de expedición",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 45"
+    ],
+    "texto_fuente": "Los registros, permisos y notificaciones sanitarias de alimentos se concederán para: a) Fabricar y vender; b) Fabricar, envasar y vender; c) Envasar y vender; d) Importar y vender; e) Importar, envasar y vender.",
+    "pregunta": "Un auxiliar de trámites del Invima orienta a una empresa que trae del exterior aceite de oliva en tambores de 200 litros y, en su planta en Colombia, lo pasa sin ningún otro proceso a botellas de 500 mililitros que distribuye con su marca a supermercados. La empresa debe indicar en la solicitud la modalidad de su autorización sanitaria. ¿Cuál debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fabricar, envasar y vender, porque la empresa convierte el aceite en un producto de su marca.",
+        "explicacion": "Incorrecta. Embotellar el aceite sin otro proceso no es fabricarlo, y esta modalidad deja por fuera que el producto se trae del exterior (art. 45, lits. b y e)."
+      },
+      {
+        "id": "B",
+        "texto": "Importar y vender, porque el aceite ingresa al país terminado y apto para el consumo humano.",
+        "explicacion": "Incorrecta. Esa modalidad sirve cuando el alimento se vende tal como llega. Aquí el aceite llega a granel y se embotella en Colombia, y la modalidad debe incluir esa operación (art. 45, lits. d y e)."
+      },
+      {
+        "id": "C",
+        "texto": "Envasar y vender, porque la única operación que se hace en el país es el embotellado.",
+        "explicacion": "Incorrecta. Deja por fuera la importación, que también hace parte de la operación que se autoriza (art. 45, lits. c y e)."
+      },
+      {
+        "id": "D",
+        "texto": "Importar, envasar y vender, porque el aceite viene de afuera y se embotella en Colombia.",
+        "explicacion": "Correcta. La empresa importa el aceite a granel, lo envasa en el país y lo vende: es la modalidad del art. 45, lit. e."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el aceite se trae del exterior a granel y en Colombia solo se embotella para venderlo. Regla: el art. 45 de la Resolución 2674 prevé cinco modalidades, entre ellas importar y vender, envasar y vender, e importar, envasar y vender. Conclusión: la modalidad que cubre las tres operaciones es importar, envasar y vender.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-SAN-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro, permiso y notificación sanitaria de alimentos",
+    "subtema": "Vigencia y oportunidad de la renovación del RSA, el PSA y la NSA",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 39",
+      "art. 41"
+    ],
+    "texto_fuente": "El Registro Sanitario tendrá una vigencia de cinco (5) años y podrá ser renovado sucesivamente por períodos iguales. La solicitud de renovación la deberá realizar el titular del registro, tres (3) meses antes de la fecha de su vencimiento [...] El Permiso Sanitario tendrá una vigencia de siete (7) años y podrá ser renovado sucesivamente por períodos iguales. La solicitud de renovación la deberá realizar el titular del permiso, tres (3) meses antes de la fecha de su vencimiento [...] La Notificación Sanitaria tendrá una vigencia de diez (10) años y podrá ser renovada sucesivamente por períodos iguales. La solicitud de renovación la deberá realizar el titular de la notificación, tres (3) meses antes de la fecha de su vencimiento",
+    "pregunta": "El martes 13 de octubre de 2026, una auxiliar de trámites del Invima revisa tres solicitudes de renovación que una empresa de alimentos radicó ese mismo día. Según el sistema, el registro sanitario de su leche UHT tiene vigencia desde el 18 de diciembre de 2021; el permiso sanitario de sus galletas rellenas, desde el 10 de febrero de 2020, y la notificación sanitaria de sus galletas de soda, desde el 27 de enero de 2017. Ninguna de las tres autorizaciones se ha renovado antes. ¿Cuáles solicitudes se radicaron con la antelación que exige la Resolución 2674 de 2013?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las tres, porque se presentaron cuando ninguna de las tres autorizaciones había llegado a su vencimiento.",
+        "explicacion": "Incorrecta. No basta con radicar antes del vencimiento: la renovación se pide tres meses antes de que venza la autorización (arts. 39 y 41). El registro vence el 18 de diciembre de 2026, así que su plazo terminó el viernes 18 de septiembre."
+      },
+      {
+        "id": "B",
+        "texto": "La del permiso y la de la notificación; la del registro tenía plazo hasta el 18 de septiembre.",
+        "explicacion": "Correcta. Registro: 5 años desde el 18/12/2021, vence el 18/12/2026; la solicitud debía llegar a más tardar el viernes 18/09/2026, así que es tardía. Permiso: 7 años desde el 10/02/2020, vence el 10/02/2027; límite 10/11/2026, a tiempo. Notificación: 10 años desde el 27/01/2017, vence el 27/01/2027; límite 27/10/2026, a tiempo (arts. 39 y 41)."
+      },
+      {
+        "id": "C",
+        "texto": "La del registro y la de la notificación; el permiso venció en febrero de 2025 sin renovarse.",
+        "explicacion": "Incorrecta. Intercambia las vigencias: el registro dura 5 años y el permiso 7 (art. 39). El permiso vence el 10 de febrero de 2027 y su solicitud fue oportuna; el registro vence el 18 de diciembre de 2026 y su solicitud llegó tarde."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la de la notificación; el permiso venció en febrero de 2025 y el registro llegó tarde.",
+        "explicacion": "Incorrecta. Aplica al permiso la vigencia de 5 años del registro. El permiso dura 7 años (art. 39): vence el 10 de febrero de 2027, y la solicitud del 13 de octubre de 2026 cumple la antelación de tres meses."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: las tres solicitudes se radicaron el 13/10/2026. Reglas: el registro dura 5 años, el permiso 7 y la notificación 10, y la renovación se pide tres meses antes del vencimiento (arts. 39 y 41 de la Resolución 2674). Cálculo: el registro vence el 18/12/2026 (límite: viernes 18/09/2026, tarde); el permiso, el 10/02/2027 (límite 10/11/2026, a tiempo); la notificación, el 27/01/2027 (límite 27/10/2026, a tiempo). Conclusión: solo el permiso y la notificación se pidieron a tiempo.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-SAN-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Pendiente y número de drenajes de piso",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 7, num. 1.2"
+    ],
+    "texto_fuente": "El piso de las áreas húmedas de elaboración debe tener una pendiente mínima de 2% y al menos un drenaje de 10 cm de diámetro por cada 40 m2 de área servida; mientras que en las áreas de baja humedad ambiental y en los almacenes, la pendiente mínima será del 1% hacia los drenajes, se requiere de al menos un drenaje por cada 90 m2 de área servida.",
+    "pregunta": "Un técnico de inspección del Invima visita una planta de encurtidos. En el área húmeda de elaboración mide 160 m², un piso con pendiente de 2,5 % hacia los drenajes y tres drenajes de 10 cm de diámetro. En el almacén de materias primas mide 180 m², una pendiente de 0,8 % y dos drenajes. ¿Qué hallazgos sobre pisos y drenajes debe consignar en el acta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El área húmeda cumple; en el almacén faltan tres drenajes y la pendiente es insuficiente.",
+        "explicacion": "Incorrecta. Invierte las reglas: aplica al área húmeda la de las áreas secas (un drenaje por cada 90 m²) y al almacén la de las húmedas (uno por cada 40 m²). Es al revés (art. 7, num. 1.2)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el almacén incumple, por su pendiente; en el área húmeda bastan los tres drenajes.",
+        "explicacion": "Incorrecta. Aplica al área húmeda la regla de los almacenes. En áreas húmedas se exige un drenaje por cada 40 m²: para 160 m² son cuatro y hay tres."
+      },
+      {
+        "id": "C",
+        "texto": "Faltan drenajes en las dos áreas: uno en la húmeda y tres en el almacén, de poca pendiente.",
+        "explicacion": "Incorrecta. Exige al almacén un drenaje por cada 40 m², que es la regla de las áreas húmedas. En almacenes basta uno por cada 90 m²: para 180 m² son dos, los mismos que hay."
+      },
+      {
+        "id": "D",
+        "texto": "En el área húmeda falta un drenaje y en el almacén la inclinación del piso no llega al mínimo.",
+        "explicacion": "Correcta. Área húmeda: 160 ÷ 40 = 4 drenajes exigidos y hay 3; su pendiente de 2,5 % supera el 2 %. Almacén: 180 ÷ 90 = 2 drenajes, que existen, pero la pendiente de 0,8 % no llega al 1 % (art. 7, num. 1.2)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: área húmeda de 160 m² con 2,5 % y tres drenajes; almacén de 180 m² con 0,8 % y dos drenajes. Regla (art. 7, num. 1.2 de la Resolución 2674): áreas húmedas, pendiente mínima de 2 % y un drenaje por cada 40 m²; almacenes y áreas secas, 1 % y un drenaje por cada 90 m². Cálculo: el área húmeda necesita 4 drenajes y tiene 3; el almacén necesita 2 y los tiene, pero su pendiente es menor al 1 %. Conclusión: falta un drenaje en el área húmeda y la pendiente del almacén es insuficiente.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-SAN-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Condiciones de almacenamiento: distancias y temperatura de congelación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 28, num. 2",
+      "art. 28, num. 4"
+    ],
+    "texto_fuente": "La temperatura de congelación debe ser de -18oC o menor. [...] El almacenamiento de los insumos, materias primas o productos terminados se realizará ordenadamente en pilas o estibas con separación mínima de 60 centímetros con respecto a las paredes perimetrales, y disponerse sobre palés o tarimas limpias y en buen estado, elevadas del piso por lo menos 15 centímetros",
+    "pregunta": "En la bodega de un distribuidor de alimentos, una técnica de inspección de la secretaría de salud encuentra las pilas de cajas de pasta seca a 40 cm de las paredes, sobre estibas limpias que las elevan 20 cm del piso. En la cámara de congelación de verduras, el registrador marca -15 °C de forma estable. ¿Qué debe anotar en el acta como incumplimientos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La distancia de las pilas a los muros y la temperatura de la cámara de las verduras.",
+        "explicacion": "Correcta. Las pilas deben estar al menos a 60 cm de las paredes y están a 40 cm; la congelación exige -18 °C o menos y la cámara marca -15 °C. Las estibas, a 20 cm del piso, superan el mínimo de 15 cm (art. 28, nums. 2 y 4)."
+      },
+      {
+        "id": "B",
+        "texto": "La altura de las estibas sobre el piso y la temperatura de la cámara de las verduras.",
+        "explicacion": "Incorrecta. Las estibas cumplen: deben elevar el producto por lo menos 15 cm y lo elevan 20 cm. En cambio, omite que la separación de 40 cm de los muros es menor a los 60 cm exigidos (art. 28, num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "La distancia de las pilas a los muros y la altura de las estibas sobre el piso.",
+        "explicacion": "Incorrecta. Las estibas cumplen el mínimo de 15 cm, y omite que -15 °C no es una temperatura de congelación válida: debe ser de -18 °C o menor (art. 28, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la temperatura de la cámara; las pilas y las estibas están bien ubicadas.",
+        "explicacion": "Incorrecta. Las pilas a 40 cm de las paredes no cumplen la separación mínima de 60 cm (art. 28, num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: pilas a 40 cm de las paredes, estibas a 20 cm del piso y cámara de congelación a -15 °C. Reglas (art. 28 de la Resolución 2674): separación mínima de 60 cm de las paredes, elevación mínima de 15 cm sobre el piso (num. 4) y congelación a -18 °C o menos (num. 2). Conclusión: incumplen la distancia a los muros y la temperatura de la cámara; las estibas cumplen.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Temperaturas de espera, refrigeración y recongelación de materias primas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 16, num. 5",
+      "art. 18, nums. 3.1 y 5"
+    ],
+    "texto_fuente": "Las materias primas conservadas por congelación que requieren ser descongeladas previo al uso, deben descongelarse a una velocidad controlada para evitar el desarrollo de microorganismos y no podrán ser recongeladas. [...] 3.1. Mantener los alimentos a temperaturas de refrigeración no mayores de 4oC +/-2oC. [...] Cuando se requiera esperar entre una etapa del proceso y la siguiente, el alimento debe mantenerse protegido y en el caso de alimentos susceptibles al rápido crecimiento de microorganismos durante el tiempo de espera, deben emplearse temperaturas altas (> 60oC) o bajas no mayores de 4oC +/-2oC según sea el caso.",
+    "pregunta": "Un técnico de inspección del Invima recorre una fábrica de salsas listas para consumir y observa tres prácticas. Entre la cocción y el envasado, la salsa de queso, un producto perecedero, espera dos horas en una marmita a 58 °C. La crema de leche que se usa como insumo permanece en una cava de refrigeración a 5 °C. La pulpa de mango congelada que se descongela cada mañana se vuelve a congelar si sobra al final del turno. ¿Qué prácticas debe registrar como no conformes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La crema a 5 °C y la pulpa que se vuelve a congelar; la salsa a 58 °C está en un rango seguro.",
+        "explicacion": "Incorrecta. La crema a 5 °C está dentro del rango de 4 °C +/- 2 °C, es decir, hasta 6 °C (art. 18, num. 3.1). La salsa a 58 °C sí incumple: durante la espera se exigen más de 60 °C (art. 18, num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la pulpa que se vuelve a congelar; la salsa y la crema están dentro de los rangos permitidos.",
+        "explicacion": "Incorrecta. Omite la salsa: en la espera entre etapas, un alimento perecedero debe estar a más de 60 °C o refrigerado (art. 18, num. 5), y 58 °C no cumple."
+      },
+      {
+        "id": "C",
+        "texto": "La salsa a 58 °C y la pulpa que se vuelve a congelar; la crema a 5 °C está dentro del rango.",
+        "explicacion": "Correcta. La salsa espera a 58 °C y la norma exige más de 60 °C o refrigeración (art. 18, num. 5); la pulpa descongelada no puede volver a congelarse (art. 16, num. 5). La crema a 5 °C está dentro de 4 °C +/- 2 °C (art. 18, num. 3.1)."
+      },
+      {
+        "id": "D",
+        "texto": "La salsa a 58 °C y la crema a 5 °C; la pulpa puede congelarse otra vez si no salió de la planta.",
+        "explicacion": "Incorrecta. La materia prima descongelada no puede recongelarse, haya salido o no de la planta (art. 16, num. 5). Y la crema a 5 °C cumple el rango de refrigeración."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: salsa perecedera en espera a 58 °C, crema refrigerada a 5 °C y pulpa descongelada que se vuelve a congelar. Reglas de la Resolución 2674: en la espera entre etapas, más de 60 °C o refrigeración no mayor de 4 °C +/- 2 °C (art. 18, nums. 3.1 y 5); las materias primas descongeladas no pueden recongelarse (art. 16, num. 5). Conclusión: incumplen la salsa y la pulpa; la crema a 5 °C está en rango.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Estado de salud y capacitación del personal manipulador",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 11, nums. 1 y 2",
+      "art. 12, inc. 2"
+    ],
+    "texto_fuente": "La empresa debe tomar las medidas correspondientes para que al personal manipulador de alimentos se le practique un reconocimiento médico, por lo menos una vez al año. [...] Debe efectuarse un reconocimiento médico cada vez que se considere necesario por razones clínicas y epidemiológicas, especialmente después de una ausencia del trabajo motivada por una infección que pudiera dejar secuelas capaces de provocar contaminación de los alimentos que se manipulen. [...] Dicho plan debe ser de por lo menos 10 horas anuales, sobre asuntos específicos de que trata la presente resolución.",
+    "pregunta": "Una técnica de inspección del Invima revisa, en una fábrica de arepas, los soportes del personal manipulador y del plan de capacitación. El operario Luis tiene un certificado médico de aptitud expedido hace 11 meses. La operaria Marta volvió la semana pasada tras 10 días de incapacidad por una infección intestinal con diarrea; su último certificado de aptitud es de hace 4 meses y no se le hizo una nueva valoración. El plan de capacitación de la empresa prevé 8 horas al año. ¿Qué debe registrar como incumplimientos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El certificado de Luis y el plan de capacitación; el de Marta todavía no cumple un año.",
+        "explicacion": "Incorrecta. El certificado de Luis, de hace 11 meses, cumple el reconocimiento de por lo menos una vez al año. El de Marta no basta: después de una ausencia por infección se exige una nueva valoración (art. 11, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Los casos de Luis y de Marta; el plan cumple con la intensidad horaria anual exigida.",
+        "explicacion": "Incorrecta. Luis cumple el reconocimiento anual (art. 11, num. 1), y el plan de 8 horas no alcanza el mínimo de 10 horas anuales (art. 12)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el plan de capacitación; los dos certificados médicos tienen menos de un año.",
+        "explicacion": "Incorrecta. La antigüedad del certificado no resuelve el caso de Marta: tras ausentarse por una infección que puede contaminar los alimentos debe valorarse de nuevo (art. 11, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "La falta de una nueva valoración de Marta y la intensidad horaria del plan.",
+        "explicacion": "Correcta. Marta volvió de una ausencia por infección intestinal sin nueva valoración médica (art. 11, num. 2), y el plan prevé 8 horas, menos de las 10 anuales exigidas (art. 12). Luis cumple: su certificado tiene menos de un año (art. 11, num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: certificado de Luis de hace 11 meses; Marta volvió de una incapacidad por infección intestinal sin nueva valoración; plan de 8 horas al año. Reglas de la Resolución 2674: reconocimiento médico por lo menos una vez al año y, además, después de una ausencia por una infección que pueda contaminar los alimentos (art. 11, nums. 1 y 2); plan de capacitación de por lo menos 10 horas anuales (art. 12). Conclusión: incumplen el caso de Marta y el plan.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Transporte y comercialización de alimentos",
+    "subtema": "Carga conjunta, sustancias peligrosas e identificación del vehículo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 29, nums. 6, 8 y 9"
+    ],
+    "texto_fuente": "6. Se permite transportar conjuntamente en un mismo vehículo, alimentos con diferente riesgo en salud pública siempre y cuando se encuentren debidamente envasados, protegidos y se evite la contaminación cruzada. [...] 8. Se prohíbe transportar conjuntamente en un mismo vehículo alimentos o materias primas con sustancias peligrosas y otras sustancias que por su naturaleza representen riesgo de contaminación del alimento o la materia prima. 9. Los vehículos transportadores de alimentos deben llevar en su exterior en forma claramente visible la leyenda: Transporte de Alimentos.",
+    "pregunta": "En un control en carretera, un técnico de inspección de la secretaría de salud revisa un camión refrigerado que reparte a tiendas. Dentro del furgón van canastillas con yogures en botellas cerradas, cajas selladas de galletas y, en un rincón, dos tambores cerrados de hipoclorito que un cliente pidió para desinfectar su bodega. Por fuera, el camión solo lleva pintado el logo de la empresa. ¿Qué incumplimientos debe hacer constar en el acta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La carga conjunta de yogures y galletas, y los tambores de hipoclorito en el furgón.",
+        "explicacion": "Incorrecta. Se pueden llevar juntos alimentos de distinto riesgo si van envasados y protegidos (art. 29, num. 6), como estos yogures y galletas. Además, omite el aviso exterior exigido (num. 9)."
+      },
+      {
+        "id": "B",
+        "texto": "Los tambores de hipoclorito en el furgón y la falta del aviso exterior sobre la carga.",
+        "explicacion": "Correcta. Está prohibido llevar alimentos junto con sustancias peligrosas, como el hipoclorito (art. 29, num. 8), y el vehículo debe exhibir por fuera la leyenda Transporte de Alimentos (num. 9). Los yogures y las galletas envasados pueden ir juntos (num. 6)."
+      },
+      {
+        "id": "C",
+        "texto": "La carga conjunta de yogures y galletas, y la falta del aviso exterior sobre la carga.",
+        "explicacion": "Incorrecta. La mezcla de yogures y galletas envasados está permitida (art. 29, num. 6). El hallazgo que omite es el hipoclorito en el mismo vehículo (num. 8)."
+      },
+      {
+        "id": "D",
+        "texto": "Solo la falta del aviso exterior; los tambores van cerrados y no tocan los alimentos.",
+        "explicacion": "Incorrecta. La prohibición de llevar sustancias peligrosas con alimentos se refiere al mismo vehículo, aunque los tambores estén cerrados (art. 29, num. 8)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: en el furgón van alimentos envasados de distinto riesgo y dos tambores de hipoclorito, y el camión no lleva ninguna leyenda exterior. Reglas (art. 29 de la Resolución 2674): se permite llevar juntos alimentos de diferente riesgo si van envasados y protegidos (num. 6); se prohíbe llevarlos con sustancias peligrosas (num. 8), y el vehículo debe mostrar por fuera la leyenda Transporte de Alimentos (num. 9). Conclusión: los hallazgos son el hipoclorito y la falta de la leyenda.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Vigilancia de medicamentos",
+    "subtema": "Producto farmacéutico alterado y fraudulento",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 677 de 1995",
+    "articulos": [
+      "art. 2, definición de producto farmacéutico alterado, lits. c y e",
+      "art. 2, definición de producto farmacéutico fraudulento, lit. g"
+    ],
+    "texto_fuente": "Producto farmacéutico alterado. Se entiende por producto farmacéutico alterado, el que se encuentra en una de las siguiente situaciones: [...] c) Cuando se encuentre vencida la fecha de expiración correspondiente a la vida útil del producto; [...] e) Cuando por su naturaleza no se encuentre almacenado o conservado con las debidas precauciones. Producto farmacéutico fraudulento. Se entiende por producto farmacéutico fraudulento el que se encuentra en una de las siguientes condiciones: [...] g) Cuando no esté amparado con Registro Sanitario.",
+    "pregunta": "En la visita a una droguería, un técnico de la secretaría de salud encuentra tres productos exhibidos para la venta: cajas de un antibiótico cuya fecha de expiración pasó hace un mes; viales de insulina, cuyo rótulo exige conservarlos entre 2 °C y 8 °C, guardados en una vitrina a temperatura ambiente, y tabletas de un analgésico sin número de registro sanitario en el empaque, que tampoco aparecen en la base de datos del Invima. Debe clasificar cada hallazgo en el acta. ¿Cuál es la clasificación correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Alterados el antibiótico y la insulina, y fraudulento el analgésico.",
+        "explicacion": "Correcta. Un producto con la fecha de expiración vencida y uno que no se conserva con las precauciones que exige su naturaleza son productos alterados (art. 2, definición de alterado, lits. c y e). El que no está amparado con registro sanitario es fraudulento (lit. g)."
+      },
+      {
+        "id": "B",
+        "texto": "Fraudulentos el antibiótico y el analgésico, y alterada la insulina.",
+        "explicacion": "Incorrecta. La fecha de expiración vencida hace al antibiótico alterado, no fraudulento (art. 2, definición de alterado, lit. c)."
+      },
+      {
+        "id": "C",
+        "texto": "Alterado el antibiótico y fraudulento el analgésico; la insulina no es hallazgo.",
+        "explicacion": "Incorrecta. No hace falta un cambio visible: la insulina guardada sin las precauciones de conservación que exige su naturaleza ya es un producto alterado (art. 2, definición de alterado, lit. e)."
+      },
+      {
+        "id": "D",
+        "texto": "Alterado el antibiótico, y fraudulentos la insulina y el analgésico.",
+        "explicacion": "Incorrecta. La mala conservación de la insulina la hace alterada, no fraudulenta. Las causales de fraude tienen que ver con el origen, el registro o la identidad del producto (art. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: un antibiótico vencido, una insulina refrigerable guardada a temperatura ambiente y un analgésico sin registro sanitario. Regla (art. 2 del Decreto 677): es alterado el producto con la fecha de expiración vencida (lit. c) o el que no se almacena o conserva con las debidas precauciones (lit. e); es fraudulento el que no está amparado con registro sanitario (lit. g). Conclusión: el antibiótico y la insulina son alterados y el analgésico es fraudulento.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Medidas sanitarias de seguridad",
+    "subtema": "Ejecución inmediata y contenido del acta de la medida",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 677 de 1995 y Ley 9 de 1979",
+    "articulos": [
+      "Decreto 677 de 1995, art. 109",
+      "Ley 9 de 1979, art. 576, parágrafo"
+    ],
+    "texto_fuente": "Para efecto de aplicar una medida sanitaria de seguridad, deberá levantarse un acta por triplicado que suscribirá el funcionario público que la práctica y las personas que intervengan en la diligencia, en la cual deberá indicarse la dirección o ubicación donde se practica, los nombre de los funcionarios intervinientes, las circunstancias que hayan originado la medida, la clase de medida que se imponga y la indicación de las normas sanitarias presuntamente violadas. Copia de la misma se entregará a la persona que atienda la diligencia. [...] Las medidas a que se refiere este artículo serán de inmediata ejecución, tendrán carácter preventivo y transitorio y se aplicarán sin perjuicio de las sanciones a que haya lugar.",
+    "pregunta": "Un técnico de la secretaría de salud distrital decide congelar un lote de jarabes en un depósito de medicamentos, porque los encontró almacenados sin las condiciones de temperatura que indica su rótulo. Su borrador de acta tiene la dirección del depósito, los nombres de los funcionarios, las circunstancias que originan la medida y la clase de medida. El administrador le pide no aplicarla hasta que su abogado lea el acta. ¿Qué debe hacer el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aplazar la medida un día para que el abogado revise el acta, que ya incluirá las normas presuntamente violadas.",
+        "explicacion": "Incorrecta. Las medidas sanitarias de seguridad son de inmediata ejecución (Ley 9 de 1979, art. 576, parágrafo); no se aplazan mientras el responsable consulta a su abogado, aunque el acta ya esté completa."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicar la medida y entregar copia del acta, dejando para el pliego de cargos la mención de las normas infringidas.",
+        "explicacion": "Incorrecta. El acta de la medida debe indicar desde ya las normas sanitarias presuntamente violadas (Decreto 677 de 1995, art. 109); esa mención no se deja para una etapa posterior del proceso."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicar la medida, citar en el acta las normas presuntamente violadas y entregar copia a quien la atiende.",
+        "explicacion": "Correcta. La medida se ejecuta de inmediato (Ley 9 de 1979, art. 576, parágrafo). El acta, por triplicado, debe indicar las normas presuntamente violadas, la suscriben el funcionario y quienes intervienen, y se entrega copia a quien atiende la diligencia (Decreto 677 de 1995, art. 109)."
+      },
+      {
+        "id": "D",
+        "texto": "Aplicar la medida, citar en el acta las normas presuntamente violadas y enviarla luego al administrador para su firma.",
+        "explicacion": "Incorrecta. El acta la suscriben en la diligencia el funcionario y quienes intervienen en ella, y la copia se entrega a quien la atiende (Decreto 677 de 1995, art. 109); no se envía después para que la firmen."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: el borrador de acta no indica las normas violadas y el administrador pide aplazar la medida. Reglas: las medidas sanitarias de seguridad son de inmediata ejecución (art. 576, parágrafo, Ley 9 de 1979); el acta se levanta por triplicado, indica las normas sanitarias presuntamente violadas y se entrega copia a quien atiende la diligencia (art. 109 del Decreto 677). Conclusión: el técnico aplica la medida, completa el acta y entrega la copia.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAN-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Revisión de oficio",
+    "subtema": "Término para presentar estudios y recurso contra la decisión",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 49, lits. a y d"
+    ],
+    "texto_fuente": "Esta decisión se notificará a los interesados dentro de los cinco (5) días hábiles siguientes al envío de la citación. El acto de revisión dispondrá la presentación ante el Invima de los estudios, justificaciones técnicas, plan de cumplimento o los ajustes que se consideren del caso, dependiendo de las razones que motiven la revisión, para lo cual se fijará un término de diez (10) días hábiles, contados a partir del día siguiente a la notificación; [...] el Invima adoptará la decisión pertinente mediante resolución motivada, la cual deberá notificarse a los interesados, de conformidad con lo dispuesto en la Ley 1437 de 2011 y contra la cual únicamente procede el recurso de reposición;",
+    "pregunta": "Un profesional jurídico del Invima tramita la revisión de oficio de la notificación sanitaria de un cereal, ordenada mediante acto motivado y con concepto previo de la sala especializada. La citación para notificar el acto se envió el lunes 26 de octubre de 2026 y el representante legal de la empresa se notificó personalmente el martes 3 de noviembre. El acto fija el término que prevé la Resolución 2674 de 2013 para presentar estudios y justificaciones. El 2 y el 16 de noviembre de 2026 son festivos. ¿Hasta qué día puede la empresa presentarlos y qué recurso procederá contra la decisión que ponga fin a la revisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 10 de noviembre de 2026, y contra la decisión final caben reposición y apelación.",
+        "explicacion": "Incorrecta. Cuenta los diez días hábiles desde la citación, pero corren desde el día siguiente a la notificación (art. 49, lit. a). Además, contra la decisión final solo procede reposición (lit. d)."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 18 de noviembre de 2026, y contra la decisión final solo cabe reposición.",
+        "explicacion": "Correcta. Los 10 días hábiles corren desde el día siguiente a la notificación del 3 de noviembre: 4, 5, 6, 9, 10, 11, 12, 13, 17 y 18 de noviembre (el 16 es festivo). Contra la resolución que decide la revisión solo procede reposición (art. 49, lits. a y d)."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 17 de noviembre de 2026, y contra la decisión final caben reposición y apelación.",
+        "explicacion": "Incorrecta. No descuenta el festivo del 16 de noviembre, y por eso llega al 17. Además, contra la decisión final no procede apelación: solo reposición (art. 49, lit. d)."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 13 de noviembre de 2026, y contra la decisión final solo cabe reposición.",
+        "explicacion": "Incorrecta. Cuenta días calendario. El término es de diez días hábiles (art. 49, lit. a) y vence el 18 de noviembre."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: notificación personal el martes 3 de noviembre de 2026, con festivo el 16 de noviembre. Regla (art. 49 de la Resolución 2674): el acto de revisión fija diez días hábiles contados desde el día siguiente a la notificación, y contra la resolución que decide solo procede reposición. Cálculo: 4, 5, 6, 9, 10, 11, 12, 13, 17 y 18 de noviembre. Conclusión: plazo hasta el 18 de noviembre y solo recurso de reposición.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAN-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Procedimiento sancionatorio sanitario",
+    "subtema": "Apertura del proceso frente a establecimientos de bajo riesgo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 9 de 1979",
+    "articulos": [
+      "art. 576, parágrafo",
+      "art. 577, incs. 1 y 2 (modificado por el art. 98 del Decreto Ley 2106 de 2019)"
+    ],
+    "texto_fuente": "Las medidas a que se refiere este artículo serán de inmediata ejecución, tendrán carácter preventivo y transitorio y se aplicarán sin perjuicio de las sanciones a que haya lugar. [...] La autoridad competente iniciará proceso sancionatorio en los casos que evidencie una presunta infracción o violación al régimen sanitario. Cuando se trate de productos, establecimientos y/o servicios catalogados de bajo riesgo, la apertura del proceso solo se hará cuando además de evidenciar la presunta infracción, existan indicios frente a la liberación del producto en el mercado o se haya determinado el incumplimiento de las medidas sanitarias de seguridad. Para efectos de clasificar un producto, establecimiento y/o servicio de bajo riesgo, deberán ser atendidos los criterios, normas y reglamentos formulados a nivel nacional y adaptados a nivel territorial.",
+    "pregunta": "Una profesional jurídica de una secretaría de salud departamental recibe dos informes sobre las bodegas de producto terminado de dos plantas empacadoras de arroz, ambas catalogadas de bajo riesgo según los criterios que aplica la secretaría. En la bodega de la planta 1, el técnico encontró un lote de arroz ya empacado, que aún no se había despachado, sobre el piso y sin estibas, y lo congeló; en la visita de seguimiento el lote seguía en la bodega, completo y con los sellos intactos. En la planta 2 hubo el mismo hallazgo y la misma medida, pero en el seguimiento los sellos estaban rotos y faltaba la mitad del lote, que se había despachado a tiendas. ¿En qué caso debe abrir proceso sancionatorio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En los dos casos, porque en ambos hubo una infracción y la medida sanitaria no extingue la responsabilidad.",
+        "explicacion": "Incorrecta. Es cierto que las medidas se aplican sin perjuicio de las sanciones (art. 576, parágrafo), pero en establecimientos de bajo riesgo la presunta infracción no basta para abrir el proceso: además deben existir indicios de que el producto se liberó en el mercado o haberse incumplido la medida sanitaria (art. 577, inc. 1). En la planta 1 no ocurrió ninguna de las dos cosas."
+      },
+      {
+        "id": "B",
+        "texto": "En ninguno, porque frente al bajo riesgo la medida sanitaria agota la actuación y solo cabe vigilar su cumplimiento.",
+        "explicacion": "Incorrecta. Los establecimientos de bajo riesgo sí pueden ser objeto de proceso sancionatorio; la norma solo agrega condiciones para abrirlo (art. 577, inc. 1), y en la planta 2 se cumplen."
+      },
+      {
+        "id": "C",
+        "texto": "Solo en la planta 2, por la ruptura de los sellos y el despacho de parte del lote a las tiendas.",
+        "explicacion": "Correcta. Las dos plantas son de bajo riesgo y en ambas hay presunta infracción. En la 1 el arroz no salió de la bodega y la medida se respetó; en la 2 se rompieron los sellos y se despachó arroz a tiendas, es decir, se incumplió la medida y hay indicios de liberación del producto en el mercado, que son las condiciones adicionales del art. 577, inc. 1."
+      },
+      {
+        "id": "D",
+        "texto": "En ninguno, hasta que un análisis de laboratorio confirme que el arroz representa un riesgo para la salud.",
+        "explicacion": "Incorrecta. La norma no condiciona la apertura a un análisis de laboratorio; para el bajo riesgo exige indicios de salida del producto al mercado o incumplimiento de la medida (art. 577, inc. 1)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: las dos plantas son de bajo riesgo; en la 1 la medida se respetó y el arroz no salió de la bodega; en la 2 se rompieron los sellos y se despachó arroz a tiendas. Regla (art. 577 de la Ley 9, mod. art. 98 del DL 2106 de 2019): para el bajo riesgo, el proceso se abre solo si, además de la presunta infracción, hay indicios de liberación del producto en el mercado o se incumplió la medida sanitaria. Conclusión: solo procede abrirlo frente a la planta 2.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0009_1979.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-SAN-013",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Medidas sanitarias de seguridad",
+    "subtema": "Levantamiento de la medida y continuidad del proceso sancionatorio",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 677 de 1995",
+    "articulos": [
+      "art. 104, lits. a y e",
+      "art. 110"
+    ],
+    "texto_fuente": "a) Clausura temporal del establecimiento, que podrá ser total o parcial; [...] e) La congelación o suspensión temporal de la venta o empleo de productos y objetos, mientras se toma una decisión definitiva al respecto, hasta por un lapso máximo de sesenta (60) días hábiles. [...] Por su naturaleza son de inmediata ejecución, tienen carácter preventivo y transitorio y se aplicarán sin perjuicio de las sanciones a que haya lugar, se levantarán cuando se compruebe que han desaparecido las causas que la originaron.",
+    "pregunta": "El Invima impuso la clausura temporal parcial del área de almacenamiento de un laboratorio farmacéutico porque sus cavas de producto refrigerado no mantenían la temperatura, y abrió el proceso sancionatorio correspondiente. Un mes después, el laboratorio demuestra que reemplazó los equipos, y una visita de un profesional de IVC confirma que la cadena de frío funciona. El laboratorio pide levantar la clausura y archivar el proceso. ¿Qué debe proponer el profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener la clausura hasta el fallo, pues así se garantiza que el laboratorio cumpla la sanción.",
+        "explicacion": "Incorrecta. La medida no es una garantía de la sanción: es preventiva y transitoria, y se levanta cuando se comprueba que desaparecieron sus causas (art. 110), aunque el proceso siga."
+      },
+      {
+        "id": "B",
+        "texto": "Levantar la clausura y archivar el proceso, pues la corrección demuestra que ya no hay riesgo sanitario.",
+        "explicacion": "Incorrecta. Que ya no haya riesgo permite levantar la medida, pero no borra el hecho investigado: las medidas se aplican sin perjuicio de las sanciones a que haya lugar (art. 110)."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener la clausura hasta cumplir sesenta días hábiles, que es el término previsto para estas medidas.",
+        "explicacion": "Incorrecta. Los 60 días hábiles son el lapso máximo de la congelación o suspensión de la venta de productos (art. 104, lit. e), no un término que deba cumplir la clausura del establecimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Levantar la clausura y continuar el proceso, pues la corrección posterior no borra la falta cometida.",
+        "explicacion": "Correcta. La visita comprobó que la falla de temperatura se corrigió, así que la clausura debe levantarse (art. 110). Pero las medidas se aplican sin perjuicio de las sanciones, de modo que el proceso sancionatorio continúa."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la visita confirmó que la cadena de frío ya funciona. Regla (art. 110 del Decreto 677): las medidas sanitarias de seguridad son preventivas y transitorias, se aplican sin perjuicio de las sanciones y se levantan cuando se comprueba que desaparecieron sus causas. El límite de 60 días hábiles es solo para la congelación de productos (art. 104, lit. e). Conclusión: se levanta la clausura y el proceso sancionatorio sigue.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-SAN-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Procedimiento sancionatorio sanitario",
+    "subtema": "Tope de la multa y obras sanitarias ordenadas",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 9 de 1979",
+    "articulos": [
+      "art. 577, inc. 3, lit. b (modificado por el art. 98 del Decreto Ley 2106 de 2019)",
+      "art. 579"
+    ],
+    "texto_fuente": "La entidad encargada de hacer cumplir las disposiciones sanitarias impondrá, mediante acto administrativo, alguna o algunas de las siguientes sanciones, según la gravedad del hecho: [...] b. Multas sucesivas hasta por una suma equivalente a 10.000 salarios mínimos legales mensuales vigentes; [...] El pago de las multas no exime al infractor de la ejecución de la obra, obras o medidas de carácter sanitario que hayan sido ordenadas por la entidad responsable del control.",
+    "pregunta": "Un profesional jurídico del Invima revisa el proyecto de resolución que sanciona a una fábrica de bebidas. El proyecto impone una multa de $19.000.000.000 y, en otro artículo, dispone que con su pago la empresa queda relevada de construir las obras de manejo de aguas residuales que se le habían ordenado. Para el cálculo, tome como salario mínimo mensual $1.750.905. ¿Qué debe corregir en el proyecto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reducir la multa, cuyo tope legal es $17.509.050.000, y suprimir el artículo que exonera de la obra.",
+        "explicacion": "Correcta. El tope es de 10.000 salarios mínimos legales mensuales vigentes: 10.000 × $1.750.905 = $17.509.050.000, y $19.000.000.000 lo supera (art. 577, lit. b). Además, pagar la multa no exime de ejecutar las obras sanitarias ordenadas (art. 579)."
+      },
+      {
+        "id": "B",
+        "texto": "Reducir la multa, cuyo tope legal es $583.635.000, y suprimir el artículo que exonera de la obra.",
+        "explicacion": "Incorrecta. Acierta en suprimir la exoneración (art. 579), pero calcula el tope con salarios diarios: 10.000 × ($1.750.905 / 30) = $583.635.000. El literal b lo fija en 10.000 salarios mínimos legales mensuales vigentes, es decir, $17.509.050.000."
+      },
+      {
+        "id": "C",
+        "texto": "Reducir la multa, cuyo tope legal es $17.509.050.000, y mantener el artículo que exonera de la obra.",
+        "explicacion": "Incorrecta. Calcula bien el tope, pero deja la exoneración: el pago de la multa no exime de la obra ordenada (art. 579)."
+      },
+      {
+        "id": "D",
+        "texto": "Reducir la multa, cuyo tope legal es $583.635.000, y mantener el artículo que exonera de la obra.",
+        "explicacion": "Incorrecta. Calcula el tope con salarios diarios ($583.635.000), cuando el literal b lo fija en 10.000 salarios mínimos mensuales ($17.509.050.000), y además mantiene la exoneración, aunque el pago de la multa no exime de las obras ordenadas (art. 579)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: multa de $19.000.000.000 con un salario mínimo mensual de $1.750.905, y un artículo que exonera de la obra con el pago. Reglas de la Ley 9 de 1979: las multas van hasta la suma equivalente a 10.000 salarios mínimos legales mensuales (art. 577, lit. b, mod. DL 2106 de 2019) y su pago no exime de las obras o medidas sanitarias ordenadas (art. 579). Cálculo: 10.000 × $1.750.905 = $17.509.050.000 (con salarios diarios saldría $583.635.000, que no es el tope). Conclusión: reducir la multa y suprimir la exoneración.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0009_1979.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-SAN-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro, permiso y notificación sanitaria de alimentos",
+    "subtema": "Amparo de varios alimentos bajo un mismo registro",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 3, definiciones de ingredientes primarios y secundarios",
+      "art. 42, lits. a, b y c"
+    ],
+    "texto_fuente": "a) Cuando se trate del mismo alimento elaborado por diferentes fabricantes, con la misma marca comercial; b) Cuando se trate del mismo alimento, con diferentes marcas, siempre y cuando, el titular y el fabricante correspondan a una misma persona natural o jurídica; c) Los alimentos con la misma composición básica que solo difieran en los ingredientes secundarios; [...] INGREDIENTES PRIMARIOS. Son elementos constituyentes de un alimento o materia prima para alimentos, que una vez sustituido uno de estos, el producto deja de ser tal para convertirse en otro. INGREDIENTES SECUNDARIOS. Son elementos constituyentes de un alimento o materia prima para alimentos, incluidos los aditivos alimentarios, que de ser sustituidos, pueden determinar el cambio de las características del producto, aunque este continúe siendo el mismo.",
+    "pregunta": "Una empresa es titular y fabricante de un yogur de fresa con registro sanitario del Invima. Pide amparar bajo ese mismo registro: (1) el mismo yogur, fabricado por ella, que venderá con una segunda marca; (2) una versión que solo cambia el saborizante y el colorante; (3) una bebida en la que la leche se reemplaza por una base de almendras, y (4) el mismo yogur con una tercera marca, que le fabricará un maquilador. Un profesional de la Dirección de Alimentos y Bebidas debe proyectar la respuesta. ¿Qué solicitudes son procedentes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La 1, la 2 y la 4.",
+        "explicacion": "Incorrecta. La 4 no procede: el mismo alimento con otra marca solo cabe si titular y fabricante son la misma persona (art. 42, lit. b), y aquí fabrica un maquilador; tampoco es la misma marca con otro fabricante (lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "La 2 y la 3.",
+        "explicacion": "Incorrecta. La 3 no procede: la leche es un ingrediente primario y sustituirla convierte el producto en otro (art. 3), así que no conserva la composición básica. Además omite la 1, que sí procede (art. 42, lit. b)."
+      },
+      {
+        "id": "C",
+        "texto": "La 1 y la 2.",
+        "explicacion": "Correcta. La 1 es el mismo alimento con otra marca y la empresa es titular y fabricante (art. 42, lit. b). La 2 solo cambia aditivos, que son ingredientes secundarios (art. 3 y art. 42, lit. c). La 3 sustituye un ingrediente primario, y la 4 combina otra marca con un fabricante distinto del titular."
+      },
+      {
+        "id": "D",
+        "texto": "La 1 y la 4.",
+        "explicacion": "Incorrecta. Incluye la 4, que combina otra marca con un fabricante distinto del titular, caso que no prevé el art. 42, y omite la 2, que solo cambia ingredientes secundarios (lit. c)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: la empresa es titular y fabricante; la solicitud 2 cambia aditivos, la 3 cambia la leche y la 4 usa otra marca con un maquilador. Reglas de la Resolución 2674: pueden ir bajo un mismo registro el mismo alimento con distintas marcas si titular y fabricante son la misma persona (art. 42, lit. b) y los alimentos que solo difieren en ingredientes secundarios (lit. c); los aditivos son secundarios y la sustitución de un ingrediente primario crea otro producto (art. 3). Conclusión: proceden la 1 y la 2.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-SAN-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro sanitario de medicamentos",
+    "subtema": "Vigencia indefinida del registro sanitario",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 677 de 1995",
+    "articulos": [
+      "art. 16, incs. 1 y 4 (modificado por el art. 5 del Decreto 1474 de 2023)"
+    ],
+    "texto_fuente": "La vigencia de los registros sanitarios de medicamentos será indefinida. [...] Para aquellos medicamentos que a la fecha de expedición de este decreto ya cuenten con registro vigente, su duración pasará a ser indefinida, siempre y cuando mantengan las condiciones previamente aprobadas en el registro vigente.",
+    "pregunta": "En octubre de 2026, un laboratorio consulta al Invima sobre el registro sanitario de un antihipertensivo que obtuvo en 2021. La resolución que lo concedió señalaba que vencía el 15 de marzo de 2026, y el laboratorio no pidió la renovación porque no recibió ningún aviso. El producto no ha tenido modificaciones desde su aprobación. ¿Qué debe responder la profesional del Invima?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el registro venció sin renovarse y que, para seguir vendiendo, debe tramitar un registro nuevo.",
+        "explicacion": "Incorrecta. Desde el Decreto 1474 de 2023, la vigencia de los registros de medicamentos es indefinida, y los que estaban vigentes cuando se expidió pasaron a ese régimen (art. 16). No había renovación que pedir."
+      },
+      {
+        "id": "B",
+        "texto": "Que el registro sigue vigente sin fecha de vencimiento, así que no había renovación que pedir.",
+        "explicacion": "Correcta. El registro estaba vigente en 2023, cuando el Decreto 1474 modificó el art. 16: su duración pasó a ser indefinida, con la condición de mantener lo aprobado, y el producto no ha tenido modificaciones. No había un vencimiento que obligara a renovar."
+      },
+      {
+        "id": "C",
+        "texto": "Que la vigencia sin término cobija solo los registros que se concedieron después del decreto de 2023.",
+        "explicacion": "Incorrecta. La norma extiende la vigencia indefinida a los medicamentos que ya tenían registro vigente en la fecha de expedición del decreto (art. 16, inc. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Que, como el producto no ha cambiado, puede pedir la renovación tardía sin que se tramite como registro nuevo.",
+        "explicacion": "Incorrecta. No hay renovación que pedir, ni a tiempo ni tarde: el registro pasó a tener vigencia indefinida (art. 16, inc. 4), así que no se le aplica el régimen de renovaciones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el registro, concedido en 2021 con vencimiento en marzo de 2026, estaba vigente en 2023 y el producto no ha tenido modificaciones. Regla (art. 16 del Decreto 677, mod. art. 5 del Decreto 1474 de 2023): la vigencia de los registros de medicamentos es indefinida, y los que estaban vigentes al expedirse ese decreto pasaron a ser indefinidos si mantienen las condiciones aprobadas. Conclusión: el registro sigue vigente y no requería renovación.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-SAN-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro sanitario de medicamentos",
+    "subtema": "Modalidades de fabricar y vender, y de fabricar y exportar",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 677 de 1995",
+    "articulos": [
+      "art. 14, pars. 1 y 4 (modificado por el art. 1 del Decreto 2091 de 1997)"
+    ],
+    "texto_fuente": "PARAGRAFO 1o. Para efectos del presente artículo, la modalidad de fabricar y vender comprende por sí misma la posibilidad de exportar, sin perjuicio de que la autoridad sanitaria competente pueda expedir el correspondiente registro sanitario exclusivamente para las modalidades de fabricación y exportación. [...] PARAGRAFO 4o. Los productos a los cuales se les otorgue registro sanitario en la modalidad de fabricar y exportar, no podrán en ningún caso ser comercializados en Colombia.",
+    "pregunta": "Un profesional de la Dirección de Medicamentos del Invima atiende dos consultas. El laboratorio A tiene registro sanitario en la modalidad de fabricar y vender para un antiácido y quiere despachar un lote a Ecuador. El laboratorio B tiene registro en la modalidad de fabricar y exportar para un antiparasitario y quiere vender en Colombia unas unidades que no pudo exportar. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que A puede exportar con el registro que tiene y que B no puede vender esas unidades en el país.",
+        "explicacion": "Correcta. La modalidad de fabricar y vender comprende la posibilidad de exportar (art. 14, par. 1), y lo registrado en la modalidad de fabricar y exportar no puede comercializarse en Colombia (par. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Que A debe obtener la modalidad de fabricar y exportar, y que B puede vender las unidades en el país.",
+        "explicacion": "Incorrecta. A no necesita otra modalidad, porque fabricar y vender ya incluye exportar (par. 1), y B no puede vender en Colombia (par. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Que A puede exportar con el registro que tiene y que B puede vender si antes informa al Invima.",
+        "explicacion": "Incorrecta. Ningún aviso al Invima permite vender en Colombia un producto registrado para fabricar y exportar (art. 14, par. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Que A debe obtener la modalidad de fabricar y exportar, y que B no puede vender en el país.",
+        "explicacion": "Incorrecta. Acierta en lo de B, pero A puede exportar con su registro de fabricar y vender (art. 14, par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: A tiene la modalidad de fabricar y vender y quiere exportar; B tiene la de fabricar y exportar y quiere vender en Colombia. Regla (art. 14 del Decreto 677, mod. Decreto 2091 de 1997): fabricar y vender comprende la posibilidad de exportar (par. 1), y lo registrado para fabricar y exportar no puede comercializarse en Colombia (par. 4). Conclusión: A puede exportar y B no puede vender en el país.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-SAN-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Registro sanitario de medicamentos",
+    "subtema": "Evaluación farmacológica abreviada por registro en países de referencia",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 677 de 1995",
+    "articulos": [
+      "art. 27, pars. 1 y 2",
+      "art. 28, inc. 1 y parágrafo"
+    ],
+    "texto_fuente": "PARAGRAFO 1o. Cuando el producto cuyo registro se solicite se encuentre registrado por lo menos en dos (2) países de referencia y no haya sido rechazado en ningún otro país de referencia, para la evaluación farmacológica de referencia se requerirá simplemente un resumen de la información clínica con la biografía correspondiente, en formato definido por el Invima. [...] PARAGRAFO 2o. Para efecto de este artículo los países de referencia son: Estados Unidos de Norteamérica, Canadá, Alemania, Suiza, Francia, Inglaterra, Dinamarca, Holanda, Suecia, Japón y Noruega. [...] La Comisión Revisora de Productos Farmacéuticos dispondrá de un plazo de ciento ochenta (180) días hábiles para emitir el concepto técnico correspondiente [...] PARAGRAFO. Si el producto se ajusta a lo previsto en el parágrafo primero del artículo anterior, esto es, se encuentra registrado en por lo menos dos (2) países de referencia y no ha sido rechazado en ningún país de referencia el plazo para la evaluación farmacológica será de treinta (30) días hábiles",
+    "pregunta": "Una profesional que apoya a la Comisión Revisora del Invima recibe dos solicitudes de evaluación farmacológica de medicamentos nuevos. El producto Alfa está registrado en Estados Unidos y en Alemania, pero la autoridad sanitaria de Francia le negó el registro. El producto Beta está registrado en Canadá, en Suiza y en Brasil, y ningún país lo ha rechazado. ¿Qué plazo tiene la Comisión para emitir el concepto de cada uno?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Alfa, 30 días hábiles, y Beta, 180, porque uno de los registros de Beta no es de un país de referencia.",
+        "explicacion": "Incorrecta. Invierte el resultado. A Beta le basta estar registrado en dos países de referencia (Canadá y Suiza); el registro adicional en Brasil, que no es de referencia, no le resta nada. Alfa, en cambio, fue rechazado en Francia, que sí es país de referencia, y eso le impide el trámite abreviado (art. 27, pars. 1 y 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Ambos, 180 días hábiles, porque Alfa tiene un rechazo y Beta incluye un país que no es de referencia.",
+        "explicacion": "Incorrecta. Acierta con Alfa, pero no con Beta: la norma exige al menos dos registros en países de referencia y ningún rechazo en ellos; no exige que todos los registros del producto sean de países de referencia. Beta cumple con Canadá y Suiza (art. 27, pars. 1 y 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Ambos, 30 días hábiles, porque cada uno está registrado en al menos dos países de referencia.",
+        "explicacion": "Incorrecta. Acierta con Beta, pero olvida la segunda condición: además de dos registros en países de referencia, el producto no debe haber sido rechazado en ningún país de referencia, y Francia lo es (art. 27, par. 2; art. 28, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Alfa, 180 días hábiles, y Beta, 30, porque el rechazo en Francia le impide a Alfa abreviar el trámite.",
+        "explicacion": "Correcta. Alfa tiene dos registros en países de referencia, pero fue rechazado en Francia, que también lo es, así que rige el plazo general de 180 días hábiles (art. 28). Beta está registrado en Canadá y Suiza y no ha sido rechazado en ningún país de referencia, así que su plazo es de 30 días hábiles (art. 28, par.)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: Alfa está registrado en Estados Unidos y Alemania y fue rechazado en Francia; Beta está registrado en Canadá, Suiza y Brasil, sin rechazos. Reglas del Decreto 677: el plazo general de la evaluación farmacológica es de 180 días hábiles (art. 28) y baja a 30 si el producto está registrado en al menos dos países de referencia y no ha sido rechazado en ninguno de ellos (art. 27, par. 1, y art. 28, par.). Francia es país de referencia y Brasil no (art. 27, par. 2). Conclusión: Alfa, 180 días; Beta, 30.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/decreto_0677_1995.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 68
+    }
+  },
+  {
+    "id": "TC-SAN-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Competencias de inspección, vigilancia y control",
+    "subtema": "Delegación de la expedición de autorizaciones sanitarias de alimentos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 3, definición de autoridades sanitarias competentes",
+      "art. 44 y parágrafo"
+    ],
+    "texto_fuente": "AUTORIDADES SANITARIAS COMPETENTES. Son autoridades sanitarias, el Instituto Nacional de Vigilancia de Medicamentos y Alimentos (Invima) y las Entidades Territoriales de Salud que, de acuerdo con la ley, ejercen funciones de inspección, vigilancia y control [...] El Instituto Nacional de Vigilancia de Medicamentos y Alimentos – Invima, expedirá los registros, permisos y notificaciones sanitarias para los alimentos, así como la renovación y/o modificación a los mismos. PARÁGRAFO. El Invima podrá delegar las competencias a que refiere este artículo en las entidades territoriales, previa verificación de su idoneidad técnica, científica y administrativa, sin perjuicio de que pueda reasumir estas funciones. Para el efecto, deberá dar cumplimiento a lo establecido en la Ley 489 de 1998 o la norma que la modifique, adicione o sustituya.",
+    "pregunta": "El secretario de salud de un departamento quiere que su despacho expida las notificaciones sanitarias de los pequeños productores de alimentos de la región, que se quejan de lo lento que les resulta el trámite. Le pide a una profesional de la oficina jurídica un concepto sobre si puede hacerlo. ¿Qué debe responder la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede expedirlas desde ya, porque la secretaría también es autoridad sanitaria en su territorio.",
+        "explicacion": "Incorrecta. Ser autoridad sanitaria con funciones de inspección, vigilancia y control (art. 3) no da competencia para expedir las autorizaciones: esa función es del Invima (art. 44)."
+      },
+      {
+        "id": "B",
+        "texto": "Que podrá hacerlo si el Invima, tras verificar su capacidad técnica y administrativa, le delega la función.",
+        "explicacion": "Correcta. El Invima expide los registros, permisos y notificaciones sanitarias de alimentos, y puede delegar esa competencia en las entidades territoriales tras verificar su idoneidad técnica, científica y administrativa, sin perder la posibilidad de reasumirla (art. 44 y parágrafo)."
+      },
+      {
+        "id": "C",
+        "texto": "Que podrá hacerlo si la asamblea departamental le asigna esa función por ordenanza, a petición del gobernador.",
+        "explicacion": "Incorrecta. La competencia no se crea por ordenanza: la resolución la asigna al Invima, que es quien puede delegarla (art. 44, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Que podrá hacerlo si el Ministerio de Salud, tras verificar su capacidad técnica y administrativa, se la delega.",
+        "explicacion": "Incorrecta. La competencia para expedir estas autorizaciones es del Invima, y es el Invima quien puede delegarla en las entidades territoriales previa verificación de su idoneidad (art. 44 y parágrafo); no la delega el Ministerio de Salud."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la secretaría quiere expedir notificaciones sanitarias sin delegación del Invima. Regla de la Resolución 2674: las entidades territoriales de salud son autoridades sanitarias de inspección, vigilancia y control (art. 3), pero los registros, permisos y notificaciones de alimentos los expide el Invima, que puede delegar esa competencia previa verificación de idoneidad y reasumirla (art. 44 y parágrafo). Conclusión: solo con delegación del Invima.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-SAN-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "invima",
+    "modulo": "Vigilancia Sanitaria (INVIMA)",
+    "tema": "Buenas prácticas de manufactura",
+    "subtema": "Personal técnico según el riesgo del alimento",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 2674 de 2013",
+    "articulos": [
+      "art. 3, definiciones de permiso sanitario y registro sanitario",
+      "art. 24 y parágrafo"
+    ],
+    "texto_fuente": "PERMISO SANITARIO. Acto administrativo expedido por la autoridad sanitaria competente, mediante el cual se autoriza a una persona natural o jurídica para fabricar, procesar, envasar, importar y/o comercializar un alimento de riesgo medio en salud pública con destino al consumo humano. [...] REGISTRO SANITARIO. Acto administrativo expedido por la autoridad sanitaria competente, mediante el cual se autoriza a una persona natural o jurídica para fabricar, procesar, envasar, importar y/o comercializar un alimento de alto riesgo en salud pública con destino al consumo humano. [...] Los establecimientos que fabriquen, procesen, elaboren o envasen alimentos de alto riesgo en salud pública, deben contar con los servicios de tiempo completo de personal técnico idóneo en las áreas de producción y control de calidad de alimentos, quien debe tener a cargo el programa de capacitación del personal manipulador de alimentos. PARÁGRAFO. Los establecimientos que fabriquen, procesen, elaboren o envasen alimentos de riesgo medio o bajo en salud pública, deben contar con los servicios de personal técnico idóneo en las áreas de producción y control de calidad de alimentos",
+    "pregunta": "Un profesional de IVC del Invima consolida los hallazgos de dos fábricas. La fábrica 1 elabora un producto amparado con registro sanitario (RSA) y tiene un técnico de producción y control de calidad contratado cuatro horas diarias. La fábrica 2 elabora un producto amparado con permiso sanitario (PSA) y tiene un técnico idóneo contratado por medio tiempo. En ambas, el técnico tiene a cargo la capacitación de los manipuladores. ¿Qué debe concluir sobre el personal técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo la fábrica 1 incumple, porque su producto le exige un técnico durante toda la jornada.",
+        "explicacion": "Correcta. El registro sanitario se expide para alimentos de alto riesgo y el permiso, para los de riesgo medio (art. 3). Quien elabora alimentos de alto riesgo debe tener personal técnico de tiempo completo (art. 24), y cuatro horas diarias no lo son. Para riesgo medio basta contar con personal técnico idóneo (art. 24, par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Ambas incumplen, porque toda fábrica de alimentos debe tener un técnico de tiempo completo.",
+        "explicacion": "Incorrecta. El tiempo completo solo se exige para alimentos de alto riesgo; para riesgo medio o bajo basta con los servicios de personal técnico idóneo (art. 24, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la fábrica 2 incumple, porque el permiso sanitario corresponde al alimento de más riesgo.",
+        "explicacion": "Incorrecta. Invierte las categorías: el permiso sanitario corresponde al riesgo medio y el registro sanitario, al alto riesgo (art. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna incumple, porque las dos tienen un técnico idóneo que dirige la capacitación.",
+        "explicacion": "Incorrecta. Para el alto riesgo no basta con tener el técnico: sus servicios deben ser de tiempo completo (art. 24), y el de la fábrica 1 trabaja cuatro horas diarias."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: la fábrica 1 tiene RSA y técnico de cuatro horas diarias; la fábrica 2 tiene PSA y técnico de medio tiempo. Reglas de la Resolución 2674: el RSA ampara alimentos de alto riesgo y el PSA, de riesgo medio (art. 3); el alto riesgo exige personal técnico de tiempo completo, y el riesgo medio o bajo, solo personal técnico idóneo (art. 24 y parágrafo). Conclusión: solo incumple la fábrica 1.",
+    "fuente_url": "https://normograma.invima.gov.co/compilacion/docs/resolucion_minsaludps_2674_2013.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  }
+]

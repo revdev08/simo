@@ -362,8 +362,20 @@ export const CONVOCATORIAS: Convocatoria[] = [
         ),
       },
       {
+        id: 'unp',
+        label: 'UNP: prevención y protección',
+        area: 'unp',
+        modulos: con([{ modulo: 'Protección de Personas (UNP)', peso: 6 }], TRONCO),
+      },
+      {
+        id: 'invima',
+        label: 'INVIMA: vigilancia sanitaria',
+        area: 'invima',
+        modulos: con([{ modulo: 'Vigilancia Sanitaria (INVIMA)', peso: 6 }, { modulo: 'Sistema de Salud y ESE', peso: 1 }], TRONCO),
+      },
+      {
         id: 'salud',
-        label: 'INVIMA o ADRES',
+        label: 'ADRES (sistema de salud)',
         area: 'salud',
         modulos: con([{ modulo: 'Sistema de Salud y ESE', peso: 5 }], TRONCO),
       },
@@ -375,9 +387,9 @@ export const CONVOCATORIAS: Convocatoria[] = [
       },
     ],
     cobertura:
-      'El tronco común de la función pública, las áreas de apoyo (contratación, talento humano, jurídica, planeación), el sistema de salud y la contabilidad pública.',
+      'El programa de prevención y protección de la UNP (Decreto 1066 de 2015 y Decreto Ley 4065 de 2011), la vigilancia sanitaria del INVIMA (Ley 9 de 1979, Resolución 2674 de 2013 y Decreto 677 de 1995), el tronco común de la función pública, las áreas de apoyo, el sistema de salud y la contabilidad pública.',
     faltantes:
-      'No cubrimos los temas misionales de la UNP (prevención y protección) ni de vigilancia sanitaria del INVIMA.',
+      'De la UNP no cubrimos los protocolos operativos de los escoltas; del INVIMA, los temas técnicos de cada producto (dispositivos médicos, cosméticos, bebidas alcohólicas) ni el régimen sancionatorio propio. La UNP se reestructuró en 2026: confirma en el acuerdo los ejes de tu empleo.',
     fuentes: [
       { label: 'Resolución 10556 de 2026', url: 'https://www.cnsc.gov.co/sites/default/files/2026-09/resolucion-no-10556-de-2026-21.pdf' },
       { label: 'Acuerdo 81 de 2026 (UNP)', url: 'https://www.cnsc.gov.co/sites/default/files/2026-04/acuerdo-no-81-unp.pdf' },

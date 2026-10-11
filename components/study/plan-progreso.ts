@@ -94,20 +94,21 @@ export function diasParaPrueba(c: Convocatoria, hoy = new Date()): number | null
   return dias >= 0 ? dias : null
 }
 
-// Plan semanal desde el día en que eligió la convocatoria: hasta la prueba, o 8 semanas si no hay fecha
+// Plan semanal desde el día en que eligió la convocatoria: hasta la prueba o, si no hay fecha, las semanas que eligió (8 por omisión)
 export function planSemanal(
   c: Convocatoria,
   perfil: PerfilConvocatoria,
   disponibles: Record<string, number>,
   horasSemana: number,
   inicio: string | undefined,
+  semanasPreferidas?: number, // las que eligió en el plan público, si la prueba no tiene fecha
   hoy = new Date(),
 ): { semanaActual: number; semanas: number; plan: SemanaPlan[] } | null {
   const [y, m, d] = (inicio ?? '').split('-').map(Number)
   const desde = inicio && y ? new Date(y, m - 1, d) : new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate())
   const transcurridas = Math.max(0, Math.floor((hoy.getTime() - desde.getTime()) / (7 * 86_400_000)))
   const dias = diasParaPrueba(c, desde)
-  const semanas = dias !== null ? Math.max(1, Math.min(26, Math.ceil(dias / 7))) : 8
+  const semanas = dias !== null ? Math.max(1, Math.min(26, Math.ceil(dias / 7))) : semanasPreferidas || 8
   const plan = armarPlan(perfil.modulos, semanas, horasSemana, disponibles)
   if (!plan.length) return null
   return { semanaActual: Math.min(semanas, transcurridas + 1), semanas, plan }
