@@ -1,0 +1,640 @@
+[
+  {
+    "id": "TC-TDA-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Acceso a la información pública",
+    "subtema": "Sujetos obligados: particulares que reciben fondos públicos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 5, inciso siguiente al lit. g (artículo corregido por el art. 1 del Decreto 1494 de 2015)"
+    ],
+    "texto_fuente": "Las disposiciones de esta ley serán aplicables a las siguientes personas en calidad de sujetos obligados: [...] Las personas naturales o jurídicas que reciban o intermedien fondos o beneficios públicos territoriales y nacionales y no cumplan ninguno de los otros requisitos para ser considerados sujetos obligados, solo deberán cumplir con la presente ley respecto de aquella información que se produzca en relación con fondos públicos que reciban o intermedien.",
+    "pregunta": "Una fundación privada sin ánimo de lucro, que no presta servicios públicos ni ejerce funciones públicas, recibió $250 millones de una alcaldía para organizar el festival de música del municipio. Con sus propios ingresos, la fundación también dicta talleres de música que cobra a los asistentes. Una veeduría ciudadana le pidió dos documentos: el informe de gastos del festival y los estados financieros de los talleres. La fundación respondió que, por ser una entidad privada, no tiene que entregar ninguno. Según la Ley 1712 de 2014, ¿qué debe entregar la fundación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguno de los dos, porque la ley de transparencia obliga a las entidades públicas y no a las personas jurídicas privadas.",
+        "explicacion": "Incorrecta. La ley también obliga a los particulares que reciben o intermedian fondos públicos, aunque no cumplan los demás requisitos para ser sujetos obligados, en lo que se refiere a la información sobre esos fondos."
+      },
+      {
+        "id": "B",
+        "texto": "Los dos, porque al recibir dineros de la alcaldía quedó sujeta a la ley en las mismas condiciones que una entidad pública.",
+        "explicacion": "Incorrecta. Quien solo recibe fondos públicos, sin prestar servicios públicos ni ejercer funciones públicas, no queda obligado respecto de toda su información: la obligación se limita a la que se produzca en relación con esos fondos."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el informe del festival, porque su obligación se limita a la información sobre los dineros públicos que recibió.",
+        "explicacion": "Correcta. La fundación no cumple los demás supuestos del art. 5, pero recibió fondos públicos territoriales. Por eso debe cumplir la ley respecto de la información relacionada con esos fondos (el gasto del festival) y no respecto de los talleres que financia con sus propios ingresos."
+      },
+      {
+        "id": "D",
+        "texto": "El informe del festival, pero por medio de la alcaldía, que es la entidad obligada a responder por los recursos que giró.",
+        "explicacion": "Incorrecta. La fundación es directamente sujeto obligado en lo relativo a los fondos que recibió. No depende de que la alcaldía responda por ella."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la fundación es privada, no presta servicios públicos ni ejerce funciones públicas, pero recibió $250 millones de la alcaldía. Regla: el inciso final del art. 5 de la Ley 1712 dispone que quien reciba o intermedie fondos públicos sin cumplir los demás requisitos para ser sujeto obligado solo debe cumplir la ley respecto de la información relacionada con esos fondos. Conclusión: debe entregar el informe de gastos del festival, pero no los estados financieros de los talleres.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-TDA-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Acceso a la información pública",
+    "subtema": "Información mínima obligatoria sobre contratistas y periodicidad de su actualización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 9, lit. e",
+      "art. 10, parágrafo"
+    ],
+    "texto_fuente": "Todo sujeto obligado deberá publicar la siguiente información mínima obligatoria de manera proactiva en los sistemas de información del Estado o herramientas que lo sustituyan: [...] En el caso de las personas naturales con contratos de prestación de servicios, deberá publicarse el objeto del contrato, monto de los honorarios y direcciones de correo electrónico, de conformidad con el formato de información de servidores públicos y contratistas; [...] PARÁGRAFO. Los sujetos obligados deberán actualizar la información a la que se refiere el artículo 9o, mínimo cada mes.",
+    "pregunta": "La oficina de comunicaciones de un instituto municipal de cultura prepara la sección de transparencia del sitio web. Sobre las personas naturales que tienen contrato de prestación de servicios con el instituto, el jefe de la oficina propone publicar el nombre de cada una y el objeto de su contrato, pero no lo que se les paga, porque lo considera un dato privado. Propone, además, actualizar esa información al cierre de cada trimestre. ¿Qué debe hacer el instituto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener la propuesta: publicar el nombre y el objeto de cada contrato, y actualizar la información cada trimestre.",
+        "explicacion": "Incorrecta. Omite el monto de los honorarios y el correo electrónico, que la ley exige publicar para los contratistas personas naturales, y fija una periodicidad mayor que la mensual."
+      },
+      {
+        "id": "B",
+        "texto": "Publicar el nombre y el objeto de cada contrato, sin el pago, y actualizar la información como mínimo cada mes.",
+        "explicacion": "Incorrecta. Acierta en la actualización mensual, pero omite el monto de los honorarios y el correo electrónico. Para estos contratistas, el valor de los honorarios es información mínima obligatoria, no un dato privado."
+      },
+      {
+        "id": "C",
+        "texto": "Publicar también el monto de los honorarios y el correo electrónico, y actualizar la información cada trimestre.",
+        "explicacion": "Incorrecta. Completa bien el contenido, pero la actualización trimestral no basta: la información del art. 9 debe actualizarse como mínimo cada mes."
+      },
+      {
+        "id": "D",
+        "texto": "Publicar también el monto de los honorarios y el correo electrónico, y actualizar la información cada mes.",
+        "explicacion": "Correcta. Para las personas naturales con contrato de prestación de servicios deben publicarse el objeto, el monto de los honorarios y el correo electrónico (art. 9 lit. e), y esa información debe actualizarse mínimo cada mes (art. 10, parágrafo)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la propuesta omite lo que se paga a los contratistas y fija una actualización trimestral. Regla: el art. 9 lit. e de la Ley 1712 exige publicar, para las personas naturales con contratos de prestación de servicios, el objeto, el monto de los honorarios y el correo electrónico, y el parágrafo del art. 10 ordena actualizar esa información mínimo cada mes. Conclusión: hay que agregar los honorarios y el correo, y actualizar cada mes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 52
+    }
+  },
+  {
+    "id": "TC-TDA-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Acceso a la información pública",
+    "subtema": "Índice de información clasificada y reservada, registro de activos de información y esquema de publicación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 12, lits. a, b y e",
+      "art. 13",
+      "art. 20"
+    ],
+    "texto_fuente": "Todo sujeto obligado deberá adoptar y difundir de manera amplia su esquema de publicación [...] El esquema de publicación deberá establecer: a) Las clases de información que el sujeto obligado publicará de manera proactiva y que en todo caso deberá comprender la información mínima obligatoria; b) La manera en la cual publicará dicha información; [...] e) La periodicidad de la divulgación, acorde a los principios administrativos de la función pública. [...] Todo sujeto obligado deberá crear y mantener actualizado el Registro de Activos de Información haciendo un listado de: a) Todas las categorías de información publicada por el sujeto obligado; b) Todo registro publicado; c) Todo registro disponible para ser solicitado por el público. [...] Los sujetos obligados deberán mantener un índice actualizado de los actos, documentos e informaciones calificados como clasificados o reservados, de conformidad a esta ley. El índice incluirá sus denominaciones, la motivación y la individualización del acto en que conste tal calificación.",
+    "pregunta": "Un hospital público del orden departamental organiza sus instrumentos de transparencia. Necesita: 1) dejar constancia de los documentos que no entrega al público, como las historias laborales de sus servidores, junto con la razón de esa decisión y el acto en que se adoptó; 2) listar todas las categorías de información que divulga y todos los documentos que cualquier persona puede pedir, aunque no estén en su sitio web; y 3) definir qué clases de información pondrá a disposición del público por iniciativa propia, por qué medios y cada cuánto lo hará. ¿En qué instrumento debe quedar cada cosa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1) Índice de información clasificada y reservada; 2) registro de activos de información; 3) esquema de publicación.",
+        "explicacion": "Correcta. El índice recoge los documentos calificados como clasificados o reservados, con la motivación y el acto de calificación (art. 20). El registro de activos lista las categorías de información publicada y todo registro publicado o disponible para ser solicitado (art. 13). El esquema de publicación fija las clases de información que se publicarán de manera proactiva, la manera de hacerlo y la periodicidad (art. 12)."
+      },
+      {
+        "id": "B",
+        "texto": "1) Índice de información clasificada y reservada; 2) esquema de publicación; 3) registro de activos de información.",
+        "explicacion": "Incorrecta. Ubica bien el índice, pero invierte los otros dos: el listado de lo que cualquiera puede pedir es el registro de activos, y la definición de qué se publica, cómo y cada cuánto es el esquema de publicación."
+      },
+      {
+        "id": "C",
+        "texto": "1) Registro de activos de información; 2) índice de información clasificada y reservada; 3) esquema de publicación.",
+        "explicacion": "Incorrecta. El registro de activos no recoge las calificaciones de reserva con su motivación y su acto; eso corresponde al índice. Y el índice no lista la información disponible para ser solicitada."
+      },
+      {
+        "id": "D",
+        "texto": "1) Esquema de publicación; 2) índice de información clasificada y reservada; 3) registro de activos de información.",
+        "explicacion": "Incorrecta. El esquema de publicación no registra los documentos exceptuados del acceso, y el índice no es el listado de la información que se puede pedir. Además, la periodicidad de la divulgación se fija en el esquema, no en el registro de activos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: cada necesidad corresponde a un instrumento distinto de la Ley 1712. Regla: el índice registra los documentos calificados como clasificados o reservados, con su motivación y el acto de calificación (art. 20); el registro de activos lista las categorías de información publicada y todo registro publicado o disponible para ser solicitado (art. 13); el esquema de publicación define las clases de información que se publicarán de manera proactiva, la forma y la periodicidad (art. 12). Conclusión: 1, índice; 2, registro de activos; 3, esquema.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TDA-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Acceso a la información pública",
+    "subtema": "Costo de la respuesta a una solicitud de información: reproducción y envío",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 26, inc. 2 (artículo corregido por el art. 1 del Decreto 1494 de 2015)"
+    ],
+    "texto_fuente": "La respuesta a la solicitud deberá ser gratuita o sujeta a un costo que no supere el valor de la reproducción y envío de la misma al solicitante.",
+    "pregunta": "Un ciudadano pidió a la secretaría de educación de un departamento copia en papel de los contratos de transporte escolar de 2025, que suman 240 folios, y solicitó que se los enviaran por correo certificado a su casa, en otro municipio. Antes de entregarlos, la secretaría le liquidó tres conceptos: fotocopias, a $150 por folio, que es su costo real; correo certificado, $18.000; y cuatro horas de un técnico de archivo para buscar y revisar los contratos, a $20.000 la hora. ¿Cuánto puede cobrarle, como máximo, la secretaría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$0, porque la respuesta a una solicitud de acceso a la información pública es gratuita y no admite cobros.",
+        "explicacion": "Incorrecta. La gratuidad es la regla, pero la ley permite sujetar la respuesta a un costo, siempre que no supere el valor de la reproducción y del envío."
+      },
+      {
+        "id": "B",
+        "texto": "$54.000, que corresponden a las fotocopias de los 240 folios y al envío por correo certificado.",
+        "explicacion": "Correcta. El costo no puede superar el valor de la reproducción y del envío al solicitante (art. 26): 240 × $150 = $36.000 de fotocopias, más $18.000 del correo, suman $54.000. Las horas del técnico no son reproducción ni envío."
+      },
+      {
+        "id": "C",
+        "texto": "$116.000, que corresponden a las fotocopias de los 240 folios y a las horas del técnico de archivo.",
+        "explicacion": "Incorrecta. Incluye las horas de búsqueda y revisión, que no son reproducción ni envío, y deja por fuera el envío, que sí puede cobrarse porque el ciudadano pidió recibir las copias por correo."
+      },
+      {
+        "id": "D",
+        "texto": "$134.000, que corresponden a la totalidad de los conceptos que liquidó la secretaría de educación.",
+        "explicacion": "Incorrecta. Suma los $80.000 de las horas del técnico, que la ley no permite cobrar: el límite es el valor de la reproducción y del envío."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el ciudadano pidió 240 folios en papel y enviados por correo, y la secretaría liquidó fotocopias, envío y horas de trabajo. Regla: el art. 26 de la Ley 1712 dispone que la respuesta será gratuita o sujeta a un costo que no supere el valor de la reproducción y del envío al solicitante. Cálculo: 240 × $150 = $36.000, más $18.000 de correo = $54.000; las horas del técnico ($80.000) no se pueden cobrar. Conclusión: máximo $54.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-TDA-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Acceso a la información pública",
+    "subtema": "Decisión judicial tras negarse la reposición contra una respuesta que invoca la reserva por relaciones internacionales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 27, incs. 1 a 4 y parágrafo"
+    ],
+    "texto_fuente": "Cuando la respuesta a la solicitud de información invoque la reserva de seguridad y defensa nacional o relaciones internacionales, el solicitante podrá acudir al recurso de reposición, el cual deberá interponerse por escrito y sustentando en la diligencia de notificación, o dentro de los tres (3) días siguientes a ella. Negado este recurso corresponderá al Tribunal administrativo con jurisdicción en el lugar donde se encuentren los documentos, si se trata de autoridades nacionales, departamentales o del Distrito Capital de Bogotá, o al juez administrativo si se trata de autoridades distritales y municipales, decidir en única instancia si se niega o se acepta, total o parcialmente, la petición formulada. Para ello, el funcionario respectivo enviará la documentación correspondiente al tribunal o al juez administrativo en un plazo no superior a tres (3) días. En caso de que el funcionario incumpla esta obligación el solicitante podrá hacer el respectivo envío de manera directa. El juez administrativo decidirá dentro de los diez (10) días siguientes. [...] PARÁGRAFO. Será procedente la acción de tutela para aquellos casos no contemplados en el presente artículo, una vez agotado el recurso de reposición del Código Contencioso Administrativo.",
+    "pregunta": "La alcaldía de un municipio de frontera negó por escrito, con sus razones, la solicitud de una periodista que pedía copia de las actas de las reuniones del alcalde con autoridades del país vecino sobre el cierre del paso fronterizo; invocó la reserva por relaciones internacionales. La periodista interpuso a tiempo el recurso de reposición, y la alcaldía lo negó el martes 3 de marzo de 2026. Hoy, martes 10 de marzo, la alcaldía todavía no ha enviado la documentación a ninguna autoridad judicial. Entre esas fechas no hubo festivos. ¿Qué puede hacer la periodista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enviar ella misma la documentación al juez administrativo, porque ya venció el plazo que tenía la alcaldía para remitirla.",
+        "explicacion": "Correcta. Negada la reposición, el funcionario debía enviar la documentación en un plazo no superior a tres días, que venció el viernes 6 de marzo. Como no lo hizo, la solicitante puede enviarla directamente. Por tratarse de una autoridad municipal, decide en única instancia el juez administrativo."
+      },
+      {
+        "id": "B",
+        "texto": "Enviar ella misma la documentación al tribunal administrativo, porque ya venció el plazo que tenía la alcaldía para remitirla.",
+        "explicacion": "Incorrecta. Acierta en que puede hacer el envío directo, pero el tribunal administrativo decide cuando se trata de autoridades nacionales, departamentales o del Distrito Capital. Para las autoridades municipales decide el juez administrativo."
+      },
+      {
+        "id": "C",
+        "texto": "Esperar a que la alcaldía remita la documentación, porque aún está dentro de los diez días que tiene para hacerlo.",
+        "explicacion": "Incorrecta. El funcionario tiene un plazo no superior a tres días para enviar la documentación. Los diez días son el término que tiene el juez para decidir."
+      },
+      {
+        "id": "D",
+        "texto": "Presentar una acción de tutela, porque una vez negada la reposición es la vía para insistir en que le entreguen las actas.",
+        "explicacion": "Incorrecta. La tutela procede en los casos no contemplados en el art. 27. Cuando se invoca la reserva por relaciones internacionales, el propio artículo prevé que decida el juez administrativo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se invocó la reserva por relaciones internacionales, la autoridad es municipal y la reposición se negó el 3 de marzo. Regla: según el art. 27 de la Ley 1712, negada la reposición decide en única instancia el juez administrativo si se trata de autoridades municipales; el funcionario debe enviarle la documentación en un plazo no superior a tres días y, si no lo hace, el solicitante puede enviarla directamente. Cálculo: el plazo venció el viernes 6 de marzo. Conclusión: la periodista puede enviar la documentación al juez administrativo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-TDA-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Protección de datos personales",
+    "subtema": "Término para atender consultas y su ampliación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1581 de 2012",
+    "articulos": [
+      "art. 14, inc. 3"
+    ],
+    "texto_fuente": "La consulta será atendida en un término máximo de diez (10) días hábiles contados a partir de la fecha de recibo de la misma. Cuando no fuere posible atender la consulta dentro de dicho término, se informará al interesado, expresando los motivos de la demora y señalando la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer término.",
+    "pregunta": "El sábado 7 de febrero de 2026, una exfuncionaria envió por correo electrónico a la secretaría de educación de un municipio una consulta para conocer todos los datos personales suyos que reposan en la base de datos de nómina. El jueves 19 de febrero, la secretaría se dispone a informarle que no alcanzará a atenderla a tiempo por el volumen de archivos que debe revisar, con la explicación de esos motivos y la fecha en que la atenderá. En ese período no hubo festivos. ¿Cuál es la fecha más tardía que puede señalar la secretaría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El miércoles 25 de febrero de 2026.",
+        "explicacion": "Incorrecta. Cuenta la ampliación en días calendario (cinco días después del 20 de febrero). La ley la fija en días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "El viernes 27 de febrero de 2026.",
+        "explicacion": "Correcta. Como la consulta llegó un sábado, el primer día hábil del término es el lunes 9 de febrero, y los 10 días hábiles vencen el viernes 20. La nueva fecha no puede superar los 5 días hábiles siguientes a ese vencimiento: el viernes 27 de febrero."
+      },
+      {
+        "id": "C",
+        "texto": "El miércoles 4 de marzo de 2026.",
+        "explicacion": "Incorrecta. Aplica una ampliación de 8 días hábiles, que corresponde a los reclamos, no a las consultas."
+      },
+      {
+        "id": "D",
+        "texto": "El viernes 6 de marzo de 2026.",
+        "explicacion": "Incorrecta. Duplica el término inicial (10 días hábiles más), como en el derecho de petición. En las consultas de datos personales, la ampliación máxima es de 5 días hábiles."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la consulta llegó el sábado 7 de febrero y la secretaría avisa la demora antes del vencimiento. Regla: el art. 14 de la Ley 1581 da 10 días hábiles para atender la consulta y, si no es posible, permite señalar una fecha que no supere los 5 días hábiles siguientes al vencimiento del primer término. Cálculo: los 10 días hábiles corren del lunes 9 al viernes 20 de febrero; 5 días hábiles más llegan al viernes 27. Conclusión: 27 de febrero de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-TDA-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Protección de datos personales",
+    "subtema": "Reclamo ante el encargado del tratamiento: leyenda y término para resolver",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1581 de 2012",
+    "articulos": [
+      "art. 15, nums. 2 y 3",
+      "art. 18, lits. e y g"
+    ],
+    "texto_fuente": "2. Una vez recibido el reclamo completo, se incluirá en la base de datos una leyenda que diga “reclamo en trámite” y el motivo del mismo, en un término no mayor a dos (2) días hábiles. Dicha leyenda deberá mantenerse hasta que el reclamo sea decidido. 3. El término máximo para atender el reclamo será de quince (15) días hábiles contados a partir del día siguiente a la fecha de su recibo. [...] e) Tramitar las consultas y los reclamos formulados por los Titulares en los términos señalados en la presente ley; [...] g) Registrar en la base de datos las leyenda “reclamo en trámite” en la forma en que se regula en la presente ley;",
+    "pregunta": "Una alcaldía contrató a una empresa privada para que administre, por cuenta de ella, la base de datos de los beneficiarios de un subsidio de transporte. El miércoles 4 de marzo de 2026, un beneficiario radicó ante la empresa un reclamo completo para que se corrijan su dirección y su número de cuenta, que aparecen errados. El lunes 23 de marzo fue festivo. ¿Qué debe hacer la empresa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Resolver a más tardar el miércoles 18 de marzo, sin marcar el dato mientras la Superintendencia no ordene su bloqueo.",
+        "explicacion": "Incorrecta. Toma el término de 10 días hábiles, que es el de las consultas, y omite la leyenda «reclamo en trámite», que debe incluirse a más tardar dos días hábiles después de recibido el reclamo completo, sin esperar una orden de la Superintendencia."
+      },
+      {
+        "id": "B",
+        "texto": "Marcar el dato con la leyenda «reclamo en trámite» en máximo dos días hábiles y resolver a más tardar el miércoles 18 de marzo.",
+        "explicacion": "Incorrecta. Acierta en la leyenda, pero aplica el término de las consultas (10 días hábiles). El reclamo tiene 15 días hábiles, que vencen el jueves 26 de marzo."
+      },
+      {
+        "id": "C",
+        "texto": "Resolver a más tardar el jueves 26 de marzo, sin marcar el dato mientras la Superintendencia no ordene su bloqueo.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero la leyenda «reclamo en trámite» no depende de una orden de bloqueo de la Superintendencia: debe incluirse en máximo dos días hábiles y mantenerse hasta que se decida el reclamo."
+      },
+      {
+        "id": "D",
+        "texto": "Marcar el dato con la leyenda «reclamo en trámite» en máximo dos días hábiles y resolver a más tardar el jueves 26 de marzo.",
+        "explicacion": "Correcta. Recibido el reclamo completo, la leyenda «reclamo en trámite» debe incluirse en máximo dos días hábiles (art. 15 num. 2), deber que tiene también el encargado (art. 18 lit. g). El término para atenderlo es de 15 días hábiles desde el día siguiente al recibo: del 5 al 26 de marzo, sin contar el festivo del 23."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el reclamo completo llegó a la empresa encargada el 4 de marzo y el 23 de marzo fue festivo. Regla: el art. 15 de la Ley 1581 ordena incluir la leyenda «reclamo en trámite» en máximo dos días hábiles y atender el reclamo en 15 días hábiles contados desde el día siguiente al recibo; el art. 18 impone estos deberes también al encargado. Cálculo: desde el 5 de marzo, 15 días hábiles sin el festivo llegan al jueves 26. Conclusión: marcar el dato en dos días hábiles y resolver a más tardar el 26 de marzo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 58
+    }
+  },
+  {
+    "id": "TC-TDA-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Protección de datos personales",
+    "subtema": "Datos sensibles requeridos por una entidad pública en ejercicio de sus funciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1581 de 2012",
+    "articulos": [
+      "art. 5",
+      "art. 6, lit. a",
+      "art. 10, lit. a e inc. final",
+      "art. 13, lit. b"
+    ],
+    "texto_fuente": "Para los propósitos de la presente ley, se entiende por datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar su discriminación, tales como [...] así como los datos relativos a la salud, [...] Se prohíbe el Tratamiento de datos sensibles, excepto cuando: a) El Titular haya dado su autorización explícita a dicho Tratamiento, salvo en los casos que por ley no sea requerido el otorgamiento de dicha autorización; [...] La autorización del Titular no será necesaria cuando se trate de: a) Información requerida por una entidad pública o administrativa en ejercicio de sus funciones legales o por orden judicial; [...] Quien acceda a los datos personales sin que medie autorización previa deberá en todo caso cumplir con las disposiciones contenidas en la presente ley. [...] La información que reúna las condiciones establecidas en la presente ley podrá suministrarse a las siguientes personas: [...] b) A las entidades públicas o administrativas en ejercicio de sus funciones legales o por orden judicial;",
+    "pregunta": "Para hacer el seguimiento de un brote de dengue, tarea que la ley le asigna, la secretaría de salud de un departamento pidió a un hospital público municipal la lista de los pacientes atendidos por esa enfermedad en el último mes, con su nombre, documento, dirección y diagnóstico. La oficina jurídica del hospital sostiene que, como son datos de salud, no puede entregarlos sin la autorización explícita de cada paciente. ¿Cómo debe proceder el hospital?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir primero la autorización explícita de cada paciente, porque la excepción que favorece a las entidades públicas no cubre los datos de salud.",
+        "explicacion": "Incorrecta. Los datos de salud son sensibles y, en principio, requieren autorización explícita, pero el propio art. 6 exceptúa los casos en que la ley no la exige, como la información requerida por una entidad pública en ejercicio de sus funciones legales (art. 10 lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "Enviar la lista sin el nombre ni el documento de los pacientes, porque los datos de salud solo pueden circular sin identificar a sus titulares.",
+        "explicacion": "Incorrecta. La supresión de la identidad de los titulares se exige cuando el tratamiento de datos sensibles tiene una finalidad histórica, estadística o científica (art. 6 lit. e), no cuando una autoridad los requiere para cumplir sus funciones."
+      },
+      {
+        "id": "C",
+        "texto": "Enviar la lista con los datos pedidos, porque el requerimiento de una autoridad en cumplimiento de sus funciones releva esa autorización.",
+        "explicacion": "Correcta. Aunque los datos de salud son sensibles (art. 5), la autorización explícita no se exige cuando la ley la releva (art. 6 lit. a). No es necesaria para la información requerida por una entidad pública en ejercicio de sus funciones legales (art. 10 lit. a), a la que puede suministrarse (art. 13 lit. b). La secretaría, en todo caso, debe cumplir la ley al tratar esos datos."
+      },
+      {
+        "id": "D",
+        "texto": "Enviar la lista solo si un juez lo ordena, porque sin la autorización de los pacientes los datos sensibles no pueden entregarse sin una orden judicial.",
+        "explicacion": "Incorrecta. La orden judicial es una de las dos vías que relevan la autorización. La otra es el requerimiento de una entidad pública en ejercicio de sus funciones legales, que es lo que ocurre en este caso."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: quien pide los datos de salud es la secretaría de salud, para cumplir una función legal. Regla: los datos de salud son sensibles (art. 5 de la Ley 1581) y su tratamiento exige autorización explícita, salvo cuando la ley no la requiere (art. 6 lit. a); el art. 10 lit. a no exige autorización para la información requerida por una entidad pública en ejercicio de sus funciones legales, y el art. 13 lit. b permite suministrársela. Conclusión: el hospital debe enviar la lista, y la secretaría queda obligada a cumplir la ley al tratar esos datos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 58
+    }
+  },
+  {
+    "id": "TC-TDA-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Protección de datos personales",
+    "subtema": "Deber de informar que las respuestas sobre datos sensibles son facultativas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1581 de 2012",
+    "articulos": [
+      "art. 5",
+      "art. 6, lit. a",
+      "art. 12, lit. b"
+    ],
+    "texto_fuente": "se entiende por datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, [...] así como los datos relativos a la salud, [...] Se prohíbe el Tratamiento de datos sensibles, excepto cuando: a) El Titular haya dado su autorización explícita a dicho Tratamiento, salvo en los casos que por ley no sea requerido el otorgamiento de dicha autorización; [...] El Responsable del Tratamiento, al momento de solicitar al Titular la autorización, deberá informarle de manera clara y expresa lo siguiente: [...] b) El carácter facultativo de la respuesta a las preguntas que le sean hechas, cuando estas versen sobre datos sensibles o sobre los datos de las niñas, niños y adolescentes;",
+    "pregunta": "La secretaría de desarrollo social de un municipio diseña el formulario de inscripción a un programa de alimentación para personas mayores. Además del nombre, el documento, la dirección y el teléfono, el formulario pregunta por la religión, el grupo étnico y las enfermedades de cada persona, para ajustar los menús. Al solicitar la autorización para tratar los datos, ¿qué debe hacer la secretaría con esas tres preguntas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dejarlas como obligatorias, porque con la firma del formulario la persona autoriza el tratamiento de todos sus datos.",
+        "explicacion": "Incorrecta. Al pedir la autorización, el responsable debe informar que las respuestas sobre datos sensibles son facultativas. No puede volverlas obligatorias."
+      },
+      {
+        "id": "B",
+        "texto": "Mantenerlas, e informar con claridad que la persona puede abstenerse de responderlas, porque son datos sensibles.",
+        "explicacion": "Correcta. La religión, el origen étnico y la salud son datos sensibles (art. 5). Pueden tratarse con autorización explícita del titular (art. 6 lit. a), y al pedirla la secretaría debe informarle de manera clara y expresa que responder esas preguntas es facultativo (art. 12 lit. b)."
+      },
+      {
+        "id": "C",
+        "texto": "Retirarlas del formulario, porque la ley prohíbe el tratamiento de esa clase de datos aunque la persona lo autorice.",
+        "explicacion": "Incorrecta. La prohibición de tratar datos sensibles tiene excepciones, y la primera es que el titular dé su autorización explícita (art. 6 lit. a)."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener solo la de las enfermedades, porque es la única de las tres que la ley considera un dato sensible.",
+        "explicacion": "Incorrecta. Además de los datos de salud, la ley considera sensibles los que revelan las convicciones religiosas y el origen racial o étnico."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el formulario pregunta por la religión, el grupo étnico y las enfermedades. Regla: esos son datos sensibles (art. 5 de la Ley 1581); pueden tratarse con autorización explícita del titular (art. 6 lit. a) y, al pedirla, el responsable debe informar de manera clara y expresa que las respuestas sobre datos sensibles son facultativas (art. 12 lit. b). Conclusión: mantener las preguntas e informar que responderlas es voluntario.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 68
+    }
+  },
+  {
+    "id": "TC-TDA-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Archivo y gestión documental",
+    "subtema": "Entrega de documentos al retirarse del cargo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 594 de 2000",
+    "articulos": [
+      "art. 15"
+    ],
+    "texto_fuente": "Los servidores públicos, al desvincularse de las funciones titulares, entregarán los documentos y archivos a su cargo debidamente inventariados, conforme a las normas y procedimientos que establezca el Archivo General de la Nación, sin que ello implique exoneración de la responsabilidad a que haya lugar en caso de irregularidades.",
+    "pregunta": "Un profesional de la oficina de contratación de una gobernación renunció, y el viernes es su último día de trabajo. Tiene a su cargo 40 expedientes de contratos. Le dice a su jefe que dejará las cajas en su puesto para que el personal de archivo las organice después y que, desde el momento en que las deje, cualquier faltante será responsabilidad de quien las reciba. ¿Cómo debe hacer la entrega?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar los expedientes inventariados; si luego aparecen irregularidades, la entrega no lo exime de responder.",
+        "explicacion": "Correcta. Al desvincularse, el servidor debe entregar los documentos y archivos a su cargo debidamente inventariados, y esa entrega no lo exonera de la responsabilidad a que haya lugar por irregularidades (art. 15)."
+      },
+      {
+        "id": "B",
+        "texto": "Entregar los expedientes inventariados; con esa entrega, la responsabilidad por los faltantes pasa a quien los recibe.",
+        "explicacion": "Incorrecta. Acierta en el inventario, pero la entrega no traslada su responsabilidad por irregularidades: la ley dice que no implica exoneración."
+      },
+      {
+        "id": "C",
+        "texto": "Dejar los expedientes para que archivo los inventaríe; con la entrega física, la responsabilidad pasa a quien los recibe.",
+        "explicacion": "Incorrecta. El inventario le corresponde a quien entrega, no al personal de archivo, y la entrega no lo exonera de responsabilidad por irregularidades."
+      },
+      {
+        "id": "D",
+        "texto": "Dejar los expedientes para que archivo los inventaríe, aunque seguirá respondiendo por las irregularidades que aparezcan.",
+        "explicacion": "Incorrecta. Acierta en que sigue respondiendo por las irregularidades, pero la ley le exige entregar los documentos debidamente inventariados; no puede dejarle esa tarea al personal de archivo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el servidor se retira y quiere dejar los expedientes sin inventario, creyendo que la entrega lo libera de responsabilidad. Regla: el art. 15 de la Ley 594 obliga a los servidores públicos que se desvinculan a entregar los documentos y archivos a su cargo debidamente inventariados, sin que ello implique exoneración de la responsabilidad por irregularidades. Conclusión: debe entregarlos inventariados y sigue respondiendo por las irregularidades.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-TDA-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Archivo y gestión documental",
+    "subtema": "Archivos de una entidad suprimida y contratación de su custodia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 594 de 2000",
+    "articulos": [
+      "art. 14 y parágrafo 1",
+      "art. 20"
+    ],
+    "texto_fuente": "La documentación de la administración pública es producto y propiedad del Estado, y éste ejercerá el pleno control de sus recursos informativos. Los archivos públicos, por ser un bien de uso público, no son susceptibles de enajenación. PARAGRAFO 1o. La administración pública podrá contratar con personas naturales o jurídicas los servicios de custodia, organización, reprografía y conservación de documentos de archivo. [...] Las entidades públicas que se suprimen o fusionen deberán entregar sus archivos a las entidades que asuman sus funciones o al ministerio o entidad a la cual hayan estado adscritas o vinculadas.",
+    "pregunta": "Una gobernación suprimió su instituto departamental de deportes, cuyas funciones asumió la secretaría departamental de deportes. Para ahorrar costos, el liquidador propone vender los archivos del instituto a una empresa privada de custodia documental: la empresa quedaría como dueña de los documentos y le cobraría a la gobernación cada consulta. ¿Qué debe hacerse con esos archivos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Venderlos a la empresa, con un contrato que la obligue a conservarlos y a permitir su consulta durante los tiempos de retención.",
+        "explicacion": "Incorrecta. Los archivos públicos son propiedad del Estado y, por ser un bien de uso público, no son susceptibles de enajenación, aunque el contrato imponga deberes de conservación."
+      },
+      {
+        "id": "B",
+        "texto": "Entregarlos al Archivo General de la Nación, que es el que recibe los archivos de las entidades públicas que se suprimen.",
+        "explicacion": "Incorrecta. Las entidades suprimidas deben entregar sus archivos a la entidad que asume sus funciones o a aquella a la que estaban adscritas o vinculadas, no al Archivo General de la Nación."
+      },
+      {
+        "id": "C",
+        "texto": "Entregarlos a la secretaría de deportes, que deberá custodiarlos con su propio personal, sin contratar ese servicio con terceros.",
+        "explicacion": "Incorrecta. Acierta en el destino de los archivos, pero la administración pública sí puede contratar con particulares los servicios de custodia, organización, reprografía y conservación (art. 14, par. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Entregarlos a la secretaría de deportes, que podrá contratar su custodia con esa empresa, sin transferirle la propiedad.",
+        "explicacion": "Correcta. Los archivos del instituto suprimido deben entregarse a la entidad que asumió sus funciones (art. 20). Esa entidad puede contratar su custodia con particulares (art. 14, par. 1), pero no venderlos, porque los archivos públicos no son enajenables (art. 14)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el instituto se suprimió, sus funciones las asumió la secretaría de deportes y el liquidador quiere vender los archivos. Regla: según el art. 20 de la Ley 594, las entidades suprimidas entregan sus archivos a la entidad que asume sus funciones; el art. 14 dispone que los archivos públicos no son enajenables, pero permite contratar con particulares su custodia. Conclusión: los archivos van a la secretaría, que puede contratar su custodia sin ceder la propiedad.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-TDA-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Transparencia, Datos Personales y Archivo",
+    "tema": "Archivo y gestión documental",
+    "subtema": "Salida temporal de documentos históricos dentro y fuera del país",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 594 de 2000",
+    "articulos": [
+      "art. 30",
+      "art. 31 y parágrafo"
+    ],
+    "texto_fuente": "Sólo por motivos legales las entidades del Estado podrán autorizar la salida temporal de los documentos de archivo. [...] En los archivos públicos de carácter histórico se podrá autorizar de manera excepcional la salida temporal de los documentos que conservan y en tal evento el jefe del archivo deberá tomar todas las medidas que garanticen la integridad, la seguridad, la conservación o el reintegro de los mismos. Procederá dicha autorización en los siguientes términos: a) Motivos legales; b) Procesos técnicos; c) Exposiciones culturales. PARAGRAFO. Sólo el Archivo General de la Nación autorizará, por motivos legales, procesos técnicos especiales o para exposiciones culturales, la salida temporal de documentos de un archivo fuera del territorio nacional.",
+    "pregunta": "El archivo histórico de un municipio recibió dos invitaciones para exhibir los originales de las actas de fundación del pueblo, de 1821: una del museo de la capital del departamento, para una exposición de tres meses, y otra de un centro cultural de Quito (Ecuador), para una muestra de un mes. ¿Qué se requiere para que los originales salgan en cada caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos pueden autorizarse en el propio municipio como salidas excepcionales, si el jefe del archivo adopta medidas que aseguren el reintegro.",
+        "explicacion": "Incorrecta. La salida temporal de documentos históricos puede autorizarse de manera excepcional para exposiciones culturales, pero la salida fuera del territorio nacional solo la autoriza el Archivo General de la Nación."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguna procede, porque los documentos de archivo solo salen por motivos legales; para exhibirlos deben usarse reproducciones.",
+        "explicacion": "Incorrecta. Aplica la regla general de salida por motivos legales (art. 30), pero para los archivos de carácter histórico la ley también admite la salida por procesos técnicos y exposiciones culturales (art. 31)."
+      },
+      {
+        "id": "C",
+        "texto": "La de la capital, como salida excepcional con medidas para su reintegro; la de Quito, con autorización del Archivo General de la Nación.",
+        "explicacion": "Correcta. Los documentos de los archivos históricos pueden salir de manera excepcional y temporal para exposiciones culturales, y el jefe del archivo debe tomar las medidas que garanticen su integridad, seguridad, conservación o reintegro (art. 31). La salida fuera del territorio nacional solo la autoriza el Archivo General de la Nación (art. 31, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Las dos requieren autorización del Archivo General de la Nación, por tratarse de documentos originales con valor histórico.",
+        "explicacion": "Incorrecta. La autorización del Archivo General de la Nación se exige para la salida fuera del territorio nacional, no para una exposición dentro del país."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: son documentos históricos, y una exposición es en el país y la otra en el exterior. Regla: el art. 31 de la Ley 594 permite autorizar de manera excepcional la salida temporal de documentos de archivos históricos para exposiciones culturales, con medidas del jefe del archivo que garanticen su integridad y reintegro; según su parágrafo, solo el Archivo General de la Nación autoriza la salida fuera del territorio nacional. Conclusión: la salida a la capital es posible como excepción; la de Quito requiere autorización del Archivo General de la Nación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  }
+]

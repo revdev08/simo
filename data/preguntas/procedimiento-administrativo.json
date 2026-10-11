@@ -1,0 +1,745 @@
+[
+  {
+    "id": "TC-CPA-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Principios del procedimiento administrativo",
+    "subtema": "Debido proceso en materia sancionatoria: no reformatio in pejus en la apelación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 3 num. 1",
+      "art. 74 num. 1 y 2"
+    ],
+    "texto_fuente": "1. En virtud del principio del debido proceso, las actuaciones administrativas se adelantarán de conformidad con las normas de procedimiento y competencia establecidas en la Constitución y la ley, con plena garantía de los derechos de representación, defensa y contradicción. En materia administrativa sancionatoria, se observarán adicionalmente los principios de legalidad de las faltas y de las sanciones, de presunción de inocencia, de no reformatio in pejus y non bis in idem. [...] 1. El de reposición, ante quien expidió la decisión para que la aclare, modifique, adicione o revoque. 2. El de apelación, para ante el inmediato superior administrativo o funcional con el mismo propósito.",
+    "pregunta": "Una gobernación adelantó un procedimiento administrativo sancionatorio, regido por el CPACA, contra una empresa que incumplió las condiciones de un permiso. La directora competente le impuso una multa de 10 salarios mínimos. La empresa apeló y ningún otro interviniente presentó recursos. Al estudiar la apelación, el secretario de despacho, superior de la directora, concluye que la infracción fue más grave de lo que se valoró y que, con los criterios de graduación, la multa debió ser de 25 salarios mínimos. ¿Qué puede decidir el secretario?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confirmar la multa o disminuirla, pero no elevarla, porque con ello empeoraría la situación de quien recurrió.",
+        "explicacion": "Correcta. En materia administrativa sancionatoria rige el principio de no reformatio in pejus (art. 3 num. 1): cuando solo apela el sancionado, el superior no puede agravar su situación. Puede confirmar, reducir o revocar la multa, pero no aumentarla."
+      },
+      {
+        "id": "B",
+        "texto": "Elevar la multa a 25 salarios mínimos, porque la apelación busca que el superior aclare, modifique, adicione o revoque.",
+        "explicacion": "Incorrecta. La apelación sí permite modificar la decisión (art. 74 num. 2), pero en materia sancionatoria esa facultad está limitada por la no reformatio in pejus: la modificación no puede perjudicar a quien apeló solo."
+      },
+      {
+        "id": "C",
+        "texto": "Elevar la multa a 25 salarios mínimos, con la condición de dar antes traslado a la empresa para que se pronuncie.",
+        "explicacion": "Incorrecta. Dar traslado no resuelve el problema. La no reformatio in pejus impide agravar la sanción de quien apeló solo, aunque se le permita pronunciarse antes."
+      },
+      {
+        "id": "D",
+        "texto": "Revocar la multa y devolver el expediente a la directora, para que imponga la sanción que corresponde.",
+        "explicacion": "Incorrecta. Devolver el expediente para que la primera instancia imponga una multa mayor es una forma indirecta de agravar la situación del apelante, que la no reformatio in pejus prohíbe."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: solo la empresa sancionada apeló, y el superior quiere subir la multa. Regla: el art. 3 num. 1 del CPACA ordena observar en materia sancionatoria el principio de no reformatio in pejus. Aunque la apelación sirve para aclarar, modificar, adicionar o revocar (art. 74), no puede usarse para empeorar la situación de quien recurre solo. Conclusión: el secretario puede confirmar o reducir la multa, pero no elevarla.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-CPA-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Actuación administrativa",
+    "subtema": "Trámite de la recusación: plazo del recusado y suspensión de la actuación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 11 num. 5",
+      "art. 12"
+    ],
+    "texto_fuente": "5. Existir litigio o controversia ante autoridades administrativas o jurisdiccionales entre el servidor, su cónyuge, compañero permanente, o alguno de sus parientes indicados en el numeral 1, y cualquiera de los interesados en la actuación, su representante o apoderado. [...] En caso de impedimento el servidor enviará dentro de los tres (3) días siguientes a su conocimiento la actuación con escrito motivado al superior, o si no lo tuviere, a la cabeza del respectivo sector administrativo. [...] La autoridad competente decidirá de plano sobre el impedimento dentro de los diez (10) días siguientes a la fecha de su recibo. [...] Cuando cualquier persona presente una recusación, el recusado manifestará si acepta o no la causal invocada, dentro de los cinco (5) días siguientes a la fecha de su formulación. Vencido este término, se seguirá el trámite señalado en el inciso anterior. La actuación administrativa se suspenderá desde la manifestación del impedimento o desde la presentación de la recusación, hasta cuando se decida.",
+    "pregunta": "El lunes 7 de septiembre de 2026, una empresa que había pedido a la secretaría de desarrollo económico de un municipio su inscripción en un programa de apoyo a emprendimientos presentó por escrito una recusación contra el profesional que sustancia y decide el trámite, porque la esposa de este tiene en curso un proceso judicial contra la empresa. El profesional no dijo nada sobre la recusación. El martes 15 de septiembre, convencido de que ese pleito no le resta objetividad, se dispone a firmar la decisión de fondo. Cuente los términos en días hábiles (de lunes a viernes); en ese período no hubo festivos. ¿Puede firmarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí, porque al no pronunciarse dentro del plazo legal se entiende que no aceptó la causal y el trámite puede seguir.",
+        "explicacion": "Incorrecta. El silencio del recusado no resuelve la recusación ni levanta la suspensión. Vencido su plazo, la ley ordena seguir el trámite ante el superior, que decide de plano."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, porque la recusación solo detiene la actuación cuando el servidor recusado acepta la causal que se le alega.",
+        "explicacion": "Incorrecta. La suspensión opera desde la presentación de la recusación hasta que se decida (art. 12 inc. 4), no desde que el recusado acepte la causal."
+      },
+      {
+        "id": "C",
+        "texto": "No, porque la actuación quedó suspendida desde el 7 de septiembre y, vencido el 14 su plazo, decide el superior.",
+        "explicacion": "Correcta. La actuación se suspende desde la presentación de la recusación hasta que se decida (art. 12 inc. 4). El recusado tenía cinco días para aceptar o no la causal, que vencieron el 14 de septiembre (8, 9, 10, 11 y 14). Vencido ese término se sigue el trámite del inciso anterior: decide el superior. Mientras no lo haga, el profesional no puede firmar la decisión de fondo."
+      },
+      {
+        "id": "D",
+        "texto": "No antes del 21 de septiembre, cuando vencen los diez días que tiene para aceptar o rechazar la causal alegada.",
+        "explicacion": "Incorrecta. El plazo del recusado es de cinco días, no de diez, y venció el 14 de septiembre. Los diez días son el término del superior para decidir, contados desde que recibe el asunto."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la recusación se presentó el 7 de septiembre y el profesional no se pronunció. Regla: el art. 12 del CPACA da al recusado cinco días para manifestar si acepta la causal; vencido ese término, decide el superior dentro de los diez días siguientes a su recibo, y la actuación queda suspendida desde la presentación de la recusación hasta que se decida. Cálculo: cinco días hábiles desde el 8 de septiembre vencen el 14. Conclusión: el 15 de septiembre no puede firmar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 68
+    }
+  },
+  {
+    "id": "TC-CPA-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Actuación administrativa",
+    "subtema": "Comunicación de la actuación a terceros indeterminados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 37"
+    ],
+    "texto_fuente": "Cuando en una actuación administrativa de contenido particular y concreto la autoridad advierta que terceras personas puedan resultar directamente afectadas por la decisión, les comunicará la existencia de la actuación, el objeto de la misma y el nombre del peticionario, si lo hubiere, para que puedan constituirse como parte y hacer valer sus derechos. La comunicación se remitirá a la dirección o correo electrónico que se conozca si no hay otro medio más eficaz. De no ser posible dicha comunicación, o tratándose de terceros indeterminados, la información se divulgará a través de un medio masivo de comunicación nacional o local, según el caso, o a través de cualquier otro mecanismo eficaz, habida cuenta de las condiciones de los posibles interesados. De tales actuaciones se dejará constancia escrita en el expediente.",
+    "pregunta": "Una empresa de transporte pidió a la secretaría de movilidad de un municipio autorización para demarcar una zona de cargue y descargue frente a su bodega, en una calle con varios locales comerciales y viviendas. Al estudiar la solicitud, la secretaría advierte que la decisión puede perjudicar el acceso a esos inmuebles, pero no sabe quiénes son sus propietarios ni sus ocupantes, ni tiene datos para contactarlos. ¿Qué debe hacer la secretaría antes de decidir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Decidir la solicitud y luego publicar la parte resolutiva en su página web, para que los vecinos puedan recurrirla.",
+        "explicacion": "Incorrecta. La comunicación del art. 37 se hace durante la actuación, para que los terceros puedan constituirse como parte y hacer valer sus derechos antes de la decisión. Publicar después la decisión no cumple esa finalidad."
+      },
+      {
+        "id": "B",
+        "texto": "Suspender el trámite hasta identificar a cada propietario y ocupante, y citarlos para notificarlos personalmente.",
+        "explicacion": "Incorrecta. La ley no ordena paralizar el trámite para identificar a los terceros: cuando son indeterminados, prevé divulgar la información por un medio masivo o por otro mecanismo eficaz. Además, lo que se les comunica es la existencia de la actuación, no una decisión."
+      },
+      {
+        "id": "C",
+        "texto": "Seguir el trámite sin avisarles, porque los terceros intervienen solo si se presentan a pedirlo por su cuenta.",
+        "explicacion": "Incorrecta. El art. 37 impone a la autoridad el deber de comunicar la actuación a los terceros que puedan resultar directamente afectados; no deja esa carga en ellos."
+      },
+      {
+        "id": "D",
+        "texto": "Dar a conocer por un medio de amplia difusión en el municipio que existe el trámite, de qué trata y quién lo pidió.",
+        "explicacion": "Correcta. Cuando terceros pueden resultar directamente afectados, la autoridad debe comunicarles la existencia de la actuación, su objeto y el nombre del peticionario, para que puedan constituirse como parte. Si no es posible comunicarles o son indeterminados, la información se divulga por un medio masivo de comunicación o por otro mecanismo eficaz, con constancia en el expediente (art. 37)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la decisión puede afectar a vecinos que la secretaría no puede identificar ni contactar. Regla: el art. 37 del CPACA obliga a comunicar a los terceros que puedan resultar directamente afectados la existencia de la actuación, su objeto y el nombre del peticionario; si no es posible o son indeterminados, se divulga por un medio masivo de comunicación o por otro mecanismo eficaz, con constancia en el expediente. Conclusión: debe divulgar el trámite antes de decidir.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CPA-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Notificación de los actos administrativos",
+    "subtema": "Notificación por aviso: momento en que se surte y plazo para recurrir",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 68",
+      "art. 69",
+      "art. 76"
+    ],
+    "texto_fuente": "El envío de la citación se hará dentro de los cinco (5) días siguientes a la expedición del acto, y de dicha diligencia se dejará constancia en el expediente. [...] Si no pudiere hacerse la notificación personal al cabo de los cinco (5) días del envío de la citación, esta se hará por medio de aviso que se remitirá a la dirección, al número de fax o al correo electrónico que figuren en el expediente o puedan obtenerse del registro mercantil, acompañado de copia íntegra del acto administrativo. El aviso deberá indicar la fecha y la del acto que se notifica, la autoridad que lo expidió, los recursos que legalmente proceden, las autoridades ante quienes deben interponerse, los plazos respectivos y la advertencia de que la notificación se considerará surtida al finalizar el día siguiente al de la entrega del aviso en el lugar de destino. Cuando se desconozca la información sobre el destinatario, el aviso, con copia íntegra del acto administrativo, se publicará en la página electrónica y en todo caso en un lugar de acceso al público de la respectiva entidad por el término de cinco (5) días, con la advertencia de que la notificación se considerará surtida al finalizar el día siguiente al retiro del aviso. [...] Los recursos de reposición y apelación deberán interponerse por escrito en la diligencia de notificación personal, o dentro de los diez (10) días siguientes a ella, o a la notificación por aviso, o al vencimiento del término de publicación, según el caso.",
+    "pregunta": "El lunes 2 de febrero de 2026, una secretaría de una gobernación expidió una resolución que negó una solicitud de Hernán. El miércoles 4 de febrero le envió una citación a la dirección que figuraba en el expediente para que fuera a notificarse personalmente, pero él no se presentó. El jueves 12 de febrero, la secretaría le remitió por correo a esa misma dirección un aviso con copia íntegra de la resolución; según la guía de la empresa de mensajería, el aviso se entregó allí el lunes 16 de febrero. Cuente los términos en días hábiles (de lunes a viernes); en ese período no hubo festivos. ¿Hasta qué fecha puede Hernán interponer el recurso de reposición?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 2 de marzo, porque los diez días se cuentan desde el día siguiente a la entrega del aviso en su dirección.",
+        "explicacion": "Incorrecta. Toma la entrega del aviso como fecha de notificación. La notificación por aviso se considera surtida al finalizar el día siguiente al de la entrega, el 17 de febrero; por eso el plazo vence un día después, el 3 de marzo."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 3 de marzo, porque la notificación se entiende hecha al terminar el día posterior a la entrega del aviso.",
+        "explicacion": "Correcta. El aviso se entregó el lunes 16 de febrero, así que la notificación quedó surtida al finalizar el martes 17 (art. 69). Los diez días para recurrir corren desde el día siguiente (art. 76): del 18 de febrero al 3 de marzo."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 26 de febrero, porque los diez días se cuentan desde el día siguiente a la fecha en que se envió el aviso.",
+        "explicacion": "Incorrecta. La fecha de envío no cuenta. El aviso produce la notificación al finalizar el día siguiente al de su entrega en el lugar de destino."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 9 de marzo, porque el aviso solo surte efectos cinco días después de haber sido entregado en la dirección.",
+        "explicacion": "Incorrecta. El término de cinco días aplica cuando se desconoce la información del destinatario y el aviso se publica en la página electrónica y en un lugar de acceso al público. Aquí el aviso se remitió a la dirección conocida."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el aviso se entregó en la dirección de Hernán el lunes 16 de febrero. Regla: según el art. 69 del CPACA, la notificación por aviso se considera surtida al finalizar el día siguiente al de la entrega, y el art. 76 da diez días siguientes a esa notificación para recurrir. Cálculo: notificado al terminar el 17 de febrero, los diez días hábiles van del 18 de febrero al 3 de marzo. Conclusión: puede recurrir hasta el 3 de marzo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CPA-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Notificación de los actos administrativos",
+    "subtema": "Notificación electrónica: momento en que queda surtida",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 56 (modificado por el art. 10 de la Ley 2080 de 2021)",
+      "art. 76"
+    ],
+    "texto_fuente": "Las autoridades podrán notificar sus actos a través de medios electrónicos, siempre que el administrado haya aceptado este medio de notificación. [...] Las notificaciones por medios electrónicos se practicarán a través del servicio de notificaciones que ofrezca la sede electrónica de la autoridad. [...] La notificación quedará surtida a partir de la fecha y hora en que el administrado acceda a la misma, hecho que deberá ser certificado por la administración. [...] Los recursos de reposición y apelación deberán interponerse por escrito en la diligencia de notificación personal, o dentro de los diez (10) días siguientes a ella, o a la notificación por aviso, o al vencimiento del término de publicación, según el caso.",
+    "pregunta": "Al iniciar un trámite ante una gobernación, Lucía aceptó por escrito que le notificaran por medios electrónicos. La resolución que negó su solicitud se expidió el viernes 4 de septiembre de 2026, y el lunes 7 de septiembre quedó disponible para ella en el servicio de notificaciones de la sede electrónica de la entidad. Según la certificación de la gobernación, Lucía ingresó a la notificación el jueves 10 de septiembre a las 4:00 p. m. Cuente los términos en días hábiles (de lunes a viernes); en ese período no hubo festivos. ¿Hasta qué fecha puede interponer el recurso de reposición?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 21 de septiembre, porque el plazo corre desde que la resolución quedó disponible en la sede electrónica.",
+        "explicacion": "Incorrecta. Que el acto esté disponible en la sede electrónica no surte la notificación: esta queda surtida cuando el administrado accede a ella. Contar desde el 7 lleva al 21 de septiembre."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 25 de septiembre, porque la notificación electrónica se entiende hecha al terminar el día siguiente al ingreso.",
+        "explicacion": "Incorrecta. Aplica la regla de la notificación por aviso, que se considera surtida al finalizar el día siguiente al de la entrega. La notificación electrónica queda surtida en la fecha y hora del acceso."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 18 de septiembre, porque el plazo corre desde el día siguiente a la fecha en que se expidió la resolución.",
+        "explicacion": "Incorrecta. La expedición del acto no hace correr el plazo para recurrir: los diez días se cuentan desde la notificación."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 24 de septiembre, porque el plazo corre desde el día siguiente a aquel en que Lucía abrió la notificación.",
+        "explicacion": "Correcta. La notificación electrónica queda surtida a partir de la fecha y hora en que el administrado accede a ella, según la certificación de la entidad (art. 56). Lucía accedió el 10 de septiembre; los diez días para recurrir (art. 76) van del 11 al 24 de septiembre."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Lucía aceptó la notificación electrónica y accedió a ella el jueves 10 de septiembre, según la certificación de la entidad. Regla: el art. 56 del CPACA (modificado por la Ley 2080 de 2021) dice que la notificación electrónica queda surtida desde la fecha y hora en que el administrado accede a ella, y el art. 76 da diez días siguientes a la notificación para recurrir. Cálculo: diez días hábiles desde el 11 de septiembre vencen el 24. Conclusión: puede recurrir hasta el 24 de septiembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CPA-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Notificación de los actos administrativos",
+    "subtema": "Notificación sin indicación de recursos y notificación por conducta concluyente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 67",
+      "art. 72"
+    ],
+    "texto_fuente": "En la diligencia de notificación se entregará al interesado copia íntegra, auténtica y gratuita del acto administrativo, con anotación de la fecha y la hora, los recursos que legalmente proceden, las autoridades ante quienes deben interponerse y los plazos para hacerlo. El incumplimiento de cualquiera de estos requisitos invalidará la notificación. [...] Sin el lleno de los anteriores requisitos no se tendrá por hecha la notificación, ni producirá efectos legales la decisión, a menos que la parte interesada revele que conoce el acto, consienta la decisión o interponga los recursos legales.",
+    "pregunta": "El martes 1 de septiembre de 2026, la secretaría de desarrollo económico de un municipio notificó personalmente a un comerciante la resolución que le canceló la autorización para ocupar un puesto en la plaza de mercado municipal. En la diligencia le entregó copia íntegra y gratuita del acto, pero no le informó qué recursos procedían, ante quién ni en qué plazo. El lunes 5 de octubre, después de que la entidad le pidió desocupar el puesto, el comerciante presentó recurso de reposición contra la resolución. ¿Cómo debe proceder la secretaría con el recurso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tramitarlo y decidirlo, porque esa notificación no hizo correr el plazo y el recurso suple la notificación omitida.",
+        "explicacion": "Correcta. En la notificación personal deben indicarse los recursos que proceden, las autoridades ante quienes se interponen y los plazos; el incumplimiento de cualquiera de estos requisitos invalida la notificación (art. 67). Sin ellos no se tiene por hecha la notificación ni corre el plazo, a menos que el interesado revele que conoce el acto, consienta la decisión o interponga los recursos (art. 72). Al recurrir, el comerciante quedó notificado y el recurso debe tramitarse."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazarlo por extemporáneo, porque los diez días para recurrir vencieron a mediados de septiembre.",
+        "explicacion": "Incorrecta. El plazo de diez días corre desde una notificación válida. Como no se le indicaron los recursos, la autoridad ni los plazos, la notificación del 1 de septiembre quedó invalidada."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazarlo y repetir la notificación en debida forma, para que desde entonces corran otra vez los diez días.",
+        "explicacion": "Incorrecta. No hace falta repetir la notificación: al interponer el recurso, el comerciante quedó notificado por conducta concluyente (art. 72). Rechazar el recurso le impediría controvertir la decisión."
+      },
+      {
+        "id": "D",
+        "texto": "Tramitarlo como una solicitud de revocatoria directa, porque ya no procede ningún recurso contra la resolución.",
+        "explicacion": "Incorrecta. Parte de que el recurso es tardío, pero el plazo nunca empezó a correr. El escrito debe tramitarse como lo que es: un recurso de reposición."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: en la notificación personal no se informaron los recursos, la autoridad ante quien se interponen ni el plazo. Regla: el art. 67 del CPACA dice que la falta de cualquiera de esos requisitos invalida la notificación, y el art. 72 dispone que, sin ellos, no se tiene por hecha la notificación ni produce efectos la decisión, a menos que el interesado revele que conoce el acto, consienta la decisión o interponga los recursos. Conclusión: el recurso del 5 de octubre debe tramitarse y decidirse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-CPA-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Recursos administrativos",
+    "subtema": "Recursos contra decisiones de los jefes de entidades territoriales y su obligatoriedad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 74 num. 1 y 2",
+      "art. 76 inc. 3 y 4"
+    ],
+    "texto_fuente": "1. El de reposición, ante quien expidió la decisión para que la aclare, modifique, adicione o revoque. 2. El de apelación, para ante el inmediato superior administrativo o funcional con el mismo propósito. [...] Tampoco serán apelables aquellas decisiones proferidas por los representantes legales y jefes superiores de las entidades y organismos del nivel territorial. [...] El recurso de apelación podrá interponerse directamente, o como subsidiario del de reposición y cuando proceda será obligatorio para acceder a la jurisdicción. Los recursos de reposición y de queja no serán obligatorios.",
+    "pregunta": "El alcalde de un municipio firmó la resolución que negó a una fundación el reconocimiento de un apoyo económico que había solicitado. El apoderado de la fundación quiere demandar la resolución ante la jurisdicción de lo contencioso administrativo y consulta si antes de hacerlo debe interponer algún recurso. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe interponer apelación ante el gobernador, porque ese recurso es obligatorio para poder demandar.",
+        "explicacion": "Incorrecta. El gobernador no es el superior del alcalde para estos efectos, y la ley excluye la apelación contra las decisiones de los representantes legales y jefes superiores de las entidades territoriales."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe interponer reposición ante el alcalde, porque sin ella el acto no puede demandarse ante el juez.",
+        "explicacion": "Incorrecta. La reposición procede contra el acto, pero el art. 76 dice que no es obligatoria. Solo la apelación, cuando procede, es obligatoria para acudir a la jurisdicción."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede demandar sin recurrir, porque el acto no admite apelación y la reposición no es obligatoria.",
+        "explicacion": "Correcta. Las decisiones de los representantes legales y jefes superiores de las entidades territoriales, como el alcalde, no son apelables (art. 74 num. 2). Procede la reposición, pero no es obligatoria (art. 76). Como no hay un recurso obligatorio, la fundación puede demandar sin recurrir."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede demandar sin recurrir, porque contra los actos de un alcalde no procede recurso alguno.",
+        "explicacion": "Incorrecta. Llega a la conclusión correcta por una razón falsa: contra la resolución del alcalde sí procede la reposición ante quien expidió la decisión (art. 74 num. 1). Lo que no procede es la apelación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la resolución la firmó el alcalde, representante legal del municipio. Regla: el art. 74 del CPACA excluye la apelación contra las decisiones de los representantes legales y jefes superiores de las entidades del nivel territorial, aunque procede la reposición. El art. 76 dice que la apelación, cuando procede, es obligatoria para acudir a la jurisdicción, y que la reposición no lo es. Conclusión: la fundación puede demandar sin interponer recursos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CPA-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Recursos administrativos",
+    "subtema": "Recurso de queja: autoridad, plazo y anexo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 74 num. 3"
+    ],
+    "texto_fuente": "3. El de queja, cuando se rechace el de apelación. El recurso de queja es facultativo y podrá interponerse directamente ante el superior del funcionario que dictó la decisión, mediante escrito al que deberá acompañarse copia de la providencia que haya negado el recurso. De este recurso se podrá hacer uso dentro de los cinco (5) días siguientes a la notificación de la decisión.",
+    "pregunta": "La secretaria de agricultura de una gobernación negó a una cooperativa un incentivo económico que había solicitado. La cooperativa apeló, pero la secretaria rechazó la apelación por considerar que se presentó fuera de plazo, y esa decisión se notificó a la cooperativa el martes 8 de septiembre de 2026. La cooperativa sostiene que apeló a tiempo. Cuente los términos en días hábiles (de lunes a viernes); en ese período no hubo festivos. ¿Qué recurso procede contra el rechazo y cómo debe interponerse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reposición contra el rechazo, ante la misma secretaria, a más tardar el 22 de septiembre.",
+        "explicacion": "Incorrecta. Contra el rechazo de la apelación la ley prevé el recurso de queja ante el superior, no la reposición ante quien rechazó. Además, el plazo no es de diez días."
+      },
+      {
+        "id": "B",
+        "texto": "Queja ante el gobernador, con copia de la decisión de rechazo, a más tardar el 15 de septiembre.",
+        "explicacion": "Correcta. Cuando se rechaza la apelación procede la queja, que se interpone directamente ante el superior del funcionario que dictó la decisión, con copia de la providencia que negó el recurso, dentro de los cinco días siguientes a la notificación (art. 74 num. 3). Desde el 9 de septiembre, los cinco días hábiles vencen el 15."
+      },
+      {
+        "id": "C",
+        "texto": "Queja ante el gobernador, con copia de la decisión de rechazo, a más tardar el 22 de septiembre.",
+        "explicacion": "Incorrecta. Acierta en el recurso y en la autoridad, pero no en el plazo: la queja se interpone dentro de los cinco días siguientes a la notificación del rechazo, no en diez. Venció el 15 de septiembre."
+      },
+      {
+        "id": "D",
+        "texto": "Apelación contra el rechazo, ante el gobernador, a más tardar el 15 de septiembre.",
+        "explicacion": "Incorrecta. El recurso previsto cuando se rechaza la apelación es la queja (art. 74 num. 3). La apelación ya se interpuso y fue rechazada; no se apela el rechazo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la secretaria rechazó la apelación y el rechazo se notificó el martes 8 de septiembre. Regla: el art. 74 num. 3 del CPACA prevé el recurso de queja cuando se rechaza la apelación; se interpone directamente ante el superior de quien dictó la decisión, con copia de la providencia que negó el recurso, dentro de los cinco días siguientes a la notificación. Cálculo: cinco días hábiles desde el 9 de septiembre vencen el 15. Conclusión: queja ante el gobernador hasta el 15 de septiembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CPA-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Recursos administrativos",
+    "subtema": "Término probatorio en los recursos y su prórroga",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 79"
+    ],
+    "texto_fuente": "Cuando sea del caso practicar pruebas, se señalará para ello un término no mayor de treinta (30) días. Los términos inferiores podrán prorrogarse por una sola vez, sin que con la prórroga el término exceda de treinta (30) días. En el acto que decrete la práctica de pruebas se indicará el día en que vence el término probatorio.",
+    "pregunta": "Dos personas reclamaron ante una entidad territorial un auxilio económico por la muerte de un exservidor, cada una como su compañera permanente. La entidad se lo reconoció a Marta; Laura apeló y pidió que se recibieran dos testimonios. Mediante auto del martes 13 de enero de 2026, el superior decretó los testimonios y fijó un término probatorio de diez días, que vence el martes 27 de enero. El 23 de enero, uno de los testigos fue hospitalizado y no pudo declarar. Cuente los términos en días hábiles (de lunes a viernes); entre el 13 de enero y el 20 de marzo no hubo festivos. ¿Hasta qué fecha, como máximo, puede extenderse el término probatorio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 24 de febrero, porque la prórroga no puede llevar el término total más allá de treinta días.",
+        "explicacion": "Correcta. El término para practicar pruebas en los recursos no puede ser mayor de treinta días, y los términos inferiores pueden prorrogarse una sola vez sin que con la prórroga se excedan los treinta (art. 79). Como se fijaron diez días, la prórroga puede ser hasta de veinte días hábiles más, contados desde el 28 de enero: el término vence, a más tardar, el 24 de febrero."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 10 de febrero, porque el término probatorio se prorroga una sola vez y por el mismo plazo inicial.",
+        "explicacion": "Incorrecta. La ley no limita la prórroga al mismo plazo inicial; el límite es que el término total no exceda de treinta días. Prorrogar diez días hábiles después del 27 de enero llevaría al 10 de febrero, pero el máximo permitido es mayor."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 10 de marzo, porque un término inferior puede prorrogarse una vez por treinta días adicionales.",
+        "explicacion": "Incorrecta. Sumar treinta días hábiles después del 27 de enero llevaría al 10 de marzo, con un término total de cuarenta días, por encima del máximo de treinta que fija el art. 79."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 27 de enero, porque la fecha de vencimiento fijada en el auto que decretó las pruebas no se modifica.",
+        "explicacion": "Incorrecta. El auto debe indicar el día en que vence el término probatorio, pero eso no impide prorrogarlo: el art. 79 permite prorrogar una vez los términos inferiores a treinta días."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el superior fijó diez días hábiles de pruebas, que vencen el martes 27 de enero, y falta un testimonio. Regla: el art. 79 del CPACA fija para las pruebas en los recursos un término no mayor de treinta días y permite prorrogar una sola vez los términos inferiores, sin que con la prórroga se excedan los treinta. Cálculo: caben veinte días hábiles más, del 28 de enero al 24 de febrero. Conclusión: el término puede extenderse hasta el 24 de febrero.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Recursos administrativos",
+    "subtema": "Negativa a recibir los recursos y exigencia de pago previo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 76 inc. 2",
+      "art. 77"
+    ],
+    "texto_fuente": "Los recursos se presentarán ante el funcionario que dictó la decisión, salvo lo dispuesto para el de queja, y si quien fuere competente no quisiere recibirlos podrán presentarse ante el procurador regional o ante el personero municipal, para que ordene recibirlos y tramitarlos, e imponga las sanciones correspondientes, si a ello hubiere lugar. [...] Por regla general los recursos se interpondrán por escrito que no requiere de presentación personal si quien lo presenta ha sido reconocido en la actuación. [...] Para el trámite del recurso el recurrente no está en la obligación de pagar la suma que el acto recurrido le exija. Con todo, podrá pagar lo que reconoce deber.",
+    "pregunta": "La secretaría de cultura de un municipio ordenó, mediante resolución, que una fundación reintegrara 8 millones de pesos de un estímulo que no ejecutó. Dentro del plazo legal, la representante legal de la fundación, reconocida en la actuación, llevó a la secretaría el escrito de reposición y en subsidio apelación, pero el secretario se negó a recibirlo y le dijo que primero debía consignar el dinero. ¿Qué puede hacer la fundación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Consignar los 8 millones y radicar luego el recurso, pues el pago de lo exigido es requisito para recurrir.",
+        "explicacion": "Incorrecta. El art. 77 dice que, para el trámite del recurso, el recurrente no está obligado a pagar la suma que el acto le exige; puede pagar lo que reconoce deber, si quiere."
+      },
+      {
+        "id": "B",
+        "texto": "Interponer queja ante el alcalde con copia de la resolución, pues la negativa equivale a rechazar la apelación.",
+        "explicacion": "Incorrecta. La queja procede cuando la apelación se rechaza mediante una decisión. Frente a la negativa a recibir el escrito, la ley prevé acudir al procurador regional o al personero municipal."
+      },
+      {
+        "id": "C",
+        "texto": "Presentarlo ante el personero municipal, pues este puede ordenar que se reciba y tramite sin exigir el pago.",
+        "explicacion": "Correcta. Si el funcionario competente no quiere recibir los recursos, pueden presentarse ante el procurador regional o ante el personero municipal, para que ordene recibirlos y tramitarlos e imponga las sanciones del caso (art. 76 inc. 2). Además, para tramitar el recurso no hay que pagar la suma que exige el acto recurrido (art. 77)."
+      },
+      {
+        "id": "D",
+        "texto": "Demandar de inmediato la resolución ante el juez, pues la negativa a recibir el recurso agota la vía administrativa.",
+        "explicacion": "Incorrecta. La negativa a recibir no agota los recursos. La apelación, que aquí procede porque el acto lo expidió un secretario, es obligatoria para acudir a la jurisdicción, y la ley da un camino para que el recurso se reciba."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el secretario se negó a recibir el recurso y condicionó su recibo al pago. Regla: el art. 76 del CPACA permite presentar los recursos ante el procurador regional o el personero municipal cuando el competente no quiere recibirlos, para que ordene recibirlos y tramitarlos; y el art. 77 dice que el recurrente no está obligado a pagar la suma que le exige el acto recurrido. Conclusión: la fundación puede acudir al personero sin consignar el dinero.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 68
+    }
+  },
+  {
+    "id": "TC-CPA-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Firmeza de los actos administrativos",
+    "subtema": "Firmeza cuando se interponen reposición y apelación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 79 inc. 1",
+      "art. 87 num. 2",
+      "art. 89"
+    ],
+    "texto_fuente": "Los recursos se tramitarán en el efecto suspensivo. [...] Los actos administrativos quedarán en firme: [...] 2. Desde el día siguiente a la publicación, comunicación o notificación de la decisión sobre los recursos interpuestos. [...] Salvo disposición legal en contrario, los actos en firme serán suficientes para que las autoridades, por sí mismas, puedan ejecutarlos de inmediato.",
+    "pregunta": "La secretaría de planeación de un municipio ordenó a una empresa retirar, dentro del mes siguiente, una antena que instaló sin permiso en la azotea de un edificio público. La empresa interpuso a tiempo reposición y en subsidio apelación. La secretaría confirmó la orden al resolver la reposición, decisión que se notificó el martes 1 de septiembre de 2026. El jueves 17 de septiembre el alcalde resolvió la apelación, también en contra de la empresa, y esa decisión se le notificó el miércoles 23 de septiembre. Cuente los términos en días hábiles (de lunes a viernes); en ese período no hubo festivos. ¿Desde qué fecha queda en firme la orden de retiro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Desde el 2 de septiembre, porque al decidirse la reposición se agotó el recurso ante quien expidió el acto.",
+        "explicacion": "Incorrecta. La empresa también apeló, en subsidio. Mientras la apelación no se decida y se notifique, el acto no queda en firme, porque los recursos se tramitan en el efecto suspensivo (art. 79)."
+      },
+      {
+        "id": "B",
+        "texto": "Desde el 18 de septiembre, porque la firmeza llega al día siguiente de la fecha en que se decide la apelación.",
+        "explicacion": "Incorrecta. La firmeza no depende de la fecha en que se decide el recurso, sino del día siguiente a la notificación de esa decisión (art. 87 num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Desde el 8 de octubre, porque contra la decisión de la apelación corren otros diez días antes de la firmeza.",
+        "explicacion": "Incorrecta. El art. 87 num. 2 no prevé un nuevo plazo: cuando se interponen recursos, el acto queda en firme desde el día siguiente a la notificación de la decisión sobre ellos."
+      },
+      {
+        "id": "D",
+        "texto": "Desde el 24 de septiembre, porque la firmeza llega al día siguiente de notificarse la decisión del último recurso.",
+        "explicacion": "Correcta. Los recursos se tramitan en el efecto suspensivo (art. 79) y el acto queda en firme desde el día siguiente a la notificación de la decisión sobre los recursos interpuestos (art. 87 num. 2). La apelación se decidió el 17 de septiembre, pero se notificó el 23; la orden queda en firme el 24, y desde entonces la autoridad puede ejecutarla (art. 89)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la apelación se resolvió el 17 de septiembre, pero se notificó a la empresa el 23. Regla: los recursos se tramitan en el efecto suspensivo (art. 79 del CPACA) y, cuando se interponen, el acto queda en firme desde el día siguiente a la notificación de la decisión sobre ellos (art. 87 num. 2); solo los actos en firme pueden ejecutarse (art. 89). Conclusión: la orden queda en firme el jueves 24 de septiembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-CPA-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Silencio administrativo",
+    "subtema": "Silencio negativo: recursos contra el acto presunto y deber de decidir",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 83",
+      "art. 76 inc. 1"
+    ],
+    "texto_fuente": "Transcurridos tres (3) meses contados a partir de la presentación de una petición sin que se haya notificado decisión que la resuelva, se entenderá que esta es negativa. [...] La ocurrencia del silencio administrativo negativo no eximirá de responsabilidad a las autoridades. Tampoco las excusará del deber de decidir sobre la petición inicial, salvo que el interesado haya hecho uso de los recursos contra el acto presunto, o que habiendo acudido ante la Jurisdicción de lo Contencioso Administrativo se haya notificado auto admisorio de la demanda. [...] Los recursos contra los actos presuntos podrán interponerse en cualquier tiempo, salvo en el evento en que se haya acudido ante el juez.",
+    "pregunta": "El lunes 2 de febrero de 2026, un ciudadano pidió a la secretaría de vivienda de una gobernación que le reconociera un subsidio de mejoramiento de vivienda. No se le notificó ninguna respuesta. El lunes 3 de agosto de 2026 interpuso reposición y en subsidio apelación contra la negativa que, según él, se produjo por el silencio de la entidad, y en el mismo escrito anunció que, si no le dan la razón, demandará ante el juez. La oficina jurídica debe conceptuar sobre esos recursos. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazarlos, porque debían interponerse dentro de los diez días siguientes a la fecha en que se configuró el silencio.",
+        "explicacion": "Incorrecta. El plazo de diez días se cuenta desde una notificación, un aviso o una publicación. Para los actos presuntos, el art. 76 permite interponer los recursos en cualquier tiempo, salvo que se haya acudido ante el juez."
+      },
+      {
+        "id": "B",
+        "texto": "Tramitarlos y decidirlos, porque contra la negativa presunta no rige el plazo de diez días para recurrir.",
+        "explicacion": "Correcta. Pasados tres meses desde la petición sin decisión notificada, se entiende negada (art. 83). Contra los actos presuntos los recursos pueden interponerse en cualquier tiempo, salvo que se haya acudido ante el juez (art. 76); el ciudadano solo anunció una demanda, así que esa salvedad no se aplica. La entidad debe decidir los recursos."
+      },
+      {
+        "id": "C",
+        "texto": "No tramitarlos y resolver de fondo la petición inicial, porque el silencio negativo no genera un acto recurrible.",
+        "explicacion": "Incorrecta. El silencio negativo produce un acto presunto contra el cual proceden recursos (art. 76). Además, el art. 83 releva a la autoridad del deber de decidir la petición inicial cuando el interesado ha usado los recursos contra el acto presunto."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazarlos, porque al anunciar que demandará, el ciudadano optó por la vía judicial frente al silencio.",
+        "explicacion": "Incorrecta. Los recursos contra el acto presunto pueden interponerse en cualquier tiempo, salvo que se haya acudido ante el juez (art. 76). Anunciar una demanda no es acudir ante el juez: mientras no la presente, el ciudadano puede recurrir."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: pasaron más de tres meses sin decisión notificada, y el ciudadano solo anunció que demandaría. Regla: el art. 83 del CPACA entiende negada la petición a los tres meses; el art. 76 permite recurrir los actos presuntos en cualquier tiempo, salvo que se haya acudido ante el juez, y anunciar una demanda no es acudir ante él. Además, el art. 83 releva a la autoridad de decidir la petición inicial cuando el interesado recurre el acto presunto. Conclusión: la entidad debe tramitar y decidir los recursos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CPA-013",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Revocación directa",
+    "subtema": "Revocación del acto positivo presunto sin consentimiento del titular",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 84",
+      "art. 85",
+      "art. 97"
+    ],
+    "texto_fuente": "Solamente en los casos expresamente previstos en disposiciones legales especiales, el silencio de la administración equivale a decisión positiva. [...] El acto positivo presunto podrá ser objeto de revocación directa en los términos de este Código. [...] La persona que se hallare en las condiciones previstas en las disposiciones legales que establecen el beneficio del silencio administrativo positivo, protocolizará la constancia o copia de que trata el artículo 15, junto con una declaración jurada de no haberle sido notificada la decisión dentro del término previsto. La escritura y sus copias auténticas producirán todos los efectos legales de la decisión favorable que se pidió, y es deber de todas las personas y autoridades reconocerla así. [...] Salvo las excepciones establecidas en la ley, cuando un acto administrativo, bien sea expreso o ficto, haya creado o modificado una situación jurídica de carácter particular y concreto o reconocido un derecho de igual categoría, no podrá ser revocado sin el consentimiento previo, expreso y escrito del respectivo titular. Si el titular niega su consentimiento y la autoridad considera que el acto es contrario a la Constitución o a la ley, deberá demandarlo ante la Jurisdicción de lo Contencioso Administrativo.",
+    "pregunta": "Una ley especial dispone que, si cierta clase de permiso no se resuelve dentro del plazo que ella fija, la solicitud se entiende concedida. Una empresa pidió ese permiso a una entidad departamental y el plazo venció sin que se le notificara decisión alguna. La empresa llevó a una notaría la copia de su solicitud con la constancia de radicación, junto con una declaración juramentada de no haber sido notificada, y obtuvo la escritura. Meses después, la entidad concluye que el permiso contraría la ley. Cuando se lo comunica a la empresa, el gerente responde que no renunciará al permiso. ¿Qué debe hacer la entidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demandar el permiso ante el juez administrativo, porque no puede revocarlo si la empresa no lo acepta.",
+        "explicacion": "Correcta. Cuando un acto, expreso o ficto, ha creado una situación jurídica particular y concreta, no puede revocarse sin el consentimiento previo, expreso y escrito del titular; si el titular no lo da y la autoridad considera que el acto es contrario a la ley, debe demandarlo ante la Jurisdicción de lo Contencioso Administrativo (art. 97). La empresa no renuncia al permiso, y el acto positivo presunto se revoca en los términos del Código (art. 84), es decir, con esta misma regla."
+      },
+      {
+        "id": "B",
+        "texto": "Revocarlo de oficio, porque el permiso surgió del silencio y no de una decisión expresa que deba respetarse.",
+        "explicacion": "Incorrecta. El art. 97 protege por igual los actos expresos y los fictos que crean o modifican una situación particular y concreta. Que el permiso surja del silencio no permite revocarlo sin consentimiento."
+      },
+      {
+        "id": "C",
+        "texto": "Revocarlo de oficio, porque contrariar la ley es causal de revocación y la entidad no necesita autorización.",
+        "explicacion": "Incorrecta. La oposición a la ley es causal de revocación (art. 93), pero si el acto creó una situación particular y concreta se requiere el consentimiento del titular. Sin él, la entidad debe demandar."
+      },
+      {
+        "id": "D",
+        "texto": "Declarar sin efectos la escritura, porque solo un acto expreso de la entidad puede otorgar un permiso.",
+        "explicacion": "Incorrecta. La escritura en que se protocolizan la constancia de la solicitud y la declaración jurada produce todos los efectos legales de la decisión favorable que se pidió, y las autoridades deben reconocerla (art. 85)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el permiso surgió del silencio positivo previsto en una ley especial, se protocolizó, y la empresa no acepta perderlo. Regla: la escritura produce los efectos de la decisión favorable (art. 85 del CPACA); el acto positivo presunto se revoca en los términos del Código (art. 84), y el art. 97 exige el consentimiento previo, expreso y escrito del titular; sin él, la autoridad debe demandar el acto. Conclusión: la entidad debe acudir a la jurisdicción.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Revocación directa",
+    "subtema": "Revocación a solicitud de parte después de agotar los recursos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 93",
+      "art. 94",
+      "art. 96"
+    ],
+    "texto_fuente": "Los actos administrativos deberán ser revocados por las mismas autoridades que los hayan expedido o por sus inmediatos superiores jerárquicos o funcionales, de oficio o a solicitud de parte, en cualquiera de los siguientes casos: 1. Cuando sea manifiesta su oposición a la Constitución Política o a la ley. 2. Cuando no estén conformes con el interés público o social, o atenten contra él. 3. Cuando con ellos se cause agravio injustificado a una persona. [...] La revocación directa de los actos administrativos a solicitud de parte no procederá por la causal del numeral 1 del artículo anterior, cuando el peticionario haya interpuesto los recursos de que dichos actos sean susceptibles, ni en relación con los cuales haya operado la caducidad para su control judicial. [...] Ni la petición de revocación de un acto, ni la decisión que sobre ella recaiga revivirán los términos legales para demandar el acto ante la Jurisdicción de lo Contencioso Administrativo, ni darán lugar a la aplicación del silencio administrativo.",
+    "pregunta": "Una secretaría de un municipio impuso una multa a un comerciante, quien interpuso reposición y apelación; ambos recursos se resolvieron en su contra. Un mes después de notificada la decisión de la apelación, el comerciante pidió la revocatoria directa de la multa. En la solicitud no discutió la legalidad del acto: alegó que la multa le causa un agravio injustificado. La abogada de la secretaría opina que la solicitud es improcedente, porque el comerciante ya usó los recursos. ¿Es correcta esa opinión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí, porque quien ya usó los recursos contra un acto no puede pedir su revocatoria directa por ninguna causal.",
+        "explicacion": "Incorrecta. El art. 94 limita la improcedencia por haber usado los recursos a la causal del numeral 1 del art. 93; no la extiende a las demás causales."
+      },
+      {
+        "id": "B",
+        "texto": "No, y además la presentación de la solicitud vuelve a abrir el término para demandar la multa ante el juez.",
+        "explicacion": "Incorrecta. Acierta en que la solicitud no es improcedente, pero el art. 96 dice que ni la petición de revocación ni su decisión reviven los términos para demandar."
+      },
+      {
+        "id": "C",
+        "texto": "No, porque esa restricción se refiere a la causal de oposición manifiesta a la Constitución o a la ley.",
+        "explicacion": "Correcta. La revocación a solicitud de parte no procede por la causal del numeral 1 del art. 93 (oposición manifiesta a la Constitución o a la ley) cuando el peticionario interpuso los recursos (art. 94). El comerciante invocó el agravio injustificado (num. 3), al que no se extiende esa improcedencia, así que la solicitud debe estudiarse."
+      },
+      {
+        "id": "D",
+        "texto": "Sí, porque cuando el acto ya fue objeto de recursos, la revocatoria directa solo puede hacerse de oficio.",
+        "explicacion": "Incorrecta. La ley no dispone que, agotados los recursos, la revocación sea solo de oficio. Puede ser de oficio o a solicitud de parte (art. 93), con la limitación puntual del art. 94."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el comerciante agotó los recursos y pidió la revocatoria por agravio injustificado, sin alegar ilegalidad. Regla: el art. 93 del CPACA prevé tres causales de revocación, de oficio o a solicitud de parte; el art. 94 la declara improcedente a solicitud de parte por la causal de oposición manifiesta a la Constitución o a la ley cuando se interpusieron los recursos; y el art. 96 dice que la solicitud no revive los términos para demandar. Conclusión: la opinión de la abogada no es correcta.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 58
+    }
+  }
+]

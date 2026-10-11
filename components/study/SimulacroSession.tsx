@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock, Flag, Award, Scale } from 'lucide-react'
 import { isJuicioSituacional, type Question } from '@/lib/question-types'
 import { clock, saveProgress, sendAttempt } from './attempts'
+import QuestionText from './QuestionText'
 
 const STORAGE_KEY = 'simo_simulacro_en_curso'
 const AVISO_TIEMPO_MS = 5 * 60 * 1000
@@ -338,7 +339,7 @@ export default function SimulacroSession({
         </div>
 
         <div className="p-6 sm:p-10 space-y-6">
-          <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white leading-relaxed whitespace-pre-line">{question.pregunta}</h3>
+          <QuestionText text={question.pregunta} />
           <div className="space-y-3" role="radiogroup" aria-label="Opciones de respuesta">
             {question.opciones.map((opt) => {
               const isSelected = selected === opt.id
@@ -423,7 +424,7 @@ function ReviewItem({ q, index, selected }: { q: Question; index: number; select
           <span className="text-sm text-slate-800 dark:text-slate-200 line-clamp-2">{q.pregunta}</span>
         </summary>
         <div className="px-4 pb-4 space-y-3">
-          <p className="text-sm text-slate-800 dark:text-slate-200 whitespace-pre-line">{q.pregunta}</p>
+          <QuestionText text={q.pregunta} className="text-sm" />
           <ul className="space-y-2">
             {q.opciones.map((o) => {
               const isKey = o.id === q.respuestaCorrecta

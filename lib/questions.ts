@@ -5,6 +5,11 @@ import empleoPublico from '@/data/preguntas/empleo-publico.json'
 import disciplinarioAnticorrupcion from '@/data/preguntas/disciplinario-anticorrupcion.json'
 import gestionPublica from '@/data/preguntas/gestion-publica.json'
 import comportamentales from '@/data/preguntas/comportamentales.json'
+import constitucionEstado from '@/data/preguntas/constitucion-estado.json'
+import procedimientoAdministrativo from '@/data/preguntas/procedimiento-administrativo.json'
+import atencionCiudadano from '@/data/preguntas/atencion-ciudadano.json'
+import transparenciaArchivo from '@/data/preguntas/transparencia-archivo.json'
+import aptitudes from '@/data/preguntas/aptitudes.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -14,6 +19,11 @@ const BANCO = [
   ...disciplinarioAnticorrupcion,
   ...gestionPublica,
   ...comportamentales,
+  ...constitucionEstado,
+  ...procedimientoAdministrativo,
+  ...atencionCiudadano,
+  ...transparenciaArchivo,
+  ...aptitudes,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados

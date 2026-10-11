@@ -1,0 +1,759 @@
+[
+  {
+    "id": "TC-ATC-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Mínimo semanal de atención personal y deber de atender a quien ingresó dentro del horario",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 7, num. 2",
+      "art. 7, num. 3"
+    ],
+    "texto_fuente": "Las autoridades tendrán, frente a las personas que ante ellas acudan y en relación con los asuntos que tramiten, los siguientes deberes: [...] 2. Garantizar atención personal al público, como mínimo durante cuarenta (40) horas a la semana, las cuales se distribuirán en horarios que satisfagan las necesidades del servicio. [...] 3. Atender a todas las personas que hubieran ingresado a sus oficinas dentro del horario normal de atención.",
+    "pregunta": "La secretaría de hacienda de un municipio fijó este horario de atención en su sede: de lunes a viernes, de 8:00 a. m. a 12:00 m. y de 2:00 p. m. a 5:30 p. m. Además, en su sitio web funciona un asistente virtual automático que responde preguntas las 24 horas. Un viernes, un contribuyente entró a la sede a las 5:20 p. m. y tomó un turno. A las 5:30 p. m., el servidor cerró la ventanilla y le dijo que volviera el lunes. ¿Qué es correcto sobre el horario y sobre la actuación del servidor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cumple, pues en la sede se alcanza el mínimo semanal exigido, y el servidor podía citarlo para el lunes.",
+        "explicacion": "Incorrecta. En la sede se atienden 4 horas en la mañana y 3,5 en la tarde: 7,5 horas diarias y 37,5 a la semana, menos de las 40 horas de atención personal que exige el art. 7, num. 2. Además, quien ingresó dentro del horario debe ser atendido (num. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "No cumple, pues en la sede no se alcanza el mínimo semanal exigido, y el servidor podía citarlo para el lunes.",
+        "explicacion": "Incorrecta. Acierta en que el horario no cumple, pero el contribuyente entró a las 5:20 p. m., dentro del horario, y la autoridad debe atender a todas las personas que hayan ingresado a sus oficinas dentro del horario normal de atención (art. 7, num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "No cumple, pues en la sede no se alcanza el mínimo semanal exigido, y el servidor debía atenderlo ese mismo día.",
+        "explicacion": "Correcta. La sede atiende 7,5 horas diarias (4 + 3,5), es decir, 37,5 a la semana, por debajo de las 40 horas de atención personal que exige el art. 7, num. 2. Y como el contribuyente ingresó a las 5:20 p. m., dentro del horario, debía ser atendido ese día (art. 7, num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Cumple, pues el asistente virtual completa el mínimo semanal exigido, y el servidor debía atenderlo ese mismo día.",
+        "explicacion": "Incorrecta. Acierta en que debía atenderlo ese día (art. 7, num. 3), pero el mínimo de 40 horas semanales es de atención personal al público (art. 7, num. 2), y un asistente virtual automático no la reemplaza."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la sede atiende de 8:00 a 12:00 y de 2:00 a 5:30, de lunes a viernes, y el contribuyente entró a las 5:20 p. m. Regla: el art. 7 del CPACA obliga a garantizar atención personal al público como mínimo 40 horas a la semana (num. 2) y a atender a todas las personas que ingresaron dentro del horario (num. 3). Cálculo: 4 + 3,5 = 7,5 horas diarias × 5 días = 37,5 horas. Conclusión: el horario no cumple y el contribuyente debía ser atendido ese día.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ATC-002",
+    "version": 2,
+    "estado": "borrador",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Prohibición de exigir certificaciones que reposan en la entidad y requisitos no previstos en la norma del trámite",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 9, num. 4",
+      "art. 9, num. 5",
+      "art. 16, par. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "A las autoridades les queda especialmente prohibido: [...] 4. Exigir constancias, certificaciones o documentos que reposen en la respectiva entidad. 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política. [...] La autoridad tiene la obligación de examinar integralmente la petición, y en ningún caso la estimará incompleta por falta de requisitos o documentos que no se encuentren dentro del marco jurídico vigente, que no sean necesarios para resolverla o que se encuentren dentro de sus archivos.",
+    "pregunta": "La secretaría de gobierno de un municipio otorga los permisos para instalar puestos de venta en las fiestas patronales. El decreto municipal que regula el trámite pide el formulario diligenciado, la copia de la cédula y el paz y salvo del impuesto de industria y comercio. Un comerciante entrega el formulario y la copia de su cédula, y está al día en ese impuesto. El paz y salvo lo expide la secretaría de hacienda, que es una dependencia de la misma alcaldía, y el registro de los pagos del comerciante consta en el propio sistema de información de esa secretaría. El servidor de la ventanilla le exige, además, el paz y salvo y una carta de la junta de acción comunal que acredite que vive en el municipio, porque el secretario de gobierno quiere dar prioridad a los comerciantes locales. ¿Cuál de esos dos documentos puede exigirle el servidor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambos, porque el paz y salvo lo pide el decreto y la carta responde a una decisión del secretario dentro de su competencia.",
+        "explicacion": "Incorrecta. El secretario no puede crear requisitos que la norma del trámite no prevé (art. 9, num. 5), y el paz y salvo no puede pedirse al comerciante porque es una certificación que expide la propia alcaldía con base en sus registros (art. 9, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el paz y salvo, porque el decreto lo incluye entre los requisitos; la carta no, porque ninguna norma la prevé.",
+        "explicacion": "Incorrecta. Acierta en que la carta no puede exigirse. Pero, aunque el decreto mencione el paz y salvo, la ley prohíbe exigir certificaciones que reposen en la respectiva entidad (art. 9, num. 4), y aquí la entidad es la alcaldía, de la que hace parte la secretaría de hacienda que lleva el registro del pago. La alcaldía debe verificarlo en sus propios registros."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno por ahora: debe radicar la solicitud y requerirle los dos documentos dentro de los diez días siguientes.",
+        "explicacion": "Incorrecta. Requerir al peticionario para que complete la solicitud solo tiene sentido frente a documentos que sí pueden exigirse. Aquí ninguno puede pedirse: el paz y salvo reposa en la entidad (art. 9, num. 4) y la carta no está prevista en la norma (art. 9, num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque el pago del impuesto debe verificarlo la propia alcaldía y la carta no la contempla norma alguna.",
+        "explicacion": "Correcta. El paz y salvo es una certificación que expide una dependencia de la misma alcaldía con base en sus propios registros, y está prohibido exigir certificaciones que reposen en la entidad o tener por incompleta una petición por documentos que estén en sus archivos (art. 9, num. 4; art. 16, par. 1), aunque el decreto del trámite lo mencione. La carta de la junta es un requisito adicional que ninguna norma prevé (art. 9, num. 5)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el paz y salvo lo expide la secretaría de hacienda, que hace parte de la misma alcaldía y tiene en su sistema el registro del pago, y la carta de la junta la pide el secretario sin que la norma del trámite la prevea. Regla: el art. 9 del CPACA prohíbe exigir certificaciones que reposen en la respectiva entidad (num. 4) y exigir documentos no previstos o crear requisitos adicionales (num. 5); el art. 16, par. 1, impide tener por incompleta una petición por documentos que estén en los archivos de la autoridad. Conclusión: no puede exigir ninguno.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "ambigua",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45,
+      "nota": "Dos resoluciones a ciegas consideran defendible la opción B: el decreto municipal exige el paz y salvo y ese documento aún no existe. Requiere revisión de un abogado antes de publicarse."
+    }
+  },
+  {
+    "id": "TC-ATC-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Prohibición de negarse a recibir declaraciones privadas que presentan deficiencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 9, num. 2"
+    ],
+    "texto_fuente": "A las autoridades les queda especialmente prohibido: [...] 2. Negarse a recibir los escritos, las declaraciones o liquidaciones privadas necesarias para cumplir con una obligación legal, lo cual no obsta para prevenir al peticionario sobre eventuales deficiencias de su actuación o del escrito que presenta.",
+    "pregunta": "El último día del plazo para declarar el impuesto de industria y comercio, una contribuyente lleva su declaración en papel a la ventanilla de la secretaría de hacienda de un municipio. La servidora la revisa, nota que una casilla quedó en blanco y que el valor a pagar parece mal liquidado, y le dice que no la recibirá hasta que la corrija. ¿Cómo debió actuar la servidora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Recibir la declaración y, en el mismo momento, advertirle a la contribuyente sobre los errores que encontró.",
+        "explicacion": "Correcta. Está prohibido negarse a recibir las declaraciones o liquidaciones privadas necesarias para cumplir una obligación legal, aunque se puede prevenir al interesado sobre las deficiencias del escrito (art. 9, num. 2). Recibirla y advertirle los errores cumple las dos cosas."
+      },
+      {
+        "id": "B",
+        "texto": "Devolverle la declaración para que la corrija y la presente de nuevo dentro de los diez días siguientes.",
+        "explicacion": "Incorrecta. Devolverla equivale a negarse a recibirla, lo que el art. 9, num. 2, prohíbe. El plazo de diez días para corregir corresponde a las peticiones cuya finalidad no se comprende, no a una declaración con posibles errores."
+      },
+      {
+        "id": "C",
+        "texto": "Recibirla solo si la contribuyente firma un documento en el que acepta las sanciones que causen los errores.",
+        "explicacion": "Incorrecta. Condicionar el recibo a la firma de un documento que ninguna norma exige es otra forma de negarse a recibir la declaración (art. 9, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Abstenerse de recibirla, porque una declaración mal liquidada no sirve para cumplir el deber de declarar.",
+        "explicacion": "Incorrecta. Las eventuales deficiencias no autorizan a rechazar la declaración: la ley solo permite advertirlas al interesado al recibirla (art. 9, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la servidora se niega a recibir la declaración porque tiene una casilla en blanco y un posible error de liquidación. Regla: el art. 9, num. 2, del CPACA prohíbe a las autoridades negarse a recibir las declaraciones o liquidaciones privadas necesarias para cumplir una obligación legal, sin perjuicio de prevenir al interesado sobre sus eventuales deficiencias. Conclusión: debía recibirla y advertirle los errores.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 82
+    }
+  },
+  {
+    "id": "TC-ATC-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Prohibición de exigir la presentación personal de peticiones cuando la ley no lo exige",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 5, num. 1 (modificado por el art. 1 de la Ley 2080 de 2021)",
+      "art. 9, nums. 1, 3 y 5"
+    ],
+    "texto_fuente": "Presentar peticiones en cualquiera de sus modalidades, verbalmente, o por escrito, o por cualquier otro medio idóneo y sin necesidad de apoderado, así como a obtener información oportuna y orientación acerca de los requisitos que las disposiciones vigentes exijan para tal efecto. [...] A las autoridades les queda especialmente prohibido: 1. Negarse a recibir las peticiones o a expedir constancias sobre las mismas. [...] 3. Exigir la presentación personal de peticiones, recursos o documentos cuando la ley no lo exija. [...] 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política.",
+    "pregunta": "Un campesino que vive en una vereda lejana le pide a su vecina que lleve a la alcaldía un escrito firmado por él, en el que solicita copia de la resolución que le reconoció un subsidio de vivienda. En la ventanilla de correspondencia, el servidor se niega a radicarlo y le dice a la vecina que el campesino debe ir en persona o, si no puede, autenticar su firma en una notaría. Ninguna norma especial regula la forma de presentar esa solicitud. ¿Cómo debió actuar el servidor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negarse a radicarlo en ventanilla, pero indicarle a la vecina que el campesino puede enviarlo por correo electrónico.",
+        "explicacion": "Incorrecta. Ofrecer otro canal no subsana la negativa: las autoridades tienen prohibido negarse a recibir las peticiones (art. 9, num. 1), y la petición puede presentarse por escrito y sin necesidad de apoderado (art. 5, num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Radicarlo tal como lo llevó la vecina, sin exigir que el campesino se presente ni que autentique su firma.",
+        "explicacion": "Correcta. Las peticiones pueden presentarse por escrito y sin necesidad de apoderado (art. 5, num. 1); las autoridades no pueden negarse a recibirlas (art. 9, num. 1), exigir su presentación personal si la ley no lo exige (num. 3) ni crear formalidades adicionales (num. 5), como la autenticación de la firma."
+      },
+      {
+        "id": "C",
+        "texto": "Radicarlo solo si la vecina presenta una autorización escrita del campesino para entregarlo en su nombre.",
+        "explicacion": "Incorrecta. La autorización escrita para entregar el documento es una formalidad que ninguna norma prevé para esta solicitud (art. 9, num. 5). La vecina solo entrega el escrito que firmó el propio interesado, y para pedir no se necesita apoderado (art. 5, num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Radicarlo, pero advertir que el campesino deberá ratificar en persona su petición antes de que se resuelva.",
+        "explicacion": "Incorrecta. Recibir el escrito pero condicionar su decisión a que el interesado lo ratifique en persona es exigir la presentación personal sin que la ley lo pida (art. 9, num. 3) y crear una formalidad adicional (num. 5)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el campesino envió con una vecina su petición escrita y firmada, y ninguna norma especial regula su forma de presentación. Regla: el CPACA permite presentar peticiones por escrito y sin apoderado (art. 5, num. 1) y prohíbe negarse a recibirlas, exigir su presentación personal cuando la ley no lo exige y crear formalidades adicionales (art. 9, nums. 1, 3 y 5). Conclusión: debía radicar el escrito sin remitirlo a otro canal ni exigir autorizaciones, ratificaciones, la presencia del campesino o la autenticación de su firma.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Carta de trato digno al usuario: contenido, visibilidad y actualización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 7, num. 5"
+    ],
+    "texto_fuente": "5. Expedir, hacer visible y actualizar anualmente una carta de trato digno al usuario donde la respectiva autoridad especifique todos los derechos de los usuarios y los medios puestos a su disposición para garantizarlos efectivamente.",
+    "pregunta": "En una auditoría interna de una gobernación se encuentra que la carta de trato digno al usuario se expidió en 2022, está publicada solo en la intranet de los servidores y contiene los horarios y las sedes de atención, pero no menciona los derechos de los usuarios. El líder de servicio al ciudadano pregunta qué debe ajustar. ¿Qué debe responderle el auditor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Publicarla en la sede y en la web, y renovarla cada cuatro años, al adoptarse el nuevo plan de desarrollo.",
+        "explicacion": "Incorrecta. La carta debe actualizarse cada año, no cada cuatro, y debe especificar todos los derechos de los usuarios y los medios para garantizarlos (art. 7, num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Ponerla a la vista del público, renovarla cada año y detallar los derechos de los usuarios y cómo se garantizan.",
+        "explicacion": "Correcta. El art. 7, num. 5, obliga a expedir, hacer visible y actualizar anualmente la carta de trato digno, y a especificar en ella todos los derechos de los usuarios y los medios puestos a su disposición para garantizarlos. La carta de 2022, guardada en la intranet y sin derechos, falla en los tres aspectos."
+      },
+      {
+        "id": "C",
+        "texto": "Publicarla en la web y renovarla solo cuando cambien las normas que regulan los derechos de los usuarios.",
+        "explicacion": "Incorrecta. La ley fija una actualización anual, que no depende de los cambios normativos, y exige que la carta especifique los derechos de los usuarios (art. 7, num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Dejarla en la intranet, pero renovarla cada año e incluir en ella el procedimiento para presentar quejas.",
+        "explicacion": "Incorrecta. Una carta que solo ven los servidores no es visible para los usuarios, como exige el art. 7, num. 5. Además, lo que debe especificar son todos los derechos de los usuarios y los medios para garantizarlos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la carta es de 2022, solo está en la intranet y no menciona los derechos de los usuarios. Regla: el art. 7, num. 5, del CPACA obliga a expedir, hacer visible y actualizar anualmente una carta de trato digno que especifique todos los derechos de los usuarios y los medios para garantizarlos. Conclusión: debe ponerse a la vista del público, actualizarse cada año e incluir los derechos y sus medios de garantía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-ATC-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Prohibición de cobros adicionales por hacer el trámite en línea e incentivos para quienes usan ese canal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 6, par.",
+      "art. 23"
+    ],
+    "texto_fuente": "PARÁGRAFO. Los sujetos obligados en los términos de la presente ley, salvo autorización legal, no podrán incrementar las tarifas o establecer cobros adicionales a los trámites en razón de su realización en línea, so pena de la correspondiente sanción disciplinaria a la que haya lugar. [...] Los ciudadanos que realicen los trámites en línea podrán recibir un incentivo o valor agregado, que deberá ser fijado por la entidad responsable del trámite mediante acto administrativo.",
+    "pregunta": "La secretaría de planeación de un municipio habilitó en su sede electrónica la expedición del certificado de uso del suelo, que cuesta $25.000 en la ventanilla. En el comité directivo se discuten dos propuestas. El secretario de hacienda propone cobrar $5.000 adicionales a quienes lo pidan en línea, para recuperar lo invertido en la plataforma. La jefa de atención al ciudadano propone, en cambio, enviar el certificado impreso a domicilio, sin costo, a quienes lo tramiten en línea. Ninguna ley autoriza a la entidad a cobrar ese valor adicional. ¿Qué puede adoptar la entidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el envío a domicilio, porque la entidad puede fijar ese beneficio para quienes usen el canal virtual.",
+        "explicacion": "Correcta. Salvo autorización legal, está prohibido incrementar las tarifas o establecer cobros adicionales por realizar el trámite en línea (art. 6, par.). En cambio, quienes usan ese canal pueden recibir un incentivo o valor agregado, que la entidad fija mediante acto administrativo (art. 23)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el cobro adicional, con tal de que su valor no supere lo que realmente costó la plataforma en línea.",
+        "explicacion": "Incorrecta. La prohibición de cobros adicionales por la realización en línea no depende del costo de la plataforma: solo una autorización legal lo permitiría, y aquí no existe (art. 6, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Las dos propuestas, porque ambas ayudan a financiar el canal virtual y a promover que la gente lo use.",
+        "explicacion": "Incorrecta. El envío a domicilio es un incentivo permitido (art. 23), pero el cobro adicional está prohibido sin autorización legal, so pena de sanción disciplinaria (art. 6, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna de las dos, porque el trámite debe costar lo mismo y dar los mismos beneficios en todos los canales.",
+        "explicacion": "Incorrecta. La ley sí permite dar un incentivo o valor agregado a quienes hacen el trámite en línea (art. 23); lo prohibido es cobrar más por usar ese canal (art. 6, par.)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se propone cobrar $5.000 adicionales por el trámite en línea, sin ley que lo autorice, y enviar gratis el certificado a quienes usen ese canal. Regla: el par. del art. 6 de la Ley 2052 prohíbe, salvo autorización legal, incrementar tarifas o establecer cobros adicionales por la realización en línea; el art. 23 permite dar un incentivo o valor agregado a quienes hacen trámites en línea, fijado por la entidad mediante acto administrativo. Conclusión: solo puede adoptar el envío a domicilio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-ATC-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Plazo para actualizar el SUIT tras eliminar un requisito y prohibición de seguir exigiéndolo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2052 de 2020 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 19, inc. 2 (Ley 2052 de 2020)",
+      "art. 4 (Ley 2052 de 2020)",
+      "art. 9, num. 5 (Ley 1437 de 2011)"
+    ],
+    "texto_fuente": "Los sujetos obligados en los términos de la presente Ley deberán revisar, cada seis (6) meses, que los trámites cumplan con los lineamientos y criterios fijados por la Política de Racionalización de Trámites y demás normas que regulen la materia. [...] El contenido de la información registrada en el SUIT es responsabilidad de cada una de las entidades. Toda actualización de la información del trámite deberá llevarse a cabo dentro de los tres (3) días siguientes a la expedición del acto administrativo correspondiente. [...] 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política.",
+    "pregunta": "El lunes 2 de marzo de 2026, el director de una entidad del orden nacional expidió y publicó una resolución que eliminó, como requisito de un trámite de inscripción, la copia de un recibo de servicio público. El miércoles 4 de marzo, una ciudadana llega a inscribirse sin ese recibo. La servidora de la ventanilla se lo exige, porque el Sistema Único de Información de Trámites (SUIT) todavía lo muestra, y el jefe de planeación le explica a la ciudadana que el SUIT se actualizará en la próxima revisión de trámites, que la entidad hace cada seis meses. ¿Qué es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La servidora podía exigir el recibo mientras el SUIT lo muestre, y el SUIT puede actualizarse en la revisión semestral.",
+        "explicacion": "Incorrecta. Desde la resolución, el recibo dejó de ser un documento previsto en la norma del trámite, y exigirlo está prohibido (art. 9, num. 5, CPACA). Además, la actualización del SUIT tiene un plazo propio de tres días (art. 19, Ley 2052); la revisión semestral del art. 4 es otra obligación."
+      },
+      {
+        "id": "B",
+        "texto": "La servidora no podía exigir el recibo, y la entidad debía actualizar el SUIT a más tardar tres días después.",
+        "explicacion": "Correcta. Eliminado el requisito, exigirlo es pedir un documento no previsto por la norma aplicable (art. 9, num. 5, CPACA), aunque el SUIT siga desactualizado. Y la entidad, responsable del contenido del SUIT, debe actualizarlo dentro de los tres días siguientes a la expedición del acto (art. 19, Ley 2052)."
+      },
+      {
+        "id": "C",
+        "texto": "La servidora no podía exigir el recibo, y el SUIT puede actualizarse en la revisión semestral de los trámites.",
+        "explicacion": "Incorrecta. Acierta en que no podía exigirse el recibo, pero la actualización del SUIT debe hacerse dentro de los tres días siguientes a la expedición del acto (art. 19, Ley 2052), no en la revisión semestral de los trámites (art. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "La servidora podía exigir el recibo mientras el SUIT lo muestre, y la entidad debía actualizarlo en esos tres días.",
+        "explicacion": "Incorrecta. Acierta en el plazo de tres días para actualizar el SUIT (art. 19, Ley 2052), pero un desfase del sistema no autoriza a exigir un requisito que la norma ya eliminó (art. 9, num. 5, CPACA)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la resolución que eliminó el requisito se expidió el 2 de marzo y el 4 de marzo el SUIT aún lo mostraba. Regla: el art. 9, num. 5, del CPACA prohíbe exigir documentos no previstos por las normas aplicables; el art. 19 de la Ley 2052 hace a cada entidad responsable del contenido del SUIT y le ordena actualizarlo dentro de los tres días siguientes a la expedición del acto; la revisión semestral del art. 4 es otra obligación. Conclusión: no podía exigir el recibo y el SUIT debe actualizarse en tres días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-ATC-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Dependencia de relación con el ciudadano: municipios obligados y nivel del responsable",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 17"
+    ],
+    "texto_fuente": "En la Nación, en los Departamentos, Distritos y Municipios con población superior a 100.000 habitantes, deberán crear dentro de su planta de personal existente una dependencia o entidad única de relación con el ciudadano que se encargará de liderar al interior de la entidad la implementación de las políticas que incidan en la relación Estado Ciudadano definidas por el Departamento Administrativo de la Función Pública, [...] El servidor público responsable de dicha dependencia o entidad, deberá ser del nivel directivo.",
+    "pregunta": "Las alcaldías de dos municipios revisan sus obligaciones frente a la Ley 2052 de 2020, de racionalización de trámites. Altamira tiene 85.000 habitantes y Bellavista, 140.000. Ambas evalúan organizar, con los cargos que ya tienen en su planta, una oficina de relación con el ciudadano que lidere internamente las políticas de servicio definidas por la Función Pública. ¿Qué exige la ley?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ambos municipios la organicen, y que quien la dirija sea un servidor del nivel profesional.",
+        "explicacion": "Incorrecta. La obligación es para los municipios con más de 100.000 habitantes, así que no cobija a Altamira, y el responsable debe ser del nivel directivo, no profesional (art. 17)."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo Bellavista la organice, y que quien la dirija sea un servidor del nivel directivo.",
+        "explicacion": "Correcta. Entre los municipios, solo los de población superior a 100.000 habitantes deben crear, con su planta existente, la dependencia de relación con el ciudadano, y su responsable debe ser del nivel directivo (art. 17). Bellavista supera ese umbral; Altamira no."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo Bellavista la organice, y que quien la dirija sea un servidor del nivel asesor.",
+        "explicacion": "Incorrecta. Acierta en que solo Bellavista está obligada, pero el art. 17 exige que el responsable sea del nivel directivo, no del asesor."
+      },
+      {
+        "id": "D",
+        "texto": "Que ambos municipios la organicen, y que quien la dirija sea un servidor del nivel directivo.",
+        "explicacion": "Incorrecta. Acierta en el nivel directivo, pero Altamira, con 85.000 habitantes, no supera el umbral de 100.000 que fija el art. 17 para los municipios."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Altamira tiene 85.000 habitantes y Bellavista, 140.000. Regla: el art. 17 de la Ley 2052 obliga a la Nación, a los departamentos, a los distritos y a los municipios con población superior a 100.000 habitantes a crear, dentro de su planta existente, una dependencia única de relación con el ciudadano, cuyo responsable debe ser del nivel directivo. Conclusión: solo Bellavista está obligada, y quien dirija la oficina debe ser del nivel directivo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ATC-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Trato irrespetuoso del ciudadano y petición respetuosa: el incumplimiento de sus deberes no permite desconocer su derecho",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 6, num. 4 y par.",
+      "art. 9, num. 1",
+      "art. 19, inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "4. Observar un trato respetuoso con los servidores públicos. PARÁGRAFO. El incumplimiento de estos deberes no podrá ser invocado por la administración como pretexto para desconocer el derecho reclamado por el particular. Empero podrá dar lugar a las sanciones penales, disciplinarias o de policía que sean del caso según la ley. [...] 1. Negarse a recibir las peticiones o a expedir constancias sobre las mismas. [...] Toda petición debe ser respetuosa so pena de rechazo.",
+    "pregunta": "En la oficina de atención de una alcaldía, un ciudadano llega molesto porque nadie le ha explicado un cobro de alumbrado público. Le grita a la servidora, la llama incompetente y golpea el mostrador. Después le entrega un escrito, redactado en términos respetuosos, en el que pide que le expliquen cómo se liquidó ese cobro. La servidora se niega a recibirlo y le dice que, por su comportamiento, la entidad no tramitará la solicitud. ¿Qué es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Podía rechazarlo, porque el ciudadano lo presentó en medio de agresiones y toda petición debe ser respetuosa.",
+        "explicacion": "Incorrecta. La exigencia de respeto del art. 19 se refiere a la petición, y el escrito es respetuoso. El trato del ciudadano es un deber suyo, cuyo incumplimiento no puede invocarse para desconocer su derecho (art. 6, par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Debía recibirlo y tramitarlo, y el trato que recibió la servidora no puede dar lugar a sanciones contra él.",
+        "explicacion": "Incorrecta. Acierta en que debía recibir y tramitar el escrito, pero el incumplimiento del deber de trato respetuoso, aunque no permite desconocer el derecho reclamado, sí puede dar lugar a las sanciones penales, disciplinarias o de policía que sean del caso según la ley (art. 6, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Podía no recibirlo en ese momento, con tal de que le diera constancia y le indicara otro canal para radicarlo.",
+        "explicacion": "Incorrecta. Las autoridades tienen prohibido negarse a recibir las peticiones (art. 9, num. 1). Expedir una constancia de la negativa o remitir al ciudadano a otro canal no subsana esa negativa."
+      },
+      {
+        "id": "D",
+        "texto": "Debía recibirlo y tramitarlo, y el mal trato puede dar lugar, por separado, a las sanciones que fije la ley.",
+        "explicacion": "Correcta. El ciudadano incumplió su deber de trato respetuoso (art. 6, num. 4), pero ese incumplimiento no puede invocarse para desconocer su derecho, aunque puede dar lugar a sanciones penales, disciplinarias o de policía (art. 6, par.). Como el escrito es respetuoso, no cabe rechazarlo (art. 19) y debe recibirse (art. 9, num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el ciudadano trató mal a la servidora, pero su escrito es respetuoso. Regla: el art. 6 del CPACA impone a las personas el deber de trato respetuoso con los servidores (num. 4), pero su incumplimiento no puede invocarse para desconocer el derecho reclamado, sin perjuicio de sanciones penales, disciplinarias o de policía (par.). El rechazo del art. 19 es para peticiones irrespetuosas, y el art. 9, num. 1, prohíbe negarse a recibirlas. Conclusión: debía recibir y tramitar el escrito.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Trámite preferente de la petición que presenta un periodista para el ejercicio de su actividad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 20 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 5, num. 6"
+    ],
+    "texto_fuente": "6. Recibir atención especial y preferente si se trata de personas en situación de discapacidad, niños, niñas, adolescentes, mujeres gestantes o adultos mayores, y en general de personas en estado de indefensión o de debilidad manifiesta de conformidad con el artículo 13 de la Constitución Política. [...] Las autoridades darán atención prioritaria a las peticiones de reconocimiento de un derecho fundamental cuando deban ser resueltas para evitar un perjuicio irremediable al peticionario, quien deberá probar sumariamente la titularidad del derecho y el riesgo del perjuicio invocado. [...] Si la petición la realiza un periodista, para el ejercicio de su actividad, se tramitará preferencialmente.",
+    "pregunta": "Un periodista de un diario regional radica por el formulario web de una gobernación una petición en la que, para un reportaje que prepara, pide el número de quejas recibidas en el último año contra el servicio de transporte escolar. La oficina de atención al ciudadano reparte todas las peticiones a las dependencias en estricto orden de llegada, y hay 120 radicadas antes que la suya. ¿Cómo debe tramitarse esta petición?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En el orden de llegada, porque el trato preferente se reserva a niños, gestantes, adultos mayores y personas con discapacidad.",
+        "explicacion": "Incorrecta. La atención especial y preferente del art. 5, num. 6, no es la única: el art. 20 ordena tramitar preferencialmente la petición que realiza un periodista para el ejercicio de su actividad."
+      },
+      {
+        "id": "B",
+        "texto": "Antes que las demás, si el solicitante prueba en forma sumaria que la demora le causaría un perjuicio irremediable.",
+        "explicacion": "Incorrecta. La prueba sumaria del perjuicio irremediable es una condición de la atención prioritaria por riesgo para un derecho fundamental (art. 20, inc. 1); el trámite preferente de la petición de un periodista no la exige."
+      },
+      {
+        "id": "C",
+        "texto": "Antes que las demás, en razón del oficio de quien la formula y del uso profesional que dará a los datos pedidos.",
+        "explicacion": "Correcta. Si la petición la realiza un periodista para el ejercicio de su actividad, se tramitará preferencialmente (art. 20, inc. 2). Los datos son para un reportaje, así que la petición debe pasar antes que las pendientes."
+      },
+      {
+        "id": "D",
+        "texto": "En el orden de llegada, porque las solicitudes de los medios de comunicación deben canalizarse por la oficina de prensa.",
+        "explicacion": "Incorrecta. Ninguna norma obliga a los periodistas a pedir información por medio de la oficina de prensa. Su petición se recibe por los canales ordinarios y se tramita de forma preferente (art. 20, inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la petición la presenta un periodista para un reportaje. Regla: el art. 20 del CPACA (sustituido por la Ley 1755) ordena tramitar preferencialmente la petición que realiza un periodista para el ejercicio de su actividad, sin exigir la prueba del perjuicio irremediable, que es propia de la atención prioritaria del inciso primero; esa preferencia se suma a la atención preferente del art. 5, num. 6. Conclusión: debe tramitarse antes que las peticiones pendientes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Orientación al ciudadano que quiere quejarse de un servidor de la entidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011 y Ley 1474 de 2011",
+    "articulos": [
+      "art. 5, num. 7 (Ley 1437 de 2011)",
+      "art. 7, num. 7 (Ley 1437 de 2011)",
+      "art. 8, num. 7 (Ley 1437 de 2011)",
+      "art. 76, inc. 1 (Ley 1474 de 2011)"
+    ],
+    "texto_fuente": "7. Exigir el cumplimiento de las responsabilidades de los servidores públicos y de los particulares que cumplan funciones administrativas. [...] 7. Atribuir a dependencias especializadas la función de atender quejas y reclamos, y dar orientación al público. [...] 7. La dependencia, y el cargo o nombre del servidor a quien debe dirigirse en caso de una queja o reclamo. [...] En toda entidad pública, deberá existir por lo menos una dependencia encargada de recibir, tramitar y resolver las quejas, sugerencias y reclamos que los ciudadanos formulen, y que se relacionen con el cumplimiento de la misión de la entidad.",
+    "pregunta": "En el centro de atención de una gobernación, un ciudadano le dice al orientador de la entrada que quiere quejarse porque el servidor de la ventanilla 4 lo trató de forma despectiva, y le pregunta dónde puede hacerlo. ¿Cómo debe proceder el orientador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Orientarlo hacia la dependencia de la gobernación que atiende las quejas e indicarle a quién debe dirigir la suya.",
+        "explicacion": "Correcta. Toda persona puede exigir el cumplimiento de las responsabilidades de los servidores (art. 5, num. 7, CPACA); la entidad debe tener una dependencia que reciba, tramite y resuelva las quejas (art. 76, Ley 1474; art. 7, num. 7, CPACA) e informar la dependencia y el cargo o nombre del servidor a quien debe dirigirse la queja (art. 8, num. 7, CPACA)."
+      },
+      {
+        "id": "B",
+        "texto": "Remitirlo a la Procuraduría, porque solo los órganos de control tramitan las quejas por la conducta de un servidor.",
+        "explicacion": "Incorrecta. La gobernación debe tener una dependencia encargada de recibir, tramitar y resolver las quejas de los ciudadanos (art. 76, Ley 1474) e informar a quién deben dirigirse (art. 8, num. 7, CPACA). Remitir al ciudadano a un órgano de control desconoce ese deber de la propia entidad."
+      },
+      {
+        "id": "C",
+        "texto": "Llevarlo ante el jefe inmediato del servidor de la ventanilla 4, que es a quien le corresponde resolver la queja.",
+        "explicacion": "Incorrecta. Las quejas se atienden en las dependencias especializadas que la entidad debe tener para ello (art. 7, num. 7, CPACA; art. 76, Ley 1474), no en la jefatura del servidor señalado."
+      },
+      {
+        "id": "D",
+        "texto": "Tomar sus datos y pedirle al servidor de la ventanilla 4 que lo atienda de nuevo y le ofrezca disculpas.",
+        "explicacion": "Incorrecta. Una disculpa del servidor no sustituye la queja: el ciudadano tiene derecho a exigir el cumplimiento de las responsabilidades de los servidores públicos (art. 5, num. 7, CPACA), y la entidad debe recibir, tramitar y resolver las quejas (art. 76, Ley 1474)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el ciudadano quiere quejarse del trato de un servidor de la gobernación y pide orientación. Regla: toda persona puede exigir el cumplimiento de las responsabilidades de los servidores (art. 5, num. 7, CPACA); cada entidad debe tener una dependencia que reciba, tramite y resuelva las quejas (art. 76, Ley 1474; art. 7, num. 7, CPACA) e informar la dependencia y el cargo o servidor al que deben dirigirse (art. 8, num. 7). Conclusión: debe orientarlo hacia esa dependencia, no remitirlo a otra entidad ni sustituir la queja.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ATC-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Accesibilidad e inclusión",
+    "subtema": "Criterio diferencial de accesibilidad: divulgación en lenguas de grupos étnicos a solicitud de sus autoridades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 8"
+    ],
+    "texto_fuente": "Con el objeto de facilitar que las poblaciones específicas accedan a la información que particularmente las afecte, los sujetos obligados, a solicitud de las autoridades de las comunidades, divulgarán la información pública en diversos idiomas y lenguas y elaborarán formatos alternativos comprensibles para dichos grupos. Deberá asegurarse el acceso a esa información a los distintos grupos étnicos y culturales del país y en especial se adecuarán los medios de comunicación para que faciliten el acceso a las personas que se encuentran en situación de discapacidad.",
+    "pregunta": "La secretaría de salud de un departamento prepara una jornada de vacunación en un resguardo indígena donde buena parte de la población habla solo su lengua propia. Publicó la información de la jornada en castellano en su sitio web y en carteleras, y grabó cuñas en castellano para la emisora comunitaria. El gobernador del cabildo pide por escrito que esa información se divulgue también en la lengua del resguardo. ¿Qué debe hacer la secretaría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Divulgar los datos de la vacunación en la lengua propia, pues así lo pide la autoridad de la comunidad.",
+        "explicacion": "Correcta. A solicitud de las autoridades de las comunidades, los sujetos obligados deben divulgar la información pública en diversos idiomas y lenguas y elaborar formatos alternativos comprensibles, para que esas poblaciones accedan a la información que las afecta (art. 8). La pidió el gobernador del cabildo y la jornada afecta al resguardo."
+      },
+      {
+        "id": "B",
+        "texto": "Mantener lo hecho, porque las cuñas radiales ya son el formato alternativo comprensible que exige la ley.",
+        "explicacion": "Incorrecta. Las cuñas en castellano no hacen comprensible la información para quienes solo hablan su lengua. Además de elaborar formatos alternativos, la ley ordena divulgar la información en diversos idiomas y lenguas cuando lo piden las autoridades de la comunidad (art. 8)."
+      },
+      {
+        "id": "C",
+        "texto": "Traducirla solo si el cabildo demuestra que la mayoría del resguardo no entiende el castellano hablado.",
+        "explicacion": "Incorrecta. La obligación surge de la solicitud de las autoridades de la comunidad y de que la información la afecte en particular (art. 8). La ley no exige probar que la mayoría de sus miembros desconoce el castellano."
+      },
+      {
+        "id": "D",
+        "texto": "Trasladar la solicitud al Ministerio del Interior, porque a este le corresponde atender a los pueblos indígenas.",
+        "explicacion": "Incorrecta. El deber de divulgar la información en las lenguas de la comunidad recae en los sujetos obligados (art. 8); aquí, en la secretaría de salud, que es la que tiene y debe divulgar la información de la jornada."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la información ya está en castellano, en la web, en carteleras y en audio, pero el gobernador del cabildo pidió divulgarla en la lengua del resguardo, al que afecta la jornada. Regla: el art. 8 de la Ley 1712 (criterio diferencial de accesibilidad) obliga a los sujetos obligados, a solicitud de las autoridades de las comunidades, a divulgar la información pública en diversos idiomas y lenguas y a elaborar formatos alternativos comprensibles para esos grupos. Conclusión: debe divulgarla en la lengua del resguardo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ATC-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Accesibilidad e inclusión",
+    "subtema": "Clases de barreras para las personas con discapacidad: actitudinales, comunicativas y físicas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1618 de 2013",
+    "articulos": [
+      "art. 2, num. 5, lits. a, b y c"
+    ],
+    "texto_fuente": "5. Barreras: Cualquier tipo de obstáculo que impida el ejercicio efectivo de los derechos de las personas con algún tipo de discapacidad. Estas pueden ser: a) Actitudinales: Aquellas conductas, palabras, frases, sentimientos, preconcepciones, estigmas, que impiden u obstaculizan el acceso en condiciones de igualdad de las personas con y/o en situación de discapacidad a los espacios, objetos, servicios y en general a las posibilidades que ofrece la sociedad; b) Comunicativas: Aquellos obstáculos que impiden o dificultan el acceso a la información, a la consulta, al conocimiento y en general, el desarrollo en condiciones de igualdad del proceso comunicativo de las personas con discapacidad a través de cualquier medio o modo de comunicación, incluidas las dificultades en la interacción comunicativa de las personas. c) Físicas: Aquellos obstáculos materiales, tangibles o construidos que impiden o dificultan el acceso y el uso de espacios, objetos y servicios de carácter público y privado, en condiciones de igualdad por parte de las personas con discapacidad.",
+    "pregunta": "En una visita al punto de atención de una alcaldía, la oficina de control interno registra tres situaciones: 1) al ver llegar a un usuario con discapacidad intelectual, un servidor comenta que «esas personas no deberían hacer trámites solas» y le pide volver con un familiar; 2) el formulario de inscripción del sitio web no puede leerse con los programas lectores de pantalla que usan las personas ciegas; 3) el mostrador de radicación mide 1,20 metros de alto, y un usuario en silla de ruedas no alcanza a firmar. Según la Ley 1618 de 2013, ¿qué clase de barrera es cada situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1) comunicativa; 2) comunicativa; 3) física.",
+        "explicacion": "Incorrecta. Acierta en 2 y 3, pero el comentario del servidor refleja una preconcepción o un estigma sobre la persona, que la ley define como barrera actitudinal (lit. a), no comunicativa."
+      },
+      {
+        "id": "B",
+        "texto": "1) actitudinal; 2) física; 3) física.",
+        "explicacion": "Incorrecta. Acierta en 1 y 3, pero un formulario web inaccesible impide el acceso a la información a través de un medio de comunicación: es una barrera comunicativa (lit. b). Las físicas son obstáculos materiales, tangibles o construidos (lit. c)."
+      },
+      {
+        "id": "C",
+        "texto": "1) comunicativa; 2) física; 3) física.",
+        "explicacion": "Incorrecta. Solo acierta en 3. El comentario es una barrera actitudinal (lit. a) y el formulario inaccesible, una comunicativa (lit. b)."
+      },
+      {
+        "id": "D",
+        "texto": "1) actitudinal; 2) comunicativa; 3) física.",
+        "explicacion": "Correcta. El comentario del servidor es una preconcepción o estigma que obstaculiza el acceso: barrera actitudinal (lit. a). El formulario que no leen los lectores de pantalla impide el acceso a la información por un medio de comunicación: comunicativa (lit. b). El mostrador alto es un obstáculo construido: física (lit. c)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay un comentario estigmatizante, un formulario web inaccesible para lectores de pantalla y un mostrador demasiado alto. Regla: el art. 2, num. 5, de la Ley 1618 define las barreras actitudinales (conductas, palabras, preconcepciones, estigmas), las comunicativas (obstáculos para acceder a la información a través de cualquier medio de comunicación) y las físicas (obstáculos materiales, tangibles o construidos). Conclusión: 1) actitudinal, 2) comunicativa y 3) física.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1618_2013.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Gratuidad de las consultas de acceso a información pública con tarifa anterior a la Ley 1712 y costo de las copias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2052 de 2020 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 15 (Ley 2052 de 2020)",
+      "art. 29 (Ley 1437 de 2011, sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Los trámites que hayan sido establecidos o reglamentados con anterioridad a la expedición de la ley de Transparencia y Acceso a la Información Pública, sobre los cuales se tenga alguna tarifa asociada y cumplan con las características de consulta de acceso a información pública, deberán ser gratuitos de inmediato, salvo que se trate de normas de carácter especial, asociados al régimen mercantil, laboral, profesional y de seguridad social. [...] En ningún caso el precio de las copias podrá exceder el valor de la reproducción. Los costos de la expedición de las copias correrán por cuenta del interesado en obtenerlas.",
+    "pregunta": "Desde 2012, por un acuerdo municipal, una alcaldía cobra $12.000 por la consulta del inventario de bienes inmuebles del municipio, que consiste en permitir a cualquier persona revisar ese inventario en la oficina de bienes. En octubre de 2026, una ciudadana pide hacer la consulta y, además, una copia impresa de 25 hojas del inventario. Reproducir cada hoja le cuesta a la entidad $300, valor que no supera el precio comercial de referencia. ¿Cuánto debe cobrarle la alcaldía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$19.500, que suman la tarifa de la consulta y el valor de reproducir las 25 hojas pedidas.",
+        "explicacion": "Incorrecta. Suma una tarifa que ya no puede cobrarse: la consulta, creada antes de la ley de transparencia (Ley 1712 de 2014), es de acceso a información pública y debe ser gratuita de inmediato (art. 15, Ley 2052)."
+      },
+      {
+        "id": "B",
+        "texto": "$12.000, que es la tarifa de la consulta, en la cual se entiende incluido el valor de las copias.",
+        "explicacion": "Incorrecta. La tarifa de la consulta debe eliminarse (art. 15, Ley 2052), y las copias se cobran aparte, por cuenta del interesado y por su valor de reproducción (art. 29, CPACA)."
+      },
+      {
+        "id": "C",
+        "texto": "$7.500, que corresponden al valor de reproducir las 25 hojas, sin cobro alguno por la consulta.",
+        "explicacion": "Correcta. La consulta se creó en 2012, antes de la ley de transparencia (2014), tiene tarifa y es una consulta de acceso a información pública, así que debe ser gratuita (art. 15, Ley 2052). Las copias corren por cuenta del interesado, sin exceder el valor de la reproducción (art. 29, CPACA): 25 × $300 = $7.500."
+      },
+      {
+        "id": "D",
+        "texto": "$0, porque tanto la consulta como las copias de la información pública deben entregarse gratis.",
+        "explicacion": "Incorrecta. La gratuidad cobija la consulta, pero los costos de expedición de las copias corren por cuenta del interesado, siempre que no excedan el valor de la reproducción (art. 29, CPACA)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la consulta del inventario, que es información pública, tiene tarifa desde 2012, y la ciudadana pide además 25 copias a $300 cada una. Regla: el art. 15 de la Ley 2052 ordena que los trámites con tarifa, creados antes de la ley de transparencia y que sean consultas de acceso a información pública, sean gratuitos de inmediato; el art. 29 del CPACA pone las copias a cargo del interesado, sin exceder el valor de la reproducción. Cálculo: 25 × $300 = $7.500. Conclusión: debe cobrar $7.500.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  }
+]

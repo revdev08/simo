@@ -247,7 +247,7 @@ export default function SimulacroGratisPage() {
                 </div>
 
                 {/* Question */}
-                <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white leading-relaxed mb-7">
+                <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white leading-relaxed mb-7 whitespace-pre-line">
                   {current.pregunta}
                 </h2>
 

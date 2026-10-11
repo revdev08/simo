@@ -5,6 +5,7 @@ import { BookOpen, CheckCircle, Play, ArrowLeft, ChevronRight, Sparkles, Award, 
 import Link from 'next/link'
 import { MODULE_SECTIONS, NIVELES, isJuicioSituacional, sectionOf, type NivelId, type Question, type SectionId } from '@/lib/question-types'
 import ReportQuestion from './ReportQuestion'
+import QuestionText from './QuestionText'
 import SimulacroSession, { clearSimulacroState, formatDuration, loadSimulacroState, type SimulacroState } from './SimulacroSession'
 import { clock, saveProgress, sendAttempt, type StudyMode } from './attempts'
 
@@ -664,9 +665,7 @@ function StudySession({
 
         {/* Question Body */}
         <div className="p-6 sm:p-10 space-y-8">
-          <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white leading-relaxed">
-            {question.pregunta}
-          </h3>
+          <QuestionText text={question.pregunta} />
 
           <div className="space-y-4">
             {question.opciones.map(opt => {
