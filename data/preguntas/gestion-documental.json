@@ -1515,5 +1515,1101 @@
       "fecha": "2026-10-10",
       "p_estimado": 70
     }
+  },
+  {
+    "id": "TC-GD-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Transferencias documentales",
+    "subtema": "Selección previa y expedientes híbridos en la transferencia secundaria",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.11.1, nums. 3, 4 y 6",
+      "art. 2.8.2.9.3 (definición de selección documental)"
+    ],
+    "texto_fuente": "3. La entidad que transfiere los documentos deberá entregar un informe técnico detallando los procesos técnicos de valoración y selección aplicados a los documentos a transferir. 4. Los documentos cuya transferencia se vaya a llevar a cabo, deberán cumplir con criterios de organización archivística, siguiendo el principio de procedencia, orden original, descripción e integridad de los fondos. En todo caso, las transferencias se deben llevar a cabo con estricta aplicación de las tablas de retención documental por series documentales, y deben incluir tanto los expedientes físicos, como electrónicos e híbridos. [...] 6. La documentación solo podrá ser transferida y se incorporará al acervo documental del Archivo General de la Nación, del Archivo General Territorial o del Archivo General de los organismos de las ramas Legislativa, Judicial y los órganos autónomos y de control, cuando sobre la misma se verifiquen además de lo señalado en los literales (a), (b) y (e) del numeral 5) del presente artículo, las etapas de valoración, selección y organización archivísticas. [...] Selección documental: Proceso mediante el cual se decide la disposición final de los documentos de acuerdo con lo establecido en la tabla de retención documental y se determina con base en una muestra estadística aquellos documentos de carácter representativo para su conservación permanente.",
+    "pregunta": "Valeria, profesional del archivo central de una gobernación, revisa las cajas que un técnico alistó para la transferencia secundaria al Archivo General del Departamento y encuentra dos situaciones. Primera: de la serie 'Contratos de obra pública', cuya disposición final en la TRD es la selección, el técnico empacó todos los expedientes que cumplieron su tiempo, sin escoger la muestra, porque cree que el Archivo General la hará cuando los reciba. Segunda: en la serie 'Proyectos de inversión', de conservación permanente, cada expediente tiene una parte en papel y otra en el sistema de gestión de documentos electrónicos, en formatos que el Archivo General puede leer; el técnico empacó solo la parte en papel y dejó la electrónica en el servidor de la gobernación. ¿Qué debe ordenar Valeria antes de la entrega?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar todos los contratos para que el Archivo General aplique la selección, e incluir la parte electrónica de los expedientes de proyectos.",
+        "explicacion": "Incorrecta. Acierta en incluir la parte electrónica, pero traslada la selección al archivo que recibe. La entidad que transfiere debe aplicarla y documentarla en su informe técnico (num. 3), y la documentación solo se incorpora cuando la selección ya está verificada (num. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicar antes la selección a los contratos, para entregar solo la muestra que se conserva, e incluir la parte electrónica de los proyectos.",
+        "explicacion": "Correcta. La documentación solo se transfiere y se incorpora al acervo del archivo receptor cuando se verificaron la valoración, la selección y la organización (num. 6), y quien transfiere entrega un informe técnico de la selección aplicada (num. 3): la muestra se escoge antes. Además, la transferencia incluye los expedientes físicos, electrónicos e híbridos (num. 4), así que la parte electrónica de cada proyecto va con su parte en papel."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicar antes la selección a los contratos, para entregar solo la muestra que se conserva, y dejar en el servidor la parte electrónica de los proyectos.",
+        "explicacion": "Incorrecta. Aplica bien la selección, pero parte los expedientes híbridos. La transferencia debe incluir tanto los expedientes físicos como los electrónicos e híbridos (num. 4), de modo que cada expediente se entrega completo, con lo que está en el servidor."
+      },
+      {
+        "id": "D",
+        "texto": "Entregar todos los contratos para que el Archivo General aplique la selección, y dejar en el servidor la parte electrónica de los proyectos.",
+        "explicacion": "Incorrecta. Suma los dos errores: deja la selección en manos del archivo receptor, cuando debe estar aplicada antes de transferir (nums. 3 y 6), y separa la parte electrónica de los expedientes híbridos, que también debe transferirse (num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los contratos tienen selección como disposición final y no se escogió la muestra; los expedientes de proyectos son híbridos y solo se empacó el papel. Regla: la documentación solo se transfiere cuando se verifican la valoración, la selección y la organización, con informe técnico de quien transfiere (art. 2.8.2.11.1, nums. 3 y 6, del Decreto 1080), y se transfieren expedientes físicos, electrónicos e híbridos (num. 4). Conclusión: aplicar antes la selección e incluir la parte electrónica.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-GD-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Archivos de entidades que se suprimen, fusionan o liquidan",
+    "subtema": "Datos mínimos del inventario de entrega y cotejo antes de firmar el acta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.7.2.8, par. 1",
+      "art. 2.8.10.6"
+    ],
+    "texto_fuente": "PARÁGRAFO 1. En los inventarios documentales deberán identificarse los datos mínimos para la recuperación y ubicación de la información, tales como: Nombre de la oficina productora, serie o asunto, fechas extremas (identificando mínimo el año), unidad de conservación (identificar número caja y número de carpetas y cantidad de carpetas por caja) y soporte. [...] En todo caso, previo a la suscripción del acta, se cotejará la documentación y los archivos contra los inventarios, por quienes intervienen en este proceso; dicho inventario formará parte integral del acta, la cual se conservará de manera permanente en los archivos de la entidad que recibe los documentos.",
+    "pregunta": "El instituto municipal de turismo de un municipio se fusionó con la Secretaría de Desarrollo Económico, que recibirá sus archivos. Paola, auxiliar de archivo del instituto, elaboró el inventario para la entrega con tres columnas: serie, fechas extremas por año y número de caja. Rodrigo, técnico de la secretaría, propone firmar el acta de entrega el viernes, cuando lleguen las cajas, y revisar durante el mes siguiente que el contenido de cada caja coincida con el inventario, para no retrasar el traslado. ¿Qué ajustes requiere la entrega?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Agregar al inventario la oficina productora, las carpetas de cada caja y el soporte, y firmar el acta el viernes para revisar las cajas el mes siguiente.",
+        "explicacion": "Incorrecta. Completa bien el inventario, pero invierte el orden del cotejo: la documentación se compara con el inventario antes de suscribir el acta, no después (art. 2.8.10.6)."
+      },
+      {
+        "id": "B",
+        "texto": "Mantener el inventario con serie, años y caja, que bastan para ubicar los documentos, y revisar las cajas contra él antes de firmar el acta.",
+        "explicacion": "Incorrecta. Acierta en cotejar antes de firmar, pero el inventario no tiene los datos mínimos: le faltan la oficina productora, el número y la cantidad de carpetas por caja y el soporte (art. 2.8.7.2.8, par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener el inventario con serie, años y caja, que bastan para ubicar los documentos, y firmar el acta el viernes para revisar las cajas después.",
+        "explicacion": "Incorrecta. Suma los dos errores: deja el inventario sin varios de los datos mínimos (art. 2.8.7.2.8, par. 1) y firma el acta antes del cotejo, que debe hacerse previamente (art. 2.8.10.6)."
+      },
+      {
+        "id": "D",
+        "texto": "Agregar al inventario la oficina productora, las carpetas de cada caja y el soporte, y revisar las cajas contra el inventario antes de firmar el acta.",
+        "explicacion": "Correcta. El inventario de entrega debe identificar, como mínimo, la oficina productora, la serie, las fechas extremas, la unidad de conservación (número de caja, número de carpetas y cantidad de carpetas por caja) y el soporte (art. 2.8.7.2.8, par. 1). Además, antes de suscribir el acta se coteja la documentación contra el inventario, que hace parte integral del acta (art. 2.8.10.6)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el inventario solo tiene serie, años y caja, y la secretaría quiere firmar el acta antes de revisar las cajas. Regla: el inventario de entrega debe indicar, como mínimo, oficina productora, serie, fechas extremas, unidad de conservación (caja, número y cantidad de carpetas) y soporte (art. 2.8.7.2.8, par. 1, del Decreto 1080), y antes de suscribir el acta se coteja la documentación contra el inventario, que forma parte del acta (art. 2.8.10.6). Conclusión: completar el inventario y cotejar antes de firmar.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-GD-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Comité Interno de Archivo",
+    "subtema": "Miembros con voto, secretario técnico e invitados en las decisiones del comité",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.1.15, nums. 1, 2, 7 y 8"
+    ],
+    "texto_fuente": "1. El funcionario del nivel directivo o ejecutivo del más alto nivel jerárquico de quien dependa de forma inmediata el Archivo de la entidad (Secretario General o Subdirector Administrativo, entre otros), o su delegado, quien lo presidirá; 2. El jefe o responsable del Archivo o del Sistema de Archivos de la entidad, quien actuará como secretario técnico. [...] 7. El Jefe de la Oficina de Control Interno, quien tendrá voz pero no voto, o quien haga sus veces. 8. Podrán asistir como invitados, con voz pero sin voto, funcionarios o particulares que puedan hacer aportes en los asuntos tratados en el Comité (funcionario de otras dependencias de la entidad, especialistas, historiadores o usuarios externos entre otros).",
+    "pregunta": "Felipe, técnico de gestión documental de una alcaldía, apoya la secretaría técnica del Comité Interno de Archivo y debe redactar las actas de dos sesiones. La alcaldía mantiene conformado ese comité como instancia propia, distinta del Comité Institucional de Gestión y Desempeño. Su reglamento dispone que el jefe de archivo vota como miembro, aunque actúe como secretario técnico, y que las decisiones se adoptan con el voto favorable de más de la mitad de los miembros con derecho a voto que asistan. En marzo, para aprobar el Programa de Gestión Documental, asistieron el secretario general, que preside; el jefe de archivo; la jefa jurídica; el jefe de sistemas; la jefa de control interno, y un historiador invitado. Votaron a favor el secretario general, el jefe de archivo y el historiador; la jefa jurídica, el jefe de sistemas y la jefa de control interno votaron en contra. En mayo, para aprobar tres formatos nuevos, asistieron el secretario general, el jefe de archivo, la jefa jurídica, el jefe de planeación, la responsable del sistema integrado de gestión, la jefa de control interno y, como invitado, el jefe de la dependencia que pidió los formatos. Votaron a favor el secretario general, el jefe de archivo, la responsable del sistema integrado de gestión y la jefa de control interno; la jefa jurídica, el jefe de planeación y el invitado votaron en contra. ¿Qué debe constar en las actas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En marzo, el programa no se aprobó, con tres votos de seis; en mayo, los formatos se aprobaron, con cuatro votos de siete.",
+        "explicacion": "Incorrecta. Cuenta como votantes a todos los asistentes. La jefa de control interno y los invitados tienen voz pero no voto (nums. 7 y 8): en marzo los votos válidos a favor eran dos de cuatro, y en mayo, tres de cinco."
+      },
+      {
+        "id": "B",
+        "texto": "En marzo, el programa no se aprobó, con dos votos de cinco; en mayo, los formatos se aprobaron, con cuatro votos de seis.",
+        "explicacion": "Incorrecta. Excluye bien a los invitados, que tienen voz pero no voto (num. 8), pero cuenta a la jefa de control interno, que tampoco vota (num. 7). Ni su voto en contra de marzo ni su voto a favor de mayo podían contarse: los resultados válidos eran dos de cuatro y tres de cinco."
+      },
+      {
+        "id": "C",
+        "texto": "En marzo, el programa no se aprobó, con dos votos de cuatro; en mayo, los formatos se aprobaron, con tres votos de cinco.",
+        "explicacion": "Correcta. Votan los miembros del comité, incluido el jefe de archivo, a quien el reglamento reconoce voto aunque actúe como secretario técnico (num. 2); la jefa de control interno y los invitados tienen voz pero no voto (nums. 7 y 8). En marzo votaron válidamente cuatro miembros y dos apoyaron el programa, que no es más de la mitad; en mayo votaron cinco y tres apoyaron los formatos."
+      },
+      {
+        "id": "D",
+        "texto": "En marzo, el programa se aprobó, con tres votos de cinco; en mayo, los formatos no se aprobaron, con tres votos de seis.",
+        "explicacion": "Incorrecta. Excluye bien a la jefa de control interno, que tiene voz pero no voto (num. 7), pero cuenta a los invitados, que tampoco votan (num. 8). En marzo el voto del historiador no podía sumarse, y en mayo el del jefe de la dependencia no podía contarse."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el reglamento reconoce voto al jefe de archivo y exige más de la mitad de los miembros con derecho a voto que asistan, y a las sesiones fueron la jefa de control interno e invitados. Regla: control interno y los invitados tienen voz pero no voto (art. 2.8.2.1.15, nums. 7 y 8, del Decreto 1080). Cálculo: marzo, 2 de 4 (no hay mayoría); mayo, 3 de 5 (sí la hay). Conclusión: el programa no se aprobó y los formatos sí.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-GD-032",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Tablas de retención documental",
+    "subtema": "Quién valora las series, quién aprueba el resultado y evaluación de series comunes por el consejo territorial",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.2.1"
+    ],
+    "texto_fuente": "La Evaluación de Documentos de Archivo deberá ser realizada por la Oficina de Archivo o de Gestión Documental de cada entidad, de acuerdo con lo establecido en la Ley 594 de 2000. El Comité Interno de Archivo de la respectiva entidad es el responsable de aprobar el resultado del proceso de valoración de los documentos de archivo, a partir de agrupaciones documentales en series y sub-series, sean estos físicos o electrónicos y de aprobar las tablas de retención documental o las tablas de valoración documental. Corresponde a los Consejos Territoriales de Archivo llevar a cabo la evaluación de documentos de archivo que sean comunes para todas las entidades públicas de su respectiva jurisdicción, o un sector de este, de conformidad con la normatividad expedida por el Archivo General de la Nación Jorge Palacios Preciado.",
+    "pregunta": "Una alcaldía, que mantiene conformado su Comité Interno de Archivo como instancia propia, va a actualizar su tabla de retención documental. El secretario general propone dos cosas: que cada secretario de despacho valore las series de su dependencia y firme el resultado, para que la tabla llegue lista al Comité Interno de Archivo, y que la alcaldía valore por su cuenta la serie 'Derechos de petición', aunque el Consejo Departamental de Archivos anunció que evaluará esa serie, que producen de la misma forma todas las entidades públicas del departamento. Le pide concepto a usted, profesional de gestión documental. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La valoración la hace la oficina de archivo y el comité aprueba el resultado; la serie común la evalúa el Consejo Departamental de Archivos.",
+        "explicacion": "Correcta. La evaluación de los documentos de archivo la realiza la oficina de archivo o de gestión documental, y el Comité Interno de Archivo aprueba el resultado de la valoración y la tabla. A los Consejos Territoriales de Archivo les corresponde evaluar los documentos comunes a todas las entidades públicas de su jurisdicción, como esta serie (art. 2.8.2.2.1)."
+      },
+      {
+        "id": "B",
+        "texto": "La valoración la hace cada secretario de despacho y el comité aprueba la tabla; la serie común la evalúa el Consejo Departamental de Archivos.",
+        "explicacion": "Incorrecta. Acierta en la serie común, pero la evaluación de los documentos no la hace cada dependencia: la realiza la oficina de archivo o de gestión documental, y su resultado lo aprueba el Comité Interno de Archivo (art. 2.8.2.2.1)."
+      },
+      {
+        "id": "C",
+        "texto": "La valoración la hace la oficina de archivo y el comité aprueba el resultado; la serie común la valora la alcaldía y el consejo solo la convalida.",
+        "explicacion": "Incorrecta. Acierta en la valoración de las series propias, pero desconoce que la evaluación de los documentos comunes a todas las entidades de la jurisdicción le corresponde al Consejo Territorial de Archivos, no a cada entidad por separado (art. 2.8.2.2.1)."
+      },
+      {
+        "id": "D",
+        "texto": "La valoración la hace cada secretario de despacho y el comité aprueba la tabla; la serie común la valora la alcaldía y el consejo solo la convalida.",
+        "explicacion": "Incorrecta. Suma los dos errores: entrega la valoración a cada dependencia, cuando la hace la oficina de archivo, y le quita al Consejo Territorial la evaluación de los documentos comunes de su jurisdicción (art. 2.8.2.2.1)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el secretario general quiere que cada secretario valore sus series y que la alcaldía valore una serie común a todas las entidades del departamento. Regla: la evaluación de los documentos la hace la oficina de archivo o de gestión documental; el Comité Interno de Archivo aprueba el resultado y la tabla, y a los Consejos Territoriales les corresponde evaluar los documentos comunes a las entidades de su jurisdicción (art. 2.8.2.2.1 del Decreto 1080). Conclusión: oficina de archivo, comité y consejo para la serie común.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-GD-033",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Archivos de entidades que se suprimen, fusionen o liquidan",
+    "subtema": "Unidades de conservación para la entrega y conservación de los listados y actas de eliminación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.7.3.7",
+      "art. 2.8.7.2.6, par. 3"
+    ],
+    "texto_fuente": "Solamente se utilizarán unidades de conservación fabricadas en material desacidificado, cuando los documentos tengan valor histórico. En los demás casos, y cuando sea posible y se encuentren en buen estado, se utilizarán las mismas unidades de conservación (cajas y carpetas) de la entidad que hace entrega y/o transferencia de los archivos, para evitar incurrir en costos innecesarios. [...] PARÁGRAFO 3. Los listados de eliminación y las actas harán parte integral de los archivos entregados durante el proceso de liquidación, supresión, fusión o privatización y serán conservados permanentemente.",
+    "pregunta": "Un municipio ordenó liquidar su instituto de vivienda. Durante la liquidación ya se eliminaron, con los trámites del caso, varias subseries que habían cumplido su tiempo de retención. Para preparar la entrega de los archivos, el liquidador propone dos medidas: pasar a cajas y carpetas nuevas de material desacidificado solo la serie 'Acuerdos de junta directiva', que tiene valor histórico, y entregar las series de conservación temporal en las cajas y carpetas que ya tienen, que están en buen estado; y, al cerrar la liquidación, destruir los listados y las actas de eliminación, porque ya habrán cumplido su propósito. Usted, profesional que asesora al liquidador en gestión documental, debe revisar la propuesta. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reempacar todas las series en cajas y carpetas nuevas de material desacidificado, y conservar de forma permanente los listados y las actas de eliminación.",
+        "explicacion": "Incorrecta. Acierta en conservar los listados y las actas (art. 2.8.7.2.6, par. 3), pero corrige lo que estaba bien: el material desacidificado solo se usa para documentos con valor histórico, y en los demás casos se reutilizan las cajas y carpetas en buen estado, para evitar costos innecesarios (art. 2.8.7.3.7)."
+      },
+      {
+        "id": "B",
+        "texto": "Usar unidades desacidificadas solo para la serie histórica, reutilizar las demás y destruir los listados y las actas al cerrar la liquidación.",
+        "explicacion": "Incorrecta. Avala toda la propuesta. Acierta en las unidades de conservación (art. 2.8.7.3.7), pero los listados de eliminación y las actas no se destruyen: hacen parte integral de los archivos entregados y se conservan permanentemente (art. 2.8.7.2.6, par. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Reempacar todas las series en cajas y carpetas nuevas de material desacidificado, y destruir los listados y las actas al cerrar la liquidación.",
+        "explicacion": "Incorrecta. Suma los dos errores: gasta en unidades desacidificadas para series sin valor histórico cuyas cajas están en buen estado (art. 2.8.7.3.7) y destruye los listados y las actas, que deben conservarse permanentemente (art. 2.8.7.2.6, par. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Usar unidades desacidificadas solo para la serie histórica, reutilizar las demás y conservar de forma permanente los listados y las actas de eliminación.",
+        "explicacion": "Correcta. La primera medida es acertada: el material desacidificado se reserva para los documentos con valor histórico, y en los demás casos se usan las mismas cajas y carpetas si están en buen estado (art. 2.8.7.3.7). La segunda no: los listados de eliminación y las actas hacen parte integral de los archivos entregados en la liquidación y se conservan permanentemente (art. 2.8.7.2.6, par. 3)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el instituto está en liquidación; solo una serie tiene valor histórico, las cajas de las demás están en buen estado, y el liquidador quiere destruir al cierre los listados y las actas de eliminación. Regla: las unidades de material desacidificado se usan solo para documentos con valor histórico, y en los demás casos se reutilizan las que estén en buen estado (art. 2.8.7.3.7 del Decreto 1080); los listados de eliminación y las actas se conservan permanentemente con los archivos entregados (art. 2.8.7.2.6, par. 3). Conclusión: mantener la primera medida y corregir la segunda.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-GD-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Programa de Gestión Documental",
+    "subtema": "El PGD en los planes institucionales y la capacitación de servidores de todos los niveles",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1080 de 2015 y Ley 594 de 2000",
+    "articulos": [
+      "Decreto 1080 de 2015, art. 2.8.2.5.10",
+      "Decreto 1080 de 2015, art. 2.8.2.5.14",
+      "Ley 594 de 2000, art. 18"
+    ],
+    "texto_fuente": "Todas las entidades del Estado deben formular un Programa de Gestión Documental (PGD), a corto, mediano y largo plazo, como parte del Plan Estratégico Institucional y del Plan de Acción Anual. [...] Las entidades públicas y las privadas que cumplan funciones públicas, deberán incluir en sus planes anuales de capacitación los recursos necesarios para capacitar en el alcance y desarrollo del PGD, a los funcionarios de los diferentes niveles de la entidad. [...] Las entidades tienen la obligación de capacitar y actualizar a los funcionarios de archivo, en programas y áreas relacionadas con su labor.",
+    "pregunta": "Una gobernación aprobó su Programa de Gestión Documental (PGD). Al preparar los planes de 2027, la secretaria general opina que el PGD es un documento interno del área de archivo, que se ejecuta con su propio cronograma; el jefe de planeación le objeta que debe reflejarse en el plan estratégico y en el plan de acción anual. A su vez, la jefa de talento humano propone que el plan institucional de capacitación incluya formación en el PGD solo para el personal de archivo, porque la ley obliga a capacitar a los funcionarios de archivo en su labor. Usted, profesional de gestión documental, debe conceptuar sobre estas posiciones. ¿Qué concepto corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El PGD hace parte del plan estratégico y del plan de acción anual, y la capacitación en él puede limitarse al personal de archivo.",
+        "explicacion": "Incorrecta. Acierta en la relación del PGD con los planes, como objeta el jefe de planeación, pero restringe la capacitación. La obligación de formar al personal de archivo en su labor (art. 18 de la Ley 594) no reduce la del art. 2.8.2.5.14: capacitar en el PGD a los funcionarios de los diferentes niveles de la entidad."
+      },
+      {
+        "id": "B",
+        "texto": "El PGD hace parte del plan estratégico y del plan de acción anual, y la capacitación en él debe dirigirse a servidores de todos los niveles.",
+        "explicacion": "Correcta. Tiene razón el jefe de planeación: el PGD se formula a corto, mediano y largo plazo como parte del Plan Estratégico Institucional y del Plan de Acción Anual (art. 2.8.2.5.10). Y los planes anuales de capacitación deben incluir los recursos para capacitar en su alcance y desarrollo a los funcionarios de los diferentes niveles de la entidad (art. 2.8.2.5.14), así que la propuesta de talento humano se queda corta."
+      },
+      {
+        "id": "C",
+        "texto": "El PGD puede manejarse como documento interno del área de archivo, pero la capacitación en él debe dirigirse a servidores de todos los niveles.",
+        "explicacion": "Incorrecta. Acierta en el alcance de la capacitación, pero acoge la posición de la secretaria general: el PGD no es un documento interno de un área, sino que se formula como parte del Plan Estratégico Institucional y del Plan de Acción Anual (art. 2.8.2.5.10)."
+      },
+      {
+        "id": "D",
+        "texto": "El PGD puede manejarse como documento interno del área de archivo, y la capacitación en él puede limitarse al personal de archivo.",
+        "explicacion": "Incorrecta. Avala las posiciones de la secretaria general y de talento humano. El PGD hace parte del Plan Estratégico Institucional y del Plan de Acción Anual (art. 2.8.2.5.10), y la capacitación en él debe llegar a los funcionarios de los diferentes niveles (art. 2.8.2.5.14), no solo al personal de archivo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la secretaria general ve el PGD como un documento interno, planeación objeta que debe estar en los planes y talento humano quiere capacitar en él solo al personal de archivo. Regla: el PGD se formula a corto, mediano y largo plazo como parte del Plan Estratégico Institucional y del Plan de Acción Anual (art. 2.8.2.5.10 del Decreto 1080), y los planes anuales de capacitación incluyen recursos para capacitar en el PGD a los funcionarios de los diferentes niveles (art. 2.8.2.5.14). Conclusión: planeación tiene razón; talento humano, no.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-GD-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Programa de Gestión Documental",
+    "subtema": "Conservación de la información publicada con anterioridad en el sitio web",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1080 de 2015 y Ley 1712 de 2014",
+    "articulos": [
+      "Decreto 1080 de 2015, art. 2.8.5.4.5",
+      "Ley 1712 de 2014, art. 14 (corregido por el art. 1 del Decreto 1862 de 2015)"
+    ],
+    "texto_fuente": "Para efectos de lo previsto en el artículo 14 de la Ley 1712 de 2014, los sujetos obligados deben garantizar la conservación de los documentos divulgados en su sitio web o en sistemas de información que contengan o produzcan información pública, para lo cual seguirán los procedimientos de valoración documental y delimitarán los medios, formatos y plazos para la conservación de la información publicada con anterioridad, con el fin de permitir su fácil acceso luego de retirada la publicación. Los sujetos obligados deben definir un procedimiento para retirar la información que haya sido publicada y garantizar la recuperación de información retrospectiva que haya sido desfijada o retirada. Los lineamientos y plazos para cumplir a cabalidad con esta obligación, deben estar incluidos en el Programa de Gestión Documental del sujeto obligado. [...] Los sujetos obligados deben garantizar y facilitar a los solicitantes, de la manera más sencilla posible, el acceso a toda la información previamente divulgada.",
+    "pregunta": "Una alcaldía va a estrenar su sitio web. El jefe de sistemas propone migrar solo lo publicado en los dos últimos años y borrar del servidor los informes, las convocatorias y los demás documentos más antiguos, que en su opinión ya cumplieron la función de dar publicidad; si alguien los pide, se le respondería que ya no están disponibles. Usted, profesional de gestión documental, debe dar concepto sobre la propuesta. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Borrar lo antiguo, cuya divulgación ya se cumplió, y responder a quien lo pida que esa información fue retirada del sitio y no se conserva.",
+        "explicacion": "Incorrecta. La publicación no agota el deber de la entidad: debe garantizar el acceso a la información previamente divulgada (art. 14 de la Ley 1712) y conservar lo publicado según la valoración documental (art. 2.8.5.4.5 del Decreto 1080)."
+      },
+      {
+        "id": "B",
+        "texto": "Migrar al nuevo sitio todo lo publicado, dado que la información divulgada en la web no puede retirarse mientras la entidad exista.",
+        "explicacion": "Incorrecta. La norma sí permite retirar publicaciones: exige definir un procedimiento para hacerlo y garantizar la recuperación de la información retirada (art. 2.8.5.4.5 del Decreto 1080). Lo que no se permite es perderla."
+      },
+      {
+        "id": "C",
+        "texto": "Retirar lo antiguo con un procedimiento que permita recuperarlo y conservarlo según la valoración documental, con medios y plazos del PGD.",
+        "explicacion": "Correcta. Lo publicado en el sitio web se conserva según los procedimientos de valoración, con medios, formatos y plazos definidos; debe existir un procedimiento para retirar la información que garantice su recuperación, y esos lineamientos y plazos van en el PGD (art. 2.8.5.4.5 del Decreto 1080). Así se cumple el deber de facilitar el acceso a la información previamente divulgada (art. 14 de la Ley 1712)."
+      },
+      {
+        "id": "D",
+        "texto": "Retirar lo antiguo y guardar una copia de respaldo que sistemas administre con sus propios criterios, por fuera del programa de gestión documental.",
+        "explicacion": "Incorrecta. Una copia de respaldo sin reglas no basta: la conservación de lo publicado sigue los procedimientos de valoración documental, y sus lineamientos y plazos deben estar en el PGD (art. 2.8.5.4.5 del Decreto 1080)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: sistemas quiere borrar lo publicado hace más de dos años y negar su existencia a quien lo pida. Regla: la entidad debe facilitar el acceso a la información previamente divulgada (art. 14 de la Ley 1712) y conservar lo publicado en su sitio web según la valoración documental, con un procedimiento de retiro que garantice la recuperación; los lineamientos y plazos van en el PGD (art. 2.8.5.4.5 del Decreto 1080). Conclusión: retirar con procedimiento y conservar según el PGD.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-GD-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Plan Institucional de Archivos (PINAR)",
+    "subtema": "Integración del PINAR al plan de acción y fecha de publicación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.22.3.14, num. 1 y par. 1 (adicionado por el art. 1 del Decreto 612 de 2018)"
+    ],
+    "texto_fuente": "Las entidades del Estado, de acuerdo con el ámbito de aplicación del Modelo Integrado de Planeación y Gestión, al Plan de Acción de que trata el artículo 74 de la Ley 1474 de 2011, deberán integrar los planes institucionales y estratégicos que se relacionan a continuación y publicarlo, en su respectiva página web, a más tardar el 31 de enero de cada año: 1. Plan Institucional de Archivos de la Entidad PINAR [...] PARÁGRAFO 1. La integración de los planes mencionados en el presente artículo se hará sin perjuicio de las competencias de las instancias respectivas para formularlos y adoptarlos. Cuando se trate de planes de duración superior a un (1) año, se integrarán al Plan de Acción las actividades que correspondan a la respectiva anualidad.",
+    "pregunta": "Andrea, técnica de la oficina de planeación de una alcaldía, consolida el plan de acción de 2027. El Plan Institucional de Archivos (PINAR) de la entidad ya fue adoptado y cubre de 2026 a 2029. Su jefe le sugiere anexar el PINAR completo, para que se vea toda la estrategia, y publicar el plan de acción dentro de los treinta días siguientes a su aprobación, como se hace con otros instrumentos archivísticos. ¿Cómo debe proceder Andrea?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Integrar al plan de acción las actividades del PINAR que corresponden a 2027 y publicarlo en la web a más tardar el 31 de enero de ese año.",
+        "explicacion": "Correcta. El PINAR se integra al plan de acción, que se publica en la página web a más tardar el 31 de enero de cada año; como dura más de un año, se integran las actividades de la respectiva anualidad (art. 2.2.22.3.14, num. 1 y par. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Anexar al plan de acción el PINAR completo, de 2026 a 2029, y publicarlo en la web a más tardar el 31 de enero de ese año.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero cuando un plan dura más de un año se integran al plan de acción las actividades que corresponden a esa anualidad, no el plan completo (art. 2.2.22.3.14, par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Integrar al plan de acción las actividades del PINAR que corresponden a 2027 y publicarlo en la web dentro de los treinta días siguientes a su aprobación.",
+        "explicacion": "Incorrecta. Acierta en lo que se integra, pero toma un plazo que no es el de esta norma: el plan de acción con los planes institucionales integrados se publica a más tardar el 31 de enero de cada año (art. 2.2.22.3.14)."
+      },
+      {
+        "id": "D",
+        "texto": "Anexar al plan de acción el PINAR completo, de 2026 a 2029, y publicarlo en la web dentro de los treinta días siguientes a su aprobación.",
+        "explicacion": "Incorrecta. Suma los dos errores: integra el plan completo en lugar de las actividades del año (art. 2.2.22.3.14, par. 1) y cambia la fecha límite de publicación, que es el 31 de enero de cada año."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el PINAR va de 2026 a 2029 y se consolida el plan de acción de 2027. Regla: las entidades integran el PINAR al plan de acción y lo publican en la web a más tardar el 31 de enero de cada año; si el plan dura más de un año, se integran las actividades de la respectiva anualidad (art. 2.2.22.3.14, num. 1 y par. 1, del Decreto 1083, adicionado por el Decreto 612 de 2018). Conclusión: actividades de 2027 y publicación a más tardar el 31 de enero.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-GD-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Inspección, vigilancia y control archivístico",
+    "subtema": "Plazo para presentar el Plan de Mejoramiento Archivístico con prórroga",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.8.3.5",
+      "art. 2.8.8.3.6, inc. 1"
+    ],
+    "texto_fuente": "Una vez recibido el informe de la visita por parte del sujeto inspeccionado, éste deberá responder y soportar las observaciones efectuadas en un término de diez (10) días hábiles prorrogables hasta por otro tanto, cuando razonadamente existan circunstancias que impidan la entrega de la información dentro del plazo inicial. [...] A partir del momento de la entrega del Acta definitiva de la visita de inspección, la entidad visitada dispondrá de quince (15) días hábiles para presentar su propuesta de Plan de Mejoramiento Archivístico (PMA) y su metodología de implementación, término que podrá prorrogarse hasta por (15) días hábiles adicionales, por una sola vez.",
+    "pregunta": "El Archivo General de la Nación (AGN) hizo una visita de inspección a la gobernación de un departamento. La gobernación recibió el informe de la visita el lunes 14 de septiembre de 2026 y respondió las observaciones el 25 de septiembre. El jueves 1 de octubre de 2026, el AGN le entregó el acta definitiva de la visita. Después, la gobernación pidió prórroga para el Plan de Mejoramiento Archivístico (PMA), y el AGN se la concedió por quince días hábiles adicionales. Sergio, técnico del grupo de gestión documental, lleva el calendario de compromisos. ¿Cuál es el último día para presentar la propuesta del PMA?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El martes 13 de octubre de 2026, veinte días hábiles después del 14 de septiembre de 2026.",
+        "explicacion": "Incorrecta. Mezcla dos errores: cuenta desde el recibo del informe, cuando el plazo del PMA corre desde la entrega del acta definitiva, y aplica los diez días hábiles prorrogables por otro tanto, que son el término para responder las observaciones del informe (art. 2.8.8.3.5), no el del PMA."
+      },
+      {
+        "id": "B",
+        "texto": "El martes 27 de octubre de 2026, treinta días hábiles después del 14 de septiembre de 2026.",
+        "explicacion": "Incorrecta. Usa bien los quince días más la prórroga, pero cuenta desde el recibo del informe. El plazo para presentar el PMA corre a partir de la entrega del acta definitiva de la visita (art. 2.8.8.3.6), el 1 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "El viernes 30 de octubre de 2026, veinte días hábiles después del 1 de octubre de 2026.",
+        "explicacion": "Incorrecta. Cuenta desde el acta definitiva, pero aplica diez días hábiles prorrogables por otro tanto, que es el término para responder el informe de la visita (art. 2.8.8.3.5). Para el PMA son quince días hábiles más una prórroga de hasta quince (art. 2.8.8.3.6)."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 17 de noviembre de 2026, treinta días hábiles después del 1 de octubre de 2026.",
+        "explicacion": "Correcta. El término de quince días hábiles corre desde la entrega del acta definitiva (1 de octubre) y, con la prórroga de quince días hábiles, suma treinta (art. 2.8.8.3.6). Sin sábados, domingos ni los festivos del 12 de octubre, el 2 de noviembre y el 16 de noviembre, vence el martes 17 de noviembre de 2026."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el acta definitiva se entregó el jueves 1 de octubre de 2026 y se concedió la prórroga de quince días hábiles. Regla: la propuesta del PMA se presenta en quince días hábiles desde la entrega del acta definitiva, prorrogables por una vez hasta por quince más (art. 2.8.8.3.6 del Decreto 1080); los diez días del art. 2.8.8.3.5 son para responder el informe. Cálculo: treinta días hábiles sin los festivos del 12 de octubre, 2 y 16 de noviembre. Conclusión: martes 17 de noviembre de 2026.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-GD-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Inspección, vigilancia y control archivístico",
+    "subtema": "Aprobación del PMA y reportes de control interno al AGN",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.8.3.6, inc. 1 y par. 2",
+      "art. 2.8.8.4.6, par. 2"
+    ],
+    "texto_fuente": "El PMA deberá ser aprobado por el Comité Institucional de Desarrollo Administrativo o el Comité Interno de Archivo de la Entidad que lo formula. [...] PARÁGRAFO 2. La Oficina de Control Interno de la entidad inspeccionada deberá realizar seguimiento y reportar trimestralmente al Archivo General de la Nación los avances del cumplimiento del PMA. [...] PARÁGRAFO 2. La Oficina de Control Interno de la entidad vigilada, deberá realizar seguimiento y reportar semestralmente al Archivo General de la Nación los avances del cumplimiento de las nuevas actividades programadas en el (PMA) y de los compromisos adquiridos.",
+    "pregunta": "Después de una visita de inspección del Archivo General de la Nación (AGN), una alcaldía que tiene conformado su Comité Interno de Archivo formuló el Plan de Mejoramiento Archivístico (PMA) derivado de esa visita. El secretario general propone enviar el plan al Consejo Departamental de Archivos para que lo apruebe, y que la oficina de control interno informe al AGN los avances cada seis meses. La jefa de control interno le objeta que su oficina debe reportar esos avances cada tres meses. Usted, profesional de gestión documental, debe revisar la propuesta. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Lo aprueba el Comité Interno de Archivo de la propia alcaldía, y control interno reporta los avances al AGN cada seis meses.",
+        "explicacion": "Incorrecta. Acierta en quién aprueba, pero desatiende una objeción correcta: el reporte semestral corresponde al seguimiento que sigue a una visita de vigilancia (art. 2.8.8.4.6, par. 2). Tras una visita de inspección, control interno reporta trimestralmente (art. 2.8.8.3.6, par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Lo aprueba el Comité Interno de Archivo de la propia alcaldía, y control interno reporta los avances al AGN cada tres meses.",
+        "explicacion": "Correcta. El PMA lo aprueba el Comité Interno de Archivo de la entidad que lo formula (en el orden nacional, el comité que hace sus veces), no el consejo departamental. Y la jefa de control interno tiene razón: tras una visita de inspección, su oficina hace seguimiento y reporta trimestralmente al AGN (art. 2.8.8.3.6 y par. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Lo aprueba el Consejo Departamental de Archivos, y control interno reporta los avances al AGN cada tres meses.",
+        "explicacion": "Incorrecta. Acierta en la periodicidad que plantea la jefa de control interno, pero mantiene la aprobación externa: el PMA lo aprueba el Comité Interno de Archivo de la entidad que lo formula (art. 2.8.8.3.6), no el Consejo Departamental de Archivos."
+      },
+      {
+        "id": "D",
+        "texto": "Lo aprueba el Consejo Departamental de Archivos, y control interno reporta los avances al AGN cada seis meses.",
+        "explicacion": "Incorrecta. Avala la propuesta completa del secretario general: el PMA lo aprueba el comité de la propia entidad, no el consejo departamental, y tras una visita de inspección control interno reporta cada tres meses, no cada seis (art. 2.8.8.3.6 y par. 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el PMA nace de una visita de inspección; el secretario general quiere que lo apruebe el consejo departamental y que control interno reporte cada seis meses, y la jefa de control interno objeta la periodicidad. Regla: el PMA lo aprueba el Comité Interno de Archivo de la entidad que lo formula, y control interno reporta trimestralmente al AGN sus avances (art. 2.8.8.3.6 y par. 2 del Decreto 1080); el reporte semestral es el de las visitas de vigilancia (art. 2.8.8.4.6, par. 2). Conclusión: comité interno y reporte trimestral.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-GD-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Acceso y consulta de documentos",
+    "subtema": "Consulta, copias y salida temporal de documentos de archivo por motivos legales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 594 de 2000",
+    "articulos": [
+      "art. 27, inc. 1",
+      "art. 30"
+    ],
+    "texto_fuente": "Todas las personas tienen derecho a consultar los documentos de archivos públicos y a que se les expida copia de los mismos, siempre que dichos documentos no tengan carácter reservado conforme a la Constitución o a la ley. [...] Sólo por motivos legales las entidades del Estado podrán autorizar la salida temporal de los documentos de archivo.",
+    "pregunta": "Luisa, auxiliar del archivo central de una alcaldía, recibe el mismo día dos solicitudes sobre expedientes que no tienen información reservada. El abogado de un antiguo contratista pide llevarse a su oficina, por una semana, el expediente original del contrato para preparar una demanda, y ofrece firmar un compromiso de devolución. Un juzgado administrativo, mediante oficio, ordena remitirle el expediente original de una licencia para que un perito lo examine dentro de un proceso. ¿Qué debe proponerle a su jefe para cada solicitud?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al abogado, prestarle el original con el compromiso firmado y un inventario de folios; al juzgado, autorizar la salida temporal del original.",
+        "explicacion": "Incorrecta. Acierta con el juzgado, pero la salida temporal de documentos de archivo solo procede por motivos legales (art. 30); el abogado puede consultar el expediente y pedir copias (art. 27), no llevarse el original."
+      },
+      {
+        "id": "B",
+        "texto": "Al abogado, ofrecerle la consulta del expediente en el archivo y las copias que pida; al juzgado, enviarle solo copias auténticas, sin el original.",
+        "explicacion": "Incorrecta. Acierta con el abogado, pero la ley sí permite autorizar la salida temporal de documentos de archivo por motivos legales (art. 30), y la orden de un juzgado lo es."
+      },
+      {
+        "id": "C",
+        "texto": "Al abogado, ofrecerle la consulta del expediente en el archivo y las copias que pida; al juzgado, autorizar la salida temporal del original.",
+        "explicacion": "Correcta. Toda persona puede consultar los documentos de archivos públicos no reservados y obtener copia (art. 27), pero la salida temporal de documentos de archivo solo se autoriza por motivos legales (art. 30). La orden del juzgado es un motivo legal; la conveniencia del abogado no lo es."
+      },
+      {
+        "id": "D",
+        "texto": "Al abogado, prestarle el original con el compromiso firmado y un inventario de folios; al juzgado, enviarle solo copias auténticas, sin el original.",
+        "explicacion": "Incorrecta. Invierte la regla: deja salir el original por una razón que no es legal y lo retiene ante una orden judicial, que es justamente el motivo legal que permite la salida temporal (art. 30)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el abogado quiere llevarse el original por conveniencia, y el juzgado lo pide mediante una orden dentro de un proceso. Regla: toda persona puede consultar los documentos de archivos públicos no reservados y obtener copias (art. 27 de la Ley 594), y la salida temporal de documentos de archivo solo se autoriza por motivos legales (art. 30). Conclusión: consulta y copias para el abogado; salida temporal del original para el juzgado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-GD-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Conservación documental",
+    "subtema": "Requisitos para incorporar tecnologías: organización archivística previa y estudios técnicos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 594 de 2000",
+    "articulos": [
+      "art. 19, lits. a y b"
+    ],
+    "texto_fuente": "Las entidades del Estado podrán incorporar tecnologías de avanzada en la administración y conservación de su archivos, empleando cualquier medio técnico, electrónico, informático, óptico o telemático, siempre y cuando cumplan con los siguientes requisitos: a) Organización archivística de los documentos; b) Realización de estudios técnicos para la adecuada decisión, teniendo en cuenta aspectos como la conservación física, las condiciones ambientales y operacionales, la seguridad, perdurabilidad y reproducción de la información contenida en estos soportes, así como el funcionamiento razonable del sistema.",
+    "pregunta": "Una gobernación quiere digitalizar las 3.000 cajas de su archivo central, que están sin organizar: en una misma caja hay documentos de varias series y años, y no existe inventario. La empresa que presentó la mejor oferta propone organizar primero las cajas por series y expedientes y luego escanearlas, y guardar las imágenes en discos duros externos de la marca que ella escoja, con una garantía de cinco años. El jefe de sistemas objeta la primera parte: dice que organizar antes encarece el contrato y que basta con escanear las cajas como están y ordenar luego las imágenes con metadatos en el software. Usted, profesional de gestión documental, debe dar concepto antes de que se firme el contrato. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ordenar el archivo antes de escanearlo y escoger el medio de almacenamiento después de evaluar técnicamente su conservación, seguridad y vida útil.",
+        "explicacion": "Correcta. La organización archivística de los documentos es un requisito para incorporar la tecnología, así que la empresa acierta al proponer ordenar antes de escanear (art. 19, lit. a). Pero el soporte no se escoge por la marca ni por la garantía: se decide con estudios técnicos sobre la conservación física, las condiciones, la seguridad, la perdurabilidad y la reproducción de la información (lit. b)."
+      },
+      {
+        "id": "B",
+        "texto": "Ordenar el archivo antes de escanearlo y aceptar los discos que escoja la empresa, que responderá por ellos con la garantía de cinco años.",
+        "explicacion": "Incorrecta. Avala toda la propuesta de la empresa. Acierta en organizar antes de digitalizar (art. 19, lit. a), pero la decisión sobre el soporte exige estudios técnicos de conservación, seguridad y perdurabilidad (lit. b); no se suple con una garantía comercial."
+      },
+      {
+        "id": "C",
+        "texto": "Escanear las cajas como están, ordenar luego las imágenes con metadatos y escoger el medio tras evaluar técnicamente su conservación, seguridad y vida útil.",
+        "explicacion": "Incorrecta. Acierta en los estudios técnicos, pero acoge la objeción del jefe de sistemas: la organización archivística de los documentos es un requisito previo para incorporar la tecnología (art. 19, lit. a), y ordenar después las imágenes de cajas revueltas no la sustituye."
+      },
+      {
+        "id": "D",
+        "texto": "Escanear las cajas como están, ordenar luego las imágenes con metadatos y aceptar los discos que escoja la empresa con la garantía de cinco años.",
+        "explicacion": "Incorrecta. Incumple los dos requisitos para incorporar tecnologías en los archivos: la organización archivística previa de los documentos y los estudios técnicos para decidir el soporte (art. 19, lits. a y b)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las cajas están revueltas; la empresa propone organizar antes de escanear, pero escoger ella los discos con una garantía, y el jefe de sistemas objeta la organización previa. Regla: las entidades pueden incorporar tecnologías en sus archivos siempre que haya organización archivística de los documentos y estudios técnicos sobre conservación física, condiciones, seguridad, perdurabilidad y reproducción de la información (art. 19, lits. a y b, de la Ley 594). Conclusión: organizar primero y decidir el medio con estudios técnicos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-GD-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Conservación documental",
+    "subtema": "Copia de documentos de conservación permanente en nuevos soportes",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 594 de 2000",
+    "articulos": [
+      "art. 47, parágrafo",
+      "art. 49"
+    ],
+    "texto_fuente": "PARAGRAFO. Los documentos de archivo de conservación permanente podrán ser copiados en nuevos soportes. En tal caso, deberá preverse un programa de transferencia de información para garantizar la preservación y conservación de la misma. [...] En ningún caso los documentos de carácter histórico podrán ser destruidos, aunque hayan sido reproducidos por cualquier medio",
+    "pregunta": "Una gobernación conserva en su archivo histórico los decretos departamentales de 1950 a 1990, que la TRD declaró de conservación permanente. Para facilitar la consulta, contrató su digitalización. El jefe de archivo propone que, una vez digitalizados, se eliminen los originales en papel con un acta, para liberar espacio, y que las imágenes se graben en discos ópticos que quedarían guardados en el depósito como soporte definitivo. Usted, profesional de gestión documental, debe revisar la propuesta. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Conservar los originales, porque tienen valor histórico, y guardar los discos en el depósito, pues la copia digital ya cumple su función de consulta.",
+        "explicacion": "Incorrecta. Acierta en conservar los originales, pero la copia en nuevos soportes de documentos de conservación permanente exige un programa de transferencia de información que garantice su preservación (art. 47, par.); guardar los discos no asegura que se puedan leer en el futuro."
+      },
+      {
+        "id": "B",
+        "texto": "Eliminar los originales con acta, porque la copia digital los respalda, y prever un programa de transferencia de la información que mantenga accesibles las imágenes.",
+        "explicacion": "Incorrecta. Acierta en el programa de transferencia de información (art. 47, par.), pero los documentos históricos no se destruyen aunque se hayan reproducido por cualquier medio (art. 49)."
+      },
+      {
+        "id": "C",
+        "texto": "Conservar los originales, porque tienen valor histórico, y prever un programa de transferencia de la información que mantenga accesibles las imágenes.",
+        "explicacion": "Correcta. Los documentos de carácter histórico no pueden destruirse aunque se hayan reproducido por cualquier medio (art. 49). Y cuando los documentos de conservación permanente se copian en nuevos soportes, debe preverse un programa de transferencia de información que garantice su preservación (art. 47, par.): los discos no pueden ser un soporte definitivo."
+      },
+      {
+        "id": "D",
+        "texto": "Eliminar los originales con acta, porque la copia digital los respalda, y guardar los discos en el depósito como soporte definitivo de las imágenes.",
+        "explicacion": "Incorrecta. Suma los dos errores: destruye documentos históricos que ya fueron reproducidos, lo que la ley prohíbe (art. 49), y deja la copia sin el programa de transferencia de información que exige el art. 47, parágrafo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los decretos son de conservación permanente y el jefe quiere eliminar los originales y dejar las imágenes en discos como soporte definitivo. Regla: los documentos históricos no se destruyen aunque se hayan reproducido (art. 49 de la Ley 594), y si los documentos de conservación permanente se copian en nuevos soportes, debe preverse un programa de transferencia de información que garantice su preservación (art. 47, par.). Conclusión: conservar los originales y prever el programa.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-GD-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Documentos y expedientes electrónicos",
+    "subtema": "Adición de contenidos como metadatos sin alterar el documento electrónico firmado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.6.2, lit. e",
+      "art. 2.8.2.7.4",
+      "art. 2.8.2.7.5"
+    ],
+    "texto_fuente": "e) Adición de contenidos. El sistema de gestión documental debe permitir que sean agregados nuevos contenidos a los documentos, en forma de metadatos, sin que se altere la autenticidad, valor evidencial e integridad de los documentos. [...] Los documentos deben permanecer completos y protegidos de manipulaciones o cualquier posibilidad de cambio (de versión o cambio de un formato); así mismo se debe evitar su alteración o eliminación por personas no autorizadas. [...] Se debe garantizar que un documento electrónico generado por primera vez en su forma definitiva no sea modificado a lo largo de todo su ciclo de vida, desde su producción hasta su conservación temporal o definitiva, condición que puede satisfacerse mediante la aplicación de sistemas de protección de la información, salvo las modificaciones realizadas a la estructura del documento con fines de preservación a largo plazo.",
+    "pregunta": "En la secretaría de movilidad de un municipio, las resoluciones de sanción se firman digitalmente y se archivan en el sistema de gestión de documentos electrónicos. Martín, técnico administrativo con perfil autorizado en el sistema, recibe la instrucción de dejar constancia, en cada resolución, de la fecha en que se notificó y del número de radicado del recurso presentado. Él propone abrir cada PDF, escribir esos datos en el margen y guardar el archivo encima del original. ¿Cómo debe registrar esa información?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Escribirla en el margen del PDF y guardar el original sin anotaciones en una carpeta de respaldo del mismo servidor.",
+        "explicacion": "Incorrecta. Modificar el PDF firmado altera un documento electrónico en su forma definitiva, que debe permanecer completo y sin cambios (arts. 2.8.2.7.4 y 2.8.2.7.5). Guardar una copia aparte no corrige la alteración del documento de archivo."
+      },
+      {
+        "id": "B",
+        "texto": "Escribirla en el margen del PDF, con su perfil autorizado, y dejar constancia de esa modificación en los metadatos del documento.",
+        "explicacion": "Incorrecta. El perfil autorizado y la constancia en metadatos se exigen para cambios justificados en la estructura del documento (art. 2.8.2.7.4), pero el contenido de un documento en su forma definitiva no se modifica, salvo con fines de preservación (art. 2.8.2.7.5). Los datos nuevos se agregan como metadatos."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que se firme una nueva versión de cada resolución con esos datos y reemplazar con ella la versión que está en el sistema.",
+        "explicacion": "Incorrecta. La resolución ya expedida no se sustituye por otra versión: el documento debe permanecer completo y protegido de cambios de versión (art. 2.8.2.7.4), y los datos posteriores se agregan como metadatos (art. 2.8.2.6.2, lit. e)."
+      },
+      {
+        "id": "D",
+        "texto": "Asociarla a cada resolución como metadatos en el sistema, sin tocar el archivo firmado, que debe conservarse tal como se expidió.",
+        "explicacion": "Correcta. El sistema de gestión documental debe permitir agregar nuevos contenidos a los documentos en forma de metadatos, sin alterar su autenticidad, valor evidencial e integridad (art. 2.8.2.6.2, lit. e). La resolución firmada, en su forma definitiva, no puede modificarse durante su ciclo de vida (art. 2.8.2.7.5)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay que dejar constancia de datos posteriores (notificación y recurso) en resoluciones ya firmadas y archivadas. Regla: el sistema de gestión documental debe permitir agregar nuevos contenidos como metadatos sin alterar la autenticidad ni la integridad del documento (art. 2.8.2.6.2, lit. e, del Decreto 1080); el documento en su forma definitiva no se modifica (arts. 2.8.2.7.4 y 2.8.2.7.5). Conclusión: registrar los datos como metadatos, sin tocar el PDF firmado.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-GD-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Documentos y expedientes electrónicos",
+    "subtema": "Metadatos mínimos de contenido del documento electrónico de archivo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.7.9, nums. I y II"
+    ],
+    "texto_fuente": "De contenido: a) Tipo de recurso de información. b) Tipo documental. c) Título del documento. d) Autor o emisor responsable de su contenido, destinatario, responsable que proyectó el contenido, nombre de la entidad que respalda el contenido, nombre de la persona o sistema desde donde el documento es creado. e) Clasificación de acceso (nivel de acceso). f) Fecha de creación, transmisión y recepción. g) Folio (físico o electrónico). h) Tema o asunto administrativo al que se vincula (trámite). i) Palabras clave. II. De estructura: a) Descripción. b) Formato. c) Estado. d) Proceso administrativo. e) Unidad Administrativa responsable. f) Perfil autorizado. g) Ubicación (en el sistema físico y/o lógico). h) Serie/subserie documental.",
+    "pregunta": "Natalia, técnica de gestión documental de una gobernación, configura el formulario con el que el sistema de gestión de documentos electrónicos captura los metadatos de cada documento. Por ahora incluyó: tipo de recurso de información; tipo documental; título; autor, destinatario, quien proyectó, entidad que respalda el contenido y persona o sistema desde donde se crea; fechas de creación, transmisión y recepción; folio electrónico; trámite o asunto al que se vincula, y palabras clave. Su jefe le pide verificar que estén completos los metadatos mínimos de contenido. ¿Cuál le falta agregar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La unidad administrativa responsable del documento dentro de la entidad.",
+        "explicacion": "Incorrecta. La unidad administrativa responsable es un metadato mínimo, pero de estructura (art. 2.8.2.7.9, num. II, lit. e), no de contenido."
+      },
+      {
+        "id": "B",
+        "texto": "La clasificación de acceso, que indica el nivel de acceso del documento.",
+        "explicacion": "Correcta. Entre los metadatos mínimos de contenido está la clasificación de acceso o nivel de acceso (art. 2.8.2.7.9, num. I, lit. e), y es el único de ese grupo que falta en el formulario."
+      },
+      {
+        "id": "C",
+        "texto": "La serie o subserie documental a la que pertenece el documento archivado.",
+        "explicacion": "Incorrecta. La serie o subserie documental es un metadato mínimo de estructura (art. 2.8.2.7.9, num. II, lit. h), no de contenido."
+      },
+      {
+        "id": "D",
+        "texto": "El formato en que se produjo y se conserva el documento electrónico.",
+        "explicacion": "Incorrecta. El formato es un metadato mínimo de estructura (art. 2.8.2.7.9, num. II, lit. b), no de contenido."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el formulario ya tiene ocho de los nueve metadatos de contenido y el jefe pide completar ese grupo. Regla: los metadatos mínimos de contenido son tipo de recurso, tipo documental, título, autor y demás responsables, clasificación de acceso, fechas, folio, trámite y palabras clave; la unidad administrativa, la serie y el formato son de estructura (art. 2.8.2.7.9 del Decreto 1080). Conclusión: falta la clasificación de acceso.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-GD-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Documentos y expedientes electrónicos",
+    "subtema": "Secuencia y foliado del expediente electrónico",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.7.12, pars. 1 y 2"
+    ],
+    "texto_fuente": "PARÁGRAFO 1. El expediente debe reflejar la secuencia de las diligencias realizadas dentro de una misma actuación o trámite. PARÁGRAFO 2. Se deberán adoptar mecanismos tecnológicos adecuados para cumplir con el proceso de foliado del expediente electrónico de conformidad con lo establecido en el Código de Procedimiento Administrativo y de lo Contencioso Administrativo, la Ley General de Archivos y demás normas reglamentarias.",
+    "pregunta": "Camila, auxiliar administrativa de la secretaría de gobierno de un municipio, cierra los expedientes electrónicos de los permisos para eventos públicos. Dentro de cada expediente ordena los archivos por tipo de documento y en orden alfabético (acta de visita, concepto de bomberos, resolución, solicitud), y no los folia, porque considera que la foliación es una tarea de las carpetas en papel. ¿Cómo deben quedar los expedientes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con los documentos en el orden en que se surtió el trámite, y foliados electrónicamente con la herramienta que tenga el sistema.",
+        "explicacion": "Correcta. El expediente electrónico debe reflejar la secuencia de las diligencias de la actuación o trámite (art. 2.8.2.7.12, par. 1), y su foliado se cumple con mecanismos tecnológicos adecuados (par. 2): la foliación también se aplica al expediente electrónico."
+      },
+      {
+        "id": "B",
+        "texto": "Con los documentos agrupados por tipo y en orden alfabético, y foliados electrónicamente con la herramienta que tenga el sistema.",
+        "explicacion": "Incorrecta. Acierta en foliar, pero el orden alfabético por tipo rompe la secuencia del trámite: la solicitud, que dio inicio al permiso, quedaría de última. El expediente debe reflejar la secuencia de las diligencias (art. 2.8.2.7.12, par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Con los documentos en el orden en que se surtió el trámite, y sin foliación, que es una exigencia de los expedientes en papel.",
+        "explicacion": "Incorrecta. Acierta en el orden, pero el expediente electrónico también se folia, con mecanismos tecnológicos adecuados (art. 2.8.2.7.12, par. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Con los documentos agrupados por tipo y en orden alfabético, y sin foliación, que es una exigencia de los expedientes en papel.",
+        "explicacion": "Incorrecta. Mantiene los dos errores de Camila: el expediente no refleja la secuencia del trámite (par. 1) y queda sin el foliado que exige el expediente electrónico (par. 2 del art. 2.8.2.7.12)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Camila ordena los documentos alfabéticamente por tipo y no folia los expedientes electrónicos. Regla: el expediente debe reflejar la secuencia de las diligencias realizadas dentro de la actuación o trámite, y deben adoptarse mecanismos tecnológicos para el foliado del expediente electrónico (art. 2.8.2.7.12, pars. 1 y 2, del Decreto 1080). Conclusión: orden del trámite y foliado electrónico.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-GD-045",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Entrega de archivos al dejar el cargo",
+    "subtema": "Entrega inventariada por traslado, incluidos los documentos del correo y de la nube",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 594 de 2000 y Decreto 1080 de 2015",
+    "articulos": [
+      "Ley 594 de 2000, art. 15",
+      "Decreto 1080 de 2015, art. 2.8.2.2.4, par.",
+      "Decreto 1080 de 2015, art. 2.8.2.5.2, lits. f y k"
+    ],
+    "texto_fuente": "Los servidores públicos, al desvincularse de las funciones titulares, entregarán los documentos y archivos a su cargo debidamente inventariados, conforme a las normas y procedimientos que establezca el Archivo General de la Nación, sin que ello implique exoneración de la responsabilidad a que haya lugar en caso de irregularidades. [...] PARÁGRAFO . El deber de entregar inventarte de los documentos de archivo a cargo del servidor público, se circunscribe tanto a los documentos físicos en archivos tradicionales, como a los documentos electrónicos que se encuentren en equipos de cómputo, sistemas de información, medios portátiles de almacenamiento y en general en cualquier dispositivo o medio electrónico. [...] f) Sistemas de Mensajería Electrónica. g) Portales, Intranet y Extranet. [...] k) Uso de tecnologías en la nube.",
+    "pregunta": "Diana, técnica administrativa de la Secretaría de Hacienda de una alcaldía, fue trasladada a la Secretaría de Educación de la misma alcaldía y empieza allá el lunes. Tiene a su cargo expedientes en papel de devoluciones de impuestos y, en su correo institucional y en una carpeta de la nube que le asignó la entidad, los oficios y conceptos que produjo en esos trámites. Piensa dejar las carpetas en su archivador y compartir con quien la reemplace el acceso a la carpeta de la nube, sin acta, porque seguirá trabajando en la entidad. ¿Qué debe hacer antes de irse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar con inventario los expedientes en papel, aunque siga en la alcaldía, y compartir con su reemplazo el acceso a la carpeta de la nube.",
+        "explicacion": "Incorrecta. Acierta en entregar con inventario el papel, pero el deber también cubre los documentos electrónicos que estén en sistemas de información o cualquier medio electrónico (art. 2.8.2.2.4, par.), como el correo institucional y la nube (art. 2.8.2.5.2). Compartir un enlace no es entregarlos inventariados."
+      },
+      {
+        "id": "B",
+        "texto": "Dejar los expedientes en el archivador y pasar a su reemplazo los correos y la carpeta de la nube, sin acta, porque sigue en la alcaldía.",
+        "explicacion": "Incorrecta. El traslado la desvincula de las funciones de su cargo en Hacienda, y en ese momento debe entregar inventariados todos los documentos a su cargo (art. 15 de la Ley 594), no solo pasarlos de manera informal."
+      },
+      {
+        "id": "C",
+        "texto": "Entregar con inventario los expedientes en papel y lo que guarda en el correo y la nube, pues el traslado la aparta de su puesto en Hacienda.",
+        "explicacion": "Correcta. Los servidores entregan inventariados los documentos y archivos a su cargo al desvincularse de las funciones titulares (art. 15 de la Ley 594), y el traslado la separa de las de su puesto en Hacienda. El deber cubre los documentos electrónicos en cualquier medio (art. 2.8.2.2.4, par., del Decreto 1080), incluidos el correo y la nube (art. 2.8.2.5.2)."
+      },
+      {
+        "id": "D",
+        "texto": "Dejar los expedientes en el archivador y conservar los documentos en su correo y en la nube, porque desde la alcaldía puede atender consultas.",
+        "explicacion": "Incorrecta. Seguir en la entidad no la exime: al dejar las funciones de su cargo debe entregar con inventario los documentos físicos y electrónicos a su cargo (art. 15 de la Ley 594 y art. 2.8.2.2.4, par., del Decreto 1080)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Diana deja las funciones de su cargo en Hacienda por un traslado, y tiene documentos en papel, en el correo institucional y en la nube. Regla: al desvincularse de las funciones titulares, el servidor entrega inventariados los documentos a su cargo (art. 15 de la Ley 594), físicos y electrónicos en cualquier medio (art. 2.8.2.2.4, par., del Decreto 1080), incluidos el correo y la nube (art. 2.8.2.5.2). Conclusión: entrega con inventario de todo, aunque siga en la alcaldía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0594_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-GD-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Contratación de servicios archivísticos",
+    "subtema": "Series que pueden entregarse en custodia y condiciones que deben exigirse en el contrato",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.12.1",
+      "art. 2.8.2.12.2 y par.",
+      "art. 2.8.8.8.3, par."
+    ],
+    "texto_fuente": "Las entidades públicas no podrán contratar con empresas privadas, la custodia de documentos de conservación permanente, sobre los cuales exista la obligación de transferirlos al Archivo General de la Nación o a los archivos generales territoriales; [...] Solo se podrá contratar la custodia de documentos de archivo de conservación temporal, de acuerdo con lo establecido en la tabla de retención documental; en este caso, las entidades públicas en los diferentes niveles, deberán exigir a los contratistas, y así deberá quedar consignado en los contratos que se suscriban, el cumplimiento de las normas expedidas por el Archivo General de la Nación, en lo referente a: a) Características de las edificaciones en las cuales se albergarán los documentos; b) Idoneidad del personal asignado para la atención de los servicios contratados; [...] d) Aplicación de la Tabla de Retención Documental; [...] f) Características de los materiales y contenedores utilizados para almacenamiento de los documentos; g) Cumplimiento de condiciones de preservación y conservación de los documentos físicos y electrónicos que custodien. PARÁGRAFO . Las entidades públicas que contraten servicios de custodia de documentos de archivo, deberán incluir en los estudios previos, en los pliegos de condiciones y en los contratos suscritos con terceros para la prestación del servicio respectivo, lo señalado en el presente artículo. [...] las personas naturales, jurídicas de derecho público y/o privado o entidades que prestan servicios de custodia, conservación y almacenamiento de archivos físicos y electrónicos, a las Entidades descritas en el artículo 2 de la Ley 594 de 2000, deberán solicitar anualmente al Archivo General de la Nación una certificación de cumplimiento de la normatividad archivística.",
+    "pregunta": "Una alcaldía va a contratar con una empresa privada la custodia de las 8.000 cajas de su archivo central. Entre ellas hay series de conservación temporal, como los comprobantes de egreso y la correspondencia, y series de conservación permanente, como los decretos y las actas del consejo de gobierno, que dentro de cuatro años deben transferirse al Archivo General del Municipio. El borrador de estudios previos incluye todas las cajas y, como requisito técnico, pide que la empresa tenga vigente la certificación anual del AGN. Usted, profesional de gestión documental, debe revisarlo. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dejar por fuera las series de conservación permanente y mantener la certificación anual del AGN como requisito técnico suficiente del contrato.",
+        "explicacion": "Incorrecta. Acierta en excluir las series permanentes, pero la certificación anual es una obligación propia del prestador (art. 2.8.8.8.3, par.); no reemplaza las condiciones que la entidad debe exigir y consignar en estudios previos, pliegos y contrato (art. 2.8.2.12.2 y par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Incluir todas las cajas mientras llega la transferencia y fijar en estudios previos, pliego y contrato las condiciones del AGN sobre instalaciones, personal, materiales y TRD.",
+        "explicacion": "Incorrecta. Acierta en las condiciones del contrato, pero la custodia de documentos de conservación permanente que deben transferirse al archivo general no puede contratarse con empresas privadas, ni siquiera de forma transitoria (art. 2.8.2.12.1)."
+      },
+      {
+        "id": "C",
+        "texto": "Incluir todas las cajas mientras llega la transferencia y mantener la certificación anual del AGN como requisito técnico suficiente del contrato.",
+        "explicacion": "Incorrecta. Avala el borrador: entrega en custodia documentos permanentes que deben transferirse (art. 2.8.2.12.1) y omite las condiciones que deben quedar en estudios previos, pliegos y contrato (art. 2.8.2.12.2 y par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Dejar por fuera las series de conservación permanente y fijar en estudios previos, pliego y contrato las condiciones del AGN sobre instalaciones, personal, materiales y TRD.",
+        "explicacion": "Correcta. Las entidades no pueden contratar con empresas privadas la custodia de documentos de conservación permanente que deban transferirse a un archivo general (art. 2.8.2.12.1), y al contratar la de los temporales deben exigir y consignar en estudios previos, pliegos y contratos el cumplimiento de las normas del AGN sobre edificaciones, personal, TRD, materiales y preservación (art. 2.8.2.12.2 y par.)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el borrador incluye series permanentes que deben transferirse al Archivo General del Municipio y solo exige la certificación del AGN. Regla: no puede contratarse con privados la custodia de documentos de conservación permanente que deban transferirse (art. 2.8.2.12.1 del Decreto 1080); para los temporales, las condiciones del AGN se exigen y se consignan en estudios previos, pliegos y contrato (art. 2.8.2.12.2 y par.). La certificación anual es un deber del prestador (art. 2.8.8.8.3). Conclusión: excluir lo permanente y fijar las condiciones.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-GD-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Transferencias documentales",
+    "subtema": "Transferencia secundaria al AGN de las entidades con régimen especial: documentos de más de cincuenta años",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.9.4 y par. 1"
+    ],
+    "texto_fuente": "deben transferir, cada diez (10) años, al Archivo General de la Nación, los documentos de valor histórico (de conservación permanente o declarados como Bienes de Interés Cultural (BIC)), existentes en dichas entidades o en sus archivos institucionales. PARÁGRAFO 1. La Presidencia de la República, el Ministerio de Defensa y sus diferentes entidades, la Dirección Nacional de Inteligencia, el Departamento Administrativo Nacional de Estadística y el Departamento Administrativo de la Función Pública, por la naturaleza de la información que manejan y por estar regidos por normas especiales, solo están obligados a transferir la documentación de los fondos existentes en sus archivos históricos que tengan más de cincuenta (50) años de antigüedad, siempre que no tengan reserva constitucional y legal. Se podrá realizar la transferencia de documentos con menor antigüedad previo acuerdo con el Archivo General de la Nación",
+    "pregunta": "En octubre de 2026, Jorge, profesional del grupo de gestión documental del Departamento Administrativo de la Función Pública, prepara la transferencia secundaria al Archivo General de la Nación (AGN). En el archivo histórico de la entidad hay dos grupos de documentos de conservación permanente, sin reserva constitucional ni legal: circulares e informes de 1962 a 1975, y estudios de plantas de personal de 1978 a 1985. ¿Qué debe incluir Jorge en la transferencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las circulares e informes, porque superan los cincuenta años; los estudios de 1978 a 1985, solo si antes se acuerda con el AGN.",
+        "explicacion": "Correcta. La Función Pública está entre las entidades que solo deben transferir la documentación de su archivo histórico con más de cincuenta años, sin reserva; la de menor antigüedad puede transferirse previo acuerdo con el AGN (art. 2.8.2.9.4, par. 1). En octubre de 2026, lo de 1975 o antes supera los cincuenta años, y lo de 1978 a 1985 tiene entre 41 y 48."
+      },
+      {
+        "id": "B",
+        "texto": "Los dos grupos, porque ambos superan los treinta años de antigüedad, que es el límite que la norma especial fija para esta entidad.",
+        "explicacion": "Incorrecta. Aplica un límite de treinta años que no es el de esta regla. Para la Función Pública, la obligación cubre solo lo que tiene más de cincuenta años de antigüedad (art. 2.8.2.9.4, par. 1), y los estudios de 1978 a 1985 tienen entre 41 y 48."
+      },
+      {
+        "id": "C",
+        "texto": "Los dos grupos, porque las entidades del orden nacional deben transferir cada diez años al AGN todo lo de conservación permanente.",
+        "explicacion": "Incorrecta. Aplica la regla general de transferencia cada diez años (art. 2.8.2.9.4), pero la Función Pública tiene una regla especial: solo está obligada a transferir lo que supera los cincuenta años de antigüedad (par. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque la Función Pública maneja información especial y por eso está exenta de transferir los fondos de su archivo histórico.",
+        "explicacion": "Incorrecta. La norma especial no la exime: la obliga a transferir los documentos de su archivo histórico con más de cincuenta años de antigüedad y sin reserva (art. 2.8.2.9.4, par. 1), como las circulares e informes de 1962 a 1975."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la entidad es la Función Pública, la transferencia se hace en octubre de 2026 y ningún documento tiene reserva. Regla: estas entidades solo están obligadas a transferir al AGN los documentos de su archivo histórico con más de cincuenta años de antigüedad y sin reserva; los más recientes, previo acuerdo con el AGN (art. 2.8.2.9.4, par. 1, del Decreto 1080). Cálculo: 2026 − 50 = 1976; lo de 1962 a 1975 supera ese límite y lo de 1978 a 1985 no. Conclusión: solo circulares e informes, salvo acuerdo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-GD-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "gestion_documental",
+    "modulo": "Gestión Documental",
+    "tema": "Principios de la gestión documental",
+    "subtema": "Protección del medio ambiente y eficiencia: impresión solo por razones legales o de preservación histórica",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1080 de 2015",
+    "articulos": [
+      "art. 2.8.2.5.5, lits. b y j"
+    ],
+    "texto_fuente": "b) Eficiencia. Las entidades deben producir solamente los documentos necesarios para el cumplimiento de sus objetivos o los de una función o un proceso. [...] j) Protección del medio ambiente. Las entidades deben evitar la producción de documentos impresos en papel cuando este medio no sea requerido por razones legales o de preservación histórica, dada la longevidad del papel como medio de registro de información.",
+    "pregunta": "Óscar, auxiliar administrativo de la secretaría de planeación de un municipio, imprime todos los correos en los que los ciudadanos hacen consultas sencillas, que se responden también por correo, y los guarda en carpetas 'por seguridad'. Además, imprime y archiva en papel los documentos de la serie 'Plan de ordenamiento territorial', que la TRD declara de conservación permanente por su valor histórico. Su jefe le pide revisar esas dos prácticas a la luz de los principios de la gestión documental. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dejar de imprimir los correos de consultas, porque basta el medio electrónico, y dejar de imprimir también la serie del plan de ordenamiento.",
+        "explicacion": "Incorrecta. Acierta con los correos, pero el principio no prohíbe el papel: lo admite cuando lo requieren razones legales o de preservación histórica, que es el caso de una serie de conservación permanente por su valor histórico (art. 2.8.2.5.5, lit. j)."
+      },
+      {
+        "id": "B",
+        "texto": "Dejar de imprimir los correos de consultas, porque basta el medio electrónico, y mantener en papel la serie del plan de ordenamiento.",
+        "explicacion": "Correcta. Las entidades deben evitar imprimir documentos en papel cuando ese medio no lo requieren razones legales o de preservación histórica (lit. j), y solo deben producir los documentos necesarios (lit. b). Los correos de consultas, que se tramitan y responden por medio electrónico, no requieren papel; la serie de conservación permanente por su valor histórico sí lo justifica, por la longevidad del papel."
+      },
+      {
+        "id": "C",
+        "texto": "Seguir imprimiendo los correos de consultas, porque el papel dura más, y mantener en papel la serie del plan de ordenamiento.",
+        "explicacion": "Incorrecta. Acierta con la serie histórica, pero imprimir correos que se tramitan y responden por medio electrónico produce documentos innecesarios y no obedece a razones legales ni de preservación histórica (art. 2.8.2.5.5, lits. b y j)."
+      },
+      {
+        "id": "D",
+        "texto": "Seguir imprimiendo los correos de consultas, porque el papel dura más, y dejar de imprimir en cambio la serie del plan de ordenamiento.",
+        "explicacion": "Incorrecta. Invierte el principio: mantiene el papel donde no se necesita y lo quita donde sí lo justifican las razones de preservación histórica (art. 2.8.2.5.5, lit. j)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los correos de consultas se tramitan y responden por medio electrónico, mientras que la serie del plan de ordenamiento es de conservación permanente por su valor histórico. Regla: las entidades solo producen los documentos necesarios y evitan imprimir cuando el papel no es requerido por razones legales o de preservación histórica (art. 2.8.2.5.5, lits. b y j, del Decreto 1080). Conclusión: dejar de imprimir los correos y mantener la serie en papel.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76833",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
   }
 ]
