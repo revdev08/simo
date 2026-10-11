@@ -109,6 +109,8 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 | 6. Publicación | — | `estado: beta` (sin revisión humana) o `estable` (con revisión y datos) |
 | 7. Calibración | Datos de uso | Dificultad real, discriminación y distractores que nadie elige. Se retiran las que acierta menos del 5% o más del 95% |
 
+**La resolución a ciegas debe tener todas las normas del tema:** la ley y también su reglamento. En la TC-909-025 la clave era correcta según la Ley 909, pero el Decreto 1083 añade un requisito de 3 meses. El resolvedor solo tenía la ley y no lo detectó.
+
 **Dónde viven las preguntas:**
 - Los borradores se trabajan en `docs/banco/<lote>/`.
 - Al aprobarse, el lote se mueve a `data/preguntas/<tema>.json` y se agrega a la lista `BANCO` de `lib/questions.ts`. Esa es la única fuente que usa la app.
