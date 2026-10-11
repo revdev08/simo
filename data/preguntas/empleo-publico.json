@@ -1535,5 +1535,1492 @@
       "revisor_humano": null,
       "fecha": "2026-10-10"
     }
+  },
+  {
+    "id": "TC-EPC-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Vacancia definitiva y temporal: aviso previo a la CNSC",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "Ley 909 de 2004, art. 24, parágrafo 2 (modificado por el art. 1 de la Ley 1960 de 2019)",
+      "Decreto 1083 de 2015, art. 2.2.5.2.1, num. 10 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.5.2.2, nums. 4, 6 y 7 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Previo a proveer vacantes definitivas mediante encargo o nombramiento provisional, el nominador o en quien este haya delegado, informará la existencia de la vacante a la Comisión Nacional del Servido Civil a través del medio que esta indique. [...] El empleo queda vacante definitivamente, en los siguientes casos: [...] 10. Por traslado. [...] El empleo queda vacante temporalmente cuando su titular se encuentre en una de las siguientes situaciones: [...] 4. Comisión, salvo en la de servicios al interior. [...] 6. Suspendido en el ejercicio del cargo por decisión disciplinaria, fiscal o judicial. 7. Período de prueba en otro empleo de carrera.",
+    "pregunta": "El técnico de talento humano de una gobernación consolida las novedades de cuatro empleos de carrera que el gobernador piensa cubrir mediante encargo. Antes de que se expidan los encargos, debe identificar en cuál de esos empleos hay que informar la vacante a la Comisión Nacional del Servicio Civil (CNSC). ¿Cuál es ese empleo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El del profesional de carrera que ganó un concurso en otra entidad y allí fue nombrado en período de prueba.",
+        "explicacion": "Incorrecta. El período de prueba en otro empleo de carrera produce vacancia temporal (art. 2.2.5.2.2 num. 7): si el titular, que es de carrera, no lo supera, regresa a su empleo. El aviso previo solo se exige para vacantes definitivas."
+      },
+      {
+        "id": "B",
+        "texto": "El de la profesional comisionada por tres años para ejercer un empleo de libre nombramiento.",
+        "explicacion": "Incorrecta. La duración de la comisión no cambia la clase de vacancia. Toda comisión distinta de la de servicios al interior produce vacancia temporal (art. 2.2.5.2.2 num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "El de la auxiliar suspendida por seis meses en el ejercicio del cargo por una decisión disciplinaria.",
+        "explicacion": "Incorrecta. Confunde la suspensión con la destitución. La suspensión por decisión disciplinaria produce vacancia temporal (art. 2.2.5.2.2 num. 6)."
+      },
+      {
+        "id": "D",
+        "texto": "El del técnico que pasó a ocupar, por traslado, un empleo vacante de otra entidad pública.",
+        "explicacion": "Correcta. El traslado deja vacante en forma definitiva el empleo de origen (art. 2.2.5.2.1 num. 10). Antes de proveer una vacante definitiva por encargo o provisionalidad, el nominador debe informarla a la CNSC."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el traslado deja vacante en forma definitiva el empleo de origen (Decreto 1083, art. 2.2.5.2.1 num. 10), mientras que el período de prueba en otro empleo de carrera, la comisión y la suspensión disciplinaria son vacancias temporales (art. 2.2.5.2.2 nums. 7, 4 y 6). Regla: el parágrafo 2 del art. 24 de la Ley 909 (mod. Ley 1960) exige informar a la CNSC antes de proveer vacantes definitivas por encargo o nombramiento provisional. Conclusión: solo el empleo del técnico trasladado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Encargo en empleo de libre nombramiento y remoción por vacancia temporal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.5.3.3, inc. 1 y parágrafo (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.5.5.43, inc. 2 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Ley 909 de 2004, art. 24, incs. 4 y 5 (modificado por el art. 1 de la Ley 1960 de 2019)"
+    ],
+    "texto_fuente": "Las vacantes temporales en empleos de libre nombramiento y remoción podrán ser provistas mediante la figura del encargo, el cual deberá recaer en empleados de libre nombramiento y remoción o de carrera administrativa, previo cumplimiento de los requisitos exigidos para el desempeño del cargo. [...] Los encargos o nombramientos que se realicen en vacancias temporales, se efectuarán por el tiempo que dure la misma. [...] En caso de vacancia temporal, el encargo se efectuará durante el término de ésta. [...] En caso de vacancia definitiva el encargo será hasta por el término de tres (3) meses, prorrogable por tres (3) meses más, vencidos los cuales el empleo deberá ser provisto en forma definitiva.",
+    "pregunta": "La jefe de la Oficina Asesora de Planeación de una alcaldía, empleo de libre nombramiento y remoción, inició su licencia de maternidad. El alcalde quiere que, mientras ella está ausente, ejerza el cargo uno de estos tres servidores, que cumplen los requisitos y el perfil: Óscar, profesional universitario nombrado en provisionalidad hace seis años; Liliana, profesional universitaria de carrera, y Ramiro, asesor de libre nombramiento y remoción del despacho. ¿Qué acto puede proyectar el jefe de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El encargo de Liliana o de Ramiro, por el tiempo que se prolongue la ausencia de la titular.",
+        "explicacion": "Correcta. La licencia genera vacancia temporal. En un empleo de libre nombramiento y remoción, el encargo puede recaer en un empleado de carrera o en uno de libre nombramiento que cumpla requisitos y perfil, y en vacancia temporal dura lo que dure esa vacancia."
+      },
+      {
+        "id": "B",
+        "texto": "El encargo de Liliana o de Ramiro, por tres meses, prorrogables por otros tres meses.",
+        "explicacion": "Incorrecta. Acierta en las personas, pero aplica el plazo de tres meses prorrogables, que es el del encargo en vacancia definitiva. En vacancia temporal el encargo dura lo que dure la situación de la titular."
+      },
+      {
+        "id": "C",
+        "texto": "El encargo de cualquiera de los tres, por el tiempo que se prolongue la ausencia de la titular.",
+        "explicacion": "Incorrecta. Acierta en la duración, pero incluye a Óscar. Un provisional no es empleado de carrera ni de libre nombramiento y remoción, que son los únicos que pueden ser encargados en estos empleos."
+      },
+      {
+        "id": "D",
+        "texto": "El encargo de cualquiera de los tres, por tres meses, prorrogables por otros tres meses.",
+        "explicacion": "Incorrecta. Falla en las dos partes: incluye al provisional Óscar y aplica el plazo del encargo en vacancia definitiva."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el empleo es de libre nombramiento y remoción, la licencia lo deja vacante temporalmente y Óscar es provisional. Reglas: el art. 2.2.5.3.3 del Decreto 1083 (y el art. 24 de la Ley 909) permite encargar en esos empleos a servidores de carrera o de libre nombramiento y remoción, y en vacancia temporal el encargo dura lo que dure la vacancia (art. 2.2.5.3.3, parágrafo, y art. 2.2.5.5.43). Los 3 + 3 meses son para la vacancia definitiva. Conclusión: Liliana o Ramiro, durante la licencia.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Concursos de mérito",
+    "subtema": "Uso de la lista de elegibles para vacantes no convocadas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "Ley 909 de 2004, art. 31, num. 4 (modificado por el art. 6 de la Ley 1960 de 2019)",
+      "Decreto 1083 de 2015, art. 2.2.5.3.2, parágrafo 1 (modificado por el art. 1 del Decreto 498 de 2020)",
+      "Decreto 1083 de 2015, art. 2.2.5.2.1, num. 8 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Con los resultados de las pruebas la Comisión Nacional del Servicio Civil o la entidad contratada, por delegación de aquella, elaborará en estricto orden de mérito la lista de elegibles que tendrá una vigencia de dos (2) años. Con esta y en estricto orden de mérito se cubrirán las vacantes para las cuales se efectuó el concurso y las vacantes definitivas de cargos equivalentes no convocados, que surjan con posterioridad a la convocatoria del concurso en la misma Entidad. [...] El empleo queda vacante definitivamente, en los siguientes casos: [...] 8. Por estar gozando de pensión.",
+    "pregunta": "En marzo de 2024 se convocó un concurso para proveer dos empleos de Técnico Administrativo de una alcaldía. La lista de elegibles quedó en firme en abril de 2025; los dos empleos se proveyeron con los dos primeros y en la lista quedan cinco elegibles más. En julio de 2026, la profesional de talento humano revisa cuatro empleos equivalentes al convocado que no se ofertaron en ese concurso. ¿Cuál de ellos puede proveerse con esa lista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de la alcaldía que quedó vacante en octubre de 2023 por renuncia y hoy ocupa un provisional.",
+        "explicacion": "Incorrecta. La lista sigue vigente, pero solo cubre las vacantes de cargos equivalentes que surjan después de la convocatoria. Esta vacante es de octubre de 2023, anterior a la convocatoria de marzo de 2024."
+      },
+      {
+        "id": "B",
+        "texto": "El de la alcaldía que quedó vacante en mayo de 2026, cuando a su titular se le reconoció la pensión.",
+        "explicacion": "Correcta. La pensión produce vacancia definitiva; surgió después de la convocatoria (marzo de 2024), en la misma entidad, y la lista sigue vigente (en firme en abril de 2025, dura dos años). Se provee con el siguiente elegible en estricto orden de mérito."
+      },
+      {
+        "id": "C",
+        "texto": "El del instituto municipal de deportes, establecimiento público, vacante por renuncia en junio de 2026.",
+        "explicacion": "Incorrecta. La vacante es posterior a la convocatoria, pero está en otra entidad: el instituto es un establecimiento público distinto de la alcaldía. La lista solo cubre los cargos equivalentes de la misma entidad."
+      },
+      {
+        "id": "D",
+        "texto": "El de la alcaldía cuya titular inició en junio de 2026 una licencia no remunerada de un año.",
+        "explicacion": "Incorrecta. La licencia produce una vacancia temporal. La lista se usa para vacantes definitivas; la temporal se cubre por encargo o, si no es posible, con nombramiento provisional."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la lista (en firme en abril de 2025) sigue vigente en julio de 2026, pero solo el empleo vacante por pensión desde mayo de 2026 es una vacante definitiva, posterior a la convocatoria (marzo de 2024) y de la misma alcaldía. Regla: el art. 31 num. 4 de la Ley 909 (mod. Ley 1960) usa la lista, en estricto orden de mérito, para vacantes definitivas de cargos equivalentes no convocados que surjan después de la convocatoria en la misma entidad. Conclusión: solo ese empleo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Orden de protección de los provisionales cuando la lista es insuficiente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.3.2, parágrafo 2 (modificado por el art. 1 del Decreto 648 de 2017 y por el art. 1 del Decreto 498 de 2020)"
+    ],
+    "texto_fuente": "PARÁGRAFO 2. Cuando la lista de elegibles elaborada como resultado de un proceso de selección esté conformada por un número menor de aspirantes al de empleos ofertados a proveer, la administración, antes de efectuar los respectivos nombramientos en período de prueba y retirar del servicio a los provisionales, deberá tener en cuenta el siguiente orden de protección generado por: 1. Enfermedad catastrófica o algún tipo de discapacidad. 2. Acreditar la condición de padre o madre cabeza de familia en los términos señalados en las normas vigentes y la jurisprudencia sobre la materia. 3. Ostentar la condición de prepensionados en los términos señalados en las normas vigentes y la jurisprudencia sobre la materia. 4. Tener la condición de empleado amparado con fuero sindical.",
+    "pregunta": "Una gobernación ofertó a concurso cuatro empleos iguales de Profesional Universitario, ocupados por cuatro provisionales. La lista de elegibles quedó en firme con solo tres personas, así que uno de los provisionales seguirá en su empleo. Los provisionales son: Gloria, que tiene la condición de prepensionada; Hernán, miembro de la junta directiva del sindicato y amparado por fuero sindical; Patricia, madre cabeza de familia, y Andrés, el de mayor antigüedad, sin ninguna de esas condiciones. Ninguno tiene enfermedad catastrófica ni discapacidad. Según el Decreto 1083 de 2015, ¿a quién debe mantener la gobernación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A Gloria, porque la condición de prepensionada prevalece sobre las demás del caso.",
+        "explicacion": "Incorrecta. Los prepensionados ocupan el tercer lugar del orden de protección, después de quienes acreditan ser padre o madre cabeza de familia."
+      },
+      {
+        "id": "B",
+        "texto": "A Hernán, porque el fuero sindical prevalece sobre las demás condiciones del caso.",
+        "explicacion": "Incorrecta. El fuero sindical es el último criterio (cuarto lugar) del orden de protección que fija el decreto."
+      },
+      {
+        "id": "C",
+        "texto": "A Patricia, porque la condición de madre cabeza de familia prevalece sobre las demás.",
+        "explicacion": "Correcta. Como nadie tiene enfermedad catastrófica ni discapacidad (primer lugar), la protección le corresponde a quien acredita ser padre o madre cabeza de familia (segundo lugar), antes que al prepensionado (tercero) y al aforado sindical (cuarto)."
+      },
+      {
+        "id": "D",
+        "texto": "A Andrés, porque la mayor antigüedad en el empleo prevalece sobre esas condiciones.",
+        "explicacion": "Incorrecta. La antigüedad no es un criterio del orden de protección del parágrafo 2 del art. 2.2.5.3.2."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la lista tiene menos elegibles (3) que empleos ofertados (4), así que un provisional permanece. Regla: el parágrafo 2 del art. 2.2.5.3.2 del Decreto 1083 fija el orden de protección: 1) enfermedad catastrófica o discapacidad, 2) padre o madre cabeza de familia, 3) prepensionados y 4) fuero sindical. La antigüedad no es criterio. Conclusión: como nadie está en el primer grupo, se mantiene a Patricia.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Concursos de mérito",
+    "subtema": "Plazo para nombrar en período de prueba con la lista recibida",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.6.21",
+      "Ley 909 de 2004, art. 24, inc. 1 (modificado por el art. 1 de la Ley 1960 de 2019)"
+    ],
+    "texto_fuente": "En firme la lista de elegibles la Comisión Nacional del Servicio Civil enviará copia al jefe de la entidad para la cual se realizó el concurso, para que dentro de los diez (10) días hábiles siguientes al envío de la lista de elegibles y en estricto orden de mérito se produzca el nombramiento en período de prueba en el empleo objeto del concurso, el cual no podrá ser provisto bajo ninguna otra modalidad, una vez recibida la lista de elegibles. [...] Mientras se surte el proceso de selección para proveer empleos de carrera administrativa, los empleados de carrera tendrán derecho a ser encargados en estos",
+    "pregunta": "El viernes 2 de octubre de 2026, la CNSC envió a una alcaldía la lista de elegibles en firme para el empleo de Técnico Operativo que hoy ocupa una provisional. El técnico de talento humano arma el cronograma del nombramiento. El secretario general le propone, además, retirar de una vez a la provisional y encargar del empleo, mientras se nombra a quien ocupó el primer puesto, a un auxiliar de carrera del empleo inmediatamente inferior, con evaluación sobresaliente y sin sanciones. ¿Qué debe anotar el técnico sobre la fecha límite del nombramiento en período de prueba y sobre la propuesta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fecha límite: 19 de octubre. La propuesta no procede, porque desde que llegó la lista el empleo no puede cubrirse por encargo.",
+        "explicacion": "Correcta. Los 10 días hábiles siguientes al envío vencen el 19 de octubre, porque el lunes 12 es festivo. Además, recibida la lista, el empleo no puede proveerse de ninguna otra forma, así que no cabe el encargo."
+      },
+      {
+        "id": "B",
+        "texto": "Fecha límite: 16 de octubre. La propuesta procede, porque el auxiliar tiene derecho a ser encargado mientras se nombra.",
+        "explicacion": "Incorrecta. Falla en las dos partes: cuenta el festivo del 12 de octubre como día hábil y admite el encargo, que solo procede mientras se surte el proceso de selección y no después de recibida la lista."
+      },
+      {
+        "id": "C",
+        "texto": "Fecha límite: 19 de octubre. La propuesta procede, porque el auxiliar tiene derecho a ser encargado mientras se nombra.",
+        "explicacion": "Incorrecta. El plazo está bien contado, pero una vez recibida la lista el empleo no puede proveerse bajo otra modalidad. El derecho al encargo opera mientras se surte el proceso de selección."
+      },
+      {
+        "id": "D",
+        "texto": "Fecha límite: 16 de octubre. La propuesta no procede, porque desde que llegó la lista el empleo no puede cubrirse por encargo.",
+        "explicacion": "Incorrecta. Acierta en que no cabe el encargo, pero cuenta el lunes 12 de octubre, que es festivo, como día hábil. El plazo vence el 19 de octubre."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la lista en firme se envió el viernes 2 de octubre de 2026. Regla: el art. 2.2.6.21 del Decreto 1083 ordena nombrar en período de prueba dentro de los 10 días hábiles siguientes al envío y prohíbe proveer el empleo de otra forma una vez recibida la lista. Cálculo: del 5 al 9 de octubre van 5 días; el lunes 12 es festivo; del 13 al 16 van 9 y el 19 completa 10 (sin el festivo sería el 16). Conclusión: plazo hasta el 19 de octubre y no cabe el encargo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Plazo para la posesión y su prórroga",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.1.7 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Aceptado el nombramiento, la persona designada deberá tomar posesión del empleo dentro de los diez (10) días hábiles siguientes. Este término podrá prorrogarse, por escrito, hasta por noventa días (90) hábiles más, si el designado no residiere en el lugar de ubicación del empleo, o por causa justificada a juicio de la autoridad nominadora.",
+    "pregunta": "Un auxiliar administrativo de la oficina de talento humano de una gobernación lleva el control de las posesiones. Mauricio fue nombrado en período de prueba y comunicó su aceptación el lunes 3 de agosto de 2026. Como vive en otro departamento, el miércoles 12 de agosto pidió por escrito más tiempo para trasladarse con su familia. ¿Qué debe anotar el auxiliar sobre el vencimiento del plazo inicial para posesionarse y sobre la prórroga que puede concederse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el plazo inicial vence el 18 de agosto y que la prórroga puede llegar a 90 días hábiles más.",
+        "explicacion": "Incorrecta. La prórroga está bien, pero el conteo omite el festivo del lunes 17 de agosto. Con los festivos del 7 y del 17 de agosto, el décimo día hábil es el 19."
+      },
+      {
+        "id": "B",
+        "texto": "Que el plazo inicial vence el 19 de agosto y que la prórroga puede llegar a 10 días hábiles más.",
+        "explicacion": "Incorrecta. El vencimiento está bien contado, pero la prórroga no es por un término igual al inicial: puede llegar a 90 días hábiles cuando el designado no reside en el lugar del empleo."
+      },
+      {
+        "id": "C",
+        "texto": "Que el plazo inicial vence el 18 de agosto y que la prórroga puede llegar a 10 días hábiles más.",
+        "explicacion": "Incorrecta. Falla en las dos partes: omite el festivo del lunes 17 de agosto y limita la prórroga a un término igual al inicial, cuando puede llegar a 90 días hábiles."
+      },
+      {
+        "id": "D",
+        "texto": "Que el plazo inicial vence el 19 de agosto y que la prórroga puede llegar a 90 días hábiles más.",
+        "explicacion": "Correcta. Desde la aceptación corren 10 días hábiles: 4, 5 y 6 de agosto; el 7 es festivo; del 10 al 14; el 17 es festivo; 18 y 19. Como Mauricio no reside en el lugar del empleo, el plazo puede prorrogarse por escrito hasta 90 días hábiles más."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Mauricio aceptó el lunes 3 de agosto de 2026 y no reside donde está el empleo. Regla: el art. 2.2.5.1.7 del Decreto 1083 da 10 días hábiles desde la aceptación para posesionarse, prorrogables por escrito hasta 90 días hábiles más si el designado no reside en el lugar del empleo. Cálculo: 4, 5 y 6 de agosto (3); el 7 es festivo; del 10 al 14 (8); el 17 es festivo; 18 (9) y 19 (10). Conclusión: vence el 19 de agosto y la prórroga puede llegar a 90 días hábiles.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Concursos de mérito",
+    "subtema": "Período de prueba de la empleada en estado de embarazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "Ley 909 de 2004, art. 51 num. 2",
+      "Decreto 1083 de 2015, art. 2.2.6.31",
+      "Decreto 1083 de 2015, art. 2.2.6.30"
+    ],
+    "texto_fuente": "Cuando un cargo de carrera administrativa se encuentre provisto mediante nombramiento en período de prueba con una empleada en estado de embarazo, dicho periodo se interrumpirá y se reiniciará una vez culminé el término de la licencia de maternidad. [...] Cuando una empleada en estado de embarazo se encuentre vinculada a un empleo en período de prueba, sin perjuicio de continuar prestando el servicio, este período se suspenderá a partir de la fecha en que dé aviso por escrito al jefe de la unidad de personal o a quien haga sus veces, y continuará al vencimiento de los tres (3) meses siguientes a la fecha del parto o de la culminación de la licencia remunerada cuando se trate de aborto o parto prematuro no viable. [...] Cuando por justa causa haya interrupción en el período de prueba por un lapso superior a veinte (20) días continuos, este será prorrogado por igual término.",
+    "pregunta": "Natalia se posesionó el lunes 2 de febrero de 2026 en período de prueba como profesional universitaria de un ministerio. El lunes 6 de abril de 2026 informó por escrito a la jefe de talento humano que estaba embarazada, y siguió trabajando con normalidad. Su hijo nació el 16 de septiembre de 2026, y Natalia disfrutó su licencia de maternidad del 16 de septiembre de 2026 al 19 de enero de 2027. La jefe debe registrar en el sistema de evaluación la situación del período de prueba de Natalia. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el período siguió corriendo, porque ella continuó trabajando, y que debía calificarse en agosto de 2026.",
+        "explicacion": "Incorrecta. La suspensión opera aunque la empleada siga prestando el servicio (Decreto 1083, art. 2.2.6.31). Calificarla a los seis meses de la posesión desconoce la regla especial del embarazo."
+      },
+      {
+        "id": "B",
+        "texto": "Que el período dejó de correr el 6 de abril de 2026, día del aviso, y vuelve a correr el 20 de enero de 2027.",
+        "explicacion": "Correcta. El período deja de correr desde el aviso escrito al jefe de personal (6 de abril de 2026), aunque ella siga trabajando (Decreto 1083, art. 2.2.6.31), y se reinicia cuando culmina la licencia de maternidad (Ley 909, art. 51 num. 2). La licencia terminó el 19 de enero de 2027; el período vuelve a correr el 20 de enero."
+      },
+      {
+        "id": "C",
+        "texto": "Que el período dejó de correr el 16 de septiembre de 2026, día del parto, y vuelve a correr el 16 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Ubica mal el inicio: la suspensión empieza con el aviso escrito, no con el parto. Y toma los tres meses desde el parto que menciona el decreto, cuando la Ley 909, de mayor jerarquía, reinicia el período al culminar la licencia de maternidad."
+      },
+      {
+        "id": "D",
+        "texto": "Que el período se prolonga por los días de la licencia de maternidad, igual que cualquier interrupción mayor de 20 días.",
+        "explicacion": "Incorrecta. Aplica la prórroga general por interrupciones superiores a 20 días continuos (art. 2.2.6.30). Para el embarazo hay una regla especial: el período se suspende desde el aviso escrito y se reinicia al terminar la licencia de maternidad."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Natalia avisó por escrito el 6 de abril de 2026 y su licencia de maternidad terminó el 19 de enero de 2027. Regla: el art. 2.2.6.31 del Decreto 1083 suspende el período de prueba desde el aviso escrito al jefe de personal, aunque ella siga trabajando, y el art. 51 num. 2 de la Ley 909 lo reinicia al culminar la licencia de maternidad. Prima la ley sobre los tres meses desde el parto del decreto. No aplica la prórroga general del art. 2.2.6.30. Conclusión: deja de correr el 6 de abril de 2026 y vuelve a correr el 20 de enero de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-EPC-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Concursos de mérito",
+    "subtema": "Supresión del empleo durante el período de prueba",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.6.27, incs. 1 y 3",
+      "Decreto 1083 de 2015, art. 2.2.6.22, inc. 1",
+      "Ley 909 de 2004, art. 31, num. 4 (modificado por el art. 6 de la Ley 1960 de 2019)"
+    ],
+    "texto_fuente": "Cuando se reforme total o parcialmente la planta de empleos de una entidad y sea suprimido el cargo que ejerza un empleado sin derechos de carrera que se encuentre en período de prueba, este deberá ser incorporado al empleo igual o equivalente que exista en la nueva planta de personal. [...] De no poder efectuarse la incorporación a un empleo igual o equivalente, el nombre de la persona se reintegrará, mediante resolución motivada proferida por la Comisión Nacional del Servicio Civil, a la lista de elegibles en el puesto que corresponda, si ésta aún estuviere vigente. [...] Quien sea nombrado y tome posesión del empleo para el cual concursó, con base en una lista de elegibles, se entenderá retirado de ésta [...] la lista de elegibles que tendrá una vigencia de dos (2) años.",
+    "pregunta": "Felipe ingresó por primera vez al servicio público tras ocupar el primer puesto de la lista de elegibles de un concurso abierto, lista que quedó en firme en julio de 2025. Se posesionó en período de prueba como Técnico Administrativo de un establecimiento público. En marzo de 2026, antes de terminar ese período, la entidad reformó su planta y suprimió el empleo, y en la nueva planta no hay ninguno igual o equivalente. ¿Qué procede respecto de Felipe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Debe pagársele la indemnización que la ley reconoce a los empleados de carrera cuyo empleo se suprime.",
+        "explicacion": "Incorrecta. La indemnización por supresión es un derecho de los empleados de carrera. Felipe estaba en período de prueba y aún no tenía derechos de carrera."
+      },
+      {
+        "id": "B",
+        "texto": "Puede escoger entre la indemnización y la reincorporación preferente en un empleo equivalente.",
+        "explicacion": "Incorrecta. Esa opción es propia de los empleados de carrera a quienes se les suprime el empleo. Además, en la nueva planta no existe un empleo equivalente."
+      },
+      {
+        "id": "C",
+        "texto": "La CNSC debe, mediante acto motivado, volver a incluirlo en la lista en el lugar que le corresponda.",
+        "explicacion": "Correcta. Si el empleado en período de prueba no puede ser incorporado a un empleo igual o equivalente, la CNSC reintegra su nombre a la lista de elegibles por resolución motivada, siempre que la lista siga vigente. En marzo de 2026 lo está, porque quedó en firme en julio de 2025 y dura dos años."
+      },
+      {
+        "id": "D",
+        "texto": "Queda retirado del servicio y de la lista, porque ya se posesionó con base en ella y no tenía derechos de carrera.",
+        "explicacion": "Incorrecta. Es cierto que la posesión retira de la lista, pero el decreto prevé una regla especial para la supresión del empleo durante el período de prueba: el nombre vuelve a la lista si esta sigue vigente."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Felipe estaba en período de prueba, sin derechos de carrera, y la nueva planta no tiene un empleo igual o equivalente; la lista quedó en firme en julio de 2025 y en marzo de 2026 sigue vigente (dos años, art. 31 num. 4 de la Ley 909). Regla: el art. 2.2.6.27 del Decreto 1083 ordena que, si no puede incorporarse, la CNSC reintegre su nombre a la lista por resolución motivada, si esta sigue vigente. La indemnización y la reincorporación son derechos de carrera. Conclusión: vuelve a la lista.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-EPC-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Concursos de mérito",
+    "subtema": "Movimientos de personal durante el período de prueba",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.6.29",
+      "Decreto 1083 de 2015, art. 2.2.5.4.1, num. 2 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Ley 909 de 2004, art. 24, inc. 1 (modificado por el art. 1 de la Ley 1960 de 2019)"
+    ],
+    "texto_fuente": "El empleado que se encuentre en período de prueba tiene derecho a permanecer en el cargo por el término de éste, a menos que incurra en falta disciplinaria o causa legal que ocasione su retiro. Durante este período no se le podrá efectuar ningún movimiento dentro de la planta de personal que implique el ejercicio de funciones distintas a las indicadas en la convocatoria que sirvió de base para su nombramiento o ascenso. [...] A los empleados que se encuentren en servicio activo se les podrá efectuar los siguientes movimientos de personal: [...] 2. Encargo. [...] Mientras se surte el proceso de selección para proveer empleos de carrera administrativa, los empleados de carrera tendrán derecho a ser encargados en estos si acreditan los requisitos para su ejercicio",
+    "pregunta": "Laura trabajaba en el sector privado y se posesionó el 1 de julio de 2026 en período de prueba como Profesional Universitario de una gobernación, tras ganar un concurso abierto. En septiembre quedó vacante en forma definitiva el empleo de Profesional Especializado inmediatamente superior al suyo. Su jefe quiere que ella lo ejerza por encargo mientras se hace el concurso, porque es la más destacada del equipo y cumple los requisitos, y pide concepto a la profesional de talento humano. ¿Qué debe conceptuar la profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que es viable si una evaluación parcial de su período de prueba arroja un nivel sobresaliente.",
+        "explicacion": "Incorrecta. Una evaluación parcial no convierte a Laura en empleada de carrera, y el encargo implicaría ejercer funciones distintas de las de su convocatoria, lo que está prohibido durante el período de prueba."
+      },
+      {
+        "id": "B",
+        "texto": "Que no es viable, porque aún no es de carrera y no puede asumir funciones ajenas a las de su empleo.",
+        "explicacion": "Correcta. El derecho al encargo es de los empleados de carrera, y Laura todavía no lo es. Además, al empleado en período de prueba no se le puede hacer ningún movimiento de personal, como el encargo, que implique funciones distintas de las de la convocatoria."
+      },
+      {
+        "id": "C",
+        "texto": "Que es viable si el período de prueba se suspende mientras dure el encargo y se reanuda cuando este termine.",
+        "explicacion": "Incorrecta. La norma no prevé suspender el período de prueba para permitir un encargo. Lo que hace es prohibir el movimiento durante ese período."
+      },
+      {
+        "id": "D",
+        "texto": "Que no es viable mientras no cumpla un año en la entidad, porque el encargo exige esa antigüedad mínima.",
+        "explicacion": "Incorrecta. Confunde el requisito de no haber sido sancionado en el último año con una antigüedad mínima, que la ley no exige. El impedimento real es que está en período de prueba y no es de carrera."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Laura está en período de prueba y nunca había tenido derechos de carrera. Reglas: el art. 24 de la Ley 909 (mod. Ley 1960) reserva el derecho al encargo a los empleados de carrera, y el art. 2.2.6.29 del Decreto 1083 prohíbe hacer al empleado en período de prueba movimientos que impliquen funciones distintas de las de la convocatoria; el encargo es un movimiento de personal (art. 2.2.5.4.1). Conclusión: el encargo no es viable.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-EPC-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Orden para la provisión definitiva de los empleos de carrera",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.3.2, nums. 1 a 4 e inciso final (modificado por el art. 1 del Decreto 648 de 2017 y por el art. 1 del Decreto 498 de 2020)"
+    ],
+    "texto_fuente": "La provisión definitiva de los empleos de carrera se efectuará teniendo en cuenta el siguiente orden: 1. Con la persona que al momento de su retiro ostentaba derechos de carrera y cuyo reintegro haya sido ordenado por autoridad judicial. 2. Por traslado del empleado con derechos de carrera que demuestre su condición de desplazado por razones de violencia en los términos de la Ley 387 de 1997, una vez impartida la orden por la Comisión Nacional del Servicio Civil. 3. Con la persona de carrera administrativa a la cual se le haya suprimido el cargo y que hubiere optado por el derecho preferencial a ser reincorporado a empleos iguales o equivalentes, conforme con las reglas establecidas en el presente decreto y de acuerdo con lo ordenado por la Comisión Nacional del Servicio Civil. [...] Si agotadas las anteriores opciones no fuere posible la provisión del empleo deberá adelantarse proceso de selección específico para la respectiva entidad.",
+    "pregunta": "En un ministerio quedó vacante en forma definitiva un empleo de carrera de Profesional Universitario. Ese mismo mes llegaron tres solicitudes para ocuparlo: una sentencia ordena reintegrar a Tomás a un empleo igual a ese, del que fue retirado cuando ya tenía derechos de carrera; la CNSC ordenó el traslado de Julián, empleado de carrera de otra entidad que demostró su condición de desplazado por la violencia, y la CNSC también ordenó reincorporar a Beatriz, empleada de carrera a quien le suprimieron un empleo equivalente y que optó por la reincorporación. ¿Con quién debe proveerse el empleo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con Tomás, porque cumplir el fallo que ordena su reintegro prevalece sobre las demás solicitudes.",
+        "explicacion": "Correcta. En el orden para la provisión definitiva de los empleos de carrera, el primer lugar es para la persona con derechos de carrera cuyo reintegro ordenó una autoridad judicial."
+      },
+      {
+        "id": "B",
+        "texto": "Con Beatriz, porque la reincorporación por supresión del empleo prevalece sobre las demás solicitudes.",
+        "explicacion": "Incorrecta. El derecho preferencial de reincorporación ocupa el tercer lugar del orden, después del reintegro judicial y del traslado del desplazado por la violencia."
+      },
+      {
+        "id": "C",
+        "texto": "Con Julián, porque el traslado por razones de violencia prevalece sobre las demás solicitudes.",
+        "explicacion": "Incorrecta. El traslado del empleado de carrera desplazado ocupa el segundo lugar; antes está el reintegro ordenado por un juez."
+      },
+      {
+        "id": "D",
+        "texto": "Con ninguno: el empleo debe ofertarse a concurso, porque la provisión definitiva se basa en el mérito.",
+        "explicacion": "Incorrecta. El concurso solo procede si, agotadas las opciones del orden de provisión, no es posible proveer el empleo. Aquí hay tres personas con derecho a ocuparlo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: concurren un reintegro ordenado por un juez (Tomás), un traslado de desplazado ordenado por la CNSC (Julián) y una reincorporación por supresión (Beatriz). Regla: el art. 2.2.5.3.2 del Decreto 1083 fija el orden para la provisión definitiva: 1) reintegro judicial, 2) traslado del desplazado, 3) reincorporación por supresión y 4) primero de la lista de elegibles; el concurso procede solo agotadas esas opciones. Conclusión: el empleo se provee con Tomás.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-EPC-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Terminación anticipada del nombramiento provisional",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.5.3.4 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Ley 909 de 2004, art. 25"
+    ],
+    "texto_fuente": "Antes de cumplirse el término de duración del encargo, de la prórroga o del nombramiento provisional, el nominador, por resolución motivada, podrá darlos por terminados. [...] Los empleos de carrera cuyos titulares se encuentren en situaciones administrativas que impliquen separación temporal de los mismos serán provistos en forma provisional solo por el tiempo que duren aquellas situaciones, cuando no fuere posible proveerlos mediante encargo con servidores públicos de carrera.",
+    "pregunta": "En un municipio, una auxiliar administrativa ocupa en provisionalidad un empleo de carrera cuyo titular tiene licencia no remunerada para adelantar estudios durante doce meses. A los cinco meses, un empleado de carrera del empleo inmediatamente inferior obtuvo evaluación sobresaliente y el alcalde decidió encargarlo de ese empleo. El técnico de talento humano debe proyectar el acto que pone fin a la provisionalidad antes del regreso del titular. ¿Cómo debe proyectarlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como un acto sin motivación, porque el provisional carece de estabilidad, igual que el de libre nombramiento.",
+        "explicacion": "Incorrecta. Asimila al provisional con el empleado de libre nombramiento y remoción. La terminación anticipada del nombramiento provisional exige resolución motivada."
+      },
+      {
+        "id": "B",
+        "texto": "No puede proyectarlo: la provisionalidad debe mantenerse hasta que el titular regrese de su licencia.",
+        "explicacion": "Incorrecta. El nombramiento provisional puede terminarse antes de su término. Además, el provisional solo procede cuando no es posible el encargo con un empleado de carrera, y ahora sí lo es."
+      },
+      {
+        "id": "C",
+        "texto": "Como un acto motivado del alcalde, que exponga la razón por la que la provisionalidad termina antes.",
+        "explicacion": "Correcta. El nominador puede dar por terminado el nombramiento provisional antes de cumplirse su término, por resolución motivada. Aquí la razón es que ya existe un empleado de carrera con derecho a ser encargado."
+      },
+      {
+        "id": "D",
+        "texto": "Como un acto motivado de la CNSC, que es la autoridad que vigila la provisión de los empleos de carrera.",
+        "explicacion": "Incorrecta. Confunde competencias. La terminación la decide el nominador (el alcalde); la CNSC vigila la carrera, pero no expide este acto."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la provisionalidad cubría una vacancia temporal y apareció un empleado de carrera con derecho a ser encargado. Reglas: el art. 25 de la Ley 909 solo admite el nombramiento provisional cuando no es posible el encargo con servidores de carrera, y el art. 2.2.5.3.4 del Decreto 1083 permite al nominador terminarlo antes de su término por resolución motivada. Conclusión: el técnico debe proyectar un acto motivado del alcalde.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-EPC-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Comisión para desempeñar un empleo de libre nombramiento y remoción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.39, inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Cuando un empleado de carrera con evaluación anual del desempeño sobresaliente sea nombrado en un cargo de libre nombramiento y remoción o de período, tendrá derecho a que el jefe de la entidad a la cual esté vinculado le otorgue, mediante acto administrativo motivado, la respectiva comisión para el ejercicio del empleo, con el único fin de preservarle los derechos inherentes a la carrera.",
+    "pregunta": "Andrea es profesional universitaria de carrera en una alcaldía y su última evaluación anual fue sobresaliente. El gobernador del departamento la nombró secretaria de planeación departamental, empleo de libre nombramiento y remoción, y ella quiere conservar sus derechos de carrera mientras ejerce ese cargo. ¿Quién le otorga la comisión y de qué forma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El gobernador, en el mismo decreto con el que la nombró como secretaria de planeación.",
+        "explicacion": "Incorrecta. El gobernador es el nominador del nuevo empleo, pero la comisión la otorga el jefe de la entidad donde Andrea tiene sus derechos de carrera."
+      },
+      {
+        "id": "B",
+        "texto": "El alcalde, como jefe de la entidad donde ella tiene sus derechos de carrera, mediante acto motivado.",
+        "explicacion": "Correcta. El empleado de carrera con evaluación anual sobresaliente tiene derecho a que el jefe de la entidad a la que está vinculado le otorgue la comisión mediante acto administrativo motivado, para preservar sus derechos de carrera."
+      },
+      {
+        "id": "C",
+        "texto": "La CNSC, a solicitud del jefe de talento humano de la alcaldía, mediante una resolución.",
+        "explicacion": "Incorrecta. Confunde competencias. La CNSC administra la carrera, pero no concede las comisiones de los empleados; eso le corresponde al jefe de la entidad."
+      },
+      {
+        "id": "D",
+        "texto": "Nadie: con la evaluación sobresaliente, la comisión se entiende concedida con la posesión.",
+        "explicacion": "Incorrecta. La evaluación sobresaliente da derecho a la comisión, pero esta debe otorgarse expresamente mediante acto administrativo motivado."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Andrea es de carrera en la alcaldía, tiene evaluación anual sobresaliente y fue nombrada en un empleo de libre nombramiento y remoción de la gobernación. Regla: el art. 2.2.5.5.39 del Decreto 1083 le da derecho a que el jefe de la entidad a la que está vinculada le otorgue la comisión mediante acto administrativo motivado, para preservar sus derechos de carrera. Conclusión: la otorga el alcalde mediante acto motivado.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-EPC-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Registro Público de Carrera",
+    "subtema": "Actualización de la inscripción por traslado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.7.4",
+      "art. 2.2.7.3",
+      "art. 2.2.7.6, inc. 2"
+    ],
+    "texto_fuente": "Al empleado inscrito en carrera administrativa que cambie de empleo por ascenso, traslado, incorporación, reincorporación, se le deberá actualizar su inscripción en el Registro Público de Carrera Administrativa. [...] Las solicitudes de inscripción o de actualización serán presentadas ante la Comisión Nacional del Servicio Civil únicamente por el jefe de la unidad de personal o por quien haga sus veces de la entidad en donde el empleado presta sus servicios. [...] Toda solicitud de actualización en el Registro Público de carrera administrativa que se presente ante la Comisión Nacional del Servicio Civil, deberá estar acompañada de los soportes documentales necesarios",
+    "pregunta": "Rosa, técnica administrativa inscrita en carrera, fue trasladada de la secretaría de hacienda a un empleo vacante de la secretaría de gobierno del mismo municipio, de igual categoría y con funciones afines. Le pregunta al técnico de talento humano si hay que hacer algún trámite ante la CNSC respecto del Registro Público de Carrera y quién debe hacerlo. ¿Qué debe responderle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no hay trámite alguno, porque con el traslado ella conserva sus derechos de carrera y su antigüedad.",
+        "explicacion": "Incorrecta. Es cierto que el trasladado conserva sus derechos y su antigüedad, pero cambió de empleo, y eso obliga a actualizar la inscripción en el Registro."
+      },
+      {
+        "id": "B",
+        "texto": "Que ella misma debe pedir a la CNSC el cambio en el Registro, adjuntando el acto de su traslado.",
+        "explicacion": "Incorrecta. El empleado no presenta directamente la solicitud. Solo la presenta el jefe de la unidad de personal, o quien haga sus veces, de la entidad donde presta sus servicios."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe pedirlo la comisión de personal de la alcaldía, que es la que remite el caso a la CNSC.",
+        "explicacion": "Incorrecta. Confunde competencias. La comisión de personal no tramita las actualizaciones del Registro; esa solicitud le corresponde al jefe de personal."
+      },
+      {
+        "id": "D",
+        "texto": "Que el cambio en el Registro lo pide el jefe de talento humano ante la CNSC, con los soportes del traslado.",
+        "explicacion": "Correcta. Al inscrito que cambia de empleo por traslado se le actualiza la inscripción. La solicitud ante la CNSC la presenta el jefe de la unidad de personal, con los soportes documentales."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Rosa está inscrita en carrera y cambió de empleo por traslado. Reglas: el art. 2.2.7.4 del Decreto 1083 ordena actualizar la inscripción de quien cambia de empleo por traslado; el art. 2.2.7.3 dice que las solicitudes ante la CNSC las presenta únicamente el jefe de la unidad de personal, y el art. 2.2.7.6 exige anexar los soportes. Conservar los derechos de carrera no elimina la actualización. Conclusión: la solicita el jefe de talento humano, con los soportes.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-EPC-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Provisión de empleos",
+    "subtema": "Encargo de quien superó el período de prueba sin estar inscrito",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "Ley 909 de 2004, art. 24, incs. 1 a 3 (modificado por el art. 1 de la Ley 1960 de 2019)",
+      "Decreto 1083 de 2015, art. 2.2.7.6, inc. 1"
+    ],
+    "texto_fuente": "Mientras se surte el proceso de selección para proveer empleos de carrera administrativa, los empleados de carrera tendrán derecho a ser encargados en estos si acreditan los requisitos para su ejercicio, poseen las aptitudes y habilidades para su desempeño, no han sido sancionados disciplinariamente en el último año y su última evaluación del desempeño es sobresaliente. En el evento en que no haya empleados de carrera con evaluación sobresaliente, el encargo deberá recaer en quienes tengan las más altas calificaciones descendiendo del nivel sobresaliente al satisfactorio, de conformidad con el sistema de evaluación que estén aplicando las entidades. [...] El encargo deberá recaer en un empleado que se encuentre desempeñando el cargo inmediatamente inferior de la planta de personal de la entidad. [...] Para todos los efectos se considera como empleados de carrera a quienes estén inscritos en el Registro Público de Carrera Administrativa y a quienes habiendo superado satisfactoriamente el período de prueba no se encuentren inscritos en él.",
+    "pregunta": "En una gobernación quedó vacante en forma definitiva un empleo de Profesional Especializado, que se proveerá por encargo mientras se adelanta el concurso. En el empleo inmediatamente inferior hay tres servidores que cumplen los requisitos, tienen las aptitudes y no registran sanciones: Paula, que aprobó su período de prueba en noviembre de 2024 y obtuvo sobresaliente en la evaluación anual que cerró el 31 de enero de 2026, aunque la CNSC todavía no ha anotado su inscripción; Jorge, provisional desde 2018, con excelentes resultados en los seguimientos de su jefe, y Esteban, inscrito en carrera desde 2015, cuya última evaluación anual fue satisfactoria. ¿A quién corresponde el encargo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A Paula, porque cuenta como empleada de carrera y su última evaluación supera la de Esteban.",
+        "explicacion": "Correcta. Quien superó el período de prueba se considera empleado de carrera para todos los efectos, aunque no esté inscrito. Entre los de carrera del empleo inmediatamente inferior, el encargo es para quien tiene evaluación sobresaliente, y solo si no lo hay se desciende al nivel satisfactorio."
+      },
+      {
+        "id": "B",
+        "texto": "A Esteban, porque mientras la CNSC no anote la inscripción, Paula no tiene derechos de carrera.",
+        "explicacion": "Incorrecta. La falta de anotación en el Registro no le quita a Paula la condición de empleada de carrera, que adquirió al superar el período de prueba."
+      },
+      {
+        "id": "C",
+        "texto": "A Jorge, porque su antigüedad en el empleo inferior y sus resultados lo ponen por delante.",
+        "explicacion": "Incorrecta. El derecho al encargo en empleos de carrera es de los empleados de carrera. Un provisional no lo tiene, sin importar su antigüedad."
+      },
+      {
+        "id": "D",
+        "texto": "A Paula o a Esteban, a elección del gobernador, porque ambos alcanzan al menos el nivel satisfactorio.",
+        "explicacion": "Incorrecta. No hay libre elección: el encargo recae en quien tiene evaluación sobresaliente, y solo si no lo hay se desciende al satisfactorio."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Paula superó el período de prueba, aunque la CNSC no ha anotado su inscripción, y su última evaluación es sobresaliente; Esteban es satisfactorio y Jorge es provisional. Reglas: el art. 24 de la Ley 909 (mod. Ley 1960) da el encargo a los empleados de carrera del cargo inmediatamente inferior con evaluación sobresaliente, y solo si no los hay desciende al satisfactorio; el art. 2.2.7.6 del Decreto 1083 tiene como de carrera a quien superó el período de prueba sin estar inscrito. Conclusión: el encargo es para Paula.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-015",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Evaluación del desempeño",
+    "subtema": "Período anual: lapsos servidos de treinta días o menos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.8.1.4 num. 1",
+      "art. 2.2.8.2.1 inc. 1"
+    ],
+    "texto_fuente": "1. Por el período anual comprendido entre el 1 de febrero y el 31 de enero del año siguiente, calificación que deberá producirse dentro de los quince (15) días siguientes al vencimiento de dicho período y que será la sumatoria de dos evaluaciones semestrales, realizadas una por el período comprendido entre el 1 de febrero y el 31 de julio y otra por el período comprendido entre el 1 de agosto y el 31 de enero del siguiente año. Cuando el empleado no haya servido la totalidad del año se calificarán los servicios correspondientes al período laboral cuando este sea superior a treinta (30) días. Los períodos inferiores a este lapso serán calificados conjuntamente con el período siguiente. [...] Al vencimiento del período de prueba el empleado será evaluado en su desempeño laboral y deberá producirse la calificación definitiva de servicios",
+    "pregunta": "La técnica de talento humano de una gobernación prepara la calificación anual del período que terminó el 31 de enero de 2026. Dos empleados que ganaron concursos superaron su período de prueba, que ya fue calificado, y quedaron inscritos en carrera: el período de prueba de Pedro terminó el 31 de octubre de 2025 y el de Rosa, el 9 de enero de 2026. Desde el día siguiente, cada uno siguió en su empleo como empleado de carrera. ¿Cómo debe tratar sus servicios en la calificación anual?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Calificar ahora los servicios de los dos, porque ambos los prestaron como empleados de carrera dentro del período.",
+        "explicacion": "Incorrecta. Rosa solo sirvió como empleada de carrera del 10 al 31 de enero de 2026 (22 días). Los lapsos que no superan 30 días no se califican aparte, sino junto con el período siguiente."
+      },
+      {
+        "id": "B",
+        "texto": "Calificar ahora los servicios de Pedro; los de Rosa, junto con el período siguiente, porque sirvió 22 días.",
+        "explicacion": "Correcta. Pedro sirvió 92 días (1 de noviembre de 2025 a 31 de enero de 2026), más de 30, y se califica en esta calificación anual. Los 22 días de Rosa se califican junto con el período que empezó el 1 de febrero de 2026 (art. 2.2.8.1.4 num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "No calificar ahora a ninguno, porque ninguno completó un semestre de servicio como empleado de carrera.",
+        "explicacion": "Incorrecta. La norma no exige un semestre: si el empleado no sirvió todo el año, se califica el lapso servido cuando supera 30 días. Pedro sirvió 92."
+      },
+      {
+        "id": "D",
+        "texto": "Calificar ahora los de Pedro y no calificar los de Rosa, porque los cubre la calificación de su período de prueba.",
+        "explicacion": "Incorrecta. La calificación del período de prueba se produce a su vencimiento (9 de enero) y no cubre los días posteriores. Los 22 días de Rosa no se pierden: se califican con el período siguiente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: como empleados de carrera, Pedro sirvió del 1 de noviembre de 2025 al 31 de enero de 2026 (92 días) y Rosa del 10 al 31 de enero de 2026 (22 días). Regla: el art. 2.2.8.1.4 num. 1 del Decreto 1083 fija el período anual del 1 de febrero al 31 de enero; si el empleado no sirvió todo el año, se califica el lapso servido cuando supera 30 días, y los lapsos menores se califican con el período siguiente. Conclusión: Pedro se califica ahora; Rosa, con el período 2026-2027.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Evaluación del desempeño",
+    "subtema": "Evaluaciones eventuales por vacaciones y licencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.8.1.5 num. 3 e inc. final"
+    ],
+    "texto_fuente": "En las evaluaciones semestrales se tendrán en cuenta las evaluaciones que por efecto de las siguientes situaciones sea necesario efectuar: [...] por suspensión o por asumir por encargo las funciones de otro o con ocasión de licencias, comisiones o de vacaciones, en caso de que el término de duración de estas situaciones sea superior a treinta (30) días calendario. [...] Estas evaluaciones deberán realizarse dentro de los diez (10) días siguientes a la fecha en que se produzca la situación que las origine",
+    "pregunta": "La auxiliar administrativa de talento humano de una alcaldía revisa las novedades del semestre de evaluación que va del 1 de febrero al 31 de julio de 2026, para avisar a los evaluadores qué evaluaciones eventuales deben hacer. Marcela, técnica de carrera, disfrutó 22 días hábiles de vacaciones acumuladas a partir del lunes 1 de junio. Julián, profesional de carrera, tuvo una licencia ordinaria de 20 días hábiles a partir del lunes 2 de marzo. En ese semestre fueron festivos el 23 de marzo y el 8, el 15 y el 29 de junio. ¿Para quién debe avisar que procede esa evaluación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Para los dos, porque cada uno estuvo ausente veinte o más días hábiles seguidos.",
+        "explicacion": "Incorrecta. Confunde esta regla con la del período de prueba, que se interrumpe por 20 días continuos (art. 2.2.8.2.2). Para los empleados de carrera, la situación debe durar más de 30 días calendario, y la licencia de Julián duró 29."
+      },
+      {
+        "id": "B",
+        "texto": "Solo para Marcela, porque sus vacaciones se prolongaron hasta el viernes 3 de julio.",
+        "explicacion": "Correcta. Con los festivos del 8, 15 y 29 de junio, los 22 días hábiles van del 1 de junio al 3 de julio: 33 días calendario, más de 30. La licencia de Julián va del 2 al 30 de marzo: 29 días calendario."
+      },
+      {
+        "id": "C",
+        "texto": "Solo para Julián, porque las vacaciones no figuran entre las causas de esa evaluación.",
+        "explicacion": "Incorrecta. La norma incluye expresamente las vacaciones. Además, la licencia de Julián (del 2 al 30 de marzo) no superó 30 días calendario."
+      },
+      {
+        "id": "D",
+        "texto": "Para ninguno, porque ninguna de las dos ausencias alcanzó treinta días hábiles.",
+        "explicacion": "Incorrecta. El umbral se mide en días calendario, no en días hábiles. Las vacaciones de Marcela duraron 33 días calendario."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: las vacaciones de Marcela (22 días hábiles desde el 1 de junio, con festivos el 8, 15 y 29 de junio) van hasta el 3 de julio: 33 días calendario. La licencia de Julián (20 días hábiles desde el 2 de marzo, con festivo el 23) va hasta el 30 de marzo: 29 días. Regla: el art. 2.2.8.1.5 num. 3 exige evaluación eventual cuando licencias, comisiones o vacaciones duran más de 30 días calendario. Sin los festivos de junio, Marcela habría terminado el 30 de junio (30 días) y no procedería. Conclusión: solo Marcela.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-EPC-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Evaluación del desempeño",
+    "subtema": "Evaluaciones pendientes cuando el evaluador deja el cargo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.8.1.8",
+      "art. 2.2.8.1.5 num. 1"
+    ],
+    "texto_fuente": "1. Por cambio de evaluador, quien deberá evaluar a sus subalternos antes de retirarse del empleo. [...] Cuando el empleado responsable de evaluar se retire del servicio sin efectuar las evaluaciones que le correspondían, éstas deberán ser realizadas por su superior inmediato o por el empleado que para el efecto sea designado por el Jefe de la entidad. Si el empleado continúa en la entidad mantiene la obligación de realizarla.",
+    "pregunta": "En una alcaldía, dos jefes de oficina dejaron sus cargos sin hacer las evaluaciones que les correspondían a sus equipos por el cambio de evaluador. Laura, jefe de la Oficina de Contratación, renunció y se retiró del servicio. Miguel, jefe de la Oficina de Sistemas, fue nombrado en otro empleo de la misma alcaldía, en la Secretaría de Hacienda. La profesional de talento humano debe indicar quién hace las evaluaciones pendientes de cada equipo. ¿Qué debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las del equipo de Laura, su superior inmediato o quien designe el alcalde; las del equipo de Miguel, él mismo.",
+        "explicacion": "Correcta. Laura se retiró del servicio: sus evaluaciones pendientes las hace su superior inmediato o el empleado que designe el jefe de la entidad. Miguel sigue en la alcaldía, así que conserva la obligación de evaluar a su antiguo equipo (art. 2.2.8.1.8)."
+      },
+      {
+        "id": "B",
+        "texto": "Las del equipo de Laura, el jefe de talento humano de la alcaldía; las del equipo de Miguel, él mismo.",
+        "explicacion": "Incorrecta. Acierta con Miguel, pero el jefe de talento humano vela por la aplicación del sistema de evaluación; no reemplaza al evaluador que se retira. Lo reemplaza el superior inmediato o quien designe el jefe de la entidad."
+      },
+      {
+        "id": "C",
+        "texto": "Las de los dos equipos, el superior inmediato de cada jefe o el empleado que designe el alcalde.",
+        "explicacion": "Incorrecta. Aplica a Miguel la regla de quien se retira del servicio. Como sigue vinculado a la alcaldía, mantiene la obligación de hacer esas evaluaciones."
+      },
+      {
+        "id": "D",
+        "texto": "Las de los dos equipos, el jefe de talento humano, por ser quien vela por el sistema de evaluación del desempeño.",
+        "explicacion": "Incorrecta. Confunde la función de velar por el sistema (art. 2.2.8.1.12) con la de evaluar. Además, Miguel sigue obligado porque continúa en la entidad."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Laura se retiró del servicio y Miguel sigue vinculado a la alcaldía en otro empleo. Regla: el art. 2.2.8.1.5 num. 1 obliga al evaluador que cambia a evaluar antes de retirarse del empleo; si se retira del servicio sin hacerlo, el art. 2.2.8.1.8 asigna esas evaluaciones a su superior inmediato o al empleado que designe el jefe de la entidad, y si continúa en la entidad mantiene la obligación. Conclusión: equipo de Laura, su superior o el designado; equipo de Miguel, él mismo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Evaluación del desempeño",
+    "subtema": "Recursos contra la calificación y contra la insubsistencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "art. 38 inc. 3",
+      "art. 43 nums. 1 y 2",
+      "Decreto 1083 de 2015, art. 2.2.8.1.9 inc. 2"
+    ],
+    "texto_fuente": "Sobre la evaluación definitiva del desempeño procederá el recurso de reposición y de apelación. [...] 1. El nombramiento del empleado de carrera administrativa deberá declararse insubsistente por la autoridad nominadora, en forma motivada, cuando haya obtenido calificación no satisfactoria como resultado de la evaluación del desempeño laboral. 2. Contra el acto administrativo que declare la insubsistencia del nombramiento procederá recurso de reposición. [...] Las calificaciones anual y extraordinaria que deberán ser motivadas, se notificarán conforme con el procedimiento ante y por la Comisión Nacional del Servicio Civil y contra ellas proceden los recursos de reposición y apelación",
+    "pregunta": "A un técnico de carrera de una gobernación le notificaron su calificación anual de servicios, que resultó no satisfactoria. No está de acuerdo con el resultado y pregunta a la profesional de talento humano qué recursos puede interponer contra esa calificación y cuáles tendría contra el acto que, una vez en firme la calificación, declare insubsistente su nombramiento. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contra la calificación y contra la insubsistencia proceden la reposición y la apelación.",
+        "explicacion": "Incorrecta. Acierta frente a la calificación, pero contra el acto que declara la insubsistencia el art. 43 de la Ley 909 solo prevé el recurso de reposición."
+      },
+      {
+        "id": "B",
+        "texto": "Contra la calificación, solo reposición; contra la insubsistencia, reposición y apelación.",
+        "explicacion": "Incorrecta. Invierte las reglas: la evaluación definitiva admite reposición y apelación (art. 38), y la insubsistencia, solo reposición (art. 43)."
+      },
+      {
+        "id": "C",
+        "texto": "Contra la calificación y contra la insubsistencia procede solo el recurso de reposición.",
+        "explicacion": "Incorrecta. Acierta frente a la insubsistencia, pero contra la evaluación definitiva del desempeño procede también la apelación (art. 38 de la Ley 909 y art. 2.2.8.1.9 del Decreto 1083)."
+      },
+      {
+        "id": "D",
+        "texto": "Contra la calificación, reposición y apelación; contra la insubsistencia, solo reposición.",
+        "explicacion": "Correcta. El art. 38 permite reposición y apelación contra la evaluación definitiva, y el art. 43 num. 2 prevé solo la reposición contra el acto que declara la insubsistencia."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay dos actos distintos, la calificación anual no satisfactoria y el posterior acto de insubsistencia. Regla: el art. 38 de la Ley 909 (y el art. 2.2.8.1.9 del Decreto 1083) dispone que contra la evaluación definitiva proceden reposición y apelación; el art. 43 num. 2 dispone que contra el acto que declara la insubsistencia procede el recurso de reposición. Conclusión: reposición y apelación contra la calificación; solo reposición contra la insubsistencia.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-EPC-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Retiro del servicio",
+    "subtema": "Insubsistencia de una empleada de carrera embarazada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "art. 51 num. 3 y parágrafo 2",
+      "Decreto 1083 de 2015, art. 2.2.8.1.10 inc. 2"
+    ],
+    "texto_fuente": "3. Cuando una empleada de carrera en estado de embarazo obtenga evaluación de servicios no satisfactoria, la declaratoria de insubsistencia de su nombramiento se producirá dentro de los ocho (8) días calendario siguientes al vencimiento de la licencia de maternidad. [...] PARÁGRAFO 2o. En todos los casos y para los efectos del presente artículo, la empleada deberá dar aviso por escrito al jefe de la entidad inmediatamente obtenga el diagnóstico médico de su estado de embarazo, mediante la presentación de la respectiva certificación.",
+    "pregunta": "Una profesional de carrera de una alcaldía informó por escrito su embarazo al alcalde en diciembre de 2025 y adjuntó la certificación médica. En marzo de 2026 quedó en firme su calificación anual no satisfactoria. Su licencia de maternidad, de 18 semanas, empezó el lunes 20 de abril de 2026. El jefe jurídico debe proyectar el acto que declare insubsistente su nombramiento. ¿En qué momento puede expedirse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Desde marzo de 2026, cuando quedó en firme la calificación, porque la ley solo protege a las provisionales embarazadas.",
+        "explicacion": "Incorrecta. El art. 51 num. 3 protege a la empleada de carrera embarazada: la insubsistencia por calificación no satisfactoria se aplaza hasta después del vencimiento de la licencia de maternidad."
+      },
+      {
+        "id": "B",
+        "texto": "Entre el 24 de agosto y el 2 de septiembre de 2026, porque ese plazo se cuenta en días hábiles.",
+        "explicacion": "Incorrecta. Calcula bien el inicio, pero cuenta el plazo en días hábiles. La ley habla de ocho días calendario, que van del 24 al 31 de agosto."
+      },
+      {
+        "id": "C",
+        "texto": "Entre el 24 y el 31 de agosto de 2026, porque ese plazo se cuenta en días calendario.",
+        "explicacion": "Correcta. Las 18 semanas contadas desde el lunes 20 de abril terminan el domingo 23 de agosto. La insubsistencia debe producirse dentro de los ocho días calendario siguientes: del 24 al 31 de agosto de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "Desde el 24 de agosto de 2026 y sin plazo máximo, porque la ley solo impide retirarla durante la licencia.",
+        "explicacion": "Incorrecta. La ley no se limita a prohibir el retiro durante la licencia: fija un plazo cierto para la declaratoria, que debe producirse dentro de los ocho días calendario siguientes a su vencimiento (del 24 al 31 de agosto)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la calificación no satisfactoria quedó en firme mientras la profesional estaba embarazada, y ella dio aviso escrito con la certificación. Cálculo: la licencia de 18 semanas desde el 20 de abril de 2026 termina el domingo 23 de agosto. Regla: el art. 51 num. 3 de la Ley 909 (y el art. 2.2.8.1.10 del Decreto 1083) ordena que la insubsistencia se produzca dentro de los ocho días calendario siguientes al vencimiento de la licencia. Conclusión: entre el 24 y el 31 de agosto de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "CNSC, Función Pública y comisiones de personal",
+    "subtema": "Calidades de los candidatos a representantes de los empleados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.14.2.3",
+      "art. 2.2.14.2.13 inc. 2"
+    ],
+    "texto_fuente": "Los aspirantes a ser representantes de los empleados en la Comisión de Personal deberán acreditar las siguientes calidades: 1. No haber sido sancionados disciplinariamente durante el año anterior a la fecha de la inscripción de la candidatura; y 2. Ser empleados de carrera administrativa. [...] Los representantes de los empleados y sus suplentes no podrán ser reelegidos para el período siguiente.",
+    "pregunta": "El lunes 5 de octubre de 2026 una gobernación divulgó la convocatoria para elegir a los representantes de los empleados ante la comisión de personal, para el período que empieza en diciembre. El miércoles 7 de octubre se inscribieron dos empleadas de carrera: Andrea, que es representante principal en el período que termina, y Carolina, quien recibió una amonestación escrita que quedó en firme el 22 de septiembre de 2025. El técnico de talento humano verifica las calidades de las dos. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo Carolina puede aspirar: Andrea no puede repetir como representante y la sanción de Carolina ya no la afecta.",
+        "explicacion": "Correcta. Andrea es representante en el período que termina y no puede ser reelegida para el siguiente (art. 2.2.14.2.13). La amonestación de Carolina quedó en firme el 22 de septiembre de 2025, antes del año previo a su inscripción (7 de octubre de 2025 a 6 de octubre de 2026)."
+      },
+      {
+        "id": "B",
+        "texto": "Las dos pueden aspirar: la representación puede repetirse y la sanción de Carolina ya no la afecta.",
+        "explicacion": "Incorrecta. Acierta con Carolina, pero los representantes de los empleados y sus suplentes no pueden ser reelegidos para el período siguiente."
+      },
+      {
+        "id": "C",
+        "texto": "Solo Andrea puede aspirar: la representación puede repetirse y la sanción de Carolina todavía la afecta.",
+        "explicacion": "Incorrecta. Falla en los dos puntos: Andrea no puede ser reelegida para el período siguiente, y el año se cuenta hacia atrás desde la inscripción, no como año calendario: la sanción de Carolina quedó fuera."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna de las dos puede aspirar: Andrea no puede repetir como representante y la sanción de Carolina todavía la afecta.",
+        "explicacion": "Incorrecta. Acierta con Andrea, pero la amonestación de Carolina quedó en firme más de un año antes de la inscripción (7 de octubre de 2026), así que no la inhabilita."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Andrea es representante en el período que termina, y la sanción de Carolina quedó en firme el 22 de septiembre de 2025; ambas se inscribieron el 7 de octubre de 2026. Regla: el art. 2.2.14.2.3 exige no haber sido sancionado durante el año anterior a la inscripción (aquí, desde el 7 de octubre de 2025), y el art. 2.2.14.2.13 prohíbe reelegir a los representantes para el período siguiente. Conclusión: solo Carolina cumple.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "CNSC, Función Pública y comisiones de personal",
+    "subtema": "Representantes de la entidad: quiénes no pueden integrar la comisión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.14.1.1 inc. 2 (modificado por el art. 3 del Decreto 498 de 2020)",
+      "art. 2.2.14.1.3"
+    ],
+    "texto_fuente": "Los dos representantes que para el efecto designe el jefe del organismo o entidad serán empleados públicos de libre nombramiento y remoción o de carrera administrativa. [...] El Jefe de la Unidad de Personal o quien haga sus veces en los organismos y entidades a las cuales se refiere el presente título, será el Secretario de la Comisión de Personal, quien no tendrá voto, y en ningún caso podrá ser miembro de la misma. Tampoco podrá ser miembro de la Comisión de Personal el Jefe de Control Interno o quien haga sus veces",
+    "pregunta": "El gerente de un instituto municipal de deportes debe designar a los dos representantes de la entidad ante la comisión de personal. Escogió al jefe de talento humano y a la jefe de control interno, ambos de libre nombramiento y remoción, por su conocimiento de las normas de carrera. ¿Es válida esa designación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí, porque los dos son empleados de libre nombramiento y remoción designados por el gerente del instituto.",
+        "explicacion": "Incorrecta. Los representantes de la entidad pueden ser de libre nombramiento o de carrera, pero el decreto excluye expresamente al jefe de la unidad de personal y al jefe de control interno."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la de la jefe de control interno; el jefe de talento humano será el secretario, sin voto.",
+        "explicacion": "Incorrecta. Acierta en que el jefe de talento humano es el secretario sin voto, pero el jefe de control interno tampoco puede ser miembro de la comisión."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la del jefe de talento humano, que además ejercerá como secretario técnico de la comisión.",
+        "explicacion": "Incorrecta. El jefe de talento humano es el secretario de la comisión, sin voto, y en ningún caso puede ser miembro. Además, el jefe de control interno tampoco puede serlo."
+      },
+      {
+        "id": "D",
+        "texto": "No, porque ni el jefe de talento humano ni la jefe de control interno pueden integrar la comisión.",
+        "explicacion": "Correcta. El art. 2.2.14.1.3 dispone que el jefe de la unidad de personal es el secretario, sin voto, y no puede ser miembro de la comisión; tampoco puede serlo el jefe de control interno."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el gerente designó como representantes de la entidad al jefe de talento humano y a la jefe de control interno. Regla: el art. 2.2.14.1.1 permite designar empleados de libre nombramiento o de carrera, pero el art. 2.2.14.1.3 dispone que el jefe de la unidad de personal es el secretario de la comisión, sin voto, y en ningún caso puede ser miembro, y que tampoco puede serlo el jefe de control interno. Conclusión: ninguna de las dos designaciones es válida.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-EPC-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Empleo público, empleos temporales y jornada",
+    "subtema": "Retiro de los empleados temporales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "art. 21 num. 4 (adicionado por el art. 6 del Decreto Ley 894 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.1.1.4 inc. 1"
+    ],
+    "texto_fuente": "El nombramiento en los empleos temporales se efectuará mediante acto administrativo en el que se indicará el término de su duración, al vencimiento del cual quien lo ocupe quedará retirado del servicio automáticamente. Sin embargo, antes de cumplirse dicho término, el nominador en ejercicio de la facultad nominadora podrá declarar la insubsistencia del nombramiento, cuando el servidor no cumpla las metas del proyecto o actividades que dieron lugar a la creación de los mismos, de acuerdo con la evaluación que se establezca para el efecto y mediante acto administrativo motivado",
+    "pregunta": "Un municipio creó tres empleos temporales de profesional universitario para un proyecto de recuperación de la cartera del impuesto predial, y nombró a tres profesionales con actos que fijan su duración hasta el 31 de diciembre de 2026. En septiembre, la evaluación de metas adoptada para el proyecto mostró que Sergio no cumplió las suyas; los otros dos sí. El alcalde pide concepto a la jefe de la oficina jurídica sobre la salida de los tres. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sergio puede ser retirado sin motivar el acto, como en libre remoción; los otros dos quedan desvinculados el 31 de diciembre sin otro acto.",
+        "explicacion": "Incorrecta. Acierta en que el retiro al vencimiento no requiere otro acto, pero el retiro anticipado por incumplir metas exige acto motivado según la evaluación; el empleo temporal no es de libre remoción."
+      },
+      {
+        "id": "B",
+        "texto": "Sergio puede ser retirado mediante acto motivado en la evaluación; los otros dos necesitan un acto que declare su retiro al vencimiento.",
+        "explicacion": "Incorrecta. Acierta con Sergio, pero al vencer el término fijado en el nombramiento el retiro opera de forma automática, sin acto adicional."
+      },
+      {
+        "id": "C",
+        "texto": "Sergio puede ser retirado mediante acto motivado en la evaluación; los otros dos quedan desvinculados el 31 de diciembre sin otro acto.",
+        "explicacion": "Correcta. Antes del término, el nominador puede declarar la insubsistencia por incumplimiento de metas, según la evaluación y con acto motivado; al vencer el término, quien ocupa el empleo queda retirado automáticamente."
+      },
+      {
+        "id": "D",
+        "texto": "Sergio puede ser retirado sin motivar el acto, como en libre remoción; los otros dos necesitan un acto que declare su retiro al vencimiento.",
+        "explicacion": "Incorrecta. Falla en los dos puntos: el retiro anticipado exige acto motivado, y el retiro al vencimiento opera de forma automática."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Sergio incumplió sus metas según la evaluación del proyecto, y los nombramientos fijan su término en el 31 de diciembre de 2026. Regla: el art. 21 num. 4 de la Ley 909 (adicionado por el Decreto Ley 894 de 2017) y el art. 2.2.1.1.4 del Decreto 1083 disponen que al vencer el término el empleado queda retirado automáticamente, y que antes el nominador puede declarar la insubsistencia por incumplimiento de metas, con acto motivado. Conclusión: acto motivado para Sergio; retiro automático para los demás.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-EPC-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Empleo público, empleos temporales y jornada",
+    "subtema": "Prohibición de asignar funciones distintas al empleado temporal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.1.1.4 parágrafo",
+      "art. 2.2.1.1.1 inc. 1"
+    ],
+    "texto_fuente": "Se entiende por empleos temporales los creados en las plantas de cargos para el ejercicio de las funciones previstas en el ARTÍCULO 21 de la Ley 909 de 2004, por el tiempo determinado en el estudio técnico y en el acto de nombramiento. [...] PARÁGRAFO . A quienes ejerzan empleos de carácter temporal no podrá efectuárseles ningún movimiento dentro de la planta de personal que implique el ejercicio de funciones distintas a las que dieron lugar a la creación de los mismos de acuerdo con lo establecido en la Ley 909 de 2004.",
+    "pregunta": "Una auxiliar administrativa ocupa en una gobernación un empleo temporal creado para digitalizar las historias laborales durante diez meses. Como el proyecto va adelantado, el jefe de atención al ciudadano pidió a talento humano que la reubique en la ventanilla de radicación por los cuatro meses que le quedan. El técnico de talento humano debe proyectar el acto y, antes de hacerlo, revisa si es viable. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proyectar la reubicación, porque en una planta global el empleado puede ubicarse donde lo requiera el servicio.",
+        "explicacion": "Incorrecta. La reubicación en la planta global es una herramienta general, pero el decreto prohíbe cualquier movimiento que lleve a quien ocupa un empleo temporal a ejercer funciones distintas a las que justificaron su creación."
+      },
+      {
+        "id": "B",
+        "texto": "Advertir a su jefe que no es viable: quien ocupa un empleo temporal no puede pasar a tareas ajenas al proyecto.",
+        "explicacion": "Correcta. El parágrafo del art. 2.2.1.1.4 prohíbe todo movimiento dentro de la planta que implique para el empleado temporal funciones distintas a las que dieron lugar a la creación del empleo. El técnico, que proyecta el acto, debe advertirlo a su jefe."
+      },
+      {
+        "id": "C",
+        "texto": "Advertir a su jefe que no es viable como reubicación y proponer en su lugar un encargo en el empleo de ventanilla.",
+        "explicacion": "Incorrecta. El encargo también es un movimiento que la llevaría a ejercer funciones de otro empleo, así que está igualmente prohibido para quien ocupa un empleo temporal."
+      },
+      {
+        "id": "D",
+        "texto": "Proyectar la reubicación, con tal de que la auxiliar la acepte por escrito y no exceda el término de su nombramiento.",
+        "explicacion": "Incorrecta. La prohibición no depende del consentimiento de la auxiliar ni de que se respete el término del nombramiento."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la auxiliar ocupa un empleo temporal creado para el proyecto de digitalización, y la reubicación la llevaría a la ventanilla de radicación. Regla: el empleo temporal existe para las funciones y el tiempo definidos en el estudio técnico (art. 2.2.1.1.1 del Decreto 1083), y el parágrafo del art. 2.2.1.1.4 prohíbe cualquier movimiento en la planta que implique funciones distintas a las que justificaron su creación. Conclusión: el técnico debe advertir a su jefe que no es viable.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-EPC-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Gerencia pública",
+    "subtema": "Plazos para formalizar y evaluar el acuerdo de gestión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.13.1.9",
+      "art. 2.2.13.1.6",
+      "art. 2.2.13.1.11 inc. 3",
+      "Ley 909 de 2004, art. 50 num. 3"
+    ],
+    "texto_fuente": "El Acuerdo de Gestión se pactará para una vigencia anual, la cual debe coincidir con los períodos de programación y evaluación previstos en el ciclo de planeación de la entidad. Habrá períodos inferiores dependiendo de las fechas de vinculación del respectivo gerente público. [...] En un plazo no mayor de cuatro (4) meses, contados a partir la fecha de la posesión en su cargo, el gerente público y su superior jerárquico concertarán y formalizarán el Acuerdo de Gestión [...] La función de evaluar será indelegable y se llevará a cabo dejando constancia escrita, en un plazo no mayor de tres meses contado a partir de la finalización de la vigencia del Acuerdo. [...] El acuerdo de gestión será evaluado por el superior jerárquico en el término máximo de tres (3) meses después de acabar el ejercicio, según el grado de cumplimiento de objetivos.",
+    "pregunta": "El jueves 9 de julio de 2026 tomó posesión la nueva subdirectora administrativa y financiera de un establecimiento público del orden nacional, empleo de gerencia pública. El ciclo de planeación de la entidad va de enero a diciembre. La profesional de talento humano debe registrar en el calendario institucional la fecha límite para que la subdirectora y el director formalicen su acuerdo de gestión y la fecha límite para que el director lo evalúe. ¿Qué fechas debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Formalización a más tardar el 9 de octubre de 2026 y evaluación a más tardar el 31 de marzo de 2027.",
+        "explicacion": "Incorrecta. Acierta en la evaluación, pero aplica a la concertación el plazo de tres meses, que es el de la evaluación. Para formalizar el acuerdo hay cuatro meses desde la posesión."
+      },
+      {
+        "id": "B",
+        "texto": "Formalización a más tardar el 9 de noviembre de 2026 y evaluación a más tardar el 31 de marzo de 2027.",
+        "explicacion": "Correcta. Cuatro meses desde la posesión (9 de julio) vencen el 9 de noviembre de 2026. Como el ciclo de planeación va de enero a diciembre, este primer acuerdo tiene un período inferior que termina el 31 de diciembre, y el director debe evaluarlo dentro de los tres meses siguientes: hasta el 31 de marzo de 2027."
+      },
+      {
+        "id": "C",
+        "texto": "Formalización a más tardar el 9 de noviembre de 2026 y evaluación a más tardar el 8 de octubre de 2027.",
+        "explicacion": "Incorrecta. Acierta en la formalización, pero supone una vigencia de doce meses contados desde la posesión. La vigencia debe coincidir con el ciclo de planeación, así que este primer acuerdo termina el 31 de diciembre."
+      },
+      {
+        "id": "D",
+        "texto": "Formalización a más tardar el 9 de octubre de 2026 y evaluación a más tardar el 8 de octubre de 2027.",
+        "explicacion": "Incorrecta. Falla en los dos plazos: para concertar hay cuatro meses, y la vigencia del acuerdo debe coincidir con el ciclo de planeación anual de la entidad."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: posesión el 9 de julio de 2026 y ciclo de planeación de enero a diciembre. Regla: el art. 2.2.13.1.9 da cuatro meses desde la posesión para concertar y formalizar el acuerdo; el art. 2.2.13.1.6 exige que su vigencia coincida con el ciclo de planeación, con períodos inferiores según la fecha de vinculación; y el art. 2.2.13.1.11 (y el art. 50 de la Ley 909) da al superior tres meses desde el fin de la vigencia para evaluarlo. Conclusión: formalizar hasta el 9 de noviembre de 2026 y evaluar hasta el 31 de marzo de 2027.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-EPC-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Gerencia pública",
+    "subtema": "Acuerdo de gestión y retiro discrecional del gerente público",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "art. 50 parágrafo",
+      "art. 47 num. 2",
+      "art. 41 parágrafo 2 inc. 2"
+    ],
+    "texto_fuente": "2. Los cargos de gerencia pública son de libre nombramiento y remoción. [...] La competencia para efectuar la remoción en empleos de libre nombramiento y remoción es discrecional y se efectuará mediante acto no motivado. [...] PARÁGRAFO. Es deber de los Gerentes Públicos cumplir los acuerdos de gestión, sin que esto afecte la discrecionalidad para su retiro.",
+    "pregunta": "El director de un establecimiento público del orden nacional declaró insubsistente, con un acto que no expone razones, el nombramiento del subdirector de proyectos, empleo de gerencia pública. El subdirector había cumplido el 96% de los compromisos de su acuerdo de gestión y presentó una reclamación: afirma que ese resultado le da estabilidad en el cargo y que su retiro debía motivarse. ¿Qué debe concluir la oficina jurídica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que tiene razón en los dos puntos: el resultado del acuerdo le da estabilidad y el retiro debía motivarse.",
+        "explicacion": "Incorrecta. Cumplir el acuerdo es un deber que no afecta la discrecionalidad para el retiro (art. 50, parágrafo), y la remoción en libre nombramiento se hace mediante acto no motivado."
+      },
+      {
+        "id": "B",
+        "texto": "Que el acuerdo no le da estabilidad, pero el acto debía motivarse con el resultado de su evaluación.",
+        "explicacion": "Incorrecta. Acierta en que no hay estabilidad, pero la remoción en empleos de libre nombramiento y remoción es discrecional y se hace mediante acto no motivado (art. 41, parágrafo 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no tiene razón en ninguno de los dos: el acuerdo no limita la facultad de retirarlo ni obliga a motivar el acto.",
+        "explicacion": "Correcta. Los cargos de gerencia pública son de libre nombramiento y remoción (art. 47); cumplir el acuerdo de gestión no afecta la discrecionalidad para el retiro (art. 50, parágrafo), y esa remoción se hace mediante acto no motivado (art. 41, parágrafo 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el acuerdo le da estabilidad mientras esté vigente, aunque el acto de retiro no necesite motivación.",
+        "explicacion": "Incorrecta. El acuerdo de gestión no crea una estabilidad temporal: la ley dice que su cumplimiento no afecta la discrecionalidad para el retiro."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el subdirector ocupa un empleo de gerencia pública y cumplió casi todo su acuerdo de gestión. Regla: los cargos de gerencia pública son de libre nombramiento y remoción (art. 47 num. 2 de la Ley 909); cumplir el acuerdo es un deber que no afecta la discrecionalidad para el retiro (art. 50, parágrafo), y la remoción en esos empleos es discrecional y se hace mediante acto no motivado (art. 41, parágrafo 2). Conclusión: el retiro es válido sin motivación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Retiro del servicio",
+    "subtema": "Cálculo de la indemnización por supresión del empleo de carrera",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 909 de 2004",
+    "articulos": [
+      "art. 44 parágrafo 1 y parágrafo 2 num. 3"
+    ],
+    "texto_fuente": "PARÁGRAFO 1o. Para los efectos de reconocimiento y pago de las indemnizaciones de que trata el presente artículo, el tiempo de servicios continuos se contabilizará a partir de la fecha de posesión como empleado público en la entidad en la cual se produce la supresión del empleo. No obstante lo anterior, cuando el cargo que se suprime esté siendo desempeñado por un empleado que haya optado por la reincorporación y haya pasado a este por la supresión del empleo que ejercía en otra entidad o por traslado interinstitucional, para el reconocimiento y pago de la indemnización se contabilizará además, el tiempo laborado en la anterior entidad siempre que no haya sido indemnizado en ella, o ellas. [...] 3. Por cinco (5) años o más de servicios continuos y menos de diez (10) cuarenta y cinco (45) días de salario, por el primer año; y veinte (20) días por cada uno de los años subsiguientes al primero y proporcionalmente por meses cumplidos.",
+    "pregunta": "Un profesional de carrera tomó posesión en un departamento administrativo del orden nacional el 1 de febrero de 2019. Antes había trabajado seis años en una gobernación, de la que se retiró por renuncia para posesionarse en el nuevo empleo. Una modificación de la planta suprimió su cargo a partir del 1 de agosto de 2026; en la nueva planta no hubo empleo igual ni equivalente, y él optó por la indemnización. ¿A cuántos días de salario equivale?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "545 días: 45 por el primer año, 40 por cada uno de los doce años siguientes y 20 por los seis meses.",
+        "explicacion": "Incorrecta. Suma los seis años de la gobernación, de la que se retiró por renuncia. Ese tiempo solo se suma si llegó a la entidad por la supresión de su empleo anterior o por traslado interinstitucional. Sin esa suma (13 años y 6 meses), no aplica la tabla de 10 años o más."
+      },
+      {
+        "id": "B",
+        "texto": "165 días: 45 por el primer año y 20 por cada uno de los seis años siguientes, sin contar los meses.",
+        "explicacion": "Incorrecta. Cuenta bien el tiempo (7 años y 6 meses) y aplica la tabla de 5 a 10 años, pero omite los 6 meses cumplidos, que se reconocen en proporción: 10 días más."
+      },
+      {
+        "id": "C",
+        "texto": "525 días: 45 por el primer año y 40 por cada uno de los doce años siguientes, sin contar los meses.",
+        "explicacion": "Incorrecta. Suma indebidamente los años de la gobernación, que dejó por renuncia, y además omite la proporción de los 6 meses cumplidos."
+      },
+      {
+        "id": "D",
+        "texto": "175 días: 45 por el primer año, 20 por cada uno de los seis años siguientes y 10 por los seis meses.",
+        "explicacion": "Correcta. Del 1 de febrero de 2019 al 31 de julio de 2026 hay 7 años y 6 meses de servicio continuo en la entidad. Tabla de 5 a 10 años: 45 + 6×20 + (6/12)×20 = 175 días."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: sirvió en la entidad que suprime el empleo del 1 de febrero de 2019 al 31 de julio de 2026 (7 años y 6 meses), y dejó la gobernación por renuncia. Regla: el parágrafo 1 del art. 44 de la Ley 909 cuenta el tiempo desde la posesión en la entidad que suprime el empleo; el tiempo anterior solo se suma si llegó por supresión o traslado interinstitucional. El parágrafo 2 num. 3 da 45 días por el primer año, 20 por cada año siguiente y la proporción por meses. Cálculo: 45 + 120 + 10 = 175 días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-EPC-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Retiro del servicio",
+    "subtema": "Supresión de un empleo de libre nombramiento ejercido en comisión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.2.7"
+    ],
+    "texto_fuente": "Cuando se suprima un empleo de libre nombramiento y remoción que esté siendo ejercido en comisión por un empleado de carrera, este regresará inmediatamente al cargo de carrera del cual sea titular.",
+    "pregunta": "Paula, técnica con derechos de carrera en una gobernación, desempeña en comisión el empleo de asesora del despacho del gobernador, que es de libre nombramiento y remoción. Una reforma de la planta suprimió ese empleo de asesor. ¿Cuál es la situación de Paula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Vuelve sin demora al empleo de técnica del cual es titular en la gobernación.",
+        "explicacion": "Correcta. El art. 2.2.11.2.7 ordena que, si se suprime el empleo de libre nombramiento que un empleado de carrera ejerce en comisión, este regrese inmediatamente al cargo de carrera del que es titular."
+      },
+      {
+        "id": "B",
+        "texto": "Tiene derecho preferencial a ser incorporada en un empleo de asesor equivalente.",
+        "explicacion": "Incorrecta. El derecho preferencial de incorporación del art. 44 de la Ley 909 protege al titular del empleo de carrera que se suprime. Aquí se suprimió el empleo de libre nombramiento, y Paula conserva su cargo de carrera."
+      },
+      {
+        "id": "C",
+        "texto": "Puede escoger entre la reincorporación en un empleo equivalente o la indemnización.",
+        "explicacion": "Incorrecta. La opción entre reincorporación e indemnización es para el empleado de carrera cuyo cargo de carrera se suprime; el de Paula sigue existiendo."
+      },
+      {
+        "id": "D",
+        "texto": "Queda retirada del servicio, porque el empleo suprimido era de libre nombramiento.",
+        "explicacion": "Incorrecta. Paula ejercía ese empleo en comisión y conserva la titularidad de su cargo de carrera, al que debe regresar."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se suprimió el empleo de libre nombramiento que Paula ejercía en comisión, no su cargo de carrera. Regla: el art. 2.2.11.2.7 del Decreto 1083 dispone que, cuando se suprime un empleo de libre nombramiento y remoción ejercido en comisión por un empleado de carrera, este regresa inmediatamente al cargo de carrera del cual es titular. Conclusión: Paula vuelve a su empleo de técnica.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-EPC-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Empleo Público y Carrera Administrativa",
+    "tema": "Retiro del servicio",
+    "subtema": "Plazo de pago de la indemnización e intereses de mora",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.11.2.5 inc. 1"
+    ],
+    "texto_fuente": "El pago de la indemnización estará a cargo de la entidad que retira al empleado y deberá cancelarse en efectivo dentro de los dos (2) meses siguientes a la fecha de liquidación de la misma. En caso de mora en el pago se causarán intereses a favor del ex empleado a la tasa variable de los depósitos a término fijo (DTF) que señale el Banco de la República, a partir de la fecha del acto de liquidación.",
+    "pregunta": "El viernes 14 de agosto de 2026 una gobernación expidió el acto que liquidó la indemnización de un ex empleado de carrera cuyo cargo fue suprimido. Por problemas de caja, el pago se hizo el viernes 30 de octubre de 2026. El técnico de nómina debe establecer cuándo venció el plazo para pagar y desde qué fecha se liquidan los intereses a la DTF. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El plazo venció el 14 de octubre, y los intereses se liquidan desde el 14 de agosto.",
+        "explicacion": "Correcta. La indemnización debe pagarse dentro de los dos meses siguientes a la liquidación, es decir, hasta el 14 de octubre de 2026. Como hubo mora, los intereses a la DTF corren desde la fecha del acto de liquidación: el 14 de agosto."
+      },
+      {
+        "id": "B",
+        "texto": "El plazo venció el 14 de octubre, y los intereses se liquidan desde el 15 de octubre.",
+        "explicacion": "Incorrecta. Acierta en el plazo, pero cuenta los intereses desde el día siguiente al vencimiento. La norma los hace correr desde la fecha del acto de liquidación."
+      },
+      {
+        "id": "C",
+        "texto": "El plazo venció el 14 de septiembre, y los intereses se liquidan desde el 14 de agosto.",
+        "explicacion": "Incorrecta. Acierta en la fecha de los intereses, pero el plazo de pago es de dos meses, no de uno."
+      },
+      {
+        "id": "D",
+        "texto": "El plazo venció el 14 de septiembre, y los intereses se liquidan desde el 15 de septiembre.",
+        "explicacion": "Incorrecta. Falla en los dos puntos: el plazo es de dos meses y, cuando hay mora, los intereses corren desde la fecha del acto de liquidación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la liquidación es del 14 de agosto de 2026 y el pago se hizo el 30 de octubre. Regla: el art. 2.2.11.2.5 del Decreto 1083 ordena pagar la indemnización en efectivo dentro de los dos meses siguientes a la liquidación y, si hay mora, reconocer intereses a la DTF a partir de la fecha del acto de liquidación. Cálculo: el plazo venció el 14 de octubre de 2026. Conclusión: hubo mora, y los intereses se liquidan desde el 14 de agosto.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
   }
 ]

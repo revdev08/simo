@@ -741,5 +741,1482 @@
       "fecha": "2026-10-10",
       "p_estimado": 58
     }
+  },
+  {
+    "id": "TC-CPA-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Ampliación del término de respuesta: aviso antes del vencimiento y límite del doble",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 14 inc. 1 y parágrafo (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Salvo norma legal especial y so pena de sanción disciplinaria, toda petición deberá resolverse dentro de los quince (15) días siguientes a su recepción. [...] PARÁGRAFO. Cuando excepcionalmente no fuere posible resolver la petición en los plazos aquí señalados, la autoridad debe informar esta circunstancia al interesado, antes del vencimiento del término señalado en la ley expresando los motivos de la demora y señalando a la vez el plazo razonable en que se resolverá o dará respuesta, que no podrá exceder del doble del inicialmente previsto.",
+    "pregunta": "El miércoles 30 de septiembre de 2026, una ciudadana radicó en la secretaría de infraestructura de un municipio una petición para que se pavimentara un tramo de la vía de su vereda. Ninguna norma especial fija el término para responderla. El jueves 22 de octubre, el profesional que tiene a cargo el asunto le envió un oficio en el que le explica que, para decidir, la secretaría necesita terminar una visita técnica y un estudio de costos, y le anuncia que le dará respuesta a más tardar el viernes 13 de noviembre. Cuente los términos en días hábiles; en ese lapso fueron festivos el lunes 12 de octubre y el lunes 2 de noviembre. ¿Qué puede afirmarse de ese oficio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es extemporáneo, porque los quince días para responder vencieron el miércoles 21 de octubre.",
+        "explicacion": "Incorrecta. Cuenta el lunes 12 de octubre como día hábil. Sin ese festivo, los quince días hábiles siguientes al 30 de septiembre vencen el jueves 22 de octubre, el mismo día en que se envió el oficio, que por eso es oportuno."
+      },
+      {
+        "id": "B",
+        "texto": "Es inválido, porque la fecha anunciada supera el doble del plazo inicial, que se agotaba el 12 de noviembre.",
+        "explicacion": "Incorrecta. Cuenta el lunes 2 de noviembre como día hábil. Con los dos festivos descontados, treinta días hábiles desde la radicación (el doble de quince) llegan al viernes 13 de noviembre, que es justo la fecha anunciada."
+      },
+      {
+        "id": "C",
+        "texto": "Es válido, porque se envió el último día del plazo y la fecha anunciada respeta el límite legal.",
+        "explicacion": "Correcta. El aviso se envió dentro del término (el 22 de octubre era el día 15), explicó el motivo de la demora y fijó una fecha que no pasa de treinta días hábiles desde la radicación, el doble del plazo inicial."
+      },
+      {
+        "id": "D",
+        "texto": "Es inválido, porque el aviso de ampliación debía enviarse dentro de los diez días siguientes a la radicación.",
+        "explicacion": "Incorrecta. Los diez días siguientes a la radicación son el plazo para requerir al peticionario que complete una petición incompleta (art. 17). El aviso de ampliación del art. 14 debe darse antes de que venza el término para responder."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la petición se radicó el 30 de septiembre y el oficio, con el motivo de la demora y la nueva fecha (13 de noviembre), se envió el 22 de octubre. Regla: el art. 14 del CPACA (sustituido por la Ley 1755) da quince días para resolver y permite ampliar el plazo si se avisa antes del vencimiento, con los motivos y un plazo que no exceda el doble del inicial. Cálculo: por el festivo del 12 de octubre, el día 15 es el 22 de octubre; por el del 2 de noviembre, el día 30 es el 13 de noviembre. Conclusión: la ampliación es válida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CPA-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Términos según la modalidad: petición de documentos y consulta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 14 inc. 1 y nums. 1 y 2 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Salvo norma legal especial y so pena de sanción disciplinaria, toda petición deberá resolverse dentro de los quince (15) días siguientes a su recepción. Estará sometida a término especial la resolución de las siguientes peticiones: 1. Las peticiones de documentos y de información deberán resolverse dentro de los diez (10) días siguientes a su recepción. [...] 2. Las peticiones mediante las cuales se eleva una consulta a las autoridades en relación con las materias a su cargo deberán resolverse dentro de los treinta (30) días siguientes a su recepción.",
+    "pregunta": "Camilo, técnico de la oficina de PQRSD de una gobernación, debe registrar en el sistema la fecha límite de respuesta de dos peticiones que llegaron por correo electrónico, en horario hábil, el miércoles 4 de noviembre de 2026. En la primera, una veeduría ciudadana pide copia del acta de liquidación de un contrato de obra. En la segunda, una junta de acción comunal pregunta a la secretaría de desarrollo comunitario cómo interpreta un requisito de la ordenanza departamental que regula los convenios solidarios con las juntas. Ninguna norma especial fija otros términos. Cuente los términos en días hábiles; en ese lapso fueron festivos el lunes 16 de noviembre y el martes 8 de diciembre. ¿Qué fechas debe registrar Camilo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La copia del acta, el 18 de noviembre, y la consulta de la junta, el 18 de diciembre.",
+        "explicacion": "Incorrecta. Acierta con la consulta, pero cuenta el lunes 16 de noviembre como día hábil. Sin ese festivo, los diez días hábiles para la copia del acta vencen el jueves 19, no el miércoles 18."
+      },
+      {
+        "id": "B",
+        "texto": "La copia del acta, el 19 de noviembre, y la consulta de la junta, el 18 de diciembre.",
+        "explicacion": "Correcta. La copia del acta es una petición de documentos: diez días hábiles desde el 5 de noviembre, sin el 16, vencen el 19. La pregunta sobre la ordenanza es una consulta: treinta días hábiles, sin el 16 de noviembre ni el 8 de diciembre, vencen el 18 de diciembre."
+      },
+      {
+        "id": "C",
+        "texto": "La copia del acta, el 19 de noviembre, y la consulta de la junta, el 26 de noviembre.",
+        "explicacion": "Incorrecta. Acierta con la copia del acta, pero trata la pregunta de la junta como una petición general de quince días. Es una consulta sobre una materia a cargo de la secretaría, que tiene treinta días."
+      },
+      {
+        "id": "D",
+        "texto": "La copia del acta, el 18 de noviembre, y la consulta de la junta, el 26 de noviembre.",
+        "explicacion": "Incorrecta. Cuenta el festivo del 16 de noviembre como hábil para la copia del acta y, además, da a la consulta el término general de quince días en lugar de los treinta que le corresponden."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: ambas peticiones llegaron el 4 de noviembre; una pide copia de un documento y la otra el criterio de la secretaría sobre una norma a su cargo. Regla: el art. 14 del CPACA (sustituido por la Ley 1755) da diez días a las peticiones de documentos y treinta a las consultas. Cálculo: desde el 5 de noviembre, descontando el festivo del 16, el día 10 es el 19 de noviembre; descontando además el 8 de diciembre, el día 30 es el 18 de diciembre. Conclusión: 19 de noviembre y 18 de diciembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CPA-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Consultas: término para resolverlas y alcance de los conceptos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 14 num. 2 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 28 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "2. Las peticiones mediante las cuales se eleva una consulta a las autoridades en relación con las materias a su cargo deberán resolverse dentro de los treinta (30) días siguientes a su recepción. [...] Salvo disposición legal en contrario, los conceptos emitidos por las autoridades como respuestas a peticiones realizadas en ejercicio del derecho a formular consultas no serán de obligatorio cumplimiento o ejecución.",
+    "pregunta": "El lunes 1 de junio de 2026, el representante de una asociación de vendedores informales radicó una consulta en la secretaría de gobierno de un municipio: quiere saber cómo entiende esa secretaría el decreto municipal que regula los permisos temporales para vender en el parque principal. En el escrito anuncia que, con la respuesta, exigirá que se otorguen los permisos a sus afiliados. Lina, profesional de la secretaría, tiene a cargo la respuesta. Ninguna norma especial regula esta clase de consultas ni el valor de los conceptos de la secretaría. Cuente los términos en días hábiles; en ese lapso fueron festivos el 8, el 15 y el 29 de junio. ¿Hasta qué fecha debe responder la secretaría y qué alcance tendrá su concepto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el 24 de junio, y el concepto no será vinculante para la secretaría ni para la asociación.",
+        "explicacion": "Incorrecta. Acierta en el alcance del concepto, pero aplica el término general de quince días hábiles, que vence el 24 de junio. Una consulta sobre materias a cargo de la autoridad tiene treinta días."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el 16 de julio, y el concepto será vinculante para la secretaría cuando decida los permisos.",
+        "explicacion": "Incorrecta. Acierta en el plazo, pero, salvo norma en contrario, los conceptos que responden consultas no son de obligatorio cumplimiento, ni para quien consulta ni para la secretaría al decidir."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el 24 de junio, y el concepto será vinculante para la secretaría cuando decida los permisos.",
+        "explicacion": "Incorrecta. Combina dos errores: aplica el término general de quince días, en lugar de los treinta de las consultas, y atribuye al concepto una fuerza obligatoria que la ley no le da."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el 16 de julio, y el concepto no será vinculante para la secretaría ni para la asociación.",
+        "explicacion": "Correcta. Es una consulta: treinta días hábiles desde el 2 de junio, sin los festivos del 8, el 15 y el 29 de junio, vencen el 16 de julio. Y como ninguna norma dice lo contrario, el concepto no es de obligatorio cumplimiento."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la asociación pide el criterio de la secretaría sobre un decreto a su cargo, es decir, formula una consulta, radicada el 1 de junio. Regla: el art. 14, num. 2, del CPACA (sustituido por la Ley 1755) da treinta días para resolver las consultas, y el art. 28 dice que, salvo norma en contrario, los conceptos no son de obligatorio cumplimiento. Cálculo: desde el 2 de junio, sin los festivos del 8, el 15 y el 29 de junio, el día 30 es el 16 de julio. Conclusión: responde hasta el 16 de julio y el concepto no será vinculante.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CPA-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Requerimiento por petición incompleta: documentos que pueden pedirse y plazo para hacerlo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 16 parágrafo 1 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 17 inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "PARÁGRAFO 1o. La autoridad tiene la obligación de examinar integralmente la petición, y en ningún caso la estimará incompleta por falta de requisitos o documentos que no se encuentren dentro del marco jurídico vigente, que no sean necesarios para resolverla o que se encuentren dentro de sus archivos. [...] En virtud del principio de eficacia, cuando la autoridad constate que una petición ya radicada está incompleta o que el peticionario deba realizar una gestión de trámite a su cargo, necesaria para adoptar una decisión de fondo, y que la actuación pueda continuar sin oponerse a la ley, requerirá al peticionario dentro de los diez (10) días siguientes a la fecha de radicación para que la complete en el término máximo de un (1) mes.",
+    "pregunta": "El viernes 8 de mayo de 2026, una empresa de gas radicó por la sede electrónica de un municipio, en horario hábil, una solicitud de permiso para romper el andén de una calle y conectar varias viviendas a la red. El decreto municipal que regula ese permiso exige anexar el plano de la obra, una póliza de responsabilidad civil y copia de la licencia de construcción de las viviendas. La solicitud trae el plano, pero no la póliza ni la copia de la licencia, que la propia alcaldía expidió y conserva en su archivo. Andrea, técnica de la oficina de PQRSD, prepara el requerimiento a la empresa. Cuente los términos en días hábiles; el lunes 18 de mayo fue festivo. ¿Qué debe pedirse a la empresa y hasta qué fecha puede hacerse el requerimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La póliza, pero no la copia de la licencia, y puede requerirla hasta el lunes 25 de mayo.",
+        "explicacion": "Correcta. La póliza la exige el decreto y es necesaria para decidir, pero la licencia reposa en los archivos de la alcaldía, así que su falta no hace incompleta la solicitud. El requerimiento cabe dentro de los diez días hábiles siguientes a la radicación, que por el festivo del 18 vencen el 25 de mayo."
+      },
+      {
+        "id": "B",
+        "texto": "La póliza y la copia de la licencia, y puede requerirlas hasta el lunes 25 de mayo.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero la autoridad no puede considerar incompleta una petición por la falta de documentos que se encuentran en sus propios archivos, como la licencia que expidió la alcaldía."
+      },
+      {
+        "id": "C",
+        "texto": "La póliza, pero no la copia de la licencia, y puede requerirla hasta el viernes 22 de mayo.",
+        "explicacion": "Incorrecta. Acierta en el documento, pero cuenta el lunes 18 de mayo como día hábil. Sin ese festivo, el décimo día hábil después del 8 de mayo es el lunes 25."
+      },
+      {
+        "id": "D",
+        "texto": "La póliza y la copia de la licencia, y puede requerirlas hasta el viernes 22 de mayo.",
+        "explicacion": "Incorrecta. Pide un documento que reposa en el archivo de la alcaldía y, además, cuenta el festivo del 18 de mayo como día hábil, por lo que adelanta el plazo al 22."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: falta la póliza, que exige el decreto, y la copia de una licencia que la misma alcaldía expidió y archivó; la solicitud se radicó el 8 de mayo. Regla: el art. 16, par. 1, del CPACA (sustituido por la Ley 1755) prohíbe estimar incompleta una petición por documentos que reposan en los archivos de la autoridad, y el art. 17 ordena requerir dentro de los diez días siguientes a la radicación. Cálculo: sin el festivo del 18 de mayo, el día 10 es el 25. Conclusión: se pide la póliza, no la licencia, hasta el 25 de mayo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CPA-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Acto que decreta el desistimiento tácito: notificación y recurso procedente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 17 incs. 3 y 4 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Se entenderá que el peticionario ha desistido de su solicitud o de la actuación cuando no satisfaga el requerimiento, salvo que antes de vencer el plazo concedido solicite prórroga hasta por un término igual. Vencidos los términos establecidos en este artículo, sin que el peticionario haya cumplido el requerimiento, la autoridad decretará el desistimiento y el archivo del expediente, mediante acto administrativo motivado, que se notificará personalmente, contra el cual únicamente procede recurso de reposición, sin perjuicio de que la respectiva solicitud pueda ser nuevamente presentada con el lleno de los requisitos legales.",
+    "pregunta": "La secretaría de cultura de un municipio requirió a una fundación para que, en el término de un mes, aportara el certificado de existencia y representación legal que faltaba en su solicitud de apoyo para un festival. La fundación no lo aportó ni pidió prórroga. Vencido el mes, Julián, profesional jurídico de la secretaría, proyecta el acto motivado que decreta el desistimiento y ordena archivar el expediente. En la parte final debe indicar cómo se dará a conocer el acto a la fundación y qué recursos proceden contra él. ¿Qué debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que se notificará personalmente y que contra él proceden los recursos de reposición y de apelación.",
+        "explicacion": "Incorrecta. Acierta en la notificación personal, pero contra el acto que decreta el desistimiento tácito la ley solo admite el recurso de reposición, aunque por regla general las decisiones de un secretario sean apelables."
+      },
+      {
+        "id": "B",
+        "texto": "Que se notificará personalmente y que contra él procede la reposición, pero no la apelación.",
+        "explicacion": "Correcta. El art. 17 ordena notificar personalmente el acto que decreta el desistimiento y el archivo, y contra él solo procede la reposición. La fundación conserva, además, la posibilidad de presentar de nuevo la solicitud completa."
+      },
+      {
+        "id": "C",
+        "texto": "Que se dará a conocer con su publicación en la sede electrónica y que procede la reposición, pero no la apelación.",
+        "explicacion": "Incorrecta. Acierta en el recurso, pero la ley exige notificar personalmente este acto; publicarlo en la sede electrónica no basta para darlo a conocer a la fundación."
+      },
+      {
+        "id": "D",
+        "texto": "Que se dará a conocer con su publicación en la sede electrónica y que proceden la reposición y la apelación.",
+        "explicacion": "Incorrecta. Combina dos errores: sustituye la notificación personal por una publicación y agrega la apelación, que la ley no prevé contra el acto que decreta el desistimiento tácito."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la fundación no aportó el documento requerido ni pidió prórroga, y la secretaría decretará el desistimiento y el archivo. Regla: el art. 17 del CPACA (sustituido por la Ley 1755) dice que ese acto motivado se notifica personalmente y que contra él solo procede la reposición, sin perjuicio de que la solicitud se presente de nuevo con los requisitos. Conclusión: el acto debe indicar notificación personal y recurso de reposición, no de apelación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CPA-020",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Desistimiento expreso y continuación de oficio por razones de interés público",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 18 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Los interesados podrán desistir en cualquier tiempo de sus peticiones, sin perjuicio de que la respectiva solicitud pueda ser nuevamente presentada con el lleno de los requisitos legales, pero las autoridades podrán continuar de oficio la actuación si la consideran necesaria por razones de interés público; en tal caso expedirán resolución motivada.",
+    "pregunta": "Una líder comunal pidió a la secretaría de salud de un municipio que revisara la calidad del agua del tanque que abastece a cuarenta familias de su vereda. La secretaría tomó muestras y, antes de que llegaran los resultados, la líder presentó un escrito en el que desiste de su petición porque se mudará a otra ciudad. Los resultados muestran niveles de cloro por debajo de los permitidos. Marcela, profesional de salud ambiental, debe recomendarle al secretario qué hacer con el expediente. ¿Cómo debe proceder la secretaría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Archivar la actuación, pues el desistimiento la terminó, y abrir otra solo si algún usuario del tanque lo pide.",
+        "explicacion": "Incorrecta. El desistimiento no obliga a archivar cuando hay razones de interés público: la autoridad puede continuar la actuación por su cuenta, sin esperar una nueva petición."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar el desistimiento, pues ya se habían tomado las muestras y la actuación estaba avanzada.",
+        "explicacion": "Incorrecta. Los interesados pueden desistir en cualquier tiempo, aunque la actuación esté avanzada. Lo que la ley permite a la autoridad no es rechazar el desistimiento, sino continuar de oficio."
+      },
+      {
+        "id": "C",
+        "texto": "Seguir con la actuación por su cuenta, por el interés público en juego, con una resolución que lo justifique.",
+        "explicacion": "Correcta. Pese al desistimiento, la autoridad puede continuar de oficio la actuación si la considera necesaria por razones de interés público, como la calidad del agua de cuarenta familias, y para ello expide una resolución motivada."
+      },
+      {
+        "id": "D",
+        "texto": "Continuar la actuación a nombre de la líder, a condición de que ella acepte por escrito que se siga adelante.",
+        "explicacion": "Incorrecta. La continuación de oficio no depende de la voluntad de quien desistió ni se hace a su nombre: es una decisión de la autoridad, fundada en el interés público y adoptada por resolución motivada."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la líder desistió, pero los resultados muestran un problema en el agua que consumen cuarenta familias. Regla: el art. 18 del CPACA (sustituido por la Ley 1755) permite desistir en cualquier tiempo, pero autoriza a la autoridad a continuar de oficio la actuación si la considera necesaria por razones de interés público, mediante resolución motivada. Conclusión: la secretaría puede seguir adelante por su cuenta, con una resolución que lo justifique.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-CPA-021",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Petición oscura: devolución para aclararla y plazo del peticionario",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 19 inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Toda petición debe ser respetuosa so pena de rechazo. Solo cuando no se comprenda la finalidad u objeto de la petición esta se devolverá al interesado para que la corrija o aclare dentro de los diez (10) días siguientes. En caso de no corregirse o aclararse, se archivará la petición. En ningún caso se devolverán peticiones que se consideren inadecuadas o incompletas.",
+    "pregunta": "El lunes 9 de noviembre de 2026, un ciudadano radicó en una alcaldía un escrito de cuatro páginas en el que relata sus problemas con unos vecinos, con la junta de acción comunal y con una empresa de buses, sin decir qué pide ni a quién. El martes 10 de noviembre, Rosa, profesional de la oficina de atención al ciudadano, le devolvió el escrito por correo electrónico para que precisara qué solicita, con la advertencia de que el plazo para hacerlo se contaba desde el día siguiente al de la devolución. El ciudadano recibió el correo ese mismo día. La aclaración llegó el miércoles 25 de noviembre, y un compañero de Rosa le sugiere archivar la petición porque llegó tarde. Cuente los términos en días hábiles; el lunes 16 de noviembre fue festivo. ¿Qué debe hacer Rosa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tramitarla, porque la aclaración se presentó el último día del plazo que tenía el ciudadano.",
+        "explicacion": "Correcta. Una petición cuyo objeto no se comprende se devuelve para que se aclare dentro de los diez días siguientes. Contados desde el día siguiente a la devolución (11 de noviembre) y sin el festivo del 16, vencían el miércoles 25, día en que llegó la aclaración."
+      },
+      {
+        "id": "B",
+        "texto": "Archivarla, porque el plazo que se le dio para aclararla vencía el martes 24 de noviembre.",
+        "explicacion": "Incorrecta. Cuenta el lunes 16 de noviembre como día hábil, o cuenta desde la radicación del 9 de noviembre. Desde el día siguiente a la devolución y sin ese festivo, el décimo día hábil es el miércoles 25, así que la aclaración llegó a tiempo."
+      },
+      {
+        "id": "C",
+        "texto": "Tramitarla, porque el ciudadano disponía de un mes para aclararla, plazo que aún no vencía.",
+        "explicacion": "Incorrecta. Llega a la conclusión correcta por una razón equivocada. El mes es el plazo para completar una petición incompleta (art. 17); para aclarar una petición oscura hay diez días."
+      },
+      {
+        "id": "D",
+        "texto": "Archivarla mediante un acto motivado que declare el desistimiento, contra el cual procede reposición.",
+        "explicacion": "Incorrecta. Confunde la petición oscura con la incompleta: el desistimiento tácito por acto motivado es del art. 17. La petición oscura que no se aclara se archiva, y aquí la aclaración llegó dentro del plazo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el escrito no decía qué pedía; se devolvió el 10 de noviembre, con un plazo contado desde el día siguiente, y la aclaración llegó el 25. Regla: el art. 19 del CPACA (sustituido por la Ley 1755) ordena devolver la petición cuyo objeto no se comprende, para que se aclare dentro de los diez días siguientes; si no se aclara, se archiva. Cálculo: desde el 11 de noviembre, descontando el festivo del 16, el día 10 es el 25 de noviembre. Conclusión: la aclaración fue oportuna y la petición debe tramitarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción C como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-CPA-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Petición de documentos reservados formulada por otra autoridad: término y oponibilidad de la reserva",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 24 num. 3 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 27 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 30 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "3. Los que involucren derechos a la privacidad e intimidad de las personas, incluidas en las hojas de vida, la historia laboral y los expedientes pensionales y demás registros de personal que obren en los archivos de las instituciones públicas o privadas, así como la historia clínica. [...] El carácter reservado de una información o de determinados documentos, no será oponible a las autoridades judiciales, legislativas, ni a las autoridades administrativas que siendo constitucional o legalmente competentes para ello, los soliciten para el debido ejercicio de sus funciones. Corresponde a dichas autoridades asegurar la reserva de las informaciones y documentos que lleguen a conocer en desarrollo de lo previsto en este artículo. [...] Cuando una autoridad formule una petición de información o de documentos a otra, esta deberá resolverla en un término no mayor de diez (10) días. En los demás casos, resolverá las solicitudes dentro de los plazos previstos en el artículo 14.",
+    "pregunta": "El martes 3 de noviembre de 2026, una gobernación recibió un oficio de la Comisión Nacional del Servicio Civil (CNSC) que, en ejercicio de la función de vigilancia de la carrera administrativa que le asigna la ley, pide copia de las hojas de vida, con sus soportes, de los cinco empleados a los que la gobernación otorgó un encargo en 2026. El oficio no señala plazo para responder. Diego, técnico de la secretaría de talento humano, debe proyectar la respuesta y advierte que esas hojas de vida contienen datos personales de los empleados, como su dirección, su teléfono y su estado civil. Cuente los términos en días hábiles; el lunes 16 de noviembre fue festivo. ¿Cómo debe responder la gobernación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negarle las copias con una decisión motivada, porque las hojas de vida solo pueden pedirlas sus titulares o sus apoderados.",
+        "explicacion": "Incorrecta. Las hojas de vida son reservadas (art. 24 num. 3), pero esa reserva no es oponible a las autoridades administrativas que, siendo legalmente competentes, las piden para el debido ejercicio de sus funciones (art. 27). La CNSC las pide en ejercicio de su función de vigilancia, así que la gobernación no puede negarlas."
+      },
+      {
+        "id": "B",
+        "texto": "Enviarle las copias a más tardar el 25 de noviembre, con la indicación de que la comisión debe mantener su reserva.",
+        "explicacion": "Incorrecta. Acierta en entregar las copias y en que la reserva se mantiene, pero aplica el término general de quince días. Cuando una autoridad pide información o documentos a otra, el término es de diez días (art. 30): desde el 4 de noviembre, sin el festivo del 16, vence el 18."
+      },
+      {
+        "id": "C",
+        "texto": "Enviarle a más tardar el 18 de noviembre solo las copias de los empleados que autoricen por escrito su entrega.",
+        "explicacion": "Incorrecta. Acierta en el plazo, pero la entrega a la CNSC no depende de que los empleados la autoricen: la reserva no se le puede oponer a una autoridad administrativa competente que pide los documentos para ejercer sus funciones (art. 27)."
+      },
+      {
+        "id": "D",
+        "texto": "Enviarle las copias a más tardar el 18 de noviembre, con la indicación de que la comisión debe mantener su reserva.",
+        "explicacion": "Correcta. La reserva de las hojas de vida no es oponible a la CNSC, que las pide en ejercicio de una función legal, y a ella le corresponde asegurar esa reserva (art. 27). Como es una petición de documentos entre autoridades, debe resolverse en diez días (art. 30): desde el 4 de noviembre, sin el festivo del 16, vencen el miércoles 18."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la CNSC, en ejercicio de su función legal de vigilancia, pide hojas de vida con datos personales; el oficio llegó el 3 de noviembre. Regla: las hojas de vida son reservadas (art. 24 num. 3 del CPACA, sustituido por la Ley 1755), pero la reserva no es oponible a la autoridad administrativa competente que las pide para ejercer sus funciones, que debe asegurarla (art. 27), y la petición de documentos entre autoridades se resuelve en diez días (art. 30). Cálculo: sin el festivo del 16, el día 10 es el 18 de noviembre. Conclusión: enviarlas a más tardar ese día.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CPA-023",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Atención prioritaria de la petición de reconocimiento de un derecho fundamental: prueba sumaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 20 inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Las autoridades darán atención prioritaria a las peticiones de reconocimiento de un derecho fundamental cuando deban ser resueltas para evitar un perjuicio irremediable al peticionario, quien deberá probar sumariamente la titularidad del derecho y el riesgo del perjuicio invocado.",
+    "pregunta": "Una mujer de 52 años pide al fondo territorial de pensiones de un departamento que le reconozca la pensión de sobrevivientes por la muerte de su esposo, pensionado de ese fondo. Anexa los registros civiles de matrimonio y de defunción, y una declaración juramentada ante notario en la que afirma que dependía económicamente de él, que no tiene otros ingresos y que está a punto de perder la vivienda que arrienda. Pide que su solicitud se atienda antes que las demás. El procedimiento interno del fondo dice que solo se da prelación a las peticiones respaldadas por un fallo de tutela. ¿Qué debe hacer Felipe, el profesional del fondo que asigna el orden de trámite?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tramitarla en el orden de llegada hasta que la peticionaria presente un fallo de tutela que ordene la prelación.",
+        "explicacion": "Incorrecta. La ley no condiciona la atención prioritaria a una orden judicial, y un procedimiento interno no puede añadir ese requisito: basta la prueba sumaria del derecho y del riesgo."
+      },
+      {
+        "id": "B",
+        "texto": "Darle prelación desde ya, con lo que aportó junto con la solicitud, sin exigirle pruebas adicionales.",
+        "explicacion": "Correcta. La atención prioritaria procede cuando la petición busca el reconocimiento de un derecho fundamental y debe resolverse para evitar un perjuicio irremediable; la peticionaria debe probar sumariamente la titularidad y el riesgo, como hizo con los registros civiles y la declaración juramentada."
+      },
+      {
+        "id": "C",
+        "texto": "Darle prelación solo después de verificar, con una visita a su vivienda, que no tiene otros ingresos.",
+        "explicacion": "Incorrecta. La ley pide una prueba sumaria de la titularidad del derecho y del riesgo, no una comprobación plena. Exigir una visita antes de dar prelación aplaza justo lo que la norma quiere evitar."
+      },
+      {
+        "id": "D",
+        "texto": "Tramitarla en el orden de llegada, porque la prelación legal se reserva a los casos de peligro inminente para la vida.",
+        "explicacion": "Incorrecta. Confunde los dos incisos del art. 20: el peligro inminente para la vida o la integridad obliga a adoptar medidas de urgencia; la atención prioritaria del primer inciso procede ante un perjuicio irremediable probado sumariamente."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la viuda pide una pensión de la que depende su subsistencia y aporta registros civiles y una declaración juramentada sobre su dependencia económica y su falta de ingresos. Regla: el art. 20 del CPACA (sustituido por la Ley 1755) ordena dar atención prioritaria a las peticiones de reconocimiento de un derecho fundamental que deben resolverse para evitar un perjuicio irremediable, si el peticionario prueba sumariamente la titularidad y el riesgo. Conclusión: debe darle prelación, sin exigir un fallo de tutela.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CPA-024",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Petición de un afiliado ante una caja de compensación familiar: régimen aplicable y término de respuesta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 33 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 14 inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Salvo norma legal especial y so pena de sanción disciplinaria, toda petición deberá resolverse dentro de los quince (15) días siguientes a su recepción. [...] Sin perjuicio de lo dispuesto en leyes especiales, a las Cajas de Compensación Familiar, a las Instituciones del Sistema de Seguridad Social Integral, a las entidades que conforman el sistema financiero y bursátil y a aquellas empresas que prestan servicios públicos y servicios públicos domiciliarios, que se rijan por el derecho privado, se les aplicarán en sus relaciones con los usuarios, en lo pertinente, las disposiciones sobre derecho de petición previstas en los dos capítulos anteriores.",
+    "pregunta": "El miércoles 15 de julio de 2026, un trabajador radicó en la caja de compensación familiar a la que está afiliado una petición para que le devuelva lo que pagó por un plan vacacional en uno de los centros recreativos de la caja, que esta canceló. El reglamento de atención de la caja dice que las solicitudes de los afiliados se responden en veinte días hábiles. Como no le han respondido, el trabajador acude a la personería municipal, donde lo atiende Sofía, profesional del área de derechos humanos. Ninguna ley especial fija el término para responder esa petición. Cuente los términos en días hábiles; el lunes 20 de julio y el viernes 7 de agosto fueron festivos. ¿Qué debe explicarle Sofía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que a la caja se le aplican las reglas de la petición ante autoridades y que debe responderle a más tardar el jueves 6 de agosto.",
+        "explicacion": "Correcta. A las cajas de compensación se les aplican, en sus relaciones con los usuarios, las disposiciones sobre derecho de petición ante autoridades (art. 33). Rige, entonces, el término general de quince días (art. 14): desde el 16 de julio, sin el festivo del 20, vence el jueves 6 de agosto."
+      },
+      {
+        "id": "B",
+        "texto": "Que a la caja se le aplican las reglas de la petición ante autoridades y que debe responderle a más tardar el miércoles 5 de agosto.",
+        "explicacion": "Incorrecta. Acierta en el régimen aplicable, pero cuenta el lunes 20 de julio como día hábil, o cuenta desde el mismo día de la radicación. Bien contado, el día 15 es el jueves 6 de agosto, no el miércoles 5."
+      },
+      {
+        "id": "C",
+        "texto": "Que la caja no le debe respuesta, porque ante particulares la petición solo procede si busca proteger un derecho fundamental.",
+        "explicacion": "Incorrecta. Confunde la regla general de las organizaciones privadas (art. 32) con la de las cajas de compensación: a estas se les aplican directamente, en sus relaciones con los usuarios, las normas del derecho de petición, aunque la solicitud no busque proteger un derecho fundamental (art. 33)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la caja debe responderle dentro del término de su reglamento de atención, que vence el viernes 14 de agosto.",
+        "explicacion": "Incorrecta. El reglamento interno de la caja no es una ley especial y no puede ampliar el término legal. Como ninguna ley especial fija otro, rige el de quince días (art. 14), que vence el 6 de agosto. Los veinte días del reglamento llegarían al 14, descontados los festivos del 20 de julio y del 7 de agosto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: un afiliado pidió a su caja de compensación, el 15 de julio, la devolución de un servicio que esta canceló; ninguna ley especial fija el término, y el reglamento interno habla de veinte días. Regla: el art. 33 del CPACA (sustituido por la Ley 1755) aplica a las cajas, en sus relaciones con los usuarios, las normas del derecho de petición, entre ellas el término de quince días del art. 14. Cálculo: desde el 16 de julio, sin el festivo del 20, el día 15 es el 6 de agosto. Conclusión: la caja debía responder a más tardar el 6 de agosto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CPA-025",
+    "version": 3,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Reserva temporal de las operaciones de crédito público de la Nación y rechazo motivado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 24 num. 4 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 25 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "4. Los relativos a las condiciones financieras de las operaciones de crédito público y tesorería que realice la nación, así como a los estudios técnicos de valoración de los activos de la nación. Estos documentos e informaciones estarán sometidos a reserva por un término de seis (6) meses contados a partir de la realización de la respectiva operación. [...] Toda decisión que rechace la petición de informaciones o documentos será motivada, indicará en forma precisa las disposiciones legales que impiden la entrega de información o documentos pertinentes y deberá notificarse al peticionario. Contra la decisión que rechace la petición de informaciones o documentos por motivos de reserva legal, no procede recurso alguno, salvo lo previsto en el artículo siguiente. La restricción por reserva legal no se extenderá a otras piezas del respectivo expediente o actuación que no estén cubiertas por ella.",
+    "pregunta": "El martes 6 de octubre de 2026, un investigador universitario pidió al ministerio que realiza las operaciones de crédito público de la Nación copia de las condiciones financieras de dos de ellas: una emisión de bonos realizada el 20 de marzo de 2026 y un préstamo con un banco multilateral realizado el 15 de mayo de 2026. Andrés, profesional del área de crédito público, proyecta la respuesta, que se firmará el martes 20 de octubre. Ninguna otra norma establece reserva sobre esa información. ¿Qué debe decidir el ministerio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negar las dos mediante una decisión motivada, pues la reserva del préstamo se extiende a toda la solicitud.",
+        "explicacion": "Incorrecta. La reserva legal no se extiende a las piezas que no cubre. La información de los bonos ya no es reservada, porque pasaron más de seis meses desde la operación, y debe entregarse."
+      },
+      {
+        "id": "B",
+        "texto": "Entregar la de los bonos y negar la del préstamo con decisión motivada, e indicar que puede apelarla ante el superior del ministro.",
+        "explicacion": "Incorrecta. Acierta en separar las dos operaciones, pero contra el rechazo de una petición por reserva legal no procede recurso alguno (art. 25), y las decisiones de los ministros no tienen superior que resuelva una apelación."
+      },
+      {
+        "id": "C",
+        "texto": "Entregar la de los bonos y negar la del préstamo, que sigue reservada, con decisión motivada que cite la norma.",
+        "explicacion": "Correcta. La reserva de las condiciones financieras de las operaciones de crédito público de la Nación dura seis meses desde la operación: la de los bonos venció el 20 de septiembre y la del préstamo sigue hasta el 15 de noviembre. El rechazo de esta última debe motivarse, citar la norma con precisión y notificarse, y contra él no procede recurso alguno."
+      },
+      {
+        "id": "D",
+        "texto": "Negar las dos mediante una decisión motivada, pues esas condiciones son reservadas mientras el crédito no se pague.",
+        "explicacion": "Incorrecta. La reserva de esas condiciones no depende del pago del crédito: dura seis meses contados desde la realización de la operación, término que ya pasó para la emisión de bonos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: al 20 de octubre de 2026, la emisión de bonos tiene casi siete meses y el préstamo, cinco. Regla: el art. 24 num. 4 del CPACA (sustituido por la Ley 1755) reserva esas condiciones por seis meses desde la operación; el art. 25 exige que el rechazo sea motivado y cite con precisión las normas, excluye los recursos contra él y no permite extender la reserva a lo que no cubre. Cálculo: la reserva de los bonos venció el 20 de septiembre y la del préstamo vence el 15 de noviembre. Conclusión: entregar la de los bonos y negar, motivadamente, la del préstamo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CPA-026",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Petición completada después del requerimiento: reactivación del término para resolverla",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 14 inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 17 incs. 1 y 2 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Salvo norma legal especial y so pena de sanción disciplinaria, toda petición deberá resolverse dentro de los quince (15) días siguientes a su recepción. [...] En virtud del principio de eficacia, cuando la autoridad constate que una petición ya radicada está incompleta o que el peticionario deba realizar una gestión de trámite a su cargo, necesaria para adoptar una decisión de fondo, y que la actuación pueda continuar sin oponerse a la ley, requerirá al peticionario dentro de los diez (10) días siguientes a la fecha de radicación para que la complete en el término máximo de un (1) mes. A partir del día siguiente en que el interesado aporte los documentos o informes requeridos, se reactivará el término para resolver la petición.",
+    "pregunta": "El lunes 5 de octubre de 2026, un adulto mayor radicó en la ventanilla de la secretaría de desarrollo social de un municipio una solicitud de inscripción en el programa municipal de apoyo alimentario. Ese mismo día, al revisarla, la técnica encargada constató que faltaba la declaración juramentada de ingresos que exige el decreto que regula el programa, necesaria para decidir, y le envió un requerimiento para que la aportara en el término de un mes. El ciudadano la llevó a la ventanilla el jueves 15 de octubre. Patricia, profesional que coordina la oficina de PQRSD, debe registrar en el sistema la fecha límite para resolver la solicitud. Ninguna norma especial fija otro término. Cuente los términos en días hábiles; el lunes 12 de octubre y el lunes 2 de noviembre fueron festivos. ¿Qué fecha debe registrar Patricia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 27 de octubre, porque los quince días corren desde la radicación y el requerimiento no los detiene.",
+        "explicacion": "Incorrecta. Desconoce el efecto del requerimiento: según el art. 17, el término para resolver se reactiva a partir del día siguiente a aquel en que el interesado aporta lo pedido. El 27 de octubre sería el día 15 contado desde el 6 de octubre, sin el festivo del 12."
+      },
+      {
+        "id": "B",
+        "texto": "El 5 de noviembre, porque los quince días vuelven a correr a partir del jueves 15 de octubre.",
+        "explicacion": "Incorrecta. Cuenta como primer día el 15 de octubre, en que se aportó la declaración. El término se reactiva a partir del día siguiente: contado desde el 16 y sin el festivo del 2 de noviembre, el día 15 es el viernes 6 de noviembre."
+      },
+      {
+        "id": "C",
+        "texto": "El 27 de noviembre, porque los quince días vuelven a correr cuando vence el mes del requerimiento.",
+        "explicacion": "Incorrecta. El mes es el plazo máximo que tiene el peticionario para completar la solicitud, no una pausa fija del término: este se reactiva desde el día siguiente al aporte, aunque el mes no haya vencido."
+      },
+      {
+        "id": "D",
+        "texto": "El 6 de noviembre, porque los quince días vuelven a correr a partir del viernes 16 de octubre.",
+        "explicacion": "Correcta. El requerimiento se hizo el mismo día de la radicación, así que no alcanzó a correr ningún día del término, y este se reactivó a partir del día siguiente al aporte. Desde el viernes 16 de octubre, sin el festivo del 2 de noviembre, el día 15 es el viernes 6 de noviembre."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la solicitud se radicó y se requirió el 5 de octubre, y el ciudadano aportó la declaración el 15. Regla: el art. 17 del CPACA (sustituido por la Ley 1755) dispone que el término para resolver se reactiva a partir del día siguiente a aquel en que el interesado aporta lo requerido; el término general es de quince días (art. 14). Cálculo: desde el 16 de octubre, sin el festivo del 2 de noviembre, el día 15 es el 6 de noviembre; el festivo del 12 de octubre no influye. Conclusión: debe registrar el 6 de noviembre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-CPA-027",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Petición ante una persona natural frente a la cual el solicitante está subordinado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 32 inc. 1 y pars. 1 y 2 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Toda persona podrá ejercer el derecho de petición para garantizar sus derechos fundamentales ante organizaciones privadas con o sin personería jurídica, tales como sociedades, corporaciones, fundaciones, asociaciones, organizaciones religiosas, cooperativas, instituciones financieras o clubes. [...] PARÁGRAFO 1o. Este derecho también podrá ejercerse ante personas naturales cuando frente a ellas el solicitante se encuentre en situaciones de indefensión, subordinación o la persona natural se encuentre ejerciendo una función o posición dominante frente al peticionario. PARÁGRAFO 2o. Los personeros municipales y distritales y la Defensoría del Pueblo prestarán asistencia eficaz e inmediata a toda persona que la solicite, para garantizarle el ejercicio del derecho constitucional de petición que hubiere ejercido o desee ejercer ante organizaciones o instituciones privadas.",
+    "pregunta": "Una mujer que trabaja como empleada doméstica en la casa de una familia llega a la personería municipal. Cuenta que su EPS le negó una cita médica porque aparece sin afiliación, aunque su empleadora le descuenta cada mes del salario los aportes a salud. Quiere pedirle por escrito a la empleadora copia de las planillas de pago de los últimos seis meses. La atiende Karen, auxiliar administrativa de la personería. ¿Qué debe indicarle Karen?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede dirigirle la petición a su empleadora, por la dependencia laboral entre ellas, y que la personería puede ayudarle.",
+        "explicacion": "Correcta. El derecho de petición puede ejercerse ante personas naturales cuando el solicitante está en situación de subordinación frente a ellas, como la trabajadora frente a su empleadora (art. 32 par. 1), y aquí lo ejerce para proteger su derecho a la salud. La personería, además, debe prestarle asistencia para ejercerlo (art. 32 par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no puede presentársela como derecho de petición, porque ante una persona natural solo procede si presta un servicio público.",
+        "explicacion": "Incorrecta. La ley no exige que la persona natural preste un servicio público: basta que el solicitante esté frente a ella en indefensión o subordinación, o que ella ejerza una función o posición dominante frente al peticionario (art. 32 par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe radicar la petición en la personería, para que esta la tramite ante su empleadora y vigile que le respondan.",
+        "explicacion": "Incorrecta. La personería asiste a quien quiere ejercer el derecho de petición ante particulares (art. 32 par. 2), pero no lo tramita en su lugar: la petición se dirige directamente a la empleadora."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede presentársela como derecho de petición, porque ante particulares solo procede frente a personas jurídicas.",
+        "explicacion": "Incorrecta. El derecho de petición procede ante organizaciones privadas con o sin personería jurídica (art. 32 inc. 1) y también ante personas naturales en los casos del par. 1, como la subordinación laboral."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la trabajadora quiere pedir a su empleadora, una persona natural de la que depende laboralmente, documentos que necesita para su atención en salud. Regla: el art. 32 del CPACA (sustituido por la Ley 1755) permite ejercer el derecho de petición ante personas naturales cuando el solicitante está en situación de subordinación frente a ellas (par. 1), y ordena a los personeros prestar asistencia a quien quiera ejercerlo (par. 2). Conclusión: puede dirigirle la petición a su empleadora, con ayuda de la personería si la necesita.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CPA-028",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Derecho de petición",
+    "subtema": "Reserva invocada por una organización privada con fundamento en sus estatutos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 32 incs. 1 y 3 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Toda persona podrá ejercer el derecho de petición para garantizar sus derechos fundamentales ante organizaciones privadas con o sin personería jurídica, tales como sociedades, corporaciones, fundaciones, asociaciones, organizaciones religiosas, cooperativas, instituciones financieras o clubes. [...] Las organizaciones privadas solo podrán invocar la reserva de la información solicitada en los casos expresamente establecidos en la Constitución Política y la ley.",
+    "pregunta": "La junta directiva de un club social abrió a uno de sus socios un proceso disciplinario interno que, según los estatutos, puede terminar con su expulsión. Para ejercer su defensa, el socio pidió por escrito al club copia del informe con base en el cual se abrió el proceso. El club se la negó, porque sus estatutos declaran reservados los documentos de la junta directiva y disponen que solo se entregan por orden judicial. El socio acude a la Defensoría del Pueblo, donde lo atiende Mauricio, auxiliar administrativo. ¿Qué debe indicarle Mauricio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el club no está obligado a responderle, porque es una organización privada que no presta servicios públicos.",
+        "explicacion": "Incorrecta. El derecho de petición procede ante organizaciones privadas, entre ellas los clubes, cuando se ejerce para garantizar derechos fundamentales (art. 32 inc. 1), y el socio lo ejerce para defenderse en un proceso sancionatorio interno, lo que compromete su derecho al debido proceso."
+      },
+      {
+        "id": "B",
+        "texto": "Que el club no puede negarle la copia con base en sus estatutos, porque estos no bastan para crear una reserva.",
+        "explicacion": "Correcta. Las organizaciones privadas solo pueden invocar la reserva de la información en los casos expresamente establecidos en la Constitución y la ley (art. 32 inc. 3). Los estatutos del club no son ley, así que no sirven para negarle la copia al socio."
+      },
+      {
+        "id": "C",
+        "texto": "Que el club puede negarle la copia, porque los estatutos obligan a todos los socios y definen qué documentos son reservados.",
+        "explicacion": "Incorrecta. Los estatutos obligan a los socios, pero no pueden crear reservas oponibles al derecho de petición: una organización privada solo puede invocar las que establecen expresamente la Constitución y la ley (art. 32 inc. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el club puede negarle la copia mientras el proceso esté en curso, pero debe entregársela cuando lo decida.",
+        "explicacion": "Incorrecta. Ninguna norma constitucional o legal establece una reserva temporal sobre los procesos internos de un club, y una organización privada solo puede invocar las reservas previstas expresamente en la Constitución y la ley (art. 32 inc. 3)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el club negó la copia invocando una reserva creada por sus propios estatutos, y el socio la pide para defenderse en un proceso que puede terminar con su expulsión. Regla: el art. 32 del CPACA (sustituido por la Ley 1755) permite ejercer el derecho de petición ante clubes y otras organizaciones privadas para garantizar derechos fundamentales, y dispone que estas solo pueden invocar la reserva en los casos expresamente establecidos en la Constitución y la ley. Conclusión: los estatutos no bastan para negarle la copia.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CPA-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Actuación administrativa",
+    "subtema": "Inicio de la actuación de oficio: forma escrita e información al interesado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 35 incs. 1 y 2"
+    ],
+    "texto_fuente": "Los procedimientos administrativos se adelantarán por escrito, verbalmente, o por medios electrónicos de conformidad con lo dispuesto en este Código o la ley. [...] Cuando las autoridades procedan de oficio, los procedimientos administrativos únicamente podrán iniciarse mediante escrito, y por medio electrónico sólo cuando lo autoricen este Código o la ley, debiendo informar de la iniciación de la actuación al interesado para el ejercicio del derecho de defensa.",
+    "pregunta": "Un informe de supervisión indica que una junta de acción comunal no usó para dotar su sede, como se había comprometido, los recursos de un apoyo económico que le entregó un municipio. El secretario de desarrollo comunitario le pide a una profesional de su despacho que inicie de oficio una actuación administrativa, regida por el CPACA, para establecer si la junta debe reintegrar esos recursos. La profesional tiene el teléfono del presidente de la junta y la dirección de su sede. ¿Cómo debe iniciarse la actuación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con un documento escrito, avisando a la junta que el trámite comenzó, para que pueda defenderse desde el principio.",
+        "explicacion": "Correcta. Cuando la autoridad actúa de oficio, el procedimiento solo puede iniciarse mediante escrito (o por medio electrónico si el Código o la ley lo autorizan), y debe informarse al interesado que se inició, para que ejerza su derecho de defensa (art. 35 inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Con una llamada al presidente de la junta, de la que se deja constancia, porque los procedimientos pueden ser verbales.",
+        "explicacion": "Incorrecta. Es cierto que, en general, los procedimientos pueden adelantarse verbalmente (art. 35 inc. 1), pero cuando la autoridad procede de oficio el inicio debe hacerse mediante escrito (art. 35 inc. 2). Una llamada no cumple esa exigencia."
+      },
+      {
+        "id": "C",
+        "texto": "Con un auto interno que se dará a conocer a la junta junto con la decisión de fondo, para que pueda recurrirla.",
+        "explicacion": "Incorrecta. La ley exige informar al interesado la iniciación de la actuación, para que se defienda durante el trámite. Avisarle solo con la decisión de fondo lo priva de defenderse antes de que se decida."
+      },
+      {
+        "id": "D",
+        "texto": "Con la solicitud previa de un ciudadano o de un órgano de control, porque el municipio no puede actuar sin petición.",
+        "explicacion": "Incorrecta. El art. 35 inc. 2 prevé expresamente que las autoridades procedan de oficio; no se requiere una petición previa de un ciudadano ni de un órgano de control."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la actuación la inicia la propia autoridad, de oficio, para definir un posible reintegro. Regla: el art. 35 inc. 2 del CPACA dispone que, cuando las autoridades proceden de oficio, el procedimiento solo puede iniciarse mediante escrito (y por medio electrónico si el Código o la ley lo autorizan), y que debe informarse la iniciación al interesado para que ejerza su defensa. Conclusión: debe iniciarse por escrito y avisarse a la junta desde el comienzo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-CPA-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Actuación administrativa",
+    "subtema": "Pruebas pedidas por un tercero interviniente: decisión sin recursos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 38 num. 2 y parágrafo",
+      "art. 40 inc. 1"
+    ],
+    "texto_fuente": "Los terceros podrán intervenir en las actuaciones administrativas con los mismos derechos, deberes y responsabilidades de quienes son parte interesada, en los siguientes casos: [...] 2. Cuando sus derechos o su situación jurídica puedan resultar afectados con la actuación administrativa adelantada en interés particular, o cuando la decisión que sobre ella recaiga pueda ocasionarles perjuicios. [...] en ella se indicará cuál es el interés de participar en la actuación y se allegarán o solicitarán las pruebas que el interesado pretenda hacer valer. [...] Durante la actuación administrativa y hasta antes de que se profiera la decisión de fondo se podrán aportar, pedir y practicar pruebas de oficio o a petición del interesado sin requisitos especiales. Contra el acto que decida la solicitud de pruebas no proceden recursos. El interesado contará con la oportunidad de controvertir las pruebas aportadas o practicadas dentro de la actuación, antes de que se dicte una decisión de fondo.",
+    "pregunta": "Una constructora pidió a la secretaría de infraestructura de un municipio permiso para usar durante cuatro meses un lote municipal como patio de maquinaria. La dueña de la casa vecina pidió que la reconocieran en el trámite, porque el ruido de las máquinas la perjudicaría, y la secretaría la aceptó. Después ella pidió un estudio de ruido, pero la secretaría lo negó por auto, porque consideró suficiente el estudio que aportó la constructora. Contra ese auto, la vecina presentó reposición. ¿Qué debe hacer con ese escrito la profesional que sustancia el trámite?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tramitar y decidir la reposición, porque la vecina reconocida tiene en el trámite los mismos derechos que la constructora.",
+        "explicacion": "Incorrecta. Es cierto que el tercero reconocido actúa con los mismos derechos que la parte interesada (art. 38), pero ninguna de las dos puede recurrir el acto que decide sobre pruebas: contra él no proceden recursos (art. 40)."
+      },
+      {
+        "id": "B",
+        "texto": "Resolverla en contra de la vecina, porque quien interviene como tercero puede opinar, pero no pedir que se practiquen pruebas.",
+        "explicacion": "Incorrecta. El tercero que interviene puede pedir las pruebas que pretenda hacer valer (art. 38, parágrafo) y tiene los mismos derechos que la parte interesada. Además, la reposición no debe resolverse de fondo, porque el auto que negó la prueba no admite recursos (art. 40)."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazarla por improcedente, pues lo decidido sobre pruebas no admite recursos; ella podrá objetar el estudio antes del fallo.",
+        "explicacion": "Correcta. Contra el acto que decide la solicitud de pruebas no proceden recursos (art. 40), así que la reposición se rechaza por improcedente, sin resolverla de fondo. La vecina, como tercera reconocida, conserva la oportunidad de controvertir las pruebas del expediente, como el estudio de la constructora, antes de la decisión de fondo."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirla al secretario como apelación, porque negar el estudio es una decisión definitiva sobre la prueba pedida.",
+        "explicacion": "Incorrecta. Contra el acto que decide la solicitud de pruebas no procede ningún recurso, ni reposición ni apelación (art. 40); por eso tampoco puede convertirse el escrito en una apelación ante el superior."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la vecina, reconocida como tercera, recurre el auto que le negó una prueba. Regla: el art. 38 del CPACA le da los mismos derechos que a la parte interesada, incluido pedir pruebas, pero el art. 40 dispone que contra el acto que decide la solicitud de pruebas no proceden recursos, y garantiza al interesado la oportunidad de controvertir las pruebas antes de la decisión de fondo. Conclusión: la reposición se rechaza por improcedente, y la vecina puede objetar el estudio antes del fallo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CPA-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Publicación de los actos administrativos",
+    "subtema": "Obligatoriedad del acto general no publicado y recursos contra él",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 65 inc. 1 (modificado por el art. 15 de la Ley 2080 de 2021)",
+      "art. 75"
+    ],
+    "texto_fuente": "Los actos administrativos de carácter general no serán obligatorios mientras no hayan sido publicados en el Diario Oficial o en las gacetas territoriales, según el caso. [...] No habrá recurso contra los actos de carácter general, ni contra los de trámite, preparatorios, o de ejecución excepto en los casos previstos en norma expresa.",
+    "pregunta": "El lunes 7 de septiembre de 2026, el alcalde de un municipio firmó un decreto que agrega dos requisitos para inscribirse como expositor en la feria artesanal del municipio. El decreto todavía no ha salido en la gaceta municipal; se conoce por una nota de la emisora local. El miércoles 9 de septiembre, un artesano llega a la ventanilla de la secretaría de cultura con su solicitud de inscripción y los documentos que se exigían antes del decreto. Le advierte al técnico que lo atiende que, si le piden los requisitos nuevos, presentará reposición contra el decreto. ¿Cómo debe proceder el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle los dos requisitos nuevos, porque el decreto rige para todos desde el momento en que el alcalde lo firmó.",
+        "explicacion": "Incorrecta. Los actos de carácter general no son obligatorios mientras no se publiquen en el Diario Oficial o en la gaceta territorial que corresponda (art. 65). La firma del alcalde no basta para exigirlos."
+      },
+      {
+        "id": "B",
+        "texto": "Recibir la solicitud y revisarla con los requisitos anteriores, pues el decreto aún no es exigible a los particulares.",
+        "explicacion": "Correcta. El decreto es un acto general que aún no se ha publicado en la gaceta municipal, así que todavía no es obligatorio (art. 65). La solicitud debe revisarse con los requisitos vigentes antes del decreto."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle los requisitos nuevos e indicarle que tiene diez días para presentar reposición ante el alcalde contra el decreto.",
+        "explicacion": "Incorrecta por dos razones: el decreto aún no obliga, porque no se ha publicado (art. 65), y contra los actos de carácter general no procede recurso (art. 75)."
+      },
+      {
+        "id": "D",
+        "texto": "Abstenerse de recibir la solicitud hasta que el decreto salga en la gaceta, para no tramitarla con reglas en transición.",
+        "explicacion": "Incorrecta. Ninguna norma permite suspender la recepción de solicitudes por un acto general aún no publicado. Mientras no se publique, el decreto no es obligatorio y la solicitud se tramita con las reglas vigentes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el decreto que agrega requisitos ya está firmado, pero no se ha publicado en la gaceta municipal. Regla: según el art. 65 del CPACA (mod. por la Ley 2080 de 2021), los actos de carácter general no son obligatorios mientras no se publiquen en el Diario Oficial o en la gaceta territorial, y según el art. 75 no procede recurso contra ellos. Conclusión: el técnico debe recibir la solicitud y revisarla con los requisitos anteriores.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-CPA-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Notificación de los actos administrativos",
+    "subtema": "Renuncia a la notificación electrónica y citación para notificación personal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 56 incs. 1 y 2 (modificado por el art. 10 de la Ley 2080 de 2021)",
+      "art. 68 inc. 1",
+      "art. 69 inc. 1"
+    ],
+    "texto_fuente": "Las autoridades podrán notificar sus actos a través de medios electrónicos, siempre que el administrado haya aceptado este medio de notificación. Sin embargo, durante el desarrollo de la actuación el interesado podrá solicitar a la autoridad que las notificaciones sucesivas no se realicen por medios electrónicos, sino de conformidad con los otros medios previstos en el Capítulo Quinto del presente Título [...] Si no hay otro medio más eficaz de informar al interesado, se le enviará una citación a la dirección, al número de fax o al correo electrónico que figuren en el expediente o puedan obtenerse del registro mercantil, para que comparezca a la diligencia de notificación personal. El envío de la citación se hará dentro de los cinco (5) días siguientes a la expedición del acto, y de dicha diligencia se dejará constancia en el expediente. [...] Si no pudiere hacerse la notificación personal al cabo de los cinco (5) días del envío de la citación, esta se hará por medio de aviso",
+    "pregunta": "Al radicar una solicitud ante la secretaría de vivienda de una gobernación, Marcela aceptó por escrito que le notificaran por medios electrónicos. Con el trámite aún en curso, pidió por escrito que las siguientes notificaciones no se le hicieran por ese medio, porque cerró la cuenta de correo que había registrado. En el expediente consta la dirección de su casa. La secretaría acaba de expedir la resolución que decide la solicitud, y el técnico encargado de las notificaciones debe ponerla en conocimiento de Marcela. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Notificarla por el servicio de notificaciones de la sede electrónica, porque la aceptación que dio al radicar rige hasta el final.",
+        "explicacion": "Incorrecta. Durante la actuación, el interesado puede pedir que las notificaciones sucesivas no se hagan por medios electrónicos, sino por los otros medios del Código (art. 56 inc. 2). Marcela lo pidió, así que su aceptación inicial ya no rige."
+      },
+      {
+        "id": "B",
+        "texto": "Remitir a su casa un aviso con copia íntegra de la resolución, porque ya no puede notificarse por el medio que aceptó al inicio.",
+        "explicacion": "Incorrecta. El aviso no es el primer paso: procede cuando no se ha podido hacer la notificación personal al cabo de cinco días del envío de la citación (art. 69). Primero hay que citarla."
+      },
+      {
+        "id": "C",
+        "texto": "Publicar la resolución en la página web y en la cartelera de la entidad durante cinco días, porque ya no hay un correo para ubicarla.",
+        "explicacion": "Incorrecta. La publicación en la página web o en un lugar de acceso al público se usa cuando se desconoce la información del destinatario (arts. 68 y 69). Aquí se conoce la dirección de su casa."
+      },
+      {
+        "id": "D",
+        "texto": "Citarla en su casa, dentro de los cinco días hábiles siguientes, para que acuda a notificarse, porque pidió no usar más el correo.",
+        "explicacion": "Correcta. Como Marcela pidió que no se le notificara más por medios electrónicos (art. 56 inc. 2), se acude a la notificación personal: la citación se envía a la dirección del expediente dentro de los cinco días siguientes a la expedición del acto, con constancia en el expediente (art. 68)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Marcela aceptó al inicio la notificación electrónica, pero durante el trámite pidió que no se usara más, y en el expediente está su dirección. Regla: el art. 56 inc. 2 del CPACA (mod. por la Ley 2080 de 2021) le permite pedir que las notificaciones sucesivas se hagan por los otros medios del Código, y el art. 68 ordena enviar la citación a la dirección del expediente dentro de los cinco días siguientes a la expedición. El aviso solo procede si la citación fracasa (art. 69). Conclusión: debe citarla en su casa.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Notificación de los actos administrativos",
+    "subtema": "Notificación en estrados y plazo para recurrir",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 67 num. 2",
+      "art. 76 inc. 1"
+    ],
+    "texto_fuente": "2. En estrados. Toda decisión que se adopte en audiencia pública será notificada verbalmente en estrados, debiéndose dejar precisa constancia de las decisiones adoptadas y de la circunstancia de que dichas decisiones quedaron notificadas. A partir del día siguiente a la notificación se contarán los términos para la interposición de recursos. [...] Los recursos de reposición y apelación deberán interponerse por escrito en la diligencia de notificación personal, o dentro de los diez (10) días siguientes a ella, o a la notificación por aviso, o al vencimiento del término de publicación, según el caso.",
+    "pregunta": "El jueves 6 de agosto de 2026, en una audiencia pública de una actuación administrativa, la secretaria de vivienda de un municipio decidió qué familias recibirían los subsidios de mejoramiento de vivienda del año. Al terminar, un aspirante que asistió y quedó por fuera le dijo al técnico que levantaba el acta que esperaría a que le enviaran la decisión por escrito para recurrirla. Cuente los términos en días hábiles; el 7 y el 17 de agosto de 2026 fueron festivos. ¿Qué debe informarle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que tiene hasta el 20 de agosto, porque quedó notificado en la audiencia y cuenta con diez días hábiles para recurrir.",
+        "explicacion": "Incorrecta. Cuenta como hábiles el 7 y el 17 de agosto, que fueron festivos. Descontándolos, los diez días hábiles van del 10 al 24 de agosto."
+      },
+      {
+        "id": "B",
+        "texto": "Que tiene hasta el 24 de agosto, porque quedó notificado en la audiencia y cuenta con diez días hábiles para recurrir.",
+        "explicacion": "Correcta. La decisión adoptada en audiencia pública queda notificada verbalmente en estrados, y los términos para recurrir corren desde el día siguiente (art. 67 num. 2). Como el 7 de agosto fue festivo, los diez días hábiles (art. 76) van del 10 al 24 de agosto, sin contar tampoco el festivo del 17."
+      },
+      {
+        "id": "C",
+        "texto": "Que tiene hasta el 21 de agosto, porque quedó notificado en la audiencia y los diez días incluyen el de la audiencia.",
+        "explicacion": "Incorrecta. Incluye el día de la audiencia en el conteo. Los términos para recurrir se cuentan a partir del día siguiente a la notificación en estrados (art. 67 num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el plazo aún no le corre, porque queda notificado cuando reciba la copia escrita de la decisión adoptada.",
+        "explicacion": "Incorrecta. Las decisiones adoptadas en audiencia pública se notifican verbalmente en estrados; no hay que esperar una copia escrita para que empiece a correr el plazo de los recursos (art. 67 num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el aspirante asistió a la audiencia pública del jueves 6 de agosto, en la que se adoptó la decisión. Regla: el art. 67 num. 2 del CPACA dispone que la decisión adoptada en audiencia pública queda notificada verbalmente en estrados y que los términos para recurrir corren desde el día siguiente; el art. 76 da diez días. Cálculo: el 7 y el 17 de agosto fueron festivos, así que los diez días hábiles van del 10 al 24 de agosto. Conclusión: puede recurrir hasta el 24 de agosto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CPA-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Recursos administrativos",
+    "subtema": "Apelación interpuesta directamente, sin reposición previa, y plazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 74 num. 2",
+      "art. 76 incs. 1 y 3"
+    ],
+    "texto_fuente": "2. El de apelación, para ante el inmediato superior administrativo o funcional con el mismo propósito. [...] Los recursos de reposición y apelación deberán interponerse por escrito en la diligencia de notificación personal, o dentro de los diez (10) días siguientes a ella, o a la notificación por aviso, o al vencimiento del término de publicación, según el caso. [...] El recurso de apelación podrá interponerse directamente, o como subsidiario del de reposición y cuando proceda será obligatorio para acceder a la jurisdicción.",
+    "pregunta": "La directora de fomento agropecuario de una gobernación, cuyo superior inmediato es el secretario de agricultura del departamento, negó a una asociación de productores un apoyo en insumos, y la decisión se notificó personalmente a su representante el lunes 16 de marzo de 2026. El martes 31 de marzo, el representante llega a la ventanilla de radicación con un escrito de apelación dirigido a la directora y le pregunta al auxiliar administrativo que lo atiende si antes debía presentar una reposición y si todavía está a tiempo. Cuente los términos en días hábiles; el 23 de marzo de 2026 fue festivo. ¿Qué debe indicarle el auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede apelar sin haber presentado reposición, y que hoy, 31 de marzo, es el último día para hacerlo.",
+        "explicacion": "Correcta. La decisión de la directora es apelable ante su superior inmediato, el secretario de agricultura (art. 74 num. 2), y la apelación puede interponerse directamente, sin reposición previa (art. 76 inc. 3), dentro de los diez días siguientes a la notificación personal (art. 76 inc. 1). Contados desde el 17 de marzo y sin el festivo del 23, los diez días hábiles vencen el 31 de marzo."
+      },
+      {
+        "id": "B",
+        "texto": "Que primero debe presentar la reposición, pues la apelación va en subsidio de ella, y que hoy es el último día para hacerlo.",
+        "explicacion": "Incorrecta. La apelación no exige presentar antes la reposición: puede interponerse directamente o como subsidiaria de ella (art. 76 inc. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Que podía apelar sin haber presentado reposición, pero que su plazo venció ayer, 30 de marzo, y ya no procede.",
+        "explicacion": "Incorrecta. Acierta en que no se necesita reposición, pero cuenta como hábil el festivo del 23 de marzo. Sin él, el décimo día hábil es el 31 de marzo, así que el escrito llega a tiempo."
+      },
+      {
+        "id": "D",
+        "texto": "Que debía presentar primero la reposición, y que de todos modos su plazo venció ayer, 30 de marzo, y ya no procede.",
+        "explicacion": "Incorrecta por dos razones: la apelación puede presentarse directamente (art. 76 inc. 3), y el plazo no venció el 30 de marzo, porque el 23 fue festivo y el décimo día hábil es el 31."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la directora, cuyo superior inmediato es el secretario de agricultura, notificó personalmente su decisión el lunes 16 de marzo, y el representante llega el martes 31 con una apelación, sin reposición previa. Regla: el art. 74 del CPACA prevé la apelación ante el inmediato superior, y el art. 76 da diez días siguientes a la notificación personal y permite interponerla directamente o como subsidiaria de la reposición. Cálculo: sin el festivo del 23 de marzo, los diez días hábiles van del 17 al 31 de marzo. Conclusión: puede apelar directamente, y el 31 es el último día.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-CPA-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Recursos administrativos",
+    "subtema": "Recurso interpuesto por agente oficioso sin ratificación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 77 incs. 3 y 4"
+    ],
+    "texto_fuente": "Sólo los abogados en ejercicio podrán ser apoderados. Si el recurrente obra como agente oficioso, deberá acreditar la calidad de abogado en ejercicio, y prestar la caución que se le señale para garantizar que la persona por quien obra ratificará su actuación dentro del término de dos (2) meses. Si no hay ratificación se hará efectiva la caución y se archivará el expediente.",
+    "pregunta": "Una secretaría de un municipio ordenó a un comerciante devolver unos equipos que recibió de un programa municipal de emprendimiento y que no usó. La orden se le notificó por aviso mientras él estaba fuera del país. El jueves 30 de abril de 2026, dentro del plazo, un abogado interpuso reposición en nombre del comerciante, como agente oficioso; acreditó que es abogado en ejercicio y el 8 de mayo prestó la caución que le fijó la secretaría. El 15 de julio de 2026, la profesional que proyecta la decisión advierte que el comerciante no se ha pronunciado sobre lo que hizo el abogado. ¿Qué corresponde hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Resolver de fondo la reposición, porque el abogado acreditó su calidad y prestó la caución que se le fijó.",
+        "explicacion": "Incorrecta. Acreditar la calidad de abogado y prestar la caución permiten actuar como agente oficioso, pero la ley exige además que el representado ratifique la actuación dentro de dos meses. Sin ratificación, el recurso no se resuelve."
+      },
+      {
+        "id": "B",
+        "texto": "Requerir al comerciante para que en un mes avale lo actuado, porque si no lo hace se entenderá desistido el recurso.",
+        "explicacion": "Incorrecta. Confunde esta regla con el desistimiento tácito de las peticiones incompletas. Para el agente oficioso, el plazo de ratificación es de dos meses, y ya venció; no se concede uno nuevo."
+      },
+      {
+        "id": "C",
+        "texto": "Cobrar la garantía del abogado y cerrar el trámite, porque venció el plazo para que el comerciante avalara lo actuado.",
+        "explicacion": "Correcta. El agente oficioso debe ser abogado en ejercicio y prestar caución para garantizar que el representado ratificará su actuación dentro de dos meses (art. 77). Contados desde el recurso (30 de abril) o desde la caución (8 de mayo), los dos meses vencieron a más tardar el 8 de julio sin ratificación; por eso se hace efectiva la caución y se archiva el expediente."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazar la reposición y devolver la caución, porque en vía administrativa no se puede recurrir como agente oficioso.",
+        "explicacion": "Incorrecta. El art. 77 sí permite recurrir como agente oficioso, a condición de acreditar la calidad de abogado en ejercicio y prestar la caución que se le señale."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el abogado recurrió como agente oficioso el 30 de abril, prestó la caución el 8 de mayo, y al 15 de julio el comerciante no ha ratificado. Regla: el art. 77 del CPACA exige al agente oficioso ser abogado en ejercicio y prestar caución para garantizar que el representado ratificará su actuación dentro de dos meses; si no hay ratificación, se hace efectiva la caución y se archiva el expediente. Cálculo: con cualquiera de los dos puntos de partida, los dos meses vencieron a más tardar el 8 de julio. Conclusión: se cobra la caución y se archiva.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-CPA-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Firmeza de los actos administrativos",
+    "subtema": "Firmeza cuando no se interponen los recursos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 76 inc. 1",
+      "art. 87 num. 3",
+      "art. 89"
+    ],
+    "texto_fuente": "Los recursos de reposición y apelación deberán interponerse por escrito en la diligencia de notificación personal, o dentro de los diez (10) días siguientes a ella [...] Los actos administrativos quedarán en firme: [...] 3. Desde el día siguiente al del vencimiento del término para interponer los recursos, si estos no fueron interpuestos, o se hubiere renunciado expresamente a ellos. [...] Salvo disposición legal en contrario, los actos en firme serán suficientes para que las autoridades, por sí mismas, puedan ejecutarlos de inmediato.",
+    "pregunta": "Una secretaría de un municipio impuso una multa a una empresa mediante una resolución contra la que procedían reposición y apelación. La resolución se notificó personalmente al representante legal de la empresa el viernes 17 de julio de 2026, y la empresa no presentó ningún recurso. El técnico de la oficina que gestiona el cobro de las multas debe anotar en el expediente la fecha desde la cual la resolución quedó en firme, para iniciar su ejecución. Cuente los términos en días hábiles; el 20 de julio de 2026 fue festivo. ¿Qué fecha debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 21 de julio, porque la multa queda en firme el primer día hábil siguiente al de su notificación personal.",
+        "explicacion": "Incorrecta. Esa regla aplica cuando contra el acto no procede ningún recurso (art. 87 num. 1). Aquí procedían reposición y apelación, así que hay que esperar a que venza el plazo para interponerlos."
+      },
+      {
+        "id": "B",
+        "texto": "El 28 de julio, porque el plazo de cinco días hábiles para recurrir venció el 27 de julio sin recursos.",
+        "explicacion": "Incorrecta. El plazo para interponer reposición y apelación es de diez días, no de cinco (art. 76). Cinco días es, por ejemplo, el plazo del recurso de queja."
+      },
+      {
+        "id": "C",
+        "texto": "El 3 de agosto, porque ese día se cumplieron los diez días hábiles que tenía la empresa para recurrir.",
+        "explicacion": "Incorrecta. El 3 de agosto es el último día del plazo para recurrir; el acto queda en firme desde el día siguiente al de su vencimiento (art. 87 num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "El 4 de agosto, porque el plazo para recurrir corrió del 21 de julio al 3 de agosto y la empresa no lo utilizó.",
+        "explicacion": "Correcta. Los diez días hábiles siguientes a la notificación personal (art. 76) corrieron del martes 21 de julio (el 20 fue festivo) al lunes 3 de agosto. Como no hubo recursos, el acto quedó en firme desde el día siguiente al vencimiento, el 4 de agosto (art. 87 num. 3), y desde entonces puede ejecutarse (art. 89)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la multa se notificó personalmente el viernes 17 de julio, procedían recursos y la empresa no los presentó. Regla: el art. 76 del CPACA da diez días siguientes a la notificación para recurrir; el art. 87 num. 3 dice que, si no se interponen, el acto queda en firme desde el día siguiente al vencimiento de ese término, y el art. 89 permite ejecutar los actos en firme. Cálculo: por el festivo del 20 de julio, los diez días hábiles van del 21 de julio al 3 de agosto. Conclusión: queda en firme desde el 4 de agosto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Ejecutoriedad de los actos administrativos",
+    "subtema": "Pérdida de fuerza ejecutoria por el paso de cinco años y trámite de la excepción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 87 num. 2",
+      "art. 91 num. 3",
+      "art. 92"
+    ],
+    "texto_fuente": "Los actos administrativos quedarán en firme: [...] 2. Desde el día siguiente a la publicación, comunicación o notificación de la decisión sobre los recursos interpuestos. [...] Perderán obligatoriedad y, por lo tanto, no podrán ser ejecutados en los siguientes casos: [...] 3. Cuando al cabo de cinco (5) años de estar en firme, la autoridad no ha realizado los actos que le correspondan para ejecutarlos. [...] Cuando el interesado se oponga a la ejecución de un acto administrativo alegando que ha perdido fuerza ejecutoria, quien lo produjo podrá suspenderla y deberá resolver dentro de un término de quince (15) días. El acto que decida la excepción no será susceptible de recurso alguno, pero podrá ser impugnado por vía jurisdiccional.",
+    "pregunta": "En noviembre de 2020, la secretaría de desarrollo económico de un municipio ordenó a una fundación devolver unos computadores que recibió para un programa que no ejecutó. La fundación interpuso reposición y apelación, y la decisión que resolvió la apelación, confirmando la orden, se le notificó el martes 5 de octubre de 2021. La secretaría no hizo nada para hacer cumplir la orden hasta el lunes 14 de septiembre de 2026, cuando requirió por escrito a la fundación para que devolviera los equipos. La fundación se opuso, alegando que por el tiempo transcurrido la orden ya no puede ejecutarse. La profesional jurídica de la secretaría debe proyectar la respuesta. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la secretaría resuelva la oposición y la niegue, porque los cinco años corren desde el día siguiente a notificarse lo resuelto en la apelación.",
+        "explicacion": "Correcta. El acto pierde fuerza ejecutoria si, al cabo de cinco años de estar en firme, la autoridad no ha hecho lo que le corresponde para ejecutarlo (art. 91 num. 3). La orden quedó en firme el 6 de octubre de 2021, día siguiente a la notificación de la decisión de la apelación (art. 87 num. 2); los cinco años se cumplían en octubre de 2026, y el requerimiento se hizo antes. La oposición la resuelve quien expidió el acto, dentro de quince días (art. 92)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la secretaría acepte la oposición, porque pasaron más de cinco años desde noviembre de 2020, cuando se expidió la orden de devolución.",
+        "explicacion": "Incorrecta. Los cinco años no se cuentan desde la expedición, sino desde que el acto quedó en firme (art. 91 num. 3), lo que ocurrió al día siguiente de notificarse la decisión de la apelación, en octubre de 2021."
+      },
+      {
+        "id": "C",
+        "texto": "Que la secretaría remita la oposición al juez administrativo, porque a él le corresponde declarar si un acto en firme dejó de ser ejecutable.",
+        "explicacion": "Incorrecta. La excepción de pérdida de fuerza ejecutoria la resuelve la misma autoridad que produjo el acto, dentro de quince días (art. 92). Lo que decida no tiene recursos, pero puede impugnarse ante la jurisdicción."
+      },
+      {
+        "id": "D",
+        "texto": "Que la secretaría tramite la oposición como reposición contra el requerimiento y la decida dentro de los dos meses siguientes a su recibo.",
+        "explicacion": "Incorrecta. La oposición por pérdida de fuerza ejecutoria tiene su propio trámite: quien produjo el acto debe resolverla dentro de quince días, y contra esa decisión no procede recurso alguno (art. 92)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la decisión de la apelación se notificó el 5 de octubre de 2021 y la secretaría requirió a la fundación el 14 de septiembre de 2026. Regla: el acto quedó en firme el día siguiente a esa notificación (art. 87 num. 2 del CPACA); pierde fuerza ejecutoria si pasan cinco años en firme sin actos de ejecución (art. 91 num. 3), y la oposición la decide quien lo expidió, dentro de quince días (art. 92). Cálculo: los cinco años se cumplían en octubre de 2026. Conclusión: la secretaría debe negar la oposición.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-CPA-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Revocación directa",
+    "subtema": "Revocación después de notificado el auto admisorio: oferta de revocatoria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 95 inc. 1 y parágrafo"
+    ],
+    "texto_fuente": "La revocación directa de los actos administrativos podrá cumplirse aun cuando se haya acudido ante la Jurisdicción de lo Contencioso Administrativo, siempre que no se haya notificado auto admisorio de la demanda. [...] No obstante, en el curso de un proceso judicial, hasta antes de que se profiera sentencia de segunda instancia, de oficio o a petición del interesado o del Ministerio Público, las autoridades demandadas podrán formular oferta de revocatoria de los actos administrativos impugnados previa aprobación del Comité de Conciliación de la entidad.",
+    "pregunta": "Una gobernación negó a un exservidor el reconocimiento de una prima mediante una resolución que quedó en firme. El exservidor demandó la resolución ante la jurisdicción de lo contencioso administrativo, y el auto que admitió la demanda se notificó a la gobernación el 3 de agosto de 2026. En septiembre, la oficina jurídica concluye que la resolución desconoció una norma expresa y que es muy probable una condena. El secretario de despacho quiere corregir cuanto antes la situación y le pide a la jefa de la oficina jurídica que le recomiende cómo hacerlo. ¿Qué debe recomendarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Revocarla de oficio, con aprobación previa del comité de conciliación, porque el acto desconoció una norma expresa.",
+        "explicacion": "Incorrecta. Notificado el auto admisorio de la demanda, ya no cabe la revocación directa (art. 95 inc. 1), aunque la apruebe el comité de conciliación. La aprobación del comité es el requisito de la oferta de revocatoria que se formula dentro del proceso (art. 95, parágrafo)."
+      },
+      {
+        "id": "B",
+        "texto": "Revocarla de oficio, porque la entidad conserva esa facultad mientras no se haya dictado sentencia de primera instancia.",
+        "explicacion": "Incorrecta. El límite para revocar directamente no es la sentencia de primera instancia, sino la notificación del auto admisorio de la demanda (art. 95), que ya ocurrió."
+      },
+      {
+        "id": "C",
+        "texto": "Proponer, dentro del proceso judicial que está en curso, que la propia gobernación revoque la resolución demandada.",
+        "explicacion": "Correcta. Notificado el auto admisorio, ya no cabe la revocación directa (art. 95 inc. 1). Pero, hasta antes de la sentencia de segunda instancia, la autoridad demandada puede formular en el proceso una oferta de revocatoria del acto, previa aprobación de su comité de conciliación (art. 95, parágrafo)."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir al exservidor que solicite la revocación directa, porque a petición de parte procede aunque la demanda esté admitida.",
+        "explicacion": "Incorrecta. El límite del auto admisorio notificado se aplica a la revocación directa en general, sea de oficio o a solicitud de parte (art. 95). La vía disponible es la oferta de revocatoria dentro del proceso."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el auto admisorio de la demanda contra la resolución ya se notificó a la gobernación. Regla: el art. 95 del CPACA permite la revocación directa aun cuando se haya acudido a la jurisdicción, siempre que no se haya notificado el auto admisorio; su parágrafo permite a la autoridad demandada, hasta antes de la sentencia de segunda instancia, formular oferta de revocatoria previa aprobación del comité de conciliación. Conclusión: la gobernación debe ofrecer la revocación dentro del proceso.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Procedimiento administrativo sancionatorio",
+    "subtema": "Formulación de cargos: improcedencia de recursos y plazo para descargos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 47 incs. 2 y 3"
+    ],
+    "texto_fuente": "Concluidas las averiguaciones preliminares, si fuere del caso, formulará cargos mediante acto administrativo [...] Este acto administrativo deberá ser notificado personalmente a los investigados. Contra esta decisión no procede recurso. Los investigados podrán, dentro de los quince (15) días siguientes a la notificación de la formulación de cargos, presentar los descargos y solicitar o aportar las pruebas que pretendan hacer valer.",
+    "pregunta": "En un procedimiento sancionatorio que se rige por el CPACA, porque ninguna ley especial lo regula, una secretaría de un departamento formuló cargos a una empresa, y el acto se notificó personalmente a su representante legal el miércoles 27 de mayo de 2026. El 3 de junio, la empresa interpuso reposición contra ese acto y pidió suspender, mientras se resolvía, el plazo para presentar descargos. El viernes 19 de junio radicó sus descargos con una solicitud de pruebas. Cuente los términos en días hábiles; el 8 y el 15 de junio de 2026 fueron festivos. ¿Qué debe hacer la profesional que sustancia el procedimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Estudiar los descargos y las pruebas pedidas, porque llegaron a tiempo, y no tramitar la reposición, porque ese acto no admite recursos.",
+        "explicacion": "Correcta. El acto de formulación de cargos no admite recursos (art. 47), así que la reposición no se tramita ni suspende nada. Los descargos podían presentarse dentro de los quince días siguientes a la notificación: sin los festivos del 8 y el 15 de junio, ese plazo va del 28 de mayo al 19 de junio, de modo que llegaron el último día."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar los descargos, porque el plazo venció el 17 de junio, y no tramitar la reposición, porque ese acto no admite recursos.",
+        "explicacion": "Incorrecta. Acierta en que la reposición no procede, pero cuenta como hábiles los festivos del 8 y el 15 de junio. Sin ellos, los quince días hábiles vencen el 19 de junio, no el 17."
+      },
+      {
+        "id": "C",
+        "texto": "Resolver primero la reposición y, como lo pidió la empresa, tener suspendido mientras tanto el plazo para presentar descargos.",
+        "explicacion": "Incorrecta. Contra el acto que formula cargos no procede recurso (art. 47), de modo que la reposición no puede tramitarse ni suspender el plazo para presentar descargos."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazar los descargos, porque el plazo de diez días hábiles venció el 11 de junio, y resolver la reposición antes de continuar.",
+        "explicacion": "Incorrecta. El plazo para presentar descargos es de quince días, no de diez (art. 47), y la reposición contra la formulación de cargos no procede."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los cargos se notificaron el miércoles 27 de mayo, la empresa los recurrió y radicó descargos el viernes 19 de junio. Regla: el art. 47 del CPACA dispone que contra el acto de formulación de cargos no procede recurso y da quince días siguientes a su notificación para presentar descargos y pedir pruebas. Cálculo: sin los festivos del 8 y el 15 de junio, los quince días hábiles van del 28 de mayo al 19 de junio. Conclusión: los descargos son oportunos y la reposición no se tramita.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Procedimiento administrativo sancionatorio",
+    "subtema": "Período probatorio con tres o más investigados y traslado para alegatos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 48 incs. 1 y 2",
+      "art. 48 parágrafo (adicionado por el art. 5 de la Ley 2080 de 2021)",
+      "art. 49 inc. 1"
+    ],
+    "texto_fuente": "Cuando deban practicarse pruebas se señalará un término no mayor a treinta (30) días. Cuando sean tres (3) o más investigados o se deban practicar en el exterior el término probatorio podrá ser hasta de sesenta (60) días. Vencido el período probatorio se dará traslado al investigado por diez (10) días para que presente los alegatos respectivos. [...] En los procedimientos administrativos sancionatorios fiscales el término para la práctica de pruebas no será mayor a diez (10) días, si fueran tres (3) o más investigados o se deban practicar en el exterior podrá ser hasta de treinta (30) días. El traslado al investigado será por cinco (5) días. [...] El funcionario competente proferirá el acto administrativo definitivo dentro de los treinta (30) días siguientes a la presentación de los alegatos.",
+    "pregunta": "Una secretaría de un municipio adelanta, conforme al CPACA, un procedimiento sancionatorio contra tres empresas que operaron casetas en la feria municipal sin cumplir las condiciones de sus permisos. Recibidos los descargos, el profesional que sustancia el procedimiento propone fijar un término de 45 días para practicar las pruebas decretadas, todas en el país. Su jefe objeta que el período probatorio no puede pasar de 30 días. ¿Cuál de estas afirmaciones es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tiene razón el jefe, porque el término no puede pasar de 30 días; al vencer, se da traslado de diez días para alegar.",
+        "explicacion": "Incorrecta. El límite de 30 días es la regla general, pero cuando hay tres o más investigados el término probatorio puede llegar a 60 días (art. 48 inc. 1). Acierta en el traslado de diez días para alegatos."
+      },
+      {
+        "id": "B",
+        "texto": "Tiene razón el profesional, porque el término puede llegar a 60 días; al vencer, se da traslado de diez días para alegar.",
+        "explicacion": "Correcta. Como son tres los investigados, el período probatorio puede ser hasta de 60 días, así que 45 días es válido (art. 48 inc. 1). Vencido, se da traslado de diez días para alegatos (art. 48 inc. 2), y luego se decide dentro de los treinta días siguientes a su presentación (art. 49)."
+      },
+      {
+        "id": "C",
+        "texto": "Tiene razón el profesional, porque el término puede llegar a 60 días; al vencer, se decide dentro de los treinta días siguientes.",
+        "explicacion": "Incorrecta. Acierta en el límite de 60 días, pero omite el traslado de diez días para alegatos (art. 48 inc. 2). Los treinta días para decidir se cuentan desde la presentación de los alegatos (art. 49)."
+      },
+      {
+        "id": "D",
+        "texto": "Tiene razón el jefe, porque el término no puede pasar de 30 días; al vencer, se da traslado de cinco días para alegar.",
+        "explicacion": "Incorrecta por dos razones: con tres investigados el término puede llegar a 60 días, y el traslado para alegatos es de diez días. Los cinco días de traslado son del procedimiento sancionatorio fiscal (art. 48, parágrafo)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el procedimiento se adelanta contra tres empresas y se proponen 45 días de pruebas. Regla: el art. 48 del CPACA fija un período probatorio no mayor de 30 días, que puede llegar a 60 cuando hay tres o más investigados o pruebas en el exterior; vencido, se da traslado de diez días para alegatos, y el art. 49 da treinta días para decidir desde su presentación. Conclusión: el profesional tiene razón, y tras las pruebas siguen diez días para alegar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-CPA-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Procedimiento administrativo sancionatorio",
+    "subtema": "Caducidad de la facultad sancionatoria en una conducta continuada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 52 incs. 1 y 2"
+    ],
+    "texto_fuente": "Salvo lo dispuesto en leyes especiales, la facultad que tienen las autoridades para imponer sanciones caduca a los tres (3) años de ocurrido el hecho, la conducta u omisión que pudiere ocasionarlas, término dentro del cual el acto administrativo que impone la sanción debe haber sido expedido y notificado. [...] Cuando se trate de un hecho o conducta continuada, este término se contará desde el día siguiente a aquel en que cesó la infracción y/o la ejecución.",
+    "pregunta": "Un departamento otorgó a una empresa un permiso para usar un inmueble departamental, con la obligación de entregar cada mes un reporte de ocupación. La empresa dejó de entregarlos en marzo de 2022 y solo se puso al día el 27 de febrero de 2023, cuando entregó todos los pendientes. En el procedimiento sancionatorio, regido por el CPACA porque ninguna ley especial lo regula, la secretaría competente expidió la resolución de multa el 20 de febrero de 2026. La empresa no acudió a la citación para notificarse, y la notificación por aviso quedó surtida el 10 de marzo de 2026. Al recurrir, la empresa alega que la facultad para sancionarla caducó, y la profesional que proyecta la decisión debe pronunciarse. ¿Tiene razón la empresa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No, porque la resolución se expidió antes de cumplirse tres años desde que la empresa entregó los reportes pendientes.",
+        "explicacion": "Incorrecta. No basta con expedir el acto dentro de los tres años: en ese término también debe notificarse (art. 52 inc. 1). La notificación quedó surtida el 10 de marzo de 2026, después de vencido el plazo."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, porque los tres años se cuentan desde la primera omisión, en marzo de 2022, y vencieron en marzo de 2025.",
+        "explicacion": "Incorrecta. Llega a la conclusión correcta por una razón equivocada. En una conducta continuada, los tres años se cuentan desde el día siguiente a aquel en que cesó la infracción (art. 52 inc. 2), es decir, desde el 28 de febrero de 2023, no desde la primera omisión."
+      },
+      {
+        "id": "C",
+        "texto": "No, porque el término de caducidad se interrumpió cuando se notificó a la empresa el acto de formulación de cargos.",
+        "explicacion": "Incorrecta. El art. 52 no prevé que la formulación de cargos interrumpa la caducidad. Exige que, dentro de los tres años, el acto sancionatorio se haya expedido y notificado."
+      },
+      {
+        "id": "D",
+        "texto": "Sí, porque cumplidos tres años desde que terminó el incumplimiento, la multa expedida aún no se le había notificado.",
+        "explicacion": "Correcta. La omisión fue continuada y cesó el 27 de febrero de 2023, así que los tres años se cuentan desde el 28 de febrero de 2023 y se cumplieron a finales de febrero de 2026 (art. 52 inc. 2). Dentro de ese término, la multa debía estar expedida y notificada (art. 52 inc. 1); se expidió el 20 de febrero, pero la notificación quedó surtida el 10 de marzo de 2026."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la omisión continuada cesó el 27 de febrero de 2023; la multa se expidió el 20 de febrero de 2026 y se notificó el 10 de marzo de 2026. Regla: el art. 52 del CPACA dice que la facultad sancionatoria caduca a los tres años, término dentro del cual el acto sancionatorio debe expedirse y notificarse, y que en la conducta continuada se cuenta desde el día siguiente a su cese. Cálculo: los tres años corren desde el 28 de febrero de 2023 y vencieron a finales de febrero de 2026. Conclusión: la facultad caducó.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-CPA-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Derecho de Petición y Procedimiento Administrativo",
+    "tema": "Silencio administrativo",
+    "subtema": "Recursos no decididos en el procedimiento sancionatorio: plazo de un año",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 52 inc. 1",
+      "art. 86 inc. 1"
+    ],
+    "texto_fuente": "Dicho acto sancionatorio es diferente de los actos que resuelven los recursos, los cuales deberán ser decididos, so pena de pérdida de competencia, en un término de un (1) año contado a partir de su debida y oportuna interposición. Si los recursos no se deciden en el término fijado en esta disposición, se entenderán fallados a favor del recurrente, sin perjuicio de la responsabilidad patrimonial y disciplinaria que tal abstención genere para el funcionario encargado de resolver. [...] Salvo lo dispuesto en el artículo 52 de este Código, transcurrido un plazo de dos (2) meses, contados a partir de la interposición de los recursos de reposición o apelación sin que se haya notificado decisión expresa sobre ellos, se entenderá que la decisión es negativa.",
+    "pregunta": "En un procedimiento sancionatorio regido por el CPACA, la secretaría de gobierno de un municipio multó a una empresa por un hecho ocurrido en octubre de 2023. La resolución se notificó en enero de 2025, y el 10 de febrero de 2025, dentro del plazo legal y con la sustentación completa, la empresa interpuso apelación ante el alcalde. El 2 de marzo de 2026, el profesional del despacho del alcalde que estudia el recurso presenta un proyecto que confirma la multa. ¿Qué debe advertirle la jefa de la oficina jurídica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede firmarse: a los dos meses operó el silencio negativo, pero la entidad conserva la facultad de decidir el recurso.",
+        "explicacion": "Incorrecta. El silencio negativo de dos meses en los recursos (art. 86) aplica salvo lo dispuesto en el art. 52. En el procedimiento sancionatorio, los recursos deben decidirse en un año, so pena de perder la competencia."
+      },
+      {
+        "id": "B",
+        "texto": "Que ya no puede firmarse: pasó el año para decidir, y la apelación se entiende resuelta como lo pidió la empresa.",
+        "explicacion": "Correcta. En el procedimiento sancionatorio, los recursos deben decidirse dentro del año siguiente a su debida y oportuna interposición, so pena de pérdida de competencia; si no se deciden, se entienden fallados a favor del recurrente (art. 52). El año corrió desde el 10 de febrero de 2025 y venció en febrero de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede firmarse, porque los tres años contados desde el hecho de octubre de 2023 todavía no han transcurrido.",
+        "explicacion": "Incorrecta. Los tres años se refieren al plazo para expedir y notificar el acto que impone la sanción, y se respetaron con la notificación de enero de 2025. Los recursos tienen su propio término de un año (art. 52)."
+      },
+      {
+        "id": "D",
+        "texto": "Que no hay nada que firmar: a los dos meses operó el silencio negativo, y con él la multa quedó en firme y ejecutable.",
+        "explicacion": "Incorrecta. La regla del silencio negativo de dos meses en los recursos (art. 86) cede ante el art. 52: en el procedimiento sancionatorio, si el recurso no se decide en un año, se entiende fallado a favor del recurrente, no en su contra."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la apelación contra la multa se interpuso en debida forma el 10 de febrero de 2025, y el 2 de marzo de 2026 seguía sin decidirse. Regla: el art. 52 del CPACA exige decidir los recursos del procedimiento sancionatorio en un año desde su interposición, so pena de pérdida de competencia, y si no se deciden se entienden fallados a favor del recurrente; el silencio negativo de dos meses del art. 86 se aplica salvo lo dispuesto en el art. 52. Conclusión: el proyecto ya no puede firmarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
   }
 ]

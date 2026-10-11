@@ -66,6 +66,9 @@ export const MODULE_SECTIONS = [
       'Seguridad y Salud en el Trabajo',
       'Gestión Documental',
       'TIC y Gobierno Digital',
+      'Control Interno',
+      'Planeación y Proyectos de Inversión',
+      'Contabilidad Pública',
     ],
   },
   {
@@ -94,6 +97,9 @@ export const AREAS_FUNCIONALES = [
   { id: 'sst', label: 'Seguridad y salud (SST)', frase: 'seguridad y salud en el trabajo', modulo: 'Seguridad y Salud en el Trabajo' },
   { id: 'gestion_documental', label: 'Gestión documental', frase: 'gestión documental', modulo: 'Gestión Documental' },
   { id: 'tic', label: 'TIC', frase: 'TIC y gobierno digital', modulo: 'TIC y Gobierno Digital' },
+  { id: 'control_interno', label: 'Control interno', frase: 'control interno', modulo: 'Control Interno' },
+  { id: 'planeacion', label: 'Planeación', frase: 'planeación y proyectos de inversión', modulo: 'Planeación y Proyectos de Inversión' },
+  { id: 'contabilidad', label: 'Contabilidad', frase: 'contabilidad pública', modulo: 'Contabilidad Pública' },
 ] as const
 
 export type AreaId = (typeof AREAS_FUNCIONALES)[number]['id']
@@ -113,5 +119,6 @@ export const REPORT_REASONS = [
   { id: 'otro', label: 'Otro problema' },
 ] as const
 
-// Lo mínimo que necesita el reporte de rendimiento
-export type ReportQuestion = Pick<Question, 'id' | 'modulo' | 'tema'>
+// Lo mínimo que necesita el reporte de rendimiento. `activa` indica si hoy se puede practicar
+// (el reporte también cuenta respuestas antiguas a preguntas ya retiradas).
+export type ReportQuestion = Pick<Question, 'id' | 'modulo' | 'tema'> & { activa: boolean }

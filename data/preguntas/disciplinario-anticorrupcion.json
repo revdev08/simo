@@ -2108,5 +2108,742 @@
       "fecha": "2026-10-10",
       "p_estimado": 50
     }
+  },
+  {
+    "id": "TC-DIS-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Acoso laboral",
+    "subtema": "Modalidades y tratamiento sancionatorio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1010 de 2006",
+    "articulos": [
+      "art. 2, numeral 6",
+      "art. 10, numeral 1"
+    ],
+    "texto_fuente": "se entenderá por acoso laboral toda conducta persistente y demostrable, ejercida sobre un empleado, trabajador por parte de un empleador, un jefe o superior jerárquico inmediato o mediato [...] 6. Desprotección laboral: Toda conducta tendiente a poner en riesgo la integridad y la seguridad del trabajador mediante órdenes o asignación de funciones sin el cumplimiento de los requisitos mínimos de protección y seguridad para el trabajador. [...] El acoso laboral, cuando estuviere debidamente acreditado, se sancionará así: 1. Como falta disciplinaria gravísima en el Código Disciplinario Unico, cuando su autor sea un servidor público.",
+    "pregunta": "Durante dos meses, la coordinadora de servicios generales de una alcaldía le ha ordenado varias veces a Rosa, auxiliar de servicios generales de planta, limpiar por fuera los ventanales del tercer piso parada sobre la cornisa, sin arnés ni línea de vida, aunque la alcaldía tiene esos equipos en el almacén. Rosa no ha sufrido ningún accidente. Si se acredita el acoso laboral, ¿en qué modalidad encaja la conducta y qué consecuencia tendría para la coordinadora, que es servidora pública?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Maltrato laboral, y para la coordinadora sería una falta disciplinaria gravísima.",
+        "explicacion": "Incorrecta. El maltrato laboral comprende actos de violencia o expresiones injuriosas contra el trabajador. Aquí no hay agresión: hay órdenes que exponen a Rosa a un riesgo sin las medidas mínimas de seguridad."
+      },
+      {
+        "id": "B",
+        "texto": "Desprotección laboral, y para la coordinadora sería una falta disciplinaria grave.",
+        "explicacion": "Incorrecta. Acierta en la modalidad, pero cuando el autor es un servidor público la Ley 1010 sanciona el acoso acreditado como falta gravísima, no como grave."
+      },
+      {
+        "id": "C",
+        "texto": "Desprotección laboral, y para la coordinadora sería una falta disciplinaria gravísima.",
+        "explicacion": "Correcta. Ordenar trabajos en altura sin arnés ni línea de vida pone en riesgo la integridad de Rosa sin los requisitos mínimos de protección: es desprotección laboral (art. 2 num. 6). Si la autora es servidora pública, el acoso acreditado es falta gravísima (art. 10 num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Persecución laboral, y para la coordinadora sería una falta disciplinaria grave.",
+        "explicacion": "Incorrecta. La persecución laboral busca inducir la renuncia mediante descalificación, carga excesiva de trabajo o cambios de horario, lo que no describe el caso. Además, para un servidor público la falta es gravísima."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las órdenes reiteradas de trabajar sobre la cornisa sin arnés ni línea de vida, aunque la entidad tiene esos equipos. Regla: el art. 2 num. 6 de la Ley 1010 define la desprotección laboral como la conducta que pone en riesgo la integridad y la seguridad del trabajador mediante órdenes sin los requisitos mínimos de protección; el art. 10 num. 1 sanciona el acoso acreditado como falta gravísima cuando su autor es servidor público. Conclusión: desprotección laboral y falta gravísima.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1010_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-DIS-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Acoso laboral",
+    "subtema": "Presunción de acoso y prueba de las conductas en privado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1010 de 2006",
+    "articulos": [
+      "art. 7, inciso primero, literal g) e incisos finales"
+    ],
+    "texto_fuente": "Se presumirá que hay acoso laboral si se acredita la ocurrencia repetida y pública de cualquiera de las siguientes conductas: [...] g) las burlas sobre la apariencia física o la forma de vestir, formuladas en público; [...] En los demás casos no enumerados en este artículo, la autoridad competente valorará, según las circunstancias del caso y la gravedad de las conductas denunciadas, la ocurrencia del acoso laboral descrito en el artículo 2o. [...] Cuando las conductas descritas en este artículo tengan ocurrencias en privado, deberán ser demostradas por los medios de prueba reconocidos en la ley procesal civil.",
+    "pregunta": "Natalia, profesional especializada de una secretaría departamental de salud, cuenta que en los últimos cuatro meses su jefe se ha burlado seis veces de su forma de vestir y le ha dicho que hará que la saquen del área. Todo ocurrió en la oficina del jefe, con la puerta cerrada y sin nadie más presente. Antes de presentar la queja por acoso laboral, pregunta qué debe tener en cuenta sobre la prueba de esas conductas. ¿Qué se le debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al no haber testigos, no se presume el acoso y deberá probarlo con los medios probatorios del proceso civil.",
+        "explicacion": "Correcta. La presunción del art. 7 exige que las conductas sean repetidas y públicas. Como ocurrieron en privado, deben demostrarse con los medios de prueba reconocidos en la ley procesal civil (inciso final del art. 7)."
+      },
+      {
+        "id": "B",
+        "texto": "Como los episodios se repitieron seis veces, se presume el acoso y es el jefe quien tendrá que desvirtuarlo.",
+        "explicacion": "Incorrecta. La repetición no basta: la presunción requiere que la ocurrencia sea repetida y también pública. Aquí todo ocurrió a puerta cerrada."
+      },
+      {
+        "id": "C",
+        "texto": "No podrán calificarse como acoso, porque la ley solo tiene en cuenta las conductas ocurridas frente a terceros.",
+        "explicacion": "Incorrecta. Las conductas en privado sí pueden constituir acoso. La ley solo exige que se demuestren con los medios de prueba de la ley procesal civil, y la autoridad valora los casos no enumerados según su gravedad."
+      },
+      {
+        "id": "D",
+        "texto": "Bastará un escrito con el detalle de los hechos y una prueba sumaria para que se tengan por demostradas.",
+        "explicacion": "Incorrecta. El escrito detallado con prueba sumaria es el requisito de la denuncia preventiva ante el inspector de trabajo, el personero o la Defensoría (art. 9 num. 2), no la forma de probar el acoso."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las burlas y amenazas se repitieron, pero a puerta cerrada y sin testigos. Regla: el art. 7 de la Ley 1010 presume el acoso cuando se acredita la ocurrencia repetida y pública de las conductas que enumera, y su inciso final ordena que las ocurridas en privado se demuestren con los medios de prueba reconocidos en la ley procesal civil. Conclusión: no opera la presunción y Natalia deberá probar los hechos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1010_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-DIS-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Acoso laboral",
+    "subtema": "Peticiones de colaboración y trabajo en dominicales y festivos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1010 de 2006",
+    "articulos": [
+      "art. 7, literal j)",
+      "art. 8, literal e) y parágrafo"
+    ],
+    "texto_fuente": "la exigencia permanente de laborar en dominicales y días festivos sin ningún fundamento objetivo en las necesidades de la empresa, o en forma discriminatoria respecto a los demás trabajadores o empleados; [...] e) La solicitud de cumplir deberes extras de colaboración con la empresa o la institución, cuando sean necesarios para la continuidad del servicio o para solucionar situaciones difíciles en la operación de la empresa o la institución; [...] PARÁGRAFO. Las exigencias técnicas, los requerimientos de eficiencia y las peticiones de colaboración a que se refiere este artículo deberán ser justificados, fundados en criterios objetivos y no discriminatorios.",
+    "pregunta": "En el área de contabilidad de una gobernación trabajan seis técnicos con las mismas funciones. Desde hace tres meses, mediante un memorando que invoca las necesidades del servicio, el jefe le exige a uno de ellos, Iván, que trabaje todos los domingos y festivos; a los otros cinco no les ha hecho esa exigencia. Según el informe de gestión, en esos tres meses el área no tuvo cierres contables, vencimientos ni trabajo represado. Iván presentó una queja por acoso laboral, y el jefe alega que se trata de una petición de colaboración, que la ley excluye del acoso. ¿Qué debe concluirse sobre la defensa del jefe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Prospera, porque el jefe dejó constancia escrita de que la exigencia obedece a las necesidades del servicio.",
+        "explicacion": "Incorrecta. Invocar las necesidades del servicio en un memorando no basta. La petición de colaboración solo se excluye del acoso si es necesaria para la continuidad del servicio o para superar una situación difícil, y debe estar justificada en criterios objetivos y no discriminatorios (art. 8 lit. e y parágrafo). El informe de gestión muestra que el área no tenía esa necesidad."
+      },
+      {
+        "id": "B",
+        "texto": "No prospera, pero la exigencia solo será acoso si se demuestra que con ella el jefe busca que Iván renuncie.",
+        "explicacion": "Incorrecta. Acierta en que la defensa no prospera, pero inducir la renuncia es solo uno de los fines posibles del acoso, no un requisito. La exigencia permanente de trabajar en dominicales y festivos sin fundamento objetivo, o en forma discriminatoria, figura por sí misma entre las conductas de acoso (art. 7 lit. j)."
+      },
+      {
+        "id": "C",
+        "texto": "Prospera, porque repartir el trabajo es facultad del jefe, aunque el área no tenga pendientes y solo se le exija a Iván.",
+        "explicacion": "Incorrecta. Reconoce los hechos, pero les resta valor. La facultad de dirigir el trabajo no ampara una petición de colaboración que no es necesaria para el servicio ni una carga impuesta a un solo trabajador: el parágrafo del art. 8 exige que la petición sea justificada, objetiva y no discriminatoria."
+      },
+      {
+        "id": "D",
+        "texto": "No prospera, porque la exigencia no responde a una necesidad real del área y recae en Iván y no en sus pares.",
+        "explicacion": "Correcta. Sin cierres, vencimientos ni trabajo represado, la petición no es necesaria para la continuidad del servicio, y al recaer solo en Iván es discriminatoria. Por eso no la ampara el art. 8 (lit. e y parágrafo) y encaja en el art. 7 lit. j: exigencia permanente de laborar en dominicales y festivos sin fundamento objetivo o en forma discriminatoria."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el informe muestra que el área no tenía cierres, vencimientos ni trabajo represado, y la exigencia recae solo en Iván. Regla: el art. 8 lit. e de la Ley 1010 excluye del acoso las peticiones de colaboración necesarias para la continuidad del servicio, y su parágrafo exige que sean justificadas, objetivas y no discriminatorias; el art. 7 lit. j incluye entre las conductas de acoso esa exigencia cuando no tiene fundamento objetivo o es discriminatoria. Conclusión: la defensa del jefe no prospera.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1010_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-DIS-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Acoso laboral",
+    "subtema": "Denuncia preventiva: actuación de la autoridad y traslado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1010 de 2006",
+    "articulos": [
+      "art. 9, numerales 2 y 3",
+      "art. 9, parágrafo 3"
+    ],
+    "texto_fuente": "2. La víctima del acoso laboral podrá poner en conocimiento del Inspector de Trabajo con competencia en el lugar de los hechos, de los Inspectores Municipales de Policía, de los Personeros Municipales o de la Defensoría del Pueblo, a prevención, la ocurrencia de una situación continuada y ostensible de acoso laboral. [...] La autoridad que reciba la denuncia en tales términos conminará preventivamente al empleador para que ponga en marcha los procedimientos confidenciales referidos en el numeral 1 de este artículo y programe actividades pedagógicas o terapias grupales de mejoramiento de las relaciones entre quienes comparten una relación laboral dentro de una empresa. Para adoptar esta medida se escuchará a la parte denunciada. 3. Quien se considere víctima de una conducta de acoso laboral bajo alguna de las modalidades descritas en el artículo 2o de la presente ley podrá solicitar la intervención de una institución de conciliación autorizada legalmente a fin de que amigablemente se supere la situación de acoso laboral. [...] PARÁGRAFO 3o. La denuncia a que se refiere el numeral 2 de este artículo podrá acompañarse de la solicitud de traslado a otra dependencia de la misma empresa, si existiera una opción clara en ese sentido, y será sugerida por la autoridad competente como medida correctiva cuando ello fuere posible.",
+    "pregunta": "Óscar, profesional universitario de un instituto municipal de deportes, presentó ante el personero municipal un escrito en el que detalla una situación continuada y evidente de acoso laboral por parte de su jefe, con una prueba sumaria de los hechos. En el mismo escrito pide que lo trasladen a la subdirección de escenarios deportivos del instituto, donde hay una vacante de su mismo nivel y con funciones afines. ¿Qué le corresponde hacer al personero?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Escuchar al jefe, ordenar el traslado de Óscar a la vacante y requerir al instituto que active su procedimiento interno.",
+        "explicacion": "Incorrecta. Acierta en oír al jefe y en requerir al instituto, pero la autoridad que recibe la denuncia no ordena el traslado: lo sugiere como medida correctiva cuando es posible (par. 3 del art. 9)."
+      },
+      {
+        "id": "B",
+        "texto": "Escuchar al jefe, requerir al instituto que active su procedimiento interno y sugerirle el traslado de Óscar.",
+        "explicacion": "Correcta. Recibida la denuncia escrita con prueba sumaria, el personero escucha a la parte denunciada y conmina al empleador a poner en marcha los procedimientos internos y las actividades pedagógicas (art. 9 num. 2). Como hay una vacante afín, sugiere el traslado como medida correctiva (par. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Requerir al instituto que active su procedimiento interno, sugerirle el traslado de Óscar y escuchar al jefe después.",
+        "explicacion": "Incorrecta. Acierta en el requerimiento y en el traslado, pero altera el orden: la ley dice que, para adoptar la medida, se escuchará a la parte denunciada. Oír al jefe es un paso previo, no posterior, aunque la medida sea preventiva."
+      },
+      {
+        "id": "D",
+        "texto": "Escuchar al jefe, sugerir el traslado de Óscar y remitir el caso a conciliación antes de requerir al instituto.",
+        "explicacion": "Incorrecta. Acierta en oír al jefe y en sugerir el traslado, pero acudir a una institución de conciliación es una opción de la víctima (art. 9 num. 3), no un trámite que la autoridad deba agotar antes de conminar al empleador."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Óscar acudió al personero con un escrito detallado y prueba sumaria, y pidió un traslado que es posible. Regla: el art. 9 num. 2 de la Ley 1010 ordena a la autoridad que recibe la denuncia conminar al empleador a activar los procedimientos internos y las actividades pedagógicas, y escuchar antes a la parte denunciada; la conciliación es una opción de la víctima (num. 3) y el traslado se sugiere, no se ordena (par. 3). Conclusión: oír al jefe, conminar al instituto y sugerir el traslado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1010_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción C como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-DIS-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Acoso laboral",
+    "subtema": "Garantías contra represalias para la víctima y los testigos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1010 de 2006",
+    "articulos": [
+      "art. 11, numeral 1, inciso final y parágrafo"
+    ],
+    "texto_fuente": "1. La terminación unilateral del contrato de trabajo o la destitución de la víctima del acoso laboral que haya ejercido los procedimientos preventivos, correctivos y sancionatorios consagrados en la presente Ley, carecerán de todo efecto cuando se profieran dentro de los seis (6) meses siguientes a la petición o queja, siempre y cuando la autoridad administrativa, judicial o de control competente verifique la ocurrencia de los hechos puestos en conocimiento. [...] Las anteriores garantías cobijarán también a quienes hayan servido como testigos en los procedimientos disciplinarios y administrativos de que trata la presente ley. PARÁGRAFO. La garantía de que trata el numeral uno no regirá para los despidos autorizados por el Ministerio de la Protección Social conforme a las leyes, para las sanciones disciplinarias que imponga el Ministerio Público o las Salas Disciplinarias de los Consejos Superiores o Seccionales de la Judicatura, ni para las sanciones disciplinarias que se dicten como consecuencia de procesos iniciados antes de la denuncia o queja de acoso laboral.",
+    "pregunta": "Laura, técnica de una alcaldía, presentó el 9 de febrero de 2026 una queja por acoso laboral contra su jefe, y la autoridad competente verificó que los hechos ocurrieron. Jorge, auxiliar administrativo de la misma dependencia, declaró como testigo en ese trámite. Meses después hubo dos destituciones: la de Laura, impuesta el 15 de julio de 2026 por la Procuraduría Provincial en un proceso que abrió el 2 de marzo de 2026, y la de Jorge, impuesta el 3 de agosto de 2026 por la oficina de control disciplinario interno de la alcaldía en un proceso que abrió el 20 de abril de 2026. ¿Cuál de las destituciones carece de efecto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos, porque se impusieron dentro de los seis meses siguientes a la queja y en procesos posteriores a ella.",
+        "explicacion": "Incorrecta. Las dos fechas caen dentro de los seis meses (hasta el 9 de agosto de 2026) y los procesos son posteriores a la queja, pero la garantía no rige para las sanciones que impone el Ministerio Público, como la de la Procuraduría contra Laura."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la de Jorge, porque la protección alcanza a quien declaró y no cubre las sanciones de la Procuraduría.",
+        "explicacion": "Correcta. La garantía cobija también a los testigos. La destitución de Jorge se profirió el 3 de agosto de 2026, antes de vencer los seis meses (9 de agosto), la impuso la oficina interna y el proceso es posterior a la queja. La de Laura la impuso la Procuraduría, que hace parte del Ministerio Público, excluido por el parágrafo."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la de Laura, porque la protección es para quien formuló la queja y no para quienes declararon en el trámite.",
+        "explicacion": "Incorrecta. La ley extiende expresamente las garantías a quienes hayan servido como testigos. Además, la sanción de Laura la impuso el Ministerio Público, al que no se aplica la garantía."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna, porque las dos provienen de procesos por hechos distintos de los que se denunciaron como acoso.",
+        "explicacion": "Incorrecta. La garantía no exige que el proceso disciplinario verse sobre los hechos de acoso: deja sin efecto la destitución proferida dentro de los seis meses, salvo las excepciones del parágrafo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la queja es del 9 de febrero de 2026; a Laura la destituyó la Procuraduría y a Jorge, testigo, la oficina interna el 3 de agosto. Regla: el art. 11 num. 1 de la Ley 1010 deja sin efecto la destitución proferida dentro de los seis meses siguientes a la queja si se verifican los hechos; la garantía cubre a los testigos, pero no rige para las sanciones del Ministerio Público. Cálculo: los seis meses vencían el 9 de agosto de 2026. Conclusión: solo la de Jorge carece de efecto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1010_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-DIS-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Acoso laboral",
+    "subtema": "Caducidad: desde cuándo se cuenta el término",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1010 de 2006",
+    "articulos": [
+      "art. 18 (modificado por el art. 1 de la Ley 2209 de 2022)"
+    ],
+    "texto_fuente": "Las acciones derivadas del acoso laboral caducarán en tres (3) años a partir de la fecha en que hayan ocurrido las conductas a que hace referencia esta ley.",
+    "pregunta": "Durante 2022 y hasta el 16 de marzo de 2023, Felipe, técnico de archivo de una secretaría de educación departamental, sufrió humillaciones públicas reiteradas de su jefe; ese día el jefe fue trasladado a otra sede y los hechos cesaron. El 22 de mayo de 2023, la EPS le diagnosticó a Felipe un trastorno de ansiedad asociado a esa situación, y el 1 de agosto de 2023 él pasó a trabajar en otra entidad. El 6 de abril de 2026 presentó la queja por acoso laboral. ¿Qué ocurre con las acciones derivadas del acoso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Caducaron, porque el plazo corre desde los hechos de acoso y el último ocurrió el 16 de marzo de 2023.",
+        "explicacion": "Correcta. El art. 18 (mod. Ley 2209 de 2022) cuenta los tres años desde la fecha en que ocurrieron las conductas. El último hecho fue el 16 de marzo de 2023, así que el término venció el 16 de marzo de 2026, antes de la queja del 6 de abril."
+      },
+      {
+        "id": "B",
+        "texto": "Siguen vigentes, porque el plazo corre desde el diagnóstico que emitió la EPS el 22 de mayo de 2023.",
+        "explicacion": "Incorrecta. El diagnóstico es una consecuencia del acoso, no la conducta. Contar desde allí (hasta el 22 de mayo de 2026) desconoce que la ley toma la fecha de los hechos."
+      },
+      {
+        "id": "C",
+        "texto": "Siguen vigentes, porque el plazo corre desde el 1 de agosto de 2023, cuando Felipe dejó la entidad.",
+        "explicacion": "Incorrecta. El cambio de entidad no marca el inicio del término. Contar desde el 1 de agosto de 2023 no tiene apoyo en el art. 18."
+      },
+      {
+        "id": "D",
+        "texto": "Caducaron, porque el plazo vencía a los seis meses del último hecho, es decir, el 16 de septiembre de 2023.",
+        "explicacion": "Incorrecta. Aplica un término de seis meses que no corresponde al texto vigente: el art. 18, modificado por la Ley 2209 de 2022, fija tres años."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los hechos de acoso cesaron el 16 de marzo de 2023 y la queja se presentó el 6 de abril de 2026. Regla: el art. 18 de la Ley 1010 (mod. Ley 2209 de 2022) dispone que las acciones caducan en tres años contados desde la fecha en que ocurrieron las conductas. Cálculo: 16 de marzo de 2023 + 3 años = 16 de marzo de 2026. El diagnóstico y el cambio de entidad no mueven el punto de partida. Conclusión: las acciones caducaron.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1010_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-DIS-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Conflicto de intereses: grados de parentesco",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 44"
+    ],
+    "texto_fuente": "Todo servidor público deberá declararse impedido para actuar en un asunto cuando tenga interés particular y directo en su regulación, gestión, control o decisión, o lo tuviere su cónyuge, compañero o compañera permanente, o algunos de sus parientes dentro del cuarto grado de consanguinidad, segundo de afinidad o primero civil, o su socio o socios de hecho o de derecho.",
+    "pregunta": "Rubén, técnico de la secretaría de planeación de un municipio, revisa las solicitudes de certificado de uso del suelo y proyecta la respuesta para la firma del secretario. Esta semana le llegaron por reparto cuatro solicitudes, cada una presentada por la persona interesada en el certificado. Ninguno de los solicitantes es socio suyo. ¿En cuál de ellas debe declararse impedido?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la que presentó la hija de un primo hermano suyo.",
+        "explicacion": "Incorrecta. La hija de un primo hermano está en quinto grado de consanguinidad (Rubén, padre, abuelo, tío, primo, hija), por fuera del cuarto grado que fija el art. 44."
+      },
+      {
+        "id": "B",
+        "texto": "En la que presentó un primo hermano de su esposa.",
+        "explicacion": "Incorrecta. El primo hermano de la esposa es pariente por afinidad en cuarto grado. Para la afinidad el límite es el segundo grado; el cuarto grado solo rige para la consanguinidad."
+      },
+      {
+        "id": "C",
+        "texto": "En la que presentó un primo hermano suyo, hijo de su tía.",
+        "explicacion": "Correcta. El primo hermano es pariente en cuarto grado de consanguinidad (Rubén, madre, abuelo, tía, primo), dentro del límite del art. 44, y tiene interés directo en la solicitud. Rubén debe declararse impedido."
+      },
+      {
+        "id": "D",
+        "texto": "En la que presentó un hijo de uno de los hermanos de su esposa.",
+        "explicacion": "Incorrecta. El hijo de un hermano de la esposa es pariente de ella en tercer grado de consanguinidad (esposa, suegro, hermano de la esposa, sobrino), así que para Rubén es pariente por afinidad en tercer grado, y la ley solo llega hasta el segundo grado de afinidad."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el parentesco de cada solicitante con Rubén. Regla: el art. 44 de la Ley 1952 obliga a declararse impedido cuando el interés en el asunto lo tiene un pariente dentro del cuarto grado de consanguinidad, segundo de afinidad o primero civil. Cálculo: primo hermano, cuarto de consanguinidad (sí); hija del primo, quinto (no); primo de la esposa, cuarto de afinidad (no); hijo de un hermano de la esposa, tercero de afinidad (no). Conclusión: solo en la solicitud de su primo hermano.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-DIS-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Recusación: efectos sobre la actuación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 104 num. 5",
+      "art. 106",
+      "art. 107"
+    ],
+    "texto_fuente": "5. Tener amistad íntima o enemistad grave con cualquiera de los sujetos procesales. [...] Cualquiera de los sujetos procesales podrá recusar al servidor público que conozca de la actuación disciplinaria, con base en las causales a que se refiere el artículo 104 de esta ley. [...] En caso de impedimento el servidor público enviará, inmediatamente, la actuación disciplinaria al superior, quien decidirá de plano dentro de los tres (3) días siguientes a la fecha de su recibo. Si acepta el impedimento, determinará a quién corresponde el conocimiento de las diligencias. Cuando se trate de recusación, el servidor público manifestará si acepta o no la causal, dentro de los dos (2) días siguientes a la fecha de su formulación; vencido este término, se seguirá el trámite señalado en el inciso anterior. La actuación disciplinaria se suspenderá desde que se manifieste el impedimento o se presente la recusación y hasta cuando se decida.",
+    "pregunta": "El lunes 7 de septiembre de 2026, el defensor de un servidor investigado radicó en la oficina de control disciplinario interno de una gobernación un escrito con el que recusa al jefe de la oficina, que adelanta la investigación, por enemistad grave con su cliente, y anexó las pruebas. El miércoles 9 de septiembre, la recusación todavía no se ha decidido. Diana, técnica de la oficina, tiene programada para el día siguiente la recepción de dos testimonios que el jefe había decretado antes de la recusación. ¿Qué procede con esa diligencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Realizarla en la fecha prevista, porque el proceso solo se detiene si el jefe acepta la causal.",
+        "explicacion": "Incorrecta. La suspensión no depende de que el jefe acepte la causal: la actuación se suspende desde que se presenta la recusación (art. 107)."
+      },
+      {
+        "id": "B",
+        "texto": "Aplazarla, porque la actuación quedó en pausa con la recusación y lo estará hasta que esta se resuelva.",
+        "explicacion": "Correcta. El defensor es sujeto procesal y puede recusar por enemistad grave (arts. 104 num. 5 y 106). Según el art. 107, la actuación se suspende desde que se presenta la recusación hasta que se decida, así que la diligencia del 10 de septiembre no puede practicarse."
+      },
+      {
+        "id": "C",
+        "texto": "Realizarla, porque el proceso sigue mientras corren los tres días que tiene el superior para decidir.",
+        "explicacion": "Incorrecta. Los tres días son el plazo del superior para decidir de plano, y empiezan cuando recibe la actuación. Mientras tanto, el proceso está suspendido."
+      },
+      {
+        "id": "D",
+        "texto": "Realizarla con otro funcionario de la oficina, porque el jefe recusado queda separado del caso de inmediato.",
+        "explicacion": "Incorrecta. El jefe no queda separado de inmediato: primero manifiesta si acepta la causal (dos días) y después decide el superior, que es quien asigna el conocimiento. Entre tanto, la actuación está suspendida."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la recusación se radicó el 7 de septiembre y la diligencia estaba fijada para el 10, sin que se hubiera decidido. Regla: el art. 106 de la Ley 1952 permite a cualquier sujeto procesal recusar con base en el art. 104 (num. 5: enemistad grave); el art. 107 da al recusado dos días para aceptar o no la causal, luego decide el superior, y suspende la actuación desde que se presenta la recusación hasta que se decida. Conclusión: la diligencia debe aplazarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-DIS-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Atenuantes y agravantes en la graduación de la sanción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 50 nums. 1 y 2 (modificado por el art. 11 de la Ley 2094 de 2021)"
+    ],
+    "texto_fuente": "La cuantía de la multa y el término de duración de la suspensión e inhabilidad se fijarán de acuerdo con los siguientes criterios: 1. Atenuantes: a) La diligencia y eficiencia demostrada en el desempeño del cargo o de la función o la ausencia de antecedentes. [...] c) Haber, por iniciativa propia, resarcido el daño o compensado el perjuicio causado, y d) Haber devuelto, restituido o reparado, según el caso, el bien afectado con la conducta constitutiva de la falta, siempre que la devolución, restitución o reparación no se hubieren decretado en otro proceso. 2. Agravantes: a) Haber sido sancionado fiscal o disciplinariamente dentro de los cinco (5) años anteriores a la comisión de la conducta que se investiga. [...] b) Atribuir la responsabilidad infundadamente a un tercero:",
+    "pregunta": "La oficina de control disciplinario interno de una gobernación calificó como grave dolosa una falta de Fabio, conductor de la entidad, por la que resultó dañada una camioneta oficial, y ahora debe fijar el término de la suspensión. Tiene en cuenta tres circunstancias: en los últimos tres años Fabio obtuvo calificación sobresaliente en su evaluación del desempeño; pagó la reparación de la camioneta, pero solo después de que la contraloría departamental, en un proceso de responsabilidad fiscal por esos hechos, lo declaró responsable y le ordenó resarcir el daño; y en su versión libre culpó, sin ningún fundamento, al vigilante del parqueadero. ¿Cómo deben valorarse esas circunstancias?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Atenúa su desempeño sobresaliente y agrava haber culpado sin razón al vigilante; el pago no atenúa la sanción.",
+        "explicacion": "Correcta. La diligencia y eficiencia demostrada en el desempeño del cargo es atenuante (art. 50 num. 1 lit. a) y atribuir infundadamente la responsabilidad a un tercero es agravante (num. 2 lit. b). El pago no atenúa: no fue por iniciativa propia (lit. c) y la reparación se decretó en otro proceso, el fiscal (lit. d)."
+      },
+      {
+        "id": "B",
+        "texto": "Atenúan su desempeño sobresaliente y el pago de la reparación, y agrava haber culpado sin razón al vigilante.",
+        "explicacion": "Incorrecta. El pago atenúa solo si se hace por iniciativa propia, o si la reparación no se decretó en otro proceso. Fabio pagó porque la contraloría se lo ordenó en el proceso fiscal."
+      },
+      {
+        "id": "C",
+        "texto": "Atenúa su desempeño sobresaliente, y agravan el fallo fiscal posterior y haber culpado sin razón al vigilante.",
+        "explicacion": "Incorrecta. La sanción fiscal agrava solo si se impuso dentro de los cinco años anteriores a la comisión de la conducta. Este fallo es posterior a la falta, así que no cuenta como agravante."
+      },
+      {
+        "id": "D",
+        "texto": "Atenúan su desempeño sobresaliente y el pago de la reparación; culpar al vigilante hace parte de su defensa.",
+        "explicacion": "Incorrecta. Atribuir infundadamente la responsabilidad a un tercero es un agravante expreso (num. 2 lit. b), y el pago ordenado en el proceso fiscal no atenúa."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Fabio pagó solo cuando la contraloría se lo ordenó en un proceso fiscal posterior a la falta, y culpó sin fundamento al vigilante. Regla: el art. 50 de la Ley 1952 (mod. Ley 2094) atenúa la diligencia y eficiencia demostrada en el cargo, el resarcimiento por iniciativa propia y la reparación no decretada en otro proceso; agrava atribuir infundadamente la responsabilidad a un tercero y las sanciones de los cinco años anteriores a la conducta. Conclusión: atenúa el buen desempeño y agrava culpar al vigilante.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-DIS-037",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Concurso de faltas: graduación de la suspensión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 48 nums. 3 y 4 (modificado por el art. 9 de la Ley 2094 de 2021)",
+      "art. 51 lit. b"
+    ],
+    "texto_fuente": "3. Suspensión en el ejercicio del cargo de tres (3) a dieciocho (18) meses e inhabilidad especial por el mismo término para las faltas graves dolosas. [...] 4. Suspensión en el ejercicio del cargo de uno (1) a doce (12) meses para las faltas graves culposas. [...] A quien, con una o varias acciones u omisiones, infrinja varias disposiciones de la ley disciplinaria o varias veces la misma disposición, se le graduará la sanción de acuerdo con los siguientes criterios: [...] b) Si la sanción más grave es la suspensión e inhabilidad especial, se incrementará hasta en otro tanto, sin exceder el máximo legal;",
+    "pregunta": "En un mismo proceso, la oficina de control disciplinario interno de un departamento encontró responsable a Liliana, profesional de la tesorería, de dos faltas graves dolosas distintas. Al graduar cada una por separado, concluyó que la más grave merece suspensión e inhabilidad especial de once meses, y la otra, de seis meses. ¿Cuál es el término máximo de suspensión e inhabilidad especial que puede imponerle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Diecisiete meses, porque el incremento no puede superar la suma de las sanciones fijadas para cada falta.",
+        "explicacion": "Incorrecta. El art. 51 no limita el incremento a la suma de las sanciones de cada falta: la más grave puede aumentar hasta en otro tanto (hasta veintidós meses), con el único tope del máximo legal, que aquí es de dieciocho meses."
+      },
+      {
+        "id": "B",
+        "texto": "Veintidós meses, porque la sanción de la falta más grave puede incrementarse hasta en otro tanto.",
+        "explicacion": "Incorrecta. Duplicar los once meses daría veintidós, pero el incremento no puede exceder el máximo legal, que para la suspensión e inhabilidad especial de las faltas graves dolosas es de dieciocho meses."
+      },
+      {
+        "id": "C",
+        "texto": "Doce meses, porque, aun con el incremento, la suspensión no puede pasar del máximo legal de un año.",
+        "explicacion": "Incorrecta. Doce meses es el máximo de la suspensión para las faltas graves culposas (art. 48 num. 4). Para las graves dolosas, como las de Liliana, el máximo de la suspensión e inhabilidad especial es de dieciocho meses (num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Dieciocho meses, porque el incremento de la sanción más grave no puede superar el tope que fija la ley.",
+        "explicacion": "Correcta. Según el art. 51 lit. b, la suspensión e inhabilidad especial más grave (once meses) se incrementa hasta en otro tanto (hasta veintidós), sin exceder el máximo legal. El art. 48 num. 3 fija ese máximo en dieciocho meses para las faltas graves dolosas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: dos faltas graves dolosas; la más grave, graduada en once meses de suspensión e inhabilidad especial. Regla: el art. 51 lit. b de la Ley 1952 incrementa la sanción más grave hasta en otro tanto, sin exceder el máximo legal (no la limita a la suma de las sanciones); el art. 48 (mod. Ley 2094) fija ese máximo en dieciocho meses para las faltas graves dolosas (num. 3), y en doce para las culposas (num. 4). Cálculo: 11 + 11 = 22, que supera el tope. Conclusión: dieciocho meses.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción A como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-DIS-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Prescripción de faltas omisivas y de varias conductas en un mismo proceso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 33 (modificado por el art. 7 de la Ley 2094 de 2021)"
+    ],
+    "texto_fuente": "La acción disciplinaria prescribirá en cinco (5) años contados para las faltas instantáneas desde el día de su consumación, para las de carácter permanente o continuado, desde la realización del último hecho o acto y para las omisivas, cuando haya cesado el deber de actuar. Cuando fueren varias las conductas juzgadas en un mismo proceso la prescripción se cumple independientemente para cada una de ellas. La prescripción se interrumpirá con la notificación del fallo de primera instancia.",
+    "pregunta": "En un mismo proceso se juzgan dos conductas de Martha, profesional de la secretaría de hacienda de un municipio. La primera: el 12 de abril de 2024 expidió un paz y salvo a un contribuyente que tenía deudas pendientes. La segunda: desde enero de 2024 no remitió a cobro coactivo los expedientes de los contribuyentes morosos, tarea que estuvo a su cargo hasta el 30 de septiembre de 2024, cuando la trasladaron a otra dependencia. La investigación se abrió en marzo de 2025 y el fallo de primera instancia se le notificó el 20 de junio de 2029. Ninguna conducta se relaciona con derechos humanos. ¿Respecto de cuáles conductas sigue vigente la acción disciplinaria?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Respecto de las dos, porque al juzgarse en un mismo proceso el término corre desde la última conducta.",
+        "explicacion": "Incorrecta. Cuando se juzgan varias conductas en un mismo proceso, la prescripción se cumple independientemente para cada una (art. 33). La del paz y salvo se cumplió el 12 de abril de 2029."
+      },
+      {
+        "id": "B",
+        "texto": "Solo respecto de la omisión, porque su término empezó cuando Martha dejó de tener esa tarea a cargo.",
+        "explicacion": "Correcta. El paz y salvo es una falta instantánea: prescribió el 12 de abril de 2029, antes de la notificación del fallo. La omisión se cuenta desde que cesó el deber de actuar, el 30 de septiembre de 2024, y vencía el 30 de septiembre de 2029; la notificación del 20 de junio de 2029 interrumpió ese término."
+      },
+      {
+        "id": "C",
+        "texto": "Respecto de las dos, porque la apertura de la investigación en marzo de 2025 interrumpió la prescripción.",
+        "explicacion": "Incorrecta. En el texto vigente, la prescripción se interrumpe con la notificación del fallo de primera instancia, no con la apertura de la investigación."
+      },
+      {
+        "id": "D",
+        "texto": "Respecto de ninguna, porque la omisión empezó en enero de 2024 y ya pasaron más de cinco años.",
+        "explicacion": "Incorrecta. En las faltas omisivas el término no corre desde que empieza la omisión, sino desde que cesa el deber de actuar (30 de septiembre de 2024)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el paz y salvo es del 12 de abril de 2024, el deber de remitir los expedientes cesó el 30 de septiembre de 2024 y el fallo se notificó el 20 de junio de 2029. Regla: el art. 33 de la Ley 1952 (mod. Ley 2094) fija cinco años desde la consumación en las faltas instantáneas y desde que cesa el deber de actuar en las omisivas; con varias conductas, corre por separado para cada una. Cálculo: vencían el 12/4/2029 (ya pasó) y el 30/9/2029 (vigente). Conclusión: solo la omisión.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-DIS-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Renuncia a la prescripción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 34"
+    ],
+    "texto_fuente": "El sujeto disciplinable podrá renunciar a la prescripción de la acción disciplinaria. En este caso la acción solo podrá proseguirse por un término máximo de dos (2) años contados a partir de la presentación personal de la solicitud, vencido el cual, sin que se hubiese proferido y ejecutoriado el respectivo fallo, no procederá decisión distinta a la de la declaración de la prescripción.",
+    "pregunta": "Sofía, técnica de la oficina de control disciplinario interno de una entidad, lleva el cuadro de control de términos de los procesos. En uno de ellos, la acción disciplinaria prescribía el 30 de abril de 2026, pero el 14 de abril de 2026 el investigado presentó personalmente un escrito en el que renuncia a la prescripción, porque quiere que se declare su inocencia. ¿Qué fecha debe registrar Sofía como límite para que se profiera y quede ejecutoriado el fallo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 30 de abril de 2028, dos años después de la fecha en que iba a cumplirse la prescripción.",
+        "explicacion": "Incorrecta. Los dos años no se cuentan desde la fecha en que se habría cumplido la prescripción, sino desde la presentación personal de la solicitud de renuncia."
+      },
+      {
+        "id": "B",
+        "texto": "El 14 de abril de 2031, cinco años después de la radicación del escrito de renuncia.",
+        "explicacion": "Incorrecta. La renuncia no reinicia el término de cinco años: la acción solo puede seguir por un máximo de dos años."
+      },
+      {
+        "id": "C",
+        "texto": "El 14 de abril de 2028, dos años después de la radicación del escrito de renuncia.",
+        "explicacion": "Correcta. Según el art. 34, tras la renuncia la acción solo puede proseguirse por un máximo de dos años contados desde la presentación personal de la solicitud: del 14 de abril de 2026 al 14 de abril de 2028. Si para entonces no hay fallo proferido y ejecutoriado, solo cabe declarar la prescripción."
+      },
+      {
+        "id": "D",
+        "texto": "El 30 de abril de 2031, cinco años después de la fecha en que iba a cumplirse la prescripción.",
+        "explicacion": "Incorrecta. Combina dos errores: aplica un nuevo término de cinco años y lo cuenta desde la fecha en que iba a cumplirse la prescripción."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el investigado presentó personalmente la renuncia el 14 de abril de 2026. Regla: el art. 34 de la Ley 1952 permite renunciar a la prescripción, pero la acción solo puede proseguirse por un máximo de dos años desde la presentación personal de la solicitud; vencido ese plazo sin fallo proferido y ejecutoriado, solo procede declarar la prescripción. Cálculo: 14 de abril de 2026 + 2 años = 14 de abril de 2028. Conclusión: esa es la fecha límite.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-DIS-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Error vencible: efectos en la sanción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 31 num. 8 (modificado por el art. 5 de la Ley 2094 de 2021)"
+    ],
+    "texto_fuente": "8. Con la convicción errada e invencible de que su conducta no constituye falta disciplinaria. Si el error fuere de hecho vencible, se sancionará la conducta a título de culpa, siempre que la falta admita tal modalidad. De ser vencible el error de derecho, se impondrá, cuando sea procedente, la sanción de destitución y las demás sanciones graduables se reducirán en la mitad. [...] Para estimar cumplida la conciencia de la ilicitud basta que el disciplinable haya tenido la oportunidad, en términos razonables, de actualizar el conocimiento de lo ilícito de su conducta.",
+    "pregunta": "Andrés, profesional de una secretaría de educación, aprobó el pago de viáticos a un docente. Conocía con exactitud el destino, las fechas y el valor de la comisión, y los soportes eran auténticos. Su única equivocación fue creer vigente el decreto que autorizaba ese pago, que había sido derogado meses antes; por eso estaba seguro de que aprobarlo era legal. Una semana antes, la oficina jurídica había enviado a todos los profesionales del área un concepto que advertía esa derogatoria, y el correo estaba en su bandeja de entrada. La autoridad disciplinaria concluye que, sin tener en cuenta la equivocación, la falta grave cometida merecería suspensión e inhabilidad especial de ocho meses. ¿Qué sanción procede?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguna, porque actuó convencido de que el pago era legal según un decreto que creía vigente.",
+        "explicacion": "Incorrecta. La convicción errada solo excluye la responsabilidad si el error es invencible. Andrés tenía en su correo el concepto que advertía la derogatoria: tuvo la oportunidad razonable de actualizar el conocimiento de la ilicitud, así que el error era vencible."
+      },
+      {
+        "id": "B",
+        "texto": "Suspensión de uno a doce meses, porque su equivocación evitable obliga a sancionar la falta a título de culpa.",
+        "explicacion": "Incorrecta. Sancionar a título de culpa es la consecuencia del error de hecho vencible. Andrés no se equivocó sobre los hechos (conocía el destino, las fechas, el valor y los soportes): se equivocó sobre la vigencia de la norma, que es un error de derecho."
+      },
+      {
+        "id": "C",
+        "texto": "Suspensión e inhabilidad especial de ocho meses, porque un error que pudo evitarse no altera la sanción.",
+        "explicacion": "Incorrecta. Según el art. 31 num. 8, el error vencible sí modifica la sanción. Si es de derecho, como aquí, las sanciones graduables se reducen en la mitad; si fuera de hecho, la conducta se sancionaría a título de culpa."
+      },
+      {
+        "id": "D",
+        "texto": "Suspensión e inhabilidad especial de cuatro meses, porque el error evitable reduce la sanción a la mitad.",
+        "explicacion": "Correcta. Andrés conocía todos los hechos y solo se equivocó sobre la vigencia del decreto: es un error de derecho. Era vencible, porque tenía en su correo el concepto que advertía la derogatoria. Según el art. 31 num. 8, en ese caso las sanciones graduables se reducen en la mitad: ocho meses pasan a cuatro."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Andrés conocía todos los hechos y solo se equivocó al creer vigente un decreto derogado, aunque tenía en su correo el concepto que advertía la derogatoria. Regla: el art. 31 num. 8 de la Ley 1952 (mod. Ley 2094) solo excluye la responsabilidad si el error es invencible, y basta haber tenido la oportunidad razonable de actualizar el conocimiento de la ilicitud; el error de hecho vencible se sanciona a título de culpa y el de derecho vencible reduce en la mitad las sanciones graduables. Cálculo: 8 ÷ 2 = 4 meses. Conclusión: cuatro meses.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción B como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-DIS-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Disciplinario y Anticorrupción",
+    "tema": "Régimen disciplinario",
+    "subtema": "Culpa leve",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 29 (modificado por el art. 4 de la Ley 2094 de 2021)"
+    ],
+    "texto_fuente": "La culpa sancionable podrá ser gravísima o grave. La culpa leve no será sancionable en materia disciplinaria. Habrá culpa gravísima cuando se incurra en falta disciplinaria por ignorancia supina, desatención elemental o violación manifiesta de reglas de obligatorio cumplimiento. La culpa será grave cuando se incurra en falta disciplinaria por inobservancia del cuidado necesario que cualquier persona del común imprime a sus actuaciones.",
+    "pregunta": "Lucía, auxiliar de la ventanilla de radicación de una entidad, recibió un poder con una firma y una diligencia de autenticación falsificadas, y lo radicó; con base en él, se entregó a un tercero copia de un expediente. En el proceso disciplinario quedó probado que revisó el documento como lo exige el procedimiento y con la atención que normalmente se espera de quien atiende una ventanilla, y que la falsificación solo habría podido advertirse con un examen excepcionalmente minucioso. ¿Qué consecuencia disciplinaria procede?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguna, porque un descuido de ese grado no es sancionable en materia disciplinaria.",
+        "explicacion": "Correcta. Lucía no incurrió en ignorancia supina ni en desatención elemental (culpa gravísima), y tampoco dejó de poner el cuidado que cualquier persona del común imprime a sus actuaciones (culpa grave). A lo sumo hubo culpa leve, que el art. 29 declara no sancionable."
+      },
+      {
+        "id": "B",
+        "texto": "Amonestación escrita, porque se trata de una falta leve cometida a título de culpa.",
+        "explicacion": "Incorrecta. La amonestación es para las faltas leves culposas, pero la culpa sancionable es solo la gravísima o la grave. Una falta de cuidado que solo un examen excepcional habría evitado no se sanciona."
+      },
+      {
+        "id": "C",
+        "texto": "Suspensión de uno a doce meses, porque no detectó la falsedad del poder que radicó.",
+        "explicacion": "Incorrecta. Supone culpa grave, pero Lucía sí observó el cuidado ordinario que exige el procedimiento. No detectar una falsificación casi imperceptible no la configura."
+      },
+      {
+        "id": "D",
+        "texto": "Multa de diez a ciento ochenta días de salario, porque la falta es leve y causó perjuicio.",
+        "explicacion": "Incorrecta. La multa es la sanción de las faltas leves dolosas, y aquí no hubo dolo. Además, el descuido no alcanza el nivel de culpa sancionable."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Lucía revisó el poder como lo exige el procedimiento y con la atención normal; la falsificación solo era detectable con un examen excepcional. Regla: el art. 29 de la Ley 1952 (mod. Ley 2094) solo sanciona la culpa gravísima (ignorancia supina, desatención elemental) y la grave (inobservancia del cuidado que cualquier persona del común imprime a sus actuaciones); la culpa leve no es sancionable. Conclusión: no procede sanción.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
   }
 ]

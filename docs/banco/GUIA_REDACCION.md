@@ -111,6 +111,11 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 
 **La resolución a ciegas debe tener todas las normas del tema:** la ley y también su reglamento. En la TC-909-025 la clave era correcta según la Ley 909, pero el Decreto 1083 añade un requisito de 3 meses. El resolvedor solo tenía la ley y no lo detectó.
 
+**El tachado del Senado se pierde al pasar a texto:**
+- En las compilaciones del Senado, lo declarado INEXEQUIBLE aparece tachado (etiqueta `<S>`). Al convertir la página a texto plano se ve como texto normal.
+- Antes de citar un artículo del Senado, revisa sus segmentos tachados en el HTML o en la lista extraída.
+- Auditoría del 10 de octubre de 2026 (26 leyes, 74 páginas): ninguna pregunta activa citaba texto tachado.
+
 **Las compilaciones también se equivocan; contrasta con la del ministerio:**
 - Los decretos únicos tienen dos compilaciones: el gestor normativo de Función Pública y el normograma del ministerio del sector.
 - En el Decreto 1078 de 2015, el gestor muestra el art. 2.2.9.1.3.3 con el texto del 2.2.9.1.3.4. Según el normograma del MinTIC, el Decreto 767 de 2022 dice algo distinto: el Comité Institucional de Gestión y Desempeño orienta la implementación de la Política de Gobierno Digital, y el jefe de TI la lidera.

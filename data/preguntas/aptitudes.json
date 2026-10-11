@@ -1838,5 +1838,1415 @@
       "fecha": "2026-10-10",
       "p_estimado": 55
     }
+  },
+  {
+    "id": "TC-OFI-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Referencias relativas y absolutas al copiar fórmulas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Un auxiliar administrativo de la oficina de atención al ciudadano de una alcaldía calcula qué parte del total de PQRSD del mes llegó por cada canal (Excel en español, separador ;). Tiene estos datos:\n\nFila | A | B\n1 | Canal | Solicitudes\n2 | Presencial | 120\n3 | Correo electrónico | 105\n4 | Telefónico | 45\n5 | Formulario web | 30\n6 | Total | 300\n\nEn B6 está la fórmula =SUMA(B2:B5). El auxiliar escribió en C2 =B2/B6, que muestra 0,4, y la copió hasta C5, pero C3, C4 y C5 muestran #¡DIV/0!. ¿Qué fórmula debe escribir en C2 para que, al copiarla hasta C5, cada celda muestre la participación de su canal?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "=B2/$B$6",
+        "explicacion": "Correcta. Los signos $ fijan la columna y la fila del total. Al copiar hacia abajo, el numerador avanza (B3, B4, B5) y el denominador sigue siendo B6: C3 muestra 0,35; C4, 0,15, y C5, 0,1."
+      },
+      {
+        "id": "B",
+        "texto": "=$B2/B6",
+        "explicacion": "Incorrecta. El $ delante de la B solo fija la columna, que de todos modos no cambia al copiar hacia abajo. La fila del denominador sigue corriéndose: C3 queda =$B3/B7 y, como B7 está vacía, vuelve el #¡DIV/0!."
+      },
+      {
+        "id": "C",
+        "texto": "=$B$2/B6",
+        "explicacion": "Incorrecta. Fija la celda equivocada. El numerador queda siempre en B2 y el denominador se corre a B7, B8 y B9, que están vacías, así que el error se mantiene."
+      },
+      {
+        "id": "D",
+        "texto": "=B2/SUMA(B2:B5)",
+        "explicacion": "Incorrecta. No da error, pero el rango de la suma también es relativo y se corre al copiar: C3 queda =B3/SUMA(B3:B6), que incluye el total de B6 y deja por fuera B2. Muestra unos 0,22 en lugar de 0,35."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: al copiar la fórmula hacia abajo, todas sus referencias relativas bajan una fila, así que el total B6 pasa a ser B7, B8 y B9, que están vacías, y aparece #¡DIV/0!. Regla: una referencia absoluta ($B$6) no cambia al copiarse; una relativa sí. Conclusión: =B2/$B$6 mantiene fijo el total y deja avanzar el numerador (C3 = 105/300 = 0,35). Fijar solo la columna o fijar el numerador no corrige el error. (A)",
+    "fuente_url": "https://support.microsoft.com/es-es/excel/switch-between-relative-absolute-and-mixed-references",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-OFI-002",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Ordenar por varios niveles",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Una auxiliar de la ventanilla de correspondencia de una secretaría departamental tiene esta lista de radicados (Excel en español):\n\nFila | A | B | C\n1 | Radicado | Dependencia | Fecha de radicación\n2 | R-501 | Tesorería | 14/09/2026\n3 | R-502 | Archivo | 21/09/2026\n4 | R-503 | Planeación | 02/09/2026\n5 | R-504 | Archivo | 07/09/2026\n6 | R-505 | Tesorería | 03/09/2026\n7 | R-506 | Planeación | 18/09/2026\n\nSelecciona A1:C7, abre Datos > Ordenar, deja marcada la casilla «Mis datos tienen encabezados» y configura dos niveles: en «Ordenar por», Dependencia, con el criterio «De la A a la Z»; en «Luego por», Fecha de radicación, con el criterio «De más antiguo a más reciente». ¿En qué orden quedan los radicados, de la fila 2 a la 7?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "R-503, R-505, R-504, R-501, R-506, R-502",
+        "explicacion": "Incorrecta. Es el orden por fecha, como si mandara el segundo nivel. En Excel, el primer nivel («Ordenar por») es el principal; el segundo («Luego por») solo decide el orden dentro de cada grupo de la misma dependencia."
+      },
+      {
+        "id": "B",
+        "texto": "R-502, R-504, R-506, R-503, R-501, R-505",
+        "explicacion": "Incorrecta. Agrupa bien por dependencia, pero dentro de cada grupo pone primero la fecha más reciente (21/09 antes que 07/09), que es el criterio contrario al configurado."
+      },
+      {
+        "id": "C",
+        "texto": "R-502, R-504, R-503, R-506, R-501, R-505",
+        "explicacion": "Incorrecta. Agrupa por dependencia, pero deja cada grupo en el orden en que estaba (R-502 antes que R-504), como si el segundo nivel no se aplicara."
+      },
+      {
+        "id": "D",
+        "texto": "R-504, R-502, R-503, R-506, R-505, R-501",
+        "explicacion": "Correcta. Primero agrupa por dependencia de A a Z (Archivo, Planeación, Tesorería) y, dentro de cada grupo, ordena de la fecha más antigua a la más reciente: Archivo 07/09 y 21/09; Planeación 02/09 y 18/09; Tesorería 03/09 y 14/09."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay dos niveles y el primero es la dependencia. Regla: Excel ordena por el primer nivel y usa el siguiente solo para desempatar los registros que coinciden en el anterior; como se seleccionó toda la tabla, cada fila se mueve completa. Resultado: Archivo (R-504 del 07/09 y R-502 del 21/09), Planeación (R-503 y R-506) y Tesorería (R-505 y R-501). Conclusión: D.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/ordenar-datos-en-un-rango-o-tabla-62d0b95d-2a90-4610-a6ae-2e545c4a4654",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-OFI-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Función SI anidada: orden de las condiciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Una técnica de la oficina de atención al ciudadano clasifica en la columna C el puntaje de cada encuesta de satisfacción (columna B, números enteros de 0 a 100). La regla de la dependencia es: «Alto» si el puntaje es 80 o más; «Medio» si va de 60 a 79, y «Bajo» si es menor que 60 (Excel en español, separador ;). Algunos datos:\n\nFila | A | B\n1 | Encuesta | Puntaje\n2 | E-001 | 92\n3 | E-002 | 60\n4 | E-003 | 59\n5 | E-004 | 80\n\n¿Qué fórmula debe escribir en C2 para copiarla hacia abajo y clasificar bien cualquier puntaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "=SI(B2>=60;\"Medio\";SI(B2>=80;\"Alto\";\"Bajo\"))",
+        "explicacion": "Incorrecta. La primera prueba verdadera detiene la función: todo puntaje de 60 o más, incluso 92 u 80, sale «Medio», y el SI interno nunca llega a devolver «Alto»."
+      },
+      {
+        "id": "B",
+        "texto": "=SI(B2>=80;\"Alto\";SI(B2>60;\"Medio\";\"Bajo\"))",
+        "explicacion": "Incorrecta. El orden es correcto, pero el operador > deja por fuera el límite: un puntaje de 60, como el de E-002, queda «Bajo», y la regla lo pone en «Medio»."
+      },
+      {
+        "id": "C",
+        "texto": "=SI(B2>=80;\"Alto\";SI(B2>=60;\"Medio\";\"Bajo\"))",
+        "explicacion": "Correcta. Evalúa primero el umbral más alto; si no se cumple, el SI interno separa los puntajes de 60 o más de los menores. Resultado: 92 y 80, «Alto»; 60, «Medio»; 59, «Bajo»."
+      },
+      {
+        "id": "D",
+        "texto": "=SI(B2<60;\"Bajo\";SI(B2>=60;\"Medio\";\"Alto\"))",
+        "explicacion": "Incorrecta. Clasifica bien los puntajes bajos, pero la segunda prueba (>=60) es verdadera cada vez que se llega a ella, así que «Alto» no aparece: 92 y 80 salen «Medio»."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: hay tres categorías con límites en 80 y 60, y cada límite pertenece a la categoría superior. Regla: SI devuelve el resultado de la primera prueba verdadera y no revisa las demás; por eso, en un SI anidado con «mayor o igual», se empieza por el umbral más alto. La fórmula C da «Alto» a 92 y 80, «Medio» a 60 y «Bajo» a 59. A y D no producen «Alto», y B deja el 60 en «Bajo». Conclusión: C.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-si-f%C3%B3rmulas-anidadas-y-c%C3%B3mo-evitar-problemas-0b22ff44-f149-44ba-aeb5-4ef99da241c8",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-OFI-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "SI anidada con Y y O",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Un auxiliar de la ventanilla de correspondencia de una secretaría marca la prioridad de los documentos que reparte (Excel en español, separador ;). En D2 escribió esta fórmula y la copió hasta D7:\n\n=SI(Y(B2=\"Tutela\";C2<=2);\"Urgente\";SI(O(B2=\"Tutela\";C2<=5);\"Prioritaria\";\"Normal\"))\n\nFila | A | B | C\n1 | Radicado | Tipo | Días para vencer\n2 | R-701 | Tutela | 4\n3 | R-702 | Petición | 2\n4 | R-703 | Tutela | 1\n5 | R-704 | Queja | 7\n6 | R-705 | Petición | 5\n7 | R-706 | Tutela | 9\n\n¿Qué celdas del rango D2:D7 muestran «Prioritaria»?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "D2, D3 y D7",
+        "explicacion": "Incorrecta. Lee C6<=5 como si fuera «menor que 5». R-705 tiene exactamente 5 días, y el operador <= incluye ese valor, así que también queda «Prioritaria»."
+      },
+      {
+        "id": "B",
+        "texto": "D2, D3, D6 y D7",
+        "explicacion": "Correcta. R-703 cumple las dos condiciones del Y (tutela con 1 día) y queda «Urgente». En las demás se evalúa el O, al que le basta una condición: R-701 y R-706 son tutelas; R-702 y R-705 vencen en 5 días o menos. Solo R-704 (queja, 7 días) queda «Normal»."
+      },
+      {
+        "id": "C",
+        "texto": "Solo D2",
+        "explicacion": "Incorrecta. Trata el O como si fuera un Y y exige que el documento sea tutela y venza en 5 días o menos. Al O le basta una de las dos condiciones, así que R-702, R-705 y R-706 también son «Prioritaria»."
+      },
+      {
+        "id": "D",
+        "texto": "D2, D3, D4, D6 y D7",
+        "explicacion": "Incorrecta. Incluye a R-703, que cumple el Y. Cuando la primera prueba es verdadera, el SI devuelve «Urgente» y ya no evalúa el SI interno."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la fórmula tiene dos pruebas en orden. Regla: Y exige todas sus condiciones; O, al menos una; y el SI externo devuelve «Urgente» en cuanto su prueba es verdadera, sin pasar al SI interno. R-703 (tutela, 1 día) es «Urgente». De las demás, cumplen el O R-701 y R-706 (tutelas) y R-702 y R-705 (5 días o menos; el <= incluye el 5). R-704 queda «Normal». Conclusión: D2, D3, D6 y D7 (B).",
+    "fuente_url": "https://support.microsoft.com/es-es/office/usar-si-con-las-funciones-y-o-y-no-en-excel-d895f58c-b36c-419e-b1f2-5c193a236d97",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-OFI-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "BUSCARV con coincidencia exacta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Un auxiliar del almacén de una gobernación lleva este inventario (Excel en español, separador ;):\n\nFila | A | B | C | D\n1 | Código | Elemento | Existencias | Ubicación\n2 | U-01 | Resma carta | 40 | Estante 1\n3 | U-02 | Tóner 85A | 6 | Estante 4\n4 | U-03 | Carpeta legajadora | 150 | Estante 2\n5 | U-04 | Cinta de embalar | 25 | Estante 3\n\nEn G2 escribe el nombre de un elemento, por ejemplo Tóner 85A, y en H2 quiere ver sus existencias. Escribió =BUSCARV(G2;A2:D5;3;FALSO), pero H2 muestra #N/D. ¿Qué fórmula debe poner en H2?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "=BUSCARV(G2;A2:D5;3;VERDADERO)",
+        "explicacion": "Incorrecta. Pasar a coincidencia aproximada no resuelve nada: la búsqueda sigue en la columna A, donde hay códigos y no nombres, y H2 sigue mostrando #N/D. Además, la coincidencia aproximada puede devolver un dato equivocado sin avisar."
+      },
+      {
+        "id": "B",
+        "texto": "=BUSCARV(G2;B2:D5;3;FALSO)",
+        "explicacion": "Incorrecta. El rango ya empieza en B, pero el número de columna se cuenta desde la primera columna del rango: B es 1, C es 2 y D es 3. Con 3 devuelve la ubicación (Estante 4), no las existencias."
+      },
+      {
+        "id": "C",
+        "texto": "=BUSCARV(G2;B2:C5;3;FALSO)",
+        "explicacion": "Incorrecta. El rango B2:C5 solo tiene dos columnas y la fórmula pide la tercera, así que devuelve #¡REF!."
+      },
+      {
+        "id": "D",
+        "texto": "=BUSCARV(G2;B2:D5;2;FALSO)",
+        "explicacion": "Correcta. BUSCARV busca solo en la primera columna del rango, así que el rango debe empezar en B, donde están los nombres. Las existencias son la segunda columna de B2:D5, y FALSO pide la coincidencia exacta: para Tóner 85A devuelve 6."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: G2 contiene un nombre, y los nombres están en la columna B, no en la A. Regla: BUSCARV busca el valor en la primera columna del rango y devuelve el dato de la columna indicada, contada desde esa primera columna; con FALSO exige coincidencia exacta y, si no la encuentra, devuelve #N/D. Por eso el rango debe empezar en B (B2:D5) y las existencias son la columna 2. Conclusión: D.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-buscarv-0bbc8083-26fe-4963-8ab8-93a18ad188a1",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-OFI-006",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "BUSCARX: búsqueda hacia la izquierda y valor si no se encuentra",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Una técnica de la oficina de contratación de un municipio, que trabaja con Excel de Microsoft 365 (en español, separador ;), consulta este registro de pagos:\n\nFila | A | B | C | D\n1 | Supervisor | Contrato | Pago | Valor\n2 | Rojas | CT-031 | 1 | 2.400.000\n3 | Díaz | CT-045 | 1 | 3.100.000\n4 | Gómez | CT-052 | 1 | 1.850.000\n5 | Rojas | CT-031 | 2 | 2.400.000\n6 | Gómez | CT-060 | 1 | 2.000.000\n\nEn G2 escribió CT-052 y en G3, CT-061. Después escribió estas fórmulas:\nH2: =BUSCARX(G2;B2:B6;A2:A6;\"Sin registro\")\nH3: =BUSCARX(G3;B2:B6;D2:D6;\"Sin registro\")\n¿Qué muestran H2 y H3?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "H2: Gómez. H3: Sin registro.",
+        "explicacion": "Correcta. BUSCARX busca el contrato en la columna B y puede devolver el dato de cualquier columna, aunque esté a la izquierda: CT-052 corresponde a Gómez. CT-061 no existe y la coincidencia predeterminada es exacta, así que H3 devuelve el texto del cuarto argumento."
+      },
+      {
+        "id": "B",
+        "texto": "H2: #N/D. H3: Sin registro.",
+        "explicacion": "Incorrecta. Le aplica a H2 una limitación de BUSCARV, que solo devuelve columnas a la derecha de la de búsqueda. BUSCARX recibe por separado la matriz donde busca y la que devuelve, así que puede traer la columna A."
+      },
+      {
+        "id": "C",
+        "texto": "H2: Gómez. H3: 2.000.000.",
+        "explicacion": "Incorrecta. Supone que, si no encuentra CT-061, BUSCARX toma el contrato más cercano (CT-060). Su coincidencia predeterminada es exacta y, si no hay coincidencia, devuelve lo indicado en si_no_se_encuentra."
+      },
+      {
+        "id": "D",
+        "texto": "H2: #N/D. H3: 2.000.000.",
+        "explicacion": "Incorrecta. Trata a BUSCARX como si fuera BUSCARV: BUSCARX no está limitada a devolver columnas a la derecha, y por defecto no busca una coincidencia aproximada."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: en H2 la columna devuelta (A) está a la izquierda de la de búsqueda (B), y CT-061 no aparece en la lista. Regla: BUSCARX (disponible en Microsoft 365, no en Excel 2019 ni anteriores) recibe por separado la matriz donde busca y la que devuelve, así que trae datos en cualquier dirección; su coincidencia predeterminada es exacta y, si no encuentra el valor, devuelve el argumento si_no_se_encuentra (sin él, daría #N/D). Conclusión: H2 muestra Gómez y H3, «Sin registro» (A).",
+    "fuente_url": "https://support.microsoft.com/es-es/excel/functions/xlookup-function",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-OFI-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "CONTAR.SI.CONJUNTO y SUMAR.SI.CONJUNTO con dos criterios",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Un técnico de la oficina de talento humano lleva el registro de las comisiones del trimestre (Excel en español, separador ;):\n\nFila | A | B | C | D\n1 | Dependencia | Zona | Días | Viáticos\n2 | Obras | Rural | 3 | 540.000\n3 | Salud | Urbano | 1 | 120.000\n4 | Obras | Urbano | 2 | 240.000\n5 | Obras | Rural | 2 | 360.000\n6 | Salud | Rural | 4 | 720.000\n7 | Obras | Rural | 5 | 900.000\n8 | Hacienda | Urbano | 3 | 360.000\n9 | Obras | Urbano | 4 | 480.000\n\nEscribió estas fórmulas:\nF2: =CONTAR.SI.CONJUNTO(A2:A9;\"Obras\";C2:C9;\">2\")\nF3: =SUMAR.SI.CONJUNTO(D2:D9;A2:A9;\"Obras\";B2:B9;\"Rural\")\n¿Qué muestran F2 y F3?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "F2: 3. F3: 3.240.000.",
+        "explicacion": "Incorrecta. F2 está bien, pero F3 suma todas las comisiones de Obras y todas las rurales (también la de Salud y las urbanas de Obras), como si bastara una condición. SUMAR.SI.CONJUNTO solo suma las filas que cumplen ambas."
+      },
+      {
+        "id": "B",
+        "texto": "F2: 7. F3: 1.800.000.",
+        "explicacion": "Incorrecta. F3 está bien, pero F2 cuenta las filas que cumplen cualquiera de las dos condiciones (las cinco de Obras más las de Salud y Hacienda con más de 2 días). CONTAR.SI.CONJUNTO exige que se cumplan todas."
+      },
+      {
+        "id": "C",
+        "texto": "F2: 3. F3: 1.800.000.",
+        "explicacion": "Correcta. F2 cuenta las comisiones de Obras con más de 2 días: filas 2, 7 y 9. F3 suma los viáticos de Obras en zona rural: filas 2, 5 y 7, es decir, 540.000 + 360.000 + 900.000."
+      },
+      {
+        "id": "D",
+        "texto": "F2: 7. F3: 3.240.000.",
+        "explicacion": "Incorrecta. Trata las dos funciones como si unieran sus criterios con un O. Ambas aplican los criterios a la vez: una fila se cuenta o se suma solo si los cumple todos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: cada fórmula tiene dos criterios. Regla: CONTAR.SI.CONJUNTO cuenta las filas que cumplen todos sus criterios; SUMAR.SI.CONJUNTO recibe primero el rango que se suma y luego los pares rango-criterio, y suma solo las filas que los cumplen todos. F2: Obras con más de 2 días = filas 2, 7 y 9 → 3. F3: Obras en zona rural = filas 2, 5 y 7 → 1.800.000. Conclusión: C.",
+    "fuente_url": "https://support.microsoft.com/es-es/excel/sumifs-function",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-OFI-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "PROMEDIO.SI con celdas vacías y ceros, y REDONDEAR",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Una técnica de la oficina de atención al ciudadano mide cuántos días tardan las respuestas (Excel en español: separador ; y coma decimal):\n\nFila | A | B | C\n1 | Radicado | Tipo | Días de respuesta\n2 | R-310 | Petición | 0\n3 | R-311 | Queja | 9\n4 | R-312 | Petición | 12\n5 | R-313 | Consulta | 20\n6 | R-314 | Petición | (vacía)\n7 | R-315 | Queja | 4\n8 | R-316 | Petición | 7\n9 | R-317 | Consulta | (vacía)\n\nC2 tiene 0 porque esa petición se respondió el mismo día; C6 y C9 están vacías porque esas solicitudes siguen en trámite. En F2 escribió =REDONDEAR(PROMEDIO.SI(B2:B9;\"Petición\";C2:C9);1). ¿Qué muestra F2?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4,8",
+        "explicacion": "Incorrecta. Toma C6 como si tuviera 0 y divide entre 4 (19 / 4 = 4,75). PROMEDIO.SI pasa por alto las celdas vacías del rango que promedia."
+      },
+      {
+        "id": "B",
+        "texto": "6,3",
+        "explicacion": "Correcta. Las peticiones con dato son R-310 (0), R-312 (12) y R-316 (7); C6 está vacía y no entra. El promedio es 19 / 3 = 6,333…, y REDONDEAR con 1 decimal da 6,3."
+      },
+      {
+        "id": "C",
+        "texto": "8,7",
+        "explicacion": "Incorrecta. Es el promedio de todas las celdas con número de C2:C9 (52 / 6), como si se hubiera usado PROMEDIO sin el criterio «Petición»."
+      },
+      {
+        "id": "D",
+        "texto": "9,5",
+        "explicacion": "Incorrecta. Excluye el 0 de R-310 como si fuera una celda vacía (19 / 2). Un cero es un valor y sí entra en el promedio; solo se omiten las celdas vacías."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: entre las peticiones hay un 0 (respuesta el mismo día) y una celda vacía (solicitud en trámite). Regla: PROMEDIO.SI promedia las celdas que cumplen el criterio, omite las vacías y sí cuenta los ceros; REDONDEAR(número;1) deja un decimal. Peticiones con dato: 0, 12 y 7 → 19 / 3 = 6,333… → 6,3. Conclusión: B.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/promedio-si-funci%C3%B3n-promedio-si-faec8e2e-0dec-4308-af69-f5576d8ac642",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-OFI-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "DIAS.LAB con festivos y referencias al copiar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Un auxiliar de la oficina jurídica de una alcaldía controla en cuántos días hábiles se respondió cada solicitud (Excel en español, separador ;). En F2:F4 anotó los festivos de agosto a octubre de 2026, y F5 está vacía:\n\nFila | A | B | C | F\n1 | Radicado | Recibida | Respondida | Festivos\n2 | R-118 | 21/07/2026 | 30/07/2026 | 07/08/2026\n3 | R-131 | 04/08/2026 | 26/08/2026 | 17/08/2026\n4 |  |  |  | 12/10/2026\n\nEn D2 escribió =DIAS.LAB(B2;C2;F2:F4) y la copió a D3. ¿Qué número muestra D3?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "16",
+        "explicacion": "Correcta. Al copiar una fila abajo, el rango relativo F2:F4 pasa a F3:F5 y deja por fuera el festivo del 07/08/2026. Del martes 04/08 al miércoles 26/08 hay 17 días de lunes a viernes, contando las dos fechas; la fórmula solo descuenta el 17/08 y muestra 16."
+      },
+      {
+        "id": "B",
+        "texto": "15",
+        "explicacion": "Incorrecta. Es lo que daría la fórmula con el rango fijo $F$2:$F$4 (17 días menos los dos festivos). Pero el rango de festivos se escribió sin $ y se corrió al copiar la fórmula."
+      },
+      {
+        "id": "C",
+        "texto": "17",
+        "explicacion": "Incorrecta. Cuenta los días de lunes a viernes sin descontar ningún festivo, pero el rango copiado (F3:F5) todavía incluye el 17/08/2026, que cae dentro del período."
+      },
+      {
+        "id": "D",
+        "texto": "14",
+        "explicacion": "Incorrecta. Supone que DIAS.LAB no cuenta el día inicial y además descuenta los dos festivos. DIAS.LAB incluye la fecha inicial y la final si son hábiles, y la fórmula copiada ya no tiene el 07/08 en su rango."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el rango de festivos F2:F4 se escribió sin $ y la fórmula se copió una fila abajo. Regla: DIAS.LAB cuenta los días de lunes a viernes entre la fecha inicial y la final, ambas incluidas, y descuenta las fechas del rango de festivos; las referencias relativas se corren al copiar. En D3 el rango queda F3:F5, sin el 07/08. Del 04/08 al 26/08/2026 hay 17 días de lunes a viernes; menos el 17/08 quedan 16. Con $F$2:$F$4 daría 15. Conclusión: A.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/dias-lab-funci%C3%B3n-dias-lab-48e717bf-a7a3-495f-969e-5005e3eb18e7",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-OFI-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Fechas: HOY, DIAS y el error ####",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Un auxiliar del archivo central de una entidad controla los préstamos de expedientes (Excel en español, separador ;). Hoy es 10/10/2026, la fecha que devuelve HOY():\n\nFila | A | B | C\n1 | Expediente | Dependencia | Fecha límite de devolución\n2 | EXP-2291 | Jurídica | 02/10/2026\n\nEn D2 escribió =C2-HOY() para ver cuántos días faltan. Excel le dio a D2 formato de fecha y la celda muestra ####, aunque el auxiliar ensanchó la columna. Luego cambió la fórmula por =DIAS(C2;HOY()) y le aplicó a D2 formato de número sin decimales. ¿Qué explica los #### y qué muestra D2 con la nueva fórmula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El resultado es negativo y no puede mostrarse como fecha; la nueva fórmula muestra 8.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero invierte el orden de DIAS: el primer argumento es la fecha final. DIAS(C2;HOY()) calcula C2 − HOY(), que da −8; daría 8 con DIAS(HOY();C2)."
+      },
+      {
+        "id": "B",
+        "texto": "C2 tiene la fecha guardada como texto y no puede restarse; la nueva fórmula muestra -8.",
+        "explicacion": "Incorrecta. El valor de DIAS es correcto, pero el diagnóstico no: #### aparece cuando la columna es angosta o cuando una fecha u hora es negativa. Como la columna ya se ensanchó, la causa es que la resta da −8."
+      },
+      {
+        "id": "C",
+        "texto": "El resultado es negativo y no puede mostrarse como fecha; la nueva fórmula muestra -8.",
+        "explicacion": "Correcta. Excel muestra #### cuando la columna es angosta o cuando una fórmula devuelve una fecha u hora negativa; ensanchar no sirvió porque 02/10/2026 − 10/10/2026 = −8. DIAS(fecha_final;fecha_inicial) resta la segunda de la primera: con C2 como fecha final da −8, es decir, el préstamo lleva 8 días vencido."
+      },
+      {
+        "id": "D",
+        "texto": "C2 tiene la fecha guardada como texto y no puede restarse; la nueva fórmula muestra 8.",
+        "explicacion": "Incorrecta. Falla en las dos partes: #### no indica un problema de tipo de dato en C2, sino un resultado negativo con formato de fecha (la columna ya se ensanchó), y DIAS(C2;HOY()) da −8 porque su primer argumento es la fecha final."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la fecha límite (02/10/2026) es anterior a hoy (10/10/2026), y los #### siguen aunque se ensanchó la columna. Regla: Excel muestra #### si la columna es angosta o si una fecha u hora es negativa; DIAS(fecha_final;fecha_inicial) devuelve fecha_final − fecha_inicial. Aquí C2 − HOY() = −8: con formato de fecha no puede mostrarse, y con formato de número se ve −8 (préstamo vencido hace 8 días). Conclusión: C.",
+    "fuente_url": "https://support.microsoft.com/es-es/excel/days-function",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-OFI-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Errores #¿NOMBRE? y #¡REF!",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Una auxiliar administrativa de la oficina de contratación revisa un libro de Excel (en español, separador ;) antes de enviarlo:\n- En la hoja Pagos, F2 tiene =SUMAR.SI(B2:B9;Obras;D2:D9), que debía sumar los pagos de la dependencia Obras, y muestra #¿NOMBRE?.\n- En la hoja Resumen, B3 tiene =Contratos!E3/Contratos!C3 y muestra el porcentaje de ejecución de un contrato: lo pagado (columna E de la hoja Contratos) sobre el valor inicial (columna C).\nUn compañero, convencido de que el valor inicial ya no se usa, hace clic derecho en el encabezado de la columna C de la hoja Contratos y elige Eliminar. ¿Qué explica el error de F2 y qué muestra B3 después de ese cambio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En F2, la columna D tiene números guardados como texto; B3 muestra #¡REF!, porque perdió una de sus referencias.",
+        "explicacion": "Incorrecta. Acierta con B3, pero los números guardados como texto no producen #¿NOMBRE?: SUMAR.SI simplemente no los sumaría. El error de F2 se debe a que Excel lee Obras, sin comillas, como un nombre que no existe."
+      },
+      {
+        "id": "B",
+        "texto": "En F2, falta escribir Obras entre comillas; B3 muestra #¡REF!, porque perdió una de sus referencias.",
+        "explicacion": "Correcta. Excel muestra #¿NOMBRE? cuando no reconoce un texto de la fórmula; un criterio de texto debe ir entre comillas (\"Obras\"). Al eliminar la columna C, la celda Contratos!C3 deja de existir: Excel reemplaza esa referencia por #¡REF! y la fórmula de B3 devuelve ese error."
+      },
+      {
+        "id": "C",
+        "texto": "En F2, falta escribir Obras entre comillas; B3 cambia de valor, porque ahora divide entre la nueva columna C.",
+        "explicacion": "Incorrecta. Acierta en F2, pero Excel solo ajusta las referencias a celdas que se corren (E3 pasa a ser D3). La celda C3 original desapareció, así que su referencia se vuelve #¡REF!; no pasa a apuntar a la columna que ocupó su lugar."
+      },
+      {
+        "id": "D",
+        "texto": "En F2, la columna D tiene números guardados como texto; B3 muestra #¡DIV/0!, porque el divisor quedó vacío.",
+        "explicacion": "Incorrecta. Falla en las dos: los números guardados como texto no generan #¿NOMBRE?, y eliminar una columna no deja celdas vacías. Borrar su contenido con Supr sí lo haría y daría #¡DIV/0!; eliminarla deja la referencia sin destino: #¡REF!."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en F2 el criterio Obras está escrito sin comillas, y la columna del divisor de B3 se elimina (no se vacía). Regla: #¿NOMBRE? aparece cuando Excel no reconoce un texto de la fórmula (un nombre de función mal escrito o un texto sin comillas). Al eliminar celdas, Excel ajusta las referencias que se corren, pero las que apuntaban a las celdas eliminadas se vuelven #¡REF!; vaciarlas con Supr daría #¡DIV/0!. Conclusión: falta \"Obras\" entre comillas, y B3 muestra #¡REF! (B).",
+    "fuente_url": "https://support.microsoft.com/es-es/office/c%C3%B3mo-corregir-el-error-nombre-error-b6d54e31-a743-4d7d-9b61-40002a7b4286",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-OFI-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Filtros: SUMA frente a SUBTOTALES",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Una técnica del almacén de una alcaldía consolida las entregas de elementos por dependencia (Excel en español, separador ;):\n\nFila | A | B | C | D\n1 | Dependencia | Elemento | Cantidad | Valor\n2 | Archivo | Cajas X200 | 40 | 320.000\n3 | Sistemas | Mouse | 10 | 450.000\n4 | Archivo | Carpetas | 200 | 280.000\n5 | Talento Humano | Resmas | 30 | 510.000\n6 | Sistemas | Tóner | 4 | 1.240.000\n7 | Archivo | Ganchos | 50 | 75.000\n8 | Talento Humano | Esferos | 60 | 96.000\n9 | Sistemas | Teclados | 5 | 350.000\n10 | Archivo | Rótulos | 100 | 130.000\n\nDebajo de la tabla, en D12, escribió =SUMA(D2:D10) y, en D13, =SUBTOTALES(9;D2:D10). Luego activó el filtro en A1:D10 y dejó visible solo la dependencia Archivo. ¿Qué muestran D12 y D13 con el filtro aplicado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "D12: 805.000. D13: 805.000.",
+        "explicacion": "Incorrecta. Supone que SUMA también deja por fuera las filas que oculta el filtro. SUMA suma todo el rango, se vean o no las filas."
+      },
+      {
+        "id": "B",
+        "texto": "D12: 3.451.000. D13: 3.451.000.",
+        "explicacion": "Incorrecta. Supone que SUBTOTALES con el código 9 incluye las filas filtradas. Los códigos 1 a 11 incluyen solo las filas ocultadas a mano; las que deja por fuera un filtro se excluyen con cualquier código."
+      },
+      {
+        "id": "C",
+        "texto": "D12: 805.000. D13: 3.451.000.",
+        "explicacion": "Incorrecta. Invierte el comportamiento de las dos funciones: la que respeta el filtro es SUBTOTALES, no SUMA."
+      },
+      {
+        "id": "D",
+        "texto": "D12: 3.451.000. D13: 805.000.",
+        "explicacion": "Correcta. SUMA no tiene en cuenta el filtro y suma las nueve filas: 3.451.000. SUBTOTALES pasa por alto las filas que no quedan en el resultado del filtro y suma solo las de Archivo: 320.000 + 280.000 + 75.000 + 130.000 = 805.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el filtro oculta las filas que no son de Archivo, pero no las borra. Regla: SUMA suma todas las celdas del rango; SUBTOTALES (con 9 o con 109) excluye las filas que deja por fuera un filtro. D12 = 3.451.000 (todas las entregas) y D13 = 805.000 (solo Archivo). Conclusión: D.",
+    "fuente_url": "https://support.microsoft.com/es-es/excel/functions/subtotal-function",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-OFI-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Formato condicional con fórmula y referencias mixtas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Un técnico de la oficina de contratación lleva la lista de contratos en A2:F40 (Excel en español, separador ;). La columna E tiene la fecha de terminación y la F, el estado (En ejecución, Terminado o Liquidado). Quiere que se coloree de rojo la fila completa, de A a F, de cada contrato cuya fecha de terminación ya pasó y que todavía no esté liquidado.\nSelecciona A2:F40, con A2 como celda activa, y crea una regla de formato condicional basada en una fórmula. ¿Qué fórmula debe escribir en la regla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "=Y(E2<HOY();F2<>\"Liquidado\")",
+        "explicacion": "Incorrecta. La fórmula se escribe para A2 y Excel la ajusta a cada celda del rango como si la copiara. Sin $ en las columnas, en B2 revisaría F2 y G2, en C2 revisaría G2 y H2, y así sucesivamente: solo la celda de la columna A respondería a la fecha y al estado del contrato."
+      },
+      {
+        "id": "B",
+        "texto": "=Y($E$2<HOY();$F$2<>\"Liquidado\")",
+        "explicacion": "Incorrecta. Con referencias absolutas, todas las celdas del rango evalúan la fila 2: si el primer contrato está vencido y sin liquidar, se colorea toda la lista; si no, ninguna fila."
+      },
+      {
+        "id": "C",
+        "texto": "=Y($E2<HOY();$F2<>\"Liquidado\")",
+        "explicacion": "Correcta. El $ fija las columnas E y F, de modo que todas las celdas de una fila revisan la fecha y el estado de ese contrato; la fila queda relativa y avanza: en la fila 7 se evalúan E7 y F7. Si la fecha ya pasó y el estado no es «Liquidado», toda la fila se colorea."
+      },
+      {
+        "id": "D",
+        "texto": "=Y(E$2<HOY();F$2<>\"Liquidado\")",
+        "explicacion": "Incorrecta. Fija la fila y deja libre la columna, lo contrario de lo que se necesita: todas las filas dependerían del contrato de la fila 2, y cada columna miraría una columna distinta."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la regla se aplica a todo A2:F40 y debe colorear filas completas según las columnas E y F. Regla: la fórmula se escribe para la celda activa (A2) y Excel la ajusta a cada celda del rango igual que al copiar una fórmula; por eso se usa una referencia mixta que fije la columna y deje libre la fila ($E2, $F2). Y exige las dos condiciones a la vez. Conclusión: C.",
+    "fuente_url": "https://support.microsoft.com/es-es/excel/use-conditional-formatting-to-highlight-information-in-excel",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-OFI-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Validación de datos con lista sobre datos existentes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Una auxiliar de la oficina de correspondencia registra en la columna D (Estado) la situación de cada radicado (Excel en español). La columna ya está diligenciada hasta la fila 120, con valores escritos a mano como «Respondido», «En trámite» y algunos «Cerrado».\nPara unificar, aplica a D2:D300 una validación de datos de tipo Lista con los valores Recibido, En trámite y Respondido, y con el estilo de mensaje de error «Detener». ¿Qué pasa con los «Cerrado» que ya estaban escritos y qué pasa si después un compañero escribe «Cerrado» en D121?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los que ya estaban quedan igual y sin aviso; el que se escriba en D121 es rechazado.",
+        "explicacion": "Correcta. Excel no avisa por sí solo que las celdas existentes tienen datos no válidos: la validación actúa cuando se escribe en la celda. Con el estilo «Detener», un valor que no está en la lista no se puede ingresar; solo se puede reintentar o cancelar. Para ubicar los «Cerrado» antiguos se usa el comando que encierra en un círculo los datos no válidos."
+      },
+      {
+        "id": "B",
+        "texto": "Los que ya estaban quedan igual y sin aviso; el de D121 se acepta si el compañero confirma el mensaje.",
+        "explicacion": "Incorrecta. Acierta con los datos antiguos, pero describe los estilos «Advertencia» e «Información», que muestran el mensaje y permiten conservar el valor. Con «Detener» solo se puede reintentar o cancelar."
+      },
+      {
+        "id": "C",
+        "texto": "Excel encierra en un círculo los que ya estaban; el que se escriba en D121 es rechazado.",
+        "explicacion": "Incorrecta. Acierta con D121, pero los círculos no aparecen solos: hay que pedirlos con el comando de validación que encierra en un círculo los datos no válidos."
+      },
+      {
+        "id": "D",
+        "texto": "Excel encierra en un círculo los que ya estaban; el de D121 se acepta si el compañero confirma el mensaje.",
+        "explicacion": "Incorrecta. Falla en las dos partes: los círculos se activan con un comando, y aceptar el valor después del mensaje es propio de «Advertencia» e «Información», no de «Detener», que no deja ingresar un valor que no está en la lista."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la lista se aplicó a una columna que ya tenía datos, con el estilo «Detener». Regla: la validación de datos controla lo que se escribe en la celda; Excel no avisa automáticamente de los datos no válidos que ya existían, y para verlos hay que usar el comando que los encierra en un círculo. «Detener» impide escribir un valor fuera de la lista; «Advertencia» e «Información» permiten conservarlo. Conclusión: A.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/m%C3%A1s-informaci%C3%B3n-sobre-la-validaci%C3%B3n-de-datos-f38dee73-9900-4ca6-9301-8a5f6e1f0c4c",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-OFI-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Hoja de cálculo",
+    "subtema": "Tabla dinámica: qué resume el área Valores",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Un técnico de la oficina de atención al ciudadano analiza cuánto tardan las respuestas según la dependencia y el canal (Excel en español):\n\nFila | A | B | C | D\n1 | Radicado | Dependencia | Canal | Días\n2 | R-801 | Archivo | Presencial | 5\n3 | R-802 | Tesorería | Web | 12\n4 | R-803 | Archivo | Web | 3\n5 | R-804 | Archivo | Presencial | 8\n6 | R-805 | Tesorería | Presencial | 6\n7 | R-806 | Archivo | Presencial | 5\n8 | R-807 | Planeación | Web | 9\n9 | R-808 | Archivo | Web | 4\n\nCrea una tabla dinámica con Dependencia en Filas, Canal en Columnas y Días en Valores, sin cambiar la forma de resumir que Excel asigna. ¿Qué valor aparece donde se cruzan la fila Archivo y la columna Presencial?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3",
+        "explicacion": "Incorrecta. Es el número de radicados de Archivo por el canal presencial. Excel resume con Cuenta los campos que interpreta como texto; Días es numérico y se resume con Suma."
+      },
+      {
+        "id": "B",
+        "texto": "18",
+        "explicacion": "Correcta. Días es un campo numérico y, en el área Valores, Excel lo resume por defecto con Suma. La celda reúne los radicados de Archivo por el canal presencial (R-801, R-804 y R-806): 5 + 8 + 5."
+      },
+      {
+        "id": "C",
+        "texto": "6",
+        "explicacion": "Incorrecta. Es el promedio de esos tres radicados (18 / 3). Para verlo habría que cambiar «Resumir valores por» a Promedio; para un campo numérico, Excel usa Suma."
+      },
+      {
+        "id": "D",
+        "texto": "25",
+        "explicacion": "Incorrecta. Es el total general de la fila Archivo (5 + 3 + 8 + 5 + 4), que reúne los dos canales. La celda pedida solo incluye los radicados de Archivo por el canal presencial."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el campo de Valores (Días) es numérico y no se cambió su forma de resumir. Regla: una tabla dinámica agrupa los registros según los campos de Filas y Columnas y, en Valores, resume los números con Suma por defecto (los datos que interpreta como texto los cuenta). Archivo y Presencial: R-801, R-804 y R-806 → 5 + 8 + 5 = 18. Conclusión: B.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/crear-una-tabla-din%C3%A1mica-para-analizar-datos-de-una-hoja-de-c%C3%A1lculo-a9a84538-bfe9-40a9-a8e9-f99134456576",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-OFI-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Tabla de contenido y marcadores del PDF a partir de los estilos de título",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lorena, profesional universitaria de la oficina de planeación de una gobernación, armó en Word el informe de gestión. Cuando tenía tres capítulos, insertó la tabla desde Referencias > Tabla de contenido. Después escribió el capítulo 4, «Riesgos», y para que su título se viera como los demás le puso, desde el grupo Fuente de la pestaña Inicio, la misma letra, el mismo tamaño y el mismo color. También agregó dos páginas al capítulo 2. Por último, guardó una copia en PDF con la opción Crear marcadores con: Encabezados. Al revisar, el capítulo 4 no aparece ni en la tabla ni en los marcadores del PDF, y desde el capítulo 3 la tabla muestra números de página que ya no corresponden. ¿Qué debe hacer para corregir los dos documentos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Actualizar solo los números de página de la tabla, pues el título del capítulo 4 ya tiene el formato de los otros, y volver a guardar el PDF.",
+        "explicacion": "Incorrecta. Word arma la tabla y los marcadores a partir de los estilos de título, no de la apariencia del texto. Un título con formato aplicado a mano sigue siendo un párrafo normal, y actualizar solo los números de página no agrega entradas nuevas."
+      },
+      {
+        "id": "B",
+        "texto": "Escribir a mano en la tabla la línea del capítulo 4 con su página, y volver a guardar el PDF con la opción Crear marcadores con: Marcadores de Word.",
+        "explicacion": "Incorrecta. Una línea escrita a mano en la tabla no es un título: desaparece la próxima vez que la tabla se actualice y no genera marcador. La opción Marcadores de Word solo usa los marcadores insertados en el documento, y esta salida tampoco corrige las páginas desde el capítulo 3."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicar el estilo Título 1 al título del capítulo 4, usar Actualizar tabla > Actualizar toda la tabla y volver a guardar la copia en PDF.",
+        "explicacion": "Correcta. Con el estilo Título 1, el capítulo 4 pasa a ser un título que Word reconoce. «Actualizar toda la tabla» refleja los cambios en los títulos y en las páginas, y la nueva copia en PDF crea el marcador a partir de los encabezados."
+      },
+      {
+        "id": "D",
+        "texto": "Aplicar el estilo Título 1 al título del capítulo 4, usar Actualizar tabla > Actualizar solo los números de página y volver a guardar el PDF.",
+        "explicacion": "Incorrecta. Aplicar el estilo es el paso correcto, y el PDF nuevo sí tendría el marcador. Pero «Actualizar solo los números de página» corrige las páginas de las entradas que ya existen e ignora los cambios en los títulos, así que el capítulo 4 seguiría por fuera de la tabla."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el título del capítulo 4 tiene formato aplicado a mano, y el informe creció después de insertar la tabla. Regla: Word genera la tabla de contenido (y los marcadores del PDF con la opción Encabezados) a partir de los estilos de título. «Actualizar solo los números de página» ignora los cambios en los títulos; «Actualizar toda la tabla» refleja títulos y páginas. Conclusión: aplicar Título 1, actualizar toda la tabla y guardar de nuevo el PDF.",
+    "fuente_url": "https://support.microsoft.com/es-es/word/update-a-table-of-contents",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-OFI-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Combinación de correspondencia: carta principal frente a documentos individuales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Andrés, auxiliar administrativo de talento humano de una alcaldía, prepara 85 citaciones a la inducción. Usó Correspondencia > Iniciar combinación de correspondencia > Cartas, tomó como destinatarios un libro de Excel con las columnas Nombre, Dependencia y Fecha, e insertó esos campos en la carta. Con Vista previa de resultados comprobó que los datos salieran bien. Su jefe le pide que la carta del registro 23, dirigida a un funcionario con discapacidad visual, incluya un párrafo sobre el lector de pantalla que habrá en la sala; las otras 84 deben salir sin ese párrafo. ¿Cómo debe hacerlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Usar Finalizar y combinar > Editar documentos individuales con todos los registros, escribir el párrafo en esa carta e imprimir desde el documento nuevo.",
+        "explicacion": "Correcta. Editar documentos individuales crea un documento nuevo con las 85 cartas ya combinadas, cada una con sus datos. Lo que se escriba en una de ellas no afecta a las demás, y la impresión se hace desde ese documento."
+      },
+      {
+        "id": "B",
+        "texto": "Ir con las flechas de la vista previa al registro 23, escribir allí el párrafo y luego usar Finalizar y combinar > Imprimir documentos con todos los registros.",
+        "explicacion": "Incorrecta. La vista previa muestra la carta principal con los datos de un registro. Lo que se escribe allí queda en la carta principal, que es común a todos, y saldría en las 85 citaciones."
+      },
+      {
+        "id": "C",
+        "texto": "Dejar marcado solo el registro 23 en Editar lista de destinatarios, escribir el párrafo y volver a marcar los 85 registros antes de imprimir las cartas.",
+        "explicacion": "Incorrecta. Filtrar los destinatarios cambia a quiénes se combina, no el texto. El párrafo queda en la carta principal y, al volver a marcar los 85 registros, sale en todas las citaciones."
+      },
+      {
+        "id": "D",
+        "texto": "Usar Finalizar y combinar > Editar documentos individuales, escribir el párrafo en esa carta, cerrar ese documento e imprimir desde la carta principal.",
+        "explicacion": "Incorrecta. El párrafo quedó en el documento combinado que se cerró. Al imprimir desde la carta principal, Word vuelve a combinar sin ese párrafo, y la carta del registro 23 sale igual a las demás."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el párrafo debe ir en una sola de las 85 cartas. Regla: la carta principal es una plantilla común; lo que se escribe en ella, aun durante la vista previa o con un filtro de destinatarios, se repite en todas. Finalizar y combinar > Editar documentos individuales genera un documento aparte con cada carta combinada, para revisarlas y actualizarlas una por una antes de imprimir. Conclusión: agregar el párrafo en la carta 23 de ese documento e imprimir desde allí.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/usar-combinación-de-correspondencia-para-personalizar-cartas-d7686bb1-3077-4af3-926b-8c825e9505a3",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-OFI-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Control de cambios y comentarios: ocultar las marcas no las quita del archivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Mónica, abogada de la oficina jurídica de un instituto departamental, revisó el borrador de un convenio con Revisar > Control de cambios activado: modificó dos cláusulas y dejó tres comentarios internos. Jorge, técnico administrativo, debe enviar el archivo .docx a la otra entidad para que lo complete. Antes de enviarlo, eligió en Mostrar para revisión la vista «Sin marcado», comprobó que el texto se veía limpio, desactivó Control de cambios y guardó. ¿Qué encontrará la otra entidad al abrir el archivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un texto limpio, porque la vista elegida se guarda con el archivo y, al desactivar el control, Word aceptó las modificaciones de Mónica.",
+        "explicacion": "Incorrecta. La vista de revisión no limpia el archivo: «Sin marcado» solo oculta los cambios en pantalla. Y desactivar Control de cambios deja de marcar los cambios nuevos, pero no acepta los anteriores."
+      },
+      {
+        "id": "B",
+        "texto": "Los comentarios, pero no las revisiones, porque al desactivar el control Word incorporó al texto las modificaciones de Mónica.",
+        "explicacion": "Incorrecta. Desactivar Control de cambios no incorpora las revisiones al texto: las que ya estaban marcadas siguen en el documento hasta que alguien las acepte o las rechace."
+      },
+      {
+        "id": "C",
+        "texto": "Las revisiones, pero no los comentarios, porque la vista «Sin marcado» borra los comentarios del archivo al guardarlo.",
+        "explicacion": "Incorrecta. Ninguna de las vistas de revisión borra comentarios; solo cambian lo que se muestra en pantalla. Los comentarios se quitan con Revisar > Eliminar."
+      },
+      {
+        "id": "D",
+        "texto": "Las revisiones y los comentarios, porque esa vista solo los ocultaba y desactivar el control no acepta lo que ya estaba marcado.",
+        "explicacion": "Correcta. «Sin marcado» solo oculta los cambios y los comentarios en pantalla; ocultarlos no los quita del documento, y desactivar el control no acepta ni rechaza lo ya marcado. Para entregar un archivo limpio había que aceptar o rechazar todos los cambios y eliminar los comentarios."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Jorge solo cambió la vista a «Sin marcado» y desactivó Control de cambios. Regla: según el soporte de Microsoft, ocultar los cambios no los quita del documento; las revisiones salen del archivo al aceptarlas o rechazarlas (Revisar > Aceptar > Aceptar todos los cambios), y los comentarios se eliminan aparte. Desactivar Control de cambios solo evita que se marquen los cambios nuevos. Conclusión: la otra entidad verá las revisiones y los comentarios internos.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/seguimiento-de-cambios-en-word-197ba630-0f5f-4a8e-9a77-3712475e806a",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-OFI-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Salto de sección, orientación por sección y encabezado vinculado al anterior",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Camilo, profesional de la oficina de planeación de un municipio, tiene un informe de 14 páginas en vertical, con el encabezado «Informe de gestión 2026» en todas. Debe agregar al final un anexo de dos páginas con una tabla muy ancha. Al final de la página 14 insertó Disposición > Saltos > Salto de sección: Página siguiente. Con el cursor en el anexo eligió Disposición > Orientación > Horizontal. Luego abrió el encabezado de la página 15, borró el texto, escribió «Anexo 1 – Matriz de riesgos» y guardó el documento. ¿Cómo quedó el informe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las páginas 15 y 16 quedaron en horizontal, y solo esas dos muestran «Anexo 1 – Matriz de riesgos» en el encabezado.",
+        "explicacion": "Incorrecta. Acierta en la orientación, que se aplica por sección. Pero supone que la sección nueva tiene un encabezado propio: de forma predeterminada las secciones están vinculadas y, mientras no se anule Vincular al anterior, el cambio también aparece en la sección del informe."
+      },
+      {
+        "id": "B",
+        "texto": "Las páginas 15 y 16 quedaron en horizontal, y las 16 páginas muestran «Anexo 1 – Matriz de riesgos» en el encabezado.",
+        "explicacion": "Correcta. El salto de sección permitió poner en horizontal solo el anexo. Pero, como Vincular al anterior está activado de forma predeterminada, el encabezado del anexo es el mismo de la sección anterior, y al reescribirlo cambió en las 16 páginas."
+      },
+      {
+        "id": "C",
+        "texto": "Las 16 páginas quedaron en horizontal, y solo la 15 y la 16 muestran «Anexo 1 – Matriz de riesgos» en el encabezado.",
+        "explicacion": "Incorrecta. La orientación de Disposición se aplica a la sección donde está el cursor, y el salto de sección dejó las 14 páginas del informe en otra sección, que sigue en vertical. Además, el encabezado del anexo sigue vinculado al anterior."
+      },
+      {
+        "id": "D",
+        "texto": "Las 16 páginas quedaron en horizontal, y todas ellas muestran «Anexo 1 – Matriz de riesgos» en el encabezado.",
+        "explicacion": "Incorrecta. Acierta en el encabezado, pero no en la orientación: gracias al salto de sección, el cambio a horizontal solo afectó la sección del anexo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Camilo insertó un salto de sección y reescribió el encabezado sin desactivar Vincular al anterior. Regla: el salto de sección permite cambiar la orientación solo en una parte del documento; pero, según el soporte de Microsoft, las secciones están vinculadas de forma predeterminada, y el encabezado de la sección nueva sigue unido al de la anterior mientras no se anule Vincular al anterior. Conclusión: solo el anexo quedó en horizontal, pero el texto nuevo aparece en el encabezado de las 16 páginas.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/vincular-al-anterior-7b3bb5d6-d7e5-44fe-b2f1-ec71f8d9f193",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-OFI-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Numeración: subniveles 2.1 y 2.2 con lista multinivel",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Rosa, auxiliar administrativa de una secretaría de educación, redacta el acta de un comité. Los temas tratados están numerados 1, 2 y 3 con Inicio > Numeración. Debajo del tema 2 debe incluir dos subtemas numerados 2.1 y 2.2, de forma que, si después se agrega un tema antes del 2, los números se ajusten solos. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Escribir «2.1» y «2.2» al comienzo de cada subtema y correr esos dos párrafos hacia la derecha con la regla.",
+        "explicacion": "Incorrecta. El soporte de Microsoft desaconseja cambiar a mano los números de una lista: los números escritos no se actualizan si se agrega o se quita un tema."
+      },
+      {
+        "id": "B",
+        "texto": "Ubicarse en cada subtema y pulsar Tab, conservando la numeración sencilla que ya tiene la lista del acta.",
+        "explicacion": "Incorrecta. Tab sí baja el elemento de nivel, pero con la numeración sencilla el segundo nivel usa letras (a., b.), no el formato 2.1."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicar Inicio > Lista multinivel con el formato 1. / 1.1. / 1.1.1. y bajar de nivel cada subtema con la tecla Tab.",
+        "explicacion": "Correcta. Una lista multinivel con ese formato numera los subtemas según el tema del que dependen, y Tab pasa cada subtema al segundo nivel. Si luego se agrega un tema, Word renumera todo."
+      },
+      {
+        "id": "D",
+        "texto": "Seleccionar los dos subtemas y aplicarles Inicio > Numeración, para que formen una lista aparte debajo del tema 2.",
+        "explicacion": "Incorrecta. Numeración aplica una lista de un solo nivel: los subtemas quedarían numerados como si fueran temas, o empezarían en 1, pero no como 2.1 y 2.2."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los subtemas deben numerarse 2.1 y 2.2 y ajustarse solos si cambia la lista. Regla: la numeración sencilla usa en el segundo nivel otro formato (a., b.), y los números escritos a mano no se actualizan; para una numeración jerárquica se usa Lista multinivel con un formato del tipo 1. / 1.1., y Tab baja cada elemento de nivel. Conclusión: aplicar la lista multinivel y bajar los subtemas con Tab.",
+    "fuente_url": "https://support.microsoft.com/es-es/word/change-the-numbering-in-a-numbered-list",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-OFI-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Para, CC y CCO: a quién llega Responder a todos de un destinatario oculto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Diana, profesional de la oficina de atención al ciudadano de una alcaldía, invita por correo a 60 ciudadanos a una mesa de participación. Envía el mensaje desde su cuenta institucional: en Para escribe el buzón de su oficina; en CC, al coordinador de participación, y en CCO, a los 60 ciudadanos. Uno de ellos contesta con Responder a todos para confirmar su asistencia y deja su número de celular. ¿Quiénes reciben esa respuesta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo Diana, porque quien recibe un mensaje en CCO no puede usar la opción Responder a todos.",
+        "explicacion": "Incorrecta. Quien está en CCO sí puede usar Responder a todos. Lo que ocurre es que su respuesta no llega a los demás destinatarios ocultos."
+      },
+      {
+        "id": "B",
+        "texto": "Diana, el buzón y el coordinador, porque las direcciones en CCO no se incluyen al responder a todos.",
+        "explicacion": "Correcta. Responder a todos envía el mensaje al remitente original y a quienes estaban en las líneas Para y CC. Las direcciones en CCO solo las ve el remitente, así que no se incluyen en la respuesta."
+      },
+      {
+        "id": "C",
+        "texto": "Diana, el buzón, el coordinador y los otros 59 ciudadanos, porque Responder a todos incluye la línea CCO.",
+        "explicacion": "Incorrecta. Supone que la respuesta viaja también a los destinatarios ocultos. Responder a todos solo toma al remitente y las líneas Para y CC; los otros ciudadanos no reciben nada y sus direcciones siguen ocultas."
+      },
+      {
+        "id": "D",
+        "texto": "Diana y el buzón de la oficina, pero no el coordinador, porque las copias en CC no se incluyen al responder.",
+        "explicacion": "Incorrecta. Responder a todos sí incluye a quienes estaban en CC; los únicos que quedan por fuera son los destinatarios en CCO."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el ciudadano estaba en CCO y usó Responder a todos. Regla: según el soporte de Outlook, Responder a todos envía el mensaje al remitente original y a todos los destinatarios de las líneas Para y CC; las direcciones en CCO solo las ve el remitente, así que no están disponibles para quien responde. Conclusión: la respuesta llega a Diana, al buzón de la oficina y al coordinador, pero no a los otros 59 ciudadanos.",
+    "fuente_url": "https://support.microsoft.com/es-es/outlook/reply-to-or-forward-an-email-message",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-OFI-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Responder, Responder a todos y Reenviar: destinatarios y datos adjuntos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "El coordinador de talento humano de una gobernación escribió a los 12 enlaces de las secretarías, con copia al secretario general. Adjuntó una plantilla de Excel y pidió que cada enlace se la devolviera diligenciada con las cédulas y los teléfonos del personal de su secretaría. Julián, profesional y enlace de la secretaría de salud, ya diligenció su plantilla. Además, una compañera nueva de su equipo, que no estaba entre los destinatarios, necesita conocer la solicitud y la plantilla en blanco. ¿Cómo debe proceder Julián?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Usar Responder con su plantilla diligenciada adjunta y, por aparte, reenviar el mensaje original a su compañera nueva.",
+        "explicacion": "Correcta. Responder envía el mensaje solo al remitente original, que es quien pidió la plantilla. Reenviar permite escribir destinatarios nuevos y conserva los datos adjuntos originales, así que la compañera recibe la solicitud con la plantilla en blanco."
+      },
+      {
+        "id": "B",
+        "texto": "Usar Responder a todos con su plantilla diligenciada adjunta y, por aparte, reenviar el mensaje original a su compañera.",
+        "explicacion": "Incorrecta. Acierta al reenviar, pero Responder a todos manda la plantilla con cédulas y teléfonos a los otros 11 enlaces y al secretario general, que no la necesitan."
+      },
+      {
+        "id": "C",
+        "texto": "Usar Responder con su plantilla adjunta y agregar a su compañera en CC, para que reciba también la plantilla en blanco.",
+        "explicacion": "Incorrecta. Al responder, los datos adjuntos originales no se incluyen: la compañera vería el texto de la solicitud y la plantilla de Julián, pero no la plantilla en blanco."
+      },
+      {
+        "id": "D",
+        "texto": "Usar Responder a todos con su plantilla adjunta y agregar a su compañera en CC, para resolver todo en un mismo mensaje.",
+        "explicacion": "Incorrecta. Expone los datos del personal a todos los destinatarios del mensaje original y, como la respuesta no lleva los adjuntos originales, la compañera tampoco recibe la plantilla en blanco."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la plantilla diligenciada solo la necesita el coordinador, y la compañera necesita la plantilla original. Regla: según el soporte de Outlook, Responder envía el mensaje solo al remitente original y sin los datos adjuntos; Responder a todos lo envía también a quienes están en Para y CC; Reenviar permite escribir destinatarios nuevos y conserva los adjuntos originales. Conclusión: responder al coordinador con la plantilla y reenviar el mensaje original a la compañera.",
+    "fuente_url": "https://support.microsoft.com/es-es/outlook/reply-to-or-forward-an-email-message",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-OFI-023",
+    "version": 3,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Procesador de texto y correo",
+    "subtema": "Archivos pesados: adjunto frente a vínculo compartido con el permiso necesario",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Sergio, profesional de la oficina de contratación de un hospital público, debe hacerle llegar a un abogado externo, contratado para revisar un proceso, los 14 PDF del expediente, que incluyen hojas de vida y certificados de los proponentes. Pesan 85 MB y están en una carpeta del OneDrive institucional; la entidad permite compartir desde OneDrive con personas externas, pero su política exige que los documentos con datos personales solo se compartan con personas identificadas. Al adjuntarlos, Outlook rechaza el mensaje por tamaño. Durante la semana se seguirán agregando documentos al expediente, y el abogado solo debe leerlos y enviar sus observaciones por correo. ¿Cómo debe compartírselos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Comprimir los PDF en un archivo .zip y enviarlo partido en varios correos, cada uno por debajo del límite de tamaño de Outlook.",
+        "explicacion": "Incorrecta. Puede resolver el tamaño, pero envía copias fijas: los documentos que se agreguen durante la semana no le llegarán al abogado, y habría que volver a enviarlo todo."
+      },
+      {
+        "id": "B",
+        "texto": "Crear para la carpeta un vínculo de OneDrive de tipo «Cualquiera», sin permitir la edición, y enviárselo al abogado.",
+        "explicacion": "Incorrecta. Acierta en usar un vínculo de solo lectura, pero un vínculo «Cualquiera» sirve a quien lo reciba, aunque se lo hayan reenviado y sin iniciar sesión, y la política de la entidad exige que los datos personales solo se compartan con personas identificadas."
+      },
+      {
+        "id": "C",
+        "texto": "Invitar al abogado a la carpeta de OneDrive con su dirección de correo y el permiso Puede editar.",
+        "explicacion": "Incorrecta. Acierta en limitar el acceso al abogado, y la carpeta compartida muestra el contenido actual, pero da más permisos de los necesarios: con Puede editar, el abogado podría modificar o borrar documentos del expediente."
+      },
+      {
+        "id": "D",
+        "texto": "Invitar al abogado a la carpeta de OneDrive con su dirección de correo y el permiso Puede ver.",
+        "explicacion": "Correcta. La invitación por correo da acceso a determinadas personas: solo el abogado puede abrir la carpeta, aunque el vínculo se reenvíe. Puede ver no permite modificar nada, y como el acceso es a la carpeta y no a una copia, verá también los documentos que se agreguen."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los archivos superan el límite de Outlook, el expediente seguirá creciendo, contiene datos de los proponentes y el abogado solo debe leer. Regla: según el soporte de Microsoft, un vínculo «Cualquiera» sirve a cualquier persona que lo reciba, aunque se lo hayan reenviado; uno para determinadas personas, solo a quienes se especifiquen; y Puede ver no permite modificar. El acceso es a la carpeta, no a una copia. Conclusión: invitar al abogado con su correo y el permiso Puede ver (D).",
+    "fuente_url": "https://support.microsoft.com/es-es/office/compartir-archivos-y-carpetas-de-onedrive-9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-OFI-024",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Phishing: qué hacer después de escribir la contraseña en una página falsa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Óscar, profesional de presupuesto de una secretaría de hacienda, recibió un correo con el logo de la entidad y la firma «Mesa de ayuda TI»: su buzón estaba lleno y debía validar su cuenta en las siguientes dos horas. Abrió el enlace y escribió su usuario y su contraseña en una página idéntica a la de inicio de sesión de Microsoft 365. La página mostró un error y lo llevó al portal real. Minutos después notó que el remitente usaba un dominio distinto al de la entidad. ¿Qué debe hacer primero?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cerrar la sesión en todas partes desde la página de su cuenta y seguir trabajando con la misma contraseña.",
+        "explicacion": "Incorrecta. Cerrar las sesiones expulsa a quien ya hubiera entrado, pero el atacante conserva la contraseña y puede volver a iniciar sesión cuando quiera. Mientras no se cambie, la cuenta sigue expuesta."
+      },
+      {
+        "id": "B",
+        "texto": "Cambiar su contraseña entrando al portal por la dirección habitual y avisar de inmediato a la mesa de ayuda.",
+        "explicacion": "Correcta. La contraseña quedó expuesta y hay que cambiarla de inmediato, entrando por una ruta conocida y no por el correo. Como es una cuenta de trabajo, se avisa al soporte de TI para que revise los accesos y alerte a los demás."
+      },
+      {
+        "id": "C",
+        "texto": "Desconectar el equipo de la red y dejarlo apagado hasta que un técnico de soporte llegue a revisarlo en persona.",
+        "explicacion": "Incorrecta. Apagar el equipo no sirve contra el robo de la contraseña: el atacante la usa desde su propio equipo. Mientras tanto, la contraseña robada sigue vigente."
+      },
+      {
+        "id": "D",
+        "texto": "Reportar el correo a la mesa de ayuda y esperar a que confirme que era falso antes de cambiar la contraseña.",
+        "explicacion": "Incorrecta. Reportar hace parte de la respuesta, pero esperar la confirmación deja vigente la contraseña robada mientras soporte revisa. Óscar ya sabe que la escribió en una página a la que llegó por un remitente sospechoso: la cambia de inmediato y avisa al mismo tiempo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Óscar escribió su usuario y contraseña en una página falsa a la que llegó desde el correo. Regla: según el soporte de Microsoft, quien cree haber sido víctima de phishing debe cambiar de inmediato la contraseña de las cuentas afectadas y, si es una cuenta de trabajo, avisar al soporte de TI; además, no se usan los vínculos del mensaje: se entra al sitio oficial por una ruta conocida. Conclusión: cambiar la contraseña desde el portal habitual y avisar a la mesa de ayuda.",
+    "fuente_url": "https://support.microsoft.com/es-es/security/protect-yourself-from-phishing",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 85
+    }
+  },
+  {
+    "id": "TC-OFI-025",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Doble factor: solicitudes de aprobación que el usuario no inició",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "En una superintendencia, el inicio de sesión en la cuenta institucional pide primero la contraseña y después una aprobación en la aplicación Microsoft Authenticator del celular, en la que hay que escribir el número que muestra la pantalla donde se está iniciando sesión. Un sábado a las 11 p. m., sin haber intentado entrar a ninguna cuenta desde el viernes, Claudia, profesional especializada de planeación, recibe en el celular cuatro solicitudes de inicio de sesión en diez minutos. ¿Qué indican esas solicitudes y qué debe hacer Claudia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que alguien prueba contraseñas al azar sin conocer la suya; con negar las solicitudes queda protegida y no debe hacer nada más.",
+        "explicacion": "Incorrecta. En esta entidad la aprobación solo se pide después de escribir la contraseña correcta, así que quien intenta entrar ya la conoce. Negar frena ese intento, pero la contraseña sigue expuesta."
+      },
+      {
+        "id": "B",
+        "texto": "Que otra persona conoce su contraseña, pero sin ver el número de la pantalla no puede entrar; basta con negar las solicitudes.",
+        "explicacion": "Incorrecta. Acierta en el diagnóstico, pero la coincidencia de números solo hace más difícil aprobar por error. La contraseña sigue en manos de otra persona, que puede insistir, llamar a Claudia haciéndose pasar por soporte para pedirle el número o usarla donde se haya repetido."
+      },
+      {
+        "id": "C",
+        "texto": "Que otra persona ya conoce su contraseña; debe negar las solicitudes, cambiar la contraseña y reportarlo al área de tecnología.",
+        "explicacion": "Correcta. Como el segundo paso solo llega después de una contraseña válida, las solicitudes indican que otra persona la conoce. Negarlas frena el ingreso; cambiar la contraseña de inmediato y avisar a TI cierra la puerta y permite revisar los registros de inicio de sesión."
+      },
+      {
+        "id": "D",
+        "texto": "Que otra persona conoce su contraseña; debe negar las solicitudes y cambiarla el lunes desde su equipo de la oficina, que es más seguro.",
+        "explicacion": "Incorrecta. Acierta en el diagnóstico y en cambiar la contraseña, pero esperar al lunes deja la cuenta expuesta todo el fin de semana, y sin reporte nadie revisa los inicios de sesión. La contraseña se cambia de inmediato desde un equipo de confianza, entrando por la dirección habitual."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la cuenta pide primero la contraseña y después la aprobación con número, y Claudia no intentó entrar. Regla: la aprobación en Authenticator es el segundo factor; se solicita cuando alguien ya superó el primero. La coincidencia de números dificulta aprobar por error, pero no protege una contraseña que otra persona ya conoce. El soporte de Microsoft indica no responder a solicitudes no pedidas y, si se sospecha un intento de acceso, contactar al administrador de TI. Conclusión: negar, cambiar la contraseña ya y reportarlo (C).",
+    "fuente_url": "https://support.microsoft.com/es-es/account-billing/problemas-comunes-con-la-verificación-en-dos-pasos-para-una-cuenta-profesional-o-educativa-63acbb9b-16a1-47b9-8619-6a865e8071a5",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-OFI-026",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Archivos en la nube: cortar el acceso de un vínculo abierto que ya circula",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Paola, profesional de la secretaría de salud de un departamento, compartió hace dos meses con un consultor externo la carpeta de OneDrive que contiene la base de datos, con información de salud, de los beneficiarios de un programa. Usó un vínculo de tipo «Cualquiera» con permiso de edición. Los tres integrantes de su equipo abren la carpeta con un acceso propio, que ella les dio con sus correos institucionales, y no usan ese vínculo. El contrato del consultor terminó ayer, y Paola supo que él había reenviado el vínculo a un colega suyo. Ya reportó el caso como incidente a la oficina de seguridad de la información, que le pidió cortar de inmediato el acceso de cualquier persona ajena al equipo. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entrar a Administrar acceso de la carpeta y eliminar el vínculo, que deja de funcionar para cualquiera que lo tenga.",
+        "explicacion": "Correcta. Un vínculo de tipo «Cualquiera» da acceso a quien lo reciba, también a quien se lo reenviaron. Al eliminarlo desde Administrar acceso deja de servir para todos, sin quitar el acceso que cada integrante del equipo recibió con su propio correo."
+      },
+      {
+        "id": "B",
+        "texto": "Cambiar la contraseña de su cuenta institucional, ya que el vínculo se creó con su sesión y deja de valer con la nueva clave.",
+        "explicacion": "Incorrecta. El vínculo «Cualquiera» no depende de la sesión ni de la contraseña de quien lo creó: quien lo tenga lo sigue usando mientras no se elimine."
+      },
+      {
+        "id": "C",
+        "texto": "Borrar de su bandeja de enviados el correo con el vínculo y pedirle al consultor que elimine el mensaje que recibió.",
+        "explicacion": "Incorrecta. Borrar el correo no anula el vínculo: el consultor y su colega ya lo tienen y pueden seguir abriendo la carpeta."
+      },
+      {
+        "id": "D",
+        "texto": "Cambiar el permiso del vínculo existente de edición a solo lectura, para que el consultor y su colega ya no modifiquen nada.",
+        "explicacion": "Incorrecta. Según el soporte de Microsoft, el permiso de un vínculo ya creado no se puede cambiar de editar a ver. Y aun con un vínculo de solo lectura, el consultor y su colega seguirían viendo la base de datos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el vínculo es de tipo «Cualquiera» y ya circula fuera de la entidad, mientras el equipo entra con accesos propios. Regla: según el soporte de Microsoft, ese tipo de vínculo da acceso a cualquier persona que lo reciba; para cortarlo se elimina en Administrar acceso, y su permiso no se puede cambiar de editar a ver. Ni la contraseña de la dueña ni el correo enviado controlan el vínculo. Como pudieron verse datos de salud, el reporte del incidente que hizo Paola era obligatorio. Conclusión: eliminar el vínculo (A).",
+    "fuente_url": "https://support.microsoft.com/es-es/office/dejar-de-compartir-archivos-o-carpetas-de-onedrive-o-sharepoint-o-cambiar-los-permisos-0a36470f-d7fe-40a0-bd74-0ac6c1e13323",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-OFI-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Copias de seguridad: restauración con copias incrementales y diferenciales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Mauricio, técnico de sistemas de una empresa social del Estado, programó así las copias del servidor de archivos: una copia completa cada domingo a las 11 p. m. y una copia incremental de lunes a sábado a las 11 p. m. El jueves a las 10 a. m. se daña el disco del servidor. Su jefe le pregunta cuántas copias tendrá que restaurar para recuperar la información más reciente y cuántas habría necesitado si las copias de lunes a sábado fueran diferenciales. ¿Qué debe responder Mauricio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dos copias con el esquema actual (la completa y la del miércoles) y cuatro si las diarias fueran diferenciales.",
+        "explicacion": "Incorrecta. Invierte los esquemas. La incremental guarda solo lo modificado desde la copia anterior, sea del tipo que sea, así que se necesitan todas desde el domingo; la diferencial acumula lo cambiado desde la última completa."
+      },
+      {
+        "id": "B",
+        "texto": "Cinco copias con el esquema actual (la completa y las de lunes a jueves) y dos si las diarias fueran diferenciales.",
+        "explicacion": "Incorrecta. Acierta en el esquema diferencial, pero la copia del jueves todavía no existía: se hace a las 11 p. m. y el daño ocurrió a las 10 a. m. La cadena de incrementales termina en la del miércoles."
+      },
+      {
+        "id": "C",
+        "texto": "Tres copias con el esquema actual (solo las de lunes a miércoles) y una si las diarias fueran diferenciales (la del miércoles).",
+        "explicacion": "Incorrecta. Olvida la copia completa del domingo. Las incrementales y las diferenciales solo guardan cambios: sin la completa no hay sobre qué aplicarlos, así que siempre se restaura primero la completa."
+      },
+      {
+        "id": "D",
+        "texto": "Cuatro copias con el esquema actual (la completa y las de lunes a miércoles) y dos si las diarias fueran diferenciales.",
+        "explicacion": "Correcta. Con incrementales se restaura la completa del domingo y luego, en orden, las de lunes, martes y miércoles: cuatro copias. Con diferenciales bastan la completa y la diferencial del miércoles: dos. En ambos casos se pierde lo trabajado el jueves antes de las 10 a. m."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la última copia disponible es la del miércoles a las 11 p. m., y la completa es la del domingo. Regla (INCIBE): la incremental copia lo modificado desde el último respaldo, y para restaurar se necesitan la completa y las incrementales anteriores; la diferencial copia lo modificado desde la última completa, y basta con la completa y la última diferencial. Cálculo: 1 + 3 = 4 copias con incrementales; 1 + 1 = 2 con diferenciales.",
+    "fuente_url": "https://www.incibe.es/empresas/blog/copias-de-seguridad-como-proteger-la-informacion-de-tu-empresa-paso-paso",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-OFI-028",
+    "version": 3,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Actualizaciones: canal oficial frente a avisos falsos de actualización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Luis, auxiliar de archivo de una alcaldía, consulta en Microsoft Edge la página de un proveedor de cajas para archivo. Aparece una ventana emergente con el logo de Windows que dice: «Su navegador está desactualizado y en riesgo. Descargue ahora la actualización de seguridad», con un botón para bajar un archivo. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Descargar el archivo solo si la página del proveedor muestra el candado de conexión segura en la barra de direcciones.",
+        "explicacion": "Incorrecta. El candado indica que la conexión con ese sitio está cifrada, no que el archivo sea legítimo. Las actualizaciones del navegador no se descargan desde ventanas de otros sitios."
+      },
+      {
+        "id": "B",
+        "texto": "Cerrar la pestaña sin interactuar con el aviso y comprobar la versión de Edge desde el menú del navegador.",
+        "explicacion": "Correcta. El aviso es parte de la página: cualquiera de sus botones, incluida una X dibujada, puede iniciar la descarga, por eso se cierra la pestaña (o el navegador) sin tocarlo. Edge se actualiza por su propio mecanismo, de forma predeterminada al reiniciarse, y en Acerca de Microsoft Edge se comprueba la versión."
+      },
+      {
+        "id": "C",
+        "texto": "Descargar el archivo y analizarlo con el antivirus antes de abrirlo; si no detecta amenazas, instalar la actualización.",
+        "explicacion": "Incorrecta. Que el antivirus no detecte nada no prueba que el archivo sea seguro, y el origen sigue siendo una ventana engañosa. Las actualizaciones legítimas llegan por el canal oficial del navegador o de Windows."
+      },
+      {
+        "id": "D",
+        "texto": "Cerrar el aviso con su botón X y pasar después un análisis completo con el antivirus del equipo.",
+        "explicacion": "Incorrecta. Parece prudente, pero la X está dentro del aviso, que es parte de la página: pulsarla puede iniciar la descarga o abrir otra ventana. Además, el análisis no dice si el navegador está al día; eso se comprueba en el menú de Edge."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el aviso aparece dentro de una página web y ofrece descargar un archivo. Regla: una ventana dibujada por la página es parte de ella, y cualquiera de sus botones, incluida la X, puede iniciar la descarga; por eso se cierra la pestaña sin tocarla. Según el soporte de Microsoft, Edge se actualiza automáticamente al reiniciarse, y su versión se revisa en Configuración y más > Ayuda y comentarios > Acerca de Microsoft Edge. Conclusión: no tocar el aviso, cerrar la pestaña y verificar por el canal oficial (B).",
+    "fuente_url": "https://support.microsoft.com/es-es/edge/microsoft-edge-update-settings",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-OFI-029",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Memorias USB: cifrar la unidad antes de transportar datos personales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Javier, profesional de la oficina de víctimas de una gobernación, debe llevar a una sede rural sin internet una copia del libro de Excel con nombres, documentos y direcciones de 400 beneficiarios, para una jornada de atención que él mismo realizará. Su jefe autorizó usar una memoria USB de la entidad. Los equipos de la oficina y el de la sede tienen Windows 11 Pro. ¿Qué debe hacer para que la información quede protegida si la memoria se pierde en el camino?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Activar BitLocker en la memoria desde el Explorador de archivos y desbloquearla en la sede con la contraseña.",
+        "explicacion": "Correcta. BitLocker cifra toda la unidad: si la memoria se pierde, sin la contraseña no se puede leer su contenido. En el equipo de la sede, Javier la desbloquea escribiendo la contraseña, que no debe anotarse ni guardarse junto con la memoria."
+      },
+      {
+        "id": "B",
+        "texto": "Proteger el libro con Revisar > Proteger hoja y una contraseña, para que nadie pueda cambiar los datos de los beneficiarios.",
+        "explicacion": "Incorrecta. Según el soporte de Microsoft, la protección de hoja no está pensada como una característica de seguridad: impide modificar celdas, pero quien encuentre la memoria puede abrir el libro y leer los datos."
+      },
+      {
+        "id": "C",
+        "texto": "Comprimir el libro en un archivo .zip con un nombre que no revele su contenido, como «Varios_2026», antes de copiarlo.",
+        "explicacion": "Incorrecta. Un .zip sin cifrar y un nombre poco llamativo no impiden abrir el archivo: quien encuentre la memoria verá los datos con un par de clics."
+      },
+      {
+        "id": "D",
+        "texto": "Usar, en lugar de la memoria de la entidad, una memoria personal que solo él maneja y que lleva consigo todo el tiempo.",
+        "explicacion": "Incorrecta. Cambiar de memoria no protege los datos si se pierde, y una memoria personal escapa al control de la entidad. El problema sigue siendo que la información viaja sin cifrar."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: datos personales de 400 beneficiarios viajarán en una memoria que se puede perder. Regla: según el soporte de Microsoft, BitLocker (en Windows Pro, Enterprise o Education; para unidades extraíbles, BitLocker To Go) cifra la unidad y se habilita con «Activar BitLocker»; en cambio, la protección de hoja de Excel no es una medida de seguridad. Conclusión: cifrar la memoria con BitLocker y desbloquearla con la contraseña en la sede (A).",
+    "fuente_url": "https://support.microsoft.com/es-es/windows/security/encryption/bitlocker-drive-encryption",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-OFI-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Herramientas de Oficina y Seguridad Digital",
+    "tema": "Seguridad digital",
+    "subtema": "Reporte de incidentes: envío equivocado de datos a una cuenta externa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Natalia, auxiliar administrativa de una secretaría de desarrollo social, envió por error desde Outlook, a la dirección de Gmail de un proveedor, un libro de Excel con nombres, documentos y teléfonos de 300 beneficiarios. La entidad usa cuentas de Microsoft 365. Se dio cuenta a los cinco minutos y pensó en usar la opción Recuperar este mensaje. ¿Qué puede esperar de esa opción y qué debe hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La recuperación funcionará si el proveedor aún no ha abierto el mensaje; si Outlook la confirma, no hay nada que reportar.",
+        "explicacion": "Incorrecta. La recuperación solo opera entre cuentas profesionales o educativas de Microsoft 365 de la misma organización; con una cuenta de Gmail no funciona. Además, una divulgación accidental de datos se reporta aunque luego se intente corregir."
+      },
+      {
+        "id": "B",
+        "texto": "La recuperación funcionará aunque el proveedor ya lo haya leído; aun así, debe reportar el envío como incidente de seguridad.",
+        "explicacion": "Incorrecta. Acierta en reportar, pero la recuperación no opera con cuentas externas, y aun dentro de la organización solo funciona si el destinatario no ha abierto el mensaje."
+      },
+      {
+        "id": "C",
+        "texto": "La recuperación no funcionará porque el destinatario es una cuenta externa; debe reportar el envío como incidente de seguridad.",
+        "explicacion": "Correcta. Las cuentas personales como Gmail no pueden usar la recuperación de mensajes. Los datos ya salieron de la entidad, así que Natalia debe reportarlo de inmediato por el canal de incidentes (mesa de ayuda o seguridad de la información) para que se tomen medidas."
+      },
+      {
+        "id": "D",
+        "texto": "La recuperación no funcionará porque pasó el plazo para deshacer el envío; basta con pedirle al proveedor que borre el correo.",
+        "explicacion": "Incorrecta. La razón es errada: la recuperación no depende de un plazo de minutos, sino de que el destinatario esté en la misma organización y no haya abierto el mensaje. Y pedir el borrado no reemplaza el reporte del incidente."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el destinatario es una cuenta de Gmail, externa a la organización de Microsoft 365. Regla: según el soporte de Microsoft, un mensaje solo se puede recuperar cuando remitente y destinatario tienen cuentas profesionales o educativas de Microsoft 365 de la misma organización y el mensaje no se ha abierto; las cuentas personales como Gmail no pueden usar la recuperación. Como los datos ya salieron de la entidad, el envío se reporta como incidente. Conclusión: C.",
+    "fuente_url": "https://support.microsoft.com/es-es/office/recuperar-o-reemplazar-un-mensaje-de-correo-electrónico-que-ha-enviado-35027f88-d655-4554-b4f8-6c0729a723a0",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
   }
 ]

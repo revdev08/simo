@@ -17,6 +17,9 @@ import gestionFinanciera from '@/data/preguntas/gestion-financiera.json'
 import sst from '@/data/preguntas/sst.json'
 import gestionDocumental from '@/data/preguntas/gestion-documental.json'
 import ticGobiernoDigital from '@/data/preguntas/tic-gobierno-digital.json'
+import controlInterno from '@/data/preguntas/control-interno.json'
+import planeacion from '@/data/preguntas/planeacion.json'
+import contabilidad from '@/data/preguntas/contabilidad.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -38,6 +41,9 @@ const BANCO = [
   ...sst,
   ...gestionDocumental,
   ...ticGobiernoDigital,
+  ...controlInterno,
+  ...planeacion,
+  ...contabilidad,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
@@ -78,7 +84,7 @@ export function getPracticeQuestions(): Question[] {
 }
 
 export function getReportQuestions(): ReportQuestion[] {
-  return BANCO.map((q) => ({ id: q.id, modulo: q.modulo, tema: q.tema }))
+  return BANCO.map((q) => ({ id: q.id, modulo: q.modulo, tema: q.tema, activa: isActive(q) }))
 }
 
 // Busca una pregunta activa por id (los ids llegan como texto desde el navegador)
