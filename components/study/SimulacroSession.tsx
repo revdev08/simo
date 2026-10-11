@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, ChevronLeft, Clock, Flag, LayoutGrid, RotateCcw,
 import { isJuicioSituacional, type Question } from '@/lib/question-types'
 import { clock, saveProgress, sendAttempt } from './attempts'
 import QuestionText from './QuestionText'
+import type { ResumenSimulacro } from './meta-progreso'
 import { AJUSTE_LABEL, Badge, OptionCard, ProgressBar, ScoreRing, isTypingTarget, optionFromKey, scrollIntoViewSoft } from './ui'
 
 const STORAGE_KEY = 'simo_simulacro_en_curso'
@@ -22,6 +23,7 @@ export interface SimulacroState {
   // Solo en el simulacro de una convocatoria: nombre y puntaje mínimo de su prueba eliminatoria
   titulo?: string
   minimo?: number
+  convocatoria?: string // "slug:perfil", para el historial de "Mi progreso"
 }
 
 export function loadSimulacroState(): SimulacroState | null {
@@ -47,6 +49,39 @@ function persistSimulacroState(s: SimulacroState) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(s))
   } catch {}
+}
+
+// Puntajes del simulacro para el historial: conocimientos por aciertos y comportamentales por ajuste (0 a 3)
+function resumirSimulacro(questions: Question[], s: SimulacroState, fecha: number): ResumenSimulacro {
+  let kTotal = 0
+  let kOk = 0
+  let sjtTotal = 0
+  let sjtPuntos = 0
+  const modulos: Record<string, [number, number]> = {}
+  questions.forEach((q, i) => {
+    const selected = s.answers[i]
+    const m = (modulos[q.modulo] ??= [0, 0])
+    m[1]++
+    if (selected === q.respuestaCorrecta) m[0]++
+    if (isJuicioSituacional(q)) {
+      sjtTotal++
+      sjtPuntos += q.opciones.find((o) => o.id === selected)?.puntaje ?? 0
+    } else {
+      kTotal++
+      if (selected === q.respuestaCorrecta) kOk++
+    }
+  })
+  return {
+    fecha,
+    n: questions.length,
+    respondidas: Object.keys(s.answers).length,
+    conocimientos: kTotal ? Math.round((kOk / kTotal) * 100) : null,
+    comportamentales: sjtTotal ? Math.round((sjtPuntos / (sjtTotal * 3)) * 100) : null,
+    ...(s.titulo ? { titulo: s.titulo } : {}),
+    ...(s.convocatoria ? { convocatoria: s.convocatoria } : {}),
+    ...(s.minimo ? { minimo: s.minimo } : {}),
+    modulos,
+  }
 }
 
 const pad = (n: number) => String(n).padStart(2, '0')
@@ -171,6 +206,7 @@ export default function SimulacroSession({
   initialState,
   onExit,
   onSaveProgress,
+  onFinish,
   onRetryWrong,
   onPracticeModule,
 }: {
@@ -178,6 +214,8 @@ export default function SimulacroSession({
   initialState: SimulacroState
   onExit: () => void
   onSaveProgress: (progress: Record<string, 'correct' | 'incorrect'>) => void
+  // Resumen para el historial de simulacros
+  onFinish?: (resumen: ResumenSimulacro) => void
   // Abre el repaso con las preguntas que se fallaron en el simulacro
   onRetryWrong?: (wrong: Question[]) => void
   // Abre la práctica de un módulo desde el resultado
@@ -212,6 +250,7 @@ export default function SimulacroSession({
     })
     onSaveProgress(progress)
     saveProgress(progress)
+    onFinish?.(resumirSimulacro(questions, state, t))
     clearSimulacroState()
     setState((s) => ({ ...s, timeSpent: spent }))
     setFinishedAt(Math.min(t, deadline))

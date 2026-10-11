@@ -1,5 +1,6 @@
 // Catálogo de convocatorias grandes con su plan de estudio.
 // Datos verificados en las fuentes oficiales de la CNSC el 11 de octubre de 2026 (ver `fuentes` de cada una).
+// La Procuraduría no concursa por la CNSC: sus datos salen de sus documentos y, donde se indica, de la prensa.
 // Los pesos de los módulos son una sugerencia de estudio de SIMO TEST, no el peso oficial de cada tema.
 import type { ModuloPlan } from './plan'
 import type { Convocatoria, PruebaConvocatoria } from './tipos'
@@ -48,6 +49,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
     vacantesNota: '743 de ascenso y 1.107 de ingreso en el Acuerdo 21 de 2025. La CNSC anunció después 1.142 de ingreso.',
     niveles: 'Profesional (Gestor e Inspector), técnico (Analista) y asistencial (Facilitador)',
     estado: 'Prueba escrita el domingo 8 de noviembre de 2026, en una sesión de 5 horas.',
+    fechaPrueba: '2026-11-08',
     revisado: REVISADO,
     resumen:
       'El concurso más urgente del año: más de 113.000 inscritos en ingreso para las vacantes de la DIAN. La prueba funcional es eliminatoria con 70 puntos y solo evalúa normas expedidas antes del 19 de junio de 2026.',
@@ -151,8 +153,44 @@ export const CONVOCATORIAS: Convocatoria[] = [
       'Pesos del proyecto de acuerdo para docentes. Para directivos: mínimo de 70 en la eliminatoria, psicotécnica 10% y antecedentes 25%. Los definitivos estarán en los acuerdos en firme.',
     perfiles: [
       {
+        id: 'primaria',
+        label: 'Docente de primaria',
+        area: 'docente_primaria',
+        modulos: [
+          { modulo: 'Saber Disciplinar: Primaria', peso: 5 },
+          { modulo: 'Pedagogía y Normativa Docente', peso: 4 },
+          { modulo: 'Comprensión Lectora', peso: 2 },
+          { modulo: 'Razonamiento Lógico y Cuantitativo', peso: 2 },
+          { modulo: 'Competencias Comportamentales', peso: 1 },
+        ],
+      },
+      {
+        id: 'matematicas',
+        label: 'Docente de matemáticas',
+        area: 'docente_matematicas',
+        modulos: [
+          { modulo: 'Saber Disciplinar: Matemáticas', peso: 5 },
+          { modulo: 'Pedagogía y Normativa Docente', peso: 4 },
+          { modulo: 'Comprensión Lectora', peso: 2 },
+          { modulo: 'Razonamiento Lógico y Cuantitativo', peso: 2 },
+          { modulo: 'Competencias Comportamentales', peso: 1 },
+        ],
+      },
+      {
+        id: 'lenguaje',
+        label: 'Docente de lengua castellana',
+        area: 'docente_lenguaje',
+        modulos: [
+          { modulo: 'Saber Disciplinar: Lenguaje', peso: 5 },
+          { modulo: 'Pedagogía y Normativa Docente', peso: 4 },
+          { modulo: 'Comprensión Lectora', peso: 2.5 },
+          { modulo: 'Razonamiento Lógico y Cuantitativo', peso: 1.5 },
+          { modulo: 'Competencias Comportamentales', peso: 1 },
+        ],
+      },
+      {
         id: 'docente',
-        label: 'Docente de aula u orientador',
+        label: 'Docente de otras áreas u orientador',
         area: 'docente',
         modulos: [
           { modulo: 'Pedagogía y Normativa Docente', peso: 5 },
@@ -502,6 +540,75 @@ export const CONVOCATORIAS: Convocatoria[] = [
       {
         label: 'Oferta de vacantes (CNSC)',
         url: 'https://www.cnsc.gov.co/mas-de-1000-vacantes-oferta-la-cnsc-en-ocho-departamentos-del-pais-con-el-proceso-de-seleccion',
+      },
+    ],
+  },
+  {
+    slug: 'procuraduria-2026',
+    nombre: 'Procuraduría 2026',
+    titulo: 'Concurso Procuraduría 2026: plan de estudio para la prueba de conocimientos',
+    entidad: 'Procuraduría General de la Nación (concurso propio, no de la CNSC)',
+    fueraCnsc: true,
+    vacantes: 2826,
+    vacantesNota: 'Resolución 076 de 2026. Según el certificado de inscritos, se inscribieron unas 272.500 personas.',
+    niveles: 'Asesor, ejecutivo, profesional, técnico, administrativo y operativo',
+    estado: 'Inscripciones cerradas (7 al 18 de septiembre de 2026). La fecha de la prueba escrita aún no es oficial.',
+    revisado: REVISADO,
+    resumen:
+      'El concurso de la Procuraduría para su sistema especial de carrera (Decretos Ley 262 y 263 de 2000). Cada empleo trae unos conocimientos esenciales comunes: ofimática, atención al usuario, documentos de oficina, estructura y funciones de la Procuraduría, sistemas de gestión, gestión documental y gestión pública.',
+    pruebas: [
+      { nombre: 'Conocimientos', peso: 70, caracter: 'Eliminatoria', minimo: 65 },
+      { nombre: 'Competencias comportamentales', peso: 20, caracter: 'Clasificatoria' },
+      { nombre: 'Análisis de antecedentes', peso: 10, caracter: 'Clasificatoria' },
+    ],
+    pruebasNota:
+      'Pesos para asesor, ejecutivo y profesional según la Resolución 076 de 2026, tal como los reportó la prensa: confírmalos en el texto oficial. En los niveles técnico, administrativo y operativo, conocimientos 60%, comportamentales 20% y antecedentes 20%. La Resolución 133 de 2026 abrió la opción de cambiar la prueba escrita por una de ejecución en empleos que piden hasta bachillerato.',
+    perfiles: [
+      {
+        id: 'profesional',
+        label: 'Asesor, ejecutivo o profesional',
+        nivel: 'profesional',
+        area: 'procuraduria',
+        modulos: [
+          { modulo: 'Procuraduría General de la Nación', peso: 5 },
+          { modulo: 'Disciplinario y Anticorrupción', peso: 3 },
+          { modulo: 'Constitución y Estructura del Estado', peso: 2.5 },
+          { modulo: 'Derecho de Petición y Procedimiento Administrativo', peso: 2.5 },
+          { modulo: 'Gestión Pública: MIPG, Presupuesto y Contratación', peso: 1.5 },
+          { modulo: 'Atención al Ciudadano', peso: 1 },
+          { modulo: 'Gestión Documental', peso: 1 },
+          { modulo: 'Herramientas de Oficina y Seguridad Digital', peso: 1 },
+          { modulo: 'Transparencia, Datos Personales y Archivo', peso: 0.5 },
+          { modulo: 'Competencias Comportamentales', peso: 2 },
+        ],
+      },
+      {
+        id: 'apoyo',
+        label: 'Técnico, administrativo u operativo',
+        nivel: 'tecnico',
+        area: 'procuraduria',
+        modulos: [
+          { modulo: 'Procuraduría General de la Nación', peso: 4 },
+          { modulo: 'Atención al Ciudadano', peso: 2 },
+          { modulo: 'Gestión Documental', peso: 2 },
+          { modulo: 'Herramientas de Oficina y Seguridad Digital', peso: 2 },
+          { modulo: 'Derecho de Petición y Procedimiento Administrativo', peso: 2 },
+          { modulo: 'Disciplinario y Anticorrupción', peso: 1.5 },
+          { modulo: 'Constitución y Estructura del Estado', peso: 1.5 },
+          { modulo: 'Gestión Pública: MIPG, Presupuesto y Contratación', peso: 1 },
+          { modulo: 'Competencias Comportamentales', peso: 2 },
+        ],
+      },
+    ],
+    cobertura:
+      'Estructura, funciones y régimen de la Procuraduría (Decreto Ley 262 de 2000 y Constitución, arts. 275 a 284), el Código General Disciplinario (Ley 1952 de 2019) y los conocimientos comunes de todos los empleos: atención al usuario, gestión documental, ofimática, procedimiento administrativo y gestión pública.',
+    faltantes:
+      'Los conocimientos específicos dependen de cada empleo (por ejemplo, tributario, penal o contratación): búscalos con el plan por ejes. Las comportamentales de la Procuraduría siguen su propio diccionario de competencias, y las nuestras siguen el Decreto 815 de 2018.',
+    fuentes: [
+      { label: 'Convocatorias del concurso (Procuraduría)', url: 'https://www.procuraduria.gov.co/Documents/2026/5.%20Mayo/CONVOCATORIAS.pdf' },
+      {
+        label: 'Certificado de inscritos (Procuraduría)',
+        url: 'https://www.procuraduria.gov.co/Documents/2026/9.%20septiembre/CERTIFICADO%20DE%20INSCRITOS%20CONCURSO%20PGN.pdf',
       },
     ],
   },

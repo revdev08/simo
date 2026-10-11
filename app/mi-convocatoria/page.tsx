@@ -10,7 +10,7 @@ import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
 export const metadata: Metadata = {
   title: 'Mi convocatoria: plan de estudio para tu concurso CNSC',
   description:
-    'Elige tu convocatoria (DIAN, docentes, hospitales ESE, Bogotá, CAR, Nación y territoriales) o pega los ejes temáticos de tu empleo y recibe un plan de estudio semana a semana.',
+    'Elige tu convocatoria (DIAN, docentes, hospitales ESE, Bogotá, CAR, Nación, territoriales y Procuraduría) o pega los ejes temáticos de tu empleo y recibe un plan de estudio semana a semana.',
   alternates: { canonical: 'https://www.simotest.com/mi-convocatoria' },
 }
 

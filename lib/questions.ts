@@ -22,6 +22,7 @@ import planeacion from '@/data/preguntas/planeacion.json'
 import contabilidad from '@/data/preguntas/contabilidad.json'
 import almacenInventarios from '@/data/preguntas/almacen-inventarios.json'
 import docentes from '@/data/preguntas/docentes.json'
+import docentesDisciplinar from '@/data/preguntas/docentes-disciplinar.json'
 import directivosDocentes from '@/data/preguntas/directivos-docentes.json'
 import tributarioDian from '@/data/preguntas/tributario-dian.json'
 import aduaneroDian from '@/data/preguntas/aduanero-dian.json'
@@ -33,6 +34,9 @@ import saludEse from '@/data/preguntas/salud-ese.json'
 import gestionAmbiental from '@/data/preguntas/gestion-ambiental.json'
 import distritoCapital from '@/data/preguntas/distrito-capital.json'
 import politicasSociales from '@/data/preguntas/politicas-sociales.json'
+import proteccionUnp from '@/data/preguntas/proteccion-unp.json'
+import vigilanciaSanitaria from '@/data/preguntas/vigilancia-sanitaria.json'
+import procuraduria from '@/data/preguntas/procuraduria.json'
 
 // Banco completo: el original más los lotes nuevos en formato v2 (data/preguntas/).
 // Para publicar un lote nuevo, agrégalo a esta lista después de pasar `yarn validate:questions`.
@@ -59,6 +63,7 @@ const BANCO = [
   ...contabilidad,
   ...almacenInventarios,
   ...docentes,
+  ...docentesDisciplinar,
   ...directivosDocentes,
   ...tributarioDian,
   ...aduaneroDian,
@@ -70,6 +75,9 @@ const BANCO = [
   ...gestionAmbiental,
   ...distritoCapital,
   ...politicasSociales,
+  ...proteccionUnp,
+  ...vigilanciaSanitaria,
+  ...procuraduria,
 ] as unknown as (Question & Record<string, unknown>)[]
 
 // Estados que no se muestran en la práctica: con error confirmado, sin revisar o retirados
@@ -113,7 +121,14 @@ export function getPracticeQuestions(): Question[] {
 }
 
 export function getReportQuestions(): ReportQuestion[] {
-  return BANCO.map((q) => ({ id: q.id, modulo: q.modulo, tema: q.tema, activa: isActive(q) }))
+  // El nivel solo va cuando la pregunta es de ciertos niveles: el reporte cuenta las del nivel del aspirante
+  return BANCO.map((q) => ({
+    id: q.id,
+    modulo: q.modulo,
+    tema: q.tema,
+    activa: isActive(q),
+    ...(q.nivel && !q.nivel.includes('todos') ? { nivel: q.nivel } : {}),
+  }))
 }
 
 // Preguntas activas por módulo: las páginas públicas muestran cifras, nunca las preguntas

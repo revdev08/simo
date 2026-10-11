@@ -78,10 +78,16 @@ export const MODULE_SECTIONS = [
       'Aduanero y Cambiario (DIAN)',
       'Carrera y Gestión Institucional (DIAN)',
       'Pedagogía y Normativa Docente',
+      'Saber Disciplinar: Primaria',
+      'Saber Disciplinar: Matemáticas',
+      'Saber Disciplinar: Lenguaje',
       'Gestión Escolar (Directivos Docentes)',
       'Gestión Ambiental',
       'Distrito Capital (Bogotá)',
       'Políticas Sociales y Enfoque Diferencial',
+      'Protección de Personas (UNP)',
+      'Vigilancia Sanitaria (INVIMA)',
+      'Procuraduría General de la Nación',
     ],
   },
   {
@@ -122,10 +128,16 @@ export const AREAS_FUNCIONALES = [
   { id: 'dian_aduanera', label: 'DIAN: aduanera y cambiaria', frase: 'aduanas y cambios', modulo: 'Aduanero y Cambiario (DIAN)' },
   { id: 'dian_institucional', label: 'DIAN: carrera y gestión', frase: 'carrera y gestión de la DIAN', modulo: 'Carrera y Gestión Institucional (DIAN)' },
   { id: 'docente', label: 'Docente', frase: 'pedagogía y normativa docente', modulo: 'Pedagogía y Normativa Docente' },
+  { id: 'docente_primaria', label: 'Docente de primaria', frase: 'saber disciplinar de primaria', modulo: 'Saber Disciplinar: Primaria' },
+  { id: 'docente_matematicas', label: 'Docente de matemáticas', frase: 'saber disciplinar de matemáticas', modulo: 'Saber Disciplinar: Matemáticas' },
+  { id: 'docente_lenguaje', label: 'Docente de lenguaje', frase: 'saber disciplinar de lenguaje', modulo: 'Saber Disciplinar: Lenguaje' },
   { id: 'directivo_docente', label: 'Directivo docente', frase: 'gestión escolar', modulo: 'Gestión Escolar (Directivos Docentes)' },
   { id: 'ambiental', label: 'Ambiental (CAR)', frase: 'gestión ambiental', modulo: 'Gestión Ambiental' },
   { id: 'bogota', label: 'Bogotá D.C.', frase: 'régimen del Distrito Capital', modulo: 'Distrito Capital (Bogotá)' },
   { id: 'social', label: 'Políticas sociales', frase: 'políticas sociales y enfoque diferencial', modulo: 'Políticas Sociales y Enfoque Diferencial' },
+  { id: 'unp', label: 'Protección (UNP)', frase: 'prevención y protección (UNP)', modulo: 'Protección de Personas (UNP)' },
+  { id: 'invima', label: 'Vigilancia sanitaria (INVIMA)', frase: 'vigilancia sanitaria', modulo: 'Vigilancia Sanitaria (INVIMA)' },
+  { id: 'procuraduria', label: 'Procuraduría', frase: 'funciones de la Procuraduría', modulo: 'Procuraduría General de la Nación' },
 ] as const
 
 export type AreaId = (typeof AREAS_FUNCIONALES)[number]['id']
@@ -147,4 +159,4 @@ export const REPORT_REASONS = [
 
 // Lo mínimo que necesita el reporte de rendimiento. `activa` indica si hoy se puede practicar
 // (el reporte también cuenta respuestas antiguas a preguntas ya retiradas).
-export type ReportQuestion = Pick<Question, 'id' | 'modulo' | 'tema'> & { activa: boolean }
+export type ReportQuestion = Pick<Question, 'id' | 'modulo' | 'tema' | 'nivel'> & { activa: boolean }

@@ -23,6 +23,9 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
     'transparencia', 'acceso a la informacion', 'ley 1712', 'datos personales', 'habeas data', 'ley 1581',
     'informacion publica',
   ],
+  'Carrera y Gestión Institucional (DIAN)': [
+    'decreto ley 927', 'decreto 927', 'carrera dian', 'sistema especifico de carrera', 'gestion institucional dian',
+  ],
   'Disciplinario y Anticorrupción': [
     'disciplinari', 'ley 1952', 'ley 2094', 'anticorrupcion', 'ley 1474', 'conflicto de interes', 'conflictos de interes',
     'inhabilidades', 'incompatibilidades', 'acoso laboral', 'ley 1010', 'etica publica', 'codigo de integridad',
@@ -121,6 +124,19 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
     'ley 1620', 'ley 115', 'ley general de educacion', 'decreto 1278', 'estatuto docente', 'profesionalizacion docente',
     'curricul', 'proyecto educativo institucional', 'pei', 'decreto 1075', 'practicas de aula', 'planeacion de clase',
   ],
+  'Saber Disciplinar: Matemáticas': [
+    'matematicas', 'pensamiento numerico', 'pensamiento variacional', 'pensamiento espacial', 'pensamiento metrico',
+    'pensamiento aleatorio', 'algebra', 'geometria', 'estadistica', 'probabilidad', 'calculo', 'trigonometria',
+    'didactica de las matematicas',
+  ],
+  'Saber Disciplinar: Lenguaje': [
+    'lengua castellana', 'humanidades', 'literatura', 'produccion textual', 'comprension e interpretacion textual',
+    'didactica del lenguaje', 'lectura y escritura', 'linguistica', 'medios de comunicacion y otros sistemas simbolicos',
+  ],
+  'Saber Disciplinar: Primaria': [
+    'basica primaria', 'primaria', 'docente de primaria', 'primero a quinto', 'escuela nueva', 'multigrado',
+    'lectoescritura', 'alfabetizacion inicial',
+  ],
   'Gestión Escolar (Directivos Docentes)': [
     'gestion escolar', 'gestion directiva', 'gestion educativa', 'gobierno escolar', 'consejo directivo',
     'consejo academico', 'fondo de servicios educativos', 'fondos de servicios educativos', 'rector', 'coordinador',
@@ -135,6 +151,30 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
   'Distrito Capital (Bogotá)': [
     'distrito capital', 'bogota', 'decreto 1421', 'estatuto organico de bogota', 'acuerdo 257', 'localidades',
     'alcaldias locales', 'juntas administradoras locales', 'concejo de bogota', 'administracion distrital',
+    'decreto 352', 'tributos distritales', 'impuestos distritales', 'impuesto predial', 'industria y comercio',
+    'ica', 'reteica', 'hacienda distrital',
+  ],
+  'Sistema de Salud y ESE': [
+    'sistema general de seguridad social en salud', 'sgsss', 'ley 100', 'ley 1751', 'ley 1438', 'ley 1122',
+    'decreto 780', 'empresa social del estado', 'empresas sociales del estado', 'habilitacion de servicios',
+    'resolucion 3100', 'garantia de calidad', 'sogcs', 'pamec', 'acreditacion en salud', 'seguridad del paciente',
+    'historia clinica', 'facturacion en salud', 'facturacion de servicios de salud', 'glosas', 'rips', 'eps', 'ips',
+    'prestacion de servicios de salud', 'red de prestadores', 'urgencias', 'atencion primaria en salud',
+  ],
+  'Protección de Personas (UNP)': [
+    'unidad nacional de proteccion', 'unp', 'prevencion y proteccion', 'medidas de proteccion', 'esquema de proteccion',
+    'esquemas de proteccion', 'evaluacion del riesgo', 'riesgo extraordinario', 'cerrem', 'decreto 1066',
+    'decreto 4065', 'proteccion de personas', 'defensores de derechos humanos',
+  ],
+  'Vigilancia Sanitaria (INVIMA)': [
+    'invima', 'vigilancia sanitaria', 'inspeccion, vigilancia y control sanitario', 'registro sanitario',
+    'registros sanitarios', 'codigo sanitario', 'ley 9 de 1979', 'resolucion 2674', 'decreto 677', 'medidas sanitarias',
+    'buenas practicas de manufactura', 'bpm', 'alimentos', 'medicamentos', 'cosmeticos', 'dispositivos medicos',
+  ],
+  'Procuraduría General de la Nación': [
+    'procuraduria', 'ministerio publico', 'decreto 262', 'decreto ley 262', 'procurador general', 'procuradores',
+    'funcion preventiva', 'intervencion judicial', 'poder disciplinario preferente', 'vigilancia superior',
+    'personerias',
   ],
   'Políticas Sociales y Enfoque Diferencial': [
     'enfoque diferencial', 'politica social', 'politicas sociales', 'infancia', 'adolescencia', 'ley 1098',

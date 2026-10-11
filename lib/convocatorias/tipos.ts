@@ -23,11 +23,13 @@ export interface Convocatoria {
   nombre: string // nombre corto para tarjetas y títulos
   titulo: string // título SEO de la página
   entidad: string
+  fueraCnsc?: boolean // concurso propio de la entidad, no de la CNSC
   vacantes?: number
   vacantesAprox?: boolean // la cifra es "más de" o "cerca de" (oferta preliminar o cambiante)
   vacantesNota?: string // de dónde sale la cifra
   niveles: string
   estado: string // en qué va el proceso (con fecha de revisión en `revisado`)
+  fechaPrueba?: string // AAAA-MM-DD, solo si la prueba escrita ya tiene fecha oficial
   revisado: string // AAAA-MM-DD
   resumen: string
   pruebas?: PruebaConvocatoria[]

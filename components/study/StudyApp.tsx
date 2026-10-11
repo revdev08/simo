@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { ArrowLeft, Users } from 'lucide-react'
 import { AREAS_FUNCIONALES, NIVELES, sectionOf, type AreaId, type NivelId, type Question, type SectionId } from '@/lib/question-types'
 import SimulacroSession, { clearSimulacroState, loadSimulacroState, type SimulacroState } from './SimulacroSession'
@@ -15,6 +15,18 @@ import {
   minimoEliminatoria,
   poolDelPerfil,
 } from './simulacro-convocatoria'
+import {
+  agregarSimulacro,
+  CLAVE_ACTIVIDAD,
+  CLAVE_PERFIL,
+  CLAVE_SIMULACROS,
+  guardarMeta,
+  hoyISO,
+  separarProgreso,
+  sumarActividad,
+  type PerfilGuardado,
+  type ResumenSimulacro,
+} from './meta-progreso'
 
 export type { Question } from '@/lib/question-types'
 
@@ -23,6 +35,25 @@ type QuestionId = Question['id']
 const NIVEL_STORAGE_KEY = 'simo_nivel'
 const AREA_STORAGE_KEY = 'simo_area'
 const PROGRESS_STORAGE_KEY = 'simo_study_progress'
+const HORAS_STORAGE_KEY = 'simo_horas_semana'
+const SIN_CONVOCATORIA_KEY = 'simo_sin_convocatoria'
+const INICIO_STORAGE_KEY = 'simo_plan_inicio'
+
+// Lee y escribe preferencias del navegador sin romper si el almacenamiento no está disponible
+function leerLocal(clave: string): string | null {
+  if (typeof window === 'undefined') return null
+  try {
+    return localStorage.getItem(clave)
+  } catch {
+    return null
+  }
+}
+function escribirLocal(clave: string, valor: string | null) {
+  try {
+    if (valor === null) localStorage.removeItem(clave)
+    else localStorage.setItem(clave, valor)
+  } catch {}
+}
 // Nombre de la sesión que practica solo lo que se respondió mal
 const REPASO = 'Repaso de errores'
 
@@ -63,7 +94,7 @@ function readConvocatoriaIntent() {
   return buscarSeleccion(`${params.get('convocatoria')}:${params.get('perfil')}`)
 }
 
-function readLocalProgress(): ProgressData {
+function readLocalProgress(): unknown {
   try {
     const saved = localStorage.getItem(PROGRESS_STORAGE_KEY)
     return saved ? JSON.parse(saved) : {}
@@ -171,6 +202,16 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   // Convocatoria y perfil elegidos ("slug:perfil"): habilitan el simulacro con los pesos de ese proceso
   const [convocatoriaClave, setConvocatoriaClave] = useState<string | null>(() => readConvocatoriaIntent()?.clave ?? readSavedConvocatoria())
   const seleccion = useMemo(() => buscarSeleccion(convocatoriaClave), [convocatoriaClave])
+  // Eligió estudiar sin convocatoria (no se le vuelve a preguntar)
+  const [sinConvocatoria, setSinConvocatoria] = useState(() => leerLocal(SIN_CONVOCATORIA_KEY) === '1')
+  const [horasSemana, setHorasSemana] = useState(() => Number(leerLocal(HORAS_STORAGE_KEY)) || 6)
+  // Día en que eligió la convocatoria: desde ahí cuentan las semanas del plan
+  const [planInicio, setPlanInicio] = useState<string | null>(() => leerLocal(INICIO_STORAGE_KEY))
+  // Constancia (preguntas por día) e historial de simulacros: se guardan junto al progreso
+  const [actividad, setActividad] = useState<Record<string, number>>({})
+  const [simulacros, setSimulacros] = useState<ResumenSimulacro[]>([])
+  const metaRef = useRef<{ actividad: Record<string, number>; simulacros: ResumenSimulacro[] }>({ actividad: {}, simulacros: [] })
+  const actividadTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const visibleQuestions = useMemo(() => questions.filter((q) => appliesToNivel(q, nivel)), [questions, nivel])
 
@@ -183,7 +224,31 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       localStorage.setItem(CONVOCATORIA_STORAGE_KEY, elegida.clave)
       if (elegida.perfil.area) localStorage.setItem(AREA_STORAGE_KEY, elegida.perfil.area)
       if (elegida.perfil.nivel && !localStorage.getItem(NIVEL_STORAGE_KEY)) localStorage.setItem(NIVEL_STORAGE_KEY, elegida.perfil.nivel)
+      if (!localStorage.getItem(INICIO_STORAGE_KEY)) localStorage.setItem(INICIO_STORAGE_KEY, hoyISO())
+      localStorage.removeItem(SIN_CONVOCATORIA_KEY)
     } catch {}
+    const perfil: PerfilGuardado = {
+      convocatoria: elegida.clave,
+      nivel: readSavedNivel(),
+      area: elegida.perfil.area ?? readSavedArea(),
+      inicio: leerLocal(INICIO_STORAGE_KEY) ?? hoyISO(),
+    }
+    guardarMeta({ [CLAVE_PERFIL]: perfil })
+  }, [])
+
+  // Si quedó constancia sin enviar al cerrar la pestaña o salir del panel, se manda en ese momento
+  useEffect(() => {
+    const flush = () => {
+      if (!actividadTimer.current) return
+      clearTimeout(actividadTimer.current)
+      actividadTimer.current = null
+      guardarMeta({ [CLAVE_ACTIVIDAD]: metaRef.current.actividad })
+    }
+    window.addEventListener('pagehide', flush)
+    return () => {
+      window.removeEventListener('pagehide', flush)
+      flush()
+    }
   }, [])
 
   // Carga el progreso de la base de datos; si está vacía o no responde, usa el guardado en el navegador.
@@ -198,10 +263,13 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       window.history.replaceState(null, '', window.location.pathname)
       const savedNivel = readSavedNivel()
       if (pedidoErrores) {
-        const wrong = questions.filter((q) => appliesToNivel(q, savedNivel) && loaded[String(q.id)] === 'incorrect')
+        // ?practicar=errores&modulo=… repasa solo los errores de ese módulo
+        const wrong = questions.filter(
+          (q) => appliesToNivel(q, savedNivel) && loaded[String(q.id)] === 'incorrect' && (!pedidoModulo || q.modulo === pedidoModulo),
+        )
         if (!wrong.length) return
         setActiveModuleQuestions(shuffle(wrong))
-        setActiveModule(REPASO)
+        setActiveModule(pedidoModulo ? `${REPASO}: ${pedidoModulo}` : REPASO)
       } else if (pedidoModulo) {
         const needsNivel = questions.some((q) => q.modulo === pedidoModulo && q.nivel && !q.nivel.includes('todos'))
         if (needsNivel && !savedNivel) {
@@ -217,19 +285,46 @@ export default function StudyApp({ questions, userName }: { questions: Question[
     }
 
     const fetchProgress = async () => {
-      let loaded: ProgressData
+      let raw: unknown
       try {
         const res = await fetch('/api/progress')
         const data = res.ok ? (await res.json()).data : null
         if (data && Object.keys(data).length > 0) {
-          loaded = data
+          raw = data
           localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(data))
         } else {
-          loaded = readLocalProgress()
+          raw = readLocalProgress()
         }
       } catch (e) {
         console.error('Error fetching progress:', e)
-        loaded = readLocalProgress()
+        raw = readLocalProgress()
+      }
+      const { respuestas: loaded, meta } = separarProgreso(raw)
+      metaRef.current = { actividad: meta.actividad, simulacros: meta.simulacros }
+      setActividad(meta.actividad)
+      setSimulacros(meta.simulacros)
+      // En otro dispositivo pudo elegir convocatoria, nivel o área: si aquí no hay, se usan esos
+      const p = meta.perfil
+      if (p) {
+        const guardada = buscarSeleccion(p.convocatoria ?? null)
+        if (guardada && !readSavedConvocatoria() && leerLocal(SIN_CONVOCATORIA_KEY) !== '1') {
+          setConvocatoriaClave(guardada.clave)
+          escribirLocal(CONVOCATORIA_STORAGE_KEY, guardada.clave)
+          if (p.inicio && !leerLocal(INICIO_STORAGE_KEY)) {
+            setPlanInicio(p.inicio)
+            escribirLocal(INICIO_STORAGE_KEY, p.inicio)
+          }
+        }
+        const nivelGuardado = NIVELES.find((n) => n.id === p.nivel)?.id
+        if (!readSavedNivel() && nivelGuardado) {
+          setNivel(nivelGuardado)
+          escribirLocal(NIVEL_STORAGE_KEY, nivelGuardado)
+        }
+        const areaGuardada = AREAS_FUNCIONALES.find((a) => a.id === p.area)?.id
+        if (!readSavedArea() && areaGuardada) {
+          setArea(areaGuardada)
+          escribirLocal(AREA_STORAGE_KEY, areaGuardada)
+        }
       }
       setProgress(loaded)
       abrirPedido(loaded)
@@ -243,14 +338,48 @@ export default function StudyApp({ questions, userName }: { questions: Question[
     handleSaveProgressBatch({ [String(questionId)]: status })
   }
 
+  // Copia en el navegador: respuestas más constancia e historial (por si la base de datos no responde)
+  const guardarLocal = (respuestas: ProgressData) => {
+    escribirLocal(
+      PROGRESS_STORAGE_KEY,
+      JSON.stringify({ ...respuestas, [CLAVE_ACTIVIDAD]: metaRef.current.actividad, [CLAVE_SIMULACROS]: metaRef.current.simulacros }),
+    )
+  }
+
+  // Suma las preguntas de hoy y las envía unos segundos después (agrupa las de una misma sesión)
+  const registrarActividad = (n: number) => {
+    if (!n) return
+    const next = sumarActividad(metaRef.current.actividad, n)
+    metaRef.current = { ...metaRef.current, actividad: next }
+    setActividad(next)
+    if (actividadTimer.current) clearTimeout(actividadTimer.current)
+    actividadTimer.current = setTimeout(() => {
+      actividadTimer.current = null
+      guardarMeta({ [CLAVE_ACTIVIDAD]: metaRef.current.actividad })
+    }, 4000)
+  }
+
   const handleSaveProgressBatch = (entries: ProgressData) => {
+    registrarActividad(Object.keys(entries).length)
     setProgress((prev) => {
       const next = { ...prev, ...entries }
-      try {
-        localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(next))
-      } catch {}
+      guardarLocal(next)
       return next
     })
+  }
+
+  const registrarSimulacro = (resumen: ResumenSimulacro) => {
+    const next = agregarSimulacro(metaRef.current.simulacros, resumen)
+    metaRef.current = { ...metaRef.current, simulacros: next }
+    setSimulacros(next)
+    guardarLocal(progress)
+    guardarMeta({ [CLAVE_SIMULACROS]: next })
+  }
+
+  // El perfil (convocatoria, nivel, área) también se guarda en la cuenta, para "Mi progreso" y otros dispositivos
+  const guardarPerfil = (cambios: Partial<PerfilGuardado>) => {
+    const perfil: PerfilGuardado = { convocatoria: convocatoriaClave, nivel, area, inicio: planInicio ?? undefined, ...cambios }
+    guardarMeta({ [CLAVE_PERFIL]: perfil })
   }
 
   // Avance por módulo (solo con las preguntas que el usuario puede practicar)
@@ -316,7 +445,9 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       current: 0,
       startedAt: clock(),
       durationMs: picked.length * MINUTOS_POR_PREGUNTA * 60 * 1000,
-      ...(conv ? { titulo: `${conv.convocatoria.nombre} · ${conv.perfil.label}`, minimo: minimoEliminatoria(conv.convocatoria) } : {}),
+      ...(conv
+        ? { titulo: `${conv.convocatoria.nombre} · ${conv.perfil.label}`, minimo: minimoEliminatoria(conv.convocatoria), convocatoria: conv.clave }
+        : {}),
     }
     clearSimulacroState()
     setSavedSimulacro(null)
@@ -366,30 +497,46 @@ export default function StudyApp({ questions, userName }: { questions: Question[
     openSession(REPASO, shuffle(wrong))
   }
 
-  const chooseArea = (a: AreaId | null) => {
+  const chooseArea = (a: AreaId | null, guardar = true) => {
     setArea(a)
-    try {
-      if (a) localStorage.setItem(AREA_STORAGE_KEY, a)
-      else localStorage.removeItem(AREA_STORAGE_KEY)
-    } catch {}
+    escribirLocal(AREA_STORAGE_KEY, a)
+    if (guardar) guardarPerfil({ area: a })
   }
 
-  // Al elegir una convocatoria se sugiere el área de su perfil (el usuario puede cambiarla después)
+  // Al elegir una convocatoria se sugiere el área de su perfil (el usuario puede cambiarla después).
+  // El plan semanal empieza a contar desde hoy.
   const chooseConvocatoria = (clave: string | null) => {
     const elegida = buscarSeleccion(clave)
+    const cambia = (elegida?.clave ?? null) !== convocatoriaClave
     setConvocatoriaClave(elegida ? elegida.clave : null)
-    try {
-      if (elegida) localStorage.setItem(CONVOCATORIA_STORAGE_KEY, elegida.clave)
-      else localStorage.removeItem(CONVOCATORIA_STORAGE_KEY)
-    } catch {}
-    if (elegida?.perfil.area) chooseArea(elegida.perfil.area)
+    escribirLocal(CONVOCATORIA_STORAGE_KEY, elegida ? elegida.clave : null)
+    const inicio = elegida && cambia ? hoyISO() : planInicio
+    if (elegida && cambia) {
+      setPlanInicio(inicio)
+      escribirLocal(INICIO_STORAGE_KEY, inicio)
+    }
+    if (elegida) {
+      setSinConvocatoria(false)
+      escribirLocal(SIN_CONVOCATORIA_KEY, null)
+    }
+    if (elegida?.perfil.area) chooseArea(elegida.perfil.area, false)
+    guardarPerfil({ convocatoria: elegida?.clave ?? null, inicio: inicio ?? undefined, ...(elegida?.perfil.area ? { area: elegida.perfil.area } : {}) })
+  }
+
+  const omitirConvocatoria = () => {
+    setSinConvocatoria(true)
+    escribirLocal(SIN_CONVOCATORIA_KEY, '1')
+  }
+
+  const chooseHoras = (h: number) => {
+    setHorasSemana(h)
+    escribirLocal(HORAS_STORAGE_KEY, String(h))
   }
 
   const chooseNivel = (n: NivelId) => {
     setNivel(n)
-    try {
-      localStorage.setItem(NIVEL_STORAGE_KEY, n)
-    } catch {}
+    escribirLocal(NIVEL_STORAGE_KEY, n)
+    guardarPerfil({ nivel: n })
     if (pendingModule) {
       const modName = pendingModule
       setPendingModule(null)
@@ -404,6 +551,7 @@ export default function StudyApp({ questions, userName }: { questions: Question[
         questions={simulacro.questions}
         initialState={simulacro.state}
         onSaveProgress={handleSaveProgressBatch}
+        onFinish={registrarSimulacro}
         onExit={() => {
           setSimulacro(null)
           setSavedSimulacro(loadSimulacroState())
@@ -465,6 +613,13 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       convocatoria={seleccion}
       convocatoriaPoolSize={convocatoriaPoolSize}
       onChooseConvocatoria={chooseConvocatoria}
+      sinConvocatoria={sinConvocatoria}
+      onOmitirConvocatoria={omitirConvocatoria}
+      actividad={actividad}
+      simulacros={simulacros}
+      horasSemana={horasSemana}
+      onHorasSemana={chooseHoras}
+      planInicio={planInicio ?? undefined}
       onStartSimulacro={startSimulacro}
       onStartModule={(name) => startModule(name)}
       onReviewErrors={startReview}

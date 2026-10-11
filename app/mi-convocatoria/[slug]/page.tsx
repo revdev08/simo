@@ -152,7 +152,8 @@ export default async function ConvocatoriaPage({ params }: Props) {
               ))}
             </ul>
             <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
-              Los datos del proceso pueden cambiar: confirma siempre las fechas y los requisitos en SIMO y en el sitio de la CNSC.
+              Los datos del proceso pueden cambiar: confirma siempre las fechas y los requisitos{' '}
+              {c.fueraCnsc ? 'en el sitio de la entidad.' : 'en SIMO y en el sitio de la CNSC.'}
             </p>
           </section>
         </div>

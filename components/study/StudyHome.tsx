@@ -1,13 +1,16 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowRight, CircleCheck, RotateCcw, SlidersHorizontal, Target, Timer } from 'lucide-react'
+import { ArrowRight, ChevronDown, CircleCheck, ClipboardList, RotateCcw, SlidersHorizontal, Target, Timer } from 'lucide-react'
 import { AREAS_FUNCIONALES, MODULE_SECTIONS, NIVELES, type AreaId, type NivelId, type SectionId } from '@/lib/question-types'
 import { moduleIcon, SECTION_STYLE } from './module-meta'
 import { MINUTOS_POR_PREGUNTA, PESO_CON_AREA, PESO_SIN_AREA, SIMULACRO_OPCIONES } from './simulacro-config'
 import { formatDuration, type SimulacroState } from './SimulacroSession'
-import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
-import type { SeleccionConvocatoria } from './simulacro-convocatoria'
+import { minimoEliminatoria, type SeleccionConvocatoria } from './simulacro-convocatoria'
+import ConvocatoriaPicker from './ConvocatoriaPicker'
+import { PlanHero, PlanModulos, SemanaCard } from './PlanPanel'
+import { avanceDelPlan, diasParaPrueba, planSemanal, semanaDelPlan, siguientePaso } from './plan-progreso'
+import { preguntasEstaSemana, rachaActual, type ResumenSimulacro } from './meta-progreso'
 import { clock } from './attempts'
 import { ProgressBar } from './ui'
 
@@ -70,17 +73,13 @@ function StatCard({ label, value, hint, children }: { label: string; value: stri
 function ProfileCard({
   nivel,
   area,
-  convocatoria,
   onChooseNivel,
   onChooseArea,
-  onChooseConvocatoria,
 }: {
   nivel: NivelId | null
   area: AreaId | null
-  convocatoria: SeleccionConvocatoria | null
   onChooseNivel: (n: NivelId) => void
   onChooseArea: (a: AreaId | null) => void
-  onChooseConvocatoria: (clave: string | null) => void
 }) {
   const [editing, setEditing] = useState(!nivel)
 
@@ -93,11 +92,6 @@ function ProfileCard({
         <span className="text-sm font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
           {area ? `Área: ${areaInfo(area)?.label}` : 'Sin área funcional'}
         </span>
-        {convocatoria && (
-          <span className="max-w-full truncate text-sm font-semibold px-2.5 py-1 rounded-lg bg-brand-50 text-brand-800 dark:bg-brand-500/15 dark:text-brand-200">
-            {convocatoria.convocatoria.nombre} · {convocatoria.perfil.label}
-          </span>
-        )}
         <button type="button" onClick={() => setEditing(true)} className="ml-auto text-sm font-semibold text-brand-700 hover:text-brand-800 dark:text-brand-300 dark:hover:text-brand-200">
           Cambiar
         </button>
@@ -152,29 +146,6 @@ function ProfileCard({
             ))}
           </select>
         </div>
-        <div className="lg:col-span-2">
-          <label htmlFor="convocatoria-cargo" className="text-sm font-semibold text-slate-900 dark:text-white">
-            Tu convocatoria <span className="font-normal text-slate-500">(opcional)</span>
-          </label>
-          <p className="text-xs text-slate-500 dark:text-slate-400">Habilita un simulacro con los temas y pesos de ese proceso.</p>
-          <select
-            id="convocatoria-cargo"
-            value={convocatoria?.clave ?? ''}
-            onChange={(e) => onChooseConvocatoria(e.target.value || null)}
-            className="mt-2.5 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2.5 text-sm font-medium text-slate-800 dark:text-slate-200 focus:outline-2 focus:outline-brand-500"
-          >
-            <option value="">Ninguna</option>
-            {CONVOCATORIAS.map((c) => (
-              <optgroup key={c.slug} label={c.nombre}>
-                {c.perfiles.map((p) => (
-                  <option key={p.id} value={`${c.slug}:${p.id}`}>
-                    {c.nombre} · {p.label}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-        </div>
       </div>
       {nivel && (
         <div className="flex justify-end">
@@ -202,6 +173,13 @@ export default function StudyHome({
   convocatoria,
   convocatoriaPoolSize,
   onChooseConvocatoria,
+  sinConvocatoria,
+  onOmitirConvocatoria,
+  actividad,
+  simulacros,
+  horasSemana,
+  onHorasSemana,
+  planInicio,
   onStartSimulacro,
   onStartModule,
   onReviewErrors,
@@ -220,6 +198,13 @@ export default function StudyHome({
   convocatoria: SeleccionConvocatoria | null
   convocatoriaPoolSize: number
   onChooseConvocatoria: (clave: string | null) => void
+  sinConvocatoria: boolean // eligió estudiar en general
+  onOmitirConvocatoria: () => void
+  actividad: Record<string, number>
+  simulacros: ResumenSimulacro[]
+  horasSemana: number
+  onHorasSemana: (h: number) => void
+  planInicio?: string
   onStartSimulacro: (n: number, modo: 'general' | 'convocatoria') => void
   onStartModule: (name: string) => void
   onReviewErrors: () => void
@@ -243,6 +228,20 @@ export default function StudyHome({
       .join(', ')
   })()
 
+  // Con una convocatoria, el panel gira alrededor de su plan
+  const [eligiendo, setEligiendo] = useState(false)
+  const avance = convocatoria ? avanceDelPlan(convocatoria.perfil, modulesStats) : null
+  const siguiente = avance ? siguientePaso(avance) : null
+  const disponibles = Object.fromEntries(modulesStats.map((m) => [m.name, m.total]))
+  const semanal = convocatoria ? planSemanal(convocatoria.convocatoria, convocatoria.perfil, disponibles, horasSemana, planInicio) : null
+  const semana = semanal ? semanaDelPlan(semanal.plan, semanal.semanaActual) : null
+  const ultimoSimulacro = convocatoria ? [...simulacros].reverse().find((x) => x.convocatoria === convocatoria.clave) ?? null : null
+  const modulosPlan = new Set(avance?.modulos.map((m) => m.modulo))
+  const elegir = (clave: string | null) => {
+    onChooseConvocatoria(clave)
+    setEligiendo(false)
+  }
+
   const accuracy = accuracyOf(totalStats)
   const rec = recommend(modulesStats, area)
   const areaModulo = areaInfo(area)?.modulo
@@ -251,11 +250,16 @@ export default function StudyHome({
 
   const sectionMods = (id: SectionId) => {
     const sec = MODULE_SECTIONS.find((s) => s.id === id)!
-    const mods = (sec.modulos as readonly string[]).map((n) => modulesStats.find((m) => m.name === n)).filter((m): m is ModuleStat => !!m)
+    const mods = (sec.modulos as readonly string[])
+      .filter((n) => !modulosPlan.has(n))
+      .map((n) => modulesStats.find((m) => m.name === n))
+      .filter((m): m is ModuleStat => !!m)
     // El módulo del área elegida va primero
     return id === 'funcionales' && areaModulo ? [...mods].sort((a, b) => Number(b.name === areaModulo) - Number(a.name === areaModulo)) : mods
   }
-  const current = MODULE_SECTIONS.find((s) => s.id === section)!
+  // Con plan pueden quedar secciones sin módulos: no se muestran
+  const secciones = MODULE_SECTIONS.filter((s) => sectionMods(s.id).length > 0)
+  const current = secciones.find((s) => s.id === section) ?? secciones[0]
 
   return (
     <div className="space-y-8 sm:space-y-10 animate-enter">
@@ -264,11 +268,16 @@ export default function StudyHome({
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">{userName ? `Hola, ${userName}` : 'Hola'}</h1>
           <p className="mt-1 text-slate-600 dark:text-slate-400">
-            {totalStats.completed
-              ? `Llevas ${totalStats.completed} preguntas respondidas. Sigue así.`
-              : 'Empieza por un módulo o mide tu nivel con un simulacro.'}
+            {convocatoria
+              ? totalStats.completed
+                ? `Llevas ${totalStats.completed} preguntas respondidas. Esto es lo que te falta para ${convocatoria.convocatoria.nombre}.`
+                : `Tu plan para ${convocatoria.convocatoria.nombre} está listo. Empieza por lo que más pesa.`
+              : totalStats.completed
+                ? `Llevas ${totalStats.completed} preguntas respondidas. Sigue así.`
+                : 'Empieza por un módulo o mide tu nivel con un simulacro.'}
           </p>
         </div>
+        {!convocatoria && (
         <div className="grid grid-cols-3 gap-3 sm:gap-4">
           <StatCard label="Avance" value={`${totalStats.percent}%`} hint={`${totalStats.completed} de ${totalStats.total}`}>
             <ProgressBar value={totalStats.percent} className="mt-3" label="Avance total" />
@@ -286,16 +295,47 @@ export default function StudyHome({
             )}
           </StatCard>
         </div>
+        )}
       </div>
 
-      <ProfileCard
-        nivel={nivel}
-        area={area}
-        convocatoria={convocatoria}
-        onChooseNivel={onChooseNivel}
-        onChooseArea={onChooseArea}
-        onChooseConvocatoria={onChooseConvocatoria}
-      />
+      {/* El concurso: elegirlo o ver cómo vas en su plan */}
+      {eligiendo || (!convocatoria && !sinConvocatoria) ? (
+        <ConvocatoriaPicker
+          actual={convocatoria?.clave}
+          onElegir={elegir}
+          onOmitir={() => {
+            if (convocatoria) elegir(null)
+            onOmitirConvocatoria()
+            setEligiendo(false)
+          }}
+          onCancelar={eligiendo ? () => setEligiendo(false) : undefined}
+        />
+      ) : convocatoria && avance ? (
+        <PlanHero
+          seleccion={convocatoria}
+          avance={avance}
+          diasPrueba={diasParaPrueba(convocatoria.convocatoria)}
+          minimo={minimoEliminatoria(convocatoria.convocatoria) ?? null}
+          falladas={totalStats.incorrect}
+          ultimoSimulacro={ultimoSimulacro}
+          siguiente={siguiente}
+          onCambiar={() => setEligiendo(true)}
+          onStartModule={onStartModule}
+          onReviewErrors={onReviewErrors}
+        />
+      ) : (
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 rounded-2xl border border-dashed border-brand-300 dark:border-brand-500/40 bg-brand-50/50 dark:bg-brand-500/5 px-4 py-3.5">
+          <ClipboardList className="hidden sm:block w-5 h-5 shrink-0 text-brand-600 dark:text-brand-400" aria-hidden />
+          <p className="flex-1 text-sm text-slate-700 dark:text-slate-300">
+            ¿Te presentas a la DIAN, al concurso docente, a una ESE u otro proceso grande? Elige tu concurso y el panel te arma el plan con lo que te van a evaluar.
+          </p>
+          <button type="button" onClick={() => setEligiendo(true)} className="shrink-0 rounded-xl bg-brand-700 hover:bg-brand-800 text-white text-sm font-semibold px-4 py-2">
+            Elegir concurso
+          </button>
+        </div>
+      )}
+
+      <ProfileCard nivel={nivel} area={area} onChooseNivel={onChooseNivel} onChooseArea={onChooseArea} />
 
       {/* Acciones principales */}
       <div className="grid lg:grid-cols-5 gap-4 sm:gap-5">
@@ -412,6 +452,20 @@ export default function StudyHome({
           </div>
         </section>
 
+        {convocatoria && semanal ? (
+          <div className="min-w-0 lg:col-span-2 flex">
+            <SemanaCard
+              semana={semana}
+              semanaActual={semanal.semanaActual}
+              semanas={semanal.semanas}
+              hechasSemana={preguntasEstaSemana(actividad)}
+              racha={rachaActual(actividad)}
+              horasSemana={horasSemana}
+              onHoras={onHorasSemana}
+              onStartModule={onStartModule}
+            />
+          </div>
+        ) : (
         <section aria-labelledby="sigue-title" className="min-w-0 lg:col-span-2 rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-7 flex flex-col">
           <p id="sigue-title" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 dark:text-slate-400">
             <Target className="w-4 h-4" aria-hidden /> Sigue estudiando
@@ -460,18 +514,30 @@ export default function StudyHome({
             <p className="mt-4 text-slate-600 dark:text-slate-400">Elige un módulo abajo para empezar.</p>
           )}
         </section>
+        )}
       </div>
 
-      {/* Módulos por sección */}
-      <section aria-labelledby="modulos-title" className="space-y-5">
-        <div>
+      {convocatoria && avance && <PlanModulos avance={avance} onStartModule={onStartModule} />}
+
+      {/* Módulos por sección (con plan: los que no están en él, plegados) */}
+      {current && (
+      <details open={!convocatoria} className="group/otros">
+        <summary className={convocatoria ? 'cursor-pointer list-none rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900 px-5 py-4 flex items-center justify-between gap-3 hover:border-brand-300' : 'hidden'}>
+          <span>
+            <span className="block font-semibold text-slate-900 dark:text-white">Otros módulos</span>
+            <span className="block text-sm text-slate-500 dark:text-slate-400">Temas fuera de tu plan. Practícalos si tu empleo también los pide.</span>
+          </span>
+          <ChevronDown className="w-5 h-5 text-slate-400 transition-transform group-open/otros:rotate-180" aria-hidden />
+        </summary>
+      <section aria-labelledby="modulos-title" className={`space-y-5 ${convocatoria ? 'mt-5' : ''}`}>
+        <div className={convocatoria ? 'sr-only' : ''}>
           <h2 id="modulos-title" className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Estudiar por módulo</h2>
           <p className="mt-1 text-sm sm:text-base text-slate-600 dark:text-slate-400">Practica un tema y mira la explicación de cada respuesta al instante.</p>
         </div>
 
         <div role="tablist" aria-label="Tipo de competencia" className="grid grid-cols-2 sm:flex gap-1 rounded-xl bg-slate-200/60 dark:bg-slate-900 p-1 sm:w-fit">
-          {MODULE_SECTIONS.map((s) => {
-            const selected = section === s.id
+          {secciones.map((s) => {
+            const selected = current?.id === s.id
             const count = sectionMods(s.id).reduce((acc, m) => acc + m.total, 0)
             return (
               <button
@@ -543,6 +609,8 @@ export default function StudyHome({
           </div>
         </div>
       </section>
+      </details>
+      )}
     </div>
   )
 }
