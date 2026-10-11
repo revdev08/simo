@@ -237,9 +237,9 @@ export const CONVOCATORIAS: Convocatoria[] = [
       },
     ],
     cobertura:
-      'Pedagogía y normativa: evaluación de los aprendizajes (SIEE), educación inclusiva, convivencia escolar, competencias del manual de funciones (Resolución 3842 de 2022), primaria, preescolar y orientación, y la carrera del Decreto Ley 1278. Saber disciplinar con los Estándares Básicos del MEN: primaria (matemáticas, lenguaje y ciencias), matemáticas, lengua castellana y ciencias naturales de secundaria. Para directivos, gestión escolar. Además, lectura crítica y razonamiento cuantitativo.',
+      'Pedagogía y normativa: evaluación de los aprendizajes (SIEE), educación inclusiva, convivencia escolar, competencias del manual de funciones (Resolución 3842 de 2022), primaria, preescolar y orientación, y la carrera del Decreto Ley 1278. Saber disciplinar con los Estándares Básicos del MEN: primaria (matemáticas, lenguaje y ciencias), matemáticas, lengua castellana y ciencias naturales y sociales de secundaria. Para directivos, gestión escolar. Además, lectura crítica y razonamiento cuantitativo.',
     faltantes:
-      'Aún no cubrimos el saber disciplinar de inglés, educación física, artística, tecnología ni preescolar como área, ni la prueba psicotécnica. Ciencias sociales de secundaria tiene todavía pocas preguntas.',
+      'Aún no cubrimos el saber disciplinar de inglés, educación física, artística, tecnología ni preescolar como área, ni la prueba psicotécnica. Ciencias naturales y sociales de secundaria tienen 20 preguntas cada una por ahora.',
     fuentes: [
       {
         label: 'Proyectos de acuerdo y OPEC preliminar (CNSC)',
