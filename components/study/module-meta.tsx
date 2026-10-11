@@ -1,0 +1,71 @@
+// Ícono y colores de cada módulo y sección en el panel
+import {
+  Archive,
+  BookOpen,
+  BookOpenText,
+  Briefcase,
+  Building2,
+  Calculator,
+  FilePen,
+  Gavel,
+  HardHat,
+  Headset,
+  HeartHandshake,
+  Landmark,
+  Laptop,
+  Monitor,
+  Scale,
+  ScrollText,
+  ShieldCheck,
+  Users,
+  Wallet,
+  type LucideIcon,
+} from 'lucide-react'
+import type { SectionId } from '@/lib/question-types'
+
+const MODULE_ICONS: Record<string, LucideIcon> = {
+  'Constitución y Estructura del Estado': Landmark,
+  'Empleo Público y Carrera Administrativa': Briefcase,
+  'Derecho de Petición y Procedimiento Administrativo': ScrollText,
+  'Transparencia, Datos Personales y Archivo': ShieldCheck,
+  'Disciplinario y Anticorrupción': Gavel,
+  'Gestión Pública: MIPG, Presupuesto y Contratación': Building2,
+  'Atención al Ciudadano': Headset,
+  'Talento Humano': Users,
+  'Contratación Estatal Aplicada': FilePen,
+  'Gestión Jurídica': Scale,
+  'Gestión Financiera y Presupuestal': Wallet,
+  'Seguridad y Salud en el Trabajo': HardHat,
+  'Gestión Documental': Archive,
+  'TIC y Gobierno Digital': Monitor,
+  'Competencias Comportamentales': HeartHandshake,
+  'Razonamiento Lógico y Cuantitativo': Calculator,
+  'Comprensión Lectora': BookOpenText,
+  'Herramientas de Oficina y Seguridad Digital': Laptop,
+}
+
+export const moduleIcon = (modulo: string): LucideIcon => MODULE_ICONS[modulo] ?? BookOpen
+
+// Un color por sección: solo en el ícono y la barra, para que el resto se mantenga sobrio
+export const SECTION_STYLE: Record<SectionId, { tile: string; bar: string; tab: string }> = {
+  generales: {
+    tile: 'bg-brand-50 text-brand-700 dark:bg-brand-500/15 dark:text-brand-300',
+    bar: 'bg-brand-600 dark:bg-brand-500',
+    tab: 'Generales',
+  },
+  funcionales: {
+    tile: 'bg-teal-50 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300',
+    bar: 'bg-teal-600 dark:bg-teal-500',
+    tab: 'Funcionales',
+  },
+  comportamentales: {
+    tile: 'bg-violet-50 text-violet-700 dark:bg-violet-500/15 dark:text-violet-300',
+    bar: 'bg-violet-600 dark:bg-violet-500',
+    tab: 'Comportamentales',
+  },
+  aptitudes: {
+    tile: 'bg-amber-50 text-amber-700 dark:bg-amber-500/15 dark:text-amber-300',
+    bar: 'bg-amber-500',
+    tab: 'Aptitudes',
+  },
+}

@@ -21,6 +21,7 @@ export function saveProgress(progress: Record<string, 'correct' | 'incorrect'>) 
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ progress }),
+    keepalive: true,
   }).catch((err) => console.error('Error saving progress to DB:', err))
 }
 

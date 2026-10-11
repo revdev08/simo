@@ -2,7 +2,7 @@
 
 import React, { useMemo } from 'react'
 import type { ReportQuestion } from '@/lib/question-types'
-import { ArrowLeft, CheckCircle, XCircle, BarChart3, AlertTriangle, TrendingUp, Award } from 'lucide-react'
+import { CheckCircle, XCircle, BarChart3, AlertTriangle, TrendingUp, Award } from 'lucide-react'
 import Link from 'next/link'
 
 interface ReportViewProps {
@@ -87,22 +87,8 @@ export default function ReportView({ questions, progress }: ReportViewProps) {
   }
 
   return (
-    <div className="space-y-8 animate-in fade-in duration-500">
+    <div className="space-y-8">
       
-      {/* Header with Back button */}
-      <div className="flex items-center justify-between bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200/60 dark:border-slate-800">
-        <Link 
-          href="/dashboard"
-          className="flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors px-4 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800"
-        >
-          <ArrowLeft className="w-4 h-4" /> Volver al Dashboard
-        </Link>
-        <div className="flex items-center gap-2 px-4">
-          <BarChart3 className="w-5 h-5 text-indigo-500" />
-          <span className="font-bold text-slate-900 dark:text-white">Reporte de Rendimiento</span>
-        </div>
-      </div>
-
       {/* Main KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white shadow-lg shadow-indigo-500/20 flex flex-col justify-between relative overflow-hidden">
