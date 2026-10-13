@@ -1,12 +1,12 @@
 import 'server-only'
 import { currentUser } from '@clerk/nextjs/server'
 
-function correosAdmin() {
-  return (process.env.ADMIN_EMAILS ?? '')
-    .split(',')
-    .map((correo) => correo.trim().toLowerCase())
-    .filter(Boolean)
-}
+// function correosAdmin() {
+//   return (process.env.ADMIN_EMAILS ?? '')
+//     .split(',')
+//     .map((correo) => correo.trim().toLowerCase())
+//     .filter(Boolean)
+// }
 
 export function emailEsAdmin(email: string): boolean {
   return correosAdmin().includes(email.trim().toLowerCase())
@@ -14,12 +14,12 @@ export function emailEsAdmin(email: string): boolean {
 
 // Correos con acceso al panel de administración: ADMIN_EMAILS, separados por comas.
 // Son también el equipo que publica en TikTok (/admin/tiktok).
-// export function correosAdmin(): string[] {
-//   return (process.env.ADMIN_EMAILS ?? '')
-//     .split(',')
-//     .map((c) => c.trim().toLowerCase())
-//     .filter(Boolean)
-// }
+export function correosAdmin(): string[] {
+  return (process.env.ADMIN_EMAILS ?? '')
+    .split(',')
+    .map((c) => c.trim().toLowerCase())
+    .filter(Boolean)
+}
 
 // Sin la variable no entra nadie, y solo cuentan los correos verificados en Clerk.
 export async function esAdmin(): Promise<boolean> {
