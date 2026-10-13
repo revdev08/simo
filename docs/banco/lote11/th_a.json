@@ -1,0 +1,1092 @@
+[
+  {
+    "id": "TC-TH-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Cómputo de los días hábiles de vacaciones y fecha de reintegro",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 8"
+    ],
+    "texto_fuente": "ARTÍCULO 8. De las vacaciones. Los empleados públicos y trabajadores oficiales tienen derecho a quince (15) días hábiles de vacaciones por cada año de servicios, salvo lo que se disponga en normas o estipulaciones especiales. En los organismos cuya jornada semanal se desarrolle entre lunes y viernes, el sábado no se computará como día hábil para efecto de vacaciones.",
+    "pregunta": "La auxiliar administrativa de talento humano de una superintendencia proyecta la resolución de vacaciones de un técnico. En la entidad se trabaja de lunes a viernes. El técnico disfrutará los 15 días hábiles de su periodo de vacaciones a partir del martes 1 de diciembre de 2026, y en ese mes son festivos el martes 8 y el viernes 25. ¿Qué día debe señalar la resolución para que el técnico se reintegre a sus labores?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El miércoles 16 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta 15 días calendario, del 1 al 15 de diciembre. Las vacaciones son de 15 días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "El lunes 21 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta los sábados 5 y 12 como días de vacaciones; así el día 15 sería el viernes 18. En una entidad que trabaja de lunes a viernes, el sábado no se computa como día hábil para efecto de vacaciones."
+      },
+      {
+        "id": "C",
+        "texto": "El martes 22 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta el festivo del 8 de diciembre como día de vacaciones; así el día 15 sería el lunes 21. Los festivos no son días hábiles."
+      },
+      {
+        "id": "D",
+        "texto": "El miércoles 23 de diciembre de 2026.",
+        "explicacion": "Correcta. Los 15 días hábiles son el 1, 2, 3, 4, 7, 9, 10, 11, 14, 15, 16, 17, 18, 21 y 22 de diciembre, sin sábados, domingos ni el festivo del 8. El último día de vacaciones es el martes 22, y el reintegro, el miércoles 23."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: 15 días hábiles desde el martes 1 de diciembre de 2026, en una entidad que trabaja de lunes a viernes y con el festivo del 8 de diciembre. Regla: el art. 8 del Decreto Ley 1045 de 1978 da 15 días hábiles de vacaciones por año de servicio y dispone que, si la jornada es de lunes a viernes, el sábado no se computa como día hábil. Cálculo: sin fines de semana ni el 8 de diciembre, el día hábil 15 es el martes 22. Conclusión: se reintegra el miércoles 23 de diciembre.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Factores y cuantía de la prima de vacaciones",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 17",
+      "art. 25"
+    ],
+    "texto_fuente": "ARTÍCULO 17. De los factores salariales para la liquidación de vacaciones y prima de vacaciones. Para efectos de liquidar tanto el descanso remunerado por concepto de vacaciones como la prima de vacaciones de que trata este decreto, se tendrán en cuenta los siguientes factores de salario, siempre que correspondan al empleado en la fecha en la cual inicie el disfrute de aquellas: a) La asignación básica mensual señalada para el respectivo cargo; b) Los incrementos de remuneración a que se refieren los artículos 49 y 97 del Decreto-Ley 1042 de 1978; c) Los gastos de representación; d) La prima técnica; [...] e) Los auxilios de alimentación y transporte; f) La prima de servicios; g) La bonificación por servicios prestado. [...] ARTÍCULO 25. De la cuantía de la prima de vacaciones. La prima de vacaciones será equivalente a quince días de salario por cada año de servicio.",
+    "pregunta": "El técnico de nómina de un establecimiento público del orden nacional liquida la prima de vacaciones de una auxiliar administrativa que empieza a disfrutar sus vacaciones el lunes 9 de noviembre de 2026. A esa fecha, la nómina de ella registra estos valores mensuales: asignación básica, $2.400.000; doceava parte de la prima de servicios, $100.000; doceava parte de la bonificación por servicios prestados, $70.000; promedio de horas extras, $350.000, y viáticos pagados el último mes, $500.000. No devenga ningún otro concepto. ¿Cuál es el valor de la prima de vacaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.200.000.",
+        "explicacion": "Incorrecta. Toma solo la asignación básica (2.400.000 / 30 × 15). La prima de servicios y la bonificación por servicios prestados también son factores de la prima de vacaciones."
+      },
+      {
+        "id": "B",
+        "texto": "$1.285.000.",
+        "explicacion": "Correcta. Son factores la asignación básica, la prima de servicios y la bonificación por servicios prestados: 2.400.000 + 100.000 + 70.000 = 2.570.000. Quince días de salario: 2.570.000 / 30 × 15 = 1.285.000."
+      },
+      {
+        "id": "C",
+        "texto": "$1.460.000.",
+        "explicacion": "Incorrecta. Suma también las horas extras (2.920.000 / 30 × 15). Las horas extras no están en la lista de factores para liquidar las vacaciones y su prima."
+      },
+      {
+        "id": "D",
+        "texto": "$1.710.000.",
+        "explicacion": "Incorrecta. Suma todos los pagos, incluidos horas extras y viáticos (3.420.000 / 30 × 15). Ninguno de esos dos conceptos es factor de la prima de vacaciones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la nómina registra asignación básica, doceavas de la prima de servicios y de la bonificación por servicios prestados, horas extras y viáticos. Reglas: el art. 17 del Decreto Ley 1045 de 1978 fija los factores de la prima de vacaciones (incluye la asignación básica, la prima de servicios y la bonificación; no las horas extras ni los viáticos), y el art. 25 la fija en 15 días de salario por año. Cálculo: 2.570.000 / 30 × 15 = 1.285.000. Conclusión: $1.285.000.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Causación de las vacaciones: tiempo que se computa y tiempo que no",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1045 de 1978 y Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto Ley 1045 de 1978, art. 8 inc. 1",
+      "Decreto Ley 1045 de 1978, art. 22 lit. b",
+      "Decreto 1083 de 2015, art. 2.2.5.5.3 parágrafo (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.5.5.5 inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.5.5.7 inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 8. De las vacaciones. Los empleados públicos y trabajadores oficiales tienen derecho a quince (15) días hábiles de vacaciones por cada año de servicios, salvo lo que se disponga en normas o estipulaciones especiales. [...] ARTÍCULO 22. De los eventos que no interrumpen el tiempo de servicio. Para los efectos de las vacaciones, no se considera interrumpido el tiempo de servicio cuando la suspensión de labores sea motivada: [...] b) Por el goce de licencia de maternidad; [...] Durante las licencias el empleado conserva su calidad de servidor público [...] La licencia ordinaria es aquella que se otorga al empleado por solicitud propia y sin remuneración, hasta por sesenta (60) días hábiles al año, continuos o discontinuos. [...] El tiempo que duren las licencias no remuneradas no es computable como tiempo de servicio activo y durante el mismo no se pagará la remuneración fijada para el empleo.",
+    "pregunta": "Una profesional ingresó a un ministerio el lunes 1 de septiembre de 2025 y no ha disfrutado vacaciones. Desde entonces tuvo dos novedades: una licencia de maternidad de 18 semanas, del lunes 2 de febrero al domingo 7 de junio de 2026, y una licencia ordinaria del miércoles 1 al jueves 30 de julio de 2026. La técnica de nómina debe establecer desde qué fecha puede concedérsele el disfrute de su primer periodo de vacaciones. ¿Cuál es esa fecha?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 1 de septiembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta el mes de licencia ordinaria como tiempo de servicio. El tiempo de las licencias no remuneradas no es computable como servicio activo."
+      },
+      {
+        "id": "B",
+        "texto": "El 1 de octubre de 2026.",
+        "explicacion": "Correcta. La licencia de maternidad no interrumpe el tiempo de servicio para vacaciones, pero los 30 días de licencia ordinaria (del 1 al 30 de julio) no se computan. El año, que se habría completado el 31 de agosto de 2026, se corre 30 días: se completa el 30 de septiembre, y desde el 1 de octubre puede concederse el disfrute."
+      },
+      {
+        "id": "C",
+        "texto": "El 4 de febrero de 2027.",
+        "explicacion": "Incorrecta. Descuenta también las 18 semanas (126 días) de licencia de maternidad. Para efectos de vacaciones, el goce de esa licencia no interrumpe el tiempo de servicio."
+      },
+      {
+        "id": "D",
+        "texto": "El 31 de julio de 2027.",
+        "explicacion": "Incorrecta. Vuelve a contar el año desde el fin de la licencia ordinaria, como si esta rompiera el vínculo. Durante la licencia la servidora conserva su calidad de servidora pública: la licencia solo resta sus propios 30 días y lo servido antes se conserva."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: ingresó el 1/9/2025, tuvo licencia de maternidad y 30 días de licencia ordinaria (1 al 30 de julio de 2026). Reglas: el art. 8 del Decreto Ley 1045 da 15 días hábiles por año de servicio; su art. 22 dice que la licencia de maternidad no interrumpe ese tiempo, y el art. 2.2.5.5.7 del Decreto 1083 excluye el tiempo de las licencias no remuneradas, como la ordinaria. Cálculo: el año se habría cumplido el 31/8/2026; con 30 días más, el 30/9/2026. Conclusión: desde el 1 de octubre de 2026.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-034",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Tiempo servido en otra entidad y solución de continuidad",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 2",
+      "art. 8 inc. 2",
+      "art. 10"
+    ],
+    "texto_fuente": "ARTÍCULO 2. De las entidades de la administración pública. Para los efectos de este Decreto se entiende por entidades de la administración pública del orden nacional de la Presidencia de la República, los ministerios, departamentos administrativos y superintendencias, los establecimientos públicos y las unidades administrativas especiales. [...] En los organismos cuya jornada semanal se desarrolle entre lunes y viernes, el sábado no se computará como día hábil para efecto de vacaciones. [...] ARTÍCULO 10. Del tiempo de servicios para adquirir el derecho a vacaciones. Para el reconocimiento y pago de vacaciones se computará el tiempo servido en todos los organismos a que se refiere el artículo 2o. de este Decreto, siempre que no haya solución de continuidad. Se entenderá que hubo solución de continuidad cuando medien más de quince días hábiles de interrupción en el servicio a una y otra entidad.",
+    "pregunta": "Un profesional trabajó ocho meses en un ministerio; su último día de servicio fue el martes 30 de junio de 2026, y el ministerio no le reconoció en dinero vacaciones por ese tiempo. Tomó posesión en una superintendencia el jueves 23 de julio de 2026. Las dos entidades trabajan de lunes a viernes, y en julio de 2026 el único festivo fue el lunes 20. La técnica de talento humano de la superintendencia debe registrar si esos ocho meses cuentan para las vacaciones del profesional. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que se suman, porque la interrupción fue de quince días hábiles y no pasó del límite.",
+        "explicacion": "Correcta. Del 1 al 22 de julio hubo 15 días hábiles sin servicio: las dos entidades trabajan de lunes a viernes, así que los sábados no cuentan, y el lunes 20 fue festivo. Solo hay solución de continuidad cuando la interrupción supera 15 días hábiles, así que el tiempo del ministerio se suma."
+      },
+      {
+        "id": "B",
+        "texto": "Que no se suman, porque la interrupción fue de dieciséis días hábiles y pasó del límite.",
+        "explicacion": "Incorrecta. Llega a 16 días porque cuenta como hábil el lunes 20 de julio, que fue festivo. Sin ese día son 15, que no superan el límite."
+      },
+      {
+        "id": "C",
+        "texto": "Que no se suman, porque la interrupción fue de veintidós días y pasó del límite.",
+        "explicacion": "Incorrecta. La interrupción se mide en días hábiles, no calendario. Los 22 días calendario equivalen a 15 hábiles."
+      },
+      {
+        "id": "D",
+        "texto": "Que se suman, porque entre entidades nacionales el tiempo se acumula sin importar la pausa.",
+        "explicacion": "Incorrecta. La acumulación exige que no haya solución de continuidad: si la interrupción hubiera superado 15 días hábiles, el tiempo del ministerio no se sumaría."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: último día en el ministerio el 30/6/2026 y posesión en la superintendencia el 23/7/2026; ambas son entidades nacionales que trabajan de lunes a viernes. Regla: el art. 10 del Decreto Ley 1045 suma el tiempo servido si no hay solución de continuidad, que existe cuando la interrupción supera 15 días hábiles, y en esas entidades el sábado no es hábil (art. 8). Cálculo: del 1 al 22 de julio hay 15 días hábiles; el festivo del 20 cambia el resultado, pues sin descontarlo serían 16. Conclusión: los ocho meses se suman.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Interrupción de las vacaciones por incapacidad y reanudación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 8 inc. 2",
+      "art. 15 lit. b",
+      "art. 16"
+    ],
+    "texto_fuente": "En los organismos cuya jornada semanal se desarrolle entre lunes y viernes, el sábado no se computará como día hábil para efecto de vacaciones. [...] ARTÍCULO 15. De la interrupción de las vacaciones. El disfrute de las vacaciones se interrumpirá cuando se configure alguna de las siguientes causales: [...] b) La incapacidad ocasionada por enfermedad o accidente de trabajo, siempre que se acredite con certificado médico expedido por la entidad de previsión a la cual esté afiliado el empleado o trabajador, [...] ARTÍCULO 16. Del disfrute de las vacaciones interrumpidas. Cuando ocurra interrupción justificada en el goce de vacaciones ya iniciadas, el beneficiario tiene derecho a reanudarlas por el tiempo que falte para completar su disfrute y desde la fecha que oportunamente se señale para tal fin. La interrupción, así como la reanudación de las vacaciones, deberán decretarse mediante resolución motivada expedida por el jefe de la entidad o por el funcionario en quien se haya delegado tal facultad.",
+    "pregunta": "Un auxiliar administrativo de un establecimiento público del orden nacional empezó sus 15 días hábiles de vacaciones el lunes 3 de agosto de 2026; la entidad trabaja de lunes a viernes. El martes 11 de agosto, su EPS le expidió una incapacidad por enfermedad general del 11 al 15 de agosto. Por resolución motivada, la entidad interrumpió las vacaciones y dispuso que las reanudara el primer día hábil siguiente al fin de la incapacidad. En agosto fueron festivos el viernes 7 y el lunes 17. La técnica de talento humano registra la novedad. ¿Qué día debe reintegrarse el auxiliar a sus labores?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El miércoles 26 de agosto de 2026.",
+        "explicacion": "Incorrecta. Es la fecha que resultaría si las vacaciones hubieran seguido corriendo durante la incapacidad. La incapacidad certificada por la EPS interrumpe el disfrute."
+      },
+      {
+        "id": "B",
+        "texto": "El lunes 31 de agosto de 2026.",
+        "explicacion": "Incorrecta. Reanuda el lunes 17 de agosto, que fue festivo; con 10 días desde esa fecha, el último sería el viernes 28. El primer día hábil después del 15 de agosto es el martes 18."
+      },
+      {
+        "id": "C",
+        "texto": "El martes 1 de septiembre de 2026.",
+        "explicacion": "Correcta. Antes de la incapacidad disfrutó 5 días hábiles (3, 4, 5, 6 y 10 de agosto; el 7 fue festivo). Le faltaban 10, que reanuda el martes 18: del 18 al 21, del 24 al 28 y el 31 de agosto. Se reintegra el martes 1 de septiembre."
+      },
+      {
+        "id": "D",
+        "texto": "El martes 8 de septiembre de 2026.",
+        "explicacion": "Incorrecta. Vuelve a contar 15 días hábiles desde la reanudación. Las vacaciones se reanudan solo por el tiempo que faltaba para completar el disfrute."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: incapacidad certificada por la EPS del 11 al 15 de agosto, en medio de las vacaciones iniciadas el 3 de agosto. Reglas: el art. 15 lit. b del Decreto Ley 1045 interrumpe el disfrute por incapacidad acreditada, y el art. 16 da derecho a reanudarlo por el tiempo que falte. Cálculo: disfrutó 5 días hábiles (el 7 fue festivo); los 10 restantes van del martes 18 (el 17 fue festivo) al lunes 31 de agosto. Conclusión: se reintegra el martes 1 de septiembre.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: licencias",
+    "subtema": "Salario y aportes en la licencia ordinaria y en la suspensión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.5 inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.5.7 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.5.47 inc. 2 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.5.5.5 Licencia ordinaria. La licencia ordinaria es aquella que se otorga al empleado por solicitud propia y sin remuneración, [...] ARTÍCULO 2.2.5.5.7 Cómputo y remuneración del tiempo de servicio en licencias no remuneradas. El tiempo que duren las licencias no remuneradas no es computable como tiempo de servicio activo y durante el mismo no se pagará la remuneración fijada para el empleo. No obstante, durante el tiempo de la licencia no remunerada la entidad deberá seguir pagando los aportes al Sistema Integral de Seguridad Social, en la proporción que por ley le corresponde. [...] El tiempo que dure la suspensión no es computable como tiempo de servicio para ningún efecto y durante el mismo no se cancelará la remuneración fijada para el empleo. No obstante, durante este tiempo la entidad deberá seguir cotizando al Sistema Integral de Seguridad Social, en la proporción que por ley le corresponde.",
+    "pregunta": "La técnica de nómina de una gobernación prepara la nómina de octubre de 2026 y tiene dos novedades que cubren todo el mes: Pedro, profesional, está en licencia ordinaria, y Lucía, auxiliar, está suspendida provisionalmente en el ejercicio del cargo por orden de la oficina de control disciplinario, y el proceso sigue en curso. ¿Cómo debe registrar a los dos en la nómina?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pagar el salario a Lucía mientras no haya fallo, y a Pedro no pagarle salario ni aportes.",
+        "explicacion": "Incorrecta. Durante la suspensión no se paga la remuneración; lo dejado de percibir solo se le pagará si el proceso termina a su favor. Y aunque Pedro no recibe salario, la entidad sigue pagando sus aportes."
+      },
+      {
+        "id": "B",
+        "texto": "Sin salario para los dos, y los aportes a seguridad social solo por Lucía.",
+        "explicacion": "Incorrecta. Supone que la licencia ordinaria libera a la entidad de los aportes. Durante las licencias no remuneradas la entidad sigue pagándolos en la proporción que le corresponde."
+      },
+      {
+        "id": "C",
+        "texto": "Sin salario para los dos, y los aportes a cargo de la entidad por cada uno de ellos.",
+        "explicacion": "Correcta. Ni en la licencia ordinaria, que es no remunerada, ni en la suspensión se paga la remuneración; pero en las dos situaciones la entidad sigue aportando al Sistema Integral de Seguridad Social en la proporción que por ley le corresponde."
+      },
+      {
+        "id": "D",
+        "texto": "Sin salario para los dos, y los aportes a seguridad social solo por Pedro.",
+        "explicacion": "Incorrecta. Supone que, como el tiempo de suspensión no se computa para ningún efecto, tampoco hay aportes. La norma ordena seguir cotizando durante la suspensión."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Datos decisivos: Pedro está en licencia ordinaria y Lucía, suspendida provisionalmente, durante todo el mes. Reglas: la licencia ordinaria es sin remuneración (art. 2.2.5.5.5 del Decreto 1083); en las licencias no remuneradas no se paga salario, pero la entidad sigue pagando los aportes (art. 2.2.5.5.7), y lo mismo ocurre en la suspensión (art. 2.2.5.5.47). Conclusión: ninguno recibe salario y la entidad paga por los dos los aportes que le corresponden.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: comisiones",
+    "subtema": "Viáticos y CDP en la comisión de servicios dentro de la misma ciudad",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.24 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.5.27 incs. 1 y 2 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.5.5.24 Contenido del acto administrativo que confiere la comisión. El acto administrativo que confiere la comisión señalará: 1. El objetivo de la misma. 2. Si procede el reconocimiento de viáticos, cuando haya lugar al pago de los mismos. 3. La duración. 4. El organismo o entidad que sufragará los viáticos o gastos de transporte, cuando a ello haya lugar, 5. Número del certificado de disponibilidad presupuestal o fuente del gasto. Este último requisito no se exigirá cuando la comisión no demande erogaciones del Tesoro. [...] El empleado en comisión de servicios en una sede diferente a la habitual tendrá derecho al reconocimiento de la remuneración mensual que corresponde al cargo que desempeña y al pago de viáticos y, además, a gastos de transporte, cuando estos últimos se causen fuera del perímetro urbano. [...] Cuando la totalidad de los gastos que genere la comisión de servicios sean asumidos por otro organismo o entidad no habrá lugar al pago de viáticos y gastos de transporte. Tampoco habrá lugar a su pago cuando la comisión de servicios se confiera dentro de la misma ciudad.",
+    "pregunta": "El técnico administrativo de talento humano de un ministerio con sede en Bogotá proyecta la resolución que confiere a una profesional una comisión de servicios de dos días para dictar una capacitación en otra entidad pública, también ubicada en Bogotá. Ninguna otra entidad asumirá gastos de la comisión. Antes de pasar el proyecto a firma, revisa lo que debe decir sobre viáticos y sobre el certificado de disponibilidad presupuestal (CDP). ¿Cómo debe quedar el proyecto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con viáticos por los dos días, porque la comisión se cumple fuera de su sede, y con su CDP.",
+        "explicacion": "Incorrecta. Aunque la profesional trabaje ese día en otra entidad, la comisión se cumple en la misma ciudad, y en ese caso no hay lugar a viáticos."
+      },
+      {
+        "id": "B",
+        "texto": "Sin viáticos, pero con número de CDP, porque toda resolución de comisión debe citarlo.",
+        "explicacion": "Incorrecta. El número del CDP no se exige cuando la comisión no demanda erogaciones del Tesoro, como ocurre en este caso."
+      },
+      {
+        "id": "C",
+        "texto": "Con gastos de transporte urbano, porque hay desplazamiento entre sedes, y con su CDP.",
+        "explicacion": "Incorrecta. Los gastos de transporte se reconocen cuando se causan fuera del perímetro urbano, y en una comisión dentro de la misma ciudad tampoco se pagan."
+      },
+      {
+        "id": "D",
+        "texto": "Sin viáticos ni número de CDP, porque la comisión no le genera gasto al presupuesto.",
+        "explicacion": "Correcta. Como la comisión es en la misma ciudad, no hay viáticos ni gastos de transporte; y sin erogación, el acto no necesita citar un CDP. Debe señalar, en todo caso, el objetivo y la duración de la comisión."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la comisión de servicios es en Bogotá, la misma ciudad de la sede, y nadie asume gastos. Reglas: el art. 2.2.5.5.27 del Decreto 1083 excluye viáticos y gastos de transporte en la comisión conferida dentro de la misma ciudad, y el art. 2.2.5.5.24 exige el número del CDP solo cuando la comisión demanda erogaciones del Tesoro. Conclusión: el acto no reconoce viáticos ni cita un CDP; sí debe señalar el objetivo y la duración.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: licencias",
+    "subtema": "Parientes que dan derecho a la licencia por luto",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.15 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.5.5.15 Licencia por luto. Los empleados públicos tendrán derecho a una licencia por luto, por un término de cinco (5) días hábiles, contados a partir del fallecimiento de su cónyuge, compañero o compañera permanente o de un familiar hasta el grado segundo de consanguinidad, primero de afinidad y segundo civil, de acuerdo con lo establecido en la Ley 1635 de 2013, o las normas que la modifiquen o adicionen. Una vez ocurrido el hecho que genere la licencia por luto el empleado deberá informarlo a la jefatura de personal o a la que haga sus veces, la cual deberá conferir la licencia mediante acto administrativo motivado.",
+    "pregunta": "En la misma semana, la auxiliar administrativa de la oficina de personal de una alcaldía recibió tres avisos de fallecimiento para tramitar licencias por luto: el de la abuela materna de un técnico, el de un tío paterno de una secretaria y el del hermano de la esposa de un conductor. ¿A quién debe tramitarle la licencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo al técnico, porque los otros dos fallecidos están fuera de los grados que cubre el luto.",
+        "explicacion": "Correcta. La abuela es pariente en segundo grado de consanguinidad, que está cubierto. El tío está en tercer grado de consanguinidad, y el hermano de la esposa (cuñado), en segundo grado de afinidad; por afinidad, el luto solo llega al primer grado."
+      },
+      {
+        "id": "B",
+        "texto": "A los tres, porque la licencia cubre a los parientes cercanos, sean consanguíneos o afines.",
+        "explicacion": "Incorrecta. La licencia no cubre a todos los parientes cercanos: llega al segundo grado de consanguinidad, al primero de afinidad y al segundo civil."
+      },
+      {
+        "id": "C",
+        "texto": "Al técnico y al conductor, porque la licencia llega hasta el segundo grado de cualquier parentesco.",
+        "explicacion": "Incorrecta. El segundo grado vale para la consanguinidad y el parentesco civil; por afinidad solo se cubre el primer grado (por ejemplo, los suegros), no el cuñado."
+      },
+      {
+        "id": "D",
+        "texto": "Al técnico y a la secretaria, porque la licencia cubre a los consanguíneos, pero no a los afines.",
+        "explicacion": "Incorrecta. El tío es pariente en tercer grado de consanguinidad, fuera del límite. Además, los afines sí están cubiertos, aunque solo en primer grado."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: fallecieron la abuela de un técnico, el tío de una secretaria y el cuñado de un conductor. Regla: el art. 2.2.5.5.15 del Decreto 1083 (mod. Decreto 648 de 2017) concede 5 días hábiles de luto por la muerte del cónyuge o compañero permanente o de familiares hasta el segundo grado de consanguinidad, primero de afinidad y segundo civil. La abuela es segundo grado de consanguinidad; el tío, tercero, y el cuñado, segundo de afinidad. Conclusión: solo procede para el técnico.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: permisos",
+    "subtema": "Duración máxima del permiso académico compensado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.19 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.5.5.19 Permiso académico compensado. Al empleado público se le podrá otorgar permiso académico compensado de hasta dos (2) horas diarias o hasta cuarenta (40) horas mensuales, por dos (2) años, prorrogables por un (1) año, para adelantar programas académicos de educación superior en la modalidad de posgrado en instituciones legalmente reconocidas. El otorgamiento del permiso estará sujeto a las necesidades del servicio, a juicio del jefe del organismo. En el acto que se confiere el permiso se deberá consagrar la forma de compensación del tiempo que se utilice para adelantar los estudios, para lo cual se le podrá variar la jornada laboral del servidor dentro de los límites señalados en la ley.",
+    "pregunta": "Un técnico de una gobernación tiene permiso académico compensado de dos horas diarias desde el 1 de febrero de 2024 para cursar una maestría; el 1 de febrero de 2026 se lo prorrogaron por un año. La universidad le informó que, por un ajuste del plan de estudios, terminará en junio de 2027, y él pide a la auxiliar de talento humano que tramite una nueva prórroga hasta esa fecha. ¿Qué debe informarle la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede tramitar la prórroga hasta junio de 2027, con la misma forma de compensación.",
+        "explicacion": "Incorrecta. El permiso se concede por dos años, prorrogables por un año; no admite otra prórroga para ajustarse a la duración del programa."
+      },
+      {
+        "id": "B",
+        "texto": "Que el permiso admite otra prórroga de un año, es decir, hasta el 31 de enero de 2028.",
+        "explicacion": "Incorrecta. La prórroga es de un año y una sola, y ya se otorgó en febrero de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "Que el permiso sigue sin límite de tiempo mientras compense las horas de estudio.",
+        "explicacion": "Incorrecta. La compensación del tiempo es una condición del permiso, pero no elimina su límite de dos años más uno de prórroga."
+      },
+      {
+        "id": "D",
+        "texto": "Que ya tuvo la única prórroga posible y el permiso termina el 31 de enero de 2027.",
+        "explicacion": "Correcta. Dos años desde el 1 de febrero de 2024 llegan al 31 de enero de 2026, y la prórroga de un año, al 31 de enero de 2027. No caben más prórrogas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el permiso empezó el 1/2/2024 y ya se prorrogó por un año el 1/2/2026. Regla: el art. 2.2.5.5.19 del Decreto 1083 (mod. Decreto 648 de 2017) permite el permiso académico compensado por dos años, prorrogables por un año. Cálculo: 2 + 1 = 3 años, hasta el 31/1/2027. Conclusión: no cabe una nueva prórroga y el permiso termina el 31 de enero de 2027.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: licencias",
+    "subtema": "Trámite y cómputo de la licencia parental compartida",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.57 incs. 1 y 3 (adicionado por el art. 3 del Decreto 1605 de 2024)",
+      "art. 2.2.5.5.59 (adicionado por el art. 3 del Decreto 1605 de 2024)"
+    ],
+    "texto_fuente": "ARTÍCULO. 2.2.5.5.57. Licencia parental compartida. Es aquella que se otorga al empleado para separarse del empleo, de conformidad con lo establecido en el parágrafo 4 del artículo 2, de la Ley 2114 de 2021, en virtud de la cual los padres podrán distribuir libremente entre sí las últimas seis (6) semanas de la licencia de la madre, [...] La solicitud deberá ser remitida al jefe de talento humano o a quien haga sus veces, la cual conferirá la licencia mediante acto administrativo motivado. [...] El tiempo que dure la licencia parental compartida y la licencia parental flexible de tiempo parcial es computable como tiempo de servicio activo.",
+    "pregunta": "Un técnico de un ministerio radicó, con los documentos exigidos, una solicitud de licencia parental compartida: su compañera permanente, que trabaja en una empresa privada, distribuirá con él dos de las últimas seis semanas de su licencia de maternidad. La auxiliar administrativa de talento humano debe darle trámite y anotar cómo se registrará ese tiempo en la historia laboral. ¿Cómo debe proceder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enviarla a la EPS, que la concede, y registrar esas semanas como tiempo de servicio activo.",
+        "explicacion": "Incorrecta. La licencia no la concede la EPS: la solicitud se remite al jefe de talento humano, que la otorga con acto administrativo motivado."
+      },
+      {
+        "id": "B",
+        "texto": "Enviarla a la EPS, que la concede, y registrar esas semanas como tiempo no computable.",
+        "explicacion": "Incorrecta. Equivoca quién la concede y cómo se computa: la otorga el jefe de talento humano y ese tiempo es de servicio activo."
+      },
+      {
+        "id": "C",
+        "texto": "Enviarla al jefe de talento humano, que la concede con acto motivado; cuenta como servicio activo.",
+        "explicacion": "Correcta. La solicitud se remite al jefe de talento humano o a quien haga sus veces, que confiere la licencia con acto administrativo motivado, y el tiempo de la licencia parental compartida es computable como servicio activo."
+      },
+      {
+        "id": "D",
+        "texto": "Enviarla al jefe de talento humano, que la concede con acto motivado; no cuenta como servicio.",
+        "explicacion": "Incorrecta. El trámite es correcto, pero el tiempo de la licencia parental compartida sí es computable como servicio activo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: un servidor pide licencia parental compartida para tomar dos de las últimas seis semanas de la licencia de maternidad de su compañera. Reglas: el art. 2.2.5.5.57 del Decreto 1083 (adicionado por el Decreto 1605 de 2024) ordena remitir la solicitud al jefe de talento humano o a quien haga sus veces, que la confiere con acto administrativo motivado, y el art. 2.2.5.5.59 la computa como tiempo de servicio activo. Conclusión: se envía al jefe de talento humano y se registra como servicio activo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Prescripción del derecho a vacaciones y efecto del aplazamiento",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 14",
+      "art. 23"
+    ],
+    "texto_fuente": "ARTÍCULO 14. Del aplazamiento de las vacaciones. Las autoridades facultadas para conceder vacaciones podrán aplazarlas por necesidades del servicio. El aplazamiento se decretará por resolución motivada. Todo aplazamiento de vacaciones se hará constar en la respectiva hoja de vida del funcionario o trabajador. [...] ARTÍCULO 23. De la prescripción. Cuando sin existir aplazamiento no se hiciere uso de vacaciones en la fecha señalada, el derecho a disfrutarlas o a recibir la respectiva compensación en dinero prescribe en cuatro años, que se contarán a partir de la fecha en que se haya causado el derecho. El aplazamiento de las vacaciones interrumpe el término de prescripción, siempre que medie la correspondiente providencia.",
+    "pregunta": "En octubre de 2026, dos profesionales de una superintendencia piden disfrutar las vacaciones que se les causaron el 1 de febrero de 2022 y que nunca tomaron. Las de Marta las aplazó el superintendente por necesidades del servicio, con una resolución motivada del 12 de diciembre de 2022 que quedó anotada en su hoja de vida. A Jorge, su jefe le pidió por correo electrónico que no saliera porque lo necesitaba en un proyecto, y nunca se expidió un acto de aplazamiento. Desde entonces ninguno ha disfrutado ese periodo. ¿Qué debe conceptuar el profesional de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que solo Marta conserva ese periodo; el de Jorge se extinguió, pues nadie expidió el acto que lo aplazara.",
+        "explicacion": "Correcta. Sin acto de aplazamiento, el derecho de Jorge prescribió el 1 de febrero de 2026, cuatro años después de causado. El de Marta no, pues la resolución motivada de aplazamiento interrumpió la prescripción; aun contados de nuevo desde diciembre de 2022, los cuatro años no se han cumplido."
+      },
+      {
+        "id": "B",
+        "texto": "Que los dos conservan ese periodo, pues en ambos casos la postergación obedeció a necesidades del servicio.",
+        "explicacion": "Incorrecta. La necesidad del servicio no basta: el aplazamiento interrumpe la prescripción solo si media la providencia, que debe ser una resolución motivada. Un correo del jefe no lo es."
+      },
+      {
+        "id": "C",
+        "texto": "Que ninguno conserva ese periodo, pues desde la fecha en que se causó ya pasaron más de cuatro años.",
+        "explicacion": "Incorrecta. Desconoce que el aplazamiento decretado con resolución motivada interrumpe la prescripción, lo que salva el derecho de Marta."
+      },
+      {
+        "id": "D",
+        "texto": "Que ninguno puede disfrutarlo ya, pero a los dos se les debe pagar en dinero lo que vale ese periodo.",
+        "explicacion": "Incorrecta. La prescripción alcanza tanto el derecho a disfrutar las vacaciones como el de recibir su compensación en dinero: Jorge no puede cobrarlas, y Marta sí puede disfrutarlas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el periodo se causó el 1/2/2022; a Marta se lo aplazaron con resolución motivada y a Jorge solo por correo. Reglas: el art. 23 del Decreto Ley 1045 hace prescribir en cuatro años, desde la causación, el derecho a disfrutar o compensar las vacaciones no tomadas sin aplazamiento, y el aplazamiento interrumpe la prescripción si media la providencia, que el art. 14 exige como resolución motivada. Cálculo: 1/2/2022 + 4 años = 1/2/2026, ya vencido para Jorge. Conclusión: solo Marta conserva el derecho.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Compensación en dinero por necesidades del servicio y prima de vacaciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 20 lit. a",
+      "art. 29"
+    ],
+    "texto_fuente": "ARTÍCULO 20. De la compensación de vacaciones en dinero. Las vacaciones solo podrán ser compensadas en dinero en los siguientes casos: a) Cuando el jefe del respectivo organismo así lo estime necesario para evitar perjuicios en el servicio público, evento en el cual solo puede autorizar la compensación en dinero de las vacaciones correspondientes a un año; [...] ARTÍCULO 29. De la compensación en dinero de la prima vacacional. La prima de vacaciones no se perderá en los casos en que se autorizare el pago de vacaciones en dinero.",
+    "pregunta": "Un profesional especializado de una superintendencia tiene dos periodos de vacaciones pendientes, ambos aplazados por necesidades del servicio con resoluciones motivadas. El superintendente considera que la ausencia del profesional durante el cierre de la vigencia perjudicaría el servicio y pide al jefe de talento humano un acto que pague en dinero los dos periodos. Propone, además, no reconocer la prima de vacaciones, porque el profesional no tendrá descanso. ¿Qué debe proyectar el jefe de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El pago en dinero de los dos periodos, sin la prima de vacaciones de ninguno de ellos.",
+        "explicacion": "Incorrecta. Excede el límite de un año para la compensación por perjuicio del servicio y desconoce que la prima no se pierde cuando las vacaciones se pagan en dinero."
+      },
+      {
+        "id": "B",
+        "texto": "El pago en dinero de los dos periodos, con la prima de vacaciones de cada uno de ellos.",
+        "explicacion": "Incorrecta. Acierta con la prima, pero para evitar perjuicios al servicio el jefe del organismo solo puede compensar en dinero las vacaciones de un año."
+      },
+      {
+        "id": "C",
+        "texto": "El pago en dinero de un solo periodo, sin su prima de vacaciones; el otro se disfrutará.",
+        "explicacion": "Incorrecta. Acierta con el límite de un periodo, pero la prima de vacaciones no se pierde porque las vacaciones se paguen en dinero."
+      },
+      {
+        "id": "D",
+        "texto": "El pago en dinero de un solo periodo, con su prima de vacaciones; el otro se disfrutará.",
+        "explicacion": "Correcta. Para evitar perjuicios en el servicio, el jefe del organismo solo puede autorizar la compensación en dinero de las vacaciones de un año, y en ese caso la prima de vacaciones se conserva."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el jefe quiere compensar en dinero dos periodos para evitar perjuicios al servicio, y sin prima. Reglas: el art. 20 lit. a del Decreto Ley 1045 solo le permite, en ese caso, compensar las vacaciones correspondientes a un año, y el art. 29 dispone que la prima de vacaciones no se pierde cuando se autoriza el pago de vacaciones en dinero. Conclusión: se compensa un periodo con su prima, y el otro debe disfrutarse.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Acumulación de vacaciones pedida por el empleado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 12",
+      "art. 13",
+      "art. 14"
+    ],
+    "texto_fuente": "ARTÍCULO 12. Del goce de vacaciones. Las vacaciones deben concederse por quien corresponde, oficiosamente o a petición del interesado, dentro del año siguiente a la fecha en que se cause el derecho a disfrutarlas. [...] ARTÍCULO 13. De la acumulación de vacaciones. Solo se podrán acumular vacaciones hasta por dos años, siempre que ello obedezca a aplazamiento por necesidad del servicio. [...] ARTÍCULO 14. Del aplazamiento de las vacaciones. Las autoridades facultadas para conceder vacaciones podrán aplazarlas por necesidades del servicio. El aplazamiento se decretará por resolución motivada. Todo aplazamiento de vacaciones se hará constar en la respectiva hoja de vida del funcionario o trabajador.",
+    "pregunta": "Una profesional universitaria de un departamento administrativo causó un periodo de vacaciones el 15 de enero de 2026, y el siguiente se le causará el 15 de enero de 2027. En octubre de 2026 pide por escrito no tomar todavía el primero, para juntarlo con el segundo en un viaje largo en julio de 2027. Su jefe inmediato está de acuerdo, y el área puede cubrir su ausencia en cualquiera de esas fechas. ¿Qué debe proyectar el jefe de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una resolución motivada que aplace el primer periodo, con la respectiva anotación en su hoja de vida.",
+        "explicacion": "Incorrecta. Cumple la forma del aplazamiento (resolución motivada y anotación en la hoja de vida), pero aplazar y acumular vacaciones solo procede por necesidades del servicio, y aquí obedece al interés personal de la servidora."
+      },
+      {
+        "id": "B",
+        "texto": "Una respuesta negativa, ya que el primer periodo debe otorgarse antes de que se cause el segundo.",
+        "explicacion": "Correcta. Las vacaciones deben concederse dentro del año siguiente a su causación: el primer periodo, a más tardar el 15 de enero de 2027. Solo podrían aplazarse y acumularse por necesidades del servicio, mediante resolución motivada, y aquí el aplazamiento lo pide la servidora para un viaje personal."
+      },
+      {
+        "id": "C",
+        "texto": "Una respuesta negativa y el pago en dinero del primer periodo, para evitar que se acumule con el segundo.",
+        "explicacion": "Incorrecta. La compensación en dinero solo cabe cuando el jefe del organismo la estima necesaria para evitar perjuicios en el servicio, o en el retiro (art. 20 del Decreto Ley 1045). No es un medio para impedir la acumulación, y aquí el área puede cubrir la ausencia."
+      },
+      {
+        "id": "D",
+        "texto": "Una aceptación sin acto de aplazamiento, ya que el primer periodo prescribe a los cuatro años de causado.",
+        "explicacion": "Incorrecta. Los cuatro años del art. 23 son el término de prescripción del derecho no disfrutado; no autorizan a dejar de conceder las vacaciones dentro del año siguiente a su causación ni a acumularlas sin una necesidad del servicio."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la servidora pide aplazar el periodo causado el 15/1/2026 para juntarlo con el siguiente en julio de 2027, por un interés personal; el servicio no lo exige. Reglas: el art. 12 del Decreto Ley 1045 ordena conceder las vacaciones dentro del año siguiente a su causación; los arts. 13 y 14 solo permiten aplazarlas y acumularlas (hasta por dos años) por necesidades del servicio, con resolución motivada. Conclusión: se niega la solicitud y el primer periodo se concede a más tardar el 15/1/2027.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Interrupción por necesidades del servicio y reajuste del pago pendiente",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 8 inc. 2",
+      "art. 15 lit. a",
+      "art. 16",
+      "art. 17 inc. 1 y último"
+    ],
+    "texto_fuente": "En los organismos cuya jornada semanal se desarrolle entre lunes y viernes, el sábado no se computará como día hábil para efecto de vacaciones. [...] ARTÍCULO 15. De la interrupción de las vacaciones. El disfrute de las vacaciones se interrumpirá cuando se configure alguna de las siguientes causales: a) Las necesidades del servicio; [...] ARTÍCULO 16. Del disfrute de las vacaciones interrumpidas. Cuando ocurra interrupción justificada en el goce de vacaciones ya iniciadas, el beneficiario tiene derecho a reanudarlas por el tiempo que falte para completar su disfrute y desde la fecha que oportunamente se señale para tal fin. [...] se tendrán en cuenta los siguientes factores de salario, siempre que correspondan al empleado en la fecha en la cual inicie el disfrute de aquellas: [...] En caso de interrupción de las vacaciones por las causales indicadas en el artículo 15 de este Decreto, el pago del tiempo faltante de las mismas se reajustará con base en el salario que perciba el empleado al momento de reanudarlas.",
+    "pregunta": "Un profesional especializado de un ministerio empezó el lunes 7 de diciembre de 2026 sus 15 días hábiles de vacaciones; la entidad trabaja de lunes a viernes y el martes 8 de diciembre fue festivo. Las vacaciones se le pagaron por anticipado con su asignación de 2026. Por necesidades del servicio, el ministro las interrumpió con resolución motivada a partir del miércoles 16 de diciembre, y dispuso que las reanudara el lunes 1 de marzo de 2027, cuando ya regía una asignación básica mayor por el aumento salarial de ese año. ¿Cuántos días hábiles le faltan y con qué salario se liquida ese tiempo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Le faltan 9 días hábiles, y su pago se reajusta con la asignación que rige al reanudarlas.",
+        "explicacion": "Correcta. Disfrutó 6 días hábiles (7, 9, 10, 11, 14 y 15 de diciembre). Le faltan 9, y el pago de ese tiempo se reajusta con el salario que perciba al reanudarlas, el de 2027."
+      },
+      {
+        "id": "B",
+        "texto": "Le faltan 9 días hábiles, y su pago se mantiene con la asignación que tenía al iniciarlas.",
+        "explicacion": "Incorrecta. Cuenta bien los días, pero aplica la regla general de liquidar con los factores vigentes al iniciar el disfrute. En la interrupción, el pago del tiempo faltante se reajusta con el salario vigente al reanudarlas."
+      },
+      {
+        "id": "C",
+        "texto": "Le faltan 8 días hábiles, y su pago se mantiene con la asignación que tenía al iniciarlas.",
+        "explicacion": "Incorrecta. Cuenta el festivo del 8 de diciembre como día disfrutado (serían 7) y, además, no reajusta el pago del tiempo faltante con el salario de 2027."
+      },
+      {
+        "id": "D",
+        "texto": "Debe disfrutar otra vez 15 días hábiles, liquidados con la asignación que rige al reanudarlas.",
+        "explicacion": "Incorrecta. La interrupción no obliga a empezar de nuevo: se reanudan solo los días que faltaban para completar el disfrute."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: vacaciones iniciadas el 7/12/2026, interrumpidas por necesidades del servicio desde el 16/12 y reanudadas el 1/3/2027 con un salario mayor. Reglas: el art. 15 del Decreto Ley 1045 permite interrumpirlas por necesidades del servicio; el art. 16 da derecho a reanudarlas por el tiempo que falte, y el art. 17 reajusta el pago de ese tiempo con el salario vigente al reanudarlas. Cálculo: disfrutó 6 días hábiles (el 8 fue festivo); le faltan 9. Conclusión: 9 días hábiles, con la asignación de 2027.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: vacaciones",
+    "subtema": "Vacaciones causadas y prima de vacaciones en el retiro por destitución",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 1045 de 1978",
+    "articulos": [
+      "art. 20 lit. b",
+      "art. 30"
+    ],
+    "texto_fuente": "ARTÍCULO 20. De la compensación de vacaciones en dinero. Las vacaciones solo podrán ser compensadas en dinero en los siguientes casos: [...] b) Cuando el empleado público o trabajador oficial quede retirado definitivamente del servicio sin haber disfrutado de las vacaciones causadas hasta entonces. [...] ARTÍCULO 30. Del pago de la prima en caso de retiro. Cuando sin haber disfrutado de sus vacaciones un empleado se retirare del organismo al cual estaba vinculado por motivos distintos de destitución o abandono del cargo, tendrá derecho al pago de la correspondiente prima vacacional.",
+    "pregunta": "Un técnico de un establecimiento público del orden nacional fue retirado del servicio por destitución, impuesta en un proceso disciplinario con decisión en firme. Tenía causado desde el 1 de marzo de 2026 un periodo de vacaciones que no alcanzó a disfrutar. El profesional de talento humano proyecta la liquidación final. Respecto de ese periodo, ¿qué debe reconocerle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La compensación en dinero de las vacaciones y también la prima de vacaciones del periodo.",
+        "explicacion": "Incorrecta. En caso de retiro, la prima vacacional solo se paga cuando el retiro obedece a motivos distintos de la destitución o el abandono del cargo."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguna suma por vacaciones: ni la compensación en dinero ni la prima de vacaciones.",
+        "explicacion": "Incorrecta. La destitución no impide compensar en dinero las vacaciones causadas y no disfrutadas: la norma lo permite en todo retiro definitivo del servicio."
+      },
+      {
+        "id": "C",
+        "texto": "La compensación en dinero de las vacaciones, pero no la prima de vacaciones del periodo.",
+        "explicacion": "Correcta. Todo retiro definitivo sin haber disfrutado las vacaciones causadas permite compensarlas en dinero; en cambio, la prima vacacional no se paga cuando el retiro es por destitución."
+      },
+      {
+        "id": "D",
+        "texto": "La prima de vacaciones del periodo, pero no la compensación en dinero de las vacaciones.",
+        "explicacion": "Incorrecta. Invierte las reglas: la compensación procede en todo retiro definitivo con vacaciones causadas, y la prima es la que se excluye cuando el retiro es por destitución."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el técnico fue destituido con un periodo de vacaciones causado y no disfrutado. Reglas: el art. 20 lit. b del Decreto Ley 1045 permite compensar en dinero las vacaciones causadas cuando el empleado queda retirado definitivamente sin haberlas disfrutado, y el art. 30 reconoce la prima vacacional en el retiro solo si obedece a motivos distintos de destitución o abandono del cargo. Conclusión: se compensan las vacaciones, pero no se paga la prima.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1466",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: encargo y asignación de funciones",
+    "subtema": "Provisión del empleo durante las vacaciones del titular",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015 y Ley 909 de 2004",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.5.5.50 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.5.5.52 inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Ley 909 de 2004, art. 25"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.5.5.50 Vacaciones. Las vacaciones se regirán por lo dispuesto en el Decreto Ley 1045 de 1978 y las normas que lo modifiquen, adicionen o reglamenten. Cuando el empleado disfruta de vacaciones, en el empleo del cual es titular se genera una vacancia temporal, la cual podrá ser provista, por el tiempo que dure la misma, bajo las figuras del encargo o del nombramiento provisional cuando se trate de cargos de carrera. [...] ARTÍCULO 2.2.5.5.52 Asignación de funciones. Cuando la situación administrativa en la que se encuentre el empleado público no genere vacancia temporal, pero implique separación transitoria del ejercicio de sus funciones o de algunas de ellas, el jefe del organismo podrá asignar el desempeño de éstas a otro empleado que desempeñe un cargo de la misma naturaleza. [...] Los empleos de carrera cuyos titulares se encuentren en situaciones administrativas que impliquen separación temporal de los mismos serán provistos en forma provisional solo por el tiempo que duren aquellas situaciones, cuando no fuere posible proveerlos mediante encargo con servidores públicos de carrera.",
+    "pregunta": "La profesional especializada que coordina el presupuesto de un ministerio, titular de un empleo de carrera, disfrutará 15 días hábiles de vacaciones en diciembre. El secretario general quiere que alguien ejerza ese empleo mientras tanto. En el empleo inmediatamente inferior hay un profesional universitario de carrera que cumple los requisitos, tiene evaluación sobresaliente y no registra sanciones. Un asesor opina que basta con repartir las tareas entre otros profesionales especializados. ¿Qué acto puede proyectar el jefe de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La asignación de las funciones a otro profesional especializado, porque las vacaciones no dejan vacante el empleo.",
+        "explicacion": "Incorrecta. La asignación de funciones procede cuando la situación administrativa no genera vacancia temporal, y las vacaciones sí la generan."
+      },
+      {
+        "id": "B",
+        "texto": "El encargo del profesional universitario mientras duren las vacaciones, porque el empleo queda vacante en ese lapso.",
+        "explicacion": "Correcta. Las vacaciones generan vacancia temporal en el empleo del titular, que puede proveerse por el tiempo que duren; en un empleo de carrera, primero mediante encargo con un servidor de carrera, como el profesional universitario."
+      },
+      {
+        "id": "C",
+        "texto": "Un nombramiento provisional mientras duren las vacaciones, porque en las ausencias cortas prima sobre el encargo.",
+        "explicacion": "Incorrecta. En los empleos de carrera, la provisionalidad por vacancia temporal solo procede cuando no es posible el encargo con servidores de carrera, y aquí sí lo es."
+      },
+      {
+        "id": "D",
+        "texto": "El encargo del profesional universitario solo si las vacaciones superan 30 días, porque antes no hay vacancia.",
+        "explicacion": "Incorrecta. Las vacaciones generan vacancia temporal por el tiempo que duren, sin un mínimo de días."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la titular de un empleo de carrera saldrá a vacaciones y hay un servidor de carrera que puede ser encargado. Reglas: el art. 2.2.5.5.50 del Decreto 1083 dice que las vacaciones generan vacancia temporal, que puede proveerse por el tiempo que duren mediante encargo o nombramiento provisional; el art. 25 de la Ley 909 deja la provisionalidad para cuando no es posible el encargo con servidores de carrera, y la asignación de funciones (art. 2.2.5.5.52) es para situaciones sin vacancia. Conclusión: procede el encargo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: comisiones",
+    "subtema": "Duración máxima de la comisión de estudios para especialización médica y compromiso de servicio",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.33 nums. 1 y 2 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.5.35 incs. 1 y 2 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.5.5.33 Obligaciones del empleado en la comisión de estudios. El empleado público que se le confiera comisión de estudios al interior o al exterior deberá suscribir convenio mediante el cual se comprometa a: 1. Prestar sus servicios a la entidad que otorga la comisión o a cualquier otra entidad del Estado, por el doble del tiempo de duración de la comisión. 2. Suscribir póliza de garantía de cumplimiento que ampare la obligación anterior, por el término señalado y un (1) mes más, [...] ARTÍCULO 2.2.5.5.35 Duración de la comisión de estudios. La duración de la comisión de estudios al interior o al exterior no podrá ser mayor de doce (12) meses, prorrogable por un término igual hasta por dos (2) veces, siempre que se trate de obtener título académico y previa comprobación del buen rendimiento del comisionado, acreditado con los certificados del respectivo centro académico. Si se trata de obtener título académico de especialización científica o médica, la prórroga a que se refiere el presente artículo podrá otorgarse hasta por tres (3) veces, bajo las mismas condiciones contempladas en el inciso anterior.",
+    "pregunta": "Una médica de carrera de un establecimiento público del orden nacional, con más de un año continuo de servicio y calificación sobresaliente, obtuvo una comisión de estudios de tiempo completo en el país, inicialmente por 12 meses, para cursar una especialización médica de cuatro años relacionada con las funciones de su empleo. El convenio fija el compromiso de servicio en el mínimo que exige la norma. Si cada año acredita buen rendimiento con certificados de la universidad, ¿hasta cuánto puede extenderse la comisión con sus prórrogas y por cuánto tiempo deberá prestar servicios al terminarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta 36 meses de comisión, y luego deberá prestar servicios durante 72 meses.",
+        "explicacion": "Incorrecta. Aplica la regla general de dos prórrogas (12 + 24 = 36 meses). Para una especialización médica, la prórroga puede otorgarse hasta tres veces."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta 48 meses de comisión, y luego deberá prestar servicios durante 48 meses.",
+        "explicacion": "Incorrecta. Acierta con la duración, pero el compromiso de servicio es por el doble del tiempo de la comisión, no por un tiempo igual."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta 36 meses de comisión, y luego deberá prestar servicios durante 73 meses.",
+        "explicacion": "Incorrecta. Aplica las dos prórrogas generales y suma al servicio el mes adicional, que corresponde al término de la póliza y no al compromiso."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta 48 meses de comisión, y luego deberá prestar servicios durante 96 meses.",
+        "explicacion": "Correcta. Para especialización médica caben 12 meses iniciales más tres prórrogas de 12 meses: 48 meses. El compromiso es el doble del tiempo de la comisión: 96 meses."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: comisión de estudios de 12 meses para una especialización médica de cuatro años, con buen rendimiento acreditado. Reglas: el art. 2.2.5.5.35 del Decreto 1083 permite prorrogar la comisión por un término igual hasta dos veces, y hasta tres si el título es de especialización científica o médica; el art. 2.2.5.5.33 obliga a servir el doble del tiempo de la comisión. Cálculo: 12 + 3 × 12 = 48 meses; 2 × 48 = 96 meses. Conclusión: 48 meses de comisión y 96 de servicio.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-048",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: comisiones",
+    "subtema": "Comisión de servicios al exterior: término, autorización previa y viáticos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.5.23 inc. 4 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.5.26 inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.5.27 inc. 2 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Toda comisión de estudios o de servicios fuera del país, que se vaya a conferir a empleados de la Rama Ejecutiva del orden nacional, con o sin cargo al erario público, requerirá de la previa autorización del Director del Departamento Administrativo de la Presidencia de la República. [...] ARTÍCULO 2.2.5.5.26 Duración de la comisión de servicios. Las comisiones al exterior, se conferirán por el término estrictamente necesario para el cumplimiento de su objeto, más uno de ida y otro de regreso, salvo en los casos en que quien autoriza la comisión, considere que éstos no son suficientes para el desplazamiento al sitio donde deba cumplirse y su regreso al país, en cuyo caso podrá autorizar el término mínimo que considere necesario. [...] Cuando la totalidad de los gastos que genere la comisión de servicios sean asumidos por otro organismo o entidad no habrá lugar al pago de viáticos y gastos de transporte.",
+    "pregunta": "Un profesional de un ministerio fue designado para participar en un foro técnico en Lima, que se realizará del martes 10 al jueves 12 de noviembre de 2026. Un organismo internacional pagará la totalidad de los tiquetes, el alojamiento y la alimentación. El profesional de talento humano revisa el proyecto de resolución de la comisión de servicios. ¿Cómo debe quedar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Del lunes 9 al viernes 13 de noviembre, con autorización previa del director del DAPRE y sin viáticos.",
+        "explicacion": "Correcta. Tres días del foro, más uno de ida y otro de regreso: del lunes 9 al viernes 13. Toda comisión al exterior de empleados de la Rama Ejecutiva del orden nacional requiere autorización previa del director del Departamento Administrativo de la Presidencia (DAPRE), con o sin cargo al erario. Y como otro organismo asume todos los gastos, no hay viáticos."
+      },
+      {
+        "id": "B",
+        "texto": "Del martes 10 al jueves 12 de noviembre, con autorización previa del director del DAPRE y con viáticos.",
+        "explicacion": "Incorrecta. Omite el día de ida y el de regreso, y reconoce viáticos aunque el organismo internacional asume la totalidad de los gastos."
+      },
+      {
+        "id": "C",
+        "texto": "Del lunes 9 al viernes 13 de noviembre, sin autorización previa del director del DAPRE y con viáticos.",
+        "explicacion": "Incorrecta. Las fechas son correctas, pero la autorización del DAPRE se exige aunque la comisión no tenga cargo al erario, y no hay viáticos cuando otro organismo asume todos los gastos."
+      },
+      {
+        "id": "D",
+        "texto": "Del lunes 9 al jueves 12 de noviembre, sin autorización previa del director del DAPRE y sin viáticos.",
+        "explicacion": "Incorrecta. Acierta en que no hay viáticos, pero solo suma el día de ida: la norma agrega uno de ida y otro de regreso, así que la comisión va hasta el viernes 13. Además, prescinde de la autorización previa del DAPRE, que se exige con o sin cargo al erario."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: foro en Lima del martes 10 al jueves 12 de noviembre, con todos los gastos a cargo de un organismo internacional. Reglas: el art. 2.2.5.5.26 del Decreto 1083 confiere la comisión al exterior por el término necesario más un día de ida y otro de regreso; el art. 2.2.5.5.23 exige autorización previa del director del DAPRE para toda comisión al exterior de la Rama Ejecutiva nacional, con o sin cargo al erario, y el art. 2.2.5.5.27 excluye viáticos si otro organismo asume todos los gastos. Conclusión: del 9 al 13, con autorización y sin viáticos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: servicio militar",
+    "subtema": "Vacaciones interrumpidas por el llamamiento a filas y plazo para reasumir",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015 y Decreto Ley 1045 de 1978",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.11.1.9 num. 1 (modificado por el art. 2 del Decreto 648 de 2017)",
+      "Decreto Ley 1045 de 1978, art. 15 lit. e",
+      "Decreto Ley 1045 de 1978, art. 16 inc. 1"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.11.1.9 Abandono del cargo. El abandono del cargo se produce cuando un empleado público sin justa causa: 1. No reasume sus funciones al vencimiento de una licencia, permiso, vacaciones, comisión, o dentro de los treinta (30) días siguientes al vencimiento de la prestación del servicio militar. [...] ARTÍCULO 15. De la interrupción de las vacaciones. El disfrute de las vacaciones se interrumpirá cuando se configure alguna de las siguientes causales: [...] e) El llamamiento a filas. [...] ARTÍCULO 16. Del disfrute de las vacaciones interrumpidas. Cuando ocurra interrupción justificada en el goce de vacaciones ya iniciadas, el beneficiario tiene derecho a reanudarlas por el tiempo que falte para completar su disfrute y desde la fecha que oportunamente se señale para tal fin.",
+    "pregunta": "Un auxiliar administrativo de un ministerio disfrutaba sus vacaciones cuando fue llamado a filas para prestar el servicio militar obligatorio; para entonces había disfrutado 6 de sus 15 días hábiles. Recibió la baja el lunes 1 de junio de 2026 y se presentó a la entidad el miércoles 24 de junio. Su jefe pide iniciar la actuación por abandono del cargo, porque no volvió al día siguiente de la baja, y el auxiliar pide que le concedan los días de vacaciones que le faltaron. ¿Qué debe conceptuar el profesional de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No hay abandono, pues se presentó a tiempo, pero perdió los 9 días hábiles de vacaciones pendientes.",
+        "explicacion": "Incorrecta. El llamamiento a filas interrumpe las vacaciones, no las consume: el servidor tiene derecho a reanudarlas por el tiempo que falte."
+      },
+      {
+        "id": "B",
+        "texto": "No hay abandono, pues se presentó a tiempo, y puede reanudar los 9 días hábiles de vacaciones pendientes.",
+        "explicacion": "Correcta. Se presentó 23 días después de la baja, dentro de los 30 días que tiene para reasumir sus funciones tras el servicio militar. Y el llamamiento a filas interrumpió sus vacaciones, que puede reanudar por los 9 días hábiles que faltaban."
+      },
+      {
+        "id": "C",
+        "texto": "Hay abandono, pues debía volver al día siguiente de la baja, y los 9 días pendientes se le pagan en dinero.",
+        "explicacion": "Incorrecta. Tras el servicio militar no hay que volver al día siguiente de la baja: el abandono se configura si no reasume dentro de los 30 días siguientes."
+      },
+      {
+        "id": "D",
+        "texto": "Hay abandono, pues debía volver al día siguiente de la baja, y perdió los 9 días hábiles de vacaciones pendientes.",
+        "explicacion": "Incorrecta. Equivoca las dos cosas: no hay abandono, porque se presentó dentro de los 30 días, y los días de vacaciones no se perdieron, porque el llamamiento a filas interrumpió su disfrute."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el auxiliar estaba en vacaciones cuando lo llamaron a filas, recibió la baja el 1/6/2026 y se presentó el 24/6/2026. Reglas: el art. 2.2.11.1.9 num. 1 del Decreto 1083 (mod. Decreto 648 de 2017) configura el abandono si no reasume dentro de los 30 días siguientes al vencimiento del servicio militar; el art. 15 lit. e del Decreto Ley 1045 dice que el llamamiento a filas interrumpe las vacaciones, y su art. 16 permite reanudarlas por el tiempo que falte. Cálculo: 23 días. Conclusión: no hay abandono y puede reanudar 9 días hábiles.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TH-050",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Situaciones administrativas: permisos",
+    "subtema": "Permiso sindical: única razón para negarlo o limitarlo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1072 de 2015 y Decreto 1083 de 2015",
+    "articulos": [
+      "Decreto 1072 de 2015, art. 2.2.2.5.4 incs. 1 y 3 (modificado por el art. 1 del Decreto 720 de 2024)",
+      "Decreto 1083 de 2015, art. 2.2.5.5.17 inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "Decreto 1083 de 2015, art. 2.2.5.5.18 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Los permisos sindicales deberán ser solicitados por escrito por el Presidente o Secretario General de la organización sindical, como mínimo con ocho (8) días de antelación a la fecha para la cual se solicita el permiso, cuando se trate de delegados previstos en los estatutos sindicales para las asambleas sindicales, la negociación colectiva y los procesos de capacitación y formación [...] La única razón por la que se puede negar o limitar el permiso sindical es demostrando que con la ausencia del servidor público se afectará la debida prestación del servicio que debe prestar la entidad a la que pertenece, sin que sea posible en forma alguna superar la ausencia. [...] ARTÍCULO 2.2.5.5.17 Permiso remunerado. El empleado puede solicitar por escrito permiso remunerado hasta por tres (3) días hábiles cuando medie justa causa. [...] ARTÍCULO 2.2.5.5.18 Permiso sindical. El empleado puede solicitar los permisos sindicales remunerados necesarios para el cumplimiento de su gestión, en los términos establecidos en el Capítulo 5 del Título 2 de la Parte 2 del Libro 2 del Decreto 1072 de 2015, Único Reglamentario del Sector Trabajo y las normas que lo modifiquen, sustituyan o adicionen. Durante el período de permiso sindical, el empleado público mantendrá los derechos salariales y prestacionales, así como los derivados de la carrera en cuyo registro se encuentre inscrito.",
+    "pregunta": "El presidente del sindicato de empleados de una gobernación pidió por escrito, con diez días de anticipación, un permiso sindical de cinco días hábiles para dos afiliados que, según los estatutos, son los delegados a un curso de formación sindical. El secretario de despacho donde ellos trabajan propone conceder solo tres días, por ser el tope de los permisos remunerados, o exigirles que repongan después las horas de ausencia. La profesional de talento humano debe emitir concepto. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Conceder solo tres días, que es el máximo de los permisos remunerados que puede otorgar la gobernación.",
+        "explicacion": "Incorrecta. El tope de tres días hábiles es el del permiso remunerado por justa causa. El permiso sindical se rige por el Decreto 1072 y se concede por lo necesario para la gestión sindical."
+      },
+      {
+        "id": "B",
+        "texto": "Conceder los cinco días, con el compromiso de que los delegados repongan luego el tiempo de ausencia.",
+        "explicacion": "Incorrecta. Confunde el permiso sindical con un permiso compensado. Durante el permiso sindical el empleado mantiene sus derechos salariales y prestacionales, sin deber de reponer el tiempo."
+      },
+      {
+        "id": "C",
+        "texto": "Conceder los cinco días, a menos que se pruebe que su ausencia dejaría el servicio desatendido sin remedio.",
+        "explicacion": "Correcta. La única razón para negar o limitar el permiso sindical es demostrar que la ausencia afectará la prestación del servicio sin que sea posible superarla. Además, la solicitud se hizo con más de los 8 días de antelación exigidos para los delegados a procesos de capacitación y formación."
+      },
+      {
+        "id": "D",
+        "texto": "Conceder los cinco días como permiso no remunerado, dado que la actividad interesa al sindicato y no al servicio.",
+        "explicacion": "Incorrecta. El permiso sindical es remunerado: durante él, el empleado conserva sus derechos salariales y prestacionales y los de carrera."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el sindicato pidió a tiempo un permiso de cinco días para delegados a un curso de formación, y el secretario quiere limitarlo a tres días o exigir que se reponga el tiempo. Reglas: el art. 2.2.2.5.4 del Decreto 1072 (mod. Decreto 720 de 2024) dice que la única razón para negar o limitar el permiso sindical es demostrar que la ausencia afectará el servicio sin forma de superarla; el art. 2.2.5.5.18 del Decreto 1083 lo hace remunerado, y el tope de tres días (art. 2.2.5.5.17) es de otro permiso. Conclusión: solo puede negarse o limitarse por esa causa.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

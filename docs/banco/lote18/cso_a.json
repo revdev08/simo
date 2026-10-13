@@ -1,0 +1,1050 @@
+[
+  {
+    "id": "TC-CSO-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Husos horarios: diferencia de hora a partir de la longitud",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Utilizo coordenadas, convenciones y escalas para trabajar con mapas y planos de representación. [...] Reconozco y utilizo los husos horarios.",
+    "pregunta": "En una clase de 7.° sobre husos horarios, un docente plantea este problema: un barco se encuentra a 75° de longitud oeste y allí, según los husos horarios teóricos, son las 8:00 a. m. En ese mismo instante, ¿qué hora es en una ciudad situada a 45° de longitud este, según esos husos teóricos y sin tener en cuenta la hora oficial que adopte cada país?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las 12:00 de la noche, porque los dos puntos están separados por 120° y hacia el este la hora es menos avanzada.",
+        "explicacion": "Incorrecta. Calcula bien la separación (120°, es decir, 8 horas), pero aplica el sentido al revés: como la Tierra gira de oeste a este, el Sol «llega» antes a los lugares situados al oriente, donde la hora es más avanzada."
+      },
+      {
+        "id": "B",
+        "texto": "Las 10:00 de la mañana, porque los dos puntos están separados por 30° y hacia el este la hora es más avanzada.",
+        "explicacion": "Incorrecta. Resta las longitudes (75° − 45° = 30°) como si estuvieran en el mismo hemisferio. Una está al oeste y la otra al este de Greenwich, así que se suman: 75° + 45° = 120°."
+      },
+      {
+        "id": "C",
+        "texto": "Las 4:00 de la tarde, porque los dos puntos están separados por 120° y hacia el este la hora es más avanzada.",
+        "explicacion": "Correcta. Los puntos están a lados opuestos del meridiano de Greenwich, así que su separación es 75° + 45° = 120°. Como la Tierra gira 360° en 24 horas, cada huso abarca 15°: 120° ÷ 15° = 8 horas. Hacia el este la hora es más avanzada: 8:00 a. m. + 8 h = 4:00 p. m."
+      },
+      {
+        "id": "D",
+        "texto": "Las 6:00 de la mañana, porque los dos puntos están separados por 30° y hacia el este la hora es menos avanzada.",
+        "explicacion": "Incorrecta. Comete los dos errores: resta las longitudes en lugar de sumarlas (30° en vez de 120°) y atrasa la hora hacia el este, cuando debe adelantarla."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: un punto está a 75° O y el otro a 45° E, a lados opuestos de Greenwich. Concepto: la Tierra gira 360° en 24 horas, así que cada huso teórico abarca 15°, y hacia el este la hora avanza. Cálculo: 75° + 45° = 120°; 120° ÷ 15° = 8 horas; 8:00 a. m. + 8 h = 4:00 p. m. Conclusión: en la ciudad son las 4:00 de la tarde.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Escala: superficie real y efecto de cambiar la escala sobre el área representada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Utilizo coordenadas, convenciones y escalas para trabajar con mapas y planos de representación.",
+    "pregunta": "Una docente de 7.° trabaja con el mapa de un municipio a escala 1:50.000, en el que una reserva forestal aparece como un rectángulo de 4 cm por 3 cm. Antes de la clase calcula la superficie real de la reserva y prevé cómo se vería en otro mapa del mismo municipio, a escala 1:25.000. ¿Qué resultados debe obtener?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La reserva tiene unas 300 hectáreas, y en el mapa a escala 1:25.000 su superficie en el papel se multiplicaría por cuatro.",
+        "explicacion": "Correcta. A escala 1:50.000, 1 cm del mapa equivale a 50.000 cm, es decir, a 0,5 km. La reserva mide 2 km por 1,5 km: 3 km², que son 300 hectáreas (1 km² = 100 ha). En el mapa 1:25.000 cada lado mide el doble (8 cm por 6 cm), y el área en el papel pasa de 12 cm² a 48 cm²: se multiplica por 4."
+      },
+      {
+        "id": "B",
+        "texto": "La reserva tiene unas 600 hectáreas, y en el mapa a escala 1:25.000 su superficie en el papel se multiplicaría por cuatro.",
+        "explicacion": "Incorrecta. Acierta en que el área en el papel se multiplica por 4, pero calcula mal la superficie real: multiplica los 12 cm² por 0,5 km, como si la escala lineal sirviera para áreas. Hay que convertir cada lado antes de multiplicar: 2 km × 1,5 km = 3 km² = 300 ha."
+      },
+      {
+        "id": "C",
+        "texto": "La reserva tiene unas 300 hectáreas, y en el mapa a escala 1:25.000 su superficie en el papel se multiplicaría por dos.",
+        "explicacion": "Incorrecta. Calcula bien la superficie real, pero supone que el área en el papel cambia en la misma proporción que la escala. Al pasar a 1:25.000 cada lado se duplica, y el área se multiplica por 2 × 2 = 4."
+      },
+      {
+        "id": "D",
+        "texto": "La reserva tiene unas 600 hectáreas, y en el mapa a escala 1:25.000 su superficie en el papel se multiplicaría por dos.",
+        "explicacion": "Incorrecta. Aplica la escala lineal a las áreas en los dos cálculos: multiplica los 12 cm² por 0,5 km (6 km², es decir, 600 ha) y supone que duplicar la escala duplica el área en el papel."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el rectángulo mide 4 cm por 3 cm a escala 1:50.000. Concepto: la escala es una razón entre longitudes, y las áreas cambian con el cuadrado de esa razón. Cálculo: 1 cm = 0,5 km, así que la reserva mide 2 km × 1,5 km = 3 km² = 300 ha. A 1:25.000 cada lado se duplica (8 cm × 6 cm) y el área en el papel pasa de 12 cm² a 48 cm². Conclusión: 300 ha, y el área en el papel se multiplica por cuatro.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Estructura de la población: índice de dependencia y envejecimiento en un municipio rural",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) social, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico y analizo las consecuencias sociales, económicas, políticas y culturales de los procesos de concentración de la población en los centros urbanos y abandono del campo. [...] Utilizo herramientas de las diferentes disciplinas de las ciencias sociales para analizar la información.",
+    "pregunta": "Un docente de 10.° analiza con su grupo dos censos de un municipio rural. En el primero había 8.400 personas de 0 a 14 años, 12.600 de 15 a 64 y 1.050 de 65 años o más. En el segundo, 4.950 de 0 a 14 años, 9.000 de 15 a 64 y 1.800 de 65 años o más. Les pide calcular el índice de dependencia demográfica de cada censo e interpretar el resultado. ¿Qué conclusión es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El índice se mantuvo en unos 43 dependientes por cada 100 habitantes del municipio, pero bajó el peso de la población de 15 a 64 años en el total.",
+        "explicacion": "Incorrecta. Falla en el cálculo y en la interpretación. Divide a los dependientes entre toda la población (9.450 ÷ 22.050 y 6.750 ÷ 15.750, unos 42,9 por 100), cuando el índice los relaciona con la población de 15 a 64 años. Además, el peso de esa población no bajó: aunque pasó de 12.600 a 9.000 personas, sigue siendo el 57,1% del total en los dos censos."
+      },
+      {
+        "id": "B",
+        "texto": "El índice se mantuvo en unos 43 dependientes por cada 100 habitantes del municipio, pero ahora hay proporcionalmente menos niños y más mayores.",
+        "explicacion": "Incorrecta. Acierta en el cambio de composición, pero no en el índice: divide a los dependientes entre toda la población (unos 42,9 por 100), cuando el índice de dependencia los relaciona con la población de 15 a 64 años, y así da 75 por 100 en los dos censos."
+      },
+      {
+        "id": "C",
+        "texto": "El índice se mantuvo en 75 dependientes por cada 100 personas de 15 a 64 años, pero bajó el peso de esa población en el total del municipio.",
+        "explicacion": "Incorrecta. Calcula bien el índice, pero confunde la cifra absoluta con la proporción: la población de 15 a 64 años bajó de 12.600 a 9.000 personas, pero su peso en el total se mantuvo en el 57,1%, precisamente porque el índice no cambió."
+      },
+      {
+        "id": "D",
+        "texto": "El índice se mantuvo en 75 dependientes por cada 100 personas de 15 a 64 años, pero ahora hay proporcionalmente menos niños y más mayores.",
+        "explicacion": "Correcta. Índice = (0 a 14 + 65 y más) ÷ (15 a 64) × 100. Primer censo: (8.400 + 1.050) ÷ 12.600 × 100 = 75. Segundo: (4.950 + 1.800) ÷ 9.000 × 100 = 75. El índice es igual, pero los menores de 15 bajaron del 38,1% al 31,4% del total y los mayores de 65 subieron del 4,8% al 11,4%: la población envejeció."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los dos censos tienen el mismo índice, pero distinta composición por edades. Concepto: el índice de dependencia relaciona a los menores de 15 y los mayores de 65 con la población de 15 a 64 años, no con el total. Cálculo: 9.450 ÷ 12.600 × 100 = 75 y 6.750 ÷ 9.000 × 100 = 75; la población de 15 a 64 años es el 57,1% del total en ambos censos, mientras los niños pasan del 38,1% al 31,4% y los mayores, del 4,8% al 11,4%. Conclusión: el índice no cambia, pero la población envejeció.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Clasificación de fuentes: una pintura posterior a los hechos como fuente primaria o secundaria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Clasifico las fuentes que utilizo (en primarias o secundarias, y en orales, escritas, iconográficas, estadísticas…). [...] Identifico las características básicas de los documentos que utilizo (qué tipo de documento es, quién es el autor, a quién está dirigido, de qué habla, por qué se produjo...).",
+    "pregunta": "Para una clase de 8.° sobre el 20 de julio de 1810, un docente reúne varias fuentes. Una de ellas es un óleo pintado hacia 1880 que representa lo ocurrido ese día en Santa Fe. Un estudiante lo clasifica como fuente primaria «porque es antiguo y muestra el hecho». ¿Cómo debe clasificar el docente esa pintura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como primaria sobre los hechos de 1810 si el pintor se basó en relatos de testigos de esa jornada, y como secundaria si los imaginó.",
+        "explicacion": "Incorrecta. Basarse en testimonios no convierte una obra posterior en fuente primaria: el pintor no presenció los hechos y los elaboró unos setenta años después a partir de otras fuentes. Eso la hace secundaria sobre 1810, sea más o menos fiel."
+      },
+      {
+        "id": "B",
+        "texto": "Como secundaria sobre los hechos de 1810, y como primaria para estudiar cómo se representaba la Independencia hacia 1880.",
+        "explicacion": "Correcta. Una fuente es primaria cuando se produjo en el tiempo que se estudia, por quienes lo vivieron. El óleo es una elaboración posterior de los hechos de 1810, pero es un testimonio directo de cómo se recordaba y representaba la Independencia hacia 1880. La clasificación depende de la pregunta que se le hace a la fuente."
+      },
+      {
+        "id": "C",
+        "texto": "Como secundaria para cualquier propósito, ya que una imagen interpreta los hechos, mientras que un documento escrito los registra.",
+        "explicacion": "Incorrecta. Confunde el tipo de fuente (iconográfica o escrita) con su relación con los hechos (primaria o secundaria). Hay imágenes primarias y documentos escritos secundarios, y todo documento, escrito o no, interpreta lo que registra."
+      },
+      {
+        "id": "D",
+        "texto": "Como primaria sobre los hechos de 1810, y como secundaria para estudiar cómo se representaba la Independencia hacia 1880.",
+        "explicacion": "Incorrecta. Invierte la clasificación: la pintura no es del tiempo de los hechos de 1810, pero sí del tiempo en que se pintó, por lo que es primaria para estudiar la mirada de 1880."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el óleo se pintó unos setenta años después de los hechos que representa. Concepto: una fuente es primaria cuando se produjo en el tiempo estudiado, y secundaria cuando elabora después lo ocurrido; la clasificación depende de la pregunta de investigación. Conclusión: es secundaria para conocer el 20 de julio de 1810 y primaria para estudiar cómo se representaba la Independencia hacia 1880.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Multicausalidad de la independencia: condiciones de largo plazo, crisis de 1808 y hecho detonante",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Analizo algunas de las condiciones sociales, económicas, políticas y culturales que dieron origen a los procesos de independencia de los pueblos americanos. [...] Reconozco múltiples relaciones entre eventos históricos: sus causas, sus consecuencias y su incidencia en la vida de los diferentes agentes y grupos involucrados.",
+    "pregunta": "Un docente de 8.° prepara una explicación sobre el origen de la independencia de la Nueva Granada que relacione tres elementos: el descontento de los criollos por su exclusión de los altos cargos del gobierno colonial, la crisis de la monarquía española tras la invasión napoleónica de 1808 y el altercado del 20 de julio de 1810 en Santa Fe. ¿Qué explicación es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El descontento criollo venía de antes, y la crisis de 1808 abrió el vacío de poder que permitió formar juntas; el altercado del 20 de julio lo desató en Santa Fe.",
+        "explicacion": "Correcta. Relaciona causas de distinto alcance: una condición de largo plazo (la exclusión de los criollos), una coyuntura que abrió la oportunidad (con la abdicación de los reyes y la ocupación francesa, los territorios quedaron sin un poder legítimo indiscutido y surgieron juntas de gobierno) y un hecho detonante local (el altercado del 20 de julio)."
+      },
+      {
+        "id": "B",
+        "texto": "La crisis de 1808 creó el descontento criollo, que antes no existía, y lo convirtió en rechazo a la Corona; el altercado del 20 de julio desató ese proceso en Santa Fe.",
+        "explicacion": "Incorrecta. Invierte la relación temporal: el descontento por la exclusión de los criollos de los altos cargos es anterior a 1808. La crisis no lo creó; le dio la oportunidad de expresarse en juntas."
+      },
+      {
+        "id": "C",
+        "texto": "El descontento criollo venía de antes y por sí mismo condujo a formar juntas; la crisis de 1808 fue un hecho europeo sin efecto en el proceso de la Nueva Granada.",
+        "explicacion": "Incorrecta. Ignora la coyuntura: sin la crisis de la monarquía y el vacío de poder de 1808 no se explica por qué surgieron juntas en esos mismos años en casi toda la América española. Atribuye todo a una sola causa de largo plazo."
+      },
+      {
+        "id": "D",
+        "texto": "El descontento criollo venía de antes y estalló el 20 de julio, cuando la junta de Santa Fe proclamó la independencia absoluta de España y desconoció a Fernando VII.",
+        "explicacion": "Incorrecta. Reduce el proceso a un estallido y comete un error de hecho: la junta formada en Santa Fe en 1810 no proclamó la independencia absoluta ni desconoció a Fernando VII; las declaraciones de independencia absoluta llegaron después."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el docente debe relacionar una condición de largo plazo, una coyuntura y un hecho puntual. Concepto: la explicación multicausal distingue causas estructurales, coyunturales y detonantes, y muestra cómo se combinan. Hechos: la exclusión criolla era anterior; la crisis de 1808 dejó un vacío de poder que llevó a formar juntas; el 20 de julio desató el proceso en Santa Fe, sin proclamar aún la independencia absoluta. Conclusión: la explicación que articula las tres.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-006",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Revolución Industrial, librecambio y artesanos en la Nueva Granada de mediados del siglo XIX",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, octavo a noveno grado",
+      "Relaciones espaciales y ambientales, octavo a noveno grado"
+    ],
+    "texto_fuente": "Explico las principales características de algunas revoluciones de los siglos XVIII y XIX (Revolución Francesa, Revolución Industrial...). [...] Explico la influencia de estas revoluciones en algunos procesos sociales, políticos y económicos posteriores en Colombia y América Latina. [...] Explico las políticas que orientaron la economía colombiana a lo largo del siglo XIX y primera mitad del XX (proteccionismo, liberalismo económico...).",
+    "pregunta": "Un docente de 8.° prepara una clase sobre la influencia de la Revolución Industrial en Colombia. Reúne tres hechos de la Nueva Granada de mediados del siglo XIX: el gobierno rebajó los aranceles a las importaciones, crecieron las exportaciones de tabaco y los artesanos de Bogotá se organizaron para pedir protección. ¿Qué explicación relaciona correctamente esos hechos con la Revolución Industrial?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las primeras fábricas textiles de Bogotá, montadas con máquinas inglesas, desplazaron a los artesanos, y el tabaco se exportaba para pagar esa maquinaria.",
+        "explicacion": "Incorrecta. Es un anacronismo: a mediados del siglo XIX no había en la Nueva Granada una industria fabril que desplazara a los artesanos; la industria fabril colombiana se desarrolló sobre todo en las primeras décadas del siglo XX. La competencia venía de las manufacturas importadas."
+      },
+      {
+        "id": "B",
+        "texto": "El auge del tabaco se llevó a los trabajadores de los talleres hacia las zonas tabacaleras, y los artesanos pidieron protección porque les faltaba mano de obra.",
+        "explicacion": "Incorrecta. Confunde el motivo del reclamo: los artesanos no pedían protección por falta de trabajadores, sino frente a la competencia de las manufacturas importadas, que entraban más baratas con la rebaja de los aranceles."
+      },
+      {
+        "id": "C",
+        "texto": "Los aranceles se rebajaron para proteger a los artesanos de la competencia de las fábricas inglesas, y ellos se organizaron para pedir que se rebajaran todavía más.",
+        "explicacion": "Incorrecta. Confunde la función del arancel: rebajarlo abarata las importaciones y deja más expuestos a los productores locales. Por eso los artesanos pedían lo contrario, aranceles más altos que los protegieran."
+      },
+      {
+        "id": "D",
+        "texto": "Las manufacturas inglesas, hechas en fábricas, entraron más baratas con los aranceles bajos y competían con los artesanos, mientras el país exportaba tabaco.",
+        "explicacion": "Correcta. La industrialización inglesa producía manufacturas baratas y demandaba materias primas. Con la política librecambista de mediados de siglo, los textiles importados competían con los artesanos, que se organizaron para pedir protección arancelaria, mientras la economía se volcaba a exportar productos primarios como el tabaco."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: rebaja de aranceles, auge del tabaco y reclamo de protección de los artesanos en la Nueva Granada de mediados del siglo XIX. Concepto: la Revolución Industrial abarató las manufacturas europeas y aumentó la demanda de materias primas; un arancel bajo facilita las importaciones y expone a los productores locales. Conclusión: con el librecambio, las manufacturas inglesas compitieron con los artesanos y el país se especializó en exportar productos primarios como el tabaco; la industria fabril colombiana llegó después.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Periodización histórica: las fechas que separan las edades como convenciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Reconozco que la división entre un período histórico y otro es un intento por caracterizar los hechos históricos a partir de marcadas transformaciones sociales.",
+    "pregunta": "En 7.°, los estudiantes notan que un libro de texto sitúa el comienzo de la Edad Moderna en 1453, con la toma de Constantinopla por los otomanos, y otro en 1492, con la llegada de Colón a América. Preguntan cuál de los dos tiene la razón. ¿Qué debe explicarles la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que cualquiera de las dos sirve, porque las edades son etiquetas arbitrarias que no dicen nada de los cambios ocurridos en cada período.",
+        "explicacion": "Incorrecta. Cae en el relativismo: las fechas son convencionales, pero no arbitrarias. Una periodización es un intento de caracterizar etapas a partir de transformaciones sociales marcadas, y por eso se escogen hitos que simbolizan esos cambios."
+      },
+      {
+        "id": "B",
+        "texto": "Que las dos son defendibles: cada fecha simboliza una transformación de fondo distinta, y cada autor elige la que juzga más significativa.",
+        "explicacion": "Correcta. Dividir la historia en períodos es un intento de caracterizar etapas a partir de grandes transformaciones, que ocurren de forma gradual. Las fechas son hitos simbólicos: según el cambio que se considere decisivo (el fin del Imperio bizantino o la expansión atlántica europea), se elige uno u otro."
+      },
+      {
+        "id": "C",
+        "texto": "Que la correcta es 1492, porque la llegada a América transformó el mundo entero, mientras que la toma de Constantinopla tuvo un alcance regional.",
+        "explicacion": "Incorrecta. Da un argumento razonable para preferir 1492, pero lo presenta como la fecha «correcta». Las periodizaciones no son verdaderas o falsas: son criterios para organizar el pasado, y un historiador puede preferir otro hito con buenas razones."
+      },
+      {
+        "id": "D",
+        "texto": "Que las dos valen, cada una para su continente: 1453 cierra la Edad Media europea, y 1492, la Edad Media de los pueblos americanos.",
+        "explicacion": "Incorrecta. Traslada a América una periodización construida para la historia europea: las sociedades americanas anteriores a 1492 no tuvieron una «Edad Media». Las dos fechas son hitos alternativos para el comienzo de una misma época de la historia europea."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: dos libros fijan fechas distintas para el inicio de la misma época. Concepto: la división en períodos es un intento de caracterizar etapas a partir de transformaciones sociales marcadas y graduales; los hitos son convencionales, pero no arbitrarios, y dependen del cambio que cada autor considere decisivo. Conclusión: ambas fechas son defendibles; ninguna es la «correcta», y la periodización europea no se traslada a otras sociedades.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-008",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Mecanismos de protección: acción de tutela frente a acción de cumplimiento y acción popular",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones ético-políticas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico mecanismos e instituciones constitucionales que protegen los derechos fundamentales de los ciudadanos y las ciudadanas.",
+    "pregunta": "En una clase de 11.°, la docente plantea dos situaciones para que el grupo identifique el mecanismo constitucional adecuado. Primera: un colegio oficial le niega la matrícula a una estudiante de 15 años porque está embarazada, aunque una resolución de la secretaría de educación ordena garantizar la permanencia de las estudiantes en esa condición. Segunda: el alcantarillado de un municipio vierte aguas residuales sin tratar en una quebrada que atraviesa el casco urbano y que nadie usa para consumo humano; la contaminación ha acabado con los peces y la vegetación de la ribera, y un grupo de vecinos quiere que se detenga el daño ambiental y se recupere el cauce. ¿Qué mecanismo corresponde a cada situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Para la primera, la acción de cumplimiento; para la segunda, la acción popular.",
+        "explicacion": "Incorrecta. Acierta en la segunda, pero no en la primera: aunque hay una resolución incumplida, lo que está en juego son derechos fundamentales de la estudiante. La acción de cumplimiento no procede para proteger derechos que pueden garantizarse mediante la tutela (Ley 393 de 1997, art. 9)."
+      },
+      {
+        "id": "B",
+        "texto": "Para la primera, la acción de tutela; para la segunda, también la acción de tutela.",
+        "explicacion": "Incorrecta. Acierta en la primera, pero la tutela no procede para proteger derechos colectivos como el ambiente, salvo para evitar un perjuicio irremediable a un derecho del afectado (Decreto 2591 de 1991, art. 6, num. 3). En la quebrada no se afecta un derecho fundamental de una persona determinada, como el acceso al agua para consumo: lo que está en juego es el ambiente de la comunidad, que se protege con la acción popular."
+      },
+      {
+        "id": "C",
+        "texto": "Para la primera, la acción de tutela; para la segunda, la acción popular.",
+        "explicacion": "Correcta. La tutela protege de forma inmediata los derechos constitucionales fundamentales vulnerados por la acción o la omisión de una autoridad pública (art. 86 de la Constitución), como la educación y la igualdad de la estudiante. La acción popular protege los derechos e intereses colectivos, entre ellos el ambiente (art. 88), que es lo que se afecta en la quebrada."
+      },
+      {
+        "id": "D",
+        "texto": "Para la primera, la acción de cumplimiento; para la segunda, la acción de tutela.",
+        "explicacion": "Incorrecta. Invierte los mecanismos: para la estudiante procede la tutela, que desplaza a la acción de cumplimiento cuando puede usarse, y el daño ambiental colectivo, sin afectación de un derecho fundamental individual, se enfrenta con la acción popular."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en la primera situación una autoridad vulnera derechos fundamentales de una persona; en la segunda se afecta el ambiente de la comunidad, sin que nadie dependa de esa agua para su consumo. Reglas: la tutela protege derechos fundamentales (art. 86) y desplaza a la acción de cumplimiento (Ley 393 de 1997, art. 9); la acción popular protege derechos colectivos como el ambiente (art. 88), y la tutela no procede para ellos salvo perjuicio irremediable (Decreto 2591 de 1991, art. 6). Conclusión: tutela y acción popular.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Forma de Estado: república unitaria y descentralizada de 1991 frente al federalismo de 1863",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones ético-políticas, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico y explico algunos de los principales procesos políticos del siglo XIX en Colombia (federalismo, centralismo, radicalismo liberal, Regeneración...).",
+    "pregunta": "En 9.°, después de estudiar la Constitución de 1863, un estudiante afirma: «Con la Constitución de 1991 Colombia volvió a ser un Estado federal, porque hoy los departamentos eligen gobernador y tienen asamblea propia». ¿Qué debe responderle el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que tiene razón, pues la elección de gobernadores y las asambleas devolvieron a los departamentos la soberanía que tenían los estados en 1863.",
+        "explicacion": "Incorrecta. Confunde descentralización con federalismo. Los departamentos tienen autonomía para gestionar sus asuntos, pero no soberanía: no se dan su propia constitución ni expiden leyes, y se sujetan a la Constitución y a las leyes del Congreso."
+      },
+      {
+        "id": "B",
+        "texto": "Que se equivoca, pues los gobernadores siguen siendo nombrados por el presidente, como en 1886, y las asambleas no expiden normas propias.",
+        "explicacion": "Incorrecta. Describe el régimen de 1886, no el actual. Desde 1991 los gobernadores se eligen por voto popular (art. 303) y las asambleas expiden ordenanzas sobre los asuntos del departamento (art. 300)."
+      },
+      {
+        "id": "C",
+        "texto": "Que se equivoca, pues el país no ha tenido un régimen federal: en 1863 los estados eran divisiones administrativas sujetas a las leyes del Congreso.",
+        "explicacion": "Incorrecta. La Constitución de 1863 (Estados Unidos de Colombia) sí organizó un régimen federal, con estados soberanos que tenían sus propias constituciones y leyes."
+      },
+      {
+        "id": "D",
+        "texto": "Que se equivoca, pues es una república unitaria y descentralizada, y los departamentos se rigen por la Constitución y las leyes del Congreso.",
+        "explicacion": "Correcta. El art. 1 de la Constitución define a Colombia como «República unitaria, descentralizada, con autonomía de sus entidades territoriales». Los departamentos eligen sus autoridades y administran sus asuntos (arts. 298 y 303), pero dentro de la Constitución y de las leyes que el Congreso expide para todo el país (art. 150), a diferencia de los estados soberanos de 1863."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante deduce el federalismo de la elección de gobernadores y de la existencia de asambleas. Regla: el art. 1 de la Constitución define una república unitaria y descentralizada; los departamentos tienen autonomía, no soberanía, y el Congreso hace las leyes para todo el territorio (art. 150). En 1863, en cambio, los estados eran soberanos y tenían constituciones propias. Conclusión: elegir autoridades propias es descentralización, no federalismo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: saber del área",
+    "subtema": "Organismos de control: control fiscal de la contraloría y control disciplinario de la Procuraduría",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones ético-políticas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico las funciones que cumplen las oficinas de vigilancia y control del Estado.",
+    "pregunta": "En un proyecto de 10.° sobre control a la gestión pública, los estudiantes encuentran que la alcaldía pagó completa la construcción de la cancha del colegio, aunque la obra quedó a medias, y que el funcionario de la alcaldía que la supervisaba firmó el acta de recibo. El docente les pide precisar qué organismo debe establecer si hubo un detrimento del patrimonio público que deba resarcirse y cuál debe investigar si el supervisor faltó a sus deberes. ¿Qué respuesta es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La contraloría establece el detrimento y su resarcimiento, y la Procuraduría investiga la conducta del supervisor.",
+        "explicacion": "Correcta. La vigilancia y el control fiscal corresponden a las contralorías, que establecen la responsabilidad derivada de la gestión fiscal y buscan el resarcimiento del daño (arts. 267, 268 num. 5 y 272 de la Constitución). La vigilancia de la conducta oficial y el poder disciplinario corresponden a la Procuraduría (art. 277 num. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "La Procuraduría establece el detrimento y su resarcimiento, y la contraloría investiga la conducta del supervisor.",
+        "explicacion": "Incorrecta. Invierte las competencias: el daño al patrimonio público es materia del control fiscal (contraloría), y la conducta del servidor, del control disciplinario (Procuraduría)."
+      },
+      {
+        "id": "C",
+        "texto": "La contraloría establece el detrimento y su resarcimiento, y también investiga la conducta del supervisor.",
+        "explicacion": "Incorrecta. Acierta en el control fiscal, pero la contraloría no adelanta el proceso disciplinario: puede promover la investigación ante la autoridad competente (art. 268 num. 8), pero no juzgar la conducta del servidor."
+      },
+      {
+        "id": "D",
+        "texto": "La Procuraduría establece el detrimento y su resarcimiento, y también investiga la conducta del supervisor.",
+        "explicacion": "Incorrecta. Acierta en lo disciplinario, pero la Procuraduría no establece la responsabilidad fiscal ni el resarcimiento del daño: esa es función de las contralorías (art. 268 num. 5)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay un posible daño a recursos públicos (se pagó una obra inconclusa) y una posible falta de un servidor (firmó el recibo). Reglas: las contralorías ejercen el control fiscal y establecen la responsabilidad que se deriva de la gestión fiscal (arts. 267, 268 num. 5 y 272); la Procuraduría ejerce la vigilancia superior de la conducta oficial y el poder disciplinario (art. 277 num. 6). Conclusión: contraloría para el detrimento y Procuraduría para la conducta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Trabajo con fuentes en el aula: autor, destinatario, propósito y tesis de documentos sobre la abolición",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado",
+      "Relaciones con la historia y las culturas, octavo a noveno grado"
+    ],
+    "texto_fuente": "Identifico las características básicas de los documentos que utilizo (qué tipo de documento es, quién es el autor, a quién está dirigido, de qué habla, por qué se produjo...). [...] Analizo críticamente los documentos que utilizo e identifico sus tesis. [...] Explico algunos de los grandes cambios sociales que se dieron en Colombia entre los siglos XIX y primera mitad del XX (abolición de la esclavitud, surgimiento de movimientos obreros...).",
+    "pregunta": "Una docente de 9.° va a estudiar la abolición de la esclavitud en la Nueva Granada, a mediados del siglo XIX, con tres documentos de la época: un fragmento de la ley de abolición, la carta de un propietario que pide al gobierno una indemnización por las personas esclavizadas que pierde y la solicitud de libertad que un hombre esclavizado dirigió a un juez años antes. Quiere que el trabajo con estos documentos desarrolle lo que piden los estándares de 8.° y 9.° para el manejo de fuentes. ¿Qué actividad debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que extraigan de los tres documentos las fechas, los lugares y las personas que mencionan y, con esos datos, construyan una línea de tiempo ilustrada de la abolición.",
+        "explicacion": "Incorrecta. Es una actividad activa, pero usa los documentos como simples depósitos de datos: no se pregunta quién los produjo, para qué ni qué defiende cada uno, que es lo que permite analizarlos críticamente."
+      },
+      {
+        "id": "B",
+        "texto": "Que establezcan quién produjo cada documento, para quién, con qué propósito y qué sostiene, y comparen cómo ven la libertad el propietario y el esclavizado.",
+        "explicacion": "Correcta. Desarrolla lo que piden los estándares: identificar las características básicas de cada documento (autor, destinatario, propósito) y analizarlo críticamente hasta identificar su tesis. La comparación muestra, además, que el mismo hecho se ve de forma distinta según la posición de quien escribe."
+      },
+      {
+        "id": "C",
+        "texto": "Que, a partir de los tres documentos, escriban y representen un diálogo entre el propietario y el hombre esclavizado en el que cada uno exprese lo que sentía.",
+        "explicacion": "Incorrecta. La dramatización puede despertar empatía, pero lleva a imaginar sentimientos en lugar de analizar lo que los documentos dicen, quién los escribió y con qué intención."
+      },
+      {
+        "id": "D",
+        "texto": "Que escuchen la explicación de la docente sobre el contexto y la postura de cada autor y luego la resuman en un cuadro comparativo en el cuaderno.",
+        "explicacion": "Incorrecta. El análisis es correcto, pero lo hace la docente: los estudiantes reciben la interpretación ya elaborada y no aprenden a interrogar las fuentes por sí mismos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la docente tiene tres documentos de autores con posiciones opuestas y quiere desarrollar el manejo de fuentes de 8.° y 9.°. Estándares: identificar qué tipo de documento es, quién es el autor, a quién está dirigido y por qué se produjo, y analizar críticamente los documentos e identificar sus tesis. Conclusión: que los estudiantes interroguen cada documento y comparen las posturas; las demás actividades usan los documentos como datos, los sustituyen por la imaginación o entregan el análisis hecho.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Debate sobre un tema sensible: el encuentro Europa-América-África con respeto por la diversidad del grupo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, sexto a séptimo grado",
+      "Desarrollo compromisos personales y sociales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Identifico y comparo el legado de cada una de las culturas involucradas en el encuentro Europa-América-África. [...] Reconozco y respeto las diferentes posturas frente a los fenómenos sociales. [...] Participo en debates y discusiones: asumo una posición, la confronto, la defiendo y soy capaz de modificar mis posturas cuando reconozco mayor peso en los argumentos de otras personas.",
+    "pregunta": "En 7.°, al estudiar el encuentro entre Europa, América y África, el curso se divide: unos dicen que fue solo destrucción y otros que trajo la civilización. En el grupo hay estudiantes de familias indígenas, afrodescendientes y mestizas. La docente decide organizar un debate a partir de esa discusión. ¿Cómo debe hacerlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener las dos posturas, pedir a cada estudiante que escoja una y la sustente con crónicas y testimonios indígenas, y permitirle cambiar de lado al final.",
+        "explicacion": "Incorrecta. Es activa y permite revisar la postura, pero conserva una disyuntiva que simplifica el proceso («destrucción» o «civilización») y deja por fuera a los pueblos africanos. El estándar pide identificar y comparar el legado de cada una de las culturas involucradas en el encuentro."
+      },
+      {
+        "id": "B",
+        "texto": "Repartir al azar las dos posturas entre grupos mixtos, para no enfrentar orígenes, y darles como fuentes crónicas de conquistadores y de misioneros.",
+        "explicacion": "Incorrecta. Los grupos mixtos evitan enfrentar identidades, pero todas las fuentes son de actores europeos: el debate se apoya en una sola perspectiva, y las posturas asignadas no son las que los estudiantes asumen y pueden revisar."
+      },
+      {
+        "id": "C",
+        "texto": "Centrarlo en qué aportó y qué perdió cada pueblo, con fuentes europeas, indígenas y sobre la trata africana, y que cada uno sustente y revise su postura.",
+        "explicacion": "Correcta. Cambia una disyuntiva simplificadora por la comparación de los legados y las pérdidas de cada cultura involucrada, con fuentes de distintos actores, y pide a cada estudiante asumir una posición, confrontarla y modificarla si encuentra argumentos de mayor peso."
+      },
+      {
+        "id": "D",
+        "texto": "Exponer ella misma los aportes y las pérdidas de indígenas, europeos y africanos con fuentes de cada pueblo, y pedir luego un ensayo individual con una postura propia.",
+        "explicacion": "Incorrecta. El contenido es adecuado, pero lo elabora la docente: los estudiantes no confrontan posturas ni aprenden a sustentarlas y revisarlas frente a los argumentos de otros, que es lo que pide el estándar sobre los debates."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el curso discute con una disyuntiva («destrucción» o «civilización») que deja por fuera a varios de los pueblos involucrados. Estándares: identificar y comparar el legado de cada cultura del encuentro Europa-América-África y participar en debates asumiendo, confrontando y modificando posturas. Conclusión: replantear el debate hacia los aportes y las pérdidas de cada pueblo, con fuentes de todos los actores y posturas que se sustentan y revisan; las demás opciones conservan la disyuntiva, usan una sola perspectiva o entregan el análisis hecho.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Presentismo: la democracia ateniense y los cambios en el concepto de ciudadanía",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones ético-políticas, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Reconozco y describo diferentes formas que ha asumido la democracia a través de la historia. [...] Identifico variaciones en el significado del concepto de ciudadanía en diversas culturas a través del tiempo.",
+    "pregunta": "En 6.°, al estudiar la democracia en la Atenas clásica, un estudiante concluye: «Eso no era democracia, era una farsa: las mujeres, los esclavos y los extranjeros no podían votar». Varios compañeros lo apoyan. ¿Cómo debe intervenir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir que comparen quiénes eran ciudadanos en Atenas y en Colombia en distintas épocas, como cuando aquí las mujeres no votaban, y que valoren qué creó Atenas y a quién excluyó.",
+        "explicacion": "Correcta. El estudiante juzga el pasado solo con el criterio actual del sufragio universal (presentismo). Comparar quién era ciudadano en distintas épocas, incluida la historia colombiana, muestra que el concepto de ciudadanía cambia, y permite reconocer a la vez la novedad de la democracia ateniense y sus exclusiones."
+      },
+      {
+        "id": "B",
+        "texto": "Explicarles que el pasado no puede juzgarse con los valores de hoy y que, para su época, Atenas fue una democracia plena, por lo que la crítica del estudiante no procede.",
+        "explicacion": "Incorrecta. Advierte el problema, pero cae en el extremo opuesto: niega toda posibilidad de crítica y afirma que Atenas fue una democracia plena, cuando excluía a la mayoría de sus habitantes. Además, lo resuelve con una explicación, sin que el grupo analice nada."
+      },
+      {
+        "id": "C",
+        "texto": "Organizar un debate sobre si Atenas fue una democracia, en el que cada equipo use como criterio los derechos de participación que reconoce la Constitución de 1991.",
+        "explicacion": "Incorrecta. Es activa, pero fija como única vara de medida un texto de 1991: refuerza el presentismo en lugar de mostrar cómo ha cambiado el significado de la ciudadanía."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que calculen qué porcentaje de los habitantes de Atenas podía votar y que, con ese dato, concluyan si la ciudad fue o no una verdadera democracia.",
+        "explicacion": "Incorrecta. El dato es útil, pero la tarea conduce a la misma conclusión con la que empezó el grupo: mide a Atenas con el criterio del sufragio universal, sin compararla con otras épocas ni con lo que significaba ser ciudadano entonces."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el grupo descalifica la democracia ateniense porque no cumple el criterio actual del sufragio universal. Concepto: el presentismo juzga el pasado solo con categorías de hoy; el estándar pide identificar cómo varía el significado de la ciudadanía a través del tiempo. Conclusión: comparar quién era ciudadano en distintas épocas, incluida la historia de Colombia, permite valorar la innovación ateniense y sus exclusiones sin caer en el anacronismo ni en el relativismo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Explicación monocausal: el crecimiento urbano de Colombia a mediados del siglo XX",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Comparo las causas de algunas olas de migración y desplazamiento humano en nuestro territorio a lo largo del siglo XIX y la primera mitad del siglo XX (colonización antioqueña, urbanización del país...). [...] Reconozco múltiples relaciones entre eventos históricos: sus causas, sus consecuencias y su incidencia en la vida de los diferentes agentes y grupos involucrados.",
+    "pregunta": "En 9.°, al estudiar el crecimiento de las ciudades colombianas a mediados del siglo XX, un estudiante escribe en su informe: «Las ciudades crecieron porque la gente huía de la Violencia; esa fue la causa». ¿Cómo debe intervenir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarle que en la urbanización se combinaron factores de expulsión del campo y de atracción de las ciudades, y pedirle que reescriba el informe con esa idea.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la intervención es expositiva: el estudiante recibe la explicación hecha y la incorpora al informe, sin trabajar con evidencia ni construir por sí mismo las relaciones entre los factores."
+      },
+      {
+        "id": "B",
+        "texto": "Darle los censos de 1938, 1951 y 1964 para que compruebe si las ciudades crecieron más rápido en los años de mayor violencia y ajuste su conclusión.",
+        "explicacion": "Incorrecta. Es activa y usa datos oficiales, pero solo pone a prueba la causa que el estudiante ya propuso: que dos procesos coincidan en el tiempo no demuestra que uno explique al otro, y sin información sobre los demás factores la coincidencia parecerá confirmar su idea."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que busque en varios libros las causas de la urbanización y las ordene según cuántos autores mencionan cada una, para jerarquizarlas.",
+        "explicacion": "Incorrecta. Es activa y reúne varias causas, pero las jerarquiza por el número de autores que las mencionan: eso mide su popularidad, no su peso, y produce una lista de causas sueltas en lugar de una explicación de cómo se relacionaron."
+      },
+      {
+        "id": "D",
+        "texto": "Darle fuentes sobre el empleo industrial, los servicios urbanos y el desplazamiento rural, y pedirle que explique cómo se relacionaron esos factores.",
+        "explicacion": "Correcta. La urbanización de mediados del siglo XX combinó factores de expulsión (la violencia en el campo) y de atracción (empleo industrial, servicios, oportunidades). Trabajar con fuentes sobre cada factor y explicar cómo se relacionaron desarrolla la explicación multicausal que piden los estándares."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante atribuye el crecimiento urbano a una sola causa. Concepto: la urbanización colombiana de mediados del siglo XX combinó factores de expulsión (la violencia en el campo) y de atracción (empleo industrial, servicios, oportunidades). Estándares: comparar las causas de las migraciones y reconocer múltiples relaciones entre los hechos. Conclusión: darle fuentes sobre varios factores y pedirle que los relacione; darle la explicación hecha, verificar solo la coincidencia en el tiempo o contar menciones no construye esa explicación.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Proyecciones cartográficas: la deformación de las áreas en el planisferio de Mercator",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, sexto a séptimo grado"
+    ],
+    "texto_fuente": "Utilizo coordenadas, convenciones y escalas para trabajar con mapas y planos de representación.",
+    "pregunta": "En 6.°, mirando el planisferio del salón, que usa la proyección de Mercator, los estudiantes concluyen que Groenlandia es más grande que Suramérica. ¿Cómo debe intervenir la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que midan con una regla a Groenlandia y a Suramérica en ese planisferio y que, con la escala gráfica del mapa, calculen la superficie real de cada una.",
+        "explicacion": "Incorrecta. Es activa, pero en la proyección de Mercator la escala cambia con la latitud y crece hacia los polos: la escala gráfica de un planisferio así solo vale cerca del ecuador, de modo que el cálculo reproduce la deformación."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que las comparen en un globo y en un mapa de proyección equivalente, contrasten sus áreas en km² y discutan por qué el planisferio las deforma.",
+        "explicacion": "Correcta. La proyección de Mercator conserva los ángulos y las formas locales, lo que la hace útil para navegar, pero agranda las superficies a medida que se aleja del ecuador. El globo y una proyección equivalente (que conserva las áreas), junto con los datos de superficie, muestran que Suramérica es unas ocho veces más extensa que Groenlandia, y la discusión explica el origen de la confusión."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que calquen la silueta de Groenlandia en papel transparente, la superpongan sobre Suramérica en el mismo planisferio y comparen sus tamaños.",
+        "explicacion": "Incorrecta. Es activa, pero el calco copia la silueta ya deformada: Groenlandia, en latitudes altas, aparece mucho más grande de lo que es, así que la comparación confirma la idea errónea."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarles que el planisferio del salón está mal hecho y reemplazarlo por otro más reciente, para que no sigan aprendiendo con un mapa que contiene errores.",
+        "explicacion": "Incorrecta. El mapa no está mal hecho: toda proyección de la esfera en un plano deforma algo, y la de Mercator sacrifica las áreas para conservar los ángulos. Cambiar el mapa sin explicar la proyección deja intacta la confusión, y uno más reciente puede usar la misma proyección."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los estudiantes comparan áreas en un planisferio de Mercator, que agranda las regiones de latitudes altas. Concepto: ninguna proyección plana conserva a la vez formas y áreas; la de Mercator conserva ángulos y deforma las superficies hacia los polos. Conclusión: comparar con el globo, con una proyección equivalente y con los datos de superficie (Suramérica es unas ocho veces más extensa) corrige la idea; medir o calcar sobre el mismo mapa reproduce la deformación.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Escoger la tarea para un estándar: pago de impuestos y vigilancia del gasto público",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Desarrollo compromisos personales y sociales, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Promuevo campañas para fomentar la cultura del pago de impuestos y ejerzo vigilancia sobre el gasto público en mi comunidad.",
+    "pregunta": "Un docente de 11.° busca un proyecto que desarrolle este estándar: «Promuevo campañas para fomentar la cultura del pago de impuestos y ejerzo vigilancia sobre el gasto público en mi comunidad». En el barrio del colegio, la alcaldía construyó un parque con recursos públicos y publicó el contrato en el portal de contratación estatal. ¿Qué proyecto debe escoger?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que diseñen una campaña en redes sobre la importancia de pagar impuestos y denuncien el parque ante la contraloría, porque algunos vecinos dicen que quedó mal hecho.",
+        "explicacion": "Incorrecta. Incluye la campaña, pero la vigilancia se reduce a denunciar con base en lo que dicen algunos vecinos, sin revisar el contrato que la alcaldía publicó ni contrastarlo con la obra. Vigilar el gasto exige verificar con información pública antes de denunciar."
+      },
+      {
+        "id": "B",
+        "texto": "Que organicen una rifa para terminar las zonas verdes del parque y la presenten como un aporte voluntario, para mostrar a la comunidad que contribuir mejora el entorno.",
+        "explicacion": "Incorrecta. Es activa, pero sustituye con dinero privado una obra que corresponde al presupuesto público y confunde el aporte voluntario con el impuesto; además, no examina cómo se gastaron los recursos ya asignados."
+      },
+      {
+        "id": "C",
+        "texto": "Que comparen el contrato publicado con lo construido en el parque y, con esos hallazgos, hagan una campaña que muestre a los vecinos qué se paga con sus impuestos.",
+        "explicacion": "Correcta. Desarrolla las dos partes del estándar: ejerce vigilancia con información pública y verificable (el contrato frente a la obra) y usa los resultados en una campaña que relaciona los impuestos con lo que se construye con ellos, lo que fomenta la cultura del pago."
+      },
+      {
+        "id": "D",
+        "texto": "Que hagan una campaña puerta a puerta para que los vecinos se pongan al día con el impuesto predial, con premios para quienes paguen antes de la fecha límite.",
+        "explicacion": "Incorrecta. Promueve el pago del predial, pero deja por fuera la otra mitad del estándar: no ejerce ninguna vigilancia sobre cómo se gastan los recursos públicos en la comunidad."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el estándar une dos acciones, promover el pago de impuestos y vigilar el gasto público, y la alcaldía publicó el contrato del parque. Conclusión: el proyecto adecuado verifica el gasto con información pública (el contrato frente a la obra) y usa esos hallazgos en una campaña que muestra a la comunidad qué se financia con sus impuestos. Las demás opciones denuncian sin verificar, reemplazan el gasto público con aportes privados o promueven el pago sin vigilar el gasto.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Retroalimentación de una respuesta: democracia representativa y participativa antes y después de 1991",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones ético-políticas, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Analizo el paso de un sistema democrático representativo a un sistema democrático participativo en Colombia.",
+    "pregunta": "En una evaluación de 11.°, un estudiante escribe: «Antes de la Constitución de 1991, Colombia no era una democracia, porque los ciudadanos no elegían a sus gobernantes. Desde 1991 la democracia es participativa, porque el pueblo vota». ¿Qué retroalimentación debe darle la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Señalarle que desde 1991 los representantes elegidos fueron reemplazados por las decisiones directas del pueblo en consultas, y pedirle que corrija su respuesta con esa idea.",
+        "explicacion": "Incorrecta. Corrige con otro error: la Constitución de 1991 no suprimió la representación. El pueblo ejerce la soberanía «en forma directa o por medio de sus representantes» (art. 3), y se siguen eligiendo congresistas, concejales y demás autoridades."
+      },
+      {
+        "id": "B",
+        "texto": "Señalarle que antes de 1991 ya se elegían autoridades, que el cambio fue sumar mecanismos como la revocatoria del mandato o la iniciativa popular, y pedirle un ejemplo.",
+        "explicacion": "Correcta. Antes de 1991 había una democracia representativa con elecciones. La Constitución de 1991 mantuvo la representación y consagró como mecanismos de participación del pueblo el plebiscito, el referendo, la consulta popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato (arts. 103 y 155); algunos, como la revocatoria, no existían antes. Pedir un ejemplo obliga al estudiante a usar el concepto."
+      },
+      {
+        "id": "C",
+        "texto": "Señalarle que antes de 1991 se votaba solo por presidente y Congreso, que desde 1991 también se eligen alcaldes y gobernadores, y pedirle un ejemplo de esa ampliación.",
+        "explicacion": "Incorrecta. Corrige a medias y con un error: los alcaldes se eligen por voto popular desde 1988, antes de la Constitución de 1991 (los gobernadores, sí, desde 1991). Además, sigue identificando la democracia participativa con elegir más cargos, cuando lo nuevo fueron los mecanismos de participación directa."
+      },
+      {
+        "id": "D",
+        "texto": "Señalarle que antes de 1991 ya se elegían autoridades, que el cambio fue crear el plebiscito, un mecanismo sin antecedentes en el país, y pedirle un ejemplo.",
+        "explicacion": "Incorrecta. Acierta en que antes se elegían autoridades, pero el ejemplo es falso: en 1957 los colombianos ya habían votado un plebiscito, el que dio origen al Frente Nacional. Lo nuevo de 1991 fue consagrar un conjunto de mecanismos de participación, algunos sin antecedentes, como la revocatoria del mandato."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el estudiante cree que antes de 1991 no se votaba y que votar es lo propio de la democracia participativa. Regla: el pueblo ejerce la soberanía en forma directa o por medio de representantes (art. 3); la Constitución de 1991 conserva la elección de representantes y consagra mecanismos de participación directa (art. 103), algunos nuevos, como la revocatoria del mandato. Conclusión: la retroalimentación debe corregir ambas ideas y pedir un ejemplo; las demás corrigen con otro error conceptual o con un dato histórico falso.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Luchas de los grupos étnicos por su reconocimiento: análisis de fuentes sin folclorizar ni exponer a los estudiantes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones con la historia y las culturas, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) social, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico y explico las luchas de los grupos étnicos en Colombia y América en busca de su reconocimiento social e igualdad de derechos desde comienzos del siglo XX hasta la actualidad. [...] Analizo críticamente los documentos (qué tipo de documento es, quién es el autor, a quién está dirigido, de qué habla, por qué se produjo, desde qué posición ideológica está hablando, qué significa para mí…).",
+    "pregunta": "Un docente de 11.° va a trabajar con su grupo las luchas de los pueblos indígenas y afrodescendientes de Colombia por sus derechos a lo largo del siglo XX. ¿Qué actividad debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Analizar peticiones de organizaciones indígenas y afrocolombianas de varios momentos del siglo, ver quién habla y qué pide, y contrastarlas con la Constitución de 1991.",
+        "explicacion": "Correcta. Trabaja con documentos producidos por los propios pueblos en distintos momentos del siglo, los analiza críticamente (quién habla, desde qué posición, qué reclama) y los relaciona con el reconocimiento constitucional de la diversidad étnica y cultural (art. 7), de sus lenguas (art. 10) y de las tierras de resguardo (art. 63). Así se explican esas luchas como procesos históricos."
+      },
+      {
+        "id": "B",
+        "texto": "Analizar los artículos de la Constitución de 1991 y de la Ley 70 de 1993 sobre los grupos étnicos, para establecer qué derechos les reconoció el Estado colombiano y desde cuándo.",
+        "explicacion": "Incorrecta. Es activa y usa fuentes primarias, pero solo normas del Estado: presenta los derechos como concesiones y deja por fuera las luchas y las voces de las organizaciones que los reclamaron."
+      },
+      {
+        "id": "C",
+        "texto": "Leer las propuestas que llevaron los constituyentes indígenas a la Asamblea de 1991 y debatir en clase si sus demandas quedaron recogidas en la nueva Constitución.",
+        "explicacion": "Incorrecta. Usa la voz de los pueblos y es activa, pero se limita a un momento (la Constituyente de 1991) y deja por fuera a las comunidades afrocolombianas: no permite explicar las luchas a lo largo del siglo XX ni sus cambios y continuidades."
+      },
+      {
+        "id": "D",
+        "texto": "Exponer una línea de tiempo de esas luchas, desde Manuel Quintín Lame hasta la Constituyente de 1991, y pedir que cada estudiante elabore con ella un mapa conceptual.",
+        "explicacion": "Incorrecta. El contenido es pertinente, pero lo entrega el docente: los estudiantes reorganizan una información ya elaborada y no analizan críticamente ninguna fuente de los propios pueblos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el tema son las luchas de los grupos étnicos por sus derechos a lo largo del siglo XX. Estándares: identificar y explicar esas luchas desde comienzos del siglo XX y analizar críticamente los documentos (autor, posición, propósito). Conclusión: analizar fuentes de las organizaciones de distintos momentos y contrastarlas con lo que reconoció la Constitución de 1991; las demás opciones se quedan en las normas del Estado, en un solo momento o en una exposición del docente.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Determinismo geográfico y prejuicio regional: relación entre ambiente y organización económica",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Relaciones espaciales y ambientales, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) social, octavo a noveno grado"
+    ],
+    "texto_fuente": "Explico la manera como el medio ambiente influye en el tipo de organización social y económica que se da en las regiones de Colombia. [...] Identifico y estudio los diversos aspectos de interés para las ciencias sociales (ubicación geográfica, evolución histórica, organización política, económica, social y cultural…).",
+    "pregunta": "En 8.°, mientras estudian cómo influye el medio ambiente en la economía de las regiones colombianas, un estudiante afirma: «En las regiones cálidas la gente es más pobre porque el calor la vuelve perezosa». Varios compañeros asienten. ¿Cómo debe intervenir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicar que el ambiente influye en la economía de las regiones pero no la determina, dar ejemplos de otros factores y pedir al grupo respeto por la gente de todas las regiones.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la intervención es expositiva: el docente da la conclusión y pide respeto, y los estudiantes no examinan con evidencia la explicación determinista ni el prejuicio."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que comparen los índices de pobreza de un departamento cálido y de uno frío, para comprobar con cifras oficiales si el clima explica la diferencia.",
+        "explicacion": "Incorrecta. Usa datos oficiales, pero dos casos no permiten aislar el efecto del clima: los departamentos difieren también en historia, vías, tenencia de la tierra e inversión, y la comparación puede parecer confirmar el prejuicio."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que averigüen cuántas horas trabajan en promedio las personas de regiones cálidas y frías, para poner a prueba con datos la idea del compañero.",
+        "explicacion": "Incorrecta. Es activa, pero acepta el marco del prejuicio: pone a prueba si la gente «trabaja menos» en lugar de examinar las causas de la pobreza, y deja por fuera los factores históricos, políticos y económicos."
+      },
+      {
+        "id": "D",
+        "texto": "Comparar con el grupo regiones de clima parecido y pobreza muy distinta, buscar qué otros factores las diferencian y discutir el prejuicio sobre su gente.",
+        "explicacion": "Correcta. El ambiente influye en la organización económica, pero no la determina. Comparar regiones de clima similar con niveles de pobreza distintos muestra que el clima no basta como explicación y lleva a buscar otros factores (vías, tenencia de la tierra, inversión pública); la discusión final desmonta la idea de que el carácter de la gente depende del clima."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el estudiante explica la pobreza por el clima y atribuye un rasgo de carácter a la gente de las regiones cálidas. Concepto: el medio ambiente influye en la organización social y económica, pero no la determina; los fenómenos sociales tienen aspectos geográficos, históricos, políticos y económicos. Conclusión: comparar regiones de clima parecido y pobreza distinta para buscar otros factores, y discutir el prejuicio; dar la conclusión hecha, comparar solo dos casos o medir las horas de trabajo no examinan la explicación determinista.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CSO-020",
+    "version": 3,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Sociales",
+    "tema": "Ciencias Sociales: didáctica del área",
+    "subtema": "Proyecto de investigación: delimitar el tema en el espacio y en el tiempo y formular una pregunta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Sociales (MEN, 2006)",
+    "articulos": [
+      "Me aproximo al conocimiento como científico(a) social, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Planteo un tema o problema de investigación. [...] Delimito el tema o problema espacial y temporalmente. [...] Defino los objetivos y la hipótesis del trabajo.",
+    "pregunta": "Para el proyecto de investigación de 11.°, un estudiante propone como tema «La historia del café en Colombia». Antes de que empiece a buscar información, la docente debe orientarlo. ¿Qué orientación debe darle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que lo convierta en una pregunta, como «¿Qué importancia ha tenido el café para Colombia?», y con ella organice su plan de búsqueda de fuentes.",
+        "explicacion": "Incorrecta. Formular una pregunta es un buen paso, pero esta conserva todo el país y toda la historia del café: sin delimitar el problema en el espacio y en el tiempo, el plan de búsqueda resulta inabarcable."
+      },
+      {
+        "id": "B",
+        "texto": "Que lo limite a su municipio, desde la llegada del café en el siglo XIX hasta hoy, y formule una pregunta sobre ese proceso.",
+        "explicacion": "Incorrecta. Delimita el espacio, pero no el tiempo: abarcar más de un siglo de historia del café, aun en un solo municipio, deja un problema demasiado amplio para un proyecto escolar. El estándar pide delimitarlo en las dos dimensiones."
+      },
+      {
+        "id": "C",
+        "texto": "Que lo limite a las veredas cafeteras de su municipio entre 1970 y 2000, según las fuentes disponibles, y formule una pregunta.",
+        "explicacion": "Correcta. El tema es demasiado amplio. Delimitarlo en el espacio (las veredas de su municipio) y en el tiempo (1970-2000), según las fuentes disponibles, y convertirlo en una pregunta permite definir objetivos, hipótesis y un plan de búsqueda, como piden los estándares de 10.° y 11.°."
+      },
+      {
+        "id": "D",
+        "texto": "Que lo concentre en las exportaciones de café de Colombia, sobre las que hay abundantes estadísticas desde el siglo XIX, y formule una pregunta.",
+        "explicacion": "Incorrecta. Acota el tema a un aspecto (las exportaciones), pero no lo delimita en el tiempo, porque abarca más de siglo y medio, ni en el espacio, porque sigue tomando todo el país; además, escoge el recorte por la abundancia de datos y no por el problema que quiere investigar."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el tema propuesto abarca todo el país y toda la historia del café. Estándares de 10.° y 11.°: plantear un tema o problema y delimitarlo espacial y temporalmente antes de definir objetivos, hipótesis y plan de búsqueda. Conclusión: orientar al estudiante a escoger un lugar y un período abarcables y a formular sobre ellos una pregunta; las demás opciones dejan sin delimitar el espacio, el tiempo o ambos.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

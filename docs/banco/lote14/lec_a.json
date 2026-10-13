@@ -1,0 +1,902 @@
+[
+  {
+    "id": "TC-LEC-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: supuesto implícito de un argumento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea la siguiente columna de opinión y responda la pregunta.\n\nQUE LA PLATA SIGA A LAS QUEJAS\n\nCada año, la Empresa de Servicios Públicos de Piedralisa reparte su presupuesto para reparar las redes de acueducto entre los cinco sectores del municipio en partes casi iguales. Es una costumbre cómoda, porque nadie puede decir que lo dejaron por fuera, pero no tiene ninguna lógica técnica.\n\nLos datos de la propia empresa cuentan otra historia. En 2025 se recibieron 1.840 quejas por fallas en el suministro de agua, y 1.105 de ellas vinieron del sector Nororiental; ningún otro sector superó las 300. Si seis de cada diez quejas salen de una sola zona, es allí donde las tuberías están en peor estado y donde cada peso invertido rendirá más.\n\nAlgunos funcionarios responden que el Nororiental ya recibió una inversión grande hace cuatro años y que sería injusto volver a favorecerlo. El argumento confunde la justicia con el reparto aritmético: lo justo es atender primero a quien más lo necesita, no repartir por igual entre quienes necesitan cosas distintas.\n\nPropongo, entonces, que desde la próxima vigencia al menos la mitad del presupuesto de reparaciones se asigne al sector que haya concentrado más quejas el año anterior. Es una regla sencilla, verificable y difícil de manipular, y obligaría a la empresa a mirar sus propias cifras antes de decidir.\n\nEl razonamiento del autor da por sentado, sin decirlo, que…",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "la inversión que recibió el sector Nororiental hace cuatro años se ejecutó de manera deficiente.",
+        "explicacion": "Incorrecta. El autor no necesita esa premisa: deduce que las redes del Nororiental están en peor estado a partir de las quejas actuales («Si seis de cada diez quejas salen de una sola zona…»), sin importar cómo se ejecutó la inversión anterior. Es una explicación posible, pero el argumento no depende de ella."
+      },
+      {
+        "id": "B",
+        "texto": "los otros cuatro sectores del municipio no tienen redes en mal estado que necesiten reparaciones.",
+        "explicacion": "Incorrecta. Contradice la propuesta: el autor pide asignar «al menos la mitad» del presupuesto al sector con más quejas, lo que deja recursos para los demás. No supone que los otros sectores carezcan de daños."
+      },
+      {
+        "id": "C",
+        "texto": "el número de quejas de cada sector depende más del estado de sus redes que de cuántos usuarios tiene.",
+        "explicacion": "Correcta. El autor pasa de «seis de cada diez quejas salen de una sola zona» a «es allí donde las tuberías están en peor estado». Ese salto solo vale si las quejas reflejan el estado de las redes: si el Nororiental tuviera, por ejemplo, la mayoría de los usuarios del municipio, el número de quejas no probaría que sus tuberías estén peor."
+      },
+      {
+        "id": "D",
+        "texto": "repartir el presupuesto por partes iguales ha hecho que las quejas aumenten de un año para otro.",
+        "explicacion": "Incorrecta. El texto no relaciona el reparto igualitario con un aumento de las quejas ni da cifras de años anteriores. El autor critica ese reparto porque «no tiene ninguna lógica técnica», no porque haya hecho crecer las quejas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el autor pasa de un dato sobre quejas («seis de cada diez quejas salen de una sola zona») a una conclusión sobre las redes («es allí donde las tuberías están en peor estado»). Ese paso exige suponer que el número de quejas refleja el deterioro de las redes y no otros factores, como la cantidad de usuarios de cada sector. Las demás opciones no son necesarias para el argumento o lo contradicen. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: dato que debilita una conclusión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea el siguiente fragmento de un informe de gestión y responda la pregunta.\n\nSECRETARÍA DE MOVILIDAD DE SAN TELMO — INFORME DE GESTIÓN 2025 (FRAGMENTO)\n\nEn marzo de 2025 terminamos la instalación de 36 reductores de velocidad y 12 pasos peatonales elevados sobre la avenida Las Palmas, el corredor con más siniestros viales del municipio. Entre abril y diciembre se registraron en esa avenida 41 siniestros con heridos, frente a 68 en el mismo periodo de 2024, es decir, una reducción cercana al 40%.\n\nLa comunidad ha recibido bien las obras. En las mesas de trabajo con las juntas de acción comunal de los barrios vecinos, los asistentes manifestaron sentirse más seguros al cruzar la avenida, y varios comerciantes contaron que ahora llegan más clientes a pie.\n\nEstos resultados demuestran que los reductores y los pasos elevados son la herramienta que necesitábamos para salvar vidas en nuestras vías. Por eso, para 2026 proponemos extender el mismo modelo a la avenida del Ferrocarril y a la vía al aeropuerto, los otros dos corredores críticos del municipio, con una inversión estimada de 2.300 millones de pesos.\n\n¿Cuál de los siguientes datos, de ser cierto, debilitaría más la conclusión de que la reducción de los siniestros en la avenida Las Palmas se debió a las obras?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En el mismo periodo, los siniestros con heridos bajaron en una proporción parecida en las vías que no tuvieron obras.",
+        "explicacion": "Correcta. Si en las vías sin reductores ni pasos elevados los siniestros bajaron casi lo mismo, la caída en la avenida Las Palmas se explicaría por algo común a todo el municipio y no por las obras. Eso ataca directamente la afirmación de que «estos resultados demuestran» la eficacia de los reductores."
+      },
+      {
+        "id": "B",
+        "texto": "Los vecinos de la avenida se han quejado del ruido que hacen los camiones al frenar y arrancar frente a cada reductor.",
+        "explicacion": "Incorrecta. El ruido es una desventaja de las obras, pero no dice nada sobre si redujeron los siniestros. Sirve para discutir la conveniencia del modelo, no la causa de la reducción."
+      },
+      {
+        "id": "C",
+        "texto": "La instalación de los reductores y de los pasos elevados costó bastante más de lo previsto al firmar el contrato.",
+        "explicacion": "Incorrecta. El sobrecosto podría pesar al decidir la inversión de 2026, pero no pone en duda que la reducción de los siniestros se deba a las obras."
+      },
+      {
+        "id": "D",
+        "texto": "El número de vehículos que circularon a diario por la avenida Las Palmas fue mayor en 2025 que en el año anterior.",
+        "explicacion": "Incorrecta. Si circularon más vehículos y aun así hubo menos siniestros, la conclusión del informe saldría reforzada, no debilitada."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el informe atribuye la caída de 68 a 41 siniestros a las obras solo porque ocurrió después de ellas («Estos resultados demuestran…»). La conclusión se debilita si la caída tuvo otra causa, y el dato más fuerte es que en las vías sin obras los siniestros bajaron en una proporción parecida durante el mismo periodo. El ruido y el sobrecosto no tocan la relación causal, y más tráfico con menos siniestros la reforzaría. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: dato que fortalece un argumento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea el siguiente texto de opinión y responda la pregunta.\n\nUNA BIBLIOTECA CON LAS LUCES APAGADAS\n\nLa Biblioteca Pública Municipal de Aguamansa abre de lunes a viernes, de 8 de la mañana a 5 de la tarde. En ese horario recibe, en promedio, 46 visitantes al día, cifra que la Secretaría de Cultura cita cada vez que alguien pide más recursos para ella: si tan poca gente la usa, dicen sus funcionarios, no tiene sentido invertir más.\n\nCreo que la secretaría está leyendo mal su propio dato. La biblioteca abre justo cuando la mayoría de los adultos trabaja y cuando los jóvenes están en el colegio o en la universidad, y cierra los sábados, el único día en que muchas familias podrían ir juntas. No es que a la gente no le interese leer o consultar internet; es que el servicio parece diseñado para quien no tiene otra ocupación.\n\nNo pido más presupuesto, sino reorganizar el que hay: abrir de martes a sábado, de 11 de la mañana a 8 de la noche, con el mismo personal y turnos de la misma duración. Antes de culpar a los usuarios por no llegar, la administración debería averiguar si el problema está en la puerta y no en el público.\n\n¿Cuál de los siguientes hechos, de ser cierto, fortalecería más el argumento del autor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La biblioteca de Aguamansa tiene menos libros y computadores por habitante que las demás bibliotecas de la región.",
+        "explicacion": "Incorrecta. Ofrece otra explicación para la baja asistencia (la falta de libros y equipos), distinta del horario. Más bien debilita el argumento, que sostiene que el problema «está en la puerta y no en el público»."
+      },
+      {
+        "id": "B",
+        "texto": "La mayoría de quienes visitan hoy la biblioteca son estudiantes de colegio que llegan a hacer tareas después del mediodía.",
+        "explicacion": "Incorrecta. Muestra que una parte de los jóvenes sí puede ir en el horario actual, lo que no apoya la idea de que el servicio está «diseñado para quien no tiene otra ocupación». Además, no dice nada sobre quienes no van."
+      },
+      {
+        "id": "C",
+        "texto": "Los funcionarios de la biblioteca estarían dispuestos a trabajar los sábados si se les reconociera un pago adicional.",
+        "explicacion": "Incorrecta. Se refiere a la viabilidad laboral del cambio y supone un costo extra que el autor dice no necesitar («No pido más presupuesto»). No respalda la idea de que el horario explica la baja asistencia."
+      },
+      {
+        "id": "D",
+        "texto": "En la Semana del Libro, la biblioteca abrió hasta las 8 p. m. y más de la mitad de las visitas llegó después de las 5.",
+        "explicacion": "Correcta. Si al ampliar el horario la mayoría de las visitas llegó después de las 5, hay un público que el horario actual deja por fuera. Eso respalda la idea central: la cifra de 46 visitantes refleja el horario, no la falta de interés."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el autor sostiene que la baja asistencia se debe al horario y no a la falta de interés («el problema está en la puerta y no en el público»). Lo que más lo fortalece es una prueba de que, con horario nocturno, aparece un público que hoy no llega. La falta de libros ofrece otra causa, los estudiantes de la tarde no dicen nada de quienes no van y el pago adicional contradice la propuesta. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-028",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: error de razonamiento en una carta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea la siguiente carta y responda la pregunta.\n\nCARTA AL CONCEJO MUNICIPAL DE PUERTO ALMENDRO\n\nSeñores concejales:\n\nEscribo como vendedor de la Feria Nocturna del parque principal, donde trabajo desde hace once años. La alcaldía anunció que, desde enero, la feria funcionará solo los viernes y los sábados, y no de miércoles a domingo, porque los vecinos del parque se quejan del ruido y de la basura que queda en las calles cuando cerramos.\n\nReconozco que esas quejas tienen fundamento. Algunos puestos dejan desechos y ponen música a un volumen excesivo, y los vendedores no hemos sabido organizarnos para controlarlo. Por eso, la asociación de vendedores propone pagar con sus propios recursos a dos personas para el aseo y fijar un límite de volumen que todos firmaremos.\n\nPero no acepto la manera en que se ha planteado esta discusión. La cosa es así de sencilla: o la feria sigue funcionando cinco noches a la semana, o cien familias perderán el sustento con el que pagan el arriendo y el colegio de sus hijos. Cada concejal tendrá que decidir de qué lado está.\n\nLes pido que, en ejercicio del control político, inviten a la alcaldía a estudiar nuestra propuesta antes de enero.\n\nAtentamente,\nErnesto G., vendedor de la Feria Nocturna\n\n¿Qué error de razonamiento comete el autor en el párrafo que empieza con «Pero no acepto»?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Descalifica la medida atacando a los vecinos que se quejan, en vez de responder a sus razones.",
+        "explicacion": "Incorrecta. El autor no ataca a los vecinos; al contrario, reconoce que «esas quejas tienen fundamento». Este error (atacar a las personas en lugar de sus argumentos) no aparece en la carta."
+      },
+      {
+        "id": "B",
+        "texto": "Plantea la decisión como si solo pudiera terminar en uno de dos desenlaces opuestos.",
+        "explicacion": "Correcta. La frase «o la feria sigue funcionando cinco noches a la semana, o cien familias perderán el sustento» plantea un falso dilema: presenta como únicas posibilidades mantener las cinco noches o la ruina de cien familias. Pasar de cinco a dos noches reduce los ingresos, pero no equivale a perder todo el sustento, y caben otras salidas, como tres o cuatro noches o un cierre más temprano."
+      },
+      {
+        "id": "C",
+        "texto": "Atribuye a todos los vendedores la conducta de los pocos puestos que dejan basura o hacen ruido.",
+        "explicacion": "Incorrecta. El autor habla de «algunos puestos», no de todos los vendedores. No generaliza la conducta de unos pocos; precisamente la distingue."
+      },
+      {
+        "id": "D",
+        "texto": "Admite que las quejas tienen fundamento, pero concluye que no hace falta hacer nada para atenderlas.",
+        "explicacion": "Incorrecta. Contradice el párrafo anterior: tras reconocer las quejas, la asociación propone pagar personal de aseo y fijar un límite de volumen."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en el párrafo que empieza con «Pero no acepto», el autor presenta la decisión como si solo tuviera dos desenlaces («o la feria sigue funcionando cinco noches a la semana, o cien familias perderán el sustento»). Es un falso dilema: reducir los días no implica perder todo el ingreso, y caben otras salidas, como tres o cuatro noches o un cierre más temprano. La carta no ataca a los vecinos, no generaliza la conducta de unos pocos puestos y sí propone medidas para atender las quejas. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: intención y sesgo de un boletín de prensa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea el siguiente boletín de prensa y responda la pregunta.\n\nALCALDÍA DE MONTEVERDE ALTO — BOLETÍN DE PRENSA 087\nMonteverde recicla como nunca antes\n\nCon orgullo, la Alcaldía de Monteverde Alto anuncia que en el primer semestre de 2026 el programa Separa y Gana recuperó 142 toneladas de material reciclable, la cifra más alta desde que se creó el programa, en 2022. «Este logro es de todos los monteverdenses, que entendieron que reciclar es un acto de amor por el territorio», afirmó la secretaria de Ambiente.\n\nEl programa entrega bolsas de colores a los hogares y organiza tres rutas semanales de recolección selectiva, operadas por una asociación de recicladores de oficio. Este año se sumaron dos rutas en la zona rural y ocho colegios que separan sus residuos.\n\nLa meta del Plan de Desarrollo para el semestre era de 300 toneladas. Desde enero, además, el pesaje incluye el vidrio, que en años anteriores no se contabilizaba.\n\nLa secretaria invitó a la ciudadanía a seguir separando en la fuente y anunció que en noviembre se premiará a los tres barrios con mayor participación.\n\n¿Qué se puede afirmar sobre la manera en que el boletín presenta los resultados del programa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Destaca la cifra favorable y menciona de paso, sin comentarlos, dos datos que matizan ese logro.",
+        "explicacion": "Correcta. El titular y el primer párrafo resaltan «la cifra más alta» desde 2022, mientras que la meta de 300 toneladas (no se alcanzó ni la mitad) y el cambio en el pesaje, que impide comparar con los años anteriores, aparecen en un párrafo breve y sin ninguna explicación."
+      },
+      {
+        "id": "B",
+        "texto": "Reconoce abiertamente que no se cumplió la meta del semestre y explica las causas de ese resultado.",
+        "explicacion": "Incorrecta. El boletín menciona la meta, pero no dice que se incumplió ni explica por qué. Solo pone la cifra y deja al lector la tarea de compararla."
+      },
+      {
+        "id": "C",
+        "texto": "Se limita a presentar datos verificables y evita incluir las valoraciones de los funcionarios.",
+        "explicacion": "Incorrecta. El boletín incluye valoraciones: «Con orgullo», «como nunca antes» y la frase de la secretaria sobre el «acto de amor por el territorio»."
+      },
+      {
+        "id": "D",
+        "texto": "Atribuye el aumento de la cifra al pesaje del vidrio y no a la participación de los ciudadanos.",
+        "explicacion": "Incorrecta. Es al revés: la secretaria atribuye el logro a «todos los monteverdenses». El boletín no relaciona el aumento con el pesaje del vidrio; esa relación es la que puede inferir un lector atento."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el boletín abre con «la cifra más alta» desde 2022 y una valoración entusiasta, pero deja para un párrafo breve dos datos que matizan el logro: la meta era de 300 toneladas (se recuperaron 142) y desde enero se pesa el vidrio, que antes no se contaba, así que la comparación con años anteriores no es pareja. No reconoce el incumplimiento, sí incluye valoraciones y atribuye el resultado a los ciudadanos. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: comparar dos textos (punto de coincidencia)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea los siguientes textos y responda la pregunta.\n\n¿PEATONALIZAR LA CALLE REAL?\n\nTexto 1. Presidenta de la Asociación de Comerciantes del Centro de Santa Lucía del Páramo\nNadie discute que la calle Real está colapsada: en las horas pico, un carro tarda veinte minutos en recorrer seis cuadras, y los andenes son tan estrechos que los peatones terminan caminando por la vía. Pero cerrarla a los vehículos sería un golpe para el comercio. Seis de cada diez ventas de nuestros asociados se hacen a clientes de las veredas, que llegan en carro o en moto a cargar el mercado y los materiales de construcción. Lo que proponemos es ampliar los andenes en las cuadras más concurridas, cambiar el sentido de algunas calles vecinas y crear una bahía de cargue por cuadra.\n\nTexto 2. Veedor ciudadano del municipio\nLa calle Real ya no da más: el trancón es diario y los peatones, que son la mayoría de quienes la usan, no tienen por dónde caminar. Ampliar los andenes sin sacar los carros solo trasladaría el embotellamiento unos metros más allá. En otros municipios, después de un año de peatonalización, las ventas del comercio de la zona se recuperaron e incluso crecieron, porque la gente camina más despacio y se detiene en las vitrinas. Los clientes de las veredas podrían dejar sus vehículos en un parqueadero de la calle Quinta, a dos cuadras.\n\n¿En qué coinciden los autores de los dos textos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En que el comercio del centro vendería más si la calle Real se cerrara al paso de los vehículos.",
+        "explicacion": "Incorrecta. Solo lo sostiene el texto 2, con la experiencia de otros municipios. El texto 1 afirma lo contrario: cerrar la calle «sería un golpe para el comercio»."
+      },
+      {
+        "id": "B",
+        "texto": "En que la mayor parte de quienes usan la calle Real la recorren a pie y no en carro o en moto.",
+        "explicacion": "Incorrecta. Solo el texto 2 dice que los peatones «son la mayoría de quienes la usan». El texto 1 no se pronuncia sobre eso; destaca, más bien, a los clientes que llegan en carro o en moto."
+      },
+      {
+        "id": "C",
+        "texto": "En que la calle Real, tal como funciona hoy, no les ofrece espacio suficiente a quienes andan a pie.",
+        "explicacion": "Correcta. El texto 1 dice que «los andenes son tan estrechos que los peatones terminan caminando por la vía», y el texto 2, que los peatones «no tienen por dónde caminar». Ambos reconocen ese problema, aunque proponen soluciones distintas."
+      },
+      {
+        "id": "D",
+        "texto": "En que ampliar los andenes aliviaría la congestión de la calle Real sin perjudicar las ventas.",
+        "explicacion": "Incorrecta. Es la propuesta del texto 1. El texto 2 la rechaza: ampliar los andenes sin sacar los carros «solo trasladaría el embotellamiento»."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los dos textos describen la misma falla de la calle Real: el texto 1 dice que los andenes son tan estrechos que los peatones caminan por la vía, y el texto 2, que los peatones «no tienen por dónde caminar». Discrepan en la solución (ampliar andenes o peatonalizar) y en el efecto sobre el comercio, y la mayoría peatonal solo la afirma el texto 2. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: comparar dos textos (punto de desacuerdo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea los siguientes textos y responda la pregunta.\n\n¿COBRAR EL ASEO SEGÚN LO QUE CADA HOGAR BOTA?\n\nTexto 1. Concejala de Valdeolivo\nHoy, en Valdeolivo, todos los hogares de un mismo estrato pagan la misma tarifa de aseo, sin importar si sacan una bolsa a la semana o diez. Así, la familia que separa, hace compost y reduce sus residuos termina pagando parte de lo que bota la que no hace ningún esfuerzo. Propongo que una porción de la tarifa se cobre según el número de bolsas oficiales que compre cada hogar. Cuando botar cuesta, la gente bota menos: el relleno sanitario, al que le quedan seis años de vida útil, ganaría tiempo, y separar en la fuente tendría por fin una recompensa visible en la factura.\n\nTexto 2. Presidente de la Junta de Acción Comunal del barrio La Loma\nLa intención es buena, pero la propuesta desconoce cómo vive buena parte del municipio. En los barrios de la periferia, muchas familias no podrán pagar más bolsas y harán lo que ya se ve en los lotes vacíos y en las orillas de la quebrada: dejar allí la basura. Las toneladas que lleguen al relleno bajarán, sí, pero no porque se produzcan menos residuos, sino porque irán a parar a donde nadie los recoge. Antes de cobrar por bolsa, la alcaldía tendría que ser capaz de vigilar y sancionar los botaderos ilegales, algo que hoy no hace.\n\n¿En qué punto central discrepan los dos autores?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En si es justo que hoy paguen la misma tarifa hogares que generan cantidades muy distintas de basura.",
+        "explicacion": "Incorrecta. Solo la concejala desarrolla esa crítica a la tarifa actual. El presidente de la junta no la discute; incluso reconoce que «la intención es buena»."
+      },
+      {
+        "id": "B",
+        "texto": "En si al relleno sanitario del municipio le quedan pocos años antes de agotar su capacidad.",
+        "explicacion": "Incorrecta. El dato de la vida útil del relleno aparece solo en el texto 1, y el texto 2 no lo cuestiona. De hecho, admite que las toneladas que lleguen al relleno «bajarán»."
+      },
+      {
+        "id": "C",
+        "texto": "En si la alcaldía debe vigilar y sancionar a quienes arrojan basura en los lotes y en la quebrada.",
+        "explicacion": "Incorrecta. La vigilancia de los botaderos solo aparece en el texto 2. La concejala no dice nada al respecto, así que no hay un desacuerdo entre ambos sobre ese punto."
+      },
+      {
+        "id": "D",
+        "texto": "En si cobrar por bolsa reduciría la basura que producen los hogares o solo la llevaría a otro sitio.",
+        "explicacion": "Correcta. La concejala afirma que «cuando botar cuesta, la gente bota menos»; el presidente de la junta responde que las toneladas bajarán «no porque se produzcan menos residuos, sino porque irán a parar a donde nadie los recoge». Discrepan sobre el efecto real del cobro por bolsa."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la concejala sostiene que cobrar por bolsa reducirá la basura («cuando botar cuesta, la gente bota menos»), y el presidente de la junta replica que solo bajará lo que llega al relleno, porque parte de los residuos terminará en lotes y en la quebrada. El texto 2 no discute la injusticia de la tarifa actual ni la vida útil del relleno, y la concejala no se pronuncia sobre los botaderos. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: aplicar un concepto del texto a un caso nuevo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea el siguiente texto y responda la pregunta.\n\nLA DEMANDA INDUCIDA\n\nCuando una vía urbana se congestiona, la respuesta más común es ampliarla. Durante los primeros meses, el resultado parece confirmar la decisión: los viajes son más rápidos y los conductores celebran la obra. Pero con frecuencia, al cabo de uno o dos años, los trancones vuelven a ser los de antes. Los especialistas en movilidad llaman a este fenómeno demanda inducida.\n\nLa explicación no está en un error de cálculo de los ingenieros, sino en el comportamiento de las personas. Mientras la vía estaba congestionada, muchos evitaban usarla: salían a otra hora, tomaban una ruta distinta, usaban el bus o simplemente no hacían el viaje. Cuando la ampliación reduce el tiempo de recorrido, esas personas descubren que ahora les conviene usar la vía en hora pico, y la capacidad nueva se llena con viajes que antes no se hacían allí.\n\nEsto no significa que ampliar una vía nunca tenga sentido, pero sí que la congestión no se resuelve solo con más capacidad. Cuando una mejora reduce el costo de usar un servicio, aparece una demanda que estaba contenida, y el beneficio esperado se diluye si no se gestiona también el uso, por ejemplo, con tarifas, horarios escalonados o mejores alternativas.\n\n¿Cuál de las siguientes situaciones es un caso de demanda inducida, tal como la explica el texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una alcaldía abre una segunda sede de atención en el sur, y las filas de la sede del centro se acortan porque los vecinos del sur dejan de ir hasta allí.",
+        "explicacion": "Incorrecta. La nueva sede reparte entre dos lugares a usuarios que ya existían, y el beneficio se mantiene: las filas del centro se acortan. En la demanda inducida, en cambio, la mejora atrae usos nuevos que terminan anulando el beneficio."
+      },
+      {
+        "id": "B",
+        "texto": "Una alcaldía reduce la espera para los trámites presenciales y, meses después, las filas crecen de nuevo con personas que antes los hacían por internet.",
+        "explicacion": "Correcta. Reproduce el mecanismo del texto: una mejora reduce el costo de usar un servicio (menos espera), atrae a personas que antes lo evitaban con una alternativa (internet, como quien «usaba el bus») y la capacidad liberada se llena con usos que antes no se hacían allí."
+      },
+      {
+        "id": "C",
+        "texto": "Una alcaldía amplía el horario de la ventanilla de impuestos, pero las filas no se acortan porque se pensionaron dos cajeros que no fueron reemplazados.",
+        "explicacion": "Incorrecta. Las filas siguen largas porque se perdió capacidad (dos cajeros menos), no porque la mejora haya atraído nuevos usuarios. Es otra causa de congestión."
+      },
+      {
+        "id": "D",
+        "texto": "Una alcaldía amplía un parqueadero público en el centro, pero durante el primer año los conductores casi no lo usan porque las calles vecinas están en obra.",
+        "explicacion": "Incorrecta. Es lo contrario del fenómeno: la mejora no atrae más uso, sino que casi no se aprovecha, por una razón externa (las obras)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: según el texto, en la demanda inducida una mejora que reduce el costo de usar un servicio atrae a quienes antes lo evitaban, y esa demanda contenida diluye el beneficio. Solo el caso de la espera presencial reúne los tres elementos: mejora, llegada de usuarios que antes usaban otra alternativa (internet) y regreso de las filas. Los demás describen una redistribución sin pérdida del beneficio, una pérdida de capacidad o una mejora que no se usa. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: distinguir hechos de opiniones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea la siguiente nota de un periódico regional y responda la pregunta.\n\nLA VEREDA EL ROBLE YA TIENE AGUA POTABLE\n\nDesde el pasado 14 de septiembre, las 312 familias de la vereda El Roble, en el municipio de Cerro Hondo, reciben agua tratada en sus casas. Hasta ese día, la mayoría se abastecía de la quebrada La Chorrera o de tanques que llenaba con agua lluvia.\n\nLa obra incluyó una bocatoma, una planta de tratamiento compacta y 14 kilómetros de tubería. Costó 4.100 millones de pesos, aportados por el departamento y el municipio, y tardó 26 meses en construirse, ocho más de lo previsto en el contrato. Según la Secretaría de Planeación, el retraso se debió a dos temporadas de lluvias que hicieron intransitable la vía de acceso.\n\nEl acueducto será administrado por una junta de usuarios elegida por la comunidad, que cobrará una tarifa mensual de 18.000 pesos por vivienda. «Por primera vez mis hijos se bañan con agua que no los enferma», dijo Marleny, habitante de la vereda.\n\nSe trata, sin duda, de la inversión más importante que ha recibido la zona rural de Cerro Hondo en la última década, y de una prueba de que las obras pequeñas, bien escogidas, cambian más vidas que los grandes proyectos de cemento que tanto gustan a los políticos.\n\n¿Cuál de los siguientes fragmentos expresa una opinión del autor de la nota y no un hecho que se pueda verificar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "«…tardó 26 meses en construirse, ocho más de lo previsto en el contrato.»",
+        "explicacion": "Incorrecta. Es un hecho verificable: la duración de la obra y el plazo del contrato pueden comprobarse en los documentos del proyecto."
+      },
+      {
+        "id": "B",
+        "texto": "«…el retraso se debió a dos temporadas de lluvias que hicieron intransitable la vía de acceso.»",
+        "explicacion": "Incorrecta. Es la explicación que dio la Secretaría de Planeación, y la nota se la atribuye («Según la Secretaría de Planeación»). Se puede verificar si hubo esas lluvias y si la vía quedó intransitable; no es una valoración del autor."
+      },
+      {
+        "id": "C",
+        "texto": "«Por primera vez mis hijos se bañan con agua que no los enferma.»",
+        "explicacion": "Incorrecta. Es el testimonio de una habitante, citado entre comillas. Expresa su experiencia, no una opinión del autor de la nota; que ella lo dijo es un hecho que el periodista registra."
+      },
+      {
+        "id": "D",
+        "texto": "«…las obras pequeñas, bien escogidas, cambian más vidas que los grandes proyectos…»",
+        "explicacion": "Correcta. Es un juicio del propio autor, que generaliza a partir de un solo caso y lo contrapone a «los grandes proyectos de cemento que tanto gustan a los políticos». No es un dato comprobable, sino una valoración."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la pregunta pide la opinión del autor. La duración y el plazo de la obra son verificables; la causa del retraso es una explicación atribuida a la Secretaría de Planeación, y la frase de la habitante es un testimonio citado. En cambio, la afirmación de que las obras pequeñas «cambian más vidas que los grandes proyectos» es una valoración del propio autor, introducida con «sin duda» y sin datos que la respalden. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Evaluar: supuesto implícito de una decisión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea la siguiente circular y responda la pregunta.\n\nCIRCULAR 019 DE 2026\n\nDE: Dirección de Talento Humano\nPARA: Servidores públicos de la entidad\nASUNTO: Solicitud de vacaciones a través de la plataforma Talento en Línea\n\nDurante 2025, el 38% de las solicitudes de vacaciones tardó más de quince días hábiles en resolverse, y en varios casos el servidor salió a disfrutarlas sin que se hubiera firmado el acto administrativo que las concedía. Para corregir esta situación, la Dirección de Talento Humano informa que, a partir del 1 de noviembre de 2026, las solicitudes de vacaciones se recibirán a través de la plataforma Talento en Línea. Desde esa fecha no se tramitarán formatos en papel radicados en la ventanilla de correspondencia.\n\nCon la plataforma, la solicitud llegará en el mismo instante al jefe inmediato y a la Dirección, y el servidor podrá consultar en cualquier momento en qué etapa se encuentra su trámite. Así se eliminarán los días que hoy se pierden mientras el formato en papel pasa de una oficina a otra, y los tiempos de respuesta se reducirán de forma notoria.\n\nLos jefes inmediatos seguirán siendo responsables de aprobar o rechazar cada solicitud, y la Dirección, de proyectar el acto administrativo y tramitar su firma.\n\nLos servidores que necesiten apoyo para usar la plataforma pueden pedir una capacitación al correo de la Dirección o acercarse a la oficina 204 los martes y jueves, de 2 a 4 de la tarde.\n\nPara concluir que la plataforma reducirá «de forma notoria» los tiempos de respuesta, la circular supone, sin decirlo, que…",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "buena parte de la demora se producía en el traslado del formato entre oficinas y no en la revisión o la firma.",
+        "explicacion": "Correcta. La circular solo cambia el canal de entrada: la aprobación del jefe y la firma del acto siguen igual. Por eso, la reducción «notoria» depende de que la mayor parte de la demora estuviera en «los días que hoy se pierden mientras el formato en papel pasa de una oficina a otra». Si el retraso estuviera en la revisión o en la firma, la plataforma no lo resolvería."
+      },
+      {
+        "id": "B",
+        "texto": "los servidores que no saben usar la plataforma tomarán la capacitación antes de que empiece a regir la medida.",
+        "explicacion": "Incorrecta. Que algunos servidores no se capaciten podría dificultarles radicar la solicitud, pero no afecta el razonamiento sobre los tiempos de respuesta de las solicitudes que entran por la plataforma. La conclusión no depende de esa premisa."
+      },
+      {
+        "id": "C",
+        "texto": "los jefes inmediatos fueron los responsables de que muchas solicitudes tardaran más de quince días hábiles.",
+        "explicacion": "Incorrecta. Si la demora se debiera a los jefes, cambiar el canal no la corregiría, porque ellos siguen aprobando cada solicitud. Esta idea debilitaría la conclusión de la circular, en lugar de sostenerla."
+      },
+      {
+        "id": "D",
+        "texto": "los formatos en papel radicados en la ventanilla se perdían con frecuencia antes de llegar a la Dirección.",
+        "explicacion": "Incorrecta. La circular habla de días perdidos en el traslado, no de formatos extraviados. Su conclusión no requiere que los formatos se perdieran; basta con que tardaran en pasar de una oficina a otra."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la circular mantiene igual la aprobación del jefe y la firma del acto, y solo reemplaza el papel por la plataforma. Concluye que así se eliminarán los días perdidos en el traslado y que los tiempos bajarán «de forma notoria». Eso solo se sigue si el traslado explicaba buena parte de la demora; si el cuello de botella estuviera en la revisión o en la firma, el cambio de canal no lo resolvería. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Contenido local: vocabulario en contexto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Lea el siguiente fragmento de un informe y responda la pregunta.\n\nSECRETARÍA DE SALUD DE LA ESMERALDA — INFORME DE LA JORNADA DE VACUNACIÓN (FRAGMENTO)\n\nLa jornada se realizó entre el 2 y el 27 de septiembre en las 19 veredas del municipio y en la cabecera. Se aplicaron 3.412 dosis, entre ellas 1.180 de influenza a adultos mayores y 860 del esquema regular a menores de seis años.\n\nEl equipo trabajó con un presupuesto ajustado. Los recursos alcanzaron para dos vacunadores y un vehículo durante cuatro semanas, de modo que las veredas más lejanas solo pudieron visitarse una vez, y en tres de ellas no fue posible regresar por los niños que no estaban en casa el día de la visita. Tampoco hubo dinero para perifoneo, así que la convocatoria se hizo por medio de las juntas de acción comunal y de los grupos de mensajería de las escuelas.\n\nA pesar de ello, la cobertura de vacunación en menores de seis años pasó del 78% al 91%. Para la próxima jornada, la secretaría recomienda prever desde el inicio una segunda visita a las veredas lejanas y destinar una partida, aunque sea pequeña, para difundir las fechas por la radio local.\n\nEn el texto, la expresión «un presupuesto ajustado» significa un presupuesto…",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "que fue modificado durante la jornada para corregir un error en los cálculos iniciales.",
+        "explicacion": "Incorrecta. «Ajustar» puede significar modificar o corregir, pero el texto no menciona cambios en el presupuesto ni errores de cálculo. Lo que describe son carencias."
+      },
+      {
+        "id": "B",
+        "texto": "que apenas alcanzaba para lo indispensable y no permitía cubrir gastos adicionales.",
+        "explicacion": "Correcta. El contexto lo aclara: los recursos solo «alcanzaron para dos vacunadores y un vehículo», no se pudo regresar a tres veredas y «tampoco hubo dinero para perifoneo». Un presupuesto ajustado es uno estrecho, que cubre apenas lo necesario."
+      },
+      {
+        "id": "C",
+        "texto": "que se ejecutó de acuerdo con lo que exigen las normas de contratación del sector.",
+        "explicacion": "Incorrecta. Corresponde al sentido de «ajustado a la norma», que no tiene relación con lo que cuenta el párrafo, centrado en lo que no se pudo hacer por falta de recursos."
+      },
+      {
+        "id": "D",
+        "texto": "que se calculó con precisión y coincidió exactamente con lo que se gastó al final.",
+        "explicacion": "Incorrecta. El texto no habla de la precisión del cálculo ni compara lo previsto con lo gastado. Lo que destaca es que el dinero no alcanzó para todo lo necesario."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: después de mencionar el «presupuesto ajustado», el texto enumera sus consecuencias: los recursos solo alcanzaron para dos vacunadores y un vehículo, no hubo segunda visita a las veredas lejanas y no hubo dinero para perifoneo. En ese contexto, «ajustado» significa escaso, justo para lo indispensable, y no modificado, conforme a la norma ni calculado con exactitud. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Contenido local: referente de un pronombre",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea el siguiente texto y responda la pregunta.\n\n¿QUÉ PAGAMOS CUANDO PAGAMOS EL ALUMBRADO PÚBLICO?\n\nMuchos usuarios creen que el impuesto de alumbrado público que aparece en su factura de energía paga la luz de su propia cuadra. En realidad, ese dinero financia la iluminación de todas las vías, parques y espacios públicos del municipio, incluidos los que el usuario quizá nunca recorre. Por eso, quien vive en una calle mal iluminada paga lo mismo que su vecino de una avenida bien alumbrada, si ambos están en la misma categoría de cobro.\n\nEl recaudo cubre tres rubros: la energía que consumen las luminarias, su mantenimiento y la expansión de la red hacia los sectores que todavía no tienen alumbrado. Este último rubro es el que más reclamos genera, porque los barrios nuevos suelen esperar años antes de que les instalen los postes.\n\nEn 2025, el municipio de Bellacruz empezó a cambiar sus 6.200 luminarias de sodio por otras de tecnología LED. Las nuevas consumen cerca de la mitad de la energía y duran más del doble. Ello debería liberar una parte del recaudo para llevar el alumbrado a los barrios que aún esperan, siempre que el ahorro no termine destinado a otros gastos.\n\nEn el último párrafo, la palabra «Ello» se refiere a…",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "que quede disponible una parte del recaudo para llevar la red a los barrios que esperan.",
+        "explicacion": "Incorrecta. Confunde el referente con lo que se espera que produzca. Liberar recursos para los barrios que aún esperan es lo que anuncia la propia oración («Ello debería liberar una parte del recaudo…»), no aquello a lo que «Ello» se refiere."
+      },
+      {
+        "id": "B",
+        "texto": "que el recaudo se destine a la energía, al mantenimiento y a la expansión de la red.",
+        "explicacion": "Incorrecta. La distribución del recaudo en tres rubros es el tema del segundo párrafo. No es lo que «debería liberar» recursos; lo que los libera es una reducción de costos."
+      },
+      {
+        "id": "C",
+        "texto": "que la red pase a funcionar con equipos más eficientes y de mayor vida útil.",
+        "explicacion": "Correcta. «Ello» retoma lo dicho justo antes: el cambio a luminarias LED, que «consumen cerca de la mitad de la energía y duran más del doble». Operar la red con equipos que gastan menos y se reponen con menos frecuencia es lo que liberaría parte del recaudo."
+      },
+      {
+        "id": "D",
+        "texto": "que los usuarios de una misma categoría paguen igual, sin importar cómo esté iluminada su calle.",
+        "explicacion": "Incorrecta. Esa idea aparece en el primer párrafo y explica por qué todos pagan lo mismo. No tiene relación con la liberación de recursos de la que habla el último párrafo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: «Ello debería liberar una parte del recaudo» viene después de que el texto describe el cambio a luminarias LED, que «consumen cerca de la mitad de la energía y duran más del doble». Lo que puede liberar dinero es una reducción de costos, y esa reducción viene de operar la red con equipos más eficientes y duraderos. Llevar el alumbrado a los barrios que esperan es lo que «Ello» haría posible, no su referente, y las otras opciones retoman ideas de párrafos anteriores. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Contenido local: datos de una tabla descrita en texto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea la siguiente información y responda la pregunta.\n\nPUNTOS DE ATENCIÓN AL CIUDADANO DE LA ALCALDÍA DE LAS ACACIAS — PRIMER SEMESTRE DE 2026\n\nLa Oficina de Atención al Ciudadano publicó los resultados de sus cuatro puntos de servicio presencial. Para cada punto se indican las solicitudes recibidas, las que se resolvieron dentro del plazo y el tiempo promedio de espera en la fila. Los datos no incluyen las solicitudes que llegaron por correo electrónico ni por la página web.\n\n- Sede Central: 4.800 solicitudes recibidas; 4.320 resueltas dentro del plazo; espera promedio de 34 minutos.\n- Punto Norte: 2.100 solicitudes recibidas; 1.995 resueltas dentro del plazo; espera promedio de 18 minutos.\n- Punto Sur: 1.500 solicitudes recibidas; 1.200 resueltas dentro del plazo; espera promedio de 12 minutos.\n- Punto Rural (itinerante): 600 solicitudes recibidas; 588 resueltas dentro del plazo; espera promedio de 41 minutos.\n\nEn el informe, la jefa de la oficina señaló que el Punto Rural atiende solo dos días por semana y que la Sede Central recibe la mayoría de los trámites de impuestos, que son los que más tiempo toman.\n\n¿Cuál de las siguientes afirmaciones se apoya en los datos presentados?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El punto con la espera promedio más corta fue también el que resolvió a tiempo la mayor proporción de sus solicitudes.",
+        "explicacion": "Incorrecta. La espera más corta fue la del Punto Sur (12 minutos), pero ese punto resolvió a tiempo solo el 80% de sus solicitudes (1.200 de 1.500), la proporción más baja de los cuatro."
+      },
+      {
+        "id": "B",
+        "texto": "La Sede Central resolvió dentro del plazo una proporción de sus solicitudes mayor que la del Punto Norte.",
+        "explicacion": "Incorrecta. La Sede Central resolvió a tiempo el 90% (4.320 de 4.800), y el Punto Norte, el 95% (1.995 de 2.100). La proporción de la Sede Central es menor."
+      },
+      {
+        "id": "C",
+        "texto": "Entre los cuatro puntos, más de una de cada cinco solicitudes recibidas se resolvió por fuera del plazo.",
+        "explicacion": "Incorrecta. Por fuera del plazo quedaron 480 + 105 + 300 + 12 = 897 de 9.000 solicitudes, cerca del 10%: una de cada diez, no más de una de cada cinco."
+      },
+      {
+        "id": "D",
+        "texto": "El Punto Rural tuvo la espera más larga y, aun así, la mayor proporción de solicitudes resueltas a tiempo.",
+        "explicacion": "Correcta. El Punto Rural tuvo la espera más larga (41 minutos) y resolvió a tiempo 588 de 600 solicitudes, el 98%, la proporción más alta de los cuatro puntos (Central 90%, Norte 95%, Sur 80%)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay que calcular la proporción resuelta a tiempo en cada punto: Central 4.320/4.800 = 90%; Norte 1.995/2.100 = 95%; Sur 1.200/1.500 = 80%; Rural 588/600 = 98%. El Punto Rural tiene a la vez la espera más larga (41 minutos) y la mejor proporción. El Sur, con la espera más corta, tiene la peor; la Central queda por debajo del Norte, y por fuera del plazo quedaron 897 de 9.000 (cerca del 10%). Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Contenido local: datos explícitos de una noticia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Lea la siguiente noticia y responda la pregunta.\n\nEL PUENTE DE LA CALLE 8 TENDRÁ CIERRE NOCTURNO DURANTE SEIS SEMANAS\n\nA partir del lunes 19 de octubre, el puente de la calle 8 sobre la quebrada Las Garzas, en el municipio de Villa Arrayán, estará cerrado al tránsito vehicular todas las noches, de 9 p. m. a 5 a. m., durante seis semanas. En el día funcionará con normalidad, aunque con un solo carril en cada sentido.\n\nEl cierre permitirá reemplazar las juntas de dilatación y reforzar dos de las cuatro vigas, que, según el último estudio técnico, presentan fisuras. La Secretaría de Infraestructura aclaró que el puente no está en riesgo de colapso, pero que aplazar la reparación encarecería la obra.\n\nMientras dure el cierre, los vehículos particulares y de carga deberán desviarse por el puente de la calle 15, unos dos kilómetros aguas abajo. Las ambulancias y los vehículos de bomberos podrán cruzar en cualquier momento, previo aviso al personal de la obra. Los peatones y ciclistas tendrán un paso habilitado por el costado norte del puente, también en las horas de la noche.\n\nLa obra cuesta 870 millones de pesos y la ejecuta un consorcio seleccionado por licitación pública.\n\nSegún la noticia, ¿cuál de las siguientes afirmaciones es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un ciclista que necesite cruzar el puente a las 11 de la noche podrá hacerlo por el paso habilitado.",
+        "explicacion": "Correcta. La noticia dice que «los peatones y ciclistas tendrán un paso habilitado por el costado norte del puente, también en las horas de la noche». A las 11 p. m. el puente está cerrado a los vehículos, pero el ciclista puede usar ese paso."
+      },
+      {
+        "id": "B",
+        "texto": "Los vehículos de carga tendrán que usar el puente de la calle 15 a cualquier hora durante las seis semanas.",
+        "explicacion": "Incorrecta. El desvío solo rige durante el cierre nocturno, de 9 p. m. a 5 a. m. En el día el puente «funcionará con normalidad», aunque con un carril por sentido."
+      },
+      {
+        "id": "C",
+        "texto": "Se reforzarán las cuatro vigas del puente, que según el estudio técnico presentan fisuras.",
+        "explicacion": "Incorrecta. Según la noticia, la obra reforzará «dos de las cuatro vigas», que son las que presentan fisuras, no las cuatro."
+      },
+      {
+        "id": "D",
+        "texto": "Las ambulancias podrán cruzar el puente de noche sin necesidad de dar ningún aviso.",
+        "explicacion": "Incorrecta. Las ambulancias pueden cruzar en cualquier momento, pero «previo aviso al personal de la obra». La opción omite esa condición."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la noticia indica que el cierre es solo para vehículos, de 9 p. m. a 5 a. m., y que peatones y ciclistas tendrán un paso habilitado también de noche. Por eso el ciclista puede cruzar a las 11 p. m. El desvío por la calle 15 no rige de día, la obra refuerza dos de las cuatro vigas y las ambulancias deben avisar al personal de la obra antes de cruzar. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-039",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Contenido local: secuencia de un proceso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Lea el siguiente texto y responda la pregunta.\n\nASÍ FUNCIONA EL PRESUPUESTO PARTICIPATIVO EN PUERTO ALMENDRO\n\nCada año, la Alcaldía de Puerto Almendro reserva una parte de su presupuesto de inversión para proyectos que propone y escoge la propia comunidad. El proceso se cumple en cuatro momentos.\n\nPrimero, entre febrero y marzo, cada comuna y cada corregimiento celebra asambleas abiertas en las que cualquier residente mayor de 14 años puede presentar ideas. Las ideas no necesitan venir escritas como proyectos: basta con describir el problema y la solución que se propone.\n\nLuego, la Secretaría de Planeación estudia las ideas durante abril y mayo. Descarta las que no son competencia del municipio o superan el monto asignado a la comuna, y convierte las demás en fichas con costo y plazo. Las ideas descartadas se devuelven con una explicación escrita.\n\nEn junio, las fichas viables se someten a votación. Pueden votar los residentes de cada comuna, en urnas instaladas en colegios y salones comunales o por internet, y cada persona elige hasta tres proyectos.\n\nFinalmente, los proyectos más votados, hasta agotar el monto de cada comuna, se incluyen en el presupuesto del año siguiente. Un comité de seguimiento, elegido en las mismas asambleas, vigila su ejecución y rinde un informe público cada semestre.\n\nDe acuerdo con el texto, ¿qué ocurre con una idea que la Secretaría de Planeación considera viable?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Queda incluida en el presupuesto del año siguiente, porque ya superó el estudio técnico.",
+        "explicacion": "Incorrecta. Confunde la viabilidad con la aprobación. Superar el estudio de Planeación no basta: las fichas viables se votan en junio, y al presupuesto del año siguiente solo entran las más votadas, «hasta agotar el monto de cada comuna»."
+      },
+      {
+        "id": "B",
+        "texto": "Vuelve a la asamblea de su comuna para que la comunidad la redacte en forma de proyecto.",
+        "explicacion": "Incorrecta. El texto aclara que las ideas «no necesitan venir escritas como proyectos»; es Planeación, no la asamblea, la que las convierte en fichas."
+      },
+      {
+        "id": "C",
+        "texto": "Pasa a manos de los residentes de su comuna, que la votan junto con las demás.",
+        "explicacion": "Correcta. Planeación convierte las ideas que no descarta en fichas, y en junio «las fichas viables se someten a votación» de los residentes de cada comuna. Solo después de esa votación, y según el monto disponible, se sabe si el proyecto entra al presupuesto."
+      },
+      {
+        "id": "D",
+        "texto": "Se devuelve a quien la propuso, junto con una explicación escrita de la decisión tomada.",
+        "explicacion": "Incorrecta. La devolución con una explicación escrita es lo que ocurre con las ideas descartadas, no con las viables."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en el segundo momento, Planeación descarta algunas ideas y convierte las demás en fichas; en el tercero, esas fichas se votan en junio, y en el cuarto entran al presupuesto del año siguiente solo las más votadas, hasta agotar el monto de cada comuna. Una idea viable, entonces, no queda aprobada por pasar el estudio técnico: pasa a la votación. Las descartadas son las que se devuelven con explicación, y ninguna vuelve a la asamblea para redactarse como proyecto. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-040",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Articulación: función de un párrafo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea el siguiente fragmento de un informe y responda la pregunta.\n\nPROGRAMA COMEDORES DEL ADULTO MAYOR DE SANTA RITA DEL MONTE — INFORME DE RESULTADOS 2025 (FRAGMENTO)\n\nEn 2025, los seis comedores comunitarios del programa entregaron 158.000 almuerzos a 640 personas mayores de 60 años en situación de vulnerabilidad. Al iniciar el año, el 31% de los beneficiarios tenía un peso por debajo del recomendado para su talla y su edad; en la medición de diciembre, ese porcentaje bajó al 19%.\n\nEstos resultados deben leerse con cautela. Las dos mediciones no se hicieron a las mismas personas: durante el año, 92 beneficiarios salieron del programa, por traslado, enfermedad o fallecimiento, y fueron reemplazados por otros que venían de la lista de espera. Además, en junio comenzó a funcionar en el municipio un programa departamental de mercados para adultos mayores, al que se inscribió cerca de la mitad de nuestros beneficiarios. No es posible, por tanto, saber qué parte de la mejora corresponde a los almuerzos.\n\nPara 2026, la Secretaría de Integración Social propone pesar a cada beneficiario al entrar y al salir del programa, y cruzar la información con la del programa departamental. Así se podrá medir el efecto de los comedores sobre quienes de verdad los usaron.\n\n¿Qué función cumple el segundo párrafo dentro del informe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explica por qué el programa no alcanzó la meta de reducción del bajo peso que se había fijado para el año.",
+        "explicacion": "Incorrecta. El informe no menciona ninguna meta de reducción. El párrafo no explica un incumplimiento, sino los límites para interpretar una mejora."
+      },
+      {
+        "id": "B",
+        "texto": "Relativiza lo que las cifras del primer párrafo permiten concluir sobre el efecto de los almuerzos.",
+        "explicacion": "Correcta. El párrafo no niega la mejora del 31% al 19%, pero advierte que esa comparación no basta para atribuírsela a los almuerzos: las dos mediciones se hicieron a personas distintas y cerca de la mitad de los beneficiarios recibió también los mercados del departamento. Por eso concluye que no se puede saber «qué parte de la mejora corresponde a los almuerzos»."
+      },
+      {
+        "id": "C",
+        "texto": "Presenta una causa distinta de los almuerzos que explica por sí sola toda la mejora observada.",
+        "explicacion": "Incorrecta. Generaliza en exceso. El párrafo menciona el programa departamental de mercados como un factor que coincidió con los almuerzos, pero no dice que explique toda la mejora: concluye que no se puede saber «qué parte de la mejora corresponde a los almuerzos»."
+      },
+      {
+        "id": "D",
+        "texto": "Describe las causas por las que algunos beneficiarios salieron del programa y cómo se llenaron sus cupos.",
+        "explicacion": "Incorrecta. La salida de 92 beneficiarios es uno de los datos del párrafo, pero no su función. Se menciona como razón para desconfiar de la comparación entre las dos mediciones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el segundo párrafo abre con «Estos resultados deben leerse con cautela» y cierra con «No es posible, por tanto, saber qué parte de la mejora corresponde a los almuerzos». Entre ambas frases expone dos razones: el cambio de beneficiarios entre mediciones y el programa departamental de mercados. Su función es acotar lo que se puede concluir de la mejora, no negarla, atribuirla por completo a otra causa ni explicar una meta incumplida. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Articulación: sustitución de un conector",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "pregunta": "Lea el siguiente texto y responda la pregunta.\n\nLAS VÍAS TERCIARIAS Y EL MANTENIMIENTO QUE NO SE VE\n\nLas vías terciarias comunican las veredas con las cabeceras municipales. Por ellas sale la cosecha, llegan los médicos de las brigadas de salud y viajan los niños a la escuela. La mayoría son caminos destapados, sin pavimento, que dependen de un buen sistema de drenaje para no convertirse en lodazales durante las lluvias.\n\nEl enemigo principal de estas vías no es el tránsito de vehículos, sino el agua. Cuando las cunetas se tapan con tierra o maleza, el agua corre por la superficie del camino, arrastra el material y abre surcos que en pocas semanas lo vuelven intransitable. Limpiar cunetas y alcantarillas cuesta poco y no requiere maquinaria pesada; reconstruir un tramo destruido puede costar veinte veces más.\n\nCon todo, en muchos municipios el mantenimiento rutinario es lo primero que se recorta cuando el presupuesto se estrecha. Una obra nueva se inaugura y se muestra; una cuneta limpia no aparece en ninguna fotografía.\n\nAlgunos municipios han encontrado una salida en los convenios con las juntas de acción comunal, que reciben recursos para que los vecinos hagan la limpieza periódica de los tramos de su vereda.\n\n¿Cuál de las siguientes expresiones puede reemplazar «Con todo», al inicio del tercer párrafo, sin cambiar el sentido del texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Por consiguiente",
+        "explicacion": "Incorrecta. «Por consiguiente» introduce una consecuencia. El tercer párrafo no se deriva del segundo: si limpiar cuesta poco, lo esperable sería cuidar el mantenimiento, y el texto dice que ocurre lo contrario."
+      },
+      {
+        "id": "B",
+        "texto": "Dicho de otro modo",
+        "explicacion": "Incorrecta. «Dicho de otro modo» anuncia una reformulación de lo anterior, pero el tercer párrafo no repite la idea del segundo, sino que presenta un hecho que choca con ella."
+      },
+      {
+        "id": "C",
+        "texto": "De igual manera",
+        "explicacion": "Incorrecta. «De igual manera» suma una idea del mismo sentido. El recorte del mantenimiento no se suma a las ventajas de limpiar cunetas; se opone a ellas."
+      },
+      {
+        "id": "D",
+        "texto": "A pesar de ello",
+        "explicacion": "Correcta. «Con todo» tiene valor concesivo: aunque mantener es barato y evita gastos veinte veces mayores, el mantenimiento es «lo primero que se recorta». «A pesar de ello» expresa la misma oposición."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el segundo párrafo muestra que limpiar cunetas «cuesta poco» y evita reconstrucciones que pueden costar «veinte veces más»; el tercero afirma que, aun así, el mantenimiento es lo primero que se recorta. «Con todo» marca esa oposición entre lo razonable y lo que ocurre, igual que «A pesar de ello». Las otras expresiones indican consecuencia, reformulación o adición. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Articulación: relación entre dos párrafos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea el siguiente texto y responda la pregunta.\n\n¿POR QUÉ SUBIÓ EL IMPUESTO PREDIAL ESTE AÑO?\n\nMuchos propietarios de Valle Hondo se sorprendieron al recibir la factura del impuesto predial de 2026. La explicación está en el avalúo catastral, el valor que el Estado le asigna a cada predio y sobre el cual se calcula el impuesto.\n\nDurante más de diez años, los avalúos del municipio solo se reajustaron con un porcentaje fijo cada año, mientras que el valor comercial de las viviendas creció mucho más rápido, sobre todo en los barrios por donde pasa la nueva vía. En 2025 se hizo una actualización catastral: funcionarios del gestor catastral visitaron los predios, midieron las construcciones y estimaron su valor actual. En promedio, los avalúos subieron un 46%.\n\nSin embargo, el impuesto no subió en la misma proporción. El acuerdo municipal que regula el predial fija un tope para el incremento anual del impuesto de las viviendas, de modo que el aumento se reparte en varios años. Por eso, aunque el avalúo de una casa se haya duplicado, su impuesto de este año no se duplica.\n\nQuien considere que su avalúo no corresponde a las características de su predio puede pedir la revisión ante el gestor catastral, con fotografías, planos o un avalúo comercial.\n\n¿Qué relación hay entre el segundo y el tercer párrafo del texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El tercero explica la causa del hecho que describe el segundo, es decir, por qué subieron los avalúos.",
+        "explicacion": "Incorrecta. La causa del aumento de los avalúos está en el propio segundo párrafo (más de diez años de reajustes fijos y la actualización de 2025). El tercero no explica por qué subieron, sino qué pasó con el impuesto."
+      },
+      {
+        "id": "B",
+        "texto": "El tercero repite con otras palabras la idea del segundo, para que el lector la comprenda mejor.",
+        "explicacion": "Incorrecta. El tercer párrafo no repite la idea del anterior: introduce con «Sin embargo» un dato nuevo, el tope al incremento anual."
+      },
+      {
+        "id": "C",
+        "texto": "El tercero matiza el efecto que el lector esperaría a partir del hecho que describe el segundo.",
+        "explicacion": "Correcta. El segundo párrafo informa que los avalúos subieron en promedio un 46%, de lo que el lector podría deducir un aumento igual del impuesto. El tercero, con «Sin embargo», aclara que «el impuesto no subió en la misma proporción» por el tope anual."
+      },
+      {
+        "id": "D",
+        "texto": "El tercero presenta una excepción para los predios cuyo avalúo no corresponde a sus características.",
+        "explicacion": "Incorrecta. La posibilidad de pedir la revisión del avalúo aparece en el cuarto párrafo, no en el tercero, y no es una excepción, sino un recurso para el propietario."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el segundo párrafo explica que, con la actualización catastral, los avalúos subieron en promedio un 46%. El tercero empieza con «Sin embargo» y aclara que el impuesto no subió en esa proporción, porque un tope reparte el incremento en varios años. Su relación con el anterior es, entonces, de matiz o limitación de la consecuencia esperada, no de causa, repetición ni excepción. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Articulación: estructura de una reseña",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "pregunta": "Lea la siguiente reseña y responda la pregunta.\n\nRESEÑA: «LA ALCALDÍA POR DENTRO», DE CLARA INÉS BERMÚDEZ\n\n¿Cómo se gobierna un municipio de quince mil habitantes con un presupuesto que apenas alcanza para pagar la nómina? Esa es la pregunta que intenta responder La alcaldía por dentro, el primer libro de Clara Inés Bermúdez, quien fue secretaria de Planeación en tres municipios pequeños antes de dedicarse a la docencia.\n\nEl libro tiene tres partes. La primera describe la rutina de una administración municipal: el consejo de gobierno de los lunes, la búsqueda de cofinanciación y la relación, a veces tensa, con el concejo. La segunda reúne doce casos, con los nombres de los municipios cambiados, de proyectos que fracasaron o salieron bien. La tercera propone una serie de herramientas sencillas para priorizar inversiones cuando se cuenta con poca información.\n\nEl mayor acierto del libro está en la segunda parte. Bermúdez no se limita a contar los fracasos: reconstruye las decisiones que los produjeron y muestra que casi siempre había una alternativa razonable que nadie consideró. Menos lograda es la tercera parte, pues las herramientas se explican con tanta prisa que el lector difícilmente podrá aplicarlas sin ayuda.\n\nAun con ese reparo, es una lectura recomendable para quienes aspiran a un cargo en una administración local y para los concejales recién elegidos, que encontrarán en ella un retrato sin adornos de lo que les espera.\n\n¿Cuál de las siguientes opciones describe mejor la organización de la reseña?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Plantea la pregunta del libro y presenta a su autora, describe sus partes, valora dos de ellas y dice a quién le sirve.",
+        "explicacion": "Correcta. El primer párrafo plantea la pregunta del libro y presenta a la autora; el segundo describe sus tres partes; el tercero valora la segunda («El mayor acierto») y la tercera («Menos lograda»), y el último lo recomienda a aspirantes y concejales."
+      },
+      {
+        "id": "B",
+        "texto": "Resume los doce casos del libro, los compara con la experiencia de la autora y concluye cuál de ellos es el más útil.",
+        "explicacion": "Incorrecta. La reseña menciona que hay doce casos, pero no los resume uno por uno ni elige el más útil. Toma un detalle de la segunda parte por la estructura del texto."
+      },
+      {
+        "id": "C",
+        "texto": "Cuenta la carrera de la autora, explica por qué escribió el libro y critica la forma en que tituló cada una de sus partes.",
+        "explicacion": "Incorrecta. La trayectoria de la autora ocupa solo una frase del primer párrafo, y la reseña no comenta los títulos de las partes del libro."
+      },
+      {
+        "id": "D",
+        "texto": "Describe las tres partes del libro, señala que todas tienen el mismo defecto y propone una manera de corregirlo.",
+        "explicacion": "Incorrecta. La reseña no dice que todas las partes tengan el mismo defecto: elogia la segunda, critica solo la tercera y no propone cómo corregirla."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la reseña avanza en cuatro pasos: pregunta del libro y presentación de la autora; descripción de las tres partes; valoración de dos de ellas (la segunda como «mayor acierto», la tercera como «menos lograda»), y recomendación final para aspirantes y concejales. Las demás opciones toman un detalle por la estructura o atribuyen a la reseña críticas que no hace. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LEC-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "modulo": "Comprensión Lectora",
+    "tema": "Comprensión Lectora",
+    "subtema": "Articulación: función de un ejemplo en la argumentación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "pregunta": "Lea la siguiente columna de opinión y responda la pregunta.\n\nPREGUNTAR ANTES, NO DESPUÉS\n\nEn la mayoría de las obras públicas del municipio, la comunidad se entera del proyecto cuando ya está diseñado y contratado. La socialización, como se le llama, consiste entonces en una reunión en la que el contratista muestra los planos, anuncia las fechas y recoge en un acta las inquietudes de los vecinos. A esas alturas, cualquier cambio de fondo implica modificar el contrato, y casi nunca se hace.\n\nHace tres años, la alcaldía construyó un parque lineal a lo largo de la quebrada que atraviesa el barrio El Recreo. Tiene senderos, máquinas para hacer ejercicio y una pequeña tarima. En la socialización, varios vecinos explicaron que lo que más necesitaban era iluminación, porque el sendero junto a la quebrada era el camino de los trabajadores que regresaban de noche y allí se presentaban robos. Ya era tarde: el diseño no incluía postes. Hoy el parque se ve vacío después de las seis de la tarde, y los vecinos siguen dando la vuelta por la avenida.\n\nSe dirá que consultar desde el principio alarga los proyectos y que siempre habrá quien se oponga. Es cierto, pero ese tiempo se recupera al no tener que corregir después lo que se hizo mal, y una consulta bien hecha no busca la unanimidad, sino conocer las necesidades que los técnicos no ven desde la oficina.\n\nPropongo que toda obra de espacio público de más de quinientos millones de pesos tenga al menos una consulta con los vecinos antes de terminar su diseño.\n\n¿Qué función cumple en la columna el caso del parque del barrio El Recreo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Plantea la principal objeción a la propuesta del autor, que él mismo responde en el párrafo siguiente.",
+        "explicacion": "Incorrecta. La objeción («Se dirá que consultar desde el principio alarga los proyectos…») aparece en el tercer párrafo, y el autor la responde allí mismo. El caso del parque no es una objeción, sino un apoyo a su tesis."
+      },
+      {
+        "id": "B",
+        "texto": "Muestra con un hecho concreto lo que se pierde cuando la comunidad opina sobre un diseño ya cerrado.",
+        "explicacion": "Correcta. El caso concreta lo que el primer párrafo describe en general: los vecinos pidieron iluminación en la socialización, pero «ya era tarde: el diseño no incluía postes», y el parque se ve vacío de noche. Sirve de ejemplo del costo de consultar cuando las decisiones ya están tomadas."
+      },
+      {
+        "id": "C",
+        "texto": "Prueba que los parques lineales son obras inútiles si no se diseñan con iluminación para la noche.",
+        "explicacion": "Incorrecta. Generaliza en exceso. El autor no juzga los parques lineales en general; usa este para mostrar una falla en el momento de la consulta, no en el tipo de obra."
+      },
+      {
+        "id": "D",
+        "texto": "Ilustra la forma correcta de socializar una obra, que el autor propone aplicar a los demás proyectos.",
+        "explicacion": "Incorrecta. Es lo contrario: la socialización del parque se hizo cuando el diseño ya estaba cerrado, que es justamente lo que el autor critica."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el primer párrafo critica que la comunidad se entere de las obras cuando ya están diseñadas y contratadas. El caso de El Recreo lo ilustra: los vecinos pidieron iluminación en la socialización, pero «ya era tarde», y el parque quedó vacío de noche. Es un ejemplo que apoya la tesis, no la objeción (que llega en el párrafo siguiente), ni un juicio sobre los parques lineales, ni un modelo de buena consulta. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

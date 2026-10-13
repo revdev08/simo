@@ -5,11 +5,13 @@ import {
   ArrowRight,
   BookOpen,
   CreditCard,
+  GraduationCap,
   Home,
   LayoutDashboard,
   LogOut,
   Menu,
   Sparkles,
+  Target,
   X,
   Zap,
 } from 'lucide-react'
@@ -17,7 +19,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 
-type Page = 'home' | 'guia' | 'simulacro' | 'other'
+type Page = 'home' | 'guia' | 'simulacro' | 'convocatorias' | 'docentes' | 'other'
 
 interface MobileMenuProps {
   current?: Page
@@ -75,6 +77,8 @@ export default function MobileMenu({ current = 'other' }: MobileMenuProps) {
     { href: '/', label: 'Inicio', icon: <Home className="w-5 h-5" />, key: 'home' },
     { href: '/#planes', label: 'Planes', icon: <CreditCard className="w-5 h-5" />, key: 'planes' },
     { href: '/simulacro-gratis', label: 'Simulacro', icon: <Zap className="w-5 h-5" />, key: 'simulacro', badge: 'Free' },
+    { href: '/mi-convocatoria', label: 'Mi convocatoria', icon: <Target className="w-5 h-5" />, key: 'convocatorias' },
+    { href: '/concurso-docente', label: 'Concurso docente', icon: <GraduationCap className="w-5 h-5" />, key: 'docentes' },
     { href: '/guia', label: 'Guía CNSC', icon: <BookOpen className="w-5 h-5" />, key: 'guia' },
   ]
 
@@ -84,7 +88,7 @@ export default function MobileMenu({ current = 'other' }: MobileMenuProps) {
       <button
         onClick={() => setOpen(true)}
         aria-label="Abrir menú"
-        className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all cursor-pointer"
+        className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all cursor-pointer"
       >
         <Menu className="w-5 h-5" />
       </button>
@@ -99,11 +103,11 @@ export default function MobileMenu({ current = 'other' }: MobileMenuProps) {
             type="button"
             aria-label="Cerrar menú"
             onClick={close}
-            className="fixed inset-0 z-[9990] md:hidden bg-slate-950/80 cursor-default animate-in fade-in duration-200"
+            className="fixed inset-0 z-[9990] lg:hidden bg-slate-950/80 cursor-default animate-in fade-in duration-200"
           />
 
           <aside
-            className="fixed top-0 right-0 bottom-0 z-[9999] md:hidden w-[88%] max-w-sm bg-white dark:bg-slate-950 shadow-2xl overflow-y-auto animate-in slide-in-from-right duration-300 ease-out"
+            className="fixed top-0 right-0 bottom-0 z-[9999] lg:hidden w-[88%] max-w-sm bg-white dark:bg-slate-950 shadow-2xl overflow-y-auto animate-in slide-in-from-right duration-300 ease-out"
           >
           <div className="flex flex-col min-h-full">
             {/* Header del panel */}

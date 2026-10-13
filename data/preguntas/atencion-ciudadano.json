@@ -1,0 +1,2240 @@
+[
+  {
+    "id": "TC-ATC-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Mínimo semanal de atención personal y deber de atender a quien ingresó dentro del horario",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 7, num. 2",
+      "art. 7, num. 3"
+    ],
+    "texto_fuente": "Las autoridades tendrán, frente a las personas que ante ellas acudan y en relación con los asuntos que tramiten, los siguientes deberes: [...] 2. Garantizar atención personal al público, como mínimo durante cuarenta (40) horas a la semana, las cuales se distribuirán en horarios que satisfagan las necesidades del servicio. [...] 3. Atender a todas las personas que hubieran ingresado a sus oficinas dentro del horario normal de atención.",
+    "pregunta": "La secretaría de hacienda de un municipio fijó este horario de atención en su sede: de lunes a viernes, de 8:00 a. m. a 12:00 m. y de 2:00 p. m. a 5:30 p. m. Además, en su sitio web funciona un asistente virtual automático que responde preguntas las 24 horas. Un viernes, un contribuyente entró a la sede a las 5:20 p. m. y tomó un turno. A las 5:30 p. m., el servidor cerró la ventanilla y le dijo que volviera el lunes. ¿Qué es correcto sobre el horario y sobre la actuación del servidor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cumple, pues en la sede se alcanza el mínimo semanal exigido, y el servidor podía citarlo para el lunes.",
+        "explicacion": "Incorrecta. En la sede se atienden 4 horas en la mañana y 3,5 en la tarde: 7,5 horas diarias y 37,5 a la semana, menos de las 40 horas de atención personal que exige el art. 7, num. 2. Además, quien ingresó dentro del horario debe ser atendido (num. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "No cumple, pues en la sede no se alcanza el mínimo semanal exigido, y el servidor podía citarlo para el lunes.",
+        "explicacion": "Incorrecta. Acierta en que el horario no cumple, pero el contribuyente entró a las 5:20 p. m., dentro del horario, y la autoridad debe atender a todas las personas que hayan ingresado a sus oficinas dentro del horario normal de atención (art. 7, num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "No cumple, pues en la sede no se alcanza el mínimo semanal exigido, y el servidor debía atenderlo ese mismo día.",
+        "explicacion": "Correcta. La sede atiende 7,5 horas diarias (4 + 3,5), es decir, 37,5 a la semana, por debajo de las 40 horas de atención personal que exige el art. 7, num. 2. Y como el contribuyente ingresó a las 5:20 p. m., dentro del horario, debía ser atendido ese día (art. 7, num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Cumple, pues el asistente virtual completa el mínimo semanal exigido, y el servidor debía atenderlo ese mismo día.",
+        "explicacion": "Incorrecta. Acierta en que debía atenderlo ese día (art. 7, num. 3), pero el mínimo de 40 horas semanales es de atención personal al público (art. 7, num. 2), y un asistente virtual automático no la reemplaza."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la sede atiende de 8:00 a 12:00 y de 2:00 a 5:30, de lunes a viernes, y el contribuyente entró a las 5:20 p. m. Regla: el art. 7 del CPACA obliga a garantizar atención personal al público como mínimo 40 horas a la semana (num. 2) y a atender a todas las personas que ingresaron dentro del horario (num. 3). Cálculo: 4 + 3,5 = 7,5 horas diarias × 5 días = 37,5 horas. Conclusión: el horario no cumple y el contribuyente debía ser atendido ese día.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ATC-002",
+    "version": 2,
+    "estado": "borrador",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Prohibición de exigir certificaciones que reposan en la entidad y requisitos no previstos en la norma del trámite",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 9, num. 4",
+      "art. 9, num. 5",
+      "art. 16, par. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "A las autoridades les queda especialmente prohibido: [...] 4. Exigir constancias, certificaciones o documentos que reposen en la respectiva entidad. 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política. [...] La autoridad tiene la obligación de examinar integralmente la petición, y en ningún caso la estimará incompleta por falta de requisitos o documentos que no se encuentren dentro del marco jurídico vigente, que no sean necesarios para resolverla o que se encuentren dentro de sus archivos.",
+    "pregunta": "La secretaría de gobierno de un municipio otorga los permisos para instalar puestos de venta en las fiestas patronales. El decreto municipal que regula el trámite pide el formulario diligenciado, la copia de la cédula y el paz y salvo del impuesto de industria y comercio. Un comerciante entrega el formulario y la copia de su cédula, y está al día en ese impuesto. El paz y salvo lo expide la secretaría de hacienda, que es una dependencia de la misma alcaldía, y el registro de los pagos del comerciante consta en el propio sistema de información de esa secretaría. El servidor de la ventanilla le exige, además, el paz y salvo y una carta de la junta de acción comunal que acredite que vive en el municipio, porque el secretario de gobierno quiere dar prioridad a los comerciantes locales. ¿Cuál de esos dos documentos puede exigirle el servidor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambos, porque el paz y salvo lo pide el decreto y la carta responde a una decisión del secretario dentro de su competencia.",
+        "explicacion": "Incorrecta. El secretario no puede crear requisitos que la norma del trámite no prevé (art. 9, num. 5), y el paz y salvo no puede pedirse al comerciante porque es una certificación que expide la propia alcaldía con base en sus registros (art. 9, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el paz y salvo, porque el decreto lo incluye entre los requisitos; la carta no, porque ninguna norma la prevé.",
+        "explicacion": "Incorrecta. Acierta en que la carta no puede exigirse. Pero, aunque el decreto mencione el paz y salvo, la ley prohíbe exigir certificaciones que reposen en la respectiva entidad (art. 9, num. 4), y aquí la entidad es la alcaldía, de la que hace parte la secretaría de hacienda que lleva el registro del pago. La alcaldía debe verificarlo en sus propios registros."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno por ahora: debe radicar la solicitud y requerirle los dos documentos dentro de los diez días siguientes.",
+        "explicacion": "Incorrecta. Requerir al peticionario para que complete la solicitud solo tiene sentido frente a documentos que sí pueden exigirse. Aquí ninguno puede pedirse: el paz y salvo reposa en la entidad (art. 9, num. 4) y la carta no está prevista en la norma (art. 9, num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque el pago del impuesto debe verificarlo la propia alcaldía y la carta no la contempla norma alguna.",
+        "explicacion": "Correcta. El paz y salvo es una certificación que expide una dependencia de la misma alcaldía con base en sus propios registros, y está prohibido exigir certificaciones que reposen en la entidad o tener por incompleta una petición por documentos que estén en sus archivos (art. 9, num. 4; art. 16, par. 1), aunque el decreto del trámite lo mencione. La carta de la junta es un requisito adicional que ninguna norma prevé (art. 9, num. 5)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el paz y salvo lo expide la secretaría de hacienda, que hace parte de la misma alcaldía y tiene en su sistema el registro del pago, y la carta de la junta la pide el secretario sin que la norma del trámite la prevea. Regla: el art. 9 del CPACA prohíbe exigir certificaciones que reposen en la respectiva entidad (num. 4) y exigir documentos no previstos o crear requisitos adicionales (num. 5); el art. 16, par. 1, impide tener por incompleta una petición por documentos que estén en los archivos de la autoridad. Conclusión: no puede exigir ninguno.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "ambigua",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45,
+      "nota": "Dos resoluciones a ciegas consideran defendible la opción B: el decreto municipal exige el paz y salvo y ese documento aún no existe. Requiere revisión de un abogado antes de publicarse."
+    }
+  },
+  {
+    "id": "TC-ATC-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Prohibición de negarse a recibir declaraciones privadas que presentan deficiencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 9, num. 2"
+    ],
+    "texto_fuente": "A las autoridades les queda especialmente prohibido: [...] 2. Negarse a recibir los escritos, las declaraciones o liquidaciones privadas necesarias para cumplir con una obligación legal, lo cual no obsta para prevenir al peticionario sobre eventuales deficiencias de su actuación o del escrito que presenta.",
+    "pregunta": "El último día del plazo para declarar el impuesto de industria y comercio, una contribuyente lleva su declaración en papel a la ventanilla de la secretaría de hacienda de un municipio. La servidora la revisa, nota que una casilla quedó en blanco y que el valor a pagar parece mal liquidado, y le dice que no la recibirá hasta que la corrija. ¿Cómo debió actuar la servidora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Recibir la declaración y, en el mismo momento, advertirle a la contribuyente sobre los errores que encontró.",
+        "explicacion": "Correcta. Está prohibido negarse a recibir las declaraciones o liquidaciones privadas necesarias para cumplir una obligación legal, aunque se puede prevenir al interesado sobre las deficiencias del escrito (art. 9, num. 2). Recibirla y advertirle los errores cumple las dos cosas."
+      },
+      {
+        "id": "B",
+        "texto": "Devolverle la declaración para que la corrija y la presente de nuevo dentro de los diez días siguientes.",
+        "explicacion": "Incorrecta. Devolverla equivale a negarse a recibirla, lo que el art. 9, num. 2, prohíbe. El plazo de diez días para corregir corresponde a las peticiones cuya finalidad no se comprende, no a una declaración con posibles errores."
+      },
+      {
+        "id": "C",
+        "texto": "Recibirla solo si la contribuyente firma un documento en el que acepta las sanciones que causen los errores.",
+        "explicacion": "Incorrecta. Condicionar el recibo a la firma de un documento que ninguna norma exige es otra forma de negarse a recibir la declaración (art. 9, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Abstenerse de recibirla, porque una declaración mal liquidada no sirve para cumplir el deber de declarar.",
+        "explicacion": "Incorrecta. Las eventuales deficiencias no autorizan a rechazar la declaración: la ley solo permite advertirlas al interesado al recibirla (art. 9, num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la servidora se niega a recibir la declaración porque tiene una casilla en blanco y un posible error de liquidación. Regla: el art. 9, num. 2, del CPACA prohíbe a las autoridades negarse a recibir las declaraciones o liquidaciones privadas necesarias para cumplir una obligación legal, sin perjuicio de prevenir al interesado sobre sus eventuales deficiencias. Conclusión: debía recibirla y advertirle los errores.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 82
+    }
+  },
+  {
+    "id": "TC-ATC-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Prohibición de exigir la presentación personal de peticiones cuando la ley no lo exige",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 5, num. 1 (modificado por el art. 1 de la Ley 2080 de 2021)",
+      "art. 9, nums. 1, 3 y 5"
+    ],
+    "texto_fuente": "Presentar peticiones en cualquiera de sus modalidades, verbalmente, o por escrito, o por cualquier otro medio idóneo y sin necesidad de apoderado, así como a obtener información oportuna y orientación acerca de los requisitos que las disposiciones vigentes exijan para tal efecto. [...] A las autoridades les queda especialmente prohibido: 1. Negarse a recibir las peticiones o a expedir constancias sobre las mismas. [...] 3. Exigir la presentación personal de peticiones, recursos o documentos cuando la ley no lo exija. [...] 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política.",
+    "pregunta": "Un campesino que vive en una vereda lejana le pide a su vecina que lleve a la alcaldía un escrito firmado por él, en el que solicita copia de la resolución que le reconoció un subsidio de vivienda. En la ventanilla de correspondencia, el servidor se niega a radicarlo y le dice a la vecina que el campesino debe ir en persona o, si no puede, autenticar su firma en una notaría. Ninguna norma especial regula la forma de presentar esa solicitud. ¿Cómo debió actuar el servidor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negarse a radicarlo en ventanilla, pero indicarle a la vecina que el campesino puede enviarlo por correo electrónico.",
+        "explicacion": "Incorrecta. Ofrecer otro canal no subsana la negativa: las autoridades tienen prohibido negarse a recibir las peticiones (art. 9, num. 1), y la petición puede presentarse por escrito y sin necesidad de apoderado (art. 5, num. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Radicarlo tal como lo llevó la vecina, sin exigir que el campesino se presente ni que autentique su firma.",
+        "explicacion": "Correcta. Las peticiones pueden presentarse por escrito y sin necesidad de apoderado (art. 5, num. 1); las autoridades no pueden negarse a recibirlas (art. 9, num. 1), exigir su presentación personal si la ley no lo exige (num. 3) ni crear formalidades adicionales (num. 5), como la autenticación de la firma."
+      },
+      {
+        "id": "C",
+        "texto": "Radicarlo solo si la vecina presenta una autorización escrita del campesino para entregarlo en su nombre.",
+        "explicacion": "Incorrecta. La autorización escrita para entregar el documento es una formalidad que ninguna norma prevé para esta solicitud (art. 9, num. 5). La vecina solo entrega el escrito que firmó el propio interesado, y para pedir no se necesita apoderado (art. 5, num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Radicarlo, pero advertir que el campesino deberá ratificar en persona su petición antes de que se resuelva.",
+        "explicacion": "Incorrecta. Recibir el escrito pero condicionar su decisión a que el interesado lo ratifique en persona es exigir la presentación personal sin que la ley lo pida (art. 9, num. 3) y crear una formalidad adicional (num. 5)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el campesino envió con una vecina su petición escrita y firmada, y ninguna norma especial regula su forma de presentación. Regla: el CPACA permite presentar peticiones por escrito y sin apoderado (art. 5, num. 1) y prohíbe negarse a recibirlas, exigir su presentación personal cuando la ley no lo exige y crear formalidades adicionales (art. 9, nums. 1, 3 y 5). Conclusión: debía radicar el escrito sin remitirlo a otro canal ni exigir autorizaciones, ratificaciones, la presencia del campesino o la autenticación de su firma.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Carta de trato digno al usuario: contenido, visibilidad y actualización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 7, num. 5"
+    ],
+    "texto_fuente": "5. Expedir, hacer visible y actualizar anualmente una carta de trato digno al usuario donde la respectiva autoridad especifique todos los derechos de los usuarios y los medios puestos a su disposición para garantizarlos efectivamente.",
+    "pregunta": "En una auditoría interna de una gobernación se encuentra que la carta de trato digno al usuario se expidió en 2022, está publicada solo en la intranet de los servidores y contiene los horarios y las sedes de atención, pero no menciona los derechos de los usuarios. El líder de servicio al ciudadano pregunta qué debe ajustar. ¿Qué debe responderle el auditor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Publicarla en la sede y en la web, y renovarla cada cuatro años, al adoptarse el nuevo plan de desarrollo.",
+        "explicacion": "Incorrecta. La carta debe actualizarse cada año, no cada cuatro, y debe especificar todos los derechos de los usuarios y los medios para garantizarlos (art. 7, num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Ponerla a la vista del público, renovarla cada año y detallar los derechos de los usuarios y cómo se garantizan.",
+        "explicacion": "Correcta. El art. 7, num. 5, obliga a expedir, hacer visible y actualizar anualmente la carta de trato digno, y a especificar en ella todos los derechos de los usuarios y los medios puestos a su disposición para garantizarlos. La carta de 2022, guardada en la intranet y sin derechos, falla en los tres aspectos."
+      },
+      {
+        "id": "C",
+        "texto": "Publicarla en la web y renovarla solo cuando cambien las normas que regulan los derechos de los usuarios.",
+        "explicacion": "Incorrecta. La ley fija una actualización anual, que no depende de los cambios normativos, y exige que la carta especifique los derechos de los usuarios (art. 7, num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Dejarla en la intranet, pero renovarla cada año e incluir en ella el procedimiento para presentar quejas.",
+        "explicacion": "Incorrecta. Una carta que solo ven los servidores no es visible para los usuarios, como exige el art. 7, num. 5. Además, lo que debe especificar son todos los derechos de los usuarios y los medios para garantizarlos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la carta es de 2022, solo está en la intranet y no menciona los derechos de los usuarios. Regla: el art. 7, num. 5, del CPACA obliga a expedir, hacer visible y actualizar anualmente una carta de trato digno que especifique todos los derechos de los usuarios y los medios para garantizarlos. Conclusión: debe ponerse a la vista del público, actualizarse cada año e incluir los derechos y sus medios de garantía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-ATC-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Prohibición de cobros adicionales por hacer el trámite en línea e incentivos para quienes usan ese canal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 6, par.",
+      "art. 23"
+    ],
+    "texto_fuente": "PARÁGRAFO. Los sujetos obligados en los términos de la presente ley, salvo autorización legal, no podrán incrementar las tarifas o establecer cobros adicionales a los trámites en razón de su realización en línea, so pena de la correspondiente sanción disciplinaria a la que haya lugar. [...] Los ciudadanos que realicen los trámites en línea podrán recibir un incentivo o valor agregado, que deberá ser fijado por la entidad responsable del trámite mediante acto administrativo.",
+    "pregunta": "La secretaría de planeación de un municipio habilitó en su sede electrónica la expedición del certificado de uso del suelo, que cuesta $25.000 en la ventanilla. En el comité directivo se discuten dos propuestas. El secretario de hacienda propone cobrar $5.000 adicionales a quienes lo pidan en línea, para recuperar lo invertido en la plataforma. La jefa de atención al ciudadano propone, en cambio, enviar el certificado impreso a domicilio, sin costo, a quienes lo tramiten en línea. Ninguna ley autoriza a la entidad a cobrar ese valor adicional. ¿Qué puede adoptar la entidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el envío a domicilio, porque la entidad puede fijar ese beneficio para quienes usen el canal virtual.",
+        "explicacion": "Correcta. Salvo autorización legal, está prohibido incrementar las tarifas o establecer cobros adicionales por realizar el trámite en línea (art. 6, par.). En cambio, quienes usan ese canal pueden recibir un incentivo o valor agregado, que la entidad fija mediante acto administrativo (art. 23)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el cobro adicional, con tal de que su valor no supere lo que realmente costó la plataforma en línea.",
+        "explicacion": "Incorrecta. La prohibición de cobros adicionales por la realización en línea no depende del costo de la plataforma: solo una autorización legal lo permitiría, y aquí no existe (art. 6, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Las dos propuestas, porque ambas ayudan a financiar el canal virtual y a promover que la gente lo use.",
+        "explicacion": "Incorrecta. El envío a domicilio es un incentivo permitido (art. 23), pero el cobro adicional está prohibido sin autorización legal, so pena de sanción disciplinaria (art. 6, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna de las dos, porque el trámite debe costar lo mismo y dar los mismos beneficios en todos los canales.",
+        "explicacion": "Incorrecta. La ley sí permite dar un incentivo o valor agregado a quienes hacen el trámite en línea (art. 23); lo prohibido es cobrar más por usar ese canal (art. 6, par.)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se propone cobrar $5.000 adicionales por el trámite en línea, sin ley que lo autorice, y enviar gratis el certificado a quienes usen ese canal. Regla: el par. del art. 6 de la Ley 2052 prohíbe, salvo autorización legal, incrementar tarifas o establecer cobros adicionales por la realización en línea; el art. 23 permite dar un incentivo o valor agregado a quienes hacen trámites en línea, fijado por la entidad mediante acto administrativo. Conclusión: solo puede adoptar el envío a domicilio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-ATC-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Plazo para actualizar el SUIT tras eliminar un requisito y prohibición de seguir exigiéndolo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2052 de 2020 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 19, inc. 2 (Ley 2052 de 2020)",
+      "art. 4 (Ley 2052 de 2020)",
+      "art. 9, num. 5 (Ley 1437 de 2011)"
+    ],
+    "texto_fuente": "Los sujetos obligados en los términos de la presente Ley deberán revisar, cada seis (6) meses, que los trámites cumplan con los lineamientos y criterios fijados por la Política de Racionalización de Trámites y demás normas que regulen la materia. [...] El contenido de la información registrada en el SUIT es responsabilidad de cada una de las entidades. Toda actualización de la información del trámite deberá llevarse a cabo dentro de los tres (3) días siguientes a la expedición del acto administrativo correspondiente. [...] 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política.",
+    "pregunta": "El lunes 2 de marzo de 2026, el director de una entidad del orden nacional expidió y publicó una resolución que eliminó, como requisito de un trámite de inscripción, la copia de un recibo de servicio público. El miércoles 4 de marzo, una ciudadana llega a inscribirse sin ese recibo. La servidora de la ventanilla se lo exige, porque el Sistema Único de Información de Trámites (SUIT) todavía lo muestra, y el jefe de planeación le explica a la ciudadana que el SUIT se actualizará en la próxima revisión de trámites, que la entidad hace cada seis meses. ¿Qué es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La servidora podía exigir el recibo mientras el SUIT lo muestre, y el SUIT puede actualizarse en la revisión semestral.",
+        "explicacion": "Incorrecta. Desde la resolución, el recibo dejó de ser un documento previsto en la norma del trámite, y exigirlo está prohibido (art. 9, num. 5, CPACA). Además, la actualización del SUIT tiene un plazo propio de tres días (art. 19, Ley 2052); la revisión semestral del art. 4 es otra obligación."
+      },
+      {
+        "id": "B",
+        "texto": "La servidora no podía exigir el recibo, y la entidad debía actualizar el SUIT a más tardar tres días después.",
+        "explicacion": "Correcta. Eliminado el requisito, exigirlo es pedir un documento no previsto por la norma aplicable (art. 9, num. 5, CPACA), aunque el SUIT siga desactualizado. Y la entidad, responsable del contenido del SUIT, debe actualizarlo dentro de los tres días siguientes a la expedición del acto (art. 19, Ley 2052)."
+      },
+      {
+        "id": "C",
+        "texto": "La servidora no podía exigir el recibo, y el SUIT puede actualizarse en la revisión semestral de los trámites.",
+        "explicacion": "Incorrecta. Acierta en que no podía exigirse el recibo, pero la actualización del SUIT debe hacerse dentro de los tres días siguientes a la expedición del acto (art. 19, Ley 2052), no en la revisión semestral de los trámites (art. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "La servidora podía exigir el recibo mientras el SUIT lo muestre, y la entidad debía actualizarlo en esos tres días.",
+        "explicacion": "Incorrecta. Acierta en el plazo de tres días para actualizar el SUIT (art. 19, Ley 2052), pero un desfase del sistema no autoriza a exigir un requisito que la norma ya eliminó (art. 9, num. 5, CPACA)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la resolución que eliminó el requisito se expidió el 2 de marzo y el 4 de marzo el SUIT aún lo mostraba. Regla: el art. 9, num. 5, del CPACA prohíbe exigir documentos no previstos por las normas aplicables; el art. 19 de la Ley 2052 hace a cada entidad responsable del contenido del SUIT y le ordena actualizarlo dentro de los tres días siguientes a la expedición del acto; la revisión semestral del art. 4 es otra obligación. Conclusión: no podía exigir el recibo y el SUIT debe actualizarse en tres días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 62
+    }
+  },
+  {
+    "id": "TC-ATC-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Dependencia de relación con el ciudadano: municipios obligados y nivel del responsable",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 17"
+    ],
+    "texto_fuente": "En la Nación, en los Departamentos, Distritos y Municipios con población superior a 100.000 habitantes, deberán crear dentro de su planta de personal existente una dependencia o entidad única de relación con el ciudadano que se encargará de liderar al interior de la entidad la implementación de las políticas que incidan en la relación Estado Ciudadano definidas por el Departamento Administrativo de la Función Pública, [...] El servidor público responsable de dicha dependencia o entidad, deberá ser del nivel directivo.",
+    "pregunta": "Las alcaldías de dos municipios revisan sus obligaciones frente a la Ley 2052 de 2020, de racionalización de trámites. Altamira tiene 85.000 habitantes y Bellavista, 140.000. Ambas evalúan organizar, con los cargos que ya tienen en su planta, una oficina de relación con el ciudadano que lidere internamente las políticas de servicio definidas por la Función Pública. ¿Qué exige la ley?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ambos municipios la organicen, y que quien la dirija sea un servidor del nivel profesional.",
+        "explicacion": "Incorrecta. La obligación es para los municipios con más de 100.000 habitantes, así que no cobija a Altamira, y el responsable debe ser del nivel directivo, no profesional (art. 17)."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo Bellavista la organice, y que quien la dirija sea un servidor del nivel directivo.",
+        "explicacion": "Correcta. Entre los municipios, solo los de población superior a 100.000 habitantes deben crear, con su planta existente, la dependencia de relación con el ciudadano, y su responsable debe ser del nivel directivo (art. 17). Bellavista supera ese umbral; Altamira no."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo Bellavista la organice, y que quien la dirija sea un servidor del nivel asesor.",
+        "explicacion": "Incorrecta. Acierta en que solo Bellavista está obligada, pero el art. 17 exige que el responsable sea del nivel directivo, no del asesor."
+      },
+      {
+        "id": "D",
+        "texto": "Que ambos municipios la organicen, y que quien la dirija sea un servidor del nivel directivo.",
+        "explicacion": "Incorrecta. Acierta en el nivel directivo, pero Altamira, con 85.000 habitantes, no supera el umbral de 100.000 que fija el art. 17 para los municipios."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Altamira tiene 85.000 habitantes y Bellavista, 140.000. Regla: el art. 17 de la Ley 2052 obliga a la Nación, a los departamentos, a los distritos y a los municipios con población superior a 100.000 habitantes a crear, dentro de su planta existente, una dependencia única de relación con el ciudadano, cuyo responsable debe ser del nivel directivo. Conclusión: solo Bellavista está obligada, y quien dirija la oficina debe ser del nivel directivo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ATC-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Trato irrespetuoso del ciudadano y petición respetuosa: el incumplimiento de sus deberes no permite desconocer su derecho",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 6, num. 4 y par.",
+      "art. 9, num. 1",
+      "art. 19, inc. 1 (sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "4. Observar un trato respetuoso con los servidores públicos. PARÁGRAFO. El incumplimiento de estos deberes no podrá ser invocado por la administración como pretexto para desconocer el derecho reclamado por el particular. Empero podrá dar lugar a las sanciones penales, disciplinarias o de policía que sean del caso según la ley. [...] 1. Negarse a recibir las peticiones o a expedir constancias sobre las mismas. [...] Toda petición debe ser respetuosa so pena de rechazo.",
+    "pregunta": "En la oficina de atención de una alcaldía, un ciudadano llega molesto porque nadie le ha explicado un cobro de alumbrado público. Le grita a la servidora, la llama incompetente y golpea el mostrador. Después le entrega un escrito, redactado en términos respetuosos, en el que pide que le expliquen cómo se liquidó ese cobro. La servidora se niega a recibirlo y le dice que, por su comportamiento, la entidad no tramitará la solicitud. ¿Qué es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Podía rechazarlo, porque el ciudadano lo presentó en medio de agresiones y toda petición debe ser respetuosa.",
+        "explicacion": "Incorrecta. La exigencia de respeto del art. 19 se refiere a la petición, y el escrito es respetuoso. El trato del ciudadano es un deber suyo, cuyo incumplimiento no puede invocarse para desconocer su derecho (art. 6, par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Debía recibirlo y tramitarlo, y el trato que recibió la servidora no puede dar lugar a sanciones contra él.",
+        "explicacion": "Incorrecta. Acierta en que debía recibir y tramitar el escrito, pero el incumplimiento del deber de trato respetuoso, aunque no permite desconocer el derecho reclamado, sí puede dar lugar a las sanciones penales, disciplinarias o de policía que sean del caso según la ley (art. 6, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Podía no recibirlo en ese momento, con tal de que le diera constancia y le indicara otro canal para radicarlo.",
+        "explicacion": "Incorrecta. Las autoridades tienen prohibido negarse a recibir las peticiones (art. 9, num. 1). Expedir una constancia de la negativa o remitir al ciudadano a otro canal no subsana esa negativa."
+      },
+      {
+        "id": "D",
+        "texto": "Debía recibirlo y tramitarlo, y el mal trato puede dar lugar, por separado, a las sanciones que fije la ley.",
+        "explicacion": "Correcta. El ciudadano incumplió su deber de trato respetuoso (art. 6, num. 4), pero ese incumplimiento no puede invocarse para desconocer su derecho, aunque puede dar lugar a sanciones penales, disciplinarias o de policía (art. 6, par.). Como el escrito es respetuoso, no cabe rechazarlo (art. 19) y debe recibirse (art. 9, num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el ciudadano trató mal a la servidora, pero su escrito es respetuoso. Regla: el art. 6 del CPACA impone a las personas el deber de trato respetuoso con los servidores (num. 4), pero su incumplimiento no puede invocarse para desconocer el derecho reclamado, sin perjuicio de sanciones penales, disciplinarias o de policía (par.). El rechazo del art. 19 es para peticiones irrespetuosas, y el art. 9, num. 1, prohíbe negarse a recibirlas. Conclusión: debía recibir y tramitar el escrito.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Trámite preferente de la petición que presenta un periodista para el ejercicio de su actividad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 20 (sustituido por el art. 1 de la Ley 1755 de 2015)",
+      "art. 5, num. 6"
+    ],
+    "texto_fuente": "6. Recibir atención especial y preferente si se trata de personas en situación de discapacidad, niños, niñas, adolescentes, mujeres gestantes o adultos mayores, y en general de personas en estado de indefensión o de debilidad manifiesta de conformidad con el artículo 13 de la Constitución Política. [...] Las autoridades darán atención prioritaria a las peticiones de reconocimiento de un derecho fundamental cuando deban ser resueltas para evitar un perjuicio irremediable al peticionario, quien deberá probar sumariamente la titularidad del derecho y el riesgo del perjuicio invocado. [...] Si la petición la realiza un periodista, para el ejercicio de su actividad, se tramitará preferencialmente.",
+    "pregunta": "Un periodista de un diario regional radica por el formulario web de una gobernación una petición en la que, para un reportaje que prepara, pide el número de quejas recibidas en el último año contra el servicio de transporte escolar. La oficina de atención al ciudadano reparte todas las peticiones a las dependencias en estricto orden de llegada, y hay 120 radicadas antes que la suya. ¿Cómo debe tramitarse esta petición?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En el orden de llegada, porque el trato preferente se reserva a niños, gestantes, adultos mayores y personas con discapacidad.",
+        "explicacion": "Incorrecta. La atención especial y preferente del art. 5, num. 6, no es la única: el art. 20 ordena tramitar preferencialmente la petición que realiza un periodista para el ejercicio de su actividad."
+      },
+      {
+        "id": "B",
+        "texto": "Antes que las demás, si el solicitante prueba en forma sumaria que la demora le causaría un perjuicio irremediable.",
+        "explicacion": "Incorrecta. La prueba sumaria del perjuicio irremediable es una condición de la atención prioritaria por riesgo para un derecho fundamental (art. 20, inc. 1); el trámite preferente de la petición de un periodista no la exige."
+      },
+      {
+        "id": "C",
+        "texto": "Antes que las demás, en razón del oficio de quien la formula y del uso profesional que dará a los datos pedidos.",
+        "explicacion": "Correcta. Si la petición la realiza un periodista para el ejercicio de su actividad, se tramitará preferencialmente (art. 20, inc. 2). Los datos son para un reportaje, así que la petición debe pasar antes que las pendientes."
+      },
+      {
+        "id": "D",
+        "texto": "En el orden de llegada, porque las solicitudes de los medios de comunicación deben canalizarse por la oficina de prensa.",
+        "explicacion": "Incorrecta. Ninguna norma obliga a los periodistas a pedir información por medio de la oficina de prensa. Su petición se recibe por los canales ordinarios y se tramita de forma preferente (art. 20, inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la petición la presenta un periodista para un reportaje. Regla: el art. 20 del CPACA (sustituido por la Ley 1755) ordena tramitar preferencialmente la petición que realiza un periodista para el ejercicio de su actividad, sin exigir la prueba del perjuicio irremediable, que es propia de la atención prioritaria del inciso primero; esa preferencia se suma a la atención preferente del art. 5, num. 6. Conclusión: debe tramitarse antes que las peticiones pendientes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Orientación al ciudadano que quiere quejarse de un servidor de la entidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011 y Ley 1474 de 2011",
+    "articulos": [
+      "art. 5, num. 7 (Ley 1437 de 2011)",
+      "art. 7, num. 7 (Ley 1437 de 2011)",
+      "art. 8, num. 7 (Ley 1437 de 2011)",
+      "art. 76, inc. 1 (Ley 1474 de 2011)"
+    ],
+    "texto_fuente": "7. Exigir el cumplimiento de las responsabilidades de los servidores públicos y de los particulares que cumplan funciones administrativas. [...] 7. Atribuir a dependencias especializadas la función de atender quejas y reclamos, y dar orientación al público. [...] 7. La dependencia, y el cargo o nombre del servidor a quien debe dirigirse en caso de una queja o reclamo. [...] En toda entidad pública, deberá existir por lo menos una dependencia encargada de recibir, tramitar y resolver las quejas, sugerencias y reclamos que los ciudadanos formulen, y que se relacionen con el cumplimiento de la misión de la entidad.",
+    "pregunta": "En el centro de atención de una gobernación, un ciudadano le dice al orientador de la entrada que quiere quejarse porque el servidor de la ventanilla 4 lo trató de forma despectiva, y le pregunta dónde puede hacerlo. ¿Cómo debe proceder el orientador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Orientarlo hacia la dependencia de la gobernación que atiende las quejas e indicarle a quién debe dirigir la suya.",
+        "explicacion": "Correcta. Toda persona puede exigir el cumplimiento de las responsabilidades de los servidores (art. 5, num. 7, CPACA); la entidad debe tener una dependencia que reciba, tramite y resuelva las quejas (art. 76, Ley 1474; art. 7, num. 7, CPACA) e informar la dependencia y el cargo o nombre del servidor a quien debe dirigirse la queja (art. 8, num. 7, CPACA)."
+      },
+      {
+        "id": "B",
+        "texto": "Remitirlo a la Procuraduría, porque solo los órganos de control tramitan las quejas por la conducta de un servidor.",
+        "explicacion": "Incorrecta. La gobernación debe tener una dependencia encargada de recibir, tramitar y resolver las quejas de los ciudadanos (art. 76, Ley 1474) e informar a quién deben dirigirse (art. 8, num. 7, CPACA). Remitir al ciudadano a un órgano de control desconoce ese deber de la propia entidad."
+      },
+      {
+        "id": "C",
+        "texto": "Llevarlo ante el jefe inmediato del servidor de la ventanilla 4, que es a quien le corresponde resolver la queja.",
+        "explicacion": "Incorrecta. Las quejas se atienden en las dependencias especializadas que la entidad debe tener para ello (art. 7, num. 7, CPACA; art. 76, Ley 1474), no en la jefatura del servidor señalado."
+      },
+      {
+        "id": "D",
+        "texto": "Tomar sus datos y pedirle al servidor de la ventanilla 4 que lo atienda de nuevo y le ofrezca disculpas.",
+        "explicacion": "Incorrecta. Una disculpa del servidor no sustituye la queja: el ciudadano tiene derecho a exigir el cumplimiento de las responsabilidades de los servidores públicos (art. 5, num. 7, CPACA), y la entidad debe recibir, tramitar y resolver las quejas (art. 76, Ley 1474)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el ciudadano quiere quejarse del trato de un servidor de la gobernación y pide orientación. Regla: toda persona puede exigir el cumplimiento de las responsabilidades de los servidores (art. 5, num. 7, CPACA); cada entidad debe tener una dependencia que reciba, tramite y resuelva las quejas (art. 76, Ley 1474; art. 7, num. 7, CPACA) e informar la dependencia y el cargo o servidor al que deben dirigirse (art. 8, num. 7). Conclusión: debe orientarlo hacia esa dependencia, no remitirlo a otra entidad ni sustituir la queja.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ATC-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Accesibilidad e inclusión",
+    "subtema": "Criterio diferencial de accesibilidad: divulgación en lenguas de grupos étnicos a solicitud de sus autoridades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1712 de 2014",
+    "articulos": [
+      "art. 8"
+    ],
+    "texto_fuente": "Con el objeto de facilitar que las poblaciones específicas accedan a la información que particularmente las afecte, los sujetos obligados, a solicitud de las autoridades de las comunidades, divulgarán la información pública en diversos idiomas y lenguas y elaborarán formatos alternativos comprensibles para dichos grupos. Deberá asegurarse el acceso a esa información a los distintos grupos étnicos y culturales del país y en especial se adecuarán los medios de comunicación para que faciliten el acceso a las personas que se encuentran en situación de discapacidad.",
+    "pregunta": "La secretaría de salud de un departamento prepara una jornada de vacunación en un resguardo indígena donde buena parte de la población habla solo su lengua propia. Publicó la información de la jornada en castellano en su sitio web y en carteleras, y grabó cuñas en castellano para la emisora comunitaria. El gobernador del cabildo pide por escrito que esa información se divulgue también en la lengua del resguardo. ¿Qué debe hacer la secretaría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Divulgar los datos de la vacunación en la lengua propia, pues así lo pide la autoridad de la comunidad.",
+        "explicacion": "Correcta. A solicitud de las autoridades de las comunidades, los sujetos obligados deben divulgar la información pública en diversos idiomas y lenguas y elaborar formatos alternativos comprensibles, para que esas poblaciones accedan a la información que las afecta (art. 8). La pidió el gobernador del cabildo y la jornada afecta al resguardo."
+      },
+      {
+        "id": "B",
+        "texto": "Mantener lo hecho, porque las cuñas radiales ya son el formato alternativo comprensible que exige la ley.",
+        "explicacion": "Incorrecta. Las cuñas en castellano no hacen comprensible la información para quienes solo hablan su lengua. Además de elaborar formatos alternativos, la ley ordena divulgar la información en diversos idiomas y lenguas cuando lo piden las autoridades de la comunidad (art. 8)."
+      },
+      {
+        "id": "C",
+        "texto": "Traducirla solo si el cabildo demuestra que la mayoría del resguardo no entiende el castellano hablado.",
+        "explicacion": "Incorrecta. La obligación surge de la solicitud de las autoridades de la comunidad y de que la información la afecte en particular (art. 8). La ley no exige probar que la mayoría de sus miembros desconoce el castellano."
+      },
+      {
+        "id": "D",
+        "texto": "Trasladar la solicitud al Ministerio del Interior, porque a este le corresponde atender a los pueblos indígenas.",
+        "explicacion": "Incorrecta. El deber de divulgar la información en las lenguas de la comunidad recae en los sujetos obligados (art. 8); aquí, en la secretaría de salud, que es la que tiene y debe divulgar la información de la jornada."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la información ya está en castellano, en la web, en carteleras y en audio, pero el gobernador del cabildo pidió divulgarla en la lengua del resguardo, al que afecta la jornada. Regla: el art. 8 de la Ley 1712 (criterio diferencial de accesibilidad) obliga a los sujetos obligados, a solicitud de las autoridades de las comunidades, a divulgar la información pública en diversos idiomas y lenguas y a elaborar formatos alternativos comprensibles para esos grupos. Conclusión: debe divulgarla en la lengua del resguardo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ATC-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Accesibilidad e inclusión",
+    "subtema": "Clases de barreras para las personas con discapacidad: actitudinales, comunicativas y físicas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1618 de 2013",
+    "articulos": [
+      "art. 2, num. 5, lits. a, b y c"
+    ],
+    "texto_fuente": "5. Barreras: Cualquier tipo de obstáculo que impida el ejercicio efectivo de los derechos de las personas con algún tipo de discapacidad. Estas pueden ser: a) Actitudinales: Aquellas conductas, palabras, frases, sentimientos, preconcepciones, estigmas, que impiden u obstaculizan el acceso en condiciones de igualdad de las personas con y/o en situación de discapacidad a los espacios, objetos, servicios y en general a las posibilidades que ofrece la sociedad; b) Comunicativas: Aquellos obstáculos que impiden o dificultan el acceso a la información, a la consulta, al conocimiento y en general, el desarrollo en condiciones de igualdad del proceso comunicativo de las personas con discapacidad a través de cualquier medio o modo de comunicación, incluidas las dificultades en la interacción comunicativa de las personas. c) Físicas: Aquellos obstáculos materiales, tangibles o construidos que impiden o dificultan el acceso y el uso de espacios, objetos y servicios de carácter público y privado, en condiciones de igualdad por parte de las personas con discapacidad.",
+    "pregunta": "En una visita al punto de atención de una alcaldía, la oficina de control interno registra tres situaciones: 1) al ver llegar a un usuario con discapacidad intelectual, un servidor comenta que «esas personas no deberían hacer trámites solas» y le pide volver con un familiar; 2) el formulario de inscripción del sitio web no puede leerse con los programas lectores de pantalla que usan las personas ciegas; 3) el mostrador de radicación mide 1,20 metros de alto, y un usuario en silla de ruedas no alcanza a firmar. Según la Ley 1618 de 2013, ¿qué clase de barrera es cada situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1) comunicativa; 2) comunicativa; 3) física.",
+        "explicacion": "Incorrecta. Acierta en 2 y 3, pero el comentario del servidor refleja una preconcepción o un estigma sobre la persona, que la ley define como barrera actitudinal (lit. a), no comunicativa."
+      },
+      {
+        "id": "B",
+        "texto": "1) actitudinal; 2) física; 3) física.",
+        "explicacion": "Incorrecta. Acierta en 1 y 3, pero un formulario web inaccesible impide el acceso a la información a través de un medio de comunicación: es una barrera comunicativa (lit. b). Las físicas son obstáculos materiales, tangibles o construidos (lit. c)."
+      },
+      {
+        "id": "C",
+        "texto": "1) comunicativa; 2) física; 3) física.",
+        "explicacion": "Incorrecta. Solo acierta en 3. El comentario es una barrera actitudinal (lit. a) y el formulario inaccesible, una comunicativa (lit. b)."
+      },
+      {
+        "id": "D",
+        "texto": "1) actitudinal; 2) comunicativa; 3) física.",
+        "explicacion": "Correcta. El comentario del servidor es una preconcepción o estigma que obstaculiza el acceso: barrera actitudinal (lit. a). El formulario que no leen los lectores de pantalla impide el acceso a la información por un medio de comunicación: comunicativa (lit. b). El mostrador alto es un obstáculo construido: física (lit. c)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay un comentario estigmatizante, un formulario web inaccesible para lectores de pantalla y un mostrador demasiado alto. Regla: el art. 2, num. 5, de la Ley 1618 define las barreras actitudinales (conductas, palabras, preconcepciones, estigmas), las comunicativas (obstáculos para acceder a la información a través de cualquier medio de comunicación) y las físicas (obstáculos materiales, tangibles o construidos). Conclusión: 1) actitudinal, 2) comunicativa y 3) física.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1618_2013.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "atencion_ciudadano",
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Gratuidad de las consultas de acceso a información pública con tarifa anterior a la Ley 1712 y costo de las copias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2052 de 2020 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 15 (Ley 2052 de 2020)",
+      "art. 29 (Ley 1437 de 2011, sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Los trámites que hayan sido establecidos o reglamentados con anterioridad a la expedición de la ley de Transparencia y Acceso a la Información Pública, sobre los cuales se tenga alguna tarifa asociada y cumplan con las características de consulta de acceso a información pública, deberán ser gratuitos de inmediato, salvo que se trate de normas de carácter especial, asociados al régimen mercantil, laboral, profesional y de seguridad social. [...] En ningún caso el precio de las copias podrá exceder el valor de la reproducción. Los costos de la expedición de las copias correrán por cuenta del interesado en obtenerlas.",
+    "pregunta": "Desde 2012, por un acuerdo municipal, una alcaldía cobra $12.000 por la consulta del inventario de bienes inmuebles del municipio, que consiste en permitir a cualquier persona revisar ese inventario en la oficina de bienes. En octubre de 2026, una ciudadana pide hacer la consulta y, además, una copia impresa de 25 hojas del inventario. Reproducir cada hoja le cuesta a la entidad $300, valor que no supera el precio comercial de referencia. ¿Cuánto debe cobrarle la alcaldía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$19.500, que suman la tarifa de la consulta y el valor de reproducir las 25 hojas pedidas.",
+        "explicacion": "Incorrecta. Suma una tarifa que ya no puede cobrarse: la consulta, creada antes de la ley de transparencia (Ley 1712 de 2014), es de acceso a información pública y debe ser gratuita de inmediato (art. 15, Ley 2052)."
+      },
+      {
+        "id": "B",
+        "texto": "$12.000, que es la tarifa de la consulta, en la cual se entiende incluido el valor de las copias.",
+        "explicacion": "Incorrecta. La tarifa de la consulta debe eliminarse (art. 15, Ley 2052), y las copias se cobran aparte, por cuenta del interesado y por su valor de reproducción (art. 29, CPACA)."
+      },
+      {
+        "id": "C",
+        "texto": "$7.500, que corresponden al valor de reproducir las 25 hojas, sin cobro alguno por la consulta.",
+        "explicacion": "Correcta. La consulta se creó en 2012, antes de la ley de transparencia (2014), tiene tarifa y es una consulta de acceso a información pública, así que debe ser gratuita (art. 15, Ley 2052). Las copias corren por cuenta del interesado, sin exceder el valor de la reproducción (art. 29, CPACA): 25 × $300 = $7.500."
+      },
+      {
+        "id": "D",
+        "texto": "$0, porque tanto la consulta como las copias de la información pública deben entregarse gratis.",
+        "explicacion": "Incorrecta. La gratuidad cobija la consulta, pero los costos de expedición de las copias corren por cuenta del interesado, siempre que no excedan el valor de la reproducción (art. 29, CPACA)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la consulta del inventario, que es información pública, tiene tarifa desde 2012, y la ciudadana pide además 25 copias a $300 cada una. Regla: el art. 15 de la Ley 2052 ordena que los trámites con tarifa, creados antes de la ley de transparencia y que sean consultas de acceso a información pública, sean gratuitos de inmediato; el art. 29 del CPACA pone las copias a cargo del interesado, sin exceder el valor de la reproducción. Cálculo: 25 × $300 = $7.500. Conclusión: debe cobrar $7.500.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Petición verbal sin razones ni anexos completos: radicación inmediata y aviso de lo que falta en el acto de recibo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1166 de 2016",
+    "articulos": [
+      "art. 2.2.3.12.3, inc. 3, nums. 5 y 6 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)"
+    ],
+    "texto_fuente": "La constancia de la recepción del derecho de petición verbal deberá radicarse de inmediato y deberá contener, como mínimo, los siguientes datos: [...] 5. Las razones en las que fundamenta la petición. La no presentación de las razones en que se fundamenta la petición no impedirá su radicación, [...] 6. La relación de los documentos que se anexan para iniciarla petición. Cuando una petición no se acompañe de los documentos e informaciones requeridos por la ley, en el acto de recibo la autoridad deberá indicar al peticionario los documentos o la información que falten, sin que su no presentación o exposición pueda dar lugar al rechazo de la radicación de la misma,",
+    "pregunta": "Un ciudadano se acerca al módulo de peticiones verbales de una alcaldía y le dice al técnico de atención al ciudadano que quiere inscribirse en el programa municipal de mejoramiento de fachadas. No explica por qué cree que cumple las condiciones del programa. El decreto que regula el programa exige adjuntar dos fotografías recientes de la fachada, y el ciudadano no las trae. ¿Cómo debe proceder el técnico con esta solicitud?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Radicarla enseguida y advertirle, en esa misma atención, que debe aportar las fotografías exigidas.",
+        "explicacion": "Correcta. La constancia de la petición verbal se radica de inmediato. No exponer las razones no impide la radicación (num. 5), y si faltan documentos, la autoridad debe indicarlo en el acto de recibo, sin que la falta pueda llevar a rechazar la radicación (num. 6 del art. 2.2.3.12.3)."
+      },
+      {
+        "id": "B",
+        "texto": "Abstenerse de radicarla mientras el ciudadano no explique por qué cree cumplir las condiciones del programa.",
+        "explicacion": "Incorrecta. Condiciona la radicación a que el ciudadano exponga sus razones, pero la norma dice que no presentarlas no impide radicar la petición (num. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "Tomarla como una consulta y radicarla cuando el ciudadano regrese con las fotografías que exige el decreto.",
+        "explicacion": "Incorrecta. Aplaza la radicación hasta que se completen los anexos. La falta de documentos se advierte en el acto de recibo, pero no puede dar lugar a rechazar la radicación (num. 6)."
+      },
+      {
+        "id": "D",
+        "texto": "Radicarla sin hacerle observaciones, para que la dependencia que la resuelva le pida después lo que falte.",
+        "explicacion": "Incorrecta. Radica, pero omite el deber de indicarle al peticionario, en el acto de recibo, los documentos que faltan; no basta con dejar que otra dependencia los pida más adelante (num. 6)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la petición verbal llega sin razones y sin las fotografías que exige el decreto del programa. Regla: el art. 2.2.3.12.3 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) ordena radicar de inmediato la constancia; la falta de razones no impide la radicación, y si faltan documentos, la autoridad debe indicarlo en el acto de recibo, sin rechazar la radicación. Conclusión: se radica en el momento y allí mismo se le advierte que faltan las fotografías.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Simple orientación sin radicación y respuesta verbal anotada en la constancia de la petición",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1166 de 2016",
+    "articulos": [
+      "art. 2.2.3.12.4 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)"
+    ],
+    "texto_fuente": "La respuesta al derecho de petición verbal deberá darse en los plazos establecidos en la ley. En el evento que se dé repuesta verbal a la petición, se deberá indicar de manera expresa la respuesta suministrada al peticionario en la respectiva constancia de radicación. No será necesario dejar constancia ni radicar el derecho de petición de información cuando la respuesta al ciudadano consista en una simple orientación del servidor público, acerca del lugar al que aquél puede dirigirse para obtener la información solicitada.",
+    "pregunta": "En el centro de atención de una gobernación, el orientador del módulo de peticiones verbales atiende a dos personas en la misma mañana. La primera le pregunta dónde puede pedir copia de una resolución de la secretaría de educación, y él le indica que en la ventanilla de esa secretaría, en el tercer piso. La segunda le pide que cambie el correo electrónico que registró en su inscripción al programa departamental de becas; el orientador, que tiene acceso al sistema, hace el cambio y le confirma en ese momento que quedó hecho. ¿Qué debe hacer el orientador con lo que le pidieron estas dos personas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Radicar las dos, pero anotar lo respondido solo en la primera, pues el cambio de la segunda ya consta en el sistema.",
+        "explicacion": "Incorrecta. La segunda es una petición verbal que se respondió de palabra: debe radicarse con la respuesta anotada de manera expresa en su constancia, y el registro del cambio en el sistema no reemplaza esa anotación (art. 2.2.3.12.4, inc. 1). La primera, en cambio, fue una simple orientación sobre el lugar al que debía dirigirse, que no requiere constancia ni radicación (inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "No radicar ninguna, dado que las dos solicitudes quedaron resueltas en el mismo momento.",
+        "explicacion": "Incorrecta. Acierta frente a la primera, pero la segunda es una petición verbal que recibió respuesta verbal: debe radicarse, y en su constancia se anota de manera expresa la respuesta dada (inc. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Radicar solo la segunda y dejar escrito en su constancia lo que le contestó de palabra a la persona.",
+        "explicacion": "Correcta. La indicación de dónde pedir la copia es una simple orientación, que no requiere constancia ni radicación. El cambio del correo sí se radica y, como se respondió verbalmente, la respuesta se anota de forma expresa en la constancia (art. 2.2.3.12.4)."
+      },
+      {
+        "id": "D",
+        "texto": "Radicar solo la segunda, sin anotar respuesta, y contestarle por escrito dentro de quince días.",
+        "explicacion": "Incorrecta. La norma admite la respuesta verbal, siempre que quede anotada de manera expresa en la constancia; radicar sin esa anotación incumple el inc. 1, y no se exige repetir la respuesta por escrito."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: a la primera persona solo se le indicó dónde pedir la copia; a la segunda se le atendió y respondió verbalmente su solicitud. Regla: el art. 2.2.3.12.4 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) exime de constancia y radicación la simple orientación sobre el lugar al que puede dirigirse el ciudadano, y exige que, si una petición se responde verbalmente, la respuesta se anote de forma expresa en la constancia de radicación. Conclusión: se radica solo la segunda, con la respuesta anotada.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ATC-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Petición verbal ante una autoridad sin competencia cuando el peticionario insiste en radicarla",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1166 de 2016 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 2.2.3.12.7 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)",
+      "art. 21 (Ley 1437 de 2011, sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Si es del caso, el funcionario encargado de recibir y radicar la petición verbal informará al peticionario, en el mismo acto de recepción, que la autoridad a la cual representa no es la competente para tramitar su solicitud y procederá a orientarlo para que presente su petición ante la autoridad correspondiente o, en caso de no existir funcionario competente, así se lo comunicará. No obstante, el peticionario podrá insistir en que se radique la petición, caso en el cual el funcionario deberá dejar constancia y radicarla, luego de lo cual le dará el trámite correspondiente. En todo caso, la autoridad registrará en la constancia de recepción del derecho de petición el tipo de orientación que se le dio al peticionario. [...] Si la autoridad a quien se dirige la petición no es la competente, se informará de inmediato al interesado si este actúa verbalmente, o dentro de los cinco (5) días siguientes al de la recepción, si obró por escrito. Dentro del término señalado remitirá la petición al competente y enviará copia del oficio remisorio al peticionario",
+    "pregunta": "En la ventanilla de una alcaldía, un ciudadano le pide verbalmente a la auxiliar de atención al ciudadano que corrijan un error en el segundo apellido de su cédula de ciudadanía. La auxiliar le explica que eso le corresponde a la Registraduría y le dice dónde queda la oficina más cercana. El ciudadano no queda conforme e insiste en que la alcaldía reciba su solicitud. ¿Cómo debe actuar la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No radicarla, porque al explicarle quién es competente y adónde acudir ya atendió en debida forma su petición.",
+        "explicacion": "Incorrecta. Orientarlo es el primer paso, pero si el peticionario insiste, el funcionario debe dejar constancia y radicar la petición (art. 2.2.3.12.7, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Radicarla porque él insiste, anotar en la constancia la orientación dada y luego remitirla a la Registraduría.",
+        "explicacion": "Correcta. Ante la insistencia, se deja constancia y se radica, registrando el tipo de orientación dada (art. 2.2.3.12.7), y luego se le da el trámite que corresponde: remitirla a la autoridad competente y enviar al peticionario copia del oficio remisorio (art. 21 del CPACA)."
+      },
+      {
+        "id": "C",
+        "texto": "Radicarla y tramitarla como propia, porque al insistir el ciudadano la alcaldía queda obligada a resolverla.",
+        "explicacion": "Incorrecta. La insistencia obliga a radicar, no a asumir una competencia que la alcaldía no tiene. El trámite que corresponde es remitirla al competente (art. 21 del CPACA)."
+      },
+      {
+        "id": "D",
+        "texto": "Radicarla y comunicarle por escrito, dentro de los cinco días siguientes, que la alcaldía no es la competente.",
+        "explicacion": "Incorrecta. El aviso dentro de cinco días es la regla para quien obró por escrito; a quien actúa verbalmente se le informa de inmediato, como ya se hizo, y lo que sigue es remitir la petición al competente (art. 21 del CPACA)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la petición es verbal, la alcaldía no es competente, el ciudadano ya fue orientado y aun así insiste. Regla: el art. 2.2.3.12.7 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) obliga, ante la insistencia, a dejar constancia, radicar y dar el trámite correspondiente, registrando la orientación dada; el art. 21 del CPACA ordena informar de inmediato a quien actúa verbalmente y remitir la petición al competente. Conclusión: radicar, anotar la orientación y remitirla a la Registraduría.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ATC-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Petición verbal en lengua nativa cuando la entidad no tiene intérpretes en su planta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1166 de 2016",
+    "articulos": [
+      "art. 2.2.3.12.9 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)",
+      "art. 2.2.3.12.3, inc. 3 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)"
+    ],
+    "texto_fuente": "Las personas que hablen una lengua nativa o un dialecto oficial de Colombia podrán presentar peticiones verbales ante cualquier autoridad en su lengua o dialecto. Las autoridades habilitarán los respectivos mecanismos que garanticen la presentación, constancia y radicación de dichas peticiones. Cuando las entidades no cuenten con intérpretes en su planta de personal para traducir directamente la petición, dejarán constancia de ese hecho y grabarán el derecho de petición en cualquier medio tecnológico o electrónico, con el fin de proceder a su posterior traducción y respuesta. [...] La constancia de la recepción del derecho de petición verbal deberá radicarse de inmediato",
+    "pregunta": "Una mujer del pueblo wayuu llega a la oficina de atención al ciudadano de una gobernación y, hablando solo en wayuunaiki, intenta presentar verbalmente una solicitud. El auxiliar que la atiende no habla esa lengua, la gobernación no tiene intérpretes en su planta de personal y la mujer llegó sola. ¿Qué debe hacer el auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Darle una cita con atención preferente para otro día, cuando la gobernación haya conseguido quien traduzca.",
+        "explicacion": "Incorrecta. Aplaza la recepción. La norma obliga a recibir la petición en la lengua nativa y, si no hay intérpretes en la planta, a grabarla en ese momento para traducirla después (art. 2.2.3.12.9)."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que regrese con un familiar o un vecino que hable castellano y pueda explicar lo que ella pide.",
+        "explicacion": "Incorrecta. Traslada a la ciudadana la carga de conseguir quien traduzca. Quien habla una lengua nativa puede presentar su petición en esa lengua ante cualquier autoridad, y es la entidad la que habilita los mecanismos para recibirla."
+      },
+      {
+        "id": "C",
+        "texto": "Anotar que no hay intérprete, registrar en audio lo que ella pide y radicarlo, para responderle ya traducido.",
+        "explicacion": "Correcta. Cuando la entidad no cuenta con intérpretes en su planta, deja constancia de ese hecho y graba la petición en un medio tecnológico o electrónico, para su posterior traducción y respuesta (art. 2.2.3.12.9, inc. 2). La radicación no espera a la traducción: la autoridad debe garantizar la presentación, constancia y radicación de estas peticiones (inc. 1), y la constancia se radica de inmediato (art. 2.2.3.12.3)."
+      },
+      {
+        "id": "D",
+        "texto": "Grabar lo que ella dice y advertirle que se radicará solo cuando la gobernación consiga quien lo traduzca.",
+        "explicacion": "Incorrecta. Grabar la petición es lo indicado, pero la radicación no puede quedar sujeta a la traducción: las autoridades deben garantizar la presentación, constancia y radicación de las peticiones en lengua nativa (art. 2.2.3.12.9, inc. 1), y la constancia se radica de inmediato (art. 2.2.3.12.3). Además, omite dejar constancia de que no hay intérprete."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ciudadana solo habla wayuunaiki y la gobernación no tiene intérpretes en su planta. Regla: el art. 2.2.3.12.9 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) permite presentar peticiones verbales en lengua nativa ante cualquier autoridad, obliga a garantizar su presentación, constancia y radicación y, si no hay intérpretes, ordena dejar constancia de ese hecho y grabar la petición para traducirla y responderla después; el art. 2.2.3.12.3 exige radicar la constancia de inmediato. Conclusión: se deja constancia, se graba y se radica sin esperar la traducción.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-ATC-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Recepción verbal de solicitudes de acceso a información, forma escrita en trámites y gratuidad de los formularios",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1166 de 2016",
+    "articulos": [
+      "art. 2.2.3.12.5 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)",
+      "art. 2.2.3.12.12, inc. 2 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)"
+    ],
+    "texto_fuente": "Para los casos de las solicitudes de acceso a la información pública, de acuerdo con lo señalado en el artículo 25 de Ley 1712 de 2014, todos los sujetos obligados deberán habilitar mecanismos para la recepción de solicitudes de manera verbal. Para las peticiones relacionadas con trámites y servicios del Estado, de conformidad con lo establecido en el artículo 15 de la Ley 1755 de 2015, las entidades podrán determinar si la solicitud debe ser presentada por escrito y deberán poner a disposición de los usuarios formularios u otros instrumentos estandarizados para facilitar la presentación de la misma. En todos los casos, las autoridades deberán informar previamente a los ciudadanos e interesados, a través de su sede electrónica y otros canales, los tipos de solicitudes que deberán ser presentadas por escrito. [...] En este caso, pondrá a disposición de los interesados formularios y otros instrumentos estandarizados para facilitar su diligenciamiento, sin costo, a menos que una ley señale expresamente lo contrario.",
+    "pregunta": "La líder de servicio al ciudadano de una alcaldía revisa el proyecto de reglamento interno de peticiones, que dispone: 1) las solicitudes de acceso a información pública se recibirán solo por escrito, en el formulario web o en papel; 2) la licencia de ocupación temporal del espacio público deberá pedirse por escrito, en un formulario que la ventanilla venderá a $3.000, aunque ninguna ley autoriza ese cobro; 3) la sede electrónica y las carteleras informarán con anticipación qué solicitudes deben presentarse por escrito. ¿Qué disposiciones pueden quedar como están?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo la 3; la 1 debe admitir también la vía oral y el formulario de la 2 tiene que entregarse gratis.",
+        "explicacion": "Correcta. Para las solicitudes de acceso a información pública debe habilitarse la recepción verbal (art. 2.2.3.12.5, inc. 1). En los trámites, la entidad puede exigir la forma escrita si lo informa previamente en su sede electrónica y otros canales (incs. 2 y 3), pero los formularios se entregan sin costo, salvo ley expresa (art. 2.2.3.12.12, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "La 2 y la 3; la 1 debe cambiarse para que la información pública también pueda pedirse de viva voz.",
+        "explicacion": "Incorrecta. Detecta el error de la disposición 1, pero pasa por alto que el formulario no puede venderse si ninguna ley autoriza el cobro (art. 2.2.3.12.12, inc. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "La 1 y la 3; la 2 debe cambiarse, porque ningún trámite puede exigirse por escrito si el ciudadano lo pide oralmente.",
+        "explicacion": "Incorrecta. Para las peticiones de trámites, la entidad sí puede determinar que se presenten por escrito (art. 2.2.3.12.5, inc. 2). Además, la disposición 1 desconoce el deber de recibir verbalmente las solicitudes de información pública."
+      },
+      {
+        "id": "D",
+        "texto": "Las tres, ya que cada entidad reglamenta la manera de presentar las peticiones que le corresponde resolver.",
+        "explicacion": "Incorrecta. La facultad de reglamentar el trámite interno no permite cerrar la vía verbal para pedir información pública ni cobrar formularios sin autorización legal."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el reglamento cierra la vía verbal para pedir información pública y cobra el formulario de un trámite sin autorización legal. Regla: el art. 2.2.3.12.5 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) obliga a recibir verbalmente las solicitudes de acceso a información y permite exigir la forma escrita en los trámites, informándolo antes en la sede electrónica y otros canales; el art. 2.2.3.12.12 exige que los formularios sean gratuitos, salvo ley expresa. Conclusión: solo la disposición 3 puede quedar igual.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ATC-020",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Asignación de personal sin capacitación a la recepción de peticiones verbales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011 y Decreto 1166 de 2016",
+    "articulos": [
+      "art. 9, num. 7 (Ley 1437 de 2011)",
+      "art. 2.2.3.12.2, inc. 1 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)"
+    ],
+    "texto_fuente": "A las autoridades les queda especialmente prohibido: [...] 7. Asignar la orientación y atención del ciudadano a personal no capacitado para ello. [...] Todas las autoridades deberán centralizar en una sola oficina o dependencia la recepción de las peticiones que se les formulen verbalmente en forma presencial o no presencial. Para dicha recepción se destinará el número de funcionarios suficiente que permita atender las peticiones verbales que diariamente se reciban, los cuales deberán tener conocimiento idóneo sobre las competencias de la entidad.",
+    "pregunta": "En la temporada de pago del impuesto predial, la oficina que recibe las peticiones verbales de un municipio pasa de 80 a más de 300 peticiones diarias. Para atenderlas, la coordinadora de atención al ciudadano quiere reforzar esa oficina con cuatro auxiliares administrativos de planta, trasladados desde el archivo. Ninguno ha atendido público ni sabe qué asuntos maneja cada secretaría, y no hay tiempo para darles inducción antes de la temporada. ¿Puede la coordinadora asignarlos así?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí, porque la norma exige destinar a esa oficina un número suficiente de funcionarios, y el refuerzo lo asegura.",
+        "explicacion": "Incorrecta. El número suficiente de funcionarios es solo una parte de la regla: el mismo inciso exige que quienes reciben las peticiones verbales tengan conocimiento idóneo sobre las competencias de la entidad (art. 2.2.3.12.2), y el CPACA prohíbe asignar la orientación y atención del ciudadano a personal no capacitado (art. 9, num. 7). El aumento de la demanda no levanta esa prohibición."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, porque el refuerzo es temporal y la exigencia de preparación rige para quienes atienden de forma permanente.",
+        "explicacion": "Incorrecta. La prohibición no distingue entre atención temporal y permanente: quienes reciben peticiones verbales deben tener conocimiento idóneo sobre las competencias de la entidad (art. 2.2.3.12.2)."
+      },
+      {
+        "id": "C",
+        "texto": "No, porque recibir peticiones verbales es una función reservada a los servidores del nivel técnico o superior.",
+        "explicacion": "Incorrecta. Ninguna de las dos normas exige un nivel jerárquico para recibir peticiones verbales; exigen capacitación, conocimiento de las competencias de la entidad y un número suficiente de funcionarios."
+      },
+      {
+        "id": "D",
+        "texto": "No, porque quienes reciben esas peticiones deben estar formados y conocer lo que le compete a la entidad.",
+        "explicacion": "Correcta. Está prohibido asignar la orientación y atención del ciudadano a personal no capacitado (art. 9, num. 7, CPACA), y los funcionarios que reciben las peticiones verbales deben tener conocimiento idóneo sobre las competencias de la entidad (art. 2.2.3.12.2)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los auxiliares no han atendido público ni conocen los asuntos de cada secretaría, y no recibirán inducción. Regla: el art. 2.2.3.12.2 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) pide destinar a la recepción de peticiones verbales un número suficiente de funcionarios, pero con conocimiento idóneo sobre las competencias de la entidad, y el art. 9, num. 7, del CPACA prohíbe asignar la orientación y atención del ciudadano a personal no capacitado. Conclusión: la mayor demanda no permite asignarlos sin capacitarlos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-ATC-021",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Accesibilidad e inclusión",
+    "subtema": "Persona ciega que no puede diligenciar un formulario impreso: medios y ajustes razonables a cargo de la entidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1618 de 2013 y Ley 2052 de 2020",
+    "articulos": [
+      "art. 14, num. 1 (Ley 1618 de 2013)",
+      "art. 30 (Ley 2052 de 2020)"
+    ],
+    "texto_fuente": "Corresponde a las entidades públicas y privadas encargadas de la prestación de los servicios públicos, de cualquier naturaleza, tipo y nivel, desarrollar sus funciones, competencias, objetos sociales, y en general, todas las actividades, siguiendo los postulados del diseño universal, de manera que no se excluya o limite el acceso en condiciones de igualdad, en todo o en parte, a ninguna persona en razón de su discapacidad. Para ello, dichas entidades deberán diseñar, implementar y financiar todos los ajustes razonables que sean necesarios para cumplir con los fines del artículo 9o de la Ley 1346 de 2009. [...] Los sujetos obligados en el artículo 2o de la presente ley implementarán los sistemas necesarios para que las personas en condición de discapacidad visual puedan realizar trámites, procesos y procedimientos.",
+    "pregunta": "Un ciudadano ciego llega a la secretaría de vivienda de un municipio para inscribirse en un programa de subsidios. La inscripción solo se hace en un formulario impreso, que no tiene versión accesible. El técnico de atención al ciudadano le dice que puede volver con alguien que le lea y le llene el formulario o, si lo prefiere, que la secretaría tiene contratada por horas a una persona que presta ese apoyo, pero que él debe pagarle el tiempo que use. ¿Qué es correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La secretaría puede exigirle que venga acompañado, porque el formulario es el mismo para todos los aspirantes.",
+        "explicacion": "Incorrecta. Un trato formalmente igual que deja por fuera a la persona por su discapacidad es lo que la ley busca evitar: las entidades deben actuar de manera que no se excluya ni se limite el acceso de nadie en razón de su discapacidad (art. 14, num. 1, Ley 1618)."
+      },
+      {
+        "id": "B",
+        "texto": "La secretaría debe habilitar medios para que él mismo se inscriba y asumir el costo de esos ajustes.",
+        "explicacion": "Correcta. Las entidades deben implementar los sistemas necesarios para que las personas con discapacidad visual realicen trámites (art. 30, Ley 2052) y diseñar, implementar y financiar los ajustes razonables necesarios (art. 14, num. 1, Ley 1618). El costo no se traslada al ciudadano ni a otra entidad."
+      },
+      {
+        "id": "C",
+        "texto": "La secretaría debe ofrecerle el apoyo, pero puede cobrarle su valor, porque es un servicio adicional al trámite.",
+        "explicacion": "Incorrecta. Reconoce el deber de ofrecer el apoyo, pero la financiación de los ajustes razonables corresponde a la entidad, no a la persona con discapacidad (art. 14, num. 1, Ley 1618)."
+      },
+      {
+        "id": "D",
+        "texto": "La secretaría debe darle el apoyo sin cobrarle, pero ese gasto debe asumirlo el Ministerio de Salud con recursos nacionales.",
+        "explicacion": "Incorrecta. Acierta en que el apoyo no se le cobra al ciudadano, pero traslada el costo a otra entidad: la ley ordena a las propias entidades que prestan el servicio diseñar, implementar y financiar los ajustes razonables (art. 14, num. 1, Ley 1618), y a los sujetos obligados, implementar los sistemas para que las personas con discapacidad visual hagan sus trámites (art. 30, Ley 2052)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la inscripción solo se hace en un formulario impreso y al ciudadano ciego se le pide traer quien le ayude o pagar el apoyo. Regla: el art. 30 de la Ley 2052 obliga a implementar los sistemas para que las personas con discapacidad visual realicen trámites, y el art. 14, num. 1, de la Ley 1618 ordena a las propias entidades diseñar, implementar y financiar los ajustes razonables para no excluir a nadie por su discapacidad. Conclusión: la secretaría habilita los medios y asume su costo, sin cobrarlo al ciudadano ni trasladarlo a otra entidad.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1618_2013.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Accesibilidad e inclusión",
+    "subtema": "Recursos del presupuesto para los ajustes razonables y publicación de esa información",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1618 de 2013",
+    "articulos": [
+      "art. 5, num. 4",
+      "art. 5, num. 6"
+    ],
+    "texto_fuente": "Para tal fin, las autoridades públicas deberán, entre otras, implementar las siguientes acciones: [...] 4. Incorporar en su presupuesto y planes de inversiones, los recursos necesarios destinados para implementar los ajustes razonables que se requieran para que las personas con discapacidad puedan acceder a un determinado bien o servicio social, y publicar esta información para consulta de los ciudadanos. [...] 6. Tomar las medidas tendientes a incentivar y orientar las estrategias de cooperación internacional e inversión social privada para generar programas y proyectos tendientes a mejorar las condiciones de las personas con discapacidad, así como en la implementación de ajustes razonables y acciones de inclusión social de las personas con discapacidad,",
+    "pregunta": "En el comité de gestión y desempeño de una gobernación, la profesional de planeación presenta el diagnóstico de los puntos de atención al ciudadano: para que las personas con discapacidad puedan usarlos se necesitan un programa lector de pantalla, señalización en braille y un servicio de interpretación en lengua de señas. El secretario de hacienda propone no destinar dinero de la gobernación a esas mejoras, esperar a que una agencia de cooperación internacional las done, como ha ocurrido otros años, y no publicar por ahora ninguna información sobre esas necesidades ni sobre su costo. ¿Qué debe hacer la gobernación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contar con la donación para financiar esas mejoras, y publicar ya la información sobre lo que cuestan.",
+        "explicacion": "Incorrecta. Acierta en publicar la información, pero la cooperación internacional es algo que las autoridades deben incentivar y orientar (art. 5, num. 6); no las releva de incorporar en su presupuesto y planes de inversiones los recursos para los ajustes razonables (num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Incluir en su presupuesto el valor de esas mejoras, pero reservar la información hasta que estén listas.",
+        "explicacion": "Incorrecta. Acierta en incluir los recursos en el presupuesto, pero la ley ordena publicar esa información para consulta de los ciudadanos; no prevé reservarla mientras se ejecutan los ajustes (art. 5, num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Contar con la donación, como otros años, y reservar la información hasta saber si la agencia la aprueba.",
+        "explicacion": "Incorrecta. Es la propuesta del secretario de hacienda y falla en los dos puntos: la cooperación internacional se incentiva, pero no reemplaza los recursos que la entidad debe incorporar en su presupuesto (art. 5, nums. 4 y 6), y la información sobre esos recursos debe publicarse para consulta de los ciudadanos (num. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Incluir en su presupuesto el valor de esas mejoras, y dejar esa información a disposición de la ciudadanía.",
+        "explicacion": "Correcta. Las autoridades públicas deben incorporar en su presupuesto y planes de inversiones los recursos para los ajustes razonables que permitan a las personas con discapacidad acceder a un servicio, y publicar esa información para consulta de los ciudadanos (art. 5, num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la gobernación necesita ajustes para que las personas con discapacidad usen sus puntos de atención, y se propone no destinar recursos propios ni publicar información sobre ellos. Regla: el art. 5, num. 4, de la Ley 1618 ordena a las autoridades incorporar en su presupuesto y planes de inversiones los recursos para los ajustes razonables y publicar esa información; la cooperación internacional (num. 6) es un apoyo, no un sustituto. Conclusión: apropiar los recursos y publicar la información.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1618_2013.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 78
+    }
+  },
+  {
+    "id": "TC-ATC-023",
+    "version": 3,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Término especial fijado en el decreto reglamentario del trámite: prevalece sobre el término general de las peticiones y no admite ampliación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 20, incs. 1 y 2"
+    ],
+    "texto_fuente": "El término para resolver de fondo un trámite será el dispuesto en la Ley que fundamenta su creación o su decreto reglamentario. Los servidores públicos bajo ninguna circunstancia podrán resolver un trámite por fuera de los términos allí estipulados. En caso de que no se disponga término para resolver de fondo un trámite en la ley o decreto reglamentario, este deberá resolverse conforme a lo dispuesto en la Ley 1755 de 2015,",
+    "pregunta": "Una ley creó un permiso que tramitan las secretarías de gobierno municipales. La misma ley dispone que el permiso se resolverá dentro de los ocho días hábiles siguientes a la radicación. El viernes 2 de octubre de 2026, una ciudadana radica la solicitud completa en la ventanilla de una alcaldía, y el técnico de atención al ciudadano le informa que tendrá respuesta dentro de los quince días hábiles que fija la Ley 1755 de 2015 para las peticiones, y que ese plazo podría prorrogarse si se le avisa antes de que venza. El lunes 12 de octubre de 2026 es festivo. ¿Hasta qué día tiene la secretaría para resolver el permiso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el lunes 26 de octubre, que es la fecha que resulta del término general para resolver peticiones.",
+        "explicacion": "Incorrecta. El término de quince días de la Ley 1755 solo se aplica cuando la ley o el decreto reglamentario del trámite no fijan uno (art. 20, inc. 2). Aquí la ley del permiso fija ocho días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el miércoles 14 de octubre, que corresponde al octavo día hábil siguiente a la radicación.",
+        "explicacion": "Incorrecta. Cuenta mal: el 14 de octubre es el séptimo día hábil, porque el lunes 12 es festivo. Contando desde el lunes 5, el octavo día hábil es el jueves 15."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el jueves 15 de octubre, que es el octavo día hábil del término que fija la ley del permiso.",
+        "explicacion": "Correcta. El término para resolver un trámite es el que fija la ley que lo crea, y los servidores no pueden resolverlo por fuera de ese término (art. 20 de la Ley 2052 de 2020). Ocho días hábiles desde el viernes 2 de octubre, sin contar el festivo del lunes 12, vencen el jueves 15 de octubre. El término general de la Ley 1755 y su ampliación solo se aplican cuando la ley o el reglamento del trámite no fijan término."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el martes 27 de octubre, si antes de vencer el plazo inicial le explica a la ciudadana la demora.",
+        "explicacion": "Incorrecta. Aplica la ampliación hasta el doble del término que el parágrafo del art. 14 de la Ley 1755 prevé para las peticiones (16 días hábiles, hasta el 27 de octubre). Pero un trámite con término propio no puede resolverse por fuera de él bajo ninguna circunstancia (art. 20, inc. 1, Ley 2052), y la Ley 1755 solo se aplica cuando la ley o el decreto reglamentario no fijan término (inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ley que creó el permiso fija ocho días hábiles, y la radicación fue el viernes 2 de octubre de 2026. Regla: según el art. 20 de la Ley 2052, el término de un trámite es el de su ley o su decreto reglamentario, no puede resolverse por fuera de él bajo ninguna circunstancia (no cabe la ampliación de la Ley 1755), y la Ley 1755 solo se aplica a falta de término propio. Cálculo: del lunes 5 al jueves 15 de octubre hay ocho días hábiles, porque el lunes 12 es festivo (sin el festivo, vencería el 14). Conclusión: jueves 15 de octubre, sin ampliación.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Período de transición para nuevos requisitos regulatorios y excepción de las comisiones de regulación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 22, inc. 1 y par. 1"
+    ],
+    "texto_fuente": "Los sujetos obligados en los términos de la presente ley que tengan funciones regulatorias y adopten nuevas regulaciones con las que se creen nuevos requisitos, procedimientos o procesos, deberán establecer, de acuerdo con las características de cada sector, un periodo de transición que les permita a las personas naturales o jurídicas destinatarias de la nueva regulación la implementación de los nuevos requisitos, procedimientos o procesos. [...] PARÁGRAFO 1o. Sé exceptúa de lo dispuesto en este artículo a la regulaciones expedidas por las Comisiones de Regulación.",
+    "pregunta": "El mismo día se publican dos resoluciones. En la primera, una agencia nacional con funciones regulatorias exige, para renovar el registro de ciertos equipos, un certificado técnico que antes no se pedía. En la segunda, una comisión de regulación obliga a las empresas del sector que regula a enviar un reporte trimestral nuevo. Ambas resoluciones exigen lo nuevo desde el día siguiente a su publicación, sin dar plazo para adaptarse. Un asesor jurídico revisa las dos. ¿Qué debe concluir según la Ley 2052 de 2020?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las dos entidades debían fijar un período de transición, acorde con las características de cada sector.",
+        "explicacion": "Incorrecta. La regla general obliga a fijar un período de transición, pero la ley exceptúa las regulaciones expedidas por las comisiones de regulación (art. 22, par. 1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo la agencia debía fijarlo, pues ese deber no cobija las regulaciones de las comisiones de regulación.",
+        "explicacion": "Correcta. La agencia, que tiene funciones regulatorias y creó un requisito nuevo, debía fijar un período de transición para su implementación (art. 22, inc. 1). Las regulaciones de las comisiones de regulación están exceptuadas de ese deber (par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo la comisión debía fijar un período de transición, porque sus reglas recaen sobre todo un sector.",
+        "explicacion": "Incorrecta. Invierte la regla: las comisiones de regulación son precisamente las exceptuadas, y la agencia sí estaba obligada."
+      },
+      {
+        "id": "D",
+        "texto": "Que ninguna debía fijarlo, porque los requisitos nuevos son exigibles desde su publicación si no hay ley en contrario.",
+        "explicacion": "Incorrecta. La Ley 2052 sí exige un período de transición cuando una entidad con funciones regulatorias crea nuevos requisitos; solo exceptúa a las comisiones de regulación."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: una agencia con funciones regulatorias y una comisión de regulación crearon requisitos exigibles desde el día siguiente. Regla: el art. 22 de la Ley 2052 obliga a quienes tienen funciones regulatorias y crean nuevos requisitos a fijar un período de transición para que los destinatarios los implementen, pero su par. 1 exceptúa las regulaciones de las comisiones de regulación. Conclusión: solo la agencia debía fijar el período de transición.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ATC-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Contenido mínimo de la constancia de una petición verbal recibida por teléfono",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1166 de 2016",
+    "articulos": [
+      "art. 2.2.3.12.3, inc. 3 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)"
+    ],
+    "texto_fuente": "La constancia de la recepción del derecho de petición verbal deberá radicarse de inmediato y deberá contener, como mínimo, los siguientes datos: 1. Número de radicado o consecutivo asignado a la petición. 2. Fecha y hora de recibido. 3. Los nombres y apellidos completos del solicitante y de su representante y/o apoderado, si es el caso, con indicación de los documentos de identidad y de la dirección física o electrónica donde se recibirá correspondencia y se harán las notificaciones. [...] 4. El objeto de la petición. 5. Las razones en las que fundamenta la petición. [...] 6. La relación de los documentos que se anexan para iniciarla petición. [...] 7. Identificación del funcionario responsable de la recepción y radicación de la petición. 8. Constancia explícita de que la petición se formuló de manera verbal.",
+    "pregunta": "El técnico que coordina la línea telefónica de atención de una gobernación revisa el formato en el que se registran las peticiones que los ciudadanos formulan por teléfono. El formato tiene estos campos: número de radicado, fecha y hora de recibo, nombres y apellidos del solicitante con su documento de identidad, dirección para notificaciones y objeto de la petición. ¿Qué campos le faltan para cumplir el contenido mínimo que el Decreto 1166 de 2016 fija para esas constancias?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La firma del solicitante, la relación de anexos, el servidor que la recibió y la mención de que fue verbal.",
+        "explicacion": "Incorrecta. La firma no está entre los datos mínimos de la constancia de una petición verbal, y en una llamada no podría recogerse. Además, omite las razones en que se fundamenta la petición (num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "La autoridad a la que se dirige, la relación de anexos, la grabación de la llamada y la mención de que fue verbal.",
+        "explicacion": "Incorrecta. Ni la designación de la autoridad ni la grabación de la llamada están entre los datos mínimos de esta constancia, y omite las razones de la petición y la identificación del funcionario (nums. 5 y 7)."
+      },
+      {
+        "id": "C",
+        "texto": "Los fundamentos de la petición, la grabación de la llamada, la firma del solicitante y el servidor que la recibió.",
+        "explicacion": "Incorrecta. La grabación y la firma no son datos mínimos de la constancia; además, faltan la relación de los documentos anexos y la constancia explícita de que la petición fue verbal (nums. 6 y 8)."
+      },
+      {
+        "id": "D",
+        "texto": "Los fundamentos de la petición, la relación de anexos, el servidor que la recibió y la mención de que fue verbal.",
+        "explicacion": "Correcta. El formato ya cubre los datos de los nums. 1 a 4. Le faltan las razones de la petición, la relación de los documentos anexos, la identificación del funcionario que la recibió y radicó, y la constancia explícita de que se formuló de manera verbal (nums. 5 a 8 del art. 2.2.3.12.3)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el formato ya tiene radicado, fecha y hora, datos del solicitante y objeto. Regla: el art. 2.2.3.12.3 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) fija ocho datos mínimos de la constancia de una petición verbal: radicado, fecha y hora, datos del solicitante, objeto, razones, relación de anexos, funcionario responsable y constancia explícita de que fue verbal. No incluye firma ni grabación. Conclusión: faltan las razones, los anexos, el funcionario y la mención de que fue verbal.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ATC-026",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Petición formulada por mensaje de voz en un canal digital fuera del horario de atención",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1166 de 2016 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 2.2.3.12.1 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)",
+      "art. 2.2.3.12.2, inc. 3 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)",
+      "art. 2.2.3.12.3, inc. 2 (Decreto 1069 de 2015, adicionado por el art. 1 del Decreto 1166 de 2016)",
+      "art. 5, num. 1, inc. 2 (Ley 1437 de 2011, modificado por el art. 1 de la Ley 2080 de 2021)"
+    ],
+    "texto_fuente": "El presente capítulo regula la presentación, radicación y constancia de todas aquellas peticiones presentadas verbalmente en forma presencial, por vía telefónica, por medios electrónicos o tecnológicos o a través de cualquier otro medio idóneo para la comunicación o transferencia de la voz. [...] Así mismo, las autoridades, deberán habilitar los medios, tecnológicos o electrónicos disponibles que permitan la recepción de las peticiones verbales en los términos y condiciones establecidas en el artículo 2.2.3.12.3. del presente decreto, aun por fuera de las horas de atención al público [...] Las autoridades deberán dejar constancia y deberán radicar las peticiones verbales que se reciban, por cualquier medio idóneo que garantice la comunicación o transferencia de datos de la información al interior de la entidad. [...] Las anteriores actuaciones podrán ser adelantadas o promovidas por cualquier medio tecnológico o electrónico disponible en la entidad o integradas en medios de acceso unificado a la administración pública, aún por fuera de las horas y días de atención al público.",
+    "pregunta": "Una alcaldía anuncia en su sede electrónica que su línea de WhatsApp es uno de sus canales de atención al ciudadano, con servicio de lunes a viernes de 8:00 a. m. a 5:00 p. m. El lunes, la auxiliar que administra la línea encuentra un mensaje de voz que una ciudadana envió el sábado, en el que pide que reparen el alumbrado público de su cuadra. El coordinador le indica que lo recibido fuera del horario no se tramita y que le pida a la ciudadana enviarlo otra vez entre semana. ¿Qué debe hacer la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tratarlo como una petición hecha de viva voz, con constancia y radicado, pues el día de envío no lo impide.",
+        "explicacion": "Correcta. Las peticiones formuladas por medios electrónicos o tecnológicos que transmiten la voz son peticiones verbales (art. 2.2.3.12.1), y las autoridades deben habilitar los medios disponibles para recibirlas aun por fuera de las horas de atención (art. 2.2.3.12.2; art. 5, num. 1, CPACA). Se deja constancia y se radica."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que lo envíe de nuevo entre semana, porque fuera del horario el canal no está habilitado para peticiones.",
+        "explicacion": "Incorrecta. El horario anunciado no impide recibir peticiones por los medios tecnológicos disponibles fuera de las horas de atención; la norma ordena justamente habilitarlos para eso (art. 2.2.3.12.2, inc. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Tramitarlo solo si la ciudadana lo confirma por escrito, porque un mensaje de voz no es un medio idóneo para pedir.",
+        "explicacion": "Incorrecta. El mensaje de voz es un medio idóneo para la transferencia de la voz (art. 2.2.3.12.1), y la petición verbal no necesita confirmarse por escrito para radicarse."
+      },
+      {
+        "id": "D",
+        "texto": "Enviar el audio de inmediato al área de alumbrado para que repare la falla, sin radicarlo, para no demorar la solución.",
+        "explicacion": "Incorrecta. Busca agilizar la reparación, pero se salta lo que exige la norma: las peticiones verbales, incluidas las que llegan por medios que transmiten la voz (art. 2.2.3.12.1), deben dejarse en constancia y radicarse (art. 2.2.3.12.3, inc. 2). Remitir el audio a la dependencia no reemplaza ese registro."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la petición llegó por mensaje de voz, un sábado, a un canal oficial de la alcaldía. Regla: el art. 2.2.3.12.1 del Decreto 1069 de 2015 (adicionado por el Decreto 1166 de 2016) incluye entre las verbales las peticiones hechas por medios tecnológicos que transmiten la voz; el art. 2.2.3.12.2 obliga a habilitar los medios disponibles para recibirlas aun fuera de las horas de atención, como también lo prevé el art. 5, num. 1, del CPACA, y el art. 2.2.3.12.3 exige dejar constancia y radicarlas. Conclusión: se deja constancia y se radica.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=73693",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-027",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Presunción de buena fe del solicitante: prohibición de exigir pruebas adicionales por una sospecha",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Constitución Política y Ley 1437 de 2011",
+    "articulos": [
+      "art. 83 (Constitución Política)",
+      "art. 6, num. 2 y par. (Ley 1437 de 2011)",
+      "art. 9, num. 5 (Ley 1437 de 2011)"
+    ],
+    "texto_fuente": "Las actuaciones de los particulares y de las autoridades públicas deberán ceñirse a los postulados de la buena fe, la cual se presumirá en todas las gestiones que aquellos adelanten ante éstas. [...] 2. Obrar conforme al principio de buena fe, absteniéndose de emplear maniobras dilatorias en las actuaciones, y de efectuar o aportar, a sabiendas, declaraciones o documentos falsos o hacer afirmaciones temerarias, entre otras conductas. [...] PARÁGRAFO. El incumplimiento de estos deberes no podrá ser invocado por la administración como pretexto para desconocer el derecho reclamado por el particular. Empero podrá dar lugar a las sanciones penales, disciplinarias o de policía que sean del caso según la ley. [...] 5. Exigir documentos no previstos por las normas legales aplicables a los procedimientos de que trate la gestión o crear requisitos o formalidades adicionales de conformidad con el artículo 84 de la Constitución Política.",
+    "pregunta": "Para inscribirse en un programa municipal de apoyo a madres cabeza de familia, el decreto que lo regula pide el formulario de inscripción y una declaración firmada por la solicitante en la que afirme esa condición. Una ciudadana entrega ambos documentos en la ventanilla. Por un comentario que ella hace, el técnico de atención al ciudadano sospecha que vive con su pareja y le exige, además, una declaración extrajuicio ante notario y una carta de dos vecinos que confirmen su situación. ¿Cómo debió actuar el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir esos documentos, porque ante una sospecha razonable el servidor puede pedir pruebas para proteger los recursos públicos.",
+        "explicacion": "Incorrecta. La buena fe de los particulares se presume en sus gestiones ante las autoridades (art. 83, C. P.), y está prohibido exigir documentos no previstos en la norma del trámite o crear requisitos adicionales (art. 9, num. 5, CPACA). Una sospecha no habilita esas exigencias."
+      },
+      {
+        "id": "B",
+        "texto": "Recibir la inscripción con lo que pide el decreto; si lo declarado fuera falso, ella se expondría a sanciones legales.",
+        "explicacion": "Correcta. La ciudadana aportó lo que exige el decreto y su buena fe se presume (art. 83, C. P.); pedir más documentos es un requisito adicional prohibido (art. 9, num. 5, CPACA). Si declaró algo falso a sabiendas, incumplió el deber del art. 6, num. 2, lo que puede dar lugar a sanciones penales, disciplinarias o de policía (par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Recibir la inscripción y asegurarle que, por la buena fe, lo declarado no podrá revisarse ni acarrearle sanción alguna.",
+        "explicacion": "Incorrecta. La buena fe se presume, pero esa presunción no vuelve indiscutible lo declarado: quien aporta a sabiendas declaraciones falsas incumple su deber de obrar de buena fe (art. 6, num. 2, CPACA), y ese incumplimiento puede dar lugar a sanciones penales, disciplinarias o de policía (par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir la solicitud a la oficina jurídica para que establezca si la ciudadana actuó de buena fe antes de inscribirla.",
+        "explicacion": "Incorrecta. La buena fe se presume; no hay que establecerla antes de tramitar. Remitir la solicitud con ese fin invierte la presunción del art. 83 de la Constitución y retrasa la inscripción."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la ciudadana entregó lo que pide el decreto, y el técnico le exige más documentos por una simple sospecha. Regla: el art. 83 de la Constitución presume la buena fe de los particulares; el art. 9, num. 5, del CPACA prohíbe exigir documentos no previstos o crear requisitos adicionales; y el art. 6 (num. 2 y par.) prevé que quien aporta a sabiendas declaraciones falsas puede ser sancionado, de modo que la presunción no impide revisar lo declarado. Conclusión: debía recibir la inscripción con lo que exige el decreto.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 72
+    }
+  },
+  {
+    "id": "TC-ATC-028",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Racionalización de trámites",
+    "subtema": "Trámite creado después de la Ley 2052 sin conectividad para ofrecerlo en línea: solicitud motivada de más plazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2052 de 2020",
+    "articulos": [
+      "art. 2, inc. 2",
+      "art. 6, inc. 1"
+    ],
+    "texto_fuente": "Las autoridades competentes para definir los plazos y lineamientos de cumplimiento de las obligaciones previstas en esta Ley adoptarán plazos y lineamientos diferenciados para las entidades territoriales que no cuenten con la infraestructura tecnológica o la conectividad requerida. En todo caso, las entidades territoriales que detecten circunstancias que les impida dar cumplimiento a lo previsto en esta Ley por razones presupuestales, tecnológicas o de conectividad podrán solicitar ampliación de los plazos o modificación de los lineamientos de manera motivada. [...] Los trámites que se creen a partir de la entrada en vigencia de la presente Ley deberán realizarse totalmente en línea, por parte de los ciudadanos. Para los trámites existentes antes de la entrada en vigencia de la presente ley y que no puedan realizarse totalmente en línea, el Ministerio de Tecnologías de la información y las Comunicaciones determinará los plazos y condiciones para el trámite.",
+    "pregunta": "Un municipio de sexta categoría, en una zona rural con muy mala conectividad, creó en 2025 un trámite para inscribir a los productores en su programa de asistencia técnica agropecuaria. Por ahora lo atiende solo en la ventanilla, porque no tiene la infraestructura tecnológica para ofrecerlo por internet. El alcalde le pregunta a su asesora qué obligación tiene el municipio frente a la Ley 2052 de 2020 y qué puede hacer. ¿Qué debe responderle la asesora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el trámite debe poder hacerse todo por internet, y que, justificando su situación, puede pedir que le concedan más tiempo.",
+        "explicacion": "Correcta. Los trámites creados después de la entrada en vigencia de la Ley 2052 deben poder realizarse totalmente en línea (art. 6, inc. 1). La entidad territorial que no pueda cumplir por razones tecnológicas o de conectividad puede pedir, de manera motivada, ampliación de los plazos o modificación de los lineamientos (art. 2, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que, por ser nuevo, el MinTIC le fijará plazos y condiciones, y que, justificando su situación, puede pedir que se amplíen.",
+        "explicacion": "Incorrecta. Acierta en que puede pedir, de manera motivada, más plazo (art. 2, inc. 2), pero los plazos y condiciones que determina el MinTIC son para los trámites que ya existían antes de la ley; los creados después deben realizarse totalmente en línea (art. 6, inc. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que el trámite debe poder hacerse todo por internet, pero que su categoría lo exime mientras no tenga la conectividad.",
+        "explicacion": "Incorrecta. Acierta en que el trámite debe ofrecerse totalmente en línea (art. 6, inc. 1), pero la ley no exime a los municipios por su categoría ni por su conectividad: prevé plazos y lineamientos diferenciados y la posibilidad de pedir, de forma motivada, que se amplíen (art. 2, inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que, por ser nuevo, el MinTIC le fijará plazos y condiciones, y que mientras tanto puede seguir atendiéndolo en ventanilla.",
+        "explicacion": "Incorrecta. Los plazos y condiciones que determina el MinTIC son para los trámites que ya existían antes de la ley; los creados después deben realizarse totalmente en línea (art. 6, inc. 1). Si el municipio no puede cumplir, lo que la ley prevé es pedir, de manera motivada, más plazo (art. 2, inc. 2), no quedarse en ventanilla sin más."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el trámite se creó en 2025, después de la Ley 2052, y el municipio no tiene conectividad. Regla: el art. 6 de la Ley 2052 exige que los trámites creados desde su vigencia se hagan totalmente en línea (los plazos del MinTIC son para los anteriores), y el art. 2 permite a las entidades territoriales con problemas tecnológicos o de conectividad pedir, de manera motivada, ampliación de plazos o modificación de lineamientos. Conclusión: está obligado, pero puede pedir más plazo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2052_2020.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción B como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-ATC-029",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Enlace de quejas, sugerencias y reclamos en la página web principal y alcance del espacio para denunciar actos de corrupción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1474 de 2011",
+    "articulos": [
+      "art. 76, inc. 2",
+      "art. 76, inc. 3"
+    ],
+    "texto_fuente": "En la página web principal de toda entidad pública deberá existir un link de quejas, sugerencias y reclamos de fácil acceso para que los ciudadanos realicen sus comentarios. [...] Todas las entidades públicas deberán contar con un espacio en su página web principal para que los ciudadanos presenten quejas y denuncias de los actos de corrupción realizados por funcionarios de la entidad, y de los cuales tengan conocimiento, así como sugerencias que permitan realizar modificaciones a la manera como se presta el servicio público.",
+    "pregunta": "Mauricio, técnico de sistemas de una gobernación, administra el sitio web de la entidad. La secretaría general le pide hacer dos cambios en la página de inicio: 1) quitar el botón que lleva al formulario de PQRS y dejar ese formulario solo en el portal de trámites, un sitio aparte al que se llega escribiendo su dirección; y 2) que la sección en la que la ciudadanía reporta hechos de corrupción de los servidores de la gobernación se use también para recibir ideas de los ciudadanos sobre cómo mejorar la atención. ¿Qué debe advertir Mauricio antes de hacer los cambios?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede hacer los dos: el formulario puede quedar solo en el portal de trámites, y la sección puede recibir esas ideas.",
+        "explicacion": "Incorrecta. Acierta en la sección: el espacio para denunciar actos de corrupción también está previsto para recibir sugerencias sobre la manera como se presta el servicio (art. 76, inc. 3). Pero el link de quejas, sugerencias y reclamos debe estar en la página web principal y ser de fácil acceso (inc. 2); un sitio aparte, al que se llega escribiendo la dirección, no lo cumple."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede llevar el formulario al portal de trámites, pero la sección de corrupción no debe mezclarse con ideas de mejora.",
+        "explicacion": "Incorrecta. Equivoca los dos puntos: el link de quejas, sugerencias y reclamos debe estar en la página web principal, con fácil acceso (inc. 2), y el espacio para denunciar actos de corrupción está previsto también para las sugerencias que permitan modificar la manera como se presta el servicio (inc. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no procede ninguno: el botón debe seguir en la página de inicio, y la sección no debe mezclarse con ideas de mejora.",
+        "explicacion": "Incorrecta. Acierta en que el acceso al formulario debe quedarse en la página web principal (inc. 2), pero la ley prevé que el espacio para denunciar actos de corrupción reciba también sugerencias que permitan modificar la manera como se presta el servicio público (inc. 3); el segundo cambio es admisible."
+      },
+      {
+        "id": "D",
+        "texto": "Que el botón del formulario debe seguir en la página de inicio, pero la sección de corrupción sí puede recibir ideas de mejora.",
+        "explicacion": "Correcta. El art. 76 exige en la página web principal un link de quejas, sugerencias y reclamos de fácil acceso (inc. 2), así que el formulario no puede quedar solo en un sitio aparte. Y el espacio para que los ciudadanos denuncien los actos de corrupción de los funcionarios está previsto también para las sugerencias que permitan modificar la manera como se presta el servicio (inc. 3)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el primer cambio saca de la página de inicio el acceso al formulario de PQRS; el segundo mantiene la sección de corrupción y le suma ideas para mejorar la atención. Regla: el art. 76 de la Ley 1474 ordena que en la página web principal haya un link de quejas, sugerencias y reclamos de fácil acceso (inc. 2) y un espacio para denunciar los actos de corrupción de los funcionarios de la entidad, que también recibe sugerencias sobre la manera como se presta el servicio (inc. 3). Conclusión: el primer cambio no procede; el segundo, sí.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1474_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción B como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-ATC-030",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Rendición de Cuentas",
+    "subtema": "Respuesta a las preguntas ciudadanas formuladas en la rendición de cuentas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 51, inc. 1",
+      "art. 56, lit. f"
+    ],
+    "texto_fuente": "El Gobierno Nacional, a través del Departamento Administrativo de la Función Pública con el apoyo del Departamento Nacional de Planeación elaborará el Manual Único de Rendición de Cuentas, que se constituirá en la guía de obligatoria observancia para las entidades públicas en el desarrollo del proceso de rendición de cuentas. [...] f) Respuestas escritas y en el término quince días a las preguntas de los ciudadanos formuladas en el marco del proceso de rendición de cuentas y publicación en la página web o en los medios de difusión oficiales de las entidades.",
+    "pregunta": "En la audiencia pública de rendición de cuentas de una alcaldía, los asistentes entregaron 40 preguntas en tarjetas. El tiempo solo alcanzó para contestar 26, y el moderador anunció que las demás también tendrían respuesta. Andrés, técnico de la oficina de planeación, recibe las 14 tarjetas restantes para organizar su trámite. ¿Qué debe hacerse con esas preguntas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contestarlas por escrito en un plazo de treinta días y enviar cada respuesta solo a su autor, sin publicarla, para proteger sus datos.",
+        "explicacion": "Incorrecta. Equivoca los dos puntos: el término es de quince días, no de treinta, y las respuestas deben publicarse en la página web o en los medios de difusión oficiales de la entidad (art. 56, lit. f)."
+      },
+      {
+        "id": "B",
+        "texto": "Contestarlas por escrito en un plazo de quince días y divulgar el conjunto de respuestas por los canales oficiales de la alcaldía.",
+        "explicacion": "Correcta. El Manual Único de Rendición de Cuentas, de obligatoria observancia (art. 51), contiene como etapa las respuestas escritas, en el término de quince días, a las preguntas de los ciudadanos formuladas en el proceso, y su publicación en la página web o en los medios de difusión oficiales de la entidad (art. 56, lit. f)."
+      },
+      {
+        "id": "C",
+        "texto": "Contestarlas por escrito en un plazo de quince días y enviar cada respuesta solo a su autor, sin publicarla, para proteger sus datos.",
+        "explicacion": "Incorrecta. Acierta en el término de quince días, pero omite la publicación: las respuestas deben publicarse en la página web o en los medios de difusión oficiales de la entidad (art. 56, lit. f). Enviarlas solo a cada autor no reemplaza esa publicación."
+      },
+      {
+        "id": "D",
+        "texto": "Contestarlas por escrito en un plazo de treinta días y divulgar el conjunto de respuestas por los canales oficiales de la alcaldía.",
+        "explicacion": "Incorrecta. Acierta en publicar las respuestas, pero confunde el término: la ley da quince días, no treinta, para contestar por escrito las preguntas formuladas en la rendición de cuentas (art. 56, lit. f)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: quedaron preguntas de los ciudadanos sin responder en la audiencia de rendición de cuentas. Regla: el Manual Único de Rendición de Cuentas, de obligatoria observancia (art. 51 de la Ley 1757), incluye las respuestas escritas, en el término de quince días, a las preguntas formuladas en el proceso, y su publicación en la página web o en los medios oficiales (art. 56, lit. f). Conclusión: deben contestarse por escrito en quince días y publicarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ATC-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Rendición de Cuentas",
+    "subtema": "Audiencias públicas participativas obligatorias cuando la estrategia no prevé espacios de diálogo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 53, incs. 1, 2 y 3"
+    ],
+    "texto_fuente": "La autoridades de la Administración pública nacional y territorial, en la Estrategia de Rendición de Cuentas, se comprometerán a realizar y generar espacios y encuentro presenciales, y a complementarlos con espacios virtuales, o a través de mecanismos electrónicos, siempre y cuando existan condiciones para ello, para la participación ciudadana, tales como foros, mesas de trabajo, reuniones zonales, ferias de la gestión o audiencias públicas, para que los ciudadanos y las organizaciones sociales evalúen la gestión y sus resultados. Las entidades propenderán por generar espacios de difusión masiva, tales como espacios en emisoras locales o nacionales o espacios televisivos que garanticen u adecuado acceso a la información y a los informes de gestión de la ciudadanía en general. En el evento en que una entidad no adelante dichos espacios, estará en la obligación de realizar audiencias públicas participativas, mínimo dos veces al año, con los lineamientos que se establecen en los siguientes artículos de la presente ley.",
+    "pregunta": "La oficina de planeación de un instituto departamental de deportes formuló la estrategia de rendición de cuentas de 2027 con dos acciones: publicar cada trimestre en la página web un informe de avance de metas y habilitar un correo electrónico para recibir preguntas sobre esos informes, que se contestarán por la misma vía. La estrategia no incluye encuentros con la ciudadanía, ni presenciales ni virtuales, y tampoco programas en radio o televisión. ¿Qué debe concluir la jefa de control interno al revisarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la estrategia cumple, porque el correo para preguntas y respuestas es un mecanismo electrónico que reemplaza los encuentros con la ciudadanía.",
+        "explicacion": "Incorrecta. Los medios virtuales o electrónicos complementan los encuentros presenciales en los que la ciudadanía evalúa la gestión; no los sustituyen (art. 53, inc. 1). Un buzón de preguntas no es un espacio de diálogo como los foros, las mesas de trabajo o las ferias de la gestión."
+      },
+      {
+        "id": "B",
+        "texto": "Que no cumple, y que la ley le exige entonces realizar al menos una audiencia pública participativa al cierre de la vigencia.",
+        "explicacion": "Incorrecta. Acierta en que la estrategia no cumple y en que deben hacerse audiencias públicas participativas, pero el mínimo legal es de dos veces al año, no una (art. 53, inc. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no cumple, y que la ley le exige entonces realizar un mínimo de dos audiencias públicas participativas en 2027.",
+        "explicacion": "Correcta. La estrategia debe comprometer espacios y encuentros, presenciales y complementados con virtuales, para que la ciudadanía evalúe la gestión (art. 53, inc. 1). Si la entidad no adelanta esos espacios, queda obligada a realizar audiencias públicas participativas, mínimo dos veces al año (inc. 3). Tampoco tiene espacios de difusión masiva (inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la estrategia cumple, porque los informes trimestrales en la página web garantizan la rendición de cuentas permanente que exige la ley.",
+        "explicacion": "Incorrecta. Publicar informes es solo informar; la ley exige además espacios de encuentro para que los ciudadanos evalúen la gestión, y sin ellos impone al menos dos audiencias públicas participativas al año (art. 53, incs. 1 y 3)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la estrategia solo publica informes y recibe preguntas por correo; no prevé encuentros con la ciudadanía ni espacios en radio o televisión. Regla: el art. 53 de la Ley 1757 obliga a comprometer en la estrategia espacios presenciales, complementados con virtuales, para que la ciudadanía evalúe la gestión, y dispone que, si la entidad no adelanta esos espacios, debe realizar audiencias públicas participativas mínimo dos veces al año. Conclusión: el instituto debe hacer al menos dos audiencias en 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ATC-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Rendición de Cuentas",
+    "subtema": "Plazos del concejo: respuesta al informe del alcalde e informe de rendición de cuentas de la corporación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 57, par.",
+      "art. 59, inc. 1"
+    ],
+    "texto_fuente": "PARÁGRAFO. Los concejos municipales y distritales, las asambleas departamentales y las Juntas Administradoras Locales, también tendrán un mes de plazo para evaluar, dictaminar y responder a los informes anuales de rendición de cuentas que presenten los alcaldes municipales, distritales, locales y los gobernadores al respectivo cuerpo colegiado que le corresponda la evaluación. [...] Los presidentes de las Juntas Administradoras Locales, de los Concejos y de las Asambleas y de sus comisiones permanentes, elaborarán un informe de rendición de cuentas del desempeño de la respectiva célula, mínimo, una vez al año dentro de los tres primeros meses a partir del segundo año.",
+    "pregunta": "Rocío, técnica de la secretaría general del concejo de un municipio cuyo período va de 2024 a 2027, lleva el calendario de términos de la corporación. El martes 17 de febrero de 2026, el alcalde radicó en el concejo su informe anual de rendición de cuentas. Además, Rocío debe programar el informe de rendición de cuentas sobre el desempeño del concejo que su presidente tiene que elaborar en 2026. ¿Qué fechas límite debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Respuesta al informe del alcalde: 10 de marzo de 2026. Informe sobre el desempeño del concejo: 31 de marzo de 2026.",
+        "explicacion": "Incorrecta. Acierta en el informe del concejo, pero el plazo para responder el informe del alcalde no es de quince días hábiles (que vencerían el 10 de marzo): el concejo tiene un mes (art. 57, par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Respuesta al informe del alcalde: 17 de marzo de 2026. Informe sobre el desempeño del concejo: 31 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Acierta en el mes para responder al alcalde, pero el informe sobre el desempeño del concejo no puede dejarse para cualquier momento del año: debe elaborarse dentro de los tres primeros meses (art. 59)."
+      },
+      {
+        "id": "C",
+        "texto": "Respuesta al informe del alcalde: 17 de marzo de 2026. Informe sobre el desempeño del concejo: 31 de marzo de 2026.",
+        "explicacion": "Correcta. El concejo tiene un mes para evaluar, dictaminar y responder el informe que el alcalde radicó el 17 de febrero, es decir, hasta el 17 de marzo de 2026 (art. 57, par.). Como 2026 es el tercer año del período, el presidente debe elaborar el informe de la corporación dentro de los tres primeros meses del año, a más tardar el 31 de marzo (art. 59)."
+      },
+      {
+        "id": "D",
+        "texto": "Respuesta al informe del alcalde: 10 de marzo de 2026. Informe sobre el desempeño del concejo: 31 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Equivoca los dos plazos: para responder al alcalde hay un mes, no quince días hábiles, y el informe del concejo se elabora en los tres primeros meses del año, no hasta diciembre (arts. 57, par., y 59)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el alcalde radicó su informe el 17 de febrero de 2026, tercer año del período del concejo. Regla: el concejo tiene un mes para evaluar, dictaminar y responder el informe anual del alcalde (art. 57, par., Ley 1757), y su presidente elabora el informe de rendición de cuentas de la corporación mínimo una vez al año, dentro de los tres primeros meses, a partir del segundo año (art. 59). Cálculo: un mes desde el 17 de febrero vence el 17 de marzo; los tres primeros meses terminan el 31 de marzo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-ATC-033",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Rendición de Cuentas",
+    "subtema": "Entidades exceptuadas de la rendición permanente de cuentas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 50, inc. 1 y par."
+    ],
+    "texto_fuente": "Las autoridades de la administración pública nacional y territorial tienen la obligación de rendir cuentas ante la ciudadanía para informar y explicar la gestión realizada, los resultados de sus planes de acción y el avance en la garantía de derechos. [...] PARÁGRAFO. Las entidades y organismos de la Administración Pública tendrán que rendir cuentas en forma permanente a la ciudadanía, en los términos y condiciones previstos en el artículo 78 de la Ley 1474 de 2011. Se exceptúan las empresas industriales y comerciales del Estado y las Sociedades de Economía Mixta que desarrollen actividades comerciales en competencia con el sector privado, nacional o internacional o en mercados regulados, caso en el cual se regirán por las disposiciones legales y reglamentarias aplicables a sus actividades económicas y comerciales.",
+    "pregunta": "Un profesional de la secretaría de planeación de un departamento revisa cuáles de las entidades descentralizadas del departamento deben incluir en sus planes de 2027 la rendición de cuentas permanente a la ciudadanía que exige la Ley 1757 de 2015, sobre participación democrática: 1) el instituto departamental de tránsito, un establecimiento público; 2) una empresa industrial y comercial del Estado que vende servicios de impresión y artes gráficas en competencia con imprentas privadas; y 3) una sociedad de economía mixta, con el 60% de su capital en manos del departamento, que presta servicios de telecomunicaciones en competencia con operadores privados. ¿Cuáles están obligadas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el instituto de tránsito, porque las otras dos se rigen en esto por las reglas propias de su actividad empresarial.",
+        "explicacion": "Correcta. El parágrafo del art. 50 de la Ley 1757 obliga a las entidades de la administración pública a rendir cuentas en forma permanente, en los términos del art. 78 de la Ley 1474, pero exceptúa a las empresas industriales y comerciales del Estado y a las sociedades de economía mixta que desarrollan actividades comerciales en competencia con el sector privado, que se rigen por las normas de sus actividades económicas y comerciales."
+      },
+      {
+        "id": "B",
+        "texto": "Las tres, porque todas hacen parte de la administración pública departamental y la obligación de rendir cuentas no distingue entre ellas.",
+        "explicacion": "Incorrecta. Aplica la obligación general (art. 50, inc. 1, de la Ley 1757, y art. 78 de la Ley 1474) sin la excepción que el parágrafo del art. 50 de la Ley 1757 establece para las empresas industriales y comerciales del Estado y las sociedades de economía mixta que compiten con el sector privado."
+      },
+      {
+        "id": "C",
+        "texto": "El instituto y la sociedad de economía mixta, porque la excepción cobija solo a las empresas industriales y comerciales del Estado.",
+        "explicacion": "Incorrecta. El parágrafo del art. 50 nombra a las sociedades de economía mixta junto con las empresas industriales y comerciales del Estado, cuando unas y otras compiten con el sector privado."
+      },
+      {
+        "id": "D",
+        "texto": "El instituto y la empresa industrial y comercial, porque la excepción cobija solo a las sociedades que tienen capital privado.",
+        "explicacion": "Incorrecta. La excepción no depende de que haya capital privado: cobija también a las empresas industriales y comerciales del Estado que compiten con el sector privado (art. 50, par.)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la empresa industrial y comercial y la sociedad de economía mixta compiten con particulares; el instituto es un establecimiento público. Regla: la Ley 1757, en el parágrafo de su art. 50, obliga a la administración pública a rendir cuentas en forma permanente (art. 78, Ley 1474), pero exceptúa a las empresas industriales y comerciales del Estado y a las sociedades de economía mixta que desarrollan actividades comerciales en competencia con el sector privado. Conclusión: solo el instituto está obligado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción B como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-ATC-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Rendición de Cuentas",
+    "subtema": "Estrategia anual de rendición de cuentas y acciones de participación en los planes institucionales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1757 de 2015 y Decreto 1083 de 2015",
+    "articulos": [
+      "art. 52, inc. 1 (Ley 1757 de 2015)",
+      "art. 2.2.22.3.14, par. 2 (Decreto 1083 de 2015, adicionado por el Decreto 612 de 2018)"
+    ],
+    "texto_fuente": "Las entidades de la Administración Pública nacional y territorial, deberán elaborar anualmente una estrategia de Rendición de Cuentas, cumpliendo con los lineamientos del Manual Único de Rendición de Cuentas, la cual deberá ser incluida en el Plan Anticorrupción y de Atención a los Ciudadanos. [...] PARÁGRAFO 2. Harán parte del Plan de Acción las acciones y estrategias a través de las cuales las entidades facilitarán y promoverán la participación de las personas en los asuntos de su competencia, en los términos señalados en la Ley 1757 de 2015.",
+    "pregunta": "Paula, profesional de la oficina de planeación de una gobernación, consolida los planes institucionales de 2027. La secretaría del interior le envió dos documentos: 1) la estrategia de rendición de cuentas del período de gobierno 2024-2027, adoptada por decreto en 2024 como documento independiente, con la indicación de que no hace falta formular otra; y 2) un plan de acciones para que la ciudadanía intervenga en los asuntos de la gobernación, que esa secretaría quiere manejar por fuera de los demás planes. ¿Cómo debe proceder Paula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Conservar la estrategia del cuatrienio, que sigue vigente hasta 2027, e incorporar las acciones de participación al Plan de Acción de la gobernación.",
+        "explicacion": "Incorrecta. Acierta en llevar las acciones de participación al Plan de Acción (art. 2.2.22.3.14, par. 2), pero la estrategia de rendición de cuentas debe elaborarse cada año e incluirse en el Plan Anticorrupción y de Atención al Ciudadano (art. 52). Una estrategia de cuatro años, adoptada aparte, no lo cumple."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir una estrategia para 2027 que vaya dentro del Plan Anticorrupción y de Atención al Ciudadano, y dejar el plan de participación como documento de esa secretaría.",
+        "explicacion": "Incorrecta. Acierta con la estrategia anual dentro del Plan Anticorrupción (art. 52), pero las acciones y estrategias para promover la participación de las personas hacen parte del Plan de Acción (art. 2.2.22.3.14, par. 2); no pueden quedar por fuera."
+      },
+      {
+        "id": "C",
+        "texto": "Conservar los dos documentos tal como están, porque la ley de participación ciudadana no los vincula con los planes institucionales de la gobernación.",
+        "explicacion": "Incorrecta. La Ley 1757 sí ordena incluir la estrategia anual de rendición de cuentas en el Plan Anticorrupción (art. 52), y el Decreto 1083 integra al Plan de Acción las acciones de participación, en los términos de esa ley (art. 2.2.22.3.14, par. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir una estrategia para 2027 que vaya dentro del Plan Anticorrupción y de Atención al Ciudadano, e incorporar las acciones de participación al Plan de Acción.",
+        "explicacion": "Correcta. La estrategia de rendición de cuentas se elabora anualmente y se incluye en el Plan Anticorrupción y de Atención a los Ciudadanos (art. 52, Ley 1757), y las acciones para facilitar y promover la participación de las personas hacen parte del Plan de Acción (art. 2.2.22.3.14, par. 2, Decreto 1083)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la estrategia de rendición de cuentas es de cuatro años y está por fuera de los planes, y el plan de participación se quiere manejar aparte. Regla: el art. 52 de la Ley 1757 exige elaborar anualmente la estrategia e incluirla en el Plan Anticorrupción y de Atención a los Ciudadanos, y el parágrafo 2 del art. 2.2.22.3.14 del Decreto 1083 integra al Plan de Acción las acciones de participación. Conclusión: estrategia de 2027 dentro del Plan Anticorrupción y acciones de participación en el Plan de Acción.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ATC-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Rendición de Cuentas",
+    "subtema": "Principios y elementos de la rendición de cuentas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 49"
+    ],
+    "texto_fuente": "Los principios básicos que rigen la rendición de cuentas de las entidades públicas nacionales y territoriales, proceso que se constituye en una actitud permanente del servidor público, son: continuidad y permanencia, apertura y transparencia, y amplia difusión y visibilidad. Así mismo, se fundamenta en los elementos de información, lenguaje comprensible al ciudadano, diálogo e incentivos.",
+    "pregunta": "Un profesional de la oficina de control interno de una alcaldía, cuyo período de gobierno va de 2024 a 2027, revisa la rendición de cuentas de la entidad y encuentra dos hechos: 1) la alcaldía no ha hecho ningún ejercicio de rendición de cuentas desde 2024 y planea uno solo, en diciembre de 2027, para presentar el balance de los cuatro años; y 2) el informe de gestión publicado está lleno de siglas, términos técnicos y códigos de rubros presupuestales que no se explican. ¿Qué principio y qué elemento de la rendición de cuentas desconocen, respectivamente, esos hechos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El principio de continuidad y permanencia, y el elemento de lenguaje comprensible al ciudadano.",
+        "explicacion": "Correcta. La rendición de cuentas es una actitud permanente, y su primer principio es la continuidad y permanencia (art. 49): un único ejercicio al final del período lo desconoce. Un informe cifrado en siglas y códigos falla en el elemento de lenguaje comprensible al ciudadano."
+      },
+      {
+        "id": "B",
+        "texto": "El principio de amplia difusión y visibilidad, y el elemento de lenguaje comprensible al ciudadano.",
+        "explicacion": "Incorrecta. Acierta en el elemento de lenguaje comprensible, pero el primer hecho no es un problema de difusión del evento: es la falta de ejercicios a lo largo del período, que desconoce la continuidad y permanencia (art. 49)."
+      },
+      {
+        "id": "C",
+        "texto": "El principio de continuidad y permanencia, y el elemento de información sobre la gestión.",
+        "explicacion": "Incorrecta. Acierta en el principio de continuidad y permanencia, pero el informe sí entrega información; lo que falla es que no está en lenguaje comprensible al ciudadano (art. 49)."
+      },
+      {
+        "id": "D",
+        "texto": "El principio de amplia difusión y visibilidad, y el elemento de información sobre la gestión.",
+        "explicacion": "Incorrecta. Equivoca ambos: rendir cuentas una sola vez en cuatro años desconoce la continuidad y permanencia, y el informe con siglas sin explicar falla en el lenguaje comprensible al ciudadano (art. 49)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: un solo ejercicio al final del cuatrienio y un informe escrito en siglas y códigos. Regla: el art. 49 de la Ley 1757 fija como principios la continuidad y permanencia, la apertura y transparencia y la amplia difusión y visibilidad, y como elementos la información, el lenguaje comprensible al ciudadano, el diálogo y los incentivos. Conclusión: el primer hecho desconoce la continuidad y permanencia, y el segundo, el lenguaje comprensible.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Control Social y Veedurías",
+    "subtema": "Deber de informar los proyectos por un medio de amplia difusión y control social ejercido de manera individual",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 60, inc. 1",
+      "art. 62, lit. a",
+      "art. 65, inc. 3"
+    ],
+    "texto_fuente": "El control social es el derecho y el deber de los ciudadanos a participar de manera individual o a través de sus organizaciones, redes sociales e instituciones, en la vigilancia de la gestión pública y sus resultados. [...] a) Solicitar la información pública que se requiera para el desarrollo de su labor, en los términos del Código de Procedimiento Administrativo y de lo Contencioso Administrativo; [...] Los representantes legales de las entidades públicas o privadas encargadas de la ejecución de un programa, proyecto, contrato o del cumplimiento de un servicio público domiciliario a nivel nacional, departamental o municipal deberán, por iniciativa propia o a solicitud de un ciudadano o de una organización civil informar a los ciudadanos y a las organizaciones civiles a través de un medio de amplia difusión en el respectivo nivel territorial, para que en caso de querer hacerlo realicen el control social correspondiente.",
+    "pregunta": "Un instituto municipal de vivienda empezó a construir 120 viviendas de interés social con recursos del municipio. Una vecina del lote le pidió por escrito al gerente que diera a conocer el proyecto a la comunidad y que le entregara copia del cronograma de obra, porque quiere hacerle seguimiento. El gerente decidió: 1) anunciar el proyecto, con su valor, su plazo y el nombre del contratista, en la emisora comunitaria y en la página web del municipio; y 2) negarle el cronograma a la vecina, con el argumento de que solo las veedurías inscritas pueden vigilar la ejecución de proyectos públicos. ¿Qué debe concluir la asesora jurídica del instituto sobre esas decisiones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el anuncio cumplió un deber del instituto, y que negar el cronograma también fue correcto, porque la vigilancia de las obras les corresponde a las veedurías inscritas.",
+        "explicacion": "Incorrecta. Acierta en que divulgar el proyecto por un medio de amplia difusión es un deber del representante legal (art. 65, inc. 3), pero el control social puede ejercerse de manera individual (art. 60), y quien lo ejerce puede solicitar la información pública que requiera (art. 62, lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "Que el anuncio cumplió un deber del instituto, pero negar el cronograma fue un error, porque la vecina puede ejercer por sí misma el control social.",
+        "explicacion": "Correcta. El gerente, como representante legal de la entidad que ejecuta el proyecto, debía informarlo a la ciudadanía por un medio de amplia difusión, por iniciativa propia o a solicitud de un ciudadano (art. 65, inc. 3). Y el control social se ejerce de manera individual o por medio de organizaciones (art. 60), e incluye pedir la información pública necesaria (art. 62, lit. a)."
+      },
+      {
+        "id": "C",
+        "texto": "Que el anuncio era opcional, pues bastaba con responderle a la vecina, y que negar el cronograma fue correcto, porque solo las veedurías inscritas vigilan obras.",
+        "explicacion": "Incorrecta. Equivoca ambos puntos: informar por un medio de amplia difusión es un deber del representante legal, no una opción (art. 65, inc. 3), y no hace falta pertenecer a una veeduría para ejercer el control social (art. 60)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el anuncio era opcional, pues bastaba con responderle a la vecina, pero negar el cronograma fue un error, porque ella puede ejercer el control social.",
+        "explicacion": "Incorrecta. Acierta en que la vecina puede ejercer el control social por su cuenta (art. 60), pero divulgar el proyecto no era opcional: el representante legal debe informarlo por un medio de amplia difusión, por iniciativa propia o a solicitud de un ciudadano (art. 65, inc. 3)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el gerente divulgó el proyecto en la emisora comunitaria y la página web, pero negó el cronograma porque la vecina no pertenece a una veeduría. Regla: el representante legal de la entidad que ejecuta un proyecto debe informarlo por un medio de amplia difusión, por iniciativa propia o a solicitud de un ciudadano (art. 65, inc. 3, Ley 1757), y el control social puede ejercerse de manera individual (art. 60) e incluye pedir información pública (art. 62, lit. a). Conclusión: la primera decisión es correcta y la segunda no.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ATC-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Control Social y Veedurías",
+    "subtema": "Contenido de los informes del supervisor o interventor al grupo de auditoría ciudadana",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 72"
+    ],
+    "texto_fuente": "El interventor o el supervisor del contrato, deberá rendir mínimo dos informes al grupo de auditoría ciudadana. En el primer informe deberá presentar: a) Las especificaciones técnicas del objeto contratado; b) Actividades administrativas a cargo del contratista; c) Toda estipulación contractual y de los planes operativos. En el segundo informe deberá presentar: a) El avance de las obras con respecto a las condiciones del contrato, dificultades y soluciones en su ejecución; b) El cumplimiento de la entidad contratante;",
+    "pregunta": "Felipe, técnico de apoyo a la supervisión de un contrato de obra para construir un colegio departamental, prepara el borrador del primer informe que la supervisora rendirá al grupo de auditoría ciudadana que vigila el contrato. El borrador tiene cuatro apartados: 1) el porcentaje de obra ejecutada frente al cronograma pactado y los problemas encontrados; 2) las especificaciones técnicas del colegio contratado; 3) las actividades administrativas que el contrato pone a cargo del contratista; y 4) el cumplimiento de los pagos y demás obligaciones de la gobernación. ¿Qué apartados corresponden a ese primer informe?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los apartados 2 y 3; los apartados 1 y 4 corresponden al segundo informe.",
+        "explicacion": "Correcta. El primer informe presenta las especificaciones técnicas del objeto contratado, las actividades administrativas a cargo del contratista y las estipulaciones contractuales y los planes operativos. El avance de las obras frente a las condiciones del contrato y el cumplimiento de la entidad contratante van en el segundo (art. 72)."
+      },
+      {
+        "id": "B",
+        "texto": "Los apartados 1 y 4; los apartados 2 y 3 corresponden al segundo informe.",
+        "explicacion": "Incorrecta. Invierte el orden: el avance de obra y el cumplimiento de la entidad contratante son del segundo informe; las especificaciones técnicas y las actividades administrativas del contratista, del primero (art. 72)."
+      },
+      {
+        "id": "C",
+        "texto": "Los apartados 1 y 2; los apartados 3 y 4 corresponden al segundo informe.",
+        "explicacion": "Incorrecta. El avance de obra frente al cronograma, con sus dificultades, es materia del segundo informe, y las actividades administrativas a cargo del contratista son del primero (art. 72)."
+      },
+      {
+        "id": "D",
+        "texto": "Los apartados 3 y 4; los apartados 1 y 2 corresponden al segundo informe.",
+        "explicacion": "Incorrecta. El cumplimiento de la entidad contratante es materia del segundo informe, y las especificaciones técnicas del objeto contratado son del primero (art. 72)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el borrador mezcla datos de base del contrato con datos de su ejecución. Regla: el art. 72 de la Ley 1757 obliga al supervisor o interventor a rendir mínimo dos informes al grupo de auditoría ciudadana: el primero con las especificaciones técnicas, las actividades administrativas a cargo del contratista y las estipulaciones contractuales; el segundo con el avance de las obras, sus dificultades y el cumplimiento de la entidad contratante. Conclusión: al primero van los apartados 2 y 3.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 35
+    }
+  },
+  {
+    "id": "TC-ATC-038",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Control Social y Veedurías",
+    "subtema": "Inscripción de redes de veedurías ciudadanas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 67, inc. 2 y par. (modifica el art. 21 de la Ley 850 de 2003)"
+    ],
+    "texto_fuente": "La inscripción y reconocimiento de las redes de veedurías se hará ante la Cámara de Comercio, o ante las Personerías Municipales o Distritales de cualquiera de las jurisdicciones a que pertenecen las veedurías que conforman la red. PARÁGRAFO. Para la inscripción de redes de veedurías en Personerías Municipales o Distritales, se exigirán los mismos requisitos que requieren las organizaciones sin ánimo de lucro para ser inscritas ante las Gobernaciones o Alcaldías que tengan la competencia legal de inspección, control y vigilancia de dichas organizaciones.",
+    "pregunta": "Tres veedurías ciudadanas, inscritas en las personerías de los municipios de Alfa, Beta y Gama, del mismo departamento, acordaron coordinarse como red para vigilar un contrato vial que atraviesa los tres municipios. Su vocero se presentó en la personería de Beta para pedir que se inscriba la red. Carolina, auxiliar administrativa de esa personería, debe orientarlo. ¿Qué debe indicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la red debe inscribirse en la cámara de comercio, porque las personerías inscriben veedurías y no las redes que forman.",
+        "explicacion": "Incorrecta. La cámara de comercio es una de las opciones, no la única: las redes también pueden inscribirse ante la personería de cualquiera de las jurisdicciones a las que pertenecen sus veedurías (art. 67)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la personería de Beta es competente y que debe pedirle lo mismo que se exige para registrar una organización sin fines de lucro.",
+        "explicacion": "Correcta. La red puede inscribirse ante la cámara de comercio o ante la personería de cualquiera de las jurisdicciones de las veedurías que la conforman, y Beta es una de ellas. En ese caso se exigen los mismos requisitos que a las organizaciones sin ánimo de lucro ante las gobernaciones o alcaldías competentes (art. 67 y par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la red debe inscribirse en la personería del municipio capital del departamento, porque reúne veedurías de varios municipios.",
+        "explicacion": "Incorrecta. La ley no remite a la capital del departamento: sirve la personería de cualquiera de las jurisdicciones a las que pertenecen las veedurías de la red (art. 67)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la personería de Beta es competente y que le basta el acta en que las veedurías acordaron formar la red, sin pedirle más.",
+        "explicacion": "Incorrecta. Acierta en que Beta puede inscribirla, pero la personería debe exigir los mismos requisitos que se piden a las organizaciones sin ánimo de lucro para inscribirse ante las gobernaciones o alcaldías (art. 67, par.)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la red reúne veedurías de Alfa, Beta y Gama, y su vocero acudió a la personería de Beta. Regla: el art. 21 de la Ley 850, modificado por el art. 67 de la Ley 1757, permite inscribir las redes ante la cámara de comercio o ante la personería de cualquiera de las jurisdicciones de sus veedurías, y su parágrafo exige en las personerías los mismos requisitos que a las entidades sin ánimo de lucro. Conclusión: Beta puede inscribirla con esos requisitos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55,
+      "nota": "Segunda resolución a ciegas: misma clave; señaló la opción D como alternativa cercana. Revisada: es una trampa que la norma descarta (razonamiento del resolvedor en el resultado del lote)."
+    }
+  },
+  {
+    "id": "TC-ATC-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Participación Ciudadana",
+    "subtema": "Deberes de la administración frente a las instancias de participación de iniciativa ciudadana",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 104, lits. e y f"
+    ],
+    "texto_fuente": "El Estado en todos sus niveles de organización territorial nacional, bajo el liderazgo de las administraciones, tiene la obligación de: [...] e) Asistir a las convocatorias realizadas por las instancias de participación de iniciativa ciudadana a las que sean invitados toda vez que en ellas se debatan asuntos de su competencia; f) Emitir concepto sobre las sugerencias, recomendaciones y propuestas presentadas de manera formal y derivadas del desarrollo de las instancias de participación de iniciativa ciudadana o gubernamental que no se encuentran dentro de la oferta institucional;",
+    "pregunta": "Una mesa de trabajo creada por vecinos de un barrio, que no hace parte de las instancias de participación previstas por la alcaldía, radicó en la secretaría de movilidad un documento con tres propuestas sobre las rutas de buses, aprobadas en sus sesiones. En el mismo oficio invitó al secretario de movilidad a su próxima sesión, dedicada al alumbrado del parque del barrio, asunto que le corresponde a la secretaría de infraestructura. El secretario le pide a su asesora que le precise sus deberes. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe asistir a la sesión y pronunciarse sobre las propuestas, porque la administración tiene que acompañar todas las instancias que creen los ciudadanos.",
+        "explicacion": "Incorrecta. Acierta en el deber de pronunciarse, pero la obligación de asistir a las convocatorias de las instancias de iniciativa ciudadana existe cuando en ellas se debaten asuntos de competencia del invitado (art. 104, lit. e); el alumbrado del parque no es asunto de la secretaría de movilidad."
+      },
+      {
+        "id": "B",
+        "texto": "Que no tiene ninguno de esos deberes, porque la administración solo responde ante las instancias de participación que forman parte de su oferta institucional.",
+        "explicacion": "Incorrecta. La ley impone deberes también frente a las instancias que no están en la oferta institucional: entre ellos, emitir concepto sobre las propuestas que presenten de manera formal (art. 104, lit. f)."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe asistir a la sesión como muestra de respeto a la mesa, pero no está obligado a pronunciarse sobre propuestas de una instancia no institucional.",
+        "explicacion": "Incorrecta. Invierte los deberes: no está obligado a asistir a una sesión sobre un asunto ajeno a su competencia (lit. e), pero sí debe emitir concepto sobre las propuestas formales de la mesa, aunque no esté en la oferta institucional (lit. f)."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe emitir un concepto sobre las propuestas de rutas, pero no está obligado a asistir a esa sesión, porque en ella no se tratarán temas a su cargo.",
+        "explicacion": "Correcta. Las propuestas se presentaron de manera formal y surgieron de una instancia de iniciativa ciudadana que no está en la oferta institucional, así que el secretario debe emitir concepto sobre ellas (art. 104, lit. f). El deber de asistir a sus convocatorias se limita a las sesiones en que se debaten asuntos de su competencia (lit. e)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la mesa radicó propuestas formales sobre rutas de buses, pero invitó al secretario de movilidad a una sesión sobre alumbrado público. Regla: el art. 104 de la Ley 1757 obliga a la administración a emitir concepto sobre las propuestas formales de las instancias de iniciativa ciudadana que no están en la oferta institucional (lit. f) y a asistir a sus convocatorias cuando se debatan asuntos de su competencia (lit. e). Conclusión: debe emitir concepto, pero no está obligado a asistir.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ATC-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Control Social y Veedurías",
+    "subtema": "Control social sobre los servicios públicos domiciliarios",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1757 de 2015",
+    "articulos": [
+      "art. 61, inc. 2",
+      "art. 63",
+      "art. 65, inc. 2"
+    ],
+    "texto_fuente": "En materia de servicios públicos domiciliarios el control social se sujetará al régimen contenido en la Ley 142 de 1994 y las normas que la complementen, adicionen y/o modifiquen. [...] En materia de servicios públicos domiciliarios, el control social se sujetará a las normas especiales contenidas en la Ley 142 de 1994. [...] En tal sentido, las entidades del Estado y las entidades privadas que presten servicios públicos domiciliarios o realicen proyectos con recursos públicos deberán garantizar el ejercicio del derecho al control social.",
+    "pregunta": "Un grupo de usuarios del acueducto de un municipio, que presta una empresa oficial de servicios públicos, quiere hacer seguimiento organizado a la calidad del agua y a la facturación. Acuden a la oficina de atención al usuario de la empresa, donde Diana, profesional, debe orientarlos sobre las reglas que rigen ese control social. ¿Qué debe explicarles?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la empresa debe garantizarles ese control, que se rige por el régimen especial de la Ley 142 de 1994 para los servicios públicos domiciliarios.",
+        "explicacion": "Correcta. Las entidades que prestan servicios públicos domiciliarios deben garantizar el ejercicio del control social (art. 65, inc. 2), y en esa materia el control social se sujeta al régimen especial de la Ley 142 de 1994 (arts. 61, inc. 2, y 63)."
+      },
+      {
+        "id": "B",
+        "texto": "Que pueden ejercerlo con las reglas generales de la Ley 1757 de 2015, porque la empresa es oficial y los recursos que administra son públicos.",
+        "explicacion": "Incorrecta. Que la empresa sea oficial no cambia la regla: en servicios públicos domiciliarios el control social se sujeta a las normas especiales de la Ley 142 de 1994, no al régimen general (arts. 61, inc. 2, y 63)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la empresa no está sujeta a control social, porque sus usuarios ya disponen de las peticiones, las quejas y los recursos ante ella.",
+        "explicacion": "Incorrecta. Las entidades que prestan servicios públicos domiciliarios deben garantizar el ejercicio del derecho al control social (art. 65, inc. 2); las peticiones y quejas no lo reemplazan."
+      },
+      {
+        "id": "D",
+        "texto": "Que ese control le corresponde al concejo municipal, que vigila a la empresa, y que los usuarios pueden presentarle allí sus quejas sobre el servicio.",
+        "explicacion": "Incorrecta. Confunde el control político del concejo con el control social, que es un derecho de los ciudadanos y que, en servicios públicos domiciliarios, se rige por la Ley 142 de 1994 (arts. 61, inc. 2, y 63)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los usuarios quieren vigilar un servicio público domiciliario (acueducto) prestado por una empresa oficial. Regla: los arts. 61 (inc. 2) y 63 de la Ley 1757 sujetan el control social en servicios públicos domiciliarios al régimen especial de la Ley 142 de 1994, y el art. 65 obliga a quienes prestan esos servicios a garantizar ese control. Conclusión: la empresa debe garantizarlo, conforme a la Ley 142.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ATC-041",
+    "version": 2,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Servicio al Ciudadano",
+    "subtema": "Instancia que cumple las funciones de la Comisión Intersectorial del Servicio al Ciudadano",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.22.1.3, inc. 1 (modificado por el Decreto 1499 de 2017)",
+      "art. 2.2.22.1.4, num. 11 (modificado por el Decreto 1499 de 2017)"
+    ],
+    "texto_fuente": "El Consejo para la Gestión y el Desempeño Institucional, presidido por Función Pública, estará conformado por las entidades y organismos que, por su misión, tienen a cargo funciones transversales de gestión y desempeño a nivel nacional y territorial, así: [...] El Consejo para la Gestión y el Desempeño Institucional cumplirá las siguientes funciones: [...] 11. Cumplir las funciones de la Comisión Intersectorial del Servicio al Ciudadano de que trata el Decreto 2623 de 2009.",
+    "pregunta": "En una mesa técnica de entidades del orden nacional, un profesional del grupo de servicio al ciudadano de un ministerio propone llevar a la Comisión Intersectorial del Servicio al Ciudadano, creada por el Decreto 2623 de 2009, una iniciativa para unificar los protocolos de atención telefónica del Estado. Una asesora le aclara que, según el Decreto 1083 de 2015, las funciones de esa comisión las cumple hoy otra instancia. ¿Cuál es esa instancia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Comité Institucional de Gestión y Desempeño de cada entidad, que orienta la implementación de las políticas del modelo.",
+        "explicacion": "Incorrecta. El Decreto 1083 asigna las funciones de la Comisión Intersectorial del Servicio al Ciudadano al Consejo para la Gestión y el Desempeño Institucional (art. 2.2.22.1.4, num. 11), no al comité de cada entidad, que actúa en su interior."
+      },
+      {
+        "id": "B",
+        "texto": "El Consejo para la Gestión y el Desempeño Institucional, que preside el Departamento Administrativo de la Función Pública.",
+        "explicacion": "Correcta. El Consejo para la Gestión y el Desempeño Institucional, presidido por Función Pública (art. 2.2.22.1.3), tiene entre sus funciones cumplir las de la Comisión Intersectorial del Servicio al Ciudadano del Decreto 2623 de 2009 (art. 2.2.22.1.4, num. 11)."
+      },
+      {
+        "id": "C",
+        "texto": "El Comité Sectorial de Gestión y Desempeño de cada sector administrativo, que preside el respectivo ministro.",
+        "explicacion": "Incorrecta. Los comités sectoriales dirigen el modelo en su sector; la función de la comisión intersectorial quedó en el Consejo para la Gestión y el Desempeño Institucional (art. 2.2.22.1.4, num. 11)."
+      },
+      {
+        "id": "D",
+        "texto": "El Departamento Nacional de Planeación, como coordinador del Sistema Nacional de Servicio al Ciudadano.",
+        "explicacion": "Incorrecta. El DNP integra el Consejo, pero la norma asigna las funciones de la Comisión Intersectorial del Servicio al Ciudadano al Consejo como instancia, presidido por Función Pública (arts. 2.2.22.1.3 y 2.2.22.1.4, num. 11)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se busca la instancia que hoy cumple las funciones de la Comisión Intersectorial del Servicio al Ciudadano. Regla: el art. 2.2.22.1.4, num. 11, del Decreto 1083 asigna esas funciones al Consejo para la Gestión y el Desempeño Institucional, que, según el art. 2.2.22.1.3, preside Función Pública. Conclusión: la iniciativa debe llevarse a ese Consejo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ATC-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 1,
+    "modulo": "Atención al Ciudadano",
+    "tema": "Integridad",
+    "subtema": "Estrategias del Sistema Nacional de Integridad: pactos por la integridad y gestores de integridad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.38.18, nums. 1 y 4 (adicionado por el Decreto 382 de 2026)"
+    ],
+    "texto_fuente": "Los órganos, organismos y las entidades públicas deberán implementar las siguientes estrategias: 1. Suscribir Pactos por la integridad Pública, a través de los cuales los equipos directivos de las entidades públicas formalizaran su compromiso con el Sistema Nacional de Integridad estableciendo metas claras y medibles en materia de integridad, para fomentar una cultura eficiente del servicio público, asegurando así un liderazgo visible y responsable. [...] 4. Designar en un servidor (es) o servidora (as) públicos (as) el rol de Gestor (es) de integridad para la dinamización de las acciones en materia de integridad pública, quienes podrán organizarse en Unidades de integridad, las cuales harán parte de la Red por la integridad Pública.",
+    "pregunta": "Para implementar el Sistema Nacional de Integridad, la jefa de talento humano de una gobernación presenta al comité directivo dos propuestas: 1) que el gobernador y los secretarios de despacho firmen un pacto por la integridad con metas medibles, como reducir a la mitad las quejas por maltrato en los puntos de atención al ciudadano; y 2) que el papel de gestora de integridad lo asuma la contratista de prestación de servicios que dicta los talleres sobre el código de integridad, porque los servidores de planta no tienen tiempo. ¿Qué concepto debe darse sobre las propuestas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ambas se ajustan, porque cada entidad tiene autonomía para organizar la implementación del código de integridad según sus recursos.",
+        "explicacion": "Incorrecta. La autonomía de las entidades permite complementar el código, pero las estrategias del Sistema Nacional de Integridad disponen que el rol de gestor de integridad se designe en servidores públicos (art. 2.2.38.18, num. 4); una contratista no puede asumirlo."
+      },
+      {
+        "id": "B",
+        "texto": "Que la segunda se ajusta, pero el pacto debe firmarlo cada uno de los servidores de la planta y no solo el equipo directivo.",
+        "explicacion": "Incorrecta. Equivoca ambos puntos: los pactos por la integridad los suscriben los equipos directivos, que así formalizan su compromiso con metas medibles (num. 1), y el rol de gestor debe designarse en servidores públicos (num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la primera se ajusta, pero el papel de gestor de integridad debe asignarse a uno o varios servidores públicos de la gobernación.",
+        "explicacion": "Correcta. El pacto por la integridad lo suscriben los equipos directivos, con metas claras y medibles (art. 2.2.38.18, num. 1), como propone la jefa de talento humano. El rol de gestor de integridad, en cambio, debe designarse en uno o varios servidores públicos (num. 4), no en una contratista."
+      },
+      {
+        "id": "D",
+        "texto": "Que ninguna se ajusta: el pacto lo firman todos los servidores de la planta y el papel de gestor debe recaer en servidores públicos.",
+        "explicacion": "Incorrecta. Acierta en que el gestor debe ser un servidor público (num. 4), pero el pacto no exige la firma de toda la planta: lo suscriben los equipos directivos para formalizar su compromiso (num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el pacto lo firmarían el gobernador y sus secretarios, y el rol de gestora lo asumiría una contratista. Regla: el art. 2.2.38.18 del Decreto 1083, adicionado por el Decreto 382 de 2026, ordena suscribir pactos por la integridad en los que los equipos directivos fijan metas claras y medibles (num. 1) y designar en servidores públicos el rol de gestor de integridad (num. 4). Conclusión: el pacto se ajusta; la designación de la contratista no.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  }
+]

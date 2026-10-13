@@ -97,9 +97,7 @@ export const metadata = {
     },
   },
 
-  alternates: {
-    canonical: 'https://www.simotest.com',
-  },
+  // Sin canónica aquí: cada página declara la suya (si la pusiéramos en el layout, todas heredarían la de la portada)
 }
 
 export default function RootLayout({
@@ -108,7 +106,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es-CO" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{
           __html: `

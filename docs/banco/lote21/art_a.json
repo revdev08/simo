@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "TC-ART-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Música",
+    "subtema": "Saber del área: valor de las figuras, el puntillo y el tresillo en el compás de 3/4",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, F. Cuadro resumen: apreciación estética y comunicación, sexto y séptimo grados"
+    ],
+    "texto_fuente": "Comprendo y manejo elementos formales en la lectura e interpretación de una obra sencilla. [...] Propongo ejercicios de creación tales como secuencias de ritmo y movimiento (danza y teatro); rítmico-melódicos (música)",
+    "pregunta": "En 6.º, el docente de música pide a cada estudiante escribir un compás completo de 3/4, en el que la negra vale un pulso, combinando figuras distintas. Al revisar, encuentra estas cuatro respuestas. ¿Cuál completa con exactitud el compás?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Blanca con puntillo y corchea.",
+        "explicacion": "Incorrecta. La blanca con puntillo ya llena el compás: el puntillo suma la mitad del valor de la blanca (2 + 1 = 3 pulsos), y la corchea sobra (3,5 pulsos). Solo parece correcta si se cree que el puntillo añade medio pulso a cualquier figura."
+      },
+      {
+        "id": "B",
+        "texto": "Blanca y negra con puntillo.",
+        "explicacion": "Incorrecta. Blanca (2) más negra con puntillo (1 + 0,5 = 1,5) suman 3,5 pulsos. Parece correcta si se pasa por alto el puntillo."
+      },
+      {
+        "id": "C",
+        "texto": "Negra con puntillo, corchea y negra.",
+        "explicacion": "Correcta. Negra con puntillo (1,5) + corchea (0,5) + negra (1) = 3 pulsos, exactamente lo que pide el compás de 3/4."
+      },
+      {
+        "id": "D",
+        "texto": "Tresillo de corcheas y negra con puntillo.",
+        "explicacion": "Incorrecta. El tresillo de corcheas son tres corcheas en el tiempo de dos, es decir, un pulso; con la negra con puntillo (1,5) suman 2,5 pulsos. Parece correcta si se cuentan las tres corcheas del tresillo como corcheas normales (1,5 pulsos)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el compás es de 3/4, con la negra como pulso. Regla: blanca = 2 pulsos, negra = 1, corchea = 1/2; el puntillo suma la mitad del valor de la figura que acompaña, y el tresillo de corcheas son tres corcheas en el tiempo de dos (un pulso). Cálculo: 1,5 + 0,5 + 1 = 3. Las demás suman 3,5; 3,5 y 2,5. Conclusión: solo «negra con puntillo, corchea y negra» completa el compás.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Música",
+    "subtema": "Saber del área: compás simple y compás compuesto (3/4 y 6/8)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, F. Cuadro resumen: apreciación estética, décimo y undécimo grados"
+    ],
+    "texto_fuente": "Conozco y comprendo la notación y la función de los códigos musicales, escénicos o plásticos y realizo análisis y comentarios críticos sobre el arte de diversos períodos y contextos históricos.",
+    "pregunta": "En 10.º, el docente toca en el tambor una célula que se repite: cada compás tiene seis corcheas, con el acento principal en la primera y un acento más débil en la cuarta. Un estudiante la transcribe en 6/8. Un compañero objeta: «Está mal: seis corcheas equivalen a tres negras, así que es un 3/4». ¿Cómo debe valorarse la objeción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No es acertada, porque los acentos agrupan las corcheas de tres en tres, en dos pulsos de negra con puntillo, que es la organización del 6/8.",
+        "explicacion": "Correcta. El acento principal en la 1.ª corchea y el secundario en la 4.ª forman dos pulsos, cada uno dividido en tres corcheas (subdivisión ternaria). Es un compás compuesto, el 6/8, cuyo pulso es la negra con puntillo."
+      },
+      {
+        "id": "B",
+        "texto": "No es acertada, aunque tampoco es un 6/8: cada grupo de tres corcheas que empieza con acento forma por sí solo un compás de 3/8.",
+        "explicacion": "Incorrecta. Rechaza bien el 3/4, pero dos compases de 3/8 darían dos acentos de igual peso; aquí el de la cuarta corchea es más débil que el de la primera, lo que indica un solo compás de 6/8 con un tiempo fuerte y uno semifuerte."
+      },
+      {
+        "id": "C",
+        "texto": "Es acertada: las seis corcheas caben en un compás de 3/4, y ese compás reproduce sin cambios la acentuación de la célula.",
+        "explicacion": "Incorrecta. Las seis corcheas caben en 3/4, pero ese compás tiene tres pulsos de negra y agrupa las corcheas de dos en dos (acentos en la 1.ª, la 3.ª y la 5.ª); no corresponde a un acento en la cuarta corchea."
+      },
+      {
+        "id": "D",
+        "texto": "Es acertada en parte: 6/8 y 3/4 duran lo mismo y pueden usarse indistintamente, aunque el 3/4 es la escritura más sencilla.",
+        "explicacion": "Incorrecta. Ambos compases duran seis corcheas, pero no son intercambiables: el 6/8 es binario de subdivisión ternaria (dos pulsos) y el 3/4 es ternario de subdivisión binaria (tres pulsos). Cambiar uno por otro cambia la acentuación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: seis corcheas con el acento principal en la primera y uno más débil en la cuarta. Regla: el 6/8 es un compás compuesto de dos pulsos (negra con puntillo), cada uno dividido en tres corcheas; el 3/4 tiene tres pulsos de negra y agrupa las corcheas de dos en dos. Igual duración no significa igual compás. Conclusión: la transcripción en 6/8 es correcta y la objeción no lo es.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Música",
+    "subtema": "Didáctica del área: diferenciar el pulso del ritmo de la letra en primeros grados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, A. Grados primero, segundo y tercero",
+      "Cap. III, F. Cuadro resumen: sensibilidad, primero a tercer grados"
+    ],
+    "texto_fuente": "La sensibilidad sonora se desarrolla desde el propio ritmo orgánico del estudiante y desde su posibilidad de escuchar y apreciar diferentes sonidos que se dan en la naturaleza y en la música. Esta sensibilización se logra a partir de rondas, juegos rítmicos y gestuales, de la entonación de canciones y la manipulación de instrumentos sencillos. [...] escucho, acompaño con el cuerpo, juego e imito frases, fragmentos rítmicos, gestos corporales.",
+    "pregunta": "En 2.º, la docente canta con el grupo una ronda tradicional y pide marcar el pulso con palmas. Casi todos dan una palmada por cada sílaba de la letra: en unos versos las palmadas se amontonan y en otros se separan. ¿Qué intervención responde mejor a esta dificultad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Caminar por el salón dando un paso por cada sílaba de la letra, para que sientan con el cuerpo cómo se agrupan las palabras de la ronda.",
+        "explicacion": "Incorrecta. Usa el cuerpo, pero dar un paso por sílaba es seguir el ritmo de la letra, lo mismo que ya hacen con las palmas: los pasos quedarían tan irregulares como las palmadas. El pulso no depende de cuántas sílabas tenga cada verso."
+      },
+      {
+        "id": "B",
+        "texto": "Proponer un juego de palmadas largas y cortas para que distingan las duraciones de la letra y las nombren con sílabas como «ta» y «ti-ti».",
+        "explicacion": "Incorrecta. Diferenciar duraciones largas y cortas es trabajo de ritmo, valioso en otro momento, pero no les da la referencia de una pulsación regular, que es lo que les falta."
+      },
+      {
+        "id": "C",
+        "texto": "Atribuirlo a la coordinación motriz y practicar primero palmadas sin canción, con una mano y luego con dos, antes de volver a la ronda.",
+        "explicacion": "Incorrecta. El diagnóstico es errado: los niños coordinan las palmas, pero las ajustan a las sílabas. Ejercitar palmadas sin música no les muestra la diferencia entre el pulso y el ritmo de la letra."
+      },
+      {
+        "id": "D",
+        "texto": "Caminar con ellos al paso de la canción, con pasos parejos aunque la letra cambie, para que luego trasladen ese paso a las rodillas mientras cantan.",
+        "explicacion": "Correcta. Las palmadas irregulares muestran que siguen el ritmo de la letra y no el pulso. Caminar con pasos regulares mientras cantan les hace vivir con el cuerpo una pulsación constante, que no cambia aunque las sílabas se agrupen distinto; llevarla luego a las rodillas la convierte en acompañamiento."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las palmadas se amontonan o se separan según la letra, es decir, no son regulares. Regla: el pulso es la pulsación regular y constante que subyace a la música; el ritmo es la organización de duraciones largas y cortas, como las de las sílabas. Las Orientaciones recomiendan en 1.º a 3.º rondas, juegos rítmicos y gestuales y acompañar con el cuerpo. Conclusión: vivir el pulso con pasos regulares y luego trasladarlo a las rodillas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Música",
+    "subtema": "Saber del área: cualidades del sonido (altura, intensidad, duración y timbre)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, F. Cuadro resumen: apreciación estética, cuarto y quinto grados"
+    ],
+    "texto_fuente": "Discrimino y efectúo valoraciones comparativas de altura, intensidad, duración y timbre en un conjunto de sonidos diversos",
+    "pregunta": "En 4.º, después de una sesión de exploración con los instrumentos del aula, el docente revisa cómo usan sus estudiantes el vocabulario de las cualidades del sonido. ¿Cuál de estas afirmaciones usa bien los términos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "«Si golpeo el pandero más duro, su sonido se vuelve más agudo».",
+        "explicacion": "Incorrecta. Golpear más duro aumenta la intensidad (un sonido más fuerte), no la altura. Confunde fuerte con agudo, algo frecuente porque en el habla cotidiana se dice «alto» para ambas cosas."
+      },
+      {
+        "id": "B",
+        "texto": "«La flauta y el violín pueden dar la misma nota y distinguirse por el timbre».",
+        "explicacion": "Correcta. Dos instrumentos pueden producir la misma altura, con igual intensidad y duración, y aun así sonar distinto: esa cualidad, que permite reconocer la fuente sonora, es el timbre."
+      },
+      {
+        "id": "C",
+        "texto": "«La placa más pequeña del xilófono suena con más intensidad que la grande».",
+        "explicacion": "Incorrecta. La placa más pequeña produce un sonido más agudo: la diferencia es de altura, no de intensidad, que depende de la fuerza del golpe."
+      },
+      {
+        "id": "D",
+        "texto": "«Si tapo más agujeros de la flauta dulce, el sonido que sale dura más tiempo».",
+        "explicacion": "Incorrecta. Al tapar más agujeros se alarga la columna de aire que vibra y el sonido se hace más grave: cambia la altura, no la duración."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: hay que reconocer qué cualidad del sonido describe cada afirmación. Regla: altura (agudo o grave), intensidad (fuerte o suave), duración (largo o corto) y timbre (la «voz» propia de cada fuente sonora); el cuadro de 4.º y 5.º pide discriminar y comparar esas cuatro cualidades. Conclusión: solo la afirmación sobre la flauta y el violín usa bien el término.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Música",
+    "subtema": "Didáctica del área: práctica de conjunto, matiz dinámico y estabilidad del tempo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, F. Cuadro resumen: sensibilidad, sexto y séptimo grados",
+      "Cap. III, F. Cuadro resumen: sensibilidad, primero a tercer grados"
+    ],
+    "texto_fuente": "Desarrollo el control de elementos técnicos dirigidos a la expresión, sujetos a parámetros presentes en el texto, obra o partitura [...] por ejemplo, matices agógicos, dinámicos (música) [...] aprendo a relacionar los gestos y señales del director con referencia al tiempo, el matiz",
+    "pregunta": "En 7.º, el docente dirige el conjunto de flautas y percusión menor del colegio. La pieza que ensayan cierra con un crescendo de ocho compases y, en cada ensayo, al llegar a ese pasaje el grupo se acelera: termina mucho más rápido de lo que empezó. ¿Qué decisión atiende mejor la dificultad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Anotar «ritardando» sobre esos ocho compases de la partitura, para que una indicación de tempo contraria compense la aceleración del grupo.",
+        "explicacion": "Incorrecta. El ritardando es otro cambio agógico: no corrige la confusión, la tapa con una indicación que la pieza no tiene, y el pasaje quedaría con un tempo inestable."
+      },
+      {
+        "id": "B",
+        "texto": "Ensayar el pasaje sobre un pulso fijo en el bombo, con el director pidiendo más volumen solo con la amplitud del gesto, para que el marcado no se acelere.",
+        "explicacion": "Correcta. El grupo confunde un matiz dinámico (crescendo: más intensidad) con uno agógico (accelerando: más velocidad). Un pulso externo constante les permite subir la intensidad sin cambiar el tempo, y el gesto del director separa los dos parámetros: la amplitud indica el volumen; la velocidad del marcado, el tempo."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir a la percusión que acompañe el pasaje con golpes cada vez más seguidos: así el aumento de volumen se percibirá con más claridad.",
+        "explicacion": "Incorrecta. Golpes cada vez más seguidos aumentan la densidad rítmica y empujan al grupo a acelerar; el crescendo se logra con más intensidad sobre el mismo pulso."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar al grupo que el crescendo es un matiz de intensidad y no de tempo, y pedirles que lo tengan presente cuando vuelvan a tocar el pasaje.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la sola explicación no basta: el problema es de control técnico durante la ejecución, y se resuelve ensayando con una referencia de pulso estable."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: al llegar al crescendo el grupo se acelera. Regla: el crescendo es un matiz dinámico (de intensidad) y el accelerando uno agógico (de tempo); el cuadro de 6.º y 7.º pide controlar esos matices, y el de 1.º a 3.º, relacionar los gestos del director con el tiempo y el matiz. Conclusión: ensayar el crescendo sobre un pulso fijo, con el gesto del director indicando solo el aumento de intensidad.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Música",
+    "subtema": "Didáctica del área: evaluar una composición (habilidad técnica, aspectos expresivos e imaginación creadora)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. II, D.1. ¿Qué se puede evaluar en la Educación Artística?"
+    ],
+    "texto_fuente": "el teórico propone tres instancias susceptibles de valoración: la habilidad técnica, los aspectos estéticos y expresivos, y el uso de la imaginación creadora. [...] La imaginación creadora. Se hace visible en los productos. No todo lo técnicamente bien realizado supone el uso de imaginación y existen grados diferentes de exigencia en lo creativo.",
+    "pregunta": "En 10.º, cada estudiante compone una variación de ocho compases sobre la melodía de un pasillo que el grupo ya interpreta, y luego la toca. El docente presenta su rúbrica en la reunión de área: afinación y precisión rítmica al tocarla (40 %), coherencia del carácter expresivo con la pieza original (30 %) y escritura correcta en el pentagrama (30 %). Una colega objeta: «Tu rúbrica deja por fuera lo que la tarea busca desarrollar». ¿Cómo debe valorarse la objeción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No es acertada: la rúbrica ya cubre las instancias de valoración de Eisner, pues la coherencia expresiva con el original equivale a la imaginación creadora.",
+        "explicacion": "Incorrecta. La coherencia con el carácter del original es un aspecto estético y expresivo; se podría lograr copiando la melodía sin transformarla, así que no mide la imaginación creadora."
+      },
+      {
+        "id": "B",
+        "texto": "Es acertada: le falta valorar la gestión, es decir, cómo hace circular cada estudiante su variación ante un público, que es la cuarta instancia de Eisner.",
+        "explicacion": "Incorrecta. La gestión es evaluable, pero las Orientaciones la presentan como un cuarto componente no abordado por Eisner, y no es lo que busca desarrollar esta tarea de composición."
+      },
+      {
+        "id": "C",
+        "texto": "No es acertada: en una composición escolar conviene valorar ante todo la habilidad técnica, porque la creatividad no admite criterios de calificación.",
+        "explicacion": "Incorrecta. Las Orientaciones señalan que lo técnicamente bien hecho no supone imaginación y que hay grados de creatividad que pueden distinguirse: ampliación de límites, invención, ruptura de límites y organización estética."
+      },
+      {
+        "id": "D",
+        "texto": "Es acertada: le falta valorar la imaginación creadora, es decir, qué transforma, amplía o inventa el estudiante frente a la melodía que tomó como modelo.",
+        "explicacion": "Correcta. La rúbrica valora la habilidad técnica (afinación, ritmo, escritura) y los aspectos estéticos y expresivos (coherencia de carácter), pero no la imaginación creadora, que es el núcleo de una variación y se hace visible en el producto: qué amplía, inventa o rompe frente al modelo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la tarea es componer una variación, y la rúbrica solo mide afinación, ritmo, escritura y coherencia expresiva. Regla: las Orientaciones retoman de Eisner tres instancias de valoración (habilidad técnica, aspectos estéticos y expresivos, imaginación creadora) y advierten que no todo lo técnicamente bien realizado supone imaginación. Conclusión: la colega tiene razón; falta valorar la imaginación creadora.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Danza",
+    "subtema": "Saber del área: elementos del movimiento (niveles y trayectorias frente a tiempo y calidad)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. II, A.2. Educación Artística y competencias matemáticas",
+      "Cap. III, F. Cuadro resumen: apreciación estética, cuarto y quinto grados"
+    ],
+    "texto_fuente": "los educandos relacionan sus acciones con planimetrías y niveles coreográficos, lo cual requiere experimentar, calcular y controlar sus movimientos en la búsqueda de una intención expresiva adecuada [...] progresiones de la acción motriz como desplazamientos, giros, suspensiones, equilibrios.",
+    "pregunta": "En 5.º, la docente enseña una secuencia de cuatro movimientos que el grupo ejecuta de pie, avanzando en línea recta hacia el frente, al pulso de la música. Luego pide a cada equipo una versión nueva en la que cambie solo el manejo del espacio y todo lo demás quede igual. ¿Qué propuesta cumple la consigna?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hacer la mitad de la secuencia de pie y la otra mitad a ras del piso, y cambiar el recorrido recto por uno en zigzag, siempre al mismo pulso.",
+        "explicacion": "Correcta. Cambia dos componentes espaciales, el nivel (de pie y a ras del piso) y la trayectoria (recta o en zigzag), y conserva los movimientos y su relación con el pulso."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer la secuencia a ras del piso en lugar de hacerla de pie, y ejecutarla al doble de velocidad, con lo que cabe dos veces en la frase.",
+        "explicacion": "Incorrecta. El cambio de nivel sí es espacial, pero duplicar la velocidad altera el tiempo, que la consigna pedía conservar."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener el recorrido recto y la posición de pie, pero hacer cada movimiento primero brusco y tenso, y luego suave y fluido.",
+        "explicacion": "Incorrecta. Pasar de movimientos bruscos a fluidos cambia la calidad o energía del movimiento, no su relación con el espacio."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener el recorrido recto y la posición de pie, pero insertar pausas súbitas entre un movimiento y otro antes de retomar la secuencia.",
+        "explicacion": "Incorrecta. Las pausas súbitas modifican la organización temporal de la secuencia; el recorrido y el nivel quedan iguales."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la consigna pide variar solo el uso del espacio. Regla: en danza, el espacio comprende niveles (alto, medio, bajo), direcciones, trayectorias o recorridos en el piso (planimetría) y distancias; la velocidad y las pausas son del tiempo, y lo brusco o fluido, de la calidad del movimiento. Las Orientaciones piden relacionar las acciones con planimetrías y niveles coreográficos. Conclusión: la versión a ras del piso y en zigzag, al mismo pulso.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Danza",
+    "subtema": "Saber del área: danzas tradicionales colombianas, región y formato instrumental",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, D. Grados octavo y noveno",
+      "Cap. III, F. Cuadro resumen: apreciación estética, octavo y noveno grados"
+    ],
+    "texto_fuente": "a comprender, construir y resignificar productos y manifestaciones simbólicas presentes en el patrimonio cultural de su región [...] Analizo, comprendo y aprecio el quehacer y hecho artístico en distintos contextos de la historia.",
+    "pregunta": "En 9.º, cada equipo prepara una danza tradicional colombiana para la muestra de fin de periodo, con una ficha que indica su región de origen y su formato instrumental. Antes de exhibir las fichas, el docente las revisa. ¿Cuál está correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Joropo. Región del Pacífico. Marimba de chonta, cununos, bombo y guasá.",
+        "explicacion": "Incorrecta. Ese es el formato del currulao, del Pacífico. El joropo es de los Llanos Orientales y se acompaña con arpa, cuatro y capachos (maracas)."
+      },
+      {
+        "id": "B",
+        "texto": "Bambuco. Llanos Orientales. Arpa llanera, cuatro y capachos (maracas).",
+        "explicacion": "Incorrecta. Ese es el formato del joropo llanero. El bambuco es de la región Andina y se acompaña con tiple, bandola y guitarra."
+      },
+      {
+        "id": "C",
+        "texto": "Cumbia. Región Caribe. Tambor alegre, llamador, flauta de millo y maracas.",
+        "explicacion": "Correcta. La cumbia es una danza del Caribe colombiano; se acompaña con tambores (alegre, llamador y tambora), gaitas o flauta de millo y maracas."
+      },
+      {
+        "id": "D",
+        "texto": "Currulao. Región Andina. Tiple, bandola y guitarra, en el formato de trío.",
+        "explicacion": "Incorrecta. El trío de tiple, bandola y guitarra es el formato andino del bambuco y el pasillo. El currulao es del Pacífico, con marimba de chonta, cununos, bombo y guasá."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: hay que reconocer la región y el formato instrumental de cada danza. Regla (consenso del área): la cumbia es del Caribe (tambores, gaitas o flauta de millo, maracas); el joropo, de los Llanos (arpa, cuatro, capachos); el bambuco, de la región Andina (tiple, bandola, guitarra); el currulao, del Pacífico (marimba de chonta, cununos, bombo, guasá). Conclusión: solo la ficha de la cumbia es correcta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Danza",
+    "subtema": "Didáctica del área: evaluación diagnóstica al iniciar un montaje",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. II, D.2. ¿Cómo se puede evaluar en la Educación Artística? (evaluación diagnóstica)"
+    ],
+    "texto_fuente": "La evaluación diagnóstica consiste en el análisis de una situación antes de iniciar una práctica educativa. [...] existen estudiantes que por su constitución física o por su entrenamiento previo han desarrollado más unas habilidades que otras, o han adquirido una destreza en un tipo de movimiento pero no en otros. Identificar tempranamente estas particularidades es indispensable para que el maestro pueda orientar los procesos y actividades adecuados para el logro de los objetivos de un curso.",
+    "pregunta": "En febrero, una docente de danzas recibe un grupo de 6.º con el que nunca ha trabajado. El plan de área fija para el primer periodo el montaje de un mapalé. ¿Qué debe hacer en las primeras sesiones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Empezar de inmediato el montaje con los pasos básicos del mapalé, para aprovechar el periodo, y valorar al final cuánto avanzó cada estudiante en la coreografía.",
+        "explicacion": "Incorrecta. Valorar solo al final deja sin información el diseño del montaje: la docente no sabe desde dónde parte cada estudiante y no puede ajustar procesos ni actividades."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicar una encuesta escrita sobre las danzas que cada estudiante conoce y prefiere, y con esas respuestas decidir qué tan exigente será el montaje del periodo.",
+        "explicacion": "Incorrecta. Conocer intereses y preferencias es parte del diagnóstico, pero una encuesta escrita no muestra las destrezas de movimiento, que en danza difieren mucho entre estudiantes y son las que definen la exigencia del montaje."
+      },
+      {
+        "id": "C",
+        "texto": "Asignar los papeles principales a quienes ya han bailado en grupos de proyección, y al resto los de acompañamiento, para que el montaje tenga una base sólida.",
+        "explicacion": "Incorrecta. Decide sin diagnosticar, a partir de un antecedente, y pone el producto por encima del proceso: los demás quedan sin una ruta para desarrollar sus propias destrezas."
+      },
+      {
+        "id": "D",
+        "texto": "Proponer una secuencia corta con desplazamientos, giros, saltos y cambios de nivel, y observar qué domina cada estudiante para que el montaje parta de allí.",
+        "explicacion": "Correcta. Es una evaluación diagnóstica pertinente para la danza: observa en movimiento las destrezas de cada estudiante antes de iniciar el montaje y permite planear actividades desde esos puntos de partida."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: es un grupo nuevo y el montaje exige destrezas de movimiento. Regla: la evaluación diagnóstica analiza la situación antes de iniciar la práctica para planear desde los puntos de partida; en danza, las Orientaciones advierten que unos estudiantes han desarrollado más unas habilidades que otras y que identificarlo temprano es indispensable. Conclusión: observar en una secuencia corta qué domina cada uno y planear el montaje con esa información.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Danza",
+    "subtema": "Didáctica del área: de la apropiación a la creación a partir de una danza tradicional",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, A.3. Comunicación (producción y transformación simbólica)",
+      "Cap. I, B.2. Procesos de creación"
+    ],
+    "texto_fuente": "existe una selección y un ordenamiento de acciones canalizadas previamente hacia el logro de una imagen o idea definida. [...] por transformación simbólica se entiende un proceso comunicativo de manipulación y modificación de los distintos lenguajes artísticos y símbolos propios de una cultura, por medio del cual el estudiante puede aprender a enriquecer sus posibilidades de expresión. [...] Los procesos de creación aplican los conocimientos adquiridos en la realización de las obras del estudiante",
+    "pregunta": "En 9.º, el grupo ya aprendió los pasos y figuras básicos del bambuco, como los ochos y el juego con el pañuelo. Para la semana cultural, cada equipo debe presentar una pieza coreográfica de su autoría construida a partir de esa danza. ¿Qué orientación debe darles el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que reproduzcan con fidelidad la coreografía tradicional aprendida, con su vestuario y sus figuras en el orden original: apropiarse de una danza es repetirla tal como se recibió.",
+        "explicacion": "Incorrecta. Reproducir la coreografía es valioso como apropiación (imitación y ejercitación), pero la tarea pide una pieza propia: aplicar lo aprendido en una obra del estudiante."
+      },
+      {
+        "id": "B",
+        "texto": "Que reorganicen los pasos y figuras aprendidos en una secuencia propia, con cambios de nivel, recorrido y formación, al servicio de una idea que el equipo defina, monte y ensaye.",
+        "explicacion": "Correcta. Es una transformación simbólica: toma un lenguaje de la cultura (el bambuco), lo manipula y lo convierte en expresión propia. Aplica lo aprendido y lo selecciona y ordena hacia una idea definida, como exige la producción."
+      },
+      {
+        "id": "C",
+        "texto": "Que dejen de lado los pasos aprendidos y monten sobre la música del bambuco movimientos de los géneros urbanos que dominan, para que la pieza resulte del todo nueva.",
+        "explicacion": "Incorrecta. Una fusión puede ser creativa, pero dejar de lado los pasos aprendidos rompe el vínculo con lo apropiado; los procesos de creación aplican los conocimientos adquiridos."
+      },
+      {
+        "id": "D",
+        "texto": "Que bailen la coreografía tradicional completa y la cierren con un tramo libre, en el que cada pareja improvise en escena sus propios movimientos, sin un orden acordado.",
+        "explicacion": "Incorrecta. La parte tradicional sigue siendo reproducción, y el tramo improvisado es exploración espontánea; la producción, según las Orientaciones, selecciona y ordena acciones hacia una imagen o idea definida."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo ya se apropió de los pasos del bambuco y debe presentar una pieza de su autoría construida desde esa danza. Regla: las Orientaciones distinguen la apropiación (adquirir técnicas por imitación y ejercitación) de la creación (aplicar lo adquirido en obras propias); la transformación simbólica manipula lenguajes de la cultura para convertirlos en expresión propia, y la producción ordena acciones hacia una idea definida. Conclusión: reorganizar lo aprendido en una secuencia propia al servicio de una idea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Artes plásticas y visuales",
+    "subtema": "Saber del área: mezcla sustractiva de pigmentos y mezcla aditiva de luces",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, F. Cuadro resumen: sensibilidad, primero a tercer grados",
+      "Cap. I, A.1. Sensibilidad visual"
+    ],
+    "texto_fuente": "Exploro el cuerpo y los sentidos, como instrumentos de expresión y de relación con el medio: capto, reconozco y diferencio sensorialmente los colores, timbres de objetos sonoros y características del movimiento corporal. [...] por síntesis aditiva, veamos modificaciones de color en un cuadro impresionista.",
+    "pregunta": "En 3.º, durante una exploración con témperas, una niña mezcla un poco de cada color del estuche esperando obtener blanco, «como cuando se juntan las luces de colores», y obtiene un pardo oscuro. El grupo pregunta por qué no salió blanco, y la docente quiere responder con precisión. ¿Qué explicación es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los pigmentos se mezclan por síntesis sustractiva: cada uno absorbe parte de la luz, y al sumarlos se refleja cada vez menos; las luces se suman y sí pueden dar blanco.",
+        "explicacion": "Correcta. La mezcla de pigmentos es sustractiva: cada pigmento absorbe (resta) parte del espectro, y al juntar muchos la mezcla tiende a un pardo o casi negro. La mezcla de luces es aditiva: rojo, verde y azul suman blanco."
+      },
+      {
+        "id": "B",
+        "texto": "Pigmentos y luces se mezclan de la misma manera; el resultado fue oscuro porque la mezcla tenía más colores fríos que cálidos, y estos oscurecen el conjunto.",
+        "explicacion": "Incorrecta. Pigmentos y luces no se mezclan igual, y la temperatura del color no explica el resultado: con cualquier proporción de fríos y cálidos, la mezcla de muchos pigmentos se oscurece."
+      },
+      {
+        "id": "C",
+        "texto": "Con témperas de mejor calidad la mezcla habría dado blanco, ya que los tres primarios puros en partes iguales producen blanco también con pigmentos.",
+        "explicacion": "Incorrecta. Ni con pigmentos puros la mezcla de los primarios da blanco: al ser sustractiva, tiende a un tono oscuro. El blanco en pintura se obtiene con pigmento blanco o con el blanco del soporte."
+      },
+      {
+        "id": "D",
+        "texto": "Los pigmentos se mezclan de forma aditiva, como las luces, pero las témperas escolares traen negro en su composición, y eso oscurece el resultado final.",
+        "explicacion": "Incorrecta. Atribuye a los pigmentos la síntesis aditiva, que es propia de la luz, e inventa una causa: el oscurecimiento se debe a la absorción de luz de cada pigmento, no a un negro añadido."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la niña espera de las témperas el comportamiento de las luces. Regla: la mezcla de luces es aditiva (las luces se suman y pueden dar blanco), mientras que la de pigmentos es sustractiva (cada pigmento absorbe parte de la luz, y al juntarlos se refleja menos, hasta un pardo oscuro). Las Orientaciones mencionan la síntesis aditiva al hablar de la sensibilidad visual. Conclusión: la explicación correcta es la de la síntesis sustractiva.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Artes plásticas y visuales",
+    "subtema": "Saber del área: perspectiva lineal y perspectiva atmosférica",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, B. Grados cuarto y quinto"
+    ],
+    "texto_fuente": "En los últimos grados de la básica primaria, el niño se interesa por la representación realista, y ello le exige una iniciación en las técnicas de manera adecuada. [...] “¿Cómo hago para que este objeto se vea más cerca o más lejos?”",
+    "pregunta": "En 5.º, un estudiante dibuja un camino recto que se aleja hacia unas montañas. Los bordes del camino le quedaron paralelos hasta el fondo, y las montañas, tan oscuras, nítidas y detalladas como el árbol del primer plano. Pregunta cómo lograr que el fondo «se vea lejos». ¿Qué orientación es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Llevar los bordes del camino a un punto de fuga cerca del borde superior de la hoja, y oscurecer y contornear más las montañas.",
+        "explicacion": "Incorrecta. Falla en los dos recursos: el punto de fuga del camino no va en el borde de la hoja, sino en la línea del horizonte, y oscurecer y contornear las montañas las acerca."
+      },
+      {
+        "id": "B",
+        "texto": "Llevar los bordes del camino a un punto de fuga sobre la línea del horizonte, y oscurecer y contornear más las montañas.",
+        "explicacion": "Incorrecta. Acierta en la convergencia hacia la línea del horizonte, pero un contorno marcado y un color más oscuro y contrastado acercan las montañas en lugar de alejarlas."
+      },
+      {
+        "id": "C",
+        "texto": "Llevar los bordes del camino a un punto de fuga sobre la línea del horizonte, y pintar las montañas más claras, azuladas y con menos detalle.",
+        "explicacion": "Correcta. Combina la perspectiva lineal (las paralelas que se alejan convergen en un punto de fuga situado en la línea del horizonte) con la perspectiva atmosférica (lo lejano se ve más claro, azulado, con menos contraste y detalle)."
+      },
+      {
+        "id": "D",
+        "texto": "Llevar los bordes del camino a un punto de fuga cerca del borde superior de la hoja, y pintar las montañas más claras, azuladas y con menos detalle.",
+        "explicacion": "Incorrecta. Acierta en la perspectiva atmosférica, pero el punto de fuga no va cerca del borde de la hoja: está sobre la línea del horizonte, donde el camino se pierde al pie de las montañas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: bordes paralelos que no se alejan y montañas tan contrastadas como el primer plano. Regla: en la perspectiva lineal, las paralelas que se alejan del observador convergen en un punto de fuga sobre la línea del horizonte; en la perspectiva atmosférica, lo lejano se ve más claro, azulado y con menos contraste y detalle. Las Orientaciones señalan que en 4.º y 5.º el niño busca la representación realista y necesita iniciación técnica. Conclusión: aplicar ambas perspectivas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Artes plásticas y visuales",
+    "subtema": "Saber del área: peso visual y equilibrio asimétrico en la interpretación formal",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, A.2. Apreciación estética: interpretación formal"
+    ],
+    "texto_fuente": "La interpretación formal de una obra de arte puede definirse como el proceso de decodificación de los elementos estéticos o unidades de sentido que componen su estructura y la identificación del papel que juegan éstos en la configuración de dicha obra como un todo. [...] cómo se establecen las relaciones entre estos elementos (tensión, equilibrio), cómo están distribuidos en el espacio (en módulos, concentraciones, progresiones, asimetrías, simetrías).",
+    "pregunta": "En 8.º, el docente proyecta un paisaje para un ejercicio de interpretación formal. A la izquierda, una montaña en grises y verdes apagados ocupa casi la mitad del lienzo; a la derecha, abajo, hay una casa pequeña pintada de rojo intenso. Un estudiante afirma: «El cuadro está desequilibrado: todo el peso está a la izquierda». ¿Cómo debe responder el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Darle la razón: el peso visual lo determina el tamaño de las formas, y el cuadro se equilibraría con otra masa de tamaño parecido a la derecha.",
+        "explicacion": "Incorrecta. Reduce el peso visual al tamaño e ignora que el color, la saturación y el contraste también pesan."
+      },
+      {
+        "id": "B",
+        "texto": "Mostrarle que hay equilibrio asimétrico, pues la casa, pequeña pero de un color cálido y saturado, tiene un peso visual que compensa la masa apagada.",
+        "explicacion": "Correcta. El peso visual no depende solo del tamaño: el color cálido y saturado y el contraste con el entorno lo aumentan. La pequeña casa roja compensa la gran masa apagada, con formas distintas a cada lado del eje: eso es equilibrio asimétrico."
+      },
+      {
+        "id": "C",
+        "texto": "Mostrarle que hay equilibrio simétrico: aunque las formas son distintas, sus pesos visuales se compensan a uno y otro lado del eje central del cuadro.",
+        "explicacion": "Incorrecta. Describe bien la compensación de pesos, pero la llama simétrica: el equilibrio simétrico repite formas equivalentes a ambos lados del eje; cuando formas distintas se compensan, el equilibrio es asimétrico."
+      },
+      {
+        "id": "D",
+        "texto": "Darle la razón en parte: hay desequilibrio, y se corregiría llevando la casa al centro del cuadro, donde su peso visual quedaría neutralizado.",
+        "explicacion": "Incorrecta. Parte de un diagnóstico errado (el cuadro sí está equilibrado), y llevar la casa al centro no resuelve nada: la gran masa de la izquierda quedaría sin contrapeso."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: una gran masa apagada a la izquierda y una forma pequeña de rojo intenso a la derecha. Regla: la interpretación formal analiza las relaciones entre los elementos (tensión, equilibrio) y su distribución (simetrías, asimetrías); el peso visual depende del tamaño, pero también del color, la saturación y el contraste, y el equilibrio asimétrico compensa pesos con formas distintas. Conclusión: el cuadro tiene equilibrio asimétrico.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Artes plásticas y visuales",
+    "subtema": "Saber del área: grabado en relieve (linograbado)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, A.3. Comunicación: producción",
+      "Cap. III, F. Cuadro resumen: comunicación, sexto y séptimo grados"
+    ],
+    "texto_fuente": "De otra parte, la producción requiere de un ejercicio técnico que transforme la materia (sonido, espacio, materiales, textos) para manifestar o concretar el producto imaginado. [...] Elaboro producciones artísticas mediante las cuales muestro la apropiación de los elementos conceptuales contemplados en clase; así como control, fluidez y destreza en cuanto al manejo técnico.",
+    "pregunta": "En 7.º, el grupo hace linograbados para el afiche de la feria del colegio. Un estudiante dibuja sobre la plancha de linóleo el título «FERIA 2026» tal como debe leerse y, con la gubia, retira el material de las letras y deja intacto el fondo. Luego entinta la plancha con rodillo y la imprime sobre papel blanco. ¿Qué obtendrá?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Letras del color del papel sobre un fondo entintado, con el título invertido como en un espejo.",
+        "explicacion": "Correcta. En el grabado en relieve el rodillo solo entinta la superficie que queda en pie; lo tallado no recibe tinta y queda del color del papel. Además, la estampa invierte la imagen de la plancha, así que el texto saldrá al revés."
+      },
+      {
+        "id": "B",
+        "texto": "Letras del color del papel sobre un fondo entintado, con el título legible como lo dibujó.",
+        "explicacion": "Incorrecta. Acierta en que las letras talladas no se entintan, pero olvida que la impresión invierte la imagen: lo dibujado al derecho en la plancha sale al revés."
+      },
+      {
+        "id": "C",
+        "texto": "Letras entintadas sobre un fondo del color del papel, con el título invertido como en un espejo.",
+        "explicacion": "Incorrecta. Acierta en la inversión, pero en el grabado en relieve lo que se retira con la gubia no recibe tinta: las letras talladas quedan del color del papel."
+      },
+      {
+        "id": "D",
+        "texto": "Letras entintadas sobre un fondo del color del papel, con el título legible como lo dibujó.",
+        "explicacion": "Incorrecta. Falla en los dos aspectos: lo tallado no recibe tinta, y la estampa invierte la imagen de la plancha."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el estudiante talló las letras (no el fondo) y las dibujó tal como deben leerse. Regla: en el grabado en relieve (xilografía, linograbado) la tinta queda en las superficies sin tallar y lo retirado sale del color del papel; la estampa es la imagen especular de la plancha, por lo que los textos se dibujan invertidos. Conclusión: letras del color del papel sobre fondo entintado, con el título al revés.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Artes plásticas y visuales",
+    "subtema": "Didáctica del área: proporción de la figura humana en el dibujo del natural",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, A.2. Apreciación estética: interpretación formal",
+      "Cap. II, A.2. Educación Artística y competencias matemáticas"
+    ],
+    "texto_fuente": "Por ejemplo, para lograr el conocimiento del objeto estudiado durante las clases de dibujo es importante comprender y aplicar relaciones de proporcionalidad. [...] reforzar la comparación de distancias y la aplicación de proporciones y escalas, en procesos que incluyen el uso de estrategias de trabajo que van desde la sencilla medición con un lápiz, hasta el uso de una retícula sofisticada.",
+    "pregunta": "En 5.º, la docente pide dibujar del natural a un compañero que posa de pie. En la mayoría de los dibujos la cabeza ocupa casi un tercio de la figura y las piernas quedan muy cortas. Varios niños, frustrados, dicen que «no les sale» y piden volver al dibujo libre. ¿Qué intervención es más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar el cambio al dibujo libre, porque a esta edad la representación debe ser espontánea y corregir las proporciones inhibe la expresión.",
+        "explicacion": "Incorrecta. En 4.º y 5.º el niño se interesa por la representación realista y necesita una iniciación técnica adecuada; renunciar a la observación deja sin respuesta su frustración."
+      },
+      {
+        "id": "B",
+        "texto": "Entregarles una plantilla de figura humana bien proporcionada para que la calquen y luego le dibujen encima la ropa y los rasgos del compañero.",
+        "explicacion": "Incorrecta. Calcar evita el problema de la proporción, pero no enseña a observar ni a medir, y el dibujo deja de ser del natural."
+      },
+      {
+        "id": "C",
+        "texto": "Mostrarles en el tablero el canon académico de ocho cabezas de la figura adulta y pedirles que lo apliquen para corregir el dibujo del compañero.",
+        "explicacion": "Incorrecta. Un canon de proporciones puede ser útil, pero el de ocho cabezas es un ideal de figura adulta: un niño de 10 u 11 años mide bastante menos cabezas, así que el canon deformaría al modelo."
+      },
+      {
+        "id": "D",
+        "texto": "Mostrarles cómo medir con el lápiz, a brazo extendido, cuántas cabezas del modelo caben en su altura, y usar esa unidad para ubicar cintura y rodillas.",
+        "explicacion": "Correcta. Responde al interés de esta edad por la representación realista con una técnica de observación: tomar la cabeza del propio modelo como unidad y comparar medidas con el lápiz, para aplicar relaciones de proporción en el dibujo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: dibujo del natural con cabezas desproporcionadas en 5.º y niños frustrados que quieren abandonar. Regla: en 4.º y 5.º el niño se interesa por la representación realista y requiere iniciación técnica; las Orientaciones proponen comparar distancias y aplicar proporciones con estrategias que van desde la medición con un lápiz. Conclusión: medir con el lápiz usando la cabeza del propio modelo como unidad.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Artes plásticas y visuales",
+    "subtema": "Didáctica del área: interpretación extratextual de piezas del patrimonio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, A.2. Apreciación estética: interpretación extratextual"
+    ],
+    "texto_fuente": "Estas deben leerse en relación con la sociedad y la época de las que provienen [...] Al elaborar una interpretación extra-textual de las obras de arte, no se referirán meramente a su estudio formal, sino que, utilizando el objeto artístico como indicio arqueológico, tratan de ampliar su conocimiento sobre las sociedades que hicieron posible su elaboración.",
+    "pregunta": "En 10.º, el docente trae réplicas de piezas de orfebrería precolombina prestadas por un museo. En una primera sesión, el grupo describió sus formas, simetrías, materiales y acabados. Para la segunda sesión quiere pasar a una interpretación extratextual de las piezas. ¿Qué actividad corresponde a ese propósito?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ordenar las réplicas por forma y tamaño, comparar el ritmo de sus módulos decorativos y redactar una ficha técnica de cada pieza con su material.",
+        "explicacion": "Incorrecta. Sigue en la interpretación formal: elementos, distribución y materiales de la obra. Es lo que el grupo ya hizo en la primera sesión."
+      },
+      {
+        "id": "B",
+        "texto": "Formular hipótesis sobre quién usaba cada pieza, en qué ocasiones y qué revela de la sociedad que la produjo, y contrastarlas con fuentes.",
+        "explicacion": "Correcta. Usa la pieza como indicio para comprender la sociedad y la época que la produjeron, y somete las hipótesis a fuentes: eso es la interpretación extratextual."
+      },
+      {
+        "id": "C",
+        "texto": "Decidir cuáles piezas serían hoy joyas atractivas y cuáles no, y argumentar esas preferencias con los criterios de la moda y el diseño actuales.",
+        "explicacion": "Incorrecta. Relaciona las piezas con un contexto, pero con el del presente: las juzga con gustos actuales en lugar de leerlas en relación con la sociedad que las produjo."
+      },
+      {
+        "id": "D",
+        "texto": "Imaginar la vida personal del orfebre que hizo cada pieza y escribir un monólogo sobre lo que sentía mientras la elaboraba en su taller.",
+        "explicacion": "Incorrecta. Es un ejercicio de creación a partir de las piezas, y se centra en motivos subjetivos imaginados de un autor desconocido, no en la sociedad que las hizo posibles."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo ya hizo el análisis formal y ahora se busca la interpretación extratextual. Regla: las Orientaciones piden leer las obras en relación con la sociedad y la época de las que provienen, usando el objeto artístico como indicio arqueológico para ampliar el conocimiento sobre las sociedades que lo produjeron. Conclusión: formular hipótesis sobre el uso y el sentido de las piezas en su sociedad y contrastarlas con fuentes.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Teatro",
+    "subtema": "Didáctica del área: juego dramático y montaje con libreto en primeros grados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. III, A. Grados primero, segundo y tercero"
+    ],
+    "texto_fuente": "El primer conjunto de grados hace énfasis en el desarrollo de la sensibilidad y en procesos de recepción, creación y socialización basados inicialmente en el juego y progresivamente en la vinculación del estudiante a actividades propias de varias prácticas artísticas. Se trata de un periodo de sensibilización ante los lenguajes artísticos, a partir de la lúdica y el aprendizaje intuitivo de nociones generales relativas al arte y sus técnicas.",
+    "pregunta": "La docente de 1.º planea que su grupo monte, para el día de la familia, una obra con guion escrito en la que cada niño memoriza sus parlamentos. La docente de artes le objeta: «En primero conviene empezar por el juego dramático y no por un montaje con libreto». ¿Cómo debe valorarse la objeción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No es acertada: memorizar parlamentos fortalece la memoria y la lectura, y esos aprendizajes son la prioridad del área artística en primero.",
+        "explicacion": "Incorrecta. La memoria y la lectura pueden beneficiarse, pero no son la prioridad del área en estos grados: el énfasis está en la sensibilidad, a partir de la lúdica."
+      },
+      {
+        "id": "B",
+        "texto": "Es acertada, pero porque en estos grados los trabajos de los niños no se presentan ante público, sino ante el docente y el grupo.",
+        "explicacion": "Incorrecta. La objeción es acertada, pero no por esa razón: la socialización también hace parte de 1.º a 3.º (por ejemplo, demostraciones a partir de los repertorios de clase), siempre que nazca del juego."
+      },
+      {
+        "id": "C",
+        "texto": "Es acertada: en los primeros grados los procesos arrancan desde la lúdica y se acercan de forma progresiva a las prácticas propias de cada arte.",
+        "explicacion": "Correcta. En 1.º a 3.º los procesos de recepción, creación y socialización se basan inicialmente en el juego y, de forma progresiva, en actividades propias de las prácticas artísticas. El juego dramático (todos juegan a ser otros, sin libreto fijo) es la entrada adecuada al teatro en primero."
+      },
+      {
+        "id": "D",
+        "texto": "No es acertada: presentar la obra a las familias es un proceso de socialización, y eso justifica desde primero el montaje con libreto y parlamentos.",
+        "explicacion": "Incorrecta. La socialización es valiosa, pero no exige un montaje con libreto: en primero puede mostrarse a las familias lo que surge del juego dramático."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: se propone un montaje con libreto y parlamentos memorizados en primer grado. Regla: las Orientaciones señalan que en 1.º a 3.º los procesos de recepción, creación y socialización se basan inicialmente en el juego y solo de forma progresiva en actividades propias de cada práctica artística, a partir de la lúdica y del aprendizaje intuitivo. Conclusión: la objeción es acertada; el juego dramático es el punto de partida, y la socialización puede nacer de él.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Teatro",
+    "subtema": "Didáctica del área: aceptar y desarrollar las propuestas en la improvisación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, A.3. Comunicación",
+      "Cap. II, A.4. Educación Artística y competencias ciudadanas"
+    ],
+    "texto_fuente": "La comunicación se refiere al hacer, es la disposición productiva que integra la sensibilidad y la apreciación estética en el acto creativo. [...] como el despliegue de acciones de una improvisación teatral [...] pone en juego un ambiente de interacciones múltiples donde es necesaria la habilidad para actuar con otros y tomar decisiones",
+    "pregunta": "En 8.º, durante una improvisación por parejas, una estudiante abre la escena: «¡Capitán, el barco se está hundiendo!». Su compañero responde: «Esto no es un barco, es un salón de clase», y la escena se detiene. Lo mismo ocurre en otras parejas. ¿Qué intervención es más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proponer escenas cortas con la regla de aceptar cada propuesta del compañero y sumarle algo nuevo, para que después comenten qué pasó en las que avanzaron.",
+        "explicacion": "Correcta. El compañero niega la propuesta (un bloqueo) y la escena muere. La improvisación se construye aceptando lo que propone el otro y desarrollándolo; practicar esa regla y reflexionar sobre su efecto trabaja la escucha y la acción conjunta."
+      },
+      {
+        "id": "B",
+        "texto": "Entregar a cada pareja un guion breve con el conflicto y las réplicas principales, para que la escena no dependa de lo que el otro proponga en el momento.",
+        "explicacion": "Incorrecta. El guion elimina el problema eliminando la improvisación: los estudiantes no aprenden a recibir y desarrollar en el momento lo que propone el compañero."
+      },
+      {
+        "id": "C",
+        "texto": "Aclarar al grupo que en la improvisación no hay reglas y que cada actor puede llevar la escena hacia donde quiera, para que pierdan el miedo a actuar.",
+        "explicacion": "Incorrecta. La improvisación sí tiene principios; dejar que cada uno lleve la escena a donde quiera refuerza la negación de las propuestas del otro."
+      },
+      {
+        "id": "D",
+        "texto": "Formar nuevas parejas en las que cada estudiante trabaje con un amigo cercano, con quien tenga la confianza necesaria para sostener la escena sin quedarse en blanco.",
+        "explicacion": "Incorrecta. El diagnóstico es errado: el problema no es la confianza entre compañeros, sino que se niega la situación propuesta; con un amigo puede ocurrir lo mismo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el compañero niega la situación propuesta y la escena se detiene, y pasa en varias parejas. Regla: en la improvisación teatral cada propuesta (lugar, personaje, situación) se acepta y se desarrolla; negarla bloquea la acción. Las Orientaciones ubican la improvisación en la competencia de comunicación y valoran la habilidad para actuar con otros y tomar decisiones. Conclusión: practicar la aceptación de propuestas y reflexionar sobre su efecto.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Teatro",
+    "subtema": "Saber del área: áreas de la puesta en escena (utilería, escenografía, vestuario e iluminación)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, B.2. Procesos de creación",
+      "Cap. I, A.3. Comunicación: producción"
+    ],
+    "texto_fuente": "b. Creación: es el proceso mediante el cual se realiza una obra artística. Se incluye entre ellas los diferentes objetos o eventos visuales, sonoros, escénicos o literarios, la interpretación musical, teatral y todo lo involucrado en la puesta en escena. [...] la planificación de actividades y procedimientos para el montaje de las obras, a la vez que se constituyen estrategias para consecución de recursos y conformación de equipos de trabajo logístico",
+    "pregunta": "En 7.º, el grupo prepara la puesta en escena de una obra breve y se reparte las áreas de producción. A la estudiante encargada de la utilería, el docente le pide revisar qué elementos le corresponde conseguir. ¿Cuál lista es la de su área?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El telón de fondo con un paisaje pintado, los paneles que simulan las paredes de la casa y la ventana falsa del fondo.",
+        "explicacion": "Incorrecta. Son elementos de escenografía: configuran el espacio de la escena y los actores no los manipulan."
+      },
+      {
+        "id": "B",
+        "texto": "El sombrero del cartero, la ruana de la abuela y los zapatos de charol que usa el niño en la última escena.",
+        "explicacion": "Incorrecta. Son prendas y accesorios que llevan puestos los personajes: corresponden al vestuario."
+      },
+      {
+        "id": "C",
+        "texto": "El reflector con filtro azul para la escena nocturna y el seguidor que ilumina al protagonista durante su monólogo.",
+        "explicacion": "Incorrecta. Son equipos y efectos de luz: corresponden a la iluminación."
+      },
+      {
+        "id": "D",
+        "texto": "La sombrilla que abre la abuela, la carta que lee el cartero y el plato del que come el niño en la última escena.",
+        "explicacion": "Correcta. La utilería reúne los objetos que los actores usan o manipulan durante la representación, como la sombrilla, la carta y el plato."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hay que reconocer qué elementos corresponden a la utilería. Regla (consenso del área): la utilería son los objetos que los actores usan o manipulan en escena; la escenografía configura el espacio (telones, paneles); el vestuario, lo que visten los personajes; la iluminación, las luces y sus efectos. Las Orientaciones incluyen en la creación todo lo involucrado en la puesta en escena. Conclusión: la lista de la sombrilla, la carta y el plato.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-ART-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Educación Artística",
+    "tema": "Teatro",
+    "subtema": "Didáctica del área: evaluar la gestión como proceso de socialización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Orientaciones Pedagógicas para la Educación Artística en Básica y Media (MEN, Documento 16, 2010)",
+    "articulos": [
+      "Cap. I, B.3. Procesos de socialización: gestión",
+      "Cap. II, D.1. ¿Qué se puede evaluar en la Educación Artística?"
+    ],
+    "texto_fuente": "b. Gestión: este proceso está constituido por las acciones que realizan estudiantes, docentes e instituciones para hacer posible la circulación de los productos, conocimientos artísticos y experiencias pedagógicas que surgen del proceso de enseñanza. [...] un cuarto componente no abordado por Eisner, tiene relación con la gestión, es decir, con la habilidad para poner a circular entre el público los productos de la creación del proceso educativo. Esto también es evaluable en relación con los objetivos determinados en cada proyecto de gestión o de publicación de una obra.",
+    "pregunta": "En 11.º, el grupo estrenó en la casa de la cultura una obra creada por ellos. Para la nota final, el docente valoró solo la actuación en la función: dicción, presencia escénica y dominio del texto. Una estudiante tuvo un papel corto, pero consiguió el auditorio, coordinó el sonido y diseñó el afiche y la convocatoria, tareas que el docente le asignó al iniciar el proyecto. Ella reclama que ese trabajo no se tuvo en cuenta. ¿Cómo debe valorarse el reclamo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No es procedente: la gestión es una tarea logística ajena al área, que corresponde valorar en el proyecto de emprendimiento y no en educación artística.",
+        "explicacion": "Incorrecta. La gestión es un proceso pedagógico de la propia educación artística: hace posible la circulación de los productos y convoca a la comunidad."
+      },
+      {
+        "id": "B",
+        "texto": "Es procedente: en un montaje colectivo todos los integrantes deben recibir la misma nota, porque la obra es un producto de todo el grupo.",
+        "explicacion": "Incorrecta. El reclamo es procedente, pero no por esa razón: el trabajo colectivo valora la contribución individual y colectiva, y la evaluación del proceso se sujeta al criterio personalizado, no a una nota única para todos."
+      },
+      {
+        "id": "C",
+        "texto": "Es procedente, porque la gestión es un proceso de socialización propio del área y puede valorarse frente a los objetivos que se fijaron para esa tarea.",
+        "explicacion": "Correcta. Las Orientaciones incluyen la gestión entre los procesos de socialización del área y la señalan como un componente evaluable en relación con los objetivos de cada proyecto de gestión. Como la tarea se asignó desde el inicio, debe entrar en la valoración."
+      },
+      {
+        "id": "D",
+        "texto": "No es procedente: en artes se valora la obra presentada ante el público, y la función es la evidencia que cuenta para el proceso de cada estudiante.",
+        "explicacion": "Incorrecta. Las Orientaciones piden valorar el proceso y no solo el producto presentado; la función es una evidencia, pero no la única."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la estudiante cumplió las tareas de gestión que se le asignaron, y la nota solo midió la actuación. Regla: la gestión es uno de los procesos de socialización (acciones para hacer posible la circulación de los productos) y, según las Orientaciones, un cuarto componente evaluable en relación con los objetivos de cada proyecto de gestión. Conclusión: el reclamo procede, y la gestión debe valorarse frente a sus objetivos.",
+    "fuente_url": "https://www.mineducacion.gov.co/1780/articles-340033_archivo_pdf_Orientaciones_Edu_Artistica_Basica_Media.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

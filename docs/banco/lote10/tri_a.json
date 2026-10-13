@@ -1,0 +1,882 @@
+[
+  {
+    "id": "TC-TRI-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Residencia fiscal de personas naturales",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 9", "art. 10 num. 1 (modificado por el art. 2 de la Ley 1607 de 2012)"],
+    "texto_fuente": "Las personas naturales, nacionales o extranjeras, residentes en el país y las sucesiones ilíquidas de causantes con residencia en el país en el momento de su muerte, están sujetas al impuesto sobre la renta y complementarios en lo concerniente a sus rentas y ganancias ocasionales, tanto de fuente nacional como de fuente extranjera [...] Las personas naturales, nacionales o extranjeras, que no tengan residencia en el país y las sucesiones ilíquidas de causantes sin residencia en el país en el momento de su muerte, sólo están sujetas al impuesto sobre la renta y complementarios respecto a sus rentas y ganancias ocasionales de fuente nacional [...] Se consideran residentes en Colombia para efectos tributarios las personas naturales que cumplan con cualquiera de las siguientes condiciones: [...] 1. Permanecer continúa o discontinúamente en el país por más de ciento ochenta y tres (183) días calendario incluyendo días de entrada y salida del país, durante un periodo cualquiera de trescientos sesenta y cinco (365) días calendario consecutivos, en el entendido que, cuando la permanencia continúa o discontinúa en el país recaiga sobre más de un año o periodo gravable, se considerará que la persona es residente a partir del segundo año o periodo gravable.",
+    "pregunta": "Una analista de la DIAN estudia la situación de Lucía, ciudadana mexicana que trabaja como consultora independiente. Lucía estuvo en Colombia del 20 de agosto al 10 de diciembre de 2025 y, después de pasar las fiestas en su país, del 12 de enero al 24 de marzo de 2026. No ha vuelto desde entonces. En ambos años recibió honorarios por trabajos hechos en Colombia y arriendos de un inmueble que tiene en México. ¿Cómo debe tratarse a Lucía en el impuesto sobre la renta de 2025 y de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Residente en 2025 y en 2026; en ambos años tributa por sus rentas de fuente nacional y extranjera.",
+        "explicacion": "Incorrecta. La permanencia de más de 183 días abarcó dos años gravables. En ese caso, la ley la considera residente a partir del segundo año (2026), no desde 2025."
+      },
+      {
+        "id": "B",
+        "texto": "No residente en 2025, gravada solo por lo de fuente nacional, y residente en 2026, por toda fuente.",
+        "explicacion": "Correcta. Lucía sumó 185 días (113 en 2025 y 72 en 2026, contando los de entrada y salida) dentro de un mismo periodo de 365 días. Como la permanencia abarcó dos años, es residente desde el segundo (2026). En 2025, como no residente, tributa solo por sus rentas de fuente nacional; en 2026, como residente, por las de fuente nacional y extranjera."
+      },
+      {
+        "id": "C",
+        "texto": "No residente en ambos años, porque en ninguno de los dos años calendario sumó más de 183 días en el país.",
+        "explicacion": "Incorrecta. Los 183 días no se cuentan por año calendario, sino en cualquier periodo de 365 días consecutivos. En el periodo que empezó el 20 de agosto de 2025, Lucía sumó 185 días."
+      },
+      {
+        "id": "D",
+        "texto": "Residente en 2025, año en que comenzó la estadía, gravada por toda fuente, y no residente en 2026.",
+        "explicacion": "Incorrecta. Invierte la regla: cuando la permanencia abarca dos años, la residencia se reconoce a partir del segundo año, no en el año en que comenzó la estadía."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Lucía, extranjera, sumó 185 días en el país (113 en 2025 y 72 en 2026, contando entradas y salidas) dentro de un periodo de 365 días que empezó el 20 de agosto de 2025. Regla: el art. 10 num. 1 del ET exige más de 183 días en cualquier periodo de 365 días consecutivos y, si la permanencia abarca dos años, la persona es residente desde el segundo. El art. 9 grava al residente por rentas de fuente nacional y extranjera, y al no residente solo por las de fuente nacional. Conclusión: no residente en 2025 y residente en 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Sociedades nacionales y extranjeras: sede efectiva de administración",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 12 inc. 2", "art. 12-1 (adicionado por el art. 84 de la Ley 1607 de 2012; par. 1 modificado por el art. 56 de la Ley 2277 de 2022)", "art. 24 num. 1"],
+    "texto_fuente": "Las sociedades y entidades extranjeras son gravadas únicamente sobre sus rentas y ganancias ocasionales de fuente nacional. [...] Se consideran nacionales para efectos tributarios las sociedades y entidades que durante el respectivo año o periodo gravable tengan su sede efectiva de administración en el territorio colombiano. [...] 1. Tener su domicilio principal en el territorio colombiano; o [...] 2. Haber sido constituidas en Colombia, de acuerdo con las leyes vigentes en el país. [...] se entenderá que la sede efectiva de administración de una sociedad o entidad es el lugar en donde materialmente se toman las decisiones comerciales y de gestión necesarias para llevar a cabo las actividades de la sociedad o entidad en el día a día. [...] PARÁGRAFO 2o. No se considerará que una sociedad o entidad es nacional por el simple hecho de que su junta directiva se reúna en el territorio colombiano, o que entre sus accionistas, socios, comuneros, asociados, suscriptores o similares se encuentren personas naturales residentes en el país o a sociedades o entidades nacionales. [...] 1. Las rentas de capital provenientes de bienes inmuebles ubicados en el país, tales como arrendamientos o censos.",
+    "pregunta": "Un analista de fiscalización de la DIAN estudia una sociedad constituida en Panamá, con domicilio principal en Ciudad de Panamá. Su junta directiva se reúne dos veces al año en Cartagena, y el 60% de sus acciones pertenece a personas naturales residentes en Colombia. Sus administradores despachan desde Ciudad de Panamá, y desde allí se manejan los clientes, los contratos y la operación de cada día. En 2025 la sociedad recibió los arriendos de un local comercial ubicado en Bogotá e intereses por créditos otorgados a empresas panameñas. ¿Cómo debe tratarla el analista frente al impuesto sobre la renta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como sociedad nacional, porque su junta directiva sesiona en Colombia, gravada por sus rentas de toda fuente.",
+        "explicacion": "Incorrecta. La ley aclara que una sociedad no es nacional por el simple hecho de que su junta directiva se reúna en Colombia."
+      },
+      {
+        "id": "B",
+        "texto": "Como sociedad nacional, porque la mayoría de sus acciones es de residentes en Colombia, gravada por toda fuente.",
+        "explicacion": "Incorrecta. Tener accionistas que son personas naturales residentes en el país tampoco convierte a la sociedad en nacional."
+      },
+      {
+        "id": "C",
+        "texto": "Como no sujeta al impuesto en Colombia, porque no tiene su domicilio ni su dirección en el país.",
+        "explicacion": "Incorrecta. Las sociedades extranjeras sí tributan en Colombia, aunque solo por sus rentas de fuente nacional, como el arriendo de un inmueble ubicado en el país."
+      },
+      {
+        "id": "D",
+        "texto": "Como sociedad extranjera, que tributa en Colombia solo por la renta del arrendamiento en Bogotá.",
+        "explicacion": "Correcta. No se constituyó en Colombia, no tiene aquí su domicilio principal y su sede efectiva de administración está en Panamá, donde se toman las decisiones del día a día. Es extranjera y tributa solo por sus rentas de fuente nacional: el arriendo del local de Bogotá. Los intereses de créditos otorgados en Panamá no son de fuente nacional."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la sociedad se constituyó y tiene su domicilio en Panamá, y desde allí se dirige la operación diaria; en Colombia solo sesiona su junta y tiene accionistas residentes. Regla: el art. 12-1 del ET considera nacionales a las sociedades con sede efectiva de administración, domicilio principal o constitución en Colombia, y su par. 2 aclara que las reuniones de junta o los accionistas residentes no bastan. El art. 12 grava a las extranjeras solo por la fuente nacional. Conclusión: tributa solo por el arriendo del local de Bogotá.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Sucesiones ilíquidas como sujetos pasivos",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 7"],
+    "texto_fuente": "Las personas naturales y las sucesiones ilíquidas están sometidas al impuesto sobre la renta y complementarios. [...] La sucesión es ilíquida entre la fecha de la muerte del causante y aquélla en la cual se ejecutorie la sentencia aprobatoria de la partición o se autorice la escritura pública cuando se opte por lo establecido en el decreto extraordinario 902 de 1988.",
+    "pregunta": "Un auxiliar de la DIAN atiende a Andrés, cuyo padre murió el 10 de mayo de 2025 siendo residente en Colombia. El padre tenía un local arrendado, y los cánones de junio a diciembre de 2025 se siguieron consignando en una cuenta a su nombre. El proceso de sucesión se tramita ante un juez, y la sentencia que aprobó la partición quedó ejecutoriada el 3 de marzo de 2026. ¿Quién es el sujeto del impuesto sobre la renta por los cánones de junio a diciembre de 2025?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La sucesión del padre, que es la contribuyente desde la muerte hasta que queda en firme la partición.",
+        "explicacion": "Correcta. Las sucesiones ilíquidas están sometidas al impuesto, y la sucesión es ilíquida entre la muerte del causante y la ejecutoria de la sentencia aprobatoria de la partición. Los cánones de junio a diciembre de 2025 se causaron en ese lapso."
+      },
+      {
+        "id": "B",
+        "texto": "Los herederos, a prorrata de sus cuotas, porque los bienes pasan a ellos desde el día de la muerte.",
+        "explicacion": "Incorrecta. Mientras no se ejecutoríe la sentencia que aprueba la partición, el sujeto del impuesto es la sucesión ilíquida, no cada heredero."
+      },
+      {
+        "id": "C",
+        "texto": "Andrés, como heredero que gestiona la cuenta, porque la sucesión no es contribuyente del impuesto.",
+        "explicacion": "Incorrecta. La ley somete expresamente a las sucesiones ilíquidas al impuesto sobre la renta. Que Andrés maneje la cuenta no lo convierte en el contribuyente."
+      },
+      {
+        "id": "D",
+        "texto": "El padre, en una última declaración por todo 2025, porque los cánones provienen de sus bienes.",
+        "explicacion": "Incorrecta. Desde la muerte, las rentas de esos bienes ya no son del causante como persona natural: las percibe la sucesión ilíquida, que es un sujeto distinto."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los cánones se causaron entre la muerte del padre (10 de mayo de 2025) y la ejecutoria de la sentencia de partición (3 de marzo de 2026). Regla: el art. 7 del ET somete al impuesto a las personas naturales y a las sucesiones ilíquidas, y considera ilíquida la sucesión desde la muerte del causante hasta la ejecutoria de la sentencia aprobatoria de la partición. Conclusión: el sujeto del impuesto por esos cánones es la sucesión ilíquida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Entidades no contribuyentes no declarantes",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 22 (modificado por el art. 83 de la Ley 2010 de 2019)", "art. 23 (modificado por el art. 145 de la Ley 1819 de 2016)", "art. 19 par. 1 (modificado por el art. 140 de la Ley 1819 de 2016)"],
+    "texto_fuente": "No son contribuyentes del impuesto sobre la renta y complementarios y no deberán cumplir el deber formal de presentar declaración de ingresos y patrimonio, de acuerdo con el artículo 598 del presente Estatuto, la Nación, [...] Así mismo, serán no contribuyentes no declarantes las sociedades de mejoras públicas, las asociaciones de padres de familia; los organismos de acción comunal; [...] Estas entidades estarán en todo caso obligadas a presentar la declaración de ingresos y patrimonio. [...] PARÁGRAFO 1o. La calificación de la que trata el presente artículo no aplica para las entidades enunciadas y determinadas como no contribuyentes, en el artículo 22 y 23 del presente Estatuto,",
+    "pregunta": "Una técnica de la DIAN actualiza el RUT de la junta de acción comunal de un barrio. En 2025 la junta recibió aportes de sus afiliados y algunos ingresos por el alquiler ocasional del salón comunal para fiestas. Su presidente pregunta qué obligaciones tiene la junta frente al impuesto sobre la renta. ¿Qué debe responderle la técnica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no es contribuyente, pero cada año debe presentar la declaración de ingresos y patrimonio.",
+        "explicacion": "Incorrecta. Esa es la situación de las entidades del art. 23 (por ejemplo, sindicatos o fondos de empleados), que no son contribuyentes pero sí deben declarar. Los organismos de acción comunal están en el art. 22, que los releva también de declarar."
+      },
+      {
+        "id": "B",
+        "texto": "Que es contribuyente del impuesto, aunque puede pedir su calificación en el régimen tributario especial.",
+        "explicacion": "Incorrecta. La calificación en el régimen tributario especial no aplica a las entidades que la ley determina como no contribuyentes en los arts. 22 y 23, y la junta es una de ellas."
+      },
+      {
+        "id": "C",
+        "texto": "Que no es contribuyente del impuesto ni está obligada a presentar declaración de ingresos y patrimonio.",
+        "explicacion": "Correcta. El art. 22 incluye a los organismos de acción comunal entre los no contribuyentes no declarantes: no son contribuyentes del impuesto ni deben presentar la declaración de ingresos y patrimonio."
+      },
+      {
+        "id": "D",
+        "texto": "Que es contribuyente del régimen ordinario por el alquiler del salón y no contribuyente por los aportes.",
+        "explicacion": "Incorrecta. El art. 22 no divide la calidad de la junta según el origen de cada ingreso. El alquiler ocasional del salón no la vuelve contribuyente del régimen ordinario."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la entidad es una junta de acción comunal. Regla: el art. 22 del ET (mod. art. 83 Ley 2010 de 2019) enumera como no contribuyentes no declarantes, entre otros, a los organismos de acción comunal. Se diferencian de las entidades del art. 23, que no son contribuyentes pero deben presentar declaración de ingresos y patrimonio. Conclusión: la junta no es contribuyente ni está obligada a declarar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Calificación en el régimen tributario especial",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 19 (modificado por el art. 140 de la Ley 1819 de 2016)"],
+    "texto_fuente": "Todas las asociaciones, fundaciones y corporaciones constituidas como entidades sin ánimo de lucro, serán contribuyentes del impuesto sobre la renta y complementarios, conforme a las normas aplicables a las sociedades nacionales. [...] Excepcionalmente, podrán solicitar ante la administración tributaria, de acuerdo con el artículo 356-2, su calificación como contribuyentes del Régimen Tributario Especial, siempre y cuando cumplan con los requisitos que se enumeran a continúación: [...] 3. Que ni sus aportes sean reembolsados ni sus excedentes distribuidos, bajo ninguna modalidad, cualquiera que sea la denominación que se utilice, ni directa, ni indirectamente, ni durante su existencia, ni en el momento de su disolución y liquidación, de acuerdo con el artículo 356-1.",
+    "pregunta": "Un analista de la DIAN estudia la solicitud de calificación en el régimen tributario especial que presentó una fundación legalmente constituida, cuyo objeto es promover la educación de niños de zonas rurales, una actividad meritoria a la que accede la comunidad. Sus estatutos disponen que, si la fundación se liquida, los aportes iniciales se devolverán a los fundadores en proporción a lo que cada uno aportó. ¿Qué debe concluir el analista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que procede la calificación, porque la fundación está legalmente constituida y su objeto es de interés general.",
+        "explicacion": "Incorrecta. La fundación cumple dos de los requisitos, pero no el tercero: que sus aportes no se reembolsen bajo ninguna modalidad, ni siquiera al disolverse y liquidarse."
+      },
+      {
+        "id": "B",
+        "texto": "Que no procede la calificación, y la fundación tributa en el régimen ordinario como si fuera una sociedad.",
+        "explicacion": "Correcta. Las fundaciones son contribuyentes conforme a las normas de las sociedades nacionales, y solo por excepción acceden al régimen especial si cumplen todos los requisitos. La cláusula que ordena devolver los aportes al liquidarse incumple el num. 3 del art. 19."
+      },
+      {
+        "id": "C",
+        "texto": "Que procede la calificación, aunque la perderá si al liquidarse llega a devolver los aportes a sus fundadores.",
+        "explicacion": "Incorrecta. El requisito no se refiere solo a la devolución efectiva: la ley exige que los aportes no se reembolsen ni durante la existencia ni en la disolución y liquidación, y los estatutos ya prevén ese reembolso."
+      },
+      {
+        "id": "D",
+        "texto": "Que no hace falta la calificación, porque una fundación sin ánimo de lucro no es contribuyente del impuesto.",
+        "explicacion": "Incorrecta. Las fundaciones sin ánimo de lucro son contribuyentes del impuesto sobre la renta. Las entidades no contribuyentes son las que señalan los arts. 22 y 23."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los estatutos ordenan devolver los aportes a los fundadores si la fundación se liquida. Regla: el art. 19 del ET (mod. art. 140 Ley 1819 de 2016) hace contribuyentes a las fundaciones, conforme a las normas de las sociedades nacionales, y solo les permite calificarse en el régimen tributario especial si, entre otros requisitos, sus aportes no se reembolsan bajo ninguna modalidad, ni siquiera en la disolución y liquidación. Conclusión: la calificación no procede y la fundación tributa en el régimen ordinario.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Depuración de la renta líquida",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 26"],
+    "texto_fuente": "La renta líquida gravable se determina así: de la suma de todos los ingresos ordinarios y extraordinarios realizados en el año o período gravable, que sean susceptibles de producir un incremento neto del patrimonio en el momento de su percepción, y que no hayan sido expresamente exceptuados, se restan las devoluciones, rebajas y descuentos, con lo cual se obtienen los ingresos netos. De los ingresos netos se restan, cuando sea el caso, los costos realizados imputables a tales ingresos, con lo cual se obtiene la renta bruta. De la renta bruta se restan las deducciones realizadas, con lo cual se obtiene la renta líquida.",
+    "pregunta": "Un auxiliar de la DIAN verifica la declaración de renta de una sociedad. En el año gravable, la sociedad obtuvo ingresos ordinarios y extraordinarios por $850.000.000; tuvo devoluciones, rebajas y descuentos en ventas por $30.000.000; registró costos imputables a esos ingresos por $420.000.000 y deducciones procedentes por $180.000.000. ¿Cuál es la renta líquida de la sociedad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$220.000.000",
+        "explicacion": "Correcta. Ingresos netos: 850 − 30 = 820 millones. Renta bruta: 820 − 420 = 400 millones. Renta líquida: 400 − 180 = 220 millones."
+      },
+      {
+        "id": "B",
+        "texto": "$250.000.000",
+        "explicacion": "Incorrecta. Omite restar las devoluciones, rebajas y descuentos: 850 − 420 − 180 = 250 millones."
+      },
+      {
+        "id": "C",
+        "texto": "$400.000.000",
+        "explicacion": "Incorrecta. $400.000.000 es la renta bruta. Falta restar las deducciones para llegar a la renta líquida."
+      },
+      {
+        "id": "D",
+        "texto": "$190.000.000",
+        "explicacion": "Incorrecta. Resta dos veces las devoluciones, rebajas y descuentos: 400 − 180 − 30 = 190 millones."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: ingresos de $850 millones, devoluciones de $30 millones, costos de $420 millones y deducciones de $180 millones. Regla: el art. 26 del ET ordena restar de los ingresos las devoluciones, rebajas y descuentos (ingresos netos), luego los costos (renta bruta) y luego las deducciones (renta líquida). Cálculo: 850 − 30 = 820; 820 − 420 = 400; 400 − 180 = 220. Conclusión: la renta líquida es de $220.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Ingresos no constitutivos de renta, rentas exentas y deducciones",
+    "formato": "conocimiento_aplicado",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 55 (modificado por el art. 31 de la Ley 2010 de 2019)", "art. 56 (adicionado por el art. 14 de la Ley 1819 de 2016)", "art. 206 num. 10 (modificado por el art. 2 de la Ley 2277 de 2022)"],
+    "texto_fuente": "Los aportes obligatorios que efectúen los trabajadores, empleadores y afiliados al Sistema General de Seguridad Social en Salud no harán parte de la base para aplicar la retención en la fuente por salarios, y serán considerados como un ingreso no constitutivo de renta ni de ganancia ocasional. [...] Las cotizaciones voluntarias al régimen de ahorro individual con solidaridad son un ingreso no constitutivo de renta ni de ganancia ocasional para el aportante, en un porcentaje que no exceda el veinticinco por ciento (25%) del ingreso laboral o tributario anual, limitado a 2.500 UVT. [...] ARTICULO 206. RENTAS DE TRABAJO EXENTAS. [...] Están gravados con el impuesto sobre la renta y complementarios la totalidad de los pagos o abonos en cuenta provenientes de la relación laboral o legal y reglamentaria, con excepción de los siguientes: [...] El veinticinco por ciento (25%) del valor total de los pagos laborales limitada anualmente a setecientos noventa (790) UVT.",
+    "pregunta": "En un taller sobre la declaración de renta de personas naturales, un técnico de la DIAN analiza tres conceptos de un trabajador asalariado afiliado al régimen de ahorro individual con solidaridad: (1) sus aportes obligatorios al sistema de salud; (2) las cotizaciones voluntarias que hizo a su fondo de pensiones obligatorias, dentro de los límites que fija la ley, y (3) el 25% de sus pagos laborales, calculado como exige la ley y dentro del límite anual. Use la sigla INCRNGO para «ingreso no constitutivo de renta ni ganancia ocasional». ¿Cómo se clasifica cada concepto en la depuración de su renta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "(1) INCRNGO; (2) renta exenta; (3) deducción.",
+        "explicacion": "Incorrecta. Acierta en (1), pero las cotizaciones voluntarias al régimen de ahorro individual son INCRNGO, no renta exenta, y el 25% de los pagos laborales es una renta exenta, no una deducción."
+      },
+      {
+        "id": "B",
+        "texto": "(1) deducción; (2) INCRNGO; (3) INCRNGO.",
+        "explicacion": "Incorrecta. Acierta en (2), pero los aportes obligatorios a salud son INCRNGO y no una deducción, y el 25% de los pagos laborales es una renta exenta."
+      },
+      {
+        "id": "C",
+        "texto": "(1) deducción; (2) renta exenta; (3) renta exenta.",
+        "explicacion": "Incorrecta. Solo acierta en (3). Los aportes obligatorios a salud y las cotizaciones voluntarias al fondo de pensiones obligatorias son, ambos, INCRNGO."
+      },
+      {
+        "id": "D",
+        "texto": "(1) INCRNGO; (2) INCRNGO; (3) renta exenta.",
+        "explicacion": "Correcta. El art. 56 califica los aportes obligatorios a salud como INCRNGO; el art. 55 da el mismo trato a las cotizaciones voluntarias al régimen de ahorro individual dentro de sus límites, y el num. 10 del art. 206 incluye entre las rentas de trabajo exentas el 25% de los pagos laborales, limitado a 790 UVT al año."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se trata de aportes obligatorios a salud, cotizaciones voluntarias al fondo de pensiones obligatorias y el 25% de los pagos laborales. Regla: según los arts. 56 y 55 del ET, los dos primeros conceptos son ingresos no constitutivos de renta ni ganancia ocasional; el num. 10 del art. 206 (mod. Ley 2277 de 2022) incluye el 25% de los pagos laborales entre las rentas de trabajo exentas. Conclusión: INCRNGO, INCRNGO y renta exenta.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Límite de rentas exentas y deducciones en la cédula general",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 336 nums. 1 a 3 (modificado por el art. 7 de la Ley 2277 de 2022)", "art. 206 num. 10 (modificado por el art. 2 de la Ley 2277 de 2022)"],
+    "texto_fuente": "1. Se sumarán los ingresos obtenidos por todo concepto excepto los correspondientes dividendos y ganancias ocasionales. [...] 2. A la suma anterior, se le restarán los ingresos no constitutivos de renta imputables a cada ingreso. [...] 3. Al valor resultante podrán restarse todas las rentas exentas y las deducciones especiales imputables a esta cédula, siempre que no excedan el cuarenta (40%) del resultado del numeral anterior, que en todo caso no puede exceder de mil trescientas cuarenta (1.340) UVT anuales. [...] El veinticinco por ciento (25%) del valor total de los pagos laborales limitada anualmente a setecientos noventa (790) UVT. El cálculo de esta renta exenta se efectuará una vez se detraiga del valor total de los pagos laborales recibidos por el trabajado, los ingresos no constitutivos de renta, las deducciones y las demás rentas exentas diferentes a la establecida en el presente numeral.",
+    "pregunta": "Una gestora de la DIAN revisa la depuración de la cédula general de un trabajador asalariado por el año gravable 2025. Datos: ingresos laborales de $200.000.000; aportes obligatorios a pensión y salud por $16.000.000; deducción por intereses de vivienda de $20.000.000 y rentas exentas por aportes a una cuenta AFC de $30.000.000, ambas dentro de sus propios límites. Además, el trabajador aplicó la renta exenta del 25% de los pagos laborales. No tiene otros ingresos. Para el ejercicio, tome una UVT de $50.000. ¿Cuál es la renta líquida de la cédula general?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$110.400.000, porque lo que se resta puede llegar al 40% del ingreso ya depurado de aportes.",
+        "explicacion": "Incorrecta. Aplica solo el 40% (184 millones × 40% = 73,6 millones) y olvida que ese límite no puede pasar de 1.340 UVT, es decir, de $67.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$100.500.000, porque lo que se resta suma $83.500.000 y todo cabe dentro de los límites.",
+        "explicacion": "Incorrecta. Suma bien lo que se pretende restar (20 + 30 + 33,5 = 83,5 millones), pero no aplica el límite del 40% ni el tope de 1.340 UVT."
+      },
+      {
+        "id": "C",
+        "texto": "$117.000.000, porque lo que se resta no puede superar $67.000.000 en el año gravable.",
+        "explicacion": "Correcta. Ingresos menos INCRNGO: 200 − 16 = 184 millones. Renta exenta del 25%: (184 − 20 − 30) × 25% = 33,5 millones, por debajo de 790 UVT (39,5 millones). Total a restar: 83,5 millones. Límite: el menor entre el 40% de 184 (73,6 millones) y 1.340 UVT (67 millones). Renta líquida: 184 − 67 = 117 millones."
+      },
+      {
+        "id": "D",
+        "texto": "$133.000.000, porque los aportes obligatorios no se restan antes de aplicar el límite anual.",
+        "explicacion": "Incorrecta. Los aportes obligatorios a pensión y salud son ingresos no constitutivos de renta y se restan antes de aplicar el límite. Restar los 67 millones de los 200 millones da un resultado errado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: ingresos de $200 millones, INCRNGO de $16 millones, deducción de $20 millones, renta exenta AFC de $30 millones y UVT de $50.000. Regla: el art. 336 del ET (mod. Ley 2277 de 2022) resta primero los INCRNGO y limita rentas exentas y deducciones al 40% de ese resultado, sin pasar de 1.340 UVT; el 25% del art. 206 num. 10 se calcula después de restar lo demás y tiene tope de 790 UVT. Cálculo: 184 millones; 25% = 33,5; total 83,5; límite 67. Conclusión: renta líquida de $117.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Sistema cedular y compensación de pérdidas",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 330 (modificado por el art. 37 de la Ley 2010 de 2019)", "art. 331 (modificado por el art. 6 de la Ley 2277 de 2022)", "art. 335 num. 2 (modificado por el art. 40 de la Ley 2010 de 2019)", "art. 336 num. 4 (modificado por el art. 7 de la Ley 2277 de 2022)"],
+    "texto_fuente": "La depuración se efectuará de modo independiente en las siguientes tres (3) cédulas: [...] a) Rentas de trabajo, de capital y no laborales [...] c) Dividendos y participaciones. [...] La cédula de dividendos y participaciones no admite costos ni deducciones. [...] Las pérdidas incurridas dentro de una cédula solo podrán ser compensadas contra las rentas de la misma cédula, en los siguientes periodos gravables, teniendo en cuenta los límites y porcentajes de compensación establecidos en las normas vigentes. [...] Las pérdidas de las rentas líquidas cedulares no se sumarán para efectos de determinar la renta líquida gravable. [...] 2. Rentas de capital: las obtenidas por concepto de intereses, rendimientos financieros, arrendamientos, regalías y explotación de la propiedad intelectual. [...] 4. En la depuración de las rentas no laborales y las rentas de capital se podrán restar los costos y los gastos que cumplan con los requisitos generales para su procedencia establecidos en las normas de este Estatuto y que sean imputables a estas rentas específicas.",
+    "pregunta": "Carolina, persona natural residente, consulta en un punto de atención de la DIAN sobre su declaración del año gravable 2025. Ese año arrendó un apartamento y, por reparaciones y otros gastos procedentes, el arrendamiento le dejó una pérdida de $12.000.000. También recibió dividendos de una sociedad nacional por $30.000.000. Quiere restar esa pérdida de los dividendos para pagar menos impuesto. ¿Qué le debe responder el gestor que la atiende?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sí puede, porque las rentas de todas las cédulas se suman y la pérdida reduce la renta gravable.",
+        "explicacion": "Incorrecta. Las rentas líquidas cedulares se suman para aplicar la tarifa, pero las pérdidas de una cédula no se suman para determinar la renta líquida gravable."
+      },
+      {
+        "id": "B",
+        "texto": "Que sí puede, si la pérdida no supera el 40% del valor de los dividendos recibidos en el año.",
+        "explicacion": "Incorrecta. El 40% es el límite de rentas exentas y deducciones de la cédula general; no autoriza a cruzar pérdidas con la cédula de dividendos, que además no admite costos ni deducciones."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede; solo la compensará contra rentas de la cédula general en los años siguientes.",
+        "explicacion": "Correcta. El arrendamiento es una renta de capital y se depura en la cédula general. Las pérdidas de una cédula solo se compensan contra rentas de la misma cédula en los periodos siguientes, y no se suman a las demás para hallar la renta líquida gravable."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede; la pérdida se pierde, porque en las rentas de capital no se aceptan costos ni gastos.",
+        "explicacion": "Incorrecta. En las rentas de capital sí se pueden restar los costos y gastos procedentes (art. 336 num. 4); por eso hay pérdida, y esta se puede compensar dentro de la misma cédula en los años siguientes."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la pérdida viene de un arrendamiento (renta de capital) y Carolina quiere cruzarla con dividendos. Regla: el art. 335 del ET ubica los arrendamientos en la cédula general; el art. 330 ordena depurar cada cédula por separado y solo permite compensar las pérdidas contra rentas de la misma cédula en periodos siguientes, y el art. 331 impide sumar las pérdidas cedulares. Conclusión: no puede restarla de los dividendos; la compensará en la cédula general en años siguientes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Servicios prestados desde el exterior y retención del 100%",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 420 lit. c y par. 3 (modificado por el art. 173 de la Ley 1819 de 2016)", "art. 437-2 num. 3 (modificado por el art. 180 de la Ley 1819 de 2016)", "art. 437-1 inc. 2 y par. 1 (modificados por el art. 5 de la Ley 2010 de 2019)", "art. 468 (modificado por el art. 184 de la Ley 1819 de 2016)"],
+    "texto_fuente": "c) La prestación de servicios en el territorio nacional, o desde el exterior, con excepción de los expresamente excluidos; [...] PARÁGRAFO 3o. Para efectos del impuesto sobre las ventas, los servicios prestados y los intangibles adquiridos o licenciados desde el exterior se entenderán prestados, licenciados o adquiridos en el territorio nacional y causarán el respectivo impuesto cuando el usuario directo o destinatario de los mismos tenga su residencia fiscal, domicilio, establecimiento permanente, o la sede de su actividad económica en el territorio nacional. [...] Actuarán como agentes retenedores del impuesto sobre las ventas en la adquisición de bienes y servicios gravados: [...] que contraten con personas o entidades sin residencia o domicilio en el país la prestación de servicios gravados en el territorio nacional, con relación a los mismos. [...] La retención podrá ser hasta del cincuenta por ciento (50%) del valor del impuesto, de acuerdo con lo que determine el Gobierno nacional. En aquellos pagos en los que no exista una retención en la fuente especial establecida mediante decreto reglamentario, será aplicable la tarifa del quince por ciento (15%). [...] En el caso de las prestaciones de servicios gravados a que se refieren los numerales 3 y 8 del artículo 437-2 de este Estatuto, la retención será equivalente al ciento por ciento (100%) del valor del impuesto. [...] La tarifa general del impuesto sobre las ventas es del diecinueve por ciento (19%) salvo las excepciones contempladas en este título.",
+    "pregunta": "Una SAS de Medellín, responsable del IVA, contrató con una firma chilena sin residencia ni domicilio en Colombia una consultoría para rediseñar sus procesos de producción. La firma trabajó desde Santiago de Chile y cobró el equivalente a $40.000.000. El servicio no está excluido del impuesto. Un técnico de la DIAN atiende la consulta del contador de la SAS, que pregunta qué debe hacer con el IVA de ese servicio al momento del pago. ¿Qué le debe responder el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que retenga $7.600.000, que corresponden a la totalidad del IVA causado por el servicio.",
+        "explicacion": "Correcta. El servicio prestado desde el exterior se entiende prestado en Colombia porque la SAS, usuaria directa, tiene su domicilio en el país; causa IVA del 19%: $7.600.000. La SAS, responsable del IVA que contrata con una firma sin residencia ni domicilio en el país, es agente retenedor, y en este caso la retención es del 100% del impuesto."
+      },
+      {
+        "id": "B",
+        "texto": "Que retenga $1.140.000, el 15% del IVA, porque es la tarifa general de retención en este impuesto.",
+        "explicacion": "Incorrecta. El 15% es la tarifa general de retención de IVA, pero para los servicios contratados con personas sin residencia ni domicilio en el país (num. 3 del art. 437-2) la retención es del 100%."
+      },
+      {
+        "id": "C",
+        "texto": "Que retenga $3.800.000, la mitad del IVA, porque es el máximo de retención que permite la ley.",
+        "explicacion": "Incorrecta. El 50% es el máximo que el Gobierno puede fijar como retención general, pero la ley prevé una retención del 100% para los servicios contratados con no residentes."
+      },
+      {
+        "id": "D",
+        "texto": "Que no hay IVA que retener, porque el servicio se prestó en Chile por una firma no residente.",
+        "explicacion": "Incorrecta. Los servicios prestados desde el exterior causan IVA cuando el usuario directo tiene su domicilio o residencia fiscal en Colombia, como ocurre con la SAS."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la SAS, domiciliada en Colombia y responsable del IVA, recibió un servicio gravado prestado desde Chile por una firma sin residencia en el país. Regla: el art. 420 par. 3 del ET entiende prestados en Colombia los servicios desde el exterior cuyo usuario directo está domiciliado aquí; el art. 437-2 num. 3 hace agente retenedor al responsable que contrata con no residentes, y el art. 437-1 par. 1 fija esa retención en el 100% del IVA. Cálculo: 40.000.000 × 19% = 7.600.000. Conclusión: retiene $7.600.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Bienes exentos frente a servicios excluidos",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 481 lit. a (modificado por el art. 189 de la Ley 1819 de 2016)", "art. 489 (modificado por el art. 59 de la Ley 1607 de 2012)", "art. 476 num. 9 (modificado por el art. 11 de la Ley 2010 de 2019)", "art. 488"],
+    "texto_fuente": "Para efectos del impuesto sobre las ventas, únicamente conservarán la calidad de bienes y servicios exentos con derecho a devolución bimestral: [...] a) Los bienes corporales muebles que se exporten; [...] En el caso de las operaciones de que trata el artículo 481 de este Estatuto, y sin perjuicio de la devolución del IVA retenido, habrá lugar a descuento y devolución bimestral únicamente cuando quien efectúe la operación se trate de un responsable del impuesto sobre las ventas según lo establecido en el artículo 481 de este Estatuto. [...] Se exceptúan del impuesto los siguientes servicios y los bienes relacionados explícitamente a continuación: [...] 9. El servicio de transporte público, terrestre, fluvial y marítimo de personas en el territorio nacional, [...] Sólo otorga derecho a descuento, el impuesto sobre las ventas por las adquisiciones de bienes corporales muebles y servicios, y por las importaciones que, de acuerdo con las disposiciones del impuesto a la renta, resulten computables como costo o gasto de la empresa y que se destinen a las operaciones gravadas con el impuesto sobre las ventas.",
+    "pregunta": "Dos empresas consultan a una gestora de la DIAN. La primera es una SAS responsable del IVA que vende toda su producción de flores frescas a compradores de Estados Unidos, a donde las exporta. La segunda presta el servicio de transporte público terrestre de pasajeros entre dos municipios. Ambas pagaron IVA en la compra de insumos y repuestos que usan en esas actividades y que son costo o gasto para ellas. ¿Qué debe responder la gestora sobre ese IVA pagado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ambas lo descuentan y piden su devolución, porque ninguna cobra IVA en sus ventas y las dos lo pagaron.",
+        "explicacion": "Incorrecta. Que ninguna de las dos cobre IVA no las iguala: la exportación de bienes es una operación exenta con derecho a devolución, mientras que el transporte público de pasajeros está excluido del impuesto."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo la exportadora puede descontarlo y pedir su devolución; para la transportadora no es descontable.",
+        "explicacion": "Correcta. La exportación de bienes corporales muebles es exenta con derecho a devolución bimestral, y el responsable que la realiza tiene derecho a descuento y devolución. El transporte público terrestre de pasajeros está excluido; como sus servicios no son operaciones gravadas, el IVA de sus compras no otorga derecho a descuento."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo la transportadora puede pedir su devolución, porque al no ser responsable lo tiene como saldo a favor.",
+        "explicacion": "Incorrecta. Invierte la regla. Quien presta servicios excluidos no causa IVA en ellos y no puede descontar el que paga en sus compras; ese IVA no se convierte en saldo a favor."
+      },
+      {
+        "id": "D",
+        "texto": "Que ninguna lo puede descontar, porque solo descuenta IVA quien lo cobra a la tarifa general en sus ventas.",
+        "explicacion": "Incorrecta. Las operaciones exentas del art. 481, como la exportación de bienes, dan derecho a descuento y devolución aunque no se cobre IVA en la venta."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: una empresa exporta bienes y la otra presta transporte público de pasajeros. Regla: el art. 481 del ET hace exentos con derecho a devolución los bienes que se exportan, y el art. 489 da descuento y devolución al responsable que los realiza; el art. 476 num. 9 excluye el transporte público de pasajeros, y el art. 488 solo admite como descontable el IVA destinado a operaciones gravadas. Conclusión: solo la exportadora descuenta el IVA y pide su devolución.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Base gravable en la venta",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 447", "art. 454", "art. 468 (modificado por el art. 184 de la Ley 1819 de 2016)"],
+    "texto_fuente": "En la venta y prestación de servicios, la base gravable será el valor total de la operación, sea que ésta se realice de contado o a crédito, incluyendo entre otros los gastos directos de financiación ordinaria, extraordinaria, o moratoria, accesorios, acarreos, instalaciones, seguros, comisiones, garantías y demás erogaciones complementarias, aunque se facturen o convengan por separado y aunque, considerados independientemente, no se encuentren sometidos a imposición. [...] No forman parte de la base gravable los descuentos efectivos que consten en la factura o documento equivalente, siempre y cuando no estén sujetos a ninguna condición y resulten normales según la costumbre comercial; [...] La tarifa general del impuesto sobre las ventas es del diecinueve por ciento (19%) salvo las excepciones contempladas en este título.",
+    "pregunta": "Un técnico de la DIAN revisa una factura de venta a crédito de un equipo industrial, emitida por un responsable del IVA. La factura muestra: precio del equipo, $6.000.000; acarreo hasta la planta del comprador, cobrado por aparte, $200.000; intereses por la financiación del precio, $400.000; una rebaja comercial habitual en el sector, de $300.000, concedida sin exigir nada al comprador, y un descuento de $120.000 que el comprador solo obtendrá si paga dentro de los 10 días siguientes. El equipo está gravado a la tarifa general. ¿Cuál es el IVA de la operación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.174.200, porque las dos rebajas que constan en la factura se restan del valor de la operación.",
+        "explicacion": "Incorrecta. Resta también el descuento de $120.000, que depende de que el comprador pague a tiempo. Los descuentos sujetos a condición no se restan de la base: (6.300.000 − 120.000) × 19% = 1.174.200."
+      },
+      {
+        "id": "B",
+        "texto": "$1.083.000, porque el acarreo y los intereses se cobran por aparte y no integran la base gravable.",
+        "explicacion": "Incorrecta. La base es el valor total de la operación e incluye los acarreos y los gastos de financiación, aunque se facturen por separado: (6.000.000 − 300.000) × 19% = 1.083.000."
+      },
+      {
+        "id": "C",
+        "texto": "$1.254.000, porque las rebajas comerciales no disminuyen el valor sobre el que se liquida el IVA.",
+        "explicacion": "Incorrecta. Los descuentos efectivos que constan en la factura, no sujetos a condición y normales según la costumbre comercial, no forman parte de la base: 6.600.000 × 19% = 1.254.000."
+      },
+      {
+        "id": "D",
+        "texto": "$1.197.000, porque el acarreo y los intereses se suman y solo se resta la rebaja de $300.000.",
+        "explicacion": "Correcta. Base: 6.000.000 + 200.000 (acarreo) + 400.000 (financiación) − 300.000 (rebaja sin condición) = 6.300.000. El descuento por pronto pago está sujeto a condición y no se resta. IVA: 6.300.000 × 19% = 1.197.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la factura suma acarreo e intereses de financiación, y trae una rebaja sin condición y un descuento que depende del pago oportuno. Regla: el art. 447 del ET toma como base el valor total de la operación, con acarreos y gastos de financiación aunque se facturen aparte; el art. 454 excluye solo los descuentos efectivos no sujetos a condición, y el art. 468 fija la tarifa general en el 19%. Cálculo: 6.000.000 + 200.000 + 400.000 − 300.000 = 6.300.000; × 19% = 1.197.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Prorrateo de impuestos descontables",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 488", "art. 490"],
+    "texto_fuente": "Sólo otorga derecho a descuento, el impuesto sobre las ventas por las adquisiciones de bienes corporales muebles y servicios, y por las importaciones que, de acuerdo con las disposiciones del impuesto a la renta, resulten computables como costo o gasto de la empresa y que se destinen a las operaciones gravadas con el impuesto sobre las ventas. [...] Cuando los bienes y servicios que otorgan derecho a descuento se destinen indistintamente a operaciones gravadas, exentas, o excluidas del impuesto y no fuere posible establecer su imputación directa a unas y otras, el cómputo de dicho descuento se efectuará en proporción al monto de tales operaciones del período fiscal correspondiente.",
+    "pregunta": "Una analista de la DIAN revisa la declaración de IVA de un periodo de una empresa que vende productos gravados a la tarifa general y productos excluidos. Todas sus compras son costo o gasto de la empresa. En el periodo le facturaron IVA de $4.000.000 en insumos usados solo para los productos gravados; IVA de $1.500.000 en insumos usados solo para los excluidos, e IVA de $3.000.000 por vigilancia y mantenimiento de la planta, que sirven a las dos líneas sin que sea posible separar cuánto corresponde a cada una. Las ventas del periodo fueron de $75.000.000 gravadas y $25.000.000 excluidas. ¿Cuánto IVA descontable puede tomar la empresa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$7.000.000, porque el IVA compartido se descuenta completo cuando hubo ventas gravadas.",
+        "explicacion": "Incorrecta. Cuando el IVA sirve a la vez a operaciones gravadas y excluidas y no puede imputarse directamente, se descuenta en proporción a las operaciones del periodo, no completo. Sumar 4.000.000 + 3.000.000 da un exceso."
+      },
+      {
+        "id": "B",
+        "texto": "$6.250.000, porque del IVA compartido solo se toma la parte que corresponde a lo gravado.",
+        "explicacion": "Correcta. El IVA de los insumos usados solo en lo gravado ($4.000.000) se descuenta completo; el de los usados solo en lo excluido ($1.500.000) no se descuenta. El compartido ($3.000.000) se reparte según las ventas: 75 / 100 = 75%, es decir, $2.250.000. Total: $6.250.000."
+      },
+      {
+        "id": "C",
+        "texto": "$6.375.000, porque el 75% se aplica a todo el IVA facturado en las compras del periodo.",
+        "explicacion": "Incorrecta. Aplica la proporción a todo el IVA, incluido el que se imputa directamente: 8.500.000 × 75% = 6.375.000. La proporción solo se usa para el IVA que no se puede imputar a una u otra operación."
+      },
+      {
+        "id": "D",
+        "texto": "$4.000.000, porque el IVA que no se asigna solo a lo gravado no da derecho a descuento.",
+        "explicacion": "Incorrecta. El IVA compartido sí da derecho a descuento, en la proporción que corresponde a las operaciones gravadas del periodo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: $3.000.000 de IVA sirven a la vez a ventas gravadas (75 millones) y excluidas (25 millones), sin poder separarse. Regla: el art. 488 del ET solo admite como descontable el IVA destinado a operaciones gravadas, y el art. 490 ordena repartir el IVA de uso común en proporción a las operaciones del periodo. Cálculo: 4.000.000 + 3.000.000 × 75% = 4.000.000 + 2.250.000 = 6.250.000. Conclusión: puede descontar $6.250.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Personas naturales no responsables del IVA",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 437 par. 3 (modificado por el art. 4 de la Ley 2010 de 2019)", "art. 437 par. 5 (adicionado por el art. 4 de la Ley 2010 de 2019)"],
+    "texto_fuente": "Deberán registrarse como responsables del IVA quienes realicen actividades gravadas con el impuesto, con excepción de las personas naturales comerciantes y los artesanos, que sean minoristas o detallistas, los pequeños agricultores y los ganaderos, así como quienes presten servicios, siempre y cuando cumplan la totalidad de las siguientes condiciones: [...] 5. Que no hayan celebrado en el año inmediatamente anterior ni en el año en curso contratos de venta de bienes y/o prestación de servicios gravados por valor individual, igual o superior a 3.500 UVT. [...] Para la celebración de contratos de venta de bienes y/o de prestación de servicios gravados por cuantía individual y superior a 3.500 UVT, estas personas deberán inscribirse previamente como responsables del impuesto sobre las ventas (IVA), formalidad que deberá exigirse por el contratista para la procedencia de costos y deducciones. [...] Los límites de que trata el parágrafo 3 de este artículo serán 4.000 UVT para aquellos prestadores de servicios personas naturales que derivan sus ingresos de contratos con el Estado.",
+    "pregunta": "Valentina es diseñadora gráfica independiente. Presta sus servicios desde una sola oficina, sin franquicias ni concesiones, y no es usuaria aduanera. En 2025 sus ingresos brutos fueron de $160.000.000, sus consignaciones de $170.000.000 y ninguno de sus contratos superó $40.000.000. En junio de 2026, una empresa privada le ofrece un contrato de diseño por $190.000.000. Valentina, que hoy figura como no responsable del IVA, consulta a un gestor de la DIAN si eso cambia su situación. Para el ejercicio, tome una UVT de $50.000. ¿Qué debe responderle el gestor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe inscribirse como responsable del IVA antes de firmar, porque el contrato pasa de $175.000.000.",
+        "explicacion": "Correcta. Con una UVT de $50.000, 3.500 UVT son $175.000.000. Para celebrar un contrato de servicios gravados por una cuantía individual superior a ese valor, la persona debe inscribirse previamente como responsable del IVA, y el contrato de $190.000.000 lo supera."
+      },
+      {
+        "id": "B",
+        "texto": "Que sigue como no responsable, porque sus ingresos y consignaciones de 2025 no llegaron a $175.000.000.",
+        "explicacion": "Incorrecta. Cumplir los topes de ingresos y consignaciones no basta: deben cumplirse todas las condiciones, y una de ellas es no celebrar contratos gravados por 3.500 UVT o más."
+      },
+      {
+        "id": "C",
+        "texto": "Que sigue como no responsable, porque a quien presta servicios se le aplica un tope de $200.000.000.",
+        "explicacion": "Incorrecta. El tope de 4.000 UVT ($200.000.000) solo aplica a las personas naturales que prestan servicios y derivan sus ingresos de contratos con el Estado. Este contrato es con una empresa privada."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe inscribirse solo si sus ingresos de 2026 superan $175.000.000, una vez cierre el año.",
+        "explicacion": "Incorrecta. La ley exige inscribirse antes de celebrar el contrato que supera 3.500 UVT, sin esperar a que los ingresos del año pasen el tope."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Valentina, no responsable del IVA, va a firmar con una empresa privada un contrato de servicios gravados por $190.000.000, y 3.500 UVT son $175.000.000. Regla: el art. 437 par. 3 del ET (mod. Ley 2010 de 2019) exige cumplir todas las condiciones para no ser responsable, entre ellas no celebrar contratos gravados de 3.500 UVT o más, y ordena inscribirse previamente para celebrarlos; el tope de 4.000 UVT del par. 5 es solo para contratos con el Estado. Conclusión: debe inscribirse antes de firmar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Retención de IVA por entidades estatales",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 437-1 inc. 1 (modificado por el art. 42 de la Ley 1607 de 2012) e inc. 2 (modificado por el art. 5 de la Ley 2010 de 2019)", "art. 437-2 num. 1 y par. 1 (adicionado por el art. 9 de la Ley 223 de 1995; par. 1 modificado por el art. 25 de la Ley 633 de 2000)", "art. 468 (modificado por el art. 184 de la Ley 1819 de 2016)"],
+    "texto_fuente": "Con el fin de facilitar, acelerar y asegurar el recaudo del impuesto sobre las ventas, se establece la retención en la fuente en este impuesto, la cual deberá practicarse en el momento en que se realice el pago o abono en cuenta, lo que ocurra primero. [...] La retención podrá ser hasta del cincuenta por ciento (50%) del valor del impuesto, de acuerdo con lo que determine el Gobierno nacional. En aquellos pagos en los que no exista una retención en la fuente especial establecida mediante decreto reglamentario, será aplicable la tarifa del quince por ciento (15%). [...] Actuarán como agentes retenedores del impuesto sobre las ventas en la adquisición de bienes y servicios gravados: [...] 1. Las siguientes entidades estatales: [...] La Nación, los departamentos, el distrito capital, [...] La venta de bienes o prestación de servicios que se realicen entre agentes de retención del impuesto sobre las ventas de que tratan los numerales 1, 2 y 5 de este artículo no se regirá por lo previsto en este artículo. [...] La tarifa general del impuesto sobre las ventas es del diecinueve por ciento (19%) salvo las excepciones contempladas en este título.",
+    "pregunta": "La tesorería de una gobernación consulta a un técnico de la DIAN. La gobernación contrató el mantenimiento de sus equipos de cómputo con una empresa responsable del IVA, que no es gran contribuyente ni agente de retención del IVA. La factura es de $20.000.000 más IVA del 19%. La gobernación registró la cuenta por pagar el 27 de febrero de 2026 y girará el pago el 10 de marzo de 2026. Para este servicio no hay una retención de IVA especial reglamentada. ¿Cuánto debe retener la gobernación a título de IVA y en qué momento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$570.000, en el momento en que gire el pago, el 10 de marzo de 2026.",
+        "explicacion": "Incorrecta. El valor es correcto (15% de $3.800.000), pero la retención se practica con el pago o el abono en cuenta, lo que ocurra primero, y el abono en cuenta se hizo el 27 de febrero."
+      },
+      {
+        "id": "B",
+        "texto": "$3.000.000, en el momento en que registró la cuenta por pagar, el 27 de febrero de 2026.",
+        "explicacion": "Incorrecta. Acierta en el momento, pero aplica el 15% sobre el valor del servicio. La retención de IVA se calcula sobre el valor del impuesto: 15% de $3.800.000 = $570.000."
+      },
+      {
+        "id": "C",
+        "texto": "$570.000, en el momento en que registró la cuenta por pagar, el 27 de febrero de 2026.",
+        "explicacion": "Correcta. El IVA es 20.000.000 × 19% = 3.800.000. A falta de retención especial, se retiene el 15% del impuesto: $570.000. La gobernación es agente de retención por ser entidad estatal, y la retención se practica con el pago o el abono en cuenta, lo que ocurra primero: el registro del 27 de febrero."
+      },
+      {
+        "id": "D",
+        "texto": "$3.000.000, en el momento en que gire el pago, el 10 de marzo de 2026.",
+        "explicacion": "Incorrecta. Aplica el 15% sobre la base del servicio y no sobre el impuesto, y además espera al pago, cuando el abono en cuenta ocurrió antes."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el IVA facturado es de $3.800.000, la cuenta por pagar se registró el 27 de febrero y el pago será el 10 de marzo. Regla: el art. 437-2 num. 1 del ET hace agentes de retención de IVA a los departamentos; el art. 437-1 ordena retener al pago o abono en cuenta, lo que ocurra primero, y fija el 15% del valor del impuesto cuando no hay retención especial. Cálculo: 3.800.000 × 15% = 570.000. Conclusión: retiene $570.000 el 27 de febrero de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Responsabilidad del agente que no retiene",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 370"],
+    "texto_fuente": "No realizada la retención o percepción, el agente responderá por la suma que está obligado a retener o percibir, sin perjuicio de su derecho de reembolso contra el contribuyente, cuando aquél satisfaga la obligación. Las sanciones o multas impuestas al agente por el incumplimiento de sus deberes serán de su exclusiva responsabilidad.",
+    "pregunta": "En una auditoría, un gestor de la DIAN encuentra que una SAS pagó honorarios de $30.000.000 a un abogado y no le practicó la retención en la fuente de $3.000.000 que estaba obligada a hacer. La SAS alega que el impuesto es del abogado y que él lo pagará en su declaración de renta. ¿Cómo se reparte la responsabilidad por esa omisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El abogado responde por los $3.000.000, y la SAS solo por la sanción, pues el impuesto es de él.",
+        "explicacion": "Incorrecta. Si el agente no retiene, la ley le hace responder por la suma que debía retener, sin perjuicio de su derecho a recobrarla al contribuyente."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el abogado responde, por los $3.000.000 y por la sanción, pues la SAS solo intermedia el recaudo.",
+        "explicacion": "Incorrecta. El agente de retención no es un simple intermediario: responde por la suma no retenida, y las sanciones por incumplir sus deberes son de su exclusiva responsabilidad."
+      },
+      {
+        "id": "C",
+        "texto": "La SAS responde por los $3.000.000 y puede recobrarlos al abogado, a quien se le traslada la sanción.",
+        "explicacion": "Incorrecta. Acierta en que la SAS responde por la suma y puede recobrarla al abogado, pero las sanciones impuestas al agente por incumplir sus deberes son de su exclusiva responsabilidad; no se trasladan al contribuyente."
+      },
+      {
+        "id": "D",
+        "texto": "La SAS responde por los $3.000.000 y por la sanción, y puede recobrar al abogado la suma que pague.",
+        "explicacion": "Correcta. No realizada la retención, el agente responde por la suma que estaba obligado a retener, con derecho de reembolso contra el contribuyente cuando satisfaga la obligación. Las sanciones son de su exclusiva responsabilidad."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la SAS estaba obligada a retener $3.000.000 y no lo hizo. Regla: el art. 370 del ET dispone que, no realizada la retención, el agente responde por la suma que debía retener, sin perjuicio de su derecho de reembolso contra el contribuyente cuando satisfaga la obligación, y que las sanciones impuestas al agente son de su exclusiva responsabilidad. Conclusión: la SAS responde por los $3.000.000 y por la sanción, y puede recobrar la suma al abogado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Pagos a entidades no contribuyentes declarantes",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 23 (modificado por el art. 145 de la Ley 1819 de 2016)", "art. 369 num. 1 lit. b (modificado por el art. 154 de la Ley 1819 de 2016)", "art. 392 inc. 1"],
+    "texto_fuente": "No son contribuyentes del impuesto sobre la renta los sindicatos, las asociaciones gremiales, los fondos de empleados, [...] Estas entidades estarán en todo caso obligadas a presentar la declaración de ingresos y patrimonio. [...] No están sujetos a retención en la fuente: [...] 1. Los pagos o abonos en cuenta que se efectúen a: [...] b) Las entidades no contribuyentes declarantes, a que hace referencia el artículo 23. [...] Están sujetos a retención en la fuente los pagos o abonos en cuenta que hagan las personas jurídicas y sociedades de hecho por concepto de honorarios, comisiones, servicios y arrendamientos.",
+    "pregunta": "Una empresa, agente de retención en la fuente, tomó en arriendo una bodega de propiedad del sindicato de sus trabajadores. El contador sabe que el sindicato presenta cada año declaración de ingresos y patrimonio, y consulta a un gestor de la DIAN si debe practicar retención en la fuente a título de renta sobre el canon mensual. ¿Qué debe responderle el gestor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no debe retener, porque el sindicato no es contribuyente del impuesto, aunque esté obligado a declarar.",
+        "explicacion": "Correcta. Los sindicatos no son contribuyentes del impuesto sobre la renta, aunque deben presentar declaración de ingresos y patrimonio (art. 23). Los pagos a las entidades no contribuyentes declarantes del art. 23 no están sujetos a retención en la fuente (art. 369)."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe retener, porque el sindicato está obligado a declarar y eso lo hace sujeto de retención.",
+        "explicacion": "Incorrecta. La obligación de declarar no convierte en contribuyente al sindicato. La ley excluye de retención los pagos a las entidades no contribuyentes declarantes del art. 23."
+      },
+      {
+        "id": "C",
+        "texto": "Que no debe retener, porque el arrendamiento de bodegas no está sometido a retención en la fuente.",
+        "explicacion": "Incorrecta. Los arrendamientos sí están sujetos a retención en la fuente (art. 392). Aquí no se retiene por la calidad de quien recibe el pago, no por el concepto."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe retener, salvo que el sindicato acredite su calificación en el régimen tributario especial.",
+        "explicacion": "Incorrecta. El régimen tributario especial es para contribuyentes sin ánimo de lucro que obtienen esa calificación. El sindicato es no contribuyente, y por eso el pago no está sujeto a retención."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el beneficiario del canon es un sindicato, que declara ingresos y patrimonio. Regla: el art. 23 del ET (mod. Ley 1819 de 2016) dice que los sindicatos no son contribuyentes, aunque deben declarar ingresos y patrimonio, y el art. 369 num. 1 lit. b excluye de retención los pagos a las entidades no contribuyentes declarantes del art. 23. Conclusión: la empresa no debe practicar retención en la fuente sobre el canon.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Régimen Simple de Tributación",
+    "subtema": "Sujetos que no pueden optar por el SIMPLE",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 905 nums. 1 y 2 (modificado por el art. 74 de la Ley 2010 de 2019; num. 2 modificado por el art. 41 de la Ley 2155 de 2021)", "art. 906 nums. 2, 5 y 8 lit. c"],
+    "texto_fuente": "Podrán ser sujetos pasivos del impuesto unificado bajo el régimen simple de tributación – SIMPLE las personas naturales o jurídicas que reúnan la totalidad de las siguientes condiciones: [...] 1. Que se trate de una persona natural que desarrolle una empresa o de una persona jurídica en la que sus socios, partícipes o accionistas sean personas naturales, nacionales o extranjeras, residentes en Colombia. [...] 2. Las personas naturales sin residencia en el país o sus establecimientos permanentes. [...] 5. Las entidades que sean filiales, subsidiarias, agencias, sucursales, de personas jurídicas nacionales o extranjeras, o de extranjeros no residentes. [...] 8. Las personas naturales o jurídicas dedicadas a alguna de las siguientes actividades: [...] c) Factoraje o factoring;",
+    "pregunta": "En febrero de 2026, un gestor de la DIAN revisa cuatro solicitudes para optar por el régimen simple de tributación (SIMPLE). Todos los solicitantes están inscritos en el RUT, tienen firma electrónica y facturan electrónicamente, y ninguno tuvo en 2025 ingresos brutos de 100.000 UVT o más. Ninguna de las sociedades participa en otras sociedades ni surgió de una escisión. ¿Cuál de las solicitudes puede aceptarse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La de una SAS fabricante de muebles, filial de una sociedad colombiana, con ingresos de 8.000 UVT.",
+        "explicacion": "Incorrecta. Las entidades que son filiales, subsidiarias, agencias o sucursales de otras personas jurídicas, nacionales o extranjeras, no pueden optar por el SIMPLE, sin importar su nivel de ingresos."
+      },
+      {
+        "id": "B",
+        "texto": "La de una persona natural residente que se dedica al factoring, con ingresos de 5.000 UVT.",
+        "explicacion": "Incorrecta. Las personas dedicadas al factoraje o factoring están excluidas del SIMPLE, aunque sean residentes y tengan ingresos bajos."
+      },
+      {
+        "id": "C",
+        "texto": "La de una SAS de muebles, con ingresos de 20.000 UVT, de dos accionistas personas naturales residentes.",
+        "explicacion": "Correcta. Es una persona jurídica cuyas socias son personas naturales residentes en Colombia, con ingresos inferiores a 100.000 UVT, y no está en ninguno de los casos de exclusión del art. 906."
+      },
+      {
+        "id": "D",
+        "texto": "La de una persona natural no residente en Colombia, dueña de una tienda en Cali, con ingresos de 3.000 UVT.",
+        "explicacion": "Incorrecta. Las personas naturales sin residencia en el país no pueden optar por el SIMPLE, aunque su actividad sea una tienda y tengan ingresos bajos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: todas cumplen el tope de ingresos, pero una es filial, otra hace factoring y otra no es residente. Regla: el art. 905 del ET admite en el SIMPLE a personas naturales que desarrollen empresa y a sociedades cuyos socios sean personas naturales residentes, con ingresos inferiores a 100.000 UVT; el art. 906 excluye, entre otros, a los no residentes, a las filiales y a quienes se dedican al factoring. Conclusión: solo puede aceptarse la SAS de muebles de socias residentes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Régimen Simple de Tributación",
+    "subtema": "Retenciones en compras a contribuyentes del SIMPLE",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 911 (modificado por el art. 74 de la Ley 2010 de 2019)", "art. 437-2 num. 9 (modificado por el art. 6 de la Ley 2010 de 2019)", "art. 437-1 inc. 2 (modificado por el art. 5 de la Ley 2010 de 2019)", "art. 468 (modificado por el art. 184 de la Ley 1819 de 2016)"],
+    "texto_fuente": "Los contribuyentes del impuesto unificado bajo el régimen simple de tributación – SIMPLE no estarán sujetos a retención en la fuente y tampoco estarán obligados a practicar retenciones y autorretenciones en la fuente, con excepción de las correspondientes a pagos laborales. [...] Lo anterior sin perjuicio de la retención en la fuente a título del impuesto sobre las ventas –IVA, regulado en el numeral 9 del artículo 437-2 del Estatuto Tributario. [...] Los responsables del impuesto sobre las ventas (IVA) cuando adquieran bienes corporales muebles o servicios gravados, de personas que se encuentren registradas como contribuyentes del impuesto unificado bajo el Régimen Simple de Tributación -SIMPLE. [...] En aquellos pagos en los que no exista una retención en la fuente especial establecida mediante decreto reglamentario, será aplicable la tarifa del quince por ciento (15%). [...] La tarifa general del impuesto sobre las ventas es del diecinueve por ciento (19%) salvo las excepciones contempladas en este título.",
+    "pregunta": "Un auxiliar de la DIAN atiende al contador de una empresa responsable del IVA y agente de retención en la fuente. La empresa compró escritorios a una SAS fabricante que está inscrita en el régimen simple de tributación (SIMPLE) y es responsable del IVA, por $10.000.000 más IVA del 19%. Para esta compra no hay una retención de IVA especial reglamentada. ¿Qué retenciones debe practicar la empresa al pagar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Retención en la fuente por renta, según la tarifa de compras, y retención de IVA por $285.000.",
+        "explicacion": "Incorrecta. Acierta en la retención de IVA, pero los contribuyentes del SIMPLE no están sujetos a retención en la fuente a título de renta."
+      },
+      {
+        "id": "B",
+        "texto": "Retención en la fuente por renta, según la tarifa de compras, y retención de IVA por $1.900.000.",
+        "explicacion": "Incorrecta. Practica una retención en renta que no procede para los inscritos en el SIMPLE y retiene todo el IVA, cuando la tarifa aplicable es el 15% del impuesto."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna retención a título de renta, y retención de IVA por $1.900.000, que es todo el impuesto.",
+        "explicacion": "Incorrecta. Acierta en que no hay retención en renta, pero la retención de IVA en esta compra es la general del 15%. La del 100% está prevista para otros casos, como los servicios contratados con no residentes."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna retención a título de renta, y retención de IVA por $285.000, que es el 15% del impuesto.",
+        "explicacion": "Correcta. Los contribuyentes del SIMPLE no están sujetos a retención en la fuente, salvo la de IVA cuando un responsable les compra bienes gravados. El IVA es 10.000.000 × 19% = 1.900.000 y, sin retención especial, se retiene el 15%: $285.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el vendedor está en el SIMPLE y es responsable del IVA, y el comprador es responsable del IVA. Regla: el art. 911 del ET dice que los contribuyentes del SIMPLE no están sujetos a retención en la fuente, sin perjuicio de la retención de IVA del art. 437-2 num. 9, que hace agentes a los responsables que les compran bienes gravados; el art. 437-1 fija el 15% del impuesto si no hay retención especial. Cálculo: 1.900.000 × 15% = 285.000. Conclusión: solo retención de IVA por $285.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TRI-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Gravamen a los movimientos financieros",
+    "subtema": "Exención de retiros de cuentas de ahorro",
+    "formato": "caso",
+    "nivel": ["todos"],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": ["art. 879 num. 1 (modificado por el art. 47 de la Ley 1739 de 2014)", "art. 872 (modificado por el art. 214 de la Ley 1819 de 2016)"],
+    "texto_fuente": "Los retiros efectuados de las cuentas de ahorro, los depósitos electrónicos o tarjetas prepago abiertas o administradas por entidades financieras y/o cooperativas de naturaleza financiera o de ahorro y crédito vigiladas por las Superintendencias Financiera o de Economía Solidaria respectivamente, que no excedan mensualmente de trescientos cincuenta (350) UVT, para lo cual el titular de la cuenta o de la tarjeta prepago deberá indicar ante la respectiva entidad financiera o cooperativa financiera, que dicha cuenta, depósito o tarjeta prepago será la única beneficiada con la exención. [...] La exención se aplicará exclusivamente a una cuenta de ahorros, depósito electrónico o tarjeta prepago por titular y siempre y cuando pertenezca a un único titular. [...] La tarifa del gravamen a los movimientos financieros será del cuatro por mil (4 x 1.000).",
+    "pregunta": "Marta, persona natural, tiene dos cuentas de ahorros a su nombre, sin cotitulares, en entidades vigiladas por la Superintendencia Financiera. Indicó a su banco que la primera es la única beneficiaria de la exención del gravamen a los movimientos financieros (GMF). En marzo de 2026 retiró $12.000.000 de la primera cuenta y $9.000.000 de la segunda. Marta consulta a una técnica de la DIAN cuánto GMF le corresponde por esos retiros. Para el ejercicio, tome una UVT de $50.000. ¿Qué debe responder la técnica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$14.000, porque la exención se aplica sobre el total retirado en el mes de las dos cuentas.",
+        "explicacion": "Incorrecta. La exención opera sobre una sola cuenta por titular. Sumar los retiros de ambas cuentas y restarles el tope da (21.000.000 − 17.500.000) × 4/1000 = 14.000, que no es la regla."
+      },
+      {
+        "id": "B",
+        "texto": "$36.000, porque los retiros de la segunda cuenta pagan el gravamen completo del 4 por mil.",
+        "explicacion": "Correcta. El tope exento es 350 UVT × $50.000 = $17.500.000 al mes y aplica solo a la cuenta indicada al banco, cuyos retiros ($12.000.000) quedan exentos. Los de la segunda cuenta pagan el 4 por mil: 9.000.000 × 4/1000 = $36.000."
+      },
+      {
+        "id": "C",
+        "texto": "$84.000, porque el gravamen se causa sobre todos los retiros de cuentas de ahorros del mes.",
+        "explicacion": "Incorrecta. Desconoce la exención de los retiros de la cuenta indicada al banco, que no superan 350 UVT en el mes: 21.000.000 × 4/1000 = 84.000."
+      },
+      {
+        "id": "D",
+        "texto": "$0, porque lo retirado de cada una de las cuentas en el mes no supera $17.500.000.",
+        "explicacion": "Incorrecta. La exención se aplica a una sola cuenta por titular, la que Marta eligió; la segunda cuenta no tiene exención, aunque sus retiros sean bajos."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Marta retiró $12.000.000 de la cuenta exenta y $9.000.000 de otra cuenta, con una UVT de $50.000. Regla: el art. 879 num. 1 del ET exime los retiros mensuales de hasta 350 UVT de una sola cuenta de ahorros por titular, la que este indique a la entidad, y el art. 872 fija el GMF en el 4 por mil. Cálculo: tope de $17.500.000, así que la primera cuenta queda exenta; 9.000.000 × 0,004 = 36.000. Conclusión: le corresponden $36.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  }
+]

@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "TC-PRI-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Suma con reagrupación: escribir la suma de las unidades sin canjear",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Uso representaciones –principalmente concretas y pictóricas– para explicar el valor de posición en el sistema de numeración decimal. [...] Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+    "pregunta": "En una sede rural multigrado, la docente revisa el cuaderno de Samuel, de 2.º, y encuentra resuelta en columna la suma 37 + 25 = 512. Cuando le pide que explique cómo la hizo, Samuel responde: «7 más 5 son 12, y 3 más 2 son 5». Las sumas en las que no hay que reagrupar las resuelve sin errores. ¿Cuál es la intervención más adecuada para que Samuel supere este error?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarle en el tablero que 12 unidades forman 1 decena y 2 unidades, y mostrarle dónde se anota la decena que se lleva en la suma.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la intervención es expositiva: Samuel recibe la regla de «llevar» sin construir el canje. El estándar pide usar representaciones concretas y pictóricas para explicar el valor de posición; sin ellas, la regla puede quedar como un truco que no comprende."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que, antes de sumar, estime el resultado con números redondos (40 + 25) y que lo compare con el que obtuvo en la columna escrita.",
+        "explicacion": "Incorrecta. La estimación, que el estándar también menciona, le permite notar que 512 no es razonable (debería dar cerca de 65), pero no le muestra por qué ni cómo 12 unidades se convierten en 1 decena y 2 unidades: puede saber que se equivocó sin saber corregirlo."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que arme los dos números con bloques de base diez, junte las unidades y cambie diez de ellas por una decena antes de anotar la suma.",
+        "explicacion": "Correcta. Samuel escribe completo el 12 de las unidades porque no reagrupa. Al canjear con material concreto 10 unidades por 1 decena, ve que 37 + 25 da 6 decenas y 2 unidades, es decir, 62, y puede relacionar ese canje con el registro escrito."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle que represente cada número con cubos sueltos, que los junte todos sobre la mesa y que los cuente de uno en uno para comprobar el resultado.",
+        "explicacion": "Incorrecta. Usa material concreto y llega a 62, pero contar de uno en uno evita justamente el agrupamiento en decenas: Samuel no ve que 12 unidades se canjean por 1 decena y 2 unidades, que es lo que falla en su registro escrito."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Samuel escribe completo el 12 (suma de las unidades) y luego el 5 (suma de las decenas), y obtiene 512 en lugar de 62. El error es conceptual: no reconoce que 12 unidades equivalen a 1 decena y 2 unidades. Regla: el estándar de primero a tercero pide usar representaciones concretas y pictóricas para explicar el valor de posición. Conclusión: canjear con material de base diez 10 unidades por 1 decena y relacionarlo con el registro escrito. Explicar la regla, estimar o contar de uno en uno no construyen ese canje.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Equivalencias de un número en distintas unidades del sistema decimal (canjes)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Uso representaciones –principalmente concretas y pictóricas– para realizar equivalencias de un número en las diferentes unidades del sistema decimal.",
+    "pregunta": "Para trabajar equivalencias con su grupo de 3.º, un docente usa fichas de colores: la verde vale 1.000; la azul, 100; la roja, 10, y la amarilla, 1. Les pide a los estudiantes formar el número 2.306, pero en la caja solo queda una ficha verde; de los demás colores hay todas las que se necesiten. ¿Con cuál de estas combinaciones se forma exactamente 2.306?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1 verde, 12 azules, 10 rojas y 6 amarillas.",
+        "explicacion": "Correcta. 1.000 + 12 × 100 + 10 × 10 + 6 = 1.000 + 1.200 + 100 + 6 = 2.306. El millar que falta se forma con 10 azules, y una de las 13 centenas se canjea por 10 rojas."
+      },
+      {
+        "id": "B",
+        "texto": "1 verde, 13 azules, 6 rojas y ninguna amarilla.",
+        "explicacion": "Incorrecta. 1.000 + 1.300 + 60 = 2.360. Resuelve bien el canje del millar, pero pone las 6 unidades como decenas: confunde el valor de posición de la cifra 6."
+      },
+      {
+        "id": "C",
+        "texto": "1 verde, 3 azules, 10 rojas y 6 amarillas.",
+        "explicacion": "Incorrecta. 1.000 + 300 + 100 + 6 = 1.406. Supone que 10 rojas reemplazan la ficha verde, pero 10 decenas forman una centena, no un millar."
+      },
+      {
+        "id": "D",
+        "texto": "1 verde, 23 azules, ninguna roja y 6 amarillas.",
+        "explicacion": "Incorrecta. 1.000 + 2.300 + 6 = 3.306. Las 23 centenas ya equivalen a 2.300; al sumar además la ficha verde, cuenta dos veces un millar."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: falta una de las dos fichas de 1.000, así que ese millar debe formarse con fichas de menor valor. Regla: el estándar pide realizar equivalencias de un número en las diferentes unidades del sistema decimal (1 millar = 10 centenas; 1 centena = 10 decenas). Cálculo: 1.000 + 12 × 100 + 10 × 10 + 6 = 2.306. Las demás combinaciones dan 2.360, 1.406 y 3.306.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Problemas aditivos de comparación: elegir la operación por una palabra clave",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+    "pregunta": "En una evaluación de 4.º aparece este problema: «Luis tiene 42 canicas; tiene 15 más que Ana. ¿Cuántas canicas tiene Ana?». La mayoría del grupo responde 57 y muestra la suma 42 + 15 bien resuelta. Cuando la docente les pregunta por qué sumaron, responden que el problema dice «más». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarles que aquí «más» indica que Luis es quien tiene la cantidad mayor y que, por eso, las canicas de Ana se calculan restando.",
+        "explicacion": "Incorrecta. El diagnóstico es acertado, pero la docente da hecha la interpretación de este problema: los estudiantes no construyen una forma de analizar la relación entre las cantidades y, ante otro enunciado, volverán a guiarse por las palabras."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que subrayen los datos y la pregunta del problema, y que escriban la operación que van a usar antes de empezar a resolverla.",
+        "explicacion": "Incorrecta. Identificar datos y pregunta es una rutina útil, pero no ayuda a interpretar la relación entre las cantidades: los estudiantes pueden subrayar 42, 15 y «¿cuántas canicas tiene Ana?» y volver a sumar porque leen «más»."
+      },
+      {
+        "id": "C",
+        "texto": "Proponerles primero problemas de cambio con canicas reales, como «Luis tenía 42 y ganó 15», y pasar después a los de comparación.",
+        "explicacion": "Incorrecta. Usa material concreto, pero en problemas de cambio en los que la palabra coincide con la operación («ganó» y sumar), así que no pone en duda la estrategia de guiarse por «más». Aplaza la dificultad real, que está en la comparación."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que dibujen como barras las canicas de Luis y de Ana, marquen la diferencia de 15 y decidan cuál barra es la desconocida.",
+        "explicacion": "Correcta. El diagrama hace visible que Luis tiene la cantidad mayor (42) y que Ana tiene 15 menos: 42 − 15 = 27. Modelar la comparación permite elegir la operación por el sentido de la situación y no por una palabra."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los estudiantes calculan bien, pero suman porque leen «más», aunque la cantidad desconocida (la de Ana) es la menor. Es un problema de comparación con la incógnita en la cantidad de referencia. Regla: el estándar de cuarto a quinto pide resolver problemas aditivos de comparación e igualación, lo que exige analizar la relación entre las cantidades. Conclusión: modelar la comparación con barras; la respuesta es 42 − 15 = 27. Dar la interpretación hecha, subrayar datos o practicar problemas de cambio no atacan ese análisis.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Proporcionalidad inversa frente a variaciones decrecientes que no lo son",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas. [...] Modelo situaciones de dependencia mediante la proporcionalidad directa e inversa.",
+    "pregunta": "Un docente de 5.º prepara ejemplos para su clase de proporcionalidad y escribe cuatro situaciones, cada una con tres pares de valores. ¿En cuál de ellas las dos magnitudes son inversamente proporcionales?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Minutos que lleva vaciándose un tanque y litros que le quedan: 5 min → 500 L; 10 min → 400 L; 15 min → 300 L.",
+        "explicacion": "Incorrecta. A más minutos, menos litros, pero el producto cambia: 5 × 500 = 2.500, 10 × 400 = 4.000 y 15 × 300 = 4.500. Lo constante es la disminución (20 litros por minuto): es una variación lineal decreciente."
+      },
+      {
+        "id": "B",
+        "texto": "Llaves iguales abiertas y minutos que tarda en llenarse un tanque: 2 llaves → 45 min; 3 → 30 min; 5 → 18 min.",
+        "explicacion": "Correcta. El producto se mantiene: 2 × 45 = 3 × 30 = 5 × 18 = 90. Si el número de llaves se multiplica por un factor, el tiempo se divide por ese mismo factor: es proporcionalidad inversa."
+      },
+      {
+        "id": "C",
+        "texto": "Estudiantes que van a una salida y lo que paga cada uno por bus y refrigerio: 10 → $35.000; 20 → $20.000; 30 → $15.000.",
+        "explicacion": "Incorrecta. Lo que paga cada estudiante disminuye, pero 10 × 35.000 = 350.000, 20 × 20.000 = 400.000 y 30 × 15.000 = 450.000. Los datos corresponden a repartir $300.000 del bus más $5.000 fijos de refrigerio por persona; esa parte fija impide que el producto sea constante."
+      },
+      {
+        "id": "D",
+        "texto": "Bultos de abono que se compran y valor total que se paga por ellos: 2 → $90.000; 3 → $135.000; 5 → $225.000.",
+        "explicacion": "Incorrecta. Aquí lo constante es el cociente (90.000 ÷ 2 = 135.000 ÷ 3 = 225.000 ÷ 5 = 45.000): al aumentar una magnitud, la otra aumenta en la misma proporción. Es proporcionalidad directa."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: dos magnitudes son inversamente proporcionales cuando el producto de sus valores correspondientes es constante; no basta con que una disminuya cuando la otra aumenta. Regla: el estándar de cuarto a quinto pide resolver problemas de proporcionalidad directa e inversa y modelar con ellas situaciones de dependencia. Cálculo: llaves × minutos = 90 en los tres pares; en el tanque y en la salida el producto cambia, y en el abono lo constante es el cociente.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-005",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Comparación de fracciones unitarias: comparar los denominadores como números naturales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Describo, comparo y cuantifico situaciones con números, en diferentes contextos y con diversas representaciones. [...] Describo situaciones de medición utilizando fracciones comunes.",
+    "pregunta": "En una clase de 3.º, Valentina afirma que 1/3 es menor que 1/4 «porque 3 es menor que 4», y varios compañeros están de acuerdo con ella. ¿Cuál es la intervención más adecuada de la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirles que doblen dos tiras de papel del mismo largo, una en tres y otra en cuatro partes iguales, y comparen una parte de cada una.",
+        "explicacion": "Correcta. Con dos unidades iguales, los niños ven que al dividir la tira en más partes iguales cada parte queda más pequeña: 1/3 de la tira es mayor que 1/4. La fracción se trabaja como medida de una misma unidad, que es lo que el error ignora."
+      },
+      {
+        "id": "B",
+        "texto": "Explicarles que el denominador indica en cuántas partes iguales se divide la unidad y que, entre más partes, más pequeña es cada una.",
+        "explicacion": "Incorrecta. La explicación es correcta, pero llega hecha: los niños, que están de acuerdo con Valentina, no ven con una representación por qué 1/3 es mayor que 1/4, y pueden convertirla en otra regla que no comprenden."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que ordenen en una cartelera tarjetas con 1/2, 1/3, 1/4 y 1/5, y que discutan en grupo el orden hasta ponerse de acuerdo.",
+        "explicacion": "Incorrecta. Discutir es valioso, pero sin una representación de las fracciones el grupo, que comparte la idea de Valentina, no tiene con qué ponerla a prueba y puede llegar a un acuerdo equivocado, por ejemplo, que 1/2 es la menor de las cuatro fracciones y 1/5 la mayor."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que dibujen a mano alzada dos círculos, que dividan uno en tres partes y el otro en cuatro, y que comparen una parte de cada uno.",
+        "explicacion": "Incorrecta. Usa una representación, pero no asegura que las dos unidades sean del mismo tamaño ni que las partes sean iguales. Con círculos y partes desiguales la comparación no es válida y puede confirmar el error."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Valentina compara los denominadores como si fueran números naturales y no ve que el denominador indica en cuántas partes iguales se divide la unidad. Regla: el estándar de primero a tercero pide describir situaciones de medición con fracciones comunes y comparar cantidades con diversas representaciones, lo que supone comparar partes iguales de una misma unidad. Conclusión: dividir dos unidades del mismo tamaño en 3 y en 4 partes iguales y comparar: 1/3 > 1/4. Una explicación sin representación, una discusión sin material o dibujos desiguales no lo garantizan.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento numérico",
+    "subtema": "Fracción como razón frente a fracción como relación parte-todo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento numérico y sistemas numéricos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte todo, cociente, razones y proporciones.",
+    "pregunta": "En la huerta de una escuela rural, los estudiantes de 5.º siembran 2 surcos de cilantro por cada 3 surcos de lechuga. Este año la huerta tiene 30 surcos y todos son de cilantro o de lechuga. ¿Cuántos surcos son de cilantro y qué fracción de la huerta ocupan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "20 surcos, que ocupan 2/3 de la huerta.",
+        "explicacion": "Incorrecta. Toma la razón 2 a 3 (cilantro frente a lechuga) como si fuera la fracción de la huerta. Con 20 surcos de cilantro quedarían 10 de lechuga, y la razón sería 2 a 1."
+      },
+      {
+        "id": "B",
+        "texto": "18 surcos, que ocupan 3/5 de la huerta.",
+        "explicacion": "Incorrecta. Calcula bien la parte de la lechuga (3/5 de 30 = 18), pero la asigna al cilantro."
+      },
+      {
+        "id": "C",
+        "texto": "6 surcos, que ocupan 1/5 de la huerta.",
+        "explicacion": "Incorrecta. 30 ÷ 5 = 6 es el número de grupos de 5 surcos (2 + 3), no el de surcos de cilantro; falta multiplicar por 2."
+      },
+      {
+        "id": "D",
+        "texto": "12 surcos, que ocupan 2/5 de la huerta.",
+        "explicacion": "Correcta. Cada grupo tiene 2 + 3 = 5 surcos, de los cuales 2 son de cilantro: el cilantro es 2/5 de la huerta. 2/5 de 30 = 12, y quedan 18 de lechuga; 12 a 18 conserva la razón 2 a 3."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: «2 por cada 3» compara una parte con otra parte (razón), no una parte con el todo. Regla: el estándar de cuarto a quinto pide interpretar las fracciones como relación parte-todo, cociente y razón. Cálculo: cada grupo tiene 5 surcos, 2 de cilantro, así que el cilantro es 2/5 de la huerta; 2/5 × 30 = 12 surcos de cilantro y 18 de lechuga (12 : 18 = 2 : 3).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento métrico",
+    "subtema": "Relación entre perímetro y área cuando se fija el perímetro",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Describo y argumento relaciones entre el perímetro y el área de figuras diferentes, cuando se fija una de estas medidas.",
+    "pregunta": "Una sede rural recibió 30 metros de malla para cercar por completo una huerta rectangular. Los estudiantes de 4.º y 5.º proponen tres medidas para el terreno: el grupo 1, 12 m por 3 m; el grupo 2, 9 m por 6 m, y el grupo 3, 10 m por 6 m. Escogerán como mejor la propuesta que deje más área para sembrar. ¿Qué conclusión es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las tres dan la misma área para sembrar, porque todas se cercan con los mismos 30 metros de malla.",
+        "explicacion": "Incorrecta. Supone que a igual perímetro corresponde igual área: 12 × 3 = 36 m² y 9 × 6 = 54 m². Además, la propuesta del grupo 3 necesita 32 m de malla."
+      },
+      {
+        "id": "B",
+        "texto": "La del grupo 3 es la mejor, porque encierra 60 m², más área que cualquiera de las otras dos.",
+        "explicacion": "Incorrecta. Es cierto que 10 × 6 = 60 m², pero su perímetro es 2 × (10 + 6) = 32 m: con 30 m de malla no se puede cercar."
+      },
+      {
+        "id": "C",
+        "texto": "La del grupo 2 es la mejor de las tres, porque encierra 54 m² y su perímetro es igual a la malla.",
+        "explicacion": "Correcta. Su perímetro es 2 × (9 + 6) = 30 m, igual a la malla, y su área, 9 × 6 = 54 m², supera los 36 m² del grupo 1. La del grupo 3 encierra más, pero requiere 32 m."
+      },
+      {
+        "id": "D",
+        "texto": "La del grupo 1 es la mejor, porque es la más larga y deja más espacio para trazar los surcos.",
+        "explicacion": "Incorrecta. Ser más largo no implica tener más área: 12 × 3 = 36 m², la menor de las propuestas que se pueden cercar."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la malla fija el perímetro en 30 m, y la mejor propuesta es la de mayor área. Regla: el estándar de cuarto a quinto pide argumentar relaciones entre perímetro y área cuando se fija una de ellas: con el mismo perímetro, el área puede cambiar. Cálculo: grupo 1, perímetro 30 m y área 36 m²; grupo 2, perímetro 30 m y área 54 m²; grupo 3, perímetro 32 m (no alcanza la malla) y área 60 m². Conclusión: entre las que se pueden cercar, la de mayor área es la del grupo 2.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-008",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento métrico",
+    "subtema": "Uso de la regla: medir desde la marca del 1 y leer marcas en lugar de contar unidades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento métrico y sistemas de medidas, primero a tercer grado"
+    ],
+    "texto_fuente": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto. [...] Analizo y explico sobre la pertinencia de patrones e instrumentos en procesos de medición.",
+    "pregunta": "En 2.º, Matías mide un lápiz con la regla: pone la punta en la marca del 1, ve que el otro extremo llega al 8 y anota que el lápiz mide 8 cm. La docente lo mide con él desde el cero y obtiene 7 cm, pero Matías insiste en que «el lápiz llega al 8». ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Explicarle que la regla empieza a contar en el cero y que, si parte del 1, debe restarle uno al número en el que termina el lápiz.",
+        "explicacion": "Incorrecta. Da un truco que en este caso funciona (8 − 1 = 7), pero no le muestra qué mide la regla: Matías sigue leyendo marcas en lugar de contar unidades de longitud, y el truco no le sirve si el objeto empieza en otra marca."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que alinee cubos de 1 cm a lo largo del lápiz y compare cuántos usó con los espacios entre las marcas de la regla.",
+        "explicacion": "Correcta. Al cubrir el lápiz con 7 cubos de 1 cm, Matías ve que la longitud es el número de unidades que caben, que en la regla corresponde a los espacios entre marcas y no al número que se lee al final. Así comprende el instrumento a partir de la medición con unidades."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que mida el lápiz con clips iguales puestos uno tras otro, sin dejar huecos, y que anote cuántos clips caben a lo largo.",
+        "explicacion": "Incorrecta. Medir con clips es una buena experiencia con patrones arbitrarios, pero no toca el error: Matías no relaciona esas unidades con la regla, donde sigue leyendo el número final en lugar de contar los espacios de 1 cm."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle que mida diez objetos más con la regla y que su compañero de puesto le revise si las medidas quedaron bien tomadas.",
+        "explicacion": "Incorrecta. Más práctica sin comprender la unidad de medida puede repetir el error, y el compañero puede tener la misma confusión."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Matías lee el número donde termina el lápiz aunque empezó en el 1; cree que la regla mide marcas y no unidades de longitud. Regla: el estándar de primero a tercero pide realizar y describir procesos de medición con patrones arbitrarios y estandarizados, y explicar la pertinencia de los instrumentos. Conclusión: iterar una unidad (cubos de 1 cm) y relacionarla con los espacios de la regla: el lápiz mide 8 − 1 = 7 cm. Un truco de resta o una medición con clips sin volver a la regla no corrigen la idea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento espacial",
+    "subtema": "Reconocer una figura en una posición no habitual: los giros conservan sus propiedades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento espacial y sistemas geométricos, primero a tercer grado"
+    ],
+    "texto_fuente": "Reconozco y aplico traslaciones y giros sobre una figura.",
+    "pregunta": "La docente de 3.º dibuja en el tablero un cuadrado apoyado sobre uno de sus vértices. La mayoría de los niños dice que esa figura «ya no es un cuadrado» sino «un rombo». Cuando la dibuja otra vez con un lado sobre la línea de base, todos la reconocen como cuadrado. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dibujar en el tablero el mismo cuadrado en varias posiciones y explicarles que, aunque se vea inclinado, la figura sigue siendo un cuadrado.",
+        "explicacion": "Incorrecta. La afirmación es correcta, pero los niños la reciben sin comprobarla: no verifican qué propiedades se conservan al girar la figura, que es lo que les permitiría reconocerla en cualquier posición."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirles que armen en el geoplano cuadrados de distintos tamaños y que después los copien en papel cuadriculado con un lado sobre la base.",
+        "explicacion": "Incorrecta. Manipular en el geoplano es valioso, pero dibujar los cuadrados con un lado sobre la base refuerza la imagen prototípica que causa el error."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirles que midan con la regla los cuatro lados de la figura inclinada, para que comprueben que todos tienen la misma longitud.",
+        "explicacion": "Incorrecta. Medir es una comprobación activa, pero incompleta: un rombo también tiene cuatro lados iguales, así que la medida no contradice lo que dicen los niños. Falta verificar que los cuatro ángulos son rectos."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirles que recorten un cuadrado y lo giren sobre la mesa, para que comprueben con una escuadra que sus lados y ángulos no cambian.",
+        "explicacion": "Correcta. Al girar la figura y comprobar que conserva cuatro lados iguales y cuatro ángulos rectos, los niños ven que el giro cambia la posición, pero no las propiedades: la figura sigue siendo un cuadrado."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los niños reconocen el cuadrado solo en su posición habitual; lo identifican por su imagen y no por sus propiedades. Regla: el estándar de primero a tercero pide reconocer y aplicar giros sobre una figura, y un giro conserva la longitud de los lados y la amplitud de los ángulos. Conclusión: manipular la figura, girarla y verificar que conserva lados iguales y ángulos rectos. Medir solo los lados no basta, porque un rombo también los tiene iguales.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Matemáticas: pensamiento aleatorio",
+    "subtema": "Elección de la escala de un pictograma",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Matemáticas (MEN, 2006)",
+    "articulos": [
+      "Pensamiento aleatorio y sistemas de datos, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
+    "pregunta": "En una sede rural multigrado, los estudiantes de 4.º y 5.º registraron los litros de leche que cinco fincas de la vereda entregaron un día al tanque de enfriamiento: 20, 12, 24, 18 y 10 litros. Van a hacer un pictograma con estas condiciones: todos los íconos valen lo mismo, ninguna finca tiene más de 6 íconos y solo se usan íconos completos o medios íconos. ¿Qué valor debe tener cada ícono y cuántos le corresponden a la finca de 18 litros?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4 litros; a la finca de 18 litros le corresponden 4 íconos y medio.",
+        "explicacion": "Correcta. Con 4 litros por ícono: 20 → 5; 12 → 3; 24 → 6; 18 → 4½; 10 → 2½. Todos son íconos completos o medios y ninguna finca pasa de 6."
+      },
+      {
+        "id": "B",
+        "texto": "6 litros; a la finca de 18 litros le corresponden 3 íconos completos.",
+        "explicacion": "Incorrecta. Sirve para 12, 18 y 24 litros (2, 3 y 4 íconos), pero 20 ÷ 6 y 10 ÷ 6 no dan íconos completos ni medios (3⅓ y 1⅔)."
+      },
+      {
+        "id": "C",
+        "texto": "2 litros; a la finca de 18 litros le corresponden 9 íconos completos.",
+        "explicacion": "Incorrecta. Todos los datos quedan en íconos completos, pero la finca de 24 litros necesitaría 12 íconos y la de 18, 9: supera el máximo de 6."
+      },
+      {
+        "id": "D",
+        "texto": "5 litros; a la finca de 18 litros le corresponden 3 íconos y medio.",
+        "explicacion": "Incorrecta. 18 ÷ 5 = 3,6, que no es 3½; tampoco 12 ÷ 5 = 2,4 ni 24 ÷ 5 = 4,8 se pueden representar con medios íconos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: al dividir cada dato por el valor del ícono debe resultar un número entero o terminado en medio, y ningún resultado puede pasar de 6. Regla: el estándar de cuarto a quinto pide representar datos en pictogramas, lo que implica elegir una escala adecuada. Cálculo: con 4 litros por ícono resultan 5, 3, 6, 4½ y 2½ íconos; con 2 litros, la finca de 24 necesitaría 12; con 5 o 6 litros, algunos datos no dan íconos completos ni medios.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: comprensión e interpretación textual",
+    "subtema": "Tipología textual: texto expositivo con etapas numeradas frente al instructivo (silueta y propósito)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Comprensión e interpretación textual, primero a tercer grado"
+    ],
+    "texto_fuente": "Reconozco la función social de los diversos tipos de textos que leo. [...] Identifico la silueta o el formato de los textos que leo. [...] Identifico el propósito comunicativo y la idea global de un texto.",
+    "pregunta": "La docente de 2.º lleva a clase este texto, tomado de la cartilla de la huerta escolar:\n\n«¿CÓMO GERMINA UN FRÍJOL?\n1. La semilla absorbe agua de la tierra húmeda y se hincha.\n2. La cubierta se rompe y sale la raíz, que crece hacia abajo.\n3. Después aparece el tallo, que sube buscando la luz.\n4. Por último se abren las primeras hojas, y la planta empieza a fabricar su propio alimento.»\n\nPara analizarlo con los niños, ¿qué tipo de texto es y cuál es su propósito?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Narrativo, porque cuenta en orden lo que le va ocurriendo a la semilla, que es el personaje de la historia.",
+        "explicacion": "Incorrecta. Hay una secuencia, pero no hay narrador, personajes ni conflicto: el texto no cuenta lo que le pasó a una semilla en particular, sino lo que ocurre, en presente, con cualquier fríjol que germina."
+      },
+      {
+        "id": "B",
+        "texto": "Expositivo, porque informa al lector, etapa por etapa, cómo se desarrolla un proceso de la naturaleza.",
+        "explicacion": "Correcta. El texto informa sobre un fenómeno natural: sus verbos están en presente y en tercera persona (absorbe, se rompe, aparece), y la numeración ordena las etapas del proceso, no acciones que deba realizar el lector. Su propósito es dar a conocer cómo germina un fríjol."
+      },
+      {
+        "id": "C",
+        "texto": "Instructivo, porque indica en pasos numerados lo que hay que hacer, en orden, para que germine una semilla.",
+        "explicacion": "Incorrecta. Se deja llevar por la silueta (lista numerada). Un instructivo se dirige al lector para que realice una tarea: suele traer materiales y verbos en imperativo o infinitivo (pon, moja, sembrar). Aquí el lector no tiene que hacer nada: las etapas ocurren en la semilla."
+      },
+      {
+        "id": "D",
+        "texto": "Descriptivo, porque detalla cómo es la semilla de fríjol por fuera y por dentro: su forma, su color y sus partes.",
+        "explicacion": "Incorrecta. El texto no se detiene en cómo es la semilla (forma, color o partes); presenta los cambios sucesivos de un proceso."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: aunque el texto tiene título y una lista numerada, sus verbos están en presente y en tercera persona (absorbe, se rompe, aparece) y no le piden al lector que haga nada: presentan las etapas de un proceso natural. Regla: el estándar de primero a tercero pide identificar la silueta, la función social y el propósito comunicativo de los textos; la silueta por sí sola no define el tipo de texto. Conclusión: es un texto expositivo, cuyo propósito es informar cómo germina un fríjol.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: producción textual",
+    "subtema": "Acentuación: agudas frente a hiatos, graves y monosílabos con tilde diacrítica",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Producción textual, primero a tercer grado"
+    ],
+    "texto_fuente": "Reviso, socializo y corrijo mis escritos, teniendo en cuenta las propuestas de mis compañeros y profesor, y atendiendo algunos aspectos gramaticales (concordancia, tiempos verbales, pronombres) y ortográficos (acentuación, mayúsculas, signos de puntuación) de la lengua castellana.",
+    "pregunta": "Al revisar con su grupo de 3.º los textos que escribieron sobre la cosecha, la docente quiere armar en el tablero un grupo de palabras que lleven tilde por la misma regla que «camión». ¿Cuál de estos grupos cumple esa condición en todas sus palabras?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "río, búho, reír",
+        "explicacion": "Incorrecta. Son palabras con hiato: la tilde marca que la i o la u tónicas no forman diptongo con la vocal vecina. Por las reglas generales no la llevarían: «río» y «búho» son graves terminadas en vocal, y «reír» es aguda terminada en r."
+      },
+      {
+        "id": "B",
+        "texto": "lápiz, árbol, azúcar",
+        "explicacion": "Incorrecta. Son palabras graves (llanas) terminadas en consonante distinta de n o s; llevan tilde por la regla de las graves, no por la de las agudas."
+      },
+      {
+        "id": "C",
+        "texto": "jamás, sofá, después",
+        "explicacion": "Correcta. «Camión» es aguda terminada en n. «Jamás» (aguda en s), «sofá» (aguda en vocal) y «después» (aguda en s) llevan tilde por esa misma regla."
+      },
+      {
+        "id": "D",
+        "texto": "tú, sí, más",
+        "explicacion": "Incorrecta. Son monosílabos, que por regla general no llevan tilde; estos la llevan como tilde diacrítica, para distinguirlos de «tu», «si» y «mas»."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: «camión» lleva tilde por ser aguda terminada en n. Regla: las agudas llevan tilde cuando terminan en n, s o vocal; los hiatos de vocal cerrada tónica, las graves terminadas en otra consonante y los monosílabos diacríticos se tildan por otras reglas. El estándar de primero a tercero pide revisar los escritos atendiendo a la acentuación. Conclusión: solo «jamás, sofá, después» se tildan por la regla de las agudas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: producción textual",
+    "subtema": "Puntuación: coma entre sujeto y verbo, coma ante «y», dos puntos tras preposición y aposición",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Producción textual, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Produzco la primera versión de un texto informativo, atendiendo a requerimientos (formales y conceptuales) de la producción escrita en lengua castellana, con énfasis en algunos aspectos gramaticales (concordancia, tiempos verbales, nombres, pronombres, entre otros) y ortográficos.",
+    "pregunta": "Al revisar los textos informativos que su grupo de 5.º escribió sobre la feria de la vereda, la docente copia en el tablero cuatro oraciones para analizar la puntuación. ¿Cuál de ellas está puntuada correctamente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los estudiantes de quinto grado de la sede, sembraron cilantro y tomate en la huerta.",
+        "explicacion": "Incorrecta. Pone coma entre el sujeto («Los estudiantes de quinto grado de la sede») y el verbo («sembraron»). Aunque el sujeto sea largo y al leer se haga una pausa, esa coma no se escribe."
+      },
+      {
+        "id": "B",
+        "texto": "Para la feria trajimos papa, yuca, plátano, y mazorca de las fincas de la vereda.",
+        "explicacion": "Incorrecta. En una enumeración simple no se escribe coma delante de la «y» que introduce el último elemento: «papa, yuca, plátano y mazorca»."
+      },
+      {
+        "id": "C",
+        "texto": "En la tienda escolar compramos semillas de: cilantro, tomate y cebolla para la huerta.",
+        "explicacion": "Incorrecta. No se escriben dos puntos después de una preposición: lo correcto es «semillas de cilantro, tomate y cebolla»."
+      },
+      {
+        "id": "D",
+        "texto": "Don Jairo, el presidente de la junta, nos prestó las herramientas para la huerta.",
+        "explicacion": "Correcta. «El presidente de la junta» es una aposición explicativa de «Don Jairo» y por eso va entre comas, como cualquier inciso."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: cada oración pone a prueba una regla de puntuación distinta. Regla: los incisos explicativos, como una aposición, van entre comas; en cambio, no se escribe coma entre sujeto y verbo, ni delante de la «y» final de una enumeración simple, ni dos puntos después de una preposición. El estándar de cuarto a quinto pide producir textos atendiendo a los aspectos ortográficos. Conclusión: está bien puntuada la oración con la aposición «el presidente de la junta».",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: literatura",
+    "subtema": "Del cuento al guion teatral: parlamentos por personaje y acotaciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Literatura, primero a tercer grado"
+    ],
+    "texto_fuente": "Diferencio poemas, cuentos y obras de teatro. [...] Participo en la elaboración de guiones para teatro de títeres.",
+    "pregunta": "En una sede multigrado, los niños de 2.º y 3.º van a presentar con títeres este fragmento de un cuento que leyeron:\n\n«La abuela miró por la ventana y vio que se acercaba el aguacero. Preocupada, le dijo a Tomás que recogiera el maíz del patio. Tomás salió corriendo y gritó que ya iba.»\n\nLa docente les pide convertirlo en un guion para el teatro de títeres. ¿Qué cambio es indispensable?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pasar lo que dicen los personajes a parlamentos encabezados por su nombre, y lo que hacen o sienten, a acotaciones.",
+        "explicacion": "Correcta. El texto dramático se organiza en parlamentos atribuidos a cada personaje (ABUELA, TOMÁS) y en acotaciones que indican acciones y estados (mira por la ventana, preocupada). Sin ese cambio el texto sigue siendo un cuento, aunque se represente. Si se quiere conservar un narrador, en el guion pasa a ser un personaje más, con sus propios parlamentos."
+      },
+      {
+        "id": "B",
+        "texto": "Conservar el texto tal como está y repartirlo en fragmentos, para que cada niño lea uno en voz alta mientras mueve su títere.",
+        "explicacion": "Incorrecta. Leer el cuento por partes mientras se mueven los títeres es una lectura dramatizada, no un guion: no hay parlamentos de los personajes ni acotaciones, y quien habla sigue siendo la voz que narra."
+      },
+      {
+        "id": "C",
+        "texto": "Pasar el fragmento a primera persona, de modo que Tomás cuente él mismo lo que ocurrió aquella tarde con su abuela.",
+        "explicacion": "Incorrecta. Cambia el tipo de narrador (de tercera a primera persona), pero el texto sigue siendo una narración contada por alguien."
+      },
+      {
+        "id": "D",
+        "texto": "Escribir las acciones en versos que rimen, para que los títeres puedan decirlas con ritmo y los niños las memoricen.",
+        "explicacion": "Incorrecta. El verso y la rima son rasgos frecuentes de los poemas, pero no convierten un texto en obra de teatro; una obra puede escribirse en prosa."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el fragmento lo cuenta una voz narradora que refiere lo que dicen y hacen los personajes. Regla: el estándar de primero a tercero pide diferenciar poemas, cuentos y obras de teatro y participar en guiones para teatro de títeres; el texto dramático se construye con parlamentos de los personajes y acotaciones. Conclusión: lo indispensable es convertir lo que dicen los personajes en parlamentos con su nombre y lo que hacen en acotaciones; si se conserva un narrador, será un personaje más del guion.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: ética de la comunicación",
+    "subtema": "Elementos de la comunicación: canal frente a código, mensaje y receptor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Ética de la comunicación, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Identifico los elementos constitutivos de la comunicación: interlocutores, código, canal, mensaje y contextos.",
+    "pregunta": "Para citar a las familias a la entrega de boletines, el director rural grabó un aviso en castellano que la emisora comunitaria transmitió varias veces durante el sábado. La docente de 4.º y 5.º usa el caso para analizar los elementos de la comunicación. En esta situación, ¿cuál es el canal?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La lengua castellana hablada en la que se grabó el aviso.",
+        "explicacion": "Incorrecta. La lengua castellana es el código: el sistema de signos que comparten el director y las familias."
+      },
+      {
+        "id": "B",
+        "texto": "La citación a las familias para la entrega de boletines.",
+        "explicacion": "Incorrecta. La citación es el mensaje, es decir, el contenido que se comunica."
+      },
+      {
+        "id": "C",
+        "texto": "Las ondas de radio que llevan la voz grabada a las casas.",
+        "explicacion": "Correcta. El canal es el medio físico por el que circula el mensaje; aquí, la señal de radio de la emisora comunitaria."
+      },
+      {
+        "id": "D",
+        "texto": "Las familias de la vereda que escuchan la emisora el sábado.",
+        "explicacion": "Incorrecta. Las familias son los receptores o interlocutores que interpretan el aviso, no el medio por el que les llega."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el aviso grabado llega a las familias por la radio. Regla: el estándar de cuarto a quinto pide identificar los elementos de la comunicación (interlocutores, código, canal, mensaje y contextos). El canal es el medio físico por el que circula el mensaje; el código, la lengua; el mensaje, el contenido. Conclusión: el canal son las ondas de radio de la emisora.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: producción textual",
+    "subtema": "Escritura inicial (psicogénesis de Ferreiro y Teberosky): escritura silábico-alfabética e intervención sobre los sonidos de cada sílaba",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Producción textual, primero a tercer grado"
+    ],
+    "texto_fuente": "Produzco textos escritos que responden a diversas necesidades comunicativas.",
+    "pregunta": "En un grupo multigrado, la docente le dicta palabras a Sara, de 1.º, para ubicar su escritura en los niveles de construcción descritos por Emilia Ferreiro y Ana Teberosky. Sara escribe «MSA» para mesa, «PTO» para pato y «CBAO» para caballo, y al leer lo que escribió señala las letras mientras pronuncia cada parte de la palabra. ¿Qué muestra esta escritura y cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Escribe una sola letra para cada sílaba de la palabra; conviene que separe los sonidos de cada sílaba y arme las palabras con letras móviles.",
+        "explicacion": "Incorrecta. La intervención sería útil, pero el diagnóstico no corresponde: si escribiera una letra por sílaba pondría, por ejemplo, «ES» o «MA» para mesa. Sara, en cambio, escribe sílabas completas como «SA», «TO» y «BA»."
+      },
+      {
+        "id": "B",
+        "texto": "Escribe unas sílabas con una letra y otras completas; conviene que separe los sonidos de cada sílaba y arme las palabras con letras móviles.",
+        "explicacion": "Correcta. En «MSA», «me» se escribe con una letra y «sa» con dos; lo mismo ocurre en «PTO» y «CBAO». Es la escritura silábico-alfabética descrita por Ferreiro y Teberosky: Sara ya relaciona letras con sonidos, pero no analiza todos los sonidos de cada sílaba. Separarlos oralmente y armar las palabras con letras móviles la ayuda a llegar a la escritura alfabética."
+      },
+      {
+        "id": "C",
+        "texto": "Escribe unas sílabas con una letra y otras completas; conviene que cuente con palmadas las sílabas de cada palabra antes de escribirla.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto, pero la intervención no apunta a lo que falta: Sara ya segmenta las palabras en sílabas (escribe algo por cada una). Lo que no analiza son los sonidos dentro de la sílaba, y contar sílabas con palmadas no la lleva a hacerlo."
+      },
+      {
+        "id": "D",
+        "texto": "Escribe una sola letra para cada sílaba de la palabra; conviene que cuente con palmadas las sílabas de cada palabra antes de escribirla.",
+        "explicacion": "Incorrecta. Falla en el diagnóstico, porque Sara escribe varias sílabas completas, y en la intervención, porque contar sílabas con palmadas trabaja una segmentación que ella ya hace, no el análisis de los sonidos de cada sílaba."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Sara escribe unas sílabas con una sola letra (M por «me», P por «pa», C por «ca») y otras completas (SA, TO, BA). En los niveles de Ferreiro y Teberosky es la escritura silábico-alfabética: ya relaciona letras con sonidos y segmenta en sílabas, pero no analiza todos los sonidos de cada sílaba. Regla: el estándar de primero a tercero apunta a producir textos escritos, lo que exige llegar a la escritura alfabética. Conclusión: trabajar la separación de los sonidos de cada sílaba con letras móviles.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-017",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: producción textual",
+    "subtema": "Inversión de letras (b y d) en el aprendizaje inicial de la escritura",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Producción textual, primero a tercer grado"
+    ],
+    "texto_fuente": "Produzco textos escritos que responden a diversas necesidades comunicativas.",
+    "pregunta": "En marzo, la docente de 2.º nota que Juan Pablo, de 7 años, a veces escribe «dola» por bola y «bedo» por dedo, aunque en la mayoría de las palabras usa bien la b y la d. Lee con seguridad para su edad y en lo demás su escritura avanza como la del grupo. ¿Cuál es la decisión más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Remitirlo de inmediato a un especialista, pues invertir letras a esa edad basta para sospechar un trastorno como la dislexia.",
+        "explicacion": "Incorrecta. Las inversiones ocasionales de letras de forma especular, como b y d, son frecuentes a esta edad mientras se aprende a escribir; por sí solas no indican dislexia. La remisión se considera si persisten pese al trabajo en el aula o si aparecen otras dificultades."
+      },
+      {
+        "id": "B",
+        "texto": "Marcarle cada b o d invertida, pues es un error frecuente a esa edad, y pedirle que reescriba varias veces la palabra corregida.",
+        "explicacion": "Incorrecta. Reconoce que el error es frecuente, pero corregir y hacer copiar la palabra no le da una referencia para distinguir las letras (una palabra clave, el sentido del trazo, la comparación de formas): puede copiarla bien y volver a confundirlas cuando escribe solo."
+      },
+      {
+        "id": "C",
+        "texto": "Hacer con él ejercicios de lateralidad con el cuerpo, pues la confusión viene de no distinguir derecha e izquierda, y dejar las letras para después.",
+        "explicacion": "Incorrecta. Atribuye la confusión a un problema general de lateralidad que el caso no muestra: Juan Pablo lee con seguridad y solo confunde dos letras de forma especular. Los ejercicios con el cuerpo, separados de las letras, no atienden esa confusión puntual y aplazan el trabajo que la resuelve."
+      },
+      {
+        "id": "D",
+        "texto": "Trabajar con él la diferencia entre b y d con apoyos visuales y de movimiento, pues es frecuente a esa edad, y seguir su evolución.",
+        "explicacion": "Correcta. Es una dificultad frecuente en esta etapa: se trabaja la discriminación de las letras con apoyos (palabras clave, trazo con el cuerpo, comparación de formas) y se hace seguimiento para decidir si hace falta otra ayuda."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las inversiones son ocasionales, se dan entre letras de forma especular (b y d) y el niño, de 7 años, avanza en lectura y escritura. Regla: el estándar de primero a tercero apunta a producir textos escritos; en esta etapa confundir b y d es frecuente y se aborda con trabajo de discriminación de esas letras y seguimiento. Conclusión: intervenir en el aula con apoyos visuales y de movimiento centrados en las letras, y registrar la evolución antes de pensar en una remisión. La copia repetida o los ejercicios generales de lateralidad no atienden la confusión.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: comprensión e interpretación textual",
+    "subtema": "Comprensión de la estructura del relato: mapa del cuento frente a anticipar, recontar o explicar la estructura",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Comprensión e interpretación textual, primero a tercer grado"
+    ],
+    "texto_fuente": "Comprendo textos que tienen diferentes formatos y finalidades. [...] Elaboro resúmenes y esquemas que dan cuenta del sentido de un texto.",
+    "pregunta": "En 3.º, Manuela lee en voz alta un cuento corto con fluidez, buena velocidad y entonación adecuada; antes de empezar, hace predicciones acertadas a partir del título y las imágenes, y al terminar recuerda muchos detalles. Sin embargo, no sabe explicar qué le impedía al personaje principal conseguir lo que quería ni cómo terminó la historia, y lo mismo le ocurre con otros cuentos. ¿Cuál es la intervención más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construir con ella, durante la lectura, un mapa del cuento con el protagonista, el conflicto, sus intentos por superarlo y el desenlace.",
+        "explicacion": "Correcta. Manuela decodifica, anticipa y recuerda detalles, pero no organiza el relato alrededor del conflicto y su resolución. El mapa del cuento es un esquema que la lleva a identificar ese eje mientras lee y a distinguir lo central de los detalles."
+      },
+      {
+        "id": "B",
+        "texto": "Pedirle que, al terminar cada cuento, vuelva a contarlo con sus palabras y enumere en orden todos los hechos que recuerde de la historia.",
+        "explicacion": "Incorrecta. Recontar es una actividad útil, pero enumerar los hechos es lo que Manuela ya hace (recuerda muchos detalles); no la lleva a jerarquizarlos ni a identificar el conflicto y su resolución."
+      },
+      {
+        "id": "C",
+        "texto": "Pedirle que anticipe el contenido a partir de la portada y los dibujos, y pausar la lectura para que compruebe lo que había anticipado.",
+        "explicacion": "Incorrecta. Es una buena estrategia de comprensión, pero Manuela ya hace predicciones acertadas: la intervención trabaja lo que domina y no lo que le falta, que es reconstruir la estructura del relato."
+      },
+      {
+        "id": "D",
+        "texto": "Explicarle que todo cuento tiene inicio, nudo y desenlace, y pedirle que copie en el cuaderno esa definición con un ejemplo de cada parte.",
+        "explicacion": "Incorrecta. Apunta a la estructura del relato, pero de forma expositiva: copiar la definición de inicio, nudo y desenlace no le enseña a encontrar esos elementos en los cuentos que lee."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Manuela lee con fluidez, anticipa bien y recuerda detalles, pero no identifica la dificultad del personaje principal ni el final: su vacío está en la estructura del relato (conflicto y resolución). Regla: el estándar de primero a tercero pide comprender textos de diferentes formatos y elaborar resúmenes y esquemas que den cuenta de su sentido. Conclusión: construir con ella, durante la lectura, un mapa del cuento (protagonista, conflicto, intentos y desenlace).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: producción textual",
+    "subtema": "Producción oral de instrucciones frente a relatar, repetir o representar sin palabras",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Producción textual, primero a tercer grado"
+    ],
+    "texto_fuente": "Produzco textos orales que responden a distintos propósitos comunicativos. [...] Elaboro instrucciones que evidencian secuencias lógicas en la realización de acciones.",
+    "pregunta": "La docente de una sede multigrado va a trabajar con los niños de 2.º y 3.º el subproceso de los estándares de lenguaje referido a la elaboración de instrucciones, dentro de la producción de textos orales. Usará como contexto la siembra de semillas en la huerta escolar. ¿Cuál actividad es la más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que aprendan de memoria los pasos de la siembra que la docente les dicta y los repitan en voz alta a los niños de 1.º en la huerta.",
+        "explicacion": "Incorrecta. Es una actividad oral con un público real, pero los niños repiten un texto que no elaboraron: no tienen que decidir qué pasos incluir ni en qué orden decirlos."
+      },
+      {
+        "id": "B",
+        "texto": "Que cada niño cuente al grupo cómo sembró una semilla con su familia el fin de semana y qué le pasó a la planta en los días siguientes.",
+        "explicacion": "Incorrecta. Los niños producen un texto oral propio, pero es un relato de hechos pasados (otro subproceso: describir eventos de manera secuencial), no una instrucción para que otro realice una tarea."
+      },
+      {
+        "id": "C",
+        "texto": "Que cada niño le explique a un compañero, sin hacer gestos, cómo sembrar una semilla, y que este la siembre guiado por lo que oye.",
+        "explicacion": "Correcta. El niño produce oralmente un texto instructivo propio, y el compañero, al seguirlo sin más ayuda que las palabras, le muestra si los pasos están completos y en un orden lógico. La tarea tiene un propósito comunicativo real."
+      },
+      {
+        "id": "D",
+        "texto": "Que por grupos representen con mímica, en orden, los pasos de la siembra, para que los compañeros adivinen qué acción están haciendo.",
+        "explicacion": "Incorrecta. Trabaja la secuencia de acciones, pero sin lenguaje oral: la mímica no exige producir un texto con instrucciones."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: se busca que los niños elaboren instrucciones en un texto oral. Regla: el estándar de primero a tercero pide producir textos orales con distintos propósitos y, entre sus subprocesos, elaborar instrucciones que evidencien secuencias lógicas; es distinto de relatar hechos en orden, repetir un texto ajeno o representar sin palabras. Conclusión: la actividad adecuada es que el niño le explique oralmente a un compañero cómo hacer algo y este lo ejecute; así produce la instrucción y comprueba si es clara y completa.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PRI-020",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Primaria",
+    "tema": "Lenguaje: producción textual",
+    "subtema": "Proceso de escritura: qué hacer después de la primera versión de un texto informativo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias del Lenguaje (MEN, 2006)",
+    "articulos": [
+      "Producción textual, cuarto a quinto grado"
+    ],
+    "texto_fuente": "Produzco textos escritos que responden a diversas necesidades comunicativas y que siguen un procedimiento estratégico para su elaboración. [...] Reescribo el texto a partir de las propuestas de corrección formuladas por mis compañeros y por mí.",
+    "pregunta": "Los estudiantes de 5.º escribieron la primera versión de un texto informativo sobre los cultivos de la vereda, que se publicará en el periódico mural de la sede. Al leerlas, la docente encuentra ideas repetidas, párrafos sin un orden claro y algunos errores de concordancia y de ortografía. ¿Qué debe hacer a continuación, de acuerdo con el estándar de producción escrita de cuarto a quinto grado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Formar parejas para que cada uno marque los errores de ortografía y de concordancia del texto del otro, y pedir que lo pasen en limpio.",
+        "explicacion": "Incorrecta. Involucra a los compañeros, pero solo en los errores superficiales: deja intactas las ideas repetidas y los párrafos sin orden, y pasar en limpio no es reescribir el texto a partir de las propuestas de corrección."
+      },
+      {
+        "id": "B",
+        "texto": "Organizar una revisión por parejas con una guía sobre contenido, organización y corrección, y pedir a cada uno que reescriba su texto.",
+        "explicacion": "Correcta. La guía permite revisar tanto la repetición y el orden de las ideas como la concordancia y la ortografía; con los aportes del compañero y su propia revisión, cada estudiante produce una nueva versión, como lo pide el procedimiento estratégico del estándar."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que cada estudiante lea su texto al grupo y que los compañeros digan qué les gustó, y luego publicar los textos en el periódico mural.",
+        "explicacion": "Incorrecta. Socializar el texto es valioso, pero decir lo que gustó no es una propuesta de corrección y nadie reescribe: los problemas de organización, concordancia y ortografía llegan al mural."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar en el tablero la estructura del texto informativo y las reglas de concordancia, y pedirles que escriban otro texto sobre un tema nuevo.",
+        "explicacion": "Incorrecta. La explicación puede ser útil, pero abandona la primera versión: el estándar pide reescribir ese texto a partir de las propuestas de corrección, no empezar otro."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: hay una primera versión con problemas de organización (ideas repetidas, párrafos sin orden) y de superficie (concordancia, ortografía). Regla: el estándar de cuarto a quinto pide producir textos con un procedimiento estratégico y reescribirlos a partir de las propuestas de corrección de los compañeros y propias. Conclusión: organizar la revisión entre pares con criterios que cubran ambos tipos de problemas y pedir la reescritura antes de publicar. Revisar solo la ortografía, comentar sin corregir o empezar otro texto no cumplen ese procedimiento.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

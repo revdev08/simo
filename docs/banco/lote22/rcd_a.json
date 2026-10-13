@@ -1,0 +1,942 @@
+[
+  {
+    "id": "TC-RCD-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Porcentaje de un total que reúne varias filas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "La coordinación de un colegio clasificó a los 80 estudiantes de grado octavo según el porcentaje de clases a las que asistieron en el primer semestre:\n\nAsistencia en el semestre | Estudiantes\n95% o más | 35\nDe 90% a menos de 95% | 25\nDe 80% a menos de 90% | 14\nMenos de 80% | 6\n\n¿Qué porcentaje de los estudiantes de octavo asistió por lo menos al 90% de las clases?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "31,3%",
+        "explicacion": "Incorrecta. Toma solo la fila «De 90% a menos de 95%» (25 ÷ 80 = 31,25%) y deja por fuera a los 35 estudiantes que asistieron al 95% o más, que también cumplen la condición."
+      },
+      {
+        "id": "B",
+        "texto": "43,8%",
+        "explicacion": "Incorrecta. Toma solo la fila «95% o más» (35 ÷ 80 = 43,75%). «Por lo menos el 90%» incluye también a los 25 estudiantes del rango de 90% a menos de 95%."
+      },
+      {
+        "id": "C",
+        "texto": "75,0%",
+        "explicacion": "Correcta. «Por lo menos el 90%» reúne dos filas: 35 + 25 = 60 estudiantes, y 60 ÷ 80 = 0,75, es decir, el 75%."
+      },
+      {
+        "id": "D",
+        "texto": "92,5%",
+        "explicacion": "Incorrecta. Suma también la fila «De 80% a menos de 90%» (35 + 25 + 14 = 74; 74 ÷ 80 = 92,5%). Esos 14 estudiantes asistieron a menos del 90% de las clases."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: «por lo menos el 90%» abarca las filas «95% o más» (35 estudiantes) y «De 90% a menos de 95%» (25). Cálculo: 35 + 25 = 60; 60 ÷ 80 = 0,75. Conclusión: el 75% de los estudiantes de octavo asistió al menos al 90% de las clases. Los errores típicos son tomar una sola fila o sumar también la de 80% a menos de 90%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Tabla de doble entrada: elegir la base del porcentaje (fila o columna)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio publicó la matrícula oficial de 2025 por zona y nivel:\n\nNivel | Zona urbana | Zona rural | Total\nPreescolar | 320 | 180 | 500\nPrimaria | 1.560 | 1.120 | 2.680\nSecundaria | 1.480 | 540 | 2.020\nMedia | 640 | 160 | 800\nTotal | 4.000 | 2.000 | 6.000\n\n¿Qué porcentaje de los estudiantes de la zona rural está matriculado en secundaria?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "9,0%",
+        "explicacion": "Incorrecta. Divide los 540 estudiantes rurales de secundaria entre la matrícula total del municipio (6.000). Ese 9% es su peso en todo el municipio, no dentro de la zona rural."
+      },
+      {
+        "id": "B",
+        "texto": "26,7%",
+        "explicacion": "Incorrecta. Divide 540 entre el total de la fila de secundaria (2.020). Así se obtiene qué parte de la secundaria es rural, que es otra pregunta: la base debe ser el total de la zona rural."
+      },
+      {
+        "id": "C",
+        "texto": "27,0%",
+        "explicacion": "Correcta. La base es la matrícula de la zona rural: 540 ÷ 2.000 = 0,27, es decir, el 27%."
+      },
+      {
+        "id": "D",
+        "texto": "36,5%",
+        "explicacion": "Incorrecta. Compara la secundaria rural con la urbana (540 ÷ 1.480 = 36,5%). Esa razón no dice qué parte de los estudiantes rurales está en secundaria."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la pregunta se refiere a los estudiantes de la zona rural, así que la base es el total de esa columna (2.000), no el de la fila de secundaria ni el del municipio. Cálculo: 540 ÷ 2.000 = 0,27. Conclusión: el 27% de los estudiantes rurales está en secundaria. Con la base de la fila (2.020) se obtendría el 26,7%, que responde qué parte de la secundaria es rural.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Comparar razones entre filas (ocupación frente a cantidad)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio contrata el transporte escolar de cuatro rutas rurales. Para el segundo semestre reportó estos datos:\n\nRuta | Puestos del vehículo | Estudiantes inscritos\nEl Roble | 60 | 51\nLas Palmeras | 48 | 46\nSanta Rita | 12 | 11\nLas Brisas | 15 | 12\n\nLa secretaría asignará un vehículo más grande a la ruta que tenga el mayor porcentaje de ocupación. ¿Cuál es esa ruta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Roble",
+        "explicacion": "Incorrecta. Es la ruta con más estudiantes inscritos (51), pero ocupa el 85% de sus puestos (51 ÷ 60). Tener más inscritos no significa tener mayor ocupación."
+      },
+      {
+        "id": "B",
+        "texto": "Las Brisas",
+        "explicacion": "Incorrecta. Resulta de invertir la razón: puestos ÷ inscritos = 15 ÷ 12 = 1,25, el valor más alto. Esa razón mide la holgura, no la ocupación: Las Brisas es la ruta menos ocupada (80%)."
+      },
+      {
+        "id": "C",
+        "texto": "Santa Rita",
+        "explicacion": "Incorrecta. Es la ruta con menos puestos libres (1), pero su ocupación es 11 ÷ 12 = 91,7%, menor que la de Las Palmeras (95,8%), que tiene 2 puestos libres en un vehículo mucho más grande."
+      },
+      {
+        "id": "D",
+        "texto": "Las Palmeras",
+        "explicacion": "Correcta. Su ocupación es 46 ÷ 48 = 95,8%, la más alta: Santa Rita tiene 91,7%; El Roble, 85%, y Las Brisas, 80%."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el porcentaje de ocupación es inscritos ÷ puestos de cada vehículo. Cálculo: El Roble 51 ÷ 60 = 85%; Las Palmeras 46 ÷ 48 = 95,8%; Santa Rita 11 ÷ 12 = 91,7%; Las Brisas 12 ÷ 15 = 80%. Conclusión: Las Palmeras es la ruta más ocupada, aunque no tiene el mayor número de inscritos ni el menor número de puestos libres.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Cambio de representación",
+    "subtema": "De una tabla a un gráfico circular (grados de un sector)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio contrata el transporte escolar de cuatro rutas rurales. Para el segundo semestre reportó estos datos:\n\nRuta | Puestos del vehículo | Estudiantes inscritos\nEl Roble | 60 | 51\nLas Palmeras | 48 | 46\nSanta Rita | 12 | 11\nLas Brisas | 15 | 12\n\nPara el informe de gestión, la secretaría hará un gráfico circular con la distribución de los estudiantes transportados según la ruta. ¿Cuántos grados medirá el sector de El Roble?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "42,5 grados",
+        "explicacion": "Incorrecta. 42,5 es el porcentaje de estudiantes transportados que corresponde a El Roble (51 ÷ 120 = 42,5%); falta convertirlo a grados: 0,425 × 360 = 153."
+      },
+      {
+        "id": "B",
+        "texto": "153 grados",
+        "explicacion": "Correcta. Los 120 estudiantes transportados (51 + 46 + 11 + 12) ocupan los 360 grados del círculo: 51 ÷ 120 × 360 = 153."
+      },
+      {
+        "id": "C",
+        "texto": "160 grados",
+        "explicacion": "Incorrecta. Usa la columna de puestos: 60 de los 135 puestos (60 ÷ 135 × 360 = 160). El gráfico es de estudiantes transportados, no de capacidad de los vehículos."
+      },
+      {
+        "id": "D",
+        "texto": "306 grados",
+        "explicacion": "Incorrecta. Multiplica por 360 la ocupación de la ruta (51 ÷ 60 = 85%; 0,85 × 360 = 306). El sector muestra la parte de El Roble en el total de estudiantes, no qué tan lleno va su vehículo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el gráfico reparte el total de estudiantes inscritos en las cuatro rutas: 51 + 46 + 11 + 12 = 120. Cálculo: El Roble tiene 51 de 120 estudiantes, es decir, el 42,5%; 0,425 × 360 = 153. Conclusión: el sector de El Roble mide 153 grados.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Porcentaje de cumplimiento frente a cantidad faltante",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "El comité de alimentación escolar de una institución educativa revisó la entrega de raciones del Programa de Alimentación Escolar (PAE) en su sede principal:\n\nMes | Raciones programadas | Raciones entregadas\nJulio | 3.200 | 3.040\nAgosto | 4.000 | 3.640\nSeptiembre | 4.800 | 4.416\nOctubre | 4.400 | 4.224\n\n¿En qué mes fue más bajo el porcentaje de cumplimiento de las entregas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En julio",
+        "explicacion": "Incorrecta. Julio es el mes con menos raciones entregadas (3.040), pero también tuvo menos programadas: cumplió el 95% (3.040 ÷ 3.200)."
+      },
+      {
+        "id": "B",
+        "texto": "En agosto",
+        "explicacion": "Correcta. Cumplimiento = entregadas ÷ programadas. Agosto: 3.640 ÷ 4.000 = 91%, frente a 95% en julio, 92% en septiembre y 96% en octubre."
+      },
+      {
+        "id": "C",
+        "texto": "En septiembre",
+        "explicacion": "Incorrecta. Septiembre dejó más raciones sin entregar (4.800 − 4.416 = 384, frente a 360 en agosto), pero sobre una programación mayor: cumplió el 92%. Mirar solo el faltante ignora la base."
+      },
+      {
+        "id": "D",
+        "texto": "En octubre",
+        "explicacion": "Incorrecta. Resulta de invertir la razón (programadas ÷ entregadas) y escoger el valor más bajo. Octubre es, en realidad, el mes de mayor cumplimiento (4.224 ÷ 4.400 = 96%)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el cumplimiento compara lo entregado con lo programado en cada mes. Cálculo: julio 3.040 ÷ 3.200 = 95%; agosto 3.640 ÷ 4.000 = 91%; septiembre 4.416 ÷ 4.800 = 92%; octubre 4.224 ÷ 4.400 = 96%. Conclusión: agosto tuvo el cumplimiento más bajo, aunque septiembre dejó más raciones sin entregar (384 frente a 360).",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Cambio de representación",
+    "subtema": "De una tabla a una frase de resumen",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "El comité de alimentación escolar de una institución educativa revisó la entrega de raciones del Programa de Alimentación Escolar (PAE) en su sede principal:\n\nMes | Raciones programadas | Raciones entregadas\nJulio | 3.200 | 3.040\nAgosto | 4.000 | 3.640\nSeptiembre | 4.800 | 4.416\nOctubre | 4.400 | 4.224\n\nLa rectora debe incluir en el informe al consejo directivo una frase que resuma estos datos. ¿Cuál de estas frases es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las raciones que no se entregaron en los cuatro meses equivalen al 7,0% de lo programado.",
+        "explicacion": "Incorrecta. Las raciones no entregadas suman 1.080, pero esta frase las divide entre las entregadas (1.080 ÷ 15.320 = 7,0%). Sobre lo programado son 1.080 ÷ 16.400 = 6,6%."
+      },
+      {
+        "id": "B",
+        "texto": "Octubre tuvo el mayor cumplimiento y también la mayor cantidad de raciones entregadas.",
+        "explicacion": "Incorrecta. Octubre sí tuvo el mayor cumplimiento (96%), pero la mayor cantidad entregada fue la de septiembre (4.416, frente a 4.224). Confunde un cumplimiento alto con un volumen alto."
+      },
+      {
+        "id": "C",
+        "texto": "El cumplimiento cayó de julio a agosto y volvió a caer de agosto a septiembre.",
+        "explicacion": "Incorrecta. Lo que creció mes a mes fue el número de raciones sin entregar (160, 360 y 384), pero el cumplimiento pasó de 95% en julio a 91% en agosto y subió a 92% en septiembre."
+      },
+      {
+        "id": "D",
+        "texto": "Si se suman los cuatro meses, se entregó el 93,4% de las raciones que se habían programado.",
+        "explicacion": "Correcta. Hay que sumar antes de dividir: entregadas 3.040 + 3.640 + 4.416 + 4.224 = 15.320; programadas 3.200 + 4.000 + 4.800 + 4.400 = 16.400; 15.320 ÷ 16.400 = 93,4%."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el cumplimiento del período se calcula con los totales. Cálculo: 15.320 ÷ 16.400 = 93,4%; las 1.080 raciones faltantes son el 6,6% de lo programado (no el 7,0%). Además, la mayor entrega fue la de septiembre (4.416) y el cumplimiento subió de agosto (91%) a septiembre (92%). Conclusión: solo es correcta la frase del 93,4%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Porcentajes y variaciones",
+    "subtema": "Número de estudiantes a partir de porcentajes por nivel de desempeño",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Una institución educativa revisó los resultados de quinto grado en la prueba Saber de matemáticas. La tabla muestra cuántos estudiantes presentaron la prueba cada año y qué porcentaje de ellos quedó en cada nivel de desempeño:\n\nAño | Evaluados | Insuficiente | Mínimo | Satisfactorio | Avanzado\n2024 | 80 | 30% | 40% | 20% | 10%\n2025 | 120 | 25% | 40% | 25% | 10%\n\n¿Cuántos estudiantes de 2025 quedaron en los niveles satisfactorio o avanzado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "28 estudiantes",
+        "explicacion": "Incorrecta. Aplica el 35% de 2025 (25% + 10%) a los 80 evaluados de 2024: 0,35 × 80 = 28. Los porcentajes de una fila se aplican al número de evaluados de esa misma fila."
+      },
+      {
+        "id": "B",
+        "texto": "30 estudiantes",
+        "explicacion": "Incorrecta. Cuenta solo el nivel satisfactorio (25% de 120 = 30) y deja por fuera a los 12 estudiantes del nivel avanzado."
+      },
+      {
+        "id": "C",
+        "texto": "42 estudiantes",
+        "explicacion": "Correcta. Satisfactorio y avanzado suman 25% + 10% = 35% de los 120 evaluados de 2025: 0,35 × 120 = 42."
+      },
+      {
+        "id": "D",
+        "texto": "90 estudiantes",
+        "explicacion": "Incorrecta. Incluye también el nivel mínimo (40% + 25% + 10% = 75%; 0,75 × 120 = 90). El nivel mínimo no es satisfactorio ni avanzado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: en 2025 se evaluaron 120 estudiantes, y los niveles pedidos son satisfactorio (25%) y avanzado (10%). Cálculo: 25% + 10% = 35%; 0,35 × 120 = 42. Conclusión: 42 estudiantes quedaron en satisfactorio o avanzado. Sumar esos dos porcentajes es válido porque se refieren al mismo grupo de 120 estudiantes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Porcentajes y variaciones",
+    "subtema": "Un porcentaje que baja con una cantidad que sube (bases distintas)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Una institución educativa revisó los resultados de quinto grado en la prueba Saber de matemáticas. La tabla muestra cuántos estudiantes presentaron la prueba cada año y qué porcentaje de ellos quedó en cada nivel de desempeño:\n\nAño | Evaluados | Insuficiente | Mínimo | Satisfactorio | Avanzado\n2024 | 80 | 30% | 40% | 20% | 10%\n2025 | 120 | 25% | 40% | 25% | 10%\n\nEn el consejo académico, la coordinadora afirmó: «En 2025 hubo menos estudiantes de quinto en el nivel insuficiente que en 2024». ¿Es correcta su afirmación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí: el porcentaje bajó 5 puntos, así que hubo 5 estudiantes menos en ese nivel.",
+        "explicacion": "Incorrecta. Confunde puntos porcentuales con estudiantes. Además, los porcentajes de cada año se calculan sobre bases distintas: 80 evaluados en 2024 y 120 en 2025."
+      },
+      {
+        "id": "B",
+        "texto": "Sí: el porcentaje pasó de 30% a 25%, así que hubo un 16,7% menos de estudiantes.",
+        "explicacion": "Incorrecta. Esa reducción relativa del porcentaje (5 ÷ 30) solo se trasladaría al número de estudiantes si los evaluados fueran los mismos los dos años, pero pasaron de 80 a 120."
+      },
+      {
+        "id": "C",
+        "texto": "No: en ese nivel hubo 32 estudiantes en 2024 y 48 en 2025, dieciséis más.",
+        "explicacion": "Incorrecta. Lee la columna equivocada: 32 y 48 son los estudiantes del nivel mínimo (40% de 80 y 40% de 120), no los del nivel insuficiente."
+      },
+      {
+        "id": "D",
+        "texto": "No: en ese nivel hubo 24 estudiantes en 2024 y 30 en 2025, seis más.",
+        "explicacion": "Correcta. 30% de 80 = 24 y 25% de 120 = 30. El porcentaje bajó, pero el número de estudiantes en insuficiente subió, porque en 2025 se evaluaron 40 estudiantes más."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los porcentajes de cada año se calculan sobre un número distinto de evaluados (80 en 2024 y 120 en 2025). Cálculo: 30% de 80 = 24; 25% de 120 = 30. Conclusión: la afirmación es incorrecta. El porcentaje en insuficiente bajó, pero el número de estudiantes en ese nivel subió de 24 a 30.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tendencias y proyecciones",
+    "subtema": "Describir la tendencia de una serie a partir de sus variaciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio presentó un gráfico de líneas con la matrícula de primaria de sus sedes rurales. Estos son los valores del gráfico:\n\nAño | Matrícula rural de primaria\n2020 | 3.000\n2021 | 2.960\n2022 | 2.900\n2023 | 2.820\n2024 | 2.720\n2025 | 2.600\n\n¿Cuál de estas frases describe correctamente la tendencia del gráfico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La matrícula bajó cada año, y cada caída anual fue mayor que la del año anterior.",
+        "explicacion": "Correcta. Las caídas anuales fueron de 40, 60, 80, 100 y 120 estudiantes: la matrícula baja todos los años y cada año baja más. En el gráfico, la línea desciende con una pendiente cada vez más pronunciada."
+      },
+      {
+        "id": "B",
+        "texto": "La matrícula bajó cada año, pero cada caída fue menor que la del año anterior.",
+        "explicacion": "Incorrecta. Confunde los valores, que sí son cada vez menores, con las caídas, que son cada vez mayores (de 40 a 120 estudiantes por año)."
+      },
+      {
+        "id": "C",
+        "texto": "La matrícula bajó cada año en la misma cantidad: 80 estudiantes por año.",
+        "explicacion": "Incorrecta. 80 es el promedio de las caídas ((3.000 − 2.600) ÷ 5 = 80), pero las caídas no fueron iguales: fueron 40, 60, 80, 100 y 120."
+      },
+      {
+        "id": "D",
+        "texto": "La matrícula bajó cada año en el mismo porcentaje: un 2,7% por año.",
+        "explicacion": "Incorrecta. Reparte por igual entre los cinco años la caída total del 13,3% (400 ÷ 3.000). Las caídas porcentuales fueron crecientes: del 1,3% en 2021 al 4,4% en 2025."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay que mirar las diferencias entre años consecutivos, no solo los valores. Cálculo: 3.000 − 2.960 = 40; 2.960 − 2.900 = 60; 2.900 − 2.820 = 80; 2.820 − 2.720 = 100; 2.720 − 2.600 = 120. Conclusión: la matrícula bajó todos los años y cada caída fue 20 estudiantes mayor que la anterior, es decir, la disminución se aceleró.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tendencias y proyecciones",
+    "subtema": "Proyectar una serie con variaciones crecientes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio presentó un gráfico de líneas con la matrícula de primaria de sus sedes rurales. Estos son los valores del gráfico:\n\nAño | Matrícula rural de primaria\n2020 | 3.000\n2021 | 2.960\n2022 | 2.900\n2023 | 2.820\n2024 | 2.720\n2025 | 2.600\n\nSi las caídas anuales siguen el mismo patrón en los próximos años, ¿en qué año la matrícula rural de primaria será, por primera vez, inferior a 2.200 estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En 2028",
+        "explicacion": "Correcta. Las caídas crecen 20 estudiantes cada año (40, 60, 80, 100 y 120), así que las siguientes serán 140, 160 y 180: 2.460 en 2026, 2.300 en 2027 y 2.120 en 2028, el primer valor por debajo de 2.200."
+      },
+      {
+        "id": "B",
+        "texto": "En 2029",
+        "explicacion": "Incorrecta. Supone que la matrícula seguirá cayendo 120 estudiantes por año, como en el último año: 2.480, 2.360, 2.240 y 2.120 en 2029. Ignora que las caídas vienen creciendo."
+      },
+      {
+        "id": "C",
+        "texto": "En 2031",
+        "explicacion": "Incorrecta. Proyecta con la caída promedio del período (80 estudiantes por año): 2.520, 2.440, 2.360, 2.280, 2.200 en 2030 (que no es inferior) y 2.120 en 2031."
+      },
+      {
+        "id": "D",
+        "texto": "En 2036",
+        "explicacion": "Incorrecta. Proyecta con la caída del primer año (40 estudiantes por año): llegaría a 2.200 en 2035 y a 2.160 en 2036. Toma solo el primer tramo de la serie."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las caídas anuales aumentan 20 estudiantes cada año (40, 60, 80, 100, 120). Cálculo: si el patrón sigue, las caídas serán 140, 160 y 180: 2.600 − 140 = 2.460 (2026); 2.460 − 160 = 2.300 (2027); 2.300 − 180 = 2.120 (2028). Conclusión: en 2028 la matrícula quedará por primera vez por debajo de 2.200. Proyectar con una caída fija (la última, el promedio o la primera) da 2029, 2031 o 2036.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Cantidad absoluta frente a tasa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La coordinadora académica de un colegio revisa la deserción del año pasado para priorizar las estrategias de permanencia escolar:\n\nGrado | Matrícula inicial | Estudiantes retirados\n6.° | 180 | 9\n7.° | 160 | 10\n8.° | 150 | 12\n9.° | 120 | 11\n10.° | 100 | 7\n11.° | 90 | 3\n\n¿Qué grado aportó más estudiantes retirados y qué grado tuvo la mayor tasa de deserción (retirados ÷ matrícula inicial)?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Más retirados, 8.°; mayor tasa de deserción, 8.°.",
+        "explicacion": "Incorrecta. Acierta en el número de retirados, pero supone que el grado con más retirados tiene también la mayor tasa. 8.° tiene una matrícula mayor: 12 ÷ 150 = 8,0%, menos que el 9,2% de 9.°."
+      },
+      {
+        "id": "B",
+        "texto": "Más retirados, 9.°; mayor tasa de deserción, 9.°.",
+        "explicacion": "Incorrecta. Acierta en la tasa (11 ÷ 120 = 9,2% en 9.°), pero supone que el grado con la mayor tasa aporta también más retirados: 9.° tiene 11 y 8.° tiene 12."
+      },
+      {
+        "id": "C",
+        "texto": "Más retirados, 9.°; mayor tasa de deserción, 8.°.",
+        "explicacion": "Incorrecta. Intercambia los dos criterios: 8.° es el grado con más retirados (12) y 9.° el de mayor tasa (9,2%)."
+      },
+      {
+        "id": "D",
+        "texto": "Más retirados, 8.°; mayor tasa de deserción, 9.°.",
+        "explicacion": "Correcta. 8.° tiene el mayor número de retirados (12), pero la mayor tasa es la de 9.°: 11 ÷ 120 = 9,2%, frente a 12 ÷ 150 = 8,0% en 8.°."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el número de retirados y la tasa responden preguntas distintas; la tasa divide entre la matrícula inicial de cada grado. Cálculo: 6.° 5,0%; 7.° 6,3%; 8.° 8,0%; 9.° 9,2%; 10.° 7,0%; 11.° 3,3%. Conclusión: 8.° aportó más retirados (12), pero 9.° tuvo la mayor tasa de deserción (9,2%).",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Porcentajes y variaciones",
+    "subtema": "Tasa de un conjunto de grupos (sumar antes de dividir)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "La coordinadora académica de un colegio revisa la deserción del año pasado para priorizar las estrategias de permanencia escolar:\n\nGrado | Matrícula inicial | Estudiantes retirados\n6.° | 180 | 9\n7.° | 160 | 10\n8.° | 150 | 12\n9.° | 120 | 11\n10.° | 100 | 7\n11.° | 90 | 3\n\nPara el informe a la secretaría de educación, la coordinadora debe calcular la tasa de deserción del conjunto de la básica secundaria (grados 6.° a 9.°). ¿Cuál es esa tasa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "6,5%",
+        "explicacion": "Incorrecta. Suma los seis grados (52 retirados entre 800 estudiantes), incluidos 10.° y 11.°, que pertenecen a la media y no a la básica secundaria."
+      },
+      {
+        "id": "B",
+        "texto": "6,9%",
+        "explicacion": "Correcta. Se suman los retirados y las matrículas de 6.° a 9.°: (9 + 10 + 12 + 11) ÷ (180 + 160 + 150 + 120) = 42 ÷ 610 = 6,9%."
+      },
+      {
+        "id": "C",
+        "texto": "7,1%",
+        "explicacion": "Incorrecta. Promedia las cuatro tasas por grado (5,0%, 6,3%, 8,0% y 9,2%) como si los grados tuvieran el mismo tamaño. Así pesa de más 9.°, que es el grado más pequeño y el de tasa más alta."
+      },
+      {
+        "id": "D",
+        "texto": "7,4%",
+        "explicacion": "Incorrecta. Divide los 42 retirados entre los 568 estudiantes que terminaron el año. La tasa de deserción se calcula sobre la matrícula inicial (610)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la tasa de un conjunto de grados se calcula con los totales del conjunto, y la básica secundaria va de 6.° a 9.°. Cálculo: retirados 9 + 10 + 12 + 11 = 42; matrícula inicial 180 + 160 + 150 + 120 = 610; 42 ÷ 610 = 6,9%. Conclusión: la tasa de deserción de la básica secundaria fue del 6,9%. Promediar las tasas de cada grado (7,1%) da el mismo peso a grados de distinto tamaño.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Cambio de representación",
+    "subtema": "De barras apiladas al 100% a barras con cantidades",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "El informe de una institución educativa con cuatro sedes incluye un gráfico de barras apiladas al 100%: cada barra es una sede y se divide según el medio con el que los estudiantes llegan al colegio. Estos son los datos del gráfico:\n\nSede | Estudiantes | A pie | Ruta escolar | Otros medios\nCentral | 600 | 60% | 15% | 25%\nLa Paz | 160 | 35% | 50% | 15%\nEl Mirador | 250 | 45% | 40% | 15%\nSan Isidro | 140 | 50% | 25% | 25%\n\nLa rectora pide cambiarlo por un gráfico de barras con el número de estudiantes que llegan en ruta escolar a cada sede. En el nuevo gráfico, ¿qué sedes tendrán la barra más alta y la más baja?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La más alta, La Paz; la más baja, Central.",
+        "explicacion": "Incorrecta. Lee el gráfico de porcentajes: La Paz tiene el porcentaje más alto (50%) y Central el más bajo (15%). En número, Central suma 90 estudiantes porque es la sede más grande, y La Paz, 80."
+      },
+      {
+        "id": "B",
+        "texto": "La más alta, El Mirador; la más baja, San Isidro.",
+        "explicacion": "Correcta. Estudiantes en ruta escolar: Central 15% de 600 = 90; La Paz 50% de 160 = 80; El Mirador 40% de 250 = 100; San Isidro 25% de 140 = 35. El mayor valor es el de El Mirador y el menor, el de San Isidro."
+      },
+      {
+        "id": "C",
+        "texto": "La más alta, El Mirador; la más baja, Central.",
+        "explicacion": "Incorrecta. Acierta en la barra más alta, pero toma la más baja del gráfico de porcentajes: el 15% de Central equivale a 90 estudiantes, más que los 35 de San Isidro."
+      },
+      {
+        "id": "D",
+        "texto": "La más alta, La Paz; la más baja, San Isidro.",
+        "explicacion": "Incorrecta. Acierta en la barra más baja, pero toma la más alta del gráfico de porcentajes: el 50% de La Paz equivale a 80 estudiantes, menos que los 100 de El Mirador."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el nuevo gráfico muestra cantidades, así que cada porcentaje se aplica al número de estudiantes de su sede. Cálculo: Central 0,15 × 600 = 90; La Paz 0,50 × 160 = 80; El Mirador 0,40 × 250 = 100; San Isidro 0,25 × 140 = 35. Conclusión: la barra más alta es la de El Mirador y la más baja, la de San Isidro; el orden cambia frente al gráfico de porcentajes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Porcentajes y variaciones",
+    "subtema": "Porcentaje de inasistencia de un período a partir de un gráfico de barras",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Una sede educativa tiene 250 estudiantes matriculados. Su informe semanal de asistencia trae un gráfico de barras con el número de estudiantes presentes cada día:\n\nDía | Estudiantes presentes\nLunes | 225\nMartes | 235\nMiércoles | 240\nJueves | 230\nViernes | 210\n\n¿Cuál fue el porcentaje de inasistencia de esa semana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "8,8%",
+        "explicacion": "Correcta. En la semana se esperaban 250 × 5 = 1.250 asistencias y hubo 225 + 235 + 240 + 230 + 210 = 1.140; faltaron 110, y 110 ÷ 1.250 = 8,8%."
+      },
+      {
+        "id": "B",
+        "texto": "9,6%",
+        "explicacion": "Incorrecta. Divide las 110 ausencias entre las 1.140 asistencias efectivas. La base son las asistencias esperadas en la semana (1.250)."
+      },
+      {
+        "id": "C",
+        "texto": "44,0%",
+        "explicacion": "Incorrecta. Suma los porcentajes diarios de inasistencia (10% + 6% + 4% + 8% + 16%). Los porcentajes de cada día no se suman: como todos tienen la misma base, se promedian (44% ÷ 5 = 8,8%)."
+      },
+      {
+        "id": "D",
+        "texto": "91,2%",
+        "explicacion": "Incorrecta. Es el porcentaje de asistencia de la semana (1.140 ÷ 1.250), no el de inasistencia."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la inasistencia de la semana compara las ausencias con las asistencias esperadas (250 estudiantes durante 5 días). Cálculo: presentes 225 + 235 + 240 + 230 + 210 = 1.140; esperadas 1.250; ausencias 110; 110 ÷ 1.250 = 8,8%. Conclusión: la inasistencia de la semana fue del 8,8%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tendencias y proyecciones",
+    "subtema": "Comparar dos series en un gráfico de líneas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "El consejo académico de un colegio comparó el puntaje global promedio de sus estudiantes en la prueba Saber 11 con el de la entidad territorial certificada (ETC) a la que pertenece. Estos son los valores de su gráfico de líneas:\n\nAño | Colegio | ETC\n2021 | 238 | 246\n2022 | 243 | 248\n2023 | 251 | 249\n2024 | 258 | 252\n2025 | 260 | 257\n\n¿Cuál de estas frases describe correctamente la comparación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El colegio supera a la ETC desde 2023, y su mayor ventaja fue la de 2025.",
+        "explicacion": "Incorrecta. 2025 es el año del puntaje más alto del colegio (260), pero la ETC también subió: la ventaja de ese año fue de 3 puntos, menor que los 6 de 2024."
+      },
+      {
+        "id": "B",
+        "texto": "El colegio supera a la ETC desde 2022, y su mayor ventaja fue la de 2024.",
+        "explicacion": "Incorrecta. En 2022 el colegio subió más que la ETC (5 puntos frente a 2) y acortó la distancia, pero seguía por debajo: 243 frente a 248."
+      },
+      {
+        "id": "C",
+        "texto": "El colegio supera a la ETC desde 2022, y su mayor ventaja fue la de 2025.",
+        "explicacion": "Incorrecta. Comete los dos errores: en 2022 el colegio seguía 5 puntos por debajo, y en 2025 su ventaja (3 puntos) fue menor que la de 2024 (6 puntos)."
+      },
+      {
+        "id": "D",
+        "texto": "El colegio supera a la ETC desde 2023, y su mayor ventaja fue la de 2024.",
+        "explicacion": "Correcta. Diferencias (colegio − ETC): −8, −5, +2, +6 y +3. El colegio queda por encima desde 2023, y la ventaja máxima es la de 2024 (258 − 252 = 6 puntos)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: para comparar las dos líneas hay que restar, año por año, el puntaje de la ETC al del colegio. Cálculo: 2021: −8; 2022: −5; 2023: +2; 2024: +6; 2025: +3. Conclusión: el colegio está por encima desde 2023 y su mayor ventaja fue la de 2024, aunque su puntaje más alto lo obtuvo en 2025.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Porcentajes y variaciones",
+    "subtema": "Comparar variaciones porcentuales sobre bases distintas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "El consejo académico de un colegio comparó el puntaje global promedio de sus estudiantes en la prueba Saber 11 con el de la entidad territorial certificada (ETC) a la que pertenece. Estos son los valores de su gráfico de líneas:\n\nAño | Colegio | ETC\n2021 | 238 | 246\n2022 | 243 | 248\n2023 | 251 | 249\n2024 | 258 | 252\n2025 | 260 | 257\n\nEn la rendición de cuentas, el rector afirmó: «Entre 2021 y 2025, el puntaje de nuestro colegio creció, en porcentaje, más del doble que el de la ETC». ¿Es correcta su afirmación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sí: el puntaje del colegio creció un 9,2% en ese período, y el de la ETC, un 4,5%.",
+        "explicacion": "Correcta. La variación se calcula sobre el valor de 2021: colegio (260 − 238) ÷ 238 = 9,2%; ETC (257 − 246) ÷ 246 = 4,5%. 9,2% es más del doble de 4,5% (sin redondear, 9,24% ÷ 4,47% = 2,07)."
+      },
+      {
+        "id": "B",
+        "texto": "Sí: en esos cuatro años el colegio ganó 22 puntos, y la ETC, solo 11 puntos.",
+        "explicacion": "Incorrecta. Mide el aumento en puntos y no en porcentaje, que es lo que dice el rector. Además, 22 es justo el doble de 11, así que estos datos no muestran «más del doble»: la conclusión no se sigue del argumento."
+      },
+      {
+        "id": "C",
+        "texto": "No: el puntaje del colegio creció un 8,5%, y el de la ETC, un 4,3%.",
+        "explicacion": "Incorrecta. Divide cada aumento entre el valor de 2025 (22 ÷ 260 y 11 ÷ 257). La variación porcentual se calcula sobre el valor inicial (2021); con la base equivocada, la razón queda en 1,98 y la conclusión se invierte."
+      },
+      {
+        "id": "D",
+        "texto": "No: en el último año el colegio creció un 0,8%, y la ETC, un 2,0%.",
+        "explicacion": "Incorrecta. Mira solo el cambio entre 2024 y 2025 (2 ÷ 258 y 5 ÷ 252), pero el rector habla del período de 2021 a 2025."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el rector compara variaciones porcentuales de 2021 a 2025, que se calculan sobre el valor de 2021. Cálculo: colegio 22 ÷ 238 = 9,24%; ETC 11 ÷ 246 = 4,47%; la primera variación es 2,07 veces la segunda. Conclusión: la afirmación es correcta. Con la base equivocada (los valores de 2025) la razón baja a 1,98, y en puntos el aumento es justo el doble.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Cambio de representación",
+    "subtema": "Leer un pictograma con escala y medios íconos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Para el periódico mural, los estudiantes de cuarto grado hicieron un pictograma con los almuerzos que sirvió el comedor escolar del PAE la semana pasada. Cada plato dibujado representa 20 almuerzos, y medio plato, 10 almuerzos. Esta es la cantidad de platos que dibujaron para cada día:\n\nDía | Platos dibujados\nLunes | 7 y medio\nMartes | 8 y medio\nMiércoles | 8\nJueves | 6 y medio\nViernes | 7\n\n¿Cuántos almuerzos sirvió el comedor en la semana, según el pictograma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "375 almuerzos",
+        "explicacion": "Incorrecta. Multiplica los 37,5 platos por 10, el valor del medio plato, como si cada plato completo representara 10 almuerzos."
+      },
+      {
+        "id": "B",
+        "texto": "720 almuerzos",
+        "explicacion": "Incorrecta. Cuenta solo los platos completos (7 + 8 + 8 + 6 + 7 = 36; 36 × 20 = 720) y descarta los tres medios platos, que suman 30 almuerzos."
+      },
+      {
+        "id": "C",
+        "texto": "750 almuerzos",
+        "explicacion": "Correcta. Hay 36 platos completos y 3 medios platos, es decir, 37,5 platos; 37,5 × 20 = 750 almuerzos."
+      },
+      {
+        "id": "D",
+        "texto": "780 almuerzos",
+        "explicacion": "Incorrecta. Cuenta cada medio plato como uno completo (39 platos × 20 = 780). Cada medio plato vale 10 almuerzos, no 20."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: cada plato vale 20 almuerzos y cada medio plato, 10. Cálculo: platos completos 7 + 8 + 8 + 6 + 7 = 36, que son 720 almuerzos; hay medios platos el lunes, el martes y el jueves: 3 × 10 = 30. Total: 720 + 30 = 750. Conclusión: en la semana se sirvieron 750 almuerzos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Cambio de representación",
+    "subtema": "De una descripción verbal a los valores de un gráfico de barras",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "El informe de matrícula de una institución educativa con tres sedes dice: «En 2025, la sede Central tuvo 420 estudiantes. La sede El Prado tuvo un tercio menos que la Central, y la sede La Loma, un 25% más que El Prado». Con esa información se hará un gráfico de barras de la matrícula por sede. ¿Qué valores deben tener las barras?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Central, 420; El Prado, 140; La Loma, 175.",
+        "explicacion": "Incorrecta. Calcula un tercio de la Central (140) en lugar de un tercio menos. Con ese error, La Loma queda en 140 × 1,25 = 175."
+      },
+      {
+        "id": "B",
+        "texto": "Central, 420; El Prado, 280; La Loma, 525.",
+        "explicacion": "Incorrecta. El Prado está bien, pero aplica el 25% a la Central (420 × 1,25 = 525). La frase dice que La Loma tuvo un 25% más que El Prado."
+      },
+      {
+        "id": "C",
+        "texto": "Central, 420; El Prado, 280; La Loma, 350.",
+        "explicacion": "Correcta. Un tercio menos que 420 es 420 − 140 = 280. Un 25% más que 280 es 280 + 70 = 350."
+      },
+      {
+        "id": "D",
+        "texto": "Central, 420; El Prado, 140; La Loma, 525.",
+        "explicacion": "Incorrecta. Comete dos errores: toma un tercio de la Central (140) en vez de un tercio menos, y aplica el 25% a la Central y no a El Prado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: «un tercio menos que la Central» se calcula sobre 420, y «un 25% más que El Prado», sobre el valor de El Prado. Cálculo: 420 − 420 ÷ 3 = 280; 280 × 1,25 = 350. Conclusión: las barras deben mostrar 420, 280 y 350 estudiantes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Tabla de doble entrada de distancias: leer la casilla de cada tramo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio planea una nueva ruta de transporte escolar. La tabla muestra la distancia por carretera, en kilómetros, entre el colegio y tres veredas; cada casilla es la distancia entre el lugar de su fila y el de su columna:\n\nLugar | Colegio | Alto Bonito | La Cabaña | Morrocoy\nColegio | 0 | 9 | 6 | 4\nAlto Bonito | 9 | 0 | 5 | 8\nLa Cabaña | 6 | 5 | 0 | 3\nMorrocoy | 4 | 8 | 3 | 0\n\nLa ruta saldrá de Alto Bonito, recogerá estudiantes primero en La Cabaña y después en Morrocoy, y terminará en el colegio. ¿Cuántos kilómetros recorre la ruta en ese trayecto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "9 km",
+        "explicacion": "Incorrecta. Lee solo la casilla de Alto Bonito al colegio (9 km), como si el bus fuera directo, sin pasar por La Cabaña ni por Morrocoy."
+      },
+      {
+        "id": "B",
+        "texto": "12 km",
+        "explicacion": "Correcta. Alto Bonito a La Cabaña: 5 km; La Cabaña a Morrocoy: 3 km; Morrocoy al colegio: 4 km. En total, 5 + 3 + 4 = 12 km."
+      },
+      {
+        "id": "C",
+        "texto": "14 km",
+        "explicacion": "Incorrecta. En el último tramo lee la distancia de La Cabaña al colegio (6 km) en lugar de la de Morrocoy (4 km): 5 + 3 + 6 = 14. Ese tramo sale de Morrocoy, la última parada."
+      },
+      {
+        "id": "D",
+        "texto": "19 km",
+        "explicacion": "Incorrecta. Suma la columna del colegio (9 + 6 + 4 = 19), como si el bus fuera por separado desde cada vereda hasta el colegio."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: cada tramo se lee en la casilla que cruza el lugar de salida con el de llegada, y el orden es Alto Bonito, La Cabaña, Morrocoy y colegio. Cálculo: 5 + 3 + 4 = 12. Conclusión: la ruta recorre 12 kilómetros. Sumar la columna del colegio (19 km) supondría que el bus va al colegio desde cada vereda por separado.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Lectura de tablas y gráficos",
+    "subtema": "Seguir una cohorte en diagonal en una tabla grado por año",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Un colegio registró la matrícula de básica secundaria de los últimos tres años. En ese período no ingresaron estudiantes de otros colegios a 7.°, 8.° ni 9.°, y nadie repitió el año: cada estudiante que siguió en el colegio pasó al grado siguiente.\n\nGrado | 2023 | 2024 | 2025\n6.° | 200 | 190 | 185\n7.° | 176 | 180 | 172\n8.° | 165 | 162 | 160\n9.° | 150 | 148 | 150\n\n¿Qué porcentaje de los estudiantes que cursaban 6.° en 2023 llegó a 8.° en 2025?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "80,0%",
+        "explicacion": "Correcta. Hay que seguir al grupo en diagonal: 6.° en 2023 (200), 7.° en 2024 (180) y 8.° en 2025 (160). 160 ÷ 200 = 80%."
+      },
+      {
+        "id": "B",
+        "texto": "82,5%",
+        "explicacion": "Incorrecta. Compara 8.° con 6.° en el mismo año 2023 (165 ÷ 200). Esos 165 estudiantes de 8.° son otro grupo, que había empezado 6.° dos años antes."
+      },
+      {
+        "id": "C",
+        "texto": "86,5%",
+        "explicacion": "Incorrecta. Compara 8.° con 6.° en 2025 (160 ÷ 185). Los 185 estudiantes de 6.° en 2025 entraron después: no son el grupo de 2023."
+      },
+      {
+        "id": "D",
+        "texto": "97,0%",
+        "explicacion": "Incorrecta. Compara el 8.° de 2025 con el 8.° de 2023 (160 ÷ 165). Lee la fila de 8.°, pero esos dos valores corresponden a grupos distintos de estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: como nadie repitió ni ingresó a 7.° u 8.° desde otro colegio, el grupo que cursaba 6.° en 2023 está en 7.° en 2024 y en 8.° en 2025: se lee en diagonal. Cálculo: 160 ÷ 200 = 0,80. Conclusión: el 80% de ese grupo llegó a 8.°. Comparar valores de la misma columna o de la misma fila mezcla grupos distintos de estudiantes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

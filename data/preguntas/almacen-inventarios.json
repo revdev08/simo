@@ -1,0 +1,2202 @@
+[
+  {
+    "id": "TC-ALM-001",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Clasificación al ingreso: inventarios frente a propiedades, planta y equipo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.1",
+      "Normas, Cap. I, num. 10.1"
+    ],
+    "texto_fuente": "Se reconocerán como inventarios, los activos no monetarios adquiridos, los que se encuentren en proceso de transformación y los producidos, así como los productos agropecuarios, que se tengan con la intención de a) venderse a precios de mercado o de no mercado en el curso normal de la operación; b) distribuirse en forma gratuita en el curso normal de la operación; [...] También se reconocerán como inventarios, los materiales que se incluirán como parte del costo de otros activos, de acuerdo con las normas de Propiedades, planta y equipo; de Propiedades de inversión; de Bienes de uso público; de Bienes históricos y culturales; o de Activos intangibles. Adicionalmente, se reconocerán como inventarios, los repuestos que no serán componentes de un elemento de propiedades, planta y equipo; [...] Se reconocerán como propiedades, planta y equipo, a) los activos tangibles empleados por la entidad para la producción o suministro de bienes, para la prestación de servicios o para propósitos administrativos; [...] y d) los repuestos que serán componentes de un elemento de propiedades, planta y equipo.",
+    "pregunta": "Un auxiliar administrativo del almacén de una gobernación elabora los comprobantes de entrada de la semana y, en cada uno, debe indicar si el bien va a inventarios o a propiedades, planta y equipo. Recibió: (1) 800 bultos de cemento que se usarán en la construcción de un aula de un colegio departamental; (2) 300 tabletas que se entregarán gratis a estudiantes de colegios públicos; (3) filtros de aceite y bujías para los cambios rutinarios de los vehículos de la entidad; y (4) un motor nuevo que reemplazará el de una volqueta cuando el actual cumpla las horas de uso previstas. Según las Normas de la CGN para entidades de gobierno, ¿cuál de estos bienes debe registrarse como propiedades, planta y equipo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las tabletas, porque son equipos de cómputo con una vida útil superior a doce meses.",
+        "explicacion": "Incorrecta. La entidad no usará las tabletas: las tiene para distribuirlas en forma gratuita, y los bienes que se tienen con esa intención son inventarios, sin importar su vida útil."
+      },
+      {
+        "id": "B",
+        "texto": "El cemento, porque terminará incorporado en un aula que sí es propiedad, planta y equipo.",
+        "explicacion": "Incorrecta. Los materiales que se incluirán como parte del costo de otros activos (aquí, el aula) se reconocen como inventarios mientras están en la bodega."
+      },
+      {
+        "id": "C",
+        "texto": "El motor, porque es un repuesto que pasará a formar parte de un vehículo de la entidad.",
+        "explicacion": "Correcta. Los repuestos que serán componentes de un elemento de propiedades, planta y equipo se reconocen como propiedades, planta y equipo (num. 10.1, lit. d). El motor sustituirá al de la volqueta y formará parte de ella."
+      },
+      {
+        "id": "D",
+        "texto": "Los filtros y las bujías, porque se instalan en vehículos que son propiedad, planta y equipo.",
+        "explicacion": "Incorrecta. Los filtros y las bujías se consumen en los cambios rutinarios: son repuestos que no serán componentes de un elemento de propiedades, planta y equipo, y esos repuestos se reconocen como inventarios."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el motor se incorporará a la volqueta; el cemento irá a una obra, las tabletas se regalarán y los filtros se consumen en el mantenimiento. Regla: son inventarios los bienes que se distribuirán gratis, los materiales que harán parte del costo de otros activos y los repuestos que no serán componentes (num. 9.1); los repuestos que serán componentes de un elemento de propiedades, planta y equipo se reconocen en esa categoría (num. 10.1, lit. d). Conclusión: solo el motor va a propiedades, planta y equipo.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Costo de adquisición y costo promedio ponderado en el sistema de inventario permanente",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.2.1",
+      "Normas, Cap. I, num. 9.2.4"
+    ],
+    "texto_fuente": "El costo de adquisición de los inventarios incluirá el precio de compra, los aranceles y otros impuestos no recuperables, el transporte y otras erogaciones necesarias para colocar los inventarios en condiciones de uso, venta o distribución gratuita. [...] Los inventarios se llevarán utilizando el sistema de inventario permanente. Para efectos de valoración y determinación de los costos, se aplicarán los métodos de Primeras en Entrar Primeras en Salir (PEPS), costo promedio o identificación específica.",
+    "pregunta": "Un técnico de inventarios de la secretaría de educación de un municipio lleva el kárdex de los kits escolares que la entidad entrega gratis a los estudiantes. La política contable valora estos inventarios por el costo promedio ponderado. El 1 de febrero de 2026 había 200 kits por un valor total de $9.000.000. El 10 de febrero entraron 300 kits comprados a $40.000 cada uno, más un IVA del 19 % que la entidad no puede descontar ni recuperar, y se pagó un flete de $420.000 para traerlos hasta la bodega. El 20 de febrero salieron 250 kits para entregarlos en los colegios. ¿Por qué valor debe registrarse esa salida?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$11.850.000",
+        "explicacion": "Correcta. Costo de la compra: 300 × 40.000 = 12.000.000, más el IVA no recuperable (2.280.000) y el flete (420.000): 14.700.000. Costo promedio: (9.000.000 + 14.700.000) / 500 = 47.400 por kit. Salida: 250 × 47.400 = 11.850.000."
+      },
+      {
+        "id": "B",
+        "texto": "$11.640.000",
+        "explicacion": "Incorrecta. Deja el flete por fuera del costo: (9.000.000 + 14.280.000) / 500 = 46.560 × 250. El transporte necesario para dejar los kits en condiciones de distribución hace parte del costo de adquisición."
+      },
+      {
+        "id": "C",
+        "texto": "$10.710.000",
+        "explicacion": "Incorrecta. Excluye el IVA: (9.000.000 + 12.420.000) / 500 = 42.840 × 250. Los impuestos que la entidad no puede recuperar forman parte del costo de adquisición."
+      },
+      {
+        "id": "D",
+        "texto": "$12.250.000",
+        "explicacion": "Incorrecta. Valora la salida con el costo unitario de la última compra (14.700.000 / 300 = 49.000 × 250). Con el costo promedio, las existencias anteriores y la nueva compra se funden en un solo costo unitario."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el IVA no es recuperable, el flete se pagó para traer los kits a la bodega y la política usa el costo promedio. Regla: el costo de adquisición incluye el precio, los impuestos no recuperables y el transporte (num. 9.2.1); los inventarios se llevan en sistema permanente y se valoran con PEPS, costo promedio o identificación específica (num. 9.2.4). Cálculo: 12.000.000 + 2.280.000 + 420.000 = 14.700.000; (9.000.000 + 14.700.000) / 500 = 47.400; 250 × 47.400 = 11.850.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Fórmula de costo PEPS, UEPS no admitido y gasto por distribución gratuita",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.2.4",
+      "Normas, Cap. I, num. 9.4"
+    ],
+    "texto_fuente": "Para efectos de valoración y determinación de los costos, se aplicarán los métodos de Primeras en Entrar Primeras en Salir (PEPS), costo promedio o identificación específica. No se aceptará como método de valuación, el de Últimas en Entrar Primeras en Salir (UEPS). Cuando la naturaleza y uso de los inventarios sean similares, se utilizará el mismo método de valuación. [...] Los inventarios que se distribuyan gratuitamente se reconocerán como gasto en el resultado del periodo, cuando se distribuya el bien.",
+    "pregunta": "Una auxiliar administrativa del almacén de la secretaría de agricultura de un departamento registra en el kárdex los kits de semillas que se regalan a pequeños productores. La política contable fija el método PEPS para estos kits. En marzo de 2026 entraron 400 kits a $25.000 cada uno (día 5) y 600 kits a $28.000 cada uno (día 20); no había saldo anterior. El 31 de marzo se entregaron 700 kits a los productores. Un compañero le sugiere valorar la entrega con el costo de los kits que entraron de últimos, «para reflejar los precios actuales». ¿Qué debe reconocerse en el resultado de marzo por esta entrega?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un gasto de $19.300.000.",
+        "explicacion": "Incorrecta. Es la sugerencia del compañero: valora primero los 600 kits de la última entrada (600 × 28.000 + 100 × 25.000). Ese método, últimas en entrar primeras en salir (UEPS), no se acepta para valorar inventarios."
+      },
+      {
+        "id": "B",
+        "texto": "Un gasto de $19.600.000.",
+        "explicacion": "Incorrecta. Valora los 700 kits al costo de la última compra (700 × 28.000), como si todos hubieran entrado el día 20. Con PEPS salen primero los kits de la entrada más antigua, y de la segunda compra solo salen 300."
+      },
+      {
+        "id": "C",
+        "texto": "Un gasto de $18.760.000.",
+        "explicacion": "Incorrecta. Aplica el costo promedio ((10.000.000 + 16.800.000) / 1.000 × 700). La norma admite ese método, pero la política de la entidad fijó PEPS para estos kits, y los inventarios de naturaleza y uso similares se valoran con un mismo método."
+      },
+      {
+        "id": "D",
+        "texto": "Un gasto de $18.400.000.",
+        "explicacion": "Correcta. Con PEPS salen primero los 400 kits de $25.000 (10.000.000) y luego 300 de los de $28.000 (8.400.000): 18.400.000. Como se entregaron gratis, ese valor se reconoce como gasto al momento de la entrega."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la política fija PEPS, los kits se regalaron y el compañero propone valorarlos con las últimas compras. Regla: los inventarios se valoran con PEPS, costo promedio o identificación específica, y no se acepta UEPS (num. 9.2.4); lo que se distribuye gratis se reconoce como gasto cuando se entrega (num. 9.4). Cálculo: 400 × 25.000 + 300 × 28.000 = 18.400.000. Conclusión: gasto de $18.400.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ALM-004",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Baja en cuentas por sustracción detectada en el conteo físico",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.3",
+      "Normas, Cap. I, num. 9.5"
+    ],
+    "texto_fuente": "Si el valor neto de realización o el costo de reposición, según corresponda, es inferior al costo del inventario, la diferencia corresponderá al deterioro. [...] Las mermas, sustracciones o vencimiento de los inventarios, implicarán el retiro de estos y su reconocimiento como gastos en el resultado del periodo.",
+    "pregunta": "En el conteo físico del 30 de noviembre de 2026, un técnico de inventarios de un instituto departamental de deportes encuentra 376 balones de los 400 que registra el sistema. Los balones se entregan gratis a las escuelas deportivas y están valorados a un costo promedio de $60.000 cada uno. Se comprobó que los 24 faltantes fueron hurtados de la bodega; la entidad presentó la denuncia penal y dio aviso a la oficina de control disciplinario interno. El técnico debe proponer el ajuste del inventario. ¿Qué ajuste corresponde según las Normas de la CGN?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener los 400 balones y sus $24.000.000 en el inventario hasta que terminen las investigaciones.",
+        "explicacion": "Incorrecta. Las investigaciones penal y disciplinaria no aplazan el registro: la sustracción implica retirar los bienes del inventario y reconocerlos como gasto del periodo. Mantener los $24.000.000 sobrestima el inventario en $1.440.000."
+      },
+      {
+        "id": "B",
+        "texto": "Dar de baja los 24 balones faltantes y reconocer su costo, $1.440.000, como gasto del periodo.",
+        "explicacion": "Correcta. Las sustracciones implican el retiro de los inventarios y su reconocimiento como gasto: 24 × 60.000 = 1.440.000. El inventario queda con 376 balones por 22.560.000."
+      },
+      {
+        "id": "C",
+        "texto": "Conservar los 24 balones en el inventario y reconocer sobre ellos un deterioro de $1.440.000.",
+        "explicacion": "Incorrecta. El deterioro se reconoce cuando el costo de reposición o el valor neto de realización de bienes que siguen en la bodega es inferior a su costo. Los balones hurtados ya no están: se retiran y su costo de $1.440.000 va al gasto, no a un deterioro."
+      },
+      {
+        "id": "D",
+        "texto": "Cargar los $1.440.000 de los faltantes al costo de los 376 balones que quedan en la bodega.",
+        "explicacion": "Incorrecta. Esconde el faltante dentro del costo de las existencias: los 376 balones quedarían valorados en $24.000.000, a unos $63.830 cada uno. La norma ordena retirar lo sustraído y llevarlo al gasto, no subir el costo unitario de lo que queda."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el conteo halló 24 balones menos y se comprobó que fueron hurtados. Regla: las mermas, sustracciones o vencimientos implican retirar los inventarios y reconocerlos como gasto del periodo (num. 9.5); el deterioro es otra figura, para bienes que siguen en existencia (num. 9.3). Cálculo: 24 × 60.000 = 1.440.000. Conclusión: se dan de baja los 24 balones y se llevan $1.440.000 al gasto; las investigaciones siguen su curso por separado.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Inventario recibido sin contraprestación: costo de reposición más desembolsos atribuibles",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.2.1",
+      "Normas, Cap. IV, num. 1.3.2"
+    ],
+    "texto_fuente": "Cuando se adquiera un inventario en una transacción sin contraprestación, la entidad medirá el activo adquirido de acuerdo con la Norma de ingresos de transacciones sin contraprestación. En todo caso, al valor determinado se le adicionará cualquier desembolso que sea directamente atribuible a la preparación del activo para el uso, venta o distribución gratuita. [...] Las transferencias no monetarias (inventarios; propiedades, planta y equipo; propiedades de inversión; activos intangibles; bienes de uso público; y bienes históricos y culturales) se medirán por el valor de mercado del activo recibido o, en ausencia de este, por el costo de reposición. Si no es factible obtener alguna de las anteriores mediciones, las transferencias no monetarias se medirán por el valor en libros que tenía el activo en la entidad que transfirió el recurso.",
+    "pregunta": "Un departamento le transfirió gratis a un municipio, sin condiciones, 500 cartillas pedagógicas que el departamento mandó imprimir para que se repartan sin costo en los colegios. Las cartillas no se venden en ningún mercado. Imprimir hoy cartillas equivalentes le costaría al municipio $9.000 cada una; en los libros del departamento figuraban a $7.500 cada una. El municipio pagó $350.000 de flete para traerlas a su bodega, adonde llegaron el 14 de septiembre de 2026, fecha en la que obtuvo su control. El técnico administrativo del almacén municipal debe elaborar el comprobante de entrada. ¿Por qué valor deben ingresar las cartillas al inventario?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$4.100.000",
+        "explicacion": "Incorrecta. Usa el valor en libros del departamento (500 × 7.500 + 350.000). Ese valor solo se usa si no es factible obtener ni el valor de mercado ni el costo de reposición, y aquí el costo de reposición se conoce."
+      },
+      {
+        "id": "B",
+        "texto": "$350.000",
+        "explicacion": "Incorrecta. Registra únicamente lo que pagó el municipio. Los inventarios recibidos sin contraprestación se miden según la Norma de ingresos de transacciones sin contraprestación, aunque no se haya pagado nada por ellos."
+      },
+      {
+        "id": "C",
+        "texto": "$4.850.000",
+        "explicacion": "Correcta. Sin valor de mercado, la transferencia no monetaria se mide por el costo de reposición: 500 × 9.000 = 4.500.000. A ese valor se le suma el flete, desembolso atribuible a dejarlas listas para su distribución: 4.850.000."
+      },
+      {
+        "id": "D",
+        "texto": "$4.500.000",
+        "explicacion": "Incorrecta. Mide bien las cartillas por su costo de reposición, pero deja el flete por fuera. Al valor determinado se le adiciona cualquier desembolso directamente atribuible a preparar el activo para su distribución gratuita."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las cartillas no tienen valor de mercado, su costo de reposición es de $9.000 y el municipio pagó $350.000 de flete. Regla: el inventario recibido sin contraprestación se mide según la Norma de ingresos sin contraprestación, más los desembolsos atribuibles a su preparación (num. 9.2.1); las transferencias no monetarias se miden por el valor de mercado o, en su ausencia, por el costo de reposición (Cap. IV, num. 1.3.2). Cálculo: 500 × 9.000 + 350.000 = 4.850.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ALM-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Retiro por obsolescencia: depreciación acumulada por meses y pérdida en la baja",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.3",
+      "Normas, Cap. I, num. 10.4"
+    ],
+    "texto_fuente": "Después del reconocimiento, las propiedades, planta y equipo se medirán por el costo menos la depreciación acumulada menos el deterioro acumulado. [...] Un elemento de propiedades, planta y equipo se dará de baja cuando se pierda el control sobre el elemento o cuando no se espere obtener un potencial de servicio o beneficios económicos futuros por su uso o enajenación. La pérdida o ganancia originada en la baja en cuentas de un elemento de propiedades, planta y equipo se calculará como la diferencia entre el valor de la contraprestación recibida, si existiere, y su valor en libros, y se reconocerá como ingreso o gasto en el resultado del periodo.",
+    "pregunta": "Un técnico de inventarios de una gobernación prepara el informe de baja de 20 computadores de escritorio. Cada uno costó $3.000.000 y quedó disponible para su uso el 1 de julio de 2022. La política contable los deprecia por el método lineal, en 5 años, sin valor residual y por meses completos. El comité de bajas los declaró obsoletos porque ya no le prestan ningún servicio a la entidad, y el 30 de septiembre de 2026 se entregaron, sin recibir pago, a un gestor autorizado de residuos electrónicos. La depreciación hasta septiembre de 2026 ya está registrada. ¿Qué efecto tiene la baja en el resultado del periodo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un gasto de $9.000.000.",
+        "explicacion": "Correcta. De julio de 2022 a septiembre de 2026 hay 51 meses: depreciación por equipo 3.000.000 × 51/60 = 2.550.000 y valor en libros 450.000. Por los 20 equipos, 9.000.000, que se llevan al gasto porque no se recibió contraprestación."
+      },
+      {
+        "id": "B",
+        "texto": "Un gasto de $60.000.000.",
+        "explicacion": "Incorrecta. Lleva al gasto el costo total sin descontar la depreciación acumulada. Lo que se retira es el valor en libros: costo menos depreciación acumulada."
+      },
+      {
+        "id": "C",
+        "texto": "Un gasto de $12.000.000.",
+        "explicacion": "Incorrecta. Cuenta solo 48 meses de depreciación (años completos) y deja el valor en libros en 600.000 por equipo. La política deprecia por meses completos: faltan julio, agosto y septiembre de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "Un gasto de $6.000.000.",
+        "explicacion": "Incorrecta. Deprecia todo 2026 (54 meses) y deja el valor en libros en 300.000 por equipo. Los equipos se dieron de baja el 30 de septiembre, y la depreciación registrada llega hasta ese mes."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los equipos llevan 51 meses de una vida útil de 60 y se entregaron sin recibir nada a cambio. Regla: la propiedad, planta y equipo se mide por el costo menos la depreciación acumulada (num. 10.3); se da de baja cuando no se espera obtener de ella potencial de servicio, y la pérdida es la diferencia entre la contraprestación, si existe, y el valor en libros (num. 10.4). Cálculo: 3.000.000 × 9/60 = 450.000; 450.000 × 20 = 9.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Precio mínimo de venta de bienes muebles no sujetos a registro",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.4.1",
+      "art. 2.2.1.2.2.4.2, num. 1"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.1.2.2.4.1. Precio mínimo de venta de bienes muebles no sujetos a registro. La Entidad Estatal debe tener en cuenta el resultado del estudio de las condiciones de mercado, el estado de los bienes muebles y el valor registrado en los libros contables de la misma. [...] ARTÍCULO 2.2.1.2.2.4.2. Precio mínimo de venta de bienes muebles sujetos a registro. La Entidad Estatal debe tener en cuenta lo siguiente: 1. La Entidad Estatal debe obtener un avalúo comercial practicado por cualquier persona natural o jurídica de carácter privado, registrada en el Registro Nacional de Avaluadores,",
+    "pregunta": "Una alcaldía va a vender 150 sillas y 60 escritorios que dio de baja por desuso. El jefe del almacén le pide a una auxiliar administrativa reunir la información con la que la entidad fijará el precio mínimo de venta que irá en los estudios previos. Según el Decreto 1082 de 2015, ¿qué información debe reunir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un avalúo comercial de un perito inscrito en el Registro Nacional de Avaluadores, menos los gastos de un año de bodegaje.",
+        "explicacion": "Incorrecta. El avalúo de un perito inscrito en el Registro Nacional de Avaluadores, con el descuento de los gastos de un año, es la regla de los bienes muebles sujetos a registro, como los vehículos. Las sillas y los escritorios no lo están."
+      },
+      {
+        "id": "B",
+        "texto": "Un sondeo de los precios de mercado de bienes similares, el estado físico de los muebles y su valor en los libros contables.",
+        "explicacion": "Correcta. Para los bienes muebles no sujetos a registro, la entidad debe tener en cuenta el resultado del estudio de las condiciones de mercado, el estado de los bienes y el valor registrado en sus libros contables."
+      },
+      {
+        "id": "C",
+        "texto": "Un avalúo del Instituto Geográfico Agustín Codazzi y el valor presente de los ingresos y gastos durante la comercialización.",
+        "explicacion": "Incorrecta. El avalúo del IGAC y el cálculo con los ingresos y gastos del tiempo de comercialización corresponden a la venta de bienes inmuebles."
+      },
+      {
+        "id": "D",
+        "texto": "El costo de compra de los muebles, actualizado con la inflación desde que se adquirieron hasta la fecha de la venta.",
+        "explicacion": "Incorrecta. La norma no fija el precio mínimo con el costo histórico actualizado: ordena tener en cuenta el estudio de las condiciones de mercado, el estado de los bienes y el valor registrado en los libros contables."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se venderán sillas y escritorios, que son bienes muebles no sujetos a registro. Regla: para fijar su precio mínimo de venta, la entidad debe tener en cuenta el estudio de las condiciones de mercado, el estado de los bienes y su valor en libros (art. 2.2.1.2.2.4.1). El avalúo de perito inscrito en el Registro Nacional de Avaluadores es para los muebles sujetos a registro (art. 2.2.1.2.2.4.2), y el del IGAC, para inmuebles. Conclusión: debe reunir el sondeo de mercado, el estado de los muebles y su valor contable.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Precio mínimo de venta de un automotor de dos ejes",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.4.2"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.1.2.2.4.2. Precio mínimo de venta de bienes muebles sujetos a registro. La Entidad Estatal debe tener en cuenta lo siguiente: 1. La Entidad Estatal debe obtener un avalúo comercial practicado por cualquier persona natural o jurídica de carácter privado, registrada en el Registro Nacional de Avaluadores, excepto cuando el bien a enajenar es un automotor de dos (2) ejes pues independientemente de su clase, tipo de servicio, peso o capacidad, de carga y de pasajeros, la Entidad Estatal debe usar los valores establecidos anualmente por el Ministerio de Transporte. 2. Una vez establecido el valor comercial, la Entidad Estatal debe descontar el valor estimado de los gastos en los cuales debe incurrir para el mantenimiento y uso del bien en un término de un (1) año, tales como conservación, administración y vigilancia, impuestos, gravámenes, seguros y gastos de bodegaje, entre otros.",
+    "pregunta": "Un técnico administrativo del almacén de una alcaldía calcula el precio mínimo de venta de una camioneta de dos ejes que la entidad dio de baja y va a vender. Tiene estos datos: avalúo comercial hecho por un perito inscrito en el Registro Nacional de Avaluadores, $48.000.000; valor del vehículo según la tabla que el Ministerio de Transporte fijó para el año, $52.000.000; parqueadero, $150.000 al mes; seguro anual, $1.200.000; e impuesto vehicular anual, $700.000. Según el Decreto 1082 de 2015, ¿cuál es el precio mínimo de venta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$44.300.000",
+        "explicacion": "Incorrecta. Parte del avalúo del perito (48.000.000 − 3.700.000). Para un automotor de dos ejes, sea cual sea su clase, la entidad debe usar los valores del Ministerio de Transporte y no un avalúo comercial."
+      },
+      {
+        "id": "B",
+        "texto": "$52.000.000",
+        "explicacion": "Incorrecta. Toma bien el valor del Ministerio de Transporte, pero no descuenta los gastos que generará el vehículo durante un año (parqueadero, seguro e impuesto)."
+      },
+      {
+        "id": "C",
+        "texto": "$48.000.000",
+        "explicacion": "Incorrecta. Usa el avalúo del perito y, además, omite el descuento de los gastos de un año. Ninguno de los dos pasos corresponde a un automotor de dos ejes."
+      },
+      {
+        "id": "D",
+        "texto": "$48.300.000",
+        "explicacion": "Correcta. Para un automotor de dos ejes se toma el valor del Ministerio de Transporte (52.000.000) y se descuentan los gastos estimados de un año: parqueadero 150.000 × 12 = 1.800.000, seguro 1.200.000 e impuesto 700.000, en total 3.700.000. Precio mínimo: 48.300.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el bien es una camioneta de dos ejes, con dos valores de referencia y gastos de un año por $3.700.000. Regla: para los muebles sujetos a registro se obtiene un avalúo comercial, salvo los automotores de dos ejes, para los que se usan los valores del Ministerio de Transporte; luego se descuentan los gastos de un año, como conservación, vigilancia, impuestos, seguros y bodegaje (art. 2.2.1.2.2.4.2). Cálculo: 52.000.000 − (1.800.000 + 1.200.000 + 700.000) = 48.300.000.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ALM-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Consignación del 20 % del precio mínimo como requisito para presentar postura",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.1.10"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.1.2.2.1.10. Requisito para la presentación de oferta o postura. Para participar en los procesos de enajenación de bienes del Estado, el oferente debe consignar a favor de la Entidad Estatal un valor no inferior al veinte por ciento (20%) del precio mínimo de venta, como requisito habilitante para participar en el Proceso de Contratación, valor que se imputará al precio cuando el interesado es el adjudicatario. [...] Si el oferente incumple cualquiera de las obligaciones derivadas de la oferta, tales como las condiciones de pago, la firma de documentos sujetos a registro, o cualquier otro asunto derivado del negocio jurídico, pierde la suma de dinero depositada a favor de la Entidad Estatal que se entiende como garantía de seriedad del ofrecimiento, sin perjuicio de que la Entidad Estatal reclame los perjuicios derivados del incumplimiento. En consecuencia no se exigirá garantía adicional a los oferentes o al comprador.",
+    "pregunta": "Una auxiliar administrativa del almacén de una gobernación apoya al comité que verifica los requisitos habilitantes de la venta en subasta de un lote de vehículos dados de baja. Los pliegos fijan un precio mínimo de venta de $35.000.000; el avalúo comercial del lote fue de $38.000.000. Se presentaron tres interesados: el primero consignó $7.000.000 a favor de la entidad; el segundo consignó $7.600.000; y el tercero no consignó dinero, sino que entregó una póliza de seriedad de la oferta por $8.000.000. Según el Decreto 1082 de 2015, ¿quiénes cumplen el requisito para presentar postura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El primero y el segundo; el tercero no hizo el depósito en dinero exigido.",
+        "explicacion": "Correcta. El oferente debe consignar un valor no inferior al 20 % del precio mínimo de venta: 35.000.000 × 20 % = 7.000.000. El primero consignó justo ese valor y el segundo, más. La póliza del tercero no es una consignación."
+      },
+      {
+        "id": "B",
+        "texto": "El segundo; el primero no llega al 20 % calculado sobre el avalúo comercial.",
+        "explicacion": "Incorrecta. Calcula el 20 % sobre el avalúo comercial (7.600.000). La base que fija la norma es el precio mínimo de venta, y el primero consignó exactamente el 20 % de este."
+      },
+      {
+        "id": "C",
+        "texto": "Los tres; la póliza del tercero cubre más del 20 % del precio mínimo de venta.",
+        "explicacion": "Incorrecta. La norma exige consignar dinero a favor de la entidad; esa suma depositada es la que se entiende como garantía de seriedad. Una póliza no reemplaza el depósito."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno; además de consignar, cada uno debía entregar una póliza de seriedad.",
+        "explicacion": "Incorrecta. La suma consignada se entiende como garantía de seriedad del ofrecimiento y, por eso, la norma dice que no se exigirá garantía adicional a los oferentes."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el precio mínimo es de $35.000.000 y el tercero entregó una póliza en vez de consignar. Regla: para participar en la enajenación, el oferente debe consignar a favor de la entidad un valor no inferior al 20 % del precio mínimo de venta; esa suma hace las veces de garantía de seriedad y no se exige garantía adicional (art. 2.2.1.2.2.1.10). Cálculo: 35.000.000 × 20 % = 7.000.000. Conclusión: cumplen el primero y el segundo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Ofrecimiento a título gratuito entre entidades: plazo, prelación y entrega material",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.4.3"
+    ],
+    "texto_fuente": "ARTÍCULO 2.2.1.2.2.4.3. Enajenación de bienes muebles a título gratuito entre Entidades Estatales. Las Entidades Estatales deben hacer un inventario de los bienes muebles que no utilizan y ofrecerlos a título gratuito a las Entidades Estatales a través de un acto administrativo motivado que deben publicar en su página web. La Entidad Estatal interesada en adquirir estos bienes a título gratuito, debe manifestarlo por escrito dentro de los treinta (30) días calendario siguientes a la fecha de publicación del acto administrativo. En tal manifestación la Entidad Estatal debe señalar la necesidad funcional que pretende satisfacer con el bien y las razones que justifican su solicitud. Si hay dos o más manifestaciones de interés de Entidades Estatales para el mismo bien, la Entidad Estatal que primero haya manifestado su interés debe tener preferencia. Los representantes legales de la Entidad Estatal titular del bien y la interesada en recibirlo, deben suscribir un acta de entrega en la cual deben establecer la fecha de la entrega material del bien, la cual no debe ser mayor a treinta (30) días calendario, contados a partir de la suscripción del acta de entrega.",
+    "pregunta": "El lunes 3 de agosto de 2026, una gobernación publicó en su página web el acto administrativo motivado con el que ofrece a título gratuito a otras entidades estatales 10 impresoras que no utiliza. Un técnico administrativo del almacén recibe las manifestaciones de interés por esas impresoras, todas por escrito y con la necesidad funcional y las razones de la solicitud: la de un hospital departamental, el 10 de agosto; la de un municipio, el 25 de agosto, que alega atender a una población mucho mayor; y la de un instituto departamental, el 7 de septiembre. La gobernación y la entidad elegida firmaron el acta de entrega el martes 15 de septiembre de 2026. ¿Quién recibe las impresoras y hasta qué fecha puede hacerse la entrega material?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El municipio, por tener la mayor necesidad; la entrega, a más tardar el 15 de octubre de 2026.",
+        "explicacion": "Incorrecta. El criterio de prelación no es el tamaño de la necesidad: si dos o más entidades manifiestan interés por el mismo bien, tiene preferencia la que lo hizo primero. La fecha límite de la entrega sí es correcta."
+      },
+      {
+        "id": "B",
+        "texto": "El municipio, por tener la mayor necesidad; la entrega, a más tardar el 28 de octubre de 2026.",
+        "explicacion": "Incorrecta. Tiene dos errores: la prelación no depende del tamaño de la necesidad, sino del orden en que se manifestó el interés, y el plazo de la entrega material se cuenta en días calendario (no hábiles) desde el acta, así que vence el 15 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "El hospital, que se presentó primero; la entrega, a más tardar el 15 de octubre de 2026.",
+        "explicacion": "Correcta. El plazo para manifestar interés vencía el 2 de septiembre (30 días calendario desde el 3 de agosto); el hospital y el municipio llegaron a tiempo, y el hospital fue el primero. La entrega material no puede superar 30 días calendario desde el acta: 15 de octubre."
+      },
+      {
+        "id": "D",
+        "texto": "El hospital, que se presentó primero; la entrega, a más tardar el 28 de octubre de 2026.",
+        "explicacion": "Incorrecta. Acierta en la entidad, pero cuenta 30 días hábiles desde el acta. El plazo de la entrega material es de 30 días calendario desde la firma del acta, es decir, hasta el 15 de octubre."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: publicación el 3 de agosto; manifestaciones el 10 y el 25 de agosto y el 7 de septiembre; acta firmada el 15 de septiembre. Regla: la entidad interesada debe manifestarse por escrito dentro de los 30 días calendario siguientes a la publicación; si hay dos o más, se prefiere a la primera; la entrega material no puede superar 30 días calendario desde el acta (art. 2.2.1.2.2.4.3). Cálculo: 3 de agosto + 30 días = 2 de septiembre; 15 de septiembre + 30 días = 15 de octubre. Conclusión: el hospital, a más tardar el 15 de octubre.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Exención del Registro Único de Proponentes en la enajenación de bienes del Estado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1150 de 2007",
+    "articulos": [
+      "art. 6, incs. 1 y 2 (modificado por el art. 221 del Decreto 19 de 2012)"
+    ],
+    "texto_fuente": "Todas las personas naturales o jurídicas nacionales o extranjeras domiciliadas o con sucursal en Colombia, que aspiren a celebrar contratos con las entidades estatales, se inscribirán en el Registro Único de Proponentes del Registro Único Empresarial de la Cámara de Comercio con jurisdicción en su domicilio principal. No se requerirá de este registro, ni de clasificación, en los casos de contratación directa; contratos para la prestación de servicios de salud; contratos de mínima cuantía; enajenación de bienes del Estado; [...] En los casos anteriormente señalados, corresponderá a las entidades contratantes cumplir con la labor de verificación de las condiciones de los proponentes.",
+    "pregunta": "Un ciudadano llama al almacén de una alcaldía porque quiere comprar uno de los vehículos que la entidad dio de baja y que pondrá en venta en las próximas semanas. Pregunta si antes debe inscribirse en el Registro Único de Proponentes (RUP) de la cámara de comercio. Según la Ley 1150 de 2007, ¿qué debe responderle la auxiliar administrativa que lo atiende?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sí; como aspira a contratar con una entidad estatal, sin el RUP no podrá participar en la venta.",
+        "explicacion": "Incorrecta. Aplica la regla general del art. 6 (quien aspire a contratar con entidades estatales se inscribe en el RUP) sin su excepción: el mismo artículo exceptúa la enajenación de bienes del Estado, y en esos casos la entidad verifica las condiciones de los proponentes."
+      },
+      {
+        "id": "B",
+        "texto": "Que no; en esta venta es la propia entidad la que verifica las condiciones de los oferentes.",
+        "explicacion": "Correcta. El art. 6 de la Ley 1150, modificado por el art. 221 del Decreto 19 de 2012, exceptúa del RUP la enajenación de bienes del Estado; en esos casos, la verificación de las condiciones de los proponentes le corresponde a la entidad contratante."
+      },
+      {
+        "id": "C",
+        "texto": "Que no, salvo que el valor de los vehículos supere la menor cuantía de la entidad.",
+        "explicacion": "Incorrecta. La excepción no depende de la cuantía: el art. 6 la fija para la enajenación de bienes del Estado como tal, igual que para otros casos, como los contratos de mínima cuantía."
+      },
+      {
+        "id": "D",
+        "texto": "Que sí, porque toda selección abreviada exige que el oferente esté inscrito en el RUP.",
+        "explicacion": "Incorrecta. La exigencia del RUP no depende de la modalidad de selección: el art. 6 exceptúa de forma expresa la enajenación de bienes del Estado, cualquiera que sea el procedimiento con que se adelante."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el ciudadano quiere comprar un bien que la entidad va a enajenar. Regla: quien aspire a contratar con entidades estatales debe inscribirse en el RUP, pero el art. 6 de la Ley 1150 (modificado por el art. 221 del Decreto 19 de 2012) exceptúa de ese registro, entre otros casos, la enajenación de bienes del Estado; en ellos, la entidad contratante verifica las condiciones de los proponentes. Conclusión: no necesita inscribirse en el RUP.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1150_2007.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ALM-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Bienes de uso público",
+    "subtema": "Clasificación: bienes de uso público frente a propiedades, planta y equipo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.1",
+      "Normas, Cap. I, num. 11.1"
+    ],
+    "texto_fuente": "Se reconocerán como propiedades, planta y equipo, a) los activos tangibles empleados por la entidad para la producción o suministro de bienes, para la prestación de servicios o para propósitos administrativos; [...] Se reconocerán como bienes de uso público, los activos destinados para el uso, goce y disfrute de la colectividad y que, por lo tanto, están al servicio de esta en forma permanente, con las limitaciones que establece el ordenamiento jurídico y la autoridad que regula su utilización. [...] Son ejemplos de bienes de uso público las redes de la infraestructura de transporte, los parques recreativos, las bibliotecas y hemerotecas públicas, y las plazas públicas.",
+    "pregunta": "Una técnica de bienes de un municipio actualiza el registro de activos y debe clasificar cuatro bienes: (1) la biblioteca pública municipal, abierta a toda la comunidad; (2) la malla vial urbana; (3) el edificio donde funcionan el despacho del alcalde y las secretarías, en el que también se atiende al público; y (4) dos grúas de la secretaría de tránsito que retiran de las vías los vehículos mal estacionados. Según las Normas de la CGN para entidades de gobierno, ¿cómo debe clasificarlos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los cuatro, como bienes de uso público, porque todos le sirven a la comunidad de forma permanente.",
+        "explicacion": "Incorrecta. El edificio y las grúas se emplean para propósitos administrativos y para prestar el servicio de tránsito: son propiedades, planta y equipo. Que la comunidad se beneficie del servicio no los vuelve bienes destinados a su uso, goce y disfrute."
+      },
+      {
+        "id": "B",
+        "texto": "La malla vial y las grúas, como bienes de uso público; la biblioteca y el edificio, como propiedades, planta y equipo.",
+        "explicacion": "Incorrecta. Las grúas operan en las vías, pero son equipos que la entidad emplea para prestar un servicio: son propiedades, planta y equipo. Y las bibliotecas públicas son un ejemplo expreso de bienes de uso público."
+      },
+      {
+        "id": "C",
+        "texto": "La biblioteca, la malla vial y el edificio, como bienes de uso público; las grúas, como propiedades, planta y equipo.",
+        "explicacion": "Incorrecta. Que en el edificio se atienda al público no lo convierte en bien de uso público: es un activo empleado para propósitos administrativos y para prestar servicios, es decir, propiedades, planta y equipo."
+      },
+      {
+        "id": "D",
+        "texto": "La biblioteca y la malla vial, como bienes de uso público; el edificio y las grúas, como propiedades, planta y equipo.",
+        "explicacion": "Correcta. La biblioteca pública y la red vial están destinadas al uso, goce y disfrute de la colectividad y son ejemplos expresos de bienes de uso público. El edificio y las grúas se emplean para propósitos administrativos o para prestar servicios: son propiedades, planta y equipo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la biblioteca y las vías están al servicio de la comunidad; el edificio y las grúas los usa la entidad para administrar y prestar servicios. Regla: son propiedades, planta y equipo los activos tangibles empleados para prestar servicios o para propósitos administrativos (num. 10.1); son bienes de uso público los destinados al uso, goce y disfrute de la colectividad, como las redes de transporte y las bibliotecas públicas (num. 11.1). Conclusión: biblioteca y malla vial, bienes de uso público; edificio y grúas, propiedades, planta y equipo.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Baja por venta en subasta: resultado e imputación de la consignación al precio",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN) y Decreto 1082 de 2015",
+    "articulos": [
+      "Normas, Cap. I, num. 10.4",
+      "Decreto 1082 de 2015, art. 2.2.1.2.2.1.10",
+      "Decreto 1082 de 2015, art. 2.2.1.2.2.2.2"
+    ],
+    "texto_fuente": "La pérdida o ganancia originada en la baja en cuentas de un elemento de propiedades, planta y equipo se calculará como la diferencia entre el valor de la contraprestación recibida, si existiere, y su valor en libros, y se reconocerá como ingreso o gasto en el resultado del periodo. [...] Para participar en los procesos de enajenación de bienes del Estado, el oferente debe consignar a favor de la Entidad Estatal un valor no inferior al veinte por ciento (20%) del precio mínimo de venta, como requisito habilitante para participar en el Proceso de Contratación, valor que se imputará al precio cuando el interesado es el adjudicatario. [...] teniendo en cuenta que el bien debe ser adjudicado al oferente que haya ofrecido el mayor valor a pagar por los bienes objeto de enajenación y en consecuencia, el Margen Mínimo debe ser al alza.",
+    "pregunta": "Una gobernación vendió en subasta pública una volqueta que había retirado del servicio. En sus libros, la volqueta tenía un costo de $280.000.000 y una depreciación acumulada de $203.000.000 al momento de la venta. El precio mínimo de venta era de $70.000.000 y el adjudicatario había consignado $14.000.000 para participar. La subasta se adjudicó por $86.000.000; el comprador pagó $72.000.000 más y recibió el vehículo el 10 de noviembre de 2026. La profesional de contabilidad debe registrar la baja. ¿Qué resultado arroja la operación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una ganancia de $23.000.000.",
+        "explicacion": "Incorrecta. Suma la consignación como si fuera un ingreso adicional (86.000.000 + 14.000.000 − 77.000.000). La suma consignada por el adjudicatario se imputa al precio: ya forma parte de los 86.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "Una ganancia de $9.000.000.",
+        "explicacion": "Correcta. Valor en libros: 280.000.000 − 203.000.000 = 77.000.000. Contraprestación: 86.000.000 (14.000.000 consignados, que se imputan al precio, más 72.000.000 de saldo). Ganancia: 86.000.000 − 77.000.000 = 9.000.000."
+      },
+      {
+        "id": "C",
+        "texto": "Una ganancia de $16.000.000.",
+        "explicacion": "Incorrecta. Compara el precio de adjudicación con el precio mínimo de venta (86.000.000 − 70.000.000). El precio mínimo es la base del proceso; el resultado contable se mide frente al valor en libros."
+      },
+      {
+        "id": "D",
+        "texto": "Una pérdida de $5.000.000.",
+        "explicacion": "Incorrecta. Toma como contraprestación solo el saldo pagado (72.000.000 − 77.000.000). La consignación del adjudicatario se imputa al precio y también es parte de lo recibido."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: valor en libros de $77.000.000; adjudicación por $86.000.000, de los cuales $14.000.000 ya estaban consignados. Regla: la ganancia o pérdida en la baja es la diferencia entre la contraprestación recibida y el valor en libros (num. 10.4); la consignación del adjudicatario se imputa al precio (art. 2.2.1.2.2.1.10), y en la subasta se adjudica al mayor valor ofrecido (art. 2.2.1.2.2.2.2). Cálculo: 280.000.000 − 203.000.000 = 77.000.000; 86.000.000 − 77.000.000 = 9.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Medición posterior al valor neto de realización, partida por partida",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas y Marco Conceptual para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.3",
+      "Marco Conceptual, num. 6.3.4.7, párr. 114"
+    ],
+    "texto_fuente": "Con posterioridad al reconocimiento inicial, los inventarios que se espera vender a precios de mercado se medirán al menor valor entre el costo y el valor neto de realización. [...] Si el valor neto de realización o el costo de reposición, según corresponda, es inferior al costo del inventario, la diferencia corresponderá al deterioro. [...] El ajuste del inventario al valor neto de realización o al costo de reposición, según corresponda, se calculará para cada partida, aunque la entidad podrá agrupar partidas similares o relacionadas. [...] El valor neto de realización es el valor que la entidad puede obtener por la venta de los activos menos los costos estimados para terminar su producción y los necesarios para llevar a cabo su venta.",
+    "pregunta": "Una imprenta departamental, establecimiento público que aplica el marco normativo para entidades de gobierno, vende sus publicaciones a precios de mercado. Al 31 de diciembre de 2026, el profesional de contabilidad revisa tres títulos; la política contable calcula el ajuste título por título. Atlas: 500 unidades, costo de $40.000, precio de venta estimado de $42.000 y comisión de venta de $6.000 por unidad. Guía turística: 800 unidades, costo de $15.000, precio de $25.000 y comisión de $3.000. Agenda 2026: 300 unidades, costo de $20.000, precio de $12.000 y comisión de $2.000. ¿Qué deterioro debe reconocer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$0",
+        "explicacion": "Incorrecta. Compara los totales: costo de 38.000.000 frente a un valor neto de realización de 38.600.000. El ajuste se calcula para cada partida (aquí, por título, como fija la política), así que el margen de la guía no compensa las pérdidas del atlas y de la agenda."
+      },
+      {
+        "id": "B",
+        "texto": "$2.400.000",
+        "explicacion": "Incorrecta. Compara el costo con el precio de venta sin restar la comisión: el atlas no tendría deterioro y la agenda tendría 8.000 por unidad. El valor neto de realización descuenta los costos necesarios para vender."
+      },
+      {
+        "id": "C",
+        "texto": "$5.000.000",
+        "explicacion": "Correcta. Valor neto de realización del atlas: 42.000 − 6.000 = 36.000; deterioro de 4.000 × 500 = 2.000.000. Guía: 22.000, por encima del costo, sin deterioro. Agenda: 10.000; deterioro de 10.000 × 300 = 3.000.000. Total: 5.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "$8.000.000",
+        "explicacion": "Incorrecta. Suma al deterioro del atlas (2.000.000) el costo total de las agendas (6.000.000), como si hubiera que retirarlas. Las agendas todavía se pueden vender: se miden al menor entre su costo y su valor neto de realización."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los títulos se venden a precios de mercado, cada uno tiene una comisión de venta y la política ajusta por título. Regla: estos inventarios se miden al menor entre el costo y el valor neto de realización, la diferencia es deterioro y el ajuste se calcula para cada partida (num. 9.3); el valor neto de realización descuenta del precio los costos necesarios para vender (Marco, párr. 114). Cálculo: atlas 4.000 × 500 = 2.000.000; agenda 10.000 × 300 = 3.000.000; total 5.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Reversión del deterioro de inventarios con límite en el costo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.3"
+    ],
+    "texto_fuente": "Con posterioridad al reconocimiento inicial, los inventarios que se espera vender a precios de mercado se medirán al menor valor entre el costo y el valor neto de realización. [...] Cuando las circunstancias que causaron el deterioro dejen de existir, se revertirá su valor, de manera que el nuevo valor contable sea el menor entre el costo y el valor neto de realización o costo de reposición, según corresponda. El valor del deterioro que se revierta afectará el resultado del periodo.",
+    "pregunta": "Un museo departamental, entidad de gobierno, vende réplicas de piezas arqueológicas a precios de mercado en su tienda. Al 31 de diciembre de 2025 tenía 400 réplicas con un costo de $30.000 cada una y un valor neto de realización de $24.000, por lo que reconoció un deterioro de $2.400.000. En 2026 no vendió ni compró réplicas. Al 31 de diciembre de 2026, después de una exposición que disparó la demanda, el valor neto de realización de cada réplica es de $33.000. ¿Por qué valor debe quedar el inventario de réplicas y qué efecto se reconoce?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$12.000.000, con una reversión de $2.400.000 en el resultado del periodo.",
+        "explicacion": "Correcta. Las circunstancias que causaron el deterioro desaparecieron, así que se revierte de manera que el valor sea el menor entre el costo (12.000.000) y el valor neto de realización (13.200.000). La reversión, 12.000.000 − 9.600.000 = 2.400.000, afecta el resultado."
+      },
+      {
+        "id": "B",
+        "texto": "$13.200.000, con un ingreso de $3.600.000 en el resultado del periodo.",
+        "explicacion": "Incorrecta. Lleva el inventario al valor neto de realización, por encima del costo. Tras la reversión, el valor contable es el menor entre el costo y el valor neto de realización."
+      },
+      {
+        "id": "C",
+        "texto": "$9.600.000, porque el deterioro reconocido en un periodo anterior no se revierte.",
+        "explicacion": "Incorrecta. Cuando dejan de existir las circunstancias que causaron el deterioro, la norma ordena revertirlo."
+      },
+      {
+        "id": "D",
+        "texto": "$13.200.000: $2.400.000 de reversión en el resultado y $1.200.000 en el patrimonio.",
+        "explicacion": "Incorrecta. Lleva el inventario por encima del costo y registra el exceso en el patrimonio. El valor contable no puede superar el costo, y lo que se revierte afecta el resultado del periodo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el deterioro de 2025 fue de $2.400.000 y en 2026 el valor neto de realización ($33.000) superó el costo ($30.000). Regla: si dejan de existir las circunstancias que causaron el deterioro, este se revierte de modo que el valor sea el menor entre el costo y el valor neto de realización, y la reversión afecta el resultado (num. 9.3). Cálculo: menor entre 400 × 30.000 = 12.000.000 y 400 × 33.000 = 13.200.000; reversión: 12.000.000 − 9.600.000 = 2.400.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Bienes de uso público",
+    "subtema": "Deterioro por daño físico estimado con la proporción física y depreciación posterior",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 11.3"
+    ],
+    "texto_fuente": "Para los elementos de los bienes de uso público que se consideren materiales, la entidad evaluará, como mínimo al final del periodo contable, si se dispone de evidencia de deterioro de estos activos, originado por daños físicos que disminuyan significativamente la capacidad del activo para prestar servicios. [...] El deterioro se medirá por el valor en libros de la parte del activo que presente daño físico. Si el valor en libros de la parte dañada no está identificado de manera separada, la entidad podrá estimarla tomando como referente a) la proporción del costo histórico que razonablemente pueda ser asignado a la parte dañada con relación al costo total del activo ajustado por la depreciación acumulada o b) la proporción física de la parte dañada con relación al activo total. Luego de reconocer el deterioro del valor, los cargos por depreciación del activo se determinarán, para los periodos futuros, teniendo en cuenta el valor en libros [...] ajustado por dicha pérdida. Esto permitirá distribuir el valor en libros ajustado del activo de una forma sistemática a lo largo de su vida útil restante.",
+    "pregunta": "Un municipio tiene un puente vehicular, bien de uso público, que costó $1.000.000.000 y está en servicio desde el 1 de enero de 2022. Se deprecia por el método lineal en 25 años y, al 31 de diciembre de 2026, ya tiene registrados cinco años de depreciación. En diciembre de 2026, una creciente destruyó parte de la estructura y redujo de forma significativa su capacidad. El valor en libros de la parte dañada no está identificado por separado: según el informe técnico, equivale al 20 % de la estructura, y la política contable del municipio, que considera material el puente, estima el deterioro con la proporción física. ¿Qué deterioro debe reconocer el profesional de contabilidad al cierre de 2026 y cuál será la depreciación anual desde 2027, si la vida útil restante no cambia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Deterioro de $200.000.000 y depreciación anual de $40.000.000.",
+        "explicacion": "Incorrecta. Tiene dos errores: aplica el 20 % al costo histórico sin descontar la depreciación acumulada (el deterioro es el valor en libros de la parte dañada) y mantiene la depreciación anterior (1.000.000.000 / 25), en vez de recalcularla sobre el valor en libros ajustado."
+      },
+      {
+        "id": "B",
+        "texto": "Deterioro de $200.000.000 y depreciación anual de $30.000.000.",
+        "explicacion": "Incorrecta. Recalcula bien la depreciación ((800.000.000 − 200.000.000) / 20), pero aplica el 20 % al costo histórico (1.000.000.000) sin descontar la depreciación acumulada. El deterioro es el valor en libros de la parte dañada: el 20 % de 800.000.000."
+      },
+      {
+        "id": "C",
+        "texto": "Deterioro de $160.000.000 y depreciación anual de $40.000.000.",
+        "explicacion": "Incorrecta. Mide bien el deterioro, pero mantiene la depreciación anterior (1.000.000.000 / 25). Después del deterioro, la depreciación se calcula sobre el valor en libros ajustado y la vida útil restante."
+      },
+      {
+        "id": "D",
+        "texto": "Deterioro de $160.000.000 y depreciación anual de $32.000.000.",
+        "explicacion": "Correcta. Valor en libros: 1.000.000.000 − 5 × 40.000.000 = 800.000.000. Deterioro: 20 % × 800.000.000 = 160.000.000. El nuevo valor en libros, 640.000.000, se distribuye en los 20 años restantes: 32.000.000 al año."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: valor en libros de $800.000.000, daño equivalente al 20 % de la estructura y 20 años de vida útil restante. Regla: el deterioro de un bien de uso público por daño físico se mide por el valor en libros de la parte dañada, que puede estimarse con la proporción física; después, la depreciación se calcula sobre el valor en libros ajustado a lo largo de la vida útil restante (num. 11.3). Cálculo: 800.000.000 × 20 % = 160.000.000; (800.000.000 − 160.000.000) / 20 = 32.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-ALM-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Responsabilidad por la pérdida de bienes",
+    "subtema": "Responsabilidad fiscal o resarcimiento por la vía disciplinaria según haya gestión fiscal",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 610 de 2000 y Ley 1952 de 2019",
+    "articulos": [
+      "Ley 610 de 2000, art. 3",
+      "Ley 610 de 2000, art. 4, inc. 1 y parágrafo 1",
+      "Ley 610 de 2000, art. 7",
+      "Ley 1952 de 2019, art. 38, num. 23"
+    ],
+    "texto_fuente": "ARTÍCULO 3o. GESTION FISCAL. Para los efectos de la presente ley, se entiende por gestión fiscal el conjunto de actividades económicas, jurídicas y tecnológicas, que realizan los servidores públicos y las personas de derecho privado que manejen o administren recursos o fondos públicos, tendientes a la adecuada y correcta adquisición, planeación, conservación, administración, custodia, explotación, enajenación, consumo, adjudicación, gasto, inversión y disposición de los bienes públicos, [...] ARTÍCULO 4o. OBJETO DE LA RESPONSABILIDAD FISCAL. La responsabilidad fiscal tiene por objeto el resarcimiento de los daños ocasionados al patrimonio público como consecuencia de la conducta dolosa o culposa de quienes realizan gestión fiscal [...] PARAGRAFO 1o. La responsabilidad fiscal es autónoma e independiente y se entiende sin perjuicio de cualquier otra clase de responsabilidad. [...] En los casos de pérdida, daño o deterioro por causas distintas al desgaste natural que sufren las cosas, de bienes en servicio o inservibles no dados de baja, únicamente procederá derivación de responsabilidad fiscal cuando el hecho tenga relación directa con el ejercicio de actos propios de la gestión fiscal por parte de los presuntos responsables. En los demás eventos de pérdida, daño o deterioro de este tipo de bienes, el resarcimiento de los perjuicios causados al erario procederá como sanción accesoria a la principal que se imponga dentro de los procesos disciplinarios que se adelanten por tales conductas o como consecuencia civil derivada de la comisión de hechos punibles, según que los hechos que originaron su ocurrencia correspondan a las faltas que sobre guarda y custodia de los bienes estatales establece el Código Disciplinario Unico o a los delitos tipificados en la legislación penal. [...] 23. Responder por la conservación de los útiles, equipos, muebles y bienes confiados a su guarda o administración y rendir cuenta oportuna de su utilización.",
+    "pregunta": "La asesora jurídica de una gobernación analiza dos pérdidas de bienes ocurridas en 2026. En la primera, el almacenista general, a quien el manual de funciones le asigna el recibo, la custodia y la entrega de los bienes de la bodega, entregó durante meses elementos sin orden de salida, y el conteo físico arrojó un faltante de 30 tabletas. En la segunda, un profesional de la secretaría de planeación dejó olvidado en un taxi el computador portátil que la entidad le asignó para su trabajo, y no fue posible recuperarlo. No hay indicios de delito en ninguno de los dos casos. Según la Ley 610 de 2000, ¿por qué vía se busca el resarcimiento del daño en cada caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En ambos, por un proceso de responsabilidad fiscal, porque toda pérdida de un bien público es un daño patrimonial.",
+        "explicacion": "Incorrecta. Para los bienes en servicio, la ley limita la responsabilidad fiscal a los hechos con relación directa con actos propios de la gestión fiscal. Usar un portátil para trabajar no lo es; ese resarcimiento va por la vía disciplinaria."
+      },
+      {
+        "id": "B",
+        "texto": "En el primero, por un proceso de responsabilidad fiscal; en el segundo, como sanción accesoria del proceso disciplinario.",
+        "explicacion": "Correcta. La custodia de los bienes de la bodega es gestión fiscal, así que el faltante del almacenista va a un proceso de responsabilidad fiscal, que no excluye el disciplinario. La pérdida del portátil en servicio no se relaciona con actos de gestión fiscal: el resarcimiento procede como sanción accesoria a la principal en el proceso disciplinario por el deber de guarda y custodia."
+      },
+      {
+        "id": "C",
+        "texto": "En ambos, como sanción accesoria del proceso disciplinario, porque quienes causaron las pérdidas son servidores públicos.",
+        "explicacion": "Incorrecta. La responsabilidad fiscal no se reserva a los particulares: alcanza a los servidores públicos que realizan gestión fiscal, como el almacenista que custodia la bodega."
+      },
+      {
+        "id": "D",
+        "texto": "En el primero, como sanción accesoria del proceso disciplinario; en el segundo, por un proceso de responsabilidad fiscal.",
+        "explicacion": "Incorrecta. Invierte las vías. Custodiar la bodega es gestión fiscal, así que el faltante del almacenista va a responsabilidad fiscal. El portátil es un bien en servicio cuya pérdida no tiene relación directa con actos de gestión fiscal: su resarcimiento procede como sanción accesoria en lo disciplinario."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el almacenista tiene a su cargo la custodia de la bodega; el profesional solo usaba el portátil para su trabajo. Regla: la gestión fiscal incluye la custodia de los bienes públicos (Ley 610, art. 3); en la pérdida de bienes en servicio solo hay responsabilidad fiscal si el hecho se relaciona directamente con actos de gestión fiscal y, si no, el resarcimiento procede como sanción accesoria en el proceso disciplinario (art. 7), por el deber de responder por los bienes confiados (Ley 1952, art. 38, num. 23). Conclusión: fiscal en el primero; disciplinario en el segundo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ALM-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Indemnización de la aseguradora por un elemento deteriorado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas y Marco Conceptual para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.3",
+      "Marco Conceptual, num. 5, párr. 47"
+    ],
+    "texto_fuente": "La compensación o indemnización procedente de terceros por elementos deteriorados de propiedades, planta y equipo se reconocerá como ingreso en el resultado del periodo en el momento en que la compensación o indemnización sea exigible. [...] No compensación: no se reconocen ni se presentan partidas netas como efecto de compensar los activos y pasivos del estado de situación financiera, o los ingresos, gastos y costos que integran el estado de resultados, salvo en aquellos casos en que, de forma excepcional, así se regule.",
+    "pregunta": "El 10 de marzo de 2026, una camioneta de una alcaldía sufrió un choque. Ese mes, la entidad reconoció un deterioro de $25.000.000 sobre el vehículo, y el 15 de marzo presentó la reclamación a la aseguradora. El 20 de mayo de 2026, la aseguradora aceptó el siniestro y, desde esa fecha, la alcaldía puede exigir el pago de $18.000.000, que recibió el 5 de junio. ¿Cómo debe registrar la profesional de contabilidad la indemnización?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como ingreso de mayo por $18.000.000, sin modificar el deterioro reconocido en marzo.",
+        "explicacion": "Correcta. La indemnización de terceros por elementos deteriorados de propiedades, planta y equipo se reconoce como ingreso cuando es exigible: el 20 de mayo. El deterioro se mantiene por separado, porque ingresos y gastos no se compensan."
+      },
+      {
+        "id": "B",
+        "texto": "Como menor valor del deterioro de marzo, que queda reducido a un neto de $7.000.000.",
+        "explicacion": "Incorrecta. Compensa la indemnización con el deterioro. La norma la reconoce como ingreso del periodo, y el principio de no compensación impide presentar el neto."
+      },
+      {
+        "id": "C",
+        "texto": "Como ingreso de marzo por $18.000.000, porque la reclamación se presentó en ese mes.",
+        "explicacion": "Incorrecta. Presentar la reclamación no hace exigible el pago: antes de que la aseguradora aceptara el siniestro, la indemnización no se podía cobrar."
+      },
+      {
+        "id": "D",
+        "texto": "Como ingreso de junio por $18.000.000, porque en ese mes se recibió el dinero.",
+        "explicacion": "Incorrecta. Reconoce el ingreso cuando entra el efectivo. La regla atiende a la exigibilidad (20 de mayo), no a la fecha del pago."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la reclamación se presentó en marzo, el pago se volvió exigible el 20 de mayo y se recibió el 5 de junio. Regla: la compensación o indemnización de terceros por elementos deteriorados de propiedades, planta y equipo se reconoce como ingreso del periodo cuando es exigible (Normas, num. 10.3), sin compensarla con el gasto por deterioro (Marco, párr. 47). Conclusión: ingreso de $18.000.000 en mayo, y el deterioro de $25.000.000 sigue reconocido en marzo.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ALM-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Bienes de uso público",
+    "subtema": "Bienes que pueden incluirse en un proceso de enajenación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN) y Ley 1150 de 2007",
+    "articulos": [
+      "Normas, Cap. I, num. 10.1",
+      "Normas, Cap. I, num. 11.1",
+      "Ley 1150 de 2007, art. 2, num. 2, lit. e"
+    ],
+    "texto_fuente": "También se reconocerán como propiedades planta y equipo, los bienes inmuebles con uso futuro indeterminado [...] Los bienes de uso público se caracterizan porque son inalienables, imprescriptibles e inembargables. Son ejemplos de bienes de uso público las redes de la infraestructura de transporte, los parques recreativos, las bibliotecas y hemerotecas públicas, y las plazas públicas. [...] Serán causales de selección abreviada las siguientes: [...] e) La enajenación de bienes del Estado, con excepción de aquellos a que se refiere la Ley 226 de 1995.",
+    "pregunta": "Un profesional especializado de la secretaría general de un municipio debe emitir concepto sobre la lista de bienes que el almacén propone vender en 2026: seis volquetas retiradas del servicio; un lote urbano que el municipio compró hace años y al que todavía no le ha definido un uso; y la plaza pública principal, que un inversionista privado ofreció comprar para construir un centro comercial. ¿Qué concepto debe emitir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pueden venderse los tres bienes por selección abreviada, porque todos figuran como activos en la contabilidad del municipio.",
+        "explicacion": "Incorrecta. Figurar en la contabilidad no hace enajenable un bien. La plaza pública es un bien de uso público, y esos bienes son inalienables."
+      },
+      {
+        "id": "B",
+        "texto": "Pueden venderse las volquetas y el lote, pero por licitación pública, porque su valor conjunto supera la menor cuantía.",
+        "explicacion": "Incorrecta. La enajenación de bienes del Estado es causal de selección abreviada, sin que importe su cuantía."
+      },
+      {
+        "id": "C",
+        "texto": "Pueden venderse las volquetas por selección abreviada; el lote y la plaza no, porque los inmuebles públicos no se enajenan.",
+        "explicacion": "Incorrecta. El lote sin uso definido es un inmueble con uso futuro indeterminado, que se reconoce como propiedad, planta y equipo y no como bien de uso público; puede venderse. Lo inalienable es la plaza."
+      },
+      {
+        "id": "D",
+        "texto": "Pueden venderse las volquetas y el lote por selección abreviada; la plaza no, porque es un bien que no se puede enajenar.",
+        "explicacion": "Correcta. Las volquetas retiradas y el lote con uso futuro indeterminado son propiedades, planta y equipo, y su enajenación se adelanta por selección abreviada. La plaza pública es un bien de uso público y, por tanto, inalienable."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las volquetas y el lote son activos de la entidad sin destinación al público; la plaza está al servicio de la colectividad. Regla: los inmuebles con uso futuro indeterminado son propiedades, planta y equipo (num. 10.1); los bienes de uso público, como las plazas públicas, son inalienables (num. 11.1); la enajenación de bienes del Estado se adelanta por selección abreviada (Ley 1150, art. 2, num. 2, lit. e). Conclusión: se venden las volquetas y el lote por selección abreviada; la plaza no.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-020",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Responsabilidad por la pérdida de bienes",
+    "subtema": "Pérdida de bienes por culpa gravísima en cuantía de 500 salarios mínimos o más",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 29 (modificado por el art. 4 de la Ley 2094 de 2021)",
+      "art. 47, num. 9 (modificado por el art. 8 de la Ley 2094 de 2021)",
+      "art. 48, nums. 1, 2 y 4 (modificado por el art. 9 de la Ley 2094 de 2021)",
+      "art. 62, num. 1"
+    ],
+    "texto_fuente": "Habrá culpa gravísima cuando se incurra en falta disciplinaria por ignorancia supina, desatención elemental o violación manifiesta de reglas de obligatorio cumplimiento. La culpa será grave cuando se incurra en falta disciplinaria por inobservancia del cuidado necesario que cualquier persona del común imprime a sus actuaciones. [...] 9. La realización típica de una falta objetivamente gravísima cometida con culpa grave, será considerada falta grave. [...] Destitución e inhabilidad general de diez (10) a veinte (20) años para las faltas gravísimas dolosas. [...] Destitución e inhabilidad general de ocho (8) a diez (10) años para las faltas gravísimas realizadas con culpa gravísima. [...] 4. Suspensión en el ejercicio del cargo de uno (1) a doce (12) meses para las faltas graves culposas. [...] 1. Dar lugar a que por culpa gravísima se extravíen, pierdan o dañen bienes del Estado o a cargo del mismo, o de empresas o instituciones en que este tenga parte o bienes de particulares cuya administración o custodia se le haya confiado por razón de sus funciones, en cuantía igual o superior a quinientos (500) salarios mínimos legales mensuales.",
+    "pregunta": "Un profesional de la oficina de control disciplinario interno de una gobernación analiza la conducta del almacenista general. Está probado que el protocolo de seguridad de la bodega, adoptado por resolución y firmado por el almacenista al recibir el cargo, le ordena cerrarla con llave y activar la alarma al final de cada jornada, y que la víspera de un puente festivo la secretaria general le recordó por escrito esa orden. Aun así, ese día se fue sin cerrar la bodega y sin activar la alarma, y durante el puente se hurtaron 280 computadores portátiles de $4.500.000 cada uno, destinados a las escuelas del departamento. No hay prueba de que haya querido el hurto ni de que haya participado en él. Para el análisis, tome como dato un salario mínimo mensual de $1.750.000. ¿Cómo debe calificarse la falta y qué sanción le corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Falta grave por culpa grave, con suspensión de uno a doce meses, porque solo descuidó la bodega y no quiso la pérdida.",
+        "explicacion": "Incorrecta. Una falta objetivamente gravísima cometida con culpa grave se considera grave (art. 47, num. 9), pero aquí no hubo un simple descuido: el almacenista conocía el protocolo adoptado por resolución, lo había firmado y se le recordó por escrito, y aun así dejó la bodega abierta y sin alarma. Eso es violación manifiesta de reglas de obligatorio cumplimiento, es decir, culpa gravísima (art. 29)."
+      },
+      {
+        "id": "B",
+        "texto": "Falta gravísima dolosa, con destitución e inhabilidad general de diez a veinte años para el almacenista.",
+        "explicacion": "Incorrecta. No está probado que haya querido el resultado, así que no hay dolo; la sanción de 10 a 20 años es la de las faltas gravísimas dolosas."
+      },
+      {
+        "id": "C",
+        "texto": "Falta gravísima realizada con culpa gravísima, con destitución e inhabilidad general de ocho a diez años.",
+        "explicacion": "Correcta. Hay culpa gravísima (violación manifiesta de reglas de obligatorio cumplimiento) y la pérdida es de 280 × 4.500.000 = 1.260.000.000, es decir, 720 salarios mínimos, por encima de los 500 que exige la falta (500 × 1.750.000 = 875.000.000). La sanción es destitución e inhabilidad general de 8 a 10 años."
+      },
+      {
+        "id": "D",
+        "texto": "No es una falta gravísima, porque el hurto lo cometieron terceros y no el almacenista; es una falta grave.",
+        "explicacion": "Incorrecta. La falta no exige que el servidor se apropie de los bienes: basta con que, por culpa gravísima, dé lugar a que se pierdan bienes confiados a su custodia en cuantía de 500 salarios mínimos o más."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el almacenista incumplió, sin dolo, el protocolo de cierre y alarma que había firmado y que se le recordó por escrito, y se perdieron bienes por $1.260.000.000. Regla: hay culpa gravísima por violación manifiesta de reglas de obligatorio cumplimiento (art. 29); es falta gravísima dar lugar por culpa gravísima a la pérdida de bienes confiados en cuantía igual o superior a 500 salarios mínimos (art. 62, num. 1), sancionada con destitución e inhabilidad general de 8 a 10 años (art. 48, num. 2). Cálculo: 1.260.000.000 / 1.750.000 = 720 salarios mínimos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-021",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Responsabilidad sobre los bienes",
+    "subtema": "Orden del superior de llevar bienes a una actividad oficial fuera de la sede: cumplimiento y registro de la salida",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 38, num. 5",
+      "art. 38, num. 8",
+      "art. 38, nums. 22 y 23"
+    ],
+    "texto_fuente": "5. Utilizar los bienes y recursos asignados para el desempeño de su empleo, cargo o función, las facultades que le sean atribuidas, o la información reservada a que tenga acceso por razón de su función, en forma exclusiva para los fines a que están afectos. [...] 8. Cumplir las disposiciones que sus superiores jerárquicos adopten en ejercicio de sus atribuciones, siempre que no sean contrarias a la Constitución Nacional [...] y a las leyes vigentes [...] 22. Vigilar y salvaguardar los bienes y valores que le han sido encomendados y cuidar que sean utilizados debida y racionalmente, de conformidad con los fines a que han sido destinados. 23. Responder por la conservación de los útiles, equipos, muebles y bienes confiados a su guarda o administración y rendir cuenta oportuna de su utilización.",
+    "pregunta": "El secretario general de una alcaldía, superior jerárquico del almacén, le ordena por correo electrónico a un auxiliar administrativo del almacén que el sábado le entregue a la secretaría de salud 30 sillas, una carpa y un equipo de sonido para una jornada de vacunación que esa secretaría hará en una vereda del municipio. Los bienes deben volver al almacén el lunes. El auxiliar duda: la jornada es en fin de semana y fuera de la sede, y el alcalde no ha firmado nada sobre esa salida. Según la Ley 1952 de 2019, ¿qué debe hacer el auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Abstenerse de entregarlos, porque usarlos un sábado y fuera de la sede los aparta de los fines a que están destinados.",
+        "explicacion": "Incorrecta. Lo que la ley exige es usar los bienes para los fines a que están afectos (art. 38, num. 5), y una jornada de vacunación de la propia alcaldía es uno de esos fines, aunque se haga un sábado y fuera de la sede. La orden del superior, dada en ejercicio de sus atribuciones y conforme a la ley, debe cumplirse (num. 8)."
+      },
+      {
+        "id": "B",
+        "texto": "Abstenerse de entregarlos hasta que el alcalde los autorice por escrito, porque es el representante legal de la entidad.",
+        "explicacion": "Incorrecta. El deber es cumplir las disposiciones que los superiores jerárquicos adopten en ejercicio de sus atribuciones, siempre que no sean contrarias a la Constitución ni a las leyes (art. 38, num. 8). La orden la dio el superior del almacén para un fin oficial; condicionarla a una firma del alcalde es exigir un requisito que la ley no pone."
+      },
+      {
+        "id": "C",
+        "texto": "Entregarlos y registrar qué bienes salen, quién los recibe y cuándo vuelven, porque sigue respondiendo por ellos.",
+        "explicacion": "Correcta. La orden viene del superior jerárquico, en ejercicio de sus atribuciones, y destina los bienes a un fin propio de la entidad, así que debe cumplirse (art. 38, nums. 5 y 8). Como los bienes están confiados a su guarda, el auxiliar debe vigilarlos, responder por su conservación y rendir cuenta oportuna de su utilización (nums. 22 y 23), lo que exige dejar registrada la salida."
+      },
+      {
+        "id": "D",
+        "texto": "Entregarlos sin registrar la salida, porque los bienes siguen bajo el control de la alcaldía y vuelven el lunes.",
+        "explicacion": "Incorrecta. Que los bienes sigan siendo de la alcaldía no releva al auxiliar de vigilarlos, responder por su conservación y rendir cuenta oportuna de su utilización (art. 38, nums. 22 y 23); sin un registro de la salida no podría hacerlo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el superior del almacén ordena prestar bienes a otra dependencia de la alcaldía para una jornada de vacunación, es decir, para un fin oficial. Regla: los bienes se usan exclusivamente para los fines a que están afectos (art. 38, num. 5, de la Ley 1952); las órdenes del superior dadas en ejercicio de sus atribuciones y conformes a la ley se cumplen (num. 8), y quien tiene bienes a su guarda debe vigilarlos, responder por su conservación y rendir cuenta oportuna de su utilización (nums. 22 y 23). Conclusión: entregarlos y registrar la salida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ALM-022",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Responsabilidad sobre los bienes",
+    "subtema": "Deterioro por desgaste natural frente a daño de un bien en servicio",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 610 de 2000 y Ley 1952 de 2019",
+    "articulos": [
+      "Ley 610 de 2000, art. 7",
+      "Ley 1952 de 2019, art. 38, num. 23",
+      "Ley 1952 de 2019, art. 29 (modificado por el art. 4 de la Ley 2094 de 2021)"
+    ],
+    "texto_fuente": "En los casos de pérdida, daño o deterioro por causas distintas al desgaste natural que sufren las cosas, de bienes en servicio o inservibles no dados de baja, únicamente procederá derivación de responsabilidad fiscal cuando el hecho tenga relación directa con el ejercicio de actos propios de la gestión fiscal por parte de los presuntos responsables. En los demás eventos de pérdida, daño o deterioro de este tipo de bienes, el resarcimiento de los perjuicios causados al erario procederá como sanción accesoria a la principal que se imponga dentro de los procesos disciplinarios que se adelanten por tales conductas [...] 23. Responder por la conservación de los útiles, equipos, muebles y bienes confiados a su guarda o administración y rendir cuenta oportuna de su utilización. [...] La culpa sancionable podrá ser gravísima o grave. La culpa leve no será sancionable en materia disciplinaria. [...] La culpa será grave cuando se incurra en falta disciplinaria por inobservancia del cuidado necesario que cualquier persona del común imprime a sus actuaciones.",
+    "pregunta": "Una secretaría de una gobernación cambia de sede y sus servidores devuelven al almacén los equipos que tenían asignados. Un técnico del almacén revisa dos computadores portátiles, ninguno dado de baja: el primero, asignado en 2020, ya no sostiene la carga de la batería y tiene las teclas gastadas por el uso diario; el segundo, asignado en 2025, tiene la pantalla rota y la carcasa doblada porque su usuaria lo dejó sobre el techo del vehículo oficial mientras subía unas cajas, el vehículo arrancó y el portátil cayó a la vía. El técnico debe diligenciar el reporte de novedades. ¿En cuál de los dos casos debe reportar un daño que da lugar a buscar el resarcimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En los dos, porque ambos portátiles estaban en servicio y ninguno se había dado de baja cuando se deterioró.",
+        "explicacion": "Incorrecta. La Ley 610 se refiere a la pérdida, el daño o el deterioro por causas distintas al desgaste natural que sufren las cosas (art. 7). La batería agotada y las teclas gastadas tras seis años de uso diario son desgaste natural."
+      },
+      {
+        "id": "B",
+        "texto": "Solo en el segundo, porque la rotura se debe a cómo se transportó y no al uso ordinario del equipo.",
+        "explicacion": "Correcta. El daño del segundo portátil no viene del desgaste natural, sino de dejarlo sobre el techo de un vehículo que iba a arrancar: no es un descuido leve, sino la inobservancia del cuidado que cualquier persona del común pone en sus actos, es decir, por lo menos culpa grave (Ley 1952, art. 29). La usuaria debía responder por la conservación del equipo confiado a su guarda (Ley 1952, art. 38, num. 23), y la Ley 610 (art. 7) prevé el resarcimiento de la pérdida, el daño o el deterioro de bienes en servicio por causas distintas al desgaste natural."
+      },
+      {
+        "id": "C",
+        "texto": "Solo en el primero, porque su deterioro es mayor y compromete el funcionamiento de todo el equipo.",
+        "explicacion": "Incorrecta. Lo decisivo no es la magnitud del deterioro sino su causa. El del primer portátil proviene del desgaste natural por el uso, que queda por fuera de la regla."
+      },
+      {
+        "id": "D",
+        "texto": "En ninguno, porque el resarcimiento solo procede cuando el bien se pierde y no cuando se daña.",
+        "explicacion": "Incorrecta. El art. 7 de la Ley 610 cubre la pérdida, el daño y el deterioro de los bienes en servicio, no solo su pérdida."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el primer portátil se deterioró por seis años de uso diario; el segundo se rompió porque su usuaria lo dejó sobre el techo de un vehículo que arrancó. Regla: el resarcimiento por pérdida, daño o deterioro de bienes en servicio procede cuando la causa es distinta al desgaste natural (Ley 610, art. 7); el servidor responde por la conservación de los equipos confiados a su guarda (Ley 1952, art. 38, num. 23), y ese descuido es, por lo menos, culpa grave (art. 29). Conclusión: solo el segundo caso se reporta como daño.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Medición inicial de un bien recibido en permuta",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.1",
+      "Normas, Cap. I, num. 10.2"
+    ],
+    "texto_fuente": "El mantenimiento de las propiedades, planta y equipo se reconocerá como gasto en el resultado del periodo, salvo que deba incluirse como parte del costo de otros activos de acuerdo con la Norma de inventarios. [...] Las propiedades, planta y equipo que se reciban en permuta se medirán por su valor de mercado. A falta de este, se medirán por el valor de mercado de los activos entregados o, en ausencia de ambos, por el valor en libros de los activos entregados. En todo caso, al valor determinado se le adicionará cualquier desembolso que sea directamente atribuible a la preparación del activo para el uso previsto.",
+    "pregunta": "Un municipio entregó en permuta a un concesionario una camioneta que en sus libros tenía un costo de $90.000.000 y una depreciación acumulada de $54.000.000, y recibió a cambio un camión de estacas para la secretaría de obras. No fue posible establecer el valor de mercado del camión; según un avalúo, el de la camioneta era de $48.000.000. Para dejar el camión en condiciones de operar, el municipio pagó $2.500.000 por trasladarlo desde otra ciudad y $1.800.000 por adecuar la carrocería; un mes después de empezar a usarlo, pagó $600.000 por su primer mantenimiento preventivo. El técnico administrativo del almacén debe elaborar el comprobante de entrada. Según las Normas de la CGN para entidades de gobierno, ¿por qué valor debe ingresar el camión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$40.300.000",
+        "explicacion": "Incorrecta. Parte del valor en libros de la camioneta (90.000.000 − 54.000.000 = 36.000.000). Ese valor solo se usa cuando no hay valor de mercado ni del bien recibido ni del entregado, y aquí sí se conoce el de la camioneta."
+      },
+      {
+        "id": "B",
+        "texto": "$52.900.000",
+        "explicacion": "Incorrecta. Suma el mantenimiento preventivo, que se reconoce como gasto del periodo (num. 10.1) y no hace parte del costo del camión."
+      },
+      {
+        "id": "C",
+        "texto": "$48.000.000",
+        "explicacion": "Incorrecta. Toma bien la base, pero omite el traslado y la adecuación, que son desembolsos atribuibles a la preparación del camión para su uso y se suman al valor determinado (num. 10.2)."
+      },
+      {
+        "id": "D",
+        "texto": "$52.300.000",
+        "explicacion": "Correcta. A falta de valor de mercado del camión, se usa el de la camioneta entregada y se le suman los desembolsos para dejarlo en condiciones de operar: 48.000.000 + 2.500.000 + 1.800.000 = 52.300.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: no hay valor de mercado del camión, pero sí de la camioneta ($48.000.000); el traslado y la adecuación lo dejaron listo para operar, y el mantenimiento se hizo ya en uso. Regla: lo recibido en permuta se mide por su valor de mercado; a falta de este, por el valor de mercado de lo entregado, más los desembolsos atribuibles a su preparación (num. 10.2); el mantenimiento es gasto (num. 10.1). Cálculo: 48.000.000 + 2.500.000 + 1.800.000 = 52.300.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Conciliación del kárdex con contabilidad y ajuste por mermas en el conteo físico",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.2.4",
+      "Normas, Cap. I, num. 9.4",
+      "Normas, Cap. I, num. 9.5"
+    ],
+    "texto_fuente": "Los inventarios se llevarán utilizando el sistema de inventario permanente. [...] Los inventarios que se distribuyan gratuitamente se reconocerán como gasto en el resultado del periodo, cuando se distribuya el bien. [...] Las mermas, sustracciones o vencimiento de los inventarios, implicarán el retiro de estos y su reconocimiento como gastos en el resultado del periodo.",
+    "pregunta": "Un técnico de inventarios de la secretaría de salud de un departamento hace la conciliación de noviembre de 2026 de los toldillos que la entidad entrega gratis a familias de zonas con riesgo de dengue, valorados a un costo promedio de $18.000 cada uno. El kárdex muestra 2.350 unidades; contabilidad, 2.470 unidades por $44.460.000. La diferencia es una entrega de 120 toldillos a familias de una vereda, hecha el 25 de noviembre y registrada en el kárdex, pero no en contabilidad. En el conteo físico del 30 de noviembre hay 2.310 unidades, y el informe del almacén atribuye los 40 faltantes a mermas por roturas en el manejo de la bodega. ¿Qué ajuste debe proponer el técnico para el cierre de noviembre?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reconocer como gasto $2.160.000 por la entrega y $720.000 por las mermas; el inventario contable queda en $41.580.000.",
+        "explicacion": "Correcta. Lo que se distribuye gratis se reconoce como gasto cuando se entrega (num. 9.4): 120 × 18.000 = 2.160.000. Las mermas implican retirar los bienes y reconocer un gasto (num. 9.5): 40 × 18.000 = 720.000. Inventario final: 2.310 × 18.000 = 41.580.000."
+      },
+      {
+        "id": "B",
+        "texto": "Reconocer un gasto de $2.160.000 y una cuenta por cobrar de $720.000 a cargo del almacenista; el inventario queda en $41.580.000.",
+        "explicacion": "Incorrecta. Las mermas se retiran del inventario y se reconocen como gasto del periodo (num. 9.5). Si alguien debe responder por ellas, eso lo define el proceso correspondiente, no un registro contable anticipado contra el almacenista."
+      },
+      {
+        "id": "C",
+        "texto": "Reconocer un gasto de $720.000 por las mermas y dejar la entrega ajustada solo en el kárdex; el inventario contable queda en $43.740.000.",
+        "explicacion": "Incorrecta. En el sistema de inventario permanente (num. 9.2.4), contabilidad debe reconocer el gasto cuando los toldillos se entregan (num. 9.4). Ajustar solo el kárdex deja el inventario contable sobrevalorado en $2.160.000."
+      },
+      {
+        "id": "D",
+        "texto": "Reconocer un gasto de $2.160.000 y dejar los 40 faltantes hasta la toma física anual de diciembre; el inventario queda en $42.300.000.",
+        "explicacion": "Incorrecta. Las mermas detectadas en el conteo se retiran y se llevan al gasto desde ya (num. 9.5); aplazarlas mantiene en el inventario $720.000 de bienes que ya no existen."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: 120 toldillos se entregaron el 25 de noviembre sin registro contable y el conteo halló 40 menos por mermas. Regla: con inventario permanente (num. 9.2.4), lo que se distribuye gratis es gasto cuando se entrega (num. 9.4), y las mermas implican retirar el inventario y reconocer un gasto (num. 9.5). Cálculo: 120 × 18.000 = 2.160.000; 40 × 18.000 = 720.000; 2.310 × 18.000 = 41.580.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ALM-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Indicios de deterioro de activos no generadores de efectivo detectados en la toma física",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 20",
+      "Normas, Cap. I, num. 20.1",
+      "Normas, Cap. I, num. 20.2"
+    ],
+    "texto_fuente": "Esta Norma se aplicará para la contabilización del deterioro del valor de los activos no generadores de efectivo que la entidad considere materiales y que estén clasificados como propiedades, planta y equipo o activos intangibles. [...] Como mínimo al final del periodo contable, la entidad evaluará si existen indicios de deterioro del valor de sus activos no generadores de efectivo. [...] b) Durante el periodo, el valor de mercado del activo ha disminuido significativamente más que lo que se esperaría como consecuencia del paso del tiempo o de su uso normal. Fuentes internas de información: a) Se dispone de evidencia sobre la obsolescencia o deterioro físico del activo. b) Durante el periodo, han tenido lugar, o se espera que tengan lugar en un futuro inmediato, cambios significativos en el grado de utilización o la manera como se usa o se espera usar el activo, los cuales afectarán desfavorablemente la entidad a largo plazo. Estos cambios incluyen el hecho de que el activo esté ocioso [...] c) Se ha detenido la construcción del activo por un periodo superior a 12 meses.",
+    "pregunta": "En la toma física de 2026 de la secretaría de obras de un municipio, una técnica de inventarios revisa cuatro elementos de propiedades, planta y equipo que la entidad usa para prestar servicios gratuitos y que la política contable califica como materiales: (1) una volqueta que pasó todo el año parqueada, porque el transporte de material se contrató con un tercero hasta 2030; (2) unos computadores que funcionan sin fallas y cuyo valor de mercado bajó lo que se esperaba por su uso y su antigüedad; (3) una planta eléctrica con el motor fundido, según el informe del taller; y (4) un centro de acopio cuya construcción está suspendida desde hace 15 meses por falta de recursos. Según las Normas de la CGN para entidades de gobierno, ¿cuáles debe reportar a contabilidad como indicios de deterioro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La volqueta, los computadores y la planta eléctrica.",
+        "explicacion": "Incorrecta. Incluye los computadores, cuyo valor de mercado bajó lo esperable por el paso del tiempo y el uso; el indicio externo exige una disminución significativamente mayor (num. 20.2). Además, omite el centro de acopio, cuya construcción lleva más de 12 meses detenida."
+      },
+      {
+        "id": "B",
+        "texto": "Los computadores, la planta eléctrica y el centro de acopio.",
+        "explicacion": "Incorrecta. Incluye los computadores, que no muestran indicio, y omite la volqueta: que un activo quede ocioso por un cambio significativo en su utilización es un indicio interno (num. 20.2, fuentes internas, lit. b)."
+      },
+      {
+        "id": "C",
+        "texto": "La volqueta, la planta eléctrica y el centro de acopio.",
+        "explicacion": "Correcta. La volqueta ociosa (cambio en el grado de utilización), la planta con el motor fundido (deterioro físico) y la obra detenida por más de 12 meses son indicios internos (num. 20.2). Los computadores, que funcionan y perdieron valor lo esperable por su uso, no lo son."
+      },
+      {
+        "id": "D",
+        "texto": "La volqueta, los computadores y el centro de acopio.",
+        "explicacion": "Incorrecta. Incluye los computadores, que no muestran indicio, y omite la planta eléctrica, que tiene evidencia de deterioro físico (num. 20.2, fuentes internas, lit. a)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los cuatro son activos materiales no generadores de efectivo; la volqueta está ociosa, la planta tiene un daño físico, la obra lleva 15 meses suspendida y los computadores solo perdieron valor por su uso normal. Regla: al cierre se evalúan los indicios de deterioro de estos activos (nums. 20 y 20.1); son indicios el deterioro físico, que el activo quede ocioso, la construcción detenida más de 12 meses y una baja del valor de mercado mayor a la esperada por el uso (num. 20.2). Conclusión: volqueta, planta y centro de acopio.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-026",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Contenido del aviso de convocatoria para la venta de bienes muebles",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.1.8"
+    ],
+    "texto_fuente": "El aviso de convocatoria debe contener además de lo establecido en el artículo 2.2.1.1.2.1.2 del presente decreto, los datos identificadores del bien y la indicación de las condiciones mínimas de la enajenación, el valor del avalúo comercial y el precio mínimo de venta, si fueren diferentes. [...] En el caso de bienes muebles el aviso debe señalar: a) el municipio o distrito donde se ubican; b) su localización exacta; c) el tipo de bien; d) la existencia o no de gravámenes o afectaciones de carácter jurídico, administrativo o técnico que limiten el goce al derecho de dominio, y e) la existencia de contratos que afecten o limiten su uso.",
+    "pregunta": "Una auxiliar administrativa del almacén de una gobernación proyecta el aviso de convocatoria para vender en subasta dos volquetas de tres ejes dadas de baja, que están en el patio de maquinaria de la gobernación en un municipio de la provincia. Según el avalúo comercial que hizo un avaluador inscrito en el Registro Nacional de Avaluadores, valen $180.000.000; descontados los gastos estimados de un año, el precio mínimo de venta es de $168.000.000. En contabilidad, las volquetas tienen un valor en libros de $40.000.000. Fuera de lo que debe contener todo aviso de convocatoria, ¿qué debe informar sobre la ubicación y el valor de las volquetas, según el Decreto 1082 de 2015?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El municipio y la dirección exacta del patio; el avalúo comercial de $180.000.000 y el precio mínimo de $168.000.000.",
+        "explicacion": "Correcta. En los bienes muebles, el aviso debe señalar el municipio y la localización exacta, además del tipo de bien, los gravámenes y los contratos que limiten su uso; y como el avalúo comercial y el precio mínimo de venta son diferentes, deben informarse los dos (art. 2.2.1.2.2.1.8)."
+      },
+      {
+        "id": "B",
+        "texto": "El municipio y la dirección exacta del patio; el valor en libros de $40.000.000 y el precio mínimo de $168.000.000.",
+        "explicacion": "Incorrecta. Acierta en la ubicación, pero el aviso debe informar el valor del avalúo comercial y el precio mínimo de venta cuando son diferentes, como en este caso; el valor en libros no reemplaza el avalúo (art. 2.2.1.2.2.1.8)."
+      },
+      {
+        "id": "C",
+        "texto": "El municipio y el horario de visita, con cita previa que se pide al almacén; el avalúo de $180.000.000 y el precio mínimo de $168.000.000.",
+        "explicacion": "Incorrecta. Acierta en los valores, pero en los bienes muebles el aviso debe señalar, además del municipio, su localización exacta (art. 2.2.1.2.2.1.8); ofrecer visitas con cita previa no suple ese dato."
+      },
+      {
+        "id": "D",
+        "texto": "El municipio y el horario de visita, con cita previa que se pide al almacén; el valor en libros de $40.000.000 y el precio mínimo de $168.000.000.",
+        "explicacion": "Incorrecta en los dos puntos. Omite la localización exacta de los bienes y el valor del avalúo comercial, que deben ir en el aviso cuando el avalúo y el precio mínimo son diferentes (art. 2.2.1.2.2.1.8)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se venden bienes muebles cuyo avalúo comercial ($180.000.000) y precio mínimo ($168.000.000) son diferentes. Regla: el aviso debe indicar el valor del avalúo comercial y el precio mínimo de venta, si fueren diferentes, y, en los muebles, el municipio, la localización exacta, el tipo de bien, los gravámenes y los contratos que limiten su uso (art. 2.2.1.2.2.1.8). El valor en libros no está entre esos datos. Conclusión: municipio, dirección del patio y los dos valores.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Oferta en sobre cerrado: habilitación, mejora única de la oferta y adjudicación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.1.10",
+      "art. 2.2.1.2.2.2.1"
+    ],
+    "texto_fuente": "Para participar en los procesos de enajenación de bienes del Estado, el oferente debe consignar a favor de la Entidad Estatal un valor no inferior al veinte por ciento (20%) del precio mínimo de venta, como requisito habilitante para participar en el Proceso de Contratación [...] 3. Una vez recibidas las ofertas, la Entidad Estatal debe verificar el cumplimiento de los requisitos habilitantes de los oferentes [...] 5. En la audiencia la Entidad Estatal debe abrir las ofertas económicas de los oferentes habilitados e informar la mejor oferta para la Entidad Estatal. 6. La Entidad Estatal concede a los oferentes la oportunidad para mejorar la oferta por una sola vez. 7. Surtido este paso, la Entidad Estatal debe adjudicar el bien al oferente que haya ofrecido el mejor precio para la Entidad Estatal.",
+    "pregunta": "Una alcaldía vende un tractor dado de baja por el mecanismo de oferta en sobre cerrado, con un precio mínimo de venta de $40.000.000. Un técnico administrativo del almacén apoya al comité y prepara el informe de la audiencia. Se presentaron tres oferentes: el primero consignó $8.000.000 y ofreció $43.000.000; el segundo consignó $7.500.000 y ofreció $47.000.000; y el tercero consignó $8.200.000 y ofreció $44.000.000. En la audiencia, después de abrir las ofertas económicas que correspondía abrir, el primero subió su oferta a $45.500.000 y el tercero a $45.000.000. Enseguida, el tercero pidió otra oportunidad para ofrecer $46.000.000. Según el Decreto 1082 de 2015, ¿a quién debe adjudicarse el tractor y por qué valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al segundo oferente por $47.000.000, que es la oferta más alta que se presentó en el proceso.",
+        "explicacion": "Incorrecta. Para participar había que consignar al menos el 20 % del precio mínimo: 40.000.000 × 20 % = 8.000.000. El segundo consignó $7.500.000, no quedó habilitado y su oferta económica no se abre."
+      },
+      {
+        "id": "B",
+        "texto": "Al primer oferente por $45.500.000, sin abrir una nueva ronda para que se mejoren las ofertas.",
+        "explicacion": "Correcta. Quedaron habilitados el primero y el tercero. En la audiencia se les permite mejorar la oferta por una sola vez y luego se adjudica al mejor precio (art. 2.2.1.2.2.2.1): los $45.500.000 del primero superan los $45.000.000 del tercero. La segunda mejora que pide el tercero no procede."
+      },
+      {
+        "id": "C",
+        "texto": "Al tercer oferente por $46.000.000, si en la nueva ronda ningún otro oferente llega a superar ese valor.",
+        "explicacion": "Incorrecta. La oportunidad de mejorar la oferta se concede una sola vez (art. 2.2.1.2.2.2.1, num. 6); abrir otra ronda desconoce el procedimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Al tercer oferente por $44.000.000, porque en sobre cerrado la oferta inicial ya no puede mejorarse.",
+        "explicacion": "Incorrecta. Descarta bien al segundo, pero el procedimiento sí permite mejorar la oferta en la audiencia, por una sola vez (num. 6), y se adjudica al mejor precio que resulte de esa mejora."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el segundo consignó menos del 20 % del precio mínimo; en la audiencia, el primero mejoró a $45.500.000 y el tercero a $45.000.000, y luego el tercero pidió otra ronda. Regla: el oferente debe consignar al menos el 20 % del precio mínimo para quedar habilitado (art. 2.2.1.2.2.1.10); en sobre cerrado se abren las ofertas de los habilitados, se permite mejorarlas por una sola vez y se adjudica al mejor precio (art. 2.2.1.2.2.2.1). Cálculo: 40.000.000 × 20 % = 8.000.000. Conclusión: el primero, por $45.500.000.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ALM-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Suma consignada: devolución sin rendimientos, conservación para otro proceso y pérdida por incumplimiento",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.1.10"
+    ],
+    "texto_fuente": "La Entidad Estatal debe devolver al oferente cuya oferta no fue seleccionada el valor consignado, dentro del término establecido en los pliegos de condiciones, sin que haya lugar a reconocimiento de intereses, rendimientos e indemnizaciones, ni el reconocimiento del impuesto a las transacciones financieras. Si el oferente incumple cualquiera de las obligaciones derivadas de la oferta, tales como las condiciones de pago, la firma de documentos sujetos a registro, o cualquier otro asunto derivado del negocio jurídico, pierde la suma de dinero depositada a favor de la Entidad Estatal que se entiende como garantía de seriedad del ofrecimiento, sin perjuicio de que la Entidad Estatal reclame los perjuicios derivados del incumplimiento. [...] El oferente que no resulte adjudicatario puede solicitar a la Entidad Estatal mantener el valor consignado para otro proceso de enajenación que adelante la Entidad Estatal, valor al cual puede adicionar recursos cuando sea necesario.",
+    "pregunta": "Una gobernación vendió en subasta un lote de computadores dados de baja, con un precio mínimo de venta de $10.000.000. Para participar, Andrea consignó $2.000.000, Bernardo $2.500.000 y Camila $2.000.000. El lote se adjudicó a Andrea, que después no pagó el saldo en el plazo fijado en los pliegos. Bernardo pidió que le devuelvan lo consignado con los rendimientos financieros del periodo, y Camila pidió que la gobernación conserve su consignación para la venta de vehículos que hará el mes siguiente. Un auxiliar administrativo del almacén prepara la relación de las sumas consignadas. Según el Decreto 1082 de 2015, ¿qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Devolver a Bernardo $2.500.000 con sus rendimientos, devolver a Camila sus $2.000.000 y retener lo consignado por Andrea.",
+        "explicacion": "Incorrecta. Al oferente no seleccionado se le devuelve lo consignado sin intereses ni rendimientos, y Camila puede pedir que su consignación se mantenga para otro proceso de enajenación de la misma entidad."
+      },
+      {
+        "id": "B",
+        "texto": "Devolver a Bernardo $2.500.000 sin rendimientos, devolver a Camila sus $2.000.000 y reintegrar a Andrea lo consignado.",
+        "explicacion": "Incorrecta. Acierta con Bernardo, pero Camila puede pedir que se mantenga su consignación para otro proceso, y Andrea, que incumplió el pago, pierde la suma depositada, que hace las veces de garantía de seriedad."
+      },
+      {
+        "id": "C",
+        "texto": "Devolver a Bernardo $2.500.000 con sus rendimientos, conservar lo de Camila para la venta de vehículos y reintegrar a Andrea lo consignado.",
+        "explicacion": "Incorrecta. A Bernardo no se le reconocen rendimientos, y Andrea no recupera su consignación: al incumplir las condiciones de pago, la pierde a favor de la entidad."
+      },
+      {
+        "id": "D",
+        "texto": "Devolver a Bernardo $2.500.000 sin rendimientos, conservar lo de Camila para la venta de vehículos y retener lo consignado por Andrea.",
+        "explicacion": "Correcta. Bernardo recibe solo lo consignado, sin intereses ni rendimientos; la consignación de Camila puede mantenerse para otro proceso de enajenación de la entidad; y Andrea, adjudicataria que incumplió el pago, pierde la suma depositada, sin perjuicio de que se le reclamen los perjuicios."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Andrea incumplió el pago, Bernardo pide rendimientos y Camila pide conservar su consignación. Regla: al oferente no seleccionado se le devuelve lo consignado sin intereses ni rendimientos; quien no resulte adjudicatario puede pedir que se mantenga para otro proceso de enajenación de la entidad; y el que incumple las condiciones de pago pierde la suma depositada, que se entiende como garantía de seriedad (art. 2.2.1.2.2.1.10). Conclusión: devolver $2.500.000 a Bernardo, conservar lo de Camila y retener lo de Andrea.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Título gratuito entre entidades: quién puede recibir los bienes y quiénes firman el acta de entrega",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.4.3"
+    ],
+    "texto_fuente": "Las Entidades Estatales deben hacer un inventario de los bienes muebles que no utilizan y ofrecerlos a título gratuito a las Entidades Estatales a través de un acto administrativo motivado que deben publicar en su página web. [...] Si hay dos o más manifestaciones de interés de Entidades Estatales para el mismo bien, la Entidad Estatal que primero haya manifestado su interés debe tener preferencia. Los representantes legales de la Entidad Estatal titular del bien y la interesada en recibirlo, deben suscribir un acta de entrega en la cual deben establecer la fecha de la entrega material del bien",
+    "pregunta": "Un municipio publicó en su página web el acto administrativo motivado con el que ofrece a título gratuito 25 escritorios que no utiliza. Dentro del plazo, manifestaron por escrito su interés, en este orden: una junta de acción comunal, una fundación privada sin ánimo de lucro que atiende a adultos mayores y un establecimiento público del orden departamental. Los tres explicaron para qué necesitan los escritorios. El técnico administrativo del almacén debe proyectar el acta de entrega. Según el Decreto 1082 de 2015, ¿a quién se entregan los escritorios y quiénes deben firmar el acta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A la junta de acción comunal, que se manifestó primero; el acta la firman los representantes legales del municipio y de la junta.",
+        "explicacion": "Incorrecta. Acierta en quiénes firman, pero el ofrecimiento a título gratuito es para Entidades Estatales, y la junta de acción comunal no lo es; la preferencia por el primero solo opera entre Entidades Estatales interesadas."
+      },
+      {
+        "id": "B",
+        "texto": "Al establecimiento público; el acta la firman los representantes legales del municipio y del establecimiento.",
+        "explicacion": "Correcta. De los tres interesados, solo el establecimiento público es una Entidad Estatal, que es a quien se ofrecen los bienes. El acta de entrega la suscriben los representantes legales de la entidad titular y de la que recibe (art. 2.2.1.2.2.4.3)."
+      },
+      {
+        "id": "C",
+        "texto": "Al establecimiento público; el acta la firman los jefes de almacén de las dos entidades, que responden por los bienes.",
+        "explicacion": "Incorrecta. Acierta en quién recibe, pero el acta de entrega la suscriben los representantes legales de las dos entidades, no los jefes de almacén."
+      },
+      {
+        "id": "D",
+        "texto": "A la junta de acción comunal, que se manifestó primero; el acta la firman los jefes de almacén de las dos organizaciones.",
+        "explicacion": "Incorrecta. La junta de acción comunal no es una Entidad Estatal, y el acta la suscriben los representantes legales de la entidad titular y de la entidad que recibe."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: de los tres interesados, solo el establecimiento público es una entidad estatal. Regla: los bienes muebles que la entidad no utiliza se ofrecen a título gratuito a las Entidades Estatales; si hay varias interesadas, tiene preferencia la primera; y el acta de entrega la suscriben los representantes legales de la entidad titular y de la interesada (art. 2.2.1.2.2.4.3). Conclusión: se entregan al establecimiento público y firman los dos representantes legales.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Incompatibilidad de servidores y exservidores para adquirir bienes que vende la entidad",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 43, num. 2"
+    ],
+    "texto_fuente": "2. Para todo servidor público, adquirir o intervenir directa o indirectamente, en remate o venta de bienes que se efectúen en la entidad donde labore o en cualquier otra sobre la cual se ejerza control jerárquico o de tutela o funciones de inspección, control y vigilancia. Esta incompatibilidad se extiende desde el momento de su vinculación y hasta doce meses después del retiro del servicio.",
+    "pregunta": "Una alcaldía publicó el 5 de octubre de 2026 el aviso de convocatoria para vender en subasta cuatro camionetas que dio de baja en julio de 2026; la subasta será el 10 de noviembre. Un auxiliar administrativo del almacén revisa a quienes pidieron información para participar: (1) un conductor de la alcaldía, vinculado desde marzo de 2026, que no interviene en el proceso de venta; (2) un exasesor del despacho del alcalde, retirado del servicio el 15 de diciembre de 2025; (3) un exsecretario de planeación de la alcaldía, retirado el 30 de agosto de 2025; y (4) una profesional de la contraloría municipal, que ejerce el control fiscal sobre la alcaldía. Según la Ley 1952 de 2019, ¿cuál de ellos puede presentar postura en la subasta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El conductor, porque no interviene en el proceso de venta ni tiene acceso a información privilegiada.",
+        "explicacion": "Incorrecta. La incompatibilidad cobija a todo servidor público respecto de las ventas de bienes de la entidad donde labora, sin importar si interviene o no en el proceso."
+      },
+      {
+        "id": "B",
+        "texto": "El exasesor, porque cuando se publicó el aviso de convocatoria ya no era servidor de la alcaldía.",
+        "explicacion": "Incorrecta. La incompatibilidad se extiende hasta doce meses después del retiro: el exasesor se retiró el 15 de diciembre de 2025 y sigue cobijado hasta el 15 de diciembre de 2026, después de la subasta."
+      },
+      {
+        "id": "C",
+        "texto": "El exsecretario de planeación, porque ya pasó más de un año desde que dejó su cargo en la alcaldía.",
+        "explicacion": "Correcta. Se retiró el 30 de agosto de 2025, así que la incompatibilidad terminó el 30 de agosto de 2026, antes del aviso y de la subasta (art. 43, num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "La profesional de la contraloría, porque trabaja en otra entidad y no en la alcaldía que vende los bienes.",
+        "explicacion": "Incorrecta. La incompatibilidad también alcanza a quienes laboran en entidades que ejercen funciones de control y vigilancia sobre la que vende, y la contraloría municipal ejerce el control fiscal sobre la alcaldía."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: subasta el 10 de noviembre de 2026; un interesado está vinculado a la alcaldía, otro se retiró el 15 de diciembre de 2025, otro el 30 de agosto de 2025 y la cuarta trabaja en la contraloría que vigila a la alcaldía. Regla: todo servidor público tiene prohibido adquirir en las ventas de bienes de la entidad donde labora o de una sobre la que ejerce control, desde su vinculación hasta doce meses después del retiro (art. 43, num. 2). Cálculo: 30/8/2025 + 12 meses = 30/8/2026; 15/12/2025 + 12 meses = 15/12/2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-031",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Ingreso de bienes",
+    "subtema": "Bienes que no cumplen la ficha técnica: certificación del recibo e informe del supervisor",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1952 de 2019 y Ley 1474 de 2011",
+    "articulos": [
+      "Ley 1952 de 2019, art. 54, nums. 6 y 7",
+      "Ley 1474 de 2011, art. 84",
+      "Ley 1474 de 2011, art. 86, inc. 1 y lit. a"
+    ],
+    "texto_fuente": "6. No exigir, el supervisor o el interventor, la calidad de los bienes y servicios adquiridos por la entidad estatal, o en su defecto, los exigidos por las normas técnicas obligatorias, o certificar como recibida a satisfacción obra que no ha sido ejecutada a cabalidad. 7. Omitir, el supervisor o el interventor, el deber de informar a la entidad contratante los hechos o circunstancias que puedan constituir actos de corrupción tipificados como conductas punibles, o que puedan poner o pongan en riesgo el cumplimiento del contrato, o cuando se presente el incumplimiento. [...] Los interventores y supervisores están facultados para solicitar informes, aclaraciones y explicaciones sobre el desarrollo de la ejecución contractual, y serán responsables por mantener informada a la entidad contratante de los hechos o circunstancias que puedan constituir actos de corrupción tipificados como conductas punibles, o que puedan poner o pongan en riesgo el cumplimiento del contrato, o cuando tal incumplimiento se presente. [...] Las entidades sometidas al Estatuto General de Contratación de la Administración Pública podrán declarar el incumplimiento, cuantificando los perjuicios del mismo, imponer las multas y sanciones pactadas en el contrato, y hacer efectiva la cláusula penal. [...] a) Evidenciado un posible incumplimiento de las obligaciones a cargo del contratista, la entidad pública lo citará a audiencia para debatir lo ocurrido.",
+    "pregunta": "Una profesional de la secretaría administrativa de un departamento es la supervisora de un contrato de suministro de 60 computadores con 16 GB de memoria. Al recibir la entrega, el técnico del almacén verificó los equipos contra el contrato y la factura, y le informó que 52 cumplen la ficha técnica, pero 8 traen 8 GB. El contratista ofrece cambiar esos 8 \"cuando le llegue inventario\" y pide que se certifique el recibo de los 60 para poder radicar la cuenta de cobro. ¿Qué debe hacer la supervisora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Certificar el recibo de los 52 que cumplen, dejar constancia de los 8 e informar el incumplimiento a la entidad.",
+        "explicacion": "Correcta. La supervisora debe exigir la calidad pactada y no puede certificar como recibido lo que no se entregó a cabalidad (Ley 1952, art. 54, num. 6). Además, debe mantener informada a la entidad del incumplimiento (Ley 1474, art. 84), para que esta adelante, si procede, el trámite de multas o de incumplimiento (art. 86)."
+      },
+      {
+        "id": "B",
+        "texto": "Certificar el recibo de los 52 que cumplen, dejar constancia de los 8 y citar ella misma al contratista a audiencia para multarlo.",
+        "explicacion": "Incorrecta. Acierta en certificar solo lo que cumple, pero no le corresponde a la supervisora citar a la audiencia ni imponer la multa: evidenciado un posible incumplimiento, es la entidad la que cita al contratista a audiencia y decide (Ley 1474, art. 86). A la supervisora le toca mantener informada a la entidad (art. 84)."
+      },
+      {
+        "id": "C",
+        "texto": "Certificar el recibo de los 52 que cumplen, dejar constancia de los 8 y esperar diez días a que el contratista los cambie antes de informar.",
+        "explicacion": "Incorrecta. Acierta en certificar solo lo que cumple, pero el supervisor debe mantener informada a la entidad cuando el incumplimiento se presenta (Ley 1474, art. 84), no después de un plazo que él mismo concede; omitir ese informe está descrito como falta gravísima (Ley 1952, art. 54, num. 7)."
+      },
+      {
+        "id": "D",
+        "texto": "Certificar el recibo de los 60 con una observación sobre los 8 y descontar de la cuenta de cobro el menor valor de esos equipos.",
+        "explicacion": "Incorrecta. Certificar los 60, aunque se descuente su menor valor, es dejar de exigir la calidad pactada y certificar como recibido lo que no se entregó a cabalidad (Ley 1952, art. 54, num. 6); el descuento no convierte en conformes los 8 equipos de 8 GB."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: 8 de los 60 equipos no cumplen la ficha técnica y el contratista pide que se certifiquen todos. Regla: es falta gravísima que el supervisor no exija la calidad de los bienes, certifique como recibido lo no ejecutado a cabalidad u omita informar el incumplimiento (Ley 1952, art. 54, nums. 6 y 7); el supervisor debe mantener informada a la entidad cuando el incumplimiento se presenta (Ley 1474, art. 84), y es la entidad la que cita a audiencia y decide las multas (art. 86). Conclusión: certificar 52, dejar constancia de los 8 e informar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1474_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-ALM-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Toma física: baja por hurto y depreciación de bienes en reparación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.3",
+      "Normas, Cap. I, num. 10.4"
+    ],
+    "texto_fuente": "Después del reconocimiento, las propiedades, planta y equipo se medirán por el costo menos la depreciación acumulada menos el deterioro acumulado. [...] La depreciación no cesará cuando el activo esté sin utilizar ni cuando sea objeto de operaciones de reparación y mantenimiento. [...] Un elemento de propiedades, planta y equipo se dará de baja cuando se pierda el control sobre el elemento o cuando no se espere obtener un potencial de servicio o beneficios económicos futuros por su uso o enajenación. La pérdida o ganancia originada en la baja en cuentas de un elemento de propiedades, planta y equipo se calculará como la diferencia entre el valor de la contraprestación recibida, si existiere, y su valor en libros, y se reconocerá como ingreso o gasto en el resultado del periodo.",
+    "pregunta": "En la toma física de 2026 de una gobernación, el profesional de recursos físicos concilia los equipos de cómputo con contabilidad y encuentra dos situaciones. Primera: el 30 de septiembre de 2026 se hurtaron de una oficina 5 computadores portátiles, y ya se presentó la denuncia; cada uno costó $4.800.000, está disponible para su uso desde el 1 de enero de 2024 y se deprecia por el método lineal en 4 años, sin valor residual, con la depreciación registrada hasta septiembre. Segunda: 3 impresoras de $6.000.000 cada una, en uso desde 2023 y depreciadas en línea recta en 5 años sin valor residual, pasaron todo 2026 en el taller, y contabilidad no les registró depreciación ese año. Según las Normas de la CGN para entidades de gobierno, ¿qué debe reconocerse por estas dos situaciones en el resultado de 2026, además de lo que ya está registrado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una pérdida de $24.000.000 por la baja de los portátiles y una depreciación de $3.600.000 de las impresoras.",
+        "explicacion": "Incorrecta. Acierta con las impresoras, pero da de baja los portátiles por su costo. La pérdida se mide con el valor en libros: cada uno llevaba 33 de 48 meses depreciados, así que valía $1.500.000."
+      },
+      {
+        "id": "B",
+        "texto": "Una pérdida de $7.500.000 por la baja de los portátiles, sin depreciación de las impresoras mientras no se usaron.",
+        "explicacion": "Incorrecta. Acierta con los portátiles, pero la depreciación no cesa cuando el activo está sin utilizar ni cuando está en reparación (num. 10.3): faltan $3.600.000 de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "Una pérdida de $24.000.000 por la baja de los portátiles, sin depreciación de las impresoras mientras no se usaron.",
+        "explicacion": "Incorrecta. Usa el costo de los portátiles en lugar de su valor en libros (num. 10.4) y suspende la depreciación de las impresoras, lo que la norma no permite (num. 10.3)."
+      },
+      {
+        "id": "D",
+        "texto": "Una pérdida de $7.500.000 por la baja de los portátiles y una depreciación de $3.600.000 de las impresoras.",
+        "explicacion": "Correcta. Con el hurto se perdió el control de los portátiles: se dan de baja y la pérdida es su valor en libros (num. 10.4): 4.800.000 − 4.800.000 × 33/48 = 1.500.000; × 5 = 7.500.000. La depreciación de las impresoras no cesa mientras están en reparación (num. 10.3): 6.000.000 / 5 × 3 = 3.600.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los portátiles se hurtaron el 30 de septiembre de 2026, con 33 meses depreciados; las impresoras pasaron 2026 en reparación. Regla: el elemento se da de baja cuando se pierde el control, y la pérdida es la diferencia entre la contraprestación, si existe, y el valor en libros (num. 10.4); la depreciación no cesa cuando el activo está sin utilizar o en reparación (num. 10.3). Cálculo: 4.800.000 × 15/48 = 1.500.000; × 5 = 7.500.000; 6.000.000 / 5 × 3 = 3.600.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Deterioro de un activo no generador de efectivo por daño físico y depreciación posterior",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 20.3",
+      "Normas, Cap. I, num. 20.4.2.2"
+    ],
+    "texto_fuente": "La entidad reconocerá el deterioro del valor de un activo no generador de efectivo cuando su valor en libros supere el valor del servicio recuperable. El valor del servicio recuperable es el mayor entre: a) el valor de mercado, si existiere, menos los costos de disposición; y b) el costo de reposición. El deterioro se reconocerá como una disminución del valor en libros del activo y un gasto en el resultado del periodo. Luego de reconocer el deterioro del valor, los cargos por depreciación o amortización del activo se determinarán, para los periodos futuros, teniendo en cuenta el valor en libros ajustado por dicha pérdida. Esto permitirá distribuir el valor en libros ajustado del activo, menos su eventual valor residual, de una forma sistemática a lo largo de su vida útil restante. [...] Este costo se ajustará por la depreciación de acuerdo con la vida útil ya consumida del activo que es objeto de cálculo de deterioro y por el costo en que incurriría para devolver el potencial de servicio que se perdió por el daño físico del activo. Este enfoque se privilegia cuando el deterioro del valor se origina por un daño físico del activo.",
+    "pregunta": "Un municipio tiene una retroexcavadora con la que mantiene gratis las vías rurales; la política contable la considera material. Costó $480.000.000, está en servicio desde el 1 de enero de 2022 y se deprecia por el método lineal en 12 años, sin valor residual; al 31 de diciembre de 2026 tiene registrados cinco años de depreciación. En diciembre de 2026, un incendio dañó su sistema hidráulico. Datos al cierre: en su estado actual, la máquina podría venderse en $227.000.000, con costos de disposición de $17.000.000; y el costo de reposición a nuevo ajustado por depreciación y rehabilitación, enfoque que la política usa para los daños físicos, es de $252.000.000. La vida útil restante no cambia. ¿Qué deterioro debe reconocer la profesional de contabilidad al cierre de 2026 y cuál será la depreciación anual desde 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Deterioro de $70.000.000 y depreciación anual de $40.000.000.",
+        "explicacion": "Incorrecta. Toma como valor del servicio recuperable el menor de los dos valores ($210.000.000) y, además, no ajusta la depreciación después de reconocer el deterioro."
+      },
+      {
+        "id": "B",
+        "texto": "Deterioro de $28.000.000 y depreciación anual de $36.000.000.",
+        "explicacion": "Correcta. Valor en libros: 480.000.000 − 5 × 40.000.000 = 280.000.000. Valor del servicio recuperable: el mayor entre 227.000.000 − 17.000.000 = 210.000.000 y 252.000.000, o sea 252.000.000. Deterioro: 28.000.000. Depreciación desde 2027: 252.000.000 / 7 = 36.000.000."
+      },
+      {
+        "id": "C",
+        "texto": "Deterioro de $28.000.000 y depreciación anual de $40.000.000.",
+        "explicacion": "Incorrecta. Calcula bien el deterioro, pero sigue depreciando sobre el costo original; después del deterioro, la depreciación se calcula con el valor en libros ajustado y la vida útil restante (num. 20.3)."
+      },
+      {
+        "id": "D",
+        "texto": "Deterioro de $70.000.000 y depreciación anual de $30.000.000.",
+        "explicacion": "Incorrecta. Ajusta bien la depreciación a la vida útil restante, pero usa el menor de los dos valores; el valor del servicio recuperable es el mayor entre el valor de mercado menos los costos de disposición y el costo de reposición."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: valor en libros de $280.000.000; valor de mercado neto de $210.000.000; costo de reposición ajustado por depreciación y rehabilitación de $252.000.000; 7 años de vida útil restante. Regla: hay deterioro cuando el valor en libros supera el valor del servicio recuperable, que es el mayor entre el valor de mercado menos los costos de disposición y el costo de reposición; después, la depreciación se calcula sobre el valor ajustado en la vida útil restante (num. 20.3). Cálculo: 280 − 252 = 28 millones; 252 / 7 = 36 millones.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ALM-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Sustitución de un componente no identificado: baja del componente reemplazado",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.4"
+    ],
+    "texto_fuente": "La pérdida o ganancia originada en la baja en cuentas de un elemento de propiedades, planta y equipo se calculará como la diferencia entre el valor de la contraprestación recibida, si existiere, y su valor en libros, y se reconocerá como ingreso o gasto en el resultado del periodo. Cuando un elemento de propiedades, planta y equipo esté conformado por componentes y sea necesaria la sustitución de uno de estos o la realización de una nueva inspección general, la entidad reconocerá, en el activo, el costo en que se incurra para la sustitución o inspección general, previa baja en cuentas del componente sustituido o de la inspección general previamente incorporada. Esto se realizará con independencia de que el costo del componente se haya identificado y depreciado previamente. Si el componente no se identificó ni depreció previamente, se utilizará el costo de la sustitución o de la nueva inspección general como indicador del costo que el componente sustituido o la inspección general tenía en el momento en el que el elemento fue adquirido o construido.",
+    "pregunta": "Una gobernación tiene una volqueta que costó $400.000.000, disponible para su uso desde el 1 de enero de 2020, que se deprecia por el método lineal en 10 años, sin valor residual, como un solo elemento: el motor nunca se identificó por separado. El 31 de diciembre de 2026, con la depreciación de ese año ya registrada, se reemplazó el motor por uno nuevo que costó $90.000.000 ya instalado, y el motor viejo se vendió como chatarra en $3.000.000. ¿Cómo debe registrar el profesional de contabilidad el cambio de motor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reconocer una pérdida de $24.000.000 por la baja del motor anterior y sumar el motor nuevo al valor de la volqueta.",
+        "explicacion": "Correcta. Como el motor anterior no se identificó, el costo del nuevo ($90.000.000) sirve de indicador de lo que costaba al adquirirse la volqueta; tras 7 de 10 años de depreciación, su valor en libros era 90.000.000 × 3/10 = 27.000.000. Resultado: 3.000.000 − 27.000.000 = pérdida de 24.000.000; el motor nuevo se reconoce en el activo (num. 10.4)."
+      },
+      {
+        "id": "B",
+        "texto": "Reconocer un gasto de $90.000.000 por la reparación y un ingreso de $3.000.000 por la venta de la chatarra.",
+        "explicacion": "Incorrecta. El reemplazo de un componente no se trata como una reparación: su costo se reconoce en el activo, previa baja del componente sustituido (num. 10.4)."
+      },
+      {
+        "id": "C",
+        "texto": "Reconocer una pérdida de $27.000.000 por la baja del motor anterior y sumar el motor nuevo al valor de la volqueta.",
+        "explicacion": "Incorrecta. Calcula bien el valor en libros del motor anterior, pero omite los $3.000.000 recibidos por la chatarra, que son la contraprestación y reducen la pérdida."
+      },
+      {
+        "id": "D",
+        "texto": "Sumar el motor nuevo al valor de la volqueta y reconocer un ingreso de $3.000.000, sin dar de baja el motor anterior.",
+        "explicacion": "Incorrecta. El componente sustituido se da de baja con independencia de que su costo se haya identificado y depreciado antes; si no se identificó, se estima con el costo de la sustitución (num. 10.4)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el motor anterior nunca se identificó, el nuevo costó $90.000.000, la volqueta llevaba 7 de 10 años depreciados y la chatarra se vendió en $3.000.000. Regla: el costo de la sustitución se reconoce en el activo, previa baja del componente sustituido; si este no se identificó, el costo de la sustitución indica el que tenía al adquirirse el elemento, y la pérdida es la contraprestación menos el valor en libros (num. 10.4). Cálculo: 90.000.000 × 3/10 = 27.000.000; 3.000.000 − 27.000.000 = −24.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 40
+    }
+  },
+  {
+    "id": "TC-ALM-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Venta por medio de intermediario idóneo: selección del intermediario y alcance del contrato",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.1.4",
+      "art. 2.2.1.2.2.1.5",
+      "art. 2.2.1.2.2.1.6"
+    ],
+    "texto_fuente": "Las Entidades Estatales que no están obligadas a cumplir con lo establecido en el artículo anterior, pueden realizar directamente la enajenación, o contratar para ello promotores, bancas de inversión, martillos, comisionistas de bolsas de bienes y productos, o cualquier otro intermediario idóneo, según corresponda al tipo de bien a enajenar. [...] La Entidad Estatal debe adelantar esta selección a través de un Proceso de Contratación en el cual utilice las reglas de la selección abreviada de menor cuantía. [...] El objeto del contrato es la intermediación comercial tendiente al logro y perfeccionamiento de la venta. En el caso de inmuebles y muebles sujetos a registro, el intermediario debe acompañar el proceso de venta hasta el registro y la entrega física del bien, incluyendo la posibilidad de desempeñarse en calidad de mandatario para estos efectos.",
+    "pregunta": "Un municipio decidió vender por medio de un martillo los 40 vehículos que dio de baja, en lugar de venderlos directamente. El asesor jurídico revisa el borrador de los estudios previos del contrato con el martillo, que debe definir cómo se escogerá al intermediario y hasta dónde llegan sus obligaciones. Según el Decreto 1082 de 2015, ¿cuál de estas propuestas debe aprobar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Escogerlo por contratación directa y pactar que su obligación termine cuando se adjudique cada uno de los vehículos.",
+        "explicacion": "Incorrecta en los dos puntos. El intermediario se selecciona con las reglas de la selección abreviada de menor cuantía (art. 2.2.1.2.2.1.5), y en los muebles sujetos a registro debe acompañar la venta hasta el registro y la entrega física (art. 2.2.1.2.2.1.6)."
+      },
+      {
+        "id": "B",
+        "texto": "Escogerlo por contratación directa y pactar que acompañe la venta hasta el registro y la entrega de cada vehículo.",
+        "explicacion": "Incorrecta. Acierta en el alcance del contrato, pero el intermediario no se escoge por contratación directa: se adelanta un proceso con las reglas de la selección abreviada de menor cuantía (art. 2.2.1.2.2.1.5)."
+      },
+      {
+        "id": "C",
+        "texto": "Escogerlo con las reglas de la menor cuantía y pactar que acompañe la venta hasta el registro y la entrega de cada vehículo.",
+        "explicacion": "Correcta. La selección del intermediario idóneo se hace con las reglas de la selección abreviada de menor cuantía (art. 2.2.1.2.2.1.5), y como los vehículos son muebles sujetos a registro, el intermediario debe acompañar la venta hasta el registro y la entrega física (art. 2.2.1.2.2.1.6)."
+      },
+      {
+        "id": "D",
+        "texto": "Escogerlo con las reglas de la menor cuantía y pactar que su obligación termine cuando se adjudique cada uno de los vehículos.",
+        "explicacion": "Incorrecta. Acierta en la forma de selección, pero los vehículos son muebles sujetos a registro, y en ellos el intermediario debe acompañar el proceso hasta el registro y la entrega física, no solo hasta la adjudicación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el municipio venderá vehículos, que son muebles sujetos a registro, por medio de un martillo. Regla: la entidad puede enajenar directamente o por un intermediario idóneo, como un martillo (art. 2.2.1.2.2.1.4); este se selecciona con las reglas de la selección abreviada de menor cuantía (art. 2.2.1.2.2.1.5) y, en muebles sujetos a registro, acompaña la venta hasta el registro y la entrega física (art. 2.2.1.2.2.1.6). Conclusión: menor cuantía y acompañamiento hasta la entrega.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  },
+  {
+    "id": "TC-ALM-036",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Enajenación de bienes del Estado",
+    "subtema": "Venta de bienes con deudas de impuestos: advertencia en los pliegos y sin garantías adicionales a la consignación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1082 de 2015",
+    "articulos": [
+      "art. 2.2.1.2.2.1.9",
+      "art. 2.2.1.2.2.1.10"
+    ],
+    "texto_fuente": "La Entidad Estatal puede enajenar el activo a pesar de que tenga cargas derivadas de impuestos y contribuciones, deudas de consumo o reinstalación de servicios públicos y administración inmobiliaria, caso en el cual debe manifestarlo en los pliegos de condiciones y el oferente aceptar dichas condiciones pues debe asumir las deudas informadas. [...] Si el oferente incumple cualquiera de las obligaciones derivadas de la oferta, tales como las condiciones de pago, la firma de documentos sujetos a registro, o cualquier otro asunto derivado del negocio jurídico, pierde la suma de dinero depositada a favor de la Entidad Estatal que se entiende como garantía de seriedad del ofrecimiento, sin perjuicio de que la Entidad Estatal reclame los perjuicios derivados del incumplimiento. En consecuencia no se exigirá garantía adicional a los oferentes o al comprador.",
+    "pregunta": "Un municipio venderá en subasta tres camionetas dadas de baja. Dos de ellas deben el impuesto vehicular de 2025 y de 2026, por $2.300.000 en total, y la secretaría de hacienda no tiene recursos para pagarlo este año. Para asegurar que el comprador pague esas deudas, el jefe jurídico propone exigirle al adjudicatario una póliza que lo garantice, además de la consignación previa para participar. La jefa de hacienda responde que no hace falta ninguna garantía distinta de esa consignación. La profesional de la secretaría general que proyecta los pliegos de condiciones debe decidir cómo manejar las deudas y si acoge la póliza. Según el Decreto 1082 de 2015, ¿qué procede?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Manifestar las deudas en los pliegos, para que quien haga postura las acepte y las asuma, y exigir además la póliza al adjudicatario.",
+        "explicacion": "Incorrecta. Acierta en manifestar las deudas en los pliegos, pero la consignación hace las veces de garantía de seriedad del ofrecimiento, y el decreto dispone que no se exigirá garantía adicional a los oferentes o al comprador (art. 2.2.1.2.2.1.10)."
+      },
+      {
+        "id": "B",
+        "texto": "Anunciar las deudas en la audiencia de la subasta, antes de adjudicar, para que el ganador las asuma, y no exigir la póliza.",
+        "explicacion": "Incorrecta. Acierta en no exigir la póliza, pero las deudas deben manifestarse en los pliegos de condiciones, para que el oferente acepte esas condiciones al presentar su postura (art. 2.2.1.2.2.1.9); anunciarlas en la audiencia es tarde."
+      },
+      {
+        "id": "C",
+        "texto": "Anunciar las deudas en la audiencia de la subasta, antes de adjudicar, para que el ganador las asuma, y exigir además la póliza.",
+        "explicacion": "Incorrecta en los dos puntos. Las deudas deben quedar en los pliegos y aceptarse con la postura (art. 2.2.1.2.2.1.9), y no puede exigirse una garantía adicional a la consignación (art. 2.2.1.2.2.1.10)."
+      },
+      {
+        "id": "D",
+        "texto": "Manifestar las deudas en los pliegos, para que quien haga postura las acepte y las asuma, y no exigir la póliza.",
+        "explicacion": "Correcta. La entidad puede vender el activo con cargas derivadas de impuestos si lo manifiesta en los pliegos de condiciones y el oferente acepta esas condiciones, pues debe asumir las deudas informadas (art. 2.2.1.2.2.1.9). Y como la consignación previa se entiende como garantía de seriedad del ofrecimiento, no se exige garantía adicional a los oferentes ni al comprador (art. 2.2.1.2.2.1.10): en eso acierta la jefa de hacienda."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: dos camionetas deben el impuesto vehicular, la entidad no puede pagarlo antes de vender y se propone exigir una póliza al comprador. Regla: la entidad puede enajenar el activo aunque tenga cargas derivadas de impuestos, si lo manifiesta en los pliegos y el oferente acepta esas condiciones, pues asume las deudas informadas (art. 2.2.1.2.2.1.9); la consignación previa se entiende como garantía de seriedad y no se exige garantía adicional a los oferentes o al comprador (art. 2.2.1.2.2.1.10). Conclusión: deudas en los pliegos y sin póliza.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-037",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Responsabilidad sobre los bienes",
+    "subtema": "Adquisición por interpuesta persona de bienes que el servidor debía enajenar",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1952 de 2019",
+    "articulos": [
+      "art. 28",
+      "art. 48, num. 1 (modificado por el art. 9 de la Ley 2094 de 2021)",
+      "art. 55, num. 3"
+    ],
+    "texto_fuente": "ARTÍCULO 28. DOLO. La conducta es dolosa cuando el sujeto disciplinable conoce los hechos constitutivos de falta disciplinaria, su ilicitud y quiere su realización. [...] Destitución e inhabilidad general de diez (10) a veinte (20) años para las faltas gravísimas dolosas. [...] 3. Adquirir directamente o por interpuesta persona bienes que deban ser enajenados en razón de las funciones de su cargo, o hacer gestiones para que otros los adquieran.",
+    "pregunta": "Un profesional de la oficina de control disciplinario interno de una alcaldía analiza la conducta del almacenista general, a quien se le asignó preparar el inventario, los estudios previos y la subasta de seis motocicletas dadas de baja. Está probado que la consignación y la postura por una de las motocicletas las presentó el cuñado del almacenista con dinero que salió de la cuenta de este; que el cuñado se la adjudicó por encima del precio mínimo, y que una semana después la motocicleta quedó a nombre del almacenista, sin que él pagara nada. En su versión libre, el almacenista admitió que la prohibición de que los servidores de la alcaldía compraran esos bienes figuraba en los pliegos que él mismo proyectó. ¿Cómo debe calificarse la falta y qué sanción corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Falta grave dolosa, con suspensión de tres a dieciocho meses e inhabilidad especial, porque quien compró fue un tercero habilitado.",
+        "explicacion": "Incorrecta. Adquirir por interpuesta persona bienes que deben enajenarse en razón del cargo es una falta gravísima (art. 55, num. 3); que la postura la presentara el cuñado es justamente la modalidad que la norma describe."
+      },
+      {
+        "id": "B",
+        "texto": "Falta gravísima dolosa, con destitución e inhabilidad general de diez a veinte años, porque se valió de su cuñado para comprarla.",
+        "explicacion": "Correcta. El almacenista adquirió, valiéndose de otra persona, un bien que debía enajenar por sus funciones (art. 55, num. 3), conociendo los hechos y su ilicitud (la prohibición estaba en los pliegos que él proyectó) y queriendo su realización (art. 28). La falta gravísima dolosa se sanciona con destitución e inhabilidad general de 10 a 20 años (art. 48, num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Falta gravísima cometida con culpa gravísima, con destitución e inhabilidad general de ocho a diez años, por desatender la prohibición.",
+        "explicacion": "Incorrecta. Acierta en que es gravísima, pero la conducta no fue culposa: el almacenista conocía la prohibición, que él mismo incluyó en los pliegos, y organizó la compra a través de su cuñado para quedarse con la motocicleta, lo que la hace dolosa (art. 28)."
+      },
+      {
+        "id": "D",
+        "texto": "Falta grave culposa, con suspensión de uno a doce meses, porque la motocicleta se vendió por encima del precio mínimo.",
+        "explicacion": "Incorrecta. Que el precio superara el mínimo no cambia la descripción de la falta, que es gravísima, ni su modalidad, que es dolosa."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el almacenista, encargado de la venta, terminó con una de las motocicletas mediante la postura de su cuñado, hecha con su dinero, y conocía la prohibición. Regla: es falta gravísima adquirir directamente o por interpuesta persona bienes que deban enajenarse en razón del cargo (art. 55, num. 3); la conducta es dolosa cuando se conocen los hechos y su ilicitud y se quiere su realización (art. 28), y la falta gravísima dolosa se sanciona con destitución e inhabilidad general de 10 a 20 años (art. 48, num. 1).",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1952_2019.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Ingreso de bienes",
+    "subtema": "Revisiones periódicas de los bienes suministrados durante la vigencia de las garantías",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 80 de 1993",
+    "articulos": [
+      "art. 4, num. 4"
+    ],
+    "texto_fuente": "4o. Adelantarán revisiones periódicas de las obras ejecutadas, servicios prestados o bienes sumistrados, para verificar que ellos cumplan con las condiciones de calidad ofrecidas por los contratistas, y promoverán las acciones de responsabilidad contra éstos y sus garantes cuando dichas condiciones no se cumplan. Las revisiones periódicas a que se refiere el presente numeral deberán llevarse a cabo por lo menos una vez cada seis (6) meses durante el término de vigencia de las garantías.",
+    "pregunta": "Una gobernación recibió a satisfacción 80 computadores de escritorio, con una garantía de calidad y correcto funcionamiento vigente por tres años. El profesional de recursos físicos proyecta el plan de seguimiento de esos equipos para el periodo de la garantía. Según la Ley 80 de 1993, ¿qué debe prever el plan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Revisarlos al menos cada seis meses mientras la garantía esté vigente y, si fallan, promover acciones contra el contratista y su garante.",
+        "explicacion": "Correcta. La entidad debe revisar periódicamente los bienes suministrados para verificar que cumplan la calidad ofrecida, por lo menos una vez cada seis meses durante la vigencia de las garantías, y promover las acciones de responsabilidad contra el contratista y sus garantes si no la cumplen (art. 4, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Revisarlos una sola vez, antes de que venza la garantía, y reparar con recursos propios los que fallen para no afectar el servicio.",
+        "explicacion": "Incorrecta. Las revisiones deben hacerse por lo menos una vez cada seis meses mientras la garantía esté vigente, y si los equipos no cumplen la calidad ofrecida se promueven acciones contra el contratista y su garante, no se reparan con recursos propios."
+      },
+      {
+        "id": "C",
+        "texto": "Revisarlos al menos una vez al año mientras la garantía esté vigente y, si fallan, promover acciones contra el contratista y su garante.",
+        "explicacion": "Incorrecta. Acierta en las acciones, pero la periodicidad mínima de las revisiones es de seis meses, no de un año."
+      },
+      {
+        "id": "D",
+        "texto": "Revisarlos al menos cada seis meses mientras la garantía esté vigente y, si fallan, reponerlos con cargo al presupuesto de la entidad.",
+        "explicacion": "Incorrecta. Acierta en la periodicidad, pero si los bienes no cumplen la calidad ofrecida, la entidad debe promover las acciones de responsabilidad contra el contratista y su garante, no asumir la reposición."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los equipos tienen una garantía de calidad vigente por tres años. Regla: la entidad debe adelantar revisiones periódicas de los bienes suministrados para verificar que cumplan la calidad ofrecida, por lo menos una vez cada seis meses durante la vigencia de las garantías, y promover las acciones de responsabilidad contra el contratista y sus garantes cuando no la cumplan (Ley 80, art. 4, num. 4). Conclusión: revisiones al menos semestrales y acciones contra el contratista y su garante.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0080_1993.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ALM-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Propiedades, planta y equipo",
+    "subtema": "Depreciación por componentes desde que el bien está disponible para su uso",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 10.3"
+    ],
+    "texto_fuente": "Para las partidas de propiedades, planta y equipo que se consideren materiales, la entidad distribuirá el valor inicialmente reconocido entre las partes significativas, con relación al costo total de dichas partidas, y las depreciará en forma separada. [...] La depreciación de una propiedad, planta y equipo iniciará cuando esté disponible para su uso, esto es, cuando se encuentre en la ubicación y en las condiciones necesarias para que pueda iniciar la operación de la forma prevista por la administración de la entidad.",
+    "pregunta": "Un municipio compró un bus para el transporte escolar gratuito. El costo total, con la adecuación y la matrícula, fue de $576.000.000. El bus llegó al almacén el 2 de junio de 2026, pero solo quedó en condiciones de operar el 1 de julio, cuando terminaron la adecuación y la matrícula. La política contable considera material este bien y lo divide en componentes: chasis y carrocería, $360.000.000, con 12 años de vida útil; motor, $144.000.000, con 6 años; y aire acondicionado y equipos de seguridad, $72.000.000, con 4 años. Se deprecia por el método lineal, por meses completos y sin valor residual. ¿Cuál es la depreciación del bus en 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$28.000.000",
+        "explicacion": "Incorrecta. Deprecia el bus como un solo elemento a 12 años y desde junio. Como es material, se deprecia por componentes, y la depreciación inicia cuando está disponible para su uso: en julio."
+      },
+      {
+        "id": "B",
+        "texto": "$42.000.000",
+        "explicacion": "Incorrecta. Usa bien los componentes, pero cuenta 7 meses desde la llegada al almacén; el bus no estuvo en condiciones de operar hasta el 1 de julio."
+      },
+      {
+        "id": "C",
+        "texto": "$36.000.000",
+        "explicacion": "Correcta. Depreciación mensual: 360.000.000/144 + 144.000.000/72 + 72.000.000/48 = 2.500.000 + 2.000.000 + 1.500.000 = 6.000.000. De julio a diciembre: 6 × 6.000.000 = 36.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "$24.000.000",
+        "explicacion": "Incorrecta. Empieza bien en julio, pero deprecia el bus como un solo elemento a 12 años; en las partidas materiales, las partes significativas se deprecian por separado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el bus es material, tiene tres componentes con vidas útiles distintas y quedó listo para operar el 1 de julio, aunque llegó en junio. Regla: en las partidas materiales, el valor se distribuye entre las partes significativas y estas se deprecian por separado; la depreciación inicia cuando el activo está disponible para su uso (num. 10.3). Cálculo: 30.000.000 + 24.000.000 + 18.000.000 = 72.000.000 al año; 72.000.000 × 6/12 = 36.000.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ALM-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "almacen",
+    "modulo": "Almacén e Inventarios",
+    "tema": "Inventarios",
+    "subtema": "Rebaja del proveedor sobre inventarios distribuidos en periodos distintos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Normas para Entidades de Gobierno (CGN)",
+    "articulos": [
+      "Normas, Cap. I, num. 9.2.1",
+      "Normas, Cap. I, num. 9.4"
+    ],
+    "texto_fuente": "Los descuentos, las rebajas y otras partidas similares afectarán el valor del inventario, del costo de ventas, del gasto o del ingreso, dependiendo de si el inventario que los originó se encuentra en existencia, se vendió, se distribuyó gratuitamente o se consumió en la prestación del servicio y de si dicha venta, distribución o consumo se efectuó durante el periodo contable o en periodos anteriores. [...] Los inventarios que se distribuyan gratuitamente se reconocerán como gasto en el resultado del periodo, cuando se distribuya el bien.",
+    "pregunta": "En noviembre de 2025, la secretaría de educación de un departamento compró 1.000 kits escolares a $50.000 cada uno para entregarlos gratis. Repartió 300 kits en diciembre de 2025 y 500 entre enero y marzo de 2026; los otros 200 siguen en la bodega. En marzo de 2026, el proveedor le reconoció, por el volumen de la compra, una rebaja de $4.000 por cada uno de los 1.000 kits mediante una nota crédito. Los estados financieros de 2025 ya están cerrados. ¿Cómo debe registrar la profesional de contabilidad la rebaja de $4.000.000?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Como un ingreso de 2026 por los $4.000.000, porque la rebaja se recibió después de comprar y entregar los kits.",
+        "explicacion": "Incorrecta. La rebaja solo es ingreso en la parte que corresponde a kits distribuidos en periodos anteriores (300 × 4.000 = 1.200.000). La de los kits en bodega disminuye el inventario, y la de los entregados en 2026, el gasto de 2026."
+      },
+      {
+        "id": "B",
+        "texto": "Como un menor valor del inventario por $800.000 y un menor gasto de 2026 por $3.200.000.",
+        "explicacion": "Incorrecta. Acierta con los kits en bodega, pero los 300 kits entregados en 2025 se llevaron al gasto de un periodo ya cerrado; esa parte de la rebaja ($1.200.000) se reconoce como ingreso, no como menor gasto de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "Como un menor valor del inventario por $4.000.000, que rebaja el costo de los 200 kits que siguen en la bodega.",
+        "explicacion": "Incorrecta. La rebaja se distribuye según dónde estén los kits que la originaron; cargarla toda a los 200 kits de la bodega subvalora su costo (quedarían a $30.000 cada uno)."
+      },
+      {
+        "id": "D",
+        "texto": "Como menor valor del inventario por $800.000, menor gasto de 2026 por $2.000.000 e ingreso por $1.200.000.",
+        "explicacion": "Correcta. Kits en bodega: 200 × 4.000 = 800.000, menor inventario. Kits entregados en 2026: 500 × 4.000 = 2.000.000, menor gasto del periodo. Kits entregados en 2025, periodo anterior: 300 × 4.000 = 1.200.000, ingreso (num. 9.2.1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: de los 1.000 kits, 300 se entregaron en 2025 (periodo cerrado), 500 en 2026 y 200 siguen en bodega. Regla: las rebajas afectan el inventario, el gasto o el ingreso según si los bienes que las originaron siguen en existencia o se distribuyeron, y si la distribución fue en el periodo o en periodos anteriores (num. 9.2.1); lo que se distribuye gratis es gasto al entregarse (num. 9.4). Cálculo: 200 × 4.000 = 800.000; 500 × 4.000 = 2.000.000; 300 × 4.000 = 1.200.000.",
+    "fuente_url": "https://www.contaduria.gov.co/normas-para-el-reconocimiento-medicion-revelacion-y-presentacion-de-los-hechos-economicos-del-marco-normativo-para-entidades-de-gobierno",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-10",
+      "p_estimado": 45
+    }
+  }
+]

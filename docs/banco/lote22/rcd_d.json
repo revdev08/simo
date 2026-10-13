@@ -1,0 +1,942 @@
+[
+  {
+    "id": "TC-RCD-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Validación de afirmaciones con datos",
+    "subtema": "Proporciones de grupos con totales distintos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente fragmento y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA LA PRIMAVERA — INFORME DE GESTIÓN 2025 (FRAGMENTO)\n\nCada año, al iniciar el segundo semestre, los estudiantes de grado tercero presentan una prueba de fluidez lectora. Estos fueron los resultados de los dos últimos años:\n\nAño | Estudiantes evaluados | Estudiantes por debajo del nivel esperado\n2024 | 160 | 48\n2025 | 180 | 27\n\nCon base en esta tabla, el rector escribió en el informe: «En un año, la proporción de estudiantes de tercero que leen por debajo del nivel esperado se redujo a la mitad».\n\n¿Qué se puede concluir de la afirmación del rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es correcta: los estudiantes por debajo del nivel bajaron un 43,75%, una caída cercana a la mitad.",
+        "explicacion": "Incorrecta. Razona con el número de estudiantes (de 48 a 27, una caída del 43,75%) y no con la proporción, que depende también de los evaluados de cada año. Además, una caída del 43,75% no es la mitad: por esa vía, la afirmación resultaría falsa."
+      },
+      {
+        "id": "B",
+        "texto": "Es incorrecta: pasaron de 48 a 27 estudiantes, y la mitad de 48 habría sido 24.",
+        "explicacion": "Incorrecta. Compara conteos de dos años con distinto número de evaluados (160 y 180). Con 180 evaluados, la mitad de la proporción de 2024, es decir, el 15%, equivale a 27 estudiantes, no a 24."
+      },
+      {
+        "id": "C",
+        "texto": "Es correcta: en 2024 leían por debajo del nivel 3 de cada 10 evaluados, y en 2025, 3 de cada 20.",
+        "explicacion": "Correcta. Cada año se divide entre sus propios evaluados: 48 ÷ 160 = 0,30 (3 de cada 10) y 27 ÷ 180 = 0,15 (3 de cada 20). Como 0,15 es la mitad de 0,30, la afirmación se sostiene."
+      },
+      {
+        "id": "D",
+        "texto": "Es incorrecta: los 27 estudiantes de 2025 son el 16,9% de los 160 evaluados de 2024.",
+        "explicacion": "Incorrecta. Divide los estudiantes por debajo del nivel en 2025 entre los evaluados de 2024. La proporción de 2025 es 27 ÷ 180 = 15%, exactamente la mitad del 30% de 2024."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los evaluados pasaron de 160 en 2024 a 180 en 2025. Regla: la proporción de cada año se calcula sobre los evaluados de ese mismo año. Cálculo: 48 ÷ 160 = 30% y 27 ÷ 180 = 15%. Conclusión: la proporción de estudiantes por debajo del nivel esperado se redujo a la mitad, como afirma el rector, aunque su número no bajó a la mitad.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Validación de afirmaciones con datos",
+    "subtema": "Cumplimiento de una meta según la fórmula del indicador",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "El plan de mejoramiento de una institución educativa fijó esta meta para 2025: «tasa de deserción inferior al 3%, calculada como el número de desertores dividido entre la matrícula de inicio del año». La institución empezó 2025 con 980 estudiantes matriculados; durante el año desertaron 29 y lo terminó con 951.\n\nEn el consejo directivo, la rectora informó que la meta se cumplió. Un representante de los padres de familia respondió que no, porque 29 ÷ 951 da más del 3%.\n\n¿Quién tiene razón?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La rectora: según la fórmula del plan, con la matrícula de inicio, la tasa fue del 2,96%.",
+        "explicacion": "Correcta. La meta define la base: la matrícula de inicio del año. 29 ÷ 980 = 0,0296, es decir, 2,96%, que es inferior al 3%."
+      },
+      {
+        "id": "B",
+        "texto": "El representante: tomando la matrícula del cierre del año, la tasa fue del 3,05%.",
+        "explicacion": "Incorrecta. 29 ÷ 951 = 3,05% es una división bien hecha, pero con una base distinta de la que fija la meta. El indicador se mide sobre la matrícula de inicio (980), no sobre la de cierre (951)."
+      },
+      {
+        "id": "C",
+        "texto": "El representante: redondeada a un entero, la tasa es del 3%, y ese valor no es inferior al 3%.",
+        "explicacion": "Incorrecta. Redondea antes de comparar. La tasa es de 2,96% y la meta pide que sea inferior al 3%; redondearla a un entero borra justo la diferencia que la meta mide."
+      },
+      {
+        "id": "D",
+        "texto": "La rectora: por cada 100 estudiantes que terminaron el año desertaron menos de 3.",
+        "explicacion": "Incorrecta. La conclusión coincide, pero la razón es falsa: 29 ÷ 951 = 3,05%, es decir, más de 3 desertores por cada 100 estudiantes que terminaron el año. Además, esa no es la base que fija la meta."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la meta dice que la tasa se calcula sobre la matrícula de inicio del año (980). Cálculo: 29 ÷ 980 = 2,96%, inferior al 3%. El representante divide entre la matrícula de cierre (951), lo que da 3,05%, pero esa no es la fórmula de la meta. Conclusión: la meta se cumplió y la rectora tiene razón.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-063",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Errores en procedimientos",
+    "subtema": "Porcentaje calculado sobre el grupo equivocado (condición invertida)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "La coordinadora académica de un colegio revisó los resultados de matemáticas del primer semestre en grado octavo. Estos son sus datos:\n\n- El grado tiene 300 estudiantes.\n- 100 de ellos no entregaron la mayoría de las tareas del semestre.\n- 50 estudiantes reprobaron matemáticas; de esos 50, 40 son estudiantes que no entregaron la mayoría de las tareas.\n\nPara su informe, la coordinadora dividió 40 entre 50 y escribió: «El 80% de los estudiantes que no entregan las tareas reprueba matemáticas».\n\n¿Qué se puede afirmar de ese procedimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es correcto: 40 de los 50 estudiantes que reprobaron no entregaron las tareas, es decir, el 80%.",
+        "explicacion": "Incorrecta. La división 40 ÷ 50 = 80% está bien hecha, pero responde otra pregunta: qué parte de los reprobados no entregó las tareas. La frase del informe habla de qué parte de los que no entregan tareas reprueba, y eso se calcula sobre los 100 que no las entregaron."
+      },
+      {
+        "id": "B",
+        "texto": "Es errado: el porcentaje debe calcularse sobre todo el grado, y 40 de 300 es el 13,3%.",
+        "explicacion": "Incorrecta. La frase se refiere a los estudiantes que no entregan tareas, no a todo el grado. 40 ÷ 300 ≈ 13,3% es la parte del grado que no entregó tareas y además reprobó."
+      },
+      {
+        "id": "C",
+        "texto": "Es correcto en lo esencial: entre quienes sí entregaron, reprobó apenas el 5%, y esa diferencia lo confirma.",
+        "explicacion": "Incorrecta. Es cierto que entre los 200 que sí entregaron reprobaron 10, el 5%, y que la diferencia con el otro grupo es grande. Pero eso no confirma el 80%: entre quienes no entregaron, reprobó el 40%."
+      },
+      {
+        "id": "D",
+        "texto": "Es errado: de los 100 estudiantes que no entregaron las tareas, reprobaron 40, es decir, el 40%.",
+        "explicacion": "Correcta. La coordinadora invirtió la condición. Entre los 100 estudiantes que no entregaron la mayoría de las tareas reprobaron 40: 40 ÷ 100 = 40%. El 80% es otra cosa: la parte de los 50 reprobados que no entregó tareas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la frase habla de los estudiantes que no entregan tareas (100), pero la cuenta se hizo sobre los que reprobaron (50). Regla: el porcentaje «de los que cumplen A, cuántos cumplen B» se calcula sobre el total de A. Cálculo: 40 ÷ 100 = 40%. Conclusión: el procedimiento es errado porque invierte la condición; el porcentaje que corresponde a la frase es 40%, no 80%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Errores en procedimientos",
+    "subtema": "Regla de tres aplicada a una relación con un costo fijo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "El tesorero de una institución educativa debe proyectar la factura mensual de agua de la nueva sede El Rosal, que tendrá 350 estudiantes. Como referencia usa la sede Centro, de 200 estudiantes, que paga $1.200.000 al mes: $300.000 son el cargo fijo, que se cobra igual sin importar el consumo, y el resto corresponde al consumo. En El Rosal, el cargo fijo será el mismo y cada estudiante consumirá, en promedio, lo mismo que en Centro.\n\nEl tesorero hizo una regla de tres: 1.200.000 × 350 ÷ 200 = $2.100.000.\n\n¿Qué se puede afirmar de esa proyección?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es correcta: si cada estudiante consume lo mismo, la factura crece en la misma proporción que la matrícula.",
+        "explicacion": "Incorrecta. Solo el consumo crece con la matrícula. Los $300.000 del cargo fijo se pagan igual con 200 o con 350 estudiantes, así que la factura completa no es proporcional al número de estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Es errada: el cargo fijo no crece con la matrícula, así que la factura esperada es de $1.875.000.",
+        "explicacion": "Correcta. En Centro, el consumo es 1.200.000 − 300.000 = $900.000, es decir, $4.500 por estudiante. En El Rosal: 350 × 4.500 = $1.575.000 de consumo, más $300.000 de cargo fijo, da $1.875.000."
+      },
+      {
+        "id": "C",
+        "texto": "Es errada: el cargo fijo se resta antes de la regla de tres, y la factura esperada es de $1.575.000.",
+        "explicacion": "Incorrecta. Separa bien el cargo fijo, pero olvida sumarlo de nuevo: $1.575.000 es solo el consumo de El Rosal. La factura incluye también los $300.000 del cargo fijo."
+      },
+      {
+        "id": "D",
+        "texto": "Es correcta en lo esencial: se aleja menos del 5% del valor que resulta al separar el cargo fijo.",
+        "explicacion": "Incorrecta. La regla de tres da $2.100.000 y el valor correcto es $1.875.000: la diferencia de $225.000 es el 12% del valor correcto, no menos del 5%."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: $300.000 de la factura son un cargo fijo que no depende del consumo. Regla: la regla de tres solo vale para cantidades proporcionales, y aquí solo lo es el consumo. Cálculo: (1.200.000 − 300.000) ÷ 200 = $4.500 por estudiante; 350 × 4.500 + 300.000 = $1.875.000. Conclusión: la proyección de $2.100.000 es errada porque multiplica también el cargo fijo.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-065",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Errores en procedimientos",
+    "subtema": "Capacidad con puestos reservados",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Para una salida pedagógica al jardín botánico van 128 estudiantes de grado quinto. La coordinadora contrató buses de 44 puestos. Según el protocolo de salidas de la institución, en cada bus deben viajar 2 docentes acompañantes, que también ocupan puesto. La coordinadora calculó 128 ÷ 44 = 2,9 y contrató 3 buses. Un docente le advirtió que con esos buses no alcanzaba.\n\n¿Quién tiene razón?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El docente: descontando los puestos de los acompañantes, en los 3 buses caben 126 estudiantes.",
+        "explicacion": "Correcta. Cada bus lleva 2 acompañantes, así que quedan 44 − 2 = 42 puestos para estudiantes, y en los 3 buses, 126. Como viajan 128, faltan 2 puestos y se necesita un cuarto bus."
+      },
+      {
+        "id": "B",
+        "texto": "La coordinadora: los 3 buses suman 132 puestos, más que los 128 estudiantes que viajan.",
+        "explicacion": "Incorrecta. Olvida que los acompañantes también ocupan puesto. De los 132 puestos, 6 son para los docentes."
+      },
+      {
+        "id": "C",
+        "texto": "La coordinadora: con los 2 acompañantes, viajan 130 personas y hay 132 puestos.",
+        "explicacion": "Incorrecta. Lee mal el protocolo: son 2 acompañantes por bus, es decir, 6 en total. Viajan 134 personas para 132 puestos."
+      },
+      {
+        "id": "D",
+        "texto": "El docente: 128 ÷ 44 da 2,9, y con un resultado decimal no se puede saber cuántos buses contratar.",
+        "explicacion": "Incorrecta. Le da la razón al docente por un motivo errado: 2,9 se redondea a 3 buses sin problema. Lo que hace que no alcancen es que los 6 acompañantes ocupan puesto y solo quedan 126 para los estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el protocolo exige 2 acompañantes en cada bus, y ellos también ocupan puesto. Cálculo: con 3 buses hay 3 × 44 = 132 puestos; los 6 acompañantes dejan 126 para estudiantes, y viajan 128. Conclusión: faltan 2 puestos, así que el docente tiene razón y se necesita un cuarto bus.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-066",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Comparación de alternativas",
+    "subtema": "Punto de equilibrio entre un costo fijo y un costo por persona",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La secretaría de educación de un municipio estudia dos opciones para llevar a los estudiantes de la vereda La Esmeralda hasta la sede principal del colegio:\n\nOpción | Costo\nBus contratado de 45 puestos | $520.000 por día, sin importar cuántos estudiantes lo usen\nSubsidio de transporte | $12.000 por estudiante y por día\n\nEl número de estudiantes de la vereda cambia de un año a otro, pero nunca ha pasado de 45. El secretario de educación afirma: «Si llegan 44 estudiantes o más, el bus será más barato que los subsidios; con menos de 44, no».\n\n¿Qué se puede concluir de la afirmación del secretario?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es incorrecta: como 520.000 ÷ 12.000 = 43,3, el bus ya resulta más barato con 43 estudiantes.",
+        "explicacion": "Incorrecta. Redondea hacia abajo un umbral que debe redondearse hacia arriba. Con 43 estudiantes, los subsidios cuestan 43 × 12.000 = $516.000, menos que los $520.000 del bus."
+      },
+      {
+        "id": "B",
+        "texto": "Es correcta: frente a los $520.000 del bus, 43 subsidios suman $516.000 y 44 suman $528.000.",
+        "explicacion": "Correcta. El bus cuesta $520.000 diarios con cualquier número de estudiantes. Con 43, los subsidios suman $516.000 (salen más baratos que el bus) y con 44, $528.000 (salen más caros). El cambio ocurre justo entre 43 y 44, como dice el secretario."
+      },
+      {
+        "id": "C",
+        "texto": "Es incorrecta: el bus resulta más barato solo si va lleno, cuando el costo por estudiante es el menor.",
+        "explicacion": "Incorrecta. Con 44 estudiantes el bus ya cuesta menos que los subsidios ($520.000 frente a $528.000). Llenarlo baja el costo por estudiante, pero no es la condición para que el bus convenga."
+      },
+      {
+        "id": "D",
+        "texto": "No se puede evaluar: falta saber cuántos estudiantes llegarán de la vereda el próximo año.",
+        "explicacion": "Incorrecta. La afirmación es condicional («si llegan 44 o más…»): se comprueba comparando los costos para cada número de estudiantes, sin necesidad de saber cuántos llegarán."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el bus tiene un costo fijo de $520.000 diarios y el subsidio cuesta $12.000 por estudiante. Regla: el bus conviene cuando el total de los subsidios supera su costo. Cálculo: 520.000 ÷ 12.000 = 43,3; con 43 estudiantes los subsidios suman $516.000 y con 44, $528.000. Conclusión: el bus es más barato desde 44 estudiantes, como afirma el secretario.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Comparación de alternativas",
+    "subtema": "Costo por puesto y por año de uso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Con $36 millones del Fondo de Servicios Educativos, un colegio va a dotar su aula de informática. Tiene dos cotizaciones:\n\nOpción | Equipos | Precio por equipo | Vida útil estimada\nTabletas | 30 | $1.200.000 | 3 años\nPortátiles | 20 | $1.800.000 | 5 años\n\nEl consejo directivo acordó escoger la opción con el menor costo por puesto de trabajo y por año de uso. El coordinador sostiene que deben comprarse las tabletas, porque por el mismo dinero dan 10 puestos más.\n\n¿Qué se puede concluir del argumento del coordinador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se sostiene: las tabletas dan un 50% más de puestos que los portátiles por el mismo valor.",
+        "explicacion": "Incorrecta. Es cierto que 30 puestos son un 50% más que 20, pero el criterio acordado incluye los años de uso. Las tabletas duran 3 años y los portátiles 5, y eso cambia el resultado."
+      },
+      {
+        "id": "B",
+        "texto": "No hay diferencia: las dos opciones cuestan $36 millones, así que el criterio no permite escoger.",
+        "explicacion": "Incorrecta. El costo total es igual, pero el criterio es el costo por puesto y por año. Con el mismo dinero, las opciones dan cantidades distintas de puestos durante tiempos distintos."
+      },
+      {
+        "id": "C",
+        "texto": "No se sostiene: por cada año de uso, un portátil cuesta $360.000 y una tableta, $400.000.",
+        "explicacion": "Correcta. Tableta: 1.200.000 ÷ 3 = $400.000 por año. Portátil: 1.800.000 ÷ 5 = $360.000 por año. Visto en conjunto, por los mismos $36 millones los portátiles dan 20 × 5 = 100 años de puesto y las tabletas, 30 × 3 = 90."
+      },
+      {
+        "id": "D",
+        "texto": "No se sostiene: los portátiles duran un 67% más y cuestan un 50% más, así que rinden un 17% más.",
+        "explicacion": "Incorrecta. Llega a la conclusión correcta con una cuenta errada: los porcentajes no se restan. Los portátiles dan 100 años de puesto frente a 90, es decir, un 11,1% más; el 17% de restar 67 − 50 no corresponde a ninguna razón de los datos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el criterio es el costo por puesto y por año de uso, y las vidas útiles son de 3 y 5 años. Cálculo: tableta, 1.200.000 ÷ 3 = $400.000 por año; portátil, 1.800.000 ÷ 5 = $360.000 por año. Conclusión: aunque las tabletas dan 10 puestos más, los portátiles cuestan menos por puesto y por año, así que el argumento del coordinador no se sostiene con el criterio acordado.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Comparación de alternativas",
+    "subtema": "Costo por resultado logrado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Una secretaría de educación debe escoger cuál de sus dos programas de refuerzo en lectura financiará el próximo año. El criterio acordado es el costo por cada estudiante que mejora su nivel de lectura. Los resultados de 2025 fueron:\n\nPrograma | Costo total | Estudiantes atendidos | Estudiantes que mejoraron de nivel\nLeer en Casa | $18.000.000 | 120 | 72\nTutorías de Aula | $12.000.000 | 60 | 45\n\nUn funcionario propone financiar Tutorías de Aula, porque cuesta menos y en ella mejoró una proporción mayor de estudiantes.\n\n¿Qué decisión se sigue del criterio acordado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Financiar Tutorías de Aula: en ella mejoró el 75% de los atendidos, y en Leer en Casa, el 60%.",
+        "explicacion": "Incorrecta. La proporción de mejora (45 ÷ 60 = 75% frente a 72 ÷ 120 = 60%) mide la eficacia, pero no el costo. El criterio acordado combina las dos cosas: cuánto cuesta cada estudiante que mejora."
+      },
+      {
+        "id": "B",
+        "texto": "Financiar Tutorías de Aula: su costo total es un tercio menor que el de Leer en Casa.",
+        "explicacion": "Incorrecta. Es cierto que $12 millones es un tercio menos que $18 millones, pero Tutorías de Aula también logra menos mejoras (45 frente a 72). El costo total no responde al criterio acordado."
+      },
+      {
+        "id": "C",
+        "texto": "Financiar Leer en Casa: cada mejora le cuesta $250.000, y a Tutorías de Aula, unos $266.700.",
+        "explicacion": "Correcta. Leer en Casa: 18.000.000 ÷ 72 = $250.000 por estudiante que mejora. Tutorías de Aula: 12.000.000 ÷ 45 ≈ $266.667. Con el criterio acordado, Leer en Casa es la opción más barata por resultado."
+      },
+      {
+        "id": "D",
+        "texto": "No decidir aún: los dos programas atendieron a un número distinto de estudiantes y no son comparables.",
+        "explicacion": "Incorrecta. Un indicador por estudiante sirve justamente para comparar programas de distinto tamaño. Con los datos de la tabla, el costo por mejora se puede calcular para los dos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el criterio es el costo por estudiante que mejora, no el costo total ni la proporción de mejora. Cálculo: 18.000.000 ÷ 72 = $250.000 y 12.000.000 ÷ 45 ≈ $266.667. Conclusión: aunque Tutorías de Aula cuesta menos y tiene mayor proporción de mejora, cada mejora le sale más cara; según el criterio acordado, se financia Leer en Casa.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-069",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Gráficos engañosos",
+    "subtema": "Eje horizontal con intervalos desiguales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea la siguiente información y responda la pregunta.\n\nUn periódico local publicó un gráfico de líneas con la matrícula de preescolar del municipio. En el eje horizontal, los seis años aparecen a la misma distancia uno de otro. Los datos del gráfico son estos:\n\nAño | Niños matriculados en preescolar\n2010 | 1.000\n2015 | 1.250\n2020 | 1.500\n2023 | 1.710\n2024 | 1.790\n2025 | 1.880\n\nEn el gráfico, la línea sube mucho en los dos primeros tramos y poco en los dos últimos. El titular de la nota dice: «La matrícula de preescolar se está frenando».\n\n¿Qué se puede concluir del titular?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se sostiene: el último tramo de la línea sube 90 niños, y cada uno de los dos primeros, 250.",
+        "explicacion": "Incorrecta. Compara tramos de distinta duración: los dos primeros abarcan 5 años cada uno y el último, 1 año. Por año, el primer tramo creció 250 ÷ 5 = 50 niños, menos que los 90 del último."
+      },
+      {
+        "id": "B",
+        "texto": "No se sostiene: el aumento pasó de unos 50 niños por año, en promedio, a 90 en el último año.",
+        "explicacion": "Correcta. Por año: 2010–2015, 250 ÷ 5 = 50; 2015–2020, 50; 2020–2023, 210 ÷ 3 = 70; 2023–2024, 80; 2024–2025, 90. El crecimiento anual se aceleró. La línea parece frenarse porque el gráfico pone a la misma distancia periodos de 5 años y de 1 año."
+      },
+      {
+        "id": "C",
+        "texto": "Se sostiene: el crecimiento bajó del 25% entre 2010 y 2015 a cerca del 5% entre 2024 y 2025.",
+        "explicacion": "Incorrecta. Compara el crecimiento de 5 años (250 ÷ 1.000 = 25%) con el de 1 año (90 ÷ 1.790 ≈ 5%). Para comparar ritmos, los dos periodos deben llevarse a la misma duración."
+      },
+      {
+        "id": "D",
+        "texto": "No se sostiene: la línea nunca baja, y una matrícula que no disminuye no puede estar frenándose.",
+        "explicacion": "Incorrecta. Llega al veredicto correcto con una razón inválida: «frenarse» es crecer más despacio, y eso puede ocurrir aunque la matrícula nunca baje. Lo que refuta el titular es que el aumento por año pasó de unos 50 niños a 90."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los tramos del gráfico duran 5, 5, 3, 1 y 1 años, pero aparecen a la misma distancia. Regla: para comparar el ritmo de crecimiento hay que calcularlo por año. Cálculo: 50, 50, 70, 80 y 90 niños por año. Conclusión: el crecimiento se aceleró; el titular se apoya en una ilusión que crea el eje horizontal.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Gráficos engañosos",
+    "subtema": "Periodo recortado que empieza en el punto más bajo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "En el boletín de fin de año, el rector publicó un gráfico de líneas con la tasa de aprobación del colegio (el porcentaje de estudiantes que aprobaron el año) entre 2022 y 2025, en el que la línea sube todos los años. Debajo escribió: «En 2025 logramos la tasa de aprobación más alta de los últimos siete años». La secretaría académica tiene la serie completa:\n\nAño | Tasa de aprobación\n2019 | 94%\n2020 | 92%\n2021 | 85%\n2022 | 81%\n2023 | 84%\n2024 | 87%\n2025 | 90%\n\nAl revisar la serie, una docente le advierte al rector que esa frase no es cierta.\n\n¿Qué se puede concluir de la frase del rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es correcta: desde 2022 la tasa subió todos los años, hasta llegar al 90% en 2025.",
+        "explicacion": "Incorrecta. Es cierto que la tasa subió cada año desde 2022, pero el gráfico empieza en el punto más bajo de la serie. La frase habla de siete años (2019 a 2025), y en ese periodo hubo años con tasas más altas."
+      },
+      {
+        "id": "B",
+        "texto": "Es incorrecta: 2019 y 2020, con el 94% y el 92%, superaron el 90% de 2025.",
+        "explicacion": "Correcta. Los últimos siete años van de 2019 a 2025. En 2019 la tasa fue del 94% y en 2020 del 92%, ambas mayores que el 90% de 2025. El gráfico, al empezar en 2022, oculta esos años."
+      },
+      {
+        "id": "C",
+        "texto": "Es correcta: el 90% de 2025 supera en 9 puntos al 81% de 2022, el valor más bajo de la serie.",
+        "explicacion": "Incorrecta. La subida de 9 puntos desde 2022 es real (90 − 81 = 9), pero superar el valor más bajo no convierte a 2025 en el más alto de los siete años."
+      },
+      {
+        "id": "D",
+        "texto": "Es incorrecta: el 90% de 2025 apenas iguala la tasa que el colegio tenía en 2021.",
+        "explicacion": "Incorrecta. La conclusión coincide, pero el dato es falso: en 2021 la tasa fue del 85%, menor que el 90% de 2025. Los años que superan a 2025 son 2019 y 2020."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la frase compara 2025 con los últimos siete años (2019 a 2025), pero el gráfico solo muestra desde 2022, el año más bajo. Cálculo: 2019 (94%) y 2020 (92%) superan el 90% de 2025. Conclusión: la frase es incorrecta; el gráfico engaña porque escoge un periodo que empieza en el punto más bajo de la serie.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Gráficos engañosos",
+    "subtema": "Pictograma agrandado en dos dimensiones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "En una cartelera del colegio, una infografía compara los libros que prestó la biblioteca en 2024 y en 2025. Cada año aparece representado con el dibujo de un libro: el de 2024 mide 4 cm de alto por 3 cm de ancho, y el de 2025, 6 cm de alto por 4,5 cm de ancho. Debajo de cada dibujo se lee la cifra: 2.000 préstamos en 2024 y 3.000 en 2025.\n\nUna docente comenta: «Los préstamos se duplicaron con creces: el libro de 2025 ocupa más del doble de espacio que el de 2024».\n\n¿Qué se puede concluir del comentario de la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es acertado: el dibujo de 2025 ocupa 27 cm² y el de 2024, 12 cm², es decir, 2,25 veces más.",
+        "explicacion": "Incorrecta. El cálculo de las áreas es correcto (6 × 4,5 = 27; 4 × 3 = 12), pero mide el dibujo, no los préstamos. Lo que importa son las cifras: 3.000 ÷ 2.000 = 1,5."
+      },
+      {
+        "id": "B",
+        "texto": "Es acertado: los préstamos aumentaron un 150%, lo que supera la duplicación.",
+        "explicacion": "Incorrecta. Confunde la razón con el aumento: 3.000 es 1,5 veces 2.000, así que el aumento es del 50%. Un aumento del 150% habría llevado los préstamos a 5.000."
+      },
+      {
+        "id": "C",
+        "texto": "Es errado: el dibujo es fiel a los datos, porque cada lado creció en la misma proporción que los préstamos.",
+        "explicacion": "Incorrecta. Es cierto que cada lado creció 1,5 veces, como los préstamos, pero el ojo compara áreas, y el área creció 1,5 × 1,5 = 2,25 veces. Por eso el dibujo no es fiel: exagera el aumento."
+      },
+      {
+        "id": "D",
+        "texto": "Es errado: los préstamos crecieron un 50%, y el dibujo lo exagera porque se agrandó a lo alto y a lo ancho.",
+        "explicacion": "Correcta. Los préstamos pasaron de 2.000 a 3.000: un aumento del 50%. Al multiplicar por 1,5 el alto y también el ancho, el área del dibujo se multiplicó por 2,25, y eso da la falsa impresión de que los préstamos más que se duplicaron."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los préstamos pasaron de 2.000 a 3.000, y el dibujo se agrandó 1,5 veces en las dos dimensiones. Cálculo: 3.000 ÷ 2.000 = 1,5 (aumento del 50%); el área pasó de 12 a 27 cm², es decir, 2,25 veces. Conclusión: el comentario es errado; el pictograma exagera el aumento porque su área crece con el cuadrado de la razón.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Gráficos engañosos",
+    "subtema": "Eje vertical truncado frente a una afirmación numérica correcta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "En el informe anual, la rectora presentó un gráfico de barras con el porcentaje de estudiantes que aprobaron todas las áreas. El eje vertical empieza en 60% y termina en 75%. Las barras muestran estos valores:\n\nAño | Estudiantes que aprobaron todas las áreas\n2023 | 62%\n2025 | 72%\n\nJunto al gráfico, la rectora escribió: «El porcentaje de estudiantes que aprueban todas las áreas subió 10 puntos porcentuales». Un docente sostiene que esa frase es falsa, porque en el gráfico la barra de 2025 se ve seis veces más alta que la de 2023.\n\n¿Qué se puede concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La frase es correcta: 72 − 62 = 10, y la diferencia entre las barras la agranda un eje que no arranca en cero.",
+        "explicacion": "Correcta. La frase habla de puntos porcentuales: 72% − 62% = 10 puntos. El docente observa bien el gráfico: sobre un eje que empieza en 60, las barras miden 2 y 12, de ahí que una se vea seis veces la otra. Pero esa exageración es del gráfico, no de la frase."
+      },
+      {
+        "id": "B",
+        "texto": "La frase es falsa: si la barra de 2025 es seis veces la de 2023, el porcentaje aumentó un 500%.",
+        "explicacion": "Incorrecta. Toma la altura visible de las barras como si fuera el dato. Las barras miden 2 y 12 solo porque el eje empieza en 60; los porcentajes reales son 62% y 72%."
+      },
+      {
+        "id": "C",
+        "texto": "La frase es falsa: el aumento fue del 16,1%, que es distinto de un aumento de 10 puntos.",
+        "explicacion": "Incorrecta. Las dos cifras describen el mismo cambio: subió 10 puntos porcentuales, lo que equivale a un aumento relativo de 10 ÷ 62 ≈ 16,1%. Una no desmiente a la otra."
+      },
+      {
+        "id": "D",
+        "texto": "La frase es correcta: que la barra de 2025 se vea seis veces más alta confirma que la mejora fue grande.",
+        "explicacion": "Incorrecta. Llega a la conclusión correcta por una razón falsa: la proporción entre las barras es un efecto del eje que empieza en 60, no de los datos. La frase se verifica con los valores: 72 − 62 = 10 puntos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la frase de la rectora habla de puntos porcentuales, y los valores son 62% y 72%. Cálculo: 72 − 62 = 10 puntos; en el gráfico, con el eje desde 60, las barras miden 2 y 12, por eso una se ve seis veces la otra. Conclusión: el gráfico exagera, pero la frase es correcta; el docente confunde la impresión visual con los datos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-073",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Muestras y generalización",
+    "subtema": "Muestra autoseleccionada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Para decidir si solicita a la secretaría de educación el paso a la jornada única, el rector de un colegio con 1.900 familias publicó una encuesta en la página web institucional durante una semana. Respondieron 160 familias, y 136 de ellas, el 85%, se declararon de acuerdo con la jornada única. El rector concluye: «La gran mayoría de las familias del colegio apoya la jornada única».\n\n¿Qué tan sólida es la conclusión del rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es sólida: un apoyo del 85% está tan lejos del 50% que más respuestas no cambiarían el resultado.",
+        "explicacion": "Incorrecta. Un porcentaje alto no corrige un sesgo de selección. Si las familias interesadas en la jornada única fueron las que más respondieron, el 85% puede estar muy lejos de lo que piensan las 1.740 que no respondieron."
+      },
+      {
+        "id": "B",
+        "texto": "Es sólida: 160 respuestas superan el mínimo de 100 que suele bastar para generalizar.",
+        "explicacion": "Incorrecta. Lo decisivo no es el número de respuestas sino cómo se escogió la muestra, y no existe un mínimo de 100 que valga para cualquier caso. 160 familias que eligieron participar no representan al colegio."
+      },
+      {
+        "id": "C",
+        "texto": "Es débil: para generalizar habría que encuestar al menos a la mitad de las familias, es decir, a 950.",
+        "explicacion": "Incorrecta. Una muestra no necesita la mitad de la población para generalizar: lo decisivo es que se escoja al azar. 950 respuestas autoseleccionadas tendrían el mismo problema."
+      },
+      {
+        "id": "D",
+        "texto": "Es débil: respondió el 8,4% de las familias, que decidieron participar y pueden no parecerse a las demás.",
+        "explicacion": "Correcta. 160 ÷ 1.900 ≈ 8,4%. Las familias que respondieron eligieron hacerlo (por ejemplo, las que consultan la página y tienen una opinión fuerte), así que la muestra no es aleatoria y su 85% no puede extenderse a todo el colegio."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la encuesta se publicó en la página web y respondió quien quiso: 160 de 1.900 familias (8,4%). Regla: para generalizar, la muestra debe escogerse al azar; una muestra autoseleccionada puede estar sesgada aunque su resultado sea muy alto. Conclusión: la conclusión del rector es débil, porque el 85% describe a quienes respondieron, no a todas las familias.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Muestras y generalización",
+    "subtema": "Muestra aleatoria y estimación del total",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La orientadora de un colegio de 1.600 estudiantes quería estimar cuántos llegan a clase sin desayunar. De la lista completa de matrícula sorteó a 200 estudiantes, y todos respondieron un cuestionario anónimo: 54 dijeron que la mayoría de los días llegan sin desayunar. Con ese dato, la orientadora estimó que en el colegio son unos 430 estudiantes. El coordinador objeta que 200 estudiantes son apenas la octava parte del colegio y que, por eso, no se puede decir nada de los 1.600.\n\n¿Qué se puede concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La estimación es razonable: el sorteo dio a todos la misma opción de quedar, y 54 de 200 equivale al 27%.",
+        "explicacion": "Correcta. La muestra se sorteó entre todos los matriculados y respondió completa, de forma anónima. En ella, 54 ÷ 200 = 0,27; aplicado al colegio, 0,27 × 1.600 = 432, es decir, unos 430 estudiantes. Es una estimación, con su margen de error, pero está bien fundada."
+      },
+      {
+        "id": "B",
+        "texto": "Tiene razón el coordinador: una muestra permite generalizar cuando incluye a la mayoría de la población.",
+        "explicacion": "Incorrecta. Lo que permite generalizar es que la muestra se escoja al azar, no que incluya a la mayoría. Una muestra aleatoria de 200 da una estimación útil aunque sea la octava parte del colegio."
+      },
+      {
+        "id": "C",
+        "texto": "Tiene razón el coordinador: se sabe de 54 estudiantes, y sobre los demás no puede afirmarse nada.",
+        "explicacion": "Incorrecta. Estimar lo que pasa en toda la población a partir de una parte es justo lo que permite una muestra aleatoria. Con 54 de 200, lo razonable es estimar que cerca del 27% del colegio llega sin desayunar."
+      },
+      {
+        "id": "D",
+        "texto": "La estimación es exagerada: los 54 estudiantes equivalen al 3,4% del colegio, no al 27%.",
+        "explicacion": "Incorrecta. Divide los 54 estudiantes de la muestra entre los 1.600 del colegio. El porcentaje se calcula dentro de la muestra (54 ÷ 200 = 27%) y luego se aplica al total."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los 200 estudiantes se sortearon entre toda la matrícula y todos respondieron. Regla: una muestra aleatoria permite estimar la proporción de la población, aunque sea una fracción pequeña de ella. Cálculo: 54 ÷ 200 = 27%; el 27% de 1.600 es 432, unos 430. Conclusión: la estimación de la orientadora es razonable y la objeción del coordinador no se sostiene.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-075",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Información necesaria para decidir",
+    "subtema": "Comparar conteos de periodos de distinta duración",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Desde abril, un colegio abre la portería 15 minutos antes para reducir las llegadas tarde. El coordinador de convivencia presentó este reporte:\n\nMes | Llegadas tarde registradas\nMarzo | 240\nAbril | 150\n\nLa matrícula fue de 820 estudiantes en los dos meses. Con estos datos, el coordinador concluye que la medida redujo las llegadas tarde en un 37,5%.\n\n¿Qué dato es indispensable para saber si esa conclusión se sostiene?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cuántos estudiantes distintos llegaron tarde en cada mes, para no contar dos veces a los mismos.",
+        "explicacion": "Incorrecta. Contar estudiantes en lugar de llegadas cambia el indicador, pero no resuelve el problema: si abril tuvo menos días de clase, también habría menos estudiantes con llegadas tarde, aunque la medida no sirviera."
+      },
+      {
+        "id": "B",
+        "texto": "Cuántos minutos de retraso sumaron en cada mes, para medir la gravedad de las llegadas tarde.",
+        "explicacion": "Incorrecta. Los minutos de retraso miden otra cosa (la gravedad) y también dependen de cuántos días hubo clase. No sirven para saber si las llegadas tarde disminuyeron."
+      },
+      {
+        "id": "C",
+        "texto": "Cuántos días de clase hubo en marzo y en abril, para comparar las llegadas tarde por día.",
+        "explicacion": "Correcta. Las llegadas tarde se acumulan día a día: si abril tuvo menos días de clase (por ejemplo, por una semana de receso), 150 llegadas pueden equivaler a un promedio diario igual o mayor que el de marzo. Con 20 días en marzo y 12 en abril, por ejemplo, serían 12 y 12,5 llegadas por día."
+      },
+      {
+        "id": "D",
+        "texto": "Qué porcentaje de los 820 estudiantes representan las llegadas tarde de cada mes, para usar una tasa.",
+        "explicacion": "Incorrecta. La matrícula fue la misma en los dos meses, así que dividir entre 820 deja la misma reducción del 37,5%. La tasa que hace falta es por día de clase, no por estudiante matriculado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el reporte compara totales de dos meses, y un total mensual depende de cuántos días hubo clase. Regla: para comparar periodos de distinta duración hay que usar una tasa (llegadas por día de clase). Ejemplo: 240 en 20 días son 12 por día; 150 en 12 días son 12,5 por día. Conclusión: sin los días de clase de cada mes no se puede saber si la medida redujo las llegadas tarde.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Información necesaria para decidir",
+    "subtema": "El promedio no determina el porcentaje que supera un umbral",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "En la prueba de lectura de grado quinto, las dos sedes de una institución obtuvieron estos resultados, en una escala de 1,0 a 5,0:\n\nSede | Estudiantes evaluados | Promedio\nNorte | 64 | 3,8\nSur | 58 | 3,4\n\nA partir de la tabla, el rector concluye que en la sede Norte hay un mayor porcentaje de estudiantes con desempeño básico o superior, es decir, con nota de 3,0 o más.\n\n¿Qué información haría falta para comprobar o refutar esa conclusión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La nota más alta y la más baja de cada sede, para saber qué tan dispersas están las notas.",
+        "explicacion": "Incorrecta. Con la nota más alta y la más baja se conoce el rango, pero no cuántos estudiantes quedan por encima o por debajo de 3,0."
+      },
+      {
+        "id": "B",
+        "texto": "Cuántos estudiantes de cada sede sacaron menos de 3,0, para restarlos del total de evaluados.",
+        "explicacion": "Correcta. Con ese conteo y los evaluados (64 y 58) se calcula el porcentaje de cada sede con 3,0 o más. El promedio no lo determina: en Norte, 48 estudiantes con 4,6 y 16 con 1,4 dan un promedio de 3,8 y apenas el 75% sobre 3,0, mientras que en Sur todos podrían tener 3,4, es decir, el 100%."
+      },
+      {
+        "id": "C",
+        "texto": "La mediana de las notas de cada sede, para saber en cuál de las dos queda más arriba de 3,0.",
+        "explicacion": "Incorrecta. La mediana solo dice si al menos la mitad de cada sede supera un valor. Si las dos medianas están sobre 3,0, sigue sin saberse en cuál sede es mayor el porcentaje."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna adicional: con 64 y 58 evaluados, el promedio más alto implica más estudiantes sobre 3,0.",
+        "explicacion": "Incorrecta. Un promedio más alto no implica más estudiantes sobre un umbral: unas pocas notas muy bajas o muy altas mueven el promedio sin cambiar cuántos pasan de 3,0."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el rector compara porcentajes de estudiantes con 3,0 o más, pero solo tiene promedios. Regla: el promedio no determina cuántos datos superan un umbral; dos grupos con promedios distintos pueden quedar en cualquier orden en ese porcentaje. Conclusión: hace falta saber cuántos estudiantes de cada sede quedaron por debajo de 3,0; con eso y los evaluados se calcula el porcentaje de cada sede.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Validación de afirmaciones con datos",
+    "subtema": "La mitad de un grupo en una tabla de frecuencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Al cerrar la campaña de lectura del semestre, la bibliotecaria registró cuántos libros leyó cada uno de los 36 estudiantes de grado séptimo:\n\nLibros leídos | Estudiantes\n0 | 4\n1 | 7\n2 | 7\n3 | 6\n4 | 6\n5 | 4\n6 | 2\n\nEn su informe escribió: «La mitad del grado leyó 3 libros o más».\n\n¿Qué se puede concluir de esa afirmación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es correcta: sumando a quienes leyeron 3, 4, 5 y 6 libros se llega a 18 de los 36 estudiantes.",
+        "explicacion": "Correcta. 6 + 6 + 4 + 2 = 18 estudiantes leyeron 3 libros o más, exactamente la mitad de 36."
+      },
+      {
+        "id": "B",
+        "texto": "Es incorrecta: el promedio del grado es de unos 2,6 libros por estudiante, por debajo de 3.",
+        "explicacion": "Incorrecta. El promedio (95 ÷ 36 ≈ 2,6) y la cantidad de estudiantes que leyó 3 libros o más miden cosas distintas: que el promedio sea menor que 3 no impide que la mitad del grado haya llegado a 3 libros."
+      },
+      {
+        "id": "C",
+        "texto": "Es incorrecta: solo 6 estudiantes leyeron 3 libros, es decir, la sexta parte del grado.",
+        "explicacion": "Incorrecta. Cuenta solo la fila de 3 libros y olvida que «3 o más» incluye también a quienes leyeron 4, 5 y 6."
+      },
+      {
+        "id": "D",
+        "texto": "Es correcta: como los valores van de 0 a 6, la mitad de los estudiantes leyó más de 3 libros.",
+        "explicacion": "Incorrecta. Que 3 sea el punto medio entre 0 y 6 no dice cuántos estudiantes hay a cada lado. De hecho, más de 3 libros (4, 5 o 6) leyeron 12 estudiantes, un tercio del grado."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la afirmación es sobre cuántos estudiantes leyeron 3 libros o más. Cálculo: 6 + 6 + 4 + 2 = 18 de 36, es decir, la mitad. El promedio (≈ 2,6) es menor que 3, pero mide otra cosa y no contradice la afirmación. Conclusión: la afirmación de la bibliotecaria es correcta.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Validación de afirmaciones con datos",
+    "subtema": "Razón entre dos partes frente a porcentaje del total",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "En el consejo académico, el rector informó que en grado noveno, por cada 3 estudiantes que aprobaron el año, hubo 1 que lo reprobó, y concluyó que la aprobación del grado fue del 75%. Una docente le respondió que, si reprobó 1 por cada 3 que aprobaron, reprobó la tercera parte del grado, y que la aprobación fue del 66,7%.\n\n¿Quién tiene razón?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La docente: 1 reprobado por cada 3 aprobados es la tercera parte, y 100% − 33,3% = 66,7%.",
+        "explicacion": "Incorrecta. Compara los reprobados con los aprobados (1 de 3), no con el total del grado. Por cada 3 aprobados y 1 reprobado hay 4 estudiantes, y el reprobado es 1 de 4, es decir, el 25%."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguno: si hubo 1 reprobado por cada 4 estudiantes, la aprobación del grado fue del 25%.",
+        "explicacion": "Incorrecta. 1 de cada 4 estudiantes es la proporción de reprobados, no la de aprobados. Si reprobó el 25%, aprobó el 75%."
+      },
+      {
+        "id": "C",
+        "texto": "El rector: en cada grupo de 4 estudiantes hubo 3 aprobados, y 3 de 4 equivalen al 75%.",
+        "explicacion": "Correcta. La razón de 3 aprobados por cada reprobado forma grupos de 4 estudiantes con 3 aprobados: 3 ÷ 4 = 75%. Por ejemplo, con 120 estudiantes habrían aprobado 90 y reprobado 30."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno puede afirmarlo: sin el número de estudiantes de noveno no se puede calcular un porcentaje.",
+        "explicacion": "Incorrecta. La razón entre aprobados y reprobados basta para calcular el porcentaje, sea cual sea el total: 3 de cada 4 es el 75% con 40, con 120 o con cualquier número de estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: por cada 3 estudiantes que aprobaron hubo 1 que reprobó. Regla: si dos partes de un total están en razón a : b, la primera es a ÷ (a + b) del total. Cálculo: 3 ÷ (3 + 1) = 75%. Conclusión: el rector tiene razón; la docente divide los reprobados entre los aprobados (1 de 3) en lugar de dividirlos entre el total (1 de 4).",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Validación de afirmaciones con datos",
+    "subtema": "Probabilidad de quedar en un sorteo de varios cupos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "El colegio sorteará 3 cupos para un intercambio cultural entre los 12 estudiantes de grado décimo que se inscribieron. Cada inscrito tiene la misma probabilidad de quedar, y nadie puede ganar dos cupos. La madre de Laura, una de las inscritas, comenta que su hija tiene una probabilidad de 1 entre 12. El director de grupo le responde que la probabilidad de Laura es mayor.\n\n¿Quién tiene razón?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La madre: hay 12 inscritos y Laura es una sola, así que su probabilidad es de 1 entre 12.",
+        "explicacion": "Incorrecta. 1 entre 12 sería la probabilidad si se sorteara un solo cupo. Con 3 cupos, Laura tiene tres oportunidades de quedar."
+      },
+      {
+        "id": "B",
+        "texto": "La madre: los cupos se sortean uno por uno, y en cada sorteo Laura tiene 1 opción entre 12.",
+        "explicacion": "Incorrecta. En el primer sorteo tiene 1 opción entre 12, pero si no sale, en el segundo tiene 1 entre 11, y luego 1 entre 10. Sumando los caminos: 1/12 + (11/12)(1/11) + (11/12)(10/11)(1/10) = 3/12."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno: la probabilidad es de 1 entre 220, que es el número de grupos de 3 que pueden salir.",
+        "explicacion": "Incorrecta. Hay 220 grupos posibles de 3 ganadores, pero Laura está en 55 de ellos (los que la incluyen junto con 2 de los otros 11). Su probabilidad es 55 ÷ 220 = 1/4."
+      },
+      {
+        "id": "D",
+        "texto": "El director de grupo: con 3 cupos para 12 inscritos, Laura tiene una probabilidad de 1 entre 4.",
+        "explicacion": "Correcta. Como todos tienen la misma probabilidad y salen 3 de 12, a cada inscrito le corresponde 3 ÷ 12 = 1/4, es decir, el 25%."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se sortean 3 cupos entre 12 inscritos, con igual probabilidad para todos. Regla: si se escogen k de n al azar, cada uno queda con probabilidad k ÷ n. Cálculo: 3 ÷ 12 = 1/4 (25%); también, Laura está en 55 de los 220 grupos posibles, y 55 ÷ 220 = 1/4. Conclusión: el director de grupo tiene razón.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-080",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Validación de afirmaciones con datos",
+    "subtema": "Proyección con un porcentaje de caída constante",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Durante los últimos cinco años, la matrícula de un colegio ha bajado un 6% cada año. En 2025 fue de 1.000 estudiantes. La secretaría de educación exige un mínimo de 880 estudiantes para mantener la planta docente actual. La rectora afirma que, aunque la tendencia continúe igual, en 2027 el colegio seguirá por encima de ese mínimo. Un funcionario de la secretaría le responde que no: «1.000 menos el 12% da justo 880».\n\n¿Qué se puede concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tiene razón el funcionario: dos caídas del 6% equivalen a una del 12%, y quedarían 880 estudiantes.",
+        "explicacion": "Incorrecta. Suma los porcentajes como si se aplicaran sobre la misma base. La segunda caída del 6% se aplica sobre 940, no sobre 1.000: se pierden 56,4 estudiantes, no 60."
+      },
+      {
+        "id": "B",
+        "texto": "Tiene razón el funcionario: cada año se pierde más que el anterior, así que quedarían menos de 880.",
+        "explicacion": "Incorrecta. Con un porcentaje fijo, la pérdida es cada vez menor, porque la base se achica: 60 estudiantes en 2026 y unos 56 en 2027."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno puede afirmarlo: una tendencia de cinco años no permite proyectar la matrícula de 2027.",
+        "explicacion": "Incorrecta. La rectora no pronostica qué pasará: afirma lo que ocurriría si la tendencia continúa igual. Con ese supuesto, la proyección se puede calcular."
+      },
+      {
+        "id": "D",
+        "texto": "Tiene razón la rectora: la caída de 2027 se aplica sobre los 940 de 2026, y quedarían unos 884.",
+        "explicacion": "Correcta. 2026: 1.000 × 0,94 = 940. 2027: 940 × 0,94 = 883,6, es decir, unos 884 estudiantes, por encima del mínimo de 880."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la matrícula cae un 6% cada año, es decir, sobre el valor del año anterior. Cálculo: 1.000 × 0,94 × 0,94 = 883,6. Conclusión: si la tendencia sigue igual, en 2027 habría unos 884 estudiantes, por encima del mínimo de 880; la rectora tiene razón y el funcionario se equivoca al sumar los dos porcentajes como un 12%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

@@ -228,10 +228,11 @@ export default function GuiaPage() {
               </span>
             </Link>
 
-            <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+            <nav className="hidden lg:flex items-center gap-6 whitespace-nowrap text-sm font-semibold text-slate-600 dark:text-slate-300">
               <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Inicio</Link>
               <Link href="/#planes" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Planes</Link>
               <Link href="/simulacro-gratis" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Simulacro</Link>
+              <Link href="/mi-convocatoria" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap">Mi convocatoria</Link>
               <Link href="/guia" className="text-blue-600 dark:text-blue-400 font-bold">Guía</Link>
             </nav>
 

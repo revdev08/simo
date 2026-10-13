@@ -1,0 +1,942 @@
+[
+  {
+    "id": "TC-RCD-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Presupuesto escolar (FSE y PAE)",
+    "subtema": "Porcentajes sucesivos: descuento e IVA",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "El consejo directivo de una institución educativa aprobó comprar 60 pupitres con recursos del Fondo de Servicios Educativos. El proveedor cotizó cada pupitre en $185.000 antes de IVA y ofrece un descuento del 10% sobre ese precio por comprar más de 50 unidades. El IVA del 19% se calcula sobre el valor ya descontado. ¿Cuál es el valor total que debe pagar la institución por los 60 pupitres?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$9.990.000",
+        "explicacion": "Incorrecta. Aplica el descuento (60 × $185.000 × 0,90 = $9.990.000), pero olvida sumar el IVA del 19% sobre ese valor."
+      },
+      {
+        "id": "B",
+        "texto": "$11.888.100",
+        "explicacion": "Correcta. Valor antes de IVA: 60 × $185.000 = $11.100.000. Con el descuento: $11.100.000 × 0,90 = $9.990.000. Con el IVA: $9.990.000 × 1,19 = $11.888.100."
+      },
+      {
+        "id": "C",
+        "texto": "$12.099.000",
+        "explicacion": "Incorrecta. Combina los porcentajes sobre la misma base (−10% + 19% = +9%) y calcula $11.100.000 × 1,09. El IVA se calcula sobre el valor ya descontado, no sobre el precio inicial."
+      },
+      {
+        "id": "D",
+        "texto": "$13.209.000",
+        "explicacion": "Incorrecta. Aplica el IVA al valor sin descuento ($11.100.000 × 1,19) y olvida el descuento del 10%."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el descuento del 10% se aplica primero y el IVA del 19% se calcula sobre el valor ya descontado. Regla: los porcentajes sucesivos se aplican uno tras otro (se multiplican); no se suman. Cálculo: 60 × $185.000 = $11.100.000; × 0,90 = $9.990.000; × 1,19 = $11.888.100. Conclusión: la institución paga $11.888.100. Sumar los porcentajes (+9%) daría $12.099.000.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Proporcionalidad y regla de tres",
+    "subtema": "Reparto proporcional después de una asignación fija",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Una institución educativa tiene tres sedes: la Central, con 540 estudiantes; la Norte, con 360, y la sede rural El Carmen, con 100. El consejo directivo destinó $18.000.000 del Fondo de Servicios Educativos a material didáctico así: primero separó $3.000.000 para la sede rural, que inicia un proyecto de huerta, y el dinero restante lo repartió entre las tres sedes en proporción a su número de estudiantes. ¿Cuánto dinero recibe en total la sede rural?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$4.500.000",
+        "explicacion": "Correcta. Restante: $18.000.000 − $3.000.000 = $15.000.000. La sede rural tiene 100 de los 1.000 estudiantes (10%): $15.000.000 × 0,10 = $1.500.000. Total: $3.000.000 + $1.500.000 = $4.500.000."
+      },
+      {
+        "id": "B",
+        "texto": "$4.800.000",
+        "explicacion": "Incorrecta. Reparte por matrícula los $18.000.000 completos (10% = $1.800.000) y además suma los $3.000.000; así cuenta dos veces el dinero que ya se había separado."
+      },
+      {
+        "id": "C",
+        "texto": "$6.000.000",
+        "explicacion": "Incorrecta. Divide los $18.000.000 en tres partes iguales: ignora la asignación previa y el reparto según el número de estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "$8.000.000",
+        "explicacion": "Incorrecta. Suma bien los $3.000.000, pero reparte los $15.000.000 restantes por partes iguales ($5.000.000 por sede) y no en proporción a la matrícula."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: primero se separan $3.000.000 para la sede rural y solo el resto se reparte por matrícula. Regla: en un reparto proporcional, cada sede recibe (sus estudiantes ÷ total de estudiantes) × monto que se reparte. Cálculo: $15.000.000 × 100/1.000 = $1.500.000; $3.000.000 + $1.500.000 = $4.500.000. Conclusión: la sede rural recibe $4.500.000.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Presupuesto escolar (FSE y PAE)",
+    "subtema": "Costo total con valores distintos por nivel",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Para su plan de lectura, un colegio comprará con recursos del Fondo de Servicios Educativos un kit de libros para cada estudiante. El valor del kit depende del nivel:\n\nNivel | Estudiantes | Valor del kit\nPreescolar y primaria | 150 | $45.000\nBásica secundaria | 380 | $60.000\nMedia | 190 | $75.000\n\n¿Cuánto cuesta comprar los kits de todos los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$29.550.000",
+        "explicacion": "Incorrecta. Suma solo preescolar y primaria ($6.750.000) y básica secundaria ($22.800.000); deja por fuera los $14.250.000 de la media."
+      },
+      {
+        "id": "B",
+        "texto": "$40.950.000",
+        "explicacion": "Incorrecta. Aplica a los estudiantes de media el valor del kit de secundaria (190 × $60.000 = $11.400.000), como si los dos niveles fueran uno solo."
+      },
+      {
+        "id": "C",
+        "texto": "$43.200.000",
+        "explicacion": "Incorrecta. Usa el promedio simple de los tres valores ($60.000) para los 720 estudiantes. Como los niveles tienen distinto número de estudiantes, cada valor debe multiplicarse por los estudiantes de su nivel."
+      },
+      {
+        "id": "D",
+        "texto": "$43.800.000",
+        "explicacion": "Correcta. 150 × $45.000 = $6.750.000; 380 × $60.000 = $22.800.000; 190 × $75.000 = $14.250.000. Total: $43.800.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: cada nivel tiene un número distinto de estudiantes y un valor de kit distinto. Regla: el costo total es la suma de (estudiantes × valor) de cada nivel; el promedio simple de los valores solo sirve si todos los niveles tienen los mismos estudiantes. Cálculo: $6.750.000 + $22.800.000 + $14.250.000 = $43.800.000. Conclusión: los kits cuestan $43.800.000.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Presupuesto escolar (FSE y PAE)",
+    "subtema": "Costo de raciones con grupos que se traslapan",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La sede principal de un colegio atiende a 590 estudiantes con el Programa de Alimentación Escolar (PAE). Todos reciben el complemento alimentario de la mañana, que cuesta $2.900 por ración, y 210 de ellos, los de jornada única, reciben además el almuerzo, que cuesta $4.600 por ración. En marzo hubo 19 días de clase y se entregaron todas las raciones previstas. ¿Cuánto costaron las raciones de marzo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.677.000",
+        "explicacion": "Incorrecta. Es el costo de un solo día (590 × $2.900 + 210 × $4.600); falta multiplicarlo por los 19 días de clase."
+      },
+      {
+        "id": "B",
+        "texto": "$39.292.000",
+        "explicacion": "Incorrecta. Supone que los 210 estudiantes de jornada única reciben solo el almuerzo y cobra el complemento a 380 estudiantes; el enunciado dice que esos 210 reciben el almuerzo además del complemento."
+      },
+      {
+        "id": "C",
+        "texto": "$50.863.000",
+        "explicacion": "Correcta. Costo diario: 590 × $2.900 = $1.711.000 más 210 × $4.600 = $966.000, es decir, $2.677.000. En 19 días: $2.677.000 × 19 = $50.863.000."
+      },
+      {
+        "id": "D",
+        "texto": "$57.000.000",
+        "explicacion": "Incorrecta. Usa el promedio simple de los dos precios ($3.750) para las 800 raciones diarias. Como se entregan más complementos que almuerzos, cada precio debe multiplicarse por su propio número de raciones."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los 210 estudiantes de jornada única reciben el almuerzo además del complemento, así que cada día se entregan 590 complementos y 210 almuerzos. Regla: costo = suma de (raciones × precio) de cada tipo × días. Cálculo: 590 × $2.900 + 210 × $4.600 = $2.677.000 diarios; × 19 = $50.863.000. Conclusión: las raciones de marzo costaron $50.863.000.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-025",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Proporcionalidad y regla de tres",
+    "subtema": "Rendimiento de combustible y conteo de trayectos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Un municipio presta el transporte escolar de una vereda con un bus propio. La vereda está a 18 km del colegio. En la mañana, el bus sale del colegio, va vacío hasta la vereda y regresa con los estudiantes; en la tarde, los lleva de vuelta a la vereda y regresa vacío al colegio. El bus recorre 9 km por cada galón de ACPM, y el galón cuesta $11.000. ¿Cuánto cuesta el combustible de esta ruta en un mes con 20 días de clase?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$880.000",
+        "explicacion": "Incorrecta. Cuenta solo los dos trayectos en los que el bus lleva estudiantes (36 km diarios) y deja por fuera los dos trayectos en vacío, que también gastan combustible."
+      },
+      {
+        "id": "B",
+        "texto": "$1.760.000",
+        "explicacion": "Correcta. Cada día el bus hace 4 trayectos de 18 km: 72 km. En el mes: 72 × 20 = 1.440 km. Combustible: 1.440 ÷ 9 = 160 galones. Costo: 160 × $11.000 = $1.760.000."
+      },
+      {
+        "id": "C",
+        "texto": "$3.520.000",
+        "explicacion": "Incorrecta. Toma cada trayecto de 18 km como si fuera un viaje de ida y vuelta (36 km) y así cuenta el doble de kilómetros: 144 km diarios."
+      },
+      {
+        "id": "D",
+        "texto": "$15.840.000",
+        "explicacion": "Incorrecta. Multiplica los 1.440 km del mes por el precio del galón, como si cada kilómetro gastara un galón; no divide entre los 9 km que el bus recorre con cada galón."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el bus recorre 4 trayectos de 18 km al día, dos con estudiantes y dos en vacío, y rinde 9 km por galón. Regla: galones = kilómetros ÷ rendimiento; costo = galones × precio. Cálculo: 4 × 18 = 72 km diarios; 72 × 20 = 1.440 km; 1.440 ÷ 9 = 160 galones; 160 × $11.000 = $1.760.000. Conclusión: el combustible del mes cuesta $1.760.000.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Presupuesto escolar (FSE y PAE)",
+    "subtema": "Aumentos porcentuales sucesivos aplicados a un contrato",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Un colegio entrega 900 almuerzos diarios del Programa de Alimentación Escolar durante los 180 días del calendario escolar. En 2024 cada ración costaba $4.000. Para 2025 el valor de la ración aumentó un 10%, y para 2026 aumentó un 5% sobre el valor de 2025. Si se mantienen las mismas raciones y los mismos días, ¿cuánto más cuestan los almuerzos de 2026 que los de 2024?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$35.640.000",
+        "explicacion": "Incorrecta. Solo tiene en cuenta el aumento de 2026 ($4.400 × 5% = $220 por ración) y olvida el de 2025."
+      },
+      {
+        "id": "B",
+        "texto": "$64.800.000",
+        "explicacion": "Incorrecta. Solo tiene en cuenta el aumento de 2025 ($400 por ración) y olvida que en 2026 hubo otro aumento."
+      },
+      {
+        "id": "C",
+        "texto": "$97.200.000",
+        "explicacion": "Incorrecta. Suma los porcentajes (10% + 5% = 15%, es decir, $600 por ración). El 5% de 2026 se calcula sobre $4.400, no sobre $4.000."
+      },
+      {
+        "id": "D",
+        "texto": "$100.440.000",
+        "explicacion": "Correcta. Ración de 2025: $4.000 × 1,10 = $4.400. Ración de 2026: $4.400 × 1,05 = $4.620. Diferencia: $620 por ración. Raciones del año: 900 × 180 = 162.000. Total: 162.000 × $620 = $100.440.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el aumento de 2026 se aplica sobre el valor de 2025, no sobre el de 2024. Regla: los aumentos sucesivos se multiplican: 1,10 × 1,05 = 1,155, es decir, 15,5% y no 15%. Cálculo: $4.000 → $4.400 → $4.620; diferencia de $620 por ración; 900 × 180 = 162.000 raciones; 162.000 × $620 = $100.440.000. Conclusión: los almuerzos de 2026 cuestan $100.440.000 más que los de 2024.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tiempos, horarios y asignación académica",
+    "subtema": "Conversión de horas de 60 minutos a períodos de clase",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "En un colegio, cada docente de básica secundaria y media debe dictar como mínimo 22 horas semanales de clase, contadas en horas de 60 minutos. El horario del colegio está organizado en períodos de clase de 50 minutos. ¿Cuál es el menor número de períodos semanales que debe tener un docente para cumplir esa asignación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "18 períodos",
+        "explicacion": "Incorrecta. Invierte la conversión: calcula 22 × 50 ÷ 60 = 18,3. Como cada período es más corto que una hora, se necesitan más períodos que horas, no menos."
+      },
+      {
+        "id": "B",
+        "texto": "22 períodos",
+        "explicacion": "Incorrecta. Iguala cada período a una hora. 22 períodos de 50 minutos suman 1.100 minutos, es decir, 18 horas y 20 minutos."
+      },
+      {
+        "id": "C",
+        "texto": "26 períodos",
+        "explicacion": "Incorrecta. Calcula bien 1.320 ÷ 50 = 26,4, pero redondea hacia abajo: 26 × 50 = 1.300 minutos, 20 minutos menos de los 1.320 exigidos."
+      },
+      {
+        "id": "D",
+        "texto": "27 períodos",
+        "explicacion": "Correcta. 22 horas × 60 = 1.320 minutos; 1.320 ÷ 50 = 26,4 períodos. Como 26 períodos no alcanzan (1.300 minutos), se necesitan 27 (1.350 minutos)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las 22 horas son de 60 minutos y los períodos son de 50. Regla: se pasa todo a minutos y, como se trata de un mínimo que debe cumplirse, el resultado decimal se redondea hacia arriba. Cálculo: 22 × 60 = 1.320 min; 1.320 ÷ 50 = 26,4; 26 períodos dan 1.300 min (no alcanzan) y 27 dan 1.350. Conclusión: el docente necesita 27 períodos semanales.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-028",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tiempos, horarios y asignación académica",
+    "subtema": "Asignación académica con dos condiciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "La coordinadora académica de un colegio arma la asignación de un docente de ciencias naturales, que debe dictar exactamente 22 horas semanales de clase. Cada grado tiene dos grupos (A y B), y las horas semanales por grupo son:\n\nGrados | Asignatura | Horas semanales por grupo\n6.° y 7.° | Ciencias naturales | 4\n8.° y 9.° | Ciencias naturales | 3\n10.° y 11.° | Química | 3\n10.° y 11.° | Física | 2\n\nEl docente es director del grupo 8.°A, y el colegio exige que cada director de grupo dicte al menos una asignatura en su propio grupo. ¿Cuál de estas asignaciones cumple las dos condiciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ciencias naturales en 6.°A, 8.°A y 8.°B; química en 10.°A y 11.°A; física en 10.°A, 10.°B y 11.°B.",
+        "explicacion": "Correcta. Ciencias naturales: 4 + 3 + 3 = 10 horas; química: 2 × 3 = 6; física: 3 × 2 = 6. Total: 22 horas, e incluye el grupo 8.°A."
+      },
+      {
+        "id": "B",
+        "texto": "Ciencias naturales en 6.°B, 7.°A y 8.°B; química en 10.°B, 11.°A y 11.°B; física en 11.°A.",
+        "explicacion": "Incorrecta. Suma 22 horas (4 + 4 + 3 + 9 + 2), pero no incluye el grupo 8.°A, que dirige el docente: toma 8.°B por su grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Ciencias naturales en 8.°A, 9.°A y 9.°B; química en 10.°B y 11.°B; física en 10.°A y 11.°A.",
+        "explicacion": "Incorrecta. Incluye 8.°A, pero suma 19 horas (9 + 6 + 4). Solo llegaría a 22 si los grupos de 8.° y 9.° tuvieran 4 horas, como los de 6.° y 7.°; tienen 3."
+      },
+      {
+        "id": "D",
+        "texto": "Ciencias naturales en 6.°A, 7.°A y 8.°A; química en 11.°A; física en 10.°A, 10.°B y 11.°B.",
+        "explicacion": "Incorrecta. Incluye 8.°A, pero suma 20 horas (11 + 3 + 6). Solo llegaría a 22 si se intercambiaran las horas de química (3) y de física (2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la asignación debe sumar exactamente 22 horas e incluir al menos una clase en 8.°A. Regla: en cada asignatura se multiplica el número de grupos por sus horas semanales y luego se suman las asignaturas. Cálculo: A = 10 + 6 + 6 = 22 e incluye 8.°A; B suma 22, pero no incluye 8.°A; C suma 19; D suma 20. Conclusión: solo la primera asignación cumple las dos condiciones.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-029",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tiempos, horarios y asignación académica",
+    "subtema": "Límite porcentual de inasistencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "El sistema institucional de evaluación de un colegio establece que un estudiante reprueba un área cuando sus fallas injustificadas llegan al 20% o más de las clases programadas del área en el año. Educación física tiene 3 clases semanales durante las 40 semanas del año escolar. A mitad de año, un estudiante acumula 17 fallas injustificadas en esa área. ¿Cuántas fallas injustificadas más puede tener, como máximo, sin reprobar el área?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "6 fallas",
+        "explicacion": "Correcta. Clases del año: 3 × 40 = 120. El 20% son 24 fallas, y con 24 ya reprueba. El máximo sin reprobar es 23 fallas en total: 23 − 17 = 6 más."
+      },
+      {
+        "id": "B",
+        "texto": "7 fallas",
+        "explicacion": "Incorrecta. Calcula bien el límite de 24, pero lo toma como permitido: con 7 fallas más llegaría a 24, justo el 20%, y la regla dice que llegar al 20% ya implica reprobar."
+      },
+      {
+        "id": "C",
+        "texto": "23 fallas",
+        "explicacion": "Incorrecta. Es el total máximo de fallas sin reprobar, pero la pregunta es cuántas más puede tener: falta restar las 17 que ya acumula."
+      },
+      {
+        "id": "D",
+        "texto": "24 fallas",
+        "explicacion": "Incorrecta. Es el 20% de las 120 clases: con esa cantidad el estudiante ya reprueba, y además no descuenta las 17 fallas que lleva."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se reprueba cuando las fallas llegan al 20% «o más», así que el 20% exacto ya reprueba, y la pregunta es por las fallas adicionales. Regla: el límite es clases programadas × 20%, y el máximo permitido es una falla menos que ese límite. Cálculo: 3 × 40 = 120 clases; 20% = 24; máximo sin reprobar = 23; 23 − 17 = 6. Conclusión: puede tener como máximo 6 fallas injustificadas más.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Áreas, perímetros y volúmenes",
+    "subtema": "Área de paredes, manos de pintura y redondeo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Se van a pintar las cuatro paredes de un aula rectangular de 8 m de largo, 6 m de ancho y 3 m de alto. En las paredes hay una puerta de 2 m de alto por 1 m de ancho y ventanas que suman 8 m², que no se pintan. Se darán dos manos de pintura, y cada galón rinde 30 m² por mano. Si la pintura solo se vende por galones completos, ¿cuántos galones hay que comprar como mínimo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3 galones",
+        "explicacion": "Incorrecta. Calcula una sola mano: 74 m² ÷ 30 = 2,5, redondeado a 3. Con dos manos hay que cubrir el doble del área."
+      },
+      {
+        "id": "B",
+        "texto": "4 galones",
+        "explicacion": "Incorrecta. Calcula bien que se necesitan 4,93 galones, pero redondea hacia abajo: con 4 galones solo se cubren 120 de los 148 m²."
+      },
+      {
+        "id": "C",
+        "texto": "5 galones",
+        "explicacion": "Correcta. Paredes: 2 × (8 + 6) × 3 = 84 m². Sin la puerta (2 m²) ni las ventanas (8 m²) quedan 74 m². Con dos manos: 148 m². 148 ÷ 30 = 4,93, así que se compran 5 galones."
+      },
+      {
+        "id": "D",
+        "texto": "6 galones",
+        "explicacion": "Incorrecta. No descuenta la puerta ni las ventanas: 84 × 2 = 168 m² y 168 ÷ 30 = 5,6, redondeado a 6."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: se pintan solo las paredes, sin la puerta ni las ventanas, con dos manos, y los galones se compran completos. Regla: área de las paredes = perímetro del piso × altura; luego se restan las aberturas y el número de galones se redondea hacia arriba. Cálculo: 28 × 3 = 84 m²; 84 − 10 = 74 m²; × 2 = 148 m²; 148 ÷ 30 = 4,93. Conclusión: hay que comprar 5 galones.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Áreas, perímetros y volúmenes",
+    "subtema": "Área de un piso con un porcentaje adicional y compra por cajas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Se va a cambiar el piso del comedor escolar de un colegio, un rectángulo de 12 m de largo por 10 m de ancho. La baldosa se vende en cajas que cubren 1,32 m² cada una, y el instalador recomienda comprar baldosa para un área 10% mayor que la del piso, por los cortes y el desperdicio. ¿Cuántas cajas hay que comprar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "37 cajas",
+        "explicacion": "Incorrecta. Usa el perímetro del comedor (44 m) en lugar del área: 44 × 1,10 = 48,4 y 48,4 ÷ 1,32 = 36,7, redondeado a 37."
+      },
+      {
+        "id": "B",
+        "texto": "82 cajas",
+        "explicacion": "Incorrecta. Resta el 10% en lugar de sumarlo: 120 × 0,90 = 108 m² y 108 ÷ 1,32 = 81,8, redondeado a 82. El margen por cortes aumenta el área que se compra."
+      },
+      {
+        "id": "C",
+        "texto": "91 cajas",
+        "explicacion": "Incorrecta. Calcula el área del piso (120 m²), pero no le suma el 10% por cortes y desperdicio: 120 ÷ 1,32 = 90,9, redondeado a 91."
+      },
+      {
+        "id": "D",
+        "texto": "100 cajas",
+        "explicacion": "Correcta. Área del piso: 12 × 10 = 120 m². Con el 10% adicional: 120 × 1,10 = 132 m². Cajas: 132 ÷ 1,32 = 100."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se compra baldosa para un área 10% mayor que la del piso, y cada caja cubre 1,32 m². Regla: área del rectángulo = largo × ancho; el porcentaje adicional se suma al área antes de dividir entre lo que cubre cada caja. Cálculo: 12 × 10 = 120 m²; 120 × 1,10 = 132 m²; 132 ÷ 1,32 = 100. Conclusión: hay que comprar 100 cajas.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-032",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Áreas, perímetros y volúmenes",
+    "subtema": "Perímetro y conteo de postes en un contorno cerrado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La huerta escolar de una sede rural es un rectángulo de 12 m por 8 m. Se va a encerrar con una malla sostenida por postes colocados cada 2 m a lo largo de todo el borde, con un poste en cada esquina. ¿Cuántos postes se necesitan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "20 postes",
+        "explicacion": "Correcta. El borde mide 2 × (12 + 8) = 40 m. En un contorno cerrado el último tramo termina en el primer poste, así que hay tantos postes como tramos: 40 ÷ 2 = 20."
+      },
+      {
+        "id": "B",
+        "texto": "21 postes",
+        "explicacion": "Incorrecta. Aplica la regla de una cerca abierta (tramos + 1). En un contorno cerrado, el poste final coincide con el inicial."
+      },
+      {
+        "id": "C",
+        "texto": "24 postes",
+        "explicacion": "Incorrecta. Cuenta cada lado por separado con sus dos extremos (7 + 5 + 7 + 5) y así cuenta dos veces los 4 postes de las esquinas."
+      },
+      {
+        "id": "D",
+        "texto": "48 postes",
+        "explicacion": "Incorrecta. Usa el área (12 × 8 = 96 m²) en lugar del perímetro y la divide entre 2."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la malla rodea toda la huerta, así que el contorno es cerrado. Regla: en un contorno cerrado el número de postes es igual al número de tramos (perímetro ÷ separación); en una línea abierta habría uno más. Cálculo: perímetro = 2 × (12 + 8) = 40 m; 40 ÷ 2 = 20. Conclusión: se necesitan 20 postes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Áreas, perímetros y volúmenes",
+    "subtema": "Escala de un plano y cupo según un área mínima",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "En el plano de una sede, dibujado a escala 1:200, un aula rectangular mide 4 cm de largo por 3,5 cm de ancho. Para fijar el cupo del aula, el colegio reserva 4 m² para el escritorio del docente y la circulación del frente, y exige que el área restante ofrezca al menos 1,8 m² por estudiante. ¿Cuál es el cupo máximo del aula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "28 estudiantes",
+        "explicacion": "Correcta. Medidas reales: 4 cm × 200 = 800 cm = 8 m y 3,5 cm × 200 = 700 cm = 7 m. Área: 56 m²; sin los 4 m² reservados quedan 52 m². 52 ÷ 1,8 = 28,9: caben 28, porque con 29 cada estudiante tendría menos de 1,8 m²."
+      },
+      {
+        "id": "B",
+        "texto": "29 estudiantes",
+        "explicacion": "Incorrecta. Descuenta bien los 4 m², pero redondea 28,9 hacia arriba: 29 × 1,8 = 52,2 m², más de los 52 m² disponibles."
+      },
+      {
+        "id": "C",
+        "texto": "31 estudiantes",
+        "explicacion": "Incorrecta. No descuenta los 4 m² reservados para el docente y la circulación: 56 ÷ 1,8 = 31,1."
+      },
+      {
+        "id": "D",
+        "texto": "32 estudiantes",
+        "explicacion": "Incorrecta. No descuenta los 4 m² reservados y, además, redondea 31,1 hacia arriba."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: en la escala 1:200, 1 cm del plano son 200 cm (2 m) reales, y el cupo debe garantizar 1,8 m² por estudiante después de reservar 4 m². Regla: área real = largo real × ancho real; el cupo se redondea hacia abajo. Cálculo: 8 m × 7 m = 56 m²; 56 − 4 = 52 m²; 52 ÷ 1,8 = 28,9. Conclusión: el cupo máximo es de 28 estudiantes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Áreas, perímetros y volúmenes",
+    "subtema": "Volumen con conversión de centímetros a metros y de metros cúbicos a litros",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Para la huerta escolar se construirán 6 camas de cultivo rectangulares de 2,5 m de largo por 1,2 m de ancho, y cada una se llenará con tierra abonada hasta una altura de 30 cm. La tierra abonada se vende en bultos de 40 litros. ¿Cuántos bultos hay que comprar como mínimo? (1 m³ = 1.000 litros)",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "14 bultos",
+        "explicacion": "Incorrecta. Convierte mal la altura: toma 30 cm como 0,03 m. Así obtiene 0,54 m³ (540 litros) y 540 ÷ 40 = 13,5, redondeado a 14."
+      },
+      {
+        "id": "B",
+        "texto": "135 bultos",
+        "explicacion": "Correcta. Cada cama: 2,5 × 1,2 × 0,3 = 0,9 m³. Las seis: 5,4 m³ = 5.400 litros. Bultos: 5.400 ÷ 40 = 135."
+      },
+      {
+        "id": "C",
+        "texto": "450 bultos",
+        "explicacion": "Incorrecta. Olvida la altura de la tierra: toma el área de las seis camas (18 m²) como si fuera un volumen de 18 m³ (18.000 litros) y divide entre 40."
+      },
+      {
+        "id": "D",
+        "texto": "1.350 bultos",
+        "explicacion": "Incorrecta. Convierte mal la altura: toma 30 cm como 3 m, y el volumen sale diez veces mayor (54 m³)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el largo y el ancho están en metros, la altura en centímetros y los bultos en litros. Regla: volumen = largo × ancho × alto, con todas las medidas en metros (30 cm = 0,3 m); 1 m³ = 1.000 litros. Cálculo: 2,5 × 1,2 × 0,3 = 0,9 m³ por cama; × 6 = 5,4 m³ = 5.400 L; 5.400 ÷ 40 = 135. Conclusión: hay que comprar 135 bultos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-035",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Conversión de unidades",
+    "subtema": "Conversión de vatios a kilovatios hora y costo de la energía",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La sala de sistemas de un colegio tiene 30 computadores que consumen 150 vatios (W) cada uno mientras están encendidos. Funcionan 6 horas diarias durante los 20 días de clase del mes. Si el kilovatio hora (kWh) cuesta $800, ¿cuánto cuesta en el mes la energía que consumen los computadores?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$21.600",
+        "explicacion": "Incorrecta. Calcula el costo de un solo día (4,5 kW × 6 h × $800) y no lo multiplica por los 20 días de clase."
+      },
+      {
+        "id": "B",
+        "texto": "$72.000",
+        "explicacion": "Incorrecta. Multiplica la potencia por los 20 días, pero olvida las 6 horas diarias de uso: 4,5 kW × 20 × $800."
+      },
+      {
+        "id": "C",
+        "texto": "$432.000",
+        "explicacion": "Correcta. Potencia total: 30 × 150 W = 4.500 W = 4,5 kW. Energía: 4,5 kW × 6 h × 20 días = 540 kWh. Costo: 540 × $800 = $432.000."
+      },
+      {
+        "id": "D",
+        "texto": "$4.320.000",
+        "explicacion": "Incorrecta. Convierte mal los vatios: toma 150 W como 1,5 kW (divide entre 100 y no entre 1.000), y el resultado sale diez veces mayor."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la potencia está en vatios y la tarifa en kilovatios hora. Regla: energía (kWh) = potencia (kW) × horas de uso, con 1 kW = 1.000 W. Cálculo: 30 × 150 W = 4,5 kW; 4,5 × 6 × 20 = 540 kWh; 540 × $800 = $432.000. Conclusión: la energía de los computadores cuesta $432.000 al mes.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Conversión de unidades",
+    "subtema": "Razón de una mezcla y conversión de litros a mililitros",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Para desinfectar las mesas del restaurante escolar, el protocolo de aseo indica mezclar 1 parte de hipoclorito por cada 49 partes de agua. La auxiliar de servicios generales va a preparar 10 litros de mezcla. ¿Cuántos mililitros de hipoclorito debe usar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "20 ml",
+        "explicacion": "Incorrecta. Plantea bien la proporción (1 de cada 50 partes), pero toma 10 litros como 1.000 ml; 10 litros son 10.000 ml."
+      },
+      {
+        "id": "B",
+        "texto": "200 ml",
+        "explicacion": "Correcta. La mezcla tiene 1 + 49 = 50 partes, y 1 es de hipoclorito. 10 litros = 10.000 ml; 10.000 ÷ 50 = 200 ml de hipoclorito (el resto, 9.800 ml, es agua)."
+      },
+      {
+        "id": "C",
+        "texto": "204 ml",
+        "explicacion": "Incorrecta. Divide 10.000 ml entre 49, como si la mezcla tuviera 49 partes; tiene 50, porque el hipoclorito también forma parte de ella."
+      },
+      {
+        "id": "D",
+        "texto": "9.800 ml",
+        "explicacion": "Incorrecta. Es la cantidad de agua de la mezcla (49 de las 50 partes), no la de hipoclorito."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la proporción es 1 parte de hipoclorito por 49 de agua, así que la mezcla tiene 50 partes. Regla: hipoclorito = volumen de la mezcla ÷ 50, con el volumen en mililitros (1 L = 1.000 ml). Cálculo: 10 L = 10.000 ml; 10.000 ÷ 50 = 200 ml. Conclusión: debe usar 200 ml de hipoclorito y 9.800 ml de agua.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Conversión de unidades",
+    "subtema": "Conversión lineal entre escalas de calificación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Un colegio califica de 1,0 a 5,0. Una plataforma de práctica entrega puntajes de 0 a 100, y la institución los convierte a su escala de forma lineal: 0 puntos equivalen a 1,0, 100 puntos equivalen a 5,0 y los puntajes intermedios se reparten de manera uniforme entre esos dos extremos. ¿Qué nota corresponde, sin redondear, a un estudiante que obtuvo 72 puntos en la plataforma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "2,88",
+        "explicacion": "Incorrecta. Calcula bien la parte proporcional (el 72% de los 4 puntos del rango = 2,88), pero olvida sumar el 1,0 en el que empieza la escala."
+      },
+      {
+        "id": "B",
+        "texto": "3,60",
+        "explicacion": "Incorrecta. Divide 72 entre 20, como si la escala fuera de 0 a 5; no tiene en cuenta que la nota mínima es 1,0 y no 0."
+      },
+      {
+        "id": "C",
+        "texto": "3,88",
+        "explicacion": "Correcta. El rango de la escala es 5,0 − 1,0 = 4 puntos. Nota = 1,0 + 0,72 × 4 = 1,0 + 2,88 = 3,88."
+      },
+      {
+        "id": "D",
+        "texto": "4,60",
+        "explicacion": "Incorrecta. Divide 72 entre 20, como si la escala empezara en 0, y luego suma 1,0: mezcla dos escalas distintas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la escala del colegio empieza en 1,0 y no en 0, así que su rango es de 4 puntos. Regla: en una conversión lineal, nota = mínimo + (puntaje ÷ 100) × (máximo − mínimo). Cálculo: 1,0 + 0,72 × 4 = 3,88. Conclusión: los 72 puntos equivalen a 3,88.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Proporcionalidad y regla de tres",
+    "subtema": "Razones encadenadas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "El inventario de la biblioteca de un colegio muestra que hay 5 libros de literatura por cada 3 de ciencias, y 4 libros de ciencias por cada libro de arte. Si la biblioteca tiene 240 libros de arte, ¿cuántos libros de literatura tiene?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "100 libros de literatura",
+        "explicacion": "Incorrecta. Invierte la segunda razón: divide 240 entre 4 (60 de ciencias) en lugar de multiplicar, y luego calcula 60 × 5 ÷ 3 = 100."
+      },
+      {
+        "id": "B",
+        "texto": "400 libros de literatura",
+        "explicacion": "Incorrecta. Aplica la razón de 5 a 3 directamente a los libros de arte (240 × 5 ÷ 3) y se salta el paso por los libros de ciencias."
+      },
+      {
+        "id": "C",
+        "texto": "576 libros de literatura",
+        "explicacion": "Incorrecta. Calcula bien los 960 libros de ciencias, pero invierte la primera razón: 960 × 3 ÷ 5 = 576."
+      },
+      {
+        "id": "D",
+        "texto": "1.600 libros de literatura",
+        "explicacion": "Correcta. Ciencias: 240 × 4 = 960. Literatura: 960 × 5 ÷ 3 = 1.600."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las dos razones se conectan a través de los libros de ciencias. Regla: primero se halla la cantidad intermedia con una razón y luego se aplica la otra. Cálculo: ciencias = 4 × 240 = 960; literatura = 960 × 5 ÷ 3 = 1.600. Conclusión: la biblioteca tiene 1.600 libros de literatura.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Proporcionalidad y regla de tres",
+    "subtema": "Trabajo conjunto con ritmos distintos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Para las pruebas de período, un colegio debe sacar todas las copias en dos fotocopiadoras. La de la sede principal haría sola todo el trabajo en 6 horas; la de la sede norte, más lenta, lo haría sola en 12 horas. Si las dos trabajan al mismo tiempo, cada una a su ritmo, y se reparten las copias para terminar a la vez, ¿cuánto tardan en sacar todas las copias?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3 horas",
+        "explicacion": "Incorrecta. Supone que al sumar una segunda máquina el tiempo de la más rápida se reduce a la mitad; eso pasaría solo si las dos fueran igual de rápidas."
+      },
+      {
+        "id": "B",
+        "texto": "4 horas",
+        "explicacion": "Correcta. En una hora, la primera hace 1/6 del trabajo y la segunda 1/12. Juntas hacen 1/6 + 1/12 = 3/12 = 1/4 del trabajo por hora, así que tardan 4 horas."
+      },
+      {
+        "id": "C",
+        "texto": "9 horas",
+        "explicacion": "Incorrecta. Promedia los dos tiempos: (6 + 12) ÷ 2. Trabajando juntas tardan menos que la más rápida sola, no un tiempo intermedio."
+      },
+      {
+        "id": "D",
+        "texto": "18 horas",
+        "explicacion": "Incorrecta. Suma los tiempos, como si una máquina trabajara después de la otra y cada una hiciera el trabajo completo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: las dos máquinas trabajan al mismo tiempo sobre el mismo trabajo. Regla: se suman los ritmos (fracción del trabajo por hora), no los tiempos. Cálculo: 1/6 + 1/12 = 1/4 del trabajo por hora; el trabajo completo toma 4 horas. Conclusión: juntas tardan 4 horas, menos que las 6 de la más rápida.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Tiempos, horarios y asignación académica",
+    "subtema": "Velocidad, tiempo de recorrido y hora de salida",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Una ruta de transporte escolar recorre 15 km desde el primer paradero hasta el colegio, a una velocidad promedio de 30 km/h mientras está en movimiento. Además, las paradas para recoger a los estudiantes suman 12 minutos. Si el bus debe llegar al colegio a las 6:40 a. m., ¿a qué hora debe salir del primer paradero, a más tardar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4:28 a. m.",
+        "explicacion": "Incorrecta. Invierte la división: calcula 30 ÷ 15 = 2 horas de recorrido en lugar de 15 ÷ 30 = 0,5 horas."
+      },
+      {
+        "id": "B",
+        "texto": "5:38 a. m.",
+        "explicacion": "Incorrecta. Calcula bien 15 ÷ 30 = 0,5 horas, pero las lee como 50 minutos; media hora son 30 minutos."
+      },
+      {
+        "id": "C",
+        "texto": "5:58 a. m.",
+        "explicacion": "Correcta. Recorrido: 15 ÷ 30 = 0,5 h = 30 minutos. Con las paradas: 30 + 12 = 42 minutos. 6:40 − 42 minutos = 5:58 a. m."
+      },
+      {
+        "id": "D",
+        "texto": "6:10 a. m.",
+        "explicacion": "Incorrecta. Resta solo los 30 minutos del recorrido y olvida los 12 minutos de las paradas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el viaje suma el tiempo en movimiento y los 12 minutos de paradas. Regla: tiempo = distancia ÷ velocidad, y 0,5 h son 30 minutos. Cálculo: 15 ÷ 30 = 0,5 h = 30 min; 30 + 12 = 42 min; 6:40 − 0:42 = 5:58. Conclusión: el bus debe salir a más tardar a las 5:58 a. m.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

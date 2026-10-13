@@ -1,0 +1,942 @@
+[
+  {
+    "id": "TC-LCD-061",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Contenidos locales",
+    "subtema": "Contenido local: relacionar dos columnas de una tabla (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Lea el siguiente resumen de las rutas de transporte de un colegio, que incluye una tabla, y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA RURAL LA PALMICHA — RUTAS DE TRANSPORTE ESCOLAR, SEPTIEMBRE DE 2026\n\nLa coordinadora presentó al consejo directivo este resumen de las cuatro rutas de transporte escolar que contrata la secretaría de educación. La jornada empieza a las 6:45 a. m., y se cuenta un día con retraso cuando el vehículo llega después de esa hora. En septiembre hubo 20 días de clase.\n\nRuta | Veredas que recorre | Estudiantes inscritos | Hora de salida | Días con retraso\n1 | El Guamo y La Cumbre | 38 | 5:40 a. m. | 2\n2 | Santa Inés | 24 | 6:05 a. m. | 9\n3 | Los Naranjos y El Retiro | 41 | 5:30 a. m. | 11\n4 | Bellavista | 17 | 6:10 a. m. | 1\n\nNota de la coordinadora: «La ruta 3 es la que más retrasos acumula. Según su conductor, el tramo destapado entre El Retiro y la vía principal se vuelve casi intransitable cuando llueve, y en septiembre llovió la mayoría de las madrugadas. Los retrasos de la ruta 2, en cambio, no dependen de la vía: el vehículo espera varios minutos en cada parada a estudiantes que no están listos a la hora acordada. Por eso propongo dos medidas: pedir a la secretaría que la ruta 3 salga quince minutos antes durante la temporada de lluvias y reunirme con las familias de Santa Inés».\n\nSegún la tabla, ¿cuál de las siguientes afirmaciones es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La ruta que sale más tarde tuvo retraso en más de la mitad de los días de clase del mes de septiembre.",
+        "explicacion": "Incorrecta. La ruta que sale más tarde es la 4 (6:10 a. m.), y tuvo un solo día con retraso de los 20 días de clase."
+      },
+      {
+        "id": "B",
+        "texto": "La ruta que lleva más estudiantes inscritos es también la que sale más temprano de todas.",
+        "explicacion": "Correcta. La ruta 3 tiene el mayor número de inscritos (41) y la hora de salida más temprana (5:30 a. m.). Para llegar a esta conclusión hay que cruzar dos columnas de la tabla."
+      },
+      {
+        "id": "C",
+        "texto": "Las dos rutas que salen después de las 6:00 a. m. suman más días con retraso que la ruta 3.",
+        "explicacion": "Incorrecta. Las rutas 2 y 4 salen después de las 6:00 a. m. y suman 9 + 1 = 10 días con retraso, uno menos que los 11 de la ruta 3."
+      },
+      {
+        "id": "D",
+        "texto": "La ruta con menos estudiantes inscritos tuvo más días con retraso que la ruta 1 durante el mes.",
+        "explicacion": "Incorrecta. La ruta con menos inscritos es la 4 (17 estudiantes), y tuvo 1 día con retraso, frente a los 2 de la ruta 1."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en la tabla, la ruta 3 combina el mayor número de inscritos (41) con la salida más temprana (5:30 a. m.). Las demás afirmaciones fallan al cruzar los datos: la ruta 4, que sale más tarde y tiene menos inscritos, tuvo 1 día con retraso; las rutas que salen después de las 6:00 suman 10 días, uno menos que la ruta 3. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: dato que debilita una explicación causal (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea el siguiente resumen de las rutas de transporte de un colegio, que incluye una tabla, y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA RURAL LA PALMICHA — RUTAS DE TRANSPORTE ESCOLAR, SEPTIEMBRE DE 2026\n\nLa coordinadora presentó al consejo directivo este resumen de las cuatro rutas de transporte escolar que contrata la secretaría de educación. La jornada empieza a las 6:45 a. m., y se cuenta un día con retraso cuando el vehículo llega después de esa hora. En septiembre hubo 20 días de clase.\n\nRuta | Veredas que recorre | Estudiantes inscritos | Hora de salida | Días con retraso\n1 | El Guamo y La Cumbre | 38 | 5:40 a. m. | 2\n2 | Santa Inés | 24 | 6:05 a. m. | 9\n3 | Los Naranjos y El Retiro | 41 | 5:30 a. m. | 11\n4 | Bellavista | 17 | 6:10 a. m. | 1\n\nNota de la coordinadora: «La ruta 3 es la que más retrasos acumula. Según su conductor, el tramo destapado entre El Retiro y la vía principal se vuelve casi intransitable cuando llueve, y en septiembre llovió la mayoría de las madrugadas. Los retrasos de la ruta 2, en cambio, no dependen de la vía: el vehículo espera varios minutos en cada parada a estudiantes que no están listos a la hora acordada. Por eso propongo dos medidas: pedir a la secretaría que la ruta 3 salga quince minutos antes durante la temporada de lluvias y reunirme con las familias de Santa Inés».\n\nLa coordinadora atribuye los retrasos de la ruta 3 a que el tramo destapado se vuelve casi intransitable con la lluvia. ¿Cuál de los siguientes hechos, de ser cierto, debilitaría más esa explicación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En septiembre también llovió en Bellavista, y aun así la ruta 4 tuvo un solo día con retraso en todo el mes.",
+        "explicacion": "Incorrecta. La explicación no dice que la lluvia retrase cualquier ruta, sino que vuelve intransitable un tramo concreto, el que va de El Retiro a la vía principal. La ruta 4 no pasa por él, así que su puntualidad no contradice la explicación."
+      },
+      {
+        "id": "B",
+        "texto": "La ruta 2, cuyo recorrido no pasa por ningún tramo destapado, tuvo nueve días con retraso en el mes.",
+        "explicacion": "Incorrecta. La nota ya atribuye los retrasos de la ruta 2 a otra causa, la espera en las paradas. Que una ruta se retrase por otra razón no muestra que la lluvia no afecte a la ruta 3."
+      },
+      {
+        "id": "C",
+        "texto": "La ruta 3 hace más paradas que las demás rutas, porque es la que recoge más estudiantes en su recorrido.",
+        "explicacion": "Incorrecta. Propone una causa alternativa, pero la propia tabla le quita fuerza: la ruta 1 recoge casi los mismos estudiantes (38 frente a 41) y solo tuvo 2 días con retraso. Además, hacer más paradas no excluye que la lluvia sea la causa principal."
+      },
+      {
+        "id": "D",
+        "texto": "En las madrugadas de septiembre en que no llovió, la ruta 3 llegó tarde con la misma frecuencia que en las lluviosas.",
+        "explicacion": "Correcta. Si la ruta 3 se retrasa igual con lluvia que sin ella, la lluvia no explica sus retrasos. Este dato ataca directamente la relación de causa que plantea la nota («se vuelve casi intransitable cuando llueve»)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la nota vincula los retrasos de la ruta 3 con la lluvia, que vuelve intransitable un tramo destapado. Lo que más debilita una explicación causal es mostrar que el efecto se produce igual sin la supuesta causa. La lluvia en Bellavista no afecta ese tramo, la ruta 2 tiene otra causa explicada, y la de las paradas pierde fuerza frente a la ruta 1 (38 inscritos, 2 retrasos). Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-063",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: relación entre el diagnóstico y las propuestas (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente resumen de las rutas de transporte de un colegio, que incluye una tabla, y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA RURAL LA PALMICHA — RUTAS DE TRANSPORTE ESCOLAR, SEPTIEMBRE DE 2026\n\nLa coordinadora presentó al consejo directivo este resumen de las cuatro rutas de transporte escolar que contrata la secretaría de educación. La jornada empieza a las 6:45 a. m., y se cuenta un día con retraso cuando el vehículo llega después de esa hora. En septiembre hubo 20 días de clase.\n\nRuta | Veredas que recorre | Estudiantes inscritos | Hora de salida | Días con retraso\n1 | El Guamo y La Cumbre | 38 | 5:40 a. m. | 2\n2 | Santa Inés | 24 | 6:05 a. m. | 9\n3 | Los Naranjos y El Retiro | 41 | 5:30 a. m. | 11\n4 | Bellavista | 17 | 6:10 a. m. | 1\n\nNota de la coordinadora: «La ruta 3 es la que más retrasos acumula. Según su conductor, el tramo destapado entre El Retiro y la vía principal se vuelve casi intransitable cuando llueve, y en septiembre llovió la mayoría de las madrugadas. Los retrasos de la ruta 2, en cambio, no dependen de la vía: el vehículo espera varios minutos en cada parada a estudiantes que no están listos a la hora acordada. Por eso propongo dos medidas: pedir a la secretaría que la ruta 3 salga quince minutos antes durante la temporada de lluvias y reunirme con las familias de Santa Inés».\n\n¿Qué relación hay entre lo que la coordinadora explica en su nota y las dos medidas que propone?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cada medida atiende una causa distinta: en la ruta 3, el estado de la vía; en la ruta 2, la espera en las paradas.",
+        "explicacion": "Correcta. La nota separa dos causas con «en cambio»: la vía que se vuelve intransitable (ruta 3) y la espera a estudiantes que no están listos (ruta 2). Por eso pide una salida más temprana para la ruta 3 y una reunión con las familias de Santa Inés, la vereda de la ruta 2."
+      },
+      {
+        "id": "B",
+        "texto": "Las dos medidas atienden una misma causa, la lluvia, que afecta de manera distinta las vías de cada una de las veredas.",
+        "explicacion": "Incorrecta. La nota dice expresamente que los retrasos de la ruta 2 «no dependen de la vía»; la lluvia solo se menciona para la ruta 3."
+      },
+      {
+        "id": "C",
+        "texto": "Las dos medidas buscan que las rutas con más retrasos salgan más temprano durante la temporada de lluvias.",
+        "explicacion": "Incorrecta. Solo se pide adelantar la salida de la ruta 3. Para la ruta 2, la medida es una reunión con las familias, no un cambio de horario."
+      },
+      {
+        "id": "D",
+        "texto": "La reunión con las familias busca su apoyo para pedir a la secretaría que la ruta 3 cambie su hora de salida.",
+        "explicacion": "Incorrecta. La reunión es con las familias de Santa Inés, que corresponde a la ruta 2, y se relaciona con la espera en las paradas, no con el horario de la ruta 3."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el conector «en cambio» separa la causa de los retrasos de la ruta 3 (la vía con lluvia) de la de la ruta 2 (estudiantes que no están listos). La primera medida actúa sobre el horario de la ruta 3 y la segunda sobre las familias de Santa Inés, la vereda de la ruta 2. Las demás opciones unifican las causas o confunden las rutas. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: supuesto implícito de una conclusión sacada de una infografía (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea la siguiente descripción de una infografía publicada en un periódico escolar y responda la pregunta.\n\nPERIÓDICO ESCOLAR «LA TIZA» — INFOGRAFÍA «¿EN QUÉ SE NOS VA EL DÍA?»\n\nEl grupo de periodismo publicó una infografía sobre cómo reparten su tiempo los estudiantes de octavo y noveno en un día de clase, de lunes a viernes. En el centro hay un reloj dividido en franjas de colores, una por actividad. Las franjas muestran estos promedios:\n\nActividad | Horas en promedio\nDormir | 7,2\nJornada escolar, con el recorrido de ida y vuelta | 7,5\nPantallas por diversión (celular, televisión, videojuegos) | 3,4\nTareas y estudio en casa | 1,1\nOficios de la casa o ayuda en el trabajo familiar | 1,6\nComidas, aseo, deporte y otras actividades | 3,2\n\nAlrededor del reloj hay tres recuadros. El primero dice: «Por cada hora de tareas, más de tres frente a una pantalla». El segundo: «Los pediatras recomiendan dormir entre 8 y 10 horas a esta edad». El tercero: «¡Apaga el celular y gana una hora de sueño!».\n\nNota al pie, en letra pequeña: «Encuesta en línea respondida de forma voluntaria por 120 de los 290 estudiantes de octavo y noveno, entre el 1 y el 12 de septiembre de 2026. Cada estudiante calculó sus horas de memoria».\n\nDespués de ver la infografía, un estudiante concluye: «Si los de octavo y noveno dejáramos las pantallas, dormiríamos lo que recomiendan los pediatras». ¿En qué supuesto, que los datos de la infografía NO permiten comprobar, se apoya esa conclusión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que los encuestados duermen, en promedio, menos horas de las que recomiendan los pediatras.",
+        "explicacion": "Incorrecta. La conclusión sí lo supone, pero los datos lo muestran: el promedio de sueño es 7,2 horas, por debajo de las 8 que el segundo recuadro da como mínimo."
+      },
+      {
+        "id": "B",
+        "texto": "Que las horas de pantalla alcanzan para cubrir lo que les falta de sueño para llegar a las ocho horas.",
+        "explicacion": "Incorrecta. También es una premisa de la conclusión, pero se puede comprobar con la tabla: faltan 0,8 horas de sueño (8 − 7,2) y las pantallas ocupan 3,4 horas."
+      },
+      {
+        "id": "C",
+        "texto": "Que el tiempo que hoy se va en pantallas se dedicaría a dormir y no a otras actividades del día.",
+        "explicacion": "Correcta. Los datos solo muestran cómo se reparte hoy el día; no dicen a qué se dedicaría el tiempo liberado. El tercer recuadro («¡Apaga el celular y gana una hora de sueño!») hace el mismo supuesto, pero ningún dato de la encuesta lo respalda."
+      },
+      {
+        "id": "D",
+        "texto": "Que en un día de clase las pantallas ocupan más tiempo que las tareas y el estudio en casa.",
+        "explicacion": "Incorrecta. La tabla lo muestra (3,4 horas frente a 1,1), y además la conclusión del estudiante no depende de esa comparación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la infografía describe cómo reparten hoy su día los encuestados (7,2 horas de sueño, 3,4 de pantallas), pero no muestra qué harían con el tiempo que dejaran de usar en pantallas. Que el sueño esté por debajo de 8 horas y que las pantallas alcancen para cubrir la diferencia sí se comprueba con los datos. Lo que queda sin respaldo es que ese tiempo iría al sueño. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: alcance de la nota al pie frente a los datos de una infografía (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea la siguiente descripción de una infografía publicada en un periódico escolar y responda la pregunta.\n\nPERIÓDICO ESCOLAR «LA TIZA» — INFOGRAFÍA «¿EN QUÉ SE NOS VA EL DÍA?»\n\nEl grupo de periodismo publicó una infografía sobre cómo reparten su tiempo los estudiantes de octavo y noveno en un día de clase, de lunes a viernes. En el centro hay un reloj dividido en franjas de colores, una por actividad. Las franjas muestran estos promedios:\n\nActividad | Horas en promedio\nDormir | 7,2\nJornada escolar, con el recorrido de ida y vuelta | 7,5\nPantallas por diversión (celular, televisión, videojuegos) | 3,4\nTareas y estudio en casa | 1,1\nOficios de la casa o ayuda en el trabajo familiar | 1,6\nComidas, aseo, deporte y otras actividades | 3,2\n\nAlrededor del reloj hay tres recuadros. El primero dice: «Por cada hora de tareas, más de tres frente a una pantalla». El segundo: «Los pediatras recomiendan dormir entre 8 y 10 horas a esta edad». El tercero: «¡Apaga el celular y gana una hora de sueño!».\n\nNota al pie, en letra pequeña: «Encuesta en línea respondida de forma voluntaria por 120 de los 290 estudiantes de octavo y noveno, entre el 1 y el 12 de septiembre de 2026. Cada estudiante calculó sus horas de memoria».\n\n¿Cuál de las siguientes afirmaciones queda más en entredicho por la nota al pie de la infografía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los estudiantes de octavo y noveno del colegio duermen, en promedio, 7,2 horas en un día de clase.",
+        "explicacion": "Correcta. La nota indica que respondieron, de forma voluntaria, 120 de los 290 estudiantes y que cada uno estimó sus horas «de memoria». La afirmación extiende el dato a todos los estudiantes de esos grados y lo presenta como una medición exacta."
+      },
+      {
+        "id": "B",
+        "texto": "Según lo que respondieron los encuestados, por cada hora de tareas pasan más de tres frente a una pantalla.",
+        "explicacion": "Incorrecta. La afirmación se limita a lo que reportaron quienes respondieron (3,4 horas frente a 1,1), y eso no lo pone en duda la nota, que precisamente aclara quiénes respondieron y cómo."
+      },
+      {
+        "id": "C",
+        "texto": "Los pediatras recomiendan que los estudiantes de esa edad duerman entre 8 y 10 horas cada noche.",
+        "explicacion": "Incorrecta. Es una recomendación externa a la encuesta. La nota habla de cómo se recogieron los datos de los estudiantes, no de esa recomendación."
+      },
+      {
+        "id": "D",
+        "texto": "Las seis franjas del reloj suman, entre todas, las 24 horas que tiene un día completo.",
+        "explicacion": "Incorrecta. Es una propiedad de los promedios publicados (7,2 + 7,5 + 3,4 + 1,1 + 1,6 + 3,2 = 24), que no depende de quiénes respondieron ni de cómo calcularon sus horas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la nota al pie dice que la encuesta la respondieron voluntariamente 120 de 290 estudiantes y que las horas se calcularon de memoria. Eso limita dos cosas: generalizar a todos los estudiantes y tratar las cifras como mediciones. La afirmación que hace ambas cosas es la del sueño de «los estudiantes de octavo y noveno del colegio». La recomendación de los pediatras, la suma de las franjas y lo que reportaron los encuestados no dependen de esa limitación. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-066",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Contenidos locales",
+    "subtema": "Contenido local: lectura de un gráfico de barras descrito en una tabla (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Lea el siguiente fragmento de un boletín institucional, que incluye los datos de un gráfico, y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA SAN CAYETANO — BOLETÍN INSTITUCIONAL, NOVIEMBRE DE 2025\n\nMensaje de la rectora: «Con orgullo les cuento que, en la prueba departamental de lectura de 2025, nuestros estudiantes de quinto redujeron a la mitad el porcentaje en el nivel insuficiente y aumentaron el de los niveles satisfactorio y avanzado. Estos resultados demuestran que el plan lector que pusimos en marcha en febrero está dando frutos. Por eso, en la próxima sesión propondré al consejo directivo extenderlo a todos los grados de primaria».\n\nJunto al mensaje aparece un gráfico de barras con el porcentaje de estudiantes de quinto en cada nivel de desempeño. Sus datos son:\n\nNivel de desempeño | 2024 | 2025\nInsuficiente | 18 % | 9 %\nMínimo | 41 % | 38 %\nSatisfactorio | 31 % | 36 %\nAvanzado | 10 % | 17 %\n\nDebajo del gráfico, en letra pequeña: «Porcentajes calculados sobre los estudiantes que presentaron la prueba: 96 de los 100 matriculados en quinto en 2024 y 58 de los 104 matriculados en 2025. En 2025, la prueba se aplicó solo en la sede principal, porque un derrumbe impidió el paso de los estudiantes de las dos sedes rurales».\n\nSegún el gráfico, ¿cuál de las siguientes afirmaciones sobre los resultados de 2025 es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El nivel mínimo dejó de ser el que reunía la mayor proporción de los estudiantes evaluados.",
+        "explicacion": "Incorrecta. En 2025, el nivel mínimo (38 %) sigue siendo el de mayor proporción, aunque por muy poco frente a satisfactorio (36 %)."
+      },
+      {
+        "id": "B",
+        "texto": "La proporción de estudiantes en el nivel avanzado se duplicó con respecto a la de 2024.",
+        "explicacion": "Incorrecta. Avanzado pasó de 10 % a 17 %; para duplicarse habría tenido que llegar a 20 %. La que se redujo a la mitad fue la de insuficiente (de 18 % a 9 %)."
+      },
+      {
+        "id": "C",
+        "texto": "Los niveles insuficiente y mínimo reunieron, sumados, una proporción mayor que en 2024.",
+        "explicacion": "Incorrecta. En 2025 suman 47 % (9 + 38), frente a 59 % (18 + 41) en 2024: la proporción bajó."
+      },
+      {
+        "id": "D",
+        "texto": "Más de la mitad de quienes presentaron la prueba quedó en satisfactorio o avanzado.",
+        "explicacion": "Correcta. En 2025, satisfactorio (36 %) y avanzado (17 %) suman 53 %, más de la mitad de los estudiantes evaluados."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: en la columna de 2025, satisfactorio (36 %) más avanzado (17 %) suman 53 %. Mínimo sigue siendo el nivel más alto (38 %), avanzado no se duplicó (de 10 % a 17 %) e insuficiente más mínimo bajó de 59 % a 47 %. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-067",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: comparación de grupos no equivalentes (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea el siguiente fragmento de un boletín institucional, que incluye los datos de un gráfico, y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA SAN CAYETANO — BOLETÍN INSTITUCIONAL, NOVIEMBRE DE 2025\n\nMensaje de la rectora: «Con orgullo les cuento que, en la prueba departamental de lectura de 2025, nuestros estudiantes de quinto redujeron a la mitad el porcentaje en el nivel insuficiente y aumentaron el de los niveles satisfactorio y avanzado. Estos resultados demuestran que el plan lector que pusimos en marcha en febrero está dando frutos. Por eso, en la próxima sesión propondré al consejo directivo extenderlo a todos los grados de primaria».\n\nJunto al mensaje aparece un gráfico de barras con el porcentaje de estudiantes de quinto en cada nivel de desempeño. Sus datos son:\n\nNivel de desempeño | 2024 | 2025\nInsuficiente | 18 % | 9 %\nMínimo | 41 % | 38 %\nSatisfactorio | 31 % | 36 %\nAvanzado | 10 % | 17 %\n\nDebajo del gráfico, en letra pequeña: «Porcentajes calculados sobre los estudiantes que presentaron la prueba: 96 de los 100 matriculados en quinto en 2024 y 58 de los 104 matriculados en 2025. En 2025, la prueba se aplicó solo en la sede principal, porque un derrumbe impidió el paso de los estudiantes de las dos sedes rurales».\n\n¿Cuál es la razón más sólida para dudar de que los resultados de 2025 demuestren el efecto del plan lector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El plan lector solo llevaba unos meses en marcha, un tiempo muy corto para que cambie la lectura.",
+        "explicacion": "Incorrecta. Es una suposición sobre cuánto tarda en notarse un plan lector, que el texto no respalda con ningún dato. La duda más sólida es la que se apoya en la información del propio boletín."
+      },
+      {
+        "id": "B",
+        "texto": "En 2025 no presentaron la prueba los estudiantes de las sedes rurales, así que se comparan grupos distintos.",
+        "explicacion": "Correcta. La nota bajo el gráfico dice que en 2025 la prueba se aplicó solo en la sede principal (58 de 104 estudiantes), mientras que en 2024 la presentaron 96 de 100. Si los estudiantes rurales tienen resultados distintos, la mejora puede deberse a quién presentó la prueba y no al plan lector."
+      },
+      {
+        "id": "C",
+        "texto": "La matrícula de quinto pasó de 100 a 104 estudiantes, y por eso los porcentajes de los dos años no se comparan.",
+        "explicacion": "Incorrecta. Los porcentajes sirven justamente para comparar grupos de distinto tamaño; una diferencia de cuatro matriculados no impide la comparación. El problema no es cuántos había, sino quiénes presentaron la prueba."
+      },
+      {
+        "id": "D",
+        "texto": "El nivel mínimo casi no cambió entre los dos años, lo que muestra que el plan no llegó a la mayoría.",
+        "explicacion": "Incorrecta. Que mínimo pasara de 41 % a 38 % no indica a cuántos estudiantes llegó el plan; además, la proporción en insuficiente sí bajó a la mitad."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la letra pequeña informa que en 2025 la prueba se aplicó solo en la sede principal, porque los estudiantes de las dos sedes rurales no pudieron llegar (58 de 104 la presentaron, frente a 96 de 100 en 2024). Los dos años evalúan grupos distintos, así que la mejora no puede atribuirse sin más al plan lector. El tamaño de la matrícula no impide comparar porcentajes, y las otras dos razones no se apoyan en el texto. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-068",
+    "version": 2,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: estructura de un mensaje institucional (texto discontinuo)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente fragmento de un boletín institucional, que incluye los datos de un gráfico, y responda la pregunta.\n\nINSTITUCIÓN EDUCATIVA SAN CAYETANO — BOLETÍN INSTITUCIONAL, NOVIEMBRE DE 2025\n\nMensaje de la rectora: «Con orgullo les cuento que, en la prueba departamental de lectura de 2025, nuestros estudiantes de quinto redujeron a la mitad el porcentaje en el nivel insuficiente y aumentaron el de los niveles satisfactorio y avanzado. Estos resultados demuestran que el plan lector que pusimos en marcha en febrero está dando frutos. Por eso, en la próxima sesión propondré al consejo directivo extenderlo a todos los grados de primaria».\n\nJunto al mensaje aparece un gráfico de barras con el porcentaje de estudiantes de quinto en cada nivel de desempeño. Sus datos son:\n\nNivel de desempeño | 2024 | 2025\nInsuficiente | 18 % | 9 %\nMínimo | 41 % | 38 %\nSatisfactorio | 31 % | 36 %\nAvanzado | 10 % | 17 %\n\nDebajo del gráfico, en letra pequeña: «Porcentajes calculados sobre los estudiantes que presentaron la prueba: 96 de los 100 matriculados en quinto en 2024 y 58 de los 104 matriculados en 2025. En 2025, la prueba se aplicó solo en la sede principal, porque un derrumbe impidió el paso de los estudiantes de las dos sedes rurales».\n\n¿Cómo está organizado el mensaje de la rectora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Plantea un problema de lectura en quinto, explica sus causas y propone una solución para la primaria.",
+        "explicacion": "Incorrecta. El mensaje no plantea un problema: celebra una mejora («Con orgullo les cuento…») y no analiza causas de dificultades."
+      },
+      {
+        "id": "B",
+        "texto": "Anuncia una propuesta para la primaria, la justifica con datos de dos años y responde a una objeción.",
+        "explicacion": "Incorrecta. El orden es otro (la propuesta va al final) y el mensaje no menciona ni responde ninguna objeción."
+      },
+      {
+        "id": "C",
+        "texto": "Presenta un resultado, lo atribuye a una acción del colegio y, a partir de esa atribución, anuncia una propuesta.",
+        "explicacion": "Correcta. Primero da el resultado de 2025 («redujeron a la mitad…»), luego lo atribuye al plan lector («Estos resultados demuestran que…») y, con «Por eso», anuncia que propondrá extenderlo a toda la primaria."
+      },
+      {
+        "id": "D",
+        "texto": "Compara los resultados de dos años, advierte los límites de esa comparación y deja la decisión al consejo.",
+        "explicacion": "Incorrecta. Los límites de la comparación aparecen en la letra pequeña bajo el gráfico, no en el mensaje de la rectora, que presenta los resultados como prueba de que el plan funciona."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el mensaje tiene tres oraciones con funciones encadenadas: un resultado (bajó insuficiente y subieron satisfactorio y avanzado), su atribución al plan lector («Estos resultados demuestran…») y una propuesta derivada («Por eso… propondré»). No plantea un problema, no responde objeciones y no advierte límites; eso último lo hace la nota del gráfico. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Contenidos locales",
+    "subtema": "Contenido local: sentido irónico de una palabra en un microrrelato (texto literario)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente microrrelato y responda la pregunta.\n\nEL ESPANTAPÁJAROS\n\nDurante once cosechas cumplí mi oficio sin una sola falla. Me plantaron en medio del maizal con los brazos abiertos, un sombrero de paja y una camisa que había sido del abuelo de la casa. Nunca tuve que moverme: bastaba con que los pájaros me vieran para que dieran un rodeo y se fueran a picotear el maíz de los vecinos. Yo era, modestamente, el mejor espantapájaros de la vereda.\n\nUna mañana de abril, una mirla se posó en mi hombro. Supuse que se había equivocado y esperé a que se diera cuenta. En lugar de huir, empezó a traer ramitas, pelusa de cardo y un hilo azul que alguien había dejado en la cerca. Al tercer día ya tenía su nido dentro de mi sombrero.\n\nLos demás pájaros, que la veían entrar y salir de mi cabeza, perdieron el respeto que me tenían, y el maizal se llenó de picos. El dueño de la finca dice que ya no sirvo y que para la próxima siembra me cambiará por unas cintas plateadas. Puede que tenga razón.\n\nPero desde abril cuido el campo de otra manera: cuando alguien se acerca con una escalera, abro los brazos un poco más.\n\nEn la oración «Yo era, modestamente, el mejor espantapájaros de la vereda», ¿qué revela la palabra «modestamente»?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el narrador está orgulloso de sí mismo, pues la palabra choca con el elogio que se hace en la frase.",
+        "explicacion": "Correcta. Quien dice de sí mismo que es «el mejor» no está siendo modesto. El adverbio contradice el contenido de la frase y deja ver, con ironía, el orgullo del narrador por su eficacia."
+      },
+      {
+        "id": "B",
+        "texto": "Que el narrador veía su trabajo como algo sencillo, ya que no tenía que moverse para espantar a los pájaros.",
+        "explicacion": "Incorrecta. Es cierto que «Nunca tuve que moverme», pero el narrador no le resta mérito a su trabajo: se presenta como «el mejor» y destaca que cumplió «sin una sola falla»."
+      },
+      {
+        "id": "C",
+        "texto": "Que el narrador tenía un aspecto humilde, pues lo vistieron con un sombrero de paja y una camisa heredada.",
+        "explicacion": "Incorrecta. Toma «modestamente» en el sentido de sencillez material. En la oración, la palabra califica la manera de afirmar «el mejor», no la ropa del espantapájaros."
+      },
+      {
+        "id": "D",
+        "texto": "Que en la vereda todos reconocían su eficacia, aunque él no se atreviera a decirlo con sus propias palabras.",
+        "explicacion": "Incorrecta. El texto no habla de la opinión de la vereda, y el narrador sí se atreve a decirlo: él mismo afirma que era el mejor."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: «modestamente» acompaña una afirmación nada modesta, «el mejor espantapájaros de la vereda». El contraste produce ironía y revela el orgullo del narrador, coherente con el comienzo («sin una sola falla»). Las demás opciones leen la palabra en sentido material, la unen a otro dato o atribuyen el elogio a la vereda. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: relación entre el comienzo y el final de un microrrelato (texto literario)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea el siguiente microrrelato y responda la pregunta.\n\nEL ESPANTAPÁJAROS\n\nDurante once cosechas cumplí mi oficio sin una sola falla. Me plantaron en medio del maizal con los brazos abiertos, un sombrero de paja y una camisa que había sido del abuelo de la casa. Nunca tuve que moverme: bastaba con que los pájaros me vieran para que dieran un rodeo y se fueran a picotear el maíz de los vecinos. Yo era, modestamente, el mejor espantapájaros de la vereda.\n\nUna mañana de abril, una mirla se posó en mi hombro. Supuse que se había equivocado y esperé a que se diera cuenta. En lugar de huir, empezó a traer ramitas, pelusa de cardo y un hilo azul que alguien había dejado en la cerca. Al tercer día ya tenía su nido dentro de mi sombrero.\n\nLos demás pájaros, que la veían entrar y salir de mi cabeza, perdieron el respeto que me tenían, y el maizal se llenó de picos. El dueño de la finca dice que ya no sirvo y que para la próxima siembra me cambiará por unas cintas plateadas. Puede que tenga razón.\n\nPero desde abril cuido el campo de otra manera: cuando alguien se acerca con una escalera, abro los brazos un poco más.\n\n¿Qué relación hay entre la oración «Nunca tuve que moverme», del primer párrafo, y la última oración del relato?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se confirman: el narrador sigue inmóvil, y por eso los pájaros ya no le temen y el maizal se llenó de picos.",
+        "explicacion": "Incorrecta. Los pájaros pierden el respeto porque ven a la mirla entrar y salir de su cabeza, no por su inmovilidad. Además, el final presenta un gesto nuevo, no una continuidad."
+      },
+      {
+        "id": "B",
+        "texto": "La segunda explica la primera: el narrador no se movía porque, desde el comienzo, esperaba la llegada de la mirla.",
+        "explicacion": "Incorrecta. Nada indica que esperara a la mirla: cuando llega, él supone «que se había equivocado»."
+      },
+      {
+        "id": "C",
+        "texto": "Se oponen: el narrador, que antes espantaba sin esfuerzo, ahora se mueve para que el dueño no lo cambie por cintas.",
+        "explicacion": "Incorrecta. Ve bien el contraste, pero se equivoca en su propósito. El narrador acepta el juicio del dueño («Puede que tenga razón») y el gesto final se dirige a quien se acerca con una escalera, no a conservar su puesto."
+      },
+      {
+        "id": "D",
+        "texto": "Se oponen: el narrador, que antes cumplía su oficio sin moverse, ahora intenta un gesto para proteger el nido.",
+        "explicacion": "Correcta. Al principio bastaba con que lo vieran; al final, «cuando alguien se acerca con una escalera», es decir, a la altura del sombrero donde está el nido, él «abre los brazos un poco más». El gesto muestra una voluntad de proteger que antes no necesitaba."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: al comienzo el espantapájaros cumplía su oficio sin moverse; al final «abre los brazos un poco más» cuando alguien llega con una escalera, que sirve para alcanzar el sombrero donde está el nido. El final se opone al comienzo y muestra un propósito nuevo: proteger el nido, no recuperar su puesto, que él mismo da por perdido («Puede que tenga razón»). Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: interpretación global de un microrrelato (texto literario)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea el siguiente microrrelato y responda la pregunta.\n\nEL ESPANTAPÁJAROS\n\nDurante once cosechas cumplí mi oficio sin una sola falla. Me plantaron en medio del maizal con los brazos abiertos, un sombrero de paja y una camisa que había sido del abuelo de la casa. Nunca tuve que moverme: bastaba con que los pájaros me vieran para que dieran un rodeo y se fueran a picotear el maíz de los vecinos. Yo era, modestamente, el mejor espantapájaros de la vereda.\n\nUna mañana de abril, una mirla se posó en mi hombro. Supuse que se había equivocado y esperé a que se diera cuenta. En lugar de huir, empezó a traer ramitas, pelusa de cardo y un hilo azul que alguien había dejado en la cerca. Al tercer día ya tenía su nido dentro de mi sombrero.\n\nLos demás pájaros, que la veían entrar y salir de mi cabeza, perdieron el respeto que me tenían, y el maizal se llenó de picos. El dueño de la finca dice que ya no sirvo y que para la próxima siembra me cambiará por unas cintas plateadas. Puede que tenga razón.\n\nPero desde abril cuido el campo de otra manera: cuando alguien se acerca con una escalera, abro los brazos un poco más.\n\n¿Cuál de las siguientes interpretaciones del relato está mejor respaldada por el texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El relato critica que en el campo se cambien los métodos tradicionales por inventos modernos, como las cintas.",
+        "explicacion": "Incorrecta. Las cintas plateadas se mencionan una vez y el narrador no las critica; incluso concede que el dueño puede tener razón."
+      },
+      {
+        "id": "B",
+        "texto": "El relato muestra que la falla que ve el dueño es, para el narrador, un nuevo sentido de su oficio.",
+        "explicacion": "Correcta. El dueño dice que «ya no sirvo», y el narrador lo admite («Puede que tenga razón»), pero a continuación, con un «Pero», afirma que ahora cuida el campo «de otra manera». La misma situación se valora de dos modos."
+      },
+      {
+        "id": "C",
+        "texto": "El relato muestra que la naturaleza termina por imponerse sobre cualquier invento humano que intente dominarla.",
+        "explicacion": "Incorrecta. Generaliza en exceso: el relato cuenta un caso y no habla de «cualquier invento». Además, el narrador no es vencido por la mirla, sino que se pone de su lado."
+      },
+      {
+        "id": "D",
+        "texto": "El relato advierte que quien descuida su deber por compasión termina perdiendo el lugar que se había ganado.",
+        "explicacion": "Incorrecta. Le da al relato una moraleja que el texto no sostiene. El narrador no se arrepiente: el «Pero» del final presenta su nueva tarea como algo que valora."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el penúltimo párrafo recoge el juicio del dueño («ya no sirvo») y el último lo contrapone con «Pero desde abril cuido el campo de otra manera». El relato muestra dos valoraciones de un mismo hecho. No critica las cintas, no generaliza sobre la naturaleza y no deja una moraleja de castigo, porque el narrador no se arrepiente. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Contenidos locales",
+    "subtema": "Contenido local: sentido de una expresión en un poema (texto literario)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Lea el siguiente poema y responda la pregunta.\n\nLECCIÓN DE GEOGRAFÍA\n\nMi padre no fue a la escuela,\npero sabía dónde nace cada quebrada.\nLa señalaba con la punta del machete,\ncomo quien muestra una palabra en el tablero,\ny decía: «Aquí se esconde el agua».\nEl monte, casi siempre, le daba la razón.\n\nEn el colegio aprendí otro idioma para lo mismo:\ncuenca, afluente, nacimiento, divisoria de aguas.\nLo copié en el cuaderno con letra de domingo\ny durante algunos años\nme sentí más sabio que él.\n\nHoy le muestro el mapa del departamento.\nLo recorre despacio, con el dedo,\nbuscando su vereda entre las líneas azules.\nNo la encuentra.\n—Es que es muy pequeña, papá —le explico.\nÉl no discute. Pone el dedo\nen un punto donde el mapa no dice nada\ny repite, sin mirarme:\n—Aquí se esconde el agua.\n\nAhora sé que en la casa hubo dos lecciones\ny que la mía fue la más corta.\n\nEn el poema, ¿a qué se refiere la expresión «otro idioma para lo mismo»?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A una lengua extranjera que el hablante estudió en el colegio y que su padre no llegó a aprender.",
+        "explicacion": "Incorrecta. Toma «idioma» en sentido literal. Las palabras que siguen están en español: se trata de otro vocabulario, no de otra lengua."
+      },
+      {
+        "id": "B",
+        "texto": "A la letra cuidadosa con que el hablante copiaba en su cuaderno los nombres de las quebradas.",
+        "explicacion": "Incorrecta. La «letra de domingo» aparece en el verso siguiente y se refiere a cómo copiaba, no a lo que nombra la expresión."
+      },
+      {
+        "id": "C",
+        "texto": "A los términos escolares con los que el hablante aprendió a nombrar lo que su padre ya conocía.",
+        "explicacion": "Correcta. El verso siguiente da los ejemplos: «cuenca, afluente, nacimiento, divisoria de aguas». Son los nombres técnicos de lo que el padre señalaba en el monte, es decir, de «lo mismo»."
+      },
+      {
+        "id": "D",
+        "texto": "A las palabras con que el padre señalaba el monte y que el hijo, de niño, no lograba entender.",
+        "explicacion": "Incorrecta. Invierte la relación: el «otro idioma» es el que el hijo aprendió en el colegio, distinto del modo de hablar del padre."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la expresión va seguida de la lista «cuenca, afluente, nacimiento, divisoria de aguas», que son términos aprendidos «en el colegio» para nombrar lo que el padre conocía (dónde nace cada quebrada). No es una lengua extranjera, ni la caligrafía del cuaderno, ni el habla del padre. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-073",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: función de una repetición en un poema (texto literario)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente poema y responda la pregunta.\n\nLECCIÓN DE GEOGRAFÍA\n\nMi padre no fue a la escuela,\npero sabía dónde nace cada quebrada.\nLa señalaba con la punta del machete,\ncomo quien muestra una palabra en el tablero,\ny decía: «Aquí se esconde el agua».\nEl monte, casi siempre, le daba la razón.\n\nEn el colegio aprendí otro idioma para lo mismo:\ncuenca, afluente, nacimiento, divisoria de aguas.\nLo copié en el cuaderno con letra de domingo\ny durante algunos años\nme sentí más sabio que él.\n\nHoy le muestro el mapa del departamento.\nLo recorre despacio, con el dedo,\nbuscando su vereda entre las líneas azules.\nNo la encuentra.\n—Es que es muy pequeña, papá —le explico.\nÉl no discute. Pone el dedo\nen un punto donde el mapa no dice nada\ny repite, sin mirarme:\n—Aquí se esconde el agua.\n\nAhora sé que en la casa hubo dos lecciones\ny que la mía fue la más corta.\n\n¿Qué función cumple que el padre repita, al final del poema, la frase «Aquí se esconde el agua»?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Muestra que el padre no comprende el mapa y responde con la única frase que sabe decir sobre el agua.",
+        "explicacion": "Incorrecta. Es la mirada que el hablante tuvo de joven, cuando se sentía «más sabio que él». El poema la desmiente al final: «la mía fue la más corta»."
+      },
+      {
+        "id": "B",
+        "texto": "Retoma la escena de la primera estrofa para mostrar que el saber del padre llega adonde el mapa no informa.",
+        "explicacion": "Correcta. La frase ya había aparecido cuando el padre señalaba las quebradas con el machete. Al final la dice señalando «un punto donde el mapa no dice nada»: lo que él sabe cubre lo que el mapa deja en blanco."
+      },
+      {
+        "id": "C",
+        "texto": "Indica que el hijo aprendió, por fin, a hablar del territorio con las mismas palabras de su padre.",
+        "explicacion": "Incorrecta. Quien repite la frase es el padre («y repite, sin mirarme»), no el hijo."
+      },
+      {
+        "id": "D",
+        "texto": "Marca un regreso al pasado: la última escena ocurre antes de que el hijo entrara al colegio.",
+        "explicacion": "Incorrecta. La escena final ocurre en el presente («Hoy le muestro el mapa»), después de los años de colegio."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: «Aquí se esconde el agua» aparece en la primera estrofa, cuando el padre señala las quebradas, y vuelve al final, cuando pone el dedo «donde el mapa no dice nada». La repetición enlaza el comienzo y el cierre y muestra que el saber del padre alcanza lo que el mapa no registra; por eso el hablante concluye que su lección «fue la más corta». Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: aplicar el sentido de un poema a una situación nueva (texto literario)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea el siguiente poema y responda la pregunta.\n\nLECCIÓN DE GEOGRAFÍA\n\nMi padre no fue a la escuela,\npero sabía dónde nace cada quebrada.\nLa señalaba con la punta del machete,\ncomo quien muestra una palabra en el tablero,\ny decía: «Aquí se esconde el agua».\nEl monte, casi siempre, le daba la razón.\n\nEn el colegio aprendí otro idioma para lo mismo:\ncuenca, afluente, nacimiento, divisoria de aguas.\nLo copié en el cuaderno con letra de domingo\ny durante algunos años\nme sentí más sabio que él.\n\nHoy le muestro el mapa del departamento.\nLo recorre despacio, con el dedo,\nbuscando su vereda entre las líneas azules.\nNo la encuentra.\n—Es que es muy pequeña, papá —le explico.\nÉl no discute. Pone el dedo\nen un punto donde el mapa no dice nada\ny repite, sin mirarme:\n—Aquí se esconde el agua.\n\nAhora sé que en la casa hubo dos lecciones\ny que la mía fue la más corta.\n\n¿Cuál de las siguientes situaciones se parece más a la que presenta el poema?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un joven que aprendió a leer en la escuela nocturna le enseña a su padre a firmar los documentos de la finca familiar.",
+        "explicacion": "Incorrecta. Invierte la dirección del poema: aquí el saber escolar del hijo suple una carencia del padre, mientras que en el poema el hijo descubre el límite de lo que aprendió."
+      },
+      {
+        "id": "B",
+        "texto": "Una docente rural corrige el nombre que los campesinos dan a una quebrada, porque no coincide con el del mapa.",
+        "explicacion": "Incorrecta. Representa la postura que el hablante abandona: dar por superior la versión oficial sobre el conocimiento local."
+      },
+      {
+        "id": "C",
+        "texto": "Un abuelo se niega a mirar el mapa que le lleva su nieto, porque desconfía de lo que se enseña en el colegio.",
+        "explicacion": "Incorrecta. En el poema el padre sí mira el mapa («Lo recorre despacio») y no discute; el poema no opone desconfianza a la escuela, sino dos saberes, uno de los cuales llega más lejos."
+      },
+      {
+        "id": "D",
+        "texto": "Una agrónoma descubre que su abuela anuncia las heladas en la vereda con más acierto que el pronóstico oficial.",
+        "explicacion": "Correcta. Como en el poema, alguien con formación escolar reconoce que un saber nacido de la experiencia del lugar llega a donde no alcanza la herramienta oficial (el pronóstico, como el mapa)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el poema muestra a un hijo con estudios que primero se siente «más sabio» que su padre y luego reconoce que el saber del padre llega a donde el mapa «no dice nada». La situación análoga es la de alguien formado que descubre que un saber local supera a la herramienta oficial. Las otras situaciones invierten la dirección, defienden lo oficial o atribuyen al padre un rechazo que no tiene. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-075",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: tesis de un texto filosófico (texto filosófico)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente texto de reflexión filosófica y responda la pregunta.\n\nESCALERAS QUE SE DEJAN ATRÁS\n\nEn los primeros grados se enseña que no se puede restar un número mayor de uno menor. Años después, el mismo estudiante conoce los números negativos y siente que le mintieron. ¿Tiene razón?\n\nConviene distinguir entre mentir y simplificar. Miente quien afirma algo que considera falso para que otro lo crea. Simplifica quien dice algo verdadero dentro de un terreno limitado, aunque calle que ese terreno tiene bordes. «No se puede restar 7 de 3» es falso si se cuenta con los números negativos, pero es cierto si solo se dispone de los números naturales, que son justamente los que maneja el niño. La frase no lo engaña sobre lo que tiene delante; solo deja por fuera lo que todavía no puede ver.\n\nHay quienes comparan estas explicaciones con una escalera que sirve para subir y que luego se aparta. La imagen es útil, pero esconde un riesgo: quien sube no siempre sabe que está en una escalera. Si el maestro presenta la simplificación como la última palabra, el estudiante no la soltará cuando llegue el momento; incluso la defenderá contra lo que aprenda después.\n\nPor eso, el problema no está en simplificar, sino en hacerlo sin avisar. Una frase como «con los números que conocemos hasta ahora, no se puede» cuesta pocas palabras más y lo cambia todo: entrega la regla junto con la noticia de sus límites. Enseñar de ese modo no es confesar una debilidad del conocimiento, sino mostrar cómo crece.\n\n¿Cuál es la tesis del texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Simplificar no equivale a mentir, pero conviene enseñar la regla simplificada junto con el aviso de sus límites.",
+        "explicacion": "Correcta. Recoge la distinción del segundo párrafo (mentir frente a simplificar) y la conclusión del último («el problema no está en simplificar, sino en hacerlo sin avisar»)."
+      },
+      {
+        "id": "B",
+        "texto": "Las simplificaciones de la escuela son mentiras útiles que el estudiante tendrá que desaprender más adelante.",
+        "explicacion": "Incorrecta. Contradice la distinción central: según el autor, quien simplifica dice «algo verdadero dentro de un terreno limitado», así que no miente."
+      },
+      {
+        "id": "C",
+        "texto": "La escuela debería enseñar desde el comienzo las reglas completas, para no tener que corregirlas después.",
+        "explicacion": "Incorrecta. El autor no rechaza la simplificación: afirma que «el problema no está en simplificar»."
+      },
+      {
+        "id": "D",
+        "texto": "Las explicaciones escolares son escaleras que el estudiante debe apartar en cuanto termina de subir.",
+        "explicacion": "Incorrecta. Toma la imagen del tercer párrafo como tesis, cuando el autor la presenta como una comparación ajena («Hay quienes comparan…») y le señala un riesgo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el texto distingue entre mentir y simplificar (segundo párrafo), advierte el riesgo de presentar la simplificación como «la última palabra» (tercero) y concluye que el problema es simplificar «sin avisar» (cuarto). La tesis integra la distinción y la propuesta. Las demás opciones la contradicen o toman la imagen de la escalera, que el autor matiza, por la idea central. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Contenidos locales",
+    "subtema": "Contenido local: razón explícita en un texto filosófico (texto filosófico)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente texto de reflexión filosófica y responda la pregunta.\n\nESCALERAS QUE SE DEJAN ATRÁS\n\nEn los primeros grados se enseña que no se puede restar un número mayor de uno menor. Años después, el mismo estudiante conoce los números negativos y siente que le mintieron. ¿Tiene razón?\n\nConviene distinguir entre mentir y simplificar. Miente quien afirma algo que considera falso para que otro lo crea. Simplifica quien dice algo verdadero dentro de un terreno limitado, aunque calle que ese terreno tiene bordes. «No se puede restar 7 de 3» es falso si se cuenta con los números negativos, pero es cierto si solo se dispone de los números naturales, que son justamente los que maneja el niño. La frase no lo engaña sobre lo que tiene delante; solo deja por fuera lo que todavía no puede ver.\n\nHay quienes comparan estas explicaciones con una escalera que sirve para subir y que luego se aparta. La imagen es útil, pero esconde un riesgo: quien sube no siempre sabe que está en una escalera. Si el maestro presenta la simplificación como la última palabra, el estudiante no la soltará cuando llegue el momento; incluso la defenderá contra lo que aprenda después.\n\nPor eso, el problema no está en simplificar, sino en hacerlo sin avisar. Una frase como «con los números que conocemos hasta ahora, no se puede» cuesta pocas palabras más y lo cambia todo: entrega la regla junto con la noticia de sus límites. Enseñar de ese modo no es confesar una debilidad del conocimiento, sino mostrar cómo crece.\n\nSegún el segundo párrafo, ¿por qué decirle a un niño «No se puede restar 7 de 3» no es mentirle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Porque el maestro la dice con la intención de proteger al niño de una confusión que todavía no puede resolver.",
+        "explicacion": "Incorrecta. El texto no habla de esa intención. Además, según la definición del autor, una buena intención no basta: lo que separa la simplificación de la mentira es que se dice algo verdadero en un terreno limitado."
+      },
+      {
+        "id": "B",
+        "texto": "Porque el niño descubrirá los números negativos más adelante y corregirá la regla por su propia cuenta.",
+        "explicacion": "Incorrecta. Que el niño los descubra después no cambia si la frase era verdadera o falsa. De hecho, el autor advierte que el estudiante puede defender la regla en lugar de corregirla."
+      },
+      {
+        "id": "C",
+        "texto": "Porque la frase es verdadera en el conjunto de números con el que el niño trabaja en ese momento.",
+        "explicacion": "Correcta. El texto dice que la frase «es cierto si solo se dispone de los números naturales, que son justamente los que maneja el niño». Por eso es una simplificación y no una mentira."
+      },
+      {
+        "id": "D",
+        "texto": "Porque, aunque la frase es falsa con cualquier tipo de número, ayuda al niño a aprender a restar.",
+        "explicacion": "Incorrecta. Contradice el texto: la frase es falsa con los negativos, pero verdadera con los naturales. Si fuera falsa en todos los casos, según la definición del autor sí podría ser una mentira."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el autor define simplificar como decir «algo verdadero dentro de un terreno limitado» y aplica la definición al ejemplo: la frase es falsa con los negativos, pero «es cierto si solo se dispone de los números naturales, que son justamente los que maneja el niño». La razón es la verdad de la frase en ese terreno, no la intención del maestro ni lo que el niño aprenda después. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: aplicar una distinción conceptual a un caso nuevo (texto filosófico)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Lea el siguiente texto de reflexión filosófica y responda la pregunta.\n\nESCALERAS QUE SE DEJAN ATRÁS\n\nEn los primeros grados se enseña que no se puede restar un número mayor de uno menor. Años después, el mismo estudiante conoce los números negativos y siente que le mintieron. ¿Tiene razón?\n\nConviene distinguir entre mentir y simplificar. Miente quien afirma algo que considera falso para que otro lo crea. Simplifica quien dice algo verdadero dentro de un terreno limitado, aunque calle que ese terreno tiene bordes. «No se puede restar 7 de 3» es falso si se cuenta con los números negativos, pero es cierto si solo se dispone de los números naturales, que son justamente los que maneja el niño. La frase no lo engaña sobre lo que tiene delante; solo deja por fuera lo que todavía no puede ver.\n\nHay quienes comparan estas explicaciones con una escalera que sirve para subir y que luego se aparta. La imagen es útil, pero esconde un riesgo: quien sube no siempre sabe que está en una escalera. Si el maestro presenta la simplificación como la última palabra, el estudiante no la soltará cuando llegue el momento; incluso la defenderá contra lo que aprenda después.\n\nPor eso, el problema no está en simplificar, sino en hacerlo sin avisar. Una frase como «con los números que conocemos hasta ahora, no se puede» cuesta pocas palabras más y lo cambia todo: entrega la regla junto con la noticia de sus límites. Enseñar de ese modo no es confesar una debilidad del conocimiento, sino mostrar cómo crece.\n\nSegún el texto, ¿cuál de las siguientes situaciones muestra el error que convierte una simplificación en un problema?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un docente de primero dice que no se puede restar 7 de 3 y añade que, con los números que verán más adelante, sí se podrá.",
+        "explicacion": "Incorrecta. Es justamente la práctica que el autor recomienda: entregar la regla «junto con la noticia de sus límites»."
+      },
+      {
+        "id": "B",
+        "texto": "Una docente de noveno enseña que un número negativo no tiene raíz cuadrada y, si le preguntan por qué, contesta que es así y no hay más que saber.",
+        "explicacion": "Correcta. La regla es verdadera con los números que el grupo conoce (los reales), pero la docente la presenta como «la última palabra» y cierra la pregunta. Es lo que el autor critica: simplificar «sin avisar» que hay bordes."
+      },
+      {
+        "id": "C",
+        "texto": "Una docente de cuarto anuncia que la prueba de período no tendrá recuperación, aunque sabe que sí la habrá, para que todos estudien.",
+        "explicacion": "Incorrecta. Afirmar algo que se sabe falso para que otro lo crea es mentir, según la definición del texto; no es una simplificación, así que no ilustra el error del que habla la pregunta."
+      },
+      {
+        "id": "D",
+        "texto": "Un docente de octavo decide no simplificar y presenta desde el primer día todas las excepciones de la regla, aunque el grupo se confunda.",
+        "explicacion": "Incorrecta. Aquí no hay simplificación. El autor dice que «el problema no está en simplificar», pero no discute qué pasa cuando no se simplifica, así que esta situación no ilustra el error que describe."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el autor sostiene que una simplificación se vuelve un problema cuando el maestro la presenta «como la última palabra», sin avisar sus límites. La docente de noveno da una regla verdadera en los números que el grupo conoce y cierra la pregunta. El docente de primero hace lo que el autor recomienda; la de cuarto miente, y el de octavo no simplifica. Conclusión: B.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Contenidos locales",
+    "subtema": "Contenido local: sentido de una frase en un texto de divulgación científica (texto de divulgación científica)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Lea el siguiente texto de divulgación científica y responda la pregunta.\n\n¿POR QUÉ SE ENDURECE EL PAN?\n\nCasi todo el mundo cree que el pan viejo está duro porque se secó. La explicación parece obvia: el pan pierde agua, como una toalla que se deja al sol. Sin embargo, un pan guardado en una bolsa bien cerrada, que apenas pierde humedad, también se endurece en dos o tres días.\n\nLa causa principal está en el almidón, la sustancia que forma la mayor parte de la harina. En el horno, el calor y el agua de la masa desordenan las cadenas de almidón, que se hinchan y se vuelven blandas. Cuando el pan se enfría, esas cadenas empiezan a reorganizarse, poco a poco, en estructuras ordenadas y rígidas, parecidas a pequeños cristales, y retienen entre ellas parte del agua. El pan no pierde esa agua: la esconde. Los químicos llaman retrogradación a este proceso.\n\nDos observaciones caseras lo confirman. La primera: si se calienta en el horno, por unos minutos, un pan del día anterior, este vuelve a ablandarse, porque el calor deshace otra vez el orden de las cadenas. El efecto dura poco, pues al enfriarse el proceso empieza de nuevo. La segunda resulta sorprendente: el pan se endurece más rápido en la nevera que a temperatura ambiente, porque el frío moderado favorece la reorganización del almidón. En el congelador, en cambio, el agua se convierte en hielo, las cadenas casi no pueden moverse y el pan se conserva durante semanas.\n\nNada de esto significa que el pan no se seque. Si se deja destapado, también pierde agua y acaba seco y quebradizo. Pero esa es otra historia, y no la principal.\n\nEn el texto, ¿qué significa la frase «El pan no pierde esa agua: la esconde»?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el agua pasa de la miga al aire de la bolsa cerrada, y por eso el pan se endurece aunque esté tapado.",
+        "explicacion": "Incorrecta. Es la explicación del secado, que el texto descarta como causa principal: el pan en bolsa cerrada «apenas pierde humedad»."
+      },
+      {
+        "id": "B",
+        "texto": "Que el pan absorbe la humedad del aire y la guarda entre sus cadenas de almidón hasta que se endurece.",
+        "explicacion": "Incorrecta. El agua retenida es la que el pan ya tenía desde la masa; el texto no habla de que el pan tome humedad del aire."
+      },
+      {
+        "id": "C",
+        "texto": "Que el agua del pan se convierte en hielo y las cadenas de almidón ya no pueden moverse con libertad.",
+        "explicacion": "Incorrecta. Eso ocurre en el congelador, según el tercer párrafo, y explica por qué el pan se conserva, no por qué se endurece."
+      },
+      {
+        "id": "D",
+        "texto": "Que el agua sigue en el pan, pero queda retenida entre las cadenas de almidón que se reorganizan.",
+        "explicacion": "Correcta. La oración anterior explica que, al enfriarse, las cadenas de almidón forman estructuras rígidas y «retienen entre ellas parte del agua». El agua no se va: queda atrapada."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la frase resume la oración anterior: al enfriarse, las cadenas de almidón se reorganizan en estructuras rígidas y «retienen entre ellas parte del agua». El agua no sale del pan; queda atrapada y deja de estar disponible. Las otras opciones la confunden con el secado, con una absorción del aire o con lo que pasa en el congelador. Conclusión: D.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Estructura y cohesión",
+    "subtema": "Articulación: función del párrafo final (concesión) (texto de divulgación científica)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente texto de divulgación científica y responda la pregunta.\n\n¿POR QUÉ SE ENDURECE EL PAN?\n\nCasi todo el mundo cree que el pan viejo está duro porque se secó. La explicación parece obvia: el pan pierde agua, como una toalla que se deja al sol. Sin embargo, un pan guardado en una bolsa bien cerrada, que apenas pierde humedad, también se endurece en dos o tres días.\n\nLa causa principal está en el almidón, la sustancia que forma la mayor parte de la harina. En el horno, el calor y el agua de la masa desordenan las cadenas de almidón, que se hinchan y se vuelven blandas. Cuando el pan se enfría, esas cadenas empiezan a reorganizarse, poco a poco, en estructuras ordenadas y rígidas, parecidas a pequeños cristales, y retienen entre ellas parte del agua. El pan no pierde esa agua: la esconde. Los químicos llaman retrogradación a este proceso.\n\nDos observaciones caseras lo confirman. La primera: si se calienta en el horno, por unos minutos, un pan del día anterior, este vuelve a ablandarse, porque el calor deshace otra vez el orden de las cadenas. El efecto dura poco, pues al enfriarse el proceso empieza de nuevo. La segunda resulta sorprendente: el pan se endurece más rápido en la nevera que a temperatura ambiente, porque el frío moderado favorece la reorganización del almidón. En el congelador, en cambio, el agua se convierte en hielo, las cadenas casi no pueden moverse y el pan se conserva durante semanas.\n\nNada de esto significa que el pan no se seque. Si se deja destapado, también pierde agua y acaba seco y quebradizo. Pero esa es otra historia, y no la principal.\n\n¿Qué función cumple el último párrafo dentro del texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Abandona la explicación del almidón y vuelve a la creencia común que el texto presentó en el primer párrafo.",
+        "explicacion": "Incorrecta. El párrafo no retira la explicación: aclara que el secado existe, pero lo deja en un lugar secundario («no la principal»)."
+      },
+      {
+        "id": "B",
+        "texto": "Aporta una tercera observación casera que confirma que la retrogradación del almidón endurece el pan.",
+        "explicacion": "Incorrecta. Las observaciones que confirman la retrogradación son dos y están en el tercer párrafo; el último trata del secado, que es otro proceso."
+      },
+      {
+        "id": "C",
+        "texto": "Admite que el pan también se seca, pero sostiene que el secado no es la causa principal de que se endurezca.",
+        "explicacion": "Correcta. «Nada de esto significa que el pan no se seque» concede un punto a la creencia común, y «Pero esa es otra historia, y no la principal» reafirma que la causa central es el almidón."
+      },
+      {
+        "id": "D",
+        "texto": "Anuncia que el secado del pan, y no el almidón, será el tema central de un próximo artículo de divulgación.",
+        "explicacion": "Incorrecta. «Esa es otra historia» es una manera de dejar de lado el secado, no el anuncio de otro artículo; y el texto no dice que el secado vaya a ser el tema de nada."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el último párrafo empieza con una concesión («Nada de esto significa que el pan no se seque») y termina reafirmando la tesis («no la principal»). Su función es matizar: reconoce el secado sin quitarle a la retrogradación el papel central. No abandona la tesis, no aporta otra observación y no anuncia otro artículo. Conclusión: C.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LCD-080",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Lectura Crítica (Prueba Docente)",
+    "tema": "Reflexión y evaluación",
+    "subtema": "Reflexión: aplicar un texto científico a un caso nuevo (texto de divulgación científica)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Lea el siguiente texto de divulgación científica y responda la pregunta.\n\n¿POR QUÉ SE ENDURECE EL PAN?\n\nCasi todo el mundo cree que el pan viejo está duro porque se secó. La explicación parece obvia: el pan pierde agua, como una toalla que se deja al sol. Sin embargo, un pan guardado en una bolsa bien cerrada, que apenas pierde humedad, también se endurece en dos o tres días.\n\nLa causa principal está en el almidón, la sustancia que forma la mayor parte de la harina. En el horno, el calor y el agua de la masa desordenan las cadenas de almidón, que se hinchan y se vuelven blandas. Cuando el pan se enfría, esas cadenas empiezan a reorganizarse, poco a poco, en estructuras ordenadas y rígidas, parecidas a pequeños cristales, y retienen entre ellas parte del agua. El pan no pierde esa agua: la esconde. Los químicos llaman retrogradación a este proceso.\n\nDos observaciones caseras lo confirman. La primera: si se calienta en el horno, por unos minutos, un pan del día anterior, este vuelve a ablandarse, porque el calor deshace otra vez el orden de las cadenas. El efecto dura poco, pues al enfriarse el proceso empieza de nuevo. La segunda resulta sorprendente: el pan se endurece más rápido en la nevera que a temperatura ambiente, porque el frío moderado favorece la reorganización del almidón. En el congelador, en cambio, el agua se convierte en hielo, las cadenas casi no pueden moverse y el pan se conserva durante semanas.\n\nNada de esto significa que el pan no se seque. Si se deja destapado, también pierde agua y acaba seco y quebradizo. Pero esa es otra historia, y no la principal.\n\nEn un colegio, el pan del refrigerio que sobra el viernes se reparte el lunes siguiente. De acuerdo con el texto, ¿qué procedimiento permitiría servirlo más blando?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Congelarlo el viernes y, el lunes, calentarlo unos minutos en el horno antes de repartirlo.",
+        "explicacion": "Correcta. Combina las dos observaciones del texto: en el congelador «las cadenas casi no pueden moverse y el pan se conserva», y calentarlo en el horno lo vuelve a ablandar. Como ese efecto dura poco, conviene hacerlo justo antes de servir."
+      },
+      {
+        "id": "B",
+        "texto": "Guardarlo en la nevera desde el viernes, en bolsas bien cerradas, para que no pierda humedad.",
+        "explicacion": "Incorrecta. Es lo peor según el texto: el pan «se endurece más rápido en la nevera que a temperatura ambiente», aunque la bolsa evite que se seque."
+      },
+      {
+        "id": "C",
+        "texto": "Dejarlo en bolsas cerradas a temperatura ambiente, para que la miga conserve toda su agua.",
+        "explicacion": "Incorrecta. La bolsa evita el secado, pero no la retrogradación: el texto dice que el pan en bolsa cerrada «también se endurece en dos o tres días»."
+      },
+      {
+        "id": "D",
+        "texto": "Calentarlo en el horno el viernes por la tarde y guardarlo después en bolsas bien cerradas.",
+        "explicacion": "Incorrecta. Calentarlo sí lo ablanda, pero el efecto «dura poco»: al enfriarse, el proceso empieza de nuevo, de modo que el lunes estaría duro otra vez."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el texto da tres datos que hay que combinar. La nevera acelera el endurecimiento, la bolsa cerrada no lo evita y el congelador lo detiene. El horno ablanda el pan, pero solo por poco tiempo. Por eso lo mejor es congelarlo y calentarlo justo antes de servirlo. Conclusión: A.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

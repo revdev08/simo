@@ -1,0 +1,882 @@
+[
+  {
+    "id": "TC-TER-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Concejo municipal: quórum y mayorías",
+    "subtema": "Quórum para decidir y mayoría de los asistentes en un concejo de 13 miembros",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 22", "art. 29", "art. 30"],
+    "texto_fuente": "los que tengan de veinte mil uno (20.001) a cincuenta mil (50.000) elegirán trece (13) [...] Los Concejos y sus comisiones no podrán abrir sesiones y deliberar con menos de una cuarta parte de sus miembros. Las decisiones sólo podrán tomarse con la asistencia de la mayoría de los integrantes de la respectiva corporación, salvo que la Constitución determine un quórum diferente. [...] En los concejos y sus comisiones permanentes, las decisiones se tomarán por la mayoría de los votos de los asistentes salvo que la Constitución exija expresamente una mayoría especial.",
+    "pregunta": "El secretario del concejo de un municipio de 41.800 habitantes levanta el acta de una sesión plenaria. El concejo está integrado por 13 concejales en total, el número que la ley fija para esa población. Al abrir la sesión contestaron a lista nueve concejales. Más tarde, con siete concejales en el recinto, se votó una proposición: cuatro votos por el sí y tres por el no. Después, con seis concejales en el recinto, se votó otra proposición y los seis votaron por el sí. Ninguna de las dos exigía una mayoría especial. ¿Cómo debe registrar el secretario el resultado de las dos votaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La primera fue aprobada; la segunda no, porque con seis asistentes no se podía decidir.",
+        "explicacion": "Correcta. El concejo tiene 13 miembros (los que fija el art. 22 para esa población), y para decidir se requiere la asistencia de la mayoría de ellos, es decir, 7 (art. 29). En la primera votación había 7 y el sí ganó por mayoría de los asistentes, 4 a 3 (art. 30). En la segunda había solo 6: podían deliberar, pero no decidir."
+      },
+      {
+        "id": "B",
+        "texto": "Ninguna fue aprobada, porque cada una necesitaba siete votos, la mayoría de los miembros.",
+        "explicacion": "Incorrecta. Confunde el quórum con la mayoría. La asistencia de la mayoría de los integrantes (7) es la condición para decidir; con ese quórum, la decisión se toma por mayoría de los votos de los asistentes (art. 30). En la primera votación bastaban 4 votos de 7."
+      },
+      {
+        "id": "C",
+        "texto": "Ambas fueron aprobadas, porque para decidir basta una cuarta parte de los miembros.",
+        "explicacion": "Incorrecta. La cuarta parte de los miembros (4 de 13) es el mínimo para abrir la sesión y deliberar. Para decidir se necesita la asistencia de la mayoría de los integrantes, 7 (art. 29), y en la segunda votación solo había 6."
+      },
+      {
+        "id": "D",
+        "texto": "Ambas fueron aprobadas, porque el quórum se verificó al abrir la sesión con nueve concejales.",
+        "explicacion": "Incorrecta. Las decisiones solo pueden tomarse con la asistencia de la mayoría de los integrantes, así que ese quórum debe existir al votar. Que hubiera nueve al abrir la sesión no suple su falta en la segunda votación, cuando quedaban seis."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el concejo tiene 13 miembros en total, los que fija el art. 22 de la Ley 136 para 41.800 habitantes. Regla: se delibera con una cuarta parte de los miembros, pero las decisiones requieren la asistencia de la mayoría de los integrantes (art. 29) y se adoptan por mayoría de los votos de los asistentes (art. 30). Cálculo: la mayoría de 13 es 7. Primera votación: 7 presentes y 4 votos por el sí, aprobada. Segunda: 6 presentes, sin quórum para decidir. Conclusión: solo la primera fue aprobada.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Proyectos de acuerdo: trámite y sanción",
+    "subtema": "Plazo para pasar al alcalde el proyecto aprobado en segundo debate",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 73 inc. 4", "art. 76"],
+    "texto_fuente": "Será archivado el proyecto que no recibiere aprobación y el aprobado en segundo debate lo remitirá la mesa directiva al alcalde para su sanción. [...] Aprobado en segundo debate un proyecto de acuerdo, pasará dentro de los cinco (5) días hábiles siguientes al alcalde para su sanción.",
+    "pregunta": "El miércoles 2 de diciembre de 2026, en sesiones extraordinarias convocadas por el alcalde, la plenaria del concejo municipal aprobó en segundo debate un proyecto de acuerdo. El secretario del concejo prepara el oficio con el que la mesa directiva remitirá el proyecto al despacho del alcalde. En diciembre de 2026 es festivo el martes 8. ¿Hasta qué fecha puede remitirse el proyecto para cumplir el plazo legal?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hasta el lunes 7 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta cinco días calendario, del 3 al 7 de diciembre. El plazo es de cinco días hábiles, sin sábados, domingos ni festivos."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el jueves 10 de diciembre de 2026.",
+        "explicacion": "Correcta. Los cinco días hábiles siguientes al 2 de diciembre son el 3, el 4, el 7, el 9 y el 10, porque no se cuentan el sábado 5, el domingo 6 ni el festivo del 8 (art. 76)."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el miércoles 9 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta como hábil el martes 8 de diciembre, que es festivo. Sin él, el quinto día hábil es el jueves 10."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el jueves 17 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta diez días hábiles. El art. 76 da cinco días hábiles para pasar al alcalde el proyecto aprobado en segundo debate."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el proyecto se aprobó en segundo debate el miércoles 2 de diciembre de 2026, y el 8 de diciembre es festivo. Regla: el art. 76 de la Ley 136 ordena pasar al alcalde, para su sanción, el proyecto aprobado en segundo debate dentro de los cinco días hábiles siguientes; el art. 73 encarga a la mesa directiva de remitirlo. Cálculo: 3, 4, 7, 9 y 10 de diciembre. El festivo corre el vencimiento del 9 al 10. Conclusión: hasta el jueves 10 de diciembre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-003",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Personero municipal: elección y período",
+    "subtema": "Fechas de inicio y terminación del período institucional del personero",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 170 inc. 1 (modificado por el art. 4 de la Ley 2422 de 2024)"],
+    "texto_fuente": "Los concejos municipales o distritales según el caso, elegirán personeros para periodos institucionales de cuatro (4) años, dentro de los diez (10) primeros días del mes de enero del año en que inicia su periodo constitucional, previo concurso público de méritos, de conformidad con la ley vigente. Los personeros así elegidos, iniciarán su periodo el primero de marzo siguiente a su elección y lo concluirán el último día del mes de febrero del cuarto año.",
+    "pregunta": "La auxiliar administrativa de una personería municipal actualiza la ficha del empleo de personero en el sistema de información de la entidad. El concejo municipal, cuyo período constitucional empezó el 1 de enero de 2024, eligió al personero el 9 de enero de 2024, después del concurso de méritos. ¿Qué período debe registrar la auxiliar en la ficha?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Del 1 de enero de 2024 al 31 de diciembre de 2027.",
+        "explicacion": "Incorrecta. Hace coincidir el período del personero con el del concejo. El personero empieza el 1 de marzo siguiente a su elección y termina el último día de febrero del cuarto año."
+      },
+      {
+        "id": "B",
+        "texto": "Del 1 de marzo de 2024 al 28 de febrero de 2027.",
+        "explicacion": "Incorrecta. Toma 2027 como el cuarto año y deja un período de tres años. El período institucional es de cuatro años: su cuarto año va de marzo de 2027 a febrero de 2028."
+      },
+      {
+        "id": "C",
+        "texto": "Del 1 de marzo de 2024 al 28 de febrero de 2028.",
+        "explicacion": "Incorrecta. Acierta en el inicio y en el año de terminación, pero 2028 es bisiesto: el último día de febrero de 2028 es el 29."
+      },
+      {
+        "id": "D",
+        "texto": "Del 1 de marzo de 2024 al 29 de febrero de 2028.",
+        "explicacion": "Correcta. Elegido en enero de 2024, el personero inicia el 1 de marzo de 2024 y termina el último día de febrero del cuarto año de su período, que en 2028, año bisiesto, es el 29 (art. 170)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el personero fue elegido en enero de 2024. Regla: el art. 170 de la Ley 136 (mod. Ley 2422 de 2024) fija períodos institucionales de cuatro años, que inician el 1 de marzo siguiente a la elección y concluyen el último día de febrero del cuarto año. Cálculo: del 1 de marzo de 2024 al último día de febrero de 2028; como 2028 es bisiesto, ese día es el 29. Conclusión: del 1 de marzo de 2024 al 29 de febrero de 2028.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Personero municipal: faltas temporales",
+    "subtema": "Reemplazo del personero en vacaciones cuando el subalterno no reúne las calidades y el concejo está en receso",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 23", "art. 99 lit. a", "art. 170 inc. 2 (modificado por el art. 4 de la Ley 2422 de 2024)", "art. 172 incs. 2 y 3", "art. 176"],
+    "texto_fuente": "Los concejos de los municipios clasificados en las demás categorías, sesionarán ordinariamente en la cabecera municipal y en el recinto señalado oficialmente para tal efecto, por derecho propio, cuatro meses al año y máximo una vez (1) por día así: febrero, mayo, agosto y noviembre. [...] Son faltas temporales del alcalde: a) Las vacaciones; [...] En los municipios de tercera, cuarta y quinta categorías, título de abogado. [...] Las faltas temporales del personero serán suplidas por el funcionario de la personería que le siga en jerarquía siempre que reúna las mismas calidades del personero. En caso contrario, lo designará el Concejo y si la corporación no estuviere reunida, lo designará el alcalde. En todo caso, deberán acreditar las calidades exigidas en la presente Ley. Compete a la mesa directiva del Concejo lo relacionado con la aceptación de renuncias, concesión de licencias, vacaciones y permisos al personero. [...] Son faltas absolutas y temporales del personero las previstas en la presente Ley para el alcalde en lo que corresponda a la naturaleza de su investidura.",
+    "pregunta": "La auxiliar administrativa de la personería de un municipio de cuarta categoría prepara los documentos de las vacaciones del personero, que irán del 9 al 27 de marzo de 2026 y que ya concedió la mesa directiva del concejo. Después del personero, el empleo de mayor jerarquía en la personería es el de técnico administrativo, que ocupa una tecnóloga en gestión pública sin estudios de derecho. En marzo el concejo no ha sido convocado a sesiones extraordinarias. ¿Quién debe designar a la persona que reemplazará al personero durante las vacaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Nadie: la tecnóloga asume por ocupar el empleo que sigue al del personero.",
+        "explicacion": "Incorrecta. Quien sigue en jerarquía solo suple la falta temporal si reúne las mismas calidades del personero. En un municipio de cuarta categoría se exige título de abogado (art. 170), y la tecnóloga no lo tiene."
+      },
+      {
+        "id": "B",
+        "texto": "La mesa directiva del concejo, que es la que concede las vacaciones al personero.",
+        "explicacion": "Incorrecta. La mesa directiva concede las vacaciones, licencias y permisos del personero, pero la designación de quien lo reemplaza corresponde al concejo o, si no está reunido, al alcalde (art. 172)."
+      },
+      {
+        "id": "C",
+        "texto": "El alcalde, porque la tecnóloga no tiene las calidades y el concejo está en receso.",
+        "explicacion": "Correcta. Las vacaciones son falta temporal (arts. 99 y 176). Como la tecnóloga no reúne las calidades (título de abogado en cuarta categoría), la designación corresponde al concejo; pero en cuarta categoría el concejo solo sesiona en febrero, mayo, agosto y noviembre, así que en marzo la hace el alcalde (arts. 23 y 172)."
+      },
+      {
+        "id": "D",
+        "texto": "El concejo en pleno, que en marzo de 2026 está en su primer período ordinario.",
+        "explicacion": "Incorrecta. El período ordinario de marzo y abril es de los concejos de categorías especial, primera y segunda. En cuarta categoría el concejo sesiona en febrero, mayo, agosto y noviembre, de modo que en marzo no está reunido."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: municipio de cuarta categoría, vacaciones en marzo de 2026 y una subalterna sin título de abogado. Regla: las vacaciones son falta temporal del personero (arts. 99 y 176 de la Ley 136). La suple el funcionario que sigue en jerarquía si reúne las calidades; si no, la designación la hace el concejo, y si no está reunido, el alcalde (art. 172). En cuarta categoría se exige título de abogado (art. 170) y el concejo sesiona en febrero, mayo, agosto y noviembre (art. 23). Conclusión: designa el alcalde.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-005",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Alcalde: comisiones y permisos",
+    "subtema": "Autorización para salir del país cuando el concejo no está en sesiones",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 23", "art. 112 incs. 1 y 3 (inc. 3 adicionado por el art. 7 de la Ley 177 de 1994)", "art. 113"],
+    "texto_fuente": "Los concejos de los municipios clasificados en las demás categorías, sesionarán ordinariamente en la cabecera municipal y en el recinto señalado oficialmente para tal efecto, por derecho propio, cuatro meses al año y máximo una vez (1) por día así: febrero, mayo, agosto y noviembre. [...] El alcalde para salir del país deberá contar con la autorización del Concejo Municipal y presentarle un informe previo sobre la comisión que se proponga cumplir en el exterior. [...] En caso de no hallarse en sesiones el Concejo Municipal, le corresponderá al Gobernador conceder la autorización de salida del país. [...] Las comisiones fuera del país no podrán ser superiores a diez (10) días, prorrogables, previa justificación por un lapso no superior al mismo.",
+    "pregunta": "El técnico administrativo de la secretaría general de la alcaldía de un municipio de quinta categoría organiza los trámites de una comisión oficial del alcalde a un encuentro de ciudades hermanas en Quito (Ecuador), del 15 al 22 de junio de 2026. El concejo no ha sido convocado a sesiones extraordinarias. ¿Ante quién debe tramitarse la autorización para que el alcalde salga del país?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ante el gobernador, porque en esas fechas el concejo de ese municipio está en receso.",
+        "explicacion": "Correcta. El alcalde necesita autorización del concejo para salir del país, pero si el concejo no está en sesiones la concede el gobernador (art. 112). En quinta categoría el concejo sesiona ordinariamente en febrero, mayo, agosto y noviembre (art. 23), y no fue convocado a extraordinarias."
+      },
+      {
+        "id": "B",
+        "texto": "Ante el concejo, que en junio de 2026 está en su segundo período de sesiones ordinarias.",
+        "explicacion": "Incorrecta. El período ordinario de junio y julio es el de los concejos de categorías especial, primera y segunda. En quinta categoría el concejo no sesiona en junio por derecho propio."
+      },
+      {
+        "id": "C",
+        "texto": "Ante ninguna autoridad: como la comisión dura menos de diez días, basta un informe previo.",
+        "explicacion": "Incorrecta. Los diez días son la duración máxima de una comisión en el exterior (art. 113), no una excepción a la autorización. Toda salida del país requiere autorización e informe previo (art. 112)."
+      },
+      {
+        "id": "D",
+        "texto": "Ante la mesa directiva del concejo, que resuelve estas solicitudes mientras no hay sesiones.",
+        "explicacion": "Incorrecta. La ley no atribuye esta autorización a la mesa directiva. Durante el receso del concejo, la concede el gobernador (art. 112)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: municipio de quinta categoría, viaje del 15 al 22 de junio de 2026 y concejo sin sesiones extraordinarias. Regla: para salir del país el alcalde necesita autorización del concejo, y si este no está en sesiones la concede el gobernador (art. 112 de la Ley 136, inciso adicionado por la Ley 177 de 1994); en las categorías tercera a sexta el concejo sesiona en febrero, mayo, agosto y noviembre (art. 23). La comisión de 8 días respeta el máximo de 10 (art. 113). Conclusión: la autorización se tramita ante el gobernador.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Alcalde: faltas temporales y encargos",
+    "subtema": "Plazo para informar al gobernador el encargo de la alcaldía",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 106 inc. 2", "art. 114"],
+    "texto_fuente": "Si la falta fuere temporal, excepto la suspensión, el alcalde encargará de sus funciones a uno de los secretarios o quien haga sus veces. [...] Para efectos del mantenimiento del orden público, en todos los casos en que el alcalde encargue de su empleo a otro funcionario, por el término que sea, está en la obligación de informar al gobernador respectivo y al Ministro de Gobierno, a más tardar dentro de los dos días hábiles siguientes al encargo.",
+    "pregunta": "El viernes 13 de noviembre de 2026, el alcalde firmó un decreto por el que encarga de la alcaldía, desde ese mismo día, a la secretaria de Planeación, mientras disfruta un permiso de tres días que le concedió el gobernador. La auxiliar administrativa de la secretaría general prepara las comunicaciones que la ley exige por ese encargo. El lunes 16 de noviembre de 2026 es festivo. ¿Hasta qué fecha debe informarse el encargo al gobernador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No debe informarse, porque el encargo es de solo tres días.",
+        "explicacion": "Incorrecta. La obligación de informar existe en todos los casos en que el alcalde encargue de su empleo a otro funcionario, por el término que sea (art. 114)."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el miércoles 18 de noviembre de 2026.",
+        "explicacion": "Correcta. El encargo debe informarse al gobernador a más tardar dentro de los dos días hábiles siguientes (art. 114). Después del viernes 13 vienen el fin de semana y el festivo del lunes 16, así que los dos días hábiles son el martes 17 y el miércoles 18."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el martes 17 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta como hábil el lunes 16 de noviembre, que es festivo. Sin él, el segundo día hábil es el miércoles 18."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el lunes 23 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Cuenta cinco días hábiles. Para informar un encargo, la ley da dos días hábiles."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el encargo empezó el viernes 13 de noviembre de 2026 y el lunes 16 es festivo. Regla: el art. 114 de la Ley 136 obliga al alcalde a informar al gobernador todo encargo de su empleo, por el término que sea, a más tardar dentro de los dos días hábiles siguientes. Cálculo: sin el fin de semana ni el festivo, los dos días hábiles son el martes 17 y el miércoles 18. El festivo corre el vencimiento un día. Conclusión: hasta el miércoles 18 de noviembre de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Comunas y corregimientos",
+    "subtema": "Designación de corregidores",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 118 inc. 4 (modificado por el art. 1 de la Ley 1681 de 2013)"],
+    "texto_fuente": "Los alcaldes designarán a los corregidores de ternas presentadas por la respectiva Junta Administradora Local, con quienes coordinarán sus tareas de desarrollo comunitario.",
+    "pregunta": "El alcalde le pide al auxiliar administrativo de la secretaría general que proyecte el decreto para designar como corregidor de un corregimiento a un líder comunal de su confianza. El corregimiento tiene junta administradora local (JAL). ¿Qué debe advertirle el auxiliar antes de proyectar el decreto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el cargo lo provee el concejo, al que debe enviarse la hoja de vida del líder.",
+        "explicacion": "Incorrecta. El concejo no elige a los corregidores. Los designa el alcalde, de ternas presentadas por la JAL (art. 118)."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede proyectarlo, porque el corregidor es de libre nombramiento del alcalde.",
+        "explicacion": "Incorrecta. El alcalde designa al corregidor, pero no libremente: debe escogerlo de la terna que presente la JAL del corregimiento (art. 118)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la JAL debe elegir directamente al corregidor y el alcalde solo le da posesión.",
+        "explicacion": "Incorrecta. La JAL no elige al corregidor: su papel es presentar la terna, y la designación la hace el alcalde (art. 118)."
+      },
+      {
+        "id": "D",
+        "texto": "Que primero debe pedirse a la JAL una terna y escoger a uno de esos tres nombres.",
+        "explicacion": "Correcta. Los alcaldes designan a los corregidores de ternas presentadas por la respectiva junta administradora local (art. 118, mod. Ley 1681 de 2013). Sin terna, el decreto no puede proyectarse."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el alcalde quiere nombrar a una persona escogida por él y el corregimiento tiene JAL. Regla: el art. 118 de la Ley 136 (mod. Ley 1681 de 2013) dispone que los alcaldes designan a los corregidores de ternas presentadas por la respectiva JAL. Conclusión: antes del decreto debe pedirse la terna a la JAL, y el designado debe ser uno de sus integrantes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Alcalde: relaciones con el gobernador",
+    "subtema": "Actos que deben enviarse al gobernador dentro de los cinco días siguientes",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 82", "art. 91 lit. a num. 7 (modificado por el art. 29 de la Ley 1551 de 2012)"],
+    "texto_fuente": "Dentro de los cinco (5) días siguientes a la sanción, el alcalde enviará copia del acuerdo al gobernador del departamento para que cumpla con la atribución del numeral diez (10) del artículo 305 de la Constitución. [...] 7. Enviar al gobernador, dentro de los cinco (5) días siguientes a su sanción o expedición los acuerdos del Concejo, los decretos de carácter general que expida, los actos mediante los cuales se reconozca y decrete honorarios a los concejales y los demás de carácter particular que el gobernador le solicite.",
+    "pregunta": "La auxiliar administrativa de la secretaría general de una alcaldía organiza los envíos a la gobernación. Esta semana el alcalde sancionó un acuerdo que modifica las tarifas del impuesto de industria y comercio, y expidió tres decretos: uno fija el horario de cargue y descargue en el centro para todos los vehículos, otro nombra a un profesional en la secretaría de Hacienda y otro reconoce y ordena pagar los honorarios de los concejales por las sesiones de octubre. La gobernación no ha pedido ningún documento. ¿Qué debe enviar a la gobernación dentro de los cinco días siguientes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el acuerdo, porque la revisión del gobernador recae sobre los actos del concejo.",
+        "explicacion": "Incorrecta. Además de los acuerdos, deben enviarse los decretos de carácter general y los actos que reconocen honorarios a los concejales (art. 91, lit. a, num. 7)."
+      },
+      {
+        "id": "B",
+        "texto": "El acuerdo y el decreto de horarios, que son los únicos actos de alcance general.",
+        "explicacion": "Incorrecta. Omite el decreto de honorarios de los concejales, que la ley ordena enviar aunque sea un acto particular."
+      },
+      {
+        "id": "C",
+        "texto": "El acuerdo y los decretos de horarios y de honorarios; el nombramiento, si lo piden.",
+        "explicacion": "Correcta. Deben enviarse, dentro de los cinco días siguientes, los acuerdos, los decretos de carácter general y los actos que reconocen y decretan honorarios a los concejales. Los demás actos particulares, como el nombramiento, solo se envían si el gobernador los solicita (art. 91, lit. a, num. 7)."
+      },
+      {
+        "id": "D",
+        "texto": "Los cuatro, porque el gobernador revisa todos los actos que expide el alcalde.",
+        "explicacion": "Incorrecta. Los actos de carácter particular distintos del reconocimiento de honorarios solo se envían si el gobernador los solicita."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la gobernación no pidió ningún acto, y entre los expedidos hay un acuerdo, un decreto general, un nombramiento y un reconocimiento de honorarios. Regla: el art. 91, lit. a, num. 7 de la Ley 136 (mod. Ley 1551 de 2012) ordena enviar al gobernador, dentro de los cinco días siguientes, los acuerdos, los decretos de carácter general, los actos que reconocen y decretan honorarios a los concejales y los demás actos particulares que el gobernador solicite (ver también el art. 82). Conclusión: se envían el acuerdo, el decreto de horarios y el de honorarios.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Concejo municipal: períodos de sesiones",
+    "subtema": "Sesiones ordinarias, prórroga y sesiones extraordinarias en municipios de tercera a sexta categoría",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 23 inc. 2 y pars. 1 y 2"],
+    "texto_fuente": "Los concejos de los municipios clasificados en las demás categorías, sesionarán ordinariamente en la cabecera municipal y en el recinto señalado oficialmente para tal efecto, por derecho propio, cuatro meses al año y máximo una vez (1) por día así: febrero, mayo, agosto y noviembre. [...] PARÁGRAFO 1o. Cada período ordinario podrá ser prorrogado por diez días calendario más, a voluntad del respectivo Concejo. PARÁGRAFO 2o. Los alcaldes podrán convocarlos a sesiones extraordinarias en oportunidades diferentes, para que se ocupen exclusivamente de los asuntos que se sometan a su consideración.",
+    "pregunta": "El secretario del concejo de un municipio de tercera categoría organiza la agenda de la corporación. El alcalde convocó al concejo a sesiones del 16 al 20 de junio de 2026 para estudiar un proyecto de acuerdo sobre el plan de movilidad. Un grupo de concejales quiere aprovechar esas sesiones para debatir también una reforma del reglamento interno. ¿Qué puede tratar el concejo en esas fechas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El proyecto y la reforma, porque en junio el concejo sesiona por derecho propio en período ordinario.",
+        "explicacion": "Incorrecta. Junio es período ordinario solo para los concejos de categorías especial, primera y segunda. En tercera categoría, el concejo sesiona por derecho propio en febrero, mayo, agosto y noviembre."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el proyecto de movilidad, que es el asunto para el cual el alcalde lo convocó.",
+        "explicacion": "Correcta. En tercera categoría junio no es mes de sesiones ordinarias, así que el concejo se reúne en sesiones extraordinarias convocadas por el alcalde, en las que se ocupa exclusivamente de los asuntos que este somete a su consideración (art. 23, par. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Los dos asuntos, si el concejo prorroga hasta esas fechas su período ordinario de mayo.",
+        "explicacion": "Incorrecta. Cada período ordinario solo puede prorrogarse diez días calendario (art. 23, par. 1). El de mayo llegaría hasta el 10 de junio, no hasta el 16."
+      },
+      {
+        "id": "D",
+        "texto": "Solo el proyecto, salvo que la mesa directiva agregue la reforma al orden del día de esas sesiones.",
+        "explicacion": "Incorrecta. En sesiones extraordinarias el concejo se ocupa exclusivamente de los asuntos que el alcalde somete a su consideración (art. 23, par. 2). La mesa directiva no puede agregar otros al orden del día."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: municipio de tercera categoría y sesiones de junio convocadas por el alcalde para un solo proyecto. Regla: el art. 23 de la Ley 136 fija para las categorías tercera a sexta sesiones ordinarias en febrero, mayo, agosto y noviembre, prorrogables diez días calendario (par. 1); fuera de ellas, el alcalde puede convocar a extraordinarias para que el concejo se ocupe exclusivamente de los asuntos que le someta (par. 2). Cálculo: la prórroga de mayo llegaría al 10 de junio. Conclusión: del 16 al 20 de junio solo puede tratarse el proyecto de movilidad.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-010",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Personero municipal: funciones",
+    "subtema": "Información que no puede negarse a la personería",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 178 num. 10", "art. 179"],
+    "texto_fuente": "10. Exigir a los funcionarios públicos municipales la información necesaria y oportuna para el cumplimiento de sus funciones, sin que pueda oponérsele reserva alguna, salvo la excepción prevista por la Constitución o la ley. [...] Todas las autoridades públicas deberán suministrar la información necesaria para el efectivo cumplimiento de las funciones del personero, sin que le sea posible oponer reserva alguna. La negativa o negligencia de un servidor público a colaborar o que impida el desarrollo de las funciones del personero constituirá causal de mala conducta sancionada por la destitución del cargo.",
+    "pregunta": "Para atender la queja de una comunidad, la personería municipal pidió a la secretaría de Obras los informes de interventoría de un contrato de pavimentación. La secretaría respondió que son documentos internos y que, si los necesita, la personería debe presentar un derecho de petición como cualquier ciudadano. Ninguna ley les da carácter reservado a esos informes. El personero le pide a la auxiliar administrativa que proyecte el oficio de respuesta. ¿Qué debe sostener el oficio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la personería presentará el derecho de petición y esperará la respuesta en el término legal.",
+        "explicacion": "Incorrecta. La personería no está en la posición de un particular: la ley le permite exigir la información necesaria para sus funciones y obliga a las autoridades a suministrarla (arts. 178, num. 10, y 179)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la secretaría debe entregarlos, salvo que el secretario de Obras certifique por escrito su reserva.",
+        "explicacion": "Incorrecta. Al personero solo puede oponérsele la reserva prevista en la Constitución o la ley (art. 178, num. 10). Una certificación del secretario no crea reserva, y ninguna ley se la da a estos informes."
+      },
+      {
+        "id": "C",
+        "texto": "Que la secretaría debe entregarlos y que, si se niega, la personería deberá pedir a un juez que lo ordene.",
+        "explicacion": "Incorrecta. Acierta en que la secretaría debe entregarlos, pero no hace falta orden judicial: la ley obliga a suministrar la información al personero y convierte la negativa en causal de mala conducta (art. 179)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la secretaría está obligada a entregarlos y que negarse es causal de mala conducta.",
+        "explicacion": "Correcta. El personero puede exigir a los funcionarios municipales la información necesaria para sus funciones sin que pueda oponérsele reserva, salvo la constitucional o legal (art. 178, num. 10), y la negativa del servidor es causal de mala conducta (art. 179)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la secretaría negó informes que no tienen reserva legal, alegando que son documentos internos. Regla: el personero puede exigir a los funcionarios municipales la información necesaria para sus funciones sin que se le oponga reserva, salvo la prevista en la Constitución o la ley (art. 178, num. 10, de la Ley 136), y la negativa del servidor es causal de mala conducta (art. 179). Conclusión: el oficio debe exigir la entrega de los informes.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Categorización de municipios",
+    "subtema": "Ingresos superiores al rango de la población y límite de dos categorías de un año a otro",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 6 nums. 3 a 5 y pars. 1, 2 y 3 (modificado por el art. 153 del Decreto Ley 2106 de 2019)"],
+    "texto_fuente": "Ingresos corrientes de libre destinación anuales: Superiores a cincuenta mil (50.000) y hasta de cien mil (100.000) salarios mínimos legales mensuales vigentes. [...] 4. TERCERA CATEGORÍA Población: Con población comprendida entre treinta mil uno (30.001) y cincuenta mil (50.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a treinta mil (30.000) y hasta de cincuenta mil (50.000) salarios mínimos legales mensuales vigentes. 5. CUARTA CATEGORÍA Población: Con población comprendida entre veinte mil uno (20.001) y treinta mil (30.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a veinticinco mil (25.000) y de hasta de treinta mil (30.000) salarios mínimos legales mensuales vigentes. [...] PARÁGRAFO 1o. Los municipios que, de acuerdo con su población, deban clasificarse en una determinada categoría, pero superen el monto de ingresos corrientes de libre destinación anuales señalados en el presente artículo para la misma, se clasificarán en la categoría inmediatamente superior. [...] Ningún municipio podrá aumentar o descender más de dos categorías entre un año y el siguiente. [...] El salario mínimo legal mensual que servirá de base para la conversión de los ingresos, será el que corresponda al mismo año de la vigencia de los ingresos corrientes de libre destinación determinados en el presente artículo.",
+    "pregunta": "La profesional de la secretaría de Planeación de un municipio proyecta el decreto de categorización para 2027. Datos certificados: población de 2025, 26.500 habitantes; ingresos corrientes de libre destinación (ICLD) recaudados en 2025, $102.500 millones, después de que una nueva planta industrial multiplicó el recaudo de industria y comercio. El salario mínimo mensual de 2025 fue de $1.423.500. Los gastos de funcionamiento no superaron el límite legal, y en 2026 el municipio está en sexta categoría. ¿En qué categoría debe quedar para 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Segunda, porque sus ICLD equivalen a unos 72.006 salarios mínimos, rango de esa categoría.",
+        "explicacion": "Incorrecta. Clasifica solo por ingresos. Cuando los ICLD superan el rango de la categoría que indica la población, el municipio pasa solo a la inmediatamente superior (par. 1), no a la que señalan los ingresos."
+      },
+      {
+        "id": "B",
+        "texto": "Tercera, la inmediatamente superior a la cuarta, que es la que indica su población.",
+        "explicacion": "Incorrecta. Aplica bien el par. 1 (de cuarta por población a tercera por ingresos), pero olvida que el municipio está en sexta en 2026 y que ningún municipio puede subir más de dos categorías de un año al siguiente (par. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Cuarta, porque aunque los datos la llevarían a tercera, no puede subir más de dos categorías.",
+        "explicacion": "Correcta. Por población le corresponde cuarta, y como sus ICLD (unos 72.006 salarios mínimos de 2025) superan el rango de cuarta, pasaría a tercera (par. 1). Pero viene de sexta, y subir a tercera serían tres categorías; el máximo son dos (par. 2), así que queda en cuarta."
+      },
+      {
+        "id": "D",
+        "texto": "Quinta, porque un municipio solo puede ascender una categoría de un año para el siguiente.",
+        "explicacion": "Incorrecta. El límite legal es de dos categorías entre un año y el siguiente, no de una. Desde sexta puede llegar hasta cuarta."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 26.500 habitantes (rango de cuarta), ICLD de 2025 por $102.500 millones y categoría sexta en 2026. Regla: el art. 6 de la Ley 136 (mod. Decreto Ley 2106 de 2019) convierte los ICLD con el salario mínimo del mismo año; si superan el rango de la categoría de la población, el municipio pasa a la inmediatamente superior (par. 1), y ningún municipio puede subir más de dos categorías de un año a otro (par. 2). Cálculo: $102.500 millones ÷ $1.423.500 ≈ 72.006 salarios mínimos; de cuarta pasaría a tercera, pero desde sexta solo puede subir hasta cuarta. Conclusión: cuarta categoría.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Categorización de municipios",
+    "subtema": "Conversión de los ICLD con el salario mínimo del mismo año e ingresos inferiores al rango de la población",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 6 nums. 4 a 6 y pars. 1, 2 y 3 (modificado por el art. 153 del Decreto Ley 2106 de 2019)"],
+    "texto_fuente": "4. TERCERA CATEGORÍA Población: Con población comprendida entre treinta mil uno (30.001) y cincuenta mil (50.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a treinta mil (30.000) y hasta de cincuenta mil (50.000) salarios mínimos legales mensuales vigentes. 5. CUARTA CATEGORÍA Población: Con población comprendida entre veinte mil uno (20.001) y treinta mil (30.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a veinticinco mil (25.000) y de hasta de treinta mil (30.000) salarios mínimos legales mensuales vigentes. [...] Ingresos corrientes de libre destinación anuales: Superiores a quince mil (15.000) y hasta veinticinco mil (25.000) salarios mínimos legales mensuales. [...] Los municipios cuya población corresponda a una categoría determinada, pero cuyos ingresos corrientes de libre destinación anuales no alcancen el monto señalado en el presente artículo para la misma, se clasificarán en la categoría correspondiente a sus ingresos corrientes de libre destinación anuales. [...] Ningún municipio podrá aumentar o descender más de dos categorías entre un año y el siguiente. [...] El salario mínimo legal mensual que servirá de base para la conversión de los ingresos, será el que corresponda al mismo año de la vigencia de los ingresos corrientes de libre destinación determinados en el presente artículo.",
+    "pregunta": "El profesional de la secretaría de Hacienda de un municipio prepara el estudio para el decreto de categorización de 2027. La Contraloría General certificó ingresos corrientes de libre destinación (ICLD) recaudados en 2025 por $35.000 millones y gastos de funcionamiento equivalentes al 68 % de esos ingresos; el DANE certificó una población de 34.000 habitantes para 2025. El salario mínimo mensual fue de $1.300.000 en 2024 y de $1.423.500 en 2025. En 2026 el municipio está en tercera categoría. ¿Qué categoría corresponde para 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Quinta: con el salario mínimo de 2025, los ICLD equivalen a 24.587 salarios mínimos.",
+        "explicacion": "Correcta. Los ICLD se convierten con el salario mínimo del mismo año de su vigencia: $35.000 millones ÷ $1.423.500 ≈ 24.587. No alcanzan los más de 30.000 de la tercera (la de su población) ni los más de 25.000 de la cuarta, así que el municipio queda en la categoría de sus ingresos, quinta (par. 1). Baja dos categorías, el máximo permitido (par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Cuarta: con el salario mínimo de 2024, los ICLD equivalen a 26.923 salarios mínimos.",
+        "explicacion": "Incorrecta. Convierte con el salario mínimo de 2024. La ley ordena usar el del mismo año de la vigencia de los ICLD, 2025, y con él la cifra es 24.587, rango de quinta."
+      },
+      {
+        "id": "C",
+        "texto": "Tercera: la fija la población, y los ICLD solo cuentan cuando superan el rango de esta.",
+        "explicacion": "Incorrecta. Si los ICLD no alcanzan el monto de la categoría que indica la población, el municipio se clasifica en la categoría que corresponde a sus ingresos (par. 1, inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Cuarta: aunque los ICLD la ubicarían en quinta, solo puede bajar una categoría por año.",
+        "explicacion": "Incorrecta. El límite es de dos categorías entre un año y el siguiente, no de una. De tercera a quinta hay dos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: 34.000 habitantes (rango de tercera), ICLD de 2025 por $35.000 millones y salario mínimo de 2025 de $1.423.500. Regla: el art. 6 de la Ley 136 (mod. Decreto Ley 2106 de 2019) convierte los ICLD con el salario mínimo del mismo año de su vigencia; si no alcanzan el monto de la categoría de la población, el municipio queda en la de sus ingresos (par. 1), y no puede bajar más de dos categorías por año (par. 2). Cálculo: 35.000 millones ÷ 1.423.500 ≈ 24.587 salarios mínimos, rango de quinta (más de 15.000 y hasta 25.000). De tercera a quinta hay dos categorías. Conclusión: quinta.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Categorización y límites de gasto (Ley 617 de 2000)",
+    "subtema": "Reclasificación por exceder el límite de gastos de funcionamiento",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994 y Ley 617 de 2000",
+    "articulos": ["Ley 136 de 1994, art. 6 num. 3 y par. 2 (modificado por el art. 153 del Decreto Ley 2106 de 2019)", "Ley 617 de 2000, art. 6"],
+    "texto_fuente": "3. SEGUNDA CATEGORÍA Población: Con población comprendida entre cincuenta mil uno (50.001) y cien mil (100.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a cincuenta mil (50.000) y hasta de cien mil (100.000) salarios mínimos legales mensuales vigentes. [...] PARÁGRAFO 2o. Sin perjuicio de la categoría que corresponda según los criterios señalados en el presente artículo, cuando un distrito o municipio destine a gastos de funcionamiento porcentajes superiores a los límites que establece la ley, se reclasificará en la categoría inmediatamente inferior. [...] Durante cada vigencia fiscal los gastos de funcionamiento de los distritos y municipios no podrán superar como proporción de sus ingresos corrientes de libre destinación, los siguientes límites: CategoríaLímite Especial50% Primera65% Segunda y tercera70% Cuarta, quinta y sexta80%",
+    "pregunta": "El asesor de la secretaría de Hacienda de un municipio de 64.000 habitantes, que en 2026 está en segunda categoría, analiza las certificaciones para el decreto de categorización de 2027. La Contraloría General certificó ingresos corrientes de libre destinación (ICLD) de 2025 por $110.000 millones, equivalentes a 77.274 salarios mínimos de ese año, y gastos de funcionamiento de 2025 por $80.740 millones. ¿Qué categoría debe recomendar para 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Segunda, porque sus gastos son el 73,4 % de los ICLD, por debajo del límite legal del 80 %.",
+        "explicacion": "Incorrecta. El 80 % es el límite de las categorías cuarta, quinta y sexta. Para segunda y tercera es el 70 % (art. 6 de la Ley 617), y el municipio lo superó."
+      },
+      {
+        "id": "B",
+        "texto": "Tercera, porque sus gastos son el 73,4 % de los ICLD y superan el límite de su categoría.",
+        "explicacion": "Correcta. Por población (64.000) e ingresos (77.274 salarios mínimos) le corresponde segunda, cuyo límite de gastos de funcionamiento es el 70 % de los ICLD. Gastó el 73,4 % ($80.740 ÷ $110.000 millones), así que se reclasifica en la categoría inmediatamente inferior: tercera."
+      },
+      {
+        "id": "C",
+        "texto": "Segunda, porque exceder el límite de gastos solo obliga a adoptar un programa de saneamiento.",
+        "explicacion": "Incorrecta. Cuando un municipio destina a funcionamiento porcentajes superiores a los límites legales, la ley ordena reclasificarlo en la categoría inmediatamente inferior (art. 6, par. 2, de la Ley 136), sin perjuicio de otras medidas."
+      },
+      {
+        "id": "D",
+        "texto": "Cuarta, la primera categoría cuyo límite de gastos, del 80 %, cubre el 73,4 % registrado.",
+        "explicacion": "Incorrecta. La reclasificación es a la categoría inmediatamente inferior, no a aquella cuyo límite cubra el gasto. De segunda baja a tercera."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: municipio de segunda categoría por población e ingresos, con gastos de funcionamiento de $80.740 millones frente a ICLD de $110.000 millones. Regla: el art. 6 de la Ley 617 fija para segunda y tercera categoría un límite del 70 % de los ICLD, y el par. 2 del art. 6 de la Ley 136 (mod. Decreto Ley 2106 de 2019) reclasifica en la categoría inmediatamente inferior al municipio que lo supere. Cálculo: 80.740 ÷ 110.000 = 73,4 %, más que el 70 %. Conclusión: tercera categoría.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Categorización de municipios",
+    "subtema": "Municipios de frontera con más de 70.000 habitantes",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 6 nums. 3 y 6 y pars. 1 y 4 (modificado por el art. 153 del Decreto Ley 2106 de 2019)"],
+    "texto_fuente": "3. SEGUNDA CATEGORÍA Población: Con población comprendida entre cincuenta mil uno (50.001) y cien mil (100.000) habitantes. [...] 6. QUINTA CATEGORÍA Población: Con población comprendida entre diez mil uno (10.001) y veinte mil (20.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a quince mil (15.000) y hasta veinticinco mil (25.000) salarios mínimos legales mensuales. [...] Los municipios cuya población corresponda a una categoría determinada, pero cuyos ingresos corrientes de libre destinación anuales no alcancen el monto señalado en el presente artículo para la misma, se clasificarán en la categoría correspondiente a sus ingresos corrientes de libre destinación anuales. [...] PARÁGRAFO 4o. Los municipios de frontera con población superior a setenta mil (70.000) habitantes, por su condición estratégica, se clasificarán como mínimo en la cuarta categoría. En ningún caso los gastos de funcionamiento de dichos municipios podrán superar el ochenta por ciento de sus ingresos corrientes de libre destinación.",
+    "pregunta": "La profesional de la secretaría de Planeación de un municipio fronterizo, que no es capital de departamento, proyecta el decreto de categorización de 2027. El DANE certificó 74.500 habitantes para 2025. La Contraloría General certificó ingresos corrientes de libre destinación (ICLD) de 2025 por $25.000 millones, equivalentes a 17.562 salarios mínimos de ese año, y gastos de funcionamiento del 76 % de esos ingresos. En 2026 el municipio está en cuarta categoría. ¿Qué categoría corresponde para 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Segunda, la que corresponde a su población, por tratarse de un municipio de frontera.",
+        "explicacion": "Incorrecta. La condición de frontera no conserva la categoría de la población; solo fija un piso: cuarta categoría para los municipios de frontera con más de 70.000 habitantes (par. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Quinta, porque sus ICLD no alcanzan el monto exigido para la categoría de su población.",
+        "explicacion": "Incorrecta. Es lo que resultaría del par. 1 (sus ICLD, 17.562 salarios mínimos, son del rango de quinta), pero el par. 4 ordena clasificar como mínimo en cuarta a los municipios de frontera con más de 70.000 habitantes."
+      },
+      {
+        "id": "C",
+        "texto": "Tercera, porque un municipio fronterizo de ese tamaño no puede quedar por debajo de ella.",
+        "explicacion": "Incorrecta. El piso legal para los municipios de frontera con más de 70.000 habitantes es la cuarta categoría, no la tercera."
+      },
+      {
+        "id": "D",
+        "texto": "Cuarta, el mínimo legal por su población y ubicación, aunque sus ICLD sean de quinta.",
+        "explicacion": "Correcta. Por sus ICLD (17.562 salarios mínimos) quedaría en quinta (par. 1), pero los municipios de frontera con más de 70.000 habitantes se clasifican como mínimo en cuarta (par. 4). Sus gastos (76 %) no superan el 80 % que la misma norma les fija como tope."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: municipio de frontera con 74.500 habitantes e ICLD de 17.562 salarios mínimos. Regla: por el par. 1 del art. 6 de la Ley 136 (mod. Decreto Ley 2106 de 2019), si los ICLD no alcanzan el monto de la categoría de la población, el municipio queda en la de sus ingresos (quinta); pero el par. 4 clasifica como mínimo en cuarta a los municipios de frontera con más de 70.000 habitantes, cuyos gastos de funcionamiento no pueden superar el 80 % de los ICLD. Conclusión: cuarta categoría.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Alcalde: faltas absolutas",
+    "subtema": "Incapacidad superior a 180 días y elección del reemplazo cuando faltan más de 18 meses",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994 y Constitución Política de 1991",
+    "articulos": ["Ley 136 de 1994, art. 98 lit. h", "Ley 136 de 1994, art. 99 lit. d", "Constitución Política, art. 314 inc. 2 (modificado por el art. 3 del Acto Legislativo 2 de 2002)"],
+    "texto_fuente": "Son faltas absolutas del alcalde: [...] h) La incapacidad por enfermedad superior a 180 días. [...] d) La incapacidad física transitoria; [...] Siempre que se presente falta absoluta a más de dieciocho (18) meses de la terminación del período, se elegirá alcalde para el tiempo que reste. En caso de que faltare menos de dieciocho (18) meses, el gobernador designará un alcalde para lo que reste del período, respetando el partido, grupo político o coalición por el cual fue inscrito el alcalde elegido.",
+    "pregunta": "El alcalde de un municipio fue elegido para el período 2024-2027, que termina el 31 de diciembre de 2027. Está incapacitado por enfermedad desde el 3 de noviembre de 2025 y, mientras tanto, el secretario de Gobierno ha estado encargado de la alcaldía. El 4 de mayo de 2026 la EPS certificó que la incapacidad continúa y ya supera los 180 días. El alcalde no ha renunciado. La asesora jurídica de la alcaldía debe explicar al concejo cómo se proveerá el cargo. ¿Qué debe explicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la falta sigue siendo temporal y el secretario de Gobierno seguirá encargado hasta que el alcalde se recupere.",
+        "explicacion": "Incorrecta. La incapacidad física transitoria es falta temporal, pero la incapacidad por enfermedad superior a 180 días es falta absoluta (art. 98, lit. h)."
+      },
+      {
+        "id": "B",
+        "texto": "Que hay falta absoluta y el gobernador designará alcalde, de terna del partido, para lo que resta del período.",
+        "explicacion": "Incorrecta. La designación del gobernador procede cuando faltan menos de 18 meses para terminar el período. De mayo de 2026 al 31 de diciembre de 2027 faltan más de 19 meses, así que debe elegirse alcalde (art. 314 de la Constitución)."
+      },
+      {
+        "id": "C",
+        "texto": "Que hay falta absoluta y debe convocarse a elección de alcalde para el tiempo que resta del período.",
+        "explicacion": "Correcta. La incapacidad por enfermedad superior a 180 días es falta absoluta (art. 98, lit. h). Como se produjo a comienzos de mayo de 2026, a más de 18 meses del 31 de diciembre de 2027, se elige alcalde para el tiempo que reste (art. 314 de la Constitución)."
+      },
+      {
+        "id": "D",
+        "texto": "Que hay falta absoluta y el secretario de Gobierno asumirá como alcalde hasta el 31 de diciembre de 2027.",
+        "explicacion": "Incorrecta. El encargo de un secretario es la solución para las faltas temporales. Ante una falta absoluta, el cargo se provee por elección o, si faltan menos de 18 meses, por designación del gobernador."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la incapacidad superó los 180 días a comienzos de mayo de 2026 y el período termina el 31 de diciembre de 2027. Regla: el art. 98, lit. h, de la Ley 136 hace de la incapacidad por enfermedad superior a 180 días una falta absoluta, y el art. 314 de la Constitución (mod. A. L. 2 de 2002) ordena elegir alcalde para el tiempo que reste si la falta se presenta a más de 18 meses del fin del período; si faltan menos, designa el gobernador. Cálculo: de mayo de 2026 a diciembre de 2027 hay más de 19 meses. Conclusión: debe elegirse popularmente un alcalde.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Proyectos de acuerdo: objeciones del alcalde",
+    "subtema": "Plazo para objetar según el número de artículos y trámite de las objeciones jurídicas no acogidas",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 78 inc. 2", "art. 79 (subrogado por el art. 4 de la Ley 177 de 1994)", "art. 80"],
+    "texto_fuente": "El Alcalde dispone de cinco días para devolver con objeciones un proyecto de no más de veinte artículos, de diez días cuando el proyecto sea de veintiuno a cincuenta artículos y hasta de veinte días cuando el proyecto exceda cincuenta artículos. [...] Si la plenaria del Concejo rechazare las objeciones por inconveniencia, el Alcalde deberá sancionar el proyecto en un término no mayor de ocho (8) días. Si no lo sanciona, el Presidente de la Corporación procederá a sancionarlo y publicarlo. [...] Si las objeciones jurídicas no fueren acogidas, el alcalde enviará dentro de los diez días siguientes, el proyecto acompañado de una exposición de motivos de las objeciones al Tribunal Administrativo que tenga jurisdicción en el municipio. Si el Tribunal las considera fundadas, el proyecto se archivará. Si decidiere que son infundadas, el alcalde sancionará el proyecto dentro de los tres días siguientes al recibo de la comunicación respectiva.",
+    "pregunta": "El concejo aprobó un proyecto de acuerdo de 34 artículos sobre el uso del espacio público. El alcalde lo devolvió con objeciones ocho días después de recibirlo, porque considera que tres artículos contradicen una ley nacional. La plenaria del concejo estudió las objeciones y no las acogió. El asesor jurídico de la alcaldía debe conceptuar sobre la oportunidad de las objeciones y el paso siguiente. ¿Qué debe conceptuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Fueron oportunas; ahora el alcalde debe remitir el proyecto al tribunal administrativo en diez días.",
+        "explicacion": "Correcta. Para un proyecto de 21 a 50 artículos el alcalde tiene diez días para objetar, así que a los ocho días lo hizo a tiempo (art. 78). Como las objeciones son jurídicas y el concejo no las acogió, el alcalde debe enviar el proyecto, con la exposición de motivos de las objeciones, al tribunal administrativo dentro de los diez días siguientes (art. 80)."
+      },
+      {
+        "id": "B",
+        "texto": "Fueron oportunas; ahora el alcalde debe sancionarlo en ocho días o lo sancionará el presidente del concejo.",
+        "explicacion": "Incorrecta. Ese es el trámite de las objeciones por inconveniencia (art. 79). Las objeciones por ser contrario a la ley que el concejo no acoge las decide el tribunal administrativo (art. 80)."
+      },
+      {
+        "id": "C",
+        "texto": "Fueron extemporáneas, pues el plazo era de cinco días; ahora el alcalde debe sancionar el proyecto.",
+        "explicacion": "Incorrecta. Los cinco días son para proyectos de no más de veinte artículos. Con 34 artículos el plazo es de diez días, y las objeciones se presentaron a los ocho."
+      },
+      {
+        "id": "D",
+        "texto": "Fueron oportunas; ahora el alcalde debe enviar el proyecto al gobernador para que revise su validez.",
+        "explicacion": "Incorrecta. La revisión del gobernador recae sobre acuerdos ya sancionados. Las objeciones jurídicas que el concejo no acoge van al tribunal administrativo (art. 80)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: proyecto de 34 artículos, objeciones jurídicas presentadas a los ocho días y no acogidas por la plenaria. Regla: el art. 78 de la Ley 136 da al alcalde diez días para objetar proyectos de 21 a 50 artículos; el art. 80 ordena que, si las objeciones jurídicas no son acogidas, el alcalde envíe el proyecto al tribunal administrativo dentro de los diez días siguientes. El término de ocho días para sancionar (art. 79) es solo para objeciones por inconveniencia. Conclusión: objeciones oportunas; el proyecto va al tribunal.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Proyectos de acuerdo: iniciativa",
+    "subtema": "Materias de iniciativa exclusiva del alcalde",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994 y Constitución Política de 1991",
+    "articulos": ["Ley 136 de 1994, art. 71 par. 1", "Ley 136 de 1994, art. 32 num. 5 (modificado por el art. 18 de la Ley 1551 de 2012)", "Constitución Política, art. 313 nums. 3 y 6"],
+    "texto_fuente": "PARÁGRAFO 1o. Los acuerdos a los que se refieren los numerales 2o.,3o., y 6o., del artículo 313 de la Constitución Política, sólo podrán ser dictados a iniciativa del alcalde. [...] 5. Determinar la nomenclatura de las vías públicas y de los predios o domicilios. [...] 3. Autorizar al alcalde para celebrar contratos y ejercer pro tempore precisas funciones de las que corresponden al Concejo. [...] 6. Determinar la estructura de la administración municipal y las funciones de sus dependencias; las escalas de remuneración correspondientes a las distintas categorías de empleos;",
+    "pregunta": "Un concejal radicó tres proyectos de acuerdo: el primero ajusta la escala de remuneración de los empleos de la alcaldía; el segundo autoriza al alcalde para vender un lote del municipio; el tercero asigna la nomenclatura de las calles de un barrio nuevo. El alcalde no presentó ni avaló ninguno. La asesora jurídica de la alcaldía debe conceptuar cuáles pueden tramitarse tal como fueron presentados. ¿Cuál es el concepto correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los tres, porque los concejales pueden presentar proyectos de acuerdo sobre cualquier materia.",
+        "explicacion": "Incorrecta. Los concejales tienen iniciativa general, pero los acuerdos de los numerales 2, 3 y 6 del art. 313 de la Constitución solo pueden dictarse a iniciativa del alcalde (art. 71, par. 1, de la Ley 136)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el de las calles; para los otros dos se requiere que el proyecto lo presente el alcalde.",
+        "explicacion": "Correcta. La escala de remuneración (art. 313, num. 6) y la autorización para contratar (art. 313, num. 3) son materias que solo pueden dictarse a iniciativa del alcalde (art. 71, par. 1, de la Ley 136). La nomenclatura de las vías es una atribución del concejo sin esa reserva (art. 32, num. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "El de las calles y el del lote; solo la escala salarial está reservada al alcalde.",
+        "explicacion": "Incorrecta. La autorización al alcalde para celebrar contratos, como la venta del lote, también es de iniciativa exclusiva del alcalde (art. 313, num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "El de las calles y el de la escala salarial; solo la venta del lote debe pedirla el alcalde.",
+        "explicacion": "Incorrecta. Las escalas de remuneración de los empleos también son de iniciativa exclusiva del alcalde (art. 313, num. 6)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los proyectos los presentó un concejal y el alcalde no los avaló. Regla: el art. 71, par. 1, de la Ley 136 reserva a la iniciativa del alcalde los acuerdos de los numerales 2, 3 y 6 del art. 313 de la Constitución: planes de desarrollo, autorizaciones para contratar, y estructura de la administración y escalas de remuneración. La nomenclatura de las vías (art. 32, num. 5) no está reservada. Conclusión: solo puede tramitarse el proyecto de nomenclatura.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Límites de gasto de concejos y personerías (Ley 617 de 2000)",
+    "subtema": "Tope de gastos de la personería en un municipio que sube de categoría por sus ingresos",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994 y Ley 617 de 2000",
+    "articulos": ["Ley 136 de 1994, art. 6 num. 3 y pars. 1 y 2 (modificado por el art. 153 del Decreto Ley 2106 de 2019)", "Ley 617 de 2000, art. 10 (modificado por el art. 3 de la Ley 2422 de 2024)"],
+    "texto_fuente": "3. SEGUNDA CATEGORÍA Población: Con población comprendida entre cincuenta mil uno (50.001) y cien mil (100.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a cincuenta mil (50.000) y hasta de cien mil (100.000) salarios mínimos legales mensuales vigentes. [...] PARÁGRAFO 1o. Los municipios que, de acuerdo con su población, deban clasificarse en una determinada categoría, pero superen el monto de ingresos corrientes de libre destinación anuales señalados en el presente artículo para la misma, se clasificarán en la categoría inmediatamente superior. [...] Ningún municipio podrá aumentar o descender más de dos categorías entre un año y el siguiente. [...] Durante cada vigencia fiscal, los gastos de los concejos no podrán superar el valor correspondiente al total de los honorarios que se causen por el número de sesiones autorizado en el artículo 66 de la Ley 136 de 1994, más el uno punto cinco por ciento (1.5%) de los ingresos corrientes de libre destinación. Los gastos de personerías, distritales y municipales, donde las hubiere, no podrán superar los siguientes límites: PERSONERÍAS Aportes en la vigencia Porcentaje de los Ingresos Corrientes de Libre Destinación. CATEGORÍA Especial 1.6% Primera 1.7% Segunda 2.2%",
+    "pregunta": "El profesional de presupuesto de la secretaría de Hacienda de un municipio de 96.000 habitantes calcula el tope de gastos de la personería para 2027. En 2026 el municipio está clasificado en segunda categoría. Los ingresos corrientes de libre destinación (ICLD) recaudados en 2025 fueron $160.000 millones, equivalentes a 112.399 salarios mínimos de ese año; con esos datos se fija la categoría para 2027, y los gastos de funcionamiento están dentro del límite legal. Para 2027 se proyectan ICLD de $175.000 millones. ¿Cuál es el tope de gastos de la personería para 2027?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$3.850 millones (2,2 % de los ICLD), porque por su población el municipio es de segunda categoría.",
+        "explicacion": "Incorrecta. Por población le correspondería segunda, pero sus ICLD (112.399 salarios mínimos) superan el máximo de segunda (100.000), así que se clasifica en la inmediatamente superior, primera (art. 6, par. 1, de la Ley 136). El 2,2 % es el tope de segunda."
+      },
+      {
+        "id": "B",
+        "texto": "$2.625 millones (1,5 % de los ICLD), el mismo porcentaje adicional que se reconoce al concejo.",
+        "explicacion": "Incorrecta. El 1,5 % de los ICLD es lo que se suma a los honorarios para fijar el tope de gastos del concejo. Para la personería de primera categoría el tope es el 1,7 %."
+      },
+      {
+        "id": "C",
+        "texto": "$2.800 millones (1,6 % de los ICLD), porque ese es el tope que la ley fija para primera categoría.",
+        "explicacion": "Incorrecta. El 1,6 % es el tope de las personerías de categoría especial. Para primera categoría es el 1,7 %."
+      },
+      {
+        "id": "D",
+        "texto": "$2.975 millones (1,7 % de los ICLD), porque sus ingresos llevan al municipio a primera categoría.",
+        "explicacion": "Correcta. Con 96.000 habitantes estaría en segunda, pero sus ICLD superan los 100.000 salarios mínimos, así que pasa a primera (art. 6, par. 1, de la Ley 136); como en 2026 era de segunda, sube una sola categoría, dentro del límite de dos por año (par. 2). En primera, los gastos de la personería no pueden superar el 1,7 % de los ICLD (art. 10 de la Ley 617, mod. Ley 2422 de 2024): 1,7 % × $175.000 millones = $2.975 millones."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: 96.000 habitantes (rango de segunda) e ICLD de 2025 equivalentes a 112.399 salarios mínimos. Regla: si los ICLD superan el rango de la categoría de la población, el municipio pasa a la inmediatamente superior (art. 6, par. 1, de la Ley 136); de segunda en 2026 a primera en 2027 sube una sola categoría, dentro del límite de dos (par. 2). En primera, los gastos de la personería no pueden superar el 1,7 % de los ICLD (art. 10 de la Ley 617, mod. Ley 2422 de 2024). Cálculo: 1,7 % × $175.000 millones = $2.975 millones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0617_2000.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Saneamiento fiscal (Ley 617 de 2000)",
+    "subtema": "Fuentes que pueden financiar gastos de funcionamiento y tope en municipios de cuarta categoría",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 617 de 2000",
+    "articulos": ["art. 3 inc. 1 y par. 1 lits. f y g", "art. 6"],
+    "texto_fuente": "Los gastos de funcionamiento de las entidades territoriales deben financiarse con sus ingresos corrientes de libre destinación, de tal manera que estos sean suficientes para atender sus obligaciones corrientes, provisionar el pasivo prestacional y pensional; y financiar, al menos parcialmente, la inversión pública autónoma de las mismas. [...] En todo caso, no se podrán financiar gastos de funcionamiento con recursos de: [...] f) Las regalías y compensaciones; g) Las operaciones de crédito público, salvo las excepciones que se establezcan en las leyes especiales sobre la materia; [...] Durante cada vigencia fiscal los gastos de funcionamiento de los distritos y municipios no podrán superar como proporción de sus ingresos corrientes de libre destinación, los siguientes límites: CategoríaLímite Especial50% Primera65% Segunda y tercera70% Cuarta, quinta y sexta80%",
+    "pregunta": "La profesional de presupuesto de un municipio de cuarta categoría proyecta los gastos de funcionamiento de 2027. Los ingresos corrientes de libre destinación (ICLD) proyectados son $15.500 millones. Además, el municipio recibirá $4.000 millones de regalías y el desembolso de un crédito por $3.000 millones. El secretario de Hacienda propone pagar con las regalías el aumento de la nómina. ¿Cuál es el máximo de gastos de funcionamiento que puede presupuestar, y con qué recursos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$15.600 millones (80 % de ICLD y regalías), pagados con ambas fuentes.",
+        "explicacion": "Incorrecta. Las regalías y compensaciones no pueden financiar gastos de funcionamiento (art. 3, lit. f), y el límite se calcula solo sobre los ICLD (art. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "$10.850 millones (70 % de los ICLD), pagados solo con esos ingresos.",
+        "explicacion": "Incorrecta. El 70 % es el límite de las categorías segunda y tercera. En cuarta categoría el límite es el 80 % de los ICLD."
+      },
+      {
+        "id": "C",
+        "texto": "$12.400 millones (80 % de los ICLD), pagados solo con esos ingresos.",
+        "explicacion": "Correcta. Los gastos de funcionamiento se financian con ICLD (art. 3) y, en cuarta categoría, no pueden superar el 80 % de ellos (art. 6): 80 % × $15.500 millones = $12.400 millones. Las regalías y el crédito no pueden financiarlos (art. 3, lits. f y g)."
+      },
+      {
+        "id": "D",
+        "texto": "$18.000 millones (80 % de las tres fuentes), pagados con todas ellas.",
+        "explicacion": "Incorrecta. Ni las regalías ni las operaciones de crédito público pueden financiar gastos de funcionamiento (art. 3, lits. f y g), y el límite se calcula solo sobre los ICLD."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: municipio de cuarta categoría con ICLD de $15.500 millones y otras fuentes (regalías y crédito). Regla: el art. 3 de la Ley 617 ordena financiar los gastos de funcionamiento con ICLD y prohíbe hacerlo con regalías y con operaciones de crédito público; el art. 6 limita esos gastos al 80 % de los ICLD en las categorías cuarta a sexta. Cálculo: 0,8 × 15.500 = 12.400. Conclusión: hasta $12.400 millones, pagados solo con ICLD; la propuesta del secretario no es viable.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0617_2000.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  },
+  {
+    "id": "TC-TER-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "territorial",
+    "modulo": "Gestión Territorial",
+    "tema": "Comunas y corregimientos",
+    "subtema": "Población mínima de las comunas según la categoría del municipio",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 136 de 1994",
+    "articulos": ["art. 6 num. 4 (modificado por el art. 153 del Decreto Ley 2106 de 2019)", "art. 117 par."],
+    "texto_fuente": "4. TERCERA CATEGORÍA Población: Con población comprendida entre treinta mil uno (30.001) y cincuenta mil (50.000) habitantes. Ingresos corrientes de libre destinación anuales: Superiores a treinta mil (30.000) y hasta de cincuenta mil (50.000) salarios mínimos legales mensuales vigentes. [...] PARÁGRAFO. En los municipios y distritos clasificados en categoría especial, primera y segunda, los concejos municipales podrán organizar comunas con no menos de diez mil (10.000) habitantes y en los clasificados en las categorías tercera y cuarta con no menos de cinco mil (5.000) habitantes. En los demás municipios, los alcaldes diseñarán mecanismos de participación ciudadana a través de los cuales la ciudadanía participe en la solución de sus problemas y necesidades.",
+    "pregunta": "Un municipio de 38.500 habitantes, con ingresos corrientes de libre destinación de 2025 equivalentes a 32.315 salarios mínimos de ese año y gastos de funcionamiento dentro del límite legal, quiere dividir su área urbana en cuatro comunas. El estudio técnico propone comunas de 11.200, 8.900, 6.100 y 4.600 habitantes. El profesional de la secretaría de Planeación revisa el proyecto de acuerdo. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la de 4.600 no alcanza el mínimo de su categoría; las otras tres sí pueden crearse.",
+        "explicacion": "Correcta. Con 38.500 habitantes e ingresos de 32.315 salarios mínimos, el municipio es de tercera categoría (art. 6). En tercera y cuarta categoría las comunas deben tener no menos de 5.000 habitantes (art. 117, par.), así que la de 4.600 no cumple y las otras tres sí."
+      },
+      {
+        "id": "B",
+        "texto": "Que solo puede crearse la de 11.200, porque cada comuna debe tener al menos 10.000 habitantes.",
+        "explicacion": "Incorrecta. El mínimo de 10.000 habitantes es para los municipios de categorías especial, primera y segunda. En tercera el mínimo es de 5.000."
+      },
+      {
+        "id": "C",
+        "texto": "Que no pueden crearse comunas, y el alcalde debe diseñar otros mecanismos de participación.",
+        "explicacion": "Incorrecta. Esa regla es para los municipios de quinta y sexta categoría. Los de tercera sí pueden organizar comunas de al menos 5.000 habitantes."
+      },
+      {
+        "id": "D",
+        "texto": "Que pueden crearse las cuatro, porque la ley no exige una población mínima para las comunas.",
+        "explicacion": "Incorrecta. La ley sí fija una población mínima según la categoría del municipio: en tercera, 5.000 habitantes por comuna."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: 38.500 habitantes e ingresos de 32.315 salarios mínimos, ambos en el rango de tercera categoría. Regla: el parágrafo del art. 117 de la Ley 136 permite organizar comunas con no menos de 10.000 habitantes en las categorías especial, primera y segunda, y con no menos de 5.000 en tercera y cuarta; en las demás, el alcalde diseña mecanismos de participación. Conclusión: la comuna de 4.600 habitantes no cumple el mínimo; las de 11.200, 8.900 y 6.100 sí.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html",
+    "autor": "IA",
+    "revision": { "resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10" }
+  }
+]

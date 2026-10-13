@@ -1,0 +1,1065 @@
+[
+  {
+    "id": "TC-DOC-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Escala institucional, cálculo de la nota final según el SIEE y no promoción",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.4, nums. 1 y 2",
+      "art. 2.3.3.3.3.5",
+      "art. 2.3.3.3.3.6, inc. 1"
+    ],
+    "texto_fuente": "1. Los criterios de evaluación y promoción. 2. La escala de valoración institucional y su respectiva equivalencia con la escala nacional. [...] Cada establecimiento educativo definirá y adoptará su escala de valoración de los desempeños de los estudiantes en su sistema de evaluación. Para facilitar la movilidad de los estudiantes entre establecimientos educativos, cada escala deberá expresar su equivalencia con la escala de valoración nacional: [...] El desempeño bajo se entiende como la no superación de los mismos. [...] Cada establecimiento educativo determinará los criterios de promoción escolar de acuerdo con el sistema institucional de evaluación de los estudiantes.",
+    "pregunta": "El SIEE de una institución educativa oficial usa una escala de 1,0 a 5,0 con estas equivalencias: de 1,0 a 2,9, desempeño bajo; de 3,0 a 3,9, básico; de 4,0 a 4,5, alto, y de 4,6 a 5,0, superior. La nota final de cada área es el promedio ponderado de los cuatro periodos (20 %, 20 %, 30 % y 30 %), expresado con un decimal y sin aproximar: las centésimas se descartan. No es promovido quien termine el año con desempeño bajo en tres o más áreas. Mateo, de 7.º grado, cerró el año con desempeño bajo en otras dos áreas. En ciencias sociales obtuvo 2,2, 1,8, 3,5 y 3,7 en los periodos 1 a 4. ¿Qué nota final debe registrar la docente de ciencias sociales y qué consecuencia tiene para Mateo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "2,8, desempeño bajo; con esa área, Mateo suma tres en bajo y no es promovido a 8.º grado.",
+        "explicacion": "Incorrecta. Promedia los cuatro periodos sin ponderarlos: (2,2 + 1,8 + 3,5 + 3,7) / 4 = 2,8. El SIEE del caso da más peso a los dos últimos periodos (30 % cada uno), y con esos pesos la nota es 2,9."
+      },
+      {
+        "id": "B",
+        "texto": "2,9, desempeño bajo; con esa área, Mateo suma tres en bajo y no es promovido a 8.º grado.",
+        "explicacion": "Correcta. 2,2 × 0,2 + 1,8 × 0,2 + 3,5 × 0,3 + 3,7 × 0,3 = 0,44 + 0,36 + 1,05 + 1,11 = 2,96. Como el SIEE ordena expresarla con un decimal y sin aproximar, la nota es 2,9: desempeño bajo, es decir, no superación de los desempeños necesarios. Es la tercera área en bajo, así que se cumple el criterio de no promoción del SIEE."
+      },
+      {
+        "id": "C",
+        "texto": "3,0, desempeño básico; Mateo queda con solo dos áreas en bajo y es promovido a 8.º grado.",
+        "explicacion": "Incorrecta. Redondea 2,96 a 3,0. El SIEE del caso ordena descartar las centésimas sin aproximar, de modo que la nota es 2,9, que en su escala equivale a desempeño bajo."
+      },
+      {
+        "id": "D",
+        "texto": "2,6, desempeño bajo; con esa área, Mateo suma tres en bajo y no es promovido a 8.º grado.",
+        "explicacion": "Incorrecta. Invierte los pesos (30 % para los dos primeros periodos y 20 % para los dos últimos): 2,2 × 0,3 + 1,8 × 0,3 + 3,5 × 0,2 + 3,7 × 0,2 = 2,64, que da 2,6. Con los pesos del SIEE la nota es 2,9."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los periodos pesan 20 %, 20 %, 30 % y 30 %, la nota se expresa con un decimal sin aproximar y Mateo ya tiene otras dos áreas en bajo. Cálculo: 0,44 + 0,36 + 1,05 + 1,11 = 2,96 → 2,9 (no 3,0), que en la escala del colegio es desempeño bajo. Regla: cada establecimiento fija en su SIEE los criterios de evaluación y promoción y su escala, con la equivalencia nacional (Decreto 1075, arts. 2.3.3.3.3.4 a 2.3.3.3.3.6). Conclusión: tercera área en bajo y no promoción.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-002",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Promoción anticipada de grado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.7, inc. 1"
+    ],
+    "texto_fuente": "Durante el primer periodo del año escolar el consejo académico, previo consentimiento de los padres de familia, recomendará ante el consejo directivo la promoción anticipada al grado siguiente del estudiante que demuestre un rendimiento superior en el desarrollo cognitivo, personal y social en el marco de las competencias básicas del grado que cursa. La decisión será consignada en el acta del consejo directivo y, si es positiva, en el registro escolar.",
+    "pregunta": "En una institución educativa, el primer periodo académico de 2026 va del 2 de febrero al 10 de abril. El lunes 16 de marzo, la directora de grupo de 3.º concluye que Sofía va muy por delante de su grado en lo académico, en su autonomía y en su relación con los demás. Los padres de la niña le manifiestan por escrito que están de acuerdo con que pase a 4.º. ¿Qué trámite corresponde según el Decreto 1075 de 2015?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el coordinador y la directora de grupo decidan el avance antes del 10 de abril, con el acuerdo de los padres, y lo anoten.",
+        "explicacion": "Incorrecta. Ni el coordinador ni el director de grupo deciden la promoción anticipada: el consejo académico la recomienda y el consejo directivo decide. Solo si la decisión es positiva se anota en el registro escolar."
+      },
+      {
+        "id": "B",
+        "texto": "Que se espere a la comisión de evaluación de fin de año, que es la instancia que define si un estudiante se adelanta de grado.",
+        "explicacion": "Incorrecta. La promoción anticipada no se tramita al final del año: la recomendación debe hacerse durante el primer periodo del año escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Que el consejo directivo proponga el avance y el consejo académico lo decida, aun sin contar con el acuerdo de los padres.",
+        "explicacion": "Incorrecta. Invierte los papeles: recomienda el consejo académico y decide el consejo directivo. Además, se requiere el consentimiento previo de los padres de familia."
+      },
+      {
+        "id": "D",
+        "texto": "Que el consejo académico, con el acuerdo de los padres, lo recomiende antes del 10 de abril al consejo directivo, que decide.",
+        "explicacion": "Correcta. Durante el primer periodo (hasta el 10 de abril), el consejo académico, con el consentimiento previo de los padres, recomienda la promoción al consejo directivo. La decisión se consigna en el acta de este y, si es positiva, en el registro escolar."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el 16 de marzo todavía corre el primer periodo (termina el 10 de abril) y los padres están de acuerdo. Regla: según el art. 2.3.3.3.3.7 del Decreto 1075, durante el primer periodo el consejo académico, previo consentimiento de los padres, recomienda al consejo directivo la promoción anticipada del estudiante con rendimiento superior; la decisión queda en el acta del consejo directivo y, si es positiva, en el registro escolar. Conclusión: recomendación del consejo académico antes del 10 de abril y decisión del consejo directivo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Modificación del SIEE y derecho a conocer los criterios de evaluación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.8, nums. 1 a 5 y parágrafo",
+      "art. 2.3.3.3.3.12, num. 2"
+    ],
+    "texto_fuente": "1. Definir el sistema institucional de evaluación de los estudiantes. 2. Socializar el sistema institucional de evaluación con la comunidad educativa. 3. Aprobar el sistema institucional de evaluación en sesión en el consejo directivo y consignación en el acta. 4. Incorporar el sistema institucional de evaluación en el proyecto educativo institucional, articulándolo a las necesidades de los estudiantes, el plan de estudios y el currículo. 5. Divulgar el sistema institucional de evaluación de los estudiantes a la comunidad educativa. [...] PARÁGRAFO . Cuando el establecimiento educativo considere necesaria la modificación del sistema institucional de evaluación de los estudiantes deberá seguir el procedimiento antes enunciado. [...] 2. Conocer el sistema institucional de evaluación de los estudiantes: criterios, procedimientos e instrumentos de evaluación y promoción desde el inicio de año escolar.",
+    "pregunta": "El SIEE de un colegio oficial establece que la prueba de cierre de cada periodo vale el 30 % de la nota del área. Al empezar el tercer periodo, el docente de una de las áreas de 10.º anuncia en clase que, desde ese momento, su prueba de cierre valdrá el 60 %, porque cree que así la nota reflejará mejor lo aprendido. Un padre de familia pregunta si el cambio es válido. ¿Qué responde la norma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No: ese peso hace parte del SIEE, y cambiarlo exige reformarlo por el mismo trámite, con el aval del consejo directivo.",
+        "explicacion": "Correcta. El peso de la prueba es un criterio de evaluación del SIEE. Según el parágrafo del art. 2.3.3.3.3.8, su modificación debe seguir el procedimiento de creación: definir, socializar, aprobar en el consejo directivo con acta, incorporar al PEI y divulgar. Además, el estudiante tiene derecho a conocer los criterios de evaluación desde el inicio del año escolar (art. 2.3.3.3.3.12, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, si lo aprueba el consejo académico, pues a este le corresponde supervisar el proceso general de evaluación del colegio.",
+        "explicacion": "Incorrecta. Supervisar el proceso general de evaluación es función del consejo académico (art. 2.3.3.1.5.7), pero la modificación del SIEE exige surtir todo el procedimiento de adopción, incluida la aprobación del consejo directivo consignada en acta (art. 2.3.3.3.3.8)."
+      },
+      {
+        "id": "C",
+        "texto": "Sí, porque la autonomía escolar le permite a cada docente fijar los instrumentos y los pesos de evaluación de su área.",
+        "explicacion": "Incorrecta. Los criterios de evaluación los define el establecimiento en su SIEE, que hace parte del PEI. El docente los aplica y no puede cambiarlos por su cuenta a mitad de año."
+      },
+      {
+        "id": "D",
+        "texto": "No, porque los porcentajes de evaluación los fija la escala nacional del Ministerio y ningún colegio puede modificarlos.",
+        "explicacion": "Incorrecta. La escala nacional solo fija los cuatro niveles de desempeño (superior, alto, básico y bajo). Cada establecimiento define en su SIEE su propia escala y sus criterios de evaluación (arts. 2.3.3.3.3.4 y 2.3.3.3.3.5), y puede modificarlos si sigue el procedimiento de adopción."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el docente cambia por su cuenta, a mitad de año, un peso de evaluación fijado en el SIEE. Regla: según el parágrafo del art. 2.3.3.3.3.8 del Decreto 1075, modificar el SIEE exige seguir el procedimiento de su creación, que incluye la aprobación del consejo directivo; el consejo académico solo no basta, y el art. 2.3.3.3.3.12 num. 2 da al estudiante el derecho a conocer los criterios de evaluación desde el inicio del año. Conclusión: el cambio no es válido.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Reclamaciones sobre la evaluación: quién las resuelve",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.4, num. 10",
+      "art. 2.3.3.3.3.10, num. 4",
+      "art. 2.3.3.3.3.11, num. 7"
+    ],
+    "texto_fuente": "10. Las instancias, procedimientos y mecanismos de atención y resolución de reclamaciones de padres de familia y estudiantes sobre la evaluación y promoción. [...] 4. Resolver las reclamaciones que se presenten con respecto de la movilidad de estudiantes entre establecimientos educativos de su jurisdicción. [...] 7. A través de consejo directivo servir de instancia para decidir sobre reclamaciones que presenten los estudiantes o sus padres de familia en relación con la evaluación o promoción.",
+    "pregunta": "El padre de un estudiante de 9.º de un colegio oficial no está de acuerdo con la valoración que recibió su hijo en el segundo periodo en una de las áreas. Sin hablar con nadie en el colegio, radica un escrito ante la secretaría de educación de la entidad territorial certificada y le pide que revise la nota. ¿Quién debe tramitar y decidir esa reclamación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La secretaría de educación, porque es la autoridad que orienta y hace seguimiento a los SIEE de los colegios de su jurisdicción.",
+        "explicacion": "Incorrecta. La secretaría orienta, acompaña y hace seguimiento a los SIEE, pero entre las reclamaciones solo le corresponde resolver las relativas a la movilidad de estudiantes entre establecimientos. La de una nota de periodo se resuelve en el colegio."
+      },
+      {
+        "id": "B",
+        "texto": "El Ministerio de Educación Nacional, porque es la entidad que evalúa la efectividad de los sistemas de evaluación de los colegios.",
+        "explicacion": "Incorrecta. El Ministerio evalúa la efectividad de los SIEE del país, pero no resuelve reclamaciones individuales sobre la valoración de un estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "El colegio, por el trámite que prevé su SIEE y, en últimas, por su consejo directivo; la secretaría resuelve otros reclamos.",
+        "explicacion": "Correcta. El SIEE debe fijar las instancias, procedimientos y mecanismos para atender y resolver las reclamaciones sobre evaluación y promoción, y el establecimiento, a través del consejo directivo, sirve de instancia para decidirlas. La secretaría solo resuelve las reclamaciones sobre movilidad de estudiantes entre establecimientos."
+      },
+      {
+        "id": "D",
+        "texto": "El docente del área, y su decisión es definitiva, porque la valoración de un periodo es un acto propio de su labor de aula.",
+        "explicacion": "Incorrecta. El docente puede ser una de las instancias que fije el SIEE, pero su decisión no es la última: el consejo directivo sirve de instancia para decidir las reclamaciones sobre evaluación o promoción."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: se reclama por la valoración de un periodo, no por un traslado entre colegios. Regla: el SIEE debe definir las instancias y procedimientos de reclamación (Decreto 1075, art. 2.3.3.3.3.4 num. 10); el establecimiento decide a través del consejo directivo (art. 2.3.3.3.3.11 num. 7), y la secretaría resuelve solo las reclamaciones de movilidad entre establecimientos (art. 2.3.3.3.3.10 num. 4). Conclusión: la tramita el colegio según su SIEE.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-005",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Reclamaciones: plazo y orden de instancias fijados en el SIEE",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015; Ley 1437 de 2011 (CPACA)",
+    "articulos": [
+      "Decreto 1075 de 2015, art. 2.3.3.3.3.4, num. 10",
+      "Decreto 1075 de 2015, art. 2.3.3.3.3.8, num. 6",
+      "Decreto 1075 de 2015, art. 2.3.3.3.3.11, num. 7",
+      "Ley 1437 de 2011, art. 21 (modificado por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "10. Las instancias, procedimientos y mecanismos de atención y resolución de reclamaciones de padres de familia y estudiantes sobre la evaluación y promoción. [...] 6. Divulgar los procedimientos y mecanismos de reclamaciones del sistema institucional de evaluación. [...] 7. A través de consejo directivo servir de instancia para decidir sobre reclamaciones que presenten los estudiantes o sus padres de familia en relación con la evaluación o promoción. [...] Si la autoridad a quien se dirige la petición no es la competente, se informará de inmediato al interesado si este actúa verbalmente, o dentro de los cinco (5) días siguientes al de la recepción, si obró por escrito. Dentro del término señalado remitirá la petición al competente y enviará copia del oficio remisorio al peticionario",
+    "pregunta": "El SIEE de un colegio oficial dispone que las reclamaciones sobre la valoración de un periodo se radican por escrito en la secretaría académica, dentro de los tres días hábiles siguientes a la entrega del informe, y se resuelven en este orden: primero, el docente del área; si el reclamante no queda conforme, la comisión de evaluación y promoción del grado, y solo frente a lo que esta decida, el consejo directivo. El informe del tercer periodo se entregó el viernes 30 de octubre de 2026, y el lunes 2 de noviembre fue festivo. El jueves 5 de noviembre, una madre radica en la secretaría académica una reclamación dirigida al consejo directivo. ¿Qué debe hacerse con ella?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Darle trámite por haberse presentado a tiempo, y enviarla al docente del área, a quien le toca resolverla en primer término.",
+        "explicacion": "Correcta. Descontado el festivo del 2 de noviembre, los tres días hábiles son el 3, el 4 y el 5 de noviembre, así que la reclamación, radicada el 5 en la secretaría académica, es oportuna. El SIEE, que por norma fija las instancias y el procedimiento de las reclamaciones, pone primero al docente del área. Y una petición dirigida a quien no es competente no se rechaza: se remite al competente (CPACA, art. 21, modificado por la Ley 1755 de 2015)."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazarla por extemporánea, porque los tres días hábiles para reclamar vencieron el miércoles 4 de noviembre.",
+        "explicacion": "Incorrecta. Cuenta el lunes 2 de noviembre como día hábil. Al ser festivo, el plazo corre el 3, el 4 y el 5 de noviembre, y la reclamación del 5 es oportuna."
+      },
+      {
+        "id": "C",
+        "texto": "Darle trámite por haberse presentado a tiempo, y que el consejo directivo la resuelva de fondo, por ser la instancia que decide estos reclamos.",
+        "explicacion": "Incorrecta. Acierta en que es oportuna, pero en este SIEE el consejo directivo solo conoce de lo que ya decidió la comisión de evaluación y promoción. Todavía no hay decisión del docente ni de la comisión, así que pronunciarse de fondo sería saltarse dos instancias."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazarla, porque se dirigió a una instancia que no correspondía y, cuando se corrija, el plazo de tres días ya habrá vencido.",
+        "explicacion": "Incorrecta. La reclamación se radicó dentro del plazo y en el lugar que fija el SIEE. Haberla dirigido a una instancia posterior no la invalida: la regla general es remitir la petición al competente (CPACA, art. 21), no rechazarla."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: informe entregado el viernes 30 de octubre; el lunes 2 de noviembre fue festivo; la reclamación se radicó el jueves 5, dirigida al consejo directivo, que en este SIEE solo revisa lo decidido por la comisión. Cálculo: los días hábiles son el 3, el 4 y el 5 de noviembre, así que es oportuna. Regla: el SIEE fija las instancias de reclamación (Decreto 1075, art. 2.3.3.3.3.4 num. 10), y lo dirigido a quien no es competente se remite al competente (CPACA, art. 21). Conclusión: se tramita, empezando por el docente.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-006",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "No promoción por primera vez: cláusula del manual y permanencia en el establecimiento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 115 de 1994 y Decreto 1075 de 2015",
+    "articulos": [
+      "art. 96, incs. 1 y 2 (Ley 115 de 1994)",
+      "art. 2.3.3.3.3.6, inc. 2 (Decreto 1075 de 2015)"
+    ],
+    "texto_fuente": "El reglamento interno de la institución educativa establecerá las condiciones de permanencia del alumno en el plantel y el procedimiento en caso de exclusión. La reprobación por primera vez de un determinado grado por parte del alumno, no será causal de exclusión del respectivo establecimiento, cuando no esté asociada a otra causal expresamente contemplada en el reglamento institucional o manual de convivencia. [...] Cuando un establecimiento educativo determine que un estudiante no puede ser promovido al grado siguiente, debe garantizarle, en todos los casos, el cupo para que continúe con su proceso formativo.",
+    "pregunta": "Laura, estudiante de 9.º de una institución educativa oficial, no fue promovida al terminar el año, según los criterios del SIEE. Es la primera vez que pierde un grado y no tiene faltas disciplinarias. El manual de convivencia del colegio dice que «el estudiante no promovido perderá su cupo para el año siguiente», y con base en esa cláusula el coordinador le pide a la directora de grupo que informe a la familia que deben buscar otro plantel. ¿Qué debe informar la docente, según la norma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que deben buscar otro plantel, porque la ley deja al reglamento las condiciones de permanencia y el del colegio así lo prevé.",
+        "explicacion": "Incorrecta. Es cierto que el reglamento fija las condiciones de permanencia (Ley 115, art. 96, inc. 1), pero la misma norma dispone que reprobar un grado por primera vez no es causal de exclusión si no se asocia a otra causal, y el Decreto 1075 obliga a garantizar en todos los casos el cupo del no promovido. Una cláusula del manual no puede desconocerlo."
+      },
+      {
+        "id": "B",
+        "texto": "Que el consejo directivo decidirá si la readmite, pues a él le corresponde fijar los criterios para asignar los cupos del colegio.",
+        "explicacion": "Incorrecta. El consejo directivo fija los criterios para asignar los cupos disponibles a los alumnos nuevos (Decreto 1075, art. 2.3.3.1.5.6, lit. d). Laura ya es estudiante del colegio, y su cupo no está sujeto a una decisión: debe garantizarse."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede seguir en el colegio, pero en 10.º y con plan de nivelación, pues el cupo garantizado es para que avance en su proceso.",
+        "explicacion": "Incorrecta. No ser promovida significa que Laura cursa de nuevo 9.º. El cupo que la norma garantiza es para que continúe su proceso formativo en el colegio, no para pasarla al grado siguiente; lo que el colegio debe tener son criterios y procesos para facilitar su promoción durante el año (art. 2.3.3.3.3.7, inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que Laura puede repetir 9.º en ese mismo colegio, porque haber perdido un grado por primera vez no permite excluirla.",
+        "explicacion": "Correcta. El art. 96 de la Ley 115 dispone que la reprobación por primera vez no es causal de exclusión si no está asociada a otra causal del reglamento o manual, y el art. 2.3.3.3.3.6 del Decreto 1075 obliga al establecimiento a garantizar, en todos los casos, el cupo del estudiante no promovido. La cláusula del manual, que convierte la reprobación misma en causa de pérdida del cupo, no se ajusta a esas normas."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Laura pierde el grado por primera vez, sin otra causal, y el manual la deja sin cupo solo por no ser promovida. Regla: el reglamento fija las condiciones de permanencia, pero la reprobación por primera vez no es causal de exclusión cuando no está asociada a otra causal (Ley 115, art. 96), y el colegio debe garantizar en todos los casos el cupo del no promovido (Decreto 1075, art. 2.3.3.3.3.6). Conclusión: Laura repite 9.º en el mismo colegio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0115_1994.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-007",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Informes periódicos y plan de actividades de apoyo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.4, num. 4",
+      "art. 2.3.3.3.3.11, num. 4",
+      "art. 2.3.3.3.3.12, num. 4"
+    ],
+    "texto_fuente": "4. Las acciones de seguimiento para el mejoramiento de los desempeños de los estudiantes durante el año escolar. [...] 4. Promover y mantener la interlocución con los padres de familia y el estudiante, con el fin de presentar los informes periódicos de evaluación, el plan de actividades de apoyo para la superación de las debilidades, y acordar los compromisos por parte de todos los involucrados. [...] 4. Recibir la asesoría y acompañamiento de los docentes para superar sus debilidades en el aprendizaje.",
+    "pregunta": "Al cerrar el segundo de cuatro periodos, Andrés, de 6.º, tiene desempeño bajo en dos áreas. Su directora de grupo propone enviar el boletín a la casa y dejar todo para una prueba de recuperación en noviembre, «para no recargarlo a mitad de año». ¿Qué debe hacerse según el Decreto 1075 de 2015?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar el boletín a los acudientes y dejar constancia, pues recibir los informes periódicos es lo que la norma les garantiza.",
+        "explicacion": "Incorrecta. Los padres tienen derecho a recibir los informes periódicos (art. 2.3.3.3.3.14), pero el establecimiento debe ir más allá: presentarles a ellos y al estudiante el plan de actividades de apoyo para superar las debilidades y acordar compromisos (art. 2.3.3.3.3.11, num. 4)."
+      },
+      {
+        "id": "B",
+        "texto": "Revisar con Andrés y sus acudientes el informe del periodo y concertar con ellos, desde ahora, actividades de refuerzo y compromisos.",
+        "explicacion": "Correcta. El art. 2.3.3.3.3.11 num. 4 obliga al establecimiento a mantener la interlocución con los padres y el estudiante para presentar los informes periódicos y el plan de actividades de apoyo para la superación de las debilidades, y acordar compromisos de todos los involucrados. Además, el estudiante tiene derecho a la asesoría y el acompañamiento de los docentes (art. 2.3.3.3.3.12 num. 4)."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir a la familia que asuma el refuerzo en casa, ya que hacer seguimiento permanente al proceso evaluativo es un deber de los padres.",
+        "explicacion": "Incorrecta. Los padres deben hacer seguimiento al proceso evaluativo de sus hijos (art. 2.3.3.3.3.15), pero ese deber no releva al establecimiento de presentar el plan de apoyo y acordar compromisos, ni a los docentes de acompañar al estudiante (art. 2.3.3.3.3.12, num. 4)."
+      },
+      {
+        "id": "D",
+        "texto": "Esperar a la comisión de evaluación de fin de año, que es la instancia que decide si se requieren actividades de apoyo.",
+        "explicacion": "Incorrecta. El plan de apoyo no depende de una decisión de fin de año: se presenta con los informes periódicos, y el SIEE debe prever acciones de seguimiento para mejorar los desempeños durante el año escolar (art. 2.3.3.3.3.4, num. 4)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: Andrés tiene desempeño bajo al cierre del segundo periodo y aún quedan dos. Regla: el SIEE debe prever acciones de seguimiento durante el año (Decreto 1075, art. 2.3.3.3.3.4 num. 4), y el establecimiento debe presentar a los padres y al estudiante los informes periódicos y el plan de actividades de apoyo, y acordar compromisos (art. 2.3.3.3.3.11 num. 4); el estudiante tiene derecho al acompañamiento de sus docentes (art. 2.3.3.3.3.12 num. 4). Conclusión: reunión con la familia, plan de refuerzo y compromisos desde ya.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-008",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Evaluación de los aprendizajes (SIEE)",
+    "subtema": "Propósitos de la evaluación en el ámbito institucional",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.1, num. 2",
+      "art. 2.3.3.3.3.3, nums. 1 a 3"
+    ],
+    "texto_fuente": "2. Nacional. El Ministerio Educación Nacional y el Instituto Colombiano para la Evaluación de la Educación (ICFES) realizarán pruebas censales con el fin de monitorear la calidad de la educación en los establecimientos educativos con fundamento en los estándares básicos. [...] 1. Identificar las características personales, intereses, ritmos de desarrollo y estilos de aprendizaje del estudiante para valorar sus avances. 2. Proporcionar información básica para consolidar o reorientar los procesos educativos relacionados con el desarrollo integral del estudiante. 3. Suministrar información que permita implementar estrategias pedagógicas para apoyar a los estudiantes que presenten debilidades y desempeños superiores en su proceso formativo.",
+    "pregunta": "Al comenzar el año, una docente de 3.º aplica una prueba diagnóstica de lectura y escritura. En la reunión de área se proponen varios usos para los resultados. ¿Cuál corresponde a los propósitos que el Decreto 1075 de 2015 asigna a la evaluación de los estudiantes en el ámbito institucional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Compararlos con los de Saber 3.º del año anterior, para monitorear la calidad del colegio frente a los estándares básicos.",
+        "explicacion": "Incorrecta. Monitorear la calidad de la educación de los establecimientos con fundamento en los estándares básicos es el fin de las pruebas censales del ámbito nacional, a cargo del Ministerio y del ICFES (art. 2.3.3.3.3.1, num. 2), no de la evaluación que hace el docente en el aula."
+      },
+      {
+        "id": "B",
+        "texto": "Ajustar a ese nivel los rangos de la escala de valoración del curso, para que cada desempeño sea alcanzable por el grupo.",
+        "explicacion": "Incorrecta. La escala de valoración la define y adopta el establecimiento en su SIEE (art. 2.3.3.3.3.5), y cambiarla exige el procedimiento de adopción. El docente no puede ajustarla para su curso."
+      },
+      {
+        "id": "C",
+        "texto": "Ver cómo y a qué paso aprende cada niño y replantear su planeación, con apoyos para los rezagados y los más avanzados.",
+        "explicacion": "Correcta. Identificar características, intereses, ritmos de desarrollo y estilos de aprendizaje, reorientar los procesos educativos y apoyar a quienes tienen debilidades y desempeños superiores son propósitos de la evaluación institucional (art. 2.3.3.3.3.3, nums. 1 a 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Abrir un PIAR a los niños con los puntajes más bajos, para ajustar desde ya sus metas de lectura y escritura del año.",
+        "explicacion": "Incorrecta. El PIAR es la herramienta para el estudiante con discapacidad (art. 2.3.3.5.2.3.5), no para quien obtiene un puntaje bajo en una prueba. Para esos niños, la evaluación institucional sirve para implementar estrategias pedagógicas de apoyo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: se pregunta qué uso de una prueba diagnóstica de aula corresponde a la evaluación que se hace en el colegio. Regla: el art. 2.3.3.3.3.3 del Decreto 1075 fija como propósitos de la evaluación institucional identificar características, ritmos y estilos de aprendizaje, reorientar los procesos educativos y apoyar a los estudiantes con debilidades y con desempeños superiores; monitorear la calidad frente a los estándares es propio del ámbito nacional (art. 2.3.3.3.3.1). Conclusión: conocer al grupo y replantear la planeación.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-009",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Educación inclusiva",
+    "subtema": "PIAR: quién lo diseña y contenido mínimo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.5.2.3.5, incs. 2 y 3"
+    ],
+    "texto_fuente": "deberá contener como mínimo los siguientes aspectos: i) descripción del contexto general del estudiante dentro y fuera del establecimiento educativo (hogar, aula, espacios escolares y otros entornos sociales); ii) valoración pedagógica; iii) informes de profesionales de la salud que aportan a la definición de los ajustes; iv) objetivos y metas de aprendizaje que se pretenden reforzar; v) ajustes curriculares, didácticos, evaluativos y metodológicos para el año electivo, si se requieren; [...] El diseño de los PIAR lo liderarán el o los docentes de aula con el docente de apoyo, la familia y el estudiante. Según la organización escolar, participarán los directivos docentes y el orientador.",
+    "pregunta": "En una institución educativa oficial que cuenta con docente de apoyo pedagógico, el rector le encargó a la docente orientadora elaborar el PIAR de un estudiante de 6.º con discapacidad física. Ella lo redactó sola, a partir de la historia clínica: trae el diagnóstico, la lista de terapias y la recomendación de eximirlo de educación física. Ahora pide a los docentes del curso que lo apliquen. ¿Qué falla tiene ese PIAR según el Decreto 1075 de 2015?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El contenido clínico es suficiente; lo que le falta es el acta de acuerdo firmada por el acudiente, el directivo y los docentes.",
+        "explicacion": "Incorrecta. El acta de acuerdo se firma una vez finalizado el diseño del PIAR (art. 2.3.3.5.2.3.6), pero el problema es anterior: el documento no lo diseñaron quienes la norma señala y le faltan contenidos mínimos como la valoración pedagógica, los objetivos y metas de aprendizaje y los ajustes curriculares, didácticos, evaluativos y metodológicos."
+      },
+      {
+        "id": "B",
+        "texto": "Debía elaborarlo la secretaría de educación con el sector salud, pues a ella le corresponde gestionar la valoración pedagógica.",
+        "explicacion": "Incorrecta. La secretaría gestiona la valoración pedagógica y asesora la elaboración del PIAR en los establecimientos que no tienen docente de apoyo (art. 2.3.3.5.2.3.3, num. 2). Este colegio sí lo tiene, y el diseño lo lideran sus docentes de aula con el de apoyo, la familia y el estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "Debía elaborarlo el docente de apoyo pedagógico, que es quien fija las metas y los ajustes de cada estudiante con discapacidad.",
+        "explicacion": "Incorrecta. El docente de apoyo participa en el diseño, pero no lo hace solo: el PIAR lo lideran el o los docentes de aula con el docente de apoyo, la familia y el estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "Debían liderarlo los docentes de aula con el de apoyo, la familia y el estudiante, e incluir valoración pedagógica y ajustes.",
+        "explicacion": "Correcta. El diseño lo lideran los docentes de aula con el docente de apoyo, la familia y el estudiante; el orientador y los directivos participan según la organización escolar. Y el PIAR debe contener como mínimo, entre otros, la valoración pedagógica, los objetivos y metas de aprendizaje y los ajustes curriculares, didácticos, evaluativos y metodológicos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la orientadora redactó sola el PIAR, que solo trae información médica, aunque el colegio tiene docente de apoyo. Regla: según el art. 2.3.3.5.2.3.5 del Decreto 1075, el diseño lo lideran los docentes de aula con el docente de apoyo, la familia y el estudiante (el orientador participa según la organización escolar), y el PIAR debe incluir como mínimo, entre otros, la valoración pedagógica, los objetivos y metas de aprendizaje y los ajustes curriculares, didácticos, evaluativos y metodológicos. Conclusión: está mal construido y le faltan contenidos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Educación inclusiva",
+    "subtema": "PIAR: plazo de elaboración y firma del acta de acuerdo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.5.2.3.5, inc. 3 y parágrafo 1",
+      "art. 2.3.3.5.2.3.6"
+    ],
+    "texto_fuente": "Se deberá elaborar durante el primer trimestre del año escolar [...] PARÁGRAFO 1. En el evento en que un estudiante se vincule al sistema educativo de manera extemporánea, se contemplará un término no mayor a treinta (30) días para la elaboración de los PIAR y la firma del acta de acuerdo en la institución educativa y la familia, de conformidad con lo previsto en el artículo siguiente. [...] Una vez finalizado el diseño del PIAR, se elaborará un acta de acuerdo con los compromisos que se adquieren frente las situaciones particulares requeridas por cada estudiante",
+    "pregunta": "En un colegio oficial, las clases de 2026 empezaron el lunes 2 de febrero. Valentina, estudiante con discapacidad matriculada desde el inicio del año, tuvo su PIAR terminado el viernes 20 de marzo. Samuel, también con discapacidad, estaba por fuera del sistema educativo y se matriculó el lunes 4 de mayo; su PIAR quedó listo el viernes 29 de mayo, y el acta de acuerdo con su familia se firmó el miércoles 24 de junio. ¿Cómo deben calificarse esos tiempos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Valentina, a tiempo, porque su PIAR estuvo en el primer trimestre; Samuel, no, porque el acta también debía firmarse en 30 días.",
+        "explicacion": "Correcta. Para quien está matriculado desde el inicio, el PIAR se elabora durante el primer trimestre del año escolar, y el 20 de marzo está dentro de él. Para quien se vincula de manera extemporánea hay un término no mayor a 30 días para elaborar el PIAR y firmar el acta de acuerdo: del 4 de mayo al 24 de junio pasaron 51 días calendario (34 hábiles), así que el plazo se superó como quiera que se cuente."
+      },
+      {
+        "id": "B",
+        "texto": "Ambos a tiempo: Valentina, dentro del primer trimestre, y Samuel, porque el plazo de 30 días cubre el PIAR, no la firma del acta.",
+        "explicacion": "Incorrecta. El parágrafo 1 incluye en el mismo término de 30 días la elaboración del PIAR y la firma del acta de acuerdo con la familia. El acta de Samuel se firmó 51 días después de su ingreso."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno a tiempo: el PIAR de Valentina superó los 30 días desde el inicio de clases, y el acta de Samuel se firmó pasados 30 días.",
+        "explicacion": "Incorrecta en cuanto a Valentina. El término de 30 días es para quien se vincula de manera extemporánea; a quien está desde el inicio se le aplica el primer trimestre del año escolar, y el 20 de marzo está dentro de él."
+      },
+      {
+        "id": "D",
+        "texto": "Samuel, a tiempo, porque el plazo de 30 días cubre el PIAR y no el acta; Valentina, no, porque superó los 30 días desde el inicio.",
+        "explicacion": "Incorrecta. Aplica a Valentina el término de 30 días, que es para los ingresos extemporáneos, y deja por fuera el acta de Samuel, que también debía firmarse dentro de ese término."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Valentina está desde el 2 de febrero y su PIAR se terminó el 20 de marzo; Samuel ingresó el 4 de mayo y su acta se firmó el 24 de junio. Regla: el PIAR se elabora durante el primer trimestre del año escolar; si el ingreso es extemporáneo, hay un término no mayor a 30 días para el PIAR y la firma del acta de acuerdo (Decreto 1075, art. 2.3.3.5.2.3.5 y su parágrafo 1). Cálculo: del 4 de mayo al 24 de junio hay 51 días calendario (34 hábiles). Conclusión: Valentina a tiempo; Samuel fuera de término.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-011",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Educación inclusiva",
+    "subtema": "Ajustes razonables sin diagnóstico médico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.5.2.1.4, num. 4 (en la compilación de Función Pública figura como 2.3.3.5.1.4)",
+      "art. 2.3.3.5.2.3.3, num. 1"
+    ],
+    "texto_fuente": "Los ajustes razonables pueden ser materiales e inmateriales y su realización no depende de un diagnóstico médico de deficiencia, sino de las barreras visibles e invisibles que se puedan presentar e impedir un pleno goce del derecho a la educación. [...] En caso de que el estudiante no cuente con dicho requisito, se deberá proceder con la matrícula y con el registro de las variables para la identificación de los estudiantes con discapacidad en el SIMAT, con base en la información de la familia y se efectuará el reporte correspondiente a la respectiva secretaría de educación, o entidad que haga sus veces, para que en articulación con el sector salud se establezca el diagnóstico y el proceso de atención más pertinente, en un plazo no mayor a tres meses.",
+    "pregunta": "En marzo ingresa a 2.º grado una niña que, según su familia, no oye bien por el oído izquierdo; no traen ningún concepto médico. En clase, el docente nota que ella no sigue las instrucciones cuando él habla de espaldas al grupo. Él le dice a la familia que no hará ningún cambio en sus clases hasta que le entreguen un certificado médico de discapacidad. ¿Qué indica la norma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el docente tiene razón, porque sin certificado médico la niña no puede registrarse en el SIMAT como estudiante con discapacidad.",
+        "explicacion": "Incorrecta. Sin diagnóstico se procede con la matrícula y con el registro en el SIMAT con base en la información de la familia, y se reporta a la secretaría para que, con el sector salud, se establezca el diagnóstico."
+      },
+      {
+        "id": "B",
+        "texto": "Que la familia debe presentar el certificado dentro del mes siguiente y que, si no lo hace, el colegio puede anular la matrícula.",
+        "explicacion": "Incorrecta. La norma no condiciona la matrícula a un certificado: ordena matricular y reportar a la secretaría, que con el sector salud establece el diagnóstico en un plazo no mayor a tres meses."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe adaptar ya su clase a lo que le impide seguirla, sin esperar el diagnóstico, que gestiona la secretaría con el sector salud.",
+        "explicacion": "Correcta. Los ajustes razonables no dependen de un diagnóstico médico, sino de las barreras que impiden el goce del derecho a la educación. Sin diagnóstico, se matricula, se registra en el SIMAT con la información de la familia y se reporta a la secretaría, que con el sector salud lo establece en un plazo no mayor a tres meses."
+      },
+      {
+        "id": "D",
+        "texto": "Que el docente puede hacer cambios, pero solo los que recomiende el sector salud una vez expida el certificado médico de la niña.",
+        "explicacion": "Incorrecta. Condiciona los ajustes al concepto médico, cuando la norma dice que su realización no depende del diagnóstico, sino de las barreras que se presenten."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la niña no tiene concepto médico y el docente ya identificó lo que le impide seguir la clase. Regla: los ajustes razonables no dependen de un diagnóstico médico, sino de las barreras (Decreto 1075, art. 2.3.3.5.2.1.4 num. 4), y sin diagnóstico se matricula, se registra en el SIMAT con la información de la familia y se reporta a la secretaría para que, con el sector salud, lo establezca en máximo tres meses (art. 2.3.3.5.2.3.3 num. 1). Conclusión: el docente debe ajustar ya sus clases.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-012",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Educación inclusiva",
+    "subtema": "Diseño Universal del Aprendizaje frente a ajustes razonables",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.5.2.1.4, nums. 4, 6 y 11 (en la compilación de Función Pública figura como 2.3.3.5.1.4)"
+    ],
+    "texto_fuente": "4. Ajustes razonables: son las acciones, adaptaciones, estrategias, apoyos, recursos o modificaciones necesarias y adecuadas del sistema educativo y la gestión escolar, basadas en necesidades específicas de cada estudiante, que persisten a pesar de que se incorpore el Diseño Universal de los Aprendizajes, y que se ponen en marcha tras una rigurosa evaluación de las características del estudiante con discapacidad. [...] Se trata de una propuesta pedagógica que facilita un diseño curricular en el que tengan cabida todos los estudiantes, a través de objetivos, métodos, materiales, apoyos y evaluaciones formulados partiendo de sus capacidades y realidades. [...] 11. Plan Individual de Ajustes Razonables (PIAR): herramienta utilizada para garantizar los procesos de enseñanza y aprendizaje de los estudiantes, basados en la valoración pedagógica y social, que incluye los apoyos y ajustes razonables requeridos",
+    "pregunta": "Un docente de 5.º planea una unidad para todo el curso: ofrece cada texto impreso y en audio, usa videos subtitulados y deja que cada estudiante elija si presenta su trabajo final de forma oral, escrita o gráfica. Aun así, una estudiante con baja visión no logra leer lo que se proyecta en el tablero. Después de valorar su caso con la docente de apoyo y la familia, acuerdan darle materiales en letra ampliada y una lupa. ¿Cómo se clasifican esas dos medidas según el Decreto 1075 de 2015?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambas son ajustes razonables, porque las dos buscan eliminar las barreras de aprendizaje de los estudiantes con discapacidad.",
+        "explicacion": "Incorrecta. La planeación pensada para todo el curso no responde a la necesidad específica de un estudiante: es diseño universal. Los ajustes razonables son los que se requieren porque la necesidad persiste a pesar del DUA."
+      },
+      {
+        "id": "B",
+        "texto": "La planeación del curso es diseño universal, porque es para todos, y lo de la estudiante son ajustes razonables de su PIAR.",
+        "explicacion": "Correcta. El DUA es la propuesta pedagógica que da cabida a todos los estudiantes, con objetivos, métodos, materiales, apoyos y evaluaciones pensados desde el inicio. Los ajustes razonables responden a necesidades específicas que persisten pese al DUA, tras evaluar al estudiante, y se recogen en el PIAR."
+      },
+      {
+        "id": "C",
+        "texto": "La planeación del curso es un ajuste razonable colectivo, y lo de la estudiante es una acción afirmativa que define la secretaría.",
+        "explicacion": "Incorrecta. Lo pensado para todo el curso es el DUA, y la letra ampliada y la lupa, definidas tras valorar a la estudiante, son ajustes razonables de su PIAR, no una acción afirmativa de la secretaría."
+      },
+      {
+        "id": "D",
+        "texto": "Ambas son diseño universal del aprendizaje, porque toda medida que el docente adopta dentro de su aula hace parte de ese diseño.",
+        "explicacion": "Incorrecta. No toda medida del aula es DUA: las que se adoptan para un estudiante porque su necesidad persiste pese al diseño universal, y tras evaluar sus características, son ajustes razonables."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la planeación se pensó para todo el curso; la letra ampliada y la lupa se acordaron para una estudiante, tras valorar su caso, porque la dificultad persistía. Regla: el DUA da cabida a todos los estudiantes desde el diseño curricular, y los ajustes razonables responden a necesidades específicas que persisten pese al DUA y se recogen en el PIAR (Decreto 1075, art. 2.3.3.5.2.1.4, nums. 4, 6 y 11). Conclusión: DUA para el curso y ajustes razonables para la estudiante.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Educación inclusiva",
+    "subtema": "Informe anual de competencias o de proceso pedagógico",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.5.2.3.7"
+    ],
+    "texto_fuente": "Los estudiantes con discapacidad recibirán los mismos informes de seguimiento y retroalimentación que el establecimiento educativo fije en el sistema institucional de evaluación de todos los estudiantes. Para aquellos estudiantes en cuyo PIAR se hayan identificado ajustes particulares en el proceso de evaluación de los aprendizajes, al finalizar cada año académico se anexará un informe anual de proceso pedagógico para los estudiantes de preescolar, o de competencias para los estudiantes de básica y media. Este anexo será elaborado por el docente de aula en coordinación con el docente de apoyo y demás docentes intervinientes y hará parte del boletín final de cada estudiante y de su historia escolar.",
+    "pregunta": "Martín, que cursa transición, y Paula, de 8.º, son estudiantes con discapacidad. En el PIAR de cada uno se acordaron cambios en la forma de evaluar sus aprendizajes. Se acerca el cierre del año académico. ¿Qué documento debe anexarse al boletín final de cada uno y quién lo elabora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A los dos, un informe anual de competencias, que elabora el docente de apoyo y que se envía luego a la secretaría de educación.",
+        "explicacion": "Incorrecta. Para preescolar (Martín) el anexo es un informe de proceso pedagógico, no de competencias. Además, lo elabora el docente de aula en coordinación con el de apoyo, y hace parte del boletín final y de la historia escolar."
+      },
+      {
+        "id": "B",
+        "texto": "A Martín, un informe anual de competencias, y a Paula, uno de proceso pedagógico; ambos los elabora el docente orientador.",
+        "explicacion": "Incorrecta. Invierte los informes: el de proceso pedagógico es para preescolar y el de competencias para básica y media. Y no lo elabora el orientador, sino el docente de aula con el docente de apoyo y los demás docentes que intervienen."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno, porque los estudiantes con discapacidad reciben los mismos informes de seguimiento que el SIEE fija para todos sus compañeros.",
+        "explicacion": "Incorrecta. Es cierto que reciben los mismos informes de seguimiento que todos, pero cuando el PIAR identifica ajustes particulares en la evaluación, al final del año se anexa además un informe anual."
+      },
+      {
+        "id": "D",
+        "texto": "A Martín, un informe anual de proceso pedagógico, y a Paula, uno de competencias; los elabora el docente de aula con el de apoyo.",
+        "explicacion": "Correcta. Si el PIAR identifica ajustes particulares en la evaluación, al finalizar el año se anexa un informe anual de proceso pedagógico (preescolar) o de competencias (básica y media). Lo elabora el docente de aula en coordinación con el docente de apoyo y los demás docentes intervinientes, y hace parte del boletín final y de la historia escolar."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los dos PIAR tienen ajustes en la evaluación; Martín está en preescolar y Paula en básica secundaria. Regla: según el art. 2.3.3.5.2.3.7 del Decreto 1075, en esos casos se anexa al finalizar el año un informe anual de proceso pedagógico (preescolar) o de competencias (básica y media), elaborado por el docente de aula en coordinación con el docente de apoyo y los demás docentes intervinientes, que hace parte del boletín final y de la historia escolar. Conclusión: proceso pedagógico para Martín y competencias para Paula.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-014",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Educación inclusiva",
+    "subtema": "Promoción de estudiantes con discapacidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.3.3.3.6, inc. 3",
+      "art. 2.3.3.5.2.3.10"
+    ],
+    "texto_fuente": "La promoción de estudiantes con discapacidad en la educación básica y media está regida por las mismas disposiciones establecidas en la presente sección, la cual tendrá en cuenta la flexibilización curricular que realice el establecimiento educativo con base en los resultados de la valoración pedagógica de estos estudiantes, su trayectoria educativa, proyecto de vida, las competencias desarrolladas, las situaciones de repitencia y el riesgo de deserción escolar. [...] Ningún establecimiento educativo podrá rechazar la matrícula de un estudiante en razón a su situación discapacidad, ni negarse a hacer los ajustes razonables que se requieran. [...] Así mismo, no podrá ser razón para su expulsión del establecimiento educativo o la no continuidad en el proceso.",
+    "pregunta": "En la comisión de evaluación de fin de año se analiza el caso de Julián, estudiante de 4.º con discapacidad intelectual. Su PIAR ajustó los contenidos y las metas de matemáticas y lenguaje. Según los informes, alcanzó la mayoría de esas metas ajustadas, aunque no los desempeños que el SIEE fija para el resto del grado en esas dos áreas. ¿Cómo debe decidirse su promoción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Con las reglas del SIEE, pero valorando lo logrado frente a sus metas ajustadas, su trayectoria y su riesgo de deserción.",
+        "explicacion": "Correcta. La promoción de estudiantes con discapacidad se rige por las mismas disposiciones del SIEE, pero teniendo en cuenta la flexibilización curricular hecha con base en su valoración pedagógica, su trayectoria educativa, su proyecto de vida, las competencias desarrolladas, la repitencia y el riesgo de deserción (art. 2.3.3.3.3.6, inc. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Con las reglas del SIEE aplicadas igual que al resto del grado, pues la norma somete su promoción a las mismas disposiciones.",
+        "explicacion": "Incorrecta. Toma solo la mitad de la regla: las disposiciones son las mismas, pero la norma ordena tener en cuenta la flexibilización curricular y los demás factores del estudiante. Medirlo con los desempeños del resto del grado ignora las metas ajustadas de su PIAR."
+      },
+      {
+        "id": "C",
+        "texto": "Con el informe anual de competencias que elabora el docente de apoyo, que en su caso reemplaza los criterios del SIEE.",
+        "explicacion": "Incorrecta. El informe anual de competencias lo elabora el docente de aula en coordinación con el de apoyo, se anexa al boletín final y sirve para la entrega pedagógica y el PIAR siguiente (art. 2.3.3.5.2.3.7). No reemplaza los criterios de promoción, que siguen siendo los del SIEE."
+      },
+      {
+        "id": "D",
+        "texto": "Promoviéndolo en todo caso, porque la discapacidad no puede ser motivo para que el estudiante no continúe su proceso.",
+        "explicacion": "Incorrecta. La discapacidad no puede ser razón de expulsión ni de no continuidad en el proceso (art. 2.3.3.5.2.3.10), pero eso no equivale a promoción automática: la promoción se decide con el SIEE, a la luz de la flexibilización y de los demás factores."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Julián alcanzó la mayoría de las metas ajustadas de su PIAR, pero no los desempeños fijados para el resto del grado. Regla: la promoción de estudiantes con discapacidad se rige por las mismas disposiciones del SIEE, teniendo en cuenta la flexibilización curricular, la trayectoria, el proyecto de vida, las competencias desarrolladas, la repitencia y el riesgo de deserción (Decreto 1075, art. 2.3.3.3.3.6 inc. 3); la discapacidad no puede motivar su retiro (art. 2.3.3.5.2.3.10), pero tampoco da promoción automática. Conclusión: se decide con el SIEE, a la luz de su PIAR.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-015",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Convivencia escolar",
+    "subtema": "Situación tipo I: clasificación y protocolo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.5.4.2.6, num. 1",
+      "art. 2.3.5.4.2.8, nums. 1 y 2"
+    ],
+    "texto_fuente": "1. Situaciones Tipo I. Corresponden a este tipo los conflictos manejados inadecuadamente y aquellas situaciones esporádicas que inciden negativamente en el clima escolar, y que en ningún caso generan daños al cuerpo o a la salud. [...] 1. Reunir inmediatamente a las partes involucradas en el conflicto y mediar de manera pedagógica para que estas expongan sus puntos de vista y busquen la reparación de los daños causados, el restablecimiento de los derechos y la reconciliación dentro de un clima de relaciones constructivas en el establecimiento educativo. 2. Fijar la forma de solución de manera imparcial, equitativa y justa, encaminada a buscar la reparación de los daños causados, el restablecimiento de los derechos y la reconciliación dentro de un clima de relaciones constructivas en el grupo involucrado o en el establecimiento educativo. De esta actuación se dejará constancia.",
+    "pregunta": "Durante el descanso, dos estudiantes de 6.º discuten a gritos por el turno en la cancha y uno empuja al otro, sin que ninguno resulte lastimado. Es la primera vez que tienen un problema. El docente que acompaña el descanso los separa. ¿Qué debe hacer a continuación, según el protocolo que corresponde a esta situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Llevar el caso al comité escolar de convivencia y avisar de inmediato a la Policía de Infancia y Adolescencia.",
+        "explicacion": "Incorrecta. La Policía interviene en situaciones tipo III (presuntos delitos). Un altercado esporádico sin daño al cuerpo ni a la salud es tipo I y se maneja con el protocolo del establecimiento."
+      },
+      {
+        "id": "B",
+        "texto": "Remitir a ambos a valoración médica y reportar el caso en el Sistema de Información Unificado de Convivencia Escolar.",
+        "explicacion": "Incorrecta. La remisión a salud y el reporte al Sistema de Información Unificado hacen parte de los protocolos de tipo II y III; aquí no hubo daño al cuerpo ni a la salud."
+      },
+      {
+        "id": "C",
+        "texto": "Reunirlos enseguida para que cada uno cuente lo ocurrido, ayudarles a acordar cómo reparar lo sucedido y dejar constancia.",
+        "explicacion": "Correcta. Es una situación tipo I: un conflicto mal manejado, esporádico y sin daño al cuerpo o a la salud. El protocolo ordena reunir de inmediato a las partes, mediar pedagógicamente para que expongan sus puntos de vista y busquen la reparación y la reconciliación, fijar la solución y dejar constancia."
+      },
+      {
+        "id": "D",
+        "texto": "Anotar la falta en el observador y citar a los padres para imponer la sanción del manual, sin reunir a los dos estudiantes.",
+        "explicacion": "Incorrecta. El protocolo tipo I parte de reunir a las partes y mediar de manera pedagógica; sancionar sin escucharlas desconoce ese procedimiento."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: es un altercado esporádico, la primera vez, sin lesiones. Regla: las situaciones tipo I son conflictos manejados inadecuadamente o situaciones esporádicas que no generan daño al cuerpo ni a la salud (Decreto 1075, art. 2.3.5.4.2.6 num. 1), y su protocolo ordena reunir de inmediato a las partes, mediar de manera pedagógica, fijar una solución que busque la reparación y la reconciliación, y dejar constancia (art. 2.3.5.4.2.8). Conclusión: mediación inmediata con constancia.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-016",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Convivencia escolar",
+    "subtema": "Agresión reiterada: situación tipo II e información a las familias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015 y Ley 1620 de 2013",
+    "articulos": [
+      "art. 2.3.5.4.2.6, num. 2, lit. a (Decreto 1075 de 2015)",
+      "art. 2.3.5.4.2.9, num. 4 (Decreto 1075 de 2015)",
+      "art. 19, num. 1 (Ley 1620 de 2013)"
+    ],
+    "texto_fuente": "2. Situaciones Tipo II. Corresponden a este tipo las situaciones de agresión escolar, acoso escolar (bullying) y ciberacoso (Ciberbullying), que no revistan las características de la comisión de un delito y que cumplan con cualquiera de las siguientes características: a) Que se presenten de manera repetida o sistemática; [...] 4. Informar de manera inmediata a los padres, madres o acudientes de todos los estudiantes involucrados, actuación de la cual se dejará constancia. [...] 1. Identificar, reportar y realizar el seguimiento a los casos de acoso escolar, violencia escolar y vulneración de derechos sexuales y reproductivos que afecten a estudiantes del establecimiento educativo",
+    "pregunta": "La directora de grupo de 8.º confirma que, desde hace tres semanas, tres estudiantes le dicen a diario apodos ofensivos a un compañero y lo dejan por fuera de los trabajos en grupo. No ha habido golpes ni lesiones. Ella ya habló una vez con los tres, sin resultado. ¿Cómo se clasifica la situación y qué corresponde hacer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es tipo I, porque no hay daño al cuerpo ni a la salud; basta con volver a mediar en el aula y hacer seguimiento a los compromisos.",
+        "explicacion": "Incorrecta. La ausencia de daño físico no la vuelve tipo I: ese tipo abarca conflictos y situaciones esporádicas, y aquí la agresión verbal y relacional se repite a diario. Lo repetido o sistemático es tipo II."
+      },
+      {
+        "id": "B",
+        "texto": "Es tipo II por repetirse; debe reportarla para que se active el protocolo, que incluye avisar ya a las familias de los cuatro.",
+        "explicacion": "Correcta. Las agresiones verbales (apodos) y relacionales (exclusión) que se presentan de manera repetida o sistemática, sin constituir delito, son tipo II. El docente debe identificar y reportar el caso (Ley 1620, art. 19), y el protocolo tipo II incluye informar de inmediato a los padres o acudientes de todos los estudiantes involucrados: los del afectado y los de los tres agresores."
+      },
+      {
+        "id": "C",
+        "texto": "Es tipo III, porque el acoso escolar es un delito; debe denunciarla de inmediato ante la Policía de Infancia y Adolescencia.",
+        "explicacion": "Incorrecta. El tipo III exige que la agresión constituya un presunto delito. El acoso escolar que no reviste esas características es tipo II y se atiende con el protocolo del establecimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Es tipo II por el daño psicológico que causan los apodos; debe remitir al afectado a su EPS y dejarle el caso a la orientadora.",
+        "explicacion": "Incorrecta. La situación es tipo II por su repetición, no por un daño a la salud que el caso no acredita. Y no basta remitir al afectado a salud y pasarle el caso a la orientadora: la docente debe reportarlo para que se active el protocolo, que incluye avisar a las familias de todos los involucrados."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: las agresiones verbales y la exclusión se repiten a diario desde hace tres semanas, sin lesiones. Regla: la agresión o el acoso que se presenta de manera repetida o sistemática, sin ser delito, es tipo II (Decreto 1075, art. 2.3.5.4.2.6 num. 2); el docente debe identificar y reportar el caso (Ley 1620, art. 19 num. 1), y el protocolo tipo II ordena informar de inmediato a las familias de todos los estudiantes involucrados (art. 2.3.5.4.2.9 num. 4). Conclusión: tipo II, reporte y aviso a las cuatro familias.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Convivencia escolar",
+    "subtema": "Agresión con daño al cuerpo sin incapacidad: primer paso del protocolo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.5.4.2.6, nums. 1 y 2, lit. b",
+      "art. 2.3.5.4.2.9, num. 1"
+    ],
+    "texto_fuente": "1. Situaciones Tipo I. Corresponden a este tipo los conflictos manejados inadecuadamente y aquellas situaciones esporádicas que inciden negativamente en el clima escolar, y que en ningún caso generan daños al cuerpo o a la salud. [...] b) Que causen daños al cuerpo o a la salud sin generar incapacidad alguna para cualquiera de los involucrados. [...] 1. En casos de daño al cuerpo o a la salud, garantizar la atención inmediata en salud física y mental de los involucrados, mediante la remisión a las entidades competentes, actuación de la cual se dejará constancia.",
+    "pregunta": "En un cambio de clase, un estudiante de 9.º le da un puñetazo a un compañero. El golpe le deja el labio partido y un morado en la mejilla, lesiones que, según se establece después, no generan incapacidad. Es la primera vez que hay un problema entre ellos. ¿Cómo debe clasificarse la situación y cuál es la primera actuación que exige el protocolo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tipo II, porque hubo lesión sin incapacidad; lo primero es remitir a los estudiantes a los servicios de salud, dejando constancia.",
+        "explicacion": "Correcta. La agresión que causa daño al cuerpo sin generar incapacidad es tipo II, y el primer paso de su protocolo es garantizar la atención inmediata en salud física y mental de los involucrados mediante la remisión a las entidades competentes, con constancia."
+      },
+      {
+        "id": "B",
+        "texto": "Tipo I, por ser la primera vez; lo primero es reunir a los dos estudiantes para mediar y que acuerden cómo reparar lo ocurrido.",
+        "explicacion": "Incorrecta. Que sea la primera vez no la hace tipo I: el tipo I excluye toda situación que genere daño al cuerpo o a la salud, y aquí hubo lesión."
+      },
+      {
+        "id": "C",
+        "texto": "Tipo III, por haber lesiones; lo primero es que el rector informe a la Policía Nacional, antes de cualquier otra actuación.",
+        "explicacion": "Incorrecta. El tipo III exige un presunto delito; la norma ubica en el tipo II la agresión que causa daño al cuerpo sin generar incapacidad."
+      },
+      {
+        "id": "D",
+        "texto": "Tipo II; lo primero es convocar una conciliación entre las dos familias y, si fracasa, remitir al estudiante golpeado a salud.",
+        "explicacion": "Incorrecta. Acierta en el tipo, pero invierte el orden: ante un daño al cuerpo o a la salud, la atención en salud va primero y no depende de una conciliación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hubo lesión (labio partido y morado) pero sin incapacidad. Regla: el tipo I excluye cualquier daño al cuerpo o a la salud; la agresión que causa ese daño sin incapacidad es tipo II (Decreto 1075, art. 2.3.5.4.2.6), y el primer paso del protocolo tipo II es garantizar la atención inmediata en salud física y mental de los involucrados mediante remisión, con constancia (art. 2.3.5.4.2.9 num. 1). Conclusión: tipo II y, primero, atención en salud.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-018",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Convivencia escolar",
+    "subtema": "Situación tipo III: presunto delito sexual y actuación del comité",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.5.4.2.6, num. 3",
+      "art. 2.3.5.4.2.10, nums. 3, 4 y 6"
+    ],
+    "texto_fuente": "3. Situaciones Tipo III. Corresponden a este tipo las situaciones de agresión escolar que sean constitutivas de presuntos delitos contra la libertad, integridad y formación sexual, referidos en el Título IV del Libro II de la Ley 599 de 2000, o cuando constituyen cualquier otro delito establecido en la ley penal colombiana vigente. [...] 3. El Presidente del Comité Escolar de Convivencia de manera inmediata y por el medio más expedito, pondrá la situación en conocimiento de la Policía Nacional, actuación de la cual se dejará constancia, [...] 4. No obstante, lo dispuesto en el numeral anterior, se citará a los integrantes del Comité Escolar de Convivencia en los términos fijados en el manual de convivencia. [...] 6. Pese a que una situación se haya puesto en conocimiento de las autoridades competentes, el Comité Escolar de Convivencia adoptará, de manera inmediata, las medidas propias del establecimiento educativo, tendientes a proteger dentro del ámbito de sus competencias a la víctima, a quien se le atribuye la agresión y a las personas que hayan informado o hagan parte de la situación presentada, actuación de la cual se dejará constancia.",
+    "pregunta": "Una niña de 4.º le cuenta a su directora de grupo que un estudiante de 10.º, de 16 años, la tocó en sus partes íntimas en el baño del colegio. La docente le informa enseguida al rector, que preside el comité escolar de convivencia. El rector duda entre esperar la sesión ordinaria del comité, prevista para dentro de diez días, o actuar ya. ¿Qué exige el protocolo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Esperar la sesión del comité, que debe clasificar primero la situación antes de que el colegio informe a cualquier autoridad.",
+        "explicacion": "Incorrecta. En una situación tipo III el presidente del comité debe informar a la Policía Nacional de manera inmediata y por el medio más expedito; no se espera a la sesión ordinaria."
+      },
+      {
+        "id": "B",
+        "texto": "Reunir a los dos estudiantes con sus familias para que expongan lo ocurrido y acuerden una reparación, de lo que quedará acta.",
+        "explicacion": "Incorrecta. Un presunto delito contra la libertad, integridad y formación sexual es tipo III: no se atiende con un espacio de mediación o reparación entre las partes, sino con el protocolo de tipo III."
+      },
+      {
+        "id": "C",
+        "texto": "Informar a la Policía y no convocar al comité, porque al pasar el caso a las autoridades el colegio deja de tener competencia.",
+        "explicacion": "Incorrecta. Aunque se informe a la Policía, la norma ordena citar al comité y que este adopte de inmediato las medidas propias del establecimiento para proteger a la víctima, a quien se atribuye la agresión y a quienes informaron."
+      },
+      {
+        "id": "D",
+        "texto": "Avisar de inmediato a la Policía Nacional, porque es tipo III, y aun así citar al comité para que adopte medidas de protección.",
+        "explicacion": "Correcta. Es una situación tipo III. El presidente del comité debe ponerla de inmediato en conocimiento de la Policía Nacional y, no obstante, se cita al comité, que adopta de inmediato medidas de protección dentro del ámbito del establecimiento."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el hecho relatado es un presunto delito contra la libertad, integridad y formación sexual. Regla: es tipo III (Decreto 1075, art. 2.3.5.4.2.6 num. 3); el presidente del comité debe ponerlo de inmediato y por el medio más expedito en conocimiento de la Policía Nacional; no obstante, se cita al comité, que adopta de inmediato medidas de protección (art. 2.3.5.4.2.10, nums. 3, 4 y 6). Conclusión: aviso inmediato a la Policía y comité citado, sin esperar la sesión ordinaria.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-019",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Convivencia escolar",
+    "subtema": "Ciberacoso fuera de la jornada: reporte del docente y protocolo tipo II",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1620 de 2013 y Decreto 1075 de 2015",
+    "articulos": [
+      "art. 19, num. 1 (Ley 1620 de 2013)",
+      "art. 2.3.5.4.2.6, num. 2, lit. a (Decreto 1075 de 2015)",
+      "art. 2.3.5.4.2.9, inc. 1 y num. 7 (Decreto 1075 de 2015)"
+    ],
+    "texto_fuente": "1. Identificar, reportar y realizar el seguimiento a los casos de acoso escolar, violencia escolar y vulneración de derechos sexuales y reproductivos que afecten a estudiantes del establecimiento educativo, acorde con los artículos 11 y 12 de la Ley 1146 de 2007 y demás normatividad vigente, con el manual de convivencia y con los protocolos definidos en la Ruta de Atención Integral para la Convivencia Escolar. Si la situación de intimidación de la que tienen conocimiento se hace a través de medios electrónicos, igualmente deberá reportar al comité de convivencia para activar el protocolo respectivo. [...] 2. Situaciones Tipo II. Corresponden a este tipo las situaciones de agresión escolar, acoso escolar (bullying) y ciberacoso (Ciberbullying), que no revistan las características de la comisión de un delito y que cumplan con cualquiera de las siguientes características: a) Que se presenten de manera repetida o sistemática; [...] Los protocolos de los establecimientos educativos para la atención de las situaciones tipo II, a que se refiere el numeral 2 del artículo 2.3.5.4.2.6 del presente Decreto, deberán desarrollar como mínimo el siguiente procedimiento: [...] El comité realizará el análisis y seguimiento, a fin de verificar si la solución fue efectiva o si se requiere acudir al protocolo consagrado en el artículo 2.3.5.4.2.10 del presente Decreto.",
+    "pregunta": "Una estudiante de 7.º le muestra a su docente los mensajes de un grupo de WhatsApp del curso: desde hace dos semanas, varios compañeros publican casi todas las noches memes que ridiculizan a otra estudiante del grupo. Nada de esto ha ocurrido dentro del colegio ni en horario de clases. La docente cree que no le corresponde intervenir. ¿Qué indica la norma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no le corresponde actuar, porque la ruta de atención solo cubre lo que ocurre dentro del colegio y durante la jornada.",
+        "explicacion": "Incorrecta. La Ley 1620 ordena al docente reportar al comité de convivencia la intimidación de la que tenga conocimiento aunque se haga por medios electrónicos; el ciberacoso entre estudiantes del establecimiento hace parte de la ruta."
+      },
+      {
+        "id": "B",
+        "texto": "Que es tipo I, y basta con pedir en clase que borren las publicaciones, sin informar al comité ni a las familias.",
+        "explicacion": "Incorrecta. El ciberacoso que se repite de manera sistemática es tipo II, no tipo I, y el docente tiene el deber de reportarlo al comité."
+      },
+      {
+        "id": "C",
+        "texto": "Que debe reportarlo al comité para que el colegio active el protocolo de tipo II, al que el comité hace seguimiento.",
+        "explicacion": "Correcta. El docente debe identificar y reportar los casos de acoso que afecten a estudiantes del establecimiento y, si la intimidación ocurre por medios electrónicos, igualmente reportarla al comité para activar el protocolo (Ley 1620, art. 19). Por ser repetida y no constituir delito, es tipo II: el establecimiento aplica su protocolo (entre otros pasos, informar a las familias y definir acciones restaurativas) y el comité analiza el caso y le hace seguimiento (Decreto 1075, art. 2.3.5.4.2.9)."
+      },
+      {
+        "id": "D",
+        "texto": "Que debe denunciarlo directamente ante la Policía, porque toda agresión cometida por internet es una situación tipo III.",
+        "explicacion": "Incorrecta. El ciberacoso es tipo II cuando no reviste las características de un delito; no toda agresión por internet es tipo III."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la intimidación ocurre en un grupo de WhatsApp, se repite casi a diario y afecta a una estudiante del colegio. Regla: el docente debe identificar y reportar los casos de acoso y, si la intimidación se hace por medios electrónicos, reportarla al comité de convivencia para activar el protocolo (Ley 1620, art. 19 num. 1); el ciberacoso repetido que no es delito es tipo II (Decreto 1075, art. 2.3.5.4.2.6 num. 2), y su protocolo lo aplica el establecimiento, con análisis y seguimiento del comité (art. 2.3.5.4.2.9). Conclusión: reporte al comité y protocolo tipo II.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1620_2013.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-DOC-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Pedagogía y Normativa Docente",
+    "tema": "Convivencia escolar",
+    "subtema": "Seguimiento de una situación tipo I y paso al protocolo de tipo II",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1075 de 2015",
+    "articulos": [
+      "art. 2.3.5.4.2.8, num. 3 y parágrafo",
+      "art. 2.3.5.4.2.6, num. 2, lit. a"
+    ],
+    "texto_fuente": "3. Realizar seguimiento del caso y de los compromisos a fin de verificar si la solución fue efectiva o si se requiere acudir a los protocolos consagrados en los artículos 2.3.5.4.2.9 y 2.3.5.4.2.10 del presente Decreto. PARÁGRAFO . Los estudiantes que hayan sido capacitados como mediadores o conciliadores escolares podrán participar en el manejo de estos casos en los términos fijados en el Manual de Convivencia. [...] 2. Situaciones Tipo II. Corresponden a este tipo las situaciones de agresión escolar, acoso escolar (bullying) y ciberacoso (Ciberbullying), que no revistan las características de la comisión de un delito y que cumplan con cualquiera de las siguientes características: a) Que se presenten de manera repetida o sistemática;",
+    "pregunta": "En febrero, un conflicto entre dos estudiantes de 6.º por unas burlas se atendió como situación tipo I: dos estudiantes mediadores, formados según el manual de convivencia, ayudaron a que firmaran un acuerdo. En el seguimiento de marzo, el director de grupo comprueba que las burlas siguieron a diario y que ahora se sumaron otros compañeros. Los mediadores proponen una nueva sesión de mediación. ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar otra mediación con los estudiantes mediadores, porque el caso ya se clasificó como tipo I y esa clasificación se mantiene.",
+        "explicacion": "Incorrecta. La clasificación no es fija: el seguimiento del tipo I sirve justamente para verificar si la solución fue efectiva o si hay que acudir a los protocolos de tipo II o III. La participación de los mediadores escolares está prevista para los casos tipo I."
+      },
+      {
+        "id": "B",
+        "texto": "Dar por fallida la solución y aplicar el protocolo de tipo II, porque la conducta se repite, sin dejar el caso a los mediadores.",
+        "explicacion": "Correcta. El seguimiento del tipo I busca verificar si la solución fue efectiva o si se requiere el protocolo de tipo II o III. Las burlas diarias, ahora con más participantes, son una agresión repetida o sistemática: tipo II. Los estudiantes mediadores participan en el manejo de los casos tipo I."
+      },
+      {
+        "id": "C",
+        "texto": "Cerrar el caso, porque la situación tipo I quedó resuelta con el acuerdo firmado en febrero, del que ya quedó constancia escrita.",
+        "explicacion": "Incorrecta. El acuerdo firmado no cierra el caso: el protocolo exige hacer seguimiento a los compromisos para verificar si la solución fue efectiva, y aquí no lo fue."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirlo a la Policía de Infancia y Adolescencia, porque incumplir un acuerdo de convivencia convierte el caso en tipo III.",
+        "explicacion": "Incorrecta. El tipo III exige un presunto delito. Incumplir un acuerdo no convierte la situación en tipo III; la repetición la ubica en el tipo II."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en el seguimiento se comprueba que las burlas continúan a diario y con más participantes. Regla: el seguimiento del tipo I verifica si la solución fue efectiva o si se requiere acudir a los protocolos de tipo II o III, y los mediadores escolares participan en los casos tipo I (Decreto 1075, art. 2.3.5.4.2.8 num. 3 y parágrafo); la agresión repetida o sistemática es tipo II (art. 2.3.5.4.2.6 num. 2). Conclusión: se activa el protocolo de tipo II.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

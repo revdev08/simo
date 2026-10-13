@@ -1,0 +1,1055 @@
+[
+  {
+    "id": "TC-CNA-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: reactivo límite y rendimiento en la síntesis de la urea",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Realizo cálculos cuantitativos en cambios químicos.",
+    "pregunta": "Para un taller de 11.°, la docente plantea la síntesis industrial de la urea, un fertilizante: 2 NH₃ + CO₂ → CO(NH₂)₂ + H₂O. Al reactor entran 40,8 kg de amoníaco y 44 kg de dióxido de carbono, y el proceso tiene un rendimiento del 85 %. Con las masas molares NH₃ = 17 g/mol, CO₂ = 44 g/mol y CO(NH₂)₂ = 60 g/mol, ¿qué masa de urea se obtiene?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "61,2 kg",
+        "explicacion": "Incorrecta. Toma como reactivo límite el amoníaco porque entra con menos masa: 2,4 kmol de NH₃ darían 1,2 kmol de urea (72 kg) y, con el rendimiento, 61,2 kg. Pero esos 2,4 kmol de NH₃ necesitarían 1,2 kmol de CO₂ y solo hay 1,0 kmol: el que se agota es el CO₂. El reactivo límite se decide por moles y coeficientes, no por masas."
+      },
+      {
+        "id": "B",
+        "texto": "51 kg",
+        "explicacion": "Correcta. Hay 40,8/17 = 2,4 kmol de NH₃ y 44/44 = 1,0 kmol de CO₂. Ese CO₂ necesita 2 × 1,0 = 2,0 kmol de NH₃, y sobran 0,4 kmol: limita el CO₂. Se forman como máximo 1,0 kmol de urea (60 kg), y con el 85 % de rendimiento se obtienen 60 × 0,85 = 51 kg."
+      },
+      {
+        "id": "C",
+        "texto": "72 kg",
+        "explicacion": "Incorrecta. Combina dos errores: toma como límite el amoníaco, que entra con menos masa, y no aplica el rendimiento. Es la masa teórica que darían 2,4 kmol de NH₃ si hubiera CO₂ suficiente."
+      },
+      {
+        "id": "D",
+        "texto": "60 kg",
+        "explicacion": "Incorrecta. Identifica bien el CO₂ como reactivo límite, pero se queda en la masa teórica: no aplica el rendimiento del 85 %."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el amoníaco entra con menos masa, pero no es el que se agota. Concepto: el reactivo límite se identifica comparando los moles disponibles con la proporción de la ecuación (2 NH₃ por cada CO₂), y el rendimiento se aplica a la cantidad teórica que permite ese reactivo. Cálculo: 2,4 kmol de NH₃ y 1,0 kmol de CO₂; limita el CO₂, que da 1,0 kmol (60 kg) de urea teórica; 60 × 0,85 = 51 kg. Los distractores eligen el límite por la masa (72 y 61,2 kg) u omiten el rendimiento (60 y 72 kg).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que más cantidad de un reactivo siempre da más producto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Realizo cálculos cuantitativos en cambios químicos. [...] Propongo modelos para predecir los resultados de mis experimentos y simulaciones.",
+    "pregunta": "En 10.°, al estudiar la reacción del bicarbonato de sodio con el vinagre, NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂, los estudiantes afirman que «si se pone el doble de bicarbonato, siempre sale el doble de gas». La docente tiene vinagre al 5 % (50 mL contienen unos 2,5 g de ácido acético, de 60 g/mol), bicarbonato (84 g/mol), botellas iguales y globos. ¿Qué actividad debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Preparar seis botellas con 50 mL de vinagre cada una, poner de 0,5 a 3 g de bicarbonato en los globos, de 0,5 en 0,5 g, y comparar el tamaño final de los globos y si sobra sólido.",
+        "explicacion": "Incorrecta. Es activa, usa la misma reacción y tantas botellas como la clave, pero todas las masas quedan por debajo del punto en que se agota el ácido (unos 3,5 g): en todas las botellas se consume el bicarbonato y el gas crece en proporción a la masa, lo que confirma la idea del grupo en lugar de ponerla a prueba."
+      },
+      {
+        "id": "B",
+        "texto": "Preparar cuatro botellas con 25, 50, 75 y 100 mL de vinagre y con 1, 2, 3 y 4 g de bicarbonato, respectivamente, y comparar el tamaño final de los globos.",
+        "explicacion": "Incorrecta. Es activa, pero aumenta los dos reactivos a la vez: en las cuatro botellas se agota el bicarbonato y el gas crece en proporción, de modo que el grupo vuelve a ver que «el doble da el doble» y nunca aparece un reactivo en exceso."
+      },
+      {
+        "id": "C",
+        "texto": "Plantear la analogía de los sánduches (dos tajadas de pan por cada una de queso) y resolver con el grupo ejercicios de reactivo límite con otras reacciones.",
+        "explicacion": "Incorrecta. El diagnóstico es correcto (falta la idea de reactivo límite), pero la intervención es expositiva y cambia de reacción: la predicción del grupo sobre el bicarbonato y el vinagre no se pone a prueba."
+      },
+      {
+        "id": "D",
+        "texto": "Preparar seis botellas con 50 mL de vinagre cada una, poner de 1 a 6 g de bicarbonato en los globos, de 1 en 1 g, y comparar el tamaño final de los globos y si sobra sólido.",
+        "explicacion": "Correcta. Con 2,5 g de ácido acético (2,5/60 ≈ 0,042 mol) se consumen como máximo 0,042 × 84 ≈ 3,5 g de bicarbonato. Los globos crecen de 1 a 3 g y, desde 4 g, quedan del mismo tamaño y sobra sólido en el fondo: la predicción falla a la vista y aparece la idea de reactivo límite, que luego se confirma con el cálculo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: 50 mL de vinagre al 5 % contienen unos 0,042 mol de ácido acético, que reaccionan con unos 3,5 g de bicarbonato. Concepto: cuando un reactivo se agota, agregar más del otro ya no aumenta el producto. Didáctica: el experimento debe cruzar ese punto para poner a prueba la predicción; con 1 a 6 g, los globos dejan de crecer desde 4 g. Con 0,5 a 3 g, o aumentando los dos reactivos a la vez, el gas crece en proporción y la idea se refuerza; la analogía sola no la confronta.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-063",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: volumen del gas producido en una reacción, a la presión atmosférica de Bogotá",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Realizo cálculos cuantitativos en cambios químicos. [...] Establezco relaciones entre las variables de estado en un sistema termodinámico para predecir cambios físicos y químicos y las expreso matemáticamente.",
+    "pregunta": "En un colegio de Bogotá, el docente de química de 10.° va a recoger en una bolsa plástica flexible, inicialmente vacía, el CO₂ que liberan 5,0 g de carbonato de calcio (100 g/mol), en trozos de mármol, al reaccionar con ácido clorhídrico diluido en exceso: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂. En el laboratorio hay 17 °C y la presión atmosférica es de 0,74 atm. Si todo el gas queda en la bolsa y se comporta como ideal (R = 0,082 atm·L/(mol·K)), ¿qué volumen ocupará?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1,6 L",
+        "explicacion": "Correcta. n(CO₂) = n(CaCO₃) = 5,0/100 = 0,050 mol. A 17 °C (290 K) y 0,74 atm: V = nRT/P = 0,050 × 0,082 × 290 / 0,74 ≈ 1,6 L. Como en Bogotá la presión es menor que 1 atm, el gas ocupa más volumen que a nivel del mar."
+      },
+      {
+        "id": "B",
+        "texto": "1,1 L",
+        "explicacion": "Incorrecta. Usa el volumen molar de 22,4 L/mol (0,050 × 22,4 = 1,12 L), que solo vale a 0 °C y 1 atm; el gas está a 17 °C y a 0,74 atm."
+      },
+      {
+        "id": "C",
+        "texto": "3,7 L",
+        "explicacion": "Incorrecta. Toma los 5,0 g de carbonato como si fueran de CO₂ (5,0/44 ≈ 0,114 mol). La masa del gas no es la del reactivo: se pasa a moles de carbonato, y la proporción 1:1 da 0,050 mol de CO₂."
+      },
+      {
+        "id": "D",
+        "texto": "1,2 L",
+        "explicacion": "Incorrecta. Corrige la temperatura, pero supone una presión de 1 atm (0,050 × 0,082 × 290 / 1 ≈ 1,19 L): no tiene en cuenta que en Bogotá la presión atmosférica es de unos 0,74 atm."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el gas se recoge a 17 °C y a la presión de Bogotá, 0,74 atm. Concepto: la estequiometría da los moles de gas (CaCO₃ y CO₂ están en proporción 1:1) y la ecuación de los gases ideales da su volumen en las condiciones reales. Cálculo: 5,0/100 = 0,050 mol; V = 0,050 × 0,082 × 290 / 0,74 ≈ 1,6 L. Usar 22,4 L/mol (1,1 L) o 1 atm (1,2 L) desconoce las condiciones del lugar; 3,7 L confunde la masa del carbonato con la del gas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que más catalizador produce más producto",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Identifico condiciones para controlar la velocidad de cambios químicos. [...] Identifico variables que influyen en los resultados de un experimento.",
+    "pregunta": "En 11.°, al descomponer agua oxigenada al 3 % con levadura, 2 H₂O₂ → 2 H₂O + O₂, los estudiantes ven que con más levadura la espuma sube más rápido, y concluyen que «con más levadura se obtiene más oxígeno». ¿Qué debe proponer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Recoger en una probeta invertida en agua el oxígeno que liberan 10 mL de agua oxigenada con 1 g y con 3 g de levadura durante los primeros 30 segundos de reacción, y comparar los volúmenes recogidos.",
+        "explicacion": "Incorrecta. Es activa y mide la magnitud adecuada, pero solo al comienzo: en 30 segundos la mezcla con más levadura libera más gas porque reacciona más rápido, y el grupo confirma su conclusión sin ver la cantidad total."
+      },
+      {
+        "id": "B",
+        "texto": "Comparar el oxígeno que liberan 10 mL de agua oxigenada con 1 g de levadura y 20 mL con 3 g, recogiéndolo en probetas invertidas en agua hasta que deje de salir gas.",
+        "explicacion": "Incorrecta. Es activa, pero cambia dos variables a la vez: la mezcla con más levadura tiene también el doble de agua oxigenada y libera el doble de oxígeno, de modo que la diferencia se atribuye a la levadura."
+      },
+      {
+        "id": "C",
+        "texto": "Recoger en una probeta invertida en agua el oxígeno que liberan 10 mL de agua oxigenada con 1 g y con 3 g de levadura hasta que deje de salir gas, y comparar volúmenes y tiempos.",
+        "explicacion": "Correcta. Con la misma cantidad de agua oxigenada, los dos montajes terminan con el mismo volumen de oxígeno (del orden de 0,1 L), aunque el de 3 g llega antes. Así se separa la rapidez de la cantidad: la enzima de la levadura acelera la descomposición, pero la cantidad de producto la fija el agua oxigenada."
+      },
+      {
+        "id": "D",
+        "texto": "Representar en un diagrama de energía la reacción con catalizador y sin él, señalar que baja la energía de activación y recordar que el catalizador no se consume.",
+        "explicacion": "Incorrecta. El concepto es correcto, pero la intervención es expositiva y no toca la conclusión del grupo: el diagrama habla de rapidez, y los estudiantes pueden seguir creyendo que más levadura da más oxígeno."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el grupo infiere la cantidad de oxígeno a partir de lo rápido que sube la espuma. Concepto: un catalizador (aquí, la catalasa de la levadura) aumenta la rapidez de la reacción, pero no cambia la cantidad de producto, que depende del reactivo que se descompone. Didáctica: hay que medir el gas hasta el final y con la misma cantidad de agua oxigenada; medir solo al comienzo o cambiar también el agua oxigenada refuerza la idea. El montaje es seguro con agua oxigenada al 3 % y gafas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: efecto de la temperatura, la compresión y la concentración en un equilibrio gaseoso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Caracterizo cambios químicos en condiciones de equilibrio. [...] Verifico el efecto de presión y temperatura en los cambios químicos.",
+    "pregunta": "En 11.°, el docente analiza una reacción que la industria usa para obtener hidrógeno: CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g), cuya reacción directa es exotérmica (ΔH = −41 kJ/mol). La mezcla está en equilibrio en un reactor cerrado. ¿En cuál de estas parejas cada cambio, por sí solo, aumenta la cantidad de hidrógeno en el equilibrio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Subir la temperatura y reducir el volumen del reactor.",
+        "explicacion": "Incorrecta. Falla en los dos cambios: como la reacción directa es exotérmica, calentar desplaza el equilibrio hacia los reactivos; y como hay 2 moles de gas a cada lado, comprimir no lo desplaza."
+      },
+      {
+        "id": "B",
+        "texto": "Bajar la temperatura y reducir el volumen del reactor.",
+        "explicacion": "Incorrecta. Acierta con la temperatura, pero no con la compresión: hay 2 moles de gas a cada lado de la ecuación, así que reducir el volumen aumenta todas las presiones parciales en la misma proporción y el equilibrio no se desplaza."
+      },
+      {
+        "id": "C",
+        "texto": "Subir la temperatura y agregar más vapor de agua.",
+        "explicacion": "Incorrecta. Acierta al agregar un reactivo, que desplaza el equilibrio hacia los productos, pero no con la temperatura: en una reacción exotérmica, calentar disminuye la constante de equilibrio y reduce el hidrógeno."
+      },
+      {
+        "id": "D",
+        "texto": "Bajar la temperatura y agregar más vapor de agua.",
+        "explicacion": "Correcta. Al enfriar, el equilibrio se desplaza en el sentido exotérmico, el directo, y la constante aumenta; al agregar vapor de agua, un reactivo, el sistema consume parte de él y forma más productos. Los dos cambios aumentan el hidrógeno."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: la reacción directa es exotérmica y hay el mismo número de moles de gas a cada lado (2 y 2). Concepto (principio de Le Châtelier): enfriar favorece el sentido exotérmico; agregar un reactivo desplaza el equilibrio hacia los productos; cambiar el volumen solo lo desplaza si cambia el número de moles de gas. Por eso la industria usa exceso de vapor y temperaturas moderadas, con catalizador para compensar la menor rapidez.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-066",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que calentar siempre desplaza un equilibrio hacia los productos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Verifico el efecto de presión y temperatura en los cambios químicos. [...] Propongo modelos para predecir los resultados de mis experimentos y simulaciones.",
+    "pregunta": "En 11.°, después de estudiar la rapidez de las reacciones, los estudiantes generalizan: «al calentar un sistema en equilibrio, siempre se forma más producto, porque las partículas chocan más y reaccionan más». ¿Qué debe hacer la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Disolver azúcar en agua fría y en agua caliente hasta que no se disuelva más, comparar las masas disueltas y relacionarlas con el equilibrio de solubilidad.",
+        "explicacion": "Incorrecta. Es activa y trabaja un equilibrio, pero uno cuya disolución es endotérmica: en agua caliente se disuelve más azúcar, y el resultado confirma la generalización en lugar de ponerla a prueba."
+      },
+      {
+        "id": "B",
+        "texto": "Mostrar un tubo tapado sin sellar con agua de cal saturada y transparente, calentarlo en baño de agua hasta que se enturbie, enfriarlo hasta que se aclare y discutir el porqué.",
+        "explicacion": "Correcta. La disolución del hidróxido de calcio es exotérmica: al calentar, el equilibrio Ca(OH)₂(s) ⇌ Ca²⁺ + 2 OH⁻ se desplaza hacia el sólido y el agua se enturbia; al enfriar, el sólido se redisuelve. Cubrir el tubo limita la entrada del CO₂ del aire, que formaría carbonato. El grupo ve que calentar favorece el sentido endotérmico, que no siempre es el de los productos."
+      },
+      {
+        "id": "C",
+        "texto": "Echar pastillas efervescentes iguales en agua a 10, 30 y 50 °C, medir cuánto tarda cada una en disolverse y graficar el tiempo contra la temperatura.",
+        "explicacion": "Incorrecta. Es activa y bien controlada, pero mide la rapidez de una reacción que no llega al equilibrio: confirma que calentar acelera, que es justamente la base de la generalización equivocada."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que la temperatura acelera por igual la reacción directa y la inversa, de modo que el equilibrio no se desplaza, y resolver ejercicios con la constante.",
+        "explicacion": "Incorrecta. Es expositiva y, además, falsa: la temperatura cambia la constante de equilibrio, porque acelera más la reacción en el sentido endotérmico. Lo que no desplaza el equilibrio es un catalizador."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo confunde el efecto de la temperatura sobre la rapidez con su efecto sobre el equilibrio. Concepto: al calentar, el equilibrio se desplaza en el sentido endotérmico y la constante cambia; en un proceso exotérmico, eso disminuye los productos. Didáctica: hace falta un equilibrio exotérmico, visible y reversible, como la disolución del hidróxido de calcio (el agua de cal se enturbia al calentarla y se aclara al enfriarla). El azúcar (disolución endotérmica) y las pastillas (rapidez) confirman la idea; negar el efecto de la temperatura es un error conceptual.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: pH de la mezcla de un ácido fuerte y una base fuerte antes del punto de equivalencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado",
+      "Entorno físico, octavo a noveno grado"
+    ],
+    "texto_fuente": "Realizo cálculos cuantitativos en cambios químicos. [...] Establezco relaciones cuantitativas entre los componentes de una solución.",
+    "pregunta": "Para construir con su grupo de 11.° la curva de titulación de 40 mL de ácido clorhídrico 0,10 M con hidróxido de sodio 0,050 M, la docente calcula de antemano los puntos de la tabla. ¿Qué pH tiene la mezcla cuando se han agregado 60 mL de la base?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1,3",
+        "explicacion": "Incorrecta. Resta las concentraciones (0,10 − 0,050 = 0,050 M) como si se mezclaran volúmenes iguales. Hay que comparar moles: 0,0040 de H⁺ contra 0,0030 de OH⁻."
+      },
+      {
+        "id": "B",
+        "texto": "3,0",
+        "explicacion": "Incorrecta. Calcula bien el exceso, 0,0010 mol de H⁺, pero lo toma como concentración, sin dividirlo por el volumen de la mezcla."
+      },
+      {
+        "id": "C",
+        "texto": "2,0",
+        "explicacion": "Correcta. H⁺: 0,040 × 0,10 = 0,0040 mol; OH⁻: 0,060 × 0,050 = 0,0030 mol. Sobran 0,0010 mol de H⁺ en 100 mL de mezcla: [H⁺] = 0,010 M y pH = 2,0. Aún no se llega al punto de equivalencia, que está en 80 mL de base."
+      },
+      {
+        "id": "D",
+        "texto": "1,6",
+        "explicacion": "Incorrecta. Calcula bien el exceso, 0,0010 mol de H⁺, pero lo divide solo por los 40 mL del ácido (0,025 M), sin contar los 60 mL de base que se agregaron."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: lo que reacciona son moles, y el exceso queda repartido en el volumen total. Cálculo: 0,0040 mol de H⁺ − 0,0030 mol de OH⁻ = 0,0010 mol de H⁺ en 0,100 L; [H⁺] = 0,010 M; pH = −log 0,010 = 2,0. Errores: restar concentraciones (1,3), olvidar la dilución (1,6) o tomar los moles como concentración (3,0). El punto de equivalencia (pH 7) llega con 80 mL de base.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la confusión entre ácido fuerte y ácido concentrado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Comparo los modelos que sustentan la definición ácido-base. [...] Caracterizo cambios químicos en condiciones de equilibrio.",
+    "pregunta": "En 10.°, al comparar el ácido clorhídrico con el vinagre, varios estudiantes afirman que el ácido acético es débil «porque viene muy diluido en agua» y que, concentrado, sería tan fuerte como el clorhídrico. El laboratorio tiene soluciones 0,1 M de los dos ácidos y de hidróxido de sodio, un pH-metro y un medidor de conductividad. ¿Qué actividad debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Medir el pH y la conductividad de volúmenes iguales de los dos ácidos 0,1 M, y relacionar las diferencias con la fracción de moléculas que se ioniza en cada uno.",
+        "explicacion": "Correcta. Con la misma concentración, el clorhídrico marca pH 1,0 y conduce mucho; el acético marca cerca de 2,9 y conduce poco, porque solo se ioniza alrededor del 1 % de sus moléculas. Al fijar la concentración, la diferencia que queda es la fuerza: el grado de ionización."
+      },
+      {
+        "id": "B",
+        "texto": "Titular volúmenes iguales de los dos ácidos 0,1 M con el hidróxido de sodio, comparar el volumen de base que gasta cada uno y discutir qué indica esa comparación.",
+        "explicacion": "Incorrecta. Es activa y controla la concentración, pero mide la cantidad total de ácido, no su fuerza: los dos gastan el mismo volumen de base, y el grupo puede concluir que son igual de fuertes."
+      },
+      {
+        "id": "C",
+        "texto": "Diluir diez y cien veces el ácido clorhídrico 0,1 M, medir el pH de cada dilución y graficar cómo cambia el pH con la concentración del ácido.",
+        "explicacion": "Incorrecta. Es activa y mide el pH, pero solo varía la concentración de un mismo ácido: el pH sube de 1 a 3 al diluir, y el grupo lo lee como que el ácido «se vuelve débil», que es justamente la confusión entre concentración y fuerza."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar con dibujos de partículas que el ácido fuerte se disocia por completo y el débil solo en parte, y pedir que clasifiquen una lista de ácidos comunes.",
+        "explicacion": "Incorrecta. El concepto es correcto, pero la intervención es expositiva: no pone a prueba la idea del grupo con los materiales disponibles, y una lista de ácidos se puede clasificar de memoria."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el grupo atribuye la debilidad del ácido acético a su dilución. Concepto: la fuerza de un ácido es su grado de ionización (su Ka), y la concentración es cuánto ácido hay por litro: son independientes. Didáctica: comparar los dos ácidos a la misma concentración aísla la fuerza (pH 1,0 frente a 2,9, y conductividades muy distintas). La titulación mide la cantidad de ácido, no su fuerza, y diluir solo el clorhídrico muestra el efecto de la concentración, no el de la fuerza. Seguridad: soluciones 0,1 M y gafas.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: puntos de ebullición de un alcohol, un éter y un alcano de masa molar parecida",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Relaciono grupos funcionales con las propiedades físicas y químicas de las sustancias.",
+    "pregunta": "Para una clase de 11.° sobre grupos funcionales, la docente elige tres sustancias de masa molar parecida: etanol (CH₃CH₂OH, 46 g/mol), éter dimetílico (CH₃OCH₃, 46 g/mol) y propano (CH₃CH₂CH₃, 44 g/mol). ¿Qué orden de los puntos de ebullición, de mayor a menor, y qué explicación debe presentar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Etanol y éter, empatados, y luego propano: con la misma masa molar, las fuerzas entre sus moléculas son de igual magnitud.",
+        "explicacion": "Incorrecta. Supone que el punto de ebullición depende solo de la masa molar. El etanol y el éter tienen la misma, pero hierven a 78 °C y a −24 °C: las fuerzas entre moléculas dependen del grupo funcional."
+      },
+      {
+        "id": "B",
+        "texto": "Propano, etanol y éter: la cadena de tres carbonos del propano aumenta las fuerzas de dispersión entre sus moléculas.",
+        "explicacion": "Incorrecta. Cuenta solo los carbonos. Con masas molares tan parecidas, las fuerzas de dispersión son semejantes, y el propano, apolar, es el que hierve más bajo (−42 °C)."
+      },
+      {
+        "id": "C",
+        "texto": "Éter, etanol y propano: el oxígeno en el centro de la cadena hace al éter más polar y más atraído entre sus moléculas.",
+        "explicacion": "Incorrecta. Invierte el papel del oxígeno: el éter es polar, pero menos que el etanol, y sus moléculas no tienen hidrógenos unidos al oxígeno, así que no forman puentes de hidrógeno entre sí. Hierve a −24 °C, muy por debajo del etanol."
+      },
+      {
+        "id": "D",
+        "texto": "Etanol, éter y propano: entre las moléculas del etanol se forman puentes de hidrógeno; el éter es polar, pero no los forma.",
+        "explicacion": "Correcta. El grupo –OH del etanol forma puentes de hidrógeno (hierve a 78 °C); el éter tiene un dipolo, pero ningún hidrógeno unido al oxígeno (−24 °C); el propano solo tiene fuerzas de dispersión (−42 °C)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: las tres masas molares son casi iguales, así que la diferencia la ponen los grupos funcionales. Concepto: los alcoholes forman puentes de hidrógeno entre sus moléculas gracias al enlace O–H; los éteres son polares, pero no tienen ese enlace; los alcanos solo tienen fuerzas de dispersión. Orden: etanol (78 °C) > éter dimetílico (−24 °C) > propano (−42 °C).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la geometría tetraédrica del carbono y los falsos isómeros del diclorometano",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos químicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Relaciono la estructura del carbono con la formación de moléculas orgánicas. [...] Relaciono la estructura de las moléculas orgánicas e inorgánicas con sus propiedades físicas y químicas y su capacidad de cambio químico.",
+    "pregunta": "En 11.°, al dibujar en el cuaderno la fórmula estructural del diclorometano, CH₂Cl₂, un grupo propone que existen dos isómeros: uno con los dos cloros «uno al lado del otro» y otro con los cloros «en lados opuestos» del carbono. ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mostrar en el tablero la representación de cuñas y líneas del diclorometano, y explicar que los ángulos de enlace del carbono miden 109,5° y no 90°.",
+        "explicacion": "Incorrecta. Es correcta en el contenido, pero expositiva: el grupo no comprueba por sí mismo que los dos dibujos son la misma molécula, y la representación con cuñas es difícil de leer para quien todavía piensa en el plano."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que armen las dos versiones con modelos de esferas y palillos tetraédricos, intenten superponerlas y hagan lo mismo con el 1,2-dicloroeteno.",
+        "explicacion": "Correcta. En un tetraedro, las cuatro posiciones son vecinas entre sí: las dos «versiones» se superponen y son la misma molécula. En el 1,2-dicloroeteno, el doble enlace impide el giro y sí hay dos isómeros (cis y trans). El contraste muestra cuándo la geometría produce isómeros y cuándo la diferencia es solo del dibujo plano."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir que busquen en una base de datos química cuántas sustancias con fórmula CH₂Cl₂ se conocen y que comparen sus puntos de ebullición.",
+        "explicacion": "Incorrecta. Es activa y lleva al dato correcto (solo hay una sustancia), pero no explica por qué: el grupo sigue sin un modelo de la geometría del carbono y puede repetir el error con otras moléculas."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir que recorten las dos fórmulas dibujadas en el cuaderno y prueben si coinciden al girar el papel sobre la mesa.",
+        "explicacion": "Incorrecta. Es activa, pero se queda en el plano: al girar el papel, los cloros vecinos nunca coinciden con los opuestos, y el grupo confirma que serían dos isómeros."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el grupo deduce la isomería de un dibujo plano con ángulos de 90°. Concepto: el carbono con cuatro enlaces sencillos es tetraédrico (109,5°), y en un tetraedro las cuatro posiciones son equivalentes entre sí: solo existe un diclorometano. Hay isomería cis-trans cuando un doble enlace impide el giro, como en el 1,2-dicloroeteno. Didáctica: los modelos tridimensionales permiten comprobarlo y contrastarlo; el papel girado refuerza el error, y la consulta o la explicación no construyen el modelo.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: tensión de la cuerda en un sistema de dos bloques con rozamiento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Modelo matemáticamente el movimiento de objetos cotidianos a partir de las fuerzas que actúan sobre ellos.",
+    "pregunta": "En 10.°, un bloque de 2,0 kg que está sobre una mesa horizontal se une, con una cuerda que pasa por una polea en el borde, a un bloque de 1,0 kg que cuelga. Entre el primer bloque y la mesa, el coeficiente de rozamiento cinético es 0,25, y al soltarlos el sistema se pone en movimiento. El docente anota que un dinamómetro liviano intercalado en la cuerda marcará 10 N, el peso del bloque que cuelga; un estudiante objeta que marcará menos. Si la cuerda y la polea son ideales y g = 10 m/s², ¿cuánto marcará?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "8,3 N",
+        "explicacion": "Correcta. Para el sistema: a = (10 − 0,25 × 20)/3 = 5/3 ≈ 1,67 m/s². Para el bloque que cuelga: 10 − T = 1,0 × 1,67, así que T ≈ 8,3 N (lo mismo da el bloque de la mesa: 5 + 2,0 × 1,67). El estudiante tiene razón: el bloque acelera hacia abajo, así que la cuerda lo sostiene con menos que su peso."
+      },
+      {
+        "id": "B",
+        "texto": "10 N",
+        "explicacion": "Incorrecta. Es la lectura que anotó el docente: valdría si el bloque colgara en reposo o bajara a velocidad constante. Como acelera hacia abajo, la fuerza neta sobre él no es cero y la tensión es menor que su peso."
+      },
+      {
+        "id": "C",
+        "texto": "5,0 N",
+        "explicacion": "Incorrecta. Iguala la tensión al rozamiento (0,25 × 20 = 5 N), como si el bloque de la mesa se moviera a velocidad constante. Pero acelera, y la cuerda debe darle además 2,0 × 1,67 ≈ 3,3 N."
+      },
+      {
+        "id": "D",
+        "texto": "6,7 N",
+        "explicacion": "Incorrecta. Calcula la aceleración sin rozamiento (10/3 ≈ 3,3 m/s²) y con ella la tensión: 10 − 3,3 ≈ 6,7 N. Olvida que el rozamiento de la mesa reduce la aceleración del sistema."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el sistema acelera y la mesa tiene rozamiento. Concepto: segunda ley de Newton para el sistema y para cada bloque. Cálculo: a = (m₂g − μm₁g)/(m₁ + m₂) = (10 − 5)/3 ≈ 1,67 m/s²; T = m₂(g − a) ≈ 8,3 N. El estudiante que objeta tiene razón: la tensión solo igualaría el peso si el bloque no acelerara. Errores: igualar la tensión al peso (10 N) o al rozamiento (5 N), o ignorar el rozamiento al calcular la aceleración (6,7 N).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-072",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que en un choque el cuerpo de mayor masa ejerce más fuerza",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre la conservación del momento lineal y el impulso en sistemas de objetos. [...] Realizo mediciones con instrumentos y equipos adecuados.",
+    "pregunta": "En 10.°, a propósito de un choque leve entre una buseta y un carro particular, casi todo el grupo afirma que, durante el choque, «la buseta le hizo más fuerza al carro que el carro a la buseta, porque es más pesada». ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Grabar en video el choque de un carrito cargado con uno vacío en un riel, medir la velocidad de cada uno antes y después, y comparar cuál cambió más su velocidad.",
+        "explicacion": "Incorrecta. Es activa, pero compara solo los cambios de velocidad: el carrito vacío cambia más, y sin multiplicar por la masa el grupo lo toma como prueba de que recibió más fuerza."
+      },
+      {
+        "id": "B",
+        "texto": "Pedir que empujen con la mano, primero, un carrito cargado y luego uno vacío, y que comparen cuál de los dos cuesta más poner en movimiento.",
+        "explicacion": "Incorrecta. Es activa, pero trabaja la inercia de cada carrito por separado (segunda ley), no el par de fuerzas entre dos cuerpos que interactúan, que es lo que el grupo confunde."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar que las fuerzas son iguales y opuestas, y medirlas con dinamómetros enganchados a un carrito cargado y a uno vacío que chocan.",
+        "explicacion": "Correcta. La tercera ley dice que las fuerzas son iguales; la segunda, que el mismo empuje acelera más al de menor masa, y eso es lo que el grupo interpreta como «más fuerza». Dos dinamómetros enganchados, halados por dos estudiantes, marcan lo mismo, hale quien hale con más fuerza."
+      },
+      {
+        "id": "D",
+        "texto": "Enunciar la tercera ley de Newton, identificar con el grupo pares de acción y reacción en varios dibujos y resolver ejercicios de choques del libro.",
+        "explicacion": "Incorrecta. Es expositiva y no separa la fuerza de su efecto, que es el origen de la idea: el grupo puede repetir la ley y seguir pensando que en el choque la buseta empujó más."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el grupo atribuye más fuerza al cuerpo de mayor masa porque el efecto del choque es distinto en cada vehículo. Concepto: por la tercera ley de Newton, las fuerzas entre los dos cuerpos son iguales y opuestas en todo momento (y también sus impulsos); por la segunda, el de menor masa cambia más su velocidad. Didáctica: una explicación que separe la fuerza de su efecto, comprobada con dinamómetros enganchados, ataca el origen de la idea; comparar solo velocidades la refuerza.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-073",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: rapidez máxima en una curva plana según el rozamiento y la masa del vehículo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Modelo matemáticamente el movimiento de objetos cotidianos a partir de las fuerzas que actúan sobre ellos. [...] Utilizo las matemáticas para modelar, analizar y presentar datos y modelos en forma de ecuaciones, funciones y conversiones.",
+    "pregunta": "En 10.°, la docente analiza una curva plana, sin peralte, de 50 m de radio. Con el pavimento seco, el coeficiente de rozamiento estático entre llantas y vía es 0,8, y un carro puede tomarla hasta a 72 km/h sin derrapar; con lluvia, el coeficiente baja a 0,4. Un estudiante sostiene que, con lluvia, un camión cargado de 12 t debe ir más despacio que un carro de 1,2 t, «porque necesita más fuerza para girar». Si solo se considera el derrape, ¿cuál es la rapidez máxima con lluvia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Unos 36 km/h para el carro, y menos para el camión cargado.",
+        "explicacion": "Incorrecta. Combina dos errores: supone que la rapidez máxima es proporcional al coeficiente de rozamiento (72/2) y que la masa la cambia."
+      },
+      {
+        "id": "B",
+        "texto": "Unos 51 km/h, la misma para el carro y para el camión cargado.",
+        "explicacion": "Correcta. La fricción da la fuerza centrípeta: μmg = mv²/r, así que v = √(μgr), sin la masa. Con μ = 0,4: v = √(0,4 × 10 × 50) ≈ 14,1 m/s ≈ 51 km/h (también 72/√2). El camión necesita más fuerza para girar, pero su peso le da más fricción, en la misma proporción."
+      },
+      {
+        "id": "C",
+        "texto": "Unos 51 km/h para el carro, y menos para el camión cargado.",
+        "explicacion": "Incorrecta. Calcula bien la rapidez del carro, pero acepta el argumento del estudiante: olvida que la fricción máxima también crece con la masa, de modo que la masa se cancela."
+      },
+      {
+        "id": "D",
+        "texto": "Unos 36 km/h, la misma para el carro y para el camión cargado.",
+        "explicacion": "Incorrecta. Reconoce que la masa se cancela, pero toma la rapidez máxima como proporcional al coeficiente de rozamiento (72/2 = 36 km/h). Depende de su raíz cuadrada: hay que dividir por √2."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: la curva es plana y el coeficiente baja a la mitad. Concepto: sin peralte, el rozamiento estático es la única fuerza centrípeta: μmg = mv²/r, y v máx = √(μgr), que no depende de la masa. Cálculo: √(0,4 × 10 × 50) ≈ 14,1 m/s ≈ 51 km/h, o 72/√2. El estudiante se equivoca: el camión necesita más fuerza, pero dispone de más fricción en la misma proporción (sin contar el riesgo de volcamiento).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que un cuerpo que gira sale despedido hacia afuera al soltarse",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Modelo matemáticamente el movimiento de objetos cotidianos a partir de las fuerzas que actúan sobre ellos. [...] Propongo modelos para predecir los resultados de mis experimentos y simulaciones.",
+    "pregunta": "En 10.°, al hablar de una honda, varios estudiantes dibujan que, si la cuerda se suelta, la piedra sale en línea recta alejándose del centro del círculo, «porque la fuerza centrífuga la empuja hacia afuera». ¿Qué actividad debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Hacer girar en un círculo vertical un balde con agua atado a una cuerda, para que el grupo sienta el halón hacia afuera y vea que el agua no se derrama.",
+        "explicacion": "Incorrecta. Es activa y llamativa, pero no muestra la trayectoria al soltarse, y la sensación de «halón hacia afuera» refuerza la idea de la fuerza centrífuga."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer girar un tapón atado a un hilo que pasa por un tubo con arandelas colgadas, y medir cómo cambia la fuerza necesaria al aumentar la rapidez.",
+        "explicacion": "Incorrecta. Es activa y trabaja la fuerza centrípeta, pero su magnitud, no la dirección del movimiento cuando la fuerza desaparece, que es lo que el grupo dibuja mal."
+      },
+      {
+        "id": "C",
+        "texto": "Dibujar en el tablero la velocidad tangente al círculo en varios puntos y la fuerza de la cuerda hacia el centro, y resolver ejercicios de fuerza centrípeta.",
+        "explicacion": "Incorrecta. El contenido es correcto, pero es expositivo: el grupo no pone a prueba su predicción y puede resolver los ejercicios sin cambiar la idea."
+      },
+      {
+        "id": "D",
+        "texto": "Hacer rodar una canica por el borde interior de un plato de cartón con un sector recortado, pedir que predigan por dónde saldrá y marcar el recorrido real.",
+        "explicacion": "Correcta. Mientras el borde la empuja hacia el centro, la canica gira; al llegar al corte, esa fuerza desaparece y la canica sigue en línea recta, tangente al círculo, no hacia afuera. Predecir y observar confronta el dibujo del grupo, y luego se explica con la inercia."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el grupo dibuja una salida radial y la atribuye a una fuerza centrífuga. Concepto: en el movimiento circular, la fuerza neta apunta al centro; si desaparece, el cuerpo sigue por inercia en línea recta, en la dirección tangente que llevaba. Didáctica: predecir y observar el recorrido al soltarse (la canica en el plato recortado) confronta la idea; el balde la refuerza, el tapón mide otra cosa y el tablero no la pone a prueba.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-075",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: reparto de la energía de un resorte entre dos carritos que se separan",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre la conservación del momento lineal y el impulso en sistemas de objetos. [...] Utilizo modelos biológicos, físicos y químicos para explicar la transformación y conservación de la energía.",
+    "pregunta": "En un riel de aire de 10.°, dos carritos en reposo, de 0,5 kg y de 1,5 kg, tienen entre ellos un resorte liviano comprimido y sujeto con un seguro. Al soltar el seguro, el resorte los empuja en sentidos opuestos. Si no hay rozamiento, ¿qué fracción de la energía que almacenaba el resorte se lleva cada carrito?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de 0,5 kg, tres cuartas partes, y el de 1,5 kg, una cuarta parte.",
+        "explicacion": "Correcta. El momento total es cero: 0,5 v₁ = 1,5 v₂, así que v₁ = 3v₂. Energías: ½ × 0,5 × (3v₂)² = 2,25 v₂² y ½ × 1,5 × v₂² = 0,75 v₂²; la razón es 3:1, es decir, 3/4 para el liviano y 1/4 para el pesado."
+      },
+      {
+        "id": "B",
+        "texto": "El de 0,5 kg, la mitad, y el de 1,5 kg, la otra mitad.",
+        "explicacion": "Incorrecta. Supone que, como el resorte empuja a ambos con fuerzas iguales, les da la misma energía. Las fuerzas y los impulsos son iguales, pero el liviano recorre más distancia mientras el resorte se estira, y recibe más trabajo."
+      },
+      {
+        "id": "C",
+        "texto": "El de 0,5 kg, una cuarta parte, y el de 1,5 kg, tres cuartas partes.",
+        "explicacion": "Incorrecta. Invierte el reparto, como si la energía cinética fuera proporcional a la masa con igual rapidez. Las rapideces no son iguales: el liviano sale tres veces más rápido."
+      },
+      {
+        "id": "D",
+        "texto": "El de 0,5 kg, nueve décimas partes, y el de 1,5 kg, una décima parte.",
+        "explicacion": "Incorrecta. Usa bien la razón de rapideces (3:1), pero compara solo sus cuadrados (9:1) y olvida multiplicar por la masa de cada carrito."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: los carritos parten del reposo y no hay fuerzas externas horizontales. Conceptos: el momento lineal se conserva (0,5 v₁ = 1,5 v₂, v₁ = 3v₂) y la energía del resorte pasa a energía cinética. Como los dos momentos tienen igual magnitud, K = p²/2m: la energía es inversamente proporcional a la masa, 3:1. El liviano se lleva 3/4 y el pesado 1/4. Errores: repartir por mitades, invertir la proporción o comparar solo las rapideces al cuadrado (9:1).",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la confusión entre tono e intensidad al explicar el efecto Doppler",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre frecuencia, amplitud, velocidad de propagación y longitud de onda en diversos tipos de ondas mecánicas. [...] Realizo mediciones con instrumentos y equipos adecuados.",
+    "pregunta": "En 11.°, al comentar que la sirena de una ambulancia suena más aguda cuando se acerca y más grave cuando se aleja, varios estudiantes explican que «se oye más aguda porque está más cerca y suena más fuerte». ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Medir con una aplicación de sonómetro el nivel sonoro de un celular que emite un tono fijo mientras pasa en bicicleta por el patio, y graficar los decibeles en el tiempo.",
+        "explicacion": "Incorrecta. Es activa, pero mide solo la intensidad: la gráfica sube al acercarse y baja al alejarse, lo que coincide con la explicación del grupo en lugar de separarla del tono."
+      },
+      {
+        "id": "B",
+        "texto": "Grabar con una aplicación de análisis de frecuencias el tono fijo de un celular, primero quieto y luego en una bicicleta que se acerca, y comparar las dos frecuencias.",
+        "explicacion": "Incorrecta. Es activa y mide frecuencias, pero solo con la fuente acercándose, que es también cuando suena más fuerte: el resultado no distingue entre las dos explicaciones."
+      },
+      {
+        "id": "C",
+        "texto": "Mostrar, con una aplicación de análisis de frecuencias, cómo cambia el tono fijo de un celular que pasa en bicicleta, comparando a igual distancia el acercamiento y el alejamiento.",
+        "explicacion": "Correcta. A la misma distancia, la intensidad es parecida, pero la frecuencia es mayor al acercarse y menor al alejarse: con un tono de 2000 Hz y la bicicleta a 5 m/s, unos 2030 Hz y 1971 Hz. Así se separa el tono (frecuencia) de la intensidad (amplitud) y se ve que el cambio depende del movimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Deducir con el grupo la ecuación del efecto Doppler y calcular la frecuencia que se oye cuando una ambulancia con sirena de 700 Hz se acerca a 20 m/s.",
+        "explicacion": "Incorrecta. Es expositiva: el cálculo puede hacerse sin revisar la explicación del grupo, que confunde la intensidad con el tono."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el grupo atribuye el cambio de tono a la cercanía y a la intensidad. Concepto: el tono depende de la frecuencia, y la intensidad, de la amplitud; en el efecto Doppler, la frecuencia percibida aumenta cuando la fuente se acerca y disminuye cuando se aleja, aunque la distancia sea la misma. Didáctica: comparar acercamiento y alejamiento a igual distancia separa las dos variables; medir solo decibeles o solo el acercamiento no las separa, y deducir la ecuación no confronta la idea.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: posición, orientación y tamaño de la imagen real en una lente convergente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Reconozco y diferencio modelos para explicar la naturaleza y el comportamiento de la luz. [...] Utilizo las matemáticas para modelar, analizar y presentar datos y modelos en forma de ecuaciones, funciones y conversiones.",
+    "pregunta": "Para una práctica de óptica de 11.°, el docente pone una flecha luminosa de 4 cm de altura a 30 cm de una lente convergente de 10 cm de distancia focal. Antes de que los estudiantes busquen la imagen con una pantalla, calcula dónde se formará nítida y cómo será. ¿Qué debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A 7,5 cm de la lente; invertida y de 1 cm de altura.",
+        "explicacion": "Incorrecta. Suma los inversos en lugar de restarlos (1/dᵢ = 1/10 + 1/30). Además, una imagen real no puede formarse más cerca de la lente que el foco."
+      },
+      {
+        "id": "B",
+        "texto": "A 15 cm de la lente; derecha y de 2 cm de altura.",
+        "explicacion": "Incorrecta. La distancia y el tamaño son correctos, pero la imagen real de una lente convergente sale invertida: los rayos se cruzan antes de formarla."
+      },
+      {
+        "id": "C",
+        "texto": "A 7,5 cm de la lente; derecha y de 1 cm de altura.",
+        "explicacion": "Incorrecta. Suma los inversos en lugar de restarlos y, además, da la imagen derecha, como si fuera virtual."
+      },
+      {
+        "id": "D",
+        "texto": "A 15 cm de la lente; invertida y de 2 cm de altura.",
+        "explicacion": "Correcta. 1/dᵢ = 1/f − 1/dₒ = 1/10 − 1/30 = 2/30, así que dᵢ = 15 cm. El aumento es −dᵢ/dₒ = −0,5: la imagen es real, invertida y mide 4 × 0,5 = 2 cm."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el objeto está más allá del doble de la distancia focal (30 cm > 20 cm). Concepto: ecuación de las lentes delgadas, 1/f = 1/dₒ + 1/dᵢ, y aumento m = −dᵢ/dₒ. Cálculo: dᵢ = 15 cm y m = −0,5: imagen real, invertida, de 2 cm, entre f y 2f. Errores: sumar los inversos (7,5 cm, que daría una imagen más cerca que el foco) y olvidar que la imagen real se invierte.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la idea de que al tapar media lente desaparece media imagen",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico, octavo a noveno grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Reconozco y diferencio modelos para explicar la naturaleza y el comportamiento de la luz. [...] Propongo modelos para predecir los resultados de mis experimentos y simulaciones.",
+    "pregunta": "En 11.°, un grupo proyecta en una hoja blanca, con una lupa, la imagen nítida e invertida de la ventana del salón. Cuando el docente pregunta qué pasará si se tapa con una cartulina la mitad superior de la lupa, casi todos predicen que desaparecerá la mitad de la imagen. ¿Qué debe hacer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tapar la mitad superior de la lupa sin mover la hoja, comparar la imagen con la anterior y trazar con el grupo varios rayos que salen de un mismo punto de la ventana.",
+        "explicacion": "Correcta. La imagen sigue completa, pero más tenue: cada punto de la ventana envía luz a toda la lupa, y cualquier parte de ella forma la imagen completa; tapar la mitad solo reduce la luz. Los rayos de un mismo punto, que llegan a toda la lente y convergen en un punto de la imagen, explican lo observado."
+      },
+      {
+        "id": "B",
+        "texto": "Tapar la mitad superior de la ventana con una cortina, comparar la imagen con la anterior y señalar con el grupo qué parte de la imagen se oscurece.",
+        "explicacion": "Incorrecta. Es activa, pero tapa el objeto y no la lente: desaparece media imagen (la de abajo, porque está invertida), lo que confirma la predicción en lugar de ponerla a prueba."
+      },
+      {
+        "id": "C",
+        "texto": "Acercar la hoja hasta casi tocar la lupa, tapar la mitad superior de la lupa y observar con el grupo qué parte de la mancha de luz se oscurece.",
+        "explicacion": "Incorrecta. Es activa, pero la hoja queda lejos del lugar de la imagen: allí solo se ve la sombra de la cartulina sobre la mancha de luz, y el grupo cree confirmar que media imagen desaparece."
+      },
+      {
+        "id": "D",
+        "texto": "Trazar en el tablero los tres rayos principales desde lo alto de la ventana y borrar los que pasan por la mitad tapada, para ver cuáles llegan a la imagen.",
+        "explicacion": "Incorrecta. Es expositiva y no pone a prueba la predicción. Además, los tres rayos principales son solo una herramienta de construcción: borrar algunos no muestra lo que hay que ver, que la imagen sigue completa con menos luz porque cada punto de la ventana envía rayos a toda la lupa."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el grupo cree que cada mitad de la lente forma una mitad de la imagen. Concepto: cada punto del objeto envía rayos a toda la superficie de la lente, y todos convergen en el punto imagen correspondiente; tapar parte de la lente reduce la luz, no la imagen. Didáctica: la prueba debe hacerse con la hoja en el plano de la imagen nítida y explicarse con rayos desde un mismo punto. Tapar el objeto o mirar junto a la lente refuerzan la idea, y borrar rayos principales en el tablero no la pone a prueba.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Saber: frenado de un imán que cae por un tubo de cobre (inducción electromagnética y ley de Lenz)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre campo gravitacional y electrostático y entre campo eléctrico y magnético.",
+    "pregunta": "En 11.°, el docente deja caer un imán de neodimio por un tubo vertical de cobre de un metro: el imán tarda varios segundos en salir, mientras que por un tubo de PVC igual cae casi de inmediato. En su planeación escribió que el cobre frena el imán porque es atraído por él, como el hierro; una colega le objeta que el cobre no es atraído por los imanes y que la causa es otra. ¿Qué explicación debe quedar en la planeación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El campo del imán magnetiza el cobre como lo hace con el hierro, y la atracción entre el imán y las paredes del tubo frena su caída.",
+        "explicacion": "Incorrecta. Es la explicación del docente, y la colega tiene razón: el cobre no es ferromagnético; un imán no levanta un trozo de alambre de cobre ni se pega al tubo en reposo."
+      },
+      {
+        "id": "B",
+        "texto": "Al caer, el imán cambia el flujo magnético en cada tramo del tubo e induce corrientes cuyo campo se opone a ese cambio; la energía se disipa como calor.",
+        "explicacion": "Correcta. Por la ley de Faraday, el cambio de flujo induce corrientes en el cobre, que es buen conductor; por la ley de Lenz, su campo magnético se opone al movimiento del imán. El imán llega pronto a una rapidez límite, y la energía potencial que pierde se convierte en calor en el tubo."
+      },
+      {
+        "id": "C",
+        "texto": "El imán induce en el cobre corrientes que lo atraen hacia las paredes del tubo, y el rozamiento con ellas es el que frena la caída del imán.",
+        "explicacion": "Incorrecta. Reconoce las corrientes inducidas, pero no su efecto: la fuerza que producen se opone al movimiento a lo largo del tubo y frena el imán aunque no toque las paredes; no lo pega a ellas."
+      },
+      {
+        "id": "D",
+        "texto": "Las corrientes inducidas en el cobre frenan el imán solo al entrar y al salir del tubo; adentro, el flujo no cambia y el imán cae libremente.",
+        "explicacion": "Incorrecta. Reconoce la inducción, pero supone que el flujo solo cambia en los extremos. Mientras el imán avanza, el flujo aumenta en los tramos que tiene delante y disminuye en los que deja atrás, de modo que el frenado ocurre a lo largo de todo el tubo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el frenado ocurre en el cobre, que es buen conductor pero no ferromagnético, y no en el PVC. Concepto: un imán en movimiento cambia el flujo magnético a través del tubo e induce corrientes (ley de Faraday) cuyo campo se opone a ese cambio (ley de Lenz), lo que frena el imán en todo el recorrido; la energía se disipa como calor. La colega que objeta tiene razón: el cobre no es atraído por los imanes.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-CNA-080",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "docentes",
+    "modulo": "Saber Disciplinar: Ciencias Naturales",
+    "tema": "Entorno físico",
+    "subtema": "Didáctica: la forma del campo magnético alrededor de un conductor recto con corriente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006)",
+    "articulos": [
+      "Entorno físico: procesos físicos, décimo a undécimo grado",
+      "Me aproximo al conocimiento como científico(a) natural, décimo a undécimo grado"
+    ],
+    "texto_fuente": "Establezco relaciones entre campo gravitacional y electrostático y entre campo eléctrico y magnético. [...] Registro mis observaciones y resultados utilizando esquemas, gráficos y tablas.",
+    "pregunta": "En 11.°, después de ver que la aguja de una brújula se desvía cuando pasa corriente por un cable cercano, los estudiantes dibujan las líneas del campo magnético del cable como rayos que salen de él hacia afuera, igual que las del campo eléctrico de una carga. ¿Qué debe proponer el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ubicar una brújula junto al cable, hacer pasar la corriente unos segundos en un sentido y luego en el otro, y registrar hacia dónde se desvía la aguja en cada caso.",
+        "explicacion": "Incorrecta. Es activa y muestra que el sentido del campo depende del de la corriente, pero con una sola brújula, en un solo punto, el grupo no puede ver la forma de las líneas, que es lo que dibuja mal."
+      },
+      {
+        "id": "B",
+        "texto": "Espolvorear limaduras de hierro sobre una cartulina puesta encima de un imán de barra, y dibujar con el grupo el patrón de líneas que se forma entre los polos.",
+        "explicacion": "Incorrecta. Es activa y muestra líneas de campo, pero las de un imán de barra, no las de un cable con corriente: el grupo no revisa su dibujo."
+      },
+      {
+        "id": "C",
+        "texto": "Pasar un cable vertical por una cartulina horizontal, poner ocho brújulas en círculo a su alrededor, hacer pasar la corriente unos segundos y dibujar cada aguja.",
+        "explicacion": "Correcta. Las agujas quedan tangentes a circunferencias centradas en el cable, sin apuntar hacia él ni alejarse: las líneas del campo magnético de un conductor recto son cerradas y lo rodean. Al invertir la corriente, se invierte su sentido. La corriente se aplica por pocos segundos para no calentar el cable ni agotar la pila."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar la regla de la mano derecha para el campo de un conductor recto y pedir que la apliquen en ejercicios con corrientes en distintas direcciones.",
+        "explicacion": "Incorrecta. El contenido es correcto, pero es expositivo: el grupo aplica la regla sin confrontar su dibujo de líneas radiales."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el grupo traslada al campo magnético la forma radial del campo eléctrico de una carga. Concepto: el campo magnético de un conductor recto forma circunferencias concéntricas alrededor del cable, en planos perpendiculares a él (experimento de Oersted), y su sentido lo da la regla de la mano derecha. Didáctica: varias brújulas alrededor del cable dejan ver la forma de las líneas; una sola brújula o un imán de barra no la muestran, y la regla sola no confronta el dibujo. Seguridad: corriente por pocos segundos.",
+    "fuente_url": "https://www.mineducacion.gov.co/1621/articles-340021_recurso_1.pdf",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

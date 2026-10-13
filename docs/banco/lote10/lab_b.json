@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "TC-LAB-021",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Indemnización por despido sin justa causa en contrato a término indefinido (salario inferior a 10 SMMLV)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 64 inc. 2 y lit. a (modificado por el art. 28 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "En caso de terminación unilateral del contrato de trabajo sin justa causa comprobada, por parte del empleador o si éste da lugar a la terminación unilateral por parte del trabajador por alguna de las justas causas contempladas en la ley, el primero deberá al segundo una indemnización en los términos que a continuación se señalan: [...] En los contratos a término indefinido la indemnización se pagará así: a) Para trabajadores que devenguen un salario inferior a diez (10) salarios mínimos mensuales legales: 1. Treinta (30) días de salario cuando el trabajador tuviere un tiempo de servicio no mayor de un (1) año. 2. Si el trabajador tuviere más de un (1) año de servicio continuo se le pagarán veinte (20) días adicionales de salario sobre los treinta (30) básicos del numeral 1, por cada uno de los años de servicio subsiguientes al primero y proporcionalmente por fracción;",
+    "pregunta": "Un técnico del grupo de atención al ciudadano de una dirección territorial del Ministerio del Trabajo atiende a Julián, a quien su empleador le terminó sin justa causa un contrato a término indefinido. Julián trabajó de forma continua del 1 de marzo de 2023 al 30 de junio de 2026, y su último salario fue de $3.000.000 mensuales, suma inferior a diez salarios mínimos. Quiere saber cuánto le corresponde por la terminación, aparte de la liquidación de salarios y prestaciones. ¿Qué valor debe indicarle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$7.000.000: 30 días por el primer año, 20 días por cada uno de los dos años siguientes y nada por los cuatro meses restantes.",
+        "explicacion": "Incorrecta. Aplica bien la tabla, pero omite la fracción de año. El art. 64 ordena pagar los 20 días adicionales también «proporcionalmente por fracción»: 20 × 4/12 = 6,67 días ($666.667)."
+      },
+      {
+        "id": "B",
+        "texto": "$10.000.000: 30 días por cada uno de los tres años completos y 10 días más por los cuatro meses restantes.",
+        "explicacion": "Incorrecta. Liquida 30 días por cada año, como si fueran cesantías. Con salario inferior a 10 SMMLV, los 30 días cubren solo el primer año; cada año siguiente suma 20 días."
+      },
+      {
+        "id": "C",
+        "texto": "$7.666.667: 30 días por el primer año, 20 días por cada uno de los dos años siguientes y 6,67 días por los cuatro meses.",
+        "explicacion": "Correcta. Primer año: 30 días. Dos años siguientes: 40 días. Cuatro meses: 20 × 4/12 = 6,67 días. Total: 76,67 días × $100.000 de salario diario = $7.666.667."
+      },
+      {
+        "id": "D",
+        "texto": "$5.500.000: 20 días por el primer año, 15 días por cada uno de los dos años siguientes y 5 días por los cuatro meses.",
+        "explicacion": "Incorrecta. Usa la tabla del literal b), que rige para salarios iguales o superiores a 10 SMMLV (20 días más 15 por año adicional). Julián gana menos de ese tope."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: contrato indefinido terminado sin justa causa, 3 años y 4 meses de servicio y salario inferior a 10 SMMLV. Regla: el art. 64 lit. a del CST da 30 días por el primer año y 20 días adicionales por cada año siguiente, y proporcionalmente por fracción. Cálculo: 30 + 20 × 2 + 20 × 4/12 = 76,67 días; con un salario diario de $100.000, son $7.666.667.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-022",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Indemnización por despido sin justa causa en contrato a término fijo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 64 inc. 2 y 3 (modificado por el art. 28 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "En caso de terminación unilateral del contrato de trabajo sin justa causa comprobada, por parte del empleador [...] el primero deberá al segundo una indemnización en los términos que a continuación se señalan: En los contratos a término fijo, el valor de los salarios correspondientes al tiempo que faltare para cumplir el plazo estipulado del contrato; o el del lapso determinado por la duración de la obra o la labor contratada, caso en el cual la indemnización no será inferior a quince (15) días.",
+    "pregunta": "Una auxiliar de nómina prepara la liquidación de Paola, contratada a término fijo por un año, del 1 de febrero de 2026 al 31 de enero de 2027, con un salario de $2.400.000 mensuales. La empresa decidió terminar el contrato sin justa causa y el último día laborado por Paola fue el 31 de agosto de 2026. Además de los salarios y prestaciones causados, ¿qué valor debe incluir la auxiliar por la terminación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$12.000.000, que corresponden a los cinco meses de salario que iban del 1 de septiembre al 31 de enero.",
+        "explicacion": "Correcta. En el contrato a término fijo, la indemnización equivale a los salarios del tiempo que faltaba para cumplir el plazo. De septiembre de 2026 a enero de 2027 hay cinco meses: 5 × $2.400.000 = $12.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$2.400.000, que corresponden a 30 días de salario por tener Paola menos de un año de servicio.",
+        "explicacion": "Incorrecta. Aplica la tabla del contrato a término indefinido (30 días por el primer año). En el contrato a término fijo se pagan los salarios del tiempo que faltaba."
+      },
+      {
+        "id": "C",
+        "texto": "$1.200.000, que corresponden a 15 días de salario, el mínimo que la ley fija para esta indemnización.",
+        "explicacion": "Incorrecta. El mínimo de 15 días es para el contrato por duración de obra o labor, no para el contrato a término fijo."
+      },
+      {
+        "id": "D",
+        "texto": "Ningún valor adicional, porque en el contrato a término fijo basta con avisar la terminación con 30 días.",
+        "explicacion": "Incorrecta. El aviso de 30 días sirve para impedir la prórroga al vencer el plazo; no permite terminar antes sin justa causa ni evita la indemnización."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: contrato a término fijo hasta el 31 de enero de 2027, terminado sin justa causa con último día el 31 de agosto de 2026. Regla: el art. 64 del CST ordena pagar en estos contratos los salarios del tiempo que faltare para cumplir el plazo estipulado. Cálculo: faltaban cinco meses (septiembre a enero) × $2.400.000 = $12.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-023",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Indemnización por despido sin justa causa con salario igual o superior a 10 SMMLV",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 64 lit. b (modificado por el art. 28 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "En los contratos a término indefinido la indemnización se pagará así: [...] b) Para trabajadores que devenguen un salario igual o superior a diez (10), salarios mínimos legales mensuales. 1. Veinte (20) días de salario cuando el trabajador tuviere un tiempo de servicio no mayor de un (1) año. 2. Si el trabajador tuviere más de un (1) año de servicio continuo, se le pagarán quince (15) días adicionales de salario sobre los veinte (20) días básicos del numeral 1 anterior, por cada uno de los años de servicio subsiguientes al primero y proporcionalmente por fracción.",
+    "pregunta": "En una jornada de orientación laboral, un inspector de trabajo atiende a la exdirectora comercial de una empresa privada, despedida sin justa causa después de dos años y seis meses de servicio continuo con contrato a término indefinido. Su salario era de $24.000.000 mensuales, monto que supera diez salarios mínimos. ¿Cuál es la indemnización que le corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$48.000.000, equivalentes a 60 días de salario: 30 por el primer año, 20 por el segundo y 10 por el semestre.",
+        "explicacion": "Incorrecta. Aplica la tabla del literal a), que es para salarios inferiores a 10 SMMLV. Con un salario superior rige el literal b)."
+      },
+      {
+        "id": "B",
+        "texto": "$28.000.000, equivalentes a 35 días de salario: 20 por el primer año y 15 por el segundo, sin contar el semestre.",
+        "explicacion": "Incorrecta. Usa la tabla correcta, pero omite el semestre. Los 15 días adicionales se pagan también proporcionalmente por fracción: 7,5 días más."
+      },
+      {
+        "id": "C",
+        "texto": "$40.000.000, equivalentes a 50 días de salario: 20 por cada año de servicio y 10 por el semestre adicional.",
+        "explicacion": "Incorrecta. Los 20 días cubren solo el primer año; cada año siguiente, y su fracción, suma 15 días, no 20."
+      },
+      {
+        "id": "D",
+        "texto": "$34.000.000, equivalentes a 42,5 días de salario: 20 por el primer año, 15 por el segundo y 7,5 por el semestre.",
+        "explicacion": "Correcta. Con salario igual o superior a 10 SMMLV: 20 días por el primer año, 15 por el segundo y 15 × 0,5 = 7,5 por el semestre. Total: 42,5 días × $800.000 de salario diario = $34.000.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: salario superior a 10 SMMLV y 2 años y 6 meses de servicio. Regla: el art. 64 lit. b del CST da 20 días por el primer año y 15 días adicionales por cada año siguiente, y proporcionalmente por fracción. Cálculo: 20 + 15 + 15 × 0,5 = 42,5 días × $800.000 = $34.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-024",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Terminación por el trabajador con justa causa imputable al empleador",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 62 lit. B num. 6 (modificado por el art. 7 del Decreto 2351 de 1965)",
+      "art. 64 inc. 2 (modificado por el art. 28 de la Ley 789 de 2002)",
+      "art. 47 inc. 2 y par. (modificado por el art. 5 de la Ley 2466 de 2025)"
+    ],
+    "texto_fuente": "B). Por parte del trabajador: [...] 6. El incumplimiento sistemático sin razones válidas por parte del {empleador}, de sus obligaciones convencionales o legales. [...] En caso de terminación unilateral del contrato de trabajo sin justa causa comprobada, por parte del empleador o si éste da lugar a la terminación unilateral por parte del trabajador por alguna de las justas causas contempladas en la ley, el primero deberá al segundo una indemnización [...] En ningún caso se podrá pactar sanción para el empleado que omita el preaviso aquí descrito. PARÁGRAFO. El preaviso indicado no aplica en los eventos de terminación unilateral por parte del trabajador cuando sea por una causa imputable al empleador, de las relacionadas como justas causas para dar por terminado el contrato por parte del trabajador en este código; caso en el cual el trabajador o trabajadora podrá dar por terminado el contrato haciendo expresas las razones o motivos de la determinación y acudir a los Mecanismos Alternativos de Resolución de Conflictos o vía judicial para obtener el pago de la indemnización a la que tendría derecho, en caso de comprobarse el incumplimiento grave de las obligaciones a cargo del empleador",
+    "pregunta": "Marta, auxiliar contable con contrato a término indefinido en una empresa privada, lleva cuatro meses recibiendo solo una parte de su salario, sin que la empresa le dé explicación alguna. Un lunes entrega una carta en la que dice que se retira por ese motivo y no vuelve al día siguiente, sin haber avisado antes. Luego consulta a un técnico de la dirección territorial del Ministerio del Trabajo. ¿Qué debe explicarle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que su retiro equivale a una renuncia, por lo que solo recibe la liquidación y la empresa puede descontarle el preaviso que omitió.",
+        "explicacion": "Incorrecta. No es una renuncia simple: Marta terminó por una justa causa imputable al empleador. Además, la ley prohíbe pactar sanciones por omitir el preaviso."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede reclamar la indemnización del despido sin justa causa, sin que se le exija preaviso, si se prueba el incumplimiento.",
+        "explicacion": "Correcta. El pago incompleto y reiterado del salario, sin razones válidas, es justa causa para que el trabajador termine el contrato (art. 62 lit. B num. 6). Si el empleador da lugar a ella, debe la indemnización del art. 64, y el preaviso no aplica cuando la causa es imputable al empleador (art. 47 par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede reclamar esa indemnización, pero solo después de cumplir los 30 días de preaviso que la ley le exige a quien se retira.",
+        "explicacion": "Incorrecta. El parágrafo del art. 47 (Ley 2466 de 2025) excluye el preaviso de 30 días cuando el trabajador termina por una justa causa imputable al empleador."
+      },
+      {
+        "id": "D",
+        "texto": "Que su retiro no produce efectos mientras el inspector de trabajo no autorice la terminación por culpa de la empresa.",
+        "explicacion": "Incorrecta. La autorización del inspector se exige para despedir a trabajadores con protección especial; el trabajador no la necesita para terminar el contrato por culpa del empleador."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la empresa paga el salario incompleto desde hace cuatro meses sin explicación, y Marta expresó ese motivo al retirarse. Regla: es justa causa del trabajador el incumplimiento sistemático del empleador (art. 62 lit. B num. 6); si el empleador da lugar a ella, debe la indemnización del art. 64; y el parágrafo del art. 47 (Ley 2466 de 2025) excluye el preaviso en ese caso. Conclusión: puede reclamar la indemnización si se comprueba el incumplimiento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-025",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Aviso previo en las justas causas de los numerales 9 a 15 del art. 62",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 62 lit. A num. 9 e inciso final del lit. A (modificado por el art. 7 del Decreto 2351 de 1965)"
+    ],
+    "texto_fuente": "9. El deficiente rendimiento en el trabajo en relación con la capacidad del trabajador y con el rendimiento promedio en labores análogas, cuando no se corrija en un plazo razonable a pesar del requerimiento del {empleador}. [...] En los casos de los numerales 9 a 15 de este artículo, para la terminación del contrato, el {empleador} deberá dar aviso al trabajador con anticipación no menor de quince (15) días.",
+    "pregunta": "Entre marzo y abril de 2026, una empresa de logística le hizo a un técnico de inventarios dos requerimientos escritos, con más de ocho días entre uno y otro, porque su productividad estaba muy por debajo de la de sus compañeros en las mismas tareas. Como no mejoró, en mayo le presentó el cuadro comparativo de rendimiento, recibió sus descargos escritos dentro de los ocho días siguientes y, dentro de los ocho días posteriores, le respondió por escrito que no aceptaba sus justificaciones. La auxiliar de talento humano revisa ahora el borrador de la carta que se le entregará el 3 de junio de 2026, en la que se le informa que su contrato termina ese mismo día por esa razón. ¿Qué debe advertir la auxiliar antes de que se entregue la carta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la baja productividad no es una justa causa de terminación, por lo que la empresa deberá pagar la indemnización por despido.",
+        "explicacion": "Incorrecta. El deficiente rendimiento que no se corrige en un plazo razonable, pese al requerimiento del empleador, es justa causa (art. 62 lit. A num. 9). Aquí hubo requerimientos y plazo, y la empresa ya agotó el trámite previo."
+      },
+      {
+        "id": "B",
+        "texto": "Que, al ser una causal que no depende de una falta del técnico, la empresa necesita antes la autorización del inspector de trabajo.",
+        "explicacion": "Incorrecta. El CST no exige autorización del inspector para esta causal. Esa autorización se exige para despedir, por ejemplo, a una trabajadora en embarazo."
+      },
+      {
+        "id": "C",
+        "texto": "Que la terminación no puede ser inmediata: la empresa debe comunicársela al técnico con una antelación de por lo menos 15 días.",
+        "explicacion": "Correcta. Para las causales de los numerales 9 a 15 del art. 62, el empleador debe dar aviso con anticipación no menor de 15 días. Una carta con efectos el mismo día no cumple ese aviso."
+      },
+      {
+        "id": "D",
+        "texto": "Que la terminación no puede ser inmediata: la empresa debe comunicársela al técnico con una antelación de por lo menos 30 días.",
+        "explicacion": "Incorrecta. El aviso que exige el art. 62 es de no menos de 15 días. Los 30 días corresponden al preaviso del trabajador que termina un contrato a término indefinido."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la causal es el bajo rendimiento no corregido, la empresa ya hizo los dos requerimientos, presentó el cuadro comparativo, recibió los descargos y respondió por escrito, pero la carta termina el contrato el mismo día. Regla: el art. 62 lit. A num. 9 del CST lo considera justa causa, y el inciso final del literal A exige, para los numerales 9 a 15, un aviso con anticipación no menor de 15 días. Conclusión: falta el aviso; la empresa debe comunicar la terminación con al menos 15 días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-026",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Licencias",
+    "subtema": "Licencias remuneradas obligatorias del art. 57 num. 6 (Ley 2466 de 2025)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 57 num. 6 lit. c, f y g (modificado por el art. 15 de la Ley 2466 de 2025)"
+    ],
+    "texto_fuente": "Conceder al trabajador y trabajadora las licencias remuneradas necesarias para los siguientes casos: [...] c) En caso de grave calamidad doméstica debidamente comprobada, entendiéndose como todo suceso personal, familiar, hasta el tercer grado de consanguinidad, segundo de afinidad o primero civil, caso fortuito o fuerza mayor cuya gravedad afecte el normal desarrollo de las actividades del trabajador; [...] f) Para asistir a las obligaciones escolares como acudiente, en los que resulte obligatoria la asistencia del trabajador por requerimiento del centro educativo. g) Para atender citaciones judiciales, administrativas y legales.",
+    "pregunta": "Una auxiliar de talento humano de una empresa privada recibe, en la misma semana, cuatro solicitudes de permiso con sus soportes: 1) un trabajador citado por un juzgado para declarar como testigo; 2) una trabajadora a quien el colegio de su hijo le exige asistir, como acudiente, a una reunión obligatoria; 3) un trabajador que quiere renovar su licencia de conducción en el organismo de tránsito; 4) una trabajadora que pide dos días para asistir al grado universitario de su hermana. ¿Cuáles debe tramitar como licencias remuneradas que el empleador está obligado a conceder según el CST?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las solicitudes 1 y 2.",
+        "explicacion": "Correcta. La Ley 2466 de 2025 incluyó entre las licencias remuneradas obligatorias las citaciones judiciales, administrativas y legales (lit. g) y las obligaciones escolares del acudiente cuando el centro educativo exige su asistencia (lit. f)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la solicitud 1.",
+        "explicacion": "Incorrecta. Desconoce el literal f), que la reforma agregó: la asistencia obligatoria del acudiente por requerimiento del colegio también es licencia remunerada."
+      },
+      {
+        "id": "C",
+        "texto": "Las solicitudes 1, 2 y 3.",
+        "explicacion": "Incorrecta. Renovar la licencia de conducción es un trámite voluntario, no una citación de una autoridad. No encaja en el literal g)."
+      },
+      {
+        "id": "D",
+        "texto": "Las solicitudes 1, 2 y 4.",
+        "explicacion": "Incorrecta. Un grado universitario no es una grave calamidad doméstica ni está en la lista del numeral 6. Puede concederse como permiso, pero no es obligatorio."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: solo dos solicitudes corresponden a supuestos de la lista legal: una citación judicial y una reunión escolar obligatoria. Regla: el art. 57 num. 6 del CST (mod. art. 15 de la Ley 2466 de 2025) obliga a conceder licencia remunerada para atender citaciones judiciales, administrativas y legales, y para las obligaciones escolares del acudiente cuando el centro educativo exige su asistencia. Conclusión: las solicitudes 1 y 2.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-027",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Régimen disciplinario laboral",
+    "subtema": "Término mínimo de defensa y tope de la suspensión por primera falta",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 115 num. 4 y par. 1 y 2 (modificado por el art. 7 de la Ley 2466 de 2025)",
+      "art. 112"
+    ],
+    "texto_fuente": "4. La indicación de un término durante el cual el trabajador o trabajadora pueda manifestarse frente a los motivos del proceso, controvertir las pruebas y allegar las que considere necesarias para sustentar su defensa el cual en todo caso no podrá ser inferior a 5 días. [...] PARÁGRAFO 1o. Este procedimiento deberá realizarse en un término razonable atendiendo al principio de inmediatez, sin perjuicio de que esté estipulado un término diferente en Convención Colectiva, Laudo Arbitral o Reglamento Interno de Trabajo. PARÁGRAFO 2o. Si el trabajador o trabajadora se encuentra afiliado a una organización sindical, podrá estar asistido o acompañado por uno (1) o dos (2) representantes del sindicato [...] Cuando la sanción consista en suspensión del trabajo, ésta no puede exceder de ocho (8) días por la primera vez, ni de dos (2) meses en caso de reincidencia de cualquier grado.",
+    "pregunta": "Un inspector de trabajo revisa, por queja de un trabajador no sindicalizado, el proceso disciplinario que le adelantó una empresa de 45 trabajadores. En el expediente constan: la comunicación escrita de apertura con los hechos imputados, el traslado de todas las pruebas, un plazo de tres días para presentar descargos y pruebas, una decisión motivada, la posibilidad de impugnarla ante la gerencia y una sanción de diez días de suspensión. Es la primera vez que se sanciona a este trabajador. ¿Qué incumplimientos debe señalar el inspector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el plazo de tres días, pues la suspensión de diez días está dentro del máximo de dos meses que permite la ley.",
+        "explicacion": "Incorrecta. El tope de dos meses es para la reincidencia. Por la primera vez, la suspensión no puede exceder de ocho días."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la suspensión de diez días, pues el plazo para descargos lo puede fijar libremente el reglamento interno de trabajo.",
+        "explicacion": "Incorrecta. El parágrafo 1 permite que el reglamento fije el término del procedimiento, pero el término para la defensa del numeral 4 no puede ser inferior a 5 días en todo caso."
+      },
+      {
+        "id": "C",
+        "texto": "El plazo de tres días y la falta de dos representantes sindicales en la diligencia, cuya presencia es obligatoria.",
+        "explicacion": "Incorrecta. El acompañamiento sindical es una opción del trabajador afiliado a un sindicato, y este no lo está. No es un requisito del procedimiento."
+      },
+      {
+        "id": "D",
+        "texto": "El plazo de tres días, inferior al mínimo legal, y los diez días de suspensión, que superan el tope para quien no es reincidente.",
+        "explicacion": "Correcta. El art. 115 num. 4 exige un término para la defensa no inferior a 5 días, y el art. 112 limita la suspensión a ocho días la primera vez. El proceso falló en ambos puntos."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: se dieron tres días para los descargos y se impusieron diez días de suspensión por una primera falta. Regla: el art. 115 del CST (mod. art. 7 de la Ley 2466 de 2025) exige un término de defensa no inferior a 5 días, y el art. 112 limita la suspensión a 8 días la primera vez y a 2 meses en la reincidencia. Conclusión: hay dos incumplimientos; el acompañamiento sindical es solo una opción del afiliado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-028",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Régimen disciplinario laboral",
+    "subtema": "Procedimiento disciplinario en micro y pequeñas empresas",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 115 par. 6 (modificado por el art. 7 de la Ley 2466 de 2025)"
+    ],
+    "texto_fuente": "PARÁGRAFO 6o. Este procedimiento no aplicará a los trabajadores del hogar, ni a las micro y pequeñas empresas de menos de diez (10) trabajadores, definidas en el Decreto 957 de 2019. Este tipo de empleadores solo tendrá la obligación de escuchar previamente al trabajador sobre los hechos que se le imputan, respetando las garantías del derecho de defensa y del debido proceso.",
+    "pregunta": "La propietaria de una panadería con siete trabajadores, clasificada como microempresa según el Decreto 957 de 2019, quiere sancionar a un empleado que ha llegado tarde varias veces, conducta que su reglamento de trabajo prevé como falta, con la sanción correspondiente. Consulta a un técnico de la dirección territorial del Ministerio del Trabajo qué debe hacer antes de imponer la sanción. ¿Qué debe responderle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Agotar todas las etapas del art. 115: apertura formal, cargos por escrito, traslado de pruebas, cinco días para la defensa y decisión motivada.",
+        "explicacion": "Incorrecta. El parágrafo 6 del art. 115 excluye de ese procedimiento a las micro y pequeñas empresas de menos de 10 trabajadores, como esta panadería."
+      },
+      {
+        "id": "B",
+        "texto": "Permitirle al empleado dar su versión y defenderse de los retrasos antes de decidir, sin necesidad de agotar todas las etapas del art. 115.",
+        "explicacion": "Correcta. Por ser microempresa con menos de 10 trabajadores, no está obligada al procedimiento completo, pero sí a escuchar previamente al empleado sobre los hechos que se le imputan, con respeto del derecho de defensa y del debido proceso (art. 115 par. 6)."
+      },
+      {
+        "id": "C",
+        "texto": "Imponer la sanción del reglamento y comunicársela por escrito; el empleado podrá dar su versión después, al impugnar la decisión.",
+        "explicacion": "Incorrecta. La excepción no suprime la audiencia previa: la microempresa debe escuchar al trabajador antes de sancionarlo, no después. Una impugnación posterior no reemplaza ese deber."
+      },
+      {
+        "id": "D",
+        "texto": "Esperar a ajustar su reglamento al procedimiento de la reforma, porque mientras no lo haga no puede imponer sanciones disciplinarias.",
+        "explicacion": "Incorrecta. El par. 4 del art. 115 da un plazo para actualizar el reglamento, pero no suspende la facultad de sancionar. Y a esta microempresa la ley solo le exige oír antes al empleado (par. 6)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la panadería es una microempresa con siete trabajadores. Regla: el par. 6 del art. 115 del CST (mod. art. 7 de la Ley 2466 de 2025) excluye del procedimiento completo a las micro y pequeñas empresas de menos de 10 trabajadores, pero las obliga a escuchar previamente al trabajador sobre los hechos, respetando el derecho de defensa y el debido proceso. Conclusión: debe oír al empleado antes de sancionarlo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-029",
+    "version": 3,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Indemnización moratoria",
+    "subtema": "Tope de 24 meses de la sanción de un salario diario por cada día de retardo (salario superior a un SMMLV)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 65 num. 1 inc. 1 y par. 2 (modificados por el art. 29 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "Si a la terminación del contrato, el empleador no paga al trabajador los salarios y prestaciones debidas, salvo los casos de retención autorizados por la ley o convenidos por las partes, debe pagar al asalariado, como indemnización, una suma igual al último salario diario por cada día de retardo, hasta por veinticuatro (24) meses, o hasta cuando el pago se verifique si el período es menor. [...] PARÁGRAFO 2o. Lo dispuesto en el inciso 1o. de este artículo solo se aplicará a los trabajadores que devenguen más de un (1) salario mínimo mensual vigente. Para los demás seguirá en plena vigencia lo dispuesto en el artículo 65 del Código Sustantivo de Trabajo vigente.",
+    "pregunta": "Un técnico de una dirección territorial del Ministerio del Trabajo orienta a Andrés, cuyo contrato terminó el 31 de enero de 2024. Andrés devengaba $4.500.000 mensuales, más de un salario mínimo, y la empresa nunca le pagó los salarios y prestaciones que le adeudaba al terminar, aunque no discutía la deuda ni tenía razones atendibles para no pagarla. El 31 de octubre de 2025 Andrés presentó una demanda ordinaria laboral, que sigue en curso, y el 31 de julio de 2026 la empresa le ofrece pagar la deuda. Sin contar intereses, ¿qué valor alcanza la indemnización de un salario diario por cada día de retardo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$108.000.000: el salario de 24 meses, porque para su nivel de salario la sanción diaria tiene ese tope.",
+        "explicacion": "Correcta. Para quien devenga más de un salario mínimo, el art. 65 num. 1 (mod. Ley 789 de 2002) fija un salario diario por cada día de retardo «hasta por veinticuatro (24) meses». La empresa no tenía razones atendibles para no pagar, así que no hay buena fe que la exonere; Andrés demandó dentro de ese lapso y el pago llega en el mes 30, de modo que la sanción diaria alcanza su tope: 24 × $4.500.000 = $108.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$135.000.000: el salario de los 30 meses corridos desde la terminación del contrato hasta el día del pago.",
+        "explicacion": "Incorrecta. La sanción diaria sin tope, hasta el pago, es la del texto original del art. 65, que sigue rigiendo solo para quienes no devengan más de un salario mínimo (par. 2). Andrés gana más."
+      },
+      {
+        "id": "C",
+        "texto": "$0: como el pago llega después de 24 meses, toda la mora se liquida solo con intereses moratorios.",
+        "explicacion": "Incorrecta. Superar los 24 meses no borra la indemnización ya causada: el art. 65 reconoce el salario diario por cada día de retardo hasta por 24 meses. Además, Andrés presentó su demanda dentro de ese plazo."
+      },
+      {
+        "id": "D",
+        "texto": "$94.500.000: el salario de los 21 meses corridos entre la terminación y la presentación de la demanda.",
+        "explicacion": "Incorrecta. La demanda no detiene la sanción diaria: el retardo se cuenta desde la terminación hasta el pago, con el tope de 24 meses para quien gana más de un salario mínimo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: salario superior a un SMMLV, empleador sin razones atendibles para no pagar, demanda presentada el 31/10/2025 (dentro de los 24 meses) y oferta de pago el 31/07/2026, 30 meses después de la terminación. Regla: el art. 65 num. 1 del CST (mod. Ley 789 de 2002) fija un salario diario por cada día de retardo hasta por 24 meses, o hasta el pago si el período es menor; el par. 2 limita esta regla a quien gana más de un SMMLV. Cálculo: 24 × $4.500.000 = $108.000.000. Conclusión: la sanción diaria llega a su tope.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-030",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Terminación del contrato",
+    "subtema": "Acreditación del pago de aportes a la seguridad social al terminar el contrato",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 65 par. 1 (modificado por el art. 29 de la Ley 789 de 2002)"
+    ],
+    "texto_fuente": "Para proceder a la terminación del contrato de trabajo establecido en el artículo 64 del Código Sustantivo del Trabajo, el empleador le deberá informar por escrito al trabajador, a la última dirección registrada, dentro de los sesenta (60) días siguientes a la terminación del contrato, el estado de pago de las cotizaciones de Seguridad Social y parafiscalidad sobre los salarios de los últimos tres meses anteriores a la terminación del contrato, adjuntando los comprobantes de pago que los certifiquen. Si el empleador no demuestra el pago de dichas cotizaciones, la terminación del contrato no producirá efecto. Sin embargo, el empleador podrá pagar las cotizaciones durante los sesenta (60) días siguientes, con los intereses de mora.",
+    "pregunta": "Una auxiliar de nómina prepara el cierre del contrato de un trabajador despedido sin justa causa y encuentra que la empresa no pagó los aportes a seguridad social del último mes trabajado. ¿Qué consecuencia prevé el CST si la empresa no acredita que pagó esas cotizaciones, y cómo puede evitarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se causa la sanción de un día de salario por cada día de retardo; la empresa la evita si paga los aportes antes de terminar el contrato.",
+        "explicacion": "Incorrecta. Confunde esta regla con la indemnización moratoria del num. 1 del art. 65, que se refiere a salarios y prestaciones no pagados."
+      },
+      {
+        "id": "B",
+        "texto": "El inspector de trabajo impone una multa, pero el despido produce efectos; la empresa la evita si paga los aportes en los 30 días siguientes.",
+        "explicacion": "Incorrecta. La consecuencia prevista es que la terminación no produce efecto, y el plazo para pagar es de 60 días, no de 30."
+      },
+      {
+        "id": "C",
+        "texto": "La terminación queda sin efecto; la empresa puede evitarlo si paga esas cotizaciones, con intereses de mora, en los 60 días siguientes.",
+        "explicacion": "Correcta. Si el empleador no demuestra el pago de las cotizaciones de los últimos tres meses, la terminación no produce efecto, pero puede pagarlas durante los 60 días siguientes con intereses de mora."
+      },
+      {
+        "id": "D",
+        "texto": "El trabajador puede exigir el doble de los aportes que se le deben; la empresa lo evita si los paga en los 5 días hábiles siguientes.",
+        "explicacion": "Incorrecta. El CST no prevé el pago doble de los aportes. La consecuencia es la ineficacia de la terminación mientras no se acredite el pago."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: despido sin justa causa con los aportes del último mes sin pagar. Regla: el par. 1 del art. 65 del CST obliga a informar por escrito, dentro de los 60 días siguientes, el estado de pago de las cotizaciones de los últimos tres meses; si no se demuestra el pago, la terminación no produce efecto, pero el empleador puede pagarlas en esos 60 días con intereses de mora. Conclusión: debe pagar con intereses dentro del plazo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-031",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Prima de servicios proporcional al tiempo trabajado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 306 (modificado por el art. 1 de la Ley 1788 de 2016)"
+    ],
+    "texto_fuente": "El empleador está obligado a pagar a su empleado o empleados, la prestación social denominada prima de servicios que corresponderá a 30 días de salario por año, el cual se reconocerá en dos pagos, así: la mitad máximo el 30 de junio y la otra mitad a más tardar los primeros veinte días de diciembre. Su reconocimiento se hará por todo el semestre trabajado o proporcionalmente al tiempo trabajado.",
+    "pregunta": "Una técnica de nómina liquida la prima de servicios del primer semestre de 2026 de un trabajador que ingresó a la empresa el 1 de abril de 2026 con un salario fijo de $2.700.000 mensuales. El trabajador no recibe auxilio de transporte ni otros pagos. ¿Cuánto debe pagarle y cuál es el plazo máximo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$1.350.000, a más tardar el 30 de junio de 2026.",
+        "explicacion": "Incorrecta. Liquida el semestre completo (15 días de salario). El trabajador laboró solo tres de los seis meses, y la prima se reconoce en proporción al tiempo trabajado."
+      },
+      {
+        "id": "B",
+        "texto": "$675.000, a más tardar el 30 de junio de 2026.",
+        "explicacion": "Correcta. La prima es de 30 días de salario por año, proporcional al tiempo trabajado: $2.700.000 × 90 / 360 = $675.000. El pago del primer semestre vence el 30 de junio."
+      },
+      {
+        "id": "C",
+        "texto": "$675.000, dentro de los primeros 20 días de diciembre de 2026.",
+        "explicacion": "Incorrecta. El valor es correcto, pero el plazo de diciembre es para la segunda mitad. La del primer semestre se paga máximo el 30 de junio."
+      },
+      {
+        "id": "D",
+        "texto": "$337.500, a más tardar el 30 de junio de 2026.",
+        "explicacion": "Incorrecta. Calcula con 15 días de salario por año, cuando la prima es de 30 días por año. Reduce a la mitad un valor que ya era proporcional."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el trabajador laboró tres meses del primer semestre (abril a junio) con un salario de $2.700.000. Regla: el art. 306 del CST fija la prima en 30 días de salario por año, pagadera la mitad máximo el 30 de junio y proporcional al tiempo trabajado. Cálculo: $2.700.000 × 90 / 360 = $675.000, a más tardar el 30 de junio de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-032",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Salario base de las cesantías cuando el salario varió en los tres últimos meses",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 249",
+      "art. 253 num. 1 (modificado por el art. 17 del Decreto 2351 de 1965)"
+    ],
+    "texto_fuente": "Todo {empleador} esta obligado a pagar a sus trabajadores, y a las demás personas que se indican en este Capítulo, al terminar el contrato de trabajo, como auxilio de cesantía, un mes de salario por cada año de servicios y proporcionalmente por fracción de año. [...] 1. Para liquidar el auxilio de Cesantía se toma como base el último salario mensual devengado por el trabajador, siempre que no haya tenido variación en los tres (3) últimos meses. En el caso contrario y en el de los salarios variables, se tomará como base el promedio de lo devengado en el último año de servicios o en todo el tiempo servido si fuere menor de un año.",
+    "pregunta": "Un auxiliar de nómina liquida las cesantías de Lucía, quien ingresó a la empresa el 1 de enero de 2026 y cuyo contrato terminó el 30 de septiembre de 2026. Lucía devengó un salario básico de $3.000.000 mensuales de enero a julio y, por un ascenso, de $3.600.000 desde el 1 de agosto. No recibió otros pagos ni auxilio de transporte. ¿Cuál es el valor de sus cesantías?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.700.000, liquidadas con el último salario de $3.600.000 por los nueve meses laborados.",
+        "explicacion": "Incorrecta. El último salario solo sirve de base si no tuvo variación en los tres últimos meses, cualquiera que sea la causa del cambio. El de Lucía subió el 1 de agosto, dentro del período de julio a septiembre."
+      },
+      {
+        "id": "B",
+        "texto": "$2.250.000, liquidadas con el salario de $3.000.000 que Lucía devengó la mayor parte del tiempo.",
+        "explicacion": "Incorrecta. Ninguna regla toma el salario que predominó. Si hubo variación, la base es el promedio de lo devengado."
+      },
+      {
+        "id": "C",
+        "texto": "$2.475.000, liquidadas con $3.300.000, el promedio simple de los dos salarios que tuvo Lucía.",
+        "explicacion": "Incorrecta. Promedia los dos valores de salario sin tener en cuenta cuántos meses rigió cada uno. La norma promedia lo devengado en todo el tiempo servido."
+      },
+      {
+        "id": "D",
+        "texto": "$2.350.000, liquidadas con $3.133.333, el promedio de lo que Lucía devengó en los nueve meses.",
+        "explicacion": "Correcta. Como el salario varió en los tres últimos meses (aunque fuera por un ascenso y no se trate de un salario variable) y Lucía trabajó menos de un año, la base es el promedio de todo el tiempo servido: (3.000.000 × 7 + 3.600.000 × 2) / 9 = $3.133.333. Cesantías: 3.133.333 × 270 / 360 = $2.350.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el salario cambió el 1 de agosto, dentro de los tres últimos meses, y Lucía trabajó menos de un año. Regla: el art. 253 num. 1 del CST toma el último salario solo si no varió en los tres últimos meses; si varió, promedia lo devengado en todo el tiempo servido cuando es menor de un año. El art. 249 da un mes de salario por año y proporcional por fracción. Cálculo: (3.000.000 × 7 + 3.600.000 × 2) / 9 = 3.133.333; × 270 / 360 = $2.350.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-033",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Intereses a las cesantías en la liquidación definitiva",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1072 de 2015",
+    "articulos": [
+      "art. 2.2.1.3.4",
+      "art. 2.2.1.3.5"
+    ],
+    "texto_fuente": "Todo empleador obligado a pagar cesantía a sus trabajadores, les reconocerá y pagará intereses del 12% anual sobre los saldos que en 31 de diciembre de cada año, o en las fechas de retiro definitivo del trabajador, o de liquidación parcial de cesantía, tengan a su favor por concepto de cesantía. Los intereses de que trata el inciso anterior deberán pagarse en el mes de enero del año siguiente a aquel en que se causaron; o en la fecha de retiro del trabajador o dentro del mes siguiente a la liquidación parcial de cesantía, cuando se produjere antes del 31 de diciembre del respectivo período anual, en cuantía proporcional al lapso transcurrido del año. [...] En los casos de pago definitivo de cesantía la liquidación de intereses de hará proporcionalmente al tiempo de servicio transcurrido entre el 31 de diciembre inmediatamente anterior y la fecha del retiro.",
+    "pregunta": "El contrato de Ramiro terminó el 30 de junio de 2026. La técnica de nómina calculó sus cesantías del 1 de enero al 30 de junio de 2026 en $1.800.000; no hay otros saldos ni retiros parciales. Ahora debe liquidar los intereses sobre esas cesantías. ¿Cuánto debe pagarle a Ramiro por intereses y cuándo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$108.000, que se pagan en la fecha del retiro.",
+        "explicacion": "Correcta. Los intereses son del 12% anual, proporcionales al tiempo transcurrido desde el 31 de diciembre anterior: 1.800.000 × 12% × 180 / 360 = $108.000. Como el retiro ocurre antes del 31 de diciembre, se pagan en la fecha del retiro."
+      },
+      {
+        "id": "B",
+        "texto": "$216.000, que se pagan en la fecha del retiro.",
+        "explicacion": "Incorrecta. Aplica el 12% completo, como si hubiera transcurrido todo el año. En la liquidación definitiva los intereses son proporcionales: seis meses dan el 6%."
+      },
+      {
+        "id": "C",
+        "texto": "$108.000, que se pagan en enero de 2027.",
+        "explicacion": "Incorrecta. El valor es correcto, pero enero del año siguiente es el plazo cuando las cesantías se liquidan a 31 de diciembre. Si el retiro ocurre antes, se pagan en la fecha del retiro."
+      },
+      {
+        "id": "D",
+        "texto": "$216.000, que se pagan en enero de 2027.",
+        "explicacion": "Incorrecta. Falla en el valor y en la fecha: no aplica la proporción del tiempo transcurrido y aplaza un pago que se debe en la fecha del retiro."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: retiro el 30 de junio de 2026 con cesantías de $1.800.000 del semestre. Regla: los arts. 2.2.1.3.4 y 2.2.1.3.5 del Decreto 1072 de 2015 fijan intereses del 12% anual, proporcionales al tiempo transcurrido entre el 31 de diciembre anterior y el retiro, y pagaderos en la fecha del retiro cuando este ocurre antes del 31 de diciembre. Cálculo: 1.800.000 × 12% × 180 / 360 = $108.000.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-034",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Pérdida del auxilio de cesantía por la causa de terminación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 250",
+      "art. 62 lit. A num. 6 (modificado por el art. 7 del Decreto 2351 de 1965)"
+    ],
+    "texto_fuente": "1. El trabajador perderá el derecho de auxilio de cesantías cuando el contrato de trabajo termina por alguna de las siguientes causas: a). Todo acto delictuoso cometido contra el {empleador} o sus parientes dentro del segundo grado de consanguinidad y primero en afinidad, o el personal directivo de la empresa; [...] b). Todo daño material grave causado intencionalmente a los edificios, obras, maquinaria y materias primas, instrumentos y demás objetos relacionados con el trabajo, c). El que el trabajador revele los secretos técnicos o comerciales o dé a conocer asuntos de carácter reservado, con perjuicio grave para la empresa. 2. En estos casos el {empleador} podrá abstenerse de efectuar el pago correspondiente hasta que la justicia decida. [...] 6. Cualquier violación grave de las obligaciones o prohibiciones especiales que incumben al trabajador de acuerdo con los artículos 58 y 60 del Código Sustantivo del Trabajo, o cualquier falta grave calificada como tal en pactos o convenciones colectivas, fallos arbitrales, contratos individuales o reglamentos.",
+    "pregunta": "En la misma semana, una empresa terminó con justa causa los contratos de dos trabajadores. Felipe faltó tres días seguidos sin permiso, conducta que el reglamento califica como falta grave. Sonia entregó a un competidor la lista de precios y clientes que la empresa mantenía en reserva, lo que le hizo perder sus dos clientes más grandes. La auxiliar de nómina debe liquidar a ambos. ¿Qué debe hacer con el auxilio de cesantía de cada uno?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pagar las cesantías de ambos, porque la terminación con justa causa no afecta las prestaciones sociales ya causadas.",
+        "explicacion": "Incorrecta. Revelar asuntos reservados con perjuicio grave para la empresa es una de las causas que hacen perder la cesantía (art. 250 lit. c)."
+      },
+      {
+        "id": "B",
+        "texto": "Abstenerse de pagar las cesantías de ambos hasta que decida la justicia, porque los dos incurrieron en faltas graves.",
+        "explicacion": "Incorrecta. El art. 250 solo enumera tres causas de pérdida de la cesantía. Las ausencias calificadas como falta grave son justa causa de despido, pero no están entre ellas."
+      },
+      {
+        "id": "C",
+        "texto": "Pagar las de Felipe y retener las de Sonia hasta que decida la justicia, porque solo la conducta de ella acarrea esa pérdida.",
+        "explicacion": "Correcta. La conducta de Sonia encaja en el art. 250 lit. c (revelar asuntos reservados con perjuicio grave), que permite al empleador abstenerse de pagar hasta que la justicia decida. La de Felipe es justa causa de despido (art. 62 lit. A num. 6), pero no causa de pérdida de la cesantía."
+      },
+      {
+        "id": "D",
+        "texto": "Pagar las de Sonia y retener las de Felipe hasta que decida la justicia, porque sus ausencias causaron un perjuicio directo.",
+        "explicacion": "Incorrecta. Invierte la regla: las ausencias no están entre las causas del art. 250, y la revelación de información reservada con perjuicio grave sí lo está."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Sonia reveló información reservada y causó un perjuicio grave; Felipe faltó sin permiso, conducta calificada como falta grave. Regla: el art. 250 del CST enumera tres causas de pérdida de la cesantía (acto delictuoso contra el empleador o directivos, daño material grave e intencional, y revelación de secretos o asuntos reservados con perjuicio grave) y permite abstenerse de pagar hasta que la justicia decida. Conclusión: se pagan las de Felipe y se retienen las de Sonia.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-035",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Vacaciones",
+    "subtema": "Límite de la compensación en dinero de vacaciones con el contrato vigente",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 186 num. 1",
+      "art. 189 num. 1 (modificado por el art. 20 de la Ley 1429 de 2010)",
+      "art. 190 num. 1 (modificado por el art. 6 del Decreto 13 de 1967)"
+    ],
+    "texto_fuente": "1. Los trabajadores que hubieren prestado sus servicios durante un año tienen derecho a quince (15) días hábiles consecutivos de vacaciones remuneradas. [...] Empleador y trabajador, podrán acordar por escrito, previa solicitud del trabajador, que se pague en dinero hasta la mitad de las vacaciones. [...] 1. En todo caso, el trabajador gozara anualmente, por lo menos de seis (6) días hábiles continuos de vacaciones, los que no son acumulables.",
+    "pregunta": "Rocío, técnica de una empresa privada y mayor de edad, cumplió en junio de 2026 su primer año de servicio. Pidió por escrito que en la nómina de julio le pagaran en dinero 9 de sus 15 días hábiles de vacaciones y que, desde el día siguiente al pago, le concedieran los 6 restantes para disfrutarlos de forma continua. La empresa aceptó y ambos firmaron el acuerdo. Antes de cerrar la nómina, la auxiliar de talento humano lo revisa. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el acuerdo es válido: Rocío disfrutará los seis días hábiles continuos que deben tomarse cada año, y el resto puede pagarse.",
+        "explicacion": "Incorrecta. Los seis días hábiles continuos del art. 190 son el mínimo que debe disfrutarse cada año y no puede acumularse; no autorizan a pagar en dinero el resto. La compensación tiene su propio límite en el art. 189: hasta la mitad de las vacaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Que el acuerdo no puede aplicarse así: lo que se pague en dinero no puede pasar de la mitad de las vacaciones del período.",
+        "explicacion": "Correcta. El art. 189 num. 1 (mod. Ley 1429 de 2010) permite acordar por escrito, previa solicitud del trabajador, el pago en dinero de hasta la mitad de las vacaciones. Con 15 días hábiles, la mitad es 7,5 días; los 9 días pactados la superan."
+      },
+      {
+        "id": "C",
+        "texto": "Que el acuerdo requiere además la autorización del Ministerio del Trabajo, por ser una compensación con el contrato vigente.",
+        "explicacion": "Incorrecta. Desde la Ley 1429 de 2010 basta el acuerdo escrito, previa solicitud del trabajador; no se exige permiso del Ministerio. El problema del acuerdo es otro: el número de días que se pagan."
+      },
+      {
+        "id": "D",
+        "texto": "Que el acuerdo es válido: hubo solicitud escrita de Rocío y aceptación escrita de la empresa, que es lo que exige la ley.",
+        "explicacion": "Incorrecta. La solicitud y el acuerdo escritos son necesarios, pero no suficientes: lo que se pague en dinero no puede exceder la mitad de las vacaciones (art. 189 num. 1)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se pactó pagar en dinero 9 de los 15 días hábiles de vacaciones. Regla: el art. 189 num. 1 del CST (mod. Ley 1429 de 2010) permite pagar en dinero, por acuerdo escrito y previa solicitud del trabajador, hasta la mitad de las vacaciones; los seis días hábiles del art. 190 son el mínimo que debe disfrutarse cada año, no la medida de lo que puede pagarse. Cálculo: la mitad de 15 días es 7,5, y 9 la supera. Conclusión: el acuerdo excede el límite legal.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-036",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Vacaciones",
+    "subtema": "Acumulación de vacaciones",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 190 (modificado por el art. 6 del Decreto 13 de 1967)"
+    ],
+    "texto_fuente": "1. En todo caso, el trabajador gozara anualmente, por lo menos de seis (6) días hábiles continuos de vacaciones, los que no son acumulables. 2. Las partes pueden convenir en acumular los días restantes de vacaciones hasta por dos años. 3. La acumulación puede ser hasta por cuatro (4) años, cuando se trate de trabajadores técnicos, especializados, de confianza, de manejo o de extranjeros que presten sus servicios en lugares distintos a los de la residencia de sus familiares.",
+    "pregunta": "La recepcionista de un hotel, mayor de edad, con un cargo operativo de atención al público y contrato a término indefinido, quiere reunir el mayor número posible de días de vacaciones para hacer un viaje largo. ¿Qué le permite el CST?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acumular los quince días de cada año hasta por cuatro años, si la empresa lo acepta por escrito y no se afecta el servicio.",
+        "explicacion": "Incorrecta. Los cuatro años son para trabajadores técnicos, especializados, de confianza, de manejo o extranjeros lejos de su familia. Además, seis días de cada año no son acumulables."
+      },
+      {
+        "id": "B",
+        "texto": "Acumular los quince días de cada año hasta por dos años, sin disfrutar ningún día de descanso mientras tanto.",
+        "explicacion": "Incorrecta. Cada año debe disfrutar por lo menos seis días hábiles continuos, que no son acumulables."
+      },
+      {
+        "id": "C",
+        "texto": "No acumular días: las vacaciones de cada período deben disfrutarse completas dentro del año siguiente a aquel en que se causan.",
+        "explicacion": "Incorrecta. La prohibición total de acumular rige para los menores de 18 años. Para los demás trabajadores, la acumulación parcial es posible por acuerdo."
+      },
+      {
+        "id": "D",
+        "texto": "Acumular por acuerdo, hasta por dos años, los días que pasen de seis, y disfrutar cada año al menos seis días continuos.",
+        "explicacion": "Correcta. El art. 190 obliga a disfrutar cada año al menos 6 días hábiles continuos, no acumulables, y permite convenir la acumulación del resto hasta por dos años."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: es una trabajadora mayor de edad con un cargo operativo, sin las calidades especiales del num. 3. Regla: el art. 190 del CST obliga a disfrutar cada año al menos 6 días hábiles continuos, no acumulables, y permite convenir la acumulación del resto hasta por dos años; los cuatro años son para técnicos, especializados, de confianza, de manejo o extranjeros. Conclusión: puede acumular los días que excedan de seis hasta por dos años.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-037",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Prestaciones sociales",
+    "subtema": "Calzado y vestido de labor (dotación)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 230 (modificado por el art. 7 de la Ley 11 de 1984)",
+      "art. 232 (modificado por el art. 8 de la Ley 11 de 1984)"
+    ],
+    "texto_fuente": "Todo {empleador} que habitualmente ocupe uno (1) o más trabajadores permanentes, deberá suministrar cada cuatro (4) meses, en forma gratuita, un (1) par de zapatos y un (1) vestido de labor al trabajador, cuya remuneración mensual sea hasta dos (2) meses el salario mínimo más alto vigente. Tiene derecho a esta prestación el trabajador que en las fechas de entrega de calzado y vestido haya cumplido más de tres (3) meses al servicio del empleador. [...] Los {empleadores} obligados a suministrar permanente calzado y vestido de labor a sus trabajadores harán entrega de dichos elementos en las siguientes fechas del calendario: 30 de abril, 31 de agosto y 20 de diciembre.",
+    "pregunta": "La técnica de talento humano de una empresa con veinte trabajadores permanentes prepara la entrega de calzado y vestido de labor del 31 de agosto de 2026. Revisa cuatro casos: Ana ingresó el 20 de mayo de 2026 y gana 1,5 salarios mínimos; Bruno ingresó en 2024 y gana 2,5 salarios mínimos; Carla ingresó el 5 de junio de 2026 y gana un salario mínimo; Diego ingresó el 2 de febrero de 2026 y gana exactamente 2 salarios mínimos. ¿A quiénes debe entregarles la dotación en esa fecha?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A Ana y a Diego.",
+        "explicacion": "Correcta. Ana cumplió tres meses el 20 de agosto, así que el 31 de agosto lleva más de tres meses, y gana menos de dos mínimos. Diego gana justo dos mínimos, dentro del tope «hasta dos», y lleva casi siete meses."
+      },
+      {
+        "id": "B",
+        "texto": "A Ana, a Carla y a Diego.",
+        "explicacion": "Incorrecta. Carla cumpliría tres meses el 5 de septiembre; el 31 de agosto lleva menos de tres meses y aún no tiene derecho."
+      },
+      {
+        "id": "C",
+        "texto": "Solo a Ana.",
+        "explicacion": "Incorrecta. Excluye a Diego, pero el tope es «hasta dos» salarios mínimos, de modo que quien gana exactamente dos mínimos sí tiene derecho."
+      },
+      {
+        "id": "D",
+        "texto": "A Ana, a Bruno y a Diego.",
+        "explicacion": "Incorrecta. Bruno gana 2,5 salarios mínimos, por encima del tope de dos que fija el art. 230."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: fechas de ingreso y salarios frente a la entrega del 31 de agosto. Regla: el art. 230 del CST da la dotación a quien gana hasta dos salarios mínimos y, en la fecha de entrega, ha cumplido más de tres meses de servicio; el art. 232 fija el 31 de agosto como una de las fechas de entrega. Cálculo: Ana cumplió tres meses el 20 de agosto (sí); Carla los cumpliría el 5 de septiembre (no); Diego gana justo dos mínimos (sí); Bruno supera el tope (no).",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Estabilidad laboral reforzada",
+    "subtema": "Presunción de despido por maternidad e indemnización de 60 días",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 239 num. 2 y 3 (modificados por el art. 1 de la Ley 2141 de 2021)",
+      "art. 240 num. 1 (modificado por el art. 2 de la Ley 2141 de 2021)"
+    ],
+    "texto_fuente": "Se presume el despido efectuado por motivo de embarazo o lactancia, cuando este haya tenido lugar dentro del período de embarazo y/o dentro de las dieciocho (18) semanas posteriores al parto. [...] Las trabajadoras de que trata el numeral uno (1) de este artículo, que sean despedidas sin autorización de las autoridades competentes, tendrán derecho al pago adicional de una indemnización igual a sesenta (60) días de trabajo, fuera de las indemnizaciones y prestaciones a que hubiere lugar de acuerdo con su contrato de trabajo. [...] Para poder despedir a una trabajadora durante el período de embarazo o a las dieciocho (18) semanas posteriores al parto, el empleador necesita la autorización del Inspector del Trabajo, o del Alcalde Municipal en los lugares en donde no existiere aquel funcionario.",
+    "pregunta": "Una inspectora de trabajo atiende a Natalia, quien dio a luz el 2 de marzo de 2026. Natalia disfrutó su licencia de maternidad, regresó a trabajar y el viernes 3 de julio de 2026 la empresa la despidió sin justa causa y sin pedir autorización a ninguna autoridad. Su salario es de $2.400.000 mensuales. Además de la indemnización por despido sin justa causa y de las prestaciones, ¿qué le reconoce el CST por la forma en que fue despedida?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Nada adicional, porque cuando la despidieron ya habían pasado más de tres meses desde el parto y había vuelto de su licencia.",
+        "explicacion": "Incorrecta. Aplica la presunción anterior, de tres meses. Hoy la presunción cubre las 18 semanas posteriores al parto, que vencían el 6 de julio de 2026; el despido del 3 de julio quedó dentro."
+      },
+      {
+        "id": "B",
+        "texto": "Una indemnización adicional de $7.200.000, equivalente a 90 días de salario, por despedirla sin autorización durante la lactancia.",
+        "explicacion": "Incorrecta. La indemnización adicional que fija el art. 239 es de 60 días, no de 90."
+      },
+      {
+        "id": "C",
+        "texto": "Una indemnización adicional de $4.800.000, equivalente a 60 días de salario, pues se presume que la despidieron por la maternidad.",
+        "explicacion": "Correcta. Las 18 semanas desde el 2 de marzo vencían el 6 de julio de 2026, así que el despido del 3 de julio se presume motivado por la maternidad. Sin autorización, procede el pago adicional de 60 días: 60 × $80.000 = $4.800.000."
+      },
+      {
+        "id": "D",
+        "texto": "Una indemnización adicional de $2.400.000, equivalente a 30 días de salario, que se suma a la del despido sin justa causa.",
+        "explicacion": "Incorrecta. La indemnización adicional es de 60 días de salario, no de 30."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el despido fue el 3 de julio de 2026, 123 días después del parto, sin autorización. Regla: el art. 239 num. 2 del CST presume que el despido es por maternidad si ocurre dentro de las 18 semanas posteriores al parto, y el num. 3 da a la trabajadora despedida sin autorización 60 días de salario adicionales. Cálculo: 18 semanas (126 días) desde el 2 de marzo vencen el 6 de julio; 60 × $80.000 = $4.800.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-039",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Estabilidad laboral reforzada",
+    "subtema": "Permiso del inspector para despedir a una trabajadora en embarazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 240 num. 1 (modificado por el art. 2 de la Ley 2141 de 2021) y num. 2"
+    ],
+    "texto_fuente": "Para poder despedir a una trabajadora durante el período de embarazo o a las dieciocho (18) semanas posteriores al parto, el empleador necesita la autorización del Inspector del Trabajo, o del Alcalde Municipal en los lugares en donde no existiere aquel funcionario. [...] 2. El permiso de que trata este artículo sólo puede concederse con el fundamento en alguna de las causas que tiene el {empleador} para dar por terminado el contrato de trabajo y que se enumeran en los artículo 62 y 63. Antes de resolver, el funcionario debe oír a la trabajadora y practicar todas las pruebas conducentes solicitadas por las partes.",
+    "pregunta": "Un inspector de trabajo recibe la solicitud de una empresa para despedir a una analista que tiene cinco meses de embarazo. La empresa explica que, por la caída de sus ventas, reducirá su personal administrativo, y anexa sus estados financieros. A la analista no se le atribuye ninguna falta. ¿Cómo debe proceder el inspector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Oír a la analista y conceder el permiso si los estados financieros demuestran la caída de las ventas que alega la empresa.",
+        "explicacion": "Incorrecta. Oír a la trabajadora es obligatorio, pero el permiso solo puede fundarse en las causas de terminación de los arts. 62 y 63. La caída de las ventas no es una de ellas, por bien que se pruebe."
+      },
+      {
+        "id": "B",
+        "texto": "Negar de plano la solicitud, sin ningún trámite, porque durante el embarazo la ley no permite autorizar despido alguno.",
+        "explicacion": "Incorrecta. La ley no prohíbe todo despido durante el embarazo: permite autorizarlo con fundamento en las causas de los arts. 62 y 63, y antes de resolver obliga a oír a la trabajadora y a practicar las pruebas pedidas."
+      },
+      {
+        "id": "C",
+        "texto": "Conceder el permiso, con la condición de que la empresa le pague a la analista una indemnización de 60 días de salario.",
+        "explicacion": "Incorrecta. Los 60 días son la indemnización que se debe cuando se despide sin autorización (art. 239 num. 3); no sustituyen la causa que exige el art. 240 para conceder el permiso."
+      },
+      {
+        "id": "D",
+        "texto": "Oír a la analista, practicar las pruebas pedidas y negar el permiso: la baja en las ventas no es causa que lo permita.",
+        "explicacion": "Correcta. El permiso solo puede fundarse en las causas de terminación de los arts. 62 y 63; una reducción de personal por la caída de las ventas no es una de ellas. Antes de decidir, el inspector debe oír a la trabajadora y practicar las pruebas conducentes que pidan las partes."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la empresa pide el permiso por una reducción de personal debida a la caída de ventas, sin falta de la trabajadora. Regla: el art. 240 del CST exige autorización del inspector para despedir durante el embarazo; el permiso solo puede concederse con fundamento en las justas causas de los arts. 62 y 63, y antes de resolver se debe oír a la trabajadora y practicar las pruebas. Conclusión: tras oírla, debe negarlo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-LAB-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "laboral",
+    "modulo": "Derecho Laboral",
+    "tema": "Estabilidad laboral reforzada",
+    "subtema": "Protección del trabajador cuya compañera permanente está en embarazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Código Sustantivo del Trabajo",
+    "articulos": [
+      "art. 239 num. 5 (adicionado por el art. 1 de la Ley 2141 de 2021)",
+      "art. 240 num. 1 (modificado por el art. 2 de la Ley 2141 de 2021)"
+    ],
+    "texto_fuente": "Se prohíbe el despido de todo trabajador cuya cónyuge, pareja o compañera permanente se encuentre en estado de embarazo o dentro de las dieciocho (18) semanas posteriores al parto [...] Esta prohibición se activará con la notificación al empleador del estado de embarazo de la cónyuge, pareja o compañera permanente [...] La notificación podrá hacerse verbalmente o por escrito. En ambos casos el trabajador tendrá hasta un (1) mes para adjuntar la prueba que acredite el estado de embarazo de su cónyuge o compañera permanente. [...] La misma autorización se requerirá para despedir al trabajador cuya cónyuge, pareja o compañera permanente se encuentre en estado de embarazo",
+    "pregunta": "El lunes 3 de agosto de 2026, Camilo, operario de una empresa, le contó verbalmente a su jefe que su compañera permanente, quien no tiene empleo formal, está embarazada, y le dijo que después llevaría el certificado médico. El viernes 14 de agosto, antes de que Camilo entregara el certificado, la empresa lo despidió sin justa causa y sin pedir autorización. Camilo consulta a un técnico de la dirección territorial del Ministerio del Trabajo. ¿Qué debe explicarle el técnico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no estaba protegido, porque la noticia del embarazo de su compañera debía darse por escrito para que la empresa quedara obligada.",
+        "explicacion": "Incorrecta. La ley permite que la notificación se haga verbalmente o por escrito."
+      },
+      {
+        "id": "B",
+        "texto": "Que sí estaba protegido: el aviso verbal bastaba y tenía plazo hasta el 3 de septiembre para la prueba; despedirlo exigía autorización.",
+        "explicacion": "Correcta. La prohibición se activó con la notificación verbal del 3 de agosto, y Camilo tenía hasta un mes, es decir, hasta el 3 de septiembre, para aportar la prueba. Para despedirlo se requería la autorización del inspector del trabajo (art. 240 num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no estaba protegido, porque la prohibición solo se activa cuando el trabajador entrega la prueba médica del embarazo de su compañera.",
+        "explicacion": "Incorrecta. La prohibición se activa con la notificación; la prueba puede aportarse después, dentro del mes siguiente."
+      },
+      {
+        "id": "D",
+        "texto": "Que estaba protegido, pero la empresa podía despedirlo sin autorización con tal de que le pagara una indemnización de 60 días de salario.",
+        "explicacion": "Incorrecta. La indemnización de 60 días es una consecuencia del despido sin autorización, no una forma de sustituirla. El art. 240 exige la autorización del inspector."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el aviso verbal fue el 3 de agosto y el despido el 14 de agosto, sin autorización y antes de aportar el certificado. Regla: el art. 239 num. 5 del CST activa la prohibición con la notificación del embarazo, que puede ser verbal o escrita, y da al trabajador hasta un mes para aportar la prueba; el art. 240 num. 1 exige autorización del inspector para despedirlo. Cálculo: el mes vencía el 3 de septiembre. Conclusión: estaba protegido.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/codigo_sustantivo_trabajo.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

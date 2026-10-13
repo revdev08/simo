@@ -19,6 +19,49 @@
   --foreground: #f8fafc;
 }
 
+/* Azul institucional de la marca (panel y páginas internas) */
+@theme {
+  --color-brand-50: #eff5ff;
+  --color-brand-100: #dbe8fe;
+  --color-brand-200: #bfd5fe;
+  --color-brand-300: #93b8fd;
+  --color-brand-400: #6093fa;
+  --color-brand-500: #3b6ff6;
+  --color-brand-600: #2553eb;
+  --color-brand-700: #1d40d8;
+  --color-brand-800: #1e35af;
+  --color-brand-900: #1e318a;
+  --color-brand-950: #141f4f;
+}
+
+/* Entrada suave de las vistas del panel (una sola vez, no en bucle) */
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-enter {
+  animation: enter 0.35s ease-out both;
+}
+
+/* Quien pide menos movimiento en su sistema no ve animaciones */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 body {
   background: var(--background);

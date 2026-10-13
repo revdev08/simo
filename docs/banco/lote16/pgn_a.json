@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "TC-PGN-001",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Competencias disciplinarias por nivel",
+    "subtema": "Reparto según la calidad del sujeto disciplinable",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 75 num. 1 lit. c (modificado por el art. 19 del Decreto Ley 1851 de 2021)",
+      "art. 76 num. 1 lit. a (modificado por el art. 22 del Decreto Ley 1851 de 2021)",
+      "art. 25 num. 1 lit. c (modificado por el art. 12 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "Las procuradurías regionales de instrucción tienen, dentro de su circunscripción territorial, las siguientes competencias: [...] c) Los diputados, concejales de las capitales de departamento, contralores departamentales y contralores municipales de capital de departamento, defensores regionales, rectores, directores o gerentes de organismos descentralizados del orden departamental y miembros de sus juntas o consejos directivos, y contra servidores públicos del orden departamental. [...] Las procuradurías provinciales y distritales de instrucción cumplen, dentro de su circunscripción territorial, las siguientes funciones: [...] a) Los alcaldes de municipios que no sean capital de departamento, los concejales de estos, los personeros, personeros delegados, ediles de juntas administradoras locales, rectores, directores o gerentes de las entidades y organismos descentralizados del orden distrital o municipal, los miembros de sus juntas o consejos directivos, y contra servidores públicos del orden distrital o municipal, según el caso. [...] Las procuradurías delegadas de instrucción tienen las siguientes competencias: [...] c) Los Agentes Diplomáticos y Consulares, los Directores Generales del Ministerio de Hacienda, los Defensores Delegados, los Personeros Delegados de la Personería de Bogotá, D. C., los Gobernadores, los Contralores Departamentales, los alcaldes de capitales de departamento y los Distritales salvo el de Bogotá, D. C.",
+    "pregunta": "Camila es técnica de una procuraduría regional de instrucción y hace el reparto inicial de las quejas que llegan a la sede. En su circunscripción está la capital del departamento, y los demás municipios cuentan con procuraduría provincial. Esta semana recibió cuatro quejas: 1) contra el gerente de un instituto de deportes que es establecimiento público del orden departamental; 2) contra una concejala de la capital del departamento; 3) contra un concejal de un municipio que no es capital; 4) contra el alcalde de la capital del departamento. ¿Cómo debe hacer el reparto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La 2 y la 3 quedan en la regional; la 1 y la 4 se envían a una procuraduría delegada de instrucción.",
+        "explicacion": "Incorrecta. Acierta con la concejala y con el alcalde de la capital, que es de una delegada de instrucción (art. 25 num. 1 lit. c). Pero el gerente de un establecimiento público departamental es de la regional (art. 75 num. 1 lit. c): las delegadas conocen de los gerentes del nivel nacional (art. 25 num. 1 lit. b). Y el concejal de un municipio que no es capital es de la provincial (art. 76 num. 1 lit. a)."
+      },
+      {
+        "id": "B",
+        "texto": "La 1 y la 2 quedan en la regional; la 3 va a la provincial y la 4, a una procuraduría delegada de instrucción.",
+        "explicacion": "Correcta. La regional instruye a los gerentes de organismos descentralizados del orden departamental y a los concejales de la capital (art. 75 num. 1 lit. c). El concejal de un municipio que no es capital corresponde a la provincial (art. 76 num. 1 lit. a), y el alcalde de la capital, a las delegadas de instrucción (art. 25 num. 1 lit. c)."
+      },
+      {
+        "id": "C",
+        "texto": "La 1, la 2 y la 3 quedan en la regional; la 4 se envía a la Sala Disciplinaria de Instrucción.",
+        "explicacion": "Incorrecta. Acierta con el gerente y con la concejala, pero el concejal de un municipio que no es capital es de la provincial (art. 76 num. 1 lit. a), y como ese municipio tiene provincial, la regional no lo asume. Además, los alcaldes de capitales de departamento son de las delegadas de instrucción (art. 25 num. 1 lit. c); las Salas conocen de los servidores del art. 101 de la Ley 1952 y de los del orden nacional de igual o superior categoría (art. 22)."
+      },
+      {
+        "id": "D",
+        "texto": "La 2 queda en la regional; la 1 va a una delegada de instrucción, la 3 a la provincial y la 4 a la Sala de Instrucción.",
+        "explicacion": "Incorrecta. Acierta con la concejala y con el concejal del municipio, pero el gerente de un establecimiento público departamental es de la regional (art. 75 num. 1 lit. c), no de las delegadas, que conocen de los gerentes del nivel nacional (art. 25 num. 1 lit. b). Y el alcalde de la capital es de una delegada de instrucción (art. 25 num. 1 lit. c), no de la Sala."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el cargo de cada disciplinado, el orden de su entidad y si su municipio es o no capital. Regla: la regional de instrucción conoce de los gerentes de organismos descentralizados departamentales y de los concejales de la capital (art. 75 num. 1 lit. c); la provincial, de los concejales de municipios que no son capital (art. 76 num. 1 lit. a); y las delegadas de instrucción, de los alcaldes de capitales (art. 25 num. 1 lit. c). Conclusión: la 1 y la 2 en la regional, la 3 a la provincial y la 4 a una delegada.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-002",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procurador General de la Nación",
+    "subtema": "Falta absoluta: quién ejerce, quién elige al reemplazo y por cuánto tiempo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000 y Constitución Política",
+    "articulos": [
+      "art. 6 (Decreto Ley 262 de 2000)",
+      "art. 17 num. 2 (Decreto Ley 262 de 2000, modificado por el art. 7 del Decreto Ley 1851 de 2021)",
+      "art. 276 (Constitución Política)",
+      "art. 125 par. (Constitución Política, adicionado por el art. 6 del Acto Legislativo 1 de 2003)"
+    ],
+    "texto_fuente": "El Procurador General de la Nación será elegido por el Senado, para un período de cuatro años, de terna integrada por candidatos del Presidente de la República, la Corte Suprema de Justicia y el Consejo de Estado. [...] En caso de falta absoluta del Procurador General de la Nación, se procederá a nueva elección, siguiendo el procedimiento señalado en este decreto, dentro de los treinta (30) días siguientes a la fecha en que se produzca la falta. [...] Mientras se realiza la elección y posesión, el Viceprocurador ejercerá como Procurador General de la Nación. [...] 2. Asumir las funciones del Procurador General en sus ausencias temporales o en las absolutas mientras se posesiona el nuevo titular. [...] Los períodos establecidos en la Constitución Política o en la ley para cargos de elección tienen el carácter de institucionales. Quienes sean designados o elegidos para ocupar tales cargos, en reemplazo por falta absoluta de su titular, lo harán por el resto del período para el cual este fue elegido.",
+    "pregunta": "Una profesional especializada de la Oficina Jurídica de la Procuraduría prepara un memorando para la alta dirección de la entidad. El Procurador General de la Nación falleció el martes 3 de marzo de 2026. El memorando debe explicar quién dirige la entidad desde ese momento, quién elige al reemplazo y por cuánto tiempo ejercerá el cargo. ¿Qué debe decir el memorando?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ejerce el Viceprocurador mientras la Cámara elige al nuevo Procurador, que tendrá un período propio de cuatro años.",
+        "explicacion": "Incorrecta. Acierta en que ejerce el Viceprocurador (art. 6 del Decreto Ley 262), pero al Procurador lo elige el Senado, no la Cámara, que es la que elige al Defensor del Pueblo (arts. 276 y 281 de la Constitución). Además, quien reemplaza al titular por falta absoluta lo hace por el resto del período, porque este es institucional (art. 125, par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Ejerce un encargado que designa el Presidente mientras el Senado elige al nuevo Procurador, por un período propio de cuatro años.",
+        "explicacion": "Incorrecta. Acierta en que elige el Senado (art. 276 de la Constitución), pero mientras tanto ejerce el Viceprocurador, no un encargado del Presidente (arts. 6 y 17 num. 2 del Decreto Ley 262). Y el elegido no inicia un período propio: completa el del titular, porque los períodos de los cargos de elección son institucionales (art. 125, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "Ejerce un encargado que designa el Presidente mientras la Cámara elige al nuevo Procurador, que completará el período.",
+        "explicacion": "Incorrecta. Acierta en que el elegido completa el período del titular (art. 125, par., de la Constitución), pero mientras tanto ejerce el Viceprocurador, no un encargado del Presidente (art. 6 del Decreto Ley 262), y la elección es del Senado, no de la Cámara (art. 276)."
+      },
+      {
+        "id": "D",
+        "texto": "Ejerce el Viceprocurador mientras el Senado elige al nuevo Procurador, que completará el período del fallecido.",
+        "explicacion": "Correcta. Mientras se elige y posesiona al nuevo titular, el Viceprocurador ejerce como Procurador (arts. 6 y 17 num. 2 del Decreto Ley 262). La nueva elección la hace el Senado, de terna del Presidente, la Corte Suprema y el Consejo de Estado, dentro de los 30 días siguientes a la falta (art. 276 de la Constitución; art. 6 del Decreto Ley 262), y el elegido ejerce por el resto del período, que es institucional (art. 125, par.)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la muerte del Procurador es una falta absoluta. Regla: mientras se elige y posesiona al reemplazo, ejerce el Viceprocurador (arts. 6 y 17 num. 2 del Decreto Ley 262); la nueva elección, dentro de los 30 días siguientes, la hace el Senado de terna del Presidente, la Corte Suprema y el Consejo de Estado (art. 276 C. P.); y como los períodos de los cargos de elección son institucionales, el elegido ejerce por el resto del período del titular (art. 125, par., C. P.). Conclusión: opción D.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-003",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Control disciplinario de los servidores de la Procuraduría",
+    "subtema": "Competencia de la Veeduría",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 73 (modificado por el art. 17 del Decreto Ley 1851 de 2021)",
+      "art. 72 (modificado por el art. 16 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "La Veeduría conoce de las actuaciones disciplinarias, hasta la notificación del pliego de cargos o la decisión de archivo, contra los funcionarios de la Procuraduría General de la Nación, diferentes a los enunciados en el artículo 101 de la Ley 1952 de 2019, modificado por el artículo 16 de la Ley 2094 de 2021. [...] El juzgamiento corresponde a las procuradurías delegadas para el juzgamiento disciplinario. [...] La Sala Disciplinaria de Instrucción conoce de las actuaciones disciplinarias, hasta la notificación del pliego de cargos o la decisión de archivo contra el Viceprocurador, los Procuradores Delegados, los Procuradores Auxiliares, el Secretario General, el Veedor, el Director del Instituto de Estudios del Ministerio Público, el Director Nacional de Investigaciones Especiales y el Secretario Privado.",
+    "pregunta": "Jorge es auxiliar administrativo de una procuraduría provincial y atiende la ventanilla de radicación. Un ciudadano le entrega una queja contra el propio procurador provincial, por demoras injustificadas en varios expedientes. Jorge debe enviar la queja a la dependencia que adelanta la actuación disciplinaria desde su inicio. ¿A dónde debe enviarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A la Veeduría, que instruye a los servidores de la entidad no reservados a la Sala de Instrucción.",
+        "explicacion": "Correcta. La Veeduría conoce, hasta el pliego de cargos o el archivo, de las actuaciones contra los funcionarios de la Procuraduría distintos de los enunciados en el art. 101 de la Ley 1952 (art. 73 del Decreto Ley 262). Los de mayor jerarquía, como el Viceprocurador o los procuradores delegados, van a la Sala Disciplinaria de Instrucción (art. 72); el procurador provincial no está entre ellos."
+      },
+      {
+        "id": "B",
+        "texto": "Al procurador regional, porque es el superior del que depende directamente el provincial.",
+        "explicacion": "Incorrecta. El provincial sí depende del regional (art. 80), pero esa dependencia no le da competencia disciplinaria sobre él: la instrucción contra los funcionarios de la Procuraduría que no figuran en el art. 101 de la Ley 1952 es de la Veeduría (art. 73)."
+      },
+      {
+        "id": "C",
+        "texto": "A la Sala Disciplinaria de Instrucción, que investiga a los procuradores que dirigen las sedes territoriales.",
+        "explicacion": "Incorrecta. La Sala de Instrucción conoce de los servidores de la Procuraduría de mayor jerarquía: el Viceprocurador, los procuradores delegados y auxiliares, el Secretario General y el Veedor, entre otros (art. 72). Los procuradores provinciales no están en esa lista."
+      },
+      {
+        "id": "D",
+        "texto": "A la personería del municipio, porque tiene poder preferente sobre los servidores que trabajan allí.",
+        "explicacion": "Incorrecta. El poder preferente de las personerías es frente a la administración municipal (art. 86 de la Ley 1952), no frente a los servidores de la Procuraduría, cuya instrucción corresponde a la Veeduría (art. 73)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el disciplinado es el procurador provincial, que no está entre los servidores de mayor jerarquía que el art. 72 del Decreto Ley 262 asigna a la Sala de Instrucción ni en la lista del art. 101 de la Ley 1952. Regla: la Veeduría instruye las actuaciones contra los demás funcionarios de la Procuraduría hasta el pliego de cargos o el archivo, y el juzgamiento es de las delegadas de juzgamiento (art. 73, mod. Decreto Ley 1851 de 2021). Conclusión: la queja va a la Veeduría.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-004",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procurador General de la Nación",
+    "subtema": "Funciones de ejercicio directo: desvinculación del art. 278",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Constitución Política y Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 278 num. 1 (Constitución Política)",
+      "art. 7, parágrafo (Decreto Ley 262 de 2000, modificado por el art. 2 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "ARTICULO 278. El Procurador General de la Nación ejercerá directamente las siguientes funciones: [...] 1. Desvincular del cargo, previa audiencia y mediante decisión motivada, al funcionario público que incurra en alguna de las siguientes faltas: infringir de manera manifiesta la Constitución o la ley; derivar evidente e indebido provecho patrimonial en el ejercicio de su cargo o de sus funciones; obstaculizar, en forma grave, las investigaciones que realice la Procuraduría o una autoridad administrativa o jurisdiccional; [...] El Procurador General de la Nación ejercerá directamente las funciones que le otorga el artículo 278 de la Constitución Política. Las señaladas en el artículo 277 constitucional y las demás atribuidas por el legislador podrá ejercerlas por sí, o asignarlas a cualquier servidor público o dependencia de la entidad, en los términos establecidos en este decreto.",
+    "pregunta": "Durante una visita de control preventivo, una procuraduría regional documentó que el secretario de hacienda de un departamento escondió libros contables y se negó varias veces a entregar información, con lo que entorpeció gravemente una investigación de la Procuraduría. El procurador regional quiere que se le aplique al secretario la desvinculación del cargo que prevé la Constitución para estas conductas, y le pide a un profesional especializado que le explique cómo opera. ¿Qué debe explicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Puede decretarla el propio procurador regional si el Procurador General le delega esa función, oyendo antes al secretario.",
+        "explicacion": "Incorrecta. Las funciones del art. 277 de la Constitución sí pueden asignarse a otros servidores, pero las del art. 278 las ejerce el Procurador General directamente (art. 7, parágrafo, del Decreto Ley 262). La desvinculación es una de estas."
+      },
+      {
+        "id": "B",
+        "texto": "Debe decretarla el gobernador, como nominador del secretario, a solicitud motivada de la regional.",
+        "explicacion": "Incorrecta. La desvinculación del art. 278 num. 1 es una atribución del Procurador General, no del nominador. La regional no puede trasladarla al gobernador."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el Procurador General puede decretarla, en persona, tras escuchar al secretario y exponiendo sus razones.",
+        "explicacion": "Correcta. Obstaculizar en forma grave las investigaciones de la Procuraduría es una de las faltas que permiten la desvinculación (art. 278 num. 1 de la Constitución). Esa función la ejerce el Procurador General directamente, previa audiencia y con decisión motivada (art. 7, parágrafo, del Decreto Ley 262)."
+      },
+      {
+        "id": "D",
+        "texto": "Puede decretarla la Sala Disciplinaria de Instrucción, una vez le haya notificado el pliego de cargos al secretario.",
+        "explicacion": "Incorrecta. Confunde la desvinculación con el proceso disciplinario ordinario. Además, la Sala de Instrucción solo llega hasta el pliego de cargos o el archivo, y no puede ejercer una función que la Constitución reserva al Procurador General."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el secretario obstaculizó gravemente una investigación de la Procuraduría, y el regional quiere la desvinculación constitucional. Regla: el art. 278 num. 1 de la Constitución da al Procurador General, como función de ejercicio directo, desvincular, previa audiencia y con decisión motivada, a quien incurra en esa falta; el parágrafo del art. 7 del Decreto Ley 262 reitera que las funciones del art. 278 no se asignan a otros. Conclusión: solo el Procurador General puede adoptarla.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-005",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procuradurías territoriales",
+    "subtema": "Actuaciones de competencia de los delegados: aviso y límite",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000 y Ley 1952 de 2019",
+    "articulos": [
+      "art. 25 num. 1 lit. b (Decreto Ley 262 de 2000, modificado por el art. 12 del Decreto Ley 1851 de 2021)",
+      "art. 76 num. 2 (Decreto Ley 262 de 2000, modificado por el art. 22 del Decreto Ley 1851 de 2021)",
+      "art. 208 inc. 1 (Ley 1952 de 2019, modificado por el art. 34 de la Ley 2094 de 2021)"
+    ],
+    "texto_fuente": "Las procuradurías delegadas de instrucción tienen las siguientes competencias: [...] b) Los gerentes, directores y miembros de juntas directivas, o sus equivalentes, de los organismos descentralizados del nivel nacional. [...] 2. Adelantar las actuaciones disciplinarias de competencia de los procuradores delegados, hasta antes de la apertura de la investigación. De la iniciación de estas investigaciones se dará aviso al procurador delegado competente, a más tardar el día siguiente hábil, para que, si lo estima conveniente, asuma directamente su conocimiento. [...] En caso de duda sobre la identificación o individualización del posible autor de una falta disciplinaria, se adelantará indagación previa.",
+    "pregunta": "Lucía es técnica de una procuraduría provincial de instrucción y lleva el cuadro de control de términos. Un trabajador de la planta que una empresa industrial y comercial del Estado del orden nacional tiene en el municipio presentó una queja: uno de los miembros de la junta directiva de la empresa habría presionado para vender un lote de la planta a una sociedad de su familia, pero el quejoso no sabe cuál de ellos. El viernes 9 de octubre de 2026, el procurador provincial abrió indagación previa para identificarlo. ¿Qué debe anotar Lucía en el cuadro sobre este expediente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Avisar a la procuraduría regional de instrucción a más tardar el lunes 12 de octubre; la provincial actúa mientras no se abra investigación.",
+        "explicacion": "Incorrecta. Acierta en el límite de la actuación, pero el aviso no va a la regional: va al procurador delegado competente, porque los miembros de juntas directivas de organismos descentralizados del nivel nacional son de las delegadas de instrucción (arts. 25 num. 1 lit. b y 76 num. 2). Además, el lunes 12 de octubre de 2026 es festivo: el día hábil siguiente al viernes 9 es el martes 13."
+      },
+      {
+        "id": "B",
+        "texto": "Avisar a una procuraduría delegada de instrucción a más tardar el lunes 12 de octubre; la provincial actúa hasta el pliego de cargos o el archivo.",
+        "explicacion": "Incorrecta. Acierta en el destinatario del aviso, pero el lunes 12 de octubre de 2026 es festivo y el día hábil siguiente al viernes 9 es el martes 13. Además, la provincial no llega hasta el pliego de cargos o el archivo: adelanta la actuación hasta antes de la apertura de la investigación (art. 76 num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Avisar a la procuraduría regional de instrucción a más tardar el martes 13 de octubre; la provincial actúa hasta el pliego de cargos o el archivo.",
+        "explicacion": "Incorrecta. La fecha es correcta, pero el aviso va al procurador delegado competente, no a la regional de la que depende la provincial (arts. 76 num. 2 y 80). Y la provincial no llega hasta el pliego de cargos o el archivo: actúa hasta antes de la apertura de la investigación (art. 76 num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Avisar a una procuraduría delegada de instrucción a más tardar el martes 13 de octubre; la provincial actúa mientras no se abra investigación.",
+        "explicacion": "Correcta. Los miembros de juntas directivas de los organismos descentralizados del nivel nacional son de competencia de las delegadas de instrucción (art. 25 num. 1 lit. b). La provincial puede adelantar la actuación hasta antes de abrir investigación y debe avisar al delegado a más tardar el día hábil siguiente (art. 76 num. 2): como el lunes 12 es festivo, el plazo vence el martes 13."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el posible autor es un miembro, aún no identificado, de la junta directiva de una empresa del orden nacional (por eso procede la indagación previa, art. 208 de la Ley 1952), y la indagación se abrió el viernes 9 de octubre de 2026. Regla: esos servidores son de las delegadas de instrucción (art. 25 num. 1 lit. b); la provincial puede adelantar la actuación hasta antes de abrir investigación y debe avisar al delegado a más tardar el día hábil siguiente (art. 76 num. 2). Cálculo: el lunes 12 es festivo. Conclusión: aviso a más tardar el martes 13.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-006",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Viceprocurador General",
+    "subtema": "Competencia preferente del Viceprocurador y juzgamiento posterior",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 17, par. 3 (modificado por el art. 7 del Decreto Ley 1851 de 2021)",
+      "art. 22 num. 2 lit. a y num. 3 lit. a (modificado por el art. 11 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "PARÁGRAFO 3o. El Viceprocurador tendrá competencia preferente para asumir el conocimiento de cualquier proceso disciplinario de competencia de la Sala Disciplinaria de Instrucción, de la Sala Disciplinaria Ordinaria de Juzgamiento, de los procuradores delegados, regionales, distritales y provinciales. Cuando asuma el conocimiento en etapa de instrucción, el juzgamiento corresponderá a la Sala Disciplinaria Ordinaria de Juzgamiento o a la Sala Disciplinaria de Juzgamiento de Servidores Públicos de Elección Popular, según sea el caso. [...] a) Conocer del juzgamiento de los procesos disciplinarios contra los servidores públicos cuya instrucción esté a cargo de la Sala Disciplinaria de Instrucción o del Viceprocurador, excepto en las actuaciones contra servidores públicos de elección popular. [...] a) Conocer del juzgamiento de los servidores públicos de elección popular, cuya instrucción esté a cargo de la Sala Disciplinaria de Instrucción o del Viceprocurador.",
+    "pregunta": "El Viceprocurador General ejerció su competencia preferente y asumió, en etapa de instrucción, dos procesos que adelantaba una procuraduría regional de instrucción: uno contra un diputado de la asamblea departamental y otro contra el secretario de educación del mismo departamento. En ambos ya se notificó el pliego de cargos. Un asesor de su despacho debe proyectar el envío de los expedientes para el juzgamiento. ¿A dónde debe enviarlos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los dos, a la procuraduría regional de juzgamiento, que es la que los habría juzgado si el Viceprocurador no los asume.",
+        "explicacion": "Incorrecta. Cuando el Viceprocurador asume un proceso en etapa de instrucción, el juzgamiento no vuelve a la dependencia territorial: corresponde a una de las Salas Disciplinarias de Juzgamiento (art. 17, par. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "El del diputado, a la Sala de Juzgamiento de Elección Popular; el del secretario, a la Sala Ordinaria de Juzgamiento.",
+        "explicacion": "Correcta. Si el Viceprocurador asume en instrucción, el juzgamiento corresponde a la Sala Disciplinaria Ordinaria de Juzgamiento o a la de Servidores Públicos de Elección Popular, según el caso (art. 17, par. 3). El diputado es de elección popular (art. 22 num. 3 lit. a); el secretario de educación no lo es (art. 22 num. 2 lit. a)."
+      },
+      {
+        "id": "C",
+        "texto": "El del diputado, a la Sala Ordinaria de Juzgamiento; el del secretario, a una procuraduría delegada de juzgamiento.",
+        "explicacion": "Incorrecta. La Sala Ordinaria juzga los procesos instruidos por el Viceprocurador, excepto los de servidores de elección popular (art. 22 num. 2 lit. a), y el diputado lo es. Las delegadas de juzgamiento reciben los procesos que asumen las delegadas de instrucción (art. 25, par. 2), no los del Viceprocurador."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno sale de su despacho, porque el Viceprocurador, al asumir la instrucción, también debe juzgar los dos procesos.",
+        "explicacion": "Incorrecta. La norma separa la instrucción del juzgamiento: si el Viceprocurador asume en instrucción, debe enviar los procesos a la Sala de Juzgamiento que corresponda (art. 17, par. 3)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el Viceprocurador asumió los procesos en instrucción, y uno de los disciplinados es diputado, servidor de elección popular. Regla: en ese caso el juzgamiento corresponde a la Sala Disciplinaria Ordinaria de Juzgamiento o a la de Servidores Públicos de Elección Popular, según el caso (art. 17, par. 3); la primera excluye a los de elección popular (art. 22 num. 2 lit. a) y la segunda los juzga (art. 22 num. 3 lit. a). Conclusión: opción B.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-007",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procuradurías territoriales y judiciales",
+    "subtema": "Permisos de procuradores provinciales y judiciales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 75 num. 9 (modificado por el art. 19 del Decreto Ley 1851 de 2021)",
+      "art. 36 inc. 2",
+      "art. 48, par. 2"
+    ],
+    "texto_fuente": "9. Conceder permisos a los procuradores provinciales y distritales de instrucción. [...] Salvo disposición legal en contrario, los procuradores delegados resolverán los impedimentos manifestados por los procuradores judiciales que se encuentren bajo su coordinación, así como las recusaciones que contra ellos se formulen y les concederán permisos por causa justificada. [...] PARAGRAFO 2o. Los procuradores judiciales dependen directamente de los procuradores delegados que ejercen funciones de coordinación y vigilancia administrativa respecto de ellos.",
+    "pregunta": "Andrés es técnico administrativo de una procuraduría regional de instrucción. A la sede, donde también funcionan las procuradurías judiciales penales de la capital, llegan dos solicitudes de permiso por causa justificada: la del procurador provincial de instrucción de un municipio de la circunscripción y la de un procurador judicial penal. Andrés debe enviar cada una a quien la decide. ¿Cómo debe tramitarlas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La del provincial la decide el regional de instrucción; la del judicial, el delegado que lo coordina.",
+        "explicacion": "Correcta. La regional de instrucción concede permisos a los procuradores provinciales de instrucción (art. 75 num. 9). Los procuradores judiciales dependen de los procuradores delegados que los coordinan (art. 48, par. 2), y son estos quienes les conceden permisos por causa justificada (art. 36)."
+      },
+      {
+        "id": "B",
+        "texto": "Las dos las decide el procurador regional de instrucción, porque ambos procuradores trabajan en su circunscripción.",
+        "explicacion": "Incorrecta. Aplica un criterio territorial a los dos casos. Los procuradores judiciales no dependen de la regional sino de los delegados que los coordinan, y son estos quienes les conceden permisos (arts. 36 y 48)."
+      },
+      {
+        "id": "C",
+        "texto": "La del provincial la decide el Procurador General; la del judicial, el procurador regional de instrucción de la sede.",
+        "explicacion": "Incorrecta. El Procurador General concede permisos a los procuradores regionales y distritales, entre otros (art. 7 num. 50), pero no a los provinciales, cuyos permisos concede la regional (art. 75 num. 9). Y la regional no decide los del procurador judicial."
+      },
+      {
+        "id": "D",
+        "texto": "Las dos las decide la Secretaría General, que reconoce los permisos de todos los servidores de la entidad.",
+        "explicacion": "Incorrecta. La Secretaría General reconoce, entre otros, los permisos para estudios de más de dos horas diarias (art. 62 num. 6). Los permisos por causa justificada de estos procuradores los conceden la regional y el delegado coordinador."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: un permiso lo pide un procurador provincial de instrucción y el otro un procurador judicial. Regla: la regional de instrucción concede permisos a los provinciales y distritales de instrucción (art. 75 num. 9, mod. Decreto Ley 1851 de 2021); los procuradores judiciales dependen de los delegados que los coordinan, y estos les conceden permisos por causa justificada (arts. 36 y 48, par. 2). Conclusión: opción A.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-008",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procuradurías delegadas",
+    "subtema": "Competencia preferente sobre procesos de las procuradurías territoriales",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 25, par. 2 (modificado por el art. 12 del Decreto Ley 1851 de 2021)",
+      "art. 17, par. 3 (modificado por el art. 7 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "PARÁGRAFO 2o. Las procuradurías delegadas de instrucción tendrán competencia preferente para asumir el conocimiento de los procesos disciplinarios de competencia de las procuradurías regionales, distritales y provinciales, inclusive contra servidores de elección popular, previo concepto favorable del Comité Técnico de la función disciplinaria. En estos casos, el juzgamiento corresponderá a las procuradurías delegadas para el juzgamiento disciplinario. [...] PARÁGRAFO 3o. El Viceprocurador tendrá competencia preferente para asumir el conocimiento de cualquier proceso disciplinario de competencia de la Sala Disciplinaria de Instrucción, de la Sala Disciplinaria Ordinaria de Juzgamiento, de los procuradores delegados, regionales, distritales y provinciales.",
+    "pregunta": "Una procuraduría delegada de instrucción se entera, por la prensa, de que una procuraduría provincial de instrucción adelanta una investigación contra el secretario de salud de un municipio por la pérdida de un lote de vacunas. Por la trascendencia del caso, la delegada quiere asumir la investigación. Una profesional especializada de la delegada proyecta el trámite. ¿Qué debe tener en cuenta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Puede asumirla de inmediato mediante auto motivado, y luego la misma delegada adelantará el juzgamiento del secretario.",
+        "explicacion": "Incorrecta. La competencia preferente de las delegadas de instrucción exige concepto favorable previo del Comité Técnico de la función disciplinaria, y el juzgamiento no queda en la delegada de instrucción sino en una delegada de juzgamiento (art. 25, par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Necesita la autorización previa del procurador regional respectivo, y el juzgamiento volverá luego a la provincial de juzgamiento.",
+        "explicacion": "Incorrecta. El requisito no es una autorización del regional sino el concepto favorable del Comité Técnico. Y si la delegada asume, el juzgamiento corresponde a una delegada de juzgamiento, no a la provincial (art. 25, par. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Debe obtener antes el visto bueno del comité técnico disciplinario, y el juzgamiento lo hará una delegada de juzgamiento.",
+        "explicacion": "Correcta. Las delegadas de instrucción pueden asumir procesos de las regionales, distritales y provinciales con concepto favorable previo del Comité Técnico de la función disciplinaria; en ese caso, el juzgamiento corresponde a las delegadas de juzgamiento (art. 25, par. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "No puede asumirla, porque sobre los procesos de las provinciales el poder preferente lo tiene solo el Viceprocurador.",
+        "explicacion": "Incorrecta. El Viceprocurador sí tiene competencia preferente sobre esos procesos (art. 17, par. 3), pero no es el único: el art. 25, par. 2, también se la da a las delegadas de instrucción."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: una delegada de instrucción quiere asumir un proceso que adelanta una provincial. Regla: el art. 25, par. 2, del Decreto Ley 262 (mod. Decreto Ley 1851 de 2021) da a las delegadas de instrucción competencia preferente sobre los procesos de las regionales, distritales y provinciales, previo concepto favorable del Comité Técnico de la función disciplinaria, y asigna el juzgamiento a las delegadas de juzgamiento. Conclusión: opción C.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-009",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procuradurías territoriales y judiciales",
+    "subtema": "Registro de condenas contra entidades territoriales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 44, par., num. 3",
+      "art. 75B num. 5 (adicionado por el art. 21 del Decreto Ley 1851 de 2021)",
+      "art. 24 num. 15"
+    ],
+    "texto_fuente": "3. Remitir, oportunamente, a los respectivos procuradores regionales la información relacionada con las sentencias proferidas contra las entidades públicas que hayan sido declaradas responsables en los procesos administrativos. [...] 5. Llevar un registro actualizado de las sentencias proferidas contra las entidades públicas del orden territorial, mediante las cuales se les condene al pago o la devolución de una cantidad líquida de dinero, así como de los acuerdos conciliatorios celebrados por estas, y exigir a los servidores públicos la inclusión de las partidas correspondientes, de conformidad con lo dispuesto en el Código Contencioso Administrativo y en la Ley Orgánica del Presupuesto. [...] 15. Llevar un registro actualizado de las sentencias proferidas contra las entidades públicas del orden nacional, mediante las cuales se les condene al pago o la devolución de una cantidad líquida de dinero",
+    "pregunta": "Diana es técnica de una procuraduría regional. Recibe de un procurador judicial administrativo la información de una sentencia ejecutoriada que condenó a un municipio de la circunscripción a pagarle 480 millones de pesos a un contratista. Debe darle a esa información el trámite que le corresponde a la regional. ¿Cuál es ese trámite?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enviarla a una procuraduría delegada, que lleva el registro de las condenas contra todas las entidades públicas del país.",
+        "explicacion": "Incorrecta. Las delegadas llevan el registro de las condenas contra entidades del orden nacional (art. 24 num. 15). Las condenas contra entidades territoriales las registra la procuraduría regional (art. 75B num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Anotarla en el registro de condenas contra entidades territoriales y pedirle al municipio la partida para pagarla.",
+        "explicacion": "Correcta. Los procuradores judiciales remiten a las regionales la información de las sentencias contra entidades públicas (art. 44, par., num. 3). La regional lleva el registro de las condenas contra entidades territoriales y exige a los servidores la inclusión de las partidas correspondientes (art. 75B num. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "Archivarla, porque el pago de la condena es un asunto interno del municipio en el que la Procuraduría no interviene.",
+        "explicacion": "Incorrecta. La Procuraduría sí tiene una función frente a estas condenas: registrarlas y exigir que se incluyan las partidas para pagarlas (art. 75B num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Enviarla a la contraloría departamental para que abra de inmediato un proceso fiscal al alcalde.",
+        "explicacion": "Incorrecta. Una condena contra el municipio no implica por sí sola un proceso de responsabilidad fiscal contra el alcalde. La función que la norma le asigna a la regional con esta información es registrarla y exigir la partida presupuestal."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la condena es contra un municipio, entidad del orden territorial, y la información llega de un procurador judicial administrativo. Regla: los procuradores judiciales remiten a las regionales la información de esas sentencias (art. 44, par., num. 3), y la regional lleva su registro y exige a los servidores incluir las partidas correspondientes (art. 75B num. 5, adicionado por el Decreto Ley 1851 de 2021). Conclusión: opción B.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-010",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Competencias disciplinarias por nivel",
+    "subtema": "Segunda instancia de los fallos de las provinciales",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 75A num. 2 (adicionado por el art. 20 del Decreto Ley 1851 de 2021)",
+      "art. 22 num. 3 lit. b (modificado por el art. 11 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "2. Conocer de los recursos de apelación y de queja, al igual que de los impedimentos, recusaciones y conflictos de competencia que se presenten en los procesos de conocimiento de las procuradurías provinciales y distritales, en etapa de juzgamiento, excepto en los casos de servidores públicos de elección popular. [...] b) Conocer de los recursos de apelación y de queja, al igual que de los impedimentos, recusaciones y conflictos de competencia que se presenten, en etapa de juzgamiento, en los procesos de conocimiento de los procuradores delegados, regionales, distritales y provinciales, en las actuaciones contra servidores públicos de elección popular.",
+    "pregunta": "La procuraduría provincial de juzgamiento de un municipio que no es capital profirió en la misma semana dos fallos sancionatorios de primera instancia: uno contra un concejal del municipio y otro contra el tesorero municipal. Los dos sancionados apelaron. El profesional universitario que tramita los recursos debe enviar cada expediente a quien decide la apelación. ¿A dónde debe enviarlos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los dos, a la procuraduría regional de juzgamiento, que resuelve las apelaciones contra los fallos de las provinciales.",
+        "explicacion": "Incorrecta. La regional de juzgamiento resuelve las apelaciones de las provinciales en etapa de juzgamiento, pero la norma exceptúa los casos de servidores de elección popular (art. 75A num. 2). El concejal es uno de ellos."
+      },
+      {
+        "id": "B",
+        "texto": "El del concejal, a la regional de instrucción; el del tesorero, a la regional de juzgamiento, según la etapa del proceso.",
+        "explicacion": "Incorrecta. Los dos fallos se profirieron en etapa de juzgamiento; la regional de instrucción solo resuelve recursos de la etapa de instrucción (art. 75 num. 3). Además, el caso del concejal tiene una regla especial."
+      },
+      {
+        "id": "C",
+        "texto": "El del concejal, a una procuraduría delegada de juzgamiento; el del tesorero, a la procuraduría regional de juzgamiento.",
+        "explicacion": "Incorrecta. Las delegadas de juzgamiento resuelven apelaciones contra decisiones de las regionales y de las distritales de Bogotá (art. 25A num. 2), no de las provinciales. La apelación del concejal va a la Sala de Juzgamiento de Servidores Públicos de Elección Popular."
+      },
+      {
+        "id": "D",
+        "texto": "El del concejal, a la Sala de Juzgamiento de Servidores Públicos de Elección Popular; el del tesorero, a la regional de juzgamiento.",
+        "explicacion": "Correcta. La regional de juzgamiento resuelve las apelaciones contra decisiones de las provinciales en etapa de juzgamiento, salvo las de servidores de elección popular (art. 75A num. 2). Estas van a la Sala Disciplinaria de Juzgamiento de Servidores Públicos de Elección Popular (art. 22 num. 3 lit. b)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los dos fallos son de una provincial en etapa de juzgamiento, y uno de los sancionados es concejal, servidor de elección popular. Regla: la regional de juzgamiento resuelve esas apelaciones, excepto las de servidores de elección popular (art. 75A num. 2); estas las decide la Sala Disciplinaria de Juzgamiento de Servidores Públicos de Elección Popular (art. 22 num. 3 lit. b). Conclusión: opción D.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-011",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Estructura del nivel central",
+    "subtema": "Dependencias que absuelven consultas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 8 num. 3 (modificado por el art. 3 del Decreto Ley 1851 de 2021)",
+      "art. 9 num. 3 (modificado por el art. 4 del Decreto Ley 1851 de 2021)",
+      "art. 15 num. 5"
+    ],
+    "texto_fuente": "3. Absolver las consultas que formulen los servidores de la Procuraduría General, el Defensor del Pueblo y los personeros, en relación con el cumplimiento de las funciones del Ministerio Público distintas de las de carácter disciplinario. [...] 3. Absolver las consultas que en materia disciplinaria formulen los funcionarios de la Procuraduría, los personeros y los organismos de control disciplinario interno. [...] 5. Resolver las consultas que formulen los servidores públicos ajenos a la Procuraduría General de la Nación o los particulares, sobre las funciones constitucionales y legales del Ministerio Público.",
+    "pregunta": "Sandra es técnica de una procuraduría regional y maneja la correspondencia. Recibe tres consultas escritas que la regional no tiene a su cargo absolver y que debe remitir al nivel central: 1) la de un personero municipal sobre cómo intervenir como Ministerio Público en un proceso de policía; 2) la del jefe de control disciplinario interno de la gobernación sobre un trámite de un proceso disciplinario; 3) la de una ciudadana sobre las funciones constitucionales del Ministerio Público. ¿A qué dependencias debe remitirlas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1) Procuraduría Auxiliar para Asuntos Constitucionales; 2) Procuraduría Auxiliar para Asuntos Disciplinarios; 3) Oficina Jurídica.",
+        "explicacion": "Correcta. Las consultas de los personeros sobre funciones del Ministerio Público distintas de las disciplinarias las absuelve la Auxiliar para Asuntos Constitucionales (art. 8 num. 3); las de los organismos de control disciplinario interno en materia disciplinaria, la Auxiliar para Asuntos Disciplinarios (art. 9 num. 3); y las de los particulares sobre las funciones del Ministerio Público, la Oficina Jurídica (art. 15 num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "1) Procuraduría Auxiliar para Asuntos Disciplinarios; 2) Oficina Jurídica; 3) Oficina Jurídica.",
+        "explicacion": "Incorrecta. Acierta con la consulta de la ciudadana (art. 15 num. 5). Pero la del personero no es disciplinaria: trata de su intervención como Ministerio Público, y la absuelve la Auxiliar para Asuntos Constitucionales (art. 8 num. 3). Y la del jefe de control disciplinario interno es de materia disciplinaria, que corresponde a la Auxiliar para Asuntos Disciplinarios (art. 9 num. 3), aunque quien consulta sea ajeno a la Procuraduría."
+      },
+      {
+        "id": "C",
+        "texto": "1) Procuraduría Auxiliar para Asuntos Constitucionales; 2) Oficina Jurídica; 3) División de Relacionamiento con el Ciudadano.",
+        "explicacion": "Incorrecta. Acierta con la consulta del personero (art. 8 num. 3). Pero la del jefe de control disciplinario interno es disciplinaria y la absuelve la Auxiliar para Asuntos Disciplinarios (art. 9 num. 3). Y la de la ciudadana la resuelve la Oficina Jurídica (art. 15 num. 5), no la División de Relacionamiento con el Ciudadano, que recibe, asigna y orienta, pero no absuelve consultas (art. 18B)."
+      },
+      {
+        "id": "D",
+        "texto": "1) Procuraduría Auxiliar para Asuntos Disciplinarios; 2) Procuraduría Auxiliar para Asuntos Disciplinarios; 3) División de Relacionamiento con el Ciudadano.",
+        "explicacion": "Incorrecta. Acierta con la consulta del jefe de control disciplinario interno (art. 9 num. 3). Pero la del personero no es disciplinaria y va a la Auxiliar para Asuntos Constitucionales (art. 8 num. 3), y la de la ciudadana la resuelve la Oficina Jurídica (art. 15 num. 5), no la División de Relacionamiento con el Ciudadano, que recibe, asigna y orienta (art. 18B)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: quién consulta y sobre qué materia. Regla: la Procuraduría Auxiliar para Asuntos Constitucionales absuelve las consultas de los personeros sobre funciones del Ministerio Público no disciplinarias (art. 8 num. 3); la Auxiliar para Asuntos Disciplinarios, las consultas disciplinarias de los organismos de control disciplinario interno (art. 9 num. 3); y la Oficina Jurídica, las de los particulares sobre las funciones del Ministerio Público (art. 15 num. 5). Conclusión: opción A.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-012",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Relación con el control disciplinario interno",
+    "subtema": "Juzgamiento cuando no se pueden separar instrucción y juzgamiento",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 75A num. 6 (adicionado por el art. 20 del Decreto Ley 1851 de 2021)",
+      "art. 76A num. 2 y parágrafo (adicionado por el art. 23 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "6. Conocer del juzgamiento de los procesos disciplinarios de competencia del control interno disciplinario del orden departamental, en los eventos en que no se pueda garantizar la separación de la instrucción y el juzgamiento. [...] 2. Conocer de la etapa de juzgamiento de los procesos disciplinarios de competencia del control interno disciplinario del orden municipal y distrital, así como de las personerías municipales y distritales, en los eventos en que no puedan garantizar la separación de la instrucción y el juzgamiento. [...] PARÁGRAFO. Las Procuradurías Distritales de Bogotá, D. C., de Juzgamiento conocerán del juzgamiento de los procesos disciplinarios de competencia de las oficinas de control interno del orden nacional, en los eventos en que estas no puedan garantizar la separación de la instrucción y el juzgamiento.",
+    "pregunta": "Un profesional especializado de la Procuraduría Auxiliar para Asuntos Disciplinarios debe responder una consulta conjunta de tres jefes de control disciplinario interno. Por tener plantas muy reducidas, sus oficinas no pueden separar a quien instruye de quien juzga, y cada una tiene un proceso con pliego de cargos ya notificado. Las entidades son: 1) un instituto de tránsito del orden departamental; 2) una superintendencia del orden nacional; 3) un instituto de deportes del orden municipal. ¿Qué dependencia de la Procuraduría debe adelantar el juzgamiento en cada caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1) Una procuraduría regional de juzgamiento; 2) una procuraduría delegada para el juzgamiento disciplinario; 3) una procuraduría regional de juzgamiento.",
+        "explicacion": "Incorrecta. Acierta en el caso departamental (art. 75A num. 6), pero no en los otros dos. Las delegadas de juzgamiento intervienen cuando el control interno nacional no puede garantizar la segunda instancia (art. 25A num. 5); si lo que falta es separar instrucción y juzgamiento, juzgan las distritales de Bogotá (art. 76A, par.). Y el caso municipal es de la provincial de juzgamiento (art. 76A num. 2), no de la regional."
+      },
+      {
+        "id": "B",
+        "texto": "1) Una procuraduría provincial de juzgamiento; 2) una procuraduría delegada para el juzgamiento disciplinario; 3) una procuraduría provincial de juzgamiento.",
+        "explicacion": "Incorrecta. Acierta en el caso municipal (art. 76A num. 2), pero el departamental es de la regional de juzgamiento (art. 75A num. 6) y el nacional, de las distritales de juzgamiento de Bogotá (art. 76A, par.). Las delegadas de juzgamiento intervienen cuando el control interno no puede garantizar la segunda instancia (art. 25A num. 5), no cuando no puede separar las etapas."
+      },
+      {
+        "id": "C",
+        "texto": "1) Una procuraduría regional de juzgamiento; 2) una procuraduría distrital de juzgamiento de Bogotá; 3) una procuraduría provincial de juzgamiento.",
+        "explicacion": "Correcta. Si el control interno no puede separar instrucción y juzgamiento, juzga la regional cuando es del orden departamental (art. 75A num. 6), la distrital de juzgamiento de Bogotá cuando es del orden nacional (art. 76A, par.) y la provincial o distrital de juzgamiento cuando es del orden municipal (art. 76A num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "1) Una procuraduría provincial de juzgamiento; 2) una procuraduría distrital de juzgamiento de Bogotá; 3) una procuraduría regional de juzgamiento.",
+        "explicacion": "Incorrecta. Acierta en el caso nacional (art. 76A, par.), pero invierte los otros dos: el departamental le corresponde a la regional de juzgamiento (art. 75A num. 6) y el municipal, a la provincial de juzgamiento (art. 76A num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el orden de cada entidad (departamental, nacional y municipal) y que el problema es la separación entre instrucción y juzgamiento. Regla: en ese evento juzga la regional de juzgamiento si el control interno es departamental (art. 75A num. 6), las distritales de juzgamiento de Bogotá si es nacional (art. 76A, par.) y la provincial o distrital de juzgamiento si es municipal (art. 76A num. 2). Conclusión: opción C.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-013",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Relación con las personerías",
+    "subtema": "Segunda instancia y conflictos de competencia con personeros",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 75 nums. 5 y 10 (modificado por el art. 19 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "5. Conocer de los recursos de apelación, queja, impedimentos, recusaciones, así como del grado de consulta de la suspensión provisional y sus prórrogas, proferidos en etapa de instrucción por el control interno disciplinario del orden municipal y por las personerías municipales o distritales, en los eventos en que no se pueda garantizar la segunda instancia. [...] 10. Dirimir los conflictos de competencia que se susciten entre los personeros y los procuradores provinciales, en etapa de instrucción.",
+    "pregunta": "Óscar es técnico de una procuraduría regional de instrucción. Le llegan dos asuntos de un municipio cuya personería solo tiene al personero como abogado y no puede garantizar la segunda instancia: 1) la apelación de un quejoso contra el auto con el que el personero archivó una indagación contra un funcionario de la alcaldía; 2) un conflicto de competencia, en etapa de instrucción, entre ese personero y el procurador provincial, porque ambos quieren conocer de una misma queja. ¿Cómo debe tramitar los dos asuntos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La apelación, a la procuraduría provincial, por ser del orden municipal; el conflicto, al Procurador General de la Nación.",
+        "explicacion": "Incorrecta. Cuando la personería no puede garantizar la segunda instancia en etapa de instrucción, la apelación la decide la regional de instrucción, no la provincial (art. 75 num. 5). Y los conflictos entre personeros y provinciales en instrucción los dirime la regional (art. 75 num. 10)."
+      },
+      {
+        "id": "B",
+        "texto": "La apelación, a la regional de juzgamiento; el conflicto, a la Sala Disciplinaria de Instrucción.",
+        "explicacion": "Incorrecta. El auto de archivo se profirió en etapa de instrucción, así que su apelación no va a la regional de juzgamiento sino a la de instrucción (art. 75 num. 5). El conflicto tampoco sube al nivel central: lo dirime la regional (art. 75 num. 10)."
+      },
+      {
+        "id": "C",
+        "texto": "La apelación, a la procuraduría provincial, por ser del orden municipal; el conflicto, a la propia regional de instrucción.",
+        "explicacion": "Incorrecta. Acierta en el conflicto (art. 75 num. 10), pero la provincial no es la segunda instancia de la personería: si esta no puede garantizarla, la apelación la decide la regional de instrucción (art. 75 num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Los dos quedan en la propia regional de instrucción: allí se decide la apelación y se resuelve el conflicto.",
+        "explicacion": "Correcta. La regional de instrucción conoce de las apelaciones contra decisiones de instrucción de las personerías municipales que no pueden garantizar la segunda instancia (art. 75 num. 5) y dirime los conflictos de competencia entre personeros y procuradores provinciales en esa etapa (art. 75 num. 10)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la personería no puede garantizar la segunda instancia, el archivo se dictó en instrucción y el conflicto es entre el personero y el provincial. Regla: la regional de instrucción decide las apelaciones contra decisiones de instrucción de esas personerías (art. 75 num. 5) y dirime los conflictos de competencia entre personeros y provinciales en esa etapa (art. 75 num. 10). Conclusión: la regional resuelve los dos asuntos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-014",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Estructura del nivel central",
+    "subtema": "Actos de investigación complejos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 7 num. 21 (modificado por el art. 2 del Decreto Ley 1851 de 2021)",
+      "art. 10 num. 2 (modificado por el art. 5 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "21. Autorizar la práctica de las pruebas decretadas en todos los procesos disciplinarios por los funcionarios competentes, cuando se trate de actos de investigación complejos tales como interceptación de comunicaciones, inspecciones corporales, registros y allanamientos, vigilancia y seguimiento de personas, vigilancia de cosas, retención de correspondencia y recuperación de información producto de la transmisión de datos a través de las redes de comunicaciones y aquellos que por su naturaleza sean similares. [...] 2. Realizar, de manera exclusiva, los actos de investigación complejos autorizados previamente por el Procurador General de la Nación.",
+    "pregunta": "En una investigación por el presunto uso de maquinaria de un departamento en obras privadas, la procuradora regional de instrucción decretó como prueba vigilar durante varias semanas los recorridos de las volquetas y retroexcavadoras de la gobernación. La profesional especializada que sustancia el expediente debe proyectar el trámite para que la prueba se practique. ¿Qué debe proyectar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la procuradora regional la ordene en auto motivado y la practique el equipo investigador de la propia regional.",
+        "explicacion": "Incorrecta. La vigilancia de cosas es un acto de investigación complejo: no basta la orden del funcionario de conocimiento, pues requiere autorización del Procurador General (art. 7 num. 21), y su práctica es exclusiva de la Dirección Nacional de Investigaciones Especiales (art. 10 num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Que se pida la autorización del Procurador General y que la practique la Dirección Nacional de Investigaciones Especiales.",
+        "explicacion": "Correcta. El Procurador General autoriza, en todos los procesos disciplinarios, los actos de investigación complejos, entre ellos la vigilancia de cosas (art. 7 num. 21), y la Dirección Nacional de Investigaciones Especiales los realiza de manera exclusiva (art. 10 num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Que se pida la autorización de la Sala Disciplinaria de Instrucción y que la practique el equipo investigador de la propia regional.",
+        "explicacion": "Incorrecta. La autorización no le corresponde a la Sala de Instrucción sino al Procurador General (art. 7 num. 21), y la práctica no la hace la regional sino la Dirección Nacional de Investigaciones Especiales (art. 10 num. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que se pida la autorización del Procurador General y que la practique el equipo de la regional, que conoce el caso.",
+        "explicacion": "Incorrecta. Acierta en la autorización, pero los actos de investigación complejos los realiza de manera exclusiva la Dirección Nacional de Investigaciones Especiales (art. 10 num. 2), no el despacho que conoce el proceso."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la prueba consiste en vigilar bienes (la maquinaria) durante semanas, un acto de investigación complejo. Regla: el Procurador General autoriza esos actos en todos los procesos disciplinarios (art. 7 num. 21 del Decreto Ley 262, mod. Decreto Ley 1851 de 2021), y la Dirección Nacional de Investigaciones Especiales los realiza de manera exclusiva (art. 10 num. 2). Conclusión: opción B.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-015",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procuradurías territoriales",
+    "subtema": "Impedimentos de autoridades territoriales sin superior jerárquico",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 75B num. 8 (Decreto Ley 262 de 2000, adicionado por el art. 21 del Decreto Ley 1851 de 2021)",
+      "art. 12 incs. 1 y 2 (Ley 1437 de 2011)"
+    ],
+    "texto_fuente": "8. Conocer y resolver los impedimentos manifestados por los servidores públicos que desempeñen funciones dentro de su circunscripción territorial y carezcan de superior jerárquico, así como las recusaciones que contra ellos se formulen [...] En caso de impedimento el servidor enviará dentro de los tres (3) días siguientes a su conocimiento la actuación con escrito motivado al superior, o si no lo tuviere, a la cabeza del respectivo sector administrativo. A falta de todos los anteriores, al Procurador General de la Nación cuando se trate de autoridades nacionales o del Alcalde Mayor del Distrito Capital, o al procurador regional en el caso de las autoridades territoriales. La autoridad competente decidirá de plano sobre el impedimento dentro de los diez (10) días siguientes a la fecha de su recibo.",
+    "pregunta": "El gobernador de un departamento debía resolver un recurso de reposición contra una resolución que favoreció a una empresa de la que su hermano es socio, y se declaró impedido. Envió la actuación a la procuraduría regional, que la recibió el miércoles 4 de noviembre de 2026. Natalia, técnica de la regional que lleva el control de términos, debe registrar quién decide el impedimento y hasta qué fecha, contando los días hábiles. ¿Qué debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que lo decide el procurador regional de la circunscripción, a más tardar el jueves 19 de noviembre de 2026.",
+        "explicacion": "Correcta. El gobernador es una autoridad territorial sin superior jerárquico ni cabeza de sector, así que su impedimento lo decide el procurador regional (art. 12 de la Ley 1437; art. 75B num. 8 del Decreto Ley 262). El plazo es de 10 días desde el recibo: del jueves 5 al jueves 19 de noviembre, sin contar fines de semana ni el festivo del lunes 16."
+      },
+      {
+        "id": "B",
+        "texto": "Que lo decide el procurador regional de la circunscripción, a más tardar el miércoles 18 de noviembre de 2026.",
+        "explicacion": "Incorrecta. La autoridad es correcta, pero el conteo omite el festivo del lunes 16 de noviembre de 2026. Con él, el décimo día hábil es el jueves 19."
+      },
+      {
+        "id": "C",
+        "texto": "Que se remite al Procurador General, que lo decide a más tardar el jueves 19 de noviembre de 2026.",
+        "explicacion": "Incorrecta. La fecha es correcta, pero el Procurador General decide los impedimentos de las autoridades nacionales sin superior y del Alcalde Mayor de Bogotá (art. 12 de la Ley 1437; art. 7 num. 27 del Decreto Ley 262). Para las autoridades territoriales decide el procurador regional."
+      },
+      {
+        "id": "D",
+        "texto": "Que se remite al Procurador General, que lo decide a más tardar el miércoles 18 de noviembre de 2026.",
+        "explicacion": "Incorrecta. Falla en la autoridad y en la fecha. El gobernador es una autoridad territorial, así que decide el procurador regional, no el Procurador General (art. 12 de la Ley 1437). Y el conteo omite el festivo del lunes 16 de noviembre de 2026: el décimo día hábil es el jueves 19."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el impedido es un gobernador, autoridad territorial sin superior jerárquico, y la regional recibió la actuación el miércoles 4 de noviembre de 2026. Regla: el impedimento de una autoridad territorial sin superior lo decide el procurador regional dentro de los 10 días siguientes al recibo (art. 12 de la Ley 1437; art. 75B num. 8 del Decreto Ley 262). Cálculo: sin fines de semana ni el festivo del 16 de noviembre, el décimo día hábil es el jueves 19. Conclusión: opción A.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-016",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Procuradurías judiciales",
+    "subtema": "Funciones disciplinarias delegadas en procuradores judiciales",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 39",
+      "art. 76 num. 1 lit. a (modificado por el art. 22 del Decreto Ley 1851 de 2021)",
+      "art. 75 num. 1 lit. c (modificado por el art. 19 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "Cuando por necesidades del servicio, el Procurador General delegue funciones disciplinarias en los Procuradores Judiciales, los Procuradores Judiciales I tienen las mismas competencias de los Procuradores Provinciales y los Procuradores Judiciales II las mismas competencias de los Procuradores Regionales y Distritales. Estas competencias se ejercerán temporal o permanentemente. [...] a) Los alcaldes de municipios que no sean capital de departamento, los concejales de estos, los personeros, personeros delegados, ediles de juntas administradoras locales [...] c) Los diputados, concejales de las capitales de departamento, contralores departamentales y contralores municipales de capital de departamento",
+    "pregunta": "Por necesidades del servicio, el Procurador General delegó de forma permanente funciones disciplinarias en una procuraduría judicial I con sede en un municipio que no es capital de departamento. A ese despacho llegan dos quejas: una contra un concejal del municipio y otra contra un diputado de la asamblea departamental. La profesional universitaria del despacho debe proyectar la decisión sobre cuáles asume. ¿Qué debe proyectar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que asume las dos quejas, porque la delegación le da las competencias de un procurador regional.",
+        "explicacion": "Incorrecta. Las competencias de los procuradores regionales y distritales son las que se asimilan a los procuradores judiciales II. Un procurador judicial I tiene las de un procurador provincial (art. 39)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no asume ninguna, porque los procuradores judiciales solo intervienen ante las autoridades judiciales.",
+        "explicacion": "Incorrecta. Los procuradores judiciales intervienen ante las autoridades judiciales, pero el Procurador General puede delegarles funciones disciplinarias, de forma temporal o permanente (arts. 37 y 39)."
+      },
+      {
+        "id": "C",
+        "texto": "Que asume la del concejal, como lo haría un provincial, y envía la del diputado a la procuraduría regional de instrucción.",
+        "explicacion": "Correcta. Con la delegación, el procurador judicial I tiene las mismas competencias de un provincial (art. 39). Los concejales de municipios que no son capital son de competencia provincial (art. 76 num. 1 lit. a), y los diputados, de la regional de instrucción (art. 75 num. 1 lit. c)."
+      },
+      {
+        "id": "D",
+        "texto": "Que asume la del diputado y envía la del concejal a la personería municipal, porque esta tiene poder preferente.",
+        "explicacion": "Incorrecta. Invierte las competencias: el diputado es de la regional (art. 75 num. 1 lit. c), y la queja contra el concejal la conoce el procurador judicial I, que tiene las competencias de un provincial (arts. 39 y 76)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el despacho es una procuraduría judicial I con funciones disciplinarias delegadas, y las quejas son contra un concejal de un municipio que no es capital y contra un diputado. Regla: con la delegación, los procuradores judiciales I tienen las competencias de los provinciales y los II las de los regionales (art. 39); el concejal es de competencia provincial (art. 76 num. 1 lit. a) y el diputado, de la regional de instrucción (art. 75 num. 1 lit. c). Conclusión: opción C.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-017",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Intervención ante autoridades judiciales",
+    "subtema": "Intervención eventual de las procuradurías provinciales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 76B num. 5 (adicionado por el art. 24 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "5. Intervenir eventualmente como Ministerio Público ante las autoridades judiciales competentes, en asuntos de conocimiento de los procuradores judiciales, en los lugares donde estos no existan o no puedan actuar, previa comunicación al Procurador Delegado correspondiente.",
+    "pregunta": "En un municipio donde no hay procurador judicial, un juzgado promiscuo del circuito citó a una audiencia en un proceso penal, y el procurador provincial decidió actuar en ella como Ministerio Público. Tomás, técnico de la provincial, alista los documentos. ¿Qué paso previo debe cumplirse para que el procurador provincial pueda actuar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedirle al juez que designe a un agente especial del Ministerio Público para esa audiencia en particular.",
+        "explicacion": "Incorrecta. El juez no designa agentes del Ministerio Público. La norma permite que el provincial intervenga cuando no hay procurador judicial, con la sola comunicación previa al procurador delegado (art. 76B num. 5)."
+      },
+      {
+        "id": "B",
+        "texto": "Informar antes al procurador delegado que coordina esa clase de intervención ante los jueces.",
+        "explicacion": "Correcta. Las provinciales pueden intervenir eventualmente como Ministerio Público ante las autoridades judiciales, en asuntos de los procuradores judiciales, donde estos no existan o no puedan actuar, previa comunicación al procurador delegado correspondiente (art. 76B num. 5)."
+      },
+      {
+        "id": "C",
+        "texto": "Obtener la autorización escrita del Procurador General, pues los provinciales no actúan ante jueces.",
+        "explicacion": "Incorrecta. La norma no exige autorización del Procurador General. Los provinciales sí pueden actuar ante jueces en esta situación, con comunicación previa al delegado (art. 76B num. 5)."
+      },
+      {
+        "id": "D",
+        "texto": "Enviar el asunto al procurador regional, que es el único que puede actuar ante jueces en esos casos.",
+        "explicacion": "Incorrecta. Las regionales también tienen esa facultad (art. 75B num. 6), pero no de forma exclusiva: la ley se la da igualmente a las provinciales (art. 76B num. 5)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en el municipio no hay procurador judicial y el provincial quiere actuar como Ministerio Público en un proceso penal. Regla: las provinciales pueden intervenir eventualmente ante las autoridades judiciales en asuntos de los procuradores judiciales, donde estos no existan o no puedan actuar, previa comunicación al procurador delegado correspondiente (art. 76B num. 5, adicionado por el Decreto Ley 1851 de 2021). Conclusión: opción B.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-018",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Función preventiva y de intervención",
+    "subtema": "Acciones frente a contratos estatales",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 76B nums. 1 y 6 (adicionado por el art. 24 del Decreto Ley 1851 de 2021)"
+    ],
+    "texto_fuente": "1. Ejercer, de manera selectiva, control preventivo de la gestión administrativa y de la contratación estatal que adelantan los organismos y entidades públicas. [...] 6. Interponer las acciones populares, de tutela, de cumplimiento, de nulidad de actos administrativos y nulidad absoluta de los contratos estatales, y las demás que resulten conducentes para asegurar la defensa del orden jurídico, en especial las garantías y los derechos fundamentales, sociales, económicos, culturales, colectivos o del ambiente o el patrimonio público.",
+    "pregunta": "En una visita de control preventivo a la contratación de un municipio, una procuraduría provincial encontró que la alcaldía celebró un contrato de suministro con una empresa cuyo representante legal estaba inhabilitado para contratar con el Estado, vicio que, a juicio del despacho, afecta la validez del contrato. El profesional universitario del despacho debe proponer la actuación de la provincial frente al contrato. ¿Qué puede hacer la procuraduría provincial?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Declarar ella misma la nulidad del contrato, mediante una decisión motivada que debe notificar a las partes.",
+        "explicacion": "Incorrecta. La norma no le da a la provincial la facultad de anular contratos: le da la acción de nulidad absoluta, que se presenta ante el juez, y es el juez quien decide (art. 76B num. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "Ordenarle al alcalde que suspenda la ejecución del contrato mientras la procuraduría regional revisa el caso.",
+        "explicacion": "Incorrecta. El control preventivo no le permite a la provincial dar órdenes de administración al alcalde. Sus herramientas son el control preventivo, la intervención ante las autoridades y las acciones judiciales (art. 76B nums. 1, 2 y 6)."
+      },
+      {
+        "id": "C",
+        "texto": "Enviar el caso a la regional, porque las provinciales solo tienen funciones de tipo disciplinario.",
+        "explicacion": "Incorrecta. Las provinciales también tienen funciones preventivas y de intervención: control preventivo de la contratación y acciones como la de nulidad absoluta de los contratos (art. 76B nums. 1 y 6)."
+      },
+      {
+        "id": "D",
+        "texto": "Presentar ante el juez competente la acción de nulidad absoluta del contrato de suministro.",
+        "explicacion": "Correcta. Las procuradurías provinciales ejercen control preventivo selectivo de la contratación (art. 76B num. 1) y pueden interponer, entre otras, la acción de nulidad absoluta de los contratos estatales (art. 76B num. 6). La provincial demanda ante el juez; no anula el contrato por sí misma."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la provincial detectó, en control preventivo, que un contrato municipal se celebró con un contratista inhabilitado. Regla: las provinciales ejercen control preventivo selectivo de la contratación estatal (art. 76B num. 1) y pueden interponer la acción de nulidad absoluta de los contratos estatales (art. 76B num. 6, adicionado por el Decreto Ley 1851 de 2021). No tienen facultad para anular el contrato ni para ordenar su suspensión. Conclusión: presentar ante el juez la acción de nulidad absoluta del contrato (opción D).",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-019",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Intervención ante autoridades judiciales",
+    "subtema": "Pérdida de investidura de diputados y concejales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 44 incs. 1 y 2",
+      "art. 30 num. 2"
+    ],
+    "texto_fuente": "Los procuradores judiciales con funciones de intervención en los procesos contencioso administrativos actuarán ante los tribunales y los juzgados administrativos, ante los tribunales de arbitramento, cámaras de comercio y asociaciones profesionales gremiales que conozcan procesos contencioso administrativos y demás autoridades que señale la ley. Igualmente, intervienen en los procesos de pérdida de investidura de los alcaldes, diputados y concejales y promueven las acciones de pérdida de investidura conforme a la ley. [...] 2. En los procesos de pérdida de investidura de los Congresistas.",
+    "pregunta": "Paula es técnica de una procuraduría regional con sede en la capital de un departamento, donde también funcionan las procuradurías judiciales administrativas. Ella distribuye las notificaciones judiciales que llegan a la sede. Recibe el auto con el que el tribunal administrativo del departamento admitió una demanda de pérdida de investidura contra un diputado y ordenó notificar al Ministerio Público. ¿A quién debe entregar la notificación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al procurador regional de instrucción, porque los diputados son sujetos de su competencia disciplinaria.",
+        "explicacion": "Incorrecta. Confunde la competencia disciplinaria con la intervención judicial. Ante el tribunal, en la pérdida de investidura de un diputado, interviene el procurador judicial (art. 44)."
+      },
+      {
+        "id": "B",
+        "texto": "A la procuraduría delegada que interviene ante el Consejo de Estado en los procesos de pérdida de investidura.",
+        "explicacion": "Incorrecta. Las delegadas intervienen en la pérdida de investidura de los Congresistas ante el Consejo de Estado (art. 30 num. 2). La de los diputados se tramita ante el tribunal, con intervención del procurador judicial."
+      },
+      {
+        "id": "C",
+        "texto": "Al procurador judicial que interviene en los procesos contencioso administrativos ante ese tribunal.",
+        "explicacion": "Correcta. Los procuradores judiciales con funciones de intervención en lo contencioso administrativo actúan ante los tribunales y también intervienen en los procesos de pérdida de investidura de alcaldes, diputados y concejales (art. 44)."
+      },
+      {
+        "id": "D",
+        "texto": "Al personero del municipio donde reside el diputado, también agente del Ministerio Público.",
+        "explicacion": "Incorrecta. Los personeros son agentes del Ministerio Público (art. 180), pero la ley asigna esta intervención a los procuradores judiciales, que actúan ante el tribunal (art. 44)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la demanda de pérdida de investidura es contra un diputado y la tramita el tribunal administrativo del departamento. Regla: los procuradores judiciales con funciones en lo contencioso administrativo actúan ante los tribunales y juzgados administrativos e intervienen en la pérdida de investidura de alcaldes, diputados y concejales (art. 44); las delegadas lo hacen en la de los Congresistas ante el Consejo de Estado (art. 30 num. 2). Conclusión: opción C.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-PGN-020",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Competencias disciplinarias por nivel",
+    "subtema": "Conexidad entre asuntos de delegadas y de procuradurías territoriales",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000 y Ley 1952 de 2019",
+    "articulos": [
+      "art. 25 num. 1 lit. b y par. 1 (Decreto Ley 262 de 2000, modificado por el art. 12 del Decreto Ley 1851 de 2021)",
+      "art. 96 inc. 2 (Ley 1952 de 2019)"
+    ],
+    "texto_fuente": "b) Los gerentes, directores y miembros de juntas directivas, o sus equivalentes, de los organismos descentralizados del nivel nacional. [...] PARÁGRAFO 1o. Cuando por razones de conexidad, en una misma actuación disciplinaria deban investigarse asuntos de competencia de una procuraduría delegada de instrucción y una procuraduría del nivel territorial de instrucción, la competencia para conocer corresponderá a la procuraduría delegada. [...] Cuando la investigación sea asumida por la Procuraduría o la Personería se conservará la unidad procesal.",
+    "pregunta": "Una procuraduría regional de instrucción abrió investigación por irregularidades en un convenio para dotar hospitales. En los mismos hechos participaron el secretario de salud del departamento, la tesorera de un municipio que no es capital y el gerente general de una empresa industrial y comercial del Estado del orden nacional que suministró los equipos. Un profesional especializado de la regional debe proyectar la decisión sobre quién conoce de la actuación. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enviar toda la actuación a una procuraduría delegada de instrucción, para que investigue a los tres en un solo proceso.",
+        "explicacion": "Correcta. El gerente de un organismo descentralizado del nivel nacional es de competencia de las delegadas de instrucción (art. 25 num. 1 lit. b). Cuando por conexidad una misma actuación incluye asuntos de una delegada y de una procuraduría territorial, conoce la delegada (art. 25, par. 1), y la Procuraduría conserva la unidad procesal (art. 96 de la Ley 1952)."
+      },
+      {
+        "id": "B",
+        "texto": "Conservar toda la actuación en la regional, porque fue la primera que inició la investigación por estos hechos.",
+        "explicacion": "Incorrecta. Haber iniciado primero la investigación no le da a la regional competencia sobre un servidor del orden nacional. Por la conexidad, la competencia es de la delegada (art. 25, par. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Conservar en la regional al secretario y a la tesorera, y enviar solo lo del gerente a una procuraduría delegada.",
+        "explicacion": "Incorrecta. Rompe la unidad procesal (art. 96 de la Ley 1952). Si los asuntos son conexos y uno le corresponde a una delegada, toda la actuación pasa a ella (art. 25, par. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Separar la actuación: el secretario en la regional, la tesorera en la provincial y el gerente en una delegada.",
+        "explicacion": "Incorrecta. Divide una actuación conexa que debe tramitarse en un solo proceso. La regla de conexidad asigna toda la actuación a la delegada de instrucción (art. 25, par. 1)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: en los mismos hechos participan un servidor departamental, una servidora municipal y el gerente de una empresa del orden nacional. Regla: el gerente es de competencia de las delegadas de instrucción (art. 25 num. 1 lit. b); si por conexidad una actuación reúne asuntos de una delegada y de una procuraduría territorial, conoce la delegada (art. 25, par. 1), y la Procuraduría conserva la unidad procesal (art. 96 de la Ley 1952). Conclusión: todo pasa a la delegada.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0262_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

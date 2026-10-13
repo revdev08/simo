@@ -1,0 +1,909 @@
+[
+  {
+    "id": "TC-TH-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Requisitos de los empleos",
+    "subtema": "Experiencia certificada con jornada inferior a ocho horas diarias",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.2.3.8, inc. final", "art. 2.2.2.4.5, grado 05"],
+    "texto_fuente": "Cuando las certificaciones indiquen una jornada laboral inferior a ocho (8) horas diarias, el tiempo de experiencia se establecerá sumando las horas trabajadas y dividiendo el resultado por ocho (8). [...] Diploma de bachiller y dieciséis (16) meses de experiencia relacionada o laboral.",
+    "pregunta": "Un técnico de la oficina de talento humano de un ministerio revisa la hoja de vida de un aspirante a un empleo del nivel técnico grado 05, que exige diploma de bachiller y dieciséis meses de experiencia relacionada o laboral. El aspirante es bachiller y presenta dos certificaciones de empresas distintas, por periodos que no se cruzan: en la primera trabajó 8 meses con jornada de 8 horas diarias, y en la segunda, 12 meses con jornada de 4 horas diarias. ¿Qué debe concluir el técnico sobre la experiencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cumple: las dos certificaciones suman 20 meses de experiencia y el empleo exige 16.",
+        "explicacion": "Incorrecta. Suma los meses sin ajustar la jornada. La segunda certificación es de 4 horas diarias: sus horas se suman y se dividen por ocho, de modo que equivale a 6 meses y no a 12."
+      },
+      {
+        "id": "B",
+        "texto": "No cumple: la segunda certificación equivale a 6 meses y en total acredita 14 de los 16.",
+        "explicacion": "Correcta. Doce meses a 4 horas diarias son la mitad de las horas de una jornada de 8: equivalen a 6 meses. Con los 8 meses de tiempo completo suma 14, por debajo de los 16 que exige el grado 05."
+      },
+      {
+        "id": "C",
+        "texto": "No cumple: solo vale la experiencia de jornada completa, y con ella acredita apenas 8 meses.",
+        "explicacion": "Incorrecta. La experiencia de jornada parcial sí cuenta. La norma no la descarta: la convierte sumando las horas trabajadas y dividiéndolas por ocho."
+      },
+      {
+        "id": "D",
+        "texto": "Cumple: el ajuste por jornada parcial se aplica a la experiencia profesional y no a la laboral.",
+        "explicacion": "Incorrecta. La regla de dividir las horas por ocho se aplica a toda certificación con jornada inferior a 8 horas diarias, sin distinguir la clase de experiencia."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: una de las certificaciones es de 12 meses con jornada de 4 horas diarias. Regla: el art. 2.2.2.3.8 del Decreto 1083 ordena que, si la jornada certificada es inferior a 8 horas, el tiempo se establezca sumando las horas trabajadas y dividiéndolas por ocho. Cálculo: 12 meses × 4/8 = 6 meses; 8 + 6 = 14 meses. Conclusión: no alcanza los 16 meses del grado 05.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Requisitos de los empleos",
+    "subtema": "Equivalencia entre secundaria y experiencia laboral y límite de compensación en el nivel asistencial",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.2.4.6, grado 14 y parágrafo 1", "art. 2.2.2.5.1, num. 2"],
+    "texto_fuente": "Aprobación de cinco (5) años de educación básica secundaria y seis (6) meses de experiencia laboral. [...] PARÁGRAFO 1. En este nivel sólo se podrá compensar hasta los dos (2) últimos años de educación básica primaria, únicamente para los grados 05 y 06; hasta dos (2) años de educación básica secundaria, para los grados 07 al 14 [...] No obstante, cuando se trate de un empleo clasificado en los grados 05 a 12, cuyas funciones correspondan a un oficio específico o a labores que se caracterizan por el predominio de actividades manuales o de tareas de simple ejecución, se podrá compensar cada año de educación por un (1) año de experiencia en la especialidad. [...] Aprobación de un (1) año de educación básica secundaria por seis (6) meses de experiencia laboral y viceversa, siempre y cuando se acredite la formación básica primaria.",
+    "pregunta": "Una auxiliar administrativa de talento humano de una superintendencia verifica los requisitos de un aspirante a un empleo asistencial grado 14, que exige aprobación de cinco años de educación básica secundaria y seis meses de experiencia laboral. El manual de funciones adoptó las equivalencias del Decreto 1083 de 2015. El aspirante terminó la primaria, aprobó dos años de secundaria y acredita 30 meses de experiencia laboral. ¿Qué debe concluir la auxiliar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cumple: los tres años de secundaria que le faltan equivalen a 18 meses, que con los 6 exigidos suman 24 de sus 30.",
+        "explicacion": "Incorrecta. La cuenta de la equivalencia es correcta (seis meses de experiencia por cada año de secundaria), pero olvida el límite: en los grados 07 al 14 solo se pueden compensar hasta dos años de secundaria."
+      },
+      {
+        "id": "B",
+        "texto": "No cumple: cada año de secundaria se compensa con un año de experiencia, y necesitaría 42 meses en total.",
+        "explicacion": "Incorrecta. La conclusión coincide, pero la razón no. Compensar cada año de educación con un año de experiencia es una excepción para los grados 05 a 12 con funciones de oficio o manuales; la regla general es de seis meses por año, y lo que impide cumplir es el límite de dos años."
+      },
+      {
+        "id": "C",
+        "texto": "No cumple: en ese grado solo pueden compensarse hasta dos años de secundaria, y a él le faltan tres.",
+        "explicacion": "Correcta. Al aspirante le faltan tres de los cinco años de secundaria. Aunque su experiencia alcanzaría para la cuenta, en los grados 07 al 14 la compensación llega como máximo a dos años de secundaria, así que el tercero no puede suplirse."
+      },
+      {
+        "id": "D",
+        "texto": "Cumple, con tal de que su experiencia sea relacionada con las funciones del empleo que va a ocupar.",
+        "explicacion": "Incorrecta. La equivalencia de la secundaria se hace con experiencia laboral, no relacionada. Y aunque la experiencia fuera relacionada, en el grado 14 no puede compensar más de dos años de secundaria."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el empleo es del grado 14 y al aspirante le faltan tres de los cinco años de secundaria. Regla: el num. 2 del art. 2.2.2.5.1 del Decreto 1083 permite compensar un año de secundaria con seis meses de experiencia laboral, pero el parágrafo 1 del art. 2.2.2.4.6 limita la compensación a dos años de secundaria en los grados 07 al 14. Conclusión: aunque los 30 meses alcanzarían para la cuenta (18 + 6 = 24), no puede compensar el tercer año que le falta; no cumple.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Ingreso al servicio y posesión",
+    "subtema": "Documentos que se piden antes de la posesión y verificaciones a cargo de la entidad",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.1.4, num. 6 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.1.5, num. 2 y parágrafo 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.1.9, incs. 1 y 3 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "6. Tener certificado médico de aptitud física y mental y practicarse el examen médico de ingreso, ordenado por la entidad empleadora. [...] 2. Verificar directamente los antecedentes fiscales, disciplinarios y judiciales del aspirante, dejando las constancias respectivas. PARÁGRAFO 1. No se podrán exigir al aspirante constancias, certificaciones o documentos para el cumplimiento de los requisitos que reposen en la respectiva entidad. [...] Previo a la posesión de un empleo público, la persona deberá haber declarado bajo juramento el monto de sus bienes y rentas en el formato adoptado para el efecto por el Departamento Administrativo de la Función Pública, a través del Sistema de Información y Gestión del Empleo Público - SIGEP [...] Así mismo, deberá haber diligenciado el formato de hoja de vida adoptado para el efecto por el Departamento Administrativo de la Función Pública, a través del Sistema de Información y Gestión del Empleo Público - SIGEP.",
+    "pregunta": "Una auxiliar de la oficina de talento humano de una gobernación prepara la lista de lo que debe aportar Jorge antes de posesionarse como profesional universitario. Jorge trabajó en esa misma gobernación hasta 2024, y su diploma de abogado y su tarjeta profesional reposan en su historia laboral. La coordinadora le pidió incluir: copias del diploma y de la tarjeta; certificados de antecedentes disciplinarios, fiscales y judiciales descargados por Jorge; declaración de bienes y rentas y hoja de vida en el SIGEP, y certificado médico de aptitud con el examen de ingreso que ordene la entidad. ¿Qué ajuste debe hacer la auxiliar a la lista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguno: todo lo que pidió la coordinadora es requisito para que Jorge pueda posesionarse en el empleo.",
+        "explicacion": "Incorrecta. La entidad no puede exigir documentos que ya reposan en ella, como el diploma y la tarjeta, y los antecedentes debe verificarlos directamente la unidad de personal."
+      },
+      {
+        "id": "B",
+        "texto": "Quitar el examen médico de ingreso, que solo se exige a quien entra por primera vez al servicio público.",
+        "explicacion": "Incorrecta. El certificado de aptitud física y mental y el examen de ingreso ordenado por la entidad son requisitos para ejercer el empleo, y la norma no exime a quien ya trabajó en la entidad."
+      },
+      {
+        "id": "C",
+        "texto": "Quitar la declaración de bienes y rentas, que se presenta en el SIGEP durante el mes siguiente a la posesión.",
+        "explicacion": "Incorrecta. La declaración de bienes y rentas debe estar hecha antes de la posesión, igual que la hoja de vida en el SIGEP."
+      },
+      {
+        "id": "D",
+        "texto": "Quitar las copias del diploma y de la tarjeta, y que la oficina consulte por su cuenta los antecedentes.",
+        "explicacion": "Correcta. El diploma y la tarjeta reposan en la gobernación, así que no pueden exigírsele, y los antecedentes fiscales, disciplinarios y judiciales los verifica directamente la unidad de personal. Lo demás se mantiene."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el diploma y la tarjeta de Jorge ya están en su historia laboral, y la lista le traslada a él la consulta de antecedentes. Reglas: el art. 2.2.5.1.5 del Decreto 1083 prohíbe exigir documentos que reposen en la entidad y ordena a la unidad de personal verificar directamente los antecedentes; el art. 2.2.5.1.9 exige la declaración de bienes y rentas y la hoja de vida en el SIGEP antes de la posesión, y el art. 2.2.5.1.4 pide el certificado médico y el examen de ingreso. Conclusión: se quitan las copias y la oficina consulta los antecedentes.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Declaración de bienes y rentas y SIGEP",
+    "subtema": "Actualización de la declaración al retiro: fecha de corte y plazo",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.16.3 (modificado por el art. 1 del Decreto 484 de 2017)"],
+    "texto_fuente": "El corte de cuentas de los anteriores documentos al momento de ingreso al servicio y de actualización será el 31 de diciembre del año inmediatamente anterior al de su presentación. En caso de retiro del servidor público de la entidad, la actualización en el sistema se hará con corte a la fecha en que se produjo este hecho y deberá ser presentada por el servidor público dentro de los tres (3) días hábiles siguientes.",
+    "pregunta": "Un técnico de talento humano de un ministerio tramita el retiro de una profesional que dejó el servicio el viernes 9 de octubre de 2026, tras serle aceptada la renuncia. Debe indicarle cómo actualizar en el SIGEP su declaración de bienes y rentas. ¿Qué fecha de corte y qué plazo debe informarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Corte al 31 de diciembre de 2025 y presentación a más tardar el miércoles 14 de octubre de 2026.",
+        "explicacion": "Incorrecta. Aplica el corte del ingreso y de la actualización anual, que no es el del retiro, y cuenta como hábil el lunes 12 de octubre, que es festivo."
+      },
+      {
+        "id": "B",
+        "texto": "Corte al 9 de octubre de 2026 y presentación a más tardar el miércoles 14 de octubre de 2026.",
+        "explicacion": "Incorrecta. Acierta en la fecha de corte, pero cuenta como hábil el lunes 12 de octubre, que es festivo. Los tres días hábiles son el 13, el 14 y el 15 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "Corte al 31 de diciembre de 2025 y presentación a más tardar el jueves 15 de octubre de 2026.",
+        "explicacion": "Incorrecta. Acierta en el plazo, pero en el retiro el corte no es el 31 de diciembre del año anterior: es la fecha en que se produjo el retiro."
+      },
+      {
+        "id": "D",
+        "texto": "Corte al 9 de octubre de 2026 y presentación a más tardar el jueves 15 de octubre de 2026.",
+        "explicacion": "Correcta. Al retiro, la actualización se hace con corte a la fecha del retiro (9 de octubre) y se presenta dentro de los tres días hábiles siguientes. Como el lunes 12 es festivo, esos días son el 13, el 14 y el 15 de octubre."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el retiro se produjo el viernes 9 de octubre de 2026. Regla: el art. 2.2.16.3 del Decreto 1083 (mod. Decreto 484 de 2017) ordena que, al retiro, la actualización se haga con corte a la fecha del retiro y se presente dentro de los 3 días hábiles siguientes. Cálculo: el lunes 12 de octubre es festivo, así que los días hábiles son el 13, el 14 y el 15 de octubre. Conclusión: corte al 9 de octubre y plazo hasta el jueves 15 de octubre de 2026.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Declaración de bienes y rentas y SIGEP",
+    "subtema": "Actualización anual de la declaración en una entidad territorial",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.16.3, inc. 1 (modificado por el art. 1 del Decreto 484 de 2017)",
+      "art. 2.2.16.4, lits. a y b (modificado por el art. 2 del Decreto 484 de 2017)"
+    ],
+    "texto_fuente": "El corte de cuentas de los anteriores documentos al momento de ingreso al servicio y de actualización será el 31 de diciembre del año inmediatamente anterior al de su presentación. [...] a) Servidores públicos de las entidades y organismos públicos de orden nacional entre el 1 de abril y el 31 de mayo de cada vigencia b) Servidores públicos de las entidades y organismos públicos de orden territorial entre el 1 de junio y el 31 de julio de cada vigencia.",
+    "pregunta": "Una auxiliar administrativa de talento humano de una alcaldía redacta la circular que recordará a los servidores la actualización anual de su declaración de bienes y rentas en el SIGEP durante 2027. ¿Qué periodo de presentación y qué fecha de corte debe indicar en la circular?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Del 1 de abril al 31 de mayo de 2027, con corte de cuentas al 31 de diciembre de 2026.",
+        "explicacion": "Incorrecta. Acierta en el corte, pero el periodo del 1 de abril al 31 de mayo es el de los servidores del orden nacional, no el de una alcaldía."
+      },
+      {
+        "id": "B",
+        "texto": "Del 1 de junio al 31 de julio de 2027, con corte de cuentas al 31 de diciembre de 2026.",
+        "explicacion": "Correcta. Los servidores del orden territorial actualizan su declaración entre el 1 de junio y el 31 de julio, con corte al 31 de diciembre del año anterior al de la presentación."
+      },
+      {
+        "id": "C",
+        "texto": "Del 1 de junio al 31 de julio de 2027, con corte de cuentas a la fecha en que cada uno la presente.",
+        "explicacion": "Incorrecta. Acierta en el periodo, pero el corte a una fecha distinta del 31 de diciembre del año anterior solo se usa al retiro del servidor, y es la fecha del retiro."
+      },
+      {
+        "id": "D",
+        "texto": "Del 1 de abril al 31 de mayo de 2027, con corte de cuentas al 31 de marzo de 2027.",
+        "explicacion": "Incorrecta. Ese periodo es el del orden nacional, y el corte de la actualización anual es el 31 de diciembre del año anterior, no el día previo al inicio del periodo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la alcaldía es una entidad del orden territorial y se trata de la actualización anual de 2027. Regla: el art. 2.2.16.4 del Decreto 1083 fija para el orden territorial el periodo del 1 de junio al 31 de julio (el del 1 de abril al 31 de mayo es para el orden nacional), y el art. 2.2.16.3 señala como corte el 31 de diciembre del año anterior al de la presentación. Conclusión: del 1 de junio al 31 de julio de 2027, con corte al 31 de diciembre de 2026.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Declaración de bienes y rentas y SIGEP",
+    "subtema": "Obligados a diligenciar el formato único de hoja de vida",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.17.10, inc. 2 y nums. 1 a 3"],
+    "texto_fuente": "Están obligados a diligenciar el formato único de hoja de vida, con excepción de quienes ostenten la calidad de miembros de las Corporaciones Públicas: 1. Los empleados públicos que ocupen cargos de elección popular y que no pertenezcan a Corporaciones Públicas, de período fijo, de carrera y de libre nombramiento y remoción, previamente a la posesión. 2. Los trabajadores oficiales. 3. Los contratistas de prestación de servicios, previamente a la celebración del contrato.",
+    "pregunta": "Un técnico de talento humano de un municipio revisa quiénes deben tener diligenciado el formato único de hoja de vida del SIGEP. Tiene tres casos: un contratista de prestación de servicios cuyo contrato se firmará la próxima semana, un trabajador oficial de obras públicas vinculado por contrato de trabajo y un concejal recién elegido que pregunta si también debe hacerlo. ¿Quiénes están obligados a diligenciarlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El contratista, antes de firmar el contrato, y el trabajador oficial; el concejal no tiene esa obligación.",
+        "explicacion": "Correcta. El contratista debe diligenciarlo antes de celebrar el contrato y el trabajador oficial también está obligado. Los miembros de las corporaciones públicas, como el concejal, están exceptuados."
+      },
+      {
+        "id": "B",
+        "texto": "El trabajador oficial y el concejal; el contratista no, al no tener la calidad de servidor público.",
+        "explicacion": "Incorrecta. El contratista de prestación de servicios sí está obligado, antes de celebrar el contrato, aunque no sea servidor público. El concejal, como miembro de una corporación pública, está exceptuado."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el trabajador oficial; el contratista no es servidor y el concejal es miembro de una corporación.",
+        "explicacion": "Incorrecta. Acierta en el concejal, pero deja por fuera al contratista, que la norma obliga a diligenciar el formato antes de celebrar el contrato."
+      },
+      {
+        "id": "D",
+        "texto": "El contratista, antes de firmar, y el concejal; el trabajador oficial no, al regirse por su contrato.",
+        "explicacion": "Incorrecta. Los trabajadores oficiales están expresamente obligados a diligenciar el formato, y los miembros de las corporaciones públicas están exceptuados."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los tres casos son un contratista que aún no firma, un trabajador oficial y un concejal. Regla: el art. 2.2.17.10 del Decreto 1083 obliga a diligenciar el formato único de hoja de vida a los empleados públicos antes de posesionarse, a los trabajadores oficiales y a los contratistas de prestación de servicios antes de celebrar el contrato, y exceptúa a los miembros de las corporaciones públicas. Conclusión: deben hacerlo el contratista, antes de firmar, y el trabajador oficial; el concejal no.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-057",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Bienestar social",
+    "subtema": "Programas obligatorios de calidad de vida laboral: clima laboral y prepensionados",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.10.7, nums. 1 y 3", "art. 2.2.10.3"],
+    "texto_fuente": "Los programas de bienestar orientados a la protección y servicios sociales no podrán suplir las responsabilidades asignadas por la ley a las Cajas de Compensación Familiar, las Empresas Promotoras de Salud, los Fondos de Vivienda y Pensiones y las Administradoras de Riesgos Profesionales. [...] las entidades deberán efectuar los siguientes programas: 1. Medir el clima laboral, por lo menos cada dos años y definir, ejecutar y evaluar estrategias de intervención. [...] 3. Preparar a los prepensionados para el retiro del servicio.",
+    "pregunta": "La coordinadora de bienestar de una superintendencia le pide a un técnico que revise el borrador del programa de bienestar de 2027. La última medición del clima laboral se hizo en agosto de 2026; el borrador incluye las estrategias de intervención que salieron de ella y deja la siguiente medición para julio de 2028, sin medir en 2027. Además, no incluye actividades para los 12 servidores que están próximos a pensionarse, porque supone que su preparación le corresponde al fondo de pensiones. ¿Qué debe señalar el técnico en su revisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el borrador se ajusta: la medición puede esperar a julio de 2028 y el retiro es asunto del fondo.",
+        "explicacion": "Incorrecta. Acierta en la medición, pero preparar a los prepensionados para el retiro es un programa que debe efectuar la propia entidad; no es una responsabilidad legal del fondo que el bienestar esté supliendo."
+      },
+      {
+        "id": "B",
+        "texto": "Que la medición puede esperar a julio de 2028, pero que faltan actividades para los prepensionados.",
+        "explicacion": "Correcta. El clima debe medirse por lo menos cada dos años: tras la medición de agosto de 2026, la de julio de 2028 (23 meses después) cumple. En cambio, preparar a los prepensionados para el retiro es un programa obligatorio de la entidad, y el borrador lo omite."
+      },
+      {
+        "id": "C",
+        "texto": "Que falta medir el clima en 2027, pero que la preparación para el retiro sí es asunto del fondo.",
+        "explicacion": "Incorrecta. Equivoca los dos puntos: la medición es por lo menos cada dos años, no anual, y la preparación de los prepensionados para el retiro le corresponde a la entidad, no al fondo de pensiones."
+      },
+      {
+        "id": "D",
+        "texto": "Que falta medir el clima en 2027 y que también faltan actividades para los prepensionados.",
+        "explicacion": "Incorrecta. Acierta en los prepensionados, pero exige una medición anual que la norma no pide: basta medir por lo menos cada dos años, y julio de 2028 está dentro de ese plazo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la última medición fue en agosto de 2026, la siguiente queda para julio de 2028 y el borrador omite a los prepensionados. Regla: el art. 2.2.10.7 del Decreto 1083 obliga a medir el clima laboral por lo menos cada dos años y a preparar a los prepensionados para el retiro; el art. 2.2.10.3 impide que el bienestar supla las responsabilidades legales de los fondos, pero esa preparación es un programa propio de la entidad. Cálculo: de agosto de 2026 a julio de 2028 hay 23 meses. Conclusión: la medición cumple; faltan los prepensionados.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Incentivos",
+    "subtema": "Requisitos de los equipos de trabajo y de sus proyectos para competir por los incentivos",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.10.9, parágrafo", "art. 2.2.10.13, num. 1", "art. 2.2.10.14, num. 1"],
+    "texto_fuente": "PARÁGRAFO . Se entenderá por equipo de trabajo el grupo de personas que laboran en forma interdependiente y coordinada, aportando las habilidades individuales requeridas para la consecución de un resultado concreto, en el cumplimiento de planes y objetivos institucionales. Los integrantes de los equipos de trabajo pueden ser empleados de una misma dependencia o de distintas dependencias de la entidad. [...] 1. Convocar a las diferentes dependencias o áreas de trabajo de la entidad para que postulen proyectos institucionales desarrollados por equipos de trabajo, concluidos en el año inmediatamente anterior. [...] 1. El proyecto u objetivo inscrito para ser evaluado debe haber concluido.",
+    "pregunta": "En agosto de 2026, una técnica de talento humano de un departamento administrativo revisa las inscripciones al plan de incentivos para los equipos de trabajo. La entidad escogió convocar a sus dependencias para que postulen proyectos ya desarrollados por equipos. Se inscribieron tres: el equipo 1, de cinco empleados de tres dependencias distintas, con un proyecto que terminó en octubre de 2025; el equipo 2, de cuatro empleados de una misma dependencia, con un proyecto que terminó en abril de 2024, y el equipo 3, de seis empleados de una misma oficina, con un proyecto que terminará en diciembre de 2026. ¿Qué equipos pueden seguir en el proceso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los equipos 1 y 2, porque los dos proyectos ya habían terminado cuando se abrió la convocatoria.",
+        "explicacion": "Incorrecta. En la alternativa que escogió la entidad, los proyectos deben haber concluido en el año inmediatamente anterior, es decir, en 2025. El del equipo 2 terminó en 2024."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el equipo 2, porque el equipo 1 reúne a empleados que pertenecen a varias dependencias.",
+        "explicacion": "Incorrecta. Los integrantes de un equipo de trabajo pueden ser de una misma dependencia o de distintas dependencias. Además, el proyecto del equipo 2 no terminó en el año anterior."
+      },
+      {
+        "id": "C",
+        "texto": "Solo el equipo 1, que es el único con un proyecto terminado en el año anterior a la convocatoria.",
+        "explicacion": "Correcta. El equipo 1 puede reunir empleados de varias dependencias y su proyecto concluyó en 2025. El del equipo 2 concluyó en 2024, y el del equipo 3 aún no ha concluido."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque los proyectos debían inscribirse antes de empezar a ejecutarse para poder competir.",
+        "explicacion": "Incorrecta. La inscripción previa de proyectos corresponde a la otra alternativa, la de fijar áreas estratégicas para el año siguiente. La entidad escogió convocar proyectos ya desarrollados."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la entidad eligió postular proyectos ya desarrollados y la convocatoria es de 2026. Reglas: el art. 2.2.10.13 num. 1 del Decreto 1083 admite en esa alternativa proyectos concluidos en el año inmediatamente anterior (2025); el art. 2.2.10.14 exige que el proyecto haya concluido, y el parágrafo del art. 2.2.10.9 permite equipos con empleados de distintas dependencias. Conclusión: sigue solo el equipo 1; el 2 terminó en 2024 y el 3 no ha concluido.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Requisitos de los empleos",
+    "subtema": "Plazos para presentar la tarjeta profesional en trámite y el título obtenido en el exterior",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.2.3.3, inc. 2", "art. 2.2.2.3.4, inc. 2"],
+    "texto_fuente": "En los casos en que para el ejercicio de la respectiva profesión se requiera acreditar la tarjeta o matrícula profesional, podrá sustituirse por la certificación expedida por el organismo competente de otorgarla en la cual conste que dicho documento se encuentra en trámite, siempre y cuando se acredite el respectivo título o grado. Dentro del año siguiente a la fecha de posesión, el empleado deberá presentar la correspondiente tarjeta o matrícula profesional. [...] Quienes hayan adelantado estudios de pregrado o de postgrado en el exterior, al momento de tomar posesión de un empleo público que exija para su desempeño estas modalidades de formación, podrán acreditar el cumplimiento de estos requisitos con la presentación de los certificados expedidos por la correspondiente institución de educación superior. Dentro de los dos (2) años siguientes a la fecha de posesión, el empleado deberá presentar los títulos debidamente homologados.",
+    "pregunta": "Un auxiliar que administra las historias laborales de una unidad administrativa especial del orden nacional debe programar alertas para dos profesionales que se posesionaron el 1 de septiembre de 2026. Ana, contadora, acreditó su título y una certificación de la Junta Central de Contadores según la cual su tarjeta profesional está en trámite. Pablo acreditó la especialización exigida con el certificado de la universidad extranjera donde la cursó, porque el título aún no ha sido convalidado en Colombia. ¿Hasta cuándo tiene cada uno para presentar el documento que le falta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ana y Pablo tienen el mismo plazo: hasta el 1 de septiembre de 2027.",
+        "explicacion": "Incorrecta. El año aplica a la tarjeta profesional de Ana. Para presentar homologado el título obtenido en el exterior, Pablo tiene dos años desde la posesión."
+      },
+      {
+        "id": "B",
+        "texto": "Ana, hasta el 1 de marzo de 2027, y Pablo, hasta el 1 de septiembre del mismo año.",
+        "explicacion": "Incorrecta. Reduce los dos plazos. Ana tiene un año desde la posesión y Pablo, dos años."
+      },
+      {
+        "id": "C",
+        "texto": "Ana, hasta el 1 de septiembre de 2027, y Pablo, hasta el 1 de septiembre de 2028.",
+        "explicacion": "Correcta. La tarjeta profesional en trámite debe presentarse dentro del año siguiente a la posesión, y el título del exterior debidamente homologado, dentro de los dos años siguientes."
+      },
+      {
+        "id": "D",
+        "texto": "Ana y Pablo tienen el mismo plazo: hasta el 1 de septiembre de 2028.",
+        "explicacion": "Incorrecta. Los dos años aplican al título obtenido en el exterior. Para la tarjeta profesional en trámite, Ana tiene un año desde la posesión."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: ambos se posesionaron el 1 de septiembre de 2026; Ana tiene la tarjeta en trámite y Pablo, un título del exterior sin convalidar. Regla: el art. 2.2.2.3.3 del Decreto 1083 da un año desde la posesión para presentar la tarjeta profesional, y el art. 2.2.2.3.4 da dos años para presentar homologado el título del exterior. Cálculo: 1/9/2026 + 1 año = 1/9/2027; + 2 años = 1/9/2028. Conclusión: Ana, hasta el 1 de septiembre de 2027; Pablo, hasta el 1 de septiembre de 2028.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-060",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Historia laboral y certificaciones",
+    "subtema": "Quién firma la certificación de funciones de una ex empleada y custodia de su hoja de vida",
+    "formato": "caso",
+    "nivel": ["asistencial", "tecnico"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.2.6.1, parágrafo 1 (artículo modificado por el art. 4 del Decreto 498 de 2020)",
+      "art. 2.2.17.11"
+    ],
+    "texto_fuente": "PARÁGRAFO 1. La certificación de las funciones y competencias asignadas a un determinado empleo debe ser expedida únicamente por el jefe del organismo, por el jefe de personal o por quien tenga delegada esta competencia. [...] Continuará la obligación de mantener en la unidad de personal o de contratos o en las que hagan sus veces la información de hoja de vida y de bienes y rentas, según corresponda, aun después del retiro o terminación del contrato, y su custodia será responsabilidad del jefe de la unidad respectiva, siguiendo los lineamientos dados en las normas vigentes sobre la materia.",
+    "pregunta": "Una ex empleada de un ministerio, retirada en 2023, pide una certificación de las funciones que cumplió como técnica, para presentarse a un concurso. La solicitud le llega a la auxiliar administrativa del grupo de talento humano que maneja el archivo de historias laborales. El antiguo jefe inmediato de la ex empleada todavía trabaja en el ministerio. ¿Cómo debe tramitar la auxiliar la solicitud?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proyectarla con base en la historia laboral y pasarla a la firma del antiguo jefe inmediato de la ex empleada.",
+        "explicacion": "Incorrecta. El jefe inmediato conoció el trabajo de la ex empleada, pero la certificación de funciones solo puede expedirla el jefe del organismo, el jefe de personal o quien tenga delegada esa competencia."
+      },
+      {
+        "id": "B",
+        "texto": "Firmarla ella misma con base en la historia laboral, como servidora de la unidad que custodia ese archivo.",
+        "explicacion": "Incorrecta. Confunde la custodia con la competencia para certificar: la hoja de vida se mantiene en la unidad de personal bajo la responsabilidad de su jefe, pero la certificación de funciones la expiden el jefe del organismo, el jefe de personal o su delegado."
+      },
+      {
+        "id": "C",
+        "texto": "Remitirla a Función Pública, que administra el SIGEP, donde reposa la hoja de vida de la ex empleada.",
+        "explicacion": "Incorrecta. Función Pública administra el SIGEP, pero la certificación de las funciones de un empleo la expide la entidad, por medio de las autoridades que señala la norma, y la hoja de vida sigue bajo la custodia de la unidad de personal del ministerio."
+      },
+      {
+        "id": "D",
+        "texto": "Proyectarla con base en la historia laboral y pasarla a la firma del jefe de personal o de su delegado.",
+        "explicacion": "Correcta. La hoja de vida sigue bajo la custodia de la unidad de personal después del retiro, y la certificación de funciones la expide el jefe del organismo, el jefe de personal o quien tenga delegada la competencia."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la ex empleada pide certificar funciones y la solicitud la recibe una auxiliar de la unidad que custodia su historia laboral. Reglas: el parágrafo 1 del art. 2.2.2.6.1 del Decreto 1083 reserva la certificación de funciones al jefe del organismo, al jefe de personal o a quien tenga delegada la competencia, y el art. 2.2.17.11 mantiene la hoja de vida en la unidad de personal aun después del retiro, bajo la custodia de su jefe. Conclusión: la auxiliar proyecta la certificación para la firma del jefe de personal o de su delegado.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Requisitos de los empleos",
+    "subtema": "Equivalencia de la especialización y acreditación de un título superior al exigido",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.2.4.4, grado 13 y parágrafo", "art. 2.2.2.5.1, num. 1", "art. 2.2.2.5.3"],
+    "texto_fuente": "Título profesional, título de posgrado en la modalidad de especialización y diez (10) meses de experiencia profesional relacionada. [...] PARÁGRAFO . En este nivel no podrá ser compensado el título profesional. [...] El Título de postgrado en la modalidad de especialización por: . Dos (2) años de experiencia profesional y viceversa, siempre que se acredite el título profesional; o [...] Cuando para el desempeño de un empleo se exija titulación en una modalidad de educación superior en pregrado o de formación avanzada o de posgrado, se entenderá cumplido el requisito de formación académica correspondiente cuando se acredite título académico en un nivel de formación superior al exigido en el respectivo manual de funciones y de competencias laborales.",
+    "pregunta": "La profesional de talento humano de una superintendencia verifica tres hojas de vida para un empleo de Profesional Especializado grado 13. El manual exige título profesional en derecho, especialización y diez meses de experiencia profesional relacionada, y prevé las equivalencias del Decreto 1083 de 2015. Laura es abogada, no tiene posgrado y acredita 30 meses de experiencia profesional relacionada. Mario es abogado, tiene maestría en derecho público y acredita 12 meses de experiencia profesional relacionada. Sofía es tecnóloga en gestión judicial, no es abogada, tiene una especialización tecnológica y acredita 60 meses de experiencia relacionada. ¿Quién cumple los requisitos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo Mario: su maestría cubre la especialización exigida y su experiencia supera los diez meses.",
+        "explicacion": "Correcta. Un título de posgrado de nivel superior al exigido da por cumplido el requisito de formación, y Mario tiene 12 meses de experiencia. Laura necesitaría 24 meses para suplir la especialización más los 10 exigidos (34) y tiene 30, y a Sofía no se le puede compensar el título profesional."
+      },
+      {
+        "id": "B",
+        "texto": "Laura y Mario: a Laura la falta de especialización se le compensa con doce meses de experiencia.",
+        "explicacion": "Incorrecta. La especialización equivale a dos años de experiencia profesional, no a uno. Laura necesitaría 24 + 10 = 34 meses y solo tiene 30."
+      },
+      {
+        "id": "C",
+        "texto": "Solo Laura: a Mario le piden especialización, y la maestría es una modalidad de posgrado distinta.",
+        "explicacion": "Incorrecta. Cuando se acredita un título de nivel superior al exigido, el requisito de formación se entiende cumplido, así que la maestría de Mario sirve. Además, a Laura no le alcanza la experiencia."
+      },
+      {
+        "id": "D",
+        "texto": "Laura y Sofía: a las dos la experiencia que acreditan les suple el título que no tienen.",
+        "explicacion": "Incorrecta. En el nivel profesional el título profesional no puede compensarse, lo que descarta a Sofía, y la experiencia de Laura no alcanza para suplir la especialización y cumplir los diez meses."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: Laura no tiene posgrado y suma 30 meses; Mario tiene maestría; Sofía no tiene título profesional. Reglas: el art. 2.2.2.5.1 num. 1 del Decreto 1083 permite cambiar la especialización por dos años de experiencia profesional; el art. 2.2.2.5.3 da por cumplido el requisito de formación con un título de nivel superior, y el parágrafo del art. 2.2.2.4.4 prohíbe compensar el título profesional. Cálculo: Laura necesitaría 24 + 10 = 34 meses y tiene 30. Conclusión: solo Mario cumple.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Manual de funciones y competencias",
+    "subtema": "Requisitos fijados en el decreto para dirigir una entidad descentralizada: el manual no puede cambiarlos",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.2.4.10, incs. 3 y 4 y parágrafo 1",
+      "art. 2.2.5.1.5, parágrafo 2 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "Para desempeñar los empleos de Director de Unidad Administrativa Especial, Superintendente, Director, Gerente o Presidente de entidades descentralizadas, en cualquiera de sus grados salariales, acreditarán como requisito título profesional en una disciplina académica, título de postgrado en cualquier modalidad y experiencia profesional relacionada. Para el ejercicio de los empleos antes señalados podrán aplicarse las equivalencias establecidas en el presente Título. PARÁGRAFO 1. Para el ejercicio de los empleos correspondientes a los diferentes niveles jerárquicos, que tengan requisitos establecidos en la Constitución Política, en la ley y en el presente artículo, se acreditarán los señalados en tales disposiciones, sin que sea posible modificarlos o adicionarlos en los manuales específicos de funciones y de competencias laborales. [...] PARÁGRAFO 2. Cuando los requisitos para el desempeño de un cargo estén señalados en la Constitución, la ley o los decretos reglamentarios, los manuales de funciones y de competencias laborales se limitarán a hacer transcripción de los mismos, por lo que no podrán establecer otros requisitos.",
+    "pregunta": "Un asesor jurídico de un establecimiento público del orden nacional revisa el proyecto de resolución que actualiza el manual de funciones. Para el empleo de Director General, el proyecto exige título profesional, título de maestría y experiencia profesional relacionada, y dispone que a ese empleo podrán aplicarse las equivalencias del Decreto 1083 de 2015. ¿Qué debe conceptuar el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el proyecto puede exigir la maestría, pero debe suprimir las equivalencias para la dirección general.",
+        "explicacion": "Incorrecta. Se equivoca en los dos puntos: el manual no puede elevar el posgrado que fija el decreto, y el decreto sí permite aplicar las equivalencias a los empleos de dirección de entidades descentralizadas."
+      },
+      {
+        "id": "B",
+        "texto": "Que el posgrado debe admitirse en cualquier modalidad, y que la mención de las equivalencias es procedente.",
+        "explicacion": "Correcta. El decreto fija para el director de una entidad descentralizada un posgrado en cualquier modalidad, y el manual no puede modificar ni adicionar ese requisito. El mismo artículo permite aplicar las equivalencias a esos empleos."
+      },
+      {
+        "id": "C",
+        "texto": "Que el proyecto se ajusta: puede exigir maestría para ese cargo y permitir que se apliquen equivalencias.",
+        "explicacion": "Incorrecta. Acierta en las equivalencias, pero el manual no puede exigir maestría donde el decreto admite un posgrado en cualquier modalidad: debe limitarse a transcribir el requisito."
+      },
+      {
+        "id": "D",
+        "texto": "Que el posgrado debe admitirse en cualquier modalidad, pero que las equivalencias no proceden en ese cargo.",
+        "explicacion": "Incorrecta. Acierta en el posgrado, pero el decreto dispone expresamente que a los empleos de dirección de las entidades descentralizadas podrán aplicarse las equivalencias."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el empleo es el de director de una entidad descentralizada del orden nacional y el proyecto exige maestría. Regla: el art. 2.2.2.4.10 del Decreto 1083 fija para esos empleos título profesional, posgrado en cualquier modalidad y experiencia profesional relacionada, permite aplicarles las equivalencias y prohíbe modificar o adicionar esos requisitos en el manual; en el mismo sentido, el parágrafo 2 del art. 2.2.5.1.5. Conclusión: debe admitirse cualquier posgrado, y la mención de las equivalencias es válida.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-063",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Manual de funciones y competencias",
+    "subtema": "Adopción del manual y consulta con las organizaciones sindicales",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.2.6.1, incs. 2 y 3 y parágrafos 2 y 3 (modificado por el art. 4 del Decreto 498 de 2020)"],
+    "texto_fuente": "La adopción, adición, modificación o actualización del manual específico se efectuará mediante resolución interna del jefe del organismo o entidad, de acuerdo con las disposiciones contenidas en el presente Título. Corresponde a la unidad de personal, o a la que haga sus veces, en cada organismo o entidad, adelantar los estudios para la elaboración, actualización, modificación o adición del manual de funciones y de competencias laborales y velar por el cumplimiento de las disposiciones aquí previstas. [...] PARÁGRAFO 2. El Departamento Administrativo de la Función Pública brindará la asesoría técnica necesaria y señalará las pautas e instrucciones de carácter general para la adopción, adición, modificación o actualización de los manuales específicos. Igualmente, este Departamento Administrativo adelantará una revisión selectiva de los manuales específicos de funciones y de competencias laborales de los organismos y las entidades de la Rama Ejecutiva del Orden Nacional, para verificar el cumplimiento de lo dispuesto en el presente artículo. [...] PARÁGRAFO 3. La administración antes de publicar el acto administrativo que adopta o modifica el manual de funciones y competencias y su estudio técnico, en aplicación del numeral 8 del artículo 8 de la Ley 1437 de 2011, deberá adelantar un proceso de consulta en todas sus etapas con las organizaciones sindicales presentes en la respectiva entidad, en el cual se dará conocer el alcance de la modificación o actualización, escuchando sus observaciones e inquietudes, de lo cual se dejará constancia. Lo anterior sin perjuicio de la facultad de la administración para la adopción y expedición del respectivo acto administrativo.",
+    "pregunta": "Un ministerio va a modificar su manual de funciones para ajustar los requisitos de 40 empleos, con base en el estudio técnico que preparó el grupo de talento humano. En cada etapa del proyecto, el grupo se reunió con el sindicato de la entidad, le explicó el alcance de los cambios, recogió sus observaciones y levantó un acta. En la última reunión, el sindicato manifestó por escrito que no está de acuerdo con el texto final. El secretario general pide un concepto antes de continuar. ¿Qué debe conceptuar la profesional de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el cambio puede hacerse, pero por decreto, porque modifica los requisitos de empleos de la planta.",
+        "explicacion": "Incorrecta. La adopción, modificación o actualización del manual se efectúa mediante resolución interna del jefe del organismo; no requiere un decreto, aunque ajuste los requisitos de los empleos."
+      },
+      {
+        "id": "B",
+        "texto": "Que el cambio solo puede hacerse cuando el sindicato apruebe el texto que se le consultó.",
+        "explicacion": "Incorrecta. La consulta con las organizaciones sindicales es obligatoria, pero no exige su acuerdo ni su aprobación: la norma deja a salvo la facultad de la administración para adoptar y expedir el acto."
+      },
+      {
+        "id": "C",
+        "texto": "Que el cambio solo puede hacerse cuando Función Pública revise el proyecto y dé su visto bueno.",
+        "explicacion": "Incorrecta. Función Pública brinda asesoría técnica, señala pautas generales y hace una revisión selectiva de los manuales del orden nacional, pero no da un visto bueno previo a cada modificación."
+      },
+      {
+        "id": "D",
+        "texto": "Que el cambio puede hacerse mediante resolución del ministro, aunque el sindicato no esté de acuerdo.",
+        "explicacion": "Correcta. Antes de publicar el acto, la entidad dio a conocer al sindicato el alcance de la modificación, escuchó sus observaciones y dejó constancia en actas. Cumplida esa consulta, el ministro adopta la modificación mediante resolución interna, aunque no haya acuerdo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el sindicato fue consultado en cada etapa, con actas, y se opone al texto final. Reglas: el art. 2.2.2.6.1 del Decreto 1083 ordena adoptar o modificar el manual por resolución interna del jefe de la entidad; su parágrafo 3 (Decreto 498 de 2020) exige consultar antes a las organizaciones sindicales, con constancia, sin perjuicio de la facultad de la administración para expedir el acto, y su parágrafo 2 le asigna a Función Pública asesorar y revisar, no aprobar. Conclusión: el ministro puede expedir la resolución.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-064",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Manual de funciones y competencias",
+    "subtema": "Contenido mínimo de la ficha del empleo en el manual",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Baja",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": ["art. 2.2.2.6.2", "art. 2.2.2.5.1, parágrafo 1"],
+    "texto_fuente": "El manual específico de funciones y de competencias laborales deberá contener como mínimo: 1. Identificación y ubicación del empleo. 2. Contenido funcional: que comprende el propósito y la descripción de funciones esenciales del empleo. 3. Conocimientos básicos o esenciales. 4. Requisitos de formación académica y de experiencia. [...] PARÁGRAFO 1. De acuerdo con las necesidades del servicio, las autoridades competentes determinarán en sus respectivos manuales específicos o en acto administrativo separado, las equivalencias para los empleos que lo requieran, de conformidad con los lineamientos establecidos en el presente decreto.",
+    "pregunta": "Un asesor de una agencia del orden nacional revisa la ficha de un empleo en el proyecto de manual de funciones. La ficha trae la denominación, el código, el grado y la dependencia; el propósito principal y las funciones esenciales; los requisitos de estudio y experiencia, y las competencias comunes y comportamentales. No trae equivalencias entre estudios y experiencia. ¿Qué contenido mínimo le falta a la ficha?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las equivalencias entre estudios y experiencia que podrán aplicarse a ese empleo.",
+        "explicacion": "Incorrecta. Las equivalencias no son contenido mínimo de la ficha: las autoridades las determinan para los empleos que lo requieran, en el manual o en un acto administrativo separado."
+      },
+      {
+        "id": "B",
+        "texto": "La asignación básica mensual que corresponde al grado salarial del empleo.",
+        "explicacion": "Incorrecta. La asignación salarial no hace parte del contenido mínimo del manual de funciones, que describe el empleo y sus requisitos."
+      },
+      {
+        "id": "C",
+        "texto": "Los conocimientos básicos que necesita quien vaya a desempeñar el empleo.",
+        "explicacion": "Correcta. El contenido mínimo incluye la identificación y ubicación, el propósito y las funciones esenciales, los conocimientos básicos o esenciales y los requisitos de formación y experiencia. La ficha no trae los conocimientos."
+      },
+      {
+        "id": "D",
+        "texto": "El estudio técnico que justifica la existencia del empleo en la planta.",
+        "explicacion": "Incorrecta. El estudio técnico sustenta la adopción o modificación del manual, pero no es uno de los contenidos mínimos de la ficha de cada empleo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la ficha tiene identificación, propósito, funciones, requisitos y competencias, pero no trae los conocimientos básicos ni las equivalencias. Regla: el art. 2.2.2.6.2 del Decreto 1083 fija como contenido mínimo la identificación y ubicación, el contenido funcional, los conocimientos básicos o esenciales y los requisitos de formación y experiencia; el parágrafo 1 del art. 2.2.2.5.1 deja las equivalencias para los empleos que lo requieran, en el manual o en acto separado. Conclusión: faltan los conocimientos básicos.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Planeación del talento humano",
+    "subtema": "Plan de previsión de recursos humanos: responsable, periodicidad y alcance",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 909 de 2004",
+    "articulos": ["art. 15, num. 2, lit. a", "art. 17, num. 1"],
+    "texto_fuente": "a) Elaborar los planes estratégicos de recursos humanos; [...] 1. Todas las unidades de personal o quienes hagan sus veces de los organismos o entidades a las cuales se les aplica la presente ley, deberán elaborar y actualizar anualmente planes de previsión de recursos humanos que tengan el siguiente alcance: a) Cálculo de los empleos necesarios, de acuerdo con los requisitos y perfiles profesionales establecidos en los manuales específicos de funciones, con el fin de atender a las necesidades presentes y futuras derivadas del ejercicio de sus competencias; b) Identificación de las formas de cubrir las necesidades cuantitativas y cualitativas de personal para el período anual, considerando las medidas de ingreso, ascenso, capacitación y formación; c) Estimación de todos los costos de personal derivados de las medidas anteriores y el aseguramiento de su financiación con el presupuesto asignado.",
+    "pregunta": "En una gobernación, la oficina de planeación propone asumir el plan de previsión de recursos humanos, actualizarlo cada dos años y limitarlo a establecer cuántos empleos se requieren y cómo se cubrirán las necesidades de personal con ingresos, ascensos y capacitación. El valor de esas medidas, dice, lo calculará después la secretaría de hacienda. ¿Qué debe responder la profesional de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede elaborarlo planeación cada dos años, si incluye el costo de las medidas y su financiación.",
+        "explicacion": "Incorrecta. Acierta en que el plan debe incluir los costos y su financiación, pero lo elabora la unidad de personal, no planeación, y debe actualizarse cada año."
+      },
+      {
+        "id": "B",
+        "texto": "Que lo elabora talento humano cada dos años, y que el cálculo del costo puede quedar a cargo de hacienda.",
+        "explicacion": "Incorrecta. Acierta en el responsable, pero el plan se actualiza anualmente y su alcance incluye estimar los costos de personal y asegurar su financiación."
+      },
+      {
+        "id": "C",
+        "texto": "Que lo elabora talento humano cada año e incluye el costo de las medidas y la forma de financiarlas.",
+        "explicacion": "Correcta. La unidad de personal debe elaborar y actualizar anualmente el plan de previsión, y su alcance comprende el cálculo de empleos, las formas de cubrir las necesidades y la estimación de los costos con el aseguramiento de su financiación."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede elaborarlo planeación cada año, y que el cálculo del costo puede quedar a cargo de hacienda.",
+        "explicacion": "Incorrecta. Acierta en la periodicidad anual, pero el plan corresponde a la unidad de personal y debe contener la estimación de costos y su financiación."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: planeación quiere asumir el plan, hacerlo bienal y dejar el costo por fuera. Regla: el art. 15 de la Ley 909 asigna a las unidades de personal los planes estratégicos de recursos humanos, y el art. 17 num. 1 les ordena elaborar y actualizar anualmente el plan de previsión, con el cálculo de empleos, las formas de cubrir las necesidades y la estimación de costos con el aseguramiento de su financiación. Conclusión: lo hace talento humano, cada año y con costos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-066",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Capacitación",
+    "subtema": "Capacitación territorial a cargo de entidades externas y condiciones previas a su contratación",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Ley 909 de 2004 y Decreto Ley 1567 de 1998",
+    "articulos": ["Ley 909 de 2004, art. 36, num. 3", "Decreto Ley 1567 de 1998, art. 11, lit. f"],
+    "texto_fuente": "3. Los programas de capacitación y formación de las entidades públicas territoriales podrán ser diseñados, homologados y evaluados por la ESAP, de acuerdo con la solicitud que formule la respectiva institución. Si no existiera la posibilidad de que las entidades o la ESAP puedan impartir la capacitación podrán realizarla entidades externas debidamente acreditadas por esta. [...] f) Establecer previamente, para efectos de contratar actividades de capacitación, las condiciones que éstas deberán satisfacer en cuanto a costos, contenidos, metodologías, objetivos, duración y criterios de evaluación;",
+    "pregunta": "Un municipio incluyó en su plan institucional de capacitación un curso sobre supervisión de contratos. Este año ni la alcaldía ni la ESAP pueden dictarlo. El secretario general propone contratar de inmediato a una fundación que ofrece el curso, aunque la ESAP no la ha acreditado, y acordar con ella los contenidos y la forma de evaluarlo cuando el curso ya haya empezado. ¿Qué debe recomendar la profesional de talento humano?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contratar una entidad acreditada por la ESAP y definir las condiciones del curso antes del contrato.",
+        "explicacion": "Correcta. Si ni la entidad territorial ni la ESAP pueden impartir la capacitación, puede hacerla una entidad externa acreditada por la ESAP. Y las condiciones de costos, contenidos, metodología, objetivos, duración y evaluación deben fijarse antes de contratar."
+      },
+      {
+        "id": "B",
+        "texto": "Contratar a la fundación: la acreditación de la ESAP solo se exige a las entidades del orden nacional.",
+        "explicacion": "Incorrecta. La regla de la acreditación por la ESAP se refiere justamente a los programas de capacitación de las entidades territoriales."
+      },
+      {
+        "id": "C",
+        "texto": "Contratar a la fundación, si la comisión de personal aprueba los contenidos al iniciar el curso.",
+        "explicacion": "Incorrecta. La participación de la comisión de personal no suple la acreditación de la ESAP, y las condiciones del curso deben establecerse antes de contratar, no al iniciarlo."
+      },
+      {
+        "id": "D",
+        "texto": "Aplazar el curso: en lo territorial, la capacitación solo puede dictarla la propia entidad o la ESAP.",
+        "explicacion": "Incorrecta. La ley prevé que, si ni la entidad ni la ESAP pueden impartirla, la capacitación la realicen entidades externas acreditadas por la ESAP."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: ni la alcaldía ni la ESAP pueden dictar el curso, la fundación no está acreditada y las condiciones se fijarían después de empezar. Reglas: el art. 36 num. 3 de la Ley 909 permite en ese caso acudir a entidades externas acreditadas por la ESAP, y el art. 11 lit. f del Decreto Ley 1567 obliga a fijar antes de contratar los costos, contenidos, metodologías, objetivos, duración y criterios de evaluación. Conclusión: contratar una entidad acreditada y definir antes las condiciones.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-067",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Incentivos",
+    "subtema": "Incentivos del mejor empleado y del mejor equipo: naturaleza y forma de selección",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015 y Decreto Ley 1567 de 1998",
+    "articulos": [
+      "Decreto 1083 de 2015, art. 2.2.10.9, inc. 1",
+      "Decreto 1083 de 2015, art. 2.2.10.11, inc. 2",
+      "Decreto Ley 1567 de 1998, art. 31, inc. 1"
+    ],
+    "texto_fuente": "Los planes de incentivos pecuniarios estarán constituidos por reconocimientos económicos que se asignarán a los mejores equipos de trabajo de cada entidad pública. Dichos reconocimientos económicos serán hasta de cuarenta (40) salarios mínimos mensuales legales vigentes, en las entidades de los órdenes nacional y territorial de acuerdo con la disponibilidad de recursos y se distribuirán entre los equipos seleccionados. [...] El jefe de cada entidad adoptará anualmente el plan de incentivos institucionales y señalará en él los incentivos no pecuniarios que se ofrecerán al mejor empleado de carrera de la entidad, a los mejores empleados de carrera de cada nivel jerárquico y al mejor empleado de libre nombramiento y remoción de la entidad, así como los incentivos pecuniarios y no pecuniarios para los mejores equipos de trabajo. [...] El mejor empleado de carrera y el mejor empleado de libre nombramiento y remoción de la entidad, serán quienes tengan la más alta calificación entre los seleccionados como los mejores de cada nivel.",
+    "pregunta": "Un asesor del despacho de una superintendencia revisa el proyecto de plan anual de incentivos. El proyecto prevé un premio en dinero de 5 salarios mínimos para el mejor empleado de carrera de la entidad, que será escogido por votación de todos los servidores entre los mejores de cada nivel, y un reconocimiento económico de 30 salarios mínimos para el mejor equipo de trabajo. ¿Qué debe advertir el asesor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el mejor empleado debe recibir un incentivo no pecuniario y ser el de mayor calificación; lo del equipo es válido.",
+        "explicacion": "Correcta. Al mejor empleado se le ofrecen incentivos no pecuniarios, y es quien tenga la más alta calificación entre los mejores de cada nivel, no el que gane una votación. El reconocimiento económico al mejor equipo es válido, pues no supera los 40 salarios mínimos."
+      },
+      {
+        "id": "B",
+        "texto": "Que el mejor empleado debe recibir un incentivo no pecuniario, que la votación es válida y que el equipo no puede recibir dinero.",
+        "explicacion": "Incorrecta. Acierta en que el incentivo del mejor empleado no es en dinero, pero la elección no puede hacerse por votación, y los reconocimientos económicos son precisamente para los mejores equipos de trabajo."
+      },
+      {
+        "id": "C",
+        "texto": "Que el premio en dinero al mejor empleado es válido si gana el de mayor calificación, y que el del equipo excede el tope.",
+        "explicacion": "Incorrecta. Acierta en el criterio de selección, pero los incentivos pecuniarios se asignan a los equipos, no a los empleados individualmente, y 30 salarios mínimos está dentro del tope de 40."
+      },
+      {
+        "id": "D",
+        "texto": "Que el plan se ajusta: los dos premios en dinero respetan el tope legal y la votación es un mecanismo válido.",
+        "explicacion": "Incorrecta. Acierta en el premio del equipo, pero el mejor empleado solo recibe incentivos no pecuniarios y debe ser el de más alta calificación entre los mejores de cada nivel."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el proyecto da dinero al mejor empleado, lo elige por votación y da 30 salarios mínimos al mejor equipo. Reglas: el art. 31 del Decreto Ley 1567 asigna los reconocimientos económicos a los mejores equipos, hasta 40 salarios mínimos; el art. 2.2.10.9 del Decreto 1083 reserva para los mejores empleados incentivos no pecuniarios, y el art. 2.2.10.11 define al mejor empleado como el de más alta calificación entre los mejores de cada nivel. Conclusión: corregir el premio y la forma de elegir al mejor empleado; lo del equipo es válido.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-068",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Requisitos de los empleos",
+    "subtema": "Experiencia previa al título: práctica reconocida como experiencia profesional",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.6.2, parágrafos 1 y 2 (adicionado por el art. 1 del Decreto 952 de 2021)",
+      "art. 2.2.5.6.3, inc. 1 y parágrafo 1 (adicionado por el art. 1 del Decreto 952 de 2021)"
+    ],
+    "texto_fuente": "PARÁGRAFO 1. De acuerdo con los artículos 5 de la Ley 1622 de 2013 y 1 de la Ley 2039 del 2020, las normas previstas en este capítulo son aplicables para efectos de los procesos de inserción laboral en el sector público de los jóvenes que estén entre los 14 y los 28 años. PARÁGRAFO 2. Las disposiciones contenidas en este capítulo son aplicables para efectos de la provisión temporal o definitiva de los empleos públicos y para los procesos de contratación directa de las entidades públicas. [...] deberán reconocer, como experiencia profesional válida, el noventa por ciento (90%) de la intensidad horaria certificada que dediquen los estudiantes de los programas y modalidades contemplados en el artículo 2 de la Ley 2039 del 2020; al desarrollo de las actividades formativas. PARÁGRAFO 1. El tiempo dedicado al desarrollo de las actividades de qué trata el artículo 2 de la Ley 2039 de 2020 solo valdrá como experiencia profesional válida cuando el contenido de la actividad formativa o de práctica guarde relación directa con el programa cursado por el estudiante y cuando aporte la certificación que expida la autoridad competente.",
+    "pregunta": "La profesional especializada de talento humano de un ministerio verifica la experiencia de tres administradores públicos ya graduados que aspiran a un nombramiento provisional en un empleo del nivel profesional. Cada uno aporta la certificación de su universidad sobre una práctica de 960 horas que hizo en el último semestre de la carrera. Camila, de 24 años, la hizo en la oficina de presupuesto de una alcaldía; Óscar, de 26 años, en un almacén de ropa, atendiendo la caja y organizando la mercancía, y Hernán, de 33 años y graduado hace dos, en la secretaría de planeación de una gobernación. La entidad resuelve estos casos solo con las reglas del Decreto 1083 de 2015 sobre experiencia previa al título (arts. 2.2.5.6.2 y 2.2.5.6.3, adicionados por el Decreto 952 de 2021). ¿Cómo debe valorarse esa práctica como experiencia profesional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Camila y Hernán: a cada uno se le reconocen 864 horas como experiencia profesional.",
+        "explicacion": "Incorrecta. Acierta en el porcentaje, pero las reglas que aplica la entidad cubren a los jóvenes de 14 a 28 años, y Hernán tiene 33; ya pasaba de 28 cuando hizo la práctica."
+      },
+      {
+        "id": "B",
+        "texto": "Solo Camila: se le reconocen las 960 horas como experiencia profesional.",
+        "explicacion": "Incorrecta. Acierta en la persona, pero solo se reconoce el 90% de la intensidad horaria certificada: 864 horas, no 960."
+      },
+      {
+        "id": "C",
+        "texto": "Camila y Óscar: a cada uno se le reconocen las 960 horas certificadas como experiencia.",
+        "explicacion": "Incorrecta. La práctica de Óscar no guarda relación directa con la administración pública, y además solo se reconoce el 90% de las horas certificadas."
+      },
+      {
+        "id": "D",
+        "texto": "Solo Camila: se le reconocen 864 de las 960 horas como experiencia profesional.",
+        "explicacion": "Correcta. Camila tiene menos de 28 años y su práctica se relaciona con su programa; se le reconoce el 90% de 960 horas, es decir, 864. Óscar no cumple la relación directa con el programa, y Hernán supera la edad a la que se aplica la regla."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Datos decisivos: las edades (24, 26 y 33 años) y el contenido de cada práctica. Reglas: el art. 2.2.5.6.2 del Decreto 1083 (Decreto 952 de 2021) aplica este reconocimiento a los jóvenes de 14 a 28 años; el art. 2.2.5.6.3 reconoce el 90% de la intensidad horaria certificada si la práctica guarda relación directa con el programa. Cálculo: 960 × 0,9 = 864 horas. Conclusión: solo Camila, con 864 horas. Contexto: la Ley 2043 de 2020 también reconoce prácticas como experiencia, con reglas propias; por eso el caso fija la norma aplicable.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Ingreso al servicio y posesión",
+    "subtema": "Posesión de quien ejerce otro empleo público e incompatibilidad sobreviniente",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Alta",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.1.10, num. 3 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.1.14 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "No podrá darse posesión cuando: [...] 3. La persona nombrada desempeñe otro empleo público del cual no se haya separado, salvo las excepciones contempladas en la ley. [...] En caso de que sobrevenga al acto de nombramiento o posesión alguna inhabilidad o incompatibilidad, la persona deberá advertirlo inmediatamente a la administración y presentar renuncia al empleo, de lo contrario, la administración procederá a revocar el nombramiento. Cuando la inhabilidad o incompatibilidad sobreviniente no se haya generado por dolo o culpa del nombrado o del servidor, declarado judicial, administrativa, fiscal o disciplinariamente, siempre que sus actuaciones se ciñan a la ley y eviten los conflictos de interés, el servidor público contará con un plazo de tres (3) meses para dar fin a esta situación, siempre y cuando sean subsanables.",
+    "pregunta": "El profesional especializado de talento humano de una gobernación debe proyectar la decisión en dos casos. Valentina, nombrada como profesional universitaria, aceptó el cargo y se presentó a posesionarse dentro del plazo, pero sigue ejerciendo su empleo de técnica en la alcaldía de la capital y dice que renunciará allí después de posesionarse. Raúl, profesional de la gobernación, informó el lunes 3 de agosto de 2026, el mismo día en que ocurrió, que le sobrevino una incompatibilidad subsanable que no se originó en dolo ni culpa suya. ¿Qué procede en cada caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dar posesión a Valentina con el compromiso de renunciar luego a la alcaldía; Raúl tiene hasta el 3 de noviembre de 2026 para superar la situación.",
+        "explicacion": "Incorrecta. Acierta en el caso de Raúl, pero no puede darse posesión a quien desempeña otro empleo público del que no se ha separado. La renuncia posterior no subsana ese impedimento."
+      },
+      {
+        "id": "B",
+        "texto": "No dar posesión a Valentina mientras no se separe del empleo en la alcaldía; Raúl tiene hasta el 3 de noviembre de 2026 para superar la situación.",
+        "explicacion": "Correcta. Valentina no puede posesionarse mientras siga en otro empleo público. Raúl, cuya incompatibilidad sobreviniente es subsanable y no proviene de dolo o culpa, cuenta con tres meses: del 3 de agosto al 3 de noviembre de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "No dar posesión a Valentina mientras no se separe del empleo en la alcaldía; revocar de inmediato el nombramiento de Raúl.",
+        "explicacion": "Incorrecta. Acierta en el caso de Valentina, pero la revocatoria inmediata procede cuando el servidor no advierte la situación ni renuncia; si la incompatibilidad es subsanable y no surgió por dolo o culpa, hay un plazo de tres meses."
+      },
+      {
+        "id": "D",
+        "texto": "Dar posesión a Valentina con el compromiso de renunciar luego a la alcaldía; revocar de inmediato el nombramiento de Raúl.",
+        "explicacion": "Incorrecta. Se equivoca en los dos casos: Valentina no puede posesionarse sin separarse del otro empleo, y Raúl tiene tres meses para superar una incompatibilidad subsanable que no causó por dolo o culpa."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Datos decisivos: Valentina sigue ejerciendo otro empleo público al presentarse a la posesión, y a Raúl le sobrevino el 3 de agosto de 2026 una incompatibilidad subsanable sin dolo ni culpa. Reglas: el art. 2.2.5.1.10 num. 3 del Decreto 1083 impide dar posesión a quien desempeñe otro empleo público del que no se haya separado, y el art. 2.2.5.1.14 da tres meses al servidor para superar la incompatibilidad sobreviniente en esas condiciones. Cálculo: 3/8/2026 + 3 meses = 3/11/2026. Conclusión: no posesionar a Valentina sin separarse; Raúl tiene hasta el 3 de noviembre.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  },
+  {
+    "id": "TC-TH-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "talento_humano",
+    "modulo": "Talento Humano",
+    "tema": "Ingreso al servicio y posesión",
+    "subtema": "Corrección, derogatoria y revocatoria del nombramiento",
+    "formato": "caso",
+    "nivel": ["profesional", "asesor"],
+    "dificultad": "Media",
+    "norma": "Decreto 1083 de 2015",
+    "articulos": [
+      "art. 2.2.5.1.11, num. 3 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.1.12, num. 1 (modificado por el art. 1 del Decreto 648 de 2017)",
+      "art. 2.2.5.1.13, inc. 1 (modificado por el art. 1 del Decreto 648 de 2017)"
+    ],
+    "texto_fuente": "La autoridad nominadora podrá modificar, aclarar o corregir un nombramiento cuando: [...] 3. Haya error en la denominación, ubicación o clasificación del cargo o recaiga en empleos inexistentes. [...] La autoridad nominadora deberá derogar el nombramiento, cuando: 1. La persona designada no manifiesta la aceptación del nombramiento, no acepta, o no toma posesión del empleo dentro de los plazos señalados en la Constitución, la ley o el presente Título. [...] La autoridad nominadora deberá revocar el nombramiento en un cargo, cuando recaiga en una persona que no reúna los requisitos señalados para el desempeño del mismo.",
+    "pregunta": "Un profesional de la oficina jurídica de una gobernación debe proyectar los actos para tres nombramientos con problemas. En el de Luis, el decreto cita la denominación de un empleo distinto del que está vacante, aunque el grado y la dependencia son correctos. Marta recibió la comunicación de su nombramiento y no dijo dentro del término si lo aceptaba. Pedro, nombrado en período de prueba, ya se posesionó, y después se advirtió que no tiene el título exigido para el empleo. ¿Qué acto corresponde en cada caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Luis: aclarar o corregir el decreto; Marta: derogar el nombramiento; Pedro: revocar el nombramiento.",
+        "explicacion": "Correcta. El error en la denominación del cargo permite modificar, aclarar o corregir el nombramiento; si la persona no manifiesta su aceptación en el término, se deroga, y si el nombrado no reúne los requisitos, se revoca."
+      },
+      {
+        "id": "B",
+        "texto": "Luis: aclarar o corregir el decreto; Marta: derogar el nombramiento; Pedro: declararlo insubsistente.",
+        "explicacion": "Incorrecta. Acierta en Luis y en Marta, pero cuando el nombramiento recae en quien no reúne los requisitos, la autoridad debe revocarlo; la insubsistencia es otra figura de retiro."
+      },
+      {
+        "id": "C",
+        "texto": "Luis: revocar el nombramiento; Marta: revocar el nombramiento; Pedro: declararlo insubsistente.",
+        "explicacion": "Incorrecta. El error en la denominación se corrige o aclara, la falta de aceptación lleva a derogar el nombramiento, y la falta de requisitos lleva a revocarlo."
+      },
+      {
+        "id": "D",
+        "texto": "Luis: revocar el nombramiento; Marta: revocar el nombramiento; Pedro: derogar el nombramiento.",
+        "explicacion": "Incorrecta. Invierte las figuras: la derogatoria es para quien no acepta o no se posesiona a tiempo, y la revocatoria, para quien no reúne los requisitos. El error de denominación se corrige o aclara."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Datos decisivos: error de denominación (Luis), silencio sobre la aceptación (Marta) y falta del título exigido (Pedro). Reglas: el art. 2.2.5.1.11 num. 3 del Decreto 1083 permite modificar, aclarar o corregir el nombramiento con error en la denominación; el art. 2.2.5.1.12 num. 1 ordena derogarlo si la persona no manifiesta la aceptación, y el art. 2.2.5.1.13 ordena revocarlo si recae en quien no reúne los requisitos. Conclusión: aclarar, derogar y revocar.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866",
+    "autor": "IA",
+    "revision": {"resolucion_ciega": null, "revisor_humano": null, "fecha": "2026-10-10"}
+  }
+]

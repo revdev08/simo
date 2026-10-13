@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "TC-JUR-037",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Caducidad de la nulidad y restablecimiento cuando se interpusieron reposición y apelación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 76 inc. 3",
+      "art. 87 nums. 2 y 3",
+      "art. 161 num. 2",
+      "art. 163 inc. 1",
+      "art. 164 num. 2 lit. d"
+    ],
+    "texto_fuente": "El recurso de apelación podrá interponerse directamente, o como subsidiario del de reposición y cuando proceda será obligatorio para acceder a la jurisdicción. [...] 2. Desde el día siguiente a la publicación, comunicación o notificación de la decisión sobre los recursos interpuestos. 3. Desde el día siguiente al del vencimiento del término para interponer los recursos, si estos no fueron interpuestos, o se hubiere renunciado expresamente a ellos. [...] 2. Cuando se pretenda la nulidad de un acto administrativo particular deberán haberse ejercido y decidido los recursos que de acuerdo con la ley fueren obligatorios. [...] Si el acto fue objeto de recursos ante la administración se entenderán demandados los actos que los resolvieron. [...] d) Cuando se pretenda la nulidad y restablecimiento del derecho, la demanda deberá presentarse dentro del término de cuatro (4) meses contados a partir del día siguiente al de la comunicación, notificación, ejecución o publicación del acto administrativo, según el caso, salvo las excepciones establecidas en otras disposiciones legales;",
+    "pregunta": "Sebastián, técnico de la oficina jurídica de una gobernación, diligencia la ficha de control de los asuntos que pueden terminar en una demanda contra el departamento. Uno de ellos es una multa que la secretaría de salud impuso a una droguería: la resolución se expidió el 15 de diciembre de 2025 y se notificó personalmente el 13 de enero de 2026. La droguería interpuso reposición y, en subsidio, apelación. La decisión de la reposición se le notificó el 9 de febrero de 2026, y la de la apelación, el 24 de marzo de 2026; ambas confirmaron la multa. En la ficha, Sebastián debe anotar el mes en que vence el término para que la droguería demande en nulidad y restablecimiento del derecho; las suspensiones por conciliación se registran en otra casilla. ¿Qué mes debe anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Junio de 2026, porque los cuatro meses se cuentan desde el día siguiente a la notificación de la reposición.",
+        "explicacion": "Incorrecta. Con la reposición no terminó la vía administrativa: faltaba decidir la apelación, cuyo acto también se entiende demandado (art. 163). La multa solo quedó en firme con la notificación de lo resuelto en la apelación (art. 87, num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Agosto de 2026, porque los cuatro meses corren desde que vencen los diez días para recurrir lo que decidió la apelación.",
+        "explicacion": "Incorrecta. Aplica la firmeza de los actos que no se recurrieron (art. 87, num. 3) a una decisión que ya resolvió los recursos. No hay otro término de recurso que esperar: la multa quedó en firme desde el día siguiente a la notificación de lo resuelto en la apelación (art. 87, num. 2), no diez días hábiles después."
+      },
+      {
+        "id": "C",
+        "texto": "Mayo de 2026, porque los cuatro meses se cuentan desde el día siguiente a la notificación personal de la multa.",
+        "explicacion": "Incorrecta. Cuenta desde la notificación de la multa, pero la droguería apeló, y la apelación es obligatoria para acceder a la jurisdicción (arts. 76 y 161, num. 2). Mientras no se decidiera, no podía demandar."
+      },
+      {
+        "id": "D",
+        "texto": "Julio de 2026, porque los cuatro meses se cuentan desde el día siguiente a la notificación de la apelación.",
+        "explicacion": "Correcta. La multa quedó en firme desde el día siguiente a la notificación de lo resuelto en la apelación (art. 87, num. 2). Los cuatro meses corren desde el 25 de marzo de 2026 y vencen a finales de julio de 2026 (art. 164, num. 2, lit. d)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la droguería apeló y lo resuelto en la apelación se le notificó el 24 de marzo de 2026. Regla: la apelación es obligatoria para acceder a la jurisdicción (arts. 76 y 161, num. 2, del CPACA), se entienden demandados los actos que resolvieron los recursos (art. 163) y el acto queda en firme desde el día siguiente a la notificación de la decisión sobre ellos (art. 87, num. 2), sin esperar otro término de recurso. La nulidad y restablecimiento tiene cuatro meses (art. 164, num. 2, lit. d). Cálculo: desde el 25 de marzo de 2026, vence a finales de julio de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-038",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Demanda contra el acto presunto del silencio negativo: oportunidad y recursos previos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 83 inc. 1",
+      "art. 161 num. 2",
+      "art. 164 num. 1 lit. d"
+    ],
+    "texto_fuente": "Transcurridos tres (3) meses contados a partir de la presentación de una petición sin que se haya notificado decisión que la resuelva, se entenderá que esta es negativa. [...] 2. Cuando se pretenda la nulidad de un acto administrativo particular deberán haberse ejercido y decidido los recursos que de acuerdo con la ley fueren obligatorios. El silencio negativo en relación con la primera petición permitirá demandar directamente el acto presunto. [...] 1. En cualquier tiempo, cuando: [...] d) Se dirija contra actos producto del silencio administrativo;",
+    "pregunta": "El 3 de febrero de 2025, una empresa pidió a un municipio que le devolviera un depósito de 30 millones de pesos que constituyó para obtener un permiso temporal de ocupación del espacio público, que ya terminó. El municipio nunca respondió y la empresa no interpuso ningún recurso. En octubre de 2026 se notificó al municipio la demanda de nulidad y restablecimiento del derecho que presentó la empresa contra la negativa que se produjo por la falta de respuesta; con ella se aportó la constancia de la conciliación extrajudicial fallida. Mariana, profesional de la oficina jurídica, estudia si en la contestación conviene proponer la caducidad o la falta de agotamiento de los recursos. ¿Qué debe recomendar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proponer la caducidad, porque los cuatro meses corrieron desde que se configuró el silencio, en mayo de 2025.",
+        "explicacion": "Incorrecta. El término de cuatro meses de la nulidad y restablecimiento no se aplica a los actos producto del silencio administrativo: contra ellos la demanda puede presentarse en cualquier tiempo (art. 164, num. 1, lit. d)."
+      },
+      {
+        "id": "B",
+        "texto": "Alegar que no se agotó la apelación, porque era obligatoria para poder demandar la negativa del municipio.",
+        "explicacion": "Incorrecta. La regla general exige agotar los recursos obligatorios, pero el silencio negativo frente a la primera petición permite demandar directamente el acto presunto (art. 161, num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "No proponer ninguna, porque el acto presunto puede demandarse en cualquier tiempo y sin recursos previos.",
+        "explicacion": "Correcta. A los tres meses sin respuesta se produjo el silencio negativo (art. 83). Ese acto presunto puede demandarse directamente, sin interponer recursos (art. 161, num. 2), y en cualquier tiempo (art. 164, num. 1, lit. d)."
+      },
+      {
+        "id": "D",
+        "texto": "Alegar que la empresa debía protocolizar la constancia del silencio antes de acudir ante el juez.",
+        "explicacion": "Incorrecta. La protocolización de la constancia es el procedimiento para invocar el silencio administrativo positivo (art. 85), no un requisito para demandar el acto negativo presunto."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el municipio nunca respondió la petición del 3 de febrero de 2025 y la empresa demandó sin interponer recursos. Regla: a los tres meses sin respuesta se produce el silencio negativo (art. 83 del CPACA); ese silencio frente a la primera petición permite demandar directamente el acto presunto (art. 161, num. 2), y la demanda contra los actos producto del silencio puede presentarse en cualquier tiempo (art. 164, num. 1, lit. d). Conclusión: ni la caducidad ni la falta de recursos son defensas viables.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-039",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Nulidad absoluta del contrato pedida por un tercero: oportunidad de la demanda",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 141 inc. 3",
+      "art. 164 num. 2 lit. c",
+      "art. 164 num. 2 lit. i",
+      "art. 164 num. 2 lit. j inc. 2"
+    ],
+    "texto_fuente": "El Ministerio Público o un tercero que acredite un interés directo podrán pedir que se declare la nulidad absoluta del contrato. [...] c) Cuando se pretenda la nulidad o la nulidad y restablecimiento del derecho de los actos previos a la celebración del contrato, el término será de cuatro (4) meses contados a partir del día siguiente a su comunicación, notificación, ejecución o publicación, según el caso; [...] Cuando se pretenda la nulidad absoluta o relativa del contrato, el término para demandar será de dos (2) años que se empezarán a contar desde el día siguiente al de su perfeccionamiento. En todo caso, podrá demandarse la nulidad absoluta del contrato mientras este se encuentre vigente.",
+    "pregunta": "El 1 de febrero de 2024 se perfeccionó un contrato por el cual un municipio entregó en arrendamiento, por cinco años, un local de la plaza de mercado. El contrato se ejecuta con normalidad. En septiembre de 2026, un oferente que participó en el proceso de selección y no fue escogido demandó que se declare la nulidad absoluta del contrato, porque considera que el arrendatario estaba inhabilitado para contratar, hecho que dice haber conocido en agosto de 2026. No pide que se anule la adjudicación ni que se le indemnice. Felipe, profesional de la oficina jurídica del municipio, analiza si la demanda se presentó a tiempo. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que se presentó a tiempo, porque el arrendamiento no ha terminado y mientras dure puede atacarse, hasta febrero de 2029.",
+        "explicacion": "Correcta. Los dos años desde el perfeccionamiento vencieron en febrero de 2026, pero la ley permite demandar la nulidad absoluta mientras el contrato esté vigente (art. 164, num. 2, lit. j). El arrendamiento va hasta febrero de 2029, y el oferente es un tercero con interés directo (art. 141)."
+      },
+      {
+        "id": "B",
+        "texto": "Que es tardía, porque los dos años contados desde el perfeccionamiento vencieron a comienzos de febrero de 2026.",
+        "explicacion": "Incorrecta. Los dos años desde el perfeccionamiento sí vencieron, pero la misma norma agrega que la nulidad absoluta puede demandarse en todo caso mientras el contrato esté vigente."
+      },
+      {
+        "id": "C",
+        "texto": "Que es tardía, porque el oferente vencido tenía cuatro meses desde la adjudicación para atacar el contrato.",
+        "explicacion": "Incorrecta. Los cuatro meses se aplican a la demanda contra los actos previos al contrato, como la adjudicación (art. 164, num. 2, lit. c). Aquí se demanda el contrato mismo, que tiene su propia regla."
+      },
+      {
+        "id": "D",
+        "texto": "Que se presentó a tiempo, porque los dos años corren desde que el oferente conoció la inhabilidad, en agosto de 2026.",
+        "explicacion": "Incorrecta. Contar desde que se conoce el hecho es una regla de la reparación directa (art. 164, num. 2, lit. i). Para la nulidad del contrato, el término se cuenta desde el perfeccionamiento, salvo la regla de la vigencia."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el contrato se perfeccionó el 1 de febrero de 2024, dura cinco años y la demanda de nulidad absoluta es de septiembre de 2026. Regla: la nulidad del contrato tiene dos años desde el día siguiente al perfeccionamiento, pero la absoluta puede demandarse en todo caso mientras el contrato esté vigente (art. 164, num. 2, lit. j, del CPACA), y puede pedirla un tercero con interés directo (art. 141). Cálculo: los dos años vencieron en febrero de 2026, pero el contrato rige hasta febrero de 2029. Conclusión: la demanda es oportuna.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-040",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Caducidad de la reparación directa cuando el daño se conoce después y efecto en la conciliación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011 y Ley 2220 de 2022",
+    "articulos": [
+      "art. 164 num. 2 lit. i (Ley 1437 de 2011)",
+      "art. 90 num. 3 (Ley 2220 de 2022)"
+    ],
+    "texto_fuente": "Cuando se pretenda la reparación directa, la demanda deberá presentarse dentro del término de dos (2) años, contados a partir del día siguiente al de la ocurrencia de la acción u omisión causante del daño, o de cuando el demandante tuvo o debió tener conocimiento del mismo si fue en fecha posterior y siempre que pruebe la imposibilidad de haberlo conocido en la fecha de su ocurrencia. [...] ARTÍCULO 90. ASUNTOS NO CONCILIABLES. [...] 3. En los que haya caducado la acción.",
+    "pregunta": "En marzo de 2023, una cuadrilla de la secretaría de obras de un municipio cambió la tubería del acueducto bajo el andén de una calle y dejó mal sellada una unión. El agua se filtró bajo un local comercial sin dejar señales visibles hasta el 10 de agosto de 2025, cuando aparecieron grietas en sus paredes. Un peritaje concluyó que la causa era esa fuga y que antes de esa fecha no era posible advertirla. El 2 de septiembre de 2026, el dueño del local radicó una solicitud de conciliación extrajudicial contra el municipio. Lucía, profesional de la oficina jurídica, prepara la ficha para el comité de conciliación y debe pronunciarse sobre la caducidad. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no es conciliable, porque la acción caducó en marzo de 2025, dos años después del cambio de la tubería.",
+        "explicacion": "Incorrecta. Cuenta desde la obra, pero la ley permite contar desde que el demandante conoció o debió conocer el daño, si fue después y prueba que antes no podía conocerlo, como lo muestra aquí el peritaje."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede conciliarse, porque los dos años corren desde agosto de 2025, cuando el dueño pudo conocer el daño.",
+        "explicacion": "Correcta. El daño no podía advertirse antes del 10 de agosto de 2025, así que los dos años corren desde el día siguiente y vencen en agosto de 2027 (art. 164, num. 2, lit. i, del CPACA). Como no ha caducado, la caducidad no impide conciliar (art. 90, num. 3, de la Ley 2220)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no es conciliable, porque el dueño tenía cuatro meses desde que vio las grietas, y vencieron en diciembre de 2025.",
+        "explicacion": "Incorrecta. Cuatro meses es el término de la nulidad y restablecimiento del derecho. La reparación directa tiene dos años."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede conciliarse, porque mientras el daño se siga agravando no empieza a correr el término de caducidad.",
+        "explicacion": "Incorrecta. La ley no deja abierto el término mientras el daño se agrave: lo cuenta desde la acción u omisión o, si fue después, desde que se conoció o debió conocerse el daño."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la obra fue en marzo de 2023, pero según el peritaje el daño solo pudo advertirse el 10 de agosto de 2025. Regla: la reparación directa tiene dos años desde el día siguiente a la acción u omisión, o desde que el demandante tuvo o debió tener conocimiento del daño, si fue después y prueba que antes no podía conocerlo (art. 164, num. 2, lit. i, del CPACA); si la acción caducó, el asunto no es conciliable (art. 90, num. 3, Ley 2220). Cálculo: desde el 11 de agosto de 2025, vence en agosto de 2027. Conclusión: puede conciliarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Nulidad electoral de una elección declarada en audiencia pública",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 139 inc. 1",
+      "art. 164 num. 2 lit. a"
+    ],
+    "texto_fuente": "Cualquier persona podrá pedir la nulidad de los actos de elección por voto popular o por cuerpos electorales, así como de los actos de nombramiento que expidan las entidades y autoridades públicas de todo orden. [...] a) Cuando se pretenda la nulidad de un acto administrativo electoral, el término será de treinta (30) días. Si la elección se declara en audiencia pública el término se contará a partir del día siguiente; en los demás casos de elección y en los de nombramientos se cuenta a partir del día siguiente al de su publicación efectuada en la forma prevista en el inciso 1o del artículo 65 de este Código.",
+    "pregunta": "El viernes 9 de enero de 2026, en audiencia pública, la asamblea de un departamento declaró la elección del contralor departamental. El acto se publicó en la gaceta departamental el 20 de enero, y el elegido tomó posesión el 2 de febrero. El jueves 26 de febrero de 2026, un ciudadano acude a la personería porque cree que el elegido no cumplía los requisitos del cargo y quiere que un juez anule la elección. ¿Qué debe responderle Óscar, profesional de la personería?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ya no puede, porque los treinta días corrieron desde el día siguiente a la audiencia y vencieron en febrero.",
+        "explicacion": "Correcta. La elección se declaró en audiencia pública, así que los treinta días se cuentan desde el día siguiente, el 10 de enero (art. 164, num. 2, lit. a). Contados como días calendario o como hábiles, vencieron antes del 26 de febrero, a más tardar el 23."
+      },
+      {
+        "id": "B",
+        "texto": "Que aún puede, porque los treinta días corren desde el día siguiente a la publicación del acto en la gaceta.",
+        "explicacion": "Incorrecta. La publicación es el punto de partida para los nombramientos y para las elecciones que no se declaran en audiencia. Aquí la elección se declaró en audiencia pública."
+      },
+      {
+        "id": "C",
+        "texto": "Que aún puede, porque los treinta días corren desde el día siguiente a la posesión del contralor elegido.",
+        "explicacion": "Incorrecta. La posesión no es el punto de partida del término de la nulidad electoral: la ley lo cuenta desde la audiencia o, en los demás casos, desde la publicación."
+      },
+      {
+        "id": "D",
+        "texto": "Que aún puede, porque contra los actos de elección cabe la nulidad simple, que no tiene término de caducidad.",
+        "explicacion": "Incorrecta. La nulidad de los actos de elección tiene un medio propio, la nulidad electoral (art. 139), con un término de treinta días; no se demanda en cualquier tiempo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la asamblea declaró la elección en audiencia pública el 9 de enero de 2026. Regla: la nulidad electoral procede contra los actos de elección por cuerpos electorales (art. 139 del CPACA) y tiene treinta días que, si la elección se declara en audiencia pública, se cuentan desde el día siguiente (art. 164, num. 2, lit. a). Cálculo: desde el 10 de enero, los treinta días vencieron en febrero, a más tardar el 23 si se cuentan como hábiles. Conclusión: el 26 de febrero ya no puede demandar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Medios de control",
+    "subtema": "Envío simultáneo de la demanda al demandado y medidas cautelares previas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 162 num. 8 (adicionado por el art. 35 de la Ley 2080 de 2021)"
+    ],
+    "texto_fuente": "El demandante, al presentar la demanda, simultáneamente deberá enviar por medio electrónico copia de ella y de sus anexos a los demandados, salvo cuando se soliciten medidas cautelares previas o se desconozca el lugar donde recibirá notificaciones el demandado. [...] El secretario velará por el cumplimiento de este deber, sin cuya acreditación se inadmitirá la demanda.",
+    "pregunta": "Valentina, técnica de la oficina jurídica de un departamento, debe radicar por medios electrónicos dos demandas de reparación directa que firmó el abogado del departamento. La primera es contra una empresa de transporte cuyo camión destruyó la baranda de un puente departamental; en ella no se pide ninguna medida cautelar. La segunda es contra otra empresa por daños en una vía, y con ella se pide una medida cautelar que debe decretarse antes de notificar a la demandada. Se conoce el correo electrónico de las dos empresas. ¿En cuál debe Valentina enviar a la demandada copia de la demanda y sus anexos al momento de radicarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En las dos, porque todo demandante debe enviar copia de la demanda y sus anexos al presentarla.",
+        "explicacion": "Incorrecta. El envío simultáneo es la regla general, pero no se exige cuando se solicitan medidas cautelares previas, como en la segunda demanda (art. 162, num. 8)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo en la primera, porque en la segunda se pidió una medida cautelar anterior a la notificación.",
+        "explicacion": "Correcta. Al presentar la demanda debe enviarse simultáneamente al demandado copia de ella y de sus anexos, salvo cuando se piden medidas cautelares previas o se desconoce dónde recibirá notificaciones (art. 162, num. 8). Solo la primera demanda está en la regla general."
+      },
+      {
+        "id": "C",
+        "texto": "En ninguna, porque las empresas conocerán la demanda cuando el juzgado les notifique el auto admisorio.",
+        "explicacion": "Incorrecta. Desde la Ley 2080 de 2021, el demandante debe enviar la copia al presentar la demanda; si no lo acredita, la demanda se inadmite."
+      },
+      {
+        "id": "D",
+        "texto": "Solo en la segunda, porque la medida cautelar exige que la demandada conozca antes la demanda.",
+        "explicacion": "Incorrecta. Es al revés: pedir una medida cautelar previa es justamente la excepción al envío simultáneo de la demanda."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la primera demanda no pide medidas cautelares y la segunda pide una que debe decretarse antes de notificar. Regla: el demandante, al presentar la demanda, debe enviar simultáneamente por medio electrónico copia de ella y de sus anexos a los demandados, salvo cuando se soliciten medidas cautelares previas o se desconozca dónde recibirán notificaciones; sin esa acreditación la demanda se inadmite (art. 162, num. 8, del CPACA). Conclusión: el envío simultáneo solo se hace en la primera.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conciliación extrajudicial",
+    "subtema": "Requisito de procedibilidad: demanda con medidas cautelares patrimoniales y demanda de nulidad simple",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 2220 de 2022",
+    "articulos": [
+      "art. 92 incs. 1 y 3",
+      "art. 93 inc. 1"
+    ],
+    "texto_fuente": "Cuando los asuntos sean conciliables, el trámite de la conciliación extrajudicial constituirá requisito de procedibilidad de toda demanda en que se formulen pretensiones relativas a nulidad con restablecimiento del derecho, reparación directa y controversias contractuales. [...] La ausencia del agotamiento del requisito de procedibilidad dará lugar al rechazo de plano de la demanda por parte del juez de conocimiento. [...] Será facultativo agotar la conciliación extrajudicial en materia contencioso administrativa, en los procesos ejecutivos diferentes a los regulados en la Ley 1551 de 2012, o la norma que la modifique o sustituya, en los procesos en que el demandante pida medidas cautelares de carácter patrimonial, en relación con el medio de control de repetición o cuando quien demande sea una entidad pública, salvo cuando sea obligatorio de acuerdo con el parágrafo del artículo 92 de la presente ley.",
+    "pregunta": "A un departamento se le notificaron tres demandas, y en ninguna el demandante agotó la conciliación extrajudicial. En la primera, un contratista pide que se declare el incumplimiento de un contrato de suministro y que se le paguen 300 millones de pesos, y solicita como medida cautelar el embargo de esa suma; la solicitud es seria, está sustentada y recae sobre recursos propios del departamento que no son inembargables. En la segunda, una cooperativa pide anular la resolución que le ordenó reintegrar 40 millones de pesos de un incentivo y que se le devuelva lo que pagó; no pide medidas cautelares. En la tercera, un ciudadano pide anular una ordenanza de carácter general por falta de competencia de la asamblea. Diana, profesional de la oficina jurídica, prepara las contestaciones. ¿En cuál debe alegar que faltó el requisito de procedibilidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la del contratista y en la de la cooperativa, porque ambas tienen pretensiones económicas conciliables.",
+        "explicacion": "Incorrecta. La demanda del contratista es de controversias contractuales, pero como pidió una medida cautelar de carácter patrimonial real, el embargo de recursos embargables, agotar la conciliación era facultativo (art. 93)."
+      },
+      {
+        "id": "B",
+        "texto": "En las tres, porque toda demanda contra un departamento debe estar precedida de la conciliación extrajudicial.",
+        "explicacion": "Incorrecta. El requisito se exige en la nulidad y restablecimiento, la reparación directa y las controversias contractuales (art. 92). La demanda de nulidad de una ordenanza general no está en esa lista, y en la del contratista era facultativo."
+      },
+      {
+        "id": "C",
+        "texto": "Solo en la de la cooperativa, porque el embargo que pidió el contratista hizo facultativa la conciliación.",
+        "explicacion": "Correcta. La demanda de la cooperativa es de nulidad y restablecimiento, con contenido económico conciliable y sin medidas cautelares, así que la conciliación era requisito (art. 92). En la del contratista era facultativa por el embargo, una medida patrimonial real sobre bienes embargables (art. 93), y la de nulidad de un acto general no la exige."
+      },
+      {
+        "id": "D",
+        "texto": "Solo en la del contratista, porque en las controversias contractuales conciliar es exigible sin excepción.",
+        "explicacion": "Incorrecta. La ley hace facultativa la conciliación cuando el demandante pide medidas cautelares de carácter patrimonial, aun en controversias contractuales (art. 93). Además, omite la demanda de la cooperativa."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el contratista pidió un embargo serio sobre recursos embargables, la cooperativa pide nulidad y restablecimiento sin medidas cautelares y el ciudadano pide la nulidad de un acto general. Regla: la conciliación es requisito de procedibilidad en la nulidad y restablecimiento, la reparación directa y las controversias contractuales (art. 92 de la Ley 2220 de 2022), pero es facultativa cuando el demandante pide medidas cautelares de carácter patrimonial (art. 93). Conclusión: solo faltó el requisito en la demanda de la cooperativa.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_2220_2022.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cobro coactivo",
+    "subtema": "Documentos que prestan mérito ejecutivo para el cobro coactivo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 99 inc. 1 y nums. 1 y 3"
+    ],
+    "texto_fuente": "Prestarán mérito ejecutivo para su cobro coactivo, siempre que en ellos conste una obligación clara, expresa y exigible, los siguientes documentos: 1. Todo acto administrativo ejecutoriado que imponga a favor de las entidades públicas a las que alude el parágrafo del artículo 104, la obligación de pagar una suma líquida de dinero, en los casos previstos en la ley. [...] 3. Los contratos o los documentos en que constan sus garantías, junto con el acto administrativo que declara el incumplimiento o la caducidad. Igualmente lo serán el acta de liquidación del contrato o cualquier acto administrativo proferido con ocasión de la actividad contractual.",
+    "pregunta": "Julián, técnico del grupo de cobro coactivo de un municipio, revisa cuatro expedientes que otras dependencias le remitieron para iniciar el cobro: 1) una resolución que impuso una multa de 5 millones de pesos a un comerciante, contra la cual está pendiente la apelación; 2) el acta de liquidación de mutuo acuerdo de un contrato de suministro, firmada por las partes, en la que el contratista se obliga a devolver 4,2 millones de pesos del anticipo dentro de los diez días siguientes, plazo que ya venció; 3) un contrato de obra que el contratista abandonó, con su póliza de cumplimiento, sin que se haya expedido el acto que declare el incumplimiento, y 4) un informe en el que el supervisor calcula en 3 millones de pesos el daño que un contratista causó a un vehículo del municipio. ¿Qué expediente contiene un documento que presta mérito ejecutivo para iniciar ya el cobro coactivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de la multa, porque la resolución que la impuso ya fue notificada y fija una suma líquida de dinero.",
+        "explicacion": "Incorrecta. El acto que impone la multa debe estar ejecutoriado (art. 99, num. 1). Mientras esté pendiente la apelación, no lo está."
+      },
+      {
+        "id": "B",
+        "texto": "El del acta de liquidación, porque en ella el contratista aceptó deber una suma cuyo plazo de pago ya venció.",
+        "explicacion": "Correcta. El acta de liquidación del contrato presta mérito ejecutivo (art. 99, num. 3), y en ella consta una obligación clara (4,2 millones), expresa (aceptada por el contratista) y exigible (el plazo venció)."
+      },
+      {
+        "id": "C",
+        "texto": "El del contrato abandonado, porque la póliza de cumplimiento respalda por sí sola lo que dejó de ejecutarse.",
+        "explicacion": "Incorrecta. El contrato y la póliza prestan mérito ejecutivo junto con el acto administrativo que declara el incumplimiento o la caducidad (art. 99, num. 3). Ese acto no se ha expedido."
+      },
+      {
+        "id": "D",
+        "texto": "El del informe del supervisor, porque un servidor público cuantificó el daño en un documento oficial.",
+        "explicacion": "Incorrecta. Un informe de supervisión no es un acto administrativo que imponga la obligación de pagar ni un documento que provenga del deudor; no es título ejecutivo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: solo el acta de liquidación contiene una suma aceptada por el deudor y ya vencida. Regla: prestan mérito ejecutivo, si en ellos consta una obligación clara, expresa y exigible, los actos administrativos ejecutoriados que imponen pagar una suma líquida, los contratos junto con el acto que declara el incumplimiento y el acta de liquidación del contrato (art. 99, nums. 1 y 3, del CPACA). Conclusión: la multa apelada no está ejecutoriada, la póliza necesita el acto de incumplimiento y el informe no es título; procede el cobro con el acta.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cobro coactivo",
+    "subtema": "Procedimiento aplicable: citación para notificar el mandamiento de pago y término para pagar o excepcionar",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1437 de 2011 y Estatuto Tributario",
+    "articulos": [
+      "art. 100 num. 2 e inc. final (Ley 1437 de 2011)",
+      "art. 826 inc. 1 (Estatuto Tributario)",
+      "art. 830 (Estatuto Tributario)",
+      "art. 833-1 (Estatuto Tributario, adicionado por el art. 78 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "2. Los que no tengan reglas especiales se regirán por lo dispuesto en este título y en el Estatuto Tributario. [...] En todo caso, para los aspectos no previstos en el Estatuto Tributario o en las respectivas normas especiales, en cuanto fueren compatibles con esos regímenes, se aplicarán las reglas de procedimiento establecidas en la Parte Primera de este Código [...] Este mandamiento se notificará personalmente al deudor, previa citación para que comparezca en un término de diez (10) días. Si vencido el término no comparece, el mandamiento ejecutivo se notificará por correo. [...] Dentro de los quince (15) días siguientes a la notificación del mandamiento de pago, el deudor deberá cancelar el monto de la deuda con sus respectivos intereses. Dentro del mismo término, podrán proponerse mediante escrito las excepciones contempladas en el artículo siguiente. [...] Las actuaciones administrativas realizadas en el procedimiento administrativo de cobro, son de trámite y contra ellas no procede recurso alguno, excepto los que en forma expresa se señalen en este procedimiento para las actuaciones definitivas.",
+    "pregunta": "La tesorería de un municipio inicia el cobro coactivo de una multa que impuso la secretaría de gobierno en un procedimiento sancionatorio regido por el CPACA. Ninguna norma especial regula el cobro de esa clase de multas. Andrés, técnico del área de cobro, debe preparar la citación para notificar personalmente el mandamiento de pago y el texto que le informa al deudor lo que puede hacer una vez notificado. ¿Qué debe indicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que comparezca dentro de diez días a notificarse y que, notificado, tendrá quince días para pagar con intereses o proponer excepciones.",
+        "explicacion": "Correcta. Sin reglas especiales, el cobro se rige por el título IV del CPACA y por el Estatuto Tributario (art. 100, num. 2). Este fija diez días para comparecer a la notificación personal del mandamiento (art. 826) y quince días, desde la notificación, para pagar o proponer excepciones (art. 830)."
+      },
+      {
+        "id": "B",
+        "texto": "Que comparezca dentro de cinco días a notificarse y que, notificado, tendrá diez días para interponer reposición contra el mandamiento.",
+        "explicacion": "Incorrecta. Aplica las reglas generales del CPACA para notificar y recurrir actos. En el cobro sin norma especial prima el Estatuto Tributario, y contra el mandamiento de pago no procede reposición (art. 833-1): la defensa son las excepciones."
+      },
+      {
+        "id": "C",
+        "texto": "Que comparezca dentro de diez días a notificarse y que, notificado, tendrá diez días para interponer reposición contra el mandamiento.",
+        "explicacion": "Incorrecta. Acierta en los diez días para comparecer, pero el mandamiento de pago no se recurre en reposición; dentro de los quince días siguientes a su notificación se paga o se proponen excepciones (art. 830 del Estatuto Tributario)."
+      },
+      {
+        "id": "D",
+        "texto": "Que comparezca dentro de cinco días a notificarse y que, notificado, tendrá quince días para pagar con intereses o proponer excepciones.",
+        "explicacion": "Incorrecta. Acierta en los quince días para pagar o excepcionar, pero el término de la citación que fija el Estatuto Tributario para notificar el mandamiento es de diez días, no de cinco."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: es un cobro coactivo sin reglas especiales. Regla: esos cobros se rigen por el título IV del CPACA y por el Estatuto Tributario, y la Parte Primera del CPACA solo llena lo que este no prevé (art. 100). El Estatuto cita al deudor para que comparezca en diez días a notificarse del mandamiento de pago (art. 826) y le da quince días desde la notificación para pagar con intereses o proponer excepciones (art. 830); las actuaciones del cobro no tienen recursos salvo norma expresa (art. 833-1). Conclusión: diez y quince días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cobro coactivo",
+    "subtema": "Excepciones admisibles contra el mandamiento de pago",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011 y Estatuto Tributario",
+    "articulos": [
+      "art. 100 num. 2 (Ley 1437 de 2011)",
+      "art. 829-1 inc. 1 (Estatuto Tributario, adicionado por el art. 105 de la Ley 6 de 1992)",
+      "art. 830 (Estatuto Tributario)",
+      "art. 831 nums. 1 y 2 (Estatuto Tributario)"
+    ],
+    "texto_fuente": "2. Los que no tengan reglas especiales se regirán por lo dispuesto en este título y en el Estatuto Tributario. [...] En el procedimiento administrativo de cobro, no podrán debatirse cuestiones que debieron ser objeto de discusión en la vía gubernativa. [...] Dentro del mismo término, podrán proponerse mediante escrito las excepciones contempladas en el artículo siguiente. [...] Contra el mandamiento de pago procederán las siguientes excepciones: 1. El pago efectivo. 2. La existencia de acuerdo de pago.",
+    "pregunta": "En el cobro coactivo de una multa de 6 millones de pesos que impuso la secretaría de gobierno de un municipio, el deudor presentó a tiempo un escrito contra el mandamiento de pago con tres argumentos: que no cometió la infracción por la que se le sancionó, punto que no planteó en los recursos que interpuso contra la multa; que pagó la totalidad de la multa en el banco antes de que se librara el mandamiento, de lo cual anexa el recibo, y que su situación económica le da derecho a pagar por cuotas, aunque no ha firmado ningún acuerdo con el municipio. Ninguna norma especial regula el cobro de esa multa. ¿Cuáles de esos argumentos debe estudiar como excepciones Carolina, profesional a cargo del cobro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los tres, porque contra el mandamiento de pago el deudor puede proponer cualquier defensa frente a la deuda.",
+        "explicacion": "Incorrecta. Las excepciones contra el mandamiento de pago son las que señala la ley (art. 831 del Estatuto Tributario, aplicable por el art. 100 del CPACA), no cualquier defensa."
+      },
+      {
+        "id": "B",
+        "texto": "El pago y la inexistencia de la infracción, porque los dos niegan que exista la obligación que se cobra.",
+        "explicacion": "Incorrecta. Negar la infracción es un reparo contra la legalidad de la multa, que debió discutirse en los recursos; en el cobro no pueden debatirse esas cuestiones (art. 829-1 del Estatuto Tributario)."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la inexistencia de la infracción, porque el pago debe probarse ante la tesorería y no como excepción.",
+        "explicacion": "Incorrecta. Es al revés: el pago efectivo es la primera excepción de la lista (art. 831, num. 1), y la inexistencia de la infracción no puede debatirse en el cobro."
+      },
+      {
+        "id": "D",
+        "texto": "Solo el pago, porque lo demás no es excepción contra el mandamiento o debió discutirse frente a la multa.",
+        "explicacion": "Correcta. El pago efectivo es excepción (art. 831, num. 1). Si hubo o no infracción es una cuestión que debió plantearse en los recursos contra la multa (art. 829-1), y querer pagar por cuotas no es excepción: lo es la existencia de un acuerdo de pago (art. 831, num. 2), que no se ha firmado."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el deudor alega que no cometió la infracción (no lo dijo en los recursos), que ya pagó (con recibo) y que quiere pagar por cuotas (sin acuerdo firmado). Regla: sin reglas especiales, el cobro se rige por el CPACA y el Estatuto Tributario (art. 100, num. 2); las excepciones son las del art. 831 del Estatuto, entre ellas el pago efectivo y la existencia de acuerdo de pago, y en el cobro no pueden debatirse cuestiones que debieron discutirse en la vía gubernativa (art. 829-1). Conclusión: solo el pago se estudia como excepción.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-047",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Cobro coactivo",
+    "subtema": "Suspensión del cobro coactivo por una demanda de nulidad contra el título ejecutivo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1437 de 2011",
+    "articulos": [
+      "art. 100 num. 2",
+      "art. 101 inc. 2 y nums. 1 y 2"
+    ],
+    "texto_fuente": "2. Los que no tengan reglas especiales se regirán por lo dispuesto en este título y en el Estatuto Tributario. [...] La admisión de la demanda contra los anteriores actos o contra el que constituye el título ejecutivo no suspende el procedimiento de cobro coactivo. Únicamente habrá lugar a la suspensión del procedimiento administrativo de cobro coactivo: 1. Cuando el acto administrativo que constituye el título ejecutivo haya sido suspendido provisionalmente por la Jurisdicción de lo Contencioso Administrativo; y 2. A solicitud del ejecutado, cuando proferido el acto que decida las excepciones o el que ordene seguir adelante la ejecución, según el caso, esté pendiente el resultado de un proceso contencioso administrativo de nulidad contra el título ejecutivo, salvo lo dispuesto en leyes especiales.",
+    "pregunta": "Un municipio cobra coactivamente una multa impuesta en un procedimiento sancionatorio regido por el CPACA. Ese cobro no tiene reglas especiales, de modo que se rige por el título del CPACA sobre cobro coactivo y, solo en lo que ese título no regule, por el Estatuto Tributario. El deudor propuso excepciones, que se negaron mediante una resolución que también ordenó seguir adelante la ejecución, y esa resolución ya está en firme. Desde mayo de 2026 cursa, ya admitida, la demanda de nulidad y restablecimiento del derecho que el deudor presentó contra la resolución de la multa, y el juez no ha decretado ninguna medida cautelar en ese proceso. El 14 de septiembre de 2026, el deudor pide por escrito que se suspenda el cobro. ¿Qué debe proyectar Jorge, profesional a cargo del cobro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negar la solicitud, porque la admisión de la demanda contra el título no suspende el procedimiento de cobro.",
+        "explicacion": "Incorrecta. Es la regla general (art. 101, inc. 2), pero el mismo artículo prevé la suspensión a solicitud del ejecutado cuando ya se decidieron las excepciones o se ordenó seguir adelante la ejecución y está pendiente la nulidad contra el título (num. 2). Tampoco se aplica aquí el art. 835 del Estatuto Tributario, según el cual la admisión de la demanda no suspende el cobro: en este cobro el Estatuto solo llena lo que no regula el título del CPACA (art. 100, num. 2), y ese título sí regula la suspensión en su art. 101."
+      },
+      {
+        "id": "B",
+        "texto": "Negar la solicitud, porque el cobro se suspende solo si el juez suspendió provisionalmente la resolución.",
+        "explicacion": "Incorrecta. La suspensión provisional del título es solo una de las dos causales (num. 1). La segunda no exige medida cautelar: basta la solicitud del ejecutado en la etapa indicada (num. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Acceder a la solicitud, porque las excepciones ya se negaron y la demanda contra la multa aún no tiene fallo.",
+        "explicacion": "Correcta. El cobro se rige por el título del CPACA (art. 100, num. 2). Según su art. 101, num. 2, a solicitud del ejecutado procede la suspensión cuando ya se profirió el acto que decide las excepciones o el que ordena seguir adelante la ejecución y está pendiente un proceso de nulidad contra el título. Las dos condiciones se cumplen y ninguna ley especial dispone otra cosa."
+      },
+      {
+        "id": "D",
+        "texto": "Acceder a la solicitud, a condición de que el deudor preste antes garantía bancaria por la deuda e intereses.",
+        "explicacion": "Incorrecta. El art. 101 no condiciona esta suspensión a una garantía; la exigencia de garantía bancaria o de seguros es propia de otras figuras, como el levantamiento de medidas cautelares."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el cobro no tiene reglas especiales, las excepciones ya se negaron con orden de seguir adelante la ejecución y está en curso la demanda de nulidad contra la multa. Regla: ese cobro se rige por el título del CPACA (art. 100, num. 2), cuyo art. 101 dice que admitir la demanda no suspende el cobro, pero permite suspenderlo a solicitud del ejecutado cuando, decididas las excepciones u ordenada la ejecución, está pendiente la nulidad contra el título (num. 2). Conclusión: procede suspender.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-048",
+    "version": 2,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Gestión fiscal y pérdida de bienes en servicio",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 3",
+      "art. 7 inc. 1"
+    ],
+    "texto_fuente": "Para los efectos de la presente ley, se entiende por gestión fiscal el conjunto de actividades económicas, jurídicas y tecnológicas, que realizan los servidores públicos y las personas de derecho privado que manejen o administren recursos o fondos públicos, tendientes a la adecuada y correcta adquisición, planeación, conservación, administración, custodia, explotación, enajenación, consumo, adjudicación, gasto, inversión y disposición de los bienes públicos [...] En los casos de pérdida, daño o deterioro por causas distintas al desgaste natural que sufren las cosas, de bienes en servicio o inservibles no dados de baja, únicamente procederá derivación de responsabilidad fiscal cuando el hecho tenga relación directa con el ejercicio de actos propios de la gestión fiscal por parte de los presuntos responsables.",
+    "pregunta": "Una gobernación informó a la contraloría departamental dos pérdidas. En la primera, desaparecieron de la bodega del almacén diez tabletas nuevas que aún no se habían entregado a ninguna dependencia; el almacenista, encargado de custodiarlas, dejó la bodega sin llave varios fines de semana. En la segunda, a un profesional de la secretaría de planeación, que no tiene funciones de manejo de bienes, le hurtaron de su carro el portátil que la gobernación le asignó para trabajar, porque lo dejó allí una noche. Paula, profesional de la dirección de responsabilidad fiscal, debe proponer en qué casos procede abrir proceso de responsabilidad fiscal. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En los dos, porque en ambos un servidor, con su descuido, causó un detrimento al patrimonio del departamento.",
+        "explicacion": "Incorrecta. Para los bienes en servicio, como el portátil, la responsabilidad fiscal solo procede si el hecho se relaciona directamente con actos de gestión fiscal (art. 7). El profesional de planeación no ejercía esa función."
+      },
+      {
+        "id": "B",
+        "texto": "Solo en el de las tabletas, porque quien perdió el portátil lo usaba sin ejercer gestión fiscal sobre él.",
+        "explicacion": "Correcta. Custodiar los bienes del almacén es gestión fiscal (art. 3), así que la pérdida de las tabletas, que aún no estaban en servicio, puede dar lugar a responsabilidad fiscal. El portátil es un bien en servicio, y en ese caso la responsabilidad fiscal solo procede si el hecho tiene relación directa con actos propios de la gestión fiscal (art. 7, inc. 1); su usuario no tenía funciones de manejo de bienes. Si esa pérdida tiene otras consecuencias, no cambia la decisión sobre el proceso fiscal."
+      },
+      {
+        "id": "C",
+        "texto": "Solo en el del portátil, porque fue hurtado, y lo de las tabletas se resuelve dándolas de baja del inventario.",
+        "explicacion": "Incorrecta. Invierte la regla: quien custodiaba las tabletas ejercía gestión fiscal (art. 3), y darlas de baja no repara el detrimento; el portátil, en cambio, es un bien en servicio cuya pérdida no se relaciona con actos de gestión fiscal (art. 7, inc. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "En ninguno, porque la pérdida de bienes muebles se resarce dentro del proceso disciplinario y no en el fiscal.",
+        "explicacion": "Incorrecta. Ninguna regla saca del proceso fiscal toda pérdida de bienes muebles: el art. 7 solo limita la responsabilidad fiscal en bienes en servicio o inservibles cuando el hecho no se relaciona con actos de gestión fiscal. Las tabletas estaban en el almacén, bajo la custodia del almacenista, que sí ejercía gestión fiscal (art. 3)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el almacenista custodiaba las tabletas en la bodega; el profesional solo usaba el portátil y no maneja bienes. Regla: la custodia de bienes públicos es gestión fiscal (art. 3 de la Ley 610 de 2000), y en la pérdida de bienes en servicio la responsabilidad fiscal solo procede si el hecho tiene relación directa con actos propios de la gestión fiscal de los presuntos responsables (art. 7, inc. 1). Conclusión: proceso fiscal solo por las tabletas.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Boletín de responsables fiscales y posesión en un empleo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 60 incs. 1 y 3"
+    ],
+    "texto_fuente": "La Contraloría General de la República publicará con periodicidad trimestral un boletín que contendrá los nombres de las personas naturales o jurídicas a quienes se les haya dictado fallo con responsabilidad fiscal en firme y ejecutoriado y no hayan satisfecho la obligación contenida en él. [...] Los representantes legales, así como los nominadores y demás funcionarios competentes, deberán abstenerse de nombrar, dar posesión o celebrar cualquier tipo de contrato con quienes aparezcan en el boletín de responsables, so pena de incurrir en causal de mala conducta, en concordancia con lo dispuesto en el artículo 6o. de la ley 190 de 1995. Para cumplir con esta obligación, en el evento de no contar con esta publicación, los servidores públicos consultarán a la Contraloría General de la República sobre la inclusión de los futuros funcionarios o contratistas en el boletín.",
+    "pregunta": "Marcela, técnica de talento humano de una gobernación, prepara la posesión de una persona nombrada como profesional universitario. Al revisar el boletín de responsables fiscales que publica la Contraloría General, encuentra que la persona aparece en él por un fallo con responsabilidad fiscal en firme, dictado en 2024 por una contraloría departamental, que todavía no ha pagado. La persona dice que pagará apenas reciba sus primeros salarios. ¿Qué debe hacer Marcela?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Seguir con el trámite y avisar a la contraloría que dictó el fallo, porque es ella la que debe hacerlo cumplir.",
+        "explicacion": "Incorrecta. Que la contraloría territorial deba cobrar el fallo no habilita la posesión: el nominador debe abstenerse de darla a quien aparece en el boletín (art. 60)."
+      },
+      {
+        "id": "B",
+        "texto": "Suspender el trámite y consultar a la Contraloría General si autoriza la posesión mientras la persona paga.",
+        "explicacion": "Incorrecta. La consulta a la Contraloría General está prevista para cuando no se cuenta con la publicación del boletín, y no sirve para obtener una autorización. Aquí la publicación existe y la persona figura en ella."
+      },
+      {
+        "id": "C",
+        "texto": "Detener el trámite e informar al nominador que la persona aparece en el boletín, para que no le dé posesión.",
+        "explicacion": "Correcta. Los nominadores deben abstenerse de nombrar o dar posesión a quienes aparezcan en el boletín, so pena de incurrir en causal de mala conducta (art. 60). Como técnica, Marcela no decide: informa al nominador para que se abstenga."
+      },
+      {
+        "id": "D",
+        "texto": "Seguir con el trámite, porque estar en el boletín impide contratar con el Estado, pero no ocupar un empleo.",
+        "explicacion": "Incorrecta. La prohibición cubre nombrar, dar posesión y celebrar cualquier contrato con quien aparezca en el boletín (art. 60, inc. 3)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la persona nombrada figura en el boletín de responsables fiscales por un fallo en firme que no ha pagado. Regla: los nominadores y demás funcionarios competentes deben abstenerse de nombrar, dar posesión o contratar con quienes aparezcan en el boletín, so pena de incurrir en causal de mala conducta (art. 60 de la Ley 610 de 2000). Conclusión: Marcela detiene el trámite e informa al nominador para que no dé la posesión.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-050",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Indagación preliminar: término máximo y decisiones al vencerlo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 39 inc. 1"
+    ],
+    "texto_fuente": "Si no existe certeza sobre la ocurrencia del hecho, la causación del daño patrimonial con ocasión de su acaecimiento, la entidad afectada y la determinación de los presuntos responsables, podrá ordenarse indagación preliminar por un término máximo de seis (6) meses, al cabo de los cuales solamente procederá el archivo de las diligencias o la apertura del proceso de responsabilidad fiscal.",
+    "pregunta": "El lunes 16 de marzo de 2026, la dirección de responsabilidad fiscal de una contraloría municipal ordenó una indagación preliminar por posibles sobrecostos en la compra de uniformes de un hospital municipal, porque no hay certeza sobre quiénes serían los responsables. Mateo, técnico de la dirección, lleva el tablero de control de términos. ¿Qué fecha límite debe registrar y qué podrá decidirse cuando venza?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 16 de junio de 2026; al vencer, la indagación puede prorrogarse hasta por dos meses con auto motivado.",
+        "explicacion": "Incorrecta. El término de la indagación preliminar es de hasta seis meses, no de tres, y la ley no prevé su prórroga."
+      },
+      {
+        "id": "B",
+        "texto": "El 16 de septiembre de 2026; al vencer, habrá que escoger entre archivar las diligencias o abrir el proceso.",
+        "explicacion": "Correcta. La indagación preliminar dura como máximo seis meses (del 16 de marzo al 16 de septiembre de 2026) y al cabo de ellos solo procede archivar las diligencias o abrir el proceso de responsabilidad fiscal (art. 39)."
+      },
+      {
+        "id": "C",
+        "texto": "El 16 de septiembre de 2026; al vencer, puede prorrogarse por otros seis meses si persisten las dudas.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero el término es máximo y la ley no prevé prórroga: vencido, solo cabe el archivo o la apertura."
+      },
+      {
+        "id": "D",
+        "texto": "El 16 de marzo de 2027; al vencer, puede dictarse auto de imputación si ya está probado el daño.",
+        "explicacion": "Incorrecta. El término es de seis meses, no de un año, y la imputación no sigue a la indagación: primero debe abrirse el proceso de responsabilidad fiscal."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la indagación preliminar se ordenó el 16 de marzo de 2026. Regla: puede ordenarse indagación preliminar por un término máximo de seis meses, al cabo de los cuales solo procede el archivo de las diligencias o la apertura del proceso de responsabilidad fiscal (art. 39 de la Ley 610 de 2000). Cálculo: seis meses desde el 16 de marzo llegan al 16 de septiembre de 2026. Conclusión: esa es la fecha límite, y al vencer se archiva o se abre el proceso.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Auto de apertura: medidas cautelares, notificación sin recursos y vinculación del garante",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 40 inc. 2",
+      "art. 41 num. 7",
+      "art. 44"
+    ],
+    "texto_fuente": "En el evento en que se haya identificado a los presuntos responsables fiscales, a fin de que ejerzan el derecho de defensa y contradicción, deberá notificárseles el auto de trámite que ordene la apertura del proceso. Contra este auto no procede recurso alguno. [...] 7. Decreto de las medidas cautelares a que hubiere lugar, las cuales deberán hacerse efectivas antes de la notificación del auto de apertura a los presuntos responsables. [...] Cuando el presunto responsable, o el bien o contrato sobre el cual recaiga el objeto del proceso, se encuentren amparados por una póliza, se vinculará al proceso a la compañía de seguros, en calidad de tercero civilmente responsable, en cuya virtud tendrá los mismos derechos y facultades del principal implicado. La vinculación se surtirá mediante la comunicación del auto de apertura del proceso al representante legal o al apoderado designado por éste, con la indicación del motivo de procedencia de aquella.",
+    "pregunta": "Camila, técnica de la secretaría común de una contraloría departamental, recibe el auto de apertura de un proceso de responsabilidad fiscal contra un exsecretario de hacienda. El auto decreta el embargo de una cuenta bancaria del exsecretario y vincula como tercero civilmente responsable a la aseguradora que expidió la póliza de manejo. Camila debe tramitar el auto. ¿Cómo debe hacerlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Notificar el auto al exsecretario y, después, enviar al banco el oficio de embargo, para no sorprenderlo con la medida.",
+        "explicacion": "Incorrecta. Invierte el orden: las medidas cautelares deben hacerse efectivas antes de notificar el auto de apertura al presunto responsable (art. 41, num. 7)."
+      },
+      {
+        "id": "B",
+        "texto": "Hacer efectivo el embargo y notificar luego el auto al exsecretario, indicándole que puede interponer reposición.",
+        "explicacion": "Incorrecta. Acierta en el orden, pero contra el auto de apertura no procede recurso alguno (art. 40)."
+      },
+      {
+        "id": "C",
+        "texto": "Notificar el auto a la aseguradora y al exsecretario, y enviar el oficio de embargo cuando quede en firme la apertura.",
+        "explicacion": "Incorrecta. El embargo no espera a la firmeza de la apertura: debe hacerse efectivo antes de la notificación. Además, a la aseguradora se la vincula comunicándole el auto (art. 44)."
+      },
+      {
+        "id": "D",
+        "texto": "Hacer efectivo el embargo, notificar después el auto al exsecretario y comunicárselo a la aseguradora vinculada.",
+        "explicacion": "Correcta. Primero se hace efectivo el embargo, porque las medidas deben materializarse antes de notificar al presunto responsable (art. 41, num. 7); luego se le notifica el auto, contra el que no hay recursos (art. 40), y a la aseguradora se la vincula comunicándole el auto (art. 44)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el auto de apertura decreta un embargo y vincula a la aseguradora de la póliza de manejo. Regla: las medidas cautelares deben hacerse efectivas antes de notificar el auto de apertura a los presuntos responsables (art. 41, num. 7, de la Ley 610 de 2000); el auto se les notifica y contra él no procede recurso (art. 40), y la aseguradora se vincula mediante la comunicación del auto (art. 44). Conclusión: embargo, notificación al exsecretario y comunicación a la aseguradora.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Caducidad de la acción fiscal en hechos instantáneos y continuados",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 9 inc. 1"
+    ],
+    "texto_fuente": "La acción fiscal caducará si transcurridos cinco (5) años desde la ocurrencia del hecho generador del daño al patrimonio público, no se ha proferido auto de apertura del proceso de responsabilidad fiscal. Este término empezará a contarse para los hechos o actos instantáneos desde el día de su realización, y para los complejos, de tracto sucesivo, de carácter permanente o continuado desde la del último hecho o acto.",
+    "pregunta": "Una contraloría municipal planea dictar el jueves 15 de octubre de 2026 el auto de apertura de un proceso de responsabilidad fiscal por dos hechos que conoció en 2025. El primero es el pago doble de una factura a un proveedor de papelería, hecho el 14 de mayo de 2021. El segundo es una serie de pagos mensuales que se hicieron, en ejecución de un mismo contrato, a una empresa de vigilancia por puestos que no se prestaron, desde el 25 de marzo hasta el 20 de diciembre de 2021. Lina, técnica de la dirección de responsabilidad fiscal, diligencia la lista de verificación de términos previa al auto. ¿Qué debe registrar sobre la caducidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no ha caducado para ninguno, porque los cinco años corren desde que la contraloría conoció los hechos, en 2025.",
+        "explicacion": "Incorrecta. La ley no cuenta la caducidad desde que la contraloría conoce los hechos, sino desde que ocurrieron: el día del hecho instantáneo o el del último acto del hecho continuado."
+      },
+      {
+        "id": "B",
+        "texto": "Que caducó para los dos, porque ambos hechos empezaron en 2021 y ya pasaron más de cinco años desde su inicio.",
+        "explicacion": "Incorrecta. En los hechos de tracto sucesivo o continuados el término corre desde el último acto, no desde el primero. El último pago fue el 20 de diciembre de 2021, así que los cinco años llegan a diciembre de 2026."
+      },
+      {
+        "id": "C",
+        "texto": "Que caducó para el pago doble, pero no para los pagos mensuales, cuyos cinco años corren desde el de diciembre.",
+        "explicacion": "Correcta. El pago doble es instantáneo: los cinco años corrieron desde el 14 de mayo de 2021 y vencieron el 14 de mayo de 2026. Los pagos mensuales son continuados: el término corre desde el último, del 20 de diciembre de 2021, y vence en diciembre de 2026, después del 15 de octubre (art. 9)."
+      },
+      {
+        "id": "D",
+        "texto": "Que caducó para los pagos mensuales, cuyos cinco años corrieron desde el de marzo, pero no para el pago doble.",
+        "explicacion": "Incorrecta. En la serie de pagos el término corre desde el último, no desde el primero; y el pago doble, de mayo de 2021, ya superó los cinco años en mayo de 2026."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el pago doble fue un hecho único del 14 de mayo de 2021; los pagos irregulares se repitieron hasta el 20 de diciembre de 2021. Regla: la acción fiscal caduca si en cinco años desde el hecho no se dicta auto de apertura; el término corre desde el día del hecho instantáneo y, en los continuados o de tracto sucesivo, desde el último acto (art. 9 de la Ley 610 de 2000). Cálculo: el pago doble venció el 14/5/2026 y la serie vence el 20/12/2026. Conclusión: al 15 de octubre de 2026 solo caducó el pago doble.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Prescripción de la responsabilidad fiscal y reparación por la vía penal",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 9 incs. 2 y 3",
+      "art. 16"
+    ],
+    "texto_fuente": "La responsabilidad fiscal prescribirá en cinco (5) años, contados a partir del auto de apertura del proceso de responsabilidad fiscal, si dentro de dicho término no se ha dictado providencia en firme que la declare. El vencimiento de los términos establecidos en el presente artículo no impedirá que cuando se trate de hechos punibles, se pueda obtener la reparación de la totalidad del detrimento y demás perjuicios que haya sufrido la administración, a través de la acción civil en el proceso penal, que podrá ser ejercida por la contraloría correspondiente o por la respectiva entidad pública. [...] En cualquier estado de la indagación preliminar o del proceso de responsabilidad fiscal, procederá el archivo del expediente cuando se establezca que la acción fiscal no podía iniciarse o proseguirse por haber operado la caducidad o la prescripción",
+    "pregunta": "Una contraloría departamental abrió un proceso de responsabilidad fiscal mediante auto del 3 de septiembre de 2021. El auto de imputación se notificó el 10 de noviembre de 2022, y el fallo de primera instancia, con responsabilidad fiscal, se dictó el 12 de junio de 2026; el responsable apeló. Los términos no se suspendieron en ningún momento. Por los mismos hechos, la Fiscalía adelanta un proceso penal por peculado. El 6 de octubre de 2026, Ricardo, profesional del despacho de segunda instancia, empieza a proyectar la decisión. ¿Qué debe proponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Declarar la prescripción y archivar, sin que ello impida reparar el daño con la acción civil en el proceso penal.",
+        "explicacion": "Correcta. La responsabilidad fiscal prescribe en cinco años desde el auto de apertura si no hay providencia en firme que la declare (art. 9). Del 3 de septiembre de 2021 al 3 de septiembre de 2026 no hubo fallo en firme, porque estaba apelado, y procede el archivo (art. 16). Como hay un delito, el daño puede repararse con la acción civil en el proceso penal (art. 9, inc. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Decidir la apelación, porque el fallo de primera instancia dictado en junio de 2026 interrumpió la prescripción.",
+        "explicacion": "Incorrecta. La ley exige que dentro de los cinco años haya una providencia en firme que declare la responsabilidad. El fallo de primera instancia apelado no está en firme, y la ley no le da efecto interruptor."
+      },
+      {
+        "id": "C",
+        "texto": "Decidir la apelación, porque los cinco años de la prescripción se cuentan desde la notificación de la imputación.",
+        "explicacion": "Incorrecta. Los cinco años se cuentan desde el auto de apertura, no desde la imputación. Contados desde la imputación, llegarían a noviembre de 2027."
+      },
+      {
+        "id": "D",
+        "texto": "Declarar la prescripción y archivar, con lo cual ya no es posible recuperar por ninguna vía el detrimento.",
+        "explicacion": "Incorrecta. El vencimiento de estos términos no impide obtener la reparación total del detrimento mediante la acción civil en el proceso penal, cuando se trata de hechos punibles (art. 9, inc. 3)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el proceso se abrió el 3 de septiembre de 2021 y el 6 de octubre de 2026 el fallo de primera instancia sigue apelado; hay un proceso penal por los mismos hechos. Regla: la responsabilidad fiscal prescribe en cinco años desde el auto de apertura si no se ha dictado providencia en firme que la declare; operada la prescripción procede el archivo, y ello no impide reparar el daño con la acción civil en el proceso penal (arts. 9 y 16 de la Ley 610 de 2000). Conclusión: se declara la prescripción, sin perjuicio de la vía penal.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Grado de consulta del auto de archivo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 18"
+    ],
+    "texto_fuente": "Procederá la consulta cuando se dicte auto de archivo, cuando el fallo sea sin responsabilidad fiscal o cuando el fallo sea con responsabilidad fiscal y el responsabilizado hubiere estado representado por un apoderado de oficio. Para efectos de la consulta, el funcionario que haya proferido la decisión, deberá enviar el expediente dentro de los tres (3) días siguientes a su superior funcional o jerárquico, según la estructura y manual de funciones de cada órgano fiscalizador. Si transcurrido un mes de recibido el expediente por el superior no se hubiere proferido la respectiva providencia, quedará en firme el fallo o auto materia de la consulta, sin perjuicio de la responsabilidad disciplinaria del funcionario moroso.",
+    "pregunta": "El lunes 4 de mayo de 2026, el director de responsabilidad fiscal de una contraloría municipal dictó auto de archivo en un proceso, porque se probó que el daño había sido resarcido en su totalidad. El auto se notificó y nadie interpuso recursos. Simón, técnico de la dirección, debe dar el siguiente paso con el expediente y dejar anotado en el informe de control qué ocurre si después no hay pronunciamiento. ¿Qué debe hacer y anotar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Remitirlo al superior en los tres días siguientes y anotar que, si este no decide en un mes desde que lo recibe, el auto queda en firme.",
+        "explicacion": "Correcta. El auto de archivo se consulta aunque nadie lo recurra. El expediente se envía al superior dentro de los tres días siguientes y, si en un mes desde que lo recibe no decide, el auto queda en firme (art. 18)."
+      },
+      {
+        "id": "B",
+        "texto": "Remitirlo al superior en los tres días siguientes y anotar que, si este no decide en veinte días hábiles, el archivo se entiende revocado.",
+        "explicacion": "Incorrecta. Acierta en la remisión, pero el plazo del superior en la consulta es de un mes, y su silencio deja en firme el auto; no lo revoca."
+      },
+      {
+        "id": "C",
+        "texto": "Archivar el expediente y anotar que el auto quedó en firme cinco días hábiles después de notificado, porque nadie lo recurrió.",
+        "explicacion": "Incorrecta. Aplica la ejecutoria por falta de recursos, pero el auto de archivo tiene grado de consulta, que procede aunque nadie lo recurra."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirlo al superior solo si la entidad afectada pide revisar el archivo, y anotar que sin esa petición el auto queda en firme.",
+        "explicacion": "Incorrecta. La consulta no depende de que la pida la entidad afectada: procede cada vez que se dicta auto de archivo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se dictó auto de archivo y nadie lo recurrió. Regla: la consulta procede cuando se dicta auto de archivo, cuando el fallo es sin responsabilidad o cuando es con responsabilidad y el responsabilizado tuvo apoderado de oficio; el expediente se envía al superior dentro de los tres días siguientes y, si este no decide en un mes desde que lo recibe, la decisión queda en firme (art. 18 de la Ley 610 de 2000). Conclusión: remitir en tres días y anotar el efecto del mes sin decisión.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Responsabilidad fiscal",
+    "subtema": "Vigencia de las medidas cautelares después del fallo con responsabilidad fiscal",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Baja",
+    "norma": "Ley 610 de 2000",
+    "articulos": [
+      "art. 12 incs. 2 y 3",
+      "art. 58"
+    ],
+    "texto_fuente": "Las medidas cautelares decretadas se extenderán y tendrán vigencia hasta la culminación del proceso de cobro coactivo, en el evento de emitirse fallo con responsabilidad fiscal. [...] También se podrá solicitar el desembargo al órgano fiscalizador, en cualquier momento del proceso o cuando el acto que estableció la responsabilidad se encuentre demandado ante el tribunal competente, siempre que exista previa constitución de garantía real, bancaria o expedida por una compañía de seguros, suficiente para amparar el pago del presunto detrimento y aprobada por quien decretó la medida. [...] Una vez en firme el fallo con responsabilidad fiscal, prestará mérito ejecutivo contra los responsables fiscales y sus garantes, el cual se hará efectivo a través de la jurisdicción coactiva de las Contralorías.",
+    "pregunta": "En un proceso de responsabilidad fiscal se embargó un apartamento del investigado. El fallo con responsabilidad fiscal quedó en firme, el responsable no ha pagado y su abogado radica un memorial en el que pide levantar el embargo porque, según él, el proceso fiscal ya terminó. No ha ofrecido ninguna garantía. Natalia, técnica de la secretaría común de la contraloría, debe proyectar el oficio de respuesta para la firma del director. ¿Qué debe decir el oficio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el embargo se levantará, porque las medidas cautelares terminan con la decisión que pone fin al proceso fiscal.",
+        "explicacion": "Incorrecta. Cuando hay fallo con responsabilidad fiscal, las medidas cautelares no terminan con el proceso fiscal: se extienden hasta la culminación del cobro coactivo (art. 12)."
+      },
+      {
+        "id": "B",
+        "texto": "Que el embargo se levantará y que la contraloría decretará uno nuevo cuando inicie el cobro coactivo del fallo.",
+        "explicacion": "Incorrecta. No hay que levantar el embargo para volver a decretarlo: la medida ya decretada se extiende al cobro coactivo, que adelanta la misma contraloría (arts. 12 y 58)."
+      },
+      {
+        "id": "C",
+        "texto": "Que el embargo se levantará si el responsable acredita que demandó el fallo ante la jurisdicción administrativa.",
+        "explicacion": "Incorrecta. La demanda contra el fallo no basta para el desembargo: además debe constituirse antes una garantía real, bancaria o de seguros, suficiente y aprobada por quien decretó la medida (art. 12)."
+      },
+      {
+        "id": "D",
+        "texto": "Que el embargo se mantiene y durará hasta que concluya el cobro coactivo de la suma fijada en el fallo.",
+        "explicacion": "Correcta. Como se dictó fallo con responsabilidad fiscal, las medidas cautelares se extienden hasta la culminación del cobro coactivo, por medio del cual se hace efectivo el fallo en firme (arts. 12 y 58)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: hubo fallo con responsabilidad fiscal en firme, el responsable no ha pagado y no ofrece garantía. Regla: en ese evento las medidas cautelares se extienden y tienen vigencia hasta la culminación del cobro coactivo, y el desembargo cuando el fallo está demandado exige una garantía previa (art. 12 de la Ley 610 de 2000); el fallo en firme presta mérito ejecutivo y se cobra por jurisdicción coactiva (art. 58). Conclusión: el embargo se mantiene.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-JUR-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 3,
+    "eje": "juridica",
+    "modulo": "Gestión Jurídica",
+    "tema": "Conceptos jurídicos",
+    "subtema": "Alcance de los conceptos y norma especial que los hace obligatorios para los empleados",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1742 de 2020 y Ley 1437 de 2011",
+    "articulos": [
+      "art. 56 parágrafo (Decreto 1742 de 2020)",
+      "art. 28 (Ley 1437 de 2011, sustituido por el art. 1 de la Ley 1755 de 2015)"
+    ],
+    "texto_fuente": "Salvo disposición legal en contrario, los conceptos emitidos por las autoridades como respuestas a peticiones realizadas en ejercicio del derecho a formular consultas no serán de obligatorio cumplimiento o ejecución. [...] Los conceptos emitidos por la Subdirección de Normativa y Doctrina sobre la interpretación y aplicación de las leyes tributarias, de la legislación aduanera y en materia cambiaría, en ejercicio de la facultad establecida en el artículo 131 de la Ley 2010 de 2019, que sean publicados en la página WEB de la DIAN, constituyen interpretación oficial para los empleados públicos de la Entidad y por ende de su obligatoria observancia.",
+    "pregunta": "Andrea, profesional de una dirección seccional de la DIAN, proyecta la decisión de un recurso de un contribuyente. Este invoca un concepto de la Subdirección de Normativa y Doctrina, publicado en la página web de la DIAN, que absolvió una consulta general sobre la norma tributaria que se discute. Andrea no comparte la interpretación del concepto, y un compañero le dice que, según el CPACA, los conceptos no obligan. ¿Qué debe hacer Andrea?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Apartarse del concepto si motiva bien su interpretación, porque los conceptos que absuelven consultas no obligan.",
+        "explicacion": "Incorrecta. Es la regla general del art. 28 del CPACA, pero el mismo artículo la exceptúa cuando una disposición dispone lo contrario, como ocurre con los conceptos publicados de esa subdirección para los empleados de la DIAN."
+      },
+      {
+        "id": "B",
+        "texto": "Apartarse del concepto, porque solo obligan los conceptos unificados que firma el director de Gestión Jurídica.",
+        "explicacion": "Incorrecta. La obligatoriedad no se limita a los conceptos unificados: los conceptos de la Subdirección de Normativa y Doctrina publicados en la página web también son interpretación oficial para los empleados."
+      },
+      {
+        "id": "C",
+        "texto": "Aplicar el concepto solo si el contribuyente es quien formuló la consulta que le dio origen a ese concepto.",
+        "explicacion": "Incorrecta. La obligatoriedad para los empleados de la DIAN no depende de quién formuló la consulta, sino de que el concepto sea de esa subdirección y esté publicado en la página web."
+      },
+      {
+        "id": "D",
+        "texto": "Aplicar la interpretación del concepto, porque una norma especial la vuelve doctrina oficial que la obliga.",
+        "explicacion": "Correcta. El art. 28 del CPACA dice que los conceptos no obligan, salvo disposición legal en contrario. El parágrafo del art. 56 del Decreto 1742 de 2020 establece que los conceptos de la Subdirección de Normativa y Doctrina publicados en la web son interpretación oficial y de obligatoria observancia para los empleados de la DIAN."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el concepto es de la Subdirección de Normativa y Doctrina, está publicado en la página web de la DIAN y quien debe aplicarlo es una empleada de la DIAN. Regla: los conceptos que responden consultas no son obligatorios, salvo disposición legal en contrario (art. 28 del CPACA); el parágrafo del art. 56 del Decreto 1742 de 2020 hace de esos conceptos publicados interpretación oficial de obligatoria observancia para los empleados de la DIAN. Conclusión: Andrea debe aplicarlo.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1742_2020.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

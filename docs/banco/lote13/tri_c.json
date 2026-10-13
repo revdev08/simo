@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "TC-TRI-041",
+    "version": 3,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sistema de facturación",
+    "subtema": "Sujetos no obligados a facturar: personas naturales que venden bienes excluidos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.1.3.4 num. 7 (antes art. 8 num. 7 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "De conformidad con el artículo 1.6.1.4.3. del Decreto número 1625 de 2016, Único Reglamentario en Materia Tributaria, los siguientes sujetos no se encuentran obligados a expedir factura de venta y/o documento equivalente en sus operaciones: [...] 7. Las personas naturales que únicamente vendan bienes excluidos o presten servicios no gravados con el Impuesto sobre las Ventas (IVA), que hubieren obtenido ingresos brutos totales provenientes de estas actividades en el año anterior o en el año en curso, inferiores a tres mil quinientas (3.500) Unidades de Valor Tributario (UVT). Dentro de los ingresos brutos, no se incluyen los derivados de una relación laboral o legal y reglamentaria, pensiones, ni ganancia ocasional.",
+    "pregunta": "El martes 6 de octubre de 2026, una facilitadora de servicio al ciudadano de una dirección seccional de la DIAN atiende a Rosa, persona natural cuya única actividad económica es vender en una plaza de mercado frutas y hortalizas frescas, bienes excluidos del IVA. En 2025, Rosa obtuvo $160.000.000 por esas ventas, $48.000.000 de salario en un empleo de medio tiempo y una ganancia ocasional de $25.000.000. De enero a septiembre de 2026, sus ventas suman $130.000.000. La UVT fue de $49.799 en 2025 y es de $52.374 en 2026. Rosa pregunta si debe expedir factura por sus ventas. ¿Qué debe responderle la facilitadora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No, porque lo que recibe por sus ventas, tanto en 2025 como en lo corrido de 2026, está por debajo de 3.500 UVT.",
+        "explicacion": "Correcta. Para este grupo de no obligados solo cuentan los ingresos de la venta de bienes excluidos: $160.000.000 en 2025, por debajo de 3.500 × $49.799 = $174.296.500, que el art. 868 del ET aproxima a $174.297.000, y $130.000.000 en 2026, por debajo de 3.500 × $52.374 = $183.309.000. El salario y la ganancia ocasional no se suman."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, porque en 2025 sus ingresos brutos totales sumaron $233.000.000 y superaron las 3.500 UVT de ese año.",
+        "explicacion": "Incorrecta. Suma el salario y la ganancia ocasional, que la norma excluye expresamente de los ingresos brutos que se comparan con el tope de 3.500 UVT."
+      },
+      {
+        "id": "C",
+        "texto": "Sí, porque vende de forma habitual y es comerciante, y por esa calidad debe facturar sin importar sus ingresos.",
+        "explicacion": "Incorrecta. Los comerciantes deben facturar como regla general, pero el reglamento exceptúa a las personas naturales que solo venden bienes excluidos y cuyos ingresos por esa actividad son inferiores a 3.500 UVT."
+      },
+      {
+        "id": "D",
+        "texto": "No, porque quien solo vende bienes excluidos del IVA no factura, cualquiera que sea el valor de sus ventas.",
+        "explicacion": "Incorrecta. Vender solo bienes excluidos no basta: la excepción exige además que los ingresos de esa actividad sean inferiores a 3.500 UVT en el año anterior o en el año en curso."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: Rosa solo vende bienes excluidos y sus ventas fueron de $160.000.000 en 2025 y de $130.000.000 en lo corrido de 2026. Regla: el art. 1.5.1.1.3.4 num. 7 de la Resolución DIAN 227 de 2025 (antes art. 8 de la Res. 165 de 2023) libera de facturar a esas personas naturales si sus ingresos por esa actividad son inferiores a 3.500 UVT en el año anterior o en el año en curso, sin contar salarios, pensiones ni ganancias ocasionales. Cálculo, con la aproximación del art. 868 del ET: topes de $174.297.000 (2025) y $183.309.000 (2026). Conclusión: no está obligada.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-042",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sistema de facturación",
+    "subtema": "Sujetos obligados y no obligados a facturar",
+    "formato": "conocimiento_aplicado",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.1.3.3 num. 1 (antes art. 7 num. 1 de la Resolución 165 de 2023)",
+      "art. 1.5.1.1.3.4 nums. 1, 2, 8 y 9 (antes art. 8 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "se encuentran obligados a expedir factura de venta y/o documento equivalente por todas y cada una de las operaciones que realicen, los siguientes sujetos: 1. Los responsables del Impuesto sobre las Ventas (IVA). [...] los siguientes sujetos no se encuentran obligados a expedir factura de venta y/o documento equivalente en sus operaciones: 1. Los bancos, las corporaciones financieras y las compañías de financiamiento. 2. Las cooperativas de ahorro y crédito, los organismos cooperativos de grado superior, las instituciones auxiliares del cooperativismo, las cooperativas multiactivas e integrales, y los fondos de empleados, en relación con las operaciones financieras que realicen tales entidades. [...] 8. Los prestadores de servicios desde el exterior, sin residencia fiscal en Colombia por la prestación de los servicios electrónicos o digitales. 9. Las Juntas de Acción Comunal, siempre y cuando no requieran solicitar devolución y/o compensación de saldos a favor en el Impuesto sobre las Ventas (IVA).",
+    "pregunta": "En una capacitación para comerciantes, un gestor de servicio al ciudadano de la DIAN analiza cuatro situaciones. ¿En cuál de ellas el sujeto está obligado a expedir factura de venta o documento equivalente por la operación descrita?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una cooperativa multiactiva, por los intereses que cobra a sus asociados en los créditos que les otorga.",
+        "explicacion": "Incorrecta. Las cooperativas multiactivas no están obligadas a facturar sus operaciones financieras, como los créditos a sus asociados (art. 1.5.1.1.3.4 num. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Un banco, por las comisiones que cobra a sus clientes por el manejo de sus cuentas de ahorros.",
+        "explicacion": "Incorrecta. Los bancos, las corporaciones financieras y las compañías de financiamiento no están obligados a expedir factura en sus operaciones (art. 1.5.1.1.3.4 num. 1)."
+      },
+      {
+        "id": "C",
+        "texto": "Una junta de acción comunal responsable del IVA, por sus ventas, si planea pedir la devolución de un saldo a favor.",
+        "explicacion": "Correcta. Las juntas de acción comunal solo están exceptuadas de facturar si no requieren pedir devolución o compensación de saldos a favor de IVA (art. 1.5.1.1.3.4 num. 9). Si la va a pedir, pierde la excepción y, como responsable del IVA, debe facturar (art. 1.5.1.1.3.3 num. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "Una plataforma de video sin residencia fiscal en Colombia, por los servicios digitales que presta a usuarios del país.",
+        "explicacion": "Incorrecta. Los prestadores de servicios electrónicos o digitales desde el exterior, sin residencia fiscal en Colombia, no están obligados a facturar (art. 1.5.1.1.3.4 num. 8)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la junta de acción comunal pedirá la devolución de un saldo a favor de IVA. Regla: el art. 1.5.1.1.3.4 de la Resolución DIAN 227 de 2025 (antes art. 8 de la Res. 165 de 2023) exceptúa del deber de facturar a los bancos (num. 1), a las cooperativas en sus operaciones financieras (num. 2), a los prestadores de servicios digitales desde el exterior sin residencia fiscal (num. 8) y a las juntas de acción comunal solo si no requieren devolución o compensación de saldos a favor de IVA (num. 9). Conclusión: la junta debe facturar.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-043",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Factura electrónica de venta",
+    "subtema": "Factura rechazada en la validación previa",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.5.4.1 pars. 2 y 3 (antes art. 33 de la Resolución 165 de 2023)",
+      "art. 1.5.1.2.2.1 num. 6 (antes art. 11 num. 6 de la Resolución 165 de 2023)",
+      "art. 1.5.1.5.6.1 (antes art. 36 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "En el evento en que no se pueda llevar a cabo la validación previa de la factura electrónica de venta o el documento equivalente, por inconvenientes tecnológicos atribuibles a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), el obligado a facturar o generar el documento equivalente electrónico, está facultado para expedir al adquirente la factura electrónica de venta o el documento equivalente electrónico sin la validación previa. [...] En caso que la factura electrónica de venta, las notas débito, notas crédito, el documento equivalente electrónico, sus notas de ajuste e instrumentos electrónicos que se derivan de los mismos no cumplan con los requisitos y condiciones exigidos al momento de la validación, la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) remite un mensaje con el valor de \"Documento rechazado por la DIAN\", en el que se indican las causas por las cuales la validación ha sido fallida, por tanto, el citado documento electrónico no se encuentra validado, sin consumir el \"número consecutivo\" y/o el \"prefijo y número consecutivo\" del documento e instrumento electrónico. En este caso, se deberá realizar el procedimiento establecido en el inciso anterior, hasta que se realice la validación con el valor \"Documento validado por la DIAN\". Cuando la factura electrónica de venta o el documento equivalente electrónico no sean validados de conformidad con el procedimiento aquí establecido y se hubiere consumido el consecutivo de la numeración autorizada, cuando aplique, procede su inhabilitación, conservando la trazabilidad y, en consecuencia, se debe utilizar el siguiente consecutivo o aquel que corresponda. [...] La factura electrónica de venta se entenderá expedida, en todo caso, cuando sea validada y entregada al adquirente de manera física o electrónica según corresponda [...] la nota crédito será el mecanismo de anulación de la factura electrónica de venta",
+    "pregunta": "Un gestor de servicio al ciudadano atiende al contador de una distribuidora que factura electrónicamente. El contador generó la factura FV-1520 por una venta del día y la transmitió para su validación, pero la DIAN respondió con el mensaje \"Documento rechazado por la DIAN\", porque el NIT del comprador tenía un dígito errado. Todavía no le ha enviado nada al comprador. ¿Qué debe hacer la distribuidora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Corregir el NIT, entregar la FV-1520 al comprador y transmitirla a la DIAN dentro de las 48 horas siguientes.",
+        "explicacion": "Incorrecta. Entregar la factura sin validar y transmitirla después solo se permite cuando la validación no es posible por inconvenientes tecnológicos atribuibles a la DIAN (art. 1.5.1.5.4.1 par. 2). Un rechazo por errores en los datos no es una falla de la DIAN: la factura no está validada y no se entiende expedida (art. 1.5.1.2.2.1 num. 6)."
+      },
+      {
+        "id": "B",
+        "texto": "Corregir el NIT del comprador y volver a enviar a validación la factura, sin cambiarle el número FV-1520.",
+        "explicacion": "Correcta. El rechazo indica por qué falló la validación; el documento no queda validado y su número no se gasta, así que, corregido el NIT, se transmite otra vez hasta obtener el \"Documento validado por la DIAN\" (art. 1.5.1.5.4.1 par. 3 de la Resolución 227 de 2025)."
+      },
+      {
+        "id": "C",
+        "texto": "Anular la factura FV-1520 con una nota crédito electrónica y facturar la venta con el siguiente número del rango.",
+        "explicacion": "Incorrecta. La nota crédito es el mecanismo para anular una factura electrónica expedida (art. 1.5.1.5.6.1); la FV-1520 nunca quedó validada ni expedida, y su número sigue disponible."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir a la DIAN que inhabilite el número FV-1520 y expedir la factura de la venta con el siguiente consecutivo.",
+        "explicacion": "Incorrecta. La inhabilitación procede cuando la factura no se valida y el consecutivo sí se consumió (art. 1.5.1.5.4.1 par. 3, inc. 2); el rechazo de la DIAN no lo consumió, así que el número FV-1520 debe usarse en la nueva transmisión."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la DIAN rechazó la factura por un error en el NIT del comprador. Regla: según el art. 1.5.1.5.4.1 par. 3 de la Resolución DIAN 227 de 2025 (antes art. 33 de la Res. 165 de 2023), el documento rechazado no queda validado ni consume su número, y la transmisión se repite hasta obtener la validación; la factura solo se entiende expedida cuando se valida y se entrega (art. 1.5.1.2.2.1 num. 6), y el rechazo no es una falla tecnológica de la DIAN. Conclusión: corregir el NIT y transmitir de nuevo la FV-1520.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-044",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Factura electrónica de venta",
+    "subtema": "Inconvenientes tecnológicos del facturador: transmisión de las facturas de talonario",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.5.7.1 nums. 1.1.1, 1.1.2 y 1.3 (antes art. 37 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "1.1. Inconvenientes tecnológicos presentados por parte del facturador electrónico. En caso de inconvenientes tecnológicos que impidan el cumplimiento de la obligación formal de expedir factura electrónica de venta, hacer la entrega de las notas débito, notas crédito, notas de ajuste según corresponda y los instrumentos electrónicos que se derivan de estos documentos, el facturador electrónico deberá: 1.1.1. Por el tiempo en que dure el inconveniente, se deberá expedir factura de venta de talonario o de papel, la citada factura de venta se podrá generar para su expedición de forma manual o autógrafa o a través de sistemas informáticos electrónicos. [...] 1.1.2. Transcribir la información de cada una de las facturas de venta de talonario o de papel mediante \"factura tipo 3\", que corresponde al documento electrónico de transcripción, y que permite identificar que se trata de facturas expedidas en el periodo de inconveniente tecnológico por parte del facturador electrónico, y la información correspondiente al Código Único de Documento Electrónico (CUDE), una vez realizada la transcripción, estas deberán ser transmitidas a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), dentro de las 48 horas siguientes al momento en que se supera el inconveniente, a través del servicio informático electrónico de validación previa de factura electrónica de venta [...] Superado el inconveniente tecnológico, el facturador electrónico, deberá remitir las facturas electrónicas de venta, las notas débito, notas crédito e instrumentos electrónicos que se derivan de la factura electrónica de venta expedidas durante el término del inconveniente técnico o tecnológico, a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), dentro de las cuarenta y ocho (48) horas, contadas a partir del día siguiente en que se restablezca el servicio informático electrónico de validación previa de factura electrónica de venta",
+    "pregunta": "Una ferretería habilitada como facturadora electrónica, que usa un software propio, tuvo una falla en su servidor desde el martes 6 de octubre de 2026 a las 8:30 hasta el miércoles 7 de octubre a las 14:00, cuando el técnico la solucionó. El servicio de validación de la DIAN funcionó con normalidad. Mientras duró la falla, la ferretería expidió facturas de talonario diligenciadas a mano. Un inspector de la División de Fiscalización verifica si cumplió. ¿Qué debía hacer la ferretería con esas facturas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Transcribirlas como \"factura tipo 3\" y transmitirlas a la DIAN, a más tardar, el jueves 8 de octubre a las 8:30.",
+        "explicacion": "Incorrecta. Cuenta las 48 horas desde el comienzo de la falla; el plazo corre desde el momento en que se supera el inconveniente."
+      },
+      {
+        "id": "B",
+        "texto": "Transcribirlas como \"factura tipo 3\" y transmitirlas a la DIAN, a más tardar, el viernes 9 de octubre a las 24:00.",
+        "explicacion": "Incorrecta. Aplica el cómputo que la resolución prevé para las fallas del servicio de la DIAN (48 horas desde el día siguiente al restablecimiento). Cuando la falla es del facturador, las 48 horas se cuentan desde el momento en que se supera."
+      },
+      {
+        "id": "C",
+        "texto": "Conservarlas en el establecimiento para exhibirlas cuando la DIAN las pida, sin necesidad de transmitirlas.",
+        "explicacion": "Incorrecta. Las facturas de talonario expedidas durante la falla deben transcribirse como \"factura tipo 3\" y transmitirse a la DIAN (art. 1.5.1.5.7.1 num. 1.1.2); conservarlas no basta."
+      },
+      {
+        "id": "D",
+        "texto": "Transcribirlas como \"factura tipo 3\" y transmitirlas a la DIAN, a más tardar, el viernes 9 de octubre a las 14:00.",
+        "explicacion": "Correcta. La falla fue del facturador: debía expedir factura de talonario, transcribirla como \"factura tipo 3\" y transmitirla dentro de las 48 horas siguientes al momento en que superó el inconveniente, es decir, del miércoles 7 de octubre a las 14:00 al viernes 9 a las 14:00."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la falla fue del software de la ferretería, no de la DIAN, y se superó el miércoles 7 de octubre de 2026 a las 14:00. Regla: el art. 1.5.1.5.7.1 num. 1.1 de la Resolución DIAN 227 de 2025 (antes art. 37 de la Res. 165 de 2023) ordena expedir factura de talonario mientras dure la falla, transcribirla como \"factura tipo 3\" y transmitirla dentro de las 48 horas siguientes al momento en que se supera el inconveniente. Cálculo: miércoles a las 14:00 + 48 horas = viernes 9 de octubre a las 14:00.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-045",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Factura electrónica de venta",
+    "subtema": "Facturas expedidas sin validación previa por fallas atribuibles a la DIAN",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989) y Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 616-1 incs. 5, 6 y 7 del Estatuto Tributario (modificado por el art. 13 de la Ley 2155 de 2021)",
+      "art. 1.5.1.5.4.1 par. 2 de la Resolución DIAN 227 de 2025 (antes art. 33 par. 2 de la Resolución 165 de 2023)",
+      "art. 1.5.1.5.7.1 num. 1.3 de la Resolución DIAN 227 de 2025 (antes art. 37 num. 1.3 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "Todas las facturas electrónicas de venta para su reconocimiento tributario deben ser validadas previo a su expedición, por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). La factura electrónica de venta solo se entenderá expedida cuando sea validada y entregada al adquirente, cumpliendo además con las condiciones, los términos y los mecanismos técnicos y tecnológicos establecidos por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). Sin perjuicio de lo anterior, cuando no pueda llevarse a cabo la validación previa de la factura electrónica de venta, por razones tecnológicas atribuibles a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), el obligado a facturar está facultado para expedir y entregar al adquirente la factura electrónica de venta sin validación previa. En estos casos, la factura se entenderá expedida con la entrega al adquirente y deberá ser enviada a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), para cumplir con la transmisión dentro de las cuarenta y ocho (48) horas siguientes, contadas a partir del momento en que se solucionen los inconvenientes tecnológicos. [...] La factura electrónica de venta o el documento equivalente expedido sin validación previa, por razones tecnológicas atribuibles a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), serán válidos como soporte de la venta del bien y/o prestación del servicio, así como de costos, gastos, deducciones, descuentos, exenciones, activos, pasivos, impuestos descontables tanto para el facturador electrónico o sujeto obligado a su expedición, como para el adquirente, siempre que se identifique el adquiriente. [...] el sistema generará un aviso electrónico, informando el inconveniente de acuerdo con lo indicado en el \"Anexo Técnico de Factura Electrónica de Venta\" y en el \"Anexo de documento equivalente electrónico\" y deberá continuar facturando electrónicamente, expidiendo la misma sin el documento electrónico de validación.",
+    "pregunta": "Un analista de la División de Fiscalización revisa el IVA descontable que una SAS tomó en su declaración del bimestre septiembre-octubre de 2026. Dos facturas electrónicas de un proveedor, pagadas de contado, se expidieron el 2 de septiembre, mientras el servicio de validación previa de la DIAN estaba caído, según el aviso que generó el propio servicio. Por eso, el proveedor se las entregó a la SAS sin el documento de validación y las transmitió a la DIAN al día siguiente de restablecido el servicio. Las facturas identifican a la SAS con su razón social y su NIT, y discriminan el IVA. ¿Qué debe hacer el analista con ese IVA descontable?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptarlo, porque la falla fue del servicio de la DIAN y en esas facturas consta quién es el comprador.",
+        "explicacion": "Correcta. Si la validación previa no es posible por razones atribuibles a la DIAN, el facturador puede expedir y entregar la factura sin validación, y esta se entiende expedida con la entrega (art. 616-1 inc. 7 ET). Esa factura soporta los impuestos descontables del adquirente siempre que lo identifique (art. 1.5.1.5.4.1 par. 2 de la Resolución 227 de 2025), y aquí la SAS aparece con su razón social y su NIT."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptarlo, porque al haberse pagado de contado, esas facturas no requerían la validación previa de la DIAN.",
+        "explicacion": "Incorrecta. La forma de pago no exime de la validación previa: toda factura electrónica debe validarse antes de su expedición (art. 616-1 inc. 5 ET). Aquí la validación faltó por la falla de la DIAN, y es esa excepción, junto con la identificación de la SAS, la que permite aceptar el IVA."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazarlo, porque mientras duró la falla el proveedor debía expedir facturas de talonario o de papel.",
+        "explicacion": "Incorrecta. La factura de talonario es para las fallas del propio facturador. Ante fallas de la DIAN, el facturador debe seguir facturando electrónicamente, sin el documento de validación (art. 1.5.1.5.7.1 num. 1.3 de la Resolución 227 de 2025)."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazarlo, porque una factura electrónica que no tiene la validación previa de la DIAN no se entiende expedida.",
+        "explicacion": "Incorrecta. Esa es la regla general (art. 616-1 inc. 6 ET), pero la ley prevé la excepción de las fallas atribuibles a la DIAN: en ese caso la factura se entiende expedida con la entrega al adquirente."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: las facturas se expidieron sin validación por una falla del servicio de la DIAN, y en ellas la SAS está identificada con razón social y NIT. Regla: el art. 616-1 inc. 7 del ET permite expedir y entregar la factura sin validación previa cuando la falla es atribuible a la DIAN, y la tiene por expedida con la entrega; el art. 1.5.1.5.4.1 par. 2 de la Resolución DIAN 227 de 2025 (antes art. 33 de la Res. 165 de 2023) la reconoce como soporte de impuestos descontables del adquirente identificado. El pago de contado no exime de validar. Conclusión: aceptar el IVA descontable.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-046",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Sanción por expedir facturas sin requisitos y sanción mínima",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 652 inc. 1 (modificado por el art. 44 de la Ley 223 de 1995; cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 617 lit. h (modificado por el art. 40 de la Ley 223 de 1995)",
+      "art. 639 inc. 1 (cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 657 num. 1 (modificado por el art. 290 de la Ley 1819 de 2016)",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "Quienes estando obligados a expedir facturas, lo hagan sin el cumplimiento de los requisitos establecidos en los literales a), h), e i) del artículo 617 del Estatuto Tributario, incurrirán en una sanción del uno por ciento (1%) del valor de las operaciones facturadas sin el cumplimiento de los requisitos legales, sin exceder de 950 UVT. [...] h. El nombre o razón social y el NIT del impresor de la factura. [...] El valor mínimo de cualquier sanción, incluidas las sanciones reducidas, ya sea que deba liquidarla la persona o entidad sometida a ella, o la Administración de Impuestos, será equivalente a la suma de 10 uvt. [...] 1. Por un término de tres (3) días, cuando no se expida factura o documento equivalente estando obligado a ello, o se expida sin los requisitos establecidos en los literales b), c), d), e), f), o g) del artículo 617 del Estatuto Tributario, o se reincida en la expedición sin el cumplimiento de los requisitos señalados en los literales a), h), o i) del citado artículo. [...] Cuando las normas tributarias expresadas en UVT se conviertan en valores absolutos, se empleará el procedimiento de aproximaciones que se señala a continúación, a fin de obtener cifras enteras y de fácil operación: [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
+    "pregunta": "Un gestor de la División de Fiscalización revisa las ventas de agosto de 2026 de una SAS facturadora electrónica, que ese mes facturó $85.000.000 en total. Durante una falla de su software, la SAS expidió seis facturas de talonario, impresas por una litografía, por $9.600.000 en total; en ellas no aparecen el nombre ni el NIT de la litografía. Las demás facturas del mes cumplen todos los requisitos, y la SAS no había sido sancionada antes por hechos similares. La UVT de 2026 es de $52.374. ¿Qué sanción corresponde por esas seis facturas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Multa de $96.000",
+        "explicacion": "Incorrecta. Es el 1% de las operaciones facturadas sin el requisito ($9.600.000 × 1%), pero olvida la sanción mínima de 10 UVT, que se aplica a cualquier sanción."
+      },
+      {
+        "id": "B",
+        "texto": "Multa de $850.000",
+        "explicacion": "Incorrecta. Calcula el 1% sobre todo lo facturado en el mes; la base son solo las operaciones facturadas sin el requisito."
+      },
+      {
+        "id": "C",
+        "texto": "Multa de $524.000",
+        "explicacion": "Correcta. El 1% de $9.600.000 da $96.000, que es inferior a la sanción mínima de 10 UVT (10 × $52.374 = $523.740, que el art. 868 aproxima a $524.000); por eso la multa sube a $524.000."
+      },
+      {
+        "id": "D",
+        "texto": "Clausura del establecimiento por tres días",
+        "explicacion": "Incorrecta. La omisión de los datos del impresor (literal h del art. 617) se sanciona con multa; la clausura procede si faltan los requisitos de los literales b) a g) o si se reincide en los literales a), h) o i)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: a seis facturas por $9.600.000 les falta el nombre y el NIT del impresor, requisito del literal h del art. 617 del ET. Regla: el art. 652 sanciona con el 1% de las operaciones facturadas sin los requisitos de los literales a), h) o i), sin exceder 950 UVT, y el art. 639 fija un mínimo de 10 UVT para cualquier sanción. Cálculo: 1% × $9.600.000 = $96.000, menor que 10 UVT (10 × $52.374 = $523.740, que el art. 868 aproxima a $524.000). Conclusión: multa de $524.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Reincidencia en la expedición de facturas sin requisitos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 652 inc. 1 (modificado por el art. 44 de la Ley 223 de 1995; cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 617 lit. i (modificado por el art. 40 de la Ley 223 de 1995)",
+      "art. 657 num. 1 y par. 6 (modificado por el art. 290 de la Ley 1819 de 2016; par. 6 modificado por el art. 111 de la Ley 2010 de 2019)",
+      "art. 640 par. 2 (modificado por el art. 282 de la Ley 1819 de 2016)",
+      "art. 616-3 (adicionado por el art. 39 de la Ley 223 de 1995)"
+    ],
+    "texto_fuente": "Quienes estando obligados a expedir facturas, lo hagan sin el cumplimiento de los requisitos establecidos en los literales a), h), e i) del artículo 617 del Estatuto Tributario, incurrirán en una sanción del uno por ciento (1%) del valor de las operaciones facturadas sin el cumplimiento de los requisitos legales, sin exceder de 950 UVT. Cuando hay reincidencia se dará aplicación a lo previsto en el artículo 657 del Estatuto Tributario. [...] i. Indicar la calidad de retenedor del impuesto sobre las ventas. [...] 1. Por un término de tres (3) días, cuando no se expida factura o documento equivalente estando obligado a ello, o se expida sin los requisitos establecidos en los literales b), c), d), e), f), o g) del artículo 617 del Estatuto Tributario, o se reincida en la expedición sin el cumplimiento de los requisitos señalados en los literales a), h), o i) del citado artículo. [...] En todos los casos, si el contribuyente objeto de esta sanción se acoge y paga la siguiente multa, la Administración Tributaria se abstendrá de decretar la clausura del establecimiento, así: Para efectos de lo dispuesto en el numeral 1, una sanción pecuniaria equivalente al cinco por ciento (5%) de los ingresos operacionales obtenidos en el mes anterior a la fecha en que incurrió en el hecho sancionable. [...] Habrá reincidencia siempre que el sancionado, por acto administrativo en firme, cometiere una nueva infracción del mismo tipo dentro de los dos (2) años siguientes al día en el que cobre firmeza el acto por medio del cual se impuso la sanción, con excepción de la señalada en el artículo 652 de este Estatuto y aquellas que deban ser liquidadas por el contribuyente, responsable, agente retenedor o declarante. El monto de la sanción se aumentará en un ciento por ciento (100%) si la persona o entidad es reincidente. [...] Las empresas que elaboren facturas sin el cumplimiento de los requisitos previstos en las normas o cuando se presten para expedir facturas con numeración repetida para un mismo contribuyente o responsable, serán sancionadas con la clausura por un día del establecimiento o sitio donde ejerzan la actividad. Una vez aplicada la sanción de clausura, en caso de incurrir nuevamente dentro de los 2 años siguientes en cualquiera de los hechos sancionables con esta medida, la sanción a aplicar será la clausura por diez (10) días calendario y una multa equivalente a la establecida en la forma prevista en el artículo 655.",
+    "pregunta": "En marzo de 2025 quedó en firme la resolución que impuso a una comercializadora, agente de retención del IVA, una multa del 1% de lo facturado sin requisitos, porque sus facturas no indicaban esa calidad. En una visita de agosto de 2026, un inspector de la División de Fiscalización encuentra que las facturas de julio de 2026 vuelven a omitir esa indicación; los demás requisitos se cumplen. ¿Qué sanción debe proponerse por la nueva infracción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Multa del 2% de lo facturado sin el requisito, porque la reincidencia aumenta la sanción en un 100%.",
+        "explicacion": "Incorrecta. El aumento del 100% por reincidencia del art. 640 no se aplica a la sanción del art. 652, que su par. 2 exceptúa; para esta falta, la reincidencia lleva a la clausura del art. 657."
+      },
+      {
+        "id": "B",
+        "texto": "Clausura del establecimiento por tres días, que la comercializadora puede evitar si se acoge a la multa sustitutiva y la paga.",
+        "explicacion": "Correcta. El art. 652 remite al 657 cuando hay reincidencia, y el num. 1 del 657 prevé la clausura por tres días a quien reincide en facturar sin los requisitos de los literales a), h) o i) del art. 617; el par. 6 permite evitarla pagando el 5% de los ingresos operacionales del mes anterior al hecho."
+      },
+      {
+        "id": "C",
+        "texto": "Una nueva multa del 1% de lo facturado sin el requisito, con el tope de 950 UVT, como en la primera ocasión.",
+        "explicacion": "Incorrecta. Repite la multa inicial y desconoce que la reincidencia en estos requisitos cambia la sanción a la clausura del establecimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Clausura del establecimiento por diez días calendario y multa, por ser la segunda infracción en dos años.",
+        "explicacion": "Incorrecta. La clausura por diez días calendario y multa es la que el art. 616-3 prevé para las empresas que elaboran facturas y reinciden, no para quien las expide."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la comercializadora ya fue sancionada en firme por omitir en sus facturas la calidad de agente de retención del IVA (literal i del art. 617) y vuelve a omitirla. Regla: el art. 652 del ET remite al art. 657 en caso de reincidencia; el num. 1 del 657 fija la clausura por tres días para quien reincide en los literales a), h) o i), y su par. 6 permite evitarla con una multa. El aumento del 100% del art. 640 par. 2 exceptúa la sanción del art. 652. Conclusión: clausura de tres días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Clausura por no facturar: multa sustitutiva y gradualidad",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 652-1 (modificado por el art. 56 de la Ley 6 de 1992)",
+      "art. 657 num. 1 y par. 6 (modificado por el art. 290 de la Ley 1819 de 2016; par. 6 modificado por el art. 111 de la Ley 2010 de 2019)",
+      "art. 640 par. 3 (modificado por el art. 282 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Quienes estando obligados a expedir facturas no lo hagan, podrán ser objeto de sanción de clausura o cierre del establecimiento de comercio, oficina o consultorio, o sitio donde se ejerza la actividad, profesión u oficio de conformidad con lo dispuesto en los artículos 657 y 658 del Estatuto Tributario. [...] 1. Por un término de tres (3) días, cuando no se expida factura o documento equivalente estando obligado a ello, [...] En todos los casos, si el contribuyente objeto de esta sanción se acoge y paga la siguiente multa, la Administración Tributaria se abstendrá de decretar la clausura del establecimiento, así: Para efectos de lo dispuesto en el numeral 1, una sanción pecuniaria equivalente al cinco por ciento (5%) de los ingresos operacionales obtenidos en el mes anterior a la fecha en que incurrió en el hecho sancionable. Para efectos de lo dispuesto en el numeral 2, una sanción pecuniaria equivalente al diez (10%) de los ingresos operacionales obtenidos en el mes anterior a la fecha en que incurrió en el hecho sancionable. [...] Para las sanciones previstas en los artículos 640-1, numerales 1, 2, y 3 del inciso tercero del artículo 648, 652-1, numerales 1, 2 y 3 del 657, 658-1, 658-2, numeral 4 del 658-3, 669, inciso 6o del 670, 671, 672 y 673 no aplicará la proporcionalidad ni la gradualidad contempladas en el presente artículo.",
+    "pregunta": "El lunes 14 de septiembre de 2026, dos inspectores de la DIAN constataron que un restaurante no expidió factura por una venta, y la DIAN le propuso la clausura del establecimiento. Al responder el pliego de cargos, el dueño pide que la sanción se reduzca al 50%, porque en los últimos cuatro años no ha cometido esa falta, y pregunta cuánto debe pagar para evitar el cierre. Los ingresos operacionales del restaurante fueron de $240.000.000 en agosto de 2026 y de $95.000.000 del 1 al 13 de septiembre. ¿Qué debe responder la gestora de fiscalización que proyecta la decisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que procede la reducción y que puede evitar el cierre pagando $6.000.000.",
+        "explicacion": "Incorrecta. Aplica la gradualidad del art. 640 (5% × $240.000.000 × 50%), pero su par. 3 la excluye para la clausura por no facturar."
+      },
+      {
+        "id": "B",
+        "texto": "Que no procede la reducción y que puede evitar el cierre pagando $24.000.000.",
+        "explicacion": "Incorrecta. Usa el 10%, que corresponde a la clausura del num. 2 del art. 657 (doble facturación, doble contabilidad o supresión de ingresos), no a la falta de factura."
+      },
+      {
+        "id": "C",
+        "texto": "Que no procede la reducción y que puede evitar el cierre pagando $4.750.000.",
+        "explicacion": "Incorrecta. Toma los ingresos de septiembre, el mes del hecho; la ley ordena tomar los del mes anterior a la fecha en que se incurrió en la falta."
+      },
+      {
+        "id": "D",
+        "texto": "Que no procede la reducción y que puede evitar el cierre pagando $12.000.000.",
+        "explicacion": "Correcta. La gradualidad no se aplica a la clausura del num. 1 del art. 657 (art. 640 par. 3). Para evitar el cierre debe pagar el 5% de los ingresos operacionales del mes anterior al hecho: 5% × $240.000.000 = $12.000.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la falta (no expedir factura) ocurrió el 14 de septiembre de 2026 y los ingresos operacionales de agosto fueron de $240.000.000. Regla: el art. 657 num. 1 del ET sanciona con clausura de tres días, que se evita pagando el 5% de los ingresos operacionales del mes anterior al hecho (par. 6); el art. 640 par. 3 excluye la gradualidad para esta sanción. Cálculo: 5% × $240.000.000 = $12.000.000. Conclusión: se niega la reducción y la multa es de $12.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Multa que evita la clausura del establecimiento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 657 num. 2, par. 5 y par. 6 (modificado por el art. 290 de la Ley 1819 de 2016; par. 6 modificado por el art. 111 de la Ley 2010 de 2019)"
+    ],
+    "texto_fuente": "2. Por un término de tres (3) días, cuando se establezca que el contribuyente emplea sistemas electrónicos de los que se evidencie la supresión de ingresos y/o de ventas, lleva doble contabilidad, doble facturación o que una factura o documento equivalente, expedido por el contribuyente, no se encuentra registrado en la contabilidad ni en las declaraciones tributarias. [...] Se entiende por doble facturación la expedición de dos facturas por un mismo hecho económico, aun cuando alguna de estas no cumpla con los requisitos formales del artículo 617, y sin que importe su denominación ni el sistema empleado para su emisión. [...] En todos los casos, si el contribuyente objeto de esta sanción se acoge y paga la siguiente multa, la Administración Tributaria se abstendrá de decretar la clausura del establecimiento, así: Para efectos de lo dispuesto en el numeral 1, una sanción pecuniaria equivalente al cinco por ciento (5%) de los ingresos operacionales obtenidos en el mes anterior a la fecha en que incurrió en el hecho sancionable. Para efectos de lo dispuesto en el numeral 2, una sanción pecuniaria equivalente al diez (10%) de los ingresos operacionales obtenidos en el mes anterior a la fecha en que incurrió en el hecho sancionable.",
+    "pregunta": "El martes 6 de octubre de 2026, un inspector de la División de Fiscalización establece que el martes 18 de agosto de 2026 una tienda de electrodomésticos expidió, por la venta de un mismo televisor, una factura electrónica y un documento en papel titulado \"cuenta de cobro\" que no cumple los requisitos de una factura. Los ingresos operacionales de la tienda en 2026 fueron: julio, $300.000.000; agosto, $340.000.000; septiembre, $280.000.000. La tienda quiere evitar el cierre del establecimiento pagando la multa que permite la ley. ¿Cuánto debe pagar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$30.000.000",
+        "explicacion": "Correcta. Expedir dos documentos por un mismo hecho económico es doble facturación aunque uno no cumpla los requisitos del art. 617 ni se llame factura (par. 5). La multa que evita la clausura es el 10% de los ingresos operacionales del mes anterior al hecho (julio): 10% × $300.000.000 = $30.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "$34.000.000",
+        "explicacion": "Incorrecta. Toma los ingresos de agosto, el mes en que ocurrió el hecho, y no los del mes anterior."
+      },
+      {
+        "id": "C",
+        "texto": "$28.000.000",
+        "explicacion": "Incorrecta. Toma los ingresos de septiembre, el mes anterior a la visita del inspector; la ley se refiere al mes anterior a la fecha del hecho sancionable."
+      },
+      {
+        "id": "D",
+        "texto": "$15.000.000",
+        "explicacion": "Incorrecta. Aplica el 5%, propio de la clausura por no facturar o facturar sin requisitos (num. 1). La doble facturación está en el num. 2, cuya multa es del 10%."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el 18 de agosto de 2026 la tienda expidió dos documentos por la misma venta. Regla: el art. 657 del ET sanciona la doble facturación con clausura de tres días (num. 2), y su par. 5 la configura aunque uno de los documentos no cumpla los requisitos ni se llame factura; el par. 6 permite evitar el cierre pagando el 10% de los ingresos operacionales del mes anterior al hecho. Cálculo: 10% × $300.000.000 (julio) = $30.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-050",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Violación de los sellos durante la clausura en casa de habitación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 657 pars. 1 y 3 (modificado por el art. 290 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Cuando el lugar clausurado fuere adicionalmente casa de habitación, se permitirá el acceso de las personas que lo habitan, pero en él no podrán efectuarse operaciones mercantiles ni el desarrollo de la actividad, profesión u oficio por el tiempo que dure la sanción y, en todo caso, se impondrán los sellos correspondientes. [...] Sin perjuicio de las sanciones de tipo policivo en que incurra el contribuyente, responsable o agente retenedor cuando rompa los sellos oficiales o por cualquier medio abra o utilice el sitio o sede clausurado durante el término de la clausura, se incrementará el término de clausura al doble del inicialmente impuesto. Esta ampliación de la sanción de clausura se impondrá mediante resolución, previo traslado de cargos por el término de diez (10) días para responder.",
+    "pregunta": "Mediante resolución en firme, la DIAN impuso a una tienda de barrio la clausura por tres días por no expedir factura. La tienda funciona en la casa donde vive su dueña con su familia, y la dueña no se acogió a la multa que le permitía evitar el cierre. En el segundo día de la clausura, un inspector de fiscalización comprobó que la dueña retiró los sellos y atendió clientes. ¿Qué procede frente a la clausura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Duplicarla de inmediato, a seis días en total, con base en el acta que levante el inspector en la visita.",
+        "explicacion": "Incorrecta. El término sí se duplica, pero la ampliación no se impone con el acta de la visita: la ley exige una resolución, previo traslado de cargos por diez días para responder (art. 657 par. 3)."
+      },
+      {
+        "id": "B",
+        "texto": "Abstenerse de ampliarla, porque en una casa de habitación los moradores conservan el acceso al inmueble.",
+        "explicacion": "Incorrecta. Los moradores pueden entrar a la vivienda, pero no hacer operaciones mercantiles mientras dure la sanción (art. 657 par. 1); retirar los sellos y atender clientes da lugar a la ampliación."
+      },
+      {
+        "id": "C",
+        "texto": "Duplicarla, a seis días en total, con una resolución que se expida tras darle diez días para responder cargos.",
+        "explicacion": "Correcta. Si se rompen los sellos o se usa el sitio clausurado, el término se incrementa al doble del inicialmente impuesto: pasa de tres a seis días en total. Esa ampliación se impone mediante resolución, previo traslado de cargos por diez días para responder (art. 657 par. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener los tres días, ya en firme, y dar aviso a la policía para que imponga la sanción por romper los sellos.",
+        "explicacion": "Incorrecta. Las sanciones de policía proceden \"sin perjuicio\" de la consecuencia tributaria: la ley ordena además duplicar el término de la clausura, aunque la resolución inicial esté en firme (art. 657 par. 3)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: durante la clausura de tres días, la dueña retiró los sellos y atendió clientes. Regla: el art. 657 par. 3 del ET, sin perjuicio de las sanciones de policía, incrementa el término de clausura al doble del inicialmente impuesto cuando se rompen los sellos o se usa el sitio clausurado, y exige imponer esa ampliación mediante resolución, previo traslado de cargos por diez días; el par. 1 permite a los moradores de la casa entrar, pero no ejercer la actividad. Conclusión: la clausura queda en seis días en total, por resolución.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Sanciones",
+    "subtema": "Clausura por omisión o mora en las declaraciones de IVA y de retención",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 657 num. 4 (modificado por el art. 290 de la Ley 1819 de 2016; texto sustituido según el art. 20 de la Ley 2010 de 2019)"
+    ],
+    "texto_fuente": "Por un término de tres (3) días, cuando el agente retenedor o el responsable [...] del impuesto sobre las ventas o del impuesto nacional al consumo, o el responsable del impuesto nacional a la gasolina y al ACPM, o del impuesto nacional al carbono, se encuentre en omisión de la presentación de la declaración o en mora de la cancelación del saldo a pagar, superior a tres (3) meses contados a partir de las fechas de vencimiento para la presentación y pago establecidas por el Gobierno nacional. No habrá lugar a la clausura del establecimiento para aquellos contribuyentes cuya mora se deba a la existencia de saldos a favor pendientes de compensar, siempre que se hubiere presentado la solicitud de compensación en los términos establecidos por la ley; tampoco será aplicable la sanción de clausura, siempre que el contribuyente declare y pague.",
+    "pregunta": "El jueves 20 de agosto de 2026, una analista de la División de Fiscalización estudia cuatro casos para decidir en cuál proponer la clausura del establecimiento. Panadería: no ha presentado la declaración de IVA que vencía el 8 de julio de 2026. Ferretería: no ha pagado el saldo de su declaración de IVA que vencía el 12 de mayo de 2026, porque espera cubrirlo con saldos a favor cuya compensación pidió en los términos de ley. Papelería: no presentó la declaración de IVA que vencía el 17 de marzo de 2026, pero al responder el pliego de cargos la presentó y pagó el total. Droguería: como agente de retención, no ha presentado la declaración de retención en la fuente que vencía el 12 de mayo de 2026. ¿En cuál de los casos procede la clausura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En el de la panadería.",
+        "explicacion": "Incorrecta. Su omisión lleva poco más de un mes (desde el 8 de julio); la clausura exige que supere tres meses contados desde el vencimiento."
+      },
+      {
+        "id": "B",
+        "texto": "En el de la ferretería.",
+        "explicacion": "Incorrecta. Aunque la mora supera tres meses, la ley excluye a quien está en mora por saldos a favor pendientes de compensar, si pidió la compensación en los términos legales."
+      },
+      {
+        "id": "C",
+        "texto": "En el de la papelería.",
+        "explicacion": "Incorrecta. La omisión superó tres meses, pero la clausura no se aplica cuando el contribuyente declara y paga."
+      },
+      {
+        "id": "D",
+        "texto": "En el de la droguería.",
+        "explicacion": "Correcta. Es agente de retención y lleva más de tres meses sin presentar la declaración: el plazo venció el 12 de mayo y los tres meses se cumplieron el 12 de agosto de 2026; no está en ninguna de las excepciones."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: al 20 de agosto de 2026, la droguería lleva más de tres meses sin presentar la declaración de retención que vencía el 12 de mayo. Regla: el art. 657 num. 4 del ET prevé la clausura por tres días cuando el agente retenedor o el responsable del IVA está en omisión o mora superior a tres meses desde el vencimiento, salvo que la mora se deba a saldos a favor con compensación pedida o que declare y pague. Conclusión: procede solo en la droguería.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-052",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procedencia de costos, deducciones e impuestos descontables",
+    "subtema": "Factura electrónica a crédito: confirmación del recibido",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989) y Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 616-1 inc. 10 del Estatuto Tributario (modificado por el art. 13 de la Ley 2155 de 2021)",
+      "art. 1.5.1.4.3 inc. 2 de la Resolución DIAN 227 de 2025 (antes art. 27 inc. 2 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "Para efectos del control, cuando la venta de un bien y/o prestación del servicio se realice a través de una factura electrónica de venta y la citada operación sea a crédito o de la misma se otorgue un plazo para el pago, el adquirente deberá confirmar el recibido de la factura electrónica de venta y de los bienes o servicios adquiridos mediante mensaje electrónico remitido al emisor para la expedición de la misma, atendiendo a los plazos establecidos en las disposiciones que regulan la materia, así como las condiciones, mecanismos, requisitos técnicos y tecnológicos establecidos por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN). En aquellos casos en que el adquirente remita al emisor el mensaje electrónico de confirmación de recibido de la factura electrónica de venta y el mensaje electrónico del recibido de los bienes o servicios adquiridos, habrá lugar a que dicha factura electrónica de venta se constituya en soporte de costos, deducciones e impuestos descontables [...] para que haya lugar a que dicha factura electrónica de venta se constituya en soporte de costos, deducciones e impuestos descontables.",
+    "pregunta": "Una analista de la División de Fiscalización revisa los costos de 2026 de una SAS. La SAS recibió dos facturas electrónicas validadas de un mismo proveedor: una por insumos que pagó de contado y otra por insumos que pagará a 60 días. Recibió la mercancía de ambas compras, pero no le ha enviado al proveedor ningún mensaje electrónico sobre ninguna de las dos facturas. ¿Cuáles de esas facturas pueden soportar costos e impuestos descontables?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos, porque esos mensajes se exigen solo para que la factura pueda circular como título valor.",
+        "explicacion": "Incorrecta. La ley exige esos mensajes también para efectos de control: si la operación es a crédito o con plazo, solo con ellos la factura se constituye en soporte de costos, deducciones e impuestos descontables."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la de contado; en la compra a plazo, la SAS debía confirmar al emisor que recibió la factura y los bienes.",
+        "explicacion": "Correcta. La confirmación del recibido de la factura y de los bienes se exige cuando la venta es a crédito o con plazo para el pago. La factura de contado no la requiere; la de 60 días no sirve de soporte mientras la SAS no envíe ambos mensajes al emisor."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna, porque cualquier factura electrónica exige que el comprador confirme su recibo para servir de soporte.",
+        "explicacion": "Incorrecta. El deber de confirmar el recibido se limita a las operaciones a crédito o con plazo para el pago; no se exige en las de contado."
+      },
+      {
+        "id": "D",
+        "texto": "Las dos, si la SAS paga la factura a 60 días antes de que termine el año gravable de 2026.",
+        "explicacion": "Incorrecta. El pago no reemplaza los mensajes de confirmación: la norma condiciona el soporte al envío del recibido de la factura y de los bienes."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: una compra fue de contado y la otra con pago a 60 días, y la SAS no envió mensajes de confirmación. Regla: el art. 616-1 del ET y el art. 1.5.1.4.3 de la Resolución DIAN 227 de 2025 (antes art. 27 de la Res. 165 de 2023) exigen que, en las ventas a crédito o con plazo, el adquirente confirme por mensaje electrónico el recibido de la factura y de los bienes para que la factura sea soporte de costos, deducciones e impuestos descontables. Conclusión: solo la de contado sirve de soporte.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-053",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procedencia de costos, deducciones e impuestos descontables",
+    "subtema": "Factura con fecha del año siguiente al de la prestación del servicio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989) y Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 771-2 par. 2 del Estatuto Tributario (adicionado por el art. 135 de la Ley 1819 de 2016)",
+      "art. 1.5.1.1.3.1 de la Resolución DIAN 227 de 2025 (antes art. 5 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "Sin perjuicio de lo establecido en este artículo, los costos y deducciones efectivamente realizados durante el año o período gravable serán aceptados fiscalmente, así la factura de venta o documento equivalente tenga fecha del año o período siguiente, siempre y cuando se acredite la prestación del servicio o venta del bien en el año o período gravable. [...] La expedición de la factura de venta, documento equivalente o documento equivalente electrónico, comprende su generación, transmisión, validación y entrega, física o electrónica al adquirente cuando corresponda, por todas y cada una de las operaciones de venta y/o prestación de servicios al momento de efectuarse estas.",
+    "pregunta": "Una gestora de fiscalización revisa la declaración de renta del año gravable 2025 de una SAS que lleva contabilidad. La SAS dedujo $18.000.000 por el mantenimiento de su maquinaria, que el proveedor hizo entre el 1 y el 20 de diciembre de 2025, según el acta de recibo firmada ese 20 de diciembre. El proveedor expidió la factura electrónica el 15 de enero de 2026. ¿Qué debe decidir la gestora sobre esa deducción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptarla en 2025, porque hay prueba de que el servicio se prestó ese año.",
+        "explicacion": "Correcta. Los costos y deducciones realizados en el año se aceptan aunque la factura tenga fecha del año siguiente, siempre que se acredite que el servicio se prestó en el año gravable (art. 771-2 par. 2 ET); el acta de recibo del 20 de diciembre de 2025 lo prueba."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazarla en 2025 y aceptarla en 2026, año en que se expidió la factura.",
+        "explicacion": "Incorrecta. La fecha de la factura no traslada la deducción al año siguiente cuando se prueba que el servicio se prestó en 2025."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazarla, porque la factura no se expidió cuando se prestó el servicio.",
+        "explicacion": "Incorrecta. Aunque la factura debió expedirse al realizarse la operación (art. 1.5.1.1.3.1 de la Resolución 227 de 2025), el par. 2 del art. 771-2 del ET acepta la deducción del adquirente si se acredita que el servicio se prestó en el año gravable."
+      },
+      {
+        "id": "D",
+        "texto": "Aceptarla en 2025 solo si el proveedor expide otra factura con fecha de 2025.",
+        "explicacion": "Incorrecta. La ley no exige una nueva factura fechada en el año anterior: admite la factura del año siguiente si se acredita la prestación del servicio en el año gravable."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el mantenimiento se prestó y se recibió en diciembre de 2025, según el acta, y la factura se expidió el 15 de enero de 2026. Regla: el art. 771-2 par. 2 del ET acepta los costos y deducciones efectivamente realizados en el año aunque la factura tenga fecha del año siguiente, siempre que se acredite la prestación del servicio en el año gravable. Conclusión: la deducción procede en 2025.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-054",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procedencia de costos, deducciones e impuestos descontables",
+    "subtema": "Documento equivalente electrónico POS expedido a consumidor final",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023) y Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 1.5.1.3.2.1 par. y art. 1.5.1.3.2.4 par. 1 de la Resolución DIAN 227 de 2025 (antes art. 16 par. y art. 19 par. 1 de la Resolución 165 de 2023)",
+      "art. 616-1 par. 2 del Estatuto Tributario (modificado por el art. 13 de la Ley 2155 de 2021)"
+    ],
+    "texto_fuente": "Para el caso del documento equivalente electrónico tiquete de máquina registradora con sistema P.O.S. se deberá identificar con nombre o razón social y número de identificación al adquiriente, para aplicar lo previsto en este parágrafo [...] Sin perjuicio de que se pueda registrar la frase \"consumidor final\" o apellidos y nombre y el número \"222222222222\" en aquellos casos en que los adquirentes de bienes y/o servicios no suministren la información, pero en este caso documento equivalente electrónico tiquete de máquina registradora con sistema P.O.S no se podrá constituir en soporte de costos, gastos e impuestos descontables. [...] No obstante, los adquirientes podrán solicitar al obligado a expedir factura de venta, cuando en virtud de su actividad económica tengan derecho a solicitar impuestos descontables, costos y deducciones. [...] Lo anterior, sin perjuicio de que el adquiriente del bien y/o servicio exija la expedición de la factura de venta, caso en el cual se deberá expedir la misma.",
+    "pregunta": "Un facilitador de servicio al ciudadano atiende a la contadora de una SAS. Un empleado de la SAS compró papelería para la oficina en un almacén de cadena por $180.000, IVA incluido, y recibió un \"documento equivalente electrónico tiquete de máquina registradora con sistema P.O.S.\", validado por la DIAN, que discrimina el IVA y registra como comprador a \"consumidor final\" con el número 222222222222. La contadora pregunta si la SAS puede llevar esa compra como gasto deducible y tomar ese IVA como descontable. ¿Qué debe responderle el facilitador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que sí puede, porque el documento fue validado por la DIAN y en él se discrimina el IVA de la compra.",
+        "explicacion": "Incorrecta. La validación de la DIAN no suple la identificación del adquirente: con \"consumidor final\" y el número 222222222222, el tiquete POS no puede ser soporte de costos, gastos ni impuestos descontables."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede deducir el gasto en renta, pero no el IVA, que solo admite como soporte una factura de venta.",
+        "explicacion": "Incorrecta. La restricción es la misma para el gasto y para el IVA: el tiquete POS sin identificación del comprador no soporta ninguno de los dos."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede tomar ninguno de los dos, porque a una empresa el almacén debía venderle con factura de venta.",
+        "explicacion": "Incorrecta. El almacén podía expedir el tiquete POS; solo debía expedir factura de venta si el comprador la exigía (art. 616-1 par. 2 ET), y aquí no la pidió. Lo que impide el soporte es que el tiquete registra \"consumidor final\" y no identifica a la SAS."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede tomar ninguno de los dos, porque el tiquete no identifica a la SAS como compradora.",
+        "explicacion": "Correcta. El POS electrónico solo sirve de soporte si identifica al adquirente con nombre o razón social y número de identificación; si registra \"consumidor final\" y 222222222222, no soporta costos, gastos ni impuestos descontables (arts. 1.5.1.3.2.1 par. y 1.5.1.3.2.4 par. 1 de la Resolución 227 de 2025). La SAS debía pedir la factura a su nombre. Con el art. 616-1 par. 2 del ET la conclusión es la misma: ese parágrafo dice que los documentos POS no dan derecho a costos ni a impuestos descontables para el adquirente; la resolución solo abre esa puerta cuando el POS electrónico identifica al comprador, que no es el caso."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el tiquete POS electrónico registra como comprador a \"consumidor final\" con el número 222222222222. Regla: los arts. 1.5.1.3.2.1 par. y 1.5.1.3.2.4 par. 1 de la Resolución DIAN 227 de 2025 (antes arts. 16 y 19 de la Res. 165 de 2023) exigen identificar al adquirente para que el POS electrónico soporte costos, gastos e impuestos descontables, y le niegan ese efecto cuando registra \"consumidor final\"; el art. 616-1 par. 2 del ET permite al adquirente pedir factura de venta. Con el art. 616-1 par. 2 del ET, que niega ese efecto a los documentos POS, el resultado es el mismo. Conclusión: no puede tomar ni el gasto ni el IVA.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-055",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Factura electrónica de venta",
+    "subtema": "Anulación de la factura electrónica mediante nota crédito",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.5.6.1 nums. 1 y 3 e incs. finales (antes art. 36 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "1. Estar denominada expresamente como nota débito o nota crédito de la factura electrónica de venta, según corresponda. [...] 3. El prefijo, el número, el Código Único de Factura Electrónica (CUFE) de las facturas electrónicas de venta a la cual hace referencia la nota débito o la nota crédito y la fecha utilizada para la generación del CUFE. [...] Validadas las notas débito y notas crédito que se derivan de la factura electrónica de venta, estas deben ser entregadas al adquirente [...] la nota crédito será el mecanismo de anulación de la factura electrónica de venta, caso en el cual el número de la factura anulada no podrá ser utilizado nuevamente, y siempre deberá estar referenciada en la nota crédito que la anule. No podrán ser utilizadas las notas débito y/o las notas crédito electrónicas para realizar ajustes entre ellas.",
+    "pregunta": "Una facilitadora de servicio al ciudadano atiende al gerente de una distribuidora. El lunes, la distribuidora expidió una factura electrónica por $12.000.000, que la DIAN validó y el cliente recibió; el miércoles, el cliente devolvió todo el pedido. El gerente quiere \"borrar\" esa factura y usar su número para facturar la misma mercancía a otro cliente. ¿Qué debe orientarle la facilitadora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir a la DIAN que retire la factura del sistema de validación y usar su número en la nueva venta.",
+        "explicacion": "Incorrecta. La anulación de una factura electrónica no se pide a la DIAN: se hace con una nota crédito, y el número de la factura anulada no puede reutilizarse."
+      },
+      {
+        "id": "B",
+        "texto": "Expedir una nota débito electrónica por el mismo valor, que deje la factura en cero y conserve su número.",
+        "explicacion": "Incorrecta. El reglamento señala la nota crédito, no la nota débito, como el mecanismo de anulación de la factura electrónica; además, el número anulado no se conserva para otra venta."
+      },
+      {
+        "id": "C",
+        "texto": "Expedir una nota crédito electrónica que la referencie y la anule; ese número no podrá volver a usarse.",
+        "explicacion": "Correcta. La nota crédito es el mecanismo de anulación de la factura electrónica de venta; debe referenciar la factura que anula (prefijo, número y CUFE), y el número de esa factura no puede utilizarse nuevamente (art. 1.5.1.5.6.1)."
+      },
+      {
+        "id": "D",
+        "texto": "Expedir a nombre del nuevo cliente otra factura con el mismo número, que sustituya a la anterior.",
+        "explicacion": "Incorrecta. El número de una factura anulada no puede volver a utilizarse; la venta al nuevo cliente debe facturarse con otro número del rango autorizado."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la factura ya fue validada y entregada, y el cliente devolvió toda la mercancía. Regla: el art. 1.5.1.5.6.1 de la Resolución DIAN 227 de 2025 (antes art. 36 de la Res. 165 de 2023) establece que la nota crédito es el mecanismo de anulación de la factura electrónica de venta, que siempre debe referenciarla, y que el número de la factura anulada no podrá utilizarse nuevamente. Conclusión: expedir una nota crédito que anule la factura; la nueva venta lleva otro número.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-056",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Numeración de facturación",
+    "subtema": "Numeración del documento soporte en adquisiciones a no obligados a facturar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023) y Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 1.5.1.6.1.1 num. 4 de la Resolución DIAN 227 de 2025 (antes art. 42 num. 4 de la Resolución 165 de 2023)",
+      "art. 1.5.1.6.2.2 par. de la Resolución DIAN 227 de 2025 (antes art. 44 par. de la Resolución 165 de 2023)",
+      "art. 771-2 inc. 3 del Estatuto Tributario (adicionado por el art. 3 de la Ley 383 de 1997)"
+    ],
+    "texto_fuente": "Es el servicio informático electrónico para la solicitud de autorización, habilitación e inhabilitación de la numeración consecutiva, que se encuentra dispuesto en la página web de la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) y le permite al sujeto obligado, cumplir con el requisito de la numeración consecutiva en los siguientes documentos: 1. Factura electrónica de venta. [...] 4. Documento soporte en adquisiciones efectuadas a sujetos no obligados a expedir factura de venta o documento equivalente. [...] Para la expedición del documento soporte en adquisiciones efectuadas a sujetos no obligados a expedir factura de venta o documento equivalente, la autorización de numeración debe ser solicitada con anterioridad a las operaciones que se respalden con el citado documento. [...] Cuando no exista la obligación de expedir factura o documento equivalente, el documento que pruebe la respectiva transacción que da lugar a costos, deducciones o impuestos descontables, deberá cumplir los requisitos mínimos que el Gobierno Nacional establezca.",
+    "pregunta": "Una agroindustria que factura electrónicamente comprará leche, a partir del 1 de noviembre de 2026, a pequeños productores que son personas naturales no obligadas a facturar. Para soportar esas compras como costo, generará el documento soporte en adquisiciones a sujetos no obligados a expedir factura. Su contadora consulta a un gestor de servicio al ciudadano qué debe hacer con la numeración de ese documento. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no requiere numeración autorizada, porque quien vende no factura y el documento lo genera el comprador.",
+        "explicacion": "Incorrecta. El documento soporte es uno de los documentos que usan el servicio de numeración de la DIAN, y su autorización debe pedirse antes de las operaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Que debe obtener la autorización de numeración de ese documento antes de las compras que va a respaldar.",
+        "explicacion": "Correcta. Para expedir el documento soporte en adquisiciones a no obligados a facturar, la autorización de numeración debe solicitarse antes de las operaciones que se respaldarán (art. 1.5.1.6.2.2 par.); ese documento es el que prueba la compra cuando no hay obligación de facturar (art. 771-2 ET)."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede usar el rango autorizado para sus facturas de venta, con un prefijo que distinga el documento.",
+        "explicacion": "Incorrecta. El servicio de numeración trata la factura electrónica de venta y el documento soporte como documentos distintos; el documento soporte requiere su propia autorización."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede pedir la autorización dentro del mes siguiente a la primera compra, cuando conozca el volumen.",
+        "explicacion": "Incorrecta. La norma exige solicitar la autorización con anterioridad a las operaciones, no después de la primera compra."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la agroindustria empezará a comprar a no obligados a facturar el 1 de noviembre de 2026. Regla: el art. 1.5.1.6.2.2 par. de la Resolución DIAN 227 de 2025 (antes art. 44 de la Res. 165 de 2023) exige solicitar la autorización de numeración del documento soporte con anterioridad a las operaciones que respalde; el art. 771-2 del ET dispone que, sin obligación de facturar, la compra se prueba con un documento que cumpla los requisitos del Gobierno. Conclusión: pedir la numeración antes del 1 de noviembre.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-057",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Numeración de facturación",
+    "subtema": "Inhabilitación de la numeración por cierre de un establecimiento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.6.2.5 inc. 1, num. 1.3 y par. (antes art. 47 de la Resolución 165 de 2023)",
+      "art. 1.5.1.6.2.6 (antes art. 48 de la Resolución 165 de 2023)",
+      "art. 1.5.1.6.2.4 (antes art. 46 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "Es el acto administrativo por medio del cual, previa solicitud del obligado o de oficio, en los eventos mencionados en el presente artículo quedan rangos de numeración sobrante, los cuales deberán ser inhabilitados de tal forma que, una vez gestionado este trámite, los mismos no puedan ser utilizados. Para los casos en los cuales la resolución de numeración se encuentra vencida, no procede la inhabilitación. [...] 1.3. Cierre de establecimiento, sede, oficina, o lugares donde desarrollen sus actividades económicas; [...] Para efectos de las causales de inhabilitación antes descritas que impliquen cambios en la información del Registro Único Tributario (RUT) será necesaria su actualización previa al trámite. [...] La autorización de la numeración consecutiva tendrá una vigencia máxima de dos (2) años a partir de la asignación que realice la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) y no podrá expedirse por termino menor. [...] podrá anular la numeración de los documentos de que tratan los numerales 1 al 4 del Artículo 1.5.1.6.1.1 de esta resolución, cuando los mismos no sean utilizados por razones diferentes a la inhabilitación",
+    "pregunta": "Una SAS dejó de vender el martes 15 de septiembre de 2026 en uno de sus dos almacenes, inscrito como establecimiento en el RUT, y lo cerró definitivamente el lunes 5 de octubre. En ese almacén facturaba con el prefijo \"NOR1\", cuyo rango de numeración le asignó la DIAN el 18 de septiembre de 2024; la SAS nunca pidió ampliar la vigencia de esa autorización, y quedaron 2.300 números sin usar. El martes 6 de octubre, la contadora consulta a un gestor de servicio al ciudadano qué trámite debe adelantar ante la DIAN respecto de esos números. ¿Qué debe responderle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No pedir la inhabilitación de esos números: la autorización del rango venció el 18 de septiembre de 2026.",
+        "explicacion": "Correcta. La autorización de numeración tiene una vigencia de dos años desde su asignación, sin término menor: del 18 de septiembre de 2024 al 18 de septiembre de 2026. Cuando la resolución de numeración está vencida, no procede la inhabilitación (art. 1.5.1.6.2.5)."
+      },
+      {
+        "id": "B",
+        "texto": "Actualizar primero el RUT y luego solicitar la inhabilitación de los números que quedaron sin usar del prefijo.",
+        "explicacion": "Incorrecta. Sería el trámite si la autorización estuviera vigente, porque el cierre de un establecimiento es causal de inhabilitación y exige actualizar antes el RUT; pero la autorización ya venció."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar la inhabilitación de los números que quedaron sin usar y, una vez concedida, actualizar el RUT.",
+        "explicacion": "Incorrecta. Además de que la autorización ya venció, invierte el orden: cuando la causal implica cambios en el RUT, este debe actualizarse antes del trámite."
+      },
+      {
+        "id": "D",
+        "texto": "Anular los números que quedaron sin usar y conservar la justificación para exhibirla cuando la DIAN la exija.",
+        "explicacion": "Incorrecta. La anulación procede cuando los números no se usan por razones diferentes a la inhabilitación; el cierre de un establecimiento es una causal de inhabilitación, no de anulación."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el rango del prefijo NOR1 se asignó el 18 de septiembre de 2024 y el almacén cerró el 5 de octubre de 2026. Regla: el art. 1.5.1.6.2.6 de la Resolución DIAN 227 de 2025 (antes art. 48 de la Res. 165 de 2023) fija para la autorización de numeración una vigencia de dos años, sin término menor, y el art. 1.5.1.6.2.5 (antes art. 47) dispone que no procede la inhabilitación cuando la resolución de numeración está vencida. Cálculo: la autorización venció el 18 de septiembre de 2026. Conclusión: no hay inhabilitación que pedir.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-058",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Factura electrónica de venta",
+    "subtema": "Factura de papel de quienes optan por el régimen simple de tributación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.2.1.1 inc. 2 nums. 1 y 3 (antes art. 9 de la Resolución 165 de 2023)",
+      "art. 1.5.1.1.2.2 inc. 3 (antes art. 3 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "Quienes opten por el impuesto unificado bajo el Régimen Simple de Tributación - SIMPLE podrán: 1. Expedir la factura electrónica desde el momento en que inscriba en el registro único tributario como responsable del régimen SIMPLE de tributación; o [...] 3. Someterse a las reglas del inconveniente tecnológico previsto en el numeral 1.1. del Artículo 1.5.1.5.7.1 de la presente resolución durante máximo dos meses contados desde el momento en que efectúen la inscripción en el Registro Único Tributario como responsable del régimen SIMPLE de tributación -SIMPLE. Vencido este plazo, estarán obligados a facturar electrónicamente o el documento equivalente electrónico que se haya prescrito para tal fin. [...] La factura de talonario o de papel tendrá validez en los casos en que el sujeto obligado a facturar electrónicamente presente inconvenientes tecnológicos que le imposibiliten facturar en este sentido, así como en los casos de los contribuyentes pertenecientes al régimen simple de tributación - SIMPLE que contempla el parágrafo del artículo 915 del Estatuto Tributario, siempre que no estuviesen obligados a facturar electrónicamente desde antes de optar por el impuesto unificado bajo el referido régimen.",
+    "pregunta": "El jueves 8 de octubre de 2026, un facilitador de servicio al ciudadano atiende a tres contribuyentes del régimen simple de tributación (SIMPLE) que expiden facturas de papel sin haber tenido fallas tecnológicas. Laura, persona natural, se inscribió en el RUT como contribuyente del SIMPLE el 14 de agosto de 2026, y Pedro, persona natural, el 3 de agosto de 2026; ninguno de los dos estaba obligado antes a facturar electrónicamente. Una SAS obligada a facturar electrónicamente desde 2021 se inscribió en el SIMPLE el 1 de septiembre de 2026. ¿Quiénes pueden seguir expidiendo válidamente facturas de papel ese día?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Laura y Pedro, porque ninguno de los dos estaba obligado a facturar electrónicamente antes de optar por el SIMPLE.",
+        "explicacion": "Incorrecta. No haber estado obligado antes es una de las condiciones, pero la opción del papel dura máximo dos meses desde la inscripción en el SIMPLE: para Pedro venció el 3 de octubre de 2026."
+      },
+      {
+        "id": "B",
+        "texto": "Laura y la SAS, porque las dos se inscribieron en el SIMPLE hace menos de dos meses.",
+        "explicacion": "Incorrecta. La SAS ya facturaba electrónicamente antes de optar por el SIMPLE; para ella la factura de papel solo vale ante inconvenientes tecnológicos."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguno de los tres, porque sin fallas tecnológicas la factura de papel carece de validez.",
+        "explicacion": "Incorrecta. Además de las fallas tecnológicas, la norma admite la factura de papel de los contribuyentes del SIMPLE durante máximo dos meses desde su inscripción, si no estaban obligados antes a facturar electrónicamente."
+      },
+      {
+        "id": "D",
+        "texto": "Solo Laura, cuyo período para expedir facturas de papel se extiende hasta el 14 de octubre de 2026.",
+        "explicacion": "Correcta. Laura no estaba obligada antes y su plazo de dos meses va del 14 de agosto al 14 de octubre de 2026. El de Pedro venció el 3 de octubre, y la SAS ya era facturadora electrónica antes de optar por el SIMPLE."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: Laura se inscribió en el SIMPLE el 14 de agosto, Pedro el 3 de agosto y la SAS ya facturaba electrónicamente antes de optar. Regla: el art. 1.5.1.2.1.1 de la Resolución DIAN 227 de 2025 (antes art. 9 de la Res. 165 de 2023) permite a quienes optan por el SIMPLE aplicar las reglas del inconveniente tecnológico durante máximo dos meses desde su inscripción en el RUT, y el art. 1.5.1.1.2.2 (antes art. 3) condiciona la validez de esa factura de papel a que no estuvieran obligados antes a facturar electrónicamente. Conclusión: solo Laura, hasta el 14 de octubre de 2026.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-059",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Fiscalización de la obligación de facturar",
+    "subtema": "Constancia de la no expedición de factura",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 653 (modificado por el art. 45 de la Ley 223 de 1995)",
+      "art. 657 par. 2 y par. 6 (modificado por el art. 290 de la Ley 1819 de 2016; par. 6 modificado por el art. 111 de la Ley 2010 de 2019)"
+    ],
+    "texto_fuente": "Cuando sobre las transacciones respecto de las cuales se debe expedir factura, no se cumpla con esta obligación o se cumpla sin el lleno de los requisitos establecidos en la ley, dos funcionarios designados especialmente por el Jefe de la División de Fiscalización para tal efecto, que hayan constatado la infracción, darán fe del hecho, mediante un acta en la cual se consigne el mismo y las explicaciones que haya aducido quien realizó la operación sin expedir la factura. En la etapa de discusión posterior no se podrán aducir explicaciones distintas de las consignadas en la respectiva acta. [...] La sanción a que se refiere el presente artículo se impondrá mediante resolución, previo traslado de cargos a la persona o entidad infractora, quien tendrá un término de diez (10) días para responder. [...] En todos los casos, si el contribuyente objeto de esta sanción se acoge y paga la siguiente multa, la Administración Tributaria se abstendrá de decretar la clausura del establecimiento",
+    "pregunta": "Dos inspectores de la División de Fiscalización, designados por el jefe de la división para una jornada de control, observan que una tienda de ropa cobra una venta de $350.000 sin entregar factura ni documento equivalente. La administradora les dice que el software de facturación estaba fallando. ¿Cómo deben proceder los inspectores?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Levantar un acta del hecho y, en la misma diligencia, sellar el local por tres días por la falta comprobada.",
+        "explicacion": "Incorrecta. La clausura no se impone en la visita: se decreta mediante resolución, previo traslado de cargos por diez días para responder (art. 657 par. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "Levantar un acta solo con el hecho y darle a la tienda diez días para que explique por escrito lo ocurrido.",
+        "explicacion": "Incorrecta. Las explicaciones de quien no facturó se consignan en la misma acta, y en la discusión posterior no se pueden aducir otras (art. 653). Los diez días son el término para responder el traslado de cargos, no para justificar el hecho ante los inspectores."
+      },
+      {
+        "id": "C",
+        "texto": "Levantar un acta con el hecho y la justificación dada en la visita, que la tienda no podrá cambiar luego.",
+        "explicacion": "Correcta. Los dos funcionarios designados dan fe del hecho en un acta que recoge lo ocurrido y las explicaciones de quien realizó la operación; en la etapa de discusión posterior no se pueden aducir explicaciones distintas (art. 653)."
+      },
+      {
+        "id": "D",
+        "texto": "Levantar un acta del hecho y cobrar en la misma diligencia la multa del 5% de los ingresos del mes anterior.",
+        "explicacion": "Incorrecta. La multa del 5% no la impone el inspector: es la alternativa que el contribuyente puede acoger y pagar para que la DIAN se abstenga de decretar la clausura (art. 657 par. 6)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: dos funcionarios designados presenciaron una venta sin factura y la administradora dio una justificación. Regla: el art. 653 del ET ordena que esos funcionarios den fe del hecho en un acta con las explicaciones de quien no facturó, y prohíbe aducir después explicaciones distintas; la clausura del art. 657 se impone por resolución, previo traslado de cargos, y la multa del par. 6 es una opción del contribuyente. Conclusión: levantar el acta con el hecho y la justificación de la administradora.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-060",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Proveedores tecnológicos",
+    "subtema": "Requisitos patrimoniales y certificación para la habilitación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución DIAN 227 de 2025 (Resolución Única; compila la Resolución 165 de 2023)",
+    "articulos": [
+      "art. 1.5.1.8.1.1 nums. 4 y 5 (antes art. 55 de la Resolución 165 de 2023)"
+    ],
+    "texto_fuente": "4. Poseer para la fecha de presentación de la solicitud como proveedor tecnológico y mantener durante el tiempo en que dure la habilitación, un patrimonio contable a la fecha de presentación de la solicitud como proveedor tecnológico, por una suma igual o superior a veinte mil (20.000) Unidades de Valor Tributario (UVT), dentro del cual, la propiedad planta y equipo debe como mínimo corresponder a una suma igual o superior a diez mil (10.000) Unidades de Valor Tributario (UVT), el cual debe estar localizado en Colombia; [...] 5. Acreditar certificación sobre sistemas de gestión de seguridad de la información y calidad de la información conforme con la Norma ISO 27001 sobre sistemas de gestión de seguridad de la información para los procesos y documentos y servicios de que trata el numeral 3 del presente artículo. Si para la fecha de presentación de la solicitud como proveedor tecnológico ante la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), no se cuenta con esta certificación, deberá manifestarse el compromiso de aportarla a más tardar dentro de los dieciocho (18) meses siguientes a la notificación de la habilitación como proveedor tecnológico",
+    "pregunta": "En octubre de 2026, una analista de la Subdirección de Factura Electrónica y Soluciones Operativas de la DIAN estudia la solicitud de una SAS colombiana para ser habilitada como proveedor tecnológico. Ya verificó los demás requisitos y solo le falta revisar dos puntos. Los estados financieros de la SAS a la fecha de la solicitud muestran un patrimonio contable de $1.150.000.000, del cual $480.000.000 corresponden a propiedad, planta y equipo ubicada en Colombia. Además, la SAS aún no tiene la certificación ISO 27001, pero se compromete a aportarla dentro de los 12 meses siguientes a la habilitación. La UVT de 2026 es de $52.374. ¿Qué debe concluir la analista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que procede la habilitación, porque el patrimonio supera 20.000 UVT y la certificación puede aportarse después.",
+        "explicacion": "Incorrecta. El patrimonio ($1.150.000.000) sí supera 20.000 UVT ($1.047.480.000) y la certificación puede aportarse dentro de 18 meses, pero dentro de ese patrimonio la propiedad, planta y equipo debe sumar al menos 10.000 UVT, y no los alcanza."
+      },
+      {
+        "id": "B",
+        "texto": "Que no procede la habilitación, porque la propiedad, planta y equipo no alcanza el mínimo exigido en UVT.",
+        "explicacion": "Correcta. 10.000 UVT equivalen a $523.740.000 (10.000 × $52.374), y la propiedad, planta y equipo de la SAS es de $480.000.000. El patrimonio total sí supera 20.000 UVT, y el compromiso de aportar la ISO 27001 en 12 meses cabe en el plazo de 18 meses, pero falta este requisito."
+      },
+      {
+        "id": "C",
+        "texto": "Que no procede la habilitación, porque sin la certificación ISO 27001 vigente no puede radicar la solicitud.",
+        "explicacion": "Incorrecta. Si no se tiene la certificación al presentar la solicitud, basta manifestar el compromiso de aportarla dentro de los 18 meses siguientes a la notificación de la habilitación; el de 12 meses cabe en ese plazo."
+      },
+      {
+        "id": "D",
+        "texto": "Que no procede la habilitación, porque el patrimonio sin la propiedad, planta y equipo no llega a 20.000 UVT.",
+        "explicacion": "Incorrecta. La propiedad, planta y equipo forma parte del patrimonio (\"dentro del cual\"); no se resta para verificar las 20.000 UVT."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la propiedad, planta y equipo de la SAS es de $480.000.000. Regla: el art. 1.5.1.8.1.1 num. 4 de la Resolución DIAN 227 de 2025 (antes art. 55 de la Res. 165 de 2023) exige un patrimonio de al menos 20.000 UVT, dentro del cual la propiedad, planta y equipo localizada en Colombia sume al menos 10.000 UVT; el num. 5 permite comprometerse a aportar la ISO 27001 dentro de 18 meses. Cálculo: 20.000 × $52.374 = $1.047.480.000 (cumple); 10.000 × $52.374 = $523.740.000 (no cumple). Conclusión: no procede.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0227_2025.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

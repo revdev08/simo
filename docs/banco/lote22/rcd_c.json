@@ -1,0 +1,942 @@
+[
+  {
+    "id": "TC-RCD-041",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Medidas de tendencia central",
+    "subtema": "Moda en una tabla de frecuencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "La coordinadora de convivencia de un colegio revisó las inasistencias de septiembre de los 32 estudiantes de un curso de séptimo grado:\n\nInasistencias en septiembre | Número de estudiantes\n0 | 9\n1 | 7\n2 | 6\n3 | 4\n4 | 3\n5 | 2\n11 | 1\n\n¿Cuál es la moda de las inasistencias de ese curso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "0 inasistencias",
+        "explicacion": "Correcta. La moda es el valor que más se repite. El valor con más estudiantes es 0 inasistencias (9 de los 32); ningún otro valor tiene tantos."
+      },
+      {
+        "id": "B",
+        "texto": "2 inasistencias",
+        "explicacion": "Incorrecta. Es la media del curso: 64 inasistencias en total ÷ 32 estudiantes = 2. La media y la moda son medidas distintas."
+      },
+      {
+        "id": "C",
+        "texto": "3 inasistencias",
+        "explicacion": "Incorrecta. Es el valor de la fila central de la tabla (la cuarta de siete). La moda no depende de la posición de la fila, sino de cuántos estudiantes tienen cada valor."
+      },
+      {
+        "id": "D",
+        "texto": "9 inasistencias",
+        "explicacion": "Incorrecta. 9 es la frecuencia más alta, es decir, el número de estudiantes que no faltaron. La moda es el valor de la variable (0 inasistencias), no su frecuencia."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la fila con más estudiantes es la de 0 inasistencias, con 9 de los 32. Regla: la moda es el valor de la variable que tiene la mayor frecuencia; se informa el valor, no el número de veces que aparece. Conclusión: la moda es 0 inasistencias. El 9 es la frecuencia de ese valor, y el 2 es la media del curso.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-042",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Medidas de tendencia central",
+    "subtema": "Media a partir de una tabla de frecuencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La coordinadora de convivencia de un colegio revisó las inasistencias de septiembre de los 32 estudiantes de un curso de séptimo grado:\n\nInasistencias en septiembre | Número de estudiantes\n0 | 9\n1 | 7\n2 | 6\n3 | 4\n4 | 3\n5 | 2\n11 | 1\n\nPara el informe a la comisión de evaluación y promoción, la coordinadora debe calcular el promedio de inasistencias por estudiante en septiembre. ¿Cuál es ese promedio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "2,00 inasistencias",
+        "explicacion": "Correcta. Se multiplica cada valor por su número de estudiantes y se suman los productos: 0 + 7 + 12 + 12 + 12 + 10 + 11 = 64 inasistencias. Luego se divide entre los 32 estudiantes: 64 ÷ 32 = 2,00."
+      },
+      {
+        "id": "B",
+        "texto": "3,71 inasistencias",
+        "explicacion": "Incorrecta. Promedia los siete valores de la primera columna (26 ÷ 7) sin tener en cuenta cuántos estudiantes tienen cada valor. Así, el estudiante con 11 inasistencias pesa lo mismo que los 9 que no faltaron."
+      },
+      {
+        "id": "C",
+        "texto": "4,57 inasistencias",
+        "explicacion": "Incorrecta. Promedia la columna del número de estudiantes (32 ÷ 7). Ese resultado es el número medio de estudiantes por fila, no de inasistencias por estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "9,14 inasistencias",
+        "explicacion": "Incorrecta. Suma bien las 64 inasistencias, pero las divide entre las 7 filas de la tabla en lugar de dividirlas entre los 32 estudiantes."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: cada fila dice cuántos estudiantes tuvieron ese número de inasistencias. Regla: en una tabla de frecuencias, la media es la suma de (valor × frecuencia) dividida entre el total de datos. Cálculo: 0×9 + 1×7 + 2×6 + 3×4 + 4×3 + 5×2 + 11×1 = 64; 64 ÷ 32 = 2,00. Conclusión: 2,00 inasistencias por estudiante. Promediar solo los valores o solo las frecuencias, o dividir entre las 7 filas, son errores.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-043",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Medidas de tendencia central",
+    "subtema": "Mediana con un número par de datos en una tabla de frecuencias",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "La coordinadora de convivencia de un colegio revisó las inasistencias de septiembre de los 32 estudiantes de un curso de séptimo grado:\n\nInasistencias en septiembre | Número de estudiantes\n0 | 9\n1 | 7\n2 | 6\n3 | 4\n4 | 3\n5 | 2\n11 | 1\n\nEn el informe también debe aparecer la mediana de las inasistencias del curso. ¿Cuál es esa mediana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1 inasistencia",
+        "explicacion": "Incorrecta. Es el dato 16 de la lista ordenada, tomado solo. Con 32 datos (un número par) no hay un único dato central: la mediana es el promedio de los datos 16 y 17."
+      },
+      {
+        "id": "B",
+        "texto": "1,5 inasistencias",
+        "explicacion": "Correcta. Con 32 datos ordenados, la mediana es el promedio de los datos 16 y 17. Hay 9 estudiantes con 0 inasistencias y 16 con 0 o 1, así que el dato 16 es 1 y el dato 17 es 2: (1 + 2) ÷ 2 = 1,5."
+      },
+      {
+        "id": "C",
+        "texto": "2 inasistencias",
+        "explicacion": "Incorrecta. Es el dato 17, tomado solo, y además coincide con la media (64 ÷ 32 = 2). Con un número par de datos, la mediana promedia los dos datos centrales, el 16 y el 17."
+      },
+      {
+        "id": "D",
+        "texto": "3 inasistencias",
+        "explicacion": "Incorrecta. Es el valor de la fila central de la tabla (la cuarta de siete filas), sin tener en cuenta cuántos estudiantes hay en cada fila. La mediana se busca en la lista de los 32 datos ordenados, donde los valores bajos se repiten mucho más."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: hay 32 datos, un número par. Regla: con un número par de datos ordenados, la mediana es el promedio de los dos centrales, aquí el 16 y el 17. Cálculo: con las frecuencias acumuladas, 9 estudiantes tienen 0 inasistencias y 16 tienen 0 o 1; el dato 16 es 1 y el 17 es 2. (1 + 2) ÷ 2 = 1,5. Conclusión: la mediana es 1,5 inasistencias.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-044",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Medidas de tendencia central",
+    "subtema": "Promedio simple sin un día que no tuvo servicio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Una secretaría de educación contrató una ruta de transporte escolar para una vereda. El conductor reportó así los estudiantes transportados en la semana del 12 al 16 de octubre:\n\nDía | Estudiantes transportados\nLunes 12 | Festivo, sin servicio\nMartes 13 | 146\nMiércoles 14 | 152\nJueves 15 | 139\nViernes 16 | 143\n\n¿Cuál fue el promedio diario de estudiantes transportados en los días en que la ruta prestó el servicio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "116 estudiantes",
+        "explicacion": "Incorrecta. Divide los 580 estudiantes entre 5 días, como si el lunes festivo hubiera tenido servicio con 0 estudiantes. La pregunta es por los días en que hubo servicio, que fueron 4."
+      },
+      {
+        "id": "B",
+        "texto": "144,5 estudiantes",
+        "explicacion": "Incorrecta. Es la mediana de los cuatro días: ordenados (139, 143, 146 y 152), el promedio de los dos centrales es (143 + 146) ÷ 2 = 144,5. Se pedía la media."
+      },
+      {
+        "id": "C",
+        "texto": "145 estudiantes",
+        "explicacion": "Correcta. Los cuatro días con servicio suman 146 + 152 + 139 + 143 = 580 estudiantes, y 580 ÷ 4 = 145."
+      },
+      {
+        "id": "D",
+        "texto": "145,5 estudiantes",
+        "explicacion": "Incorrecta. Promedia solo el mayor y el menor de los valores: (152 + 139) ÷ 2 = 145,5. El promedio usa los cuatro datos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el lunes 12 fue festivo y no hubo servicio, así que solo cuentan 4 días. Regla: el promedio es la suma de los datos dividida entre el número de datos. Cálculo: 146 + 152 + 139 + 143 = 580; 580 ÷ 4 = 145. Conclusión: 145 estudiantes por día. Dividir entre 5 (116), tomar la mediana (144,5) o el punto medio entre el mayor y el menor (145,5) son errores.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-045",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Dispersión y datos atípicos",
+    "subtema": "Efecto de corregir un dato atípico sobre la media y la mediana",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Una docente digitó en la plataforma académica las notas de un taller de 10 estudiantes, en escala de 1,0 a 5,0. La plataforma calculó la media y la mediana del grupo con estos datos:\n\n3,2; 2,8; 4,0; 3,6; 25; 3,0; 4,4; 3,9; 4,1 y 3,4\n\nAl revisar, la docente nota que escribió 25 en lugar de 2,5. ¿Qué pasará con la media y la mediana del grupo cuando corrija ese dato?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La media bajará 2,25 puntos y la mediana no cambiará.",
+        "explicacion": "Incorrecta. El cambio de la media está bien calculado, pero supone que la mediana nunca se mueve con un dato extremo. Aquí el dato corregido pasa del extremo superior (25) al inferior (2,5) de la lista ordenada, y eso corre los dos datos centrales: de 3,6 y 3,9 a 3,4 y 3,6."
+      },
+      {
+        "id": "B",
+        "texto": "La media bajará 22,5 puntos y la mediana no cambiará.",
+        "explicacion": "Incorrecta. Toma la diferencia del dato (25 − 2,5 = 22,5) como si fuera el cambio de la media, sin dividirla entre los 10 estudiantes. Además, supone que la mediana no se mueve, y sí se mueve, porque el dato corregido queda en el extremo inferior de la lista."
+      },
+      {
+        "id": "C",
+        "texto": "La media bajará 22,5 puntos y la mediana bajará 0,25 puntos.",
+        "explicacion": "Incorrecta. Acierta en la mediana, pero no divide entre los 10 datos la diferencia de 22,5 puntos: la media baja 22,5 ÷ 10 = 2,25 puntos."
+      },
+      {
+        "id": "D",
+        "texto": "La media bajará 2,25 puntos y la mediana bajará 0,25 puntos.",
+        "explicacion": "Correcta. La suma baja de 57,4 a 34,9, así que la media pasa de 5,74 a 3,49 (baja 2,25). Ordenados, los datos centrales (5.° y 6.°) eran 3,6 y 3,9, con mediana 3,75; con el 2,5 son 3,4 y 3,6, con mediana 3,5. La mediana baja 0,25."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el dato corregido no solo se achica: pasa de ser el mayor (25) a ser el menor (2,5). Reglas: la media cambia en la diferencia del dato dividida entre n; con 10 datos, la mediana es el promedio del 5.° y el 6.° de la lista ordenada. Cálculo: 22,5 ÷ 10 = 2,25; la mediana pasa de (3,6 + 3,9) ÷ 2 = 3,75 a (3,4 + 3,6) ÷ 2 = 3,5. Conclusión: la media baja 2,25 y la mediana, 0,25.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-046",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Medidas de tendencia central",
+    "subtema": "Nuevo promedio al agregar un dato extremo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Los 20 estudiantes de un grupo de noveno presentaron un simulacro de matemáticas calificado de 0 a 100, y el promedio del grupo fue de 65 puntos. Una semana después llegó un estudiante trasladado de otro colegio, presentó el mismo simulacro y obtuvo 23 puntos. ¿Cuál es el promedio del grupo con los 21 estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "44 puntos",
+        "explicacion": "Incorrecta. Promedia los dos promedios, (65 + 23) ÷ 2, como si el estudiante nuevo pesara lo mismo que los otros 20 juntos."
+      },
+      {
+        "id": "B",
+        "texto": "62,9 puntos",
+        "explicacion": "Incorrecta. Reparte la diferencia (65 − 23 = 42 puntos) entre los 20 estudiantes iniciales: 65 − 42 ÷ 20 = 62,9. Con el estudiante nuevo el grupo tiene 21, así que la diferencia se reparte entre 21: 65 − 42 ÷ 21 = 63."
+      },
+      {
+        "id": "C",
+        "texto": "63 puntos",
+        "explicacion": "Correcta. La suma de los 20 puntajes es 20 × 65 = 1.300. Con el estudiante nuevo, la suma es 1.300 + 23 = 1.323, y 1.323 ÷ 21 = 63."
+      },
+      {
+        "id": "D",
+        "texto": "66,15 puntos",
+        "explicacion": "Incorrecta. Suma bien los 1.323 puntos, pero los divide entre 20 y no entre los 21 estudiantes que ahora tiene el grupo. Por eso el promedio sube, aunque el dato agregado está por debajo del promedio."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el promedio de 65 corresponde a 20 estudiantes y el dato nuevo es 23. Regla: para agregar un dato a un promedio se reconstruye la suma total (promedio × número de datos), se suma el dato nuevo y se divide entre el nuevo número de datos. Cálculo: 20 × 65 = 1.300; 1.300 + 23 = 1.323; 1.323 ÷ 21 = 63. Conclusión: el promedio baja a 63 puntos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-047",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Medidas de tendencia central",
+    "subtema": "Media frente a mediana: datos por encima del promedio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Estos son los puntajes, ordenados de menor a mayor, de los 15 estudiantes de un grupo de décimo en una prueba diagnóstica de lectura calificada de 0 a 100:\n\n42, 45, 47, 48, 50, 51, 52, 53, 55, 56, 58, 88, 91, 94 y 95\n\nEl docente quiere saber qué porcentaje del grupo obtuvo un puntaje mayor que el promedio del grupo. ¿Cuál es ese porcentaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "26,7%",
+        "explicacion": "Correcta. La suma es 925, así que el promedio es 925 ÷ 15 ≈ 61,7. Solo 4 estudiantes (88, 91, 94 y 95) superan ese valor: 4 ÷ 15 ≈ 26,7%."
+      },
+      {
+        "id": "B",
+        "texto": "46,7%",
+        "explicacion": "Incorrecta. Cuenta los 7 estudiantes que están por encima de la mediana (53), no del promedio: 7 ÷ 15 ≈ 46,7%. Los cuatro puntajes altos suben la media hasta 61,7, muy por encima de la mediana."
+      },
+      {
+        "id": "C",
+        "texto": "50,0%",
+        "explicacion": "Incorrecta. Supone que el promedio parte al grupo en dos mitades iguales. Eso lo hace la mediana; aquí los cuatro puntajes altos suben el promedio y dejan a la mayoría por debajo."
+      },
+      {
+        "id": "D",
+        "texto": "73,3%",
+        "explicacion": "Incorrecta. Es el porcentaje de estudiantes que quedaron por debajo del promedio (11 de 15). La pregunta es por los que lo superan."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay cuatro puntajes muy altos (88 a 95) y once entre 42 y 58. Regla: la media no divide los datos en dos mitades; cuando unos pocos valores son muy altos, la media sube y la mayoría queda por debajo. Cálculo: suma 925; promedio 925 ÷ 15 ≈ 61,7; lo superan 4 estudiantes; 4 ÷ 15 ≈ 26,7%. Conclusión: 26,7% del grupo.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-048",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Promedio ponderado",
+    "subtema": "Nota del período con los componentes del SIEE",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "El sistema institucional de evaluación (SIEE) de un colegio establece que la nota de cada período en un área se calcula con cuatro componentes, con los pesos de la tabla. La tabla muestra también las notas de un estudiante en el segundo período de ciencias naturales:\n\nComponente | Peso | Nota del estudiante\nSaber (evaluaciones escritas) | 40% | 2,0\nHacer (talleres y laboratorios) | 35% | 2,8\nSer (actitud y convivencia) | 15% | 4,4\nAutoevaluación | 10% | 4,8\n\nLas notas van de 1,0 a 5,0. ¿Cuál es la nota del estudiante en el segundo período?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "2,44",
+        "explicacion": "Incorrecta. Pondera bien Saber, Hacer y Ser, pero omite la Autoevaluación: 0,80 + 0,98 + 0,66 = 2,44. Falta sumar 0,10 × 4,8 = 0,48."
+      },
+      {
+        "id": "B",
+        "texto": "2,92",
+        "explicacion": "Correcta. Se multiplica cada nota por su peso y se suman los productos: 0,40 × 2,0 + 0,35 × 2,8 + 0,15 × 4,4 + 0,10 × 4,8 = 0,80 + 0,98 + 0,66 + 0,48 = 2,92."
+      },
+      {
+        "id": "C",
+        "texto": "3,50",
+        "explicacion": "Incorrecta. Es el promedio simple de las cuatro notas, (2,0 + 2,8 + 4,4 + 4,8) ÷ 4 = 3,50, como si cada componente pesara 25%. Las notas altas están en los componentes que menos pesan (15% y 10%)."
+      },
+      {
+        "id": "D",
+        "texto": "3,60",
+        "explicacion": "Incorrecta. Es la mediana de las cuatro notas, (2,8 + 4,4) ÷ 2 = 3,60. La nota del período es un promedio ponderado, no el valor central de las notas."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: las notas bajas están en los componentes que más pesan (Saber 40% y Hacer 35%) y las altas en los que menos pesan. Regla: el promedio ponderado multiplica cada nota por su peso y suma los productos (los pesos suman 100%). Cálculo: 0,80 + 0,98 + 0,66 + 0,48 = 2,92. Conclusión: 2,92, por debajo de 3,0, aunque el promedio simple de los componentes sea 3,50.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-049",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Promedio ponderado",
+    "subtema": "Nota final del área con una recuperación de valor limitado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Según el SIEE de un colegio, la nota final de cada área es el promedio ponderado de los cuatro períodos: primero 20%, segundo 25%, tercero 25% y cuarto 30%. El mismo SIEE dice: «Si el estudiante aprueba la actividad de recuperación de un período, la nota de ese período se reemplaza por 3,0, cualquiera que sea la nota obtenida en la recuperación». Estas son las notas de un estudiante en matemáticas:\n\nPeríodo | Nota\nPrimero | 3,4\nSegundo | 2,2\nTercero | 3,6\nCuarto | 3,8\n\nEl estudiante presentó la recuperación del segundo período y obtuvo 4,0. ¿Cuál es su nota final en matemáticas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3,45",
+        "explicacion": "Incorrecta. Aplica bien el reemplazo por 3,0, pero promedia los cuatro períodos como si pesaran lo mismo: (3,4 + 3,0 + 3,6 + 3,8) ÷ 4 = 3,45."
+      },
+      {
+        "id": "B",
+        "texto": "3,47",
+        "explicacion": "Correcta. La nota del segundo período queda en 3,0. Nota final: 0,20 × 3,4 + 0,25 × 3,0 + 0,25 × 3,6 + 0,30 × 3,8 = 0,68 + 0,75 + 0,90 + 1,14 = 3,47."
+      },
+      {
+        "id": "C",
+        "texto": "3,70",
+        "explicacion": "Incorrecta. Comete dos errores: registra el 4,0 de la recuperación en lugar de 3,0 y promedia sin pesos: (3,4 + 4,0 + 3,6 + 3,8) ÷ 4 = 3,70."
+      },
+      {
+        "id": "D",
+        "texto": "3,72",
+        "explicacion": "Incorrecta. Pondera bien, pero registra el 4,0 de la recuperación, cuando el SIEE reemplaza la nota del período por 3,0: 0,68 + 1,00 + 0,90 + 1,14 = 3,72."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la recuperación aprobada deja el segundo período en 3,0, no en 4,0. Regla: la nota final es el promedio ponderado con pesos de 20%, 25%, 25% y 30%. Cálculo: 0,20 × 3,4 + 0,25 × 3,0 + 0,25 × 3,6 + 0,30 × 3,8 = 3,47. Conclusión: 3,47. Usar el 4,0 o promediar sin pesos lleva a 3,72, 3,70 o 3,45.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-050",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Promedio ponderado",
+    "subtema": "Comparar estudiantes con el promedio ponderado y no con el simple",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "En un colegio que organiza el año en tres trimestres, el SIEE calcula la nota final de cada área así: primer trimestre 30%, segundo trimestre 30% y tercer trimestre 40%. Al terminar el año, el colegio entrega una mención en lenguaje al estudiante de undécimo con la nota final más alta del área. Estas son las notas de los cuatro finalistas:\n\nEstudiante | Primer trimestre | Segundo trimestre | Tercer trimestre\nMariana | 4,3 | 4,2 | 2,7\nFelipe | 4,6 | 2,8 | 3,3\nDaniela | 3,9 | 2,6 | 4,1\nGabriela | 3,1 | 4,2 | 3,7\n\n¿Quién debe recibir la mención?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mariana",
+        "explicacion": "Incorrecta. Mariana tiene el promedio simple más alto (11,2 ÷ 3 ≈ 3,73), pero su nota más baja está en el trimestre que más pesa. Ponderada, su nota es 0,30 × 4,3 + 0,30 × 4,2 + 0,40 × 2,7 = 3,63."
+      },
+      {
+        "id": "B",
+        "texto": "Felipe",
+        "explicacion": "Incorrecta. Felipe tiene la nota más alta de la tabla (4,6), pero una sola nota no decide. Su nota final es 1,38 + 0,84 + 1,32 = 3,54, la más baja de los cuatro."
+      },
+      {
+        "id": "C",
+        "texto": "Daniela",
+        "explicacion": "Incorrecta. Daniela tiene la mejor nota del tercer trimestre (4,1), el de mayor peso, pero su 2,6 del segundo la baja: 1,17 + 0,78 + 1,64 = 3,59."
+      },
+      {
+        "id": "D",
+        "texto": "Gabriela",
+        "explicacion": "Correcta. Gabriela obtiene 0,30 × 3,1 + 0,30 × 4,2 + 0,40 × 3,7 = 0,93 + 1,26 + 1,48 = 3,67, la nota ponderada más alta (Mariana 3,63, Daniela 3,59 y Felipe 3,54)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el tercer trimestre pesa 40% y los otros dos, 30% cada uno. Regla: la nota final es el promedio ponderado, no el simple; un buen promedio simple no gana si la nota baja cae en el trimestre de más peso. Cálculo: Gabriela 3,67; Mariana 3,63; Daniela 3,59; Felipe 3,54. Conclusión: la mención es para Gabriela, aunque Mariana tenga el promedio simple más alto (3,73).",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-051",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Probabilidad",
+    "subtema": "Probabilidad simple en un sorteo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Para financiar una salida pedagógica, la asociación de padres de familia de un colegio imprimió 200 boletas numeradas para una rifa, pero solo vendió 160. El reglamento de la rifa dice que el número ganador se sorteará solo entre las boletas vendidas. La familia de Juliana compró 4 boletas. ¿Cuál es la probabilidad de que una de las boletas de esa familia gane la rifa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "0,5%",
+        "explicacion": "Incorrecta. Comete dos errores: cuenta una sola boleta y usa las 200 impresas: 1 ÷ 200 = 0,5%. La familia tiene 4 boletas y el sorteo es solo entre las 160 vendidas."
+      },
+      {
+        "id": "B",
+        "texto": "0,625%",
+        "explicacion": "Incorrecta. Usa bien las 160 boletas vendidas, pero cuenta una sola boleta: 1 ÷ 160 = 0,625%. La familia tiene 4 casos favorables."
+      },
+      {
+        "id": "C",
+        "texto": "2,0%",
+        "explicacion": "Incorrecta. Cuenta bien las 4 boletas, pero divide entre las 200 impresas: 4 ÷ 200 = 2,0%. Las 40 boletas que no se vendieron no participan en el sorteo."
+      },
+      {
+        "id": "D",
+        "texto": "2,5%",
+        "explicacion": "Correcta. Hay 160 boletas en el sorteo, todas con la misma probabilidad, y 4 son de la familia: 4 ÷ 160 = 0,025, es decir, 2,5%."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el sorteo se hace solo entre las 160 boletas vendidas, y la familia tiene 4. Regla: probabilidad = casos favorables ÷ casos posibles, cuando todos son igual de probables. Cálculo: 4 ÷ 160 = 0,025. Conclusión: 2,5%. Usar las 200 boletas impresas o contar una sola boleta lleva a 2,0%, 0,625% o 0,5%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-052",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Probabilidad",
+    "subtema": "Probabilidad de la unión de dos eventos en una tabla de doble entrada",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "La matrícula de la sede de básica secundaria de un colegio es la siguiente:\n\nGrado | Jornada mañana | Jornada tarde | Total\nSexto | 42 | 38 | 80\nSéptimo | 40 | 30 | 70\nOctavo | 35 | 25 | 60\nNoveno | 33 | 17 | 50\nTotal | 150 | 110 | 260\n\nPara una encuesta de clima escolar se escogerá al azar a un estudiante de la sede. ¿Cuál es la probabilidad de que el estudiante escogido sea de sexto grado o de la jornada de la tarde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "14,6%",
+        "explicacion": "Incorrecta. Es la probabilidad de que cumpla las dos condiciones a la vez (sexto y tarde): 38 ÷ 260 ≈ 14,6%. La pregunta usa «o»: basta con que cumpla una de las dos."
+      },
+      {
+        "id": "B",
+        "texto": "47,5%",
+        "explicacion": "Incorrecta. Calcula la proporción de estudiantes de la tarde dentro de sexto: 38 ÷ 80 = 47,5%. Eso responde a otra pregunta (si el escogido es de sexto, qué tan probable es que sea de la tarde) y no usa los 260 estudiantes de la sede."
+      },
+      {
+        "id": "C",
+        "texto": "58,5%",
+        "explicacion": "Correcta. Son de sexto o de la tarde 80 + 110 − 38 = 152 estudiantes; se restan los 38 de sexto en la tarde porque están en los dos grupos. 152 ÷ 260 ≈ 58,5%."
+      },
+      {
+        "id": "D",
+        "texto": "73,1%",
+        "explicacion": "Incorrecta. Suma los 80 de sexto y los 110 de la tarde sin restar los 38 que están en ambos grupos, así que los cuenta dos veces: 190 ÷ 260 ≈ 73,1%."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: 38 estudiantes son de sexto y de la tarde a la vez. Regla: P(A o B) = P(A) + P(B) − P(A y B); si no se resta la intersección, esos estudiantes se cuentan dos veces. Cálculo: (80 + 110 − 38) ÷ 260 = 152 ÷ 260 ≈ 0,585. Conclusión: 58,5%.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-053",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Probabilidad",
+    "subtema": "Probabilidad de dos eventos independientes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "La matrícula de la sede de básica secundaria de un colegio es la siguiente:\n\nGrado | Jornada mañana | Jornada tarde | Total\nSexto | 42 | 38 | 80\nSéptimo | 40 | 30 | 70\nOctavo | 35 | 25 | 60\nNoveno | 33 | 17 | 50\nTotal | 150 | 110 | 260\n\nPara el día de la ciencia, la sede sorteará una tableta entre los 150 estudiantes de la jornada de la mañana y otra entre los 110 de la jornada de la tarde. Los dos sorteos son independientes y, en cada uno, todos los estudiantes de la jornada tienen la misma probabilidad de ganar. ¿Cuál es la probabilidad de que los dos ganadores sean de noveno grado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3,4%",
+        "explicacion": "Correcta. En la mañana, la probabilidad de que gane un estudiante de noveno es 33 ÷ 150 = 0,22; en la tarde, 17 ÷ 110 ≈ 0,155. Como los sorteos son independientes, se multiplican: (33 ÷ 150) × (17 ÷ 110) = 0,034, es decir, 3,4%."
+      },
+      {
+        "id": "B",
+        "texto": "3,7%",
+        "explicacion": "Incorrecta. Usa para cada sorteo la proporción de noveno en toda la sede (50 ÷ 260) y la eleva al cuadrado: (50 ÷ 260)² ≈ 3,7%. Cada tableta se sortea solo entre los estudiantes de una jornada, y noveno no pesa lo mismo en las dos."
+      },
+      {
+        "id": "C",
+        "texto": "19,2%",
+        "explicacion": "Incorrecta. Calcula la probabilidad de escoger a uno de noveno en un único sorteo entre toda la sede: 50 ÷ 260 ≈ 19,2%. Hay dos sorteos, y los dos ganadores deben ser de noveno."
+      },
+      {
+        "id": "D",
+        "texto": "37,5%",
+        "explicacion": "Incorrecta. Suma las dos probabilidades (22% + 15,5% ≈ 37,5%). La suma sirve para resultados que se excluyen dentro de un mismo sorteo; para que ocurran a la vez dos eventos independientes, las probabilidades se multiplican."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: hay dos sorteos separados: 33 de noveno entre 150 en la mañana y 17 entre 110 en la tarde. Regla: la probabilidad de que ocurran dos eventos independientes es el producto de sus probabilidades. Cálculo: (33 ÷ 150) × (17 ÷ 110) = 0,22 × 0,1545 ≈ 0,034. Conclusión: 3,4%. Sumar las probabilidades (37,5%) o tratar los sorteos como uno solo (19,2%) son errores típicos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-054",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Probabilidad",
+    "subtema": "Dos selecciones al azar sin reemplazo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Un grupo de undécimo tiene 20 estudiantes, y 8 de ellos viven en zona rural. El rector escogerá al azar a 2 estudiantes distintos del grupo para que representen al colegio en un foro municipal de juventud. ¿Cuál es la probabilidad de que los dos escogidos vivan en zona rural?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "14,7%",
+        "explicacion": "Correcta. La probabilidad de que el primero sea rural es 8 ÷ 20. Si el primero es rural, quedan 7 rurales entre 19 estudiantes: 7 ÷ 19. Se multiplican: (8 ÷ 20) × (7 ÷ 19) = 56 ÷ 380 ≈ 14,7%."
+      },
+      {
+        "id": "B",
+        "texto": "16,0%",
+        "explicacion": "Incorrecta. Multiplica 8 ÷ 20 por sí mismo, 0,4 × 0,4 = 16%, como si el primer escogido volviera al grupo y pudiera salir otra vez. Al escoger dos estudiantes distintos, para el segundo quedan 7 rurales entre 19."
+      },
+      {
+        "id": "C",
+        "texto": "40,0%",
+        "explicacion": "Incorrecta. Es la probabilidad de que un solo escogido sea rural (8 ÷ 20). La pregunta exige que lo sean los dos."
+      },
+      {
+        "id": "D",
+        "texto": "80,0%",
+        "explicacion": "Incorrecta. Suma las probabilidades de los dos escogidos (40% + 40%). Que ocurran las dos cosas a la vez es menos probable que cada una por separado, así que las probabilidades se multiplican."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: se escogen 2 estudiantes distintos, así que el primero no vuelve al grupo. Regla: la probabilidad de dos eventos seguidos es el producto de la probabilidad del primero por la del segundo, dado que ocurrió el primero. Cálculo: (8 ÷ 20) × (7 ÷ 19) = 56 ÷ 380 ≈ 0,147. Conclusión: 14,7%. Repetir 8 ÷ 20 (16%) o sumar (80%) son los errores típicos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-055",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Probabilidad",
+    "subtema": "Probabilidad de que ocurra al menos uno de dos eventos independientes",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "El Programa de Alimentación Escolar (PAE) de una sede depende de dos proveedores. Según los registros del último semestre, el proveedor de lácteos no entrega a tiempo el 10% de los días, y el de frutas, el 15%. Los incumplimientos de un proveedor no dependen de los del otro. ¿Cuál es la probabilidad de que, en un día cualquiera, al menos uno de los dos proveedores no entregue a tiempo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "1,5%",
+        "explicacion": "Incorrecta. Es la probabilidad de que fallen los dos el mismo día: 0,10 × 0,15 = 1,5%. «Al menos uno» incluye también los días en que falla solo uno de ellos."
+      },
+      {
+        "id": "B",
+        "texto": "23,5%",
+        "explicacion": "Correcta. La probabilidad de que ninguno falle es 0,90 × 0,85 = 0,765. «Al menos uno falla» es el evento contrario: 1 − 0,765 = 0,235, es decir, 23,5%."
+      },
+      {
+        "id": "C",
+        "texto": "25,0%",
+        "explicacion": "Incorrecta. Suma las dos probabilidades (10% + 15%) y así cuenta dos veces los días en que fallan los dos proveedores (1,5%): 25% − 1,5% = 23,5%."
+      },
+      {
+        "id": "D",
+        "texto": "76,5%",
+        "explicacion": "Incorrecta. Es la probabilidad de que los dos entreguen a tiempo (0,90 × 0,85 = 76,5%). La pregunta es por el evento contrario."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los incumplimientos son independientes, con probabilidades de 10% y 15%. Regla: P(al menos uno) = 1 − P(ninguno), y la probabilidad de que no falle ninguno es el producto 0,90 × 0,85. Cálculo: 1 − 0,765 = 0,235. Conclusión: 23,5%. Sumar 10% + 15% cuenta dos veces los días en que fallan ambos.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-056",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Conteo",
+    "subtema": "Principio de multiplicación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": null,
+    "pregunta": "Para la feria de la ciencia, cada grupo de estudiantes debe inscribir su proyecto escogiendo un tema entre 12 temas propuestos, un formato de presentación entre 3 (cartel, maqueta o video) y una franja horaria entre 4. ¿Cuántas inscripciones distintas (tema, formato y franja) son posibles?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "19 inscripciones",
+        "explicacion": "Incorrecta. Suma las opciones de cada elección (12 + 3 + 4). Cuando las elecciones se combinan entre sí, el número de resultados se multiplica."
+      },
+      {
+        "id": "B",
+        "texto": "36 inscripciones",
+        "explicacion": "Incorrecta. Combina solo el tema y el formato (12 × 3) y deja por fuera las 4 franjas horarias."
+      },
+      {
+        "id": "C",
+        "texto": "48 inscripciones",
+        "explicacion": "Incorrecta. Combina solo el tema y la franja (12 × 4) y deja por fuera los 3 formatos de presentación."
+      },
+      {
+        "id": "D",
+        "texto": "144 inscripciones",
+        "explicacion": "Correcta. Por el principio de multiplicación, cada tema se combina con cada formato y con cada franja: 12 × 3 × 4 = 144."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: cada inscripción combina tres elecciones: 12 temas, 3 formatos y 4 franjas. Regla: principio de multiplicación; si una elección tiene m opciones, otra n y otra p, hay m × n × p combinaciones. Cálculo: 12 × 3 × 4 = 144. Conclusión: 144 inscripciones posibles.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-057",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Conteo",
+    "subtema": "Selección para cargos distintos (el orden importa)",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Seis docentes se ofrecieron para organizar los juegos intercursos. El rector escogerá entre ellos a un coordinador general, a un responsable de logística y a un responsable de premiación; ningún docente puede tener dos de esos cargos. ¿De cuántas maneras distintas puede el rector asignar los tres cargos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "15 maneras",
+        "explicacion": "Incorrecta. Suma las opciones de cada cargo (6 + 5 + 4). Cada elección se combina con las demás, así que las opciones se multiplican."
+      },
+      {
+        "id": "B",
+        "texto": "18 maneras",
+        "explicacion": "Incorrecta. Multiplica los 6 docentes por los 3 cargos. Eso no cuenta las formas de repartir los cargos: para cada coordinador posible hay 5 opciones de logística y, luego, 4 de premiación."
+      },
+      {
+        "id": "C",
+        "texto": "20 maneras",
+        "explicacion": "Incorrecta. Cuenta los grupos de 3 docentes sin tener en cuenta qué cargo ocupa cada uno (120 ÷ 6 = 20). Aquí los cargos son distintos: no es lo mismo que un docente coordine y otro haga la logística que al revés."
+      },
+      {
+        "id": "D",
+        "texto": "120 maneras",
+        "explicacion": "Correcta. Hay 6 opciones para coordinador; escogido este, quedan 5 para logística y luego 4 para premiación: 6 × 5 × 4 = 120."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los tres cargos son distintos y nadie puede repetir. Regla: cuando importa qué cargo ocupa cada persona y no hay repetición, se multiplican las opciones que quedan en cada paso. Cálculo: 6 × 5 × 4 = 120. Conclusión: 120 maneras. Si los cargos fueran iguales, serían 20 grupos (120 ÷ 6).",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-058",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Muestras",
+    "subtema": "Estimar un total de la población a partir de una muestra aleatoria",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Un colegio de 1.200 estudiantes quiere saber cuántos computadores portátiles necesitaría para un programa de préstamo. Escogió al azar a 80 estudiantes y les preguntó si tienen computador en casa: 28 respondieron que no. Con base en esa muestra, ¿cuántos estudiantes del colegio se estima que no tienen computador en casa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "336 estudiantes",
+        "explicacion": "Incorrecta. Toma los 28 estudiantes de la muestra como si fueran un porcentaje (28%) y lo aplica a los 1.200. En la muestra, 28 de 80 equivalen al 35%."
+      },
+      {
+        "id": "B",
+        "texto": "392 estudiantes",
+        "explicacion": "Incorrecta. Aplica bien el 35%, pero solo a los 1.120 estudiantes que no fueron encuestados (0,35 × 1.120 = 392), y olvida sumar los 28 encuestados que tampoco tienen computador."
+      },
+      {
+        "id": "C",
+        "texto": "420 estudiantes",
+        "explicacion": "Correcta. En la muestra, 28 de 80 no tienen computador: 28 ÷ 80 = 0,35. Como la muestra es aleatoria, esa proporción estima la del colegio: 0,35 × 1.200 = 420."
+      },
+      {
+        "id": "D",
+        "texto": "780 estudiantes",
+        "explicacion": "Incorrecta. Es la estimación de los que sí tienen computador: 52 de 80, el 65%, y 0,65 × 1.200 = 780. La pregunta es por los que no tienen."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la muestra es aleatoria y en ella 28 de 80 estudiantes no tienen computador. Regla: en una muestra aleatoria, la proporción de la muestra estima la de la población, y el total se estima multiplicando esa proporción por el tamaño de la población. Cálculo: 28 ÷ 80 = 0,35; 0,35 × 1.200 = 420. Conclusión: unos 420 estudiantes; es una estimación, no un conteo exacto.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-059",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Muestras",
+    "subtema": "Combinar los resultados de una muestra con grupos de distinto tamaño",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": null,
+    "pregunta": "Un colegio tiene 600 estudiantes en la jornada de la mañana y 200 en la de la tarde. Para estimar qué porcentaje de todos sus estudiantes usa la biblioteca escolar al menos una vez por semana, la bibliotecaria encuestó al azar a 50 estudiantes de cada jornada:\n\nJornada | Estudiantes matriculados | Encuestados | Usan la biblioteca cada semana\nMañana | 600 | 50 | 20\nTarde | 200 | 50 | 35\n\nCon esos datos, ¿qué porcentaje de los estudiantes del colegio se estima que usa la biblioteca cada semana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "6,9%",
+        "explicacion": "Incorrecta. Divide los 55 encuestados que usan la biblioteca entre los 800 matriculados (55 ÷ 800 ≈ 6,9%). Mezcla un dato de la muestra con el total de la población: los 55 son solo los de la muestra."
+      },
+      {
+        "id": "B",
+        "texto": "47,5%",
+        "explicacion": "Correcta. En la mañana la usa el 40% (20 de 50) y en la tarde el 70% (35 de 50). Aplicados a cada jornada: 0,40 × 600 = 240 y 0,70 × 200 = 140. En total, 380 de 800, es decir, 47,5%."
+      },
+      {
+        "id": "C",
+        "texto": "55,0%",
+        "explicacion": "Incorrecta. Junta las dos muestras (55 de 100) como si las dos jornadas tuvieran el mismo tamaño. La mañana tiene el triple de estudiantes, pero en la muestra pesa lo mismo que la tarde."
+      },
+      {
+        "id": "D",
+        "texto": "62,5%",
+        "explicacion": "Incorrecta. Cruza los tamaños: aplica el 40% a los 200 de la tarde y el 70% a los 600 de la mañana, (80 + 420) ÷ 800 = 62,5%. Cada porcentaje se aplica a su propia jornada."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: se encuestaron 50 estudiantes por jornada, pero la mañana tiene 600 y la tarde 200. Regla: si la muestra es igual en grupos de distinto tamaño, el porcentaje global es el promedio de los porcentajes de cada grupo ponderado por su tamaño. Cálculo: 0,40 × 600 + 0,70 × 200 = 380; 380 ÷ 800 = 0,475. Conclusión: 47,5%. Juntar las dos muestras da 55%, que sobrerrepresenta a la tarde.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-RCD-060",
+    "version": 1,
+    "estado": "beta",
+    "capa": 2,
+    "eje": "docentes",
+    "modulo": "Razonamiento Cuantitativo (Prueba Docente)",
+    "tema": "Dispersión y datos atípicos",
+    "subtema": "Comparar el promedio y el rango de dos grupos de distinto tamaño",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": null,
+    "pregunta": "Dos grupos de undécimo presentaron el mismo simulacro de inglés, calificado de 0 a 100. Estos fueron sus puntajes:\n\nGrupo | Estudiantes | Puntajes\n11A | 9 | 52, 61, 58, 70, 49, 66, 73, 55, 64\n11B | 7 | 63, 71, 57, 68, 75, 60, 62\n\n¿Cuál de las siguientes afirmaciones sobre los dos grupos es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "11A tiene mayor promedio y también mayor rango.",
+        "explicacion": "Incorrecta. Acierta en el rango, pero compara las sumas de los puntajes (548 frente a 456) en lugar de los promedios. 11A suma más porque tiene 9 estudiantes; su promedio es 548 ÷ 9 ≈ 60,9, menor que el de 11B (456 ÷ 7 ≈ 65,1)."
+      },
+      {
+        "id": "B",
+        "texto": "11B tiene mayor promedio y también mayor rango.",
+        "explicacion": "Incorrecta. Acierta en el promedio, pero confunde el rango con el puntaje máximo: 11B tiene el puntaje más alto (75), pero su rango es 75 − 57 = 18, menor que el de 11A (73 − 49 = 24)."
+      },
+      {
+        "id": "C",
+        "texto": "11B tiene mayor promedio, pero 11A tiene mayor rango.",
+        "explicacion": "Correcta. Promedios: 11A, 548 ÷ 9 ≈ 60,9; 11B, 456 ÷ 7 ≈ 65,1. Rangos: 11A, 73 − 49 = 24; 11B, 75 − 57 = 18. 11B tiene mayor promedio, y 11A, mayor dispersión según el rango."
+      },
+      {
+        "id": "D",
+        "texto": "11A tiene mayor promedio, pero 11B tiene mayor rango.",
+        "explicacion": "Incorrecta. Comete los dos errores: compara las sumas (548 frente a 456) en lugar de los promedios, y toma el puntaje más alto (75, de 11B) como si fuera el rango."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: los grupos tienen distinto número de estudiantes (9 y 7). Reglas: el promedio es la suma dividida entre el número de datos, así que las sumas no se comparan directamente; el rango es el dato mayor menos el menor. Cálculo: promedios 60,9 (11A) y 65,1 (11B); rangos 24 (11A) y 18 (11B). Conclusión: 11B tiene mayor promedio, y 11A, mayor rango.",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]

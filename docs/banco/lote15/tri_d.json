@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "TC-TRI-061",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Causación del IVA en los servicios pagados por anticipado y período bimestral",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 429 lit. c",
+      "art. 600 num. 1 (modificado por el art. 196 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "c. En las prestaciones de servicios, en la fecha de emisión de la factura o documento equivalente, o en la fecha de terminación de los servicios o del pago o abono en cuenta, la que fuere anterior. [...] 1. Declaración y pago bimestral para aquellos responsables de este impuesto, grandes contribuyentes y aquellas personas jurídicas y naturales cuyos ingresos brutos a 31 de diciembre del año gravable anterior sean iguales o superiores a noventa y dos mil (92.000) UVT y para los responsables de que tratan los artículos 477 y 481 de este Estatuto. Los períodos bimestrales son: enero-febrero; marzo-abril; mayo-junio; julio-agosto; septiembre-octubre; y noviembre-diciembre.",
+    "pregunta": "Una analista de la División de Fiscalización revisa las declaraciones de IVA de 2026 de una SAS de mantenimiento industrial, responsable del impuesto, que no es gran contribuyente ni exportadora; sus ingresos brutos de 2025 fueron $5.300.000.000. La SAS pactó con una cementera el mantenimiento de un horno por $200.000.000 más IVA. La cementera pagó el precio total por anticipado el viernes 28 de agosto de 2026; el trabajo terminó el martes 15 de septiembre, y la factura electrónica se expidió el martes 3 de noviembre. Para el ejercicio, tome la UVT de 2025: $49.799. ¿En qué período debía la SAS declarar el IVA de ese servicio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Julio-agosto de 2026.",
+        "explicacion": "Correcta. En los servicios, el IVA se causa en la primera de tres fechas: factura, terminación o pago. La primera fue el pago total del 28 de agosto. Como los ingresos de 2025 ($5.300 millones) superan 92.000 UVT ($4.581.508.000), la SAS declara por bimestres, y el 28 de agosto cae en julio-agosto."
+      },
+      {
+        "id": "B",
+        "texto": "Septiembre-octubre de 2026.",
+        "explicacion": "Incorrecta. Toma la fecha en que terminó el servicio (15 de septiembre). El pago anticipado ocurrió antes, y la causación se da en la fecha que fuere anterior."
+      },
+      {
+        "id": "C",
+        "texto": "Noviembre-diciembre de 2026.",
+        "explicacion": "Incorrecta. Toma la fecha de la factura (3 de noviembre), como si el IVA de los servicios se causara solo al facturar. El pago y la terminación también lo causan si ocurren antes."
+      },
+      {
+        "id": "D",
+        "texto": "Mayo-agosto de 2026.",
+        "explicacion": "Incorrecta. Acierta en la fecha de causación, pero trata a la SAS como responsable cuatrimestral. Sus ingresos de 2025 superan 92.000 UVT, así que declara por bimestres."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el pago total (28 de agosto) fue anterior a la terminación (15 de septiembre) y a la factura (3 de noviembre), y los ingresos de 2025 fueron $5.300 millones. Reglas: el art. 429 lit. c del ET causa el IVA de los servicios en la fecha de la factura, de la terminación o del pago, la que fuere anterior; el art. 600 num. 1 fija el período bimestral si los ingresos del año anterior llegan a 92.000 UVT (92.000 × $49.799 = $4.581.508.000). Conclusión: julio-agosto de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-062",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Causación en la venta y aumento posterior del precio",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 429 lit. a y par."
+    ],
+    "texto_fuente": "a. En las ventas, en la fecha de emisión de la factura o documento equivalente y a falta de éstos, en el momento de la entrega, aunque se haya pactado reserva de dominio, pacto de retroventa o condición resolutoria. [...] PARAGRAFO. Cuando el valor convenido sufriere un aumento con posterioridad a la venta, se generará el impuesto sobre ese mayor valor, en la fecha en que éste se cause.",
+    "pregunta": "Un gestor de servicio al ciudadano atiende a la contadora de una SAS responsable del IVA que declara por bimestres. La SAS vendió una máquina empacadora con reserva de dominio: expidió la factura electrónica el jueves 26 de febrero de 2026 y entregó la máquina el lunes 9 de marzo. El contrato preveía ajustar el precio según el costo final de importación de algunos componentes, y ese mayor valor, de $30.000.000, se causó el martes 12 de mayo de 2026. ¿En qué declaraciones de IVA debe incluir la SAS la venta y el ajuste del precio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La venta en marzo-abril, cuando entregó la máquina, y el ajuste en mayo-junio.",
+        "explicacion": "Incorrecta. La entrega solo determina la causación a falta de factura o documento equivalente. Aquí la factura se expidió antes, el 26 de febrero."
+      },
+      {
+        "id": "B",
+        "texto": "La venta en enero-febrero, por la fecha de la factura, y el ajuste en mayo-junio.",
+        "explicacion": "Correcta. En las ventas, el IVA se causa en la fecha de la factura (26 de febrero, bimestre enero-febrero), aunque se haya pactado reserva de dominio. El mayor valor convenido después genera IVA en la fecha en que se causa (12 de mayo, bimestre mayo-junio)."
+      },
+      {
+        "id": "C",
+        "texto": "La venta en enero-febrero y el ajuste en una corrección de esa misma declaración.",
+        "explicacion": "Incorrecta. Ubica bien la venta, pero lleva el ajuste a la declaración original. El aumento posterior del precio genera el impuesto en la fecha en que se causa: mayo-junio."
+      },
+      {
+        "id": "D",
+        "texto": "La venta en marzo-abril y el ajuste en una corrección de esa misma declaración.",
+        "explicacion": "Incorrecta. Comete dos errores: toma la entrega en lugar de la factura y lleva el aumento del precio a la declaración de la venta, cuando debe declararse en el período en que se causa."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: factura del 26 de febrero, entrega del 9 de marzo, reserva de dominio y mayor valor causado el 12 de mayo de 2026. Regla: el art. 429 lit. a del ET causa el IVA de la venta en la fecha de la factura (la entrega solo cuenta a falta de factura), aunque se pacte reserva de dominio; su parágrafo grava el aumento posterior del precio en la fecha en que este se cause. Conclusión: la venta va en enero-febrero y el ajuste en mayo-junio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-063",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Período gravable bimestral o cuatrimestral",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 600 nums. 1 y 2 (modificado por el art. 196 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "1. Declaración y pago bimestral para aquellos responsables de este impuesto, grandes contribuyentes y aquellas personas jurídicas y naturales cuyos ingresos brutos a 31 de diciembre del año gravable anterior sean iguales o superiores a noventa y dos mil (92.000) UVT y para los responsables de que tratan los artículos 477 y 481 de este Estatuto. Los períodos bimestrales son: enero-febrero; marzo-abril; mayo-junio; julio-agosto; septiembre-octubre; y noviembre-diciembre. [...] 2. Declaración y pago cuatrimestral para aquellos responsables de este impuesto, personas jurídicas y naturales cuyos ingresos brutos a 31 de diciembre del año gravable anterior sean inferiores a noventa y dos mil (92.000) UVT. Los periodos cuatrimestrales serán enero-abril; mayo-agosto; y septiembre-diciembre.",
+    "pregunta": "En enero de 2026, un facilitador de servicio al ciudadano de la DIAN revisa la periodicidad del IVA de cuatro responsables que ya operaban en 2025 y siguen activos; salvo lo que se indica, ninguno es gran contribuyente, exportador ni productor de bienes exentos. Para el ejercicio, tome la UVT de 2025: $49.799. ¿Cuál de ellos debe declarar y pagar el IVA de 2026 por períodos cuatrimestrales?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una SAS calificada por la DIAN como gran contribuyente, con ingresos brutos de $3.800.000.000 en 2025.",
+        "explicacion": "Incorrecta. Aunque sus ingresos son inferiores a 92.000 UVT, los grandes contribuyentes declaran por bimestres."
+      },
+      {
+        "id": "B",
+        "texto": "Una SAS que exporta toda su producción (art. 481), con ingresos brutos de $2.100.000.000 en 2025.",
+        "explicacion": "Incorrecta. Los responsables del art. 481 declaran por bimestres, cualquiera que sea el monto de sus ingresos."
+      },
+      {
+        "id": "C",
+        "texto": "Un comerciante persona natural, responsable del IVA, con ingresos brutos de $4.900.000.000 en 2025.",
+        "explicacion": "Incorrecta. Sus ingresos ($4.900 millones) superan 92.000 UVT ($4.581.508.000), así que declara por bimestres; ser persona natural no cambia la regla."
+      },
+      {
+        "id": "D",
+        "texto": "Una SAS de confecciones que vende en el país, con ingresos brutos de $4.300.000.000 en 2025.",
+        "explicacion": "Correcta. No es gran contribuyente ni está en los arts. 477 o 481, y sus ingresos de 2025 ($4.300 millones) son inferiores a 92.000 UVT ($4.581.508.000). Declara por cuatrimestres."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la calidad de cada responsable y sus ingresos brutos de 2025. Regla: el art. 600 del ET fija el período bimestral para los grandes contribuyentes, para los responsables de los arts. 477 y 481 y para quienes tuvieron ingresos del año anterior iguales o superiores a 92.000 UVT; los demás declaran por cuatrimestres. Cálculo: 92.000 × $49.799 = $4.581.508.000. Conclusión: solo la SAS con ingresos de $4.300 millones y sin calificación especial declara por cuatrimestres.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-064",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Oportunidad de los impuestos descontables del responsable cuatrimestral",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 496 incs. 1 y 2 (modificado por el art. 194 de la Ley 1819 de 2016)",
+      "art. 600 num. 2 (modificado por el art. 196 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Cuando se trate de responsables que deban declarar bimestralmente, las deducciones e impuestos descontables sólo podrán contabilizarse en el período fiscal correspondiente a la fecha de su causación, o en uno de los tres períodos bimestrales inmediatamente siguientes, y solicitarse en la declaración del período en el cual se haya efectuado su contabilización. [...] Cuando se trate de responsables que deban declarar cuatrimestralmente, las deducciones e impuestos descontables sólo podrán contabilizarse en el período fiscal correspondiente a la fecha de su causación, o en el período cuatrimestral inmediatamente siguiente, y solicitarse en la declaración del período en el cual se haya efectuado su contabilización. [...] 2. Declaración y pago cuatrimestral para aquellos responsables de este impuesto, personas jurídicas y naturales cuyos ingresos brutos a 31 de diciembre del año gravable anterior sean inferiores a noventa y dos mil (92.000) UVT. Los periodos cuatrimestrales serán enero-abril; mayo-agosto; y septiembre-diciembre.",
+    "pregunta": "Una analista de la División de Fiscalización revisa la declaración de IVA del período septiembre-diciembre de 2026 de una SAS que vende materiales de construcción solo en el país, no es gran contribuyente y tuvo ingresos brutos de $3.900.000.000 en 2025. En esa declaración, la SAS incluyó el IVA de una factura de compra de materia prima del lunes 20 de abril de 2026, que su contador había olvidado registrar. Para el ejercicio, tome la UVT de 2025: $49.799. ¿Hasta qué período podía la SAS registrar y pedir ese IVA como descontable?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo en el cuatrimestre enero-abril de 2026.",
+        "explicacion": "Incorrecta. Además del período de causación, el responsable cuatrimestral puede contabilizar el descontable en el período inmediatamente siguiente."
+      },
+      {
+        "id": "B",
+        "texto": "Hasta el cuatrimestre mayo-agosto de 2026.",
+        "explicacion": "Correcta. Con ingresos de 2025 inferiores a 92.000 UVT ($4.581.508.000) y sin calificación especial, la SAS declara por cuatrimestres. El IVA de la compra del 20 de abril se causó en enero-abril y solo podía contabilizarse allí o en mayo-agosto de 2026. En septiembre-diciembre ya era extemporáneo."
+      },
+      {
+        "id": "C",
+        "texto": "Hasta el bimestre septiembre-octubre de 2026.",
+        "explicacion": "Incorrecta. Aplica la regla de los responsables bimestrales (período de causación y tres bimestres siguientes: mayo-junio, julio-agosto y septiembre-octubre). La SAS declara por cuatrimestres."
+      },
+      {
+        "id": "D",
+        "texto": "Hasta el cuatrimestre enero-abril de 2027.",
+        "explicacion": "Incorrecta. Extiende a los cuatrimestrales los tres períodos siguientes que la norma concede a los bimestrales. Para los cuatrimestrales es uno solo."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: ingresos de 2025 de $3.900 millones, sin calificación especial, y factura del 20 de abril de 2026. Reglas: por el art. 600 num. 2 del ET, quien tuvo ingresos inferiores a 92.000 UVT (92.000 × $49.799 = $4.581.508.000) declara por cuatrimestres; por el art. 496, el cuatrimestral solo puede contabilizar el descontable en el período de causación o en el cuatrimestre inmediatamente siguiente. Conclusión: el último período era mayo-agosto de 2026.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-065",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Personas naturales comerciantes que son agentes de retención",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 368-2 (modificado por el art. 26 de la Ley 788 de 2002; cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 392 inc. 1"
+    ],
+    "texto_fuente": "Las personas naturales que tengan la calidad de comerciantes y que en el año inmediatamente anterior tuvieren un patrimonio bruto o unos ingresos brutos superiores a 30.000 UVT también deberán practicar retención en la fuente sobre los pagos o abonos en cuenta que efectúen por los conceptos a los cuales se refieren los artículos 392, 395 y 401, a las tarifas y según las disposiciones vigentes sobre cada uno de ellos. [...] Están sujetos a retención en la fuente los pagos o abonos en cuenta que hagan las personas jurídicas y sociedades de hecho por concepto de honorarios, comisiones, servicios y arrendamientos.",
+    "pregunta": "Un facilitador de servicio al ciudadano atiende a Hernán, comerciante persona natural dueño de una ferretería. En 2025 sus ingresos brutos fueron $1.250.000.000 y, al 31 de diciembre de ese año, su patrimonio bruto era de $1.640.000.000. Durante 2026 paga cada mes el arriendo del local y los honorarios de un abogado. La DIAN nunca lo ha designado como agente de retención. Para el ejercicio, tome la UVT de 2025: $49.799. ¿Debe Hernán practicar retención en la fuente sobre esos pagos de 2026?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No, porque para quedar obligado debe superar a la vez el tope de ingresos y el de patrimonio.",
+        "explicacion": "Incorrecta. La norma dice \"patrimonio bruto o unos ingresos brutos\": basta superar uno de los dos topes."
+      },
+      {
+        "id": "B",
+        "texto": "No, porque una persona natural solo retiene si la DIAN la designa como agente de retención.",
+        "explicacion": "Incorrecta. Los comerciantes personas naturales que superan los topes del art. 368-2 son agentes de retención por mandato de la ley, sin necesidad de designación."
+      },
+      {
+        "id": "C",
+        "texto": "Sí, porque el valor de sus bienes al cierre de 2025 rebasa el límite legal en UVT.",
+        "explicacion": "Correcta. 30.000 UVT × $49.799 = $1.493.970.000. Su patrimonio bruto al 31 de diciembre de 2025 ($1.640 millones) supera ese tope, aunque sus ingresos no lo alcancen. Por eso en 2026 debe retener, entre otros, sobre honorarios y arrendamientos (art. 392)."
+      },
+      {
+        "id": "D",
+        "texto": "Sí, pero solo sobre los honorarios, porque el arriendo de un local no está sujeto a retención.",
+        "explicacion": "Incorrecta. El art. 392 incluye los arrendamientos entre los pagos sujetos a retención, junto con los honorarios, las comisiones y los servicios."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: Hernán es comerciante y su patrimonio bruto al 31 de diciembre de 2025 fue de $1.640 millones, aunque sus ingresos fueron de $1.250 millones. Regla: el art. 368-2 del ET obliga a retener a los comerciantes personas naturales con patrimonio bruto o ingresos brutos del año anterior superiores a 30.000 UVT, entre otros sobre los conceptos del art. 392 (honorarios, comisiones, servicios y arrendamientos). Cálculo: 30.000 × $49.799 = $1.493.970.000. Conclusión: debe retener sobre ambos pagos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-066",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Uniones temporales como agentes de retención",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 368 inc. 1 (aparte entre corchetes incluido por el art. 115 de la Ley 488 de 1998)",
+      "art. 18 inc. 1 (modificado por el art. 20 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Son agentes de retención o de percepción, las entidades de derecho público, los fondos de inversión, los fondos de valores, los fondos de pensiones de jubilación e invalidez, los consorcios, las comunidades organizadas, {las uniones temporales} y las demás personas naturales o jurídicas, sucesiones ilíquidas y sociedades de hecho, que por sus funciones intervengan en actos u operaciones en los cuales deben, por expresa disposición legal, efectuar la retención o percepción del tributo correspondiente. [...] Los contratos de colaboración empresarial tales como consorcios, uniones temporales, joint ventures y cuentas en participación, no son contribuyentes del impuesto sobre la renta y complementarios.",
+    "pregunta": "Dos SAS formaron una unión temporal, con participaciones del 60% y del 40%, para construir una vía que contrató una gobernación. La unión temporal tiene NIT y cuenta bancaria, y de esa cuenta salen los honorarios del ingeniero residente y el arriendo del campamento de la obra. Su representante consulta a una gestora de la DIAN, porque cree que nadie debe retener sobre esos pagos, ya que la unión temporal no declara renta. ¿Qué debe responderle la gestora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que no hay retención, porque la unión temporal no es contribuyente del impuesto sobre la renta.",
+        "explicacion": "Incorrecta. Confunde la calidad de contribuyente con la de agente de retención. Las uniones temporales no son contribuyentes de renta (art. 18), pero la ley las incluye entre los agentes de retención (art. 368)."
+      },
+      {
+        "id": "B",
+        "texto": "Que cada SAS integrante debe retener en proporción a su participación del 60% y del 40%.",
+        "explicacion": "Incorrecta. Los integrantes declaran su parte de los ingresos y costos del contrato, pero estos pagos salen de la cuenta de la unión temporal, y la obligación de retener es de ella."
+      },
+      {
+        "id": "C",
+        "texto": "Que la retención le corresponde a la gobernación, como entidad pública que contrató la obra.",
+        "explicacion": "Incorrecta. La gobernación retiene sobre lo que ella paga a la unión temporal, no sobre los pagos que la unión temporal hace a terceros."
+      },
+      {
+        "id": "D",
+        "texto": "Que la retención la debe practicar la unión temporal cuando les pague a esos terceros.",
+        "explicacion": "Correcta. Quien paga es la unión temporal, desde su cuenta. El art. 368 enumera a las uniones temporales entre los agentes de retención, y lo son aunque, según el art. 18, no sean contribuyentes del impuesto sobre la renta."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los honorarios y el arriendo salen de la cuenta de la unión temporal, que tiene NIT. Reglas: el art. 18 del ET dice que las uniones temporales no son contribuyentes de renta, pero el art. 368 las incluye expresamente entre los agentes de retención. Ser agente de retención no depende de ser contribuyente. Conclusión: la unión temporal debe retener al hacer esos pagos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-067",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Competencia para suspender la autorización de un autorretenedor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989) y Resolución DIAN 227 de 2025 (Resolución Única)",
+    "articulos": [
+      "art. 368 par. 1 del Estatuto Tributario (modificado por el art. 122 de la Ley 223 de 1995)",
+      "art. 365 par. 2 del Estatuto Tributario (modificado por el art. 125 de la Ley 1819 de 2016)",
+      "art. 1.1.3.1.4 num. 1 y los dos incisos que siguen al num. 4 de la Resolución DIAN 227 de 2025 (antes art. 4 de la Resolución 5707 de 2019, modificado por el art. 2 de la Resolución 26 de 2024)"
+    ],
+    "texto_fuente": "Radica en el Director de Impuestos y Aduanas Nacionales, la competencia para autorizar o designar a las personas o entidades que deberán actuar como autorretenedores y suspender la autorización cuando a su juicio no se garantice el pago de los valores autorretenidos. [...] PARÁGRAFO 2o. El Gobierno nacional establecerá un sistema de autorretención en la fuente a título del impuesto sobre la renta y complementarios, el cual no excluye la posibilidad de que los autorretenedores sean sujetos de retención en la fuente. [...] 1. Que el contribuyente autorizado tenga obligaciones exigibles en mora, por más de dos (2) meses, por conceptos tributarios, aduaneros o cambiarios, a la fecha de realización del estudio correspondiente. [...] La Subdirección de Recaudo o la dependencia que haga sus veces, cuando detecte la ocurrencia de cualquiera de las circunstancias aquí señaladas, procederá a expedir la resolución que suspende la autorización para actuar como autorretenedor [...] Cuando se trate de las causales descritas en los numerales 1 y 3 de qué trata el presente artículo, la Dirección Seccional a la que pertenezca el agente autorretenedor adelantará las verificaciones correspondientes y enviará un informe a la Subdirección de Recaudo o dependencia que haga sus veces, para que posteriormente se proceda a expedir la respectiva resolución si hay lugar a ello.",
+    "pregunta": "Un inspector de la División de Recaudo de una dirección seccional detecta que una SAS autorizada como autorretenedora del impuesto sobre la renta lleva cuatro meses sin pagar lo que autorretiene. El jefe de la división quiere quitarle esa calidad cuanto antes y le pide al inspector proyectar el acto para la firma del director seccional. ¿Qué debe advertirle el inspector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la suspensión le corresponde al nivel central de la DIAN (que la decide por resolución), no a la seccional.",
+        "explicacion": "Correcta. El art. 368 par. 1 del ET radica en el Director de la DIAN la competencia para autorizar o designar autorretenedores y para suspender la autorización cuando no se garantice el pago de lo autorretenido. La Resolución DIAN 227 de 2025 (art. 1.1.3.1.4) asigna la expedición de la resolución de suspensión a la Subdirección de Recaudo, del nivel central; ante la mora de más de dos meses, la seccional solo verifica y le envía un informe."
+      },
+      {
+        "id": "B",
+        "texto": "Que el director seccional puede firmarlo, porque la SAS tiene su domicilio fiscal en el territorio de esa seccional.",
+        "explicacion": "Incorrecta. El domicilio fija la competencia de la seccional en otros asuntos, pero esta facultad la ley se la asignó al Director de la DIAN, y la Resolución DIAN 227 de 2025 (art. 1.1.3.1.4) deja la resolución en la Subdirección de Recaudo; la seccional solo verifica y envía un informe."
+      },
+      {
+        "id": "C",
+        "texto": "Que se requiere un decreto del Gobierno nacional, porque a este le corresponde establecer el sistema de autorretención.",
+        "explicacion": "Incorrecta. El Gobierno establece el sistema de autorretención (art. 365 par. 2), pero autorizar, designar o suspender a cada autorretenedor le corresponde a la DIAN en su nivel central (art. 368 par. 1 del ET y art. 1.1.3.1.4 de la Resolución DIAN 227 de 2025), mediante resolución."
+      },
+      {
+        "id": "D",
+        "texto": "Que no cabe suspenderla; lo que procede es cobrar lo adeudado e imponer las sanciones por la falta de pago.",
+        "explicacion": "Incorrecta. La ley prevé la suspensión cuando no se garantiza el pago de lo autorretenido, y la Resolución DIAN 227 de 2025 (art. 1.1.3.1.4 num. 1) la contempla cuando hay obligaciones tributarias en mora por más de dos meses; el cobro y las sanciones no la excluyen."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la autorretenedora lleva cuatro meses sin pagar lo autorretenido y se pretende que el acto lo firme el director seccional. Reglas: el art. 368 par. 1 del ET radica en el Director de la DIAN la competencia para autorizar o designar autorretenedores y suspender la autorización cuando no se garantice el pago; el Gobierno solo establece el sistema (art. 365 par. 2). La Resolución DIAN 227 de 2025 (art. 1.1.3.1.4) incluye como causal la mora de más de dos meses y dispone que la Subdirección de Recaudo, del nivel central, expida la resolución de suspensión; en esa causal, la seccional verifica y envía un informe. Conclusión: la suspensión la decide el nivel central por resolución, no la seccional.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-068",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Retención en la fuente",
+    "subtema": "Retención en pagos al exterior por intereses y consultoría",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 406 num. 1",
+      "art. 408 incs. 2 y 3 (modificado por el art. 98 de la Ley 2010 de 2019)"
+    ],
+    "texto_fuente": "Deberán retener a título de impuesto sobre la renta, quienes hagan pagos o abonos en cuenta por concepto de rentas sujetas a impuesto en Colombia, a favor de: 1. Sociedades u otras entidades extranjeras sin domicilio en el país. [...] Los pagos o abonos en cuenta por concepto de consultorías, servicios técnicos y de asistencia técnica, prestados por personas no residentes o no domiciliadas en Colombia, están sujetos a retención en la fuente a la tarifa única del veinte por ciento (20%), a título de impuestos de renta, bien sea que se presten en el país o desde el exterior. [...] Los pagos o abonos en cuenta por concepto de rendimientos financieros, realizados a personas no residentes o no domiciliadas en el país, originados en créditos obtenidos en el exterior por término igual o superior a un (1) año o por concepto de intereses o costos financieros del canon de arrendamiento originados en contratos de leasing que se celebre directamente o a través de compañías de leasing con empresas extranjeras sin domicilio en Colombia, están sujetos a retención en la fuente a la tarifa del quince por ciento (15%) sobre el valor del pago o abono en cuenta que corresponda al interés o costo financiero.",
+    "pregunta": "Una gestora de fiscalización revisa los pagos al exterior que hizo una SAS colombiana en octubre de 2026: $60.000.000 de intereses de un crédito a tres años que le otorgó un banco extranjero sin domicilio en Colombia, y $80.000.000 por una consultoría logística que una firma extranjera, también sin domicilio en el país, prestó desde su sede en el exterior. Ningún beneficiario está en una jurisdicción no cooperante o de baja imposición, y no aplica ningún convenio para evitar la doble imposición. ¿Cuánto debió retener la SAS, a título de renta, por los dos pagos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$28.000.000",
+        "explicacion": "Incorrecta. Aplica el 20% también a los intereses. Los intereses de créditos obtenidos en el exterior a un año o más tienen una tarifa del 15%."
+      },
+      {
+        "id": "B",
+        "texto": "$21.000.000",
+        "explicacion": "Incorrecta. Aplica el 15% también a la consultoría. Las consultorías prestadas por no residentes tributan al 20%."
+      },
+      {
+        "id": "C",
+        "texto": "$25.000.000",
+        "explicacion": "Correcta. Intereses de un crédito a un año o más: 15% × $60.000.000 = $9.000.000. Consultoría de una firma no domiciliada, prestada desde el exterior: 20% × $80.000.000 = $16.000.000. Total: $25.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "$9.000.000",
+        "explicacion": "Incorrecta. Solo retiene sobre los intereses, como si la consultoría prestada desde el exterior no estuviera sujeta. La ley la grava al 20%, bien sea que se preste en el país o desde el exterior."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: intereses de un crédito externo a tres años y una consultoría prestada desde el exterior, ambos a entidades sin domicilio en Colombia. Reglas: el art. 406 del ET obliga a retener en los pagos a entidades extranjeras sin domicilio; el art. 408 fija el 15% para intereses de créditos a un año o más y el 20% para consultorías, se presten en el país o desde el exterior. Cálculo: $9.000.000 + $16.000.000. Conclusión: $25.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-069",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Puntos adicionales de las instituciones financieras",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 240 inc. 1 y par. 2 (modificado por el art. 10 de la Ley 2277 de 2022)",
+      "art. 868 inc. 3 (modificado por el art. 50 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "La tarifa general del impuesto sobre la renta aplicable a las sociedades nacionales y sus asimiladas, los establecimientos permanentes de entidades del exterior y las personas jurídicas extranjeras con o sin residencia en el pais, obligadas a presentar la declaración anual del impuesto sobre la renta y complementarios, será del treinta y cinco por ciento (35%). [...] PARÁGRAFO 2o. Las instituciones financieras, [...] deberán liquidar cinco (5) puntos adicionales al impuesto sobre la renta y complementarios durante los periodos gravables 2023, 2024, 2025, 2026 y 2027 siendo en total la tarifa del cuarenta por ciento ( 40%). [...] Los puntos adicionales de los que trata el presente parágrafo solo son aplicables a las personas jurídicas que, en el año gravable correspondiente, tengan una renta gravable igual o superior a ciento veinte mil (120.000) UVT. [...] el Director General de la Dirección de Impuestos y Aduanas Nacionales publicará mediante Resolución antes del primero (1) de enero de cada año, el valor de la UVT aplicable para el año gravable siguiente.",
+    "pregunta": "Un analista de fiscalización revisa la declaración de renta del año gravable 2025, presentada en abril de 2026, de un banco vigilado por la Superintendencia Financiera. Su renta líquida gravable fue de $6.100.000.000, y no tiene descuentos tributarios, rentas exentas ni impuesto a adicionar por tasa mínima. La UVT fue de $49.799 en 2025 y de $52.374 en 2026. ¿Qué impuesto de renta debe liquidar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$2.135.000.000",
+        "explicacion": "Incorrecta. Mide el umbral con la UVT de 2026, el año en que declara (120.000 × $52.374 = $6.284.880.000), y concluye que no lo alcanza. La norma lo mide en el año gravable correspondiente, 2025, cuya UVT es la de $49.799."
+      },
+      {
+        "id": "B",
+        "texto": "$2.141.206.000",
+        "explicacion": "Incorrecta. Cobra los cinco puntos solo sobre la renta que excede el umbral. Cuando se alcanza, la tarifa total del 40% se aplica a toda la renta gravable."
+      },
+      {
+        "id": "C",
+        "texto": "$2.440.000.000",
+        "explicacion": "Correcta. Umbral del año gravable 2025: 120.000 × $49.799 = $5.975.880.000. La renta gravable ($6.100 millones) lo supera, así que liquida la tarifa total del 40%: $2.440.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "$2.241.750.000",
+        "explicacion": "Incorrecta. Toma los cinco puntos como un 5% del impuesto liquidado al 35% ($2.135 millones × 1,05). Son puntos de tarifa: la tarifa total es del 40%."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: un banco (institución financiera) con renta gravable de $6.100 millones en el año gravable 2025. Regla: el art. 240 del ET fija la tarifa general del 35%, y su par. 2 obliga a las instituciones financieras a liquidar cinco puntos adicionales (tarifa total del 40%) en 2023-2027, si en el año gravable correspondiente tienen renta gravable igual o superior a 120.000 UVT. Cálculo: 120.000 × $49.799 = $5.975.880.000; 40% × $6.100.000.000. Conclusión: $2.440.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-070",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Tasa mínima de tributación: impuesto a adicionar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 240 par. 6 (modificado por el art. 10 de la Ley 2277 de 2022)"
+    ],
+    "texto_fuente": "Esta tasa mínima se denominará Tasa de Tributación Depurada (TTD) la cual no podrá ser inferior al quince por ciénto (15%) y será el resultado de dividir el Impuesto Depurado (ID) sobre la Utilidad Depurada (UD), así: [...] ID= INR + DTC-JRP [...] INR: Impuesto neto de renta. DTC: Descuentos tributarios o créditos tributarios por aplicación de tratados para evitar la doble imposición y el establecido en el artículo 254 del Estatuto Tributario. [...] UD= UC + DPARL - INCRNGO - VIMPP - VNGO - RE - C [...] UC: Utilidad contable o financiera antes de impuestos. [...] DPARL Diferencias permanentes consagradas en la ley y que aumentan la renta líquida. INCRNGO: Ingresos no constitutivos de renta ni ganancia ocasional, que afectan la utilidad contable o financiera. VIMPP: Valor ingreso método de participación patrimonial del respectivo año gravable. [...] IA = (UD* 15%) - ID",
+    "pregunta": "Una gestora de fiscalización revisa la declaración de renta del año gravable 2025 de una SAS nacional cuyos estados financieros no se consolidan y que no tiene ningún régimen especial de tarifa. Datos: utilidad contable antes de impuestos, $2.000.000.000; diferencias permanentes consagradas en la ley que aumentan la renta líquida (gastos no deducibles), $200.000.000; ingresos no constitutivos de renta incluidos en la utilidad contable, $100.000.000; ingreso por método de participación patrimonial, $300.000.000; impuesto neto de renta, $180.000.000; descuento tributario por impuestos pagados en el exterior (art. 254), $20.000.000. No hay ganancias ocasionales, rentas exentas, compensaciones ni rentas pasivas de entidades controladas del exterior. ¿Qué impuesto a adicionar debe liquidar la SAS por la tasa mínima de tributación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$70.000.000",
+        "explicacion": "Correcta. UD = 2.000 + 200 − 100 − 300 = $1.800 millones. ID = 180 + 20 = $200 millones. TTD = 200 / 1.800 = 11,1%, inferior al 15%. IA = 15% × 1.800 − 200 = $70 millones."
+      },
+      {
+        "id": "B",
+        "texto": "$100.000.000",
+        "explicacion": "Incorrecta. Usa la utilidad contable sin depurar (15% × 2.000 − 200): no suma las diferencias permanentes ni resta los ingresos no constitutivos de renta y el método de participación."
+      },
+      {
+        "id": "C",
+        "texto": "$90.000.000",
+        "explicacion": "Incorrecta. Depura bien la utilidad, pero toma como impuesto depurado solo el impuesto neto de renta, sin sumarle el descuento del art. 254 (270 − 180)."
+      },
+      {
+        "id": "D",
+        "texto": "$115.000.000",
+        "explicacion": "Incorrecta. No resta el ingreso por método de participación patrimonial: UD de $2.100 millones; 15% = 315 − 200."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: SAS sin consolidación, con utilidad contable de $2.000 millones y los ajustes dados. Regla: el par. 6 del art. 240 del ET exige una tasa de tributación depurada (ID/UD) de al menos 15%; UD = UC + DPARL − INCRNGO − VIMPP − VNGO − RE − C; ID = INR + DTC − IRP; si la tasa es menor, IA = UD × 15% − ID. Cálculo: UD = $1.800 millones; ID = $200 millones; TTD = 11,1%; IA = 270 − 200. Conclusión: $70.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-071",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Ganancias ocasionales",
+    "subtema": "Venta de activos fijos según el tiempo de posesión",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 300 incs. 1 y 2",
+      "art. 313 (modificado por el art. 32 de la Ley 2277 de 2022)",
+      "art. 240 inc. 1 (modificado por el art. 10 de la Ley 2277 de 2022)"
+    ],
+    "texto_fuente": "Se consideran ganancias ocasionales para los contribuyentes sujetos a este impuesto, las provenientes de la enajenación de bienes de cualquier naturaleza, que hayan hecho parte del activo fijo del contribuyente por un término de dos años o más. Su cuantía se determina por la diferencia entre el precio de enajenación y el costo fiscal del activo enajenado. [...] No se considera ganancia ocasional sino renta líquida, la utilidad en la enajenación de bienes que hagan parte del activo fijo del contribuyente y que hubieren sido poseídos por menos de 2 años. [...] Fijase en quince por ciento (15%) la tarifa única sobre las ganancias ocasionales de las sociedades anónimas, de las sociedades limitadas, y de los demás entes asimilados a unas y otras, de conformidad con las normas pertinentes. [...] La tarifa general del impuesto sobre la renta aplicable a las sociedades nacionales y sus asimiladas, los establecimientos permanentes de entidades del exterior y las personas jurídicas extranjeras con o sin residencia en el pais, obligadas a presentar la declaración anual del impuesto sobre la renta y complementarios, será del treinta y cinco por ciento (35%).",
+    "pregunta": "Un inspector de la División de Fiscalización revisa la declaración de renta del año gravable 2025 de una SAS nacional. Ese año la SAS vendió dos activos fijos: un lote de terreno comprado en marzo de 2022 y vendido en agosto de 2025, con una utilidad de $300.000.000, y un camión comprado en febrero de 2024 y vendido en noviembre de 2025, con una utilidad de $40.000.000. Por sus demás operaciones, la SAS tiene renta líquida gravable positiva y no goza de tarifas especiales. ¿Cuánto impuesto generan, en total, las utilidades de esas dos ventas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$51.000.000",
+        "explicacion": "Incorrecta. Trata ambas utilidades como ganancia ocasional al 15%. El camión se poseyó menos de dos años, así que su utilidad es renta líquida gravada al 35%."
+      },
+      {
+        "id": "B",
+        "texto": "$119.000.000",
+        "explicacion": "Incorrecta. Trata ambas utilidades como renta líquida al 35%. El lote se poseyó más de dos años: su utilidad es ganancia ocasional al 15%."
+      },
+      {
+        "id": "C",
+        "texto": "$111.000.000",
+        "explicacion": "Incorrecta. Invierte la clasificación: grava el lote al 35% y el camión al 15%."
+      },
+      {
+        "id": "D",
+        "texto": "$59.000.000",
+        "explicacion": "Correcta. Lote (marzo de 2022 a agosto de 2025, más de dos años): ganancia ocasional, 15% × $300.000.000 = $45.000.000. Camión (febrero de 2024 a noviembre de 2025, menos de dos años): renta líquida, 35% × $40.000.000 = $14.000.000. Total: $59.000.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el lote se poseyó más de dos años y el camión menos de dos. Reglas: el art. 300 del ET trata como ganancia ocasional la utilidad en la venta de activos fijos poseídos dos años o más, y como renta líquida la de los poseídos menos de dos años; la ganancia ocasional de las sociedades tributa al 15% (art. 313) y la renta al 35% (art. 240). Cálculo: $45.000.000 + $14.000.000. Conclusión: $59.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-072",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Ganancias ocasionales",
+    "subtema": "Donación en dinero a una hija: parte exenta con tope en UVT",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 302 (modificado por el art. 102 de la Ley 1607 de 2012)",
+      "art. 303 num. 1 (modificado por el art. 103 de la Ley 1607 de 2012)",
+      "art. 307 nums. 3 y 4 (modificado por el art. 30 de la Ley 2277 de 2022)",
+      "art. 314 (modificado por el art. 33 de la Ley 2277 de 2022)",
+      "art. 577 inc. 1",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "Se consideran ganancias ocasionales para los contribuyentes sometidos a este impuesto, las provenientes de herencias, legados, donaciones, o cualquier otro acto jurídico celebrado inter vivos a título gratuito, y lo percibido como porción conyugal. [...] 1. El valor de las sumas dinerarias será el de su valor nominal. [...] 3. El equivalente a las primeras tres mil doscientas cincuenta (3.250) UVT del valor de las asignaciones que por concepto de porción conyugal o de herencia o legado reciban el cónyuge supérstite y cada uno de los herederos o legatarios, según el caso. [...] 4. El veinte por ciento (20%) del valor de los bienes y derechos recibidos por personas diferentes de los legitimarios y/o el cónyuge supérstite por concepto de herencias y legados y el veinte por ciento (20%) de los bienes y derechos recibidos por concepto de donaciones y de otros actos Jurídicos inter vivos celebrados a título gratuito, sin que dicha suma supere el equivalente a mil seiscientos veinticinco (1.625) UVT. [...] La tarifa única del impuesto correspondiente a las ganancias ocasionales de las personas naturales residentes en el país, de las sucesiones de causantes personas naturales residentes en el país y de los bienes destinados a fines especiales, en virtud de donaciones o asignaciones modales, es quince por ciento (15%). [...] Los valores diligenciados en los formularios de las declaraciones tributarias, deberán aproximarse al múltiplo de mil (1000) más cercano. [...] Cuando las normas tributarias expresadas en UVT se conviertan en valores absolutos, se empleará el procedimiento de aproximaciones que se señala a continúación, a fin de obtener cifras enteras y de fácil operación: [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
+    "pregunta": "En marzo de 2025, Andrés, residente en Colombia, donó por escritura pública $600.000.000 en dinero a su hija Daniela, también residente. En septiembre de 2026, Daniela consulta a un facilitador de servicio al ciudadano cómo liquidar el impuesto de ganancias ocasionales por esa donación en su declaración del año gravable 2025. Para el ejercicio, tome la UVT de 2025: $49.799. ¿Qué valor debe registrar en esa declaración como impuesto de ganancias ocasionales?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$72.000.000",
+        "explicacion": "Incorrecta. Resta el 20% completo de lo donado ($120 millones) sin aplicar el tope de 1.625 UVT (unos $80,9 millones)."
+      },
+      {
+        "id": "B",
+        "texto": "$77.862.000",
+        "explicacion": "Correcta. Exento: el 20% de lo donado ($120 millones), sin exceder 1.625 UVT (1.625 × $49.799 = $80.923.375, que se aproxima al múltiplo de mil: $80.923.000); se toma el tope. Gravable: $600.000.000 − $80.923.000 = $519.077.000. Impuesto al 15%: $77.861.550, que en el formulario de la declaración se aproxima al múltiplo de mil más cercano (art. 577): $77.862.000."
+      },
+      {
+        "id": "C",
+        "texto": "$65.723.000",
+        "explicacion": "Incorrecta. Aplica la exención de 3.250 UVT de cada heredero o legatario. Esa exención es para herencias y legados, no para donaciones, aunque quien recibe sea hija del donante."
+      },
+      {
+        "id": "D",
+        "texto": "$77.861.550",
+        "explicacion": "Incorrecta. La exención y la tarifa están bien aplicadas, pero el impuesto queda sin aproximar. Los valores que se diligencian en los formularios de las declaraciones se aproximan al múltiplo de mil más cercano (art. 577)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: donación en dinero (valor nominal) de $600 millones de un padre a su hija, que debe liquidarse en la declaración. Reglas: el art. 302 del ET grava como ganancia ocasional lo recibido por donación; el art. 307 num. 4 exime el 20% de lo donado sin exceder 1.625 UVT (la exención de 3.250 UVT del num. 3 es para herencias y legados); el art. 314 fija la tarifa del 15%; el art. 577 ordena aproximar al múltiplo de mil los valores del formulario. Cálculo: tope 1.625 × $49.799, aproximado a $80.923.000 (art. 868); (600.000.000 − 80.923.000) × 15% = $77.861.550, que se lleva a la declaración como $77.862.000. Conclusión: $77.862.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-073",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Ganancias ocasionales",
+    "subtema": "Herencia en dinero recibida por un hijo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 302 (modificado por el art. 102 de la Ley 1607 de 2012)",
+      "art. 307 nums. 3 y 4 (modificado por el art. 30 de la Ley 2277 de 2022)",
+      "art. 314 (modificado por el art. 33 de la Ley 2277 de 2022)",
+      "art. 577 inc. 1",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "Se consideran ganancias ocasionales para los contribuyentes sometidos a este impuesto, las provenientes de herencias, legados, donaciones, o cualquier otro acto jurídico celebrado inter vivos a título gratuito, y lo percibido como porción conyugal. [...] 3. El equivalente a las primeras tres mil doscientas cincuenta (3.250) UVT del valor de las asignaciones que por concepto de porción conyugal o de herencia o legado reciban el cónyuge supérstite y cada uno de los herederos o legatarios, según el caso. [...] 4. El veinte por ciento (20%) del valor de los bienes y derechos recibidos por personas diferentes de los legitimarios y/o el cónyuge supérstite por concepto de herencias y legados y el veinte por ciento (20%) de los bienes y derechos recibidos por concepto de donaciones y de otros actos Jurídicos inter vivos celebrados a título gratuito, sin que dicha suma supere el equivalente a mil seiscientos veinticinco (1.625) UVT. [...] La tarifa única del impuesto correspondiente a las ganancias ocasionales de las personas naturales residentes en el país, de las sucesiones de causantes personas naturales residentes en el país y de los bienes destinados a fines especiales, en virtud de donaciones o asignaciones modales, es quince por ciento (15%). [...] Los valores diligenciados en los formularios de las declaraciones tributarias, deberán aproximarse al múltiplo de mil (1000) más cercano. [...] Cuando las normas tributarias expresadas en UVT se conviertan en valores absolutos, se empleará el procedimiento de aproximaciones que se señala a continúación, a fin de obtener cifras enteras y de fácil operación: [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
+    "pregunta": "En septiembre de 2025 se aprobó la partición de la sucesión de una comerciante residente en Colombia. A su hijo Felipe, también residente, le adjudicaron $250.000.000 en dinero; no recibió otros bienes. En agosto de 2026, una gestora de servicio al ciudadano le ayuda a calcular el impuesto de ganancias ocasionales que liquidará en su declaración del año gravable 2025. Para el ejercicio, tome la UVT de 2025: $49.799. ¿Qué valor de ese impuesto debe registrar en la declaración?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$13.223.000",
+        "explicacion": "Correcta. Como heredero, Felipe tiene exentas las primeras 3.250 UVT de su asignación: 3.250 × $49.799 = $161.846.750, que se aproxima al múltiplo de mil: $161.847.000. Gravable: $250.000.000 − $161.847.000 = $88.153.000. Impuesto al 15%: $13.222.950, que en el formulario de la declaración se aproxima al múltiplo de mil más cercano (art. 577): $13.223.000."
+      },
+      {
+        "id": "B",
+        "texto": "$30.000.000",
+        "explicacion": "Incorrecta. Aplica la exención del 20% (num. 4), prevista para quienes no son legitimarios ni cónyuge. Un hijo es legitimario y tiene la exención de 3.250 UVT."
+      },
+      {
+        "id": "C",
+        "texto": "$13.222.950",
+        "explicacion": "Incorrecta. Resta bien la exención y aplica bien la tarifa, pero deja el impuesto sin aproximar. Los valores que se diligencian en los formularios de las declaraciones se aproximan al múltiplo de mil más cercano (art. 577)."
+      },
+      {
+        "id": "D",
+        "texto": "$17.631.000",
+        "explicacion": "Incorrecta. Resta bien la exención, pero aplica el 20%, tarifa de las loterías, rifas y apuestas. Las herencias tributan al 15%."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el hijo, heredero legitimario, recibió $250 millones en dinero en la partición aprobada en 2025, y el impuesto se liquida en su declaración. Reglas: el art. 302 del ET grava como ganancia ocasional lo recibido por herencia; el art. 307 num. 3 exime las primeras 3.250 UVT de la asignación de cada heredero (el 20% del num. 4 es para quienes no son legitimarios); el art. 314 fija la tarifa del 15%; el art. 577 ordena aproximar al múltiplo de mil los valores del formulario. Cálculo: 3.250 × $49.799, aproximado a $161.847.000 (art. 868); (250.000.000 − 161.847.000) × 15% = $13.222.950, que se lleva a la declaración como $13.223.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-074",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Ganancias ocasionales",
+    "subtema": "Retención sobre premios de loterías",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 304",
+      "art. 306",
+      "art. 317"
+    ],
+    "texto_fuente": "Se consideran ganancias ocasionales para los contribuyentes sometidos a este impuesto, las provenientes de loterías, premios, rifas, apuestas y similares. Cuando sean en dinero, su cuantía se determina por lo efectivamente recibido. Cuando sean en especie, por el valor comercial del bien al momento de recibirse. [...] Cuando se trate de pagos por concepto de premios de loterías, rifas, apuestas y similares, el impuesto de ganancias ocasionales debe ser retenido por las personas naturales o jurídicas encargadas de efectuar el pago en el momento del mismo. [...] Para efectos de este artículo, los premios en especie tendrán el valor que se les asigne en el respectivo plan de premios, el cual no podrá ser inferior al valor comercial. En este último caso, el monto de la retención podrá cancelarse dentro de los seis meses siguientes a la causación de la ganancia, previa garantía constituida en la forma que establezca el reglamento. [...] Fíjase en un veinte por ciento (20%), la tarifa del impuesto de ganancias ocasionales provenientes de loterías, rifas, apuestas y similares.",
+    "pregunta": "Una lotería departamental debe pagar a un ganador un premio de $80.000.000 en dinero. Antes de girarlo, su tesorero consulta a un facilitador de servicio al ciudadano de la DIAN qué hacer con el impuesto de ganancias ocasionales. ¿Qué le debe indicar el facilitador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Retener $12.000.000 al girarlo, con la tarifa general de las ganancias ocasionales.",
+        "explicacion": "Incorrecta. El 15% es la tarifa general de las ganancias ocasionales; las de loterías, rifas y apuestas tienen una tarifa propia del 20%."
+      },
+      {
+        "id": "B",
+        "texto": "Girar el premio completo; el ganador liquidará el impuesto en su declaración de renta.",
+        "explicacion": "Incorrecta. En los premios de loterías, el impuesto lo retiene quien paga el premio, en el momento del pago; no se deja para la declaración del ganador."
+      },
+      {
+        "id": "C",
+        "texto": "Descontar $16.000.000 del premio en el mismo momento en que lo gire al ganador.",
+        "explicacion": "Correcta. Las ganancias de loterías tributan al 20% (art. 317), y el impuesto debe retenerlo quien paga, al pagar (art. 306): 20% × $80.000.000 = $16.000.000."
+      },
+      {
+        "id": "D",
+        "texto": "Girarlo completo y exigir al ganador que pague el impuesto en seis meses, con garantía.",
+        "explicacion": "Incorrecta. El plazo de seis meses con garantía se refiere a la retención de los premios en especie; este premio es en dinero."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: premio de lotería de $80 millones en dinero. Reglas: el art. 304 del ET grava como ganancia ocasional los premios de loterías; el art. 317 fija para ellos la tarifa del 20%, y el art. 306 obliga a quien paga a retener el impuesto en el momento del pago (el plazo de seis meses con garantía es para premios en especie). Cálculo: 20% × $80.000.000. Conclusión: retener $16.000.000 al pagar.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-075",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Ganancias ocasionales",
+    "subtema": "Utilidad en la venta de la vivienda de habitación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 300 inc. 1",
+      "art. 311-1 (modificado por el art. 31 de la Ley 2277 de 2022)",
+      "art. 314 (modificado por el art. 33 de la Ley 2277 de 2022)",
+      "art. 577 inc. 1"
+    ],
+    "texto_fuente": "Se consideran ganancias ocasionales para los contribuyentes sujetos a este impuesto, las provenientes de la enajenación de bienes de cualquier naturaleza, que hayan hecho parte del activo fijo del contribuyente por un término de dos años o más. Su cuantía se determina por la diferencia entre el precio de enajenación y el costo fiscal del activo enajenado. [...] Estarán exentas las primeras cinco mil (5.000) UVT de la utilidad generada en la venta de la casa o apartamento de habitación de las personas naturales contribuyentes del impuesto sobre la renta y complementarios, siempre que la totalidad de los dineros recibidos como consecuencia de la venta sean depositados en las cuentas de ahorro denominadas \"Ahorro para el Fomento de la Construcción, AFC\"; y sean destinados a la adquisición de otra casa o apartamento de habitación, o para el pago total o parcial de uno o más créditos hipotecarios vinculados directamente con la casa o apartamento de habitación objeto de venta. [...] La tarifa única del impuesto correspondiente a las ganancias ocasionales de las personas naturales residentes en el país, de las sucesiones de causantes personas naturales residentes en el país y de los bienes destinados a fines especiales, en virtud de donaciones o asignaciones modales, es quince por ciento (15%). [...] Los valores diligenciados en los formularios de las declaraciones tributarias, deberán aproximarse al múltiplo de mil (1000) más cercano.",
+    "pregunta": "En febrero de 2026, Lucía, residente en Colombia, vendió el apartamento en el que vivía desde 2014, con una utilidad de $400.000.000. Depositó todo el dinero de la venta en una cuenta de ahorro para el fomento de la construcción (AFC) y, en junio de 2026, lo usó para comprar otro apartamento, donde ahora vive. Un gestor de servicio al ciudadano le ayuda a liquidar la ganancia ocasional en su declaración del año gravable 2026. Para el ejercicio, tome la UVT de 2026: $52.374. ¿Qué valor debe registrar en esa declaración como impuesto de ganancias ocasionales?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$20.719.500",
+        "explicacion": "Incorrecta. La exención y la tarifa están bien aplicadas, pero el impuesto queda sin aproximar. Los valores que se diligencian en los formularios de las declaraciones se aproximan al múltiplo de mil más cercano (art. 577)."
+      },
+      {
+        "id": "B",
+        "texto": "$20.720.000",
+        "explicacion": "Correcta. Poseyó el apartamento más de dos años, así que la utilidad es ganancia ocasional. Están exentas las primeras 5.000 UVT: 5.000 × $52.374 = $261.870.000. Gravable: $400.000.000 − $261.870.000 = $138.130.000. Impuesto al 15%: $20.719.500, que en el formulario de la declaración se aproxima al múltiplo de mil más cercano (art. 577): $20.720.000."
+      },
+      {
+        "id": "C",
+        "texto": "$0",
+        "explicacion": "Incorrecta. Reinvertir en vivienda no exime toda la utilidad: la exención cubre solo las primeras 5.000 UVT."
+      },
+      {
+        "id": "D",
+        "texto": "$27.626.000",
+        "explicacion": "Incorrecta. Resta bien la exención, pero aplica el 20%, tarifa de las loterías y apuestas; a las personas naturales residentes se les aplica el 15%."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: vivienda poseída desde 2014, utilidad de $400 millones, depósito de todo el dinero en una cuenta AFC y compra de otra vivienda; el impuesto se liquida en la declaración. Reglas: el art. 300 del ET hace ganancia ocasional la utilidad en la venta de activos fijos poseídos dos años o más; el art. 311-1 exime las primeras 5.000 UVT de esa utilidad si se cumplen esas condiciones; el art. 314 fija el 15%; el art. 577 ordena aproximar al múltiplo de mil los valores del formulario. Cálculo: 5.000 × $52.374 = $261.870.000; (400.000.000 − 261.870.000) × 15% = $20.719.500, que se lleva a la declaración como $20.720.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-076",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre las ventas (IVA)",
+    "subtema": "Períodos sin operaciones: cuándo no se declara",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Baja",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 601 incs. 1 y 3 (modificado por el art. 62 de la Ley 1607 de 2012; texto sustituido según el art. 20 de la Ley 2010 de 2019)"
+    ],
+    "texto_fuente": "Deberán presentar declaración y pago del impuesto sobre las ventas, según lo dispuesto en el artículo 600 de este Estatuto, los responsables de este impuesto, incluidos los exportadores. [...] Tampoco estarán obligados a presentar la declaración del impuesto sobre las ventas los responsables del [...] en los períodos en los cuales no hayan efectuado operaciones sometidas al impuesto ni operaciones que den lugar a impuestos descontables, ajustes o deducciones en los términos de lo dispuesto en los artículos 484 y 486 de este Estatuto.",
+    "pregunta": "Una SAS responsable del IVA, que declara por bimestres, cerró su planta por remodelación del 1 de julio al 31 de octubre de 2026. En julio-agosto no vendió ni compró nada y no tuvo devoluciones ni ajustes. En septiembre-octubre tampoco vendió, pero compró materias primas gravadas para reanudar la producción y pagó $95.000.000 de IVA que puede tratar como descontable. Su contadora consulta a una facilitadora de servicio al ciudadano de la DIAN. ¿Qué declaraciones de IVA debe presentar la SAS por esos dos bimestres?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Las dos; la de julio-agosto en ceros, porque sigue inscrita como responsable.",
+        "explicacion": "Incorrecta. Seguir inscrita como responsable no obliga a declarar en ceros: la ley exime de declarar los períodos sin operaciones gravadas ni operaciones que den lugar a descontables, ajustes o deducciones."
+      },
+      {
+        "id": "B",
+        "texto": "Solo la de septiembre-octubre, en la que puede reflejar el IVA pagado en sus compras.",
+        "explicacion": "Correcta. En julio-agosto no hubo ninguna operación, así que no debe declarar ese bimestre. En septiembre-octubre hubo compras que dan lugar a impuestos descontables, por lo que debe declarar ese período."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna, porque en ninguno de los dos bimestres hizo ventas gravadas con IVA.",
+        "explicacion": "Incorrecta. No basta con no vender: las compras que generan IVA descontable también obligan a declarar el período."
+      },
+      {
+        "id": "D",
+        "texto": "Las dos, porque solo los responsables cuatrimestrales se libran de declarar sin operaciones.",
+        "explicacion": "Incorrecta. La exoneración no distingue entre responsables bimestrales y cuatrimestrales; se aplica a cualquier responsable en los períodos sin operaciones."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: en julio-agosto no hubo ninguna operación; en septiembre-octubre no hubo ventas, pero sí compras con IVA descontable. Regla: el art. 601 del ET obliga a declarar a los responsables del IVA, salvo en los períodos en que no hayan efectuado operaciones gravadas ni operaciones que den lugar a impuestos descontables, ajustes o deducciones. Conclusión: solo debe presentar la declaración de septiembre-octubre.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-077",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Impuesto sobre la renta",
+    "subtema": "Anticipo del impuesto: cálculo por los dos procedimientos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 807 incs. 1 y 2"
+    ],
+    "texto_fuente": "Los contribuyentes del impuesto sobre la renta están obligados a pagar un setenta y cinco por ciento (75%) del impuesto de renta y del complementario de patrimonio*, determinado en su liquidación privada, a título de anticipo del impuesto de renta del año siguiente al gravable. [...] Para determinar la base del anticipo, al impuesto neto de renta y al complementario de patrimonio* del año gravable, o al promedio de los dos (2) últimos años a opción del contribuyente, se aplica el porcentaje previsto en el inciso anterior. Del resultado así obtenido se descuenta el valor de la retención en la fuente correspondiente al respectivo ejercicio fiscal, con lo cual se obtiene el anticipo a pagar.",
+    "pregunta": "Un gestor de fiscalización revisa la declaración de renta del año gravable 2025 de una SAS que declara renta desde 2010. Datos: impuesto neto de renta de 2025, $240.000.000; impuesto neto de renta de 2024, $160.000.000; retenciones en la fuente que le practicaron en 2025, $95.000.000. La SAS quiere liquidar, como anticipo para el año gravable 2026, el menor valor que la ley le permite. ¿Cuál es ese valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$85.000.000",
+        "explicacion": "Incorrecta. Usa solo el impuesto de 2025 (75% × 240 − 95). La ley permite, a opción del contribuyente, usar el promedio de los dos últimos años, que aquí da un anticipo menor."
+      },
+      {
+        "id": "B",
+        "texto": "$150.000.000",
+        "explicacion": "Incorrecta. Aplica el 75% al promedio de los dos años, pero no descuenta las retenciones de 2025 (75% × 200)."
+      },
+      {
+        "id": "C",
+        "texto": "$78.750.000",
+        "explicacion": "Incorrecta. Resta las retenciones antes de aplicar el porcentaje: (200 − 95) × 75%. Primero se aplica el 75% y del resultado se descuentan las retenciones."
+      },
+      {
+        "id": "D",
+        "texto": "$55.000.000",
+        "explicacion": "Correcta. Procedimiento 1: 75% × $240 millones − $95 millones = $85 millones. Procedimiento 2: promedio de 2024 y 2025 = $200 millones; 75% = $150 millones − $95 millones = $55 millones. La SAS puede optar por el menor: $55.000.000."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: SAS que no declara por primera vez, con impuesto neto de $240 millones (2025) y $160 millones (2024), y retenciones de $95 millones en 2025. Regla: el art. 807 del ET fija el anticipo en el 75% del impuesto neto del año o del promedio de los dos últimos años, a opción del contribuyente, y del resultado se descuentan las retenciones del año. Cálculo: 75% × 240 − 95 = 85; 75% × 200 − 95 = 55. Conclusión: $55.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-078",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Devoluciones y compensaciones",
+    "subtema": "Retenciones no consignadas por el agente y autorretenciones sin pagar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 859 (inc. 2 adicionado por el art. 2 de la Ley 788 de 2002)"
+    ],
+    "texto_fuente": "La Administración de Impuestos deberá efectuar las devoluciones de impuestos, originadas en exceso de retenciones legalmente practicadas, cuando el retenido acredite o la Administración compruebe que las mismas fueron practicadas en cumplimiento de las normas correspondientes, aunque el agente retenedor no haya efectuado las consignaciones respectivas. En este caso, se adelantarán las investigaciones y sanciones sobre el agente retenedor. [...] Lo dispuesto en este artículo no se aplica cuando se trate de autorretenciones, retenciones del IVA, retenciones para los eventos previstos en el artículo 54 de la Ley 550 de 1999 y anticipos, frente a los cuales deberá acreditarse su pago.",
+    "pregunta": "Una analista del área de devoluciones de una dirección seccional estudia la solicitud de devolución del saldo a favor de $48.000.000 que una SAS liquidó en su declaración de renta del año gravable 2025. El saldo resulta de un impuesto a cargo de $52.000.000, menos retenciones que le practicaron sus clientes por $70.000.000 y autorretenciones a título de renta por $30.000.000. En la verificación encuentra que uno de los clientes le retuvo $20.000.000, como consta en el certificado, pero no los consignó, y que la SAS no ha pagado $10.000.000 de sus autorretenciones. ¿Por qué valor procede la devolución?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$38.000.000",
+        "explicacion": "Correcta. La retención de $20 millones que el cliente practicó y no consignó se reconoce, porque está probado que se practicó; la DIAN investigará al agente. Las autorretenciones, en cambio, deben estar pagadas para devolverse, así que se excluyen los $10 millones no pagados: 48 − 10 = $38 millones."
+      },
+      {
+        "id": "B",
+        "texto": "$48.000.000",
+        "explicacion": "Incorrecta. Devuelve todo el saldo, incluidos los $10 millones de autorretenciones no pagadas; para las autorretenciones la ley exige acreditar el pago."
+      },
+      {
+        "id": "C",
+        "texto": "$18.000.000",
+        "explicacion": "Incorrecta. Excluye también la retención que el cliente practicó y no consignó. Esa falta es del agente retenedor y no impide la devolución al retenido."
+      },
+      {
+        "id": "D",
+        "texto": "$28.000.000",
+        "explicacion": "Incorrecta. Invierte las dos reglas: excluye la retención no consignada por el cliente y reconoce las autorretenciones no pagadas."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: $20 millones retenidos por un cliente y no consignados (con certificado) y $10 millones de autorretenciones sin pagar. Regla: el art. 859 del ET obliga a devolver los excesos de retenciones legalmente practicadas aunque el agente no las haya consignado, pero no se aplica a las autorretenciones, cuyo pago debe acreditarse. Cálculo: 48 − 10. Conclusión: procede la devolución de $38.000.000.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-079",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Declaraciones tributarias",
+    "subtema": "Personas naturales obligadas a declarar renta: topes en UVT",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 592 num. 1 (modificado por el art. 75 de la Ley 788 de 2002; cifras en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 594-3 (modificado por el art. 19 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Los contribuyentes personas naturales y sucesiones ilíquidas que no sean responsables del impuesto a las ventas, que en el respectivo año o período gravable hayan obtenido ingresos brutos inferiores a 1.400 UVT y que el patrimonio bruto en el último día del año o período gravable no exceda de 4.500 UVT. [...] Sin perjuicio de lo dispuesto en el artículo 592, para no estar obligado a presentar declaración de renta y complementarios se tendrán en cuenta los siguientes requisitos: a) Que los consumos mediante tarjeta de crédito durante el año gravable no excedan de la suma de 1.400 UVT; b) Que el total de compras y consumos durante el año gravable no superen la suma de 1.400 UVT; c) Que el valor total acumulado de consignaciones bancarias, depósitos o inversiones financieras, durante el año gravable no exceda de 1.400 UVT.",
+    "pregunta": "Un facilitador de servicio al ciudadano atiende a Marcela, diseñadora independiente residente en Colombia y no responsable del IVA. Por el año gravable 2025 reporta: ingresos brutos de $64.000.000; patrimonio bruto al 31 de diciembre de $215.000.000; consumos con tarjeta de crédito de $38.000.000; compras y consumos totales de $75.000.000, y consignaciones y depósitos bancarios de $66.000.000. Para el ejercicio, tome la UVT de 2025: $49.799. ¿Está Marcela obligada a declarar renta por 2025?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No, porque sus ingresos brutos y su patrimonio quedaron por debajo de los topes.",
+        "explicacion": "Incorrecta. Cumplir los topes de ingresos y patrimonio no basta: el art. 594-3 añade topes para consumos con tarjeta, compras y consumos, y consignaciones, y uno de ellos se supera."
+      },
+      {
+        "id": "B",
+        "texto": "Sí, porque su patrimonio bruto al cierre del año supera el tope en UVT.",
+        "explicacion": "Incorrecta. 4.500 UVT equivalen a unos $224,1 millones. Su patrimonio ($215.000.000) no supera ese tope."
+      },
+      {
+        "id": "C",
+        "texto": "Sí, porque sus consignaciones y depósitos del año superan el tope en UVT.",
+        "explicacion": "Incorrecta. 1.400 UVT equivalen a unos $69,7 millones. Sus consignaciones ($66.000.000) no superan ese tope."
+      },
+      {
+        "id": "D",
+        "texto": "Sí, porque el total de lo que compró y consumió en el año rebasa su límite.",
+        "explicacion": "Correcta. 1.400 UVT equivalen a unos $69,7 millones. Sus compras y consumos totales ($75.000.000) superan ese tope; basta incumplir uno de los requisitos para quedar obligada a declarar, aunque cumpla los demás."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: ingresos de $64 millones, patrimonio de $215 millones, consignaciones de $66 millones y compras y consumos de $75 millones. Reglas: el art. 592 num. 1 del ET exige ingresos inferiores a 1.400 UVT y patrimonio no superior a 4.500 UVT para no declarar; el art. 594-3 añade que tarjeta, compras y consumos, y consignaciones no superen 1.400 UVT cada uno. Cálculo: 1.400 × $49.799 ≈ $69,7 millones; 4.500 × $49.799 ≈ $224,1 millones. Conclusión: está obligada por sus compras y consumos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  },
+  {
+    "id": "TC-TRI-080",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Firmeza de las declaraciones",
+    "subtema": "Beneficio de auditoría con un incremento del impuesto entre el 25% y el 35%",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 689-3 incs. 1 y 2 y par. 2 (adicionado por el art. 51 de la Ley 2155 de 2021; aplicable a los períodos 2024, 2025 y 2026 según la prórroga anotada en la compilación)"
+    ],
+    "texto_fuente": "Para los periodos gravables 2022 y 2023 <2024, 2025, 2026>*, la liquidación privada de los contribuyentes del impuesto sobre la renta y complementarios que incrementen su impuesto neto de renta en por lo menos un porcentaje mínimo del treinta y cinco por ciento (35%), en relación con el impuesto neto de renta del año inmediatamente anterior, quedará en firme si dentro de los seis (6) meses siguientes a la fecha de su presentación no se hubiere notificado emplazamiento para corregir o requerimiento especial o emplazamiento especial o liquidación provisional, siempre que la declaración sea debidamente presentada en forma oportuna y el pago total se realice en los plazos que para tal efecto fije el Gobierno nacional. [...] Si el incremento del impuesto neto de renta es de al menos un porcentaje mínimo del veinticinco por ciento (25%), en relación con el impuesto neto de renta del año inmediatamente anterior, la declaración de renta quedará en firme si dentro de los doce (12) meses siguientes a la fecha de su presentación no se hubiere notificado emplazamiento para corregir o requerimiento especial o emplazamiento especial o liquidación provisional, siempre que la declaración sea debidamente presentada en forma oportuna y el pago total se realice en los plazos que para tal efecto fije el Gobierno nacional. [...] PARÁGRAFO 2o. Cuando el impuesto neto sobre la renta de la declaración correspondiente al año gravable frente al cual debe cumplirse el requisito del incremento sea inferior a 71 UVT, no procederá la aplicación del beneficio de auditoría.",
+    "pregunta": "El lunes 5 de octubre de 2026, una gestora de fiscalización evalúa si aún puede revisar la declaración de renta del año gravable 2025 de una SAS que no goza de beneficios tributarios por su ubicación geográfica. La SAS presentó la declaración el miércoles 13 de mayo de 2026, último día de su plazo, junto con el pago de la primera cuota, y pagó la segunda y última cuota el jueves 9 de julio de 2026, dentro del plazo fijado por el Gobierno. Su impuesto neto de renta fue de $130.000.000; el del año gravable 2024 había sido de $100.000.000. Hasta ahora, la DIAN no le ha notificado emplazamiento para corregir, requerimiento especial, emplazamiento especial ni liquidación provisional. Para el ejercicio, tome una UVT de $49.799. Si nada de eso se notifica antes, ¿en qué fecha queda en firme la declaración?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El 13 de noviembre de 2026.",
+        "explicacion": "Incorrecta. El término de seis meses exige un incremento del impuesto neto de al menos el 35%; el de la SAS fue del 30%."
+      },
+      {
+        "id": "B",
+        "texto": "El 9 de julio de 2027.",
+        "explicacion": "Incorrecta. Cuenta los doce meses desde el pago de la última cuota. El pago total dentro de los plazos es un requisito del beneficio, pero el término corre desde la fecha de presentación de la declaración."
+      },
+      {
+        "id": "C",
+        "texto": "El 13 de mayo de 2027.",
+        "explicacion": "Correcta. Incremento: (130 − 100) / 100 = 30%, que alcanza el 25% pero no el 35%. El impuesto de 2024 supera 71 UVT (unos $3,5 millones). Con presentación oportuna y pago total en los plazos, la declaración queda en firme si en los doce meses siguientes a su presentación (13 de mayo de 2026) no se notifica ninguno de esos actos: el 13 de mayo de 2027."
+      },
+      {
+        "id": "D",
+        "texto": "El 13 de mayo de 2029.",
+        "explicacion": "Incorrecta. Aplica la firmeza general de tres años desde el vencimiento del plazo, como si el beneficio exigiera en todo caso un incremento del 35%. Con un aumento del 30% procede el término de doce meses."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: impuesto neto de $130 millones frente a $100 millones del año anterior (30% más), presentación oportuna el 13 de mayo de 2026 y pago total de las dos cuotas dentro de los plazos. Regla: el art. 689-3 del ET, aplicable al año gravable 2025, da firmeza en seis meses si el incremento es de al menos 35%, y en doce meses si es de al menos 25%, contados desde la fecha de presentación (no desde el pago); el impuesto del año base debe ser de al menos 71 UVT. Conclusión: firmeza el 13 de mayo de 2027.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-10"
+    }
+  }
+]
