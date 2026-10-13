@@ -38,7 +38,7 @@ const MOTIVO_RECHAZO: Record<string, string> = {
 
 // Resumen de los pagos reales de una suscripción
 function Pagos({ cobros, resumen }: { cobros: Cobro[] | null; resumen: number }) {
-  if (!cobros) return <span title="No se pudieron consultar los pagos; es el número del resumen de Mercado Pago">{resumen}</span>
+  if (!cobros) return <span className="text-slate-400 dark:text-slate-500" title={`No se pudieron consultar los pagos (el resumen de Mercado Pago dice ${resumen})`}>Sin verificar</span>
   if (!cobros.length) return <span className="text-slate-400 dark:text-slate-500">Sin pagos</span>
   const aprobados = cobros.filter((c) => c.estado === 'approved').length
   if (aprobados) {
@@ -150,7 +150,7 @@ export default function PanelSuscriptores({
             </div>
             <Cifra etiqueta="Ayer" valor={numero.format(ayer?.nuevas ?? 0)} detalle="suscriptores nuevos" />
             <Cifra etiqueta={`Últimos ${dias} días`} valor={numero.format(nuevasPeriodo)} detalle="suscriptores nuevos" />
-            <Cifra etiqueta="Activos ahora" valor={activas === null ? '—' : numero.format(activas)} detalle="con el cobro autorizado" />
+            <Cifra etiqueta="Activos ahora" valor={activas === null ? '—' : numero.format(activas)} detalle="con el cobro autorizado en Mercado Pago" />
           </section>
         )}
 
@@ -284,7 +284,7 @@ export default function PanelSuscriptores({
         )}
 
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Suscriptor nuevo: suscripción creada ese día en Mercado Pago que tiene el cobro autorizado o al menos un pago aprobado, aunque después la haya cancelado. Los intentos rechazados no cuentan.
+          Suscriptor nuevo: suscripción creada ese día en Mercado Pago con al menos un pago aprobado, aunque después la haya cancelado. Los intentos rechazados y las suscripciones sin pago aprobado no cuentan.
           «Siguen activos» son los de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago.
         </p>
       </div>

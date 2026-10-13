@@ -7,6 +7,9 @@ import PanelSuscriptores from '@/components/admin/PanelSuscriptores'
 // Solo para los correos de ADMIN_EMAILS; para los demás la página no existe
 export const metadata = { title: 'Administración', robots: { index: false, follow: false } }
 
+// Se consultan los pagos de cada suscripción del periodo: con 90 días son bastantes peticiones a Mercado Pago
+export const maxDuration = 60
+
 const RANGOS = [7, 30, 90]
 const DIA_MS = 86_400_000
 
@@ -22,12 +25,16 @@ async function cargarPanel(dias: number) {
   if (!suscripciones.ok) errores.push(`No se pudieron leer las suscripciones de Mercado Pago: ${suscripciones.error}`)
 
   const subs = suscripciones.ok ? suscripciones.datos : null
-  // Activas o que dicen tener cobros. El resumen de Mercado Pago puede contar intentos rechazados, así que
-  // para las no activas del periodo y para las últimas 15 se consultan los pagos reales.
+  // Activas o que dicen tener cobros. Ni el estado ni el resumen de Mercado Pago prueban que hubo pago, así que
+  // se consultan los pagos reales de todas las del periodo y de las últimas 15; solo cuentan las que tienen uno aprobado.
   const candidatas = (subs ?? []).filter((s) => s.estado === 'authorized' || s.cobros > 0).sort((a, b) => b.creada.localeCompare(a.creada))
   const ultimas = candidatas.slice(0, 15)
-  const dudosas = candidatas.filter((s) => s.estado !== 'authorized' && Date.parse(s.creada) >= desde)
-  const cobros = await cobrosDeSuscripciones([...ultimas, ...dudosas].map((s) => s.id))
+  const delPeriodo = candidatas.filter((s) => Date.parse(s.creada) >= desde)
+  const cobros = await cobrosDeSuscripciones([...ultimas, ...delPeriodo].map((s) => s.id))
+  const sinVerificar = delPeriodo.filter((s) => !cobros[s.id]).length
+  if (sinVerificar) {
+    errores.push(`No se pudieron consultar los pagos de ${sinVerificar} suscripciones del periodo: no se cuentan como nuevas. Recarga la página para intentarlo de nuevo.`)
+  }
   const datos = await datosSuscriptores(ultimas, cobros)
 
   return {

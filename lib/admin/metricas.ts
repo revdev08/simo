@@ -56,10 +56,10 @@ const configMP = () => {
   return token ? new MercadoPagoConfig({ accessToken: token }) : null
 }
 
-// De a 5 peticiones en paralelo para no pasar el límite de Mercado Pago
-async function enLotes<T, R>(items: T[], fn: (item: T) => Promise<R>): Promise<R[]> {
+// Peticiones en paralelo por lotes para no pasar el límite de Mercado Pago
+async function enLotes<T, R>(items: T[], fn: (item: T) => Promise<R>, tamano = 5): Promise<R[]> {
   const salida: R[] = []
-  for (let i = 0; i < items.length; i += 5) salida.push(...(await Promise.all(items.slice(i, i + 5).map(fn))))
+  for (let i = 0; i < items.length; i += tamano) salida.push(...(await Promise.all(items.slice(i, i + tamano).map(fn))))
   return salida
 }
 
@@ -100,7 +100,7 @@ export async function suscripcionesMP(): Promise<Resultado<Suscripcion[]>> {
 export type Cobro = { estado: string; detalle: string; pagoId: string | null; fecha: string }
 
 // Intentos de cobro de cada suscripción (authorized_payments) con el resultado del pago: aprobado, rechazado, devuelto…
-// Si la consulta de una suscripción falla, no aparece en el resultado y se usa el resumen.
+// Si la consulta de una suscripción falla, no aparece en el resultado.
 export async function cobrosDeSuscripciones(ids: string[]): Promise<Record<string, Cobro[]>> {
   const config = configMP()
   if (!config || !ids.length) return {}
@@ -121,16 +121,14 @@ export async function cobrosDeSuscripciones(ids: string[]): Promise<Record<strin
     } catch {
       // sin datos de cobros para esta suscripción
     }
-  })
+  }, 8)
   return resultado
 }
 
-// Suscriptor: cobro autorizado o al menos un pago aprobado, aunque después cancelara.
-// Si no se pudieron consultar los cobros, se usa el resumen de Mercado Pago.
+// Suscriptor: al menos un pago aprobado, aunque después cancelara. No basta el estado «autorizada» ni el
+// resumen de Mercado Pago (charged_quantity), que cuenta intentos rechazados. Sin sus pagos consultados, no cuenta.
 export function pago(s: Suscripcion, cobros: Record<string, Cobro[]>) {
-  if (s.estado === 'authorized') return true
-  const c = cobros[s.id]
-  return c ? c.some((x) => x.estado === 'approved') : s.cobros > 0
+  return !!cobros[s.id]?.some((c) => c.estado === 'approved')
 }
 
 // Correo de cada usuario de Clerk
