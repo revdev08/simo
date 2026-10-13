@@ -4,7 +4,7 @@
 // Los días se agrupan en hora de Colombia.
 import 'server-only'
 import { clerkClient } from '@clerk/nextjs/server'
-import { MercadoPagoConfig, PreApproval } from 'mercadopago'
+import { Invoice, MercadoPagoConfig, Payment, PreApproval } from 'mercadopago'
 import { createAdminClient } from '@/lib/supabase'
 
 const DIA_MS = 86_400_000
@@ -45,28 +45,36 @@ export type Suscripcion = {
   id: string
   creada: string // ISO
   estado: string // authorized, paused, cancelled, pending
-  cobros: number
+  cobros: number // según el resumen de Mercado Pago, que puede contar intentos rechazados
   monto: number | null
   userId: string | null
+  pagadorId: number | null // cuenta de Mercado Pago que se suscribió
 }
 
-// Cuenta como suscriptor quien autorizó el cobro o pagó al menos una vez (aunque después cancelara)
-export const pago = (s: Suscripcion) => s.estado === 'authorized' || s.cobros > 0
+const configMP = () => {
+  const token = process.env.MELI_ACCESS_TOKEN
+  return token ? new MercadoPagoConfig({ accessToken: token }) : null
+}
+
+// De a 5 peticiones en paralelo para no pasar el límite de Mercado Pago
+async function enLotes<T, R>(items: T[], fn: (item: T) => Promise<R>): Promise<R[]> {
+  const salida: R[] = []
+  for (let i = 0; i < items.length; i += 5) salida.push(...(await Promise.all(items.slice(i, i + 5).map(fn))))
+  return salida
+}
 
 // Todas las suscripciones de la cuenta de Mercado Pago
 export async function suscripcionesMP(): Promise<Resultado<Suscripcion[]>> {
-  const token = process.env.MELI_ACCESS_TOKEN
-  if (!token) return { ok: false, error: 'Falta MELI_ACCESS_TOKEN en las variables de entorno.' }
+  const config = configMP()
+  if (!config) return { ok: false, error: 'Falta MELI_ACCESS_TOKEN en las variables de entorno.' }
   try {
-    const api = new PreApproval(new MercadoPagoConfig({ accessToken: token }))
+    const api = new PreApproval(config)
     const LIMITE = 50
     const pagina = (offset: number) => api.search({ options: { limit: LIMITE, offset } })
     const primera = await pagina(0)
-    const paginas = [primera]
     const total = Math.min(primera.paging?.total ?? 0, 10_000)
     const offsets = Array.from({ length: Math.max(0, Math.ceil(total / LIMITE) - 1) }, (_, i) => (i + 1) * LIMITE)
-    // De a 5 páginas en paralelo para no pasar el límite de peticiones
-    for (let i = 0; i < offsets.length; i += 5) paginas.push(...(await Promise.all(offsets.slice(i, i + 5).map(pagina))))
+    const paginas = [primera, ...(await enLotes(offsets, pagina))]
 
     const lista: Suscripcion[] = []
     for (const r of paginas.flatMap((p) => p.results ?? [])) {
@@ -80,12 +88,49 @@ export async function suscripcionesMP(): Promise<Resultado<Suscripcion[]>> {
         cobros: r.summarized?.charged_quantity ?? 0,
         monto: r.auto_recurring?.transaction_amount ?? null,
         userId: r.external_reference ? String(r.external_reference) : null,
+        pagadorId: r.payer_id ?? null,
       })
     }
     return { ok: true, datos: lista }
   } catch (e) {
     return { ok: false, error: mensaje(e) }
   }
+}
+
+export type Cobro = { estado: string; detalle: string; pagoId: string | null; fecha: string }
+
+// Intentos de cobro de cada suscripción (authorized_payments) con el resultado del pago: aprobado, rechazado, devuelto…
+// Si la consulta de una suscripción falla, no aparece en el resultado y se usa el resumen.
+export async function cobrosDeSuscripciones(ids: string[]): Promise<Record<string, Cobro[]>> {
+  const config = configMP()
+  if (!config || !ids.length) return {}
+  const api = new Invoice(config)
+  const resultado: Record<string, Cobro[]> = {}
+  await enLotes([...new Set(ids)], async (id) => {
+    try {
+      const r = await api.search({ options: { preapproval_id: id, limit: 50 } })
+      resultado[id] = (r.results ?? [])
+        .filter((f) => f.payment?.id) // las cuotas programadas aún no tienen pago
+        .map((f) => ({
+          estado: f.payment?.status ?? 'desconocido',
+          detalle: f.payment?.status_detail ?? '',
+          pagoId: f.payment?.id ? String(f.payment.id) : null,
+          fecha: f.last_modified ?? f.date_created ?? '',
+        }))
+        .sort((a, b) => b.fecha.localeCompare(a.fecha))
+    } catch {
+      // sin datos de cobros para esta suscripción
+    }
+  })
+  return resultado
+}
+
+// Suscriptor: cobro autorizado o al menos un pago aprobado, aunque después cancelara.
+// Si no se pudieron consultar los cobros, se usa el resumen de Mercado Pago.
+export function pago(s: Suscripcion, cobros: Record<string, Cobro[]>) {
+  if (s.estado === 'authorized') return true
+  const c = cobros[s.id]
+  return c ? c.some((x) => x.estado === 'approved') : s.cobros > 0
 }
 
 // Correo de cada usuario de Clerk
@@ -101,12 +146,17 @@ async function correosClerk(ids: string[]): Promise<Record<string, string>> {
   }
 }
 
-export type CorreoSuscriptor = { correo: string; deMercadoPago: boolean }
+export type DatosSuscriptor = {
+  correo: string | null
+  correoDeMercadoPago: boolean // el correo con el que pagó, no el de su cuenta en SIMO
+  enlazada: boolean // la suscripción está asociada a un usuario de SIMO
+  pagador: string | null // letra compartida por las suscripciones de una misma cuenta de Mercado Pago
+}
 
-// Correo de cada suscripción (por id de Mercado Pago). Primero el de su cuenta en SIMO: el checkout por plan
-// no conserva el external_reference, así que el dueño sale de la tabla subscriptions (mp_preapproval_id → user_id).
-// Si no se encuentra, el correo con el que pagó en Mercado Pago, que puede ser otro.
-export async function correosDeSuscripciones(subs: Suscripcion[]): Promise<Record<string, CorreoSuscriptor>> {
+// Quién es cada suscriptor. Primero su cuenta en SIMO: el checkout por plan no conserva el external_reference,
+// así que el dueño sale de la tabla subscriptions (mp_preapproval_id → user_id). Si no está enlazada,
+// el correo del pagador en Mercado Pago, sacado del último pago o de la suscripción.
+export async function datosSuscriptores(subs: Suscripcion[], cobros: Record<string, Cobro[]>): Promise<Record<string, DatosSuscriptor>> {
   const duenos = new Map<string, string>()
   for (const s of subs) if (s.userId?.startsWith('user_')) duenos.set(s.id, s.userId)
 
@@ -116,37 +166,54 @@ export async function correosDeSuscripciones(subs: Suscripcion[]): Promise<Recor
       const { data } = await createAdminClient().from('subscriptions').select('user_id, mp_preapproval_id').in('mp_preapproval_id', sinDueno)
       for (const r of data ?? []) if (r.user_id && r.mp_preapproval_id) duenos.set(r.mp_preapproval_id, r.user_id)
     } catch {
-      // Sin Supabase se sigue con el correo de Mercado Pago
+      // sin Supabase se sigue con el correo de Mercado Pago
+    }
+  }
+  const correosSimo = await correosClerk([...duenos.values()])
+
+  // Las cuentas de Mercado Pago con más de una suscripción en la lista llevan una letra
+  const veces = new Map<number, number>()
+  for (const s of subs) if (s.pagadorId) veces.set(s.pagadorId, (veces.get(s.pagadorId) ?? 0) + 1)
+  const letras = new Map<number, string>()
+  for (const s of subs) if (s.pagadorId && (veces.get(s.pagadorId) ?? 0) > 1 && !letras.has(s.pagadorId)) letras.set(s.pagadorId, String.fromCharCode(65 + letras.size))
+
+  const resultado: Record<string, DatosSuscriptor> = {}
+  for (const s of subs) {
+    const dueno = duenos.get(s.id)
+    resultado[s.id] = {
+      correo: (dueno && correosSimo[dueno]) || null,
+      correoDeMercadoPago: false,
+      enlazada: !!dueno,
+      pagador: s.pagadorId ? (letras.get(s.pagadorId) ?? null) : null,
     }
   }
 
-  const resultado: Record<string, CorreoSuscriptor> = {}
-  const correos = await correosClerk([...duenos.values()])
-  for (const [subId, userId] of duenos) if (correos[userId]) resultado[subId] = { correo: correos[userId], deMercadoPago: false }
-
-  const token = process.env.MELI_ACCESS_TOKEN
-  const faltan = subs.filter((s) => !resultado[s.id])
-  if (token && faltan.length) {
-    const api = new PreApproval(new MercadoPagoConfig({ accessToken: token }))
-    const detalles = await Promise.all(faltan.map((s) => api.get({ id: s.id }).catch(() => null)))
-    detalles.forEach((d, i) => {
-      if (d?.payer_email) resultado[faltan[i].id] = { correo: d.payer_email, deMercadoPago: true }
+  const config = configMP()
+  const faltan = subs.filter((s) => !resultado[s.id].correo)
+  if (config && faltan.length) {
+    const pagos = new Payment(config)
+    const suscripciones = new PreApproval(config)
+    await enLotes(faltan, async (s) => {
+      const pagoId = cobros[s.id]?.find((c) => c.pagoId)?.pagoId
+      const correo =
+        (pagoId ? (await pagos.get({ id: pagoId }).catch(() => null))?.payer?.email : null) ||
+        (await suscripciones.get({ id: s.id }).catch(() => null))?.payer_email
+      if (correo) resultado[s.id] = { ...resultado[s.id], correo, correoDeMercadoPago: true }
     })
   }
   return resultado
 }
 
-export type FilaDia ={ dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null }
+export type FilaDia = { dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null }
 
-// Una fila por día; null cuando la fuente no respondió
-export function resumenPorDia(dias: string[], registros: number[] | null, suscripciones: Suscripcion[] | null): FilaDia[] {
+// Una fila por día; null cuando la fuente no respondió. `pagadas` ya viene filtrada con pago().
+export function resumenPorDia(dias: string[], registros: number[] | null, pagadas: Suscripcion[] | null): FilaDia[] {
   const contar = (fechas: (string | number)[]) => {
     const c = new Map<string, number>()
     for (const f of fechas) c.set(diaColombia(f), (c.get(diaColombia(f)) ?? 0) + 1)
     return c
   }
   const porRegistro = registros ? contar(registros) : null
-  const pagadas = suscripciones?.filter(pago) ?? null
   const porNueva = pagadas ? contar(pagadas.map((s) => s.creada)) : null
   const porActiva = pagadas ? contar(pagadas.filter((s) => s.estado === 'authorized').map((s) => s.creada)) : null
   return dias.map((dia) => ({
