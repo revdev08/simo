@@ -3,7 +3,7 @@ import { createAdminClient } from './supabase'
 import { getMpSubscription, isMpPlanKey, mpStatusToLocal, parseExternalReference, resolveMpPlan, validateMpSubscription, type MpPlanKey } from './mercadopago'
 
 function inferPlan(subscription: Awaited<ReturnType<typeof getMpSubscription>>): MpPlanKey | null {
-  for (const plan of ['semanal', 'mensual'] as const) {
+  for (const plan of ['semanal', 'anual', 'desarrollador', 'mensual'] as const) {
     if (validateMpSubscription(subscription, plan)) return plan
   }
   return null

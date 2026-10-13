@@ -45,7 +45,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
           planesViewedRef.current = true
           fbTrack('ViewContent', {
             content_name: 'Planes de Precios',
-            content_ids: Object.keys(PLAN_PRICES),
+            content_ids: ['semanal', 'anual'],
             currency: 'COP',
           })
           observer.disconnect()
@@ -100,7 +100,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
       name: "Andrea Restrepo",
       role: "Especialista de Apoyo Jurídico",
       rating: 5,
-      comment: "Los simulacros son sumamente parecidos a la prueba real de la CNSC. Recomiendo mucho el plan mensual para estudiar a fondo."
+      comment: "Los simulacros son sumamente parecidos a la prueba real de la CNSC. Recomiendo el plan anual para prepararse con tiempo y estudiar a fondo."
     },
     {
       name: "Jorge Eliecer L.",
@@ -512,7 +512,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                 </button>
               </div>
 
-              {/* Plan Mensual (Popular) */}
+              {/* Plan Anual (Popular) */}
               <div className="bg-slate-950 text-white p-8 sm:p-10 rounded-3xl flex flex-col justify-between relative transform md:-translate-y-4 border-2 border-blue-500 animate-border-glow shadow-2xl overflow-hidden group">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-tr from-blue-500 to-indigo-500 opacity-20 blur-xl pointer-events-none" />
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-widest flex items-center gap-1">
@@ -521,13 +521,16 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                 
                 <div>
                   <div className="mb-6">
-                    <h3 className="text-2xl font-black">Plan Mensual</h3>
-                    <p className="text-slate-400 text-sm mt-1.5">La preparación integral para asegurar tu puesto.</p>
+                    <h3 className="text-2xl font-black">Plan Anual</h3>
+                    <p className="text-slate-400 text-sm mt-1.5">Prepárate sin afanes para todas tus convocatorias.</p>
                   </div>
                   <div className="mb-8 flex items-baseline gap-1">
-                    <span className="text-5xl font-black tracking-tight text-white">$39900</span>
-                    <span className="text-slate-400 font-medium text-sm">/ mes</span>
+                    <span className="text-5xl font-black tracking-tight text-white">$119000</span>
+                    <span className="text-slate-400 font-medium text-sm">/ año</span>
                   </div>
+                  <p className="-mt-5 mb-8 text-sm font-semibold text-emerald-400">
+                    Ahorras $359.800 frente a pagar 12 meses por separado.
+                  </p>
                   <ul className="space-y-4 mb-10">
                     <li className="flex items-center gap-3 text-slate-300">
                       <span className="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
@@ -558,9 +561,9 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
 
                 <button
                   onClick={() => {
-                    const planId = 'mensual'
+                    const planId = 'anual'
                     fbTrack('InitiateCheckout', {
-                      content_name: 'Plan Mensual',
+                      content_name: 'Plan Anual',
                       content_ids: [planId],
                       value: PLAN_PRICES[planId],
                       currency: 'COP',
@@ -570,7 +573,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                   }}
                   className="w-full text-base font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-6 py-4 rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] cursor-pointer text-center btn-shimmer"
                 >
-                  Obtener Acceso Premium
+                  Obtener Plan Anual
                 </button>
               </div>
             </div>
