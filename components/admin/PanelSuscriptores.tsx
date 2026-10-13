@@ -77,7 +77,7 @@ const pesos = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP
 const fechaLarga = new Intl.DateTimeFormat('es-CO', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' })
 const fechaHora = new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'America/Bogota' })
 const diaTexto = (dia: string) => fechaLarga.format(new Date(`${dia}T12:00:00Z`)).replace(/\./g, '')
-const suma = (filas: FilaDia[], campo: 'registros' | 'nuevas') => filas.reduce((s, f) => s + (f[campo] ?? 0), 0)
+const suma = (filas: FilaDia[], campo: 'registros' | 'nuevas' | 'recurrentes') => filas.reduce((s, f) => s + (f[campo] ?? 0), 0)
 
 function Cifra({ etiqueta, valor, detalle }: { etiqueta: string; valor: string; detalle?: string }) {
   return (
@@ -152,8 +152,12 @@ export default function PanelSuscriptores({
               <p className="text-xs font-medium text-blue-100">Suscriptores nuevos hoy</p>
               <p className="mt-1 text-5xl font-semibold">{numero.format(hoy.nuevas ?? 0)}</p>
             </div>
-            <Cifra etiqueta="Ayer" valor={numero.format(ayer?.nuevas ?? 0)} detalle="suscriptores nuevos" />
-            <Cifra etiqueta={`Últimos ${dias} días`} valor={numero.format(nuevasPeriodo)} detalle="suscriptores nuevos" />
+            <Cifra etiqueta={ayer ? `Ayer · ${diaTexto(ayer.dia)}` : 'Ayer'} valor={numero.format(ayer?.nuevas ?? 0)} detalle="suscriptores nuevos" />
+            <Cifra
+              etiqueta={`Últimos ${dias} días`}
+              valor={numero.format(nuevasPeriodo)}
+              detalle={`suscriptores nuevos · ${numero.format(suma(filas, 'recurrentes'))} pagos recurrentes`}
+            />
             <Cifra etiqueta="Activos ahora" valor={activas === null ? '—' : numero.format(activas)} detalle="con el cobro autorizado en Mercado Pago" />
           </section>
         )}
@@ -161,7 +165,7 @@ export default function PanelSuscriptores({
         {hayRegistros && (
           <section className="grid gap-3 sm:grid-cols-4">
             <Cifra etiqueta="Registros hoy" valor={numero.format(hoy.registros ?? 0)} />
-            <Cifra etiqueta="Registros ayer" valor={numero.format(ayer?.registros ?? 0)} />
+            <Cifra etiqueta={ayer ? `Registros ayer · ${diaTexto(ayer.dia)}` : 'Registros ayer'} valor={numero.format(ayer?.registros ?? 0)} />
             <Cifra etiqueta={`Registros en ${dias} días`} valor={numero.format(registrosPeriodo)} />
             <Cifra
               etiqueta="Conversión del periodo"
@@ -268,6 +272,7 @@ export default function PanelSuscriptores({
                     {hayRegistros && <th className="px-3 py-2 sm:px-5 text-right font-medium">Registros</th>}
                     {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Suscriptores nuevos</th>}
                     {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Siguen activos</th>}
+                    {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Recurrentes</th>}
                   </tr>
                 </thead>
                 <tbody className="tabular-nums">
@@ -279,6 +284,7 @@ export default function PanelSuscriptores({
                         <td className={`px-3 py-2 sm:px-5 text-right ${f.nuevas ? 'font-semibold text-slate-900 dark:text-white' : 'text-slate-400 dark:text-slate-600'}`}>{f.nuevas}</td>
                       )}
                       {haySuscripciones && <td className="px-3 py-2 sm:px-5 text-right text-slate-500 dark:text-slate-400">{f.siguenActivas}</td>}
+                      {haySuscripciones && <td className="px-3 py-2 sm:px-5 text-right text-slate-500 dark:text-slate-400">{f.recurrentes}</td>}
                     </tr>
                   ))}
                 </tbody>
@@ -288,8 +294,9 @@ export default function PanelSuscriptores({
         )}
 
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Suscriptor nuevo: suscripción creada ese día en Mercado Pago con al menos un pago aprobado, aunque después la haya cancelado. Los intentos rechazados y las suscripciones sin pago aprobado no cuentan.
-          «Siguen activos» son los de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago.
+          Suscriptor nuevo: persona cuyo primer pago aprobado fue ese día (fecha de aprobación del pago, hora de Colombia). No cuentan los intentos
+          rechazados. «Recurrentes» son los pagos aprobados de quienes ya habían pagado antes: renovaciones mensuales y personas que vuelven a
+          suscribirse. Un día pasado solo cambia si se devuelve un pago. «Siguen activos» son los nuevos de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago.
         </p>
       </div>
     </main>

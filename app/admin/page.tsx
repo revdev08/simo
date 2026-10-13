@@ -1,17 +1,19 @@
 import { auth } from '@clerk/nextjs/server'
 import { notFound, redirect } from 'next/navigation'
 import { esAdmin } from '@/lib/admin/acceso'
-import { datosSuscriptores, pagosDeSuscripciones, pago, registrosClerk, resumenPorDia, suscripcionesMP, ultimosDias } from '@/lib/admin/metricas'
+import { clasificarPagos, datosSuscriptores, pagosDeSuscripciones, registrosClerk, resumenPorDia, suscripcionesMP, ultimosDias } from '@/lib/admin/metricas'
 import PanelSuscriptores from '@/components/admin/PanelSuscriptores'
 
 // Solo para los correos de ADMIN_EMAILS; para los demás la página no existe
 export const metadata = { title: 'Administración', robots: { index: false, follow: false } }
 
-// Se consultan todos los pagos del periodo en Mercado Pago: con 90 días pueden ser varias páginas
+// Se consultan los pagos del periodo y de los 180 días anteriores en Mercado Pago: pueden ser varias páginas
 export const maxDuration = 60
 
 const RANGOS = [7, 30, 90]
 const DIA_MS = 86_400_000
+// Historia previa al periodo para saber si una persona ya había pagado antes (entonces no es nueva)
+const HISTORIA_DIAS = 180
 
 async function cargarPanel(dias: number) {
   const ahora = Date.now()
@@ -25,20 +27,23 @@ async function cargarPanel(dias: number) {
   if (!suscripciones.ok) errores.push(`No se pudieron leer las suscripciones de Mercado Pago: ${suscripciones.error}`)
 
   const subs = suscripciones.ok ? suscripciones.datos : null
-  // Activas o que dicen tener cobros. Ni el estado ni el resumen de Mercado Pago prueban que hubo pago, así que se
-  // buscan los pagos reales del periodo (y de las últimas 15) y solo cuentan las suscripciones con uno aprobado.
+  // Ni el estado de la suscripción ni el resumen de Mercado Pago prueban que hubo pago: se cuentan los pagos
+  // aprobados, por la fecha de aprobación, y se separan los nuevos de los recurrentes.
   const candidatas = (subs ?? []).filter((s) => s.estado === 'authorized' || s.cobros > 0).sort((a, b) => b.creada.localeCompare(a.creada))
   const ultimas = candidatas.slice(0, 15)
   const masAntigua = Math.min(desde, ...ultimas.map((s) => Date.parse(s.creada)))
-  const pagos = subs ? await pagosDeSuscripciones(subs, Math.ceil((ahora - masAntigua) / DIA_MS) + 1) : null
+  const diasPagos = Math.ceil((ahora - masAntigua) / DIA_MS) + 1 + HISTORIA_DIAS
+  const pagos = subs ? await pagosDeSuscripciones(subs, diasPagos) : null
   if (pagos && !pagos.ok) {
-    errores.push(`No se pudieron consultar los pagos en Mercado Pago (${pagos.error}): las suscripciones nuevas no se cuentan hasta poder verificarlas.`)
+    errores.push(`No se pudieron consultar los pagos en Mercado Pago (${pagos.error}): los suscriptores nuevos no se cuentan hasta poder verificarlos.`)
   }
   const cobros = pagos?.ok ? pagos.datos : {}
+  // Un día de margen en el borde de la consulta
+  const aprobados = subs && pagos?.ok ? clasificarPagos(subs, cobros, ahora - (diasPagos - 1) * DIA_MS) : null
   const datos = await datosSuscriptores(ultimas, cobros)
 
   return {
-    filas: resumenPorDia(lista, registros.ok ? registros.datos.fechas : null, subs ? subs.filter((s) => pago(s, cobros)) : null),
+    filas: resumenPorDia(lista, registros.ok ? registros.datos.fechas : null, aprobados, subs ?? []),
     totalUsuarios: registros.ok ? registros.datos.total : null,
     activas: subs ? subs.filter((s) => s.estado === 'authorized').length : null,
     recientes: subs

@@ -111,7 +111,9 @@ export type Cobro = {
   estado: string // approved, rejected, refunded…
   detalle: string
   pagoId: string
-  fecha: string
+  fecha: string // creación del pago
+  aprobadoEn: string | null
+  pagadorId: string | null // cuenta de Mercado Pago que pagó
   correo: string | null // del pagador en Mercado Pago
   aproximado: boolean // asociado por pagador y hora, porque el pago no traía el id de la suscripción
 }
@@ -132,7 +134,8 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
     const api = new Payment(config)
     const LIMITE = 100
     const pagina = (offset: number) =>
-      api.search({ options: { sort: 'date_created', criteria: 'desc', range: 'date_created', begin_date: `NOW-${dias}DAYS`, end_date: 'NOW', limit: LIMITE, offset } })
+      // En orden ascendente los pagos que llegan durante la consulta quedan al final y no corren las páginas
+      api.search({ options: { sort: 'date_created', criteria: 'asc', range: 'date_created', begin_date: `NOW-${dias}DAYS`, end_date: 'NOW', limit: LIMITE, offset } })
     const primera = await pagina(0)
     const total = Math.min(primera.paging?.total ?? 0, 5000)
     const offsets = Array.from({ length: Math.max(0, Math.ceil(total / LIMITE) - 1) }, (_, i) => (i + 1) * LIMITE)
@@ -140,8 +143,10 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
 
     const porId = new Map(subs.map((s) => [s.id, s]))
     const resultado: Record<string, Cobro[]> = Object.fromEntries(subs.map((s) => [s.id, []]))
+    const vistos = new Set<string>()
     for (const p of pagos) {
-      if (!p.id) continue
+      if (!p.id || vistos.has(String(p.id))) continue
+      vistos.add(String(p.id))
       const idSuscripcion = p.point_of_interaction?.transaction_data?.subscription_id ?? p.metadata?.preapproval_id
       let sub = idSuscripcion ? porId.get(String(idSuscripcion)) : undefined
       let aproximado = false
@@ -160,6 +165,8 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
         detalle: p.status_detail ?? '',
         pagoId: String(p.id),
         fecha: p.date_created ?? '',
+        aprobadoEn: p.date_approved ?? null,
+        pagadorId: p.payer?.id ? String(p.payer.id) : null,
         correo: p.payer?.email || null,
         aproximado,
       })
@@ -171,10 +178,30 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
   }
 }
 
-// Suscriptor: al menos un pago aprobado, aunque después cancelara. No basta el estado «autorizada» ni el
-// resumen de Mercado Pago (charged_quantity), que cuenta intentos rechazados. Sin sus pagos consultados, no cuenta.
-export function pago(s: Suscripcion, cobros: Record<string, Cobro[]>) {
-  return !!cobros[s.id]?.some((c) => c.estado === 'approved')
+export type PagoAprobado = { subId: string; dia: string; tipo: 'nuevo' | 'recurrente' }
+
+// Cada pago aprobado, del más antiguo al más reciente, con el día (Colombia) en que se aprobó:
+// - nuevo: el primer pago de una persona (por su cuenta de Mercado Pago) que no había pagado antes;
+// - recurrente: renovaciones mensuales y personas que ya habían pagado y vuelven a suscribirse.
+// Los intentos rechazados no aparecen. `desde` es el inicio de los pagos consultados: las suscripciones creadas
+// antes ya habían pagado, así que sus pagos y los de esas personas son recurrentes.
+export function clasificarPagos(subs: Suscripcion[], cobros: Record<string, Cobro[]>, desde: number): PagoAprobado[] {
+  const porId = new Map(subs.map((s) => [s.id, s]))
+  const persona = (sub: Suscripcion, c: Cobro) => c.pagadorId ?? (sub.pagadorId ? String(sub.pagadorId) : `suscripcion:${sub.id}`)
+  const aprobados = Object.entries(cobros)
+    .flatMap(([subId, lista]) => lista.filter((c) => c.estado === 'approved').map((c) => ({ sub: porId.get(subId)!, c, hora: Date.parse(c.aprobadoEn ?? c.fecha) })))
+    .filter((x) => x.sub && !Number.isNaN(x.hora))
+    .sort((a, b) => a.hora - b.hora)
+
+  const yaPagaron = new Set(aprobados.filter((x) => Date.parse(x.sub.creada) < desde).map((x) => persona(x.sub, x.c)))
+  const conPago = new Set<string>()
+  return aprobados.map(({ sub, c, hora }) => {
+    const quien = persona(sub, c)
+    const nuevo = !conPago.has(sub.id) && Date.parse(sub.creada) >= desde && !yaPagaron.has(quien)
+    conPago.add(sub.id)
+    yaPagaron.add(quien)
+    return { subId: sub.id, dia: diaColombia(hora), tipo: nuevo ? 'nuevo' : 'recurrente' }
+  })
 }
 
 // Correo de cada usuario de Clerk
@@ -248,22 +275,32 @@ export async function datosSuscriptores(subs: Suscripcion[], cobros: Record<stri
   return resultado
 }
 
-export type FilaDia = { dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null }
+export type FilaDia = { dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null; recurrentes: number | null }
 
-// Una fila por día; null cuando la fuente no respondió. `pagadas` ya viene filtrada con pago().
-export function resumenPorDia(dias: string[], registros: number[] | null, pagadas: Suscripcion[] | null): FilaDia[] {
+// Una fila por día; null cuando la fuente no respondió
+export function resumenPorDia(dias: string[], registros: number[] | null, pagos: PagoAprobado[] | null, subs: Suscripcion[]): FilaDia[] {
   const contar = (fechas: (string | number)[]) => {
     const c = new Map<string, number>()
     for (const f of fechas) c.set(diaColombia(f), (c.get(diaColombia(f)) ?? 0) + 1)
     return c
   }
   const porRegistro = registros ? contar(registros) : null
-  const porNueva = pagadas ? contar(pagadas.map((s) => s.creada)) : null
-  const porActiva = pagadas ? contar(pagadas.filter((s) => s.estado === 'authorized').map((s) => s.creada)) : null
+  const activas = new Set(subs.filter((s) => s.estado === 'authorized').map((s) => s.id))
+  const nuevos = pagos?.filter((p) => p.tipo === 'nuevo') ?? null
+  const contarDias = (lista: PagoAprobado[] | null) => {
+    if (!lista) return null
+    const c = new Map<string, number>()
+    for (const p of lista) c.set(p.dia, (c.get(p.dia) ?? 0) + 1)
+    return c
+  }
+  const porNuevo = contarDias(nuevos)
+  const porActivo = contarDias(nuevos?.filter((p) => activas.has(p.subId)) ?? null)
+  const porRecurrente = contarDias(pagos?.filter((p) => p.tipo === 'recurrente') ?? null)
   return dias.map((dia) => ({
     dia,
     registros: porRegistro ? (porRegistro.get(dia) ?? 0) : null,
-    nuevas: porNueva ? (porNueva.get(dia) ?? 0) : null,
-    siguenActivas: porActiva ? (porActiva.get(dia) ?? 0) : null,
+    nuevas: porNuevo ? (porNuevo.get(dia) ?? 0) : null,
+    siguenActivas: porActivo ? (porActivo.get(dia) ?? 0) : null,
+    recurrentes: porRecurrente ? (porRecurrente.get(dia) ?? 0) : null,
   }))
 }
