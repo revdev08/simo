@@ -22,17 +22,19 @@ export function fechaDelId(videoId: string): Date {
 }
 
 const ENLACE_COMPLETO = /^\/@([\w.-]+)\/(video|photo)\/(\d{15,21})(\/|$)/
-const esTiktok = (u: URL) => u.hostname === 'tiktok.com' || u.hostname.endsWith('.tiktok.com')
+const esDe = (u: URL, dominio: string) => u.hostname === dominio || u.hostname.endsWith(`.${dominio}`)
+// Dominios con los que TikTok comparte enlaces; los cortos redirigen al enlace completo en tiktok.com
+const DOMINIOS_TIKTOK = ['tiktok.com', 'tt.site']
 
 function leerEnlaceCompleto(u: URL): VideoTiktok | null {
-  const m = esTiktok(u) ? u.pathname.match(ENLACE_COMPLETO) : null
+  const m = esDe(u, 'tiktok.com') ? u.pathname.match(ENLACE_COMPLETO) : null
   if (!m) return null
   const [, autor, tipo, videoId] = m
   return { videoId, autor, url: `https://www.tiktok.com/@${autor}/${tipo}/${videoId}`, publicadoEn: fechaDelId(videoId) }
 }
 
-// Acepta el enlace completo (tiktok.com/@usuario/video/…) o uno corto (vm.tiktok.com, vt.tiktok.com,
-// tiktok.com/t/…), que TikTok redirige al completo.
+// Acepta el enlace completo (tiktok.com/@usuario/video/…) o uno corto (www.tt.site/t/…, vm.tiktok.com,
+// vt.tiktok.com, tiktok.com/t/…), que TikTok redirige al completo.
 export async function resolverEnlace(texto: string): Promise<VideoTiktok | { error: string }> {
   let u: URL
   try {
@@ -40,14 +42,21 @@ export async function resolverEnlace(texto: string): Promise<VideoTiktok | { err
   } catch {
     return { error: 'Eso no es un enlace. Pega el enlace del video de TikTok.' }
   }
-  if (!esTiktok(u)) return { error: 'El enlace debe ser de tiktok.com.' }
+  if (!DOMINIOS_TIKTOK.some((d) => esDe(u, d))) return { error: 'El enlace debe ser de TikTok.' }
+  if (u.hostname === 'tt.site') u.hostname = 'www.tt.site' // sin www el dominio no responde
   const directo = leerEnlaceCompleto(u)
   if (directo) return directo
   try {
-    const r = await fetch(u, { redirect: 'manual', headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(6000) })
-    const destino = r.headers.get('location')
-    const video = destino ? leerEnlaceCompleto(new URL(destino, u)) : null
-    if (video) return video
+    // Se siguen hasta 3 redirecciones, solo dentro de los dominios de TikTok
+    for (let i = 0; i < 3; i++) {
+      const r = await fetch(u, { redirect: 'manual', headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(6000) })
+      const destino = r.headers.get('location')
+      if (!destino) break
+      u = new URL(destino, u)
+      if (!DOMINIOS_TIKTOK.some((d) => esDe(u, d))) break
+      const video = leerEnlaceCompleto(u)
+      if (video) return video
+    }
   } catch {
     // se responde abajo
   }
