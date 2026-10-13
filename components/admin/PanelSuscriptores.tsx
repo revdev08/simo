@@ -1,8 +1,69 @@
 import Link from 'next/link'
-import type { FilaDia } from '@/lib/admin/metricas'
+import type { Cobro, DatosSuscriptor, FilaDia } from '@/lib/admin/metricas'
 import BarrasPorDia from './BarrasPorDia'
 
-export type SuscripcionReciente = { fecha: string; correo: string | null; estado: string; cobros: number; monto: number | null }
+export type SuscripcionReciente = DatosSuscriptor & {
+  fecha: string
+  estado: string
+  cobros: Cobro[] | null // pagos reales; null si no se pudieron consultar
+  cobrosResumen: number
+  monto: number | null
+}
+
+const ESTADO_PAGO: Record<string, string> = {
+  approved: 'aprobado',
+  rejected: 'rechazado',
+  refunded: 'devuelto',
+  cancelled: 'cancelado',
+  in_process: 'en revisión',
+  pending: 'pendiente',
+  charged_back: 'contracargo',
+}
+
+const MOTIVO_RECHAZO: Record<string, string> = {
+  cc_rejected_insufficient_amount: 'fondos insuficientes',
+  cc_rejected_bad_filled_security_code: 'código de seguridad incorrecto',
+  cc_rejected_bad_filled_date: 'fecha de vencimiento incorrecta',
+  cc_rejected_bad_filled_card_number: 'número de tarjeta incorrecto',
+  cc_rejected_bad_filled_other: 'datos de la tarjeta incorrectos',
+  cc_rejected_call_for_authorize: 'el banco pide autorizar el pago',
+  cc_rejected_card_disabled: 'tarjeta inactiva',
+  cc_rejected_card_error: 'error de la tarjeta',
+  cc_rejected_duplicated_payment: 'pago duplicado',
+  cc_rejected_high_risk: 'prevención de fraude',
+  cc_rejected_max_attempts: 'demasiados intentos',
+  cc_rejected_blacklist: 'tarjeta bloqueada',
+  cc_rejected_other_reason: 'rechazado por el banco',
+}
+
+// Resumen de los pagos reales de una suscripción
+function Pagos({ cobros, resumen }: { cobros: Cobro[] | null; resumen: number }) {
+  if (!cobros) return <span className="text-slate-400 dark:text-slate-500" title={`No se pudieron consultar los pagos (el resumen de Mercado Pago dice ${resumen})`}>Sin verificar</span>
+  if (!cobros.length) return <span className="text-slate-400 dark:text-slate-500">Sin pagos</span>
+  const aprobados = cobros.filter((c) => c.estado === 'approved').length
+  const aproximado = cobros.some((c) => c.aproximado)
+  if (aprobados) {
+    return (
+      <span
+        className="text-emerald-700 dark:text-emerald-400"
+        title={aproximado ? 'Pago asociado por la cuenta de Mercado Pago y la hora, porque no traía el id de la suscripción' : undefined}
+      >
+        ✓ {aprobados} {aprobados === 1 ? 'aprobado' : 'aprobados'}
+        {aproximado && ' ≈'}
+        {cobros.length > aprobados && <span className="text-slate-500 dark:text-slate-400"> de {cobros.length}</span>}
+      </span>
+    )
+  }
+  const ultimo = cobros[0]
+  const motivo = MOTIVO_RECHAZO[ultimo.detalle]
+  return (
+    <span className="text-rose-700 dark:text-rose-400" title={ultimo.detalle}>
+      ✕ {ESTADO_PAGO[ultimo.estado] ?? ultimo.estado}
+      {motivo && <span className="block text-xs text-slate-500 dark:text-slate-400">{motivo}</span>}
+      {cobros.length > 1 && <span className="block text-xs text-slate-500 dark:text-slate-400">{cobros.length} intentos</span>}
+    </span>
+  )
+}
 
 const ESTADOS: Record<string, { texto: string; clase: string }> = {
   authorized: { texto: 'Activa', clase: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' },
@@ -56,12 +117,11 @@ export default function PanelSuscriptores({
   const conversion = hayRegistros && haySuscripciones && registrosPeriodo > 0 ? (nuevasPeriodo / registrosPeriodo) * 100 : null
 
   return (
-    <main className="min-h-screen bg-slate-50 px-4 py-8 dark:bg-slate-950 sm:px-6">
+    <main className="px-4 pb-10 pt-6 sm:px-6">
       <div className="mx-auto max-w-5xl space-y-6">
         <header className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">Administración</p>
-            <h1 className="mt-1 text-2xl font-bold text-slate-900 dark:text-white">Suscriptores por día</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Suscriptores por día</h1>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               Hora de Colombia · actualizado {fechaHora.format(new Date(generado))}
             </p>
@@ -102,7 +162,7 @@ export default function PanelSuscriptores({
             </div>
             <Cifra etiqueta="Ayer" valor={numero.format(ayer?.nuevas ?? 0)} detalle="suscriptores nuevos" />
             <Cifra etiqueta={`Últimos ${dias} días`} valor={numero.format(nuevasPeriodo)} detalle="suscriptores nuevos" />
-            <Cifra etiqueta="Activos ahora" valor={activas === null ? '—' : numero.format(activas)} detalle="con el cobro autorizado" />
+            <Cifra etiqueta="Activos ahora" valor={activas === null ? '—' : numero.format(activas)} detalle="con el cobro autorizado en Mercado Pago" />
           </section>
         )}
 
@@ -150,7 +210,7 @@ export default function PanelSuscriptores({
                     <th className="px-3 py-2 sm:px-5 font-medium">Fecha</th>
                     <th className="px-3 py-2 sm:px-5 font-medium">Correo</th>
                     <th className="px-3 py-2 sm:px-5 font-medium">Estado</th>
-                    <th className="px-3 py-2 sm:px-5 text-right font-medium">Cobros</th>
+                    <th className="px-3 py-2 sm:px-5 text-right font-medium">Pagos</th>
                     <th className="px-3 py-2 sm:px-5 text-right font-medium">Valor</th>
                   </tr>
                 </thead>
@@ -160,11 +220,39 @@ export default function PanelSuscriptores({
                     return (
                       <tr key={i} className="border-t border-slate-100 dark:border-slate-800">
                         <td className="whitespace-nowrap px-3 py-2 sm:px-5 text-slate-700 dark:text-slate-300">{fechaHora.format(new Date(s.fecha))}</td>
-                        <td className="px-3 py-2 sm:px-5 text-slate-700 dark:text-slate-300">{s.correo ?? '—'}</td>
+                        <td className="px-3 py-2 sm:px-5 text-slate-700 dark:text-slate-300">
+                          {s.correo ?? '—'}
+                          {s.correoDeMercadoPago && (
+                            <span
+                              title="Correo con el que pagó en Mercado Pago: no se encontró su cuenta de SIMO y puede ser otro correo"
+                              className="ml-1.5 rounded bg-sky-50 px-1 py-0.5 text-[10px] font-semibold text-sky-700 dark:bg-sky-950 dark:text-sky-300"
+                            >
+                              MP
+                            </span>
+                          )}
+                          {s.pagador && (
+                            <span
+                              title="Misma cuenta de Mercado Pago que las otras filas con esta letra"
+                              className="ml-1.5 rounded bg-violet-50 px-1 py-0.5 text-[10px] font-semibold text-violet-700 dark:bg-violet-950 dark:text-violet-300"
+                            >
+                              Pagador {s.pagador}
+                            </span>
+                          )}
+                          {s.estado === 'authorized' && !s.enlazada && (
+                            <span
+                              title="Pagó, pero esta suscripción no está asociada a ningún usuario de SIMO: revisa si tiene acceso"
+                              className="mt-0.5 block text-xs font-medium text-amber-700 dark:text-amber-400"
+                            >
+                              ⚠ Sin cuenta de SIMO enlazada
+                            </span>
+                          )}
+                        </td>
                         <td className="px-3 py-2 sm:px-5">
                           <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${estado.clase}`}>{estado.texto}</span>
                         </td>
-                        <td className="px-3 py-2 sm:px-5 text-right tabular-nums text-slate-700 dark:text-slate-300">{s.cobros}</td>
+                        <td className="px-3 py-2 sm:px-5 text-right tabular-nums text-slate-700 dark:text-slate-300">
+                          <Pagos cobros={s.cobros} resumen={s.cobrosResumen} />
+                        </td>
                         <td className="whitespace-nowrap px-3 py-2 sm:px-5 text-right tabular-nums text-slate-700 dark:text-slate-300">
                           {s.monto === null ? '—' : pesos.format(s.monto)}
                         </td>
@@ -208,8 +296,8 @@ export default function PanelSuscriptores({
         )}
 
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Suscriptor nuevo: suscripción creada ese día en Mercado Pago que autorizó el cobro o pagó al menos una vez, aunque después la haya cancelado.
-          «Siguen activos» son los de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk.
+          Suscriptor nuevo: suscripción creada ese día en Mercado Pago con al menos un pago aprobado, aunque después la haya cancelado. Los intentos rechazados y las suscripciones sin pago aprobado no cuentan.
+          «Siguen activos» son los de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago.
         </p>
       </div>
     </main>
