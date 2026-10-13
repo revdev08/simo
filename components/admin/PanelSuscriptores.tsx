@@ -1,14 +1,6 @@
 import Link from 'next/link'
-import type { Cobro, DatosSuscriptor, FilaDia } from '@/lib/admin/metricas'
+import type { Cobro, FilaDia, SuscripcionReciente } from '@/lib/admin/metricas'
 import BarrasPorDia from './BarrasPorDia'
-
-export type SuscripcionReciente = DatosSuscriptor & {
-  fecha: string
-  estado: string
-  cobros: Cobro[] | null // pagos reales; null si no se pudieron consultar
-  cobrosResumen: number
-  monto: number | null
-}
 
 const ESTADO_PAGO: Record<string, string> = {
   approved: 'aprobado',
@@ -98,6 +90,8 @@ export default function PanelSuscriptores({
   recientes,
   errores,
   generado,
+  generadoMercadoPago,
+  minutosCache,
 }: {
   dias: number
   rangos: number[]
@@ -107,6 +101,8 @@ export default function PanelSuscriptores({
   recientes: SuscripcionReciente[] | null
   errores: string[]
   generado: string
+  generadoMercadoPago: string | null // los datos de Mercado Pago vienen de una caché y pueden ser de hace unos minutos
+  minutosCache: number
 }) {
   const hayRegistros = filas.length > 0 && filas[0].registros !== null
   const haySuscripciones = filas.length > 0 && filas[0].nuevas !== null
@@ -123,7 +119,12 @@ export default function PanelSuscriptores({
           <div>
             <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Suscriptores por día</h1>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-              Hora de Colombia · actualizado {fechaHora.format(new Date(generado))}
+              Hora de Colombia · registros actualizados {fechaHora.format(new Date(generado))}
+              {generadoMercadoPago && (
+                <span title={`Para no pasar el límite de peticiones de Mercado Pago, sus datos se consultan como mucho cada ${minutosCache} minutos`}>
+                  {' '}· Mercado Pago {fechaHora.format(new Date(generadoMercadoPago))}
+                </span>
+              )}
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -304,7 +305,7 @@ export default function PanelSuscriptores({
         <p className="text-xs text-slate-500 dark:text-slate-400">
           Suscriptor nuevo: persona cuyo primer pago aprobado fue ese día (fecha de aprobación del pago, hora de Colombia). No cuentan los intentos
           rechazados. «Recurrentes» son los pagos aprobados de quienes ya habían pagado antes: renovaciones mensuales y personas que vuelven a
-          suscribirse. Un día pasado solo cambia si se devuelve un pago. «Siguen activos» son los nuevos de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago.
+          suscribirse. Un día pasado solo cambia si se devuelve un pago. «Siguen activos» son los nuevos de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago. Los datos de Mercado Pago se renuevan como mucho cada {minutosCache} minutos para no pasar su límite de peticiones; si Mercado Pago falla al renovarlos, se muestran los últimos que se pudieron leer.
         </p>
       </div>
     </main>

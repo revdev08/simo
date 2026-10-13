@@ -27,7 +27,11 @@ export async function GET(req: Request) {
       ...(expiredResult.data ?? []).map((item) => item.mp_preapproval_id),
     ].filter((id): id is string => Boolean(id)))]
 
-    const results = await Promise.allSettled(ids.map((id) => syncMercadoPagoSubscription(id)))
+    // En lotes de 5: hasta 100 consultas a la vez a Mercado Pago pueden pasar su límite de peticiones
+    const results: PromiseSettledResult<unknown>[] = []
+    for (let i = 0; i < ids.length; i += 5) {
+      results.push(...(await Promise.allSettled(ids.slice(i, i + 5).map((id) => syncMercadoPagoSubscription(id)))))
+    }
     const failed = results.filter((result) => result.status === 'rejected').length
     console.log('[CRON Sync] Finalizado', { total: ids.length, synchronized: ids.length - failed, failed })
 
