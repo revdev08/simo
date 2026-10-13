@@ -126,18 +126,26 @@ export default function PanelSuscriptores({
               Hora de Colombia · actualizado {fechaHora.format(new Date(generado))}
             </p>
           </div>
-          <nav className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm dark:border-slate-800 dark:bg-slate-900" aria-label="Periodo">
-            {rangos.map((r) => (
-              <Link
-                key={r}
-                href={`/admin?dias=${r}`}
-                aria-current={r === dias ? 'page' : undefined}
-                className={`rounded-lg px-3 py-1.5 font-medium ${r === dias ? 'bg-blue-600 text-white' : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800'}`}
-              >
-                {r} días
-              </Link>
-            ))}
-          </nav>
+          <div className="flex flex-wrap items-center gap-2">
+            <Link
+              href="/api/checkout?plan=desarrollador"
+              className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-300"
+            >
+              Compra de prueba · $2.000
+            </Link>
+            <nav className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm dark:border-slate-800 dark:bg-slate-900" aria-label="Periodo">
+              {rangos.map((r) => (
+                <Link
+                  key={r}
+                  href={`/admin?dias=${r}`}
+                  aria-current={r === dias ? 'page' : undefined}
+                  className={`rounded-lg px-3 py-1.5 font-medium ${r === dias ? 'bg-blue-600 text-white' : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800'}`}
+                >
+                  {r} días
+                </Link>
+              ))}
+            </nav>
+          </div>
         </header>
 
         {errores.map((e) => (
