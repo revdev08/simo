@@ -41,10 +41,15 @@ function Pagos({ cobros, resumen }: { cobros: Cobro[] | null; resumen: number })
   if (!cobros) return <span className="text-slate-400 dark:text-slate-500" title={`No se pudieron consultar los pagos (el resumen de Mercado Pago dice ${resumen})`}>Sin verificar</span>
   if (!cobros.length) return <span className="text-slate-400 dark:text-slate-500">Sin pagos</span>
   const aprobados = cobros.filter((c) => c.estado === 'approved').length
+  const aproximado = cobros.some((c) => c.aproximado)
   if (aprobados) {
     return (
-      <span className="text-emerald-700 dark:text-emerald-400">
+      <span
+        className="text-emerald-700 dark:text-emerald-400"
+        title={aproximado ? 'Pago asociado por la cuenta de Mercado Pago y la hora, porque no traía el id de la suscripción' : undefined}
+      >
         ✓ {aprobados} {aprobados === 1 ? 'aprobado' : 'aprobados'}
+        {aproximado && ' ≈'}
         {cobros.length > aprobados && <span className="text-slate-500 dark:text-slate-400"> de {cobros.length}</span>}
       </span>
     )

@@ -1,13 +1,13 @@
 import { auth } from '@clerk/nextjs/server'
 import { notFound, redirect } from 'next/navigation'
 import { esAdmin } from '@/lib/admin/acceso'
-import { cobrosDeSuscripciones, datosSuscriptores, pago, registrosClerk, resumenPorDia, suscripcionesMP, ultimosDias } from '@/lib/admin/metricas'
+import { datosSuscriptores, pagosDeSuscripciones, pago, registrosClerk, resumenPorDia, suscripcionesMP, ultimosDias } from '@/lib/admin/metricas'
 import PanelSuscriptores from '@/components/admin/PanelSuscriptores'
 
 // Solo para los correos de ADMIN_EMAILS; para los demás la página no existe
 export const metadata = { title: 'Administración', robots: { index: false, follow: false } }
 
-// Se consultan los pagos de cada suscripción del periodo: con 90 días son bastantes peticiones a Mercado Pago
+// Se consultan todos los pagos del periodo en Mercado Pago: con 90 días pueden ser varias páginas
 export const maxDuration = 60
 
 const RANGOS = [7, 30, 90]
@@ -25,16 +25,16 @@ async function cargarPanel(dias: number) {
   if (!suscripciones.ok) errores.push(`No se pudieron leer las suscripciones de Mercado Pago: ${suscripciones.error}`)
 
   const subs = suscripciones.ok ? suscripciones.datos : null
-  // Activas o que dicen tener cobros. Ni el estado ni el resumen de Mercado Pago prueban que hubo pago, así que
-  // se consultan los pagos reales de todas las del periodo y de las últimas 15; solo cuentan las que tienen uno aprobado.
+  // Activas o que dicen tener cobros. Ni el estado ni el resumen de Mercado Pago prueban que hubo pago, así que se
+  // buscan los pagos reales del periodo (y de las últimas 15) y solo cuentan las suscripciones con uno aprobado.
   const candidatas = (subs ?? []).filter((s) => s.estado === 'authorized' || s.cobros > 0).sort((a, b) => b.creada.localeCompare(a.creada))
   const ultimas = candidatas.slice(0, 15)
-  const delPeriodo = candidatas.filter((s) => Date.parse(s.creada) >= desde)
-  const cobros = await cobrosDeSuscripciones([...ultimas, ...delPeriodo].map((s) => s.id))
-  const sinVerificar = delPeriodo.filter((s) => !cobros[s.id]).length
-  if (sinVerificar) {
-    errores.push(`No se pudieron consultar los pagos de ${sinVerificar} suscripciones del periodo: no se cuentan como nuevas. Recarga la página para intentarlo de nuevo.`)
+  const masAntigua = Math.min(desde, ...ultimas.map((s) => Date.parse(s.creada)))
+  const pagos = subs ? await pagosDeSuscripciones(subs, Math.ceil((ahora - masAntigua) / DIA_MS) + 1) : null
+  if (pagos && !pagos.ok) {
+    errores.push(`No se pudieron consultar los pagos en Mercado Pago (${pagos.error}): las suscripciones nuevas no se cuentan hasta poder verificarlas.`)
   }
+  const cobros = pagos?.ok ? pagos.datos : {}
   const datos = await datosSuscriptores(ultimas, cobros)
 
   return {
