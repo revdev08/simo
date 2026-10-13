@@ -117,12 +117,11 @@ export default function PanelSuscriptores({
   const conversion = hayRegistros && haySuscripciones && registrosPeriodo > 0 ? (nuevasPeriodo / registrosPeriodo) * 100 : null
 
   return (
-    <main className="min-h-screen bg-slate-50 px-4 py-8 dark:bg-slate-950 sm:px-6">
+    <main className="px-4 pb-10 pt-6 sm:px-6">
       <div className="mx-auto max-w-5xl space-y-6">
         <header className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">Administración</p>
-            <h1 className="mt-1 text-2xl font-bold text-slate-900 dark:text-white">Suscriptores por día</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Suscriptores por día</h1>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               Hora de Colombia · actualizado {fechaHora.format(new Date(generado))}
             </p>
