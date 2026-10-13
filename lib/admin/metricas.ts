@@ -5,6 +5,7 @@
 import 'server-only'
 import { clerkClient } from '@clerk/nextjs/server'
 import { MercadoPagoConfig, PreApproval } from 'mercadopago'
+import { createAdminClient } from '@/lib/supabase'
 
 const DIA_MS = 86_400_000
 const formatoDia = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Bogota', year: 'numeric', month: '2-digit', day: '2-digit' })
@@ -87,8 +88,8 @@ export async function suscripcionesMP(): Promise<Resultado<Suscripcion[]>> {
   }
 }
 
-// Correo de cada usuario de Clerk (para la lista de suscripciones recientes)
-export async function correosClerk(ids: string[]): Promise<Record<string, string>> {
+// Correo de cada usuario de Clerk
+async function correosClerk(ids: string[]): Promise<Record<string, string>> {
   const validos = [...new Set(ids.filter((id) => id.startsWith('user_')))].slice(0, 100)
   if (!validos.length) return {}
   try {
@@ -100,7 +101,42 @@ export async function correosClerk(ids: string[]): Promise<Record<string, string
   }
 }
 
-export type FilaDia = { dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null }
+export type CorreoSuscriptor = { correo: string; deMercadoPago: boolean }
+
+// Correo de cada suscripción (por id de Mercado Pago). Primero el de su cuenta en SIMO: el checkout por plan
+// no conserva el external_reference, así que el dueño sale de la tabla subscriptions (mp_preapproval_id → user_id).
+// Si no se encuentra, el correo con el que pagó en Mercado Pago, que puede ser otro.
+export async function correosDeSuscripciones(subs: Suscripcion[]): Promise<Record<string, CorreoSuscriptor>> {
+  const duenos = new Map<string, string>()
+  for (const s of subs) if (s.userId?.startsWith('user_')) duenos.set(s.id, s.userId)
+
+  const sinDueno = subs.filter((s) => !duenos.has(s.id)).map((s) => s.id)
+  if (sinDueno.length) {
+    try {
+      const { data } = await createAdminClient().from('subscriptions').select('user_id, mp_preapproval_id').in('mp_preapproval_id', sinDueno)
+      for (const r of data ?? []) if (r.user_id && r.mp_preapproval_id) duenos.set(r.mp_preapproval_id, r.user_id)
+    } catch {
+      // Sin Supabase se sigue con el correo de Mercado Pago
+    }
+  }
+
+  const resultado: Record<string, CorreoSuscriptor> = {}
+  const correos = await correosClerk([...duenos.values()])
+  for (const [subId, userId] of duenos) if (correos[userId]) resultado[subId] = { correo: correos[userId], deMercadoPago: false }
+
+  const token = process.env.MELI_ACCESS_TOKEN
+  const faltan = subs.filter((s) => !resultado[s.id])
+  if (token && faltan.length) {
+    const api = new PreApproval(new MercadoPagoConfig({ accessToken: token }))
+    const detalles = await Promise.all(faltan.map((s) => api.get({ id: s.id }).catch(() => null)))
+    detalles.forEach((d, i) => {
+      if (d?.payer_email) resultado[faltan[i].id] = { correo: d.payer_email, deMercadoPago: true }
+    })
+  }
+  return resultado
+}
+
+export type FilaDia ={ dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null }
 
 // Una fila por día; null cuando la fuente no respondió
 export function resumenPorDia(dias: string[], registros: number[] | null, suscripciones: Suscripcion[] | null): FilaDia[] {

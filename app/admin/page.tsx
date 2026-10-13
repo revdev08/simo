@@ -1,7 +1,7 @@
 import { auth } from '@clerk/nextjs/server'
 import { notFound, redirect } from 'next/navigation'
 import { esAdmin } from '@/lib/admin/acceso'
-import { correosClerk, pago, registrosClerk, resumenPorDia, suscripcionesMP, ultimosDias } from '@/lib/admin/metricas'
+import { correosDeSuscripciones, pago, registrosClerk, resumenPorDia, suscripcionesMP, ultimosDias } from '@/lib/admin/metricas'
 import PanelSuscriptores from '@/components/admin/PanelSuscriptores'
 
 // Solo para los correos de ADMIN_EMAILS; para los demás la página no existe
@@ -22,13 +22,13 @@ async function cargarPanel(dias: number) {
 
   const subs = suscripciones.ok ? suscripciones.datos : null
   const ultimas = subs?.filter(pago).sort((a, b) => b.creada.localeCompare(a.creada)).slice(0, 15) ?? null
-  const correos = ultimas ? await correosClerk(ultimas.flatMap((s) => (s.userId ? [s.userId] : []))) : {}
+  const correos = ultimas ? await correosDeSuscripciones(ultimas) : {}
 
   return {
     filas: resumenPorDia(lista, registros.ok ? registros.datos.fechas : null, subs),
     totalUsuarios: registros.ok ? registros.datos.total : null,
     activas: subs ? subs.filter((s) => s.estado === 'authorized').length : null,
-    recientes: ultimas?.map((s) => ({ fecha: s.creada, correo: (s.userId && correos[s.userId]) || null, estado: s.estado, cobros: s.cobros, monto: s.monto })) ?? null,
+    recientes: ultimas?.map((s) => ({ fecha: s.creada, correo: correos[s.id]?.correo ?? null, correoDeMercadoPago: correos[s.id]?.deMercadoPago ?? false, estado: s.estado, cobros: s.cobros, monto: s.monto })) ?? null,
     errores,
     generado: new Date(ahora).toISOString(),
   }

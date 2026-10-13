@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { FilaDia } from '@/lib/admin/metricas'
 import BarrasPorDia from './BarrasPorDia'
 
-export type SuscripcionReciente = { fecha: string; correo: string | null; estado: string; cobros: number; monto: number | null }
+export type SuscripcionReciente = { fecha: string; correo: string | null; correoDeMercadoPago: boolean; estado: string; cobros: number; monto: number | null }
 
 const ESTADOS: Record<string, { texto: string; clase: string }> = {
   authorized: { texto: 'Activa', clase: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' },
@@ -152,7 +152,17 @@ export default function PanelSuscriptores({
                     return (
                       <tr key={i} className="border-t border-slate-100 dark:border-slate-800">
                         <td className="whitespace-nowrap px-3 py-2 sm:px-5 text-slate-700 dark:text-slate-300">{fechaHora.format(new Date(s.fecha))}</td>
-                        <td className="px-3 py-2 sm:px-5 text-slate-700 dark:text-slate-300">{s.correo ?? '—'}</td>
+                        <td className="px-3 py-2 sm:px-5 text-slate-700 dark:text-slate-300">
+                          {s.correo ?? '—'}
+                          {s.correoDeMercadoPago && (
+                            <span
+                              title="Correo con el que pagó en Mercado Pago: no se encontró su cuenta de SIMO y puede ser otro correo"
+                              className="ml-1.5 rounded bg-sky-50 px-1 py-0.5 text-[10px] font-semibold text-sky-700 dark:bg-sky-950 dark:text-sky-300"
+                            >
+                              MP
+                            </span>
+                          )}
+                        </td>
                         <td className="px-3 py-2 sm:px-5">
                           <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${estado.clase}`}>{estado.texto}</span>
                         </td>
@@ -201,7 +211,7 @@ export default function PanelSuscriptores({
 
         <p className="text-xs text-slate-500 dark:text-slate-400">
           Suscriptor nuevo: suscripción creada ese día en Mercado Pago que autorizó el cobro o pagó al menos una vez, aunque después la haya cancelado.
-          «Siguen activos» son los de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk.
+          «Siguen activos» son los de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago.
         </p>
       </div>
     </main>
