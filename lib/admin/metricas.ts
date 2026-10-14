@@ -67,10 +67,22 @@ const configMP = () => {
 }
 
 // Peticiones en paralelo por lotes para no pasar el límite de Mercado Pago
-async function enLotes<T, R>(items: T[], fn: (item: T) => Promise<R>, tamano = 5): Promise<R[]> {
+async function enLotes<T, R>(items: T[], fn: (item: T) => Promise<R>, tamano = 3): Promise<R[]> {
   const salida: R[] = []
   for (let i = 0; i < items.length; i += tamano) salida.push(...(await Promise.all(items.slice(i, i + tamano).map(fn))))
   return salida
+}
+
+// Mercado Pago responde 429 al pasar el límite de peticiones (el SDK solo reintenta los 5xx): se espera y se reintenta una vez
+async function conReintento<T>(fn: () => Promise<T>): Promise<T> {
+  try {
+    return await fn()
+  } catch (e) {
+    const { status, message } = (e && typeof e === 'object' ? e : {}) as { status?: unknown; message?: unknown }
+    if (Number(status) !== 429 && !/too many|rate limit/i.test(String(message ?? ''))) throw e
+    await new Promise((r) => setTimeout(r, 2000))
+    return fn()
+  }
 }
 
 // Todas las suscripciones de la cuenta de Mercado Pago
@@ -80,7 +92,7 @@ export async function suscripcionesMP(): Promise<Resultado<Suscripcion[]>> {
   try {
     const api = new PreApproval(config)
     const LIMITE = 50
-    const pagina = (offset: number) => api.search({ options: { limit: LIMITE, offset } })
+    const pagina = (offset: number) => conReintento(() => api.search({ options: { limit: LIMITE, offset } }))
     const primera = await pagina(0)
     const total = Math.min(primera.paging?.total ?? 0, 10_000)
     const offsets = Array.from({ length: Math.max(0, Math.ceil(total / LIMITE) - 1) }, (_, i) => (i + 1) * LIMITE)
@@ -135,7 +147,9 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
     const LIMITE = 100
     const pagina = (offset: number) =>
       // En orden ascendente los pagos que llegan durante la consulta quedan al final y no corren las páginas
-      api.search({ options: { sort: 'date_created', criteria: 'asc', range: 'date_created', begin_date: `NOW-${dias}DAYS`, end_date: 'NOW', limit: LIMITE, offset } })
+      conReintento(() =>
+        api.search({ options: { sort: 'date_created', criteria: 'asc', range: 'date_created', begin_date: `NOW-${dias}DAYS`, end_date: 'NOW', limit: LIMITE, offset } }),
+      )
     const primera = await pagina(0)
     const total = Math.min(primera.paging?.total ?? 0, 5000)
     const offsets = Array.from({ length: Math.max(0, Math.ceil(total / LIMITE) - 1) }, (_, i) => (i + 1) * LIMITE)
@@ -268,33 +282,43 @@ export async function datosSuscriptores(subs: Suscripcion[], cobros: Record<stri
   if (config && faltan.length) {
     const suscripciones = new PreApproval(config)
     await enLotes(faltan, async (s) => {
-      const correo = (await suscripciones.get({ id: s.id }).catch(() => null))?.payer_email
+      const correo = (await conReintento(() => suscripciones.get({ id: s.id })).catch(() => null))?.payer_email
       if (correo) resultado[s.id] = { ...resultado[s.id], correo, correoDeMercadoPago: true }
     })
   }
   return resultado
 }
 
+// Pago aprobado ya resumido para el panel; activa: su suscripción tenía el cobro autorizado al consultar Mercado Pago
+export type PagoDelPanel = { dia: string; tipo: PagoAprobado['tipo']; activa: boolean }
+
+export type SuscripcionReciente = DatosSuscriptor & {
+  fecha: string
+  estado: string
+  cobros: Cobro[] | null // pagos reales; null si no se pudieron consultar
+  cobrosResumen: number
+  monto: number | null
+}
+
 export type FilaDia = { dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null; recurrentes: number | null }
 
 // Una fila por día; null cuando la fuente no respondió
-export function resumenPorDia(dias: string[], registros: number[] | null, pagos: PagoAprobado[] | null, subs: Suscripcion[]): FilaDia[] {
+export function resumenPorDia(dias: string[], registros: number[] | null, pagos: PagoDelPanel[] | null): FilaDia[] {
   const contar = (fechas: (string | number)[]) => {
     const c = new Map<string, number>()
     for (const f of fechas) c.set(diaColombia(f), (c.get(diaColombia(f)) ?? 0) + 1)
     return c
   }
   const porRegistro = registros ? contar(registros) : null
-  const activas = new Set(subs.filter((s) => s.estado === 'authorized').map((s) => s.id))
   const nuevos = pagos?.filter((p) => p.tipo === 'nuevo') ?? null
-  const contarDias = (lista: PagoAprobado[] | null) => {
+  const contarDias = (lista: PagoDelPanel[] | null) => {
     if (!lista) return null
     const c = new Map<string, number>()
     for (const p of lista) c.set(p.dia, (c.get(p.dia) ?? 0) + 1)
     return c
   }
   const porNuevo = contarDias(nuevos)
-  const porActivo = contarDias(nuevos?.filter((p) => activas.has(p.subId)) ?? null)
+  const porActivo = contarDias(nuevos?.filter((p) => p.activa) ?? null)
   const porRecurrente = contarDias(pagos?.filter((p) => p.tipo === 'recurrente') ?? null)
   return dias.map((dia) => ({
     dia,
