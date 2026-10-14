@@ -28,11 +28,48 @@ export interface AvisoPortada {
   texto: string
 }
 
+// Pregunta de muestra del simulador: TC-909-004 del banco (Ley 909, art. 6), verificada en la resolución a ciegas.
+// Sirve a cualquier aspirante de la CNSC y muestra lo que hace el simulador: explicar cada opción.
+const PREGUNTA_DEMO = {
+  modulo: 'Empleo público · Ley 909 de 2004',
+  enunciado:
+    'Una gobernación modifica su planta y declara de libre nombramiento y remoción el empleo de profesional especializado que ocupa Laura, empleada inscrita en carrera administrativa. En la planta no existe ninguna vacante de carrera con funciones afines a las de su empleo. ¿Qué consecuencia tiene esa decisión para Laura?',
+  correcta: 'C',
+  regla:
+    'Si el empleo de un servidor de carrera se declara de libre nombramiento y remoción, se le traslada a un empleo de carrera afín si hay vacante; si no la hay, sigue en su cargo con sus derechos de carrera (art. 6 de la Ley 909 de 2004).',
+  opciones: [
+    {
+      id: 'A',
+      texto: 'Debe ser retirada del servicio con indemnización, porque su empleo dejó de pertenecer a la carrera.',
+      explicacion:
+        'Confunde el cambio de naturaleza del empleo con la supresión del cargo. El art. 6 no prevé el retiro: ordena el traslado o, si no hay vacante, la permanencia en el cargo.',
+    },
+    {
+      id: 'B',
+      texto: 'Pasa a ser empleada de libre nombramiento y remoción y pierde sus derechos de carrera desde ese momento.',
+      explicacion: 'El art. 6 dice lo contrario: si no hay vacante para trasladarla, conserva los derechos de carrera mientras permanezca en el cargo.',
+    },
+    {
+      id: 'C',
+      texto: 'Continúa desempeñando el mismo cargo y conserva sus derechos de carrera mientras permanezca en él.',
+      explicacion:
+        'Como no existe vacante de carrera con funciones afines, se aplica la segunda parte del art. 6: continúa en el mismo cargo y conserva los derechos de carrera mientras permanezca en él.',
+    },
+    {
+      id: 'D',
+      texto: 'Debe ser encargada en otro empleo, de cualquier nivel, hasta que se abra una vacante de carrera afín.',
+      explicacion: 'El art. 6 no ordena un encargo. Sin vacante afín, la consecuencia es que siga en su mismo cargo con sus derechos de carrera.',
+    },
+  ],
+}
+
 export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }) {
   const { openSignIn, openSignUp, signOut } = useClerk()
   const { isSignedIn, user } = useUser()
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
   const [selectedDemoOption, setSelectedDemoOption] = useState<string | null>(null)
+  const demoElegida = PREGUNTA_DEMO.opciones.find((o) => o.id === selectedDemoOption) ?? null
+  const demoCorrecta = PREGUNTA_DEMO.opciones.find((o) => o.id === PREGUNTA_DEMO.correcta)!
   const planesViewedRef = useRef(false)
 
   useEffect(() => {
@@ -293,86 +330,75 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                 {/* App interface */}
                 <div className="w-full bg-slate-950 rounded-xl p-5 sm:p-8 flex flex-col justify-between text-left text-white overflow-hidden border border-slate-900 shadow-inner">
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-3">
                       <span className="text-xs font-extrabold bg-blue-500/20 text-blue-300 border border-blue-500/30 px-3.5 py-1.5 rounded-lg uppercase tracking-wider">
-                        Derecho Administrativo
+                        {PREGUNTA_DEMO.modulo}
                       </span>
-                      <span className="text-xs font-bold text-indigo-400 flex items-center gap-1">
+                      <span className="text-xs font-bold text-indigo-400 flex items-center gap-1 shrink-0">
                         <Sparkles className="w-4 h-4 text-indigo-400 animate-spin-slow" /> Simulador SIMO IA
                       </span>
                     </div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold leading-snug">
-                      ¿Cuál de las siguientes acciones procede directamente contra un acto administrativo de carácter general expedido por un Ministerio?
+                    <h3 className="text-base sm:text-lg md:text-xl font-bold leading-snug">
+                      {PREGUNTA_DEMO.enunciado}
                     </h3>
                   </div>
 
                   <div className="space-y-3 mt-6">
-                    {/* Option A */}
-                    <button
-                      onClick={() => setSelectedDemoOption('A')}
-                      className={`w-full text-left p-4 rounded-xl border transition-all flex items-start gap-4 ${
-                        selectedDemoOption === null
-                          ? 'border-slate-800 bg-slate-900/40 hover:border-slate-600 hover:bg-slate-900 cursor-pointer'
-                          : selectedDemoOption === 'A'
-                          ? 'border-red-500 bg-red-500/10 text-red-200'
-                          : 'border-slate-900 bg-slate-950 opacity-40'
-                      }`}
-                    >
-                      <span className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                        selectedDemoOption === 'A' ? 'bg-red-500 text-white' : 'border border-slate-700 text-slate-400'
-                      }`}>A</span>
-                      <span className="text-sm font-medium">Acción de Tutela de manera preferente.</span>
-                    </button>
-
-                    {/* Option B */}
-                    <button
-                      onClick={() => setSelectedDemoOption('B')}
-                      className={`w-full text-left p-4 rounded-xl border transition-all flex items-start gap-4 ${
-                        selectedDemoOption === null
-                          ? 'border-slate-800 bg-slate-900/40 hover:border-slate-600 hover:bg-slate-900 cursor-pointer'
-                          : 'border-emerald-500 bg-emerald-500/10 text-emerald-250'
-                      }`}
-                    >
-                      <span className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                        selectedDemoOption !== null ? 'bg-emerald-500 text-white' : 'border border-slate-700 text-slate-400'
-                      }`}>B</span>
-                      <span className="text-sm font-medium">Acción de Nulidad Simple ante la Jurisdicción Contencioso Administrativa.</span>
-                    </button>
-
-                    {/* Option C */}
-                    <button
-                      onClick={() => setSelectedDemoOption('C')}
-                      className={`w-full text-left p-4 rounded-xl border transition-all flex items-start gap-4 ${
-                        selectedDemoOption === null
-                          ? 'border-slate-800 bg-slate-900/40 hover:border-slate-600 hover:bg-slate-900 cursor-pointer'
-                          : selectedDemoOption === 'C'
-                          ? 'border-red-500 bg-red-500/10 text-red-200'
-                          : 'border-slate-900 bg-slate-950 opacity-40'
-                      }`}
-                    >
-                      <span className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                        selectedDemoOption === 'C' ? 'bg-red-500 text-white' : 'border border-slate-700 text-slate-400'
-                      }`}>C</span>
-                      <span className="text-sm font-medium">Acción de Reparación Directa en cualquier término.</span>
-                    </button>
+                    {PREGUNTA_DEMO.opciones.map((o) => {
+                      const esCorrecta = o.id === PREGUNTA_DEMO.correcta
+                      const esElegida = o.id === selectedDemoOption
+                      const estilo = !demoElegida
+                        ? 'border-slate-800 bg-slate-900/40 hover:border-slate-600 hover:bg-slate-900 cursor-pointer'
+                        : esCorrecta
+                          ? 'border-emerald-500 bg-emerald-500/10 text-emerald-100'
+                          : esElegida
+                            ? 'border-red-500 bg-red-500/10 text-red-200'
+                            : 'border-slate-900 bg-slate-950 opacity-40'
+                      const circulo = demoElegida && esCorrecta ? 'bg-emerald-500 text-white' : esElegida ? 'bg-red-500 text-white' : 'border border-slate-700 text-slate-400'
+                      return (
+                        <button
+                          key={o.id}
+                          type="button"
+                          disabled={!!demoElegida}
+                          onClick={() => setSelectedDemoOption(o.id)}
+                          className={`w-full text-left p-4 rounded-xl border transition-all flex items-start gap-4 ${estilo}`}
+                        >
+                          <span className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${circulo}`}>{o.id}</span>
+                          <span className="text-sm font-medium">{o.texto}</span>
+                        </button>
+                      )
+                    })}
                   </div>
 
-                  {/* AI Explanation Area with transition */}
-                  {selectedDemoOption !== null && (
-                    <div className="mt-6 p-4 rounded-xl bg-blue-950/40 border border-blue-900/40 text-xs sm:text-sm text-blue-300 flex items-start gap-3 animate-in fade-in slide-in-from-top-3 duration-300">
+                  {/* Explicación de la opción elegida y de la correcta */}
+                  {demoElegida && (
+                    <div className="mt-6 p-4 rounded-xl bg-blue-950/40 border border-blue-900/40 text-xs sm:text-sm text-blue-100 flex items-start gap-3 animate-in fade-in slide-in-from-top-3 duration-300">
                       <Brain className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
-                      <div>
-                        <strong className="block text-blue-200 mb-1">
-                          {selectedDemoOption === 'B' ? '🎉 ¡Respuesta Correcta!' : '❌ Respuesta Incorrecta (Opción B es la correcta)'}
+                      <div className="space-y-2">
+                        <strong className="block text-white">
+                          {demoElegida.id === demoCorrecta.id ? '🎉 ¡Respuesta correcta!' : `❌ La ${demoElegida.id} no es correcta: la respuesta es la ${demoCorrecta.id}`}
                         </strong>
-                        De acuerdo con el CPACA, los actos administrativos de carácter general no requieren agotar vía gubernativa y su legalidad objetiva se debate mediante la acción de nulidad simple, al no pretenderse el restablecimiento de un derecho particular.
+                        {demoElegida.id !== demoCorrecta.id && (
+                          <p>
+                            <span className="font-semibold text-red-300">Por qué la {demoElegida.id} no:</span> {demoElegida.explicacion}
+                          </p>
+                        )}
+                        <p>
+                          <span className="font-semibold text-emerald-300">Por qué la {demoCorrecta.id}:</span> {demoCorrecta.explicacion}
+                        </p>
+                        <p className="text-blue-300">
+                          <span className="font-semibold">Regla:</span> {PREGUNTA_DEMO.regla}
+                        </p>
+                        <button type="button" onClick={() => setSelectedDemoOption(null)} className="font-semibold text-blue-300 hover:text-white hover:underline underline-offset-2">
+                          Intentar otra vez
+                        </button>
                       </div>
                     </div>
                   )}
 
-                  {selectedDemoOption === null && (
+                  {!demoElegida && (
                     <div className="mt-6 text-center text-xs text-slate-500 italic">
-                      💡 Haz clic en una opción para probar el simulador interactivo
+                      💡 Elige una opción: en el simulador cada pregunta explica por qué cada opción es correcta o no
                     </div>
                   )}
                 </div>
