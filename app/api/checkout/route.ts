@@ -21,7 +21,7 @@ export async function GET(req: Request) {
     const url = new URL(req.url)
     const plan = resolveMpPlan(url.searchParams.get('plan') ?? url.searchParams.get('planId') ?? 'anual')
     if (!plan || !isCheckoutPlan(plan)) {
-      return new NextResponse('Plan inválido. Usa "semanal" o "anual".', { status: 400 })
+      return new NextResponse('Plan inválido. Usa "mensual" o "anual".', { status: 400 })
     }
 
     // El plan técnico no se anuncia y se protege siempre en el servidor.
