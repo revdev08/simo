@@ -8,6 +8,7 @@ import { MINUTOS_POR_PREGUNTA, PESO_CON_AREA, PESO_SIN_AREA, SIMULACRO_OPCIONES 
 import { formatDuration, type SimulacroState } from './SimulacroSession'
 import { minimoEliminatoria, type SeleccionConvocatoria } from './simulacro-convocatoria'
 import ConvocatoriaPicker from './ConvocatoriaPicker'
+import GuiaInicio from './GuiaInicio'
 import { PlanHero, PlanModulos, SemanaCard } from './PlanPanel'
 import { avanceDelPlan, diasParaPrueba, planSemanal, semanaDelPlan, siguientePaso } from './plan-progreso'
 import { preguntasEstaSemana, rachaActual, type ResumenSimulacro } from './meta-progreso'
@@ -246,6 +247,18 @@ export default function StudyHome({
 
   const accuracy = accuracyOf(totalStats)
   const rec = recommend(modulesStats, area)
+
+  // Acciones de la guía de inicio: llevar al selector de concurso o al simulacro, o abrir lo recomendado
+  // Tras un instante, para que React alcance a mostrar el selector si estaba oculto
+  const irA = (id: string) => setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 60)
+  const guiaElegirConcurso = () => {
+    setEligiendo(true)
+    irA('concurso-title')
+  }
+  const guiaPracticar = () => {
+    const modulo = siguiente?.modulo.modulo ?? rec?.mod.name ?? modulesStats[0]?.name
+    if (modulo) onStartModule(modulo)
+  }
   const areaModulo = areaInfo(area)?.modulo
   const pesos = area ? PESO_CON_AREA : PESO_SIN_AREA
   const pct = (x: number) => `${Math.round(x * 100)}%`
@@ -279,6 +292,16 @@ export default function StudyHome({
                 : 'Empieza por un módulo o mide tu nivel con un simulacro.'}
           </p>
         </div>
+        <GuiaInicio
+          concursoElegido={!!convocatoria}
+          respondidas={totalStats.completed}
+          falladas={totalStats.incorrect}
+          simulacros={simulacros.length}
+          onElegirConcurso={guiaElegirConcurso}
+          onPracticar={guiaPracticar}
+          onRepasar={onReviewErrors}
+          onSimulacro={() => irA('simulacro-title')}
+        />
         {!convocatoria && (
         <div className="grid grid-cols-3 gap-3 sm:gap-4">
           <StatCard label="Avance" value={`${totalStats.percent}%`} hint={`${totalStats.completed} de ${totalStats.total}`}>
