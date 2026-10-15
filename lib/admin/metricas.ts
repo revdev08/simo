@@ -6,6 +6,7 @@ import 'server-only'
 import { clerkClient } from '@clerk/nextjs/server'
 import { MercadoPagoConfig, Payment, PreApproval } from 'mercadopago'
 import { createAdminClient } from '@/lib/supabase'
+import { MP_PLANS, parseExternalReference } from '@/lib/mercadopago'
 
 const DIA_MS = 86_400_000
 const formatoDia = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Bogota', year: 'numeric', month: '2-digit', day: '2-digit' })
@@ -57,6 +58,7 @@ export type Suscripcion = {
   monto: number | null
   userId: string | null
   pagadorId: number | null // cuenta de Mercado Pago que se suscribió
+  prueba: boolean // compra de prueba del plan desarrollador ($2.000): no es un suscriptor
 }
 
 type PaymentSearchResult = NonNullable<Awaited<ReturnType<Payment['search']>>['results']>[number]
@@ -103,14 +105,19 @@ export async function suscripcionesMP(): Promise<Resultado<Suscripcion[]>> {
       // El tipo del SDK dice number, pero la API devuelve la fecha como texto ISO
       const creada = r.date_created ? new Date(r.date_created as unknown as string) : null
       if (!r.id || !creada || Number.isNaN(creada.getTime())) continue
+      // La referencia es el usuario de Clerk (checkout anterior) o «simo:usuario:plan» (checkout actual)
+      const referencia = r.external_reference ? String(r.external_reference) : undefined
+      const leida = parseExternalReference(referencia)
+      const monto = r.auto_recurring?.transaction_amount ?? null
       lista.push({
         id: String(r.id),
         creada: creada.toISOString(),
         estado: r.status ?? 'desconocido',
         cobros: r.summarized?.charged_quantity ?? 0,
-        monto: r.auto_recurring?.transaction_amount ?? null,
-        userId: r.external_reference ? String(r.external_reference) : null,
+        monto,
+        userId: leida?.userId ?? referencia ?? null,
         pagadorId: r.payer_id ?? null,
+        prueba: leida?.plan === 'desarrollador' || monto === MP_PLANS.desarrollador.amount,
       })
     }
     return { ok: true, datos: lista }
@@ -192,11 +199,19 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
   }
 }
 
-export type PagoAprobado = { subId: string; dia: string; tipo: 'nuevo' | 'recurrente' }
+export type PagoAprobado = {
+  subId: string
+  dia: string
+  hora: string // ISO de la aprobación
+  tipo: 'nuevo' | 'recurrente' | 'prueba'
+  correo: string | null // del pagador en Mercado Pago
+  monto: number | null
+}
 
 // Cada pago aprobado, del más antiguo al más reciente, con el día (Colombia) en que se aprobó:
 // - nuevo: el primer pago de una persona (por su cuenta de Mercado Pago) que no había pagado antes;
-// - recurrente: renovaciones mensuales y personas que ya habían pagado y vuelven a suscribirse.
+// - recurrente: renovaciones mensuales y personas que ya habían pagado y vuelven a suscribirse;
+// - prueba: compras del plan desarrollador ($2.000) para validar el checkout, que no cuentan en ningún total.
 // Los intentos rechazados no aparecen. `desde` es el inicio de los pagos consultados: las suscripciones creadas
 // antes ya habían pagado, así que sus pagos y los de esas personas son recurrentes.
 export function clasificarPagos(subs: Suscripcion[], cobros: Record<string, Cobro[]>, desde: number): PagoAprobado[] {
@@ -207,14 +222,16 @@ export function clasificarPagos(subs: Suscripcion[], cobros: Record<string, Cobr
     .filter((x) => x.sub && !Number.isNaN(x.hora))
     .sort((a, b) => a.hora - b.hora)
 
-  const yaPagaron = new Set(aprobados.filter((x) => Date.parse(x.sub.creada) < desde).map((x) => persona(x.sub, x.c)))
+  const yaPagaron = new Set(aprobados.filter((x) => !x.sub.prueba && Date.parse(x.sub.creada) < desde).map((x) => persona(x.sub, x.c)))
   const conPago = new Set<string>()
-  return aprobados.map(({ sub, c, hora }) => {
+  return aprobados.map(({ sub, c, hora }): PagoAprobado => {
+    const base = { subId: sub.id, dia: diaColombia(hora), hora: new Date(hora).toISOString(), correo: c.correo, monto: sub.monto }
+    if (sub.prueba) return { ...base, tipo: 'prueba' }
     const quien = persona(sub, c)
     const nuevo = !conPago.has(sub.id) && Date.parse(sub.creada) >= desde && !yaPagaron.has(quien)
     conPago.add(sub.id)
     yaPagaron.add(quien)
-    return { subId: sub.id, dia: diaColombia(hora), tipo: nuevo ? 'nuevo' : 'recurrente' }
+    return { ...base, tipo: nuevo ? 'nuevo' : 'recurrente' }
   })
 }
 
@@ -241,7 +258,12 @@ export type DatosSuscriptor = {
 // Quién es cada suscriptor. Primero su cuenta en SIMO: el checkout por plan no conserva el external_reference,
 // así que el dueño sale de la tabla subscriptions (mp_preapproval_id → user_id). Si no está enlazada,
 // el correo del pagador en Mercado Pago, sacado de sus pagos o de la suscripción.
-export async function datosSuscriptores(subs: Suscripcion[], cobros: Record<string, Cobro[]>): Promise<Record<string, DatosSuscriptor>> {
+// Con consultarSuscripciones = false no se pide cada suscripción a Mercado Pago (para listas largas: límite de peticiones)
+export async function datosSuscriptores(
+  subs: Suscripcion[],
+  cobros: Record<string, Cobro[]>,
+  { consultarSuscripciones = true }: { consultarSuscripciones?: boolean } = {},
+): Promise<Record<string, DatosSuscriptor>> {
   const duenos = new Map<string, string>()
   for (const s of subs) if (s.userId?.startsWith('user_')) duenos.set(s.id, s.userId)
 
@@ -279,7 +301,7 @@ export async function datosSuscriptores(subs: Suscripcion[], cobros: Record<stri
   }
   const config = configMP()
   const faltan = subs.filter((s) => !resultado[s.id].correo)
-  if (config && faltan.length) {
+  if (config && consultarSuscripciones && faltan.length) {
     const suscripciones = new PreApproval(config)
     await enLotes(faltan, async (s) => {
       const correo = (await conReintento(() => suscripciones.get({ id: s.id })).catch(() => null))?.payer_email
@@ -289,8 +311,17 @@ export async function datosSuscriptores(subs: Suscripcion[], cobros: Record<stri
   return resultado
 }
 
-// Pago aprobado ya resumido para el panel; activa: su suscripción tenía el cobro autorizado al consultar Mercado Pago
-export type PagoDelPanel = { dia: string; tipo: PagoAprobado['tipo']; activa: boolean }
+// Pago aprobado ya resumido para el panel; activa: su suscripción tenía el cobro autorizado al consultar Mercado Pago.
+// Los nuevos llevan el correo (el de su cuenta en SIMO o, si no está enlazada, el del pago) para listarlos.
+export type PagoDelPanel = {
+  dia: string
+  hora: string
+  tipo: PagoAprobado['tipo']
+  activa: boolean
+  correo: string | null
+  correoDeMercadoPago: boolean
+  monto: number | null
+}
 
 export type SuscripcionReciente = DatosSuscriptor & {
   fecha: string

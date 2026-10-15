@@ -26,8 +26,14 @@ async function cargarPanel(dias: number) {
   if (!registros.ok) errores.push(`No se pudieron leer los registros de Clerk: ${registros.error}`)
   if (!mp.ok) errores.push(mp.error)
 
+  // Los nuevos del periodo, uno por uno, para poder revisar la cifra; las compras de prueba solo se cuentan aparte
+  const enPeriodo = new Set(lista)
+  const delPeriodo = mp.ok ? mp.datos.pagos.filter((p) => enPeriodo.has(p.dia)) : []
+
   return {
     filas: resumenPorDia(lista, registros.ok ? registros.datos.fechas : null, mp.ok ? mp.datos.pagos : null),
+    nuevos: mp.ok ? delPeriodo.filter((p) => p.tipo === 'nuevo').sort((a, b) => b.hora.localeCompare(a.hora)) : null,
+    pruebas: delPeriodo.filter((p) => p.tipo === 'prueba').length,
     totalUsuarios: registros.ok ? registros.datos.total : null,
     activas: mp.ok ? mp.datos.activas : null,
     recientes: mp.ok ? mp.datos.recientes : null,

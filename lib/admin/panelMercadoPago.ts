@@ -53,9 +53,26 @@ async function leerMercadoPago(): Promise<PanelMercadoPago> {
   const activas = new Set(subs.filter((s) => s.estado === 'authorized').map((s) => s.id))
   const primerDia = diaColombia(desde)
   // Un día de margen en el borde de la consulta
-  const aprobados = clasificarPagos(subs, cobros, ahora - (diasPagos - 1) * DIA_MS)
-    .filter((p) => p.dia >= primerDia)
-    .map((p) => ({ dia: p.dia, tipo: p.tipo, activa: activas.has(p.subId) }))
+  const clasificados = clasificarPagos(subs, cobros, ahora - (diasPagos - 1) * DIA_MS).filter((p) => p.dia >= primerDia)
+  // Correo de cada suscriptor nuevo del periodo, para listarlos (sin pedir cada suscripción a Mercado Pago)
+  const idsNuevos = new Set(clasificados.filter((p) => p.tipo === 'nuevo').map((p) => p.subId))
+  const correosNuevos = await datosSuscriptores(
+    subs.filter((s) => idsNuevos.has(s.id)),
+    cobros,
+    { consultarSuscripciones: false },
+  )
+  const aprobados: PagoDelPanel[] = clasificados.map((p) => {
+    const datosNuevo = p.tipo === 'nuevo' ? correosNuevos[p.subId] : undefined
+    return {
+      dia: p.dia,
+      hora: p.hora,
+      tipo: p.tipo,
+      activa: activas.has(p.subId),
+      correo: datosNuevo?.correo ?? (p.tipo === 'nuevo' ? p.correo : null),
+      correoDeMercadoPago: datosNuevo ? datosNuevo.correoDeMercadoPago : p.tipo === 'nuevo',
+      monto: p.monto,
+    }
+  })
   const datos = await datosSuscriptores(ultimas, cobros)
 
   return {
@@ -73,7 +90,7 @@ async function leerMercadoPago(): Promise<PanelMercadoPago> {
   }
 }
 
-const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v1'], {
+const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v2'], {
   revalidate: REVALIDAR_S,
   tags: ['admin-mercadopago'],
 })

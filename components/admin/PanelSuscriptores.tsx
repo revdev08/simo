@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import type { Cobro, FilaDia, SuscripcionReciente } from '@/lib/admin/metricas'
+import type { Cobro, FilaDia, PagoDelPanel, SuscripcionReciente } from '@/lib/admin/metricas'
 import BarrasPorDia from './BarrasPorDia'
 
 const ESTADO_PAGO: Record<string, string> = {
@@ -92,6 +92,8 @@ export default function PanelSuscriptores({
   generado,
   generadoMercadoPago,
   minutosCache,
+  nuevos,
+  pruebas,
 }: {
   dias: number
   rangos: number[]
@@ -103,6 +105,8 @@ export default function PanelSuscriptores({
   generado: string
   generadoMercadoPago: string | null // los datos de Mercado Pago vienen de una caché y pueden ser de hace unos minutos
   minutosCache: number
+  nuevos: PagoDelPanel[] | null // los suscriptores nuevos del periodo, del más reciente al más antiguo
+  pruebas: number // compras de prueba del periodo, que no cuentan
 }) {
   const hayRegistros = filas.length > 0 && filas[0].registros !== null
   const haySuscripciones = filas.length > 0 && filas[0].nuevas !== null
@@ -202,6 +206,63 @@ export default function PanelSuscriptores({
             />
           )}
         </section>
+
+        {nuevos && (
+          <section className="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-slate-100 px-5 py-3 dark:border-slate-800">
+              <h2 className="text-sm font-semibold text-slate-900 dark:text-white">
+                Quiénes son los {numero.format(nuevos.length)} suscriptores nuevos de los últimos {dias} días
+              </h2>
+              {pruebas > 0 && (
+                <span className="text-xs text-slate-500 dark:text-slate-400">
+                  No incluye {pruebas} {pruebas === 1 ? 'compra' : 'compras'} de prueba de $2.000
+                </span>
+              )}
+            </div>
+            {nuevos.length === 0 ? (
+              <p className="px-5 py-4 text-sm text-slate-500 dark:text-slate-400">Ninguno en este periodo.</p>
+            ) : (
+              <div className="max-h-[24rem] overflow-auto">
+                <table className="w-full text-sm">
+                  <thead className="sticky top-0 bg-white text-left text-xs text-slate-500 dark:bg-slate-900 dark:text-slate-400">
+                    <tr>
+                      <th className="px-3 py-2 font-medium sm:px-5">Primer pago</th>
+                      <th className="px-3 py-2 font-medium sm:px-5">Correo</th>
+                      <th className="px-3 py-2 text-right font-medium sm:px-5">Valor</th>
+                      <th className="px-3 py-2 font-medium sm:px-5">Hoy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {nuevos.map((n, i) => (
+                      <tr key={i} className="border-t border-slate-100 dark:border-slate-800">
+                        <td className="whitespace-nowrap px-3 py-2 text-slate-700 dark:text-slate-300 sm:px-5">{fechaHora.format(new Date(n.hora))}</td>
+                        <td className="px-3 py-2 text-slate-700 dark:text-slate-300 sm:px-5">
+                          {n.correo ?? '—'}
+                          {n.correo && n.correoDeMercadoPago && (
+                            <span
+                              title="Correo con el que pagó en Mercado Pago: no se encontró su cuenta de SIMO y puede ser otro correo"
+                              className="ml-1.5 rounded bg-sky-50 px-1 py-0.5 text-[10px] font-semibold text-sky-700 dark:bg-sky-950 dark:text-sky-300"
+                            >
+                              MP
+                            </span>
+                          )}
+                        </td>
+                        <td className="whitespace-nowrap px-3 py-2 text-right tabular-nums text-slate-700 dark:text-slate-300 sm:px-5">
+                          {n.monto === null ? '—' : pesos.format(n.monto)}
+                        </td>
+                        <td className="px-3 py-2 sm:px-5">
+                          <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${n.activa ? ESTADOS.authorized.clase : ESTADOS.cancelled.clase}`}>
+                            {n.activa ? 'Activa' : 'Sin cobro activo'}
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </section>
+        )}
 
         {recientes && recientes.length > 0 && (
           <section className="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
@@ -305,7 +366,8 @@ export default function PanelSuscriptores({
         <p className="text-xs text-slate-500 dark:text-slate-400">
           Suscriptor nuevo: persona cuyo primer pago aprobado fue ese día (fecha de aprobación del pago, hora de Colombia). No cuentan los intentos
           rechazados. «Recurrentes» son los pagos aprobados de quienes ya habían pagado antes: renovaciones mensuales y personas que vuelven a
-          suscribirse. Un día pasado solo cambia si se devuelve un pago. «Siguen activos» son los nuevos de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago. Los datos de Mercado Pago se renuevan como mucho cada {minutosCache} minutos para no pasar su límite de peticiones; si Mercado Pago falla al renovarlos, se muestran los últimos que se pudieron leer.
+          suscribirse. Las compras de prueba del plan de $2.000 no cuentan en ningún total. Un día pasado solo cambia si se devuelve un pago. Los totales
+          de 7, 30 y 90 días son ventanas móviles: cada día entra el de hoy y sale el más antiguo, así que pueden bajar aunque nadie cancele. «Siguen activos» son los nuevos de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago. Los datos de Mercado Pago se renuevan como mucho cada {minutosCache} minutos para no pasar su límite de peticiones; si Mercado Pago falla al renovarlos, se muestran los últimos que se pudieron leer.
         </p>
       </div>
     </main>
