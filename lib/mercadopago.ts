@@ -3,11 +3,11 @@ import 'server-only'
 const MP_API_URL = 'https://api.mercadopago.com'
 
 export const MP_PLANS = {
+  mensual: { name: 'SIMO Test Premium mensual', amount: 39_900, frequency: 1, frequencyType: 'months' },
+  // Se conserva para validar y sincronizar suscripciones semanales ya existentes; no se ofrece en checkout.
   semanal: { name: 'SIMO Test Premium semanal', amount: 19_900, frequency: 7, frequencyType: 'days' },
   anual: { name: 'SIMO Test Premium anual', amount: 119_000, frequency: 12, frequencyType: 'months' },
   desarrollador: { name: 'SIMO Test validación técnica', amount: 2_000, frequency: 1, frequencyType: 'months' },
-  // Solo para seguir sincronizando clientes que compraron el plan anterior.
-  mensual: { name: 'SIMO Test Premium mensual', amount: 39_900, frequency: 1, frequencyType: 'months' },
 } as const
 
 export type MpPlanKey = keyof typeof MP_PLANS
@@ -59,7 +59,7 @@ export function resolveMpPlan(value: string | null): MpPlanKey | null {
 }
 
 export function isCheckoutPlan(plan: MpPlanKey) {
-  return plan === 'semanal' || plan === 'anual' || plan === 'desarrollador'
+  return plan === 'mensual' || plan === 'anual' || plan === 'desarrollador'
 }
 
 export function createExternalReference(userId: string, plan: MpPlanKey) {

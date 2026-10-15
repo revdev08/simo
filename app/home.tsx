@@ -82,7 +82,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
           planesViewedRef.current = true
           fbTrack('ViewContent', {
             content_name: 'Planes de Precios',
-            content_ids: ['semanal', 'anual'],
+            content_ids: ['mensual', 'anual'],
             currency: 'COP',
           })
           observer.disconnect()
@@ -486,18 +486,18 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch px-2">
-              {/* Plan Semanal */}
+              {/* Plan Mensual */}
               <div className="bg-slate-50 dark:bg-slate-900/60 p-8 sm:p-10 rounded-3xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300">
                 <div>
                   <div className="mb-6 flex justify-between items-start">
                     <div>
-                      <h3 className="text-2xl font-black text-slate-900 dark:text-white">Plan Semanal</h3>
-                      <p className="text-slate-500 dark:text-slate-400 text-sm mt-1.5">Perfecto para repasos de último minuto.</p>
+                      <h3 className="text-2xl font-black text-slate-900 dark:text-white">Plan Mensual</h3>
+                      <p className="text-slate-500 dark:text-slate-400 text-sm mt-1.5">Ideal para avanzar con constancia durante todo el mes.</p>
                     </div>
                   </div>
                   <div className="mb-8 flex items-baseline gap-1">
-                    <span className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">$19900</span>
-                    <span className="text-slate-500 dark:text-slate-400 font-medium text-sm">/ semana</span>
+                    <span className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">$39900</span>
+                    <span className="text-slate-500 dark:text-slate-400 font-medium text-sm">/ mes</span>
                   </div>
                   <ul className="space-y-4 mb-10">
                     <li className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
@@ -516,15 +516,15 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                       <span className="w-5 h-5 rounded-full bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0">
                         <Check className="w-3.5 h-3.5 stroke-[3]" />
                       </span>
-                      <span className="text-sm font-medium">Acceso total por 7 días</span>
+                      <span className="text-sm font-medium">Acceso total durante un mes</span>
                     </li>
                   </ul>
                 </div>
                 <button
                   onClick={() => {
-                    const planId = 'semanal'
+                    const planId = 'mensual'
                     fbTrack('InitiateCheckout', {
-                      content_name: 'Plan Semanal',
+                      content_name: 'Plan Mensual',
                       content_ids: [planId],
                       value: PLAN_PRICES[planId],
                       currency: 'COP',
@@ -534,7 +534,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                   }}
                   className="w-full text-base font-bold bg-white hover:bg-slate-100 text-slate-900 border border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700 px-6 py-4 rounded-2xl transition-all hover:scale-[1.02] cursor-pointer text-center"
                 >
-                  Elegir Plan Semanal
+                  Elegir Plan Mensual
                 </button>
               </div>
 
