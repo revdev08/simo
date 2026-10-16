@@ -88,6 +88,23 @@ Avisos del entorno local: Resend no tiene configurada `RESEND_API_KEY` y Clerk i
 
 Rama de entrega: `codex/procuraduria-lote23`, con autor local `revdev08` y coautoría de Codex. Se integraron por avance rápido los tres commits nuevos de `origin/main`, hasta `c23b1bc`, antes de compilar. La comprobación remota posterior no encontró commits pendientes de integrar. La entrega se realiza en esa rama; no se actualiza `main`.
 
+## Auditoría independiente antes de publicar en main (16 de octubre de 2026)
+
+Una sesión distinta de la que redactó el lote revisó la rama antes de subirla:
+
+- **Integridad:** 140 preguntas nuevas con ids seguidos (061–200), las 60 anteriores idénticas a las de main y lo publicado igual a los borradores. `yarn validate:questions` sin errores y `yarn build` correcto.
+- **Citas:** se descargaron de nuevo las 25 fuentes oficiales (Cancillería, Función Pública y normograma de la PGN) y se contrastaron los 316 fragmentos:
+  - 304 aparecen literales;
+  - 5 solo difieren en el formato de la conversión a texto;
+  - el del art. 277 de la Constitución aparece literal en la compilación del Senado;
+  - los de la Ley 51 de 1983 siguen el texto correcto de la ley. La compilación de Cancillería tiene erratas: omite «seis de enero» en el art. 1 y escribe «Corpus Cristi».
+- **Resolución a ciegas de una muestra:** 14 preguntas al azar (2 por archivo), resueltas por un agente nuevo con las fuentes. Las 14 coincidieron con la clave. Se corrigieron dos:
+  - **TC-PGN-169:** admitía dos lecturas del inciso final del art. 228 del Decreto Ley 262 (si la excepción del numeral 1 alcanza también la hoja de vida o solo el momento de calificar). Se reescribió con los numerales 1 y 3, que no dejan dudas: traslado del calificador y licencia de más de 30 días.
+  - **TC-PGN-094:** la consigna preguntaba qué «requisitos adicionales» incorporar cuando la respuesta es que no hace falta ninguno, y solo la clave usaba la palabra «minoría». Se neutralizó la consigna y se igualó la redacción de las opciones C y D.
+- Las dos corregidas pasaron dos resoluciones ciegas más, cada una con un agente nuevo: coincidieron con confianza alta y sin alternativas defendibles. Los dos archivos siguen con 5 claves por letra y entre el 20 % y el 25 % de claves más largas.
+
+**Lección:** una «trampa cercana» que el redactor descartó tras analizar la gramática (como el «salvo» del art. 228) merece otra mirada. Si dos lectores independientes llegan a lecturas distintas, la pregunta no mide la norma, mide la interpretación: hay que reescribirla con reglas inequívocas.
+
 ## Lecciones y límites
 
 Se añadieron a [GUIA_REDACCION.md](../GUIA_REDACCION.md) las lecciones sobre revisar todas las señales del resolvedor, evitar operaciones triviales y decisiones repetidas, verificar índices automáticos de artículos y mantener consignas neutrales. Después de modificar una opción también debe recalcularse la longitud del archivo completo.

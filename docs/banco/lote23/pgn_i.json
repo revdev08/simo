@@ -425,13 +425,13 @@
   },
   {
     "id": "TC-PGN-169",
-    "version": 1,
+    "version": 3,
     "estado": "beta",
     "capa": 4,
     "eje": "procuraduria",
     "modulo": "Procuraduría General de la Nación",
     "tema": "Calificación de servicios",
-    "subtema": "Evaluación parcial por salida del calificador y hoja de vida",
+    "subtema": "Evaluaciones parciales por traslado del calificador y por licencia",
     "formato": "caso",
     "nivel": [
       "asistencial",
@@ -440,34 +440,34 @@
     "dificultad": "Alta",
     "norma": "Decreto Ley 262 de 2000",
     "articulos": [
-      "art. 228 num. 1 e inc. 2"
+      "art. 228 nums. 1 y 3 e inc. 2"
     ],
-    "texto_fuente": "Se efectuarán evaluaciones parciales a los empleados de carrera en los siguientes casos:\n1) Cuando quien deba calificar se retire del servicio o se traslade. [...] Estas evaluaciones deberán realizarse dentro de los quince (15) días calendario siguientes a la fecha en que se produzca la situación que las origine y no harán parte de la hoja de vida del evaluado, salvo en el evento consagrado en el numeral 1) de este artículo caso en el cual la calificación deberá hacerse antes de la dejación del cargo.",
-    "pregunta": "El superior que califica a un empleado de carrera va a trasladarse a otra dependencia. Una técnica prepara la evaluación parcial derivada de esa salida y el destino del documento. El superior propone firmarla dentro de los quince días posteriores al traslado y conservarla fuera de la hoja de vida del evaluado. ¿Qué ruta debe dejar programada?",
+    "texto_fuente": "Se efectuarán evaluaciones parciales a los empleados de carrera en los siguientes casos: 1) Cuando quien deba calificar se retire del servicio o se traslade. [...] 3) Cuando el empleado deba separarse temporalmente del ejercicio de las funciones del empleo, por suspensión, encargo, comisión, licencia o vacaciones, en caso de que el término de duración de estas situaciones sea superior a treinta (30) días calendario. [...] Estas evaluaciones deberán realizarse dentro de los quince (15) días calendario siguientes a la fecha en que se produzca la situación que las origine y no harán parte de la hoja de vida del evaluado, salvo en el evento consagrado en el numeral 1) de este artículo caso en el cual la calificación deberá hacerse antes de la dejación del cargo.",
+    "pregunta": "En una procuraduría regional, el procurador que califica a los técnicos de carrera de su despacho será trasladado a otra sede el 30 de octubre. Además, una de esas técnicas empezará el 3 de noviembre una licencia de cuarenta y cinco días calendario. La asistente que lleva el calendario de evaluación del desempeño debe dejar programadas las actuaciones que corresponden a estas dos novedades. ¿Qué debe quedar en el calendario?",
     "opciones": [
       {
         "id": "A",
-        "texto": "Firma antes de que el superior deje el cargo y conservación del resultado fuera de la hoja de vida del empleado evaluado.",
-        "explicacion": "Incorrecta. Respeta la oportunidad excepcional, pero omite que la evaluación del numeral 1 constituye la excepción a la exclusión de la hoja de vida."
+        "texto": "La de los técnicos, dentro de los quince días calendario siguientes al traslado; la de la técnica, dentro de los quince días calendario siguientes al inicio de su licencia.",
+        "explicacion": "Incorrecta. Aplica al traslado del calificador el plazo general de quince días calendario. El art. 228 exceptúa el evento del numeral 1: cuando quien califica se traslada, la calificación debe hacerse antes de la dejación del cargo. Lo de la licencia sí es correcto."
       },
       {
         "id": "B",
-        "texto": "Firma de la evaluación antes de que el superior deje el cargo e incorporación del resultado a la hoja de vida del empleado evaluado.",
-        "explicacion": "Correcta. La salida del calificador es el evento del numeral 1, exceptuado tanto del plazo posterior como de la regla de no incorporación a hoja de vida."
+        "texto": "La de los técnicos, antes de que el procurador deje el cargo; la de la técnica, dentro de los quince días calendario siguientes al inicio de su licencia.",
+        "explicacion": "Correcta. El traslado del calificador es el evento del numeral 1, que se califica antes de la dejación del cargo. La licencia de cuarenta y cinco días supera los treinta días calendario del numeral 3, así que procede una evaluación parcial dentro de los quince días calendario siguientes a la fecha en que se produce la situación."
       },
       {
         "id": "C",
-        "texto": "Firma dentro de los quince días calendario posteriores al traslado e incorporación del resultado a la hoja de vida del empleado.",
-        "explicacion": "Incorrecta. Identifica el destino documental, pero aplica el plazo general posterior en lugar de la regla de calificar antes de dejar el cargo."
+        "texto": "La de los técnicos, antes de que el procurador deje el cargo; la técnica no requiere evaluación parcial, porque la licencia no supera noventa días.",
+        "explicacion": "Incorrecta. Acierta en calificar antes del traslado, pero inventa un umbral de noventa días: el numeral 3 ordena evaluación parcial cuando la separación temporal por licencia supera treinta días calendario."
       },
       {
         "id": "D",
-        "texto": "Firma dentro de los quince días calendario posteriores al traslado y conservación del resultado fuera de la hoja de vida del empleado.",
-        "explicacion": "Incorrecta. Mantiene dos reglas generales que el segundo inciso exceptúa cuando se retira o traslada quien debe calificar."
+        "texto": "La de los técnicos, dentro de los quince días calendario siguientes al traslado; la técnica no requiere evaluación parcial por su licencia.",
+        "explicacion": "Incorrecta. Aplica al traslado del calificador el plazo general, que el art. 228 exceptúa en el numeral 1, y desconoce que una licencia de más de treinta días calendario origina evaluación parcial (numeral 3)."
       }
     ],
     "respuestaCorrecta": "B",
-    "explicacionIA": "La evaluación nace del traslado del calificador, no de otra separación del evaluado. Para ese evento del art. 228.1, el segundo inciso exige calificar antes de dejar el cargo y exceptúa la regla que excluye la evaluación parcial de la hoja de vida.",
+    "explicacionIA": "Dato decisivo: el calificador se traslada y la técnica sale a una licencia de cuarenta y cinco días. Regla: el art. 228 del Decreto Ley 262 de 2000 ordena evaluaciones parciales cuando quien califica se traslada (num. 1) y cuando el empleado se separa temporalmente por licencia de más de treinta días calendario (num. 3); se hacen dentro de los quince días calendario siguientes a la situación, salvo la del numeral 1, que debe hacerse antes de la dejación del cargo. Conclusión: la de los técnicos, antes del traslado; la de la técnica, dentro de los quince días siguientes al inicio de la licencia.",
     "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
     "autor": "IA",
     "revision": {
