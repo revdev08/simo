@@ -65,7 +65,7 @@ export default function PriceObjectionEmail({ firstName, recipientEmail }: Price
       </Section>
 
       <Text style={styles.paragraph}>
-        Con el plan semestral ahorras $149.500 frente a pagar 6 meses por separado. Esa inversión <strong>puede traducirse en un cargo público estable por 20+ años</strong>.
+        Con el plan semestral, tu preparación te queda en solo <strong>$14.983 al mes</strong>. Esa inversión <strong>puede traducirse en un cargo público estable por 20+ años</strong>.
       </Text>
 
       <Text style={styles.paragraph}>

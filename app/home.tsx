@@ -555,7 +555,7 @@ export default function LandingPage({ avisos = [] }: { avisos?: AvisoPortada[] }
                     <span className="text-slate-400 font-medium text-sm">/ 6 meses</span>
                   </div>
                   <p className="-mt-5 mb-8 text-sm font-semibold text-emerald-400">
-                    Ahorras $149.500 frente a pagar 6 meses por separado.
+                    Te queda en solo $14.983 al mes.
                   </p>
                   <ul className="space-y-4 mb-10">
                     <li className="flex items-center gap-3 text-slate-300">
