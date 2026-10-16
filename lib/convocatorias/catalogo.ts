@@ -699,11 +699,13 @@ export const CONVOCATORIAS: Convocatoria[] = [
     titulo: 'Concurso Procuraduría 2026: plan de estudio para la prueba de conocimientos',
     entidad: 'Procuraduría General de la Nación (concurso propio, no de la CNSC)',
     fueraCnsc: true,
-    vacantes: 2826,
-    vacantesNota: 'Resolución 076 de 2026. Según el certificado de inscritos, se inscribieron unas 272.500 personas.',
+    vacantes: 3051,
+    vacantesNota:
+      'Resolución 243 de 2026: 2.928 empleos de la planta permanente y 123 de la transitoria (la oferta inicial de la Resolución 076 era de 2.826). Según el certificado oficial de inscritos, hubo unas 295.600 inscripciones en las 389 convocatorias.',
     niveles: 'Asesor, ejecutivo, profesional, técnico, administrativo y operativo',
-    estado: 'Inscripciones cerradas (7 al 18 de septiembre de 2026). La fecha de la prueba escrita aún no es oficial.',
-    revisado: REVISADO,
+    estado:
+      'Inscripciones cerradas (7 al 18 de septiembre de 2026). Sigue la publicación de admitidos y no admitidos. La Procuraduría estima la prueba escrita para mayo de 2027; aún no hay fecha oficial.',
+    revisado: '2026-10-16',
     resumen:
       'El concurso de la Procuraduría para su sistema especial de carrera (Decretos Ley 262 y 263 de 2000). Cada empleo trae unos conocimientos esenciales comunes: ofimática, atención al usuario, documentos de oficina, estructura y funciones de la Procuraduría, sistemas de gestión, gestión documental y gestión pública.',
     pruebas: [
@@ -712,7 +714,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
       { nombre: 'Análisis de antecedentes', peso: 10, caracter: 'Clasificatoria' },
     ],
     pruebasNota:
-      'Pesos para asesor, ejecutivo y profesional según la Resolución 076 de 2026, tal como los reportó la prensa: confírmalos en el texto oficial. En los niveles técnico, administrativo y operativo, conocimientos 60%, comportamentales 20% y antecedentes 20%. La Resolución 133 de 2026 abrió la opción de cambiar la prueba escrita por una de ejecución en empleos que piden hasta bachillerato.',
+      'Pesos para asesor, ejecutivo y profesional según la Resolución 076 de 2026. En los niveles técnico, administrativo y operativo: conocimientos 60%, comportamentales 20% y antecedentes 20%. La prueba escrita de conocimientos tiene un núcleo general y uno específico, y para entrar a la lista de elegibles se necesita el 70% del puntaje total (art. 33). Para los empleos de Conductor y Auxiliar de Servicios Generales, la prueba de conocimientos es de ejecución y no escrita (Resolución 212 de 2026).',
     perfiles: [
       {
         id: 'profesional',
@@ -755,6 +757,13 @@ export const CONVOCATORIAS: Convocatoria[] = [
     faltantes:
       'Los conocimientos específicos dependen de cada empleo (por ejemplo, tributario, penal o contratación): búscalos con el plan por ejes. Las comportamentales de la Procuraduría siguen su propio diccionario de competencias, y las nuestras siguen el Decreto 815 de 2018.',
     fuentes: [
+      { label: 'Resolución 076 de 2026: reglas del concurso (normograma de la Procuraduría)', url: 'https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0076_2026.htm' },
+      { label: 'Resolución 243 de 2026: oferta de 3.051 empleos', url: 'https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0243_2026.htm' },
+      { label: 'Resolución 212 de 2026: prueba de ejecución', url: 'https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0212_2026.htm' },
+      {
+        label: 'Boletín de la Procuraduría: prueba aproximadamente en mayo de 2027',
+        url: 'https://www.procuraduria.gov.co/Pages/mas-17-mil-registros-durante-primer-dia-inscripciones-concurso-meritos-procuraduria-general-nac.aspx',
+      },
       { label: 'Convocatorias del concurso (Procuraduría)', url: 'https://www.procuraduria.gov.co/Documents/2026/5.%20Mayo/CONVOCATORIAS.pdf' },
       {
         label: 'Certificado de inscritos (Procuraduría)',

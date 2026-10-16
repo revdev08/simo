@@ -103,6 +103,8 @@ Una sesión distinta de la que redactó el lote revisó la rama antes de subirla
   - **TC-PGN-094:** la consigna preguntaba qué «requisitos adicionales» incorporar cuando la respuesta es que no hace falta ninguno, y solo la clave usaba la palabra «minoría». Se neutralizó la consigna y se igualó la redacción de las opciones C y D.
 - Las dos corregidas pasaron dos resoluciones ciegas más, cada una con un agente nuevo: coincidieron con confianza alta y sin alternativas defendibles. Los dos archivos siguen con 5 claves por letra y entre el 20 % y el 25 % de claves más largas.
 
+- **Cifra de inscritos:** el certificado oficial, leído con dos extractores distintos (`pdftotext -raw` y `pypdf`), tiene 389 convocatorias (los números 68, 74 y 86 no existen) y suma **295.647 inscripciones**, no 295.925. El catálogo de la app se actualizó con «unas 295.600 inscripciones», 3.051 empleos (Resolución 243), los pesos y mínimos confirmados en la Resolución 076, la prueba de ejecución de la Resolución 212 y la estimación oficial de mayo de 2027.
+
 **Lección:** una «trampa cercana» que el redactor descartó tras analizar la gramática (como el «salvo» del art. 228) merece otra mirada. Si dos lectores independientes llegan a lecturas distintas, la pregunta no mide la norma, mide la interpretación: hay que reescribirla con reglas inequívocas.
 
 ## Lecciones y límites
