@@ -28,6 +28,8 @@ export type PanelMercadoPago = {
   activas: number
   recientes: SuscripcionReciente[]
   generado: string // cuándo se consultó Mercado Pago (ISO)
+  sinSuscripcion: number // suscripciones contadas por su pago porque Mercado Pago aún no las lista
+  truncado: boolean // Mercado Pago tenía más pagos que el tope de la consulta: faltan los más antiguos
 }
 
 async function leerMercadoPago(): Promise<PanelMercadoPago> {
@@ -48,16 +50,17 @@ async function leerMercadoPago(): Promise<PanelMercadoPago> {
   if (!pagos.ok) {
     throw new Error(`No se pudieron consultar los pagos en Mercado Pago (${pagos.error}): los suscriptores nuevos no se cuentan hasta poder verificarlos.`)
   }
-  const cobros = pagos.datos
+  const { cobros, sinSuscripcion, truncado } = pagos.datos
+  const todas = [...subs, ...sinSuscripcion]
 
   const activas = new Set(subs.filter((s) => s.estado === 'authorized').map((s) => s.id))
   const primerDia = diaColombia(desde)
   // Un día de margen en el borde de la consulta
-  const clasificados = clasificarPagos(subs, cobros, ahora - (diasPagos - 1) * DIA_MS).filter((p) => p.dia >= primerDia)
+  const clasificados = clasificarPagos(todas, cobros, ahora - (diasPagos - 1) * DIA_MS).filter((p) => p.dia >= primerDia)
   // Correo de cada suscriptor nuevo del periodo, para listarlos (sin pedir cada suscripción a Mercado Pago)
   const idsNuevos = new Set(clasificados.filter((p) => p.tipo === 'nuevo').map((p) => p.subId))
   const correosNuevos = await datosSuscriptores(
-    subs.filter((s) => idsNuevos.has(s.id)),
+    todas.filter((s) => idsNuevos.has(s.id)),
     cobros,
     { consultarSuscripciones: false },
   )
@@ -87,10 +90,12 @@ async function leerMercadoPago(): Promise<PanelMercadoPago> {
       monto: s.monto,
     })),
     generado: new Date(ahora).toISOString(),
+    sinSuscripcion: sinSuscripcion.length,
+    truncado,
   }
 }
 
-const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v2'], {
+const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v3'], {
   revalidate: REVALIDAR_S,
   tags: ['admin-mercadopago'],
 })

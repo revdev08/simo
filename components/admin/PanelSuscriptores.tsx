@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Cobro, FilaDia, PagoDelPanel, SuscripcionReciente } from '@/lib/admin/metricas'
+import ActualizarMercadoPago from './ActualizarMercadoPago'
 import BarrasPorDia from './BarrasPorDia'
 
 const ESTADO_PAGO: Record<string, string> = {
@@ -94,6 +95,7 @@ export default function PanelSuscriptores({
   minutosCache,
   nuevos,
   pruebas,
+  sinSuscripcion,
 }: {
   dias: number
   rangos: number[]
@@ -107,6 +109,7 @@ export default function PanelSuscriptores({
   minutosCache: number
   nuevos: PagoDelPanel[] | null // los suscriptores nuevos del periodo, del más reciente al más antiguo
   pruebas: number // compras de prueba del periodo, que no cuentan
+  sinSuscripcion: number // suscripciones contadas por su pago porque Mercado Pago aún no las lista
 }) {
   const hayRegistros = filas.length > 0 && filas[0].registros !== null
   const haySuscripciones = filas.length > 0 && filas[0].nuevas !== null
@@ -130,8 +133,16 @@ export default function PanelSuscriptores({
                 </span>
               )}
             </p>
+            {sinSuscripcion > 0 && (
+              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+                {sinSuscripcion === 1
+                  ? 'Una suscripción reciente aún no aparece en la lista de Mercado Pago; ya se cuenta por su pago.'
+                  : `${sinSuscripcion} suscripciones recientes aún no aparecen en la lista de Mercado Pago; ya se cuentan por su pago.`}
+              </p>
+            )}
           </div>
           <div className="flex flex-wrap items-center gap-2">
+            {generadoMercadoPago && <ActualizarMercadoPago />}
             <Link
               href="/api/checkout?plan=desarrollador"
               className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-300"

@@ -143,33 +143,62 @@ type PagoBuscado = PaymentSearchResult & {
   payer?: { id?: string | number; email?: string }
 }
 
+export type PagosDelPeriodo = {
+  cobros: Record<string, Cobro[]> // por id de suscripción
+  // Suscripciones que aparecen en los pagos pero aún no en la búsqueda de suscripciones de Mercado Pago (tarda en
+  // indexar las recién creadas): se arman con los datos del pago para no perder su cobro
+  sinSuscripcion: Suscripcion[]
+  truncado: boolean // Mercado Pago tenía más pagos que el tope de la consulta
+}
+
 // Pagos de los últimos `dias` días, asociados a su suscripción por el id que trae el pago. Si no lo trae, al de
 // la misma cuenta de Mercado Pago creado más cerca de la hora del pago (el primer cobro se hace al suscribirse).
 // Cada suscripción de la lista queda con sus pagos (vacío si no tiene ninguno en el periodo).
-export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): Promise<Resultado<Record<string, Cobro[]>>> {
+export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): Promise<Resultado<PagosDelPeriodo>> {
   const config = configMP()
   if (!config) return { ok: false, error: 'Falta MELI_ACCESS_TOKEN en las variables de entorno.' }
   try {
     const api = new Payment(config)
     const LIMITE = 100
+    // Del más reciente al más antiguo: si hubiera que recortar, se pierde la historia vieja y no los pagos de hoy.
+    // Un pago nuevo durante la consulta corre las páginas un puesto y repite uno (se descarta por id); no se salta ninguno.
     const pagina = (offset: number) =>
-      // En orden ascendente los pagos que llegan durante la consulta quedan al final y no corren las páginas
       conReintento(() =>
-        api.search({ options: { sort: 'date_created', criteria: 'asc', range: 'date_created', begin_date: `NOW-${dias}DAYS`, end_date: 'NOW', limit: LIMITE, offset } }),
+        api.search({ options: { sort: 'date_created', criteria: 'desc', range: 'date_created', begin_date: `NOW-${dias}DAYS`, end_date: 'NOW', limit: LIMITE, offset } }),
       )
     const primera = await pagina(0)
-    const total = Math.min(primera.paging?.total ?? 0, 5000)
+    const TOPE = 10_000
+    const total = Math.min(primera.paging?.total ?? 0, TOPE)
     const offsets = Array.from({ length: Math.max(0, Math.ceil(total / LIMITE) - 1) }, (_, i) => (i + 1) * LIMITE)
     const pagos = [primera, ...(await enLotes(offsets, pagina))].flatMap((p) => (p.results ?? []) as PagoBuscado[])
 
     const porId = new Map(subs.map((s) => [s.id, s]))
     const resultado: Record<string, Cobro[]> = Object.fromEntries(subs.map((s) => [s.id, []]))
+    const sinSuscripcion = new Map<string, Suscripcion>()
     const vistos = new Set<string>()
     for (const p of pagos) {
       if (!p.id || vistos.has(String(p.id))) continue
       vistos.add(String(p.id))
       const idSuscripcion = p.point_of_interaction?.transaction_data?.subscription_id ?? p.metadata?.preapproval_id
-      let sub = idSuscripcion ? porId.get(String(idSuscripcion)) : undefined
+      let sub = idSuscripcion ? (porId.get(String(idSuscripcion)) ?? sinSuscripcion.get(String(idSuscripcion))) : undefined
+      if (idSuscripcion && !sub) {
+        // Mercado Pago ya registró el pago, pero su suscripción todavía no sale en la búsqueda
+        const leida = parseExternalReference(p.external_reference ?? undefined)
+        sub = {
+          id: String(idSuscripcion),
+          creada: p.date_created ?? new Date().toISOString(),
+          estado: 'desconocido',
+          cobros: 0,
+          monto: p.transaction_amount ?? null,
+          userId: leida?.userId ?? p.external_reference ?? null,
+          pagadorId: Number(p.payer?.id) || null,
+          prueba: leida?.plan === 'desarrollador' || p.transaction_amount === MP_PLANS.desarrollador.amount,
+        }
+        sinSuscripcion.set(sub.id, sub)
+        resultado[sub.id] = []
+      }
+      // La suscripción armada desde sus pagos se fecha con el más antiguo
+      if (sub && sinSuscripcion.has(sub.id) && p.date_created && p.date_created < sub.creada) sub.creada = p.date_created
       let aproximado = false
       if (!idSuscripcion && p.operation_type === 'recurring_payment' && p.payer?.id) {
         const hora = Date.parse(p.date_created ?? '')
@@ -193,7 +222,7 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
       })
     }
     for (const lista of Object.values(resultado)) lista.sort((a, b) => b.fecha.localeCompare(a.fecha))
-    return { ok: true, datos: resultado }
+    return { ok: true, datos: { cobros: resultado, sinSuscripcion: [...sinSuscripcion.values()], truncado: (primera.paging?.total ?? 0) > TOPE } }
   } catch (e) {
     return { ok: false, error: mensaje(e) }
   }

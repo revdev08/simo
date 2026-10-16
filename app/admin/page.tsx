@@ -25,6 +25,7 @@ async function cargarPanel(dias: number) {
   const errores: string[] = []
   if (!registros.ok) errores.push(`No se pudieron leer los registros de Clerk: ${registros.error}`)
   if (!mp.ok) errores.push(mp.error)
+  if (mp.ok && mp.datos.truncado) errores.push('Mercado Pago tenía más pagos que el tope de la consulta: faltan los más antiguos, así que la clasificación de nuevos y recurrentes puede ser imprecisa.')
 
   // Los nuevos del periodo, uno por uno, para poder revisar la cifra; las compras de prueba solo se cuentan aparte
   const enPeriodo = new Set(lista)
@@ -40,6 +41,7 @@ async function cargarPanel(dias: number) {
     errores,
     generado: new Date(ahora).toISOString(),
     generadoMercadoPago: mp.ok ? mp.datos.generado : null,
+    sinSuscripcion: mp.ok ? mp.datos.sinSuscripcion : 0,
     minutosCache: REVALIDAR_S / 60,
   }
 }
