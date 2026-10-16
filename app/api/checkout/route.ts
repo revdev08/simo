@@ -19,9 +19,9 @@ export async function GET(req: Request) {
     if (!email) return new NextResponse('Tu cuenta necesita un correo electrónico', { status: 400 })
 
     const url = new URL(req.url)
-    const plan = resolveMpPlan(url.searchParams.get('plan') ?? url.searchParams.get('planId') ?? 'anual')
+    const plan = resolveMpPlan(url.searchParams.get('plan') ?? url.searchParams.get('planId') ?? 'semestral')
     if (!plan || !isCheckoutPlan(plan)) {
-      return new NextResponse('Plan inválido. Usa "mensual" o "anual".', { status: 400 })
+      return new NextResponse('Plan inválido. Usa "mensual" o "semestral".', { status: 400 })
     }
 
     // El plan técnico no se anuncia y se protege siempre en el servidor.

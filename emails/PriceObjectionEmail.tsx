@@ -60,12 +60,12 @@ export default function PriceObjectionEmail({ firstName, recipientEmail }: Price
           • Plan mensual: <strong>$39900</strong> (acceso completo durante un mes)
         </Text>
         <Text style={styles.calloutText}>
-          • Plan anual: <strong>$119000</strong> (12 meses de simulacros ilimitados + IA + estadísticas)
+          • Plan semestral: <strong>$89900</strong> (6 meses de simulacros ilimitados + IA + estadísticas)
         </Text>
       </Section>
 
       <Text style={styles.paragraph}>
-        Con el plan anual ahorras $359.800 frente a pagar 12 meses por separado. Esa inversión <strong>puede traducirse en un cargo público estable por 20+ años</strong>.
+        Con el plan semestral ahorras $149.500 frente a pagar 6 meses por separado. Esa inversión <strong>puede traducirse en un cargo público estable por 20+ años</strong>.
       </Text>
 
       <Text style={styles.paragraph}>

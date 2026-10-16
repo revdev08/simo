@@ -4,6 +4,7 @@ export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 export const PLAN_PRICES: Record<string, number> = {
   semanal: 19900,
   anual: 119000,
+  semestral: 89900,
   desarrollador: 2000,
   mensual: 39900,
   '3fa86370a007428f93d188e30e426653': 19900, // Plan Semanal
