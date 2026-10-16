@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "TC-PGN-181",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Gestión documental de la PGN",
+    "subtema": "Administración funcional y técnica de DOKUS",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 293 de 2024 de la PGN",
+    "articulos": [
+      "arts. 2 y 8"
+    ],
+    "texto_fuente": "Designar la administración funcional del Sistema de Gestión de Documentos Electrónicos de Archivo - DOKUS al Grupo de Gestión Documental Electrónico - GED de la División de Documentación. La administración técnica es responsabilidad del Grupo de Apoyo a Sistemas de Información y Grupo de Infraestructura de la Oficina de Tecnología, Innovación y Transformación Digital. [...] La implementación, mantenimiento, integración y actualización del Sistema de Gestión de Documentos Electrónicos de Archivo - DOKUS estará a cargo del Grupo de Gestión Documental Electrónico - GED de la División de Documentación y el Grupo de Apoyo a Sistemas de Información y Grupo de Infraestructura de la Oficina de Tecnología, Innovación y Transformación Digital",
+    "pregunta": "Una actualización de DOKUS fue ejecutada por el Grupo GED de la División de Documentación y los grupos de Apoyo a Sistemas de Información e Infraestructura de la Oficina de Tecnología, Innovación y Transformación Digital. El acta registra que los tres grupos participaron en mantenimiento e integración. A partir de ella, una auxiliar debe completar la matriz permanente de administración funcional y técnica del sistema. ¿Cómo debe registrar esas responsabilidades?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Operación funcional: los grupos de Apoyo a Sistemas de Información e Infraestructura; plataforma técnica: esos mismos grupos de la oficina tecnológica.",
+        "explicacion": "Incorrecta. Los dos grupos tienen la administración técnica; la funcional corresponde al Grupo GED, conforme al art. 2."
+      },
+      {
+        "id": "B",
+        "texto": "Operación funcional: los grupos de Apoyo a Sistemas de Información e Infraestructura; plataforma técnica: el Grupo GED de la División de Documentación.",
+        "explicacion": "Incorrecta. Invierte la asignación del art. 2: GED administra funcionalmente y los grupos de la oficina tecnológica administran técnicamente."
+      },
+      {
+        "id": "C",
+        "texto": "Operación funcional: el Grupo GED de la División de Documentación; plataforma técnica: ese mismo grupo, como administrador del sistema documental.",
+        "explicacion": "Incorrecta. Reconoce al administrador funcional, pero extiende esa atribución a la administración técnica asignada a los dos grupos de la oficina tecnológica."
+      },
+      {
+        "id": "D",
+        "texto": "Operación funcional: el Grupo GED de la División de Documentación; plataforma técnica: los grupos de Apoyo a Sistemas de Información e Infraestructura.",
+        "explicacion": "Correcta. Es la distribución expresa de la administración funcional y técnica establecida por el art. 2."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "La matriz distingue dos responsabilidades sobre DOKUS. El art. 2 asigna la administración funcional al Grupo GED y la técnica a los grupos de Apoyo a Sistemas de Información e Infraestructura de la oficina tecnológica. Compartir labores de implementación no convierte a todos en administradores de ambos componentes.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0293_2024.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-182",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Gestión documental de la PGN",
+    "subtema": "Uso de SIGDEA durante la operación de DOKUS",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 293 de 2024 de la PGN",
+    "articulos": [
+      "arts. 1 parágrafo 1 y 3"
+    ],
+    "texto_fuente": "El sistema de gestión de documentos electrónicos de archivo - DOKUS, permite la radicación, digitalización, registro, clasificación, almacenamiento, consulta y conservación de los documentos electrónicos generados por las oficinas productoras. [...] A partir de la puesta en producción del Sistema de Gestión de Documentos Electrónicos de Archivo - DOKUS, el sistema SIGDEA solo quedará disponible para consulta y cierre de los trámites iniciados a través de este sistema y que a la fecha de adopción del Dokus se encuentren abiertos.",
+    "pregunta": "DOKUS ya está en producción. Una oficina conserva en SIGDEA un trámite que comenzó allí y seguía abierto cuando se adoptó DOKUS; hoy recibe una solicitud distinta que inicia otro trámite. El proyecto de instrucción ordena migrar primero el expediente antiguo a DOKUS y cerrar su registro en SIGDEA sin efectuar allí más actuaciones. Una técnica objeta que SIGDEA aún puede usarse para terminar ese trámite. ¿Qué instrucción debe quedar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener el trámite antiguo en SIGDEA solo para consulta y efectuar su cierre en DOKUS; radicar la nueva solicitud en DOKUS.",
+        "explicacion": "Incorrecta. El art. 3 conserva SIGDEA tanto para consulta como para cierre de los trámites iniciados allí que seguían abiertos al adoptar DOKUS."
+      },
+      {
+        "id": "B",
+        "texto": "Consultar y cerrar en SIGDEA el trámite que seguía abierto; iniciar en DOKUS el trámite de la nueva solicitud recibida.",
+        "explicacion": "Correcta. La objeción acierta: SIGDEA mantiene esas funciones respecto de los trámites antiguos abiertos, mientras el nuevo trámite corresponde a DOKUS."
+      },
+      {
+        "id": "C",
+        "texto": "Consultar y cerrar en SIGDEA el trámite que seguía abierto; iniciar también allí el nuevo trámite por pertenecer a la misma oficina.",
+        "explicacion": "Incorrecta. Extiende la excepción de SIGDEA a trámites nuevos. El art. 3 la limita a consulta y cierre de los que reunían las condiciones temporales indicadas."
+      },
+      {
+        "id": "D",
+        "texto": "Trasladar el trámite antiguo a DOKUS para consultar y cerrar allí; continuar usando SIGDEA para recibir solicitudes de esa misma serie.",
+        "explicacion": "Incorrecta. Impone una migración no exigida por el art. 3 y conserva en SIGDEA la apertura de trámites nuevos, que la norma no autoriza."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "El expediente comenzó en SIGDEA y seguía abierto al adoptarse DOKUS. El art. 3 permite consultarlo y cerrarlo en aquel sistema aun después de la puesta en producción de DOKUS. Esa excepción no comprende la nueva solicitud. La objeción de la técnica es fundada.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0293_2024.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-183",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Gestión documental de la PGN",
+    "subtema": "Capacitación en DOKUS tras cambio de funciones",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 293 de 2024 de la PGN",
+    "articulos": [
+      "art. 7 parágrafo 1"
+    ],
+    "texto_fuente": "Los servidores de la Procuraduría General de la Nación deben cursar a través de la Plataforma Virtual del Instituto de Estudios del Ministerio Público, al menos un módulo virtual referido al Sistema de Gestión de Documentos Electrónicos de Archivo - DOKUS, según su perfil o funciones relacionadas a su cargo, en el transcurso de tres (3) meses, contados a partir de la implementación del sistema y/o ingreso a la entidad o cambio de funciones.",
+    "pregunta": "Una servidora de apoyo ya había realizado un módulo de DOKUS para sus antiguas tareas. Mediante acto del 1 de julio de 2026 se le asignaron funciones distintas de trámite documental. El curso virtual contiene varios módulos y permite matricularse en distintas fechas. Una auxiliar debe registrar el requerimiento mínimo de capacitación derivado de ese cambio. ¿Qué anotación corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cursar al menos un módulo acorde con las nuevas funciones dentro de los tres meses contados desde el cambio de funciones.",
+        "explicacion": "Correcta. El art. 7 parágrafo 1 exige al menos un módulo según el perfil o funciones y vincula el término de tres meses también al cambio de funciones."
+      },
+      {
+        "id": "B",
+        "texto": "Cursar todos los módulos ofrecidos sobre DOKUS dentro de los tres meses contados desde la modificación de sus funciones.",
+        "explicacion": "Incorrecta. Usa el punto de partida correcto, pero convierte el mínimo de un módulo pertinente en la obligación de cursar todos los disponibles."
+      },
+      {
+        "id": "C",
+        "texto": "Cursar al menos un módulo acorde con las nuevas funciones dentro de los tres meses contados desde la próxima matrícula al curso.",
+        "explicacion": "Incorrecta. La matrícula no es el hecho que activa el término: para este caso lo es el cambio de funciones."
+      },
+      {
+        "id": "D",
+        "texto": "Cursar todos los módulos ofrecidos sobre DOKUS dentro de los tres meses contados desde la próxima matrícula en el curso.",
+        "explicacion": "Incorrecta. Altera tanto el alcance mínimo de la capacitación como el hecho desde el cual corre el término."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "El supuesto es un cambio efectivo de funciones, no una modificación de permisos de usuario. El art. 7 parágrafo 1 exige al menos un módulo que corresponda al perfil o funciones, en los tres meses siguientes a ese cambio. Haber cursado un módulo para tareas anteriores no fija un nuevo plazo desde la matrícula.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0293_2024.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-184",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Gestión documental de la PGN",
+    "subtema": "Deber del servidor y control del jefe en DOKUS",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 293 de 2024 de la PGN",
+    "articulos": [
+      "arts. 4 y 5"
+    ],
+    "texto_fuente": "Corresponde a los jefes de las dependencias realizar seguimiento y control de la actualización de los sistemas de información y el uso permanente del Sistema de Gestión de Documentos Electrónicos de Archivo - DOKUS para la gestión y trámite de los asuntos asignados a la dependencia a su cargo. [...] Es deber de todos los servidores de la Procuraduría General de la Nación gestionar de forma adecuada y oportuna la organización, salvaguarda y custodia de los documentos y archivos (físicos y electrónicos) que por razón de sus funciones recepción en, tramiten, produzcan, archiven o preserven, así como la actualización de la información en el Sistema de Gestión de Documentos Electrónicos de Archivo - DOKUS, conforme al manual de funciones, las políticas institucionales, las Tablas de Retención Documental, los procedimientos y la normatividad vigente.",
+    "pregunta": "En una dependencia, cada expediente está asignado a un servidor que recibe y produce documentos en ejercicio de sus funciones. Una revisión encuentra anexos guardados en carpetas personales y actuaciones sin actualizar en DOKUS. Se debe distribuir el trabajo de organización y actualización, y establecer quién hará el seguimiento del uso del sistema en la dependencia. ¿Qué distribución corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El jefe asume la organización y actualización de los expedientes de todos; cada servidor verifica el uso permanente del sistema en la dependencia.",
+        "explicacion": "Incorrecta. Invierte las funciones: el deber documental corresponde a cada servidor respecto de los asuntos de sus funciones; el jefe ejerce seguimiento y control."
+      },
+      {
+        "id": "B",
+        "texto": "Cada servidor organiza y actualiza los expedientes a su cargo; el Grupo GED asume el seguimiento del uso permanente del sistema en la dependencia.",
+        "explicacion": "Incorrecta. Identifica el deber individual, pero traslada a GED el seguimiento y control que el art. 4 asigna al jefe de la dependencia."
+      },
+      {
+        "id": "C",
+        "texto": "Cada servidor organiza y actualiza los expedientes a su cargo; el jefe controla esa actualización y el uso permanente del sistema en su dependencia.",
+        "explicacion": "Correcta. Combina el deber individual del art. 5 con el seguimiento y control de la jefatura previsto en el art. 4."
+      },
+      {
+        "id": "D",
+        "texto": "El jefe asume la organización y actualización de los expedientes de todos; el Grupo GED verifica el uso permanente del sistema en la dependencia.",
+        "explicacion": "Incorrecta. Sustituye a los servidores en su deber documental y a la jefatura en su función de seguimiento y control."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Los anexos y registros corresponden a expedientes que los servidores tramitan por sus funciones. El art. 5 mantiene en ellos el deber de organización, custodia y actualización; el art. 4 encarga a la jefatura el seguimiento y control. La administración funcional de DOKUS no desplaza esa distribución.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0293_2024.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-185",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Gestión documental de la PGN",
+    "subtema": "Liderazgo y aplicación de los instrumentos archivísticos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 130 de 2024 de la PGN",
+    "articulos": [
+      "arts. 4 y 5"
+    ],
+    "texto_fuente": "La División de Documentación liderará la implementación, divulgación y actualización de los instrumentos archivísticos aprobados. [...] La implementación de los Instrumentos Archivísticos adoptados será liderada por la División de Documentación, con la participación de todas las dependencias de la entidad, que deberán aplicar los instrumentos y cumplir las acciones que se determinen para su implementación, de forma que se fortalezca la gestión de la entidad en todas las etapas del Proceso Documental.",
+    "pregunta": "Una técnica organiza la ejecución de los instrumentos archivísticos adoptados por la PGN. El borrador separa dos momentos: orientar su implementación y actualización institucional, y realizar en cada dependencia las acciones para aplicarlos. Debe definir una secuencia de trabajo para una dependencia territorial que recibe documentos de varias series. ¿Cuál corresponde a la distribución institucional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La División de Documentación conduce la implementación y actualización; la dependencia territorial participa y realiza las acciones de aplicación en sus documentos.",
+        "explicacion": "Correcta. El art. 4 asigna el liderazgo a la División de Documentación y el art. 5 exige a todas las dependencias participar, aplicar y ejecutar las acciones de cumplimiento."
+      },
+      {
+        "id": "B",
+        "texto": "La dependencia territorial conduce la actualización de sus instrumentos; la División de Documentación aplica luego los cambios en los documentos de esa dependencia.",
+        "explicacion": "Incorrecta. Invierte el liderazgo institucional y la aplicación que incumbe a cada dependencia."
+      },
+      {
+        "id": "C",
+        "texto": "La División de Documentación conduce la implementación y actualización; la dependencia territorial remite sus documentos para que aquella ejecute su aplicación.",
+        "explicacion": "Incorrecta. Mantiene el liderazgo correcto, pero sustituye el deber de aplicación de todas las dependencias por la remisión de sus documentos."
+      },
+      {
+        "id": "D",
+        "texto": "La dependencia territorial conduce la actualización de sus instrumentos; cada servidor los aplica después de que Documentación los incorpore al inventario institucional.",
+        "explicacion": "Incorrecta. Traslada a la dependencia territorial el liderazgo de actualización que el art. 4 asigna a Documentación y añade una secuencia de aprobación no prevista en esos artículos."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Se trata de ejecutar instrumentos institucionales en una dependencia. Los arts. 4 y 5 separan el liderazgo de Documentación de la participación y aplicación exigida a todas las dependencias. La territorial debe realizar las acciones de cumplimiento sobre sus documentos dentro de ese trabajo institucional.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0130_2024.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-186",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Gestión documental de la PGN",
+    "subtema": "Parametrización de acceso y seguimiento de MOREQ",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 130 de 2024 de la PGN",
+    "articulos": [
+      "art. 7"
+    ],
+    "texto_fuente": "Ordenar a la Oficina de Tecnología, Innovación y Transformación Digital y al Grupo de Gestión Documental Electrónica - GED de la División de Documentación, la implementación y parametrización de las Tablas de Control de Acceso y el seguimiento a la aplicación del Modelo de Requisitos de Gestión de Documentos Electrónicos (MOREQ) en el Sistema de Información de Gestión Documental Electrónico y de Archivo de la entidad.",
+    "pregunta": "Para poner en funcionamiento un nuevo repositorio del sistema documental, una técnica debe preparar la orden de trabajo relativa a las Tablas de Control de Acceso y al Modelo de Requisitos de Gestión de Documentos Electrónicos (MOREQ). Los instrumentos ya fueron adoptados. ¿Qué orden reproduce el encargo de la Resolución 130 de 2024 para esa implementación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Asignar a la oficina tecnológica la parametrización del acceso y a cada dependencia usuaria la verificación de MOREQ en los expedientes que ella administra.",
+        "explicacion": "Incorrecta. Fragmenta el encargo entre tecnología y usuarios; el art. 7 asigna a la oficina tecnológica y GED la parametrización y el seguimiento a MOREQ."
+      },
+      {
+        "id": "B",
+        "texto": "Asignar a GED la definición de restricciones y el seguimiento de MOREQ, y a la oficina tecnológica la incorporación posterior de esas decisiones al repositorio.",
+        "explicacion": "Incorrecta. Reconvierte el encargo conjunto de implementación en una facultad de GED para definir restricciones; se trata de parametrizar tablas ya adoptadas."
+      },
+      {
+        "id": "C",
+        "texto": "Asignar a la oficina tecnológica y a GED la aprobación de las tablas y el modelo, y encargar su parametrización a los responsables de cada dependencia usuaria.",
+        "explicacion": "Incorrecta. El art. 7 encarga implementación, parametrización y seguimiento; no sustituye esas labores por aprobar instrumentos y delegar su aplicación técnica a los usuarios."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar a la oficina tecnológica y a GED la implementación y parametrización de las tablas, junto con el seguimiento de la aplicación de MOREQ en el sistema documental.",
+        "explicacion": "Correcta. Son los dos destinatarios y las tareas expresamente previstas por el art. 7 para el sistema de gestión documental electrónico y de archivo."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Los instrumentos ya existen; la orden versa sobre llevarlos al sistema. El art. 7 encarga a la oficina tecnológica y GED implementar y parametrizar las Tablas de Control de Acceso y seguir la aplicación de MOREQ. No les confiere en ese encargo la creación de reservas ni remite esas tareas a cada usuario.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0130_2024.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-187",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Recursos tecnológicos de la PGN",
+    "subtema": "Conceptos previos para instalar software libre",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Memorando 4 de 14 de abril de 2026 de la PGN (índice 4A)",
+    "articulos": [
+      "num. 3.2"
+    ],
+    "texto_fuente": "No se puede instalar en los equipos de cómputo y en general en la infraestructura tecnológica de la entidad, software o servicios sin licenciamiento a nombre de la Procuraduría General de la Nación, de igual forma, tampoco se podrá instalar software libre sin concepto previo favorable de la Oficina de Tecnología Innovación y Transformación Digital y el Grupo de Protección de Datos y Activos de Información.",
+    "pregunta": "Un técnico solicita instalar software libre en un equipo institucional. La solicitud anexa concepto favorable de la Oficina de Tecnología, Innovación y Transformación Digital, pruebas de compatibilidad y el permiso de su jefe. Un compañero objeta que aún falta un concepto para autorizar la instalación. El Grupo de Protección de Datos y Activos de Información no se ha pronunciado. ¿Cómo debe tratarse la objeción?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Desestimarla: el concepto de la oficina tecnológica habilita la instalación y el grupo de protección interviene al revisar incidentes de seguridad posteriores.",
+        "explicacion": "Incorrecta. El grupo debe emitir concepto previo favorable; su intervención no se reduce a incidentes posteriores."
+      },
+      {
+        "id": "B",
+        "texto": "Acogerla: falta obtener del grupo de protección un registro de la licencia libre, que reemplaza su concepto sobre la instalación propuesta.",
+        "explicacion": "Incorrecta. Identifica una actuación pendiente del grupo, pero el memorando exige concepto previo favorable, no un registro de licencia que lo sustituya."
+      },
+      {
+        "id": "C",
+        "texto": "Desestimarla: la evaluación de compatibilidad y el permiso del jefe suplen el pronunciamiento del grupo de protección para el software de licencia libre.",
+        "explicacion": "Incorrecta. Esos documentos no sustituyen el concepto previo favorable del grupo exigido conjuntamente con el de la oficina tecnológica."
+      },
+      {
+        "id": "D",
+        "texto": "Acogerla: se requiere también el concepto favorable previo del grupo de protección; el permiso del jefe no sustituye ese pronunciamiento.",
+        "explicacion": "Correcta. El numeral 3.2 exige conceptos previos favorables tanto de la oficina tecnológica como del grupo de protección para instalar software libre."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "La solicitud tiene uno de los dos conceptos exigidos para software libre. El numeral 3.2 requiere además el concepto previo favorable del Grupo de Protección de Datos y Activos de Información. La objeción es fundada; ni la compatibilidad comprobada ni el permiso del jefe completan ese requisito.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/memorando_procuraduria_0004a_2026.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-188",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Sistema de Gestión de Calidad de la PGN",
+    "subtema": "Designación y condiciones de trabajo del gestor",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 329 de 2021 de la PGN",
+    "articulos": [
+      "art. 7 y parágrafo 1"
+    ],
+    "texto_fuente": "Los Gestores de Procesos serán los servidores públicos designados por los líderes de estos, los cuales cumplirán las siguientes funciones: [...] Quien sea asignado como gestor de calidad para la gestión de las actividades descritas en el presente artículo, dispondrá del tiempo y apoyo de su jefe directo para el desarrollo de dichas funciones y se incluirán las acciones en el plan de acuerdos suscrito para la evaluación de desempeño.",
+    "pregunta": "El líder de un proceso del SGC designó a una técnica como gestora. Su jefe directo reservó tiempo para esas tareas, pero el proyecto de acuerdo de desempeño las dejó por fuera. Un servidor objeta que, al provenir la designación del líder del proceso, ese líder debe sustituir al jefe directo en la asignación de tiempo y que las acciones no pertenecen al acuerdo de desempeño. ¿Qué ajuste debe recomendar la auxiliar que revisa los documentos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Trasladar al líder del proceso la asignación de tiempo y mantener las actividades en un registro del SGC separado del acuerdo de desempeño.",
+        "explicacion": "Incorrecta. Acoge los dos extremos erróneos: el apoyo corresponde al jefe directo y las acciones deben incluirse en el plan de acuerdos."
+      },
+      {
+        "id": "B",
+        "texto": "Conservar el tiempo dispuesto por el jefe directo e incorporar las acciones de la gestora al plan de acuerdos para la evaluación de desempeño.",
+        "explicacion": "Correcta. La designación por el líder no cambia el apoyo del jefe directo ni excluye las acciones del plan de acuerdos, según el art. 7 parágrafo 1."
+      },
+      {
+        "id": "C",
+        "texto": "Conservar el tiempo dispuesto por el jefe directo y mantener las acciones en el registro del SGC sin agregarlas al acuerdo de desempeño.",
+        "explicacion": "Incorrecta. La primera medida respeta la norma; la segunda omite la incorporación de las acciones al plan de acuerdos exigida por el parágrafo."
+      },
+      {
+        "id": "D",
+        "texto": "Trasladar al líder del proceso la asignación de tiempo e incorporar las acciones de la gestora al plan de acuerdos para la evaluación de desempeño.",
+        "explicacion": "Incorrecta. Incluye correctamente las acciones, pero desplaza al jefe directo del apoyo y tiempo que le corresponden."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "La designación provino del líder del proceso y el jefe directo ya asignó tiempo. El art. 7 permite la primera actuación y su parágrafo 1 exige el apoyo de la jefatura directa y la inclusión de las acciones en el plan de acuerdos. Se conserva la asignación de tiempo y se corrige el acuerdo; la objeción no prospera.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0329_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-189",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Seguimiento estratégico de la PGN",
+    "subtema": "Destinatarios de reportes de judiciales y coordinadores administrativos",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Resolución 295 de 2021 de la PGN",
+    "articulos": [
+      "art. 3 literal C nums. 3 y 4"
+    ],
+    "texto_fuente": "Los procuradores judiciales deben reportar al procurador delegado que los coordina la ejecución de actividades en las iniciativas estratégicas de las que hagan parte, para efectos de registrar la información en Estrategos. [...] Los coordinadores administrativos deben reportar al administrador de Estrategos de la Procuraduría Regional respectiva la ejecución de actividades en las iniciativas estratégicas de las que hagan parte.",
+    "pregunta": "Una auxiliar organiza dos envíos sobre ejecución de actividades de iniciativas estratégicas: uno lo suscribe una procuradora judicial y el otro, el coordinador administrativo de la misma sede territorial. Ambos desarrollaron actividades del PEI, pero deben seguir sus rutas de reporte para el registro en Estrategos. ¿A quién dirige cada envío?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El de la procuradora judicial, al administrador de Estrategos de la regional; el del coordinador administrativo, al delegado que coordina a la judicial.",
+        "explicacion": "Incorrecta. Invierte las rutas específicas del literal C: judicial al delegado coordinador y coordinador administrativo al administrador regional."
+      },
+      {
+        "id": "B",
+        "texto": "El de la procuradora judicial, al delegado que la coordina; el del coordinador administrativo, al mismo delegado por compartir la sede territorial.",
+        "explicacion": "Incorrecta. La ubicación común no desplaza el reporte del coordinador administrativo al administrador de Estrategos de su regional."
+      },
+      {
+        "id": "C",
+        "texto": "El de la procuradora judicial, al delegado que la coordina; el del coordinador administrativo, al administrador de Estrategos de la regional respectiva.",
+        "explicacion": "Correcta. Aplica las rutas diferenciadas de los numerales 3 y 4 del literal C del art. 3 para efectos del seguimiento estratégico."
+      },
+      {
+        "id": "D",
+        "texto": "El de la procuradora judicial, al administrador de Estrategos de la regional; el del coordinador administrativo, también a ese administrador regional.",
+        "explicacion": "Incorrecta. El segundo destinatario es correcto, pero la procuradora judicial reporta al delegado que la coordina, no al administrador regional."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Los dos reportes corresponden a iniciativas estratégicas y sus autores tienen funciones distintas. Los nums. 3 y 4 del literal C del art. 3 ordenan que la judicial reporte al delegado coordinador y el coordinador administrativo al administrador regional de Estrategos. La sede compartida no unifica esas rutas.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0295_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-190",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Seguimiento estratégico de la PGN",
+    "subtema": "Plazos distintos de solicitud y registro trimestral",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 295 de 2021 de la PGN; Ley 4 de 1913; Ley 51 de 1983",
+    "articulos": [
+      "arts. 3 literal B num. 4, literal C num. 1 y 9 (Resolución 295)",
+      "art. 62 (Ley 4 de 1913)",
+      "art. 1 (Ley 51 de 1983)"
+    ],
+    "texto_fuente": "B. DE LOS ADMINISTRADORES DE STRATEGOS EN LAS DEPENDENCIAS [...] Solicitar a los funcionarios de la dependencia la información de indicadores del PEI y avances de las iniciativas estratégicas de la dependencia en los tres días posteriores a la finalización del trimestre, para su cargue en el Sistema de Información Estrategos. [...] C. DE LOS SERVIDORES DE LA ENTIDAD CON EL SISTEMA DE INFORMACIÓN STRATEGOS 1. Contar con los soportes documentales de la información suministrada al Administrador del Sistema de Información Estrategos de la dependencia, los cuales podrán ser monitoreados por la Oficina de Planeación y verificados en cualquier momento por la Oficina de Control Interno. [...] El registro de los datos del componente estratégico se debe realizar en los diez (10) primeros días calendario siguientes a la terminación de cada trimestre. [...] En los plazos de días que se señalen en las leyes y actos oficiales, se entienden suprimidos los feriados y de vacantes, a menos de expresarse lo contrario. Los de meses y años se computan según el calendario; pero si el último día fuere feriado o de vacante, se extenderá el plazo hasta el primer día hábil. [...] Todos los trabajadores, tanto del sector público como del sector privado, tienen derecho al descanso remunerado en los siguientes días de fiesta de carácter civil o religioso: primero de enero, seis de enero, diecinueve de marzo, primero de mayo, veintinueve de junio, veinte de julio, siete de agosto, quince de agosto, doce de octubre, primero de noviembre, once de noviembre, ocho de diciembre y veinticinco de diciembre, además de los días Jueves y Viernes Santos, Ascensión del Señor, Corpus Christi y Sagrado Corazón de Jesús.",
+    "pregunta": "El primer trimestre de 2026 terminó el martes 31 de marzo. La técnica que administra Estrategos debe fijar la fecha máxima para solicitar los indicadores y avances a los servidores y la fecha máxima para registrar los datos del componente estratégico. La dependencia trabaja de lunes a viernes, sin cierres adicionales; el 2 y el 3 de abril son Jueves y Viernes Santos. Los servidores conservarán los soportes de lo reportado. ¿Qué par de fechas debe registrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solicitud de información: 3 de abril de 2026; registro de datos: 10 de abril de 2026.",
+        "explicacion": "Incorrecta. El plazo de solicitud no está calificado como calendario: se excluyen los festivos y días no laborables. El plazo de registro sí termina el 10 de abril."
+      },
+      {
+        "id": "B",
+        "texto": "Solicitud de información: 7 de abril de 2026; registro de datos: 10 de abril de 2026.",
+        "explicacion": "Correcta. Los tres días computables son 1, 6 y 7 de abril; los diez días calendario para registrar transcurren del 1 al 10 de abril."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitud de información: 3 de abril de 2026; registro de datos: 16 de abril de 2026.",
+        "explicacion": "Incorrecta. Cuenta la solicitud como calendario y el registro como hábil. La norma exige justamente el tratamiento contrario."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitud de información: 7 de abril de 2026; registro de datos: 16 de abril de 2026.",
+        "explicacion": "Incorrecta. Calcula bien la solicitud, pero transforma los diez días expresamente calendario del art. 9 en diez hábiles."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "El art. 3 B.4 fija tres días sin calificarlos como calendario; con el art. 62 se cuentan el 1, 6 y 7 de abril. El art. 9 sí dispone diez días calendario, que terminan el viernes 10 de abril. El registro no elimina el deber de los servidores de conservar soportes establecido en el art. 3 C.1.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0295_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-191",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Sistema de Gestión de Calidad de la PGN",
+    "subtema": "Aprobación de cambios de procesos y reporte de eficacia",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 329 de 2021 de la PGN",
+    "articulos": [
+      "arts. 4 num. 4 y 5 encabezado y num. 2"
+    ],
+    "texto_fuente": "La máxima instancia del Sistema de Gestión de la Calidad (SGC) será el Comité Institucional de Gestión y Desempeño, el cual tendrá a su cargo las siguientes funciones, específicamente en relación con la dirección del Sistema de Gestión de Calidad: [...] Aprobar las modificaciones, actualizaciones o eliminaciones de los procesos del Sistema de Gestión de Calidad. [...] El representante de la Alta Dirección del Sistema de Gestión de Calidad ante el Comité Institucional de Gestión y Desempeño, será el Jefe de la Oficina de Planeación de la Procuraduría General de la Nación, quien tendrá a su cargo las siguientes funciones: [...] Informar al Comité Institucional de Gestión y Desempeño sobre el desempeño y la eficacia del SGC.",
+    "pregunta": "Una asesora prepara la sesión institucional del SGC. Hay dos asuntos: decidir una propuesta de eliminación de un proceso del sistema y presentar el balance general de desempeño y eficacia. La propuesta no se limita a editar un formato. Los líderes ya aportaron sus análisis. ¿Qué distribución debe consignarse en el orden del día?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Someter la eliminación al Comité Institucional de Gestión y Desempeño y encargar al jefe de Planeación el informe de desempeño y eficacia ante ese comité.",
+        "explicacion": "Correcta. La aprobación corresponde al CIGD por el art. 4.4 y el informe al jefe de Planeación, representante de la alta dirección, por el art. 5.2."
+      },
+      {
+        "id": "B",
+        "texto": "Someter la eliminación al jefe de Planeación y encargar a los líderes del proceso el informe institucional de desempeño y eficacia ante el comité.",
+        "explicacion": "Incorrecta. Confunde el acompañamiento de Planeación y de los líderes con la aprobación del CIGD y con el reporte general a cargo del jefe de Planeación."
+      },
+      {
+        "id": "C",
+        "texto": "Someter la eliminación al Comité Institucional de Gestión y Desempeño y encargar a Control Interno el informe de desempeño y eficacia del SGC ante ese comité.",
+        "explicacion": "Incorrecta. Ubica bien la aprobación, pero el art. 5 asigna el reporte institucional del SGC al jefe de Planeación, no a Control Interno."
+      },
+      {
+        "id": "D",
+        "texto": "Someter la eliminación a los líderes del proceso y encargar al jefe de Planeación comunicar al comité su decisión y el informe de desempeño del sistema.",
+        "explicacion": "Incorrecta. El informe sí corresponde a Planeación, pero la eliminación del proceso requiere aprobación del CIGD; no basta comunicarle la decisión de los líderes."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "La propuesta elimina un proceso del SGC, no solo modifica su información documentada. El art. 4.4 atribuye su aprobación al CIGD. El art. 5 identifica al jefe de Planeación como representante de la alta dirección y le encarga informar a ese comité sobre desempeño y eficacia.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0329_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-192",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Sistema de Gestión de Calidad de la PGN",
+    "subtema": "Aprobación de documentos de procesos con varios líderes",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 329 de 2021 de la PGN, modificada por la Resolución 94 de 2024",
+    "articulos": [
+      "art. 6 parágrafos 1 y 2",
+      "art. 9 parágrafo 1 (modificado por art. 2 de la Resolución 94 de 2024)"
+    ],
+    "texto_fuente": "Para los casos en que un proceso cuente con varios líderes, posterior al análisis de la modificación o creación de los documentos, se determinará si es necesario que su aprobación se realice en forma consensuada o particular. [...] La asesoría y acompañamiento para la creación, modificación, eliminación y aprobación de la información documentada que forma parte del SGC, estará a cargo de la Oficina de Planeación y de los líderes de los procesos, la cual se realizará a través de los criterios definidos para el control de información documentada establecida en la Entidad.",
+    "pregunta": "Un proceso del SGC tiene varios líderes. Uno propone cambiar un documento que utilizan dos dependencias y solicita aprobación particular; otro objeta que, por el solo hecho de existir varios líderes, toda modificación exige aprobación de todos. Aún no se ha analizado el alcance del cambio. ¿Qué ruta debe recomendar la profesional que apoya el trámite?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Obtener la aprobación de todos los líderes y después analizar con Planeación el alcance del documento, por tratarse de un proceso con liderazgo compartido.",
+        "explicacion": "Incorrecta. La pluralidad de líderes no impone por sí sola aprobación consensuada; el art. 6 exige analizar antes el cambio para definir la modalidad."
+      },
+      {
+        "id": "B",
+        "texto": "Obtener la aprobación particular del proponente y después remitir a Planeación el cambio, porque el uso en dos dependencias delimita quién debe aprobarlo.",
+        "explicacion": "Incorrecta. El uso descrito no determina automáticamente la aprobación particular; primero debe analizarse el cambio con el acompañamiento previsto."
+      },
+      {
+        "id": "C",
+        "texto": "Analizar el cambio documental con el acompañamiento de Planeación y de los líderes; determinar a partir de ese análisis si la aprobación será consensuada o particular.",
+        "explicacion": "Correcta. Integra el análisis previo que exige el art. 6 parágrafo 1 con el acompañamiento de Planeación y los líderes establecido en el art. 9 parágrafo 1 vigente."
+      },
+      {
+        "id": "D",
+        "texto": "Analizar el cambio con el acompañamiento de Planeación y de los líderes; someter luego todo documento compartido a aprobación consensuada de los líderes del proceso.",
+        "explicacion": "Incorrecta. Conserva el análisis, pero predetermina la aprobación consensuada; la norma permite que el análisis lleve a aprobación consensuada o particular."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Todavía falta analizar el cambio y el proceso tiene varios líderes. El art. 6 parágrafo 1 hace depender de ese análisis la aprobación consensuada o particular; el art. 9 vigente encarga el acompañamiento a Planeación y a los líderes. La objeción no permite convertir la pluralidad de líderes en unanimidad automática.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0329_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-193",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Sistema de Gestión de Calidad de la PGN",
+    "subtema": "Responsable de las auditorías internas de calidad",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 329 de 2021 de la PGN",
+    "articulos": [
+      "art. 10"
+    ],
+    "texto_fuente": "Las auditorías internas de calidad hacen parte del Proceso de Mejoramiento Continuo y se encuentran orientadas a proporcionar información acerca del SGC, para definir si los requisitos de la organización están acordes a la norma internacional. Es responsabilidad de la Oficina de Planeación la planificación y ejecución de las mismas, así como establecer registros e informar sus resultados.",
+    "pregunta": "Un equipo prepara una auditoría interna de calidad para contrastar el SGC de la Procuraduría con la norma internacional aplicable. El proyecto la ubica en el proceso de Evaluación Institucional y entrega a Control Interno la planificación y ejecución, mientras Planeación archivaría los resultados. No se trata de una evaluación independiente de control interno. ¿Qué ficha de responsabilidad debe emplearse para esta auditoría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proceso de Mejoramiento Continuo; Control Interno planifica y ejecuta la auditoría, establece sus registros e informa los resultados obtenidos.",
+        "explicacion": "Incorrecta. Identifica el proceso, pero el art. 10 asigna a Planeación la planificación, ejecución, registros e informe de las auditorías internas de calidad."
+      },
+      {
+        "id": "B",
+        "texto": "Proceso de Evaluación Institucional; Planeación planifica y ejecuta la auditoría, establece sus registros e informa los resultados obtenidos.",
+        "explicacion": "Incorrecta. Identifica al responsable, pero el art. 10 ubica estas auditorías de calidad en el proceso de Mejoramiento Continuo."
+      },
+      {
+        "id": "C",
+        "texto": "Proceso de Evaluación Institucional; Control Interno planifica y ejecuta la auditoría, establece sus registros e informa los resultados obtenidos.",
+        "explicacion": "Incorrecta. Mantiene la propuesta original, que confunde la auditoría interna de calidad con la evaluación institucional de control interno."
+      },
+      {
+        "id": "D",
+        "texto": "Proceso de Mejoramiento Continuo; Planeación planifica y ejecuta la auditoría de calidad, establece sus registros e informa los resultados obtenidos.",
+        "explicacion": "Correcta. El art. 10 reúne esas tareas en Planeación dentro de Mejoramiento Continuo para las auditorías internas de calidad."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "El objeto declarado es una auditoría interna de calidad del SGC. El art. 10 la ubica en Mejoramiento Continuo y encarga a Planeación planificación, ejecución, registros e información de resultados. La atribución general de evaluación independiente de Control Interno no cambia ese encargo específico.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0329_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-194",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Seguimiento estratégico de la PGN",
+    "subtema": "Autorización y cierre anual de solicitudes de ajuste",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 295 de 2021 de la PGN",
+    "articulos": [
+      "art. 4"
+    ],
+    "texto_fuente": "Las modificaciones de las iniciativas estratégicas, en cuanto a programación y ajuste de actividades, podrán realizarse hasta el 30 de marzo de la correspondiente vigencia. A partir de esa fecha, cualquier ajuste debe ser aprobado por el Comité Institucional de Gestión y Desempeño (CIGD). Sin prejuicio de lo anterior, las modificaciones de las iniciativas solo se podrán solicitar hasta el 30 de septiembre de la correspondiente vigencia.",
+    "pregunta": "Una asesora recibe dos solicitudes de ajuste de actividades de iniciativas estratégicas de 2026: la primera se presentó el 30 de septiembre y la segunda el 1 de octubre. Ninguna cambia el presupuesto y ambas tienen aval del jefe de la dependencia; no hay una disposición excepcional que amplíe el calendario. ¿Qué tratamiento corresponde según la Resolución 295 de 2021?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tramitar la primera con el aval del jefe y someter la segunda al CIGD, pues después del cierre anual ese comité asume las solicitudes de modificación.",
+        "explicacion": "Incorrecta. El aval del jefe no reemplaza al CIGD en septiembre y el comité no abre una nueva ventana de solicitudes después del 30 de septiembre."
+      },
+      {
+        "id": "B",
+        "texto": "Tramitar ambas ante el CIGD, pues su aprobación puede suplir la presentación posterior al 30 de septiembre cuando no se modifica el presupuesto.",
+        "explicacion": "Incorrecta. La norma fija un límite de solicitud independiente de la aprobación y no establece una excepción por ausencia de cambio presupuestal."
+      },
+      {
+        "id": "C",
+        "texto": "Tramitar la primera para aprobación del CIGD y devolver la segunda por presentarse después de la fecha límite de solicitud de modificaciones.",
+        "explicacion": "Correcta. El 30 de septiembre está incluido en el límite; el ajuste requiere aprobación del CIGD. La solicitud del 1 de octubre está fuera del calendario."
+      },
+      {
+        "id": "D",
+        "texto": "Devolver ambas por presentarse desde el 30 de septiembre, porque esa fecha marca el cierre previo al día hábil en que el CIGD podría aprobarlas.",
+        "explicacion": "Incorrecta. Confunde la fecha máxima de solicitud con una fecha máxima previa de aprobación: la norma permite solicitar hasta el 30 de septiembre."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Las solicitudes se presentaron a ambos lados del cierre del 30 de septiembre. El art. 4 permite solicitar hasta esa fecha y exige aprobación del CIGD para los ajustes de ese período. La primera puede tramitarse ante el comité; la segunda supera el límite, aunque tenga aval del jefe y no afecte presupuesto.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0295_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-195",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Seguimiento estratégico de la PGN",
+    "subtema": "Reunión trimestral e informe cualitativo en Estrategos",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 295 de 2021 de la PGN",
+    "articulos": [
+      "arts. 3 literal B num. 2, 6, 7 y 9"
+    ],
+    "texto_fuente": "B. DE LOS ADMINISTRADORES DE STRATEGOS EN LAS DEPENDENCIAS [...] Consolidar y cargar, en las fechas señaladas, las actas de compromiso y los informes cualitativos en el Sistema de Información Estrategos. [...] Los jefes de las dependencias, en coordinación con el administrador del Sistema de Información Estrategos, deben convocar una reunión en la semana posterior a la finalización de cada trimestre, con el objeto de analizar el comportamiento de los indicadores del PEI, así como del grado de avance de las iniciativas estratégicas en ejecución. Los resultados de la reunión deben quedar registrados en forma de acta en el aplicativo Estrategos, conforme al instructivo expedido por la Oficina de Planeación. [...] Los jefes de dependencia elaborarán el informe cualitativo correspondiente al trimestre finalizado en la Reunión de Análisis Estratégico - RAE (2) y lo registrarán en el Sistema de Información Estrategos. [...] El registro de los datos del componente estratégico se debe realizar en los diez (10) primeros días calendario siguientes a la terminación de cada trimestre.",
+    "pregunta": "Una jefa, coordinada con el administrador de Estrategos, convoca la reunión de análisis en la semana posterior al cierre trimestral. El proyecto prevé discutir allí los resultados, dejar acta y elaborar el informe cualitativo de la jefa; el administrador cargará ambos documentos dentro del plazo de registro. Un asesor objeta el cargue por el administrador: sostiene que únicamente la jefa puede efectuarlo en el aplicativo. ¿Qué debe decidir la profesional que revisa el proyecto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acoger la objeción y reservar a la jefa el cargue de ambos documentos; mantener la reunión y la elaboración del informe conforme al proyecto.",
+        "explicacion": "Incorrecta. El art. 3 B.2 asigna expresamente al administrador consolidar y cargar actas e informes; no impone operación exclusiva de la jefa."
+      },
+      {
+        "id": "B",
+        "texto": "Desestimar la objeción y conservar el proyecto; la responsabilidad de la jefa sobre el informe es compatible con el cargue que realiza el administrador.",
+        "explicacion": "Correcta. Los arts. 6 y 7 fijan reunión, acta e informe bajo responsabilidad de la jefatura, y el art. 3 B.2 atribuye el cargue al administrador."
+      },
+      {
+        "id": "C",
+        "texto": "Acoger la objeción y sustituir el acta por el informe cargado por la jefa; el análisis cualitativo documenta por sí mismo el resultado de la reunión.",
+        "explicacion": "Incorrecta. Además de desconocer el cargue del administrador, elimina el acta que el art. 6 exige registrar junto al informe del art. 7."
+      },
+      {
+        "id": "D",
+        "texto": "Desestimar la objeción y trasladar al administrador la elaboración del informe; su función de cargue lo convierte en responsable de valorar la gestión.",
+        "explicacion": "Incorrecta. El administrador puede cargarlo, pero el art. 7 mantiene la elaboración del informe cualitativo en el jefe de dependencia."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "El proyecto conserva reunión oportuna, acta e informe de la jefatura y asigna el cargue al administrador. Los arts. 6 y 7 fijan las primeras obligaciones y el art. 3 B.2 autoriza expresamente la última. Por ello, la objeción es infundada: operar el aplicativo no equivale a asumir la elaboración del informe.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0295_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-196",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Peticiones ante la PGN",
+    "subtema": "Conflicto interno de competencia y continuidad del trámite",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 330 de 2021 de la PGN; Ley 51 de 1983",
+    "articulos": [
+      "art. 42 y parágrafos 1 y 2 (Resolución 330)",
+      "art. 1 (Ley 51 de 1983)"
+    ],
+    "texto_fuente": "Cuando dicho conflicto positivo o negativo se presente, cualquiera de las dependencias inmersas en este, deberá remitir la petición a la Oficina Jurídica al día siguiente a la presentación del conflicto, para que ésta conozca y resuelva la competencia [...] Para resolver el conflicto de competencia, la Oficina Jurídica cuenta con un plazo de tres (3) días hábiles, una vez resuelto el conflicto se deberá informar a través medios digitales o físicos con que cuente la entidad y que resulte más expedito a las dependencias en disputa. [...] El plazo para resolver el conflicto de competencia podrá prorrogarse hasta por el doble, siempre que ello no implique la vulneración de los derechos fundamentales del requirente, así como tampoco el termino de respuesta de la petición. [...] El conflicto de competencias no suspende el término para dar respuesta a la petición, razón por la que mientras se define el funcionario competente, las dependencias han tenido conocimiento de la petición, deberán adelantar las gestiones necesarias para atender la petición. [...] Todos los trabajadores, tanto del sector público como del sector privado, tienen derecho al descanso remunerado en los siguientes días de fiesta de carácter civil o religioso: primero de enero, seis de enero, diecinueve de marzo, primero de mayo, veintinueve de junio, veinte de julio, siete de agosto, quince de agosto, doce de octubre, primero de noviembre, once de noviembre, ocho de diciembre y veinticinco de diciembre, además de los días Jueves y Viernes Santos, Ascensión del Señor, Corpus Christi y Sagrado Corazón de Jesús.",
+    "pregunta": "El miércoles 7 de octubre de 2026 dos dependencias de la PGN plantearon un conflicto negativo de competencia que no pudieron resolver. El jueves 8 una de ellas remitió la petición a la Oficina Jurídica, que la recibió ese día. No se ha prorrogado el plazo para decidir el conflicto. La entidad trabaja de lunes a viernes y el lunes 12 es festivo nacional. ¿Qué debe registrar la profesional encargada del seguimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La remisión se hizo a tiempo; el plazo inicial de Jurídica vence el 14 de octubre y las dependencias continúan las gestiones sin detener el término de respuesta.",
+        "explicacion": "Correcta. Se remitió al día siguiente. Los tres días hábiles siguientes son 9, 13 y 14 de octubre, y el parágrafo 2 excluye la suspensión del término de la petición."
+      },
+      {
+        "id": "B",
+        "texto": "La remisión se hizo a tiempo; el plazo inicial de Jurídica vence el 13 de octubre y las dependencias continúan las gestiones sin detener el término de respuesta.",
+        "explicacion": "Incorrecta. Conserva la continuidad, pero cuenta como hábil el festivo del 12 o incluye indebidamente el día de recepción: el tercer día es el 14."
+      },
+      {
+        "id": "C",
+        "texto": "La remisión se hizo a tiempo; Jurídica dispone inicialmente hasta el 19 de octubre y las dependencias continúan las gestiones sin detener el término de respuesta.",
+        "explicacion": "Incorrecta. Aplica de entrada seis días hábiles. El plazo inicial es de tres; el doble exige prórroga bajo condiciones y el caso señala que no se ha otorgado."
+      },
+      {
+        "id": "D",
+        "texto": "La remisión se hizo a tiempo; el plazo inicial de Jurídica vence el 14 de octubre y el término de respuesta vuelve a correr al comunicarse la decisión del conflicto.",
+        "explicacion": "Incorrecta. Calcula bien el plazo, pero suspende el término de respuesta, expresamente preservado por el parágrafo 2."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "La remisión del 8 cumplió el día siguiente al conflicto. Sin prórroga, el art. 42 concede tres días hábiles: 9, 13 y 14 de octubre, excluido el festivo del 12. Su parágrafo 2 mantiene el término de respuesta y exige que las dependencias sigan gestionando la petición mientras se decide la competencia.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0330_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-197",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Peticiones ante la PGN",
+    "subtema": "Designación cuando interviene el Despacho del Procurador y cómputo institucional",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 330 de 2021 de la PGN; Memorando 2 de 22 de julio de 2026 (índice 2C)",
+    "articulos": [
+      "art. 40 parágrafo (Resolución 330)",
+      "sección Lineamientos generales del trámite de peticiones, inciso final (Memorando 2C)"
+    ],
+    "texto_fuente": "Cuando la petición contenga requerimientos de competencia del Despacho de la Procuradora General de la Nación, la designación del competente para tramitar su respectiva respuesta y consolidación, obedecerá al Secretario Privado del Despacho. [...] Finalmente, se recuerda que el término mandatario para emitir y notificar la respuesta al peticionario se cuenta desde la fecha de radicación de la solicitud en esta entidad y no desde la recepción por parte de la respectiva oficina o dependencia.",
+    "pregunta": "Una petición se radicó en la PGN el 3 de agosto y llegó a la dependencia que hará la consolidación el 6 de agosto de 2026. Contiene requerimientos de competencia del Despacho del Procurador General y de otras dos dependencias. El equipo debe identificar quién designa al competente para tramitar y consolidar la respuesta y qué fecha conserva como referencia inicial del término institucional. ¿Qué registro corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Designación por la Oficina Jurídica; referencia inicial del término: radicación institucional del 3 de agosto.",
+        "explicacion": "Incorrecta. Conserva la referencia temporal, pero omite la regla especial del parágrafo del art. 40 para requerimientos de competencia del Despacho."
+      },
+      {
+        "id": "B",
+        "texto": "Designación por el Secretario Privado del Despacho; referencia inicial del término: radicación institucional del 3 de agosto.",
+        "explicacion": "Correcta. El parágrafo del art. 40 determina quién designa; el memorando mantiene como referencia la radicación en la entidad, no la recepción interna posterior."
+      },
+      {
+        "id": "C",
+        "texto": "Designación por la Oficina Jurídica; referencia inicial del término: recepción en la dependencia del 6 de agosto.",
+        "explicacion": "Incorrecta. Desconoce tanto la designación especial por el Secretario Privado como la continuidad del término desde la radicación institucional."
+      },
+      {
+        "id": "D",
+        "texto": "Designación por el Secretario Privado del Despacho; referencia inicial del término: recepción en la dependencia del 6 de agosto.",
+        "explicacion": "Incorrecta. Identifica a quien designa, pero reinicia el término al llegar a la dependencia, en contra del recordatorio expreso del memorando."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "La petición incluye asuntos del Despacho del Procurador, supuesto especial del art. 40 parágrafo: la designación corresponde al Secretario Privado. Su circulación interna no cambia la referencia del término, que el memorando fija en la radicación institucional del 3 de agosto.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0330_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-198",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Defensa institucional de la PGN en tutela",
+    "subtema": "Contenido, validación y remisión del informe técnico",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Memorando 2 de 22 de julio de 2026 de la PGN (índice 2C)",
+    "articulos": [
+      "num. 2.i, características y apartados b y c"
+    ],
+    "texto_fuente": "- Estar redactado de forma clara, objetiva y estructurada. - Guardar un orden cronológico de las actuaciones adelantadas. - Estar firmado por el funcionario que lo emite indicando nombre, cargo y dependencia. [...] - Remitirse en formato PDF dentro del plazo fijado en el reparto. [...] La Oficina Jurídica es la dependencia encargada de desarrollar el argumento y la estrategia jurídica; el área requerida debe aportar la información técnica que permita al apoderado elaborar la contestación. [...] El informe debe estar validado, revisado y aprobado por el jefe de la dependencia o quien haga sus veces, para lo cual deberá firmarlo e indicar nombre y cargo; o, de ser suscrito por otro funcionario, deberá contener los mismos elementos: firma, nombre, cargo y dependencia.",
+    "pregunta": "Jurídica solicitó a una dependencia un informe para una tutela contra la PGN, con vencimiento a las 2:00 p. m. La profesional encargada terminó a las 11:00 un PDF en plantilla institucional, con hechos verificables en orden cronológico, competencia, actuaciones y estado actual. Lo firmó con nombre, cargo y dependencia, y el jefe dejó constancia de haberlo revisado, validado y aprobado. Un asesor objeta que solo el jefe puede suscribirlo y que debe anexarse la estrategia jurídica antes de remitirlo. ¿Qué tratamiento corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acoger la objeción de firma y obtener la suscripción exclusiva del jefe; remitir el PDF dentro del plazo sin exigir que el área defina la estrategia jurídica.",
+        "explicacion": "Incorrecta. La estrategia corresponde a Jurídica, pero el memorando permite la suscripción por otro funcionario con sus datos y la validación de la jefatura."
+      },
+      {
+        "id": "B",
+        "texto": "Desestimar la objeción de firma y conservar la suscripción de la profesional; incorporar antes de la remisión la estrategia jurídica elaborada por el área.",
+        "explicacion": "Incorrecta. La firma es admisible, pero desarrollar la estrategia jurídica corresponde a la Oficina Jurídica, no es requisito que deba suplir el área técnica."
+      },
+      {
+        "id": "C",
+        "texto": "Acoger la objeción de firma y obtener la suscripción exclusiva del jefe; incorporar la estrategia jurídica del área antes de remitir el PDF dentro del plazo.",
+        "explicacion": "Incorrecta. Exige exclusividad de firma y traslada la estrategia jurídica al área, dos exigencias que no corresponden al numeral 2.i."
+      },
+      {
+        "id": "D",
+        "texto": "Desestimar las objeciones y remitir el PDF dentro del plazo; la firma y validación descritas son admisibles y la estrategia jurídica corresponde a Jurídica.",
+        "explicacion": "Correcta. El informe puede suscribirlo otro funcionario debidamente identificado con validación del jefe; Jurídica desarrolla la estrategia y el PDF debe enviarse en el plazo del reparto."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "El informe fue suscrito por la profesional y validado por el jefe, y contiene la información técnica exigida. El numeral 2.i permite esa firma y reserva a Jurídica la estrategia de defensa. Las objeciones no obligan a rehacerlo ni a retrasar su remisión en PDF dentro del plazo del reparto.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/memorando_procuraduria_0002c_2026.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-199",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Defensa institucional de la PGN en tutela",
+    "subtema": "Constancias de comunicación y advertencia de reserva",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Memorando 2 de 22 de julio de 2026 de la PGN (índice 2C)",
+    "articulos": [
+      "num. 2.ii y notas de pie 2 y 3"
+    ],
+    "texto_fuente": "- Cuando se trate de la remisión de comunicaciones, las dependencias deberán allegar las respectivas constancias de envío[2] y entrega[3] del mensaje respectivo. [...] Tratándose de documentos sometidos a reserva, las dependencias deberán verificar que los documentos o insumos remitidos puedan ser compartidos con los despachos judiciales, teniendo en cuenta que harán parte de las actuaciones procesales. [...] En aquellos casos en que la información o los documentos se encuentren sometidos a reserva legal, confidencialidad o cualquier otra restricción, dicha circunstancia deberá advertirse de manera expresa al momento de su remisión, indicando el fundamento de la reserva. [...] Referida a que el correo salió de la bandeja del remitente o entrega a la empresa de mensajería postal. [...] Referida a que el correo fue recibido por el servidor del destinatario.",
+    "pregunta": "Una dependencia prepara insumos para la defensa de la PGN en tutela. Tiene constancia de salida de un correo y un registro que acredita su recepción por el servidor del destinatario, pero no confirmación de lectura personal. También enviará un anexo reservado cuya posibilidad de compartir con el despacho judicial ya verificó; el oficio no menciona la reserva. Un asesor propone exigir lectura personal para acreditar entrega y añadir al oficio la restricción con su fundamento. ¿Qué valoración corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar las constancias de envío y entrega disponibles; incorporar al oficio la advertencia expresa de reserva con su fundamento antes de enviar el anexo al despacho.",
+        "explicacion": "Correcta. La nota 3 refiere entrega a recepción por el servidor del destinatario, no a lectura personal; el numeral 2.ii exige advertir expresamente la reserva y su fundamento."
+      },
+      {
+        "id": "B",
+        "texto": "Exigir la constancia de lectura personal para acreditar entrega; incorporar al oficio la advertencia expresa de reserva con su fundamento antes de remitir el anexo.",
+        "explicacion": "Incorrecta. Acoge la advertencia de reserva, pero añade una confirmación personal que no integra la definición de entrega de la nota 3."
+      },
+      {
+        "id": "C",
+        "texto": "Aceptar las constancias de envío y entrega disponibles; consignar la reserva solo en el registro interno, pues ya se verificó que el despacho puede recibir el anexo.",
+        "explicacion": "Incorrecta. La verificación de posibilidad de compartir no sustituye la advertencia expresa de la reserva y su fundamento al remitir."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir la constancia de lectura personal para acreditar entrega; consignar la reserva solo en el registro interno, por haberse verificado la posibilidad de compartirla.",
+        "explicacion": "Incorrecta. Exige una prueba de lectura no prevista y omite informar al remitir la reserva y su fundamento."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "El registro acredita recepción por el servidor del destinatario, suficiente como constancia de entrega según la nota 3. En cambio, verificar que puede compartirse el anexo no dispensa advertir su reserva y fundamento al remitirlo. La propuesta del asesor es acertada en este segundo punto, pero no en exigir lectura personal.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/memorando_procuraduria_0002c_2026.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-200",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Peticiones ante la PGN",
+    "subtema": "Alcance y actualización del anexo de competencias",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Resolución 330 de 2021 de la PGN",
+    "articulos": [
+      "art. 41"
+    ],
+    "texto_fuente": "La competencia para dar respuesta a las PQRSDF, se determinará de acuerdo con lo previsto por en el Decreto Ley 262 de 2000 y las normas que las reglamenten, modifiquen, adicionen o suplementen. El ANEXO 1 - COMPETENCIAS PQRSDF que hace parte integral de la presente resolución, identificará bajo un CRITERIO ENUNCIATIVO el ámbito de competencia en materia de atención de PQRSDF de las dependencias de la entidad, el cual podrá ser ajustado por la Oficina Jurídica previo visto bueno del Despacho de la Procuradora General de la Nación y cuando sea necesario y deberá mantenerse actualizado en la página web de la entidad, para el conocimiento de funcionarios, contratistas y comunidad en general.",
+    "pregunta": "Una reforma atribuyó una función a una dependencia de la PGN, pero esa situación aún no aparece en el anexo de competencias de PQRSDF de la Resolución 330. La Oficina Jurídica prepara el ajuste. Un asesor objeta un borrador que trata la lista como exhaustiva y propone publicarla antes de obtener el visto bueno del Despacho. ¿Qué secuencia debe recomendarse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aplicar la lista del anexo como delimitación exhaustiva; obtener el visto bueno del Despacho, ajustar por Jurídica y actualizar después la página web.",
+        "explicacion": "Incorrecta. Respeta el orden de autorización, pero desconoce el carácter enunciativo del anexo y la competencia determinada por el Decreto Ley 262 y sus reformas."
+      },
+      {
+        "id": "B",
+        "texto": "Determinar la competencia con la norma vigente; ajustar y publicar por Jurídica, y remitir el texto actualizado al Despacho para su visto bueno posterior.",
+        "explicacion": "Incorrecta. Usa bien la norma vigente, pero transforma el visto bueno previo exigido por el art. 41 en una ratificación posterior."
+      },
+      {
+        "id": "C",
+        "texto": "Determinar la competencia con la norma vigente; obtener el visto bueno previo del Despacho, ajustar el texto del anexo por Jurídica y actualizarlo en la página web.",
+        "explicacion": "Correcta. El art. 41 hace enunciativo el anexo y exige visto bueno previo del Despacho para su ajuste por Jurídica, manteniéndolo actualizado en la web."
+      },
+      {
+        "id": "D",
+        "texto": "Aplicar la lista del anexo como delimitación exhaustiva; ajustar y publicar por Jurídica, y enviar luego la nueva lista al Despacho para su visto bueno.",
+        "explicacion": "Incorrecta. Desconoce tanto el carácter enunciativo del anexo como el carácter previo del visto bueno requerido para ajustarlo."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "La reforma rige aunque el supuesto todavía no figure en el anexo, cuyo criterio es enunciativo. El art. 41 permite a Jurídica ajustarlo con visto bueno previo del Despacho y exige actualización en la web. La objeción es fundada respecto del alcance de la lista y del orden del visto bueno.",
+    "fuente_url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0330_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  }
+]

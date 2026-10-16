@@ -119,6 +119,12 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 
 **La resolución a ciegas debe tener todas las normas del tema:** la ley y también su reglamento. En la TC-909-025 la clave era correcta según la Ley 909, pero el Decreto 1083 añade un requisito de 3 meses. El resolvedor solo tenía la ley y no lo detectó.
 
+**Coincidir en la letra no basta para aprobar.** En el lote 23 dos archivos tuvieron 20/20 coincidencias iniciales, pero la revisión detectó pistas y preguntas triviales. Antes de publicar, revisa también `pista`, `otras_defendibles`, `confianza` y `p_estimado`; los scripts de comparación y publicación no bloquean por todas estas señales. Cada modificación de contenido exige una nueva resolución independiente sin acceso a la clave ni a las respuestas anteriores.
+
+**Combinar reglas no garantiza dificultad ni novedad.** Una suma elemental sigue siendo trivial si el enunciado ya identifica qué partidas incluir. Tampoco basta agregar otra regla a una decisión ya evaluada: comprueba por separado cada componente del caso para evitar repetir dentro del archivo el mismo contraste entre clave y distractor.
+
+**La consigna también puede regalar la clave.** Si el caso presenta dos decisiones y pregunta cómo «corregir ambas», queda señalada la única opción que cambia las dos, aunque los distractores estén equilibrados. Pregunta qué actuación corresponde sin anticipar cuántos componentes están equivocados. Una rejilla simétrica no es por sí misma una pista, pero conviene alternarla con secuencias, valoración de documentos y casos contrastados.
+
 **El tachado del Senado se pierde al pasar a texto:**
 - En las compilaciones del Senado, lo declarado INEXEQUIBLE aparece tachado (etiqueta `<S>`). Al convertir la página a texto plano se ve como texto normal.
 - Antes de citar un artículo del Senado, revisa sus segmentos tachados en el HTML o en la lista extraída.
@@ -129,6 +135,8 @@ Los campos `pregunta`, `opciones[].id/texto`, `respuestaCorrecta`, `explicacionI
 - En el Decreto 1078 de 2015, el gestor muestra el art. 2.2.9.1.3.3 con el texto del 2.2.9.1.3.4. Según el normograma del MinTIC, el Decreto 767 de 2022 dice algo distinto: el Comité Institucional de Gestión y Desempeño orienta la implementación de la Política de Gobierno Digital, y el jefe de TI la lidera.
 - Con la fuente equivocada, tanto el redactor como el resolvedor a ciegas aprobaron un distractor falso (TC-TIC-005, lote 7).
 - Para el sector TIC usa el normograma del MinTIC. En cualquier decreto único, revisa además la fecha de "última actualización" y la lista de vigencias, para saber si hay decretos posteriores que la compilación no incluye.
+
+**Los índices automáticos de artículos son auxiliares.** Una ley puede reproducir artículos de otra norma con el mismo número. En el lote 23, un índice del Código de Infancia había reemplazado su artículo 119 por un artículo del Código Penal citado más adelante. Verifica título, norma y ubicación en el HTML original; no selecciones un fragmento solo por el número encontrado en un índice o buscador.
 
 **Las notas de vigencia cambian la respuesta: léelas, no solo el texto:**
 - **Ley 610 de 2000:** el Decreto Ley 403 de 2020 subió a 10 años la caducidad de la acción fiscal (art. 127), y muchas fuentes secundarias siguen diciendo "10 años". La Corte declaró inexequibles esas modificaciones (Sentencia C-090 de 2022), así que rige el texto original: 5 años.

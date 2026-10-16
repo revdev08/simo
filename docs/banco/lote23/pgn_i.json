@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "TC-PGN-161",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Clasificación de empleos",
+    "subtema": "Interpretación del código y separación entre nivel y grado",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 264 de 2000",
+    "articulos": [
+      "arts. 6 y 7"
+    ],
+    "texto_fuente": "Para el manejo sistematizado del régimen de clasificación, nomenclatura y remuneración, cada empleo se identifica con un código alfanumérico de cinco dígitos. El primer dígito indica el nivel al cual pertenece el empleo; las dos letras indican la denominación del cargo, los dos últimos dígitos o letras corresponden al grado salarial. [...] NIVEL TÉCNICO\nTécnico Investigador\n4TI\n19 [...] Técnico Administrativo\n4TM\n16 [...] NIVEL ADMINISTRATIVO\nSecretario Ejecutivo\n5SJ\n15 [...] Auxiliar Administrativo\n5AM\n10",
+    "pregunta": "Una técnica importa a la base de personal dos empleos: Técnico Administrativo 4TM-16 y Auxiliar Administrativo 5AM-10. La hoja de importación tiene una columna para nivel y otra para interpretar los números finales de cada código. Antes de cargar los registros debe verificar su clasificación conforme al Decreto 264. ¿Qué información corresponde consignar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ambos en nivel administrativo; 16 y 10 identifican sus grados salariales dentro de la clasificación del empleo.",
+        "explicacion": "Incorrecta. El grado se identifica bien, pero la palabra administrativo en la denominación no sitúa al Técnico Administrativo en el nivel administrativo. El primer dígito identifica el nivel."
+      },
+      {
+        "id": "B",
+        "texto": "El primero en nivel técnico y el segundo en administrativo; 16 y 10 identifican las denominaciones de los cargos.",
+        "explicacion": "Incorrecta. Separa los niveles, pero atribuye a los dos últimos dígitos la función que cumplen las letras TM y AM. Los números finales representan grado."
+      },
+      {
+        "id": "C",
+        "texto": "Ambos en nivel administrativo; 16 y 10 identifican las denominaciones que deben conservarse en el registro.",
+        "explicacion": "Incorrecta. Confunde tanto el nivel del primer empleo como el significado de los números finales del código."
+      },
+      {
+        "id": "D",
+        "texto": "El primero en nivel técnico y el segundo en administrativo; 16 y 10 corresponden al grado salarial de cada empleo.",
+        "explicacion": "Correcta. El art. 6 distingue nivel, denominación y grado, y el art. 7 ubica 4TM en técnico y 5AM en administrativo. El apellido de la denominación no reemplaza esa clasificación."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Los códigos 4TM-16 y 5AM-10 corresponden a niveles distintos. Conforme a los arts. 6–7, el primer dígito identifica nivel, las letras denominación y los dos últimos caracteres grado. Se corrige el nivel del técnico y se conservan 16 y 10 como grados.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=89986",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-162",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Requisitos de los empleos",
+    "subtema": "Certificación de cursos nacionales e internacionales",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 263 de 2000",
+    "articulos": [
+      "arts. 8 y 9"
+    ],
+    "texto_fuente": "Los cursos deben ser realizados en instituciones públicas o privadas, nacionales reconocidas oficialmente, o internacionales. [...] En el manual de requisitos y en las convocatorias a concurso se determinará el (los) curso(s) específico(s) que se exige(n) para el desempeño del empleo. [...] Los cursos específicos se acreditarán mediante certificados expedidos por las respectivas entidades oficiales o privadas que los impartieron. Dichos certificados deberán contener, como mínimo, los siguientes datos:\na. Nombre o razón social de la entidad.\nb. Nombre y contenido del curso.\nc. Intensidad horaria.\nd. Fechas de realización.",
+    "pregunta": "Una auxiliar revisa dos certificados para un curso exigido por el manual y la convocatoria. El primero proviene de una institución internacional e identifica entidad, nombre y contenido del curso, horas y fechas. El segundo proviene de una institución nacional oficialmente reconocida, contiene entidad, nombre y contenido del curso y fechas, pero no informa horas. Ambos corresponden al curso solicitado. ¿Qué observación debe registrar según los artículos 8 y 9?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Pedir al primer interesado acreditación de reconocimiento nacional y aceptar el segundo certificado por provenir de entidad reconocida.",
+        "explicacion": "Incorrecta. La regla distingue instituciones nacionales reconocidas de internacionales; además, el reconocimiento de la segunda no suple la intensidad horaria omitida."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptar el primer certificado por esos datos y solicitar que el segundo complete la intensidad horaria del curso realizado.",
+        "explicacion": "Correcta. El art. 8 admite instituciones internacionales y el art. 9 exige que el certificado contenga intensidad horaria. Con los hechos dados, la omisión que debe completarse es la del segundo."
+      },
+      {
+        "id": "C",
+        "texto": "Aceptar los dos certificados, pues identificar contenido y fechas permite reemplazar el dato de horas por la duración entre fechas.",
+        "explicacion": "Incorrecta. Las fechas de realización y la intensidad horaria son requisitos separados. El intervalo entre fechas no acredita cuántas horas tuvo el curso."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir reconocimiento nacional de la primera institución y solicitar al segundo interesado la intensidad horaria que falta.",
+        "explicacion": "Incorrecta. Detecta la omisión del segundo, pero extiende a la institución internacional la exigencia que el art. 8 formula para las nacionales."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "El primer certificado tiene los datos exigidos y procede de una institución internacional, admitida por el art. 8. Al segundo le falta intensidad horaria, dato independiente de las fechas según el art. 9. Se acepta el primero en este examen y se completa el segundo.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=82093",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-163",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Requisitos y posesión",
+    "subtema": "Concepto de cumplimiento y adopción del manual",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 263 de 2000",
+    "articulos": [
+      "arts. 22 y 26"
+    ],
+    "texto_fuente": "Corresponde al Procurador General de la Nación la adopción, adición, modificación o actualización del manual específico de funciones y de requisitos mediante resolución. [...] Corresponde al jefe de la División de Gestión Humana verificar el cumplimiento de los requisitos señalados en el presente decreto y en el manual específico y emitir concepto escrito antes de la respectiva posesión.",
+    "pregunta": "Una auxiliar arma el expediente de una persona ya nombrada cuyo día de posesión está por fijarse. También debe identificar la autoridad competente para adoptar una modificación del manual de requisitos que se tramita separadamente. ¿Qué responsables debe señalar para el concepto previo a la posesión y para la adopción de la modificación, respectivamente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Jefe de Gestión Humana para el concepto escrito de requisitos; Procurador General para adoptar la modificación por resolución.",
+        "explicacion": "Correcta. El art. 26 asigna a Gestión Humana el concepto antes de posesión, y el 22 atribuye al Procurador General la modificación del manual mediante resolución."
+      },
+      {
+        "id": "B",
+        "texto": "Jefe de Selección y Carrera para el concepto escrito; Procurador General para adoptar la modificación por resolución.",
+        "explicacion": "Incorrecta. Identifica al titular que modifica el manual, pero sustituye al jefe de Gestión Humana en la verificación y concepto del art. 26."
+      },
+      {
+        "id": "C",
+        "texto": "Jefe de Gestión Humana para el concepto escrito; jefe de Selección y Carrera para aprobar la modificación del manual.",
+        "explicacion": "Incorrecta. Acertó en el concepto, pero la preparación técnica de asuntos de carrera no atribuye a Selección y Carrera la adopción del manual."
+      },
+      {
+        "id": "D",
+        "texto": "Jefe de Selección y Carrera para el concepto escrito; ese mismo jefe para aprobar la modificación del manual institucional.",
+        "explicacion": "Incorrecta. Confunde la gestión de carrera con dos atribuciones expresamente asignadas a Gestión Humana y al Procurador General, respectivamente."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "El expediente requiere un concepto de requisitos antes de posesión y una decisión distinta sobre el manual. Los arts. 26 y 22 asignan la primera tarea a Gestión Humana y la segunda al Procurador General mediante resolución.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=82093",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-164",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Provisión de empleos",
+    "subtema": "Carácter provisional pese al nombre del acto y a la conversión del empleo",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 186 incs. 1 y 2"
+    ],
+    "texto_fuente": "El nombramiento tendrá carácter provisional cuando se trate de proveer transitoriamente un empleo de carrera con personal no seleccionado mediante el sistema de mérito, aunque en el respectivo acto administrativo no se determine la clase de nombramiento de que se trata. [...] También tendrá carácter provisional la vinculación del servidor que ejerza un empleo de libre nombramiento y remoción que, en virtud de la ley o de decisión judicial, se convierta en cargo de carrera. En este caso, el concurso para proveer definitivamente la vacante respectiva será abierto.",
+    "pregunta": "Un técnico debe clasificar dos vinculaciones bajo el artículo 186. En la primera se cubrió transitoriamente una vacante de carrera con alguien no seleccionado por mérito, pero el acto omitió nombrar la modalidad. En la segunda, un empleo ocupado de libre nombramiento fue convertido en cargo de carrera por una ley; su titular no ha participado en concurso. ¿Cómo debe registrar las dos vinculaciones actuales?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Primera en período de prueba por estar vacante un cargo de carrera; segunda provisional por la conversión legal del empleo.",
+        "explicacion": "Incorrecta. La vacancia de un cargo de carrera no convierte en nombramiento de prueba la vinculación sin selección por mérito. El art. 186 la califica como provisional."
+      },
+      {
+        "id": "B",
+        "texto": "Primera provisional pese a la omisión del acto; segunda en propiedad por el cambio legal de clasificación del empleo.",
+        "explicacion": "Incorrecta. Identifica la primera, pero la conversión del empleo no incorpora por sí misma al titular en carrera: el segundo inciso también califica la vinculación como provisional."
+      },
+      {
+        "id": "C",
+        "texto": "Primera provisional pese a la omisión de modalidad; segunda también provisional mientras se provee por concurso abierto.",
+        "explicacion": "Correcta. Los dos incisos atribuyen carácter provisional: por provisión transitoria sin mérito y por conversión del empleo ocupado de libre nombramiento. Para el segundo se exige concurso abierto."
+      },
+      {
+        "id": "D",
+        "texto": "Primera en período de prueba por cubrir una vacante de carrera; segunda en propiedad por la nueva clasificación del empleo.",
+        "explicacion": "Incorrecta. Atribuye consecuencias de ingreso por mérito a dos situaciones que el artículo define expresamente como provisionales."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Ninguno de los expedientes describe selección por mérito. El art. 186 mantiene el carácter provisional aunque el acto omita la modalidad y también cuando un empleo ocupado de libre nombramiento se convierte en carrera; para este último prevé concurso abierto.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-165",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Situaciones administrativas",
+    "subtema": "Encargo por vacancia temporal y diferencia salarial",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 187"
+    ],
+    "texto_fuente": "Los empleos de carrera cuyos titulares se encuentren en situaciones administrativas que impliquen separación temporal de los mismos podrán ser provistos por encargo o en forma provisional por el tiempo que duren aquellas situaciones. [...] El servidor encargado tendrá derecho a la diferencia entre el sueldo de su empleo y el señalado para el empleo que desempeña temporalmente, siempre que no sea percibido por su titular.",
+    "pregunta": "Una técnica revisa un encargo motivado exclusivamente por las vacaciones del titular de un empleo de carrera de mayor sueldo. El titular continúa percibiendo ese sueldo. Un compañero propone fijar al encargo seis meses y reconocer la diferencia salarial desde el primer día. ¿Qué observación debe consignar respecto de duración y pago conforme al artículo 187?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ajustar la duración al tiempo de las vacaciones y abstenerse de reconocer la diferencia mientras el titular perciba ese sueldo.",
+        "explicacion": "Correcta. La vacancia es temporal, por lo que el encargo dura lo que la situación del titular. La diferencia se reconoce bajo la condición de que no la perciba el titular, que aquí recibe el sueldo del empleo."
+      },
+      {
+        "id": "B",
+        "texto": "Ajustar la duración al tiempo de las vacaciones y reconocer la diferencia salarial por el desempeño temporal del empleo superior.",
+        "explicacion": "Incorrecta. Acierta sobre duración, pero omite la condición relativa al pago al titular prevista en el segundo inciso."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener los seis meses propuestos y abstenerse de reconocer la diferencia mientras el titular perciba el sueldo del empleo.",
+        "explicacion": "Incorrecta. La condición de pago se respeta, pero no cabe desvincular el encargo de la duración de la vacancia temporal que lo origina."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener los seis meses propuestos y reconocer la diferencia salarial desde que el encargado asuma el empleo superior.",
+        "explicacion": "Incorrecta. Trata la vacancia temporal como un plazo autónomo de seis meses y omite que el sueldo continúa siendo percibido por el titular."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "El encargo se origina en vacaciones y el titular conserva el sueldo. El art. 187 limita su duración a esa separación temporal y condiciona la diferencia salarial a que no la perciba el titular. Las dos propuestas del compañero deben corregirse.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-166",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Administración de concursos",
+    "subtema": "Custodia del banco y firma del informe de construcción de pruebas",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "arts. 206 y 207"
+    ],
+    "texto_fuente": "El jefe de la Oficina de Selección y Carrera, conforme a las orientaciones del Procurador General, es el responsable de la elaboración, calificación y aplicación de las pruebas, así como de la custodia de los bancos de preguntas. [...] El Procurador General o su delegado podrá suscribir contratos con personas públicas o privadas para la elaboración, calificación o aplicación de las pruebas de selección. [...] De todas las pruebas aplicadas se dejará un informe firmado por quien las haya diseñado o construido, en el cual consten el objeto de evaluación, las normas y los parámetros de construcción, los temas evaluados y sus valores porcentuales, así como las normas y los patrones de calificación utilizados.",
+    "pregunta": "Una universidad contratada diseñó una prueba ya aplicada en un concurso de la PGN. Una auxiliar verifica la ficha del banco de preguntas y el informe técnico de construcción. Un servidor sostiene que la firma del informe corresponde a la universidad que lo construyó, aunque la responsabilidad legal por custodiar el banco siga en la entidad. ¿Qué registro corresponde para custodia y firma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Custodia a cargo de la División de Gestión Humana; firma del informe a cargo del jefe de la Oficina de Selección y Carrera.",
+        "explicacion": "Incorrecta. La custodia corresponde a Selección y Carrera, y el informe de construcción lo firma quien diseñó la prueba, aquí la universidad."
+      },
+      {
+        "id": "B",
+        "texto": "Custodia a cargo de la División de Gestión Humana; firma del informe a cargo de la universidad que diseñó la prueba aplicada.",
+        "explicacion": "Incorrecta. Identifica al firmante, pero atribuye a Gestión Humana la custodia que el art. 206 radica en Selección y Carrera."
+      },
+      {
+        "id": "C",
+        "texto": "Custodia a cargo del jefe de Selección y Carrera; firma del informe por ese jefe como responsable institucional del concurso.",
+        "explicacion": "Incorrecta. La responsabilidad institucional no desplaza la regla específica del art. 207 sobre firma por quien diseñó o construyó la prueba."
+      },
+      {
+        "id": "D",
+        "texto": "Custodia a cargo del jefe de Selección y Carrera; firma del informe por la universidad que diseñó y construyó esa prueba.",
+        "explicacion": "Correcta. La contratación autorizada no cambia la atribución del art. 206. El art. 207 exige la firma de quien diseñó o construyó la prueba, por lo que el servidor tiene razón."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "La prueba fue diseñada por una universidad contratada. El art. 206 conserva la responsabilidad legal de custodia en Selección y Carrera, y el 207 exige informe firmado por el diseñador. La firma de la universidad es compatible con la custodia institucional.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-167",
+    "version": 2,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Resultados de concursos",
+    "subtema": "Calificación de respuestas abiertas e informe de jurados",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 211 inc. 1"
+    ],
+    "texto_fuente": "Cuando se trate de pruebas con preguntas abiertas, la calificación será realizada por tres jurados expertos en cada una de las áreas, seleccionados por el Procurador General. En este evento, los resultados se consignarán en un informe firmado por los jurados.",
+    "pregunta": "Una auxiliar organiza la calificación de una prueba con respuestas abiertas en un área. El proyecto prevé dos expertos seleccionados por el Procurador General y un informe firmado solo por el jefe de Selección y Carrera. Una integrante considera que debe participar un experto adicional; el jefe sostiene que dos bastan. ¿Qué programación de jurados y firma debe registrar la auxiliar conforme al artículo 211?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Conservar dos jurados expertos y obtener sus firmas en el informe que contiene los resultados de la prueba.",
+        "explicacion": "Incorrecta. Corrige la firma, pero el art. 211 exige tres jurados expertos para la calificación de preguntas abiertas."
+      },
+      {
+        "id": "B",
+        "texto": "Integrar tres jurados expertos y conservar la firma del jefe de Selección y Carrera para el informe de resultados.",
+        "explicacion": "Incorrecta. Corrige la cantidad de expertos, pero mantiene para preguntas abiertas una firma distinta de la que exige el primer inciso."
+      },
+      {
+        "id": "C",
+        "texto": "Integrar tres jurados expertos seleccionados por el Procurador y recoger sus firmas en el informe de resultados.",
+        "explicacion": "Correcta. El art. 211 establece tres expertos seleccionados por el Procurador General e informe firmado por los jurados. La integrante acierta sobre el experto adicional y también debe ajustarse la firma prevista."
+      },
+      {
+        "id": "D",
+        "texto": "Conservar dos jurados expertos y mantener la firma del jefe de Selección y Carrera para consolidar los resultados.",
+        "explicacion": "Incorrecta. No corrige ninguno de los requisitos especiales del primer inciso para la evaluación de respuestas abiertas."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Se trata de preguntas abiertas, para las que el art. 211 exige tres jurados expertos elegidos por el Procurador General y un informe firmado por ellos. Deben corregirse tanto el número de jurados como la firma prevista.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-168",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Ascenso e inscripción",
+    "subtema": "Concurso sin cambio de nivel y actualización al tomar posesión",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 218 inc. 3"
+    ],
+    "texto_fuente": "Cuando el servidor de carrera sea seleccionado para un nuevo empleo por concurso, sin que implique cambio de nivel, será actualizada su inscripción en el registro mencionado, una vez tome posesión del nuevo cargo. Cuando el ascenso ocasione cambio de nivel, el nombramiento se hará en período de prueba; en este evento, si el empleado no obtiene calificación satisfactoria en la evaluación de su desempeño, regresará a su empleo anterior y conservará su inscripción en la carrera.",
+    "pregunta": "Una servidora inscrita en carrera gana por concurso un empleo profesional de grado superior al que ocupa, también profesional. Un auxiliar recibe la constancia de que ya tomó posesión y prepara la novedad de carrera. Un compañero pide esperar una nueva calificación de período de prueba por haber aumentado el grado. ¿Qué gestión corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Abrir un nuevo período de prueba y tramitar una inscripción inicial cuando se conozca su resultado satisfactorio.",
+        "explicacion": "Incorrecta. El caso no implica cambio de nivel. La regla del nuevo período de prueba no se activa por el aumento de grado dentro del mismo nivel."
+      },
+      {
+        "id": "B",
+        "texto": "Tramitar la actualización de su inscripción con la posesión acreditada, sin exigir un nuevo período de prueba por ese ascenso.",
+        "explicacion": "Correcta. El art. 218 diferencia cambio de nivel de cambio de grado. En concurso sin cambio de nivel se actualiza la inscripción una vez se toma posesión."
+      },
+      {
+        "id": "C",
+        "texto": "Tramitar una inscripción inicial desde la posesión, sustituyendo la anterior por haber cambiado de empleo y de grado.",
+        "explicacion": "Incorrecta. La norma ordena actualización de la inscripción existente, no una inscripción inicial que desconozca la continuidad de la carrera."
+      },
+      {
+        "id": "D",
+        "texto": "Mantener el registro anterior hasta la siguiente calificación anual y actualizarlo después con el empleo de mayor grado.",
+        "explicacion": "Incorrecta. El art. 218 sitúa la actualización en la posesión del nuevo cargo, sin diferirla hasta una calificación anual."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "El ascenso aumenta el grado pero conserva el nivel profesional. El art. 218 exige actualizar la inscripción al posesionarse; el nuevo período de prueba corresponde al cambio de nivel. Se tramita la actualización con la posesión acreditada.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-169",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Calificación de servicios",
+    "subtema": "Evaluación parcial por salida del calificador y hoja de vida",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 228 num. 1 e inc. 2"
+    ],
+    "texto_fuente": "Se efectuarán evaluaciones parciales a los empleados de carrera en los siguientes casos:\n1) Cuando quien deba calificar se retire del servicio o se traslade. [...] Estas evaluaciones deberán realizarse dentro de los quince (15) días calendario siguientes a la fecha en que se produzca la situación que las origine y no harán parte de la hoja de vida del evaluado, salvo en el evento consagrado en el numeral 1) de este artículo caso en el cual la calificación deberá hacerse antes de la dejación del cargo.",
+    "pregunta": "El superior que califica a un empleado de carrera va a trasladarse a otra dependencia. Una técnica prepara la evaluación parcial derivada de esa salida y el destino del documento. El superior propone firmarla dentro de los quince días posteriores al traslado y conservarla fuera de la hoja de vida del evaluado. ¿Qué ruta debe dejar programada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Firma antes de que el superior deje el cargo y conservación del resultado fuera de la hoja de vida del empleado evaluado.",
+        "explicacion": "Incorrecta. Respeta la oportunidad excepcional, pero omite que la evaluación del numeral 1 constituye la excepción a la exclusión de la hoja de vida."
+      },
+      {
+        "id": "B",
+        "texto": "Firma de la evaluación antes de que el superior deje el cargo e incorporación del resultado a la hoja de vida del empleado evaluado.",
+        "explicacion": "Correcta. La salida del calificador es el evento del numeral 1, exceptuado tanto del plazo posterior como de la regla de no incorporación a hoja de vida."
+      },
+      {
+        "id": "C",
+        "texto": "Firma dentro de los quince días calendario posteriores al traslado e incorporación del resultado a la hoja de vida del empleado.",
+        "explicacion": "Incorrecta. Identifica el destino documental, pero aplica el plazo general posterior en lugar de la regla de calificar antes de dejar el cargo."
+      },
+      {
+        "id": "D",
+        "texto": "Firma dentro de los quince días calendario posteriores al traslado y conservación del resultado fuera de la hoja de vida del empleado.",
+        "explicacion": "Incorrecta. Mantiene dos reglas generales que el segundo inciso exceptúa cuando se retira o traslada quien debe calificar."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "La evaluación nace del traslado del calificador, no de otra separación del evaluado. Para ese evento del art. 228.1, el segundo inciso exige calificar antes de dejar el cargo y exceptúa la regla que excluye la evaluación parcial de la hoja de vida.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-170",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Registro de carrera",
+    "subtema": "Notificación por anotación y destinatarios de comunicación",
+    "formato": "caso",
+    "nivel": [
+      "asistencial",
+      "tecnico"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 221 incs. 3 y 4"
+    ],
+    "texto_fuente": "La inscripción o actualización del Registro Unico será realizada por el jefe de la Oficina de Selección y Carrera. [...] La notificación de la inscripción o de su actualización en la carrera de la entidad se cumplirá con la anotación en el Registro Unico a cargo de la Oficina de Selección y Carrera, quien la comunicará al interesado y a la División de Gestión Humana.",
+    "pregunta": "Una auxiliar de Selección y Carrera apoya una actualización de inscripción ya autorizada. El jefe practicó la anotación en el Registro Único, pero aún no se han enviado las comunicaciones. La ficha de control separa «notificación de actualización» y «destinatarios de comunicación». ¿Qué debe registrar en esas dos casillas conforme al artículo 221?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Notificación pendiente hasta citar personalmente al interesado; comunicación dirigida al interesado y a la División de Gestión Humana.",
+        "explicacion": "Incorrecta. Identifica a los destinatarios, pero añade una notificación personal diferente de la anotación que el art. 221 establece para este registro."
+      },
+      {
+        "id": "B",
+        "texto": "Notificación cumplida con la anotación del registro; comunicación dirigida al interesado y a la Comisión de Carrera de la entidad.",
+        "explicacion": "Incorrecta. La anotación cumple la notificación, pero el segundo destinatario legal de comunicación es Gestión Humana, no la Comisión de Carrera."
+      },
+      {
+        "id": "C",
+        "texto": "Notificación pendiente hasta citar personalmente al interesado; comunicación dirigida al interesado y a la Comisión de Carrera de la entidad.",
+        "explicacion": "Incorrecta. Sustituye la forma de notificación y uno de los destinatarios expresamente previstos por el artículo."
+      },
+      {
+        "id": "D",
+        "texto": "Notificación cumplida con la anotación del registro; comunicación por enviar al interesado y a la División de Gestión Humana.",
+        "explicacion": "Correcta. El art. 221 distingue la notificación, que se cumple al anotar, de la comunicación posterior al interesado y a Gestión Humana."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "La anotación ya se practicó. El art. 221 la establece como forma de notificación de la actualización y, además, exige comunicarla al interesado y a Gestión Humana. Quedan pendientes esas comunicaciones, no una citación personal.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-171",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Provisión definitiva",
+    "subtema": "Orden de prioridad entre protección, reintegro y elegibles",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 190 nums. 1, 2 y 4"
+    ],
+    "texto_fuente": "La provisión definitiva de los empleos de carrera se hará teniendo en cuenta el siguiente orden de prioridad: [...] 1) Con la persona inscrita en la carrera de la Procuraduría General que deba ser trasladada por haber demostrado su condición de desplazada por razones de violencia o corra riesgo inminente su seguridad personal. [...] 2) Con la persona que al momento de su retiro de la Procuraduría era titular de derechos de carrera y cuyo reintegro haya sido ordenado por autoridad judicial. [...] 4) Con la persona que al momento en que deba producirse el nombramiento, ocupe el primer puesto en la lista de elegibles vigente.",
+    "pregunta": "Una asesora revisa tres expedientes para una vacante de carrera. Elena es servidora de carrera de la PGN y tiene acreditado un riesgo inminente para su seguridad que exige traslado; Pablo tenía derechos de carrera al retirarse y cuenta con orden judicial de reintegro; Nora encabeza la lista vigente. Los tres reúnen los requisitos del empleo y no hay otro caso de prioridad. ¿En qué orden debe examinarse su provisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Elena, después Pablo y luego Nora, por la prelación especial de protección, reintegro y lista de elegibles.",
+        "explicacion": "Correcta. El art. 190 coloca primero al servidor de carrera que debe trasladarse por riesgo, luego al titular de carrera con reintegro judicial y finalmente, entre estos expedientes, a quien encabeza la lista."
+      },
+      {
+        "id": "B",
+        "texto": "Pablo, después Elena y luego Nora, por el carácter judicial del reintegro frente a la gestión del traslado.",
+        "explicacion": "Incorrecta. Invierte los numerales 1 y 2: la norma da prioridad al traslado por riesgo frente al reintegro judicial en la provisión regulada."
+      },
+      {
+        "id": "C",
+        "texto": "Nora, después Elena y luego Pablo, por la posición de mérito antes de las novedades de personal.",
+        "explicacion": "Incorrecta. El primer puesto en la lista está en el numeral 4 y no desplaza las prioridades de los numerales 1 y 2."
+      },
+      {
+        "id": "D",
+        "texto": "Pablo, después Nora y luego Elena, por la orden judicial y el mérito antes de la solicitud de traslado.",
+        "explicacion": "Incorrecta. Además de situar primero el reintegro, coloca el traslado por riesgo después de la lista, contrariando la prelación legal."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Los tres reúnen requisitos, pero concurren supuestos de prioridad distintos. El art. 190 ordena traslado por riesgo de un servidor de carrera, reintegro judicial de titular de carrera y primer puesto de lista en ese orden. La asesora debe registrar Elena, Pablo y Nora.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-172",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Proceso de selección",
+    "subtema": "Cambio de fecha posterior a inscripciones y límite de anticipación",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 195"
+    ],
+    "texto_fuente": "La convocatoria es la norma reguladora de todo concurso y obliga tanto a la administración como a los participantes. No podrán cambiarse sus bases una vez iniciada la inscripción de aspirantes, salvo que se incurra en violación a la ley o las regulaciones internas o que las modificaciones se refieran a aspectos como sitio y fecha de recepción de inscripciones, fecha, hora o lugar en que se llevará a cabo la aplicación de las pruebas, casos en los cuales debe darse aviso oportuno a los interesados. [...] En ningún caso podrán anticiparse las fechas inicialmente previstas en la convocatoria.",
+    "pregunta": "Después de abrir inscripciones de un concurso de la PGN, una asesora recibe dos alternativas logísticas para la prueba fijada inicialmente el 20 de noviembre de 2026: pasarla al 13 o al 27 de noviembre. En ambos casos se prevé avisar oportunamente y no se modifica ningún otro aspecto. Un servidor sostiene que la autorización para cambiar fechas permite adoptar cualquiera de las dos alternativas. ¿Qué concepto corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Puede adoptarse cualquiera de las dos alternativas, porque el aviso oportuno satisface la excepción relativa a fechas.",
+        "explicacion": "Incorrecta. El aviso es necesario, pero no permite anticipar la fecha inicial, prohibición expresa del segundo inciso."
+      },
+      {
+        "id": "B",
+        "texto": "Debe mantenerse el 20 de noviembre, porque la apertura de inscripciones impide cambiar posteriormente la fecha de prueba.",
+        "explicacion": "Incorrecta. Desconoce la excepción del primer inciso que permite modificar aspectos logísticos como fecha de prueba con aviso oportuno."
+      },
+      {
+        "id": "C",
+        "texto": "Puede trasladarse al 27 de noviembre con aviso oportuno; la alternativa del día 13 contradice el límite de anticipación.",
+        "explicacion": "Correcta. El art. 195 permite modificar la fecha y exige aviso, pero prohíbe anticipar la inicialmente prevista. Solo el día 27 respeta ambas reglas."
+      },
+      {
+        "id": "D",
+        "texto": "Puede trasladarse al 13 de noviembre con aviso oportuno; la alternativa del día 27 requiere empezar otro concurso.",
+        "explicacion": "Incorrecta. Invierte las consecuencias: la fecha anterior está prohibida, mientras el aplazamiento es uno de los cambios logísticos admitidos."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "La convocatoria ya abrió inscripciones, pero el art. 195 admite cambios de fecha con aviso oportuno y prohíbe anticiparla. El 13 precede al 20; el 27 es posterior. La autorización solo comprende la alternativa del 27.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-173",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Proceso de selección",
+    "subtema": "Omisión del carácter de las pruebas tras iniciar inscripciones",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 196 información complementaria num. 8 e inciso final"
+    ],
+    "texto_fuente": "8) Carácter de las pruebas: eliminatorio o clasificatorio. [...] El Procurador General deberá dejar sin efecto los concursos respectivos, en los casos en que, iniciadas las inscripciones, se advierta la existencia de error u omisión en alguna o varias de las convocatorias en relación con la información básica, en los numerales 2, 4, 5, 7 y 8 de la información complementaria o la firma del Procurador General o su delegado.",
+    "pregunta": "Una profesional revisa una convocatoria de la PGN cuyas inscripciones ya empezaron. El documento identifica las clases de pruebas, pero omitió indicar si cada una es eliminatoria o clasificatoria. El equipo propone añadir ese dato mediante aviso, sin alterar el concurso iniciado. ¿Qué actuación corresponde al Procurador General según la regla específica del artículo 196?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Publicar un aviso que agregue el carácter de cada prueba y conservar las inscripciones recibidas en ese concurso.",
+        "explicacion": "Incorrecta. La omisión afecta el numeral 8, incluido expresamente en los supuestos que exigen dejar sin efecto el concurso después de iniciar inscripciones."
+      },
+      {
+        "id": "B",
+        "texto": "Cerrar temporalmente las inscripciones, completar el dato y reabrir el mismo concurso para el tiempo que faltaba.",
+        "explicacion": "Incorrecta. La suspensión y reapertura no sustituyen la consecuencia que el último inciso dispone para esta omisión."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener el concurso y tratar las pruebas como clasificatorias hasta que se formalice la información omitida.",
+        "explicacion": "Incorrecta. No existe esa clasificación supletoria en el artículo; el carácter de las pruebas es información cuya omisión activa la consecuencia específica."
+      },
+      {
+        "id": "D",
+        "texto": "Dejar sin efecto el concurso afectado, porque la omisión corresponde a uno de los datos expresamente enumerados.",
+        "explicacion": "Correcta. El carácter eliminatorio o clasificatorio está en el numeral 8 de información complementaria, incluido en el último inciso entre las omisiones que obligan a dejar sin efecto el concurso."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "La omisión no es una fecha logística: afecta el carácter de las pruebas, numeral 8 de la información complementaria. Advertida después de iniciar inscripciones, el último inciso del art. 196 exige dejar sin efecto el concurso afectado.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-174",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Calificación de servicios",
+    "subtema": "Orden de evaluación extraordinaria y competencia para evaluar",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "arts. 229 y 230 inc. 2",
+      "art. 62 (Ley 4 de 1913)"
+    ],
+    "texto_fuente": "Corresponde al superior inmediato evaluar y calificar el desempeño laboral de los servidores públicos bajo su dirección o a quien ejerza la supervisión directa del empleado por calificar. [...] No obstante, el Procurador General podrá ordenar que se califiquen los servicios de un empleado cuando reciba información, debidamente soportada, de que su desempeño laboral es deficiente. Esta calificación tendrá el carácter de extraordinaria y podrá ordenarse en cualquier época, siempre que hayan transcurrido tres meses desde la última calificación. [...] Los de meses y años se computan según el calendario; pero si el último día fuere feriado o de vacante, se extenderá el plazo hasta el primer día hábil.",
+    "pregunta": "El 21 de julio de 2026 una asesora estudia la posible orden de calificación extraordinaria de un empleado de carrera. Hay información soportada sobre desempeño deficiente y su última calificación fue el 30 de abril de 2026. El superior inmediato mantiene la supervisión. El 30 de julio es día hábil. ¿Qué debe señalar sobre la primera fecha en que se completa el intervalo legal y sobre quién evalúa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El intervalo ya está completo el 21 de julio; evalúa el superior inmediato, previa orden del Procurador General.",
+        "explicacion": "Incorrecta. Acertó sobre el evaluador, pero al 21 de julio no han transcurrido tres meses calendario desde el 30 de abril."
+      },
+      {
+        "id": "B",
+        "texto": "El intervalo se completa el 30 de julio; la evaluación corresponde al superior inmediato que lo supervisa, previa orden del Procurador.",
+        "explicacion": "Correcta. Los tres meses calendario se completan el 30 de julio. El Procurador puede ordenar la calificación y el art. 229 mantiene la evaluación en el superior inmediato o supervisor directo."
+      },
+      {
+        "id": "C",
+        "texto": "El intervalo se completa el 30 de julio; evalúa directamente el Procurador General que dispone la calificación extraordinaria.",
+        "explicacion": "Incorrecta. Identifica la fecha, pero confunde la competencia para ordenar la evaluación extraordinaria con la competencia para evaluar del art. 229."
+      },
+      {
+        "id": "D",
+        "texto": "El intervalo ya está completo el 21 de julio; evalúa directamente el Procurador General por tratarse de calificación extraordinaria.",
+        "explicacion": "Incorrecta. Anticipa el cumplimiento de los tres meses y traslada al titular que ordena la función evaluadora del superior inmediato."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "La última calificación es del 30 de abril: tres meses calendario se completan el 30 de julio. El art. 230 atribuye la orden extraordinaria al Procurador; el 229, la evaluación al superior inmediato o supervisor. Se debe esperar la fecha y conservar ese evaluador.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-175",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Impedimentos en calificación",
+    "subtema": "Autoridad y término para resolver impedimento del calificador",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 234",
+      "art. 62 (Ley 4 de 1913)"
+    ],
+    "texto_fuente": "El calificador manifestará su impedimento a la Comisión de Carrera, mediante escrito motivado. La Comisión lo resolverá, dentro de los cinco (5) días hábiles siguientes a su presentación. Si lo acepta, designará, en su reemplazo, al superior funcional del impedido o a un funcionario del mismo nivel del calificador. [...] En los plazos de días que se señalen en las leyes y actos oficiales, se entienden suprimidos los feriados y de vacantes, a menos de expresarse lo contrario.",
+    "pregunta": "Una profesional controla un impedimento motivado presentado por un calificador el viernes 9 de octubre de 2026. La entidad atiende de lunes a viernes; el lunes 12 es festivo y no hay otro cierre en el período. Un compañero propone enviarlo al Procurador General para decidir a más tardar el 16. ¿Qué autoridad y fecha límite debe registrar para la decisión?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Procurador General, a más tardar el viernes 16 de octubre de 2026, para decidir el impedimento formulado.",
+        "explicacion": "Incorrecta. Atribuye la decisión al nominador en lugar de la Comisión y cuenta como hábil el lunes festivo, adelantando el vencimiento."
+      },
+      {
+        "id": "B",
+        "texto": "La Comisión de Carrera, a más tardar el viernes 16 de octubre de 2026, para decidir el impedimento formulado.",
+        "explicacion": "Incorrecta. La Comisión es competente, pero el quinto día hábil siguiente es el 19: se cuentan 13, 14, 15, 16 y 19 de octubre."
+      },
+      {
+        "id": "C",
+        "texto": "La Comisión de Carrera, a más tardar el lunes 19 de octubre de 2026, para decidir el impedimento formulado.",
+        "explicacion": "Correcta. El art. 234 fija cinco días hábiles siguientes a la presentación y atribuye la decisión a la Comisión. Excluidos fin de semana y festivo, vencen el 19."
+      },
+      {
+        "id": "D",
+        "texto": "El Procurador General, a más tardar el lunes 19 de octubre de 2026, para decidir el impedimento formulado.",
+        "explicacion": "Incorrecta. La fecha está bien calculada, pero la competencia expresa es de la Comisión de Carrera, que también designa reemplazo si acepta el impedimento."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "La presentación ocurrió el 9 y el 12 es festivo. Los cinco días hábiles siguientes son 13, 14, 15, 16 y 19. El art. 234 atribuye la decisión a la Comisión de Carrera, por lo que se corrigen autoridad y vencimiento.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-176",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Retiro por calificación",
+    "subtema": "Efectos del silencio al resolver reposición contra insubsistencia",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 235",
+      "art. 62 (Ley 4 de 1913)"
+    ],
+    "texto_fuente": "Contra el acto administrativo que declare la insubsistencia sólo procede recurso de reposición ante el Procurador General. [...] La declaración de insubsistencia se entenderá revocada si, interpuestos los recursos dentro del término legal, la Administración no se pronunciare dentro de los treinta (30) días hábiles siguientes a su presentación. En este evento, la calificación que dio origen a la declaración de insubsistencia del nombramiento se considerará satisfactoria con el puntaje mínimo. [...] En los plazos de días que se señalen en las leyes y actos oficiales, se entienden suprimidos los feriados y de vacantes, a menos de expresarse lo contrario.",
+    "pregunta": "Un empleado de carrera recurrió oportunamente su insubsistencia por calificación no satisfactoria. La reposición se presentó el martes 1 de septiembre de 2026. Al comenzar el 15 de octubre no hay pronunciamiento. La jornada es de lunes a viernes, el 12 de octubre fue festivo y no hubo otros feriados ni cierres en ese intervalo. ¿Qué vencimiento y efectos debe informar una asesora al aplicar el artículo 235?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El término venció el 14 de octubre; la insubsistencia se entiende revocada y la calificación pasa a satisfactoria con puntaje mínimo.",
+        "explicacion": "Correcta. Los treinta días hábiles siguientes al 1 de septiembre terminan el 14 de octubre. El art. 235 establece revocación de la insubsistencia y calificación satisfactoria mínima ante ese silencio."
+      },
+      {
+        "id": "B",
+        "texto": "El término venció el 13 de octubre; la insubsistencia se entiende revocada y la calificación pasa a satisfactoria con puntaje mínimo.",
+        "explicacion": "Incorrecta. Describe los efectos especiales, pero incluye el día de presentación en un término que corre por días hábiles siguientes; el vencimiento correcto es el 14."
+      },
+      {
+        "id": "C",
+        "texto": "El término venció el 14 de octubre; la insubsistencia queda confirmada y la calificación conserva el resultado no satisfactorio.",
+        "explicacion": "Incorrecta. Calcula bien, pero sustituye los efectos expresos favorables del art. 235 por una confirmación que la disposición no establece."
+      },
+      {
+        "id": "D",
+        "texto": "El término venció el 13 de octubre; la insubsistencia queda confirmada y la calificación conserva el resultado no satisfactorio.",
+        "explicacion": "Incorrecta. Adelanta el vencimiento un día y aplica consecuencias opuestas a la revocación y calificación satisfactoria mínima del artículo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "La reposición se presentó el 1 de septiembre y los treinta días hábiles siguientes concluyen el 14 de octubre. Sin pronunciamiento al iniciar el 15, el art. 235 hace entender revocada la insubsistencia y satisfactoria la calificación con el puntaje mínimo.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-177",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Retiro de la carrera",
+    "subtema": "Posesión en libre nombramiento sin comisión previa",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "arts. 236 num. 2 y 237"
+    ],
+    "texto_fuente": "2. Haber tomado posesión en un empleo de libre nombramiento y remoción o de período fijo, sin que previamente haya sido comisionado por el Procurador. [...] La ocurrencia de cualquiera de las causales previstas en el artículo anterior implica el retiro de la carrera de la Procuraduría y la pérdida de los derechos inherentes a ella, salvo cuando opere la incorporación en empleos de carrera equivalentes, dentro de los seis (6) meses siguientes a la supresión del empleo.",
+    "pregunta": "Una asesora compara dos servidores de carrera que tomaron posesión en empleos de libre nombramiento. Julián lo hizo sin comisión y después pidió que se le concediera; Marta se posesionó tras recibir previamente la comisión del Procurador. No hay otra causal de retiro. ¿A cuál situación se aplica la pérdida de derechos prevista en los artículos 236.2 y 237?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A Julián por haberse posesionado sin comisión previa; la posesión de Marta bajo comisión no configura esa causal de retiro.",
+        "explicacion": "Correcta. El supuesto exige falta de comisión previa a la posesión. La solicitud posterior de Julián no satisface ese requisito; Marta sí tenía la comisión antes del acto."
+      },
+      {
+        "id": "B",
+        "texto": "A ambos por haber dejado temporalmente sus empleos de carrera para posesionarse en cargos de libre nombramiento.",
+        "explicacion": "Incorrecta. Omite la distinción del art. 236.2: la comisión previa evita que esa posesión configure la causal examinada."
+      },
+      {
+        "id": "C",
+        "texto": "A Marta por haberse separado mediante comisión; Julián conserva la carrera mientras se decide su solicitud posterior.",
+        "explicacion": "Incorrecta. Invierte el efecto del requisito temporal: es la ausencia de comisión previa, no su otorgamiento, lo que configura la causal."
+      },
+      {
+        "id": "D",
+        "texto": "A ninguno mientras sigan vinculados al servicio público; las dos novedades se registran como separación temporal de la carrera.",
+        "explicacion": "Incorrecta. La continuidad en el servicio público no elimina la causal de retiro por posesión sin comisión previa que describe el art. 236.2."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Julián se posesionó antes de obtener comisión, mientras Marta contaba con ella. El art. 236.2 configura retiro por la primera situación y el 237 liga a esa causal la pérdida de derechos de carrera. La solicitud posterior no equivale a comisión previa.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-178",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Supresión de empleos",
+    "subtema": "Equivalencia de reincorporación y cierre del término sin vacante",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 262 de 2000",
+    "articulos": [
+      "art. 238 inc. 3 y par. 3"
+    ],
+    "texto_fuente": "En el evento en que se suprima un empleo de carrera, o se convierta en empleo de libre nombramiento y remoción, su titular tendrá derecho a optar por ser incorporado en un empleo equivalente en grado y remuneración, o a ser indemnizado en la forma que corresponda, así: [...] Cuando se opte por la incorporación, ésta deberá producirse en un término máximo de seis meses siguientes a la supresión del empleo, si existiere la vacante. Si vencido dicho término no se produce la vacante, el empleado será indemnizado. [...] En ningún caso podrá reincorporarse a un servidor inscrito en la carrera de la entidad en un empleo de grado o remuneración inferior.",
+    "pregunta": "Suprimido su empleo de carrera, una servidora optó por incorporación. Dentro de los seis meses apareció una vacante del mismo grado, pero con remuneración inferior. Al vencer el término, no existe otra vacante. Un asesor debe conceptuar sobre esa oferta y la consecuencia al concluir el plazo. ¿Qué corresponde bajo el artículo 238?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La oferta reúne equivalencia por conservar el grado; si no se acepta, debe mantenerse abierta la búsqueda más allá de seis meses.",
+        "explicacion": "Incorrecta. El grado no basta si la remuneración es inferior, y el parágrafo 3 no dispone prolongar indefinidamente la búsqueda cuando vence el término sin vacante equivalente."
+      },
+      {
+        "id": "B",
+        "texto": "La oferta incumple la equivalencia salarial; debe mantenerse abierta la búsqueda después de los seis meses hasta hallar otro empleo.",
+        "explicacion": "Incorrecta. Identifica el defecto de la oferta, pero omite que al vencerse los seis meses sin vacante equivalente procede la indemnización."
+      },
+      {
+        "id": "C",
+        "texto": "La oferta incumple la equivalencia salarial; al vencer los seis meses sin otra vacante equivalente corresponde indemnizarla.",
+        "explicacion": "Correcta. El artículo exige equivalencia en grado y remuneración y prohíbe reincorporar con remuneración inferior. Vencido el término sin vacante equivalente, opera la indemnización."
+      },
+      {
+        "id": "D",
+        "texto": "La oferta reúne equivalencia por conservar el grado; al vencer los seis meses debe efectuarse la incorporación en ese empleo.",
+        "explicacion": "Incorrecta. Conservar el grado no habilita una reincorporación con remuneración inferior, prohibida expresamente por el último inciso."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "La única vacante conserva el grado pero reduce remuneración, por lo que no es equivalente para la incorporación. El art. 238 impide ese descenso y, vencidos seis meses sin vacante equivalente, ordena indemnizar a quien optó por incorporación.",
+    "fuente_url": "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0262_2000.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-179",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Equivalencias de requisitos",
+    "subtema": "Posgrado sustituible y título de profesión reglamentada",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 263 de 2000",
+    "articulos": [
+      "art. 13, grado 21",
+      "art. 20, bloque de niveles directivo, asesor, ejecutivo y profesional, num. 1 y parágrafo",
+      "art. 21"
+    ],
+    "texto_fuente": "Título de formación universitaria, postgrado y dos (2) años de experiencia profesional o docente. [...] Título de formación avanzada o de postgrado por:\n-. Tres (3) años de experiencia profesional específica o relacionada, siempre que se acredite el título universitario; [...] Las equivalencias deberán establecerse, de conformidad con lo señalado en el presente artículo, directamente en el manual específico de funciones y de requisitos que se adopte e igualmente deberán señalarse en las respectivas convocatorias. [...] Cuando para el desempeño de un empleo se exija una profesión universitaria debidamente reglamentada, la posesión de grados, títulos, licencias, matrículas o autorizaciones previstas en las leyes no podrán ser compensados por experiencia u otras calidades, salvo cuando las mismas leyes así lo establezcan.",
+    "pregunta": "Una profesional verifica requisitos de un empleo asesor grado 21 que exige una profesión reglamentada, posgrado y dos años de experiencia. El manual y la convocatoria incorporan la equivalencia del posgrado por tres años de experiencia profesional relacionada, adicionales a los dos exigidos. Ana tiene título, matrícula exigible y cinco años de esa experiencia, pero no posgrado; Bruno no tiene título y ofrece diez años de actividad relacionada para reemplazarlo. No hay una excepción legal para el título. ¿Qué conclusión corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar los dos expedientes: Ana compensa el posgrado y Bruno compensa el título por el mayor tiempo acreditado.",
+        "explicacion": "Incorrecta. La equivalencia de Ana es viable, pero el art. 21 impide compensar el título exigido de una profesión reglamentada mediante experiencia sin excepción legal."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar la equivalencia de Ana por tratarse de nivel asesor y aceptar la propuesta de Bruno por exceder el tiempo exigido.",
+        "explicacion": "Incorrecta. El art. 20 incluye al nivel asesor entre los destinatarios de la equivalencia del posgrado; la prohibición del art. 21 afecta la propuesta de Bruno."
+      },
+      {
+        "id": "C",
+        "texto": "Rechazar los dos expedientes: el carácter reglamentado de la profesión impide sustituir tanto el título como el posgrado.",
+        "explicacion": "Incorrecta. Extiende al posgrado la prohibición aplicable al título o habilitación que la ley exige para la profesión, desconociendo la equivalencia expresamente prevista en este supuesto."
+      },
+      {
+        "id": "D",
+        "texto": "Aceptar la equivalencia del posgrado de Ana y rechazar la sustitución del título propuesta por Bruno para ese empleo.",
+        "explicacion": "Correcta. Ana dispone de dos años para el requisito de experiencia y tres adicionales para la equivalencia autorizada del posgrado. Bruno no puede reemplazar con actividad el título profesional protegido por el art. 21."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Ana conserva título y matrícula y acredita cinco años: dos para experiencia mínima y tres para la equivalencia del posgrado incorporada al manual y convocatoria. Bruno pretende reemplazar el título de una profesión reglamentada, prohibido por el art. 21 sin excepción legal.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=82093",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "TC-PGN-180",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "procuraduria",
+    "modulo": "Procuraduría General de la Nación",
+    "tema": "Equivalencias de requisitos",
+    "subtema": "Estudios y experiencia sin reutilizar el tiempo mínimo del empleo",
+    "formato": "caso",
+    "nivel": [
+      "profesional",
+      "asesor"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto Ley 263 de 2000",
+    "articulos": [
+      "art. 17, grado 10",
+      "art. 20, bloque técnico, administrativo y operativo, num. 2 y parágrafo"
+    ],
+    "texto_fuente": "Aprobación de un (1) año de educación superior y un (1) año de experiencia relacionada. [...] Un (1) año de educación superior por dos (2) años de experiencia específica o relacionada y viceversa, o por un (1) año de experiencia específica o relacionada y curso específico de mínimo sesenta (60) horas de duración y viceversa, siempre y cuando se acredite diploma de bachiller para ambos casos. [...] Las equivalencias deberán establecerse, de conformidad con lo señalado en el presente artículo, directamente en el manual específico de funciones y de requisitos que se adopte e igualmente deberán señalarse en las respectivas convocatorias.",
+    "pregunta": "Una asesora revisa requisitos para Auxiliar Administrativo grado 10: un año de educación superior y otro de experiencia relacionada. El manual y la convocatoria admiten las equivalencias del artículo 20. Dos aspirantes bachilleres carecen de estudios superiores: Lina acredita tres años de experiencia relacionada; Mateo, dos años de esa experiencia y un curso específico de 40 horas. Reservando en cada caso el año de experiencia propio del empleo, ¿qué resultado corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los dos satisfacen estudios por equivalencia: Lina con dos años adicionales y Mateo con un año adicional más su curso.",
+        "explicacion": "Incorrecta. Lina satisface la equivalencia; el curso de Mateo no alcanza las sesenta horas mínimas necesarias para combinarlo con un año de experiencia."
+      },
+      {
+        "id": "B",
+        "texto": "Lina satisface estudios por equivalencia con dos años adicionales; Mateo necesita completar una alternativa de equivalencia admitida.",
+        "explicacion": "Correcta. Después de reservar el año mínimo, Lina tiene otros dos para sustituir el año de educación superior. A Mateo le queda uno, pero su curso de cuarenta horas no cumple el mínimo de sesenta."
+      },
+      {
+        "id": "C",
+        "texto": "Mateo satisface estudios por equivalencia con su curso y experiencia; Lina necesita aportar un curso para usar sus años adicionales.",
+        "explicacion": "Incorrecta. La alternativa de dos años de experiencia por uno de educación superior no exige curso. La alternativa con un solo año adicional sí exige curso de sesenta horas, que Mateo no acredita."
+      },
+      {
+        "id": "D",
+        "texto": "Los dos necesitan estudios superiores: los años de experiencia acreditados cubren experiencia del empleo, pero no sustituyen educación.",
+        "explicacion": "Incorrecta. Desconoce las alternativas de equivalencia autorizadas en el manual y convocatoria del caso. No se reutiliza el año mínimo: Lina dispone de dos adicionales."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Al reservar un año para la experiencia exigida, Lina conserva dos y Mateo uno. El art. 20 permite sustituir un año de educación superior con dos de experiencia, o con uno y curso de al menos sesenta horas, acreditando bachillerato. Lina cumple; Mateo no con el curso de cuarenta horas.",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=82093",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-16"
+    }
+  }
+]
