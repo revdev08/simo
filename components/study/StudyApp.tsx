@@ -5,6 +5,7 @@ import { ArrowLeft, Users } from 'lucide-react'
 import { AREAS_FUNCIONALES, NIVELES, sectionOf, type AreaId, type NivelId, type Question, type SectionId } from '@/lib/question-types'
 import SimulacroSession, { clearSimulacroState, loadSimulacroState, type SimulacroState } from './SimulacroSession'
 import StudyHome, { type ModuleStat } from './StudyHome'
+import { CLAVE_REPASO, marcarGuia } from './GuiaInicio'
 import StudySession from './StudySession'
 import { clock } from './attempts'
 import { MINUTOS_POR_PREGUNTA, ORDEN_SECCIONES, PESO_CON_AREA, PESO_SIN_AREA } from './simulacro-config'
@@ -300,6 +301,7 @@ export default function StudyApp({ questions, userName }: { questions: Question[
         if (!wrong.length) return
         setActiveModuleQuestions(shuffle(wrong))
         setActiveModule(pedidoModulo ? `${REPASO}: ${pedidoModulo}` : REPASO)
+        marcarGuia(CLAVE_REPASO, true)
       } else if (pedidoModulo) {
         const needsNivel = questions.some((q) => q.modulo === pedidoModulo && q.nivel && !q.nivel.includes('todos'))
         if (needsNivel && !savedNivel) {
@@ -504,6 +506,7 @@ export default function StudyApp({ questions, userName }: { questions: Question[
 
 
   const openSession = (name: string, qs: Question[]) => {
+    if (name.startsWith(REPASO)) marcarGuia(CLAVE_REPASO, true)
     setActiveModuleQuestions(qs)
     setActiveModule(name)
     setSessionKey((k) => k + 1)
