@@ -132,6 +132,7 @@ export type Cobro = {
   pagoId: string
   fecha: string // creación del pago
   aprobadoEn: string | null
+  monto: number | null // valor del pago (puede diferir del precio de la suscripción)
   pagadorId: string | null // cuenta de Mercado Pago que pagó
   correo: string | null // del pagador en Mercado Pago
   aproximado: boolean // asociado por pagador y hora, porque el pago no traía el id de la suscripción
@@ -216,6 +217,7 @@ export async function pagosDeSuscripciones(subs: Suscripcion[], dias: number): P
         pagoId: String(p.id),
         fecha: p.date_created ?? '',
         aprobadoEn: p.date_approved ?? null,
+        monto: p.transaction_amount ?? null,
         pagadorId: p.payer?.id ? String(p.payer.id) : null,
         correo: p.payer?.email || null,
         aproximado,
@@ -254,7 +256,7 @@ export function clasificarPagos(subs: Suscripcion[], cobros: Record<string, Cobr
   const yaPagaron = new Set(aprobados.filter((x) => !x.sub.prueba && Date.parse(x.sub.creada) < desde).map((x) => persona(x.sub, x.c)))
   const conPago = new Set<string>()
   return aprobados.map(({ sub, c, hora }): PagoAprobado => {
-    const base = { subId: sub.id, dia: diaColombia(hora), hora: new Date(hora).toISOString(), correo: c.correo, monto: sub.monto }
+    const base = { subId: sub.id, dia: diaColombia(hora), hora: new Date(hora).toISOString(), correo: c.correo, monto: c.monto ?? sub.monto }
     if (sub.prueba) return { ...base, tipo: 'prueba' }
     const quien = persona(sub, c)
     const nuevo = !conPago.has(sub.id) && Date.parse(sub.creada) >= desde && !yaPagaron.has(quien)
@@ -360,7 +362,14 @@ export type SuscripcionReciente = DatosSuscriptor & {
   monto: number | null
 }
 
-export type FilaDia = { dia: string; registros: number | null; nuevas: number | null; siguenActivas: number | null; recurrentes: number | null }
+export type FilaDia = {
+  dia: string
+  registros: number | null
+  nuevas: number | null
+  siguenActivas: number | null
+  recurrentes: number | null
+  ingresos: number | null // suma de los pagos aprobados del día (nuevos y recurrentes, sin compras de prueba)
+}
 
 // Una fila por día; null cuando la fuente no respondió
 export function resumenPorDia(dias: string[], registros: number[] | null, pagos: PagoDelPanel[] | null): FilaDia[] {
@@ -380,11 +389,14 @@ export function resumenPorDia(dias: string[], registros: number[] | null, pagos:
   const porNuevo = contarDias(nuevos)
   const porActivo = contarDias(nuevos?.filter((p) => p.activa) ?? null)
   const porRecurrente = contarDias(pagos?.filter((p) => p.tipo === 'recurrente') ?? null)
+  const porIngresos = pagos ? new Map<string, number>() : null
+  for (const p of pagos ?? []) if (p.tipo !== 'prueba' && p.monto) porIngresos!.set(p.dia, (porIngresos!.get(p.dia) ?? 0) + p.monto)
   return dias.map((dia) => ({
     dia,
     registros: porRegistro ? (porRegistro.get(dia) ?? 0) : null,
     nuevas: porNuevo ? (porNuevo.get(dia) ?? 0) : null,
     siguenActivas: porActivo ? (porActivo.get(dia) ?? 0) : null,
     recurrentes: porRecurrente ? (porRecurrente.get(dia) ?? 0) : null,
+    ingresos: porIngresos ? (porIngresos.get(dia) ?? 0) : null,
   }))
 }

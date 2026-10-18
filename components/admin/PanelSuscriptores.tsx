@@ -70,7 +70,7 @@ const pesos = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP
 const fechaLarga = new Intl.DateTimeFormat('es-CO', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' })
 const fechaHora = new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'America/Bogota' })
 const diaTexto = (dia: string) => fechaLarga.format(new Date(`${dia}T12:00:00Z`)).replace(/\./g, '')
-const suma = (filas: FilaDia[], campo: 'registros' | 'nuevas' | 'recurrentes') => filas.reduce((s, f) => s + (f[campo] ?? 0), 0)
+const suma = (filas: FilaDia[], campo: 'registros' | 'nuevas' | 'recurrentes' | 'ingresos') => filas.reduce((s, f) => s + (f[campo] ?? 0), 0)
 
 function Cifra({ etiqueta, valor, detalle }: { etiqueta: string; valor: string; detalle?: string }) {
   return (
@@ -344,7 +344,14 @@ export default function PanelSuscriptores({
 
         {(hayRegistros || haySuscripciones) && (
           <section className="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
-            <h2 className="border-b border-slate-100 px-5 py-3 text-sm font-semibold text-slate-900 dark:border-slate-800 dark:text-white">Detalle por día</h2>
+            <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-slate-100 px-5 py-3 dark:border-slate-800">
+              <h2 className="text-sm font-semibold text-slate-900 dark:text-white">Detalle por día</h2>
+              {haySuscripciones && (
+                <span className="text-xs text-slate-500 dark:text-slate-400">
+                  Ingresos de los últimos {dias} días: <span className="font-semibold text-slate-900 dark:text-white">{pesos.format(suma(filas, 'ingresos'))}</span>
+                </span>
+              )}
+            </div>
             <div className="max-h-[28rem] overflow-auto">
               <table className="w-full text-sm">
                 <thead className="sticky top-0 bg-white text-left text-xs text-slate-500 dark:bg-slate-900 dark:text-slate-400">
@@ -354,6 +361,7 @@ export default function PanelSuscriptores({
                     {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Suscriptores nuevos</th>}
                     {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Siguen activos</th>}
                     {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Recurrentes</th>}
+                    {haySuscripciones && <th className="px-3 py-2 sm:px-5 text-right font-medium">Ingresos</th>}
                   </tr>
                 </thead>
                 <tbody className="tabular-nums">
@@ -366,6 +374,11 @@ export default function PanelSuscriptores({
                       )}
                       {haySuscripciones && <td className="px-3 py-2 sm:px-5 text-right text-slate-500 dark:text-slate-400">{f.siguenActivas}</td>}
                       {haySuscripciones && <td className="px-3 py-2 sm:px-5 text-right text-slate-500 dark:text-slate-400">{f.recurrentes}</td>}
+                      {haySuscripciones && (
+                        <td className={`whitespace-nowrap px-3 py-2 sm:px-5 text-right ${f.ingresos ? 'font-semibold text-slate-900 dark:text-white' : 'text-slate-400 dark:text-slate-600'}`}>
+                          {pesos.format(f.ingresos ?? 0)}
+                        </td>
+                      )}
                     </tr>
                   ))}
                 </tbody>
@@ -377,7 +390,8 @@ export default function PanelSuscriptores({
         <p className="text-xs text-slate-500 dark:text-slate-400">
           Suscriptor nuevo: persona cuyo primer pago aprobado fue ese día (fecha de aprobación del pago, hora de Colombia). No cuentan los intentos
           rechazados. «Recurrentes» son los pagos aprobados de quienes ya habían pagado antes: renovaciones mensuales y personas que vuelven a
-          suscribirse. Las compras de prueba del plan de $2.000 no cuentan en ningún total. Un día pasado solo cambia si se devuelve un pago. Los totales
+          suscribirse. Las compras de prueba del plan de $2.000 no cuentan en ningún total. Un día pasado solo cambia si se devuelve un pago. «Ingresos» es la suma de los pagos
+          aprobados de ese día (nuevos y recurrentes), por su valor real y sin las compras de prueba; no descuenta la comisión de Mercado Pago. Los totales
           de 7, 30 y 90 días son ventanas móviles: cada día entra el de hoy y sale el más antiguo, así que pueden bajar aunque nadie cancele. «Siguen activos» son los nuevos de ese día que hoy tienen el cobro autorizado. Los registros vienen de Clerk. El correo es el de la cuenta en SIMO; con «MP», es el correo con el que pagó en Mercado Pago. «Pagador A», «B»…: suscripciones hechas desde la misma cuenta de Mercado Pago. Los datos de Mercado Pago se renuevan como mucho cada {minutosCache} minutos para no pasar su límite de peticiones; si Mercado Pago falla al renovarlos, se muestran los últimos que se pudieron leer.
         </p>
       </div>

@@ -95,7 +95,7 @@ async function leerMercadoPago(): Promise<PanelMercadoPago> {
   }
 }
 
-const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v3'], {
+const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v4'], {
   revalidate: REVALIDAR_S,
   tags: ['admin-mercadopago'],
 })
