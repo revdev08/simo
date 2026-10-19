@@ -9,6 +9,7 @@ import { CLAVE_REPASO, marcarGuia } from './GuiaInicio'
 import StudySession from './StudySession'
 import { clock } from './attempts'
 import { MINUTOS_POR_PREGUNTA, ORDEN_SECCIONES, PESO_CON_AREA, PESO_SIN_AREA } from './simulacro-config'
+import { leerPreguntasPorSesion } from './preguntas-sesion'
 import {
   armarSimulacroConvocatoria,
   buscarSeleccion,
@@ -529,7 +530,10 @@ export default function StudyApp({ questions, userName }: { questions: Question[
       return
     }
     const modQs = questions.filter((q) => q.modulo === modName && appliesToNivel(q, nivelForSession))
-    openSession(modName, practiceOrder(modQs, progress))
+    // Si el aspirante eligió cuántas preguntas por sesión, se toman las primeras del orden de práctica
+    const ordenadas = practiceOrder(modQs, progress)
+    const limite = leerPreguntasPorSesion()
+    openSession(modName, limite ? ordenadas.slice(0, limite) : ordenadas)
   }
 
   // Practica solo las preguntas que se respondieron mal

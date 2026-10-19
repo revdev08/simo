@@ -7,6 +7,10 @@ export const SIMULACRO_OPCIONES = [
   { n: 80, label: 'Completo' },
 ] as const
 
+// Simulacro de tamaño personalizado
+export const SIMULACRO_MIN = 5
+export const SIMULACRO_MAX = 150
+
 export const MINUTOS_POR_PREGUNTA = 2
 
 // Sin área funcional el simulacro no incluye preguntas funcionales; con área, entran las de esa área

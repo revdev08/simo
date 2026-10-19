@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { ArrowRight, ChevronDown, CircleCheck, ClipboardList, RotateCcw, SlidersHorizontal, Target, Timer } from 'lucide-react'
 import { AREAS_FUNCIONALES, MODULE_SECTIONS, NIVELES, type AreaId, type NivelId, type SectionId } from '@/lib/question-types'
 import { moduleIcon, SECTION_STYLE } from './module-meta'
-import { MINUTOS_POR_PREGUNTA, PESO_CON_AREA, PESO_SIN_AREA, SIMULACRO_OPCIONES } from './simulacro-config'
+import { MINUTOS_POR_PREGUNTA, PESO_CON_AREA, PESO_SIN_AREA, SIMULACRO_MAX, SIMULACRO_MIN, SIMULACRO_OPCIONES } from './simulacro-config'
+import { guardarPreguntasPorSesion, OPCIONES_POR_SESION, usePreguntasPorSesion } from './preguntas-sesion'
 import { formatDuration, type SimulacroState } from './SimulacroSession'
 import { minimoEliminatoria, type SeleccionConvocatoria } from './simulacro-convocatoria'
 import ConvocatoriaPicker from './ConvocatoriaPicker'
@@ -218,6 +219,14 @@ export default function StudyHome({
   const [modoElegido, setModo] = useState<'general' | 'convocatoria'>('convocatoria')
   const modo = convocatoria ? modoElegido : 'general'
   const poolSize = modo === 'convocatoria' ? convocatoriaPoolSize : simulacroPoolSize
+  // Tamaño personalizado: el aspirante escribe cuántas preguntas quiere
+  const [personalizado, setPersonalizado] = useState(false)
+  const [textoN, setTextoN] = useState('30')
+  const maxN = Math.min(SIMULACRO_MAX, poolSize)
+  const nPedido = Number(textoN)
+  const nValido = Number.isInteger(nPedido) && nPedido >= SIMULACRO_MIN && nPedido <= maxN
+  const tamano = personalizado ? (nValido ? nPedido : 0) : size
+  const porSesion = usePreguntasPorSesion()
   // Módulos del perfil con más peso, para describir el simulacro de la convocatoria
   const resumenConvocatoria = (() => {
     if (!convocatoria) return ''
@@ -382,6 +391,14 @@ export default function StudyHome({
             <p className="mt-2 text-sm sm:text-base text-brand-100/80 max-w-lg">
               Con cronómetro y sin ver las respuestas hasta el final. Al terminar ves tu resultado por módulo.
             </p>
+            {!savedSimulacro && !convocatoria && (
+              <div className="mt-4 flex flex-col gap-2 rounded-2xl bg-white/10 border border-white/15 p-3.5 text-sm sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-brand-50">Sin un concurso elegido, el simulacro mezcla temas de todos los concursos. Elige el tuyo y te saldrán solo los temas de tu prueba.</p>
+                <button type="button" onClick={guiaElegirConcurso} className="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold text-brand-900 hover:bg-brand-50">
+                  Elegir mi concurso
+                </button>
+              </div>
+            )}
 
             {savedSimulacro ? (
               <div className="mt-6 rounded-2xl bg-white/10 border border-white/15 p-4 sm:p-5">
@@ -427,9 +444,9 @@ export default function StudyHome({
                     ))}
                   </div>
                 )}
-                <div role="radiogroup" aria-label="Tamaño del simulacro" className="mt-6 grid grid-cols-3 gap-2 sm:gap-3">
+                <div role="radiogroup" aria-label="Tamaño del simulacro" className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
                   {SIMULACRO_OPCIONES.map((op) => {
-                    const selected = size === op.n
+                    const selected = !personalizado && size === op.n
                     return (
                       <button
                         key={op.n}
@@ -437,7 +454,10 @@ export default function StudyHome({
                         role="radio"
                         aria-checked={selected}
                         disabled={poolSize < op.n}
-                        onClick={() => setSize(op.n)}
+                        onClick={() => {
+                          setPersonalizado(false)
+                          setSize(op.n)
+                        }}
                         className={`rounded-xl px-3 py-3 text-left border transition-colors disabled:opacity-40 ${
                           selected ? 'bg-white border-white text-brand-950' : 'bg-white/5 border-white/15 text-white hover:bg-white/10'
                         }`}
@@ -450,15 +470,50 @@ export default function StudyHome({
                       </button>
                     )
                   })}
+                  <button
+                    type="button"
+                    role="radio"
+                    aria-checked={personalizado}
+                    disabled={poolSize < SIMULACRO_MIN}
+                    onClick={() => setPersonalizado(true)}
+                    className={`rounded-xl px-3 py-3 text-left border transition-colors disabled:opacity-40 ${
+                      personalizado ? 'bg-white border-white text-brand-950' : 'bg-white/5 border-white/15 text-white hover:bg-white/10'
+                    }`}
+                  >
+                    <span className="block text-sm font-semibold">Personalizado</span>
+                    <span className={`block text-xs mt-0.5 ${personalizado ? 'text-slate-600' : 'text-brand-100/70'}`}>Tú eliges cuántas</span>
+                  </button>
                 </div>
+                {personalizado && (
+                  <div className="mt-3">
+                    <label className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                      <span className="font-semibold">Número de preguntas</span>
+                      <input
+                        type="number"
+                        inputMode="numeric"
+                        min={SIMULACRO_MIN}
+                        max={maxN}
+                        value={textoN}
+                        onChange={(e) => setTextoN(e.target.value)}
+                        aria-invalid={!nValido}
+                        aria-describedby="simulacro-n-ayuda"
+                        className="w-24 rounded-lg bg-white px-3 py-1.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-300"
+                      />
+                      <span id="simulacro-n-ayuda" className={nValido ? 'text-brand-100/70' : 'text-amber-200'}>
+                        {nValido ? `Entre ${SIMULACRO_MIN} y ${maxN}` : `Escribe un número entero entre ${SIMULACRO_MIN} y ${maxN}`}
+                      </span>
+                    </label>
+                  </div>
+                )}
                 {modo === 'convocatoria' && convocatoria ? (
                   <p className="mt-4 text-xs sm:text-sm text-brand-100/80 leading-relaxed">
-                    {humanMinutes(size * MINUTOS_POR_PREGUNTA)} en total. Perfil: {convocatoria.perfil.label}. Pesa más en {resumenConvocatoria}.
-                    {poolSize < size && ` Por ahora hay ${poolSize} preguntas para este perfil.`}
+                    {tamano ? `${humanMinutes(tamano * MINUTOS_POR_PREGUNTA)} en total. ` : ''}Perfil: {convocatoria.perfil.label}. Pesa más en {resumenConvocatoria}.
+                    {poolSize < tamano && ` Por ahora hay ${poolSize} preguntas para este perfil.`}
                   </p>
                 ) : (
                   <p className="mt-4 text-xs sm:text-sm text-brand-100/80 leading-relaxed">
-                    {humanMinutes(size * MINUTOS_POR_PREGUNTA)} en total. Incluye generales ({pct(pesos.generales)})
+                    {convocatoria && 'En «General» se mezclan temas de todos los concursos; para practicar solo los de tu prueba, elige «Mi convocatoria». '}
+                    {tamano ? `${humanMinutes(tamano * MINUTOS_POR_PREGUNTA)} en total. ` : ''}Incluye generales ({pct(pesos.generales)})
                     {area ? `, ${areaInfo(area)?.frase} (${pct(pesos.funcionales)})` : ''}, aptitudes ({pct(pesos.aptitudes)}) y comportamentales ({pct(pesos.comportamentales)})
                     {nivel ? ` de nivel ${nivelLabel(nivel).toLowerCase()}` : ''}.
                     {!area && ' Elige el área de tu cargo para sumar preguntas funcionales.'}
@@ -466,8 +521,8 @@ export default function StudyHome({
                 )}
                 <button
                   type="button"
-                  onClick={() => onStartSimulacro(size, modo)}
-                  disabled={poolSize < size}
+                  onClick={() => tamano && onStartSimulacro(tamano, modo)}
+                  disabled={!tamano || poolSize < tamano}
                   className="mt-6 w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white text-brand-900 font-semibold px-6 py-3 hover:bg-brand-50 disabled:opacity-50"
                 >
                   Empezar simulacro <ArrowRight className="w-4 h-4" aria-hidden />
@@ -582,6 +637,24 @@ export default function StudyHome({
               </button>
             )
           })}
+        </div>
+
+        <div role="radiogroup" aria-label="Preguntas por sesión de práctica" className="flex flex-wrap items-center gap-2 text-sm">
+          <span className="font-medium text-slate-600 dark:text-slate-400">Preguntas por sesión:</span>
+          {OPCIONES_POR_SESION.map((n) => (
+            <button
+              key={n}
+              type="button"
+              role="radio"
+              aria-checked={porSesion === n}
+              onClick={() => guardarPreguntasPorSesion(n)}
+              className={`rounded-lg px-3 py-1.5 font-semibold transition-colors ${
+                porSesion === n ? 'bg-brand-700 text-white' : 'bg-slate-200/60 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700'
+              }`}
+            >
+              {n ? n : 'Todas'}
+            </button>
+          ))}
         </div>
 
         <div role="tabpanel" id={`panel-${current.id}`} aria-labelledby={`tab-${current.id}`} className="space-y-4">
