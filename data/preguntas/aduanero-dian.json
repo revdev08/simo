@@ -4353,5 +4353,1090 @@
       "fecha": "2026-10-19",
       "p_estimado": 80
     }
+  },
+  {
+    "id": "TC-ADU-081",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Origen de las mercancías",
+    "subtema": "Conservación de los documentos que prueban el origen: importador y productor exportador",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 317, incs. 1 y 2 (modificados por el art. 77 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "El productor o exportador que expida una prueba de origen, o que solicite a la autoridad competente su expedición, deberá conservar por el período y conforme con las obligaciones establecidas en cada acuerdo comercial, la prueba de origen y todos los registros y documentos necesarios para demostrar que la mercancía sobre la cual se expidió la prueba de origen califica como originaria, y deberá ponerlos a disposición de la autoridad aduanera, cuando esta lo requiera. En el evento en que el acuerdo comercial no contemple un término, mínimo deberá conservarlos por cinco (5) años a partir de la fecha de expedición de la prueba de origen. [...] El importador que solicite trato arancelario preferencial para una mercancía o que expida una certificación de origen no preferencial, deberá conservar por un término mínimo de cinco (5) años, a partir de la fecha de la presentación y aceptación de la declaración de importación de la mercancía, los registros y documentos necesarios para demostrar que la mercancía califica",
+    "pregunta": "El lunes 19 de octubre de 2026, una gestora de la DIAN prepara dos requerimientos de información sobre origen. El primero es para una importadora que pidió trato arancelario preferencial en una declaración de importación presentada y aceptada el jueves 21 de octubre de 2021; la prueba de origen que la soportó la había expedido el exportador extranjero el jueves 2 de septiembre de 2021. El segundo es para un productor colombiano que expidió el viernes 15 de octubre de 2021 una prueba de origen para una exportación embarcada el lunes 25 de octubre de 2021; el acuerdo comercial aplicable no fija un término de conservación. ¿Quién sigue obligado a conservar los registros y documentos que demuestran el origen?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo la importadora: su término va de la aceptación de la declaración al 21 de octubre de 2026; el del productor venció el 15 de octubre.",
+        "explicacion": "Correcta. La importadora conserva los registros por un mínimo de cinco años desde la presentación y aceptación de la declaración: del 21 de octubre de 2021 al 21 de octubre de 2026. El productor, si el acuerdo no fija término, los conserva cinco años desde la expedición de la prueba: del 15 de octubre de 2021 al 15 de octubre de 2026, ya vencido (art. 317)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el productor: su término corre desde el embarque, hasta el 25 de octubre de 2026; el de la importadora venció el 2 de septiembre de 2026.",
+        "explicacion": "Incorrecta. Invierte los puntos de partida. El art. 317 cuenta el término del productor desde la expedición de la prueba de origen, no desde el embarque, y el de la importadora desde la presentación y aceptación de la declaración, no desde la expedición de la prueba."
+      },
+      {
+        "id": "C",
+        "texto": "Los dos: el término de la importadora va hasta el 21 de octubre de 2026, y el del productor, contado desde el embarque, hasta el 25 de octubre.",
+        "explicacion": "Incorrecta. Acierta con la importadora, pero el término del productor no se cuenta desde el embarque. A falta de término en el acuerdo, son cinco años desde la expedición de la prueba de origen, y vencieron el 15 de octubre de 2026 (art. 317)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno: los dos términos corren desde la expedición de la prueba de origen y vencieron el 2 de septiembre y el 15 de octubre de 2026.",
+        "explicacion": "Incorrecta. Acierta con el productor, pero el término de la importadora no corre desde la expedición de la prueba de origen sino desde la presentación y aceptación de su declaración, y va hasta el 21 de octubre de 2026 (art. 317)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la declaración con trato preferencial se aceptó el 21 de octubre de 2021, y el productor expidió su prueba de origen el 15 de octubre de 2021, sin término en el acuerdo. Regla: el art. 317 obliga al importador a conservar cinco años desde la presentación y aceptación de la declaración, y al productor, a falta de término en el acuerdo, cinco años desde la expedición de la prueba. Cálculo: importadora, hasta el 21 de octubre de 2026; productor, hasta el 15 de octubre de 2026. Conclusión: el 19 de octubre de 2026 solo la importadora sigue obligada.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-082",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Origen de las mercancías",
+    "subtema": "Facturación por un tercer país y transbordo en un país no Parte",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 315",
+      "art. 316",
+      "art. 177, num. 4 (modificado por el art. 57 del Decreto 360 de 2021)"
+    ],
+    "texto_fuente": "Cuando la mercancía objeto de importación sea facturada por un país distinto al del origen de la mercancía, deberá indicarse en la prueba de origen y señalar nombre o razón social y domicilio de la persona que factura la operación de comercio, según lo dispuesto en el Acuerdo Comercial. En aquellos acuerdos donde se establezca información adicional, la misma se deberá incluir en la prueba de origen. [...] Una mercancía no perderá su condición de originaria al ser objeto de tránsito, transbordo o almacenamiento temporal en un país no Parte, siempre y cuando se sujete a lo previsto en el respectivo acuerdo comercial. [...] La prueba de origen señalada en el respectivo acuerdo comercial y los documentos relativos a las condiciones de expedición directa, tránsito y/o transbordo, cuando a ello hubiere lugar;",
+    "pregunta": "Un analista de la División de la Operación Aduanera revisa los documentos soporte de una importación de motores eléctricos producidos en un país socio de Colombia en un acuerdo comercial, declarada con el trato arancelario preferencial de ese acuerdo. Suponga que el acuerdo admite que la mercancía la facture un operador de un país no Parte y que, sobre ese operador, exige que la prueba de origen traiga los datos que pida la norma aduanera de la Parte importadora, sin agregar otros. La factura la expidió una comercializadora de Panamá, que no es Parte, y la carga se transbordó en un puerto panameño. El importador aportó los documentos del transbordo, que muestran que se cumplieron las condiciones del acuerdo. La prueba de origen la expidió el productor y no menciona a la comercializadora. ¿Qué debe concluir el analista?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la prueba cumple, porque no tenía que mencionar ni identificar a quien facturó desde Panamá, y que el transbordo allí no afecta el origen de los motores.",
+        "explicacion": "Incorrecta. Acierta con el transbordo, pero la norma colombiana exige indicar en la prueba de origen la facturación por un país distinto al de origen, con el nombre o razón social y el domicilio de quien factura (art. 315), y el acuerdo exige en la prueba esos mismos datos."
+      },
+      {
+        "id": "B",
+        "texto": "Que la prueba cumple, porque no tenía que mencionar ni identificar a quien facturó desde Panamá, pero el transbordo allí les quitó a los motores su origen.",
+        "explicacion": "Incorrecta. Falla en las dos conclusiones: la prueba debía indicar la facturación por un tercer país con el nombre o razón social y el domicilio de quien factura (art. 315), y el transbordo en un país no Parte no quita la condición de originaria si se cumple lo previsto en el acuerdo (art. 316), como lo acreditó el importador."
+      },
+      {
+        "id": "C",
+        "texto": "Que la prueba falla, porque debía indicar el nombre y el domicilio de quien facturó desde Panamá, y que el transbordo allí no afecta el origen de los motores.",
+        "explicacion": "Correcta. Cuando la mercancía la factura un país distinto al de origen, la prueba de origen debe indicarlo y señalar el nombre o razón social y el domicilio de quien factura (art. 315); el acuerdo exige esos mismos datos, sin agregar otros. El transbordo en un país no Parte no quita la condición de originaria si se cumplen las condiciones del acuerdo (art. 316), acreditadas con los documentos del art. 177, num. 4."
+      },
+      {
+        "id": "D",
+        "texto": "Que la prueba falla, porque debía indicar el nombre y el domicilio de quien facturó desde Panamá, y que el transbordo allí les quitó a los motores su origen.",
+        "explicacion": "Incorrecta. Acierta con la omisión en la prueba de origen, pero el transbordo en un país no Parte no quita la condición de originaria si se cumple lo previsto en el acuerdo (art. 316), y el importador acreditó que se cumplió."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: factura una comercializadora de Panamá, país no Parte; el acuerdo lo admite y exige en la prueba los datos que pida la norma colombiana; la carga se transbordó allí cumpliendo el acuerdo, y la prueba de origen no menciona a quien factura. Regla: el art. 315 exige indicar en la prueba la facturación por un país distinto al de origen, con el nombre o razón social y el domicilio de quien factura; según el art. 316, el transbordo en un país no Parte no quita el origen si se cumple el acuerdo. Conclusión: la prueba falla por la omisión; el transbordo no afecta el origen.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-083",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Origen de las mercancías",
+    "subtema": "Excepción del acuerdo a la presentación de la prueba de origen y cumplimiento de las normas de origen",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 311",
+      "art. 309, incs. 1 y 3"
+    ],
+    "texto_fuente": "No se exigirá la presentación de la prueba de origen en aquellas importaciones que correspondan a las excepciones establecidas en un acuerdo comercial en vigor para Colombia. Para tal efecto, previo a la importación, deberá consultarse el acuerdo comercial que será invocado en la declaración de importación para verificar si procede la presentación de la prueba de origen como documento soporte de dicha declaración. Tal excepción no exime del cumplimiento de las demás normas de origen previstas en el acuerdo comercial invocado. [...] Las mercancías importadas al amparo de un Acuerdo comercial vigente suscrito por Colombia se beneficiarán de las preferencias arancelarias con el cumplimiento de los requisitos de origen establecidos. [...] El no cumplimiento integral de las normas de origen en un acuerdo comercial, al amparo del cual se utilizó trato arancelario preferencial, obliga al importador al pago de los tributos aduaneros correspondientes.",
+    "pregunta": "Una importadora presentó dos declaraciones con el trato preferencial de un acuerdo comercial cuyo capítulo de origen no exige prueba de origen en las importaciones de valor no superior a USD 1.000 que no formen parte de una serie de importaciones. Ninguna de las dos forma parte de una serie ni lleva prueba de origen. La primera, por USD 900, ampara lentes fabricados en el país socio que cumplen las normas de origen del acuerdo. La segunda, por USD 850, ampara lentes fabricados en un país que no es Parte y solo reempacados en el país socio, por lo que no las cumplen. Un analista revisa ambas. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que ninguna tiene trato preferencial, porque la prueba de origen es documento soporte obligatorio de toda declaración que lo invoque.",
+        "explicacion": "Incorrecta. La prueba de origen no se exige en las importaciones que encajan en una excepción del acuerdo (art. 311). La primera declaración sí conserva la preferencia."
+      },
+      {
+        "id": "B",
+        "texto": "Que la primera conserva la preferencia sin prueba de origen, y que por la segunda la importadora debe pagar los tributos aduaneros.",
+        "explicacion": "Correcta. La excepción del acuerdo libera de presentar la prueba de origen, pero no de cumplir las demás normas de origen (art. 311). La primera las cumple; la segunda no, y el incumplimiento de las normas de origen obliga al importador a pagar los tributos (art. 309)."
+      },
+      {
+        "id": "C",
+        "texto": "Que las dos conservan la preferencia, porque la excepción para envíos de bajo valor releva a la importadora de cumplir las normas de origen.",
+        "explicacion": "Incorrecta. La excepción solo exime de presentar la prueba de origen. El art. 311 aclara que no exime del cumplimiento de las demás normas de origen del acuerdo."
+      },
+      {
+        "id": "D",
+        "texto": "Que la primera conserva la preferencia, y que la segunda también la conserva si la importadora presenta una prueba de origen dentro de los cinco días siguientes.",
+        "explicacion": "Incorrecta. Acierta con la primera, pero ninguna prueba de origen hace originarios unos lentes que no cumplen las normas de origen del acuerdo. Sin ese cumplimiento no hay preferencia, y la importadora debe pagar los tributos (art. 309)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: los dos envíos encajan en la excepción del acuerdo para importaciones de hasta USD 1.000, pero los lentes del segundo no cumplen las normas de origen. Regla: el art. 311 libera de presentar la prueba de origen en las excepciones del acuerdo, sin eximir del cumplimiento de las demás normas de origen; el art. 309 obliga al importador a pagar los tributos cuando no se cumplen íntegramente. Conclusión: la primera conserva la preferencia sin prueba; por la segunda se pagan los tributos.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-ADU-084",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Origen de las mercancías",
+    "subtema": "Exportador autorizado: declaración juramentada de origen vigente y producto autorizado",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 312",
+      "art. 10, num. 4.1 (modificado por el art. 2 del Decreto 360 de 2021) y num. 4.3",
+      "art. 3 (definición de declaración juramentada de origen)"
+    ],
+    "texto_fuente": "La prueba de origen deberá ser expedida por el productor, exportador o autoridad competente a solicitud del exportador, según lo disponga el acuerdo comercial correspondiente. Para la emisión de una prueba de origen por parte de la autoridad competente o por un exportador autorizado, se requerirá como documento soporte, la declaración juramentada de origen vigente y demás requisitos que exija el acuerdo comercial. [...] Tener vigente la declaración juramentada de origen para cada uno de los productos contenidos en las declaraciones de origen o declaraciones en factura que expida. [...] Expedir declaraciones de origen o declaraciones en facturas, solo para aquellas mercancías para las cuales haya obtenido autorización y que cumplan con lo establecido en el capítulo de origen del respectivo acuerdo comercial. [...] Declaración bajo juramento emitida por el productor que contiene información del proceso productivo, materiales, costos de producción y en general toda aquella información que permita establecer que la mercancía es originaria y que sirve como soporte para la expedición de una prueba de origen.",
+    "pregunta": "Una fábrica colombiana de calzado es exportador autorizado y expide declaraciones en factura para sus exportaciones de zapatos a un país cuyo acuerdo comercial con Colombia admite esa figura. Ahora exportará también bolsos de cuero, que hace en la misma planta, pero no tiene declaración juramentada de origen de los bolsos ni autorización para ese producto. Su gerente propone expedir desde ya las declaraciones en factura de los bolsos y presentar más adelante la declaración juramentada o, si eso no se admite, pedir a la DIAN un certificado de origen. Un gestor de la Dirección Seccional atiende la consulta. ¿Qué debe responder?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede expedirlas desde ya, porque la calidad de exportador autorizado cubre toda su producción, y que debe conservar los soportes cinco años.",
+        "explicacion": "Incorrecta. El exportador autorizado solo puede expedir declaraciones en factura para las mercancías para las que obtuvo autorización (art. 10, num. 4.3), y debe tener vigente la declaración juramentada de cada producto (num. 4.1)."
+      },
+      {
+        "id": "B",
+        "texto": "Que no puede usar ninguna de las dos vías: le falta autorización para los bolsos y, como exportador autorizado, ya no puede pedirle certificados a la DIAN.",
+        "explicacion": "Incorrecta. Acierta en que hoy no puede usar ninguna de las dos vías, pero ninguna norma le impide a un exportador autorizado pedir a la DIAN un certificado de origen. Lo que bloquea las dos vías es que no tiene declaración juramentada de origen vigente de los bolsos (art. 312)."
+      },
+      {
+        "id": "C",
+        "texto": "Que no puede expedirlas, pero sí obtener el certificado de la DIAN, trámite en el que la declaración juramentada de origen no es requisito.",
+        "explicacion": "Incorrecta. Acierta en que no puede expedir las declaraciones en factura, pero el art. 312 exige la declaración juramentada vigente también cuando la prueba la emite la autoridad competente."
+      },
+      {
+        "id": "D",
+        "texto": "Que no puede usar ninguna de las dos vías por ahora, pues la declaración en factura y el certificado dependen de una declaración juramentada vigente.",
+        "explicacion": "Correcta. Para emitir una prueba de origen, sea la autoridad competente o un exportador autorizado, se requiere como soporte la declaración juramentada de origen vigente (art. 312). Además, el exportador autorizado solo puede expedir declaraciones en factura de productos autorizados y con declaración juramentada vigente (art. 10, nums. 4.1 y 4.3)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la fábrica no tiene declaración juramentada de origen de los bolsos ni autorización para ese producto. Regla: el art. 312 exige la declaración juramentada vigente como soporte para que la autoridad competente o un exportador autorizado emitan una prueba de origen; el art. 10, nums. 4.1 y 4.3, limita las declaraciones en factura a productos autorizados y con declaración juramentada vigente. Conclusión: por ahora no puede usar ninguna de las dos vías.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-085",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Origen de las mercancías",
+    "subtema": "Resolución anticipada de origen sobre un asunto sujeto a verificación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 298, num. 3 y penúltimo inciso",
+      "art. 300, inc. 1 (modificado por el art. 39 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "Las resoluciones anticipadas podrán expedirse, sobre: [...] 3. Si una mercancía es originaria de acuerdo con las reglas de origen establecidas en los Acuerdos suscritos por Colombia que se encuentren en vigor, o en la legislación nacional. [...] La Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá negar la solicitud de una resolución anticipada, cuando verse sobre un aspecto sujeto a un proceso de verificación o en una instancia de revisión o apelación ante la misma entidad, cualquier ente gubernamental o en la jurisdicción de lo Contencioso Administrativo. [...] La resolución anticipada se expedirá dentro de los dos (2) meses contados a partir de la fecha de radicación de la solicitud o conforme con lo previsto en el acuerdo comercial de que se trate,",
+    "pregunta": "Una importadora pidió a la Subdirección Técnica Aduanera una resolución anticipada sobre si unas telas que importará de un país socio son originarias según el acuerdo comercial. Al estudiar la solicitud, un gestor encuentra que el origen de esas mismas telas, del mismo productor, es objeto de una verificación de origen que la DIAN adelanta sobre importaciones anteriores y que aún no termina. La importadora sostiene que la DIAN está obligada a pronunciarse de fondo dentro de los dos meses siguientes a la radicación. ¿Qué puede hacer la DIAN?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Suspender el trámite de la solicitud hasta que termine la verificación y decidir dentro de los dos meses siguientes a ese momento.",
+        "explicacion": "Incorrecta. El decreto no prevé suspender la solicitud mientras dura la verificación. Lo que permite es negarla (art. 298)."
+      },
+      {
+        "id": "B",
+        "texto": "Negar la solicitud, ya que el punto consultado lo examina la propia entidad dentro de un procedimiento de control que todavía no concluye.",
+        "explicacion": "Correcta. La DIAN puede negar la solicitud de resolución anticipada cuando verse sobre un aspecto sujeto a un proceso de verificación ante la misma entidad (art. 298), y el origen de esas telas está en una verificación en curso. El término de dos meses del art. 300 no la obliga a pronunciarse de fondo en ese caso."
+      },
+      {
+        "id": "C",
+        "texto": "Decidir de fondo dentro de los dos meses siguientes a la radicación, pues una verificación en curso no es motivo para negar la solicitud.",
+        "explicacion": "Incorrecta. Aplica solo el término del art. 300 y desconoce que el art. 298 permite negar la solicitud cuando el asunto está sujeto a verificación."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir la solicitud a la dependencia que adelanta la verificación, para que resuelva la solicitud y la verificación en un mismo acto.",
+        "explicacion": "Incorrecta. El decreto no prevé acumular la solicitud de resolución anticipada con la verificación de origen. La consecuencia prevista es la posibilidad de negar la solicitud (art. 298)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el origen de las mismas telas, del mismo productor, está en una verificación de origen de la DIAN sobre importaciones anteriores que no ha terminado. Regla: el art. 298 permite expedir resoluciones anticipadas sobre el carácter originario, pero autoriza a la DIAN a negar la solicitud cuando verse sobre un aspecto sujeto a un proceso de verificación ante la misma entidad; el término de dos meses del art. 300 no elimina esa facultad. Conclusión: la DIAN puede negar la solicitud.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-086",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Origen de las mercancías",
+    "subtema": "Deberes del importador que usó trato preferencial cuando se verifica el origen",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 309, incs. 2 y 3",
+      "art. 317, inc. 3",
+      "art. 318"
+    ],
+    "texto_fuente": "El importador está obligado a suministrar a la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), la información requerida para demostrar la condición de originaria de los bienes para los cuales solicitó el tratamiento preferencial en el contexto de los acuerdos comerciales o para la solicitud de resoluciones anticipadas. El no cumplimiento integral de las normas de origen en un acuerdo comercial, al amparo del cual se utilizó trato arancelario preferencial, obliga al importador al pago de los tributos aduaneros correspondientes. [...] Cuando una prueba de origen expedida por un productor o exportador sea la base de la solicitud del tratamiento arancelario preferencial, el importador, deberá hacer los arreglos necesarios para que el productor o exportador del país de exportación atienda los requerimientos que realice la autoridad aduanera en desarrollo de un procedimiento de verificación de origen. [...] La Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá adelantar verificaciones de origen con el objeto de determinar si una mercancía califica como originaria del país declarado.",
+    "pregunta": "En una verificación de origen, un gestor pidió a una importadora la información que demuestre que unos repuestos que importó con trato arancelario preferencial son originarios, y le pidió también que el productor extranjero que expidió la prueba de origen respondiera un cuestionario. La importadora contestó que demostrar el origen le toca solo al productor, que ella no tiene por qué gestionar esa respuesta y que, si el origen no se acredita, las consecuencias serán para el productor. ¿Qué debe concluir el gestor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la importadora tiene razón: el origen debe demostrarlo el productor que expidió la prueba, y la DIAN debe pedirle la información a él.",
+        "explicacion": "Incorrecta. El importador está obligado a suministrar la información que demuestre el origen (art. 309) y a hacer los arreglos para que el productor atienda los requerimientos (art. 317)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la importadora solo debe entregar la prueba de origen, pues los registros de producción le corresponden al productor, y no asume consecuencias.",
+        "explicacion": "Incorrecta. El art. 309 obliga al importador a suministrar la información requerida para demostrar el origen, no solo la prueba, y le impone el pago de los tributos si no se cumplen las normas de origen."
+      },
+      {
+        "id": "C",
+        "texto": "Que la importadora debe dar la información y gestionar la respuesta del productor, y que pagará los tributos si no se cumplen las normas de origen.",
+        "explicacion": "Correcta. El importador debe suministrar la información para demostrar el origen (art. 309, inc. 2), hacer los arreglos para que el productor atienda los requerimientos de la verificación (art. 317, inc. 3) y, si no se cumplen íntegramente las normas de origen, pagar los tributos aduaneros (art. 309, inc. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la importadora debe colaborar, pero que si el origen no se acredita las consecuencias recaen en el productor, porque la preferencia ya se concedió.",
+        "explicacion": "Incorrecta. Acierta en el deber de colaborar, pero el art. 309 hace recaer en el importador el pago de los tributos cuando no se cumplen las normas de origen del acuerdo que invocó."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la importadora usó trato preferencial con una prueba de origen expedida por el productor extranjero y se niega a aportar información y a gestionar la respuesta del productor. Regla: el art. 309 la obliga a suministrar la información para demostrar el origen y a pagar los tributos si no se cumplen íntegramente las normas de origen; el art. 317 le exige hacer los arreglos para que el productor atienda los requerimientos de la verificación. Conclusión: la importadora no tiene razón.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 80
+    }
+  },
+  {
+    "id": "TC-ADU-087",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Nomenclatura arancelaria y arancel",
+    "subtema": "Regla general interpretativa 2 a): artículos incompletos y artículos sin montar",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1881 de 2021 (Arancel de Aduanas)",
+    "articulos": [
+      "art. 1, lit. A, reglas generales interpretativas 1 y 2 a)",
+      "subpartida 8712.00.00.00 y partida 87.14"
+    ],
+    "texto_fuente": "Los títulos de las secciones, de los capítulos o de los subcapítulos solo tienen un valor indicativo, ya que la clasificación está determinada legalmente por los textos de las partidas y de las notas de sección o de capítulo y, si no son contrarias a los textos de dichas partidas y notas, de acuerdo con las reglas siguientes: [...] a) Cualquier referencia a un artículo en una partida determinada alcanza al artículo incluso incompleto o sin terminar, siempre que este presente las características esenciales del artículo completo o terminado. Alcanza también al artículo completo o terminado, o considerado como tal en virtud de las disposiciones precedentes, cuando se presente desmontado o sin montar todavía. [...] Bicicletas y demás velocípedos (incluidos los triciclos de reparto), sin motor. [...] Partes y accesorios de vehículos de las partidas 87.11 a 87.13.",
+    "pregunta": "Un analista de la División de la Operación Aduanera revisa la clasificación de tres envíos de un importador. En el primero llegaron, en cajas, todas las piezas de 150 bicicletas sin motor, sin montar. En el segundo, 80 bicicletas montadas a las que les faltan el sillín y los pedales; el área técnica concluyó que presentan las características esenciales de la bicicleta terminada. En el tercero, 300 marcos sueltos que, según la misma área, no presentan esas características. El Arancel describe la subpartida 8712.00.00.00 como «Bicicletas y demás velocípedos (incluidos los triciclos de reparto), sin motor» y la partida 87.14 como «Partes y accesorios de vehículos de las partidas 87.11 a 87.13». ¿Cómo deben clasificarse los envíos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El segundo como bicicletas; el primero y el tercero como partes, porque esas mercancías llegaron desmontadas o sueltas.",
+        "explicacion": "Incorrecta. La regla 2 a) extiende la partida del artículo completo al que se presenta desmontado o sin montar todavía. Las piezas de las 150 bicicletas se clasifican como bicicletas."
+      },
+      {
+        "id": "B",
+        "texto": "El primero como bicicletas; el segundo y el tercero como partes, porque a esas mercancías les faltan piezas.",
+        "explicacion": "Incorrecta. La regla 2 a) también alcanza al artículo incompleto que presenta las características esenciales del terminado, como las bicicletas sin sillín ni pedales."
+      },
+      {
+        "id": "C",
+        "texto": "Los tres como bicicletas, porque todas esas mercancías se destinan a armar bicicletas completas sin motor.",
+        "explicacion": "Incorrecta. La regla 2 a) solo alcanza al artículo incompleto si presenta las características esenciales del completo, y los marcos sueltos no las presentan; el destino final no basta."
+      },
+      {
+        "id": "D",
+        "texto": "El primero y el segundo como bicicletas, porque se presentan desmontadas o incompletas; el tercero, como partes.",
+        "explicacion": "Correcta. La referencia a un artículo alcanza al artículo sin montar todavía (primer envío) y al incompleto que presenta las características esenciales del terminado (segundo envío). Los marcos, sin esas características, son partes de la partida 87.14 (regla 2 a)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el primer envío trae bicicletas completas sin montar; el segundo, bicicletas incompletas con las características esenciales de la terminada; el tercero, marcos sin esas características. Regla: la regla general interpretativa 2 a) extiende la partida de un artículo al incompleto que presenta sus características esenciales y al completo que se presenta desmontado o sin montar todavía. Conclusión: los dos primeros envíos son bicicletas y los marcos son partes de la partida 87.14.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1881_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-088",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Nomenclatura arancelaria y arancel",
+    "subtema": "Regla general interpretativa 3: juegos acondicionados para la venta al por menor",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1881 de 2021 (Arancel de Aduanas)",
+    "articulos": [
+      "art. 1, lit. A, regla general interpretativa 3, lits. a), b) y c)"
+    ],
+    "texto_fuente": "Cuando una mercancía pudiera clasificarse, en principio, en dos o más partidas por aplicación de la regla 2 b) o en cualquier otro caso, la clasificación se efectuará como sigue: a) la partida con descripción más específica tendrá prioridad sobre las partidas de alcance más genérico. Sin embargo, cuando dos o más partidas se refieran, cada una, solamente a una parte de las materias que constituyen un producto mezclado o un artículo compuesto o solamente a una parte de los artículos en el caso de mercancías presentadas en juegos o surtidos acondicionados para la venta al por menor, tales partidas deben considerarse igualmente específicas para dicho producto o artículo, incluso si una de ellas lo describe de manera más precisa o completa; b) los productos mezclados, las manufacturas compuestas de materias diferentes o constituidas por la unión de artículos diferentes y las mercancías presentadas en juegos o surtidos acondicionados para la venta al por menor, cuya clasificación no pueda efectuarse aplicando la regla 3 a), se clasifican según la materia o con el artículo que les confiera su carácter esencial, si fuera posible determinarlo; c) Cuando las reglas 3 a) y 3 b) no permitan efectuar la clasificación, la mercancía se clasificará en la última partida por orden de numeración entre las susceptibles de tenerse razonablemente en cuenta.",
+    "pregunta": "Un gestor de la Subdirección Técnica Aduanera proyecta una resolución de clasificación arancelaria para un estuche de jardinería que se vende al por menor con un sobre de semillas de hortalizas para siembra, un par de guantes de punto y una pala de mano. El área técnica estableció que el estuche es un juego acondicionado para la venta al por menor; que, por separado, sus artículos irían en las partidas 12.09, 61.16 y 82.01; que cada una de esas partidas se refiere solo a uno de los artículos, aunque la 61.16 describe los guantes con más precisión que las otras a los suyos, y que no es posible determinar qué artículo le da al juego su carácter esencial. Los guantes son el artículo de mayor valor. ¿En qué partida debe clasificarse el juego?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la 61.16, porque es la partida que describe uno de los artículos del juego de manera más precisa y completa.",
+        "explicacion": "Incorrecta. Cuando cada partida se refiere solo a una parte de los artículos de un juego, todas se consideran igualmente específicas, aunque una describa su artículo con más precisión (regla 3 a)."
+      },
+      {
+        "id": "B",
+        "texto": "En la 82.01, porque es la última por orden de numeración entre las partidas que pueden tenerse razonablemente en cuenta.",
+        "explicacion": "Correcta. Las tres partidas son igualmente específicas para el juego (regla 3 a), y no es posible determinar el carácter esencial (regla 3 b). Entonces se clasifica en la última partida por orden de numeración entre las susceptibles de tenerse razonablemente en cuenta (regla 3 c): la 82.01."
+      },
+      {
+        "id": "C",
+        "texto": "En la 12.09, porque es la primera por orden de numeración entre las partidas que pueden tenerse razonablemente en cuenta.",
+        "explicacion": "Incorrecta. Invierte la regla 3 c), que remite a la última partida por orden de numeración, no a la primera."
+      },
+      {
+        "id": "D",
+        "texto": "En la 61.16, porque los guantes son el artículo de mayor valor del juego y por eso le confieren su carácter esencial.",
+        "explicacion": "Incorrecta. El área técnica estableció que no es posible determinar el carácter esencial; el mayor valor de un artículo no basta para aplicar la regla 3 b)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: es un juego para la venta al por menor, cada partida (12.09, 61.16 y 82.01) se refiere solo a uno de sus artículos y no se puede determinar su carácter esencial. Regla: según la regla 3 a), esas partidas son igualmente específicas aunque una describa mejor su artículo; la 3 b) no se puede aplicar, y la 3 c) lleva a la última partida por orden de numeración entre las que pueden tenerse razonablemente en cuenta. Conclusión: partida 82.01.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1881_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-089",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Nomenclatura arancelaria y arancel",
+    "subtema": "Regla general interpretativa 5: estuches y envases presentados con las mercancías",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1881 de 2021 (Arancel de Aduanas)",
+    "articulos": [
+      "art. 1, lit. A, regla general interpretativa 5, lits. a) y b)"
+    ],
+    "texto_fuente": "a) los estuches para cámaras fotográficas, instrumentos musicales, armas, instrumentos de dibujo, collares y continentes similares, especialmente apropiados para contener un artículo determinado o un juego o surtido, susceptibles de uso prolongado y presentados con los artículos a los que están destinados, se clasifican con dichos artículos cuando sean de los tipos normalmente vendidos con ellos. Sin embargo, esta regla no se aplica en la clasificación de los continentes que confieran al conjunto su carácter esencial; b) salvo lo dispuesto en la regla 5 a) anterior, los envases que contengan mercancías se clasifican con ellas cuando sean de los tipos normalmente utilizados para esa clase de mercancías. Sin embargo, esta disposición no es obligatoria cuando los envases sean susceptibles de ser utilizados razonablemente de manera repetida.",
+    "pregunta": "Un analista revisa tres importaciones. En la primera llegaron violines, cada uno con su estuche rígido hecho a su medida, de los que normalmente se venden con ellos. En la segunda, gas propano licuado en cilindros de acero diseñados para recargarse y usarse muchas veces. En la tercera, cajas de plata labrada con 100 gramos de té cada una; según el área técnica, la caja le da al conjunto su carácter esencial. ¿En cuál de las importaciones las reglas generales interpretativas imponen clasificar el continente con su contenido?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo en la primera; en la segunda y en la tercera, ninguna de esas reglas lo exige, por razones distintas en cada caso.",
+        "explicacion": "Correcta. Los estuches de los violines se clasifican con ellos (regla 5 a). Los cilindros reutilizables no tienen que clasificarse con el gas, porque la regla 5 b) no es obligatoria para envases susceptibles de uso repetido. La caja de plata confiere al conjunto su carácter esencial, caso que la regla 5 a) excluye."
+      },
+      {
+        "id": "B",
+        "texto": "En la primera y en la segunda; la caja de plata se clasifica aparte, por ser un artículo de mayor valor que el té.",
+        "explicacion": "Incorrecta. Para los cilindros reutilizables la regla 5 b) no es obligatoria. Y la caja se excluye porque confiere el carácter esencial al conjunto, no por su valor."
+      },
+      {
+        "id": "C",
+        "texto": "En la primera y en la tercera; los cilindros se clasifican aparte porque su materia, el acero, es distinta de la del gas.",
+        "explicacion": "Incorrecta. La regla 5 a) no se aplica a los continentes que confieren al conjunto su carácter esencial, como la caja de plata. Y los cilindros quedan fuera de la obligación por ser reutilizables, no por su materia."
+      },
+      {
+        "id": "D",
+        "texto": "En las tres, porque en todas el continente se presenta con la mercancía a la que está destinado y es apropiado para ella.",
+        "explicacion": "Incorrecta. Desconoce las dos salvedades de la regla 5: la de los continentes que confieren el carácter esencial (5 a) y la de los envases reutilizables (5 b)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: los estuches de los violines son de los que se venden con ellos; los cilindros se reutilizan, y la caja de plata le da al conjunto su carácter esencial. Regla: la regla 5 a) clasifica los estuches con sus artículos, salvo los continentes que confieren el carácter esencial; la 5 b) clasifica los envases con su contenido, pero no es obligatoria para los envases susceptibles de uso repetido. Conclusión: solo la primera importación obliga a clasificar el continente con su contenido.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1881_2021.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 55
+    }
+  },
+  {
+    "id": "TC-ADU-090",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Nomenclatura arancelaria y arancel",
+    "subtema": "Resolución de clasificación ordinaria: respuesta tardía al requerimiento y desistimiento",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 305, inc. 1 y par. (modificado por el art. 41 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "La administración aduanera tendrá dos (2) meses contados a partir de la fecha de la radicación de la solicitud, para expedir la resolución de clasificación arancelaria ordinaria de que trata el numeral 2 del artículo 304 de este decreto. [...] Cuando para la clasificación arancelaria de la mercancía se requiera información o documentación adicional, se podrá requerir al solicitante dentro del mes siguiente contado a partir del día siguiente de la fecha de radicación de la solicitud. El interesado deberá responder al requerimiento de información dentro de los dos (2) meses siguientes contados a partir de la fecha de la comunicación del requerimiento de información, prorrogables por una sola vez hasta por el mismo término, a solicitud del interesado. Vencido este término sin que se haya dado respuesta al requerimiento de información o sin que se haya suministrado de manera integral la información requerida, se entenderá desistida la solicitud. En este caso, la autoridad aduanera expedirá acto administrativo motivado declarando el desistimiento y ordenando el archivo de la solicitud. Contra este acto procederá el recurso de apelación en los términos previstos en el Código de Procedimiento Administrativo y de lo Contencioso Administrativo. [...] El requerimiento de información suspende el término previsto en el primer inciso de este artículo, a partir de la fecha de su comunicación [...] Cuando el usuario desista expresamente de su solicitud, la misma se archivará sin que medie acto administrativo y sin que proceda recurso alguno.",
+    "pregunta": "Una sociedad radicó el lunes 2 de febrero de 2026 una solicitud de resolución de clasificación arancelaria ordinaria. El viernes 20 de febrero se le comunicó un requerimiento de información técnica adicional. La sociedad no pidió prórroga y entregó la información completa el martes 5 de mayo de 2026. El gestor de la Subdirección Técnica Aduanera que tiene el expediente debe decidir cómo sigue el trámite. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Estudiar la información y resolver, porque el plazo para responder se extendió por sí solo dos meses más, hasta el 20 de junio de 2026.",
+        "explicacion": "Incorrecta. Los dos meses para responder son prorrogables una sola vez, pero a solicitud del interesado, y la sociedad no la pidió. El plazo venció el 20 de abril de 2026."
+      },
+      {
+        "id": "B",
+        "texto": "Archivar la solicitud sin expedir un acto administrativo, porque no responder a tiempo equivale a desistir y contra el archivo no procede recurso.",
+        "explicacion": "Incorrecta. El archivo sin acto y sin recurso es para quien desiste expresamente. Cuando no se responde a tiempo, la DIAN debe expedir un acto motivado que declare el desistimiento, apelable."
+      },
+      {
+        "id": "C",
+        "texto": "Expedir un acto motivado que declare el desistimiento y ordene el archivo, contra el cual procede el recurso de apelación.",
+        "explicacion": "Correcta. El requerimiento se hizo dentro del mes siguiente a la radicación, y la sociedad tenía dos meses desde su comunicación, hasta el 20 de abril de 2026, sin prórroga pedida. Al responder el 5 de mayo, se entiende desistida la solicitud: la DIAN declara el desistimiento y el archivo en un acto motivado, apelable (art. 305, par.)."
+      },
+      {
+        "id": "D",
+        "texto": "Resolver con lo que había en el expediente, porque la DIAN debía decidir dentro de los dos meses siguientes a la radicación, sin suspensión alguna.",
+        "explicacion": "Incorrecta. El requerimiento de información suspende el término de dos meses que tiene la DIAN para resolver. Además, vencido el plazo de respuesta sin respuesta, la consecuencia es el desistimiento."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: el requerimiento se comunicó el 20 de febrero de 2026 y la sociedad, sin pedir prórroga, respondió el 5 de mayo. Regla: el art. 305 da al interesado dos meses desde la comunicación para responder, prorrogables una vez a su solicitud; vencido el plazo, se entiende desistida la solicitud y la DIAN expide un acto motivado que declara el desistimiento y ordena el archivo, contra el cual procede apelación. Cálculo: el plazo venció el 20 de abril de 2026. Conclusión: corresponde declarar el desistimiento.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-091",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Nomenclatura arancelaria y arancel",
+    "subtema": "Vigencia de la resolución de clasificación ordinaria frente a terceros",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 306, nums. 1 y 2 (modificado por el art. 43 del Decreto 659 de 2024)"
+    ],
+    "texto_fuente": "Las resoluciones de clasificación arancelaria comenzarán a regir así: 1. Las resoluciones anticipadas y las ordinarias: a. Para el solicitante, a partir del día siguiente de la firmeza de la resolución. b. Para terceros, a partir del día siguiente a la publicación en el Diario Oficial. [...] 2. Las resoluciones que unifican el criterio de clasificación arancelaria y demás resoluciones expedidas de oficio regirán a partir del día siguiente a su publicación en el Diario Oficial y tendrán carácter obligatorio general, una vez trascurridos tres (3) meses a partir de la fecha de su publicación en el Diario Oficial.",
+    "pregunta": "Una resolución de clasificación arancelaria ordinaria, expedida a petición de la importadora A, quedó en firme el martes 10 de marzo de 2026 y se publicó en el Diario Oficial el viernes 20 de marzo de 2026. En un control posterior, un gestor revisa dos declaraciones de la importadora B por la misma mercancía, presentadas y aceptadas el miércoles 18 y el miércoles 25 de marzo de 2026, en las que B usó otra subpartida. B alega que la resolución no la obligaba el 18 de marzo. ¿En cuál de esas declaraciones debía B aplicar la resolución?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo en la del 25 de marzo, porque para quien no la pidió rige desde el día siguiente a la publicación, el 21 de marzo.",
+        "explicacion": "Correcta. Las resoluciones ordinarias rigen para el solicitante desde el día siguiente a su firmeza y para los terceros desde el día siguiente a su publicación en el Diario Oficial (art. 306, num. 1). Para B, desde el 21 de marzo de 2026; B tiene razón respecto de la declaración del 18."
+      },
+      {
+        "id": "B",
+        "texto": "En las dos, porque la resolución rige para todos los importadores desde el día siguiente a su firmeza, el 11 de marzo.",
+        "explicacion": "Incorrecta. La firmeza marca la vigencia solo para el solicitante. Para los terceros, como B, la resolución rige desde el día siguiente a su publicación en el Diario Oficial."
+      },
+      {
+        "id": "C",
+        "texto": "En ninguna, porque para quien no la pidió solo obliga tres meses después de publicada, es decir, desde el 20 de junio.",
+        "explicacion": "Incorrecta. El plazo de tres meses es para que tengan carácter obligatorio general las resoluciones que unifican criterios y las expedidas de oficio (art. 306, num. 2), no para las ordinarias."
+      },
+      {
+        "id": "D",
+        "texto": "En ninguna, porque una resolución ordinaria solo obliga a quien la pidió; a los demás solo los obligan las expedidas de oficio.",
+        "explicacion": "Incorrecta. El art. 306 dispone que las resoluciones ordinarias también rigen para terceros, desde el día siguiente a su publicación en el Diario Oficial."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la resolución ordinaria de A quedó en firme el 10 de marzo de 2026 y se publicó en el Diario Oficial el 20 de marzo; B declaró el 18 y el 25 de marzo. Regla: el art. 306 hace regir las resoluciones ordinarias para el solicitante desde el día siguiente a su firmeza y para los terceros desde el día siguiente a su publicación; los tres meses son para las de oficio. Cálculo: para B, rige desde el 21 de marzo. Conclusión: solo la declaración del 25 de marzo debía aplicarla.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-092",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Nomenclatura arancelaria y arancel",
+    "subtema": "Unidad funcional: corrección tras la firmeza de la resolución y prórroga del plazo de ingreso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 307, incs. 4, 5 y 6 (modificado por el art. 44 del Decreto 659 de 2024)",
+      "art. 59 de la Ley 4 de 1913"
+    ],
+    "texto_fuente": "En todo caso, el término para el ingreso y declaración de todas las máquinas y elementos que componen la unidad funcional no podrá exceder de un (1) año contado a partir de la fecha de la presentación y aceptación de la primera declaración de importación. En casos especiales, la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá autorizar prórroga hasta por un (1) año más, siempre y cuando esta sea solicitada y justificada antes del vencimiento del término señalado. También se podrá presentar como documento soporte de la declaración de importación la solicitud de clasificación arancelaria radicada antes de la presentación y aceptación de la declaración de importación, siempre y cuando no se trate de una solicitud de resolución anticipada de clasificación arancelaria. En estos casos, una vez en firme la resolución de clasificación arancelaria de la unidad funcional, el declarante, dentro del mes siguiente deberá corregir la declaración de importación cuando la subpartida declarada sea diferente a la establecida en dicha resolución para la unidad funcional, [...] Todos los plazos de días, meses o años, del que se haga mención legal, se entenderá que terminan a la medianoche del último día del plazo.",
+    "pregunta": "Una empresa importa en varios envíos las máquinas que forman una unidad funcional. Su primera declaración, presentada y aceptada el lunes 2 de marzo de 2026, tuvo como soporte la solicitud de clasificación arancelaria ordinaria de la unidad, radicada antes. La resolución quedó en firme el miércoles 10 de junio de 2026 con una subpartida distinta de la declarada, y la empresa corrigió sus declaraciones el viernes 24 de julio de 2026. Como el fabricante se retrasó, el viernes 15 de enero de 2027 la empresa pidió, con justificación, más tiempo para ingresar la última máquina, que llegará en abril de 2027. ¿Qué debe concluir el gestor que revisa el caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que corrigió a tiempo, porque el mes se cuenta desde el levante de la última declaración, y que no cabe prórroga, porque el año es improrrogable.",
+        "explicacion": "Incorrecta. El mes para corregir se cuenta desde la firmeza de la resolución; el que corre desde el levante de la última declaración es el del informe a fiscalización. Y la DIAN sí puede prorrogar el año."
+      },
+      {
+        "id": "B",
+        "texto": "Que corrigió tarde, porque el plazo vencía el 10 de julio de 2026, y que no cabe prórroga, porque el año para ingresar las máquinas es improrrogable.",
+        "explicacion": "Incorrecta. Acierta en que las correcciones fueron tardías, pero el art. 307 permite prorrogar hasta por un año más el plazo de ingreso si se pide y justifica antes de su vencimiento."
+      },
+      {
+        "id": "C",
+        "texto": "Que corrigió a tiempo, porque el mes se cuenta desde el levante de la última declaración, y que la DIAN puede prorrogar el plazo hasta por un año más.",
+        "explicacion": "Incorrecta. Acierta en la prórroga, pero el declarante debía corregir dentro del mes siguiente a la firmeza de la resolución, es decir, hasta el 10 de julio de 2026."
+      },
+      {
+        "id": "D",
+        "texto": "Que corrigió tarde, porque el plazo vencía el 10 de julio de 2026, y que la DIAN puede autorizar la prórroga, pedida a más tardar el 2 de marzo de 2027.",
+        "explicacion": "Correcta. Con la resolución en firme el 10 de junio de 2026, las correcciones debían presentarse dentro del mes siguiente, hasta el 10 de julio. El año para ingresar las máquinas vence a la medianoche del 2 de marzo de 2027 (art. 59 de la Ley 4 de 1913); como la prórroga se pidió y justificó antes, la DIAN puede autorizarla hasta por un año más (art. 307)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la resolución quedó en firme el 10 de junio de 2026 y la empresa corrigió el 24 de julio; la primera declaración se aceptó el 2 de marzo de 2026 y la prórroga se pidió con justificación el 15 de enero de 2027. Regla: el art. 307 exige corregir dentro del mes siguiente a la firmeza de la resolución y limita a un año el ingreso de las máquinas, prorrogable hasta un año más si se pide antes de vencer. Cálculo: corrección hasta el 10 de julio de 2026; año, hasta el 2 de marzo de 2027, inclusive. Conclusión: corrigió tarde, pero la prórroga procede.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 60
+    }
+  },
+  {
+    "id": "TC-ADU-093",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Puerto libre de San Andrés y zonas de régimen aduanero especial",
+    "subtema": "Viajeros procedentes de San Andrés: cupo anual, menores de edad y suma de cupos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 527, incs. 1, 3 y 4"
+    ],
+    "texto_fuente": "Los viajeros procedentes del Departamento Archipiélago de San Andrés, Providencia y Santa Catalina, después de una permanencia mínima de tres (3) días, tendrán el derecho personal e intransferible, a internar al resto del territorio aduanero nacional por una sola vez al año, mercancías sin el pago de tributos aduaneros, artículos para su uso personal o doméstico hasta por un valor total equivalente a tres mil quinientos dólares de los Estados Unidos de América (US$3.500). Los menores de edad podrán ejercer este derecho reducido en un cincuenta por ciento (50%). [...] Estas mercancías deberán ser destinadas al uso personal del viajero y, por lo tanto, no podrán ser comercializadas. Quienes viajen en grupos podrán sumar sus cupos para traer mercancías cuyo valor exceda el cupo individual. El monto resultante podrá ser utilizado conjunta o separadamente por los mismos que hubieren acordado esta acumulación.",
+    "pregunta": "En octubre de 2026, una pareja y su hija de 12 años regresan a Bogotá desde San Andrés, después de seis días en la isla, con artículos para el uso personal y doméstico de la familia comprados por USD 9.000. El padre ya usó su cupo de viajero procedente de San Andrés en febrero de 2026; la madre y la hija no lo han usado este año. Un inspector de la División de Viajeros revisa en el aeropuerto el valor que pueden internar sin pagar tributos aduaneros. ¿Cuál es ese valor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "USD 8.750: los tres cupos sumados, con el de la hija reducido a la mitad por ser menor de edad.",
+        "explicacion": "Incorrecta. El derecho se ejerce una sola vez al año, y el padre ya lo usó en febrero de 2026. Su cupo no puede sumarse."
+      },
+      {
+        "id": "B",
+        "texto": "USD 7.000: los cupos completos de la madre y de la hija, sin contar el del padre.",
+        "explicacion": "Incorrecta. Acierta en excluir el cupo del padre, pero el de la hija, menor de edad, se reduce en un 50%: USD 1.750."
+      },
+      {
+        "id": "C",
+        "texto": "USD 5.250: el cupo completo de la madre más la mitad de un cupo para la hija.",
+        "explicacion": "Correcta. Los viajeros que viajan en grupo pueden sumar sus cupos. La madre aporta USD 3.500, y la hija, por ser menor, la mitad: USD 1.750. El padre no aporta, porque el derecho se ejerce una sola vez al año (art. 527)."
+      },
+      {
+        "id": "D",
+        "texto": "USD 3.500: un solo cupo, porque los cupos de los miembros de una misma familia no se suman.",
+        "explicacion": "Incorrecta. El art. 527 permite que quienes viajan en grupo sumen sus cupos y los usen conjunta o separadamente."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la familia estuvo seis días en la isla; el padre ya usó su cupo en 2026, y la hija tiene 12 años. Regla: el art. 527 da a cada viajero, tras tres días de permanencia, un cupo de USD 3.500 una sola vez al año; el de los menores se reduce en un 50%, y quienes viajan en grupo pueden sumar sus cupos. Cálculo: USD 3.500 de la madre + USD 1.750 de la hija = USD 5.250. Conclusión: pueden internar sin tributos hasta USD 5.250.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-094",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Puerto libre de San Andrés y zonas de régimen aduanero especial",
+    "subtema": "Menaje de residentes del Archipiélago que regresan al territorio continental",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019 y Ley 915 de 2004",
+    "articulos": [
+      "art. 287, incs. 1 a 3 (Decreto 1165 de 2019)",
+      "art. 284 (Decreto 1165 de 2019)",
+      "art. 286 (Decreto 1165 de 2019)",
+      "art. 13, inc. 2 (Ley 915 de 2004)"
+    ],
+    "texto_fuente": "De conformidad con el artículo 13 de la Ley 915 de 2004, las personas que regresen al territorio continental, después de un (1) año de residencia legal en el Departamento Archipiélago de San Andrés, Providencia y Santa Catalina, certificada por la Oficina de Control de Circulación y Residencia \"OCCRE\" estarán sometidas al pago de los tributos a que hace referencia el artículo 284 del presente decreto. En el caso del traslado definitivo a que hace referencia el inciso segundo del artículo 13 de la Ley 915 de 2004, se podrá trasladar el menaje doméstico sin el pago de los tributos aduaneros. No hará parte del menaje doméstico, el material de transporte comprendido en los Capítulos 86, 87, 88 y 89 del Arancel de Aduanas, excepto bicicletas para niños, velocípedos, sillones de ruedas y demás vehículos para inválidos, coches, sillas y vehículos similares para transporte de niños. [...] las mercancías que formen parte del menaje doméstico pagarán un tributo único del quince por ciento (15%) ad valórem. [...] Los viajeros provenientes de San Andrés, Providencia y Santa Catalina que regresen al resto del territorio aduanero nacional para establecerse en él, no estarán obligados al pago del tributo único de que trata el artículo 270 del presente decreto. [...] Traslado definitivo. Aquellas personas que viviendo en las islas, con residencia legal y que deseen retornar al resto del territorio colombiano, para dar cumplimiento con las Normas de la Oficina de Control de Circulación y Residencia, para su reubicación, podrán trasladar su menaje doméstico, sin pago de tributos aduaneros.",
+    "pregunta": "Una familia vivió tres años en San Andrés, con residencia legal certificada por la OCCRE, y decidió por su cuenta volver a vivir en Cali; no regresa para cumplir normas de la OCCRE sobre reubicación. Declara su menaje doméstico por $36.000.000, valor que incluye una motocicleta de $6.000.000. Un gestor de la DIAN revisa la liquidación del menaje. ¿Cuánto debe pagar la familia por su menaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$0, porque quien regresa del Archipiélago para establecerse en el resto del país no paga el tributo único.",
+        "explicacion": "Incorrecta. Esa exoneración (art. 286) es para el tributo único del equipaje de los viajeros (art. 270), no para el menaje. Y el menaje solo viaja sin tributos en el traslado definitivo por normas de la OCCRE, que no es el caso."
+      },
+      {
+        "id": "B",
+        "texto": "$4.500.000: el tributo único del 15% sobre $30.000.000, porque la motocicleta no forma parte del menaje.",
+        "explicacion": "Correcta. Tras más de un año de residencia legal certificada, quien regresa al continente paga por su menaje el tributo único del 15% ad valórem (arts. 287 y 284). La motocicleta, del capítulo 87, no forma parte del menaje: 15% × $30.000.000 = $4.500.000."
+      },
+      {
+        "id": "C",
+        "texto": "$5.400.000: el tributo único del 15% sobre los $36.000.000 declarados, con la motocicleta incluida.",
+        "explicacion": "Incorrecta. Aplica bien la tarifa, pero el material de transporte de los capítulos 86 a 89 del Arancel no hace parte del menaje (art. 287), así que la motocicleta no entra en la base."
+      },
+      {
+        "id": "D",
+        "texto": "$3.000.000: el 10% sobre $30.000.000, igual al impuesto al consumo que se causa en el Puerto Libre.",
+        "explicacion": "Incorrecta. El 10% es el impuesto al consumo de las importaciones al Puerto Libre (art. 507). El menaje que regresa al continente paga el tributo único del 15% (art. 284)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la familia tuvo tres años de residencia legal certificada, regresa por decisión propia y su menaje declarado incluye una motocicleta. Regla: el art. 287 somete ese menaje al tributo único del 15% del art. 284, salvo el traslado definitivo por normas de la OCCRE, y excluye del menaje el material de transporte de los capítulos 86 a 89; la exoneración del art. 286 es para el equipaje. Cálculo: ($36.000.000 − $6.000.000) × 15% = $4.500.000. Conclusión: debe pagar $4.500.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 65
+    }
+  },
+  {
+    "id": "TC-ADU-095",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Puerto libre de San Andrés y zonas de régimen aduanero especial",
+    "subtema": "Zonas de Urabá, Tumaco y Guapi: mercancías excluidas y tributo de la importación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 531, inc. 1",
+      "art. 533",
+      "art. 535, inc. 1 y par.",
+      "art. 537, inc. 1"
+    ],
+    "texto_fuente": "Las Zonas de Régimen Aduanero Especial que se desarrollan en el presente Título, estarán conformadas por los siguientes municipios: Arboletes, San Pedro de Urabá, Necoclí, San Juan de Urabá, Turbo, Apartadó, Carepa, Chigorodó, Mutatá, Acandí y Unguía en la región de Urabá de los Departamentos de Antioquia y Chocó, [...] Bajo el régimen aduanero especial consagrado en este Título, no se podrán importar vehículos, electrodomésticos, licores ni cigarrillos. [...] Las importaciones que se realicen a las Zonas de Régimen Aduanero Especial de que trata el presente Título, solo pagarán el impuesto sobre las ventas sobre el valor en aduana de las mercancías, con la presentación y aceptación de una Declaración de Importación Simplificada, bajo la modalidad de franquicia, dentro de los dos (2) meses siguientes a la llegada de las mercancías al país, [...] Lo dispuesto en este Capítulo se aplicará sin perjuicio de las importaciones de mercancías que se acojan al régimen ordinario que les confiere la libre disposición. [...] Para que las mercancías introducidas a las Zonas de Régimen Aduanero Especial gocen de los beneficios previstos en el presente Título, deberán destinarse al consumo o utilización dentro de las Zonas.",
+    "pregunta": "Un comerciante de Apartadó quiere importar, para vender en ese municipio, un lote de neveras, uno de herramientas manuales, uno de cemento y uno de whisky. Un facilitador de la Dirección Seccional de Impuestos y Aduanas de Urabá lo orienta sobre el régimen aduanero especial de la zona. ¿Qué debe explicarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que los cuatro lotes pueden ir por el régimen especial, pagando solo el IVA sobre el valor en aduana, porque se venderán dentro de la zona.",
+        "explicacion": "Incorrecta. El régimen especial de estas zonas excluye los electrodomésticos y los licores (art. 533), aunque se vayan a vender dentro de la zona."
+      },
+      {
+        "id": "B",
+        "texto": "Que las neveras, las herramientas y el cemento van por el régimen especial sin pagar tributos, y el whisky, por el régimen ordinario.",
+        "explicacion": "Incorrecta. Las neveras son electrodomésticos, excluidos del régimen especial (art. 533). Además, las importaciones a estas zonas pagan el IVA sobre el valor en aduana (art. 535)."
+      },
+      {
+        "id": "C",
+        "texto": "Que los cuatro lotes pueden ir por el régimen especial, pagando un impuesto de ingreso del 4% liquidado sobre el valor en aduana de cada uno de los lotes.",
+        "explicacion": "Incorrecta. El impuesto de ingreso del 4% es propio de la zona de Maicao, Uribia y Manaure (art. 545). Además, en Urabá las neveras y el whisky están excluidos del régimen especial."
+      },
+      {
+        "id": "D",
+        "texto": "Que las herramientas y el cemento van por el régimen especial, con solo el IVA sobre el valor en aduana, y las neveras y el whisky, por el ordinario.",
+        "explicacion": "Correcta. Apartadó está en la zona de régimen aduanero especial de Urabá (art. 531). Allí no se pueden importar por el régimen especial electrodomésticos ni licores (art. 533); lo demás paga solo el IVA sobre el valor en aduana con declaración simplificada (art. 535), y lo excluido puede ir por el régimen ordinario (art. 535, par.)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el comerciante está en Apartadó, en la zona de Urabá, y quiere importar neveras, herramientas, cemento y whisky para venderlos allí. Regla: el art. 533 excluye del régimen especial de Urabá, Tumaco y Guapi los vehículos, electrodomésticos, licores y cigarrillos; el art. 535 hace pagar solo el IVA sobre el valor en aduana a lo que sí entra, y deja a salvo el régimen ordinario. Conclusión: herramientas y cemento por el régimen especial; neveras y whisky, por el ordinario.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 70
+    }
+  },
+  {
+    "id": "TC-ADU-096",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Puerto libre de San Andrés y zonas de régimen aduanero especial",
+    "subtema": "Salida temporal desde San Andrés hacia el resto del territorio: plazo y garantía",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 522",
+      "art. 59 de la Ley 4 de 1913"
+    ],
+    "texto_fuente": "La Dirección Seccional de Impuestos y Aduanas de San Andrés, podrá autorizar la salida temporal del territorio insular hacia el resto del territorio aduanero nacional, de medios de transporte terrestre y marítimos, máquinas y equipos y partes de los mismos, para fines turísticos, deportivos, exhibiciones, ferias, eventos culturales, actividades de carácter educativo, científico o para mantenimiento y/o reparación, por un término máximo de tres (3) meses, prorrogables por tres (3) meses más, por motivos justificados. Antes del vencimiento del término que se autorice, la mercancía de que se trate deberá regresar al territorio insular. Para el efecto, deberá constituirse garantía bancaria o de compañía de seguros, a favor de la Nación, por el cien por ciento (100%) de los tributos aduaneros que dichas mercancías pagarían si fuesen importadas al resto del territorio aduanero nacional. El plazo se contará desde la fecha de aceptación de la Declaración de Salida Temporal [...] Todos los plazos de días, meses o años, del que se haga mención legal, se entenderá que terminan a la medianoche del último día del plazo.",
+    "pregunta": "Un club de buceo de San Andrés necesita llevar a Cartagena una de sus lanchas, que ingresó al Puerto Libre, para repararle el motor. La Declaración de Salida Temporal se aceptó el martes 3 de marzo de 2026. Si la lancha se importara al resto del territorio aduanero nacional, pagaría tributos aduaneros por $48.000.000. La Dirección Seccional de Impuestos y Aduanas de San Andrés concederá el término más amplio que la norma permite, y una gestora de esa dirección revisa la autorización. ¿Qué garantía debe exigir y en qué plazo debe volver la lancha a la isla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Garantía de $48.000.000; debe volver a más tardar el 3 de junio de 2026, plazo prorrogable hasta el 3 de septiembre por motivos justificados.",
+        "explicacion": "Correcta. La salida temporal desde San Andrés se autoriza hasta por tres meses, prorrogables por tres más por motivos justificados, contados desde la aceptación de la declaración. El término vence a la medianoche del 3 de junio y, con prórroga, del 3 de septiembre de 2026 (art. 59 de la Ley 4 de 1913). La garantía cubre el 100% de los tributos que la lancha pagaría si se importara (art. 522)."
+      },
+      {
+        "id": "B",
+        "texto": "Garantía de $48.000.000; la lancha debe volver dentro del año siguiente, plazo prorrogable por un año más si la reparación se demora.",
+        "explicacion": "Incorrecta. Acierta en la garantía, pero el plazo de la salida temporal es de tres meses, prorrogables por otros tres. El de un año es, por ejemplo, el de las salas de exhibición (art. 513)."
+      },
+      {
+        "id": "C",
+        "texto": "Garantía de $4.800.000, el 10% de los tributos; debe volver a más tardar el 3 de junio de 2026, prorrogable hasta el 3 de septiembre.",
+        "explicacion": "Incorrecta. Acierta en el plazo, pero la garantía debe cubrir el 100% de los tributos que la lancha pagaría si se importara al resto del territorio (art. 522)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna, porque la lancha no se importa al resto del país; debe volver a más tardar el 3 de septiembre de 2026, sin posibilidad de prórroga.",
+        "explicacion": "Incorrecta. El art. 522 exige garantía por el 100% de los tributos. Además, el término máximo es de tres meses, hasta el 3 de junio, y la prórroga de tres meses más es posible por motivos justificados."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la Declaración de Salida Temporal se aceptó el 3 de marzo de 2026, se concederá el término máximo y la lancha, si se importara, pagaría tributos por $48.000.000. Regla: el art. 522 permite la salida temporal desde San Andrés de medios de transporte para reparación hasta por tres meses desde la aceptación de la declaración, prorrogables por tres más por motivos justificados, con garantía del 100% de los tributos. Cálculo: hasta el 3 de junio de 2026, o el 3 de septiembre con prórroga. Conclusión: garantía de $48.000.000 y regreso a más tardar el 3 de junio, prorrogable.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-097",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Puerto libre de San Andrés y zonas de régimen aduanero especial",
+    "subtema": "Zona de Maicao, Uribia y Manaure: impuesto de ingreso y garantía de los bienes de capital",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 545, incs. 1 y 2",
+      "art. 547, incs. 1 a 3",
+      "art. 550",
+      "art. 553"
+    ],
+    "texto_fuente": "Las mercancías importadas a la Zona de Régimen Aduanero Especial estarán sujetas al pago de un impuesto de ingreso a la mercancía del cuatro por ciento (4%) liquidado sobre el valor en aduana de la misma, sin perjuicio de la aplicación del impuesto al consumo de que trata la Ley 223 de 1995. [...] Las importaciones para uso exclusivo en la zona de bienes de capital, maquinaria, equipos y sus partes, destinados a la construcción de obras públicas de infraestructura, obras para el desarrollo económico y social, así como los bienes de capital destinados al establecimiento de nuevas industrias o al ensanche de las existentes en la zona, estarán excluidos del impuesto de ingreso a la mercancía. Los importadores que pretendan importar las mercancías de que trata el presente artículo deberán constituir una garantía bancaria o de compañía de seguros por el treinta por ciento (30%) del valor FOB de los bienes de capital, maquinaria, equipos y sus partes que se pretenda importar, y cuyo objeto será garantizar que los bienes importados sean destinados exclusivamente a los fines señalados en el inciso anterior. Dicha garantía deberá constituirse por el término de un año y tres meses más, la cual podrá prorrogarse de acuerdo con las condiciones del proyecto. [...] Los importadores de bienes de capital, maquinaria y equipos inscritos en el Registro Único Tributario, deberán acreditar previamente a la realización de las importaciones, ante la División de Gestión de la Operación Aduanera de la Dirección Seccional de Aduanas o de Impuestos y Aduanas de la Jurisdicción, el cumplimiento de los requisitos establecidos en el artículo 119 del presente decreto y adjuntar los proyectos de obras públicas de infraestructura o de obras para el desarrollo económico y social, así como los proyectos de producción de bienes, cuando se trate de nuevas industrias o del ensanche de las existentes en la zona.",
+    "pregunta": "Un comerciante de Maicao, inscrito en el RUT, importará a la zona de régimen aduanero especial dos cargas: confecciones para vender en su almacén, con un valor en aduana de USD 60.000, y una máquina de coser industrial para ensanchar su taller en la zona, con un valor FOB de USD 40.000 y un valor en aduana de USD 42.000. La máquina está en la lista que la DIAN fijó por resolución, y antes de importar el comerciante acreditó ante la División de la Operación Aduanera los requisitos exigidos y el proyecto de ensanche del taller. Un analista de la Dirección Seccional de Impuestos y Aduanas de Maicao revisa la operación. ¿Qué corresponde?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Impuesto de ingreso de USD 4.080, el 4% del valor en aduana de las dos cargas, y ninguna garantía por la máquina.",
+        "explicacion": "Incorrecta. Los bienes de capital para el ensanche de industrias de la zona están excluidos del impuesto de ingreso, y su importador debe constituir una garantía (art. 547)."
+      },
+      {
+        "id": "B",
+        "texto": "Impuesto de ingreso de USD 2.400 por las confecciones, y garantía de USD 12.600, el 30% del valor en aduana de la máquina.",
+        "explicacion": "Incorrecta. Acierta en el impuesto, pero la garantía es del 30% del valor FOB de la máquina (USD 40.000), no de su valor en aduana."
+      },
+      {
+        "id": "C",
+        "texto": "Impuesto de ingreso de USD 2.400 por las confecciones, y garantía de USD 12.000, el 30% del valor FOB de la máquina.",
+        "explicacion": "Correcta. Las confecciones pagan el impuesto de ingreso del 4% sobre su valor en aduana: USD 2.400 (art. 545). La máquina, bien de capital para ensanchar una industria de la zona, está excluida de ese impuesto, pero exige una garantía del 30% de su valor FOB: USD 12.000 (art. 547)."
+      },
+      {
+        "id": "D",
+        "texto": "Impuesto de ingreso de USD 4.080 por las dos cargas y, además, garantía de USD 12.000, el 30% del valor FOB de la máquina.",
+        "explicacion": "Incorrecta. Acierta en la garantía, pero la máquina está excluida del impuesto de ingreso, que solo se liquida sobre las confecciones: USD 2.400."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: las confecciones van a la venta (valor en aduana USD 60.000) y la máquina es un bien de capital de la lista de la DIAN para ensanchar un taller de la zona (FOB USD 40.000), con los requisitos del art. 550 acreditados. Regla: el art. 545 grava las importaciones a la zona con un impuesto de ingreso del 4% sobre el valor en aduana; el art. 547 excluye de él los bienes de capital para nuevas industrias o ensanches, con garantía del 30% del valor FOB. Cálculo: 4% × 60.000 = USD 2.400; 30% × 40.000 = USD 12.000. Conclusión: impuesto de USD 2.400 y garantía de USD 12.000.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 75
+    }
+  },
+  {
+    "id": "TC-ADU-098",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Custodia y disposición de mercancías",
+    "subtema": "Venta del menaje en abandono a su propietario, vencido el término para rescatarlo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 736, incs. 1 y 5 (modificado por el art. 59 del Decreto 659 de 2024)",
+      "art. 171, par. 1",
+      "art. 293, num. 1, inc. 1"
+    ],
+    "texto_fuente": "La Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá disponer de las mercancías decomisadas o abandonadas a favor de la Nación, mediante la venta, donación, asignación, destrucción y/o gestión de residuos, chatarrización y dación en pago. [...] Los menajes y equipajes en situación de abandono que se encuentren ubicados en los depósitos habilitados por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), podrán ser vendidos al consignatario o a su propietario por la respectiva Dirección Seccional, siempre y cuando se paguen previamente los gastos de transporte y de almacenamiento a que hubiere lugar al depósito habilitado donde se encuentre la mercancía, así como el monto correspondiente al ciento por ciento (100%) sobre el avalúo de las mercancías en la forma que disponga la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) mediante resolución de carácter general. [...] Vencido el término previsto en este artículo sin que se hubiere obtenido el levante, o sin que se hubiere reembarcado la mercancía, operará el abandono legal. El interesado podrá rescatar la mercancía de conformidad con lo dispuesto en el inciso primero del numeral 1 del artículo 293 del presente decreto dentro del mes siguiente a la fecha en que se produzca el abandono. Transcurrido el término establecido para rescatar la mercancía, sin que se hubiere presentado la respectiva declaración de legalización, la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) podrá disponer de la mercancía por ser esta de propiedad de la Nación.",
+    "pregunta": "Una familia que volvió a vivir en Colombia no tramitó a tiempo la importación de su menaje, que llegó a Cartagena y quedó en un depósito habilitado. Operó el abandono legal y pasó el mes siguiente sin que se presentara declaración de legalización. En agosto de 2026, con el menaje todavía en ese depósito, el propietario pide recuperarlo. El avalúo de la DIAN es de $18.000.000, y el depósito cobra $2.400.000 de transporte y almacenamiento. Un gestor de la Dirección Seccional debe responderle. ¿Qué procede?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rescatarlo con declaración de legalización, pagando los tributos, el 10% del valor por rescate y los $2.400.000 del depósito.",
+        "explicacion": "Incorrecta. El rescate de la mercancía en abandono solo procede dentro del mes siguiente al abandono (art. 171, par. 1, y art. 293, num. 1), y ese término ya venció."
+      },
+      {
+        "id": "B",
+        "texto": "Comprarlo a la Dirección Seccional, pagando antes $2.400.000 al depósito y $18.000.000, el 100% del avalúo.",
+        "explicacion": "Correcta. Vencido el término de rescate, el menaje es de la Nación, pero los menajes en abandono que siguen en un depósito habilitado pueden venderse a su propietario, previo pago al depósito de los gastos de transporte y almacenamiento y del 100% del avalúo (art. 736)."
+      },
+      {
+        "id": "C",
+        "texto": "Comprarlo a la Dirección Seccional, pagando antes $2.400.000 al depósito y $9.000.000, el 50% del avalúo.",
+        "explicacion": "Incorrecta. Acierta en la vía de la venta al propietario, pero el art. 736 exige el 100% del avalúo, no el 50%."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna vía: el menaje ya es de la Nación, y la DIAN debe venderlo a terceros, donarlo o destruirlo.",
+        "explicacion": "Incorrecta. Aunque el menaje ya es de la Nación, el art. 736 permite vender al propietario o al consignatario los menajes en abandono que se encuentran en depósitos habilitados."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: venció el mes para rescatar el menaje, que sigue en un depósito habilitado; el avalúo es de $18.000.000 y el depósito cobra $2.400.000. Regla: el art. 171 solo permite el rescate dentro del mes siguiente al abandono; después, el art. 736 permite que la Dirección Seccional venda el menaje en abandono a su propietario si paga antes al depósito el transporte y el almacenamiento, y el 100% del avalúo. Cálculo: $2.400.000 al depósito y $18.000.000 a la DIAN. Conclusión: procede la venta al propietario.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ADU-099",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Custodia y disposición de mercancías",
+    "subtema": "Retiro de las mercancías donadas: plazo en días hábiles y rechazo de la donación",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 745, incs. 1 a 3 (modificado por el art. 133 del Decreto 360 de 2021)",
+      "art. 746"
+    ],
+    "texto_fuente": "Una vez notificado el acto administrativo de donación, el donatario no podrá rechazar la donación, salvo en los eventos en que se detecten inconsistencias en la diligencia de entrega de la mercancía donada, conforme con lo señalado por el artículo 747 del presente decreto. La entidad donataria deberá efectuar el retiro físico de las mercancías dentro de los diez (10) días hábiles siguientes, a partir de la notificación del acto administrativo de donación al donatario, salvo que se trate de mercancías perecederas, caso en el cual deberá retirarse de manera inmediata. Cuando, por razones del volumen y ubicación de la mercancía, sea necesario un plazo mayor, dentro del acto administrativo de donación se concederá un plazo adicional máximo hasta de diez (10) días hábiles. De no efectuarse el retiro de las mercancías donadas en el tiempo indicado en el presente artículo, los gastos causados por su almacenamiento, guarda, custodia y conservación correrán por cuenta del donatario. [...] La Notificación del acto administrativo de donación se hará por correo, de conformidad con lo establecido en el presente decreto, y contra el mismo no procederá recurso alguno.",
+    "pregunta": "La DIAN donó a un municipio 400 colchones abandonados a favor de la Nación. Por su volumen y ubicación, el acto de donación concedió el plazo adicional máximo para retirarlos, y se notificó por correo al municipio el viernes 30 de octubre de 2026. El lunes 2 y el lunes 16 de noviembre de 2026 son festivos. El alcalde pregunta a un facilitador de la DIAN hasta qué día puede retirar los colchones sin asumir gastos de almacenamiento y si puede devolverlos, porque ya consiguió otros. ¿Qué debe responderle el facilitador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que puede retirarlos hasta el martes 17 de noviembre de 2026, y que puede renunciar a la donación con un recurso de reposición.",
+        "explicacion": "Incorrecta. Cuenta solo los diez días hábiles iniciales, sin el plazo adicional concedido. Además, contra el acto de donación no procede recurso alguno (art. 746)."
+      },
+      {
+        "id": "B",
+        "texto": "Que puede retirarlos hasta el viernes 27 de noviembre de 2026, y que no puede rechazarlos, salvo que haya inconsistencias en la entrega.",
+        "explicacion": "Incorrecta. Acierta en que no puede rechazar la donación, pero cuenta los veinte días hábiles sin descontar los festivos del 2 y el 16 de noviembre."
+      },
+      {
+        "id": "C",
+        "texto": "Que puede retirarlos hasta el martes 1 de diciembre de 2026, y que puede rechazarlos por escrito dentro de los tres días siguientes.",
+        "explicacion": "Incorrecta. Acierta en la fecha, pero, una vez notificado el acto, el donatario no puede rechazar la donación. Los tres días del art. 747 son para pronunciarse sobre inconsistencias halladas en la diligencia de entrega."
+      },
+      {
+        "id": "D",
+        "texto": "Que puede retirarlos hasta el martes 1 de diciembre de 2026, y que no puede rechazarlos, salvo que haya inconsistencias en la entrega.",
+        "explicacion": "Correcta. Con el plazo adicional máximo, el retiro debe hacerse dentro de veinte días hábiles desde la notificación, sin contar los festivos del 2 y el 16 de noviembre: hasta el martes 1 de diciembre de 2026. Notificado el acto, el donatario no puede rechazar la donación, salvo inconsistencias en la diligencia de entrega (art. 745)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el acto se notificó el viernes 30 de octubre de 2026 con el plazo adicional máximo, y el 2 y el 16 de noviembre son festivos. Regla: el art. 745 da diez días hábiles para retirar las mercancías donadas, más hasta diez adicionales concedidos en el acto, e impide rechazar la donación ya notificada salvo inconsistencias en la entrega; el art. 746 excluye los recursos. Cálculo: veinte días hábiles desde el 3 de noviembre, sin los festivos, terminan el martes 1 de diciembre de 2026. Conclusión: retiro hasta el 1 de diciembre y sin rechazo.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 50
+    }
+  },
+  {
+    "id": "TC-ADU-100",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_aduanero",
+    "modulo": "Aduanero y Cambiario (DIAN)",
+    "tema": "Custodia y disposición de mercancías",
+    "subtema": "Mercancía en abandono con fecha de vencimiento expirada: destrucción en el lugar y costos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Decreto 1165 de 2019",
+    "articulos": [
+      "art. 749, incs. 3 y 4 (modificado por el art. 63 del Decreto 659 de 2024)",
+      "art. 171, par. 2",
+      "art. 734, inc. 5"
+    ],
+    "texto_fuente": "Cuando se trate de mercancías en abandono que se encuentren totalmente dañadas, generen riesgo de seguridad o salubridad pública, cuenten con fecha de vencimiento expirada o cuando las mismas correspondan a las calificadas por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) como mercancía sin valor de comercialización, el usuario aduanero deberá proceder, previa autorización por parte de la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), a su destrucción y/o gestión de residuos inmediata en el lugar donde se encuentre la mercancía. En ningún caso las mercancías señaladas en el inciso anterior podrán ser trasladadas a los recintos de almacenamiento con los cuales la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) tiene contrato, ni generar costos de bodegaje, operación logística, destrucción y/o gestión de residuos a cargo de la entidad. En todo caso, dichos costos deberán ser sufragados por el titular del documento de transporte o por el usuario aduanero. [...] Cuando el depósito habilitado informe en la oportunidad debida, sobre el vencimiento del término para el rescate de mercancías, pero estas queden en situación de abandono, los costos de almacenamiento serán asumidos por la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), a partir de la fecha de configuración del abandono y vencido el plazo para el rescate.",
+    "pregunta": "Un depósito habilitado informó a tiempo a la Dirección Seccional que vencieron los términos de permanencia y de rescate de dos contenedores refrigerados con yogur, cuya fecha de vencimiento ya expiró. El depósito pide que la DIAN traslade la carga al recinto del operador logístico que tiene contratado y que asuma el almacenamiento desde que se configuró el abandono. Un gestor de la Dirección Seccional proyecta la respuesta. ¿Qué debe indicarle al depósito?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que debe destruir el yogur donde está, con autorización previa de la DIAN, y que el bodegaje y la destrucción los pagan particulares, no la DIAN.",
+        "explicacion": "Correcta. Las mercancías en abandono con fecha de vencimiento expirada se destruyen de inmediato en el lugar donde están, previa autorización de la DIAN; no pueden trasladarse a los recintos contratados por la DIAN ni generarle costos de bodegaje o destrucción, que asumen el titular del documento de transporte o el usuario aduanero (art. 749)."
+      },
+      {
+        "id": "B",
+        "texto": "Que la DIAN debe trasladar la carga al recinto de su operador logístico y asumir el almacenamiento desde el abandono, porque el aviso fue oportuno.",
+        "explicacion": "Incorrecta. Aplica la regla general de costos del art. 734, pero las mercancías vencidas no pueden trasladarse a los recintos de la DIAN ni generarle costos (art. 749 y art. 171, par. 2)."
+      },
+      {
+        "id": "C",
+        "texto": "Que la DIAN debe ofrecer antes la carga en donación dos veces, porque la destrucción solo procede tras dos ofrecimientos sin aceptación.",
+        "explicacion": "Incorrecta. Los dos ofrecimientos fallidos son una de las causales generales de destrucción. Las mercancías con fecha de vencimiento expirada se destruyen de inmediato, sin ese requisito (art. 749)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la DIAN debe vender la carga con un descuento de hasta el 20% sobre el avalúo, y destruir solo lo que no logre vender.",
+        "explicacion": "Incorrecta. El descuento del 20% se aplica al avalúo en la venta de mercancías comercializables (art. 741). Un producto vencido se destruye en el lugar, previa autorización."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el yogur en abandono tiene la fecha de vencimiento expirada, aunque el depósito avisó a tiempo. Regla: el art. 749 ordena al usuario aduanero destruir de inmediato, en el lugar y previa autorización de la DIAN, las mercancías en abandono con fecha de vencimiento expirada; prohíbe trasladarlas a los recintos contratados por la DIAN o generarle costos, que asume el titular del documento de transporte o el usuario aduanero. La regla de costos del art. 734 no aplica. Conclusión: destrucción en el lugar, a costa del particular.",
+    "fuente_url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": "coincide",
+      "revisor_humano": null,
+      "fecha": "2026-10-19",
+      "p_estimado": 70
+    }
   }
 ]

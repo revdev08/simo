@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "TC-TRI-121",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Medidas cautelares",
+    "subtema": "Levantamiento de medidas por demanda admitida contra el título ejecutivo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 837 par. (modificado por el art. 85 de la Ley 6 de 1992)",
+      "art. 835"
+    ],
+    "texto_fuente": "Cuando se hubieren decretado medidas cautelares y el deudor demuestre que se ha admitido demanda contra el título ejecutivo y que esta se encuentra pendiente de fallo ante la Jurisdicción de lo Contencioso Administrativo se ordenará levantarlas. Las medidas cautelares también podrán levantarse cuando admitida la demanda ante la jurisdicción de lo contencioso administrativo contra las resoluciones que fallan las excepciones y ordenan llevar adelante la ejecución, se presta garantía bancaria o de compañía de seguros, por el valor adeudado. [...] Dentro del proceso de cobro administrativo coactivo, sólo serán demandables ante la Jurisdicción Contencioso - Administrativa las resoluciones que fallan las excepciones y ordenan llevar adelante la ejecución; la admisión de la demanda no suspende el proceso de cobro, pero el remate no se realizará hasta que exista pronunciamiento definitivo de dicha jurisdicción.",
+    "pregunta": "Un Gestor II de la División de Recaudo y Cobranzas de una Dirección Seccional adelanta el cobro coactivo de una liquidación oficial de revisión a cargo de una SAS. Junto con el mandamiento de pago, decretó el embargo de las cuentas corrientes de la sociedad. Un mes después, la SAS aporta el auto con el que el tribunal administrativo admitió la demanda de nulidad y restablecimiento del derecho que ella presentó contra esa liquidación oficial, y una certificación de que el proceso sigue sin sentencia. La SAS no ha ofrecido garantía alguna. ¿Qué debe proyectar el gestor respecto de los embargos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Conservarlos, porque la demanda no suspende el cobro, y abstenerse de rematar mientras el tribunal decide.",
+        "explicacion": "Incorrecta. Confunde este caso con el del art. 835, que se refiere a la demanda contra las resoluciones que fallan las excepciones y ordenan seguir la ejecución: esa demanda no suspende el cobro, aunque impide el remate. Cuando lo demandado y pendiente de fallo es el título ejecutivo, el parágrafo del art. 837 ordena levantar las medidas."
+      },
+      {
+        "id": "B",
+        "texto": "Levantarlos cuando la SAS preste garantía bancaria o de compañía de seguros por el valor adeudado.",
+        "explicacion": "Incorrecta. La garantía bancaria o de seguros es la condición del inciso 2 del parágrafo del art. 837, previsto para la demanda contra las resoluciones que fallan las excepciones y ordenan llevar adelante la ejecución. Si lo demandado es el título y la demanda está admitida y pendiente de fallo, las medidas se levantan sin garantía."
+      },
+      {
+        "id": "C",
+        "texto": "Ordenar que se levanten, sin exigir caución, por estar en curso un litigio sobre el título que se cobra.",
+        "explicacion": "Correcta. La SAS demostró que se admitió su demanda contra el título ejecutivo (la liquidación oficial) y que está pendiente de fallo ante la jurisdicción de lo contencioso administrativo. En ese caso, el parágrafo del art. 837 ordena levantar las medidas cautelares, sin exigir garantía."
+      },
+      {
+        "id": "D",
+        "texto": "Dejarlos vigentes hasta que la SAS proponga, dentro del término, la excepción por la demanda presentada.",
+        "explicacion": "Incorrecta. El levantamiento por la demanda admitida contra el título no depende de que se proponga una excepción contra el mandamiento de pago. Basta que el deudor demuestre la admisión y que la demanda está pendiente de fallo (art. 837, par.)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la SAS demostró que el tribunal admitió su demanda contra la liquidación oficial que sirve de título ejecutivo y que aún no hay fallo. Regla: el parágrafo del art. 837 ordena levantar las medidas cautelares en ese caso. La garantía bancaria o de seguros solo se exige cuando lo demandado son las resoluciones que fallan las excepciones y ordenan seguir la ejecución, que es también el supuesto del art. 835. Conclusión: levantar los embargos sin exigir garantía.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-122",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Medidas cautelares",
+    "subtema": "Límite de inembargabilidad: persona natural con varias cuentas y persona jurídica",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 837-1 incs. 1 y 2 (adicionado por el art. 9 de la Ley 1066 de 2006)"
+    ],
+    "texto_fuente": "Para efecto de los embargos a cuentas de ahorro, librados por la Dirección de Impuestos y Aduanas Nacionales dentro de los procesos administrativos de cobro que esta adelante contra personas naturales, el límite de inembargabilidad es de veinticinco (25) salarios mínimos legales mensuales vigentes [...] depositados en la cuenta de ahorros más antigua de la cual sea titular el contribuyente. [...] En el caso de procesos que se adelanten contra personas jurídicas no existe límite de inembargabilidad.",
+    "pregunta": "Una Analista II del área de cobranzas de una Dirección Seccional prepara, para firma del jefe, los oficios de embargo de dos procesos de cobro coactivo. En el primero, la deudora es una SAS cuya única cuenta de ahorros tiene un saldo inferior al límite de inembargabilidad de las cuentas de ahorro. En el segundo, el deudor es un comerciante persona natural con dos cuentas de ahorros: una abierta en 2012, con un saldo inferior a ese límite, y otra abierta en 2024, con un saldo que lo supera. ¿Qué embargos proceden?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "De la SAS, nada, porque su saldo no supera el límite; del comerciante, lo que exceda el límite en cada una de sus dos cuentas.",
+        "explicacion": "Incorrecta en los dos procesos. Contra las personas jurídicas no existe límite de inembargabilidad, y en el caso de la persona natural el límite protege lo depositado en la cuenta de ahorros más antigua, no una porción de cada cuenta."
+      },
+      {
+        "id": "B",
+        "texto": "De la SAS, todo el saldo; del comerciante, lo que exceda el límite en cada una de sus dos cuentas.",
+        "explicacion": "Incorrecta. Acierta con la SAS, pero el límite de la persona natural no se aplica a cada cuenta: protege lo depositado en la cuenta de ahorros más antigua (la de 2012). La cuenta de 2024 puede embargarse en su totalidad."
+      },
+      {
+        "id": "C",
+        "texto": "De la SAS, nada, porque su saldo no supera el límite; del comerciante, todo el saldo de la cuenta de 2024 y nada de la de 2012.",
+        "explicacion": "Incorrecta. Acierta con el comerciante, pero aplica a la SAS un límite que la ley prevé para las personas naturales: en los procesos contra personas jurídicas no existe límite de inembargabilidad."
+      },
+      {
+        "id": "D",
+        "texto": "De la SAS, todo el saldo; del comerciante, todo el saldo de la cuenta de 2024 y nada de la de 2012.",
+        "explicacion": "Correcta. Contra las personas jurídicas no hay límite de inembargabilidad, así que se embarga todo el saldo de la SAS. En el comerciante, el límite protege lo depositado en la cuenta de ahorros más antigua (la de 2012, cuyo saldo es inferior al límite); la de 2024 puede embargarse por completo (art. 837-1)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: una deudora es persona jurídica, y el otro es persona natural con dos cuentas de ahorros de distinta antigüedad. Regla: el art. 837-1 fija el límite de inembargabilidad de las cuentas de ahorro de las personas naturales sobre lo depositado en la cuenta más antigua de la que sean titulares, y dispone que contra las personas jurídicas no existe límite. Conclusión: todo el saldo de la SAS; del comerciante, toda la cuenta de 2024 y nada de la de 2012.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-123",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Medidas cautelares",
+    "subtema": "Límite de los embargos y avalúo de inmuebles y vehículos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 838 inc. 1",
+      "art. 838 par. lits. a y b (modificado por el art. 264 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "El valor de los bienes embargados no podrá exceder del doble de la deuda más sus intereses. Si efectuado el avalúo de los bienes éstos excedieren la suma indicada, deberá reducirse el embargo si ello fuere posible, hasta dicho valor, oficiosamente o a solicitud del interesado. [...] Practicados el embargo y secuestro, y una vez notificado el auto o la sentencia que ordene seguir adelante con la ejecución, se procederá al avalúo de los bienes conforme a las reglas siguientes: a) Tratándose de bienes inmuebles, el valor será el contenido en la declaración del impuesto predial del último año gravable, incrementado en un cincuenta por ciento (50%); b) Tratándose de vehículos automotores, el valor será el fijado oficialmente para calcular el impuesto de rodamiento del último año gravable;",
+    "pregunta": "Un Gestor I de la División de Recaudo y Cobranzas de la Dirección Seccional de Impuestos de Cali cobra a una persona natural $60.000.000 de impuesto y sanción, más $20.000.000 de intereses liquidados a la fecha. Se embargaron y secuestraron una casa y una camioneta, y ya se notificó la resolución que ordena seguir adelante con la ejecución. En la declaración del impuesto predial del último año gravable, la casa figura por $90.000.000, y el valor fijado oficialmente para el impuesto de rodamiento de la camioneta en el último año gravable es de $40.000.000. Al avaluar los bienes, el deudor pide que se reduzca el embargo. ¿Qué debe decidir el gestor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No reducirlo, pues los bienes valen $130.000.000 y no superan el doble de la deuda con sus intereses.",
+        "explicacion": "Incorrecta. Avalúa la casa por el valor del predial sin el incremento. Los inmuebles se avalúan por el valor de la declaración del impuesto predial del último año gravable incrementado en un 50% ($90.000.000 × 1,5 = $135.000.000); con la camioneta, los bienes suman $175.000.000."
+      },
+      {
+        "id": "B",
+        "texto": "Reducirlo, pues los bienes valen $175.000.000 y superan el doble de la deuda con sus intereses.",
+        "explicacion": "Correcta. Avalúo: la casa, $90.000.000 × 1,5 = $135.000.000 (predial del último año más 50%); la camioneta, $40.000.000 (valor oficial para el impuesto de rodamiento). Total: $175.000.000, por encima del doble de la deuda con sus intereses (2 × $80.000.000 = $160.000.000; también supera los $140.000.000 que resultarían de doblar solo el capital). El embargo debe reducirse hasta ese valor, por ejemplo levantándolo sobre la camioneta."
+      },
+      {
+        "id": "C",
+        "texto": "Reducirlo, pues los bienes valen más que los $80.000.000 de la deuda con sus intereses, que es el tope.",
+        "explicacion": "Incorrecta. Acierta en reducir, pero toma como tope la deuda con sus intereses ($80.000.000). El límite es el doble de esa suma."
+      },
+      {
+        "id": "D",
+        "texto": "Negar la solicitud, pues la reducción del embargo la decide la DIAN de oficio y no a petición del deudor.",
+        "explicacion": "Incorrecta. El art. 838 ordena reducir el embargo que excede el límite oficiosamente o a solicitud del interesado."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la casa figura en el predial por $90.000.000, la camioneta tiene un valor oficial de $40.000.000 y la deuda con intereses es de $80.000.000. Regla: el art. 838 limita el valor de los bienes embargados al doble de la deuda más sus intereses y ordena reducir el embargo, de oficio o a solicitud del interesado, si el avalúo lo excede; su parágrafo avalúa los inmuebles por el predial del último año más 50% y los vehículos por el valor oficial del impuesto de rodamiento. Cálculo: $135.000.000 + $40.000.000 = $175.000.000 > $160.000.000. Conclusión: reducir el embargo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-124",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Medidas cautelares",
+    "subtema": "Embargo sobre un bien con embargo anterior por un crédito de grado inferior",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 839 incs. 1 y 2",
+      "art. 839-1 incs. 3 y 4 (adicionado por el art. 86 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "Cuando sobre dichos bienes ya existiere otro embargo registrado, el funcionario lo inscribirá y comunicará a la Administración y al juez que ordenó el embargo anterior. En este caso, si el crédito que originó el embargo anterior es de grado inferior al del fisco, el funcionario de Cobranzas continúará con el procedimiento, informando de ello al juez respectivo y si éste lo solicita, pondrá a su disposición el remanente del remate. Si el crédito que originó el embargo anterior es de grado superior al del fisco, el funcionario de cobranzas se hará parte en el proceso ejecutivo y velará porque se garantice la deuda con el remanente del remate del bien embargado.",
+    "pregunta": "Una Gestora III del área de cobranzas de una Dirección Seccional ordenó el embargo de un apartamento de un deudor. La Oficina de Registro de Instrumentos Públicos inscribió la medida y le envió el certificado: sobre el inmueble ya estaba registrado el embargo que decretó un juez civil en el proceso ejecutivo de un proveedor que le cobra al mismo deudor unas facturas sin garantía, crédito de grado inferior al del fisco. El apartamento no tiene hipoteca. ¿Qué debe hacer la gestora?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Seguir adelante con el cobro, informar al juez y, si él lo pide, dejarle a su disposición el remanente del remate.",
+        "explicacion": "Correcta. Cuando sobre el bien ya hay un embargo registrado por un crédito de grado inferior al del fisco, el funcionario de cobranzas continúa con el procedimiento, informa al juez y, si este lo solicita, pone a su disposición el remanente del remate (arts. 839 y 839-1)."
+      },
+      {
+        "id": "B",
+        "texto": "Hacerse parte en el ejecutivo del proveedor y velar por que la deuda fiscal se pague con el remanente del remate del bien.",
+        "explicacion": "Incorrecta. Hacerse parte en el proceso ejecutivo y velar por el remanente es lo que corresponde cuando el crédito del embargo anterior es de grado superior al del fisco. Aquí es de grado inferior."
+      },
+      {
+        "id": "C",
+        "texto": "Pedir al juez que levante su embargo, pues el crédito fiscal es preferente, y luego continuar con el cobro.",
+        "explicacion": "Incorrecta. La norma no exige que el juez levante su embargo: el de la DIAN se inscribe junto al anterior, y el cobro sigue con la obligación de informar al juez."
+      },
+      {
+        "id": "D",
+        "texto": "Esperar a que termine el ejecutivo para seguir con el cobro, pues el embargo registrado primero tiene prelación.",
+        "explicacion": "Incorrecta. Lo que define cómo se procede es el grado del crédito que originó el embargo anterior, no el orden de registro. Con un crédito anterior de grado inferior, la DIAN continúa el cobro."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el embargo anterior lo decretó un juez civil por un crédito de grado inferior al del fisco, y el inmueble no tiene hipoteca. Regla: los arts. 839 y 839-1 disponen que, si el crédito del embargo anterior es de grado inferior, el funcionario de cobranzas continúa el procedimiento, informa al juez y, si este lo solicita, pone a su disposición el remanente del remate; si es de grado superior, se hace parte en el ejecutivo. Conclusión: seguir el cobro e informar al juez.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-125",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Medidas cautelares",
+    "subtema": "Relación costo-beneficio negativa antes del secuestro",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 839-4 incs. 1 y 2 (modificado por el art. 265 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Decretada en el proceso de cobro coactivo las medidas cautelares sobre un bien y antes de fijar fecha para la práctica de la diligencia de secuestro, el funcionario de cobro competente, mediante auto de trámite, decidirá sobre la relación costo-beneficio del bien, teniendo en cuenta los criterios que establezca el Director General de la Dirección de Impuestos y Aduanas Nacionales mediante resolución. Si se establece que la relación costo-beneficio es negativa, el funcionario de cobro competente se abstendrá de practicar la diligencia de secuestro y levantará la medida cautelar dejando el bien a disposición del deudor o de la autoridad competente, según sea el caso, y continúará con las demás actividades del proceso de cobro.",
+    "pregunta": "Un Gestor I de cobranzas decretó el embargo de una motocicleta modelo 2009 de un deudor que debe $38.000.000. Antes de programar el secuestro, aplica los criterios que fijó por resolución el Director General de la DIAN y establece que lo que costaría secuestrar, trasladar, guardar y rematar la moto supera lo que se obtendría al venderla. Por ahora no se conocen otros bienes del deudor. ¿Cómo debe proceder el gestor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Practicar el secuestro y rematar la moto, pues todo bien embargado debe rematarse para abonar a la deuda.",
+        "explicacion": "Incorrecta. Antes de fijar fecha para el secuestro debe decidirse la relación costo-beneficio del bien; si es negativa, el funcionario se abstiene de practicar el secuestro (art. 839-4)."
+      },
+      {
+        "id": "B",
+        "texto": "Abstenerse del secuestro y suprimir la deuda de los registros, pues el deudor no tiene bienes que la respalden.",
+        "explicacion": "Incorrecta. Acierta en no practicar el secuestro, pero la consecuencia no es suprimir la deuda: el art. 839-4 ordena continuar con las demás actividades del proceso de cobro."
+      },
+      {
+        "id": "C",
+        "texto": "Abstenerse del secuestro, levantar la medida dejando la moto a disposición del deudor y continuar con el resto del cobro.",
+        "explicacion": "Correcta. Si la relación costo-beneficio es negativa, el funcionario se abstiene de practicar el secuestro, levanta la medida cautelar dejando el bien a disposición del deudor y continúa con las demás actividades del proceso de cobro (art. 839-4)."
+      },
+      {
+        "id": "D",
+        "texto": "Conservar el embargo sin secuestrar la moto y suspender el proceso de cobro hasta que se identifiquen otros bienes.",
+        "explicacion": "Incorrecta. La norma no permite conservar el embargo ni suspender el proceso: ordena levantar la medida y continuar con las demás actividades del cobro."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: con los criterios del Director General, el costo de secuestrar y rematar la moto supera lo que se obtendría por ella. Regla: el art. 839-4 obliga a decidir la relación costo-beneficio antes de fijar fecha para el secuestro y, si es negativa, a abstenerse de practicarlo, levantar la medida dejando el bien a disposición del deudor y continuar con las demás actividades del cobro. Conclusión: levantar el embargo de la moto y seguir con el cobro.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-126",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Medidas cautelares",
+    "subtema": "Oposición al secuestro con una prueba que no puede practicarse en la diligencia",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 839-3 (adicionado por el art. 88 de la Ley 6 de 1992)",
+      "art. 832"
+    ],
+    "texto_fuente": "En la misma diligencia que ordena el secuestro se practicarán las pruebas conducentes y se decidirá la oposición presentada, salvo que existan pruebas que no se puedan practicar en la misma diligencia, caso en el cual se resolverá dentro de los (5) días siguientes a la terminación de la diligencia. [...] Dentro del mes siguiente a la presentación del escrito mediante el cual se proponen las excepciones, el funcionario competente decidirá sobre ellas, ordenando previamente la práctica de las pruebas, cuando sea del caso.",
+    "pregunta": "Un Gestor II de cobranzas practica la diligencia de secuestro de la maquinaria de una fábrica deudora. Un tercero se opone: afirma que dos de las máquinas son suyas y que la fábrica solo las tenía en arriendo. Presenta el contrato y pide que se reciba el testimonio del técnico que instaló las máquinas, quien vive en otra ciudad y no puede comparecer ese día. El gestor considera conducente ese testimonio. ¿Qué debe hacer con la oposición?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Recibir en el acto las pruebas posibles y resolver la oposición dentro de los cinco días siguientes al cierre de la diligencia.",
+        "explicacion": "Correcta. En la diligencia se practican las pruebas conducentes y se decide la oposición; pero si hay pruebas que no se pueden practicar en ella, como este testimonio, la oposición se resuelve dentro de los cinco días siguientes a la terminación de la diligencia (art. 839-3)."
+      },
+      {
+        "id": "B",
+        "texto": "Decidirla en el acto con el contrato aportado, sin decretar el testimonio, porque la oposición se resuelve en la misma diligencia.",
+        "explicacion": "Incorrecta. La regla de decidir en la misma diligencia tiene una salvedad: si hay pruebas conducentes que no pueden practicarse allí, la oposición se resuelve dentro de los cinco días siguientes. Negar un testimonio conducente por esa razón desconoce la norma."
+      },
+      {
+        "id": "C",
+        "texto": "Suspender la diligencia y remitir la oposición al juez civil, porque la DIAN no puede decidir sobre bienes que reclama un tercero.",
+        "explicacion": "Incorrecta. El Estatuto atribuye la decisión de la oposición al secuestro a quien practica la diligencia (art. 839-3); no se remite al juez civil."
+      },
+      {
+        "id": "D",
+        "texto": "Tramitarla como una excepción y decidirla dentro del mes siguiente a su presentación, después de practicar las pruebas.",
+        "explicacion": "Incorrecta. Confunde la oposición al secuestro con las excepciones contra el mandamiento de pago, que se deciden dentro del mes siguiente a su presentación (art. 832). La oposición tiene su propio término de cinco días."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el testimonio que pide el tercero es conducente, pero no puede practicarse durante la diligencia. Regla: el art. 839-3 ordena practicar en la misma diligencia las pruebas conducentes y decidir allí la oposición, salvo que haya pruebas que no puedan practicarse en ella; en ese caso, la oposición se resuelve dentro de los cinco días siguientes a la terminación de la diligencia. Conclusión: resolverla dentro de esos cinco días.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-127",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procesos concursales",
+    "subtema": "Cobro coactivo en curso cuando inicia la reorganización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1116 de 2006",
+    "articulos": [
+      "art. 20 incs. 1 y 2 de la Ley 1116 de 2006",
+      "art. 849 del Estatuto Tributario"
+    ],
+    "texto_fuente": "A partir de la fecha de inicio del proceso de reorganización no podrá admitirse ni continuarse demanda de ejecución o cualquier otro proceso de cobro en contra del deudor. Así, los procesos de ejecución o cobro que hayan comenzado antes del inicio del proceso de reorganización, deberán remitirse para ser incorporados al trámite y considerar el crédito y las excepciones de mérito pendientes de decisión, las cuales serán tramitadas como objeciones, para efectos de calificación y graduación y las medidas cautelares quedarán a disposición del juez del concurso, [...] El Juez o funcionario competente declarará de plano la nulidad de las actuaciones surtidas en contravención a lo prescrito en el inciso anterior, por auto que no tendrá recurso alguno. [...] La intervención de la Administración en los procesos de sucesión, quiebra, concurso de acreedores y liquidaciones, se hará sin perjuicio de la acción de cobro coactivo administrativo.",
+    "pregunta": "Una Gestora II de la División de Recaudo y Cobranzas adelanta el cobro coactivo de una SAS por el IVA de 2024: notificó el mandamiento de pago y embargó dos cuentas bancarias, y la SAS propuso excepciones que todavía no se han decidido. El miércoles 9 de septiembre de 2026, la Superintendencia de Sociedades, como juez del concurso, expidió el auto que inicia el proceso de reorganización de la SAS. Un compañero opina que la DIAN puede seguir con el cobro, porque su intervención en los concursos no afecta la acción coactiva. ¿Qué debe hacer la gestora con el proceso de cobro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Seguir con el cobro y decidir las excepciones, porque intervenir en el concurso no le impide a la DIAN cobrar coactivamente.",
+        "explicacion": "Incorrecta. Se apoya en el art. 849 del Estatuto, pero la Ley 1116 de 2006, norma especial del régimen de insolvencia, dispone que desde el inicio de la reorganización no puede continuarse ningún proceso de cobro contra el deudor, y declara nulas las actuaciones que se surtan en contra (art. 20)."
+      },
+      {
+        "id": "B",
+        "texto": "Suspender el cobro y reanudarlo cuando termine la reorganización, conservando los embargos a órdenes de la DIAN.",
+        "explicacion": "Incorrecta. La ley no ordena suspender el cobro para reanudarlo después: los procesos de cobro iniciados antes deben remitirse al concurso, y las medidas cautelares quedan a disposición del juez del concurso, no de la DIAN (art. 20)."
+      },
+      {
+        "id": "C",
+        "texto": "Seguir con el cobro sin llegar al remate y pedir, mientras tanto, que el promotor incluya la deuda en la calificación de créditos.",
+        "explicacion": "Incorrecta. Desde el inicio de la reorganización no puede continuarse el cobro, ni siquiera sin rematar; las actuaciones que se surtan son nulas (art. 20)."
+      },
+      {
+        "id": "D",
+        "texto": "Remitirlo para que se incorpore al concurso: las excepciones pendientes se tramitarán como objeciones y los embargos pasarán al juez.",
+        "explicacion": "Correcta. El art. 20 de la Ley 1116 ordena remitir los procesos de cobro iniciados antes de la reorganización para incorporarlos al trámite; las excepciones de mérito pendientes se tramitan como objeciones, y las medidas cautelares quedan a disposición del juez del concurso."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: el cobro coactivo empezó antes del auto que inició la reorganización y tiene excepciones sin decidir y embargos vigentes. Regla: el art. 20 de la Ley 1116 de 2006 prohíbe continuar cualquier proceso de cobro desde el inicio de la reorganización y ordena remitir los que estaban en curso: las excepciones pendientes se tramitan como objeciones y las medidas cautelares quedan a disposición del juez del concurso. Lo actuado en contra es nulo. Conclusión: remitir el proceso al concurso.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1116_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-128",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procesos concursales",
+    "subtema": "Obligaciones posteriores al inicio de la reorganización: gastos de administración",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1116 de 2006",
+    "articulos": [
+      "art. 71 de la Ley 1116 de 2006",
+      "art. 20 inc. 1 de la Ley 1116 de 2006",
+      "art. 429 lit. a del Estatuto Tributario"
+    ],
+    "texto_fuente": "Las obligaciones causadas con posterioridad a la fecha de inicio del proceso de insolvencia son gastos de administración y tendrán preferencia en su pago sobre aquellas objeto del acuerdo de reorganización o del proceso de liquidación judicial, según sea el caso, y podrá exigirse coactivamente su cobro, [...] A partir de la fecha de inicio del proceso de reorganización no podrá admitirse ni continuarse demanda de ejecución o cualquier otro proceso de cobro en contra del deudor. [...] El impuesto se causa: a. En las ventas, en la fecha de emisión de la factura o documento equivalente y a falta de éstos, en el momento de la entrega,",
+    "pregunta": "El jueves 30 de abril de 2026, la Superintendencia de Sociedades, como juez del concurso, expidió el auto que inició el proceso de reorganización de una SAS responsable del IVA. En octubre de 2026, un Analista III de la División de Recaudo y Cobranzas encuentra tres deudas insolutas de la SAS: (1) el IVA del bimestre marzo-abril de 2026, declarado en mayo sin pago; (2) el IVA del bimestre mayo-junio de 2026, declarado el 14 de julio sin pago, y (3) una liquidación oficial de revisión de la renta del año gravable 2022, ejecutoriada en 2025. ¿Cuál de estas deudas puede cobrar la DIAN por la vía coactiva, por fuera de la reorganización?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El IVA de marzo-abril y el de mayo-junio, porque ambos se declararon y vencieron después del auto que inició la reorganización.",
+        "explicacion": "Incorrecta. Lo que define si una obligación es gasto de administración es su causación, no su declaración ni su vencimiento. El IVA de marzo-abril se causó con las ventas de esos meses (art. 429 del Estatuto), antes del inicio del proceso; por eso hace parte de la reorganización."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el IVA de mayo-junio, porque es un gasto de administración del concursado y la ley permite exigirlo coactivamente.",
+        "explicacion": "Correcta. Las obligaciones causadas después del inicio del proceso de insolvencia son gastos de administración, tienen preferencia en su pago y pueden cobrarse coactivamente (art. 71). El IVA de mayo-junio se causó con ventas posteriores al 30 de abril. Las otras dos deudas se causaron antes y deben hacerse valer en el proceso."
+      },
+      {
+        "id": "C",
+        "texto": "Solo la liquidación oficial de 2022, porque está ejecutoriada y es un título ajeno al trámite de la reorganización.",
+        "explicacion": "Incorrecta. Que la liquidación esté ejecutoriada no la saca del concurso: desde el inicio de la reorganización no puede admitirse ni continuarse ningún proceso de cobro por las obligaciones anteriores (art. 20)."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguna, porque desde que inicia la reorganización todas las deudas del concursado se pagan dentro de ese proceso.",
+        "explicacion": "Incorrecta. La ley exceptúa las obligaciones causadas después del inicio del proceso: son gastos de administración y pueden exigirse coactivamente (art. 71)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el proceso inició el 30 de abril de 2026; el IVA de marzo-abril y la renta de 2022 se causaron antes, y el IVA de mayo-junio después. Regla: el art. 20 de la Ley 1116 impide iniciar o continuar procesos de cobro desde el inicio de la reorganización, pero el art. 71 hace de las obligaciones causadas con posterioridad gastos de administración, con preferencia y cobro coactivo; el IVA se causa con cada venta (art. 429 del Estatuto). Conclusión: solo el IVA de mayo-junio.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1116_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-129",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procesos concursales",
+    "subtema": "Plazo y tasa de los créditos fiscales en el acuerdo de reorganización",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Ley 1116 de 2006",
+    "articulos": [
+      "art. 34 incs. 1 y 2 de la Ley 1116 de 2006",
+      "art. 845 inc. 5 del Estatuto Tributario (modificado por el art. 103 de la Ley 6 de 1992)",
+      "art. 814 inc. 5 del Estatuto Tributario (adicionado por el art. 114 de la Ley 488 de 1998)"
+    ],
+    "texto_fuente": "Las estipulaciones del acuerdo deberán tener carácter general, en forma que no quede excluido ningún crédito reconocido o admitido, y respetarán para efectos del pago, la prelación, los privilegios y preferencias establecidas en la ley. Los créditos a favor de la DIAN y los demás acreedores de carácter fiscal no estarán sujetos a los términos del estatuto tributario y demás disposiciones especiales, para efectos de determinar sus condiciones de pago y tasas, las cuales quedarán sujetas a las resultas del acuerdo de reorganización o de adjudicación. [...] Igualmente, el plazo concedido en la fórmula concordataria para la cancelación de los créditos fiscales no podrá ser superior al estipulado por este Estatuto para las facilidades de pago. [...] En casos especiales y solamente bajo la competencia del Director de Impuestos Nacionales [...] podrá concederse un plazo adicional de dos (2) años, al establecido en el inciso primero de este artículo.",
+    "pregunta": "Un Gestor III del área de cobranzas de una Dirección Seccional representa a la DIAN en la reorganización de una SAS. El proyecto de acuerdo paga los créditos de la DIAN en ocho años, con intereses a una tasa inferior a la de mora tributaria, y respeta la prelación legal. Antes de la votación, el gestor debe conceptuar si lo pactado es válido para los créditos fiscales. ¿Qué debe concluir?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que pueden pactarse, porque las condiciones de pago y las tasas de esos créditos quedan sujetas a lo que disponga el acuerdo.",
+        "explicacion": "Correcta. Los créditos de la DIAN no están sujetos a los términos del Estatuto Tributario para determinar sus condiciones de pago y tasas, que quedan sujetas a las resultas del acuerdo (art. 34 de la Ley 1116). El acuerdo, además, debe respetar la prelación legal, y lo hace."
+      },
+      {
+        "id": "B",
+        "texto": "Que no pueden pactarse, porque el plazo para los créditos fiscales no puede superar el de las facilidades de pago del Estatuto.",
+        "explicacion": "Incorrecta. Ese límite lo fijaba el art. 845 del Estatuto para los concordatos. En la reorganización de la Ley 1116, los créditos fiscales no están sujetos a los términos del Estatuto en cuanto a condiciones de pago y tasas."
+      },
+      {
+        "id": "C",
+        "texto": "Que el plazo puede pactarse, pero durante el acuerdo los intereses deben liquidarse a la tasa de mora tributaria.",
+        "explicacion": "Incorrecta. La tasa también queda sujeta a lo que disponga el acuerdo: la ley excluye los términos del Estatuto tanto para las condiciones de pago como para las tasas."
+      },
+      {
+        "id": "D",
+        "texto": "Que no pueden pactarse sin la aprobación del Director General, a quien corresponde conceder plazos mayores de cinco años.",
+        "explicacion": "Incorrecta. La autorización del Director General para un plazo adicional es propia de las facilidades de pago del art. 814 del Estatuto. En la reorganización, las condiciones de los créditos fiscales las fija el acuerdo."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: el acuerdo fija para los créditos de la DIAN un plazo de ocho años y una tasa inferior a la de mora, respetando la prelación. Regla: el art. 34 de la Ley 1116 dispone que los créditos de la DIAN no están sujetos a los términos del Estatuto Tributario para determinar sus condiciones de pago y tasas, que quedan sujetas al acuerdo; el límite del art. 845 del Estatuto era para los concordatos. Conclusión: esas condiciones pueden pactarse.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1116_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-130",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procesos concursales",
+    "subtema": "Sociedad en causal de disolución: aviso a la DIAN y prelación de los créditos fiscales",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 847 incs. 1 y 2 y par."
+    ],
+    "texto_fuente": "Cuando una sociedad comercial o civil entre en cualquiera de las causales de disolución contempladas en la ley, distintas a la declaratoria de quiebra o concurso de acreedores, deberá darle aviso, por medio de su representante legal, dentro de los diez (10) días siguientes a la fecha en que haya ocurrido el hecho que produjo la causal de disolución, a la oficina de cobranzas de la Administración de Impuestos Nacionales ante la cual sea contribuyente, responsable o agente retenedor, con el fin de que ésta le comunique sobre las deudas fiscales de plazo vencido a cargo de la sociedad. [...] Los liquidadores o quienes hagan sus veces deberán procurar el pago de las deudas de la sociedad, respetando la prelación de los créditos fiscales. PARAGRAFO. Los representantes legales que omitan dar el aviso oportuno a la Administración y los liquidadores que desconozcan la prelación de los créditos fiscales, serán solidariamente responsables por las deudas insolutas que sean determinadas por la Administración,",
+    "pregunta": "El martes 30 de junio de 2026 venció el término de duración de una SAS, que no lo prorrogó y quedó así en causal de disolución. Su representante legal nunca avisó a la DIAN. El liquidador pagó primero a los proveedores, cuyos créditos no tenían garantía, y dejó sin pagar el IVA que la sociedad había declarado. En octubre de 2026, una Gestora I de la División de Recaudo y Cobranzas estudia a quién vincular al cobro de ese IVA. ¿Quiénes responden solidariamente por esa deuda?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solo el liquidador, porque fue él quien pagó a los proveedores antes que al fisco.",
+        "explicacion": "Incorrecta. El liquidador responde por desconocer la prelación del crédito fiscal, pero no es el único: el representante legal que omitió el aviso también responde solidariamente (art. 847, par.)."
+      },
+      {
+        "id": "B",
+        "texto": "Solo el representante legal, porque debió avisar a la DIAN dentro de los diez días siguientes a la causal.",
+        "explicacion": "Incorrecta. El representante responde por no avisar dentro de los diez días siguientes a la causal, pero también responde el liquidador que pagó a los proveedores sin respetar la prelación de los créditos fiscales (art. 847, par.)."
+      },
+      {
+        "id": "C",
+        "texto": "El representante legal, por omitir el aviso, y el liquidador, por desconocer la prelación del crédito fiscal.",
+        "explicacion": "Correcta. El parágrafo del art. 847 hace solidariamente responsables por las deudas insolutas a los representantes legales que omitan el aviso oportuno a la DIAN y a los liquidadores que desconozcan la prelación de los créditos fiscales. Aquí ocurrieron las dos conductas."
+      },
+      {
+        "id": "D",
+        "texto": "El representante legal y el liquidador, pero cada uno solo hasta el valor de lo que se pagó a los proveedores.",
+        "explicacion": "Incorrecta. La norma no limita la responsabilidad al valor pagado a los proveedores: los dos responden solidariamente por las deudas insolutas que determine la Administración."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la SAS quedó en causal de disolución sin que su representante avisara a la DIAN, y el liquidador pagó a proveedores sin garantía antes que el IVA. Regla: el art. 847 obliga al representante legal a avisar dentro de los diez días siguientes a la causal y a los liquidadores a respetar la prelación de los créditos fiscales; su parágrafo los hace solidariamente responsables por las deudas insolutas si incumplen. Conclusión: responden los dos.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-131",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procesos concursales",
+    "subtema": "Intervención de la DIAN en sucesiones y acuerdo de pago de los herederos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 844 (cifra en UVT por el art. 51 de la Ley 1111 de 2006)",
+      "art. 868 inc. 6 lit. c (modificado por el art. 50 de la Ley 1111 de 2006)"
+    ],
+    "texto_fuente": "Los funcionarios ante quienes se adelanten o tramiten sucesiones, cuando la cuantía de los bienes sea superior a 700 UVT deberán informar previamente a la partición el nombre del causante y el avalúo o valor de los bienes. [...] Si dentro de los veinte (20) días siguientes a la comunicación, la Administración de Impuestos no se ha hecho parte, el funcionario podrá continúar con los trámites correspondientes. Los herederos, asignatarios o legatarios podrán solicitar acuerdo de pago por las deudas fiscales de la sucesión. En la Resolución que apruebe el acuerdo de pago se autorizará al funcionario para que proceda a tramitar la partición de los bienes, sin el requisito del pago total de las deudas. [...] c) Se aproximará al múltiplo de mil más cercano, cuando el resultado fuere superior a diez mil pesos ($10.000).",
+    "pregunta": "Una notaría tramita la sucesión de un comerciante cuyos bienes se avaluaron en $41.000.000; aún no se ha hecho la partición. La notaría informó a la DIAN y, dentro de los veinte días siguientes, la Dirección Seccional se hizo parte y relacionó deudas tributarias del causante por $9.000.000. Los herederos acuden a un Facilitador de la DIAN: no tienen dinero para pagar de contado y quieren terminar la sucesión. Para 2026, la UVT es de $52.374. ¿Qué orientación es correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La DIAN no debía intervenir, pues los bienes de la sucesión no superan el valor que obliga a la notaría a informarle.",
+        "explicacion": "Incorrecta. El deber de informar existe cuando los bienes superan 700 UVT: 700 × $52.374 = $36.661.800, que se aproxima a $36.662.000 (art. 868). Los bienes ($41.000.000) superan ese valor."
+      },
+      {
+        "id": "B",
+        "texto": "Antes de la partición deben pagar todas las deudas tributarias, porque la DIAN se hizo parte dentro del término.",
+        "explicacion": "Incorrecta. El art. 844 permite a los herederos pedir un acuerdo de pago por las deudas fiscales de la sucesión, y la resolución que lo aprueba autoriza la partición sin el pago total."
+      },
+      {
+        "id": "C",
+        "texto": "La notaría puede hacer la partición sin esperar el pago, porque ya pasaron los veinte días siguientes al aviso.",
+        "explicacion": "Incorrecta. La notaría puede continuar sin la DIAN cuando esta no se hace parte dentro de los veinte días siguientes a la comunicación. Aquí sí se hizo parte."
+      },
+      {
+        "id": "D",
+        "texto": "Pueden pedir un acuerdo de pago de esas deudas, y la resolución que lo apruebe autorizará la partición sin el pago total.",
+        "explicacion": "Correcta. Los herederos pueden solicitar un acuerdo de pago por las deudas fiscales de la sucesión; la resolución que lo apruebe autoriza al funcionario a tramitar la partición sin el requisito del pago total (art. 844)."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: los bienes valen $41.000.000 y la DIAN se hizo parte a tiempo con deudas por $9.000.000, que los herederos no pueden pagar de contado. Regla: el art. 844 obliga a informar a la DIAN antes de la partición si los bienes superan 700 UVT, permite continuar si la DIAN no se hace parte en veinte días y autoriza a los herederos a pedir un acuerdo de pago, cuya resolución permite la partición sin el pago total. Cálculo: 700 × $52.374 = $36.662.000 (redondeado). Conclusión: pedir el acuerdo de pago.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-132",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Procesos concursales",
+    "subtema": "Presentación de créditos en la liquidación judicial que sigue a un acuerdo incumplido",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Ley 1116 de 2006",
+    "articulos": [
+      "art. 48 num. 5 de la Ley 1116 de 2006",
+      "art. 69 num. 5 de la Ley 1116 de 2006",
+      "art. 71 de la Ley 1116 de 2006"
+    ],
+    "texto_fuente": "Un plazo de veinte (20) días, a partir de la fecha de desfijación del aviso que informa sobre la apertura del proceso de liquidación judicial, para que los acreedores presenten su crédito al liquidador, allegando prueba de la existencia y cuantía del mismo. Cuando el proceso de liquidación judicial sea iniciado como consecuencia del incumplimiento del acuerdo de reorganización, de liquidación judicial [...] fracaso o incumplimiento del concordato o de un acuerdo de reestructuración, los acreedores reconocidos y admitidos en ellos, se entenderán presentados en tiempo al liquidador, en el proceso de liquidación judicial. Los créditos no calificados y graduados en el acuerdo de reorganización y los derivados de gastos de administración, deberán ser presentados al liquidador. [...] 5. Las obligaciones que teniendo la carga de presentarse al trámite de liquidación judicial, no lo hicieren dentro de los términos fijados en la presente ley. [...] Las obligaciones causadas con posterioridad a la fecha de inicio del proceso de insolvencia son gastos de administración",
+    "pregunta": "En 2024 se confirmó el acuerdo de reorganización de una SAS, en el que se calificaron y graduaron créditos de la DIAN por el IVA de 2023. Mientras ejecutaba el acuerdo, la SAS dejó de pagar el IVA de 2025. En agosto de 2026, por incumplimiento del acuerdo, el juez del concurso abrió la liquidación judicial, y el aviso de apertura se desfijó el viernes 4 de septiembre de 2026. Un Gestor II de cobranzas prepara lo que se presentará al liquidador dentro del plazo legal. ¿Qué créditos está obligada la DIAN a presentarle?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Los del IVA de 2023 y de 2025, porque la apertura de la liquidación obliga a presentar de nuevo todas las acreencias.",
+        "explicacion": "Incorrecta. Cuando la liquidación judicial se abre por incumplimiento del acuerdo de reorganización, los acreedores reconocidos y admitidos en él se entienden presentados en tiempo al liquidador (art. 48 num. 5). La DIAN no está obligada a presentar de nuevo el IVA de 2023."
+      },
+      {
+        "id": "B",
+        "texto": "Los del IVA de 2025, porque las acreencias admitidas en el acuerdo se tienen por presentadas oportunamente.",
+        "explicacion": "Correcta. Los créditos reconocidos en el acuerdo (IVA de 2023) se entienden presentados a tiempo, pero los no calificados y graduados en él y los derivados de gastos de administración deben presentarse al liquidador (art. 48 num. 5). El IVA de 2025 se causó después del inicio de la reorganización, es gasto de administración (art. 71) y, si no se presenta a tiempo, queda postergado (art. 69 num. 5). La DIAN solo está obligada a presentar ese crédito."
+      },
+      {
+        "id": "C",
+        "texto": "Los del IVA de 2023, porque el IVA de 2025 es un gasto de administración que se paga sin necesidad de presentarlo.",
+        "explicacion": "Incorrecta. Invierte la regla: los gastos de administración sí deben presentarse al liquidador; lo que se entiende presentado a tiempo son los créditos reconocidos en el acuerdo."
+      },
+      {
+        "id": "D",
+        "texto": "Ninguno, porque el juez debe incorporar de oficio todas las deudas que la DIAN hizo valer en el acuerdo.",
+        "explicacion": "Incorrecta. La presentación en tiempo que la ley da por cumplida cubre los créditos reconocidos y admitidos en el acuerdo; el IVA de 2025 no lo estaba y debe presentarse."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: la liquidación judicial se abrió por incumplimiento de un acuerdo en el que se reconoció el IVA de 2023; el IVA de 2025 se causó durante la ejecución del acuerdo. Regla: el art. 48 num. 5 de la Ley 1116 tiene por presentados a tiempo los créditos reconocidos en el acuerdo y exige presentar al liquidador los no calificados en él y los gastos de administración; el art. 69 num. 5 posterga las obligaciones que no se presenten a tiempo. Conclusión: la DIAN solo está obligada a presentar el IVA de 2025.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1116_2006.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-133",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Entidades autorizadas para recaudar",
+    "subtema": "Obligación de recibir en todas las oficinas y recepción indebida de declaraciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 801 inc. 2 lit. a",
+      "art. 674 nums. 2 y 3 (modificado por el art. 295 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Las entidades que obtengan autorización, deberán cumplir con las siguientes obligaciones: a. Recibir en todas sus oficinas, agencias o sucursales, con excepción de las que señale la Dirección General de Impuestos Nacionales [...] las declaraciones tributarias y pagos de los contribuyentes, responsables, agentes retenedores o declarantes que lo soliciten, sean o no clientes de la entidad autorizada. [...] 2. Diez (10) UVT por cada declaración o documento recepcionado sin el diligenciamiento de la casilla de la firma del declarante o de quien lo representa. 3. Diez (10) UVT por cada formulario recepcionado cuando el mismo deba presentarse exclusivamente a través de los servicios informáticos electrónicos de acuerdo con las resoluciones de prescripción de formularios proferidas por la Administración Tributaria, salvo en los eventos de contingencia autorizados previamente por la DIAN.",
+    "pregunta": "Una Analista I de la Subdirección de Recaudo revisa cuatro actuaciones de oficinas de un banco autorizado para recaudar impuestos y recibir declaraciones. En ninguno de los casos hubo una contingencia autorizada por la DIAN. ¿En cuál de ellas el banco actuó conforme a las obligaciones que asumió con la autorización?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una oficina que la DIAN excluyó de esa labor no recibió la declaración de un contribuyente y lo envió a otra sucursal.",
+        "explicacion": "Correcta. Las entidades autorizadas deben recibir declaraciones y pagos en todas sus oficinas, con excepción de las que señale la DIAN (art. 801 lit. a). La oficina excluida podía no recibir la declaración."
+      },
+      {
+        "id": "B",
+        "texto": "Una sucursal no recibió la declaración en papel ni el pago de una persona natural no obligada a declarar en forma virtual, por no ser cliente.",
+        "explicacion": "Incorrecta. El banco debe recibir las declaraciones y los pagos de quienes lo soliciten, sean o no clientes de la entidad (art. 801 lit. a)."
+      },
+      {
+        "id": "C",
+        "texto": "Una sucursal recibió en papel la declaración de una sociedad obligada a presentarla por los servicios informáticos electrónicos.",
+        "explicacion": "Incorrecta. Recibir un formulario que debía presentarse exclusivamente por los servicios informáticos electrónicos, sin contingencia autorizada, se sanciona con 10 UVT por formulario (art. 674 num. 3)."
+      },
+      {
+        "id": "D",
+        "texto": "Una sucursal recibió una declaración con el pago completo, pese a que nadie firmó la casilla del declarante.",
+        "explicacion": "Incorrecta. Recibir una declaración sin el diligenciamiento de la casilla de la firma del declarante se sanciona con 10 UVT por declaración (art. 674 num. 2)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: la única oficina que no recibió una declaración sin incumplir era la que la DIAN había excluido. Regla: el art. 801 lit. a obliga a recibir declaraciones y pagos en todas las oficinas, salvo las que señale la DIAN, sean o no clientes quienes los presenten; el art. 674 sanciona recibir declaraciones sin firma o en papel cuando debían presentarse por los servicios electrónicos. Conclusión: actuó bien la oficina excluida.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-134",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Entidades autorizadas para recaudar",
+    "subtema": "Fecha de pago e intereses a cargo del banco que consigna tarde",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 803",
+      "art. 634 par. 1 (modificado por el art. 278 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Se tendrá como fecha de pago del impuesto, respecto de cada contribuyente, aquélla en que los valores imputables hayan ingresado a las oficinas de Impuestos Nacionales o a los Bancos autorizados, [...] Cuando una entidad autorizada para recaudar impuestos no efectúe la consignación de los recaudos dentro de los términos establecidos para tal fin, se generarán a su cargo y sin necesidad de trámite previo alguno, intereses moratorios, liquidados diariamente a la tasa de mora que rija para efectos tributarios, sobre el monto exigible no consignado oportunamente, desde el día siguiente a la fecha en que se debió efectuar la consignación y hasta el día en que ella se produzca. Cuando la sumatoria de la casilla \"Pago Total\" de los formularios y recibos de pago, informada por la entidad autorizada para recaudar, no coincida con el valor real que figure en ellos, los intereses de mora imputables al recaudo no consignado oportunamente se liquidarán al doble de la tasa prevista en este artículo.",
+    "pregunta": "Una SAS pagó el impuesto de su declaración el martes 14 de julio de 2026, último día del plazo, en una sucursal de un banco autorizado para recaudar. El banco debía consignar ese recaudo a más tardar el jueves 16 de julio, pero lo consignó el miércoles 22 de julio. Además, el total de pagos que el banco informó para ese día era menor que la suma de los valores que figuran en los recibos. Un Gestor I de la Subdirección de Recaudo debe definir los intereses de mora por ese retraso. ¿Cómo se liquidan?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "A cargo del banco, a la tasa de mora ordinaria; la diferencia en el total informado se castiga con una sanción por inconsistencia.",
+        "explicacion": "Incorrecta. Cuando la sumatoria de la casilla «Pago Total» informada por la entidad no coincide con el valor real de los formularios y recibos, los intereses por el recaudo no consignado a tiempo se liquidan al doble de la tasa (art. 634 par. 1, inc. 2)."
+      },
+      {
+        "id": "B",
+        "texto": "A cargo de la SAS, desde el día siguiente al vencimiento de su plazo hasta el día en que el banco hizo la consignación.",
+        "explicacion": "Incorrecta. La SAS pagó a tiempo: la fecha de pago es aquella en que los valores ingresaron al banco autorizado (art. 803). La mora en la consignación es del banco."
+      },
+      {
+        "id": "C",
+        "texto": "A cargo del banco, al doble de la tasa de mora, desde el día siguiente al vencimiento de su plazo hasta que consignó.",
+        "explicacion": "Correcta. La SAS pagó el 14 de julio, dentro del plazo (art. 803). Por la consignación tardía, el banco debe intereses sin trámite previo, desde el día siguiente a la fecha en que debía consignar (viernes 17 de julio) hasta el 22 de julio; y como el total informado no coincide con el valor real de los recibos, se liquidan al doble de la tasa (art. 634 par. 1)."
+      },
+      {
+        "id": "D",
+        "texto": "A cargo del banco, al doble de la tasa de mora, desde el día en que la SAS pagó hasta el día en que consignó el recaudo.",
+        "explicacion": "Incorrecta. Acierta en el responsable y en la tasa, pero los intereses corren desde el día siguiente a la fecha en que el banco debía consignar, no desde el pago de la SAS."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la SAS pagó en el banco el último día del plazo; el banco consignó seis días después de su fecha límite e informó un total menor que el de los recibos. Regla: el art. 803 toma como fecha de pago la del ingreso al banco autorizado; el par. 1 del art. 634 cobra al banco intereses desde el día siguiente a la fecha en que debía consignar y hasta la consignación, al doble de la tasa si el total informado no coincide con el real. Conclusión: intereses dobles a cargo del banco.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-135",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Entidades autorizadas para recaudar",
+    "subtema": "Sanción por entrega extemporánea de documentos: días calendario de retraso",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 676 nums. 2, 3 y 5 e inc. final (modificado por el art. 297 de la Ley 1819 de 2016)",
+      "art. 676-1 num. 2 (adicionado por el art. 298 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "Cuando las entidades autorizadas para recaudar impuestos incumplan los términos fijados y lugares señalados por el Ministerio de Hacienda y Crédito Público para la entrega de los documentos recibidos, así como para entregar la información correspondiente a esos documentos en medios electrónicos o en los mecanismos que se determinen para la grabación y transmisión, incurrirán en las siguientes sanciones, por cada documento: [...] 2. De seis (6) a diez (10) días de retraso, una sanción dos (2) UVT. 3. De once (11) a quince (15) días de retraso, una sanción de tres (3) UVT. [...] 5. De veinte (20) a veinticinco (25) días de retraso, una sanción de cinco (5) UVT. [...] Los términos se contaran por días calendario, a partir del día siguiente al vencimiento del plazo para la entrega de los documentos o la información correspondiente a los documentos, hasta el día de su entrega efectiva. [...] Las entidades autorizadas para recaudar incurrirán en las siguientes sanciones, en relación con la presentación y entrega de informes de recaudo, formatos o declaraciones de consignaciones [...] b) De once (11) a veinte (20) días de retraso, una sanción de diez (10) UVT;",
+    "pregunta": "El lunes 25 de mayo de 2026, un banco autorizado recibió un lote de 400 declaraciones. Debía entregar a la DIAN esos documentos y su información a más tardar el viernes 5 de junio, en los lugares y términos fijados, pero lo hizo el miércoles 17 de junio. Entre el 5 y el 17 de junio fueron festivos los lunes 8 y 15. Un Analista II de la Subdirección de Recaudo liquida la sanción para el pliego de cargos: el banco no cumple las condiciones para reducirla, y el total, que resulta de multiplicar por los 400 documentos, supera la sanción mínima. ¿Qué valor por documento debe aplicar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dos UVT por documento, por un retraso de seis días hábiles.",
+        "explicacion": "Incorrecta. Cuenta días hábiles, pero en esta sanción los términos se cuentan por días calendario (art. 676, inc. final)."
+      },
+      {
+        "id": "B",
+        "texto": "Tres UVT por documento, por un retraso de doce días calendario.",
+        "explicacion": "Correcta. El retraso se cuenta por días calendario desde el día siguiente al vencimiento (6 de junio) hasta la entrega efectiva (17 de junio): 12 días, que caen en el rango de 11 a 15 días, sancionado con 3 UVT por documento (art. 676 num. 3)."
+      },
+      {
+        "id": "C",
+        "texto": "Cinco UVT por documento, por los veintitrés días transcurridos desde el recibo.",
+        "explicacion": "Incorrecta. El retraso se cuenta desde el día siguiente al vencimiento del plazo de entrega, no desde que el banco recibió las declaraciones."
+      },
+      {
+        "id": "D",
+        "texto": "Diez UVT por documento, por un retraso de entre once y veinte días.",
+        "explicacion": "Incorrecta. Aplica la escala del art. 676-1, que es para los informes de recaudo, formatos o declaraciones de consignaciones. Para la entrega tardía de documentos rige la escala del art. 676: de 11 a 15 días, 3 UVT."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el plazo vencía el viernes 5 de junio de 2026 y el banco entregó el miércoles 17 de junio. Regla: el art. 676 sanciona por documento la entrega tardía según los días de retraso, contados por días calendario desde el día siguiente al vencimiento hasta la entrega efectiva; de 11 a 15 días corresponden 3 UVT. Cálculo: del 6 al 17 de junio hay 12 días calendario. Conclusión: 3 UVT por documento.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-136",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Entidades autorizadas para recaudar",
+    "subtema": "Recurso contra la sanción a una entidad recaudadora: término con festivos",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 678 del Estatuto Tributario",
+      "art. 62 de la Ley 4 de 1913",
+      "art. 15 num. 2 del Decreto 1742 de 2020"
+    ],
+    "texto_fuente": "Las sanciones de que tratan los artículos 674, 675 y 676, se impondrán por el Subdirector de Recaudación de la Dirección General de Impuestos Nacionales [...] previo traslado de cargos, por el término de quince (15) días para responder. [...] Contra la resolución que impone la sanción procede únicamente el recurso de reposición que deberá ser interpuesto dentro de los quince (15) días siguientes a la notificación de la misma, ante el mismo funcionario que profirió la resolución. [...] En los plazos de días que se señalen en las leyes y actos oficiales, se entienden suprimidos los feriados y de vacantes, a menos de expresarse lo contrario. [...] Controlar y evaluar el cumplimiento de las obligaciones que tienen las entidades recaudadoras e imponer las sanciones a que haya lugar cuando incumplan sus obligaciones.",
+    "pregunta": "El lunes 3 de agosto de 2026 se notificó a un banco la resolución con la que la Subdirección de Recaudo le impuso una sanción por recibir declaraciones con errores de verificación. El banco radicó un recurso de reposición contra ella el miércoles 26 de agosto. En agosto fueron festivos el viernes 7 y el lunes 17. Un Gestor II de esa subdirección proyecta la decisión sobre el recurso. ¿Qué debe proyectar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazarlo por extemporáneo, pues el término de quince días venció el martes 18 de agosto.",
+        "explicacion": "Incorrecta. Cuenta días calendario. En los plazos de días señalados en la ley se suprimen los feriados (art. 62 de la Ley 4 de 1913), así que se cuentan días hábiles."
+      },
+      {
+        "id": "B",
+        "texto": "Declararlo extemporáneo, pues los quince días hábiles vencieron el lunes 24 de agosto.",
+        "explicacion": "Incorrecta. Cuenta días hábiles, pero no descuenta los festivos del 7 y el 17 de agosto. Con ellos, el decimoquinto día hábil es el miércoles 26 de agosto."
+      },
+      {
+        "id": "C",
+        "texto": "Darle trámite como recurso de reconsideración, pues contra la sanción había dos meses para recurrir.",
+        "explicacion": "Incorrecta. Contra la resolución que sanciona a una entidad recaudadora procede únicamente el recurso de reposición, dentro de los quince días siguientes a su notificación y ante el mismo funcionario que la profirió (art. 678). No procede la reconsideración."
+      },
+      {
+        "id": "D",
+        "texto": "Resolverlo de fondo, pues se interpuso el último de los quince días hábiles siguientes a la notificación.",
+        "explicacion": "Correcta. Contra la sanción procede la reposición, dentro de los quince días siguientes a la notificación y ante el mismo funcionario (art. 678). Contados en días hábiles y descontando los festivos del 7 y el 17 de agosto, el término vencía el miércoles 26 de agosto, día en que se radicó el recurso."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la sanción se notificó el lunes 3 de agosto de 2026, el recurso se radicó el miércoles 26 y en ese lapso hubo dos festivos. Regla: el art. 678 del Estatuto concede solo la reposición, dentro de los quince días siguientes a la notificación y ante el mismo funcionario; el art. 62 de la Ley 4 de 1913 suprime los feriados de los plazos de días. Cálculo: desde el 4 de agosto, sin fines de semana ni los días 7 y 17, el día 15 es el 26 de agosto. Conclusión: el recurso es oportuno.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-137",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Entidades autorizadas para recaudar",
+    "subtema": "Inconsistencias en la información transmitida y tope anual de sanciones",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Alta",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 675 nums. 2 y 3 (modificado por el art. 296 de la Ley 1819 de 2016)",
+      "art. 676-2 (adicionado por el art. 299 de la Ley 1819 de 2016)",
+      "art. 676-3 incs. 1 y 2 (adicionado por el art. 301 de la Ley 1819 de 2016)"
+    ],
+    "texto_fuente": "cuando la información remitida en el medio magnético no coincida con la contenida en los formularios o recibos de pago recepcionados por la entidad autorizada para tal efecto, y esta situación se presente respecto de un número de documentos que supere el medio por ciento (0.5%) del total de documentos correspondientes a la recepción o recaudo de un mismo día, la respectiva entidad será acreedora a una sanción por cada documento que presente uno o varios errores, [...] 2. Veinte (20) UVT cuando los errores se presenten respecto de un número de documentos mayor al dos punto cinco por ciento (2.5%) y no superior al cuatro por ciento (4%) del total de documentos. 3. Treinta (30) UVT cuando los errores se presenten respecto de un número de documentos mayor al cuatro por ciento (4%) del total de documentos. [...] 1. La sanción se reducirá al cincuenta por ciento (50%) del monto previsto en la ley, siempre que los errores, inconsistencias y/o extemporaneidades se presenten respecto de un número de documentos o informes menor o igual al uno por ciento (1.0%) del total de documentos recepcionados o informes presentados por la entidad autorizada para recaudar durante el año fiscal en el que se hubiesen cometido las respectivas conductas objeto de sanción. 2. La sanción se reducirá al setenta y cinco por ciento (75%) del monto previsto en la ley, siempre que los errores, inconsistencias y/o extemporaneidades se presenten respecto de un número de documentos o informes mayor al uno por ciento (1.0%) y menor al uno punto cinco por ciento (1.5%) [...] En ningún caso el valor de las sanciones de que tratan los artículos 674, 675, 676 y 676-1 de este Estatuto será inferior a veinte (20) UVT por cada conducta sancionable. En todo caso, la sumatoria de las sanciones de que trata el inciso anterior, que se lleguen a imponer, no podrá superar el monto de treinta y tres mil (33.000) UVT en el año fiscal.",
+    "pregunta": "El miércoles 8 de abril de 2026, un banco autorizado recibió en total 1.500 declaraciones y recibos de pago. En la información que transmitió a la DIAN, 90 de esos documentos no coinciden con los formularios recibidos. En 2026, los documentos del banco con errores, inconsistencias o extemporaneidades superan el 1,5% de todos los que recibió. Además, por otras infracciones de 2026 previstas en los arts. 674 a 676-1 del Estatuto Tributario, la DIAN ya le impuso ese año sanciones por 31.000 UVT. El lunes 14 de diciembre de 2026, un Gestor III de la Subdirección de Recaudo liquida la sanción por los 90 documentos, que se impondrá ese mismo mes. ¿Cuántas UVT puede imponer?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "2.000 UVT, que es el margen que todavía queda bajo el tope anual de la entidad.",
+        "explicacion": "Correcta. Los 90 documentos son el 6% de los 1.500 del día; como superan el 4%, la sanción es de 30 UVT por documento: 2.700 UVT (art. 675 num. 3). No hay reducción, porque los documentos con errores del año superan el 1,5% (art. 676-2). Pero la suma de las sanciones de los arts. 674 a 676-1 que se impongan en el año fiscal no puede superar 33.000 UVT (art. 676-3): en 2026 ya se impusieron 31.000 y la nueva también se impone en 2026, así que quedan 2.000."
+      },
+      {
+        "id": "B",
+        "texto": "2.700 UVT, a razón de 30 UVT por cada uno de los 90 documentos con inconsistencias.",
+        "explicacion": "Incorrecta. Liquida bien la sanción por documento, pero olvida que la sumatoria de las sanciones de los arts. 674 a 676-1 no puede superar 33.000 UVT en el año fiscal, y en 2026 ya se habían impuesto 31.000 (art. 676-3)."
+      },
+      {
+        "id": "C",
+        "texto": "1.350 UVT, que resultan de reducir al 50% la sanción de 30 UVT por documento.",
+        "explicacion": "Incorrecta. La reducción al 50% exige que los documentos con errores sean como máximo el 1% de los recibidos en el año; aquí superan el 1,5%, así que no hay reducción (art. 676-2)."
+      },
+      {
+        "id": "D",
+        "texto": "1.800 UVT, a razón de 20 UVT por cada uno de los 90 documentos con inconsistencias.",
+        "explicacion": "Incorrecta. Los 90 documentos son el 6% de los del día, por encima del 4%: la tarifa es de 30 UVT, no de 20 UVT, que corresponde a más del 2,5% y hasta el 4% (art. 675)."
+      }
+    ],
+    "respuestaCorrecta": "A",
+    "explicacionIA": "Dato decisivo: 90 de los 1.500 documentos del día (6%) tienen inconsistencias, no procede reducción y en 2026, año en que se impone la nueva sanción, ya se habían impuesto 31.000 UVT por infracciones de los arts. 674 a 676-1. Regla: el art. 675 fija 30 UVT por documento cuando los errores superan el 4% del día; el art. 676-2 reduce la sanción solo si los errores del año están por debajo del 1,5%; el art. 676-3 limita a 33.000 UVT en el año fiscal la suma de las sanciones de los arts. 674 a 676-1. Cálculo: 90 × 30 = 2.700 UVT; tope disponible: 33.000 − 31.000 = 2.000 UVT. Conclusión: 2.000 UVT.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-138",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Cobro persuasivo y facilidades de pago",
+    "subtema": "Imputación proporcional de los pagos y reimputación sin acto previo",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 804 incs. 1 y 2 (modificado por el art. 139 de la Ley 223 de 1995; inc. 1 modificado por el art. 6 de la Ley 1066 de 2006)"
+    ],
+    "texto_fuente": "A partir del 1o de enero del 2006, los pagos que por cualquier concepto hagan los contribuyentes, responsables, agentes de retención o usuarios aduaneros en relación con deudas vencidas a su cargo, deberán imputarse al período e impuesto que estos indiquen, en las mismas proporciones con que participan las sanciones actualizadas, intereses, anticipos, impuestos y retenciones, dentro de la obligación total al momento del pago. [...] Cuando el contribuyente, responsable o agente de retención impute el pago en forma diferente a la establecida en el inciso anterior, la Administración lo reimputará en el orden señalado sin que se requiera de acto administrativo previo.",
+    "pregunta": "Por su declaración de renta del año gravable 2024, una SAS debe un impuesto de $60.000.000, una sanción actualizada de $10.000.000 e intereses de mora que, a la fecha del pago, suman $30.000.000. La SAS paga $40.000.000 e indica en el recibo que todo se aplique al impuesto, para detener la causación de intereses. Un Analista II de la División de Recaudo y Cobranzas revisa cómo debe quedar aplicado el pago. ¿Cuál es la aplicación correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "$10.000.000 a la sanción, $30.000.000 a los intereses y nada al impuesto, sin necesidad de una resolución previa.",
+        "explicacion": "Incorrecta. Aplica el orden que fijaba el art. 804 antes de la Ley 1066 de 2006: primero la sanción, luego los intereses y al final el impuesto. Desde el 1 de enero de 2006, el pago se imputa en las mismas proporciones en que participan la sanción, los intereses y el impuesto en la deuda total."
+      },
+      {
+        "id": "B",
+        "texto": "$10.000.000 a la sanción, $30.000.000 a los intereses y nada al impuesto, cuando se notifique la resolución que lo reimpute.",
+        "explicacion": "Incorrecta. Aplica el orden anterior a la Ley 1066 de 2006 (primero la sanción y los intereses), que ya no rige porque el pago se imputa en forma proporcional, y además exige una resolución que el art. 804 inc. 2 no requiere: la DIAN reimputa sin acto administrativo previo."
+      },
+      {
+        "id": "C",
+        "texto": "$24.000.000 al impuesto, $4.000.000 a la sanción y $12.000.000 a los intereses, sin necesidad de una resolución previa.",
+        "explicacion": "Correcta. La deuda total es de $100.000.000: impuesto 60%, sanción 10% e intereses 30%. El pago de $40.000.000 se imputa en esas proporciones: $24.000.000, $4.000.000 y $12.000.000. Como la SAS lo imputó de otra forma, la DIAN lo reimputa sin acto administrativo previo (art. 804 inc. 2)."
+      },
+      {
+        "id": "D",
+        "texto": "$24.000.000 al impuesto, $4.000.000 a la sanción y $12.000.000 a los intereses, cuando se notifique la resolución que lo reimpute.",
+        "explicacion": "Incorrecta. Las cifras son correctas, pero la reimputación no requiere acto administrativo previo (art. 804 inc. 2)."
+      }
+    ],
+    "respuestaCorrecta": "C",
+    "explicacionIA": "Dato decisivo: la deuda suma $100.000.000 (impuesto $60.000.000, sanción $10.000.000 e intereses $30.000.000) y la SAS quiso aplicar todo su pago al impuesto. Regla: el art. 804 imputa los pagos en las mismas proporciones en que participan sanciones, intereses e impuesto dentro de la obligación total, y la DIAN reimputa sin acto previo si el contribuyente lo hace de otra forma. Cálculo: el pago cubre el 40% de la deuda, y se aplica el 40% a cada concepto. Conclusión: $24.000.000 al impuesto, $4.000.000 a la sanción y $12.000.000 a los intereses, reimputados sin acto administrativo previo.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-139",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Cobro persuasivo y facilidades de pago",
+    "subtema": "Incumplimiento de una obligación posterior a la facilidad de pago",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 814-3 incs. 1 y 3 (adicionado por el art. 94 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "Cuando el beneficiario de una facilidad para el pago, dejare de pagar alguna de las cuotas o incumpliere el pago de cualquiera otra obligación tributaria surgida con posterioridad a la notificación de la misma, el Administrador de Impuestos o el Subdirector de Cobranzas, según el caso, mediante resolución, podrá dejar sin efecto la facilidad para el pago, declarando sin vigencia el plazo concedido, ordenando hacer efectiva la garantía hasta concurrencia del saldo de la deuda garantizada, la práctica del embargo, secuestro y remate de los bienes o la terminación de los contratos, si fuere del caso. [...] Contra esta providencia procede el recurso de reposición ante el mismo funcionario que la profirió, dentro de los cinco (5) días siguientes a su notificación, quien deberá resolverlo dentro del mes siguiente a su interposición en debida forma.",
+    "pregunta": "En marzo de 2026, el director seccional le concedió a una SAS, mediante resolución notificada ese mes, una facilidad de pago de 36 meses para deudas de IVA de 2024, respaldada con una póliza de una compañía de seguros. La SAS ha pagado todas las cuotas, pero no pagó el IVA del bimestre mayo-junio de 2026, que declaró a tiempo. Un Gestor I de la División de Recaudo y Cobranzas analiza la situación. ¿Qué facultad tiene la dirección seccional respecto de la facilidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ninguna mientras las cuotas estén al día; el IVA de mayo-junio debe cobrarse en un proceso aparte.",
+        "explicacion": "Incorrecta. La facilidad puede dejarse sin efecto no solo cuando se deja de pagar alguna cuota, sino también cuando se incumple cualquier otra obligación tributaria surgida después de su notificación (art. 814-3). Estar al día en las cuotas no le quita esa facultad a la DIAN."
+      },
+      {
+        "id": "B",
+        "texto": "Dejarla sin efecto, pero solo si, requerida la SAS, no paga el IVA de mayo-junio dentro del mes siguiente.",
+        "explicacion": "Incorrecta. La norma no exige requerir al beneficiario ni esperar un mes: el incumplimiento de una obligación posterior a la notificación basta para dejar sin efecto la facilidad mediante resolución (art. 814-3)."
+      },
+      {
+        "id": "C",
+        "texto": "Incluir en ella el IVA de mayo-junio y ampliar el plazo, porque la póliza respalda las obligaciones de la SAS.",
+        "explicacion": "Incorrecta. La facilidad cubre las deudas para las que se concedió. El incumplimiento de una obligación nueva no autoriza a ampliarla: lo que permite es dejarla sin efecto (art. 814-3)."
+      },
+      {
+        "id": "D",
+        "texto": "Dejarla sin efecto, declarar sin vigencia el plazo concedido y ordenar que se haga efectiva la póliza.",
+        "explicacion": "Correcta. La SAS incumplió el pago de una obligación tributaria surgida después de la notificación de la facilidad. Por eso, mediante resolución, puede dejarse sin efecto la facilidad, declararse sin vigencia el plazo y ordenarse hacer efectiva la garantía (art. 814-3). Contra esa resolución procede la reposición dentro de los cinco días siguientes a su notificación."
+      }
+    ],
+    "respuestaCorrecta": "D",
+    "explicacionIA": "Dato decisivo: la SAS está al día en las cuotas, pero no pagó el IVA de mayo-junio de 2026, obligación surgida después de notificada la facilidad. Regla: el art. 814-3 permite dejar sin efecto la facilidad cuando el beneficiario deja de pagar alguna cuota o incumple cualquier otra obligación tributaria posterior a la notificación, declarando sin vigencia el plazo y haciendo efectiva la garantía. Conclusión: puede dejarse sin efecto la facilidad y cobrarse la póliza.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  },
+  {
+    "id": "TC-TRI-140",
+    "version": 1,
+    "estado": "beta",
+    "capa": 4,
+    "eje": "dian_tributario",
+    "modulo": "Gestión Tributaria (DIAN)",
+    "tema": "Cobro persuasivo y facilidades de pago",
+    "subtema": "Cobro de la garantía: excepción que puede proponer el garante",
+    "formato": "caso",
+    "nivel": [
+      "todos"
+    ],
+    "dificultad": "Media",
+    "norma": "Estatuto Tributario (Decreto 624 de 1989)",
+    "articulos": [
+      "art. 814-2 (adicionado por el art. 93 de la Ley 6 de 1992)",
+      "art. 814-3 inc. 3 (adicionado por el art. 94 de la Ley 6 de 1992)"
+    ],
+    "texto_fuente": "Dentro de los diez (10) días siguientes a la ejecutoria de la resolución que ordene hacer efectiva la garantía otorgada, el garante deberá consignar el valor garantizado hasta concurrencia del saldo insoluto. Vencido este término, si el garante no cumpliere con dicha obligación, el funcionario competente librará mandamiento de pago contra el garante y en el mismo acto podrá ordenar el embargo, secuestro y avalúo de los bienes del mismo. [...] En ningún caso el garante podrá alegar excepción alguna diferente a la de pago efectivo. [...] Contra esta providencia procede el recurso de reposición ante el mismo funcionario que la profirió, dentro de los cinco (5) días siguientes a su notificación,",
+    "pregunta": "La DIAN dejó sin efecto la facilidad de pago de un contribuyente y ordenó hacer efectiva la garantía personal que había otorgado su socio. Ejecutoriada esa resolución, el garante no consignó el valor garantizado en los diez días siguientes, y la DIAN libró en su contra mandamiento de pago. Dentro del término, el garante presenta un escrito de excepciones con cuatro argumentos. Un Gestor II de cobranzas proyecta la decisión. ¿Cuál de esos argumentos puede prosperar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la acción de cobro contra el contribuyente ya había prescrito cuando se libró el mandamiento.",
+        "explicacion": "Incorrecta. El garante no puede alegar excepciones distintas a la de pago efectivo (art. 814-2), así que no puede proponer la prescripción."
+      },
+      {
+        "id": "B",
+        "texto": "Que el contribuyente, antes del mandamiento, pagó la totalidad del saldo que la garantía respaldaba.",
+        "explicacion": "Correcta. El único argumento que el garante puede oponer es el pago efectivo (art. 814-2). Si el saldo garantizado ya se pagó, la excepción prospera."
+      },
+      {
+        "id": "C",
+        "texto": "Que la DIAN dejó sin efecto la facilidad sin que el contribuyente hubiera dejado de pagar alguna de las cuotas.",
+        "explicacion": "Incorrecta. Si la facilidad se dejó sin efecto sin razón, eso se discute con el recurso de reposición contra esa resolución (art. 814-3). En el cobro, el garante solo puede alegar el pago efectivo (art. 814-2)."
+      },
+      {
+        "id": "D",
+        "texto": "Que la DIAN no debió aceptar una garantía personal para respaldar esa facilidad de pago.",
+        "explicacion": "Incorrecta. La aceptación de la garantía no es un argumento que el garante pueda proponer como excepción: solo puede alegar el pago efectivo (art. 814-2)."
+      }
+    ],
+    "respuestaCorrecta": "B",
+    "explicacionIA": "Dato decisivo: el mandamiento se libró contra el garante porque no consignó dentro de los diez días siguientes a la ejecutoria de la resolución que hizo efectiva la garantía. Regla: el art. 814-2 dispone que, vencido ese término, se libra mandamiento de pago contra el garante, quien en ningún caso puede alegar una excepción distinta a la de pago efectivo. Conclusión: solo prospera el pago del saldo garantizado.",
+    "fuente_url": "http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario.html",
+    "autor": "IA",
+    "revision": {
+      "resolucion_ciega": null,
+      "revisor_humano": null,
+      "fecha": "2026-10-19"
+    }
+  }
+]
