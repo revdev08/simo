@@ -6,6 +6,8 @@ import PublicHeader from '@/components/public/PublicHeader'
 import PublicFooter from '@/components/public/PublicFooter'
 import ConvocatoriaPlan from '@/components/convocatorias/ConvocatoriaPlan'
 import EjesTool from '@/components/convocatorias/EjesTool'
+import BuscarOpec from '@/components/convocatorias/BuscarOpec'
+import { opecsDe } from '@/lib/opec'
 import { getModuleCounts } from '@/lib/questions'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
 import JsonLd from '@/components/seo/JsonLd'
@@ -36,6 +38,7 @@ export default async function ConvocatoriaPage({ params }: Props) {
   const c = CONVOCATORIAS.find((x) => x.slug === slug)
   if (!c) notFound()
   const disponibles = getModuleCounts()
+  const numerosOpec = opecsDe(c.slug).map((o) => o.opec)
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50">
@@ -87,6 +90,12 @@ export default async function ConvocatoriaPage({ params }: Props) {
             </dl>
           </header>
 
+          {numerosOpec.length > 0 && (
+            <div className="mt-8">
+              <BuscarOpec slug={c.slug} nombre={c.nombre} numeros={numerosOpec} />
+            </div>
+          )}
+
           {c.slug === SLUG_CONVOCATORIA_DOCENTE && (
             <Link
               href="/concurso-docente"
@@ -130,10 +139,16 @@ export default async function ConvocatoriaPage({ params }: Props) {
           )}
 
           <p className="mt-12 text-sm text-slate-600 dark:text-slate-400">
-            Los planes son por tipo de empleo, no por {c.fueraCnsc ? 'cada cargo' : 'cada OPEC'}.{' '}
-            <a href="#ejes" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline">
-              Ajústalo a tu empleo con sus ejes temáticos
-            </a>
+            Los planes de abajo son por tipo de empleo.{' '}
+            {numerosOpec.length > 0 ? (
+              <a href="#opec" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                Escribe tu OPEC para ver los temas de tu empleo
+              </a>
+            ) : (
+              <a href="#ejes" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                Ajústalo a tu empleo con sus ejes temáticos
+              </a>
+            )}
             .
           </p>
 
