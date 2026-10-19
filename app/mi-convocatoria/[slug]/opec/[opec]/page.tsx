@@ -7,6 +7,8 @@ import PublicFooter from '@/components/public/PublicFooter'
 import ConvocatoriaPlan from '@/components/convocatorias/ConvocatoriaPlan'
 import EjesTool from '@/components/convocatorias/EjesTool'
 import JsonLd from '@/components/seo/JsonLd'
+import TemasOpec from '@/components/convocatorias/TemasOpec'
+import { coberturaDe } from '@/lib/opec-cobertura'
 import { getModuleCounts } from '@/lib/questions'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
 import { actualizadoOpecs, fichaUrl, opecDe, opecsDe, slugsConOpecs } from '@/lib/opec'
@@ -112,28 +114,13 @@ export default async function OpecPage({ params }: Props) {
               <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
                 La guía de la CNSC dice que las competencias funcionales de cada empleo son las de su ficha del Manual de Funciones.
               </p>
-              <div className="mt-4 grid gap-4 md:grid-cols-2">
-                {o.competenciasFuncionales.length > 0 && (
-                  <div className={`${tarjeta} p-5`}>
-                    <h3 className="font-bold text-slate-900 dark:text-white">Propias de tu empleo</h3>
-                    <ul className="mt-3 space-y-1.5 text-sm text-slate-700 dark:text-slate-300">
-                      {o.competenciasFuncionales.map((t) => (
-                        <li key={t} className="flex gap-2"><span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />{t}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {o.competenciasBasicas.length > 0 && (
-                  <div className={`${tarjeta} p-5`}>
-                    <h3 className="font-bold text-slate-900 dark:text-white">Básicas, comunes a casi todos los empleos</h3>
-                    <ul className="mt-3 space-y-1.5 text-sm text-slate-700 dark:text-slate-300">
-                      {o.competenciasBasicas.map((t) => (
-                        <li key={t} className="flex gap-2"><span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />{t}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+              <div className="mt-4 grid gap-4 lg:grid-cols-2">
+                <TemasOpec titulo="Propias de tu empleo" items={coberturaDe(slug, o.competenciasFuncionales)} destacado />
+                <TemasOpec titulo="Básicas, comunes a casi todos los empleos" items={coberturaDe(slug, o.competenciasBasicas)} />
               </div>
+              <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
+                «Módulo» indica un módulo del banco que trata ese tema; «Aún no» quiere decir que todavía no tenemos preguntas de ese tema.
+              </p>
             </section>
           )}
 

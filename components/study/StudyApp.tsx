@@ -283,17 +283,26 @@ export default function StudyApp({ questions, userName }: { questions: Question[
   }, [])
 
   // Carga el progreso de la base de datos; si está vacía o no responde, usa el guardado en el navegador.
-  // Si la URL pide una práctica (desde "Mi progreso": ?modulo=… o ?practicar=errores), la abre al cargar.
+  // Si la URL pide una práctica (desde "Mi progreso": ?modulo=… o ?practicar=errores; desde la página de una OPEC:
+  // ?preguntas=id1,id2&tema=…), la abre al cargar.
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const pedidoModulo = params.get('modulo')
     const pedidoErrores = params.get('practicar') === 'errores'
+    const pedidoIds = new Set((params.get('preguntas') ?? '').split(',').map((x) => x.trim()).filter(Boolean))
+    const pedidoTema = params.get('tema')?.slice(0, 120) || 'Práctica de tu empleo'
 
     const abrirPedido = (loaded: ProgressData) => {
-      if (!pedidoModulo && !pedidoErrores) return
+      if (!pedidoModulo && !pedidoErrores && !pedidoIds.size) return
       window.history.replaceState(null, '', window.location.pathname)
       const savedNivel = readSavedNivel()
-      if (pedidoErrores) {
+      if (pedidoIds.size) {
+        // Las preguntas de un tema de la ficha de una OPEC
+        const delTema = questions.filter((q) => pedidoIds.has(String(q.id)))
+        if (!delTema.length) return
+        setActiveModuleQuestions(practiceOrder(delTema, loaded))
+        setActiveModule(pedidoTema)
+      } else if (pedidoErrores) {
         // ?practicar=errores&modulo=… repasa solo los errores de ese módulo
         const wrong = questions.filter(
           (q) => appliesToNivel(q, savedNivel) && loaded[String(q.id)] === 'incorrect' && (!pedidoModulo || q.modulo === pedidoModulo),
