@@ -4,7 +4,10 @@ import { createSupabaseClient, createAdminClient } from '@/lib/supabase'
 import { isPremium } from '@/lib/premium'
 import { getReportQuestions } from '@/lib/questions'
 import ReportView from '@/components/study/ReportView'
+import SuscripcionCard from '@/components/study/SuscripcionCard'
 import DashboardShell from '@/components/dashboard/DashboardShell'
+import { suscripcionDe } from '@/lib/suscripcion'
+import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
 
 export default async function ReportPage() {
   const { userId, getToken } = await auth()
@@ -43,6 +46,13 @@ export default async function ReportPage() {
     .single()
 
   const progressData = progressRow?.data || {}
+  const suscripcion = await suscripcionDe(userId).catch(() => null)
+
+  // Para la tarjeta de suscripción: cuánto lleva y, si su concurso tiene fecha de prueba, cuál es
+  const respondidas = Object.keys(progressData).filter((k) => !k.startsWith('_')).length
+  const slugConcurso = String(progressData._perfil?.convocatoria ?? '').split(':')[0]
+  const concurso = CONVOCATORIAS.find((c) => c.slug === slugConcurso && c.fechaPrueba)
+  const fechaPrueba = concurso?.fechaPrueba ? { nombre: concurso.nombre, fecha: concurso.fechaPrueba } : null
 
   const email = user?.emailAddresses?.[0]?.emailAddress || profile?.email || ''
 
@@ -54,6 +64,7 @@ export default async function ReportPage() {
           <p className="mt-1 text-slate-600 dark:text-slate-400">Cómo vas en cada módulo y qué temas te conviene reforzar.</p>
         </div>
         <ReportView questions={getReportQuestions()} progress={progressData} />
+        {suscripcion && <SuscripcionCard suscripcion={suscripcion} respondidas={respondidas} fechaPrueba={fechaPrueba} />}
       </div>
     </DashboardShell>
   )

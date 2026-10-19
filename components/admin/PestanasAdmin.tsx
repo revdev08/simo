@@ -7,6 +7,7 @@ const PESTANAS = [
   { href: '/admin', texto: 'Suscriptores' },
   { href: '/admin/tiktok', texto: 'TikTok' },
   { href: '/admin/ejes', texto: 'Ejes' },
+  { href: '/admin/cancelaciones', texto: 'Cancelaciones' },
 ]
 
 export default function PestanasAdmin() {
