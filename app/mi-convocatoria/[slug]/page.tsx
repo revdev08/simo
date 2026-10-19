@@ -5,6 +5,7 @@ import { AlertTriangle, ChevronRight, ExternalLink, Scale, ShieldCheck, Users } 
 import PublicHeader from '@/components/public/PublicHeader'
 import PublicFooter from '@/components/public/PublicFooter'
 import ConvocatoriaPlan from '@/components/convocatorias/ConvocatoriaPlan'
+import EjesTool from '@/components/convocatorias/EjesTool'
 import { getModuleCounts } from '@/lib/questions'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
 import JsonLd from '@/components/seo/JsonLd'
@@ -128,8 +129,26 @@ export default async function ConvocatoriaPage({ params }: Props) {
             </section>
           )}
 
-          <section className="mt-12" aria-label="Plan de estudio">
+          <p className="mt-12 text-sm text-slate-600 dark:text-slate-400">
+            Los planes son por tipo de empleo, no por {c.fueraCnsc ? 'cada cargo' : 'cada OPEC'}.{' '}
+            <a href="#ejes" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+              Ajústalo a tu empleo con sus ejes temáticos
+            </a>
+            .
+          </p>
+
+          <section className="mt-4" aria-label="Plan de estudio">
             <ConvocatoriaPlan slug={c.slug} nombre={c.nombre} perfiles={c.perfiles} disponibles={disponibles} />
+          </section>
+
+          <section id="ejes" className="mt-12 scroll-mt-24" aria-labelledby="ejes-titulo">
+            <h2 id="ejes-titulo" className="text-xl font-bold text-slate-900 dark:text-white">
+              Ajusta el plan a tu empleo{c.fueraCnsc ? '' : ' (OPEC)'}
+            </h2>
+            <p className="mt-1 mb-6 text-slate-600 dark:text-slate-400">
+              Los perfiles de arriba agrupan los empleos por tipo. Si ya tienes los ejes temáticos de tu empleo, pégalos aquí: armamos el plan con los módulos que coinciden y te decimos cuáles todavía no cubrimos.
+            </p>
+            <EjesTool disponibles={disponibles} convocatoria={c.slug} />
           </section>
 
           <section className="mt-12 grid gap-4 md:grid-cols-2">

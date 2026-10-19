@@ -120,7 +120,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
     cobertura:
       'Casos de la DIAN sobre el Estatuto Tributario (renta, IVA, retención, régimen SIMPLE, facturación electrónica, procedimiento, sanciones y cobro), el régimen aduanero (Decreto 1165 de 2019), el régimen cambiario y la carrera específica de la DIAN (Decreto Ley 927 de 2023). También el derecho de petición, la atención de PQRS y el MIPG, que aparecen en los ejemplos oficiales.',
     faltantes:
-      'Las pruebas comportamental y de integridad son de autoinforme: no tienen respuestas correctas. Nuestras situaciones comportamentales sirven para conocer las conductas esperadas, pero no reproducen ese formato. Los ejes exactos de cada empleo solo se ven con tu número de inscripción en el sitio del operador.',
+      'Las pruebas comportamental y de integridad son de autoinforme: no tienen respuestas correctas. Nuestras situaciones comportamentales sirven para conocer las conductas esperadas, pero no reproducen ese formato. No hay un plan por cada OPEC: los perfiles agrupan los empleos por tipo. Los ejes exactos de cada empleo solo se ven con tu número de inscripción en el sitio del operador; si los tienes, pégalos en «Ajusta el plan a tu empleo» y lo armamos con ellos.',
     fuentes: [
       { label: 'Acuerdo 21 de 2025 (CNSC)', url: 'https://www.cnsc.gov.co/sites/default/files/2025-11/acuerdo-no-21-dian-2676-de-20251.pdf' },
       {

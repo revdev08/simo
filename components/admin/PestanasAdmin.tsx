@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 const PESTANAS = [
   { href: '/admin', texto: 'Suscriptores' },
   { href: '/admin/tiktok', texto: 'TikTok' },
+  { href: '/admin/ejes', texto: 'Ejes' },
 ]
 
 export default function PestanasAdmin() {

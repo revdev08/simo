@@ -1,6 +1,7 @@
 'use client'
 
 // Elegir el concurso y el empleo dentro del panel: con eso se arma el plan con los temas y pesos de ese perfil
+import Link from 'next/link'
 import { useState } from 'react'
 import { ArrowLeft, ArrowRight, CalendarClock, ClipboardList } from 'lucide-react'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
@@ -117,6 +118,12 @@ export default function ConvocatoriaPicker({
               )
             })}
           </div>
+          <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">
+            Los perfiles agrupan los empleos por tipo.{' '}
+            <Link href={`/mi-convocatoria/${elegida.slug}#ejes`} className="font-semibold text-brand-700 hover:underline dark:text-brand-300">
+              ¿Tienes tu {elegida.fueraCnsc ? 'cargo' : 'OPEC'}? Pega sus ejes temáticos y ajustamos el plan
+            </Link>
+          </p>
           <button
             type="button"
             onClick={() => setSlug(null)}

@@ -13,7 +13,18 @@ Presupuesto público: CDP, registro presupuestal y PAC
 Contratación estatal: modalidades de selección y supervisión
 Herramientas ofimáticas (Excel)`
 
-export default function EjesTool({ disponibles }: { disponibles: Record<string, number> }) {
+// Cuenta la consulta y guarda los ejes que no reconocimos, para saber qué preguntas faltan (sin datos personales)
+function registrarConsulta(r: ResultadoEjes, convocatoria?: string) {
+  if (!r.ejes.length) return
+  fetch('/api/ejes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ convocatoria, total: r.ejes.length, sinCobertura: r.ejes.filter((e) => !e.modulos.length).map((e) => e.texto) }),
+    keepalive: true,
+  }).catch(() => {})
+}
+
+export default function EjesTool({ disponibles, convocatoria }: { disponibles: Record<string, number>; convocatoria?: string }) {
   const [texto, setTexto] = useState('')
   const [resultado, setResultado] = useState<ResultadoEjes | null>(null)
   const modulosConPreguntas = useMemo(
@@ -23,7 +34,9 @@ export default function EjesTool({ disponibles }: { disponibles: Record<string, 
 
   const analizar = () => {
     if (!texto.trim()) return
-    setResultado(analizarEjes(texto, modulosConPreguntas))
+    const r = analizarEjes(texto, modulosConPreguntas)
+    setResultado(r)
+    if (texto !== EJEMPLO) registrarConsulta(r, convocatoria)
   }
 
   // Cada módulo pesa según cuántos ejes lo piden; aptitudes y comportamentales siempre entran con peso base
