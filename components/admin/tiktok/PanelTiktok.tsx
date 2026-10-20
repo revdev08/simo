@@ -94,6 +94,17 @@ export default function PanelTiktok({
           </nav>
         </header>
 
+        {/* Toda la data, sin importar el periodo elegido: la arma app/admin/tiktok/csv/route.ts */}
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+          <span className="text-slate-500 dark:text-slate-400">Descargar en CSV:</span>
+          <a href="/admin/tiktok/csv?tipo=publicaciones" download className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
+            Todas las publicaciones
+          </a>
+          <a href="/admin/tiktok/csv?tipo=cumplimiento" download className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
+            Cumplimiento por persona y día
+          </a>
+        </div>
+
         {errores.map((e) => (
           <p key={e} className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
             {e}
