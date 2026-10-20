@@ -25,6 +25,8 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
   ],
   'Carrera y Gestión Institucional (DIAN)': [
     'decreto ley 927', 'decreto 927', 'carrera dian', 'sistema especifico de carrera', 'gestion institucional dian',
+    'misionalidad de la dian', 'mision de la dian', 'estructura organizacional de la dian', 'estructura de la dian',
+    'organizacion de la dian', 'decreto 1742',
   ],
   'Disciplinario y Anticorrupción': [
     'disciplinari', 'ley 1952', 'ley 2094', 'anticorrupcion', 'ley 1474', 'conflicto de interes', 'conflictos de interes',
@@ -53,7 +55,8 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
   ],
   'Gestión Jurídica': [
     'juridic', 'derecho administrativo', 'acciones constitucionales', 'accion de tutela', 'tutela',
-    'accion de cumplimiento', 'acciones populares', 'medios de control', 'defensa judicial', 'conciliacion',
+    'accion de cumplimiento', 'acciones populares', 'medios de control', 'defensa judicial', 'representacion judicial',
+    'conciliacion',
     'cobro coactivo', 'jurisdiccion coactiva', 'responsabilidad fiscal', 'ley 610', 'repeticion', 'contencioso',
     'derecho procesal', 'codigo general del proceso',
   ],
@@ -101,6 +104,8 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
     'tributari', 'impuesto', 'estatuto tributario', 'renta', 'iva', 'retencion en la fuente', 'fiscalizacion',
     'declaraciones tributarias', 'rut', 'facturacion electronica', 'factura electronica', 'sanciones tributarias',
     'procedimiento tributario', 'gravamen', 'contribuyente', 'obligaciones tributarias', 'devoluciones',
+    'tributacion internacional', 'convenios internacionales', 'doble imposicion', 'precios de transferencia',
+    'campanas de control', 'programas de control',
   ],
   'Aduanero y Cambiario (DIAN)': [
     'aduan', 'decreto 1165', 'importacion', 'exportacion', 'comercio exterior', 'cambiari', 'regimen cambiario',
@@ -236,7 +241,8 @@ export const PALABRAS_POR_MODULO: Record<string, string[]> = {
   'Competencias Comportamentales': [
     'comportamental', 'decreto 815', 'trabajo en equipo', 'orientacion a resultados', 'orientacion al usuario',
     'compromiso con la organizacion', 'adaptacion al cambio', 'aprendizaje continuo', 'liderazgo', 'toma de decisiones',
-    'resolucion de conflictos', 'comunicacion efectiva', 'psicotecnic',
+    'resolucion de conflictos', 'comunicacion efectiva', 'psicotecnic', 'comportamiento etico', 'adaptabilidad',
+    'orientacion al logro', 'solucion de problemas',
   ],
 }
 
@@ -251,6 +257,10 @@ const PATRONES = Object.entries(PALABRAS_POR_MODULO).map(([modulo, palabras]) =>
   const partes = palabras.map((p) => (p.length <= 4 ? `${escapar(p)}(?![a-z0-9])` : escapar(p)))
   return { modulo, re: new RegExp(`(?<![a-z0-9])(?:${partes.join('|')})`, 'g') }
 })
+
+const VALORES_INTEGRIDAD = new Set(['honestidad', 'respeto', 'compromiso', 'diligencia', 'justicia'])
+const MODULOS_INTEGRIDAD = ['Competencias Comportamentales', 'Disciplinario y Anticorrupción']
+const esValorDeIntegridad = (norm: string) => VALORES_INTEGRIDAD.has(norm.replace(/^(?:el )?valor (?:de la |del )?/, '').replace(/[^a-z ]/g, '').trim())
 
 export interface EjeAnalizado {
   texto: string
@@ -269,13 +279,15 @@ export function separarEjes(texto: string): string[] {
   return texto
     .split(/\r?\n|;|•|·|▪|◦/)
     .map((l) => l.replace(/^\s*(?:[-*–]|\d+(?:\.\d+)*[.)-]?|[a-z][.)])\s+/i, '').trim())
-    .filter((l) => l.length >= 4)
+    // Fuera las líneas de paginación que trae el texto copiado de un PDF («Página 1 de 2»)
+    .filter((l) => l.length >= 4 && !/^p[aá]g(?:ina|\.)?\s*\d+(?:\s*(?:de|\/)\s*\d+)?$/i.test(l))
 }
 
 export function analizarEjes(texto: string, modulosDisponibles?: Set<string>): ResultadoEjes {
   const ejes = separarEjes(texto).map((linea) => {
     const norm = normalizar(linea)
-    const hits = PATRONES.map(({ modulo, re }) => ({ modulo, n: norm.match(re)?.length ?? 0 }))
+    const valor = esValorDeIntegridad(norm)
+    const hits = PATRONES.map(({ modulo, re }) => ({ modulo, n: (norm.match(re)?.length ?? 0) + (valor && MODULOS_INTEGRIDAD.includes(modulo) ? 1 : 0) }))
       .filter((h) => h.n > 0 && (!modulosDisponibles || modulosDisponibles.has(h.modulo)))
       .sort((a, b) => b.n - a.n)
     return { texto: linea, modulos: hits.map((h) => h.modulo), peso: hits }

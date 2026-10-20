@@ -9,6 +9,11 @@ export const metadata = { title: 'Ejes temáticos · Administración', robots: {
 const RANGOS = [7, 30, 90]
 const numero = new Intl.NumberFormat('es-CO')
 
+// Lista completa para revisarla fuera del panel (la tabla se ve con desplazamiento). Con BOM para que Excel lea las tildes.
+const celda = (v: string | number) => `"${String(v).replace(/"/g, '""')}"`
+const csvFaltantes = (filas: { eje: string; veces: number; convocatorias: string[] }[]) =>
+  String.fromCharCode(0xfeff) + ['eje,veces,donde', ...filas.map((f) => [celda(f.eje), f.veces, celda(f.convocatorias.join(' · '))].join(','))].join('\n')
+
 function Dato({ titulo, valor, nota }: { titulo: string; valor: string; nota?: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
@@ -91,9 +96,18 @@ export default async function EjesPage({ searchParams }: { searchParams: Promise
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white lg:col-span-2 dark:border-slate-800 dark:bg-slate-900">
-                <h2 className="border-b border-slate-100 px-5 py-3 text-sm font-semibold text-slate-900 dark:border-slate-800 dark:text-white">
-                  Ejes sin preguntas, de más a menos pedidos
-                </h2>
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-5 py-3 dark:border-slate-800">
+                  <h2 className="text-sm font-semibold text-slate-900 dark:text-white">Ejes sin preguntas, de más a menos pedidos</h2>
+                  {r.datos.faltantes.length > 0 && (
+                    <a
+                      href={`data:text/csv;charset=utf-8,${encodeURIComponent(csvFaltantes(r.datos.faltantes))}`}
+                      download={`ejes-sin-preguntas-${dias}-dias.csv`}
+                      className="text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                    >
+                      Descargar la lista completa (CSV)
+                    </a>
+                  )}
+                </div>
                 {r.datos.faltantes.length === 0 ? (
                   <p className="px-5 py-4 text-sm text-slate-500 dark:text-slate-400">Ninguno en este periodo.</p>
                 ) : (
