@@ -24,6 +24,8 @@ export interface Convocatoria {
   titulo: string // título SEO de la página
   entidad: string
   fueraCnsc?: boolean // concurso propio de la entidad, no de la CNSC
+  empleo?: 'opec' | 'area' | 'cargo' // cómo se identifica el empleo (lib/convocatorias/empleo.ts); por defecto, OPEC o cargo
+  ejesAyuda?: string // dónde encuentra el aspirante los ejes temáticos de su empleo, si no es lo general
   vacantes?: number
   vacantesAprox?: boolean // la cifra es "más de" o "cerca de" (oferta preliminar o cambiante)
   vacantesNota?: string // de dónde sale la cifra

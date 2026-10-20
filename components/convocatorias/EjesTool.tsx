@@ -24,7 +24,15 @@ function registrarConsulta(r: ResultadoEjes, convocatoria?: string) {
   }).catch(() => {})
 }
 
-export default function EjesTool({ disponibles, convocatoria }: { disponibles: Record<string, number>; convocatoria?: string }) {
+export default function EjesTool({
+  disponibles,
+  convocatoria,
+  ayuda = 'Los encuentras en SIMO, en la ficha del empleo (OPEC), o en el anexo del acuerdo de la convocatoria.',
+}: {
+  disponibles: Record<string, number>
+  convocatoria?: string
+  ayuda?: string // dónde encuentra el aspirante sus ejes, según el concurso
+}) {
   const [texto, setTexto] = useState('')
   const [resultado, setResultado] = useState<ResultadoEjes | null>(null)
   const modulosConPreguntas = useMemo(
@@ -57,7 +65,7 @@ export default function EjesTool({ disponibles, convocatoria }: { disponibles: R
           Pega los ejes temáticos de tu empleo
         </label>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          Los encuentras en SIMO, en la ficha del empleo (OPEC), o en el anexo del acuerdo de la convocatoria. Uno por línea.
+          {ayuda} Uno por línea.
         </p>
         <textarea
           id="ejes"

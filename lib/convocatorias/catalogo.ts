@@ -45,6 +45,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
     nombre: 'DIAN 2676',
     titulo: 'Concurso DIAN 2676: qué estudiar para la prueba del 8 de noviembre',
     entidad: 'DIAN · Sistema Específico de Carrera',
+    ejesAyuda: 'Los ejes exactos de tu prueba los publica el operador en su sitio, con tu número de inscripción.',
     vacantes: 1850,
     vacantesNota: '743 de ascenso y 1.107 de ingreso en el Acuerdo 21 de 2025. La CNSC anunció después 1.142 de ingreso.',
     niveles: 'Profesional (Gestor e Inspector), técnico (Analista) y asistencial (Facilitador)',
@@ -135,6 +136,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
     nombre: 'Docentes y Directivos Docentes 2026',
     titulo: 'Concurso docente 2026: plan de estudio para docentes y directivos',
     entidad: 'Entidades territoriales certificadas en educación',
+    empleo: 'area',
     vacantes: 28000,
     vacantesAprox: true,
     vacantesNota:
@@ -699,6 +701,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
     titulo: 'Concurso Procuraduría 2026: plan de estudio para la prueba de conocimientos',
     entidad: 'Procuraduría General de la Nación (concurso propio, no de la CNSC)',
     fueraCnsc: true,
+    ejesAyuda: 'Están en la convocatoria de la Procuraduría: los conocimientos esenciales de cada empleo.',
     vacantes: 3051,
     vacantesNota:
       'Resolución 243 de 2026: 2.928 empleos de la planta permanente y 123 de la transitoria (la oferta inicial de la Resolución 076 era de 2.826). Según el certificado oficial de inscritos, hubo unas 295.600 inscripciones en las 389 convocatorias.',

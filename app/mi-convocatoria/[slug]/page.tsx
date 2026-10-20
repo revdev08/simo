@@ -8,6 +8,7 @@ import ConvocatoriaPlan from '@/components/convocatorias/ConvocatoriaPlan'
 import EjesTool from '@/components/convocatorias/EjesTool'
 import BuscarOpec from '@/components/convocatorias/BuscarOpec'
 import { opecsDe } from '@/lib/opec'
+import { textosEmpleo } from '@/lib/convocatorias/empleo'
 import { getModuleCounts } from '@/lib/questions'
 import { CONVOCATORIAS } from '@/lib/convocatorias/catalogo'
 import JsonLd from '@/components/seo/JsonLd'
@@ -39,6 +40,7 @@ export default async function ConvocatoriaPage({ params }: Props) {
   if (!c) notFound()
   const disponibles = getModuleCounts()
   const numerosOpec = opecsDe(c.slug).map((o) => o.opec)
+  const empleo = textosEmpleo(c)
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50">
@@ -139,14 +141,14 @@ export default async function ConvocatoriaPage({ params }: Props) {
           )}
 
           <p className="mt-12 text-sm text-slate-600 dark:text-slate-400">
-            Los planes de abajo son por tipo de empleo.{' '}
+            {empleo.nota}{' '}
             {numerosOpec.length > 0 ? (
               <a href="#opec" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline">
                 Escribe tu OPEC para ver los temas de tu empleo
               </a>
             ) : (
               <a href="#ejes" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline">
-                Ajústalo a tu empleo con sus ejes temáticos
+                {empleo.enlace}
               </a>
             )}
             .
@@ -158,12 +160,12 @@ export default async function ConvocatoriaPage({ params }: Props) {
 
           <section id="ejes" className="mt-12 scroll-mt-24" aria-labelledby="ejes-titulo">
             <h2 id="ejes-titulo" className="text-xl font-bold text-slate-900 dark:text-white">
-              Ajusta el plan a tu empleo{c.fueraCnsc ? '' : ' (OPEC)'}
+              {empleo.titulo}
             </h2>
             <p className="mt-1 mb-6 text-slate-600 dark:text-slate-400">
-              Los perfiles de arriba agrupan los empleos por tipo. Si ya tienes los ejes temáticos de tu empleo, pégalos aquí: armamos el plan con los módulos que coinciden y te decimos cuáles todavía no cubrimos.
+              {empleo.intro}
             </p>
-            <EjesTool disponibles={disponibles} convocatoria={c.slug} />
+            <EjesTool disponibles={disponibles} convocatoria={c.slug} ayuda={empleo.ayuda} />
           </section>
 
           <section className="mt-12 grid gap-4 md:grid-cols-2">
