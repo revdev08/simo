@@ -75,6 +75,7 @@ export default async function CancelacionesPage({ searchParams }: { searchParams
                     <thead className="sticky top-0 bg-white text-left text-xs text-slate-500 dark:bg-slate-900 dark:text-slate-400">
                       <tr>
                         <th className="px-3 py-2 font-medium sm:px-5">Fecha</th>
+                        <th className="px-3 py-2 font-medium sm:px-5">Correo</th>
                         <th className="px-3 py-2 font-medium sm:px-5">Plan</th>
                         <th className="px-3 py-2 font-medium sm:px-5">Motivo</th>
                         <th className="px-3 py-2 font-medium sm:px-5">Acceso hasta</th>
@@ -84,6 +85,7 @@ export default async function CancelacionesPage({ searchParams }: { searchParams
                       {r.datos.recientes.map((c, i) => (
                         <tr key={i} className="border-t border-slate-100 align-top dark:border-slate-800">
                           <td className="whitespace-nowrap px-3 py-2 text-slate-700 dark:text-slate-300 sm:px-5">{fechaHora.format(new Date(c.fecha))}</td>
+                          <td className="px-3 py-2 text-slate-700 dark:text-slate-300 sm:px-5">{c.correo ?? '—'}</td>
                           <td className="px-3 py-2 text-slate-700 dark:text-slate-300 sm:px-5">{c.plan ?? '—'}</td>
                           <td className="px-3 py-2 text-slate-800 dark:text-slate-200 sm:px-5">
                             {c.motivo}
