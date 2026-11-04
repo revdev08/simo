@@ -47,6 +47,7 @@ export default async function SaldoMercadoPago() {
             ? 'Mercado Pago está preparando el primer reporte de dinero liberado. El saldo aparece aquí en unos minutos.'
             : (d.aviso ?? 'Todavía no hay un reporte de dinero liberado.')}
         </p>
+        {d.diagnostico && <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">Último reporte pedido: {d.diagnostico}.</p>}
       </section>
     )
   }

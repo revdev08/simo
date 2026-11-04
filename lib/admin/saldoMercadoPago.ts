@@ -31,11 +31,13 @@ export type SaldoMercadoPago = {
   descuadre: number | null // diferencia entre la fila «total» y la suma de los movimientos, si no cuadran
   actualizando: boolean // ya se pidió a Mercado Pago un reporte más reciente
   aviso: string | null // no se pudo pedir uno más reciente
+  diagnostico: string | null // en qué va el último reporte pedido, cuando aún no hay saldo
   consultado: string // cuándo se consultó Mercado Pago (ISO)
 }
 
 type Reporte = {
-  id: number
+  id: number // id de la tarea de generación
+  report_id?: number | null // id del reporte (el que usa la búsqueda de archivos)
   file_name?: string
   status?: string
   begin_date?: string
@@ -113,7 +115,37 @@ const fechaMP = (ms: number) => new Date(ms).toISOString().replace(/\.\d{3}Z$/, 
 const listo = (r: Reporte) => {
   const estado = (r.status ?? '').toLowerCase()
   if (estado === 'processed' || estado === 'enabled') return true
-  return !!r.file_name && !PENDIENTES.has(estado) && !/error|fail|delet/.test(estado)
+  if (PENDIENTES.has(estado) || /error|fail|delet|reject|cancel/.test(estado)) return false
+  return !!r.file_name || r.report_id != null
+}
+
+// «estado processed, pedido hace 12 min, tarea 99336983670, reporte 17012160»: para entender una captura del panel
+function describir(r: Reporte, ahora: number): string {
+  const pedido = Date.parse(r.generation_date ?? r.date_created ?? r.last_modified ?? '')
+  const partes = [`estado ${r.status ?? 'sin estado'}`]
+  if (Number.isFinite(pedido)) partes.push(`pedido hace ${Math.max(0, Math.round((ahora - pedido) / 60_000))} min`)
+  partes.push(`tarea ${r.id}`)
+  if (r.report_id != null) partes.push(`reporte ${r.report_id}`)
+  return partes.join(', ')
+}
+
+// Nombre del archivo para descargarlo. La lista de reportes no siempre lo trae; la búsqueda sí, pero se filtra por el
+// id del reporte (report_id), que no es el id de la tarea. Si no lo encuentra así, busca por las fechas del reporte.
+async function nombreArchivo(token: string, r: Reporte): Promise<string | undefined> {
+  if (r.file_name) return r.file_name
+  const filtros = [
+    r.report_id != null ? `id=${r.report_id}` : null,
+    r.begin_date && r.end_date ? `begin_date=${encodeURIComponent(r.begin_date)}&end_date=${encodeURIComponent(r.end_date)}` : null,
+    `id=${r.id}`,
+  ].filter((f): f is string => f !== null)
+  for (const filtro of filtros) {
+    const busqueda = (await pedir(token, `/search?${filtro}`)
+      .then((res) => res.json())
+      .catch(() => null)) as { results?: (Reporte & { date_created?: string })[] } | null
+    const conArchivo = (busqueda?.results ?? []).filter((x) => x.file_name).sort((a, b) => (b.date_created ?? '').localeCompare(a.date_created ?? ''))
+    if (conArchivo[0]?.file_name) return conArchivo[0].file_name
+  }
+  return undefined
 }
 
 // Filas de un CSV con comillas; el separador es el que más aparece en la primera línea
@@ -236,14 +268,14 @@ async function leerSaldo(): Promise<SaldoMercadoPago> {
   }
 
   const vacio = { saldo: null, corte: null, desde: null, liberado: null, retirado: null, descuadre: null }
-  if (!ultimo) return { ...vacio, actualizando, aviso, consultado: new Date(ahora).toISOString() }
-
-  let archivo = ultimo.file_name
-  if (!archivo) {
-    const busqueda = (await (await pedir(token, `/search?id=${ultimo.id}`)).json()) as { results?: Reporte[] }
-    archivo = busqueda.results?.[0]?.file_name
+  if (!ultimo) {
+    // El más reciente por la hora en que se pidió, para saber en qué va si tarda
+    const masReciente = [...reportes].sort((a, b) => cierraHace(a) - cierraHace(b))[0]
+    return { ...vacio, actualizando, aviso, diagnostico: masReciente ? describir(masReciente, ahora) : null, consultado: new Date(ahora).toISOString() }
   }
-  if (!archivo) throw new Error('Mercado Pago no dio el nombre del archivo del último reporte.')
+
+  const archivo = await nombreArchivo(token, ultimo)
+  if (!archivo) throw new Error(`Mercado Pago no dio el nombre del archivo del último reporte (${describir(ultimo, ahora)}).`)
   const csv = await (await pedir(token, `/${encodeURIComponent(archivo)}`)).text()
 
   return {
@@ -252,6 +284,7 @@ async function leerSaldo(): Promise<SaldoMercadoPago> {
     desde: ultimo.begin_date ?? null,
     actualizando,
     aviso,
+    diagnostico: null,
     consultado: new Date(ahora).toISOString(),
   }
 }
