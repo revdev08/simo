@@ -82,14 +82,19 @@ async function configuracion(token: string): Promise<Config> {
   } catch (e) {
     if (!(e instanceof ErrorMP) || (e.status !== 404 && !(e.status === 400 && /not.?found|no existe|config/i.test(e.message)))) throw e
   }
+  // Mercado Pago rechaza la configuración (400) si faltan execute_after_withdrawal y los demás indicadores, aunque
+  // su documentación los marque como opcionales. Sin report_translation los encabezados quedan con su nombre clave.
   const nueva = {
     columns: COLUMNAS.map((key) => ({ key })),
     file_name_prefix: 'simo-dinero-liberado',
     frequency: { hour: 0, value: 1, type: 'monthly' },
     display_timezone: 'GMT-05',
     separator: ',',
-    report_translation: 'en',
     include_withdrawal_at_end: true,
+    check_available_balance: false,
+    compensate_detail: false,
+    execute_after_withdrawal: false,
+    scheduled: false,
   }
   try {
     await pedir(token, '/config', { method: 'POST', body: JSON.stringify(nueva) })
