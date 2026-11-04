@@ -1,9 +1,11 @@
+import { Suspense } from 'react'
 import { auth } from '@clerk/nextjs/server'
 import { notFound, redirect } from 'next/navigation'
 import { esAdmin } from '@/lib/admin/acceso'
 import { registrosClerk, resumenPorDia, ultimosDias } from '@/lib/admin/metricas'
 import { MAX_DIAS, panelMercadoPago, REVALIDAR_S } from '@/lib/admin/panelMercadoPago'
 import PanelSuscriptores from '@/components/admin/PanelSuscriptores'
+import SaldoMercadoPago, { SaldoCargando } from '@/components/admin/SaldoMercadoPago'
 
 // Solo para los correos de ADMIN_EMAILS; para los demás la página no existe
 export const metadata = { title: 'Administración', robots: { index: false, follow: false } }
@@ -55,5 +57,11 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   const dias = RANGOS.includes(Number(pedido)) ? Number(pedido) : 30
   const datos = await cargarPanel(dias)
 
-  return <PanelSuscriptores dias={dias} rangos={RANGOS} {...datos} />
+  // El saldo sale de un reporte que se descarga aparte: carga sin frenar el resto del panel
+  const saldo = (
+    <Suspense fallback={<SaldoCargando />}>
+      <SaldoMercadoPago />
+    </Suspense>
+  )
+  return <PanelSuscriptores dias={dias} rangos={RANGOS} saldo={saldo} {...datos} />
 }

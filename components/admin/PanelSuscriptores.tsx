@@ -96,7 +96,9 @@ export default function PanelSuscriptores({
   nuevos,
   pruebas,
   sinSuscripcion,
+  saldo,
 }: {
+  saldo?: React.ReactNode // tarjeta con el dinero disponible en Mercado Pago, que carga por su cuenta
   dias: number
   rangos: number[]
   filas: FilaDia[]
@@ -169,6 +171,8 @@ export default function PanelSuscriptores({
             {e}
           </p>
         ))}
+
+        {saldo}
 
         {haySuscripciones && (
           <section className="grid gap-3 sm:grid-cols-4">
