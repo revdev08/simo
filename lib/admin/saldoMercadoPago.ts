@@ -7,13 +7,16 @@
 import 'server-only'
 import { unstable_cache } from 'next/cache'
 import type { Resultado } from './metricas'
+import { unaConsulta } from './unaConsulta'
 
 const API = 'https://api.mercadopago.com/v1/account/release_report'
 const HORA_MS = 3_600_000
 const DIA_MS = 86_400_000
 const HORAS_REPORTE = 3
+const FALLIDO_MS = 30 * 60_000
 const DIAS_REPORTE = 30
-export const REVALIDAR_SALDO_S = 180
+// Cada renovación son 3 o 4 peticiones (configuración, lista, archivo); el reporte nuevo se pide cada 3 horas
+export const REVALIDAR_SALDO_S = 300
 
 // Columnas de la configuración que se crea si la cuenta no tiene ninguna
 const COLUMNAS = ['DATE', 'SOURCE_ID', 'EXTERNAL_REFERENCE', 'RECORD_TYPE', 'DESCRIPTION', 'NET_CREDIT_AMOUNT', 'NET_DEBIT_AMOUNT', 'GROSS_AMOUNT', 'MP_FEE_AMOUNT', 'TAXES_AMOUNT', 'PAYMENT_METHOD']
@@ -207,13 +210,18 @@ async function leerSaldo(): Promise<SaldoMercadoPago> {
   const reportes = Array.isArray(respuesta) ? respuesta : (respuesta.results ?? [])
   const terminados = reportes.filter((r) => listo(r) && r.end_date).sort((a, b) => Date.parse(b.end_date!) - Date.parse(a.end_date!))
   const ultimo = terminados[0] ?? null
-  const pedidoHace = (r: Reporte) => ahora - Date.parse(r.last_modified ?? r.generation_date ?? r.date_created ?? '')
-  const enCamino = reportes.some((r) => PENDIENTES.has((r.status ?? '').toLowerCase()) && pedidoHace(r) < HORA_MS)
+  // Se decide por la fecha de cierre y no por el nombre del estado, que Mercado Pago no documenta del todo: si
+  // cualquier reporte (terminado o en camino) cierra hace menos de HORAS_REPORTE horas, no se pide otro.
+  // Uno que falló bloquea solo FALLIDO_MS, para reintentar sin pedir uno en cada renovación de la caché.
+  // Si no trae fecha de cierre, cuenta la hora en que se pidió.
+  const cierraHace = (r: Reporte) => ahora - Date.parse(r.end_date ?? r.generation_date ?? r.date_created ?? r.last_modified ?? '')
+  const fallido = (r: Reporte) => /error|fail|reject|cancel/.test((r.status ?? '').toLowerCase())
+  const hayReciente = reportes.some((r) => cierraHace(r) < (fallido(r) ? FALLIDO_MS : HORAS_REPORTE * HORA_MS))
+  const enCamino = reportes.some((r) => !listo(r) && !fallido(r) && cierraHace(r) < HORAS_REPORTE * HORA_MS)
 
-  // Se pide uno nuevo si el último cierra hace más de HORAS_REPORTE horas y no hay otro en camino
   let actualizando = enCamino
   let aviso: string | null = null
-  if (!enCamino && (!ultimo || ahora - Date.parse(ultimo.end_date!) > HORAS_REPORTE * HORA_MS)) {
+  if (!hayReciente) {
     try {
       // Cierra unos minutos antes de ahora para que Mercado Pago no lo tome como una fecha futura
       const cuerpo = { begin_date: fechaMP(ahora - DIAS_REPORTE * DIA_MS), end_date: fechaMP(ahora - 5 * 60_000) }
@@ -248,7 +256,8 @@ async function leerSaldo(): Promise<SaldoMercadoPago> {
   }
 }
 
-const leerSaldoEnCache = unstable_cache(leerSaldo, ['admin-mercadopago-saldo-v1'], {
+// Una sola consulta a la vez y, si falla, un minuto sin reintentar: varias recargas no multiplican las peticiones
+const leerSaldoEnCache = unstable_cache(unaConsulta(leerSaldo), ['admin-mercadopago-saldo-v1'], {
   revalidate: REVALIDAR_SALDO_S,
   tags: ['admin-mercadopago'],
 })

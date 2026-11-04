@@ -15,6 +15,7 @@ import {
   type Resultado,
   type SuscripcionReciente,
 } from './metricas'
+import { unaConsulta } from './unaConsulta'
 
 const DIA_MS = 86_400_000
 // Periodo más largo del panel: con sus datos se sirven también los más cortos
@@ -95,7 +96,8 @@ async function leerMercadoPago(): Promise<PanelMercadoPago> {
   }
 }
 
-const leerMercadoPagoEnCache = unstable_cache(leerMercadoPago, ['admin-mercadopago-v4'], {
+// Una sola consulta a la vez y, si falla, un minuto sin reintentar: varias recargas no multiplican las peticiones
+const leerMercadoPagoEnCache = unstable_cache(unaConsulta(leerMercadoPago), ['admin-mercadopago-v4'], {
   revalidate: REVALIDAR_S,
   tags: ['admin-mercadopago'],
 })
