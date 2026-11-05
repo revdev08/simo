@@ -145,12 +145,6 @@ export default function PanelSuscriptores({
           </div>
           <div className="flex flex-wrap items-center gap-2">
             {generadoMercadoPago && <ActualizarMercadoPago />}
-            <Link
-              href="/api/checkout?plan=desarrollador"
-              className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-100 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-300"
-            >
-              Compra de prueba · $2.000
-            </Link>
             <nav className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm dark:border-slate-800 dark:bg-slate-900" aria-label="Periodo">
               {rangos.map((r) => (
                 <Link

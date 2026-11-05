@@ -14,6 +14,8 @@ const HORA_MS = 3_600_000
 const DIA_MS = 86_400_000
 const HORAS_REPORTE = 3
 const FALLIDO_MS = 30 * 60_000
+// Con el botón: no se pide otro si ya hay uno que cierra (o se pidió) hace menos de esto
+const RECIENTE_MS = 10 * 60_000
 const DIAS_REPORTE = 30
 // Cada renovación son 3 o 4 peticiones (configuración, lista, archivo); el reporte nuevo se pide cada 3 horas
 export const REVALIDAR_SALDO_S = 300
@@ -232,35 +234,51 @@ function calcular(csv: string, config: Config) {
   return { saldo, liberado, retirado, descuadre: total !== null && Math.abs(total - suma) >= 1 ? total - suma : null }
 }
 
+// Se decide por la fecha de cierre y no por el nombre del estado, que Mercado Pago no documenta del todo.
+// Si no trae fecha de cierre, cuenta la hora en que se pidió.
+const cierraHace = (r: Reporte, ahora: number) => ahora - Date.parse(r.end_date ?? r.generation_date ?? r.date_created ?? r.last_modified ?? '')
+const fallido = (r: Reporte) => /error|fail|reject|cancel/.test((r.status ?? '').toLowerCase())
+const enCamino = (r: Reporte, ahora: number) => !listo(r) && !fallido(r) && cierraHace(r, ahora) < HORAS_REPORTE * HORA_MS
+
+async function listarReportes(token: string): Promise<Reporte[]> {
+  const respuesta = (await (await pedir(token, '/list')).json()) as Reporte[] | { results?: Reporte[] }
+  return Array.isArray(respuesta) ? respuesta : (respuesta.results ?? [])
+}
+
+// Cuándo se pidió el último reporte en esta instancia: la lista de Mercado Pago puede tardar en mostrarlo, y sin esto
+// la renovación de la caché que sigue al botón pediría otro igual
+let pedidoEn = 0
+
+// true si Mercado Pago lo aceptó; false si respondió 203 (no pudo crearlo y pide volver a intentarlo)
+async function crearReporte(token: string, ahora: number): Promise<boolean> {
+  // Cierra unos minutos antes de ahora para que Mercado Pago no lo tome como una fecha futura
+  const cuerpo = { begin_date: fechaMP(ahora - DIAS_REPORTE * DIA_MS), end_date: fechaMP(ahora - 5 * 60_000) }
+  const res = await pedir(token, '', { method: 'POST', body: JSON.stringify(cuerpo) })
+  if (res.status === 203) return false
+  pedidoEn = ahora
+  return true
+}
+
 async function leerSaldo(): Promise<SaldoMercadoPago> {
   const token = process.env.MELI_ACCESS_TOKEN
   if (!token) throw new Error('Falta MELI_ACCESS_TOKEN.')
   const ahora = Date.now()
   const config = await configuracion(token)
 
-  const respuesta = (await (await pedir(token, '/list')).json()) as Reporte[] | { results?: Reporte[] }
-  const reportes = Array.isArray(respuesta) ? respuesta : (respuesta.results ?? [])
+  const reportes = await listarReportes(token)
   const terminados = reportes.filter((r) => listo(r) && r.end_date).sort((a, b) => Date.parse(b.end_date!) - Date.parse(a.end_date!))
   const ultimo = terminados[0] ?? null
-  // Se decide por la fecha de cierre y no por el nombre del estado, que Mercado Pago no documenta del todo: si
-  // cualquier reporte (terminado o en camino) cierra hace menos de HORAS_REPORTE horas, no se pide otro.
+  // Si cualquier reporte (terminado o en camino) cierra hace menos de HORAS_REPORTE horas, no se pide otro.
   // Uno que falló bloquea solo FALLIDO_MS, para reintentar sin pedir uno en cada renovación de la caché.
-  // Si no trae fecha de cierre, cuenta la hora en que se pidió.
-  const cierraHace = (r: Reporte) => ahora - Date.parse(r.end_date ?? r.generation_date ?? r.date_created ?? r.last_modified ?? '')
-  const fallido = (r: Reporte) => /error|fail|reject|cancel/.test((r.status ?? '').toLowerCase())
-  const hayReciente = reportes.some((r) => cierraHace(r) < (fallido(r) ? FALLIDO_MS : HORAS_REPORTE * HORA_MS))
-  const enCamino = reportes.some((r) => !listo(r) && !fallido(r) && cierraHace(r) < HORAS_REPORTE * HORA_MS)
+  const pedidoHacePoco = ahora - pedidoEn < RECIENTE_MS
+  const hayReciente = pedidoHacePoco || reportes.some((r) => cierraHace(r, ahora) < (fallido(r) ? FALLIDO_MS : HORAS_REPORTE * HORA_MS))
 
-  let actualizando = enCamino
+  let actualizando = pedidoHacePoco || reportes.some((r) => enCamino(r, ahora))
   let aviso: string | null = null
   if (!hayReciente) {
     try {
-      // Cierra unos minutos antes de ahora para que Mercado Pago no lo tome como una fecha futura
-      const cuerpo = { begin_date: fechaMP(ahora - DIAS_REPORTE * DIA_MS), end_date: fechaMP(ahora - 5 * 60_000) }
-      const res = await pedir(token, '', { method: 'POST', body: JSON.stringify(cuerpo) })
-      // 203: Mercado Pago no pudo crearlo y pide volver a intentarlo
-      if (res.status === 203) aviso = 'Mercado Pago no pudo preparar un reporte más reciente; se vuelve a pedir en unos minutos.'
-      else actualizando = true
+      if (await crearReporte(token, ahora)) actualizando = true
+      else aviso = 'Mercado Pago no pudo preparar un reporte más reciente; se vuelve a pedir en unos minutos.'
     } catch (e) {
       if (!ultimo) throw e
       aviso = `No se pudo pedir un reporte más reciente: ${e instanceof Error ? e.message : String(e)}`
@@ -270,7 +288,7 @@ async function leerSaldo(): Promise<SaldoMercadoPago> {
   const vacio = { saldo: null, corte: null, desde: null, liberado: null, retirado: null, descuadre: null }
   if (!ultimo) {
     // El más reciente por la hora en que se pidió, para saber en qué va si tarda
-    const masReciente = [...reportes].sort((a, b) => cierraHace(a) - cierraHace(b))[0]
+    const masReciente = [...reportes].sort((a, b) => cierraHace(a, ahora) - cierraHace(b, ahora))[0]
     return { ...vacio, actualizando, aviso, diagnostico: masReciente ? describir(masReciente, ahora) : null, consultado: new Date(ahora).toISOString() }
   }
 
@@ -290,14 +308,36 @@ async function leerSaldo(): Promise<SaldoMercadoPago> {
 }
 
 // Una sola consulta a la vez y, si falla, un minuto sin reintentar: varias recargas no multiplican las peticiones
+// La renuevan el botón «Actualizar ahora» del panel (admin-mercadopago) y el de la tarjeta del saldo (TAG_SALDO)
+export const TAG_SALDO = 'admin-mercadopago-saldo'
 const leerSaldoEnCache = unstable_cache(unaConsulta(leerSaldo), ['admin-mercadopago-saldo-v1'], {
   revalidate: REVALIDAR_SALDO_S,
-  tags: ['admin-mercadopago'],
+  tags: ['admin-mercadopago', TAG_SALDO],
 })
 
 export async function saldoMercadoPago(): Promise<Resultado<SaldoMercadoPago>> {
   try {
     return { ok: true, datos: await leerSaldoEnCache() }
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : String(e) }
+  }
+}
+
+export type PedidoSaldo = 'pedido' | 'en-camino' | 'reciente' | 'reintentar'
+
+// Botón «Actualizar saldo»: pide un reporte que cierre ahora, salvo que ya haya uno en camino o uno que cierre hace
+// menos de RECIENTE_MS (así tocar el botón varias veces no pide varios). Después hay que renovar la caché del saldo.
+export async function pedirSaldoNuevo(): Promise<Resultado<PedidoSaldo>> {
+  try {
+    const token = process.env.MELI_ACCESS_TOKEN
+    if (!token) throw new Error('Falta MELI_ACCESS_TOKEN.')
+    const ahora = Date.now()
+    if (ahora - pedidoEn < RECIENTE_MS) return { ok: true, datos: 'en-camino' }
+    await configuracion(token)
+    const reportes = await listarReportes(token)
+    if (reportes.some((r) => enCamino(r, ahora) && cierraHace(r, ahora) < RECIENTE_MS)) return { ok: true, datos: 'en-camino' }
+    if (reportes.some((r) => listo(r) && cierraHace(r, ahora) < RECIENTE_MS)) return { ok: true, datos: 'reciente' }
+    return { ok: true, datos: (await crearReporte(token, ahora)) ? 'pedido' : 'reintentar' }
   } catch (e) {
     return { ok: false, error: e instanceof Error ? e.message : String(e) }
   }

@@ -1,5 +1,6 @@
 import { Wallet } from 'lucide-react'
 import { saldoMercadoPago } from '@/lib/admin/saldoMercadoPago'
+import ActualizarSaldo from './ActualizarSaldo'
 
 const pesos = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 })
 const fechaHora = new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'America/Bogota' })
@@ -26,62 +27,80 @@ export function SaldoCargando() {
   )
 }
 
+// Título y contenido a la izquierda, botón de actualizar a la derecha (debajo en celular)
+function Tarjeta({ esperando, children, pie }: { esperando: boolean; children: React.ReactNode; pie?: React.ReactNode }) {
+  return (
+    <section className={caja}>
+      <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
+        <div className="min-w-0">
+          <Titulo />
+          {children}
+        </div>
+        <ActualizarSaldo esperando={esperando} />
+      </div>
+      {pie}
+    </section>
+  )
+}
+
 export default async function SaldoMercadoPago() {
   const r = await saldoMercadoPago()
 
   if (!r.ok) {
     return (
-      <p className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
-        No se pudo leer el saldo de Mercado Pago: {r.error}
-      </p>
+      <Tarjeta esperando={false}>
+        <p className="mt-2 max-w-2xl text-sm text-amber-700 dark:text-amber-300">No se pudo leer el saldo de Mercado Pago: {r.error}</p>
+      </Tarjeta>
     )
   }
 
   const d = r.datos
   if (d.saldo === null) {
     return (
-      <section className={caja}>
-        <Titulo />
+      <Tarjeta esperando={d.actualizando}>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
           {d.actualizando
             ? 'Mercado Pago está preparando el primer reporte de dinero liberado. El saldo aparece aquí en unos minutos.'
             : (d.aviso ?? 'Todavía no hay un reporte de dinero liberado.')}
         </p>
         {d.diagnostico && <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">Último reporte pedido: {d.diagnostico}.</p>}
-      </section>
+      </Tarjeta>
     )
   }
 
   return (
-    <section className={`${caja} flex flex-wrap items-end justify-between gap-x-8 gap-y-4`}>
-      <div>
-        <Titulo />
-        <p className="mt-1 text-3xl font-semibold tabular-nums text-slate-900 dark:text-white">{pesos.format(d.saldo)}</p>
-        <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
-          {d.corte ? `Al ${fechaHora.format(new Date(d.corte))}` : 'Último reporte'} · según el reporte de dinero liberado
-          {d.actualizando && ' · ya se pidió uno más reciente'}
-        </p>
-      </div>
-      <dl className="flex flex-wrap gap-x-8 gap-y-2 text-sm">
-        {d.liberado !== null && (
-          <div>
-            <dt className="text-xs text-slate-500 dark:text-slate-400">Liberado{d.desde ? ` desde el ${fecha.format(new Date(d.desde))}` : ''}</dt>
-            <dd className="font-semibold tabular-nums text-slate-800 dark:text-slate-200">{pesos.format(d.liberado)}</dd>
-          </div>
-        )}
-        {d.retirado !== null && (
-          <div>
-            <dt className="text-xs text-slate-500 dark:text-slate-400">Retirado en ese periodo</dt>
-            <dd className="font-semibold tabular-nums text-slate-800 dark:text-slate-200">{pesos.format(d.retirado)}</dd>
-          </div>
-        )}
-      </dl>
-      <p className="w-full text-xs text-slate-500 dark:text-slate-400">
-        No incluye el dinero que aún está por liberar. Mercado Pago aclara que el reporte es informativo y puede no coincidir
-        al peso con el saldo de la cuenta.
-        {d.descuadre !== null && ` Las filas del reporte no suman lo mismo que su total (diferencia de ${pesos.format(d.descuadre)}).`}
-        {d.aviso && ` ${d.aviso}`}
+    <Tarjeta
+      esperando={d.actualizando}
+      pie={
+        <>
+          <dl className="mt-4 flex flex-wrap gap-x-8 gap-y-2 text-sm">
+            {d.liberado !== null && (
+              <div>
+                <dt className="text-xs text-slate-500 dark:text-slate-400">Liberado{d.desde ? ` desde el ${fecha.format(new Date(d.desde))}` : ''}</dt>
+                <dd className="font-semibold tabular-nums text-slate-800 dark:text-slate-200">{pesos.format(d.liberado)}</dd>
+              </div>
+            )}
+            {d.retirado !== null && (
+              <div>
+                <dt className="text-xs text-slate-500 dark:text-slate-400">Retirado en ese periodo</dt>
+                <dd className="font-semibold tabular-nums text-slate-800 dark:text-slate-200">{pesos.format(d.retirado)}</dd>
+              </div>
+            )}
+          </dl>
+          <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
+            No incluye el dinero que aún está por liberar. Mercado Pago aclara que el reporte es informativo y puede no
+            coincidir al peso con el saldo de la cuenta.
+            {d.descuadre !== null && ` Las filas del reporte no suman lo mismo que su total (diferencia de ${pesos.format(d.descuadre)}).`}
+            {d.aviso && ` ${d.aviso}`}
+          </p>
+        </>
+      }
+    >
+      <p className="mt-1 text-3xl font-semibold tabular-nums text-slate-900 dark:text-white">{pesos.format(d.saldo)}</p>
+      <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
+        {d.corte ? `Al ${fechaHora.format(new Date(d.corte))}` : 'Último reporte'} · según el reporte de dinero liberado
+        {d.actualizando && ' · Mercado Pago está preparando uno más reciente'}
       </p>
-    </section>
+    </Tarjeta>
   )
 }
